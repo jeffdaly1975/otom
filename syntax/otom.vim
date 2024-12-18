@@ -449,6 +449,11 @@ syn match Decay_type_beta_plus  /\<83\s\+41\s\+Sq\>/
 syn match Decay_type_beta_plus  /\<84\s\+42\s\+Ua\>/
 syn match Decay_type_beta_plus  /\<85\s\+42\s\+Ua\>/
 syn match Decay_type_beta_plus  /\<73\s\+36\s\+Xy\>/
+syn match Decay_type_beta_plus  /\<79\s\+39\s\+H\>/
+syn match Decay_type_beta_plus  /\<76\s\+38\s\+Bt\>/
+syn match Decay_type_beta_plus  /\<77\s\+38\s\+Bt\>/
+syn match Decay_type_beta_plus  /\<78\s\+38\s\+Bt\>/
+syn match Decay_type_beta_plus  /\<81\s\+39\s\+H\>/
 
 " Decay type beta-
 syn match Decay_type_beta_minus /\<14\s\+6\s\+Pq\>/
@@ -590,6 +595,8 @@ syn match Decay_type_stable     /\<80\s\+37\s\+Gq\>/
 syn match Decay_type_stable     /\<81\s\+38\s\+Bt\>/
 syn match Decay_type_stable     /\<81\s\+40\s\+U\>/
 syn match Decay_type_stable     /\<84\s\+41\s\+Sq\>/
+syn match Decay_type_stable     /\<80\s\+39\s\+H\>/
+syn match Decay_type_stable     /\<82\s\+39\s\+H\>/
 
 
 hi Decay_type_alpha        guibg=lightmagenta ctermbg=lightmagenta
