@@ -273,6 +273,7 @@ reaction 50 23 Aw +                                  0 Energy => 50 23 Aw +     
 reaction 54 25 Nb +                                  0 Energy => 54 25 Nb +                                  0.00 Energy Reactions occurred: None            Energy used:    0.00     -
 reaction 58 27 Ic +                                  0 Energy => 58 27 Ic +                                  0.00 Energy Reactions occurred: None            Energy used:    0.00     -
 reaction 58 30 Hb +                                  0 Energy => 58 30 Hb +                                  0.00 Energy Reactions occurred: None            Energy used:    0.00     -
+reaction 68 31 At +                               5000 Energy => 68 31 At +                               4750.00 Energy Reactions occurred: None            Energy used:  250.00     -
 
 reaction 13  6 Pq + 13  6 Pq + 13  6 Pq + 13  6 Pq + 13  6 Pq + 0 Energy => 13  6 Pq + 13  6 Pq + 13  6 Pq + 13  6 Pq + 13  6 Pq + 0.00 Energy Reactions occurred: None Energy used: 0.00
 
@@ -436,3 +437,16 @@ reaction 58 27 Ic +            5000 => 58 27 Ic + 4750.00   Energy Reactions occ
 reaction 60 27 Ic +            5000 => 60 27 Ic + 4750.00   Energy Reactions occurred: None           Energy used:  250.00
 reaction 51 24 Oc +            5000 => SFw      +  192.89   Energy Reactions occurred: nuclear, chemical Energy used: 4807.11
 reaction 13  7 Zz + 15  8 Dx + 5000 => 28 14 Zq + 4073.14   Energy Reactions occurred: nuclear, decay    Energy used: 926.86
+reaction 34 15 Xc + 34 15 Xc + 5000 => 68 31 At + 2740.80   Energy Reactions occurred: nuclear, decay    Energy used: 2259.20
+reaction 32 15 Xc + 41 21  E + 4000 => 73 36 Xy + 1427.15   Energy Reactions occurred: nuclear           Energy used: 2572.85
+reaction 50 23 Aw + 28 13  S + 4200 => 78 36 Xy +  774.23   Energy Reactions occurred: nuclear           Energy used: 3425.77
+reaction 30 15 Xc + 44 22  A + 3800 => 74 37 Gq +  408.74   Energy Reactions occurred: nuclear           Energy used: 3391.26
+reaction 31 15 Xc + 44 22  A + 4500 => 75 37 Gq + 1745.63   Energy Reactions occurred: nuclear           Energy used: 2754.37
+reaction 31 15 Xc + 45 22  A + 3700 => 76 37 Gq +  941.84   Energy Reactions occurred: nuclear           Energy used: 2758.16
+reaction 54 25 Nb + 23 12 Pt + 3600 => 77 37 Gq + 1297.77   Energy Reactions occurred: nuclear           Energy used: 2302.23
+reaction 24 12 Pt + 51 26 Xk + 4500 => 75 38 Bt + 1465.32   Energy Reactions occurred: nuclear, decay    Energy used: 3034.68
+reaction 34 16 Gy + 42 22  A + 4000 => 76 38 Bt +  653.59   Energy Reactions occurred: nuclear           Energy used: 3346.41
+reaction 25 13  S + 30 15 Xc +  750 => SXc +       689.55   Energy Reactions occurred: chemical          Energy used:   60.45
+reaction 26 12 Pt + 51 26 Xk + 4000 => 77 38 Bt +  861.91   Energy Reactions occurred: nuclear           Energy used: 3138.09
+reaction 34 16 Gy + 44 22  A + 4000 => 78 38 Bt +  404.42   Energy Reactions occurred: nuclear           Energy used: 3595.58
+reaction 25 13  S + 55 26 Xk + 4500 => 80 39  H + 1988.81   Energy Reactions occurred: nuclear           Energy used: 2511.19
