@@ -5180,9 +5180,43 @@ atom 82 39  H | Decay type	stable
 atom 82 39  H | Filled in Outer Shell	0-0-0-0-0-0-1-1
 atom 82 39  H | Empty in Outer Shell	0-0-0-0-0-0-0-3
 
-atom 79 40  U | [ ] TODO
+atom 79 40  U | Lab sheet
+atom 79 40  U | U otom
+atom 79 40  U | Token ID 100877704163099847460513367523158582210908485664886702522002306392544228691367
+atom 79 40  U | Name	U
+atom 79 40  U | Discovered by	msomnia.eth
+atom 79 40  U | Current Supply	3
+atom 79 40  U | Series	metal
+atom 79 40  U | Protons	40
+atom 79 40  U | Neutrons	39
+atom 79 40  U | Stability	0.786
+atom 79 40  U | Density	32.625 g/cm³
+atom 79 40  U | Radius	1.343 pm
+atom 79 40  U | Electronegativity	0.180
+atom 79 40  U | Mass	79.000 amu
+atom 79 40  U | Metallic	Yes
+atom 79 40  U | Decay type	beta+
+atom 79 40  U | Filled in Outer Shell	0-0-0-0-0-0-1-2
+atom 79 40  U | Empty in Outer Shell	0-0-0-0-0-0-0-2
 
-atom 80 40  U | [ ] TODO
+atom 80 40  U | Lab sheet
+atom 80 40  U | U otom
+atom 80 40  U | Token ID 14784207114945568976730851314940771317913111782363185150348264455133607137263
+atom 80 40  U | Name	U
+atom 80 40  U | Discovered by	factors.eth
+atom 80 40  U | Current Supply	4
+atom 80 40  U | Series	metal
+atom 80 40  U | Protons	40
+atom 80 40  U | Neutrons	40
+atom 80 40  U | Stability	0.830
+atom 80 40  U | Density	33.038 g/cm³
+atom 80 40  U | Radius	1.343 pm
+atom 80 40  U | Electronegativity	0.180
+atom 80 40  U | Mass	80.000 amu
+atom 80 40  U | Metallic	Yes
+atom 80 40  U | Decay type	beta+
+atom 80 40  U | Filled in Outer Shell	0-0-0-0-0-0-1-2
+atom 80 40  U | Empty in Outer Shell	0-0-0-0-0-0-0-2
 
 atom 81 40  U | Lab sheet
 atom 81 40  U | U otom
@@ -5203,15 +5237,100 @@ atom 81 40  U | Decay type	stable
 atom 81 40  U | Filled in Outer Shell	0-0-0-0-0-0-1-2
 atom 81 40  U | Empty in Outer Shell	0-0-0-0-0-0-0-2
 
-atom 82 40  U | [ ] TODO
+atom 82 40  U | Lab sheet
+atom 82 40  U | U otom
+atom 82 40  U | Token ID 17021031689676131018719762901884135634325124005348407424555159547892759689837
+atom 82 40  U | Name	U
+atom 82 40  U | Discovered by	seamorphus.eth
+atom 82 40  U | Current Supply	14
+atom 82 40  U | Series	metal
+atom 82 40  U | Protons	40
+atom 82 40  U | Neutrons	42
+atom 82 40  U | Stability	0.873
+atom 82 40  U | Density	33.864 g/cm³
+atom 82 40  U | Radius	1.343 pm
+atom 82 40  U | Electronegativity	0.180
+atom 82 40  U | Mass	82.000 amu
+atom 82 40  U | Metallic	Yes
+atom 82 40  U | Decay type	beta+
+atom 82 40  U | Filled in Outer Shell	0-0-0-0-0-0-1-2
+atom 82 40  U | Empty in Outer Shell	0-0-0-0-0-0-0-2
 
-atom 83 40  U | [ ] TODO
+atom 83 40  U | Lab sheet
+atom 83 40  U | U otom
+atom 83 40  U | Token ID 29249873760555563071077515456339064384117823875626789894686305099025184815598
+atom 83 40  U | Name	U
+atom 83 40  U | Discovered by	qma0000.eth
+atom 83 40  U | Current Supply	23
+atom 83 40  U | Series	metal
+atom 83 40  U | Protons	40
+atom 83 40  U | Neutrons	43
+atom 83 40  U | Stability	1.914
+atom 83 40  U | Density	34.277 g/cm³
+atom 83 40  U | Radius	1.343 pm
+atom 83 40  U | Electronegativity	0.180
+atom 83 40  U | Mass	83.000 amu
+atom 83 40  U | Metallic	Yes
+atom 83 40  U | Decay type	stable
+atom 83 40  U | Filled in Outer Shell	0-0-0-0-0-0-1-2
+atom 83 40  U | Empty in Outer Shell	0-0-0-0-0-0-0-2
 
-atom 80 41 Sq | [ ] TODO
+atom 80 41 Sq | Lab sheet
+atom 80 41 Sq | Sq otom
+atom 80 41 Sq | Token ID 17640496351935271571535930035599541477506758316725253275799721009244900813812
+atom 80 41 Sq | Name	Sq
+atom 80 41 Sq | Discovered by	msomnia.eth
+atom 80 41 Sq | Current Supply	2
+atom 80 41 Sq | Series	metal
+atom 80 41 Sq | Protons	41
+atom 80 41 Sq | Neutrons	39
+atom 80 41 Sq | Stability	0.805
+atom 80 41 Sq | Density	39.809 g/cm³
+atom 80 41 Sq | Radius	1.262 pm
+atom 80 41 Sq | Electronegativity	0.484
+atom 80 41 Sq | Mass	80.000 amu
+atom 80 41 Sq | Metallic	Yes
+atom 80 41 Sq | Decay type	beta+
+atom 80 41 Sq | Filled in Outer Shell	0-0-0-0-0-0-1-3
+atom 80 41 Sq | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
-atom 81 41 Sq | [ ] TODO
+atom 81 41 Sq | Lab sheet
+atom 81 41 Sq | Sq otom
+atom 81 41 Sq | Token ID 56782538204502050942269338402879830963742327486841914714544771883853409737344
+atom 81 41 Sq | Name	Sq
+atom 81 41 Sq | Discovered by	msomnia.eth
+atom 81 41 Sq | Current Supply	3
+atom 81 41 Sq | Series	metal
+atom 81 41 Sq | Protons	41
+atom 81 41 Sq | Neutrons	40
+atom 81 41 Sq | Stability	0.859
+atom 81 41 Sq | Density	40.306 g/cm³
+atom 81 41 Sq | Radius	1.262 pm
+atom 81 41 Sq | Electronegativity	0.484
+atom 81 41 Sq | Mass	81.000 amu
+atom 81 41 Sq | Metallic	Yes
+atom 81 41 Sq | Decay type	beta+
+atom 81 41 Sq | Filled in Outer Shell	0-0-0-0-0-0-1-3
+atom 81 41 Sq | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
-atom 82 41 Sq | [ ] TODO
+atom 82 41 Sq | Lab sheet
+atom 82 41 Sq | Sq otom
+atom 82 41 Sq | Token ID 32616029081720290443369934586767732017990385836640153384446627072180795639666
+atom 82 41 Sq | Name	Sq
+atom 82 41 Sq | Discovered by	sammlung.eth
+atom 82 41 Sq | Current Supply	7
+atom 82 41 Sq | Series	metal
+atom 82 41 Sq | Protons	41
+atom 82 41 Sq | Neutrons	41
+atom 82 41 Sq | Stability	1.777
+atom 82 41 Sq | Density	40.804 g/cm³
+atom 82 41 Sq | Radius	1.262 pm
+atom 82 41 Sq | Electronegativity	0.484
+atom 82 41 Sq | Mass	82.000 amu
+atom 82 41 Sq | Metallic	Yes
+atom 82 41 Sq | Decay type	stable
+atom 82 41 Sq | Filled in Outer Shell	0-0-0-0-0-0-1-3
+atom 82 41 Sq | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
 atom 83 41 Sq | Lab sheet
 atom 83 41 Sq | Sq otom
