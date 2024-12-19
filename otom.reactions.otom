@@ -454,3 +454,10 @@ reaction 34 16 Gy + 44 22  A + 4000 => 78 38 Bt +  404.42   Energy Reactions occ
 reaction 25 13  S + 55 26 Xk + 4500 => 80 39  H + 1988.81   Energy Reactions occurred: nuclear           Energy used: 2511.19
 reaction 37 18 Fj + 42 21  E + 4400 => 79 39  H + 1659.15   Energy Reactions occurred: nuclear           Energy used: 2740.85
 reaction 54 25 Nb + 27 14 Zq + 4400 => 81 39  H + 1841.09   Energy Reactions occurred: nuclear           Energy used: 2558.91
+reaction 37 18 Fj + 42 22  A + 4500 => 79 40  U + 1785.05   Energy Reactions occurred: nuclear           Energy used: 2714.95
+reaction 25 12 Pt + 55 28 Yp + 4500 => 80 40  U + 1906.39   Energy Reactions occurred: nuclear           Energy used: 2593.61
+reaction 50 23 Aw + 32 17  D + 4800 => 82 40  U + 2050.66   Energy Reactions occurred: nuclear           Energy used: 2749.34
+reaction 54 25 Nb + 29 15 Xc + 4500 => 83 40  U + 1760.80   Energy Reactions occurred: nuclear           Energy used: 2739.20
+reaction 30 15 Xc + 50 26 Xk + 3500 => 80 41 Sq +  139.05   Energy Reactions occurred: nuclear           Energy used: 3360.95
+reaction 30 15 Xc + 51 26 Xk + 4500 => 81 41 Sq +  979.50   Energy Reactions occurred: nuclear           Energy used: 3520.50
+
