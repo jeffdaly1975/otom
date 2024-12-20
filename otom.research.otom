@@ -1,3 +1,39 @@
+
+2024-12-20.Dec.Fri 11:28 I'd love to iterate all the reactions performed on OTOM and see all inputs and outputs. 
+
+This is the first reaction: https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/1
+  initiateReaction(): https://shapescan.xyz/tx/0x84f76cdde83177e8a08c3e0737fa479f56d9bad5db5bcef8613ce4ba24bd2f16
+  analyseReactions(): https://shapescan.xyz/tx/0x704f3b040584a620e4728f280c4626e9775555b44d826ab7d1ec4797f8d1d5e0
+    34 15 Xc (85946772446798246649495380594330796935736519487395412913114345000519436097322) + 0 NRG => 34 15 Xc (85946772446798246649495380594330796935736519487395412913114345000519436097322) + 0 NRG 
+
+
+The Function OTOMRO.getReactionOutputData() returns:
+ # struct ReactionOutputData {
+ #   universeHash (bytes32) : 0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26
+ #   reactionBlock (uint256) : 5105662
+ #   chemist (address) : 0x136Bbfe37988f82F8585ED155615b75371489d45
+ #   atomIds (uint256[]) : [
+ #     109411192323005013320236074910166367482792971750025377481544980126703983546020
+ #     85098605521195741666920212564323157159964481321981403766635982087249819388169
+ #   ]
+ #   energyAmount (uint256) : 0
+ # }
+
+
+The Function OTOMRO.outputData() returns:
+ # universeHash (bytes32) : 0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26
+ # reactionBlock (uint256) : 5105662
+ # chemist (address) : 0x136Bbfe37988f82F8585ED155615b75371489d45
+ # energyAmount (uint256) : 0
+
+OTOMRO                                                                                | initiateReaction()                                                                          | analyseReactions                                                                            | reaction                                                  
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/1     | https://shapescan.xyz/tx/0x84f76cdde83177e8a08c3e0737fa479f56d9bad5db5bcef8613ce4ba24bd2f16 | https://shapescan.xyz/tx/0x704f3b040584a620e4728f280c4626e9775555b44d826ab7d1ec4797f8d1d5e0 | 34 15 Xc +            0 NRG => 34 15 Xc +            0 NRG 
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/2     | https://shapescan.xyz/tx/0x778cf100455edc2378d2c31a738d1d3b7bcd8fc3404f767655586f51eea7aa58 | https://shapescan.xyz/tx/0xe30c998cbd639072fe687065ad1fae68b1f1b56e0086318570140db0a0afc1e5 |  1  1 Ju +  9  5 Xl + 0 NRG =>  1  1 Ju +  9  4 Af + 0 NRG 
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/3     | https://shapescan.xyz/tx/0xc9aa2d57683c46797042ffe69fbca0562cfa371fd9737efc7705b525ce1a43e5 | https://shapescan.xyz/tx/0x4b97622586dabc371ee03a7d591c16618fd894ef8764749f05cd05b820c92635 |  9  5 Xl + 18  9 Pm + 20 NRG => 9  4 Af + 15  8 Dx + 19 NRG 
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/4     | https://shapescan.xyz/tx/0x4d0c2164041023e4bb8623e38f9af5b042b66e6112b978e636ccf83298002410 | https://shapescan.xyz/tx/0x5edf0887e7a85cad985ec9c0cdfaae91ce0ae2531fea3b9606c573a77d8f6970 |  7  3 Cq + 10  5 Xl + 0 NRG => 4 2 W + 6 3 Cq + 7 3 Cq + 0 NRG
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/5     | https://shapescan.xyz/tx/0xb509252e0dfe22052dd7f0211f84b8bb71e2b6929cfefb7eb82a0f2e72119c07 | https://shapescan.xyz/tx/0xd8ecb41ce55ff2662053248903513900eafe1e8116b446c336353ff6c746ef8d | 12  6 Pq + 26 12 Pt + 50 23 Aw + 41 NRG =>  6  3 Cq +  6  3 Cq + 26 12 Pt + 50 23 Aw + 38.949999999999995737 NRG
+
+
 2024-12-19.Dec.Thu 21:01 0x2a4a22 balance is 0.0093 eth $31.22
 2024-12-19.Dec.Thu 21:04 0x2a4a22 balance is 0.0092 eth $31.28
 2024-12-19.Dec.Thu 21:07 blob fees are 0.089 eth for last 5 min per ct.app/gasPrice/eth
@@ -48,7 +84,7 @@
 
 [r] try 51 24 Oc + 3000 => 51 24 Oc + 2850.00 None Energy used: 150.00
 
-# Here's the possible combinations of Fw & S to make 51 24 Oc, so [ ] i wonder if I put in less energy if I'd get an output like them or a new otom
+# Here's the possible combinations of Fw & S to make 51 24 Oc, so [x] i wonder if I put in less energy if I'd get an output like them or a new otom. UPDATE: NOPE. didn't work
  22  11 Fw +  29  13  S =  51  24 Oc
  23  11 Fw +  28  13  S =  51  24 Oc
  24  11 Fw +  27  13  S =  51  24 Oc
