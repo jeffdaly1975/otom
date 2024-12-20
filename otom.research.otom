@@ -1,13 +1,6 @@
-
-[ ] TODO: 75 38 Bt
- 25  12 Pt +  50  26 Xk =  75 38 Bt | 25 13  S + 25 13  S + 1600 => 50 26 Xk
- 24  12 Pt +  51  26 Xk =  75 38 Bt | 25 13  S + 26 13  S + 1600 => 51 26 Xk 
- 13   7 Zz +  62  31 At =  75 38 Bt | 37 18 Fj + 25 13  S + 2000 => 62 31 At
- 20  10  M +  55  28 Yp =  75 38 Bt | 25 13  S + 30 15 Xc + 2350 => 55 28 Yp
- 25  13  S +  50  25 Nb =  75 38 Bt | 20 10  M + 30 15 Xc + 2950 => 50 25 Nb
- 15   8 Dx +  60  30 Hb =  75 38 Bt | 30 15 Xc + 30 15 Xc + 3600 => 60 30 Hb 
-
-
+2024-12-19.Dec.Thu 21:01 0x2a4a22 balance is 0.0093 eth $31.22
+2024-12-19.Dec.Thu 21:04 0x2a4a22 balance is 0.0092 eth $31.28
+2024-12-19.Dec.Thu 21:07 blob fees are 0.089 eth for last 5 min per ct.app/gasPrice/eth
 
 
 
@@ -53,12 +46,23 @@
 # THIS IS THE FIRST TIME seeing a reaction with 1 otom and 5000 energy and the result is a molecule:
  51 24 Oc +            5000 => SFw      +  192.89   Energy Reactions occurred: nuclear, chemical Energy used: 4807.11
 
-# Here's the possible combinations of Fw & S to make 51 24 Oc, so i wonder if I put in less energy if I'd get an output like them or a new otom
+[r] try 51 24 Oc + 3000 => 51 24 Oc + 2850.00 None Energy used: 150.00
+
+# Here's the possible combinations of Fw & S to make 51 24 Oc, so [ ] i wonder if I put in less energy if I'd get an output like them or a new otom
  22  11 Fw +  29  13  S =  51  24 Oc
  23  11 Fw +  28  13  S =  51  24 Oc
  24  11 Fw +  27  13  S =  51  24 Oc
  25  11 Fw +  26  13  S =  51  24 Oc
 
+
+  1   1 Ju +  50  23 Aw =  51  24 Oc
+ 14   6 Pq +  37  18 Fj =  51  24 Oc
+ 14   7 Zz +  37  17  D =  51  24 Oc
+ 17   8 Dx +  34  16 Gy =  51  24 Oc *
+ 17   9 Pm +  34  15 Xc =  51  24 Oc
+ 19   9 Pm +  32  15 Xc =  51  24 Oc
+ 25  11 Fw +  26  13  S =  51  24 Oc
+ 25  12 Pt +  26  12 Pt =  51  24 Oc
 
 
 
@@ -3897,3 +3901,5 @@ LINK for filtering all OTOM atoms on Reservoir:
 
 ====================================================================================================================================================================================================
 
+
+In my reactions log file otom.reactions.otom, on the stability change like "beta- => ALPHA" that means the beta- otom decayed with added proton to alpha otom.

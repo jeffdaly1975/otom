@@ -233,8 +233,9 @@ UNFOUND POSSIBILITIES:
 
 | 46 25 Nb | [ ] try
 
-| 49 21  E | [ ] try
-15  6 Pq + 34 15 Xc =  49  21 ..
+| 49 21  E | [f] try  FAILED!
+15  6 Pq + 34 15 Xc =  49  21 .. FAILED: 15  6 Pq + 34 15 Xc + 2000 =  49  22  A + 849.54 | nuclear, decay | 1150.46
+
 
 | 49 26 Xk | [ ] try
  1  1 Ju + 48 25 Nb =  49  26 ..
@@ -265,6 +266,9 @@ UNFOUND POSSIBILITIES:
 18  8 Dx + 34 15 Xc =  52  23 ..
 23 10  M + 29 13  S =  52  23 ..
 
+| 51 27 Ic | [ ]
+
+| 52 27 Ic | [r]              ALREADY FOUND 
 | 53 27 Ic | [r] try  MSOMNIA ALREADY FOUND THIS
  1  1 Ju + 52 26 Xk =  53  27 ..
  2  1 Ju + 51 26 Xk =  53  27 ..
@@ -301,6 +305,8 @@ UNFOUND POSSIBILITIES:
 24 12 Pt + 29 15 Xc =  53  27 ..
 25 13  S + 28 14 Zq =  53  27 ..
 26 13  S + 27 14 Zq =  53  27 ..
+
+| 53 28 Yp | [ ]
 
 | 54 28 Yp | [r] try  MSOMNIA ALREADY FOUND THIS
  4  2  W + 50 26 Xk =  54  28 ..
@@ -408,6 +414,8 @@ UNFOUND POSSIBILITIES:
 25 11 Fw + 36 16 Gy =  61  27 ..
 29 13  S + 32 14 Zq =  61  27 ..
 
+| 62 27 Ic | [ ]
+
 | 62 32 Ny | [ ] try
  1  1 Ju + 61 31 At =  62  32 ..
  4  2  W + 58 30 Hb =  62  32 ..
@@ -457,6 +465,8 @@ UNFOUND POSSIBILITIES:
 
 saw: 25 11 Fw + 38 17  D + 5000 =  63  28 Yp + 3020
 saw: 25 11 Fw + 37 17  D + 5000 =  62  28 Yp + 3005
+
+| 64 28 Yp | [ ]
 
 
 
@@ -634,7 +644,8 @@ saw: 25 11 Fw + 37 17  D + 5000 =  62  28 Yp + 3005
 34 18 Fj + 37 18 Fj =  71  36 ..
 35 18 Fj + 36 18 Fj =  71  36 ..
 
-| 72 32 Ny |
+
+| 72 32 Ny | [r] MSOMNIA FOUND
  3  1 Ju + 69 31 At =  72  32 .. [x] try MSOMNIA DISCOVERED IT AFTER I MADE THIS TODO FILE BUT BEFORE I COULD TRY!!!!
  5  2  W + 67 30 Hb =  72  32 ..
  7  3 Cq + 65 29 Jx =  72  32 ..
@@ -652,6 +663,8 @@ saw: 25 11 Fw + 37 17  D + 5000 =  62  28 Yp + 3005
 33 15 Xc + 39 17  D =  72  32 ..
 34 15 Xc + 38 17  D =  72  32 ..
 36 16 Gy + 36 16 Gy =  72  32 ..
+
+| 73 32 Ny | [ ]
 
 | 73 37 Gq | [ ] try
  1  1 Ju + 72 36 Xy =  73  37 ..
@@ -706,6 +719,8 @@ saw: 25 11 Fw + 37 17  D + 5000 =  62  28 Yp + 3005
 32 14 Zq + 43 19  O =  75  33 ..
 34 15 Xc + 41 18 Fj =  75  33 ..
 36 16 Gy + 39 17  D =  75  33 ..
+
+| 74 38 Bt | [ ]
 
 | 75 38 Bt | [x] try MSOMNIA FOUND THIS
  1  1 Ju + 74 37 Gq =  75  38 ..
