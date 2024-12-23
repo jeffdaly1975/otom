@@ -75,7 +75,6 @@ syntax match rarity_rare      /\<27\s\+14\s\+Zq\>/
 syntax match rarity_rare      /\<27\s\+12\s\+Pt\>/
 syntax match rarity_rare      /\<28\s\+13\s\+S\>/
 syntax match rarity_rare      /\<28\s\+14\s\+Zq\>/
-syntax match rarity_rare      /\<28\s\+20\s\+C\>/
 syntax match rarity_rare      /\<29\s\+13\s\+S\>/
 syntax match rarity_rare      /\<29\s\+14\s\+Zq\>/
 syntax match rarity_rare      /\<29\s\+15\s\+Xc\>/
@@ -96,7 +95,6 @@ syntax match rarity_rare      /\<36\s\+16\s\+Gy\>/
 syntax match rarity_rare      /\<36\s\+17\s\+D\>/
 syntax match rarity_rare      /\<36\s\+18\s\+Fj\>/
 syntax match rarity_rare      /\<37\s\+19\s\+O\>/
-syntax match rarity_rare      /\<37\s\+9\s\+O\>/
 syntax match rarity_rare      /\<38\s\+17\s\+D\>/
 syntax match rarity_rare      /\<38\s\+18\s\+Fj\>/
 syntax match rarity_rare      /\<38\s\+19\s\+O\>/
@@ -218,7 +216,6 @@ syntax match rarity_rare      /\<65\s\+30\s\+Hb\>/
 syntax match rarity_rare      /\<65\s\+31\s\+At\>/
 syntax match rarity_rare      /\<65\s\+32\s\+Ny\>/
 syntax match rarity_rare      /\<65\s\+33\s\+Pw\>/
-syntax match rarity_rare      /\<66\s\+29\s\+Jx\>/
 syntax match rarity_rare      /\<66\s\+30\s\+Hb\>/
 syntax match rarity_rare      /\<66\s\+31\s\+At\>/
 syntax match rarity_rare      /\<66\s\+32\s\+Ny\>/

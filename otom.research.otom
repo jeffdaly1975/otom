@@ -1,4 +1,37 @@
 
+
+2024-12-22 Dec.Sun 23:29:55 [ ] Some reactions (37 19  O + 5000 => PmM + 2211.12) produce a molecule but what if I provided more or less energy... would it produce a Pm and an M?
+
+
+2024-12-22 Dec.Sun 17:16:31 Looking at how 34 18 Fj and 40 18 Fj decay with 5000 energy, I am predicting this is how the others decay
+
+  isotope  | +0 energy           | +5000 energy
+| 34 18 Fj | none                | 15  8 Dx + 19 10  M |
+| 35 18 Fj | none                |?15  8 Dx + 20 10  M?| prediction
+| 36 18 Fj | none                |?16  8 Dx + 20 10  M?| prediction
+| 37 18 Fj | none                |?16  8 Dx + 21 10  M?| prediction
+| 38 18 Fj | none                |?17  8 Dx + 21 10  M?| prediction
+| 39 18 Fj | none                |?17  8 Dx + 22 10  M?| prediction
+| 40 18 Fj | none                | 18  8 Dx + 22 10  M |
+
+2024-12-21 Dec.Sat 17:11:12 [ ] IDEA: use Morpheus's contract that shows how many mineable otoms you have, use that as input to a script that generates a function call string you send to the Annihilator contract to burn all but 1 of each. Would be so easy then to generate NRG.
+
+
+
+2024-12-21 Dec.Sat 15:56:19 Looking at shells. Examined 285 isotopes. The largest values in each shell are:
+Filled in Outer Shell   0-3-3-4-5-2-3-4
+Empty in Outer Shell    0-2-2-3-4-2-3-3
+
+
+
+
+2024-12-20 Dec.Fri 20:12:45 I THOUGHT "24 12 Pt + 51 26 Xk + 3100 => 75 38 Bt" but apparently that does "24 12 Pt + 51 26 Xk + 3100 => 75 37 Gq" INSTEAD
+
+29 15 Xc + 46 24 Oc + 5000 => 75 38 Bt + 2448.81 Reactions occurred: nuclear, decay Energy used: 2551.19
+
+
+
+
 2024-12-20.Dec.Fri 11:28 I'd love to iterate all the reactions performed on OTOM and see all inputs and outputs. 
 
 This is the first reaction: https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/1

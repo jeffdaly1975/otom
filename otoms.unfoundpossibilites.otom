@@ -63,7 +63,7 @@ UNFOUND POSSIBILITIES:
  8  4 Af + 10  6 Pq =  18  10 ..
  9  5 Xl +  9  5 Xl =  18  10 ..
 
-| 19  8 Dx | [f] try
+| 19  8 Dx | [f] try WAIT I FOUND IT BY DECAY!
  4  2  W + 15  6 Pq =  19   8 ..
  5  2  W + 14  6 Pq =  19   8 ..  reaction 14 6 Pq + 5 2 W + 1600 => 19  9 Pm + 958.38 Energy Reactions occurred: nuclear, decay Energy used: 641.62
 
@@ -103,7 +103,7 @@ UNFOUND POSSIBILITIES:
 10  6 Pq + 14  7 Zz =  24  13 ..
 11  6 Pq + 13  7 Zz =  24  13 ..
 
-| 26 11 Fw | [ ] try
+| 26 11 Fw | [r] try SUCCESS! I DISCOVERED IT
  3  1 Ju + 23 10  M =  26  11 ..
 11  5 Xl + 15  6 Pq =  26  11 ..
 
@@ -134,7 +134,7 @@ UNFOUND POSSIBILITIES:
 11  6 Pq + 17  9 Pm =  28  15 ..
 13  7 Zz + 15  8 Dx =  28  15 .. [r] reaction 13  7 Zz + 15  8 Dx + 5000 => 28  14 Zq + 4073.14 Energy Reactions occurred: nuclear, decay Energy used: 926.86
 
-| 30 13  S | [ ] try
+| 30 13  S | [r] try SUCCESS! I FOUND IT
  5  2  W + 25 11 Fw =  30  13 ..
  7  3 Cq + 23 10  M =  30  13 ..
 15  6 Pq + 15  7 Zz =  30  13 ..

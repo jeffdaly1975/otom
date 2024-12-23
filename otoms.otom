@@ -534,6 +534,25 @@ atom 18  8 Dx | Decay type	stable
 atom 18  8 Dx | Filled in Outer Shell	0-0-1-0-0-0-0-0
 atom 18  8 Dx | Empty in Outer Shell	0-0-2-2-0-0-0-0
 
+atom 19  8 Dx | Lab sheet
+atom 19  8 Dx | Dx otom
+atom 19  8 Dx | Token ID 112189688167929084055883402287139204325716886866799699205469986433414306587868
+atom 19  8 Dx | Name	Dx
+atom 19  8 Dx | Discovered by	0x6200...9848
+atom 19  8 Dx | Current Supply	1
+atom 19  8 Dx | Series	alkaline
+atom 19  8 Dx | Protons	8
+atom 19  8 Dx | Neutrons	11
+atom 19  8 Dx | Stability	0.522
+atom 19  8 Dx | Density	11.198 g/cm³
+atom 19  8 Dx | Radius	1.193 pm
+atom 19  8 Dx | Electronegativity	0.071
+atom 19  8 Dx | Mass	19.000 amu
+atom 19  8 Dx | Metallic	Yes
+atom 19  8 Dx | Decay type	beta-
+atom 19  8 Dx | Filled in Outer Shell	0-0-1-0-0-0-0-0
+atom 19  8 Dx | Empty in Outer Shell	0-0-2-2-0-0-0-0
+
 atom 17  9 Pm | Lab sheet
 atom 17  9 Pm | Pm otom
 atom 17  9 Pm | Token ID 97399257658433516715010782497308004205954685430927919921776919842067243338385
@@ -609,6 +628,25 @@ atom 20  9 Pm | Metallic	Yes
 atom 20  9 Pm | Decay type	beta-
 atom 20  9 Pm | Filled in Outer Shell	0-0-1-1-0-0-0-0
 atom 20  9 Pm | Empty in Outer Shell	0-0-2-1-0-0-0-0
+
+atom 21  9 Pm | Lab sheet
+atom 21  9 Pm | Pm otom
+atom 21  9 Pm | Token ID 17347872832932395013609748468952829770211104595524814142998801037318466753031
+atom 21  9 Pm | Name	Pm
+atom 21  9 Pm | Discovered by	0x6200...9848
+atom 21  9 Pm | Current Supply	2
+atom 21  9 Pm | Series	metal
+atom 21  9 Pm | Protons	9
+atom 21  9 Pm | Neutrons	12
+atom 21  9 Pm | Stability	0.609
+atom 21  9 Pm | Density	17.481 g/cm³
+atom 21  9 Pm | Radius	1.063 pm
+atom 21  9 Pm | Electronegativity	0.233
+atom 21  9 Pm | Mass	21.000 amu
+atom 21  9 Pm | Metallic	Yes
+atom 21  9 Pm | Decay type	beta-
+atom 21  9 Pm | Filled in Outer Shell	0-0-1-1-0-0-0-0
+atom 21  9 Pm | Empty in Outer Shell	0-0-2-1-0-0-0-0
 
 atom 19 10  M | Lab sheet
 atom 19 10  M | M otom
@@ -800,6 +838,25 @@ atom 25 11 Fw | Decay type	beta-
 atom 25 11 Fw | Filled in Outer Shell	0-0-3-1-0-0-0-0
 atom 25 11 Fw | Empty in Outer Shell	0-0-0-1-0-0-0-0
 
+atom 26 11 Fw | Lab sheet
+atom 26 11 Fw | Fw otom
+atom 26 11 Fw | Token ID 37941232443015537275807816714578959647735363517726378671231659313835074264384
+atom 26 11 Fw | Name	Fw
+atom 26 11 Fw | Discovered by	0x6200...9848
+atom 26 11 Fw | Current Supply	1
+atom 26 11 Fw | Series	nonmetal
+atom 26 11 Fw | Protons	11
+atom 26 11 Fw | Neutrons	15
+atom 26 11 Fw | Stability	0.634
+atom 26 11 Fw | Density	32.898 g/cm³
+atom 26 11 Fw | Radius	0.925 pm
+atom 26 11 Fw | Electronegativity	1.083
+atom 26 11 Fw | Mass	26.000 amu
+atom 26 11 Fw | Metallic	No
+atom 26 11 Fw | Decay type	beta-
+atom 26 11 Fw | Filled in Outer Shell	0-0-3-1-0-0-0-0
+atom 26 11 Fw | Empty in Outer Shell	0-0-0-1-0-0-0-0
+
 atom 23 12 Pt | Lab sheet
 atom 23 12 Pt | Pt otom
 atom 23 12 Pt | Token ID 98575404886173915173740470729940171246839684101419660330090497643862410889494
@@ -990,6 +1047,25 @@ atom 29 13  S | Metallic	Yes
 atom 29 13  S | Decay type	beta-
 atom 29 13  S | Filled in Outer Shell	0-0-0-1-0-0-0-0
 atom 29 13  S | Empty in Outer Shell	0-0-0-3-0-0-0-0
+
+atom 30 13  S | Lab sheet
+atom 30 13  S | S otom
+atom 30 13  S | Token ID 28872639999767004860254826448341944465731199618217749414952113656927997121418
+atom 30 13  S | Name	S
+atom 30 13  S | Discovered by	0x6200...9848
+atom 30 13  S | Current Supply	1
+atom 30 13  S | Series	alkaline
+atom 30 13  S | Protons	13
+atom 30 13  S | Neutrons	17
+atom 30 13  S | Stability	0.651
+atom 30 13  S | Density	15.128 g/cm³
+atom 30 13  S | Radius	1.256 pm
+atom 30 13  S | Electronegativity	0.083
+atom 30 13  S | Mass	30.000 amu
+atom 30 13  S | Metallic	Yes
+atom 30 13  S | Decay type	beta-
+atom 30 13  S | Filled in Outer Shell	0-0-0-1-0-0-0-0
+atom 30 13  S | Empty in Outer Shell	0-0-0-3-0-0-0-0
 
 atom 27 14 Zq | Lab sheet
 atom 27 14 Zq | Zq otom
@@ -2704,7 +2780,7 @@ atom 52 25 Nb | Mass	52.000 amu
 atom 52 25 Nb | Metallic	Yes
 atom 52 25 Nb | Decay type	stable
 atom 52 25 Nb | Filled in Outer Shell	0-0-0-0-0-0-0-1
-atom 52 25 Nb | Empty in Outer Shell
+atom 52 25 Nb | Empty in Outer Shell	0-0-0-0-0-1-2-1
 
 atom 53 25 Nb | Lab sheet
 atom 53 25 Nb | Nb otom
