@@ -857,6 +857,25 @@ atom 26 11 Fw | Decay type	beta-
 atom 26 11 Fw | Filled in Outer Shell	0-0-3-1-0-0-0-0
 atom 26 11 Fw | Empty in Outer Shell	0-0-0-1-0-0-0-0
 
+atom 22 12 Pt | Lab sheet
+atom 22 12 Pt | Pt otom
+atom 22 12 Pt | Token ID 89965373545860102784486804768587516514890275271568615825007240031660707814843
+atom 22 12 Pt | Name	Pt
+atom 22 12 Pt | Discovered by	0x6200...9848
+atom 22 12 Pt | Current Supply	1
+atom 22 12 Pt | Series	noble
+atom 22 12 Pt | Protons	12
+atom 22 12 Pt | Neutrons	10
+atom 22 12 Pt | Stability	0.717
+atom 22 12 Pt | Density	31.688 g/cm³
+atom 22 12 Pt | Radius	0.885 pm
+atom 22 12 Pt | Electronegativity	0.000
+atom 22 12 Pt | Mass	22.000 amu
+atom 22 12 Pt | Metallic	No
+atom 22 12 Pt | Decay type	beta+
+atom 22 12 Pt | Filled in Outer Shell	0-0-3-2-0-0-0-0
+atom 22 12 Pt | Empty in Outer Shell	0-0-0-0-0-0-0-0
+
 atom 23 12 Pt | Lab sheet
 atom 23 12 Pt | Pt otom
 atom 23 12 Pt | Token ID 98575404886173915173740470729940171246839684101419660330090497643862410889494
@@ -1181,6 +1200,25 @@ atom 32 14 Zq | Decay type	beta-
 atom 32 14 Zq | Filled in Outer Shell	0-0-0-2-0-0-0-0
 atom 32 14 Zq | Empty in Outer Shell	0-0-0-2-0-0-0-0
 
+
+atom 28 15 Xc | Lab sheet
+atom 28 15 Xc | Xc otom
+atom 28 15 Xc | Token ID 25198555517005821974169871987689248865653277752935092937167732929972957705623
+atom 28 15 Xc | Name	Xc
+atom 28 15 Xc | Discovered by	0x6200...9848
+atom 28 15 Xc | Current Supply	1
+atom 28 15 Xc | Series	nonmetal
+atom 28 15 Xc | Protons	15
+atom 28 15 Xc | Neutrons	13
+atom 28 15 Xc | Stability	0.765
+atom 28 15 Xc | Density	26.354 g/cm³
+atom 28 15 Xc | Radius	1.020 pm
+atom 28 15 Xc | Electronegativity	0.750
+atom 28 15 Xc | Mass	28.000 amu
+atom 28 15 Xc | Metallic	No
+atom 28 15 Xc | Decay type	beta+
+atom 28 15 Xc | Filled in Outer Shell	0-0-0-3-0-0-0-0
+atom 28 15 Xc | Empty in Outer Shell	0-0-0-1-0-0-0-0
 
 atom 29 15 Xc | Lab sheet
 atom 29 15 Xc | Xc otom
@@ -3297,8 +3335,7 @@ atom 56 28 Yp | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
 atom 57 28 Yp | Lab sheet
 atom 57 28 Yp | Yp otom
-atom 57 28 Yp | Token ID
-atom 57 28 Yp | 28443684225180673358388576680737318844736206785980683548490384786975871249490
+atom 57 28 Yp | Token ID 28443684225180673358388576680737318844736206785980683548490384786975871249490
 atom 57 28 Yp | Name	Yp
 atom 57 28 Yp | Discovered by	purge-capital.eth
 atom 57 28 Yp | Current Supply	8
