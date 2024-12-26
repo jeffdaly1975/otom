@@ -1,16 +1,19 @@
 #!/usr/bin/perl -w
 
-#  42 otoms
-# 291 isotopes
-# 291x291=84681 possible combinations
-# 42486 unique combinations
-# 42486 - 30990 = 11496 that result in known isotopes
+#       42 otoms
+#      292 isotopes
+#    85264 combinations
+#    42778 unique combinations
+#    11532 combinations resulting in known isotopes
 
 my $order_counter=0;
 my @sort_order=();
 my %lookup_name=();
+my %otom_atom_names=();
 my %already_listed=();
 my %otoms=();
+my $combo_is_existing_isotope=0;
+my $unique_combinations=0;
 
 foreach my $line (<DATA>){
   chomp($line);
@@ -19,6 +22,7 @@ foreach my $line (<DATA>){
     $mass=$1;
     $protons=$2;
     $name=$3;
+    $otom_atom_names{$name}++;
     $string=sprintf "%3d %3d %2s",$mass,$protons,$name;
 
     $otoms{$string}{order}   = $order_counter;
@@ -70,6 +74,11 @@ foreach my $key_row (@sort_order){
 #
      unless (exists $already_listed{"$key_col + $key_row"}){
        print LIST_OUT "$key_row + $key_col = $calculated_m_and_p $calculated_name\n";
+       $unique_combinations++;
+
+       unless ($calculated_name eq '..'){
+        $combo_is_existing_isotope++;
+       }
      }
      $already_listed{"$key_row + $key_col"}=1;
   }
@@ -79,7 +88,12 @@ foreach my $key_row (@sort_order){
 close TABLE;
 close LIST_OUT;
 
-
+#### print summary
+printf STDERR "# %8d otoms\n",  scalar(keys %otom_atom_names);
+printf STDERR "# %8d isotopes\n", $order_counter;
+printf STDERR "# %8d combinations\n", ($order_counter * $order_counter);
+printf STDERR "# %8d unique combinations\n", $unique_combinations;
+printf STDERR "# %8d combinations resulting in known isotopes\n", $combo_is_existing_isotope;
 
 
 __DATA__
@@ -245,6 +259,7 @@ __DATA__
 57 26 Xk
 58 26 Xk
 59 26 Xk
+51 27 Ic
 52 27 Ic
 53 27 Ic
 54 27 Ic

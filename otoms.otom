@@ -2,7 +2,7 @@ atom  1  1 Ju | Lab sheet
 atom  1  1 Ju | Ju otom
 atom  1  1 Ju | Token ID 109411192323005013320236074910166367482792971750025377481544980126703983546020
 atom  1  1 Ju | Name	Ju
-atom  1  1 Ju | Discovered by	0x1048...228C
+atom  1  1 Ju | Discovered by	denisqi.eth
 atom  1  1 Ju | Current Supply	3,395
 atom  1  1 Ju | Series	alkaline
 atom  1  1 Ju | Protons	1
@@ -22,7 +22,7 @@ atom  2  1 Ju | Lab sheet
 atom  2  1 Ju | Ju otom
 atom  2  1 Ju | Token ID 35159569680903626501449329353512578019171730918789714169601127546706358467814
 atom  2  1 Ju | Name	Ju
-atom  2  1 Ju | Discovered by	0x1048...228C
+atom  2  1 Ju | Discovered by	denisqi.eth
 atom  2  1 Ju | Current Supply	1,213
 atom  2  1 Ju | Series	alkaline
 atom  2  1 Ju | Protons	1
@@ -43,7 +43,7 @@ atom  3  1 Ju | Lab sheet
 atom  3  1 Ju | Ju otom
 atom  3  1 Ju | Token ID 97038452133166389191940970869235037672971405321159886681321332564624883738122
 atom  3  1 Ju | Name	Ju
-atom  3  1 Ju | Discovered by	0xD8Aa...25aF
+atom  3  1 Ju | Discovered by	farmerchad.eth
 atom  3  1 Ju | Current Supply	1,080
 atom  3  1 Ju | Series	alkaline
 atom  3  1 Ju | Protons	1
@@ -63,7 +63,7 @@ atom  4  2  W | Lab sheet
 atom  4  2  W | W otom
 atom  4  2  W | Token ID 82314540186597377019741273775235000929070457658490928548440454198341617233474
 atom  4  2  W | Name	W
-atom  4  2  W | Discovered by	0x1048...228C
+atom  4  2  W | Discovered by	denisqi.eth
 atom  4  2  W | Current Supply	1,106
 atom  4  2  W | Series	nonmetal
 atom  4  2  W | Protons	2
@@ -538,7 +538,7 @@ atom 19  8 Dx | Lab sheet
 atom 19  8 Dx | Dx otom
 atom 19  8 Dx | Token ID 112189688167929084055883402287139204325716886866799699205469986433414306587868
 atom 19  8 Dx | Name	Dx
-atom 19  8 Dx | Discovered by	0x6200...9848
+atom 19  8 Dx | Discovered by	jdblacklung.eth
 atom 19  8 Dx | Current Supply	1
 atom 19  8 Dx | Series	alkaline
 atom 19  8 Dx | Protons	8
@@ -633,7 +633,7 @@ atom 21  9 Pm | Lab sheet
 atom 21  9 Pm | Pm otom
 atom 21  9 Pm | Token ID 17347872832932395013609748468952829770211104595524814142998801037318466753031
 atom 21  9 Pm | Name	Pm
-atom 21  9 Pm | Discovered by	0x6200...9848
+atom 21  9 Pm | Discovered by	jdblacklung.eth
 atom 21  9 Pm | Current Supply	2
 atom 21  9 Pm | Series	metal
 atom 21  9 Pm | Protons	9
@@ -842,7 +842,7 @@ atom 26 11 Fw | Lab sheet
 atom 26 11 Fw | Fw otom
 atom 26 11 Fw | Token ID 37941232443015537275807816714578959647735363517726378671231659313835074264384
 atom 26 11 Fw | Name	Fw
-atom 26 11 Fw | Discovered by	0x6200...9848
+atom 26 11 Fw | Discovered by	jdblacklung.eth
 atom 26 11 Fw | Current Supply	1
 atom 26 11 Fw | Series	nonmetal
 atom 26 11 Fw | Protons	11
@@ -861,7 +861,7 @@ atom 22 12 Pt | Lab sheet
 atom 22 12 Pt | Pt otom
 atom 22 12 Pt | Token ID 89965373545860102784486804768587516514890275271568615825007240031660707814843
 atom 22 12 Pt | Name	Pt
-atom 22 12 Pt | Discovered by	0x6200...9848
+atom 22 12 Pt | Discovered by	jdblacklung.eth
 atom 22 12 Pt | Current Supply	1
 atom 22 12 Pt | Series	noble
 atom 22 12 Pt | Protons	12
@@ -899,7 +899,7 @@ atom 24 12 Pt | Lab sheet
 atom 24 12 Pt | Pt otom
 atom 24 12 Pt | Token ID 43140388860497231268305202511725991473995722804190461363284215471610267609721
 atom 24 12 Pt | Name	Pt
-atom 24 12 Pt | Discovered by	0xCf2b...e05d
+atom 24 12 Pt | Discovered by	0xphoenix.eth
 atom 24 12 Pt | Current Supply	269
 atom 24 12 Pt | Series	noble
 atom 24 12 Pt | Protons	12
@@ -1071,7 +1071,7 @@ atom 30 13  S | Lab sheet
 atom 30 13  S | S otom
 atom 30 13  S | Token ID 28872639999767004860254826448341944465731199618217749414952113656927997121418
 atom 30 13  S | Name	S
-atom 30 13  S | Discovered by	0x6200...9848
+atom 30 13  S | Discovered by	jdblacklung.eth
 atom 30 13  S | Current Supply	1
 atom 30 13  S | Series	alkaline
 atom 30 13  S | Protons	13
@@ -1205,7 +1205,7 @@ atom 28 15 Xc | Lab sheet
 atom 28 15 Xc | Xc otom
 atom 28 15 Xc | Token ID 25198555517005821974169871987689248865653277752935092937167732929972957705623
 atom 28 15 Xc | Name	Xc
-atom 28 15 Xc | Discovered by	0x6200...9848
+atom 28 15 Xc | Discovered by	jdblacklung.eth
 atom 28 15 Xc | Current Supply	1
 atom 28 15 Xc | Series	nonmetal
 atom 28 15 Xc | Protons	15
@@ -1395,7 +1395,7 @@ atom 34 16 Gy | Lab sheet
 atom 34 16 Gy | Gy otom
 atom 34 16 Gy | Token ID 14005511400042620777680147375153742749049681783959082269863965521481989449752
 atom 34 16 Gy | Name	Gy
-atom 34 16 Gy | Discovered by	0xf928...9fcC
+atom 34 16 Gy | Discovered by	devinmcgloin.eth
 atom 34 16 Gy | Current Supply	252
 atom 34 16 Gy | Series	noble
 atom 34 16 Gy | Protons	16
@@ -1548,7 +1548,7 @@ atom 37 17  D | Lab sheet
 atom 37 17  D | D otom
 atom 37 17  D | Token ID 10892028944868184698017139511314360122045651674561400536434258719333315342298
 atom 37 17  D | Name	D
-atom 37 17  D | Discovered by	0x4293...81B8
+atom 37 17  D | Discovered by	degenrob.eth
 atom 37 17  D | Current Supply	162
 atom 37 17  D | Series	alkaline
 atom 37 17  D | Protons	17
@@ -1700,7 +1700,7 @@ atom 39 18 Fj | Lab sheet
 atom 39 18 Fj | Fj otom
 atom 39 18 Fj | Token ID 95588696281820236941772007254000060007254729324290821749977767654235722889284
 atom 39 18 Fj | Name	Fj
-atom 39 18 Fj | Discovered by	0xfED0...2609
+atom 39 18 Fj | Discovered by	msomnia.eth
 atom 39 18 Fj | Current Supply	2
 atom 39 18 Fj | Series	metal
 atom 39 18 Fj | Protons	18
@@ -1719,7 +1719,7 @@ atom 40 18 Fj | Lab sheet
 atom 40 18 Fj | Fj otom
 atom 40 18 Fj | Token ID 28468817589091029829739867426876529376764944707379976465463858506154415733598
 atom 40 18 Fj | Name	Fj
-atom 40 18 Fj | Discovered by	0xfED0...2609
+atom 40 18 Fj | Discovered by	msomnia.eth
 atom 40 18 Fj | Current Supply	2
 atom 40 18 Fj | Series	metal
 atom 40 18 Fj | Protons	18
@@ -2500,7 +2500,7 @@ atom 50 23 Aw | Lab sheet
 atom 50 23 Aw | Aw otom
 atom 50 23 Aw | Token ID 110656826149487321992430974152861622810896858032454732918669727304089535290245
 atom 50 23 Aw | Name	Aw
-atom 50 23 Aw | Discovered by	0x9631...cad7
+atom 50 23 Aw | Discovered by	pastelle.eth
 atom 50 23 Aw | Current Supply	202
 atom 50 23 Aw | Series	nonmetal
 atom 50 23 Aw | Protons	23
@@ -2805,7 +2805,7 @@ atom 52 25 Nb | Lab sheet
 atom 52 25 Nb | Nb otom
 atom 52 25 Nb | Token ID 42728454091882285128251924214703901437856961239806286683874378783414709943971
 atom 52 25 Nb | Name	Nb
-atom 52 25 Nb | Discovered by	0xfED0...2609
+atom 52 25 Nb | Discovered by	msomnia.eth
 atom 52 25 Nb | Current Supply	3
 atom 52 25 Nb | Series	alkaline
 atom 52 25 Nb | Protons	25
@@ -2862,7 +2862,7 @@ atom 55 25 Nb | Lab sheet
 atom 55 25 Nb | Nb otom
 atom 55 25 Nb | Token ID 42728454091882285128251924214703901437856961239806286683874378783414709943971
 atom 55 25 Nb | Name	Nb
-atom 55 25 Nb | Discovered by	0xfED0...2609
+atom 55 25 Nb | Discovered by	msomnia.eth
 atom 55 25 Nb | Current Supply	5
 atom 55 25 Nb | Series	alkaline
 atom 55 25 Nb | Protons	25
@@ -3085,6 +3085,25 @@ atom 59 26 Xk | Metallic	Yes
 atom 59 26 Xk | Decay type	beta-
 atom 59 26 Xk | Filled in Outer Shell	0-0-0-0-0-0-1-1
 atom 59 26 Xk | Empty in Outer Shell	0-0-0-0-0-1-1-1
+
+atom 51 27 Ic | Lab sheet
+atom 51 27 Ic | Ic otom
+atom 51 27 Ic | Token ID 55813070009150246053337480254262320705183888842390832675515785100670793248547
+atom 51 27 Ic | Name	Ic
+atom 51 27 Ic | Discovered by	msomnia.eth
+atom 51 27 Ic | Current Supply	3
+atom 51 27 Ic | Series	metal
+atom 51 27 Ic | Protons	27
+atom 51 27 Ic | Neutrons	24
+atom 51 27 Ic | Stability	0.803
+atom 51 27 Ic | Density	27.916 g/cm³
+atom 51 27 Ic | Radius	1.222 pm
+atom 51 27 Ic | Electronegativity	0.233
+atom 51 27 Ic | Mass	51.000 amu
+atom 51 27 Ic | Metallic	Yes
+atom 51 27 Ic | Decay type	beta+
+atom 51 27 Ic | Filled in Outer Shell	0-0-0-0-0-1-1-1
+atom 51 27 Ic | Empty in Outer Shell	0-0-0-0-0-0-1-1
 
 atom 52 27 Ic | Lab sheet
 atom 52 27 Ic | Ic otom
@@ -3908,7 +3927,7 @@ atom 63 31 At | Lab sheet
 atom 63 31 At | At otom
 atom 63 31 At | Token ID 61527017560901935556338232718150582086160032288866499719603811738425606835841
 atom 63 31 At | Name	At
-atom 63 31 At | Discovered by	0x9C54...2880
+atom 63 31 At | Discovered by	msomnia.eth
 atom 63 31 At | Current Supply	9
 atom 63 31 At | Series	metal
 atom 63 31 At | Protons	31
@@ -4537,7 +4556,7 @@ atom 73 34 Gk | Lab sheet
 atom 73 34 Gk | Gk otom
 atom 73 34 Gk | Token ID 36153732151168056462937206455847725770143800257867776781261128463284403447042
 atom 73 34 Gk | Name	Gk
-atom 73 34 Gk | Discovered by	0x3ba3...9f83
+atom 73 34 Gk | Discovered by	qma0000.eth
 atom 73 34 Gk | Current Supply	5
 atom 73 34 Gk | Series	metal
 atom 73 34 Gk | Protons	34
@@ -4746,7 +4765,7 @@ atom 77 35 Qi | Lab sheet
 atom 77 35 Qi | Qi otom
 atom 77 35 Qi | Token ID 59018707617756332844516943625383993099530831164226234459278009828367760534225
 atom 77 35 Qi | Name	Qi
-atom 77 35 Qi | Discovered by	0x9fCa...4098
+atom 77 35 Qi | Discovered by	aldover.eth
 atom 77 35 Qi | Current Supply	3
 atom 77 35 Qi | Series	metal
 atom 77 35 Qi | Protons	35
@@ -4841,7 +4860,7 @@ atom 75 36 Xy | Lab sheet
 atom 75 36 Xy | Xy otom
 atom 75 36 Xy | Token ID 48403027127597699540904503087444975635898771454593259787746577774048422372580
 atom 75 36 Xy | Name	Xy
-atom 75 36 Xy | Discovered by	0xF8d0...9448
+atom 75 36 Xy | Discovered by	zeroshape.eth
 atom 75 36 Xy | Current Supply	7
 atom 75 36 Xy | Series	nonmetal
 atom 75 36 Xy | Protons	36
@@ -4879,7 +4898,7 @@ atom 77 36 Xy | Lab sheet
 atom 77 36 Xy | Xy otom
 atom 77 36 Xy | Token ID 11871785935892476481262567927315062531865180336315678004630712977507796936730
 atom 77 36 Xy | Name	Xy
-atom 77 36 Xy | Discovered by	0x9C54...2880
+atom 77 36 Xy | Discovered by	msomnia.eth
 atom 77 36 Xy | Current Supply	2
 atom 77 36 Xy | Series	nonmetal
 atom 77 36 Xy | Protons	36
@@ -4936,7 +4955,7 @@ atom 74 37 Gq | Lab sheet
 atom 74 37 Gq | Gq otom
 atom 74 37 Gq | Token ID 57403155215350996738805965829023580228218608789478173497427653219567257193455
 atom 74 37 Gq | Name	Gq
-atom 74 37 Gq | Discovered by	0xfED0...2609
+atom 74 37 Gq | Discovered by	msomnia.eth
 atom 74 37 Gq | Current Supply	4
 atom 74 37 Gq | Series	noble
 atom 74 37 Gq | Protons	37
