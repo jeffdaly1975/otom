@@ -432,7 +432,6 @@ I still can't figure out what its doing
 | 39 18 Fj | none                |?17  8 Dx + 22 10  M?| prediction
 | 40 18 Fj | none                | 18  8 Dx + 22 10  M |
 
-2024-12-21 Dec.Sat 17:11:12 [ ] IDEA: use Morpheus's contract that shows how many mineable otoms you have, use that as input to a script that generates a function call string you send to the Annihilator contract to burn all but 1 of each. Would be so easy then to generate NRG.
 
 
 
@@ -507,7 +506,7 @@ https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/
 # 
 # with this on command line:
       :%s/^\s*\(\d\+\) \(\w\+\)\s*$/\=printf("%4dx %s %s",submatch(1),otomdict[submatch(2)],submatch(2))/
-# and with the associative array %otomdict in temp.otom.vim
+# and with the associative array %otomdict in syntax/otom.vim
 #
 
 
