@@ -1,8 +1,29 @@
-Lets do  21  9 Pm + 0
- [r]  34 15 Xc + 11  5 Xl + 1400 => 45 20  C
- [r] (45 20  C)+            3600 =>(24 11 Fw + 21  9 Pm)
- [r] (21  9 Pm)+               0 => ?
- 21  9 Pm + 0 => 21 10  M 
+2024-12-31.Dec.Tue 17:21:00 QMA pointed out in the discord that the isotopes image from Kjetil with unknown meaning was in fact stability numbers. I don't know how I didn't see it. So i filled out my text version and added unfound otom isotopes with asterisks to indicate ones we still have yet to discover. I was also able to insert the known stability numbers for isotopes that didn't fit in Kjetil's chart by filling in from proton+neutron counts. Since the chart from Kjetil was not complete we cannot know the full extent. Only from around Af to Xk. But with that information in mind, I can identify 140 isotopes we have yet to discover but apparently exist:
+
+ Af-10
+ Xl-12 Xl-13
+ Pq-16
+ Zz-12 Zz-17 Zz-18
+ Dx-14 Dx-20
+ Pm-16 Pm-22 Pm-23
+ M-17  M-18  M-24  M-25  M-26
+ Fw-19 Fw-27 Fw-28
+ Pt-21 Pt-28 Pt-29 Pt-30 Pt-31
+ S-23  S-24  S-31  S-32  S-33
+ Zq-24 Zq-25 Zq-26 Zq-33 Zq-34 Zq-35 Zq-36
+ Xc-26 Xc-27 Xc-35 Xc-36 Xc-37 Xc-38 Xc-39
+ Gy-28 Gy-29 Gy-30 Gy-37 Gy-38 Gy-39 Gy-40 Gy-41
+ D-30  D-31  D-40  D-41  D-42  D-43  D-44
+ Fj-31 Fj-32 Fj-33 Fj-42 Fj-43 Fj-44 Fj-45 Fj-46
+ O-33  O-34  O-35  O-36  O-44  O-45  O-46  O-47  O-48
+ C-35  C-36  C-37  C-46  C-47  C-48  C-49  C-50  C-51
+ E-36  E-37  E-38  E-39  E-49  E-50  E-51  E-52  E-53
+ A-38  A-39  A-40  A-41  A-51  A-52  A-53  A-54  A-55  A-56
+ Aw-40 Aw-41 Aw-42 Aw-43 Aw-52 Aw-53 Aw-54 Aw-55 Aw-56 Aw-57 Aw-58
+ Oc-42 Oc-43 Oc-44 Oc-45 Oc-55 Oc-56 Oc-57 Oc-58 Oc-59 Oc-60 Oc-61
+ Nb-44 Nb-45 Nb-46 Nb-57 Nb-58 Nb-59 Nb-60 Nb-61 Nb-62 Nb-63
+ Xk-46 Xk-47 Xk-48 Xk-49
+
 
 2024-12-25 Dec.Wed 14:22:43 [ ] I still cannot decipher the image from Kjetil of decimal numbers in a grid. 	
 Ljosberg posted a copy annotated as rows of protons and columns of neutrons but it was disputed it saying its rows of neutrons and columns of protons. Ljosberg said "take M23 for instance. It has a stability of 0.763, which matches with (x,y)=(10,13)"
