@@ -1,0 +1,20 @@
+GIT CHEATSHEET
+=> setup
+git config --global user.name "jeffdaly1975"
+git config --global user.email "daly.jeff@gmail.com"
+
+=> get local copy of github
+git clone https://github.com/jeffdaly1975/otom.git
+
+=> push changes to github
+edit files
+git add <file>
+git commit -m "updates"
+git push
+
+=> commit all changed files
+git commit -a -m "updates"
+
+=> get changes to local
+git fetch
+git merge
