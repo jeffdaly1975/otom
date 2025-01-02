@@ -16,5 +16,4 @@ git push
 git commit -a -m "updates"
 
 => get changes to local
-git fetch
-git merge
+git pull  # this is "git fetch" and "git merge"
