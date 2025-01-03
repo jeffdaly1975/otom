@@ -1,3 +1,9 @@
+
+would 5 2 W + 15 6 Pq => 20 8 Dx?
+Or would there be a decay? Then it would need 7 3 Cq + 13 4 ??
+but what about 5 2 W + 5 2 W + 5 2 W + 5 2 W?
+
+
 2025-01-02.Jan.Thu 16:05:00 Perhaps there is a way to do a reaction that previously produced Af₂ but get it to produce something else
  17  8 Dx + 5000 => Af₂ + 3635.56 | nuclear, metallic      | 1364.44 |
  16  8 Dx + 5000 => Af₂ + 3726.26 | nuclear, metallic      | 1273.74 |
@@ -11,6 +17,8 @@ Well that didn't work: 1  1 Ju + 17  8 Dx + 1600 => 18  8 Dx + 849.62 | nuclear,
 
 
 2024-12-31.Dec.Tue 17:21:00 QMA pointed out in the discord that the isotopes image from Kjetil with unknown meaning was in fact stability numbers. I don't know how I didn't see it. So i filled out my text version and added unfound otom isotopes with asterisks to indicate ones we still have yet to discover. I was also able to insert the known stability numbers for isotopes that didn't fit in Kjetil's chart by filling in from proton+neutron counts. Since the chart from Kjetil was not complete we cannot know the full extent. Only from around Af to Xk. But with that information in mind, I can identify 140 isotopes we have yet to discover but apparently exist:
+
+
 
  Af-10
  Xl-12 Xl-13
@@ -35,6 +43,174 @@ Well that didn't work: 1  1 Ju + 17  8 Dx + 1600 => 18  8 Dx + 849.62 | nuclear,
  Oc-42 Oc-43 Oc-44 Oc-45 Oc-55 Oc-56 Oc-57 Oc-58 Oc-59 Oc-60 Oc-61
  Nb-44 Nb-45 Nb-46 Nb-57 Nb-58 Nb-59 Nb-60 Nb-61 Nb-62 Nb-63
  Xk-46 Xk-47 Xk-48 Xk-49
+
+
+| 10  4 Af | [ ] try
+ 3  1 Ju +  7  3 Cq =  10   4 ..
+ 5  2  W +  5  2  W =  10   4 ..
+
+| 12  5 Xl | [ ] try
+ 3  1 Ju +  9  4 Af =  12   5 ..
+ 5  2  W +  7  3 Cq =  12   5 ..
+
+| 12  7 Zz | [ ] try
+ 1  1 Ju + 11  6 Pq =  12   7 ..
+ 2  1 Ju + 10  6 Pq =  12   7 ..
+ 5  3 Cq +  7  4 Af =  12   7 ..
+
+| 14  8 Dx | [ ] try
+ 1  1 Ju + 13  7 Zz =  14   8 ..
+ 4  2  W + 10  6 Pq =  14   8 ..
+ 5  3 Cq +  9  5 Xl =  14   8 ..
+ 7  4 Af +  7  4 Af =  14   8 ..
+
+| 18 10  M | [ ] try
+ 1  1 Ju + 17  9 Pm =  18  10 ..
+ 5  3 Cq + 13  7 Zz =  18  10 ..
+ 7  4 Af + 11  6 Pq =  18  10 ..
+ 8  4 Af + 10  6 Pq =  18  10 ..
+ 9  5 Xl +  9  5 Xl =  18  10 ..
+
+| 24 13  S | [ ] try
+ 1  1 Ju + 23 12 Pt =  24  13 ..
+ 5  3 Cq + 19 10  M =  24  13 ..
+ 7  4 Af + 17  9 Pm =  24  13 ..
+ 9  5 Xl + 15  8 Dx =  24  13 ..
+10  6 Pq + 14  7 Zz =  24  13 ..
+11  6 Pq + 13  7 Zz =  24  13 ..
+
+| 26 14 Zq | [ ] try
+ 1  1 Ju + 25 13  S =  26  14 ..
+ 5  3 Cq + 21 11 Fw =  26  14 ..
+ 7  4 Af + 19 10  M =  26  14 ..
+ 9  5 Xl + 17  9 Pm =  26  14 ..
+10  6 Pq + 16  8 Dx =  26  14 ..
+11  6 Pq + 15  8 Dx =  26  14 ..
+13  7 Zz + 13  7 Zz =  26  14 ..
+
+| 30 16 Gy | [ ] try
+ 1  1 Ju + 29 15 Xc =  30  16 ..
+ 5  3 Cq + 25 13  S =  30  16 ..
+ 7  4 Af + 23 12 Pt =  30  16 ..
+ 9  5 Xl + 21 11 Fw =  30  16 ..
+10  6 Pq + 20 10  M =  30  16 ..
+11  6 Pq + 19 10  M =  30  16 ..
+13  7 Zz + 17  9 Pm =  30  16 ..
+15  8 Dx + 15  8 Dx =  30  16 ..
+
+| 31 17  D | [ ] try
+10  6 Pq + 21 11 Fw =  31  17 ..
+
+| 33 14 Zq | [ ] try
+15  6 Pq + 18  8 Dx =  33  14 ..
+
+| 33 18 Fj | [ ] try
+ 1  1 Ju + 32 17  D =  33  18 ..
+10  6 Pq + 23 12 Pt =  33  18 ..
+
+| 35 15 Xc | [ ] try
+ 3  1 Ju + 32 14 Zq =  35  15 ..
+
+| 36 19  O | [ ] try
+ 1  1 Ju + 35 18 Fj =  36  19 ..
+ 2  1 Ju + 34 18 Fj =  36  19 ..
+ 4  2  W + 32 17  D =  36  19 ..
+ 5  3 Cq + 31 16 Gy =  36  19 ..
+ 7  4 Af + 29 15 Xc =  36  19 ..
+ 9  5 Xl + 27 14 Zq =  36  19 ..
+10  6 Pq + 26 13  S =  36  19 ..
+11  6 Pq + 25 13  S =  36  19 ..
+13  7 Zz + 23 12 Pt =  36  19 ..
+15  8 Dx + 21 11 Fw =  36  19 ..
+17  9 Pm + 19 10  M =  36  19 ..
+
+| 37 20  C | [ ] try
+ 5  3 Cq + 32 17  D =  37  20 ..
+10  6 Pq + 27 14 Zq =  37  20 ..
+
+| 39 21  E | [ ] try
+ 1  1 Ju + 38 20  C =  39  21 ..
+ 5  3 Cq + 34 18 Fj =  39  21 ..
+ 7  4 Af + 32 17  D =  39  21 ..
+10  6 Pq + 29 15 Xc =  39  21 ..
+
+| 41 22  A | [ ] try
+ 1  1 Ju + 40 21  E =  41  22 ..
+ 7  4 Af + 34 18 Fj =  41  22 ..
+ 9  5 Xl + 32 17  D =  41  22 ..
+10  6 Pq + 31 16 Gy =  41  22 ..
+
+| 42 18 Fj | [ ] try
+ 3  1 Ju + 39 17  D =  42  18 ..
+
+| 43 23 Aw | [ ] try
+ 1  1 Ju + 42 22  A =  43  23 ..
+ 5  3 Cq + 38 20  C =  43  23 ..
+ 9  5 Xl + 34 18 Fj =  43  23 ..
+10  6 Pq + 33 17  D =  43  23 ..
+11  6 Pq + 32 17  D =  43  23 ..
+
+| 44 19  O | [ ] try
+ 3  1 Ju + 41 18 Fj =  44  19 ..
+ 5  2  W + 39 17  D =  44  19 ..
+15  6 Pq + 29 13  S =  44  19 ..
+
+| 45 24 Oc | [ ] try
+ 1  1 Ju + 44 23 Aw =  45  24 ..
+ 5  3 Cq + 40 21  E =  45  24 ..
+ 7  4 Af + 38 20  C =  45  24 ..
+10  6 Pq + 35 18 Fj =  45  24 ..
+11  6 Pq + 34 18 Fj =  45  24 ..
+13  7 Zz + 32 17  D =  45  24 ..
+
+| 46 20  C | [ ] try
+ 3  1 Ju + 43 19  O =  46  20 ..
+ 5  2  W + 41 18 Fj =  46  20 ..
+ 7  3 Cq + 39 17  D =  46  20 ..
+14  6 Pq + 32 14 Zq =  46  20 ..
+15  6 Pq + 31 14 Zq =  46  20 ..
+23 10  M + 23 10  M =  46  20 ..
+
+
+| 49 26 Xk | [ ] try
+ 1  1 Ju + 48 25 Nb =  49  26 ..
+ 2  1 Ju + 47 25 Nb =  49  26 ..
+ 5  3 Cq + 44 23 Aw =  49  26 ..
+ 7  4 Af + 42 22  A =  49  26 ..
+ 9  5 Xl + 40 21  E =  49  26 ..
+10  6 Pq + 39 20  C =  49  26 ..
+11  6 Pq + 38 20  C =  49  26 ..
+15  8 Dx + 34 18 Fj =  49  26 ..
+17  9 Pm + 32 17  D =  49  26 ..
+
+| 51 22  A | [ ] try
+ 3  1 Ju + 48 21  E =  51  22 ..
+15  6 Pq + 36 16 Gy =  51  22 ..
+
+| 55 24 Oc | [ ] try
+ 5  2  W + 50 22  A =  55  24 ..
+ 7  3 Cq + 48 21  E =  55  24 ..
+14  6 Pq + 41 18 Fj =  55  24 ..
+15  6 Pq + 40 18 Fj =  55  24 ..
+23 10  M + 32 14 Zq =  55  24 ..
+
+| 57 25 Nb | [ ] try
+ 3  1 Ju + 54 24 Oc =  57  25 ..
+ 7  3 Cq + 50 22  A =  57  25 ..
+ 9  4 Af + 48 21  E =  57  25 ..
+14  6 Pq + 43 19  O =  57  25 ..
+15  6 Pq + 42 19  O =  57  25 ..
+18  8 Dx + 39 17  D =  57  25 ..
+23 10  M + 34 15 Xc =  57  25 ..
+25 11 Fw + 32 14 Zq =  57  25 ..
+
+
+
+
+
+
+
+
 
 
 2024-12-24 Dec.Tue 15:49:50 [ ] How can we figure out the formulas used in reactions?
@@ -82,17 +258,6 @@ Well that didn't work: 1  1 Ju + 17  8 Dx + 1600 => 18  8 Dx + 849.62 | nuclear,
  22 12 Pt | Empty in Outer Shell	0-0-0-0-0-0-0-0
 
 
-
-
-[r] 20 10  M + 34 18 Fj + 2200 => 54 28 Yp
-   [r]  9  5 Xl + 25 13  S +  800 => 34 18 Fj 
- or[ ] 10  6 Pq + 24 12 Pt + 1000 => 34 18 Fj
-[ ] 25 11 Fw + 38 17  D + 2000 => 63 28 Yp
-   [ ]  6  3 Cq + 32 14 Zq + 1100 => 38 17  D
-
-[r] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
-[r] 45 23 Aw +  1  1 Ju + 1100 => 46 24 Oc
-[r]  5  3 Cq + 46 24 Oc + 1000 => 51 27 Ic
 
 
 2024-12-23 Dec.Mon 16:31:49 I would like to know what all is in the function call for mining x10. Copied the raw hex data from metamask and got this:

@@ -971,6 +971,25 @@ atom 27 12 Pt | Decay type	beta-
 atom 27 12 Pt | Filled in Outer Shell	0-0-3-2-0-0-0-0
 atom 27 12 Pt | Empty in Outer Shell	0-0-0-0-0-0-0-0
 
+atom 28 12 Pt | Lab sheet
+atom 28 12 Pt | Pt otom
+atom 28 12 Pt | Token ID 91690843751686600861760337116184550559885997097302915985687314627724960085743
+atom 28 12 Pt | Name	Pt
+atom 28 12 Pt | Discovered by	0x6200...9848
+atom 28 12 Pt | Current Supply	1
+atom 28 12 Pt | Series	noble
+atom 28 12 Pt | Protons	12
+atom 28 12 Pt | Neutrons	16
+atom 28 12 Pt | Stability	0.673
+atom 28 12 Pt | Density	40.330 g/cm³
+atom 28 12 Pt | Radius	0.885 pm
+atom 28 12 Pt | Electronegativity	0.000
+atom 28 12 Pt | Mass	28.000 amu
+atom 28 12 Pt | Metallic	No
+atom 28 12 Pt | Decay type	beta-
+atom 28 12 Pt | Filled in Outer Shell	0-0-3-2-0-0-0-0
+atom 28 12 Pt | Empty in Outer Shell	0-0-0-0-0-0-0-0
+
 atom 25 13  S | Lab sheet
 atom 25 13  S | S otom
 atom 25 13  S | Token ID 16860906057824476817344871737779842197445537676230868815629760710066177728119
@@ -2534,6 +2553,8 @@ atom 51 23 Aw | Metallic	No
 atom 51 23 Aw | Decay type	beta-
 atom 51 23 Aw | Filled in Outer Shell	0-0-0-0-5-1-1-0
 atom 51 23 Aw | Empty in Outer Shell	0-0-0-0-0-1-0-0
+
+atom 52 23 Aw | [ ] todo
 
 atom 46 24 Oc | Lab sheet
 atom 46 24 Oc | Oc otom
