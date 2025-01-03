@@ -49,9 +49,11 @@ Well that didn't work: 1  1 Ju + 17  8 Dx + 1600 => 18  8 Dx + 849.62 | nuclear,
  3  1 Ju +  7  3 Cq =  10   4 ..
  5  2  W +  5  2  W =  10   4 ..
 
-| 12  5 Xl | [ ] try
- 3  1 Ju +  9  4 Af =  12   5 ..
- 5  2  W +  7  3 Cq =  12   5 ..
+| 12  5 Xl | [f] try
+ 3  1 Ju +  9  4 Af =  12   5 .. FAILED because it decayed: 3  1 Ju +  9  4 Af + 1600 => 12  6 Pq + 1021.07
+ 5  2  W +  7  3 Cq =  12   5 .. FAILED because it decayed: 5  2  W +  7  3 Cq + 1000 => 12  6 Pq +  436.94
+
+ 5  2  W +  7  4 Af =  12   5 .. with decay? NOPE IT DIDNT WORK with 1000 energy: 5  2  W +  7  4 Af + 1000 =>  6  3 Cq +  6  3 Cq + 586.15
 
 | 12  7 Zz | [ ] try
  1  1 Ju + 11  6 Pq =  12   7 ..

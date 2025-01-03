@@ -8,7 +8,7 @@ endif
 
 
 " This is not ideal but I set this if statement to 1 if I want to have highlighting show rarity or 0 if I want it to show decay types
-if 1
+if 0
 
 syntax match rarity_common     /\<1\s\+1\s\+Ju\>/
 syntax match rarity_common     /\<2\s\+1\s\+Ju\>/
