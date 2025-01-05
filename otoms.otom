@@ -1105,6 +1105,25 @@ atom 30 13  S | Decay type	beta-
 atom 30 13  S | Filled in Outer Shell	0-0-0-1-0-0-0-0
 atom 30 13  S | Empty in Outer Shell	0-0-0-3-0-0-0-0
 
+atom 26 14 Zq | Lab sheet
+atom 26 14 Zq | Zq otom
+atom 26 14 Zq | Token ID 30686439896348681980610456410262143076675485486400170774506559457239956912327
+atom 26 14 Zq | Name	Zq
+atom 26 14 Zq | Discovered by	0x9C54...2880
+atom 26 14 Zq | Current Supply	3
+atom 26 14 Zq | Series	metal
+atom 26 14 Zq | Protons	14
+atom 26 14 Zq | Neutrons	12
+atom 26 14 Zq | Stability	0.707
+atom 26 14 Zq | Density	18.870 g/cm³
+atom 26 14 Zq | Radius	1.113 pm
+atom 26 14 Zq | Electronegativity	0.250
+atom 26 14 Zq | Mass	26.000 amu
+atom 26 14 Zq | Metallic	Yes
+atom 26 14 Zq | Decay type	beta+
+atom 26 14 Zq | Filled in Outer Shell	0-0-0-2-0-0-0-0
+atom 26 14 Zq | Empty in Outer Shell	0-0-0-2-0-0-0-0
+
 atom 27 14 Zq | Lab sheet
 atom 27 14 Zq | Zq otom
 atom 27 14 Zq | Token ID 23049680126940912479710367703106772905714213411559525376036605507120472037029
@@ -2554,7 +2573,24 @@ atom 51 23 Aw | Decay type	beta-
 atom 51 23 Aw | Filled in Outer Shell	0-0-0-0-5-1-1-0
 atom 51 23 Aw | Empty in Outer Shell	0-0-0-0-0-1-0-0
 
-atom 52 23 Aw | [ ] todo
+atom 52 23 Aw | Lab sheet
+atom 52 23 Aw | Aw otom
+atom 52 23 Aw | Token ID 93931756945383408316916455472026014152343113087835356053648132279702077908041
+atom 52 23 Aw | Name	Aw
+atom 52 23 Aw | Discovered by	0x9C54...2880
+atom 52 23 Aw | Current Supply	3
+atom 52 23 Aw | Series	nonmetal
+atom 52 23 Aw | Protons	23
+atom 52 23 Aw | Neutrons	29
+atom 52 23 Aw | Stability	0.795
+atom 52 23 Aw | Density	43.105 g/cm³
+atom 52 23 Aw | Radius	1.065 pm
+atom 52 23 Aw | Electronegativity	1.267
+atom 52 23 Aw | Mass	52.000 amu
+atom 52 23 Aw | Metallic	No
+atom 52 23 Aw | Decay type	beta-
+atom 52 23 Aw | Filled in Outer Shell	0-0-0-0-5-1-1-0
+atom 52 23 Aw | Empty in Outer Shell	0-0-0-0-0-1-0-0
 
 atom 46 24 Oc | Lab sheet
 atom 46 24 Oc | Oc otom
