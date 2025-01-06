@@ -359,6 +359,9 @@ syntax match rarity_rare      /\<51\s\+27\s\+Ic\>/
 syntax match rarity_rare      /\<52\s\+23\s\+Aw\>/
 syntax match rarity_rare      /\<28\s\+12\s\+Pt\>/
 syntax match rarity_rare      /\<26\s\+14\s\+Zq\>/
+syntax match rarity_rare      /\<68\s\+35\s\+Qi\>/
+syntax match rarity_rare      /\<69\s\+35\s\+Qi\>/
+syntax match rarity_rare      /\<71\s\+36\s\+Xy\>/
 
 syntax match rarity_rare      /\<Pq-11\>/
 syntax match rarity_rare      /\<Zz-16\>/
@@ -605,6 +608,9 @@ syntax match rarity_rare      /\<Xc-28\>/
 syntax match rarity_rare      /\<Ic-51\>/
 syntax match rarity_rare      /\<Aw-52\>/
 syntax match rarity_rare      /\<Pt-28\>/
+syntax match rarity_rare      /\<Qi-68\>/
+syntax match rarity_rare      /\<Qi-69\>/
+syntax match rarity_rare      /\<Xy-71\>/
 
 hi rarity_common     guibg=green   ctermbg=green     guifg=black   ctermfg=black
 hi rarity_uncommon   guibg=cyan    ctermbg=cyan      guifg=black   ctermfg=black
@@ -826,6 +832,9 @@ syntax match Decay_type_beta_plus  /\<22\s\+12\s\+Pt\>/
 syntax match Decay_type_beta_plus  /\<28\s\+15\s\+Xc\>/
 syntax match Decay_type_beta_plus  /\<51\s\+27\s\+Ic\>/
 syntax match Decay_type_beta_plus  /\<26\s\+14\s\+Zq\>/
+syntax match Decay_type_beta_plus  /\<69\s\+35\s\+Qi\>/
+syntax match Decay_type_beta_plus  /\<68\s\+35\s\+Qi\>/
+syntax match Decay_type_beta_plus  /\<71\s\+36\s\+Xy\>/
 
 syntax match Decay_type_beta_plus  /\<Cq-5\>/
 syntax match Decay_type_beta_plus  /\<Xl-9\>/
@@ -912,6 +921,9 @@ syntax match Decay_type_beta_plus  /\<Pt-22\>/
 syntax match Decay_type_beta_plus  /\<Xc-28\>/
 syntax match Decay_type_beta_plus  /\<Ic-51\>/
 syntax match Decay_type_beta_plus  /\<Zq-26\>/
+syntax match Decay_type_beta_plus  /\<Qi-69\>/
+syntax match Decay_type_beta_plus  /\<Qi-68\>/
+syntax match Decay_type_beta_plus  /\<Xy-71\>/
 
 " Decay type beta-
 syntax match Decay_type_beta_minus /\<14\s\+6\s\+Pq\>/
@@ -1477,6 +1489,8 @@ let otomdict["361537321511680564629372064558477257701438002578677767812611284632
 let otomdict["31445778042998398434890264469971838638984787468804434397861073167297422242343"]= "74 34 Gk"
 let otomdict["13627041112079929018900686518541147485529025442856061122256856982808963071155"]= "75 34 Gk"
 let otomdict["97831249395358534513858137411202724936416070306231083462656356903835177925177"]= "76 34 Gk"
+let otomdict["17294851575101305809843255558473906805199001927261761505384705661267487459564"]= "68 35 Qi"
+let otomdict["51301654383439990215384401514024904925524342068195522282485245312468081842337"]= "69 35 Qi"
 let otomdict["108560664059242427705213833212868583247509530422754107947640658526277867123727"]= "70 35 Qi"
 let otomdict["75319415389557047755007282063225791863081982459492901186037664546271188230657"]= "71 35 Qi"
 let otomdict["109720235887359353893480088412897684989584150717320557857338745300112468952385"]= "72 35 Qi"
@@ -1486,6 +1500,7 @@ let otomdict["399742986370364363068900957938672089388584766204850436309914913883
 let otomdict["102000077570729428339158829162723250606327432110672430001091948584117074705155"]= "76 35 Qi"
 let otomdict["59018707617756332844516943625383993099530831164226234459278009828367760534225"]= "77 35 Qi"
 let otomdict["10669941292946365981596890023550040665065695715455042146775053914502797783596"]= "78 35 Qi"
+let otomdict["89852950962340883160225323115133528350177059511855498234856351860844227154887"]= "71 36 Xy"
 let otomdict["28613074847850789994692117343380369240572079222016961449756373806753386458075"]= "72 36 Xy"
 let otomdict["9782487275660782397560622626059184636824404432947583250749981670034662333472"]= "73 36 Xy"
 let otomdict["37883965285264940711251166209645390944443071785086000868779745620912087289248"]= "74 36 Xy"

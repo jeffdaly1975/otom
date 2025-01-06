@@ -4685,6 +4685,44 @@ atom 76 34 Gk | Decay type	beta-
 atom 76 34 Gk | Filled in Outer Shell	0-0-0-0-0-2-2-1
 atom 76 34 Gk | Empty in Outer Shell	0-0-0-0-0-0-1-2
 
+atom 68 35 Qi | Lab sheet
+atom 68 35 Qi | Qi otom
+atom 68 35 Qi | Token ID 17294851575101305809843255558473906805199001927261761505384705661267487459564
+atom 68 35 Qi | Name	Qi
+atom 68 35 Qi | Discovered by	msomnia.eth
+atom 68 35 Qi | Current Supply	2
+atom 68 35 Qi | Series	metal
+atom 68 35 Qi | Protons	35
+atom 68 35 Qi | Neutrons	33
+atom 68 35 Qi | Stability	0.712
+atom 68 35 Qi | Density	37.126 g/cm³
+atom 68 35 Qi | Radius	1.224 pm
+atom 68 35 Qi | Electronegativity	0.400
+atom 68 35 Qi | Mass	68.000 amu
+atom 68 35 Qi | Metallic	Yes
+atom 68 35 Qi | Decay type	beta+
+atom 68 35 Qi | Filled in Outer Shell	0-0-0-0-0-2-2-2
+atom 68 35 Qi | Empty in Outer Shell	0-0-0-0-0-0-1-1
+
+atom 69 35 Qi | Lab sheet
+atom 69 35 Qi | Qi otom
+atom 69 35 Qi | Token ID 51301654383439990215384401514024904925524342068195522282485245312468081842337
+atom 69 35 Qi | Name	Qi
+atom 69 35 Qi | Discovered by	msomnia.eth
+atom 69 35 Qi | Current Supply	2
+atom 69 35 Qi | Series	metal
+atom 69 35 Qi | Protons	35
+atom 69 35 Qi | Neutrons	34
+atom 69 35 Qi | Stability	0.775
+atom 69 35 Qi | Density	37.672 g/cm³
+atom 69 35 Qi | Radius	1.224 pm
+atom 69 35 Qi | Electronegativity	0.400
+atom 69 35 Qi | Mass	69.000 amu
+atom 69 35 Qi | Metallic	Yes
+atom 69 35 Qi | Decay type	beta+
+atom 69 35 Qi | Filled in Outer Shell	0-0-0-0-0-2-2-2
+atom 69 35 Qi | Empty in Outer Shell	0-0-0-0-0-0-1-1
+
 atom 70 35 Qi | Lab sheet
 atom 70 35 Qi | Qi otom
 atom 70 35 Qi | Token ID 108560664059242427705213833212868583247509530422754107947640658526277867123727
@@ -4855,6 +4893,8 @@ atom 78 35 Qi | Metallic	Yes
 atom 78 35 Qi | Decay type	beta-
 atom 78 35 Qi | Filled in Outer Shell	0-0-0-0-0-2-2-2
 atom 78 35 Qi | Empty in Outer Shell	0-0-0-0-0-0-1-1
+
+atom 71 36 Xy | [ ] todo
 
 atom 72 36 Xy | Lab sheet
 atom 72 36 Xy | Xy otom

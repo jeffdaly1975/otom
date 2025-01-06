@@ -1,3 +1,66 @@
+2025-01-06 Jan.Mon 10:46:24 DANGIT. Blob fees are #1 on the burn leaderboard with 1.455 eth, yet sometimes you can still get low fees (somehow magically) so I tried to mint x10 and it cost 0.00126! Yikes!
+
+2025-01-06 Jan.Mon 09:53:48 MSOMNIA discovered Xy-71. (29 15 Xc + 42 22  A + 2700 => 71 36 Xy)
+[c] add to otoms.complete.list.otom
+[c] add to syntax/otom.vim
+[c] add to otom_reactions.pl
+[c] add to isotopes image from Kjetil with unknown meaning.txt
+[c] add to otoms.decay.otom
+[.] add to otoms.otom
+[c] add to otoms.columns.otom
+[c] add reaction to otom.reactions.otom
+[c] check off otoms.unfoundpossibilites.otom
+[ ] make them myself
+  [c] have 29 15 Xc
+  [ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+    [ ] 29 15 Xc + 42 22  A + 2700 => 71 36 Xy
+
+
+
+2025-01-05 Jan.Sun 20:22:02 [ ] QUESTION: Am I missing something? Why does 15  7 Zz in the details tab of the otom app say:
+ atom 15  7 Zz | Filled in Outer Shell	0-2-2-0-0-0-0-0
+ atom 15  7 Zz | Empty in Outer Shell	0-0-0-0-0-0-0-0
+
+but on the shapescan token page (https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/16555996861323137168106927909571448103649780543471618318675210661754630690176) if you click the image it shows:
+ atom 15  7 Zz |                      	0 2 2 0 0 0 0 0
+ atom 15  7 Zz |                     	0 2 2 0 0 0 0 0  <----is this the total possible?
+while it says in the Attributes section of the page:
+ atom 15  7 Zz | Filled Valence       	0-2-2-0-0-0-0-0
+ atom 15  7 Zz | Empty Valence       	0-0-0-0-0-0-0-0
+
+Is one of them is wrong or does the valence one about outer shell. 
+I guess its two ways of saying it. But the one seems to be the total possible?
+
+On the shapescan image, Group means the Row of the Periodic Table and Period means Column of the Periodic Table
+[ ] I SHOULD transcribe these values from the shapescan token images to my text files somewhere.
+
+
+
+2025-01-05 Jan.Sun 13:41:15 Discovered 1 new molecule by trying to be clever. Thought I could put 2x 9 5 Xl + 2x 25 13  S to get 2x 34 18 Fj but instead it made a new molecule with a chemcial reaction: 9  5 Xl + 9  5 Xl + 25 13 S + 25 13 S + 1600 =>  9  5 Xl + S₂Xl + 1497.69
+
+
+2025-01-05 Jan.Sun 13:01:16 MSOMNIA found 2 more isotopes, Qi-68 and Qi-69
+[c] add to otoms.complete.list.otom
+[c] add to syntax/otom.vim
+[c] add to otom_reactions.pl
+[c] add to isotopes image from Kjetil with unknown meaning.txt
+[c] add to otoms.decay.otom
+[c] add to otoms.otom
+[c] add to otoms.columns.otom
+[c] add reaction to otom.reactions.otom
+[c] check off otoms.unfoundpossibilites.otom
+[c] make them myself
+  [c] need 1x 35 18 Fj, have 2
+  [r] need 3x 34 18 Fj, have 0
+  [r]  9  5 Xl + 25 13  S +  800 => 34 18 Fj 
+  [r] 10  6 Pq + 24 12 Pt + 1000 => 34 18 Fj
+  [r] 10  6 Pq + 24 12 Pt + 1000 => 34 18 Fj
+    [r] 34 18 Fj + 34 18 Fj + 2250 => 68 35 Qi 
+    [r] 34 18 Fj + 35 18 Fj + 2350 => 69 35 Qi 
+
+
+
+
 2025-01-04 Jan.Sat 20:50:18 OBSERVATIONS
 I examined how some isotopes decay when reacted with 0 Energy either by gaining or losing a proton and found that if the starting isotope is 
 stable + 0 NRG = doesn't decay to a new isotopes
@@ -26,41 +89,69 @@ MAX SHELL|          | 0-3-3-4-5-2-3-4     | 0-2-2-3-4-2-3-3
 
 
 HERE ARE BETA- isotopes that decay gaining a proton in outermost shell:
-OTOM     |Decay type|Filled in Outer Shell|Empty in Outer Shell|
-MAX SHELL|          | 0-3-3-4-5-2-3-4     | 0-2-2-3-4-2-3-3
-14  6 Pq | beta-    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    | 
-14  7 Zz | alpha    | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |
+     OTOM     |Decay type|Filled in Outer Shell|Empty in Outer Shell|
+     MAX SHELL|          | 0-3-3-4-5-2-3-4     | 0-2-2-3-4-2-3-3    |
+from 14  6 Pq | beta-    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    | 
+to   14  7 Zz | alpha    | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |
 
-15  6 Pq | beta-    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    | 
-15  7 Zz | stable   | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |
+from 15  6 Pq | beta-    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    | 
+to   15  7 Zz | stable   | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |
 
-16  7 Zz | beta-    | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    | []-[ ][ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ]-[ ][ ][ ][ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ] | []-[ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ] | 
-16  8 Dx | stable   | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0    | []-[ ][ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ]-[ ][ ][ ][ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ] | []-[ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ] |
+from 16  7 Zz | beta-    | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    | []-[ ][ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ]-[ ][ ][ ][ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ] | []-[ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ] | 
+to   16  8 Dx | stable   | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0    | []-[ ][ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ]-[ ][ ][ ][ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ] | []-[ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ][ ]-[ ][ ]-[ ][ ][ ]-[ ][ ][ ] |
 
-19  8 Dx | beta-    | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0    | []-[...]-[x..]-[....]-[     ]-[  ]-[   ]-[    ] | []-[..]-[ee]-[ee.]-[    ]-[  ]-[   ]-[   ] | 
-19  9 Pm | stable   | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    | []-[...]-[x..]-[x...]-[     ]-[  ]-[   ]-[    ] | []-[..]-[ee]-[e..]-[    ]-[  ]-[   ]-[   ] |
+from 19  8 Dx | beta-    | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0    | []-[...]-[x..]-[....]-[     ]-[  ]-[   ]-[    ] | []-[..]-[ee]-[ee.]-[    ]-[  ]-[   ]-[   ] | 
+to   19  9 Pm | stable   | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    | []-[...]-[x..]-[x...]-[     ]-[  ]-[   ]-[    ] | []-[..]-[ee]-[e..]-[    ]-[  ]-[   ]-[   ] |
 
-20  9 Pm | beta-    | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    | 
-20 10  M | stable   | 0-0-2-1-0-0-0-0     | 0-0-1-1-0-0-0-0    |
+from 20  9 Pm | beta-    | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    | 
+to   20 10  M | stable   | 0-0-2-1-0-0-0-0     | 0-0-1-1-0-0-0-0    |
 
-21  9 Pm | beta-    | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    | 
-21 10  M | stable   | 0-0-2-1-0-0-0-0     | 0-0-1-1-0-0-0-0    |
+from 21  9 Pm | beta-    | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    | 
+to   21 10  M | stable   | 0-0-2-1-0-0-0-0     | 0-0-1-1-0-0-0-0    |
 
-23 10  M | beta-    | 0-0-2-1-0-0-0-0     | 0-0-1-1-0-0-0-0    | 
-23 11 Fw | stable   | 0-0-3-1-0-0-0-0     | 0-0-0-1-0-0-0-0    |
+from 23 10  M | beta-    | 0-0-2-1-0-0-0-0     | 0-0-1-1-0-0-0-0    | 
+to   23 11 Fw | stable   | 0-0-3-1-0-0-0-0     | 0-0-0-1-0-0-0-0    |
 
-25 11 Fw | beta-    | 0-0-3-1-0-0-0-0     | 0-0-0-1-0-0-0-0    | 
-25 12 Pt | alpha    | 0-0-3-2-0-0-0-0     | 0-0-0-0-0-0-0-0    |
+from 25 11 Fw | beta-    | 0-0-3-1-0-0-0-0     | 0-0-0-1-0-0-0-0    | 
+to   25 12 Pt | alpha    | 0-0-3-2-0-0-0-0     | 0-0-0-0-0-0-0-0    |
 
-26 11 Fw | beta-    | 0-0-3-1-0-0-0-0     | 0-0-0-1-0-0-0-0    | 
-26 12 Pt | stable   | 0-0-3-2-0-0-0-0     | 0-0-0-0-0-0-0-0    |
+from 26 11 Fw | beta-    | 0-0-3-1-0-0-0-0     | 0-0-0-1-0-0-0-0    | 
+to   26 12 Pt | stable   | 0-0-3-2-0-0-0-0     | 0-0-0-0-0-0-0-0    |
 
-30 13  S | beta-    | 0-0-0-1-0-0-0-0     | 0-0-0-3-0-0-0-0    | 
-30 14 Zq | beta-    | 0-0-0-2-0-0-0-0     | 0-0-0-2-0-0-0-0    |
+from 30 13  S | beta-    | 0-0-0-1-0-0-0-0     | 0-0-0-3-0-0-0-0    | 
+to   30 14 Zq | beta-    | 0-0-0-2-0-0-0-0     | 0-0-0-2-0-0-0-0    |
 
-32 14 Zq | beta-    | 0-0-0-2-0-0-0-0     | 0-0-0-2-0-0-0-0    | 
-32 15 Xc | stable   | 0-0-0-3-0-0-0-0     | 0-0-0-1-0-0-0-0    |
+from 32 14 Zq | beta-    | 0-0-0-2-0-0-0-0     | 0-0-0-2-0-0-0-0    | 
+to   32 15 Xc | stable   | 0-0-0-3-0-0-0-0     | 0-0-0-1-0-0-0-0    |
+...
 
+HERE ARE BETA+ isotopes that decay losing a proton in outermost shell:
+     OTOM     |Decay type|Filled in Outer Shell|Empty in Outer Shell|
+     MAX SHELL|          | 0-3-3-4-5-2-3-4     | 0-2-2-3-4-2-3-3    |
+from  5  3 Cq | beta+    | 0-3-0-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |
+to    5  2  W | stable   | 0-2-0-0-0-0-0-0     | 0-1-0-0-0-0-0-0    |
+
+from  9  5 Xl | beta+    | 0-2-0-0-0-0-0-0     | 0-0-2-0-0-0-0-0    |
+to    9  4 Af | stable   | 0-1-0-0-0-0-0-0     | 0-1-2-0-0-0-0-0    |
+
+from 10  6 Pq | beta+    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    |
+to   10  5 Xl | alpha    | 0-2-0-0-0-0-0-0     | 0-0-2-0-0-0-0-0    |
+
+from 11  6 Pq | beta+    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    |
+to   11  5 Xl | stable   | 0-2-0-0-0-0-0-0     | 0-0-2-0-0-0-0-0    |
+
+from 13  7 Zz | beta+    | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |
+to   13  6 Pq | stable   | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    |
+
+from 15  8 Dx | beta+    | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0    |
+to   15  7 Zz | stable   | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |
+
+from 17  9 Pm | beta+    | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    |
+to   17  8 Dx | stable   | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0    |
+
+from 18  9 Pm | beta+    | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    |
+to   18  8 Dx | stable   | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0    |
+...
 
 14  6 Pq | beta-    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    | 14  6 Pq |^| 14  7 Zz  | alpha    | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |
 15  6 Pq | beta-    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    | 15  6 Pq |^| 15  7 Zz  | stable   | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |
@@ -73,6 +164,19 @@ MAX SHELL|          | 0-3-3-4-5-2-3-4     | 0-2-2-3-4-2-3-3
 26 11 Fw | beta-    | 0-0-3-1-0-0-0-0     | 0-0-0-1-0-0-0-0    | 26 11 Fw |^| 26 12 Pt  | stable   | 0-0-3-2-0-0-0-0     | 0-0-0-0-0-0-0-0    |
 30 13  S | beta-    | 0-0-0-1-0-0-0-0     | 0-0-0-3-0-0-0-0    | 30 13 S  |^| 30 14 Zq  | beta-    | 0-0-0-2-0-0-0-0     | 0-0-0-2-0-0-0-0    |
 32 14 Zq | beta-    | 0-0-0-2-0-0-0-0     | 0-0-0-2-0-0-0-0    | 32 14 Zq |^| 32 15 Xc  | stable   | 0-0-0-3-0-0-0-0     | 0-0-0-1-0-0-0-0    |
+...
+
+ 5  3 Cq | beta+    | 0-3-0-0-0-0-0-0     | 0-0-0-0-0-0-0-0    |  5  3 Cq |v|  5  2  W  | stable   | 0-2-0-0-0-0-0-0     | 0-1-0-0-0-0-0-0    [xx.]        | 
+ 9  5 Xl | beta+    | 0-2-0-0-0-0-0-0     | 0-0-2-0-0-0-0-0    |  9  5 Xl |v|  9  4 Af  | stable   | 0-1-0-0-0-0-0-0     | 0-1-2-0-0-0-0-0         [x...]  | 
+10  6 Pq | beta+    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    | 10  6 Pq |v| 10  5 Xl  | alpha    | 0-2-0-0-0-0-0-0     | 0-0-2-0-0-0-0-0         [xx..]  | 
+11  6 Pq | beta+    | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0    | 11  6 Pq |v| 11  5 Xl  | stable   | 0-2-0-0-0-0-0-0     | 0-0-2-0-0-0-0-0         [xx..]  | 
+13  7 Zz | beta+    | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0    | 13  7 Zz |v| 13  6 Pq  | stable   | 0-2-1-0-0-0-0-0     | 0-0-1-0-0-0-0-0         [xxx.]  | 
+15  8 Dx | beta+    | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0    | 15  8 Dx |v| 15  7 Zz  | stable   | 0-2-2-0-0-0-0-0     | 0-0-0-0-0-0-0-0         [xxxx]  | 
+17  9 Pm | beta+    | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    | 17  9 Pm |v| 17  8 Dx  | stable   | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0                 | 
+18  9 Pm | beta+    | 0-0-1-1-0-0-0-0     | 0-0-2-1-0-0-0-0    | 18  9 Pm |v| 18  8 Dx  | stable   | 0-0-1-0-0-0-0-0     | 0-0-2-2-0-0-0-0                 | 
+...
+
+
 
 TODO:
 [ ] 15  6 Pq + 34 15 Xc + 1200 => 49 22  A OR
@@ -84,12 +188,11 @@ TODO:
       [r] 28 12 Pt +0
       [ ] 28 12 Pt +5000
 
-[r] 15  8 Dx + 17  9 Pm +  950 => 32 17  D
-  [*] 20 10  M + 32 17  D + 2250 => 52 27 Ic
-    [ ] 52 27 Ic + 4800 => 24 12 Pt + 28 15 Xc
-      [ ] 28 15 Xc + 5000
-
-
+[ ]  9  5 Xl + 25 13  S +  800 => 34 18 Fj 
+[ ] 10  6 Pq + 24 12 Pt + 1000 => 34 18 Fj
+[ ] 10  6 Pq + 24 12 Pt + 1000 => 34 18 Fj
+  [ ] 34 18 Fj + 34 18 Fj + 2250 => 68 35 Qi 
+  [ ] 34 18 Fj + 35 18 Fj + 2350 => 69 35 Qi 
 
 
 
@@ -138,6 +241,11 @@ Well that didn't work: 1  1 Ju + 17  8 Dx + 1600 => 18  8 Dx + 849.62 | nuclear,
  Oc-42 Oc-43 Oc-44 Oc-45 Oc-55 Oc-56 Oc-57 Oc-58 Oc-59 Oc-60 Oc-61
  Nb-44 Nb-45 Nb-46 Nb-57 Nb-58 Nb-59 Nb-60 Nb-61 Nb-62 Nb-63
  Xk-46 Xk-47 Xk-48 Xk-49
+...
+
+
+
+
 
 
 | 10  4 Af | [ ] try

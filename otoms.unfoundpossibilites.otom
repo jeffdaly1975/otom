@@ -551,7 +551,7 @@ saw: 25 11 Fw + 37 17  D + 5000 =  62  28 Yp + 3005
 32 14 Zq + 36 16 Gy =  68  30 ..
 34 15 Xc + 34 15 Xc =  68  30 .. => FAILED reaction 34 15 Xc + 34 15 Xc + 5000 => 68 31 At + 2740.80 Energy Reactions occurred: nuclear, decay Energy used: 2259.20
 
-| 69 35 Qi | [x] try
+| 69 35 Qi | [x] try MSOMNIA FOUND IT WITH 
  1  1 Ju + 68 34 Gk =  69  35 ..
  2  1 Ju + 67 34 Gk =  69  35 ..
  4  2  W + 65 33 Pw =  69  35 ..
@@ -596,7 +596,7 @@ saw: 25 11 Fw + 37 17  D + 5000 =  62  28 Yp + 3005
 32 14 Zq + 38 17  D =  70  31 ..
 34 15 Xc + 36 16 Gy =  70  31 ..
 
-| 71 36 Xy | [ ] try
+| 71 36 Xy | [x] try MSOMNIA discovered this with a decay reaction where 1 proton was lost, which reminds me that my whole simplified method of predicting recipes in my otom_reactions.pl perl script doesn't work when there's decay
  1  1 Ju + 70 35 Qi =  71  36 ..
  4  2  W + 67 34 Gk =  71  36 ..
  5  3 Cq + 66 33 Pw =  71  36 ..
