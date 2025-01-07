@@ -111,7 +111,6 @@ syntax match rarity_uncommon  /\<Dx-18\>/
 syntax match rarity_uncommon  /\<Fw-23\>/
 syntax match rarity_uncommon  /\<Xc-32\>/
 syntax match rarity_uncommon  /\<Nb-54\>/
-syntax match rarity_uncommon  /\<Zq-26\>/
 
 syntax match rarity_rare      /\<11\s\+6\s\+Pq\>/
 syntax match rarity_rare      /\<16\s\+7\s\+Zz\>/
@@ -611,6 +610,7 @@ syntax match rarity_rare      /\<Pt-28\>/
 syntax match rarity_rare      /\<Qi-68\>/
 syntax match rarity_rare      /\<Qi-69\>/
 syntax match rarity_rare      /\<Xy-71\>/
+syntax match rarity_rare      /\<Zq-26\>/
 
 hi rarity_common     guibg=green   ctermbg=green     guifg=black   ctermfg=black
 hi rarity_uncommon   guibg=cyan    ctermbg=cyan      guifg=black   ctermfg=black
@@ -937,7 +937,6 @@ syntax match Decay_type_beta_minus /\<29\s\+13\s\+S\>/
 syntax match Decay_type_beta_minus /\<30\s\+14\s\+Zq\>/
 syntax match Decay_type_beta_minus /\<31\s\+14\s\+Zq\>/
 syntax match Decay_type_beta_minus /\<32\s\+14\s\+Zq\>/
-syntax match Decay_type_beta_minus /\<32\s\+14\s\+Zq\>/
 syntax match Decay_type_beta_minus /\<33\s\+15\s\+Xc\>/
 syntax match Decay_type_beta_minus /\<33\s\+17\s\+D\>/
 syntax match Decay_type_beta_minus /\<34\s\+15\s\+Xc\>/
@@ -1015,7 +1014,6 @@ syntax match Decay_type_beta_minus /\<Fw-25\>/
 syntax match Decay_type_beta_minus /\<S-29\>/
 syntax match Decay_type_beta_minus /\<Zq-30\>/
 syntax match Decay_type_beta_minus /\<Zq-31\>/
-syntax match Decay_type_beta_minus /\<Zq-32\>/
 syntax match Decay_type_beta_minus /\<Zq-32\>/
 syntax match Decay_type_beta_minus /\<Xc-33\>/
 syntax match Decay_type_beta_minus /\<D-33\>/
