@@ -612,8 +612,8 @@ syntax match rarity_rare      /\<Qi-69\>/
 syntax match rarity_rare      /\<Xy-71\>/
 syntax match rarity_rare      /\<Zq-26\>/
 
-hi rarity_common     guibg=green   ctermbg=green     guifg=black   ctermfg=black
-hi rarity_uncommon   guibg=cyan    ctermbg=cyan      guifg=black   ctermfg=black
+hi rarity_common     guibg=green        ctermbg=green          guifg=black   ctermfg=black
+hi rarity_uncommon   guibg=cyan         ctermbg=cyan           guifg=black   ctermfg=black
 hi rarity_rare       guibg=lightmagenta ctermbg=lightmagenta   guifg=black   ctermfg=black
 
 
@@ -1219,6 +1219,12 @@ syntax match Decay_type_stable     /\<Sq-84\>/
 syntax match Decay_type_stable     /\<H-80\>/
 syntax match Decay_type_stable     /\<H-82\>/
 
+
+" I want to be able to see both the rarity coloring and some way to indicate decay types simultaneously but this isn't working
+"hi Decay_type_alpha        term=NONE ctermfg=red
+"hi Decay_type_beta_plus    term=NONE ctermfg=blue
+"hi Decay_type_beta_minus   term=NONE ctermfg=green
+"hi Decay_type_stable       term=NONE ctermfg=white
 
 hi Decay_type_alpha        guibg=lightmagenta ctermbg=lightmagenta
 hi Decay_type_beta_plus    guibg=green   ctermbg=green

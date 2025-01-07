@@ -65,7 +65,7 @@ UNFOUND POSSIBILITIES:
 
 | 19  8 Dx | [f] try WAIT I FOUND IT BY DECAY!
  4  2  W + 15  6 Pq =  19   8 ..
- 5  2  W + 14  6 Pq =  19   8 ..  reaction 14 6 Pq + 5 2 W + 1600 => 19  9 Pm + 958.38 Energy Reactions occurred: nuclear, decay Energy used: 641.62
+ 5  2  W + 14  6 Pq =  19   8 ..  reaction 14 6 Pq(b-) + 5 2 W(s) + 1600 => 19  9 Pm(S) + 958.38 Energy Reactions occurred: nuclear, decay Energy used: 641.62
 
 | 20  9 Pm | [x] try   MSOMNIA FOUND THIS
  2  1 Ju + 18  8 Dx =  20   9 ..
@@ -79,11 +79,11 @@ UNFOUND POSSIBILITIES:
 | 20 11 Fw | [x] try
  1  1 Ju + 19 10  M =  20  11 ..
  5  3 Cq + 15  8 Dx =  20  11 ..
- 7  4 Af + 13  7 Zz =  20  11 .. FAILED reaction 7  4 Af + 13  7 Zz + 1900 Energy => 20 10  M + 1386.84 Energy Reactions occurred: nuclear, decay Energy used: 513.16
+ 7  4 Af + 13  7 Zz =  20  11 .. FAILED reaction 7  4 Af(a) + 13  7 Zz(B+) + 1900 Energy => 20 10  M(s) + 1386.84 Energy Reactions occurred: nuclear, decay Energy used: 513.16
  9  5 Xl + 11  6 Pq =  20  11 ..
 10  5 Xl + 10  6 Pq =  20  11 ..
 
-| 22 12 Pt | [x] try FAILED reaction 7  4 Af + 15  8 Dx + 2400 => 22 11 Fw + 1820.53 Energy Reactions occurred: nuclear, decay Energy used: 579.47
+| 22 12 Pt | [x] try FAILED reaction 7  4 Af(a) + 15  8 Dx(B+) + 2400 => 22 11 Fw(b+) + 1820.53 Energy Reactions occurred: nuclear, decay Energy used: 579.47
 
  1  1 Ju + 21 11 Fw =  22  12 ..
  5  3 Cq + 17  9 Pm =  22  12 ..
@@ -93,7 +93,7 @@ UNFOUND POSSIBILITIES:
 11  6 Pq + 11  6 Pq =  22  12 ..
 
 | 24 10  M | [x] try
- 9  4 Af + 15  6 Pq =  24  10 .. FAILED  reaction 9 4 Af + 15 6 Pq + 2300 => 24 11 Fw + 1579.79 Energy Reactions occurred: nuclear, decay Energy used: 720.21
+ 9  4 Af + 15  6 Pq =  24  10 .. FAILED  reaction 9 4 Af(s) + 15 6 Pq(b-) + 2300 => 24 11 Fw(b-) + 1579.79 Energy Reactions occurred: nuclear, decay Energy used: 720.21
 
 | 24 13  S | [ ] try
  1  1 Ju + 23 12 Pt =  24  13 ..
@@ -116,7 +116,7 @@ UNFOUND POSSIBILITIES:
 11  6 Pq + 15  8 Dx =  26  14 ..
 13  7 Zz + 13  7 Zz =  26  14 ..
 
-| 27 12 Pt | [x] try MSOMNIA FOUND THIS with decay reaction  50 23 Aw + 5000 => 27 12 Pt + 23 11 Fw + 458.40
+| 27 12 Pt | [x] try MSOMNIA FOUND THIS with decay reaction  50 23 Aw(s) + 5000 => 27 12 Pt(b-) + 23 11 Fw(s) + 458.40
  2  1 Ju + 25 11 Fw =  27  12 ..
  3  1 Ju + 24 11 Fw =  27  12 ..
  4  2  W + 23 10  M =  27  12 ..
@@ -132,7 +132,7 @@ UNFOUND POSSIBILITIES:
  9  5 Xl + 19 10  M =  28  15 ..
 10  6 Pq + 18  9 Pm =  28  15 ..
 11  6 Pq + 17  9 Pm =  28  15 ..
-13  7 Zz + 15  8 Dx =  28  15 .. [r] reaction 13  7 Zz + 15  8 Dx + 5000 => 28  14 Zq + 4073.14 Energy Reactions occurred: nuclear, decay Energy used: 926.86
+13  7 Zz + 15  8 Dx =  28  15 .. [r] reaction 13  7 Zz(b+) + 15  8 Dx(b+) + 5000 => 28  14 Zq(B+) + 4073.14 Energy Reactions occurred: nuclear, decay Energy used: 926.86
 
 | 30 13  S | [r] try SUCCESS! I FOUND IT
  5  2  W + 25 11 Fw =  30  13 ..
@@ -467,6 +467,8 @@ saw: 25 11 Fw + 38 17  D + 5000 =  63  28 Yp + 3020
 saw: 25 11 Fw + 37 17  D + 5000 =  62  28 Yp + 3005
 
 | 64 28 Yp | [ ]
+try: 26 11 Fw + 38 17  D + 5000 =  64  28 Yp + 3020
+try: 26 11 Fw + 37 17  D + 5000 =  63  28 Yp + 3005
 
 
 

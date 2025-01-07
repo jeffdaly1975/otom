@@ -1,3 +1,11 @@
+2025-01-07 Jan.Tue 01:05:46 try to make 64 28 Yp like this:
+[r] 23 10  M + 25 11 Fw + 1400 => 48 21  E
+[r]  6  3 Cq + 32 14 Zq + 1100 => 38 17  D
+[r] 48 21  E +            4000 => 26 11 Fw + 22 10  M
+[f] 26 11 Fw + 38 17  D + 5000 =  64 28 Yp + ? NOPE
+
+
+
 2025-01-06 Jan.Mon 22:42:00 created new file "otoms.shapescan.data.otom" where I transcribed all the data from the shapescan pages for each known isotope because it seems to have more precise values and more information
 
 2025-01-06 Jan.Mon 10:46:24 DANGIT. Blob fees are #1 on the burn leaderboard with 1.455 eth, yet sometimes you can still get low fees (somehow magically) so I tried to mint x10 and it cost 0.00126! Yikes!
