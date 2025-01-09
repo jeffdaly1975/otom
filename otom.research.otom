@@ -1,3 +1,71 @@
+2025-01-09 Jan.Thu 12:20:23 FOUR NEW ISOTOPES FOUND by qma0000.eth!
+ 67 35 Qi
+ 66 34 Gk
+ 64 33 Pw
+ 62 32 Ny
+
+
+
+[ ] 67 35 Qi
+  [c] add to otoms.complete.list.otom
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [ ] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom
+  [c] check off otoms.unfoundpossibilites.otom
+  [ ] make them myself
+[ ] 66 34 Gk
+  [c] add to otoms.complete.list.otom
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [ ] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom
+  [c] check off otoms.unfoundpossibilites.otom
+  [ ] make them myself
+[ ] 64 33 Pw
+  [c] add to otoms.complete.list.otom
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [ ] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom
+  [c] check off otoms.unfoundpossibilites.otom
+  [ ] make them myself
+[ ] 62 32 Ny
+  [c] add to otoms.complete.list.otom
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [ ] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom
+  [c] check off otoms.unfoundpossibilites.otom
+  [ ] make them myself
+
+ [ ] 15  8 Dx + 17  9 Pm +  950 => 32 17  D
+ [ ] 15  8 Dx + 17  9 Pm +  950 => 32 17  D
+   [ ] 25 13  S + 32 17  D + 1900 => 57 30 Hb 
+   [ ] 25 13  S + 32 17  D + 1900 => 57 30 Hb 
+     [ ] 10  6 Pq + 57 30 Hb + 1500 => 67 35 Qi
+     [ ]  9  5 Xl + 57 30 Hb + 1600 => 66 34 Gk
+       [ ] 67 35 Qi +10000 MIGHT PRODUCE Gy-31 + new isotope O-36
+ [ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+ [ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+   [ ] 15  8 Dx + 42 22  A + 1750 => 57 30 Hb
+   [ ] 15  8 Dx + 42 22  A + 1750 => 57 30 Hb
+     [ ]  7  4 Af + 57 30 Hb + 1400 => 64 33 Pw
+     [ ]  5  3 Cq + 57 30 Hb + 1300 => 62 32 Ny
+
+
 2025-01-08 Jan.Wed 17:23:00 Also try these reacting with only +5000 and +10000 because they are beta- and the outermost shell is begging for a proton:
 |61 28 Yp| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |62 28 Yp| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
@@ -457,14 +525,14 @@ u+2935 ⤵
 [c] add to otom_reactions.pl
 [c] add to isotopes image from Kjetil with unknown meaning.txt
 [c] add to otoms.decay.otom
-[.] add to otoms.otom
+[c] add to otoms.otom
 [c] add to otoms.columns.otom
 [c] add reaction to otom.reactions.otom
 [c] check off otoms.unfoundpossibilites.otom
-[ ] make them myself
+[c] make them myself
   [c] have 29 15 Xc
-  [ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
-    [ ] 29 15 Xc + 42 22  A + 2700 => 71 36 Xy
+  [r] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+    [r] 29 15 Xc + 42 22  A + 2700 => 71 36 Xy
 
 
 
@@ -483,7 +551,7 @@ Is one of them is wrong or does the valence one about outer shell.
 I guess its two ways of saying it. But the one seems to be the total possible?
 
 On the shapescan image, Group means the Row of the Periodic Table and Period means Column of the Periodic Table
-[ ] I SHOULD transcribe these values from the shapescan token images to my text files somewhere.
+[c] I SHOULD transcribe these values from the shapescan token images to my text files somewhere.
 
 
 

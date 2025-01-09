@@ -4894,7 +4894,24 @@ atom 78 35 Qi | Decay type	beta-
 atom 78 35 Qi | Filled in Outer Shell	0-0-0-0-0-2-2-2
 atom 78 35 Qi | Empty in Outer Shell	0-0-0-0-0-0-1-1
 
-atom 71 36 Xy | [ ] todo
+atom 71 36 Xy | Lab sheet
+atom 71 36 Xy | Xy otom
+atom 71 36 Xy | Token ID 89852950962340883160225323115133528350177059511855498234856351860844227154887
+atom 71 36 Xy | Name	Xy
+atom 71 36 Xy | Discovered by	msomnia.eth
+atom 71 36 Xy | Current Supply	4
+atom 71 36 Xy | Series	nonmetal
+atom 71 36 Xy | Protons	36
+atom 71 36 Xy | Neutrons	35
+atom 71 36 Xy | Stability	0.770
+atom 71 36 Xy | Density	42.650 g/cm³
+atom 71 36 Xy | Radius	1.185 pm
+atom 71 36 Xy | Electronegativity	0.875
+atom 71 36 Xy | Mass	71.000 amu
+atom 71 36 Xy | Metallic	No
+atom 71 36 Xy | Decay type	beta+
+atom 71 36 Xy | Filled in Outer Shell	0-0-0-0-0-2-3-2
+atom 71 36 Xy | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
 atom 72 36 Xy | Lab sheet
 atom 72 36 Xy | Xy otom

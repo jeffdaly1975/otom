@@ -416,7 +416,7 @@ UNFOUND POSSIBILITIES:
 
 | 62 27 Ic | [ ]
 
-| 62 32 Ny | [ ] try
+| 62 32 Ny | [X] try QMA FOUND IT BY DECAY
  1  1 Ju + 61 31 At =  62  32 ..
  4  2  W + 58 30 Hb =  62  32 ..
  5  2  W + 57 30 Hb =  62  32 ..
@@ -472,7 +472,7 @@ try: 26 11 Fw + 37 17  D + 5000 =  63  28 Yp + 3005
 
 
 
-| 64 33 Pw | [ ] try
+| 64 33 Pw | [X] try QMA FOUND IT BY DECAY
  1  1 Ju + 63 32 Ny =  64  33 ..
  5  3 Cq + 59 30 Hb =  64  33 ..
  6  3 Cq + 58 30 Hb =  64  33 ..
@@ -510,7 +510,7 @@ try: 26 11 Fw + 37 17  D + 5000 =  63  28 Yp + 3005
 25 11 Fw + 41 18 Fj =  66  29 ..
 32 14 Zq + 34 15 Xc =  66  29 ..
 
-| 66 34 Gk | [ ] try
+| 66 34 Gk | [X] try QMA FOUND IT BY DECAY
  1  1 Ju + 65 33 Pw =  66  34 ..
  5  3 Cq + 61 31 At =  66  34 ..
  7  4 Af + 59 30 Hb =  66  34 ..

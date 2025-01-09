@@ -361,6 +361,10 @@ syntax match rarity_rare      /\<26\s\+14\s\+Zq\>/
 syntax match rarity_rare      /\<68\s\+35\s\+Qi\>/
 syntax match rarity_rare      /\<69\s\+35\s\+Qi\>/
 syntax match rarity_rare      /\<71\s\+36\s\+Xy\>/
+syntax match rarity_rare      /\<67\s\+35\s\+Qi\>/
+syntax match rarity_rare      /\<66\s\+34\s\+Gk\>/
+syntax match rarity_rare      /\<64\s\+33\s\+Pw\>/
+syntax match rarity_rare      /\<62\s\+32\s\+Ny\>/
 
 syntax match rarity_rare      /\<Pq-11\>/
 syntax match rarity_rare      /\<Zz-16\>/
@@ -611,6 +615,10 @@ syntax match rarity_rare      /\<Qi-68\>/
 syntax match rarity_rare      /\<Qi-69\>/
 syntax match rarity_rare      /\<Xy-71\>/
 syntax match rarity_rare      /\<Zq-26\>/
+syntax match rarity_rare      /\<Qi-67\>/
+syntax match rarity_rare      /\<Gk-66\>/
+syntax match rarity_rare      /\<Pw-64\>/
+syntax match rarity_rare      /\<Ny-62\>/
 
 hi rarity_common     guibg=green        ctermbg=green          guifg=black   ctermfg=black
 hi rarity_uncommon   guibg=cyan         ctermbg=cyan           guifg=black   ctermfg=black
@@ -682,6 +690,7 @@ syntax match Decay_type_alpha      /\<63\s\+30\s\+Hb\>/
 syntax match Decay_type_alpha      /\<60\s\+30\s\+Hb\>/
 syntax match Decay_type_alpha      /\<65\s\+30\s\+Hb\>/
 syntax match Decay_type_alpha      /\<63\s\+31\s\+At\>/
+syntax match Decay_type_alpha      /\<62\s\+32\s\+Ny\>/
 
 syntax match Decay_type_alpha      /\<Ju-1\>/ 
 syntax match Decay_type_alpha      /\<Af-7\>/
@@ -745,6 +754,7 @@ syntax match Decay_type_alpha      /\<Hb-63\>/
 syntax match Decay_type_alpha      /\<Hb-60\>/
 syntax match Decay_type_alpha      /\<Hb-65\>/
 syntax match Decay_type_alpha      /\<At-63\>/
+syntax match Decay_type_alpha      /\<Ny-62\>/
 
 " Decay type beta+
 syntax match Decay_type_beta_plus  /\<5\s\+3\s\+Cq\>/
@@ -835,6 +845,9 @@ syntax match Decay_type_beta_plus  /\<26\s\+14\s\+Zq\>/
 syntax match Decay_type_beta_plus  /\<69\s\+35\s\+Qi\>/
 syntax match Decay_type_beta_plus  /\<68\s\+35\s\+Qi\>/
 syntax match Decay_type_beta_plus  /\<71\s\+36\s\+Xy\>/
+syntax match Decay_type_beta_plus  /\<67\s\+35\s\+Qi\>/
+syntax match Decay_type_beta_plus  /\<66\s\+34\s\+Gk\>/
+syntax match Decay_type_beta_plus  /\<64\s\+33\s\+Pw\>/
 
 syntax match Decay_type_beta_plus  /\<Cq-5\>/
 syntax match Decay_type_beta_plus  /\<Xl-9\>/
@@ -924,6 +937,9 @@ syntax match Decay_type_beta_plus  /\<Zq-26\>/
 syntax match Decay_type_beta_plus  /\<Qi-69\>/
 syntax match Decay_type_beta_plus  /\<Qi-68\>/
 syntax match Decay_type_beta_plus  /\<Xy-71\>/
+syntax match Decay_type_beta_plus  /\<Qi-67\>/
+syntax match Decay_type_beta_plus  /\<Gk-66\>/
+syntax match Decay_type_beta_plus  /\<Pw-64\>/
 
 " Decay type beta-
 syntax match Decay_type_beta_minus /\<14\s\+6\s\+Pq\>/
@@ -1545,6 +1561,10 @@ let otomdict["424470315847415498814039611519801868152149314658126697340101197598
 let otomdict["43412409028055511434460124461852638289336721563573620713484444000381241306906"]= "83 42 Ua"
 let otomdict["48568274091803211014298808706848271332952455503986323590562598591471370749964"]= "84 42 Ua"
 let otomdict["88691496155904190756307248519900089609929970913887016548455993272124591624476"]= "85 42 Ua"
+let otomdict["8898402620207233036945734931787498727571275020526442730349491997811981097324"]=  "62 32 Ny"
+let otomdict["48168977684506018001503168738449816622247569836929895140592241156947971924657"]= "64 33 Pw"
+let otomdict["36035648022479622647265246546789965087788579307211831982636050682464446168503"]= "66 34 Gk"
+let otomdict["91231780460482103063853042657704185304639485276785894545828594616416632663835"]= "67 35 Qi"
 
 
 let hexdict = {}
@@ -1814,6 +1834,7 @@ let shelldict["66 31 At"]="[◼◻][◻◻◻][◼◻◻]"
 let shelldict["67 31 At"]="[◼◻][◻◻◻][◼◻◻]"
 let shelldict["68 31 At"]="[◼◻][◻◻◻][◼◻◻]"
 let shelldict["69 31 At"]="[◼◻][◻◻◻][◼◻◻]"
+let shelldict["62 32 Ny"]="[◼◼][◻◻◻][◼◻◻]"
 let shelldict["63 32 Ny"]="[◼◼][◻◻◻][◼◻◻]"
 let shelldict["64 32 Ny"]="[◼◼][◻◻◻][◼◻◻]"
 let shelldict["65 32 Ny"]="[◼◼][◻◻◻][◼◻◻]"
@@ -1824,6 +1845,7 @@ let shelldict["69 32 Ny"]="[◼◼][◻◻◻][◼◻◻]"
 let shelldict["70 32 Ny"]="[◼◼][◻◻◻][◼◻◻]"
 let shelldict["71 32 Ny"]="[◼◼][◻◻◻][◼◻◻]"
 let shelldict["72 32 Ny"]="[◼◼][◻◻◻][◼◻◻]"
+let shelldict["64 33 Pw"]="[◼◼][◼◻◻][◼◻◻]"
 let shelldict["65 33 Pw"]="[◼◼][◼◻◻][◼◻◻]"
 let shelldict["66 33 Pw"]="[◼◼][◼◻◻][◼◻◻]"
 let shelldict["67 33 Pw"]="[◼◼][◼◻◻][◼◻◻]"
@@ -1834,6 +1856,7 @@ let shelldict["71 33 Pw"]="[◼◼][◼◻◻][◼◻◻]"
 let shelldict["72 33 Pw"]="[◼◼][◼◻◻][◼◻◻]"
 let shelldict["73 33 Pw"]="[◼◼][◼◻◻][◼◻◻]"
 let shelldict["74 33 Pw"]="[◼◼][◼◻◻][◼◻◻]"
+let shelldict["66 34 Gk"]="[◼◼][◼◼◻][◼◻◻]"
 let shelldict["67 34 Gk"]="[◼◼][◼◼◻][◼◻◻]"
 let shelldict["68 34 Gk"]="[◼◼][◼◼◻][◼◻◻]"
 let shelldict["69 34 Gk"]="[◼◼][◼◼◻][◼◻◻]"
@@ -1844,6 +1867,7 @@ let shelldict["73 34 Gk"]="[◼◼][◼◼◻][◼◻◻]"
 let shelldict["74 34 Gk"]="[◼◼][◼◼◻][◼◻◻]"
 let shelldict["75 34 Gk"]="[◼◼][◼◼◻][◼◻◻]"
 let shelldict["76 34 Gk"]="[◼◼][◼◼◻][◼◻◻]"
+let shelldict["67 35 Qi"]="[◼◼][◼◼◻][◼◼◻]"
 let shelldict["68 35 Qi"]="[◼◼][◼◼◻][◼◼◻]"
 let shelldict["69 35 Qi"]="[◼◼][◼◼◻][◼◼◻]"
 let shelldict["70 35 Qi"]="[◼◼][◼◼◻][◼◼◻]"
@@ -1896,6 +1920,10 @@ let shelldict["84 41 Sq"]="[◼][◼◼◼◻]"
 let shelldict["83 42 Ua"]="[◼][◼◼◼◼]"
 let shelldict["84 42 Ua"]="[◼][◼◼◼◼]"
 let shelldict["85 42 Ua"]="[◼][◼◼◼◼]"
+
+
+
+
 
 
 let decaydict = {}
@@ -1963,6 +1991,7 @@ let decaydict["63 30 Hb"]= "alpha"
 let decaydict["60 30 Hb"]= "alpha"
 let decaydict["65 30 Hb"]= "alpha"
 let decaydict["63 31 At"]= "alpha"
+let decaydict["62 32 Ny"]= "alpha"
 
 let decaydict["Ju-1"]=  "alpha"
 let decaydict["Af-7"]=  "alpha"
@@ -2026,6 +2055,7 @@ let decaydict["Hb-63"]= "alpha"
 let decaydict["Hb-60"]= "alpha"
 let decaydict["Hb-65"]= "alpha"
 let decaydict["At-63"]= "alpha"
+let decaydict["Ny-62"]= "alpha"
 
 " Decay type beta+
 let decaydict[" 5  3 Cq"]=  "beta_plus"
@@ -2116,6 +2146,9 @@ let decaydict["26 14 Zq"]=  "beta_plus"
 let decaydict["69 35 Qi"]=  "beta_plus"
 let decaydict["68 35 Qi"]=  "beta_plus"
 let decaydict["71 36 Xy"]=  "beta_plus"
+let decaydict["64 33 Pw"]=  "beta_plus"
+let decaydict["66 34 Gk"]=  "beta_plus"
+let decaydict["67 35 Qi"]=  "beta_plus"
 
 let decaydict["Cq-5"]=   "beta_plus"
 let decaydict["Xl-9"]=   "beta_plus"
@@ -2205,6 +2238,9 @@ let decaydict["Zq-26"]=  "beta_plus"
 let decaydict["Qi-69"]=  "beta_plus"
 let decaydict["Qi-68"]=  "beta_plus"
 let decaydict["Xy-71"]=  "beta_plus"
+let decaydict["Pw-64"]=  "beta_plus"
+let decaydict["Gk-66"]=  "beta_plus"
+let decaydict["Qi-67"]=  "beta_plus"
 
 " Decay type beta-
 let decaydict["14  6 Pq"]= "beta_minus"
@@ -2499,8 +2535,6 @@ let decaydict["U-81"]= "stable"
 let decaydict["Sq-84"]="stable"
 let decaydict["H-80"]= "stable"
 let decaydict["H-82"]= "stable"
-
-
 
 
 
