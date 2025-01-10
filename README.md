@@ -23,3 +23,5 @@ I use these files to document my research on Kjetil Golid's OTOM project on the 
  - otoms.complete.list.otom - complete list of known isotopes, record of whether I have it, description of the visual rendering, links to shapescan and reservoir
 
  - otoms.shapescan.data.otom - data copied from the shapescan page attributes
+
+ - recipes.otom - how to create each isotope. multiple recipes where possible.
