@@ -1791,6 +1791,25 @@ atom 41 18 Fj | Decay type	beta-
 atom 41 18 Fj | Filled in Outer Shell	0-0-0-0-1-1-0-0
 atom 41 18 Fj | Empty in Outer Shell	0-0-0-0-4-1-1-0
 
+atom 36 19  O | Lab sheet
+atom 36 19  O | O otom
+atom 36 19  O | Token ID 95908827326982003747879792481751783674660109851542097145120877352511772625193
+atom 36 19  O | Name	O
+atom 36 19  O | Discovered by	0x2a4A...1aAc
+atom 36 19  O | Current Supply	1
+atom 36 19  O | Series	metal
+atom 36 19  O | Protons	19
+atom 36 19  O | Neutrons	17
+atom 36 19  O | Stability	0.736
+atom 36 19  O | Density	17.521 g/cm³
+atom 36 19  O | Radius	1.271 pm
+atom 36 19  O | Electronegativity	0.114
+atom 36 19  O | Mass	36.000 amu
+atom 36 19  O | Metallic	Yes
+atom 36 19  O | Decay type	beta+
+atom 36 19  O | Filled in Outer Shell	0-0-0-0-2-1-0-0
+atom 36 19  O | Empty in Outer Shell	0-0-0-0-3-1-1-0
+
 atom 37 19  O | Lab sheet
 atom 37 19  O | O otom
 atom 37 19  O | Token ID 93808725537212301819640286611613482733903407880157757095795960600207657337026
@@ -4115,6 +4134,8 @@ atom 69 31 At | Filled in Outer Shell	0-0-0-0-0-1-0-1
 atom 69 31 At | Empty in Outer Shell	0-0-0-0-0-1-3-2
 
 
+atom 62 32 Ny | [ ] TODO
+
 atom 63 32 Ny | Lab sheet
 atom 63 32 Ny | Ny otom
 atom 63 32 Ny | Token ID 32172209261883003716399221745770935954070240630356216474430744282437723678264
@@ -4304,6 +4325,8 @@ atom 72 32 Ny | Metallic	Yes
 atom 72 32 Ny | Decay type	beta-
 atom 72 32 Ny | Filled in Outer Shell	0-0-0-0-0-2-0-1
 atom 72 32 Ny | Empty in Outer Shell	0-0-0-0-0-0-3-2
+
+atom 64 33 Pw | [ ] TODO
 
 atom 65 33 Pw | Lab sheet
 atom 65 33 Pw | Pw otom
@@ -4495,6 +4518,8 @@ atom 74 33 Pw | Decay type	beta-
 atom 74 33 Pw | Filled in Outer Shell	0-0-0-0-0-2-1-1
 atom 74 33 Pw | Empty in Outer Shell	0-0-0-0-0-0-2-2
 
+atom 66 34 Gk | [ ] TODO
+
 atom 67 34 Gk | Lab sheet
 atom 67 34 Gk | Gk otom
 atom 67 34 Gk | Token ID 42515782363242842658074123817446496900031915588567683038631096022425874229904
@@ -4684,6 +4709,8 @@ atom 76 34 Gk | Metallic	Yes
 atom 76 34 Gk | Decay type	beta-
 atom 76 34 Gk | Filled in Outer Shell	0-0-0-0-0-2-2-1
 atom 76 34 Gk | Empty in Outer Shell	0-0-0-0-0-0-1-2
+
+atom 67 35 Qi | [ ] TODO
 
 atom 68 35 Qi | Lab sheet
 atom 68 35 Qi | Qi otom
@@ -4894,6 +4921,8 @@ atom 78 35 Qi | Decay type	beta-
 atom 78 35 Qi | Filled in Outer Shell	0-0-0-0-0-2-2-2
 atom 78 35 Qi | Empty in Outer Shell	0-0-0-0-0-0-1-1
 
+atom 70 36 Xy | [ ] TODO
+
 atom 71 36 Xy | Lab sheet
 atom 71 36 Xy | Xy otom
 atom 71 36 Xy | Token ID 89852950962340883160225323115133528350177059511855498234856351860844227154887
@@ -5065,6 +5094,10 @@ atom 79 36 Xy | Decay type	stable
 atom 79 36 Xy | Filled in Outer Shell	0-0-0-0-0-2-3-2
 atom 79 36 Xy | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
+atom 72 37 Gq | [ ] TODO
+
+atom 73 37 Gq | [ ] TODO
+
 atom 74 37 Gq | Lab sheet
 atom 74 37 Gq | Gq otom
 atom 74 37 Gq | Token ID 57403155215350996738805965829023580228218608789478173497427653219567257193455
@@ -5197,6 +5230,8 @@ atom 80 37 Gq | Metallic	No
 atom 80 37 Gq | Decay type	stable
 atom 80 37 Gq | Filled in Outer Shell	0-0-0-0-0-2-3-3
 atom 80 37 Gq | Empty in Outer Shell	0-0-0-0-0-0-0-0
+
+atom 74 38 Bt | [ ] TODO
 
 atom 75 38 Bt | Lab sheet
 atom 75 38 Bt | Gq otom

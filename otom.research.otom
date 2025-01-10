@@ -1,8 +1,114 @@
+2025-01-09 Jan.Thu 21:36:00 FOUR MORE DISCOVERED by qma0000.eth!
+70 36 Xy
+72 37 Gq
+73 37 Gq
+74 38 Bt
+
+[ ] 70 36 Xy
+  [c] add to otoms.complete.list.otom
+  [ ] save reservoir image to mac folder
+  [ ] bookmark to Firefox
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [.] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom
+  [c] add otoms.shapescan.data.otom
+  [c] check off otoms.unfoundpossibilites.otom
+  [ ] make it myself
+[ ] 72 37 Gq
+  [c] add to otoms.complete.list.otom
+  [ ] save reservoir image to mac folder
+  [ ] bookmark to Firefox
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [.] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom
+  [c] add otoms.shapescan.data.otom
+  [c] check off otoms.unfoundpossibilites.otom
+  [ ] make it myself
+[ ] 73 37 Gq
+  [c] add to otoms.complete.list.otom
+  [ ] save reservoir image to mac folder
+  [ ] bookmark to Firefox
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [.] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom
+  [c] add otoms.shapescan.data.otom
+  [c] check off otoms.unfoundpossibilites.otom
+  [ ] make it myself
+[ ] 74 38 Bt
+  [c] add to otoms.complete.list.otom
+  [ ] save reservoir image to mac folder
+  [ ] bookmark to Firefox
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [.] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom
+  [c] add otoms.shapescan.data.otom
+  [c] check off otoms.unfoundpossibilites.otom
+  [ ] make it myself
+
+[ ] 15  8 Dx + 17  9 Pm +  950 => 32 17  D
+[ ] 15  8 Dx + 17  9 Pm +  950 => 32 17  D
+[ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+[ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+[ ] 25 13  S + 32 17  D + 1900 => 57 30 Hb
+[ ] 25 13  S + 32 17  D + 1900 => 57 30 Hb
+[ ] 15  8 Dx + 42 22  A + 1750 => 57 30 Hb
+[ ] 15  8 Dx + 42 22  A + 1750 => 57 30 Hb
+  [ ] 15  8 Dx + 57 30 Hb + 1850 => 72 37 Gq
+  [ ] 16  8 Dx + 57 30 Hb + 2550 => 73 37 Gq
+  [ ] 17  9 Pm + 57 30 Hb + 2050 => 74 38 Bt
+  [ ] 13  7 Zz + 57 30 Hb + 1800 => 70 36 Xy
+
+2025-01-09 Jan.Thu 17:00:00 DISCOVERED O-36 with: 67 35 Qi + 6000 => 31 16 Gy + 36 19  O
+  [c] add to otoms.complete.list.otom
+  [ ] save reservoir image to mac folder
+  [ ] bookmark to Firefox
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [c] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom
+  [c] add otoms.shapescan.data.otom
+  [c] check off otoms.unfoundpossibilites.otom
+
+Need to make another since I reacted it with 0 energy and it produced 36 18 Fj
+ [ ] 15  8 Dx + 17  9 Pm +  950 => 32 17  D
+   [ ] 25 13  S + 32 17  D + 1900 => 57 30 Hb 
+     [ ] 10  6 Pq + 57 30 Hb + 1500 => 67 35 Qi
+       [ ] 67 35 Qi + 6000 => 36 19  O
+
+
+2025-01-09 Jan.Thu 17:00:00
+Interesting. 44 21 E if Annihilated produces  ~93.79 energy and I see the stability is 0.9740
+             48 21 E if Annihilated produces ~104.11 energy and I see the stability is 0.8348
+I guess they're not related. I just would like to be able to understand how much energy is needed for reactions besides guesswork.
+Perhaps it would be useful to create a list of how much energy is produced by annihilating otoms.
+
 2025-01-09 Jan.Thu 12:20:23 FOUR NEW ISOTOPES FOUND by qma0000.eth!
  67 35 Qi
  66 34 Gk
  64 33 Pw
  62 32 Ny
+
+
+
 
 
 
@@ -52,17 +158,19 @@
   [ ] make them myself
 
  [ ] 15  8 Dx + 17  9 Pm +  950 => 32 17  D
- [ ] 15  8 Dx + 17  9 Pm +  950 => 32 17  D
-   [ ] 25 13  S + 32 17  D + 1900 => 57 30 Hb 
    [ ] 25 13  S + 32 17  D + 1900 => 57 30 Hb 
      [ ] 10  6 Pq + 57 30 Hb + 1500 => 67 35 Qi
+
+ [ ] 15  8 Dx + 17  9 Pm +  950 => 32 17  D
+   [ ] 25 13  S + 32 17  D + 1900 => 57 30 Hb 
      [ ]  9  5 Xl + 57 30 Hb + 1600 => 66 34 Gk
-       [ ] 67 35 Qi +10000 MIGHT PRODUCE Gy-31 + new isotope O-36
+
  [ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
- [ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
-   [ ] 15  8 Dx + 42 22  A + 1750 => 57 30 Hb
    [ ] 15  8 Dx + 42 22  A + 1750 => 57 30 Hb
      [ ]  7  4 Af + 57 30 Hb + 1400 => 64 33 Pw
+
+ [ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+   [ ] 15  8 Dx + 42 22  A + 1750 => 57 30 Hb
      [ ]  5  3 Cq + 57 30 Hb + 1300 => 62 32 Ny
 
 
@@ -115,7 +223,7 @@ decay of 16  7 Zz
 2025-01-08 Jan.Wed 15:41:00 todo
 [r] 31 15 Xc + 50 23 Aw + 2950 => 81 38 Bt
   [r] 81 38 Bt + 10000 = NONE! No reaction! Maybe for 20000 energy?
-  [ ] 81 38 Bt + 20000 
+  [r] 81 38 Bt + 15000 
 
 2025-01-08 Jan.Wed 13:54:22 [ ] try to focus on finding what possible reaction could lead to unfound *Af-10, *Xl-12 and *Xl-13
 
@@ -835,7 +943,7 @@ Well that didn't work: 1  1 Ju + 17  8 Dx + 1600 => 18  8 Dx + 849.62 | nuclear,
 | 35 15 Xc | [ ] try
  3  1 Ju + 32 14 Zq =  35  15 ..
 
-| 36 19  O | [ ] try
+| 36 19  O | [x] try FOUND by me in alternate wallet through 67 35 Qi + 6000 => 31 16 Gy + 36 19  O
  1  1 Ju + 35 18 Fj =  36  19 ..
  2  1 Ju + 34 18 Fj =  36  19 ..
  4  2  W + 32 17  D =  36  19 ..

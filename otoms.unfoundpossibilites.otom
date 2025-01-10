@@ -162,7 +162,7 @@ UNFOUND POSSIBILITIES:
 | 35 15 Xc | [ ] try
  3  1 Ju + 32 14 Zq =  35  15 ..
 
-| 36 19  O | [ ] try
+| 36 19  O | [x] try FOUND by me in alternate wallet through 67 35 Qi + 6000 => 31 16 Gy + 36 19  O
  1  1 Ju + 35 18 Fj =  36  19 ..
  2  1 Ju + 34 18 Fj =  36  19 ..
  4  2  W + 32 17  D =  36  19 ..
@@ -668,7 +668,7 @@ try: 26 11 Fw + 37 17  D + 5000 =  63  28 Yp + 3005
 
 | 73 32 Ny | [ ]
 
-| 73 37 Gq | [ ] try
+| 73 37 Gq | [X] try qma0000.eth DISCOVERED
  1  1 Ju + 72 36 Xy =  73  37 ..
  5  3 Cq + 68 34 Gk =  73  37 ..
  6  3 Cq + 67 34 Gk =  73  37 ..
@@ -722,7 +722,7 @@ try: 26 11 Fw + 37 17  D + 5000 =  63  28 Yp + 3005
 34 15 Xc + 41 18 Fj =  75  33 ..
 36 16 Gy + 39 17  D =  75  33 ..
 
-| 74 38 Bt | [ ]
+| 74 38 Bt | [x] qma0000.eth DISCOVERED
 
 | 75 38 Bt | [x] try MSOMNIA FOUND THIS
  1  1 Ju + 74 37 Gq =  75  38 ..

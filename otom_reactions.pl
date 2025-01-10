@@ -1,10 +1,10 @@
 #!/usr/bin/perl -w
 
 #       42 otoms
-#      302 isotopes
-#    91204 combinations
-#    45753 unique combinations
-#    12218 combinations resulting in known isotopes
+#      307 isotopes
+#    94249 combinations
+#    47278 unique combinations
+#    12545 combinations resulting in known isotopes
 
 my $order_counter=0;
 my @sort_order=();
@@ -191,6 +191,7 @@ __DATA__
 39 18 Fj
 40 18 Fj
 41 18 Fj
+36 19  O
 37 19  O
 38 19  O
 39 19  O
@@ -358,6 +359,7 @@ __DATA__
 76 35 Qi
 77 35 Qi
 78 35 Qi
+70 36 Xy
 71 36 Xy
 72 36 Xy
 73 36 Xy
@@ -367,6 +369,8 @@ __DATA__
 77 36 Xy
 78 36 Xy
 79 36 Xy
+72 37 Gq
+73 37 Gq
 74 37 Gq
 75 37 Gq
 76 37 Gq
@@ -374,6 +378,7 @@ __DATA__
 78 37 Gq
 79 37 Gq
 80 37 Gq
+74 38 Bt
 75 38 Bt
 76 38 Bt
 77 38 Bt
