@@ -4133,8 +4133,24 @@ atom 69 31 At | Decay type	beta-
 atom 69 31 At | Filled in Outer Shell	0-0-0-0-0-1-0-1
 atom 69 31 At | Empty in Outer Shell	0-0-0-0-0-1-3-2
 
-
-atom 62 32 Ny | [ ] TODO
+atom 62 32 Ny | Lab sheet
+atom 62 32 Ny | Ny otom
+atom 62 32 Ny | Token ID 8898402620207233036945734931787498727571275020526442730349491997811981097324
+atom 62 32 Ny | Name	Ny
+atom 62 32 Ny | Discovered by	qma0000.eth
+atom 62 32 Ny | Current Supply	2
+atom 62 32 Ny | Series	metal
+atom 62 32 Ny | Protons	32
+atom 62 32 Ny | Neutrons	30
+atom 62 32 Ny | Stability	0.767
+atom 62 32 Ny | Density	22.255 g/cm³
+atom 62 32 Ny | Radius	1.407 pm
+atom 62 32 Ny | Electronegativity	0.077
+atom 62 32 Ny | Mass	62.000 amu
+atom 62 32 Ny | Metallic	Yes
+atom 62 32 Ny | Decay type	alpha
+atom 62 32 Ny | Filled in Outer Shell	0-0-0-0-0-2-0-1
+atom 62 32 Ny | Empty in Outer Shell	0-0-0-0-0-0-3-2
 
 atom 63 32 Ny | Lab sheet
 atom 63 32 Ny | Ny otom
@@ -4326,7 +4342,24 @@ atom 72 32 Ny | Decay type	beta-
 atom 72 32 Ny | Filled in Outer Shell	0-0-0-0-0-2-0-1
 atom 72 32 Ny | Empty in Outer Shell	0-0-0-0-0-0-3-2
 
-atom 64 33 Pw | [ ] TODO
+atom 64 33 Pw | Lab sheet
+atom 64 33 Pw | Pw otom
+atom 64 33 Pw | Token ID 48168977684506018001503168738449816622247569836929895140592241156947971924657
+atom 64 33 Pw | Name	Pw
+atom 64 33 Pw | Discovered by	qma0000.eth
+atom 64 33 Pw | Current Supply	1
+atom 64 33 Pw | Series	metal
+atom 64 33 Pw | Protons	33
+atom 64 33 Pw | Neutrons	31
+atom 64 33 Pw | Stability	0.734
+atom 64 33 Pw | Density	27.138 g/cm³
+atom 64 33 Pw | Radius	1.331 pm
+atom 64 33 Pw | Electronegativity	0.129
+atom 64 33 Pw | Mass	64.000 amu
+atom 64 33 Pw | Metallic	Yes
+atom 64 33 Pw | Decay type	beta+
+atom 64 33 Pw | Filled in Outer Shell	0-0-0-0-0-2-1-1
+atom 64 33 Pw | Empty in Outer Shell	0-0-0-0-0-0-2-2
 
 atom 65 33 Pw | Lab sheet
 atom 65 33 Pw | Pw otom
@@ -4518,7 +4551,24 @@ atom 74 33 Pw | Decay type	beta-
 atom 74 33 Pw | Filled in Outer Shell	0-0-0-0-0-2-1-1
 atom 74 33 Pw | Empty in Outer Shell	0-0-0-0-0-0-2-2
 
-atom 66 34 Gk | [ ] TODO
+atom 66 34 Gk | Lab sheet
+atom 66 34 Gk | Gk otom
+atom 66 34 Gk | Token ID 36035648022479622647265246546789965087788579307211831982636050682464446168503
+atom 66 34 Gk | Name	Gk
+atom 66 34 Gk | Discovered by	qma0000.eth
+atom 66 34 Gk | Current Supply	2
+atom 66 34 Gk | Series	metal
+atom 66 34 Gk | Protons	34
+atom 66 34 Gk | Neutrons	32
+atom 66 34 Gk | Stability	0.740
+atom 66 34 Gk | Density	32.176 g/cm³
+atom 66 34 Gk | Radius	1.271 pm
+atom 66 34 Gk | Electronegativity	0.211
+atom 66 34 Gk | Mass	66.000 amu
+atom 66 34 Gk | Metallic	Yes
+atom 66 34 Gk | Decay type	beta+
+atom 66 34 Gk | Filled in Outer Shell	0-0-0-0-0-2-2-1
+atom 66 34 Gk | Empty in Outer Shell	0-0-0-0-0-0-1-2
 
 atom 67 34 Gk | Lab sheet
 atom 67 34 Gk | Gk otom
@@ -4710,7 +4760,24 @@ atom 76 34 Gk | Decay type	beta-
 atom 76 34 Gk | Filled in Outer Shell	0-0-0-0-0-2-2-1
 atom 76 34 Gk | Empty in Outer Shell	0-0-0-0-0-0-1-2
 
-atom 67 35 Qi | [ ] TODO
+atom 67 35 Qi | Lab sheet
+atom 67 35 Qi | Qi otom
+atom 67 35 Qi | Token ID 91231780460482103063853042657704185304639485276785894545828594616416632663835
+atom 67 35 Qi | Name	Qi
+atom 67 35 Qi | Discovered by	qma0000.eth
+atom 67 35 Qi | Current Supply	2
+atom 67 35 Qi | Series	metal
+atom 67 35 Qi | Protons	35
+atom 67 35 Qi | Neutrons	32
+atom 67 35 Qi | Stability	0.654
+atom 67 35 Qi | Density	36.580 g/cm³
+atom 67 35 Qi | Radius	1.224 pm
+atom 67 35 Qi | Electronegativity	0.400
+atom 67 35 Qi | Mass	67.000 amu
+atom 67 35 Qi | Metallic	Yes
+atom 67 35 Qi | Decay type	beta+
+atom 67 35 Qi | Filled in Outer Shell	0-0-0-0-0-2-2-2
+atom 67 35 Qi | Empty in Outer Shell	0-0-0-0-0-0-1-1
 
 atom 68 35 Qi | Lab sheet
 atom 68 35 Qi | Qi otom
@@ -4921,7 +4988,24 @@ atom 78 35 Qi | Decay type	beta-
 atom 78 35 Qi | Filled in Outer Shell	0-0-0-0-0-2-2-2
 atom 78 35 Qi | Empty in Outer Shell	0-0-0-0-0-0-1-1
 
-atom 70 36 Xy | [ ] TODO
+atom 70 36 Xy | Lab sheet
+atom 70 36 Xy | Xy otom
+atom 70 36 Xy | Token ID 59991896796477966176208061014561908808730918584295526483124249276451750607276
+atom 70 36 Xy | Name	Xy
+atom 70 36 Xy | Discovered by	qma0000.eth
+atom 70 36 Xy | Current Supply	2
+atom 70 36 Xy | Series	nonmetal
+atom 70 36 Xy | Protons	36
+atom 70 36 Xy | Neutrons	34
+atom 70 36 Xy | Stability	0.725
+atom 70 36 Xy | Density	42.049 g/cm³
+atom 70 36 Xy | Radius	1.185 pm
+atom 70 36 Xy | Electronegativity	0.875
+atom 70 36 Xy | Mass	70.000 amu
+atom 70 36 Xy | Metallic	No
+atom 70 36 Xy | Decay type	beta+
+atom 70 36 Xy | Filled in Outer Shell	0-0-0-0-0-2-3-2
+atom 70 36 Xy | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
 atom 71 36 Xy | Lab sheet
 atom 71 36 Xy | Xy otom
@@ -5094,9 +5178,43 @@ atom 79 36 Xy | Decay type	stable
 atom 79 36 Xy | Filled in Outer Shell	0-0-0-0-0-2-3-2
 atom 79 36 Xy | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
-atom 72 37 Gq | [ ] TODO
+atom 72 37 Gq | Lab sheet
+atom 72 37 Gq | Gq otom
+atom 72 37 Gq | Token ID 89570680505376609429157803747009666927150204837519724147049554630430698610368
+atom 72 37 Gq | Name	Gq
+atom 72 37 Gq | Discovered by	qma0000.eth
+atom 72 37 Gq | Current Supply	2
+atom 72 37 Gq | Series	noble
+atom 72 37 Gq | Protons	37
+atom 72 37 Gq | Neutrons	35
+atom 72 37 Gq | Stability	0.706
+atom 72 37 Gq | Density	47.703 g/cm³
+atom 72 37 Gq | Radius	1.147 pm
+atom 72 37 Gq | Electronegativity	0.000
+atom 72 37 Gq | Mass	72.000 amu
+atom 72 37 Gq | Metallic	No
+atom 72 37 Gq | Decay type	beta+
+atom 72 37 Gq | Filled in Outer Shell	0-0-0-0-0-2-3-3
+atom 72 37 Gq | Empty in Outer Shell	0-0-0-0-0-0-0-0
 
-atom 73 37 Gq | [ ] TODO
+atom 73 37 Gq | Lab sheet
+atom 73 37 Gq | Gq otom
+atom 73 37 Gq | Token ID 69307237531028499595933222598159967620377604687059097650153421213455033651867
+atom 73 37 Gq | Name	Gq
+atom 73 37 Gq | Discovered by	qma0000.eth
+atom 73 37 Gq | Current Supply	2
+atom 73 37 Gq | Series	noble
+atom 73 37 Gq | Protons	37
+atom 73 37 Gq | Neutrons	36
+atom 73 37 Gq | Stability	0.766
+atom 73 37 Gq | Density	48.365 g/cm³
+atom 73 37 Gq | Radius	1.147 pm
+atom 73 37 Gq | Electronegativity	0.000
+atom 73 37 Gq | Mass	73.000 amu
+atom 73 37 Gq | Metallic	No
+atom 73 37 Gq | Decay type	beta+
+atom 73 37 Gq | Filled in Outer Shell	0-0-0-0-0-2-3-3
+atom 73 37 Gq | Empty in Outer Shell	0-0-0-0-0-0-0-0
 
 atom 74 37 Gq | Lab sheet
 atom 74 37 Gq | Gq otom
@@ -5231,7 +5349,24 @@ atom 80 37 Gq | Decay type	stable
 atom 80 37 Gq | Filled in Outer Shell	0-0-0-0-0-2-3-3
 atom 80 37 Gq | Empty in Outer Shell	0-0-0-0-0-0-0-0
 
-atom 74 38 Bt | [ ] TODO
+atom 74 38 Bt | Lab sheet
+atom 74 38 Bt | Bt otom
+atom 74 38 Bt | Token ID 16442200506102510874703806964695334553779351136443865981435045052992356418690
+atom 74 38 Bt | Name	Bt
+atom 74 38 Bt | Discovered by	qma0000.eth
+atom 74 38 Bt | Current Supply	2
+atom 74 38 Bt | Series	alkaline
+atom 74 38 Bt | Protons	38
+atom 74 38 Bt | Neutrons	36
+atom 74 38 Bt | Stability	0.722
+atom 74 38 Bt | Density	16.910 g/cm³
+atom 74 38 Bt | Radius	1.636 pm
+atom 74 38 Bt | Electronegativity	0.032
+atom 74 38 Bt | Mass	74.000 amu
+atom 74 38 Bt | Metallic	Yes
+atom 74 38 Bt | Decay type	beta+
+atom 74 38 Bt | Filled in Outer Shell	0-0-0-0-0-0-0-1
+atom 74 38 Bt | Empty in Outer Shell	0-0-0-0-0-0-1-3
 
 atom 75 38 Bt | Lab sheet
 atom 75 38 Bt | Gq otom
@@ -5365,6 +5500,10 @@ atom 81 38 Bt | Metallic	Yes
 atom 81 38 Bt | Decay type	stable
 atom 81 38 Bt | Filled in Outer Shell	0-0-0-0-0-0-0-1
 atom 81 38 Bt | Empty in Outer Shell	0-0-0-0-0-0-1-3
+
+atom 76 39  H | [ ] TODO
+
+atom 77 39  H | [ ] TODO
 
 atom 78 39  H | Lab sheet
 atom 78 39  H | H otom

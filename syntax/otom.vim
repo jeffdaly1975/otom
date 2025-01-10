@@ -370,6 +370,9 @@ syntax match rarity_rare      /\<70\s\+36\s\+Xy\>/
 syntax match rarity_rare      /\<72\s\+37\s\+Gq\>/
 syntax match rarity_rare      /\<73\s\+37\s\+Gq\>/
 syntax match rarity_rare      /\<74\s\+38\s\+Bt\>/
+syntax match rarity_rare      /\<76\s\+39\s\+H\>/
+syntax match rarity_rare      /\<77\s\+39\s\+H\>/
+syntax match rarity_rare      /\<83\s\+40\s\+U\>/
 
 syntax match rarity_rare      /\<Pq-11\>/
 syntax match rarity_rare      /\<Zz-16\>/
@@ -629,7 +632,9 @@ syntax match rarity_rare      /\<Xy-70\>/
 syntax match rarity_rare      /\<Gq-72\>/
 syntax match rarity_rare      /\<Gq-73\>/
 syntax match rarity_rare      /\<Bt-74\>/
-
+syntax match rarity_rare      /\<H-76\>/
+syntax match rarity_rare      /\<H-77\>/
+syntax match rarity_rare      /\<U-83\>/
 
 hi rarity_common     guibg=green        ctermbg=green          guifg=black   ctermfg=black
 hi rarity_uncommon   guibg=cyan         ctermbg=cyan           guifg=black   ctermfg=black
@@ -864,6 +869,8 @@ syntax match Decay_type_beta_plus  /\<70\s\+36\s\+Xy\>/
 syntax match Decay_type_beta_plus  /\<72\s\+37\s\+Gq\>/
 syntax match Decay_type_beta_plus  /\<73\s\+37\s\+Gq\>/
 syntax match Decay_type_beta_plus  /\<74\s\+38\s\+Bt\>/
+syntax match Decay_type_beta_plus  /\<76\s\+39\s\+H\>/
+syntax match Decay_type_beta_plus  /\<77\s\+39\s\+H\>/
 
 syntax match Decay_type_beta_plus  /\<Cq-5\>/
 syntax match Decay_type_beta_plus  /\<Xl-9\>/
@@ -961,6 +968,8 @@ syntax match Decay_type_beta_plus  /\<Xy-70\>/
 syntax match Decay_type_beta_plus  /\<Gq-72\>/
 syntax match Decay_type_beta_plus  /\<Gq-73\>/
 syntax match Decay_type_beta_plus  /\<Bt-74\>/
+syntax match Decay_type_beta_plus  /\<H-76\>/
+syntax match Decay_type_beta_plus  /\<H-77\>/
 
 " Decay type beta-
 syntax match Decay_type_beta_minus /\<14\s\+6\s\+Pq\>/
@@ -1187,6 +1196,7 @@ syntax match Decay_type_stable     /\<81\s\+40\s\+U\>/
 syntax match Decay_type_stable     /\<84\s\+41\s\+Sq\>/
 syntax match Decay_type_stable     /\<80\s\+39\s\+H\>/
 syntax match Decay_type_stable     /\<82\s\+39\s\+H\>/
+syntax match Decay_type_stable     /\<83\s\+40\s\+U\>/
 
 syntax match Decay_type_stable     /\<Ju-1\>/
 syntax match Decay_type_stable     /\<Ju-2\>/
@@ -1255,6 +1265,7 @@ syntax match Decay_type_stable     /\<U-81\>/
 syntax match Decay_type_stable     /\<Sq-84\>/
 syntax match Decay_type_stable     /\<H-80\>/
 syntax match Decay_type_stable     /\<H-82\>/
+syntax match Decay_type_stable     /\<U-83\>/
 
 
 " I want to be able to see both the rarity coloring and some way to indicate decay types simultaneously but this isn't working
@@ -1591,6 +1602,12 @@ let otomdict["599918967964779661762080610145619088087309185842955264831242492764
 let otomdict["89570680505376609429157803747009666927150204837519724147049554630430698610368"]= "72 37 Gq"
 let otomdict["69307237531028499595933222598159967620377604687059097650153421213455033651867"]= "73 37 Gq"
 let otomdict["16442200506102510874703806964695334553779351136443865981435045052992356418690"]= "74 38 Bt"
+let otomdict["31982734554630676375667377410741248241757086002070827575619367436699824732873"]= "76 39  H"
+let otomdict["38977070209004093440022499882584858996218191430751603771018107241910890279185"]= "77 39  H"
+let otomdict["90606222678225709571700910248095413269214383960298510603882184671018170453226"]= "55 25 Nb"
+let otomdict["29848447886635862743446601765878108147942246257458671673314749143404966980628"]= "56 27 Ic"
+let otomdict["70590897269897961846656777998337388586010958872329696571112167753439624634210"]= "75 38 Bt"
+
 let hexdict = {}
 
 let hexdict["AF7"]= "F0E1AFE7414DAC4E2F56E9A5FAD6439AA42188299403941E43ADEBD745A12AA5"
@@ -1930,6 +1947,8 @@ let shelldict["78 38 Bt"]="[◻][◼◻◻◻]"
 let shelldict["79 38 Bt"]="[◻][◼◻◻◻]"
 let shelldict["80 38 Bt"]="[◻][◼◻◻◻]"
 let shelldict["81 38 Bt"]="[◻][◼◻◻◻]"
+let shelldict["76 39  H"]="[◼][◼◻◻◻]"
+let shelldict["77 39  H"]="[◼][◼◻◻◻]"
 let shelldict["78 39  H"]="[◼][◼◻◻◻]"
 let shelldict["79 39  H"]="[◼][◼◻◻◻]"
 let shelldict["80 39  H"]="[◼][◼◻◻◻]"
@@ -2182,6 +2201,8 @@ let decaydict["70 36 Xy"]=  "beta_plus"
 let decaydict["72 37 Gq"]=  "beta_plus"
 let decaydict["73 37 Gq"]=  "beta_plus"
 let decaydict["74 38 Bt"]=  "beta_plus"
+let decaydict["76 39  H"]=  "beta_plus"
+let decaydict["77 39  H"]=  "beta_plus"
 
 let decaydict["Cq-5"]=   "beta_plus"
 let decaydict["Xl-9"]=   "beta_plus"
@@ -2279,6 +2300,8 @@ let decaydict["Xy-70"]=  "beta_plus"
 let decaydict["Gq-72"]=  "beta_plus"
 let decaydict["Gq-73"]=  "beta_plus"
 let decaydict["Bt-74"]=  "beta_plus"
+let decaydict["H-76"]=   "beta_plus"
+let decaydict["H-77"]=   "beta_plus"
 
 " Decay type beta-
 let decaydict["14  6 Pq"]= "beta_minus"
@@ -2505,6 +2528,7 @@ let decaydict["81 40  U"]= "stable"
 let decaydict["84 41 Sq"]= "stable"
 let decaydict["80 39  H"]= "stable"
 let decaydict["82 39  H"]= "stable"
+let decaydict["83 40  U"]= "stable"
 
 let decaydict["Ju-1"]= "stable"
 let decaydict["Ju-2"]= "stable"
@@ -2573,6 +2597,6 @@ let decaydict["U-81"]= "stable"
 let decaydict["Sq-84"]="stable"
 let decaydict["H-80"]= "stable"
 let decaydict["H-82"]= "stable"
-
+let decaydict["U-83"]= "stable"
 
 let b:current_syntax = "otom"
