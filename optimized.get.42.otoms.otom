@@ -1,0 +1,76 @@
+| isotope  | reaction recipe
+|  1  1 Ju | mineable
+|  4  2 W  | mineable
+|  6  3 Cq | mineable
+|  7  4 Af | mineable
+| 10  5 Xl | mineable
+| 12  6 Pq | mineable
+| 13  7 Zz | mineable
+| 15  8 Dx | mineable
+| 17  9 Pm | mineable
+| 22 10 M  | mineable
+| 25 11 Fw | mineable
+| 24 12 Pt | mineable
+| 25 13 S  | mineable
+| 32 14 Zq | mineable
+| 30 15 Xc | mineable
+| 34 16 Gy | mineable
+| 37 17 D  | mineable
+| 37 18 Fj | mineable
+| 39 19 O  |  2  1 Ju + 37 18 Fj + 1000 => 39 19  O
+| 42 20 C  |  5  3 Cq + 37 17  D +  750 => 42 20  C
+| 42 21 E  |  5  3 Cq + 37 18 Fj +  750 => 42 21  E
+| 44 22 A  |  7  4 Af + 37 18 Fj +  900 => 44 22  A
+| 50 23 Aw | mineable
+| 51 24 Oc |  1  1 Ju + 50 23 Aw + 1100 => 51 24 Oc
+| 54 25 Nb | mineable
+| 55 26 Xk |  1  1 Ju + 54 25 Nb + 1100 => 55 26 Xk
+| 57 27 Ic |  7  4 Af + 50 23 Aw + 1150 => 57 27 Ic
+| 56 28 Yp | 25 13  S + 31 15 Xc + 1900 => 56 28 Yp
+| 60 29 Jx | 10  6 Pq + 50 23 Aw + 1100 => 60 29 Jx
+| 63 30 Hb | 13  7 Zz + 50 23 Aw + 1700 => 63 30 Hb
+| 64 31 At | 10  6 Pq + 54 25 Nb + 1150 => 64 31 At
+| 71 32 Ny | 37 17  D + 34 15 Xc + 2350 => 71 32 Ny
+| 69 33 Pw | 15  8 Dx + 54 25 Nb + 1850 => 69 33 Pw
+| 72 34 Gk | 18  9 Pm + 54 25 Nb + 2100 => 72 34 Gk
+| 75 35 Qi | 25 12 Pt + 50 23 Aw + 2550 => 75 35 Qi
+| 74 36 Xy | 37 18 Fj + 37 18 Fj + 2300 => 74 36 Xy
+| 79 37 Gq | 25 12 Pt + 54 25 Nb + 2550 => 79 37 Gq
+| 79 38 Bt | 25 13  S + 54 25 Nb + 2400 => 79 38 Bt
+| 81 39 H  | 27 14 Zq + 54 25 Nb + 2650 => 81 39  H PREREQUISITE  1  1 Ju + 26 13  S +  750 => 27 14 Zq
+| 82 40 U  | 32 17  D + 50 23 Aw + 2850 => 82 40  U PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D 
+| 84 41 Sq | 34 18 Fj + 50 23 Aw + 2850 => 84 41 Sq PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx 
+
+SUMMARY: 
+You will need 44750 NRG and the following mineable otoms:
+
+ 4x  1  1 Ju
+ 1x  2  1 Ju
+ 1x  4  2  W
+ 2x  5  3 Cq
+ 1x  6  3 Cq
+ 4x  7  4 Af
+ 1x 10  5 Xl
+ 2x 10  6 Pq
+ 1x 12  6 Pq
+ 2x 13  7 Zz
+ 2x 15  8 Dx
+ 3x 17  9 Pm
+ 1x 18  9 Pm
+ 1x 22 10  M
+ 1x 24 12 Pt
+ 1x 25 11 Fw
+ 2x 25 12 Pt
+ 5x 25 13  S
+ 2x 26 13  S
+ 1x 30 15 Xc
+ 1x 31 15 Xc
+ 1x 32 14 Zq
+ 1x 34 15 Xc
+ 2x 34 16 Gy
+ 3x 37 17  D
+ 6x 37 18 Fj
+ 8x 50 23 Aw
+ 8x 54 25 Nb
+
