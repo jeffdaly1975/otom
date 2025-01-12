@@ -2203,6 +2203,8 @@ let decaydict["73 37 Gq"]=  "beta_plus"
 let decaydict["74 38 Bt"]=  "beta_plus"
 let decaydict["76 39  H"]=  "beta_plus"
 let decaydict["77 39  H"]=  "beta_plus"
+let decaydict["79 40  U"]=  "beta_plus"
+let decaydict["80 40  U"]=  "beta_plus"
 
 let decaydict["Cq-5"]=   "beta_plus"
 let decaydict["Xl-9"]=   "beta_plus"
@@ -2302,6 +2304,9 @@ let decaydict["Gq-73"]=  "beta_plus"
 let decaydict["Bt-74"]=  "beta_plus"
 let decaydict["H-76"]=   "beta_plus"
 let decaydict["H-77"]=   "beta_plus"
+let decaydict["U-79"]=   "beta_plus"
+let decaydict["U-80"]=   "beta_plus"
+
 
 " Decay type beta-
 let decaydict["14  6 Pq"]= "beta_minus"

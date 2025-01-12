@@ -5501,9 +5501,43 @@ atom 81 38 Bt | Decay type	stable
 atom 81 38 Bt | Filled in Outer Shell	0-0-0-0-0-0-0-1
 atom 81 38 Bt | Empty in Outer Shell	0-0-0-0-0-0-1-3
 
-atom 76 39  H | [ ] TODO
+atom 76 39  H | Lab sheet
+atom 76 39  H | H otom
+atom 76 39  H | Token ID 31982734554630676375667377410741248241757086002070827575619367436699824732873
+atom 76 39  H | Name	H
+atom 76 39  H | Discovered by	qma0000.eth
+atom 76 39  H | Current Supply	4
+atom 76 39  H | Series	metal
+atom 76 39  H | Protons	39
+atom 76 39  H | Neutrons	37
+atom 76 39  H | Stability	0.712
+atom 76 39  H | Density	24.507 g/cm³
+atom 76 39  H | Radius	1.458 pm
+atom 76 39  H | Electronegativity	0.078
+atom 76 39  H | Mass	76.000 amu
+atom 76 39  H | Metallic	Yes
+atom 76 39  H | Decay type	beta+
+atom 76 39  H | Filled in Outer Shell	0-0-0-0-0-0-1-1
+atom 76 39  H | Empty in Outer Shell	0-0-0-0-0-0-0-3
 
-atom 77 39  H | [ ] TODO
+atom 77 39  H | Lab sheet
+atom 77 39  H | H otom
+atom 77 39  H | Token ID 38977070209004093440022499882584858996218191430751603771018107241910890279185
+atom 77 39  H | Name	H
+atom 77 39  H | Discovered by	qma0000.eth
+atom 77 39  H | Current Supply	4
+atom 77 39  H | Series	metal
+atom 77 39  H | Protons	39
+atom 77 39  H | Neutrons	38
+atom 77 39  H | Stability	0.769
+atom 77 39  H | Density	24.829 g/cm³
+atom 77 39  H | Radius	1.458 pm
+atom 77 39  H | Electronegativity	0.078
+atom 77 39  H | Mass	77.000 amu
+atom 77 39  H | Metallic	Yes
+atom 77 39  H | Decay type	beta+
+atom 77 39  H | Filled in Outer Shell	0-0-0-0-0-0-1-1
+atom 77 39  H | Empty in Outer Shell	0-0-0-0-0-0-0-3
 
 atom 78 39  H | Lab sheet
 atom 78 39  H | H otom
