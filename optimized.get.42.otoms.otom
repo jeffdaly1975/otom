@@ -1,6 +1,6 @@
 | isotope  | reaction recipe
 |  1  1 Ju | mineable
-|  4  2 W  | mineable
+|  4  2  W | mineable
 |  6  3 Cq | mineable
 |  7  4 Af | mineable
 | 10  5 Xl | mineable
@@ -8,19 +8,19 @@
 | 13  7 Zz | mineable
 | 15  8 Dx | mineable
 | 17  9 Pm | mineable
-| 22 10 M  | mineable
+| 22 10  M | mineable
 | 25 11 Fw | mineable
 | 24 12 Pt | mineable
-| 25 13 S  | mineable
+| 25 13  S | mineable
 | 32 14 Zq | mineable
 | 30 15 Xc | mineable
 | 34 16 Gy | mineable
-| 37 17 D  | mineable
+| 37 17  D | mineable
 | 37 18 Fj | mineable
-| 39 19 O  |  2  1 Ju + 37 18 Fj + 1000 => 39 19  O
-| 42 20 C  |  5  3 Cq + 37 17  D +  750 => 42 20  C
-| 42 21 E  |  5  3 Cq + 37 18 Fj +  750 => 42 21  E
-| 44 22 A  |  7  4 Af + 37 18 Fj +  900 => 44 22  A
+| 39 19  O |  2  1 Ju + 37 18 Fj + 1000 => 39 19  O
+| 42 20  C |  5  3 Cq + 37 17  D +  750 => 42 20  C
+| 42 21  E |  5  3 Cq + 37 18 Fj +  750 => 42 21  E
+| 44 22  A |  7  4 Af + 37 18 Fj +  900 => 44 22  A
 | 50 23 Aw | mineable
 | 51 24 Oc |  1  1 Ju + 50 23 Aw + 1100 => 51 24 Oc
 | 54 25 Nb | mineable
@@ -37,10 +37,10 @@
 | 74 36 Xy | 37 18 Fj + 37 18 Fj + 2300 => 74 36 Xy
 | 79 37 Gq | 25 12 Pt + 54 25 Nb + 2550 => 79 37 Gq
 | 79 38 Bt | 25 13  S + 54 25 Nb + 2400 => 79 38 Bt
-| 81 39 H  | 27 14 Zq + 54 25 Nb + 2650 => 81 39  H PREREQUISITE  1  1 Ju + 26 13  S +  750 => 27 14 Zq
-| 82 40 U  | 32 17  D + 50 23 Aw + 2850 => 82 40  U PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D 
+| 81 39  H | 27 14 Zq + 54 25 Nb + 2650 => 81 39  H PREREQUISITE  1  1 Ju + 26 13  S +  750 => 27 14 Zq
+| 82 40  U | 32 17  D + 50 23 Aw + 2850 => 82 40  U PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
 | 84 41 Sq | 34 18 Fj + 50 23 Aw + 2850 => 84 41 Sq PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
-| 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx 
+| 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx
 
 SUMMARY: 
 You will need 44750 NRG and the following mineable otoms:
@@ -73,4 +73,3 @@ You will need 44750 NRG and the following mineable otoms:
  6x 37 18 Fj
  8x 50 23 Aw
  8x 54 25 Nb
-

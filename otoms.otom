@@ -5634,6 +5634,25 @@ atom 82 39  H | Decay type	stable
 atom 82 39  H | Filled in Outer Shell	0-0-0-0-0-0-1-1
 atom 82 39  H | Empty in Outer Shell	0-0-0-0-0-0-0-3
 
+atom 78 40  U | Lab sheet
+atom 78 40  U | U otom
+atom 78 40  U | Token ID 47925669942168651680155715033658708057484412425991717393838523715260661039849
+atom 78 40  U | Name	U
+atom 78 40  U | Discovered by	jdblacklung.eth
+atom 78 40  U | Current Supply	1
+atom 78 40  U | Series	metal
+atom 78 40  U | Protons	40
+atom 78 40  U | Neutrons	38
+atom 78 40  U | Stability	0.745
+atom 78 40  U | Density	32.212 g/cm³
+atom 78 40  U | Radius	1.343 pm
+atom 78 40  U | Electronegativity	0.180
+atom 78 40  U | Mass	78.000 amu
+atom 78 40  U | Metallic	Yes
+atom 78 40  U | Decay type	beta+
+atom 78 40  U | Filled in Outer Shell	0-0-0-0-0-0-1-2
+atom 78 40  U | Empty in Outer Shell	0-0-0-0-0-0-0-2
+
 atom 79 40  U | Lab sheet
 atom 79 40  U | U otom
 atom 79 40  U | Token ID 100877704163099847460513367523158582210908485664886702522002306392544228691367
@@ -5728,6 +5747,25 @@ atom 83 40  U | Metallic	Yes
 atom 83 40  U | Decay type	stable
 atom 83 40  U | Filled in Outer Shell	0-0-0-0-0-0-1-2
 atom 83 40  U | Empty in Outer Shell	0-0-0-0-0-0-0-2
+
+atom 79 41 Sq | Lab sheet
+atom 79 41 Sq | Sq otom
+atom 79 41 Sq | Token ID 82339636192223865322306851059937224426781134276386756769626872592054694241369
+atom 79 41 Sq | Name	Sq
+atom 79 41 Sq | Discovered by	jdblacklung.eth
+atom 79 41 Sq | Current Supply	1
+atom 79 41 Sq | Series	metal
+atom 79 41 Sq | Protons	41
+atom 79 41 Sq | Neutrons	38
+atom 79 41 Sq | Stability	0.753
+atom 79 41 Sq | Density	39.311 g/cm³
+atom 79 41 Sq | Radius	1.262 pm
+atom 79 41 Sq | Electronegativity	0.484
+atom 79 41 Sq | Mass	79.000 amu
+atom 79 41 Sq | Metallic	Yes
+atom 79 41 Sq | Decay type	beta+
+atom 79 41 Sq | Filled in Outer Shell	0-0-0-0-0-0-1-3
+atom 79 41 Sq | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
 atom 80 41 Sq | Lab sheet
 atom 80 41 Sq | Sq otom
