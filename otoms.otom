@@ -11,7 +11,6 @@ atom  1  1 Ju | Stability	1.000
 atom  1  1 Ju | Density	1.656 g/cm³
 atom  1  1 Ju | Radius	0.845 pm
 atom  1  1 Ju | Electronegativity	0.500
-atom  1  1 Ju | Activation Energy	0.000
 atom  1  1 Ju | Mass	1.000 amu
 atom  1  1 Ju | Metallic	No
 atom  1  1 Ju | Decay type	stable
@@ -31,13 +30,11 @@ atom  2  1 Ju | Stability	1.000
 atom  2  1 Ju | Density	3.311 g/cm³
 atom  2  1 Ju | Radius	0.845 pm
 atom  2  1 Ju | Electronegativity	0.500
-atom  2  1 Ju | Activation Energy	0.000
 atom  2  1 Ju | Mass	2.000 amu
 atom  2  1 Ju | Metallic	No
 atom  2  1 Ju | Decay type	stable
 atom  2  1 Ju | Filled in Outer Shell	0-1-0-0-0-0-0-0
 atom  2  1 Ju | Empty in Outer Shell	0-2-0-0-0-0-0-0
-
 
 atom  3  1 Ju | Lab sheet
 atom  3  1 Ju | Ju otom
@@ -52,7 +49,6 @@ atom  3  1 Ju | Stability	1.000
 atom  3  1 Ju | Density	4.967 g/cm³
 atom  3  1 Ju | Radius	0.845 pm
 atom  3  1 Ju | Electronegativity	0.500
-atom  3  1 Ju | Activation Energy	0.000
 atom  3  1 Ju | Mass	3.000 amu
 atom  3  1 Ju | Metallic	No
 atom  3  1 Ju | Decay type	stable
@@ -1028,7 +1024,6 @@ atom 26 13  S | Decay type	alpha
 atom 26 13  S | Filled in Outer Shell	0-0-0-1-0-0-0-0
 atom 26 13  S | Empty in Outer Shell	0-0-0-3-0-0-0-0
 
-
 atom 27 13  S | Lab sheet
 atom 27 13  S | S otom
 atom 27 13  S | Token ID 36957880584514303857890068856797185400398270788005048261438448033607743845955
@@ -1238,7 +1233,6 @@ atom 32 14 Zq | Decay type	beta-
 atom 32 14 Zq | Filled in Outer Shell	0-0-0-2-0-0-0-0
 atom 32 14 Zq | Empty in Outer Shell	0-0-0-2-0-0-0-0
 
-
 atom 28 15 Xc | Lab sheet
 atom 28 15 Xc | Xc otom
 atom 28 15 Xc | Token ID 25198555517005821974169871987689248865653277752935092937167732929972957705623
@@ -1442,7 +1436,6 @@ atom 34 16 Gy | Stability	1.956
 atom 34 16 Gy | Density	38.433 g/cm³
 atom 34 16 Gy | Radius	0.960 pm
 atom 34 16 Gy | Electronegativity	0.000
-atom 34 16 Gy | Activation Energy	0.000
 atom 34 16 Gy | Mass	34.000 amu
 atom 34 16 Gy | Metallic	No
 atom 34 16 Gy | Decay type	stable
@@ -2095,8 +2088,6 @@ atom 45 20  C | Decay type	beta-
 atom 45 20  C | Filled in Outer Shell	0-0-0-0-3-1-0-0
 atom 45 20  C | Empty in Outer Shell	0-0-0-0-2-1-1-0
 
-
-
 atom 40 21  E | Lab sheet
 atom 40 21  E | E otom
 atom 40 21  E | Token ID 5424817952145526864521995369532637458454944784009206288456400795428745692426
@@ -2566,7 +2557,6 @@ atom 50 23 Aw | Stability	1.005
 atom 50 23 Aw | Density	41.447 g/cm³
 atom 50 23 Aw | Radius	1.065 pm
 atom 50 23 Aw | Electronegativity	1.267
-atom 50 23 Aw | Activation Energy	0.000
 atom 50 23 Aw | Mass	50.000 amu
 atom 50 23 Aw | Metallic	No
 atom 50 23 Aw | Decay type	stable
@@ -2936,20 +2926,20 @@ atom 54 25 Nb | Empty in Outer Shell	0-0-0-0-0-1-2-1
 
 atom 55 25 Nb | Lab sheet
 atom 55 25 Nb | Nb otom
-atom 55 25 Nb | Token ID 42728454091882285128251924214703901437856961239806286683874378783414709943971
+atom 55 25 Nb | Token ID 90606222678225709571700910248095413269214383960298510603882184671018170453226
 atom 55 25 Nb | Name	Nb
 atom 55 25 Nb | Discovered by	msomnia.eth
-atom 55 25 Nb | Current Supply	5
+atom 55 25 Nb | Current Supply	6
 atom 55 25 Nb | Series	alkaline
 atom 55 25 Nb | Protons	25
-atom 55 25 Nb | Neutrons	27
-atom 55 25 Nb | Stability	1.056
-atom 55 25 Nb | Density	15.983 g/cm³
+atom 55 25 Nb | Neutrons	30
+atom 55 25 Nb | Stability	0.870
+atom 55 25 Nb | Density	16.905 g/cm³
 atom 55 25 Nb | Radius	1.482 pm
 atom 55 25 Nb | Electronegativity	0.048
-atom 55 25 Nb | Mass	52.000 amu
+atom 55 25 Nb | Mass	55.000 amu
 atom 55 25 Nb | Metallic	Yes
-atom 55 25 Nb | Decay type	stable
+atom 55 25 Nb | Decay type	beta-
 atom 55 25 Nb | Filled in Outer Shell	0-0-0-0-0-0-0-1
 atom 55 25 Nb | Empty in Outer Shell	0-0-0-0-0-1-2-1
 
@@ -3259,18 +3249,18 @@ atom 55 27 Ic | Empty in Outer Shell	0-0-0-0-0-0-1-1
 
 atom 56 27 Ic | Lab sheet
 atom 56 27 Ic | Ic otom
-atom 56 27 Ic | Token ID 96977013989237203474257817848044284318445149324428254639163555430745232501894
+atom 56 27 Ic | Token ID 29848447886635862743446601765878108147942246257458671673314749143404966980628
 atom 56 27 Ic | Name	Ic
 atom 56 27 Ic | Discovered by	purge-capital.eth
-atom 56 27 Ic | Current Supply	2
+atom 56 27 Ic | Current Supply	14
 atom 56 27 Ic | Series	metal
 atom 56 27 Ic | Protons	27
-atom 56 27 Ic | Neutrons	28
-atom 56 27 Ic | Stability	1.051
-atom 56 27 Ic | Density	30.106 g/cm³
+atom 56 27 Ic | Neutrons	29
+atom 56 27 Ic | Stability	1.049
+atom 56 27 Ic | Density	30.653 g/cm³
 atom 56 27 Ic | Radius	1.222 pm
 atom 56 27 Ic | Electronegativity	0.233
-atom 56 27 Ic | Mass	55.000 amu
+atom 56 27 Ic | Mass	56.000 amu
 atom 56 27 Ic | Metallic	Yes
 atom 56 27 Ic | Decay type	stable
 atom 56 27 Ic | Filled in Outer Shell	0-0-0-0-0-1-1-1
@@ -3751,7 +3741,6 @@ atom 65 29 Jx | Decay type	beta-
 atom 65 29 Jx | Filled in Outer Shell	0-0-0-0-0-1-2-2
 atom 65 29 Jx | Empty in Outer Shell	0-0-0-0-0-0-0-0
 
-
 atom 57 30 Hb | Lab sheet
 atom 57 30 Hb | Hb otom
 atom 57 30 Hb | Token ID 38871610698697300888569721822725903198684831167028500171483776965996071327629
@@ -4036,7 +4025,6 @@ atom 64 31 At | Metallic	Yes
 atom 64 31 At | Decay type	alpha
 atom 64 31 At | Filled in Outer Shell	0-0-0-0-0-1-0-1
 atom 64 31 At | Empty in Outer Shell	0-0-0-0-0-1-3-2
-
 
 atom 65 31 At | Lab sheet
 atom 65 31 At | At otom
@@ -5369,23 +5357,23 @@ atom 74 38 Bt | Filled in Outer Shell	0-0-0-0-0-0-0-1
 atom 74 38 Bt | Empty in Outer Shell	0-0-0-0-0-0-1-3
 
 atom 75 38 Bt | Lab sheet
-atom 75 38 Bt | Gq otom
-atom 75 38 Bt | Token ID 40949967913732654528963517224516771773504396772828038760176224521326458283265
-atom 75 38 Bt | Name	Gq
-atom 75 38 Bt | Discovered by	seamorphus.eth
-atom 75 38 Bt | Current Supply	15
-atom 75 38 Bt | Series	noble
-atom 75 38 Bt | Protons	37
-atom 75 38 Bt | Neutrons	38
-atom 75 38 Bt | Stability	0.840
-atom 75 38 Bt | Density	49.690 g/cm³
-atom 75 38 Bt | Radius	1.147 pm
-atom 75 38 Bt | Electronegativity	0.000
+atom 75 38 Bt | Bt otom
+atom 75 38 Bt | Token ID 70590897269897961846656777998337388586010958872329696571112167753439624634210
+atom 75 38 Bt | Name	Bt
+atom 75 38 Bt | Discovered by	msomnia.eth
+atom 75 38 Bt | Current Supply	4
+atom 75 38 Bt | Series	alkaline
+atom 75 38 Bt | Protons	38
+atom 75 38 Bt | Neutrons	37
+atom 75 38 Bt | Stability	0.765
+atom 75 38 Bt | Density	17.138 g/cm³
+atom 75 38 Bt | Radius	1.636 pm
+atom 75 38 Bt | Electronegativity	0.032
 atom 75 38 Bt | Mass	75.000 amu
-atom 75 38 Bt | Metallic	No
+atom 75 38 Bt | Metallic	Yes
 atom 75 38 Bt | Decay type	beta+
-atom 75 38 Bt | Filled in Outer Shell	0-0-0-0-0-2-3-3
-atom 75 38 Bt | Empty in Outer Shell	0-0-0-0-0-0-0-0
+atom 75 38 Bt | Filled in Outer Shell	0-0-0-0-0-0-0-1
+atom 75 38 Bt | Empty in Outer Shell	0-0-0-0-0-0-1-3
 
 atom 76 38 Bt | Lab sheet
 atom 76 38 Bt | Bt otom
