@@ -1,3 +1,24 @@
+
+2025-01-14 Jan.Tue 19:16:00 WHY OH 
+Why does this happen? 
+Ju-1 and Ju-3 both have Stability 1.  
+Hb-67 has Stability 0.780.
+ 
+Ju-1 and Ju-3 both have decay type stable.  
+Hb-67 has decay type alpha
+
+ 1 1 Ju + 67 30 Hb produces 68 31 At which has 31 protons, the sum of the 2 inputs.
+ 3 1 Ju + 67 30 Hb produces 70 32 Ny which has 32 protons, gaining an extra proton.
+
+Why does Ju-3 cause the addition of a proton? Both those Ju otoms have the same Electronegativity so thats not it.
+The only thing i can think of is the amount of input energy might play into it but I haven't tried experiments with varying the input energy.
+
+  1  1 Ju∙ + 67 30 Hbª + 5000 => 68 31 At⁻ + 3663.42 | nuclear        | Used 1336.58 | stable + alpha => beta- | https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/16109
+  3  1 Ju∙ + 67 30 Hbª + 5000 => 70 32 Ny⁻ + 3507.89 | nuclear, decay | Used 1492.11 | stable + alpha => beta- | https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/16113
+
+The other difference is that Ju-1 has 0 neutrons while Ju-3 has 2 neutrons. perhaps that did something
+[ ] I should see what Ju-2+Hb-67 does
+
 2025-01-14 Jan.Tue 12:45:28
 Using the pattern qma0000.eth found, how might adding 67 30 Hb work?
    3  1 Ju∙(1    ) + 67 30 Hbª(0.780) + 1500 ?=>⬆ 70 32 Ny
@@ -39,7 +60,7 @@ need:
 [ ] 10  5 Xl + 13  7 Zz +  700 => 23 12 Pt
 [ ] 23 12 Pt + 23 12 Pt + 1600 => 46 24 Oc
 [ ]  5  3 Cq + 46 24 Oc + 1000 => 51 27 Ic
-[ ]  9  5 Xl + 51 27 Ic + 1300 ?=> 60 31 At?
+[*]  9  5 Xl + 51 27 Ic + 1300 ?=> 60 31 At?
 
 [ ] 10  5 Xl + 13  7 Zz +  700 => 23 12 Pt
 [ ] 10  5 Xl + 13  7 Zz +  700 => 23 12 Pt
@@ -57,9 +78,9 @@ need:
 [ ] 47 25 Nb +            3850 => 22 12 Pt + 25 13  S
 [ ] 22 12 Pt + 51 27 Ic + 4000 ?=> 73 38 Bt?
 
-                                                                                                                                                        173,105        55%
 2025-01-14 Jan.Tue 12:27:05 How to add decay symbols to isotopes with vim:
- %s/\(\( \d\|\d\d\) \( \d\|\d\d\) \( [a-z]\|[a-z][a-z]\| [a-z]\)\)\zs/\=decaytextchar[decaydict[submatch(1)]]/g
+ %s/\(\( \d\|\d\d\) \( \d\|\d\d\) \([a-z] \|[a-z][a-z]\| [a-z]\)\)\zs/\=decaytextchar[decaydict[submatch(1)]]/g
+ %s/\(\( \d\|\d\d\) \( \d\|\d\d\) \([a-z] \|[a-z][a-z]\| [a-z]\)\)\zs/\="(". stabilitydict[submatch(1)] .")"/g
 
 How to replace token ids with otom name and decay symbols:
  %s/\(\<\d\{50,}\>\)/\=printf("%s%s\n%s\n%s",otomdict[submatch(1)],decaytextchar[decaydict[otomdict[submatch(1)]]],decaydict[otomdict[submatch(1)]],submatch(1))
