@@ -819,7 +819,7 @@ try: 26 11 Fw + 37 17  D + 5000 =  63  28 Yp + 3005
 38 19  O + 39 20  C =  77  39 ..
 39 19  O + 38 20  C =  77  39 ..
 
-| 78 40  U | [ ] try
+| 78 40  U | [X] try I discovered this with decay reaction 21 11 Fw⁺ + 57 30 Hb⁺ + 2270 => 78 40  U⁺
 10  6 Pq + 68 34 Gk =  78  40 ..
 11  6 Pq + 67 34 Gk =  78  40 ..
 13  7 Zz + 65 33 Pw =  78  40 ..
