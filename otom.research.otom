@@ -19,6 +19,16 @@ The only thing i can think of is the amount of input energy might play into it b
 The other difference is that Ju-1 has 0 neutrons while Ju-3 has 2 neutrons. perhaps that did something
 [ ] I should see what Ju-2+Hb-67 does
 
+ I don't see why Ju-3 + Hb-67 +5000 => Ny-70 has a decay reaction, gaining a proton, while Ju-1 + Hb-67 + 5000 => At-68 does not. 
+
+Furthermore, 
+  1  1 Ju∙ + 63 30 Hbª + 5000 => 64 31 Atª + 3650.51 | nuclear        | Used 1349.49 | stable + alpha => alpha            | https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/20350
+  3  1 Ju∙ + 63 30 Hbª + 5000 => 66 31 Atª + 3493.13 | nuclear        | Used 1506.87 | stable + alpha => alpha            | https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/16104
+...both do *not* have decay reactions, only nuclear. That's what I would expect. So its baffling me why Ju-3 + Hb-67 does have a decay reaction. QMA claims to understand it based on actual Chemistry but I don't see it.
+
+
+
+
 2025-01-14 Jan.Tue 12:45:28
 Using the pattern qma0000.eth found, how might adding 67 30 Hb work?
    3  1 Ju∙(1    ) + 67 30 Hbª(0.780) + 1500 ?=>⬆ 70 32 Ny
