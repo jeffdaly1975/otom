@@ -3950,6 +3950,25 @@ atom 67 30 Hb | Decay type	alpha
 atom 67 30 Hb | Filled in Outer Shell	0-0-0-0-0-1-0-0
 atom 67 30 Hb | Empty in Outer Shell	0-0-0-0-0-1-3-3
 
+atom 60 31 At | Lab sheet
+atom 60 31 At | At otom
+atom 60 31 At | Token ID 101899728876080146134883377345850409643767742599283066241273079039142426449579
+atom 60 31 At | Name	At
+atom 60 31 At | Discovered by	jdblacklung.eth
+atom 60 31 At | Current Supply	2
+atom 60 31 At | Series	metal
+atom 60 31 At | Protons	31
+atom 60 31 At | Neutrons	29
+atom 60 31 At | Stability	0.766
+atom 60 31 At | Density	17.397 g/cm³
+atom 60 31 At | Radius	1.511 pm
+atom 60 31 At | Electronegativity	0.047
+atom 60 31 At | Mass	60.000 amu
+atom 60 31 At | Metallic	Yes
+atom 60 31 At | Decay type	beta+
+atom 60 31 At | Filled in Outer Shell	0-0-0-0-0-1-0-1
+atom 60 31 At | Empty in Outer Shell	0-0-0-0-0-1-3-2
+
 atom 61 31 At | Lab sheet
 atom 61 31 At | At otom
 atom 61 31 At | Token ID 2890757137005892474846310662613496212523606680524975783717087149331218733483
@@ -4120,6 +4139,25 @@ atom 69 31 At | Metallic	Yes
 atom 69 31 At | Decay type	beta-
 atom 69 31 At | Filled in Outer Shell	0-0-0-0-0-1-0-1
 atom 69 31 At | Empty in Outer Shell	0-0-0-0-0-1-3-2
+
+atom 61 32 Ny | Lab sheet
+atom 61 32 Ny | Ny otom
+atom 61 32 Ny | Token ID 91308500527774550570043623863501176081366060970219691076901776235716879681106
+atom 61 32 Ny | Name	Ny
+atom 61 32 Ny | Discovered by	jdblacklung.eth
+atom 61 32 Ny | Current Supply	2
+atom 61 32 Ny | Series	metal
+atom 61 32 Ny | Protons	32
+atom 61 32 Ny | Neutrons	29
+atom 61 32 Ny | Stability	0.693
+atom 61 32 Ny | Density	21.896 g/cm³
+atom 61 32 Ny | Radius	1.407 pm
+atom 61 32 Ny | Electronegativity	0.077
+atom 61 32 Ny | Mass	61.000 amu
+atom 61 32 Ny | Metallic	Yes
+atom 61 32 Ny | Decay type	beta+
+atom 61 32 Ny | Filled in Outer Shell	0-0-0-0-0-2-0-1
+atom 61 32 Ny | Empty in Outer Shell	0-0-0-0-0-0-3-2
 
 atom 62 32 Ny | Lab sheet
 atom 62 32 Ny | Ny otom
@@ -5336,6 +5374,25 @@ atom 80 37 Gq | Metallic	No
 atom 80 37 Gq | Decay type	stable
 atom 80 37 Gq | Filled in Outer Shell	0-0-0-0-0-2-3-3
 atom 80 37 Gq | Empty in Outer Shell	0-0-0-0-0-0-0-0
+
+atom 73 38 Bt | Lab sheet
+atom 73 38 Bt | Bt otom
+atom 73 38 Bt | Token ID 79931413208353431282120703218715427365296731721617854453099460384325182213503
+atom 73 38 Bt | Name	Bt
+atom 73 38 Bt | Discovered by	jdblacklung.eth
+atom 73 38 Bt | Current Supply	2
+atom 73 38 Bt | Series	alkaline
+atom 73 38 Bt | Protons	38
+atom 73 38 Bt | Neutrons	35
+atom 73 38 Bt | Stability	0.650
+atom 73 38 Bt | Density	16.681 g/cm³
+atom 73 38 Bt | Radius	1.636 pm
+atom 73 38 Bt | Electronegativity	0.032
+atom 73 38 Bt | Mass	73.000 amu
+atom 73 38 Bt | Metallic	Yes
+atom 73 38 Bt | Decay type	beta+
+atom 73 38 Bt | Filled in Outer Shell	0-0-0-0-0-0-0-1
+atom 73 38 Bt | Empty in Outer Shell	0-0-0-0-0-0-1-3
 
 atom 74 38 Bt | Lab sheet
 atom 74 38 Bt | Bt otom

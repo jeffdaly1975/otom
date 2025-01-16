@@ -370,7 +370,7 @@ UNFOUND POSSIBILITIES:
 | 60 26 Xk | [ ] try
 15  6 Pq + 45 20  C =  60  26 ..
 
-| 60 31 At | [ ] try
+| 60 31 At | [x] try FOUND BY DECAY REACTION
  1  1 Ju + 59 30 Hb =  60  31 ..
  2  1 Ju + 58 30 Hb =  60  31 ..
  3  1 Ju + 57 30 Hb =  60  31 ..
