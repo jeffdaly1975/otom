@@ -33,7 +33,7 @@
 | 19  9 Pm | mineable
 | 20  9 Pm | 44 20  C + 3600 => 20  9 Pm + 24 11 Fw PREREQUISITE 22 10  M + 22 10  M + 2450 => 44 20  C
 | 21  9 Pm | 45 20  C + 3600 => 21  9 Pm + 24 11 Fw PREREQUISITE 11  5 Xl + 34 15 Xc + 1400 => 45 20  C
-| 19 10  M |  4  2  W + 15  8 Dx +  600 => 19 10  M
+| 19 10  M |  9  4 Af + 10  6 Pq +  500 => 19 10  M
 | 20 10  M | mineable
 | 21 10  M |  7  3 Cq + 14  7 Zz +  700 => 21 10  M
 | 22 10  M | mineable
@@ -54,7 +54,7 @@
 | 25 13  S | mineable
 | 26 13  S | mineable
 | 27 13  S |  9  4 Af + 18  9 Pm +  900 => 27 13  S
-| 28 13  S | 11  5 Xl + 17  8 Dx + 1250 => 28 13  S
+| 28 13  S |  5  2  W + 23 10  M +  850 => 28 13  S
 | 29 13  S | 54 25 Nb + 4900 => 25 12 Pt + 29 13  S
 | 30 13  S | 14  6 Pq + 16  7 Zz + 1950 => 30 13  S PREREQUISITE 34 15 Xc +            2500 => 18  8 Dx + 16  7 Zz
 | 26 14 Zq | 57 30 Hb + 5300 => 26 14 Zq + 31 16 Gy PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
@@ -65,11 +65,11 @@
 | 31 14 Zq |  6  3 Cq + 25 11 Fw +  900 => 31 14 Zq
 | 32 14 Zq | mineable
 | 28 15 Xc | 52 27 Ic + 4800 => 24 12 Pt + 28 15 Xc PREREQUISITE 20 10  M + 32 17  D + 2250 => 52 27 Ic PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
-| 29 15 Xc |  4  2  W + 25 13  S +  850 => 29 15 Xc
+| 29 15 Xc | 14  7 Zz + 15  8 Dx +  800 => 29 15 Xc
 | 30 15 Xc | mineable
 | 31 15 Xc | mineable
 | 32 15 Xc | mineable
-| 33 15 Xc |  1  1 Ju + 32 14 Zq + 1000 => 33 15 Xc
+| 33 15 Xc | 15  6 Pq + 18  9 Pm +  800 => 33 15 Xc
 | 34 15 Xc | mineable
 | 31 16 Gy |  1  1 Ju + 30 15 Xc + 1050 => 31 16 Gy
 | 32 16 Gy |  1  1 Ju + 31 15 Xc +  825 => 32 16 Gy
@@ -85,7 +85,7 @@
 | 37 17  D | mineable
 | 38 17  D |  6  3 Cq + 32 14 Zq + 1100 => 38 17  D
 | 39 17  D | 14  6 Pq + 25 11 Fw + 1100 => 39 17  D
-| 34 18 Fj | 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 34 18 Fj |  9  5 Xl + 25 13  S +  780 => 34 18 Fj
 | 35 18 Fj | 17  9 Pm + 18  9 Pm + 1050 => 35 18 Fj
 | 36 18 Fj | 18  9 Pm + 18  9 Pm + 1100 => 36 18 Fj
 | 37 18 Fj | mineable
@@ -122,15 +122,15 @@
 | 43 22  A | 18  9 Pm + 25 13  S + 1350 => 43 22  A
 | 44 22  A |  7  4 Af + 37 18 Fj +  900 => 44 22  A
 | 45 22  A |  8  4 Af + 37 18 Fj + 1300 => 45 22  A
-| 46 22  A |  9  4 Af + 37 18 Fj + 1400 => 46 22  A
+| 46 22  A |  9  5 Xl + 37 17  D + 1100 => 46 22  A
 | 47 22  A | 13  7 Zz + 34 15 Xc + 1300 => 47 22  A
 | 48 22  A | 11  5 Xl + 37 17  D + 1500 => 48 22  A
-| 49 22  A | 23 10  M + 26 12 Pt + 2050 => 49 22  A
+| 49 22  A | 15  6 Pq + 34 15 Xc + 1200 => 49 22  A
 | 50 22  A | 25 11 Fw + 25 11 Fw + 1500 => 50 22  A
 | 44 23 Aw |  1  1 Ju + 43 22  A + 1200 => 44 23 Aw PREREQUISITE 18  9 Pm + 25 13  S + 1350 => 43 22  A
 | 45 23 Aw | 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
 | 46 23 Aw |  9  5 Xl + 37 18 Fj + 1150 => 46 23 Aw
-| 47 23 Aw | 10  5 Xl + 37 18 Fj + 1200 => 47 23 Aw
+| 47 23 Aw | 10  6 Pq + 37 17  D + 1100 => 47 23 Aw
 | 48 23 Aw | 11  5 Xl + 37 18 Fj + 1500 => 48 23 Aw
 | 49 23 Aw | 12  6 Pq + 37 17  D + 1400 => 49 23 Aw
 | 50 23 Aw | mineable
@@ -150,19 +150,19 @@
 | 49 25 Nb | 19 10  M + 30 15 Xc + 2050 => 49 25 Nb PREREQUISITE  4  2  W + 15  8 Dx +  600 => 19 10  M
 | 50 25 Nb | 20 10  M + 30 15 Xc + 2950 => 50 25 Nb
 | 51 25 Nb | 20 10  M + 31 15 Xc + 2350 => 51 25 Nb
-| 52 25 Nb | 22 10  M + 30 15 Xc + 3000 => 52 25 Nb
+| 52 25 Nb | 22 10  M + 30 15 Xc + 2910 => 52 25 Nb
 | 53 25 Nb | 22 10  M + 31 15 Xc + 2450 => 53 25 Nb
 | 54 25 Nb | mineable
-| 55 25 Nb |  5  2  W + 50 23 Aw + 1450 => 55 25 Nb
+| 55 25 Nb |  5  2  W + 50 23 Aw + 1370 => 55 25 Nb
 | 56 25 Nb | 22 10  M + 34 15 Xc + 2350 => 56 25 Nb
 | 50 26 Xk | 25 13  S + 25 13  S + 1600 => 50 26 Xk
 | 51 26 Xk | 25 13  S + 26 13  S + 1600 => 51 26 Xk
 | 52 26 Xk | 26 13  S + 26 13  S + 1750 => 52 26 Xk
 | 53 26 Xk | 16  8 Dx + 37 18 Fj + 2000 => 53 26 Xk
 | 54 26 Xk | 17  8 Dx + 37 18 Fj + 2200 => 54 26 Xk
-| 55 26 Xk |  1  1 Ju + 54 25 Nb + 1100 => 55 26 Xk
+| 55 26 Xk |  5  3 Cq + 50 23 Aw +  910 => 55 26 Xk
 | 56 26 Xk | 19  9 Pm + 37 17  D + 2300 => 56 26 Xk
-| 57 26 Xk |  7  3 Cq + 50 23 Aw + 1550 => 57 26 Xk
+| 57 26 Xk |  7  3 Cq + 50 23 Aw + 1500 => 57 26 Xk
 | 58 26 Xk | 26 12 Pt + 32 14 Zq + 2400 => 58 26 Xk
 | 59 26 Xk | 25 11 Fw + 34 15 Xc + 1750 => 59 26 Xk
 | 51 27 Ic |  5  3 Cq + 46 24 Oc + 1000 => 51 27 Ic PREREQUISITE  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
@@ -171,9 +171,9 @@
 | 54 27 Ic | 24 12 Pt + 30 15 Xc + 3100 => 54 27 Ic
 | 55 27 Ic | 25 12 Pt + 30 15 Xc + 2400 => 55 27 Ic
 | 56 27 Ic | 25 12 Pt + 31 15 Xc + 1950 => 56 27 Ic
-| 57 27 Ic |  7  4 Af + 50 23 Aw + 1150 => 57 27 Ic
+| 57 27 Ic |  7  4 Af + 50 23 Aw + 1090 => 57 27 Ic
 | 58 27 Ic | 26 13  S + 32 14 Zq + 1800 => 58 27 Ic
-| 59 27 Ic | 25 12 Pt + 34 15 Xc + 2000 => 59 27 Ic
+|*59 27 Ic |  9  4 Af + 50 23 Aw + 1620 => 59 27 Ic
 | 60 27 Ic | 23 10  M + 37 17  D + 1800 => 60 27 Ic
 | 61 27 Ic | 23 10  M + 38 17  D + 1850 => 61 27 Ic PREREQUISITE  6  3 Cq + 32 14 Zq + 1100 => 38 17  D
 | 54 28 Yp | 20 10  M + 34 18 Fj + 2200 => 54 28 Yp PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
@@ -312,33 +312,33 @@
 | 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx
 
 SUMMARY:
-You will need 709815 NRG and the following mineable otoms:
-23x  1  1 Ju
+You will need 706835 NRG and the following mineable otoms:
+21x  1  1 Ju
  9x  2  1 Ju
 10x  3  1 Ju
-11x  4  2  W
- 2x  5  2  W
- 7x  5  3 Cq
+ 9x  4  2  W
+ 3x  5  2  W
+ 8x  5  3 Cq
  9x  6  3 Cq
  7x  7  3 Cq
 33x  7  4 Af
  3x  8  4 Af
- 8x  9  4 Af
- 3x  9  5 Xl
- 4x 10  5 Xl
- 5x 10  6 Pq
- 8x 11  5 Xl
+ 9x  9  4 Af
+ 5x  9  5 Xl
+ 3x 10  5 Xl
+ 7x 10  6 Pq
+ 7x 11  5 Xl
  2x 12  6 Pq
  2x 13  6 Pq
 13x 13  7 Zz
  5x 14  6 Pq
- 3x 14  7 Zz
- 6x 15  6 Pq
+ 4x 14  7 Zz
+ 8x 15  6 Pq
 19x 15  8 Dx
  6x 16  8 Dx
- 7x 17  8 Dx
-43x 17  9 Pm
-15x 18  9 Pm
+ 6x 17  8 Dx
+42x 17  9 Pm
+16x 18  9 Pm
  6x 19  9 Pm
 17x 20 10  M
 12x 22 10  M
@@ -346,17 +346,17 @@ You will need 709815 NRG and the following mineable otoms:
  2x 23 11 Fw
 14x 24 12 Pt
 17x 25 11 Fw
-13x 25 12 Pt
+12x 25 12 Pt
 71x 25 13  S
-10x 26 12 Pt
+ 9x 26 12 Pt
 26x 26 13  S
 27x 30 15 Xc
 21x 31 15 Xc
-15x 32 14 Zq
+14x 32 14 Zq
  3x 32 15 Xc
 21x 34 15 Xc
 13x 34 16 Gy
-21x 37 17  D
-41x 37 18 Fj
-27x 50 23 Aw
-26x 54 25 Nb
+23x 37 17  D
+39x 37 18 Fj
+29x 50 23 Aw
+25x 54 25 Nb

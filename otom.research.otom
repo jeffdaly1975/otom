@@ -1,3 +1,7 @@
+
+2025-01-15 Jan.Wed 22:16:00 Decided to add asterisks "*" next to the least difficult and least expensive reactions for isotopes in recipes.otom. As I go, I compare it to my optimized.get.all.isotopes.otom file entries and correct that if I find a better recipe.
+[ ] finish that task. left off going through recipes.otom when I got up to 53 27 Ic
+
 2025-01-15 Jan.Wed 16:20:00 how to replace Token IDs with isotope names but if it doesn't exist, leave it alone.
  %s/\(\<\d\{50,}\>\)/\=printf("%s", get(otomdict,submatch(1), submatch(1)))
 
