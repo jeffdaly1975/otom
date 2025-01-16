@@ -25,3 +25,9 @@ I use these files to document my research on Kjetil Golid's OTOM project on the 
  - otoms.shapescan.data.otom - data copied from the shapescan page attributes
 
  - recipes.otom - how to create each isotope. multiple recipes where possible.
+
+ - optimized.get.42.otoms.otom - recipes for how to make 1 of each of the 42 otoms which grants you the Mint x10 button
+
+ - optimized.get.all.isotopes.otom - recipes for how to make all known isotopes
+
+ - token.image.descriptions.otom - descriptions of the rendered image of the tokens
