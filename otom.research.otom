@@ -1,3 +1,94 @@
+2025-01-19 Jan.Sun 17:59:59 merged the new code in otom_decay_reactions.pl into the original script otom_reactions.pl
+
+2025-01-19 Jan.Sun 15:58:41 This is a list of possible reactions from my otoms.decay_reactions_list.txt. I pruned out everything with input smaller than 9  5 Xl, kept everything where it was the addition of the smallest isotope for an otom kind was unstable (< 0.78 stability) 
+     9  5 Xl⁺(0.329) +   9  5 Xl⁺(0.329) => |⬆  18  11 Fw |=  18  10  M |⬇  18   9 Pm 
+     9  5 Xl⁺(0.329) +  10  6 Pq⁺(0.049) => |⬆  19  12 Pt |=  19  11 Fw |⬇  19  10  M
+     9  5 Xl⁺(0.329) +  13  7 Zz⁺(0.525) => |⬆  22  13  S |=  22  12 Pt |⬇  22  11 Fw <== makes 22 11 Fw
+     9  5 Xl⁺(0.329) +  15  8 Dx⁺(0.604) => |⬆  24  14 Zq |=  24  13  S |⬇  24  12 Pt
+     9  5 Xl⁺(0.329) +  17  9 Pm⁺(0.685) => |⬆  26  15 Xc |=  26  14 Zq |⬇  26  13  S
+     9  5 Xl⁺(0.329) +  22 12 Pt⁺(0.717) => |⬆  31  18 Fj |=  31  17  D |⬇  31  16 Gy
+     9  5 Xl⁺(0.329) +  26 14 Zq⁺(0.707) => |⬆  35  20  C |=  35  19  O |⬇  35  18 Fj
+     9  5 Xl⁺(0.329) +  28 15 Xc⁺(0.765) => |⬆  37  21  E |=  37  20  C |⬇  37  19  O
+     9  5 Xl⁺(0.329) +  36 19  O⁺(0.736) => |⬆  45  25 Nb |=  45  24 Oc |⬇  45  23 Aw
+     9  5 Xl⁺(0.329) +  60 31 At⁺(0.766) => |⬆  69  37 Gq |=  69  36 Xy |⬇  69  35 Qi
+     9  5 Xl⁺(0.329) +  61 32 Ny⁺(0.693) => |⬆  70  38 Bt |=  70  37 Gq |⬇  70  36 Xy
+     9  5 Xl⁺(0.329) +  64 33 Pw⁺(0.734) => |⬆  73  39  H |=  73  38 Bt |⬇  73  37 Gq
+     9  5 Xl⁺(0.329) +  66 34 Gk⁺(0.740) => |⬆  75  40  U |=  75  39  H |⬇  75  38 Bt
+     9  5 Xl⁺(0.329) +  67 35 Qi⁺(0.654) => |⬆  76  41 Sq |=  76  40  U |⬇  76  39  H
+     9  5 Xl⁺(0.329) +  70 36 Xy⁺(0.725) => |⬆  79  42 Ua |=  79  41 Sq |⬇  79  40  U
+     9  5 Xl⁺(0.329) +  72 37 Gq⁺(0.706) => |⬆  81  43 .. |=  81  42 Ua |⬇  81  41 Sq
+[ ]  9  5 Xl⁺(0.329) +  73 38 Bt⁺(0.650) => |⬆  82  44 .. |=  82  43 .. |⬇  82  42 Ua
+[ ] 10  6 Pq⁺(0.049) +  10  6 Pq⁺(0.049) => |⬆  20  13  S |=  20  12 Pt |⬇  20  11 Fw
+    10  6 Pq⁺(0.049) +  13  7 Zz⁺(0.525) => |⬆  23  14 Zq |=  23  13  S |⬇  23  12 Pt <== makes 23 12 Pt
+    10  6 Pq⁺(0.049) +  15  8 Dx⁺(0.604) => |⬆  25  15 Xc |=  25  14 Zq |⬇  25  13  S
+    10  6 Pq⁺(0.049) +  17  9 Pm⁺(0.685) => |⬆  27  16 Gy |=  27  15 Xc |⬇  27  14 Zq
+    10  6 Pq⁺(0.049) +  22 12 Pt⁺(0.717) => |⬆  32  19  O |=  32  18 Fj |⬇  32  17  D
+    10  6 Pq⁺(0.049) +  26 14 Zq⁺(0.707) => |⬆  36  21  E |=  36  20  C |⬇  36  19  O
+    10  6 Pq⁺(0.049) +  28 15 Xc⁺(0.765) => |⬆  38  22  A |=  38  21  E |⬇  38  20  C
+    10  6 Pq⁺(0.049) +  36 19  O⁺(0.736) => |⬆  46  26 Xk |=  46  25 Nb |⬇  46  24 Oc
+    10  6 Pq⁺(0.049) +  60 31 At⁺(0.766) => |⬆  70  38 Bt |=  70  37 Gq |⬇  70  36 Xy
+[ ] 10  6 Pq⁺(0.049) +  61 32 Ny⁺(0.693) => |⬆  71  39  H |=  71  38 Bt |⬇  71  37 Gq
+    10  6 Pq⁺(0.049) +  64 33 Pw⁺(0.734) => |⬆  74  40  U |=  74  39  H |⬇  74  38 Bt
+    10  6 Pq⁺(0.049) +  66 34 Gk⁺(0.740) => |⬆  76  41 Sq |=  76  40  U |⬇  76  39  H
+[ ] 10  6 Pq⁺(0.049) +  67 35 Qi⁺(0.654) => |⬆  77  42 Ua |=  77  41 Sq |⬇  77  40  U
+    10  6 Pq⁺(0.049) +  70 36 Xy⁺(0.725) => |⬆  80  43 .. |=  80  42 Ua |⬇  80  41 Sq
+[ ] 10  6 Pq⁺(0.049) +  72 37 Gq⁺(0.706) => |⬆  82  44 .. |=  82  43 .. |⬇  82  42 Ua
+    13  7 Zz⁺(0.525) +  13  7 Zz⁺(0.525) => |⬆  26  15 Xc |=  26  14 Zq |⬇  26  13  S <== decays to 13  6 Pq + 13  6 Pq
+    13  7 Zz⁺(0.525) +  15  8 Dx⁺(0.604) => |⬆  28  16 Gy |=  28  15 Xc |⬇  28  14 Zq <== makes 28 14 Zq
+    13  7 Zz⁺(0.525) +  17  9 Pm⁺(0.685) => |⬆  30  17  D |=  30  16 Gy |⬇  30  15 Xc
+    13  7 Zz⁺(0.525) +  22 12 Pt⁺(0.717) => |⬆  35  20  C |=  35  19  O |⬇  35  18 Fj
+    13  7 Zz⁺(0.525) +  26 14 Zq⁺(0.707) => |⬆  39  22  A |=  39  21  E |⬇  39  20  C
+    13  7 Zz⁺(0.525) +  28 15 Xc⁺(0.765) => |⬆  41  23 Aw |=  41  22  A |⬇  41  21  E
+    13  7 Zz⁺(0.525) +  36 19  O⁺(0.736) => |⬆  49  27 Ic |=  49  26 Xk |⬇  49  25 Nb
+    13  7 Zz⁺(0.525) +  60 31 At⁺(0.766) => |⬆  73  39  H |=  73  38 Bt |⬇  73  37 Gq
+    13  7 Zz⁺(0.525) +  61 32 Ny⁺(0.693) => |⬆  74  40  U |=  74  39  H |⬇  74  38 Bt
+    13  7 Zz⁺(0.525) +  64 33 Pw⁺(0.734) => |⬆  77  41 Sq |=  77  40  U |⬇  77  39  H
+    13  7 Zz⁺(0.525) +  66 34 Gk⁺(0.740) => |⬆  79  42 Ua |=  79  41 Sq |⬇  79  40  U
+    13  7 Zz⁺(0.525) +  67 35 Qi⁺(0.654) => |⬆  80  43 .. |=  80  42 Ua |⬇  80  41 Sq
+    13  7 Zz⁺(0.525) +  70 36 Xy⁺(0.725) => |⬆  83  44 .. |=  83  43 .. |⬇  83  42 Ua
+    15  8 Dx⁺(0.604) +  15  8 Dx⁺(0.604) => |⬆  30  17  D |=  30  16 Gy |⬇  30  15 Xc
+    15  8 Dx⁺(0.604) +  17  9 Pm⁺(0.685) => |⬆  32  18 Fj |=  32  17  D |⬇  32  16 Gy <== makes 32 17  D
+    15  8 Dx⁺(0.604) +  22 12 Pt⁺(0.717) => |⬆  37  21  E |=  37  20  C |⬇  37  19  O
+    15  8 Dx⁺(0.604) +  26 14 Zq⁺(0.707) => |⬆  41  23 Aw |=  41  22  A |⬇  41  21  E
+    15  8 Dx⁺(0.604) +  28 15 Xc⁺(0.765) => |⬆  43  24 Oc |=  43  23 Aw |⬇  43  22  A
+    15  8 Dx⁺(0.604) +  36 19  O⁺(0.736) => |⬆  51  28 Yp |=  51  27 Ic |⬇  51  26 Xk
+    15  8 Dx⁺(0.604) +  60 31 At⁺(0.766) => |⬆  75  40  U |=  75  39  H |⬇  75  38 Bt
+    15  8 Dx⁺(0.604) +  61 32 Ny⁺(0.693) => |⬆  76  41 Sq |=  76  40  U |⬇  76  39  H
+    15  8 Dx⁺(0.604) +  64 33 Pw⁺(0.734) => |⬆  79  42 Ua |=  79  41 Sq |⬇  79  40  U
+    15  8 Dx⁺(0.604) +  66 34 Gk⁺(0.740) => |⬆  81  43 .. |=  81  42 Ua |⬇  81  41 Sq
+[ ] 15  8 Dx⁺(0.604) +  67 35 Qi⁺(0.654) => |⬆  82  44 .. |=  82  43 .. |⬇  82  42 Ua
+    17  9 Pm⁺(0.685) +  17  9 Pm⁺(0.685) => |⬆  34  19  O |=  34  18 Fj |⬇  34  17  D <== makes 34 18 Fj
+    17  9 Pm⁺(0.685) +  22 12 Pt⁺(0.717) => |⬆  39  22  A |=  39  21  E |⬇  39  20  C
+    17  9 Pm⁺(0.685) +  26 14 Zq⁺(0.707) => |⬆  43  24 Oc |=  43  23 Aw |⬇  43  22  A
+    17  9 Pm⁺(0.685) +  28 15 Xc⁺(0.765) => |⬆  45  25 Nb |=  45  24 Oc |⬇  45  23 Aw
+    17  9 Pm⁺(0.685) +  36 19  O⁺(0.736) => |⬆  53  29 Jx |=  53  28 Yp |⬇  53  27 Ic
+    17  9 Pm⁺(0.685) +  60 31 At⁺(0.766) => |⬆  77  41 Sq |=  77  40  U |⬇  77  39  H
+    17  9 Pm⁺(0.685) +  61 32 Ny⁺(0.693) => |⬆  78  42 Ua |=  78  41 Sq |⬇  78  40  U
+    17  9 Pm⁺(0.685) +  64 33 Pw⁺(0.734) => |⬆  81  43 .. |=  81  42 Ua |⬇  81  41 Sq
+    17  9 Pm⁺(0.685) +  66 34 Gk⁺(0.740) => |⬆  83  44 .. |=  83  43 .. |⬇  83  42 Ua
+    22 12 Pt⁺(0.717) +  22 12 Pt⁺(0.717) => |⬆  44  25 Nb |=  44  24 Oc |⬇  44  23 Aw
+    22 12 Pt⁺(0.717) +  26 14 Zq⁺(0.707) => |⬆  48  27 Ic |=  48  26 Xk |⬇  48  25 Nb
+    22 12 Pt⁺(0.717) +  28 15 Xc⁺(0.765) => |⬆  50  28 Yp |=  50  27 Ic |⬇  50  26 Xk
+    22 12 Pt⁺(0.717) +  36 19  O⁺(0.736) => |⬆  58  32 Ny |=  58  31 At |⬇  58  30 Hb
+[ ] 22 12 Pt⁺(0.717) +  60 31 At⁺(0.766) => |⬆  82  44 .. |=  82  43 .. |⬇  82  42 Ua
+    26 14 Zq⁺(0.707) +  26 14 Zq⁺(0.707) => |⬆  52  29 Jx |=  52  28 Yp |⬇  52  27 Ic
+    26 14 Zq⁺(0.707) +  28 15 Xc⁺(0.765) => |⬆  54  30 Hb |=  54  29 Jx |⬇  54  28 Yp
+    26 14 Zq⁺(0.707) +  36 19  O⁺(0.736) => |⬆  62  34 Gk |=  62  33 Pw |⬇  62  32 Ny
+    28 15 Xc⁺(0.765) +  28 15 Xc⁺(0.765) => |⬆  56  31 At |=  56  30 Hb |⬇  56  29 Jx
+    28 15 Xc⁺(0.765) +  36 19  O⁺(0.736) => |⬆  64  35 Qi |=  64  34 Gk |⬇  64  33 Pw
+    36 19  O⁺(0.736) +  36 19  O⁺(0.736) => |⬆  72  39  H |=  72  38 Bt |⬇  72  37 Gq
+
+
+[r]  7  4 Af + 37 18 Fj +  900 => 44 22  A
+[*] 34 16 Gy + 44 22  A + 3650 => 78 38 Bt
+[r] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+[ ]  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc
+[ ] 32 14 Zq + 46 24 Oc + 2550 => 78 38 Bt
+[ ]  9  5 Xl⁺(0.329) +  73 38 Bt⁺(0.650) => |⬆  82  44 .. |=  82  43 .. |⬇  82  42 Ua
+
+
+
+
 2025-01-19 Jan.Sun 15:40:04
 prediction: 10  6 Pq⁺(0.049) + 13  7 Zz⁺(0.525) => 23  12 Pt
 yep it worked
@@ -32,26 +123,26 @@ lets switch to tryng these since (22 12 Pt⁺(0.717) +  47 25 Nb⁺(0.793) => �
  Token ID: 10549117495332676622303467472187945570511914599499442751289190630194665120864
 
 [ ] 75 39  H
-  [ ] add to otoms.complete.list.otom
-  [ ] save reservoir image to mac folder
-  [ ] bookmark to Firefox
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
-  [ ] add to syntax/otom.vim
-  [ ] add to otom_reactions.pl
-  [ ] add to isotopes image from Kjetil with unknown meaning.txt
-  [ ] add to otoms.decay.otom
-  [ ] add to otoms.otom
-  [ ] add to otoms.columns.otom
-  [ ] add reaction to otom.reactions.otom 
-  [ ] add to recipes.otom
-  [ ] add otoms.shapescan.data.otom
+  [c] add to otoms.complete.list.otom
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [c] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom 
+  [c] add to recipes.otom
+  [c] add otoms.shapescan.data.otom
       [ ] put these vaules in ???
           [ ] ==>SHELL TABLE 1
           [ ] ==>SHELL TABLE 2
-  [ ] check off otoms.unfoundpossibilites.otom
-  [ ] make it myself
+  [c] check off otoms.unfoundpossibilites.otom
+  [c] make it myself
   [ ] add to file otoms.decay.with.metadata.otom
-  [ ] add to file optimized.get.all.isotopes.otom
+  [c] add to file optimized.get.all.isotopes.otom
 
 
 2025-01-19 Jan.Sun 01:28:09 NEW DISCOVERY! Xy-69 aka 69 36 Xy
@@ -61,26 +152,26 @@ lets switch to tryng these since (22 12 Pt⁺(0.717) +  47 25 Nb⁺(0.793) => �
  Token ID: 69366888717151273382655392328974051317849305264349045341703282089231775894951
 
 [ ] 69 36 Xy
-  [ ] add to otoms.complete.list.otom
-  [ ] save reservoir image to mac folder
-  [ ] bookmark to Firefox
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
-  [ ] add to syntax/otom.vim
-  [ ] add to otom_reactions.pl
-  [ ] add to isotopes image from Kjetil with unknown meaning.txt
-  [ ] add to otoms.decay.otom
-  [ ] add to otoms.otom
-  [ ] add to otoms.columns.otom
-  [ ] add reaction to otom.reactions.otom 
-  [ ] add to recipes.otom
-  [ ] add otoms.shapescan.data.otom
+  [c] add to otoms.complete.list.otom
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [c] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom 
+  [c] add to recipes.otom
+  [c] add otoms.shapescan.data.otom
       [ ] put these vaules in ???
           [ ] ==>SHELL TABLE 1
           [ ] ==>SHELL TABLE 2
-  [ ] check off otoms.unfoundpossibilites.otom
-  [ ] make it myself
+  [c] check off otoms.unfoundpossibilites.otom
+  [c] make it myself
   [ ] add to file otoms.decay.with.metadata.otom
-  [ ] add to file optimized.get.all.isotopes.otom
+  [c] add to file optimized.get.all.isotopes.otom
 
 
 

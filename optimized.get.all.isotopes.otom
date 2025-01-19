@@ -263,6 +263,7 @@
 | 76 35 Qi | 22 10  M + 54 25 Nb + 3100 => 76 35 Qi
 | 77 35 Qi | 23 10  M + 54 25 Nb + 2350 => 77 35 Qi
 | 78 35 Qi | 23 10  M + 55 25 Nb + 2213 => 78 35 Qi            PREREQUISITE  5  2  W + 50 23 Aw + 1370 => 55 25 Nb
+| 69 36 Xy | 22 12 Pt + 47 25 Nb + 2040 => 69 36 Xy            PREREQUISITE 47 25 Nb +            3687 => 22 12 Pt + 25 13  S PREREQUISITE 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj PREREQUISITE 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
 | 70 36 Xy | 13  7 Zz + 57 30 Hb + 1600 => 70 36 Xy            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
 | 71 36 Xy | 29 15 Xc + 42 22  A + 2400 => 71 36 Xy            PREREQUISITE  4  2  W + 25 13  S +  850 => 29 15 Xc PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A
 | 72 36 Xy | 29 15 Xc + 43 22  A + 2600 => 72 36 Xy            PREREQUISITE  4  2  W + 25 13  S +  850 => 29 15 Xc PREREQUISITE 18  9 Pm + 25 13  S + 1350 => 43 22  A
@@ -291,6 +292,7 @@
 | 79 38 Bt | 25 13  S + 54 25 Nb + 2400 => 79 38 Bt
 | 80 38 Bt | 30 15 Xc + 50 23 Aw + 3600 => 80 38 Bt
 | 81 38 Bt | 31 15 Xc + 50 23 Aw + 2950 => 81 38 Bt
+| 75 39  H | 28 15 Xc + 47 25 Nb + 2310 => 75 39  H            PREREQUISITE 52 27 Ic +            4530 => 24 12 Pt + 28 15 Xc PREREQUISITE 20 10  M + 32 17  D + 2250 => 52 27 Ic PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D PREREQUISITE 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
 | 76 39  H | 19 10  M + 57 30 Hb + 2200 => 76 39  H            PREREQUISITE  4  2  W + 15  8 Dx +  600 => 19 10  M PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
 | 77 39  H | 20 10  M + 57 30 Hb + 3000 => 77 39  H            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
 | 78 39  H | 37 18 Fj + 41 21  E + 2750 => 78 39  H            PREREQUISITE 17  9 Pm + 24 12 Pt + 1600 => 41 21  E
@@ -315,7 +317,7 @@
 | 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua            PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx
 
 SUMMARY:
-You will need 724194 NRG and the following mineable otoms:
+You will need 746461 NRG and the following mineable otoms:
 23x  1  1 Ju
  9x  2  1 Ju
 10x  3  1 Ju
@@ -324,7 +326,7 @@ You will need 724194 NRG and the following mineable otoms:
 11x  5  3 Cq
  9x  6  3 Cq
  7x  7  3 Cq
-33x  7  4 Af
+34x  7  4 Af
  3x  8  4 Af
  8x  9  4 Af
  8x  9  5 Xl
@@ -333,24 +335,24 @@ You will need 724194 NRG and the following mineable otoms:
  7x 11  5 Xl
  2x 12  6 Pq
  2x 13  6 Pq
-14x 13  7 Zz
+17x 13  7 Zz
  5x 14  6 Pq
  4x 14  7 Zz
  8x 15  6 Pq
 22x 15  8 Dx
  6x 16  8 Dx
  6x 17  8 Dx
-43x 17  9 Pm
+49x 17  9 Pm
 15x 18  9 Pm
  6x 19  9 Pm
-17x 20 10  M
+18x 20 10  M
 12x 22 10  M
 12x 23 10  M
  2x 23 11 Fw
-14x 24 12 Pt
+15x 24 12 Pt
 17x 25 11 Fw
 12x 25 12 Pt
-71x 25 13  S
+73x 25 13  S
  9x 26 12 Pt
 26x 26 13  S
 28x 30 15 Xc

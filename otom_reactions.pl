@@ -1,10 +1,10 @@
 #!/usr/bin/perl -w
 
 #       42 otoms
-#      314 isotopes
-#    98596 combinations
-#    49455 unique combinations
-#    12892 combinations resulting in known isotopes
+#      316 isotopes
+#    99856 combinations
+#    50086 unique combinations
+#    12963 combinations resulting in known isotopes
 
 my $order_counter=0;
 my @sort_order=();
@@ -43,6 +43,7 @@ foreach my $line (<DATA>){
 # output table
 open TABLE,   ">otoms.reactions_table.txt" || die "error opening output table file";
 open LIST_OUT,">otoms.reactions_list.txt"  || die "error opening output list file";
+open DECAY_OUT,">otoms.decay_reactions_list.txt"  || die "error opening output list file";
 
 print TABLE      "           |";
 print TABLE join "                           |",@sort_order , "\n";
@@ -54,13 +55,15 @@ foreach my $key_row (@sort_order){
      $result_mass    = $otoms{$key_row}{mass}    + $otoms{$key_col}{mass};
      $result_protons = $otoms{$key_row}{protons} + $otoms{$key_col}{protons};
 
-     $calculated_m_and_p = sprintf("%3d %3d",$result_mass,$result_protons);
+     $calculated_m_and_p_decay_up   = sprintf("%3d %3d",$result_mass,$result_protons + 1 );
+     $calculated_m_and_p            = sprintf("%3d %3d",$result_mass,$result_protons);
+     $calculated_m_and_p_decay_down = sprintf("%3d %3d",$result_mass,$result_protons - 1 );
 
-     $calculated_name = "..";
+     $calculated_name            = $lookup_name{ $calculated_m_and_p } || "..";
 
-     if (exists $lookup_name{ $calculated_m_and_p }){
-       $calculated_name = $lookup_name{ $calculated_m_and_p };
-     }
+     $calculated_name_decay_up   = $otom_protons_to_name{$result_protons + 1} || "..";
+     $calculated_name_decayequal = $otom_protons_to_name{$result_protons    } || "..";
+     $calculated_name_decay_down = $otom_protons_to_name{$result_protons - 1} || "..";
 
      print TABLE "$key_row + $key_col = $calculated_m_and_p $calculated_name |";
 
@@ -79,6 +82,12 @@ foreach my $key_row (@sort_order){
        unless ($calculated_name eq '..'){
         $combo_is_existing_isotope++;
        }
+
+
+       print DECAY_OUT "$key_row + $key_col => |⬆ $calculated_m_and_p_decay_up "   . "$calculated_name_decay_up ";
+       print DECAY_OUT                        "|= $calculated_m_and_p "            . "$calculated_name_decayequal ";
+       print DECAY_OUT                        "|⬇ $calculated_m_and_p_decay_down " . "$calculated_name_decay_down\n";
+
      }
      $already_listed{"$key_row + $key_col"}=1;
   }
@@ -87,6 +96,7 @@ foreach my $key_row (@sort_order){
 
 close TABLE;
 close LIST_OUT;
+close DECAY_OUT;
 
 #### print summary
 printf STDERR "# %8d otoms\n",  scalar(keys %otom_atom_names);
@@ -361,6 +371,7 @@ __DATA__
 76 35 Qi
 77 35 Qi
 78 35 Qi
+69 36 Xy
 70 36 Xy
 71 36 Xy
 72 36 Xy
@@ -389,6 +400,7 @@ __DATA__
 79 38 Bt
 80 38 Bt
 81 38 Bt
+75 39  H
 76 39  H
 77 39  H
 78 39  H

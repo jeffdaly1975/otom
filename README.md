@@ -16,8 +16,6 @@ I use these files to document my research on Kjetil Golid's OTOM project on the 
 
  - otom_reactions.pl - perl script to output a table (otoms.reactions_table.txt) and list (otoms.reactions_list.txt) of possible basic combinations. I used it to figure out how to make most the isotopes I found. It doesn't always work because some reactions have decay into smaller/larger mass than the math would predict.
 
- - otom_decayreactions.pl - perl script to output a list (otoms.decay_reactions_list.txt) of possible basic combinations of two input isotopes and 3 potential output isotopes with 1 having decay add a proton, 1 with decay removing a proton, and 1 where the output isotope has the same number of protons as the sum of the inputs.
-
  - otoms.otom - I record all the Lab Sheets for all the isotopes here. So I can grep through it and try to figure stuff out. Lab Sheets are visible by right clicking on otoms in the OTOM app
 
  - otoms.columns.otm - graph of protons x mass to show the landscape of isotopes
