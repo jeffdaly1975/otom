@@ -1,0 +1,21 @@
+[ ] 00 00 Ju
+  [ ] add to otoms.complete.list.otom
+  [ ] save reservoir image to mac folder
+  [ ] bookmark to Firefox
+  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [ ] add to syntax/otom.vim
+  [ ] add to otom_reactions.pl
+  [ ] add to isotopes image from Kjetil with unknown meaning.txt
+  [ ] add to otoms.decay.otom
+  [ ] add to otoms.otom
+  [ ] add to otoms.columns.otom
+  [ ] add reaction to otom.reactions.otom 
+  [ ] add to recipes.otom
+  [ ] add otoms.shapescan.data.otom
+      [ ] put these vaules in ???
+          [ ] ==>SHELL TABLE 1
+          [ ] ==>SHELL TABLE 2
+  [ ] check off otoms.unfoundpossibilites.otom
+  [ ] make it myself
+  [ ] add to file otoms.decay.with.metadata.otom
+  [ ] add to file optimized.get.all.isotopes.otom

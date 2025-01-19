@@ -33,3 +33,5 @@ I use these files to document my research on Kjetil Golid's OTOM project on the 
  - optimized.get.all.isotopes.otom - recipes for how to make all known isotopes
 
  - token.image.descriptions.otom - descriptions of the rendered image of the tokens
+
+ - new_isotope.template.txt - template file to insert in my otom.research.otom file with todo items for when there's a newly discovered isotope.
