@@ -64,7 +64,7 @@
 | 30 14 Zq | 11  5 Xl + 19  9 Pm + 1450 => 30 14 Zq
 | 31 14 Zq |  6  3 Cq + 25 11 Fw +  900 => 31 14 Zq
 | 32 14 Zq | mineable
-| 28 15 Xc | 52 27 Ic +            4800 => 24 12 Pt + 28 15 Xc PREREQUISITE 20 10  M + 32 17  D + 2250 => 52 27 Ic PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 28 15 Xc | 52 27 Ic +            4530 => 24 12 Pt + 28 15 Xc PREREQUISITE 20 10  M + 32 17  D + 2250 => 52 27 Ic PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
 | 29 15 Xc | 14  7 Zz + 15  8 Dx +  800 => 29 15 Xc
 | 30 15 Xc | mineable
 | 31 15 Xc | mineable
@@ -137,7 +137,7 @@
 | 51 23 Aw | 25 11 Fw + 26 12 Pt + 2050 => 51 23 Aw
 | 52 23 Aw |  3  1 Ju + 49 22  A + 1300 => 52 23 Aw            PREREQUISITE 23 10  M + 26 12 Pt + 2050 => 49 22  A
 | 46 24 Oc |  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc            PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
-| 47 24 Oc | 17  9 Pm + 30 15 Xc + 1900 => 47 24 Oc
+| 47 24 Oc | 10  6 Pq + 37 18 Fj +  996 => 47 24 Oc
 | 48 24 Oc | 24 12 Pt + 24 12 Pt + 2600 => 48 24 Oc
 | 49 24 Oc | 24 12 Pt + 25 12 Pt + 2050 => 49 24 Oc
 | 50 24 Oc | 25 12 Pt + 25 12 Pt + 1650 => 50 24 Oc
@@ -262,7 +262,7 @@
 | 75 35 Qi | 25 12 Pt + 50 23 Aw + 2550 => 75 35 Qi
 | 76 35 Qi | 22 10  M + 54 25 Nb + 3100 => 76 35 Qi
 | 77 35 Qi | 23 10  M + 54 25 Nb + 2350 => 77 35 Qi
-| 78 35 Qi | 32 14 Zq + 46 21  E + 2600 => 78 35 Qi            PREREQUISITE  9  4 Af + 37 17  D + 1350 => 46 21  E
+| 78 35 Qi | 23 10  M + 55 25 Nb + 2213 => 78 35 Qi            PREREQUISITE  5  2  W + 50 23 Aw + 1370 => 55 25 Nb
 | 70 36 Xy | 13  7 Zz + 57 30 Hb + 1600 => 70 36 Xy            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
 | 71 36 Xy | 29 15 Xc + 42 22  A + 2400 => 71 36 Xy            PREREQUISITE  4  2  W + 25 13  S +  850 => 29 15 Xc PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A
 | 72 36 Xy | 29 15 Xc + 43 22  A + 2600 => 72 36 Xy            PREREQUISITE  4  2  W + 25 13  S +  850 => 29 15 Xc PREREQUISITE 18  9 Pm + 25 13  S + 1350 => 43 22  A
@@ -315,21 +315,21 @@
 | 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua            PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx
 
 SUMMARY:
-You will need 725735 NRG and the following mineable otoms:
+You will need 724194 NRG and the following mineable otoms:
 23x  1  1 Ju
  9x  2  1 Ju
 10x  3  1 Ju
  8x  4  2  W
- 3x  5  2  W
+ 4x  5  2  W
 11x  5  3 Cq
  9x  6  3 Cq
  7x  7  3 Cq
 33x  7  4 Af
  3x  8  4 Af
- 9x  9  4 Af
+ 8x  9  4 Af
  8x  9  5 Xl
  3x 10  5 Xl
- 9x 10  6 Pq
+10x 10  6 Pq
  7x 11  5 Xl
  2x 12  6 Pq
  2x 13  6 Pq
@@ -340,12 +340,12 @@ You will need 725735 NRG and the following mineable otoms:
 22x 15  8 Dx
  6x 16  8 Dx
  6x 17  8 Dx
-44x 17  9 Pm
+43x 17  9 Pm
 15x 18  9 Pm
  6x 19  9 Pm
 17x 20 10  M
 12x 22 10  M
-11x 23 10  M
+12x 23 10  M
  2x 23 11 Fw
 14x 24 12 Pt
 17x 25 11 Fw
@@ -353,13 +353,13 @@ You will need 725735 NRG and the following mineable otoms:
 71x 25 13  S
  9x 26 12 Pt
 26x 26 13  S
-29x 30 15 Xc
+28x 30 15 Xc
 21x 31 15 Xc
-14x 32 14 Zq
+13x 32 14 Zq
  3x 32 15 Xc
 21x 34 15 Xc
 13x 34 16 Gy
-23x 37 17  D
-39x 37 18 Fj
-29x 50 23 Aw
+22x 37 17  D
+40x 37 18 Fj
+30x 50 23 Aw
 25x 54 25 Nb
