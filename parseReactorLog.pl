@@ -250,6 +250,9 @@ sub energy_converter {
 
 my %db = ();
 
+#
+# [ ] MAYBE DO IT LIKE THIS:
+#
 # %db = ( #keys are OTOMRO numbers
 #  
 #  "22474" = {
@@ -321,6 +324,9 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
   #
   
   $energy_input = energy_converter( substr($line, 0, 64,""));
+  $num_inputs   = eval "0x" .       substr($line, 0, 64,"") ;
+
+  # [ ] Parse out the input otoms
 
   #
   # Get the chemist and OTOMRO (OTOM Reaction Outputs) number
@@ -330,7 +336,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
     $chemist = "0x$2";
   }
 
-  print "initiateReaction OTOMRO $otomro CHEMIST $chemist INPUT NRG $energy_input\n";
+  print "initiateReaction OTOMRO $otomro CHEMIST $chemist INPUT NRG $energy_input NUM INPUTS: $num_inputs\n";
 
 }elsif ($line =~ /^0x0000000000000000000000000000000000000000000000000000000000000020/){
 
