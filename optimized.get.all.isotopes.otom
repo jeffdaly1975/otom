@@ -10,9 +10,11 @@
 |  7  4 Af | mineable
 |  8  4 Af | mineable
 |  9  4 Af | mineable
+| 10  4 Af | 19  8 Dx +             810 =>  9  4 Af + 10  4 Af PREREQUISITE 41 18 Fj +            3150 => 19  8 Dx + 22 10  M PREREQUISITE  9  4 Af + 32 14 Zq + 1200 => 41 18 Fj
 |  9  5 Xl | mineable
 | 10  5 Xl | mineable
 | 11  5 Xl | mineable
+| 12  5 Xl | 23 10  M +            1240 => 12  5 Xl + 11  5 Xl
 | 10  6 Pq | mineable
 | 11  6 Pq | 21 11 Fw +            1300 => 10  5 Xl + 11  6 Pq PREREQUISITE  6  3 Cq + 15  8 Dx +  700 => 21 11 Fw
 | 12  6 Pq | mineable
@@ -317,7 +319,7 @@
 | 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua            PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx
 
 SUMMARY:
-You will need 746461 NRG and the following mineable otoms:
+You will need 752051 NRG and the following mineable otoms:
 23x  1  1 Ju
  9x  2  1 Ju
 10x  3  1 Ju
@@ -332,7 +334,7 @@ You will need 746461 NRG and the following mineable otoms:
  8x  9  5 Xl
  3x 10  5 Xl
 10x 10  6 Pq
- 7x 11  5 Xl
+ 6x 11  5 Xl
  2x 12  6 Pq
  2x 13  6 Pq
 17x 13  7 Zz
@@ -346,8 +348,8 @@ You will need 746461 NRG and the following mineable otoms:
 15x 18  9 Pm
  6x 19  9 Pm
 18x 20 10  M
-12x 22 10  M
-12x 23 10  M
+13x 22 10  M
+13x 23 10  M
  2x 23 11 Fw
 15x 24 12 Pt
 17x 25 11 Fw
@@ -357,7 +359,7 @@ You will need 746461 NRG and the following mineable otoms:
 26x 26 13  S
 28x 30 15 Xc
 21x 31 15 Xc
-13x 32 14 Zq
+14x 32 14 Zq
  3x 32 15 Xc
 21x 34 15 Xc
 13x 34 16 Gy

@@ -283,6 +283,25 @@ atom 11  5 Xl | Decay type	stable
 atom 11  5 Xl | Filled in Outer Shell	0-2-0-0-0-0-0-0
 atom 11  5 Xl | Empty in Outer Shell	0-0-2-0-0-0-0-0
 
+atom 12  5 Xl | Lab sheet
+atom 12  5 Xl | Xl otom
+atom 12  5 Xl | Token ID 42975968090654801479094856830333222070692709861426436842898009327952347463255
+atom 12  5 Xl | Name	Xl
+atom 12  5 Xl | Discovered by	0x2a4A...1aAc
+atom 12  5 Xl | Current Supply	1
+atom 12  5 Xl | Series	metal
+atom 12  5 Xl | Protons	5
+atom 12  5 Xl | Neutrons	7
+atom 12  5 Xl | Stability	0.313
+atom 12  5 Xl | Density	15.723 g/cm³
+atom 12  5 Xl | Radius	0.914 pm
+atom 12  5 Xl | Electronegativity	0.333
+atom 12  5 Xl | Mass	12.000 amu
+atom 12  5 Xl | Metallic	Yes
+atom 12  5 Xl | Decay type	beta-
+atom 12  5 Xl | Filled in Outer Shell	0-2-0-0-0-0-0-0
+atom 12  5 Xl | Empty in Outer Shell	0-0-2-0-0-0-0-0
+
 atom 10  6 Pq | Lab sheet
 atom 10  6 Pq | Pq otom
 atom 10  6 Pq | Token ID 15891305611888131437824645924890402674383914107624515195326990351601291929871

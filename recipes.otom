@@ -23,11 +23,13 @@
 |* 8  4 Af | mineable
 |  8  4 Af | 14  7 Zz +               0 =>  6  3 Cq +  8  4 Af
 |* 9  4 Af | mineable
+|*10  4 Af | 19  8 Dx +             810 =>  9  4 Af + 10  4 Af
 |* 9  5 Xl | mineable
 |*10  5 Xl | mineable 
 | 10  5 Xl | 10  6 Pq +               0 => 10  5 Xl
 |*11  5 Xl | mineable
 | 11  5 Xl | 11  6 Pq +               0 => 11  5 Xl
+|*12  5 Xl | 23 10  M +            1240 => 12  5 Xl + 11  5 Xl
 |*10  6 Pq | mineable
 | 11  6 Pq | 21 11 Fw +            1300 => 10  5 Xl + 11  6 Pq
 |*12  6 Pq | mineable
@@ -76,6 +78,7 @@
 |*22 10  M | mineable
 | 22 10  M | 41 18 Fj +            3000 => 19  8 Dx + 22 10  M
 |*23 10  M | mineable
+| 23 10  M | 50 22  A +            5000 => 23 10  M + 27 12 Pt
 |*21 11 Fw |  6  3 Cq + 15  8 Dx +  700 => 21 11 Fw
 | 21 11 Fw |  1  1 Ju + 20 10  M +  850 => 21 11 Fw
 | 22 11 Fw |  2  1 Ju + 20 10  M +  950 => 22 11 Fw
