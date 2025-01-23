@@ -859,8 +859,8 @@ if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
    $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"} ,
    $db{$otomro}{"type"}       ,
    $db{$otomro}{"chemist"}    ,
-   $db{$otomro}{"analyse_tx"} ,
-   $db{$otomro}{"initiate_tx"};
+   $db{$otomro}{"initiate_tx"},
+   $db{$otomro}{"analyse_tx"} ;
 }
 
  print STDERR "$otomro\n";

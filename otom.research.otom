@@ -1,3 +1,80 @@
+
+2025-01-23 Jan.Thu 13:33:40 [ ] Next try finding Dx-14 and Xl-12 by
+
+|OTOMRO 19503 | Zq-26 +     1 => S-26              +    0.95 | used      0.05 
+|OTOMRO 20392 | Zq-26 +  5000 => DxPq(Dx-14>Pq-12) + 3367.84 | used   1632.16 
+|OTOMRO 19447 | Zq-26 + 10000 => DxPq(Dx-14>Pq-12) + 8117.84 | used   1882.16 
+
+[ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+[ ] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
+[ ] 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
+[ ] try Zq-26 + 1610 => ?
+
+|OTOMRO 15237 | M-23  +     0 => Fw-23            +     0.00 | used      0.00 
+|OTOMRO  4460 | M-23  +  1200 => Fw-23            +  1140.00 | used     60.00 
+|OTOMRO 13525 | M-23  +  5000 => Xl₂(Xl-12>Xl-11) +  3560.80 | used   1439.20 
+|OTOMRO 20013 | M-23  + 50000 => Xl₂(Xl-12>Xl-11) + 46310.80 | used   3689.20 
+
+[ ] try M-23 + 1420 => ?
+
+
+
+
+
+
+2025-01-23 Jan.Thu 13:07:29 NEW DISCOVERY! 10  4 Af aka Af-10
+
+[ ] 10  4 Af
+  [c] add to otoms.complete.list.otom
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [ ] add to syntax/otom.vim
+  [ ] add to otom_reactions.pl
+  [ ] add to isotopes image from Kjetil with unknown meaning.txt
+  [ ] add to otoms.decay.otom
+  [ ] add to otoms.otom
+  [ ] add to otoms.columns.otom
+  [ ] add reaction to otom.reactions.otom 
+  [ ] add to recipes.otom
+  [ ] add otoms.shapescan.data.otom
+      [ ] put these vaules in ???
+          [ ] ==>SHELL TABLE 1
+          [ ] ==>SHELL TABLE 2
+  [ ] check off otoms.unfoundpossibilites.otom
+  [ ] make it myself
+  [ ] add to file otoms.decay.with.metadata.otom
+  [ ] add to file optimized.get.all.isotopes.otom
+
+2025-01-22 Jan.Wed 23:53:30 THATS interesting. Looking through all reactions done so far.
+I wanted to see if any single input otoms produced things I hadn't seen yet or recorded in my otoms.decay.otom file.
+I have columns for 0 input energy, 5000, 10000 and 20000
+However those bands really apply differently as a spectrum of energy ranges as you go from Ju to Ua
+So I may need to make a smaller band range for the low end. 
+Because I only saw Cq-7 as no reaction with 0 energy, and with 5000 it makes JuW.
+But someone found an in between place where it decayed into W-4 + Ju-3!
+
+|    OTOMRO| inputs      =>  outputs                      |   used   | reaction           | chemist                                    | initiateReaction tx                                                | analyseReactions tx                                                |
+|    16002 | Cq-7  + 200 =>  + Cq-7          +     190.00 |    10.00 | none               | 0xc103603abf30331b23dc1a2159f24c49e3ca7fb5 | 0x051cd48684cbee143332295e1c75491f6514bc8a493a8b1ef3e1f360ff065477 | 0x6c167b23a720b72ba692deacbf949b957dc15704e0d271b0b5c7eadfe1bb4122 |
+|     7266 | Cq-7  + 240 =>  + W-4 + Ju-3    +       3.72 |   236.28 | nuclear            | 0xae342bc1ddace51f674151633f9fb3f52440e961 | 0x0a6dda5fac5a84fb19ed5032997997efcc81f978be29d48783a1e451d76f5362 | 0x6d87fb1016d563d83627f298e92805f0d84ec510302a2daa525c4de6028f9fdc |
+|     7295 | Cq-7  + 260 =>  + JuW(Ju-3>W-4) +      18.52 |   241.48 | chemical, nuclear  | 0xae342bc1ddace51f674151633f9fb3f52440e961 | 0x99057b333173209edb15a5fabcc5d4da37ced517e8988cdd7efc51a75793f4a0 | 0x2ab1f53868fe803bcf28d6137e0d8e0ce13458641ae70e7ae0324b9e92677eef |
+
+[ ] Try small inputs to decay the small mass otoms
+
+okay I tried that with Dx-15, where I did a bit lower than what I'd seen in the logs and it DID produce 2 otoms instead of a molecule!
+ 15  8 Dx⁺ + 600 =>  7  4 Afª +  8  4 Af∙ + 5.73 
+[ ] Figure out how to put this in my decay table. Add a row for 500-1000? add in how much energy each is using?
+
+[c] try it with 19  8 Dx since that could discover Af-10. It uses 1280 NRG to make Af₂(Af-10,Af-9>)
+   [c]  9  4 Af + 32 14 Zq + 1200 => 41 18 Fj
+   [c] 41 18 Fj +            3000 => 19  8 Dx + 22 10  M
+   [x] 19  8 Dx +             900 => ?  TOO MUCH ENERGY
+   [x] 19  8 Dx +             750 => ?  TOO LITTLE
+   [c] 19  8 Dx +             810 =>  9  4 Af + 10  4 Af + 6.42 <---- SUCCESS!!!
+
+
+
+
 2025-01-22 Jan.Wed 22:32:00 I've got my script parseReactorLog.pl working pretty good now. It takes a file of CSV Reactor contract logs and produces reaction listings
 
 2025-01-22 Jan.Wed 12:12:04 Here's the Reactor LOG data that shows Af-10 and Af-9. We can see that the stability is 0.289899154616624077 which is very low.
@@ -231,7 +308,7 @@ appear to include the details of both the Af isotopes Af-10 & Af-9, even though 
 
 
 2025-01-20 Jan.Mon 12:06:52 Added a otomsortorder dictionary object to syntax/otom.vim so I can programmatically sort the otoms in order by mass. I used a complex vim macro that takes the otoms in columns 1 to 42, copies to a new window above it that should already be there, pastes, adds the index looked up in otomsortorder dictionary, sorts, puts in register @l, pads it, and puts it back on the line it came from.
-" @q=0vf|��ahyp:%s/ +/&/g:%s/+\s\+/+ /g:%s/\s*$//:%s/\([a-z]\+-\d\+\)/\=otomsortorder[submatch(1)] ." ". submatch(1)/:sort n:%s/+ \d\+/+/:g/^$/d0ggVGJ0"lD:let @l=@l . repeat(" ",41 - len(@l)) 0ct|l0j
+" @q=0vf|??ahyp:%s/ +/&/g:%s/+\s\+/+ /g:%s/\s*$//:%s/\([a-z]\+-\d\+\)/\=otomsortorder[submatch(1)] ." ". submatch(1)/:sort n:%s/+ \d\+/+/:g/^$/d0ggVGJ0"lD:let @l=@l . repeat(" ",41 - len(@l)) 0ct|l0j
 
 The output otoms were in columns 55 to 108 so I did this, but skipped the lines with molecules because those aren't in my dictionary and would be nearly impossible to handle
 " @q=55|vt|yp:%s/ +/&/g:%s/+\s\+/+ /g:%s/\s*$//:%s/\([a-z]\+-\d\+\)/\=otomsortorder[submatch(1)] ." ". submatch(1)/:sort n:%s/+ \d\+/+/:g/^$/d0ggVGJ0"lD:let @l=@l . repeat(" ",53 - len(@l)) 55|ct|l0j

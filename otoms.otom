@@ -207,6 +207,25 @@ atom  9  4 Af | Decay type	stable
 atom  9  4 Af | Filled in Outer Shell	0-1-0-0-0-0-0-0
 atom  9  4 Af | Empty in Outer Shell	0-1-2-0-0-0-0-0
 
+atom 10  4 Af | Lab sheet
+atom 10  4 Af | Af otom
+atom 10  4 Af | Token ID 73220370080612659111184699381310873683995296685267435305119272187313674432235
+atom 10  4 Af | Name	Af
+atom 10  4 Af | Discovered by	jdblacklung.eth
+atom 10  4 Af | Current Supply	1
+atom 10  4 Af | Series	alkaline
+atom 10  4 Af | Protons	4
+atom 10  4 Af | Neutrons	6
+atom 10  4 Af | Stability	0.290
+atom 10  4 Af | Density	9.190 g/cm³
+atom 10  4 Af | Radius	1.029 pm
+atom 10  4 Af | Electronegativity	0.125
+atom 10  4 Af | Mass	10.000 amu
+atom 10  4 Af | Metallic	Yes
+atom 10  4 Af | Decay type	beta-
+atom 10  4 Af | Filled in Outer Shell	0-1-0-0-0-0-0-0
+atom 10  4 Af | Empty in Outer Shell	0-1-2-0-0-0-0-0
+
 atom  9  5 Xl | Lab sheet
 atom  9  5 Xl | Xl otom
 atom  9  5 Xl | Token ID 85098605521195741666920212564323157159964481321981403766635982087249819388169

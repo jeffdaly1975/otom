@@ -47,6 +47,8 @@
 | 16  7 Zz | 34 15 Xc +            2500 => 16  7 Zz + 18  8 Dx
 | 16  7 Zz | 30 13  S +            1950 => 14  6 Pq + 16  7 Zz
 |*15  8 Dx | mineable
+| 15  8 Dx | 34 18 Fj +            2270 => 15  8 Dx + 19 10  M
+| 15  8 Dx | 28 15 Xc +            1835 => 13  7 Zz + 15  8 Dx
 |*16  8 Dx | mineable
 | 16  8 Dx |  7  4 Af +  9  5 Xl +  500 => 16  8 Dx
 |*17  8 Dx | mineable
