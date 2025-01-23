@@ -1,3 +1,5 @@
+2025-01-22 Jan.Wed 22:32:00 I've got my script parseReactorLog.pl working pretty good now. It takes a file of CSV Reactor contract logs and produces reaction listings
+
 2025-01-22 Jan.Wed 12:12:04 Here's the Reactor LOG data that shows Af-10 and Af-9. We can see that the stability is 0.289899154616624077 which is very low.
 [ ] There are also some fields I cannot decipher. Most the fields match up with the data you see for each otom on the Shapescan  token page
      [ ] For Af-9,
