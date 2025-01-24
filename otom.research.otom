@@ -1,3 +1,46 @@
+2025-01-24 Jan.Fri 00:30:22 What if I took the known Xl-11 recipes and replaced it with Xl-12? Would I just add the proton counts or would the beta- decay add a proton?
+
+               add 1
+  3  1 Ju∙ + 12  5 Xl⁻ +  650~ => 15  7 Zz            or +1p  => 15  8 Dx
+ 10  5 Xlª + 12  5 Xl⁻ +  700~ => 22 10  M            or +1p  => 22 11 Fw
+ 12  5 Xl⁻ + 17  8 Dx∙ + 1250~ => 29 13  S            or +1p  => 29 14 Zq
+ 12  5 Xl⁻ + 17  9 Pm⁺ +  950~ => 29 14 Zq            or +1p  => 29 15 Xc
+ 12  5 Xl⁻ + 19  9 Pm∙ + 1450~ => 31 14 Zq            or +1p  => 31 15 Xc
+ 12  5 Xl⁻ + 34 15 Xc⁻ + 1400~ => 46 20  C [ ]try     or +1p  => 46 21  E
+ 12  5 Xl⁻ + 37 17  D⁻ + 1500~ => 49 22  A            or +1p  => 49 23 Aw
+ 12  5 Xl⁻ + 38 17  D⁻ + 1520~ => 50 22  A            or +1p  => 50 23 Aw
+ 12  5 Xl⁻ + 37 18 Fjª + 1500~ => 49 23 Aw            or +1p  => 49 24 Oc
+
+possibilites:
+[ ] 12  5 Xl⁻ + 34 15 Xc⁻ + 1400~ => 46 20  C [ ]try
+
+What if I took the known Af-9 recipes and replaced it with Af-10? Would I just add the proton counts or would the beta- decay add a proton?
+               add 1
+ 10  4 Af⁻ +              600~ =>  5  2  W +  5  2  W or +1p =>  5  3 Cq +  5  2  W
+ 10  4 Af⁻ +              600~ =>  5  2  W +  5  2  W or +1p =>  5  3 Cq +  5  2  W
+  5  2  W∙ + 10  4 Af⁻ +  650~ => 15  7 Zz            or +1p => 15  8 Dx
+ 10  4 Af⁻ + 10  6 Pq⁺ +  500~ => 20 10  M            or +1p => 20 11 Fw [ ] try
+ 10  4 Af⁻ + 15  6 Pq⁻ +  750~ => 25 11 Fw            or +1p => 25 12 Pt
+ 10  4 Af⁻ + 18  9 Pm⁺ +  900~ => 28 13  S            or +1p => 28 14 Zq
+ 10  4 Af⁻ + 32 14 Zq⁻ + 1200~ => 42 18 Fj [ ] try    or +1p => 42 19  O     
+ 10  4 Af⁻ + 34 15 Xc⁻ + 1300~ => 44 19  O [ ] try    or +1p => 44 20  C     
+ 10  4 Af⁻ + 37 17  D⁻ + 1350~ => 47 21  E            or +1p => 47 22  A
+ 10  4 Af⁻ + 37 18 Fjª + 1400~ => 47 22  A            or +1p => 47 23 Aw
+ 10  4 Af⁻ + 38 18 Fjª + 1600~ => 48 22  A            or +1p => 48 23 Aw
+ 10  4 Af⁻ + 50 23 Aw∙ + 1620~ => 60 27 Ic            or +1p => 60 28 Ic [ ] try
+
+
+possibilities:
+[ ] 10  4 Af⁻ + 32 14 Zq⁻ + 1200~ => 42 18 Fj
+[ ] 10  4 Af⁻ + 34 15 Xc⁻ + 1300~ => 44 19  O
+[ ] 10  4 Af⁻ + 10  6 Pq⁺ +  500~ => 20 10  M or +1p => 20 11 Fw
+[ ] 10  4 Af⁻ + 50 23 Aw∙ + 1620~ => 60 27 Ic or +1p => 60 28 Ic
+
+[ ] what about 10  4 Af⁻ + 52 23 Aw⁻ + 3000 => 62 27 Aw or 62 28 Yp
+
+
+2025-01-23 Jan.Thu 23:50:49 [ ] make a small dictionary for like protonsdb[30]="Hb" and protonsdb["Sq"]=41
+
 2025-01-23 Jan.Thu 22:43:00 Finished going through recipes.otom and marking the most efficient recipes with asterisks
 
 2025-01-23 Jan.Thu 16:22:00 [c] need to fix syntax/otom.vim since the fileencoding got messed up at some point and I had to do ":set fileencoding=utf-8" to fix it. The shelldict characters I used are messed up
@@ -25,10 +68,10 @@ atom 12  5 Xl | Filled in Outer Shell	0-2-0-0-0-0-0-0
 atom 12  5 Xl | Empty in Outer Shell	0-0-2-0-0-0-0-0
 
 
-[ ] 12  5 Xl
+[c] 12  5 Xl
   [c] add to otoms.complete.list.otom
-  [ ] save reservoir image to mac folder
-  [ ] bookmark to Firefox
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
   [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
   [c] add to syntax/otom.vim
   [c] add to otom_reactions.pl
@@ -54,14 +97,14 @@ atom 12  5 Xl | Empty in Outer Shell	0-0-2-0-0-0-0-0
 |OTOMRO 20392 | Zq-26 +  5000 => DxPq(Dx-14>Pq-12) + 3367.84 | used   1632.16 
 |OTOMRO 19447 | Zq-26 + 10000 => DxPq(Dx-14>Pq-12) + 8117.84 | used   1882.16 
 
-[r] 17  9 Pm + 25 13  S + 1200 => 42 22  A
-[r] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
-[r] 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
+[*] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+[ ] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
+[ ] 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
 
 [F] try Zq-26 + 1600 => DxPq(Dx-14>Pq-12)            <--TOO MUCH ENERGY (used 1462.16)
 [F] try Zq-26 + 1350 => 26 13  S                     <--NOT ENOUGH
 [F] try Zq-26 + 1420 => 26 13  S                     <--NOT ENOUGH
-[ ] try Zq-26 + 1450 => ?
+[*] try Zq-26 + 1450 => ?
 
 |OTOMRO 15237 | M-23  +     0 => Fw-23            +     0.00 | used      0.00 
 |OTOMRO  4460 | M-23  +  1200 => Fw-23            +  1140.00 | used     60.00 
@@ -75,7 +118,7 @@ atom 12  5 Xl | Empty in Outer Shell	0-0-2-0-0-0-0-0
 
 
 
-2025-01-23 Jan.Thu 13:07:29 NEW DISCOVERY! 10  4 Af aka Af-10
+2025-01-23 Jan.Thu 13:07:29 NEW DISCOVERY! 10  4 Af aka Af-10 so 317 isotopes
 
 atom 10  4 Af | Lab sheet
 atom 10  4 Af | Af otom
@@ -97,7 +140,7 @@ atom 10  4 Af | Filled in Outer Shell	0-1-0-0-0-0-0-0
 atom 10  4 Af | Empty in Outer Shell	0-1-2-0-0-0-0-0
 
 
-[ ] 10  4 Af
+[c] 10  4 Af
   [c] add to otoms.complete.list.otom
   [c] save reservoir image to mac folder
   [c] bookmark to Firefox
