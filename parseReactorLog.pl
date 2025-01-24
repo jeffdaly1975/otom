@@ -332,7 +332,7 @@ my %hexdict=();
 my %sortorder=();
 
 foreach my $item (@otom_isotopes){
-  my ($name,$longname,$tokedid) = @$item;
+  my ($name,$longname,$tokenid) = @$item;
   my $s=sprintf("%064s", substr($tokenid->as_hex(),2));
   $hexdict{$s}=$name;
   $sortorder{$name}=$c++;
