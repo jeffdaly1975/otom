@@ -1,4 +1,6 @@
-2025-01-23 Jan.Thu 16:22:00 [ ] need to fix syntax/otom.vim since the fileencoding got messed up at some point and I had to do ":set fileencoding=utf-8" to fix it. The shelldict characters I used are messed up
+2025-01-23 Jan.Thu 22:43:00 Finished going through recipes.otom and marking the most efficient recipes with asterisks
+
+2025-01-23 Jan.Thu 16:22:00 [c] need to fix syntax/otom.vim since the fileencoding got messed up at some point and I had to do ":set fileencoding=utf-8" to fix it. The shelldict characters I used are messed up
 [ ] Should put this also in the convert_token_id_to_hex.pl script that generates the vim syntax entries
 
 2025-01-23 Jan.Thu 15:41:00 NEW DISCOVERY! 12  5 Xl aka Xl-12 so now 318 isotopes
@@ -52,10 +54,14 @@ atom 12  5 Xl | Empty in Outer Shell	0-0-2-0-0-0-0-0
 |OTOMRO 20392 | Zq-26 +  5000 => DxPq(Dx-14>Pq-12) + 3367.84 | used   1632.16 
 |OTOMRO 19447 | Zq-26 + 10000 => DxPq(Dx-14>Pq-12) + 8117.84 | used   1882.16 
 
-[ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
-[ ] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
-[ ] 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
-[ ] try Zq-26 + 1610 => ?
+[r] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+[r] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
+[r] 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
+
+[F] try Zq-26 + 1600 => DxPq(Dx-14>Pq-12)            <--TOO MUCH ENERGY (used 1462.16)
+[F] try Zq-26 + 1350 => 26 13  S                     <--NOT ENOUGH
+[F] try Zq-26 + 1420 => 26 13  S                     <--NOT ENOUGH
+[ ] try Zq-26 + 1450 => ?
 
 |OTOMRO 15237 | M-23  +     0 => Fw-23            +     0.00 | used      0.00 
 |OTOMRO  4460 | M-23  +  1200 => Fw-23            +  1140.00 | used     60.00 
@@ -127,7 +133,7 @@ But someone found an in between place where it decayed into W-4 + Ju-3!
 |     7266 | Cq-7  + 240 =>  + W-4 + Ju-3    +       3.72 |   236.28 | nuclear            | 0xae342bc1ddace51f674151633f9fb3f52440e961 | 0x0a6dda5fac5a84fb19ed5032997997efcc81f978be29d48783a1e451d76f5362 | 0x6d87fb1016d563d83627f298e92805f0d84ec510302a2daa525c4de6028f9fdc |
 |     7295 | Cq-7  + 260 =>  + JuW(Ju-3>W-4) +      18.52 |   241.48 | chemical, nuclear  | 0xae342bc1ddace51f674151633f9fb3f52440e961 | 0x99057b333173209edb15a5fabcc5d4da37ced517e8988cdd7efc51a75793f4a0 | 0x2ab1f53868fe803bcf28d6137e0d8e0ce13458641ae70e7ae0324b9e92677eef |
 
-[ ] Try small inputs to decay the small mass otoms
+[c] Try small inputs to decay the small mass otoms
 
 okay I tried that with Dx-15, where I did a bit lower than what I'd seen in the logs and it DID produce 2 otoms instead of a molecule!
  15  8 Dx⁺ + 600 =>  7  4 Afª +  8  4 Af∙ + 5.73 
@@ -370,7 +376,7 @@ in a nuclear & metallic reaction, the LOG entries from shapescan
 
 appear to include the details of both the Af isotopes Af-10 & Af-9, even though Af-10 is undiscovered as of yet.
 
-[ ] look closer at those details and see if we learn anything
+[c] look closer at those details and see if we learn anything
 
 
 
@@ -405,7 +411,7 @@ Similar situation with OTOMRO 20392:
  OTOMRO 21542 outputs Af₂(Af-10,Af-9) where Af-10 hasn't been discovered yet
  OTOMRO 20392 outputs DxPq(Dx-14,Pq-12) where Dx-14 hasn't been discovered yet
 
-[ ] Investigate how we could get those to come out without auto-reacting
+[c] Investigate how we could get those to come out without auto-reacting
 
 2025-01-19 Jan.Sun 19:22:39 [ ] Realized you can possibly react more than 5 otoms if you do it straight from the contract on shapescan so I should try that.
 
@@ -2768,7 +2774,7 @@ u+2b07 ⬇
   [c] add to file optimized.get.all.isotopes.otom
 
 2025-01-15 Jan.Wed 22:16:00 Decided to add asterisks "*" next to the least difficult and least expensive reactions for isotopes in recipes.otom. As I go, I compare it to my optimized.get.all.isotopes.otom file entries and correct that if I find a better recipe.
-[ ] finish that task. left off going through recipes.otom when I got up to 53 27 Ic
+[c] finish that task. left off going through recipes.otom when I got up to 53 27 Ic
 
 2025-01-15 Jan.Wed 16:20:00 how to replace Token IDs with isotope names but if it doesn't exist, leave it alone.
  :%s/\(\<\d\{50,}\>\)/\=printf("%s", get(otomdict,submatch(1), submatch(1)))
@@ -3732,6 +3738,7 @@ decay of 16  7 Zz
 |39 18 Fj| alpha  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |40 18 Fj| stable | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |41 18 Fj| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
+|36 19  O| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |37 19  O| alpha  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |38 19  O| alpha  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |39 19  O| alpha  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
@@ -3938,6 +3945,7 @@ decay of 16  7 Zz
 |80 39  H| stable | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢
 |81 39  H| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢
 |82 39  H| stable | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢
+|78 40  U| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢
 |79 40  U| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢
 |80 40  U| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢
 |81 40  U| stable | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢
@@ -3951,7 +3959,6 @@ decay of 16  7 Zz
 |84 41 Sq| stable | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢
 |83 42 Ua| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢
 |84 42 Ua| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢
-|85 42 Ua| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢
 |85 42 Ua| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢
 
 
