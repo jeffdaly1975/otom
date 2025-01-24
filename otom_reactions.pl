@@ -14,6 +14,7 @@ my %already_listed=();
 my %otoms=();
 my $combo_is_existing_isotope=0;
 my $unique_combinations=0;
+my %otom_protons_to_name=();
 
 foreach my $line (<DATA>){
   chomp($line);
@@ -31,6 +32,7 @@ foreach my $line (<DATA>){
     $otoms{$string}{name}    = $name;
 
     $lookup_name{ sprintf("%3d %3d",$mass,$protons) } = sprintf("%2s",$name);
+    $otom_protons_to_name{$protons}=                    sprintf("%2s",$name);
 
     push @sort_order, $string;
 
