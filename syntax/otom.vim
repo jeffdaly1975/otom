@@ -331,6 +331,7 @@ syntax match rarity_rare      /\<75\s\+39\s\+H\>/   | syntax match rarity_rare  
 syntax match rarity_rare      /\<69\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-69\>/
 syntax match rarity_rare      /\<12\s\+5\s\+Xl\>/   | syntax match rarity_rare      /\<Xl-12\>/
 syntax match rarity_rare      /\<10\s\+4\s\+Af\>/   | syntax match rarity_rare      /\<Af-10\>/
+syntax match rarity_rare      /\<14\s\+8\s\+Dx\>/   | syntax match rarity_rare      /\<Dx-14\>/
 
 hi rarity_common     guibg=green        ctermbg=green          guifg=black   ctermfg=black
 hi rarity_uncommon   guibg=cyan         ctermbg=cyan           guifg=black   ctermfg=black
@@ -512,6 +513,7 @@ syntax match Decay_type_beta_plus  /\<61\s\+32\s\+Ny\>/ | syntax match Decay_typ
 syntax match Decay_type_beta_plus  /\<73\s\+38\s\+Bt\>/ | syntax match Decay_type_beta_plus  /\<Bt-73\>/
 syntax match Decay_type_beta_plus  /\<75\s\+39\s\+H\>/  | syntax match Decay_type_beta_plus   /\<H-75\>/
 syntax match Decay_type_beta_plus  /\<69\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_plus  /\<Xy-69\>/
+syntax match Decay_type_beta_plus  /\<14\s\+8\s\+Dx\>/  | syntax match Decay_type_beta_plus  /\<Dx-14\>/
 
 
 " Decay type beta-
@@ -697,7 +699,7 @@ endif
 
 
 " run perl script convert_token_id_to_hex.pl for this data:
-
+"
 let otomnames     = {}
 let hexdict       = {}
 let hexdictabbr   = {}
@@ -705,6 +707,10 @@ let otomdict      = {}
 let otomdictabbr  = {}
 let otom2tokenid  = {}
 let otomsortorder = {}
+
+
+" [[[ INSERT output of convert_token_id_to_hex.pl here
+"
 
 let otomnames[" 1  1 Ju"]="Ju-1"
 let otomnames[" 2  1 Ju"]="Ju-2"
@@ -732,6 +738,7 @@ let otomnames["13  7 Zz"]="Zz-13"
 let otomnames["14  7 Zz"]="Zz-14"
 let otomnames["15  7 Zz"]="Zz-15"
 let otomnames["16  7 Zz"]="Zz-16"
+let otomnames["14  8 Dx"]="Dx-14"
 let otomnames["15  8 Dx"]="Dx-15"
 let otomnames["16  8 Dx"]="Dx-16"
 let otomnames["17  8 Dx"]="Dx-17"
@@ -1051,6 +1058,7 @@ let otomnames["Zz-13"]="13  7 Zz"
 let otomnames["Zz-14"]="14  7 Zz"
 let otomnames["Zz-15"]="15  7 Zz"
 let otomnames["Zz-16"]="16  7 Zz"
+let otomnames["Dx-14"]="14  8 Dx"
 let otomnames["Dx-15"]="15  8 Dx"
 let otomnames["Dx-16"]="16  8 Dx"
 let otomnames["Dx-17"]="17  8 Dx"
@@ -1370,6 +1378,7 @@ let hexdict["13  7 Zz"]="5e1c4ee76a730914429e505abe24c13a05128a38f04cfb2405e15da
 let hexdict["14  7 Zz"]="e33a89319865a78fc2896e2a3f929818120a0d1d0818f6b58419dee2a25640d3"
 let hexdict["15  7 Zz"]="249a5cb5e347cb3e3df2aac73a9f18d2e9abd281930c0681cf5b9c5815f1d580"
 let hexdict["16  7 Zz"]="fcb3ed5f010a07550f4f5cc023d91b029bb71ceb1810b82c6d4bf020fd41cb57"
+let hexdict["14  8 Dx"]="1118f9714dceefcf2236008f9af1f4e2b0071ffc6f1a81d6faf4d92bd4bffd16"
 let hexdict["15  8 Dx"]="e9a46076e6c9fcd14d8abb516a59b7684ec0b52beeaf044da5c260ed6112a602"
 let hexdict["16  8 Dx"]="24a1f66082da8e71db186f46af69261d31ffae18f447b5238991488155705d93"
 let hexdict["17  8 Dx"]="e793d074e22a8849a1811d01c565343d7f2181c580a6a725d53342e3668a6c7c"
@@ -1689,6 +1698,7 @@ let hexdict["Zz-13"]="5e1c4ee76a730914429e505abe24c13a05128a38f04cfb2405e15da4d8
 let hexdict["Zz-14"]="e33a89319865a78fc2896e2a3f929818120a0d1d0818f6b58419dee2a25640d3"
 let hexdict["Zz-15"]="249a5cb5e347cb3e3df2aac73a9f18d2e9abd281930c0681cf5b9c5815f1d580"
 let hexdict["Zz-16"]="fcb3ed5f010a07550f4f5cc023d91b029bb71ceb1810b82c6d4bf020fd41cb57"
+let hexdict["Dx-14"]="1118f9714dceefcf2236008f9af1f4e2b0071ffc6f1a81d6faf4d92bd4bffd16"
 let hexdict["Dx-15"]="e9a46076e6c9fcd14d8abb516a59b7684ec0b52beeaf044da5c260ed6112a602"
 let hexdict["Dx-16"]="24a1f66082da8e71db186f46af69261d31ffae18f447b5238991488155705d93"
 let hexdict["Dx-17"]="e793d074e22a8849a1811d01c565343d7f2181c580a6a725d53342e3668a6c7c"
@@ -2008,6 +2018,7 @@ let hexdict["5e1c4ee76a730914429e505abe24c13a05128a38f04cfb2405e15da4d81e8e9a"]=
 let hexdict["e33a89319865a78fc2896e2a3f929818120a0d1d0818f6b58419dee2a25640d3"]="14  7 Zz"
 let hexdict["249a5cb5e347cb3e3df2aac73a9f18d2e9abd281930c0681cf5b9c5815f1d580"]="15  7 Zz"
 let hexdict["fcb3ed5f010a07550f4f5cc023d91b029bb71ceb1810b82c6d4bf020fd41cb57"]="16  7 Zz"
+let hexdict["1118f9714dceefcf2236008f9af1f4e2b0071ffc6f1a81d6faf4d92bd4bffd16"]="14  8 Dx"
 let hexdict["e9a46076e6c9fcd14d8abb516a59b7684ec0b52beeaf044da5c260ed6112a602"]="15  8 Dx"
 let hexdict["24a1f66082da8e71db186f46af69261d31ffae18f447b5238991488155705d93"]="16  8 Dx"
 let hexdict["e793d074e22a8849a1811d01c565343d7f2181c580a6a725d53342e3668a6c7c"]="17  8 Dx"
@@ -2327,6 +2338,7 @@ let hexdictabbr["5e1c4ee76a730914429e505abe24c13a05128a38f04cfb2405e15da4d81e8e9
 let hexdictabbr["e33a89319865a78fc2896e2a3f929818120a0d1d0818f6b58419dee2a25640d3"]="Zz-14"
 let hexdictabbr["249a5cb5e347cb3e3df2aac73a9f18d2e9abd281930c0681cf5b9c5815f1d580"]="Zz-15"
 let hexdictabbr["fcb3ed5f010a07550f4f5cc023d91b029bb71ceb1810b82c6d4bf020fd41cb57"]="Zz-16"
+let hexdictabbr["1118f9714dceefcf2236008f9af1f4e2b0071ffc6f1a81d6faf4d92bd4bffd16"]="Dx-14"
 let hexdictabbr["e9a46076e6c9fcd14d8abb516a59b7684ec0b52beeaf044da5c260ed6112a602"]="Dx-15"
 let hexdictabbr["24a1f66082da8e71db186f46af69261d31ffae18f447b5238991488155705d93"]="Dx-16"
 let hexdictabbr["e793d074e22a8849a1811d01c565343d7f2181c580a6a725d53342e3668a6c7c"]="Dx-17"
@@ -2646,6 +2658,7 @@ let otomdict["425674240598139908066019741180681341349516397429918087812066685429
 let otomdict["102778440634494800034222665730320253970535620183521519769203972072981002600659"]="14  7 Zz"
 let otomdict["16555996861323137168106927909571448103649780543471618318675210661754630690176"]="15  7 Zz"
 let otomdict["114300741742767021243558719002309405528518935839906020825084145467347846679383"]="16  7 Zz"
+let otomdict["7733444344978709366234310482023645368308101031014937754286400979823516187926"]="14  8 Dx"
 let otomdict["105679322411752642088911561491593062974989116523221324745906132364764445320706"]="15  8 Dx"
 let otomdict["16569425357963607198829135529625190800865258086727020394910476512940975480211"]="16  8 Dx"
 let otomdict["104745433255668978758136946221558159207043762531164878325824366788916131032188"]="17  8 Dx"
@@ -2965,6 +2978,7 @@ let otomdictabbr["42567424059813990806601974118068134134951639742991808781206668
 let otomdictabbr["102778440634494800034222665730320253970535620183521519769203972072981002600659"]="Zz-14"
 let otomdictabbr["16555996861323137168106927909571448103649780543471618318675210661754630690176"]="Zz-15"
 let otomdictabbr["114300741742767021243558719002309405528518935839906020825084145467347846679383"]="Zz-16"
+let otomdictabbr["7733444344978709366234310482023645368308101031014937754286400979823516187926"]="Dx-14"
 let otomdictabbr["105679322411752642088911561491593062974989116523221324745906132364764445320706"]="Dx-15"
 let otomdictabbr["16569425357963607198829135529625190800865258086727020394910476512940975480211"]="Dx-16"
 let otomdictabbr["104745433255668978758136946221558159207043762531164878325824366788916131032188"]="Dx-17"
@@ -3284,6 +3298,7 @@ let otom2tokenid["13  7 Zz"]="42567424059813990806601974118068134134951639742991
 let otom2tokenid["14  7 Zz"]="102778440634494800034222665730320253970535620183521519769203972072981002600659"
 let otom2tokenid["15  7 Zz"]="16555996861323137168106927909571448103649780543471618318675210661754630690176"
 let otom2tokenid["16  7 Zz"]="114300741742767021243558719002309405528518935839906020825084145467347846679383"
+let otom2tokenid["14  8 Dx"]="7733444344978709366234310482023645368308101031014937754286400979823516187926"
 let otom2tokenid["15  8 Dx"]="105679322411752642088911561491593062974989116523221324745906132364764445320706"
 let otom2tokenid["16  8 Dx"]="16569425357963607198829135529625190800865258086727020394910476512940975480211"
 let otom2tokenid["17  8 Dx"]="104745433255668978758136946221558159207043762531164878325824366788916131032188"
@@ -3603,6 +3618,7 @@ let otom2tokenid["Zz-13"]="42567424059813990806601974118068134134951639742991808
 let otom2tokenid["Zz-14"]="102778440634494800034222665730320253970535620183521519769203972072981002600659"
 let otom2tokenid["Zz-15"]="16555996861323137168106927909571448103649780543471618318675210661754630690176"
 let otom2tokenid["Zz-16"]="114300741742767021243558719002309405528518935839906020825084145467347846679383"
+let otom2tokenid["Dx-14"]="7733444344978709366234310482023645368308101031014937754286400979823516187926"
 let otom2tokenid["Dx-15"]="105679322411752642088911561491593062974989116523221324745906132364764445320706"
 let otom2tokenid["Dx-16"]="16569425357963607198829135529625190800865258086727020394910476512940975480211"
 let otom2tokenid["Dx-17"]="104745433255668978758136946221558159207043762531164878325824366788916131032188"
@@ -3896,10 +3912,6 @@ let otom2tokenid["Ua-83"]="43412409028055511434460124461852638289336721563573620
 let otom2tokenid["Ua-84"]="48568274091803211014298808706848271332952455503986323590562598591471370749964"
 let otom2tokenid["Ua-85"]="88691496155904190756307248519900089609929970913887016548455993272124591624476"
 
-" this otomsortorder dictionary can be used to sort the otoms with vim
-" This is a complex vim macro that takes the otoms in columns 1 to 42, copies to a new window above it that should already be there, pastes, adds the index looked up in otomsortorder dictionary, sorts, puts in register @l, pads it, and puts it back on the line it came from.
-" @q=0vt|yp:%s/ +/&/g:%s/+\s\+/+ /g:%s/\s*$//:%s/\([a-z]\+-\d\+\)/\=otomsortorder[submatch(1)] ." ". submatch(1)/:sort n:%s/+ \d\+/+/0ggVGJ0"lD:let @l=" ". @l . repeat(" ",60 - len(@l)) 0ct|l0$/^ + [^()]\++[^()]\+$/zz
-
 let otomsortorder[" 1  1 Ju"]="0"
 let otomsortorder[" 2  1 Ju"]="1"
 let otomsortorder[" 3  1 Ju"]="2"
@@ -3926,298 +3938,299 @@ let otomsortorder["13  7 Zz"]="22"
 let otomsortorder["14  7 Zz"]="23"
 let otomsortorder["15  7 Zz"]="24"
 let otomsortorder["16  7 Zz"]="25"
-let otomsortorder["15  8 Dx"]="26"
-let otomsortorder["16  8 Dx"]="27"
-let otomsortorder["17  8 Dx"]="28"
-let otomsortorder["18  8 Dx"]="29"
-let otomsortorder["19  8 Dx"]="30"
-let otomsortorder["17  9 Pm"]="31"
-let otomsortorder["18  9 Pm"]="32"
-let otomsortorder["19  9 Pm"]="33"
-let otomsortorder["20  9 Pm"]="34"
-let otomsortorder["21  9 Pm"]="35"
-let otomsortorder["19 10  M"]="36"
-let otomsortorder["20 10  M"]="37"
-let otomsortorder["21 10  M"]="38"
-let otomsortorder["22 10  M"]="39"
-let otomsortorder["23 10  M"]="40"
-let otomsortorder["21 11 Fw"]="41"
-let otomsortorder["22 11 Fw"]="42"
-let otomsortorder["23 11 Fw"]="43"
-let otomsortorder["24 11 Fw"]="44"
-let otomsortorder["25 11 Fw"]="45"
-let otomsortorder["26 11 Fw"]="46"
-let otomsortorder["22 12 Pt"]="47"
-let otomsortorder["23 12 Pt"]="48"
-let otomsortorder["24 12 Pt"]="49"
-let otomsortorder["25 12 Pt"]="50"
-let otomsortorder["26 12 Pt"]="51"
-let otomsortorder["27 12 Pt"]="52"
-let otomsortorder["28 12 Pt"]="53"
-let otomsortorder["25 13  S"]="54"
-let otomsortorder["26 13  S"]="55"
-let otomsortorder["27 13  S"]="56"
-let otomsortorder["28 13  S"]="57"
-let otomsortorder["29 13  S"]="58"
-let otomsortorder["30 13  S"]="59"
-let otomsortorder["26 14 Zq"]="60"
-let otomsortorder["27 14 Zq"]="61"
-let otomsortorder["28 14 Zq"]="62"
-let otomsortorder["29 14 Zq"]="63"
-let otomsortorder["30 14 Zq"]="64"
-let otomsortorder["31 14 Zq"]="65"
-let otomsortorder["32 14 Zq"]="66"
-let otomsortorder["28 15 Xc"]="67"
-let otomsortorder["29 15 Xc"]="68"
-let otomsortorder["30 15 Xc"]="69"
-let otomsortorder["31 15 Xc"]="70"
-let otomsortorder["32 15 Xc"]="71"
-let otomsortorder["33 15 Xc"]="72"
-let otomsortorder["34 15 Xc"]="73"
-let otomsortorder["31 16 Gy"]="74"
-let otomsortorder["32 16 Gy"]="75"
-let otomsortorder["33 16 Gy"]="76"
-let otomsortorder["34 16 Gy"]="77"
-let otomsortorder["35 16 Gy"]="78"
-let otomsortorder["36 16 Gy"]="79"
-let otomsortorder["32 17  D"]="80"
-let otomsortorder["33 17  D"]="81"
-let otomsortorder["34 17  D"]="82"
-let otomsortorder["35 17  D"]="83"
-let otomsortorder["36 17  D"]="84"
-let otomsortorder["37 17  D"]="85"
-let otomsortorder["38 17  D"]="86"
-let otomsortorder["39 17  D"]="87"
-let otomsortorder["34 18 Fj"]="88"
-let otomsortorder["35 18 Fj"]="89"
-let otomsortorder["36 18 Fj"]="90"
-let otomsortorder["37 18 Fj"]="91"
-let otomsortorder["38 18 Fj"]="92"
-let otomsortorder["39 18 Fj"]="93"
-let otomsortorder["40 18 Fj"]="94"
-let otomsortorder["41 18 Fj"]="95"
-let otomsortorder["36 19  O"]="96"
-let otomsortorder["37 19  O"]="97"
-let otomsortorder["38 19  O"]="98"
-let otomsortorder["39 19  O"]="99"
-let otomsortorder["40 19  O"]="100"
-let otomsortorder["41 19  O"]="101"
-let otomsortorder["42 19  O"]="102"
-let otomsortorder["43 19  O"]="103"
-let otomsortorder["38 20  C"]="104"
-let otomsortorder["39 20  C"]="105"
-let otomsortorder["40 20  C"]="106"
-let otomsortorder["41 20  C"]="107"
-let otomsortorder["42 20  C"]="108"
-let otomsortorder["43 20  C"]="109"
-let otomsortorder["44 20  C"]="110"
-let otomsortorder["45 20  C"]="111"
-let otomsortorder["40 21  E"]="112"
-let otomsortorder["41 21  E"]="113"
-let otomsortorder["42 21  E"]="114"
-let otomsortorder["43 21  E"]="115"
-let otomsortorder["44 21  E"]="116"
-let otomsortorder["45 21  E"]="117"
-let otomsortorder["46 21  E"]="118"
-let otomsortorder["47 21  E"]="119"
-let otomsortorder["48 21  E"]="120"
-let otomsortorder["42 22  A"]="121"
-let otomsortorder["43 22  A"]="122"
-let otomsortorder["44 22  A"]="123"
-let otomsortorder["45 22  A"]="124"
-let otomsortorder["46 22  A"]="125"
-let otomsortorder["47 22  A"]="126"
-let otomsortorder["48 22  A"]="127"
-let otomsortorder["49 22  A"]="128"
-let otomsortorder["50 22  A"]="129"
-let otomsortorder["44 23 Aw"]="130"
-let otomsortorder["45 23 Aw"]="131"
-let otomsortorder["46 23 Aw"]="132"
-let otomsortorder["47 23 Aw"]="133"
-let otomsortorder["48 23 Aw"]="134"
-let otomsortorder["49 23 Aw"]="135"
-let otomsortorder["50 23 Aw"]="136"
-let otomsortorder["51 23 Aw"]="137"
-let otomsortorder["52 23 Aw"]="138"
-let otomsortorder["46 24 Oc"]="139"
-let otomsortorder["47 24 Oc"]="140"
-let otomsortorder["48 24 Oc"]="141"
-let otomsortorder["49 24 Oc"]="142"
-let otomsortorder["50 24 Oc"]="143"
-let otomsortorder["51 24 Oc"]="144"
-let otomsortorder["52 24 Oc"]="145"
-let otomsortorder["53 24 Oc"]="146"
-let otomsortorder["54 24 Oc"]="147"
-let otomsortorder["47 25 Nb"]="148"
-let otomsortorder["48 25 Nb"]="149"
-let otomsortorder["49 25 Nb"]="150"
-let otomsortorder["50 25 Nb"]="151"
-let otomsortorder["51 25 Nb"]="152"
-let otomsortorder["52 25 Nb"]="153"
-let otomsortorder["53 25 Nb"]="154"
-let otomsortorder["54 25 Nb"]="155"
-let otomsortorder["55 25 Nb"]="156"
-let otomsortorder["56 25 Nb"]="157"
-let otomsortorder["50 26 Xk"]="158"
-let otomsortorder["51 26 Xk"]="159"
-let otomsortorder["52 26 Xk"]="160"
-let otomsortorder["53 26 Xk"]="161"
-let otomsortorder["54 26 Xk"]="162"
-let otomsortorder["55 26 Xk"]="163"
-let otomsortorder["56 26 Xk"]="164"
-let otomsortorder["57 26 Xk"]="165"
-let otomsortorder["58 26 Xk"]="166"
-let otomsortorder["59 26 Xk"]="167"
-let otomsortorder["51 27 Ic"]="168"
-let otomsortorder["52 27 Ic"]="169"
-let otomsortorder["53 27 Ic"]="170"
-let otomsortorder["54 27 Ic"]="171"
-let otomsortorder["55 27 Ic"]="172"
-let otomsortorder["56 27 Ic"]="173"
-let otomsortorder["57 27 Ic"]="174"
-let otomsortorder["58 27 Ic"]="175"
-let otomsortorder["59 27 Ic"]="176"
-let otomsortorder["60 27 Ic"]="177"
-let otomsortorder["61 27 Ic"]="178"
-let otomsortorder["54 28 Yp"]="179"
-let otomsortorder["55 28 Yp"]="180"
-let otomsortorder["56 28 Yp"]="181"
-let otomsortorder["57 28 Yp"]="182"
-let otomsortorder["58 28 Yp"]="183"
-let otomsortorder["59 28 Yp"]="184"
-let otomsortorder["60 28 Yp"]="185"
-let otomsortorder["61 28 Yp"]="186"
-let otomsortorder["62 28 Yp"]="187"
-let otomsortorder["63 28 Yp"]="188"
-let otomsortorder["56 29 Jx"]="189"
-let otomsortorder["57 29 Jx"]="190"
-let otomsortorder["58 29 Jx"]="191"
-let otomsortorder["59 29 Jx"]="192"
-let otomsortorder["60 29 Jx"]="193"
-let otomsortorder["61 29 Jx"]="194"
-let otomsortorder["62 29 Jx"]="195"
-let otomsortorder["63 29 Jx"]="196"
-let otomsortorder["64 29 Jx"]="197"
-let otomsortorder["65 29 Jx"]="198"
-let otomsortorder["57 30 Hb"]="199"
-let otomsortorder["58 30 Hb"]="200"
-let otomsortorder["59 30 Hb"]="201"
-let otomsortorder["60 30 Hb"]="202"
-let otomsortorder["61 30 Hb"]="203"
-let otomsortorder["62 30 Hb"]="204"
-let otomsortorder["63 30 Hb"]="205"
-let otomsortorder["64 30 Hb"]="206"
-let otomsortorder["65 30 Hb"]="207"
-let otomsortorder["66 30 Hb"]="208"
-let otomsortorder["67 30 Hb"]="209"
-let otomsortorder["60 31 At"]="210"
-let otomsortorder["61 31 At"]="211"
-let otomsortorder["62 31 At"]="212"
-let otomsortorder["63 31 At"]="213"
-let otomsortorder["64 31 At"]="214"
-let otomsortorder["65 31 At"]="215"
-let otomsortorder["66 31 At"]="216"
-let otomsortorder["67 31 At"]="217"
-let otomsortorder["68 31 At"]="218"
-let otomsortorder["69 31 At"]="219"
-let otomsortorder["61 32 Ny"]="220"
-let otomsortorder["62 32 Ny"]="221"
-let otomsortorder["63 32 Ny"]="222"
-let otomsortorder["64 32 Ny"]="223"
-let otomsortorder["65 32 Ny"]="224"
-let otomsortorder["66 32 Ny"]="225"
-let otomsortorder["67 32 Ny"]="226"
-let otomsortorder["68 32 Ny"]="227"
-let otomsortorder["69 32 Ny"]="228"
-let otomsortorder["70 32 Ny"]="229"
-let otomsortorder["71 32 Ny"]="230"
-let otomsortorder["72 32 Ny"]="231"
-let otomsortorder["64 33 Pw"]="232"
-let otomsortorder["65 33 Pw"]="233"
-let otomsortorder["66 33 Pw"]="234"
-let otomsortorder["67 33 Pw"]="235"
-let otomsortorder["68 33 Pw"]="236"
-let otomsortorder["69 33 Pw"]="237"
-let otomsortorder["70 33 Pw"]="238"
-let otomsortorder["71 33 Pw"]="239"
-let otomsortorder["72 33 Pw"]="240"
-let otomsortorder["73 33 Pw"]="241"
-let otomsortorder["74 33 Pw"]="242"
-let otomsortorder["66 34 Gk"]="243"
-let otomsortorder["67 34 Gk"]="244"
-let otomsortorder["68 34 Gk"]="245"
-let otomsortorder["69 34 Gk"]="246"
-let otomsortorder["70 34 Gk"]="247"
-let otomsortorder["71 34 Gk"]="248"
-let otomsortorder["72 34 Gk"]="249"
-let otomsortorder["73 34 Gk"]="250"
-let otomsortorder["74 34 Gk"]="251"
-let otomsortorder["75 34 Gk"]="252"
-let otomsortorder["76 34 Gk"]="253"
-let otomsortorder["67 35 Qi"]="254"
-let otomsortorder["68 35 Qi"]="255"
-let otomsortorder["69 35 Qi"]="256"
-let otomsortorder["70 35 Qi"]="257"
-let otomsortorder["71 35 Qi"]="258"
-let otomsortorder["72 35 Qi"]="259"
-let otomsortorder["73 35 Qi"]="260"
-let otomsortorder["74 35 Qi"]="261"
-let otomsortorder["75 35 Qi"]="262"
-let otomsortorder["76 35 Qi"]="263"
-let otomsortorder["77 35 Qi"]="264"
-let otomsortorder["78 35 Qi"]="265"
-let otomsortorder["69 36 Xy"]="266"
-let otomsortorder["70 36 Xy"]="267"
-let otomsortorder["71 36 Xy"]="268"
-let otomsortorder["72 36 Xy"]="269"
-let otomsortorder["73 36 Xy"]="270"
-let otomsortorder["74 36 Xy"]="271"
-let otomsortorder["75 36 Xy"]="272"
-let otomsortorder["76 36 Xy"]="273"
-let otomsortorder["77 36 Xy"]="274"
-let otomsortorder["78 36 Xy"]="275"
-let otomsortorder["79 36 Xy"]="276"
-let otomsortorder["72 37 Gq"]="277"
-let otomsortorder["73 37 Gq"]="278"
-let otomsortorder["74 37 Gq"]="279"
-let otomsortorder["75 37 Gq"]="280"
-let otomsortorder["76 37 Gq"]="281"
-let otomsortorder["77 37 Gq"]="282"
-let otomsortorder["78 37 Gq"]="283"
-let otomsortorder["79 37 Gq"]="284"
-let otomsortorder["80 37 Gq"]="285"
-let otomsortorder["73 38 Bt"]="286"
-let otomsortorder["74 38 Bt"]="287"
-let otomsortorder["75 38 Bt"]="288"
-let otomsortorder["76 38 Bt"]="289"
-let otomsortorder["77 38 Bt"]="290"
-let otomsortorder["78 38 Bt"]="291"
-let otomsortorder["79 38 Bt"]="292"
-let otomsortorder["80 38 Bt"]="293"
-let otomsortorder["81 38 Bt"]="294"
-let otomsortorder["75 39  H"]="295"
-let otomsortorder["76 39  H"]="296"
-let otomsortorder["77 39  H"]="297"
-let otomsortorder["78 39  H"]="298"
-let otomsortorder["79 39  H"]="299"
-let otomsortorder["80 39  H"]="300"
-let otomsortorder["81 39  H"]="301"
-let otomsortorder["82 39  H"]="302"
-let otomsortorder["78 40  U"]="303"
-let otomsortorder["79 40  U"]="304"
-let otomsortorder["80 40  U"]="305"
-let otomsortorder["81 40  U"]="306"
-let otomsortorder["82 40  U"]="307"
-let otomsortorder["83 40  U"]="308"
-let otomsortorder["79 41 Sq"]="309"
-let otomsortorder["80 41 Sq"]="310"
-let otomsortorder["81 41 Sq"]="311"
-let otomsortorder["82 41 Sq"]="312"
-let otomsortorder["83 41 Sq"]="313"
-let otomsortorder["84 41 Sq"]="314"
-let otomsortorder["83 42 Ua"]="315"
-let otomsortorder["84 42 Ua"]="316"
-let otomsortorder["85 42 Ua"]="317"
+let otomsortorder["14  8 Dx"]="26"
+let otomsortorder["15  8 Dx"]="27"
+let otomsortorder["16  8 Dx"]="28"
+let otomsortorder["17  8 Dx"]="29"
+let otomsortorder["18  8 Dx"]="30"
+let otomsortorder["19  8 Dx"]="31"
+let otomsortorder["17  9 Pm"]="32"
+let otomsortorder["18  9 Pm"]="33"
+let otomsortorder["19  9 Pm"]="34"
+let otomsortorder["20  9 Pm"]="35"
+let otomsortorder["21  9 Pm"]="36"
+let otomsortorder["19 10  M"]="37"
+let otomsortorder["20 10  M"]="38"
+let otomsortorder["21 10  M"]="39"
+let otomsortorder["22 10  M"]="40"
+let otomsortorder["23 10  M"]="41"
+let otomsortorder["21 11 Fw"]="42"
+let otomsortorder["22 11 Fw"]="43"
+let otomsortorder["23 11 Fw"]="44"
+let otomsortorder["24 11 Fw"]="45"
+let otomsortorder["25 11 Fw"]="46"
+let otomsortorder["26 11 Fw"]="47"
+let otomsortorder["22 12 Pt"]="48"
+let otomsortorder["23 12 Pt"]="49"
+let otomsortorder["24 12 Pt"]="50"
+let otomsortorder["25 12 Pt"]="51"
+let otomsortorder["26 12 Pt"]="52"
+let otomsortorder["27 12 Pt"]="53"
+let otomsortorder["28 12 Pt"]="54"
+let otomsortorder["25 13  S"]="55"
+let otomsortorder["26 13  S"]="56"
+let otomsortorder["27 13  S"]="57"
+let otomsortorder["28 13  S"]="58"
+let otomsortorder["29 13  S"]="59"
+let otomsortorder["30 13  S"]="60"
+let otomsortorder["26 14 Zq"]="61"
+let otomsortorder["27 14 Zq"]="62"
+let otomsortorder["28 14 Zq"]="63"
+let otomsortorder["29 14 Zq"]="64"
+let otomsortorder["30 14 Zq"]="65"
+let otomsortorder["31 14 Zq"]="66"
+let otomsortorder["32 14 Zq"]="67"
+let otomsortorder["28 15 Xc"]="68"
+let otomsortorder["29 15 Xc"]="69"
+let otomsortorder["30 15 Xc"]="70"
+let otomsortorder["31 15 Xc"]="71"
+let otomsortorder["32 15 Xc"]="72"
+let otomsortorder["33 15 Xc"]="73"
+let otomsortorder["34 15 Xc"]="74"
+let otomsortorder["31 16 Gy"]="75"
+let otomsortorder["32 16 Gy"]="76"
+let otomsortorder["33 16 Gy"]="77"
+let otomsortorder["34 16 Gy"]="78"
+let otomsortorder["35 16 Gy"]="79"
+let otomsortorder["36 16 Gy"]="80"
+let otomsortorder["32 17  D"]="81"
+let otomsortorder["33 17  D"]="82"
+let otomsortorder["34 17  D"]="83"
+let otomsortorder["35 17  D"]="84"
+let otomsortorder["36 17  D"]="85"
+let otomsortorder["37 17  D"]="86"
+let otomsortorder["38 17  D"]="87"
+let otomsortorder["39 17  D"]="88"
+let otomsortorder["34 18 Fj"]="89"
+let otomsortorder["35 18 Fj"]="90"
+let otomsortorder["36 18 Fj"]="91"
+let otomsortorder["37 18 Fj"]="92"
+let otomsortorder["38 18 Fj"]="93"
+let otomsortorder["39 18 Fj"]="94"
+let otomsortorder["40 18 Fj"]="95"
+let otomsortorder["41 18 Fj"]="96"
+let otomsortorder["36 19  O"]="97"
+let otomsortorder["37 19  O"]="98"
+let otomsortorder["38 19  O"]="99"
+let otomsortorder["39 19  O"]="100"
+let otomsortorder["40 19  O"]="101"
+let otomsortorder["41 19  O"]="102"
+let otomsortorder["42 19  O"]="103"
+let otomsortorder["43 19  O"]="104"
+let otomsortorder["38 20  C"]="105"
+let otomsortorder["39 20  C"]="106"
+let otomsortorder["40 20  C"]="107"
+let otomsortorder["41 20  C"]="108"
+let otomsortorder["42 20  C"]="109"
+let otomsortorder["43 20  C"]="110"
+let otomsortorder["44 20  C"]="111"
+let otomsortorder["45 20  C"]="112"
+let otomsortorder["40 21  E"]="113"
+let otomsortorder["41 21  E"]="114"
+let otomsortorder["42 21  E"]="115"
+let otomsortorder["43 21  E"]="116"
+let otomsortorder["44 21  E"]="117"
+let otomsortorder["45 21  E"]="118"
+let otomsortorder["46 21  E"]="119"
+let otomsortorder["47 21  E"]="120"
+let otomsortorder["48 21  E"]="121"
+let otomsortorder["42 22  A"]="122"
+let otomsortorder["43 22  A"]="123"
+let otomsortorder["44 22  A"]="124"
+let otomsortorder["45 22  A"]="125"
+let otomsortorder["46 22  A"]="126"
+let otomsortorder["47 22  A"]="127"
+let otomsortorder["48 22  A"]="128"
+let otomsortorder["49 22  A"]="129"
+let otomsortorder["50 22  A"]="130"
+let otomsortorder["44 23 Aw"]="131"
+let otomsortorder["45 23 Aw"]="132"
+let otomsortorder["46 23 Aw"]="133"
+let otomsortorder["47 23 Aw"]="134"
+let otomsortorder["48 23 Aw"]="135"
+let otomsortorder["49 23 Aw"]="136"
+let otomsortorder["50 23 Aw"]="137"
+let otomsortorder["51 23 Aw"]="138"
+let otomsortorder["52 23 Aw"]="139"
+let otomsortorder["46 24 Oc"]="140"
+let otomsortorder["47 24 Oc"]="141"
+let otomsortorder["48 24 Oc"]="142"
+let otomsortorder["49 24 Oc"]="143"
+let otomsortorder["50 24 Oc"]="144"
+let otomsortorder["51 24 Oc"]="145"
+let otomsortorder["52 24 Oc"]="146"
+let otomsortorder["53 24 Oc"]="147"
+let otomsortorder["54 24 Oc"]="148"
+let otomsortorder["47 25 Nb"]="149"
+let otomsortorder["48 25 Nb"]="150"
+let otomsortorder["49 25 Nb"]="151"
+let otomsortorder["50 25 Nb"]="152"
+let otomsortorder["51 25 Nb"]="153"
+let otomsortorder["52 25 Nb"]="154"
+let otomsortorder["53 25 Nb"]="155"
+let otomsortorder["54 25 Nb"]="156"
+let otomsortorder["55 25 Nb"]="157"
+let otomsortorder["56 25 Nb"]="158"
+let otomsortorder["50 26 Xk"]="159"
+let otomsortorder["51 26 Xk"]="160"
+let otomsortorder["52 26 Xk"]="161"
+let otomsortorder["53 26 Xk"]="162"
+let otomsortorder["54 26 Xk"]="163"
+let otomsortorder["55 26 Xk"]="164"
+let otomsortorder["56 26 Xk"]="165"
+let otomsortorder["57 26 Xk"]="166"
+let otomsortorder["58 26 Xk"]="167"
+let otomsortorder["59 26 Xk"]="168"
+let otomsortorder["51 27 Ic"]="169"
+let otomsortorder["52 27 Ic"]="170"
+let otomsortorder["53 27 Ic"]="171"
+let otomsortorder["54 27 Ic"]="172"
+let otomsortorder["55 27 Ic"]="173"
+let otomsortorder["56 27 Ic"]="174"
+let otomsortorder["57 27 Ic"]="175"
+let otomsortorder["58 27 Ic"]="176"
+let otomsortorder["59 27 Ic"]="177"
+let otomsortorder["60 27 Ic"]="178"
+let otomsortorder["61 27 Ic"]="179"
+let otomsortorder["54 28 Yp"]="180"
+let otomsortorder["55 28 Yp"]="181"
+let otomsortorder["56 28 Yp"]="182"
+let otomsortorder["57 28 Yp"]="183"
+let otomsortorder["58 28 Yp"]="184"
+let otomsortorder["59 28 Yp"]="185"
+let otomsortorder["60 28 Yp"]="186"
+let otomsortorder["61 28 Yp"]="187"
+let otomsortorder["62 28 Yp"]="188"
+let otomsortorder["63 28 Yp"]="189"
+let otomsortorder["56 29 Jx"]="190"
+let otomsortorder["57 29 Jx"]="191"
+let otomsortorder["58 29 Jx"]="192"
+let otomsortorder["59 29 Jx"]="193"
+let otomsortorder["60 29 Jx"]="194"
+let otomsortorder["61 29 Jx"]="195"
+let otomsortorder["62 29 Jx"]="196"
+let otomsortorder["63 29 Jx"]="197"
+let otomsortorder["64 29 Jx"]="198"
+let otomsortorder["65 29 Jx"]="199"
+let otomsortorder["57 30 Hb"]="200"
+let otomsortorder["58 30 Hb"]="201"
+let otomsortorder["59 30 Hb"]="202"
+let otomsortorder["60 30 Hb"]="203"
+let otomsortorder["61 30 Hb"]="204"
+let otomsortorder["62 30 Hb"]="205"
+let otomsortorder["63 30 Hb"]="206"
+let otomsortorder["64 30 Hb"]="207"
+let otomsortorder["65 30 Hb"]="208"
+let otomsortorder["66 30 Hb"]="209"
+let otomsortorder["67 30 Hb"]="210"
+let otomsortorder["60 31 At"]="211"
+let otomsortorder["61 31 At"]="212"
+let otomsortorder["62 31 At"]="213"
+let otomsortorder["63 31 At"]="214"
+let otomsortorder["64 31 At"]="215"
+let otomsortorder["65 31 At"]="216"
+let otomsortorder["66 31 At"]="217"
+let otomsortorder["67 31 At"]="218"
+let otomsortorder["68 31 At"]="219"
+let otomsortorder["69 31 At"]="220"
+let otomsortorder["61 32 Ny"]="221"
+let otomsortorder["62 32 Ny"]="222"
+let otomsortorder["63 32 Ny"]="223"
+let otomsortorder["64 32 Ny"]="224"
+let otomsortorder["65 32 Ny"]="225"
+let otomsortorder["66 32 Ny"]="226"
+let otomsortorder["67 32 Ny"]="227"
+let otomsortorder["68 32 Ny"]="228"
+let otomsortorder["69 32 Ny"]="229"
+let otomsortorder["70 32 Ny"]="230"
+let otomsortorder["71 32 Ny"]="231"
+let otomsortorder["72 32 Ny"]="232"
+let otomsortorder["64 33 Pw"]="233"
+let otomsortorder["65 33 Pw"]="234"
+let otomsortorder["66 33 Pw"]="235"
+let otomsortorder["67 33 Pw"]="236"
+let otomsortorder["68 33 Pw"]="237"
+let otomsortorder["69 33 Pw"]="238"
+let otomsortorder["70 33 Pw"]="239"
+let otomsortorder["71 33 Pw"]="240"
+let otomsortorder["72 33 Pw"]="241"
+let otomsortorder["73 33 Pw"]="242"
+let otomsortorder["74 33 Pw"]="243"
+let otomsortorder["66 34 Gk"]="244"
+let otomsortorder["67 34 Gk"]="245"
+let otomsortorder["68 34 Gk"]="246"
+let otomsortorder["69 34 Gk"]="247"
+let otomsortorder["70 34 Gk"]="248"
+let otomsortorder["71 34 Gk"]="249"
+let otomsortorder["72 34 Gk"]="250"
+let otomsortorder["73 34 Gk"]="251"
+let otomsortorder["74 34 Gk"]="252"
+let otomsortorder["75 34 Gk"]="253"
+let otomsortorder["76 34 Gk"]="254"
+let otomsortorder["67 35 Qi"]="255"
+let otomsortorder["68 35 Qi"]="256"
+let otomsortorder["69 35 Qi"]="257"
+let otomsortorder["70 35 Qi"]="258"
+let otomsortorder["71 35 Qi"]="259"
+let otomsortorder["72 35 Qi"]="260"
+let otomsortorder["73 35 Qi"]="261"
+let otomsortorder["74 35 Qi"]="262"
+let otomsortorder["75 35 Qi"]="263"
+let otomsortorder["76 35 Qi"]="264"
+let otomsortorder["77 35 Qi"]="265"
+let otomsortorder["78 35 Qi"]="266"
+let otomsortorder["69 36 Xy"]="267"
+let otomsortorder["70 36 Xy"]="268"
+let otomsortorder["71 36 Xy"]="269"
+let otomsortorder["72 36 Xy"]="270"
+let otomsortorder["73 36 Xy"]="271"
+let otomsortorder["74 36 Xy"]="272"
+let otomsortorder["75 36 Xy"]="273"
+let otomsortorder["76 36 Xy"]="274"
+let otomsortorder["77 36 Xy"]="275"
+let otomsortorder["78 36 Xy"]="276"
+let otomsortorder["79 36 Xy"]="277"
+let otomsortorder["72 37 Gq"]="278"
+let otomsortorder["73 37 Gq"]="279"
+let otomsortorder["74 37 Gq"]="280"
+let otomsortorder["75 37 Gq"]="281"
+let otomsortorder["76 37 Gq"]="282"
+let otomsortorder["77 37 Gq"]="283"
+let otomsortorder["78 37 Gq"]="284"
+let otomsortorder["79 37 Gq"]="285"
+let otomsortorder["80 37 Gq"]="286"
+let otomsortorder["73 38 Bt"]="287"
+let otomsortorder["74 38 Bt"]="288"
+let otomsortorder["75 38 Bt"]="289"
+let otomsortorder["76 38 Bt"]="290"
+let otomsortorder["77 38 Bt"]="291"
+let otomsortorder["78 38 Bt"]="292"
+let otomsortorder["79 38 Bt"]="293"
+let otomsortorder["80 38 Bt"]="294"
+let otomsortorder["81 38 Bt"]="295"
+let otomsortorder["75 39  H"]="296"
+let otomsortorder["76 39  H"]="297"
+let otomsortorder["77 39  H"]="298"
+let otomsortorder["78 39  H"]="299"
+let otomsortorder["79 39  H"]="300"
+let otomsortorder["80 39  H"]="301"
+let otomsortorder["81 39  H"]="302"
+let otomsortorder["82 39  H"]="303"
+let otomsortorder["78 40  U"]="304"
+let otomsortorder["79 40  U"]="305"
+let otomsortorder["80 40  U"]="306"
+let otomsortorder["81 40  U"]="307"
+let otomsortorder["82 40  U"]="308"
+let otomsortorder["83 40  U"]="309"
+let otomsortorder["79 41 Sq"]="310"
+let otomsortorder["80 41 Sq"]="311"
+let otomsortorder["81 41 Sq"]="312"
+let otomsortorder["82 41 Sq"]="313"
+let otomsortorder["83 41 Sq"]="314"
+let otomsortorder["84 41 Sq"]="315"
+let otomsortorder["83 42 Ua"]="316"
+let otomsortorder["84 42 Ua"]="317"
+let otomsortorder["85 42 Ua"]="318"
 
 let otomsortorder["Ju-1"]="0"
 let otomsortorder["Ju-2"]="1"
@@ -4245,625 +4258,955 @@ let otomsortorder["Zz-13"]="22"
 let otomsortorder["Zz-14"]="23"
 let otomsortorder["Zz-15"]="24"
 let otomsortorder["Zz-16"]="25"
-let otomsortorder["Dx-15"]="26"
-let otomsortorder["Dx-16"]="27"
-let otomsortorder["Dx-17"]="28"
-let otomsortorder["Dx-18"]="29"
-let otomsortorder["Dx-19"]="30"
-let otomsortorder["Pm-17"]="31"
-let otomsortorder["Pm-18"]="32"
-let otomsortorder["Pm-19"]="33"
-let otomsortorder["Pm-20"]="34"
-let otomsortorder["Pm-21"]="35"
-let otomsortorder["M-19"]="36"
-let otomsortorder["M-20"]="37"
-let otomsortorder["M-21"]="38"
-let otomsortorder["M-22"]="39"
-let otomsortorder["M-23"]="40"
-let otomsortorder["Fw-21"]="41"
-let otomsortorder["Fw-22"]="42"
-let otomsortorder["Fw-23"]="43"
-let otomsortorder["Fw-24"]="44"
-let otomsortorder["Fw-25"]="45"
-let otomsortorder["Fw-26"]="46"
-let otomsortorder["Pt-22"]="47"
-let otomsortorder["Pt-23"]="48"
-let otomsortorder["Pt-24"]="49"
-let otomsortorder["Pt-25"]="50"
-let otomsortorder["Pt-26"]="51"
-let otomsortorder["Pt-27"]="52"
-let otomsortorder["Pt-28"]="53"
-let otomsortorder["S-25"]="54"
-let otomsortorder["S-26"]="55"
-let otomsortorder["S-27"]="56"
-let otomsortorder["S-28"]="57"
-let otomsortorder["S-29"]="58"
-let otomsortorder["S-30"]="59"
-let otomsortorder["Zq-26"]="60"
-let otomsortorder["Zq-27"]="61"
-let otomsortorder["Zq-28"]="62"
-let otomsortorder["Zq-29"]="63"
-let otomsortorder["Zq-30"]="64"
-let otomsortorder["Zq-31"]="65"
-let otomsortorder["Zq-32"]="66"
-let otomsortorder["Xc-28"]="67"
-let otomsortorder["Xc-29"]="68"
-let otomsortorder["Xc-30"]="69"
-let otomsortorder["Xc-31"]="70"
-let otomsortorder["Xc-32"]="71"
-let otomsortorder["Xc-33"]="72"
-let otomsortorder["Xc-34"]="73"
-let otomsortorder["Gy-31"]="74"
-let otomsortorder["Gy-32"]="75"
-let otomsortorder["Gy-33"]="76"
-let otomsortorder["Gy-34"]="77"
-let otomsortorder["Gy-35"]="78"
-let otomsortorder["Gy-36"]="79"
-let otomsortorder["D-32"]="80"
-let otomsortorder["D-33"]="81"
-let otomsortorder["D-34"]="82"
-let otomsortorder["D-35"]="83"
-let otomsortorder["D-36"]="84"
-let otomsortorder["D-37"]="85"
-let otomsortorder["D-38"]="86"
-let otomsortorder["D-39"]="87"
-let otomsortorder["Fj-34"]="88"
-let otomsortorder["Fj-35"]="89"
-let otomsortorder["Fj-36"]="90"
-let otomsortorder["Fj-37"]="91"
-let otomsortorder["Fj-38"]="92"
-let otomsortorder["Fj-39"]="93"
-let otomsortorder["Fj-40"]="94"
-let otomsortorder["Fj-41"]="95"
-let otomsortorder["O-36"]="96"
-let otomsortorder["O-37"]="97"
-let otomsortorder["O-38"]="98"
-let otomsortorder["O-39"]="99"
-let otomsortorder["O-40"]="100"
-let otomsortorder["O-41"]="101"
-let otomsortorder["O-42"]="102"
-let otomsortorder["O-43"]="103"
-let otomsortorder["C-38"]="104"
-let otomsortorder["C-39"]="105"
-let otomsortorder["C-40"]="106"
-let otomsortorder["C-41"]="107"
-let otomsortorder["C-42"]="108"
-let otomsortorder["C-43"]="109"
-let otomsortorder["C-44"]="110"
-let otomsortorder["C-45"]="111"
-let otomsortorder["E-40"]="112"
-let otomsortorder["E-41"]="113"
-let otomsortorder["E-42"]="114"
-let otomsortorder["E-43"]="115"
-let otomsortorder["E-44"]="116"
-let otomsortorder["E-45"]="117"
-let otomsortorder["E-46"]="118"
-let otomsortorder["E-47"]="119"
-let otomsortorder["E-48"]="120"
-let otomsortorder["A-42"]="121"
-let otomsortorder["A-43"]="122"
-let otomsortorder["A-44"]="123"
-let otomsortorder["A-45"]="124"
-let otomsortorder["A-46"]="125"
-let otomsortorder["A-47"]="126"
-let otomsortorder["A-48"]="127"
-let otomsortorder["A-49"]="128"
-let otomsortorder["A-50"]="129"
-let otomsortorder["Aw-44"]="130"
-let otomsortorder["Aw-45"]="131"
-let otomsortorder["Aw-46"]="132"
-let otomsortorder["Aw-47"]="133"
-let otomsortorder["Aw-48"]="134"
-let otomsortorder["Aw-49"]="135"
-let otomsortorder["Aw-50"]="136"
-let otomsortorder["Aw-51"]="137"
-let otomsortorder["Aw-52"]="138"
-let otomsortorder["Oc-46"]="139"
-let otomsortorder["Oc-47"]="140"
-let otomsortorder["Oc-48"]="141"
-let otomsortorder["Oc-49"]="142"
-let otomsortorder["Oc-50"]="143"
-let otomsortorder["Oc-51"]="144"
-let otomsortorder["Oc-52"]="145"
-let otomsortorder["Oc-53"]="146"
-let otomsortorder["Oc-54"]="147"
-let otomsortorder["Nb-47"]="148"
-let otomsortorder["Nb-48"]="149"
-let otomsortorder["Nb-49"]="150"
-let otomsortorder["Nb-50"]="151"
-let otomsortorder["Nb-51"]="152"
-let otomsortorder["Nb-52"]="153"
-let otomsortorder["Nb-53"]="154"
-let otomsortorder["Nb-54"]="155"
-let otomsortorder["Nb-55"]="156"
-let otomsortorder["Nb-56"]="157"
-let otomsortorder["Xk-50"]="158"
-let otomsortorder["Xk-51"]="159"
-let otomsortorder["Xk-52"]="160"
-let otomsortorder["Xk-53"]="161"
-let otomsortorder["Xk-54"]="162"
-let otomsortorder["Xk-55"]="163"
-let otomsortorder["Xk-56"]="164"
-let otomsortorder["Xk-57"]="165"
-let otomsortorder["Xk-58"]="166"
-let otomsortorder["Xk-59"]="167"
-let otomsortorder["Ic-51"]="168"
-let otomsortorder["Ic-52"]="169"
-let otomsortorder["Ic-53"]="170"
-let otomsortorder["Ic-54"]="171"
-let otomsortorder["Ic-55"]="172"
-let otomsortorder["Ic-56"]="173"
-let otomsortorder["Ic-57"]="174"
-let otomsortorder["Ic-58"]="175"
-let otomsortorder["Ic-59"]="176"
-let otomsortorder["Ic-60"]="177"
-let otomsortorder["Ic-61"]="178"
-let otomsortorder["Yp-54"]="179"
-let otomsortorder["Yp-55"]="180"
-let otomsortorder["Yp-56"]="181"
-let otomsortorder["Yp-57"]="182"
-let otomsortorder["Yp-58"]="183"
-let otomsortorder["Yp-59"]="184"
-let otomsortorder["Yp-60"]="185"
-let otomsortorder["Yp-61"]="186"
-let otomsortorder["Yp-62"]="187"
-let otomsortorder["Yp-63"]="188"
-let otomsortorder["Jx-56"]="189"
-let otomsortorder["Jx-57"]="190"
-let otomsortorder["Jx-58"]="191"
-let otomsortorder["Jx-59"]="192"
-let otomsortorder["Jx-60"]="193"
-let otomsortorder["Jx-61"]="194"
-let otomsortorder["Jx-62"]="195"
-let otomsortorder["Jx-63"]="196"
-let otomsortorder["Jx-64"]="197"
-let otomsortorder["Jx-65"]="198"
-let otomsortorder["Hb-57"]="199"
-let otomsortorder["Hb-58"]="200"
-let otomsortorder["Hb-59"]="201"
-let otomsortorder["Hb-60"]="202"
-let otomsortorder["Hb-61"]="203"
-let otomsortorder["Hb-62"]="204"
-let otomsortorder["Hb-63"]="205"
-let otomsortorder["Hb-64"]="206"
-let otomsortorder["Hb-65"]="207"
-let otomsortorder["Hb-66"]="208"
-let otomsortorder["Hb-67"]="209"
-let otomsortorder["At-60"]="210"
-let otomsortorder["At-61"]="211"
-let otomsortorder["At-62"]="212"
-let otomsortorder["At-63"]="213"
-let otomsortorder["At-64"]="214"
-let otomsortorder["At-65"]="215"
-let otomsortorder["At-66"]="216"
-let otomsortorder["At-67"]="217"
-let otomsortorder["At-68"]="218"
-let otomsortorder["At-69"]="219"
-let otomsortorder["Ny-61"]="220"
-let otomsortorder["Ny-62"]="221"
-let otomsortorder["Ny-63"]="222"
-let otomsortorder["Ny-64"]="223"
-let otomsortorder["Ny-65"]="224"
-let otomsortorder["Ny-66"]="225"
-let otomsortorder["Ny-67"]="226"
-let otomsortorder["Ny-68"]="227"
-let otomsortorder["Ny-69"]="228"
-let otomsortorder["Ny-70"]="229"
-let otomsortorder["Ny-71"]="230"
-let otomsortorder["Ny-72"]="231"
-let otomsortorder["Pw-64"]="232"
-let otomsortorder["Pw-65"]="233"
-let otomsortorder["Pw-66"]="234"
-let otomsortorder["Pw-67"]="235"
-let otomsortorder["Pw-68"]="236"
-let otomsortorder["Pw-69"]="237"
-let otomsortorder["Pw-70"]="238"
-let otomsortorder["Pw-71"]="239"
-let otomsortorder["Pw-72"]="240"
-let otomsortorder["Pw-73"]="241"
-let otomsortorder["Pw-74"]="242"
-let otomsortorder["Gk-66"]="243"
-let otomsortorder["Gk-67"]="244"
-let otomsortorder["Gk-68"]="245"
-let otomsortorder["Gk-69"]="246"
-let otomsortorder["Gk-70"]="247"
-let otomsortorder["Gk-71"]="248"
-let otomsortorder["Gk-72"]="249"
-let otomsortorder["Gk-73"]="250"
-let otomsortorder["Gk-74"]="251"
-let otomsortorder["Gk-75"]="252"
-let otomsortorder["Gk-76"]="253"
-let otomsortorder["Qi-67"]="254"
-let otomsortorder["Qi-68"]="255"
-let otomsortorder["Qi-69"]="256"
-let otomsortorder["Qi-70"]="257"
-let otomsortorder["Qi-71"]="258"
-let otomsortorder["Qi-72"]="259"
-let otomsortorder["Qi-73"]="260"
-let otomsortorder["Qi-74"]="261"
-let otomsortorder["Qi-75"]="262"
-let otomsortorder["Qi-76"]="263"
-let otomsortorder["Qi-77"]="264"
-let otomsortorder["Qi-78"]="265"
-let otomsortorder["Xy-69"]="266"
-let otomsortorder["Xy-70"]="267"
-let otomsortorder["Xy-71"]="268"
-let otomsortorder["Xy-72"]="269"
-let otomsortorder["Xy-73"]="270"
-let otomsortorder["Xy-74"]="271"
-let otomsortorder["Xy-75"]="272"
-let otomsortorder["Xy-76"]="273"
-let otomsortorder["Xy-77"]="274"
-let otomsortorder["Xy-78"]="275"
-let otomsortorder["Xy-79"]="276"
-let otomsortorder["Gq-72"]="277"
-let otomsortorder["Gq-73"]="278"
-let otomsortorder["Gq-74"]="279"
-let otomsortorder["Gq-75"]="280"
-let otomsortorder["Gq-76"]="281"
-let otomsortorder["Gq-77"]="282"
-let otomsortorder["Gq-78"]="283"
-let otomsortorder["Gq-79"]="284"
-let otomsortorder["Gq-80"]="285"
-let otomsortorder["Bt-73"]="286"
-let otomsortorder["Bt-74"]="287"
-let otomsortorder["Bt-75"]="288"
-let otomsortorder["Bt-76"]="289"
-let otomsortorder["Bt-77"]="290"
-let otomsortorder["Bt-78"]="291"
-let otomsortorder["Bt-79"]="292"
-let otomsortorder["Bt-80"]="293"
-let otomsortorder["Bt-81"]="294"
-let otomsortorder["H-75"]="295"
-let otomsortorder["H-76"]="296"
-let otomsortorder["H-77"]="297"
-let otomsortorder["H-78"]="298"
-let otomsortorder["H-79"]="299"
-let otomsortorder["H-80"]="300"
-let otomsortorder["H-81"]="301"
-let otomsortorder["H-82"]="302"
-let otomsortorder["U-78"]="303"
-let otomsortorder["U-79"]="304"
-let otomsortorder["U-80"]="305"
-let otomsortorder["U-81"]="306"
-let otomsortorder["U-82"]="307"
-let otomsortorder["U-83"]="308"
-let otomsortorder["Sq-79"]="309"
-let otomsortorder["Sq-80"]="310"
-let otomsortorder["Sq-81"]="311"
-let otomsortorder["Sq-82"]="312"
-let otomsortorder["Sq-83"]="313"
-let otomsortorder["Sq-84"]="314"
-let otomsortorder["Ua-83"]="315"
-let otomsortorder["Ua-84"]="316"
-let otomsortorder["Ua-85"]="317"
+let otomsortorder["Dx-14"]="26"
+let otomsortorder["Dx-15"]="27"
+let otomsortorder["Dx-16"]="28"
+let otomsortorder["Dx-17"]="29"
+let otomsortorder["Dx-18"]="30"
+let otomsortorder["Dx-19"]="31"
+let otomsortorder["Pm-17"]="32"
+let otomsortorder["Pm-18"]="33"
+let otomsortorder["Pm-19"]="34"
+let otomsortorder["Pm-20"]="35"
+let otomsortorder["Pm-21"]="36"
+let otomsortorder["M-19"]="37"
+let otomsortorder["M-20"]="38"
+let otomsortorder["M-21"]="39"
+let otomsortorder["M-22"]="40"
+let otomsortorder["M-23"]="41"
+let otomsortorder["Fw-21"]="42"
+let otomsortorder["Fw-22"]="43"
+let otomsortorder["Fw-23"]="44"
+let otomsortorder["Fw-24"]="45"
+let otomsortorder["Fw-25"]="46"
+let otomsortorder["Fw-26"]="47"
+let otomsortorder["Pt-22"]="48"
+let otomsortorder["Pt-23"]="49"
+let otomsortorder["Pt-24"]="50"
+let otomsortorder["Pt-25"]="51"
+let otomsortorder["Pt-26"]="52"
+let otomsortorder["Pt-27"]="53"
+let otomsortorder["Pt-28"]="54"
+let otomsortorder["S-25"]="55"
+let otomsortorder["S-26"]="56"
+let otomsortorder["S-27"]="57"
+let otomsortorder["S-28"]="58"
+let otomsortorder["S-29"]="59"
+let otomsortorder["S-30"]="60"
+let otomsortorder["Zq-26"]="61"
+let otomsortorder["Zq-27"]="62"
+let otomsortorder["Zq-28"]="63"
+let otomsortorder["Zq-29"]="64"
+let otomsortorder["Zq-30"]="65"
+let otomsortorder["Zq-31"]="66"
+let otomsortorder["Zq-32"]="67"
+let otomsortorder["Xc-28"]="68"
+let otomsortorder["Xc-29"]="69"
+let otomsortorder["Xc-30"]="70"
+let otomsortorder["Xc-31"]="71"
+let otomsortorder["Xc-32"]="72"
+let otomsortorder["Xc-33"]="73"
+let otomsortorder["Xc-34"]="74"
+let otomsortorder["Gy-31"]="75"
+let otomsortorder["Gy-32"]="76"
+let otomsortorder["Gy-33"]="77"
+let otomsortorder["Gy-34"]="78"
+let otomsortorder["Gy-35"]="79"
+let otomsortorder["Gy-36"]="80"
+let otomsortorder["D-32"]="81"
+let otomsortorder["D-33"]="82"
+let otomsortorder["D-34"]="83"
+let otomsortorder["D-35"]="84"
+let otomsortorder["D-36"]="85"
+let otomsortorder["D-37"]="86"
+let otomsortorder["D-38"]="87"
+let otomsortorder["D-39"]="88"
+let otomsortorder["Fj-34"]="89"
+let otomsortorder["Fj-35"]="90"
+let otomsortorder["Fj-36"]="91"
+let otomsortorder["Fj-37"]="92"
+let otomsortorder["Fj-38"]="93"
+let otomsortorder["Fj-39"]="94"
+let otomsortorder["Fj-40"]="95"
+let otomsortorder["Fj-41"]="96"
+let otomsortorder["O-36"]="97"
+let otomsortorder["O-37"]="98"
+let otomsortorder["O-38"]="99"
+let otomsortorder["O-39"]="100"
+let otomsortorder["O-40"]="101"
+let otomsortorder["O-41"]="102"
+let otomsortorder["O-42"]="103"
+let otomsortorder["O-43"]="104"
+let otomsortorder["C-38"]="105"
+let otomsortorder["C-39"]="106"
+let otomsortorder["C-40"]="107"
+let otomsortorder["C-41"]="108"
+let otomsortorder["C-42"]="109"
+let otomsortorder["C-43"]="110"
+let otomsortorder["C-44"]="111"
+let otomsortorder["C-45"]="112"
+let otomsortorder["E-40"]="113"
+let otomsortorder["E-41"]="114"
+let otomsortorder["E-42"]="115"
+let otomsortorder["E-43"]="116"
+let otomsortorder["E-44"]="117"
+let otomsortorder["E-45"]="118"
+let otomsortorder["E-46"]="119"
+let otomsortorder["E-47"]="120"
+let otomsortorder["E-48"]="121"
+let otomsortorder["A-42"]="122"
+let otomsortorder["A-43"]="123"
+let otomsortorder["A-44"]="124"
+let otomsortorder["A-45"]="125"
+let otomsortorder["A-46"]="126"
+let otomsortorder["A-47"]="127"
+let otomsortorder["A-48"]="128"
+let otomsortorder["A-49"]="129"
+let otomsortorder["A-50"]="130"
+let otomsortorder["Aw-44"]="131"
+let otomsortorder["Aw-45"]="132"
+let otomsortorder["Aw-46"]="133"
+let otomsortorder["Aw-47"]="134"
+let otomsortorder["Aw-48"]="135"
+let otomsortorder["Aw-49"]="136"
+let otomsortorder["Aw-50"]="137"
+let otomsortorder["Aw-51"]="138"
+let otomsortorder["Aw-52"]="139"
+let otomsortorder["Oc-46"]="140"
+let otomsortorder["Oc-47"]="141"
+let otomsortorder["Oc-48"]="142"
+let otomsortorder["Oc-49"]="143"
+let otomsortorder["Oc-50"]="144"
+let otomsortorder["Oc-51"]="145"
+let otomsortorder["Oc-52"]="146"
+let otomsortorder["Oc-53"]="147"
+let otomsortorder["Oc-54"]="148"
+let otomsortorder["Nb-47"]="149"
+let otomsortorder["Nb-48"]="150"
+let otomsortorder["Nb-49"]="151"
+let otomsortorder["Nb-50"]="152"
+let otomsortorder["Nb-51"]="153"
+let otomsortorder["Nb-52"]="154"
+let otomsortorder["Nb-53"]="155"
+let otomsortorder["Nb-54"]="156"
+let otomsortorder["Nb-55"]="157"
+let otomsortorder["Nb-56"]="158"
+let otomsortorder["Xk-50"]="159"
+let otomsortorder["Xk-51"]="160"
+let otomsortorder["Xk-52"]="161"
+let otomsortorder["Xk-53"]="162"
+let otomsortorder["Xk-54"]="163"
+let otomsortorder["Xk-55"]="164"
+let otomsortorder["Xk-56"]="165"
+let otomsortorder["Xk-57"]="166"
+let otomsortorder["Xk-58"]="167"
+let otomsortorder["Xk-59"]="168"
+let otomsortorder["Ic-51"]="169"
+let otomsortorder["Ic-52"]="170"
+let otomsortorder["Ic-53"]="171"
+let otomsortorder["Ic-54"]="172"
+let otomsortorder["Ic-55"]="173"
+let otomsortorder["Ic-56"]="174"
+let otomsortorder["Ic-57"]="175"
+let otomsortorder["Ic-58"]="176"
+let otomsortorder["Ic-59"]="177"
+let otomsortorder["Ic-60"]="178"
+let otomsortorder["Ic-61"]="179"
+let otomsortorder["Yp-54"]="180"
+let otomsortorder["Yp-55"]="181"
+let otomsortorder["Yp-56"]="182"
+let otomsortorder["Yp-57"]="183"
+let otomsortorder["Yp-58"]="184"
+let otomsortorder["Yp-59"]="185"
+let otomsortorder["Yp-60"]="186"
+let otomsortorder["Yp-61"]="187"
+let otomsortorder["Yp-62"]="188"
+let otomsortorder["Yp-63"]="189"
+let otomsortorder["Jx-56"]="190"
+let otomsortorder["Jx-57"]="191"
+let otomsortorder["Jx-58"]="192"
+let otomsortorder["Jx-59"]="193"
+let otomsortorder["Jx-60"]="194"
+let otomsortorder["Jx-61"]="195"
+let otomsortorder["Jx-62"]="196"
+let otomsortorder["Jx-63"]="197"
+let otomsortorder["Jx-64"]="198"
+let otomsortorder["Jx-65"]="199"
+let otomsortorder["Hb-57"]="200"
+let otomsortorder["Hb-58"]="201"
+let otomsortorder["Hb-59"]="202"
+let otomsortorder["Hb-60"]="203"
+let otomsortorder["Hb-61"]="204"
+let otomsortorder["Hb-62"]="205"
+let otomsortorder["Hb-63"]="206"
+let otomsortorder["Hb-64"]="207"
+let otomsortorder["Hb-65"]="208"
+let otomsortorder["Hb-66"]="209"
+let otomsortorder["Hb-67"]="210"
+let otomsortorder["At-60"]="211"
+let otomsortorder["At-61"]="212"
+let otomsortorder["At-62"]="213"
+let otomsortorder["At-63"]="214"
+let otomsortorder["At-64"]="215"
+let otomsortorder["At-65"]="216"
+let otomsortorder["At-66"]="217"
+let otomsortorder["At-67"]="218"
+let otomsortorder["At-68"]="219"
+let otomsortorder["At-69"]="220"
+let otomsortorder["Ny-61"]="221"
+let otomsortorder["Ny-62"]="222"
+let otomsortorder["Ny-63"]="223"
+let otomsortorder["Ny-64"]="224"
+let otomsortorder["Ny-65"]="225"
+let otomsortorder["Ny-66"]="226"
+let otomsortorder["Ny-67"]="227"
+let otomsortorder["Ny-68"]="228"
+let otomsortorder["Ny-69"]="229"
+let otomsortorder["Ny-70"]="230"
+let otomsortorder["Ny-71"]="231"
+let otomsortorder["Ny-72"]="232"
+let otomsortorder["Pw-64"]="233"
+let otomsortorder["Pw-65"]="234"
+let otomsortorder["Pw-66"]="235"
+let otomsortorder["Pw-67"]="236"
+let otomsortorder["Pw-68"]="237"
+let otomsortorder["Pw-69"]="238"
+let otomsortorder["Pw-70"]="239"
+let otomsortorder["Pw-71"]="240"
+let otomsortorder["Pw-72"]="241"
+let otomsortorder["Pw-73"]="242"
+let otomsortorder["Pw-74"]="243"
+let otomsortorder["Gk-66"]="244"
+let otomsortorder["Gk-67"]="245"
+let otomsortorder["Gk-68"]="246"
+let otomsortorder["Gk-69"]="247"
+let otomsortorder["Gk-70"]="248"
+let otomsortorder["Gk-71"]="249"
+let otomsortorder["Gk-72"]="250"
+let otomsortorder["Gk-73"]="251"
+let otomsortorder["Gk-74"]="252"
+let otomsortorder["Gk-75"]="253"
+let otomsortorder["Gk-76"]="254"
+let otomsortorder["Qi-67"]="255"
+let otomsortorder["Qi-68"]="256"
+let otomsortorder["Qi-69"]="257"
+let otomsortorder["Qi-70"]="258"
+let otomsortorder["Qi-71"]="259"
+let otomsortorder["Qi-72"]="260"
+let otomsortorder["Qi-73"]="261"
+let otomsortorder["Qi-74"]="262"
+let otomsortorder["Qi-75"]="263"
+let otomsortorder["Qi-76"]="264"
+let otomsortorder["Qi-77"]="265"
+let otomsortorder["Qi-78"]="266"
+let otomsortorder["Xy-69"]="267"
+let otomsortorder["Xy-70"]="268"
+let otomsortorder["Xy-71"]="269"
+let otomsortorder["Xy-72"]="270"
+let otomsortorder["Xy-73"]="271"
+let otomsortorder["Xy-74"]="272"
+let otomsortorder["Xy-75"]="273"
+let otomsortorder["Xy-76"]="274"
+let otomsortorder["Xy-77"]="275"
+let otomsortorder["Xy-78"]="276"
+let otomsortorder["Xy-79"]="277"
+let otomsortorder["Gq-72"]="278"
+let otomsortorder["Gq-73"]="279"
+let otomsortorder["Gq-74"]="280"
+let otomsortorder["Gq-75"]="281"
+let otomsortorder["Gq-76"]="282"
+let otomsortorder["Gq-77"]="283"
+let otomsortorder["Gq-78"]="284"
+let otomsortorder["Gq-79"]="285"
+let otomsortorder["Gq-80"]="286"
+let otomsortorder["Bt-73"]="287"
+let otomsortorder["Bt-74"]="288"
+let otomsortorder["Bt-75"]="289"
+let otomsortorder["Bt-76"]="290"
+let otomsortorder["Bt-77"]="291"
+let otomsortorder["Bt-78"]="292"
+let otomsortorder["Bt-79"]="293"
+let otomsortorder["Bt-80"]="294"
+let otomsortorder["Bt-81"]="295"
+let otomsortorder["H-75"]="296"
+let otomsortorder["H-76"]="297"
+let otomsortorder["H-77"]="298"
+let otomsortorder["H-78"]="299"
+let otomsortorder["H-79"]="300"
+let otomsortorder["H-80"]="301"
+let otomsortorder["H-81"]="302"
+let otomsortorder["H-82"]="303"
+let otomsortorder["U-78"]="304"
+let otomsortorder["U-79"]="305"
+let otomsortorder["U-80"]="306"
+let otomsortorder["U-81"]="307"
+let otomsortorder["U-82"]="308"
+let otomsortorder["U-83"]="309"
+let otomsortorder["Sq-79"]="310"
+let otomsortorder["Sq-80"]="311"
+let otomsortorder["Sq-81"]="312"
+let otomsortorder["Sq-82"]="313"
+let otomsortorder["Sq-83"]="314"
+let otomsortorder["Sq-84"]="315"
+let otomsortorder["Ua-83"]="316"
+let otomsortorder["Ua-84"]="317"
+let otomsortorder["Ua-85"]="318"
 
+
+"
+" ]]] INSERT output of convert_token_id_to_hex.pl here
+"
+
+" that otomsortorder dictionary above can be used to sort the otoms with vim
+" This is a complex vim macro that takes the otoms in columns 1 to 42, copies to a new window above it that should already be there, pastes, adds the index looked up in otomsortorder dictionary, sorts, puts in register @l, pads it, and puts it back on the line it came from.
+" @q=0vt|yp:%s/ +/&/g:%s/+\s\+/+ /g:%s/\s*$//:%s/\([a-z]\+-\d\+\)/\=otomsortorder[submatch(1)] ." ". submatch(1)/:sort n:%s/+ \d\+/+/0ggVGJ0"lD:let @l=" ". @l . repeat(" ",60 - len(@l)) 0ct|l0$/^ + [^()]\++[^()]\+$/zz
 
 
 "  u+25fb ◻
 "  u+25fc ◼
 
 let shelldict = {}
+let shelldictlong = {}
 
-let shelldict[" 1  1 Ju"]= "◼◻◻"
-let shelldict[" 2  1 Ju"]= "◼◻◻"
-let shelldict[" 3  1 Ju"]= "◼◻◻"
-let shelldict[" 4  2  W"]= "◼◼◻"
-let shelldict[" 5  2  W"]= "◼◼◻"
-let shelldict[" 5  3 Cq"]= "◼◼◼"
-let shelldict[" 6  3 Cq"]= "◼◼◼"
-let shelldict[" 7  3 Cq"]= "◼◼◼"
-let shelldict[" 7  4 Af"]= "◼◻ ◻◻"
-let shelldict[" 8  4 Af"]= "◼◻ ◻◻"
-let shelldict[" 9  4 Af"]= "◼◻ ◻◻"
-let shelldict["10  4 Af"]= "◼◻ ◻◻"
-let shelldict[" 9  5 Xl"]= "◼◼ ◻◻"
-let shelldict["10  5 Xl"]= "◼◼ ◻◻"
-let shelldict["11  5 Xl"]= "◼◼ ◻◻"
-let shelldict["12  5 Xl"]= "◼◼ ◻◻"
-let shelldict["10  6 Pq"]= "◼◼ ◼◻"
-let shelldict["11  6 Pq"]= "◼◼ ◼◻"
-let shelldict["12  6 Pq"]= "◼◼ ◼◻"
-let shelldict["13  6 Pq"]= "◼◼ ◼◻"
-let shelldict["14  6 Pq"]= "◼◼ ◼◻"
-let shelldict["15  6 Pq"]= "◼◼ ◼◻"
-let shelldict["13  7 Zz"]= "◼◼ ◼◼"
-let shelldict["14  7 Zz"]= "◼◼ ◼◼"
-let shelldict["15  7 Zz"]= "◼◼ ◼◼"
-let shelldict["16  7 Zz"]= "◼◼ ◼◼"
-let shelldict["15  8 Dx"]= "◼◻◻ ◻◻"
-let shelldict["16  8 Dx"]= "◼◻◻ ◻◻"
-let shelldict["17  8 Dx"]= "◼◻◻ ◻◻"
-let shelldict["18  8 Dx"]= "◼◻◻ ◻◻"
-let shelldict["19  8 Dx"]= "◼◻◻ ◻◻"
-let shelldict["17  9 Pm"]= "◼◻◻ ◼◻"
-let shelldict["18  9 Pm"]= "◼◻◻ ◼◻"
-let shelldict["19  9 Pm"]= "◼◻◻ ◼◻"
-let shelldict["20  9 Pm"]= "◼◻◻ ◼◻"
-let shelldict["21  9 Pm"]= "◼◻◻ ◼◻"
-let shelldict["19 10  M"]= "◼◼◻ ◼◻"
-let shelldict["20 10  M"]= "◼◼◻ ◼◻"
-let shelldict["21 10  M"]= "◼◼◻ ◼◻"
-let shelldict["22 10  M"]= "◼◼◻ ◼◻"
-let shelldict["23 10  M"]= "◼◼◻ ◼◻"
-let shelldict["21 11 Fw"]= "◼◼◼ ◼◻"
-let shelldict["22 11 Fw"]= "◼◼◼ ◼◻"
-let shelldict["23 11 Fw"]= "◼◼◼ ◼◻"
-let shelldict["24 11 Fw"]= "◼◼◼ ◼◻"
-let shelldict["25 11 Fw"]= "◼◼◼ ◼◻"
-let shelldict["26 11 Fw"]= "◼◼◼ ◼◻"
-let shelldict["22 12 Pt"]= "◼◼◼ ◼◼"
-let shelldict["23 12 Pt"]= "◼◼◼ ◼◼"
-let shelldict["24 12 Pt"]= "◼◼◼ ◼◼"
-let shelldict["25 12 Pt"]= "◼◼◼ ◼◼"
-let shelldict["26 12 Pt"]= "◼◼◼ ◼◼"
-let shelldict["27 12 Pt"]= "◼◼◼ ◼◼"
-let shelldict["28 12 Pt"]= "◼◼◼ ◼◼"
-let shelldict["25 13  S"]= "◼◻◻◻"
-let shelldict["26 13  S"]= "◼◻◻◻"
-let shelldict["27 13  S"]= "◼◻◻◻"
-let shelldict["28 13  S"]= "◼◻◻◻"
-let shelldict["29 13  S"]= "◼◻◻◻"
-let shelldict["30 13  S"]= "◼◻◻◻"
-let shelldict["26 14 Zq"]= "◼◼◻◻"
-let shelldict["27 14 Zq"]= "◼◼◻◻"
-let shelldict["28 14 Zq"]= "◼◼◻◻"
-let shelldict["29 14 Zq"]= "◼◼◻◻"
-let shelldict["30 14 Zq"]= "◼◼◻◻"
-let shelldict["31 14 Zq"]= "◼◼◻◻"
-let shelldict["32 14 Zq"]= "◼◼◻◻"
-let shelldict["28 15 Xc"]= "◼◼◼◻"
-let shelldict["29 15 Xc"]= "◼◼◼◻"
-let shelldict["30 15 Xc"]= "◼◼◼◻"
-let shelldict["31 15 Xc"]= "◼◼◼◻"
-let shelldict["32 15 Xc"]= "◼◼◼◻"
-let shelldict["33 15 Xc"]= "◼◼◼◻"
-let shelldict["34 15 Xc"]= "◼◼◼◻"
-let shelldict["31 16 Gy"]= "◼◼◼◼"
-let shelldict["32 16 Gy"]= "◼◼◼◼"
-let shelldict["33 16 Gy"]= "◼◼◼◼"
-let shelldict["34 16 Gy"]= "◼◼◼◼"
-let shelldict["35 16 Gy"]= "◼◼◼◼"
-let shelldict["36 16 Gy"]= "◼◼◼◼"
-let shelldict["32 17  D"]= "◼◻◻◻◻ ◻◻ ◻"
-let shelldict["33 17  D"]= "◼◻◻◻◻ ◻◻ ◻"
-let shelldict["34 17  D"]= "◼◻◻◻◻ ◻◻ ◻"
-let shelldict["35 17  D"]= "◼◻◻◻◻ ◻◻ ◻"
-let shelldict["36 17  D"]= "◼◻◻◻◻ ◻◻ ◻"
-let shelldict["37 17  D"]= "◼◻◻◻◻ ◻◻ ◻"
-let shelldict["38 17  D"]= "◼◻◻◻◻ ◻◻ ◻"
-let shelldict["39 17  D"]= "◼◻◻◻◻ ◻◻ ◻"
-let shelldict["34 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻"
-let shelldict["35 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻"
-let shelldict["36 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻"
-let shelldict["37 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻"
-let shelldict["38 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻"
-let shelldict["39 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻"
-let shelldict["40 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻"
-let shelldict["41 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻"
-let shelldict["36 19  O"]= "◼◼◻◻◻ ◼◻ ◻"
-let shelldict["37 19  O"]= "◼◼◻◻◻ ◼◻ ◻"
-let shelldict["38 19  O"]= "◼◼◻◻◻ ◼◻ ◻"
-let shelldict["39 19  O"]= "◼◼◻◻◻ ◼◻ ◻"
-let shelldict["40 19  O"]= "◼◼◻◻◻ ◼◻ ◻"
-let shelldict["41 19  O"]= "◼◼◻◻◻ ◼◻ ◻"
-let shelldict["42 19  O"]= "◼◼◻◻◻ ◼◻ ◻"
-let shelldict["43 19  O"]= "◼◼◻◻◻ ◼◻ ◻"
-let shelldict["38 20  C"]= "◼◼◼◻◻ ◼◻ ◻"
-let shelldict["39 20  C"]= "◼◼◼◻◻ ◼◻ ◻"
-let shelldict["40 20  C"]= "◼◼◼◻◻ ◼◻ ◻"
-let shelldict["41 20  C"]= "◼◼◼◻◻ ◼◻ ◻"
-let shelldict["42 20  C"]= "◼◼◼◻◻ ◼◻ ◻"
-let shelldict["43 20  C"]= "◼◼◼◻◻ ◼◻ ◻"
-let shelldict["44 20  C"]= "◼◼◼◻◻ ◼◻ ◻"
-let shelldict["45 20  C"]= "◼◼◼◻◻ ◼◻ ◻"
-let shelldict["40 21  E"]= "◼◼◼◼◻ ◼◻ ◻"
-let shelldict["41 21  E"]= "◼◼◼◼◻ ◼◻ ◻"
-let shelldict["42 21  E"]= "◼◼◼◼◻ ◼◻ ◻"
-let shelldict["43 21  E"]= "◼◼◼◼◻ ◼◻ ◻"
-let shelldict["44 21  E"]= "◼◼◼◼◻ ◼◻ ◻"
-let shelldict["45 21  E"]= "◼◼◼◼◻ ◼◻ ◻"
-let shelldict["46 21  E"]= "◼◼◼◼◻ ◼◻ ◻"
-let shelldict["47 21  E"]= "◼◼◼◼◻ ◼◻ ◻"
-let shelldict["48 21  E"]= "◼◼◼◼◻ ◼◻ ◻"
-let shelldict["42 22  A"]= "◼◼◼◼◼ ◼◻ ◻"
-let shelldict["43 22  A"]= "◼◼◼◼◼ ◼◻ ◻"
-let shelldict["44 22  A"]= "◼◼◼◼◼ ◼◻ ◻"
-let shelldict["45 22  A"]= "◼◼◼◼◼ ◼◻ ◻"
-let shelldict["46 22  A"]= "◼◼◼◼◼ ◼◻ ◻"
-let shelldict["47 22  A"]= "◼◼◼◼◼ ◼◻ ◻"
-let shelldict["48 22  A"]= "◼◼◼◼◼ ◼◻ ◻"
-let shelldict["49 22  A"]= "◼◼◼◼◼ ◼◻ ◻"
-let shelldict["50 22  A"]= "◼◼◼◼◼ ◼◻ ◻"
-let shelldict["44 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼"
-let shelldict["45 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼"
-let shelldict["46 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼"
-let shelldict["47 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼"
-let shelldict["48 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼"
-let shelldict["49 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼"
-let shelldict["50 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼"
-let shelldict["51 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼"
-let shelldict["52 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼"
-let shelldict["46 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼"
-let shelldict["47 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼"
-let shelldict["48 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼"
-let shelldict["49 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼"
-let shelldict["50 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼"
-let shelldict["51 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼"
-let shelldict["52 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼"
-let shelldict["53 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼"
-let shelldict["54 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼"
-let shelldict["47 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["48 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["49 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["50 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["51 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["52 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["53 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["54 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["55 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["56 25 Nb"]= "◻ ◻◻ ◼◻"
-let shelldict["50 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["51 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["52 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["53 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["54 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["55 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["56 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["57 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["58 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["59 26 Xk"]= "◻ ◼◻ ◼◻"
-let shelldict["51 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["52 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["53 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["54 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["55 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["56 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["57 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["58 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["59 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["60 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["61 27 Ic"]= "◼ ◼◻ ◼◻"
-let shelldict["54 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["55 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["56 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["57 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["58 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["59 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["60 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["61 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["62 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["63 28 Yp"]= "◼ ◼◼ ◼◻"
-let shelldict["56 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["57 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["58 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["59 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["60 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["61 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["62 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["63 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["64 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["65 29 Jx"]= "◼ ◼◼ ◼◼"
-let shelldict["57 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["58 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["59 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["60 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["61 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["62 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["63 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["64 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["65 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["66 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["67 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻"
-let shelldict["60 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["61 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["62 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["63 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["64 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["65 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["66 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["67 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["68 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["69 31 At"]= "◼◻ ◻◻◻ ◼◻◻"
-let shelldict["61 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["62 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["63 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["64 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["65 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["66 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["67 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["68 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["69 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["70 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["71 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["72 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻"
-let shelldict["64 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["65 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["66 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["67 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["68 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["69 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["70 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["71 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["72 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["73 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["74 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻"
-let shelldict["66 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["67 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["68 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["69 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["70 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["71 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["72 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["73 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["74 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["75 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["76 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻"
-let shelldict["67 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["68 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["69 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["70 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["71 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["72 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["73 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["74 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["75 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["76 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["77 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["78 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻"
-let shelldict["69 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["70 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["71 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["72 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["73 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["74 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["75 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["76 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["77 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["78 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["79 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻"
-let shelldict["72 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼"
-let shelldict["73 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼"
-let shelldict["74 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼"
-let shelldict["75 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼"
-let shelldict["76 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼"
-let shelldict["77 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼"
-let shelldict["78 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼"
-let shelldict["79 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼"
-let shelldict["80 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼"
-let shelldict["73 38 Bt"]= "◻ ◼◻◻◻"
-let shelldict["74 38 Bt"]= "◻ ◼◻◻◻"
-let shelldict["75 38 Bt"]= "◻ ◼◻◻◻"
-let shelldict["76 38 Bt"]= "◻ ◼◻◻◻"
-let shelldict["77 38 Bt"]= "◻ ◼◻◻◻"
-let shelldict["78 38 Bt"]= "◻ ◼◻◻◻"
-let shelldict["79 38 Bt"]= "◻ ◼◻◻◻"
-let shelldict["80 38 Bt"]= "◻ ◼◻◻◻"
-let shelldict["81 38 Bt"]= "◻ ◼◻◻◻"
-let shelldict["75 39  H"]= "◼ ◼◻◻◻"
-let shelldict["76 39  H"]= "◼ ◼◻◻◻"
-let shelldict["77 39  H"]= "◼ ◼◻◻◻"
-let shelldict["78 39  H"]= "◼ ◼◻◻◻"
-let shelldict["79 39  H"]= "◼ ◼◻◻◻"
-let shelldict["80 39  H"]= "◼ ◼◻◻◻"
-let shelldict["81 39  H"]= "◼ ◼◻◻◻"
-let shelldict["82 39  H"]= "◼ ◼◻◻◻"
-let shelldict["78 40  U"]= "◼ ◼◼◻◻"
-let shelldict["79 40  U"]= "◼ ◼◼◻◻"
-let shelldict["80 40  U"]= "◼ ◼◼◻◻"
-let shelldict["81 40  U"]= "◼ ◼◼◻◻"
-let shelldict["82 40  U"]= "◼ ◼◼◻◻"
-let shelldict["83 40  U"]= "◼ ◼◼◻◻"
-let shelldict["79 41 Sq"]= "◼ ◼◼◼◻"
-let shelldict["80 41 Sq"]= "◼ ◼◼◼◻"
-let shelldict["81 41 Sq"]= "◼ ◼◼◼◻"
-let shelldict["82 41 Sq"]= "◼ ◼◼◼◻"
-let shelldict["83 41 Sq"]= "◼ ◼◼◼◻"
-let shelldict["84 41 Sq"]= "◼ ◼◼◼◻"
-let shelldict["83 42 Ua"]= "◼ ◼◼◼◼"
-let shelldict["84 42 Ua"]= "◼ ◼◼◼◼"
-let shelldict["85 42 Ua"]= "◼ ◼◼◼◼"
+let shelldict[" 1  1 Ju"]= "◼◻◻"        | let shelldict["Ju-1" ]=shelldict[" 1  1 Ju"]
+let shelldict[" 2  1 Ju"]= "◼◻◻"        | let shelldict["Ju-2" ]=shelldict[" 2  1 Ju"]
+let shelldict[" 3  1 Ju"]= "◼◻◻"        | let shelldict["Ju-3" ]=shelldict[" 3  1 Ju"]
+let shelldict[" 4  2  W"]= "◼◼◻"        | let shelldict["W-4"  ]=shelldict[" 4  2  W"]
+let shelldict[" 5  2  W"]= "◼◼◻"        | let shelldict["W-5"  ]=shelldict[" 5  2  W"]
+let shelldict[" 5  3 Cq"]= "◼◼◼"        | let shelldict["Cq-5" ]=shelldict[" 5  3 Cq"]
+let shelldict[" 6  3 Cq"]= "◼◼◼"        | let shelldict["Cq-6" ]=shelldict[" 6  3 Cq"]
+let shelldict[" 7  3 Cq"]= "◼◼◼"        | let shelldict["Cq-7" ]=shelldict[" 7  3 Cq"]
+let shelldict[" 7  4 Af"]= "◼◻ ◻◻"      | let shelldict["Af-7" ]=shelldict[" 7  4 Af"]
+let shelldict[" 8  4 Af"]= "◼◻ ◻◻"      | let shelldict["Af-8" ]=shelldict[" 8  4 Af"]
+let shelldict[" 9  4 Af"]= "◼◻ ◻◻"      | let shelldict["Af-9" ]=shelldict[" 9  4 Af"]
+let shelldict["10  4 Af"]= "◼◻ ◻◻"      | let shelldict["Af-10"]=shelldict["10  4 Af"]
+let shelldict[" 9  5 Xl"]= "◼◼ ◻◻"      | let shelldict["Xl-9" ]=shelldict[" 9  5 Xl"]
+let shelldict["10  5 Xl"]= "◼◼ ◻◻"      | let shelldict["Xl-10"]=shelldict["10  5 Xl"]
+let shelldict["11  5 Xl"]= "◼◼ ◻◻"      | let shelldict["Xl-11"]=shelldict["11  5 Xl"]
+let shelldict["12  5 Xl"]= "◼◼ ◻◻"      | let shelldict["Xl-12"]=shelldict["12  5 Xl"]
+let shelldict["10  6 Pq"]= "◼◼ ◼◻"      | let shelldict["Pq-10"]=shelldict["10  6 Pq"]
+let shelldict["11  6 Pq"]= "◼◼ ◼◻"      | let shelldict["Pq-11"]=shelldict["11  6 Pq"]
+let shelldict["12  6 Pq"]= "◼◼ ◼◻"      | let shelldict["Pq-12"]=shelldict["12  6 Pq"]
+let shelldict["13  6 Pq"]= "◼◼ ◼◻"      | let shelldict["Pq-13"]=shelldict["13  6 Pq"]
+let shelldict["14  6 Pq"]= "◼◼ ◼◻"      | let shelldict["Pq-14"]=shelldict["14  6 Pq"]
+let shelldict["15  6 Pq"]= "◼◼ ◼◻"      | let shelldict["Pq-15"]=shelldict["15  6 Pq"]
+let shelldict["13  7 Zz"]= "◼◼ ◼◼"      | let shelldict["Zz-13"]=shelldict["13  7 Zz"]
+let shelldict["14  7 Zz"]= "◼◼ ◼◼"      | let shelldict["Zz-14"]=shelldict["14  7 Zz"]
+let shelldict["15  7 Zz"]= "◼◼ ◼◼"      | let shelldict["Zz-15"]=shelldict["15  7 Zz"]
+let shelldict["16  7 Zz"]= "◼◼ ◼◼"      | let shelldict["Zz-16"]=shelldict["16  7 Zz"]
+let shelldict["14  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-14"]=shelldict["15  8 Dx"]
+let shelldict["15  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-15"]=shelldict["15  8 Dx"]
+let shelldict["16  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-16"]=shelldict["16  8 Dx"]
+let shelldict["17  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-17"]=shelldict["17  8 Dx"]
+let shelldict["18  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-18"]=shelldict["18  8 Dx"]
+let shelldict["19  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-19"]=shelldict["19  8 Dx"]
+let shelldict["17  9 Pm"]= "◼◻◻ ◼◻"     | let shelldict["Pm-17"]=shelldict["17  9 Pm"]
+let shelldict["18  9 Pm"]= "◼◻◻ ◼◻"     | let shelldict["Pm-18"]=shelldict["18  9 Pm"]
+let shelldict["19  9 Pm"]= "◼◻◻ ◼◻"     | let shelldict["Pm-19"]=shelldict["19  9 Pm"]
+let shelldict["20  9 Pm"]= "◼◻◻ ◼◻"     | let shelldict["Pm-20"]=shelldict["20  9 Pm"]
+let shelldict["21  9 Pm"]= "◼◻◻ ◼◻"     | let shelldict["Pm-21"]=shelldict["21  9 Pm"]
+let shelldict["19 10  M"]= "◼◼◻ ◼◻"     | let shelldict["M-19" ]=shelldict["19 10  M"]
+let shelldict["20 10  M"]= "◼◼◻ ◼◻"     | let shelldict["M-20" ]=shelldict["20 10  M"]
+let shelldict["21 10  M"]= "◼◼◻ ◼◻"     | let shelldict["M-21" ]=shelldict["21 10  M"]
+let shelldict["22 10  M"]= "◼◼◻ ◼◻"     | let shelldict["M-22" ]=shelldict["22 10  M"]
+let shelldict["23 10  M"]= "◼◼◻ ◼◻"     | let shelldict["M-23" ]=shelldict["23 10  M"]
+let shelldict["21 11 Fw"]= "◼◼◼ ◼◻"     | let shelldict["Fw-21"]=shelldict["21 11 Fw"]
+let shelldict["22 11 Fw"]= "◼◼◼ ◼◻"     | let shelldict["Fw-22"]=shelldict["22 11 Fw"]
+let shelldict["23 11 Fw"]= "◼◼◼ ◼◻"     | let shelldict["Fw-23"]=shelldict["23 11 Fw"]
+let shelldict["24 11 Fw"]= "◼◼◼ ◼◻"     | let shelldict["Fw-24"]=shelldict["24 11 Fw"]
+let shelldict["25 11 Fw"]= "◼◼◼ ◼◻"     | let shelldict["Fw-25"]=shelldict["25 11 Fw"]
+let shelldict["26 11 Fw"]= "◼◼◼ ◼◻"     | let shelldict["Fw-26"]=shelldict["26 11 Fw"]
+let shelldict["22 12 Pt"]= "◼◼◼ ◼◼"     | let shelldict["Pt-22"]=shelldict["22 12 Pt"]
+let shelldict["23 12 Pt"]= "◼◼◼ ◼◼"     | let shelldict["Pt-23"]=shelldict["23 12 Pt"]
+let shelldict["24 12 Pt"]= "◼◼◼ ◼◼"     | let shelldict["Pt-24"]=shelldict["24 12 Pt"]
+let shelldict["25 12 Pt"]= "◼◼◼ ◼◼"     | let shelldict["Pt-25"]=shelldict["25 12 Pt"]
+let shelldict["26 12 Pt"]= "◼◼◼ ◼◼"     | let shelldict["Pt-26"]=shelldict["26 12 Pt"]
+let shelldict["27 12 Pt"]= "◼◼◼ ◼◼"     | let shelldict["Pt-27"]=shelldict["27 12 Pt"]
+let shelldict["28 12 Pt"]= "◼◼◼ ◼◼"     | let shelldict["Pt-28"]=shelldict["28 12 Pt"]
+let shelldict["25 13  S"]= "◼◻◻◻"       | let shelldict["S-25" ]=shelldict["25 13  S"]
+let shelldict["26 13  S"]= "◼◻◻◻"       | let shelldict["S-26" ]=shelldict["26 13  S"]
+let shelldict["27 13  S"]= "◼◻◻◻"       | let shelldict["S-27" ]=shelldict["27 13  S"]
+let shelldict["28 13  S"]= "◼◻◻◻"       | let shelldict["S-28" ]=shelldict["28 13  S"]
+let shelldict["29 13  S"]= "◼◻◻◻"       | let shelldict["S-29" ]=shelldict["29 13  S"]
+let shelldict["30 13  S"]= "◼◻◻◻"       | let shelldict["S-30" ]=shelldict["30 13  S"]
+let shelldict["26 14 Zq"]= "◼◼◻◻"       | let shelldict["Zq-26"]=shelldict["26 14 Zq"]
+let shelldict["27 14 Zq"]= "◼◼◻◻"       | let shelldict["Zq-27"]=shelldict["27 14 Zq"]
+let shelldict["28 14 Zq"]= "◼◼◻◻"       | let shelldict["Zq-28"]=shelldict["28 14 Zq"]
+let shelldict["29 14 Zq"]= "◼◼◻◻"       | let shelldict["Zq-29"]=shelldict["29 14 Zq"]
+let shelldict["30 14 Zq"]= "◼◼◻◻"       | let shelldict["Zq-30"]=shelldict["30 14 Zq"]
+let shelldict["31 14 Zq"]= "◼◼◻◻"       | let shelldict["Zq-31"]=shelldict["31 14 Zq"]
+let shelldict["32 14 Zq"]= "◼◼◻◻"       | let shelldict["Zq-32"]=shelldict["32 14 Zq"]
+let shelldict["28 15 Xc"]= "◼◼◼◻"       | let shelldict["Xc-28"]=shelldict["28 15 Xc"]
+let shelldict["29 15 Xc"]= "◼◼◼◻"       | let shelldict["Xc-29"]=shelldict["29 15 Xc"]
+let shelldict["30 15 Xc"]= "◼◼◼◻"       | let shelldict["Xc-30"]=shelldict["30 15 Xc"]
+let shelldict["31 15 Xc"]= "◼◼◼◻"       | let shelldict["Xc-31"]=shelldict["31 15 Xc"]
+let shelldict["32 15 Xc"]= "◼◼◼◻"       | let shelldict["Xc-32"]=shelldict["32 15 Xc"]
+let shelldict["33 15 Xc"]= "◼◼◼◻"       | let shelldict["Xc-33"]=shelldict["33 15 Xc"]
+let shelldict["34 15 Xc"]= "◼◼◼◻"       | let shelldict["Xc-34"]=shelldict["34 15 Xc"]
+let shelldict["31 16 Gy"]= "◼◼◼◼"       | let shelldict["Gy-31"]=shelldict["31 16 Gy"]
+let shelldict["32 16 Gy"]= "◼◼◼◼"       | let shelldict["Gy-32"]=shelldict["32 16 Gy"]
+let shelldict["33 16 Gy"]= "◼◼◼◼"       | let shelldict["Gy-33"]=shelldict["33 16 Gy"]
+let shelldict["34 16 Gy"]= "◼◼◼◼"       | let shelldict["Gy-34"]=shelldict["34 16 Gy"]
+let shelldict["35 16 Gy"]= "◼◼◼◼"       | let shelldict["Gy-35"]=shelldict["35 16 Gy"]
+let shelldict["36 16 Gy"]= "◼◼◼◼"       | let shelldict["Gy-36"]=shelldict["36 16 Gy"]
+let shelldict["32 17  D"]= "◼◻◻◻◻ ◻◻ ◻" | let shelldict["D-32" ]=shelldict["32 17  D"]
+let shelldict["33 17  D"]= "◼◻◻◻◻ ◻◻ ◻" | let shelldict["D-33" ]=shelldict["33 17  D"]
+let shelldict["34 17  D"]= "◼◻◻◻◻ ◻◻ ◻" | let shelldict["D-34" ]=shelldict["34 17  D"]
+let shelldict["35 17  D"]= "◼◻◻◻◻ ◻◻ ◻" | let shelldict["D-35" ]=shelldict["35 17  D"]
+let shelldict["36 17  D"]= "◼◻◻◻◻ ◻◻ ◻" | let shelldict["D-36" ]=shelldict["36 17  D"]
+let shelldict["37 17  D"]= "◼◻◻◻◻ ◻◻ ◻" | let shelldict["D-37" ]=shelldict["37 17  D"]
+let shelldict["38 17  D"]= "◼◻◻◻◻ ◻◻ ◻" | let shelldict["D-38" ]=shelldict["38 17  D"]
+let shelldict["39 17  D"]= "◼◻◻◻◻ ◻◻ ◻" | let shelldict["D-39" ]=shelldict["39 17  D"]
+let shelldict["34 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻" | let shelldict["Fj-34"]=shelldict["34 18 Fj"]
+let shelldict["35 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻" | let shelldict["Fj-35"]=shelldict["35 18 Fj"]
+let shelldict["36 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻" | let shelldict["Fj-36"]=shelldict["36 18 Fj"]
+let shelldict["37 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻" | let shelldict["Fj-37"]=shelldict["37 18 Fj"]
+let shelldict["38 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻" | let shelldict["Fj-38"]=shelldict["38 18 Fj"]
+let shelldict["39 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻" | let shelldict["Fj-39"]=shelldict["39 18 Fj"]
+let shelldict["40 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻" | let shelldict["Fj-40"]=shelldict["40 18 Fj"]
+let shelldict["41 18 Fj"]= "◼◻◻◻◻ ◼◻ ◻" | let shelldict["Fj-41"]=shelldict["41 18 Fj"]
+let shelldict["36 19  O"]= "◼◼◻◻◻ ◼◻ ◻" | let shelldict["O-36" ]=shelldict["36 19  O"]
+let shelldict["37 19  O"]= "◼◼◻◻◻ ◼◻ ◻" | let shelldict["O-37" ]=shelldict["37 19  O"]
+let shelldict["38 19  O"]= "◼◼◻◻◻ ◼◻ ◻" | let shelldict["O-38" ]=shelldict["38 19  O"]
+let shelldict["39 19  O"]= "◼◼◻◻◻ ◼◻ ◻" | let shelldict["O-39" ]=shelldict["39 19  O"]
+let shelldict["40 19  O"]= "◼◼◻◻◻ ◼◻ ◻" | let shelldict["O-40" ]=shelldict["40 19  O"]
+let shelldict["41 19  O"]= "◼◼◻◻◻ ◼◻ ◻" | let shelldict["O-41" ]=shelldict["41 19  O"]
+let shelldict["42 19  O"]= "◼◼◻◻◻ ◼◻ ◻" | let shelldict["O-42" ]=shelldict["42 19  O"]
+let shelldict["43 19  O"]= "◼◼◻◻◻ ◼◻ ◻" | let shelldict["O-43" ]=shelldict["43 19  O"]
+let shelldict["38 20  C"]= "◼◼◼◻◻ ◼◻ ◻" | let shelldict["C-38" ]=shelldict["38 20  C"]
+let shelldict["39 20  C"]= "◼◼◼◻◻ ◼◻ ◻" | let shelldict["C-39" ]=shelldict["39 20  C"]
+let shelldict["40 20  C"]= "◼◼◼◻◻ ◼◻ ◻" | let shelldict["C-40" ]=shelldict["40 20  C"]
+let shelldict["41 20  C"]= "◼◼◼◻◻ ◼◻ ◻" | let shelldict["C-41" ]=shelldict["41 20  C"]
+let shelldict["42 20  C"]= "◼◼◼◻◻ ◼◻ ◻" | let shelldict["C-42" ]=shelldict["42 20  C"]
+let shelldict["43 20  C"]= "◼◼◼◻◻ ◼◻ ◻" | let shelldict["C-43" ]=shelldict["43 20  C"]
+let shelldict["44 20  C"]= "◼◼◼◻◻ ◼◻ ◻" | let shelldict["C-44" ]=shelldict["44 20  C"]
+let shelldict["45 20  C"]= "◼◼◼◻◻ ◼◻ ◻" | let shelldict["C-45" ]=shelldict["45 20  C"]
+let shelldict["40 21  E"]= "◼◼◼◼◻ ◼◻ ◻" | let shelldict["E-40" ]=shelldict["40 21  E"]
+let shelldict["41 21  E"]= "◼◼◼◼◻ ◼◻ ◻" | let shelldict["E-41" ]=shelldict["41 21  E"]
+let shelldict["42 21  E"]= "◼◼◼◼◻ ◼◻ ◻" | let shelldict["E-42" ]=shelldict["42 21  E"]
+let shelldict["43 21  E"]= "◼◼◼◼◻ ◼◻ ◻" | let shelldict["E-43" ]=shelldict["43 21  E"]
+let shelldict["44 21  E"]= "◼◼◼◼◻ ◼◻ ◻" | let shelldict["E-44" ]=shelldict["44 21  E"]
+let shelldict["45 21  E"]= "◼◼◼◼◻ ◼◻ ◻" | let shelldict["E-45" ]=shelldict["45 21  E"]
+let shelldict["46 21  E"]= "◼◼◼◼◻ ◼◻ ◻" | let shelldict["E-46" ]=shelldict["46 21  E"]
+let shelldict["47 21  E"]= "◼◼◼◼◻ ◼◻ ◻" | let shelldict["E-47" ]=shelldict["47 21  E"]
+let shelldict["48 21  E"]= "◼◼◼◼◻ ◼◻ ◻" | let shelldict["E-48" ]=shelldict["48 21  E"]
+let shelldict["42 22  A"]= "◼◼◼◼◼ ◼◻ ◻" | let shelldict["A-42" ]=shelldict["42 22  A"]
+let shelldict["43 22  A"]= "◼◼◼◼◼ ◼◻ ◻" | let shelldict["A-43" ]=shelldict["43 22  A"]
+let shelldict["44 22  A"]= "◼◼◼◼◼ ◼◻ ◻" | let shelldict["A-44" ]=shelldict["44 22  A"]
+let shelldict["45 22  A"]= "◼◼◼◼◼ ◼◻ ◻" | let shelldict["A-45" ]=shelldict["45 22  A"]
+let shelldict["46 22  A"]= "◼◼◼◼◼ ◼◻ ◻" | let shelldict["A-46" ]=shelldict["46 22  A"]
+let shelldict["47 22  A"]= "◼◼◼◼◼ ◼◻ ◻" | let shelldict["A-47" ]=shelldict["47 22  A"]
+let shelldict["48 22  A"]= "◼◼◼◼◼ ◼◻ ◻" | let shelldict["A-48" ]=shelldict["48 22  A"]
+let shelldict["49 22  A"]= "◼◼◼◼◼ ◼◻ ◻" | let shelldict["A-49" ]=shelldict["49 22  A"]
+let shelldict["50 22  A"]= "◼◼◼◼◼ ◼◻ ◻" | let shelldict["A-50" ]=shelldict["50 22  A"]
+let shelldict["44 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼" | let shelldict["Aw-44"]=shelldict["44 23 Aw"]
+let shelldict["45 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼" | let shelldict["Aw-45"]=shelldict["45 23 Aw"]
+let shelldict["46 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼" | let shelldict["Aw-46"]=shelldict["46 23 Aw"]
+let shelldict["47 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼" | let shelldict["Aw-47"]=shelldict["47 23 Aw"]
+let shelldict["48 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼" | let shelldict["Aw-48"]=shelldict["48 23 Aw"]
+let shelldict["49 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼" | let shelldict["Aw-49"]=shelldict["49 23 Aw"]
+let shelldict["50 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼" | let shelldict["Aw-50"]=shelldict["50 23 Aw"]
+let shelldict["51 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼" | let shelldict["Aw-51"]=shelldict["51 23 Aw"]
+let shelldict["52 23 Aw"]= "◼◼◼◼◼ ◼◻ ◼" | let shelldict["Aw-52"]=shelldict["52 23 Aw"]
+let shelldict["46 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼" | let shelldict["Oc-46"]=shelldict["46 24 Oc"]
+let shelldict["47 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼" | let shelldict["Oc-47"]=shelldict["47 24 Oc"]
+let shelldict["48 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼" | let shelldict["Oc-48"]=shelldict["48 24 Oc"]
+let shelldict["49 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼" | let shelldict["Oc-49"]=shelldict["49 24 Oc"]
+let shelldict["50 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼" | let shelldict["Oc-50"]=shelldict["50 24 Oc"]
+let shelldict["51 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼" | let shelldict["Oc-51"]=shelldict["51 24 Oc"]
+let shelldict["52 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼" | let shelldict["Oc-52"]=shelldict["52 24 Oc"]
+let shelldict["53 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼" | let shelldict["Oc-53"]=shelldict["53 24 Oc"]
+let shelldict["54 24 Oc"]= "◼◼◼◼◼ ◼◼ ◼" | let shelldict["Oc-54"]=shelldict["54 24 Oc"]
+let shelldict["47 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-47"]=shelldict["47 25 Nb"]
+let shelldict["48 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-48"]=shelldict["48 25 Nb"]
+let shelldict["49 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-49"]=shelldict["49 25 Nb"]
+let shelldict["50 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-50"]=shelldict["50 25 Nb"]
+let shelldict["51 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-51"]=shelldict["51 25 Nb"]
+let shelldict["52 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-52"]=shelldict["52 25 Nb"]
+let shelldict["53 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-53"]=shelldict["53 25 Nb"]
+let shelldict["54 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-54"]=shelldict["54 25 Nb"]
+let shelldict["55 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-55"]=shelldict["55 25 Nb"]
+let shelldict["56 25 Nb"]= "◻ ◻◻ ◼◻"    | let shelldict["Nb-56"]=shelldict["56 25 Nb"]
+let shelldict["50 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-50"]=shelldict["50 26 Xk"]
+let shelldict["51 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-51"]=shelldict["51 26 Xk"]
+let shelldict["52 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-52"]=shelldict["52 26 Xk"]
+let shelldict["53 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-53"]=shelldict["53 26 Xk"]
+let shelldict["54 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-54"]=shelldict["54 26 Xk"]
+let shelldict["55 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-55"]=shelldict["55 26 Xk"]
+let shelldict["56 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-56"]=shelldict["56 26 Xk"]
+let shelldict["57 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-57"]=shelldict["57 26 Xk"]
+let shelldict["58 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-58"]=shelldict["58 26 Xk"]
+let shelldict["59 26 Xk"]= "◻ ◼◻ ◼◻"    | let shelldict["Xk-59"]=shelldict["59 26 Xk"]
+let shelldict["51 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-51"]=shelldict["51 27 Ic"]
+let shelldict["52 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-52"]=shelldict["52 27 Ic"]
+let shelldict["53 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-53"]=shelldict["53 27 Ic"]
+let shelldict["54 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-54"]=shelldict["54 27 Ic"]
+let shelldict["55 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-55"]=shelldict["55 27 Ic"]
+let shelldict["56 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-56"]=shelldict["56 27 Ic"]
+let shelldict["57 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-57"]=shelldict["57 27 Ic"]
+let shelldict["58 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-58"]=shelldict["58 27 Ic"]
+let shelldict["59 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-59"]=shelldict["59 27 Ic"]
+let shelldict["60 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-60"]=shelldict["60 27 Ic"]
+let shelldict["61 27 Ic"]= "◼ ◼◻ ◼◻"    | let shelldict["Ic-61"]=shelldict["61 27 Ic"]
+let shelldict["54 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-54"]=shelldict["54 28 Yp"]
+let shelldict["55 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-55"]=shelldict["55 28 Yp"]
+let shelldict["56 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-56"]=shelldict["56 28 Yp"]
+let shelldict["57 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-57"]=shelldict["57 28 Yp"]
+let shelldict["58 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-58"]=shelldict["58 28 Yp"]
+let shelldict["59 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-59"]=shelldict["59 28 Yp"]
+let shelldict["60 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-60"]=shelldict["60 28 Yp"]
+let shelldict["61 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-61"]=shelldict["61 28 Yp"]
+let shelldict["62 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-62"]=shelldict["62 28 Yp"]
+let shelldict["63 28 Yp"]= "◼ ◼◼ ◼◻"    | let shelldict["Yp-63"]=shelldict["63 28 Yp"]
+let shelldict["56 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-56"]=shelldict["56 29 Jx"]
+let shelldict["57 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-57"]=shelldict["57 29 Jx"]
+let shelldict["58 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-58"]=shelldict["58 29 Jx"]
+let shelldict["59 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-59"]=shelldict["59 29 Jx"]
+let shelldict["60 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-60"]=shelldict["60 29 Jx"]
+let shelldict["61 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-61"]=shelldict["61 29 Jx"]
+let shelldict["62 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-62"]=shelldict["62 29 Jx"]
+let shelldict["63 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-63"]=shelldict["63 29 Jx"]
+let shelldict["64 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-64"]=shelldict["64 29 Jx"]
+let shelldict["65 29 Jx"]= "◼ ◼◼ ◼◼"    | let shelldict["Jx-65"]=shelldict["65 29 Jx"]
+let shelldict["57 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-57"]=shelldict["57 30 Hb"]
+let shelldict["58 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-58"]=shelldict["58 30 Hb"]
+let shelldict["59 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-59"]=shelldict["59 30 Hb"]
+let shelldict["60 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-60"]=shelldict["60 30 Hb"]
+let shelldict["61 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-61"]=shelldict["61 30 Hb"]
+let shelldict["62 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-62"]=shelldict["62 30 Hb"]
+let shelldict["63 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-63"]=shelldict["63 30 Hb"]
+let shelldict["64 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-64"]=shelldict["64 30 Hb"]
+let shelldict["65 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-65"]=shelldict["65 30 Hb"]
+let shelldict["66 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-66"]=shelldict["66 30 Hb"]
+let shelldict["67 30 Hb"]= "◼◻ ◻◻◻ ◻◻◻" | let shelldict["Hb-67"]=shelldict["67 30 Hb"]
+let shelldict["60 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-60"]=shelldict["60 31 At"]
+let shelldict["61 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-61"]=shelldict["61 31 At"]
+let shelldict["62 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-62"]=shelldict["62 31 At"]
+let shelldict["63 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-63"]=shelldict["63 31 At"]
+let shelldict["64 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-64"]=shelldict["64 31 At"]
+let shelldict["65 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-65"]=shelldict["65 31 At"]
+let shelldict["66 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-66"]=shelldict["66 31 At"]
+let shelldict["67 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-67"]=shelldict["67 31 At"]
+let shelldict["68 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-68"]=shelldict["68 31 At"]
+let shelldict["69 31 At"]= "◼◻ ◻◻◻ ◼◻◻" | let shelldict["At-69"]=shelldict["69 31 At"]
+let shelldict["61 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-61"]=shelldict["61 32 Ny"]
+let shelldict["62 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-62"]=shelldict["62 32 Ny"]
+let shelldict["63 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-63"]=shelldict["63 32 Ny"]
+let shelldict["64 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-64"]=shelldict["64 32 Ny"]
+let shelldict["65 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-65"]=shelldict["65 32 Ny"]
+let shelldict["66 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-66"]=shelldict["66 32 Ny"]
+let shelldict["67 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-67"]=shelldict["67 32 Ny"]
+let shelldict["68 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-68"]=shelldict["68 32 Ny"]
+let shelldict["69 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-69"]=shelldict["69 32 Ny"]
+let shelldict["70 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-70"]=shelldict["70 32 Ny"]
+let shelldict["71 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-71"]=shelldict["71 32 Ny"]
+let shelldict["72 32 Ny"]= "◼◼ ◻◻◻ ◼◻◻" | let shelldict["Ny-72"]=shelldict["72 32 Ny"]
+let shelldict["64 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-64"]=shelldict["64 33 Pw"]
+let shelldict["65 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-65"]=shelldict["65 33 Pw"]
+let shelldict["66 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-66"]=shelldict["66 33 Pw"]
+let shelldict["67 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-67"]=shelldict["67 33 Pw"]
+let shelldict["68 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-68"]=shelldict["68 33 Pw"]
+let shelldict["69 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-69"]=shelldict["69 33 Pw"]
+let shelldict["70 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-70"]=shelldict["70 33 Pw"]
+let shelldict["71 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-71"]=shelldict["71 33 Pw"]
+let shelldict["72 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-72"]=shelldict["72 33 Pw"]
+let shelldict["73 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-73"]=shelldict["73 33 Pw"]
+let shelldict["74 33 Pw"]= "◼◼ ◼◻◻ ◼◻◻" | let shelldict["Pw-74"]=shelldict["74 33 Pw"]
+let shelldict["66 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-66"]=shelldict["66 34 Gk"]
+let shelldict["67 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-67"]=shelldict["67 34 Gk"]
+let shelldict["68 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-68"]=shelldict["68 34 Gk"]
+let shelldict["69 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-69"]=shelldict["69 34 Gk"]
+let shelldict["70 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-70"]=shelldict["70 34 Gk"]
+let shelldict["71 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-71"]=shelldict["71 34 Gk"]
+let shelldict["72 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-72"]=shelldict["72 34 Gk"]
+let shelldict["73 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-73"]=shelldict["73 34 Gk"]
+let shelldict["74 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-74"]=shelldict["74 34 Gk"]
+let shelldict["75 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-75"]=shelldict["75 34 Gk"]
+let shelldict["76 34 Gk"]= "◼◼ ◼◼◻ ◼◻◻" | let shelldict["Gk-76"]=shelldict["76 34 Gk"]
+let shelldict["67 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-67"]=shelldict["67 35 Qi"]
+let shelldict["68 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-68"]=shelldict["68 35 Qi"]
+let shelldict["69 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-69"]=shelldict["69 35 Qi"]
+let shelldict["70 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-70"]=shelldict["70 35 Qi"]
+let shelldict["71 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-71"]=shelldict["71 35 Qi"]
+let shelldict["72 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-72"]=shelldict["72 35 Qi"]
+let shelldict["73 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-73"]=shelldict["73 35 Qi"]
+let shelldict["74 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-74"]=shelldict["74 35 Qi"]
+let shelldict["75 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-75"]=shelldict["75 35 Qi"]
+let shelldict["76 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-76"]=shelldict["76 35 Qi"]
+let shelldict["77 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-77"]=shelldict["77 35 Qi"]
+let shelldict["78 35 Qi"]= "◼◼ ◼◼◻ ◼◼◻" | let shelldict["Qi-78"]=shelldict["78 35 Qi"]
+let shelldict["69 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-69"]=shelldict["69 36 Xy"]
+let shelldict["70 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-70"]=shelldict["70 36 Xy"]
+let shelldict["71 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-71"]=shelldict["71 36 Xy"]
+let shelldict["72 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-72"]=shelldict["72 36 Xy"]
+let shelldict["73 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-73"]=shelldict["73 36 Xy"]
+let shelldict["74 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-74"]=shelldict["74 36 Xy"]
+let shelldict["75 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-75"]=shelldict["75 36 Xy"]
+let shelldict["76 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-76"]=shelldict["76 36 Xy"]
+let shelldict["77 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-77"]=shelldict["77 36 Xy"]
+let shelldict["78 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-78"]=shelldict["78 36 Xy"]
+let shelldict["79 36 Xy"]= "◼◼ ◼◼◼ ◼◼◻" | let shelldict["Xy-79"]=shelldict["79 36 Xy"]
+let shelldict["72 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼" | let shelldict["Gq-72"]=shelldict["72 37 Gq"]
+let shelldict["73 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼" | let shelldict["Gq-73"]=shelldict["73 37 Gq"]
+let shelldict["74 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼" | let shelldict["Gq-74"]=shelldict["74 37 Gq"]
+let shelldict["75 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼" | let shelldict["Gq-75"]=shelldict["75 37 Gq"]
+let shelldict["76 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼" | let shelldict["Gq-76"]=shelldict["76 37 Gq"]
+let shelldict["77 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼" | let shelldict["Gq-77"]=shelldict["77 37 Gq"]
+let shelldict["78 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼" | let shelldict["Gq-78"]=shelldict["78 37 Gq"]
+let shelldict["79 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼" | let shelldict["Gq-79"]=shelldict["79 37 Gq"]
+let shelldict["80 37 Gq"]= "◼◼ ◼◼◼ ◼◼◼" | let shelldict["Gq-80"]=shelldict["80 37 Gq"]
+let shelldict["73 38 Bt"]= "◻ ◼◻◻◻"     | let shelldict["Bt-73"]=shelldict["73 38 Bt"]
+let shelldict["74 38 Bt"]= "◻ ◼◻◻◻"     | let shelldict["Bt-74"]=shelldict["74 38 Bt"]
+let shelldict["75 38 Bt"]= "◻ ◼◻◻◻"     | let shelldict["Bt-75"]=shelldict["75 38 Bt"]
+let shelldict["76 38 Bt"]= "◻ ◼◻◻◻"     | let shelldict["Bt-76"]=shelldict["76 38 Bt"]
+let shelldict["77 38 Bt"]= "◻ ◼◻◻◻"     | let shelldict["Bt-77"]=shelldict["77 38 Bt"]
+let shelldict["78 38 Bt"]= "◻ ◼◻◻◻"     | let shelldict["Bt-78"]=shelldict["78 38 Bt"]
+let shelldict["79 38 Bt"]= "◻ ◼◻◻◻"     | let shelldict["Bt-79"]=shelldict["79 38 Bt"]
+let shelldict["80 38 Bt"]= "◻ ◼◻◻◻"     | let shelldict["Bt-80"]=shelldict["80 38 Bt"]
+let shelldict["81 38 Bt"]= "◻ ◼◻◻◻"     | let shelldict["Bt-81"]=shelldict["81 38 Bt"]
+let shelldict["75 39  H"]= "◼ ◼◻◻◻"     | let shelldict["H-75" ]=shelldict["75 39  H"]
+let shelldict["76 39  H"]= "◼ ◼◻◻◻"     | let shelldict["H-76" ]=shelldict["76 39  H"]
+let shelldict["77 39  H"]= "◼ ◼◻◻◻"     | let shelldict["H-77" ]=shelldict["77 39  H"]
+let shelldict["78 39  H"]= "◼ ◼◻◻◻"     | let shelldict["H-78" ]=shelldict["78 39  H"]
+let shelldict["79 39  H"]= "◼ ◼◻◻◻"     | let shelldict["H-79" ]=shelldict["79 39  H"]
+let shelldict["80 39  H"]= "◼ ◼◻◻◻"     | let shelldict["H-80" ]=shelldict["80 39  H"]
+let shelldict["81 39  H"]= "◼ ◼◻◻◻"     | let shelldict["H-81" ]=shelldict["81 39  H"]
+let shelldict["82 39  H"]= "◼ ◼◻◻◻"     | let shelldict["H-82" ]=shelldict["82 39  H"]
+let shelldict["78 40  U"]= "◼ ◼◼◻◻"     | let shelldict["U-78" ]=shelldict["78 40  U"]
+let shelldict["79 40  U"]= "◼ ◼◼◻◻"     | let shelldict["U-79" ]=shelldict["79 40  U"]
+let shelldict["80 40  U"]= "◼ ◼◼◻◻"     | let shelldict["U-80" ]=shelldict["80 40  U"]
+let shelldict["81 40  U"]= "◼ ◼◼◻◻"     | let shelldict["U-81" ]=shelldict["81 40  U"]
+let shelldict["82 40  U"]= "◼ ◼◼◻◻"     | let shelldict["U-82" ]=shelldict["82 40  U"]
+let shelldict["83 40  U"]= "◼ ◼◼◻◻"     | let shelldict["U-83" ]=shelldict["83 40  U"]
+let shelldict["79 41 Sq"]= "◼ ◼◼◼◻"     | let shelldict["Sq-79"]=shelldict["79 41 Sq"]
+let shelldict["80 41 Sq"]= "◼ ◼◼◼◻"     | let shelldict["Sq-80"]=shelldict["80 41 Sq"]
+let shelldict["81 41 Sq"]= "◼ ◼◼◼◻"     | let shelldict["Sq-81"]=shelldict["81 41 Sq"]
+let shelldict["82 41 Sq"]= "◼ ◼◼◼◻"     | let shelldict["Sq-82"]=shelldict["82 41 Sq"]
+let shelldict["83 41 Sq"]= "◼ ◼◼◼◻"     | let shelldict["Sq-83"]=shelldict["83 41 Sq"]
+let shelldict["84 41 Sq"]= "◼ ◼◼◼◻"     | let shelldict["Sq-84"]=shelldict["84 41 Sq"]
+let shelldict["83 42 Ua"]= "◼ ◼◼◼◼"     | let shelldict["Ua-83"]=shelldict["83 42 Ua"]
+let shelldict["84 42 Ua"]= "◼ ◼◼◼◼"     | let shelldict["Ua-84"]=shelldict["84 42 Ua"]
+let shelldict["85 42 Ua"]= "◼ ◼◼◼◼"     | let shelldict["Ua-85"]=shelldict["85 42 Ua"]
 
+let shelldictlong[" 1  1 Ju"]="⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ju-1" ]=shelldictlong[" 1  1 Ju"]
+let shelldictlong[" 2  1 Ju"]="⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ju-2" ]=shelldictlong[" 2  1 Ju"]
+let shelldictlong[" 3  1 Ju"]="⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ju-3" ]=shelldictlong[" 3  1 Ju"]
+let shelldictlong[" 4  2  W"]="⎥◼◼◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["W-4"  ]=shelldictlong[" 4  2  W"]
+let shelldictlong[" 5  2  W"]="⎥◼◼◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["W-5"  ]=shelldictlong[" 5  2  W"]
+let shelldictlong[" 5  3 Cq"]="⎥◼◼◼⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Cq-5" ]=shelldictlong[" 5  3 Cq"]
+let shelldictlong[" 6  3 Cq"]="⎥◼◼◼⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Cq-6" ]=shelldictlong[" 6  3 Cq"]
+let shelldictlong[" 7  3 Cq"]="⎥◼◼◼⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Cq-7" ]=shelldictlong[" 7  3 Cq"]
+let shelldictlong[" 7  4 Af"]="⎥◼◼◼⎢⎥◼◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Af-7" ]=shelldictlong[" 7  4 Af"]
+let shelldictlong[" 8  4 Af"]="⎥◼◼◼⎢⎥◼◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Af-8" ]=shelldictlong[" 8  4 Af"]
+let shelldictlong[" 9  4 Af"]="⎥◼◼◼⎢⎥◼◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Af-9" ]=shelldictlong[" 9  4 Af"]
+let shelldictlong["10  4 Af"]="⎥◼◼◼⎢⎥◼◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Af-10"]=shelldictlong["10  4 Af"]
+let shelldictlong[" 9  5 Xl"]="⎥◼◼◼⎢⎥◼◼ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xl-9" ]=shelldictlong[" 9  5 Xl"]
+let shelldictlong["10  5 Xl"]="⎥◼◼◼⎢⎥◼◼ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xl-10"]=shelldictlong["10  5 Xl"]
+let shelldictlong["11  5 Xl"]="⎥◼◼◼⎢⎥◼◼ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xl-11"]=shelldictlong["11  5 Xl"]
+let shelldictlong["12  5 Xl"]="⎥◼◼◼⎢⎥◼◼ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xl-12"]=shelldictlong["12  5 Xl"]
+let shelldictlong["10  6 Pq"]="⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pq-10"]=shelldictlong["10  6 Pq"]
+let shelldictlong["11  6 Pq"]="⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pq-11"]=shelldictlong["11  6 Pq"]
+let shelldictlong["12  6 Pq"]="⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pq-12"]=shelldictlong["12  6 Pq"]
+let shelldictlong["13  6 Pq"]="⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pq-13"]=shelldictlong["13  6 Pq"]
+let shelldictlong["14  6 Pq"]="⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pq-14"]=shelldictlong["14  6 Pq"]
+let shelldictlong["15  6 Pq"]="⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pq-15"]=shelldictlong["15  6 Pq"]
+let shelldictlong["13  7 Zz"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zz-13"]=shelldictlong["13  7 Zz"]
+let shelldictlong["14  7 Zz"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zz-14"]=shelldictlong["14  7 Zz"]
+let shelldictlong["15  7 Zz"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zz-15"]=shelldictlong["15  7 Zz"]
+let shelldictlong["16  7 Zz"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zz-16"]=shelldictlong["16  7 Zz"]
+let shelldictlong["14  8 Dx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Dx-14"]=shelldictlong["14  8 Dx"]
+let shelldictlong["15  8 Dx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Dx-15"]=shelldictlong["15  8 Dx"]
+let shelldictlong["16  8 Dx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Dx-16"]=shelldictlong["16  8 Dx"]
+let shelldictlong["17  8 Dx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Dx-17"]=shelldictlong["17  8 Dx"]
+let shelldictlong["18  8 Dx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Dx-18"]=shelldictlong["18  8 Dx"]
+let shelldictlong["19  8 Dx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Dx-19"]=shelldictlong["19  8 Dx"]
+let shelldictlong["17  9 Pm"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pm-17"]=shelldictlong["17  9 Pm"]
+let shelldictlong["18  9 Pm"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pm-18"]=shelldictlong["18  9 Pm"]
+let shelldictlong["19  9 Pm"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pm-19"]=shelldictlong["19  9 Pm"]
+let shelldictlong["20  9 Pm"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pm-20"]=shelldictlong["20  9 Pm"]
+let shelldictlong["21  9 Pm"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pm-21"]=shelldictlong["21  9 Pm"]
+let shelldictlong["19 10  M"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["M-19" ]=shelldictlong["19 10  M"]
+let shelldictlong["20 10  M"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["M-20" ]=shelldictlong["20 10  M"]
+let shelldictlong["21 10  M"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["M-21" ]=shelldictlong["21 10  M"]
+let shelldictlong["22 10  M"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["M-22" ]=shelldictlong["22 10  M"]
+let shelldictlong["23 10  M"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["M-23" ]=shelldictlong["23 10  M"]
+let shelldictlong["21 11 Fw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fw-21"]=shelldictlong["21 11 Fw"]
+let shelldictlong["22 11 Fw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fw-22"]=shelldictlong["22 11 Fw"]
+let shelldictlong["23 11 Fw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fw-23"]=shelldictlong["23 11 Fw"]
+let shelldictlong["24 11 Fw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fw-24"]=shelldictlong["24 11 Fw"]
+let shelldictlong["25 11 Fw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fw-25"]=shelldictlong["25 11 Fw"]
+let shelldictlong["26 11 Fw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fw-26"]=shelldictlong["26 11 Fw"]
+let shelldictlong["22 12 Pt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pt-22"]=shelldictlong["22 12 Pt"]
+let shelldictlong["23 12 Pt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pt-23"]=shelldictlong["23 12 Pt"]
+let shelldictlong["24 12 Pt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pt-24"]=shelldictlong["24 12 Pt"]
+let shelldictlong["25 12 Pt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pt-25"]=shelldictlong["25 12 Pt"]
+let shelldictlong["26 12 Pt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pt-26"]=shelldictlong["26 12 Pt"]
+let shelldictlong["27 12 Pt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pt-27"]=shelldictlong["27 12 Pt"]
+let shelldictlong["28 12 Pt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pt-28"]=shelldictlong["28 12 Pt"]
+let shelldictlong["25 13  S"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["S-25" ]=shelldictlong["25 13  S"]
+let shelldictlong["26 13  S"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["S-26" ]=shelldictlong["26 13  S"]
+let shelldictlong["27 13  S"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["S-27" ]=shelldictlong["27 13  S"]
+let shelldictlong["28 13  S"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["S-28" ]=shelldictlong["28 13  S"]
+let shelldictlong["29 13  S"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["S-29" ]=shelldictlong["29 13  S"]
+let shelldictlong["30 13  S"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["S-30" ]=shelldictlong["30 13  S"]
+let shelldictlong["26 14 Zq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zq-26"]=shelldictlong["26 14 Zq"]
+let shelldictlong["27 14 Zq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zq-27"]=shelldictlong["27 14 Zq"]
+let shelldictlong["28 14 Zq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zq-28"]=shelldictlong["28 14 Zq"]
+let shelldictlong["29 14 Zq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zq-29"]=shelldictlong["29 14 Zq"]
+let shelldictlong["30 14 Zq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zq-30"]=shelldictlong["30 14 Zq"]
+let shelldictlong["31 14 Zq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zq-31"]=shelldictlong["31 14 Zq"]
+let shelldictlong["32 14 Zq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Zq-32"]=shelldictlong["32 14 Zq"]
+let shelldictlong["28 15 Xc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xc-28"]=shelldictlong["28 15 Xc"]
+let shelldictlong["29 15 Xc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xc-29"]=shelldictlong["29 15 Xc"]
+let shelldictlong["30 15 Xc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xc-30"]=shelldictlong["30 15 Xc"]
+let shelldictlong["31 15 Xc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xc-31"]=shelldictlong["31 15 Xc"]
+let shelldictlong["32 15 Xc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xc-32"]=shelldictlong["32 15 Xc"]
+let shelldictlong["33 15 Xc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xc-33"]=shelldictlong["33 15 Xc"]
+let shelldictlong["34 15 Xc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xc-34"]=shelldictlong["34 15 Xc"]
+let shelldictlong["31 16 Gy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gy-31"]=shelldictlong["31 16 Gy"]
+let shelldictlong["32 16 Gy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gy-32"]=shelldictlong["32 16 Gy"]
+let shelldictlong["33 16 Gy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gy-33"]=shelldictlong["33 16 Gy"]
+let shelldictlong["34 16 Gy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gy-34"]=shelldictlong["34 16 Gy"]
+let shelldictlong["35 16 Gy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gy-35"]=shelldictlong["35 16 Gy"]
+let shelldictlong["36 16 Gy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gy-36"]=shelldictlong["36 16 Gy"]
+let shelldictlong["32 17  D"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["D-32" ]=shelldictlong["32 17  D"]
+let shelldictlong["33 17  D"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["D-33" ]=shelldictlong["33 17  D"]
+let shelldictlong["34 17  D"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["D-34" ]=shelldictlong["34 17  D"]
+let shelldictlong["35 17  D"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["D-35" ]=shelldictlong["35 17  D"]
+let shelldictlong["36 17  D"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["D-36" ]=shelldictlong["36 17  D"]
+let shelldictlong["37 17  D"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["D-37" ]=shelldictlong["37 17  D"]
+let shelldictlong["38 17  D"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["D-38" ]=shelldictlong["38 17  D"]
+let shelldictlong["39 17  D"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["D-39" ]=shelldictlong["39 17  D"]
+let shelldictlong["34 18 Fj"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fj-34"]=shelldictlong["34 18 Fj"]
+let shelldictlong["35 18 Fj"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fj-35"]=shelldictlong["35 18 Fj"]
+let shelldictlong["36 18 Fj"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fj-36"]=shelldictlong["36 18 Fj"]
+let shelldictlong["37 18 Fj"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fj-37"]=shelldictlong["37 18 Fj"]
+let shelldictlong["38 18 Fj"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fj-38"]=shelldictlong["38 18 Fj"]
+let shelldictlong["39 18 Fj"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fj-39"]=shelldictlong["39 18 Fj"]
+let shelldictlong["40 18 Fj"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fj-40"]=shelldictlong["40 18 Fj"]
+let shelldictlong["41 18 Fj"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Fj-41"]=shelldictlong["41 18 Fj"]
+let shelldictlong["36 19  O"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["O-36" ]=shelldictlong["36 19  O"]
+let shelldictlong["37 19  O"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["O-37" ]=shelldictlong["37 19  O"]
+let shelldictlong["38 19  O"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["O-38" ]=shelldictlong["38 19  O"]
+let shelldictlong["39 19  O"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["O-39" ]=shelldictlong["39 19  O"]
+let shelldictlong["40 19  O"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["O-40" ]=shelldictlong["40 19  O"]
+let shelldictlong["41 19  O"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["O-41" ]=shelldictlong["41 19  O"]
+let shelldictlong["42 19  O"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["O-42" ]=shelldictlong["42 19  O"]
+let shelldictlong["43 19  O"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["O-43" ]=shelldictlong["43 19  O"]
+let shelldictlong["38 20  C"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["C-38" ]=shelldictlong["38 20  C"]
+let shelldictlong["39 20  C"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["C-39" ]=shelldictlong["39 20  C"]
+let shelldictlong["40 20  C"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["C-40" ]=shelldictlong["40 20  C"]
+let shelldictlong["41 20  C"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["C-41" ]=shelldictlong["41 20  C"]
+let shelldictlong["42 20  C"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["C-42" ]=shelldictlong["42 20  C"]
+let shelldictlong["43 20  C"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["C-43" ]=shelldictlong["43 20  C"]
+let shelldictlong["44 20  C"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["C-44" ]=shelldictlong["44 20  C"]
+let shelldictlong["45 20  C"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["C-45" ]=shelldictlong["45 20  C"]
+let shelldictlong["40 21  E"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["E-40" ]=shelldictlong["40 21  E"]
+let shelldictlong["41 21  E"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["E-41" ]=shelldictlong["41 21  E"]
+let shelldictlong["42 21  E"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["E-42" ]=shelldictlong["42 21  E"]
+let shelldictlong["43 21  E"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["E-43" ]=shelldictlong["43 21  E"]
+let shelldictlong["44 21  E"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["E-44" ]=shelldictlong["44 21  E"]
+let shelldictlong["45 21  E"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["E-45" ]=shelldictlong["45 21  E"]
+let shelldictlong["46 21  E"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["E-46" ]=shelldictlong["46 21  E"]
+let shelldictlong["47 21  E"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["E-47" ]=shelldictlong["47 21  E"]
+let shelldictlong["48 21  E"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["E-48" ]=shelldictlong["48 21  E"]
+let shelldictlong["42 22  A"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["A-42" ]=shelldictlong["42 22  A"]
+let shelldictlong["43 22  A"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["A-43" ]=shelldictlong["43 22  A"]
+let shelldictlong["44 22  A"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["A-44" ]=shelldictlong["44 22  A"]
+let shelldictlong["45 22  A"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["A-45" ]=shelldictlong["45 22  A"]
+let shelldictlong["46 22  A"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["A-46" ]=shelldictlong["46 22  A"]
+let shelldictlong["47 22  A"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["A-47" ]=shelldictlong["47 22  A"]
+let shelldictlong["48 22  A"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["A-48" ]=shelldictlong["48 22  A"]
+let shelldictlong["49 22  A"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["A-49" ]=shelldictlong["49 22  A"]
+let shelldictlong["50 22  A"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["A-50" ]=shelldictlong["50 22  A"]
+let shelldictlong["44 23 Aw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Aw-44"]=shelldictlong["44 23 Aw"]
+let shelldictlong["45 23 Aw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Aw-45"]=shelldictlong["45 23 Aw"]
+let shelldictlong["46 23 Aw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Aw-46"]=shelldictlong["46 23 Aw"]
+let shelldictlong["47 23 Aw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Aw-47"]=shelldictlong["47 23 Aw"]
+let shelldictlong["48 23 Aw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Aw-48"]=shelldictlong["48 23 Aw"]
+let shelldictlong["49 23 Aw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Aw-49"]=shelldictlong["49 23 Aw"]
+let shelldictlong["50 23 Aw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Aw-50"]=shelldictlong["50 23 Aw"]
+let shelldictlong["51 23 Aw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Aw-51"]=shelldictlong["51 23 Aw"]
+let shelldictlong["52 23 Aw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Aw-52"]=shelldictlong["52 23 Aw"]
+let shelldictlong["46 24 Oc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Oc-46"]=shelldictlong["46 24 Oc"]
+let shelldictlong["47 24 Oc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Oc-47"]=shelldictlong["47 24 Oc"]
+let shelldictlong["48 24 Oc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Oc-48"]=shelldictlong["48 24 Oc"]
+let shelldictlong["49 24 Oc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Oc-49"]=shelldictlong["49 24 Oc"]
+let shelldictlong["50 24 Oc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Oc-50"]=shelldictlong["50 24 Oc"]
+let shelldictlong["51 24 Oc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Oc-51"]=shelldictlong["51 24 Oc"]
+let shelldictlong["52 24 Oc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Oc-52"]=shelldictlong["52 24 Oc"]
+let shelldictlong["53 24 Oc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Oc-53"]=shelldictlong["53 24 Oc"]
+let shelldictlong["54 24 Oc"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Oc-54"]=shelldictlong["54 24 Oc"]
+let shelldictlong["47 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-47"]=shelldictlong["47 25 Nb"]
+let shelldictlong["48 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-48"]=shelldictlong["48 25 Nb"]
+let shelldictlong["49 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-49"]=shelldictlong["49 25 Nb"]
+let shelldictlong["50 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-50"]=shelldictlong["50 25 Nb"]
+let shelldictlong["51 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-51"]=shelldictlong["51 25 Nb"]
+let shelldictlong["52 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-52"]=shelldictlong["52 25 Nb"]
+let shelldictlong["53 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-53"]=shelldictlong["53 25 Nb"]
+let shelldictlong["54 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-54"]=shelldictlong["54 25 Nb"]
+let shelldictlong["55 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-55"]=shelldictlong["55 25 Nb"]
+let shelldictlong["56 25 Nb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Nb-56"]=shelldictlong["56 25 Nb"]
+let shelldictlong["50 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-50"]=shelldictlong["50 26 Xk"]
+let shelldictlong["51 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-51"]=shelldictlong["51 26 Xk"]
+let shelldictlong["52 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-52"]=shelldictlong["52 26 Xk"]
+let shelldictlong["53 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-53"]=shelldictlong["53 26 Xk"]
+let shelldictlong["54 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-54"]=shelldictlong["54 26 Xk"]
+let shelldictlong["55 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-55"]=shelldictlong["55 26 Xk"]
+let shelldictlong["56 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-56"]=shelldictlong["56 26 Xk"]
+let shelldictlong["57 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-57"]=shelldictlong["57 26 Xk"]
+let shelldictlong["58 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-58"]=shelldictlong["58 26 Xk"]
+let shelldictlong["59 26 Xk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xk-59"]=shelldictlong["59 26 Xk"]
+let shelldictlong["51 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-51"]=shelldictlong["51 27 Ic"]
+let shelldictlong["52 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-52"]=shelldictlong["52 27 Ic"]
+let shelldictlong["53 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-53"]=shelldictlong["53 27 Ic"]
+let shelldictlong["54 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-54"]=shelldictlong["54 27 Ic"]
+let shelldictlong["55 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-55"]=shelldictlong["55 27 Ic"]
+let shelldictlong["56 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-56"]=shelldictlong["56 27 Ic"]
+let shelldictlong["57 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-57"]=shelldictlong["57 27 Ic"]
+let shelldictlong["58 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-58"]=shelldictlong["58 27 Ic"]
+let shelldictlong["59 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-59"]=shelldictlong["59 27 Ic"]
+let shelldictlong["60 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-60"]=shelldictlong["60 27 Ic"]
+let shelldictlong["61 27 Ic"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ic-61"]=shelldictlong["61 27 Ic"]
+let shelldictlong["54 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-54"]=shelldictlong["54 28 Yp"]
+let shelldictlong["55 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-55"]=shelldictlong["55 28 Yp"]
+let shelldictlong["56 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-56"]=shelldictlong["56 28 Yp"]
+let shelldictlong["57 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-57"]=shelldictlong["57 28 Yp"]
+let shelldictlong["58 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-58"]=shelldictlong["58 28 Yp"]
+let shelldictlong["59 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-59"]=shelldictlong["59 28 Yp"]
+let shelldictlong["60 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-60"]=shelldictlong["60 28 Yp"]
+let shelldictlong["61 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-61"]=shelldictlong["61 28 Yp"]
+let shelldictlong["62 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-62"]=shelldictlong["62 28 Yp"]
+let shelldictlong["63 28 Yp"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Yp-63"]=shelldictlong["63 28 Yp"]
+let shelldictlong["56 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-56"]=shelldictlong["56 29 Jx"]
+let shelldictlong["57 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-57"]=shelldictlong["57 29 Jx"]
+let shelldictlong["58 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-58"]=shelldictlong["58 29 Jx"]
+let shelldictlong["59 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-59"]=shelldictlong["59 29 Jx"]
+let shelldictlong["60 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-60"]=shelldictlong["60 29 Jx"]
+let shelldictlong["61 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-61"]=shelldictlong["61 29 Jx"]
+let shelldictlong["62 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-62"]=shelldictlong["62 29 Jx"]
+let shelldictlong["63 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-63"]=shelldictlong["63 29 Jx"]
+let shelldictlong["64 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-64"]=shelldictlong["64 29 Jx"]
+let shelldictlong["65 29 Jx"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Jx-65"]=shelldictlong["65 29 Jx"]
+let shelldictlong["57 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-57"]=shelldictlong["57 30 Hb"]
+let shelldictlong["58 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-58"]=shelldictlong["58 30 Hb"]
+let shelldictlong["59 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-59"]=shelldictlong["59 30 Hb"]
+let shelldictlong["60 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-60"]=shelldictlong["60 30 Hb"]
+let shelldictlong["61 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-61"]=shelldictlong["61 30 Hb"]
+let shelldictlong["62 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-62"]=shelldictlong["62 30 Hb"]
+let shelldictlong["63 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-63"]=shelldictlong["63 30 Hb"]
+let shelldictlong["64 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-64"]=shelldictlong["64 30 Hb"]
+let shelldictlong["65 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-65"]=shelldictlong["65 30 Hb"]
+let shelldictlong["66 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-66"]=shelldictlong["66 30 Hb"]
+let shelldictlong["67 30 Hb"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Hb-67"]=shelldictlong["67 30 Hb"]
+let shelldictlong["60 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-60"]=shelldictlong["60 31 At"]
+let shelldictlong["61 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-61"]=shelldictlong["61 31 At"]
+let shelldictlong["62 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-62"]=shelldictlong["62 31 At"]
+let shelldictlong["63 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-63"]=shelldictlong["63 31 At"]
+let shelldictlong["64 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-64"]=shelldictlong["64 31 At"]
+let shelldictlong["65 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-65"]=shelldictlong["65 31 At"]
+let shelldictlong["66 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-66"]=shelldictlong["66 31 At"]
+let shelldictlong["67 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-67"]=shelldictlong["67 31 At"]
+let shelldictlong["68 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-68"]=shelldictlong["68 31 At"]
+let shelldictlong["69 31 At"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["At-69"]=shelldictlong["69 31 At"]
+let shelldictlong["61 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-61"]=shelldictlong["61 32 Ny"]
+let shelldictlong["62 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-62"]=shelldictlong["62 32 Ny"]
+let shelldictlong["63 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-63"]=shelldictlong["63 32 Ny"]
+let shelldictlong["64 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-64"]=shelldictlong["64 32 Ny"]
+let shelldictlong["65 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-65"]=shelldictlong["65 32 Ny"]
+let shelldictlong["66 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-66"]=shelldictlong["66 32 Ny"]
+let shelldictlong["67 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-67"]=shelldictlong["67 32 Ny"]
+let shelldictlong["68 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-68"]=shelldictlong["68 32 Ny"]
+let shelldictlong["69 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-69"]=shelldictlong["69 32 Ny"]
+let shelldictlong["70 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-70"]=shelldictlong["70 32 Ny"]
+let shelldictlong["71 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-71"]=shelldictlong["71 32 Ny"]
+let shelldictlong["72 32 Ny"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ny-72"]=shelldictlong["72 32 Ny"]
+let shelldictlong["64 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-64"]=shelldictlong["64 33 Pw"]
+let shelldictlong["65 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-65"]=shelldictlong["65 33 Pw"]
+let shelldictlong["66 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-66"]=shelldictlong["66 33 Pw"]
+let shelldictlong["67 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-67"]=shelldictlong["67 33 Pw"]
+let shelldictlong["68 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-68"]=shelldictlong["68 33 Pw"]
+let shelldictlong["69 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-69"]=shelldictlong["69 33 Pw"]
+let shelldictlong["70 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-70"]=shelldictlong["70 33 Pw"]
+let shelldictlong["71 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-71"]=shelldictlong["71 33 Pw"]
+let shelldictlong["72 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-72"]=shelldictlong["72 33 Pw"]
+let shelldictlong["73 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-73"]=shelldictlong["73 33 Pw"]
+let shelldictlong["74 33 Pw"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Pw-74"]=shelldictlong["74 33 Pw"]
+let shelldictlong["66 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-66"]=shelldictlong["66 34 Gk"]
+let shelldictlong["67 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-67"]=shelldictlong["67 34 Gk"]
+let shelldictlong["68 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-68"]=shelldictlong["68 34 Gk"]
+let shelldictlong["69 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-69"]=shelldictlong["69 34 Gk"]
+let shelldictlong["70 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-70"]=shelldictlong["70 34 Gk"]
+let shelldictlong["71 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-71"]=shelldictlong["71 34 Gk"]
+let shelldictlong["72 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-72"]=shelldictlong["72 34 Gk"]
+let shelldictlong["73 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-73"]=shelldictlong["73 34 Gk"]
+let shelldictlong["74 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-74"]=shelldictlong["74 34 Gk"]
+let shelldictlong["75 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-75"]=shelldictlong["75 34 Gk"]
+let shelldictlong["76 34 Gk"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gk-76"]=shelldictlong["76 34 Gk"]
+let shelldictlong["67 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-67"]=shelldictlong["67 35 Qi"]
+let shelldictlong["68 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-68"]=shelldictlong["68 35 Qi"]
+let shelldictlong["69 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-69"]=shelldictlong["69 35 Qi"]
+let shelldictlong["70 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-70"]=shelldictlong["70 35 Qi"]
+let shelldictlong["71 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-71"]=shelldictlong["71 35 Qi"]
+let shelldictlong["72 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-72"]=shelldictlong["72 35 Qi"]
+let shelldictlong["73 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-73"]=shelldictlong["73 35 Qi"]
+let shelldictlong["74 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-74"]=shelldictlong["74 35 Qi"]
+let shelldictlong["75 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-75"]=shelldictlong["75 35 Qi"]
+let shelldictlong["76 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-76"]=shelldictlong["76 35 Qi"]
+let shelldictlong["77 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-77"]=shelldictlong["77 35 Qi"]
+let shelldictlong["78 35 Qi"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Qi-78"]=shelldictlong["78 35 Qi"]
+let shelldictlong["69 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-69"]=shelldictlong["69 36 Xy"]
+let shelldictlong["70 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-70"]=shelldictlong["70 36 Xy"]
+let shelldictlong["71 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-71"]=shelldictlong["71 36 Xy"]
+let shelldictlong["72 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-72"]=shelldictlong["72 36 Xy"]
+let shelldictlong["73 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-73"]=shelldictlong["73 36 Xy"]
+let shelldictlong["74 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-74"]=shelldictlong["74 36 Xy"]
+let shelldictlong["75 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-75"]=shelldictlong["75 36 Xy"]
+let shelldictlong["76 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-76"]=shelldictlong["76 36 Xy"]
+let shelldictlong["77 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-77"]=shelldictlong["77 36 Xy"]
+let shelldictlong["78 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-78"]=shelldictlong["78 36 Xy"]
+let shelldictlong["79 36 Xy"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Xy-79"]=shelldictlong["79 36 Xy"]
+let shelldictlong["72 37 Gq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gq-72"]=shelldictlong["72 37 Gq"]
+let shelldictlong["73 37 Gq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gq-73"]=shelldictlong["73 37 Gq"]
+let shelldictlong["74 37 Gq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gq-74"]=shelldictlong["74 37 Gq"]
+let shelldictlong["75 37 Gq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gq-75"]=shelldictlong["75 37 Gq"]
+let shelldictlong["76 37 Gq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gq-76"]=shelldictlong["76 37 Gq"]
+let shelldictlong["77 37 Gq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gq-77"]=shelldictlong["77 37 Gq"]
+let shelldictlong["78 37 Gq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gq-78"]=shelldictlong["78 37 Gq"]
+let shelldictlong["79 37 Gq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gq-79"]=shelldictlong["79 37 Gq"]
+let shelldictlong["80 37 Gq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Gq-80"]=shelldictlong["80 37 Gq"]
+let shelldictlong["73 38 Bt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢" | let shelldictlong["Bt-73"]=shelldictlong["73 38 Bt"]
+let shelldictlong["74 38 Bt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢" | let shelldictlong["Bt-74"]=shelldictlong["74 38 Bt"]
+let shelldictlong["75 38 Bt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢" | let shelldictlong["Bt-75"]=shelldictlong["75 38 Bt"]
+let shelldictlong["76 38 Bt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢" | let shelldictlong["Bt-76"]=shelldictlong["76 38 Bt"]
+let shelldictlong["77 38 Bt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢" | let shelldictlong["Bt-77"]=shelldictlong["77 38 Bt"]
+let shelldictlong["78 38 Bt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢" | let shelldictlong["Bt-78"]=shelldictlong["78 38 Bt"]
+let shelldictlong["79 38 Bt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢" | let shelldictlong["Bt-79"]=shelldictlong["79 38 Bt"]
+let shelldictlong["80 38 Bt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢" | let shelldictlong["Bt-80"]=shelldictlong["80 38 Bt"]
+let shelldictlong["81 38 Bt"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢" | let shelldictlong["Bt-81"]=shelldictlong["81 38 Bt"]
+let shelldictlong["75 39  H"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢" | let shelldictlong["H-75" ]=shelldictlong["75 39  H"]
+let shelldictlong["76 39  H"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢" | let shelldictlong["H-76" ]=shelldictlong["76 39  H"]
+let shelldictlong["77 39  H"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢" | let shelldictlong["H-77" ]=shelldictlong["77 39  H"]
+let shelldictlong["78 39  H"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢" | let shelldictlong["H-78" ]=shelldictlong["78 39  H"]
+let shelldictlong["79 39  H"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢" | let shelldictlong["H-79" ]=shelldictlong["79 39  H"]
+let shelldictlong["80 39  H"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢" | let shelldictlong["H-80" ]=shelldictlong["80 39  H"]
+let shelldictlong["81 39  H"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢" | let shelldictlong["H-81" ]=shelldictlong["81 39  H"]
+let shelldictlong["82 39  H"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢" | let shelldictlong["H-82" ]=shelldictlong["82 39  H"]
+let shelldictlong["78 40  U"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢" | let shelldictlong["U-78" ]=shelldictlong["78 40  U"]
+let shelldictlong["79 40  U"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢" | let shelldictlong["U-79" ]=shelldictlong["79 40  U"]
+let shelldictlong["80 40  U"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢" | let shelldictlong["U-80" ]=shelldictlong["80 40  U"]
+let shelldictlong["81 40  U"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢" | let shelldictlong["U-81" ]=shelldictlong["81 40  U"]
+let shelldictlong["82 40  U"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢" | let shelldictlong["U-82" ]=shelldictlong["82 40  U"]
+let shelldictlong["83 40  U"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢" | let shelldictlong["U-83" ]=shelldictlong["83 40  U"]
+let shelldictlong["79 41 Sq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢" | let shelldictlong["Sq-79"]=shelldictlong["79 41 Sq"]
+let shelldictlong["80 41 Sq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢" | let shelldictlong["Sq-80"]=shelldictlong["80 41 Sq"]
+let shelldictlong["81 41 Sq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢" | let shelldictlong["Sq-81"]=shelldictlong["81 41 Sq"]
+let shelldictlong["82 41 Sq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢" | let shelldictlong["Sq-82"]=shelldictlong["82 41 Sq"]
+let shelldictlong["83 41 Sq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢" | let shelldictlong["Sq-83"]=shelldictlong["83 41 Sq"]
+let shelldictlong["84 41 Sq"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢" | let shelldictlong["Sq-84"]=shelldictlong["84 41 Sq"]
+let shelldictlong["83 42 Ua"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢" | let shelldictlong["Ua-83"]=shelldictlong["83 42 Ua"]
+let shelldictlong["84 42 Ua"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢" | let shelldictlong["Ua-84"]=shelldictlong["84 42 Ua"]
+let shelldictlong["85 42 Ua"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢" | let shelldictlong["Ua-85"]=shelldictlong["85 42 Ua"]
 
 
 let decay_text_alpha      = "alpha"
@@ -4971,6 +5314,7 @@ let decaydict[" 9  5 Xl"]= decay_text_beta_plus  | let decaydict["Xl-9"]=  decay
 let decaydict["10  6 Pq"]= decay_text_beta_plus  | let decaydict["Pq-10"]= decay_text_beta_plus
 let decaydict["11  6 Pq"]= decay_text_beta_plus  | let decaydict["Pq-11"]= decay_text_beta_plus
 let decaydict["13  7 Zz"]= decay_text_beta_plus  | let decaydict["Zz-13"]= decay_text_beta_plus
+let decaydict["14  8 Dx"]= decay_text_beta_plus  | let decaydict["Dx-14"]= decay_text_beta_plus
 let decaydict["15  8 Dx"]= decay_text_beta_plus  | let decaydict["Dx-15"]= decay_text_beta_plus
 let decaydict["17  9 Pm"]= decay_text_beta_plus  | let decaydict["Pm-17"]= decay_text_beta_plus
 let decaydict["18  9 Pm"]= decay_text_beta_plus  | let decaydict["Pm-18"]= decay_text_beta_plus
@@ -5258,6 +5602,7 @@ let electrodict["14  6 Pq"]="1.167"  | let electrodict["Pq-14"]="1.167"
 let electrodict["14  7 Zz"]="0.000"  | let electrodict["Zz-14"]="0.000"
 let electrodict["15  6 Pq"]="1.167"  | let electrodict["Pq-15"]="1.167"
 let electrodict["15  7 Zz"]="0.000"  | let electrodict["Zz-15"]="0.000"
+let electrodict["14  8 Dx"]="0.071"  | let electrodict["Dx-14"]="0.071"
 let electrodict["15  8 Dx"]="0.071"  | let electrodict["Dx-15"]="0.071"
 let electrodict["16  7 Zz"]="0.000"  | let electrodict["Zz-16"]="0.000"
 let electrodict["16  8 Dx"]="0.071"  | let electrodict["Dx-16"]="0.071"
@@ -5582,6 +5927,7 @@ let stabilitydict["13  7 Zz"]="0.525"    | let stabilitydict["Zz-13"]="0.525"
 let stabilitydict["14  7 Zz"]="0.641"    | let stabilitydict["Zz-14"]="0.641"
 let stabilitydict["15  7 Zz"]="1.433"    | let stabilitydict["Zz-15"]="1.433"
 let stabilitydict["16  7 Zz"]="0.579"    | let stabilitydict["Zz-16"]="0.579"
+let stabilitydict["14  8 Dx"]="0.334"    | let stabilitydict["Dx-14"]="0.334"
 let stabilitydict["15  8 Dx"]="0.604"    | let stabilitydict["Dx-15"]="0.604"
 let stabilitydict["16  8 Dx"]="1.604"    | let stabilitydict["Dx-16"]="1.604"
 let stabilitydict["17  8 Dx"]="1.589"    | let stabilitydict["Dx-17"]="1.589"

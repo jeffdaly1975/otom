@@ -492,6 +492,25 @@ atom 16  7 Zz | Decay type	beta-
 atom 16  7 Zz | Filled in Outer Shell	0-2-2-0-0-0-0-0
 atom 16  7 Zz | Empty in Outer Shell	0-0-0-0-0-0-0-0
 
+atom 14  8 Dx | Lab sheet
+atom 14  8 Dx | Dx otom
+atom 14  8 Dx | Token ID 7733444344978709366234310482023645368308101031014937754286400979823516187926
+atom 14  8 Dx | Name	Dx
+atom 14  8 Dx | Discovered by	jdblacklung.eth
+atom 14  8 Dx | Current Supply	1
+atom 14  8 Dx | Series	alkaline
+atom 14  8 Dx | Protons	8
+atom 14  8 Dx | Neutrons	6
+atom 14  8 Dx | Stability	0.334
+atom 14  8 Dx | Density	8.251 g/cm³
+atom 14  8 Dx | Radius	1.193 pm
+atom 14  8 Dx | Electronegativity	0.071
+atom 14  8 Dx | Mass	14.000 amu
+atom 14  8 Dx | Metallic	Yes
+atom 14  8 Dx | Decay type	beta+
+atom 14  8 Dx | Filled in Outer Shell	0-0-1-0-0-0-0-0
+atom 14  8 Dx | Empty in Outer Shell	0-0-2-2-0-0-0-0
+
 atom 15  8 Dx | Lab sheet
 atom 15  8 Dx | Dx otom
 atom 15  8 Dx | Token ID 105679322411752642088911561491593062974989116523221324745906132364764445320706
