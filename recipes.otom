@@ -104,6 +104,7 @@
 | 26 12 Pt | 26 11 Fw +               0 => 26 12 Pt
 |*27 12 Pt | 50 23 Aw +            4600 => 23 11 Fw + 27 12 Pt
 |*28 12 Pt | 52 23 Aw +            4400 => 24 11 Fw + 28 12 Pt
+|*24 13  S | 10  6 Pq + 14  8 Dx +  518 => 24 13  S
 |*25 13  S | mineable
 | 25 13  S | 47 25 Nb +            3687 => 22 12 Pt + 25 13  S
 |*26 13  S | mineable
@@ -135,6 +136,7 @@
 |*33 15 Xc | 15  6 Pq + 18  9 Pm +  800 => 33 15 Xc
 | 33 15 Xc |  1  1 Ju + 32 14 Zq +  870 => 33 15 Xc
 |*34 15 Xc | mineable
+|*30 16 Gy | 65 34 Gk +            5779 => 30 16 Gy + 35 18 Fj PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A PREREQUISITE 15  8 Dx + 42 22  A + 1500 => 57 30 Hb PREREQUISITE 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy PREREQUISITE 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw PREREQUISITE  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc PREREQUISITE  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic PREREQUISITE 14  8 Dx + 51 27 Ic + 1443 => 65 34 Gk
 |*31 16 Gy |  1  1 Ju + 30 15 Xc + 1050 => 31 16 Gy
 | 31 16 Gy | 68 35 Qi +            6400 => 31 16 Gy + 37 19  O
 | 31 16 Gy | 67 35 Qi +            6000 => 31 16 Gy + 36 19  O
@@ -389,6 +391,7 @@
 |*72 33 Pw | 22 10  M + 50 23 Aw + 3050 => 72 33 Pw
 |*73 33 Pw | 23 10  M + 50 23 Aw + 2250 => 73 33 Pw
 |*74 33 Pw | 34 15 Xc + 40 18 Fj + 3200 => 74 33 Pw
+|*65 34 Gk | 14  8 Dx + 51 27 Ic + 1443 => 65 34 Gk
 |*66 34 Gk |  9  5 Xl + 57 30 Hb + 1300 => 66 34 Gk
 |*67 34 Gk | 25 13  S + 42 21  E + 2200 => 67 34 Gk
 |*68 34 Gk | 34 16 Gy + 34 18 Fj + 3000 => 68 34 Gk

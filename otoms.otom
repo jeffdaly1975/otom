@@ -1043,6 +1043,25 @@ atom 28 12 Pt | Decay type	beta-
 atom 28 12 Pt | Filled in Outer Shell	0-0-3-2-0-0-0-0
 atom 28 12 Pt | Empty in Outer Shell	0-0-0-0-0-0-0-0
 
+atom 24 13  S | Lab sheet
+atom 24 13  S | S otom
+atom 24 13  S | Token ID 112893399874977867301529888216184140773703892279681730907572642052817590450964
+atom 24 13  S | Name	S
+atom 24 13  S | Discovered by	jdblacklung.eth
+atom 24 13  S | Current Supply	1
+atom 24 13  S | Series	alkaline
+atom 24 13  S | Protons	13
+atom 24 13  S | Neutrons	11
+atom 24 13  S | Stability	0.611
+atom 24 13  S | Density	12.102 g/cm³
+atom 24 13  S | Radius	1.256 pm
+atom 24 13  S | Electronegativity	0.083
+atom 24 13  S | Mass	24.000 amu
+atom 24 13  S | Metallic	Yes
+atom 24 13  S | Decay type	beta+
+atom 24 13  S | Filled in Outer Shell	0-0-0-1-0-0-0-0
+atom 24 13  S | Empty in Outer Shell	0-0-0-3-0-0-0-0
+
 atom 25 13  S | Lab sheet
 atom 25 13  S | S otom
 atom 25 13  S | Token ID 16860906057824476817344871737779842197445537676230868815629760710066177728119
@@ -1422,6 +1441,25 @@ atom 34 15 Xc | Metallic	No
 atom 34 15 Xc | Decay type	beta-
 atom 34 15 Xc | Filled in Outer Shell	0-0-0-3-0-0-0-0
 atom 34 15 Xc | Empty in Outer Shell	0-0-0-1-0-0-0-0
+
+atom 30 16 Gy | Lab sheet
+atom 30 16 Gy | Gy otom
+atom 30 16 Gy | Token ID 108290473290110242259004754222676337385507603198390854196392412401029361993501
+atom 30 16 Gy | Name	Gy
+atom 30 16 Gy | Discovered by	jdblacklung.eth
+atom 30 16 Gy | Current Supply	1
+atom 30 16 Gy | Series	noble
+atom 30 16 Gy | Protons	16
+atom 30 16 Gy | Neutrons	14
+atom 30 16 Gy | Stability	0.757
+atom 30 16 Gy | Density	33.912 g/cm³
+atom 30 16 Gy | Radius	0.960 pm
+atom 30 16 Gy | Electronegativity	0.000
+atom 30 16 Gy | Mass	30.000 amu
+atom 30 16 Gy | Metallic	No
+atom 30 16 Gy | Decay type	beta+
+atom 30 16 Gy | Filled in Outer Shell	0-0-0-4-0-0-0-0
+atom 30 16 Gy | Empty in Outer Shell	0-0-0-0-0-0-0-0
 
 atom 31 16 Gy | Lab sheet
 atom 31 16 Gy | Gy otom
@@ -4633,6 +4671,25 @@ atom 74 33 Pw | Metallic	Yes
 atom 74 33 Pw | Decay type	beta-
 atom 74 33 Pw | Filled in Outer Shell	0-0-0-0-0-2-1-1
 atom 74 33 Pw | Empty in Outer Shell	0-0-0-0-0-0-2-2
+
+atom 65 34 Gk | Lab sheet
+atom 65 34 Gk | Gk otom
+atom 65 34 Gk | Token ID 3552251273711496421418913593308958128811547709762114523982260439137775054627
+atom 65 34 Gk | Name	Gk
+atom 65 34 Gk | Discovered by	jdblacklung.eth
+atom 65 34 Gk | Current Supply	1
+atom 65 34 Gk | Series	metal
+atom 65 34 Gk | Protons	34
+atom 65 34 Gk | Neutrons	31
+atom 65 34 Gk | Stability	0.664
+atom 65 34 Gk | Density	31.689 g/cm³
+atom 65 34 Gk | Radius	1.271 pm
+atom 65 34 Gk | Electronegativity	0.211
+atom 65 34 Gk | Mass	65.000 amu
+atom 65 34 Gk | Metallic	Yes
+atom 65 34 Gk | Decay type	beta+
+atom 65 34 Gk | Filled in Outer Shell	0-0-0-0-0-2-2-1
+atom 65 34 Gk | Empty in Outer Shell	0-0-0-0-0-0-1-2
 
 atom 66 34 Gk | Lab sheet
 atom 66 34 Gk | Gk otom

@@ -1,3 +1,169 @@
+2025-01-25 Jan.Sat 20:14:09 [ ] make a vim mapping for the <space> key if I press it when in normal mode, it should take the nears otom isotope and toggle between forms Ju-3/Ju-3∙/ 3  1 Ju/ 3  1 Ju∙
+ [ ] make a tab completion that will take any number pair and treat the 2nd number as protons and insert the otom name for that.
+2025-01-25 Jan.Sat 12:08:20 NEW DISCOVERY Gy-30 aka 30 16 Gy. Now at 322 isotopes
+
+ 17  9 Pm + 25 13  S + 1200 => 42 22  A
+ 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
+ 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
+ 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx
+ 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc
+  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
+ 14  8 Dx + 51 27 Ic + 1443 => 65 34 Gk
+ 65 34 Gk +            5779 => 30 16 Gy + 35 18 Fj
+
+atom 30 16 Gy | Lab sheet
+atom 30 16 Gy | Gy otom
+atom 30 16 Gy | Token ID 108290473290110242259004754222676337385507603198390854196392412401029361993501
+atom 30 16 Gy | Name	Gy
+atom 30 16 Gy | Discovered by	jdblacklung.eth
+atom 30 16 Gy | Current Supply	1
+atom 30 16 Gy | Series	noble
+atom 30 16 Gy | Protons	16
+atom 30 16 Gy | Neutrons	14
+atom 30 16 Gy | Stability	0.757
+atom 30 16 Gy | Density	33.912 g/cm³
+atom 30 16 Gy | Radius	0.960 pm
+atom 30 16 Gy | Electronegativity	0.000
+atom 30 16 Gy | Mass	30.000 amu
+atom 30 16 Gy | Metallic	No
+atom 30 16 Gy | Decay type	beta+
+atom 30 16 Gy | Filled in Outer Shell	0-0-0-4-0-0-0-0
+atom 30 16 Gy | Empty in Outer Shell	0-0-0-0-0-0-0-0
+
+[c] 30 16 Gy
+  [c] add to otoms.complete.list.otom
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [c] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom 
+  [c] add to recipes.otom
+  [c] add otoms.shapescan.data.otom
+      [c] put these vaules in ???
+          [c] ==>SHELL TABLE 1
+          [c] ==>SHELL TABLE 2
+  [c] check off otoms.unfoundpossibilites.otom
+  [c] make it myself
+  [c] add to file otoms.decay.with.metadata.otom
+  [c] add to file optimized.get.all.isotopes.otom
+  [c] add to parseReactorLog.pl
+
+2025-01-25 Jan.Sat 11:12:40 NEW DISCOVERY Gk-65 aka 65 34 Gk. Now at 321 isotopes
+
+ Pm-17 + S-25 +  1200 => A-42
+ Dx-15 + A-42 +  1500 => Hb-57
+ Hb-57 +         5300 => Zq-26 + Gy-31
+ Zq-26 +         1450 => Pq-12 + Dx-14
+ Dx-15 + Xc-30 + 1750 => Aw-45
+ Ju-1  + Aw-45 + 1100 => Oc-46
+ Cq-5  + Oc-46 +  786 => Ic-51
+ Dx-14 + Ic-51 + 1443 => Gk-65
+
+atom 65 34 Gk | Lab sheet
+atom 65 34 Gk | Gk otom
+atom 65 34 Gk | Token ID 3552251273711496421418913593308958128811547709762114523982260439137775054627
+atom 65 34 Gk | Name	Gk
+atom 65 34 Gk | Discovered by	jdblacklung.eth
+atom 65 34 Gk | Current Supply	1
+atom 65 34 Gk | Series	metal
+atom 65 34 Gk | Protons	34
+atom 65 34 Gk | Neutrons	31
+atom 65 34 Gk | Stability	0.664
+atom 65 34 Gk | Density	31.689 g/cm³
+atom 65 34 Gk | Radius	1.271 pm
+atom 65 34 Gk | Electronegativity	0.211
+atom 65 34 Gk | Mass	65.000 amu
+atom 65 34 Gk | Metallic	Yes
+atom 65 34 Gk | Decay type	beta+
+atom 65 34 Gk | Filled in Outer Shell	0-0-0-0-0-2-2-1
+atom 65 34 Gk | Empty in Outer Shell	0-0-0-0-0-0-1-2
+
+[c] 65 34 Gk
+  [c] add to otoms.complete.list.otom
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [c] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom 
+  [c] add to recipes.otom
+  [c] add otoms.shapescan.data.otom
+      [c] put these vaules in ???
+          [c] ==>SHELL TABLE 1
+          [c] ==>SHELL TABLE 2
+  [c] check off otoms.unfoundpossibilites.otom
+  [c] make it myself
+  [c] add to file otoms.decay.with.metadata.otom
+  [c] add to file optimized.get.all.isotopes.otom
+  [c] add to parseReactorLog.pl
+
+
+[c] Will Gk-65 + 10000 decay into: 30 16 Gy + 35 18 Fj OR 31 16 Gy + 34 18 Fj?
+                                   30 16 Gy + 35 18 Fj was the answer!
+
+
+
+2025-01-25 Jan.Sat 10:38:12 [c] NEW DISCOVERY S-24 aka 24 13  S. Now at 320 isotopes
+
+ 17  9 Pm + 25 13  S + 1200 => 42 22  A
+ 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
+ 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
+ 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx
+ 10  6 Pq + 14  8 Dx +  518 => 24 13  S
+
+atom 24 13  S | Lab sheet
+atom 24 13  S | S otom
+atom 24 13  S | Token ID 112893399874977867301529888216184140773703892279681730907572642052817590450964
+atom 24 13  S | Name	S
+atom 24 13  S | Discovered by	jdblacklung.eth
+atom 24 13  S | Current Supply	1
+atom 24 13  S | Series	alkaline
+atom 24 13  S | Protons	13
+atom 24 13  S | Neutrons	11
+atom 24 13  S | Stability	0.611
+atom 24 13  S | Density	12.102 g/cm³
+atom 24 13  S | Radius	1.256 pm
+atom 24 13  S | Electronegativity	0.083
+atom 24 13  S | Mass	24.000 amu
+atom 24 13  S | Metallic	Yes
+atom 24 13  S | Decay type	beta+
+atom 24 13  S | Filled in Outer Shell	0-0-0-1-0-0-0-0
+atom 24 13  S | Empty in Outer Shell	0-0-0-3-0-0-0-0
+
+
+[c] 24 13  S
+  [c] add to otoms.complete.list.otom
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] add to isotopes image from Kjetil with unknown meaning.txt
+  [c] add to otoms.decay.otom
+  [c] add to otoms.otom
+  [c] add to otoms.columns.otom
+  [c] add reaction to otom.reactions.otom 
+  [c] add to recipes.otom
+  [c] add otoms.shapescan.data.otom
+      [c] put these vaules in ???
+          [c] ==>SHELL TABLE 1
+          [c] ==>SHELL TABLE 2
+  [c] check off otoms.unfoundpossibilites.otom
+  [c] make it myself
+  [c] add to file otoms.decay.with.metadata.otom
+  [c] add to file optimized.get.all.isotopes.otom
+  [c] add to parseReactorLog.pl
+
 2025-01-25 Jan.Sat 10:07:25 [ ] update parseReactorLog.pl:
   [ ] to read in multiple LOG files, and dedupe them
   [ ] to produce the optimized recipes file
@@ -5,280 +171,320 @@
 2025-01-25 Jan.Sat 09:52:34 [ ] what might we make with Dx-14?
 Its quite unstable and decay type is beta+ so it will likely drop a proton as I saw when trying W-4
 
-  1   1 Ju +  14   8 Dx => |⬆  15  10  M |=  15   9 Pm |⬇  15   8 Dx
-  2   1 Ju +  14   8 Dx => |⬆  16  10  M |=  16   9 Pm |⬇  16   8 Dx
-  3   1 Ju +  14   8 Dx => |⬆  17  10  M |=  17   9 Pm |⬇  17   8 Dx
-  4   2  W +  14   8 Dx => |⬆  18  11 Fw |=  18  10  M |⬇  18   9 Pm
-  5   2  W +  14   8 Dx => |⬆  19  11 Fw |=  19  10  M |⬇  19   9 Pm
-  5   3 Cq +  14   8 Dx => |⬆  19  12 Pt |=  19  11 Fw |⬇  19  10  M
-  6   3 Cq +  14   8 Dx => |⬆  20  12 Pt |=  20  11 Fw |⬇  20  10  M
-  7   3 Cq +  14   8 Dx => |⬆  21  12 Pt |=  21  11 Fw |⬇  21  10  M
-  7   4 Af +  14   8 Dx => |⬆  21  13  S |=  21  12 Pt |⬇  21  11 Fw
-  8   4 Af +  14   8 Dx => |⬆  22  13  S |=  22  12 Pt |⬇  22  11 Fw
-  9   4 Af +  14   8 Dx => |⬆  23  13  S |=  23  12 Pt |⬇  23  11 Fw
- 10   4 Af +  14   8 Dx => |⬆  24  13  S |=  24  12 Pt |⬇  24  11 Fw
-  9   5 Xl +  14   8 Dx => |⬆  23  14 Zq |=  23  13  S |⬇  23  12 Pt
- 10   5 Xl +  14   8 Dx => |⬆  24  14 Zq |=  24  13  S |⬇  24  12 Pt
- 11   5 Xl +  14   8 Dx => |⬆  25  14 Zq |=  25  13  S |⬇  25  12 Pt
- 12   5 Xl +  14   8 Dx => |⬆  26  14 Zq |=  26  13  S |⬇  26  12 Pt
- 10   6 Pq +  14   8 Dx => |⬆  24  15 Xc |=  24  14 Zq |⬇  24  13  S [ ] try
- 11   6 Pq +  14   8 Dx => |⬆  25  15 Xc |=  25  14 Zq |⬇  25  13  S
- 12   6 Pq +  14   8 Dx => |⬆  26  15 Xc |=  26  14 Zq |⬇  26  13  S
- 13   6 Pq +  14   8 Dx => |⬆  27  15 Xc |=  27  14 Zq |⬇  27  13  S
- 14   6 Pq +  14   8 Dx => |⬆  28  15 Xc |=  28  14 Zq |⬇  28  13  S
- 15   6 Pq +  14   8 Dx => |⬆  29  15 Xc |=  29  14 Zq |⬇  29  13  S
- 13   7 Zz +  14   8 Dx => |⬆  27  16 Gy |=  27  15 Xc |⬇  27  14 Zq
- 14   7 Zz +  14   8 Dx => |⬆  28  16 Gy |=  28  15 Xc |⬇  28  14 Zq
- 15   7 Zz +  14   8 Dx => |⬆  29  16 Gy |=  29  15 Xc |⬇  29  14 Zq
- 16   7 Zz +  14   8 Dx => |⬆  30  16 Gy |=  30  15 Xc |⬇  30  14 Zq
- 14   8 Dx +  14   8 Dx => |⬆  28  17  D |=  28  16 Gy |⬇  28  15 Xc
- 14   8 Dx +  15   8 Dx => |⬆  29  17  D |=  29  16 Gy |⬇  29  15 Xc
- 14   8 Dx +  16   8 Dx => |⬆  30  17  D |=  30  16 Gy |⬇  30  15 Xc
- 14   8 Dx +  17   8 Dx => |⬆  31  17  D |=  31  16 Gy |⬇  31  15 Xc
- 14   8 Dx +  18   8 Dx => |⬆  32  17  D |=  32  16 Gy |⬇  32  15 Xc
- 14   8 Dx +  19   8 Dx => |⬆  33  17  D |=  33  16 Gy |⬇  33  15 Xc
- 14   8 Dx +  17   9 Pm => |⬆  31  18 Fj |=  31  17  D |⬇  31  16 Gy
- 14   8 Dx +  18   9 Pm => |⬆  32  18 Fj |=  32  17  D |⬇  32  16 Gy
- 14   8 Dx +  19   9 Pm => |⬆  33  18 Fj |=  33  17  D |⬇  33  16 Gy
- 14   8 Dx +  20   9 Pm => |⬆  34  18 Fj |=  34  17  D |⬇  34  16 Gy
- 14   8 Dx +  21   9 Pm => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
- 14   8 Dx +  19  10  M => |⬆  33  19  O |=  33  18 Fj |⬇  33  17  D
- 14   8 Dx +  20  10  M => |⬆  34  19  O |=  34  18 Fj |⬇  34  17  D
- 14   8 Dx +  21  10  M => |⬆  35  19  O |=  35  18 Fj |⬇  35  17  D
- 14   8 Dx +  22  10  M => |⬆  36  19  O |=  36  18 Fj |⬇  36  17  D
- 14   8 Dx +  23  10  M => |⬆  37  19  O |=  37  18 Fj |⬇  37  17  D
- 14   8 Dx +  21  11 Fw => |⬆  35  20  C |=  35  19  O |⬇  35  18 Fj
- 14   8 Dx +  22  11 Fw => |⬆  36  20  C |=  36  19  O |⬇  36  18 Fj
- 14   8 Dx +  23  11 Fw => |⬆  37  20  C |=  37  19  O |⬇  37  18 Fj
- 14   8 Dx +  24  11 Fw => |⬆  38  20  C |=  38  19  O |⬇  38  18 Fj
- 14   8 Dx +  25  11 Fw => |⬆  39  20  C |=  39  19  O |⬇  39  18 Fj
- 14   8 Dx +  26  11 Fw => |⬆  40  20  C |=  40  19  O |⬇  40  18 Fj
- 14   8 Dx +  22  12 Pt => |⬆  36  21  E |=  36  20  C |⬇  36  19  O
- 14   8 Dx +  23  12 Pt => |⬆  37  21  E |=  37  20  C |⬇  37  19  O
- 14   8 Dx +  24  12 Pt => |⬆  38  21  E |=  38  20  C |⬇  38  19  O
- 14   8 Dx +  25  12 Pt => |⬆  39  21  E |=  39  20  C |⬇  39  19  O
- 14   8 Dx +  26  12 Pt => |⬆  40  21  E |=  40  20  C |⬇  40  19  O
- 14   8 Dx +  27  12 Pt => |⬆  41  21  E |=  41  20  C |⬇  41  19  O
- 14   8 Dx +  28  12 Pt => |⬆  42  21  E |=  42  20  C |⬇  42  19  O
- 14   8 Dx +  25  13  S => |⬆  39  22  A |=  39  21  E |⬇  39  20  C
- 14   8 Dx +  26  13  S => |⬆  40  22  A |=  40  21  E |⬇  40  20  C
- 14   8 Dx +  27  13  S => |⬆  41  22  A |=  41  21  E |⬇  41  20  C
- 14   8 Dx +  28  13  S => |⬆  42  22  A |=  42  21  E |⬇  42  20  C
- 14   8 Dx +  29  13  S => |⬆  43  22  A |=  43  21  E |⬇  43  20  C
- 14   8 Dx +  30  13  S => |⬆  44  22  A |=  44  21  E |⬇  44  20  C
- 14   8 Dx +  26  14 Zq => |⬆  40  23 Aw |=  40  22  A |⬇  40  21  E
- 14   8 Dx +  27  14 Zq => |⬆  41  23 Aw |=  41  22  A |⬇  41  21  E
- 14   8 Dx +  28  14 Zq => |⬆  42  23 Aw |=  42  22  A |⬇  42  21  E
- 14   8 Dx +  29  14 Zq => |⬆  43  23 Aw |=  43  22  A |⬇  43  21  E
- 14   8 Dx +  30  14 Zq => |⬆  44  23 Aw |=  44  22  A |⬇  44  21  E
- 14   8 Dx +  31  14 Zq => |⬆  45  23 Aw |=  45  22  A |⬇  45  21  E
- 14   8 Dx +  32  14 Zq => |⬆  46  23 Aw |=  46  22  A |⬇  46  21  E
- 14   8 Dx +  28  15 Xc => |⬆  42  24 Oc |=  42  23 Aw |⬇  42  22  A
- 14   8 Dx +  29  15 Xc => |⬆  43  24 Oc |=  43  23 Aw |⬇  43  22  A
- 14   8 Dx +  30  15 Xc => |⬆  44  24 Oc |=  44  23 Aw |⬇  44  22  A
- 14   8 Dx +  31  15 Xc => |⬆  45  24 Oc |=  45  23 Aw |⬇  45  22  A
- 14   8 Dx +  32  15 Xc => |⬆  46  24 Oc |=  46  23 Aw |⬇  46  22  A
- 14   8 Dx +  33  15 Xc => |⬆  47  24 Oc |=  47  23 Aw |⬇  47  22  A
- 14   8 Dx +  34  15 Xc => |⬆  48  24 Oc |=  48  23 Aw |⬇  48  22  A
- 14   8 Dx +  31  16 Gy => |⬆  45  25 Nb |=  45  24 Oc |⬇  45  23 Aw
- 14   8 Dx +  32  16 Gy => |⬆  46  25 Nb |=  46  24 Oc |⬇  46  23 Aw
- 14   8 Dx +  33  16 Gy => |⬆  47  25 Nb |=  47  24 Oc |⬇  47  23 Aw
- 14   8 Dx +  34  16 Gy => |⬆  48  25 Nb |=  48  24 Oc |⬇  48  23 Aw
- 14   8 Dx +  35  16 Gy => |⬆  49  25 Nb |=  49  24 Oc |⬇  49  23 Aw
- 14   8 Dx +  36  16 Gy => |⬆  50  25 Nb |=  50  24 Oc |⬇  50  23 Aw
- 14   8 Dx +  32  17  D => |⬆  46  26 Xk |=  46  25 Nb |⬇  46  24 Oc
- 14   8 Dx +  33  17  D => |⬆  47  26 Xk |=  47  25 Nb |⬇  47  24 Oc
- 14   8 Dx +  34  17  D => |⬆  48  26 Xk |=  48  25 Nb |⬇  48  24 Oc
- 14   8 Dx +  35  17  D => |⬆  49  26 Xk |=  49  25 Nb |⬇  49  24 Oc
- 14   8 Dx +  36  17  D => |⬆  50  26 Xk |=  50  25 Nb |⬇  50  24 Oc
- 14   8 Dx +  37  17  D => |⬆  51  26 Xk |=  51  25 Nb |⬇  51  24 Oc
- 14   8 Dx +  38  17  D => |⬆  52  26 Xk |=  52  25 Nb |⬇  52  24 Oc
- 14   8 Dx +  39  17  D => |⬆  53  26 Xk |=  53  25 Nb |⬇  53  24 Oc
- 14   8 Dx +  34  18 Fj => |⬆  48  27 Ic |=  48  26 Xk |⬇  48  25 Nb
- 14   8 Dx +  35  18 Fj => |⬆  49  27 Ic |=  49  26 Xk |⬇  49  25 Nb
- 14   8 Dx +  36  18 Fj => |⬆  50  27 Ic |=  50  26 Xk |⬇  50  25 Nb
- 14   8 Dx +  37  18 Fj => |⬆  51  27 Ic |=  51  26 Xk |⬇  51  25 Nb
- 14   8 Dx +  38  18 Fj => |⬆  52  27 Ic |=  52  26 Xk |⬇  52  25 Nb
- 14   8 Dx +  39  18 Fj => |⬆  53  27 Ic |=  53  26 Xk |⬇  53  25 Nb
- 14   8 Dx +  40  18 Fj => |⬆  54  27 Ic |=  54  26 Xk |⬇  54  25 Nb
- 14   8 Dx +  41  18 Fj => |⬆  55  27 Ic |=  55  26 Xk |⬇  55  25 Nb
- 14   8 Dx +  36  19  O => |⬆  50  28 Yp |=  50  27 Ic |⬇  50  26 Xk
- 14   8 Dx +  37  19  O => |⬆  51  28 Yp |=  51  27 Ic |⬇  51  26 Xk
- 14   8 Dx +  38  19  O => |⬆  52  28 Yp |=  52  27 Ic |⬇  52  26 Xk
- 14   8 Dx +  39  19  O => |⬆  53  28 Yp |=  53  27 Ic |⬇  53  26 Xk
- 14   8 Dx +  40  19  O => |⬆  54  28 Yp |=  54  27 Ic |⬇  54  26 Xk
- 14   8 Dx +  41  19  O => |⬆  55  28 Yp |=  55  27 Ic |⬇  55  26 Xk
- 14   8 Dx +  42  19  O => |⬆  56  28 Yp |=  56  27 Ic |⬇  56  26 Xk
- 14   8 Dx +  43  19  O => |⬆  57  28 Yp |=  57  27 Ic |⬇  57  26 Xk
- 14   8 Dx +  38  20  C => |⬆  52  29 Jx |=  52  28 Yp |⬇  52  27 Ic
- 14   8 Dx +  39  20  C => |⬆  53  29 Jx |=  53  28 Yp |⬇  53  27 Ic
- 14   8 Dx +  40  20  C => |⬆  54  29 Jx |=  54  28 Yp |⬇  54  27 Ic
- 14   8 Dx +  41  20  C => |⬆  55  29 Jx |=  55  28 Yp |⬇  55  27 Ic
- 14   8 Dx +  42  20  C => |⬆  56  29 Jx |=  56  28 Yp |⬇  56  27 Ic
- 14   8 Dx +  43  20  C => |⬆  57  29 Jx |=  57  28 Yp |⬇  57  27 Ic
- 14   8 Dx +  44  20  C => |⬆  58  29 Jx |=  58  28 Yp |⬇  58  27 Ic
- 14   8 Dx +  45  20  C => |⬆  59  29 Jx |=  59  28 Yp |⬇  59  27 Ic
- 14   8 Dx +  40  21  E => |⬆  54  30 Hb |=  54  29 Jx |⬇  54  28 Yp
- 14   8 Dx +  41  21  E => |⬆  55  30 Hb |=  55  29 Jx |⬇  55  28 Yp
- 14   8 Dx +  42  21  E => |⬆  56  30 Hb |=  56  29 Jx |⬇  56  28 Yp
- 14   8 Dx +  43  21  E => |⬆  57  30 Hb |=  57  29 Jx |⬇  57  28 Yp
- 14   8 Dx +  44  21  E => |⬆  58  30 Hb |=  58  29 Jx |⬇  58  28 Yp
- 14   8 Dx +  45  21  E => |⬆  59  30 Hb |=  59  29 Jx |⬇  59  28 Yp
- 14   8 Dx +  46  21  E => |⬆  60  30 Hb |=  60  29 Jx |⬇  60  28 Yp
- 14   8 Dx +  47  21  E => |⬆  61  30 Hb |=  61  29 Jx |⬇  61  28 Yp
- 14   8 Dx +  48  21  E => |⬆  62  30 Hb |=  62  29 Jx |⬇  62  28 Yp
- 14   8 Dx +  42  22  A => |⬆  56  31 At |=  56  30 Hb |⬇  56  29 Jx
- 14   8 Dx +  43  22  A => |⬆  57  31 At |=  57  30 Hb |⬇  57  29 Jx
- 14   8 Dx +  44  22  A => |⬆  58  31 At |=  58  30 Hb |⬇  58  29 Jx
- 14   8 Dx +  45  22  A => |⬆  59  31 At |=  59  30 Hb |⬇  59  29 Jx
- 14   8 Dx +  46  22  A => |⬆  60  31 At |=  60  30 Hb |⬇  60  29 Jx
- 14   8 Dx +  47  22  A => |⬆  61  31 At |=  61  30 Hb |⬇  61  29 Jx
- 14   8 Dx +  48  22  A => |⬆  62  31 At |=  62  30 Hb |⬇  62  29 Jx
- 14   8 Dx +  49  22  A => |⬆  63  31 At |=  63  30 Hb |⬇  63  29 Jx
- 14   8 Dx +  50  22  A => |⬆  64  31 At |=  64  30 Hb |⬇  64  29 Jx
- 14   8 Dx +  44  23 Aw => |⬆  58  32 Ny |=  58  31 At |⬇  58  30 Hb
- 14   8 Dx +  45  23 Aw => |⬆  59  32 Ny |=  59  31 At |⬇  59  30 Hb
- 14   8 Dx +  46  23 Aw => |⬆  60  32 Ny |=  60  31 At |⬇  60  30 Hb
- 14   8 Dx +  47  23 Aw => |⬆  61  32 Ny |=  61  31 At |⬇  61  30 Hb
- 14   8 Dx +  48  23 Aw => |⬆  62  32 Ny |=  62  31 At |⬇  62  30 Hb
- 14   8 Dx +  49  23 Aw => |⬆  63  32 Ny |=  63  31 At |⬇  63  30 Hb
- 14   8 Dx +  50  23 Aw => |⬆  64  32 Ny |=  64  31 At |⬇  64  30 Hb
- 14   8 Dx +  51  23 Aw => |⬆  65  32 Ny |=  65  31 At |⬇  65  30 Hb
- 14   8 Dx +  52  23 Aw => |⬆  66  32 Ny |=  66  31 At |⬇  66  30 Hb
- 14   8 Dx +  46  24 Oc => |⬆  60  33 Pw |=  60  32 Ny |⬇  60  31 At
- 14   8 Dx +  47  24 Oc => |⬆  61  33 Pw |=  61  32 Ny |⬇  61  31 At
- 14   8 Dx +  48  24 Oc => |⬆  62  33 Pw |=  62  32 Ny |⬇  62  31 At
- 14   8 Dx +  49  24 Oc => |⬆  63  33 Pw |=  63  32 Ny |⬇  63  31 At
- 14   8 Dx +  50  24 Oc => |⬆  64  33 Pw |=  64  32 Ny |⬇  64  31 At
- 14   8 Dx +  51  24 Oc => |⬆  65  33 Pw |=  65  32 Ny |⬇  65  31 At
- 14   8 Dx +  52  24 Oc => |⬆  66  33 Pw |=  66  32 Ny |⬇  66  31 At
- 14   8 Dx +  53  24 Oc => |⬆  67  33 Pw |=  67  32 Ny |⬇  67  31 At
- 14   8 Dx +  54  24 Oc => |⬆  68  33 Pw |=  68  32 Ny |⬇  68  31 At
- 14   8 Dx +  47  25 Nb => |⬆  61  34 Gk |=  61  33 Pw |⬇  61  32 Ny
- 14   8 Dx +  48  25 Nb => |⬆  62  34 Gk |=  62  33 Pw |⬇  62  32 Ny
- 14   8 Dx +  49  25 Nb => |⬆  63  34 Gk |=  63  33 Pw |⬇  63  32 Ny
- 14   8 Dx +  50  25 Nb => |⬆  64  34 Gk |=  64  33 Pw |⬇  64  32 Ny
- 14   8 Dx +  51  25 Nb => |⬆  65  34 Gk |=  65  33 Pw |⬇  65  32 Ny
- 14   8 Dx +  52  25 Nb => |⬆  66  34 Gk |=  66  33 Pw |⬇  66  32 Ny
- 14   8 Dx +  53  25 Nb => |⬆  67  34 Gk |=  67  33 Pw |⬇  67  32 Ny
- 14   8 Dx +  54  25 Nb => |⬆  68  34 Gk |=  68  33 Pw |⬇  68  32 Ny
- 14   8 Dx +  55  25 Nb => |⬆  69  34 Gk |=  69  33 Pw |⬇  69  32 Ny
- 14   8 Dx +  56  25 Nb => |⬆  70  34 Gk |=  70  33 Pw |⬇  70  32 Ny
- 14   8 Dx +  50  26 Xk => |⬆  64  35 Qi |=  64  34 Gk |⬇  64  33 Pw
- 14   8 Dx +  51  26 Xk => |⬆  65  35 Qi |=  65  34 Gk |⬇  65  33 Pw
- 14   8 Dx +  52  26 Xk => |⬆  66  35 Qi |=  66  34 Gk |⬇  66  33 Pw
- 14   8 Dx +  53  26 Xk => |⬆  67  35 Qi |=  67  34 Gk |⬇  67  33 Pw
- 14   8 Dx +  54  26 Xk => |⬆  68  35 Qi |=  68  34 Gk |⬇  68  33 Pw
- 14   8 Dx +  55  26 Xk => |⬆  69  35 Qi |=  69  34 Gk |⬇  69  33 Pw
- 14   8 Dx +  56  26 Xk => |⬆  70  35 Qi |=  70  34 Gk |⬇  70  33 Pw
- 14   8 Dx +  57  26 Xk => |⬆  71  35 Qi |=  71  34 Gk |⬇  71  33 Pw
- 14   8 Dx +  58  26 Xk => |⬆  72  35 Qi |=  72  34 Gk |⬇  72  33 Pw
- 14   8 Dx +  59  26 Xk => |⬆  73  35 Qi |=  73  34 Gk |⬇  73  33 Pw
- 14   8 Dx +  51  27 Ic => |⬆  65  36 Xy |=  65  35 Qi |⬇  65  34 Gk [ ] try
- 14   8 Dx +  52  27 Ic => |⬆  66  36 Xy |=  66  35 Qi |⬇  66  34 Gk
- 14   8 Dx +  53  27 Ic => |⬆  67  36 Xy |=  67  35 Qi |⬇  67  34 Gk
- 14   8 Dx +  54  27 Ic => |⬆  68  36 Xy |=  68  35 Qi |⬇  68  34 Gk
- 14   8 Dx +  55  27 Ic => |⬆  69  36 Xy |=  69  35 Qi |⬇  69  34 Gk
- 14   8 Dx +  56  27 Ic => |⬆  70  36 Xy |=  70  35 Qi |⬇  70  34 Gk
- 14   8 Dx +  57  27 Ic => |⬆  71  36 Xy |=  71  35 Qi |⬇  71  34 Gk
- 14   8 Dx +  58  27 Ic => |⬆  72  36 Xy |=  72  35 Qi |⬇  72  34 Gk
- 14   8 Dx +  59  27 Ic => |⬆  73  36 Xy |=  73  35 Qi |⬇  73  34 Gk
- 14   8 Dx +  60  27 Ic => |⬆  74  36 Xy |=  74  35 Qi |⬇  74  34 Gk
- 14   8 Dx +  61  27 Ic => |⬆  75  36 Xy |=  75  35 Qi |⬇  75  34 Gk
- 14   8 Dx +  54  28 Yp => |⬆  68  37 Gq |=  68  36 Xy |⬇  68  35 Qi
- 14   8 Dx +  55  28 Yp => |⬆  69  37 Gq |=  69  36 Xy |⬇  69  35 Qi
- 14   8 Dx +  56  28 Yp => |⬆  70  37 Gq |=  70  36 Xy |⬇  70  35 Qi
- 14   8 Dx +  57  28 Yp => |⬆  71  37 Gq |=  71  36 Xy |⬇  71  35 Qi
- 14   8 Dx +  58  28 Yp => |⬆  72  37 Gq |=  72  36 Xy |⬇  72  35 Qi
- 14   8 Dx +  59  28 Yp => |⬆  73  37 Gq |=  73  36 Xy |⬇  73  35 Qi
- 14   8 Dx +  60  28 Yp => |⬆  74  37 Gq |=  74  36 Xy |⬇  74  35 Qi
- 14   8 Dx +  61  28 Yp => |⬆  75  37 Gq |=  75  36 Xy |⬇  75  35 Qi
- 14   8 Dx +  62  28 Yp => |⬆  76  37 Gq |=  76  36 Xy |⬇  76  35 Qi
- 14   8 Dx +  63  28 Yp => |⬆  77  37 Gq |=  77  36 Xy |⬇  77  35 Qi
- 14   8 Dx +  56  29 Jx => |⬆  70  38 Bt |=  70  37 Gq |⬇  70  36 Xy
- 14   8 Dx +  57  29 Jx => |⬆  71  38 Bt |=  71  37 Gq |⬇  71  36 Xy
- 14   8 Dx +  58  29 Jx => |⬆  72  38 Bt |=  72  37 Gq |⬇  72  36 Xy
- 14   8 Dx +  59  29 Jx => |⬆  73  38 Bt |=  73  37 Gq |⬇  73  36 Xy
- 14   8 Dx +  60  29 Jx => |⬆  74  38 Bt |=  74  37 Gq |⬇  74  36 Xy
- 14   8 Dx +  61  29 Jx => |⬆  75  38 Bt |=  75  37 Gq |⬇  75  36 Xy
- 14   8 Dx +  62  29 Jx => |⬆  76  38 Bt |=  76  37 Gq |⬇  76  36 Xy
- 14   8 Dx +  63  29 Jx => |⬆  77  38 Bt |=  77  37 Gq |⬇  77  36 Xy
- 14   8 Dx +  64  29 Jx => |⬆  78  38 Bt |=  78  37 Gq |⬇  78  36 Xy
- 14   8 Dx +  65  29 Jx => |⬆  79  38 Bt |=  79  37 Gq |⬇  79  36 Xy
- 14   8 Dx +  57  30 Hb => |⬆  71  39  H |=  71  38 Bt |⬇  71  37 Gq [ ] try
- 14   8 Dx +  58  30 Hb => |⬆  72  39  H |=  72  38 Bt |⬇  72  37 Gq
- 14   8 Dx +  59  30 Hb => |⬆  73  39  H |=  73  38 Bt |⬇  73  37 Gq
- 14   8 Dx +  60  30 Hb => |⬆  74  39  H |=  74  38 Bt |⬇  74  37 Gq
- 14   8 Dx +  61  30 Hb => |⬆  75  39  H |=  75  38 Bt |⬇  75  37 Gq
- 14   8 Dx +  62  30 Hb => |⬆  76  39  H |=  76  38 Bt |⬇  76  37 Gq
- 14   8 Dx +  63  30 Hb => |⬆  77  39  H |=  77  38 Bt |⬇  77  37 Gq
- 14   8 Dx +  64  30 Hb => |⬆  78  39  H |=  78  38 Bt |⬇  78  37 Gq
- 14   8 Dx +  65  30 Hb => |⬆  79  39  H |=  79  38 Bt |⬇  79  37 Gq
- 14   8 Dx +  66  30 Hb => |⬆  80  39  H |=  80  38 Bt |⬇  80  37 Gq
- 14   8 Dx +  67  30 Hb => |⬆  81  39  H |=  81  38 Bt |⬇  81  37 Gq [ ] try
- 14   8 Dx +  60  31 At => |⬆  74  40  U |=  74  39  H |⬇  74  38 Bt
- 14   8 Dx +  61  31 At => |⬆  75  40  U |=  75  39  H |⬇  75  38 Bt
- 14   8 Dx +  62  31 At => |⬆  76  40  U |=  76  39  H |⬇  76  38 Bt
- 14   8 Dx +  63  31 At => |⬆  77  40  U |=  77  39  H |⬇  77  38 Bt
- 14   8 Dx +  64  31 At => |⬆  78  40  U |=  78  39  H |⬇  78  38 Bt
- 14   8 Dx +  65  31 At => |⬆  79  40  U |=  79  39  H |⬇  79  38 Bt
- 14   8 Dx +  66  31 At => |⬆  80  40  U |=  80  39  H |⬇  80  38 Bt
- 14   8 Dx +  67  31 At => |⬆  81  40  U |=  81  39  H |⬇  81  38 Bt
- 14   8 Dx +  68  31 At => |⬆  82  40  U |=  82  39  H |⬇  82  38 Bt [ ] try
- 14   8 Dx +  69  31 At => |⬆  83  40  U |=  83  39  H |⬇  83  38 Bt [ ] try
- 14   8 Dx +  61  32 Ny => |⬆  75  41 Sq |=  75  40  U |⬇  75  39  H
- 14   8 Dx +  62  32 Ny => |⬆  76  41 Sq |=  76  40  U |⬇  76  39  H
- 14   8 Dx +  63  32 Ny => |⬆  77  41 Sq |=  77  40  U |⬇  77  39  H
- 14   8 Dx +  64  32 Ny => |⬆  78  41 Sq |=  78  40  U |⬇  78  39  H
- 14   8 Dx +  65  32 Ny => |⬆  79  41 Sq |=  79  40  U |⬇  79  39  H
- 14   8 Dx +  66  32 Ny => |⬆  80  41 Sq |=  80  40  U |⬇  80  39  H
- 14   8 Dx +  67  32 Ny => |⬆  81  41 Sq |=  81  40  U |⬇  81  39  H
- 14   8 Dx +  68  32 Ny => |⬆  82  41 Sq |=  82  40  U |⬇  82  39  H
- 14   8 Dx +  69  32 Ny => |⬆  83  41 Sq |=  83  40  U |⬇  83  39  H [ ] try
- 14   8 Dx +  70  32 Ny => |⬆  84  41 Sq |=  84  40  U |⬇  84  39  H [ ] try
- 14   8 Dx +  71  32 Ny => |⬆  85  41 Sq |=  85  40  U |⬇  85  39  H [ ] try
- 14   8 Dx +  72  32 Ny => |⬆  86  41 Sq |=  86  40  U |⬇  86  39  H [ ] try
- 14   8 Dx +  64  33 Pw => |⬆  78  42 Ua |=  78  41 Sq |⬇  78  40  U
- 14   8 Dx +  65  33 Pw => |⬆  79  42 Ua |=  79  41 Sq |⬇  79  40  U
- 14   8 Dx +  66  33 Pw => |⬆  80  42 Ua |=  80  41 Sq |⬇  80  40  U
- 14   8 Dx +  67  33 Pw => |⬆  81  42 Ua |=  81  41 Sq |⬇  81  40  U
- 14   8 Dx +  68  33 Pw => |⬆  82  42 Ua |=  82  41 Sq |⬇  82  40  U
- 14   8 Dx +  69  33 Pw => |⬆  83  42 Ua |=  83  41 Sq |⬇  83  40  U
- 14   8 Dx +  70  33 Pw => |⬆  84  42 Ua |=  84  41 Sq |⬇  84  40  U [ ] try
- 14   8 Dx +  71  33 Pw => |⬆  85  42 Ua |=  85  41 Sq |⬇  85  40  U [ ] try
- 14   8 Dx +  72  33 Pw => |⬆  86  42 Ua |=  86  41 Sq |⬇  86  40  U [ ] try
- 14   8 Dx +  73  33 Pw => |⬆  87  42 Ua |=  87  41 Sq |⬇  87  40  U [ ] try
- 14   8 Dx +  74  33 Pw => |⬆  88  42 Ua |=  88  41 Sq |⬇  88  40  U [ ] try
- 14   8 Dx +  66  34 Gk => |⬆  80  43 .. |=  80  42 Ua |⬇  80  41 Sq
- 14   8 Dx +  67  34 Gk => |⬆  81  43 .. |=  81  42 Ua |⬇  81  41 Sq
- 14   8 Dx +  68  34 Gk => |⬆  82  43 .. |=  82  42 Ua |⬇  82  41 Sq
- 14   8 Dx +  69  34 Gk => |⬆  83  43 .. |=  83  42 Ua |⬇  83  41 Sq
- 14   8 Dx +  70  34 Gk => |⬆  84  43 .. |=  84  42 Ua |⬇  84  41 Sq
- 14   8 Dx +  71  34 Gk => |⬆  85  43 .. |=  85  42 Ua |⬇  85  41 Sq [ ] try
- 14   8 Dx +  72  34 Gk => |⬆  86  43 .. |=  86  42 Ua |⬇  86  41 Sq [ ] try
- 14   8 Dx +  73  34 Gk => |⬆  87  43 .. |=  87  42 Ua |⬇  87  41 Sq [ ] try
- 14   8 Dx +  74  34 Gk => |⬆  88  43 .. |=  88  42 Ua |⬇  88  41 Sq [ ] try
- 14   8 Dx +  75  34 Gk => |⬆  89  43 .. |=  89  42 Ua |⬇  89  41 Sq [ ] try
- 14   8 Dx +  76  34 Gk => |⬆  90  43 .. |=  90  42 Ua |⬇  90  41 Sq [ ] try
- 14   8 Dx +  67  35 Qi => |⬆  81  44 .. |=  81  43 .. |⬇  81  42 Ua [ ] try
- 14   8 Dx +  68  35 Qi => |⬆  82  44 .. |=  82  43 .. |⬇  82  42 Ua [ ] try
- 14   8 Dx +  69  35 Qi => |⬆  83  44 .. |=  83  43 .. |⬇  83  42 Ua
- 14   8 Dx +  70  35 Qi => |⬆  84  44 .. |=  84  43 .. |⬇  84  42 Ua
- 14   8 Dx +  71  35 Qi => |⬆  85  44 .. |=  85  43 .. |⬇  85  42 Ua
- 14   8 Dx +  72  35 Qi => |⬆  86  44 .. |=  86  43 .. |⬇  86  42 Ua [ ] try
- 14   8 Dx +  73  35 Qi => |⬆  87  44 .. |=  87  43 .. |⬇  87  42 Ua [ ] try
- 14   8 Dx +  74  35 Qi => |⬆  88  44 .. |=  88  43 .. |⬇  88  42 Ua [ ] try
- 14   8 Dx +  75  35 Qi => |⬆  89  44 .. |=  89  43 .. |⬇  89  42 Ua [ ] try
- 14   8 Dx +  76  35 Qi => |⬆  90  44 .. |=  90  43 .. |⬇  90  42 Ua [ ] try
- 14   8 Dx +  77  35 Qi => |⬆  91  44 .. |=  91  43 .. |⬇  91  42 Ua [ ] try
- 14   8 Dx +  78  35 Qi => |⬆  92  44 .. |=  92  43 .. |⬇  92  42 Ua [ ] try
+  1  1 Ju +  14  8 Dx => |⬆ 15 10  M |= 15  9 Pm |⬇ 15  8 Dx
+  2  1 Ju +  14  8 Dx => |⬆ 16 10  M |= 16  9 Pm |⬇ 16  8 Dx
+  3  1 Ju +  14  8 Dx => |⬆ 17 10  M |= 17  9 Pm |⬇ 17  8 Dx
+  4  2  W +  14  8 Dx => |⬆ 18 11 Fw |= 18 10  M |⬇ 18  9 Pm
+  5  2  W +  14  8 Dx => |⬆ 19 11 Fw |= 19 10  M |⬇ 19  9 Pm
+  5  3 Cq +  14  8 Dx => |⬆ 19 12 Pt |= 19 11 Fw |⬇ 19 10  M
+  6  3 Cq +  14  8 Dx => |⬆ 20 12 Pt |= 20 11 Fw |⬇ 20 10  M
+  7  3 Cq +  14  8 Dx => |⬆ 21 12 Pt |= 21 11 Fw |⬇ 21 10  M
+  7  4 Af +  14  8 Dx => |⬆ 21 13  S |= 21 12 Pt |⬇ 21 11 Fw
+  8  4 Af +  14  8 Dx => |⬆ 22 13  S |= 22 12 Pt |⬇ 22 11 Fw
+  9  4 Af +  14  8 Dx => |⬆ 23 13  S |= 23 12 Pt |⬇ 23 11 Fw
+ 10  4 Af +  14  8 Dx => |⬆ 24 13  S |= 24 12 Pt |⬇ 24 11 Fw
+  9  5 Xl +  14  8 Dx => |⬆ 23 14 Zq |= 23 13  S |⬇ 23 12 Pt
+ 10  5 Xl +  14  8 Dx => |⬆ 24 14 Zq |= 24 13  S |⬇ 24 12 Pt
+ 11  5 Xl +  14  8 Dx => |⬆ 25 14 Zq |= 25 13  S |⬇ 25 12 Pt
+ 12  5 Xl +  14  8 Dx => |⬆ 26 14 Zq |= 26 13  S |⬇ 26 12 Pt
+ 10  6 Pq +  14  8 Dx => |⬆ 24 15 Xc |= 24 14 Zq |⬇ 24 13  S [r] try  <---SUCCESS
+ 11  6 Pq +  14  8 Dx => |⬆ 25 15 Xc |= 25 14 Zq |⬇ 25 13  S
+ 12  6 Pq +  14  8 Dx => |⬆ 26 15 Xc |= 26 14 Zq |⬇ 26 13  S
+ 13  6 Pq +  14  8 Dx => |⬆ 27 15 Xc |= 27 14 Zq |⬇ 27 13  S
+ 14  6 Pq +  14  8 Dx => |⬆ 28 15 Xc |= 28 14 Zq |⬇ 28 13  S
+ 15  6 Pq +  14  8 Dx => |⬆ 29 15 Xc |= 29 14 Zq |⬇ 29 13  S
+ 13  7 Zz +  14  8 Dx => |⬆ 27 16 Gy |= 27 15 Xc |⬇ 27 14 Zq
+ 14  7 Zz +  14  8 Dx => |⬆ 28 16 Gy |= 28 15 Xc |⬇ 28 14 Zq
+ 15  7 Zz +  14  8 Dx => |⬆ 29 16 Gy |= 29 15 Xc |⬇ 29 14 Zq
+ 16  7 Zz +  14  8 Dx => |⬆ 30 16 Gy |= 30 15 Xc |⬇ 30 14 Zq
+ 14  8 Dx +  14  8 Dx => |⬆ 28 17  D |= 28 16 Gy |⬇ 28 15 Xc
+ 14  8 Dx +  15  8 Dx => |⬆ 29 17  D |= 29 16 Gy |⬇ 29 15 Xc
+ 14  8 Dx +  16  8 Dx => |⬆ 30 17  D |= 30 16 Gy |⬇ 30 15 Xc
+ 14  8 Dx +  17  8 Dx => |⬆ 31 17  D |= 31 16 Gy |⬇ 31 15 Xc
+ 14  8 Dx +  18  8 Dx => |⬆ 32 17  D |= 32 16 Gy |⬇ 32 15 Xc
+ 14  8 Dx +  19  8 Dx => |⬆ 33 17  D |= 33 16 Gy |⬇ 33 15 Xc
+ 14  8 Dx +  17  9 Pm => |⬆ 31 18 Fj |= 31 17  D |⬇ 31 16 Gy
+ 14  8 Dx +  18  9 Pm => |⬆ 32 18 Fj |= 32 17  D |⬇ 32 16 Gy
+ 14  8 Dx +  19  9 Pm => |⬆ 33 18 Fj |= 33 17  D |⬇ 33 16 Gy
+ 14  8 Dx +  20  9 Pm => |⬆ 34 18 Fj |= 34 17  D |⬇ 34 16 Gy
+ 14  8 Dx +  21  9 Pm => |⬆ 35 18 Fj |= 35 17  D |⬇ 35 16 Gy
+ 14  8 Dx +  19 10  M => |⬆ 33 19  O |= 33 18 Fj |⬇ 33 17  D
+ 14  8 Dx +  20 10  M => |⬆ 34 19  O |= 34 18 Fj |⬇ 34 17  D
+ 14  8 Dx +  21 10  M => |⬆ 35 19  O |= 35 18 Fj |⬇ 35 17  D
+ 14  8 Dx +  22 10  M => |⬆ 36 19  O |= 36 18 Fj |⬇ 36 17  D
+ 14  8 Dx +  23 10  M => |⬆ 37 19  O |= 37 18 Fj |⬇ 37 17  D
+ 14  8 Dx +  21 11 Fw => |⬆ 35 20  C |= 35 19  O |⬇ 35 18 Fj
+ 14  8 Dx +  22 11 Fw => |⬆ 36 20  C |= 36 19  O |⬇ 36 18 Fj
+ 14  8 Dx +  23 11 Fw => |⬆ 37 20  C |= 37 19  O |⬇ 37 18 Fj
+ 14  8 Dx +  24 11 Fw => |⬆ 38 20  C |= 38 19  O |⬇ 38 18 Fj
+ 14  8 Dx +  25 11 Fw => |⬆ 39 20  C |= 39 19  O |⬇ 39 18 Fj
+ 14  8 Dx +  26 11 Fw => |⬆ 40 20  C |= 40 19  O |⬇ 40 18 Fj
+ 14  8 Dx +  22 12 Pt => |⬆ 36 21  E |= 36 20  C |⬇ 36 19  O
+ 14  8 Dx +  23 12 Pt => |⬆ 37 21  E |= 37 20  C |⬇ 37 19  O
+ 14  8 Dx +  24 12 Pt => |⬆ 38 21  E |= 38 20  C |⬇ 38 19  O
+ 14  8 Dx +  25 12 Pt => |⬆ 39 21  E |= 39 20  C |⬇ 39 19  O
+ 14  8 Dx +  26 12 Pt => |⬆ 40 21  E |= 40 20  C |⬇ 40 19  O
+ 14  8 Dx +  27 12 Pt => |⬆ 41 21  E |= 41 20  C |⬇ 41 19  O
+ 14  8 Dx +  28 12 Pt => |⬆ 42 21  E |= 42 20  C |⬇ 42 19  O
+ 14  8 Dx +  25 13  S => |⬆ 39 22  A |= 39 21  E |⬇ 39 20  C
+ 14  8 Dx +  26 13  S => |⬆ 40 22  A |= 40 21  E |⬇ 40 20  C
+ 14  8 Dx +  27 13  S => |⬆ 41 22  A |= 41 21  E |⬇ 41 20  C
+ 14  8 Dx +  28 13  S => |⬆ 42 22  A |= 42 21  E |⬇ 42 20  C
+ 14  8 Dx +  29 13  S => |⬆ 43 22  A |= 43 21  E |⬇ 43 20  C
+ 14  8 Dx +  30 13  S => |⬆ 44 22  A |= 44 21  E |⬇ 44 20  C
+ 14  8 Dx +  26 14 Zq => |⬆ 40 23 Aw |= 40 22  A |⬇ 40 21  E
+ 14  8 Dx +  27 14 Zq => |⬆ 41 23 Aw |= 41 22  A |⬇ 41 21  E
+ 14  8 Dx +  28 14 Zq => |⬆ 42 23 Aw |= 42 22  A |⬇ 42 21  E
+ 14  8 Dx +  29 14 Zq => |⬆ 43 23 Aw |= 43 22  A |⬇ 43 21  E
+ 14  8 Dx +  30 14 Zq => |⬆ 44 23 Aw |= 44 22  A |⬇ 44 21  E
+ 14  8 Dx +  31 14 Zq => |⬆ 45 23 Aw |= 45 22  A |⬇ 45 21  E
+ 14  8 Dx +  32 14 Zq => |⬆ 46 23 Aw |= 46 22  A |⬇ 46 21  E
+ 14  8 Dx +  28 15 Xc => |⬆ 42 24 Oc |= 42 23 Aw |⬇ 42 22  A
+ 14  8 Dx +  29 15 Xc => |⬆ 43 24 Oc |= 43 23 Aw |⬇ 43 22  A
+ 14  8 Dx +  30 15 Xc => |⬆ 44 24 Oc |= 44 23 Aw |⬇ 44 22  A
+ 14  8 Dx +  31 15 Xc => |⬆ 45 24 Oc |= 45 23 Aw |⬇ 45 22  A
+ 14  8 Dx +  32 15 Xc => |⬆ 46 24 Oc |= 46 23 Aw |⬇ 46 22  A
+ 14  8 Dx +  33 15 Xc => |⬆ 47 24 Oc |= 47 23 Aw |⬇ 47 22  A
+ 14  8 Dx +  34 15 Xc => |⬆ 48 24 Oc |= 48 23 Aw |⬇ 48 22  A
+ 14  8 Dx +  31 16 Gy => |⬆ 45 25 Nb |= 45 24 Oc |⬇ 45 23 Aw
+ 14  8 Dx +  32 16 Gy => |⬆ 46 25 Nb |= 46 24 Oc |⬇ 46 23 Aw
+ 14  8 Dx +  33 16 Gy => |⬆ 47 25 Nb |= 47 24 Oc |⬇ 47 23 Aw
+ 14  8 Dx +  34 16 Gy => |⬆ 48 25 Nb |= 48 24 Oc |⬇ 48 23 Aw
+ 14  8 Dx +  35 16 Gy => |⬆ 49 25 Nb |= 49 24 Oc |⬇ 49 23 Aw
+ 14  8 Dx +  36 16 Gy => |⬆ 50 25 Nb |= 50 24 Oc |⬇ 50 23 Aw
+ 14  8 Dx +  32 17  D => |⬆ 46 26 Xk |= 46 25 Nb |⬇ 46 24 Oc
+ 14  8 Dx +  33 17  D => |⬆ 47 26 Xk |= 47 25 Nb |⬇ 47 24 Oc
+ 14  8 Dx +  34 17  D => |⬆ 48 26 Xk |= 48 25 Nb |⬇ 48 24 Oc
+ 14  8 Dx +  35 17  D => |⬆ 49 26 Xk |= 49 25 Nb |⬇ 49 24 Oc
+ 14  8 Dx +  36 17  D => |⬆ 50 26 Xk |= 50 25 Nb |⬇ 50 24 Oc
+ 14  8 Dx +  37 17  D => |⬆ 51 26 Xk |= 51 25 Nb |⬇ 51 24 Oc
+ 14  8 Dx +  38 17  D => |⬆ 52 26 Xk |= 52 25 Nb |⬇ 52 24 Oc
+ 14  8 Dx +  39 17  D => |⬆ 53 26 Xk |= 53 25 Nb |⬇ 53 24 Oc
+ 14  8 Dx +  34 18 Fj => |⬆ 48 27 Ic |= 48 26 Xk |⬇ 48 25 Nb
+ 14  8 Dx +  35 18 Fj => |⬆ 49 27 Ic |= 49 26 Xk |⬇ 49 25 Nb
+ 14  8 Dx +  36 18 Fj => |⬆ 50 27 Ic |= 50 26 Xk |⬇ 50 25 Nb
+ 14  8 Dx +  37 18 Fj => |⬆ 51 27 Ic |= 51 26 Xk |⬇ 51 25 Nb
+ 14  8 Dx +  38 18 Fj => |⬆ 52 27 Ic |= 52 26 Xk |⬇ 52 25 Nb
+ 14  8 Dx +  39 18 Fj => |⬆ 53 27 Ic |= 53 26 Xk |⬇ 53 25 Nb
+ 14  8 Dx +  40 18 Fj => |⬆ 54 27 Ic |= 54 26 Xk |⬇ 54 25 Nb
+ 14  8 Dx +  41 18 Fj => |⬆ 55 27 Ic |= 55 26 Xk |⬇ 55 25 Nb
+ 14  8 Dx +  36 19  O => |⬆ 50 28 Yp |= 50 27 Ic |⬇ 50 26 Xk
+ 14  8 Dx +  37 19  O => |⬆ 51 28 Yp |= 51 27 Ic |⬇ 51 26 Xk
+ 14  8 Dx +  38 19  O => |⬆ 52 28 Yp |= 52 27 Ic |⬇ 52 26 Xk
+ 14  8 Dx +  39 19  O => |⬆ 53 28 Yp |= 53 27 Ic |⬇ 53 26 Xk
+ 14  8 Dx +  40 19  O => |⬆ 54 28 Yp |= 54 27 Ic |⬇ 54 26 Xk
+ 14  8 Dx +  41 19  O => |⬆ 55 28 Yp |= 55 27 Ic |⬇ 55 26 Xk
+ 14  8 Dx +  42 19  O => |⬆ 56 28 Yp |= 56 27 Ic |⬇ 56 26 Xk
+ 14  8 Dx +  43 19  O => |⬆ 57 28 Yp |= 57 27 Ic |⬇ 57 26 Xk
+ 14  8 Dx +  38 20  C => |⬆ 52 29 Jx |= 52 28 Yp |⬇ 52 27 Ic
+ 14  8 Dx +  39 20  C => |⬆ 53 29 Jx |= 53 28 Yp |⬇ 53 27 Ic
+ 14  8 Dx +  40 20  C => |⬆ 54 29 Jx |= 54 28 Yp |⬇ 54 27 Ic
+ 14  8 Dx +  41 20  C => |⬆ 55 29 Jx |= 55 28 Yp |⬇ 55 27 Ic
+ 14  8 Dx +  42 20  C => |⬆ 56 29 Jx |= 56 28 Yp |⬇ 56 27 Ic
+ 14  8 Dx +  43 20  C => |⬆ 57 29 Jx |= 57 28 Yp |⬇ 57 27 Ic
+ 14  8 Dx +  44 20  C => |⬆ 58 29 Jx |= 58 28 Yp |⬇ 58 27 Ic
+ 14  8 Dx +  45 20  C => |⬆ 59 29 Jx |= 59 28 Yp |⬇ 59 27 Ic
+ 14  8 Dx +  40 21  E => |⬆ 54 30 Hb |= 54 29 Jx |⬇ 54 28 Yp
+ 14  8 Dx +  41 21  E => |⬆ 55 30 Hb |= 55 29 Jx |⬇ 55 28 Yp
+ 14  8 Dx +  42 21  E => |⬆ 56 30 Hb |= 56 29 Jx |⬇ 56 28 Yp
+ 14  8 Dx +  43 21  E => |⬆ 57 30 Hb |= 57 29 Jx |⬇ 57 28 Yp
+ 14  8 Dx +  44 21  E => |⬆ 58 30 Hb |= 58 29 Jx |⬇ 58 28 Yp
+ 14  8 Dx +  45 21  E => |⬆ 59 30 Hb |= 59 29 Jx |⬇ 59 28 Yp
+ 14  8 Dx +  46 21  E => |⬆ 60 30 Hb |= 60 29 Jx |⬇ 60 28 Yp
+ 14  8 Dx +  47 21  E => |⬆ 61 30 Hb |= 61 29 Jx |⬇ 61 28 Yp
+ 14  8 Dx +  48 21  E => |⬆ 62 30 Hb |= 62 29 Jx |⬇ 62 28 Yp
+ 14  8 Dx +  42 22  A => |⬆ 56 31 At |= 56 30 Hb |⬇ 56 29 Jx
+ 14  8 Dx +  43 22  A => |⬆ 57 31 At |= 57 30 Hb |⬇ 57 29 Jx
+ 14  8 Dx +  44 22  A => |⬆ 58 31 At |= 58 30 Hb |⬇ 58 29 Jx
+ 14  8 Dx +  45 22  A => |⬆ 59 31 At |= 59 30 Hb |⬇ 59 29 Jx
+ 14  8 Dx +  46 22  A => |⬆ 60 31 At |= 60 30 Hb |⬇ 60 29 Jx
+ 14  8 Dx +  47 22  A => |⬆ 61 31 At |= 61 30 Hb |⬇ 61 29 Jx
+ 14  8 Dx +  48 22  A => |⬆ 62 31 At |= 62 30 Hb |⬇ 62 29 Jx
+ 14  8 Dx +  49 22  A => |⬆ 63 31 At |= 63 30 Hb |⬇ 63 29 Jx
+ 14  8 Dx +  50 22  A => |⬆ 64 31 At |= 64 30 Hb |⬇ 64 29 Jx
+ 14  8 Dx +  44 23 Aw => |⬆ 58 32 Ny |= 58 31 At |⬇ 58 30 Hb
+ 14  8 Dx +  45 23 Aw => |⬆ 59 32 Ny |= 59 31 At |⬇ 59 30 Hb
+ 14  8 Dx +  46 23 Aw => |⬆ 60 32 Ny |= 60 31 At |⬇ 60 30 Hb
+ 14  8 Dx +  47 23 Aw => |⬆ 61 32 Ny |= 61 31 At |⬇ 61 30 Hb
+ 14  8 Dx +  48 23 Aw => |⬆ 62 32 Ny |= 62 31 At |⬇ 62 30 Hb
+ 14  8 Dx +  49 23 Aw => |⬆ 63 32 Ny |= 63 31 At |⬇ 63 30 Hb
+ 14  8 Dx +  50 23 Aw => |⬆ 64 32 Ny |= 64 31 At |⬇ 64 30 Hb
+ 14  8 Dx +  51 23 Aw => |⬆ 65 32 Ny |= 65 31 At |⬇ 65 30 Hb
+ 14  8 Dx +  52 23 Aw => |⬆ 66 32 Ny |= 66 31 At |⬇ 66 30 Hb
+ 14  8 Dx +  46 24 Oc => |⬆ 60 33 Pw |= 60 32 Ny |⬇ 60 31 At
+ 14  8 Dx +  47 24 Oc => |⬆ 61 33 Pw |= 61 32 Ny |⬇ 61 31 At
+ 14  8 Dx +  48 24 Oc => |⬆ 62 33 Pw |= 62 32 Ny |⬇ 62 31 At
+ 14  8 Dx +  49 24 Oc => |⬆ 63 33 Pw |= 63 32 Ny |⬇ 63 31 At
+ 14  8 Dx +  50 24 Oc => |⬆ 64 33 Pw |= 64 32 Ny |⬇ 64 31 At
+ 14  8 Dx +  51 24 Oc => |⬆ 65 33 Pw |= 65 32 Ny |⬇ 65 31 At
+ 14  8 Dx +  52 24 Oc => |⬆ 66 33 Pw |= 66 32 Ny |⬇ 66 31 At
+ 14  8 Dx +  53 24 Oc => |⬆ 67 33 Pw |= 67 32 Ny |⬇ 67 31 At
+ 14  8 Dx +  54 24 Oc => |⬆ 68 33 Pw |= 68 32 Ny |⬇ 68 31 At
+ 14  8 Dx +  47 25 Nb => |⬆ 61 34 Gk |= 61 33 Pw |⬇ 61 32 Ny
+ 14  8 Dx +  48 25 Nb => |⬆ 62 34 Gk |= 62 33 Pw |⬇ 62 32 Ny
+ 14  8 Dx +  49 25 Nb => |⬆ 63 34 Gk |= 63 33 Pw |⬇ 63 32 Ny
+ 14  8 Dx +  50 25 Nb => |⬆ 64 34 Gk |= 64 33 Pw |⬇ 64 32 Ny
+ 14  8 Dx +  51 25 Nb => |⬆ 65 34 Gk |= 65 33 Pw |⬇ 65 32 Ny
+ 14  8 Dx +  52 25 Nb => |⬆ 66 34 Gk |= 66 33 Pw |⬇ 66 32 Ny
+ 14  8 Dx +  53 25 Nb => |⬆ 67 34 Gk |= 67 33 Pw |⬇ 67 32 Ny
+ 14  8 Dx +  54 25 Nb => |⬆ 68 34 Gk |= 68 33 Pw |⬇ 68 32 Ny
+ 14  8 Dx +  55 25 Nb => |⬆ 69 34 Gk |= 69 33 Pw |⬇ 69 32 Ny
+ 14  8 Dx +  56 25 Nb => |⬆ 70 34 Gk |= 70 33 Pw |⬇ 70 32 Ny
+ 14  8 Dx +  50 26 Xk => |⬆ 64 35 Qi |= 64 34 Gk |⬇ 64 33 Pw
+ 14  8 Dx +  51 26 Xk => |⬆ 65 35 Qi |= 65 34 Gk |⬇ 65 33 Pw
+ 14  8 Dx +  52 26 Xk => |⬆ 66 35 Qi |= 66 34 Gk |⬇ 66 33 Pw
+ 14  8 Dx +  53 26 Xk => |⬆ 67 35 Qi |= 67 34 Gk |⬇ 67 33 Pw
+ 14  8 Dx +  54 26 Xk => |⬆ 68 35 Qi |= 68 34 Gk |⬇ 68 33 Pw
+ 14  8 Dx +  55 26 Xk => |⬆ 69 35 Qi |= 69 34 Gk |⬇ 69 33 Pw
+ 14  8 Dx +  56 26 Xk => |⬆ 70 35 Qi |= 70 34 Gk |⬇ 70 33 Pw
+ 14  8 Dx +  57 26 Xk => |⬆ 71 35 Qi |= 71 34 Gk |⬇ 71 33 Pw
+ 14  8 Dx +  58 26 Xk => |⬆ 72 35 Qi |= 72 34 Gk |⬇ 72 33 Pw
+ 14  8 Dx +  59 26 Xk => |⬆ 73 35 Qi |= 73 34 Gk |⬇ 73 33 Pw
+ 14  8 Dx +  51 27 Ic => |⬆ 65 36 Xy |= 65 35 Qi |⬇ 65 34 Gk [r] try <---SUCCESS
+ 14  8 Dx +  52 27 Ic => |⬆ 66 36 Xy |= 66 35 Qi |⬇ 66 34 Gk
+ 14  8 Dx +  53 27 Ic => |⬆ 67 36 Xy |= 67 35 Qi |⬇ 67 34 Gk
+ 14  8 Dx +  54 27 Ic => |⬆ 68 36 Xy |= 68 35 Qi |⬇ 68 34 Gk
+ 14  8 Dx +  55 27 Ic => |⬆ 69 36 Xy |= 69 35 Qi |⬇ 69 34 Gk
+ 14  8 Dx +  56 27 Ic => |⬆ 70 36 Xy |= 70 35 Qi |⬇ 70 34 Gk
+ 14  8 Dx +  57 27 Ic => |⬆ 71 36 Xy |= 71 35 Qi |⬇ 71 34 Gk
+ 14  8 Dx +  58 27 Ic => |⬆ 72 36 Xy |= 72 35 Qi |⬇ 72 34 Gk
+ 14  8 Dx +  59 27 Ic => |⬆ 73 36 Xy |= 73 35 Qi |⬇ 73 34 Gk
+ 14  8 Dx +  60 27 Ic => |⬆ 74 36 Xy |= 74 35 Qi |⬇ 74 34 Gk
+ 14  8 Dx +  61 27 Ic => |⬆ 75 36 Xy |= 75 35 Qi |⬇ 75 34 Gk
+ 14  8 Dx +  54 28 Yp => |⬆ 68 37 Gq |= 68 36 Xy |⬇ 68 35 Qi
+ 14  8 Dx +  55 28 Yp => |⬆ 69 37 Gq |= 69 36 Xy |⬇ 69 35 Qi
+ 14  8 Dx +  56 28 Yp => |⬆ 70 37 Gq |= 70 36 Xy |⬇ 70 35 Qi
+ 14  8 Dx +  57 28 Yp => |⬆ 71 37 Gq |= 71 36 Xy |⬇ 71 35 Qi
+ 14  8 Dx +  58 28 Yp => |⬆ 72 37 Gq |= 72 36 Xy |⬇ 72 35 Qi
+ 14  8 Dx +  59 28 Yp => |⬆ 73 37 Gq |= 73 36 Xy |⬇ 73 35 Qi
+ 14  8 Dx +  60 28 Yp => |⬆ 74 37 Gq |= 74 36 Xy |⬇ 74 35 Qi
+ 14  8 Dx +  61 28 Yp => |⬆ 75 37 Gq |= 75 36 Xy |⬇ 75 35 Qi
+ 14  8 Dx +  62 28 Yp => |⬆ 76 37 Gq |= 76 36 Xy |⬇ 76 35 Qi
+ 14  8 Dx +  63 28 Yp => |⬆ 77 37 Gq |= 77 36 Xy |⬇ 77 35 Qi
+ 14  8 Dx +  56 29 Jx => |⬆ 70 38 Bt |= 70 37 Gq |⬇ 70 36 Xy
+ 14  8 Dx +  57 29 Jx => |⬆ 71 38 Bt |= 71 37 Gq |⬇ 71 36 Xy
+ 14  8 Dx +  58 29 Jx => |⬆ 72 38 Bt |= 72 37 Gq |⬇ 72 36 Xy
+ 14  8 Dx +  59 29 Jx => |⬆ 73 38 Bt |= 73 37 Gq |⬇ 73 36 Xy
+ 14  8 Dx +  60 29 Jx => |⬆ 74 38 Bt |= 74 37 Gq |⬇ 74 36 Xy
+ 14  8 Dx +  61 29 Jx => |⬆ 75 38 Bt |= 75 37 Gq |⬇ 75 36 Xy
+ 14  8 Dx +  62 29 Jx => |⬆ 76 38 Bt |= 76 37 Gq |⬇ 76 36 Xy
+ 14  8 Dx +  63 29 Jx => |⬆ 77 38 Bt |= 77 37 Gq |⬇ 77 36 Xy
+ 14  8 Dx +  64 29 Jx => |⬆ 78 38 Bt |= 78 37 Gq |⬇ 78 36 Xy
+ 14  8 Dx +  65 29 Jx => |⬆ 79 38 Bt |= 79 37 Gq |⬇ 79 36 Xy
+ 14  8 Dx +  57 30 Hb => |⬆ 71 39  H |= 71 38 Bt |⬇ 71 37 Gq [ ] try
+ 14  8 Dx +  58 30 Hb => |⬆ 72 39  H |= 72 38 Bt |⬇ 72 37 Gq
+ 14  8 Dx +  59 30 Hb => |⬆ 73 39  H |= 73 38 Bt |⬇ 73 37 Gq
+ 14  8 Dx +  60 30 Hb => |⬆ 74 39  H |= 74 38 Bt |⬇ 74 37 Gq
+ 14  8 Dx +  61 30 Hb => |⬆ 75 39  H |= 75 38 Bt |⬇ 75 37 Gq
+ 14  8 Dx +  62 30 Hb => |⬆ 76 39  H |= 76 38 Bt |⬇ 76 37 Gq
+ 14  8 Dx +  63 30 Hb => |⬆ 77 39  H |= 77 38 Bt |⬇ 77 37 Gq
+ 14  8 Dx +  64 30 Hb => |⬆ 78 39  H |= 78 38 Bt |⬇ 78 37 Gq
+ 14  8 Dx +  65 30 Hb => |⬆ 79 39  H |= 79 38 Bt |⬇ 79 37 Gq
+ 14  8 Dx +  66 30 Hb => |⬆ 80 39  H |= 80 38 Bt |⬇ 80 37 Gq
+ 14  8 Dx +  67 30 Hb => |⬆ 81 39  H |= 81 38 Bt |⬇ 81 37 Gq [ ] try
+ 14  8 Dx +  60 31 At => |⬆ 74 40  U |= 74 39  H |⬇ 74 38 Bt
+ 14  8 Dx +  61 31 At => |⬆ 75 40  U |= 75 39  H |⬇ 75 38 Bt
+ 14  8 Dx +  62 31 At => |⬆ 76 40  U |= 76 39  H |⬇ 76 38 Bt
+ 14  8 Dx +  63 31 At => |⬆ 77 40  U |= 77 39  H |⬇ 77 38 Bt
+ 14  8 Dx +  64 31 At => |⬆ 78 40  U |= 78 39  H |⬇ 78 38 Bt
+ 14  8 Dx +  65 31 At => |⬆ 79 40  U |= 79 39  H |⬇ 79 38 Bt
+ 14  8 Dx +  66 31 At => |⬆ 80 40  U |= 80 39  H |⬇ 80 38 Bt
+ 14  8 Dx +  67 31 At => |⬆ 81 40  U |= 81 39  H |⬇ 81 38 Bt
+ 14  8 Dx +  68 31 At => |⬆ 82 40  U |= 82 39  H |⬇ 82 38 Bt [ ] try
+ 14  8 Dx +  69 31 At => |⬆ 83 40  U |= 83 39  H |⬇ 83 38 Bt [ ] try
+ 14  8 Dx +  61 32 Ny => |⬆ 75 41 Sq |= 75 40  U |⬇ 75 39  H
+ 14  8 Dx +  62 32 Ny => |⬆ 76 41 Sq |= 76 40  U |⬇ 76 39  H
+ 14  8 Dx +  63 32 Ny => |⬆ 77 41 Sq |= 77 40  U |⬇ 77 39  H
+ 14  8 Dx +  64 32 Ny => |⬆ 78 41 Sq |= 78 40  U |⬇ 78 39  H
+ 14  8 Dx +  65 32 Ny => |⬆ 79 41 Sq |= 79 40  U |⬇ 79 39  H
+ 14  8 Dx +  66 32 Ny => |⬆ 80 41 Sq |= 80 40  U |⬇ 80 39  H
+ 14  8 Dx +  67 32 Ny => |⬆ 81 41 Sq |= 81 40  U |⬇ 81 39  H
+ 14  8 Dx +  68 32 Ny => |⬆ 82 41 Sq |= 82 40  U |⬇ 82 39  H
+ 14  8 Dx +  69 32 Ny => |⬆ 83 41 Sq |= 83 40  U |⬇ 83 39  H [ ] try
+ 14  8 Dx +  70 32 Ny => |⬆ 84 41 Sq |= 84 40  U |⬇ 84 39  H [ ] try
+ 14  8 Dx +  71 32 Ny => |⬆ 85 41 Sq |= 85 40  U |⬇ 85 39  H [ ] try
+ 14  8 Dx +  72 32 Ny => |⬆ 86 41 Sq |= 86 40  U |⬇ 86 39  H [ ] try
+ 14  8 Dx +  64 33 Pw => |⬆ 78 42 Ua |= 78 41 Sq |⬇ 78 40  U
+ 14  8 Dx +  65 33 Pw => |⬆ 79 42 Ua |= 79 41 Sq |⬇ 79 40  U
+ 14  8 Dx +  66 33 Pw => |⬆ 80 42 Ua |= 80 41 Sq |⬇ 80 40  U
+ 14  8 Dx +  67 33 Pw => |⬆ 81 42 Ua |= 81 41 Sq |⬇ 81 40  U
+ 14  8 Dx +  68 33 Pw => |⬆ 82 42 Ua |= 82 41 Sq |⬇ 82 40  U
+ 14  8 Dx +  69 33 Pw => |⬆ 83 42 Ua |= 83 41 Sq |⬇ 83 40  U
+ 14  8 Dx +  70 33 Pw => |⬆ 84 42 Ua |= 84 41 Sq |⬇ 84 40  U [ ] try
+ 14  8 Dx +  71 33 Pw => |⬆ 85 42 Ua |= 85 41 Sq |⬇ 85 40  U [ ] try
+ 14  8 Dx +  72 33 Pw => |⬆ 86 42 Ua |= 86 41 Sq |⬇ 86 40  U [ ] try
+ 14  8 Dx +  73 33 Pw => |⬆ 87 42 Ua |= 87 41 Sq |⬇ 87 40  U [ ] try
+ 14  8 Dx +  74 33 Pw => |⬆ 88 42 Ua |= 88 41 Sq |⬇ 88 40  U [ ] try
+ 14  8 Dx +  66 34 Gk => |⬆ 80 43 .. |= 80 42 Ua |⬇ 80 41 Sq
+ 14  8 Dx +  67 34 Gk => |⬆ 81 43 .. |= 81 42 Ua |⬇ 81 41 Sq
+ 14  8 Dx +  68 34 Gk => |⬆ 82 43 .. |= 82 42 Ua |⬇ 82 41 Sq
+ 14  8 Dx +  69 34 Gk => |⬆ 83 43 .. |= 83 42 Ua |⬇ 83 41 Sq
+ 14  8 Dx +  70 34 Gk => |⬆ 84 43 .. |= 84 42 Ua |⬇ 84 41 Sq
+ 14  8 Dx +  71 34 Gk => |⬆ 85 43 .. |= 85 42 Ua |⬇ 85 41 Sq [ ] try
+ 14  8 Dx +  72 34 Gk => |⬆ 86 43 .. |= 86 42 Ua |⬇ 86 41 Sq [ ] try
+ 14  8 Dx +  73 34 Gk => |⬆ 87 43 .. |= 87 42 Ua |⬇ 87 41 Sq [ ] try
+ 14  8 Dx +  74 34 Gk => |⬆ 88 43 .. |= 88 42 Ua |⬇ 88 41 Sq [ ] try
+ 14  8 Dx +  75 34 Gk => |⬆ 89 43 .. |= 89 42 Ua |⬇ 89 41 Sq [ ] try
+ 14  8 Dx +  76 34 Gk => |⬆ 90 43 .. |= 90 42 Ua |⬇ 90 41 Sq [ ] try
+ 14  8 Dx +  67 35 Qi => |⬆ 81 44 .. |= 81 43 .. |⬇ 81 42 Ua [ ] try
+ 14  8 Dx +  68 35 Qi => |⬆ 82 44 .. |= 82 43 .. |⬇ 82 42 Ua [ ] try
+ 14  8 Dx +  69 35 Qi => |⬆ 83 44 .. |= 83 43 .. |⬇ 83 42 Ua
+ 14  8 Dx +  70 35 Qi => |⬆ 84 44 .. |= 84 43 .. |⬇ 84 42 Ua
+ 14  8 Dx +  71 35 Qi => |⬆ 85 44 .. |= 85 43 .. |⬇ 85 42 Ua
+ 14  8 Dx +  72 35 Qi => |⬆ 86 44 .. |= 86 43 .. |⬇ 86 42 Ua [ ] try
+ 14  8 Dx +  73 35 Qi => |⬆ 87 44 .. |= 87 43 .. |⬇ 87 42 Ua [ ] try
+ 14  8 Dx +  74 35 Qi => |⬆ 88 44 .. |= 88 43 .. |⬇ 88 42 Ua [ ] try
+ 14  8 Dx +  75 35 Qi => |⬆ 89 44 .. |= 89 43 .. |⬇ 89 42 Ua [ ] try
+ 14  8 Dx +  76 35 Qi => |⬆ 90 44 .. |= 90 43 .. |⬇ 90 42 Ua [ ] try
+ 14  8 Dx +  77 35 Qi => |⬆ 91 44 .. |= 91 43 .. |⬇ 91 42 Ua [ ] try
+ 14  8 Dx +  78 35 Qi => |⬆ 92 44 .. |= 92 43 .. |⬇ 92 42 Ua [ ] try
 
 
-[ ] 17  9 Pm + 25 13  S + 1200 => 42 22  A
-[ ] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
-[ ] 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
-[ ] 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx
-[ ] 10   6 Pq +  14   8 Dx => |⬆  24  15 Xc |=  24  14 Zq |⬇  24  13  S
+[ ] 14  8 Dx⁺ + 57 30 Hb⁺ + 5000 => |⬆ 71 39  H |= 71 38 Bt |⬇ 71 37 Gq
+[ ] 14  8 Dx⁺ + 67 30 Hbª + 5000 => |⬆ 81 39  H |= 81 38 Bt |⬇ 81 37 Gq
+[ ] 14  8 Dx⁺ + 68 31 At⁻ + 5000 => |⬆ 82 40  U |= 82 39  H |⬇ 82 38 Bt
+[ ] 14  8 Dx⁺ + 69 31 At⁻ + 5000 => |⬆ 83 40  U |= 83 39  H |⬇ 83 38 Bt
+[ ] 14  8 Dx⁺ + 69 32 Nyª + 5000 => |⬆ 83 41 Sq |= 83 40  U |⬇ 83 39  H
+[*] 14  8 Dx⁺ + 70 32 Ny⁻ + 5000 => |⬆ 84 41 Sq |= 84 40  U |⬇ 84 39  H
+[ ] 14  8 Dx⁺ + 71 32 Ny⁻ + 5000 => |⬆ 85 41 Sq |= 85 40  U |⬇ 85 39  H
+[ ] 14  8 Dx⁺ + 72 32 Ny⁻ + 5000 => |⬆ 86 41 Sq |= 86 40  U |⬇ 86 39  H
+[ ] 14  8 Dx⁺ + 70 33 Pwª + 5000 => |⬆ 84 42 Ua |= 84 41 Sq |⬇ 84 40  U
+[ ] 14  8 Dx⁺ + 71 33 Pw⁻ + 5000 => |⬆ 85 42 Ua |= 85 41 Sq |⬇ 85 40  U
+[ ] 14  8 Dx⁺ + 72 33 Pw⁻ + 5000 => |⬆ 86 42 Ua |= 86 41 Sq |⬇ 86 40  U
+[ ] 14  8 Dx⁺ + 73 33 Pw⁻ + 5000 => |⬆ 87 42 Ua |= 87 41 Sq |⬇ 87 40  U
+[ ] 14  8 Dx⁺ + 74 33 Pw⁻ + 5000 => |⬆ 88 42 Ua |= 88 41 Sq |⬇ 88 40  U
+[ ] 14  8 Dx⁺ + 71 34 Gkª + 5000 => |⬆ 85 43 .. |= 85 42 Ua |⬇ 85 41 Sq
+[ ] 14  8 Dx⁺ + 72 34 Gk∙ + 5000 => |⬆ 86 43 .. |= 86 42 Ua |⬇ 86 41 Sq
+[ ] 14  8 Dx⁺ + 73 34 Gk⁻ + 5000 => |⬆ 87 43 .. |= 87 42 Ua |⬇ 87 41 Sq
+[ ] 14  8 Dx⁺ + 74 34 Gk∙ + 5000 => |⬆ 88 43 .. |= 88 42 Ua |⬇ 88 41 Sq
+[ ] 14  8 Dx⁺ + 75 34 Gk∙ + 5000 => |⬆ 89 43 .. |= 89 42 Ua |⬇ 89 41 Sq
+[ ] 14  8 Dx⁺ + 76 34 Gk⁻ + 5000 => |⬆ 90 43 .. |= 90 42 Ua |⬇ 90 41 Sq
+[ ] 14  8 Dx⁺ + 67 35 Qi⁺ + 5000 => |⬆ 81 44 .. |= 81 43 .. |⬇ 81 42 Ua
+[ ] 14  8 Dx⁺ + 68 35 Qi⁺ + 5000 => |⬆ 82 44 .. |= 82 43 .. |⬇ 82 42 Ua
+[ ] 14  8 Dx⁺ + 72 35 Qiª + 5000 => |⬆ 86 44 .. |= 86 43 .. |⬇ 86 42 Ua
+[ ] 14  8 Dx⁺ + 73 35 Qiª + 5000 => |⬆ 87 44 .. |= 87 43 .. |⬇ 87 42 Ua
+[ ] 14  8 Dx⁺ + 74 35 Qiª + 5000 => |⬆ 88 44 .. |= 88 43 .. |⬇ 88 42 Ua
+[ ] 14  8 Dx⁺ + 75 35 Qi⁺ + 5000 => |⬆ 89 44 .. |= 89 43 .. |⬇ 89 42 Ua
+[ ] 14  8 Dx⁺ + 76 35 Qi∙ + 5000 => |⬆ 90 44 .. |= 90 43 .. |⬇ 90 42 Ua
+[ ] 14  8 Dx⁺ + 77 35 Qi⁻ + 5000 => |⬆ 91 44 .. |= 91 43 .. |⬇ 91 42 Ua
+[ ] 14  8 Dx⁺ + 78 35 Qi⁻ + 5000 => |⬆ 92 44 .. |= 92 43 .. |⬇ 92 42 Ua
+
+[r] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+[r] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
+[r] 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
+[r] 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx
+[r] 10   6 Pq +  14   8 Dx => |⬆  24  15 Xc |=  24  14 Zq |⬇  24  13  S  <---SUCCESS
+
+[r] 17  9 Pm + 25 13  S + 1200 => 42 22  A
+[r] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
+[r] 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
+[r] 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx
+[r] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+[r]  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc
+[r]  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
+[r] 14  8 Dx + 51 27 Ic + ???? => |⬆  65  36 Xy |=  65  35 Qi |⬇  65  34 Gk [ ] try
+
+
 
 2025-01-25 Jan.Sat 09:41:34 [ ] rework my system so that convert_token_id_to_hex.pl generates most of the support files. 
 [ ] make it generate the whole vim syntax file
@@ -4340,16 +4546,16 @@ decay of 16  7 Zz
 
 2025-01-07 Jan.Tue 22:54 Still can't wrap my head around the shells. Apparently different layers have different numbers of shells
 ==>SHELL TABLE 1
-  | 1  1 Ju∙     | 2  1 Ju∙     | 3  1 Ju∙     | 4  2  W∙     | 5  2  W∙     | 5  3 Cq⁺     | 6  3 Cq∙     | 7  3 Cq∙     | 7  4 Afª     | 8  4 Af∙     | 9  4 Af∙     |10  4 Af∙     | 9  5 Xl⁺     |10  5 Xlª     |11  5 Xl∙     |12  5 Xl∙     |10  6 Pq⁺     |11  6 Pq⁺     |12  6 Pqª     |13  6 Pq∙     |14  6 Pq⁻     |15  6 Pq⁻     |13  7 Zz⁺     |14  7 Zzª     |15  7 Zz∙     |16  7 Zz⁻     |14  8 Dx⁺     |15  8 Dx⁺     |16  8 Dx∙     |17  8 Dx∙     |18  8 Dx∙     |19  8 Dx⁻     |17  9 Pm⁺     |18  9 Pm⁺     |19  9 Pm∙     |20  9 Pm⁻     |21  9 Pm⁻     |19 10  M⁺     |20 10  M∙     |21 10  M∙     |22 10  M∙     |23 10  M⁻     |21 11 Fw⁺     |22 11 Fw⁺     |23 11 Fw∙     |24 11 Fw⁻     |25 11 Fw⁻     |26 11 Fw⁻     |22 12 Pt⁺     |23 12 Pt⁺     |24 12 Pt∙     |25 12 Ptª     |26 12 Pt∙     |27 12 Pt⁻     |28 12 Pt⁻     |25 13  S⁺     |26 13  Sª     |27 13  Sª     |28 13  S∙     |29 13  S⁻     |30 13  S⁻     |26 14 Zq⁺     |27 14 Zq⁺     |28 14 Zq⁺     |29 14 Zq∙     |30 14 Zq⁻     |31 14 Zq⁻     |32 14 Zq⁻     |28 15 Xc⁺     |29 15 Xc⁺     |30 15 Xc∙     |31 15 Xc∙     |32 15 Xc∙     |33 15 Xc⁻     |34 15 Xc⁻     |31 16 Gy⁺     |32 16 Gy⁺     |33 16 Gy∙     |34 16 Gy∙     |35 16 Gy⁻     |36 16 Gy⁻     |32 17  D⁺     |33 17  D⁻     |34 17  D⁺     |35 17  Dª     |36 17  Dª     |37 17  D⁻     |38 17  D⁻     |39 17  D⁻     |34 18 Fj⁻     |35 18 Fj⁺     |36 18 Fjª     |37 18 Fjª     |38 18 Fjª     |39 18 Fjª     |40 18 Fj∙     |41 18 Fj⁻     |36 19  O⁺     |37 19  Oª     |38 19  Oª     |39 19  Oª     |40 19  Oª     |41 19  O∙     |42 19  O⁻     |43 19  O⁻     |38 20  C⁺     |39 20  C⁺     |40 20  C⁺     |41 20  C⁺     |42 20  C∙     |43 20  C⁻     |44 20  C⁻     |45 20  C⁻     |40 21  E⁺     |41 21  E⁺     |42 21  E⁺     |43 21  E∙     |44 21  E⁻     |45 21  E⁻     |46 21  E⁻     |47 21  E⁻     |48 21  E⁻     |42 22  A⁺     |43 22  A⁺     |44 22  A∙     |45 22  A∙     |46 22  A∙     |47 22  A∙     |48 22  A∙     |49 22  A⁻     |50 22  A⁻     |44 23 Aw⁺     |45 23 Aw⁺     |46 23 Aw⁺     |47 23 Aw⁺     |48 23 Awª     |49 23 Aw∙     |50 23 Aw∙     |51 23 Aw⁻     |52 23 Aw⁻     |46 24 Oc⁺     |47 24 Oc⁺     |48 24 Oc⁺     |49 24 Ocª     |50 24 Oc∙     |51 24 Oc∙     |52 24 Oc⁻     |53 24 Oc⁻     |54 24 Oc⁻     |47 25 Nb⁺     |48 25 Nb⁺     |49 25 Nbª     |50 25 Nbª     |51 25 Nbª     |52 25 Nb∙     |53 25 Nb⁻     |54 25 Nbª     |55 25 Nb⁻     |56 25 Nb⁻     |50 26 Xk⁺     |51 26 Xkª     |52 26 Xk⁺     |53 26 Xk∙     |54 26 Xk⁻     |55 26 Xk⁻     |56 26 Xk⁻     |57 26 Xk⁻     |58 26 Xk⁻     |59 26 Xk⁻     |51 27 Ic⁺     |52 27 Ic⁺     |53 27 Ic⁺     |54 27 Ic∙     |55 27 Ic∙     |56 27 Ic∙     |57 27 Ic∙     |58 27 Ic∙     |59 27 Ic∙     |60 27 Ic⁻     |61 27 Ic⁻     |54 28 Yp⁺     |55 28 Yp⁺     |56 28 Yp⁺     |57 28 Yp⁺     |58 28 Ypª     |59 28 Yp⁺     |60 28 Yp∙     |61 28 Yp⁻     |62 28 Yp⁻     |63 28 Yp⁻     |56 29 Jx⁺     |57 29 Jx⁺     |58 29 Jx⁺     |59 29 Jxª     |60 29 Jxª     |61 29 Jxª     |62 29 Jxª     |63 29 Jx⁻     |64 29 Jx⁻     |65 29 Jx⁻     |57 30 Hb⁺     |58 30 Hbª     |59 30 Hbª     |60 30 Hbª     |61 30 Hbª     |62 30 Hbª     |63 30 Hbª     |64 30 Hbª     |65 30 Hbª     |66 30 Hbª     |67 30 Hbª     |60 31 At⁺     |61 31 Atª     |62 31 Atª     |63 31 Atª     |64 31 Atª     |65 31 Atª     |66 31 Atª     |67 31 Atª     |68 31 At⁻     |69 31 At⁻     |61 32 Ny⁺     |62 32 Nyª     |63 32 Ny⁺     |64 32 Ny⁺     |65 32 Nyª     |66 32 Nyª     |67 32 Nyª     |68 32 Nyª     |69 32 Nyª     |70 32 Ny⁻     |71 32 Ny⁻     |72 32 Ny⁻     |64 33 Pw⁺     |65 33 Pw⁺     |66 33 Pw⁺     |67 33 Pwª     |68 33 Pwª     |69 33 Pwª     |70 33 Pwª     |71 33 Pw⁻     |72 33 Pw⁻     |73 33 Pw⁻     |74 33 Pw⁻     |66 34 Gk⁺     |67 34 Gk⁺     |68 34 Gk⁺     |69 34 Gkª     |70 34 Gkª     |71 34 Gkª     |72 34 Gk∙     |73 34 Gk⁻     |74 34 Gk∙     |75 34 Gk∙     |76 34 Gk⁻     |67 35 Qi⁺     |68 35 Qi⁺     |69 35 Qi⁺     |70 35 Qi⁺     |71 35 Qi⁺     |72 35 Qiª     |73 35 Qiª     |74 35 Qiª     |75 35 Qi⁺     |76 35 Qi∙     |77 35 Qi⁻     |78 35 Qi⁻     |69 36 Xy⁺     |70 36 Xy⁺     |71 36 Xy⁺     |72 36 Xy⁺     |73 36 Xy⁺     |74 36 Xy⁺     |75 36 Xy⁺     |76 36 Xy⁺     |77 36 Xy∙     |78 36 Xy⁻     |79 36 Xy∙     |72 37 Gq⁺     |73 37 Gq⁺     |74 37 Gq⁺     |75 37 Gq⁺     |76 37 Gq⁺     |77 37 Gq⁺     |78 37 Gq∙     |79 37 Gq⁻     |80 37 Gq∙     |73 38 Bt⁺     |74 38 Bt⁺     |75 38 Bt⁺     |76 38 Bt⁺     |77 38 Bt⁺     |78 38 Bt⁺     |79 38 Bt∙     |80 38 Bt⁻     |81 38 Bt∙     |75 39  H⁺     |76 39  H⁺     |77 39  H⁺     |78 39  H⁺     |79 39  H⁺     |80 39  H∙     |81 39  H⁺     |82 39  H∙     |78 40  U⁺     |79 40  U⁺     |80 40  U⁺     |81 40  U∙     |82 40  U⁺     |83 40  U∙     |79 41 Sq⁺     |80 41 Sq⁺     |81 41 Sq⁺     |82 41 Sq∙     |83 41 Sq⁺     |84 41 Sq∙     |83 42 Ua⁺     |84 42 Ua⁺     |85 42 Ua⁺     |
-  | stable       | stable       | stable       | stable       | stable       | beta+        | stable       | stable       | alpha        | stable       | stable       | beta-        | beta+        | alpha        | stable       | beta-        | beta+        | beta+        | alpha        | stable       | beta-        | beta-        | beta+        | alpha        | stable       | beta-        | beta+        | beta+        | stable       | stable       | stable       | beta-        | beta+        | beta+        | stable       | beta-        | beta-        | beta+        | stable       | stable       | stable       | beta-        | beta+        | beta+        | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | stable       | alpha        | stable       | beta-        | beta-        | beta+        | alpha        | alpha        | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | stable       | stable       | stable       | beta-        | beta-        | beta+        | beta+        | stable       | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | alpha        | alpha        | beta-        | beta-        | beta-        | beta+        | beta+        | alpha        | alpha        | alpha        | alpha        | stable       | beta-        | beta+        | alpha        | alpha        | alpha        | alpha        | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | beta+        | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | stable       | beta-        | beta-        | beta-        | beta-        | beta-        | beta+        | beta+        | stable       | stable       | stable       | stable       | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | beta+        | alpha        | stable       | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | alpha        | stable       | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | alpha        | alpha        | alpha        | stable       | beta-        | alpha        | beta-        | beta-        | beta+        | alpha        | beta+        | stable       | beta-        | beta-        | beta-        | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | stable       | stable       | stable       | stable       | stable       | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | beta+        | alpha        | beta+        | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | alpha        | alpha        | alpha        | alpha        | beta-        | beta-        | beta-        | beta+        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | beta+        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | beta-        | beta-        | beta+        | alpha        | beta+        | beta+        | alpha        | alpha        | alpha        | alpha        | alpha        | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | alpha        | alpha        | alpha        | alpha        | beta-        | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | alpha        | alpha        | alpha        | stable       | beta-        | stable       | stable       | beta-        | beta+        | beta+        | beta+        | beta+        | beta+        | alpha        | alpha        | alpha        | beta+        | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | stable       | beta-        | stable       | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | stable       | beta-        | stable       | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | stable       | beta-        | stable       | beta+        | beta+        | beta+        | beta+        | beta+        | stable       | beta+        | stable       | beta+        | beta+        | beta+        | stable       | beta+        | stable       | beta+        | beta+        | beta+        | stable       | beta+        | stable       | beta+        | beta+        | beta+        |
-1:|[◼◻◻]         |[◼◻◻]         |[◼◻◻]         |[◼◼◻]         |[◼◼◻]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |
-2:|[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◼◻][◻◻]      |[◼◻][◻◻]      |[◼◻][◻◻]      |[◼◻][◻◻]      |[◼◼][◻◻]      |[◼◼][◻◻]      |[◼◼][◻◻]      |[◼◼][◻◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |
-3:|[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◼◻]     |[◼◻◻][◼◻]     |[◼◻◻][◼◻]     |[◼◻◻][◼◻]     |[◼◻◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |
-4:|[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |
-5:|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|
-6:|[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |
-7:|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|
-8:|[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◼]     |[◼][◼◼◼◼]     |[◼][◼◼◼◼]     |
+  | 1  1 Ju∙     | 2  1 Ju∙     | 3  1 Ju∙     | 4  2  W∙     | 5  2  W∙     | 5  3 Cq⁺     | 6  3 Cq∙     | 7  3 Cq∙     | 7  4 Afª     | 8  4 Af∙     | 9  4 Af∙     |10  4 Af∙     | 9  5 Xl⁺     |10  5 Xlª     |11  5 Xl∙     |12  5 Xl∙     |10  6 Pq⁺     |11  6 Pq⁺     |12  6 Pqª     |13  6 Pq∙     |14  6 Pq⁻     |15  6 Pq⁻     |13  7 Zz⁺     |14  7 Zzª     |15  7 Zz∙     |16  7 Zz⁻     |14  8 Dx⁺     |15  8 Dx⁺     |16  8 Dx∙     |17  8 Dx∙     |18  8 Dx∙     |19  8 Dx⁻     |17  9 Pm⁺     |18  9 Pm⁺     |19  9 Pm∙     |20  9 Pm⁻     |21  9 Pm⁻     |19 10  M⁺     |20 10  M∙     |21 10  M∙     |22 10  M∙     |23 10  M⁻     |21 11 Fw⁺     |22 11 Fw⁺     |23 11 Fw∙     |24 11 Fw⁻     |25 11 Fw⁻     |26 11 Fw⁻     |22 12 Pt⁺     |23 12 Pt⁺     |24 12 Pt∙     |25 12 Ptª     |26 12 Pt∙     |27 12 Pt⁻     |28 12 Pt⁻     |24 13  S⁺     |25 13  S⁺     |26 13  Sª     |27 13  Sª     |28 13  S∙     |29 13  S⁻     |30 13  S⁻     |26 14 Zq⁺     |27 14 Zq⁺     |28 14 Zq⁺     |29 14 Zq∙     |30 14 Zq⁻     |31 14 Zq⁻     |32 14 Zq⁻     |28 15 Xc⁺     |29 15 Xc⁺     |30 15 Xc∙     |31 15 Xc∙     |32 15 Xc∙     |33 15 Xc⁻     |34 15 Xc⁻     |30 16 Gy⁺     |31 16 Gy⁺     |32 16 Gy⁺     |33 16 Gy∙     |34 16 Gy∙     |35 16 Gy⁻     |36 16 Gy⁻     |32 17  D⁺     |33 17  D⁻     |34 17  D⁺     |35 17  Dª     |36 17  Dª     |37 17  D⁻     |38 17  D⁻     |39 17  D⁻     |34 18 Fj⁻     |35 18 Fj⁺     |36 18 Fjª     |37 18 Fjª     |38 18 Fjª     |39 18 Fjª     |40 18 Fj∙     |41 18 Fj⁻     |36 19  O⁺     |37 19  Oª     |38 19  Oª     |39 19  Oª     |40 19  Oª     |41 19  O∙     |42 19  O⁻     |43 19  O⁻     |38 20  C⁺     |39 20  C⁺     |40 20  C⁺     |41 20  C⁺     |42 20  C∙     |43 20  C⁻     |44 20  C⁻     |45 20  C⁻     |40 21  E⁺     |41 21  E⁺     |42 21  E⁺     |43 21  E∙     |44 21  E⁻     |45 21  E⁻     |46 21  E⁻     |47 21  E⁻     |48 21  E⁻     |42 22  A⁺     |43 22  A⁺     |44 22  A∙     |45 22  A∙     |46 22  A∙     |47 22  A∙     |48 22  A∙     |49 22  A⁻     |50 22  A⁻     |44 23 Aw⁺     |45 23 Aw⁺     |46 23 Aw⁺     |47 23 Aw⁺     |48 23 Awª     |49 23 Aw∙     |50 23 Aw∙     |51 23 Aw⁻     |52 23 Aw⁻     |46 24 Oc⁺     |47 24 Oc⁺     |48 24 Oc⁺     |49 24 Ocª     |50 24 Oc∙     |51 24 Oc∙     |52 24 Oc⁻     |53 24 Oc⁻     |54 24 Oc⁻     |47 25 Nb⁺     |48 25 Nb⁺     |49 25 Nbª     |50 25 Nbª     |51 25 Nbª     |52 25 Nb∙     |53 25 Nb⁻     |54 25 Nbª     |55 25 Nb⁻     |56 25 Nb⁻     |50 26 Xk⁺     |51 26 Xkª     |52 26 Xk⁺     |53 26 Xk∙     |54 26 Xk⁻     |55 26 Xk⁻     |56 26 Xk⁻     |57 26 Xk⁻     |58 26 Xk⁻     |59 26 Xk⁻     |51 27 Ic⁺     |52 27 Ic⁺     |53 27 Ic⁺     |54 27 Ic∙     |55 27 Ic∙     |56 27 Ic∙     |57 27 Ic∙     |58 27 Ic∙     |59 27 Ic∙     |60 27 Ic⁻     |61 27 Ic⁻     |54 28 Yp⁺     |55 28 Yp⁺     |56 28 Yp⁺     |57 28 Yp⁺     |58 28 Ypª     |59 28 Yp⁺     |60 28 Yp∙     |61 28 Yp⁻     |62 28 Yp⁻     |63 28 Yp⁻     |56 29 Jx⁺     |57 29 Jx⁺     |58 29 Jx⁺     |59 29 Jxª     |60 29 Jxª     |61 29 Jxª     |62 29 Jxª     |63 29 Jx⁻     |64 29 Jx⁻     |65 29 Jx⁻     |57 30 Hb⁺     |58 30 Hbª     |59 30 Hbª     |60 30 Hbª     |61 30 Hbª     |62 30 Hbª     |63 30 Hbª     |64 30 Hbª     |65 30 Hbª     |66 30 Hbª     |67 30 Hbª     |60 31 At⁺     |61 31 Atª     |62 31 Atª     |63 31 Atª     |64 31 Atª     |65 31 Atª     |66 31 Atª     |67 31 Atª     |68 31 At⁻     |69 31 At⁻     |61 32 Ny⁺     |62 32 Nyª     |63 32 Ny⁺     |64 32 Ny⁺     |65 32 Nyª     |66 32 Nyª     |67 32 Nyª     |68 32 Nyª     |69 32 Nyª     |70 32 Ny⁻     |71 32 Ny⁻     |72 32 Ny⁻     |64 33 Pw⁺     |65 33 Pw⁺     |66 33 Pw⁺     |67 33 Pwª     |68 33 Pwª     |69 33 Pwª     |70 33 Pwª     |71 33 Pw⁻     |72 33 Pw⁻     |73 33 Pw⁻     |74 33 Pw⁻     |65 34 Gk⁺     |66 34 Gk⁺     |67 34 Gk⁺     |68 34 Gk⁺     |69 34 Gkª     |70 34 Gkª     |71 34 Gkª     |72 34 Gk∙     |73 34 Gk⁻     |74 34 Gk∙     |75 34 Gk∙     |76 34 Gk⁻     |67 35 Qi⁺     |68 35 Qi⁺     |69 35 Qi⁺     |70 35 Qi⁺     |71 35 Qi⁺     |72 35 Qiª     |73 35 Qiª     |74 35 Qiª     |75 35 Qi⁺     |76 35 Qi∙     |77 35 Qi⁻     |78 35 Qi⁻     |69 36 Xy⁺     |70 36 Xy⁺     |71 36 Xy⁺     |72 36 Xy⁺     |73 36 Xy⁺     |74 36 Xy⁺     |75 36 Xy⁺     |76 36 Xy⁺     |77 36 Xy∙     |78 36 Xy⁻     |79 36 Xy∙     |72 37 Gq⁺     |73 37 Gq⁺     |74 37 Gq⁺     |75 37 Gq⁺     |76 37 Gq⁺     |77 37 Gq⁺     |78 37 Gq∙     |79 37 Gq⁻     |80 37 Gq∙     |73 38 Bt⁺     |74 38 Bt⁺     |75 38 Bt⁺     |76 38 Bt⁺     |77 38 Bt⁺     |78 38 Bt⁺     |79 38 Bt∙     |80 38 Bt⁻     |81 38 Bt∙     |75 39  H⁺     |76 39  H⁺     |77 39  H⁺     |78 39  H⁺     |79 39  H⁺     |80 39  H∙     |81 39  H⁺     |82 39  H∙     |78 40  U⁺     |79 40  U⁺     |80 40  U⁺     |81 40  U∙     |82 40  U⁺     |83 40  U∙     |79 41 Sq⁺     |80 41 Sq⁺     |81 41 Sq⁺     |82 41 Sq∙     |83 41 Sq⁺     |84 41 Sq∙     |83 42 Ua⁺     |84 42 Ua⁺     |85 42 Ua⁺     |
+  | stable       | stable       | stable       | stable       | stable       | beta+        | stable       | stable       | alpha        | stable       | stable       | beta-        | beta+        | alpha        | stable       | beta-        | beta+        | beta+        | alpha        | stable       | beta-        | beta-        | beta+        | alpha        | stable       | beta-        | beta+        | beta+        | stable       | stable       | stable       | beta-        | beta+        | beta+        | stable       | beta-        | beta-        | beta+        | stable       | stable       | stable       | beta-        | beta+        | beta+        | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | stable       | alpha        | stable       | beta-        | beta-        | beta+        | beta+        | alpha        | alpha        | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | stable       | stable       | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | stable       | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | alpha        | alpha        | beta-        | beta-        | beta-        | beta+        | beta+        | alpha        | alpha        | alpha        | alpha        | stable       | beta-        | beta+        | alpha        | alpha        | alpha        | alpha        | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | beta+        | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | stable       | beta-        | beta-        | beta-        | beta-        | beta-        | beta+        | beta+        | stable       | stable       | stable       | stable       | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | beta+        | alpha        | stable       | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | alpha        | stable       | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | alpha        | alpha        | alpha        | stable       | beta-        | alpha        | beta-        | beta-        | beta+        | alpha        | beta+        | stable       | beta-        | beta-        | beta-        | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | stable       | stable       | stable       | stable       | stable       | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | beta+        | alpha        | beta+        | stable       | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | alpha        | alpha        | alpha        | alpha        | beta-        | beta-        | beta-        | beta+        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | beta+        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | alpha        | beta-        | beta-        | beta+        | alpha        | beta+        | beta+        | alpha        | alpha        | alpha        | alpha        | alpha        | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | alpha        | alpha        | alpha        | alpha        | beta-        | beta-        | beta-        | beta-        | beta+        | beta+        | beta+        | beta+        | alpha        | alpha        | alpha        | stable       | beta-        | stable       | stable       | beta-        | beta+        | beta+        | beta+        | beta+        | beta+        | alpha        | alpha        | alpha        | beta+        | stable       | beta-        | beta-        | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | stable       | beta-        | stable       | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | stable       | beta-        | stable       | beta+        | beta+        | beta+        | beta+        | beta+        | beta+        | stable       | beta-        | stable       | beta+        | beta+        | beta+        | beta+        | beta+        | stable       | beta+        | stable       | beta+        | beta+        | beta+        | stable       | beta+        | stable       | beta+        | beta+        | beta+        | stable       | beta+        | stable       | beta+        | beta+        | beta+        |
+1:|[◼◻◻]         |[◼◻◻]         |[◼◻◻]         |[◼◼◻]         |[◼◼◻]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |[◼◼◼]         |
+2:|[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◻◻][◻◻]      |[◼◻][◻◻]      |[◼◻][◻◻]      |[◼◻][◻◻]      |[◼◻][◻◻]      |[◼◼][◻◻]      |[◼◼][◻◻]      |[◼◼][◻◻]      |[◼◼][◻◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◻]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |[◼◼][◼◼]      |
+3:|[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◻◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◻◻]     |[◼◻◻][◼◻]     |[◼◻◻][◼◻]     |[◼◻◻][◼◻]     |[◼◻◻][◼◻]     |[◼◻◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◻][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◻]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |[◼◼◼][◼◼]     |
+4:|[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◻◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◻◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◻◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◻]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |[◼◼◼◼]        |
+5:|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◻◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◻◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◻◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◻◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◻◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◻][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◻]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◻][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|[◼◼◼◼◼][◼◼][◼]|
+6:|[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◻◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◻◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◻][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◻][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◻]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |[◼][◼◼][◼◼]   |
+7:|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◻◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◻◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◻][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◻◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◻◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◻◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◻][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◻]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|[◼◼][◼◼◼][◼◼◼]|
+8:|[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◻◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◻][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◻◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◻◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◻]     |[◼][◼◼◼◼]     |[◼][◼◼◼◼]     |[◼][◼◼◼◼]     |
 
 ==>SHELL TABLE 2
 | 1  1 Ju| stable | ⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
@@ -4407,6 +4613,7 @@ decay of 16  7 Zz
 |26 12 Pt| stable | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |27 12 Pt| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |28 12 Pt| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
+|24 13  S| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |25 13  S| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |26 13  S| alpha  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |27 13  S| alpha  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
@@ -4427,6 +4634,7 @@ decay of 16  7 Zz
 |32 15 Xc| stable | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |33 15 Xc| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |34 15 Xc| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
+|30 16 Gy| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |31 16 Gy| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |32 16 Gy| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
 |33 16 Gy| stable | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
@@ -4596,6 +4804,7 @@ decay of 16  7 Zz
 |72 33 Pw| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢
 |73 33 Pw| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢
 |74 33 Pw| beta-  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢
+|65 34 Gk| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢
 |66 34 Gk| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢
 |67 34 Gk| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢
 |68 34 Gk| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢
@@ -5038,7 +5247,7 @@ Well that didn't work: 1  1 Ju + 17  8 Dx + 1600 => 18  8 Dx + 849.62 | nuclear,
 11  6 Pq + 15  8 Dx =  26  14 ..
 13  7 Zz + 13  7 Zz =  26  14 ..
 
-| 30 16 Gy | [ ] try
+| 30 16 Gy | [X] try FOUND BY DECAY REACTION
  1  1 Ju + 29 15 Xc =  30  16 ..
  5  3 Cq + 25 13  S =  30  16 ..
  7  4 Af + 23 12 Pt =  30  16 ..

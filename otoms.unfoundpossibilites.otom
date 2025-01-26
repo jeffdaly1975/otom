@@ -95,7 +95,7 @@ UNFOUND POSSIBILITIES:
 | 24 10  M | [x] try
  9  4 Af + 15  6 Pq =  24  10 .. FAILED  reaction 9 4 Af(s) + 15 6 Pq(b-) + 2300 => 24 11 Fw(b-) + 1579.79 Energy Reactions occurred: nuclear, decay Energy used: 720.21
 
-| 24 13  S | [ ] try
+| 24 13  S | [X] try FOUND IT WITH BETA+ DECAY FROM 10  6 Pq + 14  8 Dx +  518 => 24 13  S
  1  1 Ju + 23 12 Pt =  24  13 ..
  5  3 Cq + 19 10  M =  24  13 ..
  7  4 Af + 17  9 Pm =  24  13 ..
@@ -139,7 +139,7 @@ UNFOUND POSSIBILITIES:
  7  3 Cq + 23 10  M =  30  13 ..
 15  6 Pq + 15  7 Zz =  30  13 ..
 
-| 30 16 Gy | [ ] try
+| 30 16 Gy | [X] try DISCOVERED BY DECAY FROM 65 34 Gk + 5779 => 30 16 Gy + 35 18 Fj 
  1  1 Ju + 29 15 Xc =  30  16 ..
  5  3 Cq + 25 13  S =  30  16 ..
  7  4 Af + 23 12 Pt =  30  16 ..
