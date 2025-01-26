@@ -1,5 +1,76 @@
+2025-01-26 Jan.Sun 10:37:02 If I can find a way to make Zq-24, I think it would split into Dx-13 and Pq-11. Then Dx-13 might split into Af-6 and Af-7
+Aw-45     splits into Fw-21+Pt-24
+Aw-44     splits into Fw-21+Pt-23
+Aw-43 will split into Fw-20+Pt-23
+
+Nb-47     splits into S-25+Pt-22
+Nb-46 may split  into S-24+Pt-22 OR S-25+Pt-21 UPDATE: It will split into S-24+Pt-22
+
+Ic-51 will split into Pt-23+Xc-28
+Ic-50 will split into Pt-23+Xc-27
+Ic-49 will split into Pt-22+Xc-27
+Ic-48 will split into Pt-22+Xc-26
+
+Xk-51     splits into Pt-24+Zq-27
+Xk-50     splits into Pt-23+Zq-27
+Xk-49 will split into Pt-23+Zq-26
+
+Hb-57     splits into Zq-26+Gy-31
+Hb-56 will split into Zq-26+Gy-30
+Hb-55 will split into Zq-25+Gy-30
+
+At-60 may split  into Zq-27+D-33
+At-59 may split  into Zq-26+D-33 OR Zq-27+D-32
+At-58 may split  into Zq-26+D-32 OR Zq-27+D-31
+At-57 may split  into Zq-25+D-32 OR Zq-27+D-30
+
+The way to be sure is to do the experiments to see what the 2 lower and upper bound isotopes for each otom split into.
+[r] Nb-48 +  5000 => ?
+[r] Xk-51 +  5000 => ?
+[ ] At-60 + 10000 => ?
+[ ] At-61 + 10000 => ?
+[ ] Jx-57 + 10000 => ?
+
+
+
+[r] 17  9 Pm + 18  9 Pm +  996 => 35 18 Fj
+[r] 13  7 Zz + 35 18 Fj + 1250 => 48 25 Nb
+[r] 48 25 Nb +            5000 => 23 12 Pt + 25 13  S
+
+[r] 25 13  S + 26 13  S + 1600 => 51 26 Xk
+[r] 51 26 Xk +            5000 => 25 12 Pt + 27 14 Zq
+
+[r] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+[r]  1  1 Ju + 45 23 Aw +  982 => 46 24 Oc
+[r]  5  3 Cq + 46 24 Oc +  785 => 51 27 Ic
+[r]  9  5 Xl + 51 27 Ic + 1147 => 60 31 At
+[*] 60 31 At +            8000 => ?
+
+[r] 17  9 Pm + 18  9 Pm +  996 => 35 18 Fj
+[r] 26 13  S + 35 18 Fj + 1880 => 61 31 At
+[*] 61 31 At +            8000 => ?
+
+2025-01-26 Jan.Sun 10:24:24 In the otom discord ranamansourvar asked how to make Gy-32, so I checked my parseReactorLog.pl output and found these ways. I really ought to update it to automatically produce my recipes file.
+  Ju-1  + Xc-31  +  813 =>  + Gy-32         
+  Ju-2  + Xc-30  + 1197 =>  + Gy-32         
+  Cq-6  + S-26   +  940 =>  + Gy-32         
+  Cq-7  + S-25   +  987 =>  + Gy-32         
+  Af-7  + Pt-25  +  755 =>  + Gy-32         
+  Dx-15 + Dx-17  + 1235 =>  + Gy-32         
+  Hb-59          + 5564 =>  + Gy-32 + Zq-27 
+  Hb-60          + 5811 =>  + Gy-32 + Zq-28 
+  Jx-59          + 5687 =>  + Gy-32 + S-27  
+  Qi-69          + 6661 =>  + O-37  + Gy-32  
+
+
+2025-01-26 Jan.Sun 10:13:28 my parseReactorLog.pl now can read multiple Reactor contract CSV LOGs and deduplicate input.
+
+2025-01-25 Jan.Sat 21:40:23 [c] need to redownload my Reactor logs. I combined some into a new one named the same way and now i've lost track of which ones I've done that in.
+
+
 2025-01-25 Jan.Sat 20:14:09 [ ] make a vim mapping for the <space> key if I press it when in normal mode, it should take the nears otom isotope and toggle between forms Ju-3/Ju-3∙/ 3  1 Ju/ 3  1 Ju∙
  [ ] make a tab completion that will take any number pair and treat the 2nd number as protons and insert the otom name for that.
+
 2025-01-25 Jan.Sat 12:08:20 NEW DISCOVERY Gy-30 aka 30 16 Gy. Now at 322 isotopes
 
  17  9 Pm + 25 13  S + 1200 => 42 22  A
@@ -165,8 +236,26 @@ atom 24 13  S | Empty in Outer Shell	0-0-0-3-0-0-0-0
   [c] add to parseReactorLog.pl
 
 2025-01-25 Jan.Sat 10:07:25 [ ] update parseReactorLog.pl:
-  [ ] to read in multiple LOG files, and dedupe them
+  [c] to read in multiple LOG files, and dedupe them
   [ ] to produce the optimized recipes file
+
+It will need to track what inputs create what outputs, sorted by least expensive. 
+Seems like it would need to keep a hash for each reaction of individual isotopes too.
+%recipes=(
+ "At-61"   => [ "S-26 + Fj-35 + 2000 => At-61",
+                "Ju-1 + Hb-60 + 1153 => At-61",
+                "Ju-1 + Hb-60 + 1155 => At-61",
+                "Ju-1 + Hb-60 + 1157 => At-61",
+                "Ju-3 + Hb-58 + 1235 => At-61",
+                "M-20 + E-41  + 2572 => At-61",
+              ],
+ "S-26"    => [ "mineable",                    
+                "Zq-26 +   68 => S-26",
+                "Zq-26 +   72 => S-26",
+                "Nb-49 + 4132 => S-26 + Pt-23",
+              ],
+
+);
 
 2025-01-25 Jan.Sat 09:52:34 [ ] what might we make with Dx-14?
 Its quite unstable and decay type is beta+ so it will likely drop a proton as I saw when trying W-4
@@ -468,6 +557,15 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
 [ ] 14  8 Dx⁺ + 76 35 Qi∙ + 5000 => |⬆ 90 44 .. |= 90 43 .. |⬇ 90 42 Ua
 [ ] 14  8 Dx⁺ + 77 35 Qi⁻ + 5000 => |⬆ 91 44 .. |= 91 43 .. |⬇ 91 42 Ua
 [ ] 14  8 Dx⁺ + 78 35 Qi⁻ + 5000 => |⬆ 92 44 .. |= 92 43 .. |⬇ 92 42 Ua
+
+
+[r]  2  1 Ju + 34 15 Xc +  858 => 36 16 Gy
+[r] 34 16 Gy + 36 16 Gy + 2974 => 70 32 Ny
+[r] 17  9 Pm  + 25 13  S  + 1172 => 42 22  A
+[r] 15  8 Dx  + 42 22  A  + 1477 => 57 30 Hb
+[*] 57 30 Hb  +             5300 => 26 14 Zq + 31 16 Gy
+[ ] 26 14 Zq  +             1450 => 12  6 Pq + 14  8 Dx
+[ ] 14  8 Dx⁺ + 70 32 Ny⁻ + 5000 => |⬆ 84 41 Sq |= 84 40  U |⬇ 84 39  H
 
 [r] 17  9 Pm + 25 13  S + 1200 => 42 22  A
 [r] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb

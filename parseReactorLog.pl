@@ -331,9 +331,66 @@ my @otom_isotopes = (
  [ "Ua-85", "85 42 Ua",  88691496155904190756307248519900089609929970913887016548455993272124591624476 ],
 );
 
+my %mineable_otoms = (
+ "Ju-1"=>1,
+ "Ju-2"=>1,
+ "Ju-3"=>1,
+  "W-4"=>1,
+  "W-5"=>1,
+ "Cq-5"=>1,
+ "Cq-6"=>1,
+ "Cq-7"=>1,
+ "Af-7"=>1,
+ "Af-8"=>1,
+ "Af-9"=>1,
+ "Xl-9"=>1,
+ "Xl-10"=>1,
+ "Xl-11"=>1,
+ "Pq-10"=>1,
+ "Pq-12"=>1,
+ "Pq-13"=>1,
+ "Pq-14"=>1,
+ "Pq-15"=>1,
+ "Zz-13"=>1,
+ "Zz-14"=>1,
+ "Zz-15"=>1,
+ "Dx-15"=>1,
+ "Dx-16"=>1,
+ "Dx-17"=>1,
+ "Dx-18"=>1,
+ "Pm-17"=>1,
+ "Pm-18"=>1,
+ "Pm-19"=>1,
+  "M-20"=>1,
+  "M-22"=>1,
+  "M-23"=>1,
+ "Fw-23"=>1,
+ "Fw-25"=>1,
+ "Pt-24"=>1,
+ "Pt-25"=>1,
+ "Pt-26"=>1,
+  "S-25"=>1,
+  "S-26"=>1,
+ "Zq-32"=>1,
+ "Xc-30"=>1,
+ "Xc-31"=>1,
+ "Xc-32"=>1,
+ "Xc-34"=>1,
+ "Gy-34"=>1,
+  "D-37"=>1,
+ "Fj-37"=>1,
+ "Aw-50"=>1,
+ "Nb-54"=>1,
+);
+
+
+
+print "| OTOMRO   | INPUTS                                                        =>  OUTPUTS                                                                            | NRG USED   | REACTION TYPE                | CHEMIST WALLET                             | initateReaction() TX HASH                                          | analyseReactions() TX HASH                                         |\n";
+
 my $c=0;
 my %hexdict=();
 my %sortorder=();
+my %recipes=();
 
 foreach my $item (@otom_isotopes){
   my ($name,$longname,$tokenid) = @$item;
@@ -606,24 +663,32 @@ my %db = ();
 #
 # );
 
-my $linecounter=0;
 my $txhash="";
+my %seenit=(); # hash of txhashes we see
+
 foreach $line (<>){
-  $linecounter++;
 
   my $otomro=0;
   my $reaction_inuts="";
-  my $reaction_outputs="";
+  my $reaction_output_string="";
+  my @reaction_output_list=();
   my $energy_input=0;
   my $chemist="";
 
 
   chomp $line;
 
-  if ($line =~ /^(0x[^,]+),/){
+  if ($line =~ /^(0x[^,]+),(\d+),/){
     $txhash=$1;
+    $txindex=$2;
   } elsif ($line =~ /^TxHash,Index/){
     next; #skip header
+  }
+
+  if (exists $seenit{$txhash . $txindex}){
+    next;
+  }else{
+    $seenit{$txhash . $txindex}=1;
   }
 
   $line =~ s/^[^,]+,//; # remove the tx hash
@@ -771,15 +836,19 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
  #example decoded_string     = "W4,W5-Dx17"
  #example alt_decoded_string = "W₂Dx"
 
-   if ($decoded_string =~ /^([A-Za-z]+)(\d+)-$/){ # "Cq6-"
-     $reaction_outputs .= sprintf " + %s-%d",$1,$2;
-   } else {
-    #replace the "-" with ">" to show its the giving otoms
-    $decoded_string =~ s/-/>/; #  "W4,W5-Dx17" =>  "W4,W5>Dx17"
+   if ($decoded_string =~ /^([A-Za-z]+)(\d+)-$/){                  # this is a simple otom isotope like "Cq6-" 
+     $reaction_output_string .=  sprintf " + %s-%d",$1,$2;
+     push @reaction_output_list, "$1-$2";
 
-    # add dashes
-    $decoded_string =~ s/\b([A-Za-z]+)(\d+)/$1-$2/g; #  "W-4,W-5-Dx-17"
-    $reaction_outputs .= sprintf " + %s(%s)", $alt_decoded_string, $decoded_string;
+   } else {                                                        # this is a molecule
+     #replace the "-" with ">" to show its the giving otoms
+     $decoded_string =~ s/-/>/; #  "W4,W5-Dx17" =>  "W4,W5>Dx17"
+
+     # add dashes
+     $decoded_string =~ s/\b([A-Za-z]+)(\d+)/$1-$2/g; #  "W-4,W-5>Dx-17"
+     my $molecule = sprintf "%s(%s)", $alt_decoded_string, $decoded_string;
+
+     $reaction_output_string .= " + " . $molecule
    }
 
  }
@@ -848,8 +917,10 @@ if (@reaction_types){
 
 
 
-#printf "OTOMRO %8d |%-70.70s | %10.2f | %s |\n",$otomro, $reaction_outputs, $energy_returned, $reaction_string;
- $db{$otomro}{"otoms_out"} = $reaction_outputs;
+#printf "OTOMRO %8d |%-70.70s | %10.2f | %s |\n",$otomro, $reaction_output_string, $energy_returned, $reaction_string;
+ $db{$otomro}{"otoms_out_list"} = [ @reaction_output_list ]; # need to do it this way with brackets around the list so I get a copy of the list not just a reference to the list
+#print "DEBUG: added to db{$otomro}{otoms_out_list}=" . join(',',@reaction_output_list) ."\n";
+ $db{$otomro}{"otoms_out"} = $reaction_output_string;
  $db{$otomro}{"energy_out"}= $energy_returned;
  $db{$otomro}{"type"}      = $reaction_string;
  $db{$otomro}{"analyse_tx"}= $txhash;
@@ -867,10 +938,47 @@ if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
    $db{$otomro}{"chemist"}    ,
    $db{$otomro}{"initiate_tx"},
    $db{$otomro}{"analyse_tx"} ;
+
+   # save data for recipes
+   foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){
+###print "DEBUG: recipes for [$one]\n";
+      my $rounded_energy_input = sprintf "%.0f", $db{$otomro}{"energy_in"};
+###print "DEBUG: rounded input energy: $rounded_energy_input\n";
+
+      push @{ $recipes{$one} },  $db{$otomro}{"otoms_in"} ." + ". $rounded_energy_input . " => ". $db{$otomro}{"otoms_out"};
+###print "DEBUG: now recipes has ". scalar(keys %recipes) . " keys\n";
+   }
+ 
+
+
 }
 
  print STDERR "$otomro\n";
 }
+
+
+# recipe output
+# [ ] still need to filter out duplicates where they have the same input otoms but different energy
+# [ ] still wart to filter out junky stuff like "| Aw-50 | M-22 + M-22 + M-22 + Aw-50 + Aw-50 + 350 =>  + M₂Aw(M-22>Aw-50,M-22) + M-22 + Aw-50"
+#     where the aw-50 was from the input and unused
+open(my $fh, ">", "newrecipes.otom") or die "Can't open output file newrecipes.otom: $!";
+
+foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
+  if (exists $mineable_otoms{$k}){
+    printf $fh "| %-5s | mineable\n", $k;
+  }
+
+  my %seenthis=();
+  foreach my $r ( sort @{ $recipes{$k} } ){
+     my $s=sprintf "| %-5s | %s\n", $k, $r;
+     unless (exists $seenthis{$s}){
+       printf $fh $s;
+     }
+     $seenthis{$s}++;
+  }
+}
+
+close($fh);
 
 
 # finally do an assessment of any initiateReaction calls missing a analyseReactions tx
