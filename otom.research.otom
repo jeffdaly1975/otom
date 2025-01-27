@@ -1,3 +1,50 @@
+2025-01-26 Jan.Sun 18:53:45 [ ] i need to look at this.
+There are bands of energy input that start with 0 for some, and get up to some point where there's a small window for making different isotopes but if you go a little over it makes a molecule.
+Like with the decay of Zq-26:
+
+ Zq-26 + 1600 => DxPq(Dx-14>Pq-12)  <--TOO MUCH ENERGY (used 1462.16)
+ Zq-26 + 1350 => 26 13  S           <--NOT ENOUGH
+ Zq-26 + 1420 => 26 13  S           <--NOT ENOUGH
+ Zq-26 + 1450 => 14  8 Dx           <------SUCCESS!!!!!!
+
+Zq-26:: 0-[ S-26 ]-1442-[ Dx-14+Pq-12 ]-1450 .. 1462-[ DxPq(Dx-14>Pq-12) ]-1882...
+
+for example, from first 23k reactions, I see that Cq-6 with input NRG from 0-10 does nothing, and at 191 it starts making JuW(Ju-2>W-4). 
+| Cq-6   +       0.00 =>  + Cq-6
+| Cq-6   +       9.35 =>  + Cq-6
+
+| Cq-6   +     191.43 =>  + JuW(Ju-2>W-4)
+| Cq-6   +     431.58 =>  + JuW(Ju-2>W-4)
+
+[c] So lets find if it can make those 2 isotopes between 10 and 191.
+   [r] Cq-6∙ +  50 => Cq-6∙ +        47.50 using   2.50
+   [r] Cq-6∙ + 100 => Cq-6∙ +        95.00 using   5.00
+   [r] Cq-6∙ + 150 => Cq-6∙ +       142.50 using   7.50
+   [r] Cq-6∙ + 160 => Cq-6∙ +       152.00 using   8.00
+   [r] Cq-6∙ + 170 => Cq-6∙ +       161.50 using   8.50
+   [r] Cq-6∙ + 180 => Cq-6∙ +       171.00 using   9.00
+   [r] Cq-6∙ + 185 => Cq-6∙ +       175.75 using   9.25
+   [r] Cq-6∙ + 187 => Cq-6∙ +       177.65 using   9.35
+   [r] Cq-6∙ + 188 => Ju-2 + W-4 +    0.62 using 187.38
+   [r] Cq-6∙ + 190 => Ju-2 + W-4 +    2.52 using 187.48
+   [r] Cq-6∙ + 191 => Ju-2 + W-4 +    3.47 using 187.53
+   [r] Cq-6∙ + 192 => JuW(Ju-2>W-4) + 0.82 using 191.18
+
+SO we have
+Cq-6:: 0-[ n/a ]-188-[ Ju-2+W-4 ]-192-[ JuW(Ju-2>W-4) ]-..
+
+
+::BEST PRACTICE::
+2025-01-26 Jan.Sun 17:23:56 Morpheus noticed I was spending a lot on mining and pointed out there's a way to set the max base fee and priority fee for Shape network specifically.
+
+You just initiate a tx (like trying to mine).
+Then in the Metamask popup, click the pencil icon for Estimated fee
+Then Click "Advanced"
+Then as he suggested I set Max base fee to 0.0005 and Priority fee to 0.000000001 
+ Max base fee: 0.0005
+ Priority Fee: 0.000000001 (thats 8 zeroes)
+
+
 2025-01-26 Jan.Sun 10:37:02 If I can find a way to make Zq-24, I think it would split into Dx-13 and Pq-11. Then Dx-13 might split into Af-6 and Af-7
 Aw-45     splits into Fw-21+Pt-24
 Aw-44     splits into Fw-21+Pt-23
@@ -19,7 +66,8 @@ Hb-57     splits into Zq-26+Gy-31
 Hb-56 will split into Zq-26+Gy-30
 Hb-55 will split into Zq-25+Gy-30
 
-At-60 may split  into Zq-27+D-33
+At-61     splits into ?
+At-60     splits into Zq-27+D-33
 At-59 may split  into Zq-26+D-33 OR Zq-27+D-32
 At-58 may split  into Zq-26+D-32 OR Zq-27+D-31
 At-57 may split  into Zq-25+D-32 OR Zq-27+D-30
@@ -27,7 +75,7 @@ At-57 may split  into Zq-25+D-32 OR Zq-27+D-30
 The way to be sure is to do the experiments to see what the 2 lower and upper bound isotopes for each otom split into.
 [r] Nb-48 +  5000 => ?
 [r] Xk-51 +  5000 => ?
-[ ] At-60 + 10000 => ?
+[r] At-60 + 10000 => ?
 [ ] At-61 + 10000 => ?
 [ ] Jx-57 + 10000 => ?
 
@@ -44,11 +92,13 @@ The way to be sure is to do the experiments to see what the 2 lower and upper bo
 [r]  1  1 Ju + 45 23 Aw +  982 => 46 24 Oc
 [r]  5  3 Cq + 46 24 Oc +  785 => 51 27 Ic
 [r]  9  5 Xl + 51 27 Ic + 1147 => 60 31 At
-[*] 60 31 At +            8000 => ?
+[r] 60 31 At +            8000 => ? 27 14 Zq + 33 17  D
 
 [r] 17  9 Pm + 18  9 Pm +  996 => 35 18 Fj
 [r] 26 13  S + 35 18 Fj + 1880 => 61 31 At
-[*] 61 31 At +            8000 => ?
+[r] 61 31 At +            8000 => ?
+
+
 
 2025-01-26 Jan.Sun 10:24:24 In the otom discord ranamansourvar asked how to make Gy-32, so I checked my parseReactorLog.pl output and found these ways. I really ought to update it to automatically produce my recipes file.
   Ju-1  + Xc-31  +  813 =>  + Gy-32         
@@ -534,7 +584,7 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
 [ ] 14  8 Dx⁺ + 68 31 At⁻ + 5000 => |⬆ 82 40  U |= 82 39  H |⬇ 82 38 Bt
 [ ] 14  8 Dx⁺ + 69 31 At⁻ + 5000 => |⬆ 83 40  U |= 83 39  H |⬇ 83 38 Bt
 [ ] 14  8 Dx⁺ + 69 32 Nyª + 5000 => |⬆ 83 41 Sq |= 83 40  U |⬇ 83 39  H
-[*] 14  8 Dx⁺ + 70 32 Ny⁻ + 5000 => |⬆ 84 41 Sq |= 84 40  U |⬇ 84 39  H
+[f] 14  8 Dx⁺ + 70 32 Ny⁻ + 5000 => |⬆ 84 41 Sq |= 84 40  U |⬇ 84 39  H <---NOPE
 [ ] 14  8 Dx⁺ + 71 32 Ny⁻ + 5000 => |⬆ 85 41 Sq |= 85 40  U |⬇ 85 39  H
 [ ] 14  8 Dx⁺ + 72 32 Ny⁻ + 5000 => |⬆ 86 41 Sq |= 86 40  U |⬇ 86 39  H
 [ ] 14  8 Dx⁺ + 70 33 Pwª + 5000 => |⬆ 84 42 Ua |= 84 41 Sq |⬇ 84 40  U
@@ -563,9 +613,9 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
 [r] 34 16 Gy + 36 16 Gy + 2974 => 70 32 Ny
 [r] 17  9 Pm  + 25 13  S  + 1172 => 42 22  A
 [r] 15  8 Dx  + 42 22  A  + 1477 => 57 30 Hb
-[*] 57 30 Hb  +             5300 => 26 14 Zq + 31 16 Gy
-[ ] 26 14 Zq  +             1450 => 12  6 Pq + 14  8 Dx
-[ ] 14  8 Dx⁺ + 70 32 Ny⁻ + 5000 => |⬆ 84 41 Sq |= 84 40  U |⬇ 84 39  H
+[r] 57 30 Hb  +             5300 => 26 14 Zq + 31 16 Gy
+[r] 26 14 Zq  +             1450 => 12  6 Pq + 14  8 Dx
+[f] 14  8 Dx⁺ + 70 32 Ny⁻ + 7000 => |⬆ 84 41 Sq |= 84 40  U |⬇ 84 39  H
 
 [r] 17  9 Pm + 25 13  S + 1200 => 42 22  A
 [r] 15  8 Dx + 42 22  A + 1500 => 57 30 Hb
@@ -580,7 +630,8 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
 [r] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
 [r]  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc
 [r]  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
-[r] 14  8 Dx + 51 27 Ic + ???? => |⬆  65  36 Xy |=  65  35 Qi |⬇  65  34 Gk [ ] try
+[r] 14  8 Dx + 51 27 Ic + ???? => |⬆  65  36 Xy |=  65  35 Qi |⬇  65  34 Gk [ ] try <---NOPE
+    14  8 Dx⁺+ 70 32 Ny⁻+7000 => 70 32 Ny⁻ + 14  7 Zzª +  6650.00 using 350.00
 
 
 
