@@ -4635,7 +4635,7 @@ let shelldict["13  7 Zz"]= "◼◼ ◼◼"      | let shelldict["Zz-13"]=shelldi
 let shelldict["14  7 Zz"]= "◼◼ ◼◼"      | let shelldict["Zz-14"]=shelldict["14  7 Zz"]
 let shelldict["15  7 Zz"]= "◼◼ ◼◼"      | let shelldict["Zz-15"]=shelldict["15  7 Zz"]
 let shelldict["16  7 Zz"]= "◼◼ ◼◼"      | let shelldict["Zz-16"]=shelldict["16  7 Zz"]
-let shelldict["14  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-14"]=shelldict["15  8 Dx"]
+let shelldict["14  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-14"]=shelldict["14  8 Dx"]
 let shelldict["15  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-15"]=shelldict["15  8 Dx"]
 let shelldict["16  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-16"]=shelldict["16  8 Dx"]
 let shelldict["17  8 Dx"]= "◼◻◻ ◻◻"     | let shelldict["Dx-17"]=shelldict["17  8 Dx"]
