@@ -123,6 +123,19 @@ The way to be sure is to do the experiments to see what the 2 lower and upper bo
 
 2025-01-25 Jan.Sat 21:40:23 [c] need to redownload my Reactor logs. I combined some into a new one named the same way and now i've lost track of which ones I've done that in.
 
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-11-01_2024-11-18.csv ( 44 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-11-19_2024-11-19.csv (131 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-11-20_2024-11-20.csv ( 63 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-11-21_2024-11-22.csv ( 50 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-11-22_2024-11-25.csv ( 62 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-11-25_2024-11-30.csv ( 53 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-11-30_2024-12-07.csv ( 58 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-12-07_2024-12-21.csv ( 64 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-12-21_2025-01-07.csv ( 59 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2025-01-07_2025-01-14.csv ( 19 Mb)
+ logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2025-01-14_2025-01-25.csv ( 22 Mb)
+
+[ ] should I add these to my github repo? I believe they have a max file size of 100 Mb so I'd have to split the one in two
 
 2025-01-25 Jan.Sat 20:14:09 [ ] make a vim mapping for the <space> key if I press it when in normal mode, it should take the nears otom isotope and toggle between forms Ju-3/Ju-3∙/ 3  1 Ju/ 3  1 Ju∙
  [ ] make a tab completion that will take any number pair and treat the 2nd number as protons and insert the otom name for that.
