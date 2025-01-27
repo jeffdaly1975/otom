@@ -941,12 +941,12 @@ if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
 
    # save data for recipes
    foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){
-###print "DEBUG: recipes for [$one]\n";
+print "DEBUG: recipes for [$one]\n";
       my $rounded_energy_input = sprintf "%.0f", $db{$otomro}{"energy_in"};
-###print "DEBUG: rounded input energy: $rounded_energy_input\n";
+print "DEBUG: rounded input energy: $rounded_energy_input\n";
 
       push @{ $recipes{$one} },  $db{$otomro}{"otoms_in"} ." + ". $rounded_energy_input . " => ". $db{$otomro}{"otoms_out"};
-###print "DEBUG: now recipes has ". scalar(keys %recipes) . " keys\n";
+print "DEBUG: now recipes has ". scalar(keys %recipes) . " keys\n";
    }
  
 

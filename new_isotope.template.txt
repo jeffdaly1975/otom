@@ -20,3 +20,4 @@
   [ ] add to file otoms.decay.with.metadata.otom
   [ ] add to file optimized.get.all.isotopes.otom
   [ ] add to parseReactorLog.pl
+  [ ] add to token.image.descriptions.otom
