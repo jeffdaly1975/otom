@@ -924,6 +924,9 @@ if (@reaction_types){
  $db{$otomro}{"energy_out"}= $energy_returned;
  $db{$otomro}{"type"}      = $reaction_string;
  $db{$otomro}{"analyse_tx"}= $txhash;
+} else{
+  # Not a call to initiateReaction() nor analyseReactions() so skip it
+  next;
 }
 
 if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
@@ -940,16 +943,12 @@ if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
    $db{$otomro}{"analyse_tx"} ;
 
    # save data for recipes
-   foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){
-print "DEBUG: recipes for [$one]\n";
+   foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){  
+###print STDERR "DEBUG: otomro[$otomro] one[$one]\n";
       my $rounded_energy_input = sprintf "%.0f", $db{$otomro}{"energy_in"};
-print "DEBUG: rounded input energy: $rounded_energy_input\n";
 
       push @{ $recipes{$one} },  $db{$otomro}{"otoms_in"} ." + ". $rounded_energy_input . " => ". $db{$otomro}{"otoms_out"};
-print "DEBUG: now recipes has ". scalar(keys %recipes) . " keys\n";
    }
- 
-
 
 }
 
@@ -959,7 +958,7 @@ print "DEBUG: now recipes has ". scalar(keys %recipes) . " keys\n";
 
 # recipe output
 # [ ] still need to filter out duplicates where they have the same input otoms but different energy
-# [ ] still wart to filter out junky stuff like "| Aw-50 | M-22 + M-22 + M-22 + Aw-50 + Aw-50 + 350 =>  + M₂Aw(M-22>Aw-50,M-22) + M-22 + Aw-50"
+# [ ] still want to filter out junky stuff like "| Aw-50 | M-22 + M-22 + M-22 + Aw-50 + Aw-50 + 350 =>  + M₂Aw(M-22>Aw-50,M-22) + M-22 + Aw-50"
 #     where the aw-50 was from the input and unused
 open(my $fh, ">", "newrecipes.otom") or die "Can't open output file newrecipes.otom: $!";
 

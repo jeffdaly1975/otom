@@ -6275,5 +6275,18 @@ let stabilitydict["73 38 Bt"]="0.650"    | let stabilitydict["Bt-73"]="0.650"
 let stabilitydict["69 36 Xy"]="0.649"    | let stabilitydict["Xy-69"]="0.649"
 let stabilitydict["75 39  H"]="0.657"    | let stabilitydict[" H-75"]="0.657"
 
+"
+" I often put stability values after an isotope.
+" This colors 0.77 and below as unstable, meaning likely to add/subtract a proton in a reaction
+"
+syn match StabilityUnstable /(0\.[0-6]\d\+)/   "0.000 - 0.699
+syn match StabilityUnstable /(0\.7[0-7]\d\+)/  "0.700 - 0.779
+syn match StabilityStable   /(0\.7[89]\d\+)/   "0.780 - 0.799
+syn match StabilityStable   /(0\.[89]\d\+)/    "0.800 - 0.999
+syn match StabilityStable   /(1\.\d\+)/        "0.800 - 0.999
+
+hi StabilityUnstable guifg=darkgreen ctermfg=darkgreen   guibg=NONE ctermbg=NONE
+hi StabilityStable   guifg=red       ctermfg=red         guibg=NONE ctermbg=NONE
+
 
 let b:current_syntax = "otom"
