@@ -1,3 +1,44 @@
+
+2025-01-28 Jan.Tue 13:24:04
+Try some W-* + Xl-* they should fit together
+ [r] 5  2  W∙(1.000) ⎥◼◼◻⎢ +  9  5 Xl⁺(0.329) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ 
+ [r] 5  2  W∙(1.000) ⎥◼◼◻⎢ + 10  5 Xlª(0.487) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ 
+ [r] 5  2  W∙(1.000) ⎥◼◼◻⎢ + 11  5 Xl∙(1.110) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ 
+
+  5  2  W∙(1.000) ⎥◼◼◻⎢ +  9  5 Xl⁺(0.329) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ + 1000 =>  6  3 Cq + 8  4 Af + 525.22 using 474.78
+  5  2  W∙(1.000) ⎥◼◼◻⎢ + 10  5 Xlª(0.487) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ + 1000 => 15  7 Zz +           474.40 using 525.60
+  5  2  W∙(1.000) ⎥◼◼◻⎢ + 11  5 Xl∙(1.110) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ + 1000 => 16  8 Dx +           327.45 using 672.55
+
+Now I'm totally confused. [ ] Why did W-5+Xl-11 add a proton when both have decay type stable and their stability is >0.77???
+
+[ ] I don't know what the heck happened to W-5+Xl-9 since Xl-9 beta+ stab<0.77 you'd think
+Maybe it makes interim Zz-14 alpha but there's just a little too much energy so that decomposes into Cq-6+Af-8 since it likes to do that
+
+When I have the time and inputs, I'd like to narrow down the energy input windows for W-5+Xl-9. I think at some point they form an otom or molecule
+ [ ] 5  2  W∙(1.000) ⎥◼◼◻⎢ +  9  5 Xl⁺(0.329) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ +   250
+ [ ] 5  2  W∙(1.000) ⎥◼◼◻⎢ +  9  5 Xl⁺(0.329) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ +   500
+ [r] 5  2  W∙(1.000) ⎥◼◼◻⎢ +  9  5 Xl⁺(0.329) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ +  1000 =>  6  3 Cq +  8  4 Af + 525.22 using 474.78
+ [ ] 5  2  W∙(1.000) ⎥◼◼◻⎢ +  9  5 Xl⁺(0.329) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ +  2000
+ [ ] 5  2  W∙(1.000) ⎥◼◼◻⎢ +  9  5 Xl⁺(0.329) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ +  5000
+ [ ] 5  2  W∙(1.000) ⎥◼◼◻⎢ +  9  5 Xl⁺(0.329) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ + 10000
+
+ [r] 4  2  W∙(1.000) ⎥◼◼◻⎢ + 10  5 Xlª(0.487) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ +   500 =>  6  3 Cq +  8  4 Af +   24.12 using 475.88
+ [r] 4  2  W∙(1.000) ⎥◼◼◻⎢ + 10  5 Xlª(0.487) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ +  1000 =>  6  3 Cq +  8  4 Af +  499.12 using 500.88
+ [r] 4  2  W∙(1.000) ⎥◼◼◻⎢ + 10  5 Xlª(0.487) ⎥◼◼◼⎢⎥◼◼ ◻◻⎢ +  5000 =>  6  3 Cq +  8  4 Af + 4299.12 using 700.88
+
+I think W-4+Xl-10 becomes Zz-14 which likes to decompose to Cq-6+Af-8
+
+2025-01-28 Jan.Tue 12:50:38 Kjetil commented on twitter in response to QMA and said this interesting stuff about reactions:
+ >> Thanks for the interest!
+ >> 
+ >> There's nothing in the algo stopping a newly fissioned particle from decaying. The products of fission are often more stable than the product of fusion though, lowering the chance of decay. 
+ >> 
+ >> As for decay costing energy; this would make it possible to block a decay by not giving the reaction enough energy. Not saying that would be a bad thing, but it would certainly change the whole dynamic of nuclear reactions quite a lot.
+ >> 4:43 AM · Jan 28, 2025
+
+[ ] Think on that and see how it affects my model of how this all works
+
+
 2025-01-28 Jan.Tue 10:15:03
 
 I'm realizing that some otoms like to combine while others don't, based on shells.
@@ -155,6 +196,36 @@ Here is O-* has a 2-fill and 1-fill, while C-* has a 2-hole and a 1-hole, and E-
  38 19  Oª(0.899) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ + 42 20  C∙(1.086) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢    +    3065.94 => 80 39  H∙(1.907) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢
  38 19  Oª(0.899) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ + 43 21  E∙(1.072) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢    +    2864.03 => 81 40  U∙(1.866) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢
 
+So why does this happen? Fw-25 beta- wants to add a proton and has stab<0.77; Fj-37 alpha I still don't know about alpha decay but here Jx-62 is made without adding the proton
+  25 11 Fw⁻(0.737) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ 
++ 37 18 Fjª(0.942) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢   +    1922.98 =
+> 62 29 Jxª(0.906) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
+
+Here Fw-24 is beta- but stab>0.77 so it wont add a proton. But Fw-* love to combine with Nb-* because it has a 3-fill and 1-fill and Nb-* has 2 1-holes and a 2-hole those fill up.
+  24 11 Fw⁻(0.815) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ 
++ 54 25 Nbª(0.904) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢   +    2310.27 =
+> 78 36 Xy⁻(0.875) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢
+
+
+Here we drop a proton for a Pq-12 alpha isotope. [ ] Why? What does alpha do?
+   1  1 Ju∙(1.000) ⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ 
++ 12  6 Pqª(0.696) ⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢    +     545.80 =
+> 13  6 Pq∙(1.282) ⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
+
+But here it doesn't drop a proton? [ ] What gives?
+   3  1 Ju∙(1.000) ⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ 
++ 12  6 Pqª(0.696) ⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢    +     528.18 =
+> 15  7 Zz∙(1.433) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
+
+
+Now why is this? The first 3 Pq-10 beta+ drop a proton because stab=0.049; At stab for those 3 are 0.825, 0.851, 0.889. The fourth it doesn't drop a proton where the At-64 stab==0.892. [ ] Perhaps it has a different threshhold for alpha
+ 10  6 Pq⁺(0.049) ⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ + 61 31 Atª(0.825) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢   +    1188.58 => 71 36 Xy⁺(0.770) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢
+ 10  6 Pq⁺(0.049) ⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ + 62 31 Atª(0.851) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢   +    1349.45 => 72 36 Xy⁺(0.818) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢
+ 10  6 Pq⁺(0.049) ⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ + 63 31 Atª(0.889) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢   +    1374.87 => 73 36 Xy⁺(0.842) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢
+ 10  6 Pq⁺(0.049) ⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ + 64 31 Atª(0.892) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢   +    1201.85 => 74 37 Gq⁺(0.798) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢
+
+Here we drop a proton. Xk-51 stab=0.894 which is more than the At-64 0.892 so I don't undertand.
+ 24 12 Pt∙(1.796) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ + 51 26 Xkª(0.894) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢   +    2964.68 => 75 37 Gq⁺(0.840) ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢
 
 -----
 
