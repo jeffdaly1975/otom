@@ -689,6 +689,7 @@ foreach $line (<>){
   my $chemist="";
   my $output_protons=0;
   my $input_protons=0;
+  my $subscript_count=0;
 
   chomp $line;
 
@@ -839,6 +840,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
      $decoded_string="";
      foreach my $b ( @bits){
        my $charified = chr eval "0x$b";
+##print STDERR "DEBUG: char 0x$b--->[$charified]\n";
        $decoded_string.="$charified";
      }
 
@@ -854,6 +856,12 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
      foreach my $b ( @savebits){
        my $charified = chr eval "0x$b";
        $alt_decoded_string.="$charified";
+
+       # this is a kludge to deal with the fact that subscripts in molecules count as multiple characters in the
+       # printf formatting. Tried several ways to deal with it and settled on just counting them and adding padding
+       if ((eval "0x$b" < 0x89) && (eval "0x$b" > 0x80)){
+         $subscript_count +=1;
+       }
      }
 
  #example decoded_string     = "W4,W5-Dx17"
@@ -970,6 +978,7 @@ if (@reaction_types){
  $db{$otomro}{"otoms_out_list"} = [ @reaction_output_list ]; # need to do it this way with brackets around the list so I get a copy of the list not just a reference to the list
 #print "DEBUG: added to db{$otomro}{otoms_out_list}=" . join(',',@reaction_output_list) ."\n";
  $db{$otomro}{"otoms_out"}   =  join " + ",@reaction_output_list;
+ $db{$otomro}{"subscripts"}  = $subscript_count;
  $db{$otomro}{"protons_out"} = $output_protons;
  $db{$otomro}{"energy_out"}  = $energy_returned;
  $db{$otomro}{"type"}        = $reaction_string;
@@ -989,14 +998,14 @@ if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
    $proton_situation="⬆";
  }
 
- #my $thislength = length_in_grapheme_clusters($db{$otomro}{"otoms_out"});
 
-  printf "| %8d | %-50.50s + %8d => %s %-70.70s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
+  printf "| %8d | %-50.50s + %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
    $otomro, 
    $db{$otomro}{"otoms_in"}   ,
    $db{$otomro}{"energy_in"}  ,
    $proton_situation,
-   $db{$otomro}{"otoms_out"}  ,
+   $db{$otomro}{"otoms_out"} ,
+   " " x $db{$otomro}{"subscripts"} ,
    $db{$otomro}{"energy_out"} ,
    $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"} ,
    $db{$otomro}{"type"}       ,
