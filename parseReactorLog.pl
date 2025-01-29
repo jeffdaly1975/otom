@@ -755,7 +755,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 # print "initiateReaction OTOMRO $otomro CHEMIST $chemist INPUT NRG $energy_input INPUTS: ".  join(" + ",@otoms_in) . "\n";
   $db{$otomro}{"chemist"}    = $chemist;
   $db{$otomro}{"energy_in"}  = $energy_input;
-  $db{$otomro}{"otoms_in"}   = join(" + ",@otoms_in);
+  $db{$otomro}{"otoms_in"}   = join(" + ", map { sprintf("%5s%s",$_,$decaytype{$_}) } @otoms_in);
   $db{$otomro}{"initiate_tx"}= $txhash;
 
 

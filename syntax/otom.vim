@@ -5258,11 +5258,19 @@ let decay_text_alpha      = "alpha"
 let decay_text_beta_plus  = "beta+"
 let decay_text_beta_minus = "beta-"
 let decay_text_stable     = "stable"
+let decay_text_proton     = "proton"
+let decay_text_neutron    = "neutron"
+let decay_text_fission    = "fission"
 
 " 'ª' alpha   insert <C-k>-a
 " '⁺' beta+   insert <C-k>+S
-" '⁻' stable  insert <C-k>Sb
-" '∙' beta-   insert <C-k>-S
+" '⁻' beta-   insert <C-k>-S
+" '∙' stable  insert <C-k>Sb
+" 'Þ' proton  insert <C-k>Ip
+" '⊙' neutron insert <C-k>0.
+" 'Φ' fission insert <C-k>F*
+
+
 
 let decaytextchar = {}
 
@@ -5270,16 +5278,25 @@ let decaytextchar[decay_text_alpha      ]='ª' " insert <C-k>-a   alpha
 let decaytextchar[decay_text_beta_plus  ]='⁺' " insert <C-k>+S   beta+  
 let decaytextchar[decay_text_beta_minus ]='⁻' " insert <C-k>-S   beta-  
 let decaytextchar[decay_text_stable     ]='∙' " insert <C-k>Sb   stable 
+let decaytextchar[decay_text_proton     ]='Þ' " insert <C-k>Ip   proton 
+let decaytextchar[decay_text_neutron    ]='⊙' " insert <C-k>0.   neutron
+let decaytextchar[decay_text_fission    ]='Φ' " insert <C-k>F*   fission
 
 syn match decaycharmatch_alpha      /ª/
 syn match decaycharmatch_beta_plus  /⁺/
 syn match decaycharmatch_beta_minus /⁻/
 syn match decaycharmatch_stable     /∙/
+syn match decaycharmatch_proton     /Þ/
+syn match decaycharmatch_neutron    /⊙/
+syn match decaycharmatch_fission    /Φ/
 
 hi decaycharmatch_alpha       cterm=bold gui=inverse guibg=lightmagenta ctermbg=lightmagenta
 hi decaycharmatch_beta_plus   cterm=bold gui=inverse guibg=green        ctermbg=green
 hi decaycharmatch_beta_minus  cterm=bold gui=inverse guibg=cyan         ctermbg=cyan
 hi decaycharmatch_stable      cterm=bold gui=inverse guibg=lightgrey    ctermbg=lightgrey
+hi decaycharmatch_proton      cterm=bold gui=inverse guibg=lightyellow  ctermbg=lightyellow
+hi decaycharmatch_neutron     cterm=bold gui=inverse guibg=purple       ctermbg=lightmagenta
+hi decaycharmatch_fission     cterm=bold gui=inverse guibg=lightgreen   ctermbg=lightgreen
 
 
 
