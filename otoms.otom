@@ -5337,6 +5337,25 @@ atom 79 36 Xy | Decay type	stable
 atom 79 36 Xy | Filled in Outer Shell	0-0-0-0-0-2-3-2
 atom 79 36 Xy | Empty in Outer Shell	0-0-0-0-0-0-0-1
 
+atom 71 37 Gq | Lab sheet
+atom 71 37 Gq | Gq otom
+atom 71 37 Gq | Token ID 2559102573488757533634599410418125248735050906925978963546263782967433185336
+atom 71 37 Gq | Name	Gq
+atom 71 37 Gq | Discovered by	jdblacklung.eth
+atom 71 37 Gq | Current Supply	1
+atom 71 37 Gq | Series	noble
+atom 71 37 Gq | Protons	37
+atom 71 37 Gq | Neutrons	34
+atom 71 37 Gq | Stability	0.648
+atom 71 37 Gq | Density	47.040 g/cm³
+atom 71 37 Gq | Radius	1.147 pm
+atom 71 37 Gq | Electronegativity	0.000
+atom 71 37 Gq | Mass	71.000 amu
+atom 71 37 Gq | Metallic	No
+atom 71 37 Gq | Decay type	beta+
+atom 71 37 Gq | Filled in Outer Shell	0-0-0-0-0-2-3-3
+atom 71 37 Gq | Empty in Outer Shell	0-0-0-0-0-0-0-0
+
 atom 72 37 Gq | Lab sheet
 atom 72 37 Gq | Gq otom
 atom 72 37 Gq | Token ID 89570680505376609429157803747009666927150204837519724147049554630430698610368

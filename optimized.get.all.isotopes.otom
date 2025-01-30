@@ -280,6 +280,7 @@
 | 77 36 Xy | 23 11 Fw + 54 25 Nb + 3050 => 77 36 Xy
 | 78 36 Xy | 24 11 Fw + 54 25 Nb + 2500 => 78 36 Xy            PREREQUISITE  7  3 Cq + 17  8 Dx + 1050 => 24 11 Fw
 | 79 36 Xy | 25 11 Fw + 54 25 Nb + 2400 => 79 36 Xy
+| 71 37 Gq | 14  8 Dx + 57 30 Hb + 1750 => 72 37 Gq            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D            PREREQUISITE 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx PREREQUISITE 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy PREREQUISITE 15  8 Dx + 42 22  A + 1500 => 57 30 Hb            PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A
 | 72 37 Gq | 15  8 Dx + 57 30 Hb + 1750 => 72 37 Gq            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
 | 73 37 Gq | 16  8 Dx + 57 30 Hb + 2550 => 73 37 Gq            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
 | 74 37 Gq | 30 15 Xc + 44 22  A + 3450 => 74 37 Gq            PREREQUISITE  7  4 Af + 37 18 Fj +  900 => 44 22  A
@@ -323,7 +324,7 @@
 | 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua            PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx
 
 SUMMARY:
-You will need 806306 NRG and the following mineable otoms:
+You will need 820106 NRG and the following mineable otoms:
 25x  1  1 Ju
  9x  2  1 Ju
 10x  3  1 Ju
@@ -332,7 +333,7 @@ You will need 806306 NRG and the following mineable otoms:
 13x  5  3 Cq
  9x  6  3 Cq
  7x  7  3 Cq
-34x  7  4 Af
+35x  7  4 Af
  3x  8  4 Af
  8x  9  4 Af
  8x  9  5 Xl
@@ -345,10 +346,10 @@ You will need 806306 NRG and the following mineable otoms:
  5x 14  6 Pq
  4x 14  7 Zz
  8x 15  6 Pq
-28x 15  8 Dx
+29x 15  8 Dx
  6x 16  8 Dx
  6x 17  8 Dx
-53x 17  9 Pm
+54x 17  9 Pm
 15x 18  9 Pm
  6x 19  9 Pm
 18x 20 10  M
@@ -358,7 +359,7 @@ You will need 806306 NRG and the following mineable otoms:
 15x 24 12 Pt
 18x 25 11 Fw
 12x 25 12 Pt
-76x 25 13  S
+79x 25 13  S
  9x 26 12 Pt
 26x 26 13  S
 30x 30 15 Xc
