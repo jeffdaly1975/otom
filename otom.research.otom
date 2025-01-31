@@ -1,3 +1,113 @@
+2025-01-31 Jan.Fri 13:30:57 [ ] Make some *₅ molecules:
+
+To do subscripts in vim, 
+insert <C-k> 2s  ->  ₂
+insert <C-k> 3s  ->  ₃
+insert <C-k> 4s  ->  ₄
+insert <C-k> 5s  ->  ₅
+
+
+[ ]
+ Nb-54ª + Nb-54ª + Nb-54ª + Nb-54ª + Nb-54ª +    274  =>   Nb₅(Nb-54,Nb-54,Nb-54,Nb-54,Nb-54>)  
+                                                    
+[ ]
+ Dx-16∙ + Dx-16∙ + Dx-16∙ + Dx-16∙ + Dx-16∙ +     36  =>   Dx₅(Dx-16,Dx-16,Dx-16,Dx-16>Dx-16)   
+ Dx-16∙ + Dx-16∙ + Dx-16∙ + Dx-17∙ + Dx-18∙ +     39  =>   Dx₅(Dx-16,Dx-16,Dx-17,Dx-18>Dx-16)   
+ Dx-16∙ + Dx-16∙ + Dx-16∙ + Dx-16∙ + Dx-17∙ +     48  =>   Dx₅(Dx-16,Dx-16,Dx-16,Dx-17>Dx-16)   
+                                                    
+[ ]
+ Pm-19∙ + Pm-19∙ + Pm-19∙ + Pm-19∙ + Pm-19∙ +     48  =>   Pm₅(Pm-19,Pm-19,Pm-19>Pm-19,Pm-19)   
+                                                    
+[ ]
+  M-20∙ +  M-20∙ +  M-20∙ +  M-20∙ +  M-20∙ +    549  =>   M₅(M-20,M-20>M-20,M-20,M-20)         
+  M-20∙ +  M-20∙ +  M-20∙ +  M-22∙ +  M-22∙ +     56  =>   M₅(M-20,M-22>M-20,M-20,M-22)         
+  M-22∙ +  M-22∙ +  M-22∙ +  M-22∙ +  M-22∙ +     57  =>   M₅(M-22,M-22>M-22,M-22,M-22)         
+                                                    
+[ ]
+ Fj-37ª + Fj-37ª + Fj-37ª + Fj-37ª + Fj-37ª +    139  =>   Fj₅(Fj-37,Fj-37,Fj-37,Fj-37,Fj-37>)  
+                                                    
+[ ]
+ Fw-23∙ + Fw-23∙ + Fw-23∙ + Fw-23∙ + Fw-23∙ +    560  =>   Fw₅(Fw-23>Fw-23,Fw-23,Fw-23,Fw-23)   
+                                                    
+[ ]
+ At-64ª + At-66ª + At-67ª + At-68⁻ + At-69⁻ +    223  =>   At₅(At-64,At-66,At-67,At-68,At-69>)  
+
+2025-01-31 Jan.Fri 11:37:28 UI improvement idea: what if you could simply double-click an otom from the app and it would instantly move to the current lab interface. And if you double-clicked one from the lab it would get sent back to the pile?
+
+2025-01-31 Jan.Fri 11:23:41 Thats an interesting fission! I don't think I've seen such an unbalanced split
+ Ny-62ª +     5000 =>   Cq-6 + Jx-56 +    4750.00 using 250.00
+
+[c] What will Ny-61 split into? Maybe undiscovered Jx-55 
+
+[r] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+[r]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
+[r]  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
+[r] 10  6 Pq + 51 27 Ic + 1040 => 61 32 Ny
+[r] 61 32 Ny +             500 => ?          HMM. IT JUST DECAYED TO At-61
+
+[ ] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+[ ]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
+[ ]  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
+[ ] 10  6 Pq + 51 27 Ic + 1040 => 61 32 Ny
+[ ] 61 32 Ny +            7000 => ?
+
+[ ] Need to try more variations of NRG input. Ny-* likes to make DXc between 5000-10000. I bet it makes intermediates just below those DXc outputs
+
+Here are some easy to make Ny-* to try finding fission outputs 
+[r] 30 15 Xc + 37 17  D + 2953 => 67 32 Ny
+[ ] 31 15 Xc + 37 17  D + 2312 => 68 32 Ny
+[ ] 19  9 Pm + 50 23 Aw + 2787 => 69 32 Ny
+[ ] 37 17  D + 34 15 Xc + 2253 => 71 32 Ny
+
+[r] 67 32 Ny +          + 7400 => ?
+[ ] 68 32 Ny +          + 6700 => ?
+[ ] 69 32 Ny +          + 6700 => ?
+[ ] 71 32 Ny +          + 6700 => ?
+[ ] 72 32 Ny +          + 7000 => ?
+
+
+
+2025-01-30 Jan.Thu 23:29:08 [ ] export logs from shapescan for the transactions themselves.
+This can be used to calculate how much someone spent on mining, reacting, etc.
+It can also correlate the timestamp for every discovery and reaction.
+[ ] use it to make a list showing the first time each unique reaction was performed. A Discovery History
+
+[ ] learn to use some mapping/plotting tools to visualize this stuff
+[ ] OR make a text version.
+[ ] convert_token_id_to_hex.pl should build the otoms.columns file
+[ ] and more it should make several output styles. The current otoms.columns.otom file looks like:
+
+|  | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|...
+| 1|Ju|Ju|Ju|  |  |  |  |  |  |  |  |  |  |  |  |  | 
+| 2|  |  |  |W |W |  |  |  |  |  |  |  |  |  |  |  | 
+| 3|  |  |  |  |Cq|Cq|Cq|  |  |  |  |  |  |  |  |  | 
+| 4|  |  |  |  |  | -|Af|Af|Af|Af|  |  |  |  |  |  | 
+| 5|  |  |  |  |  |  |  |  |Xl|Xl|Xl|Xl|  |  |  |  | 
+| 6|  |  |  |  |  |  |  |  |  |Pq|Pq|Pq|Pq|Pq|Pq|  | 
+| 7|  |  |  |  |  |  |  |  |  |  |  |  |Zz|Zz|Zz|Zz| 
+...
+
+and theres the file "isotopes image from Kjetil with uknknown meaning.txt" inverted arrangment that has the long names and beta decay sigil and stability values.
+
+  N \ P |      00001 |      00002 |      00003 |      00004 |      00005 |      00006 |      00007 |
+  00001 | Ju-1∙ 1.000|            |            |            |            |            |            |
+  00002 | Ju-2∙ 1.000|  W-4∙ 1.000| Cq-5⁺ 0.017|            |            |            |            |
+  00003 | Ju-3∙ 1.000|  W-5∙ 1.000| Cq-6∙ 1.000| Af-7ª 1.194|            |            |            |
+  00004 |            |            | Cq-7∙ 1.000| Af-8∙ 1.000| Xl-9⁺ 0.32 | Pq-10⁺0.04 |            |
+  00005 |            |            |            | Af-9∙ 1.000| Xl-10ª0.48 | Pq-11⁺0.43 |*Zz-12*0.07 |
+  00006 |            |            |            | Af-10⁻0.290| Xl-11∙1.11 | Pq-12ª0.69 | Zz-13⁺0.52 |
+  00007 |            |            |            |            | Xl-12⁻0.313| Pq-13∙1.28 | Zz-14ª0.64 |
+  00008 |            |            |            |            |*Xl-13*0.07 | Pq-14⁻0.56 | Zz-15∙1.43 |
+  00009 |            |            |            |            |            | Pq-15⁻0.27 | Zz-16⁻0.57 |
+  00010 |            |            |            |            |            |*Pq-16*0.07 |*Zz-17*0.49 |
+  00011 |            |            |            |            |            |            |*Zz-18*0.08 |
+
+
+Those marked with an asterisk have yet to be discovered. Some have a Stability value with 2 decimal places. As I add new ones to the table, I put in the value with 3 decimal places. I don't knoa why.
+There are question marks ? in places where it was not discernable or cut off on the image Kjetil posted. I should just archive it and rename the file for storing the information in this view.
+[ ] Do that
+
+
 2025-01-30 Jan.Thu 21:13:58 looking at Pm-*
 
 | Pm-17  +       0 => ⬇ Dx-17               +       0.00 |       0.00 | decay                        
@@ -101,7 +211,6 @@ Af-9 |  9   4 Af |                                     |..|[1063.80.. 2500]   D-
 Af-9 |  9   4 Af |                                     |..|                                     |                                     |
 Af-9 |  9   4 Af |                                     |..|                                     |                                     |
 -----------------+-------------------------------------+--+-------------------------------------+-------------------------------------+
-
 
 
 

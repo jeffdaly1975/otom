@@ -409,6 +409,7 @@ my %sortorder=();
 my %recipes=();
 my %decaytype=();
 my %stabilityhash=();
+my %discoveries=();
 
 foreach my $item (@otom_isotopes){
   my ($name,$longname,$protons,$tokenid,$decayword,$stability) = @$item;
@@ -892,6 +893,12 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
      push @reaction_output_list, "$1-$2";
 
      $output_protons += $protonlookup{$1};
+
+
+     unless ($discoveries{"$1-$2"}++ > 1){
+       print STDERR "------> New isotope: $1-$2\n";
+     }
+
    } else {                                                        # this is a molecule
      #replace the "-" with ">" to show its the giving otoms
      $decoded_string =~ s/-/>/; #  "W4,W5-Dx17" =>  "W4,W5>Dx17"
@@ -915,6 +922,9 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
        }
      }
 
+     unless ($discoveries{"$molecule"}++ > 1){
+       print STDERR "------> New molecule: $molecule\n";
+     }
    }
 
  }
