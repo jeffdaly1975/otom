@@ -409,7 +409,8 @@ my %sortorder=();
 my %recipes=();
 my %decaytype=();
 my %stabilityhash=();
-my %discoveries=();
+my %discovered_otoms=();
+my %discovered_molecules=();
 
 foreach my $item (@otom_isotopes){
   my ($name,$longname,$protons,$tokenid,$decayword,$stability) = @$item;
@@ -895,7 +896,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
      $output_protons += $protonlookup{$1};
 
 
-     unless ($discoveries{"$1-$2"}++ > 1){
+     unless ($discovered_otoms{"$1-$2"}++ > 0){
        print STDERR "------> New isotope: $1-$2\n";
      }
 
@@ -922,7 +923,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
        }
      }
 
-     unless ($discoveries{"$molecule"}++ > 1){
+     unless ($discovered_molecules{"$molecule"}++ > 0){
        print STDERR "------> New molecule: $molecule\n";
      }
    }
@@ -1103,4 +1104,19 @@ foreach my $k (sort keys %db){
 
   }
 }
+
+# finally finally how many of each thing has been produced through reactions?
+print STDERR "\n";
+print STDERR " How many of each thing has been produced through reactions?\n";
+print STDERR "OTOM ISOTOPES\n";
+
+foreach my $k (sort { $discovered_otoms{$b} <=> $discovered_otoms{$a} || $a cmp $b} keys %discovered_otoms){
+  printf STDERR "%8d %s\n", $discovered_otoms{$k} , $k;
+}
+print STDERR "\n";
+print STDERR "OTOM MOLECULES\n";
+foreach my $k (sort { $discovered_molecules{$b} <=> $discovered_molecules{$a} || $a cmp $b } keys %discovered_molecules){
+  printf STDERR "%8d %s\n", $discovered_molecules{$k} , $k;
+}
+
 
