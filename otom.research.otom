@@ -1,3 +1,27 @@
+2025-01-30 Jan.Thu 21:13:58 looking at Pm-*
+
+| Pm-17  +       0 => ⬇ Dx-17               +       0.00 |       0.00 | decay                        
+| Pm-17  +     200 => ⬇ Dx-17               +     190.00 |      10.00 | decay                        
+| Pm-17  +    5000 =>   XlAf(Af-8,Xl-9>)    +    4019.29 |     980.71 | metallic, nuclear            
+
+| Pm-18  +       0 => ⬇ Dx-18               +       0.00 |       0.00 | decay                        
+| Pm-18  +     830 => ⬇ Dx-18               +     788.50 |      41.50 | decay                        
+| Pm-18  +    1001 =>   XlAf(Af-8,Xl-10>)   +     113.18 |     887.82 | metallic, nuclear            
+| Pm-18  +    1111 =>   XlAf(Af-8,Xl-10>)   +     217.68 |     893.32 | metallic, nuclear            
+
+| Pm-19  +       0 =>   Pm-19               +       0.00 |       0.00 | none                         
+| Pm-19  +     500 =>   Pm-19               +     475.00 |      25.00 | none                         
+| Pm-19  +    5000 =>   XlAf(Af-9,Xl-10>)   +    3309.65 |    1690.35 | metallic, nuclear            
+
+| Pm-20  +       0 => ⬆ M-20                +       0.00 |       0.00 | decay                        
+| Pm-20  +       1 => ⬆ M-20                +       0.95 |       0.05 | decay                        
+| Pm-20  +    5000 =>   XlAf(Af-9,Xl-11>)   +    3799.46 |    1200.54 | metallic, nuclear            
+
+| Pm-21  +       0 => ⬆ M-21                +       0.00 |       0.00 | decay                        
+
+
+
+
 2025-01-30 Jan.Thu 12:59:01 what energy is needed for O-* to fission into Pm-*+M-* instead of making PmM?
 
 Here's how to make O-*
@@ -1619,7 +1643,7 @@ beta+ + alpha
 [r] 15  8 Dx + 42 22  A + 1477 => 57 30 Hb
 [r] 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy
 [r] 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx
-[f] 14  8 Dx⁺(0.334) + 68 35 Qi⁺(0.712) + 5000 => |⬆ 82 44 .. |= 82 43 .. |⬇ 82 42 Ua [*] try <--NOPE THEY BOTH DECAYED!
+[f] 14  8 Dx⁺(0.334) + 68 35 Qi⁺(0.712) + 5000 => |⬆ 82 44 .. |= 82 43 .. |⬇ 82 42 Ua [f] try <--NOPE THEY BOTH DECAYED!
 
 
 [r] 17  9 Pm  + 25 13  S  + 1172 => 42 22  A
@@ -1651,7 +1675,7 @@ beta+ + alpha
 [r] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
 [r]  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc
 [r]  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
-[r] 14  8 Dx + 51 27 Ic + ???? => |⬆  65  36 Xy |=  65  35 Qi |⬇  65  34 Gk [ ] try <---NOPE
+[r] 14  8 Dx + 51 27 Ic + ???? => |⬆  65  36 Xy |=  65  35 Qi |⬇  65  34 Gk [f] try <---NOPE
     14  8 Dx⁺+ 70 32 Ny⁻+7000 => 70 32 Ny⁻ + 14  7 Zzª +  6650.00 using 350.00
 
 
@@ -3547,7 +3571,7 @@ From my otom_decay_reactions.pl output file otoms.decay_reactions_list.txt I rem
  16  8 Dx∙(1.604) +  69 32 Nyª(0.859) => |⬆  85  41 Sq |=  85  40  U |⬇  85  39  H
  16  8 Dx∙(1.604) +  70 32 Ny⁻(0.842) => |⬆  86  41 Sq |=  86  40  U |⬇  86  39  H
  16  8 Dx∙(1.604) +  71 32 Ny⁻(0.804) => |⬆  87  41 Sq |=  87  40  U |⬇  87  39  H
- 16  8 Dx∙(1.604) +  72 32 Ny⁻(0.788) => |⬆  88  41 Sq |=  88  40  U |⬇  88  39  H
+ 16  8 Dx∙(1.604) +  72 32 Ny⁻(0.788) => |⬆  88  41 Sq |=  88  40  U |⬇  88  39  H <---NO REACTION
  16  8 Dx∙(1.604) +  70 33 Pwª(0.868) => |⬆  86  42 Ua |=  86  41 Sq |⬇  86  40  U
  16  8 Dx∙(1.604) +  71 33 Pw⁻(0.864) => |⬆  87  42 Ua |=  87  41 Sq |⬇  87  40  U
  16  8 Dx∙(1.604) +  72 33 Pw⁻(0.839) => |⬆  88  42 Ua |=  88  41 Sq |⬇  88  40  U
@@ -5365,10 +5389,10 @@ is 23 12 Pt decay+0 correct? NO because I had it wrong as beta-
  Ny => DXc
  U  => FjA
 
-[ ] Do we just need the right isotopes to start with, where its beta- or beta+ decay types?
-[ ] Does the input energy need to be inside a precise small window range? 
-[ ] Is it simply not possible to achieve those isotopes through this approach where instead they need to be built by combining the right 2 input isotopes and energy?
-[*] Maybe you need to add another otom as input that will combine with one of the outputs and create a molecule plus an isotope that otherwise would have formed a molecule with its split partner
+[x] Do we just need the right isotopes to start with, where its beta- or beta+ decay types?
+[c] Does the input energy need to be inside a precise small window range? YES IT DOES
+[x] Is it simply not possible to achieve those isotopes through this approach where instead they need to be built by combining the right 2 input isotopes and energy?
+[x] Maybe you need to add another otom as input that will combine with one of the outputs and create a molecule plus an isotope that otherwise would have formed a molecule with its split partner
 
 
 This was a good pattern qma0000.eth found:
@@ -5416,11 +5440,14 @@ add 300 more NRG to be safe?
 [r] 25 13  S (0.790)+ 32 17  D (0.814)+ 1700 => 57 30 Hb OR [ ] 15  8 Dx (0.604) + 42 22  A (0.908)+ 1500 => 57 30 Hb 
 [r]  5  3 Cq⁺(0.017)+ 57 30 Hb⁺(0.807)+  900 => 62 32 Nyª
 
+[r]  3  1 Ju (1.000)+ 37 17  D (0.895)+  972 => 40 18 Fj 
+[r] 32 14 Zq (0.772)+ 40 18 Fj (1.943)+ 2965 => 72 32 Ny
+[f] 16  8 Dx∙(1.604)+ 72 32 Ny⁻(0.788)+ 2850 => 88 39  H OR  88 40  U OR (will probably make 88 41 Sq) <---NO REACTION
 
 [*] 15  6 Pq (0.278)+ 54 25 Nb (0.904)+ 1500 => 69 31 At
   [ ]  3  1 Ju (1.000)+ 69 31 At (0.786)+ 1600 => 72 32 Ny
 
-[r]  3  1 Ju (1.000)+ 37 17  D (0.895)+ 1000 => 40 18 Fj OR
+[r]  3  1 Ju (1.000)+ 37 17  D (0.895)+  972 => 40 18 Fj OR
     15  6 Pq (0.278)+ 25 11 Fw (0.737)+ 1100 => 40 18 Fj
   [r] 32 14 Zq (0.772)+ 40 18 Fj (1.943)+ 3050 => 72 32 Ny
 
