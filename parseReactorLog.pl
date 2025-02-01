@@ -1085,7 +1085,7 @@ foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
 close($fh);
 
 
-# finally do an assessment of any initiateReaction calls missing a analyseReactions tx
+# finally do an assessment of any initiateReaction calls missing an analyseReactions tx
 foreach my $k (sort keys %db){
   unless (exists $db{$k}{"analyse_tx"}){
  
@@ -1113,6 +1113,7 @@ print STDERR "OTOM ISOTOPES\n";
 foreach my $k (sort { $discovered_otoms{$b} <=> $discovered_otoms{$a} || $a cmp $b} keys %discovered_otoms){
   printf STDERR "%8d %s\n", $discovered_otoms{$k} , $k;
 }
+
 print STDERR "\n";
 print STDERR "OTOM MOLECULES\n";
 foreach my $k (sort { $discovered_molecules{$b} <=> $discovered_molecules{$a} || $a cmp $b } keys %discovered_molecules){

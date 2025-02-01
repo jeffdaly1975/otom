@@ -1,3 +1,33 @@
+2025-01-31 Jan.Fri 15:56:00 Updated parseReactorLog.pl to give summaries at the end of processing to show how many of each isotope/molecule have been produced through reactions. Surprising to see Cq-6 is the top.
+
+Here's the 10 ten of each:
+
+OTOM ISOTOPES
+    9514 Cq-6
+    2866 Pt-25
+    2320 Ju-1
+    1930 Cq-7
+    1869 Zz-15
+    1545 Gy-34
+    1038 W-4
+     987 Pt-26
+     927 Pq-13
+     800 Pt-24
+ 
+OTOM MOLECULES
+    2151 Ju₃(Ju-1,Ju-1>Ju-1)
+     265 JuW(Ju-1>W-4)
+     255 Ju₃(Ju-2,Ju-2>Ju-2)
+     184 WJu(W-4>Ju-1)
+     139 JuW(Ju-2>W-4)
+     137 JuPq(Ju-1>Pq-13)
+     137 Ju₃(Ju-3,Ju-3>Ju-3)
+     121 WXl(W-4>Xl-11)
+     112 AfW(Af-8>W-4)
+      97 XlJu(Xl-11>Ju-1)
+
+There are 2105 molecules created that have only been produced once.
+
 2025-01-31 Jan.Fri 13:30:57 [ ] Make some *₅ molecules:
 
 To do subscripts in vim, 

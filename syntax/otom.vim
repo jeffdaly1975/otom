@@ -7,702 +7,79 @@ if exists("b:current_syntax")
 endif
 
 
-" This is not ideal but I set this if statement to 1 if I want to have highlighting show rarity or 0 if I want it to show decay types
-if 1
+let decay_text_alpha      = "alpha"
+let decay_text_beta_plus  = "beta+"
+let decay_text_beta_minus = "beta-"
+let decay_text_stable     = "stable"
+let decay_text_proton     = "proton"
+let decay_text_neutron    = "neutron"
+let decay_text_fission    = "fission"
 
-syntax match rarity_common     /\<1\s\+1\s\+Ju\>/   | syntax match rarity_common    /\<Ju-1\>/
-syntax match rarity_common     /\<2\s\+1\s\+Ju\>/   | syntax match rarity_common    /\<Ju-2\>/
-syntax match rarity_common     /\<3\s\+1\s\+Ju\>/   | syntax match rarity_common    /\<Ju-3\>/
-syntax match rarity_common     /\<4\s\+2\s\+W\>/    | syntax match rarity_common     /\<W-4\>/
-syntax match rarity_common     /\<6\s\+3\s\+Cq\>/   | syntax match rarity_common    /\<Cq-6\>/
-syntax match rarity_common     /\<7\s\+3\s\+Cq\>/   | syntax match rarity_common    /\<Cq-7\>/
-syntax match rarity_common     /\<7\s\+4\s\+Af\>/   | syntax match rarity_common    /\<Af-7\>/
-syntax match rarity_common     /\<8\s\+4\s\+Af\>/   | syntax match rarity_common    /\<Af-8\>/
-syntax match rarity_common     /\<9\s\+4\s\+Af\>/   | syntax match rarity_common    /\<Af-9\>/
-syntax match rarity_common    /\<10\s\+5\s\+Xl\>/   | syntax match rarity_common    /\<Xl-10\>/
-syntax match rarity_common    /\<11\s\+5\s\+Xl\>/   | syntax match rarity_common    /\<Xl-11\>/
-syntax match rarity_common    /\<12\s\+6\s\+Pq\>/   | syntax match rarity_common    /\<Pq-12\>/
-syntax match rarity_common    /\<13\s\+7\s\+Zz\>/   | syntax match rarity_common    /\<Zz-13\>/
-syntax match rarity_common    /\<13\s\+6\s\+Pq\>/   | syntax match rarity_common    /\<Pq-13\>/
-syntax match rarity_common    /\<15\s\+8\s\+Dx\>/   | syntax match rarity_common    /\<Dx-15\>/
-syntax match rarity_common    /\<16\s\+8\s\+Dx\>/   | syntax match rarity_common    /\<Dx-16\>/
-syntax match rarity_common    /\<17\s\+8\s\+Dx\>/   | syntax match rarity_common    /\<Dx-17\>/
-syntax match rarity_common    /\<17\s\+9\s\+Pm\>/   | syntax match rarity_common    /\<Pm-17\>/
-syntax match rarity_common    /\<18\s\+9\s\+Pm\>/   | syntax match rarity_common    /\<Pm-18\>/
-syntax match rarity_common    /\<19\s\+9\s\+Pm\>/   | syntax match rarity_common    /\<Pm-19\>/
-syntax match rarity_common    /\<20\s\+10\s\+M\>/   | syntax match rarity_common     /\<M-20\>/
-syntax match rarity_common    /\<22\s\+10\s\+M\>/   | syntax match rarity_common     /\<M-22\>/
-syntax match rarity_common    /\<23\s\+10\s\+M\>/   | syntax match rarity_common     /\<M-23\>/
-syntax match rarity_common    /\<24\s\+12\s\+Pt\>/  | syntax match rarity_common    /\<Pt-24\>/
-syntax match rarity_common    /\<25\s\+11\s\+Fw\>/  | syntax match rarity_common    /\<Fw-25\>/
-syntax match rarity_common    /\<25\s\+12\s\+Pt\>/  | syntax match rarity_common    /\<Pt-25\>/
-syntax match rarity_common    /\<25\s\+13\s\+S\>/   | syntax match rarity_common     /\<S-25\>/
-syntax match rarity_common    /\<26\s\+12\s\+Pt\>/  | syntax match rarity_common    /\<Pt-26\>/
-syntax match rarity_common    /\<26\s\+13\s\+S\>/   | syntax match rarity_common     /\<S-26\>/
-syntax match rarity_common    /\<30\s\+15\s\+Xc\>/  | syntax match rarity_common    /\<Xc-30\>/
-syntax match rarity_common    /\<31\s\+15\s\+Xc\>/  | syntax match rarity_common    /\<Xc-31\>/
-syntax match rarity_common    /\<32\s\+14\s\+Zq\>/  | syntax match rarity_common    /\<Zq-32\>/
-syntax match rarity_common    /\<34\s\+16\s\+Gy\>/  | syntax match rarity_common    /\<Gy-34\>/
-syntax match rarity_common    /\<34\s\+15\s\+Xc\>/  | syntax match rarity_common    /\<Xc-34\>/
-syntax match rarity_common    /\<37\s\+18\s\+Fj\>/  | syntax match rarity_common    /\<Fj-37\>/
-syntax match rarity_common    /\<37\s\+17\s\+D\>/   | syntax match rarity_common     /\<D-37\>/
-syntax match rarity_common    /\<50\s\+23\s\+Aw\>/  | syntax match rarity_common    /\<Aw-50\>/
+" 'ª' alpha   insert <C-k>-a
+" '⁺' beta+   insert <C-k>+S
+" '⁻' beta-   insert <C-k>-S
+" '∙' stable  insert <C-k>Sb
+" 'Þ' proton  insert <C-k>Ip
+" '⊙' neutron insert <C-k>0.
+" 'Φ' fission insert <C-k>F*
 
-syntax match rarity_uncommon   /\<5\s\+2\s\+W\>/    | syntax match rarity_uncommon   /\<W-5\>/
-syntax match rarity_uncommon   /\<5\s\+3\s\+Cq\>/   | syntax match rarity_uncommon  /\<Cq-5\>/
-syntax match rarity_uncommon   /\<9\s\+5\s\+Xl\>/   | syntax match rarity_uncommon  /\<Xl-9\>/
-syntax match rarity_uncommon  /\<10\s\+6\s\+Pq\>/   | syntax match rarity_uncommon  /\<Pq-10\>/
-syntax match rarity_uncommon  /\<14\s\+7\s\+Zz\>/   | syntax match rarity_uncommon  /\<Zz-14\>/
-syntax match rarity_uncommon  /\<14\s\+6\s\+Pq\>/   | syntax match rarity_uncommon  /\<Pq-14\>/
-syntax match rarity_uncommon  /\<15\s\+7\s\+Zz\>/   | syntax match rarity_uncommon  /\<Zz-15\>/
-syntax match rarity_uncommon  /\<15\s\+6\s\+Pq\>/   | syntax match rarity_uncommon  /\<Pq-15\>/
-syntax match rarity_uncommon  /\<18\s\+8\s\+Dx\>/   | syntax match rarity_uncommon  /\<Dx-18\>/
-syntax match rarity_uncommon  /\<23\s\+11\s\+Fw\>/  | syntax match rarity_uncommon  /\<Fw-23\>/
-syntax match rarity_uncommon  /\<32\s\+15\s\+Xc\>/  | syntax match rarity_uncommon  /\<Xc-32\>/
-syntax match rarity_uncommon  /\<54\s\+25\s\+Nb\>/  | syntax match rarity_uncommon  /\<Nb-54\>/
 
-syntax match rarity_rare      /\<11\s\+6\s\+Pq\>/   | syntax match rarity_rare      /\<Pq-11\>/
-syntax match rarity_rare      /\<16\s\+7\s\+Zz\>/   | syntax match rarity_rare      /\<Zz-16\>/
-syntax match rarity_rare      /\<19\s\+10\s\+M\>/   | syntax match rarity_rare       /\<M-19\>/
-syntax match rarity_rare      /\<20\s\+9\s\+Pm\>/   | syntax match rarity_rare      /\<Pm-20\>/
-syntax match rarity_rare      /\<21\s\+9\s\+Pm\>/   | syntax match rarity_rare      /\<Pm-21\>/
-syntax match rarity_rare      /\<21\s\+10\s\+M\>/   | syntax match rarity_rare       /\<M-21\>/
-syntax match rarity_rare      /\<21\s\+11\s\+Fw\>/  | syntax match rarity_rare      /\<Fw-21\>/
-syntax match rarity_rare      /\<22\s\+11\s\+Fw\>/  | syntax match rarity_rare      /\<Fw-22\>/
-syntax match rarity_rare      /\<23\s\+12\s\+Pt\>/  | syntax match rarity_rare      /\<Pt-23\>/
-syntax match rarity_rare      /\<24\s\+11\s\+Fw\>/  | syntax match rarity_rare      /\<Fw-24\>/
-syntax match rarity_rare      /\<27\s\+13\s\+S\>/   | syntax match rarity_rare       /\<S-27\>/
-syntax match rarity_rare      /\<27\s\+14\s\+Zq\>/  | syntax match rarity_rare      /\<Zq-27\>/
-syntax match rarity_rare      /\<27\s\+12\s\+Pt\>/  | syntax match rarity_rare      /\<Pt-27\>/
-syntax match rarity_rare      /\<28\s\+13\s\+S\>/   | syntax match rarity_rare       /\<S-28\>/
-syntax match rarity_rare      /\<28\s\+14\s\+Zq\>/  | syntax match rarity_rare      /\<Zq-28\>/
-syntax match rarity_rare      /\<29\s\+13\s\+S\>/   | syntax match rarity_rare       /\<S-29\>/
-syntax match rarity_rare      /\<29\s\+14\s\+Zq\>/  | syntax match rarity_rare      /\<Zq-29\>/
-syntax match rarity_rare      /\<29\s\+15\s\+Xc\>/  | syntax match rarity_rare      /\<Xc-29\>/
-syntax match rarity_rare      /\<30\s\+14\s\+Zq\>/  | syntax match rarity_rare      /\<Zq-30\>/
-syntax match rarity_rare      /\<31\s\+14\s\+Zq\>/  | syntax match rarity_rare      /\<Zq-31\>/
-syntax match rarity_rare      /\<31\s\+16\s\+Gy\>/  | syntax match rarity_rare      /\<Gy-31\>/
-syntax match rarity_rare      /\<32\s\+16\s\+Gy\>/  | syntax match rarity_rare      /\<Gy-32\>/
-syntax match rarity_rare      /\<32\s\+17\s\+D\>/   | syntax match rarity_rare       /\<D-32\>/
-syntax match rarity_rare      /\<33\s\+15\s\+Xc\>/  | syntax match rarity_rare      /\<Xc-33\>/
-syntax match rarity_rare      /\<33\s\+16\s\+Gy\>/  | syntax match rarity_rare      /\<Gy-33\>/
-syntax match rarity_rare      /\<33\s\+17\s\+D\>/   | syntax match rarity_rare       /\<D-33\>/
-syntax match rarity_rare      /\<34\s\+17\s\+D\>/   | syntax match rarity_rare       /\<D-34\>/
-syntax match rarity_rare      /\<34\s\+18\s\+Fj\>/  | syntax match rarity_rare      /\<Fj-34\>/
-syntax match rarity_rare      /\<35\s\+16\s\+Gy\>/  | syntax match rarity_rare      /\<Gy-35\>/
-syntax match rarity_rare      /\<35\s\+17\s\+D\>/   | syntax match rarity_rare       /\<D-35\>/
-syntax match rarity_rare      /\<35\s\+18\s\+Fj\>/  | syntax match rarity_rare      /\<Fj-35\>/
-syntax match rarity_rare      /\<36\s\+16\s\+Gy\>/  | syntax match rarity_rare      /\<Gy-36\>/
-syntax match rarity_rare      /\<36\s\+17\s\+D\>/   | syntax match rarity_rare       /\<D-36\>/
-syntax match rarity_rare      /\<36\s\+18\s\+Fj\>/  | syntax match rarity_rare      /\<Fj-36\>/
-syntax match rarity_rare      /\<37\s\+19\s\+O\>/   | syntax match rarity_rare       /\<O-37\>/
-syntax match rarity_rare      /\<38\s\+17\s\+D\>/   | syntax match rarity_rare       /\<D-38\>/
-syntax match rarity_rare      /\<38\s\+18\s\+Fj\>/  | syntax match rarity_rare      /\<Fj-38\>/
-syntax match rarity_rare      /\<38\s\+19\s\+O\>/   | syntax match rarity_rare       /\<O-38\>/
-syntax match rarity_rare      /\<38\s\+20\s\+C\>/   | syntax match rarity_rare       /\<C-38\>/
-syntax match rarity_rare      /\<39\s\+17\s\+D\>/   | syntax match rarity_rare       /\<D-39\>/
-syntax match rarity_rare      /\<39\s\+18\s\+Fj\>/  | syntax match rarity_rare      /\<Fj-39\>/
-syntax match rarity_rare      /\<39\s\+19\s\+O\>/   | syntax match rarity_rare       /\<O-39\>/
-syntax match rarity_rare      /\<39\s\+20\s\+C\>/   | syntax match rarity_rare       /\<C-39\>/
-syntax match rarity_rare      /\<40\s\+18\s\+Fj\>/  | syntax match rarity_rare      /\<Fj-40\>/
-syntax match rarity_rare      /\<40\s\+19\s\+O\>/   | syntax match rarity_rare       /\<O-40\>/
-syntax match rarity_rare      /\<40\s\+20\s\+C\>/   | syntax match rarity_rare       /\<C-40\>/
-syntax match rarity_rare      /\<40\s\+21\s\+E\>/   | syntax match rarity_rare       /\<E-40\>/
-syntax match rarity_rare      /\<41\s\+18\s\+Fj\>/  | syntax match rarity_rare      /\<Fj-41\>/
-syntax match rarity_rare      /\<41\s\+19\s\+O\>/   | syntax match rarity_rare       /\<O-41\>/
-syntax match rarity_rare      /\<41\s\+20\s\+C\>/   | syntax match rarity_rare       /\<C-41\>/
-syntax match rarity_rare      /\<41\s\+21\s\+E\>/   | syntax match rarity_rare       /\<E-41\>/
-syntax match rarity_rare      /\<42\s\+19\s\+O\>/   | syntax match rarity_rare       /\<O-42\>/
-syntax match rarity_rare      /\<42\s\+20\s\+C\>/   | syntax match rarity_rare       /\<C-42\>/
-syntax match rarity_rare      /\<42\s\+21\s\+E\>/   | syntax match rarity_rare       /\<E-42\>/
-syntax match rarity_rare      /\<42\s\+22\s\+A\>/   | syntax match rarity_rare       /\<A-42\>/
-syntax match rarity_rare      /\<43\s\+19\s\+O\>/   | syntax match rarity_rare       /\<O-43\>/
-syntax match rarity_rare      /\<43\s\+20\s\+C\>/   | syntax match rarity_rare       /\<C-43\>/
-syntax match rarity_rare      /\<43\s\+21\s\+E\>/   | syntax match rarity_rare       /\<E-43\>/
-syntax match rarity_rare      /\<43\s\+22\s\+A\>/   | syntax match rarity_rare       /\<A-43\>/
-syntax match rarity_rare      /\<44\s\+20\s\+C\>/   | syntax match rarity_rare       /\<C-44\>/
-syntax match rarity_rare      /\<44\s\+21\s\+E\>/   | syntax match rarity_rare       /\<E-44\>/
-syntax match rarity_rare      /\<44\s\+22\s\+A\>/   | syntax match rarity_rare       /\<A-44\>/
-syntax match rarity_rare      /\<44\s\+23\s\+Aw\>/  | syntax match rarity_rare      /\<Aw-44\>/
-syntax match rarity_rare      /\<45\s\+20\s\+C\>/   | syntax match rarity_rare       /\<C-45\>/
-syntax match rarity_rare      /\<45\s\+21\s\+E\>/   | syntax match rarity_rare       /\<E-45\>/
-syntax match rarity_rare      /\<45\s\+22\s\+A\>/   | syntax match rarity_rare       /\<A-45\>/
-syntax match rarity_rare      /\<45\s\+23\s\+Aw\>/  | syntax match rarity_rare      /\<Aw-45\>/
-syntax match rarity_rare      /\<46\s\+21\s\+E\>/   | syntax match rarity_rare       /\<E-46\>/
-syntax match rarity_rare      /\<46\s\+22\s\+A\>/   | syntax match rarity_rare       /\<A-46\>/
-syntax match rarity_rare      /\<46\s\+23\s\+Aw\>/  | syntax match rarity_rare      /\<Aw-46\>/
-syntax match rarity_rare      /\<46\s\+24\s\+Oc\>/  | syntax match rarity_rare      /\<Oc-46\>/
-syntax match rarity_rare      /\<47\s\+21\s\+E\>/   | syntax match rarity_rare       /\<E-47\>/
-syntax match rarity_rare      /\<47\s\+22\s\+A\>/   | syntax match rarity_rare       /\<A-47\>/
-syntax match rarity_rare      /\<47\s\+23\s\+Aw\>/  | syntax match rarity_rare      /\<Aw-47\>/
-syntax match rarity_rare      /\<47\s\+24\s\+Oc\>/  | syntax match rarity_rare      /\<Oc-47\>/
-syntax match rarity_rare      /\<47\s\+25\s\+Nb\>/  | syntax match rarity_rare      /\<Nb-47\>/
-syntax match rarity_rare      /\<48\s\+21\s\+E\>/   | syntax match rarity_rare       /\<E-48\>/
-syntax match rarity_rare      /\<48\s\+22\s\+A\>/   | syntax match rarity_rare       /\<A-48\>/
-syntax match rarity_rare      /\<48\s\+23\s\+Aw\>/  | syntax match rarity_rare      /\<Aw-48\>/
-syntax match rarity_rare      /\<48\s\+24\s\+Oc\>/  | syntax match rarity_rare      /\<Oc-48\>/
-syntax match rarity_rare      /\<48\s\+25\s\+Nb\>/  | syntax match rarity_rare      /\<Nb-48\>/
-syntax match rarity_rare      /\<49\s\+22\s\+A\>/   | syntax match rarity_rare       /\<A-49\>/
-syntax match rarity_rare      /\<49\s\+23\s\+Aw\>/  | syntax match rarity_rare      /\<Aw-49\>/
-syntax match rarity_rare      /\<49\s\+24\s\+Oc\>/  | syntax match rarity_rare      /\<Oc-49\>/
-syntax match rarity_rare      /\<49\s\+25\s\+Nb\>/  | syntax match rarity_rare      /\<Nb-49\>/
-syntax match rarity_rare      /\<50\s\+22\s\+A\>/   | syntax match rarity_rare       /\<A-50\>/
-syntax match rarity_rare      /\<50\s\+24\s\+Oc\>/  | syntax match rarity_rare      /\<Oc-50\>/
-syntax match rarity_rare      /\<50\s\+25\s\+Nb\>/  | syntax match rarity_rare      /\<Nb-50\>/
-syntax match rarity_rare      /\<50\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-50\>/
-syntax match rarity_rare      /\<51\s\+23\s\+Aw\>/  | syntax match rarity_rare      /\<Aw-51\>/
-syntax match rarity_rare      /\<51\s\+24\s\+Oc\>/  | syntax match rarity_rare      /\<Oc-51\>/
-syntax match rarity_rare      /\<51\s\+25\s\+Nb\>/  | syntax match rarity_rare      /\<Nb-51\>/
-syntax match rarity_rare      /\<51\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-51\>/
-syntax match rarity_rare      /\<52\s\+24\s\+Oc\>/  | syntax match rarity_rare      /\<Oc-52\>/
-syntax match rarity_rare      /\<52\s\+25\s\+Nb\>/  | syntax match rarity_rare      /\<Nb-52\>/
-syntax match rarity_rare      /\<52\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-52\>/
-syntax match rarity_rare      /\<52\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-52\>/
-syntax match rarity_rare      /\<53\s\+24\s\+Oc\>/  | syntax match rarity_rare      /\<Oc-53\>/
-syntax match rarity_rare      /\<53\s\+25\s\+Nb\>/  | syntax match rarity_rare      /\<Nb-53\>/
-syntax match rarity_rare      /\<53\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-53\>/
-syntax match rarity_rare      /\<53\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-53\>/
-syntax match rarity_rare      /\<54\s\+24\s\+Oc\>/  | syntax match rarity_rare      /\<Oc-54\>/
-syntax match rarity_rare      /\<54\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-54\>/
-syntax match rarity_rare      /\<54\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-54\>/
-syntax match rarity_rare      /\<54\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-54\>/
-syntax match rarity_rare      /\<55\s\+25\s\+Nb\>/  | syntax match rarity_rare      /\<Nb-55\>/
-syntax match rarity_rare      /\<55\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-55\>/
-syntax match rarity_rare      /\<55\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-55\>/
-syntax match rarity_rare      /\<55\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-55\>/
-syntax match rarity_rare      /\<56\s\+25\s\+Nb\>/  | syntax match rarity_rare      /\<Nb-56\>/
-syntax match rarity_rare      /\<56\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-56\>/
-syntax match rarity_rare      /\<56\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-56\>/
-syntax match rarity_rare      /\<56\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-56\>/
-syntax match rarity_rare      /\<56\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-56\>/
-syntax match rarity_rare      /\<57\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-57\>/
-syntax match rarity_rare      /\<57\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-57\>/
-syntax match rarity_rare      /\<57\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-57\>/
-syntax match rarity_rare      /\<57\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-57\>/
-syntax match rarity_rare      /\<57\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-57\>/
-syntax match rarity_rare      /\<58\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-58\>/
-syntax match rarity_rare      /\<58\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-58\>/
-syntax match rarity_rare      /\<58\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-58\>/
-syntax match rarity_rare      /\<58\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-58\>/
-syntax match rarity_rare      /\<58\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-58\>/
-syntax match rarity_rare      /\<59\s\+26\s\+Xk\>/  | syntax match rarity_rare      /\<Xk-59\>/
-syntax match rarity_rare      /\<59\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-59\>/
-syntax match rarity_rare      /\<59\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-59\>/
-syntax match rarity_rare      /\<59\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-59\>/
-syntax match rarity_rare      /\<59\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-59\>/
-syntax match rarity_rare      /\<60\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-60\>/
-syntax match rarity_rare      /\<60\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-60\>/
-syntax match rarity_rare      /\<60\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-60\>/
-syntax match rarity_rare      /\<60\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-60\>/
-syntax match rarity_rare      /\<61\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-61\>/
-syntax match rarity_rare      /\<61\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-61\>/
-syntax match rarity_rare      /\<61\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-61\>/
-syntax match rarity_rare      /\<61\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-61\>/
-syntax match rarity_rare      /\<61\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-61\>/
-syntax match rarity_rare      /\<62\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-62\>/
-syntax match rarity_rare      /\<62\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-62\>/
-syntax match rarity_rare      /\<62\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-62\>/
-syntax match rarity_rare      /\<62\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-62\>/
-syntax match rarity_rare      /\<63\s\+28\s\+Yp\>/  | syntax match rarity_rare      /\<Yp-63\>/
-syntax match rarity_rare      /\<63\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-63\>/
-syntax match rarity_rare      /\<63\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-63\>/
-syntax match rarity_rare      /\<63\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-63\>/
-syntax match rarity_rare      /\<63\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-63\>/
-syntax match rarity_rare      /\<64\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-64\>/
-syntax match rarity_rare      /\<64\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-64\>/
-syntax match rarity_rare      /\<64\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-64\>/
-syntax match rarity_rare      /\<64\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-64\>/
-syntax match rarity_rare      /\<65\s\+29\s\+Jx\>/  | syntax match rarity_rare      /\<Jx-65\>/
-syntax match rarity_rare      /\<65\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-65\>/
-syntax match rarity_rare      /\<65\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-65\>/
-syntax match rarity_rare      /\<65\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-65\>/
-syntax match rarity_rare      /\<65\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-65\>/
-syntax match rarity_rare      /\<66\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-66\>/
-syntax match rarity_rare      /\<66\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-66\>/
-syntax match rarity_rare      /\<66\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-66\>/
-syntax match rarity_rare      /\<66\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-66\>/
-syntax match rarity_rare      /\<67\s\+30\s\+Hb\>/  | syntax match rarity_rare      /\<Hb-67\>/
-syntax match rarity_rare      /\<67\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-67\>/
-syntax match rarity_rare      /\<67\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-67\>/
-syntax match rarity_rare      /\<67\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-67\>/
-syntax match rarity_rare      /\<67\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-67\>/
-syntax match rarity_rare      /\<68\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-68\>/
-syntax match rarity_rare      /\<68\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-68\>/
-syntax match rarity_rare      /\<68\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-68\>/
-syntax match rarity_rare      /\<68\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-68\>/
-syntax match rarity_rare      /\<69\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-69\>/
-syntax match rarity_rare      /\<69\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-69\>/
-syntax match rarity_rare      /\<69\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-69\>/
-syntax match rarity_rare      /\<69\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-69\>/
-syntax match rarity_rare      /\<70\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-70\>/
-syntax match rarity_rare      /\<70\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-70\>/
-syntax match rarity_rare      /\<70\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-70\>/
-syntax match rarity_rare      /\<70\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-70\>/
-syntax match rarity_rare      /\<71\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-71\>/
-syntax match rarity_rare      /\<71\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-71\>/
-syntax match rarity_rare      /\<71\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-71\>/
-syntax match rarity_rare      /\<71\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-71\>/
-syntax match rarity_rare      /\<72\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-72\>/
-syntax match rarity_rare      /\<72\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-72\>/
-syntax match rarity_rare      /\<72\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-72\>/
-syntax match rarity_rare      /\<72\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-72\>/
-syntax match rarity_rare      /\<72\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-72\>/
-syntax match rarity_rare      /\<73\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-73\>/
-syntax match rarity_rare      /\<73\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-73\>/
-syntax match rarity_rare      /\<73\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-73\>/
-syntax match rarity_rare      /\<73\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-73\>/
-syntax match rarity_rare      /\<74\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-74\>/
-syntax match rarity_rare      /\<74\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-74\>/
-syntax match rarity_rare      /\<74\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-74\>/
-syntax match rarity_rare      /\<74\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-74\>/
-syntax match rarity_rare      /\<74\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-74\>/
-syntax match rarity_rare      /\<75\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-75\>/
-syntax match rarity_rare      /\<75\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-75\>/
-syntax match rarity_rare      /\<75\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-75\>/
-syntax match rarity_rare      /\<75\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-75\>/
-syntax match rarity_rare      /\<75\s\+38\s\+Bt\>/  | syntax match rarity_rare      /\<Bt-75\>/
-syntax match rarity_rare      /\<76\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-76\>/
-syntax match rarity_rare      /\<76\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-76\>/
-syntax match rarity_rare      /\<76\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-76\>/
-syntax match rarity_rare      /\<76\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-76\>/
-syntax match rarity_rare      /\<76\s\+38\s\+Bt\>/  | syntax match rarity_rare      /\<Bt-76\>/
-syntax match rarity_rare      /\<77\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-77\>/
-syntax match rarity_rare      /\<77\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-77\>/
-syntax match rarity_rare      /\<77\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-77\>/
-syntax match rarity_rare      /\<77\s\+38\s\+Bt\>/  | syntax match rarity_rare      /\<Bt-77\>/
-syntax match rarity_rare      /\<78\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-78\>/
-syntax match rarity_rare      /\<78\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-78\>/
-syntax match rarity_rare      /\<78\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-78\>/
-syntax match rarity_rare      /\<78\s\+38\s\+Bt\>/  | syntax match rarity_rare      /\<Bt-78\>/
-syntax match rarity_rare      /\<78\s\+39\s\+H\>/   | syntax match rarity_rare       /\<H-78\>/
-syntax match rarity_rare      /\<79\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-79\>/
-syntax match rarity_rare      /\<79\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-79\>/
-syntax match rarity_rare      /\<79\s\+38\s\+Bt\>/  | syntax match rarity_rare      /\<Bt-79\>/
-syntax match rarity_rare      /\<79\s\+39\s\+H\>/   | syntax match rarity_rare       /\<H-79\>/
-syntax match rarity_rare      /\<78\s\+40\s\+U\>/   | syntax match rarity_rare       /\<U-78\>/
-syntax match rarity_rare      /\<79\s\+40\s\+U\>/   | syntax match rarity_rare       /\<U-79\>/
-syntax match rarity_rare      /\<80\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-80\>/
-syntax match rarity_rare      /\<80\s\+38\s\+Bt\>/  | syntax match rarity_rare      /\<Bt-80\>/
-syntax match rarity_rare      /\<80\s\+39\s\+H\>/   | syntax match rarity_rare       /\<H-80\>/
-syntax match rarity_rare      /\<80\s\+40\s\+U\>/   | syntax match rarity_rare       /\<U-80\>/
-syntax match rarity_rare      /\<80\s\+41\s\+Sq\>/  | syntax match rarity_rare      /\<Sq-80\>/
-syntax match rarity_rare      /\<81\s\+38\s\+Bt\>/  | syntax match rarity_rare      /\<Bt-81\>/
-syntax match rarity_rare      /\<81\s\+39\s\+H\>/   | syntax match rarity_rare       /\<H-81\>/
-syntax match rarity_rare      /\<81\s\+40\s\+U\>/   | syntax match rarity_rare       /\<U-81\>/
-syntax match rarity_rare      /\<81\s\+41\s\+Sq\>/  | syntax match rarity_rare      /\<Sq-81\>/
-syntax match rarity_rare      /\<82\s\+39\s\+H\>/   | syntax match rarity_rare       /\<H-82\>/
-syntax match rarity_rare      /\<82\s\+40\s\+U\>/   | syntax match rarity_rare       /\<U-82\>/
-syntax match rarity_rare      /\<82\s\+41\s\+Sq\>/  | syntax match rarity_rare      /\<Sq-82\>/
-syntax match rarity_rare      /\<83\s\+40\s\+U\>/   | syntax match rarity_rare       /\<U-83\>/
-syntax match rarity_rare      /\<83\s\+41\s\+Sq\>/  | syntax match rarity_rare      /\<Sq-83\>/
-syntax match rarity_rare      /\<83\s\+42\s\+Ua\>/  | syntax match rarity_rare      /\<Ua-83\>/
-syntax match rarity_rare      /\<84\s\+41\s\+Sq\>/  | syntax match rarity_rare      /\<Sq-84\>/
-syntax match rarity_rare      /\<84\s\+42\s\+Ua\>/  | syntax match rarity_rare      /\<Ua-84\>/
-syntax match rarity_rare      /\<85\s\+42\s\+Ua\>/  | syntax match rarity_rare      /\<Ua-85\>/
-syntax match rarity_rare      /\<30\s\+13\s\+S\>/   | syntax match rarity_rare       /\<S-30\>/
-syntax match rarity_rare      /\<26\s\+11\s\+Fw\>/  | syntax match rarity_rare      /\<Fw-26\>/
-syntax match rarity_rare      /\<19\s\+8\s\+Dx\>/   | syntax match rarity_rare      /\<Dx-19\>/
-syntax match rarity_rare      /\<22\s\+12\s\+Pt\>/  | syntax match rarity_rare      /\<Pt-22\>/
-syntax match rarity_rare      /\<28\s\+15\s\+Xc\>/  | syntax match rarity_rare      /\<Xc-28\>/
-syntax match rarity_rare      /\<51\s\+27\s\+Ic\>/  | syntax match rarity_rare      /\<Ic-51\>/
-syntax match rarity_rare      /\<52\s\+23\s\+Aw\>/  | syntax match rarity_rare      /\<Aw-52\>/
-syntax match rarity_rare      /\<28\s\+12\s\+Pt\>/  | syntax match rarity_rare      /\<Pt-28\>/
-syntax match rarity_rare      /\<26\s\+14\s\+Zq\>/  | syntax match rarity_rare      /\<Zq-26\>/
-syntax match rarity_rare      /\<68\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-68\>/
-syntax match rarity_rare      /\<69\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-69\>/
-syntax match rarity_rare      /\<71\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-71\>/
-syntax match rarity_rare      /\<67\s\+35\s\+Qi\>/  | syntax match rarity_rare      /\<Qi-67\>/
-syntax match rarity_rare      /\<66\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-66\>/
-syntax match rarity_rare      /\<64\s\+33\s\+Pw\>/  | syntax match rarity_rare      /\<Pw-64\>/
-syntax match rarity_rare      /\<62\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-62\>/
-syntax match rarity_rare      /\<36\s\+19\s\+O\>/   | syntax match rarity_rare       /\<O-36\>/
-syntax match rarity_rare      /\<70\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-70\>/
-syntax match rarity_rare      /\<72\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-72\>/
-syntax match rarity_rare      /\<73\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-73\>/
-syntax match rarity_rare      /\<74\s\+38\s\+Bt\>/  | syntax match rarity_rare      /\<Bt-74\>/
-syntax match rarity_rare      /\<76\s\+39\s\+H\>/   | syntax match rarity_rare       /\<H-76\>/
-syntax match rarity_rare      /\<77\s\+39\s\+H\>/   | syntax match rarity_rare       /\<H-77\>/
-syntax match rarity_rare      /\<83\s\+40\s\+U\>/   | syntax match rarity_rare       /\<U-83\>/
-syntax match rarity_rare      /\<79\s\+41\s\+Sq\>/  | syntax match rarity_rare      /\<Sq-79\>/
-syntax match rarity_rare      /\<60\s\+31\s\+At\>/  | syntax match rarity_rare      /\<At-60\>/
-syntax match rarity_rare      /\<61\s\+32\s\+Ny\>/  | syntax match rarity_rare      /\<Ny-61\>/
-syntax match rarity_rare      /\<73\s\+38\s\+Bt\>/  | syntax match rarity_rare      /\<Bt-73\>/
-syntax match rarity_rare      /\<75\s\+39\s\+H\>/   | syntax match rarity_rare       /\<H-75\>/
-syntax match rarity_rare      /\<69\s\+36\s\+Xy\>/  | syntax match rarity_rare      /\<Xy-69\>/
-syntax match rarity_rare      /\<12\s\+5\s\+Xl\>/   | syntax match rarity_rare      /\<Xl-12\>/
-syntax match rarity_rare      /\<10\s\+4\s\+Af\>/   | syntax match rarity_rare      /\<Af-10\>/
-syntax match rarity_rare      /\<14\s\+8\s\+Dx\>/   | syntax match rarity_rare      /\<Dx-14\>/
-syntax match rarity_rare      /\<65\s\+34\s\+Gk\>/  | syntax match rarity_rare      /\<Gk-65\>/
-syntax match rarity_rare      /\<24\s\+13\s\+S\>/   | syntax match rarity_rare       /\<S-24\>/
-syntax match rarity_rare      /\<30\s\+16\s\+Gy\>/  | syntax match rarity_rare      /\<Gy-30\>/
-syntax match rarity_rare      /\<71\s\+37\s\+Gq\>/  | syntax match rarity_rare      /\<Gq-71\>/
+
+let decaytextchar = {}
+
+let decaytextchar[decay_text_alpha      ]='ª' " insert <C-k>-a   alpha  
+let decaytextchar[decay_text_beta_plus  ]='⁺' " insert <C-k>+S   beta+  
+let decaytextchar[decay_text_beta_minus ]='⁻' " insert <C-k>-S   beta-  
+let decaytextchar[decay_text_stable     ]='∙' " insert <C-k>Sb   stable 
+let decaytextchar[decay_text_proton     ]='Þ' " insert <C-k>Ip   proton 
+let decaytextchar[decay_text_neutron    ]='⊙' " insert <C-k>0.   neutron
+let decaytextchar[decay_text_fission    ]='Φ' " insert <C-k>F*   fission
+
+syn match decaycharmatch_alpha      /ª/
+syn match decaycharmatch_beta_plus  /⁺/
+syn match decaycharmatch_beta_minus /⁻/
+syn match decaycharmatch_stable     /∙/
+syn match decaycharmatch_proton     /Þ/
+syn match decaycharmatch_neutron    /⊙/
+syn match decaycharmatch_fission    /Φ/
+
+hi decaycharmatch_alpha       cterm=bold gui=inverse guibg=lightmagenta ctermbg=lightmagenta
+hi decaycharmatch_beta_plus   cterm=bold gui=inverse guibg=green        ctermbg=green
+hi decaycharmatch_beta_minus  cterm=bold gui=inverse guibg=cyan         ctermbg=cyan
+hi decaycharmatch_stable      cterm=bold gui=inverse guibg=lightgrey    ctermbg=lightgrey
+hi decaycharmatch_proton      cterm=bold gui=inverse guibg=lightyellow  ctermbg=lightyellow
+hi decaycharmatch_neutron     cterm=bold gui=inverse guibg=purple       ctermbg=lightmagenta
+hi decaycharmatch_fission     cterm=bold gui=inverse guibg=lightgreen   ctermbg=lightgreen
+
+" I want to be able to see both the rarity coloring and some way to indicate decay types simultaneously but this isn't working
+
+"hi Decay_type_alpha        guibg=lightmagenta ctermbg=lightmagenta
+"hi Decay_type_beta_plus    guibg=green   ctermbg=green
+"hi Decay_type_beta_minus   guibg=cyan    ctermbg=cyan
+"hi Decay_type_stable       guibg=yellow  ctermbg=yellow
+
+hi Decay_type_alpha        cterm=NONE gui=inverse guibg=lightmagenta ctermbg=lightmagenta
+hi Decay_type_beta_plus    cterm=NONE gui=inverse guibg=green        ctermbg=green
+hi Decay_type_beta_minus   cterm=NONE gui=inverse guibg=cyan         ctermbg=cyan
+hi Decay_type_stable       cterm=NONE gui=inverse guibg=lightgrey    ctermbg=lightgrey
+
+"
+" I often put stability values after an isotope.
+" This colors 0.77 and below as unstable, meaning likely to add/subtract a proton in a reaction
+"
+syn match StabilityUnstable /(0\.[0-6]\d\+)/   "0.000 - 0.699
+syn match StabilityUnstable /(0\.7[0-7]\d\+)/  "0.700 - 0.779
+syn match StabilityStable   /(0\.7[89]\d\+)/   "0.780 - 0.799
+syn match StabilityStable   /(0\.[89]\d\+)/    "0.800 - 0.999
+syn match StabilityStable   /(1\.\d\+)/        "0.800 - 0.999
+
+hi StabilityUnstable guifg=darkgreen ctermfg=darkgreen   guibg=NONE ctermbg=NONE
+hi StabilityStable   guifg=red       ctermfg=red         guibg=NONE ctermbg=NONE
+
 
 hi rarity_common     guibg=green        ctermbg=green          guifg=black   ctermfg=black
 hi rarity_uncommon   guibg=cyan         ctermbg=cyan           guifg=black   ctermfg=black
 hi rarity_rare       guibg=lightmagenta ctermbg=lightmagenta   guifg=black   ctermfg=black
-
-
-else
-
-" Decay type alpha
-syntax match Decay_type_alpha      /\<1\s\+1\s\+Ju\>/   | syntax match Decay_type_alpha      /\<Ju-1\>/ 
-syntax match Decay_type_alpha      /\<7\s\+4\s\+Af\>/   | syntax match Decay_type_alpha      /\<Af-7\>/
-syntax match Decay_type_alpha      /\<10\s\+5\s\+Xl\>/  | syntax match Decay_type_alpha      /\<Xl-10\>/
-syntax match Decay_type_alpha      /\<12\s\+6\s\+Pq\>/  | syntax match Decay_type_alpha      /\<Pq-12\>/
-syntax match Decay_type_alpha      /\<14\s\+7\s\+Zz\>/  | syntax match Decay_type_alpha      /\<Zz-14\>/
-syntax match Decay_type_alpha      /\<25\s\+12\s\+Pt\>/ | syntax match Decay_type_alpha      /\<Pt-25\>/
-syntax match Decay_type_alpha      /\<26\s\+13\s\+S\>/  | syntax match Decay_type_alpha       /\<S-26\>/
-syntax match Decay_type_alpha      /\<27\s\+13\s\+S\>/  | syntax match Decay_type_alpha       /\<S-27\>/
-syntax match Decay_type_alpha      /\<35\s\+17\s\+D\>/  | syntax match Decay_type_alpha       /\<D-35\>/
-syntax match Decay_type_alpha      /\<36\s\+17\s\+D\>/  | syntax match Decay_type_alpha       /\<D-36\>/
-syntax match Decay_type_alpha      /\<36\s\+18\s\+Fj\>/ | syntax match Decay_type_alpha      /\<Fj-36\>/
-syntax match Decay_type_alpha      /\<37\s\+18\s\+Fj\>/ | syntax match Decay_type_alpha      /\<Fj-37\>/
-syntax match Decay_type_alpha      /\<37\s\+19\s\+O\>/  | syntax match Decay_type_alpha       /\<O-37\>/
-syntax match Decay_type_alpha      /\<38\s\+18\s\+Fj\>/ | syntax match Decay_type_alpha      /\<Fj-38\>/
-syntax match Decay_type_alpha      /\<38\s\+19\s\+O\>/  | syntax match Decay_type_alpha       /\<O-38\>/
-syntax match Decay_type_alpha      /\<39\s\+18\s\+Fj\>/ | syntax match Decay_type_alpha      /\<Fj-39\>/
-syntax match Decay_type_alpha      /\<39\s\+19\s\+O\>/  | syntax match Decay_type_alpha       /\<O-39\>/
-syntax match Decay_type_alpha      /\<40\s\+19\s\+O\>/  | syntax match Decay_type_alpha       /\<O-40\>/
-syntax match Decay_type_alpha      /\<48\s\+23\s\+Aw\>/ | syntax match Decay_type_alpha      /\<Aw-48\>/
-syntax match Decay_type_alpha      /\<49\s\+24\s\+Oc\>/ | syntax match Decay_type_alpha      /\<Oc-49\>/
-syntax match Decay_type_alpha      /\<49\s\+25\s\+Nb\>/ | syntax match Decay_type_alpha      /\<Nb-49\>/
-syntax match Decay_type_alpha      /\<50\s\+25\s\+Nb\>/ | syntax match Decay_type_alpha      /\<Nb-50\>/
-syntax match Decay_type_alpha      /\<51\s\+25\s\+Nb\>/ | syntax match Decay_type_alpha      /\<Nb-51\>/
-syntax match Decay_type_alpha      /\<51\s\+26\s\+Xk\>/ | syntax match Decay_type_alpha      /\<Xk-51\>/
-syntax match Decay_type_alpha      /\<54\s\+25\s\+Nb\>/ | syntax match Decay_type_alpha      /\<Nb-54\>/
-syntax match Decay_type_alpha      /\<58\s\+28\s\+Yp\>/ | syntax match Decay_type_alpha      /\<Yp-58\>/
-syntax match Decay_type_alpha      /\<59\s\+29\s\+Jx\>/ | syntax match Decay_type_alpha      /\<Jx-59\>/
-syntax match Decay_type_alpha      /\<60\s\+29\s\+Jx\>/ | syntax match Decay_type_alpha      /\<Jx-60\>/
-syntax match Decay_type_alpha      /\<61\s\+29\s\+Jx\>/ | syntax match Decay_type_alpha      /\<Jx-61\>/
-syntax match Decay_type_alpha      /\<62\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-62\>/
-syntax match Decay_type_alpha      /\<62\s\+29\s\+Jx\>/ | syntax match Decay_type_alpha      /\<Jx-62\>/
-syntax match Decay_type_alpha      /\<62\s\+31\s\+At\>/ | syntax match Decay_type_alpha      /\<At-62\>/
-syntax match Decay_type_alpha      /\<64\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-64\>/
-syntax match Decay_type_alpha      /\<64\s\+31\s\+At\>/ | syntax match Decay_type_alpha      /\<At-64\>/
-syntax match Decay_type_alpha      /\<65\s\+31\s\+At\>/ | syntax match Decay_type_alpha      /\<At-65\>/
-syntax match Decay_type_alpha      /\<66\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-66\>/
-syntax match Decay_type_alpha      /\<66\s\+31\s\+At\>/ | syntax match Decay_type_alpha      /\<At-66\>/
-syntax match Decay_type_alpha      /\<67\s\+33\s\+Pw\>/ | syntax match Decay_type_alpha      /\<Pw-67\>/
-syntax match Decay_type_alpha      /\<67\s\+31\s\+At\>/ | syntax match Decay_type_alpha      /\<At-67\>/
-syntax match Decay_type_alpha      /\<67\s\+32\s\+Ny\>/ | syntax match Decay_type_alpha      /\<Ny-67\>/
-syntax match Decay_type_alpha      /\<68\s\+32\s\+Ny\>/ | syntax match Decay_type_alpha      /\<Ny-68\>/
-syntax match Decay_type_alpha      /\<68\s\+33\s\+Pw\>/ | syntax match Decay_type_alpha      /\<Pw-68\>/
-syntax match Decay_type_alpha      /\<69\s\+34\s\+Gk\>/ | syntax match Decay_type_alpha      /\<Gk-69\>/
-syntax match Decay_type_alpha      /\<69\s\+32\s\+Ny\>/ | syntax match Decay_type_alpha      /\<Ny-69\>/
-syntax match Decay_type_alpha      /\<69\s\+33\s\+Pw\>/ | syntax match Decay_type_alpha      /\<Pw-69\>/
-syntax match Decay_type_alpha      /\<70\s\+33\s\+Pw\>/ | syntax match Decay_type_alpha      /\<Pw-70\>/
-syntax match Decay_type_alpha      /\<71\s\+34\s\+Gk\>/ | syntax match Decay_type_alpha      /\<Gk-71\>/
-syntax match Decay_type_alpha      /\<74\s\+35\s\+Qi\>/ | syntax match Decay_type_alpha      /\<Qi-74\>/
-syntax match Decay_type_alpha      /\<58\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-58\>/
-syntax match Decay_type_alpha      /\<59\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-59\>/
-syntax match Decay_type_alpha      /\<67\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-67\>/
-syntax match Decay_type_alpha      /\<61\s\+31\s\+At\>/ | syntax match Decay_type_alpha      /\<At-61\>/
-syntax match Decay_type_alpha      /\<65\s\+32\s\+Ny\>/ | syntax match Decay_type_alpha      /\<Ny-65\>/
-syntax match Decay_type_alpha      /\<66\s\+32\s\+Ny\>/ | syntax match Decay_type_alpha      /\<Ny-66\>/
-syntax match Decay_type_alpha      /\<70\s\+34\s\+Gk\>/ | syntax match Decay_type_alpha      /\<Gk-70\>/
-syntax match Decay_type_alpha      /\<72\s\+35\s\+Qi\>/ | syntax match Decay_type_alpha      /\<Qi-72\>/
-syntax match Decay_type_alpha      /\<73\s\+35\s\+Qi\>/ | syntax match Decay_type_alpha      /\<Qi-73\>/
-syntax match Decay_type_alpha      /\<61\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-61\>/
-syntax match Decay_type_alpha      /\<63\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-63\>/
-syntax match Decay_type_alpha      /\<60\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-60\>/
-syntax match Decay_type_alpha      /\<65\s\+30\s\+Hb\>/ | syntax match Decay_type_alpha      /\<Hb-65\>/
-syntax match Decay_type_alpha      /\<63\s\+31\s\+At\>/ | syntax match Decay_type_alpha      /\<At-63\>/
-syntax match Decay_type_alpha      /\<62\s\+32\s\+Ny\>/ | syntax match Decay_type_alpha      /\<Ny-62\>/
-
-" Decay type beta+
-syntax match Decay_type_beta_plus  /\<5\s\+3\s\+Cq\>/   | syntax match Decay_type_beta_plus  /\<Cq-5\>/
-syntax match Decay_type_beta_plus  /\<9\s\+5\s\+Xl\>/   | syntax match Decay_type_beta_plus  /\<Xl-9\>/
-syntax match Decay_type_beta_plus  /\<10\s\+6\s\+Pq\>/  | syntax match Decay_type_beta_plus  /\<Pq-10\>/
-syntax match Decay_type_beta_plus  /\<11\s\+6\s\+Pq\>/  | syntax match Decay_type_beta_plus  /\<Pq-11\>/
-syntax match Decay_type_beta_plus  /\<13\s\+7\s\+Zz\>/  | syntax match Decay_type_beta_plus  /\<Zz-13\>/
-syntax match Decay_type_beta_plus  /\<15\s\+8\s\+Dx\>/  | syntax match Decay_type_beta_plus  /\<Dx-15\>/
-syntax match Decay_type_beta_plus  /\<17\s\+9\s\+Pm\>/  | syntax match Decay_type_beta_plus  /\<Pm-17\>/
-syntax match Decay_type_beta_plus  /\<18\s\+9\s\+Pm\>/  | syntax match Decay_type_beta_plus  /\<Pm-18\>/
-syntax match Decay_type_beta_plus  /\<19\s\+10\s\+M\>/  | syntax match Decay_type_beta_plus   /\<M-19\>/
-syntax match Decay_type_beta_plus  /\<21\s\+11\s\+Fw\>/ | syntax match Decay_type_beta_plus  /\<Fw-21\>/
-syntax match Decay_type_beta_plus  /\<22\s\+11\s\+Fw\>/ | syntax match Decay_type_beta_plus  /\<Fw-22\>/
-syntax match Decay_type_beta_plus  /\<25\s\+13\s\+S\>/  | syntax match Decay_type_beta_plus   /\<S-25\>/
-syntax match Decay_type_beta_plus  /\<27\s\+14\s\+Zq\>/ | syntax match Decay_type_beta_plus  /\<Zq-27\>/
-syntax match Decay_type_beta_plus  /\<28\s\+14\s\+Zq\>/ | syntax match Decay_type_beta_plus  /\<Zq-28\>/
-syntax match Decay_type_beta_plus  /\<29\s\+15\s\+Xc\>/ | syntax match Decay_type_beta_plus  /\<Xc-29\>/
-syntax match Decay_type_beta_plus  /\<31\s\+16\s\+Gy\>/ | syntax match Decay_type_beta_plus  /\<Gy-31\>/
-syntax match Decay_type_beta_plus  /\<32\s\+16\s\+Gy\>/ | syntax match Decay_type_beta_plus  /\<Gy-32\>/
-syntax match Decay_type_beta_plus  /\<32\s\+17\s\+D\>/  | syntax match Decay_type_beta_plus   /\<D-32\>/
-syntax match Decay_type_beta_plus  /\<33\s\+17\s\+D\>/  | syntax match Decay_type_beta_plus   /\<D-33\>/
-syntax match Decay_type_beta_plus  /\<34\s\+17\s\+D\>/  | syntax match Decay_type_beta_plus   /\<D-34\>/
-syntax match Decay_type_beta_plus  /\<35\s\+18\s\+Fj\>/ | syntax match Decay_type_beta_plus  /\<Fj-35\>/
-syntax match Decay_type_beta_plus  /\<38\s\+20\s\+C\>/  | syntax match Decay_type_beta_plus   /\<C-38\>/
-syntax match Decay_type_beta_plus  /\<39\s\+20\s\+C\>/  | syntax match Decay_type_beta_plus   /\<C-39\>/
-syntax match Decay_type_beta_plus  /\<40\s\+20\s\+C\>/  | syntax match Decay_type_beta_plus   /\<C-40\>/
-syntax match Decay_type_beta_plus  /\<40\s\+21\s\+E\>/  | syntax match Decay_type_beta_plus   /\<E-40\>/
-syntax match Decay_type_beta_plus  /\<41\s\+20\s\+C\>/  | syntax match Decay_type_beta_plus   /\<C-41\>/
-syntax match Decay_type_beta_plus  /\<41\s\+21\s\+E\>/  | syntax match Decay_type_beta_plus   /\<E-41\>/
-syntax match Decay_type_beta_plus  /\<42\s\+21\s\+E\>/  | syntax match Decay_type_beta_plus   /\<E-42\>/
-syntax match Decay_type_beta_plus  /\<42\s\+22\s\+A\>/  | syntax match Decay_type_beta_plus   /\<A-42\>/
-syntax match Decay_type_beta_plus  /\<43\s\+22\s\+A\>/  | syntax match Decay_type_beta_plus   /\<A-43\>/
-syntax match Decay_type_beta_plus  /\<44\s\+23\s\+Aw\>/ | syntax match Decay_type_beta_plus  /\<Aw-44\>/
-syntax match Decay_type_beta_plus  /\<45\s\+23\s\+Aw\>/ | syntax match Decay_type_beta_plus  /\<Aw-45\>/
-syntax match Decay_type_beta_plus  /\<46\s\+23\s\+Aw\>/ | syntax match Decay_type_beta_plus  /\<Aw-46\>/
-syntax match Decay_type_beta_plus  /\<46\s\+24\s\+Oc\>/ | syntax match Decay_type_beta_plus  /\<Oc-46\>/
-syntax match Decay_type_beta_plus  /\<47\s\+23\s\+Aw\>/ | syntax match Decay_type_beta_plus  /\<Aw-47\>/
-syntax match Decay_type_beta_plus  /\<47\s\+24\s\+Oc\>/ | syntax match Decay_type_beta_plus  /\<Oc-47\>/
-syntax match Decay_type_beta_plus  /\<47\s\+25\s\+Nb\>/ | syntax match Decay_type_beta_plus  /\<Nb-47\>/
-syntax match Decay_type_beta_plus  /\<48\s\+24\s\+Oc\>/ | syntax match Decay_type_beta_plus  /\<Oc-48\>/
-syntax match Decay_type_beta_plus  /\<48\s\+25\s\+Nb\>/ | syntax match Decay_type_beta_plus  /\<Nb-48\>/
-syntax match Decay_type_beta_plus  /\<50\s\+26\s\+Xk\>/ | syntax match Decay_type_beta_plus  /\<Xk-50\>/
-syntax match Decay_type_beta_plus  /\<52\s\+26\s\+Xk\>/ | syntax match Decay_type_beta_plus  /\<Xk-52\>/
-syntax match Decay_type_beta_plus  /\<52\s\+27\s\+Ic\>/ | syntax match Decay_type_beta_plus  /\<Ic-52\>/
-syntax match Decay_type_beta_plus  /\<53\s\+27\s\+Ic\>/ | syntax match Decay_type_beta_plus  /\<Ic-53\>/
-syntax match Decay_type_beta_plus  /\<54\s\+28\s\+Yp\>/ | syntax match Decay_type_beta_plus  /\<Yp-54\>/
-syntax match Decay_type_beta_plus  /\<55\s\+28\s\+Yp\>/ | syntax match Decay_type_beta_plus  /\<Yp-55\>/
-syntax match Decay_type_beta_plus  /\<56\s\+28\s\+Yp\>/ | syntax match Decay_type_beta_plus  /\<Yp-56\>/
-syntax match Decay_type_beta_plus  /\<56\s\+29\s\+Jx\>/ | syntax match Decay_type_beta_plus  /\<Jx-56\>/
-syntax match Decay_type_beta_plus  /\<57\s\+28\s\+Yp\>/ | syntax match Decay_type_beta_plus  /\<Yp-57\>/
-syntax match Decay_type_beta_plus  /\<57\s\+29\s\+Jx\>/ | syntax match Decay_type_beta_plus  /\<Jx-57\>/
-syntax match Decay_type_beta_plus  /\<57\s\+30\s\+Hb\>/ | syntax match Decay_type_beta_plus  /\<Hb-57\>/
-syntax match Decay_type_beta_plus  /\<58\s\+29\s\+Jx\>/ | syntax match Decay_type_beta_plus  /\<Jx-58\>/
-syntax match Decay_type_beta_plus  /\<59\s\+28\s\+Yp\>/ | syntax match Decay_type_beta_plus  /\<Yp-59\>/
-syntax match Decay_type_beta_plus  /\<63\s\+32\s\+Ny\>/ | syntax match Decay_type_beta_plus  /\<Ny-63\>/
-syntax match Decay_type_beta_plus  /\<64\s\+32\s\+Ny\>/ | syntax match Decay_type_beta_plus  /\<Ny-64\>/
-syntax match Decay_type_beta_plus  /\<65\s\+33\s\+Pw\>/ | syntax match Decay_type_beta_plus  /\<Pw-65\>/
-syntax match Decay_type_beta_plus  /\<66\s\+33\s\+Pw\>/ | syntax match Decay_type_beta_plus  /\<Pw-66\>/
-syntax match Decay_type_beta_plus  /\<67\s\+34\s\+Gk\>/ | syntax match Decay_type_beta_plus  /\<Gk-67\>/
-syntax match Decay_type_beta_plus  /\<68\s\+34\s\+Gk\>/ | syntax match Decay_type_beta_plus  /\<Gk-68\>/
-syntax match Decay_type_beta_plus  /\<70\s\+35\s\+Qi\>/ | syntax match Decay_type_beta_plus  /\<Qi-70\>/
-syntax match Decay_type_beta_plus  /\<71\s\+35\s\+Qi\>/ | syntax match Decay_type_beta_plus  /\<Qi-71\>/
-syntax match Decay_type_beta_plus  /\<72\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_plus  /\<Xy-72\>/
-syntax match Decay_type_beta_plus  /\<74\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_plus  /\<Xy-74\>/
-syntax match Decay_type_beta_plus  /\<74\s\+37\s\+Gq\>/ | syntax match Decay_type_beta_plus  /\<Gq-74\>/
-syntax match Decay_type_beta_plus  /\<75\s\+35\s\+Qi\>/ | syntax match Decay_type_beta_plus  /\<Qi-75\>/
-syntax match Decay_type_beta_plus  /\<75\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_plus  /\<Xy-75\>/
-syntax match Decay_type_beta_plus  /\<75\s\+38\s\+Bt\>/ | syntax match Decay_type_beta_plus  /\<Bt-75\>/
-syntax match Decay_type_beta_plus  /\<75\s\+37\s\+Gq\>/ | syntax match Decay_type_beta_plus  /\<Gq-75\>/
-syntax match Decay_type_beta_plus  /\<76\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_plus  /\<Xy-76\>/
-syntax match Decay_type_beta_plus  /\<76\s\+37\s\+Gq\>/ | syntax match Decay_type_beta_plus  /\<Gq-76\>/
-syntax match Decay_type_beta_plus  /\<77\s\+37\s\+Gq\>/ | syntax match Decay_type_beta_plus  /\<Gq-77\>/
-syntax match Decay_type_beta_plus  /\<78\s\+39\s\+H\>/  | syntax match Decay_type_beta_plus   /\<H-78\>/
-syntax match Decay_type_beta_plus  /\<83\s\+42\s\+Ua\>/ | syntax match Decay_type_beta_plus  /\<Ua-83\>/
-syntax match Decay_type_beta_plus  /\<83\s\+41\s\+Sq\>/ | syntax match Decay_type_beta_plus  /\<Sq-83\>/
-syntax match Decay_type_beta_plus  /\<84\s\+42\s\+Ua\>/ | syntax match Decay_type_beta_plus  /\<Ua-84\>/
-syntax match Decay_type_beta_plus  /\<85\s\+42\s\+Ua\>/ | syntax match Decay_type_beta_plus  /\<Ua-85\>/
-syntax match Decay_type_beta_plus  /\<73\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_plus  /\<Xy-73\>/
-syntax match Decay_type_beta_plus  /\<79\s\+39\s\+H\>/  | syntax match Decay_type_beta_plus   /\<H-79\>/
-syntax match Decay_type_beta_plus  /\<76\s\+38\s\+Bt\>/ | syntax match Decay_type_beta_plus  /\<Bt-76\>/
-syntax match Decay_type_beta_plus  /\<77\s\+38\s\+Bt\>/ | syntax match Decay_type_beta_plus  /\<Bt-77\>/
-syntax match Decay_type_beta_plus  /\<78\s\+38\s\+Bt\>/ | syntax match Decay_type_beta_plus  /\<Bt-78\>/
-syntax match Decay_type_beta_plus  /\<81\s\+39\s\+H\>/  | syntax match Decay_type_beta_plus   /\<H-81\>/
-syntax match Decay_type_beta_plus  /\<22\s\+12\s\+Pt\>/ | syntax match Decay_type_beta_plus  /\<Pt-22\>/
-syntax match Decay_type_beta_plus  /\<28\s\+15\s\+Xc\>/ | syntax match Decay_type_beta_plus  /\<Xc-28\>/
-syntax match Decay_type_beta_plus  /\<51\s\+27\s\+Ic\>/ | syntax match Decay_type_beta_plus  /\<Ic-51\>/
-syntax match Decay_type_beta_plus  /\<26\s\+14\s\+Zq\>/ | syntax match Decay_type_beta_plus  /\<Zq-26\>/
-syntax match Decay_type_beta_plus  /\<69\s\+35\s\+Qi\>/ | syntax match Decay_type_beta_plus  /\<Qi-69\>/
-syntax match Decay_type_beta_plus  /\<68\s\+35\s\+Qi\>/ | syntax match Decay_type_beta_plus  /\<Qi-68\>/
-syntax match Decay_type_beta_plus  /\<71\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_plus  /\<Xy-71\>/
-syntax match Decay_type_beta_plus  /\<67\s\+35\s\+Qi\>/ | syntax match Decay_type_beta_plus  /\<Qi-67\>/
-syntax match Decay_type_beta_plus  /\<66\s\+34\s\+Gk\>/ | syntax match Decay_type_beta_plus  /\<Gk-66\>/
-syntax match Decay_type_beta_plus  /\<64\s\+33\s\+Pw\>/ | syntax match Decay_type_beta_plus  /\<Pw-64\>/
-syntax match Decay_type_beta_plus  /\<36\s\+19\s\+O\>/  | syntax match Decay_type_beta_plus   /\<O-36\>/
-syntax match Decay_type_beta_plus  /\<70\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_plus  /\<Xy-70\>/
-syntax match Decay_type_beta_plus  /\<72\s\+37\s\+Gq\>/ | syntax match Decay_type_beta_plus  /\<Gq-72\>/
-syntax match Decay_type_beta_plus  /\<73\s\+37\s\+Gq\>/ | syntax match Decay_type_beta_plus  /\<Gq-73\>/
-syntax match Decay_type_beta_plus  /\<74\s\+38\s\+Bt\>/ | syntax match Decay_type_beta_plus  /\<Bt-74\>/
-syntax match Decay_type_beta_plus  /\<76\s\+39\s\+H\>/  | syntax match Decay_type_beta_plus   /\<H-76\>/
-syntax match Decay_type_beta_plus  /\<77\s\+39\s\+H\>/  | syntax match Decay_type_beta_plus   /\<H-77\>/
-syntax match Decay_type_beta_plus  /\<23\s\+12\s\+Pt\>/ | syntax match Decay_type_beta_plus  /\<Pt-23\>/
-syntax match Decay_type_beta_plus  /\<78\s\+40\s\+U\>/  | syntax match Decay_type_beta_plus   /\<U-78\>/
-syntax match Decay_type_beta_plus  /\<79\s\+40\s\+U\>/  | syntax match Decay_type_beta_plus   /\<U-79\>/
-syntax match Decay_type_beta_plus  /\<79\s\+41\s\+Sq\>/ | syntax match Decay_type_beta_plus  /\<Sq-79\>/
-syntax match Decay_type_beta_plus  /\<60\s\+31\s\+At\>/ | syntax match Decay_type_beta_plus  /\<At-60\>/
-syntax match Decay_type_beta_plus  /\<61\s\+32\s\+Ny\>/ | syntax match Decay_type_beta_plus  /\<Ny-61\>/
-syntax match Decay_type_beta_plus  /\<73\s\+38\s\+Bt\>/ | syntax match Decay_type_beta_plus  /\<Bt-73\>/
-syntax match Decay_type_beta_plus  /\<75\s\+39\s\+H\>/  | syntax match Decay_type_beta_plus   /\<H-75\>/
-syntax match Decay_type_beta_plus  /\<69\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_plus  /\<Xy-69\>/
-syntax match Decay_type_beta_plus  /\<14\s\+8\s\+Dx\>/  | syntax match Decay_type_beta_plus  /\<Dx-14\>/
-syntax match Decay_type_beta_plus  /\<65\s\+34\s\+Gk\>/ | syntax match Decay_type_beta_plus  /\<Gk-65\>/
-syntax match Decay_type_beta_plus  /\<24\s\+13\s\+S\>/  | syntax match Decay_type_beta_plus   /\<S-24\>/
-syntax match Decay_type_beta_plus  /\<30\s\+16\s\+Gy\>/ | syntax match Decay_type_beta_plus  /\<Gy-30\>/
-syntax match Decay_type_beta_plus  /\<71\s\+37\s\+Gq\>/ | syntax match Decay_type_beta_plus  /\<Gq-71\>/
-
-
-" Decay type beta-
-syntax match Decay_type_beta_minus /\<14\s\+6\s\+Pq\>/  | syntax match Decay_type_beta_minus /\<Pq-14\>/
-syntax match Decay_type_beta_minus /\<15\s\+6\s\+Pq\>/  | syntax match Decay_type_beta_minus /\<Pq-15\>/
-syntax match Decay_type_beta_minus /\<20\s\+9\s\+Pm\>/  | syntax match Decay_type_beta_minus /\<Pm-20\>/
-syntax match Decay_type_beta_minus /\<23\s\+10\s\+M\>/  | syntax match Decay_type_beta_minus  /\<M-23\>/
-syntax match Decay_type_beta_minus /\<24\s\+11\s\+Fw\>/ | syntax match Decay_type_beta_minus /\<Fw-24\>/
-syntax match Decay_type_beta_minus /\<25\s\+11\s\+Fw\>/ | syntax match Decay_type_beta_minus /\<Fw-25\>/
-syntax match Decay_type_beta_minus /\<29\s\+13\s\+S\>/  | syntax match Decay_type_beta_minus  /\<S-29\>/
-syntax match Decay_type_beta_minus /\<30\s\+14\s\+Zq\>/ | syntax match Decay_type_beta_minus /\<Zq-30\>/
-syntax match Decay_type_beta_minus /\<31\s\+14\s\+Zq\>/ | syntax match Decay_type_beta_minus /\<Zq-31\>/
-syntax match Decay_type_beta_minus /\<32\s\+14\s\+Zq\>/ | syntax match Decay_type_beta_minus /\<Zq-32\>/
-syntax match Decay_type_beta_minus /\<33\s\+15\s\+Xc\>/ | syntax match Decay_type_beta_minus /\<Xc-33\>/
-syntax match Decay_type_beta_minus /\<33\s\+17\s\+D\>/  | syntax match Decay_type_beta_minus  /\<D-33\>/
-syntax match Decay_type_beta_minus /\<34\s\+15\s\+Xc\>/ | syntax match Decay_type_beta_minus /\<Xc-34\>/
-syntax match Decay_type_beta_minus /\<34\s\+18\s\+Fj\>/ | syntax match Decay_type_beta_minus /\<Fj-34\>/
-syntax match Decay_type_beta_minus /\<35\s\+16\s\+Gy\>/ | syntax match Decay_type_beta_minus /\<Gy-35\>/
-syntax match Decay_type_beta_minus /\<36\s\+16\s\+Gy\>/ | syntax match Decay_type_beta_minus /\<Gy-36\>/
-syntax match Decay_type_beta_minus /\<37\s\+17\s\+D\>/  | syntax match Decay_type_beta_minus  /\<D-37\>/
-syntax match Decay_type_beta_minus /\<38\s\+17\s\+D\>/  | syntax match Decay_type_beta_minus  /\<D-38\>/
-syntax match Decay_type_beta_minus /\<39\s\+17\s\+D\>/  | syntax match Decay_type_beta_minus  /\<D-39\>/
-syntax match Decay_type_beta_minus /\<41\s\+18\s\+Fj\>/ | syntax match Decay_type_beta_minus /\<Fj-41\>/
-syntax match Decay_type_beta_minus /\<42\s\+19\s\+O\>/  | syntax match Decay_type_beta_minus  /\<O-42\>/
-syntax match Decay_type_beta_minus /\<43\s\+19\s\+O\>/  | syntax match Decay_type_beta_minus  /\<O-43\>/
-syntax match Decay_type_beta_minus /\<43\s\+20\s\+C\>/  | syntax match Decay_type_beta_minus  /\<C-43\>/
-syntax match Decay_type_beta_minus /\<44\s\+20\s\+C\>/  | syntax match Decay_type_beta_minus  /\<C-44\>/
-syntax match Decay_type_beta_minus /\<44\s\+21\s\+E\>/  | syntax match Decay_type_beta_minus  /\<E-44\>/
-syntax match Decay_type_beta_minus /\<45\s\+20\s\+C\>/  | syntax match Decay_type_beta_minus  /\<C-45\>/
-syntax match Decay_type_beta_minus /\<45\s\+21\s\+E\>/  | syntax match Decay_type_beta_minus  /\<E-45\>/
-syntax match Decay_type_beta_minus /\<46\s\+21\s\+E\>/  | syntax match Decay_type_beta_minus  /\<E-46\>/
-syntax match Decay_type_beta_minus /\<47\s\+21\s\+E\>/  | syntax match Decay_type_beta_minus  /\<E-47\>/
-syntax match Decay_type_beta_minus /\<48\s\+21\s\+E\>/  | syntax match Decay_type_beta_minus  /\<E-48\>/
-syntax match Decay_type_beta_minus /\<49\s\+22\s\+A\>/  | syntax match Decay_type_beta_minus  /\<A-49\>/
-syntax match Decay_type_beta_minus /\<50\s\+22\s\+A\>/  | syntax match Decay_type_beta_minus  /\<A-50\>/
-syntax match Decay_type_beta_minus /\<51\s\+23\s\+Aw\>/ | syntax match Decay_type_beta_minus /\<Aw-51\>/
-syntax match Decay_type_beta_minus /\<52\s\+24\s\+Oc\>/ | syntax match Decay_type_beta_minus /\<Oc-52\>/
-syntax match Decay_type_beta_minus /\<53\s\+24\s\+Oc\>/ | syntax match Decay_type_beta_minus /\<Oc-53\>/
-syntax match Decay_type_beta_minus /\<53\s\+25\s\+Nb\>/ | syntax match Decay_type_beta_minus /\<Nb-53\>/
-syntax match Decay_type_beta_minus /\<54\s\+26\s\+Xk\>/ | syntax match Decay_type_beta_minus /\<Xk-54\>/
-syntax match Decay_type_beta_minus /\<54\s\+24\s\+Oc\>/ | syntax match Decay_type_beta_minus /\<Oc-54\>/
-syntax match Decay_type_beta_minus /\<55\s\+26\s\+Xk\>/ | syntax match Decay_type_beta_minus /\<Xk-55\>/
-syntax match Decay_type_beta_minus /\<56\s\+25\s\+Nb\>/ | syntax match Decay_type_beta_minus /\<Nb-56\>/
-syntax match Decay_type_beta_minus /\<56\s\+26\s\+Xk\>/ | syntax match Decay_type_beta_minus /\<Xk-56\>/
-syntax match Decay_type_beta_minus /\<57\s\+26\s\+Xk\>/ | syntax match Decay_type_beta_minus /\<Xk-57\>/
-syntax match Decay_type_beta_minus /\<58\s\+26\s\+Xk\>/ | syntax match Decay_type_beta_minus /\<Xk-58\>/
-syntax match Decay_type_beta_minus /\<59\s\+26\s\+Xk\>/ | syntax match Decay_type_beta_minus /\<Xk-59\>/
-syntax match Decay_type_beta_minus /\<60\s\+27\s\+Ic\>/ | syntax match Decay_type_beta_minus /\<Ic-60\>/
-syntax match Decay_type_beta_minus /\<61\s\+28\s\+Yp\>/ | syntax match Decay_type_beta_minus /\<Yp-61\>/
-syntax match Decay_type_beta_minus /\<61\s\+27\s\+Ic\>/ | syntax match Decay_type_beta_minus /\<Ic-61\>/
-syntax match Decay_type_beta_minus /\<62\s\+28\s\+Yp\>/ | syntax match Decay_type_beta_minus /\<Yp-62\>/
-syntax match Decay_type_beta_minus /\<63\s\+28\s\+Yp\>/ | syntax match Decay_type_beta_minus /\<Yp-63\>/
-syntax match Decay_type_beta_minus /\<63\s\+29\s\+Jx\>/ | syntax match Decay_type_beta_minus /\<Jx-63\>/
-syntax match Decay_type_beta_minus /\<64\s\+29\s\+Jx\>/ | syntax match Decay_type_beta_minus /\<Jx-64\>/
-syntax match Decay_type_beta_minus /\<65\s\+29\s\+Jx\>/ | syntax match Decay_type_beta_minus /\<Jx-65\>/
-syntax match Decay_type_beta_minus /\<68\s\+31\s\+At\>/ | syntax match Decay_type_beta_minus /\<At-68\>/
-syntax match Decay_type_beta_minus /\<69\s\+31\s\+At\>/ | syntax match Decay_type_beta_minus /\<At-69\>/
-syntax match Decay_type_beta_minus /\<71\s\+32\s\+Ny\>/ | syntax match Decay_type_beta_minus /\<Ny-71\>/
-syntax match Decay_type_beta_minus /\<71\s\+33\s\+Pw\>/ | syntax match Decay_type_beta_minus /\<Pw-71\>/
-syntax match Decay_type_beta_minus /\<72\s\+33\s\+Pw\>/ | syntax match Decay_type_beta_minus /\<Pw-72\>/
-syntax match Decay_type_beta_minus /\<73\s\+33\s\+Pw\>/ | syntax match Decay_type_beta_minus /\<Pw-73\>/
-syntax match Decay_type_beta_minus /\<73\s\+34\s\+Gk\>/ | syntax match Decay_type_beta_minus /\<Gk-73\>/
-syntax match Decay_type_beta_minus /\<77\s\+35\s\+Qi\>/ | syntax match Decay_type_beta_minus /\<Qi-77\>/
-syntax match Decay_type_beta_minus /\<79\s\+37\s\+Gq\>/ | syntax match Decay_type_beta_minus /\<Gq-79\>/
-syntax match Decay_type_beta_minus /\<80\s\+38\s\+Bt\>/ | syntax match Decay_type_beta_minus /\<Bt-80\>/
-syntax match Decay_type_beta_minus /\<72\s\+32\s\+Ny\>/ | syntax match Decay_type_beta_minus /\<Ny-72\>/
-syntax match Decay_type_beta_minus /\<70\s\+32\s\+Ny\>/ | syntax match Decay_type_beta_minus /\<Ny-70\>/
-syntax match Decay_type_beta_minus /\<74\s\+33\s\+Pw\>/ | syntax match Decay_type_beta_minus /\<Pw-74\>/
-syntax match Decay_type_beta_minus /\<76\s\+34\s\+Gk\>/ | syntax match Decay_type_beta_minus /\<Gk-76\>/
-syntax match Decay_type_beta_minus /\<78\s\+35\s\+Qi\>/ | syntax match Decay_type_beta_minus /\<Qi-78\>/
-syntax match Decay_type_beta_minus /\<78\s\+36\s\+Xy\>/ | syntax match Decay_type_beta_minus /\<Xy-78\>/
-syntax match Decay_type_beta_minus /\<16\s\+7\s\+Zz\>/  | syntax match Decay_type_beta_minus /\<Zz-16\>/
-syntax match Decay_type_beta_minus /\<27\s\+12\s\+Pt\>/ | syntax match Decay_type_beta_minus /\<Pt-27\>/
-syntax match Decay_type_beta_minus /\<21\s\+9\s\+Pm\>/  | syntax match Decay_type_beta_minus /\<Pm-21\>/
-syntax match Decay_type_beta_minus /\<30\s\+13\s\+S\>/  | syntax match Decay_type_beta_minus  /\<S-30\>/
-syntax match Decay_type_beta_minus /\<26\s\+11\s\+Fw\>/ | syntax match Decay_type_beta_minus /\<Fw-26\>/
-syntax match Decay_type_beta_minus /\<19\s\+8\s\+Dx\>/  | syntax match Decay_type_beta_minus /\<Dx-19\>/
-syntax match Decay_type_beta_minus /\<28\s\+12\s\+Pt\>/ | syntax match Decay_type_beta_minus /\<Pt-28\>/
-syntax match Decay_type_beta_minus /\<52\s\+23\s\+Aw\>/ | syntax match Decay_type_beta_minus /\<Aw-52\>/
-syntax match Decay_type_beta_minus /\<55\s\+25\s\+Nb\>/ | syntax match Decay_type_beta_minus /\<Nb-55\>/
-syntax match Decay_type_beta_minus /\<12\s\+5\s\+Xl\>/  | syntax match Decay_type_beta_minus /\<Xl-12\>/
-syntax match Decay_type_beta_minus /\<10\s\+4\s\+Af\>/  | syntax match Decay_type_beta_minus /\<Af-10\>/
-
-" Decay type stable
-syntax match Decay_type_stable     /\<1\s\+1\s\+Ju\>/   | syntax match Decay_type_stable     /\<Ju-1\>/
-syntax match Decay_type_stable     /\<2\s\+1\s\+Ju\>/   | syntax match Decay_type_stable     /\<Ju-2\>/
-syntax match Decay_type_stable     /\<3\s\+1\s\+Ju\>/   | syntax match Decay_type_stable     /\<Ju-3\>/
-syntax match Decay_type_stable     /\<4\s\+2\s\+W\>/    | syntax match Decay_type_stable      /\<W-4\>/
-syntax match Decay_type_stable     /\<5\s\+2\s\+W\>/    | syntax match Decay_type_stable      /\<W-5\>/
-syntax match Decay_type_stable     /\<6\s\+3\s\+Cq\>/   | syntax match Decay_type_stable     /\<Cq-6\>/
-syntax match Decay_type_stable     /\<7\s\+3\s\+Cq\>/   | syntax match Decay_type_stable     /\<Cq-7\>/
-syntax match Decay_type_stable     /\<8\s\+4\s\+Af\>/   | syntax match Decay_type_stable     /\<Af-8\>/
-syntax match Decay_type_stable     /\<9\s\+4\s\+Af\>/   | syntax match Decay_type_stable     /\<Af-9\>/
-syntax match Decay_type_stable     /\<11\s\+5\s\+Xl\>/  | syntax match Decay_type_stable     /\<Xl-11\>/
-syntax match Decay_type_stable     /\<13\s\+6\s\+Pq\>/  | syntax match Decay_type_stable     /\<Pq-13\>/
-syntax match Decay_type_stable     /\<15\s\+7\s\+Zz\>/  | syntax match Decay_type_stable     /\<Zz-15\>/
-syntax match Decay_type_stable     /\<16\s\+8\s\+Dx\>/  | syntax match Decay_type_stable     /\<Dx-16\>/
-syntax match Decay_type_stable     /\<17\s\+8\s\+Dx\>/  | syntax match Decay_type_stable     /\<Dx-17\>/
-syntax match Decay_type_stable     /\<18\s\+8\s\+Dx\>/  | syntax match Decay_type_stable     /\<Dx-18\>/
-syntax match Decay_type_stable     /\<19\s\+9\s\+Pm\>/  | syntax match Decay_type_stable     /\<Pm-19\>/
-syntax match Decay_type_stable     /\<20\s\+10\s\+M\>/  | syntax match Decay_type_stable      /\<M-20\>/
-syntax match Decay_type_stable     /\<21\s\+10\s\+M\>/  | syntax match Decay_type_stable      /\<M-21\>/
-syntax match Decay_type_stable     /\<22\s\+10\s\+M\>/  | syntax match Decay_type_stable      /\<M-22\>/
-syntax match Decay_type_stable     /\<23\s\+11\s\+Fw\>/ | syntax match Decay_type_stable     /\<Fw-23\>/
-syntax match Decay_type_stable     /\<24\s\+12\s\+Pt\>/ | syntax match Decay_type_stable     /\<Pt-24\>/
-syntax match Decay_type_stable     /\<26\s\+12\s\+Pt\>/ | syntax match Decay_type_stable     /\<Pt-26\>/
-syntax match Decay_type_stable     /\<28\s\+13\s\+S\>/  | syntax match Decay_type_stable      /\<S-28\>/
-syntax match Decay_type_stable     /\<29\s\+14\s\+Zq\>/ | syntax match Decay_type_stable     /\<Zq-29\>/
-syntax match Decay_type_stable     /\<30\s\+15\s\+Xc\>/ | syntax match Decay_type_stable     /\<Xc-30\>/
-syntax match Decay_type_stable     /\<31\s\+15\s\+Xc\>/ | syntax match Decay_type_stable     /\<Xc-31\>/
-syntax match Decay_type_stable     /\<32\s\+15\s\+Xc\>/ | syntax match Decay_type_stable     /\<Xc-32\>/
-syntax match Decay_type_stable     /\<33\s\+16\s\+Gy\>/ | syntax match Decay_type_stable     /\<Gy-33\>/
-syntax match Decay_type_stable     /\<34\s\+16\s\+Gy\>/ | syntax match Decay_type_stable     /\<Gy-34\>/
-syntax match Decay_type_stable     /\<40\s\+18\s\+Fj\>/ | syntax match Decay_type_stable     /\<Fj-40\>/
-syntax match Decay_type_stable     /\<41\s\+19\s\+O\>/  | syntax match Decay_type_stable      /\<O-41\>/
-syntax match Decay_type_stable     /\<42\s\+20\s\+C\>/  | syntax match Decay_type_stable      /\<C-42\>/
-syntax match Decay_type_stable     /\<43\s\+21\s\+E\>/  | syntax match Decay_type_stable      /\<E-43\>/
-syntax match Decay_type_stable     /\<44\s\+22\s\+A\>/  | syntax match Decay_type_stable      /\<A-44\>/
-syntax match Decay_type_stable     /\<45\s\+22\s\+A\>/  | syntax match Decay_type_stable      /\<A-45\>/
-syntax match Decay_type_stable     /\<46\s\+22\s\+A\>/  | syntax match Decay_type_stable      /\<A-46\>/
-syntax match Decay_type_stable     /\<47\s\+22\s\+A\>/  | syntax match Decay_type_stable      /\<A-47\>/
-syntax match Decay_type_stable     /\<48\s\+22\s\+A\>/  | syntax match Decay_type_stable      /\<A-48\>/
-syntax match Decay_type_stable     /\<49\s\+23\s\+Aw\>/ | syntax match Decay_type_stable     /\<Aw-49\>/
-syntax match Decay_type_stable     /\<50\s\+23\s\+Aw\>/ | syntax match Decay_type_stable     /\<Aw-50\>/
-syntax match Decay_type_stable     /\<50\s\+24\s\+Oc\>/ | syntax match Decay_type_stable     /\<Oc-50\>/
-syntax match Decay_type_stable     /\<51\s\+24\s\+Oc\>/ | syntax match Decay_type_stable     /\<Oc-51\>/
-syntax match Decay_type_stable     /\<52\s\+25\s\+Nb\>/ | syntax match Decay_type_stable     /\<Nb-52\>/
-syntax match Decay_type_stable     /\<53\s\+26\s\+Xk\>/ | syntax match Decay_type_stable     /\<Xk-53\>/
-syntax match Decay_type_stable     /\<54\s\+27\s\+Ic\>/ | syntax match Decay_type_stable     /\<Ic-54\>/
-syntax match Decay_type_stable     /\<55\s\+27\s\+Ic\>/ | syntax match Decay_type_stable     /\<Ic-55\>/
-syntax match Decay_type_stable     /\<56\s\+27\s\+Ic\>/ | syntax match Decay_type_stable     /\<Ic-56\>/
-syntax match Decay_type_stable     /\<57\s\+27\s\+Ic\>/ | syntax match Decay_type_stable     /\<Ic-57\>/
-syntax match Decay_type_stable     /\<58\s\+27\s\+Ic\>/ | syntax match Decay_type_stable     /\<Ic-58\>/
-syntax match Decay_type_stable     /\<59\s\+27\s\+Ic\>/ | syntax match Decay_type_stable     /\<Ic-59\>/
-syntax match Decay_type_stable     /\<60\s\+28\s\+Yp\>/ | syntax match Decay_type_stable     /\<Yp-60\>/
-syntax match Decay_type_stable     /\<72\s\+34\s\+Gk\>/ | syntax match Decay_type_stable     /\<Gk-72\>/
-syntax match Decay_type_stable     /\<74\s\+34\s\+Gk\>/ | syntax match Decay_type_stable     /\<Gk-74\>/
-syntax match Decay_type_stable     /\<75\s\+34\s\+Gk\>/ | syntax match Decay_type_stable     /\<Gk-75\>/
-syntax match Decay_type_stable     /\<75\s\+34\s\+Gk\>/ | syntax match Decay_type_stable     /\<Gk-75\>/
-syntax match Decay_type_stable     /\<76\s\+35\s\+Qi\>/ | syntax match Decay_type_stable     /\<Qi-76\>/
-syntax match Decay_type_stable     /\<77\s\+36\s\+Xy\>/ | syntax match Decay_type_stable     /\<Xy-77\>/
-syntax match Decay_type_stable     /\<78\s\+37\s\+Gq\>/ | syntax match Decay_type_stable     /\<Gq-78\>/
-syntax match Decay_type_stable     /\<79\s\+38\s\+Bt\>/ | syntax match Decay_type_stable     /\<Bt-79\>/
-syntax match Decay_type_stable     /\<79\s\+36\s\+Xy\>/ | syntax match Decay_type_stable     /\<Xy-79\>/
-syntax match Decay_type_stable     /\<80\s\+37\s\+Gq\>/ | syntax match Decay_type_stable     /\<Gq-80\>/
-syntax match Decay_type_stable     /\<81\s\+38\s\+Bt\>/ | syntax match Decay_type_stable     /\<Bt-81\>/
-syntax match Decay_type_stable     /\<81\s\+40\s\+U\>/  | syntax match Decay_type_stable      /\<U-81\>/
-syntax match Decay_type_stable     /\<84\s\+41\s\+Sq\>/ | syntax match Decay_type_stable     /\<Sq-84\>/
-syntax match Decay_type_stable     /\<80\s\+39\s\+H\>/  | syntax match Decay_type_stable      /\<H-80\>/
-syntax match Decay_type_stable     /\<82\s\+39\s\+H\>/  | syntax match Decay_type_stable      /\<H-82\>/
-syntax match Decay_type_stable     /\<83\s\+40\s\+U\>/  | syntax match Decay_type_stable      /\<U-83\>/
-
-
-" I want to be able to see both the rarity coloring and some way to indicate decay types simultaneously but this isn't working
-"hi Decay_type_alpha        term=NONE ctermfg=red
-"hi Decay_type_beta_plus    term=NONE ctermfg=blue
-"hi Decay_type_beta_minus   term=NONE ctermfg=green
-"hi Decay_type_stable       term=NONE ctermfg=white
-
-hi Decay_type_alpha        guibg=lightmagenta ctermbg=lightmagenta
-hi Decay_type_beta_plus    guibg=green   ctermbg=green
-hi Decay_type_beta_minus   guibg=cyan    ctermbg=cyan
-hi Decay_type_stable       guibg=yellow  ctermbg=yellow
-
-
-
-
-
-endif
-
-
-
-
-" WOW This worked. turned 
-" from:   0 111274870329410202114473964500913152290151914004581383354257874799123503099327
-"   to:   0x 76 38 Bt 111274870329410202114473964500913152290151914004581383354257874799123503099327
-" 
-" with this on command line:
-"     :%s/^\s*\(\d\+\) \(\w\+\)\s*$/\=printf("%4dx %s %s",submatch(1),otomdict[submatch(2)],submatch(2))/
-" and with the associative array %otomdict 
-"
 
 
 
@@ -711,7 +88,6 @@ endif
 
 " [[[ INSERT output of convert_token_id_to_hex.pl here
 "
-
 let otomnames     = {}
 let hexdict       = {}
 let hexdictabbr   = {}
@@ -719,6 +95,9 @@ let otomdict      = {}
 let otomdictabbr  = {}
 let otom2tokenid  = {}
 let otomsortorder = {}
+let decaydict     = {}
+let electrodict   = {}
+let stabilitydict = {}
 
 let otomnames[" 1  1 Ju"]="Ju-1"
 let otomnames[" 2  1 Ju"]="Ju-2"
@@ -4608,6 +3987,1631 @@ let otomsortorder["Ua-83"]="320"
 let otomsortorder["Ua-84"]="321"
 let otomsortorder["Ua-85"]="322"
 
+let decaydict[" 1  1 Ju"]=decay_text_stable          | let decaydict["Ju-1"]=decay_text_stable
+let decaydict[" 2  1 Ju"]=decay_text_stable          | let decaydict["Ju-2"]=decay_text_stable
+let decaydict[" 3  1 Ju"]=decay_text_stable          | let decaydict["Ju-3"]=decay_text_stable
+let decaydict[" 4  2  W"]=decay_text_stable          | let decaydict["W-4"]=decay_text_stable
+let decaydict[" 5  2  W"]=decay_text_stable          | let decaydict["W-5"]=decay_text_stable
+let decaydict[" 5  3 Cq"]=decay_text_beta_plus       | let decaydict["Cq-5"]=decay_text_beta_plus
+let decaydict[" 6  3 Cq"]=decay_text_stable          | let decaydict["Cq-6"]=decay_text_stable
+let decaydict[" 7  3 Cq"]=decay_text_stable          | let decaydict["Cq-7"]=decay_text_stable
+let decaydict[" 7  4 Af"]=decay_text_alpha           | let decaydict["Af-7"]=decay_text_alpha
+let decaydict[" 8  4 Af"]=decay_text_stable          | let decaydict["Af-8"]=decay_text_stable
+let decaydict[" 9  4 Af"]=decay_text_stable          | let decaydict["Af-9"]=decay_text_stable
+let decaydict["10  4 Af"]=decay_text_beta_minus      | let decaydict["Af-10"]=decay_text_beta_minus
+let decaydict[" 9  5 Xl"]=decay_text_beta_plus       | let decaydict["Xl-9"]=decay_text_beta_plus
+let decaydict["10  5 Xl"]=decay_text_alpha           | let decaydict["Xl-10"]=decay_text_alpha
+let decaydict["11  5 Xl"]=decay_text_stable          | let decaydict["Xl-11"]=decay_text_stable
+let decaydict["12  5 Xl"]=decay_text_beta_minus      | let decaydict["Xl-12"]=decay_text_beta_minus
+let decaydict["10  6 Pq"]=decay_text_beta_plus       | let decaydict["Pq-10"]=decay_text_beta_plus
+let decaydict["11  6 Pq"]=decay_text_beta_plus       | let decaydict["Pq-11"]=decay_text_beta_plus
+let decaydict["12  6 Pq"]=decay_text_alpha           | let decaydict["Pq-12"]=decay_text_alpha
+let decaydict["13  6 Pq"]=decay_text_stable          | let decaydict["Pq-13"]=decay_text_stable
+let decaydict["14  6 Pq"]=decay_text_beta_minus      | let decaydict["Pq-14"]=decay_text_beta_minus
+let decaydict["15  6 Pq"]=decay_text_beta_minus      | let decaydict["Pq-15"]=decay_text_beta_minus
+let decaydict["13  7 Zz"]=decay_text_beta_plus       | let decaydict["Zz-13"]=decay_text_beta_plus
+let decaydict["14  7 Zz"]=decay_text_alpha           | let decaydict["Zz-14"]=decay_text_alpha
+let decaydict["15  7 Zz"]=decay_text_stable          | let decaydict["Zz-15"]=decay_text_stable
+let decaydict["16  7 Zz"]=decay_text_beta_minus      | let decaydict["Zz-16"]=decay_text_beta_minus
+let decaydict["14  8 Dx"]=decay_text_beta_plus       | let decaydict["Dx-14"]=decay_text_beta_plus
+let decaydict["15  8 Dx"]=decay_text_beta_plus       | let decaydict["Dx-15"]=decay_text_beta_plus
+let decaydict["16  8 Dx"]=decay_text_stable          | let decaydict["Dx-16"]=decay_text_stable
+let decaydict["17  8 Dx"]=decay_text_stable          | let decaydict["Dx-17"]=decay_text_stable
+let decaydict["18  8 Dx"]=decay_text_stable          | let decaydict["Dx-18"]=decay_text_stable
+let decaydict["19  8 Dx"]=decay_text_beta_minus      | let decaydict["Dx-19"]=decay_text_beta_minus
+let decaydict["17  9 Pm"]=decay_text_beta_plus       | let decaydict["Pm-17"]=decay_text_beta_plus
+let decaydict["18  9 Pm"]=decay_text_beta_plus       | let decaydict["Pm-18"]=decay_text_beta_plus
+let decaydict["19  9 Pm"]=decay_text_stable          | let decaydict["Pm-19"]=decay_text_stable
+let decaydict["20  9 Pm"]=decay_text_beta_minus      | let decaydict["Pm-20"]=decay_text_beta_minus
+let decaydict["21  9 Pm"]=decay_text_beta_minus      | let decaydict["Pm-21"]=decay_text_beta_minus
+let decaydict["19 10  M"]=decay_text_beta_plus       | let decaydict["M-19"]=decay_text_beta_plus
+let decaydict["20 10  M"]=decay_text_stable          | let decaydict["M-20"]=decay_text_stable
+let decaydict["21 10  M"]=decay_text_stable          | let decaydict["M-21"]=decay_text_stable
+let decaydict["22 10  M"]=decay_text_stable          | let decaydict["M-22"]=decay_text_stable
+let decaydict["23 10  M"]=decay_text_beta_minus      | let decaydict["M-23"]=decay_text_beta_minus
+let decaydict["21 11 Fw"]=decay_text_beta_plus       | let decaydict["Fw-21"]=decay_text_beta_plus
+let decaydict["22 11 Fw"]=decay_text_beta_plus       | let decaydict["Fw-22"]=decay_text_beta_plus
+let decaydict["23 11 Fw"]=decay_text_stable          | let decaydict["Fw-23"]=decay_text_stable
+let decaydict["24 11 Fw"]=decay_text_beta_minus      | let decaydict["Fw-24"]=decay_text_beta_minus
+let decaydict["25 11 Fw"]=decay_text_beta_minus      | let decaydict["Fw-25"]=decay_text_beta_minus
+let decaydict["26 11 Fw"]=decay_text_beta_minus      | let decaydict["Fw-26"]=decay_text_beta_minus
+let decaydict["22 12 Pt"]=decay_text_beta_plus       | let decaydict["Pt-22"]=decay_text_beta_plus
+let decaydict["23 12 Pt"]=decay_text_beta_plus       | let decaydict["Pt-23"]=decay_text_beta_plus
+let decaydict["24 12 Pt"]=decay_text_stable          | let decaydict["Pt-24"]=decay_text_stable
+let decaydict["25 12 Pt"]=decay_text_alpha           | let decaydict["Pt-25"]=decay_text_alpha
+let decaydict["26 12 Pt"]=decay_text_stable          | let decaydict["Pt-26"]=decay_text_stable
+let decaydict["27 12 Pt"]=decay_text_beta_minus      | let decaydict["Pt-27"]=decay_text_beta_minus
+let decaydict["28 12 Pt"]=decay_text_beta_minus      | let decaydict["Pt-28"]=decay_text_beta_minus
+let decaydict["24 13  S"]=decay_text_beta_plus       | let decaydict["S-24"]=decay_text_beta_plus
+let decaydict["25 13  S"]=decay_text_beta_plus       | let decaydict["S-25"]=decay_text_beta_plus
+let decaydict["26 13  S"]=decay_text_alpha           | let decaydict["S-26"]=decay_text_alpha
+let decaydict["27 13  S"]=decay_text_alpha           | let decaydict["S-27"]=decay_text_alpha
+let decaydict["28 13  S"]=decay_text_stable          | let decaydict["S-28"]=decay_text_stable
+let decaydict["29 13  S"]=decay_text_beta_minus      | let decaydict["S-29"]=decay_text_beta_minus
+let decaydict["30 13  S"]=decay_text_beta_minus      | let decaydict["S-30"]=decay_text_beta_minus
+let decaydict["26 14 Zq"]=decay_text_beta_plus       | let decaydict["Zq-26"]=decay_text_beta_plus
+let decaydict["27 14 Zq"]=decay_text_beta_plus       | let decaydict["Zq-27"]=decay_text_beta_plus
+let decaydict["28 14 Zq"]=decay_text_beta_plus       | let decaydict["Zq-28"]=decay_text_beta_plus
+let decaydict["29 14 Zq"]=decay_text_stable          | let decaydict["Zq-29"]=decay_text_stable
+let decaydict["30 14 Zq"]=decay_text_beta_minus      | let decaydict["Zq-30"]=decay_text_beta_minus
+let decaydict["31 14 Zq"]=decay_text_beta_minus      | let decaydict["Zq-31"]=decay_text_beta_minus
+let decaydict["32 14 Zq"]=decay_text_beta_minus      | let decaydict["Zq-32"]=decay_text_beta_minus
+let decaydict["28 15 Xc"]=decay_text_beta_plus       | let decaydict["Xc-28"]=decay_text_beta_plus
+let decaydict["29 15 Xc"]=decay_text_beta_plus       | let decaydict["Xc-29"]=decay_text_beta_plus
+let decaydict["30 15 Xc"]=decay_text_stable          | let decaydict["Xc-30"]=decay_text_stable
+let decaydict["31 15 Xc"]=decay_text_stable          | let decaydict["Xc-31"]=decay_text_stable
+let decaydict["32 15 Xc"]=decay_text_stable          | let decaydict["Xc-32"]=decay_text_stable
+let decaydict["33 15 Xc"]=decay_text_beta_minus      | let decaydict["Xc-33"]=decay_text_beta_minus
+let decaydict["34 15 Xc"]=decay_text_beta_minus      | let decaydict["Xc-34"]=decay_text_beta_minus
+let decaydict["30 16 Gy"]=decay_text_beta_plus       | let decaydict["Gy-30"]=decay_text_beta_plus
+let decaydict["31 16 Gy"]=decay_text_beta_plus       | let decaydict["Gy-31"]=decay_text_beta_plus
+let decaydict["32 16 Gy"]=decay_text_beta_plus       | let decaydict["Gy-32"]=decay_text_beta_plus
+let decaydict["33 16 Gy"]=decay_text_stable          | let decaydict["Gy-33"]=decay_text_stable
+let decaydict["34 16 Gy"]=decay_text_stable          | let decaydict["Gy-34"]=decay_text_stable
+let decaydict["35 16 Gy"]=decay_text_beta_minus      | let decaydict["Gy-35"]=decay_text_beta_minus
+let decaydict["36 16 Gy"]=decay_text_beta_minus      | let decaydict["Gy-36"]=decay_text_beta_minus
+let decaydict["32 17  D"]=decay_text_beta_plus       | let decaydict["D-32"]=decay_text_beta_plus
+let decaydict["33 17  D"]=decay_text_beta_plus       | let decaydict["D-33"]=decay_text_beta_plus
+let decaydict["34 17  D"]=decay_text_beta_plus       | let decaydict["D-34"]=decay_text_beta_plus
+let decaydict["35 17  D"]=decay_text_alpha           | let decaydict["D-35"]=decay_text_alpha
+let decaydict["36 17  D"]=decay_text_alpha           | let decaydict["D-36"]=decay_text_alpha
+let decaydict["37 17  D"]=decay_text_beta_minus      | let decaydict["D-37"]=decay_text_beta_minus
+let decaydict["38 17  D"]=decay_text_beta_minus      | let decaydict["D-38"]=decay_text_beta_minus
+let decaydict["39 17  D"]=decay_text_beta_minus      | let decaydict["D-39"]=decay_text_beta_minus
+let decaydict["34 18 Fj"]=decay_text_beta_plus       | let decaydict["Fj-34"]=decay_text_beta_plus
+let decaydict["35 18 Fj"]=decay_text_beta_plus       | let decaydict["Fj-35"]=decay_text_beta_plus
+let decaydict["36 18 Fj"]=decay_text_alpha           | let decaydict["Fj-36"]=decay_text_alpha
+let decaydict["37 18 Fj"]=decay_text_alpha           | let decaydict["Fj-37"]=decay_text_alpha
+let decaydict["38 18 Fj"]=decay_text_alpha           | let decaydict["Fj-38"]=decay_text_alpha
+let decaydict["39 18 Fj"]=decay_text_alpha           | let decaydict["Fj-39"]=decay_text_alpha
+let decaydict["40 18 Fj"]=decay_text_stable          | let decaydict["Fj-40"]=decay_text_stable
+let decaydict["41 18 Fj"]=decay_text_beta_minus      | let decaydict["Fj-41"]=decay_text_beta_minus
+let decaydict["36 19  O"]=decay_text_beta_plus       | let decaydict["O-36"]=decay_text_beta_plus
+let decaydict["37 19  O"]=decay_text_alpha           | let decaydict["O-37"]=decay_text_alpha
+let decaydict["38 19  O"]=decay_text_alpha           | let decaydict["O-38"]=decay_text_alpha
+let decaydict["39 19  O"]=decay_text_alpha           | let decaydict["O-39"]=decay_text_alpha
+let decaydict["40 19  O"]=decay_text_alpha           | let decaydict["O-40"]=decay_text_alpha
+let decaydict["41 19  O"]=decay_text_stable          | let decaydict["O-41"]=decay_text_stable
+let decaydict["42 19  O"]=decay_text_beta_minus      | let decaydict["O-42"]=decay_text_beta_minus
+let decaydict["43 19  O"]=decay_text_beta_minus      | let decaydict["O-43"]=decay_text_beta_minus
+let decaydict["38 20  C"]=decay_text_beta_plus       | let decaydict["C-38"]=decay_text_beta_plus
+let decaydict["39 20  C"]=decay_text_beta_plus       | let decaydict["C-39"]=decay_text_beta_plus
+let decaydict["40 20  C"]=decay_text_beta_plus       | let decaydict["C-40"]=decay_text_beta_plus
+let decaydict["41 20  C"]=decay_text_beta_plus       | let decaydict["C-41"]=decay_text_beta_plus
+let decaydict["42 20  C"]=decay_text_stable          | let decaydict["C-42"]=decay_text_stable
+let decaydict["43 20  C"]=decay_text_beta_minus      | let decaydict["C-43"]=decay_text_beta_minus
+let decaydict["44 20  C"]=decay_text_beta_minus      | let decaydict["C-44"]=decay_text_beta_minus
+let decaydict["45 20  C"]=decay_text_beta_minus      | let decaydict["C-45"]=decay_text_beta_minus
+let decaydict["40 21  E"]=decay_text_beta_plus       | let decaydict["E-40"]=decay_text_beta_plus
+let decaydict["41 21  E"]=decay_text_beta_plus       | let decaydict["E-41"]=decay_text_beta_plus
+let decaydict["42 21  E"]=decay_text_beta_plus       | let decaydict["E-42"]=decay_text_beta_plus
+let decaydict["43 21  E"]=decay_text_stable          | let decaydict["E-43"]=decay_text_stable
+let decaydict["44 21  E"]=decay_text_beta_minus      | let decaydict["E-44"]=decay_text_beta_minus
+let decaydict["45 21  E"]=decay_text_beta_minus      | let decaydict["E-45"]=decay_text_beta_minus
+let decaydict["46 21  E"]=decay_text_beta_minus      | let decaydict["E-46"]=decay_text_beta_minus
+let decaydict["47 21  E"]=decay_text_beta_minus      | let decaydict["E-47"]=decay_text_beta_minus
+let decaydict["48 21  E"]=decay_text_beta_minus      | let decaydict["E-48"]=decay_text_beta_minus
+let decaydict["42 22  A"]=decay_text_beta_plus       | let decaydict["A-42"]=decay_text_beta_plus
+let decaydict["43 22  A"]=decay_text_beta_plus       | let decaydict["A-43"]=decay_text_beta_plus
+let decaydict["44 22  A"]=decay_text_stable          | let decaydict["A-44"]=decay_text_stable
+let decaydict["45 22  A"]=decay_text_stable          | let decaydict["A-45"]=decay_text_stable
+let decaydict["46 22  A"]=decay_text_stable          | let decaydict["A-46"]=decay_text_stable
+let decaydict["47 22  A"]=decay_text_stable          | let decaydict["A-47"]=decay_text_stable
+let decaydict["48 22  A"]=decay_text_stable          | let decaydict["A-48"]=decay_text_stable
+let decaydict["49 22  A"]=decay_text_beta_minus      | let decaydict["A-49"]=decay_text_beta_minus
+let decaydict["50 22  A"]=decay_text_beta_minus      | let decaydict["A-50"]=decay_text_beta_minus
+let decaydict["44 23 Aw"]=decay_text_beta_plus       | let decaydict["Aw-44"]=decay_text_beta_plus
+let decaydict["45 23 Aw"]=decay_text_beta_plus       | let decaydict["Aw-45"]=decay_text_beta_plus
+let decaydict["46 23 Aw"]=decay_text_beta_plus       | let decaydict["Aw-46"]=decay_text_beta_plus
+let decaydict["47 23 Aw"]=decay_text_beta_plus       | let decaydict["Aw-47"]=decay_text_beta_plus
+let decaydict["48 23 Aw"]=decay_text_alpha           | let decaydict["Aw-48"]=decay_text_alpha
+let decaydict["49 23 Aw"]=decay_text_stable          | let decaydict["Aw-49"]=decay_text_stable
+let decaydict["50 23 Aw"]=decay_text_stable          | let decaydict["Aw-50"]=decay_text_stable
+let decaydict["51 23 Aw"]=decay_text_beta_minus      | let decaydict["Aw-51"]=decay_text_beta_minus
+let decaydict["52 23 Aw"]=decay_text_beta_minus      | let decaydict["Aw-52"]=decay_text_beta_minus
+let decaydict["46 24 Oc"]=decay_text_beta_plus       | let decaydict["Oc-46"]=decay_text_beta_plus
+let decaydict["47 24 Oc"]=decay_text_beta_plus       | let decaydict["Oc-47"]=decay_text_beta_plus
+let decaydict["48 24 Oc"]=decay_text_beta_plus       | let decaydict["Oc-48"]=decay_text_beta_plus
+let decaydict["49 24 Oc"]=decay_text_alpha           | let decaydict["Oc-49"]=decay_text_alpha
+let decaydict["50 24 Oc"]=decay_text_stable          | let decaydict["Oc-50"]=decay_text_stable
+let decaydict["51 24 Oc"]=decay_text_stable          | let decaydict["Oc-51"]=decay_text_stable
+let decaydict["52 24 Oc"]=decay_text_beta_minus      | let decaydict["Oc-52"]=decay_text_beta_minus
+let decaydict["53 24 Oc"]=decay_text_beta_minus      | let decaydict["Oc-53"]=decay_text_beta_minus
+let decaydict["54 24 Oc"]=decay_text_beta_minus      | let decaydict["Oc-54"]=decay_text_beta_minus
+let decaydict["47 25 Nb"]=decay_text_beta_plus       | let decaydict["Nb-47"]=decay_text_beta_plus
+let decaydict["48 25 Nb"]=decay_text_beta_plus       | let decaydict["Nb-48"]=decay_text_beta_plus
+let decaydict["49 25 Nb"]=decay_text_alpha           | let decaydict["Nb-49"]=decay_text_alpha
+let decaydict["50 25 Nb"]=decay_text_alpha           | let decaydict["Nb-50"]=decay_text_alpha
+let decaydict["51 25 Nb"]=decay_text_alpha           | let decaydict["Nb-51"]=decay_text_alpha
+let decaydict["52 25 Nb"]=decay_text_stable          | let decaydict["Nb-52"]=decay_text_stable
+let decaydict["53 25 Nb"]=decay_text_beta_minus      | let decaydict["Nb-53"]=decay_text_beta_minus
+let decaydict["54 25 Nb"]=decay_text_alpha           | let decaydict["Nb-54"]=decay_text_alpha
+let decaydict["55 25 Nb"]=decay_text_beta_minus      | let decaydict["Nb-55"]=decay_text_beta_minus
+let decaydict["56 25 Nb"]=decay_text_beta_minus      | let decaydict["Nb-56"]=decay_text_beta_minus
+let decaydict["50 26 Xk"]=decay_text_beta_plus       | let decaydict["Xk-50"]=decay_text_beta_plus
+let decaydict["51 26 Xk"]=decay_text_alpha           | let decaydict["Xk-51"]=decay_text_alpha
+let decaydict["52 26 Xk"]=decay_text_beta_plus       | let decaydict["Xk-52"]=decay_text_beta_plus
+let decaydict["53 26 Xk"]=decay_text_stable          | let decaydict["Xk-53"]=decay_text_stable
+let decaydict["54 26 Xk"]=decay_text_beta_minus      | let decaydict["Xk-54"]=decay_text_beta_minus
+let decaydict["55 26 Xk"]=decay_text_beta_minus      | let decaydict["Xk-55"]=decay_text_beta_minus
+let decaydict["56 26 Xk"]=decay_text_beta_minus      | let decaydict["Xk-56"]=decay_text_beta_minus
+let decaydict["57 26 Xk"]=decay_text_beta_minus      | let decaydict["Xk-57"]=decay_text_beta_minus
+let decaydict["58 26 Xk"]=decay_text_beta_minus      | let decaydict["Xk-58"]=decay_text_beta_minus
+let decaydict["59 26 Xk"]=decay_text_beta_minus      | let decaydict["Xk-59"]=decay_text_beta_minus
+let decaydict["51 27 Ic"]=decay_text_beta_plus       | let decaydict["Ic-51"]=decay_text_beta_plus
+let decaydict["52 27 Ic"]=decay_text_beta_plus       | let decaydict["Ic-52"]=decay_text_beta_plus
+let decaydict["53 27 Ic"]=decay_text_beta_plus       | let decaydict["Ic-53"]=decay_text_beta_plus
+let decaydict["54 27 Ic"]=decay_text_stable          | let decaydict["Ic-54"]=decay_text_stable
+let decaydict["55 27 Ic"]=decay_text_stable          | let decaydict["Ic-55"]=decay_text_stable
+let decaydict["56 27 Ic"]=decay_text_stable          | let decaydict["Ic-56"]=decay_text_stable
+let decaydict["57 27 Ic"]=decay_text_stable          | let decaydict["Ic-57"]=decay_text_stable
+let decaydict["58 27 Ic"]=decay_text_stable          | let decaydict["Ic-58"]=decay_text_stable
+let decaydict["59 27 Ic"]=decay_text_stable          | let decaydict["Ic-59"]=decay_text_stable
+let decaydict["60 27 Ic"]=decay_text_beta_minus      | let decaydict["Ic-60"]=decay_text_beta_minus
+let decaydict["61 27 Ic"]=decay_text_beta_minus      | let decaydict["Ic-61"]=decay_text_beta_minus
+let decaydict["54 28 Yp"]=decay_text_beta_plus       | let decaydict["Yp-54"]=decay_text_beta_plus
+let decaydict["55 28 Yp"]=decay_text_beta_plus       | let decaydict["Yp-55"]=decay_text_beta_plus
+let decaydict["56 28 Yp"]=decay_text_beta_plus       | let decaydict["Yp-56"]=decay_text_beta_plus
+let decaydict["57 28 Yp"]=decay_text_beta_plus       | let decaydict["Yp-57"]=decay_text_beta_plus
+let decaydict["58 28 Yp"]=decay_text_alpha           | let decaydict["Yp-58"]=decay_text_alpha
+let decaydict["59 28 Yp"]=decay_text_beta_plus       | let decaydict["Yp-59"]=decay_text_beta_plus
+let decaydict["60 28 Yp"]=decay_text_stable          | let decaydict["Yp-60"]=decay_text_stable
+let decaydict["61 28 Yp"]=decay_text_beta_minus      | let decaydict["Yp-61"]=decay_text_beta_minus
+let decaydict["62 28 Yp"]=decay_text_beta_minus      | let decaydict["Yp-62"]=decay_text_beta_minus
+let decaydict["63 28 Yp"]=decay_text_beta_minus      | let decaydict["Yp-63"]=decay_text_beta_minus
+let decaydict["56 29 Jx"]=decay_text_beta_plus       | let decaydict["Jx-56"]=decay_text_beta_plus
+let decaydict["57 29 Jx"]=decay_text_beta_plus       | let decaydict["Jx-57"]=decay_text_beta_plus
+let decaydict["58 29 Jx"]=decay_text_beta_plus       | let decaydict["Jx-58"]=decay_text_beta_plus
+let decaydict["59 29 Jx"]=decay_text_alpha           | let decaydict["Jx-59"]=decay_text_alpha
+let decaydict["60 29 Jx"]=decay_text_alpha           | let decaydict["Jx-60"]=decay_text_alpha
+let decaydict["61 29 Jx"]=decay_text_alpha           | let decaydict["Jx-61"]=decay_text_alpha
+let decaydict["62 29 Jx"]=decay_text_alpha           | let decaydict["Jx-62"]=decay_text_alpha
+let decaydict["63 29 Jx"]=decay_text_beta_minus      | let decaydict["Jx-63"]=decay_text_beta_minus
+let decaydict["64 29 Jx"]=decay_text_beta_minus      | let decaydict["Jx-64"]=decay_text_beta_minus
+let decaydict["65 29 Jx"]=decay_text_beta_minus      | let decaydict["Jx-65"]=decay_text_beta_minus
+let decaydict["57 30 Hb"]=decay_text_beta_plus       | let decaydict["Hb-57"]=decay_text_beta_plus
+let decaydict["58 30 Hb"]=decay_text_alpha           | let decaydict["Hb-58"]=decay_text_alpha
+let decaydict["59 30 Hb"]=decay_text_alpha           | let decaydict["Hb-59"]=decay_text_alpha
+let decaydict["60 30 Hb"]=decay_text_alpha           | let decaydict["Hb-60"]=decay_text_alpha
+let decaydict["61 30 Hb"]=decay_text_alpha           | let decaydict["Hb-61"]=decay_text_alpha
+let decaydict["62 30 Hb"]=decay_text_alpha           | let decaydict["Hb-62"]=decay_text_alpha
+let decaydict["63 30 Hb"]=decay_text_alpha           | let decaydict["Hb-63"]=decay_text_alpha
+let decaydict["64 30 Hb"]=decay_text_alpha           | let decaydict["Hb-64"]=decay_text_alpha
+let decaydict["65 30 Hb"]=decay_text_alpha           | let decaydict["Hb-65"]=decay_text_alpha
+let decaydict["66 30 Hb"]=decay_text_alpha           | let decaydict["Hb-66"]=decay_text_alpha
+let decaydict["67 30 Hb"]=decay_text_alpha           | let decaydict["Hb-67"]=decay_text_alpha
+let decaydict["60 31 At"]=decay_text_beta_plus       | let decaydict["At-60"]=decay_text_beta_plus
+let decaydict["61 31 At"]=decay_text_alpha           | let decaydict["At-61"]=decay_text_alpha
+let decaydict["62 31 At"]=decay_text_alpha           | let decaydict["At-62"]=decay_text_alpha
+let decaydict["63 31 At"]=decay_text_alpha           | let decaydict["At-63"]=decay_text_alpha
+let decaydict["64 31 At"]=decay_text_alpha           | let decaydict["At-64"]=decay_text_alpha
+let decaydict["65 31 At"]=decay_text_alpha           | let decaydict["At-65"]=decay_text_alpha
+let decaydict["66 31 At"]=decay_text_alpha           | let decaydict["At-66"]=decay_text_alpha
+let decaydict["67 31 At"]=decay_text_alpha           | let decaydict["At-67"]=decay_text_alpha
+let decaydict["68 31 At"]=decay_text_beta_minus      | let decaydict["At-68"]=decay_text_beta_minus
+let decaydict["69 31 At"]=decay_text_beta_minus      | let decaydict["At-69"]=decay_text_beta_minus
+let decaydict["61 32 Ny"]=decay_text_beta_plus       | let decaydict["Ny-61"]=decay_text_beta_plus
+let decaydict["62 32 Ny"]=decay_text_alpha           | let decaydict["Ny-62"]=decay_text_alpha
+let decaydict["63 32 Ny"]=decay_text_beta_plus       | let decaydict["Ny-63"]=decay_text_beta_plus
+let decaydict["64 32 Ny"]=decay_text_beta_plus       | let decaydict["Ny-64"]=decay_text_beta_plus
+let decaydict["65 32 Ny"]=decay_text_alpha           | let decaydict["Ny-65"]=decay_text_alpha
+let decaydict["66 32 Ny"]=decay_text_alpha           | let decaydict["Ny-66"]=decay_text_alpha
+let decaydict["67 32 Ny"]=decay_text_alpha           | let decaydict["Ny-67"]=decay_text_alpha
+let decaydict["68 32 Ny"]=decay_text_alpha           | let decaydict["Ny-68"]=decay_text_alpha
+let decaydict["69 32 Ny"]=decay_text_alpha           | let decaydict["Ny-69"]=decay_text_alpha
+let decaydict["70 32 Ny"]=decay_text_beta_minus      | let decaydict["Ny-70"]=decay_text_beta_minus
+let decaydict["71 32 Ny"]=decay_text_beta_minus      | let decaydict["Ny-71"]=decay_text_beta_minus
+let decaydict["72 32 Ny"]=decay_text_beta_minus      | let decaydict["Ny-72"]=decay_text_beta_minus
+let decaydict["64 33 Pw"]=decay_text_beta_plus       | let decaydict["Pw-64"]=decay_text_beta_plus
+let decaydict["65 33 Pw"]=decay_text_beta_plus       | let decaydict["Pw-65"]=decay_text_beta_plus
+let decaydict["66 33 Pw"]=decay_text_beta_plus       | let decaydict["Pw-66"]=decay_text_beta_plus
+let decaydict["67 33 Pw"]=decay_text_alpha           | let decaydict["Pw-67"]=decay_text_alpha
+let decaydict["68 33 Pw"]=decay_text_alpha           | let decaydict["Pw-68"]=decay_text_alpha
+let decaydict["69 33 Pw"]=decay_text_alpha           | let decaydict["Pw-69"]=decay_text_alpha
+let decaydict["70 33 Pw"]=decay_text_alpha           | let decaydict["Pw-70"]=decay_text_alpha
+let decaydict["71 33 Pw"]=decay_text_beta_minus      | let decaydict["Pw-71"]=decay_text_beta_minus
+let decaydict["72 33 Pw"]=decay_text_beta_minus      | let decaydict["Pw-72"]=decay_text_beta_minus
+let decaydict["73 33 Pw"]=decay_text_beta_minus      | let decaydict["Pw-73"]=decay_text_beta_minus
+let decaydict["74 33 Pw"]=decay_text_beta_minus      | let decaydict["Pw-74"]=decay_text_beta_minus
+let decaydict["65 34 Gk"]=decay_text_beta_plus       | let decaydict["Gk-65"]=decay_text_beta_plus
+let decaydict["66 34 Gk"]=decay_text_beta_plus       | let decaydict["Gk-66"]=decay_text_beta_plus
+let decaydict["67 34 Gk"]=decay_text_beta_plus       | let decaydict["Gk-67"]=decay_text_beta_plus
+let decaydict["68 34 Gk"]=decay_text_beta_plus       | let decaydict["Gk-68"]=decay_text_beta_plus
+let decaydict["69 34 Gk"]=decay_text_alpha           | let decaydict["Gk-69"]=decay_text_alpha
+let decaydict["70 34 Gk"]=decay_text_alpha           | let decaydict["Gk-70"]=decay_text_alpha
+let decaydict["71 34 Gk"]=decay_text_alpha           | let decaydict["Gk-71"]=decay_text_alpha
+let decaydict["72 34 Gk"]=decay_text_stable          | let decaydict["Gk-72"]=decay_text_stable
+let decaydict["73 34 Gk"]=decay_text_beta_minus      | let decaydict["Gk-73"]=decay_text_beta_minus
+let decaydict["74 34 Gk"]=decay_text_stable          | let decaydict["Gk-74"]=decay_text_stable
+let decaydict["75 34 Gk"]=decay_text_stable          | let decaydict["Gk-75"]=decay_text_stable
+let decaydict["76 34 Gk"]=decay_text_beta_minus      | let decaydict["Gk-76"]=decay_text_beta_minus
+let decaydict["67 35 Qi"]=decay_text_beta_plus       | let decaydict["Qi-67"]=decay_text_beta_plus
+let decaydict["68 35 Qi"]=decay_text_beta_plus       | let decaydict["Qi-68"]=decay_text_beta_plus
+let decaydict["69 35 Qi"]=decay_text_beta_plus       | let decaydict["Qi-69"]=decay_text_beta_plus
+let decaydict["70 35 Qi"]=decay_text_beta_plus       | let decaydict["Qi-70"]=decay_text_beta_plus
+let decaydict["71 35 Qi"]=decay_text_beta_plus       | let decaydict["Qi-71"]=decay_text_beta_plus
+let decaydict["72 35 Qi"]=decay_text_alpha           | let decaydict["Qi-72"]=decay_text_alpha
+let decaydict["73 35 Qi"]=decay_text_alpha           | let decaydict["Qi-73"]=decay_text_alpha
+let decaydict["74 35 Qi"]=decay_text_alpha           | let decaydict["Qi-74"]=decay_text_alpha
+let decaydict["75 35 Qi"]=decay_text_beta_plus       | let decaydict["Qi-75"]=decay_text_beta_plus
+let decaydict["76 35 Qi"]=decay_text_stable          | let decaydict["Qi-76"]=decay_text_stable
+let decaydict["77 35 Qi"]=decay_text_beta_minus      | let decaydict["Qi-77"]=decay_text_beta_minus
+let decaydict["78 35 Qi"]=decay_text_beta_minus      | let decaydict["Qi-78"]=decay_text_beta_minus
+let decaydict["69 36 Xy"]=decay_text_beta_plus       | let decaydict["Xy-69"]=decay_text_beta_plus
+let decaydict["70 36 Xy"]=decay_text_beta_plus       | let decaydict["Xy-70"]=decay_text_beta_plus
+let decaydict["71 36 Xy"]=decay_text_beta_plus       | let decaydict["Xy-71"]=decay_text_beta_plus
+let decaydict["72 36 Xy"]=decay_text_beta_plus       | let decaydict["Xy-72"]=decay_text_beta_plus
+let decaydict["73 36 Xy"]=decay_text_beta_plus       | let decaydict["Xy-73"]=decay_text_beta_plus
+let decaydict["74 36 Xy"]=decay_text_beta_plus       | let decaydict["Xy-74"]=decay_text_beta_plus
+let decaydict["75 36 Xy"]=decay_text_beta_plus       | let decaydict["Xy-75"]=decay_text_beta_plus
+let decaydict["76 36 Xy"]=decay_text_beta_plus       | let decaydict["Xy-76"]=decay_text_beta_plus
+let decaydict["77 36 Xy"]=decay_text_stable          | let decaydict["Xy-77"]=decay_text_stable
+let decaydict["78 36 Xy"]=decay_text_beta_minus      | let decaydict["Xy-78"]=decay_text_beta_minus
+let decaydict["79 36 Xy"]=decay_text_stable          | let decaydict["Xy-79"]=decay_text_stable
+let decaydict["71 37 Gq"]=decay_text_beta_plus       | let decaydict["Gq-71"]=decay_text_beta_plus
+let decaydict["72 37 Gq"]=decay_text_beta_plus       | let decaydict["Gq-72"]=decay_text_beta_plus
+let decaydict["73 37 Gq"]=decay_text_beta_plus       | let decaydict["Gq-73"]=decay_text_beta_plus
+let decaydict["74 37 Gq"]=decay_text_beta_plus       | let decaydict["Gq-74"]=decay_text_beta_plus
+let decaydict["75 37 Gq"]=decay_text_beta_plus       | let decaydict["Gq-75"]=decay_text_beta_plus
+let decaydict["76 37 Gq"]=decay_text_beta_plus       | let decaydict["Gq-76"]=decay_text_beta_plus
+let decaydict["77 37 Gq"]=decay_text_beta_plus       | let decaydict["Gq-77"]=decay_text_beta_plus
+let decaydict["78 37 Gq"]=decay_text_stable          | let decaydict["Gq-78"]=decay_text_stable
+let decaydict["79 37 Gq"]=decay_text_beta_minus      | let decaydict["Gq-79"]=decay_text_beta_minus
+let decaydict["80 37 Gq"]=decay_text_stable          | let decaydict["Gq-80"]=decay_text_stable
+let decaydict["73 38 Bt"]=decay_text_beta_plus       | let decaydict["Bt-73"]=decay_text_beta_plus
+let decaydict["74 38 Bt"]=decay_text_beta_plus       | let decaydict["Bt-74"]=decay_text_beta_plus
+let decaydict["75 38 Bt"]=decay_text_beta_plus       | let decaydict["Bt-75"]=decay_text_beta_plus
+let decaydict["76 38 Bt"]=decay_text_beta_plus       | let decaydict["Bt-76"]=decay_text_beta_plus
+let decaydict["77 38 Bt"]=decay_text_beta_plus       | let decaydict["Bt-77"]=decay_text_beta_plus
+let decaydict["78 38 Bt"]=decay_text_beta_plus       | let decaydict["Bt-78"]=decay_text_beta_plus
+let decaydict["79 38 Bt"]=decay_text_stable          | let decaydict["Bt-79"]=decay_text_stable
+let decaydict["80 38 Bt"]=decay_text_beta_minus      | let decaydict["Bt-80"]=decay_text_beta_minus
+let decaydict["81 38 Bt"]=decay_text_stable          | let decaydict["Bt-81"]=decay_text_stable
+let decaydict["75 39  H"]=decay_text_beta_plus       | let decaydict["H-75"]=decay_text_beta_plus
+let decaydict["76 39  H"]=decay_text_beta_plus       | let decaydict["H-76"]=decay_text_beta_plus
+let decaydict["77 39  H"]=decay_text_beta_plus       | let decaydict["H-77"]=decay_text_beta_plus
+let decaydict["78 39  H"]=decay_text_beta_plus       | let decaydict["H-78"]=decay_text_beta_plus
+let decaydict["79 39  H"]=decay_text_beta_plus       | let decaydict["H-79"]=decay_text_beta_plus
+let decaydict["80 39  H"]=decay_text_stable          | let decaydict["H-80"]=decay_text_stable
+let decaydict["81 39  H"]=decay_text_beta_plus       | let decaydict["H-81"]=decay_text_beta_plus
+let decaydict["82 39  H"]=decay_text_stable          | let decaydict["H-82"]=decay_text_stable
+let decaydict["78 40  U"]=decay_text_beta_plus       | let decaydict["U-78"]=decay_text_beta_plus
+let decaydict["79 40  U"]=decay_text_beta_plus       | let decaydict["U-79"]=decay_text_beta_plus
+let decaydict["80 40  U"]=decay_text_beta_plus       | let decaydict["U-80"]=decay_text_beta_plus
+let decaydict["81 40  U"]=decay_text_stable          | let decaydict["U-81"]=decay_text_stable
+let decaydict["82 40  U"]=decay_text_beta_plus       | let decaydict["U-82"]=decay_text_beta_plus
+let decaydict["83 40  U"]=decay_text_stable          | let decaydict["U-83"]=decay_text_stable
+let decaydict["79 41 Sq"]=decay_text_beta_plus       | let decaydict["Sq-79"]=decay_text_beta_plus
+let decaydict["80 41 Sq"]=decay_text_beta_plus       | let decaydict["Sq-80"]=decay_text_beta_plus
+let decaydict["81 41 Sq"]=decay_text_beta_plus       | let decaydict["Sq-81"]=decay_text_beta_plus
+let decaydict["82 41 Sq"]=decay_text_stable          | let decaydict["Sq-82"]=decay_text_stable
+let decaydict["83 41 Sq"]=decay_text_beta_plus       | let decaydict["Sq-83"]=decay_text_beta_plus
+let decaydict["84 41 Sq"]=decay_text_stable          | let decaydict["Sq-84"]=decay_text_stable
+let decaydict["83 42 Ua"]=decay_text_beta_plus       | let decaydict["Ua-83"]=decay_text_beta_plus
+let decaydict["84 42 Ua"]=decay_text_beta_plus       | let decaydict["Ua-84"]=decay_text_beta_plus
+let decaydict["85 42 Ua"]=decay_text_beta_plus       | let decaydict["Ua-85"]=decay_text_beta_plus
+
+let stabilitydict[" 1  1 Ju"]=1     | let stabilitydict["Ju-1"]=1    
+let stabilitydict[" 2  1 Ju"]=1     | let stabilitydict["Ju-2"]=1    
+let stabilitydict[" 3  1 Ju"]=1     | let stabilitydict["Ju-3"]=1    
+let stabilitydict[" 4  2  W"]=1     | let stabilitydict["W-4"]=1    
+let stabilitydict[" 5  2  W"]=1     | let stabilitydict["W-5"]=1    
+let stabilitydict[" 5  3 Cq"]=0.017 | let stabilitydict["Cq-5"]=0.017
+let stabilitydict[" 6  3 Cq"]=1     | let stabilitydict["Cq-6"]=1    
+let stabilitydict[" 7  3 Cq"]=1     | let stabilitydict["Cq-7"]=1    
+let stabilitydict[" 7  4 Af"]=0.194 | let stabilitydict["Af-7"]=0.194
+let stabilitydict[" 8  4 Af"]=1     | let stabilitydict["Af-8"]=1    
+let stabilitydict[" 9  4 Af"]=1     | let stabilitydict["Af-9"]=1    
+let stabilitydict["10  4 Af"]=0.289 | let stabilitydict["Af-10"]=0.289
+let stabilitydict[" 9  5 Xl"]=0.329 | let stabilitydict["Xl-9"]=0.329
+let stabilitydict["10  5 Xl"]=0.487 | let stabilitydict["Xl-10"]=0.487
+let stabilitydict["11  5 Xl"]=1.11  | let stabilitydict["Xl-11"]=1.11 
+let stabilitydict["12  5 Xl"]=0.313 | let stabilitydict["Xl-12"]=0.313
+let stabilitydict["10  6 Pq"]=0.049 | let stabilitydict["Pq-10"]=0.049
+let stabilitydict["11  6 Pq"]=0.436 | let stabilitydict["Pq-11"]=0.436
+let stabilitydict["12  6 Pq"]=0.696 | let stabilitydict["Pq-12"]=0.696
+let stabilitydict["13  6 Pq"]=1.281 | let stabilitydict["Pq-13"]=1.281
+let stabilitydict["14  6 Pq"]=0.561 | let stabilitydict["Pq-14"]=0.561
+let stabilitydict["15  6 Pq"]=0.277 | let stabilitydict["Pq-15"]=0.277
+let stabilitydict["13  7 Zz"]=0.525 | let stabilitydict["Zz-13"]=0.525
+let stabilitydict["14  7 Zz"]=0.64  | let stabilitydict["Zz-14"]=0.64 
+let stabilitydict["15  7 Zz"]=1.433 | let stabilitydict["Zz-15"]=1.433
+let stabilitydict["16  7 Zz"]=0.578 | let stabilitydict["Zz-16"]=0.578
+let stabilitydict["14  8 Dx"]=0.334 | let stabilitydict["Dx-14"]=0.334
+let stabilitydict["15  8 Dx"]=0.604 | let stabilitydict["Dx-15"]=0.604
+let stabilitydict["16  8 Dx"]=1.603 | let stabilitydict["Dx-16"]=1.603
+let stabilitydict["17  8 Dx"]=1.588 | let stabilitydict["Dx-17"]=1.588
+let stabilitydict["18  8 Dx"]=1.651 | let stabilitydict["Dx-18"]=1.651
+let stabilitydict["19  8 Dx"]=0.521 | let stabilitydict["Dx-19"]=0.521
+let stabilitydict["17  9 Pm"]=0.684 | let stabilitydict["Pm-17"]=0.684
+let stabilitydict["18  9 Pm"]=0.775 | let stabilitydict["Pm-18"]=0.775
+let stabilitydict["19  9 Pm"]=1.837 | let stabilitydict["Pm-19"]=1.837
+let stabilitydict["20  9 Pm"]=0.721 | let stabilitydict["Pm-20"]=0.721
+let stabilitydict["21  9 Pm"]=0.608 | let stabilitydict["Pm-21"]=0.608
+let stabilitydict["19 10  M"]=0.811 | let stabilitydict["M-19"]=0.811
+let stabilitydict["20 10  M"]=1.94  | let stabilitydict["M-20"]=1.94 
+let stabilitydict["21 10  M"]=1.904 | let stabilitydict["M-21"]=1.904
+let stabilitydict["22 10  M"]=1.849 | let stabilitydict["M-22"]=1.849
+let stabilitydict["23 10  M"]=0.762 | let stabilitydict["M-23"]=0.762
+let stabilitydict["21 11 Fw"]=0.847 | let stabilitydict["Fw-21"]=0.847
+let stabilitydict["22 11 Fw"]=0.839 | let stabilitydict["Fw-22"]=0.839
+let stabilitydict["23 11 Fw"]=1.792 | let stabilitydict["Fw-23"]=1.792
+let stabilitydict["24 11 Fw"]=0.815 | let stabilitydict["Fw-24"]=0.815
+let stabilitydict["25 11 Fw"]=0.737 | let stabilitydict["Fw-25"]=0.737
+let stabilitydict["26 11 Fw"]=0.634 | let stabilitydict["Fw-26"]=0.634
+let stabilitydict["22 12 Pt"]=0.716 | let stabilitydict["Pt-22"]=0.716
+let stabilitydict["23 12 Pt"]=0.793 | let stabilitydict["Pt-23"]=0.793
+let stabilitydict["24 12 Pt"]=1.795 | let stabilitydict["Pt-24"]=1.795
+let stabilitydict["25 12 Pt"]=0.89  | let stabilitydict["Pt-25"]=0.89 
+let stabilitydict["26 12 Pt"]=1.813 | let stabilitydict["Pt-26"]=1.813
+let stabilitydict["27 12 Pt"]=0.868 | let stabilitydict["Pt-27"]=0.868
+let stabilitydict["28 12 Pt"]=0.672 | let stabilitydict["Pt-28"]=0.672
+let stabilitydict["24 13  S"]=0.611 | let stabilitydict["S-24"]=0.611
+let stabilitydict["25 13  S"]=0.789 | let stabilitydict["S-25"]=0.789
+let stabilitydict["26 13  S"]=0.855 | let stabilitydict["S-26"]=0.855
+let stabilitydict["27 13  S"]=0.936 | let stabilitydict["S-27"]=0.936
+let stabilitydict["28 13  S"]=1.924 | let stabilitydict["S-28"]=1.924
+let stabilitydict["29 13  S"]=0.824 | let stabilitydict["S-29"]=0.824
+let stabilitydict["30 13  S"]=0.65  | let stabilitydict["S-30"]=0.65 
+let stabilitydict["26 14 Zq"]=0.706 | let stabilitydict["Zq-26"]=0.706
+let stabilitydict["27 14 Zq"]=0.837 | let stabilitydict["Zq-27"]=0.837
+let stabilitydict["28 14 Zq"]=0.951 | let stabilitydict["Zq-28"]=0.951
+let stabilitydict["29 14 Zq"]=1.035 | let stabilitydict["Zq-29"]=1.035
+let stabilitydict["30 14 Zq"]=0.95  | let stabilitydict["Zq-30"]=0.95 
+let stabilitydict["31 14 Zq"]=0.856 | let stabilitydict["Zq-31"]=0.856
+let stabilitydict["32 14 Zq"]=0.771 | let stabilitydict["Zq-32"]=0.771
+let stabilitydict["28 15 Xc"]=0.765 | let stabilitydict["Xc-28"]=0.765
+let stabilitydict["29 15 Xc"]=0.937 | let stabilitydict["Xc-29"]=0.937
+let stabilitydict["30 15 Xc"]=1.99  | let stabilitydict["Xc-30"]=1.99 
+let stabilitydict["31 15 Xc"]=1.046 | let stabilitydict["Xc-31"]=1.046
+let stabilitydict["32 15 Xc"]=1.004 | let stabilitydict["Xc-32"]=1.004
+let stabilitydict["33 15 Xc"]=0.966 | let stabilitydict["Xc-33"]=0.966
+let stabilitydict["34 15 Xc"]=0.851 | let stabilitydict["Xc-34"]=0.851
+let stabilitydict["30 16 Gy"]=0.756 | let stabilitydict["Gy-30"]=0.756
+let stabilitydict["31 16 Gy"]=0.95  | let stabilitydict["Gy-31"]=0.95 
+let stabilitydict["32 16 Gy"]=0.966 | let stabilitydict["Gy-32"]=0.966
+let stabilitydict["33 16 Gy"]=1.944 | let stabilitydict["Gy-33"]=1.944
+let stabilitydict["34 16 Gy"]=1.956 | let stabilitydict["Gy-34"]=1.956
+let stabilitydict["35 16 Gy"]=0.905 | let stabilitydict["Gy-35"]=0.905
+let stabilitydict["36 16 Gy"]=0.84  | let stabilitydict["Gy-36"]=0.84 
+let stabilitydict["32 17  D"]=0.813 | let stabilitydict["D-32"]=0.813
+let stabilitydict["33 17  D"]=0.877 | let stabilitydict["D-33"]=0.877
+let stabilitydict["34 17  D"]=0.902 | let stabilitydict["D-34"]=0.902
+let stabilitydict["35 17  D"]=0.951 | let stabilitydict["D-35"]=0.951
+let stabilitydict["36 17  D"]=0.921 | let stabilitydict["D-36"]=0.921
+let stabilitydict["37 17  D"]=0.895 | let stabilitydict["D-37"]=0.895
+let stabilitydict["38 17  D"]=0.83  | let stabilitydict["D-38"]=0.83 
+let stabilitydict["39 17  D"]=0.831 | let stabilitydict["D-39"]=0.831
+let stabilitydict["34 18 Fj"]=0.79  | let stabilitydict["Fj-34"]=0.79 
+let stabilitydict["35 18 Fj"]=0.858 | let stabilitydict["Fj-35"]=0.858
+let stabilitydict["36 18 Fj"]=0.933 | let stabilitydict["Fj-36"]=0.933
+let stabilitydict["37 18 Fj"]=0.942 | let stabilitydict["Fj-37"]=0.942
+let stabilitydict["38 18 Fj"]=0.966 | let stabilitydict["Fj-38"]=0.966
+let stabilitydict["39 18 Fj"]=0.937 | let stabilitydict["Fj-39"]=0.937
+let stabilitydict["40 18 Fj"]=1.942 | let stabilitydict["Fj-40"]=1.942
+let stabilitydict["41 18 Fj"]=0.78  | let stabilitydict["Fj-41"]=0.78 
+let stabilitydict["36 19  O"]=0.736 | let stabilitydict["O-36"]=0.736
+let stabilitydict["37 19  O"]=0.85  | let stabilitydict["O-37"]=0.85 
+let stabilitydict["38 19  O"]=0.898 | let stabilitydict["O-38"]=0.898
+let stabilitydict["39 19  O"]=0.959 | let stabilitydict["O-39"]=0.959
+let stabilitydict["40 19  O"]=0.965 | let stabilitydict["O-40"]=0.965
+let stabilitydict["41 19  O"]=1.032 | let stabilitydict["O-41"]=1.032
+let stabilitydict["42 19  O"]=0.873 | let stabilitydict["O-42"]=0.873
+let stabilitydict["43 19  O"]=0.78  | let stabilitydict["O-43"]=0.78 
+let stabilitydict["38 20  C"]=0.784 | let stabilitydict["C-38"]=0.784
+let stabilitydict["39 20  C"]=0.868 | let stabilitydict["C-39"]=0.868
+let stabilitydict["40 20  C"]=0.948 | let stabilitydict["C-40"]=0.948
+let stabilitydict["41 20  C"]=0.988 | let stabilitydict["C-41"]=0.988
+let stabilitydict["42 20  C"]=1.085 | let stabilitydict["C-42"]=1.085
+let stabilitydict["43 20  C"]=0.957 | let stabilitydict["C-43"]=0.957
+let stabilitydict["44 20  C"]=0.892 | let stabilitydict["C-44"]=0.892
+let stabilitydict["45 20  C"]=0.802 | let stabilitydict["C-45"]=0.802
+let stabilitydict["40 21  E"]=0.785 | let stabilitydict["E-40"]=0.785
+let stabilitydict["41 21  E"]=0.899 | let stabilitydict["E-41"]=0.899
+let stabilitydict["42 21  E"]=0.943 | let stabilitydict["E-42"]=0.943
+let stabilitydict["43 21  E"]=1.071 | let stabilitydict["E-43"]=1.071
+let stabilitydict["44 21  E"]=0.974 | let stabilitydict["E-44"]=0.974
+let stabilitydict["45 21  E"]=0.964 | let stabilitydict["E-45"]=0.964
+let stabilitydict["46 21  E"]=0.902 | let stabilitydict["E-46"]=0.902
+let stabilitydict["47 21  E"]=0.849 | let stabilitydict["E-47"]=0.849
+let stabilitydict["48 21  E"]=0.834 | let stabilitydict["E-48"]=0.834
+let stabilitydict["42 22  A"]=0.908 | let stabilitydict["A-42"]=0.908
+let stabilitydict["43 22  A"]=0.983 | let stabilitydict["A-43"]=0.983
+let stabilitydict["44 22  A"]=1.057 | let stabilitydict["A-44"]=1.057
+let stabilitydict["45 22  A"]=1.07  | let stabilitydict["A-45"]=1.07 
+let stabilitydict["46 22  A"]=1.087 | let stabilitydict["A-46"]=1.087
+let stabilitydict["47 22  A"]=1.052 | let stabilitydict["A-47"]=1.052
+let stabilitydict["48 22  A"]=1.023 | let stabilitydict["A-48"]=1.023
+let stabilitydict["49 22  A"]=0.949 | let stabilitydict["A-49"]=0.949
+let stabilitydict["50 22  A"]=0.884 | let stabilitydict["A-50"]=0.884
+let stabilitydict["44 23 Aw"]=0.798 | let stabilitydict["Aw-44"]=0.798
+let stabilitydict["45 23 Aw"]=0.983 | let stabilitydict["Aw-45"]=0.983
+let stabilitydict["46 23 Aw"]=0.942 | let stabilitydict["Aw-46"]=0.942
+let stabilitydict["47 23 Aw"]=0.985 | let stabilitydict["Aw-47"]=0.985
+let stabilitydict["48 23 Aw"]=0.976 | let stabilitydict["Aw-48"]=0.976
+let stabilitydict["49 23 Aw"]=1.943 | let stabilitydict["Aw-49"]=1.943
+let stabilitydict["50 23 Aw"]=1.004 | let stabilitydict["Aw-50"]=1.004
+let stabilitydict["51 23 Aw"]=0.878 | let stabilitydict["Aw-51"]=0.878
+let stabilitydict["52 23 Aw"]=0.795 | let stabilitydict["Aw-52"]=0.795
+let stabilitydict["46 24 Oc"]=0.914 | let stabilitydict["Oc-46"]=0.914
+let stabilitydict["47 24 Oc"]=0.899 | let stabilitydict["Oc-47"]=0.899
+let stabilitydict["48 24 Oc"]=0.938 | let stabilitydict["Oc-48"]=0.938
+let stabilitydict["49 24 Oc"]=0.954 | let stabilitydict["Oc-49"]=0.954
+let stabilitydict["50 24 Oc"]=1     | let stabilitydict["Oc-50"]=1    
+let stabilitydict["51 24 Oc"]=1.056 | let stabilitydict["Oc-51"]=1.056
+let stabilitydict["52 24 Oc"]=0.951 | let stabilitydict["Oc-52"]=0.951
+let stabilitydict["53 24 Oc"]=0.861 | let stabilitydict["Oc-53"]=0.861
+let stabilitydict["54 24 Oc"]=0.807 | let stabilitydict["Oc-54"]=0.807
+let stabilitydict["47 25 Nb"]=0.793 | let stabilitydict["Nb-47"]=0.793
+let stabilitydict["48 25 Nb"]=0.804 | let stabilitydict["Nb-48"]=0.804
+let stabilitydict["49 25 Nb"]=0.869 | let stabilitydict["Nb-49"]=0.869
+let stabilitydict["50 25 Nb"]=0.908 | let stabilitydict["Nb-50"]=0.908
+let stabilitydict["51 25 Nb"]=0.978 | let stabilitydict["Nb-51"]=0.978
+let stabilitydict["52 25 Nb"]=1.056 | let stabilitydict["Nb-52"]=1.056
+let stabilitydict["53 25 Nb"]=0.972 | let stabilitydict["Nb-53"]=0.972
+let stabilitydict["54 25 Nb"]=0.903 | let stabilitydict["Nb-54"]=0.903
+let stabilitydict["55 25 Nb"]=0.869 | let stabilitydict["Nb-55"]=0.869
+let stabilitydict["56 25 Nb"]=0.798 | let stabilitydict["Nb-56"]=0.798
+let stabilitydict["50 26 Xk"]=0.831 | let stabilitydict["Xk-50"]=0.831
+let stabilitydict["51 26 Xk"]=0.893 | let stabilitydict["Xk-51"]=0.893
+let stabilitydict["52 26 Xk"]=0.956 | let stabilitydict["Xk-52"]=0.956
+let stabilitydict["53 26 Xk"]=1.056 | let stabilitydict["Xk-53"]=1.056
+let stabilitydict["54 26 Xk"]=0.993 | let stabilitydict["Xk-54"]=0.993
+let stabilitydict["55 26 Xk"]=0.971 | let stabilitydict["Xk-55"]=0.971
+let stabilitydict["56 26 Xk"]=0.956 | let stabilitydict["Xk-56"]=0.956
+let stabilitydict["57 26 Xk"]=0.903 | let stabilitydict["Xk-57"]=0.903
+let stabilitydict["58 26 Xk"]=0.858 | let stabilitydict["Xk-58"]=0.858
+let stabilitydict["59 26 Xk"]=0.78  | let stabilitydict["Xk-59"]=0.78 
+let stabilitydict["51 27 Ic"]=0.803 | let stabilitydict["Ic-51"]=0.803
+let stabilitydict["52 27 Ic"]=0.888 | let stabilitydict["Ic-52"]=0.888
+let stabilitydict["53 27 Ic"]=0.972 | let stabilitydict["Ic-53"]=0.972
+let stabilitydict["54 27 Ic"]=1.01  | let stabilitydict["Ic-54"]=1.01 
+let stabilitydict["55 27 Ic"]=1.05  | let stabilitydict["Ic-55"]=1.05 
+let stabilitydict["56 27 Ic"]=1.049 | let stabilitydict["Ic-56"]=1.049
+let stabilitydict["57 27 Ic"]=1.052 | let stabilitydict["Ic-57"]=1.052
+let stabilitydict["58 27 Ic"]=1.018 | let stabilitydict["Ic-58"]=1.018
+let stabilitydict["59 27 Ic"]=1.982 | let stabilitydict["Ic-59"]=1.982
+let stabilitydict["60 27 Ic"]=0.93  | let stabilitydict["Ic-60"]=0.93 
+let stabilitydict["61 27 Ic"]=0.877 | let stabilitydict["Ic-61"]=0.877
+let stabilitydict["54 28 Yp"]=0.826 | let stabilitydict["Yp-54"]=0.826
+let stabilitydict["55 28 Yp"]=0.968 | let stabilitydict["Yp-55"]=0.968
+let stabilitydict["56 28 Yp"]=0.943 | let stabilitydict["Yp-56"]=0.943
+let stabilitydict["57 28 Yp"]=0.961 | let stabilitydict["Yp-57"]=0.961
+let stabilitydict["58 28 Yp"]=0.982 | let stabilitydict["Yp-58"]=0.982
+let stabilitydict["59 28 Yp"]=0.965 | let stabilitydict["Yp-59"]=0.965
+let stabilitydict["60 28 Yp"]=1.91  | let stabilitydict["Yp-60"]=1.91 
+let stabilitydict["61 28 Yp"]=0.91  | let stabilitydict["Yp-61"]=0.91 
+let stabilitydict["62 28 Yp"]=0.873 | let stabilitydict["Yp-62"]=0.873
+let stabilitydict["63 28 Yp"]=0.805 | let stabilitydict["Yp-63"]=0.805
+let stabilitydict["56 29 Jx"]=0.884 | let stabilitydict["Jx-56"]=0.884
+let stabilitydict["57 29 Jx"]=0.879 | let stabilitydict["Jx-57"]=0.879
+let stabilitydict["58 29 Jx"]=0.887 | let stabilitydict["Jx-58"]=0.887
+let stabilitydict["59 29 Jx"]=0.926 | let stabilitydict["Jx-59"]=0.926
+let stabilitydict["60 29 Jx"]=0.927 | let stabilitydict["Jx-60"]=0.927
+let stabilitydict["61 29 Jx"]=0.933 | let stabilitydict["Jx-61"]=0.933
+let stabilitydict["62 29 Jx"]=0.905 | let stabilitydict["Jx-62"]=0.905
+let stabilitydict["63 29 Jx"]=0.884 | let stabilitydict["Jx-63"]=0.884
+let stabilitydict["64 29 Jx"]=0.831 | let stabilitydict["Jx-64"]=0.831
+let stabilitydict["65 29 Jx"]=0.787 | let stabilitydict["Jx-65"]=0.787
+let stabilitydict["57 30 Hb"]=0.807 | let stabilitydict["Hb-57"]=0.807
+let stabilitydict["58 30 Hb"]=0.819 | let stabilitydict["Hb-58"]=0.819
+let stabilitydict["59 30 Hb"]=0.845 | let stabilitydict["Hb-59"]=0.845
+let stabilitydict["60 30 Hb"]=0.887 | let stabilitydict["Hb-60"]=0.887
+let stabilitydict["61 30 Hb"]=0.905 | let stabilitydict["Hb-61"]=0.905
+let stabilitydict["62 30 Hb"]=0.926 | let stabilitydict["Hb-62"]=0.926
+let stabilitydict["63 30 Hb"]=0.914 | let stabilitydict["Hb-63"]=0.914
+let stabilitydict["64 30 Hb"]=0.907 | let stabilitydict["Hb-64"]=0.907
+let stabilitydict["65 30 Hb"]=0.87  | let stabilitydict["Hb-65"]=0.87 
+let stabilitydict["66 30 Hb"]=0.839 | let stabilitydict["Hb-66"]=0.839
+let stabilitydict["67 30 Hb"]=0.78  | let stabilitydict["Hb-67"]=0.78 
+let stabilitydict["60 31 At"]=0.766 | let stabilitydict["At-60"]=0.766
+let stabilitydict["61 31 At"]=0.824 | let stabilitydict["At-61"]=0.824
+let stabilitydict["62 31 At"]=0.851 | let stabilitydict["At-62"]=0.851
+let stabilitydict["63 31 At"]=0.888 | let stabilitydict["At-63"]=0.888
+let stabilitydict["64 31 At"]=0.892 | let stabilitydict["At-64"]=0.892
+let stabilitydict["65 31 At"]=0.9   | let stabilitydict["At-65"]=0.9  
+let stabilitydict["66 31 At"]=0.877 | let stabilitydict["At-66"]=0.877
+let stabilitydict["67 31 At"]=0.86  | let stabilitydict["At-67"]=0.86 
+let stabilitydict["68 31 At"]=0.815 | let stabilitydict["At-68"]=0.815
+let stabilitydict["69 31 At"]=0.786 | let stabilitydict["At-69"]=0.786
+let stabilitydict["61 32 Ny"]=0.692 | let stabilitydict["Ny-61"]=0.692
+let stabilitydict["62 32 Ny"]=0.766 | let stabilitydict["Ny-62"]=0.766
+let stabilitydict["63 32 Ny"]=0.809 | let stabilitydict["Ny-63"]=0.809
+let stabilitydict["64 32 Ny"]=0.856 | let stabilitydict["Ny-64"]=0.856
+let stabilitydict["65 32 Ny"]=0.874 | let stabilitydict["Ny-65"]=0.874
+let stabilitydict["66 32 Ny"]=0.897 | let stabilitydict["Ny-66"]=0.897
+let stabilitydict["67 32 Ny"]=0.888 | let stabilitydict["Ny-67"]=0.888
+let stabilitydict["68 32 Ny"]=0.884 | let stabilitydict["Ny-68"]=0.884
+let stabilitydict["69 32 Ny"]=0.858 | let stabilitydict["Ny-69"]=0.858
+let stabilitydict["70 32 Ny"]=0.841 | let stabilitydict["Ny-70"]=0.841
+let stabilitydict["71 32 Ny"]=0.804 | let stabilitydict["Ny-71"]=0.804
+let stabilitydict["72 32 Ny"]=0.787 | let stabilitydict["Ny-72"]=0.787
+let stabilitydict["64 33 Pw"]=0.733 | let stabilitydict["Pw-64"]=0.733
+let stabilitydict["65 33 Pw"]=0.795 | let stabilitydict["Pw-65"]=0.795
+let stabilitydict["66 33 Pw"]=0.825 | let stabilitydict["Pw-66"]=0.825
+let stabilitydict["67 33 Pw"]=0.861 | let stabilitydict["Pw-67"]=0.861
+let stabilitydict["68 33 Pw"]=0.867 | let stabilitydict["Pw-68"]=0.867
+let stabilitydict["69 33 Pw"]=0.881 | let stabilitydict["Pw-69"]=0.881
+let stabilitydict["70 33 Pw"]=0.868 | let stabilitydict["Pw-70"]=0.868
+let stabilitydict["71 33 Pw"]=0.864 | let stabilitydict["Pw-71"]=0.864
+let stabilitydict["72 33 Pw"]=0.839 | let stabilitydict["Pw-72"]=0.839
+let stabilitydict["73 33 Pw"]=0.834 | let stabilitydict["Pw-73"]=0.834
+let stabilitydict["74 33 Pw"]=0.861 | let stabilitydict["Pw-74"]=0.861
+let stabilitydict["65 34 Gk"]=0.663 | let stabilitydict["Gk-65"]=0.663
+let stabilitydict["66 34 Gk"]=0.739 | let stabilitydict["Gk-66"]=0.739
+let stabilitydict["67 34 Gk"]=0.783 | let stabilitydict["Gk-67"]=0.783
+let stabilitydict["68 34 Gk"]=0.83  | let stabilitydict["Gk-68"]=0.83 
+let stabilitydict["69 34 Gk"]=0.852 | let stabilitydict["Gk-69"]=0.852
+let stabilitydict["70 34 Gk"]=0.879 | let stabilitydict["Gk-70"]=0.879
+let stabilitydict["71 34 Gk"]=0.879 | let stabilitydict["Gk-71"]=0.879
+let stabilitydict["72 34 Gk"]=1.773 | let stabilitydict["Gk-72"]=1.773
+let stabilitydict["73 34 Gk"]=0.873 | let stabilitydict["Gk-73"]=0.873
+let stabilitydict["74 34 Gk"]=1.761 | let stabilitydict["Gk-74"]=1.761
+let stabilitydict["75 34 Gk"]=1.838 | let stabilitydict["Gk-75"]=1.838
+let stabilitydict["76 34 Gk"]=0.798 | let stabilitydict["Gk-76"]=0.798
+let stabilitydict["67 35 Qi"]=0.653 | let stabilitydict["Qi-67"]=0.653
+let stabilitydict["68 35 Qi"]=0.711 | let stabilitydict["Qi-68"]=0.711
+let stabilitydict["69 35 Qi"]=0.775 | let stabilitydict["Qi-69"]=0.775
+let stabilitydict["70 35 Qi"]=0.807 | let stabilitydict["Qi-70"]=0.807
+let stabilitydict["71 35 Qi"]=0.846 | let stabilitydict["Qi-71"]=0.846
+let stabilitydict["72 35 Qi"]=0.859 | let stabilitydict["Qi-72"]=0.859
+let stabilitydict["73 35 Qi"]=0.879 | let stabilitydict["Qi-73"]=0.879
+let stabilitydict["74 35 Qi"]=0.878 | let stabilitydict["Qi-74"]=0.878
+let stabilitydict["75 35 Qi"]=0.896 | let stabilitydict["Qi-75"]=0.896
+let stabilitydict["76 35 Qi"]=1.893 | let stabilitydict["Qi-76"]=1.893
+let stabilitydict["77 35 Qi"]=0.836 | let stabilitydict["Qi-77"]=0.836
+let stabilitydict["78 35 Qi"]=0.87  | let stabilitydict["Qi-78"]=0.87 
+let stabilitydict["69 36 Xy"]=0.648 | let stabilitydict["Xy-69"]=0.648
+let stabilitydict["70 36 Xy"]=0.724 | let stabilitydict["Xy-70"]=0.724
+let stabilitydict["71 36 Xy"]=0.769 | let stabilitydict["Xy-71"]=0.769
+let stabilitydict["72 36 Xy"]=0.817 | let stabilitydict["Xy-72"]=0.817
+let stabilitydict["73 36 Xy"]=0.842 | let stabilitydict["Xy-73"]=0.842
+let stabilitydict["74 36 Xy"]=0.873 | let stabilitydict["Xy-74"]=0.873
+let stabilitydict["75 36 Xy"]=0.884 | let stabilitydict["Xy-75"]=0.884
+let stabilitydict["76 36 Xy"]=0.913 | let stabilitydict["Xy-76"]=0.913
+let stabilitydict["77 36 Xy"]=1.949 | let stabilitydict["Xy-77"]=1.949
+let stabilitydict["78 36 Xy"]=0.874 | let stabilitydict["Xy-78"]=0.874
+let stabilitydict["79 36 Xy"]=1.837 | let stabilitydict["Xy-79"]=1.837
+let stabilitydict["71 37 Gq"]=0.648 | let stabilitydict["Gq-71"]=0.648
+let stabilitydict["72 37 Gq"]=0.706 | let stabilitydict["Gq-72"]=0.706
+let stabilitydict["73 37 Gq"]=0.766 | let stabilitydict["Gq-73"]=0.766
+let stabilitydict["74 37 Gq"]=0.797 | let stabilitydict["Gq-74"]=0.797
+let stabilitydict["75 37 Gq"]=0.84  | let stabilitydict["Gq-75"]=0.84 
+let stabilitydict["76 37 Gq"]=0.862 | let stabilitydict["Gq-76"]=0.862
+let stabilitydict["77 37 Gq"]=0.903 | let stabilitydict["Gq-77"]=0.903
+let stabilitydict["78 37 Gq"]=1.95  | let stabilitydict["Gq-78"]=1.95 
+let stabilitydict["79 37 Gq"]=0.885 | let stabilitydict["Gq-79"]=0.885
+let stabilitydict["80 37 Gq"]=1.879 | let stabilitydict["Gq-80"]=1.879
+let stabilitydict["73 38 Bt"]=0.65  | let stabilitydict["Bt-73"]=0.65 
+let stabilitydict["74 38 Bt"]=0.721 | let stabilitydict["Bt-74"]=0.721
+let stabilitydict["75 38 Bt"]=0.764 | let stabilitydict["Bt-75"]=0.764
+let stabilitydict["76 38 Bt"]=0.81  | let stabilitydict["Bt-76"]=0.81 
+let stabilitydict["77 38 Bt"]=0.843 | let stabilitydict["Bt-77"]=0.843
+let stabilitydict["78 38 Bt"]=0.894 | let stabilitydict["Bt-78"]=0.894
+let stabilitydict["79 38 Bt"]=1.954 | let stabilitydict["Bt-79"]=1.954
+let stabilitydict["80 38 Bt"]=0.897 | let stabilitydict["Bt-80"]=0.897
+let stabilitydict["81 38 Bt"]=1.923 | let stabilitydict["Bt-81"]=1.923
+let stabilitydict["75 39  H"]=0.657 | let stabilitydict["H-75"]=0.657
+let stabilitydict["76 39  H"]=0.711 | let stabilitydict["H-76"]=0.711
+let stabilitydict["77 39  H"]=0.768 | let stabilitydict["H-77"]=0.768
+let stabilitydict["78 39  H"]=0.799 | let stabilitydict["H-78"]=0.799
+let stabilitydict["79 39  H"]=0.86  | let stabilitydict["H-79"]=0.86 
+let stabilitydict["80 39  H"]=1.907 | let stabilitydict["H-80"]=1.907
+let stabilitydict["81 39  H"]=0.883 | let stabilitydict["H-81"]=0.883
+let stabilitydict["82 39  H"]=1.916 | let stabilitydict["H-82"]=1.916
+let stabilitydict["78 40  U"]=0.745 | let stabilitydict["U-78"]=0.745
+let stabilitydict["79 40  U"]=0.786 | let stabilitydict["U-79"]=0.786
+let stabilitydict["80 40  U"]=0.829 | let stabilitydict["U-80"]=0.829
+let stabilitydict["81 40  U"]=1.865 | let stabilitydict["U-81"]=1.865
+let stabilitydict["82 40  U"]=0.872 | let stabilitydict["U-82"]=0.872
+let stabilitydict["83 40  U"]=1.914 | let stabilitydict["U-83"]=1.914
+let stabilitydict["79 41 Sq"]=0.753 | let stabilitydict["Sq-79"]=0.753
+let stabilitydict["80 41 Sq"]=0.804 | let stabilitydict["Sq-80"]=0.804
+let stabilitydict["81 41 Sq"]=0.858 | let stabilitydict["Sq-81"]=0.858
+let stabilitydict["82 41 Sq"]=1.777 | let stabilitydict["Sq-82"]=1.777
+let stabilitydict["83 41 Sq"]=0.921 | let stabilitydict["Sq-83"]=0.921
+let stabilitydict["84 41 Sq"]=1.864 | let stabilitydict["Sq-84"]=1.864
+let stabilitydict["83 42 Ua"]=0.848 | let stabilitydict["Ua-83"]=0.848
+let stabilitydict["84 42 Ua"]=0.806 | let stabilitydict["Ua-84"]=0.806
+let stabilitydict["85 42 Ua"]=0.909 | let stabilitydict["Ua-85"]=0.909
+
+let   electrodict[" 1  1 Ju"]=0.5   | let   electrodict["Ju-1"]=0.5  
+let   electrodict[" 2  1 Ju"]=0.5   | let   electrodict["Ju-2"]=0.5  
+let   electrodict[" 3  1 Ju"]=0.5   | let   electrodict["Ju-3"]=0.5  
+let   electrodict[" 4  2  W"]=2     | let   electrodict["W-4"]=2    
+let   electrodict[" 5  2  W"]=2     | let   electrodict["W-5"]=2    
+let   electrodict[" 5  3 Cq"]=0     | let   electrodict["Cq-5"]=0    
+let   electrodict[" 6  3 Cq"]=0     | let   electrodict["Cq-6"]=0    
+let   electrodict[" 7  3 Cq"]=0     | let   electrodict["Cq-7"]=0    
+let   electrodict[" 7  4 Af"]=0.125 | let   electrodict["Af-7"]=0.125
+let   electrodict[" 8  4 Af"]=0.125 | let   electrodict["Af-8"]=0.125
+let   electrodict[" 9  4 Af"]=0.125 | let   electrodict["Af-9"]=0.125
+let   electrodict["10  4 Af"]=0.125 | let   electrodict["Af-10"]=0.125
+let   electrodict[" 9  5 Xl"]=0.333 | let   electrodict["Xl-9"]=0.333
+let   electrodict["10  5 Xl"]=0.333 | let   electrodict["Xl-10"]=0.333
+let   electrodict["11  5 Xl"]=0.333 | let   electrodict["Xl-11"]=0.333
+let   electrodict["12  5 Xl"]=0.333 | let   electrodict["Xl-12"]=0.333
+let   electrodict["10  6 Pq"]=1.166 | let   electrodict["Pq-10"]=1.166
+let   electrodict["11  6 Pq"]=1.166 | let   electrodict["Pq-11"]=1.166
+let   electrodict["12  6 Pq"]=1.166 | let   electrodict["Pq-12"]=1.166
+let   electrodict["13  6 Pq"]=1.166 | let   electrodict["Pq-13"]=1.166
+let   electrodict["14  6 Pq"]=1.166 | let   electrodict["Pq-14"]=1.166
+let   electrodict["15  6 Pq"]=1.166 | let   electrodict["Pq-15"]=1.166
+let   electrodict["13  7 Zz"]=0     | let   electrodict["Zz-13"]=0    
+let   electrodict["14  7 Zz"]=0     | let   electrodict["Zz-14"]=0    
+let   electrodict["15  7 Zz"]=0     | let   electrodict["Zz-15"]=0    
+let   electrodict["16  7 Zz"]=0     | let   electrodict["Zz-16"]=0    
+let   electrodict["14  8 Dx"]=0.071 | let   electrodict["Dx-14"]=0.071
+let   electrodict["15  8 Dx"]=0.071 | let   electrodict["Dx-15"]=0.071
+let   electrodict["16  8 Dx"]=0.071 | let   electrodict["Dx-16"]=0.071
+let   electrodict["17  8 Dx"]=0.071 | let   electrodict["Dx-17"]=0.071
+let   electrodict["18  8 Dx"]=0.071 | let   electrodict["Dx-18"]=0.071
+let   electrodict["19  8 Dx"]=0.071 | let   electrodict["Dx-19"]=0.071
+let   electrodict["17  9 Pm"]=0.233 | let   electrodict["Pm-17"]=0.233
+let   electrodict["18  9 Pm"]=0.233 | let   electrodict["Pm-18"]=0.233
+let   electrodict["19  9 Pm"]=0.233 | let   electrodict["Pm-19"]=0.233
+let   electrodict["20  9 Pm"]=0.233 | let   electrodict["Pm-20"]=0.233
+let   electrodict["21  9 Pm"]=0.233 | let   electrodict["Pm-21"]=0.233
+let   electrodict["19 10  M"]=0.476 | let   electrodict["M-19"]=0.476
+let   electrodict["20 10  M"]=0.476 | let   electrodict["M-20"]=0.476
+let   electrodict["21 10  M"]=0.476 | let   electrodict["M-21"]=0.476
+let   electrodict["22 10  M"]=0.476 | let   electrodict["M-22"]=0.476
+let   electrodict["23 10  M"]=0.476 | let   electrodict["M-23"]=0.476
+let   electrodict["21 11 Fw"]=1.083 | let   electrodict["Fw-21"]=1.083
+let   electrodict["22 11 Fw"]=1.083 | let   electrodict["Fw-22"]=1.083
+let   electrodict["23 11 Fw"]=1.083 | let   electrodict["Fw-23"]=1.083
+let   electrodict["24 11 Fw"]=1.083 | let   electrodict["Fw-24"]=1.083
+let   electrodict["25 11 Fw"]=1.083 | let   electrodict["Fw-25"]=1.083
+let   electrodict["26 11 Fw"]=1.083 | let   electrodict["Fw-26"]=1.083
+let   electrodict["22 12 Pt"]=0     | let   electrodict["Pt-22"]=0    
+let   electrodict["23 12 Pt"]=0     | let   electrodict["Pt-23"]=0    
+let   electrodict["24 12 Pt"]=0     | let   electrodict["Pt-24"]=0    
+let   electrodict["25 12 Pt"]=0     | let   electrodict["Pt-25"]=0    
+let   electrodict["26 12 Pt"]=0     | let   electrodict["Pt-26"]=0    
+let   electrodict["27 12 Pt"]=0     | let   electrodict["Pt-27"]=0    
+let   electrodict["28 12 Pt"]=0     | let   electrodict["Pt-28"]=0    
+let   electrodict["24 13  S"]=0.083 | let   electrodict["S-24"]=0.083
+let   electrodict["25 13  S"]=0.083 | let   electrodict["S-25"]=0.083
+let   electrodict["26 13  S"]=0.083 | let   electrodict["S-26"]=0.083
+let   electrodict["27 13  S"]=0.083 | let   electrodict["S-27"]=0.083
+let   electrodict["28 13  S"]=0.083 | let   electrodict["S-28"]=0.083
+let   electrodict["29 13  S"]=0.083 | let   electrodict["S-29"]=0.083
+let   electrodict["30 13  S"]=0.083 | let   electrodict["S-30"]=0.083
+let   electrodict["26 14 Zq"]=0.25  | let   electrodict["Zq-26"]=0.25 
+let   electrodict["27 14 Zq"]=0.25  | let   electrodict["Zq-27"]=0.25 
+let   electrodict["28 14 Zq"]=0.25  | let   electrodict["Zq-28"]=0.25 
+let   electrodict["29 14 Zq"]=0.25  | let   electrodict["Zq-29"]=0.25 
+let   electrodict["30 14 Zq"]=0.25  | let   electrodict["Zq-30"]=0.25 
+let   electrodict["31 14 Zq"]=0.25  | let   electrodict["Zq-31"]=0.25 
+let   electrodict["32 14 Zq"]=0.25  | let   electrodict["Zq-32"]=0.25 
+let   electrodict["28 15 Xc"]=0.75  | let   electrodict["Xc-28"]=0.75 
+let   electrodict["29 15 Xc"]=0.75  | let   electrodict["Xc-29"]=0.75 
+let   electrodict["30 15 Xc"]=0.75  | let   electrodict["Xc-30"]=0.75 
+let   electrodict["31 15 Xc"]=0.75  | let   electrodict["Xc-31"]=0.75 
+let   electrodict["32 15 Xc"]=0.75  | let   electrodict["Xc-32"]=0.75 
+let   electrodict["33 15 Xc"]=0.75  | let   electrodict["Xc-33"]=0.75 
+let   electrodict["34 15 Xc"]=0.75  | let   electrodict["Xc-34"]=0.75 
+let   electrodict["30 16 Gy"]=0     | let   electrodict["Gy-30"]=0    
+let   electrodict["31 16 Gy"]=0     | let   electrodict["Gy-31"]=0    
+let   electrodict["32 16 Gy"]=0     | let   electrodict["Gy-32"]=0    
+let   electrodict["33 16 Gy"]=0     | let   electrodict["Gy-33"]=0    
+let   electrodict["34 16 Gy"]=0     | let   electrodict["Gy-34"]=0    
+let   electrodict["35 16 Gy"]=0     | let   electrodict["Gy-35"]=0    
+let   electrodict["36 16 Gy"]=0     | let   electrodict["Gy-36"]=0    
+let   electrodict["32 17  D"]=0.025 | let   electrodict["D-32"]=0.025
+let   electrodict["33 17  D"]=0.025 | let   electrodict["D-33"]=0.025
+let   electrodict["34 17  D"]=0.025 | let   electrodict["D-34"]=0.025
+let   electrodict["35 17  D"]=0.025 | let   electrodict["D-35"]=0.025
+let   electrodict["36 17  D"]=0.025 | let   electrodict["D-36"]=0.025
+let   electrodict["37 17  D"]=0.025 | let   electrodict["D-37"]=0.025
+let   electrodict["38 17  D"]=0.025 | let   electrodict["D-38"]=0.025
+let   electrodict["39 17  D"]=0.025 | let   electrodict["D-39"]=0.025
+let   electrodict["34 18 Fj"]=0.066 | let   electrodict["Fj-34"]=0.066
+let   electrodict["35 18 Fj"]=0.066 | let   electrodict["Fj-35"]=0.066
+let   electrodict["36 18 Fj"]=0.066 | let   electrodict["Fj-36"]=0.066
+let   electrodict["37 18 Fj"]=0.066 | let   electrodict["Fj-37"]=0.066
+let   electrodict["38 18 Fj"]=0.066 | let   electrodict["Fj-38"]=0.066
+let   electrodict["39 18 Fj"]=0.066 | let   electrodict["Fj-39"]=0.066
+let   electrodict["40 18 Fj"]=0.066 | let   electrodict["Fj-40"]=0.066
+let   electrodict["41 18 Fj"]=0.066 | let   electrodict["Fj-41"]=0.066
+let   electrodict["36 19  O"]=0.114 | let   electrodict["O-36"]=0.114
+let   electrodict["37 19  O"]=0.114 | let   electrodict["O-37"]=0.114
+let   electrodict["38 19  O"]=0.114 | let   electrodict["O-38"]=0.114
+let   electrodict["39 19  O"]=0.114 | let   electrodict["O-39"]=0.114
+let   electrodict["40 19  O"]=0.114 | let   electrodict["O-40"]=0.114
+let   electrodict["41 19  O"]=0.114 | let   electrodict["O-41"]=0.114
+let   electrodict["42 19  O"]=0.114 | let   electrodict["O-42"]=0.114
+let   electrodict["43 19  O"]=0.114 | let   electrodict["O-43"]=0.114
+let   electrodict["38 20  C"]=0.182 | let   electrodict["C-38"]=0.182
+let   electrodict["39 20  C"]=0.182 | let   electrodict["C-39"]=0.182
+let   electrodict["40 20  C"]=0.182 | let   electrodict["C-40"]=0.182
+let   electrodict["41 20  C"]=0.182 | let   electrodict["C-41"]=0.182
+let   electrodict["42 20  C"]=0.182 | let   electrodict["C-42"]=0.182
+let   electrodict["43 20  C"]=0.182 | let   electrodict["C-43"]=0.182
+let   electrodict["44 20  C"]=0.182 | let   electrodict["C-44"]=0.182
+let   electrodict["45 20  C"]=0.182 | let   electrodict["C-45"]=0.182
+let   electrodict["40 21  E"]=0.288 | let   electrodict["E-40"]=0.288
+let   electrodict["41 21  E"]=0.288 | let   electrodict["E-41"]=0.288
+let   electrodict["42 21  E"]=0.288 | let   electrodict["E-42"]=0.288
+let   electrodict["43 21  E"]=0.288 | let   electrodict["E-43"]=0.288
+let   electrodict["44 21  E"]=0.288 | let   electrodict["E-44"]=0.288
+let   electrodict["45 21  E"]=0.288 | let   electrodict["E-45"]=0.288
+let   electrodict["46 21  E"]=0.288 | let   electrodict["E-46"]=0.288
+let   electrodict["47 21  E"]=0.288 | let   electrodict["E-47"]=0.288
+let   electrodict["48 21  E"]=0.288 | let   electrodict["E-48"]=0.288
+let   electrodict["42 22  A"]=0.476 | let   electrodict["A-42"]=0.476
+let   electrodict["43 22  A"]=0.476 | let   electrodict["A-43"]=0.476
+let   electrodict["44 22  A"]=0.476 | let   electrodict["A-44"]=0.476
+let   electrodict["45 22  A"]=0.476 | let   electrodict["A-45"]=0.476
+let   electrodict["46 22  A"]=0.476 | let   electrodict["A-46"]=0.476
+let   electrodict["47 22  A"]=0.476 | let   electrodict["A-47"]=0.476
+let   electrodict["48 22  A"]=0.476 | let   electrodict["A-48"]=0.476
+let   electrodict["49 22  A"]=0.476 | let   electrodict["A-49"]=0.476
+let   electrodict["50 22  A"]=0.476 | let   electrodict["A-50"]=0.476
+let   electrodict["44 23 Aw"]=1.266 | let   electrodict["Aw-44"]=1.266
+let   electrodict["45 23 Aw"]=1.266 | let   electrodict["Aw-45"]=1.266
+let   electrodict["46 23 Aw"]=1.266 | let   electrodict["Aw-46"]=1.266
+let   electrodict["47 23 Aw"]=1.266 | let   electrodict["Aw-47"]=1.266
+let   electrodict["48 23 Aw"]=1.266 | let   electrodict["Aw-48"]=1.266
+let   electrodict["49 23 Aw"]=1.266 | let   electrodict["Aw-49"]=1.266
+let   electrodict["50 23 Aw"]=1.266 | let   electrodict["Aw-50"]=1.266
+let   electrodict["51 23 Aw"]=1.266 | let   electrodict["Aw-51"]=1.266
+let   electrodict["52 23 Aw"]=1.266 | let   electrodict["Aw-52"]=1.266
+let   electrodict["46 24 Oc"]=0     | let   electrodict["Oc-46"]=0    
+let   electrodict["47 24 Oc"]=0     | let   electrodict["Oc-47"]=0    
+let   electrodict["48 24 Oc"]=0     | let   electrodict["Oc-48"]=0    
+let   electrodict["49 24 Oc"]=0     | let   electrodict["Oc-49"]=0    
+let   electrodict["50 24 Oc"]=0     | let   electrodict["Oc-50"]=0    
+let   electrodict["51 24 Oc"]=0     | let   electrodict["Oc-51"]=0    
+let   electrodict["52 24 Oc"]=0     | let   electrodict["Oc-52"]=0    
+let   electrodict["53 24 Oc"]=0     | let   electrodict["Oc-53"]=0    
+let   electrodict["54 24 Oc"]=0     | let   electrodict["Oc-54"]=0    
+let   electrodict["47 25 Nb"]=0.047 | let   electrodict["Nb-47"]=0.047
+let   electrodict["48 25 Nb"]=0.047 | let   electrodict["Nb-48"]=0.047
+let   electrodict["49 25 Nb"]=0.047 | let   electrodict["Nb-49"]=0.047
+let   electrodict["50 25 Nb"]=0.047 | let   electrodict["Nb-50"]=0.047
+let   electrodict["51 25 Nb"]=0.047 | let   electrodict["Nb-51"]=0.047
+let   electrodict["52 25 Nb"]=0.047 | let   electrodict["Nb-52"]=0.047
+let   electrodict["53 25 Nb"]=0.047 | let   electrodict["Nb-53"]=0.047
+let   electrodict["54 25 Nb"]=0.047 | let   electrodict["Nb-54"]=0.047
+let   electrodict["55 25 Nb"]=0.047 | let   electrodict["Nb-55"]=0.047
+let   electrodict["56 25 Nb"]=0.047 | let   electrodict["Nb-56"]=0.047
+let   electrodict["50 26 Xk"]=0.119 | let   electrodict["Xk-50"]=0.119
+let   electrodict["51 26 Xk"]=0.119 | let   electrodict["Xk-51"]=0.119
+let   electrodict["52 26 Xk"]=0.119 | let   electrodict["Xk-52"]=0.119
+let   electrodict["53 26 Xk"]=0.119 | let   electrodict["Xk-53"]=0.119
+let   electrodict["54 26 Xk"]=0.119 | let   electrodict["Xk-54"]=0.119
+let   electrodict["55 26 Xk"]=0.119 | let   electrodict["Xk-55"]=0.119
+let   electrodict["56 26 Xk"]=0.119 | let   electrodict["Xk-56"]=0.119
+let   electrodict["57 26 Xk"]=0.119 | let   electrodict["Xk-57"]=0.119
+let   electrodict["58 26 Xk"]=0.119 | let   electrodict["Xk-58"]=0.119
+let   electrodict["59 26 Xk"]=0.119 | let   electrodict["Xk-59"]=0.119
+let   electrodict["51 27 Ic"]=0.233 | let   electrodict["Ic-51"]=0.233
+let   electrodict["52 27 Ic"]=0.233 | let   electrodict["Ic-52"]=0.233
+let   electrodict["53 27 Ic"]=0.233 | let   electrodict["Ic-53"]=0.233
+let   electrodict["54 27 Ic"]=0.233 | let   electrodict["Ic-54"]=0.233
+let   electrodict["55 27 Ic"]=0.233 | let   electrodict["Ic-55"]=0.233
+let   electrodict["56 27 Ic"]=0.233 | let   electrodict["Ic-56"]=0.233
+let   electrodict["57 27 Ic"]=0.233 | let   electrodict["Ic-57"]=0.233
+let   electrodict["58 27 Ic"]=0.233 | let   electrodict["Ic-58"]=0.233
+let   electrodict["59 27 Ic"]=0.233 | let   electrodict["Ic-59"]=0.233
+let   electrodict["60 27 Ic"]=0.233 | let   electrodict["Ic-60"]=0.233
+let   electrodict["61 27 Ic"]=0.233 | let   electrodict["Ic-61"]=0.233
+let   electrodict["54 28 Yp"]=0.583 | let   electrodict["Yp-54"]=0.583
+let   electrodict["55 28 Yp"]=0.583 | let   electrodict["Yp-55"]=0.583
+let   electrodict["56 28 Yp"]=0.583 | let   electrodict["Yp-56"]=0.583
+let   electrodict["57 28 Yp"]=0.583 | let   electrodict["Yp-57"]=0.583
+let   electrodict["58 28 Yp"]=0.583 | let   electrodict["Yp-58"]=0.583
+let   electrodict["59 28 Yp"]=0.583 | let   electrodict["Yp-59"]=0.583
+let   electrodict["60 28 Yp"]=0.583 | let   electrodict["Yp-60"]=0.583
+let   electrodict["61 28 Yp"]=0.583 | let   electrodict["Yp-61"]=0.583
+let   electrodict["62 28 Yp"]=0.583 | let   electrodict["Yp-62"]=0.583
+let   electrodict["63 28 Yp"]=0.583 | let   electrodict["Yp-63"]=0.583
+let   electrodict["56 29 Jx"]=0     | let   electrodict["Jx-56"]=0    
+let   electrodict["57 29 Jx"]=0     | let   electrodict["Jx-57"]=0    
+let   electrodict["58 29 Jx"]=0     | let   electrodict["Jx-58"]=0    
+let   electrodict["59 29 Jx"]=0     | let   electrodict["Jx-59"]=0    
+let   electrodict["60 29 Jx"]=0     | let   electrodict["Jx-60"]=0    
+let   electrodict["61 29 Jx"]=0     | let   electrodict["Jx-61"]=0    
+let   electrodict["62 29 Jx"]=0     | let   electrodict["Jx-62"]=0    
+let   electrodict["63 29 Jx"]=0     | let   electrodict["Jx-63"]=0    
+let   electrodict["64 29 Jx"]=0     | let   electrodict["Jx-64"]=0    
+let   electrodict["65 29 Jx"]=0     | let   electrodict["Jx-65"]=0    
+let   electrodict["57 30 Hb"]=0.016 | let   electrodict["Hb-57"]=0.016
+let   electrodict["58 30 Hb"]=0.016 | let   electrodict["Hb-58"]=0.016
+let   electrodict["59 30 Hb"]=0.016 | let   electrodict["Hb-59"]=0.016
+let   electrodict["60 30 Hb"]=0.016 | let   electrodict["Hb-60"]=0.016
+let   electrodict["61 30 Hb"]=0.016 | let   electrodict["Hb-61"]=0.016
+let   electrodict["62 30 Hb"]=0.016 | let   electrodict["Hb-62"]=0.016
+let   electrodict["63 30 Hb"]=0.016 | let   electrodict["Hb-63"]=0.016
+let   electrodict["64 30 Hb"]=0.016 | let   electrodict["Hb-64"]=0.016
+let   electrodict["65 30 Hb"]=0.016 | let   electrodict["Hb-65"]=0.016
+let   electrodict["66 30 Hb"]=0.016 | let   electrodict["Hb-66"]=0.016
+let   electrodict["67 30 Hb"]=0.016 | let   electrodict["Hb-67"]=0.016
+let   electrodict["60 31 At"]=0.046 | let   electrodict["At-60"]=0.046
+let   electrodict["61 31 At"]=0.046 | let   electrodict["At-61"]=0.046
+let   electrodict["62 31 At"]=0.046 | let   electrodict["At-62"]=0.046
+let   electrodict["63 31 At"]=0.046 | let   electrodict["At-63"]=0.046
+let   electrodict["64 31 At"]=0.046 | let   electrodict["At-64"]=0.046
+let   electrodict["65 31 At"]=0.046 | let   electrodict["At-65"]=0.046
+let   electrodict["66 31 At"]=0.046 | let   electrodict["At-66"]=0.046
+let   electrodict["67 31 At"]=0.046 | let   electrodict["At-67"]=0.046
+let   electrodict["68 31 At"]=0.046 | let   electrodict["At-68"]=0.046
+let   electrodict["69 31 At"]=0.046 | let   electrodict["At-69"]=0.046
+let   electrodict["61 32 Ny"]=0.077 | let   electrodict["Ny-61"]=0.077
+let   electrodict["62 32 Ny"]=0.077 | let   electrodict["Ny-62"]=0.077
+let   electrodict["63 32 Ny"]=0.077 | let   electrodict["Ny-63"]=0.077
+let   electrodict["64 32 Ny"]=0.077 | let   electrodict["Ny-64"]=0.077
+let   electrodict["65 32 Ny"]=0.077 | let   electrodict["Ny-65"]=0.077
+let   electrodict["66 32 Ny"]=0.077 | let   electrodict["Ny-66"]=0.077
+let   electrodict["67 32 Ny"]=0.077 | let   electrodict["Ny-67"]=0.077
+let   electrodict["68 32 Ny"]=0.077 | let   electrodict["Ny-68"]=0.077
+let   electrodict["69 32 Ny"]=0.077 | let   electrodict["Ny-69"]=0.077
+let   electrodict["70 32 Ny"]=0.077 | let   electrodict["Ny-70"]=0.077
+let   electrodict["71 32 Ny"]=0.077 | let   electrodict["Ny-71"]=0.077
+let   electrodict["72 32 Ny"]=0.077 | let   electrodict["Ny-72"]=0.077
+let   electrodict["64 33 Pw"]=0.128 | let   electrodict["Pw-64"]=0.128
+let   electrodict["65 33 Pw"]=0.128 | let   electrodict["Pw-65"]=0.128
+let   electrodict["66 33 Pw"]=0.128 | let   electrodict["Pw-66"]=0.128
+let   electrodict["67 33 Pw"]=0.128 | let   electrodict["Pw-67"]=0.128
+let   electrodict["68 33 Pw"]=0.128 | let   electrodict["Pw-68"]=0.128
+let   electrodict["69 33 Pw"]=0.128 | let   electrodict["Pw-69"]=0.128
+let   electrodict["70 33 Pw"]=0.128 | let   electrodict["Pw-70"]=0.128
+let   electrodict["71 33 Pw"]=0.128 | let   electrodict["Pw-71"]=0.128
+let   electrodict["72 33 Pw"]=0.128 | let   electrodict["Pw-72"]=0.128
+let   electrodict["73 33 Pw"]=0.128 | let   electrodict["Pw-73"]=0.128
+let   electrodict["74 33 Pw"]=0.128 | let   electrodict["Pw-74"]=0.128
+let   electrodict["65 34 Gk"]=0.211 | let   electrodict["Gk-65"]=0.211
+let   electrodict["66 34 Gk"]=0.211 | let   electrodict["Gk-66"]=0.211
+let   electrodict["67 34 Gk"]=0.211 | let   electrodict["Gk-67"]=0.211
+let   electrodict["68 34 Gk"]=0.211 | let   electrodict["Gk-68"]=0.211
+let   electrodict["69 34 Gk"]=0.211 | let   electrodict["Gk-69"]=0.211
+let   electrodict["70 34 Gk"]=0.211 | let   electrodict["Gk-70"]=0.211
+let   electrodict["71 34 Gk"]=0.211 | let   electrodict["Gk-71"]=0.211
+let   electrodict["72 34 Gk"]=0.211 | let   electrodict["Gk-72"]=0.211
+let   electrodict["73 34 Gk"]=0.211 | let   electrodict["Gk-73"]=0.211
+let   electrodict["74 34 Gk"]=0.211 | let   electrodict["Gk-74"]=0.211
+let   electrodict["75 34 Gk"]=0.211 | let   electrodict["Gk-75"]=0.211
+let   electrodict["76 34 Gk"]=0.211 | let   electrodict["Gk-76"]=0.211
+let   electrodict["67 35 Qi"]=0.4   | let   electrodict["Qi-67"]=0.4  
+let   electrodict["68 35 Qi"]=0.4   | let   electrodict["Qi-68"]=0.4  
+let   electrodict["69 35 Qi"]=0.4   | let   electrodict["Qi-69"]=0.4  
+let   electrodict["70 35 Qi"]=0.4   | let   electrodict["Qi-70"]=0.4  
+let   electrodict["71 35 Qi"]=0.4   | let   electrodict["Qi-71"]=0.4  
+let   electrodict["72 35 Qi"]=0.4   | let   electrodict["Qi-72"]=0.4  
+let   electrodict["73 35 Qi"]=0.4   | let   electrodict["Qi-73"]=0.4  
+let   electrodict["74 35 Qi"]=0.4   | let   electrodict["Qi-74"]=0.4  
+let   electrodict["75 35 Qi"]=0.4   | let   electrodict["Qi-75"]=0.4  
+let   electrodict["76 35 Qi"]=0.4   | let   electrodict["Qi-76"]=0.4  
+let   electrodict["77 35 Qi"]=0.4   | let   electrodict["Qi-77"]=0.4  
+let   electrodict["78 35 Qi"]=0.4   | let   electrodict["Qi-78"]=0.4  
+let   electrodict["69 36 Xy"]=0.875 | let   electrodict["Xy-69"]=0.875
+let   electrodict["70 36 Xy"]=0.875 | let   electrodict["Xy-70"]=0.875
+let   electrodict["71 36 Xy"]=0.875 | let   electrodict["Xy-71"]=0.875
+let   electrodict["72 36 Xy"]=0.875 | let   electrodict["Xy-72"]=0.875
+let   electrodict["73 36 Xy"]=0.875 | let   electrodict["Xy-73"]=0.875
+let   electrodict["74 36 Xy"]=0.875 | let   electrodict["Xy-74"]=0.875
+let   electrodict["75 36 Xy"]=0.875 | let   electrodict["Xy-75"]=0.875
+let   electrodict["76 36 Xy"]=0.875 | let   electrodict["Xy-76"]=0.875
+let   electrodict["77 36 Xy"]=0.875 | let   electrodict["Xy-77"]=0.875
+let   electrodict["78 36 Xy"]=0.875 | let   electrodict["Xy-78"]=0.875
+let   electrodict["79 36 Xy"]=0.875 | let   electrodict["Xy-79"]=0.875
+let   electrodict["71 37 Gq"]=0     | let   electrodict["Gq-71"]=0    
+let   electrodict["72 37 Gq"]=0     | let   electrodict["Gq-72"]=0    
+let   electrodict["73 37 Gq"]=0     | let   electrodict["Gq-73"]=0    
+let   electrodict["74 37 Gq"]=0     | let   electrodict["Gq-74"]=0    
+let   electrodict["75 37 Gq"]=0     | let   electrodict["Gq-75"]=0    
+let   electrodict["76 37 Gq"]=0     | let   electrodict["Gq-76"]=0    
+let   electrodict["77 37 Gq"]=0     | let   electrodict["Gq-77"]=0    
+let   electrodict["78 37 Gq"]=0     | let   electrodict["Gq-78"]=0    
+let   electrodict["79 37 Gq"]=0     | let   electrodict["Gq-79"]=0    
+let   electrodict["80 37 Gq"]=0     | let   electrodict["Gq-80"]=0    
+let   electrodict["73 38 Bt"]=0.032 | let   electrodict["Bt-73"]=0.032
+let   electrodict["74 38 Bt"]=0.032 | let   electrodict["Bt-74"]=0.032
+let   electrodict["75 38 Bt"]=0.032 | let   electrodict["Bt-75"]=0.032
+let   electrodict["76 38 Bt"]=0.032 | let   electrodict["Bt-76"]=0.032
+let   electrodict["77 38 Bt"]=0.032 | let   electrodict["Bt-77"]=0.032
+let   electrodict["78 38 Bt"]=0.032 | let   electrodict["Bt-78"]=0.032
+let   electrodict["79 38 Bt"]=0.032 | let   electrodict["Bt-79"]=0.032
+let   electrodict["80 38 Bt"]=0.032 | let   electrodict["Bt-80"]=0.032
+let   electrodict["81 38 Bt"]=0.032 | let   electrodict["Bt-81"]=0.032
+let   electrodict["75 39  H"]=0.078 | let   electrodict["H-75"]=0.078
+let   electrodict["76 39  H"]=0.078 | let   electrodict["H-76"]=0.078
+let   electrodict["77 39  H"]=0.078 | let   electrodict["H-77"]=0.078
+let   electrodict["78 39  H"]=0.078 | let   electrodict["H-78"]=0.078
+let   electrodict["79 39  H"]=0.078 | let   electrodict["H-79"]=0.078
+let   electrodict["80 39  H"]=0.078 | let   electrodict["H-80"]=0.078
+let   electrodict["81 39  H"]=0.078 | let   electrodict["H-81"]=0.078
+let   electrodict["82 39  H"]=0.078 | let   electrodict["H-82"]=0.078
+let   electrodict["78 40  U"]=0.179 | let   electrodict["U-78"]=0.179
+let   electrodict["79 40  U"]=0.179 | let   electrodict["U-79"]=0.179
+let   electrodict["80 40  U"]=0.179 | let   electrodict["U-80"]=0.179
+let   electrodict["81 40  U"]=0.179 | let   electrodict["U-81"]=0.179
+let   electrodict["82 40  U"]=0.179 | let   electrodict["U-82"]=0.179
+let   electrodict["83 40  U"]=0.179 | let   electrodict["U-83"]=0.179
+let   electrodict["79 41 Sq"]=0.484 | let   electrodict["Sq-79"]=0.484
+let   electrodict["80 41 Sq"]=0.484 | let   electrodict["Sq-80"]=0.484
+let   electrodict["81 41 Sq"]=0.484 | let   electrodict["Sq-81"]=0.484
+let   electrodict["82 41 Sq"]=0.484 | let   electrodict["Sq-82"]=0.484
+let   electrodict["83 41 Sq"]=0.484 | let   electrodict["Sq-83"]=0.484
+let   electrodict["84 41 Sq"]=0.484 | let   electrodict["Sq-84"]=0.484
+let   electrodict["83 42 Ua"]=0     | let   electrodict["Ua-83"]=0    
+let   electrodict["84 42 Ua"]=0     | let   electrodict["Ua-84"]=0    
+let   electrodict["85 42 Ua"]=0     | let   electrodict["Ua-85"]=0    
+
+" This is not ideal but I set this if statement to 1 if I want to have highlighting show rarity or 0 if I want it to show decay types
+if 0
+syn match rarity_common   /\<1\s\+1\s\+Ju\>/     | syn match rarity_common   /\<Ju-1\>/            
+syn match rarity_common   /\<2\s\+1\s\+Ju\>/     | syn match rarity_common   /\<Ju-2\>/            
+syn match rarity_common   /\<3\s\+1\s\+Ju\>/     | syn match rarity_common   /\<Ju-3\>/            
+syn match rarity_common   /\<4\s\+2\s\+W\>/      | syn match rarity_common   /\<W-4\>/             
+syn match rarity_common   /\<5\s\+2\s\+W\>/      | syn match rarity_common   /\<W-5\>/             
+syn match rarity_common   /\<5\s\+3\s\+Cq\>/     | syn match rarity_common   /\<Cq-5\>/            
+syn match rarity_common   /\<6\s\+3\s\+Cq\>/     | syn match rarity_common   /\<Cq-6\>/            
+syn match rarity_common   /\<7\s\+3\s\+Cq\>/     | syn match rarity_common   /\<Cq-7\>/            
+syn match rarity_common   /\<7\s\+4\s\+Af\>/     | syn match rarity_common   /\<Af-7\>/            
+syn match rarity_common   /\<8\s\+4\s\+Af\>/     | syn match rarity_common   /\<Af-8\>/            
+syn match rarity_common   /\<9\s\+4\s\+Af\>/     | syn match rarity_common   /\<Af-9\>/            
+syn match rarity_rare     /\<10\s\+4\s\+Af\>/    | syn match rarity_rare     /\<Af-10\>/           
+syn match rarity_common   /\<9\s\+5\s\+Xl\>/     | syn match rarity_common   /\<Xl-9\>/            
+syn match rarity_common   /\<10\s\+5\s\+Xl\>/    | syn match rarity_common   /\<Xl-10\>/           
+syn match rarity_common   /\<11\s\+5\s\+Xl\>/    | syn match rarity_common   /\<Xl-11\>/           
+syn match rarity_rare     /\<12\s\+5\s\+Xl\>/    | syn match rarity_rare     /\<Xl-12\>/           
+syn match rarity_common   /\<10\s\+6\s\+Pq\>/    | syn match rarity_common   /\<Pq-10\>/           
+syn match rarity_rare     /\<11\s\+6\s\+Pq\>/    | syn match rarity_rare     /\<Pq-11\>/           
+syn match rarity_common   /\<12\s\+6\s\+Pq\>/    | syn match rarity_common   /\<Pq-12\>/           
+syn match rarity_common   /\<13\s\+6\s\+Pq\>/    | syn match rarity_common   /\<Pq-13\>/           
+syn match rarity_common   /\<14\s\+6\s\+Pq\>/    | syn match rarity_common   /\<Pq-14\>/           
+syn match rarity_common   /\<15\s\+6\s\+Pq\>/    | syn match rarity_common   /\<Pq-15\>/           
+syn match rarity_common   /\<13\s\+7\s\+Zz\>/    | syn match rarity_common   /\<Zz-13\>/           
+syn match rarity_common   /\<14\s\+7\s\+Zz\>/    | syn match rarity_common   /\<Zz-14\>/           
+syn match rarity_common   /\<15\s\+7\s\+Zz\>/    | syn match rarity_common   /\<Zz-15\>/           
+syn match rarity_rare     /\<16\s\+7\s\+Zz\>/    | syn match rarity_rare     /\<Zz-16\>/           
+syn match rarity_rare     /\<14\s\+8\s\+Dx\>/    | syn match rarity_rare     /\<Dx-14\>/           
+syn match rarity_common   /\<15\s\+8\s\+Dx\>/    | syn match rarity_common   /\<Dx-15\>/           
+syn match rarity_common   /\<16\s\+8\s\+Dx\>/    | syn match rarity_common   /\<Dx-16\>/           
+syn match rarity_common   /\<17\s\+8\s\+Dx\>/    | syn match rarity_common   /\<Dx-17\>/           
+syn match rarity_common   /\<18\s\+8\s\+Dx\>/    | syn match rarity_common   /\<Dx-18\>/           
+syn match rarity_rare     /\<19\s\+8\s\+Dx\>/    | syn match rarity_rare     /\<Dx-19\>/           
+syn match rarity_common   /\<17\s\+9\s\+Pm\>/    | syn match rarity_common   /\<Pm-17\>/           
+syn match rarity_common   /\<18\s\+9\s\+Pm\>/    | syn match rarity_common   /\<Pm-18\>/           
+syn match rarity_common   /\<19\s\+9\s\+Pm\>/    | syn match rarity_common   /\<Pm-19\>/           
+syn match rarity_rare     /\<20\s\+9\s\+Pm\>/    | syn match rarity_rare     /\<Pm-20\>/           
+syn match rarity_rare     /\<21\s\+9\s\+Pm\>/    | syn match rarity_rare     /\<Pm-21\>/           
+syn match rarity_rare     /\<19\s\+10\s\+M\>/    | syn match rarity_rare     /\<M-19\>/            
+syn match rarity_common   /\<20\s\+10\s\+M\>/    | syn match rarity_common   /\<M-20\>/            
+syn match rarity_rare     /\<21\s\+10\s\+M\>/    | syn match rarity_rare     /\<M-21\>/            
+syn match rarity_common   /\<22\s\+10\s\+M\>/    | syn match rarity_common   /\<M-22\>/            
+syn match rarity_common   /\<23\s\+10\s\+M\>/    | syn match rarity_common   /\<M-23\>/            
+syn match rarity_rare     /\<21\s\+11\s\+Fw\>/   | syn match rarity_rare     /\<Fw-21\>/           
+syn match rarity_rare     /\<22\s\+11\s\+Fw\>/   | syn match rarity_rare     /\<Fw-22\>/           
+syn match rarity_common   /\<23\s\+11\s\+Fw\>/   | syn match rarity_common   /\<Fw-23\>/           
+syn match rarity_rare     /\<24\s\+11\s\+Fw\>/   | syn match rarity_rare     /\<Fw-24\>/           
+syn match rarity_common   /\<25\s\+11\s\+Fw\>/   | syn match rarity_common   /\<Fw-25\>/           
+syn match rarity_rare     /\<26\s\+11\s\+Fw\>/   | syn match rarity_rare     /\<Fw-26\>/           
+syn match rarity_rare     /\<22\s\+12\s\+Pt\>/   | syn match rarity_rare     /\<Pt-22\>/           
+syn match rarity_rare     /\<23\s\+12\s\+Pt\>/   | syn match rarity_rare     /\<Pt-23\>/           
+syn match rarity_common   /\<24\s\+12\s\+Pt\>/   | syn match rarity_common   /\<Pt-24\>/           
+syn match rarity_common   /\<25\s\+12\s\+Pt\>/   | syn match rarity_common   /\<Pt-25\>/           
+syn match rarity_common   /\<26\s\+12\s\+Pt\>/   | syn match rarity_common   /\<Pt-26\>/           
+syn match rarity_rare     /\<27\s\+12\s\+Pt\>/   | syn match rarity_rare     /\<Pt-27\>/           
+syn match rarity_rare     /\<28\s\+12\s\+Pt\>/   | syn match rarity_rare     /\<Pt-28\>/           
+syn match rarity_rare     /\<24\s\+13\s\+S\>/    | syn match rarity_rare     /\<S-24\>/            
+syn match rarity_common   /\<25\s\+13\s\+S\>/    | syn match rarity_common   /\<S-25\>/            
+syn match rarity_common   /\<26\s\+13\s\+S\>/    | syn match rarity_common   /\<S-26\>/            
+syn match rarity_rare     /\<27\s\+13\s\+S\>/    | syn match rarity_rare     /\<S-27\>/            
+syn match rarity_rare     /\<28\s\+13\s\+S\>/    | syn match rarity_rare     /\<S-28\>/            
+syn match rarity_rare     /\<29\s\+13\s\+S\>/    | syn match rarity_rare     /\<S-29\>/            
+syn match rarity_rare     /\<30\s\+13\s\+S\>/    | syn match rarity_rare     /\<S-30\>/            
+syn match rarity_rare     /\<26\s\+14\s\+Zq\>/   | syn match rarity_rare     /\<Zq-26\>/           
+syn match rarity_rare     /\<27\s\+14\s\+Zq\>/   | syn match rarity_rare     /\<Zq-27\>/           
+syn match rarity_rare     /\<28\s\+14\s\+Zq\>/   | syn match rarity_rare     /\<Zq-28\>/           
+syn match rarity_rare     /\<29\s\+14\s\+Zq\>/   | syn match rarity_rare     /\<Zq-29\>/           
+syn match rarity_rare     /\<30\s\+14\s\+Zq\>/   | syn match rarity_rare     /\<Zq-30\>/           
+syn match rarity_rare     /\<31\s\+14\s\+Zq\>/   | syn match rarity_rare     /\<Zq-31\>/           
+syn match rarity_common   /\<32\s\+14\s\+Zq\>/   | syn match rarity_common   /\<Zq-32\>/           
+syn match rarity_rare     /\<28\s\+15\s\+Xc\>/   | syn match rarity_rare     /\<Xc-28\>/           
+syn match rarity_rare     /\<29\s\+15\s\+Xc\>/   | syn match rarity_rare     /\<Xc-29\>/           
+syn match rarity_common   /\<30\s\+15\s\+Xc\>/   | syn match rarity_common   /\<Xc-30\>/           
+syn match rarity_common   /\<31\s\+15\s\+Xc\>/   | syn match rarity_common   /\<Xc-31\>/           
+syn match rarity_common   /\<32\s\+15\s\+Xc\>/   | syn match rarity_common   /\<Xc-32\>/           
+syn match rarity_rare     /\<33\s\+15\s\+Xc\>/   | syn match rarity_rare     /\<Xc-33\>/           
+syn match rarity_common   /\<34\s\+15\s\+Xc\>/   | syn match rarity_common   /\<Xc-34\>/           
+syn match rarity_rare     /\<30\s\+16\s\+Gy\>/   | syn match rarity_rare     /\<Gy-30\>/           
+syn match rarity_rare     /\<31\s\+16\s\+Gy\>/   | syn match rarity_rare     /\<Gy-31\>/           
+syn match rarity_rare     /\<32\s\+16\s\+Gy\>/   | syn match rarity_rare     /\<Gy-32\>/           
+syn match rarity_rare     /\<33\s\+16\s\+Gy\>/   | syn match rarity_rare     /\<Gy-33\>/           
+syn match rarity_common   /\<34\s\+16\s\+Gy\>/   | syn match rarity_common   /\<Gy-34\>/           
+syn match rarity_rare     /\<35\s\+16\s\+Gy\>/   | syn match rarity_rare     /\<Gy-35\>/           
+syn match rarity_rare     /\<36\s\+16\s\+Gy\>/   | syn match rarity_rare     /\<Gy-36\>/           
+syn match rarity_rare     /\<32\s\+17\s\+D\>/    | syn match rarity_rare     /\<D-32\>/            
+syn match rarity_rare     /\<33\s\+17\s\+D\>/    | syn match rarity_rare     /\<D-33\>/            
+syn match rarity_rare     /\<34\s\+17\s\+D\>/    | syn match rarity_rare     /\<D-34\>/            
+syn match rarity_rare     /\<35\s\+17\s\+D\>/    | syn match rarity_rare     /\<D-35\>/            
+syn match rarity_rare     /\<36\s\+17\s\+D\>/    | syn match rarity_rare     /\<D-36\>/            
+syn match rarity_common   /\<37\s\+17\s\+D\>/    | syn match rarity_common   /\<D-37\>/            
+syn match rarity_rare     /\<38\s\+17\s\+D\>/    | syn match rarity_rare     /\<D-38\>/            
+syn match rarity_rare     /\<39\s\+17\s\+D\>/    | syn match rarity_rare     /\<D-39\>/            
+syn match rarity_rare     /\<34\s\+18\s\+Fj\>/   | syn match rarity_rare     /\<Fj-34\>/           
+syn match rarity_rare     /\<35\s\+18\s\+Fj\>/   | syn match rarity_rare     /\<Fj-35\>/           
+syn match rarity_rare     /\<36\s\+18\s\+Fj\>/   | syn match rarity_rare     /\<Fj-36\>/           
+syn match rarity_common   /\<37\s\+18\s\+Fj\>/   | syn match rarity_common   /\<Fj-37\>/           
+syn match rarity_rare     /\<38\s\+18\s\+Fj\>/   | syn match rarity_rare     /\<Fj-38\>/           
+syn match rarity_rare     /\<39\s\+18\s\+Fj\>/   | syn match rarity_rare     /\<Fj-39\>/           
+syn match rarity_rare     /\<40\s\+18\s\+Fj\>/   | syn match rarity_rare     /\<Fj-40\>/           
+syn match rarity_rare     /\<41\s\+18\s\+Fj\>/   | syn match rarity_rare     /\<Fj-41\>/           
+syn match rarity_rare     /\<36\s\+19\s\+O\>/    | syn match rarity_rare     /\<O-36\>/            
+syn match rarity_rare     /\<37\s\+19\s\+O\>/    | syn match rarity_rare     /\<O-37\>/            
+syn match rarity_rare     /\<38\s\+19\s\+O\>/    | syn match rarity_rare     /\<O-38\>/            
+syn match rarity_rare     /\<39\s\+19\s\+O\>/    | syn match rarity_rare     /\<O-39\>/            
+syn match rarity_rare     /\<40\s\+19\s\+O\>/    | syn match rarity_rare     /\<O-40\>/            
+syn match rarity_rare     /\<41\s\+19\s\+O\>/    | syn match rarity_rare     /\<O-41\>/            
+syn match rarity_rare     /\<42\s\+19\s\+O\>/    | syn match rarity_rare     /\<O-42\>/            
+syn match rarity_rare     /\<43\s\+19\s\+O\>/    | syn match rarity_rare     /\<O-43\>/            
+syn match rarity_rare     /\<38\s\+20\s\+C\>/    | syn match rarity_rare     /\<C-38\>/            
+syn match rarity_rare     /\<39\s\+20\s\+C\>/    | syn match rarity_rare     /\<C-39\>/            
+syn match rarity_rare     /\<40\s\+20\s\+C\>/    | syn match rarity_rare     /\<C-40\>/            
+syn match rarity_rare     /\<41\s\+20\s\+C\>/    | syn match rarity_rare     /\<C-41\>/            
+syn match rarity_rare     /\<42\s\+20\s\+C\>/    | syn match rarity_rare     /\<C-42\>/            
+syn match rarity_rare     /\<43\s\+20\s\+C\>/    | syn match rarity_rare     /\<C-43\>/            
+syn match rarity_rare     /\<44\s\+20\s\+C\>/    | syn match rarity_rare     /\<C-44\>/            
+syn match rarity_rare     /\<45\s\+20\s\+C\>/    | syn match rarity_rare     /\<C-45\>/            
+syn match rarity_rare     /\<40\s\+21\s\+E\>/    | syn match rarity_rare     /\<E-40\>/            
+syn match rarity_rare     /\<41\s\+21\s\+E\>/    | syn match rarity_rare     /\<E-41\>/            
+syn match rarity_rare     /\<42\s\+21\s\+E\>/    | syn match rarity_rare     /\<E-42\>/            
+syn match rarity_rare     /\<43\s\+21\s\+E\>/    | syn match rarity_rare     /\<E-43\>/            
+syn match rarity_rare     /\<44\s\+21\s\+E\>/    | syn match rarity_rare     /\<E-44\>/            
+syn match rarity_rare     /\<45\s\+21\s\+E\>/    | syn match rarity_rare     /\<E-45\>/            
+syn match rarity_rare     /\<46\s\+21\s\+E\>/    | syn match rarity_rare     /\<E-46\>/            
+syn match rarity_rare     /\<47\s\+21\s\+E\>/    | syn match rarity_rare     /\<E-47\>/            
+syn match rarity_rare     /\<48\s\+21\s\+E\>/    | syn match rarity_rare     /\<E-48\>/            
+syn match rarity_rare     /\<42\s\+22\s\+A\>/    | syn match rarity_rare     /\<A-42\>/            
+syn match rarity_rare     /\<43\s\+22\s\+A\>/    | syn match rarity_rare     /\<A-43\>/            
+syn match rarity_rare     /\<44\s\+22\s\+A\>/    | syn match rarity_rare     /\<A-44\>/            
+syn match rarity_rare     /\<45\s\+22\s\+A\>/    | syn match rarity_rare     /\<A-45\>/            
+syn match rarity_rare     /\<46\s\+22\s\+A\>/    | syn match rarity_rare     /\<A-46\>/            
+syn match rarity_rare     /\<47\s\+22\s\+A\>/    | syn match rarity_rare     /\<A-47\>/            
+syn match rarity_rare     /\<48\s\+22\s\+A\>/    | syn match rarity_rare     /\<A-48\>/            
+syn match rarity_rare     /\<49\s\+22\s\+A\>/    | syn match rarity_rare     /\<A-49\>/            
+syn match rarity_rare     /\<50\s\+22\s\+A\>/    | syn match rarity_rare     /\<A-50\>/            
+syn match rarity_rare     /\<44\s\+23\s\+Aw\>/   | syn match rarity_rare     /\<Aw-44\>/           
+syn match rarity_rare     /\<45\s\+23\s\+Aw\>/   | syn match rarity_rare     /\<Aw-45\>/           
+syn match rarity_rare     /\<46\s\+23\s\+Aw\>/   | syn match rarity_rare     /\<Aw-46\>/           
+syn match rarity_rare     /\<47\s\+23\s\+Aw\>/   | syn match rarity_rare     /\<Aw-47\>/           
+syn match rarity_rare     /\<48\s\+23\s\+Aw\>/   | syn match rarity_rare     /\<Aw-48\>/           
+syn match rarity_rare     /\<49\s\+23\s\+Aw\>/   | syn match rarity_rare     /\<Aw-49\>/           
+syn match rarity_common   /\<50\s\+23\s\+Aw\>/   | syn match rarity_common   /\<Aw-50\>/           
+syn match rarity_rare     /\<51\s\+23\s\+Aw\>/   | syn match rarity_rare     /\<Aw-51\>/           
+syn match rarity_rare     /\<52\s\+23\s\+Aw\>/   | syn match rarity_rare     /\<Aw-52\>/           
+syn match rarity_rare     /\<46\s\+24\s\+Oc\>/   | syn match rarity_rare     /\<Oc-46\>/           
+syn match rarity_rare     /\<47\s\+24\s\+Oc\>/   | syn match rarity_rare     /\<Oc-47\>/           
+syn match rarity_rare     /\<48\s\+24\s\+Oc\>/   | syn match rarity_rare     /\<Oc-48\>/           
+syn match rarity_rare     /\<49\s\+24\s\+Oc\>/   | syn match rarity_rare     /\<Oc-49\>/           
+syn match rarity_rare     /\<50\s\+24\s\+Oc\>/   | syn match rarity_rare     /\<Oc-50\>/           
+syn match rarity_rare     /\<51\s\+24\s\+Oc\>/   | syn match rarity_rare     /\<Oc-51\>/           
+syn match rarity_rare     /\<52\s\+24\s\+Oc\>/   | syn match rarity_rare     /\<Oc-52\>/           
+syn match rarity_rare     /\<53\s\+24\s\+Oc\>/   | syn match rarity_rare     /\<Oc-53\>/           
+syn match rarity_rare     /\<54\s\+24\s\+Oc\>/   | syn match rarity_rare     /\<Oc-54\>/           
+syn match rarity_rare     /\<47\s\+25\s\+Nb\>/   | syn match rarity_rare     /\<Nb-47\>/           
+syn match rarity_rare     /\<48\s\+25\s\+Nb\>/   | syn match rarity_rare     /\<Nb-48\>/           
+syn match rarity_rare     /\<49\s\+25\s\+Nb\>/   | syn match rarity_rare     /\<Nb-49\>/           
+syn match rarity_rare     /\<50\s\+25\s\+Nb\>/   | syn match rarity_rare     /\<Nb-50\>/           
+syn match rarity_rare     /\<51\s\+25\s\+Nb\>/   | syn match rarity_rare     /\<Nb-51\>/           
+syn match rarity_rare     /\<52\s\+25\s\+Nb\>/   | syn match rarity_rare     /\<Nb-52\>/           
+syn match rarity_rare     /\<53\s\+25\s\+Nb\>/   | syn match rarity_rare     /\<Nb-53\>/           
+syn match rarity_common   /\<54\s\+25\s\+Nb\>/   | syn match rarity_common   /\<Nb-54\>/           
+syn match rarity_rare     /\<55\s\+25\s\+Nb\>/   | syn match rarity_rare     /\<Nb-55\>/           
+syn match rarity_rare     /\<56\s\+25\s\+Nb\>/   | syn match rarity_rare     /\<Nb-56\>/           
+syn match rarity_rare     /\<50\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-50\>/           
+syn match rarity_rare     /\<51\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-51\>/           
+syn match rarity_rare     /\<52\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-52\>/           
+syn match rarity_rare     /\<53\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-53\>/           
+syn match rarity_rare     /\<54\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-54\>/           
+syn match rarity_rare     /\<55\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-55\>/           
+syn match rarity_rare     /\<56\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-56\>/           
+syn match rarity_rare     /\<57\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-57\>/           
+syn match rarity_rare     /\<58\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-58\>/           
+syn match rarity_rare     /\<59\s\+26\s\+Xk\>/   | syn match rarity_rare     /\<Xk-59\>/           
+syn match rarity_rare     /\<51\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-51\>/           
+syn match rarity_rare     /\<52\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-52\>/           
+syn match rarity_rare     /\<53\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-53\>/           
+syn match rarity_rare     /\<54\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-54\>/           
+syn match rarity_rare     /\<55\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-55\>/           
+syn match rarity_rare     /\<56\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-56\>/           
+syn match rarity_rare     /\<57\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-57\>/           
+syn match rarity_rare     /\<58\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-58\>/           
+syn match rarity_rare     /\<59\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-59\>/           
+syn match rarity_rare     /\<60\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-60\>/           
+syn match rarity_rare     /\<61\s\+27\s\+Ic\>/   | syn match rarity_rare     /\<Ic-61\>/           
+syn match rarity_rare     /\<54\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-54\>/           
+syn match rarity_rare     /\<55\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-55\>/           
+syn match rarity_rare     /\<56\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-56\>/           
+syn match rarity_rare     /\<57\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-57\>/           
+syn match rarity_rare     /\<58\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-58\>/           
+syn match rarity_rare     /\<59\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-59\>/           
+syn match rarity_rare     /\<60\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-60\>/           
+syn match rarity_rare     /\<61\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-61\>/           
+syn match rarity_rare     /\<62\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-62\>/           
+syn match rarity_rare     /\<63\s\+28\s\+Yp\>/   | syn match rarity_rare     /\<Yp-63\>/           
+syn match rarity_rare     /\<56\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-56\>/           
+syn match rarity_rare     /\<57\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-57\>/           
+syn match rarity_rare     /\<58\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-58\>/           
+syn match rarity_rare     /\<59\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-59\>/           
+syn match rarity_rare     /\<60\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-60\>/           
+syn match rarity_rare     /\<61\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-61\>/           
+syn match rarity_rare     /\<62\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-62\>/           
+syn match rarity_rare     /\<63\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-63\>/           
+syn match rarity_rare     /\<64\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-64\>/           
+syn match rarity_rare     /\<65\s\+29\s\+Jx\>/   | syn match rarity_rare     /\<Jx-65\>/           
+syn match rarity_rare     /\<57\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-57\>/           
+syn match rarity_rare     /\<58\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-58\>/           
+syn match rarity_rare     /\<59\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-59\>/           
+syn match rarity_rare     /\<60\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-60\>/           
+syn match rarity_rare     /\<61\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-61\>/           
+syn match rarity_rare     /\<62\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-62\>/           
+syn match rarity_rare     /\<63\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-63\>/           
+syn match rarity_rare     /\<64\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-64\>/           
+syn match rarity_rare     /\<65\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-65\>/           
+syn match rarity_rare     /\<66\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-66\>/           
+syn match rarity_rare     /\<67\s\+30\s\+Hb\>/   | syn match rarity_rare     /\<Hb-67\>/           
+syn match rarity_rare     /\<60\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-60\>/           
+syn match rarity_rare     /\<61\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-61\>/           
+syn match rarity_rare     /\<62\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-62\>/           
+syn match rarity_rare     /\<63\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-63\>/           
+syn match rarity_rare     /\<64\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-64\>/           
+syn match rarity_rare     /\<65\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-65\>/           
+syn match rarity_rare     /\<66\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-66\>/           
+syn match rarity_rare     /\<67\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-67\>/           
+syn match rarity_rare     /\<68\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-68\>/           
+syn match rarity_rare     /\<69\s\+31\s\+At\>/   | syn match rarity_rare     /\<At-69\>/           
+syn match rarity_rare     /\<61\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-61\>/           
+syn match rarity_rare     /\<62\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-62\>/           
+syn match rarity_rare     /\<63\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-63\>/           
+syn match rarity_rare     /\<64\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-64\>/           
+syn match rarity_rare     /\<65\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-65\>/           
+syn match rarity_rare     /\<66\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-66\>/           
+syn match rarity_rare     /\<67\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-67\>/           
+syn match rarity_rare     /\<68\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-68\>/           
+syn match rarity_rare     /\<69\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-69\>/           
+syn match rarity_rare     /\<70\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-70\>/           
+syn match rarity_rare     /\<71\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-71\>/           
+syn match rarity_rare     /\<72\s\+32\s\+Ny\>/   | syn match rarity_rare     /\<Ny-72\>/           
+syn match rarity_rare     /\<64\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-64\>/           
+syn match rarity_rare     /\<65\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-65\>/           
+syn match rarity_rare     /\<66\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-66\>/           
+syn match rarity_rare     /\<67\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-67\>/           
+syn match rarity_rare     /\<68\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-68\>/           
+syn match rarity_rare     /\<69\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-69\>/           
+syn match rarity_rare     /\<70\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-70\>/           
+syn match rarity_rare     /\<71\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-71\>/           
+syn match rarity_rare     /\<72\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-72\>/           
+syn match rarity_rare     /\<73\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-73\>/           
+syn match rarity_rare     /\<74\s\+33\s\+Pw\>/   | syn match rarity_rare     /\<Pw-74\>/           
+syn match rarity_rare     /\<65\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-65\>/           
+syn match rarity_rare     /\<66\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-66\>/           
+syn match rarity_rare     /\<67\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-67\>/           
+syn match rarity_rare     /\<68\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-68\>/           
+syn match rarity_rare     /\<69\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-69\>/           
+syn match rarity_rare     /\<70\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-70\>/           
+syn match rarity_rare     /\<71\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-71\>/           
+syn match rarity_rare     /\<72\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-72\>/           
+syn match rarity_rare     /\<73\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-73\>/           
+syn match rarity_rare     /\<74\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-74\>/           
+syn match rarity_rare     /\<75\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-75\>/           
+syn match rarity_rare     /\<76\s\+34\s\+Gk\>/   | syn match rarity_rare     /\<Gk-76\>/           
+syn match rarity_rare     /\<67\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-67\>/           
+syn match rarity_rare     /\<68\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-68\>/           
+syn match rarity_rare     /\<69\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-69\>/           
+syn match rarity_rare     /\<70\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-70\>/           
+syn match rarity_rare     /\<71\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-71\>/           
+syn match rarity_rare     /\<72\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-72\>/           
+syn match rarity_rare     /\<73\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-73\>/           
+syn match rarity_rare     /\<74\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-74\>/           
+syn match rarity_rare     /\<75\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-75\>/           
+syn match rarity_rare     /\<76\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-76\>/           
+syn match rarity_rare     /\<77\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-77\>/           
+syn match rarity_rare     /\<78\s\+35\s\+Qi\>/   | syn match rarity_rare     /\<Qi-78\>/           
+syn match rarity_rare     /\<69\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-69\>/           
+syn match rarity_rare     /\<70\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-70\>/           
+syn match rarity_rare     /\<71\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-71\>/           
+syn match rarity_rare     /\<72\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-72\>/           
+syn match rarity_rare     /\<73\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-73\>/           
+syn match rarity_rare     /\<74\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-74\>/           
+syn match rarity_rare     /\<75\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-75\>/           
+syn match rarity_rare     /\<76\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-76\>/           
+syn match rarity_rare     /\<77\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-77\>/           
+syn match rarity_rare     /\<78\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-78\>/           
+syn match rarity_rare     /\<79\s\+36\s\+Xy\>/   | syn match rarity_rare     /\<Xy-79\>/           
+syn match rarity_rare     /\<71\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-71\>/           
+syn match rarity_rare     /\<72\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-72\>/           
+syn match rarity_rare     /\<73\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-73\>/           
+syn match rarity_rare     /\<74\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-74\>/           
+syn match rarity_rare     /\<75\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-75\>/           
+syn match rarity_rare     /\<76\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-76\>/           
+syn match rarity_rare     /\<77\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-77\>/           
+syn match rarity_rare     /\<78\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-78\>/           
+syn match rarity_rare     /\<79\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-79\>/           
+syn match rarity_rare     /\<80\s\+37\s\+Gq\>/   | syn match rarity_rare     /\<Gq-80\>/           
+syn match rarity_rare     /\<73\s\+38\s\+Bt\>/   | syn match rarity_rare     /\<Bt-73\>/           
+syn match rarity_rare     /\<74\s\+38\s\+Bt\>/   | syn match rarity_rare     /\<Bt-74\>/           
+syn match rarity_rare     /\<75\s\+38\s\+Bt\>/   | syn match rarity_rare     /\<Bt-75\>/           
+syn match rarity_rare     /\<76\s\+38\s\+Bt\>/   | syn match rarity_rare     /\<Bt-76\>/           
+syn match rarity_rare     /\<77\s\+38\s\+Bt\>/   | syn match rarity_rare     /\<Bt-77\>/           
+syn match rarity_rare     /\<78\s\+38\s\+Bt\>/   | syn match rarity_rare     /\<Bt-78\>/           
+syn match rarity_rare     /\<79\s\+38\s\+Bt\>/   | syn match rarity_rare     /\<Bt-79\>/           
+syn match rarity_rare     /\<80\s\+38\s\+Bt\>/   | syn match rarity_rare     /\<Bt-80\>/           
+syn match rarity_rare     /\<81\s\+38\s\+Bt\>/   | syn match rarity_rare     /\<Bt-81\>/           
+syn match rarity_rare     /\<75\s\+39\s\+H\>/    | syn match rarity_rare     /\<H-75\>/            
+syn match rarity_rare     /\<76\s\+39\s\+H\>/    | syn match rarity_rare     /\<H-76\>/            
+syn match rarity_rare     /\<77\s\+39\s\+H\>/    | syn match rarity_rare     /\<H-77\>/            
+syn match rarity_rare     /\<78\s\+39\s\+H\>/    | syn match rarity_rare     /\<H-78\>/            
+syn match rarity_rare     /\<79\s\+39\s\+H\>/    | syn match rarity_rare     /\<H-79\>/            
+syn match rarity_rare     /\<80\s\+39\s\+H\>/    | syn match rarity_rare     /\<H-80\>/            
+syn match rarity_rare     /\<81\s\+39\s\+H\>/    | syn match rarity_rare     /\<H-81\>/            
+syn match rarity_rare     /\<82\s\+39\s\+H\>/    | syn match rarity_rare     /\<H-82\>/            
+syn match rarity_rare     /\<78\s\+40\s\+U\>/    | syn match rarity_rare     /\<U-78\>/            
+syn match rarity_rare     /\<79\s\+40\s\+U\>/    | syn match rarity_rare     /\<U-79\>/            
+syn match rarity_rare     /\<80\s\+40\s\+U\>/    | syn match rarity_rare     /\<U-80\>/            
+syn match rarity_rare     /\<81\s\+40\s\+U\>/    | syn match rarity_rare     /\<U-81\>/            
+syn match rarity_rare     /\<82\s\+40\s\+U\>/    | syn match rarity_rare     /\<U-82\>/            
+syn match rarity_rare     /\<83\s\+40\s\+U\>/    | syn match rarity_rare     /\<U-83\>/            
+syn match rarity_rare     /\<79\s\+41\s\+Sq\>/   | syn match rarity_rare     /\<Sq-79\>/           
+syn match rarity_rare     /\<80\s\+41\s\+Sq\>/   | syn match rarity_rare     /\<Sq-80\>/           
+syn match rarity_rare     /\<81\s\+41\s\+Sq\>/   | syn match rarity_rare     /\<Sq-81\>/           
+syn match rarity_rare     /\<82\s\+41\s\+Sq\>/   | syn match rarity_rare     /\<Sq-82\>/           
+syn match rarity_rare     /\<83\s\+41\s\+Sq\>/   | syn match rarity_rare     /\<Sq-83\>/           
+syn match rarity_rare     /\<84\s\+41\s\+Sq\>/   | syn match rarity_rare     /\<Sq-84\>/           
+syn match rarity_rare     /\<83\s\+42\s\+Ua\>/   | syn match rarity_rare     /\<Ua-83\>/           
+syn match rarity_rare     /\<84\s\+42\s\+Ua\>/   | syn match rarity_rare     /\<Ua-84\>/           
+syn match rarity_rare     /\<85\s\+42\s\+Ua\>/   | syn match rarity_rare     /\<Ua-85\>/           
+
+else
+syn match Decay_type_stable          /\<1\s\+1\s\+Ju\>/     | syn match Decay_type_stable          /\<Ju-1\>/            
+syn match Decay_type_stable          /\<2\s\+1\s\+Ju\>/     | syn match Decay_type_stable          /\<Ju-2\>/            
+syn match Decay_type_stable          /\<3\s\+1\s\+Ju\>/     | syn match Decay_type_stable          /\<Ju-3\>/            
+syn match Decay_type_stable          /\<4\s\+2\s\+W\>/      | syn match Decay_type_stable          /\<W-4\>/             
+syn match Decay_type_stable          /\<5\s\+2\s\+W\>/      | syn match Decay_type_stable          /\<W-5\>/             
+syn match Decay_type_beta_plus       /\<5\s\+3\s\+Cq\>/     | syn match Decay_type_beta_plus       /\<Cq-5\>/            
+syn match Decay_type_stable          /\<6\s\+3\s\+Cq\>/     | syn match Decay_type_stable          /\<Cq-6\>/            
+syn match Decay_type_stable          /\<7\s\+3\s\+Cq\>/     | syn match Decay_type_stable          /\<Cq-7\>/            
+syn match Decay_type_alpha           /\<7\s\+4\s\+Af\>/     | syn match Decay_type_alpha           /\<Af-7\>/            
+syn match Decay_type_stable          /\<8\s\+4\s\+Af\>/     | syn match Decay_type_stable          /\<Af-8\>/            
+syn match Decay_type_stable          /\<9\s\+4\s\+Af\>/     | syn match Decay_type_stable          /\<Af-9\>/            
+syn match Decay_type_beta_minus      /\<10\s\+4\s\+Af\>/    | syn match Decay_type_beta_minus      /\<Af-10\>/           
+syn match Decay_type_beta_plus       /\<9\s\+5\s\+Xl\>/     | syn match Decay_type_beta_plus       /\<Xl-9\>/            
+syn match Decay_type_alpha           /\<10\s\+5\s\+Xl\>/    | syn match Decay_type_alpha           /\<Xl-10\>/           
+syn match Decay_type_stable          /\<11\s\+5\s\+Xl\>/    | syn match Decay_type_stable          /\<Xl-11\>/           
+syn match Decay_type_beta_minus      /\<12\s\+5\s\+Xl\>/    | syn match Decay_type_beta_minus      /\<Xl-12\>/           
+syn match Decay_type_beta_plus       /\<10\s\+6\s\+Pq\>/    | syn match Decay_type_beta_plus       /\<Pq-10\>/           
+syn match Decay_type_beta_plus       /\<11\s\+6\s\+Pq\>/    | syn match Decay_type_beta_plus       /\<Pq-11\>/           
+syn match Decay_type_alpha           /\<12\s\+6\s\+Pq\>/    | syn match Decay_type_alpha           /\<Pq-12\>/           
+syn match Decay_type_stable          /\<13\s\+6\s\+Pq\>/    | syn match Decay_type_stable          /\<Pq-13\>/           
+syn match Decay_type_beta_minus      /\<14\s\+6\s\+Pq\>/    | syn match Decay_type_beta_minus      /\<Pq-14\>/           
+syn match Decay_type_beta_minus      /\<15\s\+6\s\+Pq\>/    | syn match Decay_type_beta_minus      /\<Pq-15\>/           
+syn match Decay_type_beta_plus       /\<13\s\+7\s\+Zz\>/    | syn match Decay_type_beta_plus       /\<Zz-13\>/           
+syn match Decay_type_alpha           /\<14\s\+7\s\+Zz\>/    | syn match Decay_type_alpha           /\<Zz-14\>/           
+syn match Decay_type_stable          /\<15\s\+7\s\+Zz\>/    | syn match Decay_type_stable          /\<Zz-15\>/           
+syn match Decay_type_beta_minus      /\<16\s\+7\s\+Zz\>/    | syn match Decay_type_beta_minus      /\<Zz-16\>/           
+syn match Decay_type_beta_plus       /\<14\s\+8\s\+Dx\>/    | syn match Decay_type_beta_plus       /\<Dx-14\>/           
+syn match Decay_type_beta_plus       /\<15\s\+8\s\+Dx\>/    | syn match Decay_type_beta_plus       /\<Dx-15\>/           
+syn match Decay_type_stable          /\<16\s\+8\s\+Dx\>/    | syn match Decay_type_stable          /\<Dx-16\>/           
+syn match Decay_type_stable          /\<17\s\+8\s\+Dx\>/    | syn match Decay_type_stable          /\<Dx-17\>/           
+syn match Decay_type_stable          /\<18\s\+8\s\+Dx\>/    | syn match Decay_type_stable          /\<Dx-18\>/           
+syn match Decay_type_beta_minus      /\<19\s\+8\s\+Dx\>/    | syn match Decay_type_beta_minus      /\<Dx-19\>/           
+syn match Decay_type_beta_plus       /\<17\s\+9\s\+Pm\>/    | syn match Decay_type_beta_plus       /\<Pm-17\>/           
+syn match Decay_type_beta_plus       /\<18\s\+9\s\+Pm\>/    | syn match Decay_type_beta_plus       /\<Pm-18\>/           
+syn match Decay_type_stable          /\<19\s\+9\s\+Pm\>/    | syn match Decay_type_stable          /\<Pm-19\>/           
+syn match Decay_type_beta_minus      /\<20\s\+9\s\+Pm\>/    | syn match Decay_type_beta_minus      /\<Pm-20\>/           
+syn match Decay_type_beta_minus      /\<21\s\+9\s\+Pm\>/    | syn match Decay_type_beta_minus      /\<Pm-21\>/           
+syn match Decay_type_beta_plus       /\<19\s\+10\s\+M\>/    | syn match Decay_type_beta_plus       /\<M-19\>/            
+syn match Decay_type_stable          /\<20\s\+10\s\+M\>/    | syn match Decay_type_stable          /\<M-20\>/            
+syn match Decay_type_stable          /\<21\s\+10\s\+M\>/    | syn match Decay_type_stable          /\<M-21\>/            
+syn match Decay_type_stable          /\<22\s\+10\s\+M\>/    | syn match Decay_type_stable          /\<M-22\>/            
+syn match Decay_type_beta_minus      /\<23\s\+10\s\+M\>/    | syn match Decay_type_beta_minus      /\<M-23\>/            
+syn match Decay_type_beta_plus       /\<21\s\+11\s\+Fw\>/   | syn match Decay_type_beta_plus       /\<Fw-21\>/           
+syn match Decay_type_beta_plus       /\<22\s\+11\s\+Fw\>/   | syn match Decay_type_beta_plus       /\<Fw-22\>/           
+syn match Decay_type_stable          /\<23\s\+11\s\+Fw\>/   | syn match Decay_type_stable          /\<Fw-23\>/           
+syn match Decay_type_beta_minus      /\<24\s\+11\s\+Fw\>/   | syn match Decay_type_beta_minus      /\<Fw-24\>/           
+syn match Decay_type_beta_minus      /\<25\s\+11\s\+Fw\>/   | syn match Decay_type_beta_minus      /\<Fw-25\>/           
+syn match Decay_type_beta_minus      /\<26\s\+11\s\+Fw\>/   | syn match Decay_type_beta_minus      /\<Fw-26\>/           
+syn match Decay_type_beta_plus       /\<22\s\+12\s\+Pt\>/   | syn match Decay_type_beta_plus       /\<Pt-22\>/           
+syn match Decay_type_beta_plus       /\<23\s\+12\s\+Pt\>/   | syn match Decay_type_beta_plus       /\<Pt-23\>/           
+syn match Decay_type_stable          /\<24\s\+12\s\+Pt\>/   | syn match Decay_type_stable          /\<Pt-24\>/           
+syn match Decay_type_alpha           /\<25\s\+12\s\+Pt\>/   | syn match Decay_type_alpha           /\<Pt-25\>/           
+syn match Decay_type_stable          /\<26\s\+12\s\+Pt\>/   | syn match Decay_type_stable          /\<Pt-26\>/           
+syn match Decay_type_beta_minus      /\<27\s\+12\s\+Pt\>/   | syn match Decay_type_beta_minus      /\<Pt-27\>/           
+syn match Decay_type_beta_minus      /\<28\s\+12\s\+Pt\>/   | syn match Decay_type_beta_minus      /\<Pt-28\>/           
+syn match Decay_type_beta_plus       /\<24\s\+13\s\+S\>/    | syn match Decay_type_beta_plus       /\<S-24\>/            
+syn match Decay_type_beta_plus       /\<25\s\+13\s\+S\>/    | syn match Decay_type_beta_plus       /\<S-25\>/            
+syn match Decay_type_alpha           /\<26\s\+13\s\+S\>/    | syn match Decay_type_alpha           /\<S-26\>/            
+syn match Decay_type_alpha           /\<27\s\+13\s\+S\>/    | syn match Decay_type_alpha           /\<S-27\>/            
+syn match Decay_type_stable          /\<28\s\+13\s\+S\>/    | syn match Decay_type_stable          /\<S-28\>/            
+syn match Decay_type_beta_minus      /\<29\s\+13\s\+S\>/    | syn match Decay_type_beta_minus      /\<S-29\>/            
+syn match Decay_type_beta_minus      /\<30\s\+13\s\+S\>/    | syn match Decay_type_beta_minus      /\<S-30\>/            
+syn match Decay_type_beta_plus       /\<26\s\+14\s\+Zq\>/   | syn match Decay_type_beta_plus       /\<Zq-26\>/           
+syn match Decay_type_beta_plus       /\<27\s\+14\s\+Zq\>/   | syn match Decay_type_beta_plus       /\<Zq-27\>/           
+syn match Decay_type_beta_plus       /\<28\s\+14\s\+Zq\>/   | syn match Decay_type_beta_plus       /\<Zq-28\>/           
+syn match Decay_type_stable          /\<29\s\+14\s\+Zq\>/   | syn match Decay_type_stable          /\<Zq-29\>/           
+syn match Decay_type_beta_minus      /\<30\s\+14\s\+Zq\>/   | syn match Decay_type_beta_minus      /\<Zq-30\>/           
+syn match Decay_type_beta_minus      /\<31\s\+14\s\+Zq\>/   | syn match Decay_type_beta_minus      /\<Zq-31\>/           
+syn match Decay_type_beta_minus      /\<32\s\+14\s\+Zq\>/   | syn match Decay_type_beta_minus      /\<Zq-32\>/           
+syn match Decay_type_beta_plus       /\<28\s\+15\s\+Xc\>/   | syn match Decay_type_beta_plus       /\<Xc-28\>/           
+syn match Decay_type_beta_plus       /\<29\s\+15\s\+Xc\>/   | syn match Decay_type_beta_plus       /\<Xc-29\>/           
+syn match Decay_type_stable          /\<30\s\+15\s\+Xc\>/   | syn match Decay_type_stable          /\<Xc-30\>/           
+syn match Decay_type_stable          /\<31\s\+15\s\+Xc\>/   | syn match Decay_type_stable          /\<Xc-31\>/           
+syn match Decay_type_stable          /\<32\s\+15\s\+Xc\>/   | syn match Decay_type_stable          /\<Xc-32\>/           
+syn match Decay_type_beta_minus      /\<33\s\+15\s\+Xc\>/   | syn match Decay_type_beta_minus      /\<Xc-33\>/           
+syn match Decay_type_beta_minus      /\<34\s\+15\s\+Xc\>/   | syn match Decay_type_beta_minus      /\<Xc-34\>/           
+syn match Decay_type_beta_plus       /\<30\s\+16\s\+Gy\>/   | syn match Decay_type_beta_plus       /\<Gy-30\>/           
+syn match Decay_type_beta_plus       /\<31\s\+16\s\+Gy\>/   | syn match Decay_type_beta_plus       /\<Gy-31\>/           
+syn match Decay_type_beta_plus       /\<32\s\+16\s\+Gy\>/   | syn match Decay_type_beta_plus       /\<Gy-32\>/           
+syn match Decay_type_stable          /\<33\s\+16\s\+Gy\>/   | syn match Decay_type_stable          /\<Gy-33\>/           
+syn match Decay_type_stable          /\<34\s\+16\s\+Gy\>/   | syn match Decay_type_stable          /\<Gy-34\>/           
+syn match Decay_type_beta_minus      /\<35\s\+16\s\+Gy\>/   | syn match Decay_type_beta_minus      /\<Gy-35\>/           
+syn match Decay_type_beta_minus      /\<36\s\+16\s\+Gy\>/   | syn match Decay_type_beta_minus      /\<Gy-36\>/           
+syn match Decay_type_beta_plus       /\<32\s\+17\s\+D\>/    | syn match Decay_type_beta_plus       /\<D-32\>/            
+syn match Decay_type_beta_plus       /\<33\s\+17\s\+D\>/    | syn match Decay_type_beta_plus       /\<D-33\>/            
+syn match Decay_type_beta_plus       /\<34\s\+17\s\+D\>/    | syn match Decay_type_beta_plus       /\<D-34\>/            
+syn match Decay_type_alpha           /\<35\s\+17\s\+D\>/    | syn match Decay_type_alpha           /\<D-35\>/            
+syn match Decay_type_alpha           /\<36\s\+17\s\+D\>/    | syn match Decay_type_alpha           /\<D-36\>/            
+syn match Decay_type_beta_minus      /\<37\s\+17\s\+D\>/    | syn match Decay_type_beta_minus      /\<D-37\>/            
+syn match Decay_type_beta_minus      /\<38\s\+17\s\+D\>/    | syn match Decay_type_beta_minus      /\<D-38\>/            
+syn match Decay_type_beta_minus      /\<39\s\+17\s\+D\>/    | syn match Decay_type_beta_minus      /\<D-39\>/            
+syn match Decay_type_beta_plus       /\<34\s\+18\s\+Fj\>/   | syn match Decay_type_beta_plus       /\<Fj-34\>/           
+syn match Decay_type_beta_plus       /\<35\s\+18\s\+Fj\>/   | syn match Decay_type_beta_plus       /\<Fj-35\>/           
+syn match Decay_type_alpha           /\<36\s\+18\s\+Fj\>/   | syn match Decay_type_alpha           /\<Fj-36\>/           
+syn match Decay_type_alpha           /\<37\s\+18\s\+Fj\>/   | syn match Decay_type_alpha           /\<Fj-37\>/           
+syn match Decay_type_alpha           /\<38\s\+18\s\+Fj\>/   | syn match Decay_type_alpha           /\<Fj-38\>/           
+syn match Decay_type_alpha           /\<39\s\+18\s\+Fj\>/   | syn match Decay_type_alpha           /\<Fj-39\>/           
+syn match Decay_type_stable          /\<40\s\+18\s\+Fj\>/   | syn match Decay_type_stable          /\<Fj-40\>/           
+syn match Decay_type_beta_minus      /\<41\s\+18\s\+Fj\>/   | syn match Decay_type_beta_minus      /\<Fj-41\>/           
+syn match Decay_type_beta_plus       /\<36\s\+19\s\+O\>/    | syn match Decay_type_beta_plus       /\<O-36\>/            
+syn match Decay_type_alpha           /\<37\s\+19\s\+O\>/    | syn match Decay_type_alpha           /\<O-37\>/            
+syn match Decay_type_alpha           /\<38\s\+19\s\+O\>/    | syn match Decay_type_alpha           /\<O-38\>/            
+syn match Decay_type_alpha           /\<39\s\+19\s\+O\>/    | syn match Decay_type_alpha           /\<O-39\>/            
+syn match Decay_type_alpha           /\<40\s\+19\s\+O\>/    | syn match Decay_type_alpha           /\<O-40\>/            
+syn match Decay_type_stable          /\<41\s\+19\s\+O\>/    | syn match Decay_type_stable          /\<O-41\>/            
+syn match Decay_type_beta_minus      /\<42\s\+19\s\+O\>/    | syn match Decay_type_beta_minus      /\<O-42\>/            
+syn match Decay_type_beta_minus      /\<43\s\+19\s\+O\>/    | syn match Decay_type_beta_minus      /\<O-43\>/            
+syn match Decay_type_beta_plus       /\<38\s\+20\s\+C\>/    | syn match Decay_type_beta_plus       /\<C-38\>/            
+syn match Decay_type_beta_plus       /\<39\s\+20\s\+C\>/    | syn match Decay_type_beta_plus       /\<C-39\>/            
+syn match Decay_type_beta_plus       /\<40\s\+20\s\+C\>/    | syn match Decay_type_beta_plus       /\<C-40\>/            
+syn match Decay_type_beta_plus       /\<41\s\+20\s\+C\>/    | syn match Decay_type_beta_plus       /\<C-41\>/            
+syn match Decay_type_stable          /\<42\s\+20\s\+C\>/    | syn match Decay_type_stable          /\<C-42\>/            
+syn match Decay_type_beta_minus      /\<43\s\+20\s\+C\>/    | syn match Decay_type_beta_minus      /\<C-43\>/            
+syn match Decay_type_beta_minus      /\<44\s\+20\s\+C\>/    | syn match Decay_type_beta_minus      /\<C-44\>/            
+syn match Decay_type_beta_minus      /\<45\s\+20\s\+C\>/    | syn match Decay_type_beta_minus      /\<C-45\>/            
+syn match Decay_type_beta_plus       /\<40\s\+21\s\+E\>/    | syn match Decay_type_beta_plus       /\<E-40\>/            
+syn match Decay_type_beta_plus       /\<41\s\+21\s\+E\>/    | syn match Decay_type_beta_plus       /\<E-41\>/            
+syn match Decay_type_beta_plus       /\<42\s\+21\s\+E\>/    | syn match Decay_type_beta_plus       /\<E-42\>/            
+syn match Decay_type_stable          /\<43\s\+21\s\+E\>/    | syn match Decay_type_stable          /\<E-43\>/            
+syn match Decay_type_beta_minus      /\<44\s\+21\s\+E\>/    | syn match Decay_type_beta_minus      /\<E-44\>/            
+syn match Decay_type_beta_minus      /\<45\s\+21\s\+E\>/    | syn match Decay_type_beta_minus      /\<E-45\>/            
+syn match Decay_type_beta_minus      /\<46\s\+21\s\+E\>/    | syn match Decay_type_beta_minus      /\<E-46\>/            
+syn match Decay_type_beta_minus      /\<47\s\+21\s\+E\>/    | syn match Decay_type_beta_minus      /\<E-47\>/            
+syn match Decay_type_beta_minus      /\<48\s\+21\s\+E\>/    | syn match Decay_type_beta_minus      /\<E-48\>/            
+syn match Decay_type_beta_plus       /\<42\s\+22\s\+A\>/    | syn match Decay_type_beta_plus       /\<A-42\>/            
+syn match Decay_type_beta_plus       /\<43\s\+22\s\+A\>/    | syn match Decay_type_beta_plus       /\<A-43\>/            
+syn match Decay_type_stable          /\<44\s\+22\s\+A\>/    | syn match Decay_type_stable          /\<A-44\>/            
+syn match Decay_type_stable          /\<45\s\+22\s\+A\>/    | syn match Decay_type_stable          /\<A-45\>/            
+syn match Decay_type_stable          /\<46\s\+22\s\+A\>/    | syn match Decay_type_stable          /\<A-46\>/            
+syn match Decay_type_stable          /\<47\s\+22\s\+A\>/    | syn match Decay_type_stable          /\<A-47\>/            
+syn match Decay_type_stable          /\<48\s\+22\s\+A\>/    | syn match Decay_type_stable          /\<A-48\>/            
+syn match Decay_type_beta_minus      /\<49\s\+22\s\+A\>/    | syn match Decay_type_beta_minus      /\<A-49\>/            
+syn match Decay_type_beta_minus      /\<50\s\+22\s\+A\>/    | syn match Decay_type_beta_minus      /\<A-50\>/            
+syn match Decay_type_beta_plus       /\<44\s\+23\s\+Aw\>/   | syn match Decay_type_beta_plus       /\<Aw-44\>/           
+syn match Decay_type_beta_plus       /\<45\s\+23\s\+Aw\>/   | syn match Decay_type_beta_plus       /\<Aw-45\>/           
+syn match Decay_type_beta_plus       /\<46\s\+23\s\+Aw\>/   | syn match Decay_type_beta_plus       /\<Aw-46\>/           
+syn match Decay_type_beta_plus       /\<47\s\+23\s\+Aw\>/   | syn match Decay_type_beta_plus       /\<Aw-47\>/           
+syn match Decay_type_alpha           /\<48\s\+23\s\+Aw\>/   | syn match Decay_type_alpha           /\<Aw-48\>/           
+syn match Decay_type_stable          /\<49\s\+23\s\+Aw\>/   | syn match Decay_type_stable          /\<Aw-49\>/           
+syn match Decay_type_stable          /\<50\s\+23\s\+Aw\>/   | syn match Decay_type_stable          /\<Aw-50\>/           
+syn match Decay_type_beta_minus      /\<51\s\+23\s\+Aw\>/   | syn match Decay_type_beta_minus      /\<Aw-51\>/           
+syn match Decay_type_beta_minus      /\<52\s\+23\s\+Aw\>/   | syn match Decay_type_beta_minus      /\<Aw-52\>/           
+syn match Decay_type_beta_plus       /\<46\s\+24\s\+Oc\>/   | syn match Decay_type_beta_plus       /\<Oc-46\>/           
+syn match Decay_type_beta_plus       /\<47\s\+24\s\+Oc\>/   | syn match Decay_type_beta_plus       /\<Oc-47\>/           
+syn match Decay_type_beta_plus       /\<48\s\+24\s\+Oc\>/   | syn match Decay_type_beta_plus       /\<Oc-48\>/           
+syn match Decay_type_alpha           /\<49\s\+24\s\+Oc\>/   | syn match Decay_type_alpha           /\<Oc-49\>/           
+syn match Decay_type_stable          /\<50\s\+24\s\+Oc\>/   | syn match Decay_type_stable          /\<Oc-50\>/           
+syn match Decay_type_stable          /\<51\s\+24\s\+Oc\>/   | syn match Decay_type_stable          /\<Oc-51\>/           
+syn match Decay_type_beta_minus      /\<52\s\+24\s\+Oc\>/   | syn match Decay_type_beta_minus      /\<Oc-52\>/           
+syn match Decay_type_beta_minus      /\<53\s\+24\s\+Oc\>/   | syn match Decay_type_beta_minus      /\<Oc-53\>/           
+syn match Decay_type_beta_minus      /\<54\s\+24\s\+Oc\>/   | syn match Decay_type_beta_minus      /\<Oc-54\>/           
+syn match Decay_type_beta_plus       /\<47\s\+25\s\+Nb\>/   | syn match Decay_type_beta_plus       /\<Nb-47\>/           
+syn match Decay_type_beta_plus       /\<48\s\+25\s\+Nb\>/   | syn match Decay_type_beta_plus       /\<Nb-48\>/           
+syn match Decay_type_alpha           /\<49\s\+25\s\+Nb\>/   | syn match Decay_type_alpha           /\<Nb-49\>/           
+syn match Decay_type_alpha           /\<50\s\+25\s\+Nb\>/   | syn match Decay_type_alpha           /\<Nb-50\>/           
+syn match Decay_type_alpha           /\<51\s\+25\s\+Nb\>/   | syn match Decay_type_alpha           /\<Nb-51\>/           
+syn match Decay_type_stable          /\<52\s\+25\s\+Nb\>/   | syn match Decay_type_stable          /\<Nb-52\>/           
+syn match Decay_type_beta_minus      /\<53\s\+25\s\+Nb\>/   | syn match Decay_type_beta_minus      /\<Nb-53\>/           
+syn match Decay_type_alpha           /\<54\s\+25\s\+Nb\>/   | syn match Decay_type_alpha           /\<Nb-54\>/           
+syn match Decay_type_beta_minus      /\<55\s\+25\s\+Nb\>/   | syn match Decay_type_beta_minus      /\<Nb-55\>/           
+syn match Decay_type_beta_minus      /\<56\s\+25\s\+Nb\>/   | syn match Decay_type_beta_minus      /\<Nb-56\>/           
+syn match Decay_type_beta_plus       /\<50\s\+26\s\+Xk\>/   | syn match Decay_type_beta_plus       /\<Xk-50\>/           
+syn match Decay_type_alpha           /\<51\s\+26\s\+Xk\>/   | syn match Decay_type_alpha           /\<Xk-51\>/           
+syn match Decay_type_beta_plus       /\<52\s\+26\s\+Xk\>/   | syn match Decay_type_beta_plus       /\<Xk-52\>/           
+syn match Decay_type_stable          /\<53\s\+26\s\+Xk\>/   | syn match Decay_type_stable          /\<Xk-53\>/           
+syn match Decay_type_beta_minus      /\<54\s\+26\s\+Xk\>/   | syn match Decay_type_beta_minus      /\<Xk-54\>/           
+syn match Decay_type_beta_minus      /\<55\s\+26\s\+Xk\>/   | syn match Decay_type_beta_minus      /\<Xk-55\>/           
+syn match Decay_type_beta_minus      /\<56\s\+26\s\+Xk\>/   | syn match Decay_type_beta_minus      /\<Xk-56\>/           
+syn match Decay_type_beta_minus      /\<57\s\+26\s\+Xk\>/   | syn match Decay_type_beta_minus      /\<Xk-57\>/           
+syn match Decay_type_beta_minus      /\<58\s\+26\s\+Xk\>/   | syn match Decay_type_beta_minus      /\<Xk-58\>/           
+syn match Decay_type_beta_minus      /\<59\s\+26\s\+Xk\>/   | syn match Decay_type_beta_minus      /\<Xk-59\>/           
+syn match Decay_type_beta_plus       /\<51\s\+27\s\+Ic\>/   | syn match Decay_type_beta_plus       /\<Ic-51\>/           
+syn match Decay_type_beta_plus       /\<52\s\+27\s\+Ic\>/   | syn match Decay_type_beta_plus       /\<Ic-52\>/           
+syn match Decay_type_beta_plus       /\<53\s\+27\s\+Ic\>/   | syn match Decay_type_beta_plus       /\<Ic-53\>/           
+syn match Decay_type_stable          /\<54\s\+27\s\+Ic\>/   | syn match Decay_type_stable          /\<Ic-54\>/           
+syn match Decay_type_stable          /\<55\s\+27\s\+Ic\>/   | syn match Decay_type_stable          /\<Ic-55\>/           
+syn match Decay_type_stable          /\<56\s\+27\s\+Ic\>/   | syn match Decay_type_stable          /\<Ic-56\>/           
+syn match Decay_type_stable          /\<57\s\+27\s\+Ic\>/   | syn match Decay_type_stable          /\<Ic-57\>/           
+syn match Decay_type_stable          /\<58\s\+27\s\+Ic\>/   | syn match Decay_type_stable          /\<Ic-58\>/           
+syn match Decay_type_stable          /\<59\s\+27\s\+Ic\>/   | syn match Decay_type_stable          /\<Ic-59\>/           
+syn match Decay_type_beta_minus      /\<60\s\+27\s\+Ic\>/   | syn match Decay_type_beta_minus      /\<Ic-60\>/           
+syn match Decay_type_beta_minus      /\<61\s\+27\s\+Ic\>/   | syn match Decay_type_beta_minus      /\<Ic-61\>/           
+syn match Decay_type_beta_plus       /\<54\s\+28\s\+Yp\>/   | syn match Decay_type_beta_plus       /\<Yp-54\>/           
+syn match Decay_type_beta_plus       /\<55\s\+28\s\+Yp\>/   | syn match Decay_type_beta_plus       /\<Yp-55\>/           
+syn match Decay_type_beta_plus       /\<56\s\+28\s\+Yp\>/   | syn match Decay_type_beta_plus       /\<Yp-56\>/           
+syn match Decay_type_beta_plus       /\<57\s\+28\s\+Yp\>/   | syn match Decay_type_beta_plus       /\<Yp-57\>/           
+syn match Decay_type_alpha           /\<58\s\+28\s\+Yp\>/   | syn match Decay_type_alpha           /\<Yp-58\>/           
+syn match Decay_type_beta_plus       /\<59\s\+28\s\+Yp\>/   | syn match Decay_type_beta_plus       /\<Yp-59\>/           
+syn match Decay_type_stable          /\<60\s\+28\s\+Yp\>/   | syn match Decay_type_stable          /\<Yp-60\>/           
+syn match Decay_type_beta_minus      /\<61\s\+28\s\+Yp\>/   | syn match Decay_type_beta_minus      /\<Yp-61\>/           
+syn match Decay_type_beta_minus      /\<62\s\+28\s\+Yp\>/   | syn match Decay_type_beta_minus      /\<Yp-62\>/           
+syn match Decay_type_beta_minus      /\<63\s\+28\s\+Yp\>/   | syn match Decay_type_beta_minus      /\<Yp-63\>/           
+syn match Decay_type_beta_plus       /\<56\s\+29\s\+Jx\>/   | syn match Decay_type_beta_plus       /\<Jx-56\>/           
+syn match Decay_type_beta_plus       /\<57\s\+29\s\+Jx\>/   | syn match Decay_type_beta_plus       /\<Jx-57\>/           
+syn match Decay_type_beta_plus       /\<58\s\+29\s\+Jx\>/   | syn match Decay_type_beta_plus       /\<Jx-58\>/           
+syn match Decay_type_alpha           /\<59\s\+29\s\+Jx\>/   | syn match Decay_type_alpha           /\<Jx-59\>/           
+syn match Decay_type_alpha           /\<60\s\+29\s\+Jx\>/   | syn match Decay_type_alpha           /\<Jx-60\>/           
+syn match Decay_type_alpha           /\<61\s\+29\s\+Jx\>/   | syn match Decay_type_alpha           /\<Jx-61\>/           
+syn match Decay_type_alpha           /\<62\s\+29\s\+Jx\>/   | syn match Decay_type_alpha           /\<Jx-62\>/           
+syn match Decay_type_beta_minus      /\<63\s\+29\s\+Jx\>/   | syn match Decay_type_beta_minus      /\<Jx-63\>/           
+syn match Decay_type_beta_minus      /\<64\s\+29\s\+Jx\>/   | syn match Decay_type_beta_minus      /\<Jx-64\>/           
+syn match Decay_type_beta_minus      /\<65\s\+29\s\+Jx\>/   | syn match Decay_type_beta_minus      /\<Jx-65\>/           
+syn match Decay_type_beta_plus       /\<57\s\+30\s\+Hb\>/   | syn match Decay_type_beta_plus       /\<Hb-57\>/           
+syn match Decay_type_alpha           /\<58\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-58\>/           
+syn match Decay_type_alpha           /\<59\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-59\>/           
+syn match Decay_type_alpha           /\<60\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-60\>/           
+syn match Decay_type_alpha           /\<61\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-61\>/           
+syn match Decay_type_alpha           /\<62\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-62\>/           
+syn match Decay_type_alpha           /\<63\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-63\>/           
+syn match Decay_type_alpha           /\<64\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-64\>/           
+syn match Decay_type_alpha           /\<65\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-65\>/           
+syn match Decay_type_alpha           /\<66\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-66\>/           
+syn match Decay_type_alpha           /\<67\s\+30\s\+Hb\>/   | syn match Decay_type_alpha           /\<Hb-67\>/           
+syn match Decay_type_beta_plus       /\<60\s\+31\s\+At\>/   | syn match Decay_type_beta_plus       /\<At-60\>/           
+syn match Decay_type_alpha           /\<61\s\+31\s\+At\>/   | syn match Decay_type_alpha           /\<At-61\>/           
+syn match Decay_type_alpha           /\<62\s\+31\s\+At\>/   | syn match Decay_type_alpha           /\<At-62\>/           
+syn match Decay_type_alpha           /\<63\s\+31\s\+At\>/   | syn match Decay_type_alpha           /\<At-63\>/           
+syn match Decay_type_alpha           /\<64\s\+31\s\+At\>/   | syn match Decay_type_alpha           /\<At-64\>/           
+syn match Decay_type_alpha           /\<65\s\+31\s\+At\>/   | syn match Decay_type_alpha           /\<At-65\>/           
+syn match Decay_type_alpha           /\<66\s\+31\s\+At\>/   | syn match Decay_type_alpha           /\<At-66\>/           
+syn match Decay_type_alpha           /\<67\s\+31\s\+At\>/   | syn match Decay_type_alpha           /\<At-67\>/           
+syn match Decay_type_beta_minus      /\<68\s\+31\s\+At\>/   | syn match Decay_type_beta_minus      /\<At-68\>/           
+syn match Decay_type_beta_minus      /\<69\s\+31\s\+At\>/   | syn match Decay_type_beta_minus      /\<At-69\>/           
+syn match Decay_type_beta_plus       /\<61\s\+32\s\+Ny\>/   | syn match Decay_type_beta_plus       /\<Ny-61\>/           
+syn match Decay_type_alpha           /\<62\s\+32\s\+Ny\>/   | syn match Decay_type_alpha           /\<Ny-62\>/           
+syn match Decay_type_beta_plus       /\<63\s\+32\s\+Ny\>/   | syn match Decay_type_beta_plus       /\<Ny-63\>/           
+syn match Decay_type_beta_plus       /\<64\s\+32\s\+Ny\>/   | syn match Decay_type_beta_plus       /\<Ny-64\>/           
+syn match Decay_type_alpha           /\<65\s\+32\s\+Ny\>/   | syn match Decay_type_alpha           /\<Ny-65\>/           
+syn match Decay_type_alpha           /\<66\s\+32\s\+Ny\>/   | syn match Decay_type_alpha           /\<Ny-66\>/           
+syn match Decay_type_alpha           /\<67\s\+32\s\+Ny\>/   | syn match Decay_type_alpha           /\<Ny-67\>/           
+syn match Decay_type_alpha           /\<68\s\+32\s\+Ny\>/   | syn match Decay_type_alpha           /\<Ny-68\>/           
+syn match Decay_type_alpha           /\<69\s\+32\s\+Ny\>/   | syn match Decay_type_alpha           /\<Ny-69\>/           
+syn match Decay_type_beta_minus      /\<70\s\+32\s\+Ny\>/   | syn match Decay_type_beta_minus      /\<Ny-70\>/           
+syn match Decay_type_beta_minus      /\<71\s\+32\s\+Ny\>/   | syn match Decay_type_beta_minus      /\<Ny-71\>/           
+syn match Decay_type_beta_minus      /\<72\s\+32\s\+Ny\>/   | syn match Decay_type_beta_minus      /\<Ny-72\>/           
+syn match Decay_type_beta_plus       /\<64\s\+33\s\+Pw\>/   | syn match Decay_type_beta_plus       /\<Pw-64\>/           
+syn match Decay_type_beta_plus       /\<65\s\+33\s\+Pw\>/   | syn match Decay_type_beta_plus       /\<Pw-65\>/           
+syn match Decay_type_beta_plus       /\<66\s\+33\s\+Pw\>/   | syn match Decay_type_beta_plus       /\<Pw-66\>/           
+syn match Decay_type_alpha           /\<67\s\+33\s\+Pw\>/   | syn match Decay_type_alpha           /\<Pw-67\>/           
+syn match Decay_type_alpha           /\<68\s\+33\s\+Pw\>/   | syn match Decay_type_alpha           /\<Pw-68\>/           
+syn match Decay_type_alpha           /\<69\s\+33\s\+Pw\>/   | syn match Decay_type_alpha           /\<Pw-69\>/           
+syn match Decay_type_alpha           /\<70\s\+33\s\+Pw\>/   | syn match Decay_type_alpha           /\<Pw-70\>/           
+syn match Decay_type_beta_minus      /\<71\s\+33\s\+Pw\>/   | syn match Decay_type_beta_minus      /\<Pw-71\>/           
+syn match Decay_type_beta_minus      /\<72\s\+33\s\+Pw\>/   | syn match Decay_type_beta_minus      /\<Pw-72\>/           
+syn match Decay_type_beta_minus      /\<73\s\+33\s\+Pw\>/   | syn match Decay_type_beta_minus      /\<Pw-73\>/           
+syn match Decay_type_beta_minus      /\<74\s\+33\s\+Pw\>/   | syn match Decay_type_beta_minus      /\<Pw-74\>/           
+syn match Decay_type_beta_plus       /\<65\s\+34\s\+Gk\>/   | syn match Decay_type_beta_plus       /\<Gk-65\>/           
+syn match Decay_type_beta_plus       /\<66\s\+34\s\+Gk\>/   | syn match Decay_type_beta_plus       /\<Gk-66\>/           
+syn match Decay_type_beta_plus       /\<67\s\+34\s\+Gk\>/   | syn match Decay_type_beta_plus       /\<Gk-67\>/           
+syn match Decay_type_beta_plus       /\<68\s\+34\s\+Gk\>/   | syn match Decay_type_beta_plus       /\<Gk-68\>/           
+syn match Decay_type_alpha           /\<69\s\+34\s\+Gk\>/   | syn match Decay_type_alpha           /\<Gk-69\>/           
+syn match Decay_type_alpha           /\<70\s\+34\s\+Gk\>/   | syn match Decay_type_alpha           /\<Gk-70\>/           
+syn match Decay_type_alpha           /\<71\s\+34\s\+Gk\>/   | syn match Decay_type_alpha           /\<Gk-71\>/           
+syn match Decay_type_stable          /\<72\s\+34\s\+Gk\>/   | syn match Decay_type_stable          /\<Gk-72\>/           
+syn match Decay_type_beta_minus      /\<73\s\+34\s\+Gk\>/   | syn match Decay_type_beta_minus      /\<Gk-73\>/           
+syn match Decay_type_stable          /\<74\s\+34\s\+Gk\>/   | syn match Decay_type_stable          /\<Gk-74\>/           
+syn match Decay_type_stable          /\<75\s\+34\s\+Gk\>/   | syn match Decay_type_stable          /\<Gk-75\>/           
+syn match Decay_type_beta_minus      /\<76\s\+34\s\+Gk\>/   | syn match Decay_type_beta_minus      /\<Gk-76\>/           
+syn match Decay_type_beta_plus       /\<67\s\+35\s\+Qi\>/   | syn match Decay_type_beta_plus       /\<Qi-67\>/           
+syn match Decay_type_beta_plus       /\<68\s\+35\s\+Qi\>/   | syn match Decay_type_beta_plus       /\<Qi-68\>/           
+syn match Decay_type_beta_plus       /\<69\s\+35\s\+Qi\>/   | syn match Decay_type_beta_plus       /\<Qi-69\>/           
+syn match Decay_type_beta_plus       /\<70\s\+35\s\+Qi\>/   | syn match Decay_type_beta_plus       /\<Qi-70\>/           
+syn match Decay_type_beta_plus       /\<71\s\+35\s\+Qi\>/   | syn match Decay_type_beta_plus       /\<Qi-71\>/           
+syn match Decay_type_alpha           /\<72\s\+35\s\+Qi\>/   | syn match Decay_type_alpha           /\<Qi-72\>/           
+syn match Decay_type_alpha           /\<73\s\+35\s\+Qi\>/   | syn match Decay_type_alpha           /\<Qi-73\>/           
+syn match Decay_type_alpha           /\<74\s\+35\s\+Qi\>/   | syn match Decay_type_alpha           /\<Qi-74\>/           
+syn match Decay_type_beta_plus       /\<75\s\+35\s\+Qi\>/   | syn match Decay_type_beta_plus       /\<Qi-75\>/           
+syn match Decay_type_stable          /\<76\s\+35\s\+Qi\>/   | syn match Decay_type_stable          /\<Qi-76\>/           
+syn match Decay_type_beta_minus      /\<77\s\+35\s\+Qi\>/   | syn match Decay_type_beta_minus      /\<Qi-77\>/           
+syn match Decay_type_beta_minus      /\<78\s\+35\s\+Qi\>/   | syn match Decay_type_beta_minus      /\<Qi-78\>/           
+syn match Decay_type_beta_plus       /\<69\s\+36\s\+Xy\>/   | syn match Decay_type_beta_plus       /\<Xy-69\>/           
+syn match Decay_type_beta_plus       /\<70\s\+36\s\+Xy\>/   | syn match Decay_type_beta_plus       /\<Xy-70\>/           
+syn match Decay_type_beta_plus       /\<71\s\+36\s\+Xy\>/   | syn match Decay_type_beta_plus       /\<Xy-71\>/           
+syn match Decay_type_beta_plus       /\<72\s\+36\s\+Xy\>/   | syn match Decay_type_beta_plus       /\<Xy-72\>/           
+syn match Decay_type_beta_plus       /\<73\s\+36\s\+Xy\>/   | syn match Decay_type_beta_plus       /\<Xy-73\>/           
+syn match Decay_type_beta_plus       /\<74\s\+36\s\+Xy\>/   | syn match Decay_type_beta_plus       /\<Xy-74\>/           
+syn match Decay_type_beta_plus       /\<75\s\+36\s\+Xy\>/   | syn match Decay_type_beta_plus       /\<Xy-75\>/           
+syn match Decay_type_beta_plus       /\<76\s\+36\s\+Xy\>/   | syn match Decay_type_beta_plus       /\<Xy-76\>/           
+syn match Decay_type_stable          /\<77\s\+36\s\+Xy\>/   | syn match Decay_type_stable          /\<Xy-77\>/           
+syn match Decay_type_beta_minus      /\<78\s\+36\s\+Xy\>/   | syn match Decay_type_beta_minus      /\<Xy-78\>/           
+syn match Decay_type_stable          /\<79\s\+36\s\+Xy\>/   | syn match Decay_type_stable          /\<Xy-79\>/           
+syn match Decay_type_beta_plus       /\<71\s\+37\s\+Gq\>/   | syn match Decay_type_beta_plus       /\<Gq-71\>/           
+syn match Decay_type_beta_plus       /\<72\s\+37\s\+Gq\>/   | syn match Decay_type_beta_plus       /\<Gq-72\>/           
+syn match Decay_type_beta_plus       /\<73\s\+37\s\+Gq\>/   | syn match Decay_type_beta_plus       /\<Gq-73\>/           
+syn match Decay_type_beta_plus       /\<74\s\+37\s\+Gq\>/   | syn match Decay_type_beta_plus       /\<Gq-74\>/           
+syn match Decay_type_beta_plus       /\<75\s\+37\s\+Gq\>/   | syn match Decay_type_beta_plus       /\<Gq-75\>/           
+syn match Decay_type_beta_plus       /\<76\s\+37\s\+Gq\>/   | syn match Decay_type_beta_plus       /\<Gq-76\>/           
+syn match Decay_type_beta_plus       /\<77\s\+37\s\+Gq\>/   | syn match Decay_type_beta_plus       /\<Gq-77\>/           
+syn match Decay_type_stable          /\<78\s\+37\s\+Gq\>/   | syn match Decay_type_stable          /\<Gq-78\>/           
+syn match Decay_type_beta_minus      /\<79\s\+37\s\+Gq\>/   | syn match Decay_type_beta_minus      /\<Gq-79\>/           
+syn match Decay_type_stable          /\<80\s\+37\s\+Gq\>/   | syn match Decay_type_stable          /\<Gq-80\>/           
+syn match Decay_type_beta_plus       /\<73\s\+38\s\+Bt\>/   | syn match Decay_type_beta_plus       /\<Bt-73\>/           
+syn match Decay_type_beta_plus       /\<74\s\+38\s\+Bt\>/   | syn match Decay_type_beta_plus       /\<Bt-74\>/           
+syn match Decay_type_beta_plus       /\<75\s\+38\s\+Bt\>/   | syn match Decay_type_beta_plus       /\<Bt-75\>/           
+syn match Decay_type_beta_plus       /\<76\s\+38\s\+Bt\>/   | syn match Decay_type_beta_plus       /\<Bt-76\>/           
+syn match Decay_type_beta_plus       /\<77\s\+38\s\+Bt\>/   | syn match Decay_type_beta_plus       /\<Bt-77\>/           
+syn match Decay_type_beta_plus       /\<78\s\+38\s\+Bt\>/   | syn match Decay_type_beta_plus       /\<Bt-78\>/           
+syn match Decay_type_stable          /\<79\s\+38\s\+Bt\>/   | syn match Decay_type_stable          /\<Bt-79\>/           
+syn match Decay_type_beta_minus      /\<80\s\+38\s\+Bt\>/   | syn match Decay_type_beta_minus      /\<Bt-80\>/           
+syn match Decay_type_stable          /\<81\s\+38\s\+Bt\>/   | syn match Decay_type_stable          /\<Bt-81\>/           
+syn match Decay_type_beta_plus       /\<75\s\+39\s\+H\>/    | syn match Decay_type_beta_plus       /\<H-75\>/            
+syn match Decay_type_beta_plus       /\<76\s\+39\s\+H\>/    | syn match Decay_type_beta_plus       /\<H-76\>/            
+syn match Decay_type_beta_plus       /\<77\s\+39\s\+H\>/    | syn match Decay_type_beta_plus       /\<H-77\>/            
+syn match Decay_type_beta_plus       /\<78\s\+39\s\+H\>/    | syn match Decay_type_beta_plus       /\<H-78\>/            
+syn match Decay_type_beta_plus       /\<79\s\+39\s\+H\>/    | syn match Decay_type_beta_plus       /\<H-79\>/            
+syn match Decay_type_stable          /\<80\s\+39\s\+H\>/    | syn match Decay_type_stable          /\<H-80\>/            
+syn match Decay_type_beta_plus       /\<81\s\+39\s\+H\>/    | syn match Decay_type_beta_plus       /\<H-81\>/            
+syn match Decay_type_stable          /\<82\s\+39\s\+H\>/    | syn match Decay_type_stable          /\<H-82\>/            
+syn match Decay_type_beta_plus       /\<78\s\+40\s\+U\>/    | syn match Decay_type_beta_plus       /\<U-78\>/            
+syn match Decay_type_beta_plus       /\<79\s\+40\s\+U\>/    | syn match Decay_type_beta_plus       /\<U-79\>/            
+syn match Decay_type_beta_plus       /\<80\s\+40\s\+U\>/    | syn match Decay_type_beta_plus       /\<U-80\>/            
+syn match Decay_type_stable          /\<81\s\+40\s\+U\>/    | syn match Decay_type_stable          /\<U-81\>/            
+syn match Decay_type_beta_plus       /\<82\s\+40\s\+U\>/    | syn match Decay_type_beta_plus       /\<U-82\>/            
+syn match Decay_type_stable          /\<83\s\+40\s\+U\>/    | syn match Decay_type_stable          /\<U-83\>/            
+syn match Decay_type_beta_plus       /\<79\s\+41\s\+Sq\>/   | syn match Decay_type_beta_plus       /\<Sq-79\>/           
+syn match Decay_type_beta_plus       /\<80\s\+41\s\+Sq\>/   | syn match Decay_type_beta_plus       /\<Sq-80\>/           
+syn match Decay_type_beta_plus       /\<81\s\+41\s\+Sq\>/   | syn match Decay_type_beta_plus       /\<Sq-81\>/           
+syn match Decay_type_stable          /\<82\s\+41\s\+Sq\>/   | syn match Decay_type_stable          /\<Sq-82\>/           
+syn match Decay_type_beta_plus       /\<83\s\+41\s\+Sq\>/   | syn match Decay_type_beta_plus       /\<Sq-83\>/           
+syn match Decay_type_stable          /\<84\s\+41\s\+Sq\>/   | syn match Decay_type_stable          /\<Sq-84\>/           
+syn match Decay_type_beta_plus       /\<83\s\+42\s\+Ua\>/   | syn match Decay_type_beta_plus       /\<Ua-83\>/           
+syn match Decay_type_beta_plus       /\<84\s\+42\s\+Ua\>/   | syn match Decay_type_beta_plus       /\<Ua-84\>/           
+syn match Decay_type_beta_plus       /\<85\s\+42\s\+Ua\>/   | syn match Decay_type_beta_plus       /\<Ua-85\>/           
+
+endif
+
 "
 " ]]] INSERT output of convert_token_id_to_hex.pl here
 "
@@ -5270,1059 +6274,16 @@ let shelldictlong["84 42 Ua"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ �
 let shelldictlong["85 42 Ua"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢" | let shelldictlong["Ua-85"]=shelldictlong["85 42 Ua"]
 
 
-let decay_text_alpha      = "alpha"
-let decay_text_beta_plus  = "beta+"
-let decay_text_beta_minus = "beta-"
-let decay_text_stable     = "stable"
-let decay_text_proton     = "proton"
-let decay_text_neutron    = "neutron"
-let decay_text_fission    = "fission"
-
-" 'ª' alpha   insert <C-k>-a
-" '⁺' beta+   insert <C-k>+S
-" '⁻' beta-   insert <C-k>-S
-" '∙' stable  insert <C-k>Sb
-" 'Þ' proton  insert <C-k>Ip
-" '⊙' neutron insert <C-k>0.
-" 'Φ' fission insert <C-k>F*
 
 
 
-let decaytextchar = {}
-
-let decaytextchar[decay_text_alpha      ]='ª' " insert <C-k>-a   alpha  
-let decaytextchar[decay_text_beta_plus  ]='⁺' " insert <C-k>+S   beta+  
-let decaytextchar[decay_text_beta_minus ]='⁻' " insert <C-k>-S   beta-  
-let decaytextchar[decay_text_stable     ]='∙' " insert <C-k>Sb   stable 
-let decaytextchar[decay_text_proton     ]='Þ' " insert <C-k>Ip   proton 
-let decaytextchar[decay_text_neutron    ]='⊙' " insert <C-k>0.   neutron
-let decaytextchar[decay_text_fission    ]='Φ' " insert <C-k>F*   fission
-
-syn match decaycharmatch_alpha      /ª/
-syn match decaycharmatch_beta_plus  /⁺/
-syn match decaycharmatch_beta_minus /⁻/
-syn match decaycharmatch_stable     /∙/
-syn match decaycharmatch_proton     /Þ/
-syn match decaycharmatch_neutron    /⊙/
-syn match decaycharmatch_fission    /Φ/
-
-hi decaycharmatch_alpha       cterm=bold gui=inverse guibg=lightmagenta ctermbg=lightmagenta
-hi decaycharmatch_beta_plus   cterm=bold gui=inverse guibg=green        ctermbg=green
-hi decaycharmatch_beta_minus  cterm=bold gui=inverse guibg=cyan         ctermbg=cyan
-hi decaycharmatch_stable      cterm=bold gui=inverse guibg=lightgrey    ctermbg=lightgrey
-hi decaycharmatch_proton      cterm=bold gui=inverse guibg=lightyellow  ctermbg=lightyellow
-hi decaycharmatch_neutron     cterm=bold gui=inverse guibg=purple       ctermbg=lightmagenta
-hi decaycharmatch_fission     cterm=bold gui=inverse guibg=lightgreen   ctermbg=lightgreen
-
-
-
-
-
-
-let decaydict = {}
-
-" Decay type alpha
-let decaydict[" 1  1 Ju"]= decay_text_alpha      | let decaydict["Ju-1"]=  decay_text_alpha
-let decaydict[" 7  4 Af"]= decay_text_alpha      | let decaydict["Af-7"]=  decay_text_alpha
-let decaydict["10  5 Xl"]= decay_text_alpha      | let decaydict["Xl-10"]= decay_text_alpha
-let decaydict["12  6 Pq"]= decay_text_alpha      | let decaydict["Pq-12"]= decay_text_alpha
-let decaydict["14  7 Zz"]= decay_text_alpha      | let decaydict["Zz-14"]= decay_text_alpha
-let decaydict["25 12 Pt"]= decay_text_alpha      | let decaydict["Pt-25"]= decay_text_alpha
-let decaydict["26 13  S"]= decay_text_alpha      | let decaydict["S-26"]=  decay_text_alpha
-let decaydict["27 13  S"]= decay_text_alpha      | let decaydict["S-27"]=  decay_text_alpha
-let decaydict["35 17  D"]= decay_text_alpha      | let decaydict["D-35"]=  decay_text_alpha
-let decaydict["36 17  D"]= decay_text_alpha      | let decaydict["D-36"]=  decay_text_alpha
-let decaydict["36 18 Fj"]= decay_text_alpha      | let decaydict["Fj-36"]= decay_text_alpha
-let decaydict["37 18 Fj"]= decay_text_alpha      | let decaydict["Fj-37"]= decay_text_alpha
-let decaydict["37 19  O"]= decay_text_alpha      | let decaydict["O-37"]=  decay_text_alpha
-let decaydict["38 18 Fj"]= decay_text_alpha      | let decaydict["Fj-38"]= decay_text_alpha
-let decaydict["38 19  O"]= decay_text_alpha      | let decaydict["O-38"]=  decay_text_alpha
-let decaydict["39 18 Fj"]= decay_text_alpha      | let decaydict["Fj-39"]= decay_text_alpha
-let decaydict["39 19  O"]= decay_text_alpha      | let decaydict["O-39"]=  decay_text_alpha
-let decaydict["40 19  O"]= decay_text_alpha      | let decaydict["O-40"]=  decay_text_alpha
-let decaydict["48 23 Aw"]= decay_text_alpha      | let decaydict["Aw-48"]= decay_text_alpha
-let decaydict["49 24 Oc"]= decay_text_alpha      | let decaydict["Oc-49"]= decay_text_alpha
-let decaydict["49 25 Nb"]= decay_text_alpha      | let decaydict["Nb-49"]= decay_text_alpha
-let decaydict["50 25 Nb"]= decay_text_alpha      | let decaydict["Nb-50"]= decay_text_alpha
-let decaydict["51 25 Nb"]= decay_text_alpha      | let decaydict["Nb-51"]= decay_text_alpha
-let decaydict["51 26 Xk"]= decay_text_alpha      | let decaydict["Xk-51"]= decay_text_alpha
-let decaydict["54 25 Nb"]= decay_text_alpha      | let decaydict["Nb-54"]= decay_text_alpha
-let decaydict["58 28 Yp"]= decay_text_alpha      | let decaydict["Yp-58"]= decay_text_alpha
-let decaydict["59 29 Jx"]= decay_text_alpha      | let decaydict["Jx-59"]= decay_text_alpha
-let decaydict["60 29 Jx"]= decay_text_alpha      | let decaydict["Jx-60"]= decay_text_alpha
-let decaydict["61 29 Jx"]= decay_text_alpha      | let decaydict["Jx-61"]= decay_text_alpha
-let decaydict["62 30 Hb"]= decay_text_alpha      | let decaydict["Hb-62"]= decay_text_alpha
-let decaydict["62 29 Jx"]= decay_text_alpha      | let decaydict["Jx-62"]= decay_text_alpha
-let decaydict["62 31 At"]= decay_text_alpha      | let decaydict["At-62"]= decay_text_alpha
-let decaydict["64 30 Hb"]= decay_text_alpha      | let decaydict["Hb-64"]= decay_text_alpha
-let decaydict["64 31 At"]= decay_text_alpha      | let decaydict["At-64"]= decay_text_alpha
-let decaydict["65 31 At"]= decay_text_alpha      | let decaydict["At-65"]= decay_text_alpha
-let decaydict["66 30 Hb"]= decay_text_alpha      | let decaydict["Hb-66"]= decay_text_alpha
-let decaydict["66 31 At"]= decay_text_alpha      | let decaydict["At-66"]= decay_text_alpha
-let decaydict["67 33 Pw"]= decay_text_alpha      | let decaydict["Pw-67"]= decay_text_alpha
-let decaydict["67 31 At"]= decay_text_alpha      | let decaydict["At-67"]= decay_text_alpha
-let decaydict["67 32 Ny"]= decay_text_alpha      | let decaydict["Ny-67"]= decay_text_alpha
-let decaydict["68 32 Ny"]= decay_text_alpha      | let decaydict["Ny-68"]= decay_text_alpha
-let decaydict["68 33 Pw"]= decay_text_alpha      | let decaydict["Pw-68"]= decay_text_alpha
-let decaydict["69 34 Gk"]= decay_text_alpha      | let decaydict["Gk-69"]= decay_text_alpha
-let decaydict["69 32 Ny"]= decay_text_alpha      | let decaydict["Ny-69"]= decay_text_alpha
-let decaydict["69 33 Pw"]= decay_text_alpha      | let decaydict["Pw-69"]= decay_text_alpha
-let decaydict["70 33 Pw"]= decay_text_alpha      | let decaydict["Pw-70"]= decay_text_alpha
-let decaydict["71 34 Gk"]= decay_text_alpha      | let decaydict["Gk-71"]= decay_text_alpha
-let decaydict["74 35 Qi"]= decay_text_alpha      | let decaydict["Qi-74"]= decay_text_alpha
-let decaydict["58 30 Hb"]= decay_text_alpha      | let decaydict["Hb-58"]= decay_text_alpha
-let decaydict["59 30 Hb"]= decay_text_alpha      | let decaydict["Hb-59"]= decay_text_alpha
-let decaydict["67 30 Hb"]= decay_text_alpha      | let decaydict["Hb-67"]= decay_text_alpha
-let decaydict["61 31 At"]= decay_text_alpha      | let decaydict["At-61"]= decay_text_alpha
-let decaydict["65 32 Ny"]= decay_text_alpha      | let decaydict["Ny-65"]= decay_text_alpha
-let decaydict["66 32 Ny"]= decay_text_alpha      | let decaydict["Ny-66"]= decay_text_alpha
-let decaydict["70 34 Gk"]= decay_text_alpha      | let decaydict["Gk-70"]= decay_text_alpha
-let decaydict["72 35 Qi"]= decay_text_alpha      | let decaydict["Qi-72"]= decay_text_alpha
-let decaydict["73 35 Qi"]= decay_text_alpha      | let decaydict["Qi-73"]= decay_text_alpha
-let decaydict["61 30 Hb"]= decay_text_alpha      | let decaydict["Hb-61"]= decay_text_alpha
-let decaydict["63 30 Hb"]= decay_text_alpha      | let decaydict["Hb-63"]= decay_text_alpha
-let decaydict["60 30 Hb"]= decay_text_alpha      | let decaydict["Hb-60"]= decay_text_alpha
-let decaydict["65 30 Hb"]= decay_text_alpha      | let decaydict["Hb-65"]= decay_text_alpha
-let decaydict["63 31 At"]= decay_text_alpha      | let decaydict["At-63"]= decay_text_alpha
-let decaydict["62 32 Ny"]= decay_text_alpha      | let decaydict["Ny-62"]= decay_text_alpha
-
-" Decay type beta+
-let decaydict[" 5  3 Cq"]= decay_text_beta_plus  | let decaydict["Cq-5"]=  decay_text_beta_plus
-let decaydict[" 9  5 Xl"]= decay_text_beta_plus  | let decaydict["Xl-9"]=  decay_text_beta_plus
-let decaydict["10  6 Pq"]= decay_text_beta_plus  | let decaydict["Pq-10"]= decay_text_beta_plus
-let decaydict["11  6 Pq"]= decay_text_beta_plus  | let decaydict["Pq-11"]= decay_text_beta_plus
-let decaydict["13  7 Zz"]= decay_text_beta_plus  | let decaydict["Zz-13"]= decay_text_beta_plus
-let decaydict["14  8 Dx"]= decay_text_beta_plus  | let decaydict["Dx-14"]= decay_text_beta_plus
-let decaydict["15  8 Dx"]= decay_text_beta_plus  | let decaydict["Dx-15"]= decay_text_beta_plus
-let decaydict["17  9 Pm"]= decay_text_beta_plus  | let decaydict["Pm-17"]= decay_text_beta_plus
-let decaydict["18  9 Pm"]= decay_text_beta_plus  | let decaydict["Pm-18"]= decay_text_beta_plus
-let decaydict["19 10  M"]= decay_text_beta_plus  | let decaydict["M-19"]=  decay_text_beta_plus
-let decaydict["21 11 Fw"]= decay_text_beta_plus  | let decaydict["Fw-21"]= decay_text_beta_plus
-let decaydict["22 11 Fw"]= decay_text_beta_plus  | let decaydict["Fw-22"]= decay_text_beta_plus
-let decaydict["24 13  S"]= decay_text_beta_plus  | let decaydict["S-24"]=  decay_text_beta_plus
-let decaydict["25 13  S"]= decay_text_beta_plus  | let decaydict["S-25"]=  decay_text_beta_plus
-let decaydict["27 14 Zq"]= decay_text_beta_plus  | let decaydict["Zq-27"]= decay_text_beta_plus
-let decaydict["28 14 Zq"]= decay_text_beta_plus  | let decaydict["Zq-28"]= decay_text_beta_plus
-let decaydict["29 15 Xc"]= decay_text_beta_plus  | let decaydict["Xc-29"]= decay_text_beta_plus
-let decaydict["30 16 Gy"]= decay_text_beta_plus  | let decaydict["Gy-30"]= decay_text_beta_plus
-let decaydict["31 16 Gy"]= decay_text_beta_plus  | let decaydict["Gy-31"]= decay_text_beta_plus
-let decaydict["32 16 Gy"]= decay_text_beta_plus  | let decaydict["Gy-32"]= decay_text_beta_plus
-let decaydict["32 17  D"]= decay_text_beta_plus  | let decaydict["D-32"]=  decay_text_beta_plus
-let decaydict["33 17  D"]= decay_text_beta_plus  | let decaydict["D-33"]=  decay_text_beta_plus
-let decaydict["34 17  D"]= decay_text_beta_plus  | let decaydict["D-34"]=  decay_text_beta_plus
-let decaydict["35 18 Fj"]= decay_text_beta_plus  | let decaydict["Fj-35"]= decay_text_beta_plus
-let decaydict["38 20  C"]= decay_text_beta_plus  | let decaydict["C-38"]=  decay_text_beta_plus
-let decaydict["39 20  C"]= decay_text_beta_plus  | let decaydict["C-39"]=  decay_text_beta_plus
-let decaydict["40 20  C"]= decay_text_beta_plus  | let decaydict["C-40"]=  decay_text_beta_plus
-let decaydict["40 21  E"]= decay_text_beta_plus  | let decaydict["E-40"]=  decay_text_beta_plus
-let decaydict["41 20  C"]= decay_text_beta_plus  | let decaydict["C-41"]=  decay_text_beta_plus
-let decaydict["41 21  E"]= decay_text_beta_plus  | let decaydict["E-41"]=  decay_text_beta_plus
-let decaydict["42 21  E"]= decay_text_beta_plus  | let decaydict["E-42"]=  decay_text_beta_plus
-let decaydict["42 22  A"]= decay_text_beta_plus  | let decaydict["A-42"]=  decay_text_beta_plus
-let decaydict["43 22  A"]= decay_text_beta_plus  | let decaydict["A-43"]=  decay_text_beta_plus
-let decaydict["44 23 Aw"]= decay_text_beta_plus  | let decaydict["Aw-44"]= decay_text_beta_plus
-let decaydict["45 23 Aw"]= decay_text_beta_plus  | let decaydict["Aw-45"]= decay_text_beta_plus
-let decaydict["46 23 Aw"]= decay_text_beta_plus  | let decaydict["Aw-46"]= decay_text_beta_plus
-let decaydict["46 24 Oc"]= decay_text_beta_plus  | let decaydict["Oc-46"]= decay_text_beta_plus
-let decaydict["47 23 Aw"]= decay_text_beta_plus  | let decaydict["Aw-47"]= decay_text_beta_plus
-let decaydict["47 24 Oc"]= decay_text_beta_plus  | let decaydict["Oc-47"]= decay_text_beta_plus
-let decaydict["47 25 Nb"]= decay_text_beta_plus  | let decaydict["Nb-47"]= decay_text_beta_plus
-let decaydict["48 24 Oc"]= decay_text_beta_plus  | let decaydict["Oc-48"]= decay_text_beta_plus
-let decaydict["48 25 Nb"]= decay_text_beta_plus  | let decaydict["Nb-48"]= decay_text_beta_plus
-let decaydict["50 26 Xk"]= decay_text_beta_plus  | let decaydict["Xk-50"]= decay_text_beta_plus
-let decaydict["52 26 Xk"]= decay_text_beta_plus  | let decaydict["Xk-52"]= decay_text_beta_plus
-let decaydict["52 27 Ic"]= decay_text_beta_plus  | let decaydict["Ic-52"]= decay_text_beta_plus
-let decaydict["53 27 Ic"]= decay_text_beta_plus  | let decaydict["Ic-53"]= decay_text_beta_plus
-let decaydict["54 28 Yp"]= decay_text_beta_plus  | let decaydict["Yp-54"]= decay_text_beta_plus
-let decaydict["55 28 Yp"]= decay_text_beta_plus  | let decaydict["Yp-55"]= decay_text_beta_plus
-let decaydict["56 28 Yp"]= decay_text_beta_plus  | let decaydict["Yp-56"]= decay_text_beta_plus
-let decaydict["56 29 Jx"]= decay_text_beta_plus  | let decaydict["Jx-56"]= decay_text_beta_plus
-let decaydict["57 28 Yp"]= decay_text_beta_plus  | let decaydict["Yp-57"]= decay_text_beta_plus
-let decaydict["57 29 Jx"]= decay_text_beta_plus  | let decaydict["Jx-57"]= decay_text_beta_plus
-let decaydict["57 30 Hb"]= decay_text_beta_plus  | let decaydict["Hb-57"]= decay_text_beta_plus
-let decaydict["58 29 Jx"]= decay_text_beta_plus  | let decaydict["Jx-58"]= decay_text_beta_plus
-let decaydict["59 28 Yp"]= decay_text_beta_plus  | let decaydict["Yp-59"]= decay_text_beta_plus
-let decaydict["63 32 Ny"]= decay_text_beta_plus  | let decaydict["Ny-63"]= decay_text_beta_plus
-let decaydict["64 32 Ny"]= decay_text_beta_plus  | let decaydict["Ny-64"]= decay_text_beta_plus
-let decaydict["65 33 Pw"]= decay_text_beta_plus  | let decaydict["Pw-65"]= decay_text_beta_plus
-let decaydict["66 33 Pw"]= decay_text_beta_plus  | let decaydict["Pw-66"]= decay_text_beta_plus
-let decaydict["67 34 Gk"]= decay_text_beta_plus  | let decaydict["Gk-67"]= decay_text_beta_plus
-let decaydict["68 34 Gk"]= decay_text_beta_plus  | let decaydict["Gk-68"]= decay_text_beta_plus
-let decaydict["70 35 Qi"]= decay_text_beta_plus  | let decaydict["Qi-70"]= decay_text_beta_plus
-let decaydict["71 35 Qi"]= decay_text_beta_plus  | let decaydict["Qi-71"]= decay_text_beta_plus
-let decaydict["72 36 Xy"]= decay_text_beta_plus  | let decaydict["Xy-72"]= decay_text_beta_plus
-let decaydict["74 36 Xy"]= decay_text_beta_plus  | let decaydict["Xy-74"]= decay_text_beta_plus
-let decaydict["73 37 Gq"]= decay_text_beta_plus  | let decaydict["Gq-73"]= decay_text_beta_plus
-let decaydict["74 37 Gq"]= decay_text_beta_plus  | let decaydict["Gq-74"]= decay_text_beta_plus
-let decaydict["75 35 Qi"]= decay_text_beta_plus  | let decaydict["Qi-75"]= decay_text_beta_plus
-let decaydict["75 36 Xy"]= decay_text_beta_plus  | let decaydict["Xy-75"]= decay_text_beta_plus
-let decaydict["75 38 Bt"]= decay_text_beta_plus  | let decaydict["Bt-75"]= decay_text_beta_plus
-let decaydict["75 37 Gq"]= decay_text_beta_plus  | let decaydict["Gq-75"]= decay_text_beta_plus
-let decaydict["76 36 Xy"]= decay_text_beta_plus  | let decaydict["Xy-76"]= decay_text_beta_plus
-let decaydict["76 37 Gq"]= decay_text_beta_plus  | let decaydict["Gq-76"]= decay_text_beta_plus
-let decaydict["77 37 Gq"]= decay_text_beta_plus  | let decaydict["Gq-77"]= decay_text_beta_plus
-let decaydict["78 39  H"]= decay_text_beta_plus  | let decaydict["H-78"]=  decay_text_beta_plus
-let decaydict["83 42 Ua"]= decay_text_beta_plus  | let decaydict["Ua-83"]= decay_text_beta_plus
-let decaydict["83 41 Sq"]= decay_text_beta_plus  | let decaydict["Sq-83"]= decay_text_beta_plus
-let decaydict["84 42 Ua"]= decay_text_beta_plus  | let decaydict["Ua-84"]= decay_text_beta_plus
-let decaydict["85 42 Ua"]= decay_text_beta_plus  | let decaydict["Ua-85"]= decay_text_beta_plus
-let decaydict["73 36 Xy"]= decay_text_beta_plus  | let decaydict["Xy-73"]= decay_text_beta_plus
-let decaydict["79 39  H"]= decay_text_beta_plus  | let decaydict["H-79"]=  decay_text_beta_plus
-let decaydict["76 38 Bt"]= decay_text_beta_plus  | let decaydict["Bt-76"]= decay_text_beta_plus
-let decaydict["77 38 Bt"]= decay_text_beta_plus  | let decaydict["Bt-77"]= decay_text_beta_plus
-let decaydict["78 38 Bt"]= decay_text_beta_plus  | let decaydict["Bt-78"]= decay_text_beta_plus
-let decaydict["81 39  H"]= decay_text_beta_plus  | let decaydict["H-81"]=  decay_text_beta_plus
-let decaydict["22 12 Pt"]= decay_text_beta_plus  | let decaydict["Pt-22"]= decay_text_beta_plus
-let decaydict["28 15 Xc"]= decay_text_beta_plus  | let decaydict["Xc-28"]= decay_text_beta_plus
-let decaydict["51 27 Ic"]= decay_text_beta_plus  | let decaydict["Ic-51"]= decay_text_beta_plus
-let decaydict["26 14 Zq"]= decay_text_beta_plus  | let decaydict["Zq-26"]= decay_text_beta_plus
-let decaydict["69 35 Qi"]= decay_text_beta_plus  | let decaydict["Qi-69"]= decay_text_beta_plus
-let decaydict["68 35 Qi"]= decay_text_beta_plus  | let decaydict["Qi-68"]= decay_text_beta_plus
-let decaydict["71 36 Xy"]= decay_text_beta_plus  | let decaydict["Xy-71"]= decay_text_beta_plus
-let decaydict["64 33 Pw"]= decay_text_beta_plus  | let decaydict["Pw-64"]= decay_text_beta_plus
-let decaydict["65 34 Gk"]= decay_text_beta_plus  | let decaydict["Gk-65"]= decay_text_beta_plus
-let decaydict["66 34 Gk"]= decay_text_beta_plus  | let decaydict["Gk-66"]= decay_text_beta_plus
-let decaydict["67 35 Qi"]= decay_text_beta_plus  | let decaydict["Qi-67"]= decay_text_beta_plus
-let decaydict["36 19  O"]= decay_text_beta_plus  | let decaydict["O-36"]=  decay_text_beta_plus
-let decaydict["70 36 Xy"]= decay_text_beta_plus  | let decaydict["Xy-70"]= decay_text_beta_plus
-let decaydict["72 37 Gq"]= decay_text_beta_plus  | let decaydict["Gq-72"]= decay_text_beta_plus
-let decaydict["73 37 Gq"]= decay_text_beta_plus  | let decaydict["Gq-73"]= decay_text_beta_plus
-let decaydict["74 38 Bt"]= decay_text_beta_plus  | let decaydict["Bt-74"]= decay_text_beta_plus
-let decaydict["76 39  H"]= decay_text_beta_plus  | let decaydict["H-76"]=  decay_text_beta_plus
-let decaydict["77 39  H"]= decay_text_beta_plus  | let decaydict["H-77"]=  decay_text_beta_plus
-let decaydict["78 40  U"]= decay_text_beta_plus  | let decaydict["U-78"]=  decay_text_beta_plus
-let decaydict["79 40  U"]= decay_text_beta_plus  | let decaydict["U-79"]=  decay_text_beta_plus
-let decaydict["80 40  U"]= decay_text_beta_plus  | let decaydict["U-80"]=  decay_text_beta_plus
-let decaydict["82 40  U"]= decay_text_beta_plus  | let decaydict["U-82"]=  decay_text_beta_plus
-let decaydict["23 12 Pt"]= decay_text_beta_plus  | let decaydict["Pt-23"]= decay_text_beta_plus
-let decaydict["79 41 Sq"]= decay_text_beta_plus  | let decaydict["Sq-79"]= decay_text_beta_plus
-let decaydict["80 41 Sq"]= decay_text_beta_plus  | let decaydict["Sq-80"]= decay_text_beta_plus
-let decaydict["81 41 Sq"]= decay_text_beta_plus  | let decaydict["Sq-81"]= decay_text_beta_plus
-let decaydict["60 31 At"]= decay_text_beta_plus  | let decaydict["At-60"]= decay_text_beta_plus
-let decaydict["61 32 Ny"]= decay_text_beta_plus  | let decaydict["Ny-61"]= decay_text_beta_plus
-let decaydict["73 38 Bt"]= decay_text_beta_plus  | let decaydict["Bt-73"]= decay_text_beta_plus
-let decaydict["69 36 Xy"]= decay_text_beta_plus  | let decaydict["Xy-69"]= decay_text_beta_plus
-let decaydict["75 39  H"]= decay_text_beta_plus  | let decaydict["H-75"]=  decay_text_beta_plus
-
-" Decay type beta-
-let decaydict["14  6 Pq"]= decay_text_beta_minus | let decaydict["Pq-14"]= decay_text_beta_minus
-let decaydict["15  6 Pq"]= decay_text_beta_minus | let decaydict["Pq-15"]= decay_text_beta_minus
-let decaydict["20  9 Pm"]= decay_text_beta_minus | let decaydict["Pm-20"]= decay_text_beta_minus
-let decaydict["23 10  M"]= decay_text_beta_minus | let decaydict["M-23"]=  decay_text_beta_minus
-let decaydict["24 11 Fw"]= decay_text_beta_minus | let decaydict["Fw-24"]= decay_text_beta_minus
-let decaydict["25 11 Fw"]= decay_text_beta_minus | let decaydict["Fw-25"]= decay_text_beta_minus
-let decaydict["29 13  S"]= decay_text_beta_minus | let decaydict["S-29"]=  decay_text_beta_minus
-let decaydict["30 14 Zq"]= decay_text_beta_minus | let decaydict["Zq-30"]= decay_text_beta_minus
-let decaydict["31 14 Zq"]= decay_text_beta_minus | let decaydict["Zq-31"]= decay_text_beta_minus
-let decaydict["32 14 Zq"]= decay_text_beta_minus | let decaydict["Zq-32"]= decay_text_beta_minus
-let decaydict["33 15 Xc"]= decay_text_beta_minus | let decaydict["Xc-33"]= decay_text_beta_minus
-let decaydict["33 17  D"]= decay_text_beta_minus | let decaydict["D-33"]=  decay_text_beta_minus
-let decaydict["34 15 Xc"]= decay_text_beta_minus | let decaydict["Xc-34"]= decay_text_beta_minus
-let decaydict["34 18 Fj"]= decay_text_beta_minus | let decaydict["Fj-34"]= decay_text_beta_minus
-let decaydict["35 16 Gy"]= decay_text_beta_minus | let decaydict["Gy-35"]= decay_text_beta_minus
-let decaydict["36 16 Gy"]= decay_text_beta_minus | let decaydict["Gy-36"]= decay_text_beta_minus
-let decaydict["37 17  D"]= decay_text_beta_minus | let decaydict["D-37"]=  decay_text_beta_minus
-let decaydict["38 17  D"]= decay_text_beta_minus | let decaydict["D-38"]=  decay_text_beta_minus
-let decaydict["39 17  D"]= decay_text_beta_minus | let decaydict["D-39"]=  decay_text_beta_minus
-let decaydict["41 18 Fj"]= decay_text_beta_minus | let decaydict["Fj-41"]= decay_text_beta_minus
-let decaydict["42 19  O"]= decay_text_beta_minus | let decaydict["O-42"]=  decay_text_beta_minus
-let decaydict["43 19  O"]= decay_text_beta_minus | let decaydict["O-43"]=  decay_text_beta_minus
-let decaydict["43 20  C"]= decay_text_beta_minus | let decaydict["C-43"]=  decay_text_beta_minus
-let decaydict["44 20  C"]= decay_text_beta_minus | let decaydict["C-44"]=  decay_text_beta_minus
-let decaydict["44 21  E"]= decay_text_beta_minus | let decaydict["E-44"]=  decay_text_beta_minus
-let decaydict["45 20  C"]= decay_text_beta_minus | let decaydict["C-45"]=  decay_text_beta_minus
-let decaydict["45 21  E"]= decay_text_beta_minus | let decaydict["E-45"]=  decay_text_beta_minus
-let decaydict["46 21  E"]= decay_text_beta_minus | let decaydict["E-46"]=  decay_text_beta_minus
-let decaydict["47 21  E"]= decay_text_beta_minus | let decaydict["E-47"]=  decay_text_beta_minus
-let decaydict["48 21  E"]= decay_text_beta_minus | let decaydict["E-48"]=  decay_text_beta_minus
-let decaydict["49 22  A"]= decay_text_beta_minus | let decaydict["A-49"]=  decay_text_beta_minus
-let decaydict["50 22  A"]= decay_text_beta_minus | let decaydict["A-50"]=  decay_text_beta_minus
-let decaydict["51 23 Aw"]= decay_text_beta_minus | let decaydict["Aw-51"]= decay_text_beta_minus
-let decaydict["52 24 Oc"]= decay_text_beta_minus | let decaydict["Oc-52"]= decay_text_beta_minus
-let decaydict["53 24 Oc"]= decay_text_beta_minus | let decaydict["Oc-53"]= decay_text_beta_minus
-let decaydict["53 25 Nb"]= decay_text_beta_minus | let decaydict["Nb-53"]= decay_text_beta_minus
-let decaydict["54 26 Xk"]= decay_text_beta_minus | let decaydict["Xk-54"]= decay_text_beta_minus
-let decaydict["54 24 Oc"]= decay_text_beta_minus | let decaydict["Oc-54"]= decay_text_beta_minus
-let decaydict["55 26 Xk"]= decay_text_beta_minus | let decaydict["Xk-55"]= decay_text_beta_minus
-let decaydict["56 25 Nb"]= decay_text_beta_minus | let decaydict["Nb-56"]= decay_text_beta_minus
-let decaydict["56 26 Xk"]= decay_text_beta_minus | let decaydict["Xk-56"]= decay_text_beta_minus
-let decaydict["57 26 Xk"]= decay_text_beta_minus | let decaydict["Xk-57"]= decay_text_beta_minus
-let decaydict["58 26 Xk"]= decay_text_beta_minus | let decaydict["Xk-58"]= decay_text_beta_minus
-let decaydict["59 26 Xk"]= decay_text_beta_minus | let decaydict["Xk-59"]= decay_text_beta_minus
-let decaydict["60 27 Ic"]= decay_text_beta_minus | let decaydict["Ic-60"]= decay_text_beta_minus
-let decaydict["61 28 Yp"]= decay_text_beta_minus | let decaydict["Yp-61"]= decay_text_beta_minus
-let decaydict["61 27 Ic"]= decay_text_beta_minus | let decaydict["Ic-61"]= decay_text_beta_minus
-let decaydict["62 28 Yp"]= decay_text_beta_minus | let decaydict["Yp-62"]= decay_text_beta_minus
-let decaydict["63 28 Yp"]= decay_text_beta_minus | let decaydict["Yp-63"]= decay_text_beta_minus
-let decaydict["63 29 Jx"]= decay_text_beta_minus | let decaydict["Jx-63"]= decay_text_beta_minus
-let decaydict["64 29 Jx"]= decay_text_beta_minus | let decaydict["Jx-64"]= decay_text_beta_minus
-let decaydict["65 29 Jx"]= decay_text_beta_minus | let decaydict["Jx-65"]= decay_text_beta_minus
-let decaydict["68 31 At"]= decay_text_beta_minus | let decaydict["At-68"]= decay_text_beta_minus
-let decaydict["69 31 At"]= decay_text_beta_minus | let decaydict["At-69"]= decay_text_beta_minus
-let decaydict["71 32 Ny"]= decay_text_beta_minus | let decaydict["Ny-71"]= decay_text_beta_minus
-let decaydict["71 33 Pw"]= decay_text_beta_minus | let decaydict["Pw-71"]= decay_text_beta_minus
-let decaydict["72 33 Pw"]= decay_text_beta_minus | let decaydict["Pw-72"]= decay_text_beta_minus
-let decaydict["73 33 Pw"]= decay_text_beta_minus | let decaydict["Pw-73"]= decay_text_beta_minus
-let decaydict["73 34 Gk"]= decay_text_beta_minus | let decaydict["Gk-73"]= decay_text_beta_minus
-let decaydict["77 35 Qi"]= decay_text_beta_minus | let decaydict["Qi-77"]= decay_text_beta_minus
-let decaydict["79 37 Gq"]= decay_text_beta_minus | let decaydict["Gq-79"]= decay_text_beta_minus
-let decaydict["80 38 Bt"]= decay_text_beta_minus | let decaydict["Bt-80"]= decay_text_beta_minus
-let decaydict["72 32 Ny"]= decay_text_beta_minus | let decaydict["Ny-72"]= decay_text_beta_minus
-let decaydict["70 32 Ny"]= decay_text_beta_minus | let decaydict["Ny-70"]= decay_text_beta_minus
-let decaydict["74 33 Pw"]= decay_text_beta_minus | let decaydict["Pw-74"]= decay_text_beta_minus
-let decaydict["76 34 Gk"]= decay_text_beta_minus | let decaydict["Gk-76"]= decay_text_beta_minus
-let decaydict["78 35 Qi"]= decay_text_beta_minus | let decaydict["Qi-78"]= decay_text_beta_minus
-let decaydict["78 36 Xy"]= decay_text_beta_minus | let decaydict["Xy-78"]= decay_text_beta_minus
-let decaydict["16  7 Zz"]= decay_text_beta_minus | let decaydict["Zz-16"]= decay_text_beta_minus
-let decaydict["27 12 Pt"]= decay_text_beta_minus | let decaydict["Pt-27"]= decay_text_beta_minus
-let decaydict["21  9 Pm"]= decay_text_beta_minus | let decaydict["Pm-21"]= decay_text_beta_minus
-let decaydict["30 13  S"]= decay_text_beta_minus | let decaydict["S-30"]=  decay_text_beta_minus
-let decaydict["26 11 Fw"]= decay_text_beta_minus | let decaydict["Fw-26"]= decay_text_beta_minus
-let decaydict["19  8 Dx"]= decay_text_beta_minus | let decaydict["Dx-19"]= decay_text_beta_minus
-let decaydict["28 12 Pt"]= decay_text_beta_minus | let decaydict["Pt-28"]= decay_text_beta_minus
-let decaydict["52 23 Aw"]= decay_text_beta_minus | let decaydict["Aw-52"]= decay_text_beta_minus
-let decaydict["55 25 Nb"]= decay_text_beta_minus | let decaydict["Nb-55"]= decay_text_beta_minus
-let decaydict["12  5 Xl"]= decay_text_beta_minus | let decaydict["Xl-12"]= decay_text_beta_minus
-let decaydict["10  4 Af"]= decay_text_beta_minus | let decaydict["Af-10"]= decay_text_beta_minus
-
-" Decay type stable
-let decaydict[" 1  1 Ju"]= decay_text_stable     | let decaydict["Ju-1"]=  decay_text_stable
-let decaydict[" 2  1 Ju"]= decay_text_stable     | let decaydict["Ju-2"]=  decay_text_stable
-let decaydict[" 3  1 Ju"]= decay_text_stable     | let decaydict["Ju-3"]=  decay_text_stable
-let decaydict[" 4  2  W"]= decay_text_stable     | let decaydict["W-4"]=   decay_text_stable
-let decaydict[" 5  2  W"]= decay_text_stable     | let decaydict["W-5"]=   decay_text_stable
-let decaydict[" 6  3 Cq"]= decay_text_stable     | let decaydict["Cq-6"]=  decay_text_stable
-let decaydict[" 7  3 Cq"]= decay_text_stable     | let decaydict["Cq-7"]=  decay_text_stable
-let decaydict[" 8  4 Af"]= decay_text_stable     | let decaydict["Af-8"]=  decay_text_stable
-let decaydict[" 9  4 Af"]= decay_text_stable     | let decaydict["Af-9"]=  decay_text_stable
-let decaydict["11  5 Xl"]= decay_text_stable     | let decaydict["Xl-11"]= decay_text_stable
-let decaydict["13  6 Pq"]= decay_text_stable     | let decaydict["Pq-13"]= decay_text_stable
-let decaydict["15  7 Zz"]= decay_text_stable     | let decaydict["Zz-15"]= decay_text_stable
-let decaydict["16  8 Dx"]= decay_text_stable     | let decaydict["Dx-16"]= decay_text_stable
-let decaydict["17  8 Dx"]= decay_text_stable     | let decaydict["Dx-17"]= decay_text_stable
-let decaydict["18  8 Dx"]= decay_text_stable     | let decaydict["Dx-18"]= decay_text_stable
-let decaydict["19  9 Pm"]= decay_text_stable     | let decaydict["Pm-19"]= decay_text_stable
-let decaydict["20 10  M"]= decay_text_stable     | let decaydict["M-20"]=  decay_text_stable
-let decaydict["21 10  M"]= decay_text_stable     | let decaydict["M-21"]=  decay_text_stable
-let decaydict["22 10  M"]= decay_text_stable     | let decaydict["M-22"]=  decay_text_stable
-let decaydict["23 11 Fw"]= decay_text_stable     | let decaydict["Fw-23"]= decay_text_stable
-let decaydict["24 12 Pt"]= decay_text_stable     | let decaydict["Pt-24"]= decay_text_stable
-let decaydict["26 12 Pt"]= decay_text_stable     | let decaydict["Pt-26"]= decay_text_stable
-let decaydict["28 13  S"]= decay_text_stable     | let decaydict["S-28"]=  decay_text_stable
-let decaydict["29 14 Zq"]= decay_text_stable     | let decaydict["Zq-29"]= decay_text_stable
-let decaydict["30 15 Xc"]= decay_text_stable     | let decaydict["Xc-30"]= decay_text_stable
-let decaydict["31 15 Xc"]= decay_text_stable     | let decaydict["Xc-31"]= decay_text_stable
-let decaydict["32 15 Xc"]= decay_text_stable     | let decaydict["Xc-32"]= decay_text_stable
-let decaydict["33 16 Gy"]= decay_text_stable     | let decaydict["Gy-33"]= decay_text_stable
-let decaydict["34 16 Gy"]= decay_text_stable     | let decaydict["Gy-34"]= decay_text_stable
-let decaydict["40 18 Fj"]= decay_text_stable     | let decaydict["Fj-40"]= decay_text_stable
-let decaydict["41 19  O"]= decay_text_stable     | let decaydict["O-41"]=  decay_text_stable
-let decaydict["42 20  C"]= decay_text_stable     | let decaydict["C-42"]=  decay_text_stable
-let decaydict["43 21  E"]= decay_text_stable     | let decaydict["E-43"]=  decay_text_stable
-let decaydict["44 22  A"]= decay_text_stable     | let decaydict["A-44"]=  decay_text_stable
-let decaydict["45 22  A"]= decay_text_stable     | let decaydict["A-45"]=  decay_text_stable
-let decaydict["46 22  A"]= decay_text_stable     | let decaydict["A-46"]=  decay_text_stable
-let decaydict["47 22  A"]= decay_text_stable     | let decaydict["A-47"]=  decay_text_stable
-let decaydict["48 22  A"]= decay_text_stable     | let decaydict["A-48"]=  decay_text_stable
-let decaydict["49 23 Aw"]= decay_text_stable     | let decaydict["Aw-49"]= decay_text_stable
-let decaydict["50 23 Aw"]= decay_text_stable     | let decaydict["Aw-50"]= decay_text_stable
-let decaydict["50 24 Oc"]= decay_text_stable     | let decaydict["Oc-50"]= decay_text_stable
-let decaydict["51 24 Oc"]= decay_text_stable     | let decaydict["Oc-51"]= decay_text_stable
-let decaydict["52 25 Nb"]= decay_text_stable     | let decaydict["Nb-52"]= decay_text_stable
-let decaydict["53 26 Xk"]= decay_text_stable     | let decaydict["Xk-53"]= decay_text_stable
-let decaydict["54 27 Ic"]= decay_text_stable     | let decaydict["Ic-54"]= decay_text_stable
-let decaydict["55 27 Ic"]= decay_text_stable     | let decaydict["Ic-55"]= decay_text_stable
-let decaydict["56 27 Ic"]= decay_text_stable     | let decaydict["Ic-56"]= decay_text_stable
-let decaydict["57 27 Ic"]= decay_text_stable     | let decaydict["Ic-57"]= decay_text_stable
-let decaydict["58 27 Ic"]= decay_text_stable     | let decaydict["Ic-58"]= decay_text_stable
-let decaydict["59 27 Ic"]= decay_text_stable     | let decaydict["Ic-59"]= decay_text_stable
-let decaydict["60 28 Yp"]= decay_text_stable     | let decaydict["Yp-60"]= decay_text_stable
-let decaydict["72 34 Gk"]= decay_text_stable     | let decaydict["Gk-72"]= decay_text_stable
-let decaydict["74 34 Gk"]= decay_text_stable     | let decaydict["Gk-74"]= decay_text_stable
-let decaydict["75 34 Gk"]= decay_text_stable     | let decaydict["Gk-75"]= decay_text_stable
-let decaydict["75 34 Gk"]= decay_text_stable     | let decaydict["Gk-75"]= decay_text_stable
-let decaydict["76 35 Qi"]= decay_text_stable     | let decaydict["Qi-76"]= decay_text_stable
-let decaydict["77 36 Xy"]= decay_text_stable     | let decaydict["Xy-77"]= decay_text_stable
-let decaydict["78 37 Gq"]= decay_text_stable     | let decaydict["Gq-78"]= decay_text_stable
-let decaydict["79 38 Bt"]= decay_text_stable     | let decaydict["Bt-79"]= decay_text_stable
-let decaydict["79 36 Xy"]= decay_text_stable     | let decaydict["Xy-79"]= decay_text_stable
-let decaydict["80 37 Gq"]= decay_text_stable     | let decaydict["Gq-80"]= decay_text_stable
-let decaydict["81 38 Bt"]= decay_text_stable     | let decaydict["Bt-81"]= decay_text_stable
-let decaydict["81 40  U"]= decay_text_stable     | let decaydict["U-81"]=  decay_text_stable
-let decaydict["84 41 Sq"]= decay_text_stable     | let decaydict["Sq-84"]= decay_text_stable
-let decaydict["80 39  H"]= decay_text_stable     | let decaydict["H-80"]=  decay_text_stable
-let decaydict["82 39  H"]= decay_text_stable     | let decaydict["H-82"]=  decay_text_stable
-let decaydict["83 40  U"]= decay_text_stable     | let decaydict["U-83"]=  decay_text_stable
-let decaydict["82 41 Sq"]= decay_text_stable     | let decaydict["Sq-82"]= decay_text_stable
-
-
-let electrodict = {}
-
-" Electronegativity
-let electrodict[" 1  1 Ju"]="0.500"  | let electrodict["Ju-1" ]="0.500"
-let electrodict[" 2  1 Ju"]="0.500"  | let electrodict["Ju-2" ]="0.500"
-let electrodict[" 3  1 Ju"]="0.500"  | let electrodict["Ju-3" ]="0.500"
-let electrodict[" 4  2  W"]="2.000"  | let electrodict[ "W-4" ]="2.000"
-let electrodict[" 5  2  W"]="2.000"  | let electrodict[ "W-5" ]="2.000"
-let electrodict[" 5  3 Cq"]="0.000"  | let electrodict["Cq-5" ]="0.000"
-let electrodict[" 6  3 Cq"]="0.000"  | let electrodict["Cq-6" ]="0.000"
-let electrodict[" 7  3 Cq"]="0.000"  | let electrodict["Cq-7" ]="0.000"
-let electrodict[" 7  4 Af"]="0.125"  | let electrodict["Af-7" ]="0.125"
-let electrodict[" 8  4 Af"]="0.125"  | let electrodict["Af-8" ]="0.125"
-let electrodict[" 9  4 Af"]="0.125"  | let electrodict["Af-9" ]="0.125"
-let electrodict["10  4 Af"]="0.125"  | let electrodict["Af-10"]="0.125"
-let electrodict[" 9  5 Xl"]="0.333"  | let electrodict["Xl-9" ]="0.333"
-let electrodict["10  5 Xl"]="0.333"  | let electrodict["Xl-10"]="0.333"
-let electrodict["10  6 Pq"]="1.167"  | let electrodict["Pq-10"]="1.167"
-let electrodict["11  5 Xl"]="0.333"  | let electrodict["Xl-11"]="0.333"
-let electrodict["12  5 Xl"]="0.333"  | let electrodict["Xl-12"]="0.333"
-let electrodict["11  6 Pq"]="1.167"  | let electrodict["Pq-11"]="1.167"
-let electrodict["12  6 Pq"]="1.167"  | let electrodict["Pq-12"]="1.167"
-let electrodict["13  6 Pq"]="1.167"  | let electrodict["Pq-13"]="1.167"
-let electrodict["13  7 Zz"]="0.000"  | let electrodict["Zz-13"]="0.000"
-let electrodict["14  6 Pq"]="1.167"  | let electrodict["Pq-14"]="1.167"
-let electrodict["14  7 Zz"]="0.000"  | let electrodict["Zz-14"]="0.000"
-let electrodict["15  6 Pq"]="1.167"  | let electrodict["Pq-15"]="1.167"
-let electrodict["15  7 Zz"]="0.000"  | let electrodict["Zz-15"]="0.000"
-let electrodict["14  8 Dx"]="0.071"  | let electrodict["Dx-14"]="0.071"
-let electrodict["15  8 Dx"]="0.071"  | let electrodict["Dx-15"]="0.071"
-let electrodict["16  7 Zz"]="0.000"  | let electrodict["Zz-16"]="0.000"
-let electrodict["16  8 Dx"]="0.071"  | let electrodict["Dx-16"]="0.071"
-let electrodict["17  8 Dx"]="0.071"  | let electrodict["Dx-17"]="0.071"
-let electrodict["17  9 Pm"]="0.233"  | let electrodict["Pm-17"]="0.233"
-let electrodict["18  8 Dx"]="0.071"  | let electrodict["Dx-18"]="0.071"
-let electrodict["18  9 Pm"]="0.233"  | let electrodict["Pm-18"]="0.233"
-let electrodict["19  8 Dx"]="0.071"  | let electrodict["Dx-19"]="0.071"
-let electrodict["19  9 Pm"]="0.233"  | let electrodict["Pm-19"]="0.233"
-let electrodict["19 10  M"]="0.476"  | let electrodict[ "M-19"]="0.476"
-let electrodict["20  9 Pm"]="0.233"  | let electrodict["Pm-20"]="0.233"
-let electrodict["20 10  M"]="0.476"  | let electrodict[ "M-20"]="0.476"
-let electrodict["21  9 Pm"]="0.233"  | let electrodict["Pm-21"]="0.233"
-let electrodict["21 10  M"]="0.476"  | let electrodict[ "M-21"]="0.476"
-let electrodict["21 11 Fw"]="1.083"  | let electrodict["Fw-21"]="1.083"
-let electrodict["22 10  M"]="0.476"  | let electrodict[ "M-22"]="0.476"
-let electrodict["22 11 Fw"]="1.083"  | let electrodict["Fw-22"]="1.083"
-let electrodict["22 12 Pt"]="0.000"  | let electrodict["Pt-22"]="0.000"
-let electrodict["23 10  M"]="0.476"  | let electrodict[ "M-23"]="0.476"
-let electrodict["23 11 Fw"]="1.083"  | let electrodict["Fw-23"]="1.083"
-let electrodict["23 12 Pt"]="0.000"  | let electrodict["Pt-23"]="0.000"
-let electrodict["24 11 Fw"]="1.083"  | let electrodict["Fw-24"]="1.083"
-let electrodict["24 12 Pt"]="0.000"  | let electrodict["Pt-24"]="0.000"
-let electrodict["25 11 Fw"]="1.083"  | let electrodict["Fw-25"]="1.083"
-let electrodict["25 12 Pt"]="0.000"  | let electrodict["Pt-25"]="0.000"
-let electrodict["24 13  S"]="0.083"  | let electrodict[ "S-24"]="0.083"
-let electrodict["25 13  S"]="0.083"  | let electrodict[ "S-25"]="0.083"
-let electrodict["26 11 Fw"]="1.083"  | let electrodict["Fw-26"]="1.083"
-let electrodict["26 12 Pt"]="0.000"  | let electrodict["Pt-26"]="0.000"
-let electrodict["26 13  S"]="0.083"  | let electrodict[ "S-26"]="0.083"
-let electrodict["26 14 Zq"]="0.250"  | let electrodict["Zq-26"]="0.250"
-let electrodict["27 12 Pt"]="0.000"  | let electrodict["Pt-27"]="0.000"
-let electrodict["27 13  S"]="0.083"  | let electrodict[ "S-27"]="0.083"
-let electrodict["27 14 Zq"]="0.250"  | let electrodict["Zq-27"]="0.250"
-let electrodict["28 12 Pt"]="0.000"  | let electrodict["Pt-28"]="0.000"
-let electrodict["28 13  S"]="0.083"  | let electrodict[ "S-28"]="0.083"
-let electrodict["28 14 Zq"]="0.250"  | let electrodict["Zq-28"]="0.250"
-let electrodict["28 15 Xc"]="0.750"  | let electrodict["Xc-28"]="0.750"
-let electrodict["29 13  S"]="0.083"  | let electrodict[ "S-29"]="0.083"
-let electrodict["29 14 Zq"]="0.250"  | let electrodict["Zq-29"]="0.250"
-let electrodict["29 15 Xc"]="0.750"  | let electrodict["Xc-29"]="0.750"
-let electrodict["30 13  S"]="0.083"  | let electrodict[ "S-30"]="0.083"
-let electrodict["30 14 Zq"]="0.250"  | let electrodict["Zq-30"]="0.250"
-let electrodict["30 15 Xc"]="0.750"  | let electrodict["Xc-30"]="0.750"
-let electrodict["31 14 Zq"]="0.250"  | let electrodict["Zq-31"]="0.250"
-let electrodict["31 15 Xc"]="0.750"  | let electrodict["Xc-31"]="0.750"
-let electrodict["30 16 Gy"]="0.000"  | let electrodict["Gy-30"]="0.000"
-let electrodict["31 16 Gy"]="0.000"  | let electrodict["Gy-31"]="0.000"
-let electrodict["32 14 Zq"]="0.250"  | let electrodict["Zq-32"]="0.250"
-let electrodict["32 15 Xc"]="0.750"  | let electrodict["Xc-32"]="0.750"
-let electrodict["32 16 Gy"]="0.000"  | let electrodict["Gy-32"]="0.000"
-let electrodict["32 17  D"]="0.026"  | let electrodict[ "D-32"]="0.026"
-let electrodict["33 15 Xc"]="0.750"  | let electrodict["Xc-33"]="0.750"
-let electrodict["33 16 Gy"]="0.000"  | let electrodict["Gy-33"]="0.000"
-let electrodict["33 17  D"]="0.026"  | let electrodict[ "D-33"]="0.026"
-let electrodict["34 15 Xc"]="0.750"  | let electrodict["Xc-34"]="0.750"
-let electrodict["34 16 Gy"]="0.000"  | let electrodict["Gy-34"]="0.000"
-let electrodict["34 17  D"]="0.026"  | let electrodict[ "D-34"]="0.026"
-let electrodict["34 18 Fj"]="0.067"  | let electrodict["Fj-34"]="0.067"
-let electrodict["35 16 Gy"]="0.000"  | let electrodict["Gy-35"]="0.000"
-let electrodict["35 17  D"]="0.026"  | let electrodict[ "D-35"]="0.026"
-let electrodict["35 18 Fj"]="0.067"  | let electrodict["Fj-35"]="0.067"
-let electrodict["36 16 Gy"]="0.000"  | let electrodict["Gy-36"]="0.000"
-let electrodict["36 17  D"]="0.026"  | let electrodict[ "D-36"]="0.026"
-let electrodict["36 18 Fj"]="0.067"  | let electrodict["Fj-36"]="0.067"
-let electrodict["36 19  O"]="0.114"  | let electrodict[ "O-36"]="0.114"
-let electrodict["37 17  D"]="0.026"  | let electrodict[ "D-37"]="0.026"
-let electrodict["37 18 Fj"]="0.067"  | let electrodict["Fj-37"]="0.067"
-let electrodict["37 19  O"]="0.114"  | let electrodict[ "O-37"]="0.114"
-let electrodict["38 17  D"]="0.026"  | let electrodict[ "D-38"]="0.026"
-let electrodict["38 18 Fj"]="0.067"  | let electrodict["Fj-38"]="0.067"
-let electrodict["38 19  O"]="0.114"  | let electrodict[ "O-38"]="0.114"
-let electrodict["38 20  C"]="0.183"  | let electrodict[ "C-38"]="0.183"
-let electrodict["39 17  D"]="0.026"  | let electrodict[ "D-39"]="0.026"
-let electrodict["39 18 Fj"]="0.067"  | let electrodict["Fj-39"]="0.067"
-let electrodict["39 19  O"]="0.114"  | let electrodict[ "O-39"]="0.114"
-let electrodict["39 20  C"]="0.183"  | let electrodict[ "C-39"]="0.183"
-let electrodict["40 18 Fj"]="0.067"  | let electrodict["Fj-40"]="0.067"
-let electrodict["40 19  O"]="0.114"  | let electrodict[ "O-40"]="0.114"
-let electrodict["40 20  C"]="0.183"  | let electrodict[ "C-40"]="0.183"
-let electrodict["40 21  E"]="0.289"  | let electrodict[ "E-40"]="0.289"
-let electrodict["41 18 Fj"]="0.067"  | let electrodict["Fj-41"]="0.067"
-let electrodict["41 19  O"]="0.114"  | let electrodict[ "O-41"]="0.114"
-let electrodict["41 20  C"]="0.183"  | let electrodict[ "C-41"]="0.183"
-let electrodict["41 21  E"]="0.289"  | let electrodict[ "E-41"]="0.289"
-let electrodict["42 19  O"]="0.114"  | let electrodict[ "O-42"]="0.114"
-let electrodict["42 20  C"]="0.183"  | let electrodict[ "C-42"]="0.183"
-let electrodict["42 21  E"]="0.289"  | let electrodict[ "E-42"]="0.289"
-let electrodict["42 22  A"]="0.477"  | let electrodict[ "A-42"]="0.477"
-let electrodict["43 19  O"]="0.114"  | let electrodict[ "O-43"]="0.114"
-let electrodict["43 20  C"]="0.183"  | let electrodict[ "C-43"]="0.183"
-let electrodict["43 21  E"]="0.289"  | let electrodict[ "E-43"]="0.289"
-let electrodict["43 22  A"]="0.477"  | let electrodict[ "A-43"]="0.477"
-let electrodict["44 20  C"]="0.183"  | let electrodict[ "C-44"]="0.183"
-let electrodict["44 21  E"]="0.289"  | let electrodict[ "E-44"]="0.289"
-let electrodict["44 22  A"]="0.477"  | let electrodict[ "A-44"]="0.477"
-let electrodict["44 23 Aw"]="1.267"  | let electrodict["Aw-44"]="1.267"
-let electrodict["45 20  C"]="0.183"  | let electrodict[ "C-45"]="0.183"
-let electrodict["45 21  E"]="0.289"  | let electrodict[ "E-45"]="0.289"
-let electrodict["45 22  A"]="0.477"  | let electrodict[ "A-45"]="0.477"
-let electrodict["45 23 Aw"]="1.267"  | let electrodict["Aw-45"]="1.267"
-let electrodict["46 21  E"]="0.289"  | let electrodict[ "E-46"]="0.289"
-let electrodict["46 22  A"]="0.477"  | let electrodict[ "A-46"]="0.477"
-let electrodict["46 23 Aw"]="1.267"  | let electrodict["Aw-46"]="1.267"
-let electrodict["46 24 Oc"]="0.000"  | let electrodict["Oc-46"]="0.000"
-let electrodict["47 21  E"]="0.289"  | let electrodict[ "E-47"]="0.289"
-let electrodict["47 22  A"]="0.477"  | let electrodict[ "A-47"]="0.477"
-let electrodict["47 23 Aw"]="1.267"  | let electrodict["Aw-47"]="1.267"
-let electrodict["47 24 Oc"]="0.000"  | let electrodict["Oc-47"]="0.000"
-let electrodict["47 25 Nb"]="0.048"  | let electrodict["Nb-47"]="0.048"
-let electrodict["48 21  E"]="0.289"  | let electrodict[ "E-48"]="0.289"
-let electrodict["48 22  A"]="0.477"  | let electrodict[ "A-48"]="0.477"
-let electrodict["48 23 Aw"]="1.267"  | let electrodict["Aw-48"]="1.267"
-let electrodict["48 24 Oc"]="0.000"  | let electrodict["Oc-48"]="0.000"
-let electrodict["48 25 Nb"]="0.048"  | let electrodict["Nb-48"]="0.048"
-let electrodict["49 22  A"]="0.477"  | let electrodict[ "A-49"]="0.477"
-let electrodict["49 23 Aw"]="1.267"  | let electrodict["Aw-49"]="1.267"
-let electrodict["49 24 Oc"]="0.000"  | let electrodict["Oc-49"]="0.000"
-let electrodict["49 25 Nb"]="0.048"  | let electrodict["Nb-49"]="0.048"
-let electrodict["50 22  A"]="0.477"  | let electrodict[ "A-50"]="0.477"
-let electrodict["50 23 Aw"]="1.267"  | let electrodict["Aw-50"]="1.267"
-let electrodict["50 24 Oc"]="0.000"  | let electrodict["Oc-50"]="0.000"
-let electrodict["50 25 Nb"]="0.048"  | let electrodict["Nb-50"]="0.048"
-let electrodict["50 26 Xk"]="0.119"  | let electrodict["Xk-50"]="0.119"
-let electrodict["51 23 Aw"]="1.267"  | let electrodict["Aw-51"]="1.267"
-let electrodict["51 24 Oc"]="0.000"  | let electrodict["Oc-51"]="0.000"
-let electrodict["51 25 Nb"]="0.048"  | let electrodict["Nb-51"]="0.048"
-let electrodict["51 26 Xk"]="0.119"  | let electrodict["Xk-51"]="0.119"
-let electrodict["51 27 Ic"]="0.233"  | let electrodict["Ic-51"]="0.233"
-let electrodict["52 23 Aw"]="1.267"  | let electrodict["Aw-52"]="1.267"
-let electrodict["52 24 Oc"]="0.000"  | let electrodict["Oc-52"]="0.000"
-let electrodict["52 25 Nb"]="0.048"  | let electrodict["Nb-52"]="0.048"
-let electrodict["52 26 Xk"]="0.119"  | let electrodict["Xk-52"]="0.119"
-let electrodict["52 27 Ic"]="0.233"  | let electrodict["Ic-52"]="0.233"
-let electrodict["53 24 Oc"]="0.000"  | let electrodict["Oc-53"]="0.000"
-let electrodict["53 25 Nb"]="0.048"  | let electrodict["Nb-53"]="0.048"
-let electrodict["53 26 Xk"]="0.119"  | let electrodict["Xk-53"]="0.119"
-let electrodict["53 27 Ic"]="0.233"  | let electrodict["Ic-53"]="0.233"
-let electrodict["54 24 Oc"]="0.000"  | let electrodict["Oc-54"]="0.000"
-let electrodict["54 25 Nb"]="0.048"  | let electrodict["Nb-54"]="0.048"
-let electrodict["54 26 Xk"]="0.119"  | let electrodict["Xk-54"]="0.119"
-let electrodict["54 27 Ic"]="0.233"  | let electrodict["Ic-54"]="0.233"
-let electrodict["54 28 Yp"]="0.583"  | let electrodict["Yp-54"]="0.583"
-let electrodict["55 25 Nb"]="0.048"  | let electrodict["Nb-55"]="0.048"
-let electrodict["55 26 Xk"]="0.119"  | let electrodict["Xk-55"]="0.119"
-let electrodict["55 27 Ic"]="0.233"  | let electrodict["Ic-55"]="0.233"
-let electrodict["55 28 Yp"]="0.583"  | let electrodict["Yp-55"]="0.583"
-let electrodict["56 25 Nb"]="0.048"  | let electrodict["Nb-56"]="0.048"
-let electrodict["56 26 Xk"]="0.119"  | let electrodict["Xk-56"]="0.119"
-let electrodict["56 27 Ic"]="0.233"  | let electrodict["Ic-56"]="0.233"
-let electrodict["56 28 Yp"]="0.583"  | let electrodict["Yp-56"]="0.583"
-let electrodict["56 29 Jx"]="0.000"  | let electrodict["Jx-56"]="0.000"
-let electrodict["57 26 Xk"]="0.119"  | let electrodict["Xk-57"]="0.119"
-let electrodict["57 27 Ic"]="0.233"  | let electrodict["Ic-57"]="0.233"
-let electrodict["57 28 Yp"]="0.583"  | let electrodict["Yp-57"]="0.583"
-let electrodict["57 29 Jx"]="0.000"  | let electrodict["Jx-57"]="0.000"
-let electrodict["57 30 Hb"]="0.017"  | let electrodict["Hb-57"]="0.017"
-let electrodict["58 26 Xk"]="0.119"  | let electrodict["Xk-58"]="0.119"
-let electrodict["58 27 Ic"]="0.233"  | let electrodict["Ic-58"]="0.233"
-let electrodict["58 28 Yp"]="0.583"  | let electrodict["Yp-58"]="0.583"
-let electrodict["58 29 Jx"]="0.000"  | let electrodict["Jx-58"]="0.000"
-let electrodict["58 30 Hb"]="0.017"  | let electrodict["Hb-58"]="0.017"
-let electrodict["59 26 Xk"]="0.119"  | let electrodict["Xk-59"]="0.119"
-let electrodict["59 27 Ic"]="0.233"  | let electrodict["Ic-59"]="0.233"
-let electrodict["59 28 Yp"]="0.583"  | let electrodict["Yp-59"]="0.583"
-let electrodict["59 29 Jx"]="0.000"  | let electrodict["Jx-59"]="0.000"
-let electrodict["59 30 Hb"]="0.017"  | let electrodict["Hb-59"]="0.017"
-let electrodict["60 27 Ic"]="0.233"  | let electrodict["Ic-60"]="0.233"
-let electrodict["60 28 Yp"]="0.583"  | let electrodict["Yp-60"]="0.583"
-let electrodict["60 29 Jx"]="0.000"  | let electrodict["Jx-60"]="0.000"
-let electrodict["60 30 Hb"]="0.017"  | let electrodict["Hb-60"]="0.017"
-let electrodict["61 27 Ic"]="0.233"  | let electrodict["Ic-61"]="0.233"
-let electrodict["61 28 Yp"]="0.583"  | let electrodict["Yp-61"]="0.583"
-let electrodict["61 29 Jx"]="0.000"  | let electrodict["Jx-61"]="0.000"
-let electrodict["61 30 Hb"]="0.017"  | let electrodict["Hb-61"]="0.017"
-let electrodict["61 31 At"]="0.047"  | let electrodict["At-61"]="0.047"
-let electrodict["62 28 Yp"]="0.583"  | let electrodict["Yp-62"]="0.583"
-let electrodict["62 29 Jx"]="0.000"  | let electrodict["Jx-62"]="0.000"
-let electrodict["62 30 Hb"]="0.017"  | let electrodict["Hb-62"]="0.017"
-let electrodict["62 31 At"]="0.047"  | let electrodict["At-62"]="0.047"
-let electrodict["62 32 Ny"]="0.077"  | let electrodict["Ny-62"]="0.077"
-let electrodict["63 28 Yp"]="0.583"  | let electrodict["Yp-63"]="0.583"
-let electrodict["63 29 Jx"]="0.000"  | let electrodict["Jx-63"]="0.000"
-let electrodict["63 30 Hb"]="0.017"  | let electrodict["Hb-63"]="0.017"
-let electrodict["63 31 At"]="0.047"  | let electrodict["At-63"]="0.047"
-let electrodict["63 32 Ny"]="0.077"  | let electrodict["Ny-63"]="0.077"
-let electrodict["64 29 Jx"]="0.000"  | let electrodict["Jx-64"]="0.000"
-let electrodict["64 30 Hb"]="0.017"  | let electrodict["Hb-64"]="0.017"
-let electrodict["64 31 At"]="0.047"  | let electrodict["At-64"]="0.047"
-let electrodict["64 32 Ny"]="0.077"  | let electrodict["Ny-64"]="0.077"
-let electrodict["64 33 Pw"]="0.129"  | let electrodict["Pw-64"]="0.129"
-let electrodict["65 29 Jx"]="0.000"  | let electrodict["Jx-65"]="0.000"
-let electrodict["65 30 Hb"]="0.017"  | let electrodict["Hb-65"]="0.017"
-let electrodict["65 31 At"]="0.047"  | let electrodict["At-65"]="0.047"
-let electrodict["65 32 Ny"]="0.077"  | let electrodict["Ny-65"]="0.077"
-let electrodict["65 33 Pw"]="0.129"  | let electrodict["Pw-65"]="0.129"
-let electrodict["66 30 Hb"]="0.017"  | let electrodict["Hb-66"]="0.017"
-let electrodict["66 31 At"]="0.047"  | let electrodict["At-66"]="0.047"
-let electrodict["66 32 Ny"]="0.077"  | let electrodict["Ny-66"]="0.077"
-let electrodict["66 33 Pw"]="0.129"  | let electrodict["Pw-66"]="0.129"
-let electrodict["65 34 Gk"]="0.211"  | let electrodict["Gk-65"]="0.211"
-let electrodict["66 34 Gk"]="0.211"  | let electrodict["Gk-66"]="0.211"
-let electrodict["67 30 Hb"]="0.017"  | let electrodict["Hb-67"]="0.017"
-let electrodict["67 31 At"]="0.047"  | let electrodict["At-67"]="0.047"
-let electrodict["67 32 Ny"]="0.077"  | let electrodict["Ny-67"]="0.077"
-let electrodict["67 33 Pw"]="0.129"  | let electrodict["Pw-67"]="0.129"
-let electrodict["67 34 Gk"]="0.211"  | let electrodict["Gk-67"]="0.211"
-let electrodict["67 35 Qi"]="0.400"  | let electrodict["Qi-67"]="0.400"
-let electrodict["68 31 At"]="0.047"  | let electrodict["At-68"]="0.047"
-let electrodict["68 32 Ny"]="0.077"  | let electrodict["Ny-68"]="0.077"
-let electrodict["68 33 Pw"]="0.129"  | let electrodict["Pw-68"]="0.129"
-let electrodict["68 34 Gk"]="0.211"  | let electrodict["Gk-68"]="0.211"
-let electrodict["68 35 Qi"]="0.400"  | let electrodict["Qi-68"]="0.400"
-let electrodict["69 31 At"]="0.047"  | let electrodict["At-69"]="0.047"
-let electrodict["69 32 Ny"]="0.077"  | let electrodict["Ny-69"]="0.077"
-let electrodict["69 33 Pw"]="0.129"  | let electrodict["Pw-69"]="0.129"
-let electrodict["69 34 Gk"]="0.211"  | let electrodict["Gk-69"]="0.211"
-let electrodict["69 35 Qi"]="0.400"  | let electrodict["Qi-69"]="0.400"
-let electrodict["70 32 Ny"]="0.077"  | let electrodict["Ny-70"]="0.077"
-let electrodict["70 33 Pw"]="0.129"  | let electrodict["Pw-70"]="0.129"
-let electrodict["70 34 Gk"]="0.211"  | let electrodict["Gk-70"]="0.211"
-let electrodict["70 35 Qi"]="0.400"  | let electrodict["Qi-70"]="0.400"
-let electrodict["70 36 Xy"]="0.875"  | let electrodict["Xy-70"]="0.875"
-let electrodict["71 32 Ny"]="0.077"  | let electrodict["Ny-71"]="0.077"
-let electrodict["71 33 Pw"]="0.129"  | let electrodict["Pw-71"]="0.129"
-let electrodict["71 34 Gk"]="0.211"  | let electrodict["Gk-71"]="0.211"
-let electrodict["71 35 Qi"]="0.400"  | let electrodict["Qi-71"]="0.400"
-let electrodict["71 36 Xy"]="0.875"  | let electrodict["Xy-71"]="0.875"
-let electrodict["72 32 Ny"]="0.077"  | let electrodict["Ny-72"]="0.077"
-let electrodict["72 33 Pw"]="0.129"  | let electrodict["Pw-72"]="0.129"
-let electrodict["72 34 Gk"]="0.211"  | let electrodict["Gk-72"]="0.211"
-let electrodict["72 35 Qi"]="0.400"  | let electrodict["Qi-72"]="0.400"
-let electrodict["72 36 Xy"]="0.875"  | let electrodict["Xy-72"]="0.875"
-let electrodict["71 37 Gq"]="0.000"  | let electrodict["Gq-71"]="0.000"
-let electrodict["72 37 Gq"]="0.000"  | let electrodict["Gq-72"]="0.000"
-let electrodict["73 33 Pw"]="0.129"  | let electrodict["Pw-73"]="0.129"
-let electrodict["73 34 Gk"]="0.211"  | let electrodict["Gk-73"]="0.211"
-let electrodict["73 35 Qi"]="0.400"  | let electrodict["Qi-73"]="0.400"
-let electrodict["73 36 Xy"]="0.875"  | let electrodict["Xy-73"]="0.875"
-let electrodict["73 37 Gq"]="0.000"  | let electrodict["Gq-73"]="0.000"
-let electrodict["74 33 Pw"]="0.129"  | let electrodict["Pw-74"]="0.129"
-let electrodict["74 34 Gk"]="0.211"  | let electrodict["Gk-74"]="0.211"
-let electrodict["74 35 Qi"]="0.400"  | let electrodict["Qi-74"]="0.400"
-let electrodict["74 36 Xy"]="0.875"  | let electrodict["Xy-74"]="0.875"
-let electrodict["74 37 Gq"]="0.000"  | let electrodict["Gq-74"]="0.000"
-let electrodict["74 38 Bt"]="0.032"  | let electrodict["Bt-74"]="0.032"
-let electrodict["75 34 Gk"]="0.211"  | let electrodict["Gk-75"]="0.211"
-let electrodict["75 35 Qi"]="0.400"  | let electrodict["Qi-75"]="0.400"
-let electrodict["75 36 Xy"]="0.875"  | let electrodict["Xy-75"]="0.875"
-let electrodict["75 37 Gq"]="0.000"  | let electrodict["Gq-75"]="0.000"
-let electrodict["75 38 Bt"]="0.000"  | let electrodict["Bt-75"]="0.000"
-let electrodict["76 34 Gk"]="0.211"  | let electrodict["Gk-76"]="0.211"
-let electrodict["76 35 Qi"]="0.400"  | let electrodict["Qi-76"]="0.400"
-let electrodict["76 36 Xy"]="0.875"  | let electrodict["Xy-76"]="0.875"
-let electrodict["76 37 Gq"]="0.000"  | let electrodict["Gq-76"]="0.000"
-let electrodict["76 38 Bt"]="0.032"  | let electrodict["Bt-76"]="0.032"
-let electrodict["76 39  H"]="0.078"  | let electrodict[ "H-76"]="0.078"
-let electrodict["77 35 Qi"]="0.400"  | let electrodict["Qi-77"]="0.400"
-let electrodict["77 36 Xy"]="0.875"  | let electrodict["Xy-77"]="0.875"
-let electrodict["77 37 Gq"]="0.000"  | let electrodict["Gq-77"]="0.000"
-let electrodict["77 38 Bt"]="0.032"  | let electrodict["Bt-77"]="0.032"
-let electrodict["77 39  H"]="0.078"  | let electrodict[ "H-77"]="0.078"
-let electrodict["78 35 Qi"]="0.400"  | let electrodict["Qi-78"]="0.400"
-let electrodict["78 36 Xy"]="0.875"  | let electrodict["Xy-78"]="0.875"
-let electrodict["78 37 Gq"]="0.000"  | let electrodict["Gq-78"]="0.000"
-let electrodict["78 38 Bt"]="0.032"  | let electrodict["Bt-78"]="0.032"
-let electrodict["78 39  H"]="0.078"  | let electrodict[ "H-78"]="0.078"
-let electrodict["78 40  U"]="0.180"  | let electrodict[ "U-78"]="0.180"
-let electrodict["79 36 Xy"]="0.875"  | let electrodict["Xy-79"]="0.875"
-let electrodict["79 37 Gq"]="0.000"  | let electrodict["Gq-79"]="0.000"
-let electrodict["79 38 Bt"]="0.032"  | let electrodict["Bt-79"]="0.032"
-let electrodict["79 39  H"]="0.078"  | let electrodict[ "H-79"]="0.078"
-let electrodict["79 40  U"]="0.180"  | let electrodict[ "U-79"]="0.180"
-let electrodict["79 41 Sq"]="0.484"  | let electrodict["Sq-79"]="0.484"
-let electrodict["80 37 Gq"]="0.000"  | let electrodict["Gq-80"]="0.000"
-let electrodict["80 38 Bt"]="0.032"  | let electrodict["Bt-80"]="0.032"
-let electrodict["80 39  H"]="0.078"  | let electrodict[ "H-80"]="0.078"
-let electrodict["80 40  U"]="0.180"  | let electrodict[ "U-80"]="0.180"
-let electrodict["80 41 Sq"]="0.484"  | let electrodict["Sq-80"]="0.484"
-let electrodict["81 38 Bt"]="0.032"  | let electrodict["Bt-81"]="0.032"
-let electrodict["81 39  H"]="0.078"  | let electrodict[ "H-81"]="0.078"
-let electrodict["81 40  U"]="0.180"  | let electrodict[ "U-81"]="0.180"
-let electrodict["81 41 Sq"]="0.484"  | let electrodict["Sq-81"]="0.484"
-let electrodict["82 39  H"]="0.078"  | let electrodict[ "H-82"]="0.078"
-let electrodict["82 40  U"]="0.180"  | let electrodict[ "U-82"]="0.180"
-let electrodict["82 41 Sq"]="0.484"  | let electrodict["Sq-82"]="0.484"
-let electrodict["83 40  U"]="0.180"  | let electrodict[ "U-83"]="0.180"
-let electrodict["83 41 Sq"]="0.484"  | let electrodict["Sq-83"]="0.484"
-let electrodict["83 42 Ua"]="0.000"  | let electrodict["Ua-83"]="0.000"
-let electrodict["84 41 Sq"]="0.484"  | let electrodict["Sq-84"]="0.484"
-let electrodict["84 42 Ua"]="0.000"  | let electrodict["Ua-84"]="0.000"
-let electrodict["85 42 Ua"]="0.000"  | let electrodict["Ua-85"]="0.000"
-let electrodict["60 31 At"]="0.047"  | let electrodict["At-60"]="0.047"
-let electrodict["61 32 Ny"]="0.077"  | let electrodict["Ny-61"]="0.077"
-let electrodict["73 38 Bt"]="0.032"  | let electrodict["Bt-73"]="0.032"
-let electrodict["69 36 Xy"]="0.875"  | let electrodict["Xy-69"]="0.875"
-let electrodict["75 39  H"]="0.078"  | let electrodict[ "H-75"]="0.078"
-
-
-let stabilitydict = {}
-
-" Stability
-let stabilitydict[" 1  1 Ju"]="1.000"    | let stabilitydict["Ju-1" ]="1.000"
-let stabilitydict[" 2  1 Ju"]="1.000"    | let stabilitydict["Ju-2" ]="1.000"
-let stabilitydict[" 3  1 Ju"]="1.000"    | let stabilitydict["Ju-3" ]="1.000"
-let stabilitydict[" 4  2  W"]="1.000"    | let stabilitydict[ "W-4" ]="1.000"
-let stabilitydict[" 5  2  W"]="1.000"    | let stabilitydict[ "W-5" ]="1.000"
-let stabilitydict[" 5  3 Cq"]="0.017"    | let stabilitydict["Cq-5" ]="0.017"
-let stabilitydict[" 6  3 Cq"]="1.000"    | let stabilitydict["Cq-6" ]="1.000"
-let stabilitydict[" 7  3 Cq"]="1.000"    | let stabilitydict["Cq-7" ]="1.000"
-let stabilitydict[" 7  4 Af"]="0.194"    | let stabilitydict["Af-7" ]="0.194"
-let stabilitydict[" 8  4 Af"]="1.000"    | let stabilitydict["Af-8" ]="1.000"
-let stabilitydict[" 9  4 Af"]="1.000"    | let stabilitydict["Af-9" ]="1.000"
-let stabilitydict["10  4 Af"]="0.290"    | let stabilitydict["Af-10"]="0.290"
-let stabilitydict[" 9  5 Xl"]="0.329"    | let stabilitydict["Xl-9" ]="0.329"
-let stabilitydict["10  5 Xl"]="0.487"    | let stabilitydict["Xl-10"]="0.487"
-let stabilitydict["11  5 Xl"]="1.110"    | let stabilitydict["Xl-11"]="1.110"
-let stabilitydict["12  5 Xl"]="0.313"    | let stabilitydict["Xl-12"]="0.313"
-let stabilitydict["10  6 Pq"]="0.049"    | let stabilitydict["Pq-10"]="0.049"
-let stabilitydict["11  6 Pq"]="0.437"    | let stabilitydict["Pq-11"]="0.437"
-let stabilitydict["12  6 Pq"]="0.696"    | let stabilitydict["Pq-12"]="0.696"
-let stabilitydict["13  6 Pq"]="1.282"    | let stabilitydict["Pq-13"]="1.282"
-let stabilitydict["14  6 Pq"]="0.562"    | let stabilitydict["Pq-14"]="0.562"
-let stabilitydict["15  6 Pq"]="0.278"    | let stabilitydict["Pq-15"]="0.278"
-let stabilitydict["13  7 Zz"]="0.525"    | let stabilitydict["Zz-13"]="0.525"
-let stabilitydict["14  7 Zz"]="0.641"    | let stabilitydict["Zz-14"]="0.641"
-let stabilitydict["15  7 Zz"]="1.433"    | let stabilitydict["Zz-15"]="1.433"
-let stabilitydict["16  7 Zz"]="0.579"    | let stabilitydict["Zz-16"]="0.579"
-let stabilitydict["14  8 Dx"]="0.334"    | let stabilitydict["Dx-14"]="0.334"
-let stabilitydict["15  8 Dx"]="0.604"    | let stabilitydict["Dx-15"]="0.604"
-let stabilitydict["16  8 Dx"]="1.604"    | let stabilitydict["Dx-16"]="1.604"
-let stabilitydict["17  8 Dx"]="1.589"    | let stabilitydict["Dx-17"]="1.589"
-let stabilitydict["18  8 Dx"]="1.652"    | let stabilitydict["Dx-18"]="1.652"
-let stabilitydict["19  8 Dx"]="0.522"    | let stabilitydict["Dx-19"]="0.522"
-let stabilitydict["17  9 Pm"]="0.685"    | let stabilitydict["Pm-17"]="0.685"
-let stabilitydict["18  9 Pm"]="0.776"    | let stabilitydict["Pm-18"]="0.776"
-let stabilitydict["19  9 Pm"]="1.837"    | let stabilitydict["Pm-19"]="1.837"
-let stabilitydict["20  9 Pm"]="0.721"    | let stabilitydict["Pm-20"]="0.721"
-let stabilitydict["21  9 Pm"]="0.609"    | let stabilitydict["Pm-21"]="0.609"
-let stabilitydict["19 10  M"]="0.811"    | let stabilitydict[ "M-19"]="0.811"
-let stabilitydict["20 10  M"]="1.940"    | let stabilitydict[ "M-20"]="1.940"
-let stabilitydict["21 10  M"]="1.904"    | let stabilitydict[ "M-21"]="1.904"
-let stabilitydict["22 10  M"]="1.850"    | let stabilitydict[ "M-22"]="1.850"
-let stabilitydict["23 10  M"]="0.763"    | let stabilitydict[ "M-23"]="0.763"
-let stabilitydict["21 11 Fw"]="0.847"    | let stabilitydict["Fw-21"]="0.847"
-let stabilitydict["22 11 Fw"]="0.840"    | let stabilitydict["Fw-22"]="0.840"
-let stabilitydict["23 11 Fw"]="1.793"    | let stabilitydict["Fw-23"]="1.793"
-let stabilitydict["24 11 Fw"]="0.815"    | let stabilitydict["Fw-24"]="0.815"
-let stabilitydict["25 11 Fw"]="0.737"    | let stabilitydict["Fw-25"]="0.737"
-let stabilitydict["26 11 Fw"]="0.634"    | let stabilitydict["Fw-26"]="0.634"
-let stabilitydict["22 12 Pt"]="0.717"    | let stabilitydict["Pt-22"]="0.717"
-let stabilitydict["23 12 Pt"]="0.793"    | let stabilitydict["Pt-23"]="0.793"
-let stabilitydict["24 12 Pt"]="1.796"    | let stabilitydict["Pt-24"]="1.796"
-let stabilitydict["25 12 Pt"]="0.891"    | let stabilitydict["Pt-25"]="0.891"
-let stabilitydict["26 12 Pt"]="1.814"    | let stabilitydict["Pt-26"]="1.814"
-let stabilitydict["27 12 Pt"]="0.868"    | let stabilitydict["Pt-27"]="0.868"
-let stabilitydict["28 12 Pt"]="0.673"    | let stabilitydict["Pt-28"]="0.673"
-let stabilitydict["24 13  S"]="0.611"    | let stabilitydict[ "S-24"]="0.611"
-let stabilitydict["25 13  S"]="0.790"    | let stabilitydict[ "S-25"]="0.790"
-let stabilitydict["26 13  S"]="0.855"    | let stabilitydict[ "S-26"]="0.855"
-let stabilitydict["27 13  S"]="0.937"    | let stabilitydict[ "S-27"]="0.937"
-let stabilitydict["28 13  S"]="1.924"    | let stabilitydict[ "S-28"]="1.924"
-let stabilitydict["29 13  S"]="0.824"    | let stabilitydict[ "S-29"]="0.824"
-let stabilitydict["30 13  S"]="0.651"    | let stabilitydict[ "S-30"]="0.651"
-let stabilitydict["26 14 Zq"]="0.707"    | let stabilitydict["Zq-26"]="0.707"
-let stabilitydict["27 14 Zq"]="0.838"    | let stabilitydict["Zq-27"]="0.838"
-let stabilitydict["28 14 Zq"]="0.951"    | let stabilitydict["Zq-28"]="0.951"
-let stabilitydict["29 14 Zq"]="1.035"    | let stabilitydict["Zq-29"]="1.035"
-let stabilitydict["30 14 Zq"]="0.950"    | let stabilitydict["Zq-30"]="0.950"
-let stabilitydict["31 14 Zq"]="0.857"    | let stabilitydict["Zq-31"]="0.857"
-let stabilitydict["32 14 Zq"]="0.772"    | let stabilitydict["Zq-32"]="0.772"
-let stabilitydict["28 15 Xc"]="0.765"    | let stabilitydict["Xc-28"]="0.765"
-let stabilitydict["29 15 Xc"]="0.937"    | let stabilitydict["Xc-29"]="0.937"
-let stabilitydict["30 15 Xc"]="1.991"    | let stabilitydict["Xc-30"]="1.991"
-let stabilitydict["31 15 Xc"]="1.047"    | let stabilitydict["Xc-31"]="1.047"
-let stabilitydict["32 15 Xc"]="1.005"    | let stabilitydict["Xc-32"]="1.005"
-let stabilitydict["33 15 Xc"]="0.967"    | let stabilitydict["Xc-33"]="0.967"
-let stabilitydict["34 15 Xc"]="0.851"    | let stabilitydict["Xc-34"]="0.851"
-let stabilitydict["30 16 Gy"]="0.757"    | let stabilitydict["Gy-30"]="0.757"
-let stabilitydict["31 16 Gy"]="0.951"    | let stabilitydict["Gy-31"]="0.951"
-let stabilitydict["32 16 Gy"]="0.967"    | let stabilitydict["Gy-32"]="0.967"
-let stabilitydict["33 16 Gy"]="1.945"    | let stabilitydict["Gy-33"]="1.945"
-let stabilitydict["34 16 Gy"]="1.956"    | let stabilitydict["Gy-34"]="1.956"
-let stabilitydict["35 16 Gy"]="0.905"    | let stabilitydict["Gy-35"]="0.905"
-let stabilitydict["36 16 Gy"]="0.841"    | let stabilitydict["Gy-36"]="0.841"
-let stabilitydict["32 17  D"]="0.814"    | let stabilitydict[ "D-32"]="0.814"
-let stabilitydict["33 17  D"]="0.878"    | let stabilitydict[ "D-33"]="0.878"
-let stabilitydict["34 17  D"]="0.903"    | let stabilitydict[ "D-34"]="0.903"
-let stabilitydict["35 17  D"]="0.951"    | let stabilitydict[ "D-35"]="0.951"
-let stabilitydict["36 17  D"]="0.921"    | let stabilitydict[ "D-36"]="0.921"
-let stabilitydict["37 17  D"]="0.895"    | let stabilitydict[ "D-37"]="0.895"
-let stabilitydict["38 17  D"]="0.830"    | let stabilitydict[ "D-38"]="0.830"
-let stabilitydict["39 17  D"]="0.831"    | let stabilitydict[ "D-39"]="0.831"
-let stabilitydict["34 18 Fj"]="0.790"    | let stabilitydict["Fj-34"]="0.790"
-let stabilitydict["35 18 Fj"]="0.858"    | let stabilitydict["Fj-35"]="0.858"
-let stabilitydict["36 18 Fj"]="0.933"    | let stabilitydict["Fj-36"]="0.933"
-let stabilitydict["37 18 Fj"]="0.942"    | let stabilitydict["Fj-37"]="0.942"
-let stabilitydict["38 18 Fj"]="0.967"    | let stabilitydict["Fj-38"]="0.967"
-let stabilitydict["39 18 Fj"]="0.938"    | let stabilitydict["Fj-39"]="0.938"
-let stabilitydict["40 18 Fj"]="1.943"    | let stabilitydict["Fj-40"]="1.943"
-let stabilitydict["41 18 Fj"]="0.780"    | let stabilitydict["Fj-41"]="0.780"
-let stabilitydict["36 19  O"]="0.736"    | let stabilitydict[ "O-36"]="0.736"
-let stabilitydict["37 19  O"]="0.850"    | let stabilitydict[ "O-37"]="0.850"
-let stabilitydict["38 19  O"]="0.899"    | let stabilitydict[ "O-38"]="0.899"
-let stabilitydict["39 19  O"]="0.959"    | let stabilitydict[ "O-39"]="0.959"
-let stabilitydict["40 19  O"]="0.966"    | let stabilitydict[ "O-40"]="0.966"
-let stabilitydict["41 19  O"]="1.032"    | let stabilitydict[ "O-41"]="1.032"
-let stabilitydict["42 19  O"]="0.874"    | let stabilitydict[ "O-42"]="0.874"
-let stabilitydict["43 19  O"]="0.780"    | let stabilitydict[ "O-43"]="0.780"
-let stabilitydict["38 20  C"]="0.784"    | let stabilitydict[ "C-38"]="0.784"
-let stabilitydict["39 20  C"]="0.869"    | let stabilitydict[ "C-39"]="0.869"
-let stabilitydict["40 20  C"]="0.949"    | let stabilitydict[ "C-40"]="0.949"
-let stabilitydict["41 20  C"]="0.989"    | let stabilitydict[ "C-41"]="0.989"
-let stabilitydict["42 20  C"]="1.086"    | let stabilitydict[ "C-42"]="1.086"
-let stabilitydict["43 20  C"]="0.958"    | let stabilitydict[ "C-43"]="0.958"
-let stabilitydict["44 20  C"]="0.892"    | let stabilitydict[ "C-44"]="0.892"
-let stabilitydict["45 20  C"]="0.803"    | let stabilitydict[ "C-45"]="0.803"
-let stabilitydict["40 21  E"]="0.786"    | let stabilitydict[ "E-40"]="0.786"
-let stabilitydict["41 21  E"]="0.899"    | let stabilitydict[ "E-41"]="0.899"
-let stabilitydict["42 21  E"]="0.944"    | let stabilitydict[ "E-42"]="0.944"
-let stabilitydict["43 21  E"]="1.072"    | let stabilitydict[ "E-43"]="1.072"
-let stabilitydict["44 21  E"]="0.974"    | let stabilitydict[ "E-44"]="0.974"
-let stabilitydict["45 21  E"]="0.964"    | let stabilitydict[ "E-45"]="0.964"
-let stabilitydict["46 21  E"]="0.903"    | let stabilitydict[ "E-46"]="0.903"
-let stabilitydict["47 21  E"]="0.850"    | let stabilitydict[ "E-47"]="0.850"
-let stabilitydict["48 21  E"]="0.835"    | let stabilitydict[ "E-48"]="0.835"
-let stabilitydict["42 22  A"]="0.908"    | let stabilitydict[ "A-42"]="0.908"
-let stabilitydict["43 22  A"]="0.984"    | let stabilitydict[ "A-43"]="0.984"
-let stabilitydict["44 22  A"]="1.057"    | let stabilitydict[ "A-44"]="1.057"
-let stabilitydict["45 22  A"]="1.071"    | let stabilitydict[ "A-45"]="1.071"
-let stabilitydict["46 22  A"]="1.088"    | let stabilitydict[ "A-46"]="1.088"
-let stabilitydict["47 22  A"]="1.052"    | let stabilitydict[ "A-47"]="1.052"
-let stabilitydict["48 22  A"]="1.024"    | let stabilitydict[ "A-48"]="1.024"
-let stabilitydict["49 22  A"]="0.949"    | let stabilitydict[ "A-49"]="0.949"
-let stabilitydict["50 22  A"]="0.884"    | let stabilitydict[ "A-50"]="0.884"
-let stabilitydict["44 23 Aw"]="0.798"    | let stabilitydict["Aw-44"]="0.798"
-let stabilitydict["45 23 Aw"]="0.984"    | let stabilitydict["Aw-45"]="0.984"
-let stabilitydict["46 23 Aw"]="0.942"    | let stabilitydict["Aw-46"]="0.942"
-let stabilitydict["47 23 Aw"]="0.985"    | let stabilitydict["Aw-47"]="0.985"
-let stabilitydict["48 23 Aw"]="0.976"    | let stabilitydict["Aw-48"]="0.976"
-let stabilitydict["49 23 Aw"]="1.944"    | let stabilitydict["Aw-49"]="1.944"
-let stabilitydict["50 23 Aw"]="1.005"    | let stabilitydict["Aw-50"]="1.005"
-let stabilitydict["51 23 Aw"]="0.879"    | let stabilitydict["Aw-51"]="0.879"
-let stabilitydict["52 23 Aw"]="0.795"    | let stabilitydict["Aw-52"]="0.795"
-let stabilitydict["46 24 Oc"]="0.914"    | let stabilitydict["Oc-46"]="0.914"
-let stabilitydict["47 24 Oc"]="0.899"    | let stabilitydict["Oc-47"]="0.899"
-let stabilitydict["48 24 Oc"]="0.939"    | let stabilitydict["Oc-48"]="0.939"
-let stabilitydict["49 24 Oc"]="0.954"    | let stabilitydict["Oc-49"]="0.954"
-let stabilitydict["50 24 Oc"]="1.001"    | let stabilitydict["Oc-50"]="1.001"
-let stabilitydict["51 24 Oc"]="1.056"    | let stabilitydict["Oc-51"]="1.056"
-let stabilitydict["52 24 Oc"]="0.952"    | let stabilitydict["Oc-52"]="0.952"
-let stabilitydict["53 24 Oc"]="0.861"    | let stabilitydict["Oc-53"]="0.861"
-let stabilitydict["54 24 Oc"]="0.808"    | let stabilitydict["Oc-54"]="0.808"
-let stabilitydict["47 25 Nb"]="0.793"    | let stabilitydict["Nb-47"]="0.793"
-let stabilitydict["48 25 Nb"]="0.805"    | let stabilitydict["Nb-48"]="0.805"
-let stabilitydict["49 25 Nb"]="0.869"    | let stabilitydict["Nb-49"]="0.869"
-let stabilitydict["50 25 Nb"]="0.909"    | let stabilitydict["Nb-50"]="0.909"
-let stabilitydict["51 25 Nb"]="0.978"    | let stabilitydict["Nb-51"]="0.978"
-let stabilitydict["52 25 Nb"]="1.056"    | let stabilitydict["Nb-52"]="1.056"
-let stabilitydict["53 25 Nb"]="0.973"    | let stabilitydict["Nb-53"]="0.973"
-let stabilitydict["54 25 Nb"]="0.904"    | let stabilitydict["Nb-54"]="0.904"
-let stabilitydict["55 25 Nb"]="0.870"    | let stabilitydict["Nb-55"]="0.870"
-let stabilitydict["56 25 Nb"]="0.798"    | let stabilitydict["Nb-56"]="0.798"
-let stabilitydict["50 26 Xk"]="0.831"    | let stabilitydict["Xk-50"]="0.831"
-let stabilitydict["51 26 Xk"]="0.894"    | let stabilitydict["Xk-51"]="0.894"
-let stabilitydict["52 26 Xk"]="0.957"    | let stabilitydict["Xk-52"]="0.957"
-let stabilitydict["53 26 Xk"]="1.056"    | let stabilitydict["Xk-53"]="1.056"
-let stabilitydict["54 26 Xk"]="0.993"    | let stabilitydict["Xk-54"]="0.993"
-let stabilitydict["55 26 Xk"]="0.972"    | let stabilitydict["Xk-55"]="0.972"
-let stabilitydict["56 26 Xk"]="0.956"    | let stabilitydict["Xk-56"]="0.956"
-let stabilitydict["57 26 Xk"]="0.904"    | let stabilitydict["Xk-57"]="0.904"
-let stabilitydict["58 26 Xk"]="0.859"    | let stabilitydict["Xk-58"]="0.859"
-let stabilitydict["59 26 Xk"]="0.781"    | let stabilitydict["Xk-59"]="0.781"
-let stabilitydict["51 27 Ic"]="0.803"    | let stabilitydict["Ic-51"]="0.803"
-let stabilitydict["52 27 Ic"]="0.889"    | let stabilitydict["Ic-52"]="0.889"
-let stabilitydict["53 27 Ic"]="0.973"    | let stabilitydict["Ic-53"]="0.973"
-let stabilitydict["54 27 Ic"]="1.011"    | let stabilitydict["Ic-54"]="1.011"
-let stabilitydict["55 27 Ic"]="1.051"    | let stabilitydict["Ic-55"]="1.051"
-let stabilitydict["56 27 Ic"]="1.051"    | let stabilitydict["Ic-56"]="1.051"
-let stabilitydict["57 27 Ic"]="1.053"    | let stabilitydict["Ic-57"]="1.053"
-let stabilitydict["58 27 Ic"]="1.019"    | let stabilitydict["Ic-58"]="1.019"
-let stabilitydict["59 27 Ic"]="1.982"    | let stabilitydict["Ic-59"]="1.982"
-let stabilitydict["60 27 Ic"]="0.930"    | let stabilitydict["Ic-60"]="0.930"
-let stabilitydict["61 27 Ic"]="0.878"    | let stabilitydict["Ic-61"]="0.878"
-let stabilitydict["54 28 Yp"]="0.827"    | let stabilitydict["Yp-54"]="0.827"
-let stabilitydict["55 28 Yp"]="0.968"    | let stabilitydict["Yp-55"]="0.968"
-let stabilitydict["56 28 Yp"]="0.944"    | let stabilitydict["Yp-56"]="0.944"
-let stabilitydict["57 28 Yp"]="0.961"    | let stabilitydict["Yp-57"]="0.961"
-let stabilitydict["58 28 Yp"]="0.982"    | let stabilitydict["Yp-58"]="0.982"
-let stabilitydict["59 28 Yp"]="0.966"    | let stabilitydict["Yp-59"]="0.966"
-let stabilitydict["60 28 Yp"]="1.910"    | let stabilitydict["Yp-60"]="1.910"
-let stabilitydict["61 28 Yp"]="0.911"    | let stabilitydict["Yp-61"]="0.911"
-let stabilitydict["62 28 Yp"]="0.874"    | let stabilitydict["Yp-62"]="0.874"
-let stabilitydict["63 28 Yp"]="0.806"    | let stabilitydict["Yp-63"]="0.806"
-let stabilitydict["56 29 Jx"]="0.885"    | let stabilitydict["Jx-56"]="0.885"
-let stabilitydict["57 29 Jx"]="0.879"    | let stabilitydict["Jx-57"]="0.879"
-let stabilitydict["58 29 Jx"]="0.888"    | let stabilitydict["Jx-58"]="0.888"
-let stabilitydict["59 29 Jx"]="0.926"    | let stabilitydict["Jx-59"]="0.926"
-let stabilitydict["60 29 Jx"]="0.928"    | let stabilitydict["Jx-60"]="0.928"
-let stabilitydict["61 29 Jx"]="0.934"    | let stabilitydict["Jx-61"]="0.934"
-let stabilitydict["62 29 Jx"]="0.906"    | let stabilitydict["Jx-62"]="0.906"
-let stabilitydict["63 29 Jx"]="0.884"    | let stabilitydict["Jx-63"]="0.884"
-let stabilitydict["64 29 Jx"]="0.832"    | let stabilitydict["Jx-64"]="0.832"
-let stabilitydict["65 29 Jx"]="0.787"    | let stabilitydict["Jx-65"]="0.787"
-let stabilitydict["57 30 Hb"]="0.807"    | let stabilitydict["Hb-57"]="0.807"
-let stabilitydict["58 30 Hb"]="0.819"    | let stabilitydict["Hb-58"]="0.819"
-let stabilitydict["59 30 Hb"]="0.845"    | let stabilitydict["Hb-59"]="0.845"
-let stabilitydict["60 30 Hb"]="0.887"    | let stabilitydict["Hb-60"]="0.887"
-let stabilitydict["61 30 Hb"]="0.905"    | let stabilitydict["Hb-61"]="0.905"
-let stabilitydict["62 30 Hb"]="0.927"    | let stabilitydict["Hb-62"]="0.927"
-let stabilitydict["63 30 Hb"]="0.915"    | let stabilitydict["Hb-63"]="0.915"
-let stabilitydict["64 30 Hb"]="0.908"    | let stabilitydict["Hb-64"]="0.908"
-let stabilitydict["65 30 Hb"]="0.870"    | let stabilitydict["Hb-65"]="0.870"
-let stabilitydict["66 30 Hb"]="0.840"    | let stabilitydict["Hb-66"]="0.840"
-let stabilitydict["67 30 Hb"]="0.781"    | let stabilitydict["Hb-67"]="0.781"
-let stabilitydict["61 31 At"]="0.825"    | let stabilitydict["At-61"]="0.825"
-let stabilitydict["62 31 At"]="0.851"    | let stabilitydict["At-62"]="0.851"
-let stabilitydict["63 31 At"]="0.889"    | let stabilitydict["At-63"]="0.889"
-let stabilitydict["64 31 At"]="0.892"    | let stabilitydict["At-64"]="0.892"
-let stabilitydict["65 31 At"]="0.900"    | let stabilitydict["At-65"]="0.900"
-let stabilitydict["66 31 At"]="0.878"    | let stabilitydict["At-66"]="0.878"
-let stabilitydict["67 31 At"]="0.861"    | let stabilitydict["At-67"]="0.861"
-let stabilitydict["68 31 At"]="0.816"    | let stabilitydict["At-68"]="0.816"
-let stabilitydict["69 31 At"]="0.786"    | let stabilitydict["At-69"]="0.786"
-let stabilitydict["62 32 Ny"]="0.767"    | let stabilitydict["Ny-62"]="0.767"
-let stabilitydict["63 32 Ny"]="0.809"    | let stabilitydict["Ny-63"]="0.809"
-let stabilitydict["64 32 Ny"]="0.856"    | let stabilitydict["Ny-64"]="0.856"
-let stabilitydict["65 32 Ny"]="0.875"    | let stabilitydict["Ny-65"]="0.875"
-let stabilitydict["66 32 Ny"]="0.897"    | let stabilitydict["Ny-66"]="0.897"
-let stabilitydict["67 32 Ny"]="0.888"    | let stabilitydict["Ny-67"]="0.888"
-let stabilitydict["68 32 Ny"]="0.885"    | let stabilitydict["Ny-68"]="0.885"
-let stabilitydict["69 32 Ny"]="0.859"    | let stabilitydict["Ny-69"]="0.859"
-let stabilitydict["70 32 Ny"]="0.842"    | let stabilitydict["Ny-70"]="0.842"
-let stabilitydict["71 32 Ny"]="0.804"    | let stabilitydict["Ny-71"]="0.804"
-let stabilitydict["72 32 Ny"]="0.788"    | let stabilitydict["Ny-72"]="0.788"
-let stabilitydict["64 33 Pw"]="0.734"    | let stabilitydict["Pw-64"]="0.734"
-let stabilitydict["65 33 Pw"]="0.796"    | let stabilitydict["Pw-65"]="0.796"
-let stabilitydict["66 33 Pw"]="0.825"    | let stabilitydict["Pw-66"]="0.825"
-let stabilitydict["67 33 Pw"]="0.862"    | let stabilitydict["Pw-67"]="0.862"
-let stabilitydict["68 33 Pw"]="0.867"    | let stabilitydict["Pw-68"]="0.867"
-let stabilitydict["69 33 Pw"]="0.881"    | let stabilitydict["Pw-69"]="0.881"
-let stabilitydict["70 33 Pw"]="0.868"    | let stabilitydict["Pw-70"]="0.868"
-let stabilitydict["71 33 Pw"]="0.864"    | let stabilitydict["Pw-71"]="0.864"
-let stabilitydict["72 33 Pw"]="0.839"    | let stabilitydict["Pw-72"]="0.839"
-let stabilitydict["73 33 Pw"]="0.835"    | let stabilitydict["Pw-73"]="0.835"
-let stabilitydict["74 33 Pw"]="0.862"    | let stabilitydict["Pw-74"]="0.862"
-let stabilitydict["65 34 Gk"]="0.664"    | let stabilitydict["Gk-65"]="0.664"
-let stabilitydict["66 34 Gk"]="0.740"    | let stabilitydict["Gk-66"]="0.740"
-let stabilitydict["67 34 Gk"]="0.784"    | let stabilitydict["Gk-67"]="0.784"
-let stabilitydict["68 34 Gk"]="0.831"    | let stabilitydict["Gk-68"]="0.831"
-let stabilitydict["69 34 Gk"]="0.853"    | let stabilitydict["Gk-69"]="0.853"
-let stabilitydict["70 34 Gk"]="0.879"    | let stabilitydict["Gk-70"]="0.879"
-let stabilitydict["71 34 Gk"]="0.879"    | let stabilitydict["Gk-71"]="0.879"
-let stabilitydict["72 34 Gk"]="1.774"    | let stabilitydict["Gk-72"]="1.774"
-let stabilitydict["73 34 Gk"]="0.874"    | let stabilitydict["Gk-73"]="0.874"
-let stabilitydict["74 34 Gk"]="1.762"    | let stabilitydict["Gk-74"]="1.762"
-let stabilitydict["75 34 Gk"]="1.839"    | let stabilitydict["Gk-75"]="1.839"
-let stabilitydict["76 34 Gk"]="0.798"    | let stabilitydict["Gk-76"]="0.798"
-let stabilitydict["67 35 Qi"]="0.654"    | let stabilitydict["Qi-67"]="0.654"
-let stabilitydict["68 35 Qi"]="0.712"    | let stabilitydict["Qi-68"]="0.712"
-let stabilitydict["69 35 Qi"]="0.775"    | let stabilitydict["Qi-69"]="0.775"
-let stabilitydict["70 35 Qi"]="0.807"    | let stabilitydict["Qi-70"]="0.807"
-let stabilitydict["71 35 Qi"]="0.847"    | let stabilitydict["Qi-71"]="0.847"
-let stabilitydict["72 35 Qi"]="0.860"    | let stabilitydict["Qi-72"]="0.860"
-let stabilitydict["73 35 Qi"]="0.879"    | let stabilitydict["Qi-73"]="0.879"
-let stabilitydict["74 35 Qi"]="0.879"    | let stabilitydict["Qi-74"]="0.879"
-let stabilitydict["75 35 Qi"]="0.897"    | let stabilitydict["Qi-75"]="0.897"
-let stabilitydict["76 35 Qi"]="1.894"    | let stabilitydict["Qi-76"]="1.894"
-let stabilitydict["77 35 Qi"]="0.836"    | let stabilitydict["Qi-77"]="0.836"
-let stabilitydict["78 35 Qi"]="0.870"    | let stabilitydict["Qi-78"]="0.870"
-let stabilitydict["70 36 Xy"]="0.725"    | let stabilitydict["Xy-70"]="0.725"
-let stabilitydict["71 36 Xy"]="0.770"    | let stabilitydict["Xy-71"]="0.770"
-let stabilitydict["72 36 Xy"]="0.818"    | let stabilitydict["Xy-72"]="0.818"
-let stabilitydict["73 36 Xy"]="0.842"    | let stabilitydict["Xy-73"]="0.842"
-let stabilitydict["74 36 Xy"]="0.874"    | let stabilitydict["Xy-74"]="0.874"
-let stabilitydict["75 36 Xy"]="0.885"    | let stabilitydict["Xy-75"]="0.885"
-let stabilitydict["76 36 Xy"]="0.914"    | let stabilitydict["Xy-76"]="0.914"
-let stabilitydict["77 36 Xy"]="1.950"    | let stabilitydict["Xy-77"]="1.950"
-let stabilitydict["78 36 Xy"]="0.875"    | let stabilitydict["Xy-78"]="0.875"
-let stabilitydict["79 36 Xy"]="1.838"    | let stabilitydict["Xy-79"]="1.838"
-let stabilitydict["71 37 Gq"]="0.648"    | let stabilitydict["Gq-71"]="0.648"
-let stabilitydict["72 37 Gq"]="0.706"    | let stabilitydict["Gq-72"]="0.706"
-let stabilitydict["73 37 Gq"]="0.766"    | let stabilitydict["Gq-73"]="0.766"
-let stabilitydict["74 37 Gq"]="0.798"    | let stabilitydict["Gq-74"]="0.798"
-let stabilitydict["75 37 Gq"]="0.840"    | let stabilitydict["Gq-75"]="0.840"
-let stabilitydict["76 37 Gq"]="0.863"    | let stabilitydict["Gq-76"]="0.863"
-let stabilitydict["77 37 Gq"]="0.903"    | let stabilitydict["Gq-77"]="0.903"
-let stabilitydict["78 37 Gq"]="1.950"    | let stabilitydict["Gq-78"]="1.950"
-let stabilitydict["79 37 Gq"]="0.885"    | let stabilitydict["Gq-79"]="0.885"
-let stabilitydict["80 37 Gq"]="1.880"    | let stabilitydict["Gq-80"]="1.880"
-let stabilitydict["74 38 Bt"]="0.722"    | let stabilitydict["Bt-74"]="0.722"
-let stabilitydict["75 38 Bt"]="0.840"    | let stabilitydict["Bt-75"]="0.840"
-let stabilitydict["76 38 Bt"]="0.810"    | let stabilitydict["Bt-76"]="0.810"
-let stabilitydict["77 38 Bt"]="0.844"    | let stabilitydict["Bt-77"]="0.844"
-let stabilitydict["78 38 Bt"]="0.895"    | let stabilitydict["Bt-78"]="0.895"
-let stabilitydict["79 38 Bt"]="1.954"    | let stabilitydict["Bt-79"]="1.954"
-let stabilitydict["80 38 Bt"]="0.897"    | let stabilitydict["Bt-80"]="0.897"
-let stabilitydict["81 38 Bt"]="1.924"    | let stabilitydict["Bt-81"]="1.924"
-let stabilitydict["76 39  H"]="0.712"    | let stabilitydict[ "H-76"]="0.712"
-let stabilitydict["77 39  H"]="0.769"    | let stabilitydict[ "H-77"]="0.769"
-let stabilitydict["78 39  H"]="0.799"    | let stabilitydict[ "H-78"]="0.799"
-let stabilitydict["79 39  H"]="0.861"    | let stabilitydict[ "H-79"]="0.861"
-let stabilitydict["80 39  H"]="1.907"    | let stabilitydict[ "H-80"]="1.907"
-let stabilitydict["81 39  H"]="0.884"    | let stabilitydict[ "H-81"]="0.884"
-let stabilitydict["82 39  H"]="1.917"    | let stabilitydict[ "H-82"]="1.917"
-let stabilitydict["78 40  U"]="0.745"    | let stabilitydict[ "U-78"]="0.745"
-let stabilitydict["79 40  U"]="0.786"    | let stabilitydict[ "U-79"]="0.786"
-let stabilitydict["80 40  U"]="0.830"    | let stabilitydict[ "U-80"]="0.830"
-let stabilitydict["81 40  U"]="1.866"    | let stabilitydict[ "U-81"]="1.866"
-let stabilitydict["82 40  U"]="0.873"    | let stabilitydict[ "U-82"]="0.873"
-let stabilitydict["83 40  U"]="1.914"    | let stabilitydict[ "U-83"]="1.914"
-let stabilitydict["79 41 Sq"]="0.753"    | let stabilitydict["Sq-79"]="0.753"
-let stabilitydict["80 41 Sq"]="0.805"    | let stabilitydict["Sq-80"]="0.805"
-let stabilitydict["81 41 Sq"]="0.859"    | let stabilitydict["Sq-81"]="0.859"
-let stabilitydict["82 41 Sq"]="1.777"    | let stabilitydict["Sq-82"]="1.777"
-let stabilitydict["83 41 Sq"]="0.921"    | let stabilitydict["Sq-83"]="0.921"
-let stabilitydict["84 41 Sq"]="1.864"    | let stabilitydict["Sq-84"]="1.864"
-let stabilitydict["83 42 Ua"]="0.848"    | let stabilitydict["Ua-83"]="0.848"
-let stabilitydict["84 42 Ua"]="0.807"    | let stabilitydict["Ua-84"]="0.807"
-let stabilitydict["85 42 Ua"]="0.910"    | let stabilitydict["Ua-85"]="0.910"
-let stabilitydict["60 31 At"]="0.766"    | let stabilitydict["At-60"]="0.766"
-let stabilitydict["61 32 Ny"]="0.693"    | let stabilitydict["Ny-61"]="0.693"
-let stabilitydict["73 38 Bt"]="0.650"    | let stabilitydict["Bt-73"]="0.650"
-let stabilitydict["69 36 Xy"]="0.649"    | let stabilitydict["Xy-69"]="0.649"
-let stabilitydict["75 39  H"]="0.657"    | let stabilitydict[ "H-75"]="0.657"
-
+" WOW This worked. turned 
+" from:   0 111274870329410202114473964500913152290151914004581383354257874799123503099327
+"   to:   0x 76 38 Bt 111274870329410202114473964500913152290151914004581383354257874799123503099327
+" 
+" with this on command line:
+"     :%s/^\s*\(\d\+\) \(\w\+\)\s*$/\=printf("%4dx %s %s",submatch(1),otomdict[submatch(2)],submatch(2))/
+" and with the associative array %otomdict 
 "
-" I often put stability values after an isotope.
-" This colors 0.77 and below as unstable, meaning likely to add/subtract a proton in a reaction
-"
-syn match StabilityUnstable /(0\.[0-6]\d\+)/   "0.000 - 0.699
-syn match StabilityUnstable /(0\.7[0-7]\d\+)/  "0.700 - 0.779
-syn match StabilityStable   /(0\.7[89]\d\+)/   "0.780 - 0.799
-syn match StabilityStable   /(0\.[89]\d\+)/    "0.800 - 0.999
-syn match StabilityStable   /(1\.\d\+)/        "0.800 - 0.999
-
-hi StabilityUnstable guifg=darkgreen ctermfg=darkgreen   guibg=NONE ctermbg=NONE
-hi StabilityStable   guifg=red       ctermfg=red         guibg=NONE ctermbg=NONE
-
 
 let b:current_syntax = "otom"
