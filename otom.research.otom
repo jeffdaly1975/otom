@@ -1,3 +1,55 @@
+2025-01-31 Jan.Fri 22:29:00 Looking at my otoms.decay_reactions_list.txt specifically at Cq-5
+I marked what real reactions did in parenthesis. Seems like you could take some inferences from this.
+
+  5  3 Cq(0.017) +   6  3 Cq(1.000) => |⬆  11   7 Zz |=  11   6 Pq |⬇ (11   5 Xl)
+  5  3 Cq(0.017) +  50 23 Aw(1.004) => |⬆  55  27 Ic |= (55  26 Xk)|⬇  55  25 Nb
+  5  3 Cq(0.017) +  75 34 Gk(1.838) => |⬆  80  38 Bt |= (80  37 Gq)|⬇  80  36 Xy
+  5  3 Cq(0.017) +  22 10  M(1.849) => |⬆  27  14 Zq |= (27  13  S)|⬇  27  12 Pt
+  5  3 Cq(0.017) +  30 15 Xc(1.990) => |⬆  35  19  O |= (35  18 Fj)|⬇  35  17  D
+
+So above we have beta+ Cq-5 plus decay type stable and above 1.000 the result has same proton counts as inputs. At 1.0 it dropped a proton
+
+  5  3 Cq(0.017) +   7  4 Af(0.194) => |⬆  12   8 Dx |=  12   7 Zz |⬇ (12   6 Pq)
+  5  3 Cq(0.017) +  67 32 Ny(0.888) => |⬆  72  36 Xy |= (72  35 Qi)|⬇  72  34 Gk
+  5  3 Cq(0.017) +  54 25 Nb(0.903) => |⬆  59  29 Jx |= (59  28 Yp)|⬇  59  27 Ic
+  5  3 Cq(0.017) +  37 18 Fj(0.942) => |⬆  42  22  A |= (42  21  E)|⬇  42  20  C
+Above we have beta+ Cq-5 plus decay type alpha  and for 0.888 and above the result has same proton counts as inputs. At 0.194 it dropped a proton
+
+  5  3 Cq(0.017) +  15  8 Dx(0.604) => |⬆  20  12 Pt |=  20  11 Fw |⬇ (20  10  M)
+  5  3 Cq(0.017) +  34 18 Fj(0.790) => |⬆  39  22  A |=  39  21  E |⬇ (39  20  C)
+  5  3 Cq(0.017) +  57 30 Hb(0.807) => |⬆  62  34 Gk |=  62  33 Pw |⬇ (62  32 Ny)
+  5  3 Cq(0.017) +  21 11 Fw(0.847) => |⬆  26  15 Xc |=  26  14 Zq |⬇ (26  13  S)
+  5  3 Cq(0.017) +  46 24 Oc(0.914) => |⬆  51  28 Yp |= (51  27 Ic)|⬇  51  26 Xk
+Above we have beta+ Cq-5 plus decay type beta+  and for 0.847 and below the result dropped a proton but for 0.914 it was the same as input
+
+  5  3 Cq(0.017) +  23 10  M(0.762) => |⬆  28  14 Zq |= (28  13  S)|⬇  28  12 Pt
+  5  3 Cq(0.017) +  25 11 Fw(0.737) => |⬆  30  15 Xc |= (30  14 Zq)|⬇  30  13  S
+  5  3 Cq(0.017) +  37 17  D(0.895) => |⬆  42  21  E |= (42  20  C)|⬇  42  19  O
+Above we have beta+ Cq-5 plus decay type beta- and each of them had same number of protons as input
+
+With that in mind, these reactions might be productive:
+
+[ ]  5  3 Cq(0.017) +  76 34 Gk(0.798) => |⬆  81  38 Bt |=  81  37 Gq |⬇  81  36 Xy [ ] maybe Gq-81
+[ ]  5  3 Cq(0.017) +  77 35 Qi(0.836) => |⬆  82  39  H |=  82  38 Bt |⬇  82  37 Gq [ ] maybe Bt-82
+[ ]  5  3 Cq(0.017) +  78 35 Qi(0.870) => |⬆  83  39  H |=  83  38 Bt |⬇  83  37 Gq [ ] maybe Bt-83
+[ ]  5  3 Cq(0.017) +  78 36 Xy(0.874) => |⬆  83  40  U |=  83  39  H |⬇  83  38 Bt [ ] maybe  H-83
+[ ]  5  3 Cq(0.017) +  79 37 Gq(0.885) => |⬆  84  41 Sq |=  84  40  U |⬇  84  39  H [ ] maybe  U-84
+[ ]  5  3 Cq(0.017) +  80 38 Bt(0.897) => |⬆  85  42 Ua |=  85  41 Sq |⬇  85  40  U [ ] maybe Sq-85
+  5  3 Cq(0.017) +  58 30 Hb(0.819) => |⬆  63  34 Gk |=  63  33 Pw |⬇  63  32 Ny maybe Pw-63
+
+
+
+
+
+
+
+
+TRY
+[.]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+[ ] 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb
+[ ] 47 25 Nb +            3687 => 22 12 Pt + 25 13  S
+[ ] 22 12 Pt + 2000 => ?
+
 2025-01-31 Jan.Fri 15:56:00 Updated parseReactorLog.pl to give summaries at the end of processing to show how many of each isotope/molecule have been produced through reactions. Surprising to see Cq-6 is the top.
 
 Here's the 10 ten of each:
