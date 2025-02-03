@@ -720,17 +720,23 @@ foreach $line (<>){
     next; #skip header
   }
 
+  # dont bother if we already saw it.
   if (exists $seenit{$txhash . $txindex}){
     next;
   }else{
     $seenit{$txhash . $txindex}=1;
   }
 
+# strip off some leading stuff but use it to ensure we don't duplicate processing for duplicate input like when multiple logs are imported
   $line =~ s/^[^,]+,//; # remove the tx hash
   $line =~ s/^[^,]+,//; # remove the index
   $line =~ s/^[^,]+,//; # remove the block number
   $line =~ s/^[^,]+,//; # remove the block hash
   $line =~ s/^[^,]+,//; # remove the contract address
+
+# remove the 
+
+
 
   #
   # is it a call to analyseReactions() or initiateReaction()
@@ -745,7 +751,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 # 7672927,                                                             # block number
 # 0x369fe68b745762e5ab58821fd0764a12b013ac6c7ca8c7944a82a29edddb8e30,  # block hash
 # 0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc,                          # contract address
-# 0x0000000000000000000000000000000000000000000000000000000000000040   # data
+# 0x0000000000000000000000000000000000000000000000000000000000000040   # command initiateReaction()==0x20 analyseReactions()==0x40
 #   00000000000000000000000000000000000000000000010f0cf064dd59200000   # input energy
 #   0000000000000000000000000000000000000000000000000000000000000002   # number of input otoms == 2 for this one
 #   ebbb91e512eeb497c0bfdfe429624f826c572214ce70f367972ab76ecb63f875   # input otom 1 == 32 14 Zq
@@ -1061,6 +1067,7 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
 }
 
 
+#
 # recipe output
 # [ ] still need to filter out duplicates where they have the same input otoms but different energy
 # [ ] still want to filter out junky stuff like "| Aw-50 | M-22 + M-22 + M-22 + Aw-50 + Aw-50 + 350 =>  + M₂Aw(M-22>Aw-50,M-22) + M-22 + Aw-50"
