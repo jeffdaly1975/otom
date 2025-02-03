@@ -1,3 +1,75 @@
+2025-02-03 Feb.Mon 11:56:00 [c] Someone posted in otom discord that Fw-23 is not mineable. I checked some things. Morpheus's mineable otoms contract lists 45 otoms that are mineable:
+ 7  4 Af
+ 8  4 Af
+ 9  4 Af
+50 23 Aw
+ 5  3 Cq
+ 6  3 Cq
+ 7  3 Cq
+37 17  D
+15  8 Dx
+16  8 Dx
+17  8 Dx
+37 18 Fj
+25 11 Fw
+34 16 Gy
+ 1  1 Ju
+ 2  1 Ju
+ 3  1 Ju
+20 10  M
+22 10  M
+23 10  M
+54 25 Nb
+17  9 Pm
+18  9 Pm
+19  9 Pm
+10  6 Pq
+12  6 Pq
+13  6 Pq
+14  6 Pq
+15  6 Pq
+24 12 Pt
+25 12 Pt
+26 12 Pt
+25 13  S
+26 13  S
+ 4  2  W
+ 5  2  W
+30 15 Xc
+31 15 Xc
+34 15 Xc
+10  5 Xl
+11  5 Xl
+ 9  5 Xl
+32 14 Zq
+13  7 Zz
+14  7 Zz
+
+These 45 are definitely mineable:
+Af-7  Af-8  Af-9  Aw-50 Cq-5
+Cq-6  Cq-7  D-37  Dx-15 Dx-16
+Dx-17 Fj-37 Fw-25 Gy-34 Ju-1
+Ju-2  Ju-3  M-20  M-22  M-23
+Nb-54 Pm-17 Pm-18 Pm-19 Pq-10
+Pq-12 Pq-13 Pq-14 Pq-15 Pt-24
+Pt-25 Pt-26 S-25  S-26  W-4
+W-5   Xc-30 Xc-31 Xc-34 Xl-10
+Xl-11 Xl-9  Zq-32 Zz-13 Zz-14
+
+regular expression: /\( 7  4 Af\| 8  4 Af\| 9  4 Af\|50 23 Aw\| 5  3 Cq\| 6  3 Cq\| 7  3 Cq\|37 17  D\|15  8 Dx\|16  8 Dx\|17  8 Dx\|37 18 Fj\|25 11 Fw\|34 16 Gy\| 1  1 Ju\| 2  1 Ju\| 3  1 Ju\|20 10  M\|22 10  M\|23 10  M\|54 25 Nb\|17  9 Pm\|18  9 Pm\|19  9 Pm\|10  6 Pq\|12  6 Pq\|13  6 Pq\|14  6 Pq\|15  6 Pq\|24 12 Pt\|25 12 Pt\|26 12 Pt\|25 13  S\|26 13  S\| 4  2  W\| 5  2  W\|30 15 Xc\|31 15 Xc\|34 15 Xc\|10  5 Xl\|11  5 Xl\| 9  5 Xl\|32 14 Zq\|13  7 Zz\|14  7 Zz\)/
+
+[ ] Why do I have it in my recipes file that these 4 are mineable? Are they not?
+|*15  7 Zz | Zz-15 | mineable ? -no mine event created any of this otom in past 1 weeks
+|*18  8 Dx | Dx-18 | mineable ? -no mine event created any of this otom in past 3 weeks
+|*23 11 Fw | Fw-23 | mineable ? -no mine event created any of this otom in past 3 weeks
+|*32 15 Xc | Xc-32 | mineable ? -no mine event created any of this otom in past 2 weeks
+
+
+[c] Might need to adjust my files for this:
+    [c] optimized otoms and isotopes files
+    [c] scripts
+    [c] recipes.otom
+
 2025-02-02 Feb.Sun 19:19:41 [ ] Okay what if for those *₅ we try making but the inputs decay, what if instead of those ones we put in an isotope that will decay into what we wanted in the first place
 like Morpheus's attempt at Dx₅:
 
@@ -46,7 +118,7 @@ MOLECULES OF FIVE TABLE
 | Aw | 23    | nonmetal |Aw| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢   seems unlikely
 | Oc | 24    | noble    |Oc| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ no for noble gasses
 | Nb | 25    | alkaline |Nb| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ Nb₅(Nb-54,Nb-54,Nb-54,Nb-54,Nb-54>)
-| Xk | 26    | metal    |Xk| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢
+| Xk | 26    | metal    |Xk| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ Xk₅(Xk-52,Xk-54,Xk-55,Xk-56,Xk-58>)
 | Ic | 27    | metal    |Ic| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ [ ] maybe
 | Yp | 28    | nonmetal |Yp| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ [ ] very likely
 | Jx | 29    | noble    |Jx| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢ no for noble gasses

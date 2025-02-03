@@ -358,18 +358,15 @@ my %mineable_otoms = (
  "Pq-15"=>1,
  "Zz-13"=>1,
  "Zz-14"=>1,
- "Zz-15"=>1,
  "Dx-15"=>1,
  "Dx-16"=>1,
  "Dx-17"=>1,
- "Dx-18"=>1,
  "Pm-17"=>1,
  "Pm-18"=>1,
  "Pm-19"=>1,
   "M-20"=>1,
   "M-22"=>1,
   "M-23"=>1,
- "Fw-23"=>1,
  "Fw-25"=>1,
  "Pt-24"=>1,
  "Pt-25"=>1,
@@ -379,7 +376,6 @@ my %mineable_otoms = (
  "Zq-32"=>1,
  "Xc-30"=>1,
  "Xc-31"=>1,
- "Xc-32"=>1,
  "Xc-34"=>1,
  "Gy-34"=>1,
   "D-37"=>1,
@@ -781,9 +777,15 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
     }
   }
 
-  @otoms_in = map { $_->[0] }
-              sort{ $a->[1] <=> $b->[1] }
-              map { [$_, $sortorder{$_} ] }
+#
+# The thing is, I like sorting the inputs so I can take the huge output file and sort them with the same inputs showing up in lines together.
+# Problem there is that it appears input order matters- Morpheus said he thinks the top otom in a stack like a *₅ is the last one in the input
+# Reactor window. That implies order matters. Need to investigate further.
+#
+  @otoms_in =
+#             map { $_->[0] }
+#             sort{ $a->[1] <=> $b->[1] }
+#             map { [$_, $sortorder{$_} ] }
               map { $hexdict{$_}; } 
               @otoms_in;
 

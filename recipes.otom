@@ -47,8 +47,7 @@
 | 14  7 Zz | Zz-14 |  5  2  W +  9  4 Af +  650 => 14  7 Zz
 | 14  7 Zz | Zz-14 |  7  3 Cq +  7  3 Cq +  650 => 14  7 Zz
 | 14  7 Zz | Zz-14 |  3  1 Ju + 11  5 Xl +  650 => 14  7 Zz
-|*15  7 Zz | Zz-15 | mineable
-| 15  7 Zz | Zz-15 | 15  8 Dx +               0 => 15  7 Zz
+|*15  7 Zz | Zz-15 | 15  8 Dx +               0 => 15  7 Zz
 | 15  7 Zz | Zz-15 | 15  6 Pq +               0 => 15  7 Zz
 |*16  7 Zz | Zz-16 | 34 15 Xc +            2500 => 16  7 Zz + 18  8 Dx
 | 16  7 Zz | Zz-16 | 30 13  S +            1950 => 14  6 Pq + 16  7 Zz
@@ -61,8 +60,7 @@
 |*17  8 Dx | Dx-17 | mineable
 | 17  8 Dx | Dx-17 |  2  1 Ju + 15  6 Pq +  500 => 17  8 Dx
 | 17  8 Dx | Dx-17 | 17  9 Pm +               0 => 17  8 Dx
-|*18  8 Dx | Dx-18 | mineable
-| 18  8 Dx | Dx-18 | 18  9 Pm +               0 => 18  8 Dx
+|*18  8 Dx | Dx-18 | 18  9 Pm +               0 => 18  8 Dx
 |*19  8 Dx | Dx-19 | 41 18 Fj +            2980 => 19  8 Dx + 22 10  M
 |*17  9 Pm | Pm-17 | mineable
 |*18  9 Pm | Pm-18 | mineable
@@ -92,8 +90,9 @@
 | 22 11 Fw | Fw-22 |  9  5 Xl + 13  7 Zz +  600 => 22 11 Fw
 | 22 11 Fw | Fw-22 | 10  6 Pq + 12  6 Pq +  550 => 22 11 Fw
 | 22 11 Fw | Fw-22 | 22 12 Pt +               0 => 22 11 Fw
-|*23 11 Fw | Fw-23 | mineable
-| 23 11 Fw | Fw-23 | 23 10  M +               0 => 23 11 Fw
+|*23 11 Fw | Fw-23 | 23 10  M +               0 => 23 11 Fw
+| 23 11 Fw | Fw-23 | 50 23 Aw +            4600 => 23 11 Fw + 27 12 Pt
+| 23 11 Fw | Fw-23 | 51 24 Oc +            4780 => 23 11 Fw + 28 13  S
 |*24 11 Fw | Fw-24 |  7  3 Cq + 17  8 Dx + 1050 => 24 11 Fw
 | 24 11 Fw | Fw-24 |  9  4 Af + 15  6 Pq +  750 => 24 11 Fw
 | 24 11 Fw | Fw-24 | 44 20  C +            3546 => 20  9 Pm + 24 11 Fw
@@ -140,8 +139,7 @@
 |*29 15 Xc | Xc-29 | 14  7 Zz + 15  8 Dx +  773 => 29 15 Xc
 |*30 15 Xc | Xc-30 | mineable
 |*31 15 Xc | Xc-31 | mineable
-|*32 15 Xc | Xc-32 | mineable
-| 32 15 Xc | Xc-32 | 32 14 Zq +               0 => 32 15 Xc
+|*32 15 Xc | Xc-32 | 32 14 Zq +               0 => 32 15 Xc
 |*33 15 Xc | Xc-33 | 15  6 Pq + 18  9 Pm +  783 => 33 15 Xc
 | 33 15 Xc | Xc-33 |  1  1 Ju + 32 14 Zq +  870 => 33 15 Xc
 |*34 15 Xc | Xc-34 | mineable

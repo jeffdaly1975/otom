@@ -4985,13 +4985,13 @@ syn match rarity_common   /\<14\s\+6\s\+Pq\>/    | syn match rarity_common   /\<
 syn match rarity_common   /\<15\s\+6\s\+Pq\>/    | syn match rarity_common   /\<Pq-15\>/           
 syn match rarity_common   /\<13\s\+7\s\+Zz\>/    | syn match rarity_common   /\<Zz-13\>/           
 syn match rarity_common   /\<14\s\+7\s\+Zz\>/    | syn match rarity_common   /\<Zz-14\>/           
-syn match rarity_common   /\<15\s\+7\s\+Zz\>/    | syn match rarity_common   /\<Zz-15\>/           
+syn match rarity_rare     /\<15\s\+7\s\+Zz\>/    | syn match rarity_rare     /\<Zz-15\>/           
 syn match rarity_rare     /\<16\s\+7\s\+Zz\>/    | syn match rarity_rare     /\<Zz-16\>/           
 syn match rarity_rare     /\<14\s\+8\s\+Dx\>/    | syn match rarity_rare     /\<Dx-14\>/           
 syn match rarity_common   /\<15\s\+8\s\+Dx\>/    | syn match rarity_common   /\<Dx-15\>/           
 syn match rarity_common   /\<16\s\+8\s\+Dx\>/    | syn match rarity_common   /\<Dx-16\>/           
 syn match rarity_common   /\<17\s\+8\s\+Dx\>/    | syn match rarity_common   /\<Dx-17\>/           
-syn match rarity_common   /\<18\s\+8\s\+Dx\>/    | syn match rarity_common   /\<Dx-18\>/           
+syn match rarity_rare     /\<18\s\+8\s\+Dx\>/    | syn match rarity_rare     /\<Dx-18\>/           
 syn match rarity_rare     /\<19\s\+8\s\+Dx\>/    | syn match rarity_rare     /\<Dx-19\>/           
 syn match rarity_common   /\<17\s\+9\s\+Pm\>/    | syn match rarity_common   /\<Pm-17\>/           
 syn match rarity_common   /\<18\s\+9\s\+Pm\>/    | syn match rarity_common   /\<Pm-18\>/           
@@ -5005,7 +5005,7 @@ syn match rarity_common   /\<22\s\+10\s\+M\>/    | syn match rarity_common   /\<
 syn match rarity_common   /\<23\s\+10\s\+M\>/    | syn match rarity_common   /\<M-23\>/            
 syn match rarity_rare     /\<21\s\+11\s\+Fw\>/   | syn match rarity_rare     /\<Fw-21\>/           
 syn match rarity_rare     /\<22\s\+11\s\+Fw\>/   | syn match rarity_rare     /\<Fw-22\>/           
-syn match rarity_common   /\<23\s\+11\s\+Fw\>/   | syn match rarity_common   /\<Fw-23\>/           
+syn match rarity_rare     /\<23\s\+11\s\+Fw\>/   | syn match rarity_rare     /\<Fw-23\>/           
 syn match rarity_rare     /\<24\s\+11\s\+Fw\>/   | syn match rarity_rare     /\<Fw-24\>/           
 syn match rarity_common   /\<25\s\+11\s\+Fw\>/   | syn match rarity_common   /\<Fw-25\>/           
 syn match rarity_rare     /\<26\s\+11\s\+Fw\>/   | syn match rarity_rare     /\<Fw-26\>/           
@@ -5034,7 +5034,7 @@ syn match rarity_rare     /\<28\s\+15\s\+Xc\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<29\s\+15\s\+Xc\>/   | syn match rarity_rare     /\<Xc-29\>/           
 syn match rarity_common   /\<30\s\+15\s\+Xc\>/   | syn match rarity_common   /\<Xc-30\>/           
 syn match rarity_common   /\<31\s\+15\s\+Xc\>/   | syn match rarity_common   /\<Xc-31\>/           
-syn match rarity_common   /\<32\s\+15\s\+Xc\>/   | syn match rarity_common   /\<Xc-32\>/           
+syn match rarity_rare     /\<32\s\+15\s\+Xc\>/   | syn match rarity_rare     /\<Xc-32\>/           
 syn match rarity_rare     /\<33\s\+15\s\+Xc\>/   | syn match rarity_rare     /\<Xc-33\>/           
 syn match rarity_common   /\<34\s\+15\s\+Xc\>/   | syn match rarity_common   /\<Xc-34\>/           
 syn match rarity_rare     /\<30\s\+16\s\+Gy\>/   | syn match rarity_rare     /\<Gy-30\>/           
