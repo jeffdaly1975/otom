@@ -1,3 +1,62 @@
+2025-02-04 Feb.Tue 12:49:48
+
+[ ] How to make Qi-79?
+
+[X]  Ju-3∙ + Gk-76⁻                          +     5000 =>?  Qi-79
+[ ]  Pq-15⁻ + Jx-64⁻                         +     2000 =>?  Qi-79 
+[ ]  Zq-32⁻ +  E-47⁻                         +     3200 =>?  Qi-79
+[X]  M-23⁻ + Nb-56⁻                          +     2500 =>?  Qi-79
+
+|  Ju-2∙ + Gk-76⁻                            +     5000 =>   Qi-78                                                                  +    3484.75 |    1515.25 | nuclear                      | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xcd93edcc3394e801da5f82d37b75873105785975c5dfa414ef28f2e6dc07c2c6 | 0xdd54be01ff1c29108d7a28c543095398e4dd640285b0b5f1b31263f46d51e54f |
+|  Ju-3∙ + Gk-76⁻                            +     5000 =>   Ju-3 + Gk-76                                                           +    4750.00 |     250.00 | none                         | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xc259715dcc407859646d5e3037b91771b693fa43506497ccca79d4a5a0580433 | 0x4292b48cc3da223416154d6221c137f002bd114599b0352c6571401ff7136900 |
+|  M-23⁻ + Nb-55⁻                            +     2213 =>   Qi-78                                                                  +       7.34 |    2205.66 | nuclear                      | 0x13c942e3f8be4faf966ef03e6038b33d000db22f | 0xf434eb34d35053ddeda807aebf8c478ed5104d3ae2619daaba2011eb098d0dc5 | 0x6becd9b172179495ee108711c5ed8dff51bbc3b8028b2d9bd0ee983f3bf7f4dd |
+|  M-23⁻ + Nb-56⁻                            +     5000 => ⬆ NbFw(Nb-56>Fw-23)                                                      +    4718.81 |     281.19 | chemical, decay              | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x2de987a4840b37d39e6104d80c85375d10f04db9b6f5dbab2d6166b92eaaa24c | 0x620ce648817a5289327af2051fbccf21d4469a1797c6144374636e40710bd1de |
+| Pq-15⁻ + Jx-63⁻                            +     2000 =>   Qi-78                                                                  +     391.60 |    1608.40 | nuclear                      | 0x302ae18228414d03b25ebe0d131720780f65baa5 | 0x70ff4efa6ea4ef81ae5db0c7b3bea50ba13a67e18465a9f75c1cd3e2e9c12f06 | 0xb757dc8118ea68ad11f53cca63f220d47a8b2e2b5eaca083ce3f344e6146c6e2 |
+| Pq-15⁻ + Jx-64⁻                            +     5000 => ⬆ Zz-15 + Jx-64                                                          +    4750.00 |     250.00 | decay                        | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x4438bab93126d39dbdd718679bbe967ba3a4d0a80ca7eeb07b53b9f85958ea92 | 0xfeb3e68a7e420a9988fe01c2eb3feac79f91c5a2726755f8181e2171ceb00f9a |
+| Qi-78⁻                                     +        0 =>   Qi-78                                                                  +       0.00 |       0.00 | none                         | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x014168878a79e58a4a0cc1181558ed0afa8277ec12a5b8d7f9b76300e77ad8bb | 0xed6e40c7ce059a752f0ba86759babde361c89ff662cdd6dc92fa0dbc9ef51ecb |
+| Zq-32⁻ +  E-46⁻                            +     4000 =>   Qi-78                                                                  +    1525.14 |    2474.86 | nuclear                      | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x880e2f53b382b78d057cf3614aa4d3053766538eae97b8658654f76df91be705 | 0x179cdcd4df40313b5aa47b93df1343faeaf2fc9adc1a21c7c994bcca8a3b6817 |
+
+
+
+Why haven't we tried M-23+Zq-32 => 55 24 Oc more? I see one with +50 NRG which is insufficient
+|    13032 |  M-23⁻ + Zq-32⁻                            +       50 => ⬆ Fw-23 + Xc-32                                                          +      47.50 |       2.50 | decay                        | 0x0db1a9333791099e4c9e4655ccc8e845afd1aec1 | 0x446d776af31dde809c1be37761e0b35099e4bf59bda4f450ead85b3b264f8f31 | 0x3fffb553c118a77590824120c76fd8cc7675f648f7ca4701c89d928ac4bb4545 |
+
+Try
+[r] 23 10 M  + 32 14 Zq + 3000 => ? 55 24 Oc <--NOPE it decayed to 55 25 Nb
+
+This hasn't been tried:
+[r] 10  6 Pq + 35 18 Fj + 2000 => 45 24 Oc <---NOTE it decayed to 45 23 Aw
+[r] 17  9 Pm + 18  9 Pm +  996 => 35 18 Fj
+
+
+These make Oc things.
+| 17  9 Pm + 29 15 Xc +  636 => 46 24 Oc
+| 17  9 Pm + 30 15 Xc + 1900 => 47 24 Oc
+| 18  9 Pm + 30 15 Xc + 1929 => 48 24 Oc
+
+Someone tried 
+|    18832 | Pm-17⁺ + Xc-28⁺                            +     5000 => ⬇ Aw-45                                                                  +    3582.78 |    1417.22 | decay, nuclear               | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xf8c85d61ad06d74a3dc65e45e0967e751b976b6c6cc6ff080ba1eb61be111d12 | 0x514ca5ecc6464079c11288646d0877052a82b1622e15380f32aea910ca9dde75 |
+
+But maybe it was too much energy?
+Try 
+[ ]  7  4 Af + 25 13  S +  664 => 32 17  D
+[ ] 20 10  M + 32 17  D + 2106 => 52 27 Ic
+[ ] 52 27 Ic +            4516 => 24 12 Pt + 28 15 Xc
+[ ] 17  9 Pm + 28 15 Xc + 1300 => ? 45 24 Oc
+
+
+Oc-51∙ is the only Oc-* that I see we've observed it fission into 2 otoms intead of SFw. At 4773.89 NRG it makes 23 11 Fw∙+ 28 13  S∙ and at 4807.11 NRG it makes SFw(S-28>Fw-23)
+[.] What do Oc-60 and Oc-52 fission into?
+
+[r] 25 12 Pt + 25 12 Pt + 1579 => 50 24 Oc
+[r] 15  6 Pq + 37 18 Fj + 1199 => 52 24 Oc
+[f] 50 24 Oc + 4500 => ? 50 24 Oc <--STILL NOT ENOUGH
+[r] 50 24 Oc + 4525 => Fw-23 + S-27  + 15.82 using 4509.28
+[f] 52 24 Oc + 5000 => ? SFw usig 4703.82 <---TOO MUCH
+[*] 52 24 Oc + 4600 => ?
+
+
+
 2025-02-03 Feb.Mon 11:56:00 [c] Someone posted in otom discord that Fw-23 is not mineable. I checked some things. Morpheus's mineable otoms contract lists 45 otoms that are mineable:
  7  4 Af
  8  4 Af
@@ -58,7 +117,7 @@ Xl-11 Xl-9  Zq-32 Zz-13 Zz-14
 
 regular expression: /\( 7  4 Af\| 8  4 Af\| 9  4 Af\|50 23 Aw\| 5  3 Cq\| 6  3 Cq\| 7  3 Cq\|37 17  D\|15  8 Dx\|16  8 Dx\|17  8 Dx\|37 18 Fj\|25 11 Fw\|34 16 Gy\| 1  1 Ju\| 2  1 Ju\| 3  1 Ju\|20 10  M\|22 10  M\|23 10  M\|54 25 Nb\|17  9 Pm\|18  9 Pm\|19  9 Pm\|10  6 Pq\|12  6 Pq\|13  6 Pq\|14  6 Pq\|15  6 Pq\|24 12 Pt\|25 12 Pt\|26 12 Pt\|25 13  S\|26 13  S\| 4  2  W\| 5  2  W\|30 15 Xc\|31 15 Xc\|34 15 Xc\|10  5 Xl\|11  5 Xl\| 9  5 Xl\|32 14 Zq\|13  7 Zz\|14  7 Zz\)/
 
-[ ] Why do I have it in my recipes file that these 4 are mineable? Are they not?
+[c] Why do I have it in my recipes file that these 4 are mineable? Are they not?
 |*15  7 Zz | Zz-15 | mineable ? -no mine event created any of this otom in past 1 weeks
 |*18  8 Dx | Dx-18 | mineable ? -no mine event created any of this otom in past 3 weeks
 |*23 11 Fw | Fw-23 | mineable ? -no mine event created any of this otom in past 3 weeks
@@ -865,24 +924,39 @@ There are question marks ? in places where it was not discernable or cut off on 
 
 2025-01-30 Jan.Thu 21:13:58 looking at Pm-*
 
-| Pm-17  +       0 => ⬇ Dx-17               +       0.00 |       0.00 | decay                        
-| Pm-17  +     200 => ⬇ Dx-17               +     190.00 |      10.00 | decay                        
-| Pm-17  +    5000 =>   XlAf(Af-8,Xl-9>)    +    4019.29 |     980.71 | metallic, nuclear            
+| Pm-17  +       0 => ⬇ Dx-17               +       0.00 using       0.00 | decay                        
+| Pm-17  +     200 => ⬇ Dx-17               +     190.00 using      10.00 | decay                        
+| Pm-17  +    5000 =>   XlAf(Af-8,Xl-9>)    +    4019.29 using     980.71 | metallic, nuclear            
 
-| Pm-18  +       0 => ⬇ Dx-18               +       0.00 |       0.00 | decay                        
-| Pm-18  +     830 => ⬇ Dx-18               +     788.50 |      41.50 | decay                        
-| Pm-18  +    1001 =>   XlAf(Af-8,Xl-10>)   +     113.18 |     887.82 | metallic, nuclear            
-| Pm-18  +    1111 =>   XlAf(Af-8,Xl-10>)   +     217.68 |     893.32 | metallic, nuclear            
+| Pm-18  +       0 => ⬇ Dx-18               +       0.00 using       0.00 | decay                        
+| Pm-18  +     830 => ⬇ Dx-18               +     788.50 using      41.50 | decay                        
+| Pm-18  +    1001 =>   XlAf(Af-8,Xl-10>)   +     113.18 using     887.82 | metallic, nuclear            
+| Pm-18  +    1111 =>   XlAf(Af-8,Xl-10>)   +     217.68 using     893.32 | metallic, nuclear            
 
-| Pm-19  +       0 =>   Pm-19               +       0.00 |       0.00 | none                         
-| Pm-19  +     500 =>   Pm-19               +     475.00 |      25.00 | none                         
-| Pm-19  +    5000 =>   XlAf(Af-9,Xl-10>)   +    3309.65 |    1690.35 | metallic, nuclear            
+| Pm-19  +       0 =>   Pm-19               +       0.00 using       0.00 | none                         
+| Pm-19  +     500 =>   Pm-19               +     475.00 using      25.00 | none                         
+| Pm-19  +    5000 =>   XlAf(Af-9,Xl-10>)   +    3309.65 using    1690.35 | metallic, nuclear            
 
-| Pm-20  +       0 => ⬆ M-20                +       0.00 |       0.00 | decay                        
-| Pm-20  +       1 => ⬆ M-20                +       0.95 |       0.05 | decay                        
-| Pm-20  +    5000 =>   XlAf(Af-9,Xl-11>)   +    3799.46 |    1200.54 | metallic, nuclear            
+| Pm-20  +       0 => ⬆ M-20                +       0.00 using       0.00 | decay                        
+| Pm-20  +       1 => ⬆ M-20                +       0.95 using       0.05 | decay                        
+| Pm-20  +    5000 =>   XlAf(Af-9,Xl-11>)   +    3799.46 using    1200.54 | metallic, nuclear            
 
-| Pm-21  +       0 => ⬆ M-21                +       0.00 |       0.00 | decay                        
+| Pm-21  +       0 => ⬆ M-21                +       0.00 using       0.00 | decay                        
+
+[ ] do each of those have a threshold where instead of XlAf it fissions into those 2 separate otoms?
+
+[ ] Pm-17  +     970 => ?
+
+[ ] Pm-18  +     880 => ?
+
+[ ] Pm-19  +    1670 => ?
+
+[ ]  5  2  W + 15  6 Pq +  707 => 20  9 Pm
+[ ] Pm-20  +    1180 => ?
+
+[ ] 11  5 Xl + 34 15 Xc + 1363 => 45 20  C
+[ ] 45 20  C +            3546 => 21  9 Pm + 24 11 Fw
+[ ] Pm-21  +    2000 => ?
 
 
 
