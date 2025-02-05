@@ -1,11 +1,13 @@
+2025-02-04 Feb.Tue 21:28:00
+Does O-36 + Ju-1 + 1000 => ? C-37 or more likely it decays to O-37
+    [ ] O-37ª +  Ju-1∙ + 1000 => ? C-38
+
+[ ] Does Af-7 + S-24 => D-31 ? or does it decay into Gy-31?
+    [ ] Af-7ª +  S-24⁺ + 1000 => ? D-32
+
 2025-02-04 Feb.Tue 12:49:48
 
 [ ] How to make Qi-79?
-
-[X]  Ju-3∙ + Gk-76⁻                          +     5000 =>?  Qi-79
-[ ]  Pq-15⁻ + Jx-64⁻                         +     2000 =>?  Qi-79 
-[ ]  Zq-32⁻ +  E-47⁻                         +     3200 =>?  Qi-79
-[X]  M-23⁻ + Nb-56⁻                          +     2500 =>?  Qi-79
 
 |  Ju-2∙ + Gk-76⁻                            +     5000 =>   Qi-78                                                                  +    3484.75 |    1515.25 | nuclear                      | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xcd93edcc3394e801da5f82d37b75873105785975c5dfa414ef28f2e6dc07c2c6 | 0xdd54be01ff1c29108d7a28c543095398e4dd640285b0b5f1b31263f46d51e54f |
 |  Ju-3∙ + Gk-76⁻                            +     5000 =>   Ju-3 + Gk-76                                                           +    4750.00 |     250.00 | none                         | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xc259715dcc407859646d5e3037b91771b693fa43506497ccca79d4a5a0580433 | 0x4292b48cc3da223416154d6221c137f002bd114599b0352c6571401ff7136900 |
@@ -16,6 +18,13 @@
 | Qi-78⁻                                     +        0 =>   Qi-78                                                                  +       0.00 |       0.00 | none                         | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x014168878a79e58a4a0cc1181558ed0afa8277ec12a5b8d7f9b76300e77ad8bb | 0xed6e40c7ce059a752f0ba86759babde361c89ff662cdd6dc92fa0dbc9ef51ecb |
 | Zq-32⁻ +  E-46⁻                            +     4000 =>   Qi-78                                                                  +    1525.14 |    2474.86 | nuclear                      | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x880e2f53b382b78d057cf3614aa4d3053766538eae97b8658654f76df91be705 | 0x179cdcd4df40313b5aa47b93df1343faeaf2fc9adc1a21c7c994bcca8a3b6817 |
 
+[X]  Ju-3∙ + Gk-76⁻                          +     5000 =>?  Qi-79
+[ ]  Pq-15⁻ + Jx-64⁻                         +     2000 =>?  Qi-79 
+[ ]  Zq-32⁻ +  E-47⁻                         +     3200 =>?  Qi-79
+[X]  M-23⁻ + Nb-56⁻                          +     2500 =>?  Qi-79
+
+[ ] 14  6 Pq + 50 23 Aw + 1750 => 64 29 Jx
+[ ] 64 29 Jx +            2000 => ?
 
 
 Why haven't we tried M-23+Zq-32 => 55 24 Oc more? I see one with +50 NRG which is insufficient
@@ -2228,20 +2237,39 @@ Seems like it would need to keep a hash for each reaction of individual isotopes
 
 MAYBE SHOULD BE MORE LIKE this so we can pick out the cheapest input energy
 %recipes=(
- "At-61"   => { "S-26 + Fj-35 => At-61" => { "2000"=> "S-26 + Fj-35 + 2000 => At-61"},
-                "Ju-1 + Hb-60 => At-61" => { "1153"=> "Ju-1 + Hb-60 + 1153 => At-61",
-                                             "1155"=> "Ju-1 + Hb-60 + 1155 => At-61",
-                                             "1157"=> "Ju-1 + Hb-60 + 1157 => At-61",},
-                "Ju-3 + Hb-58 => At-61" => { "1235"=> "Ju-3 + Hb-58  => At-61",},
-                "M-20 + E-41  => At-61" => { "2572"=> "M-20 + E-41   => At-61",},
+ "At-61"   => { "S-26 + Fj-35 => At-61" => { "2000"=> "S-26 + Fj-35 + 1881 => At-61"},   #otomro 21284 
+                "Ju-1 + Hb-60 => At-61" => { "1153"=> "Ju-1 + Hb-60 + 1153 => At-61",    #otomro 3232 
+                                             "1156"=> "Ju-1 + Hb-60 + 1156 => At-61",    #otomro 3314 
+                                             "1158"=> "Ju-1 + Hb-60 + 1158 => At-61",},  #otomro 3340 
+                "Ju-3 + Hb-58 => At-61" => { "1235"=> "Ju-3 + Hb-58  => At-61",},        #otomro 3479 
+                "M-20 + E-41  => At-61" => { "2572"=> "M-20 + E-41   => At-61",},        #otomro 9669 
               },
  "S-26"    => { "mineable",                         "mineable",                    
-                "Zq-26 => S-26",        => {   "68"=> "Zq-26 +   68 => S-26",
-                                        =>     "72"=> "Zq-26 +   72 => S-26",},
-                "Nb-49 => S-26 + Pt-23" => { "4132"=> "Nb-49 + 4132 => S-26 + Pt-23",},
+                "Zq-26 => S-26",        => {   "68"=> "Zq-26 +   68 => S-26",            #otomro 22683 
+                                        =>     "71"=> "Zq-26 +   72 => S-26",},          #otomro 22692 
+                "Nb-49 => S-26 + Pt-23" => { "4132"=> "Nb-49 + 4132 => S-26 + Pt-23",},  #otomro 16868 
               },
-
 );
+
+OR maybe keys are single isotopes. 
+Those point to hash of reactions without the energy specified.
+Those point to a hash with the OTOMRO number for the most efficient reaction
+
+%recipes=(
+ "At-61"   => 
+   { "S-26 + Fj-35 => At-61" => { otomro=>21284, nrg_in=1881 },
+     "Ju-1 + Hb-60 => At-61" => { otomro=>3232 , nrg_in=1153 },
+     "Ju-3 + Hb-58 => At-61" => { otomro=>1235 , nrg_in=1235 },
+     "M-20 + E-41  => At-61" => { otomro=>2572 , nrg_in=2572 },
+   },
+
+ "S-26"    => 
+   { "Zq-26 => S-26"         => { otomro=>22683, nrg_in=68   },
+     "Nb-49 => S-26 + Pt-23" => { otomro=>16868, nrg_in=4132 },
+   },
+);
+
+
 
 
 

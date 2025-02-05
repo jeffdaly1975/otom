@@ -1053,19 +1053,27 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
    $db{$otomro}{"analyse_tx"} ;
 
    # save data for recipes
-   foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){  
+   # FOR NOW ONLY 1 OR 2 INPUT REACTIONS!
+   if ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) <= 2){
+     foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){  
 ###print STDERR "DEBUG: otomro[$otomro] one[$one]\n";
       my $rounded_energy_input = sprintf "%.0f", $db{$otomro}{"energy_in"};
+      #[ ] Do i need to sort the inputs first so "Ju-1 + Hb-58" and "Hb-58 + Ju-1" are counted as the same
+      my $reaction_key_string = $db{$otomro}{"otoms_in"} ." => ". $db{$otomro}{"otoms_out"};
 
-      push @{ $recipes{$one} },  $db{$otomro}{"otoms_in"} ." + ". $rounded_energy_input . " => ". $db{$otomro}{"otoms_out"};
+      if ((! exists $recipes{$one}{$reaction_key_string}{nrg_in})
+      ||  (         $recipes{$one}{$reaction_key_string}{nrg_in} > $rounded_energy_input)){
+
+        $recipes{$one}{$reaction_key_string}{otomro}=$otomro;
+        $recipes{$one}{$reaction_key_string}{nrg_in}=$rounded_energy_input;
+      }
+     }
    }
-
-}
 
  print STDERR "$otomro\n";
 }
 
-
+}
 #
 # recipe output
 # [ ] still need to filter out duplicates where they have the same input otoms but different energy
@@ -1079,8 +1087,10 @@ foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
   }
 
   my %seenthis=();
-  foreach my $r ( sort @{ $recipes{$k} } ){
-     my $s=sprintf "| %-5s | %s\n", $k, $r;
+  foreach my $r ( sort keys %{ $recipes{$k} } ){   # r == "S-26 + Fj-35 => At-61"
+     my $this_otomro=$recipes{$k}{$r}{otomro};
+
+     my $s=sprintf "| %-5s | %s\n", $k, $db{$this_otomro}{otoms_in} ." + ". $recipes{$k}{$r}{nrg_in} ." => ". $db{$this_otomro}{otoms_out} ;
      unless (exists $seenthis{$s}){
        printf $fh $s;
      }
