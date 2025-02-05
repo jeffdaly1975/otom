@@ -676,18 +676,23 @@ sub energy_converter {
 
 my %db = ();
 
+#              [ ] add energy used
+#              [ ] type should be a hash so we can test specifically for decay for example
+#              [ ] add otoms_in_sorted. The order of inputs might actually matter. So I want the original order from the initiateReaction AND a sorted Otom mass order for deduplication
+#              [ ] perhaps after the %db of OTOMROs is done building from parsing the logs, I should build 2 more %inputs and %outputs.
+#                  These would be keyed like a reaction without energy "M-19 + Hb-57 => H-76" and would have a hash of values for bounded input energy ranges, and a list of otomros that are represented
 # %db = ( 
 #
 #  "22474" = {
 #            initiate_tx     = "0x02f88bd7b0bfb18c38e79d27feb0dd1ebc00b8e199a83de744b92ae8b4a28303"
-#            otoms_in        = ["Xc-31", "S-26" ],  # array of strings?
-#            energy_in       = 200                  # integer
-#            chemist         = 0x251183363307aa24e403eFBb3d5637f66f56FC5E # wallet address
+#            otoms_in        = ["Xc-31", "S-26" ],                                                    # array of strings?
+#            energy_in       = 200                                                                    # integer
+#            chemist         = 0x251183363307aa24e403eFBb3d5637f66f56FC5E                             # wallet address
 #
 #            analyse_tx      = "0x8071531f26b7934ee87d69b2725e8b492898092b880121f3ccaaa651fc97d028"
-#            otoms_out       = ["XcS(Xc-31>S-26)" ],  # array of strings?
-#            energy_out      = 166.17                 # decimal rounded to hundreths
-#            type            = "chemical"             # string
+#            otoms_out       = ["XcS(Xc-31>S-26)" ],                                                  # array of strings?
+#            energy_out      = 166.17                                                                 # decimal rounded to hundreths
+#            type            = "chemical"                                                             # string
 #            },
 #
 # );
