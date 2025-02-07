@@ -1131,12 +1131,25 @@ print STDERR "\n";
 print STDERR " How many of each thing has been produced through reactions?\n";
 print STDERR "OTOM ISOTOPES\n";
 
+my $otoms_instantiated_count=0;
+foreach my $k (keys %discovered_otoms){
+  $otoms_instantiated_count+= $discovered_otoms{$k};
+}
+print STDERR " $otoms_instantiated_count instantiations of ". scalar(keys %discovered_otoms) ." otoms\n";
+
 foreach my $k (sort { $discovered_otoms{$b} <=> $discovered_otoms{$a} || $a cmp $b} keys %discovered_otoms){
   printf STDERR "%8d %s\n", $discovered_otoms{$k} , $k;
 }
 
 print STDERR "\n";
-print STDERR "OTOM MOLECULES\n";
+print STDERR "OTOM MOLECULES";
+
+my $molecules_instantiated_count=0;
+foreach my $k (keys %discovered_molecules){
+  $molecules_instantiated_count+= $discovered_molecules{$k};
+}
+print STDERR " $molecules_instantiated_count instantiations of ". scalar(keys %discovered_molecules) ." molecules\n";
+
 foreach my $k (sort { $discovered_molecules{$b} <=> $discovered_molecules{$a} || $a cmp $b } keys %discovered_molecules){
   printf STDERR "%8d %s\n", $discovered_molecules{$k} , $k;
 }
