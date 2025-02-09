@@ -384,6 +384,57 @@ my %mineable_otoms = (
  "Nb-54"=>1,
 );
 
+my $hold_the_line="";
+my %looking_for_these_otomros=(
+"7151"=>1,
+"7152"=>1,
+"7153"=>1,
+
+"7158"=>1,
+"7159"=>1,
+"7160"=>1,
+"7161"=>1,
+"7162"=>1,
+"7163"=>1,
+"7164"=>1,
+"7165"=>1,
+"7166"=>1,
+"7167"=>1,
+"7168"=>1,
+"7169"=>1,
+"7170"=>1,
+"7171"=>1,
+"7172"=>1,
+"7173"=>1,
+"7174"=>1,
+"7175"=>1,
+"7176"=>1,
+"7177"=>1,
+
+"8361"=>1,
+
+"8725"=>1,
+"8726"=>1,
+"8727"=>1,
+"8728"=>1,
+"8729"=>1,
+"8730"=>1,
+
+"11758"=>1,
+"11759"=>1,
+"11760"=>1,
+"11761"=>1,
+"11762"=>1,
+
+"12581"=>1,
+"12582"=>1,
+"12583"=>1,
+
+"12591"=>1,
+"12592"=>1,
+);
+
+
 my %decaychar=(
 "alpha"   => 'ª',   # vim insert <C-k>-a   alpha  
 "beta+"   => '⁺',   # vim insert <C-k>+S   beta+  
@@ -699,9 +750,11 @@ my %db = ();
 
 my $txhash="";
 my %seenit=(); # hash of txhashes we see
+my $skip_duplicate_input=0;
 
 foreach $line (<>){
 
+  $hold_the_line=$line; # TEMP FOR DEBUGGING WHY SOME OTOMROS ARE MISSING
   my $otomro=0;
   my $reaction_inuts="";
 ##my $reaction_output_string="";
@@ -719,10 +772,13 @@ foreach $line (<>){
     $txindex=$2;
   } elsif ($line =~ /^TxHash,Index/){
     next; #skip header
+  }else{
+    die "UNEXPECTED INPUT: $line\n";
   }
 
   # dont bother if we already saw it.
   if (exists $seenit{$txhash . $txindex}){
+    $skip_duplicate_input++;
     next;
   }else{
     $seenit{$txhash . $txindex}=1;
@@ -805,6 +861,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
   if ($line =~ /0000000000000000000000(\w{6}),0x0{24}(\w{40}),?\s*$/){
     $otomro = eval "0x$1";
     $chemist = "0x$2";
+    if (exists $looking_for_these_otomros{$otomro}){ print STDERR "initiateReaction: HEY I FOUND AN OTOMRO YOURE LOOKING FOR: $otomro\nINPUT: $hold_the_line\n"; }
   }
 
 # print "initiateReaction OTOMRO $otomro CHEMIST $chemist INPUT NRG $energy_input INPUTS: ".  join(" + ",@otoms_in) . "\n";
@@ -834,6 +891,8 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
   my $energy_returned=0;
   if ($line =~ /^0x0000000000000000000000000000000000000000000000000000000000000020fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26\w{64}\w{64}\w{64}\w{44}(\w{20})/g){
     $energy_returned = energy_converter($1);
+  }else{
+    die "analyseReactions: OTOMRO $otomro: Could not find energy returned\nINPUT: $hold_the_line\n";
   }
 
   #
@@ -841,6 +900,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
   #
   if ($line =~ /0000000000000000000000(\w\w\w\w\w\w),0x\w+,\s*$/){
     $otomro = eval "0x$1";
+    if (exists $looking_for_these_otomros{$otomro}){ print STDERR "analyseReactions: OTOMRO $otomro: HEY I FOUND AN OTOMRO YOURE LOOKING FOR\nINPUT: $hold_the_line\n"; }
   }
 
   #
@@ -856,6 +916,10 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
   # 586333312d533236000000000000000000000000000000000000000000000000
   # 0000000000000000000000000000000000000000000000000000000000000003
   # 5863530000000000000000000000000000000000000000000000000000000000
+
+  if (scalar(@matches) <=0){
+    die "analyseReactions: OTOMRO $otomro: did not find matches for OTOM outputs\nINPUT: $hold_the_line\n";
+  }
 
   foreach $m (@matches){
 
@@ -1024,8 +1088,11 @@ if (@reaction_types){
  $db{$otomro}{"energy_out"}  = $energy_returned;
  $db{$otomro}{"type"}        = $reaction_string;
  $db{$otomro}{"analyse_tx"}  = $txhash;
-} else{
+}else{
   # Not a call to initiateReaction() nor analyseReactions() so skip it
+  if ($line =~ /^(0x\w{64})/){
+    print STDERR "input log was not initiateReaction nor analyseReactions, it was $1\nINPUT: $hold_the_line\n";
+  }
   next;
 }
 
@@ -1128,8 +1195,8 @@ foreach my $k (sort keys %db){
 
 # finally finally how many of each thing has been produced through reactions?
 print STDERR "\n";
-print STDERR " How many of each thing has been produced through reactions?\n";
-print STDERR "OTOM ISOTOPES\n";
+print STDERR "How many of each thing has been produced through reactions?\n";
+print STDERR "OTOM ISOTOPES: ";
 
 my $otoms_instantiated_count=0;
 foreach my $k (keys %discovered_otoms){
@@ -1142,7 +1209,7 @@ foreach my $k (sort { $discovered_otoms{$b} <=> $discovered_otoms{$a} || $a cmp 
 }
 
 print STDERR "\n";
-print STDERR "OTOM MOLECULES";
+print STDERR "OTOM MOLECULES: ";
 
 my $molecules_instantiated_count=0;
 foreach my $k (keys %discovered_molecules){
@@ -1153,5 +1220,7 @@ print STDERR " $molecules_instantiated_count instantiations of ". scalar(keys %d
 foreach my $k (sort { $discovered_molecules{$b} <=> $discovered_molecules{$a} || $a cmp $b } keys %discovered_molecules){
   printf STDERR "%8d %s\n", $discovered_molecules{$k} , $k;
 }
+
+print STDERR "\nDUPLICATE INPUT LINES SKIPPED: $skip_duplicate_input\n";
 
 
