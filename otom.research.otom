@@ -2,6 +2,8 @@
 Then I renamed it to Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
 He did express that these aren't necessarily possible to produce considering the stability (some even have stability=0) but these are what the Universe Alpha contain.
 
+After adding those new ones to my FILE otoms.complete.list.otom there are 730 potential isotopes in Universe Alpha. We have discovered 323/730 so not even 50%
+
 2025-02-09 Feb.Sun 17:12:05 I mentioned to Morpheus that the Reactor contract interface on shapescan appears to allow you to initiate a reaction with more than 5 inputs but I haven't tried it yet. He was intrigued and looked into it more. However he found the contract includes a read function "reactionLengthLimit" which says 5 is the max. Oh well.
 
 2025-02-09 Feb.Sun 17:09:49 [ ] Posted an issue in the Shape Discord support channel:
