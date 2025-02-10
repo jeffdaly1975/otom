@@ -921,6 +921,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
     die "analyseReactions: OTOMRO $otomro: did not find matches for OTOM outputs\nINPUT: $hold_the_line\n";
   }
 
+print STDERR "DEBUG: matches found: " . scalar(@matches) ."\n";
   foreach $m (@matches){
 
      $char_hex_string= substr $m,0,2,"";     # remove the hexadecimal count of base64 encoded chars
@@ -932,13 +933,15 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 
      my @bits = ($chem_output =~ m/(..)/g);
      # bits array[58,63,33,31,2d,53,32,36]
+print STDERR "DEBUG: bits array=(" . join (",",@bits) . ")\n";
  
      $decoded_string="";
      foreach my $b ( @bits){
        my $charified = chr eval "0x$b";
-##print STDERR "DEBUG: char 0x$b--->[$charified]\n";
+print STDERR "DEBUG: char 0x$b--->[$charified]\n";
        $decoded_string.="$charified";
      }
+print STDERR "DEBUG: decoded_string[$decoded_string]\n";
 
 
      $save_this_n = substr $m, 252,4; # save_this_n = "0003"
@@ -948,6 +951,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
      $save_this   = substr $m, 256, $save_count * 2;   # save_this = "586353"
 
      my @savebits = ($save_this =~ m/(..)/g);
+print STDERR "DEBUG: savebits array=(" . join (",",@savebits) . ")\n";
      $alt_decoded_string="";
      foreach my $b ( @savebits){
        my $charified = chr eval "0x$b";
@@ -959,6 +963,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
          $subscript_count +=1;
        }
      }
+print STDERR "DEBUG: alt_decoded_string[$alt_decoded_string]\n";
 
  #example decoded_string     = "W4,W5-Dx17"
  #example alt_decoded_string = "W₂Dx"
@@ -981,17 +986,18 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
      # add dashes
      $decoded_string =~ s/\b([A-Za-z]+)(\d+)/$1-$2/g; #  "W-4,W-5>Dx-17"
      my $molecule = sprintf "%s(%s)", $alt_decoded_string, $decoded_string;
+print STDERR "DEBUG: molecule[$molecule]\n";
 
 ##   $reaction_output_string .= " + " . $molecule;
      push @reaction_output_list, $molecule;
 
 
      # figure out how many protons from each piece of the molecule
-###print STDERR "DEBUG: how many protons in the Molecule[$decoded_string]\n";
+print STDERR "DEBUG: how many protons in the Molecule[$decoded_string]\n";
      foreach my $part ($decoded_string =~ m/\b([A-Za-z]+)-\d+/g){ #  [W-4, W-5, Dx-17]
        if (exists $protonlookup{$part}){
          $output_protons += $protonlookup{$part};
-###print STDERR "DEBUG: output[$part] has [$protonlookup{$part}] protons\n";
+print STDERR "DEBUG: output[$part] has [$protonlookup{$part}] protons\n";
        }else{
          die "UNKNOWN otom $part\n";
        }
@@ -1066,7 +1072,7 @@ if (@reaction_types){
 }
 
 
-###print STDERR "DEBUG: before sorting reaction_output_list=(". join(",",@reaction_output_list) .")\n";
+print STDERR "DEBUG: before sorting reaction_output_list=(". join(",",@reaction_output_list) .")\n";
 
  # here we use the Schwartzian Transform to sort the output otoms by proton mass order,
  # using the %sortorder we created at the beginning. If its a molecule, thats not in the
@@ -1076,12 +1082,12 @@ if (@reaction_types){
 			 map { [$_, $sortorder{$_} || $maxkey ] }
 			 @reaction_output_list ;
 
-###print STDERR "DEBUG: AFTER  sorting reaction_output_list=(". join(",",@reaction_output_list) .")\n";
+print STDERR "DEBUG: AFTER  sorting reaction_output_list=(". join(",",@reaction_output_list) .")\n";
 
 
 #printf "OTOMRO %8d |%-70.70s | %10.2f | %s |\n",$otomro, $reaction_output_string, $energy_returned, $reaction_string;
  $db{$otomro}{"otoms_out_list"} = [ @reaction_output_list ]; # need to do it this way with brackets around the list so I get a copy of the list not just a reference to the list
-#print "DEBUG: added to db{$otomro}{otoms_out_list}=" . join(',',@reaction_output_list) ."\n";
+print "DEBUG: added to db{$otomro}{otoms_out_list}=" . join(',',@reaction_output_list) ."\n";
  $db{$otomro}{"otoms_out"}   =  join " + ",@reaction_output_list;
  $db{$otomro}{"subscripts"}  = $subscript_count;
  $db{$otomro}{"protons_out"} = $output_protons;
@@ -1174,6 +1180,7 @@ close($fh);
 
 
 # finally do an assessment of any initiateReaction calls missing an analyseReactions tx
+my @missing_initiates=();
 foreach my $k (sort keys %db){
   unless (exists $db{$k}{"analyse_tx"}){
  
@@ -1191,7 +1198,21 @@ foreach my $k (sort keys %db){
      $db{$k}{"initiate_tx"};
 
   }
+
+  unless (exists $db{$k}{"initiate_tx"}){
+    push @missing_initiates, $k;
+  }
 }
+
+if (scalar(@missing_initiates)>0){
+  print STDERR "\n";
+  print STDERR "The following OTOMROs have no initiateReaction entry in the logs, but do have an analyseReactions entry:\n";
+  print " $_\n" for sort @missing_initiates;
+}
+
+
+
+
 
 # finally finally how many of each thing has been produced through reactions?
 print STDERR "\n";

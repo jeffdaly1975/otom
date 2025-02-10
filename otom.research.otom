@@ -1,3 +1,81 @@
+2025-02-09 Feb.Sun 21:05:08 I took Kjetil's latest stability chart which he provided to the discord after I asked for it, and I updated my file "isotopes image from Kjetil with uknknown meaning.txt" with the missing information.
+Then I renamed it to Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
+He did express that these aren't necessarily possible to produce considering the stability (some even have stability=0) but these are what the Universe Alpha contain.
+
+2025-02-09 Feb.Sun 17:12:05 I mentioned to Morpheus that the Reactor contract interface on shapescan appears to allow you to initiate a reaction with more than 5 inputs but I haven't tried it yet. He was intrigued and looked into it more. However he found the contract includes a read function "reactionLengthLimit" which says 5 is the max. Oh well.
+
+2025-02-09 Feb.Sun 17:09:49 [ ] Posted an issue in the Shape Discord support channel:
+ +----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ | I've been exporting the OTOM Reactor contract logs from shapescan (https://shapescan.xyz/csv-export?type=logs&address=0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc) then parsing them with a perl script in order to figure out the optimal energy requirements for reactions.
+ | 
+ | The problem is there appears to be an issue where there's 40 initiateReaction() contract calls missing from the CSV exports somehow. 
+ | 
+ | The missing ones are OTOMROs 7151-7153, 7158-7177, 8361, 8725-8730, 11758-11762, 12581-12583, 12591, 12592. 
+ | 
+ | I don't understand how they could be missing so I'm wondering if there's an explanation how this could be.
+ | 
+ | As an example, one of the missing ones is OTOMRO is 7177. I did an export for just November 20, 2024 to be sure it wasn't clipped out by the max 10000 entry for exports.
+ | 
+ | The analyseReactions tx was on Nov 20 2024 13:49:29 PM (-05:00 UTC) as seen in https://shapescan.xyz/tx/0x1a212acb9f570443da31212c4259b1dfc64af4af75dfb1332c74d5cf71846384
+ | 
+ | The initiateReaction tx was on Nov 20 2024 13:46:51 PM (-05:00 UTC) as seen in https://shapescan.xyz/tx/0xe37c39b6ab4923ce8591505f4f48fda29b768778469503b4bd182d3a2f8d4811
+ | 
+ | That CSV export includes OTOMRO reactions from 5471 on Nov 19 2024 19:00:01 PM (-05:00 UTC) to 7765 on Nov 20 2024 18:42:13 PM (-05:00 UTC), except for those I've noted missing.
+ | 
+ | What could be the reason these entries are missing?
+ | Is it possible to export shapescan logs at the resolution of hours rather than days?
+ +----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2025-02-09 Feb.Sun 13:22:16 Okay getting somewhere with my parser issue. 
+
+One of the problematic OTOMROs is 7177. I have the analyseReactions entry in logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2024-11-20_2024-11-20.csv
+I grepped all the logs and it seems that I do not have a log file with the call to initiateReaction! How is that possible?
+
+From shapescan, the analyseReactions tx was https://shapescan.xyz/tx/0x1a212acb9f570443da31212c4259b1dfc64af4af75dfb1332c74d5cf71846384
+It happened on Nov 20 2024 13:49:29 PM (-05:00 UTC)
+
+The initiateReaction tx was https://shapescan.xyz/tx/0xe37c39b6ab4923ce8591505f4f48fda29b768778469503b4bd182d3a2f8d4811
+and happened Nov 20 2024 13:46:51 PM (-05:00 UTC) just about 3 minutes before. Why isn't it in the log?
+
+I reexported the log for 2024-11-20. Its identical to the one I have already. I checked that it doesn't exceed the 10000 log entry limit. It doesn't
+The first entry in the log is analyseReactions on Nov 20 2024 18:42:13 PM (-05:00 UTC) with tx https://shapescan.xyz/tx/0x2a89158f4c19706946b03342333576df1b68076f6f0d4ea7f8c17b79c939ab55 
+It includes OTOMROs 7761,7763,7764,7765
+
+The last entry in the log is analyseReactions on Nov 19 2024 19:00:01 PM (-05:00 UTC) with tx https://shapescan.xyz/tx/0x8ec7d44cd36fa479937f017481a01b08950052fff3e0a2d3e78775db367bf15d
+It includes OTOMRO 5471
+
+It sure seems like it should include the tx for OTOMRO 7177 initiateReactions.
+
+Perhaps I can try exporting the 19th-20th. I had to do the 20th in 1 export file since there's so many.
+Tried that. No luck.
+
+[c] Maybe ask in Shape support if there's a way to export CSV at the hourly resolution rather than resolution of 1 day.
+[c] And ask how this could be happening?
+
+
+
+
+
+2025-02-09 Feb.Sun 11:52:25 Well that's not good. I did a 'git push' and it acted like it worked but there were errors and fatal messages! WTF does that mean?
+
+   >> 2025-02-09.Feb.Sun 11:51:57 [~/Downloads/NFTs/otom] % git push
+   >> Enumerating objects: 12, done.
+   >> Counting objects: 100% (12/12), done.
+   >> Delta compression using up to 8 threads
+   >> Compressing objects: 100% (7/7), done.
+   >> error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+   >> fatal: the remote end hung up unexpectedly
+   >> Writing objects: 100% (7/7), 2.48 MiB | 5.33 MiB/s, done.
+   >> Total 7 (delta 5), reused 0 (delta 0)
+   >> fatal: the remote end hung up unexpectedly
+   >> Everything up-to-date
+   >> 2025-02-09.Feb.Sun 11:52:00 [~/Downloads/NFTs/otom] % 
+
+Google search revealed I was exceeding the max file size I guess. Ran this command and then did a git push again and it worked:
+  git config http.postBuffer 524288000
+
+
+
 2025-02-08 Feb.Sat 23:38:37 This is interesting. My parseReactorLog.pl script summarizes all the outputs at the end. It is presently showing only 321/323 known isotopes. Cq-5 and Pq-10 are not showing up. Does that mean they always decay?
 Wow in fact they have the lowest stability values of all with the lowest 10 being:
 | stability            | otom
@@ -13,55 +91,56 @@ Wow in fact they have the lowest stability values of all with the lowest 10 bein
 | 0.48749240720806236  | Xl-10 
 
 
-2025-02-08 Feb.Sat 21:13:20 Somethings wrong with my parser. I can see it missed these OTOMROs:
+2025-02-08 Feb.Sat 21:13:20 Somethings wrong with my parser. I can see it missed these 40 OTOMROs:
+OTOMRO hex value
 7151 0x1bef
 7152 0x1bf0
 7153 0x1bf1
 
-7158
-7159
-7160
-7161
-7162
-7163
-7164
-7165
-7166
-7167
-7168
-7169
-7170
-7171
-7172
-7173
-7174
-7175
-7176
-7177
+7158 0x1bf6
+7159 0x1bf7
+7160 0x1bf8
+7161 0x1bf9
+7162 0x1bfa
+7163 0x1bfb
+7164 0x1bfc
+7165 0x1bfd
+7166 0x1bfe
+7167 0x1bff
+7168 0x1c00
+7169 0x1c01
+7170 0x1c02
+7171 0x1c03
+7172 0x1c04
+7173 0x1c05
+7174 0x1c06
+7175 0x1c07
+7176 0x1c08
+7177 0x1c09
 
-8361
+8361 0x20a9
 
-8725
-8726
-8727
-8728
-8729
-8730
+8725 0x2215
+8726 0x2216
+8727 0x2217
+8728 0x2218
+8729 0x2219
+8730 0x221a
 
-11758
-11759
-11760
-11761
-11762
+11758 0x2dee
+11759 0x2def
+11760 0x2df0
+11761 0x2df1
+11762 0x2df2
 
-12581
-12582
-12583
+12581 0x3125
+12582 0x3126
+12583 0x3127
 
-12591
-12592
+12591 0x312f
+12592 0x3130
 
-[ ] Is the parser missing something? Or did the exports not include those?
+[x] Is the parser missing something? Or did the exports not include those?
 
 2025-02-06 Feb.Thu 17:58:00 
 Top 5 otom isotope discoverers:
@@ -837,49 +916,49 @@ MOLECULES OF FIVE TABLE
 Here's a table of molecules seen created so far of just one otom type:
 
 MOLECULES OF ONE KIND OF OTOM
-|otom|protons| Series   |  | shells                                                             |  *₂ |  *₃ |  *₄ |  *₅ |
-| Ju |  1    | alkaline |Ju| ⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     | Ju₃ |     |     |
-| W  |  2    | nonmetal | W| ⎥◼◼◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |  W₃ |     |     |
-| Cq |  3    | noble    |Cq| ⎥◼◼◼⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
-| Af |  4    | alkaline |Af| ⎥◼◼◼⎢⎥◼◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Af₂ | Af₃ | Af₄ |     |
-| Xl |  5    | metal    |Xl| ⎥◼◼◼⎢⎥◼◼ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Xl₂ | --- | Xl₄ | --- |
-| Pq |  6    | nonmetal |Pq| ⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     | Pq₄ |     |
-| Zz |  7    | noble    |Zz| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
-| Dx |  8    | alkaline |Dx| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Dx₂ | Dx₃ | Dx₄ | Dx₅ |
-| Pm |  9    | metal    |Pm| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Pm₂ | Pm₃ | Pm₄ | Pm₅ |
-| M  | 10    | metal    | M| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  M₂ |  M₃ |     |  M₅ |
-| Fw | 11    | nonmetal |Fw| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | Fw₅ |
-| Pt | 12    | noble    |Pt| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
-| S  | 13    | alkaline | S| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  S₂ |  S₃ |  S₄ |     |
-| Zq | 14    | metal    |Zq| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Zq₂ |     |     |     |
-| Xc | 15    | nonmetal |Xc| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     | Xc₄ |     |
-| Gy | 16    | noble    |Gy| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
-| D  | 17    | alkaline | D| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  D₂ |  D₃ |     |  D₅ |
-| Fj | 18    | metal    |Fj| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Fj₂ |     |     | Fj₅ |
-| O  | 19    | metal    | O| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |  O₃ |     |  O₅ |
-| C  | 20    | metal    | C| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  C₂ |     |     |  C₅ |
-| E  | 21    | metal    | E| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  E₂ |     |     |  E₅ |
-| A  | 22    | metal    | A| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |  A₄ |  A₅ |
-| Aw | 23    | nonmetal |Aw| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
-| Oc | 24    | noble    |Oc| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
-| Nb | 25    | alkaline |Nb| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Nb₂ | Nb₃ | Nb₄ | Nb₅ |
-| Xk | 26    | metal    |Xk| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     | Xk₃ | Xk₄ | Xk₅ |
-| Ic | 27    | metal    |Ic| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | [ ] |
-| Yp | 28    | nonmetal |Yp| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | [ ] |
-| Jx | 29    | noble    |Jx| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
-| Hb | 30    | alkaline |Hb| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | Hb₅ |
-| At | 31    | metal    |At| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢| At₂ |     |     | At₅ |
-| Ny | 32    | metal    |Ny| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
-| Pw | 33    | metal    |Pw| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
-| Gk | 34    | metal    |Gk| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
-| Qi | 35    | metal    |Qi| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | Qi₅ |
-| Xy | 36    | nonmetal |Xy| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
-| Gq | 37    | noble    |Gq| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
-| Bt | 38    | alkaline |Bt| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢|     |     |     |     |
-| H  | 39    | metal    | H| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢|     |     |     |     |
-| U  | 40    | metal    | U| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢|     |     |     |     |
-| Sq | 41    | metal    |Sq| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢|     |     |     |     |
-| Ua | 42    | noble    |Ua| ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢| --- | --- | --- | --- |
+|otom|protons| Series   | shells                                                             |  *₂ |  *₃ |  *₄ |  *₅ |
+| Ju |  1    | alkaline | ⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     | Ju₃ |     |     |
+| W  |  2    | nonmetal | ⎥◼◼◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |  W₃ |     |     |
+| Cq |  3    | noble    | ⎥◼◼◼⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
+| Af |  4    | alkaline | ⎥◼◼◼⎢⎥◼◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Af₂ | Af₃ | Af₄ |     |
+| Xl |  5    | metal    | ⎥◼◼◼⎢⎥◼◼ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Xl₂ | --- | Xl₄ | --- |
+| Pq |  6    | nonmetal | ⎥◼◼◼⎢⎥◼◼ ◼◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     | Pq₄ |     |
+| Zz |  7    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
+| Dx |  8    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Dx₂ | Dx₃ | Dx₄ | Dx₅ |
+| Pm |  9    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◻◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Pm₂ | Pm₃ | Pm₄ | Pm₅ |
+| M  | 10    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◻ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  M₂ |  M₃ |     |  M₅ |
+| Fw | 11    | nonmetal | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | Fw₅ |
+| Pt | 12    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
+| S  | 13    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  S₂ |  S₃ |  S₄ |     |
+| Zq | 14    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Zq₂ |     |     |     |
+| Xc | 15    | nonmetal | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     | Xc₄ |     |
+| Gy | 16    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
+| D  | 17    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  D₂ |  D₃ |     |  D₅ |
+| Fj | 18    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◻◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Fj₂ |     |     | Fj₅ |
+| O  | 19    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◻◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |  O₃ |     |  O₅ |
+| C  | 20    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◻◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  C₂ |     |     |  C₅ |
+| E  | 21    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◻ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|  E₂ |     |     |  E₅ |
+| A  | 22    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |  A₄ |  A₅ |
+| Aw | 23    | nonmetal | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◻ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
+| Oc | 24    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
+| Nb | 25    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| Nb₂ | Nb₃ | Nb₄ | Nb₅ |
+| Xk | 26    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     | Xk₃ | Xk₄ | Xk₅ |
+| Ic | 27    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
+| Yp | 28    | nonmetal | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
+| Jx | 29    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
+| Hb | 30    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | Hb₅ |
+| At | 31    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢| At₂ |     |     | At₅ |
+| Ny | 32    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
+| Pw | 33    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
+| Gk | 34    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
+| Qi | 35    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | Qi₅ |
+| Xy | 36    | nonmetal | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
+| Gq | 37    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
+| Bt | 38    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢|     |     |     |     |
+| H  | 39    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢|     |     |     |     |
+| U  | 40    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢|     |     |     |     |
+| Sq | 41    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢|     |     |     |     |
+| Ua | 42    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢| --- | --- | --- | --- |
 
 2025-02-01 Feb.Sat 22:55:06
 [c] What *₅ molecules have been produced? Checking now.
@@ -967,6 +1046,12 @@ These worked:
 
 [r] Try Nb₄
  54 25 Nb + 54 25 Nb + 54 25 Nb + 54 25 Nb + 400 => Nb₄(Nb-54,Nb-54,Nb-54,Nb-54) <---SUCESS using 158.48
+
+[ ] Try Nb₅
+ 54 25 Nb + 54 25 Nb + 54 25 Nb + 200 => Nb₃(Nb-54,Nb-54,Nb-54)
+
+[r] Try Nb₅
+ 54 25 Nb + 54 25 Nb + 54 25 Nb + 54 25 Nb + 54 25 Nb + 200 => Nb₅(Nb-54,Nb-54,Nb-54,Nb-54,Nb-54)
 
 [r] Try for Xk₄
 [r]  5  3 Cq + 50 23 Aw +  910 => 55 26 Xk
@@ -4204,7 +4289,8 @@ Similar situation with OTOMRO 20392:
 
 [c] Investigate how we could get those to come out without auto-reacting
 
-2025-01-19 Jan.Sun 19:22:39 [ ] Realized you can possibly react more than 5 otoms if you do it straight from the contract on shapescan so I should try that.
+2025-01-19 Jan.Sun 19:22:39 [x] Realized you can possibly react more than 5 otoms if you do it straight from the contract on shapescan so I should try that. I'm afraid of breaking something though. Also if it worked, then my parser would have like 1 reaction with more than 5 inputs and wouldn't render the table properly.
+UPDATE: it appears that won't work as there is a read function reactionLengthLimit() that returns "5" so that squashes that possibility.
 
 2025-01-19 Jan.Sun 17:59:59 merged the new code in otom_decay_reactions.pl into the original script otom_reactions.pl
 
