@@ -1,3 +1,48 @@
+2025-02-10 Feb.Mon 16:29:00 [ ] I'm putting the data from these OTOMROs that are missing from the Reactor log exports into my parser:
+
+missing OTOMROs:
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7151
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7152
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7153
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7158
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7159
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7160
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7161
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7162
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7163
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7164
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7165
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7166
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7167
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7168
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7169
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7170
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7171
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7172
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7173
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7174
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7175
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7176
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7177
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/8361
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/8725
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/8726
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/8727
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/8728
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/8729
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/8730
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/11758
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/11759
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/11760
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/11761
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/11762
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/12581
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/12582
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/12583
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/12591
+https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/12592
+
+
 2025-02-10 Feb.Mon 12:19:53 [ ] That's weird and should be pondered. I tried making Xl₄ with 4 Xl-11 inputs. It made 2 Xl₂ molecules. WTF? Looking at the history of txs it looks like the only times it succeeded to make Xl₄ was when the reaction attempted to do 5 Xl-11 inputs. Whats the mechanism that causes it to work that way?
 
 2025-02-09 Feb.Sun 22:44:53 [ ] I want to grab the data for those missing 40 txs and just hardwire them into my parser script, until they are resolved at least.
