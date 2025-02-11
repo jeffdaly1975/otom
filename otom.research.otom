@@ -1,3 +1,74 @@
+2025-02-11 Feb.Tue 12:58:58 WHAT IS GOING ON? I'm looking at OTOMRO 7163 (https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7163)
+
+The OTOMRO page says its: Gy + Gy + Fw + M + M
+
+initiateReaction: https://shapescan.xyz/tx/0x1b780ad18bfd4d18292d2c63e5b659af31a7bad12bb1c7651631db7dc7912e4f
+analyseReactions: https://shapescan.xyz/tx/0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49
+
+
+initiateReaction:
++------------------------------------------------------------------------------------------------------------------------
+|Interacted with contract: Reactor
+|Tokens transferred:
+| 0xBC...016c Reactor for token ID 14005511400042620777680147375153742749049681783959082269863965521481989449752 of OTOM
+| 0xBC...016c Reactor for token ID 14005511400042620777680147375153742749049681783959082269863965521481989449752 of OTOM
+| 0xBC...016c Reactor for token ID 74924510248118285722950210054328651618573971670356476772557035034381167539577 of OTOM
+| 0xBC...016c Reactor for token ID 41531482708453860552959019439525500162618454987803772582079372108437618663362 of OTOM
+| 0xBC...016c Reactor for token ID 41531482708453860552959019439525500162618454987803772582079372108437618663362 of OTOM
+|
+|Tokens minted
+|Null: 0x000...000 0xBC...016c for token ID 7163 of Otoms Reaction Outputs (OTOMRO)
+|
+|Tokens burnt
+|0xBC...016c Null: 0x000...000 for 40 NRG
++------------------------------------------------------------------------------------------------------------------------
+
+analyseReactions:
++------------------------------------------------------------------------------------------------------------------------
+|Interacted with contract Reactor
+|Tokens minted
+|Null: 0x000...000 0xBC...016c for token ID 11350399514319925547596747700592443886400309791910872050748641599542235749470 of OTOM
+|Null: 0x000...000 0xBC...016c for token ID 11350399514319925547596747700592443886400309791910872050748641599542235749470 of OTOM
+|Null: 0x000...000 0xBC...016c for token ID 50444545590099464131310122008664691427341909761014158709710203487202153226455 of OTOM
+|Null: 0x000...000 0xBC...016c for token ID 50444545590099464131310122008664691427341909761014158709710203487202153226455 of OTOM
+|Null: 0x000...000 0xBC...016c for token ID 106624926747223049519220119312111730227915948221279669070037098580068907874421 of OTOM
+|
+|Tokens burnt
+|Reactor Null: 0x000...000 for token ID 11350399514319925547596747700592443886400309791910872050748641599542235749470 of OTOM
+|Reactor Null: 0x000...000 for token ID 11350399514319925547596747700592443886400309791910872050748641599542235749470 of OTOM
+|Reactor Null: 0x000...000 for token ID 106624926747223049519220119312111730227915948221279669070037098580068907874421 of OTOM
+|Reactor Null: 0x000...000 for token ID 106624926747223049519220119312111730227915948221279669070037098580068907874421 of OTOM
+|Reactor Null: 0x000...000 for token ID 106624926747223049519220119312111730227915948221279669070037098580068907874421 of OTOM
+|[View all]
++------------------------------------------------------------------------------------------------------------------------
+
+TAKE NOTE that it has the [View all] link which happens when someone analyses more than 1 reaction at once. I've looked at hundreds of these pages like this.
+I've never seen a situation where the analyseReactions page shows the completely wrong minted/burned tokens. Those are from OTOMRO 7159 not 7163
+
+I had to click the 'View all' link and on that page it listed data for OTOMROs 7167, 7162, 7160, 7159 and 7163 but for the first time ever I noticed there were 2 pages and had to click to the next page. Is it that rare for it to happen that it needed 2 pages? I've never noticed that before.
+From these pages I was able to see that the correct data is:
++------------------------------------------------------------------------------------------------------------------------
+|Token burning
+|Gy-34∙
+|Gy-34∙
+|Fw-25⁻
+|M-20∙ 
+|M-20∙ 
+|	
+|Token minting
+|Gy-34∙
+|Gy-34∙
+|Pt-25ª
+|M-20∙ 
+|M-20∙ 
+|38 NRG
++------------------------------------------------------------------------------------------------------------------------
+
+
+
+2025-02-11 Feb.Tue 11:04:46 This is an interesting reaction.  OTOMRO 7159: Pt-26∙ + Pt-26∙ + Zq-32⁻ + Zq-32⁻ + Zq-32⁻ => + 40 => Pt-26 + Pt-26 + Xc-32 + Xc-32 + Zq-32 + 38
+The two Zq-32 decayed to Xc-32 using exactly 1 energy each. That's interesting to note.
+
 2025-02-10 Feb.Mon 16:29:00 [ ] I'm putting the data from these OTOMROs that are missing from the Reactor log exports into my parser:
 
 missing OTOMROs:
