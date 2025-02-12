@@ -1,3 +1,16 @@
+2025-02-12 Feb.Wed 00:11:01 INteresging.  Xl-10ª likes to fission into W-4∙ and Cq-6∙. But the reaction type depends on how much you put in. [0 .. 250] its decay and [300 .. 5000 ] its nuclear. Unless my parser is wrong. Which could be the case! [ ] Check on that
+| Xl-10ª  +    0 =>   W-4 + Cq-6   +     0.00 | using    0.00 | decay   |
+| Xl-10ª  +  250 =>   W-4 + Cq-6   +   237.50 | using   12.50 | decay   |
+
+| Xl-10ª  +  300 =>   W-4 + Cq-6   +     0.19 | using  299.81 | nuclear |
+| Xl-10ª  + 5000 =>   W-4 + Cq-6   +  4465.19 | using  534.81 | nuclear |
+
+[ ] I wonder what others are like that. Could I find a search pattern? 
+    [ ] maybe I need to add a sorted list to the %db.
+    [ ] make sure I'm not obliterating keys by having something internal that relies on a sorted value which might overwrite or mess up where A + B + C is treated different for outputs than B + C + A. But might be useful to also recognize with an internal sorted list. IDK
+
+
+
 2025-02-11 Feb.Tue 22:06:00 This is weird. OTOMRO 7175 has inputs 'M-20∙ + Xl-9⁺ + Xl-9⁺ + S-26ª + Ju-1∙ + 200' and the output is one token, token id 60263506574334557738060532335864522153026116305230990064358530974357260610224 but the shapescan page for it returns 404. Huh?
 https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/60263506574334557738060532335864522153026116305230990064358530974357260610224
 

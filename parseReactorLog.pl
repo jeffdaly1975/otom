@@ -1825,6 +1825,10 @@ if (@reaction_types){
 
 print STDERR "DEBUG: before sorting reaction_output_list=(". join(",",@reaction_output_list) .")\n";
 
+ # [ ]Should i even be sorting it? I can't tell
+ #    [ ] Try one with and one with out 
+ #    [ ] compare outputs.
+
  # here we use the Schwartzian Transform to sort the output otoms by proton mass order,
  # using the %sortorder we created at the beginning. If its a molecule, thats not in the
  # %sortorder hash so just use $maxkey as the sort index
@@ -1882,7 +1886,7 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
    $db{$otomro}{"analyse_tx"} ;
 
    # save data for recipes
-   # FOR NOW ONLY 1 OR 2 INPUT REACTIONS!
+   # FOR NOW ONLY 1 OR 2 INPUT REACTIONS! [ ] At some point I need to consider removing this limit
    if ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) <= 2){
      foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){  
 ###print STDERR "DEBUG: otomro[$otomro] one[$one]\n";
