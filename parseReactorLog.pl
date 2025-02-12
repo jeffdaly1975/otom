@@ -935,294 +935,294 @@ $db{"7163"}
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
-#$db{"7164"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7165"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7166"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7167"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7168"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7169"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7170"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7171"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7172"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7173"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7174"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7175"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7176"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"7177"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"8361"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
-#$db{"8725"}
-#      = {
-#          'otoms_in'       => '',
-#          'otoms_in_list'  => [ ],
-#          'energy_in'      => 0,
-#
-#          'otoms_out'      => '',
-#          'otoms_out_list' => [ ],
-#          'protons_in'     => 0,
-#          'protons_out'    => 0,
-#          'energy_out'     => 0,
-#
-#          'initiate_tx'    => '',
-#          'analyse_tx'     => '',
-#          'type'           => '',
-#          'chemist'        => '',
-#          'subscripts'     => 0,
-#        };
+$db{"7164"}
+      = {
+          'otoms_in'       => 'Nb-54ª + Fw-25⁻',
+          'otoms_in_list'  => [ 'Nb-54', 'Fw-25'],
+          'energy_in'      => 3996,
+
+          'otoms_out'      => 'Xy-79',
+          'otoms_out_list' => ['Xy-79' ],
+          'protons_in'     => 36,
+          'protons_out'    => 36,
+          'energy_out'     => '1630.041516494084817168',
+
+          'initiate_tx'    => '0x5bc87b29c64824bbfff5825d9b64f7e6cd768cdcf453b805a5b07041e06aeef3',
+          'analyse_tx'     => '0x82c0c6abe2fb59ffc85f5044a62a75868c83468598b02afc1c8109500e71f8e7',
+          'type'           => 'nuclear',
+          'chemist'        => '0x42934420b772eD2c77526C7670EE85b9d63F81B8',
+          'subscripts'     => 0,
+        };
+$db{"7165"}
+      = {
+          'otoms_in'       => 'Pq-14⁻ + Dx-15⁺ + W-5∙ + Aw-50∙ + S-25⁺',
+          'otoms_in_list'  => ['Pq-14', 'Dx-15', 'W-5', 'Aw-50', 'S-25' ],
+          'energy_in'      => 200,
+
+          'otoms_out'      => 'Aw-50 + Zz-14 + Zz-15 + SW(S-25>W-5)',
+          'otoms_out_list' => ['Aw-50', 'Zz-14', 'Zz-15', 'SW(S-25>W-5)' ],
+          'protons_in'     => 52,
+          'protons_out'    => 52,
+          'energy_out'     => '175.70269973',
+
+          'initiate_tx'    => '0x2364ed5ec66f0b480ad37bc1e889be9443855f3925743e4965ee4c146451b49d',
+          'analyse_tx'     => '0xb6eae42cca9f71e68feeca9528ac745893c9dcc1b03f20b53026fa89f2c89c86',
+          'type'           => 'chemical, decay',
+          'chemist'        => '0x58B249A73452F624D473459FA084792704e9AE36',
+          'subscripts'     => 0,
+        };
+$db{"7166"}
+      = {
+          'otoms_in'       => 'Fj-37ª + Ju-1∙',
+          'otoms_in_list'  => [ "Fj-37", "Ju-1"],
+          'energy_in'      => 943,
+
+          'otoms_out'      => 'O-38',
+          'otoms_out_list' => [ 'O-38' ],
+          'protons_in'     => 19,
+          'protons_out'    => 19,
+          'energy_out'     => '76.802802910718980911',
+
+          'initiate_tx'    => '0x9011226ad20feee3d2758b4055049907dd346490d74cd5084b95ca65ad8c4052',
+          'analyse_tx'     => '0xf9791cd1d34b339796a0e7471766a3ea000ebc142a1c968614a0aca2d7769bbd',
+          'type'           => 'nuclear',
+          'chemist'        => '0xaaa9ACa0d2AFF48aAB572DE4d24088A80F2aE452',
+          'subscripts'     => 0,
+        };
+$db{"7167"}
+      = {
+          'otoms_in'       => 'Xl-10ª + Xl-10ª + Nb-54ª + Pt-25ª + Pt-25ª',
+          'otoms_in_list'  => [ 'Xl-10', 'Xl-10', 'Nb-54', 'Pt-25', 'Pt-25'],
+          'energy_in'      => 5,
+
+          'otoms_out'      => 'W-4 + Cq-6 + W-4 + Cq-6 + Nb-54 + Pt-25 + Pt-25',
+          'otoms_out_list' => [ 'W-4', 'Cq-6', 'W-4', 'Cq-6', 'Nb-54', 'Pt-25', 'Pt-25'],
+          'protons_in'     => 59,
+          'protons_out'    => 59,
+          'energy_out'     => '4.75',
+
+          'initiate_tx'    => '0x159e0058dbbbfe8be822eb27ebdfd40aa2cd9a234f9cc8c90b590286b8853abb',
+          'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
+          'type'           => 'nuclear',
+          'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
+          'subscripts'     => 0,
+        };
+$db{"7168"}
+      = {
+          'otoms_in'       => 'Ju-2∙ + Ju-1∙ + Ju-1∙ + W-4∙ + Cq-7∙',
+          'otoms_in_list'  => [ 'Ju-2', 'Ju-1', 'Ju-1', 'W-4', 'Cq-7' ],
+          'energy_in'      => 100,
+
+          'otoms_out'      => 'W-4 + Cq-7 + Ju₃(Ju-2,Ju-1>Ju-1)',
+          'otoms_out_list' => [ 'W-4', 'Cq-7', 'Ju₃(Ju-2,Ju-1>Ju-1)'],
+          'protons_in'     => 8,
+          'protons_out'    => 8,
+          'energy_out'     => '92.752246267871456098',
+
+          'initiate_tx'    => '0x3b6d47f81fbe7402d6ce7c287a262f19b62d1f665c043b250adecf8eb34d3f0a',
+          'analyse_tx'     => '0xb6caf98f8b52588d829b017e1a9206ac069e47fe337da359edba794d415938fd',
+          'type'           => 'chemical',
+          'chemist'        => '0x8c976B2d3725FE86443a0D443F71ECBCf297e577',
+          'subscripts'     => 1,
+        };
+$db{"7169"}
+      = {
+          'otoms_in'       => 'Pt-26∙ + Pt-26∙ + Pt-26∙ + Dx-16∙ + Dx-16∙',
+          'otoms_in_list'  => [ 'Pt-26', 'Pt-26', 'Pt-26', 'Dx-16', 'Dx-16'],
+          'energy_in'      => 20,
+
+          'otoms_out'      => 'Pt-26 + Pt-26 + Pt-26 + Dx-16 + Dx-16',
+          'otoms_out_list' => [ 'Pt-26', 'Pt-26', 'Pt-26', 'Dx-16', 'Dx-16'],
+          'protons_in'     => 52,
+          'protons_out'    => 52,
+          'energy_out'     => 19,
+
+          'initiate_tx'    => '0x09e93bea40b9f1f0fcdc76fc6f5a74162b405ec2171e8979c4259997d0076324',
+          'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
+          'type'           => 'none',
+          'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
+          'subscripts'     => 0,
+        };
+$db{"7170"}
+      = {
+          'otoms_in'       => 'Bt-80⁻ + Ju-3∙',
+          'otoms_in_list'  => [  'Bt-80', 'Ju-3' ],
+          'energy_in'      => 9000,
+
+          'otoms_out'      => 'Bt-80 + Ju-3',
+          'otoms_out_list' => [ 'Bt-80', 'Ju-3' ],
+          'protons_in'     => 39,
+          'protons_out'    => 39,
+          'energy_out'     => '8550',
+
+          'initiate_tx'    => '0x2bf451fe26e7dc3cca4a90dad74debb7baff65f3921d9ce008836fdca095fb68',
+          'analyse_tx'     => '0xa98ae9cf4de93a6e30c9790bca7bd74effb02d79490d4241193614e552d254f7',
+          'type'           => 'none',
+          'chemist'        => '0x9CED3bDC0e6ff65C3f072b0b5527184843Ed4eaf',
+          'subscripts'     => 0,
+        };
+$db{"7171"}
+      = {
+          'otoms_in'       => 'Pq-13∙ + Pq-13∙ + Pq-10⁺ + Gy-34∙ + Xc-32∙',
+          'otoms_in_list'  => [ 'Pq-13', 'Pq-13', 'Pq-10', 'Gy-34', 'Xc-32',],
+          'energy_in'      => 20,
+
+          'otoms_out'      => 'Pq-13 + Pq-13 + Xl-10 + Gy-34 + Xc-32',
+          'otoms_out_list' => [ 'Pq-13', 'Pq-13', 'Xl-10', 'Gy-34', 'Xc-32'],
+          'protons_in'     => 49,
+          'protons_out'    => 48,
+          'energy_out'     => 19,
+
+          'initiate_tx'    => '0x5086778bddddf4b4a4ca37b4a7b98e363940fe870efa3cd5f7b4e27fe1124f32',
+          'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
+          'type'           => 'decay',
+          'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
+          'subscripts'     => 0,
+        };
+$db{"7172"}
+      = {
+          'otoms_in'       => 'Xc-31∙ + Xc-34⁻ + Xc-34⁻ + Pm-19∙ + Fj-37ª',
+          'otoms_in_list'  => [ 'Xc-31', 'Xc-34', 'Xc-34', 'Pm-19', 'Fj-37'],
+          'energy_in'      => 20,
+
+          'otoms_out'      => 'Xc-31 + Xc-34 + Xc-34 + Pm-19 + Fj-37',
+          'otoms_out_list' => [ 'Xc-31', 'Xc-34', 'Xc-34', 'Pm-19', 'Fj-37'],
+          'protons_in'     => 72,
+          'protons_out'    => 72,
+          'energy_out'     => 19,
+
+          'initiate_tx'    => '0x5cc25241078a3b6e90ed6882c74f571e6ffd7c4d30b82f7bf8a2be38ad767ccf',
+          'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
+          'type'           => 'none',
+          'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
+          'subscripts'     => 0,
+        };
+$db{"7173"}
+      = {
+          'otoms_in'       => 'W-4∙',
+          'otoms_in_list'  => [ 'W-4'],
+          'energy_in'      => 200,
+
+          'otoms_out'      => 'Ju-2 + Ju-2',
+          'otoms_out_list' => [ 'Ju-2', 'Ju-2' ],
+          'protons_in'     => 2,
+          'protons_out'    => 2,
+          'energy_out'     => '93.122245367616415024',
+
+          'initiate_tx'    => '0x2cc1dce9c6d754c637041680ba1390810922d494706737ccd89fc6f6e8f5b2cc',
+          'analyse_tx'     => '0xe732e3c7187f2a34191f374b92bff5161bdf2013908d9e8a88a3fcfbc2180268',
+          'type'           => 'nuclear',
+          'chemist'        => '0x8c976B2d3725FE86443a0D443F71ECBCf297e577',
+          'subscripts'     => 0,
+        };
+$db{"7174"}
+      = {
+          'otoms_in'       => 'Xl-10ª + Zq-32⁻ + Xl-11∙ + Xc-32∙ + Fw-25⁻',
+          'otoms_in_list'  => [ 'Xl-10', 'Zq-32', 'Xl-11', 'Xc-32', 'Fw-25'],
+          'energy_in'      => 20,
+
+          'otoms_out'      => 'Xc-32 + Xc-32 + Fw-25 + Cq-6 + WXl(W-4>Xl-10)',
+          'otoms_out_list' => ['Xc-32', 'Xc-32', 'Fw-25', 'Cq-6', 'WXl(W-4>Xl-10)' ],
+          'protons_in'     => 50,
+          'protons_out'    => 49,
+          'energy_out'     => '10.36828627',
+
+          'initiate_tx'    => '0xaac2297db734895e6fa8d68a01408fcf23199197af8532f0f2d04d726fbd9fdc',
+          'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
+          'type'           => 'chemical, decay',
+          'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
+          'subscripts'     => 0,
+        };
+$db{"7175"}
+      = {
+          'otoms_in'       => 'M-20∙ + Xl-9⁺ + Xl-9⁺ + S-26ª + Ju-1∙',
+          'otoms_in_list'  => [ 'M-20', 'Xl-9', 'Xl-9', 'S-26', 'Ju-1'],
+          'energy_in'      => 200,
+
+          'otoms_out'      => 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)',
+          'otoms_out_list' => [ 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)'],
+          'protons_in'     => 34,
+          'protons_out'    => 32,
+          'energy_out'     => '162.975019694509967394',
+
+          'initiate_tx'    => '0xb0f84370d644b3e1734aac0dcadc052d92da790169749b7be68dde3397965805',
+          'analyse_tx'     => '0x592c50cdab16af0c9303ea0a554bda2c873b73480dc5868e43b32549a2d7f693',
+          'type'           => 'chemical, decay',
+          'chemist'        => '0x58B249A73452F624D473459FA084792704e9AE36',
+          'subscripts'     => 1,
+        };
+$db{"7176"}
+      = {
+          'otoms_in'       => 'Xl-11∙ + Gy-34∙ + Fw-25⁻ + M-20∙ + Nb-54ª',
+          'otoms_in_list'  => [ 'Xl-11', 'Gy-34', 'Fw-25', 'M-20', 'Nb-54' ],
+          'energy_in'      => 0,
+
+          'otoms_out'      => 'Xl-11 + Gy-34 + Pt-25 + M-20 + Nb-54',
+          'otoms_out_list' => ['Xl-11', 'Gy-34', 'Pt-25', 'M-20', 'Nb-54' ],
+          'protons_in'     => 67,
+          'protons_out'    => 68,
+          'energy_out'     => 0,
+
+          'initiate_tx'    => '0xbd36fde1477deb0c5117b854f1271ed9af1136698b247baf7108a149175c2996',
+          'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
+          'type'           => 'decay',
+          'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
+          'subscripts'     => 0,
+        };
+$db{"7177"}
+      = {
+          'otoms_in'       => ' Ju-1∙ + Ju-1∙ + Ju-1∙',
+          'otoms_in_list'  => [ 'Ju-1', 'Ju-1', 'Ju-1'],
+          'energy_in'      => 5,
+
+          'otoms_out'      => 'Ju₃',
+          'otoms_out_list' => ['Ju₃' ],
+          'protons_in'     => 3,
+          'protons_out'    => 3,
+          'energy_out'     => '3.0641847',
+
+          'initiate_tx'    => '0xe37c39b6ab4923ce8591505f4f48fda29b768778469503b4bd182d3a2f8d4811',
+          'analyse_tx'     => '0x1a212acb9f570443da31212c4259b1dfc64af4af75dfb1332c74d5cf71846384',
+          'type'           => 'nuclear',
+          'chemist'        => '0x4B92e36CeD303EEB59Bd6c5daC555b2be13Fe2B6',
+          'subscripts'     => 1,
+        };
+$db{"8361"}
+      = {
+          'otoms_in'       => 'Xc-31∙ + Xc-31∙',
+          'otoms_in_list'  => [ 'Xc-31', 'Xc-31'],
+          'energy_in'      => 1254,
+
+          'otoms_out'      => 'Xc-31 + Xc-31',
+          'otoms_out_list' => [ 'Xc-31','Xc-31'],
+          'protons_in'     => 30,
+          'protons_out'    => 30,
+          'energy_out'     => '1191.299999999999954525',
+
+          'initiate_tx'    => '0x84a98e2b962fe85a95e5b47af4f7d3ca7c38d52187f86ef010a17966498839e9',
+          'analyse_tx'     => '0x27a38c78d6ea5065e67bf8996493f7971146909b9a4ab99f745e12be278bd74f',
+          'type'           => 'none',
+          'chemist'        => '0xa4Ac3321fD639a7e2b53dA62897955D920c97012',
+          'subscripts'     => 0,
+        };
+$db{"8725"}
+      = {
+          'otoms_in'       => 'Fj-37ª + Fj-37ª',
+          'otoms_in_list'  => [ 'Fj-37', 'Fj-37'],
+          'energy_in'      => 3000,
+
+          'otoms_out'      => 'Xy-74',
+          'otoms_out_list' => [ 'Xy-74' ],
+          'protons_in'     => 36,
+          'protons_out'    => 36,
+          'energy_out'     => '501.356493217025388276',
+
+          'initiate_tx'    => '0x1827ad6a3467941a790cf0b1129b142d01ac91825b0cd60efe6591d284849e9b',
+          'analyse_tx'     => '0x6df0a155eb4e51baa0b375cb2ad1f1e508569737ce9f1b07d912da6fb4cbed50',
+          'type'           => 'nuclear',
+          'chemist'        => '0x52d11c3Ff033231F74740873917A3c854e77D883',
+          'subscripts'     => 0,
+        };
 #$db{"8726"}
 #      = {
 #          'otoms_in'       => '',

@@ -1,3 +1,8 @@
+2025-02-11 Feb.Tue 22:06:00 This is weird. OTOMRO 7175 has inputs 'M-20∙ + Xl-9⁺ + Xl-9⁺ + S-26ª + Ju-1∙ + 200' and the output is one token, token id 60263506574334557738060532335864522153026116305230990064358530974357260610224 but the shapescan page for it returns 404. Huh?
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/60263506574334557738060532335864522153026116305230990064358530974357260610224
+
+Visiting Highlight.xyz I found it is molecule MAf₂SJu
+
 2025-02-11 Feb.Tue 12:58:58 WHAT IS GOING ON? I'm looking at OTOMRO 7163 (https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7163)
 
 The OTOMRO page says its: Gy + Gy + Fw + M + M
@@ -1192,7 +1197,7 @@ These worked:
 [r] Try Nb₄
  54 25 Nb + 54 25 Nb + 54 25 Nb + 54 25 Nb + 400 => Nb₄(Nb-54,Nb-54,Nb-54,Nb-54) <---SUCESS using 158.48
 
-[ ] Try Nb₅
+[ ] Try Nb₃
  54 25 Nb + 54 25 Nb + 54 25 Nb + 200 => Nb₃(Nb-54,Nb-54,Nb-54)
 
 [r] Try Nb₅
@@ -1767,7 +1772,8 @@ insert <C-k> 5s  ->  ₅
 
 2025-01-31 Jan.Fri 11:37:28 UI improvement idea: what if you could simply double-click an otom from the app and it would instantly move to the current lab interface. And if you double-clicked one from the lab it would get sent back to the pile?
 
-2025-01-31 Jan.Fri 11:23:41 Thats an interesting fission! I don't think I've seen such an unbalanced split
+2025-01-31 Jan.Fri 11:23:41 Thats an interesting fission! I don't think I've seen such an unbalanced split. [ ] Think on this.
+Also note that Ju-1∙ + At-61ª + 1800 =>  Cq-6 + Jx-56, which means it probably makes Ny-62 but it immediately decays by fission into those 2 products.
  Ny-62ª +     5000 =>   Cq-6 + Jx-56 +    4750.00 using 250.00
 
 [c] What will Ny-61 split into? Maybe undiscovered Jx-55 
