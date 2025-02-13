@@ -6,6 +6,18 @@
 [ ] 79 41 Sq⁺(0.753) + 15000 => ? O-36+Aw-43
 
 
+[r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+[r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+[r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+[r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+[r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+[r] 34 18 Fj + 50 23 Aw + 2713 => 84 41 Sq
+[r] 34 18 Fj + 50 23 Aw + 2706 => 84 41 Sq
+[r] 34 18 Fj + 50 23 Aw + 2706 => 84 41 Sq
+[r] 34 18 Fj + 50 23 Aw + 2706 => 84 41 Sq
+[r] 34 18 Fj + 50 23 Aw + 2706 => 84 41 Sq
+[r] 84 41 Sq + 84 41 Sq + 84 41 Sq + 84 41 Sq + 84 41 Sq + 500 =>  Sq₅ <--SUCCESS
+
 2025-02-12 Feb.Wed 16:21:00 Finished transcribing the data from 40 missing OTOMROs to my parseReactorLog.pl script.
 
 2025-02-12 Feb.Wed 13:53:14 The Otom.xyz site is acting up. I've done some reactions and see no Unanalysed Reaction Outputs objects show up. Reloaded and still no. It happend like 30 minutes ago and I mentioned it on the otom discord. Quixuote had the same thing happen. Waited 10 minutes and they showed up. Now its happening again. Ugh this is frustrating.
@@ -1141,7 +1153,7 @@ MOLECULES OF FIVE TABLE
 
 Here's a table of molecules seen created so far of just one otom type:
 ⎥◼◼◻ ◼◻⎢
-MOLECULES OF ONE KIND OF OTOM (* indicates I have one)
+MOLECULES OF ONE KIND OF OTOM (* indicates I have one) 
 |otom|protons| Series   | shells                                                             |  *₂ |  *₃ |  *₄ |  *₅ |
 | Ju |  1    | alkaline | ⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- |*Ju₃ | --- | --- |
 | W  |  2    | nonmetal | ⎥◼◼◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- |* W₃ | --- | --- | (W₅ not possible since there were 26 attempts even some with 5 stable isotopes)
@@ -1183,7 +1195,7 @@ MOLECULES OF ONE KIND OF OTOM (* indicates I have one)
 | Bt | 38    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢|     |     |     | [ ] |
 | H  | 39    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢|     |     |     |     |
 | U  | 40    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢|     |     |     |     |
-| Sq | 41    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢|     |     |     | [ ] |
+| Sq | 41    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢|     |     |     |*Sq₅ |
 | Ua | 42    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢| --- | --- | --- | --- |
 
 noble Series cannot make molecules

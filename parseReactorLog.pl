@@ -1510,6 +1510,7 @@ foreach $line (<>){
   my $reaction_inuts="";
 ##my $reaction_output_string="";
   my @reaction_output_list=();
+  my @reaction_output_list_sorted=();
   my $energy_input=0;
   my $chemist="";
   my $output_protons=0;
@@ -1518,9 +1519,10 @@ foreach $line (<>){
 
   chomp $line;
 
-  if ($line =~ /^(0x[^,]+),(\d+),/){
+  if ($line =~ /^(0x[^,]+),(\d+),(\d+),/){
     $txhash=$1;
     $txindex=$2;
+    $blocknumber=$3;
   } elsif ($line =~ /^TxHash,Index/){
     next; #skip header
   }else{
@@ -1538,7 +1540,7 @@ foreach $line (<>){
 # strip off some leading stuff but use it to ensure we don't duplicate processing for duplicate input like when multiple logs are imported
   $line =~ s/^[^,]+,//; # remove the tx hash
   $line =~ s/^[^,]+,//; # remove the index
-  $line =~ s/^[^,]+,//; # remove the block number
+  $line =~ s/^[^,]+,//; # remove the block number # [ ] SHOULD I BE TRACKING THE BLOCK NUMBER? FOR ENSURING order of time in which things were discovered
   $line =~ s/^[^,]+,//; # remove the block hash
   $line =~ s/^[^,]+,//; # remove the contract address
 
@@ -1590,11 +1592,16 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 # The thing is, I like sorting the inputs so I can take the huge output file and sort them with the same inputs showing up in lines together.
 # Problem there is that it appears input order matters- Morpheus said he thinks the top otom in a stack like a *₅ is the last one in the input
 # Reactor window. That implies order matters. Need to investigate further.
+
+# DO IT: [c] WITH    SORTING and save those files stdout_sorted and stderr_sorted and newrecipes_sorted.otom and dumped_sorted.txt
+#      : [c] WITHOUT SORTING and save those files stdout        and stderr        and newrecipes.otom and dumped.txt
+# Honestly it seems better with the sorting.
 #
+print STDERR "=====> THIS ONE HAS THE SORTING OFF!!!!!!!\n";
   @otoms_in =
-#             map { $_->[0] }
-#             sort{ $a->[1] <=> $b->[1] }
-#             map { [$_, $sortorder{$_} ] }
+#             map { $_->[0] }                  # This
+#             sort{ $a->[1] <=> $b->[1] }      # does
+#             map { [$_, $sortorder{$_} ] }    # the magic
               map { $hexdict{$_}; } 
               @otoms_in;
 
@@ -1616,14 +1623,14 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
   }
 
 # print "initiateReaction OTOMRO $otomro CHEMIST $chemist INPUT NRG $energy_input INPUTS: ".  join(" + ",@otoms_in) . "\n";
-  $db{$otomro}{"chemist"}    = $chemist;
-  $db{$otomro}{"energy_in"}  = $energy_input;
+  $db{$otomro}{"chemist"}       = $chemist;
+  $db{$otomro}{"energy_in"}     = $energy_input;
 
-  $db{$otomro}{"otoms_in"}   = join(" + ", map { sprintf("%5s%s",$_,$decaytype{$_}) } @otoms_in);
+  $db{$otomro}{"otoms_in"}      = join(" + ", map { sprintf("%5s%s",$_,$decaytype{$_}) } @otoms_in);
   $db{$otomro}{"otoms_in_list"} = [@otoms_in];
-  $db{$otomro}{"protons_in"} = $input_protons;
-  $db{$otomro}{"initiate_tx"}= $txhash;
-
+  $db{$otomro}{"protons_in"}    = $input_protons;
+  $db{$otomro}{"initiate_tx"}   = $txhash;
+  $db{$otomro}{"blocknumber"}   = $blocknumber;
 
 }elsif ($line =~ /^0x0000000000000000000000000000000000000000000000000000000000000020/){
 
@@ -1823,7 +1830,6 @@ if (@reaction_types){
 }
 
 
-print STDERR "DEBUG: before sorting reaction_output_list=(". join(",",@reaction_output_list) .")\n";
 
  # [ ]Should i even be sorting it? I can't tell
  #    [ ] Try one with and one with out 
@@ -1832,23 +1838,28 @@ print STDERR "DEBUG: before sorting reaction_output_list=(". join(",",@reaction_
  # here we use the Schwartzian Transform to sort the output otoms by proton mass order,
  # using the %sortorder we created at the beginning. If its a molecule, thats not in the
  # %sortorder hash so just use $maxkey as the sort index
- @reaction_output_list = map { $_->[0] }
+ @reaction_output_list_sorted
+                       = map { $_->[0] }
 			 sort{ $a->[1] <=> $b->[1] }
 			 map { [$_, $sortorder{$_} || $maxkey ] }
 			 @reaction_output_list ;
 
-print STDERR "DEBUG: AFTER  sorting reaction_output_list=(". join(",",@reaction_output_list) .")\n";
+print STDERR "DEBUG: as read order: reaction_output_list       =(". join(",",@reaction_output_list       ) .")\n";
+print STDERR "DEBUG: sorted order:  reaction_output_list_sorted=(". join(",",@reaction_output_list_sorted) .")\n";
 
 
 #printf "OTOMRO %8d |%-70.70s | %10.2f | %s |\n",$otomro, $reaction_output_string, $energy_returned, $reaction_string;
- $db{$otomro}{"otoms_out_list"} = [ @reaction_output_list ]; # need to do it this way with brackets around the list so I get a copy of the list not just a reference to the list
-print STDERR "DEBUG: added to db{$otomro}{otoms_out_list}=" . join(',',@reaction_output_list) ."\n";
- $db{$otomro}{"otoms_out"}   =  join " + ",@reaction_output_list;
- $db{$otomro}{"subscripts"}  = $subscript_count;
- $db{$otomro}{"protons_out"} = $output_protons;
- $db{$otomro}{"energy_out"}  = $energy_returned;
- $db{$otomro}{"type"}        = $reaction_string;
- $db{$otomro}{"analyse_tx"}  = $txhash;
+ $db{$otomro}{"otoms_out_list"}        = [ @reaction_output_list        ]; # need to do it this way with brackets around the list so I get a copy of the list not just a reference to the list
+ $db{$otomro}{"otoms_out_list_sorted"} = [ @reaction_output_list_sorted ];
+ $db{$otomro}{"otoms_out"}             =  join " + ",@reaction_output_list;
+ $db{$otomro}{"otoms_out_sorted"}      =  join " + ",@reaction_output_list_sorted;
+ $db{$otomro}{"subscripts"}            = $subscript_count;
+ $db{$otomro}{"protons_out"}           = $output_protons;
+ $db{$otomro}{"energy_out"}            = $energy_returned;
+ $db{$otomro}{"type"}                  = $reaction_string;
+ $db{$otomro}{"analyse_tx"}            = $txhash;
+ $db{$otomro}{"blocknumber"}           = $blocknumber;
+
 }else{
   # Not a call to initiateReaction() nor analyseReactions() so skip it
   if ($line =~ /^(0x\w{64})/){
@@ -1900,6 +1911,7 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
         $recipes{$one}{$reaction_key_string}{otomro}=$otomro;
         $recipes{$one}{$reaction_key_string}{nrg_in}=$rounded_energy_input;
       }
+#[ ] I should be capturing the lower and upper limits.
      }
    }
 
