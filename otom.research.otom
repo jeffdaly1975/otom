@@ -1,3 +1,13 @@
+
+[r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+[r] 13  7 Zz + 34 18 Fj + 1151 => 47 25 Nb
+[r] 47 25 Nb +            3684 => 22 12 Pt + 25 13  S
+[r] 22 12 Pt + 57 30 Hb + 2123 => 79 41 Sq
+[ ] 79 41 Sq⁺(0.753) + 15000 => ? O-36+Aw-43
+
+
+2025-02-12 Feb.Wed 16:21:00 Finished transcribing the data from 40 missing OTOMROs to my parseReactorLog.pl script.
+
 2025-02-12 Feb.Wed 13:53:14 The Otom.xyz site is acting up. I've done some reactions and see no Unanalysed Reaction Outputs objects show up. Reloaded and still no. It happend like 30 minutes ago and I mentioned it on the otom discord. Quixuote had the same thing happen. Waited 10 minutes and they showed up. Now its happening again. Ugh this is frustrating.
 [ ] Was trying to make Zq-29 otoms to attempt to make Zq₃ and Zq₄
 
@@ -159,7 +169,7 @@ From these pages I was able to see that the correct data is:
 2025-02-11 Feb.Tue 11:04:46 This is an interesting reaction.  OTOMRO 7159: Pt-26∙ + Pt-26∙ + Zq-32⁻ + Zq-32⁻ + Zq-32⁻ => + 40 => Pt-26 + Pt-26 + Xc-32 + Xc-32 + Zq-32 + 38
 The two Zq-32 decayed to Xc-32 using exactly 1 energy each. That's interesting to note.
 
-2025-02-10 Feb.Mon 16:29:00 [ ] I'm putting the data from these OTOMROs that are missing from the Reactor log exports into my parser:
+2025-02-10 Feb.Mon 16:29:00 [c] I'm putting the data from these OTOMROs that are missing from the Reactor log exports into my parser:
 
 missing OTOMROs:
 https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD/instance/7151
@@ -210,7 +220,7 @@ HOWEVER----I see that OTOMRO 8730 which is missing from the LOGS, was analysed i
 
 2025-02-10 Feb.Mon 12:19:53 [ ] That's weird and should be pondered. I tried making Xl₄ with 4 Xl-11 inputs. It made 2 Xl₂ molecules. WTF? Looking at the history of txs it looks like the only times it succeeded to make Xl₄ was when the reaction attempted to do 5 Xl-11 inputs. Whats the mechanism that causes it to work that way?
 
-2025-02-09 Feb.Sun 22:44:53 [ ] I want to grab the data for those missing 40 txs and just hardwire them into my parser script, until they are resolved at least.
+2025-02-09 Feb.Sun 22:44:53 [c] I want to grab the data for those missing 40 txs and just hardwire them into my parser script, until they are resolved at least.
 
 2025-02-09 Feb.Sun 21:05:08 I took Kjetil's latest stability chart which he provided to the discord after I asked for it, and I updated my file "isotopes image from Kjetil with uknknown meaning.txt" with the missing information.
 Then I renamed it to Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
@@ -1886,22 +1896,29 @@ Also note that Ju-1∙ + At-61ª + 1800 =>  Cq-6 + Jx-56, which means it probabl
 [r] 10  6 Pq + 51 27 Ic + 1040 => 61 32 Ny
 [r] 61 32 Ny +             500 => ?          HMM. IT JUST DECAYED TO At-61
 
-[ ] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
-[ ]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
-[ ]  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
-[ ] 10  6 Pq + 51 27 Ic + 1040 => 61 32 Ny
-[ ] 61 32 Ny +            7000 => ?
+[r] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
+[r]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
+[r]  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
+[r] 10  6 Pq + 51 27 Ic + 1017 => 61 32 Ny
+[x] 61 32 Ny +            5000 => ?          HMM. IT JUST DECAYED TO At-61 usings 4750 NRG
+
+[r] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
+[r]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
+[r]  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
+[r] 10  6 Pq + 51 27 Ic + 1017 => 61 32 Ny
+[r] 61 32 Ny +           10000 => DXc(D-33,Xc-28)  SUCCESS but not sure I want to spend all that time & NRG to see how much it takes to make the isotopes rather than a molecule
+
 
 [ ] Need to try more variations of NRG input. Ny-* likes to make DXc between 5000-10000. I bet it makes intermediates just below those DXc outputs
 
 Here are some easy to make Ny-* to try finding fission outputs 
 [r] 30 15 Xc + 37 17  D + 2953 => 67 32 Ny
-[ ] 31 15 Xc + 37 17  D + 2312 => 68 32 Ny
-[ ] 19  9 Pm + 50 23 Aw + 2787 => 69 32 Ny
-[ ] 37 17  D + 34 15 Xc + 2253 => 71 32 Ny
+[r] 31 15 Xc + 37 17  D + 2295 => 68 32 Ny
+[ ] 19  9 Pm + 50 23 Aw + 2742 => 69 32 Ny no reaction
+[ ] 37 17  D + 34 15 Xc + 2250 => 71 32 Ny
 
 [r] 67 32 Ny +          + 7400 => ?
-[ ] 68 32 Ny +          + 6700 => ?
+[r] 68 32 Ny +          + 6700 => ? no reaction
 [ ] 69 32 Ny +          + 6700 => ?
 [ ] 71 32 Ny +          + 6700 => ?
 [ ] 72 32 Ny +          + 7000 => ?
@@ -1944,7 +1961,7 @@ and theres the file "isotopes image from Kjetil with uknknown meaning.txt" inver
   00011 |            |            |            |            |            |            |*Zz-18*0.08 |
 
 
-Those marked with an asterisk have yet to be discovered. Some have a Stability value with 2 decimal places. As I add new ones to the table, I put in the value with 3 decimal places. I don't knoa why.
+Those marked with an asterisk have yet to be discovered. Some have a Stability value with 2 decimal places. As I add new ones to the table, I put in the value with 3 decimal places. I don't know why.
 There are question marks ? in places where it was not discernable or cut off on the image Kjetil posted. I should just archive it and rename the file for storing the information in this view.
 [ ] Do that
 
@@ -1972,11 +1989,13 @@ There are question marks ? in places where it was not discernable or cut off on 
 
 [ ] do each of those have a threshold where instead of XlAf it fissions into those 2 separate otoms?
 
-[ ] Pm-17  +     970 => ?
+[r] Pm-17  +     970 => ?
 
-[ ] Pm-18  +     880 => ?
+[r] Pm-18  +     880 => ? 8  4 Af + 10  5 Xl
 
-[ ] Pm-19  +    1670 => ?
+[r] Pm-19  +    1670 => ? XlAf
+[f] Pm-19  +    1300 => ? nothing
+[r] Pm-19  +    1500 => ? 9  4 Af + 10  5 Xl
 
 [ ]  5  2  W + 15  6 Pq +  707 => 20  9 Pm
 [ ] Pm-20  +    1180 => ?
