@@ -319,6 +319,7 @@ my @otom_isotopes = (
  [  "H-80", "80 39  H", 39,      109591835589092574055387600581053967597172401192920726309211621745538151583674, "stable",  "1.907" ],
  [  "H-81", "81 39  H", 39,      107998095917348500071838404916093062058391728936032056035250193738071220511026, "beta+" ,  "0.883" ],
  [  "H-82", "82 39  H", 39,      101887278478650560071630066501583374918221909694541112567526177671283696560731, "stable",  "1.916" ],
+ [  "U-77", "77 40  U", 40,       80208761829410857019562512949342321687846549513711446602791659410207977883078, "beta+" ,  "0.677" ],
  [  "U-78", "78 40  U", 40,       47925669942168651680155715033658708057484412425991717393838523715260661039849, "beta+" ,  "0.745" ],
  [  "U-79", "79 40  U", 40,      100877704163099847460513367523158582210908485664886702522002306392544228691367, "beta+" ,  "0.786" ],
  [  "U-80", "80 40  U", 40,       14784207114945568976730851314940771317913111782363185150348264455133607137263, "beta+" ,  "0.829" ],
@@ -1297,7 +1298,7 @@ $db{"8729"}
         };
 $db{"8730"}
       = {
-          'otoms_in'       => 'W-4∙ + Fw-25⁻',
+          'otoms_in'       => '  W-4∙ + Fw-25⁻',
           'otoms_in_list'  => [ 'W-4', 'Fw-25'],
           'energy_in'      => 25,
 
@@ -1597,7 +1598,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 #      : [c] WITHOUT SORTING and save those files stdout        and stderr        and newrecipes.otom and dumped.txt
 # Honestly it seems better with the sorting.
 #
-print STDERR "=====> THIS ONE HAS THE SORTING OFF!!!!!!!\n";
+###print STDERR "DEBUG: =====> THIS ONE HAS THE SORTING OFF!!!!!!!\n";
   @otoms_in =
 #             map { $_->[0] }                  # This
 #             sort{ $a->[1] <=> $b->[1] }      # does
@@ -1679,7 +1680,7 @@ print STDERR "=====> THIS ONE HAS THE SORTING OFF!!!!!!!\n";
     die "analyseReactions: OTOMRO $otomro: did not find matches for OTOM outputs\nINPUT: $hold_the_line\n";
   }
 
-print STDERR "DEBUG: matches found: " . scalar(@matches) ."\n";
+###print STDERR "DEBUG: matches found: " . scalar(@matches) ."\n";
   foreach $m (@matches){
 
      $char_hex_string= substr $m,0,2,"";     # remove the hexadecimal count of base64 encoded chars
@@ -1691,15 +1692,15 @@ print STDERR "DEBUG: matches found: " . scalar(@matches) ."\n";
 
      my @bits = ($chem_output =~ m/(..)/g);
      # bits array[58,63,33,31,2d,53,32,36]
-print STDERR "DEBUG: bits array=(" . join (",",@bits) . ")\n";
+###print STDERR "DEBUG: bits array=(" . join (",",@bits) . ")\n";
  
      $decoded_string="";
      foreach my $b ( @bits){
        my $charified = chr eval "0x$b";
-print STDERR "DEBUG: char 0x$b--->[$charified]\n";
+###print STDERR "DEBUG: char 0x$b--->[$charified]\n";
        $decoded_string.="$charified";
      }
-print STDERR "DEBUG: decoded_string[$decoded_string]\n";
+###print STDERR "DEBUG: decoded_string[$decoded_string]\n";
 
 
      $save_this_n = substr $m, 252,4; # save_this_n = "0003"
@@ -1709,7 +1710,7 @@ print STDERR "DEBUG: decoded_string[$decoded_string]\n";
      $save_this   = substr $m, 256, $save_count * 2;   # save_this = "586353"
 
      my @savebits = ($save_this =~ m/(..)/g);
-print STDERR "DEBUG: savebits array=(" . join (",",@savebits) . ")\n";
+###print STDERR "DEBUG: savebits array=(" . join (",",@savebits) . ")\n";
      $alt_decoded_string="";
      foreach my $b ( @savebits){
        my $charified = chr eval "0x$b";
@@ -1721,7 +1722,7 @@ print STDERR "DEBUG: savebits array=(" . join (",",@savebits) . ")\n";
          $subscript_count +=1;
        }
      }
-print STDERR "DEBUG: alt_decoded_string[$alt_decoded_string]\n";
+###print STDERR "DEBUG: alt_decoded_string[$alt_decoded_string]\n";
 
  #example decoded_string     = "W4,W5-Dx17"
  #example alt_decoded_string = "W₂Dx"
@@ -1744,18 +1745,18 @@ print STDERR "DEBUG: alt_decoded_string[$alt_decoded_string]\n";
      # add dashes
      $decoded_string =~ s/\b([A-Za-z]+)(\d+)/$1-$2/g; #  "W-4,W-5>Dx-17"
      my $molecule = sprintf "%s(%s)", $alt_decoded_string, $decoded_string;
-print STDERR "DEBUG: molecule[$molecule]\n";
+###print STDERR "DEBUG: molecule[$molecule]\n";
 
 ##   $reaction_output_string .= " + " . $molecule;
      push @reaction_output_list, $molecule;
 
 
      # figure out how many protons from each piece of the molecule
-print STDERR "DEBUG: how many protons in the Molecule[$decoded_string]\n";
+###print STDERR "DEBUG: how many protons in the Molecule[$decoded_string]\n";
      foreach my $part ($decoded_string =~ m/\b([A-Za-z]+)-\d+/g){ #  [W-4, W-5, Dx-17]
        if (exists $protonlookup{$part}){
          $output_protons += $protonlookup{$part};
-print STDERR "DEBUG: output[$part] has [$protonlookup{$part}] protons\n";
+###print STDERR "DEBUG: output[$part] has [$protonlookup{$part}] protons\n";
        }else{
          die "UNKNOWN otom $part\n";
        }
@@ -1844,8 +1845,8 @@ if (@reaction_types){
 			 map { [$_, $sortorder{$_} || $maxkey ] }
 			 @reaction_output_list ;
 
-print STDERR "DEBUG: as read order: reaction_output_list       =(". join(",",@reaction_output_list       ) .")\n";
-print STDERR "DEBUG: sorted order:  reaction_output_list_sorted=(". join(",",@reaction_output_list_sorted) .")\n";
+###print STDERR "DEBUG: as read order: reaction_output_list       =(". join(",",@reaction_output_list       ) .")\n";
+###print STDERR "DEBUG: sorted order:  reaction_output_list_sorted=(". join(",",@reaction_output_list_sorted) .")\n";
 
 
 #printf "OTOMRO %8d |%-70.70s | %10.2f | %s |\n",$otomro, $reaction_output_string, $energy_returned, $reaction_string;
