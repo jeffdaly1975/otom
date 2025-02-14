@@ -1,195 +1,206 @@
-Thu Feb 13 21:29:52 EST 2025
-What mineable otoms have not been tried in reactions?
+2025-02-14 Feb.Fri 13:16:09 I did 6 reactions last night that didn't show up as Unanalysed Reaction Outputs. I tried again awhile ago and nothing. I can see on the chain that someone else has been analysing reactions successfully. Logged out of my wallet and back in but no help. Restarted browser. no help.
+ 
+2025-02-13.Feb.Thu 21:29:52 What mineable otoms have not been tried in reactions?
 
 Here are 184 combinations of 2 mineable otoms which have not been tried. I examined all reactions that have occurred so far to determine this. Many have been tried with other otoms but not just as these 2.
 [ ] consider trying some
 
-| Ju-2∙(1.000) + Zz-14ª(0.640)  => |⬆  16   9 Pm |=  16   8 Dx |⬇  16   7 Zz
-| Ju-2∙(1.000) + Dx-17∙(1.588)  => |⬆  19  10  M |=  19   9 Pm |⬇  19   8 Dx
-| Ju-2∙(1.000) + Pm-17⁺(0.684)  => |⬆  19  11 Fw |=  19  10  M |⬇  19   9 Pm
-| Ju-2∙(1.000) + M-22∙(1.849)   => |⬆  24  12 Pt |=  24  11 Fw |⬇  24  10  M
-| Ju-2∙(1.000) + M-23⁻(0.762)   => |⬆  25  12 Pt |=  25  11 Fw |⬇  25  10  M
-| Ju-2∙(1.000) + Fw-25⁻(0.737)  => |⬆  27  13  S |=  27  12 Pt |⬇  27  11 Fw
-| Ju-3∙(1.000) + Cq-5⁺(0.017)   => |⬆   8   5 Xl |=   8   4 Af |⬇   8   3 Cq
-| Ju-3∙(1.000) + Pq-15⁻(0.277)  => |⬆  18   8 Dx |=  18   7 Zz |⬇  18   6 Pq <--- Makes Dx-18
-| Ju-3∙(1.000) + Dx-15⁺(0.604)  => |⬆  18  10  M |=  18   9 Pm |⬇  18   8 Dx
-| Ju-3∙(1.000) + Pm-18⁺(0.775)  => |⬆  21  11 Fw |=  21  10  M |⬇  21   9 Pm
-| Ju-3∙(1.000) + Pm-19∙(1.837)  => |⬆  22  11 Fw |=  22  10  M |⬇  22   9 Pm
-| W-4∙(1.000) + Cq-5⁺(0.017)    => |⬆   9   6 Pq |=   9   5 Xl |⬇   9   4 Af
-| W-4∙(1.000) + Dx-17∙(1.588)   => |⬆  21  11 Fw |=  21  10  M |⬇  21   9 Pm
-| W-4∙(1.000) + M-23⁻(0.762)    => |⬆  27  13  S |=  27  12 Pt |⬇  27  11 Fw
-| W-4∙(1.000) + Pt-24∙(1.795)   => |⬆  28  15 Xc |=  28  14 Zq |⬇  28  13  S
-| W-5∙(1.000) + Cq-5⁺(0.017)    => |⬆  10   6 Pq |=  10   5 Xl |⬇  10   4 Af
-| W-5∙(1.000) + Pq-10⁺(0.049)   => |⬆  15   9 Pm |=  15   8 Dx |⬇  15   7 Zz
-| W-5∙(1.000) + Pq-12ª(0.696)   => |⬆  17   9 Pm |=  17   8 Dx |⬇  17   7 Zz
-| W-5∙(1.000) + Zz-14ª(0.640)   => |⬆  19  10  M |=  19   9 Pm |⬇  19   8 Dx
-| W-5∙(1.000) + Dx-15⁺(0.604)   => |⬆  20  11 Fw |=  20  10  M |⬇  20   9 Pm
-| W-5∙(1.000) + Dx-17∙(1.588)   => |⬆  22  11 Fw |=  22  10  M |⬇  22   9 Pm
-| W-5∙(1.000) + Pm-17⁺(0.684)   => |⬆  22  12 Pt |=  22  11 Fw |⬇  22  10  M
-| W-5∙(1.000) + Pm-18⁺(0.775)   => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
-| W-5∙(1.000) + S-26ª(0.855)    => |⬆  31  16 Gy |=  31  15 Xc |⬇  31  14 Zq
-| W-5∙(1.000) + Zq-32⁻(0.771)   => |⬆  37  17  D |=  37  16 Gy |⬇  37  15 Xc
-| W-5∙(1.000) + Xc-30∙(1.990)   => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
-| W-5∙(1.000) + Gy-34∙(1.956)   => |⬆  39  19  O |=  39  18 Fj |⬇  39  17  D
-| Cq-5⁺(0.017) + Af-8∙(1.000)   => |⬆  13   8 Dx |=  13   7 Zz |⬇  13   6 Pq
-| Cq-5⁺(0.017) + Af-9∙(1.000)   => |⬆  14   8 Dx |=  14   7 Zz |⬇  14   6 Pq
-| Cq-5⁺(0.017) + Xl-9⁺(0.329)   => |⬆  14   9 Pm |=  14   8 Dx |⬇  14   7 Zz
-| Cq-5⁺(0.017) + Pq-10⁺(0.049)  => |⬆  15  10  M |=  15   9 Pm |⬇  15   8 Dx
-| Cq-5⁺(0.017) + Pq-12ª(0.696)  => |⬆  17  10  M |=  17   9 Pm |⬇  17   8 Dx
-| Cq-5⁺(0.017) + Pq-14⁻(0.561)  => |⬆  19  10  M |=  19   9 Pm |⬇  19   8 Dx
-| Cq-5⁺(0.017) + Zz-14ª(0.640)  => |⬆  19  11 Fw |=  19  10  M |⬇  19   9 Pm
-| Cq-5⁺(0.017) + Dx-17∙(1.588)  => |⬆  22  12 Pt |=  22  11 Fw |⬇  22  10  M
-| Cq-5⁺(0.017) + Pm-17⁺(0.684)  => |⬆  22  13  S |=  22  12 Pt |⬇  22  11 Fw
-| Cq-5⁺(0.017) + Pm-19∙(1.837)  => |⬆  24  13  S |=  24  12 Pt |⬇  24  11 Fw
-| Cq-5⁺(0.017) + Pt-25ª(0.890)  => |⬆  30  16 Gy |=  30  15 Xc |⬇  30  14 Zq
-| Cq-5⁺(0.017) + Pt-26∙(1.813)  => |⬆  31  16 Gy |=  31  15 Xc |⬇  31  14 Zq
-| Cq-5⁺(0.017) + S-25⁺(0.789)   => |⬆  30  17  D |=  30  16 Gy |⬇  30  15 Xc
-| Cq-5⁺(0.017) + S-26ª(0.855)   => |⬆  31  17  D |=  31  16 Gy |⬇  31  15 Xc
-| Cq-5⁺(0.017) + Zq-32⁻(0.771)  => |⬆  37  18 Fj |=  37  17  D |⬇  37  16 Gy
-| Cq-5⁺(0.017) + Xc-31∙(1.046)  => |⬆  36  19  O |=  36  18 Fj |⬇  36  17  D
-| Cq-5⁺(0.017) + Xc-34⁻(0.851)  => |⬆  39  19  O |=  39  18 Fj |⬇  39  17  D
-| Cq-5⁺(0.017) + Gy-34∙(1.956)  => |⬆  39  20  C |=  39  19  O |⬇  39  18 Fj
-| Cq-6∙(1.000) + Dx-17∙(1.588)  => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
-| Cq-6∙(1.000) + M-23⁻(0.762)   => |⬆  29  14 Zq |=  29  13  S |⬇  29  12 Pt
-| Cq-7∙(1.000) + Pq-10⁺(0.049)  => |⬆  17  10  M |=  17   9 Pm |⬇  17   8 Dx
-| Cq-7∙(1.000) + Pq-14⁻(0.561)  => |⬆  21  10  M |=  21   9 Pm |⬇  21   8 Dx
-| Cq-7∙(1.000) + Pq-15⁻(0.277)  => |⬆  22  10  M |=  22   9 Pm |⬇  22   8 Dx
-| Cq-7∙(1.000) + Dx-15⁺(0.604)  => |⬆  22  12 Pt |=  22  11 Fw |⬇  22  10  M
-| Cq-7∙(1.000) + Dx-16∙(1.603)  => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
-| Cq-7∙(1.000) + Pm-18⁺(0.775)  => |⬆  25  13  S |=  25  12 Pt |⬇  25  11 Fw
-| Cq-7∙(1.000) + Fw-25⁻(0.737)  => |⬆  32  15 Xc |=  32  14 Zq |⬇  32  13  S
-| Cq-7∙(1.000) + Pt-24∙(1.795)  => |⬆  31  16 Gy |=  31  15 Xc |⬇  31  14 Zq
-| Cq-7∙(1.000) + Xc-30∙(1.990)  => |⬆  37  19  O |=  37  18 Fj |⬇  37  17  D
-| Af-7ª(0.194) + Pq-10⁺(0.049)  => |⬆  17  11 Fw |=  17  10  M |⬇  17   9 Pm
-| Af-7ª(0.194) + Pq-14⁻(0.561)  => |⬆  21  11 Fw |=  21  10  M |⬇  21   9 Pm
-| Af-7ª(0.194) + Pq-15⁻(0.277)  => |⬆  22  11 Fw |=  22  10  M |⬇  22   9 Pm
-| Af-8∙(1.000) + Pq-10⁺(0.049)  => |⬆  18  11 Fw |=  18  10  M |⬇  18   9 Pm
-| Af-8∙(1.000) + Pq-14⁻(0.561)  => |⬆  22  11 Fw |=  22  10  M |⬇  22   9 Pm
-| Af-8∙(1.000) + Pq-15⁻(0.277)  => |⬆  23  11 Fw |=  23  10  M |⬇  23   9 Pm
-| Af-8∙(1.000) + Dx-16∙(1.603)  => |⬆  24  13  S |=  24  12 Pt |⬇  24  11 Fw
-| Af-8∙(1.000) + Pt-26∙(1.813)  => |⬆  34  17  D |=  34  16 Gy |⬇  34  15 Xc
-| Af-8∙(1.000) + S-26ª(0.855)   => |⬆  34  18 Fj |=  34  17  D |⬇  34  16 Gy
-| Af-9∙(1.000) + Pq-14⁻(0.561)  => |⬆  23  11 Fw |=  23  10  M |⬇  23   9 Pm
-| Af-9∙(1.000) + Zz-14ª(0.640)  => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
-| Af-9∙(1.000) + Dx-17∙(1.588)  => |⬆  26  13  S |=  26  12 Pt |⬇  26  11 Fw
-| Af-9∙(1.000) + Pm-17⁺(0.684)  => |⬆  26  14 Zq |=  26  13  S |⬇  26  12 Pt
-| Af-9∙(1.000) + M-20∙(1.940)   => |⬆  29  15 Xc |=  29  14 Zq |⬇  29  13  S
-| Af-9∙(1.000) + M-23⁻(0.762)   => |⬆  32  15 Xc |=  32  14 Zq |⬇  32  13  S
-| Af-9∙(1.000) + Pt-25ª(0.890)  => |⬆  34  17  D |=  34  16 Gy |⬇  34  15 Xc
-| Af-9∙(1.000) + Pt-26∙(1.813)  => |⬆  35  17  D |=  35  16 Gy |⬇  35  15 Xc
-| Af-9∙(1.000) + S-26ª(0.855)   => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
-| Xl-9⁺(0.329) + Pq-12ª(0.696)  => |⬆  21  12 Pt |=  21  11 Fw |⬇  21  10  M
-| Xl-9⁺(0.329) + Pq-13∙(1.281)  => |⬆  22  12 Pt |=  22  11 Fw |⬇  22  10  M
-| Xl-9⁺(0.329) + Pq-14⁻(0.561)  => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
-| Xl-9⁺(0.329) + Zz-14ª(0.640)  => |⬆  23  13  S |=  23  12 Pt |⬇  23  11 Fw
-| Xl-9⁺(0.329) + Dx-15⁺(0.604)  => |⬆  24  14 Zq |=  24  13  S |⬇  24  12 Pt
-| Xl-9⁺(0.329) + Dx-16∙(1.603)  => |⬆  25  14 Zq |=  25  13  S |⬇  25  12 Pt
-| Xl-9⁺(0.329) + Dx-17∙(1.588)  => |⬆  26  14 Zq |=  26  13  S |⬇  26  12 Pt
-| Xl-9⁺(0.329) + Pm-19∙(1.837)  => |⬆  28  15 Xc |=  28  14 Zq |⬇  28  13  S
-| Xl-9⁺(0.329) + M-20∙(1.940)   => |⬆  29  16 Gy |=  29  15 Xc |⬇  29  14 Zq
-| Xl-9⁺(0.329) + M-23⁻(0.762)   => |⬆  32  16 Gy |=  32  15 Xc |⬇  32  14 Zq
-| Xl-9⁺(0.329) + Pt-25ª(0.890)  => |⬆  34  18 Fj |=  34  17  D |⬇  34  16 Gy
-| Xl-9⁺(0.329) + Pt-26∙(1.813)  => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
-| Xl-9⁺(0.329) + Xc-31∙(1.046)  => |⬆  40  21  E |=  40  20  C |⬇  40  19  O
-| Xl-9⁺(0.329) + Gy-34∙(1.956)  => |⬆  43  22  A |=  43  21  E |⬇  43  20  C
-| Xl-10ª(0.487) + Pq-10⁺(0.049) => |⬆  20  12 Pt |=  20  11 Fw |⬇  20  10  M
-| Xl-10ª(0.487) + Zz-14ª(0.640) => |⬆  24  13  S |=  24  12 Pt |⬇  24  11 Fw
-| Xl-10ª(0.487) + Dx-17∙(1.588) => |⬆  27  14 Zq |=  27  13  S |⬇  27  12 Pt
-| Xl-10ª(0.487) + Pm-17⁺(0.684) => |⬆  27  15 Xc |=  27  14 Zq |⬇  27  13  S
-| Xl-10ª(0.487) + Pm-18⁺(0.775) => |⬆  28  15 Xc |=  28  14 Zq |⬇  28  13  S
-| Xl-10ª(0.487) + M-20∙(1.940)  => |⬆  30  16 Gy |=  30  15 Xc |⬇  30  14 Zq
-| Xl-10ª(0.487) + M-23⁻(0.762)  => |⬆  33  16 Gy |=  33  15 Xc |⬇  33  14 Zq
-| Xl-10ª(0.487) + Pt-26∙(1.813) => |⬆  36  18 Fj |=  36  17  D |⬇  36  16 Gy
-| Xl-11∙(1.110) + Zz-14ª(0.640) => |⬆  25  13  S |=  25  12 Pt |⬇  25  11 Fw
-| Xl-11∙(1.110) + Dx-15⁺(0.604) => |⬆  26  14 Zq |=  26  13  S |⬇  26  12 Pt
-| Pq-10⁺(0.049) + Pq-15⁻(0.277) => |⬆  25  13  S |=  25  12 Pt |⬇  25  11 Fw
-| Pq-10⁺(0.049) + Zz-14ª(0.640) => |⬆  24  14 Zq |=  24  13  S |⬇  24  12 Pt
-| Pq-10⁺(0.049) + Dx-16∙(1.603) => |⬆  26  15 Xc |=  26  14 Zq |⬇  26  13  S
-| Pq-10⁺(0.049) + Dx-17∙(1.588) => |⬆  27  15 Xc |=  27  14 Zq |⬇  27  13  S
-| Pq-10⁺(0.049) + Pm-17⁺(0.684) => |⬆  27  16 Gy |=  27  15 Xc |⬇  27  14 Zq
-| Pq-10⁺(0.049) + M-23⁻(0.762)  => |⬆  33  17  D |=  33  16 Gy |⬇  33  15 Xc
-| Pq-10⁺(0.049) + Fw-25⁻(0.737) => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
-| Pq-10⁺(0.049) + S-25⁺(0.789)  => |⬆  35  20  C |=  35  19  O |⬇  35  18 Fj
-| Pq-10⁺(0.049) + Zq-32⁻(0.771) => |⬆  42  21  E |=  42  20  C |⬇  42  19  O
-| Pq-10⁺(0.049) + Xc-34⁻(0.851) => |⬆  44  22  A |=  44  21  E |⬇  44  20  C
-| Pq-10⁺(0.049) + Gy-34∙(1.956) => |⬆  44  23 Aw |=  44  22  A |⬇  44  21  E
-| Pq-12ª(0.696) + Dx-15⁺(0.604) => |⬆  27  15 Xc |=  27  14 Zq |⬇  27  13  S
-| Pq-12ª(0.696) + M-23⁻(0.762)  => |⬆  35  17  D |=  35  16 Gy |⬇  35  15 Xc
-| Pq-12ª(0.696) + Pt-26∙(1.813) => |⬆  38  19  O |=  38  18 Fj |⬇  38  17  D
-| Pq-12ª(0.696) + Xc-30∙(1.990) => |⬆  42  22  A |=  42  21  E |⬇  42  20  C
-| Pq-12ª(0.696) + Xc-34⁻(0.851) => |⬆  46  22  A |=  46  21  E |⬇  46  20  C
-| Pq-13∙(1.281) + Pq-15⁻(0.277) => |⬆  28  13  S |=  28  12 Pt |⬇  28  11 Fw
-| Pq-13∙(1.281) + M-20∙(1.940)  => |⬆  33  17  D |=  33  16 Gy |⬇  33  15 Xc
-| Pq-13∙(1.281) + M-22∙(1.849)  => |⬆  35  17  D |=  35  16 Gy |⬇  35  15 Xc
-| Pq-14⁻(0.561) + Pq-14⁻(0.561) => |⬆  28  13  S |=  28  12 Pt |⬇  28  11 Fw
-| Pq-14⁻(0.561) + Pq-15⁻(0.277) => |⬆  29  13  S |=  29  12 Pt |⬇  29  11 Fw
-| Pq-14⁻(0.561) + Dx-15⁺(0.604) => |⬆  29  15 Xc |=  29  14 Zq |⬇  29  13  S
-| Pq-14⁻(0.561) + Dx-16∙(1.603) => |⬆  30  15 Xc |=  30  14 Zq |⬇  30  13  S
-| Pq-14⁻(0.561) + Dx-17∙(1.588) => |⬆  31  15 Xc |=  31  14 Zq |⬇  31  13  S
-| Pq-14⁻(0.561) + Pm-17⁺(0.684) => |⬆  31  16 Gy |=  31  15 Xc |⬇  31  14 Zq
-| Pq-14⁻(0.561) + M-20∙(1.940)  => |⬆  34  17  D |=  34  16 Gy |⬇  34  15 Xc
-| Pq-14⁻(0.561) + M-22∙(1.849)  => |⬆  36  17  D |=  36  16 Gy |⬇  36  15 Xc
-| Pq-14⁻(0.561) + M-23⁻(0.762)  => |⬆  37  17  D |=  37  16 Gy |⬇  37  15 Xc
-| Pq-14⁻(0.561) + Pt-24∙(1.795) => |⬆  38  19  O |=  38  18 Fj |⬇  38  17  D
-| Pq-14⁻(0.561) + Pt-25ª(0.890) => |⬆  39  19  O |=  39  18 Fj |⬇  39  17  D
-| Pq-14⁻(0.561) + Pt-26∙(1.813) => |⬆  40  19  O |=  40  18 Fj |⬇  40  17  D
-| Pq-14⁻(0.561) + S-25⁺(0.789)  => |⬆  39  20  C |=  39  19  O |⬇  39  18 Fj
-| Pq-14⁻(0.561) + S-26ª(0.855)  => |⬆  40  20  C |=  40  19  O |⬇  40  18 Fj
-| Pq-14⁻(0.561) + Zq-32⁻(0.771) => |⬆  46  21  E |=  46  20  C |⬇  46  19  O
-| Pq-14⁻(0.561) + Xc-30∙(1.990) => |⬆  44  22  A |=  44  21  E |⬇  44  20  C
-| Pq-14⁻(0.561) + Xc-31∙(1.046) => |⬆  45  22  A |=  45  21  E |⬇  45  20  C
-| Pq-14⁻(0.561) + Gy-34∙(1.956) => |⬆  48  23 Aw |=  48  22  A |⬇  48  21  E
-| Pq-14⁻(0.561) + Fj-37ª(0.942) => |⬆  51  25 Nb |=  51  24 Oc |⬇  51  23 Aw
-| Pq-15⁻(0.277) + Zz-13⁺(0.525) => |⬆  28  14 Zq |=  28  13  S |⬇  28  12 Pt
-| Pq-15⁻(0.277) + Dx-15⁺(0.604) => |⬆  30  15 Xc |=  30  14 Zq |⬇  30  13  S
-| Pq-15⁻(0.277) + Dx-16∙(1.603) => |⬆  31  15 Xc |=  31  14 Zq |⬇  31  13  S
-| Pq-15⁻(0.277) + Dx-17∙(1.588) => |⬆  32  15 Xc |=  32  14 Zq |⬇  32  13  S
-| Pq-15⁻(0.277) + Pm-17⁺(0.684) => |⬆  32  16 Gy |=  32  15 Xc |⬇  32  14 Zq
-| Pq-15⁻(0.277) + Pt-26∙(1.813) => |⬆  41  19  O |=  41  18 Fj |⬇  41  17  D
-| Pq-15⁻(0.277) + Zq-32⁻(0.771) => |⬆  47  21  E |=  47  20  C |⬇  47  19  O
-| Zz-13⁺(0.525) + Pm-17⁺(0.684) => |⬆  30  17  D |=  30  16 Gy |⬇  30  15 Xc
-| Zz-13⁺(0.525) + Pm-19∙(1.837) => |⬆  32  17  D |=  32  16 Gy |⬇  32  15 Xc
-| Zz-13⁺(0.525) + M-22∙(1.849)  => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
-| Zz-14ª(0.640) + Zz-14ª(0.640) => |⬆  28  15 Xc |=  28  14 Zq |⬇  28  13  S
-| Zz-14ª(0.640) + Pm-17⁺(0.684) => |⬆  31  17  D |=  31  16 Gy |⬇  31  15 Xc
-| Zz-14ª(0.640) + M-23⁻(0.762)  => |⬆  37  18 Fj |=  37  17  D |⬇  37  16 Gy
-| Zz-14ª(0.640) + Pt-24∙(1.795) => |⬆  38  20  C |=  38  19  O |⬇  38  18 Fj
-| Zz-14ª(0.640) + Pt-26∙(1.813) => |⬆  40  20  C |=  40  19  O |⬇  40  18 Fj
-| Zz-14ª(0.640) + Xc-34⁻(0.851) => |⬆  48  23 Aw |=  48  22  A |⬇  48  21  E
-| Zz-14ª(0.640) + D-37⁻(0.895)  => |⬆  51  25 Nb |=  51  24 Oc |⬇  51  23 Aw
-| Dx-15⁺(0.604) + Pm-18⁺(0.775) => |⬆  33  18 Fj |=  33  17  D |⬇  33  16 Gy
-| Dx-15⁺(0.604) + S-26ª(0.855)  => |⬆  41  22  A |=  41  21  E |⬇  41  20  C
-| Dx-15⁺(0.604) + Xc-34⁻(0.851) => |⬆  49  24 Oc |=  49  23 Aw |⬇  49  22  A
-| Dx-16∙(1.603) + Pt-24∙(1.795) => |⬆  40  21  E |=  40  20  C |⬇  40  19  O
-| Dx-16∙(1.603) + Pt-25ª(0.890) => |⬆  41  21  E |=  41  20  C |⬇  41  19  O
-| Dx-16∙(1.603) + Xc-31∙(1.046) => |⬆  47  24 Oc |=  47  23 Aw |⬇  47  22  A
-| Dx-16∙(1.603) + Xc-34⁻(0.851) => |⬆  50  24 Oc |=  50  23 Aw |⬇  50  22  A
-| Dx-17∙(1.588) + Dx-17∙(1.588) => |⬆  34  17  D |=  34  16 Gy |⬇  34  15 Xc
-| Dx-17∙(1.588) + Pm-18⁺(0.775) => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
-| Dx-17∙(1.588) + M-20∙(1.940)  => |⬆  37  19  O |=  37  18 Fj |⬇  37  17  D
-| Dx-17∙(1.588) + Fw-25⁻(0.737) => |⬆  42  20  C |=  42  19  O |⬇  42  18 Fj
-| Dx-17∙(1.588) + S-26ª(0.855)  => |⬆  43  22  A |=  43  21  E |⬇  43  20  C
-| Dx-17∙(1.588) + D-37⁻(0.895)  => |⬆  54  26 Xk |=  54  25 Nb |⬇  54  24 Oc
-| Pm-17⁺(0.684) + M-23⁻(0.762)  => |⬆  40  20  C |=  40  19  O |⬇  40  18 Fj
-| Pm-17⁺(0.684) + Pt-26∙(1.813) => |⬆  43  22  A |=  43  21  E |⬇  43  20  C
-| Pm-17⁺(0.684) + Zq-32⁻(0.771) => |⬆  49  24 Oc |=  49  23 Aw |⬇  49  22  A
-| Pm-17⁺(0.684) + Xc-34⁻(0.851) => |⬆  51  25 Nb |=  51  24 Oc |⬇  51  23 Aw
-| Pm-17⁺(0.684) + Gy-34∙(1.956) => |⬆  51  26 Xk |=  51  25 Nb |⬇  51  24 Oc
-| Pm-17⁺(0.684) + D-37⁻(0.895)  => |⬆  54  27 Ic |=  54  26 Xk |⬇  54  25 Nb
-| Pm-18⁺(0.775) + Zq-32⁻(0.771) => |⬆  50  24 Oc |=  50  23 Aw |⬇  50  22  A
-| Pm-18⁺(0.775) + Xc-34⁻(0.851) => |⬆  52  25 Nb |=  52  24 Oc |⬇  52  23 Aw
-| Pm-18⁺(0.775) + Aw-50∙(1.004) => |⬆  68  33 Pw |=  68  32 Ny |⬇  68  31 At
-| Pm-19∙(1.837) + Gy-34∙(1.956) => |⬆  53  26 Xk |=  53  25 Nb |⬇  53  24 Oc
-| M-20∙(1.940) + M-23⁻(0.762)   => |⬆  43  21  E |=  43  20  C |⬇  43  19  O
-| M-20∙(1.940) + Pt-26∙(1.813)  => |⬆  46  23 Aw |=  46  22  A |⬇  46  21  E
-| M-20∙(1.940) + Zq-32⁻(0.771)  => |⬆  52  25 Nb |=  52  24 Oc |⬇  52  23 Aw
-| M-22∙(1.849) + Pt-26∙(1.813)  => |⬆  48  23 Aw |=  48  22  A |⬇  48  21  E
-| M-23⁻(0.762) + S-25⁺(0.789)   => |⬆  48  24 Oc |=  48  23 Aw |⬇  48  22  A
-| Pt-24∙(1.795) + S-26ª(0.855)  => |⬆  50  26 Xk |=  50  25 Nb |⬇  50  24 Oc
-| Xc-31∙(1.046) + Nb-54ª(0.903) => |⬆  85  41 Sq |=  85  40  U |⬇  85  39  H
-| Xc-34⁻(0.851) + Nb-54ª(0.903) => |⬆  88  41 Sq |=  88  40  U |⬇  88  39  H
 
 2025-02-13.Feb.Thu 17:00:00 try this
+
+| alkaline Ju-2∙ (1.000) + noble    Zz-14ª(0.640) => |⬆  16   9 Pm |=  16   8 Dx |⬇  16   7 Zz [.] 
+| alkaline Ju-2∙ (1.000) + alkaline Dx-17∙(1.588) => |⬆  19  10  M |=  19   9 Pm |⬇  19   8 Dx
+| alkaline Ju-2∙ (1.000) + metal    Pm-17⁺(0.684) => |⬆  19  11 Fw |=  19  10  M |⬇  19   9 Pm [.]
+| alkaline Ju-2∙ (1.000) + metal    M-22∙ (1.849) => |⬆  24  12 Pt |=  24  11 Fw |⬇  24  10  M
+| alkaline Ju-2∙ (1.000) + metal    M-23⁻ (0.762) => |⬆  25  12 Pt |=  25  11 Fw |⬇  25  10  M
+| alkaline Ju-2∙ (1.000) + nonmetal Fw-25⁻(0.737) => |⬆  27  13  S |=  27  12 Pt |⬇  27  11 Fw
+| alkaline Ju-3∙ (1.000) + noble    Cq-5⁺ (0.017) => |⬆   8   5 Xl |=   8   4 Af |⬇   8   3 Cq [.] 
+| alkaline Ju-3∙ (1.000) + nonmetal Pq-15⁻(0.277) => |⬆  18   8 Dx |=  18   7 Zz |⬇  18   6 Pq [r] <--- Makes Dx-18
+| alkaline Ju-3∙ (1.000) + alkaline Dx-15⁺(0.604) => |⬆  18  10  M |=  18   9 Pm |⬇  18   8 Dx
+| alkaline Ju-3∙ (1.000) + metal    Pm-18⁺(0.775) => |⬆  21  11 Fw |=  21  10  M |⬇  21   9 Pm
+| alkaline Ju-3∙ (1.000) + metal    Pm-19∙(1.837) => |⬆  22  11 Fw |=  22  10  M |⬇  22   9 Pm
+| nonmetal W-4∙  (1.000) + noble    Cq-5⁺ (0.017) => |⬆   9   6 Pq |=   9   5 Xl |⬇   9   4 Af
+| nonmetal W-4∙  (1.000) + alkaline Dx-17∙(1.588) => |⬆  21  11 Fw |=  21  10  M |⬇  21   9 Pm
+| nonmetal W-4∙  (1.000) + metal    M-23⁻ (0.762) => |⬆  27  13  S |=  27  12 Pt |⬇  27  11 Fw
+| nonmetal W-4∙  (1.000) + noble    Pt-24∙(1.795) => |⬆  28  15 Xc |=  28  14 Zq |⬇  28  13  S
+| nonmetal W-5∙  (1.000) + noble    Cq-5⁺ (0.017) => |⬆  10   6 Pq |=  10   5 Xl |⬇  10   4 Af
+| nonmetal W-5∙  (1.000) + nonmetal Pq-10⁺(0.049) => |⬆  15   9 Pm |=  15   8 Dx |⬇  15   7 Zz
+| nonmetal W-5∙  (1.000) + nonmetal Pq-12ª(0.696) => |⬆  17   9 Pm |=  17   8 Dx |⬇  17   7 Zz [.] 
+| nonmetal W-5∙  (1.000) + noble    Zz-14ª(0.640) => |⬆  19  10  M |=  19   9 Pm |⬇  19   8 Dx
+| nonmetal W-5∙  (1.000) + alkaline Dx-15⁺(0.604) => |⬆  20  11 Fw |=  20  10  M |⬇  20   9 Pm
+| nonmetal W-5∙  (1.000) + alkaline Dx-17∙(1.588) => |⬆  22  11 Fw |=  22  10  M |⬇  22   9 Pm
+| nonmetal W-5∙  (1.000) + metal    Pm-17⁺(0.684) => |⬆  22  12 Pt |=  22  11 Fw |⬇  22  10  M
+| nonmetal W-5∙  (1.000) + metal    Pm-18⁺(0.775) => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
+| nonmetal W-5∙  (1.000) + alkaline S-26ª (0.855) => |⬆  31  16 Gy |=  31  15 Xc |⬇  31  14 Zq
+| nonmetal W-5∙  (1.000) + metal    Zq-32⁻(0.771) => |⬆  37  17  D |=  37  16 Gy |⬇  37  15 Xc [ ] 
+| nonmetal W-5∙  (1.000) + nonmetal Xc-30∙(1.990) => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
+| nonmetal W-5∙  (1.000) + noble    Gy-34∙(1.956) => |⬆  39  19  O |=  39  18 Fj |⬇  39  17  D
+| noble    Cq-5⁺ (0.017) + alkaline Af-8∙ (1.000) => |⬆  13   8 Dx |=  13   7 Zz |⬇  13   6 Pq
+| noble    Cq-5⁺ (0.017) + alkaline Af-9∙ (1.000) => |⬆  14   8 Dx |=  14   7 Zz |⬇  14   6 Pq
+| noble    Cq-5⁺ (0.017) + metal    Xl-9⁺ (0.329) => |⬆  14   9 Pm |=  14   8 Dx |⬇  14   7 Zz
+| noble    Cq-5⁺ (0.017) + nonmetal Pq-10⁺(0.049) => |⬆  15  10  M |=  15   9 Pm |⬇  15   8 Dx
+| noble    Cq-5⁺ (0.017) + nonmetal Pq-12ª(0.696) => |⬆  17  10  M |=  17   9 Pm |⬇  17   8 Dx [ ] 
+| noble    Cq-5⁺ (0.017) + nonmetal Pq-14⁻(0.561) => |⬆  19  10  M |=  19   9 Pm |⬇  19   8 Dx
+| noble    Cq-5⁺ (0.017) + noble    Zz-14ª(0.640) => |⬆  19  11 Fw |=  19  10  M |⬇  19   9 Pm [ ] 
+| noble    Cq-5⁺ (0.017) + alkaline Dx-17∙(1.588) => |⬆  22  12 Pt |=  22  11 Fw |⬇  22  10  M
+| noble    Cq-5⁺ (0.017) + metal    Pm-17⁺(0.684) => |⬆  22  13  S |=  22  12 Pt |⬇  22  11 Fw
+| noble    Cq-5⁺ (0.017) + metal    Pm-19∙(1.837) => |⬆  24  13  S |=  24  12 Pt |⬇  24  11 Fw
+| noble    Cq-5⁺ (0.017) + noble    Pt-25ª(0.890) => |⬆  30  16 Gy |=  30  15 Xc |⬇  30  14 Zq
+| noble    Cq-5⁺ (0.017) + noble    Pt-26∙(1.813) => |⬆  31  16 Gy |=  31  15 Xc |⬇  31  14 Zq
+| noble    Cq-5⁺ (0.017) + alkaline S-25⁺ (0.789) => |⬆  30  17  D |=  30  16 Gy |⬇  30  15 Xc
+| noble    Cq-5⁺ (0.017) + alkaline S-26ª (0.855) => |⬆  31  17  D |=  31  16 Gy |⬇  31  15 Xc [ ] 
+| noble    Cq-5⁺ (0.017) + metal    Zq-32⁻(0.771) => |⬆  37  18 Fj |=  37  17  D |⬇  37  16 Gy
+| noble    Cq-5⁺ (0.017) + nonmetal Xc-31∙(1.046) => |⬆  36  19  O |=  36  18 Fj |⬇  36  17  D
+| noble    Cq-5⁺ (0.017) + nonmetal Xc-34⁻(0.851) => |⬆  39  19  O |=  39  18 Fj |⬇  39  17  D
+| noble    Cq-5⁺ (0.017) + noble    Gy-34∙(1.956) => |⬆  39  20  C |=  39  19  O |⬇  39  18 Fj
+| noble    Cq-6∙ (1.000) + alkaline Dx-17∙(1.588) => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
+| noble    Cq-6∙ (1.000) + metal    M-23⁻ (0.762) => |⬆  29  14 Zq |=  29  13  S |⬇  29  12 Pt
+| noble    Cq-7∙ (1.000) + nonmetal Pq-10⁺(0.049) => |⬆  17  10  M |=  17   9 Pm |⬇  17   8 Dx
+| noble    Cq-7∙ (1.000) + nonmetal Pq-14⁻(0.561) => |⬆  21  10  M |=  21   9 Pm |⬇  21   8 Dx
+| noble    Cq-7∙ (1.000) + nonmetal Pq-15⁻(0.277) => |⬆  22  10  M |=  22   9 Pm |⬇  22   8 Dx [ ] 
+| noble    Cq-7∙ (1.000) + alkaline Dx-15⁺(0.604) => |⬆  22  12 Pt |=  22  11 Fw |⬇  22  10  M
+| noble    Cq-7∙ (1.000) + alkaline Dx-16∙(1.603) => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
+| noble    Cq-7∙ (1.000) + metal    Pm-18⁺(0.775) => |⬆  25  13  S |=  25  12 Pt |⬇  25  11 Fw
+| noble    Cq-7∙ (1.000) + nonmetal Fw-25⁻(0.737) => |⬆  32  15 Xc |=  32  14 Zq |⬇  32  13  S
+| noble    Cq-7∙ (1.000) + noble    Pt-24∙(1.795) => |⬆  31  16 Gy |=  31  15 Xc |⬇  31  14 Zq
+| noble    Cq-7∙ (1.000) + nonmetal Xc-30∙(1.990) => |⬆  37  19  O |=  37  18 Fj |⬇  37  17  D
+| alkaline Af-7ª (0.194) + nonmetal Pq-10⁺(0.049) => |⬆  17  11 Fw |=  17  10  M |⬇  17   9 Pm [ ] 
+| alkaline Af-7ª (0.194) + nonmetal Pq-14⁻(0.561) => |⬆  21  11 Fw |=  21  10  M |⬇  21   9 Pm
+| alkaline Af-7ª (0.194) + nonmetal Pq-15⁻(0.277) => |⬆  22  11 Fw |=  22  10  M |⬇  22   9 Pm
+| alkaline Af-8∙ (1.000) + nonmetal Pq-10⁺(0.049) => |⬆  18  11 Fw |=  18  10  M |⬇  18   9 Pm [.] 
+| alkaline Af-8∙ (1.000) + nonmetal Pq-14⁻(0.561) => |⬆  22  11 Fw |=  22  10  M |⬇  22   9 Pm
+| alkaline Af-8∙ (1.000) + nonmetal Pq-15⁻(0.277) => |⬆  23  11 Fw |=  23  10  M |⬇  23   9 Pm
+| alkaline Af-8∙ (1.000) + alkaline Dx-16∙(1.603) => |⬆  24  13  S |=  24  12 Pt |⬇  24  11 Fw
+| alkaline Af-8∙ (1.000) + noble    Pt-26∙(1.813) => |⬆  34  17  D |=  34  16 Gy |⬇  34  15 Xc
+| alkaline Af-8∙ (1.000) + alkaline S-26ª (0.855) => |⬆  34  18 Fj |=  34  17  D |⬇  34  16 Gy
+| alkaline Af-9∙ (1.000) + nonmetal Pq-14⁻(0.561) => |⬆  23  11 Fw |=  23  10  M |⬇  23   9 Pm
+| alkaline Af-9∙ (1.000) + noble    Zz-14ª(0.640) => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
+| alkaline Af-9∙ (1.000) + alkaline Dx-17∙(1.588) => |⬆  26  13  S |=  26  12 Pt |⬇  26  11 Fw
+| alkaline Af-9∙ (1.000) + metal    Pm-17⁺(0.684) => |⬆  26  14 Zq |=  26  13  S |⬇  26  12 Pt
+| alkaline Af-9∙ (1.000) + metal    M-20∙ (1.940) => |⬆  29  15 Xc |=  29  14 Zq |⬇  29  13  S
+| alkaline Af-9∙ (1.000) + metal    M-23⁻ (0.762) => |⬆  32  15 Xc |=  32  14 Zq |⬇  32  13  S
+| alkaline Af-9∙ (1.000) + noble    Pt-25ª(0.890) => |⬆  34  17  D |=  34  16 Gy |⬇  34  15 Xc
+| alkaline Af-9∙ (1.000) + noble    Pt-26∙(1.813) => |⬆  35  17  D |=  35  16 Gy |⬇  35  15 Xc
+| alkaline Af-9∙ (1.000) + alkaline S-26ª (0.855) => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
+| metal    Xl-9⁺ (0.329) + nonmetal Pq-12ª(0.696) => |⬆  21  12 Pt |=  21  11 Fw |⬇  21  10  M
+| metal    Xl-9⁺ (0.329) + nonmetal Pq-13∙(1.281) => |⬆  22  12 Pt |=  22  11 Fw |⬇  22  10  M
+| metal    Xl-9⁺ (0.329) + nonmetal Pq-14⁻(0.561) => |⬆  23  12 Pt |=  23  11 Fw |⬇  23  10  M
+| metal    Xl-9⁺ (0.329) + noble    Zz-14ª(0.640) => |⬆  23  13  S |=  23  12 Pt |⬇  23  11 Fw
+| metal    Xl-9⁺ (0.329) + alkaline Dx-15⁺(0.604) => |⬆  24  14 Zq |=  24  13  S |⬇  24  12 Pt
+| metal    Xl-9⁺ (0.329) + alkaline Dx-16∙(1.603) => |⬆  25  14 Zq |=  25  13  S |⬇  25  12 Pt
+| metal    Xl-9⁺ (0.329) + alkaline Dx-17∙(1.588) => |⬆  26  14 Zq |=  26  13  S |⬇  26  12 Pt
+| metal    Xl-9⁺ (0.329) + metal    Pm-19∙(1.837) => |⬆  28  15 Xc |=  28  14 Zq |⬇  28  13  S
+| metal    Xl-9⁺ (0.329) + metal    M-20∙ (1.940) => |⬆  29  16 Gy |=  29  15 Xc |⬇  29  14 Zq
+| metal    Xl-9⁺ (0.329) + metal    M-23⁻ (0.762) => |⬆  32  16 Gy |=  32  15 Xc |⬇  32  14 Zq
+| metal    Xl-9⁺ (0.329) + noble    Pt-25ª(0.890) => |⬆  34  18 Fj |=  34  17  D |⬇  34  16 Gy
+| metal    Xl-9⁺ (0.329) + noble    Pt-26∙(1.813) => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
+| metal    Xl-9⁺ (0.329) + nonmetal Xc-31∙(1.046) => |⬆  40  21  E |=  40  20  C |⬇  40  19  O
+| metal    Xl-9⁺ (0.329) + noble    Gy-34∙(1.956) => |⬆  43  22  A |=  43  21  E |⬇  43  20  C
+| metal    Xl-10ª(0.487) + nonmetal Pq-10⁺(0.049) => |⬆  20  12 Pt |=  20  11 Fw |⬇  20  10  M [ ] 
+| metal    Xl-10ª(0.487) + noble    Zz-14ª(0.640) => |⬆  24  13  S |=  24  12 Pt |⬇  24  11 Fw
+| metal    Xl-10ª(0.487) + alkaline Dx-17∙(1.588) => |⬆  27  14 Zq |=  27  13  S |⬇  27  12 Pt
+| metal    Xl-10ª(0.487) + metal    Pm-17⁺(0.684) => |⬆  27  15 Xc |=  27  14 Zq |⬇  27  13  S
+| metal    Xl-10ª(0.487) + metal    Pm-18⁺(0.775) => |⬆  28  15 Xc |=  28  14 Zq |⬇  28  13  S
+| metal    Xl-10ª(0.487) + metal    M-20∙ (1.940) => |⬆  30  16 Gy |=  30  15 Xc |⬇  30  14 Zq
+| metal    Xl-10ª(0.487) + metal    M-23⁻ (0.762) => |⬆  33  16 Gy |=  33  15 Xc |⬇  33  14 Zq
+| metal    Xl-10ª(0.487) + noble    Pt-26∙(1.813) => |⬆  36  18 Fj |=  36  17  D |⬇  36  16 Gy
+| metal    Xl-11∙(1.110) + noble    Zz-14ª(0.640) => |⬆  25  13  S |=  25  12 Pt |⬇  25  11 Fw
+| metal    Xl-11∙(1.110) + alkaline Dx-15⁺(0.604) => |⬆  26  14 Zq |=  26  13  S |⬇  26  12 Pt
+| nonmetal Pq-10⁺(0.049) + nonmetal Pq-15⁻(0.277) => |⬆  25  13  S |=  25  12 Pt |⬇  25  11 Fw
+| nonmetal Pq-10⁺(0.049) + noble    Zz-14ª(0.640) => |⬆  24  14 Zq |=  24  13  S |⬇  24  12 Pt
+| nonmetal Pq-10⁺(0.049) + alkaline Dx-16∙(1.603) => |⬆  26  15 Xc |=  26  14 Zq |⬇  26  13  S
+| nonmetal Pq-10⁺(0.049) + alkaline Dx-17∙(1.588) => |⬆  27  15 Xc |=  27  14 Zq |⬇  27  13  S
+| nonmetal Pq-10⁺(0.049) + metal    Pm-17⁺(0.684) => |⬆  27  16 Gy |=  27  15 Xc |⬇  27  14 Zq [ ] 
+| nonmetal Pq-10⁺(0.049) + metal    M-23⁻ (0.762) => |⬆  33  17  D |=  33  16 Gy |⬇  33  15 Xc
+| nonmetal Pq-10⁺(0.049) + nonmetal Fw-25⁻(0.737) => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
+| nonmetal Pq-10⁺(0.049) + alkaline S-25⁺ (0.789) => |⬆  35  20  C |=  35  19  O |⬇  35  18 Fj [ ] 
+| nonmetal Pq-10⁺(0.049) + metal    Zq-32⁻(0.771) => |⬆  42  21  E |=  42  20  C |⬇  42  19  O
+| nonmetal Pq-10⁺(0.049) + nonmetal Xc-34⁻(0.851) => |⬆  44  22  A |=  44  21  E |⬇  44  20  C
+| nonmetal Pq-10⁺(0.049) + noble    Gy-34∙(1.956) => |⬆  44  23 Aw |=  44  22  A |⬇  44  21  E
+| nonmetal Pq-12ª(0.696) + alkaline Dx-15⁺(0.604) => |⬆  27  15 Xc |=  27  14 Zq |⬇  27  13  S
+| nonmetal Pq-12ª(0.696) + metal    M-23⁻ (0.762) => |⬆  35  17  D |=  35  16 Gy |⬇  35  15 Xc
+| nonmetal Pq-12ª(0.696) + noble    Pt-26∙(1.813) => |⬆  38  19  O |=  38  18 Fj |⬇  38  17  D
+| nonmetal Pq-12ª(0.696) + nonmetal Xc-30∙(1.990) => |⬆  42  22  A |=  42  21  E |⬇  42  20  C
+| nonmetal Pq-12ª(0.696) + nonmetal Xc-34⁻(0.851) => |⬆  46  22  A |=  46  21  E |⬇  46  20  C
+| nonmetal Pq-13∙(1.281) + nonmetal Pq-15⁻(0.277) => |⬆  28  13  S |=  28  12 Pt |⬇  28  11 Fw
+| nonmetal Pq-13∙(1.281) + metal    M-20∙ (1.940) => |⬆  33  17  D |=  33  16 Gy |⬇  33  15 Xc
+| nonmetal Pq-13∙(1.281) + metal    M-22∙ (1.849) => |⬆  35  17  D |=  35  16 Gy |⬇  35  15 Xc
+| nonmetal Pq-14⁻(0.561) + nonmetal Pq-14⁻(0.561) => |⬆  28  13  S |=  28  12 Pt |⬇  28  11 Fw
+| nonmetal Pq-14⁻(0.561) + nonmetal Pq-15⁻(0.277) => |⬆  29  13  S |=  29  12 Pt |⬇  29  11 Fw [ ] 
+| nonmetal Pq-14⁻(0.561) + alkaline Dx-15⁺(0.604) => |⬆  29  15 Xc |=  29  14 Zq |⬇  29  13  S
+| nonmetal Pq-14⁻(0.561) + alkaline Dx-16∙(1.603) => |⬆  30  15 Xc |=  30  14 Zq |⬇  30  13  S
+| nonmetal Pq-14⁻(0.561) + alkaline Dx-17∙(1.588) => |⬆  31  15 Xc |=  31  14 Zq |⬇  31  13  S
+| nonmetal Pq-14⁻(0.561) + metal    Pm-17⁺(0.684) => |⬆  31  16 Gy |=  31  15 Xc |⬇  31  14 Zq
+| nonmetal Pq-14⁻(0.561) + metal    M-20∙ (1.940) => |⬆  34  17  D |=  34  16 Gy |⬇  34  15 Xc
+| nonmetal Pq-14⁻(0.561) + metal    M-22∙ (1.849) => |⬆  36  17  D |=  36  16 Gy |⬇  36  15 Xc
+| nonmetal Pq-14⁻(0.561) + metal    M-23⁻ (0.762) => |⬆  37  17  D |=  37  16 Gy |⬇  37  15 Xc [ ] 
+| nonmetal Pq-14⁻(0.561) + noble    Pt-24∙(1.795) => |⬆  38  19  O |=  38  18 Fj |⬇  38  17  D
+| nonmetal Pq-14⁻(0.561) + noble    Pt-25ª(0.890) => |⬆  39  19  O |=  39  18 Fj |⬇  39  17  D
+| nonmetal Pq-14⁻(0.561) + noble    Pt-26∙(1.813) => |⬆  40  19  O |=  40  18 Fj |⬇  40  17  D
+| nonmetal Pq-14⁻(0.561) + alkaline S-25⁺ (0.789) => |⬆  39  20  C |=  39  19  O |⬇  39  18 Fj
+| nonmetal Pq-14⁻(0.561) + alkaline S-26ª (0.855) => |⬆  40  20  C |=  40  19  O |⬇  40  18 Fj
+| nonmetal Pq-14⁻(0.561) + metal    Zq-32⁻(0.771) => |⬆  46  21  E |=  46  20  C |⬇  46  19  O [ ] 
+| nonmetal Pq-14⁻(0.561) + nonmetal Xc-30∙(1.990) => |⬆  44  22  A |=  44  21  E |⬇  44  20  C
+| nonmetal Pq-14⁻(0.561) + nonmetal Xc-31∙(1.046) => |⬆  45  22  A |=  45  21  E |⬇  45  20  C
+| nonmetal Pq-14⁻(0.561) + noble    Gy-34∙(1.956) => |⬆  48  23 Aw |=  48  22  A |⬇  48  21  E
+| nonmetal Pq-14⁻(0.561) + metal    Fj-37ª(0.942) => |⬆  51  25 Nb |=  51  24 Oc |⬇  51  23 Aw
+| nonmetal Pq-15⁻(0.277) + noble    Zz-13⁺(0.525) => |⬆  28  14 Zq |=  28  13  S |⬇  28  12 Pt
+| nonmetal Pq-15⁻(0.277) + alkaline Dx-15⁺(0.604) => |⬆  30  15 Xc |=  30  14 Zq |⬇  30  13  S
+| nonmetal Pq-15⁻(0.277) + alkaline Dx-16∙(1.603) => |⬆  31  15 Xc |=  31  14 Zq |⬇  31  13  S
+| nonmetal Pq-15⁻(0.277) + alkaline Dx-17∙(1.588) => |⬆  32  15 Xc |=  32  14 Zq |⬇  32  13  S
+| nonmetal Pq-15⁻(0.277) + metal    Pm-17⁺(0.684) => |⬆  32  16 Gy |=  32  15 Xc |⬇  32  14 Zq
+| nonmetal Pq-15⁻(0.277) + noble    Pt-26∙(1.813) => |⬆  41  19  O |=  41  18 Fj |⬇  41  17  D
+| nonmetal Pq-15⁻(0.277) + metal    Zq-32⁻(0.771) => |⬆  47  21  E |=  47  20  C |⬇  47  19  O
+| noble    Zz-13⁺(0.525) + metal    Pm-17⁺(0.684) => |⬆  30  17  D |=  30  16 Gy |⬇  30  15 Xc nah
+| noble    Zz-13⁺(0.525) + metal    Pm-19∙(1.837) => |⬆  32  17  D |=  32  16 Gy |⬇  32  15 Xc
+| noble    Zz-13⁺(0.525) + metal    M-22∙ (1.849) => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
+| noble    Zz-14ª(0.640) + noble    Zz-14ª(0.640) => |⬆  28  15 Xc |=  28  14 Zq |⬇  28  13  S
+| noble    Zz-14ª(0.640) + metal    Pm-17⁺(0.684) => |⬆  31  17  D |=  31  16 Gy |⬇  31  15 Xc
+| noble    Zz-14ª(0.640) + metal    M-23⁻ (0.762) => |⬆  37  18 Fj |=  37  17  D |⬇  37  16 Gy
+| noble    Zz-14ª(0.640) + noble    Pt-24∙(1.795) => |⬆  38  20  C |=  38  19  O |⬇  38  18 Fj
+| noble    Zz-14ª(0.640) + noble    Pt-26∙(1.813) => |⬆  40  20  C |=  40  19  O |⬇  40  18 Fj
+| noble    Zz-14ª(0.640) + nonmetal Xc-34⁻(0.851) => |⬆  48  23 Aw |=  48  22  A |⬇  48  21  E
+| noble    Zz-14ª(0.640) + alkaline D-37⁻ (0.895) => |⬆  51  25 Nb |=  51  24 Oc |⬇  51  23 Aw
+| alkaline Dx-15⁺(0.604) + metal    Pm-18⁺(0.775) => |⬆  33  18 Fj |=  33  17  D |⬇  33  16 Gy
+| alkaline Dx-15⁺(0.604) + alkaline S-26ª (0.855) => |⬆  41  22  A |=  41  21  E |⬇  41  20  C
+| alkaline Dx-15⁺(0.604) + nonmetal Xc-34⁻(0.851) => |⬆  49  24 Oc |=  49  23 Aw |⬇  49  22  A
+| alkaline Dx-16∙(1.603) + noble    Pt-24∙(1.795) => |⬆  40  21  E |=  40  20  C |⬇  40  19  O
+| alkaline Dx-16∙(1.603) + noble    Pt-25ª(0.890) => |⬆  41  21  E |=  41  20  C |⬇  41  19  O
+| alkaline Dx-16∙(1.603) + nonmetal Xc-31∙(1.046) => |⬆  47  24 Oc |=  47  23 Aw |⬇  47  22  A
+| alkaline Dx-16∙(1.603) + nonmetal Xc-34⁻(0.851) => |⬆  50  24 Oc |=  50  23 Aw |⬇  50  22  A
+| alkaline Dx-17∙(1.588) + alkaline Dx-17∙(1.588) => |⬆  34  17  D |=  34  16 Gy |⬇  34  15 Xc
+| alkaline Dx-17∙(1.588) + metal    Pm-18⁺(0.775) => |⬆  35  18 Fj |=  35  17  D |⬇  35  16 Gy
+| alkaline Dx-17∙(1.588) + metal    M-20∙ (1.940) => |⬆  37  19  O |=  37  18 Fj |⬇  37  17  D
+| alkaline Dx-17∙(1.588) + nonmetal Fw-25⁻(0.737) => |⬆  42  20  C |=  42  19  O |⬇  42  18 Fj
+| alkaline Dx-17∙(1.588) + alkaline S-26ª (0.855) => |⬆  43  22  A |=  43  21  E |⬇  43  20  C
+| alkaline Dx-17∙(1.588) + alkaline D-37⁻ (0.895) => |⬆  54  26 Xk |=  54  25 Nb |⬇  54  24 Oc
+| metal    Pm-17⁺(0.684) + metal    M-23⁻ (0.762) => |⬆  40  20  C |=  40  19  O |⬇  40  18 Fj
+| metal    Pm-17⁺(0.684) + noble    Pt-26∙(1.813) => |⬆  43  22  A |=  43  21  E |⬇  43  20  C
+| metal    Pm-17⁺(0.684) + metal    Zq-32⁻(0.771) => |⬆  49  24 Oc |=  49  23 Aw |⬇  49  22  A
+| metal    Pm-17⁺(0.684) + nonmetal Xc-34⁻(0.851) => |⬆  51  25 Nb |=  51  24 Oc |⬇  51  23 Aw
+| metal    Pm-17⁺(0.684) + noble    Gy-34∙(1.956) => |⬆  51  26 Xk |=  51  25 Nb |⬇  51  24 Oc
+| metal    Pm-17⁺(0.684) + alkaline D-37⁻ (0.895) => |⬆  54  27 Ic |=  54  26 Xk |⬇  54  25 Nb
+| metal    Pm-18⁺(0.775) + metal    Zq-32⁻(0.771) => |⬆  50  24 Oc |=  50  23 Aw |⬇  50  22  A
+| metal    Pm-18⁺(0.775) + nonmetal Xc-34⁻(0.851) => |⬆  52  25 Nb |=  52  24 Oc |⬇  52  23 Aw
+| metal    Pm-18⁺(0.775) + nonmetal Aw-50∙(1.004) => |⬆  68  33 Pw |=  68  32 Ny |⬇  68  31 At
+| metal    Pm-19∙(1.837) + noble    Gy-34∙(1.956) => |⬆  53  26 Xk |=  53  25 Nb |⬇  53  24 Oc
+| metal    M-20∙ (1.940) + metal    M-23⁻ (0.762) => |⬆  43  21  E |=  43  20  C |⬇  43  19  O
+| metal    M-20∙ (1.940) + noble    Pt-26∙(1.813) => |⬆  46  23 Aw |=  46  22  A |⬇  46  21  E
+| metal    M-20∙ (1.940) + metal    Zq-32⁻(0.771) => |⬆  52  25 Nb |=  52  24 Oc |⬇  52  23 Aw
+| metal    M-22∙ (1.849) + noble    Pt-26∙(1.813) => |⬆  48  23 Aw |=  48  22  A |⬇  48  21  E
+| metal    M-23⁻ (0.762) + alkaline S-25⁺ (0.789) => |⬆  48  24 Oc |=  48  23 Aw |⬇  48  22  A
+| noble    Pt-24∙(1.795) + alkaline S-26ª (0.855) => |⬆  50  26 Xk |=  50  25 Nb |⬇  50  24 Oc
+| nonmetal Xc-31∙(1.046) + alkaline Nb-54ª(0.903) => |⬆  85  41 Sq |=  85  40  U |⬇  85  39  H [.] 
+| nonmetal Xc-34⁻(0.851) + alkaline Nb-54ª(0.903) => |⬆  88  41 Sq |=  88  40  U |⬇  88  39  H [ ] 
+
+
+Some vim commands for replacing otoms before the 36 virtual column with the series name they belong to
+ :%s/\%<36v\<\(S\|D\|Ju\|Nb\|Hb\|Af\|Dx\|Bt\)-\d\+/alkaline &/g
+ :%s/\%<36v\C\<\(A\|C\|E\|H\|M\|O\|U\|At\|Fj\|Gk\|Ic\|Ny\|Pm\|Pw\|Qi\|Sq\|Xk\|Xl\|Zq\)-\d\+/metal    &/g
+ :%s/\%<36v\C\<\(Cq\|Gq\|Gy\|Jx\|Oc\|Pt\|Ua\|Zz\)-\d\+/noble    &/g
+ :%s/\%<36v\C\<\(W\|Aw\|Fw\|Pq\|Xc\|Xy\|Yp\)-\d\+/nonmetal &/g
+
+
 
 
 [ ] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
@@ -221,19 +232,19 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
   30 16 Gy⁺(0.756) + 47 25 Nb⁺(0.793) + 10000 => 77 40  U + 7372.86 using 2627.14
 
 [ ] 77 40  U
-  [ ] add to otoms.complete.list.otom
-  [ ] save reservoir image to mac folder
-  [ ] bookmark to Firefox
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
-  [ ] add to syntax/otom.vim
-  [ ] add to otom_reactions.pl
-  [ ] add to isotopes image from Kjetil with unknown meaning.txt
-  [ ] add to otoms.decay.otom
+  [c] add to otoms.complete.list.otom
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] update in Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
+  [c] add to otoms.decay.otom
   [ ] add to otoms.otom
   [ ] add to otoms.columns.otom
   [ ] add reaction to otom.reactions.otom 
   [ ] add to recipes.otom
-  [ ] add otoms.shapescan.data.otom
+  [c] add otoms.shapescan.data.otom
       [ ] put these vaules in ???
           [ ] ==>SHELL TABLE 1
           [ ] ==>SHELL TABLE 2
@@ -367,7 +378,7 @@ So it is clobbering something. [ ] Need to check.
 [ ] I wonder what others are like that. Could I find a search pattern? 
     [ ] maybe I need to add a sorted list to the %db.
     [ ] make sure I'm not obliterating keys by having something internal that relies on a sorted value which might overwrite or mess up where A + B + C is treated different for outputs than B + C + A. But might be useful to also recognize with an internal sorted list. IDK
-
+ UPDATE 2025-02-14 Feb.Fri 12:57:28--After 26195 reactions, this is the only case i've seen this happen.
 
 
 2025-02-11 Feb.Tue 22:06:00 This is weird. OTOMRO 7175 has inputs 'M-20∙ + Xl-9⁺ + Xl-9⁺ + S-26ª + Ju-1∙ + 200' and the output is one token, token id 60263506574334557738060532335864522153026116305230990064358530974357260610224 but the shapescan page for it returns 404. Huh?

@@ -5,7 +5,7 @@
   [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
   [ ] add to syntax/otom.vim
   [ ] add to otom_reactions.pl
-  [ ] add to isotopes image from Kjetil with unknown meaning.txt
+  [ ] update in Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
   [ ] add to otoms.decay.otom
   [ ] add to otoms.otom
   [ ] add to otoms.columns.otom

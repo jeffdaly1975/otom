@@ -730,7 +730,7 @@ sub energy_converter {
 my %db = ();
 
 #              [ ] add energy used
-#              [ ] type should be a hash so we can test specifically for decay for example
+#              [ ] type should be a hash so we can test specifically for a decay type vs a metallic type for example
 #              [ ] add otoms_in_sorted. The order of inputs might actually matter. So I want the original order from the initiateReaction AND a sorted Otom mass order for deduplication
 #              [ ] perhaps after the %db of OTOMROs is done building from parsing the logs, I should build 2 more %inputs and %outputs.
 #                  These would be keyed like a reaction without energy "M-19 + Hb-57 => H-76" and would have a hash of values for bounded input energy ranges, and a list of otomros that are represented
@@ -1598,11 +1598,11 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 #      : [c] WITHOUT SORTING and save those files stdout        and stderr        and newrecipes.otom and dumped.txt
 # Honestly it seems better with the sorting.
 #
-###print STDERR "DEBUG: =====> THIS ONE HAS THE SORTING OFF!!!!!!!\n";
+###print STDERR "DEBUG: =====> THIS ONE HAS THE SORTING ON !!!!!!!\n";
   @otoms_in =
-#             map { $_->[0] }                  # This
-#             sort{ $a->[1] <=> $b->[1] }      # does
-#             map { [$_, $sortorder{$_} ] }    # the magic
+              map { $_->[0] }                  # This
+              sort{ $a->[1] <=> $b->[1] }      # does
+              map { [$_, $sortorder{$_} ] }    # the magic
               map { $hexdict{$_}; } 
               @otoms_in;
 
