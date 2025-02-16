@@ -1172,7 +1172,7 @@ $db{"7176"}
         };
 $db{"7177"}
       = {
-          'otoms_in'       => '  Ju-1∙ +  Ju-1∙ +  Ju-1∙',
+          'otoms_in'       => ' Ju-1∙ +  Ju-1∙ +  Ju-1∙',
           'otoms_in_list'  => [ 'Ju-1', 'Ju-1', 'Ju-1'],
           'energy_in'      => 5,
 
@@ -1226,7 +1226,7 @@ $db{"8725"}
         };
 $db{"8726"}
       = {
-          'otoms_in'       => 'Pt-26∙ + Pt-26∙ + Pt-24∙ + S-25⁺ + Fj-37ª',
+          'otoms_in'       => 'Pt-26∙ + Pt-26∙ + Pt-24∙ +  S-25⁺ + Fj-37ª',
           'otoms_in_list'  => [ 'Pt-26', 'Pt-26', 'Pt-24', 'S-25', 'Fj-37'],
           'energy_in'      => 780,
 

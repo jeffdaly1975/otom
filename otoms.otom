@@ -5850,6 +5850,25 @@ atom 82 39  H | Decay type	stable
 atom 82 39  H | Filled in Outer Shell	0-0-0-0-0-0-1-1
 atom 82 39  H | Empty in Outer Shell	0-0-0-0-0-0-0-3
 
+atom 77 40  U | Lab sheet
+atom 77 40  U | U otom
+atom 77 40  U | Token ID 80208761829410857019562512949342321687846549513711446602791659410207977883078
+atom 77 40  U | Name	U
+atom 77 40  U | Discovered by	zeroshape.eth
+atom 77 40  U | Current Supply	5
+atom 77 40  U | Series	metal
+atom 77 40  U | Protons	40
+atom 77 40  U | Neutrons	37
+atom 77 40  U | Stability	0.678
+atom 77 40  U | Density	31.799 g/cm³
+atom 77 40  U | Radius	1.343 pm
+atom 77 40  U | Electronegativity	0.180
+atom 77 40  U | Mass	77.000 amu
+atom 77 40  U | Metallic	Yes
+atom 77 40  U | Decay type	beta+
+atom 77 40  U | Filled in Outer Shell	0-0-0-0-0-0-1-2
+atom 77 40  U | Empty in Outer Shell	0-0-0-0-0-0-0-2
+
 atom 78 40  U | Lab sheet
 atom 78 40  U | U otom
 atom 78 40  U | Token ID 47925669942168651680155715033658708057484412425991717393838523715260661039849
