@@ -1,3 +1,14 @@
+2025-02-16 Feb.Sun 18:25:34 I'm missing a Gk-65. Need to remake
+
+[r] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
+[r]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
+[r]  5  3 Cq + 46 24 Oc +  785 => 51 27 Ic
+[r] 17  9 Pm + 25 13  S + 1171 => 42 22  A
+[r] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
+[r] 57 30 Hb +            4957 => 26 14 Zq + 31 16 Gy
+[r] 26 14 Zq +            1443 => 12  6 Pq + 14  8 Dx
+[r] 14  8 Dx + 51 27 Ic + 1362 => 65 34 Gk
+
 2025-02-15 Feb.Sat 21:37:55 did a little data munging on those experiments i'm doing. Not really able to see anything useful I can derive. Maybe it would help to get these all done then export and parse the Reactor, then do some analysis.
   ==alkaline + alkaline ===============================================================================================
   | alkaline Ju-2∙ (1.000) + alkaline Dx-17∙(1.588) => |            |= (19  9 Pm)|                <---- Makes Pm-19 using  769.16
@@ -135,15 +146,15 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | noble    Cq-5⁺ (0.017) + nonmetal Pq-12ª(0.696) => |⬆  17 10  M |=  17  9 Pm |⬇ (17  8 Dx)[r]  <--- Makes Dx-17 using  454.78
 | noble    Cq-5⁺ (0.017) + nonmetal Pq-14⁻(0.561) => |⬆  19 10  M |= (19  9 Pm)|⬇  19  8 Dx [r] +2000 Makes Pm-19 using  457.81
 | noble    Cq-5⁺ (0.017) + noble    Zz-14ª(0.640) => |⬆  19 11 Fw |= (19 10  M)|⬇  19  9 Pm [r] +2000 Makes M-19  using  469.79
-| noble    Cq-5⁺ (0.017) + alkaline Dx-17∙(1.588) => |⬆  22 12 Pt |=  22 11 Fw |⬇  22 10  M
-| noble    Cq-5⁺ (0.017) + metal    Pm-17⁺(0.684) => |⬆  22 13  S |=  22 12 Pt |⬇ (22 11 Fw)[r] +2000 Makes Fw-22 using  509.83
-| noble    Cq-5⁺ (0.017) + metal    Pm-19∙(1.837) => |⬆  24 13  S |=  24 12 Pt |⬇  24 11 Fw
-| noble    Cq-5⁺ (0.017) + noble    Pt-25ª(0.890) => |⬆  30 16 Gy |=  30 15 Xc |⬇  30 14 Zq
+| noble    Cq-5⁺ (0.017) + alkaline Dx-17∙(1.588) => |⬆  22 12 Pt |= (22 11 Fw)|⬇  22 10  M [r] +1500 Makes Fw-22 using  620.76 nuclear
+| noble    Cq-5⁺ (0.017) + metal    Pm-17⁺(0.684) => |⬆  22 13  S |=  22 12 Pt |⬇ (22 11 Fw)[r] +2000 Makes Fw-22 using  509.83 nuclear
+| noble    Cq-5⁺ (0.017) + metal    Pm-19∙(1.837) => |⬆  24 13  S |= (24 12 Pt)|⬇  24 11 Fw [r] +1500 Makes Pt-24 using  685.68 nuclear
+| noble    Cq-5⁺ (0.017) + noble    Pt-25ª(0.890) => |⬆  30 16 Gy |= (30 15 Xc)|⬇  30 14 Zq [r] +1500 Makes Xc-30 using  607.62
 | noble    Cq-5⁺ (0.017) + noble    Pt-26∙(1.813) => |⬆  31 16 Gy |=  31 15 Xc |⬇  31 14 Zq
 | noble    Cq-5⁺ (0.017) + alkaline S-25⁺ (0.789) => |⬆  30 17  D |=  30 16 Gy |⬇  30 15 Xc
 | noble    Cq-5⁺ (0.017) + alkaline S-26ª (0.855) => |⬆  31 17  D |= (31 16 Gy)|⬇  31 15 Xc [r] +1500 Makes Gy-31 using  611.49
 | noble    Cq-5⁺ (0.017) + metal    Zq-32⁻(0.771) => |⬆  37 18 Fj |=  37 17  D |⬇  37 16 Gy
-| noble    Cq-5⁺ (0.017) + nonmetal Xc-31∙(1.046) => |⬆  36 19  O |=  36 18 Fj |⬇  36 17  D
+| noble    Cq-5⁺ (0.017) + nonmetal Xc-31∙(1.046) => |⬆  36 19  O |= (36 18 Fj)|⬇  36 17  D [r] +4000 Makes Fj-36 using  827.63 nuclear
 | noble    Cq-5⁺ (0.017) + nonmetal Xc-34⁻(0.851) => |⬆  39 19  O |=  39 18 Fj |⬇  39 17  D
 | noble    Cq-5⁺ (0.017) + noble    Gy-34∙(1.956) => |⬆  39 20  C |=  39 19  O |⬇  39 18 Fj
 | noble    Cq-6∙ (1.000) + alkaline Dx-17∙(1.588) => |⬆  23 12 Pt |= (23 11 Fw)|⬇  23 10  M [r] +2000 Makes Fw-23 using 1000.01
@@ -163,22 +174,22 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | alkaline Af-8∙ (1.000) + nonmetal Pq-10⁺(0.049) => |⬆  18 11 Fw |=  18 10  M |⬇ (18  9 Pm)[r] <---- Makes Pm-18 using  532.76
 | alkaline Af-8∙ (1.000) + nonmetal Pq-14⁻(0.561) => |⬆  22 11 Fw |= (22 10  M)|⬇  22  9 Pm [r] +1500 Makes M-22  using  720.00
 | alkaline Af-8∙ (1.000) + nonmetal Pq-15⁻(0.277) => |⬆ (23 11 Fw)|=  23 10  M |⬇  23  9 Pm [r] +1500 Makes Fw-23 using  656.24
-| alkaline Af-8∙ (1.000) + alkaline Dx-16∙(1.603) => |⬆  24 13  S |=  24 12 Pt |⬇  24 11 Fw
-| alkaline Af-8∙ (1.000) + noble    Pt-26∙(1.813) => |⬆  34 17  D |=  34 16 Gy |⬇  34 15 Xc
+| alkaline Af-8∙ (1.000) + alkaline Dx-16∙(1.603) => |⬆  24 13  S |= (24 12 Pt)|⬇  24 11 Fw [r] +1500 Makes Pt-24 using 1036.03 nuclear
+| alkaline Af-8∙ (1.000) + noble    Pt-26∙(1.813) => |⬆  34 17  D |= (34 16 Gy)|⬇  34 15 Xc [r] +1500 Makes Gy-34 using 1351.64 nuclear
 | alkaline Af-8∙ (1.000) + alkaline S-26ª (0.855) => |⬆  34 18 Fj |= (34 17  D)|⬇  34 16 Gy [r] +2000 Makes D-34  using 1067.10 which is a little cheaper than Xl-10+Pt-24+1145=>D-34
 | alkaline Af-9∙ (1.000) + nonmetal Pq-14⁻(0.561) => |⬆ (23 11 Fw)|=  23 10  M |⬇  23  9 Pm [r] +1600 Makes Fw-23 using  751.60
-| alkaline Af-9∙ (1.000) + noble    Zz-14ª(0.640) => |⬆  23 12 Pt |=  23 11 Fw |⬇  23 10  M
-| alkaline Af-9∙ (1.000) + alkaline Dx-17∙(1.588) => |⬆  26 13  S |=  26 12 Pt |⬇  26 11 Fw
+| alkaline Af-9∙ (1.000) + noble    Zz-14ª(0.640) => |⬆  23 12 Pt |= (23 11 Fw)|⬇  23 10  M [r] +1500 Makes Fw-23 using  769.10 nuclear
+| alkaline Af-9∙ (1.000) + alkaline Dx-17∙(1.588) => |⬆  26 13  S |=  26 12 Pt |⬇  26 11 Fw [r] +1500 Makes Pt-26 using 1099.38 nuclear
 | alkaline Af-9∙ (1.000) + metal    Pm-17⁺(0.684) => |⬆  26 14 Zq |=  26 13  S |⬇  26 12 Pt
-| alkaline Af-9∙ (1.000) + metal    M-20∙ (1.940) => |⬆  29 15 Xc |=  29 14 Zq |⬇  29 13  S
+| alkaline Af-9∙ (1.000) + metal    M-20∙ (1.940) => |⬆  29 15 Xc |= (29 14 Zq)|⬇  29 13  S [r] +1500 Makes Zq-29 using 1277.63 nuclear
 | alkaline Af-9∙ (1.000) + metal    M-23⁻ (0.762) => |⬆  32 15 Xc |=  32 14 Zq |⬇  32 13  S
 | alkaline Af-9∙ (1.000) + noble    Pt-25ª(0.890) => |⬆  34 17  D |=  34 16 Gy |⬇  34 15 Xc
-| alkaline Af-9∙ (1.000) + noble    Pt-26∙(1.813) => |⬆  35 17  D |=  35 16 Gy |⬇  35 15 Xc
-| alkaline Af-9∙ (1.000) + alkaline S-26ª (0.855) => |⬆  35 18 Fj |=  35 17  D |⬇  35 16 Gy
-| metal    Xl-9⁺ (0.329) + nonmetal Pq-12ª(0.696) => |⬆  21 12 Pt |=  21 11 Fw |⬇  21 10  M
-| metal    Xl-9⁺ (0.329) + nonmetal Pq-13∙(1.281) => |⬆  22 12 Pt |=  22 11 Fw |⬇  22 10  M
-| metal    Xl-9⁺ (0.329) + nonmetal Pq-14⁻(0.561) => |⬆  23 12 Pt |=  23 11 Fw |⬇  23 10  M
-| metal    Xl-9⁺ (0.329) + noble    Zz-14ª(0.640) => |⬆  23 13  S |=  23 12 Pt |⬇  23 11 Fw
+| alkaline Af-9∙ (1.000) + noble    Pt-26∙(1.813) => |⬆  35 17  D |= (35 16 Gy)|⬇  35 15 Xc [r] +2000 Makes Gy-35 using 1429.29 nuclear
+| alkaline Af-9∙ (1.000) + alkaline S-26ª (0.855) => |⬆  35 18 Fj |= (35 17  D)|⬇  35 16 Gy [r] +2000 Makes D-35  using 1106.98 nuclear
+| metal    Xl-9⁺ (0.329) + nonmetal Pq-12ª(0.696) => |⬆  21 12 Pt |= (21 11 Fw)|⬇  21 10  M [r] +2000 Makes Fw-21 using  607.21 nuclear
+| metal    Xl-9⁺ (0.329) + nonmetal Pq-13∙(1.281) => |⬆  22 12 Pt |= (22 11 Fw)|⬇  22 10  M [r] +800  Makes Fw-22 using  678.49 nuclear
+| metal    Xl-9⁺ (0.329) + nonmetal Pq-14⁻(0.561) => |⬆  23 12 Pt |= (23 11 Fw)|⬇  23 10  M [r] +900  Makes Fw-23 using  556.53 nuclear
+| metal    Xl-9⁺ (0.329) + noble    Zz-14ª(0.640) => |⬆  23 13  S |= (23 12 Pt)|⬇  23 11 Fw [r] +790  Makes Pt-23 using  568.17 nuclear
 | metal    Xl-9⁺ (0.329) + alkaline Dx-15⁺(0.604) => |⬆  24 14 Zq |=  24 13  S |⬇  24 12 Pt
 | metal    Xl-9⁺ (0.329) + alkaline Dx-16∙(1.603) => |⬆  25 14 Zq |=  25 13  S |⬇  25 12 Pt
 | metal    Xl-9⁺ (0.329) + alkaline Dx-17∙(1.588) => |⬆  26 14 Zq |=  26 13  S |⬇  26 12 Pt
@@ -187,7 +198,7 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | metal    Xl-9⁺ (0.329) + metal    M-23⁻ (0.762) => |⬆  32 16 Gy |=  32 15 Xc |⬇  32 14 Zq
 | metal    Xl-9⁺ (0.329) + noble    Pt-25ª(0.890) => |⬆  34 18 Fj |=  34 17  D |⬇  34 16 Gy
 | metal    Xl-9⁺ (0.329) + noble    Pt-26∙(1.813) => |⬆  35 18 Fj |=  35 17  D |⬇  35 16 Gy
-| metal    Xl-9⁺ (0.329) + nonmetal Xc-31∙(1.046) => |⬆  40 21  E |=  40 20  C |⬇  40 19  O
+| metal    Xl-9⁺ (0.329) + nonmetal Xc-31∙(1.046) => |⬆  40 21  E |= (40 20  C)|⬇  40 19  O [r] +4000 Makes C-40  using 1097.28 nuclear
 | metal    Xl-9⁺ (0.329) + noble    Gy-34∙(1.956) => |⬆  43 22  A |=  43 21  E |⬇  43 20  C
 | metal    Xl-10ª(0.487) + nonmetal Pq-10⁺(0.049) => |⬆  20 12 Pt |=  20 11 Fw |⬇ (20 10  M)[r] +1500 Makes M-20  using  459.27
 | metal    Xl-10ª(0.487) + noble    Zz-14ª(0.640) => |⬆  24 13  S |=  24 12 Pt |⬇  24 11 Fw
@@ -233,8 +244,8 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | nonmetal Pq-14⁻(0.561) + alkaline S-25⁺ (0.789) => |⬆  39 20  C |=  39 19  O |⬇  39 18 Fj
 | nonmetal Pq-14⁻(0.561) + alkaline S-26ª (0.855) => |⬆  40 20  C |=  40 19  O |⬇  40 18 Fj
 | nonmetal Pq-14⁻(0.561) + metal    Zq-32⁻(0.771) => |⬆ (46 21  E)|=  46 20  C |⬇  46 19  O [r] +2000 Makes E-46  using 1195.88
-| nonmetal Pq-14⁻(0.561) + nonmetal Xc-30∙(1.990) => |⬆  44 22  A |=  44 21  E |⬇  44 20  C
-| nonmetal Pq-14⁻(0.561) + nonmetal Xc-31∙(1.046) => |⬆  45 22  A |=  45 21  E |⬇  45 20  C
+| nonmetal Pq-14⁻(0.561) + nonmetal Xc-30∙(1.990) => |⬆  44 22  A |= (44 21  E)|⬇  44 20  C [r] +4000 Makes E-44  using 1701.45 nuclear
+| nonmetal Pq-14⁻(0.561) + nonmetal Xc-31∙(1.046) => |⬆  45 22  A |= (45 21  E)|⬇  45 20  C [r] +4000 Makes E-45  using 1386.32 nuclear
 | nonmetal Pq-14⁻(0.561) + noble    Gy-34∙(1.956) => |⬆  48 23 Aw |=  48 22  A |⬇  48 21  E
 | nonmetal Pq-14⁻(0.561) + metal    Fj-37ª(0.942) => |⬆  51 25 Nb |=  51 24 Oc |⬇  51 23 Aw
 | nonmetal Pq-15⁻(0.277) + noble    Zz-13⁺(0.525) => |⬆  28 14 Zq |=  28 13  S |⬇  28 12 Pt
@@ -243,7 +254,7 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | nonmetal Pq-15⁻(0.277) + alkaline Dx-17∙(1.588) => |⬆  32 15 Xc |=  32 14 Zq |⬇  32 13  S
 | nonmetal Pq-15⁻(0.277) + metal    Pm-17⁺(0.684) => |⬆  32 16 Gy |=  32 15 Xc |⬇  32 14 Zq
 | nonmetal Pq-15⁻(0.277) + noble    Pt-26∙(1.813) => |⬆  41 19  O |=  41 18 Fj |⬇  41 17  D
-| nonmetal Pq-15⁻(0.277) + metal    Zq-32⁻(0.771) => |⬆  47 21  E |=  47 20  C |⬇  47 19  O
+| nonmetal Pq-15⁻(0.277) + metal    Zq-32⁻(0.771) => |⬆ (47 21  E)|=  47 20  C |⬇  47 19  O [r] +4000 Makes E-47  using 1187.55
 | noble    Zz-13⁺(0.525) + metal    Pm-17⁺(0.684) => |⬆  30 17  D |=  30 16 Gy |⬇  30 15 Xc nah
 | noble    Zz-13⁺(0.525) + metal    Pm-19∙(1.837) => |⬆  32 17  D |=  32 16 Gy |⬇  32 15 Xc
 | noble    Zz-13⁺(0.525) + metal    M-22∙ (1.849) => |⬆  35 18 Fj |= (35 17  D)|⬇  35 16 Gy [r] +2000 Makes D-35  using 1285.20
@@ -254,37 +265,37 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | noble    Zz-14ª(0.640) + noble    Pt-26∙(1.813) => |⬆  40 20  C |=  40 19  O |⬇  40 18 Fj
 | noble    Zz-14ª(0.640) + nonmetal Xc-34⁻(0.851) => |⬆  48 23 Aw |=  48 22  A |⬇  48 21  E
 | noble    Zz-14ª(0.640) + alkaline D-37⁻ (0.895) => |⬆  51 25 Nb |=  51 24 Oc |⬇  51 23 Aw
-| alkaline Dx-15⁺(0.604) + metal    Pm-18⁺(0.775) => |⬆  33 18 Fj |=  33 17  D |⬇  33 16 Gy
-| alkaline Dx-15⁺(0.604) + alkaline S-26ª (0.855) => |⬆  41 22  A |=  41 21  E |⬇  41 20  C
+| alkaline Dx-15⁺(0.604) + metal    Pm-18⁺(0.775) => |⬆  33 18 Fj |= (33 17  D)|⬇  33 16 Gy [r] +4000 Makes D-33  using 1063.66 nuclear
+| alkaline Dx-15⁺(0.604) + alkaline S-26ª (0.855) => |⬆  41 22  A |= (41 21  E)|⬇  41 20  C [r] +4000 Makes E-41  using 1263.38 nuclear
 | alkaline Dx-15⁺(0.604) + nonmetal Xc-34⁻(0.851) => |⬆  49 24 Oc |=  49 23 Aw |⬇  49 22  A
 | alkaline Dx-16∙(1.603) + noble    Pt-24∙(1.795) => |⬆  40 21  E |=  40 20  C |⬇  40 19  O
-| alkaline Dx-16∙(1.603) + noble    Pt-25ª(0.890) => |⬆  41 21  E |=  41 20  C |⬇  41 19  O
-| alkaline Dx-16∙(1.603) + nonmetal Xc-31∙(1.046) => |⬆  47 24 Oc |=  47 23 Aw |⬇  47 22  A
+| alkaline Dx-16∙(1.603) + noble    Pt-25ª(0.890) => |⬆  41 21  E |= (41 20  C)|⬇  41 19  O [r] +4000 Makes C-41  using 1700.03 nuclear
+| alkaline Dx-16∙(1.603) + nonmetal Xc-31∙(1.046) => |⬆  47 24 Oc |= (47 23 Aw)|⬇  47 22  A [r] +4000 Makes Aw-47 using 1967.60 nuclear
 | alkaline Dx-16∙(1.603) + nonmetal Xc-34⁻(0.851) => |⬆  50 24 Oc |=  50 23 Aw |⬇  50 22  A
 | alkaline Dx-17∙(1.588) + alkaline Dx-17∙(1.588) => |⬆  34 17  D |=  34 16 Gy |⬇  34 15 Xc
 | alkaline Dx-17∙(1.588) + metal    Pm-18⁺(0.775) => |⬆  35 18 Fj |=  35 17  D |⬇  35 16 Gy
 | alkaline Dx-17∙(1.588) + metal    M-20∙ (1.940) => |⬆  37 19  O |=  37 18 Fj |⬇  37 17  D
-| alkaline Dx-17∙(1.588) + nonmetal Fw-25⁻(0.737) => |⬆  42 20  C |=  42 19  O |⬇  42 18 Fj
-| alkaline Dx-17∙(1.588) + alkaline S-26ª (0.855) => |⬆  43 22  A |=  43 21  E |⬇  43 20  C
-| alkaline Dx-17∙(1.588) + alkaline D-37⁻ (0.895) => |⬆  54 26 Xk |=  54 25 Nb |⬇  54 24 Oc
-| metal    Pm-17⁺(0.684) + metal    M-23⁻ (0.762) => |⬆  40 20  C |=  40 19  O |⬇  40 18 Fj
-| metal    Pm-17⁺(0.684) + noble    Pt-26∙(1.813) => |⬆  43 22  A |=  43 21  E |⬇  43 20  C
-| metal    Pm-17⁺(0.684) + metal    Zq-32⁻(0.771) => |⬆  49 24 Oc |=  49 23 Aw |⬇  49 22  A
-| metal    Pm-17⁺(0.684) + nonmetal Xc-34⁻(0.851) => |⬆  51 25 Nb |=  51 24 Oc |⬇  51 23 Aw
-| metal    Pm-17⁺(0.684) + noble    Gy-34∙(1.956) => |⬆  51 26 Xk |=  51 25 Nb |⬇  51 24 Oc
-| metal    Pm-17⁺(0.684) + alkaline D-37⁻ (0.895) => |⬆  54 27 Ic |=  54 26 Xk |⬇  54 25 Nb
-| metal    Pm-18⁺(0.775) + metal    Zq-32⁻(0.771) => |⬆  50 24 Oc |=  50 23 Aw |⬇  50 22  A
-| metal    Pm-18⁺(0.775) + nonmetal Xc-34⁻(0.851) => |⬆  52 25 Nb |=  52 24 Oc |⬇  52 23 Aw
-| metal    Pm-18⁺(0.775) + nonmetal Aw-50∙(1.004) => |⬆  68 33 Pw |=  68 32 Ny |⬇  68 31 At
-| metal    Pm-19∙(1.837) + noble    Gy-34∙(1.956) => |⬆  53 26 Xk |=  53 25 Nb |⬇  53 24 Oc
-| metal    M-20∙ (1.940) + metal    M-23⁻ (0.762) => |⬆  43 21  E |=  43 20  C |⬇  43 19  O
-| metal    M-20∙ (1.940) + noble    Pt-26∙(1.813) => |⬆  46 23 Aw |=  46 22  A |⬇  46 21  E
-| metal    M-20∙ (1.940) + metal    Zq-32⁻(0.771) => |⬆  52 25 Nb |=  52 24 Oc |⬇  52 23 Aw
-| metal    M-22∙ (1.849) + noble    Pt-26∙(1.813) => |⬆  48 23 Aw |=  48 22  A |⬇  48 21  E
-| metal    M-23⁻ (0.762) + alkaline S-25⁺ (0.789) => |⬆  48 24 Oc |=  48 23 Aw |⬇  48 22  A
-| noble    Pt-24∙(1.795) + alkaline S-26ª (0.855) => |⬆  50 26 Xk |=  50 25 Nb |⬇  50 24 Oc
+| alkaline Dx-17∙(1.588) + nonmetal Fw-25⁻(0.737) => |⬆  42 20  C |= (42 19  O)|⬇  42 18 Fj [r] +4000 Makes O-42  using 1651.17 nuclear
+| alkaline Dx-17∙(1.588) + alkaline S-26ª (0.855) => |⬆  43 22  A |= (43 21  E)|⬇  43 20  C [r] +4000 Makes E-43  using 1746.70 nuclear
+| alkaline Dx-17∙(1.588) + alkaline D-37⁻ (0.895) => |⬆  54 26 Xk |= (54 25 Nb)|⬇  54 24 Oc [r] +4000 Makes Nb-54 using 2091.23 nuclear
+| metal    Pm-17⁺(0.684) + metal    M-23⁻ (0.762) => |⬆  40 20  C |= (40 19  O)|⬇  40 18 Fj [r] +4000 Makes O-40  using 1255.46 nuclear
+| metal    Pm-17⁺(0.684) + noble    Pt-26∙(1.813) => |⬆  43 22  A |= (43 21  E)|⬇  43 20  C [r] +4000 Makes E-43  using 1733.26 nuclear
+| metal    Pm-17⁺(0.684) + metal    Zq-32⁻(0.771) => |⬆  49 24 Oc |= (49 23 Aw)|⬇  49 22  A [r] +4000 Makes Aw-49 using 1455.23 nuclear
+| metal    Pm-17⁺(0.684) + nonmetal Xc-34⁻(0.851) => |⬆  51 25 Nb |= (51 24 Oc)|⬇  51 23 Aw [r] +4000 Makes Oc-51 using 1535.20 nuclear
+| metal    Pm-17⁺(0.684) + noble    Gy-34∙(1.956) => |⬆  51 26 Xk |= (51 25 Nb)|⬇  51 24 Oc [r] +4000 Makes Nb-51 using 2024.17 nuclear
+| metal    Pm-17⁺(0.684) + alkaline D-37⁻ (0.895) => |⬆  54 27 Ic |= (54 26 Xk)|⬇  54 25 Nb [r] +4000 Makes Xk-54 using 1620.22 nuclear
+| metal    Pm-18⁺(0.775) + metal    Zq-32⁻(0.771) => |⬆  50 24 Oc |= (50 23 Aw)|⬇  50 22  A [r] +4000 Makes Aw-50 using 1534.53 nuclear
+| metal    Pm-18⁺(0.775) + nonmetal Xc-34⁻(0.851) => |⬆  52 25 Nb |= (52 24 Oc)|⬇  52 23 Aw [r] +4000 Makes Oc-52 using 1619.55 nuclear
+| metal    Pm-18⁺(0.775) + nonmetal Aw-50∙(1.004) => |⬆  68 33 Pw |= (68 32 Ny)|⬇  68 31 At [r] +5000 Makes Ny-68 using 2106.45 nuclear
+| metal    Pm-19∙(1.837) + noble    Gy-34∙(1.956) => |⬆  53 26 Xk |= (53 25 Nb)|⬇  53 24 Oc [r] +4000 Makes Nb-53 using 2918.11 nuclear
+| metal    M-20∙ (1.940) + metal    M-23⁻ (0.762) => |⬆  43 21  E |= (43 20  C)|⬇  43 19  O [r] +4000 Makes C-43  using 1850.06 nuclear
+| metal    M-20∙ (1.940) + noble    Pt-26∙(1.813) => |⬆  46 23 Aw |= (46 22  A)|⬇  46 21  E [r] +4000 Makes A-46  using 2597.04 nuclear
+| metal    M-20∙ (1.940) + metal    Zq-32⁻(0.771) => |⬆  52 25 Nb |= (52 24 Oc)|⬇  52 23 Aw [r] +5000 Makes Oc-52 using 2212.38 nuclear
+| metal    M-22∙ (1.849) + noble    Pt-26∙(1.813) => |⬆  48 23 Aw |= (48 22  A)|⬇  48 21  E [r] +4000 Makes A-48  using 2657.99 nuclear
+| metal    M-23⁻ (0.762) + alkaline S-25⁺ (0.789) => |⬆  48 24 Oc |= (48 23 Aw)|⬇  48 22  A [r] +2000 Makes Aw-48 using 1422.38
+| noble    Pt-24∙(1.795) + alkaline S-26ª (0.855) => |⬆  50 26 Xk |= (50 25 Nb)|⬇  50 24 Oc [r] +3000 Makes Nb-50 using 2069.37 nuclear
 | nonmetal Xc-31∙(1.046) + alkaline Nb-54ª(0.903) => |⬆  85 41 Sq |=  85 40  U |⬇  85 39  H [r]  <--- Makes NbXc(Nb-54>Xc-31) using  432.27
-| nonmetal Xc-34⁻(0.851) + alkaline Nb-54ª(0.903) => |⬆  88 41 Sq |=  88 40  U |⬇  88 39  H [ ] 
+| nonmetal Xc-34⁻(0.851) + alkaline Nb-54ª(0.903) => |⬆  88 41 Sq |=  88 40  U |⬇  88 39  H [r]+10000 Makes NbXc(Nb-54>Xc-34) using  533.41 chemical
 
 
 Some vim commands for replacing otoms before the 36 virtual column with the series name they belong to
