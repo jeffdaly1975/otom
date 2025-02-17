@@ -1,3 +1,5 @@
+2025-02-17 Feb.Mon 12:29:55 [ ] I need to add a seriesdict[] to my vim syntax file so I can lookup what series each isotope belongs to, alkaline, metal, nonmetal, noble
+
 2025-02-16 Feb.Sun 18:25:34 I'm missing a Gk-65. Need to remake
 
 [r] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
@@ -49,7 +51,7 @@
   | alkaline Af-9∙ (1.000) + nonmetal Pq-14⁻(0.561) => |⬆ (23 11 Fw)|            |                +1600 Makes Fw-23 using  751.60
   | nonmetal Pq-10⁺(0.049) + alkaline S-25⁺ (0.789) => |            |            |⬇ (35 18 Fj)    +1500 Makes Fj-35 using  726.20
   | nonmetal Pq-15⁻(0.277) + alkaline Dx-15⁺(0.604) => |            |= (30 14 Zq)|                +2000 Makes Zq-30 using  739.10
-  | nonmetal Xc-31∙(1.046) + alkaline Nb-54ª(0.903) => |            |            |                 <--- Makes NbXc  using  432.27
+  | nonmetal Xc-31∙(1.046) + alkaline Nb-54ª(0.903) => |            |            |                 <--- Makes NbXc(Nb-54>Xc-34) using  432.27
 
   ==nonmetal + noble =========================================================================   ==========================
   | nonmetal W-4∙  (1.000) + noble    Cq-5⁺ (0.017) => |            |            |⬇ ( 9  4 Af)    <---- Makes Af-9  using  331.69
@@ -2197,14 +2199,14 @@ First make prerequisites
 [f]  5  3 Cq(0.017) + 78 35 Qi(0.870) + 5000 => |⬆  83  39  H |=  83  38 Bt |⬇  83  37 Gq <--NOPE MADE W-5+Qi-78
 
 [r]  9  4 Af(1.000) + 15  6 Pq(0.277) +  750 => 24 11 Fw(0.815)
-[r] 24 11 Fw(0.815) + 54 25 Nb(0.903) + 2500 => 78 36 Xy(0.874)
-[*]  5  3 Cq(0.017) + 78 36 Xy(0.874) => |⬆  83  40  U |=  83  39  H |⬇  83  38 Bt [ ] maybe  H-83
+[r] 24 11 Fw(0.815) + 54 25 Nb(0.903) + 2311 => 78 36 Xy(0.874)
+[f]  5  3 Cq(0.017) + 78 36 Xy(0.874) + 5500 => |⬆  83  40  U |=  83  39  H |⬇  83  38 Bt <---NOPE MADE W-5+Xy-78
 
-[ ] 25 12 Pt(0.890) + 54 25 Nb(0.903) + 2550 => 79 37 Gq(0.885)
-[ ]  5  3 Cq(0.017) + 79 37 Gq(0.885) => |⬆  84  41 Sq |=  84  40  U |⬇  84  39  H [ ] maybe  U-84
+[r] 25 12 Pt(0.890) + 54 25 Nb(0.903) + 2420 => 79 37 Gq(0.885)
+[f]  5  3 Cq(0.017) + 79 37 Gq(0.885) + 5500 => |⬆  84  41 Sq |=  84  40  U |⬇  84  39  H <---NOPE MADE W-5+Gq-79
 
-[ ] 30 15 Xc(1.990) + 50 23 Aw(1.004) + 3600 => 80 38 Bt(0.897)
-[ ]  5  3 Cq(0.017) + 80 38 Bt(0.897) => |⬆  85  42 Ua |=  85  41 Sq |⬇  85  40  U [ ] maybe Sq-85
+[ ] 30 15 Xc(1.990)  + 50 23 Aw(1.004)  + 3600 => 80 38 Bt(0.897)
+[ ]  5  3 Cq⁺(0.017) + 80 38 Bt⁻(0.897) => |⬆  85  42 Ua |=  85  41 Sq |⬇  85  40  U [ ] maybe Sq-85
 
 
 
@@ -2213,10 +2215,10 @@ First make prerequisites
 
 
 TRY
-[.]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
-[ ] 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb
-[ ] 47 25 Nb +            3687 => 22 12 Pt + 25 13  S
-[ ] 22 12 Pt + 2000 => ?
+[r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+[r] 13  7 Zz + 34 18 Fj + 1146 => 47 25 Nb
+[r] 47 25 Nb +            3687 => 22 12 Pt + 25 13  S
+[r] 22 12 Pt + 2000 => ?
 
 2025-01-31 Jan.Fri 15:56:00 Updated parseReactorLog.pl to give summaries at the end of processing to show how many of each isotope/molecule have been produced through reactions. Surprising to see Cq-6 is the top.
 
