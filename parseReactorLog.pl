@@ -1813,12 +1813,13 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 # nuclear  = 6e75636c656172     => prepend with number of encoded chars and pad it  => /00076e75636c65617200000000000000000000000000000000000000000000000000$/
 # metallic = 6d6574616c6c6963   => prepend with number of encoded chars and pad it  => /00086d6574616c6c6963000000000000000000000000000000000000000000000000$/
 my @reaction_types=();
+my %reaction_hash=();
 for ( 1 .. 7 ){
 
-    if ($line =~ /00000000000000000000000000000000000000000000000000000000000000056465636179000000000000000000000000000000000000000000000000000000$/){push @reaction_types, "decay"    }
- elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000076e75636c65617200000000000000000000000000000000000000000000000000$/){push @reaction_types, "nuclear"  }
- elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000086368656d6963616c000000000000000000000000000000000000000000000000$/){push @reaction_types, "chemical" }
- elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000086d6574616c6c6963000000000000000000000000000000000000000000000000$/){push @reaction_types, "metallic" }
+    if ($line =~ /00000000000000000000000000000000000000000000000000000000000000056465636179000000000000000000000000000000000000000000000000000000$/){push @reaction_types, "decay"   ;$reaction_hash{"decay"}=1;    }
+ elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000076e75636c65617200000000000000000000000000000000000000000000000000$/){push @reaction_types, "nuclear" ;$reaction_hash{"nuclear"}=1;  }
+ elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000086368656d6963616c000000000000000000000000000000000000000000000000$/){push @reaction_types, "chemical";$reaction_hash{"chemical"}=1; }
+ elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000086d6574616c6c6963000000000000000000000000000000000000000000000000$/){push @reaction_types, "metallic";$reaction_hash{"metallic"}=1; }
  $line =~ s/.{64}\s*$//; # trim last 64
 
  }
@@ -1858,6 +1859,7 @@ if (@reaction_types){
  $db{$otomro}{"protons_out"}           = $output_protons;
  $db{$otomro}{"energy_out"}            = $energy_returned;
  $db{$otomro}{"type"}                  = $reaction_string;
+ $db{$otomro}{"typehash"}              = { %reaction_hash };
  $db{$otomro}{"analyse_tx"}            = $txhash;
  $db{$otomro}{"blocknumber"}           = $blocknumber;
 
@@ -1897,9 +1899,12 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
    $db{$otomro}{"initiate_tx"},
    $db{$otomro}{"analyse_tx"} ;
 
+
    # save data for recipes
    # FOR NOW ONLY 1 OR 2 INPUT REACTIONS! [ ] At some point I need to consider removing this limit
-   if ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) <= 2){
+   if (  ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) <= 2 )
+      && ( keys %{ $db{$otomro}{"typehash"} } > 0          ) # only for those with actual successful reactions
+      ){
      foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){  
 ###print STDERR "DEBUG: otomro[$otomro] one[$one]\n";
       my $rounded_energy_input = sprintf "%.0f", $db{$otomro}{"energy_in"};
@@ -1936,6 +1941,7 @@ foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
   my %seenthis=();
   foreach my $r ( sort keys %{ $recipes{$k} } ){   # r == "S-26 + Fj-35 => At-61"
      my $this_otomro=$recipes{$k}{$r}{otomro};
+#[ ] should/could we check here if it was a successful reaction or NONE?
 
      my $s=sprintf "| %-5s | %s\n", $k, $db{$this_otomro}{otoms_in} ." + ". $recipes{$k}{$r}{nrg_in} ." => ". $db{$this_otomro}{otoms_out} ;
      unless (exists $seenthis{$s}){
