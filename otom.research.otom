@@ -845,7 +845,7 @@ That list is here:
  32 14 Zq⁻(0.771) +  58 26 Xk⁻(0.858) => |⬆  90 41 Sq |=  90 40  U |⬇  90 39  H
  32 14 Zq⁻(0.771) +  59 26 Xk⁻(0.780) => |⬆  91 41 Sq |=  91 40  U |⬇  91 39  H
 
-2025-02-17 Feb.Mon 12:29:55 [ ] I need to add a seriesdict[] to my vim syntax file so I can lookup what series each isotope belongs to, alkaline, metal, nonmetal, noble
+2025-02-17 Feb.Mon 12:29:55 [r] I need to add a seriesdict[] to my vim syntax file so I can lookup what series each isotope belongs to, alkaline, metal, nonmetal, noble
 I think I need to make it possible to toggle between isotopes being colored based on rarity (mineable and nonmineable) and based on decay types (alpha, beta+, beta-, stabile) and based on series (metal, nonmetal, alkaline, noble)
 Then take a look at the charts
 
@@ -943,7 +943,7 @@ Then take a look at the charts
   | noble    Zz-14ª(0.640) + noble    Zz-14ª(0.640) => |            |= (28 14 Zq)|                +3000 Makes Zq-28 using  872.38
 
 
-2025-02-15 Feb.Sat 20:07:25 [ ] Accidentally did this one and now I need to remake Ny-61!
+2025-02-15 Feb.Sat 20:07:25 [r] Accidentally did this one and now I need to remake Ny-61!
   5  2  W  + 61 32 Ny  +  2000 => 66 33 Pw +     630.23 | nuclear, decay         | 1369.77 | 
 
 [r] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
@@ -970,7 +970,7 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | alkaline Ju-2∙ (1.000) + metal    M-23⁻ (0.762) => |⬆ (25 12 Pt)|=  25 11 Fw |⬇  25 10  M [r] +2000 Makes Pt-25        using  742.41 decay+nuclear
 | alkaline Ju-2∙ (1.000) + nonmetal Fw-25⁻(0.737) => |⬆  27 13  S |= (27 12 Pt)|⬇  27 11 Fw [r] +2000 Makes Pt-27        using  763.29 nuclear
 | alkaline Ju-3∙ (1.000) + noble    Cq-5⁺ (0.017) => |⬆   8  5 Xl |= ( 8  4 Af)|⬇   8  3 Cq [r] +1000 Makes Af-8         using  315.81 nuclear
-| alkaline Ju-3∙ (1.000) + nonmetal Pq-15⁻(0.277) => |⬆  18  8 Dx |=  18  7 Zz |⬇  18  6 Pq [r] + 500 Makes Dx-18        using  477.76 decay+nuclear
+| alkaline Ju-3∙ (1.000) + nonmetal Pq-15⁻(0.277) => |⬆ (18  8 Dx)|=  18  7 Zz |⬇  18  6 Pq [r] + 500 Makes Dx-18        using  477.76 decay+nuclear
 | alkaline Ju-3∙ (1.000) + alkaline Dx-15⁺(0.604) => |⬆  18 10  M |=  18  9 Pm |⬇ (18  8 Dx)[r] +2000 Makes Dx-18        using  626.87 decay+nuclear
 | alkaline Ju-3∙ (1.000) + metal    Pm-18⁺(0.775) => |⬆  21 11 Fw |= (21 10  M)|⬇  21  9 Pm [r] +2000 Makes M-21         using  711.84 nuclear
 | alkaline Ju-3∙ (1.000) + metal    Pm-19∙(1.837) => |⬆  22 11 Fw |= (22 10  M)|⬇  22  9 Pm [r] +2000 Makes M-22         using  957.50 nuclear
@@ -1015,10 +1015,10 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | noble    Cq-7∙ (1.000) + nonmetal Pq-15⁻(0.277) => |⬆ (22 10  M)|=  22  9 Pm |⬇  22  8 Dx [r] +2000 Makes M-22         using  656.76 decay+nuclear
 | noble    Cq-7∙ (1.000) + alkaline Dx-15⁺(0.604) => |⬆  22 12 Pt |= (22 11 Fw)|⬇  22 10  M [r] +1500 Makes Fw-22        using  722.89 nuclear
 | noble    Cq-7∙ (1.000) + alkaline Dx-16∙(1.603) => |⬆  23 12 Pt |= (23 11 Fw)|⬇  23 10  M [r] +2000 Makes Fw-23        using 1020.56 nuclear
-| noble    Cq-7∙ (1.000) + metal    Pm-18⁺(0.775) => |⬆  25 13  S |=  25 12 Pt |⬇  25 11 Fw [r] +1800 Makes Pt-25        using  842.38 nuclear
+| noble    Cq-7∙ (1.000) + metal    Pm-18⁺(0.775) => |⬆  25 13  S |= (25 12 Pt)|⬇  25 11 Fw [r] +1800 Makes Pt-25        using  842.38 nuclear
 | noble    Cq-7∙ (1.000) + nonmetal Fw-25⁻(0.737) => |⬆ (32 15 Xc)|=  32 14 Zq |⬇  32 13  S [r] +2000 Makes Xc-32        using  969.15 decay+nuclear
 | noble    Cq-7∙ (1.000) + noble    Pt-24∙(1.795) => |⬆  31 16 Gy |= (31 15 Xc)|⬇  31 14 Zq [r] +2000 Makes Xc-31        using 1269.43 nuclear
-| noble    Cq-7∙ (1.000) + nonmetal Xc-30∙(1.990) => |⬆  37 19  O |=  37 18 Fj |⬇  37 17  D [r] +2000 Makes Fj-37        using 1471.63 nuclear
+| noble    Cq-7∙ (1.000) + nonmetal Xc-30∙(1.990) => |⬆  37 19  O |= (37 18 Fj)|⬇  37 17  D [r] +2000 Makes Fj-37        using 1471.63 nuclear
 | alkaline Af-7ª (0.194) + nonmetal Pq-10⁺(0.049) => |⬆  17 11 Fw |=  17 10  M |⬇ (17  9 Pm)[r] +1200 Makes Pm-17        using  353.98 nuclear+decay
 | alkaline Af-7ª (0.194) + nonmetal Pq-14⁻(0.561) => |⬆  21 11 Fw |= (21 10  M)|⬇  21  9 Pm [r] +1000 Makes M-21         using  488.15 nuclear
 | alkaline Af-7ª (0.194) + nonmetal Pq-15⁻(0.277) => |⬆  22 11 Fw |= (22 10  M)|⬇  22  9 Pm [r] +1000 Makes M-22         using  444.84 nuclear
@@ -1030,7 +1030,7 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | alkaline Af-8∙ (1.000) + alkaline S-26ª (0.855) => |⬆  34 18 Fj |= (34 17  D)|⬇  34 16 Gy [r] +2000 Makes D-34         using 1067.10 which is a little cheaper than Xl-10+Pt-24+1145=>D-34
 | alkaline Af-9∙ (1.000) + nonmetal Pq-14⁻(0.561) => |⬆ (23 11 Fw)|=  23 10  M |⬇  23  9 Pm [r] +1600 Makes Fw-23        using  751.60 decay+ nuclear
 | alkaline Af-9∙ (1.000) + noble    Zz-14ª(0.640) => |⬆  23 12 Pt |= (23 11 Fw)|⬇  23 10  M [r] +1500 Makes Fw-23        using  769.10 nuclear
-| alkaline Af-9∙ (1.000) + alkaline Dx-17∙(1.588) => |⬆  26 13  S |=  26 12 Pt |⬇  26 11 Fw [r] +1500 Makes Pt-26        using 1099.38 nuclear
+| alkaline Af-9∙ (1.000) + alkaline Dx-17∙(1.588) => |⬆  26 13  S |= (26 12 Pt)|⬇  26 11 Fw [r] +1500 Makes Pt-26        using 1099.38 nuclear
 | alkaline Af-9∙ (1.000) + metal    Pm-17⁺(0.684) => |⬆  26 14 Zq |= (26 13  S)|⬇  26 12 Pt [r] +2000 Makes S-26         using  869.26 nuclear
 | alkaline Af-9∙ (1.000) + metal    M-20∙ (1.940) => |⬆  29 15 Xc |= (29 14 Zq)|⬇  29 13  S [r] +1500 Makes Zq-29        using 1277.63 nuclear
 | alkaline Af-9∙ (1.000) + metal    M-23⁻ (0.762) => |⬆ (32 15 Xc)|=  32 14 Zq |⬇  32 13  S [r] +2000 Makes Xc-32        using 1015.05 nuclear+decay
@@ -1046,86 +1046,86 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | metal    Xl-9⁺ (0.329) + alkaline Dx-17∙(1.588) => |⬆  26 14 Zq |= (26 13  S)|⬇  26 12 Pt [r] +1500 Makes S-26         using  855.23 nuclear
 | metal    Xl-9⁺ (0.329) + metal    Pm-19∙(1.837) => |⬆  28 15 Xc |= (28 14 Zq)|⬇  28 13  S [r] +1500 Makes Zq-28        using  948.04 nuclear
 | metal    Xl-9⁺ (0.329) + metal    M-20∙ (1.940) => |⬆  29 16 Gy |= (29 15 Xc)|⬇  29 14 Zq [r] +2000 Makes Xc-29        using 1015.99 nuclear
-| metal    Xl-9⁺ (0.329) + metal    M-23⁻ (0.762) => |⬆  32 16 Gy |=  32 15 Xc |⬇  32 14 Zq
-| metal    Xl-9⁺ (0.329) + noble    Pt-25ª(0.890) => |⬆  34 18 Fj |=  34 17  D |⬇  34 16 Gy
-| metal    Xl-9⁺ (0.329) + noble    Pt-26∙(1.813) => |⬆  35 18 Fj |=  35 17  D |⬇  35 16 Gy
+| metal    Xl-9⁺ (0.329) + metal    M-23⁻ (0.762) => |⬆  32 16 Gy |= (32 15 Xc)|⬇  32 14 Zq [r] +2000 Makes Xc-32        using  776.96 nuclear
+| metal    Xl-9⁺ (0.329) + noble    Pt-25ª(0.890) => |⬆  34 18 Fj |= (34 17  D)|⬇  34 16 Gy [r] +1500 Makes D-34         using  836.46 nuclear
+| metal    Xl-9⁺ (0.329) + noble    Pt-26∙(1.813) => |⬆  35 18 Fj |= (35 17  D)|⬇  35 16 Gy [r] +1500 Makes D-35         using 1087.47 nuclear
 | metal    Xl-9⁺ (0.329) + nonmetal Xc-31∙(1.046) => |⬆  40 21  E |= (40 20  C)|⬇  40 19  O [r] +4000 Makes C-40         using 1097.28 nuclear
-| metal    Xl-9⁺ (0.329) + noble    Gy-34∙(1.956) => |⬆  43 22  A |=  43 21  E |⬇  43 20  C
+| metal    Xl-9⁺ (0.329) + noble    Gy-34∙(1.956) => |⬆  43 22  A |= (43 21  E)|⬇  43 20  C [r] +1500 Makes E-43         using 1279.57 nuclear
 | metal    Xl-10ª(0.487) + nonmetal Pq-10⁺(0.049) => |⬆  20 12 Pt |=  20 11 Fw |⬇ (20 10  M)[r] +1500 Makes M-20         using  459.27 decay+nuclear
 | metal    Xl-10ª(0.487) + noble    Zz-14ª(0.640) => |⬆  24 13  S |= (24 12 Pt)|⬇  24 11 Fw [r] +1500 Makes Pt-24        using  666.91 nuclear
 | metal    Xl-10ª(0.487) + alkaline Dx-17∙(1.588) => |⬆  27 14 Zq |= (27 13  S)|⬇  27 12 Pt [r] +1500 Makes S-27         using  948.56 nuclear
 | metal    Xl-10ª(0.487) + metal    Pm-17⁺(0.684) => |⬆  27 15 Xc |= (27 14 Zq)|⬇  27 13  S [r] +1200 Makes Zq-27        using  716.00 nuclear
 | metal    Xl-10ª(0.487) + metal    Pm-18⁺(0.775) => |⬆  28 15 Xc |= (28 14 Zq)|⬇  28 13  S [r] +1200 Makes Zq-28        using  757.44 nuclear
-| metal    Xl-10ª(0.487) + metal    M-20∙ (1.940) => |⬆  30 16 Gy |=  30 15 Xc |⬇  30 14 Zq
-| metal    Xl-10ª(0.487) + metal    M-23⁻ (0.762) => |⬆  33 16 Gy |=  33 15 Xc |⬇  33 14 Zq
-| metal    Xl-10ª(0.487) + noble    Pt-26∙(1.813) => |⬆  36 18 Fj |=  36 17  D |⬇  36 16 Gy
-| metal    Xl-11∙(1.110) + noble    Zz-14ª(0.640) => |⬆  25 13  S |=  25 12 Pt |⬇  25 11 Fw
-| metal    Xl-11∙(1.110) + alkaline Dx-15⁺(0.604) => |⬆  26 14 Zq |=  26 13  S |⬇  26 12 Pt
-| nonmetal Pq-10⁺(0.049) + nonmetal Pq-15⁻(0.277) => |⬆  25 13  S |=  25 12 Pt |⬇  25 11 Fw
-| nonmetal Pq-10⁺(0.049) + noble    Zz-14ª(0.640) => |⬆  24 14 Zq |=  24 13  S |⬇  24 12 Pt
-| nonmetal Pq-10⁺(0.049) + alkaline Dx-16∙(1.603) => |⬆  26 15 Xc |=  26 14 Zq |⬇  26 13  S
-| nonmetal Pq-10⁺(0.049) + alkaline Dx-17∙(1.588) => |⬆  27 15 Xc |=  27 14 Zq |⬇  27 13  S
+| metal    Xl-10ª(0.487) + metal    M-20∙ (1.940) => |⬆  30 16 Gy |= (30 15 Xc)|⬇  30 14 Zq [r] +1500 Makes Xc-30        using 1100.57 nuclear
+| metal    Xl-10ª(0.487) + metal    M-23⁻ (0.762) => |⬆  33 16 Gy |= (33 15 Xc)|⬇  33 14 Zq [r] +1500 Makes Xc-33        using  855.33 nuclear
+| metal    Xl-10ª(0.487) + noble    Pt-26∙(1.813) => |⬆  36 18 Fj |= (36 17  D)|⬇  36 16 Gy [r] +1500 Makes D-36         using 1208.58 nuclear
+| metal    Xl-11∙(1.110) + noble    Zz-14ª(0.640) => |⬆  25 13  S |= (25 12 Pt)|⬇  25 11 Fw [r] +1500 Makes Pt-25        using  849.80 nuclear
+| metal    Xl-11∙(1.110) + alkaline Dx-15⁺(0.604) => |⬆  26 14 Zq |= (26 13  S)|⬇  26 12 Pt [r] +1500 Makes S-26         using  861.16 nuclear
+| nonmetal Pq-10⁺(0.049) + nonmetal Pq-15⁻(0.277) => |⬆  25 13  S |= (25 12 Pt)|⬇  25 11 Fw [r] +1500 Makes Pt-25        using  483.91 nuclear
+| nonmetal Pq-10⁺(0.049) + noble    Zz-14ª(0.640) => |⬆  24 14 Zq |=  24 13  S |⬇ (24 12 Pt)[r] +1500 Makes Pt-24        using  543.97 nuclear+decay
+| nonmetal Pq-10⁺(0.049) + alkaline Dx-16∙(1.603) => |⬆  26 15 Xc |=  26 14 Zq |⬇ (26 13  S)[r] +1100 Makes S-26         using  731.11 nuclear+decay
+| nonmetal Pq-10⁺(0.049) + alkaline Dx-17∙(1.588) => |⬆  27 15 Xc |= (27 14 Zq)|⬇  27 13  S [r] +1500 Makes Zq-27        using  767.13 nuclear
 | nonmetal Pq-10⁺(0.049) + metal    Pm-17⁺(0.684) => |⬆  27 16 Gy |=  27 15 Xc |⬇ (27 14 Zq)[r] +1500 Makes Zq-27        using  594.75 decay+nuclear
-| nonmetal Pq-10⁺(0.049) + metal    M-23⁻ (0.762) => |⬆  33 17  D |=  33 16 Gy |⬇  33 15 Xc
-| nonmetal Pq-10⁺(0.049) + nonmetal Fw-25⁻(0.737) => |⬆  35 18 Fj |=  35 17  D |⬇  35 16 Gy
+| nonmetal Pq-10⁺(0.049) + metal    M-23⁻ (0.762) => |⬆  33 17  D |= (33 16 Gy)|⬇  33 15 Xc [r] +1500 Makes Gy-33        using  693.26 nuclear
+| nonmetal Pq-10⁺(0.049) + nonmetal Fw-25⁻(0.737) => |⬆  35 18 Fj |= (35 17  D)|⬇  35 16 Gy [r] +1500 Makes D-35         using  713.35 nuclear
 | nonmetal Pq-10⁺(0.049) + alkaline S-25⁺ (0.789) => |⬆  35 20  C |=  35 19  O |⬇ (35 18 Fj)[r] +1500 Makes Fj-35        using  726.20 decay+nuclear
-| nonmetal Pq-10⁺(0.049) + metal    Zq-32⁻(0.771) => |⬆  42 21  E |=  42 20  C |⬇  42 19  O
-| nonmetal Pq-10⁺(0.049) + nonmetal Xc-34⁻(0.851) => |⬆  44 22  A |=  44 21  E |⬇  44 20  C
-| nonmetal Pq-10⁺(0.049) + noble    Gy-34∙(1.956) => |⬆  44 23 Aw |=  44 22  A |⬇  44 21  E
-| nonmetal Pq-12ª(0.696) + alkaline Dx-15⁺(0.604) => |⬆  27 15 Xc |=  27 14 Zq |⬇  27 13  S
-| nonmetal Pq-12ª(0.696) + metal    M-23⁻ (0.762) => |⬆  35 17  D |=  35 16 Gy |⬇  35 15 Xc
-| nonmetal Pq-12ª(0.696) + noble    Pt-26∙(1.813) => |⬆  38 19  O |=  38 18 Fj |⬇  38 17  D
-| nonmetal Pq-12ª(0.696) + nonmetal Xc-30∙(1.990) => |⬆  42 22  A |=  42 21  E |⬇  42 20  C
-| nonmetal Pq-12ª(0.696) + nonmetal Xc-34⁻(0.851) => |⬆  46 22  A |=  46 21  E |⬇  46 20  C
+| nonmetal Pq-10⁺(0.049) + metal    Zq-32⁻(0.771) => |⬆  42 21  E |= (42 20  C)|⬇  42 19  O [r] +1500 Makes C-42         using  810.28 nuclear
+| nonmetal Pq-10⁺(0.049) + nonmetal Xc-34⁻(0.851) => |⬆  44 22  A |= (44 21  E)|⬇  44 20  C [r] +2000 Makes E-44         using  882.12 nuclear
+| nonmetal Pq-10⁺(0.049) + noble    Gy-34∙(1.956) => |⬆  44 23 Aw |= (44 22  A)|⬇  44 21  E [r] +2000 Makes A-44         using 1168.55 nuclear
+| nonmetal Pq-12ª(0.696) + alkaline Dx-15⁺(0.604) => |⬆  27 15 Xc |= (27 14 Zq)|⬇  27 13  S [r] +1500 Makes Zq-27        using  778.21 nuclear
+| nonmetal Pq-12ª(0.696) + metal    M-23⁻ (0.762) => |⬆  35 17  D |= (35 16 Gy)|⬇  35 15 Xc [r] +1500 Makes Gy-35        using  988.68 nuclear
+| nonmetal Pq-12ª(0.696) + noble    Pt-26∙(1.813) => |⬆  38 19  O |= (38 18 Fj)|⬇  38 17  D [r] +1500 Makes Fj-38        using 1402.30 nuclear
+| nonmetal Pq-12ª(0.696) + nonmetal Xc-30∙(1.990) => |⬆  42 22  A |= (42 21  E)|⬇  42 20  C [r] +2000 Makes E-42         using 1588.76 nuclear
+| nonmetal Pq-12ª(0.696) + nonmetal Xc-34⁻(0.851) => |⬆  46 22  A |= (46 21  E)|⬇  46 20  C [r] +2000 Makes E-46         using 1255.84 nuclear
 | nonmetal Pq-13∙(1.281) + nonmetal Pq-15⁻(0.277) => |⬆ (28 13  S)|=  28 12 Pt |⬇  28 11 Fw [r] +1500 Makes S-28         using  835.72 decay+nuclear
-| nonmetal Pq-13∙(1.281) + metal    M-20∙ (1.940) => |⬆  33 17  D |=  33 16 Gy |⬇  33 15 Xc
-| nonmetal Pq-13∙(1.281) + metal    M-22∙ (1.849) => |⬆  35 17  D |=  35 16 Gy |⬇  35 15 Xc
+| nonmetal Pq-13∙(1.281) + metal    M-20∙ (1.940) => |⬆  33 17  D |= (33 16 Gy)|⬇  33 15 Xc [r] +2000 Makes Gy-33        using 1611.65 nuclear
+| nonmetal Pq-13∙(1.281) + metal    M-22∙ (1.849) => |⬆  35 17  D |= (35 16 Gy)|⬇  35 15 Xc [r] +2000 Makes Gy-35        using 1650.08 nuclear
 | nonmetal Pq-14⁻(0.561) + nonmetal Pq-14⁻(0.561) => |⬆ (28 13  S)|=  28 12 Pt |⬇  28 11 Fw [r] +2000 Makes S-28         using  776.31 decay+nuclear
 | nonmetal Pq-14⁻(0.561) + nonmetal Pq-15⁻(0.277) => |⬆ (29 13  S)|=  29 12 Pt |⬇  29 11 Fw [r] +2000 Makes S-29         using  709.45 decay+nuclear
-| nonmetal Pq-14⁻(0.561) + alkaline Dx-15⁺(0.604) => |⬆  29 15 Xc |=  29 14 Zq |⬇  29 13  S
-| nonmetal Pq-14⁻(0.561) + alkaline Dx-16∙(1.603) => |⬆  30 15 Xc |=  30 14 Zq |⬇  30 13  S
-| nonmetal Pq-14⁻(0.561) + alkaline Dx-17∙(1.588) => |⬆  31 15 Xc |=  31 14 Zq |⬇  31 13  S
-| nonmetal Pq-14⁻(0.561) + metal    Pm-17⁺(0.684) => |⬆  31 16 Gy |=  31 15 Xc |⬇  31 14 Zq
-| nonmetal Pq-14⁻(0.561) + metal    M-20∙ (1.940) => |⬆  34 17  D |=  34 16 Gy |⬇  34 15 Xc
-| nonmetal Pq-14⁻(0.561) + metal    M-22∙ (1.849) => |⬆  36 17  D |=  36 16 Gy |⬇  36 15 Xc
+| nonmetal Pq-14⁻(0.561) + alkaline Dx-15⁺(0.604) => |⬆  29 15 Xc |= (29 14 Zq)|⬇  29 13  S [r] +1500 Makes Zq-29        using  784.21 nuclear
+| nonmetal Pq-14⁻(0.561) + alkaline Dx-16∙(1.603) => |⬆  30 15 Xc |= (30 14 Zq)|⬇  30 13  S [r] +1500 Makes Zq-30        using 1082.69 nuclear
+| nonmetal Pq-14⁻(0.561) + alkaline Dx-17∙(1.588) => |⬆  31 15 Xc |= (31 14 Zq)|⬇  31 13  S [r] +1400 Makes Zq-31        using 1101.56 nuclear
+| nonmetal Pq-14⁻(0.561) + metal    Pm-17⁺(0.684) => |⬆  31 16 Gy |= (31 15 Xc)|⬇  31 14 Zq [r] +2000 Makes Xc-31        using  874.65 nuclear
+| nonmetal Pq-14⁻(0.561) + metal    M-20∙ (1.940) => |⬆  34 17  D |= (34 16 Gy)|⬇  34 15 Xc [r] +1800 Makes Gy-34        using 1301.06 nuclear
+| nonmetal Pq-14⁻(0.561) + metal    M-22∙ (1.849) => |⬆  36 17  D |= (36 16 Gy)|⬇  36 15 Xc [r] +2000 Makes Gy-36        using 1341.85 nuclear
 | nonmetal Pq-14⁻(0.561) + metal    M-23⁻ (0.762) => |⬆ (37 17  D)|=  37 16 Gy |⬇  37 15 Xc [r] +2000 Makes D-37         using 1021.47 decay+nuclear
-| nonmetal Pq-14⁻(0.561) + noble    Pt-24∙(1.795) => |⬆  38 19  O |=  38 18 Fj |⬇  38 17  D
-| nonmetal Pq-14⁻(0.561) + noble    Pt-25ª(0.890) => |⬆  39 19  O |=  39 18 Fj |⬇  39 17  D
-| nonmetal Pq-14⁻(0.561) + noble    Pt-26∙(1.813) => |⬆  40 19  O |=  40 18 Fj |⬇  40 17  D
-| nonmetal Pq-14⁻(0.561) + alkaline S-25⁺ (0.789) => |⬆  39 20  C |=  39 19  O |⬇  39 18 Fj
-| nonmetal Pq-14⁻(0.561) + alkaline S-26ª (0.855) => |⬆  40 20  C |=  40 19  O |⬇  40 18 Fj
+| nonmetal Pq-14⁻(0.561) + noble    Pt-24∙(1.795) => |⬆  38 19  O |=  38 18 Fj |⬇  38 17  D [ ]
+| nonmetal Pq-14⁻(0.561) + noble    Pt-25ª(0.890) => |⬆  39 19  O |=  39 18 Fj |⬇  39 17  D [ ]
+| nonmetal Pq-14⁻(0.561) + noble    Pt-26∙(1.813) => |⬆  40 19  O |=  40 18 Fj |⬇  40 17  D [ ]
+| nonmetal Pq-14⁻(0.561) + alkaline S-25⁺ (0.789) => |⬆  39 20  C |=  39 19  O |⬇  39 18 Fj [ ]
+| nonmetal Pq-14⁻(0.561) + alkaline S-26ª (0.855) => |⬆  40 20  C |=  40 19  O |⬇  40 18 Fj [ ]
 | nonmetal Pq-14⁻(0.561) + metal    Zq-32⁻(0.771) => |⬆ (46 21  E)|=  46 20  C |⬇  46 19  O [r] +2000 Makes E-46         using 1195.88 decay+nuclear
 | nonmetal Pq-14⁻(0.561) + nonmetal Xc-30∙(1.990) => |⬆  44 22  A |= (44 21  E)|⬇  44 20  C [r] +4000 Makes E-44         using 1701.45 nuclear
 | nonmetal Pq-14⁻(0.561) + nonmetal Xc-31∙(1.046) => |⬆  45 22  A |= (45 21  E)|⬇  45 20  C [r] +4000 Makes E-45         using 1386.32 nuclear
-| nonmetal Pq-14⁻(0.561) + noble    Gy-34∙(1.956) => |⬆  48 23 Aw |=  48 22  A |⬇  48 21  E
-| nonmetal Pq-14⁻(0.561) + metal    Fj-37ª(0.942) => |⬆  51 25 Nb |=  51 24 Oc |⬇  51 23 Aw
-| nonmetal Pq-15⁻(0.277) + noble    Zz-13⁺(0.525) => |⬆  28 14 Zq |=  28 13  S |⬇  28 12 Pt
+| nonmetal Pq-14⁻(0.561) + noble    Gy-34∙(1.956) => |⬆  48 23 Aw |=  48 22  A |⬇  48 21  E [ ]
+| nonmetal Pq-14⁻(0.561) + metal    Fj-37ª(0.942) => |⬆  51 25 Nb |=  51 24 Oc |⬇  51 23 Aw [ ]
+| nonmetal Pq-15⁻(0.277) + noble    Zz-13⁺(0.525) => |⬆  28 14 Zq |=  28 13  S |⬇  28 12 Pt [ ]
 | nonmetal Pq-15⁻(0.277) + alkaline Dx-15⁺(0.604) => |⬆  30 15 Xc |= (30 14 Zq)|⬇  30 13  S [r] +2000 Makes Zq-30        using  739.10 nuclear
-| nonmetal Pq-15⁻(0.277) + alkaline Dx-16∙(1.603) => |⬆  31 15 Xc |=  31 14 Zq |⬇  31 13  S
-| nonmetal Pq-15⁻(0.277) + alkaline Dx-17∙(1.588) => |⬆  32 15 Xc |=  32 14 Zq |⬇  32 13  S
-| nonmetal Pq-15⁻(0.277) + metal    Pm-17⁺(0.684) => |⬆  32 16 Gy |=  32 15 Xc |⬇  32 14 Zq
-| nonmetal Pq-15⁻(0.277) + noble    Pt-26∙(1.813) => |⬆  41 19  O |=  41 18 Fj |⬇  41 17  D
+| nonmetal Pq-15⁻(0.277) + alkaline Dx-16∙(1.603) => |⬆  31 15 Xc |=  31 14 Zq |⬇  31 13  S [ ]
+| nonmetal Pq-15⁻(0.277) + alkaline Dx-17∙(1.588) => |⬆  32 15 Xc |=  32 14 Zq |⬇  32 13  S [ ]
+| nonmetal Pq-15⁻(0.277) + metal    Pm-17⁺(0.684) => |⬆  32 16 Gy |=  32 15 Xc |⬇  32 14 Zq [ ]
+| nonmetal Pq-15⁻(0.277) + noble    Pt-26∙(1.813) => |⬆  41 19  O |=  41 18 Fj |⬇  41 17  D [ ]
 | nonmetal Pq-15⁻(0.277) + metal    Zq-32⁻(0.771) => |⬆ (47 21  E)|=  47 20  C |⬇  47 19  O [r] + ?   Makes E-47         using 1187.55
-| noble    Zz-13⁺(0.525) + metal    Pm-17⁺(0.684) => |⬆  30 17  D |=  30 16 Gy |⬇  30 15 Xc nah
-| noble    Zz-13⁺(0.525) + metal    Pm-19∙(1.837) => |⬆  32 17  D |=  32 16 Gy |⬇  32 15 Xc
+| noble    Zz-13⁺(0.525) + metal    Pm-17⁺(0.684) => |⬆  30 17  D |=  30 16 Gy |⬇ (30 15 Xc)[r] +2000 Makes Xc-30        using  839.31 nuclear+decay
+| noble    Zz-13⁺(0.525) + metal    Pm-19∙(1.837) => |⬆  32 17  D |=  32 16 Gy |⬇  32 15 Xc [ ]
 | noble    Zz-13⁺(0.525) + metal    M-22∙ (1.849) => |⬆  35 18 Fj |= (35 17  D)|⬇  35 16 Gy [r] +2000 Makes D-35         using 1285.20 nuclear
 | noble    Zz-14ª(0.640) + noble    Zz-14ª(0.640) => |⬆  28 15 Xc |= (28 14 Zq)|⬇  28 13  S [r] +3000 Makes Zq-28        using  872.38 nuclear
-| noble    Zz-14ª(0.640) + metal    Pm-17⁺(0.684) => |⬆  31 17  D |=  31 16 Gy |⬇  31 15 Xc
-| noble    Zz-14ª(0.640) + metal    M-23⁻ (0.762) => |⬆  37 18 Fj |=  37 17  D |⬇  37 16 Gy
-| noble    Zz-14ª(0.640) + noble    Pt-24∙(1.795) => |⬆  38 20  C |=  38 19  O |⬇  38 18 Fj
-| noble    Zz-14ª(0.640) + noble    Pt-26∙(1.813) => |⬆  40 20  C |=  40 19  O |⬇  40 18 Fj
-| noble    Zz-14ª(0.640) + nonmetal Xc-34⁻(0.851) => |⬆  48 23 Aw |=  48 22  A |⬇  48 21  E
-| noble    Zz-14ª(0.640) + alkaline D-37⁻ (0.895) => |⬆  51 25 Nb |=  51 24 Oc |⬇  51 23 Aw
+| noble    Zz-14ª(0.640) + metal    Pm-17⁺(0.684) => |⬆  31 17  D |=  31 16 Gy |⬇  31 15 Xc [ ]
+| noble    Zz-14ª(0.640) + metal    M-23⁻ (0.762) => |⬆  37 18 Fj |= (37 17  D)|⬇  37 16 Gy [r] +2000 Makes D-37         using 1052.33 nuclear
+| noble    Zz-14ª(0.640) + noble    Pt-24∙(1.795) => |⬆  38 20  C |=  38 19  O |⬇  38 18 Fj [ ]
+| noble    Zz-14ª(0.640) + noble    Pt-26∙(1.813) => |⬆  40 20  C |=  40 19  O |⬇  40 18 Fj [ ]
+| noble    Zz-14ª(0.640) + nonmetal Xc-34⁻(0.851) => |⬆  48 23 Aw |=  48 22  A |⬇  48 21  E [ ]
+| noble    Zz-14ª(0.640) + alkaline D-37⁻ (0.895) => |⬆  51 25 Nb |=  51 24 Oc |⬇  51 23 Aw [ ]
 | alkaline Dx-15⁺(0.604) + metal    Pm-18⁺(0.775) => |⬆  33 18 Fj |= (33 17  D)|⬇  33 16 Gy [r] +4000 Makes D-33         using 1063.66 nuclear
 | alkaline Dx-15⁺(0.604) + alkaline S-26ª (0.855) => |⬆  41 22  A |= (41 21  E)|⬇  41 20  C [r] +4000 Makes E-41         using 1263.38 nuclear
-| alkaline Dx-15⁺(0.604) + nonmetal Xc-34⁻(0.851) => |⬆  49 24 Oc |=  49 23 Aw |⬇  49 22  A
-| alkaline Dx-16∙(1.603) + noble    Pt-24∙(1.795) => |⬆  40 21  E |=  40 20  C |⬇  40 19  O
+| alkaline Dx-15⁺(0.604) + nonmetal Xc-34⁻(0.851) => |⬆  49 24 Oc |= (49 23 Aw)|⬇  49 22  A [r] +1700 Makes Aw-49        using 1370.40 nuclear
+| alkaline Dx-16∙(1.603) + noble    Pt-24∙(1.795) => |⬆  40 21  E |=  40 20  C |⬇  40 19  O [ ]
 | alkaline Dx-16∙(1.603) + noble    Pt-25ª(0.890) => |⬆  41 21  E |= (41 20  C)|⬇  41 19  O [r] +4000 Makes C-41         using 1700.03 nuclear
 | alkaline Dx-16∙(1.603) + nonmetal Xc-31∙(1.046) => |⬆  47 24 Oc |= (47 23 Aw)|⬇  47 22  A [r] +4000 Makes Aw-47        using 1967.60 nuclear
-| alkaline Dx-16∙(1.603) + nonmetal Xc-34⁻(0.851) => |⬆  50 24 Oc |=  50 23 Aw |⬇  50 22  A
-| alkaline Dx-17∙(1.588) + alkaline Dx-17∙(1.588) => |⬆  34 17  D |=  34 16 Gy |⬇  34 15 Xc
-| alkaline Dx-17∙(1.588) + metal    Pm-18⁺(0.775) => |⬆  35 18 Fj |=  35 17  D |⬇  35 16 Gy
-| alkaline Dx-17∙(1.588) + metal    M-20∙ (1.940) => |⬆  37 19  O |=  37 18 Fj |⬇  37 17  D
+| alkaline Dx-16∙(1.603) + nonmetal Xc-34⁻(0.851) => |⬆  50 24 Oc |=  50 23 Aw |⬇  50 22  A [ ]
+| alkaline Dx-17∙(1.588) + alkaline Dx-17∙(1.588) => |⬆  34 17  D |=  34 16 Gy |⬇  34 15 Xc [ ]
+| alkaline Dx-17∙(1.588) + metal    Pm-18⁺(0.775) => |⬆  35 18 Fj |=  35 17  D |⬇  35 16 Gy [ ]
+| alkaline Dx-17∙(1.588) + metal    M-20∙ (1.940) => |⬆  37 19  O |=  37 18 Fj |⬇  37 17  D [ ]
 | alkaline Dx-17∙(1.588) + nonmetal Fw-25⁻(0.737) => |⬆  42 20  C |= (42 19  O)|⬇  42 18 Fj [r] +4000 Makes O-42         using 1651.17 nuclear
 | alkaline Dx-17∙(1.588) + alkaline S-26ª (0.855) => |⬆  43 22  A |= (43 21  E)|⬇  43 20  C [r] +4000 Makes E-43         using 1746.70 nuclear
 | alkaline Dx-17∙(1.588) + alkaline D-37⁻ (0.895) => |⬆  54 26 Xk |= (54 25 Nb)|⬇  54 24 Oc [r] +4000 Makes Nb-54        using 2091.23 nuclear
