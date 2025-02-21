@@ -1,3 +1,18 @@
+2025-02-20 Feb.Thu 21:52:00 WTF is this? How does this work? Pq-10+Aw-50+1200 makes Jx-60, but sometimes it makes Aw-50+Xl-10 because Pq-10 decayed? [ ] Is it the case that decay is NOT GUARANTEED?
+
+16063 | nonmetal Pq-10⁺(0.049) + nonmetal Aw-50∙(1.004) +     1200 =>   Jx-60                       +     117.16 |    1082.84 | nuclear                      
+ 2990 | nonmetal Pq-10⁺(0.049) + nonmetal Aw-50∙(1.004) +     1200 => ⬇ Aw-50 + Xl-10               +    1140.00 |      60.00 | decay                        
+
+I've never seen this happen before. Are there other instances? I found 2 more amongst all of the 2 otom input reactions:
+21736 |    metal Xl-10ª(0.487) +    metal Xl-11∙(1.110) +     1000 =>   M-21                        +     315.14 |     684.86 | nuclear                      
+ 3102 |    metal Xl-10ª(0.487) +    metal Xl-11∙(1.110) +     1000 =>   WXl(W-4>Xl-11) + Cq-6       +     941.37 |      58.63 | chemical, decay              
+
+24410 |    noble Zz-13⁺(0.525) + alkaline Nb-54ª(0.903) +     2300 =>   Ny-67                       +     715.43 |    1584.57 | nuclear                      
+ 2277 |    noble Zz-13⁺(0.525) + alkaline Nb-54ª(0.903) +     2300 => ⬇ NbPq(Nb-54>Pq-13)           +    2157.64 |     142.36 | chemical, decay              
+
+Did Kjetil adjust the algorithm? Each of those 3 instances has a sub 3103 OTOMRO with one result and another above that with a different one.
+Or is there some actual randomness that applies to each reaction which may or may not allow decay?
+
 2025-02-20 Feb.Thu 15:53:00 Looking at past reactions.
  1 otom input:  2466 reactions  9%   ( 973 of those had no reaction)
  2 otom input: 11798 reactions 43%   (1477 of those had no reaction)
@@ -977,7 +992,7 @@ Then take a look at the charts
 2025-02-13.Feb.Thu 21:29:52 What mineable otoms have not been tried in reactions?
 
 Here are 184 combinations of 2 mineable otoms which have not been tried. I examined all reactions that have occurred so far to determine this. Many have been tried with other otoms but not just as these 2.
-[.] consider trying some
+[r] consider trying some
 
 | alkaline Ju-2∙ (1.000) + noble    Zz-14ª(0.640) => |⬆  16  9 Pm |= (16  8 Dx)|⬇  16  7 Zz [r] + 600 Makes Dx-16        using  517.29 nuclear
 | alkaline Ju-2∙ (1.000) + alkaline Dx-17∙(1.588) => |⬆  19 10  M |= (19  9 Pm)|⬇  19  8 Dx [r] +1000 Makes Pm-19        using  769.16 nuclear
@@ -1108,19 +1123,19 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | nonmetal Pq-14⁻(0.561) + noble    Pt-24∙(1.795) => |⬆  38 19  O |= (38 18 Fj)|⬇  38 17  D [r] +2000 Makes Fj-38        using 1380.11 nuclear
 | nonmetal Pq-14⁻(0.561) + noble    Pt-25ª(0.890) => |⬆  39 19  O |= (39 18 Fj)|⬇  39 17  D [r] +2000 Makes Fj-39        using 1106.74 nuclear
 | nonmetal Pq-14⁻(0.561) + noble    Pt-26∙(1.813) => |⬆  40 19  O |= (40 18 Fj)|⬇  40 17  D [r] +2000 Makes Fj-40        using 1438.61 nuclear
-| nonmetal Pq-14⁻(0.561) + alkaline S-25⁺ (0.789) => |⬆  39 20  C |=  39 19  O |⬇  39 18 Fj [r] +2000 Makes O-39         using 1070.56 nuclear
-| nonmetal Pq-14⁻(0.561) + alkaline S-26ª (0.855) => |⬆  40 20  C |=  40 19  O |⬇  40 18 Fj [ ]
+| nonmetal Pq-14⁻(0.561) + alkaline S-25⁺ (0.789) => |⬆  39 20  C |= (39 19  O)|⬇  39 18 Fj [r] +2000 Makes O-39         using 1070.56 nuclear
+| nonmetal Pq-14⁻(0.561) + alkaline S-26ª (0.855) => |⬆  40 20  C |= (40 19  O)|⬇  40 18 Fj [r] +2000 Makes O-40         using 1114.04 nuclear
 | nonmetal Pq-14⁻(0.561) + metal    Zq-32⁻(0.771) => |⬆ (46 21  E)|=  46 20  C |⬇  46 19  O [r] +2000 Makes E-46         using 1195.88 decay+nuclear
 | nonmetal Pq-14⁻(0.561) + nonmetal Xc-30∙(1.990) => |⬆  44 22  A |= (44 21  E)|⬇  44 20  C [r] +4000 Makes E-44         using 1701.45 nuclear
 | nonmetal Pq-14⁻(0.561) + nonmetal Xc-31∙(1.046) => |⬆  45 22  A |= (45 21  E)|⬇  45 20  C [r] +4000 Makes E-45         using 1386.32 nuclear
-| nonmetal Pq-14⁻(0.561) + noble    Gy-34∙(1.956) => |⬆  48 23 Aw |=  48 22  A |⬇  48 21  E [ ]
-| nonmetal Pq-14⁻(0.561) + metal    Fj-37ª(0.942) => |⬆  51 25 Nb |=  51 24 Oc |⬇  51 23 Aw [ ]
+| nonmetal Pq-14⁻(0.561) + noble    Gy-34∙(1.956) => |⬆  48 23 Aw |= (48 22  A)|⬇  48 21  E [r] +2000 Makes A-48         using 1692.59 nuclear
+| nonmetal Pq-14⁻(0.561) + metal    Fj-37ª(0.942) => |⬆  51 25 Nb |= (51 24 Oc)|⬇  51 23 Aw [r] +2000 Makes Oc-51        using 1360.32 nuclear
 | nonmetal Pq-15⁻(0.277) + noble    Zz-13⁺(0.525) => |⬆  28 14 Zq |= (28 13  S)|⬇  28 12 Pt [r] +1500 Makes S-28         using  656.65 nuclear
 | nonmetal Pq-15⁻(0.277) + alkaline Dx-15⁺(0.604) => |⬆  30 15 Xc |= (30 14 Zq)|⬇  30 13  S [r] +2000 Makes Zq-30        using  739.10 nuclear
 | nonmetal Pq-15⁻(0.277) + alkaline Dx-16∙(1.603) => |⬆  31 15 Xc |= (31 14 Zq)|⬇  31 13  S [r] +1500 Makes Zq-31        using  983.07 nuclear
 | nonmetal Pq-15⁻(0.277) + alkaline Dx-17∙(1.588) => |⬆ (32 15 Xc)|=  32 14 Zq |⬇  32 13  S [r] +1500 Makes Xc-32        using 1004.59 nuclear+decay
-| nonmetal Pq-15⁻(0.277) + metal    Pm-17⁺(0.684) => |⬆  32 16 Gy |=  32 15 Xc |⬇  32 14 Zq [ ]
-| nonmetal Pq-15⁻(0.277) + noble    Pt-26∙(1.813) => |⬆  41 19  O |=  41 18 Fj |⬇  41 17  D [ ]
+| nonmetal Pq-15⁻(0.277) + metal    Pm-17⁺(0.684) => |⬆  32 16 Gy |= (32 15 Xc)|⬇  32 14 Zq [r] +1500 Makes Xc-32        using 773.07  nuclear
+| nonmetal Pq-15⁻(0.277) + noble    Pt-26∙(1.813) => |⬆  41 19  O |= (41 18 Fj)|⬇  41 17  D [r] +2000 Makes Fj-41        using 1306.29 nuclear
 | nonmetal Pq-15⁻(0.277) + metal    Zq-32⁻(0.771) => |⬆ (47 21  E)|=  47 20  C |⬇  47 19  O [r] +4000 Makes E-47         using 1187.55 nuclear+decay
 | noble    Zz-13⁺(0.525) + metal    Pm-17⁺(0.684) => |⬆  30 17  D |=  30 16 Gy |⬇ (30 15 Xc)[r] +2000 Makes Xc-30        using  839.31 nuclear+decay
 | noble    Zz-13⁺(0.525) + metal    Pm-19∙(1.837) => |⬆  32 17  D |= (32 16 Gy)|⬇  32 15 Xc [r] +1500 Makes Gy-32        using 1176.62 nuclear
@@ -1128,20 +1143,20 @@ Here are 184 combinations of 2 mineable otoms which have not been tried. I exami
 | noble    Zz-14ª(0.640) + noble    Zz-14ª(0.640) => |⬆  28 15 Xc |= (28 14 Zq)|⬇  28 13  S [r] +3000 Makes Zq-28        using  872.38 nuclear
 | noble    Zz-14ª(0.640) + metal    Pm-17⁺(0.684) => |⬆  31 17  D |= (31 16 Gy)|⬇  31 15 Xc [r] +1500 Makes Gy-31        using  875.60 nuclear
 | noble    Zz-14ª(0.640) + metal    M-23⁻ (0.762) => |⬆  37 18 Fj |= (37 17  D)|⬇  37 16 Gy [r] +2000 Makes D-37         using 1052.33 nuclear
-| noble    Zz-14ª(0.640) + noble    Pt-24∙(1.795) => |⬆  38 20  C |=  38 19  O |⬇  38 18 Fj [ ]
-| noble    Zz-14ª(0.640) + noble    Pt-26∙(1.813) => |⬆  40 20  C |=  40 19  O |⬇  40 18 Fj [ ]
-| noble    Zz-14ª(0.640) + nonmetal Xc-34⁻(0.851) => |⬆  48 23 Aw |=  48 22  A |⬇  48 21  E [ ]
-| noble    Zz-14ª(0.640) + alkaline D-37⁻ (0.895) => |⬆  51 25 Nb |=  51 24 Oc |⬇  51 23 Aw [ ]
+| noble    Zz-14ª(0.640) + noble    Pt-24∙(1.795) => |⬆  38 20  C |= (38 19  O)|⬇  38 18 Fj [r] +2000 Makes O-38         using 1422.99 nuclear
+| noble    Zz-14ª(0.640) + noble    Pt-26∙(1.813) => |⬆  40 20  C |= (40 19  O)|⬇  40 18 Fj [r] +2000 Makes O-40         using 1483.45 nuclear
+| noble    Zz-14ª(0.640) + nonmetal Xc-34⁻(0.851) => |⬆  48 23 Aw |= (48 22  A)|⬇  48 21  E [r] +2000 Makes A-48         using 1304.74 nuclear
+| noble    Zz-14ª(0.640) + alkaline D-37⁻ (0.895) => |⬆  51 25 Nb |= (51 24 Oc)|⬇  51 23 Aw [r] +2000 Makes Oc-51        using 1381.45 nuclear
 | alkaline Dx-15⁺(0.604) + metal    Pm-18⁺(0.775) => |⬆  33 18 Fj |= (33 17  D)|⬇  33 16 Gy [r] +4000 Makes D-33         using 1063.66 nuclear
 | alkaline Dx-15⁺(0.604) + alkaline S-26ª (0.855) => |⬆  41 22  A |= (41 21  E)|⬇  41 20  C [r] +4000 Makes E-41         using 1263.38 nuclear
 | alkaline Dx-15⁺(0.604) + nonmetal Xc-34⁻(0.851) => |⬆  49 24 Oc |= (49 23 Aw)|⬇  49 22  A [r] +1700 Makes Aw-49        using 1370.40 nuclear
-| alkaline Dx-16∙(1.603) + noble    Pt-24∙(1.795) => |⬆  40 21  E |=  40 20  C |⬇  40 19  O [ ]
+| alkaline Dx-16∙(1.603) + noble    Pt-24∙(1.795) => |⬆  40 21  E |= (40 20  C)|⬇  40 19  O [r] +3000 Makes C-40         using 2057.35 nuclear
 | alkaline Dx-16∙(1.603) + noble    Pt-25ª(0.890) => |⬆  41 21  E |= (41 20  C)|⬇  41 19  O [r] +4000 Makes C-41         using 1700.03 nuclear
 | alkaline Dx-16∙(1.603) + nonmetal Xc-31∙(1.046) => |⬆  47 24 Oc |= (47 23 Aw)|⬇  47 22  A [r] +4000 Makes Aw-47        using 1967.60 nuclear
-| alkaline Dx-16∙(1.603) + nonmetal Xc-34⁻(0.851) => |⬆  50 24 Oc |=  50 23 Aw |⬇  50 22  A [ ]
-| alkaline Dx-17∙(1.588) + alkaline Dx-17∙(1.588) => |⬆  34 17  D |=  34 16 Gy |⬇  34 15 Xc [ ]
-| alkaline Dx-17∙(1.588) + metal    Pm-18⁺(0.775) => |⬆  35 18 Fj |=  35 17  D |⬇  35 16 Gy [ ]
-| alkaline Dx-17∙(1.588) + metal    M-20∙ (1.940) => |⬆  37 19  O |=  37 18 Fj |⬇  37 17  D [ ]
+| alkaline Dx-16∙(1.603) + nonmetal Xc-34⁻(0.851) => |⬆  50 24 Oc |= (50 23 Aw)|⬇  50 22  A [r] +2000 Makes Aw-50        using 1836.86 nuclear
+| alkaline Dx-17∙(1.588) + alkaline Dx-17∙(1.588) => |⬆  34 17  D |= (34 16 Gy)|⬇  34 15 Xc [r] +2000 Makes Gy-34        using 1673.42 nuclear
+| alkaline Dx-17∙(1.588) + metal    Pm-18⁺(0.775) => |⬆  35 18 Fj |= (35 17  D)|⬇  35 16 Gy [r] +2000 Makes D-35         using 1356.21 nuclear
+| alkaline Dx-17∙(1.588) + metal    M-20∙ (1.940) => |⬆  37 19  O |= (37 18 Fj)|⬇  37 17  D [r] +2000 Makes Fj-37        using 1947.21 nuclear
 | alkaline Dx-17∙(1.588) + nonmetal Fw-25⁻(0.737) => |⬆  42 20  C |= (42 19  O)|⬇  42 18 Fj [r] +4000 Makes O-42         using 1651.17 nuclear
 | alkaline Dx-17∙(1.588) + alkaline S-26ª (0.855) => |⬆  43 22  A |= (43 21  E)|⬇  43 20  C [r] +4000 Makes E-43         using 1746.70 nuclear
 | alkaline Dx-17∙(1.588) + alkaline D-37⁻ (0.895) => |⬆  54 26 Xk |= (54 25 Nb)|⬇  54 24 Oc [r] +4000 Makes Nb-54        using 2091.23 nuclear
@@ -1232,7 +1247,7 @@ atom 77 40  U | Empty in Outer Shell	0-0-0-0-0-0-0-2
   [c] add to otoms.decay.otom
   [c] add to otoms.otom
   [c] add to otoms.columns.otom
-  [ ] add reaction to otom.reactions.otom 
+  [c] add reaction to otom.reactions.otom 
   [c] add to recipes.otom
   [c] add otoms.shapescan.data.otom
       [c] put these vaules in ???

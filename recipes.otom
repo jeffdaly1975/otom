@@ -63,7 +63,7 @@
 |*16  8 Dx | Dx-16 | mineable
 | 16  8 Dx | Dx-16 |  7  4 Af +  9  5 Xl +  500 => 16  8 Dx
 |*17  8 Dx | Dx-17 | mineable
-| 17  8 Dx | Dx-17 |  2  1 Ju + 15  6 Pq +  500 => 17  8 Dx
+| 17  8 Dx | Dx-17 |  2  1 Ju + 15  6 Pq +  450 => 17  8 Dx
 | 17  8 Dx | Dx-17 |  4  2  W + 13  7 Zz +  559 => 17  8 Dx
 | 17  8 Dx | Dx-17 |  8  4 Af +  9  5 Xl +  563 => 17  8 Dx
 | 17  8 Dx | Dx-17 | 17  9 Pm +               0 => 17  8 Dx
