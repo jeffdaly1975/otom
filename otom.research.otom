@@ -1,4 +1,4 @@
-2025-02-20 Feb.Thu 21:52:00 WTF is this? How does this work? Pq-10+Aw-50+1200 makes Jx-60, but sometimes it makes Aw-50+Xl-10 because Pq-10 decayed? [ ] Is it the case that decay is NOT GUARANTEED?
+2025-02-20 Feb.Thu 21:52:00 [ ] WTF is this? How does this work? Pq-10+Aw-50+1200 makes Jx-60, but sometimes it makes Aw-50+Xl-10 because Pq-10 decayed? [ ] Is it the case that decay is NOT GUARANTEED?
 
 16063 | nonmetal Pq-10⁺(0.049) + nonmetal Aw-50∙(1.004) +     1200 =>   Jx-60                       +     117.16 |    1082.84 | nuclear                      
  2990 | nonmetal Pq-10⁺(0.049) + nonmetal Aw-50∙(1.004) +     1200 => ⬇ Aw-50 + Xl-10               +    1140.00 |      60.00 | decay                        
@@ -21,13 +21,15 @@ Or is there some actual randomness that applies to each reaction which may or ma
  5 otom input:  7569 reactions 27%   (1069 of those had no reaction)
                27580 reactions total
 
-2025-02-20 Feb.Thu 12:48:34 Is there a cheaper way to make U-77 than "30 16 Gy + 47 25 Nb + 2259 => 77 40  U"?
+2025-02-20 Feb.Thu 12:48:34 Is there a cheaper way to make U-77 than Gy-30 + Nb-47 + 2259 => U-77?
 Perhaps one of these:
-[r]  9  5 Xl⁺(0.329) +  68 35 Qi⁺(0.711) + 6000 => |⬆  77  41 Sq |=  77  40  U |⬇  77  39  H <-- Makes H-77 using 1542.62 nuclear+decay
-[r] 23 12 Pt⁺(0.793) +  54 28 Yp⁺(0.826) + 5000 => |⬆  77  41 Sq |=  77  40  U |⬇  77  39  H <-- Makes H-77 using 2314.72 nuclear+decay
-[r] 33 17  D⁺(0.877) +  44 23 Aw⁺(0.798) + 5000 => |⬆  77  41 Sq |=  77  40  U |⬇  77  39  H <-- Makes H-77 using 2507.74 nuclear+decay
+ [r]  9  5 Xl⁺(0.329) + 68 35 Qi⁺(0.711) + 6000 => |⬆  77 41 Sq |=  77 40  U |⬇ (77 39  H) <-- NOPE Makes H-77 using 1542.62 (nuclear + decay)
+ [r] 23 12 Pt⁺(0.793) + 54 28 Yp⁺(0.826) + 5000 => |⬆  77 41 Sq |=  77 40  U |⬇ (77 39  H) <-- NOPE Makes H-77 using 2314.72 (nuclear + decay)
+ [r] 33 17  D⁺(0.877) + 44 23 Aw⁺(0.798) + 5000 => |⬆  77 41 Sq |=  77 40  U |⬇ (77 39  H) <-- NOPE Makes H-77 using 2507.74 (nuclear + decay)
 
- Dammit why did those all drop a proton? Does the stability threshhold depend on the mass of the isotope? Like as it gets heavier, the stability value needs to be higher and higher to prevent decay?
+Dammit why did those all drop a proton? Does the stability threshhold depend on the mass of the isotope? 
+
+Like as it gets heavier, the stability value needs to be higher and higher to prevent decay?
 
 2025-02-18 Feb.Tue 12:42:05 Looking at all the otoms that haven't been successfully reacted with Ju-1 and there's a ton.
 [ ] Try some:
@@ -203,7 +205,7 @@ Perhaps one of these:
 |  Ju-1∙ + Xk-57⁻ |+1500              =>  ? Ic-58? Yp-59?   | [ ]
 |  Ju-1∙ + Xk-58⁻ |+1500              =>  ? Ic-59? Yp-60?   | [ ]
 |  Ju-1∙ + Xk-59⁻ |+1500              =>  ? Ic-60? Yp-61?   | [ ]
-|  Ju-1∙ + Ic-51⁺ |+1500              =>  ? Yp-52? Ic-52?   | [*]
+|  Ju-1∙ + Ic-51⁺ |+1500              =>  ? Yp-52? Ic-52?   | [r] Makes Ic-52 using 1008.74 nuclear+decay
 |  Ju-1∙ + Ic-52⁺ |+ 1223.80 ..  5000 => ⬇ Ic-53            |
 |  Ju-1∙ + Ic-53⁺ |+1500              =>  ? Yp-54? Ic-54?   | [ ]
 |  Ju-1∙ + Ic-54∙ |+1500              =>  ? Yp-55?          | [ ]
@@ -402,10 +404,10 @@ Perhaps one of these:
 [r] 13  7 Zz + 35 18 Fj + 1250 => 48 25 Nb
 [r]  Ju-1∙ + Nb-48⁺ + 1500     =>  ? Xk-49?       makes Nb-49 using 977.24 nuclear+decay
 
-[ ] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
-[ ]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
-[ ]  5  3 Cq + 46 24 Oc +  785 => 51 27 Ic
-[*]  Ju-1∙ + Ic-51⁺ + 1500     =>  ? Yp-52? Ic-52?
+[r] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
+[r]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
+[r]  5  3 Cq + 46 24 Oc +  785 => 51 27 Ic
+[r]  Ju-1∙ + Ic-51⁺ + 1500     =>  ? Yp-52? Ic-52? Makes Ic-52 using 1008.74 nuclear+decay
 
 [ ] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
 [ ]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
@@ -832,12 +834,12 @@ That list is here:
 [r] 52 23 Aw +            4297 => 24 11 Fw + 28 12 Pt
 [r]  3  1 Ju∙(1.000) +  28 12 Pt⁻(0.672) +2000 => ? Makes Zq-31 using 830.36 nuclear+decay
 
-[ ] 17  9 Pm + 25 13  S + 1171 => 42 22  A
-[ ] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
-[ ] 57 30 Hb +            4957 => 26 14 Zq + 31 16 Gy
-[ ] 26 14 Zq +            1443 => 12  6 Pq + 14  8 Dx
-[ ] 10  6 Pq + 14  8 Dx +  431 => 24 13  S
-[ ]  3  1 Ju∙(1.000) +  24 13  S⁺(0.611) => ?
+[r] 17  9 Pm + 25 13  S + 1171 => 42 22  A
+[r] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
+[r] 57 30 Hb +            4957 => 26 14 Zq + 31 16 Gy
+[r] 26 14 Zq +            1443 => 12  6 Pq + 14  8 Dx
+[r] 10  6 Pq + 14  8 Dx +  431 => 24 13  S
+[r]  3  1 Ju∙(1.000) +  24 13  S⁺(0.611) +2000 => ? Makes Zq-27 using 758.58 nuclear
 
 [r] 22 10  M + 34 15 Xc + 2300 => 56 25 Nb
 [r] 56 25 Nb +            4805 => 26 12 Pt + 30 13  S
@@ -1190,7 +1192,6 @@ Some vim commands for replacing otoms before the 36 virtual column with the seri
 [ ] 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw
 [ ]  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc
 [ ]  5  3 Cq + 46 24 Oc +  785 => 51 27 Ic
-
 [ ] 17  9 Pm + 25 13  S + 1171 => 42 22  A
 [ ] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
 [ ] 57 30 Hb +            4957 => 26 14 Zq + 31 16 Gy
@@ -6490,6 +6491,20 @@ lets switch to tryng these since (22 12 Pt⁺(0.717) +  47 25 Nb⁺(0.793) => �
 [ ] 28 15 Xc⁺(0.765) +  58 26 Xk⁻(0.859) => |⬆  86  42 Ua |=  86  41 Sq |⬇  86  40  U
 [ ] 28 15 Xc⁺(0.765) +  59 26 Xk⁻(0.781) => |⬆  87  42 Ua |=  87  41 Sq |⬇  87  40  U
 [ ] 36 19  O⁺(0.736) +  50 22  A⁻(0.884) => |⬆  86  42 Ua |=  86  41 Sq |⬇  86  40  U
+
+
+[*]  9  5 Xl         +  25 13  S         +  773 => 34 18 Fj
+[ ] 13  7 Zz         +  34 18 Fj         + 1146 => 47 25 Nb
+[ ] 47 25 Nb         +                     3684 => 22 12 Pt + 25 13  S
+[ ] 14  6 Pq         +  50 23 Aw         + 1612 => 64 29 Jx
+[ ] 22 12 Pt⁺(0.717) +  64 29 Jx⁻(0.832) + 6000 => |⬆  86  42 Ua |=  86  41 Sq |⬇  86  40  U
+
+[*]  9  5 Xl         + 25 13  S          +  773 => 34 18 Fj
+[ ] 13  7 Zz         + 34 18 Fj          + 1146 => 47 25 Nb
+[ ] 47 25 Nb         +                     3684 => 22 12 Pt + 25 13  S
+[ ] 15  6 Pq         + 50 23 Aw          + 1449 => 65 29 Jx
+[ ] 22 12 Pt⁺(0.717) +  65 29 Jx⁻(0.787) + 6000 => |⬆  87  42 Ua |=  87  41 Sq |⬇  87  40  U
+
 
 2025-01-18 Jan.Sat 16:00:07 how to convert LOG DATA string of base64 encoded data:
  :s/\(..\)/\=nr2char("0x" . submatch(1))/g
