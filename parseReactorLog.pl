@@ -1620,7 +1620,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
   if ($line =~ /0000000000000000000000(\w{6}),0x0{24}(\w{40}),?\s*$/){
     $otomro = eval "0x$1";
     $chemist = "0x$2";
-    if (exists $looking_for_these_otomros{$otomro}){ print STDERR "initiateReaction: HEY I FOUND AN OTOMRO YOURE LOOKING FOR: $otomro\nINPUT: $hold_the_line\n"; }
+##    if (exists $looking_for_these_otomros{$otomro}){ print STDERR "initiateReaction: HEY I FOUND AN OTOMRO YOURE LOOKING FOR: $otomro\nINPUT: $hold_the_line\n"; }
   }
 
 # print "initiateReaction OTOMRO $otomro CHEMIST $chemist INPUT NRG $energy_input INPUTS: ".  join(" + ",@otoms_in) . "\n";
@@ -1659,7 +1659,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
   #
   if ($line =~ /0000000000000000000000(\w\w\w\w\w\w),0x\w+,\s*$/){
     $otomro = eval "0x$1";
-    if (exists $looking_for_these_otomros{$otomro}){ print STDERR "analyseReactions: OTOMRO $otomro: HEY I FOUND AN OTOMRO YOURE LOOKING FOR\nINPUT: $hold_the_line\n"; }
+##    if (exists $looking_for_these_otomros{$otomro}){ print STDERR "analyseReactions: OTOMRO $otomro: HEY I FOUND AN OTOMRO YOURE LOOKING FOR\nINPUT: $hold_the_line\n"; }
   }
 
   #
@@ -1890,7 +1890,7 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
    $db{$otomro}{"otoms_in"} . $this_pad ,
    $db{$otomro}{"energy_in"}  ,
    $proton_situation,
-   $db{$otomro}{"otoms_out"} ,
+   $db{$otomro}{"otoms_out"} , # I THINK THIS SHOULD BE SORTED FOR DEDUPLICATION 
    " " x $db{$otomro}{"subscripts"} ,
    $db{$otomro}{"energy_out"} ,
    $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"} ,
@@ -1903,7 +1903,7 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
    # save data for recipes
    # FOR NOW ONLY 1 OR 2 INPUT REACTIONS! [ ] At some point I need to consider removing this limit
    if (  ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) <= 2 )
-      && ( keys %{ $db{$otomro}{"typehash"} } > 0          ) # only for those with actual successful reactions
+      && ( keys %{ $db{$otomro}{"typehash"} } > 0          ) # only for those with actual successful reactions [ ] not sure this is working like i think.
       ){
      foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){  
 ###print STDERR "DEBUG: otomro[$otomro] one[$one]\n";
