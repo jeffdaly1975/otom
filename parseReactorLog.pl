@@ -1599,10 +1599,13 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 # Honestly it seems better with the sorting.
 #
 ###print STDERR "DEBUG: =====> THIS ONE HAS THE SORTING ON !!!!!!!\n";
+ # here we use the Schwartzian Transform to sort the output otoms by proton mass order,
+ # using the %sortorder we created at the beginning. If its a molecule, thats not in the
+ # %sortorder hash so just use $maxkey as the sort index
   @otoms_in =
-              map { $_->[0] }                  # This
-              sort{ $a->[1] <=> $b->[1] }      # does
-              map { [$_, $sortorder{$_} ] }    # the magic
+              map { $_->[0] }                           # This
+              sort{ $a->[1] <=> $b->[1] }               # does
+              map { [$_, $sortorder{$_} || $maxkey ] }  # the magic
               map { $hexdict{$_}; } 
               @otoms_in;
 
@@ -1890,7 +1893,7 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
    $db{$otomro}{"otoms_in"} . $this_pad ,
    $db{$otomro}{"energy_in"}  ,
    $proton_situation,
-   $db{$otomro}{"otoms_out"} , # I THINK THIS SHOULD BE SORTED FOR DEDUPLICATION 
+   $db{$otomro}{"otoms_out_sorted"} , # I THINK THIS SHOULD BE SORTED FOR DEDUPLICATION 
    " " x $db{$otomro}{"subscripts"} ,
    $db{$otomro}{"energy_out"} ,
    $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"} ,
