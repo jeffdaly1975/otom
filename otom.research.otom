@@ -1,3 +1,16 @@
+2025-02-25 Feb.Tue 12:17:37 OMG. adbFreedom commented on discord they saw my notes where I was wondering if the algorithm was changed at some point because of the things I was seeing. They said that yes indeed Golid changed it and gave a screenshot of the note from Golid. THIS EXPLAINS A LOT! 
+ +------------------------------------------------------------------------------------------------------------------------
+ | Hi everyone! Thank you so much for the immediate engagement with OTOM yesterday! It is amazing to see the system in everyone's hands!
+ |
+ | After some lurking around in the shadows and seeing everyone's progress, I've decided to do some slight adjustments to the nuclear reactions, making them a bit easier to reach. These numbers are dependent on both the universe one is in and the particular otoms in question, but it seems like a lower baseline is in order.
+ |
+ | This is not the kind of changes I want to be making often, as they partly invalidate the research people have done up until this point, but it is the kind of changes that is necessary in the early stages to end up in a good spot long term. Thanks again for the engagement!
+ +------------------------------------------------------------------------------------------------------------------------
+
+[ ] Figure out which block/OTOMRO the change occurred at 
+[ ] Should I adjust my parser script to ignore reactions before the change?
+
+
 2025-02-25 Feb.Tue 11:33:18 Created a spreadsheet on Google Sheets (https://docs.google.com/spreadsheets/d/1Me8hNWaQihs_mdoJXx_nOuOk4DnOpC9nYd7a8T9KX9Y/edit?usp=sharing) for managing working on stuff with others. Not sure about this. Quixuote had offered to work on stuff with me and I've been fretting about how that could work. I guess this would work.
 
 2025-02-24 Feb.Mon 16:57:58 huh? Only 2 times did someone try making something with a Ua:
@@ -695,7 +708,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Xl-10ª |+  416.70 ..   890 => ⬇ Xl-11            |
 |  Ju-1∙ + Xl-11∙ |+  528.70 ..   830 =>   Cq-6 + Cq-6      |
 |  Ju-1∙ + Xl-12⁻ |+1000              =>  ?Xl-13? Zz-14?    | [r] makes Pq-13 nuclear
-|  Ju-1∙ + Pq-10⁺ |+1000              =>  ?Pq-11?           |
+|  Ju-1∙ + Pq-10⁺ |    55.94 .. 10000 =>   XlJu(Xl-10>Ju-1) |
 |  Ju-1∙ + Pq-11⁺ |+1000              =>  ?Pq-12?           | [ ]
 |  Ju-1∙ + Pq-12ª |+  545.80 ..  2200 => ⬇ Pq-13            |
 |  Ju-1∙ + Pq-13∙ |+2000              =>  ?Zz-14?           | [r] Makes⬇ Cq-6 + Af-8 using 648.60 nuclear+decay
