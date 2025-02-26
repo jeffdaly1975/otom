@@ -1904,9 +1904,9 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
 
 
    # save data for recipes
-   # FOR NOW ONLY 1 OR 2 INPUT REACTIONS! [ ] At some point I need to consider removing this limit
-   if (  ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) <= 2 )
+   if (  ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) <= 2 ) # FOR NOW ONLY 1 OR 2 INPUT REACTIONS! [ ] At some point I need to consider removing this limit
       && ( keys %{ $db{$otomro}{"typehash"} } > 0          ) # only for those with actual successful reactions [ ] not sure this is working like i think.
+      && ( $otomro >= 3050                                 ) # reaction algorithm was changed somewhere around OTOMRO 3050 so ignore those early ones
       ){
      foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){  
 ###print STDERR "DEBUG: otomro[$otomro] one[$one]\n";
