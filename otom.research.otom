@@ -1,13 +1,18 @@
 2025-02-25 Feb.Tue 12:17:37 OMG. adbFreedom commented on discord they saw my notes where I was wondering if the algorithm was changed at some point because of the things I was seeing. They said that yes indeed Golid changed it and gave a screenshot of the note from Golid. THIS EXPLAINS A LOT! 
+
  +------------------------------------------------------------------------------------------------------------------------
+ | golid 11/19/24 8:06 AM
  | Hi everyone! Thank you so much for the immediate engagement with OTOM yesterday! It is amazing to see the system in everyone's hands!
  |
  | After some lurking around in the shadows and seeing everyone's progress, I've decided to do some slight adjustments to the nuclear reactions, making them a bit easier to reach. These numbers are dependent on both the universe one is in and the particular otoms in question, but it seems like a lower baseline is in order.
  |
  | This is not the kind of changes I want to be making often, as they partly invalidate the research people have done up until this point, but it is the kind of changes that is necessary in the early stages to end up in a good spot long term. Thanks again for the engagement!
  +------------------------------------------------------------------------------------------------------------------------
+ discord message link: https://discord.com/channels/1259842667513118730/1308152652705693798/1308463469837684766
 
-[ ] Figure out which block/OTOMRO the change occurred at 
+[c] Figure out which block/OTOMRO the change occurred at 
+    FOR NOW i'm going to just go with OTOMRO 3050 as the change point. One of the reactions I was questioning was 3102 for Xl-10 + Xl-11 + 1000 =>  WXl(W-4>Xl-11) + Cq-6
+    So it happened sometime after that
 [ ] Should I adjust my parser script to ignore reactions before the change?
 
 
@@ -702,7 +707,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Cq-7∙  |+  501.51 ..  2000 =>   Af-8             |
 |  Ju-1∙ + Af-7ª  |+2000              =>  ?Xl-9?            | [r] +2000 Makes⬇ Ju-1 + Ju-1 + Cq-6 using 100.00 decay
 |  Ju-1∙ + Af-8∙  |+  469.17 ..  1000 => ⬇ Af-9             |
-|  Ju-1∙ + Af-9∙  |+1000              =>  ?Xl-10?           |
+|  Ju-1∙ + Af-9∙  |+1000              =>  ?Xl-10?           | [ ]
 |  Ju-1∙ + Af-10⁻ |+1000              =>  ?Xl-11?           | [ ]
 |  Ju-1∙ + Xl-9⁺  |+2000              =>  ?Xl-10? Pq-10?    | [r] +2000 Makes⬇ Xl-10 using 432.43 nuclear+decay
 |  Ju-1∙ + Xl-10ª |+  416.70 ..   890 => ⬇ Xl-11            |
@@ -720,7 +725,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Zz-16⁻ |+  719.14 ..  5000 =>   Dx-17            |
 |  Ju-1∙ + Dx-14⁺ |+1000              =>  ?Dx-15?           | [ ]
 |  Ju-1∙ + Dx-15⁺ |+  506.75 ..   917 => ⬇ Dx-16            |
-|  Ju-1∙ + Dx-16∙ |+1000              =>  ?Dx-17?           |
+|  Ju-1∙ + Dx-16∙ |+1000              =>  ?Dx-17?           | [ ]
 |  Ju-1∙ + Dx-17∙ |+  750.38 ..  1600 => ⬇ Dx-18            |
 |  Ju-1∙ + Dx-18∙ |+1000              =>  ?Dx-19? Pm-19?    | [r] +1000 Makes Pm-19 using 749.25 nuclear
 |  Ju-1∙ + Dx-19⁻ |+1000              =>  ?Dx-20? Pm-20?    | [r] Makes⬇ M-20 using 545.17 nuclear+decay
@@ -803,7 +808,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + C-39⁺  |+  876.67 ..  1100 =>   E-40             |
 |  Ju-1∙ + C-40⁺  |+  996.49 ..  1049 =>   E-41             |
 |  Ju-1∙ +  C-41⁺ |+1500              =>  ?E-42?            | [ ]
-|  Ju-1∙ +  C-42∙ |+1500              =>  ?E-43?            | [ ]
+|  Ju-1∙ +  C-42∙ |+1500              =>  ?E-43?            | [r] +1500 Makes E-43 using 996.46 nuclear
 |  Ju-1∙ +  C-43⁻ |+1500              =>  ?E-44? A-45?      | [ ]
 |  Ju-1∙ +  C-44⁻ |+1500              =>  ?E-45? A-46?      | [ ]
 |  Ju-1∙ +  C-45⁻ |+1500              =>  ?E-46? A-47?      | [ ]
@@ -892,8 +897,8 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Jx-61ª |+1500              =>  ?Hb-62?           | [ ]
 |  Ju-1∙ + Jx-62ª |+1500              =>  ?Hb-63?           | [ ]
 |  Ju-1∙ + Jx-63⁻ |+1500              =>  ?Hb-64? At-65?    | [ ]
-|  Ju-1∙ + Jx-64⁻ |+1500              =>  ?Hb-65? At-66?    | [ ]
-|  Ju-1∙ + Jx-65⁻ |+1500              =>  ?Hb-66? At-67?    | [ ]
+|  Ju-1∙ + Jx-64⁻ |+1500              =>  ?Hb-65? At-66?    | [r] +1500 Makes Hb-65 using 1152.58 nuclear
+|  Ju-1∙ + Jx-65⁻ |+1500              =>  ?Hb-66? At-67?    | [r] +1500 Makes Hb-66 using 1144.78 nuclear
 |  Ju-1∙ + Hb-57⁺ |+ 1075.91 ..  1570 => ⬇ Hb-58            |
 |  Ju-1∙ + Hb-58ª |+1500              =>  ?Hb-59?           | [ ]
 |  Ju-1∙ + Hb-59ª |+ 1403.48 ..  1700 => ⬇ Hb-60            |
@@ -928,7 +933,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ny-71⁻ |+ 1217.28 ..  1650 =>   Pw-72            |
 |  Ju-1∙ + Ny-72⁻ |+ 2000             =>  ?Pw-73? Gk-74?    | [ ]
 |  Ju-1∙ + Pw-64⁺ |+ 2000             =>  ?Gk-65? Pw-65?    | [ ]
-|  Ju-1∙ + Pw-65⁺ |+ 2000             =>  ?Gk-66? Pw-66?    | [ ]
+|  Ju-1∙ + Pw-65⁺ |+ 2000             =>  ?Gk-66? Pw-66?    | [r] +2000 Makes Pw-66 using 1173.20 nuclear+decay
 |  Ju-1∙ + Pw-66⁺ |+ 4000             =>  ?                 | [r] Makes Gk-67 using 1294.81 nuclear
 |  Ju-1∙ + Pw-67ª |+ 2000             =>  ?                 | [r] Makes Gk-68 using 1219.33 nuclear
 |  Ju-1∙ + Pw-68ª |+ 2000             =>  ?                 | [r] Makes Gk-69 using 1231.48 nuclear
@@ -940,9 +945,9 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Pw-74⁻ |+ 2000             =>  ?Gk-75? Qi-76?    | [ ]
 |  Ju-1∙ + Gk-65⁺ |+ 2000             =>  ?Qi-66?           | [r] Makes⬇ Gk-66 using 1119.97 nuclear+decay
 |  Ju-1∙ + Gk-66⁺ |+ 2000             =>  ?Qi-67?           | [ ]
-|  Ju-1∙ + Gk-67⁺ |+ 2000             =>  ?Qi-68?           | [ ]
-|  Ju-1∙ + Gk-68⁺ |+ 2000             =>  ?Qi-69?           | [ ]
-|  Ju-1∙ + Gk-69ª |+ 2000             =>  ?Qi-70?           | [ ]
+|  Ju-1∙ + Gk-67⁺ |+ 2000             =>  ?Qi-68?           | [r] +2000 Makes Gk-68 using 1187.77 nuclear+decay
+|  Ju-1∙ + Gk-68⁺ |+ 2000             =>  ?Qi-69?           | [r] +2000 Makes Gk-69 using 1216.59 nuclear+decay
+|  Ju-1∙ + Gk-69ª |+ 2000             =>  ?Qi-70?           | [r] +2000 Makes Qi-70 using 1235.34 nuclear
 |  Ju-1∙ + Gk-70ª |+ 2000             =>  ?Qi-71?           | [ ]
 |  Ju-1∙ + Gk-71ª |+ 1270.94 ..  2100 =>   Qi-72            |
 |  Ju-1∙ + Gk-72∙ |+ 1774.19 ..  5000 =>   Qi-73            |
@@ -5570,7 +5575,7 @@ beta+ + beta-
 [ ] 14  8 Dx⁺(0.334) + 78 35 Qi⁻(0.870) + 5000 => |⬆ 92 44 .. |= 92 43 .. |⬇ 92 42 Ua
 
 beta+ + stable
-[*]  4  2  W∙(1.000) + 14  8 Dx⁺(0.334) + 5000 => |⬆ 18 11 Fw |= 18 10  M |⬇ 18  9 Pm [ ] might make M-18 but probably not
+[r]  4  2  W∙(1.000) + 14  8 Dx⁺(0.334) + 5000 => |⬆ 18 11 Fw |= 18 10  M |⬇(18  9 Pm)[r] might make M-18 but probably not
 [*]  6  3 Cq∙(1.000) + 14  8 Dx⁺(0.334) + 5000 => |⬆ 20 12 Pt |= 20 11 Fw |⬇ 20 10  M [ ] might make Fw-20 but probably not
 [F] 14  8 Dx⁺(0.334) + 72 34 Gk∙(1.774) + 5000 => |⬆ 86 43 .. |= 86 42 Ua |⬇ 86 41 Sq [f] try
 [ ] 14  8 Dx⁺(0.334) + 74 34 Gk∙(1.762) + 5000 => |⬆ 88 43 .. |= 88 42 Ua |⬇ 88 41 Sq
@@ -7057,8 +7062,8 @@ lets switch to tryng these since (22 12 Pt⁺(0.717) +  47 25 Nb⁺(0.793) => �
 [ ] 26 11 Fw⁻(0.634) +  67 30 Hbª(0.781) => |⬆  93  42 Ua |=  93  41 Sq |⬇  93  40  U
 [r] 22 12 Pt⁺(0.717) +  47 25 Nb⁺(0.793) => |⬆  69  38 Bt |=  69  37 Gq |⬇  69  36 Xy <= makes 69 36 Xy
 [f] 22 12 Pt⁺(0.717) +  63 28 Yp⁻(0.806) => |⬆  85  41 Sq |=  85  40  U |⬇  85  39  H <==NOPE 22 12 Pt decayed to 22 11 Fw
-[*] 22 12 Pt⁺(0.717) +  64 29 Jx⁻(0.832) => |⬆  86  42 Ua |=  86  41 Sq |⬇  86  40  U
-[*] 22 12 Pt⁺(0.717) +  65 29 Jx⁻(0.787) => |⬆  87  42 Ua |=  87  41 Sq |⬇  87  40  U
+[f] 22 12 Pt⁺(0.717) +  64 29 Jx⁻(0.832) => |⬆  86  42 Ua |=  86  41 Sq |⬇  86  40  U <--NOPE got Fw-22 + Jx-64 using 300.00 decay
+[f] 22 12 Pt⁺(0.717) +  65 29 Jx⁻(0.787) => |⬆  87  42 Ua |=  87  41 Sq |⬇  87  40  U <--NOPE got Fw-22 + Jx-65 using 300.00 decay
 [ ] 28 12 Pt⁻(0.673) +  52 23 Aw⁻(0.795) => |⬆  80  36 Xy |=  80  35 Qi |⬇  80  34 Gk
 [ ] 28 12 Pt⁻(0.673) +  53 24 Oc⁻(0.861) => |⬆  81  37 Gq |=  81  36 Xy |⬇  81  35 Qi
 [ ] 28 12 Pt⁻(0.673) +  54 24 Oc⁻(0.808) => |⬆  82  37 Gq |=  82  36 Xy |⬇  82  35 Qi
@@ -7168,11 +7173,11 @@ lets switch to tryng these since (22 12 Pt⁺(0.717) +  47 25 Nb⁺(0.793) => �
 [r] 14  6 Pq         +  50 23 Aw         + 1612 => 64 29 Jx
 [f] 22 12 Pt⁺(0.717) +  64 29 Jx⁻(0.832) + 6000 => |⬆  86  42 Ua |=  86  41 Sq |⬇  86  40  U <---NOPE got Fw-22 + Jx-64 using 300.00 decay
 
-[*]  9  5 Xl         + 25 13  S          +  773 => 34 18 Fj
-[ ] 13  7 Zz         + 34 18 Fj          + 1146 => 47 25 Nb
-[ ] 47 25 Nb         +                     3684 => 22 12 Pt + 25 13  S
-[ ] 15  6 Pq         + 50 23 Aw          + 1449 => 65 29 Jx
-[ ] 22 12 Pt⁺(0.717) +  65 29 Jx⁻(0.787) + 6000 => |⬆  87  42 Ua |=  87  41 Sq |⬇  87  40  U
+[r]  9  5 Xl         + 25 13  S          +  773 => 34 18 Fj
+[r] 13  7 Zz         + 34 18 Fj          + 1146 => 47 25 Nb
+[r] 47 25 Nb         +                     3684 => 22 12 Pt + 25 13  S
+[r] 15  6 Pq         + 50 23 Aw          + 1449 => 65 29 Jx
+[f] 22 12 Pt⁺(0.717) +  65 29 Jx⁻(0.787) + 6000 => |⬆  87  42 Ua |=  87  41 Sq |⬇  87  40  U <---NOPE makes Jx-65 + Fw-22
 
 
 2025-01-18 Jan.Sat 16:00:07 how to convert LOG DATA string of base64 encoded data:
