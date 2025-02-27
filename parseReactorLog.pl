@@ -4,6 +4,7 @@
 # https://shapescan.xyz/csv-export?type=logs&address=0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc
 
 
+use MIME::Base64;
 use bignum;
 
 sub length_in_grapheme_clusters {
@@ -1834,11 +1835,33 @@ if (@reaction_types){
  $reaction_string = "none";
 }
 
+#
+# Can I get the base64 encoded molecule data?
+#
+
+while ($line =~  /(.{4})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/){
+  my $char_count = eval "0x$1";
+
+  $line =~ s/^.*?646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/;
+
+  my $msg= substr $line, 0, $char_count * 2, "";
+  my @bits = ($msg =~ m/(..)/g);
+
+  my $decoded_string="";
+  foreach my $b ( @bits){
+    my $charified = chr eval "0x$b";
+    $decoded_string.="$charified";
+  }
+#data:application/json;base64,eyJuYW1lIjoiRHjigoJYbCBNb2xlY3VsZSIsImltYWdlIjoiaHR0cHM6Ly9wcm9kLW90b21zLnMzLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL290b21zL2ZkYTAwODUwMzI4OGU1YWJjMzcwMzI4MTUwZDIwOTkzZmVjMjZlZmU1NzA3ZjJkMTJhYjU1MmViYjBkYTVlMjZEeDE2LER4MTgtWGwxMS10b2tlbi5wbmciLCJjaGlwSW1hZ2UiOiJodHRwczovL3Byb2Qtb3RvbXMuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vb3RvbXMvZmRhMDA4NTAzMjg4ZTVhYmMzNzAzMjgxNTBkMjA5OTNmZWMyNmVmZTU3MDdmMmQxMmFiNTUyZWJiMGRhNWUyNkR4MTYsRHgxOC1YbDExLWNoaXAucG5nIiwiYXR0cmlidXRlcyI6W3sidHJhaXRfdHlwZSI6Ik5hbWUiLCJ2YWx1ZSI6IkR44oKCWGwifSx7InRyYWl0X3R5cGUiOiJBY3RpdmF0aW9uIEVuZXJneSIsInZhbHVlIjoyMS4zNjE1NTUwNjk2NTE2MDh9LHsidHJhaXRfdHlwZSI6IlJhZGl1cyIsInZhbHVlIjoyLjEwNjU4ODIwNzMzMTk0NX0seyJ0cmFpdF90eXBlIjoiTWFzcyIsInZhbHVlIjo0NX0seyJ0cmFpdF90eXBlIjoiQm9uZCBUeXBlIiwidmFsdWUiOiJjb3ZhbGVudCJ9LHsidHJhaXRfdHlwZSI6IkJvbmQgU3RyZW5ndGgiLCJ2YWx1ZSI6MzAuNDI2MDg3OTYxNjQxMzR9LHsidHJhaXRfdHlwZSI6IkdpdmluZyBBdG9tcyIsInZhbHVlIjoiRHgsIER4In0seyJ0cmFpdF90eXBlIjoiUmVjZWl2aW5nIEF0b21zIiwidmFsdWUiOiJYbCJ9LHsidHJhaXRfdHlwZSI6IkVsZWN0cmljYWwgQ29uZHVjdGl2aXR5IiwidmFsdWUiOjB9LHsidHJhaXRfdHlwZSI6IlRoZXJtYWwgQ29uZHVjdGl2aXR5IiwidmFsdWUiOjAuNjQxODE4NjA4MTEwODk2NH0seyJ0cmFpdF90eXBlIjoiVG91Z2huZXNzIiwidmFsdWUiOjEuMDA5NTQ4Mjg4MzE2MDAwM30seyJ0cmFpdF90eXBlIjoiSGFyZG5lc3MiLCJ2YWx1ZSI6Mi43MjE5MTY3MTAyMTI4MjY2fSx7InRyYWl0X3R5cGUiOiJEdWN0aWxpdHkiLCJ2YWx1ZSI6MH1dfQ==
+
+  my $really_decoded = decode_base64(substr $decoded_string, 29);
+
+#  print STDERR "DEBUG: token data: $really_decoded\n";
+
+}
 
 
- # [ ]Should i even be sorting it? I can't tell
- #    [ ] Try one with and one with out 
- #    [ ] compare outputs.
+ # Should i even be sorting it? I can't tell
 
  # here we use the Schwartzian Transform to sort the output otoms by proton mass order,
  # using the %sortorder we created at the beginning. If its a molecule, thats not in the
