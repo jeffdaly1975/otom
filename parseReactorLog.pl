@@ -3,6 +3,7 @@
 # This script parses the OTOM Reactor contract CSV LOGs from
 # https://shapescan.xyz/csv-export?type=logs&address=0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc
 
+# [ ] I should capture all the token (otom/molecule) base64 encoded stuff as a db that also is printed out to a file
 
 use MIME::Base64;
 use bignum;
@@ -1839,14 +1840,16 @@ if (@reaction_types){
 # Can I get the base64 encoded molecule data?
 #
 
-while ($line =~  /(.{4})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/){
+while ($line =~  /(.{6})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/){
   my $char_count = eval "0x$1";
+  print STDERR "DEBUG: OTOMRO $otomro: $char_count == 0x$1\n";
 
   $line =~ s/^.*?646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/;
 
   my $msg= substr $line, 0, $char_count * 2, "";
   my @bits = ($msg =~ m/(..)/g);
 
+# [ ] should learn how to simplify this with unpack()
   my $decoded_string="";
   foreach my $b ( @bits){
     my $charified = chr eval "0x$b";
@@ -1856,7 +1859,7 @@ while ($line =~  /(.{4})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634
 
   my $really_decoded = decode_base64(substr $decoded_string, 29);
 
-#  print STDERR "DEBUG: token data: $really_decoded\n";
+  print "TOKEN DATA: $really_decoded\n";
 
 }
 

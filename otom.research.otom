@@ -1,3 +1,8 @@
+2025-02-27 Feb.Thu 00:13:37 The script is doing pretty good decoding the token metadata from the base64 encoded string but some are getting cut off. like this one:
+
+TOKEN DATA: {"name":"Gy Otom","image":"https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26Gy34--token.png","chipImage":"https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26Gy34--chip.png","attributes":[{"trait_type":"Name","value":"Gy"},{"trait_type":"Series","value":"noble"},{"trait_type":"Protons","value":16},{"trait_type":"Neutrons","value":18},{"trait_type":"Mass","value":34},{"trait_type":"Stability","value":1.9561142790171602},{"trait_type":"Density","value":38.43310583478368},{"trait_type":"Radius","value":0.9599703329034237},{"trait_type":"Electronegativity","value":0},{"trait_type":"Metallic","value":false},{"trait_type":"Decay Type","value":"stable"},{"trait_type":"Filled Valence","
+|     1373 | Gy-34∙                                     +       75 =>   Gy-34                                                                  +      71.25 |       3.75 | none                         | 0xd435566e386a9ae228a89826ab733981967c30ef | 0xe923a273bc398135704dd375408d8f6b144c37f65131133dd9f897fe36ba37d8 | 0x4af1da244c5e00507966f31bb054b3c50c7987ab5206db30fe03e796b1afe11b |
+
 2025-02-26 Feb.Wed 21:37:00 modified the parser to decode the base64 data strings that give details for each otom/molecule. Did that so I could find the hardest/softest ones.
 
 Tied for softest value hardness==0.2:
