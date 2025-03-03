@@ -1913,6 +1913,7 @@ if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
 
 my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
 
+
 # printf "| %8d | %-60.60s%s+ %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
   printf "| %8d | %s + %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
    $otomro, 
