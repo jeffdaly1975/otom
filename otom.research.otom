@@ -1,3 +1,47 @@
+2025-03-04 Mar.Tue 11:02:06 I want to know the proper terminology for talking about reaction outputs of the form O₂ O₃ O₄ etc. Do they have a special name? Perhaps Isotopologues? But not quite
+
+ +------------------------------------------------------------------------------------------------------------------------
+ | What Are Isotopologues?
+ | An isotopologue is a molecular species that differs from another only in the isotopic composition of its atoms. The term comes from "isotope" (atoms of the same element with different numbers of neutrons) and "logue" (from the Greek "logos," meaning relation or type). In other words, isotopologues have the same chemical formula and structure but vary in which isotopes of the constituent elements are present.
+ | For example:
+ |
+ | -In O₂ (dioxygen), you could have:
+ |   ¹⁶O-¹⁶O (both oxygen atoms are oxygen-16, the most common isotope).
+ |   
+ |   ¹⁶O-¹⁸O (one oxygen-16 and one oxygen-18).
+ |   
+ |   ¹⁸O-¹⁸O (both oxygen atoms are oxygen-18).
+ | These are all isotopologues of O₂ because they’re chemically O₂, but their isotopic makeup differs.
+ | 
+ | -In O₃ (ozone), you could have:
+ |   ¹⁶O-¹⁶O-¹⁶O.
+ |   
+ |   ¹⁶O-¹⁶O-¹⁸O.
+ |   
+ |   ¹⁶O-¹⁸O-¹⁸O.
+ | 
+ |   ¹⁸O-¹⁸O-¹⁸O.
+ | These are isotopologues of O₃.
+ +------------------------------------------------------------------------------------------------------------------------
+
+ +------------------------------------------------------------------------------------------------------------------------
+ | When a molecule is composed of only one kind of element, it is called an elemental molecule or simply a molecule of an element. More commonly, though, the term depends on the number of atoms involved:
+ | Diatomic molecule: If it’s made of two atoms of the same element, like O₂ (oxygen), N₂ (nitrogen), or H₂ (hydrogen).
+ | 
+ | Triatomic molecule: If it’s three atoms, like O₃ (ozone).
+ | 
+ | Polyatomic molecule: If it’s more than two atoms, though this term is less specific and can apply to molecules with different elements too.
+ | 
+ | In a broader sense, these are also referred to as homonuclear molecules, meaning the molecule consists of atoms of the same nucleus (i.e., the same element). For example:
+ | O₂ is a homonuclear diatomic molecule.
+ | 
+ | O₃ is a homonuclear triatomic molecule.
+ | 
+ | The term "homonuclear" distinguishes them from heteronuclear molecules, which contain atoms of different elements (e.g., CO or H₂O). So, if you’re looking for a precise chemical term, homonuclear molecule is the most technical way to describe a molecule made of only one kind of element, with "diatomic" or "triatomic" added to specify the number of atoms. 
+ +------------------------------------------------------------------------------------------------------------------------
+
+Hmm. Seems like the term I'm looking for is "homonuclear molecules"
+
 2025-03-03 Mar.Mon 13:01:53 Hmm. Tried adding code to parser to show which reactions were being tried for the first time. Problem is, I'm parsing separate logs which are each in reverse order so many of these indicators are wrong. You need to wait until all the data is parsed to go through in order of execution. In order to do that properly, you'd have to know and read the logs in the right order, OR attach the timestamp of each tx to the reaction. Maybe just knowing the block order is enough. You can't go with OTOMRO number order due to the fact that they can be analysed out of order even though they are issued in order each time a new reaction is started.
 
 2025-03-03 Mar.Mon 12:46:06 
@@ -3748,7 +3792,7 @@ MOLECULES OF FIVE TABLE
 
 Here's a table of molecules seen created so far of just one otom type:
 ⎥◼◼◻ ◼◻⎢
-MOLECULES OF ONE KIND OF OTOM (* indicates I have one) 
+HOMONUCLEAR MOLECULES (* indicates I have one) 
 |otom|protons| Series   | shells                                                             |  *₂ |  *₃ |  *₄ |  *₅ |
 | Ju |  1    | alkaline | ⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- |*Ju₃ | --- | --- |
 | W  |  2    | nonmetal | ⎥◼◼◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | *W₃ | --- | --- | (W₅ not possible since there were 26 attempts even some with 5 stable isotopes)
@@ -3776,21 +3820,21 @@ MOLECULES OF ONE KIND OF OTOM (* indicates I have one)
 | Oc | 24    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
 | Nb | 25    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◻◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|*Nb₂ |*Nb₃ |*Nb₄ |*Nb₅ |
 | Xk | 26    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◻ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|*Xk₂ |*Xk₃ |*Xk₄ |*Xk₅ |
-| Ic | 27    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|*Ic₂ |*Ic₃ |     | [ ] |
+| Ic | 27    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◻ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|*Ic₂ |*Ic₃ | [ ] | [ ] |
 | Yp | 28    | nonmetal | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | [ ] |
 | Jx | 29    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
 | Hb | 30    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |*Hb₅ |
-| At | 31    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|*At₂ |     |     | At₅ |
-| Ny | 32    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |*Ny₅ |
-| Pw | 33    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | [ ] |
-| Gk | 34    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |*Gk₅ |
-| Qi | 35    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢|     |     |     | Qi₅ |
+| At | 31    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◻ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢|*At₂ | [ ] | [ ] | At₅ |
+| Ny | 32    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◻◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢| [ ] | [ ] | [ ] |*Ny₅ |
+| Pw | 33    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◻◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢| [ ] | [ ] | [ ] | [ ] |
+| Gk | 34    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◻◻⎢⎥◻ ◻◻◻◻⎢| [ ] | [ ] | [ ] |*Gk₅ |
+| Qi | 35    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◻ ◼◼◻⎢⎥◻ ◻◻◻◻⎢| [ ] | [ ] | [ ] | Qi₅ |
 | Xy | 36    | nonmetal | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◻⎢⎥◻ ◻◻◻◻⎢|     |     |     |     |
 | Gq | 37    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◻◻◻◻⎢| --- | --- | --- | --- |
 | Bt | 38    | alkaline | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◻ ◼◻◻◻⎢|     |     |     | [ ] |
-| H  | 39    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢|     |     |     |     |
-| U  | 40    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢|     |     |     |     |
-| Sq | 41    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢|     |     |     |*Sq₅ |
+| H  | 39    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◻◻◻⎢| [ ] | [ ] | [ ] | [ ] |
+| U  | 40    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢| [ ] | [ ] | [ ] | [ ] |
+| Sq | 41    | metal    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◻⎢| [ ] | [ ] | [ ] |*Sq₅ |
 | Ua | 42    | noble    | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢| --- | --- | --- | --- |
 
 noble Series cannot make molecules
