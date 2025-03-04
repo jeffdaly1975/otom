@@ -1904,6 +1904,11 @@ while ($line =~  /(.{6})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634
 if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
  my $proton_situation=" ";
 
+ my $proton_change = abs( $db{$otomro}{"protons_in"} - $db{$otomro}{"protons_out"} );
+ if ($proton_change > 1){
+  print STDERR "DEBUG: OTOMRO $otomro Proton change was more than 0 or 1: $proton_change protons\n" 
+ }
+
  if ($db{$otomro}{"protons_in"} > $db{$otomro}{"protons_out"}){
    $proton_situation="⬇";
  }elsif ($db{$otomro}{"protons_in"} < $db{$otomro}{"protons_out"}){
