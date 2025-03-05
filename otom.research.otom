@@ -1,3 +1,7 @@
+2025-03-05 Mar.Wed 12:03:13
+adbFreedom said:
+ | The metallic bonds always get me too, that's why I started focusing on finding reactions that use otoms on the right edge of the periodic table lol. Sq-85 is another one that I get a lot of combinations that wont react that should make sense ex: Aw50 + Fj34 = Sq84 but Aw50 + Fj35 will not react to form Sq85.. Fj34 and Fj35 are very similar isotopes in all characteristics including stability, I don't understand why one would work and not the other
+
 2025-03-04 Mar.Tue 19:54:00 Thinking about the stability values of undiscovered isotopes as learned from Kjetil's chart. I believe that many of the reactions I attempt to produce new isotopes at, they fail because an intermediate result occurs, but its given a chance to decay based off the stability value.
 
 For example, Seems like Pq-10 + Pt-22 + 2000 should make Fj-32 but instead it makes D-32 via nuclear+decay. Well the stability of Fj-32⁺ is 0.39 so of course it decays to D-32. Is this what's happening to us? 
@@ -5435,11 +5439,11 @@ Here's how to make O-*
 Lets make a cheap one:
 [r] 17  9 Pm + 20 10  M + 1463 => 37 19  O
 [r] 17  9 Pm + 20 10  M + 1463 => 37 19  O
-[r] 37 19  O +            2400 => 37 19  O + 2280.00 NOTHING HAPPENED
+[r] 37 19  O +            2400 => 37 19  O + 2280.00               NOTHING HAPPENED
 [r] 37 19  O +            2700 => PmM      +   26.12 using 2673.88 TOO MUCH
-[r] 37 19  O +            2650 => 37 19  O + 2517.50 using 132.50
+[r] 37 19  O +            2650 => 37 19  O + 2517.50 using 132.50  NOT ENOUGH
 [r] 37 19  O +            2680 => PmM      +    7.12 using 2672.88 TOO MUCH
-[*] 37 19  O +            2670 => ?
+[r] 37 19  O +            2670 => ? <------------------------------makes Pm-17 + M-20 using 2655.17 nuclear
 
 2025-01-30 Jan.Thu 00:25:54 working on an idea for a table. Trying to show the bands of input energy that produce either nothing, a fission, a chemical or decay reaction.
                  |  1   1 Ju                           |..| 25  13  S                           | 34  15 Xc                           |
@@ -5508,8 +5512,9 @@ drop reactions with more than 2 inputs:
 drop all intermediate duplicated reactions; where the inputs and outpus are the same for 3 lines in a row, drop the middle. repeat multiple times
  :%s/^|\(.\{-}\)+\s\+\d\+ =>\s\+\(.........................................\)\s\++\s\+[0-9.]\+ |.*\n\zs|\1+\s\+\d\+ =>\s\+\2\s\++\s\+[0-9.]\+ |.*\n\ze|\1+\s\+\d\+ =>\s\+\2//
 
-[ ] What happened here?
+[c] What happened here?
 | Zz-14ª + Dx-15⁺ + Pm-18⁺ +  S-25⁺ + Xc-30∙ +      400 => ⬇ Zz-14 + DxXc(Dx-18>Xc-30) + DxS(Dx-15,S-25>)                           +     329.15 |      70.85 | metallic, chemical, decay    |
+I guess the Pm-18 decayed to Dx-18 and chemically joined Xc-30. Then Dx-15 and S-25 chemically/metallicly reacted.
 
 2025-01-29 Jan.Wed 18:19:32 NEW DISCOVERY Gq-71 aka 71 37 Gq
 
@@ -10687,12 +10692,12 @@ POSSIBLE REACTIONS:
 ?[c] 7  4 Afª(0.194) + 34 18 Fj⁻(0.790) +1200 =>⬆ 41 23 Aw                  <---NOPE: ⬇ 41 21  E+401.42
 ?[c] 9  5 Xl⁺(0.329) + 34 18 Fj⁻(0.790) +2000 =>⬆ 43 24 Oc  OR = 43 23 Aw   <---NOPE: ⬇ 43 22  A+1037.73
 ?[c]10  6 Pq⁺(0.049) + 34 18 Fj⁻(0.790) +2000 =>⬆ 44 25 Nb  OR = 44 24 Oc   <---NOPE: ⬇ 44 23 Aw+1135.09
-?[ ]13  7 Zz⁺(0.525) + 34 18 Fj⁻(0.790)       =>⬆ 47 26 Xk  OR = 47 25 Nb OR          ⬇ 47 24 Oc
+?[c]13  7 Zz⁺(0.525) + 34 18 Fj⁻(0.790)       =>⬆ 47 26 Xk  OR = 47 25 Nb OR          ⬇ 47 24 Oc
 ?[c]15  8 Dx⁺(0.604) + 34 18 Fj⁻(0.790) +2000 =>⬆ 49 27 Ic  OR = 49 26 Xk   <---NOPE: ⬇ 49 25 Nb+704.50
 ?[c]16  8 Dx∙(1.604) + 34 18 Fj⁻(0.790) +2000 =>⬆ 50 27 Ic                  <---NOPE: = 50 26 Xk+201.37
-?[ ]17  9 Pm⁺(0.685) + 34 18 Fj⁻(0.790)       =>⬆ 51 28 Yp  OR = 51 27 Ic OR ⬇ 51 26 Xk       
+?[c]17  9 Pm⁺(0.685) + 34 18 Fj⁻(0.790)       =>⬆ 51 28 Yp  OR =(51 27 Ic)OR ⬇ 51 26 Xk  Makes Ic-51
 ?[ ]19 10  M⁺(0.811) + 34 18 Fj⁻(0.790)       =>⬆ 53 29 Jx  OR = 53 28 Yp OR ⬇ 53 27 Ic
-?[ ]20 10  M∙(1.940) + 34 18 Fj⁻(0.790)       =>⬆ 54 29 Jx  OR = 54 28 Yp OR ⬇ 54 27 Ic
+?[c]20 10  M∙(1.940) + 34 18 Fj⁻(0.790)       =>⬆ 54 29 Jx  OR =(54 28 Yp)OR ⬇ 54 27 Ic  Makes Yp-54
 ?[ ]21 11 Fw⁺(0.847) + 34 18 Fj⁻(0.790)       =>⬆ 55 30 Hb  OR = 55 29 Jx OR ⬇ 55 28 Yp
 ?[ ]22 11 Fw⁺(0.840) + 34 18 Fj⁻(0.790)       =>⬆ 56 30 Hb  OR = 56 29 Jx OR ⬇ 56 28 Yp
 ?[ ]22 12 Pt⁺(0.717) + 34 18 Fj⁻(0.790)       =>⬆ 56 31 At  OR = 56 30 Hb OR ⬇ 56 29 Jx
@@ -10731,19 +10736,9 @@ POSSIBLE REACTIONS:
 ?[ ]32 14 Zq⁻(0.772) + 47 25 Nb⁺(0.793)       =>⬆ 79 40  U  OR = 79 39  H OR ⬇ 79 38 Bt
 
 ?[ ]10  6 Pq⁺(0.049) + 50 26 Xk⁺(0.831)       =>⬆ 60 33 Pw  OR = 60 32 Ny OR ⬇ 60 31 At
-?[ ] 9  5 Xl⁺(0.329) + 51 27 Ic⁺(0.803)       =>⬆ 60 33 Pw  OR = 60 32 Ny OR ⬇ 60 31 At
-?[ ]10  6 Pq⁺(0.049) + 51 27 Ic⁺(0.803)       =>⬆ 61 34 Gk  OR = 61 33 Pw OR ⬇ 61 32 Ny
-?[ ]22 12 Pt⁺(0.717) + 51 27 Ic⁺(0.803)       =>⬆ 73 40  U  OR = 73 39  H OR ⬇ 73 38 Bt
-
-Need to make many 34 18 Fj:
-[ ]  9  5 Xl⁺ (0.329) + 25 13  S⁺ (0.790) +  780 => 34 18 Fj⁻   
-[ ] 10  6 Pq⁺ (0.049) + 24 12 Pt∙ (1.796) +  910 => 34 18 Fj⁻   
-[ ] 17  9 Pm⁺ (0.685) + 17  9 Pm⁺ (0.685) +  940 => 34 18 Fj⁻   
-
-[ ] 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
-[ ]  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc
-[ ]  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
-
+?[c] 9  5 Xl⁺(0.329) + 51 27 Ic⁺(0.803)       =>⬆ 60 33 Pw  OR = 60 32 Ny OR ⬇(60 31 At) Makes At-60
+?[c]10  6 Pq⁺(0.049) + 51 27 Ic⁺(0.803)       =>⬆ 61 34 Gk  OR = 61 33 Pw OR ⬇(61 32 Ny) Makes Ny-61
+?[c]22 12 Pt⁺(0.717) + 51 27 Ic⁺(0.803)       =>⬆ 73 40  U  OR = 73 39  H OR ⬇(73 38 Bt) Makes Bt-73
 
  [r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
  [r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
@@ -10758,7 +10753,6 @@ Need to make many 34 18 Fj:
  [r] 20 10  M + 32 17  D + 2250 => 52 27 Ic
  [r] 52 27 Ic +            4800 => 24 12 Pt + 28 15 Xc
 ?[r]28 15 Xc⁺(0.765) + 47 25 Nb⁺(0.793)       =>⬆ 75 41 Sq  OR = 75 40  U OR ⬇ 75 39  H NEW DISCOVERY
-
 
 
  [r]  9  5 Xl + 25 13  S +  780 => 34 18 Fj
@@ -10805,7 +10799,7 @@ If the decay type is beta- and the Stability is 0.77 or less it may  decay into 
 If the decay type is beta+ and the Stability is 0.77 or less it may  decay into a different otom or 2 different otoms where the sum of the protons is the same or -1 of the input otom
 
 but why didn't 16  7 Zz +5000 decay into a proton mass total of 8?
- 16  7 Zz⁻|0.578| 16  8 Dx∙           |  7  3 Cq∙+  9  4 Af∙| [ ]   
+ 16  7 Zz⁻|0.578| 16  8 Dx∙           |  7  3 Cq∙+  9  4 Af∙| 
 
 is 23 12 Pt decay+0 correct? NO because I had it wrong as beta-
 
@@ -11191,7 +11185,7 @@ decay of 16  7 Zz
 [ ] 22 12 Pt + 5000 => ?
 [ ] 26 11 Fw + 10000 => ?
 [ ] 22 12 Pt + 10000 => ?
-[ ] 23 12 Pt +  5000 => ?
+[c] 23 12 Pt +  5000 => ?  ⬇ Xl-11 + Pq-12 using 1447.71 nuclear+decay
 [ ] 23 12 Pt + 10000 => ?
 
 [r] 15  8 Dx + 10000 => ? MAKES Af₂ 
@@ -11201,7 +11195,7 @@ decay of 16  7 Zz
 [ ] 17  9 Pm + 10000 => ?
 [r] 19 10 M  + 10000 => ? MAKES XlAf
 
-[ ] 19  8 Dx + 5000 => ?
+[r] 19  8 Dx + 5000 => ? MAKES Af₂(Af-10,Af-9>)
 [r] 17  9 Pm + 5000 => ? MAKEs XlAf
 
 2025-01-07 Jan.Tue 22:54 Still can't wrap my head around the shells. Apparently different layers have different numbers of shells
@@ -11809,7 +11803,7 @@ TODO:
 [r] 10  6 Pq + 24 12 Pt + 1000 => 34 18 Fj
 [r] 17  9 Pm + 18  9 Pm + 1050 => 35 18 Fj
   [r] 34 18 Fj + 34 18 Fj + 2250 => 68 35 Qi 
-  [.] 34 18 Fj + 35 18 Fj + 2300 => 69 35 Qi 
+  [r] 34 18 Fj + 35 18 Fj + 2300 => 69 35 Qi 
 
 
 
@@ -11822,11 +11816,11 @@ but what about 5 2 W + 5 2 W + 5 2 W + 5 2 W?
 2025-01-02.Jan.Thu 16:05:00 Perhaps there is a way to do a reaction that previously produced Af₂ but get it to produce something else
  17  8 Dx + 5000 => Af₂ + 3635.56 | nuclear, metallic      | 1364.44 |
  16  8 Dx + 5000 => Af₂ + 3726.26 | nuclear, metallic      | 1273.74 |
-[ ] 1 1 Ju + 15  8 Dx + 1600
-[ ] 1 1 Ju + 16  8 Dx + 1600
-[f] 1 1 Ju + 17  8 Dx + 1600
-[ ] 1 1 Ju + 18  8 Dx + 1600
-[ ] 1 1 Ju + 19  8 Dx + 1600
+[c] 1 1 Ju + 15  8 Dx + 1600 makes Dx-16
+[c] 1 1 Ju + 16  8 Dx + 1600 makes Dx-17
+[c] 1 1 Ju + 17  8 Dx + 1600 makes Dx-18
+[c] 1 1 Ju + 18  8 Dx + 1600 makes Pm-19
+[c] 1 1 Ju + 19  8 Dx + 1600 makes M-20
 
 Well that didn't work: 1  1 Ju + 17  8 Dx + 1600 => 18  8 Dx + 849.62 | nuclear, decay         |  750.38 |
 
@@ -11877,37 +11871,37 @@ Well that didn't work: 1  1 Ju + 17  8 Dx + 1600 => 18  8 Dx + 849.62 | nuclear,
 | 12  7 Zz | [ ] try
  1  1 Ju + 11  6 Pq =  12   7 ..
  2  1 Ju + 10  6 Pq =  12   7 ..
- 5  3 Cq +  7  4 Af =  12   7 ..
+ 5  3 Cq +  7  4 Af =  12   7 ..   +5000 makes ⬇ Pq-12 using 481.81 nuclear+decay
 
 | 14  8 Dx | [ ] try
- 1  1 Ju + 13  7 Zz =  14   8 ..
+ 1  1 Ju + 13  7 Zz =  14   8 ..   +1000 makes ⬇ Zz-14 using 469.47 nuclear+decay
  4  2  W + 10  6 Pq =  14   8 ..
- 5  3 Cq +  9  5 Xl =  14   8 ..
- 7  4 Af +  7  4 Af =  14   8 ..
+ 5  3 Cq +  9  5 Xl =  14   8 ..   +2000 makes ⬇ Zz-14 using 370.63 nuclear+decay
+ 7  4 Af +  7  4 Af =  14   8 ..   +350  makes ⬇ Zz-14 using 301.36 nuclear+decay
 
 | 18 10  M | [ ] try
- 1  1 Ju + 17  9 Pm =  18  10 ..
+ 1  1 Ju + 17  9 Pm =  18  10 ..  +1000 makes ⬇ Pm-18 using 553.42 nuclear+decay
  5  3 Cq + 13  7 Zz =  18  10 ..
  7  4 Af + 11  6 Pq =  18  10 ..
- 8  4 Af + 10  6 Pq =  18  10 ..
- 9  5 Xl +  9  5 Xl =  18  10 ..
+ 8  4 Af + 10  6 Pq =  18  10 ..  +2000 makes ⬇ Pm-18 using 532.76 nuclear+decay
+ 9  5 Xl +  9  5 Xl =  18  10 ..  +1700 makes ⬇ Pm-18 using 471.90 nuclear+decay
 
 | 24 13  S | [ ] try
  1  1 Ju + 23 12 Pt =  24  13 ..
  5  3 Cq + 19 10  M =  24  13 ..
- 7  4 Af + 17  9 Pm =  24  13 ..
- 9  5 Xl + 15  8 Dx =  24  13 ..
-10  6 Pq + 14  7 Zz =  24  13 ..
+ 7  4 Af + 17  9 Pm =  24  13 ..  +5000 makes ⬇ Pt-24 using 751.86 nuclear+decay
+ 9  5 Xl + 15  8 Dx =  24  13 ..  +1500 makes ⬇ Pt-24 using 611.42 nuclear+decay
+10  6 Pq + 14  7 Zz =  24  13 ..  +1500 makes ⬇ Pt-24 using 543.97 nuclear+decay
 11  6 Pq + 13  7 Zz =  24  13 ..
 
 | 26 14 Zq | [ ] try
- 1  1 Ju + 25 13  S =  26  14 ..
- 5  3 Cq + 21 11 Fw =  26  14 ..
+ 1  1 Ju + 25 13  S =  26  14 .. +750  makes ⬇ S-26 using 668.24 nuclear+decay
+ 5  3 Cq + 21 11 Fw =  26  14 .. +860  makes ⬇ S-26 using 524.09 nuclear+decay
  7  4 Af + 19 10  M =  26  14 ..
- 9  5 Xl + 17  9 Pm =  26  14 ..
-10  6 Pq + 16  8 Dx =  26  14 ..
+ 9  5 Xl + 17  9 Pm =  26  14 .. +1700 makes ⬇ S-26 using 670.91 nuclear+decay
+10  6 Pq + 16  8 Dx =  26  14 .. +1100 makes ⬇ S-26 using 731.11 nuclear+decay
 11  6 Pq + 15  8 Dx =  26  14 ..
-13  7 Zz + 13  7 Zz =  26  14 ..
+13  7 Zz + 13  7 Zz =  26  14 .. +4406 makes ⬇ S-26 using 836.31 nuclear+decay
 
 | 30 16 Gy | [X] try FOUND BY DECAY REACTION
  1  1 Ju + 29 15 Xc =  30  16 ..
