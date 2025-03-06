@@ -1,4 +1,4 @@
-Wed Mar  5 20:56:48 EST 2025  HERE is the order isotopes were discovered in; For the mineable Otoms, of course this doesn't exactly make sense since just mining them discovers it. But the others are the right order
+2025-03-05 Mar.Wed 20:56:48 HERE is the order isotopes were discovered in; For the mineable Otoms, of course this doesn't exactly make sense since just mining them discovers it. But the others are the right order
 
 |       | Pq-10 | mineable -- NEVER AN OUTPUT
 |       | Cq-5  | mineable -- NEVER AN OUTPUT
@@ -327,16 +327,14 @@ Wed Mar  5 20:56:48 EST 2025  HERE is the order isotopes were discovered in; For
 
 I don't have all the timestamps. I have to look them up 1 at a time. Tried exporting the OTOMRO contract logs and it worked but there's no timestamps in there. Only the block numbers to indicate when it happened.
 
-
-Wed Mar  5 20:14:42 EST 2025 [ ] Something is wrong with my parser. Debug statement says:
+2025-03-05 Mar.Wed 20:14:42 [ ] Something is wrong with my parser. Debug statement says:
   DEBUG: OTOMRO 5326 Proton change was more than 0 or 1: 28 protons
 
 This:
 |     5326 | Zz-15∙ +  S-25⁺ + Xc-31∙ +  D-37⁻ + Nb-54ª +      150 => ⬆ Zz-15 + XcS(Xc-31>S-25) + XcS(Xc-31>S-25) + NbD(D-37,Nb-54>)           +      61.61 |      88.39 | metallic, chemical           | 0x42934420b772ed2c77526c7670ee85b9d63f81b8 | 0xa3ee9816dd69f82c98426f880e4dae84af4574baab93d1926b63d8da42529684 | 0xf02388a0e8b02d4a312e20971ebb5df0db31ddaffbf8d02c448b941384bc8e11 |
 Is it not catching all the isotopes in the molecules?
 
-
-Wed Mar  5 15:45:20 EST 2025
+2025-03-05 Mar.Wed 15:45:20 
 since Fj-36ª + Aw-47⁺ + 2876 =>   Sq-83
 
 Would Fj-34 + Aw-44 => ? Sq-78 
@@ -7415,7 +7413,7 @@ beta+ + stable
 [ ] 14  8 Dx⁺(0.334) + 76 35 Qi∙(1.894) + 5000 => |⬆ 90 44 .. |= 90 43 .. |⬇ 90 42 Ua
 
 beta+ + alpha
-[f] 14  8 Dx⁺(0.334) + 67 30 Hbª(0.781) + 5000 => |⬆ 81 39  H |= 81 38 Bt |⬇ 81 37 Gq <-- made Bt-81 so I guess alpha decay with stab=0.781 didn't let Dx-14 drop a proton
+[f] 14  8 Dx⁺(0.334) + 67 30 Hbª(0.781) + 5000 => |⬆ 81 39  H |=(81 38 Bt)|⬇ 81 37 Gq <-- made Bt-81 so I guess alpha decay with stab=0.781 didn't let Dx-14 drop a proton
 [ ] 14  8 Dx⁺(0.334) + 69 32 Nyª(0.859) + 5000 => |⬆ 83 41 Sq |= 83 40  U |⬇ 83 39  H
 [ ] 14  8 Dx⁺(0.334) + 70 33 Pwª(0.868) + 5000 => |⬆ 84 42 Ua |= 84 41 Sq |⬇ 84 40  U
 [ ] 14  8 Dx⁺(0.334) + 71 34 Gkª(0.879) + 5000 => |⬆ 85 43 .. |= 85 42 Ua |⬇ 85 41 Sq
