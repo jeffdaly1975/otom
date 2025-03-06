@@ -1,6 +1,385 @@
+Wed Mar  5 20:56:48 EST 2025  HERE is the order isotopes were discovered in; For the mineable Otoms, of course this doesn't exactly make sense since just mining them discovers it. But the others are the right order
+
+|       | Pq-10 | mineable -- NEVER AN OUTPUT
+|       | Cq-5  | mineable -- NEVER AN OUTPUT
+|     2 | Ju-1  | mineable
+|     3 | Af-9  | mineable
+|     3 | Dx-18 |
+|     4 | W-4   | mineable
+|     4 | Cq-6  | mineable
+|     4 | Cq-7  | mineable
+|     5 | Pt-26 | mineable
+|     5 | Aw-50 | mineable
+|     6 | Xl-9  | mineable
+|     6 | Pq-13 | mineable
+|    12 | W-5   | mineable
+|    12 | Pt-25 | mineable
+|    14 | Ju-3  | mineable
+|    14 | Xl-11 | mineable
+|    14 | Zz-15 |
+|    18 | Xl-10 | mineable
+|    18 | M-20  | mineable
+|    22 | M-22  | mineable
+|    22 | Xc-34 | mineable
+|    24 | Pm-19 | mineable
+|    25 | Zz-14 | mineable
+|    26 | S-26  | mineable
+|    26 | Xc-32 |
+|    36 | Af-8  | mineable
+|    36 | Pt-24 | mineable
+|    42 | Dx-17 | mineable
+|    45 | S-25  | mineable
+|    50 | Pq-12 | mineable
+|    50 | Pq-14 | mineable
+|    57 | Xc-31 | mineable
+|    66 | Gy-34 | mineable
+|   103 | Fw-23 |
+|   190 | Af-7  | mineable
+|   190 | Xc-30 | mineable
+|   190 | D-37  | mineable
+|   207 | Fj-37 | mineable
+|   219 | M-23  | mineable
+|   219 | Zq-32 | mineable
+|   221 | Ju-2  | mineable
+|   249 | Nb-54 | mineable
+|   262 | Zz-13 | mineable
+|   310 | Fw-25 | mineable
+|   325 | Pm-18 | mineable
+|   339 | Dx-16 | mineable
+|   761 | Pq-15 | mineable
+|  1224 | Pm-17 | mineable
+|  1357 | Dx-15 | mineable
+|  1757 | O-38  |
+|  1766 | C-39  |
+|  1782 | E-40  |
+|  1792 | Xc-33 |
+|  1806 | Xk-55 |
+|  1813 | E-41  |
+|  1824 | D-35  |
+|  1828 | A-42  |
+|  1848 | Oc-51 |
+|  1865 | O-40  |
+|  1923 | Ic-56 |
+|  1931 | Yp-57 |
+|  2054 | Jx-58 |
+|  2143 | Hb-59 |
+|  2147 | Hb-60 |
+|  2549 | Fj-38 |
+|  2552 | O-39  |
+|  2563 | C-40  |
+|  2644 | Fw-21 |
+|  2901 | Jx-59 |
+|  3232 | At-61 |
+|  3235 | Jx-64 |
+|  3316 | Jx-56 |
+|  3326 | Gy-32 |
+|  3381 | Ny-63 |
+|  3389 | Hb-57 |
+|  3440 | Hb-58 |
+|  3814 | Pw-71 |
+|  3974 | A-45  |
+|  3998 | C-41  |
+|  4004 | E-43  |
+|  4023 | A-44  |
+|  4085 | C-43  |
+|  4100 | E-42  |
+|  4146 | Jx-62 |
+|  4162 | Xk-54 |
+|  4205 | At-67 |
+|  4253 | Jx-60 |
+|  4304 | Oc-53 |
+|  4400 | Gq-80 |
+|  4434 | Hb-61 |
+|  4485 | At-62 |
+|  4533 | Bt-81 |
+|  4539 | H-82  |
+|  4576 | Yp-59 |
+|  4674 | U-83  |
+|  4713 | Xk-57 |
+|  4714 | Sq-84 |
+|  4727 | Xk-56 |
+|  4733 | Ua-85 |
+|  4737 | Yp-61 |
+|  4744 | Jx-63 |
+|  4748 | At-68 |
+|  4761 | Gk-74 |
+|  4767 | Qi-74 |
+|  4772 | Ny-69 |
+|  4774 | Ic-58 |
+|  4781 | Qi-75 |
+|  4785 | Xy-76 |
+|  4810 | Hb-62 |
+|  4966 | Ny-71 |
+|  4982 | Ny-68 |
+|  4989 | Hb-65 |
+|  5330 | Xy-74 |
+|  5339 | Gq-75 |
+|  5365 | Xk-53 |
+|  5371 | Ic-55 |
+|  5404 | Oc-50 |
+|  5406 | Gk-75 |
+|  5463 | Yp-60 |
+|  5482 | At-69 |
+|  5505 | Xy-75 |
+|  5591 | Gq-78 |
+|  5594 | Bt-79 |
+|  5607 | Xy-78 |
+|  5628 | Ic-59 |
+|  5707 | Pw-70 |
+|  5731 | Gk-73 |
+|  5801 | E-47  |
+|  5814 | Oc-52 |
+|  5940 | H-81  |
+|  5945 | U-82  |
+|  5948 | Sq-83 |
+|  5958 | C-42  |
+|  5970 | Bt-76 |
+|  5973 | A-46  |
+|  5980 | Pw-72 |
+|  5989 | Hb-64 |
+|  5991 | At-65 |
+|  6035 | C-44  |
+|  6301 | M-19  |
+|  6576 | Ny-67 |
+|  6588 | Pw-68 |
+|  6598 | Gk-71 |
+|  6671 | Ic-54 |
+|  6776 | Yp-62 |
+|  6857 | Jx-61 |
+|  6868 | Hb-63 |
+|  6876 | Gq-77 |
+|  6900 | Qi-76 |
+|  6901 | S-28  |
+|  6951 | Xy-79 |
+|  6987 | Gq-79 |
+|  7008 | Ny-66 |
+|  7022 | Fj-36 |
+|  7030 | Fj-34 |
+|  7032 | Qi-70 |
+|  7060 | Bt-80 |
+|  7076 | Fw-24 |
+|  7079 | E-45  |
+|  7105 | Pw-69 |
+|  7198 | H-80  |
+|  7208 | U-81  |
+|  7222 | E-46  |
+|  7289 | Ua-84 |
+|  7386 | A-47  |
+|  7436 | Nb-49 |
+|  7627 | At-64 |
+|  7735 | Bt-78 |
+|  7736 | At-63 |
+|  7787 | Qi-77 |
+|  7967 | Qi-78 |
+|  8060 | Pw-67 |
+|  8078 | At-66 |
+|  8223 | E-44  |
+|  8234 | Sq-82 |
+|  8398 | A-50  |
+|  8409 | Ic-57 |
+|  8437 | Ua-83 |
+|  8683 | Hb-66 |
+|  8719 | E-48  |
+|  8973 | Nb-53 |
+|  9063 | A-48  |
+|  9188 | Gk-72 |
+|  9227 | Qi-72 |
+|  9234 | Xy-73 |
+|  9276 | A-43  |
+|  9286 | O-41  |
+|  9319 | Gq-76 |
+|  9443 | Bt-77 |
+|  9448 | Xc-29 |
+|  9697 | Yp-55 |
+|  9726 | Gy-35 |
+| 10412 | Zq-28 |
+| 10434 | S-27  |
+| 10514 | Gq-74 |
+| 10515 | Ny-64 |
+| 10595 | Ny-70 |
+| 10787 | Gy-33 |
+| 10792 | D-34  |
+| 10794 | Fj-35 |
+| 10795 | D-36  |
+| 10809 | Zq-27 |
+| 10973 | M-21  |
+| 10998 | Fw-22 |
+| 11144 | Jx-65 |
+| 11145 | Hb-67 |
+| 11158 | Aw-45 |
+| 11167 | Oc-46 |
+| 11199 | Ny-65 |
+| 11203 | H-79  |
+| 11208 | U-80  |
+| 11407 | Oc-49 |
+| 11502 | Fj-39 |
+| 11516 | Fj-40 |
+| 11601 | Zq-29 |
+| 11603 | Zq-30 |
+| 11612 | Gy-36 |
+| 11614 | Gy-31 |
+| 11615 | Pw-66 |
+| 11616 | O-37  |
+| 11692 | O-42  |
+| 11827 | Aw-46 |
+| 11829 | D-38  |
+| 11830 | Oc-47 |
+| 11860 | Sq-81 |
+| 11861 | Nb-52 |
+| 11866 | Aw-47 |
+| 11868 | Oc-48 |
+| 11893 | Aw-44 |
+| 11896 | H-78  |
+| 11906 | U-79  |
+| 11907 | Sq-80 |
+| 12037 | A-49  |
+| 12052 | Zq-31 |
+| 12146 | Qi-73 |
+| 12147 | D-33  |
+| 12184 | Qi-71 |
+| 12223 | D-39  |
+| 12309 | Xy-77 |
+| 12329 | Yp-56 |
+| 12330 | Yp-58 |
+| 12331 | Jx-57 |
+| 12349 | Aw-48 |
+| 12352 | Aw-49 |
+| 12475 | C-38  |
+| 12485 | Xy-72 |
+| 12719 | C-45  |
+| 12985 | Pt-23 |
+| 13180 | Xk-59 |
+| 13196 | Nb-50 |
+| 13209 | Pw-73 |
+| 13229 | Nb-51 |
+| 13233 | Nb-48 |
+| 13235 | Nb-47 |
+| 13365 | Gk-70 |
+| 13374 | Gk-69 |
+| 13379 | Pw-65 |
+| 13384 | Gk-67 |
+| 13393 | Gk-68 |
+| 13697 | D-32  |
+| 13971 | O-43  |
+| 13982 | Xk-52 |
+| 13985 | Ic-60 |
+| 14178 | Fj-41 |
+| 14191 | Xk-51 |
+| 14194 | Xk-50 |
+| 14423 | Aw-51 |
+| 14424 | Pw-74 |
+| 14442 | Nb-56 |
+| 14444 | Nb-55 |
+| 14806 | Pq-11 |
+| 15051 | Xk-58 |
+| 15125 | S-29  |
+| 15549 | Oc-54 |
+| 15580 | Gk-76 |
+| 15858 | Ic-61 |
+| 15863 | Ic-53 |
+| 15869 | Ic-52 |
+| 15882 | Yp-54 |
+| 15932 | Yp-63 |
+| 16125 | Ny-72 |
+| 16309 | Bt-75 |
+| 16341 | Pm-20 |
+| 16882 | Pt-27 |
+| 16884 | Zz-16 |
+| 18554 | Pm-21 |
+| 18595 | S-30  |
+| 18606 | Fw-26 |
+| 18622 | Dx-19 |
+| 18709 | Pt-22 |
+| 18787 | Xc-28 |
+| 18829 | Ic-51 |
+| 19377 | Zq-26 |
+| 20166 | Aw-52 |
+| 20184 | Pt-28 |
+| 20456 | Qi-68 |
+| 20461 | Qi-69 |
+| 20569 | Xy-71 |
+| 20903 | Ny-62 |
+| 20905 | Pw-64 |
+| 20908 | Gk-66 |
+| 20911 | Qi-67 |
+| 20937 | O-36  |
+| 20948 | Xy-70 |
+| 20952 | Gq-72 |
+| 20953 | Gq-73 |
+| 20956 | Bt-74 |
+| 20975 | H-77  |
+| 20976 | H-76  | 2025-01-10 00:55:13 EST
+| 21564 | U-78  | 2025-01-12 20:45:49 EST
+| 21661 | Sq-79 | 2025-01-13 11:55:19 EST
+| 22011 | At-60 | 2025-01-16 03:06:07 EST
+| 22012 | Ny-61 | 2025-01-16 03:13:23 EST
+| 22032 | Bt-73 | 2025-01-16 03:52:37 EST
+| 22322 | Xy-69 | 2025-01-19 01:27:07 EST
+| 22364 | H-75  | 2025-01-19 13:25:23 EST
+| 22660 | Af-10 | 2025-01-23 13:01:29 EST
+| 22674 | Xl-12 | 2025-01-23 15:37:57 EST
+| 22796 | Dx-14 | 2025-01-24 21:49:49 EST
+| 22888 | S-24  | 2025-01-25 10:29:17 EST
+| 22896 | Gk-65 | 2025-01-25 11:10:29 EST
+| 22906 | Gy-30 | 2025-01-25 12:06:51 EST
+| 23507 | Gq-71 | 2025-01-29 18:16:23 EST
+| 26416 | U-77  | 2025-02-13 16:22:27 EST
+
+I don't have all the timestamps. I have to look them up 1 at a time. Tried exporting the OTOMRO contract logs and it worked but there's no timestamps in there. Only the block numbers to indicate when it happened.
+
+
+Wed Mar  5 20:14:42 EST 2025 [ ] Something is wrong with my parser. Debug statement says:
+  DEBUG: OTOMRO 5326 Proton change was more than 0 or 1: 28 protons
+
+This:
+|     5326 | Zz-15∙ +  S-25⁺ + Xc-31∙ +  D-37⁻ + Nb-54ª +      150 => ⬆ Zz-15 + XcS(Xc-31>S-25) + XcS(Xc-31>S-25) + NbD(D-37,Nb-54>)           +      61.61 |      88.39 | metallic, chemical           | 0x42934420b772ed2c77526c7670ee85b9d63f81b8 | 0xa3ee9816dd69f82c98426f880e4dae84af4574baab93d1926b63d8da42529684 | 0xf02388a0e8b02d4a312e20971ebb5df0db31ddaffbf8d02c448b941384bc8e11 |
+Is it not catching all the isotopes in the molecules?
+
+
+Wed Mar  5 15:45:20 EST 2025
+since Fj-36ª + Aw-47⁺ + 2876 =>   Sq-83
+
+Would Fj-34 + Aw-44 => ? Sq-78 
+or    Fj-34 + Aw-51 => ? Sq-85
+
+[r]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
+[r] 10  6 Pq + 34 18 Fj +  809 => 44 23 Aw
+[r]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
+[r] Fj-34 + Aw-44 + 4000 => ? Sq-78  <----NOPE makes U-78 using 2422.47 nuclear+decay
+
+[r]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
+[r] 14  6 Pq + 37 17  D + 1307 => 51 23 Aw
+[f] Fj-34 + Aw-51 + 4000 => ? Sq-85 <----NO REACTION!?!?!? used 200 energy
+[f] Fj-34 + Aw-51 + 7000 => ? Sq-85 <----NO REACTION!?!?!? used 350 energy
+
 2025-03-05 Mar.Wed 12:03:13
 adbFreedom said:
  | The metallic bonds always get me too, that's why I started focusing on finding reactions that use otoms on the right edge of the periodic table lol. Sq-85 is another one that I get a lot of combinations that wont react that should make sense ex: Aw50 + Fj34 = Sq84 but Aw50 + Fj35 will not react to form Sq85.. Fj34 and Fj35 are very similar isotopes in all characteristics including stability, I don't understand why one would work and not the other
+
+Yes I agree. I don't understand. 
+|    26365 | Fj-34⁺ + Aw-50∙ + 2706 => Sq-84           +    0.96 |    2705.04 | nuclear                      | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x64e3acf576083c37b2bdfdb48beba11ac58aa8a49d08fda06492f4b79eeedb21 | 0x37524535def2a6bc0ff4fe795520275d58cd44dc0b4286fb31e4188ac28549a0 |
+|    26249 | Fj-35⁺ + Aw-50∙ +10000 => Fj-35 + Aw-50   + 9500.00 |     500.00 | none                         | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xbb9597e590c59af55233eb3b632f04734fd44e574d74392a2687d9ddf6ac08dc | 0xb7879bed1407ae9968b00603905eeaf5dc4c8743874f5595666086256bbc653b |
+
+In this example, Fj-34/Fj-35 both combine with Zz-13 to produce Nb-47/Nb-48:
+|*47 25 Nb | Nb-47 | 13  7 Zz + 34 18 Fj + 1146 => 47 25 Nb
+|*48 25 Nb | Nb-48 | 13  7 Zz + 35 18 Fj + 1196 => 48 25 Nb
+
+With M-20 it makes Yp-54/Yp-55
+|*54 28 Yp | Yp-54 | 20 10  M + 34 18 Fj + 2200 => 54 28 Yp
+| 55 28 Yp | Yp-55 | 20 10  M + 35 18 Fj + 2251 => 55 28 Yp
+
+With Fj-34 itself, we get Qi-68/Qi-69
+|*68 35 Qi | Qi-68 | 34 18 Fj + 34 18 Fj + 2035 => 68 35 Qi
+|*69 35 Qi | Qi-69 | 34 18 Fj + 35 18 Fj + 2119 => 69 35 Qi
+
+With D-37 we get Qi-71/Qi-72
+|*71 35 Qi | Qi-71 | 37 17  D + 34 18 Fj + 2208 => 71 35 Qi
+|*72 35 Qi | Qi-72 | 37 17  D + 35 18 Fj + 2427 => 72 35 Qi
+
+With Dx-15, Fj-35 produces Xk-50 so its a little different. I think in this case, Dx-15+Fj-34 first produces Xk-49 but it decays dropping a proton to become Nb-49
+|*49 25 Nb | Nb-49 | 15  8 Dx + 34 18 Fj + 1296 => 49 25 Nb
+| 50 26 Xk | Xk-50 | 15  8 Dx + 35 18 Fj + 1395 => 50 26 Xk
+
 
 2025-03-04 Mar.Tue 19:54:00 Thinking about the stability values of undiscovered isotopes as learned from Kjetil's chart. I believe that many of the reactions I attempt to produce new isotopes at, they fail because an intermediate result occurs, but its given a chance to decay based off the stability value.
 
@@ -897,7 +1276,10 @@ try
 [r]  4  2  W + 23 10  M +  767 => 27 12 Pt
 [r] Pq-15 + Pt-27 + 2400 => ? Fj-42? <---NOPE Makes O-42 using 1055.92 nuclear+decay
 
-try [ ] Pq-15 + Pt-28 + 2400 => ? Fj-43?
+try [f] Pq-15 + Pt-28 + 2400 => ? Fj-43?
+[r] 15  6 Pq + 37 17  D + 1178 => 52 23 Aw
+[r] 52 23 Aw +            4292 => 24 11 Fw + 28 12 Pt
+[r] Pq-15 + Pt-28 + 2400 => ? Fj-43? <---NOPE makes O-43 using 1005.94 nuclear+decay
 
 | Zz-13⁺ + Pt-24∙ + [1291.72 ..  4000] =>   O-37  |
 | Zz-13⁺ + Pt-25ª + [1095.32 ..  2690] =>   O-38  |
@@ -2309,7 +2691,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Xk-51ª |+1500              =>  ?Ic-52?           | [ ]
 |  Ju-1∙ + Xk-52⁺ |+1500              =>  ?Ic-53?           | [r] +1500 Makes Ic-53 using 1072.06 nuclear
 |  Ju-1∙ + Xk-53∙ |+1500              =>  ?Ic-54?           | [ ]
-|  Ju-1∙ + Xk-54⁻ |+1500              =>  ?Ic-55?           | [*]
+|  Ju-1∙ + Xk-54⁻ |+1500              =>  ?Ic-55?           | [r] +1500 Makes Ic-55 using 1106.72 nuclear
 |  Ju-1∙ + Xk-55⁻ |+ 1095.30 ..  5500 =>   Ic-56            |
 |  Ju-1∙ + Xk-56⁻ |+ 1290.74 ..  5000 =>   Ic-57            |
 |  Ju-1∙ + Xk-57⁻ |+1500              =>  ?Ic-58? Yp-59?    | [ ]
@@ -2319,7 +2701,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ic-52⁺ |+ 1223.80 ..  5000 => ⬇ Ic-53            |
 |  Ju-1∙ + Ic-53⁺ |+1500              =>  ?Yp-54? Ic-54?    | [r] Makes Yp-54 using 1088.71 nuclear
 |  Ju-1∙ + Ic-54∙ |+1500              =>  ?Yp-55?           | [ ]
-|  Ju-1∙ + Ic-55∙ |+1500              =>  ?Yp-56?           | [ ]
+|  Ju-1∙ + Ic-55∙ |+1500              =>  ?Yp-56?           | [r] +1500 Makes Yp-56 using 1137.82 nuclear
 |  Ju-1∙ + Ic-56∙ |+ 1133.51 ..  1200 =>   Yp-57            |
 |  Ju-1∙ + Ic-57∙ |+1500              =>  ?Yp-58?           | [ ]
 |  Ju-1∙ + Ic-58∙ |+ 1174.78 ..  1800 =>   Yp-59            |
@@ -4474,7 +4856,9 @@ Pt-25 Pt-26 S-25  S-26  W-4
 W-5   Xc-30 Xc-31 Xc-34 Xl-10
 Xl-11 Xl-9  Zq-32 Zz-13 Zz-14
 
+
 regular expression: /\( 7  4 Af\| 8  4 Af\| 9  4 Af\|50 23 Aw\| 5  3 Cq\| 6  3 Cq\| 7  3 Cq\|37 17  D\|15  8 Dx\|16  8 Dx\|17  8 Dx\|37 18 Fj\|25 11 Fw\|34 16 Gy\| 1  1 Ju\| 2  1 Ju\| 3  1 Ju\|20 10  M\|22 10  M\|23 10  M\|54 25 Nb\|17  9 Pm\|18  9 Pm\|19  9 Pm\|10  6 Pq\|12  6 Pq\|13  6 Pq\|14  6 Pq\|15  6 Pq\|24 12 Pt\|25 12 Pt\|26 12 Pt\|25 13  S\|26 13  S\| 4  2  W\| 5  2  W\|30 15 Xc\|31 15 Xc\|34 15 Xc\|10  5 Xl\|11  5 Xl\| 9  5 Xl\|32 14 Zq\|13  7 Zz\|14  7 Zz\)/
+regular expression: /\<\(Af-7\|Af-8\|Af-9\|Aw-50\|Cq-5\|Cq-6\|Cq-7\|D-37\|Dx-15\|Dx-16\|Dx-17\|Fj-37\|Fw-25\|Gy-34\|Ju-1\|Ju-2\|Ju-3\|M-20\|M-22\|M-23\|Nb-54\|Pm-17\|Pm-18\|Pm-19\|Pq-10\|Pq-12\|Pq-13\|Pq-14\|Pq-15\|Pt-24\|Pt-25\|Pt-26\|S-25\|S-26\|W-4\|W-5\|Xc-30\|Xc-31\|Xc-34\|Xl-10\|Xl-11\|Xl-9\|Zq-32\|Zz-13\|Zz-14\)\>/
 
 [c] Why do I have it in my recipes file that these 4 are mineable? Are they not?
 |*15  7 Zz | Zz-15 | mineable ? -no mine event created any of this otom in past 1 weeks

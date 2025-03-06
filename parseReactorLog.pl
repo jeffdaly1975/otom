@@ -1842,7 +1842,7 @@ if (@reaction_types){
 
 while ($line =~  /(.{6})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/){
   my $char_count = eval "0x$1";
-  print STDERR "DEBUG: OTOMRO $otomro: $char_count == 0x$1\n";
+ #print STDERR "DEBUG: OTOMRO $otomro: $char_count == 0x$1\n";
 
   $line =~ s/^.*?646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/;
 
@@ -1901,27 +1901,61 @@ while ($line =~  /(.{6})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634
 }
 
 
-if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
- my $proton_situation=" ";
+ print STDERR "$otomro\n";
 
- my $proton_change = abs( $db{$otomro}{"protons_in"} - $db{$otomro}{"protons_out"} );
- if ($proton_change > 1){
-  print STDERR "DEBUG: OTOMRO $otomro Proton change was more than 0 or 1: $proton_change protons\n" 
- }
+}
 
- if ($db{$otomro}{"protons_in"} > $db{$otomro}{"protons_out"}){
-   $proton_situation="⬇";
- }elsif ($db{$otomro}{"protons_in"} < $db{$otomro}{"protons_out"}){
-   $proton_situation="⬆";
- }
+#
+# END of input line processing
+#
 
 
-my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
+
+#
+# Determine reactions performed for the first time and output data
+#
+my %seen_this_reaction_yet=();
+foreach my $otomro (sort {$a <=> $b} keys %db){
+  $db{$otomro}{"first_instantiation"}=0;
+
+  if (exists $db{$otomro}{"analyse_tx"} && exists $db{$otomro}{"initiate_tx"}){
+ 
+    unless (exists $db{$otomro}{"otoms_in"}        ){ print STDERR "DEBUG: \$db{$otomro}{otoms_in} UNDEFINED!\n"; }
+    unless (exists $db{$otomro}{"otoms_out_sorted"}){ print STDERR "DEBUG: \$db{$otomro}{otoms_out_sorted} UNDEFINED!\n"; }
+    unless (exists $db{$otomro}{"type"}            ){ print STDERR "DEBUG: \$db{$otomro}{type} UNDEFINED!\n"; }
+
+    my $this_one = $db{$otomro}{"otoms_in"} . "=>" . $db{$otomro}{"otoms_out_sorted"} . " " . $db{$otomro}{"type"};
+
+    $seen_this_reaction_yet{$this_one}++;
+
+    if ($seen_this_reaction_yet{$this_one} < 2){
+       $db{$otomro}{"first_instantiation"}=1;
+    }
+
+    my $proton_situation=" ";
+
+    my $proton_change = abs( $db{$otomro}{"protons_in"} - $db{$otomro}{"protons_out"} );
+    if ($proton_change > 1){
+     print STDERR "DEBUG: OTOMRO $otomro Proton change was more than 0 or 1: $proton_change protons\n" 
+    }
+
+    if ($db{$otomro}{"protons_in"} > $db{$otomro}{"protons_out"}){
+     $proton_situation="⬇";
+    }elsif ($db{$otomro}{"protons_in"} < $db{$otomro}{"protons_out"}){
+     $proton_situation="⬆";
+    }
 
 
-# printf "| %8d | %-60.60s%s+ %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
-  printf "| %8d | %s + %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
+    my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
+
+
+#   printf "| %8d | %-60.60s%s+ %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
+    printf "| %8d%s| %s + %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
    $otomro, 
+
+   ($db{$otomro}{"first_instantiation"}==1 ? "*" : " "),
+
+
    $db{$otomro}{"otoms_in"} . $this_pad ,
    $db{$otomro}{"energy_in"}  ,
    $proton_situation,
@@ -1955,11 +1989,13 @@ my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
 #[ ] I should be capturing the lower and upper limits.
      }
    }
-
- print STDERR "$otomro\n";
+  }
 }
 
-}
+
+
+
+
 
 #
 # recipe output
