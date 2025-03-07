@@ -348,6 +348,7 @@ I don't have all the timestamps. I have to look them up 1 at a time. Tried expor
 This:
 |     5326 | Zz-15∙ +  S-25⁺ + Xc-31∙ +  D-37⁻ + Nb-54ª +      150 => ⬆ Zz-15 + XcS(Xc-31>S-25) + XcS(Xc-31>S-25) + NbD(D-37,Nb-54>)           +      61.61 |      88.39 | metallic, chemical           | 0x42934420b772ed2c77526c7670ee85b9d63f81b8 | 0xa3ee9816dd69f82c98426f880e4dae84af4574baab93d1926b63d8da42529684 | 0xf02388a0e8b02d4a312e20971ebb5df0db31ddaffbf8d02c448b941384bc8e11 |
 Is it not catching all the isotopes in the molecules?
+[ ] what log file is this in
 
 2025-03-05 Mar.Wed 15:45:20 
 since Fj-36ª + Aw-47⁺ + 2876 =>   Sq-83
