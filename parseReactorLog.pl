@@ -757,32 +757,14 @@ my %db = ();
 ## preload the %db with the missing OTOMRO data until we get that issue resolved.
 ## [[
 
-
-#      = {
-#          'otoms_in'       => 'Dx-15⁺ + Fj-34⁺',
-#          'otoms_in_list'  => [ 'Dx-15', 'Fj-34' ],
-#          'energy_in'      => '       1296',
-#
-#          'otoms_out'      => 'Nb-49',
-#          'otoms_out_list' => [ 'Nb-49' ],
-#          'protons_in'     => 26,
-#          'protons_out'    => 25,
-#          'energy_out'     => '         35.702508778524247646',
-#
-#          'initiate_tx'    => '0x1d2c33ba2cc2abe7d755f25983b74904705a2b9f2aed164907d494b7c063ff91',
-#          'analyse_tx'     => '0x5b28c54324b3fc223fbb0a8cb876ec69f5e5d03ed515a0ef1da3aec2bcd6c79a',
-#          'type'           => 'decay, nuclear',
-#          'chemist'        => '0xf8d0c9f300d0649861963ebae0bb568533619448',
-#          'subscripts'     => 0,
-#        };
-
 $db{"7151"}
       = {
-          'otoms_in'       => 'Cq-6∙ + Cq-6∙ + Cq-6∙ + Ju-1∙ + Cq-7∙',
+          'otoms_in'       => 'Cq-6∙  + Cq-6∙  + Cq-6∙  + Ju-1∙  + Cq-7∙ ',
           'otoms_in_list'  => [ 'Cq-6', 'Cq-6', 'Cq-6', 'Ju-1', 'Cq-7'],
           'energy_in'      => 100,
 
           'otoms_out'      => 'Cq-6 + Cq-6 + Cq-6 + Ju-1 + Cq-7',
+         'otoms_out_sorted'=> 'Ju-1 + Cq-6 + Cq-6 + Cq-6 + Cq-7',
           'otoms_out_list' => [ 'Cq-6', 'Cq-6', 'Cq-6', 'Ju-1', 'Cq-7'],
           'protons_in'     => 26,
           'protons_out'    => 25,
@@ -796,11 +778,12 @@ $db{"7151"}
         };
 $db{"7152"}
       = {
-          'otoms_in'       => 'Gy-34∙ + Cq-5⁺ Ju-1∙',
+          'otoms_in'       => 'Gy-34∙ + Cq-5⁺  + Ju-1∙ ',
           'otoms_in_list'  => [ 'Gy-34', 'Cq-5', 'Ju-1', ],
           'energy_in'      => 2600,
 
           'otoms_out'      => 'Gy-34 + JuW',
+         'otoms_out_sorted'=> 'Gy-34 + JuW',
           'otoms_out_list' => [ 'Gy-34', 'JuW' ],
           'protons_in'     => 20,
           'protons_out'    => 19,
@@ -814,11 +797,12 @@ $db{"7152"}
         };
 $db{"7153"}
       = {
-          'otoms_in'       => 'Xc-30∙ +  Ju-2∙ + Zz-13⁺ +   W-4∙',
+          'otoms_in'       => 'Xc-30∙ + Ju-2∙  + Zz-13⁺ +  W-4∙ ',
           'otoms_in_list'  => [ 'Xc-30', 'Ju-2', 'Zz-13', 'W-4'],
           'energy_in'      => 0,
 
           'otoms_out'      => 'Xc-30 + Ju-2 + Pq-13 + W-4',
+         'otoms_out_sorted'=> 'Ju-2 + W-4 + Pq-13 + Xc-30',
           'otoms_out_list' => [ 'Xc-30', 'Ju-2', 'Pq-13', 'W-4' ],
           'protons_in'     => 25,
           'protons_out'    => 24,
@@ -837,6 +821,7 @@ $db{"7158"}
           'energy_in'      => 10000,
 
           'otoms_out'      => 'NbXc(Nb-54>Xc-32)',
+         'otoms_out_sorted'=> 'NbXc(Nb-54>Xc-32)',
           'otoms_out_list' => [ 'NbXc(Nb-54>Xc-32)' ],
           'protons_in'     => 39,
           'protons_out'    => 40,
@@ -855,6 +840,7 @@ $db{"7159"}
           'energy_in'      => 40,
 
           'otoms_out'      => 'Pt-26 + Pt-26 + Xc-32 + Xc-32 + Zq-32',
+         'otoms_out_sorted'=> 'Pt-26 + Pt-26 + Zq-32 + Xc-32 + Xc-32',
           'otoms_out_list' => [ 'Pt-26', 'Pt-26', 'Xc-32', 'Xc-32', 'Zq-32'],
           'protons_in'     => 66,
           'protons_out'    => 68,
@@ -868,11 +854,12 @@ $db{"7159"}
         };
 $db{"7160"}
       = {
-          'otoms_in'       => 'Xc-34⁻ + Xc-31∙ + Xc-34⁻ + Xc-34⁻ + S-26ª',
+          'otoms_in'       => 'Xc-34⁻ + Xc-31∙ + Xc-34⁻ + Xc-34⁻ +  S-26ª',
           'otoms_in_list'  => [ 'Xc-34', 'Xc-31', 'Xc-34', 'Xc-34', 'S-26'],
           'energy_in'      => 40,
 
           'otoms_out'      => 'Xc-34 + Xc-31 + Xc-34 + SXc(S-26>Xc-34)',
+         'otoms_out_sorted'=> 'Xc-31 + Xc-34 + Xc-34 + SXc(S-26>Xc-34)',
           'otoms_out_list' => [ 'Xc-34', 'Xc-31', 'Xc-34', 'SXc(S-26>Xc-34)'],
           'protons_in'     => 73,
           'protons_out'    => 73,
@@ -891,6 +878,7 @@ $db{"7161"}
           'energy_in'      => 9000,
 
           'otoms_out'      => 'Aw-50 + Gy-34',
+         'otoms_out_sorted'=> 'Gy-34 + Aw-50',
           'otoms_out_list' => [ 'Aw-50','Gy-34' ],
           'protons_in'     => 39,
           'protons_out'    => 39,
@@ -909,6 +897,7 @@ $db{"7162"}
           'energy_in'      => 40,
 
           'otoms_out'      => 'Fj-37 + Fw-25 + FjFw₂(Fj-37>Fw-25,Fw-25)',
+         'otoms_out_sorted'=> 'Fw-25 + Fj-37 + FjFw₂(Fj-37>Fw-25,Fw-25) ',
           'otoms_out_list' => [ 'Fj-37', 'Fw-25', 'FjFw₂(Fj-37>Fw-25,Fw-25)' ],
           'protons_in'     => 69,
           'protons_out'    => 69,
@@ -922,11 +911,12 @@ $db{"7162"}
         };
 $db{"7163"}
       = {
-          'otoms_in'       => 'Gy-34∙ + Gy-34∙ + Fw-25⁻ + M-20∙ + M-20∙',
+          'otoms_in'       => 'Gy-34∙ + Gy-34∙ + Fw-25⁻ +  M-20∙ +  M-20∙',
           'otoms_in_list'  => ['Gy-34', 'Gy-34', 'Fw-25', 'M-20', 'M-20' ],
           'energy_in'      => 40,
 
           'otoms_out'      => 'Gy-34 + Gy-34 + Pt-25 + M-20  + M-20',
+         'otoms_out_sorted'=> 'M-20 + M-20 + Pt-25 + Gy-34 + Gy-34',
           'otoms_out_list' => [ 'Gy-34', 'Gy-34', 'Pt-25', 'M-20 ', 'M-20'],
           'protons_in'     => 63,
           'protons_out'    => 64,
@@ -945,6 +935,7 @@ $db{"7164"}
           'energy_in'      => 3996,
 
           'otoms_out'      => 'Xy-79',
+         'otoms_out_sorted'=> 'Xy-79',
           'otoms_out_list' => ['Xy-79' ],
           'protons_in'     => 36,
           'protons_out'    => 36,
@@ -958,11 +949,12 @@ $db{"7164"}
         };
 $db{"7165"}
       = {
-          'otoms_in'       => 'Pq-14⁻ + Dx-15⁺ + W-5∙ + Aw-50∙ + S-25⁺',
+          'otoms_in'       => 'Pq-14⁻ + Dx-15⁺ +  W-5∙  + Aw-50∙ +  S-25⁺',
           'otoms_in_list'  => ['Pq-14', 'Dx-15', 'W-5', 'Aw-50', 'S-25' ],
           'energy_in'      => 200,
 
           'otoms_out'      => 'Aw-50 + Zz-14 + Zz-15 + SW(S-25>W-5)',
+         'otoms_out_sorted'=> 'Zz-14 + Zz-15 + Aw-50 + SW(S-25>W-5)',
           'otoms_out_list' => ['Aw-50', 'Zz-14', 'Zz-15', 'SW(S-25>W-5)' ],
           'protons_in'     => 52,
           'protons_out'    => 52,
@@ -976,11 +968,12 @@ $db{"7165"}
         };
 $db{"7166"}
       = {
-          'otoms_in'       => 'Fj-37ª + Ju-1∙',
+          'otoms_in'       => 'Fj-37ª + Ju-1∙ ',
           'otoms_in_list'  => [ 'Fj-37', 'Ju-1'],
           'energy_in'      => 943,
 
           'otoms_out'      => 'O-38',
+         'otoms_out_sorted'=> 'O-38',
           'otoms_out_list' => [ 'O-38' ],
           'protons_in'     => 19,
           'protons_out'    => 19,
@@ -999,6 +992,7 @@ $db{"7167"}
           'energy_in'      => 5,
 
           'otoms_out'      => 'W-4 + Cq-6 + W-4 + Cq-6 + Nb-54 + Pt-25 + Pt-25',
+         'otoms_out_sorted'=> 'W-4 + W-4 + Cq-6 + Cq-6 + Pt-25 + Pt-25 + Nb-54',
           'otoms_out_list' => [ 'W-4', 'Cq-6', 'W-4', 'Cq-6', 'Nb-54', 'Pt-25', 'Pt-25'],
           'protons_in'     => 59,
           'protons_out'    => 59,
@@ -1012,11 +1006,12 @@ $db{"7167"}
         };
 $db{"7168"}
       = {
-          'otoms_in'       => 'Ju-2∙ + Ju-1∙ + Ju-1∙ + W-4∙ + Cq-7∙',
+          'otoms_in'       => 'Ju-2∙  + Ju-1∙  + Ju-1∙  +  W-4∙  + Cq-7∙ ',
           'otoms_in_list'  => [ 'Ju-2', 'Ju-1', 'Ju-1', 'W-4', 'Cq-7' ],
           'energy_in'      => 100,
 
           'otoms_out'      => 'W-4 + Cq-7 + Ju₃(Ju-2,Ju-1>Ju-1)',
+         'otoms_out_sorted'=> 'W-4 + Cq-7 + Ju₃(Ju-2,Ju-1>Ju-1) ',
           'otoms_out_list' => [ 'W-4', 'Cq-7', 'Ju₃(Ju-2,Ju-1>Ju-1)'],
           'protons_in'     => 8,
           'protons_out'    => 8,
@@ -1035,6 +1030,7 @@ $db{"7169"}
           'energy_in'      => 20,
 
           'otoms_out'      => 'Pt-26 + Pt-26 + Pt-26 + Dx-16 + Dx-16',
+         'otoms_out_sorted'=> 'Dx-16 + Dx-16 + Pt-26 + Pt-26 + Pt-26',
           'otoms_out_list' => [ 'Pt-26', 'Pt-26', 'Pt-26', 'Dx-16', 'Dx-16'],
           'protons_in'     => 52,
           'protons_out'    => 52,
@@ -1048,11 +1044,12 @@ $db{"7169"}
         };
 $db{"7170"}
       = {
-          'otoms_in'       => 'Bt-80⁻ + Ju-3∙',
+          'otoms_in'       => 'Bt-80⁻ + Ju-3∙ ',
           'otoms_in_list'  => [  'Bt-80', 'Ju-3' ],
           'energy_in'      => 9000,
 
           'otoms_out'      => 'Bt-80 + Ju-3',
+         'otoms_out_sorted'=> 'Ju-3 + Bt-80',
           'otoms_out_list' => [ 'Bt-80', 'Ju-3' ],
           'protons_in'     => 39,
           'protons_out'    => 39,
@@ -1071,6 +1068,7 @@ $db{"7171"}
           'energy_in'      => 20,
 
           'otoms_out'      => 'Pq-13 + Pq-13 + Xl-10 + Gy-34 + Xc-32',
+         'otoms_out_sorted'=> 'Xl-10 + Pq-13 + Pq-13 + Xc-32 + Gy-34',
           'otoms_out_list' => [ 'Pq-13', 'Pq-13', 'Xl-10', 'Gy-34', 'Xc-32'],
           'protons_in'     => 49,
           'protons_out'    => 48,
@@ -1089,6 +1087,7 @@ $db{"7172"}
           'energy_in'      => 20,
 
           'otoms_out'      => 'Xc-31 + Xc-34 + Xc-34 + Pm-19 + Fj-37',
+         'otoms_out_sorted'=> 'Pm-19 + Xc-31 + Xc-34 + Xc-34 + Fj-37',
           'otoms_out_list' => [ 'Xc-31', 'Xc-34', 'Xc-34', 'Pm-19', 'Fj-37'],
           'protons_in'     => 72,
           'protons_out'    => 72,
@@ -1102,11 +1101,12 @@ $db{"7172"}
         };
 $db{"7173"}
       = {
-          'otoms_in'       => 'W-4∙',
+          'otoms_in'       => ' W-4∙ ',
           'otoms_in_list'  => [ 'W-4'],
           'energy_in'      => 200,
 
           'otoms_out'      => 'Ju-2 + Ju-2',
+         'otoms_out_sorted'=> 'Ju-2 + Ju-2',
           'otoms_out_list' => [ 'Ju-2', 'Ju-2' ],
           'protons_in'     => 2,
           'protons_out'    => 2,
@@ -1125,6 +1125,7 @@ $db{"7174"}
           'energy_in'      => 20,
 
           'otoms_out'      => 'Xc-32 + Xc-32 + Fw-25 + Cq-6 + WXl(W-4>Xl-10)',
+         'otoms_out_sorted'=> 'Cq-6 + Fw-25 + Xc-32 + Xc-32 + WXl(W-4>Xl-10)',
           'otoms_out_list' => ['Xc-32', 'Xc-32', 'Fw-25', 'Cq-6', 'WXl(W-4>Xl-10)' ],
           'protons_in'     => 50,
           'protons_out'    => 49,
@@ -1138,11 +1139,12 @@ $db{"7174"}
         };
 $db{"7175"}
       = {
-          'otoms_in'       => 'M-20∙ + Xl-9⁺ + Xl-9⁺ + S-26ª + Ju-1∙',
+          'otoms_in'       => ' M-20∙ + Xl-9⁺  + Xl-9⁺  +  S-26ª + Ju-1∙ ',
           'otoms_in_list'  => [ 'M-20', 'Xl-9', 'Xl-9', 'S-26', 'Ju-1'],
           'energy_in'      => 200,
 
           'otoms_out'      => 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)',
+         'otoms_out_sorted'=> 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1) ',
           'otoms_out_list' => [ 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)'],
           'protons_in'     => 34,
           'protons_out'    => 32,
@@ -1161,6 +1163,7 @@ $db{"7176"}
           'energy_in'      => 0,
 
           'otoms_out'      => 'Xl-11 + Gy-34 + Pt-25 + M-20 + Nb-54',
+         'otoms_out_sorted'=> 'Xl-11 + M-20 + Pt-25 + Gy-34 + Nb-54',
           'otoms_out_list' => ['Xl-11', 'Gy-34', 'Pt-25', 'M-20', 'Nb-54' ],
           'protons_in'     => 67,
           'protons_out'    => 68,
@@ -1174,11 +1177,12 @@ $db{"7176"}
         };
 $db{"7177"}
       = {
-          'otoms_in'       => ' Ju-1∙ +  Ju-1∙ +  Ju-1∙',
+          'otoms_in'       => 'Ju-1∙  + Ju-1∙  + Ju-1∙ ',
           'otoms_in_list'  => [ 'Ju-1', 'Ju-1', 'Ju-1'],
           'energy_in'      => 5,
 
           'otoms_out'      => 'Ju₃',
+         'otoms_out_sorted'=> 'Ju₃',
           'otoms_out_list' => ['Ju₃' ],
           'protons_in'     => 3,
           'protons_out'    => 3,
@@ -1197,6 +1201,7 @@ $db{"8361"}
           'energy_in'      => 1254,
 
           'otoms_out'      => 'Xc-31 + Xc-31',
+         'otoms_out_sorted'=> 'Xc-31 + Xc-31',
           'otoms_out_list' => [ 'Xc-31','Xc-31'],
           'protons_in'     => 30,
           'protons_out'    => 30,
@@ -1215,6 +1220,7 @@ $db{"8725"}
           'energy_in'      => 3000,
 
           'otoms_out'      => 'Xy-74',
+         'otoms_out_sorted'=> 'Xy-74',
           'otoms_out_list' => [ 'Xy-74' ],
           'protons_in'     => 36,
           'protons_out'    => 36,
@@ -1233,6 +1239,7 @@ $db{"8726"}
           'energy_in'      => 780,
 
           'otoms_out'      => 'Pt-26 + Pt-26 + Pt-24 + SFj(Fj-37,S-25>)',
+         'otoms_out_sorted'=> 'Pt-24 + Pt-26 + Pt-26 + SFj(Fj-37,S-25>)',
           'otoms_out_list' => [ 'Pt-26', 'Pt-26', 'Pt-24', 'SFj(Fj-37,S-25>)'],
           'protons_in'     => 67,
           'protons_out'    => 67,
@@ -1246,11 +1253,12 @@ $db{"8726"}
         };
 $db{"8727"}
       = {
-          'otoms_in'       => 'Fj-37ª + D-37⁻',
+          'otoms_in'       => 'Fj-37ª +  D-37⁻',
           'otoms_in_list'  => [ 'Fj-37', 'D-37'],
           'energy_in'      => 3000,
 
           'otoms_out'      => 'Qi-74',
+         'otoms_out_sorted'=> 'Qi-74',
           'otoms_out_list' => ['Qi-74' ],
           'protons_in'     => 35,
           'protons_out'    => 35,
@@ -1269,6 +1277,7 @@ $db{"8728"}
           'energy_in'      => 1990,
 
           'otoms_out'      => 'Jx-64',
+         'otoms_out_sorted'=> 'Jx-64',
           'otoms_out_list' => [ 'Jx-64'],
           'protons_in'     => 28,
           'protons_out'    => 29,
@@ -1282,11 +1291,12 @@ $db{"8728"}
         };
 $db{"8729"}
       = {
-          'otoms_in'       => 'D-37⁻ + D-37⁻',
+          'otoms_in'       => ' D-37⁻ +  D-37⁻',
           'otoms_in_list'  => [ 'D-37', 'D-37'],
           'energy_in'      => 2700,
 
           'otoms_out'      => 'Gk-74',
+         'otoms_out_sorted'=> 'Gk-74',
           'otoms_out_list' => ['Gk-74' ],
           'protons_in'     => 34,
           'protons_out'    => 34,
@@ -1305,6 +1315,7 @@ $db{"8730"}
           'energy_in'      => 25,
 
           'otoms_out'      => 'W-4 + Pt-25',
+         'otoms_out_sorted'=> 'W-4 + Pt-25',
           'otoms_out_list' => [ 'W-4', 'Pt-25'],
           'protons_in'     => 13,
           'protons_out'    => 14,
@@ -1323,6 +1334,7 @@ $db{"11758"}
           'energy_in'      => 3250,
 
           'otoms_out'      => 'H-81',
+         'otoms_out_sorted'=> 'H-81',
           'otoms_out_list' => ['H-81' ],
           'protons_in'     => 39,
           'protons_out'    => 39,
@@ -1341,6 +1353,7 @@ $db{"11759"}
           'energy_in'      => 5000,
 
           'otoms_out'      => 'H-80',
+         'otoms_out_sorted'=> 'H-80',
           'otoms_out_list' => [ 'H-80'],
           'protons_in'     => 39,
           'protons_out'    => 39,
@@ -1354,11 +1367,12 @@ $db{"11759"}
         };
 $db{"11760"}
       = {
-          'otoms_in'       => 'H-80∙ + Ju-1∙',
+          'otoms_in'       => ' H-80∙ + Ju-1∙ ',
           'otoms_in_list'  => [ 'H-80', 'Ju-1'],
           'energy_in'      => 5000,
 
           'otoms_out'      => 'U-81',
+         'otoms_out_sorted'=> 'U-81',
           'otoms_out_list' => ['U-81' ],
           'protons_in'     => 40,
           'protons_out'    => 40,
@@ -1372,11 +1386,12 @@ $db{"11760"}
         };
 $db{"11761"}
       = {
-          'otoms_in'       => 'H-80∙ + Ju-1∙',
+          'otoms_in'       => ' H-80∙ + Ju-1∙ ',
           'otoms_in_list'  => [ 'H-80', 'Ju-1'],
           'energy_in'      => 5000,
 
           'otoms_out'      => 'U-81',
+         'otoms_out_sorted'=> 'U-81',
           'otoms_out_list' => ['U-81' ],
           'protons_in'     => 40,
           'protons_out'    => 40,
@@ -1390,11 +1405,12 @@ $db{"11761"}
         };
 $db{"11762"}
       = {
-          'otoms_in'       => 'H-80∙ + Ju-1∙',
+          'otoms_in'       => ' H-80∙ + Ju-1∙ ',
           'otoms_in_list'  => ['Ju-1','H-80' ],
           'energy_in'      => 5000,
 
           'otoms_out'      => 'U-81',
+         'otoms_out_sorted'=> 'U-81',
           'otoms_out_list' => ['U-81' ],
           'protons_in'     => 40,
           'protons_out'    => 40,
@@ -1413,6 +1429,7 @@ $db{"12581"}
           'energy_in'      => 50,
 
           'otoms_out'      => 'Zz-15 + Zz-15 + Pt-25 + Pt-25 + Pt-24',
+         'otoms_out_sorted'=> 'Zz-15 + Zz-15 + Pt-24 + Pt-25 + Pt-25',
           'otoms_out_list' => [ 'Zz-15', 'Zz-15', 'Pt-25', 'Pt-25', 'Pt-24'],
           'protons_in'     => 50,
           'protons_out'    => 50,
@@ -1426,11 +1443,12 @@ $db{"12581"}
         };
 $db{"12582"}
       = {
-          'otoms_in'       => 'Cq-5⁺ + Cq-6∙ + Cq-6∙ + Cq-6∙ + Cq-6∙',
+          'otoms_in'       => 'Cq-5⁺  + Cq-6∙  + Cq-6∙  + Cq-6∙  + Cq-6∙ ',
           'otoms_in_list'  => [ 'Cq-5⁺', 'Cq-6∙', 'Cq-6∙', 'Cq-6∙', 'Cq-6∙'],
           'energy_in'      => 50,
 
           'otoms_out'      => 'W-5 + Cq-6 + Cq-6 + Cq-6 + Cq-6',
+         'otoms_out_sorted'=> 'W-5 + Cq-6 + Cq-6 + Cq-6 + Cq-6',
           'otoms_out_list' => [ 'W-5', 'Cq-6', 'Cq-6', 'Cq-6', 'Cq-6'],
           'protons_in'     => 15,
           'protons_out'    => 14,
@@ -1444,11 +1462,12 @@ $db{"12582"}
         };
 $db{"12583"}
       = {
-          'otoms_in'       => 'Cq-6∙ + Cq-6∙ + Ju-2∙ + Ju-2∙ + W-4∙',
+          'otoms_in'       => 'Cq-6∙  + Cq-6∙  + Ju-2∙  + Ju-2∙  +  W-4∙ ',
           'otoms_in_list'  => [ 'Cq-6', 'Cq-6', 'Ju-2', 'Ju-2', 'W-4'],
           'energy_in'      => 300,
 
           'otoms_out'      => 'Ju-2 + Cq-6 + Cq-6 + WJu(W-4>Ju-2)',
+         'otoms_out_sorted'=> 'Ju-2 + Cq-6 + Cq-6 + WJu(W-4>Ju-2)',
           'otoms_out_list' => [ 'Ju-2', 'Cq-6', 'Cq-6', 'WJu(W-4>Ju-2)'],
           'protons_in'     => 10,
           'protons_out'    => 10,
@@ -1462,11 +1481,12 @@ $db{"12583"}
         };
 $db{"12591"}
       = {
-          'otoms_in'       => 'Gy-34∙ + Pq-10⁺ + Ju-1∙ + Pq-14⁻ + Pq-12ª',
+          'otoms_in'       => 'Gy-34∙ + Pq-10⁺ + Ju-1∙  + Pq-14⁻ + Pq-12ª',
           'otoms_in_list'  => [ 'Gy-34', 'Pq-10', 'Ju-1', 'Pq-14', 'Pq-12'],
           'energy_in'      => 300,
 
           'otoms_out'      => 'Xl-10 + Gy-34 + Zz-14 + JuPq(Ju-1>Pq-12)',
+         'otoms_out_sorted'=> 'Xl-10 + Zz-14 + Gy-34 + JuPq(Ju-1>Pq-12)',
           'otoms_out_list' => [ 'Xl-10', 'Gy-34', 'Zz-14', 'JuPq(Ju-1>Pq-12)'],
           'protons_in'     => 35,
           'protons_out'    => 35,
@@ -1480,11 +1500,12 @@ $db{"12591"}
         };
 $db{"12592"}
       = {
-          'otoms_in'       =>  'W-5∙ + Pq-13∙ + Pt-25ª + Zz-15∙ + Cq-7∙',
+          'otoms_in'       => ' W-5∙  + Pq-13∙ + Pt-25ª + Zz-15∙ + Cq-7∙ ',
           'otoms_in_list'  => ['W-5', 'Pq-13', 'Pt-25', 'Zz-15', 'Cq-7' ],
           'energy_in'      => 50,
 
           'otoms_out'      =>  'W-5 + Pq-13 + Pt-25 + Zz-15 + Cq-7',
+         'otoms_out_sorted'=>  'W-5 + Cq-7 + Pq-13 + Zz-15 + Pt-25',
           'otoms_out_list' => ['W-5', 'Pq-13', 'Pt-25', 'Zz-15', 'Cq-7' ],
           'protons_in'     => 30,
           'protons_out'    => 30,

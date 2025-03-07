@@ -1,3 +1,18 @@
+2025-03-06 Mar.Thu 20:50:27 Okay so the parser is now collecting all the data before outputting it instead of printing as it processed input. It still prints progress information to STDERR so you can see it working. With this approach, I can print an asterisk beside each OTOMRO to indicate its the first time this reaction has been performed with this specific reaction type. 
+As an example, I wanted to know what O-37 splits into by nuclear fission so I've worked on it sporadically.
+
+|    17961*|  O-37ª  +    0 =>   O-37            +       0.00 |       0.00 | none              | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x89fb05731d4577ca8e8944c67f9400630df061a1814e8f248d6a67d72667d92d | 0x3726ce02adf4d51ba42669effd19647d444795f5e72d30b4adb9c98fcec2963f |
+|    18619*|  O-37ª  + 5000 =>   PmM(Pm-17>M-20) +    2211.12 |    2788.88 | chemical, nuclear | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x5c53aa03841c1ea9ccee2c7e77e98f7524e5e7fa25341963192c281acaeffece | 0xba017faebcb52a0a17fc6d0de7c7c0763f7c92fc1dad97390768b0aee17b1b48 |
+|    23576 |  O-37ª  + 2400 =>   O-37            +    2280.00 |     120.00 | none              | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb00d233d0263dea0a58b566f356c0df32293d8e7471ca698989a2dd9e23632ed | 0xee1404d63ba68d18502f6e45f01d46ecdd0c5a53307ea3529db7d9a9214a2c68 |
+|    23577 |  O-37ª  + 2700 =>   PmM(Pm-17>M-20) +      26.12 |    2673.88 | chemical, nuclear | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x9f5a8934c83d830ecffcbadb1251bb67d9c7c77b34c03c463d4bfece8ddf4600 | 0x6701bcd14e5ad5531ce0bb79ed1e15b7c97e9a014c15ff88fe31821beef7095a |
+|    23582 |  O-37ª  + 2650 =>   O-37            +    2517.50 |     132.50 | none              | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb6af38289b34cbea25a1be246137df9747c856f844e74f1f7dad0582571326b2 | 0x881dbba83c1a73a52711eac8ae38911c7a77498768c741748ec87cc8f1d47cfd |
+|    23584 |  O-37ª  + 2680 =>   PmM(Pm-17>M-20) +       7.12 |    2672.88 | chemical, nuclear | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x84cec07837d94fbdf095277119ecc6c904cab545aea61ee71823e66209316175 | 0x8206ee89a031eb24be17e0656ab5d43a236150e69596203f954e385b8c899ae4 |
+|    29706*|  O-37ª  + 2670 =>   Pm-17 + M-20    +      14.83 |    2655.17 | nuclear           | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x72418e0e4ccf3e616e5ac76a3dc25288465ddd810047b59c9b818d866f94939e | 0xc92b030fe2d7f776d46dbb56729f27cdeb92fe362b306b49164ee5242799f0f1 |
+
+2025-03-06 Mar.Thu 20:38:26 -I'm imagining an interface where you basically have spinning wheels (like The Price is Right gameshow) to choose input otoms and NRG and then it tells you if that has been tried before, letting you easily click links to access the tx, showing the valence shells and decay type and useful info.
+
+2025-03-06 Mar.Thu 16:13:00 Fixed that little issue in parseReactorLog.pl - the problem was that the 40 transactions that aren't in the Reactor logs were missing the $db{OTOMRO}{otoms_out_sorted} entries.
+
 2025-03-05 Mar.Wed 20:56:48 HERE is the order isotopes were discovered in; For the mineable Otoms, of course this doesn't exactly make sense since just mining them discovers it. But the others are the right order
 
 |       | Pq-10 | mineable -- NEVER AN OUTPUT
@@ -2665,7 +2680,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Aw-49∙ |+1500              =>  ?Oc-50?           | [r] +1500 Makes Oc-50 using 1340.08 nuclear
 |  Ju-1∙ + Aw-50∙ |+ 1043.00 ..  1046 =>   Oc-51            |
 |  Ju-1∙ + Aw-51⁻ |+1500              =>  ?Oc-52? Nb-53?    | [r] +1500 Makes Oc-52 using 1034.64 nuclear
-|  Ju-1∙ + Aw-52⁻ |+1500              =>  ?Oc-53? Nb-54?    | [*]
+|  Ju-1∙ + Aw-52⁻ |+1500              =>  ?Oc-53? Nb-54?    | [r] +1500 Makes Oc-53 using 1016.50 nuclear
 |  Ju-1∙ + Oc-46⁺ |+  990.90 ..  1500 =>   Nb-47            |
 |  Ju-1∙ + Oc-47⁺ |+  997.32 ..  1500 =>   Nb-48            |
 |  Ju-1∙ + Oc-48⁺ |+1500              =>  ?Nb-49?           | [ ]
@@ -2673,8 +2688,8 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Oc-50∙ |+ 1059.37 ..  1400 =>   Nb-51            |
 |  Ju-1∙ + Oc-51∙ |+ 1177.70 ..  3170 =>   Nb-52            |
 |  Ju-1∙ + Oc-52⁻ |+1500              =>  ?Nb-53? Xk-54?    | [r] +1500 makes Nb-53 using 1070.39 nuclear
-|  Ju-1∙ + Oc-53⁻ |+1500              =>  ?Nb-54? Xk-55?    | [ ]
-|  Ju-1∙ + Oc-54⁻ |+1500              =>  ?Nb-55? Xk-56?    | [ ]
+|  Ju-1∙ + Oc-53⁻ |+1500              =>  ?Nb-54? Xk-55?    | [r] +1500 makes Nb-54 using 1050.15 nuclear
+|  Ju-1∙ + Oc-54⁻ |+1500              =>  ?Nb-55? Xk-56?    | [*]
 |  Ju-1∙ + Nb-47⁺ |+1500              =>  ?Xk-48?           | [r] +1100 Makes⬇ Nb-48 using  942.82 nuclear+decay
 |  Ju-1∙ + Nb-48⁺ |+1500              =>  ?Xk-49?           | [r] +1500 Makes⬇ Nb-49 using  977.24 nuclear+decay
 |  Ju-1∙ + Nb-49ª |+1500              =>  ?Xk-50?           | [r] +1500 Makes  Xk-50 using 1009.57 nuclear
@@ -2683,7 +2698,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Nb-52∙ |+1500              =>  ?Xk-53?           | [ ]
 |  Ju-1∙ + Nb-53⁻ |+1500              =>  ?Xk-54?           | [r] +1500 Makes Xk-54 using 1088.72 nuclear
 |  Ju-1∙ + Nb-54ª |+ 1055.68 ..  1100 =>   Xk-55            |
-|  Ju-1∙ + Nb-55⁻ |+1500              =>  ?Xk-56?           | [ ]
+|  Ju-1∙ + Nb-55⁻ |+1500              =>  ?Xk-56?           | [*]
 |  Ju-1∙ + Nb-56⁻ |+1500              =>  ?Xk-57?           | [ ]
 |  Ju-1∙ + Xk-50⁺ |+1500              =>  ?Ic-51?           | [r] +1500 Makes Ic-51 using 1007.61 nuclear
 |  Ju-1∙ + Xk-51ª |+1500              =>  ?Ic-52?           | [ ]
@@ -2694,7 +2709,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Xk-56⁻ |+ 1290.74 ..  5000 =>   Ic-57            |
 |  Ju-1∙ + Xk-57⁻ |+1500              =>  ?Ic-58? Yp-59?    | [ ]
 |  Ju-1∙ + Xk-58⁻ |+1500              =>  ?Ic-59? Yp-60?    | [ ]
-|  Ju-1∙ + Xk-59⁻ |+1500              =>  ?Ic-60? Yp-61?    | [ ]
+|  Ju-1∙ + Xk-59⁻ |+1500              =>  ?Ic-60? Yp-61?    | [r] +1500 Makes Ic-60 using 1082.80 nuclear
 |  Ju-1∙ + Ic-51⁺ |+1500              =>  ?Yp-52? Ic-52?    | [r] Makes⬇ Ic-52 using 1008.74 nuclear+decay
 |  Ju-1∙ + Ic-52⁺ |+ 1223.80 ..  5000 => ⬇ Ic-53            |
 |  Ju-1∙ + Ic-53⁺ |+1500              =>  ?Yp-54? Ic-54?    | [r] Makes Yp-54 using 1088.71 nuclear
@@ -2704,7 +2719,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ic-57∙ |+1500              =>  ?Yp-58?           | [ ]
 |  Ju-1∙ + Ic-58∙ |+ 1174.78 ..  1800 =>   Yp-59            |
 |  Ju-1∙ + Ic-59∙ |+1500              =>  ?Yp-60?           | [ ]
-|  Ju-1∙ + Ic-60⁻ |+1500              =>  ?Yp-61? Jx-62?    | [ ]
+|  Ju-1∙ + Ic-60⁻ |+1500              =>  ?Yp-61? Jx-62?    | [r] +1500 Makes Yp-61 using 1149.11 nuclear
 |  Ju-1∙ + Ic-61⁻ |+1500              =>  ?Yp-62? Jx-63?    | [ ]
 |  Ju-1∙ + Yp-54⁺ |+ 1223.56 ..  5000 => ⬇ Yp-55            |
 |  Ju-1∙ + Yp-55⁺ |+ 1284.07 ..  5000 =>   Jx-56            |
@@ -2713,16 +2728,16 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Yp-58ª |+1500              =>  ?Jx-59?           | [ ]
 |  Ju-1∙ + Yp-59⁺ |+1500              =>  ?Jx-60?           | [r] +1500 Makes Jx-60 using 1151.53 nuclear
 |  Ju-1∙ + Yp-60∙ |+ 1537.24 ..  4000 =>   Jx-61            |
-|  Ju-1∙ + Yp-61⁻ |+1500              =>  ?Jx-62?           | [ ]
+|  Ju-1∙ + Yp-61⁻ |+1500              =>  ?Jx-62?           | [r] +1500 Makes Jx-62 using 1152.24 nuclear
 |  Ju-1∙ + Yp-62⁻ |+ 1323.47 ..  5000 =>   Jx-63            |
-|  Ju-1∙ + Yp-63⁻ |+1500              =>  ?Jx-64?           | [*]
+|  Ju-1∙ + Yp-63⁻ |+1500              =>  ?Jx-64?           | [r] +1500 Makes Jx-64 using 1132.38 nuclear
 |  Ju-1∙ + Jx-56⁺ |+ 1094.03 ..  1575 =>   Hb-57            |
 |  Ju-1∙ + Jx-57⁺ |+1500              =>  ?Hb-58?           | [ ]
 |  Ju-1∙ + Jx-58⁺ |+ 1408.33 ..  1650 =>   Hb-59            |
 |  Ju-1∙ + Jx-59ª |+ 1543.58 ..  3344 =>   Hb-60            |
 |  Ju-1∙ + Jx-60ª |+ 1153.14 ..  1600 =>   Hb-61            |
 |  Ju-1∙ + Jx-61ª |+1500              =>  ?Hb-62?           | [ ]
-|  Ju-1∙ + Jx-62ª |+1500              =>  ?Hb-63?           | [ ]
+|  Ju-1∙ + Jx-62ª |+1500              =>  ?Hb-63?           | [r] +1500 Makes Hb-63 using 1160.77 nuclear
 |  Ju-1∙ + Jx-63⁻ |+1500              =>  ?Hb-64? At-65?    | [ ]
 |  Ju-1∙ + Jx-64⁻ |+1500              =>  ?Hb-65? At-66?    | [r] +1500 Makes Hb-65 using 1152.58 nuclear
 |  Ju-1∙ + Jx-65⁻ |+1500              =>  ?Hb-66? At-67?    | [r] +1500 Makes Hb-66 using 1144.78 nuclear
