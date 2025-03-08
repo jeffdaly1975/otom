@@ -483,6 +483,7 @@ my $maxkey=scalar(keys %sortorder);
 ###}
 
 ################################################################################
+#   change 00000000000000000000000000000000000000000000010f0cf064dd59200000 to 5000000000000000000000 then to 5000
 sub energy_converter {
  my $in= shift @_;
  my $out=hex($in);
@@ -1596,6 +1597,7 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
  $line =~ s/0x0000000000000000000000000000000000000000000000000000000000000040//; 
 
   # Get Energy input
+  # change 00000000000000000000000000000000000000000000010f0cf064dd59200000 to 5000000000000000000000 then to 5000
   $energy_input = energy_converter( substr($line, 0, 64,""));
 
   # Lets treat it as an integer since most people use the otom app UI which only lets you do integer NRG inputs
