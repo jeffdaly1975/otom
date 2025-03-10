@@ -1,4 +1,433 @@
+2025-03-10 Mar.Mon 12:40:59 vim code
+
+" I want showcmd on so I can see what the fuck I'm doing
+set showcmd
+
+" now I can type          :%s/
+" and then hit my Leader key (backslash) then 'c'
+" and it expands with     :s/\%148c
+" and I can finish it off :s/\%148c *//
+" removing all space chars beyond my current cursor column
+" Should probably have done: :s/\%148c\s*//
+" ..to get all whitespace.
+
+" c - current column with vim regex for columns
+" C - current column integer
+" v - current virtual column with vim regex for columns
+" V - current virtual column integer
+" l - current line with vim regex for lines
+" L - current line integer
+cnoremap <Leader>c \%<C-r>=col("." )<Enter>c
+cnoremap <Leader>C   <C-r>=col("." )<Enter>
+cnoremap <Leader>v \%<C-r>=virtcol("." )<Enter>v
+cnoremap <Leader>V   <C-r>=virtcol("." )<Enter>
+cnoremap <Leader>l \%<C-r>=line(".")<Enter>c
+cnoremap <Leader>L   <C-r>=line(".")<Enter>
+
+" for inserting timestamp as: 2007-12-03 Dec.Mon 09:03
+ map <silent> <leader>dl  a<C-r>=strftime("%Y-%m-%d %b.%a %H:%M:%S")<CR><Esc>
+imap <silent> <leader>dl   <C-r>=strftime("%Y-%m-%d %b.%a %H:%M:%S")<CR>
+
+" grep for <cword>
+map <silent> <leader>g  :call JD_add_to_search_register()<CR>
+map <silent> <leader>G  :call JD_add_to_search_register('whole word')<CR>
+
+map <silent> <leader>r  :call JD_remove_from_search_register()<CR>
+map <silent> <leader>R  :call JD_remove_from_search_register('whole word')<CR>
+
+" TODO: for improved speed and efficiency, maintain searchdict in background instead of
+"       calculating each time
+" TODO: provide alternate searching techniques:
+"        -  add '\<' and '\> around <cword>
+"        -  ?
+function! JD_add_to_search_register(...)
+  let searchdict = {}
+
+  let cword = expand("<cword>")
+  if a:0 >= 1
+     if a:1 == 'whole word'
+       let cword = '\<' . cword . '\>'
+     endif
+  endif
+
+  " find all terms in current search register
+  let index=1
+  for term in split(@/,'\\|')
+   let searchdict[term] = index
+   let index += 1
+  endfor
+
+  let searchdict[ cword ]= index
+  let @/=join(keys(searchdict),'\|')
+"echomsg("@/ is now[". @/ ."]")
+
+  :call histadd("/", @/)
+endfunction
+
+function! JD_remove_from_search_register(...)
+  let searchdict = {}
+
+  let cword = expand("<cword>")
+  if (a:0 > 1) && (a:1 == 'whole word')
+    let cword = '\<' . cword . '\>'
+  endif
+
+  " find all terms in current search register
+  let index=1
+  for term in split(@/,'\\|')
+   let searchdict[term] = index
+   let index += 1
+  endfor
+
+  if has_key(    searchdict, cword )
+    :call remove(searchdict, cword )
+  endif
+
+  let @/=join(keys(searchdict),'\|')
+
+  :call histadd("/", @/)
+endfunction
+
+
+2025-03-10 Mar.Mon 12:40:11
+
+Pq-10 + Ic-51 =>  ⬇ Ny-61 Because I think it makes Pw-61 but decays to Ny-61
+try:
+[ ] Pq-10 + Ic-52 => ?⬇ Ny-62? Pw-62?
+[ ] Pq-10 + Ic-53 => ?⬇ Ny-63? Pw-63?
+
+2025-03-09 Mar.Sun 13:21:16 Present otom inventory of 742 otoms:
+  1   A-48
+  1   U-79
+  1   Pw-66
+  1   Ic-53
+  1   H-82
+  1   At-60
+  1   Qi-76
+  1   Ic-58
+  1   Hb-62
+  1   Pw-69
+  1   H-75
+  1   Gy-36
+  1   O-43
+  1   Gq-76
+  1   H-81
+  1   Gy-30
+  1   Qi-70
+  1   H-80
+  1   Qi-72
+  1   Fj-34
+  1   Bt-76
+  1   Dx-19
+  1   S-24
+  1   Hb-64
+  1   Jx-65
+  1   Gy-33
+  1   Zz-16
+  1   Xk-51
+  1   A-44
+  1   At-65
+  1   A-49
+  1   Xy-77
+  1   Hb-61
+  1   A-43
+  1   Gk-75
+  1   U-80
+  1   A-45
+  1   E-42
+  1   Pw-74
+  1   Gk-70
+  1   Nb-53
+  1   Zz-15
+  1   Aw-44
+  1   U-82
+  1   Qi-68
+  1   Pm-21
+  1   Sq-80
+  1   C-41
+  1   Yp-56
+  1   Xy-79
+  1   Yp-61
+  1   E-47
+  1   O-39
+  1   Gk-71
+  1   U-81
+  1   Jx-62
+  1   Fj-36
+  1   C-43
+  1   Ic-57
+  1   Qi-74
+  1   E-48
+  1   Ny-72
+  1   Nb-56
+  1   Oc-53
+  1   Xk-52
+  1   Pw-65
+  1   Sq-83
+  1   Xc-28
+  1   At-67
+  1   Gq-71
+  1   E-45
+  1   C-45
+  1   D-39
+  1   Xy-76
+  1   Xy-72
+  1   S-30
+  1   At-61
+  1   Aw-51
+  1   U-83
+  1   Ic-56
+  1   At-62
+  1   A-50
+  1   Zq-26
+  1   Ic-61
+  1   Ny-69
+  1   Xk-53
+  1   Ny-71
+  1   Gk-74
+  1   Fj-38
+  1   H-76
+  1   Ny-66
+  1   Bt-80
+  1   Ny-63
+  1   Fj-41
+  1   Bt-79
+  1   Xk-58
+  1   Oc-46
+  1   Gk-65
+  1   Gk-73
+  1   Ny-64
+  1   Xy-74
+  1   Fw-26
+  1   Hb-57
+  1   H-77
+  1   Xk-55
+  1   Qi-75
+  1   Pw-67
+  1   A-47
+  1   Gq-75
+  1   Pw-72
+  1   Sq-84
+  1   Gk-67
+  1   Ic-60
+  1   Nb-52
+  1   Xl-12
+  1   Ua-83
+  1   Jx-63
+  1   D-38
+  1   H-78
+  1   O-40
+  1   Ic-52
+  1   Xk-59
+  1   U-78
+  1   Pw-64
+  1   E-43
+  1   Xy-75
+  1   Hb-60
+  1   Ua-84
+  1   Jx-58
+  1   Gq-80
+  1   Hb-67
+  1   Oc-50
+  1   Qi-69
+  1   Jx-64
+  1   E-40
+  1   Aw-46
+  1   Ic-51
+  1   Sq-81
+  1   Aw-47
+  1   Gq-74
+  1   Yp-62
+  1   Qi-77
+  1   Jx-57
+  1   Xy-70
+  1   Fj-35
+  1   Hb-65
+  1   Gq-78
+  1   At-63
+  1   E-46
+  1   Ny-70
+  1   C-38
+  1   Ic-54
+  1   A-42
+  1   Yp-54
+  1   Yp-59
+  1   E-41
+  1   At-64
+  1   Qi-73
+  1   Jx-61
+  1   Gq-77
+  1   Ny-65
+  1   Gq-73
+  1   Xy-69
+  1   Dx-18
+  1   Bt-75
+  1   Oc-54
+  1   Af-10
+  1   Yp-58
+  1   Pw-71
+  1   Hb-63
+  1   Hb-58
+  1   Qi-71
+  1   Pw-73
+  1   Nb-47
+  1   Dx-14
+  1   Jx-59
+  1   At-69
+  1   Oc-48
+  1   Xk-54
+  1   C-40
+  1   Gk-69
+  1   Bt-73
+  1   U-77
+  1   Ny-67
+  1   At-66
+  1   D-34
+  1   Bt-77
+  1   Jx-56
+  1   Sq-79
+  1   Zq-29
+  1   H-79
+  1   Hb-59
+  1   O-38
+  1   O-41
+  1   Pw-70
+  1   Ua-85
+  1   A-46
+  1   Xk-57
+  1   Oc-49
+  1   Xy-71
+  1   Pt-22
+  1   Ic-59
+  1   Nb-55
+  1   Nb-51
+  1   Qi-67
+  1   Ny-61
+  1   At-68
+  1   Pt-28
+  1   Hb-66
+  1   O-37
+  1   Pw-68
+  1   Aw-52
+  1   D-36
+  1   E-44
+  1   O-36
+  1   Nb-48
+  1   Ic-55
+  1   Xy-73
+  1   Gk-76
+  1   D-35
+  2   Gk-72
+  2   Nb-50
+  2   Ny-68
+  2   Gy-32
+  2   Qi-78
+  2   Pt-26
+  2   Aw-49
+  2   Aw-45
+  2   Xy-78
+  2   Zq-30
+  2   Bt-74
+  2   D-33
+  2   Xk-50
+  2   Bt-78
+  2   Nb-49
+  2   Yp-57
+  2   Fj-40
+  2   Gk-66
+  2   Yp-60
+  2   Xc-29
+  2   C-39
+  2   Yp-55
+  2   Gq-79
+  2   M-19
+  2   Pm-20
+  2   Pq-11
+  2   Xc-33
+  2   D-32
+  2   O-42
+  2   Xk-56
+  2   Gy-35
+  2   C-42
+  2   Oc-47
+  2   C-44
+  2   Ny-62
+  2   Zq-31
+  2   Gq-72
+  2   Fj-39
+  2   Yp-63
+  2   Bt-81
+  2   M-21
+  2   Aw-48
+  2   Pt-23
+  3   Oc-52
+  3   Zq-32
+  3   M-23
+  3   Gk-68
+  3   Oc-51
+  3   Zq-27
+  3   Cq-5
+  3   Sq-82
+  3   S-27
+  3   Pt-27
+  3   Xc-32
+  3   Pq-15
+  4   S-29
+  4   Dx-17
+  4   Dx-15
+  4   Fw-21
+  4   Dx-16
+  4   Pq-14
+  4   Zq-28
+  4   Gy-31
+  4   Pt-24
+  4   Fw-22
+  5   D-37
+  5   Aw-50
+  5   Xc-30
+  5   Gy-34
+  5   Fw-24
+  5   Nb-54
+  5   Pm-18
+  5   Pt-25
+  5   S-26
+  5   Fj-37
+  5   S-28
+  6   Xc-31
+  6   W-5
+  6   Jx-60
+  6   Xl-9
+  6   M-22
+  7   Zz-14
+  7   Fw-23
+  7   Pq-10
+  7   S-25
+  7   Fw-25
+  7   Xc-34
+  7   Pm-17
+  8   M-20
+  8   Ju-3
+  10  Pq-13
+  10  Cq-6
+  10  Zz-13
+  10  Pm-19
+  10  Xl-11
+  10  W-4
+  12  Af-9
+  14  Cq-7
+  16  Pq-12
+  17  Af-7
+  17  Af-8
+  18  Xl-10
+  19  Ju-2
+  37  Ju-1
+
+
+
 2025-03-08 Mar.Sat 16:08:54 Made new scripts for converting between 64 hexadecimal encoded NRG values and the floating point value.
+
+::FILE:: energy_converter_hex_to_float.pl
+::FILE:: energy_converter_float_to_hex.pl
 
 Using it I was able to reduce the usage in the test:
 from 313_980 NRG
@@ -2197,7 +2626,7 @@ This line of thinking makes me wonder if i should try making new isotopes that h
 0.05 *Gy-41⁻
 0.05 *Xk-66⁻
 0.06 *Aw-40⁺
-0.06 *Gk-61⁺
+0.06 *Gk-60⁺
 0.06 *Gq-92⁻
 0.06 *H-97⁻
 0.06 *Ic-69⁻
@@ -2315,7 +2744,7 @@ This line of thinking makes me wonder if i should try making new isotopes that h
 0.3 *U-73⁺
 0.3 *Xk-64⁻
 0.31 *Fj-45⁻
-0.31 *Gk-62⁺
+0.31 *Gk-61⁺
 0.31 *Gq-89⁻
 0.31 *Jx-71⁻
 0.31 *S-32⁻
@@ -2354,7 +2783,7 @@ This line of thinking makes me wonder if i should try making new isotopes that h
 0.38 *Sq-99⁻
 0.38 *Yp-68⁻
 0.39 *Fj-32⁺
-0.39 *Gk-63⁺
+0.39 *Gk-62⁺
 0.39 *Pw-79⁻
 0.39 *Ua-100⁻
 0.4 *Fj-44⁻
@@ -2397,7 +2826,7 @@ This line of thinking makes me wonder if i should try making new isotopes that h
 0.47 *Qi-65⁺
 0.47 *Xy-67⁺
 0.47 *Yp-67⁻
-0.48 *Gk-64⁺
+0.48 *Gk-63⁺
 0.48 *Jx-70⁻
 0.48 *Pw-78⁻
 0.49 *At-57⁺
@@ -2459,7 +2888,7 @@ This line of thinking makes me wonder if i should try making new isotopes that h
 0.58 *Sq-96⁻
 0.58 *Xy-83⁻
 0.58 *Yp-66⁻
-0.59 *Gk-65⁺
+0.59 *Gk-64⁺
 0.59 *Gq-85⁻
 0.59 *Pw-77⁻
 0.59 *Sq-77⁺
@@ -3608,7 +4037,7 @@ Tied for softest value hardness==0.2:
 OTOMRO 19181 | Fw-23∙ + Fw-23∙ + Fw-23∙ + Fw-23∙ + Fw-23∙ +    10000 =>   Fw₅(Fw-23>Fw-23,Fw-23,Fw-23,Fw-23)     +    9440.92 |     559.08 | chemical                     | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xa75257fde954ce9e5398db1ae308fcfbfa75286ea01c5564f6c31e3555b560a0 | 0x33b3bd7d781b004eee88dfe6e6d28e1b6dc242d74c437113e21f281c6ff5266d |
 OTOMRO 26378 | Sq-84∙ + Sq-84∙ + Sq-84∙ + Sq-84∙ + Sq-84∙ +     1000 =>   Sq₅(Sq-84>Sq-84,Sq-84,Sq-84,Sq-84)     +     791.91 |     208.09 | chemical                     | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xe6882a0e9ced08fc15051677db354c6dbc325376c759b22e6a435aa7f6c69d1d | 0x7b816ccb229582afea1de07b1530c23af2ccce6652077b963a89c7ad614f94e0 |
 
-Hardest value hardness==8.383700016196817
+Largest value for hardness+toughness from hardness==8.383700016196817 toughness=2.7902064903319115  totalling 11.173907
  Fj₂NbAfXl
 OTOMRO 4518 |  Af-7ª + Xl-10ª + Fj-37ª + Fj-37ª + Nb-54ª +     1040 =>   Fj₂NbAfXl(Af-7,Fj-37,Nb-54,Xl-10>Fj-37) +     939.60 |     100.40 | chemical                     | 0x17d95eeaf723ea844621336bf096baaea148b896 | 0x3b8608255a9cfd6d426651b513cb50b7dd7d8840378e2cc8bb4533b35961c952 | 0x0c77b659ec999dabfc32b675535306e9cf44423a0323a101316d8af375492fed |
 
@@ -4310,7 +4739,7 @@ Dammit why did those all drop a proton? Does the stability threshhold depend on 
 Like as it gets heavier, the stability value needs to be higher and higher to prevent decay?
 
 2025-02-18 Feb.Tue 12:42:05 Looking at all the otoms that haven't been successfully reacted with Ju-1 and there's a ton.
-[ ] Try some:
+[.] Try some:
 
 |  Ju-1∙ + Ju-1∙  |                                         |
 |  Ju-1∙ + Ju-2∙  |                                         |
@@ -4320,36 +4749,36 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Cq-5⁺  |+4.10 .. 1400      => JuW or WJu         |
 |  Ju-1∙ + Cq-6∙  |+2000              => ⬇ Ju-1 + Cq-6      |
 |  Ju-1∙ + Cq-7∙  |+  501.51 ..  2000 =>   Af-8             |
-|  Ju-1∙ + Af-7ª  |+2000              =>  ?Xl-9?            | [r] +2000 Makes⬇ Ju-1 + Ju-1 + Cq-6 using 100.00 decay
+|  Ju-1∙ + Af-7ª  |+2000              =>  ?Xl-9?            | [r] +2000 Makes⬇Ju-1 + Ju-1 + Cq-6 using 100.00 decay
 |  Ju-1∙ + Af-8∙  |+  469.17 ..  1000 => ⬇ Af-9             |
 |  Ju-1∙ + Af-9∙  |+1000              =>  ?Xl-10?           | [r] +1000 Makes Cq-6 + W-4 using 513.55
 |  Ju-1∙ + Af-10⁻ |+1000              =>  ?Xl-11?           | [r] +1000 Makes Xl-11 using 388.46 nuclear
 |  Ju-1∙ + Xl-9⁺  |+2000              =>  ?Xl-10? Pq-10?    | [r] +2000 Makes⬇ Xl-10 using 432.43 nuclear+decay
 |  Ju-1∙ + Xl-10ª |+  416.70 ..   890 => ⬇ Xl-11            |
 |  Ju-1∙ + Xl-11∙ |+  528.70 ..   830 =>   Cq-6 + Cq-6      |
-|  Ju-1∙ + Xl-12⁻ |+1000              =>  ?Xl-13? Zz-14?    | [r] makes Pq-13 nuclear
+|  Ju-1∙ + Xl-12⁻ |+1000              =>  ?Xl-13? Zz-14?    | [r] +2000 Makes Pq-13 using 467.44 nuclear
 |  Ju-1∙ + Pq-10⁺ |    55.94 .. 10000 =>   XlJu(Xl-10>Ju-1) |
-|  Ju-1∙ + Pq-11⁺ |+1000              =>  ?Pq-12?           | [r] +1000 Makes Pq-12 using 427.00 nuclear+decay
+|  Ju-1∙ + Pq-11⁺ |+1000              =>  ?Pq-12?           | [r] +1000 Makes⬇Pq-12 using 427.00 nuclear+decay
 |  Ju-1∙ + Pq-12ª |+  545.80 ..  2200 => ⬇ Pq-13            |
-|  Ju-1∙ + Pq-13∙ |+2000              =>  ?Zz-14?           | [r] Makes⬇ Cq-6 + Af-8 using 648.60 nuclear+decay
+|  Ju-1∙ + Pq-13∙ |+2000              =>  ?Zz-14?           | [r] +2000 Makes⬇Cq-6 + Af-8 using 648.60 nuclear+decay
 |  Ju-1∙ + Pq-14⁻ |+  464.51 ..   500 =>   Zz-15            |
 |  Ju-1∙ + Pq-15⁻ |+  342.12 ..  2200 => ⬆ Dx-16            |
-|  Ju-1∙ + Zz-13⁺ |+1000              =>  ?Dx-14?           | [r] +1000 Makes⬇ Zz-14 using 469.47 nuclear+decay
+|  Ju-1∙ + Zz-13⁺ |+1000              =>  ?Dx-14?           | [r] +1000 Makes⬇Zz-14 using 469.47 nuclear+decay
 |  Ju-1∙ + Zz-14ª |+  494.24 ..   800 =>  ⬇ Zz-15           |
 |  Ju-1∙ + Zz-15∙ |+1000              =>  ?Dx-16?           | [r] +1000 Makes Dx-16 using 658.43 nuclear
 |  Ju-1∙ + Zz-16⁻ |+  719.14 ..  5000 =>   Dx-17            |
-|  Ju-1∙ + Dx-14⁺ |+1000              =>  ?Dx-15?           | [f] +1000 Makes Ju-1+Zz-14 using 50.0 decay. Hmmm. did it need more energy?
+|  Ju-1∙ + Dx-14⁺ |+1000              =>  ?Dx-15?           | [f] +1000 Makes Ju-1+⬇Zz-14 using 50.0 decay. Hmmm. did it need more energy?
 |  Ju-1∙ + Dx-15⁺ |+  506.75 ..   917 => ⬇ Dx-16            |
-|  Ju-1∙ + Dx-16∙ |+1000              =>  ?Dx-17?           | [r] +1000 Makes Dx-17 using 704.87 nuclear+decay
+|  Ju-1∙ + Dx-16∙ |+1000              =>  ?Dx-17?           | [r] +1000 Makes⬇Dx-17 using 704.87 nuclear+decay
 |  Ju-1∙ + Dx-17∙ |+  750.38 ..  1600 => ⬇ Dx-18            |
 |  Ju-1∙ + Dx-18∙ |+1000              =>  ?Dx-19? Pm-19?    | [r] +1000 Makes Pm-19 using 749.25 nuclear
-|  Ju-1∙ + Dx-19⁻ |+1000              =>  ?Dx-20? Pm-20?    | [r] Makes⬇ M-20 using 545.17 nuclear+decay
+|  Ju-1∙ + Dx-19⁻ |+1000              =>  ?Dx-20? Pm-20?    | [r] +1000 Makes⬇M-20  using 545.17 nuclear+decay
 |  Ju-1∙ + Pm-17⁺ |+  553.42 ..  1000 => ⬇ Pm-18            |
 |  Ju-1∙ + Pm-18⁺ |+  563.73 ..  1000 =>   M-19             |
 |  Ju-1∙ + Pm-19∙ |+  742.83 ..  1800 =>   M-20             |
-|  Ju-1∙ + Pm-20⁻ |+1500              =>  ?M-21?            | [r] +1200 Makes M-21 using 610.71 nuclear
-|  Ju-1∙ + Pm-21⁻ |+1500              =>  ?M-22?            | [r] +1500 Makes M-22 using 613.92 nuclear
-|  Ju-1∙ +  M-19⁺ |+1500              =>  ?Fw-20?           | [r] makes⬇ M-20 using 631.17 nuclear+decay
+|  Ju-1∙ + Pm-20⁻ |+1500              =>  ?M-21?            | [r] +1200 Makes M-21  using 610.71 nuclear
+|  Ju-1∙ + Pm-21⁻ |+1500              =>  ?M-22?            | [r] +1500 Makes M-22  using 613.92 nuclear
+|  Ju-1∙ +  M-19⁺ |+1500              =>  ?Fw-20?           | [r] +1500 Makes⬇M-20  using 631.17 nuclear+decay
 |  Ju-1∙ +  M-20∙ |+  829.53 ..  3000 =>   Fw-21            |
 |  Ju-1∙ +  M-21∙ |+1500              =>  ?Fw-22?           | [r] +1500 Makes Fw-22 using 874.06 nuclear
 |  Ju-1∙ +  M-22∙ |+  814.19 ..  1100 =>   Fw-23            |
@@ -4359,21 +4788,21 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Fw-23∙ |+1500              =>  ?Pt-24?           | [r] +1500 Makes Pt-24 using 888.81 nuclear
 |  Ju-1∙ + Fw-24⁻ |+1500              =>  ?Pt-25?           | [r] +1500 Makes Pt-25 using 698.75 nuclear
 |  Ju-1∙ + Fw-25⁻ |+  670.40 ..  1042 =>   Pt-26            |
-|  Ju-1∙ + Fw-26⁻ |+1500              =>  ?Pt-27?           | [r] +1500 Makes  Pt-27 using 680.52 nuclear
-|  Ju-1∙ + Pt-22⁺ |+1500              =>  ?S-23?            | [r] +1500 Makes⬇ Pt-23 using 650.70 nuclear+decay
-|  Ju-1∙ + Pt-23⁺ |+1500              =>  ?S-24?            | [r] +1500 Makes⬇ Pt-24 using 680.76 nuclear+decay
+|  Ju-1∙ + Fw-26⁻ |+1500              =>  ?Pt-27?           | [r] +1500 Makes Pt-27 using 680.52 nuclear
+|  Ju-1∙ + Pt-22⁺ |+1500              =>  ?S-23?            | [r] +1500 Makes⬇Pt-23 using 650.70 nuclear+decay
+|  Ju-1∙ + Pt-23⁺ |+1500              =>  ?S-24?            | [r] +1500 Makes⬇Pt-24 using 680.76 nuclear+decay
 |  Ju-1∙ + Pt-24∙ |+ 1131.91 ..  6000 =>   S-25             |
 |  Ju-1∙ + Pt-25ª |+  724.25 ..  1400 =>   S-26             |
 |  Ju-1∙ + Pt-26∙ |+  944.93 ..  1500 =>   S-27             |
-|  Ju-1∙ + Pt-27⁻ |+1500              =>  ?S-28? Zq-29?     | [r] +1500 Makes S-28 using 749.95 nuclear
+|  Ju-1∙ + Pt-27⁻ |+1500              =>  ?S-28? Zq-29?     | [r] +1500 Makes S-28  using  749.95 nuclear
 |  Ju-1∙ + Pt-28⁻ |+1500              =>  ?S-29? Zq-30?     | [*]
-|  Ju-1∙ +  S-24⁺ |+1500              =>  ?S-25? Zq-25?     | [r] Makes⬇ S-26 using 651.11 nuclear+decay
+|  Ju-1∙ +  S-24⁺ |+1500              =>  ?S-25? Zq-25?     | [r] +1500 Makes⬇S-26  using  651.11 nuclear+decay
 |  Ju-1∙ +  S-25⁺ |+  668.24 ..   750 => ⬇ S-26             |
 |  Ju-1∙ +  S-26ª |+  696.50 ..   750 =>   Zq-27            |
 |  Ju-1∙ +  S-27ª |+1500              =>  ?Zq-28?           | [r] +1500 Makes Zq-28 using  766.43 nuclear
 |  Ju-1∙ +  S-28∙ |+1500              =>  ?Zq-29?           | [r] +1500 Makes Zq-29 using 1002.13 nuclear
 |  Ju-1∙ +  S-29⁻ |+1500              =>  ?Zq-30? Xc-31?    | [ ]
-|  Ju-1∙ +  S-30⁻ |+1500              =>  ?Zq-31? Xc-32?    | [ ]
+|  Ju-1∙ +  S-30⁻ |+1500              =>  ?Zq-31? Xc-32?    | [ ] +1500 Makes 
 |  Ju-1∙ + Zq-26⁺ |+  873.33 ..  5000 => ⬇ Zq-27            |
 |  Ju-1∙ + Zq-27⁺ |+  817.60 ..  3000 => ⬇ Zq-28            |
 |  Ju-1∙ + Zq-28⁺ |+1000              =>  ?Zq-29?           | [r] +1000 Makes Xc-29 using 758.02 nuclear
@@ -4381,58 +4810,58 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Zq-30⁻ |+1500              =>  ?Xc-31?           | [r] +1500 Makes Xc-31 using 808.73 nuclear
 |  Ju-1∙ + Zq-31⁻ |+1500              =>  ?Xc-32?           | [r] +1500 Makes Xc-32 using 797.44 nuclear
 |  Ju-1∙ + Zq-32⁻ |+  762.18 ..  1000 =>   Xc-33            |
-|  Ju-1∙ + Xc-28⁺ |+1500              =>  ?Xc-29?           | [ ]
+|  Ju-1∙ + Xc-28⁺ |+1500              =>  ?Xc-29?           | [r] +1500 Makes⬇Xc-29 using 737.25 nuclear+decay
 |  Ju-1∙ + Xc-29⁺ |+  967.64 ..  5000 => ⬇ Xc-30            |
 |  Ju-1∙ + Xc-30∙ |+ 1028.25 ..  1050 =>   Gy-31            |
 |  Ju-1∙ + Xc-31∙ |+  812.21 ..   825 =>   Gy-32            |
 |  Ju-1∙ + Xc-32∙ |+1500              =>  ?Gy-33            | [r] +1500 Makes Gy-33 using 848.28 nuclear
 |  Ju-1∙ + Xc-33⁻ |+ 1026.17 ..  5000 =>   Gy-34            |
 |  Ju-1∙ + Xc-34⁻ |+  800.05 ..   850 =>   Gy-35            |
-|  Ju-1∙ + Gy-30⁺ |+1500              =>  ?D-31? Gy-31?     | [r] Makes⬇ Gy-31 using 759.34 nuclear+decay
+|  Ju-1∙ + Gy-30⁺ |+1500              =>  ?D-31? Gy-31?     | [r] +1500 Makes⬇Gy-31 using  759.34 nuclear+decay
 |  Ju-1∙ + Gy-31⁺ |+  996.65 ..  5000 =>   D-32             |
 |  Ju-1∙ + Gy-32⁺ |+  913.58 ..  3000 =>   D-33             |
 |  Ju-1∙ + Gy-33∙ |+ 1265.90 ..  5000 =>   D-34             |
 |  Ju-1∙ + Gy-34∙ |+ 1089.98 ..  1100 =>   D-35             |
-|  Ju-1∙ + Gy-35⁻ |+1500              =>  ?D-36? Fj-37?     | [r] +1500 Makes D-36 using 859.45 nuclear
-|  Ju-1∙ + Gy-36⁻ |+1500              =>  ?D-37? Fj-38?     | [r] +1500 Makes D-37 using 853.42 nuclear
-|  Ju-1∙ +  D-32⁺ |+1500              =>  ?Fj-33? D-33?     | [r] makes⬇ D-33 using 798.46 nuclear+decay
+|  Ju-1∙ + Gy-35⁻ |+1500              =>  ?D-36? Fj-37?     | [r] +1500 Makes D-36  using  859.45 nuclear
+|  Ju-1∙ + Gy-36⁻ |+1500              =>  ?D-37? Fj-38?     | [r] +1500 Makes D-37  using  853.42 nuclear
+|  Ju-1∙ +  D-32⁺ |+1500              =>  ?Fj-33? D-33?     | [r] +1500 Makes⬇D-33  using  798.46 nuclear+decay
 |  Ju-1∙ +  D-33⁺ |+  852.64 ..  2000 =>   Fj-34            |
 |  Ju-1∙ +  D-34⁺ |+ 1021.51 ..  5000 =>   Fj-35            |
-|  Ju-1∙ +  D-35ª |+1500              =>  ?Fj-36?           | [r] +1500 Makes Fj-36 using 872.07 nuclear
-|  Ju-1∙ +  D-36ª |+1500              =>  ?Fj-37?           | [r] +1500 Makes Fj-37 using 875.98 nuclear
+|  Ju-1∙ +  D-35ª |+1500              =>  ?Fj-36?           | [r] +1500 Makes Fj-36 using  872.07 nuclear
+|  Ju-1∙ +  D-36ª |+1500              =>  ?Fj-37?           | [r] +1500 Makes Fj-37 using  875.98 nuclear
 |  Ju-1∙ +  D-37⁻ |+  849.29 ..  1400 =>   Fj-38            |
-|  Ju-1∙ +  D-38⁻ |+1500              =>  ?Fj-39? O-40?     | [r] +1500 Makes Fj-39 using 873.88 nuclear
-|  Ju-1∙ +  D-39⁻ |+1500              =>  ?Fj-40? O-41?     | [ ]
-|  Ju-1∙ + Fj-34⁻ |+1500              =>  ?O-35? C-36?      | [r] Makes⬇ Fj-35 using 815.88 nuclear+decay
-|  Ju-1∙ + Fj-35⁺ |+1500              =>  ?O-36? Fj-36?     | [r] +1500 Makes⬇ Fj-36 using 846.50 nuclear+decay
+|  Ju-1∙ +  D-38⁻ |+1500              =>  ?Fj-39? O-40?     | [r] +1500 Makes Fj-39 using  873.88 nuclear
+|  Ju-1∙ +  D-39⁻ |+1500              =>  ?Fj-40? O-41?     | [r] +1500 Makes Fj-40 using  885.69 nuclear
+|  Ju-1∙ + Fj-34⁻ |+1500              =>  ?O-35? C-36?      | [r] +1500 Makes⬇Fj-35 using  815.88 nuclear+decay
+|  Ju-1∙ + Fj-35⁺ |+1500              =>  ?O-36? Fj-36?     | [r] +1500 Makes⬇Fj-36 using  846.50 nuclear+decay
 |  Ju-1∙ + Fj-36ª |+  879.34 ..  1500 =>   O-37             |
 |  Ju-1∙ + Fj-37ª |+  864.05 ..   900 =>   O-38             |
 |  Ju-1∙ + Fj-38ª |+  965.07 ..  1200 =>   O-39             |
-|  Ju-1∙ + Fj-39ª |+1500              =>  ?O-40?            | [r] +1500 Makes O-40 using 916.76 nuclear
-|  Ju-1∙ + Fj-40∙ |+1500              =>  ?O-41?            | [r] +1500 Makes O-41 using 1202.91 nuclear
-|  Ju-1∙ + Fj-41⁻ |+1500              =>  ?O-42? C-43?      | [r] +1500 Makes O-42 using 893.02 nuclear
-|  Ju-1∙ +  O-36⁺ |+1500              =>  ?C-37? O-37?      | [r] Makes⬇ O-37 using 823.69 nuclear+decay
+|  Ju-1∙ + Fj-39ª |+1500              =>  ?O-40?            | [r] +1500 Makes O-40  using  916.76 nuclear
+|  Ju-1∙ + Fj-40∙ |+1500              =>  ?O-41?            | [r] +1500 Makes O-41  using 1202.91 nuclear
+|  Ju-1∙ + Fj-41⁻ |+1500              =>  ?O-42? C-43?      | [r] +1500 Makes O-42  using  893.02 nuclear
+|  Ju-1∙ +  O-36⁺ |+1500              =>  ?C-37? O-37?      | [r] +1500 Makes⬇O-37  using  823.69 nuclear+decay
 |  Ju-1∙ +  O-37ª |+  838.01 ..   900 =>   C-38             |
 |  Ju-1∙ +  O-38ª |+  863.62 ..   950 =>   C-39             |
 |  Ju-1∙ +  O-39ª |+  980.32 ..  1100 =>   C-40             |
 |  Ju-1∙ +  O-40ª |+  961.88 ..  2000 =>   C-41             |
-|  Ju-1∙ +  O-41∙ |+1500              =>  ?C-42?            | [ ]
-|  Ju-1∙ +  O-42⁻ |+1500              =>  ?C-43? E-44?      | [r] +1500 Makes C-43 using 932.84 nuclear
-|  Ju-1∙ +  O-43⁻ |+1500              =>  ?C-44? E-45?      | [ ]
+|  Ju-1∙ +  O-41∙ |+1200              =>  ?C-42?            | [r] +1200 Makes C-42  using 953.46 nuclear
+|  Ju-1∙ +  O-42⁻ |+1500              =>  ?C-43? E-44?      | [r] +1500 Makes C-43  using 932.84 nuclear
+|  Ju-1∙ +  O-43⁻ |+1200              =>  ?C-44? E-45?      | [r] +1200 Makes C-44  using 900.00 nuclear
 |  Ju-1∙ +  C-38⁺ |+ 1035.43 ..  5000 => ⬇ C-39             |
 |  Ju-1∙ +  C-39⁺ |+  876.67 ..  1100 =>   E-40             |
 |  Ju-1∙ +  C-40⁺ |+  996.49 ..  1049 =>   E-41             |
-|  Ju-1∙ +  C-41⁺ |+1500              =>  ?E-42?            | [r] +1500 Makes E-42 using 955.58 nuclear
-|  Ju-1∙ +  C-42∙ |+1500              =>  ?E-43?            | [r] +1500 Makes E-43 using 996.46 nuclear
-|  Ju-1∙ +  C-43⁻ |+1500              =>  ?E-44? A-45?      | [r] +1500 Makes E-44 using 970.05 nuclear
-|  Ju-1∙ +  C-44⁻ |+1500              =>  ?E-45? A-46?      | [ ]
-|  Ju-1∙ +  C-45⁻ |+1500              =>  ?E-46? A-47?      | [ ]
+|  Ju-1∙ +  C-41⁺ |+1500              =>  ?E-42?            | [r] +1500 Makes E-42  using 955.58 nuclear
+|  Ju-1∙ +  C-42∙ |+1500              =>  ?E-43?            | [r] +1500 Makes E-43  using 996.46 nuclear
+|  Ju-1∙ +  C-43⁻ |+1500              =>  ?E-44? A-45?      | [r] +1500 Makes E-44  using 970.05 nuclear
+|  Ju-1∙ +  C-44⁻ |+1500              =>  ?E-45? A-46?      | [r] +1500 Makes E-45  using 961.33 nuclear
+|  Ju-1∙ +  C-45⁻ |+1500              =>  ?E-46? A-47?      | [r] +1500 Makes E-46  using 944.23 nuclear
 |  Ju-1∙ +  E-40⁺ |+  921.65 ..  1135 => ⬇ E-41             |
 |  Ju-1∙ +  E-41⁺ |+  903.97 ..  1000 =>   A-42             |
-|  Ju-1∙ +  E-42⁺ |+1500              =>  ?A-43? E-43?      | [r] +1500 Makes A-43 using  954.10 nuclear
-|  Ju-1∙ +  E-43∙ |+1500              =>  ?A-44?            | [r] +1500 Makes A-44 using 1004.51 nuclear
-|  Ju-1∙ +  E-44⁻ |+1500              =>  ?A-45?            | [r] +1500 Makes A-45 using  986.73 nuclear
-|  Ju-1∙ +  E-45⁻ |+1500              =>  ?A-46?            | [ ]
+|  Ju-1∙ +  E-42⁺ |+1500              =>  ?A-43? E-43?      | [r] +1500 Makes A-43  using  954.10 nuclear
+|  Ju-1∙ +  E-43∙ |+1500              =>  ?A-44?            | [r] +1500 Makes A-44  using 1004.51 nuclear
+|  Ju-1∙ +  E-44⁻ |+1500              =>  ?A-45?            | [r] +1500 Makes A-45  using  986.73 nuclear
+|  Ju-1∙ +  E-45⁻ |+1200              =>  ?A-46?            | [r] +1200 Makes A-46  using  980.35 nuclear
 |  Ju-1∙ +  E-46⁻ |+ 1162.36 ..  5000 =>   A-47             |
 |  Ju-1∙ +  E-47⁻ |+  976.36 ..  1400 =>   A-48             |
 |  Ju-1∙ +  E-48⁻ |+  987.32 ..  1500 =>   A-49             |
@@ -4443,12 +4872,12 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ +  A-46∙ |+ 1170.46 ..  4000 =>   Aw-47            |
 |  Ju-1∙ +  A-47∙ |+ 1171.30 ..  4000 =>   Aw-48            |
 |  Ju-1∙ +  A-48∙ |+ 1123.85 ..  3000 =>   Aw-49            |
-|  Ju-1∙ +  A-49⁻ |+1500              =>  ?Aw-50?           | [ ]
+|  Ju-1∙ +  A-49⁻ |+1500              =>  ?Aw-50?           | [r] +1500 Makes Aw-50 using 1036.10 nuclear
 |  Ju-1∙ +  A-50⁻ |+ 1200.56 ..  5000 =>   Aw-51            |
 |  Ju-1∙ + Aw-44⁺ |+ 1106.82 ..  5000 => ⬇ Aw-45            |
 |  Ju-1∙ + Aw-45⁺ |+  975.14 ..  1100 =>   Oc-46            |
 |  Ju-1∙ + Aw-46⁺ |+ 1024.88 ..  2000 =>   Oc-47            |
-|  Ju-1∙ + Aw-47⁺ |+ 1028.05 ..  1560 =>   Oc-48            |
+|  Ju-1∙ + Aw-47⁺ |+ 1001.50 ..  1560 =>   Oc-48            |
 |  Ju-1∙ + Aw-48ª |+1500              =>  ?Oc-49?           | [r] +1500 Makes Oc-49 using 1033.56 nuclear
 |  Ju-1∙ + Aw-49∙ |+1500              =>  ?Oc-50?           | [r] +1500 Makes Oc-50 using 1340.08 nuclear
 |  Ju-1∙ + Aw-50∙ |+ 1043.00 ..  1046 =>   Oc-51            |
@@ -4456,66 +4885,66 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Aw-52⁻ |+1500              =>  ?Oc-53? Nb-54?    | [r] +1500 Makes Oc-53 using 1016.50 nuclear
 |  Ju-1∙ + Oc-46⁺ |+  990.90 ..  1500 =>   Nb-47            |
 |  Ju-1∙ + Oc-47⁺ |+  997.32 ..  1500 =>   Nb-48            |
-|  Ju-1∙ + Oc-48⁺ |+1500              =>  ?Nb-49?           | [ ]
+|  Ju-1∙ + Oc-48⁺ |+1500              =>  ?Nb-49?           | [r] +1500 Makes Nb-49 using 1021.52 nuclear
 |  Ju-1∙ + Oc-49ª |+1500              =>  ?Nb-50?           | [r] +1500 Makes Nb-50 using 1037.79 nuclear
 |  Ju-1∙ + Oc-50∙ |+ 1059.37 ..  1400 =>   Nb-51            |
 |  Ju-1∙ + Oc-51∙ |+ 1177.70 ..  3170 =>   Nb-52            |
 |  Ju-1∙ + Oc-52⁻ |+1500              =>  ?Nb-53? Xk-54?    | [r] +1500 makes Nb-53 using 1070.39 nuclear
 |  Ju-1∙ + Oc-53⁻ |+1500              =>  ?Nb-54? Xk-55?    | [r] +1500 makes Nb-54 using 1050.15 nuclear
-|  Ju-1∙ + Oc-54⁻ |+1500              =>  ?Nb-55? Xk-56?    | [*]
-|  Ju-1∙ + Nb-47⁺ |+1500              =>  ?Xk-48?           | [r] +1100 Makes⬇ Nb-48 using  942.82 nuclear+decay
-|  Ju-1∙ + Nb-48⁺ |+1500              =>  ?Xk-49?           | [r] +1500 Makes⬇ Nb-49 using  977.24 nuclear+decay
-|  Ju-1∙ + Nb-49ª |+1500              =>  ?Xk-50?           | [r] +1500 Makes  Xk-50 using 1009.57 nuclear
+|  Ju-1∙ + Oc-54⁻ |+1500              =>  ?Nb-55? Xk-56?    | [r] +1100 Makes Nb-55 using 1041.66 nuclear
+|  Ju-1∙ + Nb-47⁺ |+1500              =>  ?Xk-48?           | [r] +1100 Makes⬇Nb-48 using  942.82 nuclear+decay
+|  Ju-1∙ + Nb-48⁺ |+1500              =>  ?Xk-49?           | [r] +1500 Makes⬇Nb-49 using  977.24 nuclear+decay
+|  Ju-1∙ + Nb-49ª |+1500              =>  ?Xk-50?           | [r] +1500 Makes Xk-50 using 1009.57 nuclear
 |  Ju-1∙ + Nb-50ª |+ 1108.82 ..  3000 =>   Xk-51            |
-|  Ju-1∙ + Nb-51ª |+1500              =>  ?Xk-52?           | [r] +1500 Makes  Xk-52 using 1068.13 nuclear
-|  Ju-1∙ + Nb-52∙ |+1500              =>  ?Xk-53?           | [ ]
+|  Ju-1∙ + Nb-51ª |+1500              =>  ?Xk-52?           | [r] +1500 Makes Xk-52 using 1068.13 nuclear
+|  Ju-1∙ + Nb-52∙ |+1500              =>  ?Xk-53?           | [r] +1500 Makes Xk-53 using 1105.69 nuclear
 |  Ju-1∙ + Nb-53⁻ |+1500              =>  ?Xk-54?           | [r] +1500 Makes Xk-54 using 1088.72 nuclear
 |  Ju-1∙ + Nb-54ª |+ 1055.68 ..  1100 =>   Xk-55            |
-|  Ju-1∙ + Nb-55⁻ |+1500              =>  ?Xk-56?           | [*]
-|  Ju-1∙ + Nb-56⁻ |+1500              =>  ?Xk-57?           | [ ]
+|  Ju-1∙ + Nb-55⁻ |+1500              =>  ?Xk-56?           | [r] +1500 Makes Xk-56 using 1074.26 nuclear
+|  Ju-1∙ + Nb-56⁻ |+1500              =>  ?Xk-57?           | [r] +1500 Makes Xk-57 using 1059.02 nuclear
 |  Ju-1∙ + Xk-50⁺ |+1500              =>  ?Ic-51?           | [r] +1500 Makes Ic-51 using 1007.61 nuclear
-|  Ju-1∙ + Xk-51ª |+1500              =>  ?Ic-52?           | [ ]
+|  Ju-1∙ + Xk-51ª |+1500              =>  ?Ic-52?           | [r] +1500 Makes Ic-52 using 1039.68 nuclear
 |  Ju-1∙ + Xk-52⁺ |+1500              =>  ?Ic-53?           | [r] +1500 Makes Ic-53 using 1072.06 nuclear
-|  Ju-1∙ + Xk-53∙ |+1500              =>  ?Ic-54?           | [ ]
+|  Ju-1∙ + Xk-53∙ |+1500              =>  ?Ic-54?           | [r] +1500 Makes Ic-54 using 1117.11 nuclear
 |  Ju-1∙ + Xk-54⁻ |+1500              =>  ?Ic-55?           | [r] +1500 Makes Ic-55 using 1106.72 nuclear
 |  Ju-1∙ + Xk-55⁻ |+ 1095.30 ..  5500 =>   Ic-56            |
 |  Ju-1∙ + Xk-56⁻ |+ 1290.74 ..  5000 =>   Ic-57            |
-|  Ju-1∙ + Xk-57⁻ |+1500              =>  ?Ic-58? Yp-59?    | [ ]
-|  Ju-1∙ + Xk-58⁻ |+1500              =>  ?Ic-59? Yp-60?    | [ ]
+|  Ju-1∙ + Xk-57⁻ |+1500              =>  ?Ic-58? Yp-59?    | [r] +2000 Makes Ic-58 using 1132.61 nuclear
+|  Ju-1∙ + Xk-58⁻ |+1500              =>  ?Ic-59? Yp-60?    | [r] +1500 Makes Ic-59 using 1101.76 nuclear
 |  Ju-1∙ + Xk-59⁻ |+1500              =>  ?Ic-60? Yp-61?    | [r] +1500 Makes Ic-60 using 1082.80 nuclear
-|  Ju-1∙ + Ic-51⁺ |+1500              =>  ?Yp-52? Ic-52?    | [r] Makes⬇ Ic-52 using 1008.74 nuclear+decay
+|  Ju-1∙ + Ic-51⁺ |+1500              =>  ?Yp-52? Ic-52?    | [r] +1500 Makes⬇Ic-52 using 1008.74 nuclear+decay
 |  Ju-1∙ + Ic-52⁺ |+ 1223.80 ..  5000 => ⬇ Ic-53            |
-|  Ju-1∙ + Ic-53⁺ |+1500              =>  ?Yp-54? Ic-54?    | [r] Makes Yp-54 using 1088.71 nuclear
-|  Ju-1∙ + Ic-54∙ |+1500              =>  ?Yp-55?           | [ ]
+|  Ju-1∙ + Ic-53⁺ |+1500              =>  ?Yp-54? Ic-54?    | [r] +1500 Makes Yp-54 using 1088.71 nuclear
+|  Ju-1∙ + Ic-54∙ |+1500              =>  ?Yp-55?           | [r] +1500 Makes Yp-55 using 1112.80 nuclear
 |  Ju-1∙ + Ic-55∙ |+1500              =>  ?Yp-56?           | [r] +1500 Makes Yp-56 using 1137.82 nuclear
 |  Ju-1∙ + Ic-56∙ |+ 1133.51 ..  1200 =>   Yp-57            |
-|  Ju-1∙ + Ic-57∙ |+1500              =>  ?Yp-58?           | [ ]
+|  Ju-1∙ + Ic-57∙ |+1500              =>  ?Yp-58?           | [r] +1500 Makes Yp-58 using 1160.82 nuclear
 |  Ju-1∙ + Ic-58∙ |+ 1174.78 ..  1800 =>   Yp-59            |
-|  Ju-1∙ + Ic-59∙ |+1500              =>  ?Yp-60?           | [ ]
+|  Ju-1∙ + Ic-59∙ |+1500              =>  ?Yp-60?           | [r] +1500 Makes Yp-60 using 1496.42 nuclear
 |  Ju-1∙ + Ic-60⁻ |+1500              =>  ?Yp-61? Jx-62?    | [r] +1500 Makes Yp-61 using 1149.11 nuclear
-|  Ju-1∙ + Ic-61⁻ |+1500              =>  ?Yp-62? Jx-63?    | [ ]
+|  Ju-1∙ + Ic-61⁻ |+1500              =>  ?Yp-62? Jx-63?    | [r] +1500 Makes Yp-62 using 1139.80 nuclear
 |  Ju-1∙ + Yp-54⁺ |+ 1223.56 ..  5000 => ⬇ Yp-55            |
 |  Ju-1∙ + Yp-55⁺ |+ 1284.07 ..  5000 =>   Jx-56            |
 |  Ju-1∙ + Yp-56⁺ |+ 1286.34 ..  5000 =>   Jx-57            |
 |  Ju-1∙ + Yp-57⁺ |+ 1113.33 ..  1200 =>   Jx-58            |
-|  Ju-1∙ + Yp-58ª |+1500              =>  ?Jx-59?           | [ ]
+|  Ju-1∙ + Yp-58ª |+1500              =>  ?Jx-59?           | [r] +1500 Makes Jx-59 using 1146.70 nuclear
 |  Ju-1∙ + Yp-59⁺ |+1500              =>  ?Jx-60?           | [r] +1500 Makes Jx-60 using 1151.53 nuclear
 |  Ju-1∙ + Yp-60∙ |+ 1537.24 ..  4000 =>   Jx-61            |
 |  Ju-1∙ + Yp-61⁻ |+1500              =>  ?Jx-62?           | [r] +1500 Makes Jx-62 using 1152.24 nuclear
-|  Ju-1∙ + Yp-62⁻ |+ 1323.47 ..  5000 =>   Jx-63            |
+|  Ju-1∙ + Yp-62⁻ |+ 1139.67 ..  5000 =>   Jx-63            |
 |  Ju-1∙ + Yp-63⁻ |+1500              =>  ?Jx-64?           | [r] +1500 Makes Jx-64 using 1132.38 nuclear
 |  Ju-1∙ + Jx-56⁺ |+ 1094.03 ..  1575 =>   Hb-57            |
-|  Ju-1∙ + Jx-57⁺ |+1500              =>  ?Hb-58?           | [ ]
+|  Ju-1∙ + Jx-57⁺ |+1500              =>  ?Hb-58?           | [r] +1600 Makes Hb-58 using 1103.82 nuclear
 |  Ju-1∙ + Jx-58⁺ |+ 1408.33 ..  1650 =>   Hb-59            |
 |  Ju-1∙ + Jx-59ª |+ 1543.58 ..  3344 =>   Hb-60            |
 |  Ju-1∙ + Jx-60ª |+ 1153.14 ..  1600 =>   Hb-61            |
-|  Ju-1∙ + Jx-61ª |+1500              =>  ?Hb-62?           | [ ]
+|  Ju-1∙ + Jx-61ª |+1500              =>  ?Hb-62?           | [r] +1500 Makes Hb-62 using 1160.87 nuclear
 |  Ju-1∙ + Jx-62ª |+1500              =>  ?Hb-63?           | [r] +1500 Makes Hb-63 using 1160.77 nuclear
-|  Ju-1∙ + Jx-63⁻ |+1500              =>  ?Hb-64? At-65?    | [ ]
+|  Ju-1∙ + Jx-63⁻ |+1500              =>  ?Hb-64? At-65?    | [r] +1500 Makes Hb-64 using 1162.80 nuclear
 |  Ju-1∙ + Jx-64⁻ |+1500              =>  ?Hb-65? At-66?    | [r] +1500 Makes Hb-65 using 1152.58 nuclear
 |  Ju-1∙ + Jx-65⁻ |+1500              =>  ?Hb-66? At-67?    | [r] +1500 Makes Hb-66 using 1144.78 nuclear
 |  Ju-1∙ + Hb-57⁺ |+ 1075.91 ..  1570 => ⬇ Hb-58            |
-|  Ju-1∙ + Hb-58ª |+1500              =>  ?Hb-59?           | [ ]
+|  Ju-1∙ + Hb-58ª |+1500              =>  ?Hb-59?           | [r] +1600 Makes⬇Hb-59 using 1092.15 nuclear+decay
 |  Ju-1∙ + Hb-59ª |+ 1403.48 ..  1700 => ⬇ Hb-60            |
 |  Ju-1∙ + Hb-60ª |+ 1142.98 ..  1700 =>   At-61            |
 |  Ju-1∙ + Hb-61ª |+ 1150.12 ..  1500 =>   At-62            |
@@ -4525,7 +4954,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Hb-65ª |+ 1352.71 ..  5000 =>   At-66            |
 |  Ju-1∙ + Hb-66ª |+ 1350.51 ..  5000 =>   At-67            |
 |  Ju-1∙ + Hb-67ª |+ 1336.57 ..  5000 =>   At-68            |
-|  Ju-1∙ + At-60⁺ |+ 2000             =>  ?Ny-61?           | [ ]
+|  Ju-1∙ + At-60⁺ |+ 1500             =>  ?Ny-61?           | [*] +1500 Makes 
 |  Ju-1∙ + At-61ª |+ 1134.70 ..  1800 =>   Cq-6 + Jx-56     |
 |  Ju-1∙ + At-62ª |+ 1129.91 ..  1300 =>   Ny-63            |
 |  Ju-1∙ + At-63ª |+ 1339.53 ..  5000 =>   Ny-64            |
@@ -4535,45 +4964,45 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + At-67ª |+ 1368.97 ..  5000 =>   Ny-68            |
 |  Ju-1∙ + At-68⁻ |+ 1360.63 ..  5000 =>   Ny-69            |
 |  Ju-1∙ + At-69⁻ |+ 1358.13 ..  5000 =>   Ny-70            |
-|  Ju-1∙ + Ny-61⁺ |+ 2000             =>  ?Pw-62? Ny-62?    | [r] Makes⬇ Ny-62 using 1093.71 nuclear+decay
-|  Ju-1∙ + Ny-62ª |+ 2000             =>  ?Pw-63?           | [r] Makes⬇ Ny-63 with nuclear+decay
-|  Ju-1∙ + Ny-63⁺ |+ 2000             =>  ?Pw-64? Ny-64?    | [r] +2000 Makes Ny-64 using 1158.71 nuclear+decay
+|  Ju-1∙ + Ny-61⁺ |+ 2000             =>  ?Pw-62? Ny-62?    | [r] +2000 Makes⬇Ny-62 using 1093.71 nuclear+decay
+|  Ju-1∙ + Ny-62ª |+ 2000             =>  ?Pw-63?           | [r] +2000 Makes⬇Ny-63 using 1132.38 nuclear+decay
+|  Ju-1∙ + Ny-63⁺ |+ 2000             =>  ?Pw-64? Ny-64?    | [r] +2000 Makes⬇Ny-64 using 1158.71 nuclear+decay
 |  Ju-1∙ + Ny-64⁺ |+ 2000             =>  ?Pw-65? Ny-65?    | [r] +2000 Makes Pw-65 using 1187.05 nuclear
 |  Ju-1∙ + Ny-65ª |+ 1186.39 ..  1640 =>   Pw-66            |
 |  Ju-1∙ + Ny-66ª |+ 1318.28 ..  3900 =>   Pw-67            |
 |  Ju-1∙ + Ny-67ª |+ 1279.95 ..  3000 =>   Pw-68            |
 |  Ju-1∙ + Ny-68ª |+ 1203.58 ..  1300 =>   Pw-69            |
 |  Ju-1∙ + Ny-69ª |+ 1277.35 ..  2789 =>   Pw-70            |
-|  Ju-1∙ + Ny-70⁻ |+ 2000             =>  ?Pw-71? Gk-72?    | [ ]
+|  Ju-1∙ + Ny-70⁻ |+ 1500             =>  ?Pw-71? Gk-72?    | [ ]
 |  Ju-1∙ + Ny-71⁻ |+ 1217.28 ..  1650 =>   Pw-72            |
 |  Ju-1∙ + Ny-72⁻ |+ 2000             =>  ?Pw-73? Gk-74?    | [r] +2000 Makes Pw-73 using 1237.43 nuclear
-|  Ju-1∙ + Pw-64⁺ |+ 2000             =>  ?Gk-65? Pw-65?    | [ ]
-|  Ju-1∙ + Pw-65⁺ |+ 2000             =>  ?Gk-66? Pw-66?    | [r] +2000 Makes Pw-66 using 1173.20 nuclear+decay
-|  Ju-1∙ + Pw-66⁺ |+ 4000             =>  ?                 | [r] Makes Gk-67 using 1294.81 nuclear
-|  Ju-1∙ + Pw-67ª |+ 2000             =>  ?                 | [r] Makes Gk-68 using 1219.33 nuclear
-|  Ju-1∙ + Pw-68ª |+ 2000             =>  ?                 | [r] Makes Gk-69 using 1231.48 nuclear
-|  Ju-1∙ + Pw-69ª |+ 2000             =>  ?                 | [r] Makes Gk-70 using 1247.05 nuclear
-|  Ju-1∙ + Pw-70ª |+ 2000             =>  ?                 | [r] Makes Gk-71 using 1251.70 nuclear
-|  Ju-1∙ + Pw-71⁻ |+ 2000             =>  ?Gk-72? Qi-73?    | [ ]
-|  Ju-1∙ + Pw-72⁻ |+ 2000             =>  ?Gk-73? Qi-74?    | [ ]
+|  Ju-1∙ + Pw-64⁺ |+ 1500             =>  ?Gk-65? Pw-65?    | [ ]
+|  Ju-1∙ + Pw-65⁺ |+ 2000             =>  ?Gk-66? Pw-66?    | [r] +2000 Makes⬇Pw-66 using 1173.20 nuclear+decay
+|  Ju-1∙ + Pw-66⁺ |+ 1159.51 .. 4000  =>  ?                 | [r] +1294 Makes Gk-67 using 1159.51 nuclear
+|  Ju-1∙ + Pw-67ª |+ 2000             =>  ?                 | [r] +2000 Makes Gk-68 using 1219.33 nuclear
+|  Ju-1∙ + Pw-68ª |+ 2000             =>  ?                 | [r] +2000 Makes Gk-69 using 1231.48 nuclear
+|  Ju-1∙ + Pw-69ª |+ 2000             =>  ?                 | [r] +2000 Makes Gk-70 using 1247.05 nuclear
+|  Ju-1∙ + Pw-70ª |+ 2000             =>  ?                 | [r] +2000 Makes Gk-71 using 1251.70 nuclear
+|  Ju-1∙ + Pw-71⁻ |+ 1500             =>  ?Gk-72? Qi-73?    | [ ]
+|  Ju-1∙ + Pw-72⁻ |+ 1500             =>  ?Gk-73? Qi-74?    | [ ]
 |  Ju-1∙ + Pw-73⁻ |+ 2000             =>  ?Gk-74? Qi-75?    | [r] +2000 Makes Gk-74 using 1266.79 nuclear
-|  Ju-1∙ + Pw-74⁻ |+ 2000             =>  ?Gk-75? Qi-76?    | [ ]
-|  Ju-1∙ + Gk-65⁺ |+ 2000             =>  ?Qi-66?           | [r] Makes⬇ Gk-66 using 1119.97 nuclear+decay
-|  Ju-1∙ + Gk-66⁺ |+ 2000             =>  ?Qi-67?           | [ ]
-|  Ju-1∙ + Gk-67⁺ |+ 2000             =>  ?Qi-68?           | [r] +2000 Makes Gk-68 using 1187.77 nuclear+decay
-|  Ju-1∙ + Gk-68⁺ |+ 2000             =>  ?Qi-69?           | [r] +2000 Makes Gk-69 using 1216.59 nuclear+decay
+|  Ju-1∙ + Pw-74⁻ |+ 1500             =>  ?Gk-75? Qi-76?    | [ ]
+|  Ju-1∙ + Gk-65⁺ |+ 2000             =>  ?Qi-66?           | [r] +2000 Makes⬇Gk-66 using 1119.97 nuclear+decay
+|  Ju-1∙ + Gk-66⁺ |+ 1500             =>  ?Qi-67?           | [ ]
+|  Ju-1∙ + Gk-67⁺ |+ 2000             =>  ?Qi-68?           | [r] +2000 Makes⬇Gk-68 using 1187.77 nuclear+decay
+|  Ju-1∙ + Gk-68⁺ |+ 2000             =>  ?Qi-69?           | [r] +2000 Makes⬇Gk-69 using 1216.59 nuclear+decay
 |  Ju-1∙ + Gk-69ª |+ 2000             =>  ?Qi-70?           | [r] +2000 Makes Qi-70 using 1235.34 nuclear
-|  Ju-1∙ + Gk-70ª |+ 2000             =>  ?Qi-71?           | [ ]
+|  Ju-1∙ + Gk-70ª |+ 1500             =>  ?Qi-71?           | [ ]
 |  Ju-1∙ + Gk-71ª |+ 1270.94 ..  2100 =>   Qi-72            |
 |  Ju-1∙ + Gk-72∙ |+ 1774.19 ..  5000 =>   Qi-73            |
 |  Ju-1∙ + Gk-73⁻ |+ 2000             =>  ?Qi-74?           | [ ]
 |  Ju-1∙ + Gk-74∙ |+ 1845.62 ..  6010 =>   Qi-75            |
 |  Ju-1∙ + Gk-75∙ |+ 2000             =>  ?Qi-76?           | [ ]
 |  Ju-1∙ + Gk-76⁻ |+ 2000             =>  ?Qi-77?           | [r] +2000 Makes Qi-77 using 1279.42 nuclear
-|  Ju-1∙ + Qi-67⁺ |+ 2000             =>  ?Xy-68?           | [r] Makes⬇ Qi-68 using 1134.33 nuclear+decay
+|  Ju-1∙ + Qi-67⁺ |+ 2000             =>  ?Xy-68?           | [r] +2000 Makes⬇Qi-68 using 1134.33 nuclear+decay
 |  Ju-1∙ + Qi-68⁺ |+ 2000             =>  ?Xy-69?           | [ ]
-|  Ju-1∙ + Qi-69⁺ |+ 2000             =>  ?Xy-70?           | [r] +1600 Makes Qi-70 using 1183.44 nuclear+decay
-|  Ju-1∙ + Qi-70⁺ |+ 2000             =>  ?Xy-71?           | [r] +1600 Makes Qi-71 using 1206.47 nuclear+decay
+|  Ju-1∙ + Qi-69⁺ |+ 2000             =>  ?Xy-70?           | [r] +1600 Makes⬇Qi-70 using 1183.44 nuclear+decay
+|  Ju-1∙ + Qi-70⁺ |+ 2000             =>  ?Xy-71?           | [r] +1600 Makes⬇Qi-71 using 1206.47 nuclear+decay
 |  Ju-1∙ + Qi-71⁺ |+ 1402.55 ..  5000 =>   Xy-72            |
 |  Ju-1∙ + Qi-72ª |+ 1272.56 ..  2100 =>   Xy-73            |
 |  Ju-1∙ + Qi-73ª |+ 2000             =>  ?Xy-74?           | [ ]
@@ -4584,7 +5013,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Qi-78⁻ |+ 1379.88 ..  3000 =>   Xy-79            |
 |  Ju-1∙ + Xy-69⁺ |+ 2000             =>  ?Xy-70?           | [ ]
 |  Ju-1∙ + Xy-70⁺ |+ 2000             =>  ?Xy-71?           | [ ]
-|  Ju-1∙ + Xy-71⁺ |+ 2000             =>  ?Xy-72?           | [r] +1500 Makes Xy-72 using 1195.34 nuclear+decay
+|  Ju-1∙ + Xy-71⁺ |+ 2000             =>  ?Xy-72?           | [r] +1500 Makes⬇Xy-72 using 1195.34 nuclear+decay
 |  Ju-1∙ + Xy-72⁺ |+ 1399.95 ..  5000 => ⬇ Xy-73            |
 |  Ju-1∙ + Xy-73⁺ |+ 1420.04 ..  5000 =>   Gq-74            |
 |  Ju-1∙ + Xy-74⁺ |+ 1259.04 ..  1321 =>   Gq-75            |
@@ -4593,17 +5022,17 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Xy-77∙ |+ 2000             =>  ?Gq-78?           | [ ]
 |  Ju-1∙ + Xy-78⁻ |+ 2000             =>  ?Gq-79?           | [r] +1500 Makes Gq-79 using 1306.85 nuclear
 |  Ju-1∙ + Xy-79∙ |+ 2000             =>  ?Gq-80?           | [ ]
-|  Ju-1∙ + Gq-71⁺ |+ 2000                 ?Bt-72?           | [r]⬇ Makes Gq-72 using 1168.46 nuclear+decay
+|  Ju-1∙ + Gq-71⁺ |+ 2000                 ?Bt-72?           | [r] +2000 Makes⬇Gq-72 using 1168.46 nuclear+decay
 |  Ju-1∙ + Gq-72⁺ |+ 2000                 ?Bt-73?           | [ ]
-|  Ju-1∙ + Gq-73⁺ |+ 2000                 ?Bt-74?           | [ ]
-|  Ju-1∙ + Gq-74⁺ |+ 2000                 ?Bt-75?           | [ ]
+|  Ju-1∙ + Gq-73⁺ |+ 2000                 ?Bt-74?           | [r] +2000 Makes⬇Gq-74 using 1237.52 nuclear+decay
+|  Ju-1∙ + Gq-74⁺ |+ 2000                 ?Bt-75?           | [r] +2000 Makes⬇Gq-75 using 1260.42 nuclear+decay
 |  Ju-1∙ + Gq-75⁺ |+ 1272.77 ..  1688 =>   Bt-76            |
 |  Ju-1∙ + Gq-76⁺ |+ 1325.32 ..  2355 =>   Bt-77            |
 |  Ju-1∙ + Gq-77⁺ |+ 1334.68 ..  2000 =>   Bt-78            |
 |  Ju-1∙ + Gq-78∙ |+ 1816.64 ..  3000 =>   Bt-79            |
 |  Ju-1∙ + Gq-79⁻ |+ 1321.10 ..  1500 =>   Bt-80            |
 |  Ju-1∙ + Gq-80∙ |+ 1780.38 ..  2300 =>   Bt-81            |
-|  Ju-1∙ + Bt-73⁺ |+ 2000                ? H-74?            | [r]⬇ Makes Bt-74 using 1187.28 nuclear+decay
+|  Ju-1∙ + Bt-73⁺ |+ 2000                ? H-74?            | [r] +2000 Makes⬇Bt-74 using 1187.28 nuclear+decay
 |  Ju-1∙ + Bt-74⁺ |+ 2000                ? H-75?            | [ ]
 |  Ju-1∙ + Bt-75⁺ |+ 1405.57 ..  5000 =>   H-76             |
 |  Ju-1∙ + Bt-76⁺ |+ 1434.81 ..  5000 => ⬇ Bt-77            |
@@ -4621,13 +5050,13 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ +  H-81⁺ |+ 1334.68 ..  1404 =>   U-82             |
 |  Ju-1∙ +  H-82∙ |+ 1805.03 ..  2000 =>   U-83             |
 |  Ju-1∙ +  U-77⁺ |+ 1635.19 .. 10000 => ⬇ U-78             |
-|  Ju-1∙ +  U-78⁺ |+ 2000                 ?Sq-79?           | [r] +2000 Makes H-78 using 100.00 decay
+|  Ju-1∙ +  U-78⁺ |+ 2000                 ?Sq-79?           | [r] +2000 Makes⬇H-78 using 100.00 decay [ ] Would more energy make Sq-79?
 |  Ju-1∙ +  U-79⁺ |+ 1301.99 ..  2000 =>   Sq-80            |
 |  Ju-1∙ +  U-80⁺ |+ 1320.89 ..  1800 =>   Sq-81            |
 |  Ju-1∙ +  U-81∙ |+ 1772.50 ..  5000 =>   Sq-82            |
 |  Ju-1∙ +  U-82⁺ |+ 1343.94 ..  5000 =>   Sq-83            |
 |  Ju-1∙ +  U-83∙ |+ 1816.49 ..  2000 =>   Sq-84            |
-|  Ju-1∙ + Sq-79⁺ |+ 2000                 ?Sq-80?           | [r] +2000 Makes Sq-80 using 1287.28 nuclear+decay
+|  Ju-1∙ + Sq-79⁺ |+ 2000                 ?Sq-80?           | [r] +2000 Makes⬇Sq-80 using 1287.28 nuclear+decay
 |  Ju-1∙ + Sq-80⁺ |+ 1719.71 .. 10000 => ⬇ Sq-81            |
 |  Ju-1∙ + Sq-81⁺ |+ 1503.26 ..  5000 => ⬇ Sq-82            |
 |  Ju-1∙ + Sq-82∙ |+ 1740.11 ..  1800 =>   Ua-83            |
@@ -4636,6 +5065,52 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ua-83⁺ |+2000              =>   ?                | [ ]
 |  Ju-1∙ + Ua-84⁺ |+10000             =>   Ju-1 + Ua-84     |
 |  Ju-1∙ + Ua-85⁺ |+10000             =>   Ju-1 + Ua-85     |
+
+[r] 17  9 Pm + 18  9 Pm +  996 => 35 18 Fj
+[r] 15  8 Dx + 35 18 Fj + 1395 => 50 26 Xk
+[r]  1  1 Ju + 50 26 Xk + 1008 => 51 27 Ic
+[r]  9  5 Xl + 51 27 Ic + 1187 => 60 31 At
+
+[r]  6  3 Cq + 32 14 Zq + 1007 => 38 17  D
+[r] 23 10  M + 38 17  D + 1768 => 61 27 Ic
+
+
+[r]  7  4 Af + 50 23 Aw + 1043 => 57 27 Ic
+
+[r]  5  3 Cq + 26 13  S +  612 => 31 16 Gy
+[r] 26 13  S + 31 16 Gy + 1823 => 57 29 Jx
+
+[r] 26 12 Pt + 32 14 Zq + 2290 => 58 26 Xk
+
+[r] 17  9 Pm + 25 13  S + 1171 => 42 22  A
+[r] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
+[r] 16  8 Dx + 57 30 Hb + 2415 => 73 37 Gq
+[r] Ju-1 + Gq-73
+
+[r] 25 13  S + 26 13  S + 1536 => 51 26 Xk
+[r] Ju-1 + Xk-51
+
+[r] 22 10  M + 34 15 Xc + 2254 => 56 25 Nb
+[r] Ju-1 + Nb-56
+
+[r] 15  6 Pq + 34 15 Xc + 1111 => 49 22  A
+[r] Ju-1 + A-49
+
+[r] 10  5 Xl + 34 15 Xc + 1042 => 44 20  C
+[r] Ju-1 + C-44
+
+[r] 11  5 Xl + 34 15 Xc + 1361 => 45 20  C
+[r] Ju-1 + C-45
+
+[ ] 22 10  M + 34 15 Xc + 2254 => 56 25 Nb
+[ ] 56 25 Nb +            4804 => 26 12 Pt + 30 13  S
+[ ] Ju-1 + S-30
+
+[r]  7  4 Af + 25 13  S +  662 => 32 17  D
+[r] 20 10  M + 32 17  D + 2099 => 52 27 Ic
+[r] 52 27 Ic +            4514 => 24 12 Pt + 28 15 Xc
+[r] Ju-1 + Xc-28
+
 
 [r] 15  6 Pq + 37 17  D + 1177 => 52 23 Aw
 [*] 52 23 Aw +            4291 => 24 11 Fw + 28 12 Pt
@@ -8922,7 +9397,7 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
   1  1 Ju∙(1.000)|◼◻◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 15 10  M |= 15  9 Pm |⬇ 15  8 Dx
   2  1 Ju∙(1.000)|◼◻◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 16 10  M |= 16  9 Pm |⬇ 16  8 Dx
   3  1 Ju∙(1.000)|◼◻◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 17 10  M |= 17  9 Pm |⬇ 17  8 Dx
-  4  2  W∙(1.000)|◼◼◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 18 11 Fw |= 18 10  M |⬇ 18  9 Pm [ ] might make M-18
+  4  2  W∙(1.000)|◼◼◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 18 11 Fw |= 18 10  M |⬇(18  9 Pm)[f] might make M-18 <---NOPE MAKES Pm-18
   5  2  W∙(1.000)|◼◼◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 19 11 Fw |= 19 10  M |⬇ 19  9 Pm
   5  3 Cq⁺(0.017)|◼◼◼|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 19 12 Pt |= 19 11 Fw |⬇ 19 10  M
   6  3 Cq∙(1.000)|◼◼◼|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 20 12 Pt |= 20 11 Fw |⬇ 20 10  M [ ] might make Fw-20
@@ -9174,7 +9649,7 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  74 34 Gk∙(1.762)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 88 43 .. |= 88 42 Ua |⬇ 88 41 Sq [ ] try
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  75 34 Gk∙(1.839)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 89 43 .. |= 89 42 Ua |⬇ 89 41 Sq [ ] try
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  76 34 Gk⁻(0.798)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 90 43 .. |= 90 42 Ua |⬇ 90 41 Sq [ ] try
- 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  67 35 Qi⁺(0.654)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 81 44 .. |= 81 43 .. |⬇ 81 42 Ua [ ] try
+ 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  67 35 Qi⁺(0.654)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 81 44 .. |= 81 43 .. |⬇ 81 42 Ua [*] try
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  68 35 Qi⁺(0.712)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 82 44 .. |= 82 43 .. |⬇ 82 42 Ua [F] try<--NOPE THEY BOTH DECAYED to Zz-14 and Gk-68
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  69 35 Qi⁺(0.775)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 83 44 .. |= 83 43 .. |⬇ 83 42 Ua
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  70 35 Qi⁺(0.807)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 84 44 .. |= 84 43 .. |⬇ 84 42 Ua
@@ -9241,8 +9716,8 @@ beta+ + alpha
 [r] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
 [r] 57 30 Hb +            4958 => 26 14 Zq + 31 16 Gy
 [r] 26 14 Zq +            1443 => 12  6 Pq + 14  8 Dx
-[F] 14  8 Dx⁺(0.334) + 72 34 Gk∙(1.774) + 5000 => |⬆ 86 43 .. |= 86 42 Ua |⬇ 86 41 Sq [ ] try <--NOPE IT DECAYED Dx-14 to Zz-14 ?? Was it too much energy or won't it happen?
-[F] 14  8 Dx⁺(0.334) + 72 34 Gk∙(1.774) + 2200 => |⬆ 86 43 .. |= 86 42 Ua |⬇ 86 41 Sq [ ] try <--NOPE IT DECAYED Dx-14 to Zz-14 ?? 
+[f] 14  8 Dx⁺(0.334) + 72 34 Gk∙(1.774) + 5000 => |⬆ 86 43 .. |= 86 42 Ua |⬇ 86 41 Sq [ ] try <--NOPE IT DECAYED Dx-14 to Zz-14 ?? Was it too much energy or won't it happen?
+[f] 14  8 Dx⁺(0.334) + 72 34 Gk∙(1.774) + 2200 => |⬆ 86 43 .. |= 86 42 Ua |⬇ 86 41 Sq [ ] try <--NOPE IT DECAYED Dx-14 to Zz-14 ?? 
 
 
 [r] 17  9 Pm + 17  9 Pm +  940 => 34 18 Fj
@@ -9369,7 +9844,7 @@ atom 14  8 Dx | Empty in Outer Shell	0-0-2-2-0-0-0-0
   6  3 Cq∙(1.000) +   6  3 Cq∙(1.000) => |⬆  12  7 Zz |=  12  6 Pq |⬇  12  5 Xl
   6  3 Cq∙(1.000) +  10  4 Af⁻(0.290) => |⬆  16  8 Dx |=  16  7 Zz |⬇  16  6 Pq
   6  3 Cq∙(1.000) +  12  5 Xl⁻(0.313) => |⬆  18  9 Pm |=  18  8 Dx |⬇  18  7 Zz
-  7  3 Cq∙(1.000) +  10  4 Af⁻(0.290) => |⬆  17  8 Dx |=  17  7 Zz |⬇  17  6 Pq
+  7  3 Cq∙(1.000) +  10  4 Af⁻(0.290) => |⬆ (17  8 Dx)|=  17  7 Zz |⬇  17  6 Pq makes Dx-17
   7  3 Cq∙(1.000) +  12  5 Xl⁻(0.313) => |⬆  19  9 Pm |=  19  8 Dx |⬇  19  7 Zz
   7  4 Afª(0.194) +  10  4 Af⁻(0.290) => |⬆  17  9 Pm |=  17  8 Dx |⬇  17  7 Zz
   7  4 Afª(0.194) +  12  5 Xl⁻(0.313) => |⬆  19 10  M |=  19  9 Pm |⬇  19  8 Dx
@@ -9382,7 +9857,7 @@ atom 14  8 Dx | Empty in Outer Shell	0-0-2-2-0-0-0-0
  10  4 Af⁻(0.290) +  10  5 Xlª(0.487) => |⬆  20 10  M |=  20  9 Pm |⬇  20  8 Dx
  10  4 Af⁻(0.290) +  11  5 Xl∙(1.110) => |⬆  21 10  M |=  21  9 Pm |⬇  21  8 Dx
  10  4 Af⁻(0.290) +  12  5 Xl⁻(0.313) => |⬆  22 10  M |=  22  9 Pm |⬇  22  8 Dx
- 10  4 Af⁻(0.290) +  10  6 Pq⁺(0.049) => |⬆  20 11 Fw |=  20 10  M |⬇  20  9 Pm
+ 10  4 Af⁻(0.290) +  10  6 Pq⁺(0.049) => |⬆  20 11 Fw |=  20 10  M |⬇  20  9 Pm [ ] try
  10  4 Af⁻(0.290) +  12  6 Pqª(0.696) => |⬆  22 11 Fw |=  22 10  M |⬇  22  9 Pm
  10  4 Af⁻(0.290) +  13  6 Pq∙(1.282) => |⬆  23 11 Fw |=  23 10  M |⬇  23  9 Pm
  10  4 Af⁻(0.290) +  14  6 Pq⁻(0.562) => |⬆  24 11 Fw |=  24 10  M |⬇  24  9 Pm
@@ -9490,29 +9965,29 @@ atom 14  8 Dx | Empty in Outer Shell	0-0-2-2-0-0-0-0
  10  4 Af⁻(0.290) +  72 35 Qiª(0.860) => |⬆  82 40  U |=  82 39  H |⬇  82 38 Bt
  10  4 Af⁻(0.290) +  73 35 Qiª(0.879) => |⬆  83 40  U |=  83 39  H |⬇  83 38 Bt
  10  4 Af⁻(0.290) +  74 35 Qiª(0.879) => |⬆  84 40  U |=  84 39  H |⬇  84 38 Bt
- 10  4 Af⁻(0.290) +  75 35 Qi⁺(0.897) => |⬆  85 40  U |=  85 39  H |⬇  85 38 Bt
+ 10  4 Af⁻(0.290) +  75 35 Qi⁺(0.897) => |⬆  85 40  U |=  85 39  H |⬇  85 38 Bt  [ ] try
  10  4 Af⁻(0.290) +  76 35 Qi∙(1.894) => |⬆  86 40  U |=  86 39  H |⬇  86 38 Bt
  10  4 Af⁻(0.290) +  77 35 Qi⁻(0.836) => |⬆  87 40  U |=  87 39  H |⬇  87 38 Bt
  10  4 Af⁻(0.290) +  78 35 Qi⁻(0.870) => |⬆  88 40  U |=  88 39  H |⬇  88 38 Bt
  10  4 Af⁻(0.290) +  73 36 Xy⁺(0.842) => |⬆  83 41 Sq |=  83 40  U |⬇  83 39  H
- 10  4 Af⁻(0.290) +  74 36 Xy⁺(0.874) => |⬆  84 41 Sq |=  84 40  U |⬇  84 39  H
- 10  4 Af⁻(0.290) +  75 36 Xy⁺(0.885) => |⬆  85 41 Sq |=  85 40  U |⬇  85 39  H
- 10  4 Af⁻(0.290) +  76 36 Xy⁺(0.914) => |⬆  86 41 Sq |=  86 40  U |⬇  86 39  H
+ 10  4 Af⁻(0.290) +  74 36 Xy⁺(0.874) => |⬆  84 41 Sq |=  84 40  U |⬇  84 39  H  [ ] try
+ 10  4 Af⁻(0.290) +  75 36 Xy⁺(0.885) => |⬆  85 41 Sq |=  85 40  U |⬇  85 39  H  [ ] try
+ 10  4 Af⁻(0.290) +  76 36 Xy⁺(0.914) => |⬆  86 41 Sq |=  86 40  U |⬇  86 39  H  [ ] try
  10  4 Af⁻(0.290) +  77 36 Xy∙(1.950) => |⬆  87 41 Sq |=  87 40  U |⬇  87 39  H
  10  4 Af⁻(0.290) +  78 36 Xy⁻(0.875) => |⬆  88 41 Sq |=  88 40  U |⬇  88 39  H
  10  4 Af⁻(0.290) +  79 36 Xy∙(1.838) => |⬆  89 41 Sq |=  89 40  U |⬇  89 39  H
  10  4 Af⁻(0.290) +  72 37 Gq⁺(0.706) => |⬆  82 42 Ua |=  82 41 Sq |⬇  82 40  U
  10  4 Af⁻(0.290) +  74 37 Gq⁺(0.798) => |⬆  84 42 Ua |=  84 41 Sq |⬇  84 40  U
- 10  4 Af⁻(0.290) +  75 37 Gq⁺(0.840) => |⬆  85 42 Ua |=  85 41 Sq |⬇  85 40  U
- 10  4 Af⁻(0.290) +  76 37 Gq⁺(0.863) => |⬆  86 42 Ua |=  86 41 Sq |⬇  86 40  U
- 10  4 Af⁻(0.290) +  77 37 Gq⁺(0.903) => |⬆  87 42 Ua |=  87 41 Sq |⬇  87 40  U
+ 10  4 Af⁻(0.290) +  75 37 Gq⁺(0.840) => |⬆  85 42 Ua |=  85 41 Sq |⬇  85 40  U  [ ] try
+ 10  4 Af⁻(0.290) +  76 37 Gq⁺(0.863) => |⬆  86 42 Ua |=  86 41 Sq |⬇  86 40  U  [ ] try
+ 10  4 Af⁻(0.290) +  77 37 Gq⁺(0.903) => |⬆  87 42 Ua |=  87 41 Sq |⬇  87 40  U  [ ] try
  10  4 Af⁻(0.290) +  78 37 Gq∙(1.950) => |⬆  88 42 Ua |=  88 41 Sq |⬇  88 40  U
  10  4 Af⁻(0.290) +  79 37 Gq⁻(0.885) => |⬆  89 42 Ua |=  89 41 Sq |⬇  89 40  U
  10  4 Af⁻(0.290) +  80 37 Gq∙(1.880) => |⬆  90 42 Ua |=  90 41 Sq |⬇  90 40  U
  10  4 Af⁻(0.290) +  73 38 Bt⁺(0.650) => |⬆           |=  83 42 Ua |⬇  83 41 Sq
  10  4 Af⁻(0.290) +  74 38 Bt⁺(0.722) => |⬆           |=  84 42 Ua |⬇  84 41 Sq
  10  4 Af⁻(0.290) +  75 38 Bt⁺(0.840) => |⬆           |=  85 42 Ua |⬇  85 41 Sq
- 10  4 Af⁻(0.290) +  76 38 Bt⁺(0.810) => |⬆           |=  86 42 Ua |⬇  86 41 Sq
+ 10  4 Af⁻(0.290) +  76 38 Bt⁺(0.810) => |⬆           |=  86 42 Ua |⬇  86 41 Sq  [ ] try
  10  4 Af⁻(0.290) +  77 38 Bt⁺(0.844) => |⬆           |=  87 42 Ua |⬇  87 41 Sq
  10  4 Af⁻(0.290) +  78 38 Bt⁺(0.895) => |⬆           |=  88 42 Ua |⬇  88 41 Sq
  10  4 Af⁻(0.290) +  79 38 Bt∙(1.954) => |⬆           |=  89 42 Ua |⬇  89 41 Sq
@@ -9657,7 +10132,7 @@ atom 14  8 Dx | Empty in Outer Shell	0-0-2-2-0-0-0-0
  12  5 Xl⁻(0.313) +  76 37 Gq⁺(0.863) => |⬆           |=  88 42 Ua |⬇  88 41 Sq
  12  5 Xl⁻(0.313) +  77 37 Gq⁺(0.903) => |⬆           |=  89 42 Ua |⬇  89 41 Sq
  12  5 Xl⁻(0.313) +  78 37 Gq∙(1.950) => |⬆           |=  90 42 Ua |⬇  90 41 Sq
- 12  5 Xl⁻(0.313) +  79 37 Gq⁻(0.885) => |⬆           |=  91 42 Ua |⬇  91 41 Sq
+ 12  5 Xl⁻(0.313) +  79 37 Gq⁻(0.885) => |⬆           |=  91 42 Ua |⬇  91 41 Sq <---NOPE +5000 decay reaction => Pq-12 + Gq-79
  12  5 Xl⁻(0.313) +  80 37 Gq∙(1.880) => |⬆           |=  92 42 Ua |⬇  92 41 Sq
  12  5 Xl⁻(0.313) +  73 38 Bt⁺(0.650) => |⬆           |=           |⬇  85 42 Ua
  12  5 Xl⁻(0.313) +  74 38 Bt⁺(0.722) => |⬆           |=           |⬇  86 42 Ua

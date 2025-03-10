@@ -1570,9 +1570,11 @@ foreach $line (<>){
   $line =~ s/^[^,]+,//; # remove the contract address
 
 
-  #
-  # is it a call to analyseReactions() or initiateReaction()
-  #
+########################################################################################################################
+#
+# is it a call to analyseReactions() or initiateReaction()
+#
+########################################################################################################################
 if ($line =~ /^0x0000000000000000000000000000000000000000000000000000000000000040/) {
 #LOG DATA: 0xfb8c7b71a6967e158db42cebd73e97c6139ca314a934d3b234091427686a78ef,4,7672927,0x369fe68b745762e5ab58821fd0764a12b013ac6c7ca8c7944a82a29edddb8e30,0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc,0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000010f0cf064dd592000000000000000000000000000000000000000000000000000000000000000000002ebbb91e512eeb497c0bfdfe429624f826c572214ce70f367972ab76ecb63f875f4a58b49b138a5dd8c5bae75b7e9b22476605d9700a0d2abf23d3f87da849b85,0xca76b0b22ff330b3394635a49de4b1ce2193cb9661943156f41635aedff5455f,0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26,0x00000000000000000000000000000000000000000000000000000000000056c6,0x000000000000000000000000620051b8553a724b742ae6ae9cc3585d29f49848
 
@@ -1798,9 +1800,11 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
  }
 
 
+ ########################################################################################################################
  # 
  # get reaction types
  # 
+ ########################################################################################################################
 
  # this might be tricky. There doesnt seem to be way to find it except its at the end of the data.
  
@@ -1859,9 +1863,11 @@ if (@reaction_types){
  $reaction_string = "none";
 }
 
+########################################################################################################################
 #
 # Can I get the base64 encoded molecule data?
 #
+########################################################################################################################
 
 while ($line =~  /(.{6})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/){
   my $char_count = eval "0x$1";
@@ -1928,15 +1934,18 @@ while ($line =~  /(.{6})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634
 
 }
 
+########################################################################################################################
 #
 # END of input line processing
 #
+########################################################################################################################
 
 
-
+########################################################################################################################
 #
 # Determine reactions performed for the first time and output data
 #
+########################################################################################################################
 my %seen_this_reaction_yet=();
 foreach my $otomro (sort {$a <=> $b} keys %db){
   $db{$otomro}{"first_instantiation"}=0;
@@ -1971,6 +1980,27 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
 
     my $this_pad = "         " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
 
+    # calculate NRG used
+    $db{$otomro}{"energy_used"} = $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"};
+
+### # [[[ determine effective reaction cost
+### 
+### 
+### # first must include cost of this reaction
+### my $effective_cost = $db{$otomro}{"energy_used"};
+### 
+### # now add cost of each input otom
+### foreach my $this_in ( @{ $db{$otomro}{"otoms_in"} } ){
+###    if (exists $mineable_otoms{$this_in}){
+###       # effective cost of mineables is zero
+###    }else{
+###       $effective_cost += 
+###    }
+### 
+### }
+### 
+### # ]]] determine effective reaction cost
+
 
 #   printf "| %8d | %-60.60s%s+ %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
     printf "| %8d%s| %s + %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
@@ -1997,19 +2027,36 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
       && ( keys %{ $db{$otomro}{"typehash"} } > 0          ) # only for those with actual successful reactions [ ] not sure this is working like i think.
       && ( $otomro >= 3050                                 ) # reaction algorithm was changed somewhere around OTOMRO 3050 so ignore those early ones
       ){
-     foreach my $one (@{ $db{$otomro}{"otoms_out_list"} }){  
-###print STDERR "DEBUG: otomro[$otomro] one[$one]\n";
+     foreach my $one_otom (@{ $db{$otomro}{"otoms_out_list"} }){  
+###print STDERR "DEBUG: otomro[$otomro] one_otom[$one_otom]\n";
       my $rounded_energy_input = sprintf "%.0f", $db{$otomro}{"energy_in"};
-      #[ ] Do i need to sort the inputs first so "Ju-1 + Hb-58" and "Hb-58 + Ju-1" are counted as the same
+      my $rounded_energy_used  = sprintf "%.0f", $db{$otomro}{"energy_used"};
+
       my $reaction_key_string = $db{$otomro}{"otoms_in"} ." => ". $db{$otomro}{"otoms_out"};
 
-      if ((! exists $recipes{$one}{$reaction_key_string}{nrg_in})
-      ||  (         $recipes{$one}{$reaction_key_string}{nrg_in} > $rounded_energy_input)){
+      # capture the lower and upper limits.
+      if ((! exists $recipes{$one_otom}{$reaction_key_string}{nrg_used})
+      ||  (         $recipes{$one_otom}{$reaction_key_string}{nrg_used} > $rounded_energy_used)){ # if the existing value in the hash is bigger than what we have now, replace it with this cheaper one
 
-        $recipes{$one}{$reaction_key_string}{otomro}=$otomro;
-        $recipes{$one}{$reaction_key_string}{nrg_in}=$rounded_energy_input;
+        $recipes{$one_otom}{$reaction_key_string}{otomro}=$otomro;
+        $recipes{$one_otom}{$reaction_key_string}{nrg_used}=$rounded_energy_used;
       }
-#[ ] I should be capturing the lower and upper limits.
+
+      # figure cheapest recipe
+      if ((! exists $recipes{$one_otom}{cheapest_nrg_used})
+      ||  (         $recipes{$one_otom}{cheapest_nrg_used} > $rounded_energy_used)){ # if the existing value in the hash is bigger than what we have now, replace it with this cheaper one
+
+        $recipes{$one_otom}{cheapest_otomro}               =$otomro;
+        $recipes{$one_otom}{cheapest_nrg_used}             =$rounded_energy_used;
+      }
+
+      # The NRG input will give us the max input that produces this output.
+      if ((! exists $recipes{$one_otom}{$reaction_key_string}{nrg_in_max})
+      ||  (         $recipes{$one_otom}{$reaction_key_string}{nrg_in_max} < $rounded_energy_input)){ # if the existing value in the hash is less than what we have now, replace it 
+
+        $recipes{$one_otom}{$reaction_key_string}{nrg_in_max}=$rounded_energy_input;
+      }
+
      }
    }
   }
@@ -2020,11 +2067,13 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
 
 
 
+########################################################################################################################
 #
 # recipe output
 # [ ] still need to filter out duplicates where they have the same input otoms but different energy
 # [ ] still want to filter out junky stuff like "| Aw-50 | M-22 + M-22 + M-22 + Aw-50 + Aw-50 + 350 =>  + M₂Aw(M-22>Aw-50,M-22) + M-22 + Aw-50"
 #     where the aw-50 was from the input and unused
+########################################################################################################################
 open(my $fh, ">", "newrecipes.otom") or die "Can't open output file newrecipes.otom: $!";
 
 foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
@@ -2037,7 +2086,7 @@ foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
      my $this_otomro=$recipes{$k}{$r}{otomro};
 #[ ] should/could we check here if it was a successful reaction or NONE?
 
-     my $s=sprintf "| %-5s | %s\n", $k, $db{$this_otomro}{otoms_in} ." + ". $recipes{$k}{$r}{nrg_in} ." => ". $db{$this_otomro}{otoms_out} ;
+     my $s=sprintf "| %-5s | %s\n", $k, $db{$this_otomro}{otoms_in} ." + ". $recipes{$k}{$r}{nrg_used} ." => ". $db{$this_otomro}{otoms_out_sorted} ;
      unless (exists $seenthis{$s}){
        printf $fh $s;
      }
@@ -2048,9 +2097,19 @@ foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
 close($fh);
 
 
+########################################################################################################################
+#
+# Output my optimized files.
+#
+########################################################################################################################
+
+
+
+########################################################################################################################
 #
 # do an assessment of any initiateReaction calls missing an analyseReactions tx or vice versa
 #
+########################################################################################################################
 my @missing_initiates=();
 foreach my $k (sort keys %db){
   unless (exists $db{$k}{"analyse_tx"}){
@@ -2085,9 +2144,11 @@ if (scalar(@missing_initiates)>0){
 
 
 
+########################################################################################################################
 #
 # finally how many of each thing has been produced through reactions?
 #
+########################################################################################################################
 print STDERR "\n";
 print STDERR "How many of each thing has been produced through reactions?\n";
 print STDERR "OTOM ISOTOPES: ";
