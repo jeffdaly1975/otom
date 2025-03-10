@@ -93,8 +93,45 @@ endfunction
 
 Pq-10 + Ic-51 =>  ⬇ Ny-61 Because I think it makes Pw-61 but decays to Ny-61
 try:
-[ ] Pq-10 + Ic-52 => ?⬇ Ny-62? Pw-62?
-[ ] Pq-10 + Ic-53 => ?⬇ Ny-63? Pw-63?
+[r] Pq-10 + Ic-52 +1500 => ?⬇ Ny-62? Pw-62? <---makes Ny-62 using 1080.39 nuclear+decay
+[ ] Pq-10 + Ic-53 +1500 => ?⬇ Ny-63? Pw-63?
+
+|*27 14 Zq | Zq-27 |  1  1 Ju + 26 13  S +  697 => 27 14 Zq
+|*53 27 Ic | Ic-53 | 26 13  S + 27 14 Zq + 1691 => 53 27 Ic
+
+These make Sq-79 by making U-79 which decays
+|    29936*|  D-32⁺ + Nb-47⁺  +  3300 => ⬇ Sq-79
+|    26292 | Pt-22⁺ + Hb-57⁺  +  2117 => ⬇ Sq-79
+
+Would any of these make a Ua-* that doesn't decay?
+[ ]  D-32⁺ + Nb-48⁺  +  3500 =>?⬇ Sq-80 or Ua-80
+[ ]  D-32⁺ + Nb-49⁺  +  3500 =>?⬇ Sq-81 or Ua-81
+[f]  D-32⁺ + Nb-50⁺  +  3500 =>?⬇ Sq-82 or Ua-82  <--NOPE makes Sq-82
+
+[ ] Pt-22⁺ + Hb-58⁺  +  3000 =>?⬇ Sq-80 or Ua-80
+[ ] Pt-22⁺ + Hb-59⁺  +  3000 =>?⬇ Sq-81 or Ua-81
+[ ] Pt-22⁺ + Hb-60⁺  +  3000 =>?⬇ Sq-82 or Ua-82
+
+[ ]  D-33⁺ + Nb-47⁺  +  3500 =>?⬇ Sq-80 or Ua-80
+[ ]  D-33⁺ + Nb-48⁺  +  3500 =>?⬇ Sq-81 or Ua-81
+[ ]  D-33⁺ + Nb-49⁺  +  3500 =>?⬇ Sq-82 or Ua-82
+
+[ ] Pt-23⁺ + Hb-57⁺  +  3000 =>?⬇ Sq-80 or Ua-80
+[ ] Pt-23⁺ + Hb-58⁺  +  3000 =>?⬇ Sq-81 or Ua-81
+[ ] Pt-23⁺ + Hb-59⁺  +  3000 =>?⬇ Sq-82 or Ua-82
+
+
+Pq-14⁻ + Fw-25⁻ + 1002 => D-39 so maybe:
+[ ] Pq-14 + Fw-26 + 1200 => ? D-40 or Fj-40?
+
+
+
+|  M-23⁻ + Fw-24⁻                            +     5191 =>   E-47                                                                   +    3623.72 |    1567.28 | nuclear                      
+|  M-23⁻ + Fw-25⁻                            +     1400 =>   E-48                                                                   +      33.71 |    1366.29 | nuclear                      
+|  M-23⁻ + Fw-26⁻                            +     5000 => ⬆ A-49                                                                   +    3480.50 |    1519.50 | decay, nuclear               
+
+| Pq-14⁻ + Xc-34⁻                            +     1229 =>   E-48                                                                   +       1.85 |    1227.15 | nuclear                      
+| Pq-15⁻ + Xc-34⁻                            +     1200 => ⬆ A-49                                                                   +      89.54 |    1110.46 | decay, nuclear               
 
 2025-03-09 Mar.Sun 13:21:16 Present otom inventory of 742 otoms:
   1   A-48
