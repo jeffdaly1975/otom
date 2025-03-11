@@ -1,3 +1,15 @@
+2025-03-11 Mar.Tue 00:33:40 [ ] Why havent we tried Ju-2 + Qi-78 or Ju-3 + Qi-78 since:
+|     7972*|  Ju-1∙ + Qi-78⁻                            +     3000 =>   Xy-79                                                                  +    1620.12 |    1379.88 | nuclear                      | 0x302ae18228414d03b25ebe0d131720780f65baa5 | 0x894971b86b54e7b7e3ebe698115bf18b6894d18a6014a5457e5e311d2f6ba06d | 0x2de450ba09075646076898a01d7c7916729a846aa21ae8c88d65273150ecea8e |
+[ ] Ju-2 + Qi-78 + ? => Xy-80 or decay to Gq-80?
+[ ] Ju-3 + Qi-78 + ? => Xy-81 or decay to Gq-81?
+
+
+2025-03-11 Mar.Tue 00:07:30
+If 
+|    15241 |   W-4∙ + Dx-15⁺                            +      600 =>   M-19                                                                   +      11.66 |     588.34 | nuclear                      | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x48a8376820c3b4d2d2157d99ff8d3f90c821583b47f5824dd8129108bcd84c7b | 0x2d45ea1ab5d8c4851f1dde4908f292b892eee97f2c5ac214b5d149a77898050a |
+Then does W-4∙ + Dx-14⁺ + 1000 => M-18 or does it decay to Pm-18
+[ ] W-4∙ + Dx-14⁺ + 1000 => ? M-18 ? Pm-18? 
+
 2025-03-10 Mar.Mon 12:40:59 vim code
 
 " I want showcmd on so I can see what the fuck I'm doing
