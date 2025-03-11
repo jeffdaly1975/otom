@@ -459,6 +459,7 @@ my $c=1;
 my %hexdict=();
 my %sortorder=();
 my %recipes=();
+my %cheap_hash=();
 my %decaytype=();
 my %stabilityhash=();
 my %discovered_otoms=();
@@ -2089,11 +2090,11 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
       }
 
       # figure cheapest recipe
-      if ((! exists $recipes{$one_otom}{cheapest_nrg_used})
-      ||  (         $recipes{$one_otom}{cheapest_nrg_used} > $rounded_energy_used)){ # if the existing value in the hash is bigger than what we have now, replace it with this cheaper one
+      if ((! exists $cheap_hash{$one_otom}{cheapest_nrg_used})
+      ||  (         $cheap_hash{$one_otom}{cheapest_nrg_used} > $rounded_energy_used)){ # if the existing value in the hash is bigger than what we have now, replace it with this cheaper one
 
-        $recipes{$one_otom}{cheapest_otomro}               =$otomro;
-        $recipes{$one_otom}{cheapest_nrg_used}             =$rounded_energy_used;
+        $cheap_hash{$one_otom}{cheapest_otomro}   =$otomro;
+        $cheap_hash{$one_otom}{cheapest_nrg_used} =$rounded_energy_used;
       }
 
       # The NRG input will give us the max input that produces this output.
@@ -2118,6 +2119,7 @@ else{
 print STDERR "\n\nDEBUG: NOW TO DETERMINE EFFECTIVE REACTION COSTS\n\n";
 
 foreach my $otomro (sort {$a <=> $b} keys %db){
+  print  STDERR "\n";
   printf STDERR "DEBUG: OTOMRO %7s\n", $otomro;
 
   if (! exists $db{$otomro}{typehash} || scalar( keys ($db{$otomro}{typehash})) <= 0){
@@ -2137,9 +2139,9 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
         print STDERR "DEBUG: add 0 for mineable [$this_in]\n";
 	# effective cost of mineables is zero
      }else{
-        warn "DEBUG: WARNING no key found for \$recipes{$this_in}{cheapest_nrg_used}\n" unless exists $recipes{$this_in}{"cheapest_nrg_used"};
-        print STDERR "DEBUG: add ". $recipes{$this_in}{cheapest_nrg_used} ." for non-mineable [$this_in]\n";
-	$effective_cost += $recipes{$this_in}{cheapest_nrg_used};
+        warn "DEBUG: WARNING no key found for \$cheap_hash{$this_in}{cheapest_nrg_used}\n" unless exists $cheap_hash{$this_in}{"cheapest_nrg_used"};
+        print STDERR "DEBUG: add ". $cheap_hash{$this_in}{cheapest_nrg_used} ." for non-mineable [$this_in]\n";
+	$effective_cost += $cheap_hash{$this_in}{cheapest_nrg_used};
      }
   }
 
@@ -2149,6 +2151,18 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
 
 # ]]] determine effective reaction cost
 
+
+########################################################################################################################
+# use Data::Dumper to dump these for debug inspection
+########################################################################################################################
+
+open(my $dump, ">", "dumped.db.txt") or die;
+print $dump Dumper(%db);
+close $dump;
+
+open(my $dump2, ">", "dumped.recipes.txt") or die;
+print $dump2 Dumper(%recipes);
+close $dump2;
 
 
 
@@ -2271,13 +2285,5 @@ foreach my $k (sort { $discovered_molecules{$b} <=> $discovered_molecules{$a} ||
 print STDERR "\nDUPLICATE INPUT LINES SKIPPED: $skip_duplicate_input\n";
 
 
-
-open(my $dump, ">", "dumped.db.txt") or die;
-print $dump Dumper(%db);
-close $dump;
-
-open(my $dump2, ">", "dumped.recipes.txt") or die;
-print $dump2 Dumper(%recipes);
-close $dump2;
 
 

@@ -1,14 +1,41 @@
-2025-03-11 Mar.Tue 00:33:40 [ ] Why havent we tried Ju-2 + Qi-78 or Ju-3 + Qi-78 since:
-|     7972*|  Ju-1∙ + Qi-78⁻                            +     3000 =>   Xy-79                                                                  +    1620.12 |    1379.88 | nuclear                      | 0x302ae18228414d03b25ebe0d131720780f65baa5 | 0x894971b86b54e7b7e3ebe698115bf18b6894d18a6014a5457e5e311d2f6ba06d | 0x2de450ba09075646076898a01d7c7916729a846aa21ae8c88d65273150ecea8e |
-[ ] Ju-2 + Qi-78 + ? => Xy-80 or decay to Gq-80?
-[ ] Ju-3 + Qi-78 + ? => Xy-81 or decay to Gq-81?
+2025-03-11 Mar.Tue 12:29:44 Examining known isotopes vs undiscovered isotopes identified in Kjetil's chart, it seems apparent that nothing below that line (Qi-78 Xy-79 Gq-80 Bt-81 H-82 U-83 Sq-84 Ua-85) has been discovered. Perhaps its arbitrarily enforced in the code.
 
+QMA had some useful insight. He pointed out that those all have 43 neutrons. Wow, it seems that anything with more than 43 neutrons is not discoverable. That's a big deal to acknowledge.
+
+::INFO:: It might not be possible to discover and isotopes with more than 43 neutrons.
+
+So none of these can be discovered:
+Jx-73⁻ | Hb-74⁻ | At-75⁻ | Ny-76⁻ | Pw-77⁻ | Gk-78⁻ | Qi-79⁻ | Xy-88  | Gq-81⁻ | Bt-82⁻ |  H-83ª |  U-84ª | Sq-85ª | Ua-86ª |
+       | Hb-75⁻ | At-76⁻ | Ny-77⁻ | Pw-78⁻ | Gk-79⁻ | Qi-80⁻ | Xy-872 | Gq-82⁻ | Bt-83⁻ |  H-84⁻ |  U-85⁻ | Sq-86∙ | Ua-87⁺ |
+       |        | At-77⁻ | Ny-78⁻ | Pw-79⁻ | Gk-80⁻ | Qi-81⁻ | Xy-866 | Gq-83ª | Bt-84ª |  H-85ª |  U-86⁻ | Sq-87ª | Ua-88ª |
+       |        | At-78⁻ | Ny-79⁻ | Pw-80⁻ | Gk-81⁻ | Qi-82⁻ | Xy-858 | Gq-84⁻ | Bt-85⁻ |  H-86⁻ |  U-87⁻ | Sq-88∙ | Ua-89⁻ |
+       |        |        | Ny-80⁻ | Pw-81⁻ | Gk-82⁻ | Qi-83⁻ | Xy-852 | Gq-85⁻ | Bt-86⁻ |  H-87⁻ |  U-88⁻ | Sq-89∙ | Ua-90⁻ |
+       |        |        |        | Pw-82⁻ | Gk-83⁻ | Qi-84⁻ | Xy-844 | Gq-86⁻ | Bt-87⁻ |  H-88⁻ |  U-89⁻ | Sq-90∙ | Ua-91⁻ |
+       |        |        |        | Pw-83⁻ | Gk-84⁻ | Qi-85⁻ | Xy-837 | Gq-87⁻ | Bt-88⁻ |  H-89⁻ |  U-90⁻ | Sq-91∙ | Ua-92⁻ |
+       |        |        |        |        | Gk-85⁻ | Qi-86⁻ | Xy-829 | Gq-88⁻ | Bt-89⁻ |  H-90⁻ |  U-91⁻ | Sq-92∙ | Ua-93⁻ |
+       |        |        |        |        |        | Qi-87⁻ | Xy-821 | Gq-89⁻ | Bt-90⁻ |  H-91⁻ |  U-92⁻ | Sq-93⁻ | Ua-94⁻ |
+       |        |        |        |        |        |        | Xy-811 | Gq-90⁻ | Bt-91⁻ |  H-92⁻ |  U-93⁻ | Sq-94⁻ | Ua-95⁻ |
+       |        |        |        |        |        |        | Xy-903 | Gq-91⁻ | Bt-92⁻ |  H-93⁻ |  U-94⁻ | Sq-95⁻ | Ua-96⁻ |
+       |        |        |        |        |        |        |        | Gq-92⁻ | Bt-93⁻ |  H-94⁻ |  U-95⁻ | Sq-96⁻ | Ua-97⁻ |
+       |        |        |        |        |        |        |        |        | Bt-94⁻ |  H-95⁻ |  U-96⁻ | Sq-97⁻ | Ua-98⁻ |
+       |        |        |        |        |        |        |        |        | Bt-95⁻ |  H-96⁻ |  U-97⁻ | Sq-98⁻ | Ua-99⁻ |
+       |        |        |        |        |        |        |        |        |        |  H-97⁻ |  U-98⁻ | Sq-99⁻ |Ua-100⁻ |
+       |        |        |        |        |        |        |        |        |        |        |  U-99⁻ |Sq-100⁻ |Ua-101⁻ |
+       |        |        |        |        |        |        |        |        |        |        | U-100⁻ |Sq-101⁻ |Ua-102⁻ |
+       |        |        |        |        |        |        |        |        |        |        |        |Sq-102⁻ |Ua-103⁻ |
+       |        |        |        |        |        |        |        |        |        |        |        |Sq-103⁻ |Ua-104⁻ |
+       |        |        |        |        |        |        |        |        |        |        |        |        |Ua-105⁻ |
+
+2025-03-11 Mar.Tue 00:33:40 [f] Why havent we tried Ju-2 + Qi-78 or Ju-3 + Qi-78 since:
+|     7972*|  Ju-1∙ + Qi-78⁻                            +     3000 =>   Xy-79                                                                  +    1620.12 |    1379.88 | nuclear                      | 0x302ae18228414d03b25ebe0d131720780f65baa5 | 0x894971b86b54e7b7e3ebe698115bf18b6894d18a6014a5457e5e311d2f6ba06d | 0x2de450ba09075646076898a01d7c7916729a846aa21ae8c88d65273150ecea8e |
+[f] Ju-2 + Qi-78 + 3000 => Xy-80 or decay to Gq-80? <---NO REACTION!?!?
+[f] Ju-3 + Qi-78 + 3500 => Xy-81 or decay to Gq-81? <---NO REACTION!?!? Man that's annoying.
 
 2025-03-11 Mar.Tue 00:07:30
 If 
 |    15241 |   W-4∙ + Dx-15⁺                            +      600 =>   M-19                                                                   +      11.66 |     588.34 | nuclear                      | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x48a8376820c3b4d2d2157d99ff8d3f90c821583b47f5824dd8129108bcd84c7b | 0x2d45ea1ab5d8c4851f1dde4908f292b892eee97f2c5ac214b5d149a77898050a |
 Then does W-4∙ + Dx-14⁺ + 1000 => M-18 or does it decay to Pm-18
-[ ] W-4∙ + Dx-14⁺ + 1000 => ? M-18 ? Pm-18? 
+[f] W-4∙ + Dx-14⁺ + 1000 => ? M-18 ? Pm-18? <---NOPE makes Pm-18
 
 2025-03-10 Mar.Mon 12:40:59 vim code
 
@@ -9448,7 +9475,7 @@ Those point to a hash with the OTOMRO number for the most efficient reaction
 Its quite unstable and decay type is beta+ so it will likely drop a proton as I saw when trying W-4
 
   1  1 Ju∙(1.000)|◼◻◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 15 10  M |= 15  9 Pm |⬇ 15  8 Dx
-  2  1 Ju∙(1.000)|◼◻◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 16 10  M |= 16  9 Pm |⬇ 16  8 Dx
+  2  1 Ju∙(1.000)|◼◻◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 16 10  M |= 16  9 Pm |⬇(16  8 Dx)   makes Dx-16
   3  1 Ju∙(1.000)|◼◻◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 17 10  M |= 17  9 Pm |⬇ 17  8 Dx
   4  2  W∙(1.000)|◼◼◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 18 11 Fw |= 18 10  M |⬇(18  9 Pm)[f] might make M-18 <---NOPE MAKES Pm-18
   5  2  W∙(1.000)|◼◼◻|    +  14  8 Dx⁺(0.334)|◼◻◻ ◻◻|     => |⬆ 19 11 Fw |= 19 10  M |⬇ 19  9 Pm
@@ -9616,7 +9643,7 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  57 26 Xk⁻(0.904)|◻ ◼◻ ◼◻|    => |⬆ 71 35 Qi |= 71 34 Gk |⬇ 71 33 Pw
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  58 26 Xk⁻(0.859)|◻ ◼◻ ◼◻|    => |⬆ 72 35 Qi |= 72 34 Gk |⬇ 72 33 Pw
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  59 26 Xk⁻(0.781)|◻ ◼◻ ◼◻|    => |⬆ 73 35 Qi |= 73 34 Gk |⬇ 73 33 Pw
- 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  51 27 Ic⁺(0.803)|◼ ◼◻ ◼◻|    => |⬆ 65 36 Xy |= 65 35 Qi |⬇ 65 34 Gk [r] try <---SUCCESS
+ 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  51 27 Ic⁺(0.803)|◼ ◼◻ ◼◻|    => |⬆ 65 36 Xy |= 65 35 Qi |⬇(65 34 Gk)[r] try <---SUCCESS
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  52 27 Ic⁺(0.889)|◼ ◼◻ ◼◻|    => |⬆ 66 36 Xy |= 66 35 Qi |⬇ 66 34 Gk
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  53 27 Ic⁺(0.973)|◼ ◼◻ ◼◻|    => |⬆ 67 36 Xy |= 67 35 Qi |⬇ 67 34 Gk
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  54 27 Ic∙(1.011)|◼ ◼◻ ◼◻|    => |⬆ 68 36 Xy |= 68 35 Qi |⬇ 68 34 Gk
@@ -9647,7 +9674,7 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  63 29 Jx⁻(0.884)|◼ ◼◼ ◼◼|    => |⬆ 77 38 Bt |= 77 37 Gq |⬇ 77 36 Xy
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  64 29 Jx⁻(0.832)|◼ ◼◼ ◼◼|    => |⬆ 78 38 Bt |= 78 37 Gq |⬇ 78 36 Xy
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  65 29 Jx⁻(0.787)|◼ ◼◼ ◼◼|    => |⬆ 79 38 Bt |= 79 37 Gq |⬇ 79 36 Xy
- 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  57 30 Hb⁺(0.807)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 71 39  H |= 71 38 Bt |⬇ 71 37 Gq [r] <--SUCCESS makes Gq-71
+ 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  57 30 Hb⁺(0.807)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 71 39  H |= 71 38 Bt |⬇(71 37 Gq)[r] <--SUCCESS makes Gq-71
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  58 30 Hbª(0.819)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 72 39  H |= 72 38 Bt |⬇ 72 37 Gq
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  59 30 Hbª(0.845)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 73 39  H |= 73 38 Bt |⬇ 73 37 Gq
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  60 30 Hbª(0.887)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 74 39  H |= 74 38 Bt |⬇ 74 37 Gq
@@ -9657,7 +9684,7 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  64 30 Hbª(0.908)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 78 39  H |= 78 38 Bt |⬇ 78 37 Gq
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  65 30 Hbª(0.870)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 79 39  H |= 79 38 Bt |⬇ 79 37 Gq
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  66 30 Hbª(0.840)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 80 39  H |= 80 38 Bt |⬇ 80 37 Gq
- 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  67 30 Hbª(0.781)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 81 39  H |= 81 38 Bt |⬇ 81 37 Gq [f] try
+ 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  67 30 Hbª(0.781)|◼◻ ◻◻◻ ◻◻◻| => |⬆ 81 39  H |=(81 38 Bt)|⬇ 81 37 Gq [r] try ---Makes Bt-81
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  60 31 At⁺(0.766)|◼◻ ◻◻◻ ◼◻◻| => |⬆ 74 40  U |= 74 39  H |⬇ 74 38 Bt
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  61 31 Atª(0.825)|◼◻ ◻◻◻ ◼◻◻| => |⬆ 75 40  U |= 75 39  H |⬇ 75 38 Bt
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  62 31 Atª(0.851)|◼◻ ◻◻◻ ◼◻◻| => |⬆ 76 40  U |= 76 39  H |⬇ 76 38 Bt
@@ -9677,7 +9704,7 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  67 32 Nyª(0.888)|◼◼ ◻◻◻ ◼◻◻| => |⬆ 81 41 Sq |= 81 40  U |⬇ 81 39  H
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  68 32 Nyª(0.885)|◼◼ ◻◻◻ ◼◻◻| => |⬆ 82 41 Sq |= 82 40  U |⬇ 82 39  H
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  69 32 Nyª(0.859)|◼◼ ◻◻◻ ◼◻◻| => |⬆ 83 41 Sq |= 83 40  U |⬇ 83 39  H [ ] try
- 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  70 32 Ny⁻(0.842)|◼◼ ◻◻◻ ◼◻◻| => |⬆ 84 41 Sq |= 84 40  U |⬇ 84 39  H [ ] try
+ 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  70 32 Ny⁻(0.842)|◼◼ ◻◻◻ ◼◻◻| => |⬆ 84 41 Sq |= 84 40  U |⬇ 84 39  H [f] try <---decays to Zz-14 + Ny-70 with 7000 NRG
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  71 32 Ny⁻(0.804)|◼◼ ◻◻◻ ◼◻◻| => |⬆ 85 41 Sq |= 85 40  U |⬇ 85 39  H [ ] try
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  72 32 Ny⁻(0.788)|◼◼ ◻◻◻ ◼◻◻| => |⬆ 86 41 Sq |= 86 40  U |⬇ 86 39  H [ ] try
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  64 33 Pw⁺(0.734)|◼◼ ◼◻◻ ◼◻◻| => |⬆ 78 42 Ua |= 78 41 Sq |⬇ 78 40  U
@@ -9697,13 +9724,13 @@ Its quite unstable and decay type is beta+ so it will likely drop a proton as I 
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  69 34 Gkª(0.853)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 83 43 .. |= 83 42 Ua |⬇ 83 41 Sq
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  70 34 Gkª(0.879)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 84 43 .. |= 84 42 Ua |⬇ 84 41 Sq
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  71 34 Gkª(0.879)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 85 43 .. |= 85 42 Ua |⬇ 85 41 Sq [ ] try
- 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  72 34 Gk∙(1.774)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 86 43 .. |= 86 42 Ua |⬇ 86 41 Sq [ ] try
+ 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  72 34 Gk∙(1.774)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 86 43 .. |= 86 42 Ua |⬇ 86 41 Sq [f] try <--makes Zz-14 + Gk-72 by decay
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  73 34 Gk⁻(0.874)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 87 43 .. |= 87 42 Ua |⬇ 87 41 Sq [ ] try
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  74 34 Gk∙(1.762)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 88 43 .. |= 88 42 Ua |⬇ 88 41 Sq [ ] try
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  75 34 Gk∙(1.839)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 89 43 .. |= 89 42 Ua |⬇ 89 41 Sq [ ] try
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  76 34 Gk⁻(0.798)|◼◼ ◼◼◻ ◼◻◻| => |⬆ 90 43 .. |= 90 42 Ua |⬇ 90 41 Sq [ ] try
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  67 35 Qi⁺(0.654)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 81 44 .. |= 81 43 .. |⬇ 81 42 Ua [*] try
- 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  68 35 Qi⁺(0.712)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 82 44 .. |= 82 43 .. |⬇ 82 42 Ua [F] try<--NOPE THEY BOTH DECAYED to Zz-14 and Gk-68
+ 14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  68 35 Qi⁺(0.712)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 82 44 .. |= 82 43 .. |⬇ 82 42 Ua [f] try<--NOPE THEY BOTH DECAYED to Zz-14 and Gk-68
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  69 35 Qi⁺(0.775)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 83 44 .. |= 83 43 .. |⬇ 83 42 Ua
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  70 35 Qi⁺(0.807)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 84 44 .. |= 84 43 .. |⬇ 84 42 Ua
  14  8 Dx⁺(0.334)|◼◻◻ ◻◻| +  71 35 Qi⁺(0.847)|◼◼ ◼◼◻ ◼◼◻| => |⬆ 85 44 .. |= 85 43 .. |⬇ 85 42 Ua

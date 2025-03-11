@@ -12,13 +12,15 @@ syn match TodoCurrent  /\[\.\]/    " this one is in progress
 syn match TodoFailed   /\[f\]/     " this one failed
 syn match TodoSuccess  /\[r\]/     " this reaction completed successfully
 syn match TodoComplete /\[c\]/     " this one is complete
+syn match Info         /::INFO::/
 
 hi TodoBlank    guibg=lightyellow  ctermbg=lightyellow
-hi TodoNext     guibg=orange       ctermbg=red
+hi TodoNext     guibg=orange       ctermbg=red          guifg=white  ctermfg=white
 hi TodoCurrent  guibg=cyan         ctermbg=cyan
-hi TodoFailed   guibg=magenta      ctermbg=magenta
+hi TodoFailed   guibg=magenta      ctermbg=magenta      guifg=white  ctermfg=white
 hi TodoSuccess  guibg=lightgreen   ctermbg=lightgreen
 hi TodoComplete guibg=lightgreen   ctermbg=lightgreen
+hi Info         guibg=cyan         ctermbg=cyan
 
 
 let decay_text_alpha      = "alpha"
