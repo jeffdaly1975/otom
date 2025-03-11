@@ -5,6 +5,7 @@
 
 # [ ] I should capture all the token (otom/molecule) base64 encoded stuff as a db that also is printed out to a file
 
+use Data::Dumper;
 use MIME::Base64;
 use bignum;
 
@@ -793,6 +794,7 @@ $db{"7152"}
           'initiate_tx'    => '0x2295ba65eab68b4e5009a09a8649a837f46c3611493623d887a6eb55f30aab8e',
           'analyse_tx'     => '0xe894d44cf5604d2282d4989234da0820d2396144765c45bb3be92b2b414e43fa',
           'type'           => 'chemical, decay',
+          'typehash'       => { "chemical"=>1, "decay"=>1},
           'chemist'        => '0x9fCa5cb296333aa780D3367951F766aB3D7d4098',
           'subscripts'     => 0,
         };
@@ -812,6 +814,7 @@ $db{"7153"}
           'initiate_tx'    => '0x925ee8678c4f3aab60efd6b2c43b8f3f9fe00566e2f802aa38d4fb8577448397',
           'analyse_tx'     => '0x0ce6ee95c23fba4580ecb2bcc82d96fc2a2a28a7c8246419c0cc98e9278cb45f',
           'type'           => 'decay',
+          'typehash'       => { "decay"=>1},
           'chemist'        => '0xcf87bf72d82a60A6b700130cA05188bDD89dA501',
           'subscripts'     => 0,
         };
@@ -831,6 +834,7 @@ $db{"7158"}
           'initiate_tx'    => '0xc7095c10caf899076f8f3f3b5083037070e8551bd54549329c08a79972375400',
           'analyse_tx'     => '0x16d96260ce5542be43794f5b65e659c5029ec2d23c782360500877cf9324681c',
           'type'           => 'chemical, decay',
+          'typehash'       => { "chemical"=>1, "decay"=>1},
           'chemist'        => '0x9CED3bDC0e6ff65C3f072b0b5527184843Ed4eaf',
           'subscripts'     => 0,
         };
@@ -850,6 +854,7 @@ $db{"7159"}
           'initiate_tx'    => '0x1ffe2f91276aed6a9a85514b840bc96859cc0c0c6037b2aa2f700f6a41b23bc9',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
           'type'           => 'decay',
+          'typehash'       => { "decay"=>1},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
@@ -869,6 +874,7 @@ $db{"7160"}
           'initiate_tx'    => '0xca8e54cd53af9dff60a223c9968cf93c6509224af30bd94fdb87b67cf554bb59',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
           'type'           => 'chemical',
+          'typehash'       => { "chemical"=>1},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
@@ -907,6 +913,7 @@ $db{"7162"}
           'initiate_tx'    => '0x9dd04eff18eb997bfd1077e1df8f30dfdeaad519a28d0de8fb40f797465e2c65',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
           'type'           => 'chemical',
+          'typehash'       => { "chemical"=>1},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 1,
         };
@@ -926,6 +933,7 @@ $db{"7163"}
           'initiate_tx'    => '0x1b780ad18bfd4d18292d2c63e5b659af31a7bad12bb1c7651631db7dc7912e4f',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
           'type'           => 'decay',
+          'typehash'       => { "decay"=>1},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
@@ -945,6 +953,7 @@ $db{"7164"}
           'initiate_tx'    => '0x5bc87b29c64824bbfff5825d9b64f7e6cd768cdcf453b805a5b07041e06aeef3',
           'analyse_tx'     => '0x82c0c6abe2fb59ffc85f5044a62a75868c83468598b02afc1c8109500e71f8e7',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x42934420b772eD2c77526C7670EE85b9d63F81B8',
           'subscripts'     => 0,
         };
@@ -964,6 +973,7 @@ $db{"7165"}
           'initiate_tx'    => '0x2364ed5ec66f0b480ad37bc1e889be9443855f3925743e4965ee4c146451b49d',
           'analyse_tx'     => '0xb6eae42cca9f71e68feeca9528ac745893c9dcc1b03f20b53026fa89f2c89c86',
           'type'           => 'chemical, decay',
+          'typehash'       => { "chemical"=>1, "decay"=>1},
           'chemist'        => '0x58B249A73452F624D473459FA084792704e9AE36',
           'subscripts'     => 0,
         };
@@ -983,6 +993,7 @@ $db{"7166"}
           'initiate_tx'    => '0x9011226ad20feee3d2758b4055049907dd346490d74cd5084b95ca65ad8c4052',
           'analyse_tx'     => '0xf9791cd1d34b339796a0e7471766a3ea000ebc142a1c968614a0aca2d7769bbd',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0xaaa9ACa0d2AFF48aAB572DE4d24088A80F2aE452',
           'subscripts'     => 0,
         };
@@ -1002,6 +1013,7 @@ $db{"7167"}
           'initiate_tx'    => '0x159e0058dbbbfe8be822eb27ebdfd40aa2cd9a234f9cc8c90b590286b8853abb',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
@@ -1021,6 +1033,7 @@ $db{"7168"}
           'initiate_tx'    => '0x3b6d47f81fbe7402d6ce7c287a262f19b62d1f665c043b250adecf8eb34d3f0a',
           'analyse_tx'     => '0xb6caf98f8b52588d829b017e1a9206ac069e47fe337da359edba794d415938fd',
           'type'           => 'chemical',
+          'typehash'       => { "chemical"=>1},
           'chemist'        => '0x8c976B2d3725FE86443a0D443F71ECBCf297e577',
           'subscripts'     => 1,
         };
@@ -1062,6 +1075,7 @@ $db{"7170"}
           'chemist'        => '0x9CED3bDC0e6ff65C3f072b0b5527184843Ed4eaf',
           'subscripts'     => 0,
         };
+
 $db{"7171"}
       = {
           'otoms_in'       => 'Pq-13∙ + Pq-13∙ + Pq-10⁺ + Gy-34∙ + Xc-32∙',
@@ -1078,6 +1092,7 @@ $db{"7171"}
           'initiate_tx'    => '0x5086778bddddf4b4a4ca37b4a7b98e363940fe870efa3cd5f7b4e27fe1124f32',
           'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
           'type'           => 'decay',
+          'typehash'       => { "decay"=>1},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
@@ -1116,6 +1131,7 @@ $db{"7173"}
           'initiate_tx'    => '0x2cc1dce9c6d754c637041680ba1390810922d494706737ccd89fc6f6e8f5b2cc',
           'analyse_tx'     => '0xe732e3c7187f2a34191f374b92bff5161bdf2013908d9e8a88a3fcfbc2180268',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x8c976B2d3725FE86443a0D443F71ECBCf297e577',
           'subscripts'     => 0,
         };
@@ -1135,6 +1151,7 @@ $db{"7174"}
           'initiate_tx'    => '0xaac2297db734895e6fa8d68a01408fcf23199197af8532f0f2d04d726fbd9fdc',
           'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
           'type'           => 'chemical, decay',
+          'typehash'       => { "chemical"=>1, "decay"=>1},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
@@ -1154,6 +1171,7 @@ $db{"7175"}
           'initiate_tx'    => '0xb0f84370d644b3e1734aac0dcadc052d92da790169749b7be68dde3397965805',
           'analyse_tx'     => '0x592c50cdab16af0c9303ea0a554bda2c873b73480dc5868e43b32549a2d7f693',
           'type'           => 'chemical, decay',
+          'typehash'       => { "chemical"=>1, "decay"=>1},
           'chemist'        => '0x58B249A73452F624D473459FA084792704e9AE36',
           'subscripts'     => 1,
         };
@@ -1173,6 +1191,7 @@ $db{"7176"}
           'initiate_tx'    => '0xbd36fde1477deb0c5117b854f1271ed9af1136698b247baf7108a149175c2996',
           'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
           'type'           => 'decay',
+          'typehash'       => { "decay"=>1},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
@@ -1192,6 +1211,7 @@ $db{"7177"}
           'initiate_tx'    => '0xe37c39b6ab4923ce8591505f4f48fda29b768778469503b4bd182d3a2f8d4811',
           'analyse_tx'     => '0x1a212acb9f570443da31212c4259b1dfc64af4af75dfb1332c74d5cf71846384',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x4B92e36CeD303EEB59Bd6c5daC555b2be13Fe2B6',
           'subscripts'     => 1,
         };
@@ -1230,6 +1250,7 @@ $db{"8725"}
           'initiate_tx'    => '0x1827ad6a3467941a790cf0b1129b142d01ac91825b0cd60efe6591d284849e9b',
           'analyse_tx'     => '0x6df0a155eb4e51baa0b375cb2ad1f1e508569737ce9f1b07d912da6fb4cbed50',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x52d11c3Ff033231F74740873917A3c854e77D883',
           'subscripts'     => 0,
         };
@@ -1249,6 +1270,7 @@ $db{"8726"}
           'initiate_tx'    => '0xa59c1579a31e803f67845cf4c94bd75b818a8de7ce625fd027cdfa8d15e01414',
           'analyse_tx'     => '0xd1b755f41055cd7c9227da9301fbcde6e0623461f97e43fe6c4184a13294f369',
           'type'           => 'metallic',
+          'typehash'       => { "metallic"=>1},
           'chemist'        => '0x17d95EEaF723ea844621336bF096bAaEa148b896',
           'subscripts'     => 0,
         };
@@ -1268,6 +1290,7 @@ $db{"8727"}
           'initiate_tx'    => '0xf3248d5d1d50fef68bec40b2e27ad14229424e8e66dec31d7e7038a675ca4b94',
           'analyse_tx'     => '0xeb00d24d54f62d7a1ca216cd306f3162d508fa5ccddbb6dd62bede2c4b14d5bc',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x52d11c3Ff033231F74740873917A3c854e77D883',
           'subscripts'     => 0,
         };
@@ -1287,6 +1310,7 @@ $db{"8728"}
           'initiate_tx'    => '0x96d7a3a379a6bf223751a601a22615e0f8bfaa29e7f4d5407ca410ce1186fa61',
           'analyse_tx'     => '0x9dea7fce30138dd2b6186c4d9508b356537e8e3d35a13959d7da5d3faf1fb610',
           'type'           => 'decay, nuclear',
+          'typehash'       => { "decay"=>1, "nuclear"=>1},
           'chemist'        => '0x7e0b6b7c8c1eB6c40bD0158cc832abdFff811754',
           'subscripts'     => 0,
         };
@@ -1305,7 +1329,8 @@ $db{"8729"}
 
           'initiate_tx'    => '0xd88f4f35664a2e72150864d4a68e244bb116c9a53037ee5dcafaff37e453055b',
           'analyse_tx'     => '0x3abb4e13d8c3f4fb32a923487dce8fc3114c21c573e0b86e594e98d96040fc4e',
-          'type'           => '',
+          'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x52d11c3Ff033231F74740873917A3c854e77D883',
           'subscripts'     => 0,
         };
@@ -1325,6 +1350,7 @@ $db{"8730"}
           'initiate_tx'    => '0xebf041f9303890ae2fecaa5f983f73279bb5d42639e318a1a3328e4ff41d05f8',
           'analyse_tx'     => '0x8ce009fa3496fa979314da971f9012c4b5cb3553ef5017877f874c8db9c3ce35',
           'type'           => 'decay',
+          'typehash'       => { "decay"=>1},
           'chemist'        => '0x39B0B2Bb9C5DC3C63A715C16F9115d456A212780',
           'subscripts'     => 0,
         };
@@ -1344,6 +1370,7 @@ $db{"11758"}
           'initiate_tx'    => '0xed08899d0ccfc985dbac1624daf486eb37b604932001dda88b31837e34db0c03',
           'analyse_tx'     => '0x238bfa67f7510e5ef58f2a5d556db44addc8c26bb02acfdd5574e6cc08e582dd',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x9d45213AFE0DBC727216F3B55756775672Ca315A',
           'subscripts'     => 0,
         };
@@ -1363,6 +1390,7 @@ $db{"11759"}
           'initiate_tx'    => '0x42f29b5b5c508582a766e53d6dd0759931f2e05f35bcca7aa3489db1a48cf9f3',
           'analyse_tx'     => '0x3ef1302cd0f748babe25c1ba14a4bc2ec6a743ce54a42f15473a095256d277d4',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x9C54A9C609212D2FD034B55cF3b42ba99AF52880',
           'subscripts'     => 0,
         };
@@ -1382,6 +1410,7 @@ $db{"11760"}
           'initiate_tx'    => '0x28f7afe2689d6eb57bb5719d851e7df2fcabe5d035c3557dfcf5c7c6e794e39b',
           'analyse_tx'     => '0x87384c942cae7873e46abc57449a21c6d31d615768b44f37ca2ff01a8e16198a',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x9C54A9C609212D2FD034B55cF3b42ba99AF52880',
           'subscripts'     => 0,
         };
@@ -1401,6 +1430,7 @@ $db{"11761"}
           'initiate_tx'    => '0x4aefa211c7d5ec68c24ae4989daa8dbb47db8cb599c88366af5bd759b5259f42',
           'analyse_tx'     => '0x5d434b3dd0eef99e290f8dbec118424a599b21dd15322685d9fa84ae0a720c75',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x9C54A9C609212D2FD034B55cF3b42ba99AF52880',
           'subscripts'     => 0,
         };
@@ -1420,6 +1450,7 @@ $db{"11762"}
           'initiate_tx'    => '0x4f08b141dabeae8aae64841d85d3d42ac658864d63c14b7a0fd5eb9cf915af7a',
           'analyse_tx'     => '0x8aa98c70c58ff5eddff4980ba5b0da431a5f0b58956e81742c9209f919bb8dce',
           'type'           => 'nuclear',
+          'typehash'       => { "nuclear"=>1},
           'chemist'        => '0x9C54A9C609212D2FD034B55cF3b42ba99AF52880',
           'subscripts'     => 0,
         };
@@ -1458,6 +1489,7 @@ $db{"12582"}
           'initiate_tx'    => '0x73f29c9c1a2f7d9cd77ddd8e8226051d850f0d522e5401dc2e4b93c720561250',
           'analyse_tx'     => '0x79732a34cb0050424eb3d5837c8b5baafee919e694d5b9ad6c6dd5d157fb0e74',
           'type'           => 'decay',
+          'typehash'       => { "decay"=>1},
           'chemist'        => '0x353f6124e6316cC19f0f0c4335bDFa1B268071B3',
           'subscripts'     => 0,
         };
@@ -1477,6 +1509,7 @@ $db{"12583"}
           'initiate_tx'    => '0x2d33c16b98f110dbc443244d8c08a15fbb1dc05b8641a7157274c9e0aabf72b2',
           'analyse_tx'     => '0x37f5abfc4da3ad53386d54c1e5df18a4d1c3202cf7961180ac4eae3447fafff0',
           'type'           => 'chemical',
+          'typehash'       => { "chemical"=>1},
           'chemist'        => '0x42C0C7fD310838F2A39D1c9c2e5803213be2c73C',
           'subscripts'     => 0,
         };
@@ -1496,6 +1529,7 @@ $db{"12591"}
           'initiate_tx'    => '0x33899baf7defd3c7eab4d3f0495033abf5d0f24e7dec25f0aa939e6b8c75c9a2',
           'analyse_tx'     => '0x2d1e02d4c4919fed074dc695890b546e3a88029d1469e048aee54ea789944529',
           'type'           => 'chemical, decay',
+          'typehash'       => { "chemical"=>1, "decay"=>1},
           'chemist'        => '0x42C0C7fD310838F2A39D1c9c2e5803213be2c73C',
           'subscripts'     => 0,
         };
@@ -1521,7 +1555,10 @@ $db{"12592"}
 
 ## ]]]
 
-
+%db=();
+warn "DUMPING PRELOADED OTOMRO ENTRIES FOR DEBUGGING PURPOSES ONLY!!!\n";
+warn "DUMPING PRELOADED OTOMRO ENTRIES FOR DEBUGGING PURPOSES ONLY!!!\n";
+warn "DUMPING PRELOADED OTOMRO ENTRIES FOR DEBUGGING PURPOSES ONLY!!!\n";
 
 
 my $txhash="";
@@ -1845,13 +1882,12 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 # nuclear  = 6e75636c656172     => prepend with number of encoded chars and pad it  => /00076e75636c65617200000000000000000000000000000000000000000000000000$/
 # metallic = 6d6574616c6c6963   => prepend with number of encoded chars and pad it  => /00086d6574616c6c6963000000000000000000000000000000000000000000000000$/
 my @reaction_types=();
-my %reaction_hash=();
 for ( 1 .. 7 ){
 
-    if ($line =~ /00000000000000000000000000000000000000000000000000000000000000056465636179000000000000000000000000000000000000000000000000000000$/){push @reaction_types, "decay"   ;$reaction_hash{"decay"}=1;    }
- elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000076e75636c65617200000000000000000000000000000000000000000000000000$/){push @reaction_types, "nuclear" ;$reaction_hash{"nuclear"}=1;  }
- elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000086368656d6963616c000000000000000000000000000000000000000000000000$/){push @reaction_types, "chemical";$reaction_hash{"chemical"}=1; }
- elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000086d6574616c6c6963000000000000000000000000000000000000000000000000$/){push @reaction_types, "metallic";$reaction_hash{"metallic"}=1; }
+    if ($line =~ /00000000000000000000000000000000000000000000000000000000000000056465636179000000000000000000000000000000000000000000000000000000$/){push @reaction_types, "decay"   ;$db{$otomro}{typehash}{"decay"}=1;    }
+ elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000076e75636c65617200000000000000000000000000000000000000000000000000$/){push @reaction_types, "nuclear" ;$db{$otomro}{typehash}{"nuclear"}=1;  }
+ elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000086368656d6963616c000000000000000000000000000000000000000000000000$/){push @reaction_types, "chemical";$db{$otomro}{typehash}{"chemical"}=1; }
+ elsif ($line =~ /00000000000000000000000000000000000000000000000000000000000000086d6574616c6c6963000000000000000000000000000000000000000000000000$/){push @reaction_types, "metallic";$db{$otomro}{typehash}{"metallic"}=1; }
  $line =~ s/.{64}\s*$//; # trim last 64
 
  }
@@ -1917,9 +1953,13 @@ while ($line =~  /(.{6})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634
  $db{$otomro}{"protons_out"}           = $output_protons;
  $db{$otomro}{"energy_out"}            = $energy_returned;
  $db{$otomro}{"type"}                  = $reaction_string;
- $db{$otomro}{"typehash"}              = { %reaction_hash };
  $db{$otomro}{"analyse_tx"}            = $txhash;
  $db{$otomro}{"blocknumber"}           = $blocknumber;
+
+print STDERR "DEBUG: Just set the \$db{$otomro}{typehash} to:\n";
+print STDERR Dumper( $db{$otomro}{"typehash"} );
+print STDERR "DEBUG: here are the keys of it:\n";
+print STDERR "DEBUG: [$_] => [$db{$otomro}{typehash}{$_}]\n" for keys %{ $db{$otomro}{typehash} };
 
 }else{
   # Not a call to initiateReaction() nor analyseReactions() so skip it
@@ -1983,23 +2023,6 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
     # calculate NRG used
     $db{$otomro}{"energy_used"} = $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"};
 
-### # [[[ determine effective reaction cost
-### 
-### 
-### # first must include cost of this reaction
-### my $effective_cost = $db{$otomro}{"energy_used"};
-### 
-### # now add cost of each input otom
-### foreach my $this_in ( @{ $db{$otomro}{"otoms_in"} } ){
-###    if (exists $mineable_otoms{$this_in}){
-###       # effective cost of mineables is zero
-###    }else{
-###       $effective_cost += 
-###    }
-### 
-### }
-### 
-### # ]]] determine effective reaction cost
 
 
 #   printf "| %8d | %-60.60s%s+ %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
@@ -2021,16 +2044,39 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
    $db{$otomro}{"initiate_tx"},
    $db{$otomro}{"analyse_tx"} ;
 
+   my $in_check_string  = join '+', sort @{ $db{$otomro}{otoms_in_list} }; # [ 'Cq-6', 'Cq-6', 'Ju-2', 'Ju-2', 'W-4'],
+   my $out_check_string = join '+', sort @{ $db{$otomro}{otoms_out_list}}; # [ 'Ju-2', 'Cq-6', 'Cq-6', 'WJu(W-4>Ju-2)'],
 
    # save data for recipes
+###print STDERR "DEBUG: saving data for recipes\n";
    if (  ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) <= 2 ) # FOR NOW ONLY 1 OR 2 INPUT REACTIONS! [ ] At some point I need to consider removing this limit
-      && ( keys %{ $db{$otomro}{"typehash"} } > 0          ) # only for those with actual successful reactions [ ] not sure this is working like i think.
+      && ( scalar(keys %{ $db{$otomro}{"typehash"} }) >  0 ) # only for those with actual successful reactions [ ] not sure this is working like i think.
       && ( $otomro >= 3050                                 ) # reaction algorithm was changed somewhere around OTOMRO 3050 so ignore those early ones
+
+      # [ ] YOU KNOW WHAT I THINK WE also need to ignore cases like "Dx-15⁺ +  A-42⁺ + 0 => Zz-15 + A-42" because it will be classified as decay when only 1 of the inputs decayed but the other just passed through and did no reaction
+      # This is very difficult to design a boolean test to exclude.
+      # perhaps if the reaction type is only decay?
+
+      # maybe if the input otom string matches the output otom string, skip those. Hmm. Not good enough
+  &&  ( $in_check_string ne $out_check_string  )
+
+
+      # if the reaction type is only decay, then only include reactions with a single otom input so there's no confusion where the outputs come from
+  && (
+        exists $db{$otomro}{typehash}{"decay"}    &&
+      ! exists $db{$otomro}{typehash}{"nuclear"}  &&
+      ! exists $db{$otomro}{typehash}{"chemical"} &&
+      ! exists $db{$otomro}{typehash}{"metallic"}
+      && ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) == 1 ) 
+     )
+
       ){
      foreach my $one_otom (@{ $db{$otomro}{"otoms_out_list"} }){  
 ###print STDERR "DEBUG: otomro[$otomro] one_otom[$one_otom]\n";
       my $rounded_energy_input = sprintf "%.0f", $db{$otomro}{"energy_in"};
       my $rounded_energy_used  = sprintf "%.0f", $db{$otomro}{"energy_used"};
+###print STDERR "DEBUG: rounded_energy_input[$rounded_energy_input]\n";
+###print STDERR "DEBUG: rounded_energy_used [$rounded_energy_used]\n";
 
       my $reaction_key_string = $db{$otomro}{"otoms_in"} ." => ". $db{$otomro}{"otoms_out"};
 
@@ -2059,9 +2105,49 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
 
      }
    }
+else{
+ if( scalar(@{ $db{$otomro}{"otoms_in_list"} }) >  2 ){print STDERR "DEBUG: SKIPPING recipes otomro $otomro because: otoms_in_list has ". scalar(@{ $db{$otomro}{"otoms_in_list"} }) ." otoms\n";}
+ if( scalar (keys %{ $db{$otomro}{"typehash"}}) <= 0 ){print STDERR "DEBUG: SKIPPING recipes otomro $otomro because: typehash is empty with ".  scalar(keys %{ $db{$otomro}{"typehash"} }) ." items\n";}
+ if( $otomro <  3050                                 ){print STDERR "DEBUG: SKIPPING recipes otomro $otomro because: otomro < 3050\n";}
+}
   }
 }
 
+
+# [[[ determine effective reaction cost
+print STDERR "\n\nDEBUG: NOW TO DETERMINE EFFECTIVE REACTION COSTS\n\n";
+
+foreach my $otomro (sort {$a <=> $b} keys %db){
+  printf STDERR "DEBUG: OTOMRO %7s\n", $otomro;
+
+  if (! exists $db{$otomro}{typehash} || scalar( keys ($db{$otomro}{typehash})) <= 0){
+    print STDERR "DEBUG: SKIPPING OTOMRO $otomro because it had no reaction\n";
+    next;
+  }
+
+  # first must include cost of this reaction
+  warn "DEBUG: WARNING no key found for \$db{$otomro}{energy_used}" unless exists $db{$otomro}{"energy_used"};
+  my $effective_cost = $db{$otomro}{"energy_used"};
+  print STDERR "DEBUG: add $db{$otomro}{energy_used}\n";
+
+  # now add cost of each input otom
+  foreach my $this_in ( @{ $db{$otomro}{"otoms_in_list"} } ){
+     print STDERR "DEBUG: checking input otom [$this_in]\n";
+     if (exists $mineable_otoms{$this_in}){
+        print STDERR "DEBUG: add 0 for mineable [$this_in]\n";
+	# effective cost of mineables is zero
+     }else{
+        warn "DEBUG: WARNING no key found for \$recipes{$this_in}{cheapest_nrg_used}\n" unless exists $recipes{$this_in}{"cheapest_nrg_used"};
+        print STDERR "DEBUG: add ". $recipes{$this_in}{cheapest_nrg_used} ." for non-mineable [$this_in]\n";
+	$effective_cost += $recipes{$this_in}{cheapest_nrg_used};
+     }
+  }
+
+  print STDERR "DEBUG: effective_cost is: $effective_cost\n";
+  $db{$otomro}{"effective_cost"} = $effective_cost;
+}
+
+# ]]] determine effective reaction cost
 
 
 
@@ -2083,12 +2169,18 @@ foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
 
   my %seenthis=();
   foreach my $r ( sort keys %{ $recipes{$k} } ){   # r == "S-26 + Fj-35 => At-61"
+     die "MISSING value of \$recipes{$k}{$r}{otomro}" unless exists $recipes{$k}{$r}{otomro};
      my $this_otomro=$recipes{$k}{$r}{otomro};
 #[ ] should/could we check here if it was a successful reaction or NONE?
 
+     die "MISSING value of \$db{$this_otomro}"                   unless exists $db{$this_otomro};
+     die "MISSING value of \$db{$this_otomro}{otoms_in}"         unless exists $db{$this_otomro}{otoms_in};
+     die "MISSING value of \$recipes{$k}{$r}{nrg_used}"          unless exists $recipes{$k}{$r}{nrg_used};
+     die "MISSING value of \$db{$this_otomro}{otoms_out_sorted}" unless exists $db{$this_otomro}{otoms_out_sorted};
+
      my $s=sprintf "| %-5s | %s\n", $k, $db{$this_otomro}{otoms_in} ." + ". $recipes{$k}{$r}{nrg_used} ." => ". $db{$this_otomro}{otoms_out_sorted} ;
      unless (exists $seenthis{$s}){
-       printf $fh $s;
+       printf $fh "| %-5s | %s | %s\n", $k, $db{$this_otomro}{otoms_in} ." + ". $recipes{$k}{$r}{nrg_used} ." => ". $db{$this_otomro}{otoms_out_sorted} , $this_otomro ;
      }
      $seenthis{$s}++;
   }
@@ -2179,10 +2271,13 @@ foreach my $k (sort { $discovered_molecules{$b} <=> $discovered_molecules{$a} ||
 print STDERR "\nDUPLICATE INPUT LINES SKIPPED: $skip_duplicate_input\n";
 
 
-use Data::Dumper;
 
-open(my $dump, ">", "dumped.txt") or die;
+open(my $dump, ">", "dumped.db.txt") or die;
 print $dump Dumper(%db);
 close $dump;
+
+open(my $dump2, ">", "dumped.recipes.txt") or die;
+print $dump2 Dumper(%recipes);
+close $dump2;
 
 

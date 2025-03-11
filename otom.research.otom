@@ -4832,13 +4832,13 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Pt-25ª |+  724.25 ..  1400 =>   S-26             |
 |  Ju-1∙ + Pt-26∙ |+  944.93 ..  1500 =>   S-27             |
 |  Ju-1∙ + Pt-27⁻ |+1500              =>  ?S-28? Zq-29?     | [r] +1500 Makes S-28  using  749.95 nuclear
-|  Ju-1∙ + Pt-28⁻ |+1500              =>  ?S-29? Zq-30?     | [*]
+|  Ju-1∙ + Pt-28⁻ |+1100              =>  ?S-29? Zq-30?     | [r] +1100 Makes S-29  using  693.90 nuclear
 |  Ju-1∙ +  S-24⁺ |+1500              =>  ?S-25? Zq-25?     | [r] +1500 Makes⬇S-26  using  651.11 nuclear+decay
 |  Ju-1∙ +  S-25⁺ |+  668.24 ..   750 => ⬇ S-26             |
 |  Ju-1∙ +  S-26ª |+  696.50 ..   750 =>   Zq-27            |
 |  Ju-1∙ +  S-27ª |+1500              =>  ?Zq-28?           | [r] +1500 Makes Zq-28 using  766.43 nuclear
 |  Ju-1∙ +  S-28∙ |+1500              =>  ?Zq-29?           | [r] +1500 Makes Zq-29 using 1002.13 nuclear
-|  Ju-1∙ +  S-29⁻ |+1500              =>  ?Zq-30? Xc-31?    | [ ]
+|  Ju-1∙ +  S-29⁻ |+1500              =>  ?Zq-30? Xc-31?    | [r] +1200 Makes Zq-30 using  749.37 nuclear
 |  Ju-1∙ +  S-30⁻ |+1500              =>  ?Zq-31? Xc-32?    | [ ] +1500 Makes 
 |  Ju-1∙ + Zq-26⁺ |+  873.33 ..  5000 => ⬇ Zq-27            |
 |  Ju-1∙ + Zq-27⁺ |+  817.60 ..  3000 => ⬇ Zq-28            |
@@ -5102,6 +5102,10 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ua-83⁺ |+2000              =>   ?                | [ ]
 |  Ju-1∙ + Ua-84⁺ |+10000             =>   Ju-1 + Ua-84     |
 |  Ju-1∙ + Ua-85⁺ |+10000             =>   Ju-1 + Ua-85     |
+
+[r] 22 10  M + 34 15 Xc + 2254 => 56 25 Nb
+[*] 56 25 Nb +            4804 => 26 12 Pt + 30 13  S
+0x2a4a wallet
 
 [r] 17  9 Pm + 18  9 Pm +  996 => 35 18 Fj
 [r] 15  8 Dx + 35 18 Fj + 1395 => 50 26 Xk
