@@ -1,3 +1,417 @@
+2025-03-12 Mar.Wed 13:01:40 Okay so next lets see about Pw-75 & Pw-76
+
+If Xc-34+Fj-40 makes Pw-74:
+|*74 33 Pw | Pw-74 | 34 15 Xc + 40 18 Fj + 3200 => 74 33 Pw
+
+Does Xc-34+Fj-41 make Pw-75?
+or   Xc-34+O-41
+or   Zq-32+O-43
+
+[r]  9  4 Af + 32 14 Zq + 1146 => 41 18 Fj
+[f] Xc-34 + Fj-41 + 3700 => ? Pw-75? <---NOPE makes Gk-75 using 2354.58 nuclear+decay
+
+[ ] 15  6 Pq + 26 13  S +  962 => 41 19  O
+[ ] Xc-34+O-41 + 4000 => ? Pw-75 ?
+
+[r]  9  4 Af + 34 15 Xc + 1219 => 43 19  O
+[f] Zq-32+O-43 + 4000 => ? Pw-75 ? <-----NOPE makes Gk-75 using 2294.45 nuclear+decay
+
+or this extensive list from otoms.decay_reactions_list.txt:
+  1  1 Ju∙(1.000) +  74 33 Pw⁻(0.861) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  2  1 Ju∙(1.000) +  73 33 Pw⁻(0.834) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  3  1 Ju∙(1.000) +  72 32 Ny⁻(0.787) => |⬆ (75  34 Gk)|=  75  33 Pw |⬇  75  32 Ny <--- makes Gk-75 using 1550.24 nuclear+decay
+  3  1 Ju∙(1.000) +  72 33 Pw⁻(0.839) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  4  2  W∙(1.000) +  71 32 Ny⁻(0.804) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  5  2  W∙(1.000) +  70 32 Ny⁻(0.841) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  6  3 Cq∙(1.000) +  69 31 At⁻(0.786) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  7  3 Cq∙(1.000) +  68 31 At⁻(0.815) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  8  4 Af∙(1.000) +  67 30 Hbª(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  9  4 Af∙(1.000) +  66 30 Hbª(0.839) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 10  4 Af⁻(0.289) +  65 29 Jx⁻(0.787) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 10  4 Af⁻(0.289) +  65 30 Hbª(0.870) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 10  5 Xlª(0.487) +  65 29 Jx⁻(0.787) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 11  5 Xl∙(1.110) +  64 29 Jx⁻(0.831) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 12  5 Xl⁻(0.313) +  63 28 Yp⁻(0.805) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 12  5 Xl⁻(0.313) +  63 29 Jx⁻(0.884) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 12  6 Pqª(0.696) +  63 28 Yp⁻(0.805) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 13  6 Pq∙(1.281) +  62 28 Yp⁻(0.873) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 14  6 Pq⁻(0.561) +  61 27 Ic⁻(0.877) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 14  6 Pq⁻(0.561) +  61 28 Yp⁻(0.910) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 15  6 Pq⁻(0.277) +  60 27 Ic⁻(0.930) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 15  6 Pq⁻(0.277) +  60 28 Yp∙(1.910) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 14  7 Zzª(0.640) +  61 27 Ic⁻(0.877) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 15  7 Zz∙(1.433) +  60 27 Ic⁻(0.930) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 16  7 Zz⁻(0.578) +  59 26 Xk⁻(0.780) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 16  7 Zz⁻(0.578) +  59 27 Ic∙(1.982) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 16  8 Dx∙(1.603) +  59 26 Xk⁻(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 17  8 Dx∙(1.588) +  58 26 Xk⁻(0.858) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 18  8 Dx∙(1.651) +  57 26 Xk⁻(0.903) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 19  8 Dx⁻(0.521) +  56 25 Nb⁻(0.798) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 19  8 Dx⁻(0.521) +  56 26 Xk⁻(0.956) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 19  9 Pm∙(1.837) +  56 25 Nb⁻(0.798) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 20  9 Pm⁻(0.721) +  55 25 Nb⁻(0.869) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 21  9 Pm⁻(0.608) +  54 24 Oc⁻(0.807) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 21  9 Pm⁻(0.608) +  54 25 Nbª(0.903) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 21 10  M∙(1.904) +  54 24 Oc⁻(0.807) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 22 10  M∙(1.849) +  53 24 Oc⁻(0.861) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 23 10  M⁻(0.762) +  52 23 Aw⁻(0.795) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 23 10  M⁻(0.762) +  52 24 Oc⁻(0.951) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 23 11 Fw∙(1.792) +  52 23 Aw⁻(0.795) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 24 11 Fw⁻(0.815) +  51 23 Aw⁻(0.878) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 25 11 Fw⁻(0.737) +  50 22  A⁻(0.884) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 25 11 Fw⁻(0.737) +  50 23 Aw∙(1.004) => |⬆  75  35 Qi |= (75  34 Gk)|⬇  75  33 Pw <---nope makes Gk-75 using 2257.82 nuclear
+ 26 11 Fw⁻(0.634) +  49 22  A⁻(0.949) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 26 11 Fw⁻(0.634) +  49 23 Aw∙(1.943) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 25 12 Ptª(0.890) +  50 22  A⁻(0.884) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 26 12 Pt∙(1.813) +  49 22  A⁻(0.949) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 27 12 Pt⁻(0.868) +  48 21  E⁻(0.834) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 27 12 Pt⁻(0.868) +  48 22  A∙(1.023) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 28 12 Pt⁻(0.672) +  47 21  E⁻(0.849) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 28 12 Pt⁻(0.672) +  47 22  A∙(1.052) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 27 13  Sª(0.936) +  48 21  E⁻(0.834) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 28 13  S∙(1.924) +  47 21  E⁻(0.849) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 29 13  S⁻(0.824) +  46 21  E⁻(0.902) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 30 13  S⁻(0.650) +  45 20  C⁻(0.802) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 30 13  S⁻(0.650) +  45 21  E⁻(0.964) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 30 14 Zq⁻(0.950) +  45 20  C⁻(0.802) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 31 14 Zq⁻(0.856) +  44 20  C⁻(0.892) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 32 14 Zq⁻(0.771) +  43 19  O⁻(0.780) => |⬆ (75  34 Gk)|=  75  33 Pw |⬇  75  32 Ny <----NOPE makes Gk-75 using 2294.45 nuclear+decay
+ 32 14 Zq⁻(0.771) +  43 20  C⁻(0.957) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 32 15 Xc∙(1.004) +  43 19  O⁻(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 33 15 Xc⁻(0.966) +  42 19  O⁻(0.873) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 34 15 Xc⁻(0.851) +  41 18 Fj⁻(0.780) => |⬆ (75  34 Gk)|=  75  33 Pw |⬇  75  32 Ny  <---NOPE makes Gk-75 using 2354.58 nuclear+decay
+ 34 15 Xc⁻(0.851) +  41 19  O∙(1.032) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 34 16 Gy∙(1.956) +  41 18 Fj⁻(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 35 16 Gy⁻(0.905) +  40 18 Fj∙(1.942) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 36 16 Gy⁻(0.840) +  39 17  D⁻(0.831) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 36 16 Gy⁻(0.840) +  39 18 Fjª(0.937) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 36 17  Dª(0.921) +  39 17  D⁻(0.831) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 37 17  D⁻(0.895) +  38 17  D⁻(0.830) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+
+[r]  6  3 Cq + 32 14 Zq + 1007 => 38 17  D
+[r] 34 15 Xc + 38 17  D + 2294 => 72 32 Ny
+[f]  3  1 Ju∙(1.000) +  72 32 Ny⁻(0.787) + 5000 => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny <--- makes Gk-75 using 1550.24 nuclear+decay
+
+Hmm. Is it possible that anything that makes  Pw-75⁻ will decay to Gk-75 because the stability of Pw-75 is 0.72?
+
+2025-03-12 Mar.Wed 12:58:00 NEW DISCOVERY! isotope Gk-77 aka 77 34 Gk
+ Pq-15 + D-37  + 1177 => Aw-52
+ Fw-25 + Aw-52 + 2189 => Gk-77
+
+
+[ ] 77 34 Gk
+  [ ] add to otoms.complete.list.otom
+  [ ] save reservoir image to mac folder
+  [ ] bookmark to Firefox
+  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [ ] add to syntax/otom.vim
+  [ ] add to otom_reactions.pl
+  [ ] update in Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
+  [ ] add to otoms.decay.otom
+  [ ] add to otoms.otom
+  [ ] add to otoms.columns.otom
+  [ ] add reaction to otom.reactions.otom 
+  [ ] add to recipes.otom
+  [ ] add otoms.shapescan.data.otom
+      [ ] put these vaules in ???
+          [ ] ==>SHELL TABLE 1
+          [ ] ==>SHELL TABLE 2
+  [ ] check off otoms.unfoundpossibilites.otom
+  [c] make it myself
+  [ ] add to file otoms.decay.with.metadata.otom
+  [ ] add to file optimized.get.all.isotopes.otom
+  [ ] add to parseReactorLog.pl
+  [ ] add to token.image.descriptions.otom
+
+
+2025-03-12 Mar.Wed 12:24:29 Rethinking that list of undisovered isotopes, sorted by stability- I have removed all the ones with more than 43 neutrons since we determined those are not possible. Or extremely unlikely to be possible since all possible tries have not been made.
+
+0 *Pt-31⁻
+0.0 *Xy-63⁺
+0.01 *Hb-52⁺
+0.01 *U-71⁺
+0.02 *E-36⁺
+0.02 *Oc-61⁻
+0.03 *C-51⁻
+0.03 *D-44⁻
+0.03 *Fj-31⁺
+0.03 *Xc-39⁻
+0.04 *Ua-75⁺
+0.05 *Gy-41⁻
+0.05 *Xk-66⁻
+0.06 *Aw-40⁺
+0.06 *Gk-60⁺
+0.06 *Ic-69⁻
+0.06 *Yp-49⁺
+0.07 *Fj-46⁻
+0.07 *Pq-16⁻
+0.07 *Xl-13⁻
+0.07 *Zz-12⁺
+0.08 *Gq-66⁺
+0.08 *Nb-63⁻
+0.08 *Zz-18⁻
+0.1 *Bt-68⁺
+0.1 *Ic-47⁺
+0.1 *O-48⁻
+0.11 *Aw-58⁻
+0.11 *H-70⁺
+0.11 *Sq-73⁺
+0.11 *Xy-64⁺
+0.11 *Yp-71⁻
+0.12 *A-38⁺
+0.12 *Fw-28⁻
+0.12 *M-26⁻
+0.12 *Oc-42⁺
+0.12 *S-33⁻
+0.13 *At-55⁺
+0.13 *E-53⁻
+0.13 *Hb-53⁺
+0.13 *Nb-44⁺
+0.13 *O-33⁺
+0.14 *Pm-23⁻
+0.15 *A-56⁻
+0.15 *D-43⁻
+0.15 *Qi-62⁺
+0.15 *Zq-36⁻
+0.16 *M-17⁺
+0.16 *Ny-57⁺
+0.16 *Yp-70⁻
+0.17 *Ic-68⁻
+0.17 *Oc-60⁻
+0.17 *U-72⁺
+0.17 *Xk-65⁻
+0.18 *Jx-51⁺
+0.19 *Fw-19⁺
+0.19 *Ua-76⁺
+0.2 *C-50⁻
+0.2 *Nb-62⁻
+0.2 *Zq-24⁺
+0.21 *Pw-59⁺
+0.21 *Xc-38⁻
+0.23 *Gq-67⁺
+0.23 *Xc-26⁺
+0.23 *Xk-46⁺
+0.23 *Xy-65⁺
+0.24 *Bt-69⁺
+0.24 *Qi-63⁺
+0.25 *E-37⁺
+0.25 *Sq-74⁺
+0.25 *Zq-35⁻
+0.26 *Aw-57⁻
+0.26 *D-30⁺
+0.26 *Gy-40⁻
+0.26 *H-71⁺
+0.26 *Pt-30⁻
+0.27 *E-52⁻
+0.27 *Gy-28⁺
+0.27 *Jx-72⁻
+0.28 *A-55⁻
+0.28 *C-35⁺
+0.28 *D-42⁻
+0.28 *Dx-20⁻
+0.28 *Oc-59⁻
+0.29 *Jx-52⁺
+0.29 *Pt-21⁺
+0.3 *At-56⁺
+0.3 *Hb-54⁺
+0.3 *Ic-67⁻
+0.3 *O-47⁻
+0.3 *U-73⁺
+0.3 *Xk-64⁻
+0.31 *Fj-45⁻
+0.31 *Gk-61⁺
+0.31 *Jx-71⁻
+0.31 *S-32⁻
+0.31 *Ua-77⁺
+0.32 *Ic-48⁺
+0.33 *Aw-41⁺
+0.33 *C-49⁻
+0.33 *Nb-61⁻
+0.33 *Oc-43⁺
+0.34 *Gq-68⁺
+0.35 *M-25⁻
+0.35 *Pm-16⁺
+0.35 *Qi-64⁺
+0.35 *Yp-69⁻
+0.36 *Nb-45⁺
+0.36 *Pm-22⁻
+0.36 *Xy-66⁺
+0.37 *A-39⁺
+0.37 *Bt-70⁺
+0.37 *H-72⁺
+0.37 *Ny-58⁺
+0.37 *Yp-50⁺
+0.38 *Aw-56⁻
+0.38 *Fw-27⁻
+0.38 *Sq-75⁺
+0.38 *Yp-68⁻
+0.39 *Fj-32⁺
+0.39 *Gk-62⁺
+0.4 *Fj-44⁻
+0.4 *Xk-63⁻
+0.41 *Gy-39⁻
+0.41 *Ic-66⁻
+0.41 *Xk-47⁺
+0.42 *E-51⁻
+0.42 *Oc-58⁻
+0.42 *U-74⁺
+0.42 *Ua-78⁺
+0.42 *Xc-37⁻
+0.43 *A-54⁻
+0.43 *Hb-73⁻
+0.43 *Zq-25⁺
+0.44 *Jx-53⁺
+0.44 *Nb-60⁻
+0.44 *Pt-29⁻
+0.44 *Pw-60⁺
+0.45 *D-41⁻
+0.45 *Hb-55⁺
+0.45 *Hb-72⁻
+0.45 *S-23⁺
+0.45 *Yp-51⁺
+0.46 *E-38⁺
+0.46 *Zq-34⁻
+0.47 *Bt-71⁺
+0.47 *C-36⁺
+0.47 *Gq-69⁺
+0.47 *O-34⁺
+0.47 *Qi-65⁺
+0.47 *Xy-67⁺
+0.47 *Yp-67⁻
+0.48 *Gk-63⁺
+0.48 *Jx-70⁻
+0.49 *At-57⁺
+0.49 *H-73⁺
+0.49 *Sq-76⁺
+0.49 *Zz-17⁻
+0.5 *Fw-20⁺
+0.5 *Jx-69⁻
+0.5 *Pw-61⁺
+0.51 *Aw-42⁺
+0.51 *Aw-55⁻
+0.51 *C-48⁻
+0.51 *Fj-43⁻
+0.51 *S-31⁻
+0.51 *U-75⁺
+0.51 *Ua-79⁺
+0.52 *Ic-49⁺
+0.52 *Ic-65⁻
+0.52 *O-46⁻
+0.52 *Oc-57⁻
+0.52 *Xk-62⁻
+0.53 *E-50⁻
+0.53 *Gy-29⁺
+0.54 *At-74⁻
+0.54 *Oc-44⁺
+0.55 *A-53⁻
+0.55 *At-73⁻
+0.55 *Gq-70⁺
+0.55 *Nb-46⁺
+0.55 *Nb-59⁻
+0.56 *D-31⁺
+0.56 *Jx-68⁻
+0.56 *Qi-66⁺
+0.57 *H-74⁺
+0.57 *Jx-54⁺
+0.57 *Xc-27⁺
+0.57 *Xc-36⁻
+0.57 *Xy-68⁺
+0.58 *Bt-72⁺
+0.58 *Ny-59⁺
+0.58 *O-45⁻
+0.58 *Pw-62⁺
+0.58 *Yp-66⁻
+0.59 *Gk-64⁺
+0.59 *Sq-77⁺
+0.6 *D-40⁻
+0.6 *M-18⁺
+0.6 *Ua-80⁺
+0.61 *A-40⁺
+0.61 *Aw-54⁻
+0.61 *C-37⁺
+0.61 *Hb-71⁻
+0.61 *Ic-64⁻
+0.61 *M-24⁻
+0.61 *U-76⁺
+0.61 *Xk-61⁻
+0.61 *Yp-52⁺
+0.61 *Zq-33⁻
+0.62 *Hb-56⁺
+0.62 *Hb-70⁻
+0.62 *O-35⁺
+0.63 *Ny-60⁺
+0.63 *Oc-56⁻
+0.64 *Nb-58⁻
+0.65 *Fj-42⁻
+0.65 *Jx-67⁻
+0.65 *Ny-74⁻
+0.65 *Yp-65⁻
+0.66 *E-39⁺
+0.66 *E-49⁻
+0.66 *Hb-69⁻
+0.66 *Ic-50⁺
+0.66 *Ny-75⁻
+0.66 *O-44⁻
+0.66 *Ua-81⁺
+0.67 *Gy-38⁻
+0.67 *Pw-63⁺
+0.67 *Sq-78⁺
+0.68 *A-52⁻
+0.68 *Fj-33⁺
+0.68 *Xk-48⁺
+0.69 *At-58⁺
+0.69 *Aw-43⁺
+0.7 *At-71⁻
+0.7 *Gy-37⁻
+0.7 *Oc-45⁺
+0.71 *At-72⁻
+0.71 *C-47⁻
+0.71 *Jx-66⁻
+0.71 *Oc-55⁻
+0.71 *Xk-49⁺
+0.71 *Xk-60⁻
+0.72 *At-59⁺
+0.72 *Aw-53⁻
+0.72 *Hb-68⁻
+0.72 *Ic-63⁻
+0.72 *Jx-55⁺
+0.72 *Pw-75⁻
+0.72 *Ua-82⁺
+0.72 *Yp-53⁺
+0.73 *At-70⁻
+0.73 *Nb-57⁻
+0.74 *Pw-76⁻
+0.74 *Xc-35⁻
+0.74 *Yp-64⁻
+0.75 *C-46⁻
+0.76 *A-41⁺
+0.77 *A-51⁻
+0.79 *Ic-62⁻
+0.8 *Ny-73⁻
+0.82 *Gk-77⁻
+
+If D-37+D-39 makes Gk-76:
+|*76 34 Gk | Gk-76 | 37 17  D + 39 17  D + 2415 => 76 34 Gk
+Would D-38+D-39 makes Gk-77?
+
+[ ]  6  3 Cq + 32 14 Zq + 1007 => 38 17  D
+[ ] 14  6 Pq + 25 11 Fw + 1002 => 39 17  D
+[ ] D-38 + D-39 + 3500=> ? Gk-77
+
+
+If Fw-25+Aw-51 makes Gk-76:
+| 76 34 Gk | Gk-76 | 25 11 Fw + 51 23 Aw + 2328 => 76 34 Gk
+Does Fw-26+Aw-51 or Fw-25+Aw-52 make Gk-77?
+
+
+[ ] 14  6 Pq + 34 15 Xc + 1228 => 48 21  E
+[ ] 48 21  E +            3890 => 22 10  M + 26 11 Fw
+[ ] 14  6 Pq + 37 17  D + 1306 => 51 23 Aw
+[ ] Fw-26 + Aw-51 +3000 => ? Gk-77?
+
+[r] 15  6 Pq + 37 17  D + 1177 => 52 23 Aw
+[r] Fw-25 + Aw-52 +3000 => ? Gk-77?  <------ SUCCESS!!!! using 2188.05 nuclear
+
 2025-03-11 Mar.Tue 12:29:44 Examining known isotopes vs undiscovered isotopes identified in Kjetil's chart, it seems apparent that nothing below that line (Qi-78 Xy-79 Gq-80 Bt-81 H-82 U-83 Sq-84 Ua-85) has been discovered. Perhaps its arbitrarily enforced in the code.
 
 QMA had some useful insight. He pointed out that those all have 43 neutrons. Wow, it seems that anything with more than 43 neutrons is not discoverable. That's a big deal to acknowledge.
@@ -5,17 +419,17 @@ QMA had some useful insight. He pointed out that those all have 43 neutrons. Wow
 ::INFO:: It might not be possible to discover and isotopes with more than 43 neutrons.
 
 So none of these can be discovered:
-Jx-73⁻ | Hb-74⁻ | At-75⁻ | Ny-76⁻ | Pw-77⁻ | Gk-78⁻ | Qi-79⁻ | Xy-88  | Gq-81⁻ | Bt-82⁻ |  H-83ª |  U-84ª | Sq-85ª | Ua-86ª |
-       | Hb-75⁻ | At-76⁻ | Ny-77⁻ | Pw-78⁻ | Gk-79⁻ | Qi-80⁻ | Xy-872 | Gq-82⁻ | Bt-83⁻ |  H-84⁻ |  U-85⁻ | Sq-86∙ | Ua-87⁺ |
-       |        | At-77⁻ | Ny-78⁻ | Pw-79⁻ | Gk-80⁻ | Qi-81⁻ | Xy-866 | Gq-83ª | Bt-84ª |  H-85ª |  U-86⁻ | Sq-87ª | Ua-88ª |
-       |        | At-78⁻ | Ny-79⁻ | Pw-80⁻ | Gk-81⁻ | Qi-82⁻ | Xy-858 | Gq-84⁻ | Bt-85⁻ |  H-86⁻ |  U-87⁻ | Sq-88∙ | Ua-89⁻ |
-       |        |        | Ny-80⁻ | Pw-81⁻ | Gk-82⁻ | Qi-83⁻ | Xy-852 | Gq-85⁻ | Bt-86⁻ |  H-87⁻ |  U-88⁻ | Sq-89∙ | Ua-90⁻ |
-       |        |        |        | Pw-82⁻ | Gk-83⁻ | Qi-84⁻ | Xy-844 | Gq-86⁻ | Bt-87⁻ |  H-88⁻ |  U-89⁻ | Sq-90∙ | Ua-91⁻ |
-       |        |        |        | Pw-83⁻ | Gk-84⁻ | Qi-85⁻ | Xy-837 | Gq-87⁻ | Bt-88⁻ |  H-89⁻ |  U-90⁻ | Sq-91∙ | Ua-92⁻ |
-       |        |        |        |        | Gk-85⁻ | Qi-86⁻ | Xy-829 | Gq-88⁻ | Bt-89⁻ |  H-90⁻ |  U-91⁻ | Sq-92∙ | Ua-93⁻ |
-       |        |        |        |        |        | Qi-87⁻ | Xy-821 | Gq-89⁻ | Bt-90⁻ |  H-91⁻ |  U-92⁻ | Sq-93⁻ | Ua-94⁻ |
-       |        |        |        |        |        |        | Xy-811 | Gq-90⁻ | Bt-91⁻ |  H-92⁻ |  U-93⁻ | Sq-94⁻ | Ua-95⁻ |
-       |        |        |        |        |        |        | Xy-903 | Gq-91⁻ | Bt-92⁻ |  H-93⁻ |  U-94⁻ | Sq-95⁻ | Ua-96⁻ |
+Jx-73⁻ | Hb-74⁻ | At-75⁻ | Ny-76⁻ | Pw-77⁻ | Gk-78⁻ | Qi-79⁻ | Xy-80⁻ | Gq-81⁻ | Bt-82⁻ |  H-83ª |  U-84ª | Sq-85ª | Ua-86ª |
+       | Hb-75⁻ | At-76⁻ | Ny-77⁻ | Pw-78⁻ | Gk-79⁻ | Qi-80⁻ | Xy-81⁻ | Gq-82⁻ | Bt-83⁻ |  H-84⁻ |  U-85⁻ | Sq-86∙ | Ua-87⁺ |
+       |        | At-77⁻ | Ny-78⁻ | Pw-79⁻ | Gk-80⁻ | Qi-81⁻ | Xy-82⁻ | Gq-83ª | Bt-84ª |  H-85ª |  U-86⁻ | Sq-87ª | Ua-88ª |
+       |        | At-78⁻ | Ny-79⁻ | Pw-80⁻ | Gk-81⁻ | Qi-82⁻ | Xy-83⁻ | Gq-84⁻ | Bt-85⁻ |  H-86⁻ |  U-87⁻ | Sq-88∙ | Ua-89⁻ |
+       |        |        | Ny-80⁻ | Pw-81⁻ | Gk-82⁻ | Qi-83⁻ | Xy-84⁻ | Gq-85⁻ | Bt-86⁻ |  H-87⁻ |  U-88⁻ | Sq-89∙ | Ua-90⁻ |
+       |        |        |        | Pw-82⁻ | Gk-83⁻ | Qi-84⁻ | Xy-85⁻ | Gq-86⁻ | Bt-87⁻ |  H-88⁻ |  U-89⁻ | Sq-90∙ | Ua-91⁻ |
+       |        |        |        | Pw-83⁻ | Gk-84⁻ | Qi-85⁻ | Xy-86⁻ | Gq-87⁻ | Bt-88⁻ |  H-89⁻ |  U-90⁻ | Sq-91∙ | Ua-92⁻ |
+       |        |        |        |        | Gk-85⁻ | Qi-86⁻ | Xy-87⁻ | Gq-88⁻ | Bt-89⁻ |  H-90⁻ |  U-91⁻ | Sq-92∙ | Ua-93⁻ |
+       |        |        |        |        |        | Qi-87⁻ | Xy-88⁻ | Gq-89⁻ | Bt-90⁻ |  H-91⁻ |  U-92⁻ | Sq-93⁻ | Ua-94⁻ |
+       |        |        |        |        |        |        | Xy-89⁻ | Gq-90⁻ | Bt-91⁻ |  H-92⁻ |  U-93⁻ | Sq-94⁻ | Ua-95⁻ |
+       |        |        |        |        |        |        | Xy-90⁻ | Gq-91⁻ | Bt-92⁻ |  H-93⁻ |  U-94⁻ | Sq-95⁻ | Ua-96⁻ |
        |        |        |        |        |        |        |        | Gq-92⁻ | Bt-93⁻ |  H-94⁻ |  U-95⁻ | Sq-96⁻ | Ua-97⁻ |
        |        |        |        |        |        |        |        |        | Bt-94⁻ |  H-95⁻ |  U-96⁻ | Sq-97⁻ | Ua-98⁻ |
        |        |        |        |        |        |        |        |        | Bt-95⁻ |  H-96⁻ |  U-97⁻ | Sq-98⁻ | Ua-99⁻ |
@@ -25,6 +439,8 @@ Jx-73⁻ | Hb-74⁻ | At-75⁻ | Ny-76⁻ | Pw-77⁻ | Gk-78⁻ | Qi-79⁻ | Xy-
        |        |        |        |        |        |        |        |        |        |        |        |Sq-102⁻ |Ua-103⁻ |
        |        |        |        |        |        |        |        |        |        |        |        |Sq-103⁻ |Ua-104⁻ |
        |        |        |        |        |        |        |        |        |        |        |        |        |Ua-105⁻ |
+
+regex: /\<\(H-83\|H-84\|H-85\|H-86\|H-87\|H-88\|H-89\|H-90\|H-91\|H-92\|H-93\|H-94\|H-95\|H-96\|H-97\|U-84\|U-85\|U-86\|U-87\|U-88\|U-89\|U-90\|U-91\|U-92\|U-93\|U-94\|U-95\|U-96\|U-97\|U-98\|U-99\|At-75\|At-76\|At-77\|At-78\|Bt-82\|Bt-83\|Bt-84\|Bt-85\|Bt-86\|Bt-87\|Bt-88\|Bt-89\|Bt-90\|Bt-91\|Bt-92\|Bt-93\|Bt-94\|Bt-95\|Gk-78\|Gk-79\|Gk-80\|Gk-81\|Gk-82\|Gk-83\|Gk-84\|Gk-85\|Gq-81\|Gq-82\|Gq-83\|Gq-84\|Gq-85\|Gq-86\|Gq-87\|Gq-88\|Gq-89\|Gq-90\|Gq-91\|Gq-92\|Hb-74\|Hb-75\|Ny-76\|Ny-77\|Ny-78\|Ny-79\|Ny-80\|Pw-77\|Pw-78\|Pw-79\|Pw-80\|Pw-81\|Pw-82\|Pw-83\|Qi-79\|Qi-80\|Qi-81\|Qi-82\|Qi-83\|Qi-84\|Qi-85\|Qi-86\|Qi-87\|Sq-85\|Sq-86\|Sq-87\|Sq-88\|Sq-89\|Sq-90\|Sq-91\|Sq-92\|Sq-93\|Sq-94\|Sq-95\|Sq-96\|Sq-97\|Sq-98\|Sq-99\|U-100\|Ua-86\|Ua-87\|Ua-88\|Ua-89\|Ua-90\|Ua-91\|Ua-92\|Ua-93\|Ua-94\|Ua-95\|Ua-96\|Ua-97\|Ua-98\|Ua-99\|Xy-80\|Xy-81\|Xy-82\|Xy-83\|Xy-84\|Xy-85\|Xy-86\|Xy-87\|Xy-88\|Xy-89\|Xy-90\|Jx-73\|Sq-100\|Sq-101\|Sq-102\|Sq-103\|Ua-100\|Ua-101\|Ua-102\|Ua-103\|Ua-104\|Ua-105\)\>/
 
 2025-03-11 Mar.Tue 00:33:40 [f] Why havent we tried Ju-2 + Qi-78 or Ju-3 + Qi-78 since:
 |     7972*|  Ju-1∙ + Qi-78⁻                            +     3000 =>   Xy-79                                                                  +    1620.12 |    1379.88 | nuclear                      | 0x302ae18228414d03b25ebe0d131720780f65baa5 | 0x894971b86b54e7b7e3ebe698115bf18b6894d18a6014a5457e5e311d2f6ba06d | 0x2de450ba09075646076898a01d7c7916729a846aa21ae8c88d65273150ecea8e |
@@ -3089,17 +3505,17 @@ This line of thinking makes me wonder if i should try making new isotopes that h
 1.83 *Sq-88∙
 1.88 *Sq-86∙
 
-[ ] Try designing reactions to produce some of these high stabilty isotopes
-[ ] Sq-87ª
-[ ] Sq-85ª
-[ ] Sq-92∙
-[ ] Sq-91∙
-[ ] Sq-90∙
-[ ] Sq-89∙
-[ ] Sq-88∙
-[ ] Sq-86∙
+[x] Try designing reactions to produce some of these high stabilty isotopes. UPDATE: It was determined that its extremely unlikely to discover any isotope with more than 43 neutrons, so all these are not possible.
+[x] Sq-87ª
+[x] Sq-85ª
+[x] Sq-92∙
+[x] Sq-91∙
+[x] Sq-90∙
+[x] Sq-89∙
+[x] Sq-88∙
+[x] Sq-86∙
 
-[ ] Try finding Sq-85 from these:
+[x] Try finding Sq-85 from these:
   1  1 Ju∙(1.000) +  84 41 Sq∙(1.864) => |⬆  85  43 .. |= (85  42 Ua |⬇  85  41 Sq  +1900 makes Ua-85
   2  1 Ju∙(1.000) +  83 40  U∙(1.914) => |⬆  85  42 Ua |=  85  41 Sq |⬇  85  40  U  +1800 no reaction
   2  1 Ju∙(1.000) +  83 41 Sq⁺(0.921) => |⬆  85  43 .. |=  85  42 Ua |⬇  85  41 Sq

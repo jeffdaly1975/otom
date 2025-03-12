@@ -453,7 +453,6 @@ my %decaychar=(
 
 
 
-print "| OTOMRO   | INPUTS                                                =>    OUTPUTS                                                                            | NRG USED   | REACTION TYPE                | CHEMIST WALLET                             | initateReaction() TX HASH                                          | analyseReactions() TX HASH                                         |\n";
 
 my $c=1;
 my %hexdict=();
@@ -1903,7 +1902,8 @@ if (@reaction_types){
 ########################################################################################################################
 #
 # Can I get the base64 encoded molecule data?
-#
+#   [ ] I should probably write this directly to a file
+#   [ ] Something is not right with the decoding. There are many strings that come out incomplete, cut off
 ########################################################################################################################
 
 while ($line =~  /(.{6})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634/){
@@ -1987,6 +1987,9 @@ print STDERR "DEBUG: [$_] => [$db{$otomro}{typehash}{$_}]\n" for keys %{ $db{$ot
 # Determine reactions performed for the first time and output data
 #
 ########################################################################################################################
+
+print "| OTOMRO   | INPUTS                                                =>    OUTPUTS                                                                            | NRG USED   | REACTION TYPE                | CHEMIST WALLET                             | initateReaction() TX HASH                                          | analyseReactions() TX HASH                                         |\n";
+
 my %seen_this_reaction_yet=();
 foreach my $otomro (sort {$a <=> $b} keys %db){
   $db{$otomro}{"first_instantiation"}=0;
@@ -2115,6 +2118,51 @@ else{
 }
 
 
+########################################################################################################################
+#
+# do an assessment of any initiateReaction calls missing an analyseReactions tx or vice versa
+#
+########################################################################################################################
+my @missing_initiates=();
+foreach my $k (sort keys %db){
+  unless (exists $db{$k}{"analyse_tx"}){
+ 
+    my $this_pad = "         " x (5 - scalar( @{$db{$k}{"otoms_in_list"}}));
+    printf "| %8d | %s + %8d =>   %-70.70s + %10s | %10s | %-28s | %s | %66s | %66s |\n",
+     $k, 
+     $db{$k}{"otoms_in"} .$this_pad  ,
+     $db{$k}{"energy_in"}  ,
+     "?",
+     "?",
+     "?",
+     "?",
+     $db{$k}{"chemist"}    ,
+     "?",
+     $db{$k}{"initiate_tx"};
+
+  }
+
+  unless (exists $db{$k}{"initiate_tx"}){
+    push @missing_initiates, $k;
+    print STDERR "DEBUG: found reaction missing initiateReaction() call: OTOMRO $k\n";
+  }
+}
+
+if (scalar(@missing_initiates)>0){
+  print STDERR "\n";
+  print STDERR "The following " . scalar(@missing_initiates) . " OTOMROs have no initiateReaction entry in the logs, but do have an analyseReactions entry:\n";
+  print STDERR " $_\n" for sort @missing_initiates;
+}
+
+
+
+
+########################################################################################################################
+#
+# Determine Effective Reaction Costs
+#
+########################################################################################################################
+
 # [[[ determine effective reaction cost
 print STDERR "\n\nDEBUG: NOW TO DETERMINE EFFECTIVE REACTION COSTS\n\n";
 
@@ -2122,7 +2170,7 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
   print  STDERR "\n";
   printf STDERR "DEBUG: OTOMRO %7s\n", $otomro;
 
-  if (! exists $db{$otomro}{typehash} || scalar( keys ($db{$otomro}{typehash})) <= 0){
+  if (! exists $db{$otomro}{typehash} || scalar( keys %{ $db{$otomro}{typehash} } ) <= 0){
     print STDERR "DEBUG: SKIPPING OTOMRO $otomro because it had no reaction\n";
     next;
   }
@@ -2205,47 +2253,11 @@ close($fh);
 
 ########################################################################################################################
 #
-# Output my optimized files.
+# Output my optimized files. [ ] TODO
 #
 ########################################################################################################################
 
 
-
-########################################################################################################################
-#
-# do an assessment of any initiateReaction calls missing an analyseReactions tx or vice versa
-#
-########################################################################################################################
-my @missing_initiates=();
-foreach my $k (sort keys %db){
-  unless (exists $db{$k}{"analyse_tx"}){
- 
-    my $this_pad = "         " x (5 - scalar( @{$db{$k}{"otoms_in_list"}}));
-    printf "| %8d | %s + %8d =>   %-70.70s + %10s | %10s | %-28s | %s | %66s | %66s |\n",
-     $k, 
-     $db{$k}{"otoms_in"} .$this_pad  ,
-     $db{$k}{"energy_in"}  ,
-     "?",
-     "?",
-     "?",
-     "?",
-     $db{$k}{"chemist"}    ,
-     "?",
-     $db{$k}{"initiate_tx"};
-
-  }
-
-  unless (exists $db{$k}{"initiate_tx"}){
-    push @missing_initiates, $k;
-    print STDERR "DEBUG: found reaction missing initiateReaction() call: OTOMRO $k\n";
-  }
-}
-
-if (scalar(@missing_initiates)>0){
-  print STDERR "\n";
-  print STDERR "The following " . scalar(@missing_initiates) . " OTOMROs have no initiateReaction entry in the logs, but do have an analyseReactions entry:\n";
-  print STDERR " $_\n" for sort @missing_initiates;
-}
 
 
 
