@@ -4900,6 +4900,9 @@ atom 76 34 Gk | Decay type	beta-
 atom 76 34 Gk | Filled in Outer Shell	0-0-0-0-0-2-2-1
 atom 76 34 Gk | Empty in Outer Shell	0-0-0-0-0-0-1-2
 
+atom 77 34 Gk | Lab sheet
+[ ]
+
 atom 67 35 Qi | Lab sheet
 atom 67 35 Qi | Qi otom
 atom 67 35 Qi | Token ID 91231780460482103063853042657704185304639485276785894545828594616416632663835

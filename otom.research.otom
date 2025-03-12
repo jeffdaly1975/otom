@@ -1,3 +1,96 @@
+2025-03-12 Mar.Wed 16:06:37 What's next to try for?
+
+*Hb-68⁻ 0.72 |
+*Hb-69⁻ 0.66 | *At-70⁻ 0.73 |
+*Hb-70⁻ 0.62 | *At-71⁻ 0.7  |
+*Hb-71⁻ 0.61 | *At-72⁻ 0.71 | *Ny-73⁻ 0.8  
+*Hb-72⁻ 0.45 | *At-73⁻ 0.55 | *Ny-74⁻ 0.65 
+*Hb-73⁻ 0.43 | *At-74⁻ 0.54 | *Ny-75⁻ 0.66 
+
+How to make Hb-67:
+| 67 30 Hb | Hb-67 | 15  7 Zz + 52 23 Aw + 2181 => 67 30 Hb
+| 67 30 Hb | Hb-67 | 23 10  M + 44 20  C + 2100 => 67 30 Hb
+| 67 30 Hb | Hb-67 | 28 13  S + 39 17  D + 2832 => 67 30 Hb
+|*67 30 Hb | Hb-67 | 33 15 Xc + 34 15 Xc + 2310 => 67 30 Hb
+
+
+  1  1 Ju∙(1.000) +  67 30 Hbª(0.780) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb  <--- makes At-68
+  2  1 Ju∙(1.000) +  66 30 Hbª(0.839) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb  <--- makes At-68
+  3  1 Ju∙(1.000) +  65 29 Jx⁻(0.787) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx [ ]
+  3  1 Ju∙(1.000) +  65 30 Hbª(0.870) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+  4  2  W∙(1.000) +  64 29 Jx⁻(0.831) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+  5  2  W∙(1.000) +  63 28 Yp⁻(0.805) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx [ ]
+  5  2  W∙(1.000) +  63 29 Jx⁻(0.884) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+  5  3 Cq⁺(0.017) +  63 28 Yp⁻(0.805) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+  6  3 Cq∙(1.000) +  62 28 Yp⁻(0.873) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+  7  3 Cq∙(1.000) +  61 27 Ic⁻(0.877) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx [ ]
+  7  3 Cq∙(1.000) +  61 28 Yp⁻(0.910) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+  7  4 Afª(0.194) +  61 27 Ic⁻(0.877) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+  8  4 Af∙(1.000) +  60 27 Ic⁻(0.930) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+  9  4 Af∙(1.000) +  59 26 Xk⁻(0.780) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx [ ]
+  9  4 Af∙(1.000) +  59 27 Ic∙(1.982) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 10  4 Af⁻(0.289) +  58 26 Xk⁻(0.858) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 10  4 Af⁻(0.289) +  58 27 Ic∙(1.018) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+  9  5 Xl⁺(0.329) +  59 26 Xk⁻(0.780) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 10  5 Xlª(0.487) +  58 26 Xk⁻(0.858) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 11  5 Xl∙(1.110) +  57 26 Xk⁻(0.903) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 12  5 Xl⁻(0.313) +  56 25 Nb⁻(0.798) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 12  5 Xl⁻(0.313) +  56 26 Xk⁻(0.956) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 12  6 Pqª(0.696) +  56 25 Nb⁻(0.798) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 13  6 Pq∙(1.281) +  55 25 Nb⁻(0.869) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 14  6 Pq⁻(0.561) +  54 24 Oc⁻(0.807) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 14  6 Pq⁻(0.561) +  54 25 Nbª(0.903) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 15  6 Pq⁻(0.277) +  53 24 Oc⁻(0.861) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 15  6 Pq⁻(0.277) +  53 25 Nb⁻(0.972) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 14  7 Zzª(0.640) +  54 24 Oc⁻(0.807) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 15  7 Zz∙(1.433) +  53 24 Oc⁻(0.861) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb [ ]
+ 16  7 Zz⁻(0.578) +  52 23 Aw⁻(0.795) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx [ ]
+ 16  7 Zz⁻(0.578) +  52 24 Oc⁻(0.951) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 16  8 Dx∙(1.603) +  52 23 Aw⁻(0.795) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 17  8 Dx∙(1.588) +  51 23 Aw⁻(0.878) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 18  8 Dx∙(1.651) +  50 22  A⁻(0.884) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 18  8 Dx∙(1.651) +  50 23 Aw∙(1.004) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb <---makes At-68
+ 19  8 Dx⁻(0.521) +  49 22  A⁻(0.949) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 19  8 Dx⁻(0.521) +  49 23 Aw∙(1.943) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 18  9 Pm⁺(0.775) +  50 22  A⁻(0.884) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 19  9 Pm∙(1.837) +  49 22  A⁻(0.949) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 20  9 Pm⁻(0.721) +  48 21  E⁻(0.834) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 20  9 Pm⁻(0.721) +  48 22  A∙(1.023) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 21  9 Pm⁻(0.608) +  47 21  E⁻(0.849) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 21  9 Pm⁻(0.608) +  47 22  A∙(1.052) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 20 10  M∙(1.940) +  48 21  E⁻(0.834) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 21 10  M∙(1.904) +  47 21  E⁻(0.849) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 22 10  M∙(1.849) +  46 21  E⁻(0.902) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 23 10  M⁻(0.762) +  45 20  C⁻(0.802) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx [ ]
+ 23 10  M⁻(0.762) +  45 21  E⁻(0.964) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 23 11 Fw∙(1.792) +  45 20  C⁻(0.802) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 24 11 Fw⁻(0.815) +  44 20  C⁻(0.892) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 25 11 Fw⁻(0.737) +  43 19  O⁻(0.780) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 25 11 Fw⁻(0.737) +  43 20  C⁻(0.957) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 26 11 Fw⁻(0.634) +  42 19  O⁻(0.873) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 26 11 Fw⁻(0.634) +  42 20  C∙(1.085) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 25 12 Ptª(0.890) +  43 19  O⁻(0.780) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 26 12 Pt∙(1.813) +  42 19  O⁻(0.873) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 27 12 Pt⁻(0.868) +  41 18 Fj⁻(0.780) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 27 12 Pt⁻(0.868) +  41 19  O∙(1.032) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 28 12 Pt⁻(0.672) +  40 18 Fj∙(1.942) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 28 12 Pt⁻(0.672) +  40 19  Oª(0.965) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 27 13  Sª(0.936) +  41 18 Fj⁻(0.780) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 28 13  S∙(1.924) +  40 18 Fj∙(1.942) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 29 13  S⁻(0.824) +  39 17  D⁻(0.831) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx [ ]
+ 29 13  S⁻(0.824) +  39 18 Fjª(0.937) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 30 13  S⁻(0.650) +  38 17  D⁻(0.830) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 30 13  S⁻(0.650) +  38 18 Fjª(0.966) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 29 14 Zq∙(1.035) +  39 17  D⁻(0.831) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 30 14 Zq⁻(0.950) +  38 17  D⁻(0.830) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 31 14 Zq⁻(0.856) +  37 17  D⁻(0.895) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 32 14 Zq⁻(0.771) +  36 16 Gy⁻(0.840) => |⬆  68  31 At |=  68  30 Hb |⬇  68  29 Jx
+ 32 14 Zq⁻(0.771) +  36 17  Dª(0.921) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 32 15 Xc∙(1.004) +  36 16 Gy⁻(0.840) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb
+ 33 15 Xc⁻(0.966) +  35 16 Gy⁻(0.905) => |⬆  68  32 Ny |=  68  31 At |⬇  68  30 Hb [ ]
+ 34 15 Xc⁻(0.851) +  34 15 Xc⁻(0.851) => |⬆ (68  31 At)|=  68  30 Hb |⬇  68  29 Jx      <---NOPE makes At-68
+ 34 15 Xc⁻(0.851) +  34 16 Gy∙(1.956) => |⬆  68  32 Ny |= (68  31 At)|⬇  68  30 Hb      <---NOPE makes At-68
+
 2025-03-12 Mar.Wed 13:01:40 Okay so next lets see about Pw-75 & Pw-76
 
 If Xc-34+Fj-40 makes Pw-74:
@@ -17,7 +110,7 @@ or   Zq-32+O-43
 [f] Zq-32+O-43 + 4000 => ? Pw-75 ? <-----NOPE makes Gk-75 using 2294.45 nuclear+decay
 
 or this extensive list from otoms.decay_reactions_list.txt:
-  1  1 Ju∙(1.000) +  74 33 Pw⁻(0.861) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  1  1 Ju∙(1.000) +  74 33 Pw⁻(0.861) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [ ]
   2  1 Ju∙(1.000) +  73 33 Pw⁻(0.834) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
   3  1 Ju∙(1.000) +  72 32 Ny⁻(0.787) => |⬆ (75  34 Gk)|=  75  33 Pw |⬇  75  32 Ny <--- makes Gk-75 using 1550.24 nuclear+decay
   3  1 Ju∙(1.000) +  72 33 Pw⁻(0.839) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
@@ -25,8 +118,8 @@ or this extensive list from otoms.decay_reactions_list.txt:
   5  2  W∙(1.000) +  70 32 Ny⁻(0.841) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
   6  3 Cq∙(1.000) +  69 31 At⁻(0.786) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
   7  3 Cq∙(1.000) +  68 31 At⁻(0.815) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
-  8  4 Af∙(1.000) +  67 30 Hbª(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
-  9  4 Af∙(1.000) +  66 30 Hbª(0.839) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+  8  4 Af∙(1.000) +  67 30 Hbª(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [ ]
+  9  4 Af∙(1.000) +  66 30 Hbª(0.839) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [ ]
  10  4 Af⁻(0.289) +  65 29 Jx⁻(0.787) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
  10  4 Af⁻(0.289) +  65 30 Hbª(0.870) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  10  5 Xlª(0.487) +  65 29 Jx⁻(0.787) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
@@ -34,13 +127,13 @@ or this extensive list from otoms.decay_reactions_list.txt:
  12  5 Xl⁻(0.313) +  63 28 Yp⁻(0.805) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
  12  5 Xl⁻(0.313) +  63 29 Jx⁻(0.884) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  12  6 Pqª(0.696) +  63 28 Yp⁻(0.805) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
- 13  6 Pq∙(1.281) +  62 28 Yp⁻(0.873) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 13  6 Pq∙(1.281) +  62 28 Yp⁻(0.873) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [ ]
  14  6 Pq⁻(0.561) +  61 27 Ic⁻(0.877) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
  14  6 Pq⁻(0.561) +  61 28 Yp⁻(0.910) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  15  6 Pq⁻(0.277) +  60 27 Ic⁻(0.930) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
  15  6 Pq⁻(0.277) +  60 28 Yp∙(1.910) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  14  7 Zzª(0.640) +  61 27 Ic⁻(0.877) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
- 15  7 Zz∙(1.433) +  60 27 Ic⁻(0.930) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 15  7 Zz∙(1.433) +  60 27 Ic⁻(0.930) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [ ]
  16  7 Zz⁻(0.578) +  59 26 Xk⁻(0.780) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
  16  7 Zz⁻(0.578) +  59 27 Ic∙(1.982) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  16  8 Dx∙(1.603) +  59 26 Xk⁻(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
@@ -54,7 +147,7 @@ or this extensive list from otoms.decay_reactions_list.txt:
  21  9 Pm⁻(0.608) +  54 25 Nbª(0.903) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  21 10  M∙(1.904) +  54 24 Oc⁻(0.807) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  22 10  M∙(1.849) +  53 24 Oc⁻(0.861) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
- 23 10  M⁻(0.762) +  52 23 Aw⁻(0.795) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 23 10  M⁻(0.762) +  52 23 Aw⁻(0.795) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny <---adbFreedom said they tried this but got Gk-75
  23 10  M⁻(0.762) +  52 24 Oc⁻(0.951) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  23 11 Fw∙(1.792) +  52 23 Aw⁻(0.795) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  24 11 Fw⁻(0.815) +  51 23 Aw⁻(0.878) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
@@ -64,7 +157,7 @@ or this extensive list from otoms.decay_reactions_list.txt:
  26 11 Fw⁻(0.634) +  49 23 Aw∙(1.943) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  25 12 Ptª(0.890) +  50 22  A⁻(0.884) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  26 12 Pt∙(1.813) +  49 22  A⁻(0.949) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
- 27 12 Pt⁻(0.868) +  48 21  E⁻(0.834) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
+ 27 12 Pt⁻(0.868) +  48 21  E⁻(0.834) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny [ ]
  27 12 Pt⁻(0.868) +  48 22  A∙(1.023) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  28 12 Pt⁻(0.672) +  47 21  E⁻(0.849) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
  28 12 Pt⁻(0.672) +  47 22  A∙(1.052) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
@@ -83,10 +176,21 @@ or this extensive list from otoms.decay_reactions_list.txt:
  34 15 Xc⁻(0.851) +  41 19  O∙(1.032) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  34 16 Gy∙(1.956) +  41 18 Fj⁻(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  35 16 Gy⁻(0.905) +  40 18 Fj∙(1.942) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
- 36 16 Gy⁻(0.840) +  39 17  D⁻(0.831) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
- 36 16 Gy⁻(0.840) +  39 18 Fjª(0.937) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+ 36 16 Gy⁻(0.840) +  39 17  D⁻(0.831) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny [ ]
+ 36 16 Gy⁻(0.840) +  39 18 Fjª(0.937) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [ ]
  36 17  Dª(0.921) +  39 17  D⁻(0.831) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  37 17  D⁻(0.895) +  38 17  D⁻(0.830) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+
+Checking the Reactor parser logs I see there are instances of a stable+alpha that drop a proton so maybe one of these?
+[*] 32 14 Zq + 34 15 Xc + 1994 => 66 30 Hb
+[ ]  8  4 Af∙(1.000) +  67 30 Hbª(0.780) + 5000 => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+
+[*] 15  6 Pq + 18  9 Pm +  783 => 33 15 Xc
+[ ] 33 15 Xc + 34 15 Xc + 2310 => 67 30 Hb
+[ ]  9  4 Af∙(1.000) +  66 30 Hbª(0.839) + 5000 => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+
+
+
 
 [r]  6  3 Cq + 32 14 Zq + 1007 => 38 17  D
 [r] 34 15 Xc + 38 17  D + 2294 => 72 32 Ny
@@ -99,29 +203,29 @@ Hmm. Is it possible that anything that makes  Pw-75⁻ will decay to Gk-75 becau
  Fw-25 + Aw-52 + 2189 => Gk-77
 
 
-[ ] 77 34 Gk
-  [ ] add to otoms.complete.list.otom
+[.] 77 34 Gk
+  [c] add to otoms.complete.list.otom
   [ ] save reservoir image to mac folder
   [ ] bookmark to Firefox
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
-  [ ] add to syntax/otom.vim
-  [ ] add to otom_reactions.pl
-  [ ] update in Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
-  [ ] add to otoms.decay.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to otom_reactions.pl
+  [c] update in Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
+  [c] add to otoms.decay.otom
   [ ] add to otoms.otom
-  [ ] add to otoms.columns.otom
-  [ ] add reaction to otom.reactions.otom 
-  [ ] add to recipes.otom
-  [ ] add otoms.shapescan.data.otom
+  [c] add to otoms.columns.otom
+  [x] add reaction to otom.reactions.otom 
+  [c] add to recipes.otom
+  [c] add otoms.shapescan.data.otom
       [ ] put these vaules in ???
           [ ] ==>SHELL TABLE 1
           [ ] ==>SHELL TABLE 2
-  [ ] check off otoms.unfoundpossibilites.otom
+  [c] check off otoms.unfoundpossibilites.otom
   [c] make it myself
-  [ ] add to file otoms.decay.with.metadata.otom
-  [ ] add to file optimized.get.all.isotopes.otom
-  [ ] add to parseReactorLog.pl
-  [ ] add to token.image.descriptions.otom
+  [c] add to file otoms.decay.with.metadata.otom
+  [c] add to file optimized.get.all.isotopes.otom
+  [c] add to parseReactorLog.pl
+  [c] add to token.image.descriptions.otom
 
 
 2025-03-12 Mar.Wed 12:24:29 Rethinking that list of undisovered isotopes, sorted by stability- I have removed all the ones with more than 43 neutrons since we determined those are not possible. Or extremely unlikely to be possible since all possible tries have not been made.
@@ -388,7 +492,7 @@ Hmm. Is it possible that anything that makes  Pw-75⁻ will decay to Gk-75 becau
 0.77 *A-51⁻
 0.79 *Ic-62⁻
 0.8 *Ny-73⁻
-0.82 *Gk-77⁻
+0.82 *Gk-77⁻ DISCOVERED!
 
 If D-37+D-39 makes Gk-76:
 |*76 34 Gk | Gk-76 | 37 17  D + 39 17  D + 2415 => 76 34 Gk
@@ -5560,6 +5664,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 
 [r] 22 10  M + 34 15 Xc + 2254 => 56 25 Nb
 [*] 56 25 Nb +            4804 => 26 12 Pt + 30 13  S
+[ ] Ju-1 + S-30
 0x2a4a wallet
 
 [r] 17  9 Pm + 18  9 Pm +  996 => 35 18 Fj
