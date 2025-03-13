@@ -171,8 +171,8 @@ or this extensive list from otoms.decay_reactions_list.txt:
   5  2  W∙(1.000) +  70 32 Ny⁻(0.841) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
   6  3 Cq∙(1.000) +  69 31 At⁻(0.786) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
   7  3 Cq∙(1.000) +  68 31 At⁻(0.815) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
-  8  4 Af∙(1.000) +  67 30 Hbª(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [ ]
-  9  4 Af∙(1.000) +  66 30 Hbª(0.839) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [ ]
+  8  4 Af∙(1.000) +  67 30 Hbª(0.780) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [f] Makes Gk-75
+  9  4 Af∙(1.000) +  66 30 Hbª(0.839) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw [f] Makes Gk-75
  10  4 Af⁻(0.289) +  65 29 Jx⁻(0.787) => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny
  10  4 Af⁻(0.289) +  65 30 Hbª(0.870) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
  10  5 Xlª(0.487) +  65 29 Jx⁻(0.787) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
@@ -235,12 +235,12 @@ or this extensive list from otoms.decay_reactions_list.txt:
  37 17  D⁻(0.895) +  38 17  D⁻(0.830) => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
 
 Checking the Reactor parser logs I see there are instances of a stable+alpha that drop a proton so maybe one of these?
-[*] 32 14 Zq + 34 15 Xc + 1994 => 66 30 Hb
-[ ]  8  4 Af∙(1.000) +  67 30 Hbª(0.780) + 5000 => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+[r] 15  6 Pq + 18  9 Pm +  783 => 33 15 Xc
+[r] 33 15 Xc + 34 15 Xc + 2310 => 67 30 Hb
+[f]  8  4 Af∙(1.000) +  67 30 Hbª(0.780) + 2500 => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw <---NOPE makes Gk-75 using 1719.57 nuclear
 
-[*] 15  6 Pq + 18  9 Pm +  783 => 33 15 Xc
-[ ] 33 15 Xc + 34 15 Xc + 2310 => 67 30 Hb
-[ ]  9  4 Af∙(1.000) +  66 30 Hbª(0.839) + 5000 => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw
+[r] 32 14 Zq + 34 15 Xc + 1994 => 66 30 Hb
+[f]  9  4 Af∙(1.000) +  66 30 Hbª(0.839) + 2500 => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw <---NOPE makes Gk-75 using 1806.64 nuclear
 
 
 
