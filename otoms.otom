@@ -3456,6 +3456,9 @@ atom 61 27 Ic | Decay type	beta-
 atom 61 27 Ic | Filled in Outer Shell	0-0-0-0-0-1-1-1
 atom 61 27 Ic | Empty in Outer Shell	0-0-0-0-0-0-1-1
 
+atom 62 27 Ic | Lab sheet
+[ ] TODO
+
 atom 54 28 Yp | Lab sheet
 atom 54 28 Yp | Yp otom
 atom 54 28 Yp | Token ID 63066111409797999657384111483074703332958758765304692946297930016640691361120
