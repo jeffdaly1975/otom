@@ -1,3 +1,17 @@
+2025-03-13 Mar.Thu 11:43:22 Wow. On Reservoir looking at the new OTOM isotope Ic-62, the Provenance shows someone bought one of these for 0.01 eth; however on shapescan we see it was actually 0.005 eth but rounded up. That shouldn't be rounded up. But its nice to see isotope purchases.
+
+2025-03-13 Mar.Thu 11:07:01
+[f] Ju-3 + A-50  +2000 => ? Aw-53? or decay to Oc-53?<---makes Oc-53 using 1186.63 nuclear+decay
+[f] Ju-3 + Fj-41 +2000 => ? O-44 ? or decay to C-44? <---makes C-44 using 1035.11 nuclear+decay
+[f] Ju-3 + D-39  +2000 => ? Fj-42? or decay to O-42? <---makes O-42 using 1026.74 nuclear+decay
+
+
+[r] 25 11 Fw + 25 11 Fw + 1414 => 50 22  A
+
+[r]  9  4 Af + 32 14 Zq + 1146 => 41 18 Fj
+
+[r] 14  6 Pq + 25 11 Fw + 1002 => 39 17  D
+
 2025-03-12 Mar.Wed 20:57:11 What about Xk-60?
 
 These make Xk-59:
@@ -17,10 +31,10 @@ Pt-28 + Zq-32 => ? Xk-60 ?
 Fw-25 + Xc-34 + 1727 => Xk-59
 Ju-3  + Xk-59 + 1303 => Ic-62
 
-[.] 62 27 Ic
+[c] 62 27 Ic
   [c] add to otoms.complete.list.otom
-  [ ] save reservoir image to mac folder
-  [ ] bookmark to Firefox
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
   [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
   [c] add to syntax/otom.vim
   [c] add to otom_reactions.pl
@@ -242,9 +256,6 @@ Checking the Reactor parser logs I see there are instances of a stable+alpha tha
 [r] 32 14 Zq + 34 15 Xc + 1994 => 66 30 Hb
 [f]  9  4 Af∙(1.000) +  66 30 Hbª(0.839) + 2500 => |⬆  75  35 Qi |=  75  34 Gk |⬇  75  33 Pw <---NOPE makes Gk-75 using 1806.64 nuclear
 
-
-
-
 [r]  6  3 Cq + 32 14 Zq + 1007 => 38 17  D
 [r] 34 15 Xc + 38 17  D + 2294 => 72 32 Ny
 [f]  3  1 Ju∙(1.000) +  72 32 Ny⁻(0.787) + 5000 => |⬆  75  34 Gk |=  75  33 Pw |⬇  75  32 Ny <--- makes Gk-75 using 1550.24 nuclear+decay
@@ -255,17 +266,16 @@ Hmm. Is it possible that anything that makes  Pw-75⁻ will decay to Gk-75 becau
  Pq-15 + D-37  + 1177 => Aw-52
  Fw-25 + Aw-52 + 2189 => Gk-77
 
-
-[.] 77 34 Gk
+[c] 77 34 Gk
   [c] add to otoms.complete.list.otom
-  [ ] save reservoir image to mac folder
-  [ ] bookmark to Firefox
+  [c] save reservoir image to mac folder
+  [c] bookmark to Firefox
   [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
   [c] add to syntax/otom.vim
   [c] add to otom_reactions.pl
   [c] update in Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
   [c] add to otoms.decay.otom
-  [ ] add to otoms.otom
+  [c] add to otoms.otom
   [c] add to otoms.columns.otom
   [x] add reaction to otom.reactions.otom 
   [c] add to recipes.otom
@@ -279,7 +289,6 @@ Hmm. Is it possible that anything that makes  Pw-75⁻ will decay to Gk-75 becau
   [c] add to file optimized.get.all.isotopes.otom
   [c] add to parseReactorLog.pl
   [c] add to token.image.descriptions.otom
-
 
 2025-03-12 Mar.Wed 12:24:29 Rethinking that list of undisovered isotopes, sorted by stability- I have removed all the ones with more than 43 neutrons since we determined those are not possible. Or extremely unlikely to be possible since all possible tries have not been made.
 

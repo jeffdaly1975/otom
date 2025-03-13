@@ -3457,7 +3457,23 @@ atom 61 27 Ic | Filled in Outer Shell	0-0-0-0-0-1-1-1
 atom 61 27 Ic | Empty in Outer Shell	0-0-0-0-0-0-1-1
 
 atom 62 27 Ic | Lab sheet
-[ ] TODO
+atom 62 27 Ic | Ic otom
+atom 62 27 Ic | Token ID 80485830025362393488741023045419089267794658744427702060874033030761972206191
+atom 62 27 Ic | Name	Ic
+atom 62 27 Ic | Discovered by	0x2a4A...1aAc
+atom 62 27 Ic | Current Supply	11
+atom 62 27 Ic | Series	metal
+atom 62 27 Ic | Protons	27
+atom 62 27 Ic | Neutrons	35
+atom 62 27 Ic | Stability	0.795
+atom 62 27 Ic | Density	33.937 g/cm³
+atom 62 27 Ic | Radius	1.222 pm
+atom 62 27 Ic | Electronegativity	0.233
+atom 62 27 Ic | Mass	62.000 amu
+atom 62 27 Ic | Metallic	Yes
+atom 62 27 Ic | Decay type	beta-
+atom 62 27 Ic | Filled in Outer Shell	0-0-0-0-0-1-1-1
+atom 62 27 Ic | Empty in Outer Shell	0-0-0-0-0-0-1-1
 
 atom 54 28 Yp | Lab sheet
 atom 54 28 Yp | Yp otom
@@ -4904,7 +4920,23 @@ atom 76 34 Gk | Filled in Outer Shell	0-0-0-0-0-2-2-1
 atom 76 34 Gk | Empty in Outer Shell	0-0-0-0-0-0-1-2
 
 atom 77 34 Gk | Lab sheet
-[ ]
+atom 77 34 Gk | Gk otom
+atom 77 34 Gk | Token ID 96108821117003336580141255444165867324842427364384018699296671638045018643476
+atom 77 34 Gk | Name	Gk
+atom 77 34 Gk | Discovered by	jdblacklung.eth
+atom 77 34 Gk | Current Supply	17
+atom 77 34 Gk | Series	metal
+atom 77 34 Gk | Protons	34
+atom 77 34 Gk | Neutrons	43
+atom 77 34 Gk | Stability	0.821
+atom 77 34 Gk | Density	37.539 g/cm³
+atom 77 34 Gk | Radius	1.271 pm
+atom 77 34 Gk | Electronegativity	0.211
+atom 77 34 Gk | Mass	77.000 amu
+atom 77 34 Gk | Metallic	Yes
+atom 77 34 Gk | Decay type	beta-
+atom 77 34 Gk | Filled in Outer Shell	0-0-0-0-0-2-2-1
+atom 77 34 Gk | Empty in Outer Shell	0-0-0-0-0-0-1-2
 
 atom 67 35 Qi | Lab sheet
 atom 67 35 Qi | Qi otom
