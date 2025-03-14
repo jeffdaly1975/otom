@@ -5460,7 +5460,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ +  S-27ª |+1500              =>  ?Zq-28?           | [r] +1500 Makes Zq-28 using  766.43 nuclear
 |  Ju-1∙ +  S-28∙ |+1500              =>  ?Zq-29?           | [r] +1500 Makes Zq-29 using 1002.13 nuclear
 |  Ju-1∙ +  S-29⁻ |+1500              =>  ?Zq-30? Xc-31?    | [r] +1200 Makes Zq-30 using  749.37 nuclear
-|  Ju-1∙ +  S-30⁻ |+1500              =>  ?Zq-31? Xc-32?    | [ ] +1500 Makes 
+|  Ju-1∙ +  S-30⁻ |+1500              =>  ?Zq-31? Xc-32?    | [r] +1500 Makes Zq-31 using  731.56 nuclear
 |  Ju-1∙ + Zq-26⁺ |+  873.33 ..  5000 => ⬇ Zq-27            |
 |  Ju-1∙ + Zq-27⁺ |+  817.60 ..  3000 => ⬇ Zq-28            |
 |  Ju-1∙ + Zq-28⁺ |+1000              =>  ?Zq-29?           | [r] +1000 Makes Xc-29 using 758.02 nuclear
@@ -5632,7 +5632,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ny-67ª |+ 1279.95 ..  3000 =>   Pw-68            |
 |  Ju-1∙ + Ny-68ª |+ 1203.58 ..  1300 =>   Pw-69            |
 |  Ju-1∙ + Ny-69ª |+ 1277.35 ..  2789 =>   Pw-70            |
-|  Ju-1∙ + Ny-70⁻ |+ 1500             =>  ?Pw-71? Gk-72?    | [ ]
+|  Ju-1∙ + Ny-70⁻ |+ 1500             =>  ?Pw-71? Gk-72?    | [r] +1500 Makes Pw-71 using 1215.70 nuclear
 |  Ju-1∙ + Ny-71⁻ |+ 1217.28 ..  1650 =>   Pw-72            |
 |  Ju-1∙ + Ny-72⁻ |+ 2000             =>  ?Pw-73? Gk-74?    | [r] +2000 Makes Pw-73 using 1237.43 nuclear
 |  Ju-1∙ + Pw-64⁺ |+ 1500             =>  ?Gk-65? Pw-65?    | [ ]
@@ -5642,8 +5642,8 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Pw-68ª |+ 2000             =>  ?                 | [r] +2000 Makes Gk-69 using 1231.48 nuclear
 |  Ju-1∙ + Pw-69ª |+ 2000             =>  ?                 | [r] +2000 Makes Gk-70 using 1247.05 nuclear
 |  Ju-1∙ + Pw-70ª |+ 2000             =>  ?                 | [r] +2000 Makes Gk-71 using 1251.70 nuclear
-|  Ju-1∙ + Pw-71⁻ |+ 1500             =>  ?Gk-72? Qi-73?    | [ ]
-|  Ju-1∙ + Pw-72⁻ |+ 1500             =>  ?Gk-73? Qi-74?    | [ ]
+|  Ju-1∙ + Pw-71⁻ |+ 1500             =>  ?Gk-72? Qi-73?    | [r] +1500 Makes Gk-72 using 1234.68 nuclear
+|  Ju-1∙ + Pw-72⁻ |+ 1500             =>  ?Gk-73? Qi-74?    | [r] +1500 Makes Gk-73 using 1234.02 nuclear
 |  Ju-1∙ + Pw-73⁻ |+ 2000             =>  ?Gk-74? Qi-75?    | [r] +2000 Makes Gk-74 using 1266.79 nuclear
 |  Ju-1∙ + Pw-74⁻ |+ 1500             =>  ?Gk-75? Qi-76?    | [ ]
 |  Ju-1∙ + Gk-65⁺ |+ 2000             =>  ?Qi-66?           | [r] +2000 Makes⬇Gk-66 using 1119.97 nuclear+decay
@@ -5653,19 +5653,19 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Gk-69ª |+ 2000             =>  ?Qi-70?           | [r] +2000 Makes Qi-70 using 1235.34 nuclear
 |  Ju-1∙ + Gk-70ª |+ 1500             =>  ?Qi-71?           | [ ]
 |  Ju-1∙ + Gk-71ª |+ 1270.94 ..  2100 =>   Qi-72            |
-|  Ju-1∙ + Gk-72∙ |+ 1774.19 ..  5000 =>   Qi-73            |
-|  Ju-1∙ + Gk-73⁻ |+ 2000             =>  ?Qi-74?           | [ ]
+|  Ju-1∙ + Gk-72∙ |+ 1612.94 ..  5000 =>   Qi-73            |
+|  Ju-1∙ + Gk-73⁻ |+ 2000             =>  ?Qi-74?           | [r] +2000 Makes Qi-74 using 1283.35 nuclear
 |  Ju-1∙ + Gk-74∙ |+ 1845.62 ..  6010 =>   Qi-75            |
 |  Ju-1∙ + Gk-75∙ |+ 2000             =>  ?Qi-76?           | [ ]
 |  Ju-1∙ + Gk-76⁻ |+ 2000             =>  ?Qi-77?           | [r] +2000 Makes Qi-77 using 1279.42 nuclear
 |  Ju-1∙ + Gk-77⁻ |+ 2000             =>  ?Qi-78?           | [ ]
 |  Ju-1∙ + Qi-67⁺ |+ 2000             =>  ?Xy-68?           | [r] +2000 Makes⬇Qi-68 using 1134.33 nuclear+decay
-|  Ju-1∙ + Qi-68⁺ |+ 2000             =>  ?Xy-69?           | [ ]
+|  Ju-1∙ + Qi-68⁺ |+ 2000             =>  ?Xy-69?           | [r] +1500 Makes⬇Qi-69 using 1142.67 nuclear+decay
 |  Ju-1∙ + Qi-69⁺ |+ 2000             =>  ?Xy-70?           | [r] +1600 Makes⬇Qi-70 using 1183.44 nuclear+decay
 |  Ju-1∙ + Qi-70⁺ |+ 2000             =>  ?Xy-71?           | [r] +1600 Makes⬇Qi-71 using 1206.47 nuclear+decay
 |  Ju-1∙ + Qi-71⁺ |+ 1402.55 ..  5000 =>   Xy-72            |
 |  Ju-1∙ + Qi-72ª |+ 1272.56 ..  2100 =>   Xy-73            |
-|  Ju-1∙ + Qi-73ª |+ 2000             =>  ?Xy-74?           | [ ]
+|  Ju-1∙ + Qi-73ª |+ 2000             =>  ?Xy-74?           | [r] +1600 Makes Xy-74 using 1265.60 nuclear
 |  Ju-1∙ + Qi-74ª |+ 1345.01 ..  3000 =>   Xy-75            |
 |  Ju-1∙ + Qi-75⁺ |+ 1420.77 ..  4164 =>   Xy-76            |
 |  Ju-1∙ + Qi-76∙ |+ 2000             =>  ?Xy-77?           | [ ]
@@ -5726,10 +5726,18 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ua-84⁺ |+10000             =>   Ju-1 + Ua-84     |
 |  Ju-1∙ + Ua-85⁺ |+10000             =>   Ju-1 + Ua-85     |
 
+[r]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
+[r] 10  6 Pq + 24 12 Pt +  905 => 34 18 Fj
+[r] 34 18 Fj + 34 18 Fj + 2035 => 68 35 Qi
+
+[r] 22 10  M + 50 23 Aw + 2947 => 72 33 Pw
+
+[r] 15  6 Pq + 54 25 Nb + 1463 => 69 31 At
+[r]  1  1 Ju + 69 31 At + 1359 => 70 32 Ny
+
 [r] 22 10  M + 34 15 Xc + 2254 => 56 25 Nb
-[*] 56 25 Nb +            4804 => 26 12 Pt + 30 13  S
-[ ] Ju-1 + S-30
-0x2a4a wallet
+[r] 56 25 Nb +            4804 => 26 12 Pt + 30 13  S
+[r] Ju-1 + S-30
 
 [r] 17  9 Pm + 18  9 Pm +  996 => 35 18 Fj
 [r] 15  8 Dx + 35 18 Fj + 1395 => 50 26 Xk
@@ -5767,10 +5775,6 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 [r] 11  5 Xl + 34 15 Xc + 1361 => 45 20  C
 [r] Ju-1 + C-45
 
-[ ] 22 10  M + 34 15 Xc + 2254 => 56 25 Nb
-[ ] 56 25 Nb +            4804 => 26 12 Pt + 30 13  S
-[ ] Ju-1 + S-30
-
 [r]  7  4 Af + 25 13  S +  662 => 32 17  D
 [r] 20 10  M + 32 17  D + 2099 => 52 27 Ic
 [r] 52 27 Ic +            4514 => 24 12 Pt + 28 15 Xc
@@ -5778,7 +5782,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 
 
 [r] 15  6 Pq + 37 17  D + 1177 => 52 23 Aw
-[*] 52 23 Aw +            4291 => 24 11 Fw + 28 12 Pt
+[r] 52 23 Aw +            4291 => 24 11 Fw + 28 12 Pt
 
 [r] 14  6 Pq + 34 15 Xc + 1229 => 48 21  E
 [r] 48 21  E +            3890 => 22 10  M + 26 11 Fw
