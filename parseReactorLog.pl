@@ -773,10 +773,12 @@ $db{"7151"}
           'protons_in'     => 26,
           'protons_out'    => 25,
           'energy_out'     => 95,
+          'energy_used'    => 5,
 
           'initiate_tx'    => '0x03b192ae172dd0962bb29a6f51a993e65dbbe1a767799fdda3153d2ca7c2dac7',
           'analyse_tx'     => '0x4a8b615e53a9def48dec55959852b049761293298f6aec3dfc426a282312d6a4',
           'type'           => 'none',
+          'typehash'       => {},
           'chemist'        => '0xa9f5fc8C95E762537764FB5BF7F7e7DBDE5F69ba',
           'subscripts'     => 0,
         };
@@ -792,6 +794,7 @@ $db{"7152"}
           'protons_in'     => 20,
           'protons_out'    => 19,
           'energy_out'     => '2466.39767237974820091',
+          'energy_used'    => '133.602328',
 
           'initiate_tx'    => '0x2295ba65eab68b4e5009a09a8649a837f46c3611493623d887a6eb55f30aab8e',
           'analyse_tx'     => '0xe894d44cf5604d2282d4989234da0820d2396144765c45bb3be92b2b414e43fa',
@@ -812,6 +815,7 @@ $db{"7153"}
           'protons_in'     => 25,
           'protons_out'    => 24,
           'energy_out'     => 0,
+          'energy_used'    => 0,
 
           'initiate_tx'    => '0x925ee8678c4f3aab60efd6b2c43b8f3f9fe00566e2f802aa38d4fb8577448397',
           'analyse_tx'     => '0x0ce6ee95c23fba4580ecb2bcc82d96fc2a2a28a7c8246419c0cc98e9278cb45f',
@@ -832,6 +836,7 @@ $db{"7158"}
           'protons_in'     => 39,
           'protons_out'    => 40,
           'energy_out'     => '9467.348312526826703106',
+          'energy_used'    => '532.651687',
 
           'initiate_tx'    => '0xc7095c10caf899076f8f3f3b5083037070e8551bd54549329c08a79972375400',
           'analyse_tx'     => '0x16d96260ce5542be43794f5b65e659c5029ec2d23c782360500877cf9324681c',
@@ -852,6 +857,7 @@ $db{"7159"}
           'protons_in'     => 66,
           'protons_out'    => 68,
           'energy_out'     => 38,
+          'energy_used'    => 2,
 
           'initiate_tx'    => '0x1ffe2f91276aed6a9a85514b840bc96859cc0c0c6037b2aa2f700f6a41b23bc9',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
@@ -872,6 +878,7 @@ $db{"7160"}
           'protons_in'     => 73,
           'protons_out'    => 73,
           'energy_out'     => '12.96447257',
+          'energy_used'    => '27.035527',
 
           'initiate_tx'    => '0xca8e54cd53af9dff60a223c9968cf93c6509224af30bd94fdb87b67cf554bb59',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
@@ -892,10 +899,12 @@ $db{"7161"}
           'protons_in'     => 39,
           'protons_out'    => 39,
           'energy_out'     => 8550,
+          'energy_used'    => 450,
 
           'initiate_tx'    => '0x664bb16e322774c0c5a2fdc874139332065b5b04ffbf64954df57900a11e9252',
           'analyse_tx'     => '0x5206bdde23fe7900b5070420c2b277b4954b7189e4db0a699b50109e2a335edc',
           'type'           => 'none',
+          'typehash'       => {},
           'chemist'        => '0x9CED3bDC0e6ff65C3f072b0b5527184843Ed4eaf',
           'subscripts'     => 0,
         };
@@ -911,6 +920,7 @@ $db{"7162"}
           'protons_in'     => 69,
           'protons_out'    => 69,
           'energy_out'     => '1.89363028',
+          'energy_used'    => '38.10637',
 
           'initiate_tx'    => '0x9dd04eff18eb997bfd1077e1df8f30dfdeaad519a28d0de8fb40f797465e2c65',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
@@ -931,6 +941,7 @@ $db{"7163"}
           'protons_in'     => 63,
           'protons_out'    => 64,
           'energy_out'     => 38,
+          'energy_used'    => 2,
 
           'initiate_tx'    => '0x1b780ad18bfd4d18292d2c63e5b659af31a7bad12bb1c7651631db7dc7912e4f',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
@@ -951,6 +962,7 @@ $db{"7164"}
           'protons_in'     => 36,
           'protons_out'    => 36,
           'energy_out'     => '1630.041516494084817168',
+          'energy_used'    => '2365.958484',
 
           'initiate_tx'    => '0x5bc87b29c64824bbfff5825d9b64f7e6cd768cdcf453b805a5b07041e06aeef3',
           'analyse_tx'     => '0x82c0c6abe2fb59ffc85f5044a62a75868c83468598b02afc1c8109500e71f8e7',
@@ -971,6 +983,7 @@ $db{"7165"}
           'protons_in'     => 52,
           'protons_out'    => 52,
           'energy_out'     => '175.70269973',
+          'energy_used'    => '24.2973',
 
           'initiate_tx'    => '0x2364ed5ec66f0b480ad37bc1e889be9443855f3925743e4965ee4c146451b49d',
           'analyse_tx'     => '0xb6eae42cca9f71e68feeca9528ac745893c9dcc1b03f20b53026fa89f2c89c86',
@@ -991,6 +1004,7 @@ $db{"7166"}
           'protons_in'     => 19,
           'protons_out'    => 19,
           'energy_out'     => '76.802802910718980911',
+          'energy_used'    => '866.197197',
 
           'initiate_tx'    => '0x9011226ad20feee3d2758b4055049907dd346490d74cd5084b95ca65ad8c4052',
           'analyse_tx'     => '0xf9791cd1d34b339796a0e7471766a3ea000ebc142a1c968614a0aca2d7769bbd',
@@ -1011,6 +1025,7 @@ $db{"7167"}
           'protons_in'     => 59,
           'protons_out'    => 59,
           'energy_out'     => '4.75',
+          'energy_used'    => '0.25',
 
           'initiate_tx'    => '0x159e0058dbbbfe8be822eb27ebdfd40aa2cd9a234f9cc8c90b590286b8853abb',
           'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
@@ -1031,6 +1046,7 @@ $db{"7168"}
           'protons_in'     => 8,
           'protons_out'    => 8,
           'energy_out'     => '92.752246267871456098',
+          'energy_used'    => '7.247754',
 
           'initiate_tx'    => '0x3b6d47f81fbe7402d6ce7c287a262f19b62d1f665c043b250adecf8eb34d3f0a',
           'analyse_tx'     => '0xb6caf98f8b52588d829b017e1a9206ac069e47fe337da359edba794d415938fd',
@@ -1051,10 +1067,12 @@ $db{"7169"}
           'protons_in'     => 52,
           'protons_out'    => 52,
           'energy_out'     => 19,
+          'energy_used'    => 1,
 
           'initiate_tx'    => '0x09e93bea40b9f1f0fcdc76fc6f5a74162b405ec2171e8979c4259997d0076324',
           'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
           'type'           => 'none',
+          'typehash'       => {},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
@@ -1070,10 +1088,12 @@ $db{"7170"}
           'protons_in'     => 39,
           'protons_out'    => 39,
           'energy_out'     => '8550',
+          'energy_used'    => 450,
 
           'initiate_tx'    => '0x2bf451fe26e7dc3cca4a90dad74debb7baff65f3921d9ce008836fdca095fb68',
           'analyse_tx'     => '0xa98ae9cf4de93a6e30c9790bca7bd74effb02d79490d4241193614e552d254f7',
           'type'           => 'none',
+          'typehash'       => {},
           'chemist'        => '0x9CED3bDC0e6ff65C3f072b0b5527184843Ed4eaf',
           'subscripts'     => 0,
         };
@@ -1090,6 +1110,7 @@ $db{"7171"}
           'protons_in'     => 49,
           'protons_out'    => 48,
           'energy_out'     => 19,
+          'energy_used'    => 1,
 
           'initiate_tx'    => '0x5086778bddddf4b4a4ca37b4a7b98e363940fe870efa3cd5f7b4e27fe1124f32',
           'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
@@ -1110,10 +1131,12 @@ $db{"7172"}
           'protons_in'     => 72,
           'protons_out'    => 72,
           'energy_out'     => 19,
+          'energy_used'    => 1,
 
           'initiate_tx'    => '0x5cc25241078a3b6e90ed6882c74f571e6ffd7c4d30b82f7bf8a2be38ad767ccf',
           'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
           'type'           => 'none',
+          'typehash'       => {},
           'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
           'subscripts'     => 0,
         };
@@ -1129,6 +1152,7 @@ $db{"7173"}
           'protons_in'     => 2,
           'protons_out'    => 2,
           'energy_out'     => '93.122245367616415024',
+          'energy_used'    => '106.877755',
 
           'initiate_tx'    => '0x2cc1dce9c6d754c637041680ba1390810922d494706737ccd89fc6f6e8f5b2cc',
           'analyse_tx'     => '0xe732e3c7187f2a34191f374b92bff5161bdf2013908d9e8a88a3fcfbc2180268',
@@ -1149,6 +1173,7 @@ $db{"7174"}
           'protons_in'     => 50,
           'protons_out'    => 49,
           'energy_out'     => '10.36828627',
+          'energy_used'    => '9.631714',
 
           'initiate_tx'    => '0xaac2297db734895e6fa8d68a01408fcf23199197af8532f0f2d04d726fbd9fdc',
           'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
@@ -1169,6 +1194,7 @@ $db{"7175"}
           'protons_in'     => 34,
           'protons_out'    => 32,
           'energy_out'     => '162.975019694509967394',
+          'energy_used'    => '37.02498',
 
           'initiate_tx'    => '0xb0f84370d644b3e1734aac0dcadc052d92da790169749b7be68dde3397965805',
           'analyse_tx'     => '0x592c50cdab16af0c9303ea0a554bda2c873b73480dc5868e43b32549a2d7f693',
@@ -1189,6 +1215,7 @@ $db{"7176"}
           'protons_in'     => 67,
           'protons_out'    => 68,
           'energy_out'     => 0,
+          'energy_used'    => 0,
 
           'initiate_tx'    => '0xbd36fde1477deb0c5117b854f1271ed9af1136698b247baf7108a149175c2996',
           'analyse_tx'     => '0xfe7182b85c6c518c68a77d61544b66a20466fa0e671a17bc0fdffebfb2050496',
@@ -1209,6 +1236,7 @@ $db{"7177"}
           'protons_in'     => 3,
           'protons_out'    => 3,
           'energy_out'     => '3.0641847',
+          'energy_used'    => '1.935815',
 
           'initiate_tx'    => '0xe37c39b6ab4923ce8591505f4f48fda29b768778469503b4bd182d3a2f8d4811',
           'analyse_tx'     => '0x1a212acb9f570443da31212c4259b1dfc64af4af75dfb1332c74d5cf71846384',
@@ -1229,10 +1257,12 @@ $db{"8361"}
           'protons_in'     => 30,
           'protons_out'    => 30,
           'energy_out'     => '1191.299999999999954525',
+          'energy_used'    => '62.7',
 
           'initiate_tx'    => '0x84a98e2b962fe85a95e5b47af4f7d3ca7c38d52187f86ef010a17966498839e9',
           'analyse_tx'     => '0x27a38c78d6ea5065e67bf8996493f7971146909b9a4ab99f745e12be278bd74f',
           'type'           => 'none',
+          'typehash'       => {},
           'chemist'        => '0xa4Ac3321fD639a7e2b53dA62897955D920c97012',
           'subscripts'     => 0,
         };
@@ -1248,6 +1278,7 @@ $db{"8725"}
           'protons_in'     => 36,
           'protons_out'    => 36,
           'energy_out'     => '501.356493217025388276',
+          'energy_used'    => '2498.643507',
 
           'initiate_tx'    => '0x1827ad6a3467941a790cf0b1129b142d01ac91825b0cd60efe6591d284849e9b',
           'analyse_tx'     => '0x6df0a155eb4e51baa0b375cb2ad1f1e508569737ce9f1b07d912da6fb4cbed50',
@@ -1268,6 +1299,7 @@ $db{"8726"}
           'protons_in'     => 67,
           'protons_out'    => 67,
           'energy_out'     => '697.83435847',
+          'energy_used'    => '82.165642',
 
           'initiate_tx'    => '0xa59c1579a31e803f67845cf4c94bd75b818a8de7ce625fd027cdfa8d15e01414',
           'analyse_tx'     => '0xd1b755f41055cd7c9227da9301fbcde6e0623461f97e43fe6c4184a13294f369',
@@ -1288,6 +1320,7 @@ $db{"8727"}
           'protons_in'     => 35,
           'protons_out'    => 35,
           'energy_out'     => '539.372679214613071963',
+          'energy_used'    => '2460.627321',
 
           'initiate_tx'    => '0xf3248d5d1d50fef68bec40b2e27ad14229424e8e66dec31d7e7038a675ca4b94',
           'analyse_tx'     => '0xeb00d24d54f62d7a1ca216cd306f3162d508fa5ccddbb6dd62bede2c4b14d5bc',
@@ -1308,6 +1341,7 @@ $db{"8728"}
           'protons_in'     => 28,
           'protons_out'    => 29,
           'energy_out'     => '114.752300608899915346',
+          'energy_used'    => '1875.247699',
 
           'initiate_tx'    => '0x96d7a3a379a6bf223751a601a22615e0f8bfaa29e7f4d5407ca410ce1186fa61',
           'analyse_tx'     => '0x9dea7fce30138dd2b6186c4d9508b356537e8e3d35a13959d7da5d3faf1fb610',
@@ -1328,6 +1362,7 @@ $db{"8729"}
           'protons_in'     => 34,
           'protons_out'    => 34,
           'energy_out'     => '291.773518356183785727',
+          'energy_used'    => '2408.226482',
 
           'initiate_tx'    => '0xd88f4f35664a2e72150864d4a68e244bb116c9a53037ee5dcafaff37e453055b',
           'analyse_tx'     => '0x3abb4e13d8c3f4fb32a923487dce8fc3114c21c573e0b86e594e98d96040fc4e',
@@ -1348,6 +1383,7 @@ $db{"8730"}
           'protons_in'     => 13,
           'protons_out'    => 14,
           'energy_out'     => '23.75',
+          'energy_used'    => '1.25',
 
           'initiate_tx'    => '0xebf041f9303890ae2fecaa5f983f73279bb5d42639e318a1a3328e4ff41d05f8',
           'analyse_tx'     => '0x8ce009fa3496fa979314da971f9012c4b5cb3553ef5017877f874c8db9c3ce35',
@@ -1368,6 +1404,7 @@ $db{"11758"}
           'protons_in'     => 39,
           'protons_out'    => 39,
           'energy_out'     => '417.020081097991919705',
+          'energy_used'    => '2832.979919',
 
           'initiate_tx'    => '0xed08899d0ccfc985dbac1624daf486eb37b604932001dda88b31837e34db0c03',
           'analyse_tx'     => '0x238bfa67f7510e5ef58f2a5d556db44addc8c26bb02acfdd5574e6cc08e582dd',
@@ -1388,6 +1425,7 @@ $db{"11759"}
           'protons_in'     => 39,
           'protons_out'    => 39,
           'energy_out'     => '2320.82719442512598107',
+          'energy_used'    => '2679.172806',
 
           'initiate_tx'    => '0x42f29b5b5c508582a766e53d6dd0759931f2e05f35bcca7aa3489db1a48cf9f3',
           'analyse_tx'     => '0x3ef1302cd0f748babe25c1ba14a4bc2ec6a743ce54a42f15473a095256d277d4',
@@ -1408,6 +1446,7 @@ $db{"11760"}
           'protons_in'     => 40,
           'protons_out'    => 40,
           'energy_out'     => '3074.113061881275370979',
+          'energy_used'    => '1925.886938',
 
           'initiate_tx'    => '0x28f7afe2689d6eb57bb5719d851e7df2fcabe5d035c3557dfcf5c7c6e794e39b',
           'analyse_tx'     => '0x87384c942cae7873e46abc57449a21c6d31d615768b44f37ca2ff01a8e16198a',
@@ -1428,6 +1467,7 @@ $db{"11761"}
           'protons_in'     => 40,
           'protons_out'    => 40,
           'energy_out'     => '3074.113061881275370979',
+          'energy_used'    => '1925.886938',
 
           'initiate_tx'    => '0x4aefa211c7d5ec68c24ae4989daa8dbb47db8cb599c88366af5bd759b5259f42',
           'analyse_tx'     => '0x5d434b3dd0eef99e290f8dbec118424a599b21dd15322685d9fa84ae0a720c75',
@@ -1448,6 +1488,7 @@ $db{"11762"}
           'protons_in'     => 40,
           'protons_out'    => 40,
           'energy_out'     => '3074.113061881275370979',
+          'energy_used'    => '1925.886938',
 
           'initiate_tx'    => '0x4f08b141dabeae8aae64841d85d3d42ac658864d63c14b7a0fd5eb9cf915af7a',
           'analyse_tx'     => '0x8aa98c70c58ff5eddff4980ba5b0da431a5f0b58956e81742c9209f919bb8dce',
@@ -1468,10 +1509,12 @@ $db{"12581"}
           'protons_in'     => 50,
           'protons_out'    => 50,
           'energy_out'     => '47.5',
+          'energy_used'    => '2.5',
 
           'initiate_tx'    => '0x6738147d5f641e8a054c89490e240d05b006fe9068e53631f9b2e3ca16ea2875',
           'analyse_tx'     => '0xa0c78d5c29a0c7c6f428bfaa5de8fbee785f9dd6c7d4cfe507c079182d1ea265',
           'type'           => 'none',
+          'typehash'       => {},
           'chemist'        => '0x353f6124e6316cC19f0f0c4335bDFa1B268071B3',
           'subscripts'     => 0,
         };
@@ -1487,6 +1530,7 @@ $db{"12582"}
           'protons_in'     => 15,
           'protons_out'    => 14,
           'energy_out'     => '47.5',
+          'energy_used'    => '2.5',
 
           'initiate_tx'    => '0x73f29c9c1a2f7d9cd77ddd8e8226051d850f0d522e5401dc2e4b93c720561250',
           'analyse_tx'     => '0x79732a34cb0050424eb3d5837c8b5baafee919e694d5b9ad6c6dd5d157fb0e74',
@@ -1507,6 +1551,7 @@ $db{"12583"}
           'protons_in'     => 10,
           'protons_out'    => 10,
           'energy_out'     => '281.397672379748371441',
+          'energy_used'    => '18.602328',
 
           'initiate_tx'    => '0x2d33c16b98f110dbc443244d8c08a15fbb1dc05b8641a7157274c9e0aabf72b2',
           'analyse_tx'     => '0x37f5abfc4da3ad53386d54c1e5df18a4d1c3202cf7961180ac4eae3447fafff0',
@@ -1527,6 +1572,7 @@ $db{"12591"}
           'protons_in'     => 35,
           'protons_out'    => 35,
           'energy_out'     => '277.691359472708995781',
+          'energy_used'    => '22.308641',
 
           'initiate_tx'    => '0x33899baf7defd3c7eab4d3f0495033abf5d0f24e7dec25f0aa939e6b8c75c9a2',
           'analyse_tx'     => '0x2d1e02d4c4919fed074dc695890b546e3a88029d1469e048aee54ea789944529',
@@ -1547,10 +1593,12 @@ $db{"12592"}
           'protons_in'     => 30,
           'protons_out'    => 30,
           'energy_out'     => '47.5',
+          'energy_used'    => '2.5',
 
           'initiate_tx'    => '0x887505abfb795c9145598dfa1d8f7fcdfa67e3d857e42613c4f4b3b251e7b311',
           'analyse_tx'     => '0xe9847fe2d25e4b5c63a0a8b708a5009ff647c4b967fcad044ec0b3d44d6ea51d',
           'type'           => 'none',
+          'typehash'       => {},
           'chemist'        => '0x353f6124e6316cC19f0f0c4335bDFa1B268071B3',
           'subscripts'     => 0,
         };

@@ -5645,7 +5645,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Pw-71⁻ |+ 1500             =>  ?Gk-72? Qi-73?    | [r] +1500 Makes Gk-72 using 1234.68 nuclear
 |  Ju-1∙ + Pw-72⁻ |+ 1500             =>  ?Gk-73? Qi-74?    | [r] +1500 Makes Gk-73 using 1234.02 nuclear
 |  Ju-1∙ + Pw-73⁻ |+ 2000             =>  ?Gk-74? Qi-75?    | [r] +2000 Makes Gk-74 using 1266.79 nuclear
-|  Ju-1∙ + Pw-74⁻ |+ 1500             =>  ?Gk-75? Qi-76?    | [ ]
+|  Ju-1∙ + Pw-74⁻ |+ 1500             =>  ?Gk-75? Qi-76?    | [r] +1500 Makes Gk-75 using 1262.96 nuclear
 |  Ju-1∙ + Gk-65⁺ |+ 2000             =>  ?Qi-66?           | [r] +2000 Makes⬇Gk-66 using 1119.97 nuclear+decay
 |  Ju-1∙ + Gk-66⁺ |+ 1500             =>  ?Qi-67?           | [ ]
 |  Ju-1∙ + Gk-67⁺ |+ 2000             =>  ?Qi-68?           | [r] +2000 Makes⬇Gk-68 using 1187.77 nuclear+decay
@@ -5656,7 +5656,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Gk-72∙ |+ 1612.94 ..  5000 =>   Qi-73            |
 |  Ju-1∙ + Gk-73⁻ |+ 2000             =>  ?Qi-74?           | [r] +2000 Makes Qi-74 using 1283.35 nuclear
 |  Ju-1∙ + Gk-74∙ |+ 1845.62 ..  6010 =>   Qi-75            |
-|  Ju-1∙ + Gk-75∙ |+ 2000             =>  ?Qi-76?           | [ ]
+|  Ju-1∙ + Gk-75∙ |+ 2000             =>  ?Qi-76?           | [r] +2000 Makes Qi-76 using 1686.48 nuclear
 |  Ju-1∙ + Gk-76⁻ |+ 2000             =>  ?Qi-77?           | [r] +2000 Makes Qi-77 using 1279.42 nuclear
 |  Ju-1∙ + Gk-77⁻ |+ 2000             =>  ?Qi-78?           | [ ]
 |  Ju-1∙ + Qi-67⁺ |+ 2000             =>  ?Xy-68?           | [r] +2000 Makes⬇Qi-68 using 1134.33 nuclear+decay
@@ -5668,7 +5668,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Qi-73ª |+ 2000             =>  ?Xy-74?           | [r] +1600 Makes Xy-74 using 1265.60 nuclear
 |  Ju-1∙ + Qi-74ª |+ 1345.01 ..  3000 =>   Xy-75            |
 |  Ju-1∙ + Qi-75⁺ |+ 1420.77 ..  4164 =>   Xy-76            |
-|  Ju-1∙ + Qi-76∙ |+ 2000             =>  ?Xy-77?           | [ ]
+|  Ju-1∙ + Qi-76∙ |+ 2000             =>  ?Xy-77?           | [r] +2000 Makes Xy-77 using 1719.75 nuclear
 |  Ju-1∙ + Qi-77⁻ |+ 2000             =>  ?Xy-78?           | [r] +1500 Makes Xy-78 using 1280.58 nuclear
 |  Ju-1∙ + Qi-78⁻ |+ 1379.88 ..  3000 =>   Xy-79            |
 |  Ju-1∙ + Xy-69⁺ |+ 2000             =>  ?Xy-70?           | [ ]
@@ -5679,7 +5679,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Xy-74⁺ |+ 1259.04 ..  1321 =>   Gq-75            |
 |  Ju-1∙ + Xy-75⁺ |+ 1313.77 ..  2130 =>   Gq-76            |
 |  Ju-1∙ + Xy-76⁺ |+ 1379.57 ..  3000 =>   Gq-77            |
-|  Ju-1∙ + Xy-77∙ |+ 2000             =>  ?Gq-78?           | [ ]
+|  Ju-1∙ + Xy-77∙ |+ 2000             =>  ?Gq-78?           | [r] +2000 Makes Gq-78 using 1753.51 nuclear
 |  Ju-1∙ + Xy-78⁻ |+ 2000             =>  ?Gq-79?           | [r] +1500 Makes Gq-79 using 1306.85 nuclear
 |  Ju-1∙ + Xy-79∙ |+ 2000             =>  ?Gq-80?           | [ ]
 |  Ju-1∙ + Gq-71⁺ |+ 2000                 ?Bt-72?           | [r] +2000 Makes⬇Gq-72 using 1168.46 nuclear+decay
@@ -5725,6 +5725,10 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ua-83⁺ |+2000              =>   ?                | [ ]
 |  Ju-1∙ + Ua-84⁺ |+10000             =>   Ju-1 + Ua-84     |
 |  Ju-1∙ + Ua-85⁺ |+10000             =>   Ju-1 + Ua-85     |
+
+wallet 0x2a4a
+[r]  3  1 Ju + 37 17  D +  970 => 40 18 Fj
+[r] 34 15 Xc + 40 18 Fj + 3152 => 74 33 Pw
 
 [r]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
 [r] 10  6 Pq + 24 12 Pt +  905 => 34 18 Fj
