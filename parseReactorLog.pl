@@ -1605,10 +1605,10 @@ $db{"12592"}
 
 ## ]]]
 
-%db=();
-warn "DUMPING PRELOADED OTOMRO ENTRIES FOR DEBUGGING PURPOSES ONLY!!!\n";
-warn "DUMPING PRELOADED OTOMRO ENTRIES FOR DEBUGGING PURPOSES ONLY!!!\n";
-warn "DUMPING PRELOADED OTOMRO ENTRIES FOR DEBUGGING PURPOSES ONLY!!!\n";
+###%db=();
+###warn "DUMPING PRELOADED OTOMRO ENTRIES FOR DEBUGGING PURPOSES ONLY!!!\n";
+###warn "DUMPING PRELOADED OTOMRO ENTRIES FOR DEBUGGING PURPOSES ONLY!!!\n";
+###warn "DUMPING PRELOADED OTOMRO ENTRIES FOR DEBUGGING PURPOSES ONLY!!!\n";
 
 
 my $txhash="";
@@ -1852,7 +1852,8 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 
 
      unless ($discovered_otoms{"$1-$2"}++ > 0){
-       print STDERR "------> New isotope: $1-$2\n";
+      #print STDERR "------> New isotope: $1-$2\n";
+       print STDERR "   \x1b[7m$1-$2\x1b[0m   ";
      }
 
    } else {                                                        # this is a molecule
@@ -1880,7 +1881,8 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
      }
 
      unless ($discovered_molecules{"$molecule"}++ > 0){
-       print STDERR "------> New molecule: $molecule\n";
+      #print STDERR "------> New molecule: $molecule\n";
+       print STDERR "   \x1b[1m..oO[ $molecule ]Oo..\x1b[0m   ";
      }
    }
 
@@ -2007,10 +2009,10 @@ while ($line =~  /(.{6})646174613a6170706c69636174696f6e2f6a736f6e3b626173653634
  $db{$otomro}{"analyse_tx"}            = $txhash;
  $db{$otomro}{"blocknumber"}           = $blocknumber;
 
-print STDERR "DEBUG: Just set the \$db{$otomro}{typehash} to:\n";
-print STDERR Dumper( $db{$otomro}{"typehash"} );
-print STDERR "DEBUG: here are the keys of it:\n";
-print STDERR "DEBUG: [$_] => [$db{$otomro}{typehash}{$_}]\n" for keys %{ $db{$otomro}{typehash} };
+###print STDERR "DEBUG: Just set the \$db{$otomro}{typehash} to:\n";
+###print STDERR Dumper( $db{$otomro}{"typehash"} );
+###print STDERR "DEBUG: here are the keys of it:\n";
+###print STDERR "DEBUG: [$_] => [$db{$otomro}{typehash}{$_}]\n" for keys %{ $db{$otomro}{typehash} };
 
 }else{
   # Not a call to initiateReaction() nor analyseReactions() so skip it
@@ -2021,7 +2023,8 @@ print STDERR "DEBUG: [$_] => [$db{$otomro}{typehash}{$_}]\n" for keys %{ $db{$ot
 }
 
 
- print STDERR "$otomro\n";
+#print STDERR "$otomro\n";
+ print STDERR "$otomro..";
 
 }
 
@@ -2148,6 +2151,7 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
 
         $cheap_hash{$one_otom}{cheapest_otomro}   =$otomro;
         $cheap_hash{$one_otom}{cheapest_nrg_used} =$rounded_energy_used;
+print STDERR "DEBUG: updated cheapest otomro for [$one_otom] to otomro[$otomro] with cheapest_nrg_used[$cheapest_nrg_used]\n";
       }
 
       # The NRG input will give us the max input that produces this output.
@@ -2261,6 +2265,10 @@ close $dump;
 open(my $dump2, ">", "dumped.recipes.txt") or die;
 print $dump2 Dumper(%recipes);
 close $dump2;
+
+open(my $dump3, ">", "dumped.cheap_hash.txt") or die;
+print $dump3 Dumper(%cheap_hash);
+close $dump3;
 
 
 
