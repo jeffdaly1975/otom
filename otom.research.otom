@@ -5748,7 +5748,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ic-59∙ |+1500              =>  ?Yp-60?           | [r] +1500 Makes Yp-60 using 1496.42 nuclear
 |  Ju-1∙ + Ic-60⁻ |+1500              =>  ?Yp-61? Jx-62?    | [r] +1500 Makes Yp-61 using 1149.11 nuclear
 |  Ju-1∙ + Ic-61⁻ |+1500              =>  ?Yp-62? Jx-63?    | [r] +1500 Makes Yp-62 using 1139.80 nuclear
-|  Ju-1∙ + Ic-62⁻ |+1500              =>  ?Yp-63? Jx-64?    | [ ]
+|  Ju-1∙ + Ic-62⁻ |+1500              =>  ?Yp-63? Jx-64?    | [r] +1500 Makes Yp-63 using 1118.09 nuclear
 |  Ju-1∙ + Yp-54⁺ |+ 1223.56 ..  5000 => ⬇ Yp-55            |
 |  Ju-1∙ + Yp-55⁺ |+ 1284.07 ..  5000 =>   Jx-56            |
 |  Ju-1∙ + Yp-56⁺ |+ 1286.34 ..  5000 =>   Jx-57            |
@@ -5892,6 +5892,10 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ua-83⁺ |+2000              =>   ?                | [ ]
 |  Ju-1∙ + Ua-84⁺ |+10000             =>   Ju-1 + Ua-84     |
 |  Ju-1∙ + Ua-85⁺ |+10000             =>   Ju-1 + Ua-85     |
+
+[ ] 25 13  S + 25 13  S + 1467 => 50 26 Xk
+[ ]  1  1 Ju + 50 26 Xk +  984 => 51 27 Ic
+[ ]  9  5 Xl + 51 27 Ic + 1147 => 60 31 At
 
 wallet 0x2a4a
 [r]  3  1 Ju + 37 17  D +  970 => 40 18 Fj
