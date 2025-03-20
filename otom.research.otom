@@ -1,7 +1,7 @@
 2025-03-17 Mar.Mon 23:40:33 [ ] Do a check. For all the 2 input otom reactions, do the inputs sum to the single output otom or perhaps a larger/smaller one that decays to that and what is the stability value of that item. Because I still think i see all kinds of decay type input isotopes produce unexpected results but everyone says we should ignore the decay types and stability value of the inputs. Fine.
 
 2025-03-16 Mar.Sun 23:29:47 [ ] Does this work?
-[ ] Cq-5⁺ +  U-77⁺  +5000 => ⬇ Ua-82
+[f] Cq-5⁺ +  U-77⁺  +5000 => ⬇ Ua-82 <----NOPE OTOMRO 26591*|  Cq-5⁺ +  U-77⁺ +    10000 => ⬇ W-5 + H-77 +    9500.00 |     500.00 | decay                        | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x7d9e4bb2efa2659f54e15cede95c7b19518f4ac3004ce4894e7ef929475fb2c3 | 0xd437642fa93d9ee742b73810e78b61b76a5a98323c138826c0f1a0713b2c59fc |
 [ ] Af-7ª +  H-75⁺  +5000 => ⬇ Ua-82
 [ ] Xl-9⁺ +  Bt-73⁺ +5000 => ⬇ Ua-82
 
@@ -11,8 +11,8 @@
 2025-03-16 Mar.Sun 18:18:00 Try this:
 [r]  7  4 Af + 25 13  S +  662 => 32 17  D
 [r] 25 13  S + 25 13  S + 1473 => 50 26 Xk
-[f] D-32⁺ +  Xk-50⁺  +5000 => |            |            |⬇  82 42 Ua [ ]  <--- makes XkD using 301.83 metallic
-[f] D-32⁺ +  Xk-50⁺  +12000=> |            |            |⬇  82 42 Ua [ ]  <--- makes XkD using 651.83 metallic
+[f] D-32⁺ +  Xk-50⁺  +5000 => |            |            |⬇  82 42 Ua [ ]  <--- +5000  makes XkD using 301.83 metallic
+[f] D-32⁺ +  Xk-50⁺  +12000=> |            |            |⬇  82 42 Ua [ ]  <--- +12000 makes XkD using 651.83 metallic
 
 
 2025-03-16 Mar.Sun 14:12:31 [ ] make a table of mineables along x and y axis and an initial empty column and row. This allows for fission outputs when only reacting a single input isotope
@@ -5566,7 +5566,7 @@ Dammit why did those all drop a proton? Does the stability threshhold depend on 
 Like as it gets heavier, the stability value needs to be higher and higher to prevent decay?
 
 2025-02-18 Feb.Tue 12:42:05 Looking at all the otoms that haven't been successfully reacted with Ju-1 and there's a ton.
-[.] Try some:
+[*] Try some:
 
 |  Ju-1∙ + Ju-1∙  |                                         |
 |  Ju-1∙ + Ju-2∙  |                                         |
@@ -5852,7 +5852,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Xy-78⁻ |+ 2000             =>  ?Gq-79?           | [r] +1500 Makes Gq-79 using 1306.85 nuclear
 |  Ju-1∙ + Xy-79∙ |+ 2000             =>  ?Gq-80?           | [r] +1900 Makes Gq-80 using 1731.54 nuclear
 |  Ju-1∙ + Gq-71⁺ |+ 2000                 ?Bt-72?           | [r] +2000 Makes⬇Gq-72 using 1168.46 nuclear+decay
-|  Ju-1∙ + Gq-72⁺ |+ 2000                 ?Bt-73?           | [ ]
+|  Ju-1∙ + Gq-72⁺ |+ 2000                 ?Bt-73?           | [r] +1500 Makes⬇Gq-73 using 1177.53 nuclear+decay
 |  Ju-1∙ + Gq-73⁺ |+ 2000                 ?Bt-74?           | [r] +2000 Makes⬇Gq-74 using 1237.52 nuclear+decay
 |  Ju-1∙ + Gq-74⁺ |+ 2000                 ?Bt-75?           | [r] +2000 Makes⬇Gq-75 using 1260.42 nuclear+decay
 |  Ju-1∙ + Gq-75⁺ |+ 1272.77 ..  1688 =>   Bt-76            |
@@ -5862,8 +5862,8 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Gq-79⁻ |+ 1321.10 ..  1500 =>   Bt-80            |
 |  Ju-1∙ + Gq-80∙ |+ 1780.38 ..  2300 =>   Bt-81            |
 |  Ju-1∙ + Bt-73⁺ |+ 2000                ? H-74?            | [r] +2000 Makes⬇Bt-74 using 1187.28 nuclear+decay
-|  Ju-1∙ + Bt-74⁺ |+ 2000                ? H-75?            | [ ]
-|  Ju-1∙ + Bt-75⁺ |+ 1405.57 ..  5000 =>   H-76             |
+|  Ju-1∙ + Bt-74⁺ |+ 2000                ? H-75?            | [r] +1500 Makes⬇Bt-75 using 1202.58 nuclear+decay 
+|  Ju-1∙ + Bt-75⁺ |+ 1225.87 ..  5000 => ⬇ Bt-76            |
 |  Ju-1∙ + Bt-76⁺ |+ 1434.81 ..  5000 => ⬇ Bt-77            |
 |  Ju-1∙ + Bt-77⁺ |+ 1283.82 ..  1500 =>   H-78             |
 |  Ju-1∙ + Bt-78⁺ |+ 1385.63 ..  2900 =>   H-79             |
@@ -5871,7 +5871,7 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Bt-80⁻ |+ 1340.96 ..  1600 =>   H-81             |
 |  Ju-1∙ + Bt-81∙ |+ 1795.02 ..  2000 =>   H-82             |
 |  Ju-1∙ +  H-75⁺ |+ 2000                 ?H-76?            | [ ]
-|  Ju-1∙ +  H-76⁺ |+ 2000                 ?H-77?            | [ ]
+|  Ju-1∙ +  H-76⁺ |+ 2000                 ?H-77?            | [ ] +1600 Makes 
 |  Ju-1∙ +  H-77⁺ |+ 1300.77 ..  2500 => ⬇ H-78             |
 |  Ju-1∙ +  H-78⁺ |+ 1273.57 ..  1500 =>   U-79             |
 |  Ju-1∙ +  H-79⁺ |+ 1325.21 ..  1800 =>   U-80             |
@@ -5894,6 +5894,21 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ua-83⁺ |+2000              =>   ?                | [ ]
 |  Ju-1∙ + Ua-84⁺ |+10000             =>   Ju-1 + Ua-84     |
 |  Ju-1∙ + Ua-85⁺ |+10000             =>   Ju-1 + Ua-85     |
+
+[r] 17  9 Pm + 25 13  S + 1171 => 42 22  A
+[r] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
+[r] 15  8 Dx + 57 30 Hb + 1697 => 72 37 Gq
+
+[r] 17  9 Pm + 25 13  S + 1171 => 42 22  A
+[r] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
+[r] 17  9 Pm + 57 30 Hb + 1861 => 74 38 Bt
+
+[ ]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
+[ ] 13  7 Zz + 34 18 Fj + 1146 => 47 25 Nb
+[ ] 47 25 Nb +            3684 => 22 12 Pt + 25 13  S
+[ ]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
+[ ] 13  7 Zz + 34 18 Fj + 1146 => 47 25 Nb
+[ ] 22 12 Pt + 47 25 Nb + 1892 => 69 36 Xy
 
 [r] 15  6 Pq + 37 17  D + 1177 => 52 23 Aw
 [r] 25 11 Fw + 52 23 Aw + 2148 => 77 34 Gk
