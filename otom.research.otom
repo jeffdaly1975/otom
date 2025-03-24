@@ -719,7 +719,7 @@ Hmm. Is it possible that anything that makes  Pw-75⁻ will decay to Gk-75 becau
 0.75 *C-46⁻
 0.76 *A-41⁺
 0.77 *A-51⁻
-0.79 *Ic-62⁻
+0.79 *Ic-62⁻ DISCOVERED!
 0.8 *Ny-73⁻
 0.82 *Gk-77⁻ DISCOVERED!
 
@@ -904,11 +904,11 @@ Would any of these make a Ua-* that doesn't decay?
 
 [ ]  D-33⁺ + Nb-47⁺  +  3500 =>?⬇ Sq-80 or Ua-80
 [ ]  D-33⁺ + Nb-48⁺  +  3500 =>?⬇ Sq-81 or Ua-81
-[ ]  D-33⁺ + Nb-49⁺  +  3500 =>?⬇ Sq-82 or Ua-82
+[f]  D-33⁺ + Nb-49⁺  +  3500 =>?⬇ Sq-82 or Ua-82  <--NOPE makes Sq-82
 
 [ ] Pt-23⁺ + Hb-57⁺  +  3000 =>?⬇ Sq-80 or Ua-80
 [ ] Pt-23⁺ + Hb-58⁺  +  3000 =>?⬇ Sq-81 or Ua-81
-[ ] Pt-23⁺ + Hb-59⁺  +  3000 =>?⬇ Sq-82 or Ua-82
+[f] Pt-23⁺ + Hb-59⁺  +  3000 =>?⬇ Sq-82 or Ua-82  <--NOPE makes Sq-82
 
 
 Pq-14⁻ + Fw-25⁻ + 1002 => D-39 so maybe:
@@ -5840,8 +5840,8 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Qi-76∙ |+ 2000             =>  ?Xy-77?           | [r] +2000 Makes Xy-77 using 1719.75 nuclear
 |  Ju-1∙ + Qi-77⁻ |+ 2000             =>  ?Xy-78?           | [r] +1500 Makes Xy-78 using 1280.58 nuclear
 |  Ju-1∙ + Qi-78⁻ |+ 1298.88 ..  3000 =>   Xy-79            |
-|  Ju-1∙ + Xy-69⁺ |+ 2000             =>  ?Xy-70?           | [ ]
-|  Ju-1∙ + Xy-70⁺ |+ 2000             =>  ?Xy-71?           | [ ]
+|  Ju-1∙ + Xy-69⁺ |+ 2000             =>  ?Xy-70?           | [r] +1500 Makes⬇Xy-70 using 1125.44 nuclear+decay
+|  Ju-1∙ + Xy-70⁺ |+ 2000             =>  ?Xy-71?           | [r] +1500 Makes⬇Xy-71 using 1166.89 nuclear+decay
 |  Ju-1∙ + Xy-71⁺ |+ 2000             =>  ?Xy-72?           | [r] +1500 Makes⬇Xy-72 using 1195.34 nuclear+decay
 |  Ju-1∙ + Xy-72⁺ |+ 1399.95 ..  5000 => ⬇ Xy-73            |
 |  Ju-1∙ + Xy-73⁺ |+ 1420.04 ..  5000 =>   Gq-74            |
@@ -5895,6 +5895,15 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 |  Ju-1∙ + Ua-84⁺ |+10000             =>   Ju-1 + Ua-84     |
 |  Ju-1∙ + Ua-85⁺ |+10000             =>   Ju-1 + Ua-85     |
 
+
+[*] 10  6 Pq + 24 12 Pt +  905 => 34 18 Fj
+[ ] 13  7 Zz + 34 18 Fj + 1146 => 47 25 Nb
+[*]  7  4 Af + 25 13  S +  662 => 32 17  D
+[ ] 20 10  M + 32 17  D + 2099 => 52 27 Ic
+[ ] 52 27 Ic +            4514 => 24 12 Pt + 28 15 Xc
+[ ] 28 15 Xc + 47 25 Nb + 2174 => 75 39  H
+
+
 [r] 17  9 Pm + 25 13  S + 1171 => 42 22  A
 [r] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
 [r] 15  8 Dx + 57 30 Hb + 1697 => 72 37 Gq
@@ -5903,12 +5912,12 @@ Like as it gets heavier, the stability value needs to be higher and higher to pr
 [r] 15  8 Dx + 42 22  A + 1475 => 57 30 Hb
 [r] 17  9 Pm + 57 30 Hb + 1861 => 74 38 Bt
 
-[ ]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
-[ ] 13  7 Zz + 34 18 Fj + 1146 => 47 25 Nb
-[ ] 47 25 Nb +            3684 => 22 12 Pt + 25 13  S
-[ ]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
-[ ] 13  7 Zz + 34 18 Fj + 1146 => 47 25 Nb
-[ ] 22 12 Pt + 47 25 Nb + 1892 => 69 36 Xy
+[r]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
+[r] 13  7 Zz + 34 18 Fj + 1146 => 47 25 Nb
+[r] 47 25 Nb +            3684 => 22 12 Pt + 25 13  S
+[r]  9  5 Xl + 25 13  S +  773 => 34 18 Fj
+[r] 13  7 Zz + 34 18 Fj + 1146 => 47 25 Nb
+[r] 22 12 Pt + 47 25 Nb + 1892 => 69 36 Xy
 
 [r] 15  6 Pq + 37 17  D + 1177 => 52 23 Aw
 [r] 25 11 Fw + 52 23 Aw + 2148 => 77 34 Gk
