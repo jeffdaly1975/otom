@@ -1,4 +1,11 @@
-2025-03-27 Mar.Thu 13:20:25 There's a new UNIVERSE! However, nothing shows up in my inventory after mining! WTF!?
+2025-03-27 Mar.Thu 14:51:24 Otoms are showing up in my otom UI now.
+
+I'm quite overwhelmed trying to figure out how to manage this research now. I don't want to confuse otoms between universes. Feels like I should make a whole new repository for universe Bohr.
+However, all the reactions come through the same Reactor. My parser will have to deal with both (all potential) universes.
+
+
+
+2025-03-27 Mar.Thu 13:20:25 There's a new UNIVERSE! Universe Bohr! However, nothing shows up in my inventory after mining! WTF!?
 
 2025-03-17 Mar.Mon 23:40:33 [ ] Do a check. For all the 2 input otom reactions, do the inputs sum to the single output otom or perhaps a larger/smaller one that decays to that and what is the stability value of that item. Because I still think i see all kinds of decay type input isotopes produce unexpected results but everyone says we should ignore the decay types and stability value of the inputs. Fine.
 
