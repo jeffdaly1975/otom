@@ -1,5 +1,7 @@
 #!/usr/bin/perl -w
 
+# Universe: ALPHA
+
 #       42 otoms
 #      326 isotopes
 #   106276 combinations
