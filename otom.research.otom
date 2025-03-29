@@ -1,3 +1,61 @@
+2025-03-28 Mar.Fri 22:50:36 Been working on upgrading the parseReactorLog.pl script for BOHR. I should redesign it at some point so that it just figures everything out. As it is now, I have to predetermine all the isotopes that will be encountered and its a real pain. I have 173 isotopes in it right now and everytime I run it crashes out at some point because there's a new one I haven't encoded yet.
+
+2025-03-28 Mar.Fri 14:59:16 Determining Mineables on BOHR. Going through shapescan on the OTOMS token transfers and finding anything with a "mine" event. Believe there are 51 mineables:
+As-5
+As-6
+As-7
+Cl-25
+Cl-26
+Cl-27
+Ct-13
+Ct-15
+Ct-17
+Dz-7
+Dz-8
+Dz-9
+Eb-19
+Eb-20
+Eb-21
+Eb-22
+Ei-4
+Ei-5
+Gj-11
+Gy-67
+K-31
+K-34
+Kk-70
+Kk-71
+L-51
+Mt-32
+Mt-34
+Mt-35
+Nd-30
+P-21
+P-23
+Pb-48
+Ro-22
+Ro-23
+Ro-24
+S-102
+Sr-1
+Sr-2
+Sr-3
+T-15
+T-16
+T-17
+Uq-47
+Vi-10
+Vi-11
+Wy-50
+Xj-17
+Xj-18
+Yu-27
+Yu-29
+Yv-72
+
+BOHR mineables regex: \<\(As-5\|As-6\|As-7\|Cl-25\|Cl-26\|Cl-27\|Ct-13\|Ct-15\|Ct-17\|Dz-7\|Dz-8\|Dz-9\|Eb-19\|Eb-20\|Eb-21\|Eb-22\|Ei-4\|Ei-5\|Gj-11\|Gy-67\|K-31\|K-34\|Kk-70\|Kk-71\|L-51\|Mt-32\|Mt-34\|Mt-35\|Nd-30\|P-21\|P-23\|Pb-48\|Ro-22\|Ro-23\|Ro-24\|S-102\|Sr-1\|Sr-2\|Sr-3\|T-15\|T-16\|T-17\|Uq-47\|Vi-10\|Vi-11\|Wy-50\|Xj-17\|Xj-18\|Yu-27\|Yu-29\|Yv-72\)\>
+
+
 2025-03-27 Mar.Thu 14:51:24 Otoms are showing up in my otom UI now.
 
 I'm quite overwhelmed trying to figure out how to manage this research now. I don't want to confuse otoms between universes. Feels like I should make a whole new repository for universe Bohr.
