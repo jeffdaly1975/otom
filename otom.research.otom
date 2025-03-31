@@ -1,3 +1,5 @@
+2025-03-30 Mar.Sun 22:16:22 Downloading the token and chip images referenced on shapescan for BOHR isotopes. [ ] I wonder why Nd-30 has a different colored background than the rest? 
+
 2025-03-28 Mar.Fri 22:50:36 Been working on upgrading the parseReactorLog.pl script for BOHR. I should redesign it at some point so that it just figures everything out. As it is now, I have to predetermine all the isotopes that will be encountered and its a real pain. I have 173 isotopes in it right now and everytime I run it crashes out at some point because there's a new one I haven't encoded yet.
 
 2025-03-28 Mar.Fri 14:59:16 Determining Mineables on BOHR. Going through shapescan on the OTOMS token transfers and finding anything with a "mine" event. Believe there are 51 mineables:
