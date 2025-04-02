@@ -1,4 +1,85 @@
-2025-04-01 Apr.Tue 22:38:42 NEW DISCOVERY Dx-41 aka 41 19 Dx:
+2025-04-02 Apr.Wed 13:12:05 NEW DISCOVERY Nm-89 aka 89 46 Nm:
+
+ Dd-89 + 0 => Nm-89
+
+2025-04-02 Apr.Wed 10:54:58 NEW DISCOVERY Xj-21 aka 21 9 Xj and Ct-16 aka 16 7 Ct
+
+2025-04-02 Apr.Wed 10:45:50 Okay I mined x10 and now 6 OTOMROs showed up.
+
+[ ] Also Morpheus said he sent me 100 OTOMROs to analyze at my leisure, 1 at a time. They haven't showed up yet.
+
+2025-04-02 Apr.Wed 01:34:24 I started a bunch of reactions over an hour ago and the Unanalyzed Outputs have not shown up for me to analyze! WTF!?
+
+2025-04-02 Apr.Wed 00:39:43 Made new FILE decay.BOHR.otom and filled it in with what's known. came up with a bunch of things to try:
+
+   +--------+-----------+----------+-------+------+---------------------------+-----------------------------------+-------------------------------+--------------------------------+
+   | otom   |   isotope | Series   |Stabili|Decay |+0 decay with 0 Energy     |+5000  decay with 5000             |+10000  decay with 10000       |+20000  decay with 20000        |
+[r]| Yu-30∙ |  30 14 Yu | nonmetal |(1.757)|stable|                           |               [r] ?  Vi-14 + T-16 |                               |                                |
+[r]| K-35⁻  |  35 16  K | noble    |(0.837)|beta- |                  ?  Mt-35 |               [r] ? Ct-16 + Xj-19 |                               |                                |
+[r]| Mt-37⁻ |  37 17 Mt | alkaline |(0.856)|beta- |                  ?  Lu-37 |               [r] ?  T-18 + Xj-19 |                               |                                |
+[r]| Gd-45⁻ |  45 20 Gd | metal    |(0.780)|beta- |                  ?   V-45 |               [r] ?  Xj-21 + P-24 |                               |                                |
+[f]| L-49⁺  |  49 25  L | nonmetal |(0.846)|beta+ |              [f] ?  Ux-49 |                                   |                               |                                |
+[r]| Dd-89⁺ |  89 47 Dd | nonmetal |(0.486)|beta+ |              [r] ?  Nm-89 |                                   |                               |                                |
+[ ]| Dd-91⁺ |  91 47 Dd | nonmetal |(0.615)|beta+ |              [ ] ?  Nm-91 |                                   |                               |                                |
+[ ]| Ek-99⁺ |  99 54 Ek | metal    |(0.199)|beta+ |              [ ] ?  Vt-99 |                                   |                               |                                |
+[ ]| Ek-100⁺| 100 54 Ek | metal    |(0.213)|beta+ |              [ ] ? Vt-100 |                                   |                               |                                |
+[ ]| Ek-104⁺| 104 54 Ek | metal    |(0.494)|beta+ |              [ ] ? Vt-104 |                                   |                               |                                |
+
+
+
+[r]|   Dz-8∙ +  Eb-22∙  + [  935 ..  5000] =>   Yu-30                                             | nuclear                      
+   |   Dz-9∙ +  Eb-21∙  + [ 1167 ..  5000] =>   Yu-30                                             | nuclear                      
+   |   Sr-3∙ +  Cl-27∙  + [ 1055 ..  5000] =>   Yu-30                                             | nuclear                      
+   
+   |   P-21⁺ + Ek-100⁺  + [ 1844 ..  3000] =>   P-22 + Ek-99                                      | decay, nuclear               
+   |   P-21⁺ + Ek-101⁺  + [ 1926 ..  3500] =>   P-22 + Ek-100                                     | decay, nuclear               
+   
+[r]|   Sr-3∙ +   K-34∙  + [ 1029 ..  2000] =>   Mt-37                                             | nuclear                      
+   |  Ct-17⁻ +  Eb-20∙  + [ 1144 ..  5000] =>   Mt-37                                             | nuclear                      
+
+[r]|  Ct-17⁻ +  Xj-18∙  + [  855 ..  5000] =>   K-35                                              | nuclear                      
+   
+[r]|   T-17∙ +  Mt-32⁺  + [ 1361 ..  5000] =>   L-49                                              | nuclear                      
+   |  Eb-19⁺ +  Nd-30ª  + [ 1298 ..  5000] =>   L-49                                              | nuclear                      
+[r]|  Ro-22⁺ +  Cl-27∙  + [ 1581 ..  5000] =>   L-49                                              | nuclear                      
+   |  Ro-22⁺ +  Yu-27⁺  + [ 1246 ..  5000] => ⬇ L-49                                              | decay, nuclear               
+   |  Ro-23ª +  Cl-26ª  + [ 1333 ..  5000] =>   L-49                                              | nuclear                      
+   |  Xj-18∙ +   K-31⁺  + [ 1562 ..  5000] =>   L-49                                              | nuclear                      
+   
+   |   P-22⁺ +  Dd-89⁺  + [ 2402 .. 10000] =>   P-22 + Dd-89                                      | decay, nuclear               
+   |  Eb-19⁺ +  Ok-92⁺  + [ 1879 .. 10000] =>   P-22 + Dd-89                                      | decay, nuclear               
+   
+   |  Vi-11⁺ + Cv-102ª  + [ 1637 ..  5000] =>   P-22 + Dd-91                                      | decay, nuclear               
+   
+[r]|  Gj-11∙ +  Nd-34⁻  + [ 1073 ..  2000] =>   Gd-45                                             | nuclear                      
+   
+
+
+need:
+[r]|  Ct-17⁻ +  Ct-17⁻  + [  605 ..  5000] => ⬆ Nd-34                                             | decay, nuclear               
+
+
+
+[r]|    40452 |bohr    |  Mt-32⁺ +  S-102ª                     + 2824 =>   P-22 + Aw-112     | decay, nuclear  
+[r]|    40341*|bohr    |  Ro-22⁺ + Aw-112ª                     + 2202 =>   P-22 + Kn-112     | decay, nuclear  
+[r]|    40347*|bohr    | Kn-112ª                               +    0 =>   P-22 + Nm-90      | decay           
+[r]|                      Sr-2∙ +  Yu-27⁺          + [  665 ..  5000] =>   Nd-29             | nuclear                      
+[r]|    39282*|bohr    |  Nd-29⁺ +  Nm-90⁺                     + 2658 =>   P-22 + S-97       | decay, nuclear  
+[r]|    39289*|bohr    |  Xj-17⁺ +   S-97⁺                     + 1942 =>   P-22 + Ok-92      | decay, nuclear  
+[r]|                      Eb-19⁺ +  Ok-92⁺         + [ 1879 .. 10000] =>   P-22 + Dd-89      | decay, nuclear   
+                                                                     
+[ ]|    40452 |bohr    |  Mt-32⁺ +  S-102ª                     + 2824 =>   P-22 + Aw-112     | decay, nuclear  
+[ ]|    40341*|bohr    |  Ro-22⁺ + Aw-112ª                     + 2202 =>   P-22 + Kn-112     | decay, nuclear  
+[ ]|    40347*|bohr    | Kn-112ª                               +    0 =>   P-22 + Nm-90      | decay           
+[ ]|    39282*|bohr    |  Nd-29⁺ +  Nm-90⁺                     + 2658 =>   P-22 + S-97       | decay, nuclear  
+[ ]|    39289*|bohr    |  Xj-17⁺ +   S-97⁺                     + 1942 =>   P-22 + Ok-92      | decay, nuclear  
+[ ]|    39328 |bohr    |  Mt-32⁺ +  Ok-92⁺                     + 2462 =>   P-22 + Ek-102     | decay, nuclear  
+[ ]|    39171*|bohr    |   K-31⁺ + Ek-102⁺                     +  400 => ⬇ K-31 + Vt-102     | decay           
+[ ]|    39177*|bohr    |  Mt-32⁺ + Vt-102⁺                     +  375 => ⬇ K-32 + Cv-102     | decay           
+[ ]|    39185*|bohr    |  Vi-11⁺ + Cv-102ª                     + 1637 =>   P-22 + Dd-91      | decay, nuclear  
+
+
+2025-04-01 Apr.Tue 22:38:42 NEW DISCOVERY Dx-41 aka 41 19 Dx:   333 isotopes now
 
 As-7 +   K-34 + 1242 => Dx-41
 
