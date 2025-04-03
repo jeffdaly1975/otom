@@ -1,3 +1,14 @@
+2025-04-02 Apr.Wed 16:26:28 Trying to figure out if there's some new way things fuse/fission in Bohr. Because there is a pattern where something is reacted with S-102 and the output includes "P-22 + Co-80" which is what S-102 breaks into.
+
+|  Ro-23ª +  S-102ª   +               0 =>   Sr-1 + P-22 + P-22 + Co-80     | decay
+|  Ro-23ª +  S-102ª   + [2566.67- 5000] =>   P-22 + Z-103                   | decay, nuclear
+|  Ro-23ª +  S-102ª   + [2666.67- 7000] =>   P-22 + Z-103                   | decay, nuclear
+|  Ro-23ª +  S-102ª   + [2816.67-10000] =>   P-22 + Z-103                   | decay, nuclear
+|  Ro-23ª +  S-102ª   + [3066.67-15000] =>   P-22 + Z-103                   | decay, nuclear
+
+I see someone tried more and more energy to get a different result but no
+
+
 2025-04-02 Apr.Wed 13:12:05 NEW DISCOVERY Nm-89 aka 89 46 Nm:
 
  Dd-89 + 0 => Nm-89
@@ -5,8 +16,6 @@
 2025-04-02 Apr.Wed 10:54:58 NEW DISCOVERY Xj-21 aka 21 9 Xj and Ct-16 aka 16 7 Ct
 
 2025-04-02 Apr.Wed 10:45:50 Okay I mined x10 and now 6 OTOMROs showed up.
-
-[ ] Also Morpheus said he sent me 100 OTOMROs to analyze at my leisure, 1 at a time. They haven't showed up yet.
 
 2025-04-02 Apr.Wed 01:34:24 I started a bunch of reactions over an hour ago and the Unanalyzed Outputs have not shown up for me to analyze! WTF!?
 
@@ -1378,7 +1387,7 @@ now: [r] Yu-30 + Kk-72 +4000 => ? Ok-102 makes Ok-102 using 3290.59 nuclear
  31 16  K⁺(0.795) +  71 34 Kkª(0.879) => |⬆            |= 102  50  S |⬇ 102  49 Da
  35 17 Mt∙(1.819) +  67 33 Gyª(0.871) => |⬆            |= 102  50  S |⬇ 102  49 Da
 
- [ ] S-98   
+ [c] S-98   
 
  31 16  K⁺(0.795) +  67 33 Gyª(0.871) => |⬆  98  50  S |=  98  49 Da |⬇  98  48 Ok
 

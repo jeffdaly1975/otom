@@ -2,11 +2,11 @@
 
 # Universe: BOHR
 
-#       59 otoms
-#      348 isotopes
-#   121104 combinations
-#    60726 unique combinations
-#    14905 combinations resulting in known isotopes
+#       63 otoms
+#      375 isotopes
+#   140625 combinations
+#    70500 unique combinations
+#    15819 combinations resulting in known isotopes
 
 my $order_counter=0;
 my @sort_order=();
@@ -218,6 +218,7 @@ __DATA__
  48 23 Pb
  49 23 Pb
  50 23 Pb
+ 51 23 Pb
  47 24 Wy
  48 24 Wy
  49 24 Wy
@@ -241,6 +242,7 @@ __DATA__
  54 27 Pg
  55 27 Pg
  56 27 Pg
+ 57 27 Pg
  58 27 Pg
  54 28 Qe
  55 28 Qe
@@ -308,6 +310,7 @@ __DATA__
  76 37 Iu
  77 37 Iu
  78 37 Iu
+ 76 38  D
  77 38  D
  78 38  D
  79 38  D
@@ -358,6 +361,7 @@ __DATA__
  94 45 Se
  95 45 Se
  96 45 Se
+ 89 46 Nm
  90 46 Nm
  92 46 Nm
  93 46 Nm
@@ -396,8 +400,10 @@ __DATA__
 103 48 Ok
  90 49 Da
  92 49 Da
+ 93 49 Da
  94 49 Da
  95 49 Da
+ 96 49 Da
  97 49 Da
  98 49 Da
  99 49 Da
@@ -406,21 +412,36 @@ __DATA__
 102 49 Da
 103 49 Da
 104 49 Da
+ 94 50  S
+ 95 50  S
+ 96 50  S
  97 50  S
+ 98 50  S
 101 50  S
 102 50  S
 103 50  S
+ 95 51  Z
+ 96 51  Z
+ 97 51  Z
+ 98 51  Z
 102 51  Z
 103 51  Z
 104 51  Z
 106 51  Z
+ 97 52 Cv
+ 98 52 Cv
+ 99 52 Cv
+100 52 Cv
 101 52 Cv
 102 52 Cv
+103 52 Cv
 104 52 Cv
 105 52 Cv
 106 52 Cv
 107 52 Cv
 110 52 Cv
+ 98 53 Vt
+ 99 53 Vt
 101 53 Vt
 102 53 Vt
 103 53 Vt
@@ -453,9 +474,15 @@ __DATA__
 109 57 Kn
 112 57 Kn
 116 57 Kn
+108 58 Ha
 109 58 Ha
+110 58 Ha
 115 58 Ha
 116 58 Ha
 117 58 Ha
 109 59 Ax
 111 59 Ax
+115 60  I
+116 61 Jb
+118 62 Go
+119 63  X
