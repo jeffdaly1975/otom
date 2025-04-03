@@ -823,6 +823,13 @@ let otomnames["115 60  I"]="I-115"
 let otomnames["116 61 Jb"]="Jb-116"
 let otomnames["118 62 Go"]="Go-118"
 let otomnames["119 63  X"]="X-119"
+let otomnames["88 47 Dd"]="Dd-88"
+let otomnames["104 53 Vt"]="Vt-104"
+let otomnames["113 58 Ha"]="Ha-113"
+let otomnames["86 44 Vl"]="Vl-86"
+let otomnames["91 46 Nm"]="Nm-91"
+let otomnames["88 45 Se"]="Se-88"
+let otomnames["124 65 Eh"]="Eh-124"
 
 let otomnames["Ju-1"]=" 1  1 Ju"
 let otomnames["Ju-2"]=" 2  1 Ju"
@@ -1528,6 +1535,13 @@ let otomnames["I-115"]="115 60  I"
 let otomnames["Jb-116"]="116 61 Jb"
 let otomnames["Go-118"]="118 62 Go"
 let otomnames["X-119"]="119 63  X"
+let otomnames["Dd-88"]="88 47 Dd"
+let otomnames["Vt-104"]="104 53 Vt"
+let otomnames["Ha-113"]="113 58 Ha"
+let otomnames["Vl-86"]="86 44 Vl"
+let otomnames["Nm-91"]="91 46 Nm"
+let otomnames["Se-88"]="88 45 Se"
+let otomnames["Eh-124"]="124 65 Eh"
 
 let hexdict[" 1  1 Ju"]="f1e48a532f72d1bcdaad9c30632d40c62127d27bf5409322979c103099f04ea4"
 let hexdict[" 2  1 Ju"]="4dbb9c7928c859795c8e10c48e892e2f3b676dbc90670d5e56c9c4a140287ce6"
@@ -2233,6 +2247,13 @@ let hexdict["115 60  I"]="c58acc169bfda569a3519429674404a7e236398f32ff4319fe633a
 let hexdict["116 61 Jb"]="4fcf1a25949f42a45bf3390bde874b2371a7efc6f368e3e6c376b08cf981458e"
 let hexdict["118 62 Go"]="3a542cd5a0877276a8753f4d09bdef3610a2c563f6352648cc63eb51f692d67a"
 let hexdict["119 63  X"]="005e78a21ed2a17db754f7724862e75f928dd92f1daffeab44e30696a46460f5"
+let hexdict["88 47 Dd"]="df66bebf63387d2dde82d6b9e8decfd288e51145234c361f7f576d65fa011a88"
+let hexdict["104 53 Vt"]="24a1089ab6f8a9f5a7a78278968eb0304051ec826d2950b78e3bc5f3e8a7d31a"
+let hexdict["113 58 Ha"]="6cfb0d30f5e78c7cfc0a91b24fd2fa9a0782d6c4e8e849763e18884af7172c50"
+let hexdict["86 44 Vl"]="2978fa8c51cc56b697d93be9a601d034f59dfbc334469346a90cdbb657b520f0"
+let hexdict["91 46 Nm"]="0330ccac7ca6ddb188a76568455d23e651329cfe095b2b5ed7b25def1ecc0c17"
+let hexdict["88 45 Se"]="9dcb7e095241aaa610c1c832e4e9810be6ff1ef43c80180019459f945d9a1278"
+let hexdict["124 65 Eh"]="98b45f1407c663434b00b528225134f7ec8d1bfae54b4f0562995016a5020552"
 
 let hexdict["Ju-1"]="f1e48a532f72d1bcdaad9c30632d40c62127d27bf5409322979c103099f04ea4"
 let hexdict["Ju-2"]="4dbb9c7928c859795c8e10c48e892e2f3b676dbc90670d5e56c9c4a140287ce6"
@@ -2938,6 +2959,13 @@ let hexdict["I-115"]="c58acc169bfda569a3519429674404a7e236398f32ff4319fe633ad5a2
 let hexdict["Jb-116"]="4fcf1a25949f42a45bf3390bde874b2371a7efc6f368e3e6c376b08cf981458e"
 let hexdict["Go-118"]="3a542cd5a0877276a8753f4d09bdef3610a2c563f6352648cc63eb51f692d67a"
 let hexdict["X-119"]="005e78a21ed2a17db754f7724862e75f928dd92f1daffeab44e30696a46460f5"
+let hexdict["Dd-88"]="df66bebf63387d2dde82d6b9e8decfd288e51145234c361f7f576d65fa011a88"
+let hexdict["Vt-104"]="24a1089ab6f8a9f5a7a78278968eb0304051ec826d2950b78e3bc5f3e8a7d31a"
+let hexdict["Ha-113"]="6cfb0d30f5e78c7cfc0a91b24fd2fa9a0782d6c4e8e849763e18884af7172c50"
+let hexdict["Vl-86"]="2978fa8c51cc56b697d93be9a601d034f59dfbc334469346a90cdbb657b520f0"
+let hexdict["Nm-91"]="0330ccac7ca6ddb188a76568455d23e651329cfe095b2b5ed7b25def1ecc0c17"
+let hexdict["Se-88"]="9dcb7e095241aaa610c1c832e4e9810be6ff1ef43c80180019459f945d9a1278"
+let hexdict["Eh-124"]="98b45f1407c663434b00b528225134f7ec8d1bfae54b4f0562995016a5020552"
 
 let hexdict["f1e48a532f72d1bcdaad9c30632d40c62127d27bf5409322979c103099f04ea4"]=" 1  1 Ju"
 let hexdict["4dbb9c7928c859795c8e10c48e892e2f3b676dbc90670d5e56c9c4a140287ce6"]=" 2  1 Ju"
@@ -3643,6 +3671,13 @@ let hexdict["c58acc169bfda569a3519429674404a7e236398f32ff4319fe633ad5a2ee80dd"]=
 let hexdict["4fcf1a25949f42a45bf3390bde874b2371a7efc6f368e3e6c376b08cf981458e"]="116 61 Jb"
 let hexdict["3a542cd5a0877276a8753f4d09bdef3610a2c563f6352648cc63eb51f692d67a"]="118 62 Go"
 let hexdict["005e78a21ed2a17db754f7724862e75f928dd92f1daffeab44e30696a46460f5"]="119 63  X"
+let hexdict["df66bebf63387d2dde82d6b9e8decfd288e51145234c361f7f576d65fa011a88"]="88 47 Dd"
+let hexdict["24a1089ab6f8a9f5a7a78278968eb0304051ec826d2950b78e3bc5f3e8a7d31a"]="104 53 Vt"
+let hexdict["6cfb0d30f5e78c7cfc0a91b24fd2fa9a0782d6c4e8e849763e18884af7172c50"]="113 58 Ha"
+let hexdict["2978fa8c51cc56b697d93be9a601d034f59dfbc334469346a90cdbb657b520f0"]="86 44 Vl"
+let hexdict["0330ccac7ca6ddb188a76568455d23e651329cfe095b2b5ed7b25def1ecc0c17"]="91 46 Nm"
+let hexdict["9dcb7e095241aaa610c1c832e4e9810be6ff1ef43c80180019459f945d9a1278"]="88 45 Se"
+let hexdict["98b45f1407c663434b00b528225134f7ec8d1bfae54b4f0562995016a5020552"]="124 65 Eh"
 
 let hexdictabbr["f1e48a532f72d1bcdaad9c30632d40c62127d27bf5409322979c103099f04ea4"]="Ju-1"
 let hexdictabbr["4dbb9c7928c859795c8e10c48e892e2f3b676dbc90670d5e56c9c4a140287ce6"]="Ju-2"
@@ -4348,6 +4383,13 @@ let hexdictabbr["c58acc169bfda569a3519429674404a7e236398f32ff4319fe633ad5a2ee80d
 let hexdictabbr["4fcf1a25949f42a45bf3390bde874b2371a7efc6f368e3e6c376b08cf981458e"]="Jb-116"
 let hexdictabbr["3a542cd5a0877276a8753f4d09bdef3610a2c563f6352648cc63eb51f692d67a"]="Go-118"
 let hexdictabbr["005e78a21ed2a17db754f7724862e75f928dd92f1daffeab44e30696a46460f5"]="X-119"
+let hexdictabbr["df66bebf63387d2dde82d6b9e8decfd288e51145234c361f7f576d65fa011a88"]="Dd-88"
+let hexdictabbr["24a1089ab6f8a9f5a7a78278968eb0304051ec826d2950b78e3bc5f3e8a7d31a"]="Vt-104"
+let hexdictabbr["6cfb0d30f5e78c7cfc0a91b24fd2fa9a0782d6c4e8e849763e18884af7172c50"]="Ha-113"
+let hexdictabbr["2978fa8c51cc56b697d93be9a601d034f59dfbc334469346a90cdbb657b520f0"]="Vl-86"
+let hexdictabbr["0330ccac7ca6ddb188a76568455d23e651329cfe095b2b5ed7b25def1ecc0c17"]="Nm-91"
+let hexdictabbr["9dcb7e095241aaa610c1c832e4e9810be6ff1ef43c80180019459f945d9a1278"]="Se-88"
+let hexdictabbr["98b45f1407c663434b00b528225134f7ec8d1bfae54b4f0562995016a5020552"]="Eh-124"
 
 let otomdict["109411192323005013320236074910166367482792971750025377481544980126703983546020"]=" 1  1 Ju"
 let otomdict["35159569680903626501449329353512578019171730918789714169601127546706358467814"]=" 2  1 Ju"
@@ -5053,6 +5095,13 @@ let otomdict["893508646316442166791085440179191834256949650296736709310468268831
 let otomdict["36098632839061948539658693839358362685205342407559979124694320222695527105934"]="116 61 Jb"
 let otomdict["26382869807484420078775090621714510165076896327089361886831888867845817423482"]="118 62 Go"
 let otomdict["166916204408160318513175536690725949831494743000410168375014642620440010997"]="119 63  X"
+let otomdict["101047300126280658535931322312408485345285645671825313210775769095070740978312"]="88 47 Dd"
+let otomdict["16567784311498602404973008536377271665522875956302965847654804080155353928474"]="104 53 Vt"
+let otomdict["49293357302928857814453019947609063777792985079397296317063873274012478418000"]="113 58 Ha"
+let otomdict["18758577659280914785296868067958689450249224315694233055732888725970132214000"]="86 44 Vl"
+let otomdict["1443159811352102491598105395223842056672227200927749316398655145884317912087"]="91 46 Nm"
+let otomdict["71372657053064672196665727972891254336591545284010414568445653718486648230520"]="88 45 Se"
+let otomdict["69070241662237276685181428438941291826861797971333698667850206367836943811922"]="124 65 Eh"
 
 let otomdictabbr["109411192323005013320236074910166367482792971750025377481544980126703983546020"]="Ju-1"
 let otomdictabbr["35159569680903626501449329353512578019171730918789714169601127546706358467814"]="Ju-2"
@@ -5758,6 +5807,13 @@ let otomdictabbr["89350864631644216679108544017919183425694965029673670931046826
 let otomdictabbr["36098632839061948539658693839358362685205342407559979124694320222695527105934"]="Jb-116"
 let otomdictabbr["26382869807484420078775090621714510165076896327089361886831888867845817423482"]="Go-118"
 let otomdictabbr["166916204408160318513175536690725949831494743000410168375014642620440010997"]="X-119"
+let otomdictabbr["101047300126280658535931322312408485345285645671825313210775769095070740978312"]="Dd-88"
+let otomdictabbr["16567784311498602404973008536377271665522875956302965847654804080155353928474"]="Vt-104"
+let otomdictabbr["49293357302928857814453019947609063777792985079397296317063873274012478418000"]="Ha-113"
+let otomdictabbr["18758577659280914785296868067958689450249224315694233055732888725970132214000"]="Vl-86"
+let otomdictabbr["1443159811352102491598105395223842056672227200927749316398655145884317912087"]="Nm-91"
+let otomdictabbr["71372657053064672196665727972891254336591545284010414568445653718486648230520"]="Se-88"
+let otomdictabbr["69070241662237276685181428438941291826861797971333698667850206367836943811922"]="Eh-124"
 
 let otom2tokenid[" 1  1 Ju"]="109411192323005013320236074910166367482792971750025377481544980126703983546020"
 let otom2tokenid[" 2  1 Ju"]="35159569680903626501449329353512578019171730918789714169601127546706358467814"
@@ -6463,6 +6519,13 @@ let otom2tokenid["115 60  I"]="8935086463164421667910854401791918342569496502967
 let otom2tokenid["116 61 Jb"]="36098632839061948539658693839358362685205342407559979124694320222695527105934"
 let otom2tokenid["118 62 Go"]="26382869807484420078775090621714510165076896327089361886831888867845817423482"
 let otom2tokenid["119 63  X"]="166916204408160318513175536690725949831494743000410168375014642620440010997"
+let otom2tokenid["88 47 Dd"]="101047300126280658535931322312408485345285645671825313210775769095070740978312"
+let otom2tokenid["104 53 Vt"]="16567784311498602404973008536377271665522875956302965847654804080155353928474"
+let otom2tokenid["113 58 Ha"]="49293357302928857814453019947609063777792985079397296317063873274012478418000"
+let otom2tokenid["86 44 Vl"]="18758577659280914785296868067958689450249224315694233055732888725970132214000"
+let otom2tokenid["91 46 Nm"]="1443159811352102491598105395223842056672227200927749316398655145884317912087"
+let otom2tokenid["88 45 Se"]="71372657053064672196665727972891254336591545284010414568445653718486648230520"
+let otom2tokenid["124 65 Eh"]="69070241662237276685181428438941291826861797971333698667850206367836943811922"
 
 let otom2tokenid["Ju-1"]="109411192323005013320236074910166367482792971750025377481544980126703983546020"
 let otom2tokenid["Ju-2"]="35159569680903626501449329353512578019171730918789714169601127546706358467814"
@@ -7168,6 +7231,13 @@ let otom2tokenid["I-115"]="89350864631644216679108544017919183425694965029673670
 let otom2tokenid["Jb-116"]="36098632839061948539658693839358362685205342407559979124694320222695527105934"
 let otom2tokenid["Go-118"]="26382869807484420078775090621714510165076896327089361886831888867845817423482"
 let otom2tokenid["X-119"]="166916204408160318513175536690725949831494743000410168375014642620440010997"
+let otom2tokenid["Dd-88"]="101047300126280658535931322312408485345285645671825313210775769095070740978312"
+let otom2tokenid["Vt-104"]="16567784311498602404973008536377271665522875956302965847654804080155353928474"
+let otom2tokenid["Ha-113"]="49293357302928857814453019947609063777792985079397296317063873274012478418000"
+let otom2tokenid["Vl-86"]="18758577659280914785296868067958689450249224315694233055732888725970132214000"
+let otom2tokenid["Nm-91"]="1443159811352102491598105395223842056672227200927749316398655145884317912087"
+let otom2tokenid["Se-88"]="71372657053064672196665727972891254336591545284010414568445653718486648230520"
+let otom2tokenid["Eh-124"]="69070241662237276685181428438941291826861797971333698667850206367836943811922"
 
 let otomsortorder[" 1  1 Ju"]="0"
 let otomsortorder[" 2  1 Ju"]="1"
@@ -7873,6 +7943,13 @@ let otomsortorder["115 60  I"]="700"
 let otomsortorder["116 61 Jb"]="701"
 let otomsortorder["118 62 Go"]="702"
 let otomsortorder["119 63  X"]="703"
+let otomsortorder["88 47 Dd"]="704"
+let otomsortorder["104 53 Vt"]="705"
+let otomsortorder["113 58 Ha"]="706"
+let otomsortorder["86 44 Vl"]="707"
+let otomsortorder["91 46 Nm"]="708"
+let otomsortorder["88 45 Se"]="709"
+let otomsortorder["124 65 Eh"]="710"
 
 let otomsortorder["Ju-1"]="0"
 let otomsortorder["Ju-2"]="1"
@@ -8578,6 +8655,13 @@ let otomsortorder["I-115"]="700"
 let otomsortorder["Jb-116"]="701"
 let otomsortorder["Go-118"]="702"
 let otomsortorder["X-119"]="703"
+let otomsortorder["Dd-88"]="704"
+let otomsortorder["Vt-104"]="705"
+let otomsortorder["Ha-113"]="706"
+let otomsortorder["Vl-86"]="707"
+let otomsortorder["Nm-91"]="708"
+let otomsortorder["Se-88"]="709"
+let otomsortorder["Eh-124"]="710"
 
 let decaydict[" 1  1 Ju"]=decay_text_stable          | let decaydict["Ju-1"]=decay_text_stable
 let decaydict[" 2  1 Ju"]=decay_text_stable          | let decaydict["Ju-2"]=decay_text_stable
@@ -9283,6 +9367,13 @@ let decaydict["115 60  I"]=decay_text_alpha           | let decaydict["I-115"]=d
 let decaydict["116 61 Jb"]=decay_text_alpha           | let decaydict["Jb-116"]=decay_text_alpha
 let decaydict["118 62 Go"]=decay_text_alpha           | let decaydict["Go-118"]=decay_text_alpha
 let decaydict["119 63  X"]=decay_text_alpha           | let decaydict["X-119"]=decay_text_alpha
+let decaydict["88 47 Dd"]=decay_text_beta_plus       | let decaydict["Dd-88"]=decay_text_beta_plus
+let decaydict["104 53 Vt"]=decay_text_alpha           | let decaydict["Vt-104"]=decay_text_alpha
+let decaydict["113 58 Ha"]=decay_text_alpha           | let decaydict["Ha-113"]=decay_text_alpha
+let decaydict["86 44 Vl"]=decay_text_alpha           | let decaydict["Vl-86"]=decay_text_alpha
+let decaydict["91 46 Nm"]=decay_text_beta_plus       | let decaydict["Nm-91"]=decay_text_beta_plus
+let decaydict["88 45 Se"]=decay_text_beta_plus       | let decaydict["Se-88"]=decay_text_beta_plus
+let decaydict["124 65 Eh"]=decay_text_alpha           | let decaydict["Eh-124"]=decay_text_alpha
 
 let stabilitydict[" 1  1 Ju"]="1.000" | let stabilitydict["Ju-1"]="1.000"
 let stabilitydict[" 2  1 Ju"]="1.000" | let stabilitydict["Ju-2"]="1.000"
@@ -9988,6 +10079,13 @@ let stabilitydict["115 60  I"]="0.312" | let stabilitydict["I-115"]="0.312"
 let stabilitydict["116 61 Jb"]="0.241" | let stabilitydict["Jb-116"]="0.241"
 let stabilitydict["118 62 Go"]="0.237" | let stabilitydict["Go-118"]="0.237"
 let stabilitydict["119 63  X"]="0.163" | let stabilitydict["X-119"]="0.163"
+let stabilitydict["88 47 Dd"]="0.483" | let stabilitydict["Dd-88"]="0.483"
+let stabilitydict["104 53 Vt"]="0.563" | let stabilitydict["Vt-104"]="0.563"
+let stabilitydict["113 58 Ha"]="0.433" | let stabilitydict["Ha-113"]="0.433"
+let stabilitydict["86 44 Vl"]="0.704" | let stabilitydict["Vl-86"]="0.704"
+let stabilitydict["91 46 Nm"]="0.802" | let stabilitydict["Nm-91"]="0.802"
+let stabilitydict["88 45 Se"]="0.765" | let stabilitydict["Se-88"]="0.765"
+let stabilitydict["124 65 Eh"]="0.196" | let stabilitydict["Eh-124"]="0.196"
 
 let   electrodict[" 1  1 Ju"]="0.500" | let   electrodict["Ju-1"]="0.500"
 let   electrodict[" 2  1 Ju"]="0.500" | let   electrodict["Ju-2"]="0.500"
@@ -10693,6 +10791,13 @@ let   electrodict["115 60  I"]="0.034" | let   electrodict["I-115"]="0.034"
 let   electrodict["116 61 Jb"]="0.060" | let   electrodict["Jb-116"]="0.060"
 let   electrodict["118 62 Go"]="0.096" | let   electrodict["Go-118"]="0.096"
 let   electrodict["119 63  X"]="0.146" | let   electrodict["X-119"]="0.146"
+let   electrodict["88 47 Dd"]="1.514" | let   electrodict["Dd-88"]="1.514"
+let   electrodict["104 53 Vt"]="0.157" | let   electrodict["Vt-104"]="0.157"
+let   electrodict["113 58 Ha"]="0.000" | let   electrodict["Ha-113"]="0.000"
+let   electrodict["86 44 Vl"]="0.228" | let   electrodict["Vl-86"]="0.228"
+let   electrodict["91 46 Nm"]="0.600" | let   electrodict["Nm-91"]="0.600"
+let   electrodict["88 45 Se"]="0.345" | let   electrodict["Se-88"]="0.345"
+let   electrodict["124 65 Eh"]="0.335" | let   electrodict["Eh-124"]="0.335"
 
 " This is not ideal but I set this if statement to 1 if I want to have highlighting show rarity or 0 if I want it to show decay types
 if 1
@@ -11400,6 +11505,13 @@ syn match rarity_rare     /\<115\s\+60\s\+I\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<116\s\+61\s\+Jb\>/  | syn match rarity_rare     /\<Jb-116\>/          
 syn match rarity_rare     /\<118\s\+62\s\+Go\>/  | syn match rarity_rare     /\<Go-118\>/          
 syn match rarity_rare     /\<119\s\+63\s\+X\>/   | syn match rarity_rare     /\<X-119\>/           
+syn match rarity_rare     /\<88\s\+47\s\+Dd\>/   | syn match rarity_rare     /\<Dd-88\>/           
+syn match rarity_rare     /\<104\s\+53\s\+Vt\>/  | syn match rarity_rare     /\<Vt-104\>/          
+syn match rarity_rare     /\<113\s\+58\s\+Ha\>/  | syn match rarity_rare     /\<Ha-113\>/          
+syn match rarity_rare     /\<86\s\+44\s\+Vl\>/   | syn match rarity_rare     /\<Vl-86\>/           
+syn match rarity_rare     /\<91\s\+46\s\+Nm\>/   | syn match rarity_rare     /\<Nm-91\>/           
+syn match rarity_rare     /\<88\s\+45\s\+Se\>/   | syn match rarity_rare     /\<Se-88\>/           
+syn match rarity_rare     /\<124\s\+65\s\+Eh\>/  | syn match rarity_rare     /\<Eh-124\>/          
 
 else
 syn match Decay_type_stable          /\<1\s\+1\s\+Ju\>/     | syn match Decay_type_stable          /\<Ju-1\>/            
@@ -12106,6 +12218,13 @@ syn match Decay_type_alpha           /\<115\s\+60\s\+I\>/   | syn match Decay_ty
 syn match Decay_type_alpha           /\<116\s\+61\s\+Jb\>/  | syn match Decay_type_alpha           /\<Jb-116\>/          
 syn match Decay_type_alpha           /\<118\s\+62\s\+Go\>/  | syn match Decay_type_alpha           /\<Go-118\>/          
 syn match Decay_type_alpha           /\<119\s\+63\s\+X\>/   | syn match Decay_type_alpha           /\<X-119\>/           
+syn match Decay_type_beta_plus       /\<88\s\+47\s\+Dd\>/   | syn match Decay_type_beta_plus       /\<Dd-88\>/           
+syn match Decay_type_alpha           /\<104\s\+53\s\+Vt\>/  | syn match Decay_type_alpha           /\<Vt-104\>/          
+syn match Decay_type_alpha           /\<113\s\+58\s\+Ha\>/  | syn match Decay_type_alpha           /\<Ha-113\>/          
+syn match Decay_type_alpha           /\<86\s\+44\s\+Vl\>/   | syn match Decay_type_alpha           /\<Vl-86\>/           
+syn match Decay_type_beta_plus       /\<91\s\+46\s\+Nm\>/   | syn match Decay_type_beta_plus       /\<Nm-91\>/           
+syn match Decay_type_beta_plus       /\<88\s\+45\s\+Se\>/   | syn match Decay_type_beta_plus       /\<Se-88\>/           
+syn match Decay_type_alpha           /\<124\s\+65\s\+Eh\>/  | syn match Decay_type_alpha           /\<Eh-124\>/          
 
 endif
 let     shelldict[" 1  1 Ju"]="⎥◼◻◻⎢" | let     shelldict["Ju-1"]="⎥◼◻◻⎢"
@@ -12812,6 +12931,13 @@ let     shelldict["115 60  I"]="unknown" | let     shelldict["I-115"]="unknown"
 let     shelldict["116 61 Jb"]="unknown" | let     shelldict["Jb-116"]="unknown"
 let     shelldict["118 62 Go"]="unknown" | let     shelldict["Go-118"]="unknown"
 let     shelldict["119 63  X"]="unknown" | let     shelldict["X-119"]="unknown"
+let     shelldict["88 47 Dd"]="unknown" | let     shelldict["Dd-88"]="unknown"
+let     shelldict["104 53 Vt"]="unknown" | let     shelldict["Vt-104"]="unknown"
+let     shelldict["113 58 Ha"]="unknown" | let     shelldict["Ha-113"]="unknown"
+let     shelldict["86 44 Vl"]="unknown" | let     shelldict["Vl-86"]="unknown"
+let     shelldict["91 46 Nm"]="unknown" | let     shelldict["Nm-91"]="unknown"
+let     shelldict["88 45 Se"]="unknown" | let     shelldict["Se-88"]="unknown"
+let     shelldict["124 65 Eh"]="unknown" | let     shelldict["Eh-124"]="unknown"
 
 let shelldictlong[" 1  1 Ju"]="⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ju-1"]="⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢"
 let shelldictlong[" 2  1 Ju"]="⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢" | let shelldictlong["Ju-2"]="⎥◼◻◻⎢⎥◻◻ ◻◻⎢⎥◻◻◻ ◻◻⎢⎥◻◻◻◻⎢⎥◻◻◻◻◻ ◻◻ ◻⎢⎥◻ ◻◻ ◻◻⎢⎥◻◻ ◻◻◻ ◻◻◻⎢⎥◻ ◻◻◻◻⎢"
@@ -13517,6 +13643,13 @@ let shelldictlong["115 60  I"]="unknown" | let shelldictlong["I-115"]="unknown"
 let shelldictlong["116 61 Jb"]="unknown" | let shelldictlong["Jb-116"]="unknown"
 let shelldictlong["118 62 Go"]="unknown" | let shelldictlong["Go-118"]="unknown"
 let shelldictlong["119 63  X"]="unknown" | let shelldictlong["X-119"]="unknown"
+let shelldictlong["88 47 Dd"]="unknown" | let shelldictlong["Dd-88"]="unknown"
+let shelldictlong["104 53 Vt"]="unknown" | let shelldictlong["Vt-104"]="unknown"
+let shelldictlong["113 58 Ha"]="unknown" | let shelldictlong["Ha-113"]="unknown"
+let shelldictlong["86 44 Vl"]="unknown" | let shelldictlong["Vl-86"]="unknown"
+let shelldictlong["91 46 Nm"]="unknown" | let shelldictlong["Nm-91"]="unknown"
+let shelldictlong["88 45 Se"]="unknown" | let shelldictlong["Se-88"]="unknown"
+let shelldictlong["124 65 Eh"]="unknown" | let shelldictlong["Eh-124"]="unknown"
 
 let seriesdict[" 1  1 Ju"]="alkaline" | let seriesdict["Ju-1"]="alkaline"
 let seriesdict[" 2  1 Ju"]="alkaline" | let seriesdict["Ju-2"]="alkaline"
@@ -14222,6 +14355,14 @@ let seriesdict["115 60  I"]="metal" | let seriesdict["I-115"]="metal"
 let seriesdict["116 61 Jb"]="metal" | let seriesdict["Jb-116"]="metal"
 let seriesdict["118 62 Go"]="metal" | let seriesdict["Go-118"]="metal"
 let seriesdict["119 63  X"]="metal" | let seriesdict["X-119"]="metal"
+let seriesdict["88 47 Dd"]="nonmetal" | let seriesdict["Dd-88"]="nonmetal"
+let seriesdict["104 53 Vt"]="metal" | let seriesdict["Vt-104"]="metal"
+let seriesdict["113 58 Ha"]="noble" | let seriesdict["Ha-113"]="noble"
+let seriesdict["86 44 Vl"]="metal" | let seriesdict["Vl-86"]="metal"
+let seriesdict["91 46 Nm"]="nonmetal" | let seriesdict["Nm-91"]="nonmetal"
+let seriesdict["88 45 Se"]="metal" | let seriesdict["Se-88"]="metal"
+let seriesdict["124 65 Eh"]="metal" | let seriesdict["Eh-124"]="metal"
+
 
 
 "
