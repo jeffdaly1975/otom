@@ -1,3 +1,83 @@
+2025-04-02 Apr.Wed 22:22:07 NEW DISCOVERY Gy-64 aka 64 33 Gy     NOW 378 isotopes
+
+ P-21 + Gy-65 + 2500 => Gy-64 + 671.67 using 1828.33 nuclear+decay
+
+2025-04-02 Apr.Wed 21:55:17 NEW DISCOVERY N-82 aka 82 42 N
+
+ Yu-27 + C-55 + 1926 => N-82
+
+2025-04-02 Apr.Wed 21:15:42 NEW DISCOVERY C-63 aka 63 29 C
+
+ Ct-16 + Uq-47 + 1297 => C-63
+
+2025-04-02 Apr.Wed 20:27:35 what we missing now?
+
+[ ] Ax-110
+[ ] Ha-111
+[ ] Ha-112
+[ ] Ha-113
+[ ] Ha-114
+[ ] Kn-110
+[ ] Kn-111
+[ ] Kn-113
+[ ] Kn-114
+[ ] Kn-115
+[ ] Aw-109
+[ ] Aw-110
+[ ] Aw-113
+[ ] Ji-104
+[ ] Ji-105
+[ ] Ji-106
+[ ] Ji-107
+[ ] Ji-108
+[ ] Ji-109
+[ ] Ji-110
+[ ] Ji-113
+[ ] Ek-105
+[ ] Ek-107
+[ ] Ek-108
+[ ] Ek-109
+[ ] Vt-100
+[ ] Vt-104
+[ ] Vt-106
+[ ] Vt-108
+[ ] Cv-108
+[ ] Cv-109
+[ ] Z-99
+[ ] Z-100
+[ ] Z-101
+[ ] Z-105
+[ ] S-99
+[ ] S-100
+[ ] Ok-96
+[ ] Nm-91
+[ ] U-85
+[ ] U-86
+
+[r] K-31⁺ +  Mt-34⁺  +     1607 =>   Gy-65
+[f] P-21⁺ +  Gy-65   +     2500 => ? Vl-86 ? U-86 <---NOPE NOT ENOUGH ENERGY AND Gy-65 DECAYED to Gy-64
+
+[ ] K-31⁺ +  Mt-34⁺  +     1607 =>   Gy-65
+[ ] P-21⁺ +  Gy-65   +     4000 => ? Vl-86 ? U-86
+
+
+[r] N-82
+
+[r] C-63
+|    50072*|bohr    |  Ct-13⁺ +  Uq-47⁻  +     5000 =>   C-60 +    3661.82 |    1338.18 | nuclear                      | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x46535f1507a97a7d4ddadfa51b0cf77d5326eabb3b61f2ab3ed72e476e0989ed | 0x37212ce67adfaa6fae8381344b5925955577951c42558176f988270789d54413 |
+|    48015*|bohr    |  Cl-27∙ +   K-34∙  +     5000 =>   C-61 +    2280.47 |    2719.53 | nuclear                      | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x62e0b57f273a1d01f18715d99b764d9b2c45a2401ca1c133621cafded1240795 | 0xdc23f529e927d239c0be6ce73b9ee9b1a4650400aa612b6334618a95bd775ca7 |
+|    45370*|bohr    |  Ct-15∙ +  Uq-47⁻  +     2500 =>   C-62 +     814.82 |    1685.18 | nuclear                      | 0x31963b060d71ee24a6d458b75aa85e63b99bd7fb | 0x1b299ecabcc433624d912a7c2df8c80b4a512110bd84c2caff3293233052f2f5 | 0xeb8f38f9cb5069dd3e6823ef9c21edbb10a67538379818736d29c9e15134c9b5 |
+|    47358*|bohr    |  Ct-17⁻ +  Uq-47⁻  +     2000 =>   C-64 +     762.40 |    1237.60 | nuclear                      | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0xd1f296968fff90b034be308680827880fcecd91b83c6a1a6cae1d43281bc8d0f | 0xf4fa3a6caca36f3aafb5e6ae646cfefd8e30a09c3969becfa7efc545a0cc6c84 |
+
+[r]|  Ct-17⁻ +  Xj-18∙  + 1052 =>   K-35         
+[r]|  K-35⁻             + 1972 =>   Ct-16 + Xj-19
+[r] Ct-16 + Uq-47 + 2000 => ? C-63 <---SUCCESS! Makes C-63 using 1296.06 nuclear
+
+Oh that's annoying - there are U otoms in both ALPHA and BOHR.
+
+
+
+
 2025-04-02 Apr.Wed 16:26:28 Trying to figure out if there's some new way things fuse/fission in Bohr. Because there is a pattern where something is reacted with S-102 and the output includes "P-22 + Co-80" which is what S-102 breaks into.
 
 |  Ro-23ª +  S-102ª   +               0 =>   Sr-1 + P-22 + P-22 + Co-80     | decay
@@ -301,12 +381,133 @@ NO reactions in the list?!?!
  18  9 Xj∙(1.400) +  67 33 Gyª(0.871) => |⬆            |=            |⬇  85  41 Lx
  35 17 Mt∙(1.819) +  50 24 Wy∙(1.918) => |⬆            |=  85  41 Lx |⬇           
 
- [ ] N-82  82 42 N
+ [r] N-82  82 42 N
  10  6 Vi⁺(0.022) +  72 35 Yvª(0.859) => |⬆  82  42  N |=  82  41 Lx |⬇  82  40  W
  15  8  T⁺(0.556) +  67 33 Gyª(0.871) => |⬆  82  42  N |=  82  41 Lx |⬇  82  40  W
  31 16  K⁺(0.795) +  51 25  L⁺(0.936) => |⬆  82  42  N |=  82  41 Lx |⬇  82  40  W
 
- 32  17 Mt +  50  25  L => |⬆  82  43  U |=  82  42  N |⬇  82  41 Lx [f] +3000 makes Lx-82 using 1989.98 nuclear+decay
+ 32  17 Mt +  50  25  L               => |⬆  82  43  U |=  82  42  N |⬇  82  41 Lx [f] +3000 makes Lx-82 using 1989.98 nuclear+decay
+
+Ugh. I think we need to try making U-82 which will likely be unstable and decay to N-82. Or make Vt-104 which when reacted with 0 energy will likely decay by fission to P-22+N-82
+  1  1 Sr +  81 40  W => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W  makes Lx-82
+  1  1 Sr +  81 41 Lx => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+  1  1 Sr +  81 42  N => |⬆  82 44 Vl |=  82 43  U |⬇  82 42  N [ ]
+  2  1 Sr +  80 40  W => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+  4  2 Ei +  78 39 Co => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+  5  3 As +  77 38  D => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+  6  3 As +  76 38  D => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+  7  4 Dz +  75 37 Iu => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+  8  4 Dz +  74 37 Iu => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+  9  5 Gj +  73 36 Cj => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 10  5 Gj +  72 36 Cj => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 10  6 Vi +  72 35 Yv => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W makes Lx-82
+ 10  6 Vi +  72 36 Cj => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx makes Lx-82
+ 11  6 Vi +  71 35 Yv => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 12  6 Vi +  70 35 Yv => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 13  7 Ct +  69 34 Kk => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 14  7 Ct +  68 34 Kk => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 15  7 Ct +  67 34 Kk => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 15  8  T +  67 33 Gy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W makes Lx-82
+ 15  8  T +  67 34 Kk => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 16  8  T +  66 33 Gy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 17  8  T +  65 33 Gy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 17  9 Xj +  65 32  F => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 17  9 Xj +  65 33 Gy => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 18  9 Xj +  64 32  F => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 19  9 Xj +  63 32  F => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 20  9 Xj +  62 32  F => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 19 10 Eb +  63 31 Ai => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 19 10 Eb +  63 32  F => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 20 10 Eb +  62 31 Ai => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 20 10 Eb +  62 32  F => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 21 10 Eb +  61 31 Ai => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 21 11  P +  61 30 Ns => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 21 11  P +  61 31 Ai => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 22 11  P +  60 30 Ns => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 23 11  P +  59 30 Ns => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 24 11  P +  58 30 Ns => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 22 12 Ro +  60 29  C => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 22 12 Ro +  60 30 Ns => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 23 12 Ro +  59 29  C => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 23 12 Ro +  59 30 Ns => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 24 12 Ro +  58 29  C => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 24 12 Ro +  58 30 Ns => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 25 12 Ro +  57 29  C => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 26 12 Ro +  56 29  C => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 25 13 Cl +  57 28 Qe => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 25 13 Cl +  57 29  C => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 26 13 Cl +  56 28 Qe => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 26 13 Cl +  56 29  C => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 27 13 Cl +  55 28 Qe => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 27 13 Cl +  55 29  C => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 28 13 Cl +  54 28 Qe => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 27 14 Yu +  55 27 Pg => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 27 14 Yu +  55 28 Qe => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 27 14 Yu +  55 29  C => |⬆  82 44 Vl |=  82 43  U |⬇  82 42  N [r]
+ 28 14 Yu +  54 27 Pg => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 28 14 Yu +  54 28 Qe => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 29 14 Yu +  53 27 Pg => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 29 15 Nd +  53 26 Ux => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 29 15 Nd +  53 27 Pg => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 30 15 Nd +  52 26 Ux => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 31 15 Nd +  51 26 Ux => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 32 15 Nd +  50 26 Ux => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 31 16  K +  51 25  L => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W makes Lx-82
+ 31 16  K +  51 26 Ux => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 32 16  K +  50 25  L => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 32 16  K +  50 26 Ux => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 33 16  K +  49 25  L => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 32 17 Mt +  50 24 Wy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W unanalyzed
+ 32 17 Mt +  50 25  L => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx makes Lx-82
+ 32 17 Mt +  50 26 Ux => |⬆  82 44 Vl |=  82 43  U |⬇  82 42  N [ ]
+ 33 17 Mt +  49 24 Wy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 33 17 Mt +  49 25  L => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 34 17 Mt +  48 24 Wy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 35 17 Mt +  47 24 Wy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 35 18 Lu +  47 23 Pb => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 35 18 Lu +  47 24 Wy => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 36 18 Lu +  46 23 Pb => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 37 18 Lu +  45 23 Pb => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 38 18 Lu +  44 23 Pb => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 37 19 Dx +  45 22 Uq => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 37 19 Dx +  45 23 Pb => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 38 19 Dx +  44 22 Uq => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 38 19 Dx +  44 23 Pb => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 39 19 Dx +  43 22 Uq => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 40 19 Dx +  42 22 Uq => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 39 20 Gd +  43 21  V => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 39 20 Gd +  43 22 Uq => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 40 20 Gd +  42 21  V => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 40 20 Gd +  42 22 Uq => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+ 41 20 Gd +  41 21  V => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
+ 41 21  V +  41 21  V => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
+
+
+[r]|  Ro-23ª +  Mt-32⁺  + 1209 =>   C-55
+[r] Yu-27 + C-55 + ? => ? U-82 ? N-82 <--- SUCCESS! makes N-82 using 1925.24 nuclear+decay
+
+
+Yikes. Here's the steps to make N-81:
+[ ]|  Mt-32⁺ +  S-102ª                     + 2824 =>   P-22 + Aw-112     | decay, nuclear  
+[ ]|  Ro-22⁺ + Aw-112ª                     + 2202 =>   P-22 + Kn-112     | decay, nuclear  
+[ ]| Kn-112ª                               +    0 =>   P-22 + Nm-90      | decay           
+[ ]|  Sr-2∙ +  Yu-27⁺          + [  665 ..  5000] =>   Nd-29             | nuclear                      
+[ ]|  Nd-29⁺ +  Nm-90⁺  + [ 2540 ..  5000] =>   P-22 + S-97                                       | decay, nuclear               
+[ ]|  Xj-17⁺ +   S-97⁺  + [ 1840 ..  4000] =>   P-22 + Ok-92                                      | decay, nuclear               
+[ ]|  Mt-32⁺ +  Ok-92⁺  + [ 2462 ..  5000] =>   P-22 + Ek-102                                     | decay, nuclear               
+[ ]|   P-21⁺ + Ek-102⁺  + [ 2035 ..  3500] =>   P-22 + Ek-101                                     | decay, nuclear               
+[ ]|   P-21⁺ + Ek-101⁺  + [ 1926 ..  3500] =>   P-22 + Ek-100                                     | decay, nuclear               
+[ ]|   P-21⁺ + Ek-100⁺  + [ 1844 ..  3000] =>   P-22 + Ek-99                                      | decay, nuclear               
+[ ]|  Vi-10⁺ +  Ek-99⁺  + [ 1071 ..  4000] => ⬇ Ax-109                                            | decay, nuclear               
+[ ]|   P-21⁺ + Ax-109⁺                                         +    10000 => ⬇ Eb-21 + Ha-109                                                         +    9500.00 |     500.00 | decay                        | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xc3d93d7ff7ff2fd70d762c0be3b19cf5b839e2cecd8715bac58a3d0ed89941d9 | 0x7cdf719dbdb68ba9e03958cad80cff0bba54855d771fa733c4906ee172fded6a |
+[ ]|  Ro-22⁺ + Ha-109⁺                                         +    10000 => ⬇ P-22 + Kn-109                                                          +    9500.00 |     500.00 | decay                        | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x3f5bf0f2a5ab014989f2c6052daa72ac7b021b0c15d090963a31da3f79620635 | 0xd50c6be19c75361c2ad6923c3bda087f61f8974f0ddfd6cde5a2de2d0bc9d944 |
+[ ]|   As-7∙ + Kn-109ª  + [ 1642 ..  5000] =>   P-22 + Da-94                                      | decay, nuclear               
+[ ]|   K-31⁺ +  Da-94⁺  + [ 2756 ..  5000] =>   P-22 + Ek-103                                     | decay, nuclear               
+[ ]| Ek-103⁺            + [  250 ..  5000] => ⬇ Vt-103                                            | decay                        
+[ ]| Vt-103ª            + [  250 ..  5000] =>   P-22 + N-81                                       | decay                        
+
+
+
 
 
 
@@ -1399,6 +1600,10 @@ now: [r] Yu-30 + Kk-72 +4000 => ? Ok-102 makes Ok-102 using 3290.59 nuclear
  [ ] S-100  
 
  30 15 Ndª(0.839) +  70 34 Kkª(0.879) => |⬆ 100  50  S |= 100  49 Da |⬇ 100  48 Ok
+
+ [ ] Z-100  100 51 Z
+
+ [ ] Z-101  101 51 Z
 
  [ ] Z-105  105 51 Z
 NO reactions in the list?!?!
