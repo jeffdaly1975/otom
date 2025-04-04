@@ -1,3 +1,82 @@
+2025-04-04 Apr.Fri 14:00:25 NEW DISCOVERY  Vi-14 aka 14 6 Vi   NOW AT 405 by my count but the discord says theres more than that. Either they're wrong or i am.
+
+ Yu-31⁻ + 1662 => Vi-14 + T-17
+
+2025-04-04 Apr.Fri 13:50:10 NEW DISCOVERY  T-18 aka 18 8 T
+
+ Nd-33⁻ + 1787 => Ct-15 + T-18
+
+2025-04-04 Apr.Fri 13:03:11 Examining parser outputs, I see these BOHR isotopes found in reaction outputs:
+\<\(Ai-61\|Ai-62\|Ai-63\|Ai-64\|Ai-65\|Ai-66\|Ai-67\|As-6\|As-7\|Aw-105\|Aw-106\|Aw-107\|Aw-108\|Aw-111\|Aw-112\|Aw-114\|Aw-115\|Ax-109\|Ax-111\|C-55\|C-56\|C-57\|C-58\|C-59\|C-60\|C-61\|C-62\|C-63\|C-64\|Cj-72\|Cj-73\|Cj-74\|Cj-75\|Cj-76\|Cj-77\|Cl-25\|Cl-26\|Cl-27\|Cl-28\|Co-78\|Co-79\|Co-80\|Co-81\|Co-82\|Co-83\|Ct-13\|Ct-14\|Ct-15\|Ct-16\|Ct-17\|Cv-100\|Cv-101\|Cv-102\|Cv-103\|Cv-104\|Cv-105\|Cv-106\|Cv-107\|Cv-110\|Cv-97\|Cv-98\|Cv-99\|D-76\|D-77\|D-78\|D-79\|D-80\|D-81\|Da-100\|Da-101\|Da-102\|Da-103\|Da-104\|Da-90\|Da-92\|Da-93\|Da-94\|Da-95\|Da-96\|Da-97\|Da-98\|Da-99\|Dd-100\|Dd-88\|Dd-89\|Dd-90\|Dd-91\|Dd-92\|Dd-93\|Dd-94\|Dd-95\|Dd-96\|Dd-97\|Dd-98\|Dd-99\|Dx-37\|Dx-38\|Dx-39\|Dx-40\|Dx-41\|Dz-7\|Dz-8\|Dz-9\|Eb-19\|Eb-20\|Eb-21\|Eb-22\|Eh-124\|Ei-4\|Ei-5\|Ek-100\|Ek-101\|Ek-102\|Ek-103\|Ek-104\|Ek-105\|Ek-106\|Ek-110\|Ek-111\|Ek-112\|Ek-99\|F-62\|F-63\|F-64\|F-65\|F-66\|F-67\|F-68\|F-69\|Gd-39\|Gd-40\|Gd-41\|Gd-42\|Gd-43\|Gd-44\|Gd-45\|Gj-10\|Gj-11\|Gj-9\|Go-118\|Gy-64\|Gy-65\|Gy-66\|Gy-67\|Gy-68\|Gy-69\|Gy-70\|Ha-108\|Ha-109\|Ha-110\|Ha-111\|Ha-113\|Ha-115\|Ha-116\|Ha-117\|I-115\|Iu-74\|Iu-75\|Iu-76\|Iu-77\|Iu-78\|Jb-116\|Ji-103\|Ji-104\|Ji-105\|Ji-110\|Ji-111\|Ji-112\|Ji-113\|Ji-114\|K-31\|K-32\|K-33\|K-34\|K-35\|Kk-67\|Kk-68\|Kk-69\|Kk-70\|Kk-71\|Kk-72\|Kn-106\|Kn-107\|Kn-108\|Kn-109\|Kn-112\|Kn-116\|L-49\|L-50\|L-51\|L-52\|L-53\|L-54\|Lu-35\|Lu-36\|Lu-37\|Lu-38\|Lu-39\|Lu-40\|Lx-81\|Lx-82\|Lx-83\|Lx-84\|Lx-85\|Lx-86\|Lx-87\|Lx-88\|Mt-32\|Mt-33\|Mt-34\|Mt-35\|Mt-36\|Mt-37\|N-81\|N-82\|N-83\|N-84\|N-85\|N-86\|N-87\|N-88\|N-89\|N-90\|Nd-29\|Nd-30\|Nd-31\|Nd-32\|Nd-33\|Nd-34\|Nm-100\|Nm-89\|Nm-90\|Nm-91\|Nm-92\|Nm-93\|Nm-94\|Nm-95\|Nm-96\|Nm-97\|Nm-98\|Nm-99\|Ns-58\|Ns-59\|Ns-60\|Ns-61\|Ns-62\|Ns-63\|Ns-64\|Ns-65\|Ok-100\|Ok-101\|Ok-102\|Ok-103\|Ok-89\|Ok-90\|Ok-91\|Ok-92\|Ok-93\|Ok-94\|Ok-95\|Ok-96\|Ok-97\|Ok-98\|Ok-99\|P-21\|P-22\|P-23\|P-24\|Pb-44\|Pb-45\|Pb-46\|Pb-47\|Pb-48\|Pb-49\|Pb-50\|Pb-51\|Pg-53\|Pg-54\|Pg-55\|Pg-56\|Pg-57\|Pg-58\|Qe-54\|Qe-55\|Qe-56\|Qe-57\|Qe-58\|Qe-59\|Ro-22\|Ro-23\|Ro-24\|Ro-25\|Ro-26\|S-101\|S-102\|S-103\|S-94\|S-95\|S-96\|S-97\|S-98\|S-99\|Se-88\|Se-89\|Se-90\|Se-91\|Se-92\|Se-93\|Se-94\|Se-95\|Se-96\|Sr-1\|Sr-2\|Sr-3\|T-15\|T-16\|T-17\|U-84\|U-87\|U-88\|U-89\|Uq-42\|Uq-43\|Uq-44\|Uq-45\|Uq-46\|Uq-47\|Ux-50\|Ux-51\|Ux-52\|Ux-53\|Ux-54\|Ux-55\|Ux-56\|V-41\|V-42\|V-43\|V-44\|V-45\|V-46\|Vi-11\|Vi-12\|Vi-13\|Vl-86\|Vl-88\|Vl-89\|Vl-90\|Vl-91\|Vl-92\|Vl-93\|Vt-100\|Vt-101\|Vt-102\|Vt-103\|Vt-104\|Vt-105\|Vt-107\|Vt-109\|Vt-110\|Vt-111\|Vt-112\|Vt-98\|Vt-99\|W-78\|W-79\|W-80\|W-81\|W-82\|W-83\|W-84\|Wy-47\|Wy-48\|Wy-49\|Wy-50\|Wy-51\|Wy-52\|X-119\|Xj-17\|Xj-18\|Xj-19\|Xj-20\|Xj-21\|Ys-125\|Yu-27\|Yu-28\|Yu-29\|Yu-30\|Yu-31\|Yv-69\|Yv-70\|Yv-71\|Yv-72\|Yv-73\|Yv-74\|Z-102\|Z-103\|Z-104\|Z-106\|Z-95\|Z-96\|Z-97\|Z-98\)\>
+
+Whats missing? What never is an output? Looks like As-5 and Vi-10:
+
+| As-5   |   5  3 As | As   | metal    |  stability=0.002, decay type=beta+
+| Vi-10  |  10  6 Vi | Vi   | nonmetal |  stability=0.022, decay type=beta+
+
+
+2025-04-04 Apr.Fri 12:58:20 [ ] The output needs to be wider for reaction outputs since OTOMRO 54848 didn't fit:
+|    54848*|bohr    |   Sr-1∙ +  Vi-11⁺ +  Xj-17⁺ +  Pb-48∙ +  Kk-70ª           +      250 => ⬆ GjPbXj(Gj-11>Pb-48,Xj-17) + GjPbXj(Gj-11>Pb-48,Xj-17) + SrKk(Kk-70,Sr- +     133.28 |     116.72 | metallic, chemical, decay    | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x377dbc19301e02679e124602c581815caf12d95e9c87be94e6b8da759a95d906 | 0x1684025e47d5d9430f41484f36605bf0ee6368b7dd194d91a8c073ad403b2e87 |
+
+[ ] ALSO may need to insert the data for this:
+The following 1 OTOMROs have no initiateReaction entry in the logs, but do have an analyseReactions entry:
+ 55968
+
+
+
+2025-04-04 Apr.Fri 12:57:50 [r] looking at my latest parser output I see 3 isotopes that haven't shown up in the new discoveries channel of otom:
+|    55865*|bohr    |  Nd-30ª + Vt-112ª                                         +    10000 =>   P-22 + Nd-30 + N-90                                                    +    9500.00 |     500.00 | decay                        | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x40ff3c40011d2c62992e671e54d1681bcf5e9a057b920f47a006fd3b591c5d7b | 0x833361a862fc5ea22627b62da3488d1999702bcee8652ba87b55a1ee7a8a2e2d |
+|    56219*|bohr    |  Nd-34⁻ + Vt-112ª                                         +    20000 => ⬆ P-22 + K-34 + N-90                                                     +   19000.00 |    1000.00 | decay                        | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xa98b5f86128cdb7ed029a502b24483ff72c6a4cf8b0202a255d614b7c13a09a3 | 0x561e7c231b3cae1edc0e59c6600e24a87e4c6abd642ce1865a69095a36dc48bd |
+|    55963*|bohr    | Ek-100⁺                                                   +        0 => ⬇ Vt-100                                                                 +       0.00 |       0.00 | decay                        | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xf67f248fba13ac458132ddad873297913c83c612b37bc3066bf898c0361e9d17 | 0x9dcb1951ad54862dd3cf9e1c0ae724aa037f94f61c681e370af70e3d4b7c6f5d |
+|    55855*|bohr    |  Xj-18∙ +  I-115ª                                         +    10000 =>   P-22 + Ha-111                                                          +    7211.53 |    2788.47 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x3b79655ed55a1e32982c794316e01d0e452152985ef9e7f739fb70c97a688ee2 | 0x914df6120ea8987d3f841abe99efdf27ab53fff0c626881790d5c715edd59f3b |
+
+2025-04-04 Apr.Fri 00:13:06 TRY
+
+[ ]|  Ct-17⁻ +   K-34∙  + [ 1478 ..  5000] =>   Pb-51                                             | nuclear
+[ ] Pb-51⁻ + 5500 => ? P-25 + Ro-26
+
+[r]|   Dz-9∙ +  Eb-22∙  + [ 1174 ..  5000] =>   Yu-31                                             | nuclear
+[r] Yu-31⁻ + 3000 => ? Vi-14 + T-17 <---SUCCESS makes Vi-14+T-17 using 1661.99 nuclear
+
+[ ]|  Mt-32⁺ +  S-102ª  + [ 2824 ..  4000] =>   P-22 + Aw-112                                     | decay, nuclear               
+[ ]|   Sr-2∙ + Aw-112ª  + [ 1253 ..  3000] =>   P-22 + Nm-92                                      | decay, nuclear
+[ ]|   P-21⁺ +  Nm-92⁺  + [ 2311 ..  5000] =>   P-22 + Nm-91                                      | decay, nuclear
+[ ]|  Eb-19⁺ +  Nm-91⁺  + [ 2231 ..  5500] =>   P-22 + Se-88                                      | decay, nuclear
+[ ] Se-88⁺ +10000 => ? V-40 + Wy-48
+
+[ ]|  Ct-13⁺ +  S-102ª  + [ 1731 ..  5000] =>   P-22 + Nm-93                                      | decay, nuclear               
+[ ]|  Ro-22⁺ +  Nm-93⁺  + [ 2178 ..  3000] =>   P-22 + Dd-93                                      | decay, nuclear               
+[ ]|  Ro-22⁺ +  Dd-93⁺  + [ 2123 ..  3000] =>   P-22 + Ok-93                                      | decay, nuclear               
+[ ]|  Eb-19⁺ +  Ok-93⁺  + [ 2049 ..  3000] =>   P-22 + Dd-90                                      | decay, nuclear               
+[ ]|  Ro-22⁺ +  Dd-90⁺  + [ 1942 ..  3000] =>   P-22 + Ok-90                                      | decay, nuclear               
+[ ]|  Ro-22⁺ +  Ok-90⁺  + [ 1851 ..  3000] =>   P-22 + Da-90                                      | decay, nuclear               
+[ ]|  Eb-19⁺ +  Da-90⁺  + [ 1808 ..  5000] => ⬇ Ha-109                                            | decay, nuclear
+[ ]|   Sr-2∙ + Ha-109⁺  + [ 1347 ..  7000] =>   P-22 + Ok-89                                      | decay, nuclear
+[ ]|   P-21⁺ +  Ok-89⁺  +   1983 => ⬇ Ha-110                                                      | decay, nuclear
+[ ]| Ha-110ª            +      0 =>   P-22 + Dd-88                                                | decay         
+[ ] Dd-88⁺ + 0    => ? Nm-88
+
+[r]|  Ct-17⁻ +   T-16∙  + [  834 ..  5000] =>   Nd-33                                             | nuclear
+[r] Nd-33⁻ + 2000 => ? Ct-15 + T-18 <---SUCCESS! makes Ct-15+T-18 using 1786.50 nuclear
+
+[-]|  Ct-17⁻ +  Ct-17⁻  + [  560 ..  5000] => ⬆ Nd-34                                             | decay, nuclear               
+[-] Nd-34⁻ + 2000 => ? Ct-16 + T-18
+
+[ ]|  Ct-17⁻ +  Ct-17⁻  + [  560 ..  5000] => ⬆ Nd-34                                             | decay, nuclear               
+[ ]|  Gj-11∙ +  Nd-34⁻  + [ 1026 ..  2000] =>   Gd-45                                             | nuclear                      
+[ ]|  Gd-45⁻            + [ 2887 ..  5000] =>   Xj-21 + P-24                                      | nuclear
+[ ] Xj-21⁻ + 2000 => ? Dz-10 + Gj-11
+
+[f] Ct-13⁺ + 1000 => ? Dz-6 + Dz-7  <--- makes DzAs(As-6>Dz-7) using 407.05 nuclear+metallic
+[r] Ct-13⁺ + 368  =>   Dz-6 + Dz-7  using 361.18 nuclear
+
+
+2025-04-03 Apr.Thu 23:40:57 Time to check which combinations of bohr mineables havent yet been attempted and see if I should try them.
+[ ] get fresh Reactor Log exports from shapescan.xyz
+[ ] run the parser
+[ ] trim reactions of non-mineables as inputs
+[ ] voila
+
 2025-04-03 Apr.Thu 22:20:30 NEW DISCOVERY Ji-110 aka 110 55 Ji  NOW there are 395 isotopes
 
  K-31 + S-101 + 2914 => P-22 + Ji-110

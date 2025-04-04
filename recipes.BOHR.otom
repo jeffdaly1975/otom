@@ -125,6 +125,7 @@
 |   Dz-9∙ +  Ct-17⁻  + [  785 ..  5000] => ⬆ Ro-26                                             | decay, nuclear               
 |   Dz-9∙ +  Eb-20∙  + [ 1153 ..  5000] =>   Yu-29                                             | nuclear                      
 |   Dz-9∙ +  Eb-21∙  + [ 1167 ..  5000] =>   Yu-30                                             | nuclear                      
+|   Dz-9∙ +  Eb-22∙  + [  983 ..  5000] =>   Yu-31                                             | nuclear
 |   Dz-9∙ +  Kk-70ª  + [ 1582 ..  3000] =>   D-79                                              | nuclear                      
 |   Dz-9∙ +  Kk-71ª  + [ 1544 ..  5000] =>   D-80                                              | nuclear                      
 |   Dz-9∙ +  Mt-36⁻  + [ 1078 ..  2000] =>   V-45                                              | nuclear                      
@@ -239,6 +240,8 @@
 |   P-21⁺ +  Kk-71ª  + [ 1946 .. 10000] =>   Se-92                                             | nuclear                      
 |   P-21⁺ +  Mt-32⁺  + [ 1227 ..  5000] => ⬇ Pg-53                                             | decay, nuclear               
 |   P-21⁺ +  Mt-34⁺  + [ 1450 ..  5000] =>   Qe-55                                             | nuclear                      
+|   P-21⁺ +  Nm-92⁺  + [ 2311 ..  5000] =>   P-22 + Nm-91                                      | decay, nuclear
+|   P-21⁺ +  Ok-89⁺  + [ 1983 ..  5000] => ⬇ Ha-110                                            | decay, nuclear
 |   P-21⁺ +  Ro-22⁺  + [ 1103 ..  5000] => ⬇ Uq-43                                             | decay, nuclear               
 |   P-21⁺ +  Ro-24ª  + [ 1249 ..  5000] =>   Pb-45                                             | nuclear                      
 |   P-21⁺ +  S-102ª  + [ 2313 ..  2441] =>   P-22 + S-101                                      | nuclear
@@ -356,6 +359,7 @@
 |   Sr-2∙ +  Yu-27⁺  + [  598 ..  5000] =>   Nd-29                                             | nuclear                      
 |   Sr-2∙ +  Yv-72ª  + [ 1215 ..  4000] =>   Cj-74                                             | nuclear                      
 |   Sr-2∙ + Aw-112ª  + [ 1253 .. 10000] =>   P-22 + Nm-92                                      | decay, nuclear               
+|   Sr-2∙ + Ha-109⁺  + [ 1347 ..  7000] =>   P-22 + Ok-89                                      | decay, nuclear
 |   Sr-3∙ +   As-5⁺  + [  239 ..  5000] =>   Dz-8                                              | nuclear                      
 |   Sr-3∙ +   As-6∙  + [  381 ..   845] =>   Dz-9                                              | nuclear                      
 |   Sr-3∙ +   As-7∙  + [  397 ..  5000] => ⬆ Gj-10                                             | decay, nuclear               
@@ -495,7 +499,7 @@
 |  Cl-27∙ +  S-102ª  + [ 3668 ..  5000] =>   P-22 + Cv-107                                     | decay, nuclear               
 |  Cl-27∙ +  Wy-50∙  + [ 3386 ..  5000] =>   Iu-77                                             | nuclear                      
 |  Co-80ª            + [ 7357 .. 10000] =>   Lu-37 + V-43                                      | nuclear                      
-|  Ct-13⁺            + [   13 ..   343] => ⬇ Vi-13                                             | decay                        
+|  Ct-13⁺            + [    0 ..   343] => ⬇ Vi-13                                             | decay                        
 |  Ct-13⁺ +   K-31⁺  + [ 1078 ..  5000] => ⬇ Uq-44                                             | decay, nuclear               
 |  Ct-13⁺ +   K-34∙  + [ 1425 ..  5000] =>   Pb-47                                             | nuclear                      
 |  Ct-13⁺ +   L-51⁺  + [ 1398 ..  5000] =>   F-64                                              | nuclear                      
@@ -538,8 +542,10 @@
 |  Ct-17⁻            + [    1 ..   466] => ⬆ T-17                                              | decay                        
 |  Ct-17⁻            + [  486 ..   500] => ⬆ Dz-8 + Dz-9                                       | decay, nuclear               
 |  Ct-17⁻ +   K-31⁺  + [ 1116 ..  5000] =>   Pb-48                                             | nuclear                      
+|  Ct-17⁻ +   K-34∙  + [ 1478 ..  5000] =>   Pb-51                                             | nuclear
 |  Ct-17⁻ +   P-21⁺  + [  932 ..  5000] =>   Lu-38                                             | nuclear                      
 |  Ct-17⁻ +   P-23∙  + [ 1212 ..  5000] =>   Lu-40                                             | nuclear                      
+|  Ct-17⁻ +   T-16∙  + [  834 ..  5000] =>   Nd-33                                             | nuclear
 |  Ct-17⁻ +  Cl-25⁺  + [  860 ..  2000] =>   Gd-42                                             | nuclear                      
 |  Ct-17⁻ +  Ct-17⁻  + [  560 ..  5000] => ⬆ Nd-34                                             | decay, nuclear               
 |  Ct-17⁻ +  Eb-20∙  + [ 1144 ..  5000] =>   Mt-37                                             | nuclear                      
@@ -559,6 +565,7 @@
 |  Eb-19⁺ +   P-21⁺  + [ 1077 ..  5000] => ⬇ Gd-40                                             | decay, nuclear               
 |  Eb-19⁺ +   P-23∙  + [ 1415 ..  5000] =>   V-42                                              | nuclear                      
 |  Eb-19⁺ +  Cl-26ª  + [ 1212 ..  5000] =>   Pb-45                                             | nuclear                      
+|  Eb-19⁺ +  Da-90⁺  + [ 1808 ..  5000] => ⬇ Ha-109                                            | decay, nuclear
 |  Eb-19⁺ +  Da-95⁺  + [ 2291 ..  7500] =>   P-22 + Ok-92                                      | decay, nuclear               
 |  Eb-19⁺ +  Eb-19⁺  + [ 1027 ..  6000] => ⬇ Dx-38                                             | decay, nuclear               
 |  Eb-19⁺ +  Eb-21∙  + [ 1349 ..  5000] =>   Gd-40                                             | nuclear                      
@@ -567,6 +574,7 @@
 |  Eb-19⁺ +  Lx-86ª  + [ 2135 ..  3000] =>   P-22 + W-83                                       | decay, nuclear               
 |  Eb-19⁺ +  Mt-32⁺  + [ 1263 ..  5000] => ⬇ Ux-51                                             | decay, nuclear               
 |  Eb-19⁺ +  Nd-30ª  + [ 1298 ..  5000] =>   L-49                                              | nuclear                      
+|  Eb-19⁺ +  Nm-91⁺  + [ 2231 ..  5500] =>   P-22 + Se-88                                      | decay, nuclear
 |  Eb-19⁺ +  Ok-89⁺  + [ 1804 ..  3500] => ⬇ Kn-108                                            | decay, nuclear               
 |  Eb-19⁺ +  Ok-92⁺  + [ 1877 .. 10000] =>   P-22 + Dd-89                                      | decay, nuclear               
 |  Eb-19⁺ +  Ok-93⁺  + [ 2049 ..  3000] =>   P-22 + Dd-90                                      | decay, nuclear               
@@ -629,6 +637,7 @@
 |  Gd-41∙ +  Cj-77∙  + [ 5747 .. 10000] =>   P-22 + Se-96                                      | decay, nuclear               
 |  Gd-43⁻            + [ 2876 ..  5000] =>   Xj-20 + P-23                                      | nuclear                      
 |  Gd-44⁻            + [ 2919 ..  5000] =>   Xj-20 + P-24                                      | nuclear                      
+|  Gd-45⁻            + [ 2887 ..  5000] =>   Xj-21 + P-24                                      | nuclear
 |  Gj-11∙ +   L-51⁺  + [ 1581 ..  5000] =>   Ns-62                                             | nuclear                      
 |  Gj-11∙ +   T-16∙  + [ 1118 ..  5000] =>   Cl-27                                             | nuclear                      
 |  Gj-11∙ +  Cl-25⁺  + [ 1093 ..  5000] =>   Lu-36                                             | nuclear                      
