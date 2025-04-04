@@ -1,3 +1,29 @@
+2025-04-03 Apr.Thu 22:20:30 NEW DISCOVERY Ji-110 aka 110 55 Ji  NOW there are 395 isotopes
+
+ K-31 + S-101 + 2914 => P-22 + Ji-110
+
+2025-04-03 Apr.Thu 21:53:56 NEW DISCOVERY Ji-113 aka 113 55 Ji
+
+ Gy-67 + Gy-68 + 3817 => P-22 + Ji-113
+
+2025-04-03 Apr.Thu 16:39:24 I bet Aw-108 + Sr-1 makes Kn-109 which immediately decays to Aw-109
+
+[ ]|  Ct-13⁺ +  S-102ª  +  1731 =>   P-22 + Nm-93   
+[ ]|  Ro-22⁺ +  Nm-93⁺  +  2178 =>   P-22 + Dd-93   
+[ ]|  Ro-22⁺ +  Dd-93⁺  +  2123 =>   P-22 + Ok-93   
+[ ]|  Eb-19⁺ +  Ok-93⁺  +  2049 =>   P-22 + Dd-90   
+[ ]|  Ro-22⁺ +  Dd-90⁺  +  1942 =>   P-22 + Ok-90   
+[ ]|  Ro-22⁺ +  Ok-90⁺  +  1851 =>   P-22 + Da-90   
+[ ]|  Eb-19⁺ +  Da-90⁺  +  1808 => ⬇ Ha-109         
+[ ]|   Sr-2∙ + Ha-109⁺  +  1347 =>   P-22 + Ok-89   
+[ ]|  Eb-19⁺ +  Ok-89⁺  +  1804 => ⬇ Kn-108         
+[ ]|  Cl-25⁺ + Kn-108⁺  +   250 => ⬇ Ro-25 + Aw-108 
+[ ]   Sr-1 + Aw-108  + 2000 => ? Kn-109 ? Aw-109 ?
+
+Man these recipe chains are ridiculous. We need a lot more new reactions to find better routes.
+
+2025-04-03 Apr.Thu 16:36:21 Now there are 393 isotopes in BOHR
+
 2025-04-03 Apr.Thu 11:32:06
 
 if
@@ -182,6 +208,58 @@ Since I think the result will be beta+ it could want to drop a proton:
 2025-04-02 Apr.Wed 20:27:35 what we missing now?
 
 [ ] Ax-110
+  since
+  |  Vi-10⁺ +  Ek-99⁺  +     1071 => ⬇ Ax-109  | decay, nuclear
+  |  Ro-22⁺ +  Ok-89⁺  +     2081 => ⬇ Ax-111  | decay, nuclear
+
+  does
+  Vi-11 + Ek-99 + 2000 => ? ⬇ Ax-110
+
+  |    54498 |bohr    |  Ro-22⁺ +  Nm-92⁺                                         +     3000 =>   P-22 + Dd-92                                                           +     851.11 |    2148.89 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xc0eda32e16b51e70c25e3055e75a03fdb72ac9f2ac50ac7ac5aff70a4e29d943 | 0xc9e846ec223fd20e7aad5aeb69b01bafcb739107a92adc402c7cd580a34f459b |
+  |    38249*|bohr    |  Ro-22⁺ +  Dd-92⁺                                         +    10000 =>   P-22 + Ok-92                                                           +    7512.48 |    2487.52 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x1126fe10567519380c1726160df7b91d10b2b4b025ea536972b758e99856a500 | 0x09a2ebbbf8555d8aaedc406916c005aa8f27dd897aa03df83fe190ef3ef13fc2 |
+  |    39159*|bohr    |  Mt-32⁺ +  Ok-92⁺                                         +     5000 =>   P-22 + Ek-102                                                          +    2426.25 |    2573.75 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x909f4493334396e783b4b1cc8b770e2bd8690ab027e7da998e3cb8e1c531cc03 | 0x2c868cb36314d55617c0aae0d7dd7542449fd3a4d01081be3a5d52d61384838f |
+  |    39171*|bohr    |   K-31⁺ + Ek-102⁺                                         +     8000 => ⬇ K-31 + Vt-102                                                          +    7600.00 |     400.00 | decay                        | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x631e9b5f193b58a3e46aa07f8921994eeff4665ace1c0ce76a35b329f3eeff77 | 0x0452fbca05ed6d9a7c1b388fbbb3b7c1f53081a643f886252a8301154fa969f3 |
+  |    39177*|bohr    |  Mt-32⁺ + Vt-102⁺                                         +     7500 => ⬇ K-32 + Cv-102                                                          +    7125.00 |     375.00 | decay                        | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xa7f8d13c4abf887282729d03f02663b169bb6cd5ae855609b7e14ddb5ce1b5d1 | 0xb0305754dc15c8543efeb87eed64c498f023c489dacd75858e6c42859c3f16ca |
+  |    39185*|bohr    |  Vi-11⁺ + Cv-102ª                                         +     5000 =>   P-22 + Dd-91                                                           +    3363.41 |    1636.59 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xbd5b338bb80ca53f6cacf4bd09a81c41d263cbce30f999643a50460ad62ae3f6 | 0xa9ba5401c79951f3fce2c6dadff9c1f2c70027d577d36b53a3cb24467fc92b03 |
+  |    39195*|bohr    |  Ro-22⁺ +  Dd-91⁺                                         +     5000 =>   P-22 + Ok-91                                                           +    2873.60 |    2126.40 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xa98196144e246abd4fe693a910a014d733fb4e0e18db42e03c70dbe38d8c6a98 | 0xd4229c9bb9ebd0cf43a8ae0a90403591cdb00da15f67f387fc481893c9aba382 |
+  |    39198*|bohr    |  Mt-32⁺ +  Ok-91⁺                                         +     4000 =>   P-22 + Ek-101                                                          +    1564.87 |    2435.13 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xdaf3cf13ebeb6905b4f03ba4f688c5de55d96fdb821bbe300687bd50142ed068 | 0x8a16eef780021d40ae27bff37d0944dc746e1fe4e727d1618c29c739ba2844b4 |
+  |    53684 |bohr    |   P-21⁺ + Ek-101⁺                                         +     5000 =>   P-22 + Ek-100                                                          +    2999.08 |    2000.92 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xff2b0c3161389dfda4218c4dfb9c4e90454a037dbdaf4e36cacacbec75e8b199 | 0x8b647a2bce2138a286f2a5c2cc1b5c4c8a1fd4ae6b71c3b58a23b46e2630b2fb |
+  |    54804 |bohr    |   P-21⁺ + Ek-100⁺                                         +     3000 =>   P-22 + Ek-99                                                           +    1156.09 |    1843.91 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xbcb6354d35eb1cac1be6b97366e1fa621fda286187c27c58a9bad39b1e343f48 | 0xb852b2b2483d9189441ced9d06a8b4392667da8a2fec63f66a73eccc2ef06fcf |
+  [ ] Vi-11 + Ek-99 + 2000 => ? ⬇ Ax-110
+
+  Damn I don't like these huge recipe chains!
+
+
+
+  does
+  Ro-23 +  Ok-89  +     3000 => ? ⬇ Ax-112
+  Ro-22 +  Ok-90  +     3000 => ? ⬇ Ax-112
+
+  [ ]|  Mt-32⁺ +  S-102ª  + 2883 =>   P-22 + Aw-112
+  [ ]|   Sr-2∙ + Aw-112ª  + 1686 =>   P-22 + Nm-92 
+  [ ]|  Ro-22⁺ +  Nm-92⁺  + 2149 =>   P-22 + Dd-92 
+  [ ]|  Ro-22⁺ +  Dd-92⁺  + 2488 =>   P-22 + Ok-92 
+  [ ]|  Eb-19⁺ +  Ok-92⁺  + 2284 =>   P-22 + Dd-89 
+  [ ]|  Ro-22⁺ +  Dd-89⁺  + 2127 =>   P-22 + Ok-89 
+  [ ]   Ro-23 +  Ok-89  +     3000 => ? ⬇ Ax-112
+
+  [ ]|  Ct-13⁺ +  S-102ª  + 1731 =>   P-22 + Nm-93 
+  [ ]|  Ro-22⁺ +  Nm-93⁺  + 2178 =>   P-22 + Dd-93 
+  [ ]|  Ro-22⁺ +  Dd-93⁺  + 2123 =>   P-22 + Ok-93 
+  [ ]|  Eb-19⁺ +  Ok-93⁺  + 2049 =>   P-22 + Dd-90 
+  [ ]|  Ro-22⁺ +  Dd-90⁺  + 1942 =>   P-22 + Ok-90 
+  [ ]   Ro-22 +  Ok-90  +     3000 => ? ⬇ Ax-112
+
+  does
+  Ro-24 +  Ok-89  +     3000 => ? ⬇ Ax-113
+  Ro-23 +  Ok-90  +     3000 => ? ⬇ Ax-113
+
+  does
+  Ro-25 +  Ok-89  +     3000 => ? ⬇ Ax-114
+  Ro-24 +  Ok-90  +     3000 => ? ⬇ Ax-114
+
+
+
 [ ] Ha-111
 [ ] Ha-112
 [c] Ha-113
@@ -194,14 +272,47 @@ Since I think the result will be beta+ it could want to drop a proton:
 [ ] Aw-109
 [ ] Aw-110
 [ ] Aw-113
-[ ] Ji-104
-[ ] Ji-105
+[c] Ji-104
+[c] Ji-105
 [ ] Ji-106
 [ ] Ji-107
 [ ] Ji-108
 [ ] Ji-109
-[ ] Ji-110
-[ ] Ji-113
+[r] Ji-110
+[r] Ji-113
+ since
+ |   K-31⁺ +  S-102ª  + 3030 =>   P-22 + Ji-111  
+ |   K-31⁺ +  S-102ª  + 3280 =>   P-22 + Ji-111  
+ does
+ K-31 + S-101 + 3500 => P-22 + ? Ji-110
+
+ [r] P-21⁺ +  S-102ª + 2313 =>   P-22 + S-101 
+ [r] K-31 + S-101 + 3500 => P-22 + ? Ji-110 <---SUCESS! makes P-22+Ji-110 using 2913.19 nuclear+decay
+			    
+ since
+ |  Gy-67ª +  Gy-67ª  + 3778 =>   P-22 + Ji-112  
+ does
+ Gy-67 + Gy-68 +4000 => P-22 + ? Ji-113
+
+ [r] K-34∙ +  Mt-34⁺ + 2281 =>   Gy-68 
+ [r] Gy-67 + Gy-68 +4000 => P-22 + ? Ji-113 <---SUCCESS! makes P-22+Ji-113 using 3816.28 nuclear+decay
+			    
+ |   K-34∙ +  S-102ª  + 4193 =>   P-22 + Ji-114  
+ |   K-34∙ +  S-102ª  + 4443 =>   P-22 + Ji-114  
+ |  Pg-56∙ +  Co-80ª  + 4290 =>   P-22 + Ji-114  
+ Pg-57 + Co-80 => P-22 + ? Ji-115
+ Pg-56 + Co-81 => P-22 + ? Ji-115
+
+ [r]|  Gj-11∙ +  Kk-70ª  + 1655 =>   Co-81                  
+ [r]|   Ei-5∙ +   L-51⁺  + 1070 =>   Pg-56                  
+ [f]Pg-56 + Co-81 + 5000 => P-22 + ? Ji-115 <--- NOPE NOTHING HAPPENED
+						
+ [r]|  S-102ª +        0 =>   P-22 + Co-80
+ [r]|   P-23∙ +   K-34∙  + 2354 =>   Pg-57                  
+ [f] Pg-57 + Co-80 + 5000 => P-22 + ? Ji-115 <---NOPE NOTHING HAPPENED!
+
+
+
 [ ] Ek-105
 [ ] Ek-107
 [ ] Ek-108
@@ -218,7 +329,7 @@ Since I think the result will be beta+ it could want to drop a proton:
 [ ] Z-105
 [ ] S-99
 [ ] S-100
-[ ] Ok-96
+[r] Ok-96
 
 since:
 |    37906*|bohr    |  Nd-30ª +  Gy-67ª +     5000 =>   Ok-97 +    2501.93 |    2498.07 | nuclear                      | 0x064f5692b711fe69cc10ef3848ba659b8b6dcefa | 0x5c1c939f9110ba6f3881b3f2e8173c434667e77f884f3367716f44dbabed40c2 | 0xac9e97d7559086c0cde61fc61c96e76a52f51ff7d0aac426d57951845df8d44d |
@@ -227,8 +338,8 @@ does:
 Nd-30 + Gy-66 => ? Ok-96
 Nd-29 + Gy-67 => ? Ok-96
 
-[ ] |   K-34∙ +  Mt-32⁺  + [ 2189 ..  5000] =>   Gy-66                                             | nuclear                      
-[ ] Nd-30 + Gy-66 + 3000 => ? Ok-96
+[-] |   K-34∙ +  Mt-32⁺  + [ 2189 ..  5000] =>   Gy-66                                             | nuclear                      
+[-] Nd-30 + Gy-66 + 3000 => ? Ok-96
 or
 [r] |  Vi-10⁺ +  Eb-19⁺  + [  681 ..  5000] => ⬇ Nd-29                                             | decay, nuclear               
 [f] Nd-29 + Gy-67 + 3000 => ? Ok-96 <---NOPE it makes Ok-96 which immediately decays to Dd-96
@@ -1945,7 +2056,7 @@ NO reactions in the list?!?!
  48 23 Pb∙(1.852) +  61 31 Ai⁺(0.866) => |⬆ 109  55 Ji |=            |⬇           
  55 27 Pg⁺(0.967) +  54 28 Qe⁺(0.826) => |⬆ 109  56 Aw |= 109  55 Ji |⬇           
 
- [ ] Ji-110  
+ [c] Ji-110  
 
   4  2 Ei∙(1.000) + 106 52 Cvª(0.683) => |⬆ 110  55 Ji |=            |⬇           
   8  4 Dz∙(1.000) + 102 50  Sª(0.750) => |⬆ 110  55 Ji |=            |⬇           
@@ -1964,7 +2075,7 @@ NO reactions in the list?!?!
  50 26 Ux⁺(0.789) +  60 30 Ns⁺(0.928) => |⬆ 110  57 Kn |= 110  56 Aw |⬇ 110  55 Ji
  55 27 Pg⁺(0.967) +  55 27 Pg⁺(0.967) => |⬆ 110  55 Ji |=            |⬇           
 
- [ ] Ji-113  
+ [c] Ji-113  
 
   1  1 Sr∙(1.000) + 112 55 Jiª(0.616) => |⬆ 113  57 Kn |= 113  56 Aw |⬇ 113  55 Ji
   7  3 As∙(1.000) + 106 52 Cvª(0.683) => |⬆ 113  56 Aw |= 113  55 Ji |⬇           
