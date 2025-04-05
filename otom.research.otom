@@ -1,3 +1,28 @@
+2025-04-04 Apr.Fri 21:30:39 NEW DISCOVERY  Dz-10 aka 10 4 Dz     NOW BOHR has 415 isotopes
+
+ Xj-21⁻ + 825 => Dz-10 + Gj-11
+
+2025-04-04 Apr.Fri 21:01:24
+try:
+[ ] Cj-68⁺ + 0 => ? Yv-68
+
+
+2025-04-04 Apr.Fri 16:27:29 NEW DISCOVERY Wy-53 aka 53 24 Wy   NOW 411 isotopes in BOHR
+
+[r]|  Ct-17⁻ +   K-34∙  + [ 1302 ..  5000] =>   Pb-51                                             | nuclear
+[r]  2   1 Sr +  51  23 Pb + 2000 => |⬆  53  25  L |=  53  24 Wy |⬇  53  23 Pb <-- SUCCESS! makes Wy-53 using 933.92 nuclear
+
+  3   1 Sr +  50  23 Pb => |⬆  53  25  L |=  53  24 Wy |⬇  53  23 Pb
+
+whats
+Ro-27 + Sr-3 ?
+27 12 Ro + 3  1 Sr => ? 30 13 Cl NO it will probably decay to Yu-30
+27 12 Ro + 2  1 Sr => ? 29 13 Cl NO it will probably decay to Yu-29
+
+2025-04-04 Apr.Fri 15:58:47 NEW DISCOVERY Ro-27 aka 27 12 Ro
+
+ Pb-51⁻ + 3632 => P-24 + Ro-27
+
 2025-04-04 Apr.Fri 14:00:25 NEW DISCOVERY  Vi-14 aka 14 6 Vi   NOW AT 405 by my count but the discord says theres more than that. Either they're wrong or i am.
 
  Yu-31⁻ + 1662 => Vi-14 + T-17
@@ -32,8 +57,8 @@ The following 1 OTOMROs have no initiateReaction entry in the logs, but do have 
 
 2025-04-04 Apr.Fri 00:13:06 TRY
 
-[ ]|  Ct-17⁻ +   K-34∙  + [ 1478 ..  5000] =>   Pb-51                                             | nuclear
-[ ] Pb-51⁻ + 5500 => ? P-25 + Ro-26
+[r]|  Ct-17⁻ +   K-34∙  + [ 1478 ..  5000] =>   Pb-51                                             | nuclear
+[r] Pb-51⁻ + 5500 => ? P-25 + Ro-26 <---SUCCESS!!!   makes P-24 + Ro-27 using 3631.23 nuclear
 
 [r]|   Dz-9∙ +  Eb-22∙  + [ 1174 ..  5000] =>   Yu-31                                             | nuclear
 [r] Yu-31⁻ + 3000 => ? Vi-14 + T-17 <---SUCCESS makes Vi-14+T-17 using 1661.99 nuclear
@@ -62,10 +87,10 @@ The following 1 OTOMROs have no initiateReaction entry in the logs, but do have 
 [-]|  Ct-17⁻ +  Ct-17⁻  + [  560 ..  5000] => ⬆ Nd-34                                             | decay, nuclear               
 [-] Nd-34⁻ + 2000 => ? Ct-16 + T-18
 
-[ ]|  Ct-17⁻ +  Ct-17⁻  + [  560 ..  5000] => ⬆ Nd-34                                             | decay, nuclear               
-[ ]|  Gj-11∙ +  Nd-34⁻  + [ 1026 ..  2000] =>   Gd-45                                             | nuclear                      
-[ ]|  Gd-45⁻            + [ 2887 ..  5000] =>   Xj-21 + P-24                                      | nuclear
-[ ] Xj-21⁻ + 2000 => ? Dz-10 + Gj-11
+[r]|  Ct-17⁻ +  Ct-17⁻  + [  560 ..  5000] => ⬆ Nd-34                                             | decay, nuclear               
+[r]|  Gj-11∙ +  Nd-34⁻  + [ 1026 ..  2000] =>   Gd-45                                             | nuclear                      
+[r]|  Gd-45⁻            + [ 2887 ..  5000] =>   Xj-21 + P-24                                      | nuclear
+[r] Xj-21⁻ + 2000 => ? Dz-10 + Gj-11 <---SUCCESS! makes Dz-10 + Gj-11 using 824.33 nuclear
 
 [f] Ct-13⁺ + 1000 => ? Dz-6 + Dz-7  <--- makes DzAs(As-6>Dz-7) using 407.05 nuclear+metallic
 [r] Ct-13⁺ + 368  =>   Dz-6 + Dz-7  using 361.18 nuclear

@@ -352,6 +352,7 @@ my @otom_isotopes = (
  [ "Dz-7"  ,   "7  4 Dz",   4,   96791197095922083363926495934917947541664217655893553170638581721630859143674   , "beta+"      , "0.177" ],
  [ "Dz-8"  ,   "8  4 Dz",   4,   5950001149081676074863995422378774682617256195975430965083438191368743466081    , "stable"     , "1.000" ],
  [ "Dz-9"  ,   "9  4 Dz",   4,   86234897653622607369902203679249516112909387681507880552788404369353457246033   , "stable"     , "1.000" ],
+ [ "Dz-10" ,  "10  4 Dz",   4,   89633610204222189290655064872628197059310031921976304863645195089137573413842   , "beta-"      , "0.263" ],
  [ "Gj-9"  ,   "9  5 Gj",   5,   27576324779280719016744302842889926146165757867549491700662285202623589061396   , "beta+"      , "0.308" ],
  [ "Gj-10" ,  "10  5 Gj",   5,   26446983422613641290354559185945224067331263666497229198131834044893140901583   , "stable"     , "1.000" ],
  [ "Gj-11" ,  "11  5 Gj",   5,   31102583029689506878211804699792464113059032367323489579420118660583823413942   , "stable"     , "1.057" ],
@@ -359,6 +360,7 @@ my @otom_isotopes = (
  [ "Vi-11" ,  "11  6 Vi",   6,   82961469656761083403458126583238932164496496863464029310422884406368126617104   , "beta+"      , "0.410" ],
  [ "Vi-12" ,  "12  6 Vi",   6,   101089941738520477390046625314082680495752555082254937169870714444309987637387  , "stable"     , "1.339" ],
  [ "Vi-13" ,  "13  6 Vi",   6,   11970493603493627704575457561477989464693093880604506149071872191205234829710   , "stable"     , "1.212" ],
+ [ "Vi-14" ,  "14  6 Vi",   6,   76780335155233055615554893168345348346369801964955034537408109024011268449446   , "beta-"      , "0.513" ],
  [ "Ct-13" ,  "13  7 Ct",   7,   63535350598849463258776694123335078480087264300492462942940648286452309513078   , "beta+"      , "0.491" ],
  [ "Ct-14" ,  "14  7 Ct",   7,   56031833513526122905785182186750219334742903703645278182052039460979249127144   , "stable"     , "1.212" ],
  [ "Ct-15" ,  "15  7 Ct",   7,   73137270506110850910388827211708592235407344236726957878307671892470665968697   , "stable"     , "1.337" ],
@@ -367,6 +369,7 @@ my @otom_isotopes = (
  [ "T-15"  ,  "15  8  T",   8,   59556967404187678662646267921069430003902119556859655597906602022599940926148   , "beta+"      , "0.556" ],
  [ "T-16"  ,  "16  8  T",   8,   62859260895915857710705016617839561632364931612940636535372370854628937979564   , "stable"     , "1.507" ],
  [ "T-17"  ,  "17  8  T",   8,   78008157082954577735784611198008510346757176613301265521960768238825213417341   , "stable"     , "1.438" ],
+ [ "T-18"  ,  "18  8  T",   8,   73784570893240685529319937486094618604972859190563224976313034092940192957781   , "beta-"      , "0.667" ],
  [ "Xj-17" ,  "17  9 Xj",   9,   79038818055220076407128022781469474734892656550034359940267508654436659868413   , "beta+"      , "0.609" ],
  [ "Xj-18" ,  "18  9 Xj",   9,   70693592540909995436033191318907627805555821281280814156929418637001050770917   , "stable"     , "1.400" ],
  [ "Xj-19" ,  "19  9 Xj",   9,   94556532803180679479699330103446822361377362500065800860110844365898127525120   , "stable"     , "1.520" ],
@@ -385,6 +388,7 @@ my @otom_isotopes = (
  [ "Ro-24" ,  "24 12 Ro",  12,   46258387338405485743350855906121519456556038106624847701922991440152540654951   , "alpha"      , "0.851" ],
  [ "Ro-25" ,  "25 12 Ro",  12,   95249994532694909401009782553046662556729685318051631247971276558969667246331   , "stable"     , "1.690" ],
  [ "Ro-26" ,  "26 12 Ro",  12,   44745131638486144444055447696630248651411180935524576736126010917579210383196   , "stable"     , "1.668" ],
+ [ "Ro-27" ,  "27 12 Ro",  12,   46368437767883235865508416279722410922691195077404398067155519057130286528381   , "beta-"      , "0.712" ],
  [ "Cl-25" ,  "25 13 Cl",  13,   5056413499213578361803240757277990040379635725728954772149257453311087916730    , "beta+"      , "0.744" ],
  [ "Cl-26" ,  "26 13 Cl",  13,   96857545230599188748570289005884597323126945118460111927701762324397382461353   , "alpha"      , "0.809" ],
  [ "Cl-27" ,  "27 13 Cl",  13,   114871366265957990074829434475006986378916198483729666859126760851483606696211  , "stable"     , "1.728" ],
@@ -455,6 +459,7 @@ my @otom_isotopes = (
  [ "Wy-50" ,  "50 24 Wy",  24,   73015093878660405262760067564342231514063367441955421517339956344324641582339   , "stable"     , "1.918" ],
  [ "Wy-51" ,  "51 24 Wy",  24,   67483377168930786909814671423086548714530652731704031898612619398770243756290   , "stable"     , "1.890" ],
  [ "Wy-52" ,  "52 24 Wy",  24,   17840346828143061986223947458485259165809793656600593385884614728284538261773   , "stable"     , "1.903" ],
+ [ "Wy-53" ,  "53 24 Wy",  24,   33026788642201781609586939497910279411742895795585398709150212850800174133581   , "beta-"      , "0.972" ],
  [ "L-49"  ,  "49 25  L",  25,   82992161518172202634604141104760159185880090959148871317748056558044568524354   , "beta+"      , "0.846" ],
  [ "L-50"  ,  "50 25  L",  25,   52255423960593176501363531627454977047709086260368788995079611386190530744355   , "beta+"      , "0.886" ],
  [ "L-51"  ,  "51 25  L",  25,   42845504584729435690186806379630548874156081245947208923023473119109763677348   , "beta+"      , "0.936" ],
@@ -490,6 +495,7 @@ my @otom_isotopes = (
  [ "C-62"  ,  "62 29  C",  29,   7201160732864445906916080940956467818313351796757320052445064239311878106399    , "stable"     , "1.016" ],
  [ "C-63"  ,  "63 29  C",  29,   72036501724982240095480215981992986236378168803554752091779191200936480977618   , "stable"     , "1.990" ],
  [ "C-64"  ,  "64 29  C",  29,   71535475294753830992873608480922381419555381384815471343302672331081578606332   , "beta-"      , "0.943" ],
+ [ "Ns-57" ,  "57 30 Ns",  30,   51970653281402920084661863406411316976973822626675909155134192541494551795187   , "beta+"      , "0.723" ],
  [ "Ns-58" ,  "58 30 Ns",  30,   31970451018020010733334682435605138126406732441203680973562417608458276609124   , "beta+"      , "0.819" ],
  [ "Ns-59" ,  "59 30 Ns",  30,   95811607477796377468584389901245399150488758534529954281642111155213602052518   , "beta+"      , "0.956" ],
  [ "Ns-60" ,  "60 30 Ns",  30,   77530394858043827982684481351159131885814450012700959813349255435930115618576   , "beta+"      , "0.928" ],
@@ -526,12 +532,14 @@ my @otom_isotopes = (
  [ "Kk-70" ,  "70 34 Kk",  34,   30716921412093810626286989280434237062348063414039851340265704207715965752889   , "alpha"      , "0.879" ],
  [ "Kk-71" ,  "71 34 Kk",  34,   89172297275886974049027831552393578585636394912361444158784652299389108333693   , "alpha"      , "0.879" ],
  [ "Kk-72" ,  "72 34 Kk",  34,   68913850802240986809449518468844171206955503692332266812803592718577396088329   , "alpha"      , "0.886" ],
+ [ "Yv-67" ,  "67 35 Yv",  35,   93907526794485935155838085167586004057303693679075004225610942830953977762561   , "beta+"      , "0.667" ],
  [ "Yv-69" ,  "69 35 Yv",  35,   79987917010993842863027106124807443326756293665224276699745643375748911055154   , "beta+"      , "0.778" ],
  [ "Yv-70" ,  "70 35 Yv",  35,   11074253252916629417307922443214160766329746227251706483966785257479762987489   , "alpha"      , "0.807" ],
  [ "Yv-71" ,  "71 35 Yv",  35,   81330224468808080486487006533558784573672520516029639401467605814132558485212   , "alpha"      , "0.846" ],
  [ "Yv-72" ,  "72 35 Yv",  35,   50612279996065326709080173697442943744090271373977876510892585777533610301633   , "alpha"      , "0.859" ],
  [ "Yv-73" ,  "73 35 Yv",  35,   41865138869907644221971530797046358754185846933267527552894442842520382072909   , "alpha"      , "0.879" ],
  [ "Yv-74" ,  "74 35 Yv",  35,   62342425807079596763474371783572010330294887181513497144485970600813160647542   , "alpha"      , "0.878" ],
+ [ "Cj-68" ,  "68 36 Cj",  36,   6890963396501501490362116375586673083821384674916052429639498493732248929824    , "beta+"      , "0.587" ],
  [ "Cj-72" ,  "72 36 Cj",  36,   112917481389403766478004805886153714778906916646030503218678624759209185649883  , "alpha"      , "0.817" ],
  [ "Cj-73" ,  "73 36 Cj",  36,   45014334748632599575486202635378781912097244158398375155529803672814641454120   , "alpha"      , "0.842" ],
  [ "Cj-74" ,  "74 36 Cj",  36,   72450186650521169472609981821510250983353969705438138853278485649710686685002   , "alpha"      , "0.873" ],
@@ -692,6 +700,7 @@ my @otom_isotopes = (
  [ "Vt-104", "104 53 Vt",  53,   16567784311498602404973008536377271665522875956302965847654804080155353928474   , "alpha"      , "0.563" ],
  [ "Vt-105", "105 53 Vt",  53,   69624832448601077277965311194185080528033020513647640732939364765342330843683   , "alpha"      , "0.591" ],
  [ "Vt-107", "107 53 Vt",  53,   17465733136174574365798336170593001900101738577180089849783596985632049448279   , "alpha"      , "0.638" ],
+ [ "Vt-108", "108 53 Vt",  53,   52766544566009991267789713458811183965641829106546271687775236287655864683064   , "alpha"      , "0.652" ],
  [ "Vt-109", "109 53 Vt",  53,   49410422035621275229228755756907055861416525282460555083927920125543971678691   , "alpha"      , "0.669" ],
  [ "Vt-110", "110 53 Vt",  53,   9073181915245465150841879956422265397756605811809004999820912701860287602977    , "alpha"      , "0.672" ],
  [ "Vt-111", "111 53 Vt",  53,   107059296911631167396090613102050461808112532493677909632696784180546951779465  , "alpha"      , "0.679" ],
@@ -704,6 +713,7 @@ my @otom_isotopes = (
  [ "Ek-104", "104 54 Ek",  54,   35101262666142595029729101064998425685583285311469416547621280750410854301001   , "beta+"      , "0.494" ],
  [ "Ek-105", "105 54 Ek",  54,   86280397905907357291922316560280823229569249650342389180129409470466161920740   , "alpha"      , "0.512" ],
  [ "Ek-106", "106 54 Ek",  54,   105683231880590807752257621804177707062376196908442508307424919645941343031905  , "alpha"      , "0.546" ],
+ [ "Ek-108", "108 54 Ek",  54,   61563974327549368650141973044283422459914528434725031564612544916313142746465   , "alpha"      , "0.599" ],
  [ "Ek-109", "109 54 Ek",  54,   26081660774236873688874212954090641848463286379678539376846533510527284997986   , "alpha"      , "0.619" ],
  [ "Ek-110", "110 54 Ek",  54,   61530209406490975444422897886067415308391922368731986130274415580143146585147   , "alpha"      , "0.642" ],
  [ "Ek-111", "111 54 Ek",  54,   101497386117964543865993129429713986332489614401526876676864555097069974416990  , "alpha"      , "0.651" ],
@@ -1211,7 +1221,6 @@ sub energy_converter {
 my %db = ();
 
 #              [ ] add energy used
-#              [ ] type should be a hash so we can test specifically for a decay type vs a metallic type for example
 #              [ ] add otoms_in_sorted. The order of inputs might actually matter. So I want the original order from the initiateReaction AND a sorted Otom mass order for deduplication
 #              [ ] perhaps after the %db of OTOMROs is done building from parsing the logs, I should build 2 more %inputs and %outputs.
 #                  These would be keyed like a reaction without energy "M-19 + Hb-57 => H-76" and would have a hash of values for bounded input energy ranges, and a list of otomros that are represented
@@ -1239,7 +1248,7 @@ my %db = ();
 $db{"7151"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Cq-6∙  + Cq-6∙  + Cq-6∙  + Ju-1∙  + Cq-7∙ ',
+	 'otoms_in'       => ' Cq-6∙  +  Cq-6∙  +  Cq-6∙  +  Ju-1∙  +  Cq-7∙ ',
 	 'otoms_in_list'  => [ 'Cq-6', 'Cq-6', 'Cq-6', 'Ju-1', 'Cq-7'],
 	 'energy_in'      => 100,
 
@@ -1261,7 +1270,7 @@ $db{"7151"}
 $db{"7152"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Gy-34∙ + Cq-5⁺  + Ju-1∙ ',
+	 'otoms_in'       => ' Gy-34∙ +  Cq-5⁺  +  Ju-1∙ ',
 	 'otoms_in_list'  => [ 'Gy-34', 'Cq-5', 'Ju-1', ],
 	 'energy_in'      => 2600,
 
@@ -1283,7 +1292,7 @@ $db{"7152"}
 $db{"7153"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Xc-30∙ + Ju-2∙  + Zz-13⁺ +  W-4∙ ',
+	 'otoms_in'       => ' Xc-30∙ +  Ju-2∙  +  Zz-13⁺ +   W-4∙ ',
 	 'otoms_in_list'  => [ 'Xc-30', 'Ju-2', 'Zz-13', 'W-4'],
 	 'energy_in'      => 0,
 
@@ -1305,7 +1314,7 @@ $db{"7153"}
 $db{"7158"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Nb-54ª + Zq-32⁻',
+	 'otoms_in'       => ' Nb-54ª +  Zq-32⁻',
 	 'otoms_in_list'  => [ 'Nb-54', 'Zq-32'],
 	 'energy_in'      => 10000,
 
@@ -1327,7 +1336,7 @@ $db{"7158"}
 $db{"7159"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Pt-26∙ + Pt-26∙ + Zq-32⁻ + Zq-32⁻ + Zq-32⁻',
+	 'otoms_in'       => ' Pt-26∙ +  Pt-26∙ +  Zq-32⁻ +  Zq-32⁻ +  Zq-32⁻',
 	 'otoms_in_list'  => [ 'Pt-26', 'Pt-26', 'Zq-32', 'Zq-32', 'Zq-32'],
 	 'energy_in'      => 40,
 
@@ -1349,7 +1358,7 @@ $db{"7159"}
 $db{"7160"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Xc-34⁻ + Xc-31∙ + Xc-34⁻ + Xc-34⁻ +  S-26ª',
+	 'otoms_in'       => ' Xc-34⁻ +  Xc-31∙ +  Xc-34⁻ +  Xc-34⁻ +   S-26ª',
 	 'otoms_in_list'  => [ 'Xc-34', 'Xc-31', 'Xc-34', 'Xc-34', 'S-26'],
 	 'energy_in'      => 40,
 
@@ -1371,7 +1380,7 @@ $db{"7160"}
 $db{"7161"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Aw-50∙ + Gy-34∙',
+	 'otoms_in'       => ' Aw-50∙ +  Gy-34∙',
 	 'otoms_in_list'  => ['Aw-50', 'Gy-34' ],
 	 'energy_in'      => 9000,
 
@@ -1393,7 +1402,7 @@ $db{"7161"}
 $db{"7162"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Fj-37ª + Fj-37ª + Fw-25⁻ + Fw-25⁻ + Fw-25⁻',
+	 'otoms_in'       => ' Fj-37ª +  Fj-37ª +  Fw-25⁻ +  Fw-25⁻ +  Fw-25⁻',
 	 'otoms_in_list'  => [ 'Fj-37', 'Fj-37', 'Fw-25', 'Fw-25', 'Fw-25'],
 	 'energy_in'      => 40,
 
@@ -1415,7 +1424,7 @@ $db{"7162"}
 $db{"7163"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Gy-34∙ + Gy-34∙ + Fw-25⁻ +  M-20∙ +  M-20∙',
+	 'otoms_in'       => ' Gy-34∙ +  Gy-34∙ +  Fw-25⁻ +   M-20∙ +   M-20∙',
 	 'otoms_in_list'  => ['Gy-34', 'Gy-34', 'Fw-25', 'M-20', 'M-20' ],
 	 'energy_in'      => 40,
 
@@ -1437,7 +1446,7 @@ $db{"7163"}
 $db{"7164"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Nb-54ª + Fw-25⁻',
+	 'otoms_in'       => ' Nb-54ª +  Fw-25⁻',
 	 'otoms_in_list'  => [ 'Nb-54', 'Fw-25'],
 	 'energy_in'      => 3996,
 
@@ -1459,7 +1468,7 @@ $db{"7164"}
 $db{"7165"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Pq-14⁻ + Dx-15⁺ +  W-5∙  + Aw-50∙ +  S-25⁺',
+	 'otoms_in'       => ' Pq-14⁻ +  Dx-15⁺ +   W-5∙  +  Aw-50∙ +   S-25⁺',
 	 'otoms_in_list'  => ['Pq-14', 'Dx-15', 'W-5', 'Aw-50', 'S-25' ],
 	 'energy_in'      => 200,
 
@@ -1481,7 +1490,7 @@ $db{"7165"}
 $db{"7166"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Fj-37ª + Ju-1∙ ',
+	 'otoms_in'       => ' Fj-37ª +  Ju-1∙ ',
 	 'otoms_in_list'  => [ 'Fj-37', 'Ju-1'],
 	 'energy_in'      => 943,
 
@@ -1503,7 +1512,7 @@ $db{"7166"}
 $db{"7167"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Xl-10ª + Xl-10ª + Nb-54ª + Pt-25ª + Pt-25ª',
+	 'otoms_in'       => ' Xl-10ª +  Xl-10ª +  Nb-54ª +  Pt-25ª +  Pt-25ª',
 	 'otoms_in_list'  => [ 'Xl-10', 'Xl-10', 'Nb-54', 'Pt-25', 'Pt-25'],
 	 'energy_in'      => 5,
 
@@ -1525,7 +1534,7 @@ $db{"7167"}
 $db{"7168"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Ju-2∙  + Ju-1∙  + Ju-1∙  +  W-4∙  + Cq-7∙ ',
+	 'otoms_in'       => ' Ju-2∙  +  Ju-1∙  +  Ju-1∙  +   W-4∙  +  Cq-7∙ ',
 	 'otoms_in_list'  => [ 'Ju-2', 'Ju-1', 'Ju-1', 'W-4', 'Cq-7' ],
 	 'energy_in'      => 100,
 
@@ -1547,7 +1556,7 @@ $db{"7168"}
 $db{"7169"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Pt-26∙ + Pt-26∙ + Pt-26∙ + Dx-16∙ + Dx-16∙',
+	 'otoms_in'       => ' Pt-26∙ +  Pt-26∙ +  Pt-26∙ +  Dx-16∙ +  Dx-16∙',
 	 'otoms_in_list'  => [ 'Pt-26', 'Pt-26', 'Pt-26', 'Dx-16', 'Dx-16'],
 	 'energy_in'      => 20,
 
@@ -1569,7 +1578,7 @@ $db{"7169"}
 $db{"7170"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Bt-80⁻ + Ju-3∙ ',
+	 'otoms_in'       => ' Bt-80⁻ +  Ju-3∙ ',
 	 'otoms_in_list'  => [  'Bt-80', 'Ju-3' ],
 	 'energy_in'      => 9000,
 
@@ -1592,7 +1601,7 @@ $db{"7170"}
 $db{"7171"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Pq-13∙ + Pq-13∙ + Pq-10⁺ + Gy-34∙ + Xc-32∙',
+	 'otoms_in'       => ' Pq-13∙ +  Pq-13∙ +  Pq-10⁺ +  Gy-34∙ +  Xc-32∙',
 	 'otoms_in_list'  => [ 'Pq-13', 'Pq-13', 'Pq-10', 'Gy-34', 'Xc-32',],
 	 'energy_in'      => 20,
 
@@ -1614,7 +1623,7 @@ $db{"7171"}
 $db{"7172"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Xc-31∙ + Xc-34⁻ + Xc-34⁻ + Pm-19∙ + Fj-37ª',
+	 'otoms_in'       => ' Xc-31∙ +  Xc-34⁻ +  Xc-34⁻ +  Pm-19∙ +  Fj-37ª',
 	 'otoms_in_list'  => [ 'Xc-31', 'Xc-34', 'Xc-34', 'Pm-19', 'Fj-37'],
 	 'energy_in'      => 20,
 
@@ -1636,7 +1645,7 @@ $db{"7172"}
 $db{"7173"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => ' W-4∙ ',
+	 'otoms_in'       => '  W-4∙ ',
 	 'otoms_in_list'  => [ 'W-4'],
 	 'energy_in'      => 200,
 
@@ -1658,7 +1667,7 @@ $db{"7173"}
 $db{"7174"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Xl-10ª + Zq-32⁻ + Xl-11∙ + Xc-32∙ + Fw-25⁻',
+	 'otoms_in'       => ' Xl-10ª +  Zq-32⁻ +  Xl-11∙ +  Xc-32∙ +  Fw-25⁻',
 	 'otoms_in_list'  => [ 'Xl-10', 'Zq-32', 'Xl-11', 'Xc-32', 'Fw-25'],
 	 'energy_in'      => 20,
 
@@ -1680,7 +1689,7 @@ $db{"7174"}
 $db{"7175"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => ' M-20∙ + Xl-9⁺  + Xl-9⁺  +  S-26ª + Ju-1∙ ',
+	 'otoms_in'       => '  M-20∙ +  Xl-9⁺  +  Xl-9⁺  +   S-26ª +  Ju-1∙ ',
 	 'otoms_in_list'  => [ 'M-20', 'Xl-9', 'Xl-9', 'S-26', 'Ju-1'],
 	 'energy_in'      => 200,
 
@@ -1702,7 +1711,7 @@ $db{"7175"}
 $db{"7176"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Xl-11∙ + Gy-34∙ + Fw-25⁻ +  M-20∙ + Nb-54ª',
+	 'otoms_in'       => ' Xl-11∙ +  Gy-34∙ +  Fw-25⁻ +   M-20∙ +  Nb-54ª',
 	 'otoms_in_list'  => [ 'Xl-11', 'Gy-34', 'Fw-25', 'M-20', 'Nb-54' ],
 	 'energy_in'      => 0,
 
@@ -1724,7 +1733,7 @@ $db{"7176"}
 $db{"7177"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Ju-1∙  + Ju-1∙  + Ju-1∙ ',
+	 'otoms_in'       => ' Ju-1∙  +  Ju-1∙  +  Ju-1∙ ',
 	 'otoms_in_list'  => [ 'Ju-1', 'Ju-1', 'Ju-1'],
 	 'energy_in'      => 5,
 
@@ -1746,7 +1755,7 @@ $db{"7177"}
 $db{"8361"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Xc-31∙ + Xc-31∙',
+	 'otoms_in'       => ' Xc-31∙ +  Xc-31∙',
 	 'otoms_in_list'  => [ 'Xc-31', 'Xc-31'],
 	 'energy_in'      => 1254,
 
@@ -1768,7 +1777,7 @@ $db{"8361"}
 $db{"8725"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Fj-37ª + Fj-37ª',
+	 'otoms_in'       => ' Fj-37ª +  Fj-37ª',
 	 'otoms_in_list'  => [ 'Fj-37', 'Fj-37'],
 	 'energy_in'      => 3000,
 
@@ -1790,7 +1799,7 @@ $db{"8725"}
 $db{"8726"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Pt-26∙ + Pt-26∙ + Pt-24∙ +  S-25⁺ + Fj-37ª',
+	 'otoms_in'       => ' Pt-26∙ +  Pt-26∙ +  Pt-24∙ +   S-25⁺ +  Fj-37ª',
 	 'otoms_in_list'  => [ 'Pt-26', 'Pt-26', 'Pt-24', 'S-25', 'Fj-37'],
 	 'energy_in'      => 780,
 
@@ -1812,7 +1821,7 @@ $db{"8726"}
 $db{"8727"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Fj-37ª +  D-37⁻',
+	 'otoms_in'       => ' Fj-37ª +   D-37⁻',
 	 'otoms_in_list'  => [ 'Fj-37', 'D-37'],
 	 'energy_in'      => 3000,
 
@@ -1834,7 +1843,7 @@ $db{"8727"}
 $db{"8728"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Zq-32⁻ + Zq-32⁻',
+	 'otoms_in'       => ' Zq-32⁻ +  Zq-32⁻',
 	 'otoms_in_list'  => [ 'Zq-32', 'Zq-32'],
 	 'energy_in'      => 1990,
 
@@ -1856,7 +1865,7 @@ $db{"8728"}
 $db{"8729"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => ' D-37⁻ +  D-37⁻',
+	 'otoms_in'       => '  D-37⁻ +   D-37⁻',
 	 'otoms_in_list'  => [ 'D-37', 'D-37'],
 	 'energy_in'      => 2700,
 
@@ -1878,7 +1887,7 @@ $db{"8729"}
 $db{"8730"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => '  W-4∙ + Fw-25⁻',
+	 'otoms_in'       => '   W-4∙ +  Fw-25⁻',
 	 'otoms_in_list'  => [ 'W-4', 'Fw-25'],
 	 'energy_in'      => 25,
 
@@ -1900,7 +1909,7 @@ $db{"8730"}
 $db{"11758"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Oc-50∙ + Xc-31∙',
+	 'otoms_in'       => ' Oc-50∙ +  Xc-31∙',
 	 'otoms_in_list'  => [ 'Oc-50', 'Xc-31'],
 	 'energy_in'      => 3250,
 
@@ -1922,7 +1931,7 @@ $db{"11758"}
 $db{"11759"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Oc-46⁺ + Xc-34⁻',
+	 'otoms_in'       => ' Oc-46⁺ +  Xc-34⁻',
 	 'otoms_in_list'  => [ 'Oc-46', 'Xc-34'],
 	 'energy_in'      => 5000,
 
@@ -1944,7 +1953,7 @@ $db{"11759"}
 $db{"11760"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => ' H-80∙ + Ju-1∙ ',
+	 'otoms_in'       => '  H-80∙ +  Ju-1∙ ',
 	 'otoms_in_list'  => [ 'H-80', 'Ju-1'],
 	 'energy_in'      => 5000,
 
@@ -1966,7 +1975,7 @@ $db{"11760"}
 $db{"11761"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => ' H-80∙ + Ju-1∙ ',
+	 'otoms_in'       => '  H-80∙ +  Ju-1∙ ',
 	 'otoms_in_list'  => [ 'H-80', 'Ju-1'],
 	 'energy_in'      => 5000,
 
@@ -1988,7 +1997,7 @@ $db{"11761"}
 $db{"11762"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => ' H-80∙ + Ju-1∙ ',
+	 'otoms_in'       => '  H-80∙ +  Ju-1∙ ',
 	 'otoms_in_list'  => ['Ju-1','H-80' ],
 	 'energy_in'      => 5000,
 
@@ -2010,7 +2019,7 @@ $db{"11762"}
 $db{"12581"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Zz-15∙ + Zz-15∙ + Pt-25ª + Pt-25ª + Pt-24∙',
+	 'otoms_in'       => ' Zz-15∙ +  Zz-15∙ +  Pt-25ª +  Pt-25ª +  Pt-24∙',
 	 'otoms_in_list'  => [ 'Zz-15', 'Zz-15', 'Pt-25', 'Pt-25', 'Pt-24'],
 	 'energy_in'      => 50,
 
@@ -2032,7 +2041,7 @@ $db{"12581"}
 $db{"12582"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Cq-5⁺  + Cq-6∙  + Cq-6∙  + Cq-6∙  + Cq-6∙ ',
+	 'otoms_in'       => ' Cq-5⁺  +  Cq-6∙  +  Cq-6∙  +  Cq-6∙  +  Cq-6∙ ',
 	 'otoms_in_list'  => [ 'Cq-5⁺', 'Cq-6∙', 'Cq-6∙', 'Cq-6∙', 'Cq-6∙'],
 	 'energy_in'      => 50,
 
@@ -2054,7 +2063,7 @@ $db{"12582"}
 $db{"12583"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Cq-6∙  + Cq-6∙  + Ju-2∙  + Ju-2∙  +  W-4∙ ',
+	 'otoms_in'       => ' Cq-6∙  +  Cq-6∙  +  Ju-2∙  +  Ju-2∙  +   W-4∙ ',
 	 'otoms_in_list'  => [ 'Cq-6', 'Cq-6', 'Ju-2', 'Ju-2', 'W-4'],
 	 'energy_in'      => 300,
 
@@ -2076,7 +2085,7 @@ $db{"12583"}
 $db{"12591"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => 'Gy-34∙ + Pq-10⁺ + Ju-1∙  + Pq-14⁻ + Pq-12ª',
+	 'otoms_in'       => ' Gy-34∙ +  Pq-10⁺ +  Ju-1∙  +  Pq-14⁻ +  Pq-12ª',
 	 'otoms_in_list'  => [ 'Gy-34', 'Pq-10', 'Ju-1', 'Pq-14', 'Pq-12'],
 	 'energy_in'      => 300,
 
@@ -2098,7 +2107,7 @@ $db{"12591"}
 $db{"12592"}
      = {
 	 'universe'       => 'fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26',
-	 'otoms_in'       => ' W-5∙  + Pq-13∙ + Pt-25ª + Zz-15∙ + Cq-7∙ ',
+	 'otoms_in'       => '  W-5∙  +  Pq-13∙ +  Pt-25ª +  Zz-15∙ +  Cq-7∙ ',
 	 'otoms_in_list'  => ['W-5', 'Pq-13', 'Pt-25', 'Zz-15', 'Cq-7' ],
 	 'energy_in'      => 50,
 
@@ -2622,8 +2631,8 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
     $db{$otomro}{"energy_used"} = $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"};
 
 
-    my $this_pad = "          " x (6 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
-    printf "| %8d%s|%-8s| %s + %8d => %s %-70.70s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
+    my $this_pad = "          " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
+    printf "| %8d%s|%-8s| %s + %8d => %s %-80.80s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
    $otomro, 
 
    ($db{$otomro}{"first_instantiation"}==1 ? "*" : " "),
@@ -2645,32 +2654,50 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
    my $in_check_string  = join '+', sort @{ $db{$otomro}{otoms_in_list} }; # [ 'Cq-6', 'Cq-6', 'Ju-2', 'Ju-2', 'W-4'],
    my $out_check_string = join '+', sort @{ $db{$otomro}{otoms_out_list}}; # [ 'Ju-2', 'Cq-6', 'Cq-6', 'WJu(W-4>Ju-2)'],
 
-# [ ] NEED TO RECODE THIS PART so that it tests each of these criteria individually and prints to STDERR for DEBUG to indicate why we would skip a reaction for recipes:
+   # 
    # save data for recipes
+   # 
+
 ###print STDERR "DEBUG: saving data for recipes\n";
-   if (  ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) <= 2 ) # FOR NOW ONLY 1 OR 2 INPUT REACTIONS! [ ] At some point I need to consider removing this limit
-#     && ( scalar(keys %{ $db{$otomro}{"typehash"} }) >  0 ) # only for those with actual successful reactions [ ] not sure this is working like i think.
-      && ( $db{$otomro}{"type"} ne "none"                  ) # 
-      && ( $otomro >= 3050                                 ) # reaction algorithm was changed somewhere around OTOMRO 3050 so ignore those early ones
 
-      # [ ] YOU KNOW WHAT I THINK WE also need to ignore cases like "Dx-15 + A-42 + 0 => Zz-15 + A-42" because it will be classified as decay when only 1 of the inputs decayed but the other just passed through and did no reaction
-      # This is very difficult to design a boolean test to exclude.
-      # perhaps if the reaction type is only decay?
+   # for now only 1 or 2 input reactions [ ] At some point I need to consider removing this limit
+   if ( scalar(@{ $db{$otomro}{"otoms_in_list"} })  > 2 ){
+     print STDERR "DEBUG: RECIPES: skipping OTOMRO $otomro since it has more than 2 inputs [". join(", ",@{ $db{$otomro}{"otoms_in_list"} }) ."]\n";
+     next; 
+   }
 
-      # maybe if the input otom string matches the output otom string, skip those. Hmm. Not good enough
-  &&  ( $in_check_string ne $out_check_string  )
+   # only for those with actual successful reactions
+   if ( $db{$otomro}{"type"} eq "none" ){
+     print STDERR "DEBUG: RECIPES: skipping OTOMRO $otomro since it had no reaction\n";
+     next; 
+   }
+
+   # reaction algorithm was changed somewhere around OTOMRO 3050 so ignore those early ones
+   if ( $otomro <  3050 ) {
+     print STDERR "DEBUG: RECIPES: skipping OTOMRO $otomro since it is less than 3050 where the algorithm changed\n";
+     next; 
+   }
+
+   # [ ] YOU KNOW WHAT I THINK WE also need to ignore cases like "Dx-15 + A-42 + 0 => Zz-15 + A-42" because it will be classified as decay when only 1 of the inputs decayed but the other just passed through and did no reaction
+   # This is very difficult to design a boolean test to exclude.
+   # perhaps if the reaction type is only decay?
+   if ( $in_check_string eq $out_check_string  ){
+     print STDERR "DEBUG: RECIPES: skipping OTOMRO $otomro since outputs are same as inputs [$in_check_string]==[$out_check_string]\n";
+     next; 
+   }
 
 
-      # if the reaction type is only decay, then only include reactions with a single otom input so there's no confusion where the outputs come from
-  && (
-        exists $db{$otomro}{typehash}{"decay"}    &&
-      ! exists $db{$otomro}{typehash}{"nuclear"}  &&
-      ! exists $db{$otomro}{typehash}{"chemical"} &&
-      ! exists $db{$otomro}{typehash}{"metallic"}
-      && ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) == 1 ) 
-     )
+      # if the reaction type is only decay or nuclear or decay+nuclear, then only include reactions with a single otom input so there's no confusion where the outputs come from
+   if ( (exists $db{$otomro}{typehash}{"decay"} || exists $db{$otomro}{typehash}{"nuclear"} )
+      && (! exists $db{$otomro}{typehash}{"chemical"})
+      && (! exists $db{$otomro}{typehash}{"metallic"})
+      && ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) == 1 ) ){
+        # do it
+     }else{
+      print STDERR "DEBUG: RECIPES: skipping OTOMRO $otomro since reaction is decay or decay+nuclear but more than 1 input otom\n";
+      next; 
+     }
 
-      ){
      foreach my $one_otom (@{ $db{$otomro}{"otoms_out_list"} }){  
 ###print STDERR "DEBUG: otomro[$otomro] one_otom[$one_otom]\n";
       my $rounded_energy_input = sprintf "%.0f", $db{$otomro}{"energy_in"};
@@ -2703,11 +2730,8 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
 
         $recipes{$one_otom}{$reaction_key_string}{nrg_in_max}=$rounded_energy_input;
       }
-
      }
    }
-
-  }
 }
 
 
@@ -2720,8 +2744,8 @@ my @missing_initiates=();
 foreach my $k (sort keys %db){
   unless (exists $db{$k}{"analyse_tx"}){
  
-    my $this_pad = "          " x (6 - scalar( @{$db{$k}{"otoms_in_list"}}));
-    printf "| %8d |%-8s| %s + %8d =>   %-70.70s + %10s | %10s | %-28s | %s | %66s | %66s |\n",
+    my $this_pad = "          " x (5 - scalar( @{$db{$k}{"otoms_in_list"}}));
+    printf "| %8d |%-8s| %s + %8d =>   %-80.80s + %10s | %10s | %-28s | %s | %66s | %66s |\n",
      $k, 
      $universe_names{$db{$k}{"universe"}}  ,
      $db{$k}{"otoms_in"} .$this_pad  ,

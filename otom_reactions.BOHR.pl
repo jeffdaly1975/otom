@@ -3,10 +3,10 @@
 # Universe: BOHR
 
 #       65 otoms
-#      396 isotopes
-#   156816 combinations
-#    78606 unique combinations
-#    16925 combinations resulting in known isotopes
+#      415 isotopes
+#   172225 combinations
+#    86320 unique combinations
+#    18995 combinations resulting in known isotopes
 
 my $order_counter=0;
 my @sort_order=();
@@ -103,11 +103,11 @@ close LIST_OUT;
 close DECAY_OUT;
 
 #### print summary
-printf STDERR "# %8d otoms\n",  scalar(keys %otom_atom_names);
-printf STDERR "# %8d isotopes\n", $order_counter;
-printf STDERR "# %8d combinations\n", ($order_counter * $order_counter);
-printf STDERR "# %8d unique combinations\n", $unique_combinations;
-printf STDERR "# %8d combinations resulting in known isotopes\n", $combo_is_existing_isotope;
+printf "# %8d otoms\n",  scalar(keys %otom_atom_names);
+printf "# %8d isotopes\n", $order_counter;
+printf "# %8d combinations\n", ($order_counter * $order_counter);
+printf "# %8d unique combinations\n", $unique_combinations;
+printf "# %8d combinations resulting in known isotopes\n", $combo_is_existing_isotope;
 
 
 __DATA__
@@ -122,6 +122,7 @@ __DATA__
   7  4 Dz
   8  4 Dz
   9  4 Dz
+ 10  4 Dz
   9  5 Gj
  10  5 Gj
  11  5 Gj
@@ -129,6 +130,7 @@ __DATA__
  11  6 Vi
  12  6 Vi
  13  6 Vi
+ 14  6 Vi
  13  7 Ct
  14  7 Ct
  15  7 Ct
@@ -137,6 +139,7 @@ __DATA__
  15  8  T
  16  8  T
  17  8  T
+ 18  8  T
  17  9 Xj
  18  9 Xj
  19  9 Xj
@@ -155,6 +158,7 @@ __DATA__
  24 12 Ro
  25 12 Ro
  26 12 Ro
+ 27 12 Ro
  25 13 Cl
  26 13 Cl
  27 13 Cl
@@ -225,6 +229,7 @@ __DATA__
  50 24 Wy
  51 24 Wy
  52 24 Wy
+ 53 24 Wy
  49 25  L
  50 25  L
  51 25  L
@@ -260,6 +265,7 @@ __DATA__
  62 29  C
  63 29  C
  64 29  C
+ 57 30 Ns
  58 30 Ns
  59 30 Ns
  60 30 Ns
@@ -296,11 +302,14 @@ __DATA__
  70 34 Kk
  71 34 Kk
  72 34 Kk
+ 67 35 Yv
+ 69 35 Yv
  70 35 Yv
  71 35 Yv
  72 35 Yv
  73 35 Yv
  74 35 Yv
+ 68 36 Cj
  72 36 Cj
  73 36 Cj
  74 36 Cj
@@ -324,6 +333,8 @@ __DATA__
  81 39 Co
  82 39 Co
  83 39 Co
+ 78 40  W
+ 79 40  W
  80 40  W
  81 40  W
  82 40  W
@@ -346,6 +357,7 @@ __DATA__
  87 42  N
  88 42  N
  89 42  N
+ 90 42  N
  84 43  U
  87 43  U
  88 43  U
@@ -425,6 +437,7 @@ __DATA__
  96 50  S
  97 50  S
  98 50  S
+ 99 50  S
 101 50  S
 102 50  S
 103 50  S
@@ -450,12 +463,14 @@ __DATA__
 110 52 Cv
  98 53 Vt
  99 53 Vt
+100 53 Vt
 101 53 Vt
 102 53 Vt
 103 53 Vt
 104 53 Vt
 105 53 Vt
 107 53 Vt
+108 53 Vt
 109 53 Vt
 110 53 Vt
 111 53 Vt
@@ -466,7 +481,10 @@ __DATA__
 102 54 Ek
 103 54 Ek
 104 54 Ek
+105 54 Ek
 106 54 Ek
+108 54 Ek
+109 54 Ek
 110 54 Ek
 111 54 Ek
 112 54 Ek
@@ -495,6 +513,7 @@ __DATA__
 108 58 Ha
 109 58 Ha
 110 58 Ha
+111 58 Ha
 113 58 Ha
 115 58 Ha
 116 58 Ha
