@@ -1,0 +1,316 @@
+|           | coin color | top color | polygon color | edges                         |
+|  1  1 Ju  | cyan       | white     | brown 9-gon   | cyan                          |
+|  2  1 Ju  | cyan       | white     | brown 8-gon   | cyan                          |
+|  3  1 Ju  | cyan       | cyan      | white 6-gon   | cyan                          |
+|  4  2 W   | limegreen  | white     | black 6-gon   | limegreen                     |
+|  5  2 W   | limegreen  | limegreen | white 6-gon   | limegreen                     |
+|  5  3 Cq  | magenta    | magenta   | none          | magenta                       |
+|  6  3 Cq  | magenta    | magenta   | brown         | magenta                       |
+|  7  3 Cq  | magenta    | beige     | brown         | magenta                       |
+|  7  4 Af  | orange     | brown     | beige 7-gon   | orange                        |
+|  8  4 Af  | orange     | orange    | beige 7-gon   | orange                        |
+|  9  4 Af  | orange     | beige     | brown 6-gon   | orange                        |
+|  9  5 Xl  | yellow     | yellow    | none          | yellow                        |
+| 10  5 Xl  | yellow     | blue      | white 7-gon   | yellow+8 red stripes          |
+| 11  5 Xl  | yellow     | yellow    | red 8-gon     | yellow+8 red stripes          |
+| 10  6 Pq  | red        | red       | none          | red                           |
+| 11  6 Pq  | red        | red       | none          | red                           |
+| 12  6 Pq  | red        | black     | white 7-gon   | red                           |
+| 13  6 Pq  | red        | white     | black 8-gon   | red+4 yellow stripes          |
+| 14  6 Pq  | red        | red       | white 8-gon   | red                           |
+| 15  6 Pq  | red        | red       | white 9-gon   | red+3? white stripes          |
+| 13  7 Zz  | blue       | blue      | none          | blue                          |
+| 14  7 Zz  | blue       | black     | white 8-gon   | blue                          |
+| 15  7 Zz  | blue       | blue      | black 8-gon   | blue+4 black stripes          |
+| 16  7 Zz  |            |           |               |                               |
+| 15  8 Dx  | brown      | brown     | none          | brown+6 yellow stripes        |
+| 16  8 Dx  | brown      | yellow    | brown 9-gon   | brown+6 yellow stripes        |
+| 17  8 Dx  | brown      | brown     | yellow 9-gon  | brown+6 yellow stripes        |
+| 18  8 Dx  | brown      | brown     | yellow 9-gon  | brown+36 yellow stripes       |
+| 19  8 Dx  |            |           |               |                               |
+| 17  9 Pm  | paleyellow | paleyellow| none          | paleyellow+36 pink stripes    |
+| 18  9 Pm  | paleyellow | paleyellow| none          | paleyellow+36 pink stripes    |
+| 19  9 Pm  | paleyellow | paleyellow| pink 9-gon    | paleyellow+36 pink stripes    |
+| 20  9 Pm  |            |           |               |                               |
+| 21  9 Pm  |            |           |               |                               |
+| 19 10 M   | red        | red       | none          | red+12 white stripes          |
+| 20 10 M   | red        | red       | white 9-gon   | red                           |
+| 21 10 M   | red        | white     | purple 7-gon  | red+5? white stripes          |
+| 22 10 M   | red        | white     | purple 6-gon  | red                           |
+| 23 10 M   | red        | white     | purple 9-gon  | red+12?white stripes          |
+| 21 11 Fw  | bluegreen  | bluegreen | none          | bluegreen                     |
+| 22 11 Fw  | bluegreen  | bluegreen | none          | bluegreen+8 yellow 4 bands    |
+| 23 11 Fw  | bluegreen  | bluegreen | beige 9-gon   | bluegreen+4 yellow stripes    |
+| 24 11 Fw  | bluegreen  | beige     | black 6-gon   | bluegreen+4 yellow stripes    |
+| 25 11 Fw  | bluegreen  | beige     | black 8-gon   | bluegreen+6?yellow 2 bands    |
+| 26 11 Fw  |            |           |               |                               |
+| 22 12 Pt  |            |           |               |                               |
+| 23 12 Pt  | pink       | pink      | none          | pink+8 orange stripes         |
+| 24 12 Pt  | pink       | pink      | orange 7-gon  | pink+4 orange stripes         |
+| 25 12 Pt  | pink       | orange    | pink 9-gon    | pink+6 orange stripes         |
+| 26 12 Pt  | pink       | pink      | orange 7-gon  | pink+8 orange 2 bands         |
+| 27 12 Pt  |            |           |               |                               |
+| 28 12 Pt  |            |           |               |                               |
+| 25 13 S   | yellow     | yellow    | none          | yellow+6 blue stripes         |
+| 26 13 S   | yellow     | blue      | white 7-gon   | yellow+8 blue stripes         |
+| 27 13 S   | yellow     | blue      | white 9-gon   | yellow+4 blue stripes         |
+| 28 13 S   | yellow     | yellow    | blue 7-gon    | yellow+8 red 4 bands          |
+| 29 13 S   |            |           |               |                               |
+| 30 13 S   |            |           |               |                               |
+| 26 14 Zq  |            |           |               |                               |
+| 27 14 Zq  | darkpurple | darkpurple| none          | darkpurple+12 blue stripes    |
+| 28 14 Zq  | darkpurple | darkpurple| none          | darkpurple+12 pink stripes    |
+| 29 14 Zq  | darkpurple | white     | black 9-gon   | darkpurple+8 pink stripes     |
+| 30 14 Zq  | darkpurple | white     | black 8-gon   | darkpurple+12 bluepink        |
+| 31 14 Zq  | darkpurple | white     | black 7-gon   | 8 purple-blue-pink stripes    |
+| 32 14 Zq  | darkpurple | darkpurple| pink 6-gon    | darkpurple+6 blue 2 bands     |
+| 28 15 Xc  |            |           |               |                               |
+| 29 15 Xc  | pink       | pink      | none          | pink+8 blue 4 bands           |
+| 30 15 Xc  | pink       | pink      | orange 9-gon  | pink + 6 orange stripes       |
+| 31 15 Xc  | pink       | white     | blue 9-gon    | pink + 12? blue stripes       |
+| 32 15 Xc  | pink       | pink      | orange 9-gon  | pink + 2 orange stripes       |
+| 33 15 Xc  | pink       | white     | blue 6-gon    | pink + 2 orange stripes       |
+| 34 15 Xc  | pink       | white     | blue 7-gon    | pink + 12 orange stripes      |
+| 31 16 Gy  | darkpurple | darkpurple| none          | darkpurple                    |
+| 32 16 Gy  | darkpurple | darkpurple| none          | darkpurple+4 yellow stripes   |
+| 33 16 Gy  | darkpurple | white     | purple 9-gon  | darkpurple+8 yellow stripes   |
+| 34 16 Gy  | darkpurple | darkpurple| yellow 6-gon  | darkpurple+36 yellow stripes  |
+| 35 16 Gy  | darkpurple | darkpurple| yellow 6-gon  | darkpurple+6? yellow stripes  |
+| 36 16 Gy  | darkpurple | white     | purple 8-gon  | darkpurple+8 yellow stripes   |
+| 32 17 D   | yellow     | yellow    | none          | yellow+12 orange stripes      |
+| 33 17 D   | yellow     | yellow    | none          | yellow+8 orange 4 bands       |
+| 34 17 D   | yellow     | yellow    | none          | yellow+12 blue stripes        |
+| 35 17 D   | yellow     | orange    | yellow 8-gon  | yellow+6 orange-blue-orange   |
+| 36 17 D   | yellow     | blue      | white 6-gon   | yellow+36 orange stripes      |
+| 37 17 D   | yellow     | yellow    | orange 8-gon  | yellow+8? blue stripes        |
+| 38 17 D   | yellow     | beige     | blue 9-gon    | yellow+36 blue stripes        |
+| 39 17 D   | yellow     | yellow    | orange 8-gon  | yellow+6? orange stripes      |
+| 34 18 Fj  | white      | white     | none          | white+6 blue stripes          |
+| 35 18 Fj  | white      | white     | none          | white+8 blue stripes          |
+| 36 18 Fj  | white      | blue      | white 9-gon   | white+6 blue stripes          |
+| 37 18 Fj  | white      | blue      | white 7-gon   | white+8 blue stripes          |
+| 38 18 Fj  | white      | blue      | white 7-gon   | white+36 blue stripes         |
+| 39 18 Fj  | white      | blue      | white 9-gon   | white+6? blue stripes         |
+| 40 18 Fj  | white      | white     | blue 6-gon    | white+36 blue stripes         |
+| 41 18 Fj  | white      | white     | blue 7-gon    | white+12 blue stripes         |
+| 36 19 O   |            |           |               |                               |
+| 37 19 O   | tan        | black     | beige 7-gon   | tan+12 beige 2 bands          |
+| 38 19 O   | tan        | black     | beige 8-gon   | tan + 12 beige stripes        |
+| 39 19 O   | tan        | beige     | tan 8-gon     | tan + 4 beige stripes         |
+| 40 19 O   | tan        | black     | beige 9-gon   | tan + 8 beige stripes         |
+| 41 19 O   | tan        | beige     | black 6-gon   | tan+8 beige 2 bands           |
+| 42 19 O   | tan        | tan       | beige 7-gon   | tan+12 beige 2 bands          |
+| 43 19 O   | tan        | tan       | beige 7-gon   | tan+ 2 beige stripes          |
+| 38 20 C   | beige      | beige     | none          | beige+8 orange+green bands    |
+| 39 20 C   | beige      | beige     | none          | beige+8 orange 4 bands        |
+| 40 20 C   | beige      | beige     | none          | beige+8 darkgreen stripes     |
+| 41 20 C   | beige      | beige     | none          | beige+18orange 18 dk green    |
+| 42 20 C   | beige      | beige     | orange 6-gon  | half beige half darkgreen     |
+| 43 20 C   | beige      | beige     | darkgreen8-gon| beige+8 orange 4 bands        |
+| 44 20 C   | beige      | beige     | darkgreen9-gon| beige+8 orange+green stripes  |
+| 45 20 C   | beige      | beige     | orange 7-gon  | beige+4orange+4dkgreen stripe |
+| 40 21 E   | black      | black     | none          | black+ 6 white stripes        |
+| 41 21 E   | black      | black     | none          | black+2 white stripes         |
+| 42 21 E   | black      | black     | none          | black+ 6 white stripes        |
+| 43 21 E   | black      | white     | black 7-gon   | black                         |
+| 44 21 E   | black      | black     | white 9-gon   | black+36 white stripes        |
+| 45 21 E   | black      | white     | black 8-gon   | black+8 white 2 bands         |
+| 46 21 E   | black      | white     | black 6-gon   | black+12 white 2 bands        |
+| 47 21 E   | black      | black     | white 9-gon   | black+ 6 white stripes        |
+| 48 21 E   | black      | white     | black 6-gon   | black+ 6 white stripes        |
+| 42 22 A   |            |           |               |                               |
+| 43 22 A   |            |           |               |                               |
+| 44 22 A   |            |           |               |                               |
+| 45 22 A   |            |           |               |                               |
+| 46 22 A   |            |           |               |                               |
+| 47 22 A   |            |           |               |                               |
+| 48 22 A   |            |           |               |                               |
+| 49 22 A   |            |           |               |                               |
+| 50 22 A   |            |           |               |                               |
+| 44 23 Aw  |            |           |               |                               |
+| 45 23 Aw  |            |           |               |                               |
+| 46 23 Aw  |            |           |               |                               |
+| 47 23 Aw  |            |           |               |                               |
+| 48 23 Aw  |            |           |               |                               |
+| 49 23 Aw  |            |           |               |                               |
+| 50 23 Aw  |            |           |               |                               |
+| 51 23 Aw  |            |           |               |                               |
+| 52 23 Aw  |            |           |               |                               |
+| 46 24 Oc  |            |           |               |                               |
+| 47 24 Oc  |            |           |               |                               |
+| 48 24 Oc  |            |           |               |                               |
+| 49 24 Oc  |            |           |               |                               |
+| 50 24 Oc  |            |           |               |                               |
+| 51 24 Oc  |            |           |               |                               |
+| 52 24 Oc  |            |           |               |                               |
+| 53 24 Oc  |            |           |               |                               |
+| 54 24 Oc  |            |           |               |                               |
+| 47 25 Nb  |            |           |               |                               |
+| 48 25 Nb  |            |           |               |                               |
+| 49 25 Nb  |            |           |               |                               |
+| 50 25 Nb  |            |           |               |                               |
+| 51 25 Nb  |            |           |               |                               |
+| 52 25 Nb  |            |           |               |                               |
+| 53 25 Nb  |            |           |               |                               |
+| 54 25 Nb  |            |           |               |                               |
+| 55 25 Nb  |            |           |               |                               |
+| 56 25 Nb  |            |           |               |                               |
+| 50 26 Xk  |            |           |               |                               |
+| 51 26 Xk  |            |           |               |                               |
+| 52 26 Xk  |            |           |               |                               |
+| 53 26 Xk  |            |           |               |                               |
+| 54 26 Xk  |            |           |               |                               |
+| 55 26 Xk  |            |           |               |                               |
+| 56 26 Xk  |            |           |               |                               |
+| 57 26 Xk  |            |           |               |                               |
+| 58 26 Xk  |            |           |               |                               |
+| 59 26 Xk  |            |           |               |                               |
+| 51 27 Ic  |            |           |               |                               |
+| 52 27 Ic  |            |           |               |                               |
+| 53 27 Ic  |            |           |               |                               |
+| 54 27 Ic  |            |           |               |                               |
+| 55 27 Ic  |            |           |               |                               |
+| 56 27 Ic  |            |           |               |                               |
+| 57 27 Ic  |            |           |               |                               |
+| 58 27 Ic  |            |           |               |                               |
+| 59 27 Ic  |            |           |               |                               |
+| 60 27 Ic  |            |           |               |                               |
+| 61 27 Ic  |            |           |               |                               |
+| 62 27 Ic  | brown      | beige     | brown 9-gon   | redbrown                      |
+| 54 28 Yp  |            |           |               |                               |
+| 55 28 Yp  |            |           |               |                               |
+| 56 28 Yp  |            |           |               |                               |
+| 57 28 Yp  |            |           |               |                               |
+| 58 28 Yp  |            |           |               |                               |
+| 59 28 Yp  |            |           |               |                               |
+| 60 28 Yp  |            |           |               |                               |
+| 61 28 Yp  |            |           |               |                               |
+| 62 28 Yp  |            |           |               |                               |
+| 63 28 Yp  |            |           |               |                               |
+| 56 29 Jx  |            |           |               |                               |
+| 57 29 Jx  |            |           |               |                               |
+| 58 29 Jx  |            |           |               |                               |
+| 59 29 Jx  |            |           |               |                               |
+| 60 29 Jx  |            |           |               |                               |
+| 61 29 Jx  |            |           |               |                               |
+| 62 29 Jx  |            |           |               |                               |
+| 63 29 Jx  |            |           |               |                               |
+| 64 29 Jx  |            |           |               |                               |
+| 65 29 Jx  |            |           |               |                               |
+| 57 30 Hb  |            |           |               |                               |
+| 58 30 Hb  |            |           |               |                               |
+| 59 30 Hb  |            |           |               |                               |
+| 60 30 Hb  |            |           |               |                               |
+| 61 30 Hb  |            |           |               |                               |
+| 62 30 Hb  |            |           |               |                               |
+| 63 30 Hb  |            |           |               |                               |
+| 64 30 Hb  |            |           |               |                               |
+| 65 30 Hb  |            |           |               |                               |
+| 66 30 Hb  |            |           |               |                               |
+| 67 30 Hb  |            |           |               |                               |
+| 61 31 At  |            |           |               |                               |
+| 62 31 At  |            |           |               |                               |
+| 63 31 At  |            |           |               |                               |
+| 64 31 At  |            |           |               |                               |
+| 65 31 At  |            |           |               |                               |
+| 66 31 At  |            |           |               |                               |
+| 67 31 At  |            |           |               |                               |
+| 68 31 At  |            |           |               |                               |
+| 69 31 At  |            |           |               |                               |
+| 62 32 Ny  |            |           |               |                               |
+| 63 32 Ny  |            |           |               |                               |
+| 64 32 Ny  |            |           |               |                               |
+| 65 32 Ny  |            |           |               |                               |
+| 66 32 Ny  |            |           |               |                               |
+| 67 32 Ny  |            |           |               |                               |
+| 68 32 Ny  |            |           |               |                               |
+| 69 32 Ny  |            |           |               |                               |
+| 70 32 Ny  |            |           |               |                               |
+| 71 32 Ny  |            |           |               |                               |
+| 72 32 Ny  |            |           |               |                               |
+| 64 33 Pw  |            |           |               |                               |
+| 65 33 Pw  |            |           |               |                               |
+| 66 33 Pw  |            |           |               |                               |
+| 67 33 Pw  |            |           |               |                               |
+| 68 33 Pw  |            |           |               |                               |
+| 69 33 Pw  |            |           |               |                               |
+| 70 33 Pw  |            |           |               |                               |
+| 71 33 Pw  |            |           |               |                               |
+| 72 33 Pw  |            |           |               |                               |
+| 73 33 Pw  |            |           |               |                               |
+| 74 33 Pw  |            |           |               |                               |
+| 66 34 Gk  |            |           |               |                               |
+| 67 34 Gk  |            |           |               |                               |
+| 68 34 Gk  |            |           |               |                               |
+| 69 34 Gk  |            |           |               |                               |
+| 70 34 Gk  |            |           |               |                               |
+| 71 34 Gk  |            |           |               |                               |
+| 72 34 Gk  |            |           |               |                               |
+| 73 34 Gk  |            |           |               |                               |
+| 74 34 Gk  |            |           |               |                               |
+| 75 34 Gk  |            |           |               |                               |
+| 76 34 Gk  |            |           |               |                               |
+| 77 34 Gk  | bluegreen  | beige     | brown 8-gon   | bluegreen+green+orange+yellow |
+| 67 35 Qi  |            |           |               |                               |
+| 68 35 Qi  |            |           |               |                               |
+| 69 35 Qi  |            |           |               |                               |
+| 70 35 Qi  |            |           |               |                               |
+| 71 35 Qi  |            |           |               |                               |
+| 72 35 Qi  |            |           |               |                               |
+| 73 35 Qi  |            |           |               |                               |
+| 74 35 Qi  |            |           |               |                               |
+| 75 35 Qi  |            |           |               |                               |
+| 76 35 Qi  |            |           |               |                               |
+| 77 35 Qi  |            |           |               |                               |
+| 78 35 Qi  |            |           |               |                               |
+| 70 36 Xy  |            |           |               |                               |
+| 71 36 Xy  |            |           |               |                               |
+| 72 36 Xy  |            |           |               |                               |
+| 73 36 Xy  |            |           |               |                               |
+| 74 36 Xy  |            |           |               |                               |
+| 75 36 Xy  |            |           |               |                               |
+| 76 36 Xy  |            |           |               |                               |
+| 77 36 Xy  |            |           |               |                               |
+| 78 36 Xy  |            |           |               |                               |
+| 79 36 Xy  |            |           |               |                               |
+| 71 37 Gq  |            |           |               |                               |
+| 72 37 Gq  |            |           |               |                               |
+| 73 37 Gq  |            |           |               |                               |
+| 74 37 Gq  |            |           |               |                               |
+| 75 37 Gq  |            |           |               |                               |
+| 76 37 Gq  |            |           |               |                               |
+| 77 37 Gq  |            |           |               |                               |
+| 78 37 Gq  |            |           |               |                               |
+| 79 37 Gq  |            |           |               |                               |
+| 80 37 Gq  |            |           |               |                               |
+| 74 38 Bt  |            |           |               |                               |
+| 75 38 Bt  |            |           |               |                               |
+| 76 38 Bt  |            |           |               |                               |
+| 77 38 Bt  |            |           |               |                               |
+| 78 38 Bt  |            |           |               |                               |
+| 79 38 Bt  |            |           |               |                               |
+| 80 38 Bt  |            |           |               |                               |
+| 81 38 Bt  |            |           |               |                               |
+| 76 39 H   |            |           |               |                               |
+| 77 39 H   |            |           |               |                               |
+| 78 39 H   |            |           |               |                               |
+| 79 39 H   |            |           |               |                               |
+| 80 39 H   |            |           |               |                               |
+| 81 39 H   |            |           |               |                               |
+| 82 39 H   |            |           |               |                               |
+| 77 40 U   |            |           |               |                               |
+| 78 40 U   |            |           |               |                               |
+| 79 40 U   |            |           |               |                               |
+| 80 40 U   |            |           |               |                               |
+| 81 40 U   |            |           |               |                               |
+| 82 40 U   |            |           |               |                               |
+| 83 40 U   |            |           |               |                               |
+| 79 41 Sq  |            |           |               |                               |
+| 80 41 Sq  |            |           |               |                               |
+| 81 41 Sq  |            |           |               |                               |
+| 82 41 Sq  |            |           |               |                               |
+| 83 41 Sq  |            |           |               |                               |
+| 84 41 Sq  |            |           |               |                               |
+| 83 42 Ua  |            |           |               |                               |
+| 84 42 Ua  |            |           |               |                               |
+| 85 42 Ua  |            |           |               |                               |
