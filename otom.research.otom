@@ -1,6 +1,117 @@
+2025-04-07 Apr.Mon 13:47:49 saw another new isotope
+
+  Cl-25 + Vt-98 + 7500 => Eh-123 + 5185.22
+
+[ ] so does Cl-25 + Vt-100 + 6000 => ? Eh-125
+| Eh-123
+2025-04-07 Apr.Mon 12:11:12 NEW DISCOVERY! Vl-87 aka 87 44 Vl:
+
+  Mt-32 + Qe-55 + 2094 => ⬆ Vl-87
+
+2025-04-07 Apr.Mon 12:00:22
+
+since:
+|    55685*|bohr    |  Eb-19⁺ +  Dd-88⁺                               +     5000 => ⬇ Aw-107                                                                           +    3066.62 |    1933.38 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x85cad0f2f1857d8afa5337b9de1f2f3056c4676132e0cd9300042e507d31d03b | 0xa8651504a7823fe17723c53d7359242fc255d09dbfe3c40f4154fea597bd3147 |
+maybe this makes Kn-109 which immediately decays to Aw-109:
+[ ]Eb-20 +   Dd-89 + 3000 => |⬆  Ha-109 |=  Kn-109 |⬇ Aw-109
+[ ]Eb-21 +   Dd-88 + 3000 => |⬆  Ha-109 |=  Kn-109 |⬇ Aw-109
+[ ]Eb-19 +   Dd-90 + 3000 => |⬆  Ha-109 |=  Kn-109 |⬇ Aw-109 
+   [ ]|  Ct-13⁺ +  S-102ª + [ 1730.05 ..  5000] =>   P-22 + Nm-93                  | decay, nuclear               | 47506 |
+   [ ]|  Ro-22⁺ +  Nm-93⁺ + [ 2177.33 ..  3000] =>   P-22 + Dd-93                  | decay, nuclear               | 40278*|
+   [ ]|  Ro-22⁺ +  Dd-93⁺ + [ 2122.97 ..  3000] =>   P-22 + Ok-93                  | decay, nuclear               | 40281*|
+   [ ]|  Eb-19⁺ +  Ok-93⁺ + [ 2048.06 ..  3000] =>   P-22 + Dd-90                  | decay, nuclear               | 40285*|
+   [ ]Eb-19 +   Dd-90 + 3000 => |⬆  Ha-109 |=  Kn-109 |⬇ Aw-109 
+
+
+
+since:
+    Mt-32⁺ +  Qe-54⁺  +     2033 => ⬆ Vl-86 
+maybe:
+[-] Mt-33 + Qe-54 =>?⬆ Vl-87 
+     [-]|   Sr-1∙ +  Mt-32⁺ + [  584.07 ..  5000] => ⬇ Mt-33                         | decay, nuclear               | 51798 |
+     [-]|  Yu-27⁺ +  Yu-27⁺ + [ 1263.78 ..  5000] =>   Qe-54                         | nuclear                      | 38917*|
+     [-] Mt-33  +  Qe-54⁺  +     3000 => ?⬆ Vl-87 
+
+[r] Mt-32 + Qe-55 =>?⬆ Vl-87 
+     [r]|   P-21⁺ +  Mt-34⁺ + [ 1449.92 .. 20000] =>   Qe-55                         | nuclear                      | 56631 |
+     [r] Mt-32 + Qe-55 + 3000 => ?⬆ Vl-87  <---SUCCESS! makes Vl-87 using 2093.08 nuclear+decay
+
+
+
+2025-04-07 Apr.Mon 10:00:26
+
+[ ] Co-80
+   Yu-29∙ +   L-51⁺ + [ 2772.30 .. 20000] =>   Co-80                         | nuclear                      | 56611 |
+ or
+   S-102 + 0 => P-22 + Co-80
+
+[ ]|   Ei-5∙ +   L-51⁺ + 1070 =>   Pg-56
+[ ]|  Pg-56∙ +  Co-80ª + 4128 => ⬇ P-22 + Ji-114
+[ ] Sr-3 + Ji-114 + 3000 => ? Aw-117 ? Kn-117
+
+
+2025-04-06 Apr.Sun 23:23:06
+
+Because of this:
+|    64716 |bohr    |   Sr-3∙ + Da-108∙                               +     5000 =>   Z-111                                                                            +    3040.20 |    1959.80 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x6bfe35ad0883531b23cbdda755be685a184c4421482c7a43985a4c89f7ead7c9 | 0xb8c9977184a5afa745d911069609828ac5535c8236c2322aa8a9c97f37bff3d0 |
+|    64552*|bohr    |   Sr-3∙ + Da-109∙                               +     5000 =>   Z-112                                                                            +    3052.92 |    1947.08 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x07c93be3a34fa6416ecb4f3862d5d4c399c905886843fe0430d17d154a5ea7af | 0x38ed72a188fd1649ce7ac4bfc2aea91511f8e7f02f5de3fe771f5a395bf93c84 |
+These might work:
+[ ]                 |   Sr-3∙ + Da-105                                +     5000 =>   Z-108                                                                            +    3040.20 |    1959.80 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x6bfe35ad0883531b23cbdda755be685a184c4421482c7a43985a4c89f7ead7c9 | 0xb8c9977184a5afa745d911069609828ac5535c8236c2322aa8a9c97f37bff3d0 |
+[ ]                 |   Sr-3∙ + Da-106                                +     5000 =>   Z-109                                                                            +    3040.20 |    1959.80 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x6bfe35ad0883531b23cbdda755be685a184c4421482c7a43985a4c89f7ead7c9 | 0xb8c9977184a5afa745d911069609828ac5535c8236c2322aa8a9c97f37bff3d0 |
+[ ]                 |   Sr-3∙ + Da-107                                +     5000 =>   Z-110                                                                            +    3040.20 |    1959.80 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x6bfe35ad0883531b23cbdda755be685a184c4421482c7a43985a4c89f7ead7c9 | 0xb8c9977184a5afa745d911069609828ac5535c8236c2322aa8a9c97f37bff3d0 |
+[ ]                 |   Sr-3∙ + Da-110                                +     5000 =>   Z-113                                                                            +    3052.92 |    1947.08 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x07c93be3a34fa6416ecb4f3862d5d4c399c905886843fe0430d17d154a5ea7af | 0x38ed72a188fd1649ce7ac4bfc2aea91511f8e7f02f5de3fe771f5a395bf93c84 |
+
+more ideas:
+|  Dd-89⁺              + [   0.00 ..     0] => ⬆ Nm-89                     | decay                        
+[ ] Dd-88 + 0 => ? Nm-88
+    [ ]|   P-21⁺ +  Gy-67ª + [ 2023.46 .. 20000] =>   Vl-88                         | nuclear                      | 56468 |
+    [ ]|   K-31⁺ +  Vl-88⁺ + [ 2769.21 ..  4000] =>   P-22 + Da-97                  | decay, nuclear               | 55933*|
+    [ ]|   P-21⁺ +  Da-97⁺ + [ 2335.76 ..  5000] =>   P-22 + Da-96                  | decay, nuclear               | 53360*|
+    [ ]|   P-21⁺ +  Da-96⁺ + [ 2335.70 ..  5000] =>   P-22 + Da-95                  | decay, nuclear               | 53551 |
+    [ ]|   P-21⁺ +  Da-95⁺ + [ 2287.78 ..  5000] =>   P-22 + Da-94                  | decay, nuclear               | 53561*|
+    [ ]|   P-21⁺ +  Da-94⁺ + [ 2224.25 ..  5000] =>   P-22 + Da-93                  | decay, nuclear               | 53567*|
+    [ ]|  Eb-19⁺ +  Da-93⁺ + [ 2047.16 ..  5000] =>   P-22 + Ok-90                  | decay, nuclear               | 53575*|
+    [ ]|  Ro-22⁺ +  Ok-90⁺ + [ 1850.51 ..  6000] =>   P-22 + Da-90                  | decay, nuclear               | 53585 |
+    [ ]|  Eb-19⁺ +  Da-90⁺ + [ 1807.08 ..  5000] => ⬇ Ha-109                        | decay, nuclear               | 53617*|
+    [ ]|   Sr-2∙ + Ha-109⁺ + [ 1346.58 ..  7000] =>   P-22 + Ok-89                  | decay, nuclear               | 53621*|
+    [ ]|   P-21⁺ +  Ok-89⁺ + [ 1982.79 ..  5000] => ⬇ Ha-110                        | decay, nuclear               | 53704*|
+    [ ]|   K-31⁺ + Ha-110ª + [  375.00 ..  7500] =>   P-22 + K-31 + Dd-88           | decay                        | 54185*|
+    [ ] Dd-88 + 0 => ? Nm-88
+
+|   P-23∙ +  Nm-99ª    + [3568.85 .. 10000] =>   P-22 + Nm-100             | decay, nuclear               
+|  Eb-22∙ + Dd-100ª    + [3406.83 .. 10000] => ⬆ P-22 + Nm-100             | decay, nuclear               
+[ ] P-24 + Nm-99  + 5000 => ? P-22 + Nm-101
+[ ] P-24 + Nm-100 + 5000 => ? P-22 + Nm-102
+
+[ ] Sr-2  + Vl-100⁻    + 2000               =>?⬆ Nm-102
+|   Sr-3∙ + Vl-100⁻    + [1713.27 .. 10000] => ⬆ Nm-103                    | decay, nuclear               
+
+|   K-34∙ +  Lx-93⁻    + [3977.84 ..  5000] => ⬆ P-22 + Nm-105             | decay, nuclear               
+[ ] K-35  +  Lx-93⁻    + 4500               =>?⬆ P-22 + Nm-106
+
+
+2025-04-06 Apr.Sun 19:25:41 NEW DISCOVERIES Kn-114 aka 114 57 Kn and Cv-109 aka 109 52 Cv    NOW 453 isotopes in BOHR
+
+ Ro-24 + Aw-112 + 2696 => P-22 + Kn-114 
+ Mt-32 + Nm-99  + 2917 => P-22 + Cv-109
+
+2025-04-06 Apr.Sun 18:23:48 After running the parser I noticed 4 more isotopes in the output that I hadn't seen come through the discord new discoveries channel. Now at 451 isotopes in BOHR
+
+2025-04-06 Apr.Sun 15:22:08 NOW 447 isotopes in BOHR. qma found 19 more today. And he overturned my suggestion that the limit in BOHR is 59 neutrons because Da-109 and Z-111 have 60 neutrons and Z-112 has 61 neutrons
+
 2025-04-06 Apr.Sun 00:50:09 Just saw theres now a Pb-43.
 Well it might decay into a new P-20 for 3000-5000 NRG
 | Pb-43⁺ |  43 23 Pb | nonmetal |(0.633)|beta+ |                   ? Uq-43 |                [ ] ? P-20 + Ro-23 |                               |                                |
+
+[ ]|   K-31⁺ +  Mt-34⁺ + 1604 =>  Gy-65         | nuclear                      
+[ ]|  Yu-27⁺ +  Yu-27⁺ + 1264 =>  Qe-54         | nuclear                      
+[ ]|  Qe-54⁺ +  Gy-65⁺ + 3979 =>  P-22 + S-97   | decay, nuclear               
+[ ]|   P-21⁺ +   S-97⁺ + 2487 =>  P-22 + S-96   | decay, nuclear               
+[ ]|   P-21⁺ +   S-96⁺ + 2432 =>  P-22 + S-95   | decay, nuclear               
+[ ]|   P-21⁺ +   S-95⁺ + 2432 =>  P-22 + S-94   | decay, nuclear               
+[ ]|   S-94⁺           + 6746 =>  Pb-43 + Pg-51 | nuclear                      
+[ ]   Pb-43 + 5000 => ? P-20 + Ro-23
+
 
 
 2025-04-05 Apr.Sat 19:18:14 Made new FILE comprehensive.recipes.BOHR.otom where I took all the reactions of BOHR up to now, kept only completed reactions, munged the data to input NRG ranges, sorted by the otom proton mass order then total mass order, and moved pieces to different columns.
@@ -126,7 +237,7 @@ The 6th column comes into play for just 2 input sets: As-5+Dz-8 and Ct-17 by its
 |  Ro-23ª +  Z-103ª  + [ 2474 .. 10000] =>   P-22 + Cv-104                                     | decay, nuclear               
 |  Cl-26ª +  S-102ª  + [ 2800 .. 10000] =>   P-22 + Cv-106                                     | decay, nuclear               
 |  Cl-27∙ +  S-102ª  + [ 3668 ..  5000] =>   P-22 + Cv-107                                     | decay, nuclear               
-[ ] Mt-32 + Nm-99 => ? P-22 + Cv-109
+[c] Mt-32 + Nm-99 => ? P-22 + Cv-109
 |  Mt-32⁺ + Nm-100⁺  + [ 2919 ..  5000] =>   P-22 + Cv-110                                     | decay, nuclear               
 [ ] Mt-33 + Nm-100 => ? P-22 + Cv-111
 
@@ -137,10 +248,10 @@ The 6th column comes into play for just 2 input sets: As-5+Dz-8 and Ct-17 by its
 |   P-21⁺ + Ha-108⁺  + [  350 ..  7000] => ⬇ Eb-21 + Kn-108                                    | decay         
 |  Ro-22⁺ + Aw-112ª  + [ 2202 ..  3000] =>   P-22 + Kn-112                                     | decay, nuclear               
 [r] Ro-23 + Aw-112 => ? P-22 + Kn-113
-[ ] Ro-24 + Aw-112 => ? P-22 + Kn-114
-[ ] Ro-25 + Aw-112 => ? P-22 + Kn-115
-[ ] Mt-34 + Z-103 => ? P-22 + Kn-115
-[ ] Mt-35 + Z-102 => ? P-22 + Kn-115
+[r] Ro-24 + Aw-112 => ? P-22 + Kn-114
+[c] Ro-25 + Aw-112 => ? P-22 + Kn-115
+[c] Mt-34 + Z-103 => ? P-22 + Kn-115
+[c] Mt-35 + Z-102 => ? P-22 + Kn-115
 |  Mt-35∙ +  Z-103ª  + [ 4533 .. 15000] =>   P-22 + Kn-116                                     | decay, nuclear               
 
 [ ] Yu-27  +  Vt-97   => ? Ys-124
@@ -154,10 +265,10 @@ FROM Those I derived these recipe pathways:
   [r]|  Yu-27⁺ +  S-102ª  + [ 2707 ..  5000] =>   P-22 + Vt-107                                     | decay, nuclear               
   [r] Ro-22 + Vt-107 + 4000 => ? P-22 + Ek-107 <---- SUCCESS! makes P-22+Ek-107 using 2293.16 nuclear+decay
 
-  [*]|  Pb-48∙ +  Yv-72ª  + [ 4304 .. 20000] =>   P-22 + Dd-98                                      | decay, nuclear               
-  [ ]|  Eb-22∙ +  Dd-98ª  + [ 3382 .. 10000] =>   P-22 + Nm-98                                      | decay, nuclear               
-  [ ]|   P-23∙ +  Nm-98ª  + [ 3573 .. 10000] =>   P-22 + Nm-99                                      | decay, nuclear               
-  [ ] Mt-32 + Nm-99 => ? P-22 + Cv-109
+  [r]|  Pb-48∙ +  Yv-72ª  + [ 4304 .. 20000] =>   P-22 + Dd-98                                      | decay, nuclear               
+  [r]|  Eb-22∙ +  Dd-98ª  + [ 3382 .. 10000] =>   P-22 + Nm-98                                      | decay, nuclear               
+  [r]|   P-23∙ +  Nm-98ª  + [ 3573 .. 10000] =>   P-22 + Nm-99                                      | decay, nuclear               
+  [r] Mt-32 + Nm-99 + 5000 => ? P-22 + Cv-109 <---SUCCESS! makes P-22+Cv-109 using 2916.80 nuclear+decay
 
   [*]|  Pb-48∙ +  Yv-72ª  + [ 4304 .. 20000] =>   P-22 + Dd-98                                      | decay, nuclear               
   [ ]|  Eb-22∙ +  Dd-98ª  + [ 3382 .. 10000] =>   P-22 + Nm-98                                      | decay, nuclear               
@@ -169,18 +280,18 @@ FROM Those I derived these recipe pathways:
   [r]|  Mt-32⁺ +  S-102ª  + [ 2824 ..  4000] =>   P-22 + Aw-112                                     | decay, nuclear               
   [r] Ro-23 + Aw-112 + 3000 => ? P-22 + Kn-113 <--- SUCCESS! makes P-22+Kn-113 using 2429.13 nuclear+decay
 
-  [*]|  Mt-32⁺ +  S-102ª  + [ 2824 ..  4000] =>   P-22 + Aw-112                                     | decay, nuclear               
-  [ ] Ro-24 + Aw-112 => ? P-22 + Kn-114
+  [r]|  Mt-32⁺ +  S-102ª  + [ 2824 ..  4000] =>   P-22 + Aw-112                                     | decay, nuclear               
+  [r] Ro-24 + Aw-112 + 5000 => ? P-22 + Kn-114 <-----SUCCESS! makes P-22+Kn-114 using 2695.96 nuclear+decay
 
-  [*]|  Mt-32⁺ +  S-102ª  + [ 2824 ..  4000] =>   P-22 + Aw-112                                     | decay, nuclear               
-  [ ]|  Cl-25⁺            + [    1 ..  1000] => ⬇ Ro-25                                             | decay                        
-  [ ] Ro-25 + Aw-112 => ? P-22 + Kn-115
+  [c]|  Mt-32⁺ +  S-102ª  + [ 2824 ..  4000] =>   P-22 + Aw-112                                     | decay, nuclear               
+  [c]|  Cl-25⁺            + [    1 ..  1000] => ⬇ Ro-25                                             | decay                        
+  [c] Ro-25 + Aw-112 => ? P-22 + Kn-115
 
-  [*]|  Ro-23ª +  S-102ª  + [ 2567 .. 15000] =>   P-22 + Z-103                                      | decay, nuclear               
-  [ ] Mt-34 + Z-103 => ? P-22 + Kn-115
+  [c]|  Ro-23ª +  S-102ª  + [ 2567 .. 15000] =>   P-22 + Z-103                                      | decay, nuclear               
+  [c] Mt-34 + Z-103 => ? P-22 + Kn-115
 
-  [*]|  Ro-22⁺ +  S-102ª  + [ 2374 ..  5000] =>   P-22 + Z-102                                      | decay, nuclear               
-  [ ] Mt-35 + Z-102 => ? P-22 + Kn-115
+  [c]|  Ro-22⁺ +  S-102ª  + [ 2374 ..  5000] =>   P-22 + Z-102                                      | decay, nuclear               
+  [c] Mt-35 + Z-102 => ? P-22 + Kn-115
 
 
 
@@ -305,9 +416,8 @@ So these are the things to try:
 [f]    K-35  +  S-102   +   6000              => ? P-22 + Ji-115 <---FAILURE i dont know if more energy will help
 [ ]    K-35  +  S-102   +  10000              => ? P-22 + Ji-115 <==== MIGHT NOT BE POSSIBLE TO HAVE MORE THAN 59 NEUTRONS IN UNIVERSE BOHR
 
-IT MIGHT BE that no otoms can exist in Universe BOHR with more than 59 neutrons
+IT MIGHT BE that no otoms can exist in Universe BOHR with more than 59 neutrons. UPDATE: This is incorrect because we have discovered Da-109 and Z-111 which have 60 neutrons and Z-112 which has 61 neutrons
 
-::INFO:: MAYBE In Universe BOHR it might not be possible to discover and isotopes with more than 59 neutrons.
 
 [r]|   Sr-1∙ +  Mt-32⁺  + [  633 ..  3000] => ⬇ Mt-33                                             | decay, nuclear               
 [r]   Mt-33  +  S-102   +   5000              => ? P-22 + Aw-113 <---SUCESS! makes P-22+Aw-113 using 3135.92 nuclear+decay
@@ -695,9 +805,9 @@ Since I think the result will be beta+ it could want to drop a proton:
 [ ] Ha-114
 [ ] Kn-110
 [ ] Kn-111
-[ ] Kn-113
-[ ] Kn-114
-[ ] Kn-115
+[c] Kn-113
+[c] Kn-114
+[c] Kn-115
 [ ] Aw-109
 [ ] Aw-110
 [c] Aw-113
@@ -743,7 +853,7 @@ Since I think the result will be beta+ it could want to drop a proton:
 
 
 [c] Ek-105
-[ ] Ek-107
+[c] Ek-107
 [c] Ek-108
 [c] Ek-109
 [c] Vt-100
@@ -751,9 +861,9 @@ Since I think the result will be beta+ it could want to drop a proton:
 [c] Vt-106
 [c] Vt-108
 [c] Cv-108
-[ ] Cv-109
+[c] Cv-109
 [ ] Z-99
-[ ] Z-100
+[c] Z-100
 [ ] Z-101
 [c] Z-105
 [c] S-99
@@ -942,7 +1052,7 @@ I bet Aw-111 decays to Kn-111. Dang. Nope. Aw-111 + 0 => P-22 + Se-89
   [ ]  Ji-114ª  + [  250 ..  5000] => P-22 + Vl-92
   [ ]  Ji-111ª  + [  250 .. 10000] => P-22 + Vl-89
   [ ]  Dd-92⁺   + [  250 ..  5000] => Nm-92
-  [ ]  Z-103ª   + [  250 .. 15000] => P-22 + W-81
+  [c]  Z-103ª   + [  250 .. 15000] => P-22 + W-81
   [ ]  Cv-104ª  + [  700 .. 14000] => P-22 + Lx-82
   [ ]  Cv-106ª  + [  386 ..  7700] => P-22 + Lx-84
 
@@ -2321,7 +2431,7 @@ now: [r] Yu-30 + Kk-72 +4000 => ? Ok-102 makes Ok-102 using 3290.59 nuclear
 
  30 15 Ndª(0.839) +  70 34 Kkª(0.879) => |⬆ 100  50  S |= 100  49 Da |⬇ 100  48 Ok
 
- [ ] Z-100  100 51 Z
+ [c] Z-100  100 51 Z
 
  [ ] Z-101  101 51 Z
 
@@ -2352,7 +2462,7 @@ NO reactions in the list?!?!
 
   6  3 As∙(1.000) + 102 50  Sª(0.750) => |⬆            |=            |⬇ 108  52 Cv
 
- [ ] Cv-109  
+ [c] Cv-109  
 
   7  3 As∙(1.000) + 102 50  Sª(0.750) => |⬆            |=            |⬇ 109  52 Cv
 
@@ -2371,7 +2481,7 @@ NO reactions in the list?!?!
  [c] Ek-105  105 54 Ek
 NO reactions in the list?!?!
 
- [ ] Ek-107  107 54 Ek
+ [c] Ek-107  107 54 Ek
 NO reactions in the list?!?!
 
  [c] Ek-108  108 54 Ek
@@ -2642,7 +2752,7 @@ does Mt-32 + S-101 => P-22 + Aw-111?
  44 23 Pb⁺(0.738) +  67 33 Gyª(0.871) => |⬆ 111  57 Kn |= 111  56 Aw |⬇ 111  55 Ji
  50 26 Ux⁺(0.789) +  61 31 Ai⁺(0.866) => |⬆            |= 111  57 Kn |⬇ 111  56 Aw
 
- [ ] Kn-113  
+ [c] Kn-113  
 
   1  1 Sr∙(1.000) + 112 55 Jiª(0.616) => |⬆ 113  57 Kn |= 113  56 Aw |⬇ 113  55 Ji
   1  1 Sr∙(1.000) + 112 56 Awª(0.566) => |⬆            |= 113  57 Kn |⬇ 113  56 Aw
@@ -2664,7 +2774,7 @@ does Mt-32 + S-101 => P-22 + Aw-111?
  46 23 Pb⁺(0.882) +  67 33 Gyª(0.871) => |⬆ 113  57 Kn |= 113  56 Aw |⬇ 113  55 Ji
  52 26 Ux⁺(0.914) +  61 31 Ai⁺(0.866) => |⬆            |= 113  57 Kn |⬇ 113  56 Aw
 
- [ ] Kn-114  
+ [c] Kn-114  
 
   2  1 Sr∙(1.000) + 112 55 Jiª(0.616) => |⬆ 114  57 Kn |= 114  56 Aw |⬇ 114  55 Ji
   2  1 Sr∙(1.000) + 112 56 Awª(0.566) => |⬆            |= 114  57 Kn |⬇ 114  56 Aw
@@ -2687,7 +2797,7 @@ does Mt-32 + S-101 => P-22 + Aw-111?
  54 26 Ux⁺(0.993) +  60 30 Ns⁺(0.928) => |⬆ 114  57 Kn |= 114  56 Aw |⬇ 114  55 Ji
  54 28 Qe⁺(0.826) +  60 30 Ns⁺(0.928) => |⬆            |=            |⬇ 114  57 Kn
 
- [ ] Kn-115  
+ [c] Kn-115  
 
  13  7 Ct⁺(0.491) + 102 50  Sª(0.750) => |⬆            |= 115  57 Kn |⬇ 115  56 Aw
  48 23 Pb∙(1.852) +  67 33 Gyª(0.871) => |⬆ 115  57 Kn |= 115  56 Aw |⬇ 115  55 Ji
@@ -2715,30 +2825,6 @@ NO reactions in the list?!?!
 2025-03-31 Mar.Mon 16:55:10 I DISCOVERED Nd-33 aka 33 15 Nd. There are now 273 isotopes in universe BOHR
 
 11  5 Gj∙(1.057) +  22 10 Eb∙(1.534) + 1090 => 33 15 Nd
-
-[ ] 33 15 Nd
-  [ ] add to otoms.complete.list.otom
-  [ ] save reservoir image to mac folder
-  [ ] bookmark to Firefox
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
-  [ ] add to syntax/otom.vim
-  [ ] add to otom_reactions.pl
-  [ ] update in Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
-  [ ] add to otoms.decay.otom
-  [ ] add to otoms.otom
-  [ ] add to otoms.columns.otom
-  [ ] add reaction to otom.reactions.otom 
-  [ ] add to recipes.otom
-  [ ] add otoms.shapescan.data.otom
-      [ ] put these vaules in ???
-          [ ] ==>SHELL TABLE 1
-          [ ] ==>SHELL TABLE 2
-  [ ] check off otoms.unfoundpossibilites.otom
-  [ ] make it myself
-  [ ] add to file otoms.decay.with.metadata.otom
-  [ ] add to file optimized.get.all.isotopes.otom
-  [ ] add to parseReactorLog.pl
-  [ ] add to token.image.descriptions.otom
 
  [r] 11  5 Gj∙(1.057) +  22 10 Eb∙(1.534) + 1500 => |⬆  33 16  K |=  33 15 Nd |⬇  33 14 Yu <--- makes Nd-33 using 1089.12 nuclear
 
@@ -2831,7 +2917,7 @@ Try making Nd-33:
 | Yv-74  |
 
 
-2025-03-31 Mar.Mon 13:49:21 Found a bunch more BOHR isotopes from the reactor logs. [ ] Need to work on them in the shapescan data files.
+2025-03-31 Mar.Mon 13:49:21 Found a bunch more BOHR isotopes from the reactor logs. Need to work on them in the shapescan data files.
 BTW there is a great calculator tool for working with huge numbers that most calculators can't handle, like the token Ids of otoms. Its useful for converting between the hexadecimal version of the token id
 
   https://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html
