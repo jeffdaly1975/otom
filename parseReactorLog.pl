@@ -2913,7 +2913,12 @@ foreach $universe_name (@universe_names_list){
 
 foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
   if (exists $mineable_otoms{$k}){
-    printf { $recipes_fhs{$universe_name} } "| %-6s | mineable\n", $k;
+
+    # figure out which universe this $k is from
+    my $this_o = $recipes{(keys %{ $recipes{$k} })[0]}{otomro};
+    my $this_u = $universe_names_lookup{ $db{$this_o}{"universe"} };
+
+    printf { $recipes_fhs{$this_u} } "| %-6s | mineable\n", $k;
   }
 
   my %seenthis=();
@@ -2929,7 +2934,7 @@ foreach my $k (sort keys %recipes){  # keys like "At-61", "Cq-6"
 
      my $s=sprintf "| %-6s | %s\n", $k, $db{$this_otomro}{otoms_in} ." + ". $recipes{$k}{$r}{nrg_used} ." => ". $db{$this_otomro}{otoms_out_sorted} ;
      unless (exists $seenthis{$s}){
-       printf { $recipes_fhs{$universe_name} } "| %-6s | %s | %s\n", $k, $db{$this_otomro}{otoms_in} ." + ". $recipes{$k}{$r}{nrg_used} ." => ". $db{$this_otomro}{otoms_out_sorted} , $this_otomro ;
+       printf { $recipes_fhs{$universe_names_lookup{$db{$this_otomro}{"universe"}}} } "| %-6s | %s | %s\n", $k, $db{$this_otomro}{otoms_in} ." + ". $recipes{$k}{$r}{nrg_used} ." => ". $db{$this_otomro}{otoms_out_sorted} , $this_otomro ;
      }
      $seenthis{$s}++;
   }
