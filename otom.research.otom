@@ -1,10 +1,17 @@
+2025-04-08 Apr.Tue 13:02:47 I see a new isotope Ji-108 so now 457 isotopes in BOHR
+
+ Ro-23 + Ek-107 + 25000 => P-22 + Ji-108 + 21530.60
+
+2025-04-08 Apr.Tue 12:13:07 [ ] Is it possible to use the shapescan contract read/write interface to complete this old reaction I tried way back?
+|    21563 |alpha   |   Ju-1∙ +   M-20∙                               +      850 =>   ?                                                                                +          ? |          ? | ?                            | 0x620051b8553a724b742ae6ae9cc3585d29f49848 |                                                                  ? | 0x15b45542aaa81ef8a57cc92b4a0f3b8de2e78cd3ed6ff1d717ebbac24a815831 |
+
 2025-04-07 Apr.Mon 21:00:26 I looked at all the BOHR reactions with 2 mineable inputs and came up with these 11 missing. Some have been tried with a tiny amount of energy which is useless.
 
 [r] Gj-11 +  Gj-11 + 1000 => ? Eb-22  used 700.82 nuclear
 [r] T-16  +  T-16  + 2000 => ? K-32
 [r] T-17  +  T-17  + 2000 => ? K-34   used 1276.54 nuclear
 [r] P-23  +  P-23  + 4000 => ? Uq-46  used 1946.60 nuclear
-[ ] K-34  +  K-34  + 4000 => ? F-68        
+[r] K-34  +  K-34  + 4000 => ? F-68   used 3049.11 nuclear
 [ ] Pb-48 +  Pb-48 + 5000 => ? Nm-96     
 [ ] Wy-50 +  Wy-50 + 5000 => ? Ok-100     
 [ ] Gy-67 +  Yv-72 + 6000 => ? 139 68 ..  
