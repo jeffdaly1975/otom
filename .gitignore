@@ -1,0 +1,13 @@
+
+# Ignore all .DS_Store files (common on macOS)
+.DS_Store
+
+# ignore vim swap files
+*.swp
+
+# Ignore all log files and directories
+*.csv
+
+# Ignore the deletethese directory
+deletethese/
+
