@@ -1,3 +1,25 @@
+2025-04-08 Apr.Tue 20:38:05 Hmm not many reactions have tried adding to Co-83 which is easy to make
+
+  [r]|   K-34∙ +  Kk-71ª + [ 3492.51 .. 20000] =>   P-22 + Co-83                  | decay, nuclear               | 56520 |
+  [r] Sr-3 + Co-83 + 3000 => ? W-86 <---SUCCESS! makes W-86 using 1333.07 nuclear
+
+so that means this will probably work too:
+  [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
+  [ ] Sr-2 + Co-83 + 2000 => ? W-85
+
+and maybe these
+  [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
+  [ ] Dz-8 + Co-83 + 5000 => ? U-91
+
+  [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
+  [ ] Dz-9 + Co-83 + 5000 => ? U-92
+
+  [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
+  [ ] Dz-10 + Co-83 + 5000 => ? U-93
+
+  [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
+  [ ] vi-14 + Co-83 + 5000 => ? Se-97
+
 2025-04-08 Apr.Tue 13:02:47 I see a new isotope Ji-108 so now 457 isotopes in BOHR
 
  Ro-23 + Ek-107 + 25000 => P-22 + Ji-108 + 21530.60
