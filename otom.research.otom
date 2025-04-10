@@ -1,3 +1,18 @@
+2025-04-10 Apr.Thu 00:55:50 the most recent new isotopes discovered in BOHR:
+
+| Yv-75  | OTOMRO 74828: Sr-3   + Kk-72  + 5000 => Yv-75          + 3658.294232   using 1341.71 nuclear       |
+| Iu-79  | OTOMRO 74846: As-7   + Kk-72  + 5000 => Iu-79          + 3407.529      using 1592.48 nuclear       |
+| W-86   | OTOMRO 71286: Sr-3   + Co-83  + 3000 => W-86           + 1666.930794   using 1333.07 nuclear       |
+| Lx-89  | OTOMRO 74762: Ct-17  + Kk-72  + 5000 => Lx-89          + 3305.950905   using 1694.05 nuclear       |
+| U-91   | OTOMRO 75262: Dz-8   + Co-83  + 2500 => U-91           +  856.219490   using 1643.79 nuclear       |
+| Se-97  | OTOMRO 75254: Vi-14  + Co-83  + 5000 => Se-97          + 3190.274811   using 1809.73               |
+| Kn-110 | OTOMRO 74461: V-41   + Dd-91  + 5500 => P-22  + Kn-110 + 2325.27772497 using 3174.73 nuclear+decay |
+
+
+2025-04-10 Apr.Thu 00:05:49 I want to document who discovered each isotope and molecule. It isn't always just the lowest OTOMRO because someone could initiate a reaction that would discover a new isotope, but someone does the same thing and analyses theirs first so technically they should get the credit.
+[ ] gather all isotope discoverers by wallet address and ENS if available
+[ ] have the parser identify these as well. perhaps sorting by blocknumber, then index number to see which is the first to create a new isotope.
+
 2025-04-08 Apr.Tue 20:38:05 Hmm not many reactions have tried adding to Co-83 which is easy to make
 
   [r]|   K-34∙ +  Kk-71ª + [ 3492.51 .. 20000] =>   P-22 + Co-83                  | decay, nuclear               | 56520 |
@@ -8,8 +23,8 @@ so that means this will probably work too:
   [ ] Sr-2 + Co-83 + 2000 => ? W-85
 
 and maybe these
-  [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
-  [ ] Dz-8 + Co-83 + 5000 => ? U-91
+  [r] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
+  [r] Dz-8 + Co-83 + 5000 => ? U-91 <---SUCCESS!
 
   [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
   [ ] Dz-9 + Co-83 + 5000 => ? U-92
@@ -17,8 +32,8 @@ and maybe these
   [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
   [ ] Dz-10 + Co-83 + 5000 => ? U-93
 
-  [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
-  [ ] vi-14 + Co-83 + 5000 => ? Se-97
+  [r] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
+  [r] Vi-14 + Co-83 + 5000 => ? Se-97 <---SUCCESS!
 
 2025-04-08 Apr.Tue 13:02:47 I see a new isotope Ji-108 so now 457 isotopes in BOHR
 
@@ -302,7 +317,7 @@ The 6th column comes into play for just 2 input sets: As-5+Dz-8 and Ct-17 by its
 |  Mt-32⁺ + Nm-100⁺  + [ 2919 ..  5000] =>   P-22 + Cv-110                                     | decay, nuclear               
 [ ] Mt-33 + Nm-100 => ? P-22 + Cv-111
 
-[ ] Eb-19 + Ok-91 => ? Kn-110
+[c] Eb-19 + Ok-91 => ? Kn-110
 [ ] Eb-19 + Ok-92 => ? Kn-111
 [ ] Eb-20 + Ok-91 => ? Kn-111
 |  Eb-19⁺ +  Ok-89⁺  + [ 1804 ..  3500] => ⬇ Kn-108                                            | decay, nuclear               
@@ -864,7 +879,7 @@ Since I think the result will be beta+ it could want to drop a proton:
 [ ] Ha-112
 [c] Ha-113
 [ ] Ha-114
-[ ] Kn-110
+[c] Kn-110
 [ ] Kn-111
 [c] Kn-113
 [c] Kn-114
@@ -2782,7 +2797,7 @@ does Mt-32 + S-101 => P-22 + Aw-111?
  47 23 Pb∙(1.859) +  67 33 Gyª(0.871) => |⬆ 114  57 Kn |= 114  56 Aw |⬇ 114  55 Ji
  54 26 Ux⁺(0.993) +  60 30 Ns⁺(0.928) => |⬆ 114  57 Kn |= 114  56 Aw |⬇ 114  55 Ji
 
- [ ] Kn-110  
+ [c] Kn-110  
 
   1  1 Sr∙(1.000) + 109 57 Knª(0.361) => |⬆            |=            |⬇ 110  57 Kn
   2  1 Sr∙(1.000) + 108 56 Awª(0.430) => |⬆            |= 110  57 Kn |⬇ 110  56 Aw
