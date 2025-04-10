@@ -1,3 +1,35 @@
+2025-04-10 Apr.Thu 12:45:30 Wonder if I could sell New Discoveries! I have 29 potential new isotope recipes. What if I could get 0.1 or 0.01 eth for one and say if it doesn't work, I'll refund it.
+
+W-85
+U-92
+U-93
+Eh-125
+Da-91
+Da-110
+Nm-88
+Nm-101
+Nm-102
+Nm-106
+P-20
+Ek-98
+Ji-100
+Ji-101
+Ji-102
+Ax-110
+Ax-112
+Ax-113
+Ax-114
+Ax-115
+Ax-116
+Aw-103
+Aw-104
+Aw-109
+Cv-111
+Kn-111
+Ys-124
+Yv-68
+V-40
+
 2025-04-10 Apr.Thu 00:55:50 the most recent new isotopes discovered in BOHR:
 
 | Yv-75  | OTOMRO 74828: Sr-3   + Kk-72  + 5000 => Yv-75          + 3658.294232   using 1341.71 nuclear       |
@@ -55,8 +87,6 @@ and maybe these
 [ ] Kk-70 +  Yv-72 + 6000 => ? 142 69 ..  
 [ ] Kk-71 +  Yv-72 + 6000 => ? 143 69 ..  
 [ ] Yv-72 +  Yv-72 + 6000 => ? 144 70 ..  
-
-[ ]|   Sr-2∙ +  Pb-48∙ + [ 1313.86 ..  5000] =>   Wy-50 | nuclear  | 51540*|
 
 2025-04-07 Apr.Mon 13:47:49 saw another new isotope
 
@@ -828,7 +858,7 @@ Since I think the result will be beta+ it could want to drop a proton:
   |  Ro-22⁺ +  Ok-89⁺  +     2081 => ⬇ Ax-111  | decay, nuclear
 
   does
-  Vi-11 + Ek-99 + 2000 => ? ⬇ Ax-110
+[ ] Vi-11 + Ek-99 + 2000 => ? ⬇ Ax-110
 
   [ ] Ro-22⁺ +  Nm-92⁺                                         +     3000 =>   P-22 + Dd-92                                                           +     851.11 |    2148.89 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xc0eda32e16b51e70c25e3055e75a03fdb72ac9f2ac50ac7ac5aff70a4e29d943 | 0xc9e846ec223fd20e7aad5aeb69b01bafcb739107a92adc402c7cd580a34f459b |
   [ ] Ro-22⁺ +  Dd-92⁺                                         +    10000 =>   P-22 + Ok-92                                                           +    7512.48 |    2487.52 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x1126fe10567519380c1726160df7b91d10b2b4b025ea536972b758e99856a500 | 0x09a2ebbbf8555d8aaedc406916c005aa8f27dd897aa03df83fe190ef3ef13fc2 |
@@ -847,8 +877,8 @@ Since I think the result will be beta+ it could want to drop a proton:
 
 
   does
-  Ro-23 +  Ok-89  +     3000 => ? ⬇ Ax-112
-  Ro-22 +  Ok-90  +     3000 => ? ⬇ Ax-112
+[ ] Ro-23 +  Ok-89  +     3000 => ? ⬇ Ax-112
+[ ] Ro-22 +  Ok-90  +     3000 => ? ⬇ Ax-112
 
   [ ]|  Mt-32⁺ +  S-102ª  + 2883 =>   P-22 + Aw-112
   [ ]|   Sr-2∙ + Aw-112ª  + 1686 =>   P-22 + Nm-92 
@@ -866,12 +896,12 @@ Since I think the result will be beta+ it could want to drop a proton:
   [ ]   Ro-22 +  Ok-90  +     3000 => ? ⬇ Ax-112
 
   does
-  Ro-24 +  Ok-89  +     3000 => ? ⬇ Ax-113
-  Ro-23 +  Ok-90  +     3000 => ? ⬇ Ax-113
+[ ] Ro-24 +  Ok-89  +     3000 => ? ⬇ Ax-113
+[ ] Ro-23 +  Ok-90  +     3000 => ? ⬇ Ax-113
 
   does
-  Ro-25 +  Ok-89  +     3000 => ? ⬇ Ax-114
-  Ro-24 +  Ok-90  +     3000 => ? ⬇ Ax-114
+[ ] Ro-25 +  Ok-89  +     3000 => ? ⬇ Ax-114
+[ ] Ro-24 +  Ok-90  +     3000 => ? ⬇ Ax-114
 
 
 
@@ -891,7 +921,7 @@ Since I think the result will be beta+ it could want to drop a proton:
 [c] Ji-105
 [ ] Ji-106
 [ ] Ji-107
-[ ] Ji-108
+[c] Ji-108
 [ ] Ji-109
 [r] Ji-110
 [r] Ji-113
@@ -943,7 +973,7 @@ Since I think the result will be beta+ it could want to drop a proton:
 [ ] Z-101
 [c] Z-105
 [c] S-99
-[ ] S-100
+[c] S-100
 [r] Ok-96
 
 since:
@@ -1297,7 +1327,7 @@ NO reactions in the list?!?!
 Ugh. I think we need to try making U-82 which will likely be unstable and decay to N-82. Or make Vt-104 which when reacted with 0 energy will likely decay by fission to P-22+N-82
   1  1 Sr +  81 40  W => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W  makes Lx-82
   1  1 Sr +  81 41 Lx => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
-  1  1 Sr +  81 42  N => |⬆  82 44 Vl |=  82 43  U |⬇  82 42  N [ ]
+  1  1 Sr +  81 42  N => |⬆  82 44 Vl |=  82 43  U |⬇  82 42  N
   2  1 Sr +  80 40  W => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
   4  2 Ei +  78 39 Co => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
   5  3 As +  77 38  D => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
@@ -1365,7 +1395,7 @@ Ugh. I think we need to try making U-82 which will likely be unstable and decay 
  33 16  K +  49 25  L => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
  32 17 Mt +  50 24 Wy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W unanalyzed
  32 17 Mt +  50 25  L => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx makes Lx-82
- 32 17 Mt +  50 26 Ux => |⬆  82 44 Vl |=  82 43  U |⬇  82 42  N [ ]
+ 32 17 Mt +  50 26 Ux => |⬆  82 44 Vl |=  82 43  U |⬇  82 42  N 
  33 17 Mt +  49 24 Wy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
  33 17 Mt +  49 25  L => |⬆  82 43  U |=  82 42  N |⬇  82 41 Lx
  34 17 Mt +  48 24 Wy => |⬆  82 42  N |=  82 41 Lx |⬇  82 40  W
@@ -1421,7 +1451,7 @@ Yikes. Here's the steps to make N-81:
 [c]  1  1 Sr +  81 40  W => |⬆  82  42  N |= (82  41 Lx)|⬇  82  40  W     makes Lx-82
 
   1   1 Sr +  81  40  W => |⬆  82  42  N |=  82  41 Lx |⬇  82  40  W
-  1   1 Sr +  81  41 Lx => |⬆  82  43  U |=  82  42  N |⬇  82  41 Lx [ ]
+  1   1 Sr +  81  41 Lx => |⬆  82  43  U |=  82  42  N |⬇  82  41 Lx
   1   1 Sr +  81  42  N => |⬆  82  44 Vl |=  82  43  U |⬇  82  42  N
   2   1 Sr +  80  40  W => |⬆  82  42  N |=  82  41 Lx |⬇  82  40  W
   4   2 Ei +  78  39 Co => |⬆  82  42  N |=  82  41 Lx |⬇  82  40  W
@@ -2458,7 +2488,7 @@ maybe     Mt-35 + Mt-37 +4000 =>? Kk-72
 
 now: [r] Yu-30 + Kk-72 +4000 => ? Ok-102 makes Ok-102 using 3290.59 nuclear
 
- [ ] Da-91  
+ [ ] Da-91   -aim for Ok-101 and it will decay to Da-91 immediately
 
   2  1 Sr∙(1.000) +  89 47 Dd⁺(0.486) => |⬆  91  49 Da |=  91  48 Ok |⬇  91  47 Dd
   2  1 Sr∙(1.000) +  89 48 Ok⁺(0.397) => |⬆  91  50  S |=  91  49 Da |⬇  91  48 Ok
@@ -2503,7 +2533,7 @@ now: [r] Yu-30 + Kk-72 +4000 => ? Ok-102 makes Ok-102 using 3290.59 nuclear
  27 14 Yu⁺(0.764) +  72 35 Yvª(0.859) => |⬆  99  50  S |=  99  49 Da |⬇  99  48 Ok
  32 17 Mt⁺(0.660) +  67 33 Gyª(0.871) => |⬆            |=  99  50  S |⬇  99  49 Da [f] +5000 makes Da-99
 
- [ ] S-100  
+ [c] S-100  
 
  30 15 Ndª(0.839) +  70 34 Kkª(0.879) => |⬆ 100  50  S |= 100  49 Da |⬇ 100  48 Ok
 
@@ -2571,7 +2601,7 @@ NO reactions in the list?!?!
   9  5 Gj⁺(0.308) +  95 49 Da⁺(0.678) => |⬆ 104  55 Ji |=            |⬇           
  12  6 Vi∙(1.339) +  92 48 Ok⁺(0.552) => |⬆ 104  55 Ji |=            |⬇           
  15  7 Ct∙(1.337) +  89 47 Dd⁺(0.486) => |⬆ 104  55 Ji |=            |⬇           
- 15  7 Ct∙(1.337) +  89 48 Ok⁺(0.397) => |⬆ 104  56 Aw |= 104  55 Ji |⬇            [ ]
+ 15  7 Ct∙(1.337) +  89 48 Ok⁺(0.397) => |⬆ 104  56 Aw |= 104  55 Ji |⬇            
  15  8  T⁺(0.556) +  89 47 Dd⁺(0.486) => |⬆ 104  56 Aw |= 104  55 Ji |⬇            [f]
  15  8  T⁺(0.556) +  89 48 Ok⁺(0.397) => |⬆ 104  57 Kn |= 104  56 Aw |⬇ 104  55 Ji
  50 26 Ux⁺(0.789) +  54 28 Qe⁺(0.826) => |⬆ 104  55 Ji |=            |⬇           
