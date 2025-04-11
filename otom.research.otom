@@ -1,12 +1,41 @@
+2025-04-10 Apr.Thu 22:44:14 A couple more isotopes discovered. Now at 470 isotopes in BOHR
+
+2025-04-10 Apr.Thu 18:56:29 Sold 2 more recipes to ubinhash Nm-88 & U-92 for total 0.02 eth. Now we have 467 isotopes in BOHR
+
+2025-04-10 Apr.Thu 18:12:10 Holy smokes. I sold a New Discovery recipe to ubinhash for 0.01 eth. W-85. It worked and I'm so happy about it!
+
+2025-04-10 Apr.Thu 15:33:05 Could I make the 64 proton otom? I think:
+
+That makes 119 64 ?? which immediately decays to 119 63  X aka X-119
+
+
+[r] Mt-32⁺ +  S-102ª  + 2824 => P-22 + Aw-112  
+[r] Ro-22⁺ + Aw-112ª  + 2200 => P-22 + Kn-112  
+[r]  As-5⁺ + Kn-112ª  +  905 => P-22 + Da-95   
+[r] Eb-19⁺ +  Da-95⁺  + 2021 => P-22 + Ok-92   
+[r] Mt-32⁺ +  Ok-92⁺  + 2447 => P-22 + Ek-102  
+[r]          Ek-102⁺  +    0 =>        Vt-102  
+[r]          Vt-102⁺  +    0 =>        Cv-102  
+[r] Vi-11⁺ + Cv-102ª  + 1469 => P-22 + Dd-91   
+[r] Ro-22⁺ +  Dd-91⁺  + 1983 => P-22 + Ok-91   
+[r] Mt-32⁺ +  Ok-91⁺  + 2357 => P-22 + Ek-101  
+[r]  P-21⁺ + Ek-101⁺  + 1847 => P-22 + Ek-100  
+[r]  P-21⁺ + Ek-100⁺  + 1787 => P-22 + Ek-99   
+[r] Ek-99⁺            +    0 =>        Vt-99
+[r]  P-21⁺ +  Vt-99⁺  + 1855 => P-22 + Vt-98
+[r]  P-21⁺ +  Vt-98⁺  + 1842 =>        X-119
+[f]  4   2 Ei + 119  63  X + 5000 => |⬆ 123  66 Ys |= 123  65 Eh |⬇ 123  64 .. <----NOPE makes P-22 + Ek-101 using 1390.45 nuclear+decay
+
+
 2025-04-10 Apr.Thu 12:45:30 Wonder if I could sell New Discoveries! I have 29 potential new isotope recipes. What if I could get 0.1 or 0.01 eth for one and say if it doesn't work, I'll refund it.
 
-W-85
-U-92
+W-85 SOLD to ubinhash
+U-92 SOLD to ubinhash
 U-93
 Eh-125
 Da-91
 Da-110
-Nm-88
+Nm-88 SOLD to ubinhash
 Nm-101
 Nm-102
 Nm-106
@@ -51,15 +80,15 @@ V-40
   [r] Sr-3 + Co-83 + 3000 => ? W-86 <---SUCCESS! makes W-86 using 1333.07 nuclear
 
 so that means this will probably work too:
-  [ ] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
-  [ ] Sr-2 + Co-83 + 2000 => ? W-85
+  [c] K-34∙ +  Kk-71ª + 3493 =>  P-22 + Co-83
+  [c] Sr-2 + Co-83 + 2000 => ? W-85
 
 and maybe these
   [r] K-34∙ +  Kk-71ª + 3489 =>  P-22 + Co-83
   [r] Dz-8 + Co-83 + 5000 => ? U-91 <---SUCESS! used 1643.78 nuclear
 
-  [ ] K-34∙ +  Kk-71ª + 3489 =>  P-22 + Co-83
-  [ ] Dz-9 + Co-83 + 5000 => ? U-92
+  [c] K-34∙ +  Kk-71ª + 3489 =>  P-22 + Co-83
+  [c] Dz-9 + Co-83 + 5000 => ? U-92
 
   [ ] K-34∙ +  Kk-71ª + 3489 =>  P-22 + Co-83
   [ ] Dz-10 + Co-83 + 5000 => ? U-93
