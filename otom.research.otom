@@ -1,42 +1,41 @@
 2025-04-12 Apr.Sat 20:36:51 DAMN MERGE CONFLICTS
 
-From https://github.com/jeffdaly1975/otom
-   a67d403..2a2baf9  main       -> origin/main
-[c] Auto-merging syntax/otom.vim
-CONFLICT (content): Merge conflict in syntax/otom.vim
+      | From https://github.com/jeffdaly1975/otom
+      |    a67d403..2a2baf9  main       -> origin/main
+  [c] | Auto-merging syntax/otom.vim
+      | CONFLICT (content): Merge conflict in syntax/otom.vim
 
-[c] Auto-merging parseReactorLog.pl
-CONFLICT (content): Merge conflict in parseReactorLog.pl
+  [c] | Auto-merging parseReactorLog.pl
+      | CONFLICT (content): Merge conflict in parseReactorLog.pl
 
-[c] Auto-merging otoms.shapescan.data.BOHR.otom
-CONFLICT (content): Merge conflict in otoms.shapescan.data.BOHR.otom
+  [c] | Auto-merging otoms.shapescan.data.BOHR.otom
+      | CONFLICT (content): Merge conflict in otoms.shapescan.data.BOHR.otom
 
-[x] Auto-merging otoms.reactions_table.BOHR.txt
-CONFLICT (content): Merge conflict in otoms.reactions_table.BOHR.txt
+  [x] | Auto-merging otoms.reactions_table.BOHR.txt
+      | CONFLICT (content): Merge conflict in otoms.reactions_table.BOHR.txt
 
-[x] Auto-merging otoms.reactions_list.BOHR.txt
-CONFLICT (content): Merge conflict in otoms.reactions_list.BOHR.txt
+  [x] | Auto-merging otoms.reactions_list.BOHR.txt
+      | CONFLICT (content): Merge conflict in otoms.reactions_list.BOHR.txt
 
-[x] Auto-merging otoms.decay_reactions_list.BOHR.txt
-CONFLICT (content): Merge conflict in otoms.decay_reactions_list.BOHR.txt
+  [x] | Auto-merging otoms.decay_reactions_list.BOHR.txt
+      | CONFLICT (content): Merge conflict in otoms.decay_reactions_list.BOHR.txt
 
-[c] Auto-merging otom_reactions.BOHR.pl
-CONFLICT (content): Merge conflict in otom_reactions.BOHR.pl
+  [c] | Auto-merging otom_reactions.BOHR.pl
+      | CONFLICT (content): Merge conflict in otom_reactions.BOHR.pl
 
-[c] Auto-merging decay.BOHR.otom
-CONFLICT (content): Merge conflict in decay.BOHR.otom
+  [c] | Auto-merging decay.BOHR.otom
+      | CONFLICT (content): Merge conflict in decay.BOHR.otom
 
-[c] Auto-merging convert_token_id_to_hex.pl
-CONFLICT (content): Merge conflict in convert_token_id_to_hex.pl
+  [c] | Auto-merging convert_token_id_to_hex.pl
+      | CONFLICT (content): Merge conflict in convert_token_id_to_hex.pl
 
-[c] Auto-merging all_isotopes_stability_chart_universe_Bohr.txt
-CONFLICT (content): Merge conflict in all_isotopes_stability_chart_universe_Bohr.txt
+  [c] | Auto-merging all_isotopes_stability_chart_universe_Bohr.txt
+      | CONFLICT (content): Merge conflict in all_isotopes_stability_chart_universe_Bohr.txt
 
-[ ] Automatic merge failed; fix conflicts and then commit the result.
-2025-04-12.Apr.Sat 20:35:59 [~/Downloads/NFTs/otom] % 
-
+  [c] | Automatic merge failed; fix conflicts and then commit the result.
 
 
+What a pain in the ass that was.
 
 
 2025-04-12 Apr.Sat 19:56:39 DAMN! 37 new isotopes. And Aw-124 has 68 neutrons which is huge
