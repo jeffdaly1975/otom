@@ -2,16 +2,16 @@
 
 From https://github.com/jeffdaly1975/otom
    a67d403..2a2baf9  main       -> origin/main
-[ ] Auto-merging syntax/otom.vim
+[c] Auto-merging syntax/otom.vim
 CONFLICT (content): Merge conflict in syntax/otom.vim
 
-[ ] Auto-merging parseReactorLog.pl
+[c] Auto-merging parseReactorLog.pl
 CONFLICT (content): Merge conflict in parseReactorLog.pl
 
-[ ] Auto-merging otoms.shapescan.data.BOHR.otom
+[c] Auto-merging otoms.shapescan.data.BOHR.otom
 CONFLICT (content): Merge conflict in otoms.shapescan.data.BOHR.otom
 
-[ ] Auto-merging otoms.reactions_table.BOHR.txt
+[x] Auto-merging otoms.reactions_table.BOHR.txt
 CONFLICT (content): Merge conflict in otoms.reactions_table.BOHR.txt
 
 [x] Auto-merging otoms.reactions_list.BOHR.txt
@@ -20,16 +20,16 @@ CONFLICT (content): Merge conflict in otoms.reactions_list.BOHR.txt
 [x] Auto-merging otoms.decay_reactions_list.BOHR.txt
 CONFLICT (content): Merge conflict in otoms.decay_reactions_list.BOHR.txt
 
-[ ] Auto-merging otom_reactions.BOHR.pl
+[c] Auto-merging otom_reactions.BOHR.pl
 CONFLICT (content): Merge conflict in otom_reactions.BOHR.pl
 
-[ ] Auto-merging decay.BOHR.otom
+[c] Auto-merging decay.BOHR.otom
 CONFLICT (content): Merge conflict in decay.BOHR.otom
 
 [c] Auto-merging convert_token_id_to_hex.pl
 CONFLICT (content): Merge conflict in convert_token_id_to_hex.pl
 
-[ ] Auto-merging all_isotopes_stability_chart_universe_Bohr.txt
+[c] Auto-merging all_isotopes_stability_chart_universe_Bohr.txt
 CONFLICT (content): Merge conflict in all_isotopes_stability_chart_universe_Bohr.txt
 
 [ ] Automatic merge failed; fix conflicts and then commit the result.
