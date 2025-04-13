@@ -3,10 +3,10 @@
 # Universe: BOHR
 
 #       65 otoms
-#      487 isotopes
-#   237169 combinations
-#   118828 unique combinations
-#    23086 combinations resulting in known isotopes
+#      524 isotopes
+#   274576 combinations
+#   137550 unique combinations
+#    24553 combinations resulting in known isotopes
 
 my $order_counter=0;
 my @sort_order=();
@@ -322,20 +322,25 @@ __DATA__
  76 36 Cj
  77 36 Cj
  78 36 Cj
+ 79 36 Cj
  80 36 Cj
+ 81 36 Cj
  74 37 Iu
  75 37 Iu
  76 37 Iu
  77 37 Iu
  78 37 Iu
  79 37 Iu
- 82 38 Iu
+ 81 37 Iu
+ 82 37 Iu
+ 83 37 Iu
  76 38  D
  77 38  D
  78 38  D
  79 38  D
  80 38  D
  81 38  D
+ 82 38  D
  83 38  D
  84 38  D
  78 39 Co
@@ -346,6 +351,8 @@ __DATA__
  83 39 Co
  84 39 Co
  85 39 Co
+ 86 39 Co
+ 87 39 Co
  88 39 Co
  78 40  W
  79 40  W
@@ -357,7 +364,10 @@ __DATA__
  85 40  W
  86 40  W
  87 40  W
+ 88 40  W
  89 40  W
+ 79 41 Lx
+ 80 41 Lx
  81 41 Lx
  82 41 Lx
  83 41 Lx
@@ -368,6 +378,8 @@ __DATA__
  88 41 Lx
  89 41 Lx
  90 41 Lx
+ 91 41 Lx
+ 92 41 Lx
  93 41 Lx
  81 42  N
  82 42  N
@@ -380,6 +392,11 @@ __DATA__
  89 42  N
  90 42  N
  91 42  N
+ 92 42  N
+ 93 42  N
+ 94 42  N
+ 95 42  N
+ 96 42  N
  84 43  U
  87 43  U
  88 43  U
@@ -388,6 +405,11 @@ __DATA__
  91 43  U
  92 43  U
  93 43  U
+ 94 43  U
+ 95 43  U
+ 96 43  U
+ 97 43  U
+ 98 43  U
  86 44 Vl
  87 44 Vl
  88 44 Vl
@@ -399,8 +421,11 @@ __DATA__
  94 44 Vl
  95 44 Vl
  96 44 Vl
+ 97 44 Vl
+ 98 44 Vl
  99 44 Vl
 100 44 Vl
+101 44 Vl
  88 45 Se
  89 45 Se
  90 45 Se
@@ -430,6 +455,7 @@ __DATA__
  99 46 Nm
 100 46 Nm
 103 46 Nm
+104 46 Nm
 105 46 Nm
  88 47 Dd
  89 47 Dd
@@ -447,6 +473,7 @@ __DATA__
 103 47 Dd
 104 47 Dd
 105 47 Dd
+106 47 Dd
  89 48 Ok
  90 48 Ok
  91 48 Ok
@@ -465,7 +492,9 @@ __DATA__
 104 48 Ok
 105 48 Ok
 106 48 Ok
+107 48 Ok
  90 49 Da
+ 91 49 Da
  92 49 Da
  93 49 Da
  94 49 Da
@@ -495,11 +524,15 @@ __DATA__
 102 50  S
 103 50  S
 104 50  S
+108 50  S
+109 50  S
  95 51  Z
  96 51  Z
  97 51  Z
  98 51  Z
+ 99 51  Z
 100 51  Z
+101 51  Z
 102 51  Z
 103 51  Z
 104 51  Z
@@ -553,6 +586,7 @@ __DATA__
 111 54 Ek
 112 54 Ek
 113 54 Ek
+119 54 Ek
 103 55 Ji
 104 55 Ji
 105 55 Ji
@@ -562,6 +596,8 @@ __DATA__
 112 55 Ji
 113 55 Ji
 114 55 Ji
+121 55 Ji
+104 56 Aw
 105 56 Aw
 106 56 Aw
 107 56 Aw
@@ -571,6 +607,7 @@ __DATA__
 113 56 Aw
 114 56 Aw
 115 56 Aw
+124 56 Aw
 106 57 Kn
 107 57 Kn
 108 57 Kn
