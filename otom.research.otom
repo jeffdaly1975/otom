@@ -33,7 +33,29 @@ like this does for Co-**:
 |    51508*|bohr    |  Mt-35∙ +  Uq-47⁻                               +     5000 =>   Co-82                                                                            +    2066.76 |    2933.24 | nuclear                      | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xf5890cb6b351047c5101dea3215231d7b0d29c69f0d37ab4fce2959b7517f2a6 | 0x1e237da106c657b9867b9a4656bb4d2df256e2f43a7fe2d4c229bdda554f1c87 |
 
 |    77753 |bohr    |   K-34∙ +  Kk-71ª                               +     3489 =>   P-22 + Co-83                                                                     +       0.29 |    3488.71 | decay, nuclear               | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0xc0cfa64e3ecece77868d3ae416ab507ea28173a65ed5ab257651de83ce5a7d1a | 0x54efaeca2102413ddd0c5dd854b5e6ac9460032283ea1f319d2f86bceea7cf1a |
-[ ]  K-34  +  Kk-65 + 5000 => ? P-22 + Co-77
+[>]  K-34  +  Kk-65 + 5000 => ? P-22 + Co-77
+
+ first make Kk-65:
+  [ ] Mt-32⁺ +  S-102ª  + 2824 => P-22 + Aw-112  
+  [ ] Ro-22⁺ + Aw-112ª  + 2200 => P-22 + Kn-112  
+  [ ]  As-5⁺ + Kn-112ª  +  905 => P-22 + Da-95   
+  [ ] Eb-19⁺ +  Da-95⁺  + 2021 => P-22 + Ok-92   
+  [ ] Mt-32⁺ +  Ok-92⁺  + 2447 => P-22 + Ek-102  
+  [ ]          Ek-102⁺  +    0 =>        Vt-102  
+  [ ]          Vt-102⁺  +    0 =>        Cv-102  
+  [ ] Vi-11⁺ + Cv-102ª  + 1469 => P-22 + Dd-91   
+  [ ] Ro-22⁺ +  Dd-91⁺  + 1983 => P-22 + Ok-91   
+  [ ] Mt-32⁺ +  Ok-91⁺  + 2357 => P-22 + Ek-101  
+  [ ]  P-21⁺ + Ek-101⁺  + 1847 => P-22 + Ek-100  
+  [ ]  P-21⁺ + Ek-100⁺  + 1787 => P-22 + Ek-99   
+  [ ] Ek-99⁺            +    0 =>        Vt-99
+  [ ]  P-21⁺ +  Vt-99⁺  + 1855 => P-22 + Vt-98
+  [ ]  P-21⁺ +  Vt-98⁺  + 1842 =>        X-119
+  [ ] X-119ª            + 8157 => C-55 + Kk-64
+  [ ]  Sr-1∙ +  Kk-64⁺  + 1059 => ⬇ Kk-65
+ then try:
+  [ ]  K-34  +  Kk-65 + 5000 => ? P-22 + Co-77
+
 
 |    77830*|bohr    |   Sr-1∙ +   D-83∙                               +     6000 =>   Co-84                                                                            +    4336.94 |    1663.06 | nuclear                      | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0xe5cec0e700ec1ac5329bacad168d880c3907abed985e83b04653b1285fe8215a | 0x47f435dc4f7a5433664b79e061ab59738fd17a4a9dd45f4f92bf8469607b5c62 |
 
@@ -43,13 +65,46 @@ like this does for Co-**:
 |    79955*|bohr    |   Sr-3∙ +  Iu-83⁻                               +     4000 => ⬆ Co-86                                                                            +    2667.53 |    1332.47 | decay, nuclear               | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0x192df3516d3bbffd6745de4c3a00d5d8c6c07d277013a589b880ef1b98c15548 | 0x2144b43aaef9da13f03672c1be0ad0eb89d45a93861bd48dd151fc100a278d29 |
 
 |    81614*|bohr    |  Gj-11∙ +  Se-98∙                               +     6000 =>   P-22 + Co-87                                                                     +    3247.91 |    2752.09 | decay, nuclear               | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0x5a2e85f0a559d5592fb92d829b0539a4bf0eba761926c8c6cfcce0c15e641267 | 0xa88aa070927c933562c3f4f718921b2cb59b5ceddbb9152bb99cb22925d392ee |
-[ ] Gj-11 + Se-88 + 5000 => ? P-22 + Co-77
+[>] Gj-11 + Se-88 + 5000 => ? P-22 + Co-77
 |    81102*|bohr    |   Sr-1∙ + Da-108∙                               +     6000 =>   P-22 + Co-87                                                                     +    4204.30 |    1795.70 | decay, nuclear               | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0x6041c7203b6fd5fc0b4f467d2d41baff692b74984084837be974f7f51590a752 | 0xe995e17db1c9df997e5fe17c0ecbf3f900c05b79c13b3881e1984189343908d2 |
 
+ first make Se-88
+   [ ]|    68417 |bohr    |  Mt-32⁺ +  S-102ª                               +     2824 =>   P-22 + Aw-112                                                                    +       0.32 |    2823.68 | decay, nuclear               | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0x22bd2483db49678e5922722a3a67e50e320b52fedb39b1c741b6bae924d22e88 | 0x7bfc62c95bb5d24c46792210b9f7fea7ece0f78ee81162a4bc6adabcb367db17 |
+   [ ]|    68418 |bohr    |   Sr-2∙ + Aw-112ª                               +     1253 =>   P-22 + Nm-92                                                                     +       4.61 |    1248.39 | decay, nuclear               | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0xb6625dd0c462f253684295924a57348a06071d75664c7773430251b3c61a35b5 | 0x74f3beadee059723b3298b4880105a78d721aeca06fe2ef594dca88a81689c89 |
+   [ ]|    68423 |bohr    |   P-21⁺ +  Nm-92⁺                               +     2311 =>   P-22 + Nm-91                                                                     +     134.31 |    2176.69 | decay, nuclear               | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0x43dc51b80fc5edc355d70235b509ae96c15fd280d01d3d4ec88fb9b94a2cac99 | 0xc39222565b4497e24b752801dc214a14c2ded7bfbe135ca3b6d55e4538ea2301 |
+   [ ]|    68432 |bohr    |  Eb-19⁺ +  Nm-91⁺                               +     2231 =>   P-22 + Se-88                                                                     +     163.31 |    2067.69 | decay, nuclear               | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0xb48148f81f12dd5179266aaf1a3db9a5b843ed49736beab3ff7e731c46bcc275 | 0xfa79c6cbc3264b4c1ea1da6cb37aae60d1f64adb80366feaf4b369797c01422b |
+ now try:
+   [ ] Gj-11 + Se-88 + 5000 => ? P-22 + Co-77
+
+
+
 |    64517*|bohr    |  Gj-10∙ + Se-100∙                               +    20000 =>   P-22 + Co-88                                                                     +   16718.50 |    3281.50 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x41c2b3f59ecef9dbcda27ec1c1522494e5a7e7b8194e7da1bd58e80c07da29cd | 0x815be5968e53c0d308f2a8e2f696fb7a4293a16e9aa24eae58d4c1545acd837a |
-[ ] Gj-11 + Se-101 => ? P-22 + Co-89
+[>] Gj-11 + Se-101 => ? P-22 + Co-89
 |    77793*|bohr    |   Sr-2∙ + Da-108∙                               +     5000 =>   P-22 + Co-88                                                                     +    3145.46 |    1854.54 | decay, nuclear               | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0xd3764a02fc197b631597813a84a5320955dec41afad277a5e35ff217245333bb | 0x8b80ac27ae3709fa11177b04c436f84af24d80e001833fa0a7316e64d1d080c9 |
 |    77759 |bohr    |   Sr-3∙ + Da-107∙                               +     6000 =>   P-22 + Co-88                                                                     +    3973.66 |    2026.34 | decay, nuclear               | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0xc2b75c079baca82be18548d1ec303ced0da8076c7b99d1c69d3b520b67e46ab7 | 0x5523d3c6429f0be5f09f43698cd590351961dd0cd307366f72ba9c99b1ed7832 |
+
+   first make Se-101:
+   [ ]|    77753 |bohr    |   K-34∙ +  Kk-71ª +  3489  =>   P-22 + Co-83          
+   [ ]|    77756 |bohr    |   K-34∙ +  Co-83⁺ +  3882  =>   P-22 + Vl-95          
+   [ ]|    77757 |bohr    |   K-34∙ +  Vl-95⁻ +  4093  =>   P-22 + Da-107         
+   [ ]|    77759 |bohr    |   Sr-3∙ + Da-107∙ +  2027  =>   P-22 + Co-88          
+   [ ]|    77761 |bohr    |   K-34∙ +  Co-88⁻ +  3927  =>   P-22 + Vl-100         
+   [ ]|    77762 |bohr    |   Sr-3∙ + Vl-100⁻ +  1464  => ⬆ Nm-103                
+   [ ]|    77747*|bohr    |   Sr-1∙ + Nm-103⁻ +  1598  => ⬆ Ok-104                
+   [ ]|    77780*|bohr    |   K-34∙ + Ok-104ª +   300  =>   P-22 + K-34 + Iu-82   
+   [ ]|    77832*|bohr    |   Sr-2∙ +  Iu-82∙ +  1659  =>   D-84                  
+   [ ]|    77840*|bohr    |   Sr-1∙ +   D-84⁻ +  1217  =>   Co-85                 
+   [ ]|    77842*|bohr    |   Sr-2∙ +  Co-85⁻ +  1309  =>   W-87                  
+   [ ]|    77843*|bohr    |   Sr-3∙ +   W-87⁻ +  1447  =>   Lx-90                 
+   [ ]|    77844*|bohr    |   Sr-1∙ +  Lx-90∙ +  1651  =>   N-91                  
+   [ ]|    77845*|bohr    |   Sr-2∙ +   N-91∙ +  1784  =>   U-93                  
+   [ ]|    77847*|bohr    |   Sr-3∙ +   U-93⁻ +  1439  =>   Vl-96                 
+   [ ]|    77853*|bohr    |   Sr-2∙ +  Vl-96⁻ +  1375  =>   Se-98                 
+   [ ]|    77855*|bohr    |   Sr-3∙ +  Se-98∙ +  1872  => ⬇ Se-101                
+ now try:
+   [ ] Gj-11 + Se-101 + 5000 => ? P-22 + Co-89
+
+
 
 
 2025-04-13 Apr.Sun 15:50:11 NEW DISCOVERY! Cj-68 aka 68 35 Yv
