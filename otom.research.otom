@@ -1,3 +1,16 @@
+2025-04-16 Apr.Wed 10:39:17 todo:
+[ ] Lx-76⁺ + 0 => ? W-76
+[ ] Lx-77⁺ + 0 => ? W-77
+
+
+2025-04-15 Apr.Tue 23:28:08
+[ ] How often is each otom isotope used over all the successful reactions? find out.
+
+[ ] Would it be possible to mark the individual outputs that gained or lost a proton with the up⬇/down⬆  arrows?
+[ ] Would it be possible to mark the individual  inputs similarly
+[ ] The parser should reread the dumper files to speed up 
+
+
 2025-04-15 Apr.Tue 12:54:22 NEW DISCOVERY L-48 aka 48 25 L
 
 Hmm. how about making C-52 to decay to Qe-53
@@ -26,7 +39,7 @@ Hmm. how about making C-52 to decay to Qe-53
 2025-04-15 Apr.Tue 12:30:36
 
 Ux-48 should decay to L-48 with 0 NRG input:
-| Ux-48⁺ |  48 26 Ux | noble    |(0.555)|beta+ |               [ ] ? L-48  |                   ? Ro-22 + Yu-27 |                               |                                |
+| Ux-48⁺ |  48 26 Ux | noble    |(0.555)|beta+ |                   ? L-48  |                   ? Ro-22 + Yu-27 |                               |                                |
 
   [r] Nd-30ª +  Gy-67ª  + 2367 =>   Ok-97        
   [r]  P-21⁺ +  Ok-97ª  + 2442 =>   P-22 + Ok-96 
