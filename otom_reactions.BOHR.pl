@@ -3,10 +3,10 @@
 # Universe: BOHR
 
 #       65 otoms
-#      578 isotopes
-#   334084 combinations
-#   167331 unique combinations
-#    31625 combinations resulting in known isotopes
+#      588 isotopes
+#   345744 combinations
+#   173166 unique combinations
+#    33187 combinations resulting in known isotopes
 
 my $order_counter=0;
 my @sort_order=();
@@ -208,6 +208,7 @@ __DATA__
  41 19 Dx
  42 19 Dx
  43 19 Dx
+ 44 19 Dx
  39 20 Gd
  40 20 Gd
  41 20 Gd
@@ -215,6 +216,8 @@ __DATA__
  43 20 Gd
  44 20 Gd
  45 20 Gd
+ 46 20 Gd
+ 39 21  V
  40 21  V
  41 21  V
  42 21  V
@@ -223,6 +226,7 @@ __DATA__
  45 21  V
  46 21  V
  47 21  V
+ 48 21  V
  41 22 Uq
  42 22 Uq
  43 22 Uq
@@ -231,6 +235,7 @@ __DATA__
  46 22 Uq
  47 22 Uq
  48 22 Uq
+ 49 22 Uq
  43 23 Pb
  44 23 Pb
  45 23 Pb
@@ -240,6 +245,7 @@ __DATA__
  49 23 Pb
  50 23 Pb
  51 23 Pb
+ 52 23 Pb
  45 24 Wy
  47 24 Wy
  48 24 Wy
@@ -248,6 +254,8 @@ __DATA__
  51 24 Wy
  52 24 Wy
  53 24 Wy
+ 54 24 Wy
+ 55 24 Wy
  46 25  L
  47 25  L
  48 25  L
@@ -257,6 +265,8 @@ __DATA__
  52 25  L
  53 25  L
  54 25  L
+ 56 25  L
+ 57 25  L
  48 26 Ux
  50 26 Ux
  51 26 Ux
