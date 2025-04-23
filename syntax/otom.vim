@@ -6,6 +6,8 @@ if exists("b:current_syntax")
   finish
 endif
 
+set iskeyword+=-
+
 syn match TodoBlank    /\[ \]/     " todo item not yet started
 syn match TodoNext     /\[\*\]/    " this one i should do next
 syn match TodoCurrent  /\[\.\]/    " this one is in progress
