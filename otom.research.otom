@@ -3560,7 +3560,7 @@ try:
   [r]|  Eb-19⁺ +  Ok-92⁺ + 1877 =>   P-22 + Dd-89  
   [r]|  Ro-22⁺ +  Dd-89⁺ + 1844 =>   P-22 + Ok-89  
   [r]|  Ro-22⁺ +  Ok-89⁺ + 1778 => ⬇ Ax-111         used 1769.36 nuclear+decay
-  [ ]   Ax-111ª          +    0 =>   P-22 + ?
+  [r]   Ax-111ª          +    0 =>   P-22 + ?     <---makes P-22 + Ok-89 decay
 total: 13770
 
 try:
