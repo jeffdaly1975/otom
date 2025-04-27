@@ -1,7 +1,54 @@
+2025-04-27 Apr.Sun 16:38:53 New Discovery! Now 604 isotopes in Universe BOHR
+
+ Co-75⁺ +    0 => D-75
+
+2025-04-27 Apr.Sun 15:45:11
+
+Since
+|   104277*|bohr    |  Ux-48⁺ +  Lx-76⁺                               +    10000 => ⬇ WL(W-76>L-48)                                                                    +    9451.42 |     548.58 | chemical, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x6ad31a992ab395462d5635d1d3f2c76c0b35013ddd0d8cc6d3b18fd62cefe358 | 0x0c41e3a77a2c9280ae68c260c650f2514fd900c146988bd813eb62e639266c1c |
+
+Looks like Ux-48 + Lx-76 + EVEN MORE will make a nuclear reaction and possibly output: 124 67 ??
+[>] Ux-48 + Lx-76 + 20000 => ? 124 67 ??
+  [ ] Mt-32⁺ +  S-102ª + 2824 =>   P-22 + Aw-112 
+  [ ]  Sr-2∙ + Aw-112ª + 1249 =>   P-22 + Nm-92  
+  [ ] Ro-22⁺ +  Nm-92⁺ + 2106 =>   P-22 + Dd-92  
+  [ ] Ro-22⁺ +  Dd-92⁺ + 2094 =>   P-22 + Ok-92  
+  [ ] Eb-19⁺ +  Ok-92⁺ + 1877 =>   P-22 + Dd-89  
+  [ ] Ro-22⁺ +  Dd-89⁺ + 1877 =>   P-22 + Ok-89 
+  [ ] Mt-32⁺ +  Ok-89⁺ + 2237 =>   P-22 + Ek-99    
+  [ ] Eb-22∙ +  Ek-99⁺ + 2740 =>   P-22 + Vt-99    
+  [ ]  P-21⁺ +  Vt-99⁺ + 2010 =>   P-22 + Vt-98    
+  [ ] Cl-24⁺ +  Vt-98⁺ +  501 =>   Ro-24 + Cv-98   
+  [ ] Cv-98ª           +    0 =>   P-22 + Lx-76
+  [ ] Ct-13⁺ +  S-102ª + 1711 =>   P-22 + Nm-93
+  [ ] Ro-22⁺ +  Nm-93⁺ + 2135 =>   P-22 + Dd-93
+  [ ] Ro-22⁺ +  Dd-93⁺ + 2077 =>   P-22 + Ok-93
+  [ ] Eb-19⁺ +  Ok-93⁺ + 1999 =>   P-22 + Dd-90
+  [ ] Ro-22⁺ +  Dd-90⁺ + 1886 =>   P-22 + Ok-90
+  [ ] Ro-22⁺ +  Ok-90⁺ + 1791 =>   P-22 + Da-90
+  [ ] Da-90⁺           + 5916 =>   Uq-42 + Ux-48
+  [ ] Ux-48  +  Lx-76  +20000 => ? 124 67 ??
+total: 57030
+
 2025-04-26 Apr.Sat 19:10:49
 
 try:
- [ ] Co-75⁺ + 0 => ? D-75
+[>] Co-75⁺ + 0 => ? D-75
+  [r]|  Mt-32⁺ +  S-102ª + 2824 =>   P-22 + Aw-112 
+  [r]|   Sr-2∙ + Aw-112ª + 1249 =>   P-22 + Nm-92  
+  [r]|  Ro-22⁺ +  Nm-92⁺ + 2106 =>   P-22 + Dd-92  used 2104.19 nuclear+decay
+  [r]|  Ro-22⁺ +  Dd-92⁺ + 2094 =>   P-22 + Ok-92   
+  [r]|  Eb-19⁺ +  Ok-92⁺ + 1877 =>   P-22 + Dd-89  
+  [r]|  Ro-22⁺ +  Dd-89⁺ + 1877 =>   P-22 + Ok-89  used 1844.96 nuclear+decay
+  [r]|  Mt-32⁺ +  Ok-89⁺ + 2237 =>   P-22 + Ek-99  used 2234.24 nuclear+decay
+  [r]|  Ek-99⁺           +    0 => ⬇ Vt-99
+  [r]|  Xj-17⁺ +  Vt-99⁺ + 1696 => ⬇ Jb-116        used 1627.84 nuclear+decay
+  [r]|   Sr-1∙ + Jb-116ª + 1039 =>   P-22 + Z-95   used 1019.66 nuclear+decay
+  [r]|  Ro-22⁺ +   Z-95⁺ + 1780 => ⬇ Go-117        used 1760.17 decay
+  [r]  Go-117ª           + 7793 =>   C-54 + Gy-63  used 7681.74 nuclear
+  [r]    P-21⁺ +   C-54⁺ + 1556 => ⬇ Co-75         used 1533.02 nuclear+decay
+  [r]   Co-75⁺           +    0 => ? D-75 <---SUCCESS! Makes D-75 decay
+total: 28128
 
 
 2025-04-26 Apr.Sat 17:01:18 New Discovery.  Now 602 isotopes in BOHR
@@ -3155,7 +3202,17 @@ Here's a bunch of ways to make Eh:
   Aw-124ª + 12000 => Ux-57 + Ns-67 using 11120.32 nuclear
 
 try:
-[ ] Ns-67⁻ + 10000 => ? Yu-31 + K-36
+[>] Ns-67⁻ + 10000 => ? Yu-31 + K-36
+  [ ]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  
+  [ ]|   K-34∙ +  Co-83⁺ + 3823 => ⬇ P-22 + Vl-95  
+  [ ]|   K-34∙ +  Vl-95⁻ + 4045 => ⬆ P-22 + Da-107 
+  [ ]|   Sr-3∙ + Da-107∙ + 1818 => ⬇ P-22 + Co-88  
+  [ ]|   K-34∙ +  Co-88⁻ + 3844 => ⬇ P-22 + Vl-100 
+  [ ]|   P-23∙ + Vl-100⁻ + 3070 =>   P-22 + Vl-101
+  [ ]|   P-23∙ + Vl-101⁻ + 3023 => ⬆ Aw-124       
+  [ ]  Aw-124ª           +11121 =>   Ux-57 + Ns-67 using 11120.32 nuclear
+  [ ]   Ns-67⁻           +10000 => ? Yu-31 + K-36
+total: 44233
 
 2025-04-24 Apr.Thu 16:00:36 How much energy does burning each isotope produce?
 
@@ -3268,8 +3325,32 @@ try:
  [ ] Gy-63⁺ + 10000 => ? Nd-29 + Lu-34
 
 try:
- [ ] Co-74⁺ +     0 => ? D-74 
- [ ] Co-74⁺ + 10000 => ? Lu-34 + V-41
+[>] Co-74⁺ +     0 => ? D-74 
+  [ ]|  Mt-32⁺ +  S-102ª + 2824 =>   P-22 + Aw-112 
+  [ ]|   Sr-2∙ + Aw-112ª + 1249 =>   P-22 + Nm-92  
+  [ ]|  Ro-22⁺ +  Nm-92⁺ + 2106 =>   P-22 + Dd-92  
+  [ ]|  Ro-22⁺ +  Dd-92⁺ + 2094 =>   P-22 + Ok-92  
+  [ ]|  Eb-19⁺ +  Ok-92⁺ + 1877 =>   P-22 + Dd-89  
+  [ ]|  Ro-22⁺ +  Dd-89⁺ + 1877 =>   P-22 + Ok-89 
+  [ ]|  Mt-32⁺ +  Ok-89⁺ + 2237 =>   P-22 + Ek-99  
+  [ ]|  Ek-99⁺           + 6110 =>   L-46 + C-53
+  [ ]|   P-21⁺ +   C-53⁺ + 1491 => ⬇ Co-74
+  [ ]   Co-74⁺           +    0 => ? D-74 
+total: 21865
+
+[>] Co-74⁺ + 10000 => ? Lu-34 + V-41
+  [ ]|  Mt-32⁺ +  S-102ª + 2824 =>   P-22 + Aw-112 
+  [ ]|   Sr-2∙ + Aw-112ª + 1249 =>   P-22 + Nm-92  
+  [ ]|  Ro-22⁺ +  Nm-92⁺ + 2106 =>   P-22 + Dd-92  
+  [ ]|  Ro-22⁺ +  Dd-92⁺ + 2094 =>   P-22 + Ok-92  
+  [ ]|  Eb-19⁺ +  Ok-92⁺ + 1877 =>   P-22 + Dd-89  
+  [ ]|  Ro-22⁺ +  Dd-89⁺ + 1877 =>   P-22 + Ok-89 
+  [ ]|  Mt-32⁺ +  Ok-89⁺ + 2237 =>   P-22 + Ek-99  
+  [ ]|  Ek-99⁺           + 6110 =>   L-46 + C-53
+  [ ]|   P-21⁺ +   C-53⁺ + 1491 => ⬇ Co-74
+  [ ]   Co-74⁺           +10000 => ? Lu-34 + V-41
+total: 31865
+
 
 2025-04-23 Apr.Wed 14:47:57
 
@@ -3731,6 +3812,9 @@ I want to query my wallet (or any wallet) to find the total list of otoms, molec
 
 2025-04-20 Apr.Sun 13:02:38 New discovery!  588 isotopes in BOHR now
  Dd-106⁻ + 9082 => Uq-49 + L-57
+
+try:
+[ ] L-57⁻ + Less than 4186.20 => ? Cl-30 + Ro-27   TOO MUCH MAKES: ClRo(Cl-30,Ro-27>)
 
 try:
 [f] Uq-49⁻ + 5000 => ? Eb-23 + Ro-26 <---NOPE makes Eb-22+Ro-27 using 3342.19 nuclear
