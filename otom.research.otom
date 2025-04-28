@@ -1,3 +1,394 @@
+2025-04-27 Apr.Sun 20:27:01 Checking my bohr isotopes to see if i have anything to use in the recipes I just came up with.
+\<\(N-81\|U-84\|Z-95\|Co-73\|Co-74\|Co-75\|Da-90\|Gy-63\|Gy-64\|Lx-76\|Lx-77\|Lx-78\|S-93\|Vl-84\|Vl-85\|Vl-86\|Vl-87\|Vl-88\|Vt-97\|Vt-113\|Vt-114\|Vt-115\|Vt-116\|Vt-117\|Vt-118\|Vt-119\|Z-94\|Z-108\|Z-109\|Z-110\|Z-111\|Aw-104\|Aw-109\|Aw-110\|Aw-111\|Aw-116\|Aw-117\|Aw-118\|Aw-119\|Aw-120\|Aw-121\|Aw-122\|Aw-123\|Aw-124\|Cv-96\|Cv-97\|Cv-98\|Cv-99\|Cv-113\|Cv-114\|Ek-99\|Ek-114\|Ek-115\|Ek-116\|Ek-117\|Ek-118\|Ek-119\|Ha-108\|Ha-113\|Ha-115\|Ji-102\|Ji-107\|Ji-115\|Ji-116\|Ji-117\|Ji-118\|Ji-119\|Ji-120\|Ji-121\|Kn-106\|Kn-112\|Se-83\|Vt-97\|Vt-113\|Vt-114\|Vt-115\|Vt-116\|Vt-117\|Vt-118\|Vt-119\)\>
+
+I have these 4
+*Gy-64      4
+*Vl-86      1
+*Vl-87      1
+*Z-95       2
+
+2025-04-27 Apr.Sun 20:16:23 Bunch of research. 
+
+Realizing that P-21 plus an isotope ratchets it down a neutron, so looked for places we haven't tried it yet:
+
+Ratcheting DOWN:
+
+|   P-21⁺ +   C-53⁺   +  1491 => ⬇ Co-74          || decay, nuclear   
+|   P-21⁺ +   C-54⁺   +  1556 => ⬇ Co-75          || decay, nuclear   
+|   P-21⁺ +   C-55⁺   +  1633 => ⬇ Co-76          || decay, nuclear   
+|   P-21⁺ +   C-56⁺   +  2104 =>   P-22 + C-55    || decay, nuclear   
+
+
+[ ] P-21⁺ +   N-81⁺   +  2500 =>?  P-22 + N-80
+|   P-21⁺ +   N-82⁺   +  2148 =>   P-22 + N-81    || decay, nuclear   
+|   P-21⁺ +   N-83⁺   +  2251 =>   P-22 + N-82    || decay, nuclear   
+|   P-21⁺ +   N-84⁺   +  2236 =>   P-22 + N-83    || decay, nuclear   
+|   P-21⁺ +   N-85⁺   +  2265 =>   P-22 + N-84    || decay, nuclear   
+
+|   P-21⁺ +   S-94⁺   +  2542 => ⬇ I-115          || decay, nuclear   
+|   P-21⁺ +   S-95⁺   +  2182 =>   P-22 + S-94    || decay, nuclear   
+|   P-21⁺ +   S-96⁺   +  2182 =>   P-22 + S-95    || decay, nuclear   
+|   P-21⁺ +   S-97⁺   +  2111 =>   P-22 + S-96    || decay, nuclear   
+|   P-21⁺ +   S-98⁺   +  2293 =>   P-22 + S-97    || decay, nuclear   
+|   P-21⁺ +   S-99⁺   +  2403 =>   P-22 + S-98    || decay, nuclear   
+|   P-21⁺ +  S-100⁺   +  2378 =>   P-22 + S-99    || decay, nuclear
+|   P-21⁺ +  S-101ª   +  2272 =>   P-22 + S-100   || decay, nuclear
+|   P-21⁺ +  S-102ª   +  2306 =>   P-22 + S-101   || decay, nuclear
+
+[ ] P-21⁺ +   U-84ª   +  2500 =>?  P-22 + U-83
+|   P-21⁺ +   U-85ª   +  2211 =>   P-22 + U-84    || decay, nuclear   
+|   P-21⁺ +   U-86ª   +  2226 =>   P-22 + U-85    || decay, nuclear   
+|   P-21⁺ +   U-87⁺   +  2285 =>   P-22 + U-86    || decay, nuclear   
+|   P-21⁺ +   U-88ª   +  2370 =>   P-22 + U-87    || decay, nuclear   
+
+|   P-21⁺ +   W-78ª   +  2105 => ⬇ S-99           || decay, nuclear    makes Z-99⁺  which immediately decays to S-99
+|   P-21⁺ +   W-79ª   +  2148 =>   P-22 + W-78    || decay, nuclear    makes Z-100ª which immediately decays to P-22 + W-78
+|   P-21⁺ +   W-80ª   +  2194 =>   P-22 + W-79    || decay, nuclear    makes Z-101ª which immediately decays to P-22 + W-79
+|   P-21⁺ +   W-81ª   +  2282 =>   P-22 + W-80    || decay, nuclear    makes Z-102ª which immediately decays to P-22 + W-80
+
+
+
+[ ] P-21⁺ +   Z-95⁺   +  2400 =>?  P-22 + Z-94
+|   P-21⁺ +   Z-96⁺   +  2073 =>   P-22 + Z-95    || decay, nuclear   
+|   P-21⁺ +   Z-97⁺   +  2029 =>   P-22 + Z-96    || decay, nuclear   
+|   P-21⁺ +   Z-98⁺   +  2166 =>   P-22 + Z-97    || decay, nuclear   
+|   P-21⁺ +   Z-99⁺   +  2253 =>   P-22 + Z-98    || decay, nuclear   
+|   P-21⁺ +  Z-100ª   +  2370 =>   P-22 + Z-99    || decay, nuclear
+|   P-21⁺ +  Z-101ª   +  2350 =>   P-22 + Z-100   || decay, nuclear
+|   P-21⁺ +  Z-102ª   +  2362 =>   P-22 + Z-101   || decay, nuclear
+
+[ ] P-21⁺ +  Co-73ª   +  2500 =>?⬇ Da-94
+[ ] P-21⁺ +  Co-74ª   +  2500 =>?⬇ Da-95
+[ ] P-21⁺ +  Co-75ª   +  2500 =>?⬇ Da-96
+|   P-21⁺ +  Co-76ª   +  1903 => ⬇ Da-97          || decay, nuclear
+|   P-21⁺ +  Co-79ª   +  2201 => ⬇ Da-100         || decay, nuclear
+|   P-21⁺ +  Co-80ª   +  2281 =>   P-22 + Co-79   || decay, nuclear
+|   P-21⁺ +  Co-80ª   +  2181 =>   P-22 + Co-79   || decay, nuclear   
+
+|   P-21⁺ +  Cv-97⁺   +  2191 => ⬇ Go-118         || decay, nuclear   
+|   P-21⁺ +  Cv-98ª   +  2077 =>   P-22 + Cv-97   || decay, nuclear   
+|   P-21⁺ +  Cv-99ª   +  2131 =>   P-22 + Cv-98   || decay, nuclear   
+
+[ ] P-21⁺ +  Da-90⁺   +  2400 => ? P-22 + Da-89
+|   P-21⁺ +  Da-91⁺   +  1955 =>   P-22 + Da-90   || decay, nuclear   
+|   P-21⁺ +  Da-92⁺   +  2034 =>   P-22 + Da-91   || decay, nuclear   
+|   P-21⁺ +  Da-93⁺   +  2163 =>   P-22 + Da-92   || decay, nuclear   
+|   P-21⁺ +  Da-94⁺   +  2086 =>   P-22 + Da-93   || decay, nuclear   
+|   P-21⁺ +  Da-95⁺   +  2153 =>   P-22 + Da-94   || decay, nuclear   
+|   P-21⁺ +  Da-96⁺   +  2203 =>   P-22 + Da-95   || decay, nuclear   
+|   P-21⁺ +  Da-97⁺   +  2253 =>   P-22 + Da-96   || decay, nuclear   
+|   P-21⁺ +  Da-98ª   +  2422 =>   P-22 + Da-97   || decay, nuclear   
+|   P-21⁺ +  Da-99ª   +  2460 =>   P-22 + Da-98   || decay, nuclear   
+
+
+
+
+[ ] P-21⁺ +  Gy-63⁺   +  2000 => ? P-22 + Gy-62
+[ ] P-21⁺ +  Gy-64⁺   +  2000 => ? P-22 + Gy-63
+|   P-21⁺ +  Gy-65⁺   +  1795 =>   P-22 + Gy-64   || decay, nuclear   
+|   P-21⁺ +  Gy-67ª   +  1869 =>   Vl-88          || nuclear          
+
+[ ] P-21⁺ +  Lx-76⁺   +  2125 =>?⬇ Z-97
+[ ] P-21⁺ +  Lx-77⁺   +  2125 =>?⬇ Z-98
+[ ] P-21⁺ +  Lx-78⁺   +  2125 =>?⬇ Z-99
+|   P-21⁺ +  Lx-79⁺   +  2125 => ⬇ Z-100          || decay, nuclear   
+|   P-21⁺ +  Lx-80⁺   +  2076 =>   P-22 + Lx-79   || decay, nuclear   
+|   P-21⁺ +  Lx-81ª   +  2129 =>   P-22 + Lx-80   || decay, nuclear   
+|   P-21⁺ +  Lx-82ª   +  2165 =>   P-22 + Lx-81   || decay, nuclear   
+|   P-21⁺ +  Lx-83ª   +  2204 =>   P-22 + Lx-82   || decay, nuclear   
+
+|   P-21⁺ +  Nm-87⁺   +  1972 => ⬇ Aw-108         || decay, nuclear   
+|   P-21⁺ +  Nm-88⁺   +  2110 =>   P-22 + Nm-87   || decay, nuclear   
+|   P-21⁺ +  Nm-89⁺   +  2167 =>   P-22 + Nm-88   || decay, nuclear   
+|   P-21⁺ +  Nm-90⁺   +  2225 =>   P-22 + Nm-89   || decay, nuclear   
+|   P-21⁺ +  Nm-91⁺   +  2282 =>   P-22 + Nm-90   || decay, nuclear   
+|   P-21⁺ +  Nm-92⁺   +  2170 =>   P-22 + Nm-91   || decay, nuclear   
+
+
+|   P-21⁺ +  Ok-89⁺   +  1832 => ⬇ Ha-110         || decay, nuclear   
+|   P-21⁺ +  Ok-90⁺   +  1847 =>   P-22 + Ok-89   || decay, nuclear   
+|   P-21⁺ +  Ok-90⁺   +  2004 =>   P-22 + Ok-89   || decay, nuclear   
+|   P-21⁺ +  Ok-91⁺   +  1922 =>   P-22 + Ok-90   || decay, nuclear   
+|   P-21⁺ +  Ok-92⁺   +  1998 =>   P-22 + Ok-91   || decay, nuclear   
+|   P-21⁺ +  Ok-93⁺   +  2127 =>   P-22 + Ok-92   || decay, nuclear   
+|   P-21⁺ +  Ok-94⁺   +  2116 =>   P-22 + Ok-93   || decay, nuclear   
+|   P-21⁺ +  Ok-95ª   +  2160 =>   P-22 + Ok-94   || decay, nuclear   
+|   P-21⁺ +  Ok-96⁺   +  2206 =>   P-22 + Ok-95   || decay, nuclear   
+|   P-21⁺ +  Ok-97ª   +  2308 =>   P-22 + Ok-96   || decay, nuclear   
+
+
+
+[ ] P-21⁺ +   S-93⁺   + 2542 =>?⬇ I-114           | decay, nuclear
+|   P-21⁺ +   S-94⁺   + 2542 => ⬇ I-115           | decay, nuclear
+|   P-21⁺ +   S-95⁺   + 2182 =>   P-22 + S-94     | decay, nuclear
+|   P-21⁺ +   S-96⁺   + 2182 =>   P-22 + S-95     | decay, nuclear
+|   P-21⁺ +   S-97⁺   + 2111 =>   P-22 + S-96     | decay, nuclear
+|   P-21⁺ +   S-98⁺   + 2293 =>   P-22 + S-97     | decay, nuclear
+|   P-21⁺ +   S-99⁺   + 2403 =>   P-22 + S-98     | decay, nuclear
+|   P-21⁺ +  S-100⁺   + 2378 =>   P-22 + S-99    || decay, nuclear   
+|   P-21⁺ +  S-101ª   + 2272 =>   P-22 + S-100   || decay, nuclear   
+|   P-21⁺ +  S-102ª   + 2306 =>   P-22 + S-101   || decay, nuclear   
+
+
+|   P-21⁺ +  Se-84⁺   +  2097 => ⬇ Ji-105         || decay, nuclear   
+|   P-21⁺ +  Se-85⁺   +  1927 =>   P-22 + Se-84   || decay, nuclear   
+|   P-21⁺ +  Se-86⁺   +  1996 =>   P-22 + Se-85   || decay, nuclear   
+|   P-21⁺ +  Se-88⁺   +  2261 =>   P-22 + Se-87   || decay, nuclear   
+|   P-21⁺ +  Se-89⁺   +  2313 =>   P-22 + Se-88   || decay, nuclear   
+|   P-21⁺ +  Se-90∙   +  3197 =>   P-22 + Se-89   || decay, nuclear   
+|   P-21⁺ +  Se-99∙   +  3088 =>   P-22 + Se-98   || decay, nuclear   
+
+[ ] P-21⁺ +  Vl-84⁺   +  3300 => ? P-22 + Vl-83
+[ ] P-21⁺ +  Vl-85⁺   +  3300 => ? P-22 + Vl-84
+[ ] P-21⁺ +  Vl-86ª   +  3300 => ? P-22 + Vl-85
+[ ] P-21⁺ +  Vl-87⁺   +  3300 => ? P-22 + Vl-86
+[ ] P-21⁺ +  Vl-88⁺   +  3300 => ? P-22 + Vl-87
+|   P-21⁺ +  Vl-89∙   +  2986 =>   P-22 + Vl-88   || decay, nuclear   
+
+[ ] P-21⁺ +  Vt-97⁺   +  2200 =>?⬇ X-118
+|   P-21⁺ +  Vt-98⁺   +  1842 => ⬇ X-119          || decay, nuclear   
+|   P-21⁺ +  Vt-99⁺   +  1855 =>   P-22 + Vt-98   || decay, nuclear   
+|   P-21⁺ + Vt-100⁺   +  2060 =>   P-22 + Vt-99    | decay, nuclear
+|   P-21⁺ + Vt-101⁺   +  2161 =>   P-22 + Vt-100   | decay, nuclear
+|   P-21⁺ + Vt-102⁺   +  2294 =>   P-22 + Vt-101   | decay, nuclear
+|   P-21⁺ + Vt-103ª   +  2283 =>   P-22 + Vt-102   | decay, nuclear
+|   P-21⁺ + Vt-104ª   +  2306 =>   P-22 + Vt-103   | decay, nuclear
+[ ] P-21⁺ + Vt-113    +  3000 => ? P-22 + Vt-112
+[ ] P-21⁺ + Vt-114    +  3000 => ? P-22 + Vt-113
+[ ] P-21⁺ + Vt-115    +  3000 => ? P-22 + Vt-114
+[ ] P-21⁺ + Vt-116    +  3000 => ? P-22 + Vt-115
+[ ] P-21⁺ + Vt-117    +  3000 => ? P-22 + Vt-116
+[ ] P-21⁺ + Vt-118    +  3000 => ? P-22 + Vt-117
+[ ] P-21⁺ + Vt-119⁻   +  3000 => ? P-22 + Vt-118
+
+
+[ ] P-21⁺ +   Z-94    +  2099 =>?⬇ Jb-115
+|   P-21⁺ +   Z-95⁺   +  2099 =>?⬇ Jb-116         || decay, nuclear
+|   P-21⁺ +   Z-96⁺   +  2073 =>   P-22 + Z-95    || decay, nuclear
+|   P-21⁺ +   Z-97⁺   +  2029 =>   P-22 + Z-96    || decay, nuclear
+|   P-21⁺ +   Z-98⁺   +  2166 =>   P-22 + Z-97    || decay, nuclear
+|   P-21⁺ +   Z-99⁺   +  2253 =>   P-22 + Z-98    || decay, nuclear
+|   P-21⁺ +  Z-100ª   +  2370 =>   P-22 + Z-99    || decay, nuclear
+|   P-21⁺ +  Z-101ª   +  2350 =>   P-22 + Z-100   || decay, nuclear
+|   P-21⁺ +  Z-102ª   +  2362 =>   P-22 + Z-101   || decay, nuclear
+[ ] P-21⁺ +  Z-108ª   +  3000 => ? P-22 + Z-107
+[ ] P-21⁺ +  Z-109ª   +  3000 => ? P-22 + Z-108
+[ ] P-21⁺ +  Z-110ª   +  3000 => ? P-22 + Z-109
+[ ] P-21⁺ +  Z-111ª   +  3000 => ? P-22 + Z-110
+
+
+[ ] P-21⁺ + Aw-104⁺   +  2400 => ? P-22 + Aw-103
+|   P-21⁺ + Aw-105⁺   +  2137 =>   P-22 + Aw-104  || decay, nuclear   
+|   P-21⁺ + Aw-106ª   +  2140 =>   P-22 + Aw-105  || decay, nuclear   
+|   P-21⁺ + Aw-107ª   +  2280 =>   P-22 + Aw-106  || decay, nuclear   
+[ ] P-21⁺ + Aw-109    +  2280 => ? P-22 + Aw-108  || decay, nuclear   
+[ ] P-21⁺ + Aw-110    +  2280 => ? P-22 + Aw-109  || decay, nuclear   
+[ ] P-21⁺ + Aw-111ª   +  2280 => ? P-22 + Aw-110  || decay, nuclear   
+[ ] P-21⁺ + Aw-116    +  2280 => ? P-22 + Aw-115  || decay, nuclear   
+[ ] P-21⁺ + Aw-117    +  2280 => ? P-22 + Aw-116  || decay, nuclear   
+[ ] P-21⁺ + Aw-118    +  2280 => ? P-22 + Aw-117  || decay, nuclear   
+[ ] P-21⁺ + Aw-119    +  2280 => ? P-22 + Aw-118  || decay, nuclear   
+[ ] P-21⁺ + Aw-120    +  2280 => ? P-22 + Aw-119  || decay, nuclear   
+[ ] P-21⁺ + Aw-121    +  2280 => ? P-22 + Aw-120  || decay, nuclear   
+[ ] P-21⁺ + Aw-122    +  2280 => ? P-22 + Aw-121  || decay, nuclear   
+[ ] P-21⁺ + Aw-123    +  2280 => ? P-22 + Aw-122  || decay, nuclear   
+[ ] P-21⁺ + Aw-124ª   +  2280 => ? P-22 + Aw-123  || decay, nuclear   
+
+[ ] P-21⁺ + Cv-96     +  2500 => ? P-22 + Cv-95
+[ ] P-21⁺ + Cv-97⁺    +  2500 => ? P-22 + Cv-96
+[ ] P-21⁺ + Cv-98ª    +  2500 => ? P-22 + Cv-97⁺
+[ ] P-21⁺ + Cv-99ª    +  2500 => ? P-22 + Cv-98ª
+|   P-21⁺ + Cv-100⁺   +  2215 =>   P-22 + Cv-99ª  || decay, nuclear   
+|   P-21⁺ + Cv-101ª   +  2239 =>   P-22 + Cv-100⁺ || decay, nuclear   
+|   P-21⁺ + Cv-102ª   +  2324 =>   P-22 + Cv-101ª || decay, nuclear   
+|   P-21⁺ + Cv-103ª   +  2341 =>   P-22 + Cv-102ª || decay, nuclear   
+|   P-21⁺ + Cv-104ª   +  2373 =>   P-22 + Cv-103ª || decay, nuclear   
+|   P-21⁺ + Cv-105ª   +  2402 =>   P-22 + Cv-104ª || decay, nuclear   
+|   P-21⁺ + Cv-106ª   +  2435 =>   P-22 + Cv-105ª || decay, nuclear   
+[ ] P-21⁺ + Cv-113    +  2435 => ? P-22 + Cv-112
+[ ] P-21⁺ + Cv-114ª   +  2435 => ? P-22 + Cv-113
+
+[ ] P-21⁺ +  Ek-99⁺   +  2200 => ? P-22 + Ek-98
+|   P-21⁺ + Ek-100⁺   +  1784 =>   P-22 + Ek-99   || decay, nuclear   
+|   P-21⁺ + Ek-101⁺   +  1846 =>   P-22 + Ek-100  || decay, nuclear   
+|   P-21⁺ + Ek-102⁺   +  2010 =>   P-22 + Ek-101  || decay, nuclear   
+|   P-21⁺ + Ek-103⁺   +  2201 =>   P-22 + Ek-102  || decay, nuclear   
+|   P-21⁺ + Ek-104⁺   +  2195 =>   P-22 + Ek-103  || decay, nuclear   
+|   P-21⁺ + Ek-105ª   +  2173 =>   P-22 + Ek-104  || decay, nuclear   
+|   P-21⁺ + Ek-106ª   +  2315 =>   P-22 + Ek-105  || decay, nuclear   
+|   P-21⁺ + Ek-107ª   +  2599 =>   P-22 + Ek-106  || decay, nuclear   
+[ ] P-21⁺ + Ek-114    +  2599 =>?  P-22 + Ek-113
+[ ] P-21⁺ + Ek-115    +  2599 =>?  P-22 + Ek-114
+[ ] P-21⁺ + Ek-116    +  2599 =>?  P-22 + Ek-115
+[ ] P-21⁺ + Ek-117    +  2599 =>?  P-22 + Ek-116
+[ ] P-21⁺ + Ek-118    +  2599 =>?  P-22 + Ek-117
+[ ] P-21⁺ + Ek-119ª   +  2599 =>?  P-22 + Ek-118
+
+[ ] P-21⁺ + Ha-108⁺   +  2200 =>?  P-22 + Ha-107
+|   P-21⁺ + Ha-109⁺   +  2061 =>   P-22 + Ha-108  || decay, nuclear   
+[ ] P-21⁺ + Ha-113ª   +  2200 =>?  P-22 + Ha-112
+[ ] P-21⁺ + Ha-115ª   +  2200 =>?  P-22 + Ha-114
+
+[ ] P-21⁺ + Ji-102    +  2300 =>?⬇ Eh-123
+|   P-21⁺ + Ji-103⁺   +  2168 => ⬇ Eh-124         || decay, nuclear   
+|   P-21⁺ + Ji-104⁺   +  2193 =>   P-22 + Ji-103  || decay, nuclear   
+|   P-21⁺ + Ji-105⁺   +  2191 =>   P-22 + Ji-104  || decay, nuclear   
+[ ] P-21⁺ + Ji-107ª   +  2300 =>?  P-22 + Ji-106
+[ ] P-21⁺ + Ji-115    +  2300 =>?  P-22 + Ji-114
+[ ] P-21⁺ + Ji-116    +  2300 =>?  P-22 + Ji-115
+[ ] P-21⁺ + Ji-117    +  2300 =>?  P-22 + Ji-116
+[ ] P-21⁺ + Ji-118    +  2300 =>?  P-22 + Ji-117
+[ ] P-21⁺ + Ji-119    +  2300 =>?  P-22 + Ji-118
+[ ] P-21⁺ + Ji-120    +  2300 =>?  P-22 + Ji-119
+[ ] P-21⁺ + Ji-121ª   +  2300 =>?  P-22 + Ji-120
+
+[ ] P-21⁺ + Kn-106⁺   +  2074 =>?  P-22 + Kn-105
+|   P-21⁺ + Kn-107⁺   +  2074 =>   P-22 + Kn-106  || decay, nuclear   
+|   P-21⁺ + Kn-108⁺   +  2119 =>   P-22 + Kn-107  || decay, nuclear   
+|   P-21⁺ + Kn-109ª   +  2080 =>   P-22 + Kn-108  || decay, nuclear   
+|   P-21⁺ + Kn-110ª   +  2130 =>   P-22 + Kn-109  || decay, nuclear   
+[ ] P-21⁺ + Kn-112ª   +  2130 =>?  P-22 + Kn-111
+
+[ ] P-21⁺ +  Se-83    +  2200 =>?⬇ Ji-104
+|   P-21⁺ +  Se-84⁺   +  2097 => ⬇ Ji-105         || decay, nuclear
+|   P-21⁺ +  Se-85⁺   +  1927 =>   P-22 + Se-84   || decay, nuclear
+|   P-21⁺ +  Se-86⁺   +  1996 =>   P-22 + Se-85   || decay, nuclear
+|   P-21⁺ +  Se-88⁺   +  2261 =>   P-22 + Se-87   || decay, nuclear
+|   P-21⁺ +  Se-89⁺   +  2313 =>   P-22 + Se-88   || decay, nuclear
+|   P-21⁺ +  Se-90∙   +  3197 =>   P-22 + Se-89   || decay, nuclear
+|   P-21⁺ +  Se-99∙   +  3088 =>   P-22 + Se-98   || decay, nuclear
+|   P-21⁺ + Se-100∙   +  3052 =>   P-22 + Se-99   || decay, nuclear
+|   P-21⁺ + Se-101∙   +  3023 =>   P-22 + Se-100  || decay, nuclear
+
+[ ] P-21⁺ +  Vt-97    +  2000 =>?⬇ X-118
+|   P-21⁺ +  Vt-98⁺   +  1842 => ⬇ X-119          || decay, nuclear
+|   P-21⁺ +  Vt-99⁺   +  1855 =>   P-22 + Vt-98   || decay, nuclear
+|   P-21⁺ + Vt-100⁺   +  1960 =>   P-22 + Vt-99   || decay, nuclear
+|   P-21⁺ + Vt-101⁺   +  2061 =>   P-22 + Vt-100  || decay, nuclear
+|   P-21⁺ + Vt-102⁺   +  2194 =>   P-22 + Vt-101  || decay, nuclear
+|   P-21⁺ + Vt-103ª   +  2208 =>   P-22 + Vt-102  || decay, nuclear
+|   P-21⁺ + Vt-104ª   +  2306 =>   P-22 + Vt-103  || decay, nuclear
+[ ] P-21⁺ + Vt-113    +  2400 =>?  P-22 + Vt-112
+[ ] P-21⁺ + Vt-114    +  2400 =>?  P-22 + Vt-113
+[ ] P-21⁺ + Vt-115    +  2400 =>?  P-22 + Vt-114
+[ ] P-21⁺ + Vt-116    +  2400 =>?  P-22 + Vt-115
+[ ] P-21⁺ + Vt-117    +  2400 =>?  P-22 + Vt-116
+[ ] P-21⁺ + Vt-118    +  2400 =>?  P-22 + Vt-117
+[ ] P-21⁺ + Vt-119ª   +  2400 =>?  P-22 + Vt-118
+
+
+
+[ ] [ ] [ ] UP RATCHET BY P-23 NEEDS MORE INVESTIGATING!!!!:
+|   P-23∙ + Cv-110ª   +  3673 =>   P-22 + Cv-111  || decay, nuclear
+
+
+HMMMM IT SEEMS TO WORK
+[ ] ADD possible adjacent reactions for Ratcheting UP like it did for Ratcheting DONW
+|   P-23∙ +   N-85⁺    +  3089 =>   P-22 + N-86     || decay, nuclear               
+|   P-23∙ +   N-86⁺    +  3134 =>   P-22 + N-87     || decay, nuclear               
+|   P-23∙ +   N-87⁺    +  3244 =>   P-22 + N-88     || decay, nuclear               
+|   P-23∙ +   N-88⁺    +  3185 =>   P-22 + N-89     || decay, nuclear               
+|   P-23∙ +   N-89⁺    +  3191 =>   P-22 + N-90     || decay, nuclear               
+|   P-23∙ +   N-90⁺    +  3203 =>   P-22 + N-91     || decay, nuclear               
+|   P-23∙ +   N-91∙    +  4177 =>   P-22 + N-92     || decay, nuclear               
+|   P-23∙ +   N-92⁻    +  3192 =>   P-22 + N-93     || decay, nuclear               
+|   P-23∙ +   N-93⁻    +  3078 =>   P-22 + N-94     || decay, nuclear               
+|   P-23∙ +   N-94⁻    +  3060 =>   P-22 + N-95     || decay, nuclear               
+|   P-23∙ +   N-95⁻    +  3022 =>   P-22 + N-96     || decay, nuclear               
+|   P-23∙ +   N-96⁻    +  3086 => ⬆ Ek-119          || decay, nuclear               
+
+|   P-23∙ +   U-97⁻    +  3173 =>   P-22 + U-98     || decay, nuclear               
+|   P-23∙ +   U-98⁻    +  3132 => ⬆ Ji-121          || decay, nuclear               
+
+|   P-23∙ +   W-89⁻    +  3184 =>   P-22 + W-90     || decay, nuclear               
+|   P-23∙ +   W-90⁻    +  3074 =>   P-22 + W-91     || decay, nuclear               
+|   P-23∙ +   W-91⁻    +  3034 => ⬆ Cv-114          || decay, nuclear               
+
+|   P-23∙ +  Ek-99⁺    +  2855 =>   P-22 + Ek-100   || decay, nuclear               
+
+|   P-23∙ +  Lx-92∙    +  3962 =>   P-22 + Lx-93    || decay, nuclear               
+|   P-23∙ +  Lx-93⁻    +  3080 =>   P-22 + Lx-94    || decay, nuclear               
+|   P-23∙ +  Lx-94⁻    +  3032 =>   P-22 + Lx-95    || decay, nuclear               
+|   P-23∙ +  Lx-95⁻    +  2995 =>   P-22 + Lx-96    || decay, nuclear               
+|   P-23∙ +  Lx-96⁻    +  3082 => ⬆ Vt-119          || decay, nuclear               
+
+|   P-23∙ +  Nm-98ª    +  3235 =>   P-22 + Nm-99    || decay, nuclear               
+|   P-23∙ +  Nm-99ª    +  3248 =>   P-22 + Nm-100   || decay, nuclear               
+
+|   P-23∙ +  S-102ª    +  3337 =>   P-22 + S-103    || decay, nuclear               
+
+|   P-23∙ +  Se-89⁺    +  3257 =>   P-22 + Se-90    || decay, nuclear               
+
+|   P-23∙ +  Vl-99⁻    +  3193 =>   P-22 + Vl-100   || decay, nuclear               
+
+|   P-23∙ +  Vt-98⁺    +  4956 =>   P-22 + Vt-99    || decay, nuclear               
+
+|   P-23∙ + Cv-110ª    +  3673 =>   P-22 + Cv-111   || decay, nuclear               
+
+|   P-23∙ + Da-103∙    +  4914 =>   P-22 + Da-104   || decay, nuclear               
+
+|   P-23∙ + Dd-105⁻    +  3175 =>   P-22 + Dd-106   || decay, nuclear               
+
+|   P-23∙ + Nm-104⁻    +  3292 =>   P-22 + Nm-105   || decay, nuclear               
+
+|   P-23∙ + Ok-106⁻    +  3407 =>   P-22 + Ok-107   || decay, nuclear               
+
+|   P-23∙ + Vl-100⁻    +  3070 =>   P-22 + Vl-101   || decay, nuclear               
+|   P-23∙ + Vl-101⁻    +  3023 => ⬆ Aw-124          || decay, nuclear               
+
+|   P-23∙ + Vt-104ª    +  3897 =>   P-22 + Vt-105   || decay, nuclear               
+|   P-23∙ + Vt-105ª    +  3700 =>   P-22 + Vt-106   || decay, nuclear               
+|   P-23∙ + Vt-106ª    +  3239 =>   P-22 + Vt-107   || decay, nuclear               
+
+
+
+
+
+2025-04-27 Apr.Sun 18:47:04
+
+try:
+[ ] U-95ª + 0 => ? P-22 + F-73
+
+2025-04-27 Apr.Sun 17:33:27 New Discovery so now 605 isotopes
+
+  Lx-77⁺ +    0 => W-77
+
+2025-04-27 Apr.Sun 17:23:36 Will anything ladder down like this? 
+   |  Cl-25⁺ +  S-102ª + 2568 =>   P-22 + Cv-105
+   |   P-21⁺ + Cv-105ª + 2272 =>   P-22 + Cv-104
+   |   P-21⁺ + Cv-104ª + 2241 =>   P-22 + Cv-103
+   |   P-21⁺ + Cv-103ª + 2341 =>   P-22 + Cv-102 
+   |   P-21⁺ + Cv-102ª + 2324 =>   P-22 + Cv-101 
+   |   P-21⁺ + Cv-101ª + 2339 =>   P-22 + Cv-100 
+   |   P-21⁺ + Cv-100⁺ + 2215 =>   P-22 + Cv-99  
+   |   P-21⁺ +  Cv-99ª + 2131 =>   P-22 + Cv-98
+   |   P-21⁺ +  Cv-98ª + 2077 =>   P-22 + Cv-97
+   |   P-21⁺ +  Cv-97⁺ + 2191 => ⬇ Go-118      
+
+|   109764 |bohr    |   P-21⁺ + Ek-100⁺                               +     1800 =>   P-22 + Ek-99                                                                     +      16.09 |    1783.91 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x546ad5af06faf2c83e358436e2cf477b87e2a616f2d58993b5d1831bef3a1ae1 | 0xd7d71a22b9d9ac1792a169c543491017d74b0273d45eac5245f81e7716daf567 |
+
+
+
+What about D-75ª
+ [>] P-21⁺ + D-75ª + 5000 => ? P-22 + D-74
+  [ ]|  Mt-32⁺ +  S-102ª + 2824 =>   P-22 + Aw-112
+  [ ]|   Sr-2∙ + Aw-112ª + 1249 =>   P-22 + Nm-92
+  [ ]|  Ro-22⁺ +  Nm-92⁺ + 2105 =>   P-22 + Dd-92
+  [ ]|  Ro-22⁺ +  Dd-92⁺ + 2094 =>   P-22 + Ok-92
+  [ ]|  Eb-19⁺ +  Ok-92⁺ + 1877 =>   P-22 + Dd-89
+  [ ]|  Ro-22⁺ +  Dd-89⁺ + 1845 =>   P-22 + Ok-89
+  [ ]|  Mt-32⁺ +  Ok-89⁺ + 2235 =>   P-22 + Ek-99
+  [ ]|  Ek-99⁺           +    0 => ⬇ Vt-99
+  [ ]|  Xj-17⁺ +  Vt-99⁺ + 1628 => ⬇ Jb-116
+  [ ]|   Sr-1∙ + Jb-116ª + 1020 =>   P-22 + Z-95
+  [ ]|  Ro-22⁺ +   Z-95⁺ + 1761 => ⬇ Go-117
+  [ ]  Go-117ª           + 7682 =>   C-54 + Gy-63
+  [ ]    P-21⁺ +   C-54⁺ + 1534 => ⬇ Co-75
+  [ ]   Co-75⁺           +    0 =>   D-75
+  [ ]    P-21⁺ +   D-75ª + 5000 => ? P-22 + D-74
+
+
+
 2025-04-27 Apr.Sun 16:38:53 New Discovery! Now 604 isotopes in Universe BOHR
 
  Co-75⁺ +    0 => D-75
@@ -3535,16 +3926,16 @@ try:
 total: 15960
 
 try:
-   [ ]|  Mt-32⁺ +  S-102ª + 2824 =>   P-22 + Aw-112 
-   [ ]|   Sr-2∙ + Aw-112ª + 1249 =>   P-22 + Nm-92  
-   [ ]|  Ro-22⁺ +  Nm-92⁺ + 2106 =>   P-22 + Dd-92  
-   [ ]|  Ro-22⁺ +  Dd-92⁺ + 2094 =>   P-22 + Ok-92  
-   [ ]|  Eb-19⁺ +  Ok-92⁺ + 1877 =>   P-22 + Dd-89  
-   [ ]|  Ro-22⁺ +  Dd-89⁺ + 1877 =>   P-22 + Ok-89 
-   [ ]|  Mt-32⁺ +  Ok-89⁺ + 2237 =>   P-22 + Ek-99  
-   [ ]|  Ek-99⁺           +    0 => ⬇ Vt-99
-   [ ]|  Xj-17⁺ +  Vt-99⁺ + 1696 => ⬇ Jb-116        
-   [ ]   Jb-116ª          +10000 =>   ?
+   [-]|  Mt-32⁺ +  S-102ª + 2824 =>   P-22 + Aw-112 
+   [-]|   Sr-2∙ + Aw-112ª + 1249 =>   P-22 + Nm-92  
+   [-]|  Ro-22⁺ +  Nm-92⁺ + 2106 =>   P-22 + Dd-92  
+   [-]|  Ro-22⁺ +  Dd-92⁺ + 2094 =>   P-22 + Ok-92  
+   [-]|  Eb-19⁺ +  Ok-92⁺ + 1877 =>   P-22 + Dd-89  
+   [-]|  Ro-22⁺ +  Dd-89⁺ + 1877 =>   P-22 + Ok-89 
+   [-]|  Mt-32⁺ +  Ok-89⁺ + 2237 =>   P-22 + Ek-99  
+   [-]|  Ek-99⁺           +    0 => ⬇ Vt-99
+   [-]|  Xj-17⁺ +  Vt-99⁺ + 1696 => ⬇ Jb-116        
+   [-]   Jb-116ª          +10000 =>   ?      <------ makes Qe-53 + Gy-63 using 8108.55 nuclear
 total: 25960
 
 try:
@@ -4204,17 +4595,19 @@ total: 50517
    [ ]   Lx-76⁺           +    0 => ? W-76 
 total: 22011
 
-[ ]  Lx-77⁺  + 0      => ? W-77 
-   [ ]|  Cl-25⁺ +  S-102ª + 2674 =>   P-22 + Cv-105 
-   [ ]|   P-21⁺ + Cv-105ª + 2402 =>   P-22 + Cv-104 
-   [ ]|   P-21⁺ + Cv-104ª + 2373 =>   P-22 + Cv-103 
-   [ ]|   P-21⁺ + Cv-103ª + 2341 =>   P-22 + Cv-102 
-   [ ]|   P-21⁺ + Cv-102ª + 2324 =>   P-22 + Cv-101 
-   [ ]|   P-21⁺ + Cv-101ª + 2339 =>   P-22 + Cv-100 
-   [ ]|   P-21⁺ + Cv-100⁺ + 2215 =>   P-22 + Cv-99  
-   [ ]|  Cv-99ª           +    0 =>   P-22 + Lx-77  
-   [ ]   Lx-77⁺           +    0 => ? W-77 
+[>]  Lx-77⁺  + 0      => ? W-77 
+   [r]|  Cl-25⁺ +  S-102ª + 2574 =>   P-22 + Cv-105  used 2567.25 nuclear+decay
+   [r]|   P-21⁺ + Cv-105ª + 2402 =>   P-22 + Cv-104  used 2271.98 nuclear+decay
+   [r]|   P-21⁺ + Cv-104ª + 2373 =>   P-22 + Cv-103  used 2240.69 nuclear+decay
+   [r]|   P-21⁺ + Cv-103ª + 2341 =>   P-22 + Cv-102  used 2207.49 nuclear+decay
+   [r]|   P-21⁺ + Cv-102ª + 2324 =>   P-22 + Cv-101  used 2189.45 nuclear+decay
+   [r]|   P-21⁺ + Cv-101ª + 2339 =>   P-22 + Cv-100  used 2205.75 nuclear+decay
+   [r]|   P-21⁺ + Cv-100⁺ + 2215 =>   P-22 + Cv-99   used 2074.88 nuclear+decay
+   [r]|  Cv-99ª           +    0 =>   P-22 + Lx-77  
+   [r]   Lx-77⁺           +    0 => ? W-77  <----SUCCESS!
 total: 16668
+
+Will anything ladder down like that? What about 
 
 [ ]  Lx-76⁺  + 5000   => ? Dx-35 + Uq-41
    [ ]|  Mt-32⁺ +  S-102ª + 2824 =>   P-22 + Aw-112 
