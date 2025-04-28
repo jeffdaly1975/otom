@@ -1,3 +1,47 @@
+2025-04-28 Apr.Mon 13:12:58 I see Ek-121 was discovered Now 607 isotopes in BOHR
+
+
+2025-04-28 Apr.Mon 11:58:46 Analysed the reaction log to see the cheapest ways to make L-* so I can try to find the split point where it fissions into 2 isotopes instead of a molecule
+|   As-5⁺ +  Uq-47⁻   +[ 856.57 -  5000] =>   L-52   | nuclear                      |
+|  Xj-17⁺ +  Mt-32⁺   +[1044.38 -  5000] => ⬇ L-49   | decay, nuclear               |
+|   As-6∙ +  Uq-47⁻   +[1110.04 -  5000] =>   L-53   | nuclear                      |
+|   T-15⁺ +  Mt-34⁺   +[1223.38 -  5000] =>   L-49   | nuclear                      |
+|  Ro-24ª +  Cl-26ª   +[1232.40 -  5000] =>   L-50   | nuclear                      |
+|  Ro-22⁺ +  Yu-27⁺   +[1245.10 - 20000] => ⬇ L-49   | decay, nuclear               |
+|   Sr-1∙ +  Wy-50∙   +[1280.73 -  5000] =>   L-51   | nuclear                      |
+|  Eb-19⁺ +  Nd-30ª   +[1297.37 -  5000] =>   L-49   | nuclear                      |
+|   As-7∙ +  Uq-47⁻   +[1307.58 -  5000] =>   L-54   | nuclear                      |
+|   T-17∙ +  Mt-32⁺   +[1313.75 -  5000] =>   L-49   | nuclear                      |
+|  Ro-23ª +  Cl-26ª   +[1332.55 -  5000] =>   L-49   | nuclear                      |
+|   Sr-2∙ +  Wy-50∙   +[1355.73 -  5000] =>   L-52   | nuclear                      |
+|  Ro-24ª +  Cl-25⁺   +[1361.29 - 50000] =>   L-49   | nuclear                      |
+|  Ro-22⁺ +  Cl-27∙   +[1409.42 -  5000] =>   L-49   | nuclear                      |
+|   Sr-3∙ +  Wy-50∙   +[1428.27 -  5000] =>   L-53   | nuclear                      |
+|   Ei-4∙ +  Pb-48∙   +[1451.35 -  5000] =>   L-52   | nuclear                      |
+|   Ei-5∙ +  Pb-48∙   +[1517.20 -  5000] =>   L-53   | nuclear                      |
+|   P-21⁺ +  Yu-29∙   +[1518.53 - 20000] =>   L-50   | nuclear                      |
+|   T-15⁺ +  Mt-35∙   +[1554.87 -  5000] =>   L-50   | nuclear                      |
+|  Xj-18∙ +   K-31⁺   +[1561.44 -  5000] =>   L-49   | nuclear                      |
+|   T-16∙ +  Mt-34⁺   +[1626.43 -  5000] =>   L-50   | nuclear                      |
+|  Xj-17⁺ +   K-34∙   +[1637.99 -  5000] =>   L-51   | nuclear                      |
+|   T-17∙ +  Mt-34⁺   +[1638.10 -  5000] =>   L-51   | nuclear                      |
+|   P-22⁺ +  Yu-28ª   +[1647.97 - 10000] =>   L-50   | nuclear                      |
+|   P-22⁺ +  Yu-31⁻   +[1670.85 - 10000] =>   L-53   | nuclear                      |
+|   P-23∙ +  Yu-27⁺   +[1696.27 - 20000] =>   L-50   | nuclear                      |
+|  Ro-23ª +  Cl-27∙   +[1701.11 -  5000] =>   L-50   | nuclear                      |
+|  Eb-20∙ +  Nd-30ª   +[1710.09 -  5000] =>   L-50   | nuclear                      |
+|  Eb-21∙ +  Nd-30ª   +[1731.25 -  5000] =>   L-51   | nuclear                      |
+|  Eb-22∙ +  Nd-30ª   +[1744.10 -  5000] =>   L-52   | nuclear                      |
+|  Ro-24ª +  Cl-27∙   +[1807.33 -  5000] =>   L-51   | nuclear                      |
+|   P-22⁺ +  Yu-30∙   +[2037.26 - 10000] =>   L-52   | nuclear                      |
+|   T-16∙ +  Mt-35∙   +[2095.18 -  5000] =>   L-51   | nuclear                      |
+|  Xj-18∙ +   K-34∙   +[2110.21 -  5000] =>   L-52   | nuclear                      |
+|   T-17∙ +  Mt-35∙   +[2110.82 -  5000] =>   L-52   | nuclear                      |
+|   P-23∙ +  Yu-29∙   +[2271.62 - 20000] =>   L-52   | nuclear                      |
+
+
+
+
 2025-04-28 Apr.Mon 10:43:32 I see 3 undiscovered isotopes in molecules: Nd-27, W-76, Cl-30
 
 2025-04-27 Apr.Sun 22:30:21 New Discovery! so now 606 isotopes
