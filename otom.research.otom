@@ -1,3 +1,11 @@
+2025-04-27 Apr.Sun 22:30:21 New Discovery! so now 606 isotopes
+
+ P-21⁺ + U-84ª + 2085 => P-22 + U-83 nuclear+decay
+
+try:
+[ ] U-83⁺ +10000 => ? Gd-38 + Pb-45
+
+
 2025-04-27 Apr.Sun 20:27:01 Checking my bohr isotopes to see if i have anything to use in the recipes I just came up with.
 \<\(N-81\|U-84\|Z-95\|Co-73\|Co-74\|Co-75\|Da-90\|Gy-63\|Gy-64\|Lx-76\|Lx-77\|Lx-78\|S-93\|Vl-84\|Vl-85\|Vl-86\|Vl-87\|Vl-88\|Vt-97\|Vt-113\|Vt-114\|Vt-115\|Vt-116\|Vt-117\|Vt-118\|Vt-119\|Z-94\|Z-108\|Z-109\|Z-110\|Z-111\|Aw-104\|Aw-109\|Aw-110\|Aw-111\|Aw-116\|Aw-117\|Aw-118\|Aw-119\|Aw-120\|Aw-121\|Aw-122\|Aw-123\|Aw-124\|Cv-96\|Cv-97\|Cv-98\|Cv-99\|Cv-113\|Cv-114\|Ek-99\|Ek-114\|Ek-115\|Ek-116\|Ek-117\|Ek-118\|Ek-119\|Ha-108\|Ha-113\|Ha-115\|Ji-102\|Ji-107\|Ji-115\|Ji-116\|Ji-117\|Ji-118\|Ji-119\|Ji-120\|Ji-121\|Kn-106\|Kn-112\|Se-83\|Vt-97\|Vt-113\|Vt-114\|Vt-115\|Vt-116\|Vt-117\|Vt-118\|Vt-119\)\>
 
@@ -19,8 +27,8 @@ Ratcheting DOWN:
 |   P-21⁺ +   C-56⁺   +  2104 =>   P-22 + C-55    || decay, nuclear   
 
 
-[ ] P-21⁺ +   N-81⁺   +  2500 =>?  P-22 + N-80
-|   P-21⁺ +   N-82⁺   +  2148 =>   P-22 + N-81    || decay, nuclear   
+[f] P-21⁺ +   N-81⁺   +  2100 =>?  P-22 + N-80 <----NOPE makes Cv-102 using 1941.51 nuclear+decay
+|   P-21⁺ +   N-82⁺   +  2148 =>   P-22 + N-81    || decay, nuclear    used 2004.46 
 |   P-21⁺ +   N-83⁺   +  2251 =>   P-22 + N-82    || decay, nuclear   
 |   P-21⁺ +   N-84⁺   +  2236 =>   P-22 + N-83    || decay, nuclear   
 |   P-21⁺ +   N-85⁺   +  2265 =>   P-22 + N-84    || decay, nuclear   
@@ -35,7 +43,11 @@ Ratcheting DOWN:
 |   P-21⁺ +  S-101ª   +  2272 =>   P-22 + S-100   || decay, nuclear
 |   P-21⁺ +  S-102ª   +  2306 =>   P-22 + S-101   || decay, nuclear
 
-[ ] P-21⁺ +   U-84ª   +  2500 =>?  P-22 + U-83
+[ ] P-21⁺ +   U-81    +  2300 =>?  P-22 + U-80
+[ ] P-21⁺ +   U-82    +  2300 =>?  P-22 + U-81
+[ ] P-21⁺ +   U-82    +  2300 =>?  P-22 + U-81
+[ ] P-21⁺ +   U-83⁺   +  2300 =>?  P-22 + U-82
+[r] P-21⁺ +   U-84ª   +  2300 =>?  P-22 + U-83 <----SUCCESS! makes U-83 using 2084.63 nuclear+decay
 |   P-21⁺ +   U-85ª   +  2211 =>   P-22 + U-84    || decay, nuclear   
 |   P-21⁺ +   U-86ª   +  2226 =>   P-22 + U-85    || decay, nuclear   
 |   P-21⁺ +   U-87⁺   +  2285 =>   P-22 + U-86    || decay, nuclear   
@@ -47,8 +59,7 @@ Ratcheting DOWN:
 |   P-21⁺ +   W-81ª   +  2282 =>   P-22 + W-80    || decay, nuclear    makes Z-102ª which immediately decays to P-22 + W-80
 
 
-
-[ ] P-21⁺ +   Z-95⁺   +  2400 =>?  P-22 + Z-94
+|   P-21⁺ +   Z-95⁺   +  2099 => ⬇ Jb-116         || decay, nuclear
 |   P-21⁺ +   Z-96⁺   +  2073 =>   P-22 + Z-95    || decay, nuclear   
 |   P-21⁺ +   Z-97⁺   +  2029 =>   P-22 + Z-96    || decay, nuclear   
 |   P-21⁺ +   Z-98⁺   +  2166 =>   P-22 + Z-97    || decay, nuclear   
@@ -83,11 +94,13 @@ Ratcheting DOWN:
 
 
 
-[ ] P-21⁺ +  Gy-63⁺   +  2000 => ? P-22 + Gy-62
+[ ] P-21⁺ +  Gy-62    +  2000 => ? P-22 + Gy-61
+[f] P-21⁺ +  Gy-63⁺   +  2000 => ? P-22 + Gy-62 <----makes U-84 using 1714.87 nuclear+decay
 [ ] P-21⁺ +  Gy-64⁺   +  2000 => ? P-22 + Gy-63
 |   P-21⁺ +  Gy-65⁺   +  1795 =>   P-22 + Gy-64   || decay, nuclear   
 |   P-21⁺ +  Gy-67ª   +  1869 =>   Vl-88          || nuclear          
 
+[ ] P-21⁺ +  Lx-75    +  2125 =>?⬇ Z-96
 [ ] P-21⁺ +  Lx-76⁺   +  2125 =>?⬇ Z-97
 [ ] P-21⁺ +  Lx-77⁺   +  2125 =>?⬇ Z-98
 [ ] P-21⁺ +  Lx-78⁺   +  2125 =>?⬇ Z-99
@@ -97,6 +110,7 @@ Ratcheting DOWN:
 |   P-21⁺ +  Lx-82ª   +  2165 =>   P-22 + Lx-81   || decay, nuclear   
 |   P-21⁺ +  Lx-83ª   +  2204 =>   P-22 + Lx-82   || decay, nuclear   
 
+[ ] P-21⁺ +  Nm-86    +  2200 =>?⬇ Aw-107
 |   P-21⁺ +  Nm-87⁺   +  1972 => ⬇ Aw-108         || decay, nuclear   
 |   P-21⁺ +  Nm-88⁺   +  2110 =>   P-22 + Nm-87   || decay, nuclear   
 |   P-21⁺ +  Nm-89⁺   +  2167 =>   P-22 + Nm-88   || decay, nuclear   
@@ -105,6 +119,7 @@ Ratcheting DOWN:
 |   P-21⁺ +  Nm-92⁺   +  2170 =>   P-22 + Nm-91   || decay, nuclear   
 
 
+[ ] P-21⁺ +  Ok-88    +  2000 =>?⬇ Ha-109
 |   P-21⁺ +  Ok-89⁺   +  1832 => ⬇ Ha-110         || decay, nuclear   
 |   P-21⁺ +  Ok-90⁺   +  1847 =>   P-22 + Ok-89   || decay, nuclear   
 |   P-21⁺ +  Ok-90⁺   +  2004 =>   P-22 + Ok-89   || decay, nuclear   
@@ -130,6 +145,7 @@ Ratcheting DOWN:
 |   P-21⁺ +  S-102ª   + 2306 =>   P-22 + S-101   || decay, nuclear   
 
 
+[ ] P-21⁺ +  Se-83    +  2200 =>?⬇ Ji-104
 |   P-21⁺ +  Se-84⁺   +  2097 => ⬇ Ji-105         || decay, nuclear   
 |   P-21⁺ +  Se-85⁺   +  1927 =>   P-22 + Se-84   || decay, nuclear   
 |   P-21⁺ +  Se-86⁺   +  1996 =>   P-22 + Se-85   || decay, nuclear   
@@ -138,7 +154,8 @@ Ratcheting DOWN:
 |   P-21⁺ +  Se-90∙   +  3197 =>   P-22 + Se-89   || decay, nuclear   
 |   P-21⁺ +  Se-99∙   +  3088 =>   P-22 + Se-98   || decay, nuclear   
 
-[ ] P-21⁺ +  Vl-84⁺   +  3300 => ? P-22 + Vl-83
+[ ] P-21⁺ +  Vl-83    +  3300 => ? P-22 + Vl-82
+[f] P-21⁺ +  Vl-84⁺   +  3300 => ? P-22 + Vl-83 <---makes Ek-105 using 1985.05 nuclear+decay <---it decayed from 105 55 Ji aka Ji-105
 [ ] P-21⁺ +  Vl-85⁺   +  3300 => ? P-22 + Vl-84
 [ ] P-21⁺ +  Vl-86ª   +  3300 => ? P-22 + Vl-85
 [ ] P-21⁺ +  Vl-87⁺   +  3300 => ? P-22 + Vl-86
@@ -177,6 +194,7 @@ Ratcheting DOWN:
 [ ] P-21⁺ +  Z-111ª   +  3000 => ? P-22 + Z-110
 
 
+[ ] P-21⁺ + Aw-103    +  2400 => ? P-22 + Aw-102
 [ ] P-21⁺ + Aw-104⁺   +  2400 => ? P-22 + Aw-103
 |   P-21⁺ + Aw-105⁺   +  2137 =>   P-22 + Aw-104  || decay, nuclear   
 |   P-21⁺ + Aw-106ª   +  2140 =>   P-22 + Aw-105  || decay, nuclear   
@@ -208,6 +226,7 @@ Ratcheting DOWN:
 [ ] P-21⁺ + Cv-113    +  2435 => ? P-22 + Cv-112
 [ ] P-21⁺ + Cv-114ª   +  2435 => ? P-22 + Cv-113
 
+[ ] P-21⁺ +  Ek-98    +  2200 => ? P-22 + Ek-97
 [ ] P-21⁺ +  Ek-99⁺   +  2200 => ? P-22 + Ek-98
 |   P-21⁺ + Ek-100⁺   +  1784 =>   P-22 + Ek-99   || decay, nuclear   
 |   P-21⁺ + Ek-101⁺   +  1846 =>   P-22 + Ek-100  || decay, nuclear   
@@ -224,6 +243,7 @@ Ratcheting DOWN:
 [ ] P-21⁺ + Ek-118    +  2599 =>?  P-22 + Ek-117
 [ ] P-21⁺ + Ek-119ª   +  2599 =>?  P-22 + Ek-118
 
+[ ] P-21⁺ + Ha-107    +  2200 =>?  P-22 + Ha-106
 [ ] P-21⁺ + Ha-108⁺   +  2200 =>?  P-22 + Ha-107
 |   P-21⁺ + Ha-109⁺   +  2061 =>   P-22 + Ha-108  || decay, nuclear   
 [ ] P-21⁺ + Ha-113ª   +  2200 =>?  P-22 + Ha-112
@@ -242,6 +262,7 @@ Ratcheting DOWN:
 [ ] P-21⁺ + Ji-120    +  2300 =>?  P-22 + Ji-119
 [ ] P-21⁺ + Ji-121ª   +  2300 =>?  P-22 + Ji-120
 
+[ ] P-21⁺ + Kn-105    +  2074 =>?  P-22 + Kn-104
 [ ] P-21⁺ + Kn-106⁺   +  2074 =>?  P-22 + Kn-105
 |   P-21⁺ + Kn-107⁺   +  2074 =>   P-22 + Kn-106  || decay, nuclear   
 |   P-21⁺ + Kn-108⁺   +  2119 =>   P-22 + Kn-107  || decay, nuclear   
@@ -305,6 +326,8 @@ HMMMM IT SEEMS TO WORK
 |   P-23∙ +   W-91⁻    +  3034 => ⬆ Cv-114          || decay, nuclear               
 
 |   P-23∙ +  Ek-99⁺    +  2855 =>   P-22 + Ek-100   || decay, nuclear               
+[f] P-23∙ + Ek-107ª    +  3000 =>?  P-22 + Ek-106  <----NOPE it makes P-22 + P-23 + U-85 using 150.0 decay so the Ek-107 just decayed.
+[f] P-23∙ + Ek-113ª    +  3000 =>?  P-22 + Ek-114  <----NOPE it makes P-22 + P-23 + U-91 using 200.0 decay so the Ek-113 just decayed.
 
 |   P-23∙ +  Lx-92∙    +  3962 =>   P-22 + Lx-93    || decay, nuclear               
 |   P-23∙ +  Lx-93⁻    +  3080 =>   P-22 + Lx-94    || decay, nuclear               
