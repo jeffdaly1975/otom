@@ -1,3 +1,5 @@
+2025-04-29 Apr.Tue 02:18:44 Hmmm. does the P-21/P-23 pattern of ratcheting down/up some isotopes 
+
 2025-04-29 Apr.Tue 00:54:02 Oh man I love seeing this kind of research and analysis. adbFreedom has some reaction chains that make specific isotopes and sees what happens with cheaper shorter routes. I think.
 
 on the Shape discord channel for otom discoveries, adbFreedom posted 2025-04-28 23:37
@@ -111,6 +113,7 @@ Ratcheting DOWN:
 |   P-21⁺ +   C-55⁺   +  1633 => ⬇ Co-76          || decay, nuclear   
 |   P-21⁺ +   C-56⁺   +  2104 =>   P-22 + C-55    || decay, nuclear   
 
+|   P-21⁺ +   D-74⁺   +  1931 => ⬇ Ok-95          || decay, nuclear
 
 [f] P-21⁺ +   N-81⁺   +  2100 =>?  P-22 + N-80 <----NOPE makes Cv-102 using 1941.51 nuclear+decay
 |   P-21⁺ +   N-82⁺   +  2148 =>   P-22 + N-81    || decay, nuclear    used 2004.46 
@@ -413,6 +416,7 @@ HMMMM IT SEEMS TO WORK
 |   P-23∙ +  Ek-99⁺    +  2855 =>   P-22 + Ek-100   || decay, nuclear               
 [f] P-23∙ + Ek-107ª    +  3000 =>?  P-22 + Ek-106  <----NOPE it makes P-22 + P-23 + U-85 using 150.0 decay so the Ek-107 just decayed.
 [f] P-23∙ + Ek-113ª    +  3000 =>?  P-22 + Ek-114  <----NOPE it makes P-22 + P-23 + U-91 using 200.0 decay so the Ek-113 just decayed.
+|   P-23∙ + Ek-119ª +700-14000 =>   P-22 + P-23 + U-97 || decay 
 
 |   P-23∙ +  Lx-92∙    +  3962 =>   P-22 + Lx-93    || decay, nuclear               
 |   P-23∙ +  Lx-93⁻    +  3080 =>   P-22 + Lx-94    || decay, nuclear               
