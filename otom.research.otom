@@ -1,3 +1,24 @@
+2025-04-29 Apr.Tue 00:54:02 Oh man I love seeing this kind of research and analysis. adbFreedom has some reaction chains that make specific isotopes and sees what happens with cheaper shorter routes. I think.
+
+on the Shape discord channel for otom discoveries, adbFreedom posted 2025-04-28 23:37
++----------------------------------------------------------------------------------------
+| look at some examples of cost difference, using reaction recipes from just over a week ago compared to my current recipes lol 
+| 
+| --- Simulation Results ---
+| Isotope    | Original Cost | Optimal Cos |Difference| Optimal Recipe Found?
+| -----------|---------------|-------------|----------|-----------------------
+| 114-52-Cv  |        81,271 |      23,700 |   57,571 | Yes (Cheaper)
+| 111-51-Z   |        76,271 |      15,100 |   61,171 | Yes (Cheaper)
+| 91-40-W    |        76,271 |      20,600 |   55,671 | Yes (Cheaper)
+| 108-49-Da  |        71,271 |      13,100 |   58,171 | Yes (Cheaper)
+| 81-36-Cj   |        71,271 |      12,900 |   58,371 | Yes (Cheaper)
+| ------------------------------------------------------------------------ 
+|
++----------------------------------------------------------------------------------------
+
+
+
+
 2025-04-28 Apr.Mon 22:28:29 New discovery! D-74 so now 608 isotopes in Universe BOHR.
 
   Co-74⁺ + 0 => D-74
