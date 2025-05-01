@@ -1459,6 +1459,23 @@ HMMMM IT SEEMS TO WORK
 |   P-23∙ +  Vt-98⁺    +  4956 =>   P-22 + Vt-99    || decay, nuclear               
 
 |   P-23∙ + Cv-110ª    +  3673 =>   P-22 + Cv-111   || decay, nuclear               
+someone tried these:
+|   P-23∙ + Cv-111ª    + 10000 =>   P-22 + P-23 + Lx-89 +  9500.00 |     500.00 | decay  | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0x17fc1e3d3b61b95ccd2367a93c413b289294202dc39b8fccd40a2c622c5be0bf | 0x709f76618698ceefd07e8bd2cc2753cfc1bc59e6391fe428c74b938ccd74b49f |
+|   P-23∙ + Cv-114ª    + 20000 =>   P-22 + P-23 + Lx-92 + 19000.00 |    1000.00 | decay  | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0x2d6f70dedd73018f029f02f1a63f7e243b5610a6936d64dd632d8502194ba141 | 0x7d62f633dadcb3004cc7afddd673ad5d16da0185f328d7b0a6ca6b5ba06994f2 |
+
+But i wonder if it simply wasn't enough energy? Those outputs are what I predicted in my decay.BOHR.otom file for the decay of Cv-114 at 0 to low NRG inputs.
+try:
+[ ]|   P-23∙ + Cv-111ª    + 50000 => ? 
+[ ]|   P-23∙ + Cv-114ª    + 50000 => ? 
+ 
+23 11  P + 111 52 Cv = 134 63  X  aka X-134
+23 11  P + 114 52 Cv = 137 63  X  aka X-137
+
+However I suspect those would have alpha decay so X-134ª and X-137ª might immediately decay like this: 
+ X-134 => P-22 + Cv-112
+ X-137 => P-22 + Cv-115
+
+
 
 |   P-23∙ + Da-103∙    +  4914 =>   P-22 + Da-104   || decay, nuclear               
 
@@ -7515,6 +7532,15 @@ The following 1 OTOMROs have no initiateReaction entry in the logs, but do have 
 [r]|  Gj-11∙ +  Nd-34⁻  + [ 1026 ..  2000] =>   Gd-45                                             | nuclear                      
 [r]|  Gd-45⁻            + [ 2887 ..  5000] =>   Xj-21 + P-24                                      | nuclear
 [r] Xj-21⁻ + 2000 => ? Dz-10 + Gj-11 <---SUCCESS! makes Dz-10 + Gj-11 using 824.33 nuclear
+
+
+Make Dz-10
+[ ]|  Ct-17⁻ +  Ct-17⁻ +   557 => ⬆ Nd-34         |
+[ ]|  Gj-11∙ +  Nd-34⁻ +  1024 =>   Gd-45         |
+[ ]|  Gd-45⁻           +  2776 =>   Xj-21 + P-24  |
+[ ]|  Xj-21⁻           +   766 =>   Dz-10 + Gj-11 |
+
+
 
 [f] Ct-13⁺ + 1000 => ? Dz-6 + Dz-7  <--- makes DzAs(As-6>Dz-7) using 407.05 nuclear+metallic
 [r] Ct-13⁺ + 368  =>   Dz-6 + Dz-7  using 361.18 nuclear
