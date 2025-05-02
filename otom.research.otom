@@ -1,3 +1,7 @@
+2025-05-02 May.Fri 10:55:17 Created a new FILE checklist.BOHR.otom for tracking my acquisition of BOHR isotopes. And checklist.ALPHA.otom to be complete.
+
+2025-05-02 May.Fri 00:33:46 What if i made a syntax coloring mode to show each isotope with a color representing the number of steps you have to go through to make it. mineables could stay green
+
 2025-05-01 May.Thu 22:21:27 Past couple days I'm mostly making BOHR isotopes from mineables.
 
 2025-04-30 Apr.Wed 00:02:48 WOW. its really interesting to look at the all_isotopes_stability_chart_universe_Bohr.txt file with this regex for all the things so far identified that can be made with just mineables:  \<\(Ai-61\|Ai-62\|Ai-63\|Ai-64\|Ai-65\|Ai-67\|As-6\|As-7\|Aw-112\|Aw-114\|Aw-115\|C-55\|C-56\|C-57\|C-58\|C-59\|C-60\|C-61\|C-62\|C-64\|Cj-72\|Cj-73\|Cj-74\|Cj-75\|Cj-76\|Cl-25\|Cl-26\|Cl-27\|Cl-28\|Co-78\|Co-79\|Co-80\|Co-81\|Co-82\|Co-83\|Ct-13\|Ct-14\|Ct-15\|Cv-105\|Cv-106\|Cv-107\|D-76\|D-77\|D-78\|D-79\|D-80\|D-81\|Da-100\|Da-101\|Da-102\|Da-104\|Da-98\|Da-99\|Dd-95\|Dd-96\|Dd-97\|Dd-98\|Dd-99\|Dx-37\|Dx-38\|Dx-39\|Dx-40\|Dx-41\|Dz-7\|Dz-8\|Dz-9\|Eb-20\|Eb-21\|Eb-22\|Ei-4\|Ei-5\|Ek-110\|F-62\|F-63\|F-64\|F-65\|F-66\|F-67\|F-68\|F-69\|Gd-39\|Gd-40\|Gd-41\|Gd-42\|Gd-43\|Gd-44\|Gj-10\|Gj-11\|Gj-9\|Gy-65\|Gy-66\|Gy-67\|Gy-68\|Gy-69\|Gy-70\|Iu-74\|Iu-75\|Iu-76\|Iu-77\|Iu-78\|Ji-111\|Ji-112\|Ji-114\|K-31\|K-32\|K-33\|K-34\|K-35\|Kk-67\|Kk-68\|Kk-69\|Kk-70\|Kk-71\|Kk-72\|L-49\|L-50\|L-51\|L-52\|L-53\|L-54\|Lu-35\|Lu-36\|Lu-37\|Lu-38\|Lu-39\|Lu-40\|Lx-82\|Lx-83\|Lx-84\|Lx-85\|Lx-86\|Lx-87\|Lx-88\|Mt-32\|Mt-33\|Mt-34\|Mt-35\|Mt-36\|Mt-37\|N-83\|N-84\|N-85\|N-86\|N-87\|N-88\|N-89\|Nd-29\|Nd-30\|Nd-31\|Nd-32\|Nd-33\|Nd-34\|Nm-93\|Nm-94\|Nm-95\|Nm-96\|Nm-97\|Ns-58\|Ns-59\|Ns-60\|Ns-61\|Ns-62\|Ns-63\|Ns-64\|Ns-65\|Ok-100\|Ok-97\|Ok-98\|Ok-99\|P-21\|P-22\|P-23\|P-24\|Pb-44\|Pb-45\|Pb-46\|Pb-47\|Pb-48\|Pb-49\|Pb-50\|Pb-51\|Pg-53\|Pg-54\|Pg-55\|Pg-56\|Pg-57\|Pg-58\|Qe-54\|Qe-55\|Qe-56\|Qe-57\|Qe-58\|Qe-59\|Ro-23\|Ro-24\|Ro-25\|Ro-26\|S-101\|S-103\|Se-89\|Se-90\|Se-91\|Se-92\|Se-93\|Se-94\|Se-95\|Se-96\|Sr-1\|Sr-2\|Sr-3\|T-15\|T-16\|T-17\|U-87\|U-88\|U-89\|Uq-42\|Uq-43\|Uq-44\|Uq-45\|Uq-46\|Uq-47\|Ux-50\|Ux-51\|Ux-52\|Ux-53\|Ux-54\|Ux-55\|Ux-56\|V-41\|V-42\|V-43\|V-44\|V-45\|V-46\|Vi-11\|Vi-12\|Vi-13\|Vl-88\|Vl-89\|Vl-90\|Vl-91\|Vl-92\|Vl-93\|Vt-107\|Vt-109\|W-80\|W-81\|W-82\|W-83\|W-84\|Wy-47\|Wy-48\|Wy-49\|Wy-50\|Wy-51\|Wy-52\|Xj-17\|Xj-18\|Xj-19\|Xj-20\|Yu-27\|Yu-28\|Yu-29\|Yu-30\|Yu-31\|Yv-70\|Yv-71\|Yv-72\|Yv-73\|Yv-74\|Z-103\|Z-104\)\>
@@ -780,14 +784,14 @@ regex: \<\(Dz-10\|Gj-9\|Ct-14\|P-25\|Ro-25\|Ro-26\|Cl-24\|Cl-28\|Cl-29\|Yu-26\|Y
 [r] Ux-53  |   As-5⁺ +  Pb-48∙   +[   844.56 -   5000] => Ux-53         | used  841.81 | nuclear
 [r] Ux-54  |   Dz-7⁺ +  Uq-47⁻   +[   992.70 -   5000] => Ux-54         | used  792.35 | nuclear
 [r] Ux-55  |   Dz-8∙ +  Uq-47⁻   +[  1354.07 -   5000] => Ux-55         | used 1171.82 | nuclear
-[ ] Ux-56  |   Dz-9∙ +  Uq-47⁻   +[  1399.61 -   5000] => Ux-56         |
+[r] Ux-56  |   Dz-9∙ +  Uq-47⁻   +[  1399.61 -   5000] => Ux-56         | used 1219.61 | nuclear
 [r] Pg-54  |  Ro-24ª +  Nd-30ª   +[  1415.15 -  20000] => Pg-54         | used 1335.95 | nuclear
 [r] Pg-55  |   Ei-4∙ +   L-51⁺   +[  1060.82 -   5000] => Pg-55         | used 1013.87 | nuclear
-[ ] Pg-58  |  Gj-11∙ +  Uq-47⁻   +[  1511.79 -   5000] => Pg-58         |
+[r] Pg-58  |  Gj-11∙ +  Uq-47⁻   +[  1511.79 -   5000] => Pg-58         | used 1337.39 | nuclear
 [r] Qe-54  |  Yu-27⁺ +  Yu-27⁺   +[  1260.78 -   5000] => Qe-54         | used 1260.63 | nuclear
 [r] Qe-56  |   As-5⁺ +   L-51⁺   +[   889.47 -   5000] => Qe-56         | used  683.97 | nuclear
-[ ] Qe-57  |  Vi-10⁺ +  Uq-47⁻   +[   888.66 -   5000] => Qe-57         |
-[ ] Qe-58  |  Vi-11⁺ +  Uq-47⁻   +[  1080.82 -   5000] => Qe-58         |
+[r] Qe-57  |  Vi-10⁺ +  Uq-47⁻   +[   888.66 -   5000] => Qe-57         | used  808.11 | nuclear
+[r] Qe-58  |  Vi-11⁺ +  Uq-47⁻   +[  1080.82 -   5000] => Qe-58         | used 1034.87 | nuclear
 [r] Qe-59  |  Gj-11∙ +  Pb-48∙   +[  1813.23 -   5000] => Qe-59         | used 1753.93 | nuclear
 [r] C-55   |  Ro-23ª +  Mt-32⁺   +[  1204.07 -  20000] => C-55          | used 1199.32 | nuclear
 [r] C-56   |  Ro-22⁺ +  Mt-34⁺   +[  1413.68 -  20000] => C-56          | used 1234.38 | nuclear
@@ -888,7 +892,7 @@ regex: \<\(Dz-10\|Gj-9\|Ct-14\|P-25\|Ro-25\|Ro-26\|Cl-24\|Cl-28\|Cl-29\|Yu-26\|Y
 [ ] Da-104 |   K-34∙ +  Kk-70ª   +[  3508.54 -  20000] => Da-104        |
 [ ] S-101  |   P-21⁺ +  S-102ª   +[  2305.72 -  20000] => P-22 + S-101  |
 [ ] S-103  |   P-23∙ +  S-102ª   +[  3336.90 -  20000] => P-22 + S-103  |
-[ ] Z-103  |  Ro-23ª +  S-102ª   +[  2566.67 -  20000] => P-22 + Z-103  |
+[ ] Z-103  |  Ro-23ª +  S-102ª   +[  2466.67 -  20000] => P-22 + Z-103  |
 [ ] Z-104  |  Ro-24ª +  S-102ª   +[  2736.25 -  20000] => P-22 + Z-104  |
 [ ] Cv-105 |  Cl-25⁺ +  S-102ª   +[  2567.25 -  10000] => P-22 + Cv-105 |
 [ ] Cv-106 |  Cl-26ª +  S-102ª   +[  2799.38 -  10000] => P-22 + Cv-106 |
