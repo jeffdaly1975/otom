@@ -38,7 +38,7 @@
 | Eb-20  | have
 | Eb-21  | have
 | Eb-22  | have
-| P-21   | [ ]
+| P-21   | have
 | P-22   | have
 | P-23   | have
 | P-24   | have
@@ -192,9 +192,9 @@
 | C-57   | have
 | C-58   | have
 | C-59   | have
-| C-60   | [ ]
+| C-60   | have
 | C-61   | have
-| C-62   | [ ]
+| C-62   | have
 | C-63   | have
 | C-64   | have
 | Ns-56  | [ ]
@@ -203,9 +203,9 @@
 | Ns-59  | have
 | Ns-60  | have
 | Ns-61  | have
-| Ns-62  | [ ]
-| Ns-63  | [ ]
-| Ns-64  | [ ]
+| Ns-62  | have
+| Ns-63  | have
+| Ns-64  | have
 | Ns-65  | have
 | Ns-67  | have
 | Ai-60  | [ ]
@@ -213,7 +213,7 @@
 | Ai-62  | have
 | Ai-63  | have
 | Ai-64  | have
-| Ai-65  | [ ]
+| Ai-65  | have
 | Ai-66  | have
 | Ai-67  | have
 | Ai-68  | [ ]
@@ -224,18 +224,18 @@
 | F-63   | have
 | F-64   | have
 | F-65   | have
-| F-66   | [ ]
-| F-67   | [ ]
+| F-66   | have
+| F-67   | have
 | F-68   | have
-| F-69   | [ ]
+| F-69   | have
 | Gy-63  | [ ]
 | Gy-64  | have
 | Gy-65  | have
 | Gy-66  | have
 | Gy-67  | have
-| Gy-68  | [ ]
+| Gy-68  | have
 | Gy-69  | have
-| Gy-70  | [ ]
+| Gy-70  | have
 | Kk-64  | [ ]
 | Kk-65  | [ ]
 | Kk-66  | [ ]
@@ -244,7 +244,7 @@
 | Kk-69  | have
 | Kk-70  | have
 | Kk-71  | have
-| Kk-72  | [ ]
+| Kk-72  | have
 | Yv-67  | [ ]
 | Yv-68  | [ ]
 | Yv-69  | [ ]
@@ -285,7 +285,7 @@
 | D-78   | have
 | D-79   | have
 | D-80   | have
-| D-81   | [ ]
+| D-81   | have
 | D-82   | have
 | D-83   | [ ]
 | D-84   | [ ]
@@ -295,9 +295,9 @@
 | Co-78  | have
 | Co-79  | have
 | Co-80  | have
-| Co-81  | [ ]
+| Co-81  | have
 | Co-82  | have
-| Co-83  | [ ]
+| Co-83  | have
 | Co-84  | [ ]
 | Co-85  | [ ]
 | Co-86  | [ ]
@@ -327,8 +327,8 @@
 | Lx-83  | have
 | Lx-84  | have
 | Lx-85  | have
-| Lx-86  | [ ]
-| Lx-87  | [ ]
+| Lx-86  | have
+| Lx-87  | have
 | Lx-88  | have
 | Lx-89  | [ ]
 | Lx-90  | [ ]
@@ -344,9 +344,9 @@
 | N-84   | have
 | N-85   | have
 | N-86   | have
-| N-87   | [ ]
+| N-87   | have
 | N-88   | have
-| N-89   | [ ]
+| N-89   | have
 | N-90   | [ ]
 | N-91   | [ ]
 | N-92   | [ ]
@@ -358,9 +358,9 @@
 | U-84   | [ ]
 | U-85   | have
 | U-86   | [ ]
-| U-87   | [ ]
-| U-88   | [ ]
-| U-89   | [ ]
+| U-87   | have
+| U-88   | have
+| U-89   | have
 | U-90   | have
 | U-91   | have
 | U-92   | [ ]
@@ -374,12 +374,12 @@
 | Vl-85  | [ ]
 | Vl-86  | have
 | Vl-87  | have
-| Vl-88  | [ ]
+| Vl-88  | have
 | Vl-89  | have
-| Vl-90  | [ ]
-| Vl-91  | [ ]
+| Vl-90  | have
+| Vl-91  | have
 | Vl-92  | have
-| Vl-93  | [ ]
+| Vl-93  | have
 | Vl-94  | [ ]
 | Vl-95  | [ ]
 | Vl-96  | [ ]
@@ -394,13 +394,13 @@
 | Se-87  | [ ]
 | Se-88  | have
 | Se-89  | have
-| Se-90  | [ ]
-| Se-91  | [ ]
-| Se-92  | [ ]
-| Se-93  | [ ]
-| Se-94  | [ ]
+| Se-90  | have
+| Se-91  | have
+| Se-92  | have
+| Se-93  | have
+| Se-94  | have
 | Se-95  | have
-| Se-96  | [ ]
+| Se-96  | have
 | Se-97  | have
 | Se-98  | [ ]
 | Se-99  | [ ]
@@ -412,11 +412,11 @@
 | Nm-90  | [ ]
 | Nm-91  | [ ]
 | Nm-92  | [ ]
-| Nm-93  | [ ]
-| Nm-94  | [ ]
+| Nm-93  | have
+| Nm-94  | have
 | Nm-95  | have
 | Nm-96  | have
-| Nm-97  | [ ]
+| Nm-97  | have
 | Nm-98  | [ ]
 | Nm-99  | [ ]
 | Nm-100 | [ ]
@@ -430,11 +430,11 @@
 | Dd-92  | [ ]
 | Dd-93  | have
 | Dd-94  | [ ]
-| Dd-95  | [ ]
+| Dd-95  | have
 | Dd-96  | have
-| Dd-97  | [ ]
-| Dd-98  | [ ]
-| Dd-99  | [ ]
+| Dd-97  | have
+| Dd-98  | have
+| Dd-99  | have
 | Dd-100 | [ ]
 | Dd-103 | [ ]
 | Dd-104 | [ ]
@@ -449,8 +449,8 @@
 | Ok-95  | have
 | Ok-96  | [ ]
 | Ok-97  | have
-| Ok-98  | [ ]
-| Ok-99  | [ ]
+| Ok-98  | have
+| Ok-99  | have
 | Ok-100 | have
 | Ok-101 | have
 | Ok-102 | have
@@ -467,13 +467,13 @@
 | Da-95  | [ ]
 | Da-96  | [ ]
 | Da-97  | [ ]
-| Da-98  | [ ]
+| Da-98  | have
 | Da-99  | have
-| Da-100 | [ ]
-| Da-101 | [ ]
-| Da-102 | [ ]
+| Da-100 | have
+| Da-101 | have
+| Da-102 | have
 | Da-103 | [ ]
-| Da-104 | [ ]
+| Da-104 | have
 | Da-105 | [ ]
 | Da-106 | [ ]
 | Da-107 | [ ]
@@ -486,9 +486,9 @@
 | S-98   | [ ]
 | S-99   | have
 | S-100  | [ ]
-| S-101  | [ ]
+| S-101  | have
 | S-102  | have
-| S-103  | [ ]
+| S-103  | have
 | S-104  | have
 | S-108  | [ ]
 | S-109  | [ ]
@@ -500,8 +500,8 @@
 | Z-100  | [ ]
 | Z-101  | [ ]
 | Z-102  | [ ]
-| Z-103  | [ ]
-| Z-104  | [ ]
+| Z-103  | have
+| Z-104  | have
 | Z-105  | have
 | Z-106  | [ ]
 | Z-107  | have
@@ -515,9 +515,9 @@
 | Cv-102 | have
 | Cv-103 | [ ]
 | Cv-104 | [ ]
-| Cv-105 | [ ]
-| Cv-106 | [ ]
-| Cv-107 | [ ]
+| Cv-105 | have
+| Cv-106 | have
+| Cv-107 | have
 | Cv-108 | have
 | Cv-109 | have
 | Cv-110 | [ ]
@@ -532,9 +532,9 @@
 | Vt-104 | [ ]
 | Vt-105 | [ ]
 | Vt-106 | [ ]
-| Vt-107 | [ ]
+| Vt-107 | have
 | Vt-108 | [ ]
-| Vt-109 | [ ]
+| Vt-109 | have
 | Vt-110 | [ ]
 | Vt-111 | [ ]
 | Vt-112 | [ ]
@@ -550,7 +550,7 @@
 | Ek-107 | [ ]
 | Ek-108 | [ ]
 | Ek-109 | [ ]
-| Ek-110 | [ ]
+| Ek-110 | have
 | Ek-111 | [ ]
 | Ek-112 | [ ]
 | Ek-113 | [ ]
@@ -563,10 +563,10 @@
 | Ji-108 | [ ]
 | Ji-109 | [ ]
 | Ji-110 | have
-| Ji-111 | [ ]
-| Ji-112 | [ ]
+| Ji-111 | have
+| Ji-112 | have
 | Ji-113 | [ ]
-| Ji-114 | [ ]
+| Ji-114 | have
 | Ji-121 | [ ]
 | Aw-104 | [ ]
 | Aw-105 | [ ]
@@ -574,10 +574,10 @@
 | Aw-107 | [ ]
 | Aw-108 | [ ]
 | Aw-111 | [ ]
-| Aw-112 | [ ]
+| Aw-112 | have
 | Aw-113 | have
-| Aw-114 | [ ]
-| Aw-115 | [ ]
+| Aw-114 | have
+| Aw-115 | have
 | Aw-124 | [ ]
 | Kn-106 | [ ]
 | Kn-107 | [ ]
