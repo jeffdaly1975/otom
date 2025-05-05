@@ -1,3 +1,6 @@
+
+2025-05-04 May.Sun 14:49:19 Now have 399/610 BORH isotopes
+
 2025-05-03 May.Sat 20:14:17 Next to do this set of isotopes that can be made with either 1 single-chain isotope or 1 single-chain isotope plus 1 mineable
 
 2025-05-03 May.Sat 19:17:57 Just snapshotted my wallet and i have 353/610 isotopes or 57.9%
@@ -1088,55 +1091,56 @@ Here's how to make 113 isotopes from either 1 mineable and 1 isotope made of 1 r
 11 Ct-17⁻
 11 Mt-32⁺
 20 S-102ª
-[r] C-64   |  Ct-17⁻ +  Uq-47⁻  +[ 1237.60 -  5000] => C-64          | used 1199.50 nuclear        | [ ] Cl-29  |   C-64⁻            +[ 5379.46 - 10000] => Cl-29 + K-35  | used ????.?? nuclea?        |
-[r] C-55   |  Ro-23ª +  Mt-32⁺  +[ 1199.32 - 20000] => C-55          | used 1199.07 nuclear        | [ ] K-30   |   C-55⁺            +[ 3940.13 - 10000] => Cl-25 + K-30  |                             |
-[r] K-35   |  Ct-17⁻ +  Xj-18∙  +[  843.82 -  5000] => K-35          | used  843.77 nuclear        | [ ] Dx-42  |   As-7∙ +   K-35⁻  +[ 1071.81 -  4000] => Dx-42         |                             |
-[r] Nd-34  |  Ct-17⁻ +  Ct-17⁻  +[  556.86*-  5000] => Nd-34         | used  556.86 decay, nuclear | [ ] Gd-45  |  Gj-11∙ +  Nd-34⁻  +[ 1023.44 -  5000] => Gd-45         |                             |
-[r] Nd-34  |  Ct-17⁻ +  Ct-17⁻  +[  556.86*-  5000] => Nd-34         | used  556.86 decay, nuclear | [ ] Ai-68  |  Nd-34⁻ +   K-34∙  +[ 2284.22 -  5000] => Ai-68         |                             |
-[r] Nd-29  |  Vi-10⁺ +  Eb-19⁺  +[  452.90*-  5000] => Nd-29         | used  452.90 decay, nuclear | [ ] F-61   |  Nd-29⁺ +  Mt-32⁺  +[ 1382.18 -  5000] => F-61          |                             |
-[r] Ai-67  |  Ct-17⁻ +  Wy-50∙  +[ 1642.75 -  5000] => Ai-67         | used 1640.70 nuclear        | [ ] F-68   |   Sr-1∙ +  Ai-67⁻  +[ 1113.62 -  4000] => F-68          |                             |
-[r] Ux-50  |  Eb-19⁺ +   K-31⁺  +[ 1107.32 -  5000] => Ux-50         | used 1104.02 nuclear        | [ ] Yv-69  |  Eb-19⁺ +  Ux-50⁺  +[ 1612.91 -  5000] => Yv-69         |                             |
-[r] Kk-72  |  Eb-22∙ +  Wy-50∙  +[ 2835.59 -  5000] => Kk-72         | used 2835.49 nuclear        | [ ] Yv-75  |   Sr-3∙ +  Kk-72ª  +[ 1341.71 -  5000] => Yv-75         |                             |
-[r] Ux-50  |  Eb-19⁺ +   K-31⁺  +[ 1107.32 -  5000] => Ux-50         | used 1104.02 nuclear        | [ ] Cj-71  |   P-21⁺ +  Ux-50⁺  +[ 1550.18 -  5000] => Cj-71         |                             |
-[r] Dd-99  |  Wy-50∙ +  Kk-71ª  +[ 4430.38 - 20000] => P-22 + Dd-99  | used 4429.03 decay, nuclear | [ ] Cj-77  |  Dd-99ª            +[    0.00 -     0] => P-22 + Cj-77  |                             |
-[r] W-83   |   Sr-3∙ +  S-102ª  +[ 1361.09 -  5000] => P-22 + W-83   | used 1352.44 decay, nuclear | [ ] Cj-78  |  Ct-17⁻ +   W-83ª  +[ 1729.46 -  5000] => P-22 + Cj-78  |                             |
-[r] Kk-72  |  Eb-22∙ +  Wy-50∙  +[ 2835.59 -  5000] => Kk-72         | used 2835.49 nuclear        | [ ] Iu-79  |   As-7∙ +  Kk-72ª  +[ 1592.47 -  5000] => Iu-79         |                             |
-[r] C-55   |  Ro-23ª +  Mt-32⁺  +[ 1199.32 - 20000] => C-55          | used 1199.07 nuclear        | [ ] Co-76  |   P-21⁺ +   C-55⁺  +[ 1632.45 -  5000] => Co-76         |                             |
-[r] F-64   |  Ct-13⁺ +   L-51⁺  +[ 1217.10 -  5000] => F-64          | used 1208.10 nuclear        | [ ] W-79   |   T-15⁺ +   F-64⁺  +[ 1544.36 -  5000] => W-79          |                             |
-[r] Co-83  |   K-34∙ +  Kk-71ª  +[ 3488.71*- 20000] => P-22 + Co-83  | used 3488.71 decay, nuclear | [ ] W-85   |   Sr-2∙ +  Co-83⁺  +[ 1170.79 -  5000] => W-85          |                             |
-[r] Lx-82  |  Vi-10⁺ +  Yv-72ª  +[ 1210.01 -  5000] => Lx-82         | used 1020.56 nuclear        | [ ] Lx-81  |   P-21⁺ +  Lx-82ª  +[ 2164.92 -  5000] => P-22 + Lx-81  |                             |
-[r] Kk-72  |  Eb-22∙ +  Wy-50∙  +[ 2835.59 -  5000] => Kk-72         | used 2835.49 nuclear        | [ ] Lx-89  |  Ct-17⁻ +  Kk-72ª  +[ 1529.05 -  5000] => Lx-89         |                             |
-[r] C-55   |  Ro-23ª +  Mt-32⁺  +[ 1199.32 - 20000] => C-55          | used 1199.07 nuclear        | [ ] N-82   |  Yu-27⁺ +   C-55⁺  +[ 1925.24 -  2500] => N-82          |                             |
-[r] N-89   |  Ct-17⁻ +  Yv-72ª  +[ 1514.15 -  5000] => N-89          | used 1505.85 nuclear        | [ ] N-90   |   P-23∙ +   N-89⁺  +[ 3190.84 -  5000] => P-22 + N-90   |                             |
-[r] U-87   |   Dz-7⁺ +  S-102ª  +[ 1241.48 -  5000] => P-22 + U-87   | used 1171.23 decay, nuclear | [ ] U-86   |   P-21⁺ +   U-87⁺  +[ 2284.12 -  5000] => P-22 + U-86   |                             |
-[r] Co-83  |   K-34∙ +  Kk-71ª  +[ 3488.71*- 20000] => P-22 + Co-83  | used 3488.71 decay, nuclear | [ ] U-92   |   Dz-9∙ +  Co-83⁺  +[ 1831.42 -  5000] => U-92          |                             |
-[r] Co-83  |   K-34∙ +  Kk-71ª  +[ 3488.71*- 20000] => P-22 + Co-83  | used 3488.71 decay, nuclear | [ ] Vl-95  |   K-34∙ +  Co-83⁺  +[ 3822.84 -  5000] => P-22 + Vl-95  |                             |
-[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 decay, nuclear | [ ] Nm-92  |   Sr-2∙ + Aw-112ª  +[ 1248.19 - 10000] => P-22 + Nm-92  |                             |
-[r] Se-96  |  Uq-47⁻ +  Kk-71ª  +[ 3237.17 - 20000] => P-22 + Se-96  | used 3232.97 decay, nuclear | [ ] Nm-98  |   Sr-2∙ +  Se-96∙  +[ 1827.08 -  5000] => Nm-98         |                             |
-[r] Ok-97  |  Xj-17⁺ +  S-102ª  +[ 2030.69 -  5000] => P-22 + Ok-97  | used 2021.84 decay, nuclear | [ ] Ok-96  |   P-21⁺ +  Ok-97ª  +[ 2307.69 -  5000] => P-22 + Ok-96  |                             |
-[r] Ok-97  |  Xj-17⁺ +  S-102ª  +[ 2022.24 -  5000] => P-22 + Ok-97  | used 2021.84 decay, nuclear | [ ] Da-97  |  Ro-22⁺ +  Ok-97ª  +[ 2275.73 -  3000] => P-22 + Da-97  |                             |
-[r] Ji-112 |  Gy-67ª +  Gy-67ª  +[ 3765.87 - 20000] => P-22 + Ji-112 | used 3765.77 decay, nuclear | [ ] S-100  |  Vi-10⁺ + Ji-112ª  +[ 2145.97 - 20000] => P-22 + S-100  |                             |
-[r] Co-80  |  S-102ª            +[    0.00*-  5000] => P-22 + Co-80  | used    0.00 decay          | [ ] Z-106  |  Pb-48∙ +  Co-80ª  +[ 4714.09 -  5000] => P-22 + Z-106  |                             |
-[r] Cv-105 |  Cl-25⁺ +  S-102ª  +[ 2566.95 - 10000] => P-22 + Cv-105 | used 2566.90 decay, nuclear | [ ] Cv-104 |   P-21⁺ + Cv-105ª  +[ 2271.98 -  5000] => P-22 + Cv-104 |                             |
-[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 decay, nuclear | [ ] Vt-105 |   T-15⁺ + Aw-112ª  +[ 1997.82 -  5000] => P-22 + Vt-105 |                             |
-[r] Cv-106 |  Cl-26ª +  S-102ª  +[ 2689.38 - 10000] => P-22 + Cv-106 | used 2683.88 decay, nuclear | [ ] Vt-108 |  Ro-24ª + Cv-106ª  +[ 2730.01 -  5000] => P-22 + Vt-108 |                             |
-[r] Aw-115 |  Gy-67ª +  Kk-70ª  +[ 3879.18 - 20000] => P-22 + Aw-115 | used 3876.53 decay, nuclear | [ ] Vt-110 |   T-17∙ + Aw-115ª  +[ 2739.61 -  3000] => P-22 + Vt-110 |                             |
-[r] Dd-99  |  Wy-50∙ +  Kk-71ª  +[ 4430.38 - 20000] => P-22 + Dd-99  | used 4429.03 decay, nuclear | [ ] Vt-111 |  Mt-34⁺ +  Dd-99ª  +[ 3455.25 - 10000] => P-22 + Vt-111 |                             |
-[r] N-87   |   As-7∙ +  S-102ª  +[ 1667.35 -  5000] => P-22 + N-87   | used 1662.75 decay, nuclear | [ ] Vt-112 |  Uq-47⁻ +   N-87⁺  +[ 4042.25 - 10000] => P-22 + Vt-112 |                             |
-[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 decay, nuclear | [ ] Ek-107 |  Xj-17⁺ + Aw-112ª  +[ 2139.57 -  5000] => P-22 + Ek-107 |                             |
-[r] Ok-98  |  Xj-18∙ +  S-102ª  +[ 2715.39 - 10000] => P-22 + Ok-98  | used 2709.94 decay, nuclear | [ ] Ek-108 |  Mt-32⁺ +  Ok-98ª  +[ 3017.55 - 10000] => P-22 + Ek-108 |                             |
-[r] Da-100 |  Nd-30ª +  Kk-70ª  +[ 2442.34 - 20000] => Da-100        | used 2436.24 nuclear        | [ ] Ek-109 |   K-31⁺ + Da-100ª  +[ 3085.06 -  5000] => P-22 + Ek-109 |                             |
-[r] U-87   |   Dz-7⁺ +  S-102ª  +[ 1241.48 -  5000] => P-22 + U-87   | used 1171.23 decay, nuclear | [ ] Ek-112 |  Uq-47⁻ +   U-87⁺  +[ 3743.15 -  7000] => P-22 + Ek-112 |                             |
-[r] Nd-33  |  Ct-17⁻ +   T-16∙  +[  823.99 -  5000] => Nd-33         | used  823.49 nuclear        | [ ] Ek-113 |  Nd-33⁻ +  S-102ª  +[ 3092.83 -  4000] => P-22 + Ek-113 |                             |
-[r] Gy-68  |   P-21⁺ +  Uq-47⁻  +[ 1552.38 - 20000] => Gy-68         | used 1544.18 nuclear        | [ ] Ji-113 |  Gy-67ª +  Gy-68ª  +[ 3816.28 - 10000] => P-22 + Ji-113 |                             |
-[r] S-101  |   P-21⁺ +  S-102ª  +[ 2305.72 - 20000] => P-22 + S-101  | used 2305.37 decay, nuclear | [ ] Aw-111 |  Mt-32⁺ +  S-101ª  +[ 2842.62 -  4000] => P-22 + Aw-111 |                             |
-[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 decay, nuclear | [ ] Kn-112 |  Ro-22⁺ + Aw-112ª  +[ 2199.50 -  4000] => P-22 + Kn-112 |                             |
-[r] Lu-35  |   As-5⁺ +  Nd-30ª  +[  500.94 -  5000] => Lu-35         | used  485.99 nuclear        | [ ] Kn-115 |  Lu-35⁺ +  S-102ª  +[ 3154.16 -  4100] => P-22 + Kn-115 |                             |
-[r] Z-103  |  Ro-23ª +  S-102ª  +[ 2440.02 - 20000] => P-22 + Z-103  | used 2438.72 decay, nuclear | [ ] Kn-116 |  Mt-35∙ +  Z-103ª  +[ 4532.60 - 15000] => P-22 + Kn-116 |                             |
-[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 decay, nuclear | [ ] Ha-115 |  Cl-25⁺ + Aw-112ª  +[ 2525.63 -  5000] => P-22 + Ha-115 |                             |
-[r] Vt-107 |  Yu-27⁺ +  S-102ª  +[ 2690.69 - 20000] => P-22 + Vt-107 | used 2690.64 decay, nuclear | [ ] Ha-116 |   K-31⁺ + Vt-107ª  +[ 2889.24 -  8556] => P-22 + Ha-116 |                             |
 
-[ ] need for 2nd set of recipes above:
+[r] C-64   |  Ct-17⁻ +  Uq-47⁻  +[ 1237.60 -  5000] => C-64          | used 1199.50 nuclear        | [r] Cl-29  |   C-64⁻            +[ 5379.46 - 10000] => Cl-29 + K-35  | used 5148.46 nuclear        |
+[r] C-55   |  Ro-23ª +  Mt-32⁺  +[ 1199.32 - 20000] => C-55          | used 1199.07 nuclear        | [r] K-30   |   C-55⁺            +[ 3940.13 - 10000] => Cl-25 + K-30  | used 2889.24 nuclear        |
+[r] K-35   |  Ct-17⁻ +  Xj-18∙  +[  843.82 -  5000] => K-35          | used  843.77 nuclear        | [r] Dx-42  |   As-7∙ +   K-35⁻  +[ 1071.81 -  4000] => Dx-42         | used  925.41 nuclear        |
+[r] Nd-34  |  Ct-17⁻ +  Ct-17⁻  +[  556.86*-  5000] => Nd-34         | used  556.86 nuclear, decay | [r] Gd-45  |  Gj-11∙ +  Nd-34⁻  +[ 1023.44*-  5000] => Gd-45         | used 1023.44 nuclear        |
+[r] Nd-34  |  Ct-17⁻ +  Ct-17⁻  +[  556.86*-  5000] => Nd-34         | used  556.86 nuclear, decay | [r] Ai-68  |  Nd-34⁻ +   K-34∙  +[ 2284.22 -  5000] => Ai-68         | used 2148.47 nuclear        |
+[r] Nd-29  |  Vi-10⁺ +  Eb-19⁺  +[  452.90*-  5000] => Nd-29         | used  452.90 nuclear, decay | [r] F-61   |  Nd-29⁺ +  Mt-32⁺  +[ 1382.18 -  5000] => F-61          | used 1381.78 nuclear        |
+[r] Ai-67  |  Ct-17⁻ +  Wy-50∙  +[ 1642.75 -  5000] => Ai-67         | used 1640.70 nuclear        | [r] F-68   |   Sr-1∙ +  Ai-67⁻  +[ 1113.62 -  4000] => F-68          | used  969.32 nuclear        |
+[r] Ux-50  |  Eb-19⁺ +   K-31⁺  +[ 1107.32 -  5000] => Ux-50         | used 1104.02 nuclear        | [r] Yv-69  |  Eb-19⁺ +  Ux-50⁺  +[ 1612.91 -  5000] => Yv-69         | used 1443.56 nuclear, decay |
+[r] Kk-72  |  Eb-22∙ +  Wy-50∙  +[ 2835.59 -  5000] => Kk-72         | used 2835.49 nuclear        | [r] Yv-75  |   Sr-3∙ +  Kk-72ª  +[ 1341.71 -  5000] => Yv-75         | used 1158.81 nuclear        |
+[r] Ux-50  |  Eb-19⁺ +   K-31⁺  +[ 1107.32 -  5000] => Ux-50         | used 1104.02 nuclear        | [r] Cj-71  |   P-21⁺ +  Ux-50⁺  +[ 1550.18 -  5000] => Cj-71         | used 1527.73 nuclear, decay |
+[r] Dd-99  |  Wy-50∙ +  Kk-71ª  +[ 4430.38 - 20000] => P-22 + Dd-99  | used 4429.03 nuclear, decay | [r] Cj-77  |  Dd-99ª            +[    0.00 -     0] => P-22 + Cj-77  | used    0.00 decay          |
+[r] W-83   |   Sr-3∙ +  S-102ª  +[ 1361.09 -  5000] => P-22 + W-83   | used 1352.44 nuclear, decay | [r] Cj-78  |  Ct-17⁻ +   W-83ª  +[ 1729.46 -  5000] => P-22 + Cj-78  | used 1652.76 nuclear, decay |
+[r] Kk-72  |  Eb-22∙ +  Wy-50∙  +[ 2835.59 -  5000] => Kk-72         | used 2835.49 nuclear        | [r] Iu-79  |   As-7∙ +  Kk-72ª  +[ 1592.47 -  5000] => Iu-79         | used 1422.12 nuclear        |
+[r] C-55   |  Ro-23ª +  Mt-32⁺  +[ 1199.32 - 20000] => C-55          | used 1199.07 nuclear        | [r] Co-76  |   P-21⁺ +   C-55⁺  +[ 1632.45 -  5000] => Co-76         | used 1624.10 nuclear, decay |
+[r] F-64   |  Ct-13⁺ +   L-51⁺  +[ 1217.10 -  5000] => F-64          | used 1208.10 nuclear        | [r] W-79   |   T-15⁺ +   F-64⁺  +[ 1544.36 -  5000] => W-79          | used 1476.61 nuclear        |
+[r] Co-83  |   K-34∙ +  Kk-71ª  +[ 3488.71*- 20000] => P-22 + Co-83  | used 3488.71 nuclear, decay | [r] W-85   |   Sr-2∙ +  Co-83⁺  +[ 1170.79 -  5000] => W-85          | used 1168.79 nuclear        |
+[r] Lx-82  |  Vi-10⁺ +  Yv-72ª  +[ 1210.01 -  5000] => Lx-82         | used 1020.56 nuclear        | [r] Lx-81  |   P-21⁺ +  Lx-82ª  +[ 2164.92 -  5000] => P-22 + Lx-81  | used 2123.17 nuclear, decay |
+[r] Kk-72  |  Eb-22∙ +  Wy-50∙  +[ 2835.59 -  5000] => Kk-72         | used 2835.49 nuclear        | [r] Lx-89  |  Ct-17⁻ +  Kk-72ª  +[ 1529.05 -  5000] => Lx-89         | used 1520.55 nuclear        |
+[r] C-55   |  Ro-23ª +  Mt-32⁺  +[ 1199.32 - 20000] => C-55          | used 1199.07 nuclear        | [r] N-82   |  Yu-27⁺ +   C-55⁺  +[ 1925.24 -  2500] => N-82          | used 1896.54 nuclear, decay |
+[r] N-89   |  Ct-17⁻ +  Yv-72ª  +[ 1514.15 -  5000] => N-89          | used 1505.85 nuclear        | [r] N-90   |   P-23∙ +   N-89⁺  +[ 3190.84 -  5000] => P-22 + N-90   | used 3100.39 nuclear, decay |
+[r] U-87   |   Dz-7⁺ +  S-102ª  +[ 1241.48 -  5000] => P-22 + U-87   | used 1171.23 nuclear, decay | [r] U-86   |   P-21⁺ +   U-87⁺  +[ 2284.12 -  5000] => P-22 + U-86   | used 2148.37 nuclear, decay |
+[r] Co-83  |   K-34∙ +  Kk-71ª  +[ 3488.71*- 20000] => P-22 + Co-83  | used 3488.71 nuclear, decay | [r] U-92   |   Dz-9∙ +  Co-83⁺  +[ 1831.42 -  5000] => U-92          | used 1673.02 nuclear        |
+[r] Co-83  |   K-34∙ +  Kk-71ª  +[ 3488.71*- 20000] => P-22 + Co-83  | used 3488.71 nuclear, decay | [r] Vl-95  |   K-34∙ +  Co-83⁺  +[ 3822.84*-  5000] => P-22 + Vl-95  | used 3822.84 nuclear, decay |
+[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 nuclear, decay | [r] Nm-92  |   Sr-2∙ + Aw-112ª  +[ 1248.19*- 10000] => P-22 + Nm-92  | used 1248.19 nuclear, decay |
+[r] Se-96  |  Uq-47⁻ +  Kk-71ª  +[ 3237.17 - 20000] => P-22 + Se-96  | used 3232.97 nuclear, decay | [r] Nm-98  |   Sr-2∙ +  Se-96∙  +[ 1827.08 -  5000] => Nm-98         | used 1668.48 nuclear        |
+[r] Ok-97  |  Xj-17⁺ +  S-102ª  +[ 2030.69 -  5000] => P-22 + Ok-97  | used 2021.84 nuclear, decay | [r] Ok-96  |   P-21⁺ +  Ok-97ª  +[ 2307.69 -  5000] => P-22 + Ok-96  | used 2307.34 nuclear, decay |
+[r] Ok-97  |  Xj-17⁺ +  S-102ª  +[ 2022.24 -  5000] => P-22 + Ok-97  | used 2021.84 nuclear, decay | [r] Da-97  |  Ro-22⁺ +  Ok-97ª  +[ 2275.73 -  3000] => P-22 + Da-97  | used 2239.53 nuclear, decay |
+[r] Ji-112 |  Gy-67ª +  Gy-67ª  +[ 3765.87 - 20000] => P-22 + Ji-112 | used 3765.77 nuclear, decay | [r] S-100  |  Vi-10⁺ + Ji-112ª  +[ 2145.97 - 20000] => P-22 + S-100  | used 1253.27 nuclear, decay |
+[r] Co-80  |  S-102ª            +[    0.00*-  5000] => P-22 + Co-80  | used    0.00 decay          | [r] Z-106  |  Pb-48∙ +  Co-80ª  +[ 4714.09 -  5000] => P-22 + Z-106  | used 4699.84 nuclear, decay |
+[r] Cv-105 |  Cl-25⁺ +  S-102ª  +[ 2566.95 - 10000] => P-22 + Cv-105 | used 2566.90 nuclear, decay | [r] Cv-104 |   P-21⁺ + Cv-105ª  +[ 2271.98 -  5000] => P-22 + Cv-104 | used 2265.48 nuclear, decay |
+[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 nuclear, decay | [r] Vt-105 |   T-15⁺ + Aw-112ª  +[ 1997.82 -  5000] => P-22 + Vt-105 | used 1847.72 nuclear, decay |
+[r] Cv-106 |  Cl-26ª +  S-102ª  +[ 2689.38 - 10000] => P-22 + Cv-106 | used 2683.88 nuclear, decay | [r] Vt-108 |  Ro-24ª + Cv-106ª  +[ 2730.01 -  5000] => P-22 + Vt-108 | used 2616.56 nuclear, decay |
+[r] Aw-115 |  Gy-67ª +  Kk-70ª  +[ 3879.18 - 20000] => P-22 + Aw-115 | used 3876.53 nuclear, decay | [r] Vt-110 |   T-17∙ + Aw-115ª  +[ 2739.61 -  3000] => P-22 + Vt-110 | used 2726.61 nuclear, decay |
+[r] Dd-99  |  Wy-50∙ +  Kk-71ª  +[ 4430.38 - 20000] => P-22 + Dd-99  | used 4429.03 nuclear, decay | [r] Vt-111 |  Mt-34⁺ +  Dd-99ª  +[ 3455.25 - 10000] => P-22 + Vt-111 | used 3128.05 nuclear, decay |
+[r] N-87   |   As-7∙ +  S-102ª  +[ 1667.35 -  5000] => P-22 + N-87   | used 1662.75 nuclear, decay | [r] Vt-112 |  Uq-47⁻ +   N-87⁺  +[ 4042.25 - 10000] => P-22 + Vt-112 | used 3744.40 nuclear, decay |
+[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 nuclear, decay | [r] Ek-107 |  Xj-17⁺ + Aw-112ª  +[ 2139.57 -  5000] => P-22 + Ek-107 | used 1996.57 nuclear, decay |
+[r] Ok-98  |  Xj-18∙ +  S-102ª  +[ 2715.39 - 10000] => P-22 + Ok-98  | used 2709.94 nuclear, decay | [r] Ek-108 |  Mt-32⁺ +  Ok-98ª  +[ 3017.55 - 10000] => P-22 + Ek-108 | used 2793.45 nuclear, decay |
+[r] Da-100 |  Nd-30ª +  Kk-70ª  +[ 2442.34 - 20000] => Da-100        | used 2436.24 nuclear        | [r] Ek-109 |   K-31⁺ + Da-100ª  +[ 3085.06 -  5000] => P-22 + Ek-109 | used 2989.36 nuclear, decay |
+[r] U-87   |   Dz-7⁺ +  S-102ª  +[ 1241.48 -  5000] => P-22 + U-87   | used 1171.23 nuclear, decay | [r] Ek-112 |  Uq-47⁻ +   U-87⁺  +[ 3743.15 -  7000] => P-22 + Ek-112 | used 3580.35 nuclear, decay |
+[r] Nd-33  |  Ct-17⁻ +   T-16∙  +[  823.99 -  5000] => Nd-33         | used  823.49 nuclear        | [r] Ek-113 |  Nd-33⁻ +  S-102ª  +[ 3092.83 -  4000] => P-22 + Ek-113 | used 3047.48 nuclear, decay |
+[r] Gy-68  |   P-21⁺ +  Uq-47⁻  +[ 1552.38 - 20000] => Gy-68         | used 1544.18 nuclear        | [r] Ji-113 |  Gy-67ª +  Gy-68ª  +[ 3816.28 - 10000] => P-22 + Ji-113 | used 3807.13 nuclear, decay |
+[r] S-101  |   P-21⁺ +  S-102ª  +[ 2305.72 - 20000] => P-22 + S-101  | used 2305.37 nuclear, decay | [r] Aw-111 |  Mt-32⁺ +  S-101ª  +[ 2842.62 -  4000] => P-22 + Aw-111 | used 2784.77 nuclear, decay |
+[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 nuclear, decay | [r] Kn-112 |  Ro-22⁺ + Aw-112ª  +[ 2199.50*-  4000] => P-22 + Kn-112 | used 2199.50 nuclear, decay |
+[r] Lu-35  |   As-5⁺ +  Nd-30ª  +[  500.94 -  5000] => Lu-35         | used  485.99 nuclear        | [r] Kn-115 |  Lu-35⁺ +  S-102ª  +[ 3154.16 -  4100] => P-22 + Kn-115 | used 3146.91 nuclear, decay |
+[r] Z-103  |  Ro-23ª +  S-102ª  +[ 2440.02 - 20000] => P-22 + Z-103  | used 2438.72 nuclear, decay | [r] Kn-116 |  Mt-35∙ +  Z-103ª  +[ 4532.60 - 15000] => P-22 + Kn-116 | used 4159.25 nuclear, decay |
+[r] Aw-112 |  Mt-32⁺ +  S-102ª  +[ 2823.68*- 20000] => P-22 + Aw-112 | used 2823.68 nuclear, decay | [r] Ha-115 |  Cl-25⁺ + Aw-112ª  +[ 2525.63 -  5000] => P-22 + Ha-115 | used 2525.33 nuclear, decay |
+[r] Vt-107 |  Yu-27⁺ +  S-102ª  +[ 2690.69 - 20000] => P-22 + Vt-107 | used 2690.64 nuclear, decay | [r] Ha-116 |   K-31⁺ + Vt-107ª  +[ 2889.24 -  8556] => P-22 + Ha-116 | used 2883.74 nuclear, decay |
+
+[c] need for 2nd set of recipes above:
 113911.48 NRG
 1 Cl-25⁺
 1 Dz-9∙
@@ -1165,11 +1169,6 @@ Here's how to make 113 isotopes from either 1 mineable and 1 isotope made of 1 r
 3 Mt-32⁺
 3 Sr-2∙
 6 P-21⁺
-
-
-
-
-
 
 
 2025-04-29 Apr.Tue 02:18:44 Hmmm. does the P-21/P-23 pattern of ratcheting down/up some isotopes 
