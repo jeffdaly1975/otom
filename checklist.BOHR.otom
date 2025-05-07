@@ -157,6 +157,7 @@
 | L-52   | have | from mineables
 | L-53   | have | from mineables
 | L-54   | have | from mineables
+| L-55   | have |
 | L-56   | have |
 | L-57   | have |
 | Ux-48  | have |
@@ -409,6 +410,7 @@
 | Se-99  | [ ]  |
 | Se-100 | [ ]  |
 | Se-101 | [ ]  |
+| Se-102 | [ ]  |
 | Nm-87  | have |
 | Nm-88  | [ ]  |
 | Nm-89  | have |
@@ -423,6 +425,7 @@
 | Nm-98  | have |
 | Nm-99  | [ ]  |
 | Nm-100 | [ ]  |
+| Nm-102 | [ ]  |
 | Nm-103 | [ ]  |
 | Nm-104 | [ ]  |
 | Nm-105 | [ ]  |

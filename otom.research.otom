@@ -1,13 +1,20 @@
+2025-05-07 May.Wed 10:56:08 New discovery! Now 616 BOHR isotopes
+  Nm-102 + 10000 => V-47 + L-55
+
+2025-05-07 May.Wed 10:46:48 New discovery! Now 615 BOHR isotopes 
+  Se-102 + 0 => Nm-102
+
 2025-05-06 May.Tue 21:56:10 New discovery! Now 614 BOHR isotopes 
   Aw-124ª + 0 => P-22 + Se-102
 
 try:
- [ ] Se-102 + 0 => ? Nm-102
+ [r] Se-102 + 0 => ? Nm-102 <---SUCCESS! makes Nm-102 using 0.00 decay
 
-then maybe if decay type is beta-:
- [ ] Nm-102 + 0 => ? Dd-102
+then maybe if decay type is beta-: NOPE its decay type is alpha so it probably decays to P-22+Yv-80 with 0 NRG input
+ [x] Nm-102 + 0 => ? Dd-102
 and:
- [ ] Nm-102 + 10000 => ? V-47 + L-55
+ [r] Nm-102 + 10000 => ? V-47 + L-55 <----SUCCESS! makes V-47+L-55 using 9159.63 nuclear
+
 
 2025-05-06 May.Tue 00:49:52 I now have 406/613 BOHR isotopes which is 66.23%
 
