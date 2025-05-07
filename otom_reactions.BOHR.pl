@@ -3,10 +3,10 @@
 # Universe: BOHR
 
 #       65 otoms
-#      616 isotopes
-#   379456 combinations
-#   190036 unique combinations
-#    37963 combinations resulting in known isotopes
+#      618 isotopes
+#   381924 combinations
+#   191271 unique combinations
+#    38723 combinations resulting in known isotopes
 
 my $order_counter=0;
 my @sort_order=();
@@ -126,6 +126,7 @@ __DATA__
   9  5 Gj
  10  5 Gj
  11  5 Gj
+ 12  5 Gj
  10  6 Vi
  11  6 Vi
  12  6 Vi
@@ -151,6 +152,7 @@ __DATA__
  20 10 Eb
  21 10 Eb
  22 10 Eb
+ 23 10 Eb
  21 11  P
  22 11  P
  23 11  P

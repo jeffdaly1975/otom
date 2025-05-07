@@ -1,3 +1,12 @@
+2025-05-07 May.Wed 13:32:07 New discovery! Now 618 BOHR isotopes
+ Eb-23⁻ +  969 => Gj-11 + Gj-12
+
+2025-05-07 May.Wed 13:09:39 New discovery! Now 617 BOHR isotopes
+  Dx-43⁻  + 2674 => Xj-20 + Eb-23
+
+try:
+ [r] Eb-23⁻ + 2000 => ? Gj-11 + Gj-12 <----SUCCESS! used 968.76 nuclear
+
 2025-05-07 May.Wed 10:56:08 New discovery! Now 616 BOHR isotopes
   Nm-102 + 10000 => V-47 + L-55
 
@@ -6325,15 +6334,15 @@ The discord believes its just a promotional piece Kjetil made while developing t
 total: 30002
 
 [>]  Dx-43⁻  + 5000   => ? Xj-20 + Eb-23 
-   [*]|  Eb-22∙ +  Wy-50∙ +   2839 =>   Kk-72        
-   [ ]|  Ct-13⁺ +  Ct-17⁻ +    547 =>   Yu-30        
-   [ ]|  Yu-30∙ +  Kk-72ª +   3256 =>   Ok-102       
-   [ ]|  Ct-17⁻ + Ok-102⁻ +   1971 =>   P-22 + Vl-97 
-   [ ]|   Sr-2∙ +  Vl-97⁻ +   1417 =>   Se-99        
-   [ ]|   Sr-3∙ +  Se-99∙ +   1814 =>   P-22 + Yv-80  
-   [ ]|  Yv-80⁻           +   6541 =>   K-37 + Dx-43  
-   [ ]  Dx-43⁻  + 5000   => ? Xj-20 + Eb-23 
-total: 23385
+   [r]|  Eb-22∙ +  Wy-50∙ +   2836 =>   Kk-72        
+   [r]|  Ct-13⁺ +  Ct-17⁻ +    534 =>   Yu-30        
+   [r]|  Yu-30∙ +  Kk-72ª +   3254 =>   Ok-102       
+   [r]|  Ct-17⁻ + Ok-102⁻ +   1820 =>   P-22 + Vl-97 
+   [r]|   Sr-2∙ +  Vl-97⁻ +   1238 =>   Se-99        
+   [r]|   Sr-3∙ +  Se-99∙ +   1755 =>   P-22 + Yv-80  
+   [r]|  Yv-80⁻           +   6519 =>   K-37 + Dx-43  
+   [r]  Dx-43⁻  + 5000   => ? Xj-20 + Eb-23  <---------SUCCESS! makes Xj-20 + Eb-23 using 2673.30 nuclear
+total: 22956
 
 [>]  Pg-51⁺  + 3500   => ? Ro-23 + Nd-28  BUT LESS THAN +3548.16-10000  RoNd(Ro-23>Nd-28)|
    [-]|   K-31⁺ +  Mt-34⁺ + 1604 =>  Gy-65        
