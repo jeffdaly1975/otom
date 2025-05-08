@@ -1,5 +1,47 @@
+2025-05-08 May.Thu 00:53:34 New discovery!  Now 622 BOHR isotopes
+  S-109ª + 10322 => Pb-50 + Pg-59
+
+2025-05-07 May.Wed 23:33:02 I can complete the first row of the BOHR periodic chart if I get these 3:
+
+7-chain: Eb-23  :: 21055.89 |  Dx-43⁻             +[  2673.30 -   5000] => Xj-20 + Eb-23 | nuclear                      |
+6-chain: P-25   :: 23812.79 |   V-47⁻             +[  3012.78 -  10000] => Eb-22 + P-25  | nuclear                      |
+8-chain: P-26   :: 30570.12 |   V-48⁻             +[  3311.60 -  10000] => Eb-22 + P-26  | nuclear                      |
+
+[>] Eb-23
+  [ ]|  Eb-22∙ +  Wy-50∙ + 2839 => Kk-72         
+  [ ]|  Ct-13⁺ +  Ct-17⁻ +  547 => Yu-30         
+  [ ]|  Yu-30∙ +  Kk-72ª + 3256 => Ok-102        
+  [ ]|  Ct-17⁻ + Ok-102⁻ + 1971 => P-22 + Vl-97  
+  [ ]|   Sr-2∙ +  Vl-97⁻ + 1418 => Se-99         
+  [ ]|   Sr-3∙ +  Se-99∙ + 1814 => P-22 + Yv-80  
+  [ ]|  Yv-80⁻           + 6541 => K-37 + Dx-43  
+  [ ]|  Dx-43⁻           + 2674 => Xj-20 + Eb-23 
+total: 21060
+
+[>] P-25
+  [ ]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
+  [ ]|   K-34∙ +  Co-83⁺ + 3823 => P-22 + Vl-95  
+  [ ]|   K-34∙ +  Vl-95⁻ + 4045 => P-22 + Da-107 
+  [ ]|   Sr-3∙ + Da-107∙ + 1818 => P-22 + Co-88  
+  [ ]|  Co-88⁻           + 7627 => Lu-41 + V-47  
+  [ ]|   V-47⁻           + 3013 => Eb-22 + P-25  
+total: 23815
+
+[>] P-26
+  [ ]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
+  [ ]|   Sr-2∙ +  Co-83⁺ + 1168 => W-85          
+  [ ]|   K-34∙ +   W-85ª + 3984 => P-22 + Se-97  
+  [ ]|  Ct-17⁻ +  Se-97ª + 1824 => P-22 + Lx-92  
+  [ ]|   P-23∙ +  Lx-92∙ + 3961 => P-22 + Lx-93  
+  [ ]|   K-34∙ +  Lx-93⁻ + 3926 => P-22 + Nm-105 
+  [ ]| Nm-105⁻           + 8903 => V-48 + L-57   
+  [ ]|   V-48⁻           + 3311 => Eb-22 + P-26  
+total: 30566
+
 2025-05-07 May.Wed 22:23:21 W-76 was discovered so now 621 BOHR isotopes
-[ ] find its recipe after parsing to add to chains lists
+[c] find its recipe after parsing to add to chains lists
+[ ] add this to chains:
+    |   139125*|bohr    |   L-46⁺ +  Lx-76⁺ + 7000 => ⬇ Wy-46 + W-76 +    6650.00 |     350.00 | decay                        |
 
 2025-05-07 May.Wed 21:48:03 New discovery! Now 620 BOHR isotopes
  Da-109∙ + 14707 => Pb-51 + Ux-58
@@ -8,21 +50,21 @@ Just noticed these:
 
 try:
 [>] S-108⁺ +     0 => ? Z-108
-  [*]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
-  [ ]|   Sr-3∙ +  Co-83⁺ + 1334 => W-86         
-  [ ]|   K-34∙ +   W-86ª + 3937 => P-22 + Se-98 
-  [ ]|   Sr-3∙ +  Se-98∙ + 1872 => Se-101       
-  [ ]|  Eb-19⁺ + Se-101∙ + 3106 => P-22 + Vl-98 
-  [ ]|  Mt-32⁺ +  Vl-98⁻ + 3086 => P-22 + S-108 
-  [ ]   S-108⁺           +    0 => ? Z-108
+  [r]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
+  [r]|   Sr-3∙ +  Co-83⁺ + 1334 => W-86           used 1249.77 nuclear
+  [r]|   K-34∙ +   W-86ª + 3937 => P-22 + Se-98   used 3883.66 nuclear+decay
+  [r]|   Sr-3∙ +  Se-98∙ + 1872 => Se-101         used 1764.93 nuclear+decay
+  [r]|  Eb-19⁺ + Se-101∙ + 3106 => P-22 + Vl-98   used 2761.27 nuclear+decay
+  [r]|  Mt-32⁺ +  Vl-98⁻ + 3086 => P-22 + S-108   used 2739.55 nuclear+decay
+  [f]   S-108⁺           +    0 => ? Z-108 <-----NOPE makes Da-108 using 0.00 decay Man I really got that backwards. Of course it would drop a proton to become Da since S-108 is beta+
 total: 16821.14
 
 [>] S-109ª + 15000 => ? Pb-50 + Pg-59
-  [*]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83
-  [ ]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85        
-  [ ]|   K-34∙ +   W-85ª + 3985 => P-22 + Se-97
-  [ ]|   K-34∙ +  Se-97ª + 4302 => P-22 + S-109
-  [ ]   S-109ª           +15000 => ? Pb-50 + Pg-59
+  [r]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83
+  [r]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85           used 1168.69 nuclear
+  [r]|   K-34∙ +   W-85ª + 3985 => P-22 + Se-97   used 3982.43 nuclear+decay
+  [r]|   K-34∙ +  Se-97ª + 4302 => P-22 + S-109   used 4216.24 nuclear+decay
+  [r]   S-109ª           +15000 => ? Pb-50 + Pg-59  <---SUCCESS!!A makes Pb-50+Pg-59 using 10321.65 nuclear
 total: 27943.52
 
 2025-05-07 May.Wed 15:33:45 New discovery! Now 619 BOHR isotopes
@@ -713,7 +755,7 @@ Lu-34  :: 27448.87 |  Co-74⁺             +[  5416.18 -  10000] => Lu-34       
 Se-85  :: 14073.22 |   P-21⁺ +  Se-86⁺   +[  1995.14 -   8000] => P-22 + Se-85  | decay, nuclear               |
 Nm-102 :: 23109.84 | Se-102⁻             +[     0.00 -      0] => Nm-102        | decay                        |
 Uq-49  :: 30565.74 | Dd-106⁻             +[  9036.32 -  10000] => Uq-49 + L-57  | nuclear                      |
-Ux-58  :: 35683.49 | Da-109∙             +[ 14706.55 -  15000] => Pb-51 + Ux-58 | [ ] need to fill after parse |
+Ux-58  :: 35683.49 | Da-109∙             +[ 14706.55 -  15000] => Pb-51 + Ux-58 | nuclear                      |
 Vt-119 :: 26615.99 |   P-23∙ +  Lx-96⁻   +[  3081.36 -   6000] => Vt-119        | decay, nuclear               |
 W-77   :: 13516.66 |  Lx-77⁺             +[     0.00 -      0] => W-77          | decay                        |
 Xj-16  :: 24890.52 |   K-29⁺             +[  1199.29 -  10000] => Ct-13 + Xj-16 | nuclear                      |
