@@ -7856,3 +7856,5 @@ This would be particularly useful if I need to create the OTOMRO database and th
 I could see using it in a contract to load the whole history also. This could be useful in my ideas for Wizard tools. I'm not sure how or if this is different than reading the whole blockchain to see the history of reactions.
 
 [ ] This (https://www.alchemy.com/docs/how-to-listen-to-nft-mints) could be useful for learning how to watch the blockchain for new isotope creation.
+
+[ ] This (https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum) shows how to use a .env file to store your private key for sending txns from command line
