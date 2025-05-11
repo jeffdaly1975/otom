@@ -7839,6 +7839,35 @@ Its really a kludge and doesn't do proper parsing. I'd like to make it actually 
  | {"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000000000000"}
 
 
+2025-05-09 May.Fri 10:37:05 EXCELLENT! I was sure there was a way to do all the requests in one shot so I asked Grok and surprisingly it was helpful and correct.
+It said you can do multple eth_call requests in one curl command line call by putting the batch requests in an array of JSON-RPC request objects.
+
+Example. Notice the ids are incremental. 
+
+ |  curl --request POST  \
+ |       --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
+ |       --header 'accept: application/json'  \
+ |       --header 'content-type: application/json' \
+ |       --data ' [
+ |  { "id":  1, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "0x620051B8553a724b742ae6ae9cC3585d29F49848", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e0000000000000000000000002a4A229C4d748C2346963d0bB30C48Cd11021aAc1b368508c0ac74184859c4e86b57e0f6d136d8ab290a6d6fec540e8ec51e93f6" }, "latest" ] },
+ |  { "id":  2, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "0x620051B8553a724b742ae6ae9cC3585d29F49848", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e0000000000000000000000002a4A229C4d748C2346963d0bB30C48Cd11021aAc3cc6c8faabdfc913a7e8d3088f158110feee0ca92cfbe48084f3a3150fbd9413" }, "latest" ] },
+ |  { "id":  3, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "0x620051B8553a724b742ae6ae9cC3585d29F49848", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e0000000000000000000000002a4A229C4d748C2346963d0bB30C48Cd11021aAc36cee6a4791755d9ac516b6dd84ad36efcbe33197d5ca2a95aed8744c8a7c362" }, "latest" ] },
+ |  ]'
+
+The output gives the id so you can tell which result goes with which request:
+
+ | Lisas-MacBook-Pro-2:otom lisadaly$ ./tempmineables.alchemy.sh 
+ | [{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000000000015"}
+ | ,{"jsonrpc":"2.0","id":2,"result":"0x000000000000000000000000000000000000000000000000000000000000001c"}
+ | ,{"jsonrpc":"2.0","id":3,"result":"0x000000000000000000000000000000000000000000000000000000000000000f"}
+
+
+2025-05-09 May.Fri 12:00:38 Sweet. I have successfully made a script that will simply query the blockchain and return Annihilator contract fn call strings for burning all but 1 of each mineable. If you pass it an integer, it will keep up to that many of each given isotope if you have it. Default is 1. You could pass it 0 to burn all mineables if you really wanted.
+
+ script: get_burnables_bohr.0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc.alchemy.pl
+
+ It calls ./tempmineables.alchemy.sh to query the blockchain with my alchemy API key. That script I improved to make all 51 balanceOf() calls in 1 batch request.
+
 2025-05-11 May.Sun 16:05:23 [ ] I may wish to try using get_getBlockByNumber()
 See (https://www.alchemy.com/docs/node/shape/shape-api-endpoints/eth-get-block-by-number)
 
