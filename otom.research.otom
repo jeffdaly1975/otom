@@ -1,3 +1,20 @@
+2025-05-11 May.Sun 13:02:15 QMA surmises that decay only happens once in a reaction. I have seen otherhwise but maybe we are saying the same things.
+
+ So a reaction occurs and the you add up the protons and neutrons. Then whatever the result is, if the stability is less ~0.78 and has decay type alpha/beta+/beta- it will take 1 decay step.
+
+Here is an example of 5 decays. Each As-5 decays to Ei-5:
+78447*|bohr    |   As-5⁺ +   As-5⁺ +   As-5⁺ +   As-5⁺ +   As-5⁺ +        0 => ⬇ Ei-5 + Ei-5 + Ei-5 + Ei-5 + Ei-5                                                 
+
+
+That's 5 decay reactions dropping 5 total protons.
+
+I thought that decay occurs once per particle. Meaning, once something fuses or fissions, the results of that no matter how unstable will not undergo another decay step.
+However OTOMRO 135242 seems to contradict that since Dx-14 decays first to Af-7+Af-7 which is one decay step, but then one Af-7 alpha decays to Ju-1+Cq-6 which is a second decay step. 
+I'm confused.
+
+[ ] Does OTOMRO 135242 undergo 2 decay steps? Which I've never observed elsewhere? Is it just different that low on the isotopes chart? Perhaps it depends on then energy inputs and we've never gotten to such close bandings.
+
+
 2025-05-11 May.Sun 12:41:59 [ ] Perhaps i need to redo the otom_reactions.{BOHR,ALPHA}.pl scripts such that the 3 output columns are 4 output columns like: beta+ decay, alpha decay, beta- decay, no decay
 
 ::INFO:: I'm coming to understand alpha decay better. It likes to fission into an isotope with a full outer shell, plus another isotope with whatever's left.  Then it can still undergo another decay step if the resulting full outer shell isotope has a low stability and has an alpha/beta+/beta- decay type
@@ -2143,6 +2160,9 @@ I only have a couple reactions left to complete my Alpha table of all isotopes r
 
 
 2025-04-28 Apr.Mon 10:43:32 I see 3 undiscovered isotopes in molecules: Nd-27, W-76, Cl-30
+ [ ] discover Nd-27
+ [c] discover W-76
+ [ ] discover Cl-30
 
 2025-04-27 Apr.Sun 22:30:21 New Discovery! so now 606 isotopes
 
@@ -6379,9 +6399,26 @@ try:
  Vl-101⁻ + 8392 => Gd-46 + Wy-55 
 
 try:
-[ ] Wy-55⁻ +     0 => ? L-55
-[ ] Wy-55⁻ + 10000 => ? P-25 + Cl-30
+[-] Wy-55⁻ +     0 => ? L-55
+  [-]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  
+  [-]|   K-34∙ +  Co-83⁺ + 3823 => ⬇ P-22 + Vl-95  
+  [-]|   K-34∙ +  Vl-95⁻ + 4045 => ⬆ P-22 + Da-107 
+  [-]|   Sr-3∙ + Da-107∙ + 1818 => ⬇ P-22 + Co-88  
+  [-]|   K-34∙ +  Co-88⁻ + 3844 => ⬇ P-22 + Vl-100 
+  [-]|   P-23∙ + Vl-100⁻ + 3075 =>   P-22 + Vl-101
+  [-]  Vl-101⁻           + 8392 =>  Gd-46 + Wy-55
+  [-]   Wy-55⁻           +    0 => ? L-55
 
+[>] Wy-55⁻ + 10000 => ? P-25 + Cl-30
+  [*]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  
+  [ ]|   K-34∙ +  Co-83⁺ + 3823 => ⬇ P-22 + Vl-95  
+  [ ]|   K-34∙ +  Vl-95⁻ + 4045 => ⬆ P-22 + Da-107 
+  [ ]|   Sr-3∙ + Da-107∙ + 1818 => ⬇ P-22 + Co-88  
+  [ ]|   K-34∙ +  Co-88⁻ + 3844 => ⬇ P-22 + Vl-100 
+  [ ]|   P-23∙ + Vl-100⁻ + 3075 =>   P-22 + Vl-101
+  [ ]  Vl-101⁻           + 8392 =>  Gd-46 + Wy-55
+  [ ]   Wy-55⁻           +10000 => ? P-25 + Cl-30
+total: 38486
 
 2025-04-19 Apr.Sat 17:28:17 NEW DISCOVERY!  585 isotopes in BOHR now
   Nm-104⁻ + 9033 => V-48 + L-56
