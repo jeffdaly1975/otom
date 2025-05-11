@@ -7839,7 +7839,6 @@ Its really a kludge and doesn't do proper parsing. I'd like to make it actually 
  | {"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000000000000"}
 
 
-
 2025-05-09 May.Fri 10:37:05 EXCELLENT! I was sure there was a way to do all the requests in one shot so I asked Grok and surprisingly it was helpful and correct.
 It said you can do multple eth_call requests in one curl command line call by putting the batch requests in an array of JSON-RPC request objects.
 
@@ -7869,3 +7868,20 @@ The output gives the id so you can tell which result goes with which request:
 
  It calls ./tempmineables.alchemy.sh to query the blockchain with my alchemy API key. That script I improved to make all 51 balanceOf() calls in 1 batch request.
 
+2025-05-11 May.Sun 16:05:23 [ ] I may wish to try using get_getBlockByNumber()
+See (https://www.alchemy.com/docs/node/shape/shape-api-endpoints/eth-get-block-by-number)
+
+Interesting. There are other keyword values than only "latest" you can use in an API call when referencing a block, (besides an actual block number):
+::INFO::   Allowed Tag1 values: 
+				earliest
+				finalized
+				safe
+				latest
+				pending
+
+[ ] Learn about eth_getLogs() (https://www.alchemy.com/docs/node/shape/shape-api-endpoints/eth-get-logs)
+
+This would be particularly useful if I need to create the OTOMRO database and the Export logs feature of shapescan.xyz truncates it to 10k last logs and you no longer can export them from it.
+I could see using it in a contract to load the whole history also. This could be useful in my ideas for Wizard tools. I'm not sure how or if this is different than reading the whole blockchain to see the history of reactions.
+
+[ ] This (https://www.alchemy.com/docs/how-to-listen-to-nft-mints) could be useful for learning how to watch the blockchain for new isotope creation.
