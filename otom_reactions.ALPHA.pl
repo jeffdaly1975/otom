@@ -103,11 +103,11 @@ close LIST_OUT;
 close DECAY_OUT;
 
 #### print summary
-printf STDERR "# %8d otoms\n",  scalar(keys %otom_atom_names);
-printf STDERR "# %8d isotopes\n", $order_counter;
-printf STDERR "# %8d combinations\n", ($order_counter * $order_counter);
-printf STDERR "# %8d unique combinations\n", $unique_combinations;
-printf STDERR "# %8d combinations resulting in known isotopes\n", $combo_is_existing_isotope;
+printf "# %8d otoms\n",  scalar(keys %otom_atom_names);
+printf "# %8d isotopes\n", $order_counter;
+printf "# %8d combinations\n", ($order_counter * $order_counter);
+printf "# %8d unique combinations\n", $unique_combinations;
+printf "# %8d combinations resulting in known isotopes\n", $combo_is_existing_isotope;
 
 
 __DATA__
