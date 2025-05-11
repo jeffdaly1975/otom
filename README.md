@@ -8,6 +8,8 @@ I use these files to document my research on Kjetil Golid's OTOM project on the 
 - [OTOM contract on shapescan](https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3?tab=read_write_proxy)
 - [OTOM Reactor contract on shapescan](https://shapescan.xyz/address/0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc?tab=read_write_proxy)
 - [OTOM Reaction Outputs contract on shapescan](https://shapescan.xyz/token/0x7d5A370F277e1847E4f768a88758237c6E3456eD?tab=read_write_proxy)
+- [Kjetil Golid the artist's Twitter profile](https://x.com/kGolid)
+- [William Hzo the dev's Twitter profile](https://x.com/williamhzo)
 
 ## FILES
 

@@ -1,3 +1,7 @@
+2025-05-11 May.Sun 12:41:59 [ ] Perhaps i need to redo the otom_reactions.{BOHR,ALPHA}.pl scripts such that the 3 output columns are 4 output columns like: beta+ decay, alpha decay, beta- decay, no decay
+
+::INFO:: I'm coming to understand alpha decay better. It likes to fission into an isotope with a full outer shell, plus another isotope with whatever's left.  Then it can still undergo another decay step if the resulting full outer shell isotope has a low stability and has an alpha/beta+/beta- decay type
+
 2025-05-11 May.Sun 12:04:23 Interesting. Dx-14+518 => Ju-1 + Cq-6 + Af-7 , so it produced 3 outputs from 1 input.
  Searched the reaction logs and this is the first time there was a single input and 3 outputs.
  There could be a reaction where there's 2-5 inputs and 1 of them produced 3 but I haven't attempted to differentiate those.
