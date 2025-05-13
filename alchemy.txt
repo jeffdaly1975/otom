@@ -8554,3 +8554,29 @@ Eh-124        0
 Ys-125        0
 
 
+2025-05-13 May.Tue 11:01:08 Learned how to protect my ALCHEMY API key a little better. I can now commit my scripts to github without leaking the key. I keep it in an environment variable
+
+This is how the .env file looks:
+ | ALCHEMY_API_KEY="KEY_GOES_HERE"
+
+This goes in the sh script:
+
+ | # Check if .env file exists
+ | if [ -f .env ]; then
+ |     . .env  # Load the .env file (can also use: source .env)
+ | else
+ |     echo "Error: .env file not found" >&2
+ |     exit 1
+ | fi
+ | 
+ | # Check if ALCHEMY_API_KEY is set
+ | if [ -z "$ALCHEMY_API_KEY" ]; then
+ |     echo "Error: ALCHEMY_API_KEY is not set" >&2
+ |     exit 1
+ | fi
+
+Then use it:
+ |  curl --request POST  \
+ |       --url https://shape-mainnet.g.alchemy.com/v2/$ALCHEMY_API_KEY  \
+ |       --header 'accept: application/json'  \
+ | ...

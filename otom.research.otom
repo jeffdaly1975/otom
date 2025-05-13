@@ -1,3 +1,15 @@
+2025-05-13 May.Tue 10:46:59 2 new discoveries Ax-110 and I-114 by QMA so now 628 isotopes in BOHR
+
+ OTOMRO 160509 | Vi-11 + Ek-99  + 5000 => Ax-110 + 3632.581817115541980456
+ OTOMRO 160778 | As-6  + Ha-108 + 5000 => I-114  + 3538.329830327738363849
+
+2025-05-12 May.Mon 23:15:03 [ ] what happened here: |    94889*|bohr    |  Lu-35⁺ +  Cv-98ª                               +    10000 =>   P-22 + LuLx(Lu-35,Lx-76>)                                                        +    9423.42 |     576.58 | metallic, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x42da0cf2bce75a631f5f55c90060ede73166e08eecea26dd9f99b9ec1a72c3dc | 0x2dc2cad64cfeeb42e93886b66239a26d195907d7bdbd17fcc553e4276842fbe9 |
+
+
+2025-05-12 May.Mon 23:11:19
+Lx-79\|\<Lx-77\>
+[ ] Can I discover Lx-78 by either ratcheting up Lx-77 with P-23 or ratcheting down Lx-79 with P-21
+
 2025-05-12 May.Mon 11:19:45 I moved all the reaction chain information I was writing from this research file to a new FILE chains.bohr.otom
 
 2025-05-11 May.Sun 20:02:01 New Discovery!
@@ -6141,7 +6153,18 @@ Will anything ladder down like that? What about
    [r]|  Cv-98ª           +    0 => P-22 + Lx-76
    [f]   Lx-76⁺           + 5000 => ? Dx-35 + Uq-41  <----NOPE made W-76 using 250.0 decay so I guess not enough energy?
 total: 18921
-   [*]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
+   [r]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
+   [r]|  Yu-27⁺ +  Yu-27⁺ + 1261 => Qe-54         
+   [r]|  Qe-54⁺ +  Gy-65⁺ + 3136 => P-22 + S-97   
+   [r]|  Xj-17⁺ +   S-97⁺ + 1834 => P-22 + Ok-92  
+   [r]|   P-21⁺ +  Ok-92⁺ + 1998 => P-22 + Ok-91  
+   [r]|  Mt-32⁺ +  Ok-91⁺ + 2353 => P-22 + Ek-101 
+   [r]|  Eb-19⁺ + Ek-101⁺ + 1733 => P-22 + Vt-98  
+   [r]|  Vt-98⁺           +    0 => Cv-98         
+   [r]|  Cv-98ª           +    0 => P-22 + Lx-76
+   [f]   Lx-76⁺           + 7000 => ? Dx-35 + Uq-41 <---- makes UqDx(Dx-35,Uq-41) using 5270.87 nuclear+metallic SO TOO MUCH ENERGY
+total: 20919
+   [ ]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
    [ ]|  Yu-27⁺ +  Yu-27⁺ + 1261 => Qe-54         
    [ ]|  Qe-54⁺ +  Gy-65⁺ + 3136 => P-22 + S-97   
    [ ]|  Xj-17⁺ +   S-97⁺ + 1834 => P-22 + Ok-92  
@@ -6150,8 +6173,8 @@ total: 18921
    [ ]|  Eb-19⁺ + Ek-101⁺ + 1733 => P-22 + Vt-98  
    [ ]|  Vt-98⁺           +    0 => Cv-98         
    [ ]|  Cv-98ª           +    0 => P-22 + Lx-76
-   [ ]   Lx-76⁺           + 7000 => ? Dx-35 + Uq-41
-total: 20919
+   [ ]   Lx-76⁺           + 5100 => ? Dx-35 + Uq-41
+total: 20419
 
 [>]  Lx-77⁺  + 5000   => ? Dx-35 + Uq-42
    [ ]|  Cl-25⁺ +  S-102ª + 2674 =>   P-22 + Cv-105 
@@ -6978,6 +7001,11 @@ try:
 |  Nd-30ª +  Yv-68 +  2561.99 ..    4500 => ? P-22 + Co-76    or decay to D-76
 |  Vi-10⁺ +  Yv-68 +  1210.01 ..    5000 => ? Lx-78         will decay to W-78
 |  Yv-68           +  6122.03 ..   11000 => ? K-33 + Dx-35    or decay to Lu-35
+
+
+[ ] |  Mt-32⁺ +  Yv-68 +  2408.12 ..    3000 => ? P-22 + Lx-78  will decay to W-78
+
+|  Cj-68⁺                                         +[       0.00 -      0] => ⬇ Yv-68                      | decay                        |
 
 2025-04-12 Apr.Sat 20:36:51 DAMN MERGE CONFLICTS
 
