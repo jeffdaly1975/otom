@@ -1,3 +1,31 @@
+2025-05-13 May.Tue 16:09:08 [ ] Are there recipes where multiple P-22 ratchets could be replaced with fewer P-25 super ratchets?
+
+2025-05-13 May.Tue 15:27:22 [ ] What is this mechanism? Aw-112 has alpha decay type and stability 0.566 so it likes to decay.
+
+|  Ro-22⁺ + Aw-112ª + 2200 =>   P-22 + Kn-112 + 0.50 |    2199.50 | decay, nuclear               
+
+Here it looks like Ro-22 simply decayed to P-22 and Aw-112 to Kn-112 but alpha decay doesn't work that way.
+If anything, Aw-112 would alpha decay to P-22+Se-90
+
+So it seems that Ro-22 fused with Aw-112 making ??-134ª which immediately alpha decays into P-22 + Kn-112
+
+
+2025-05-13 May.Tue 15:11:30 I only have these isotopes to add to my chains.borh.otom file:
+
+[c] Cl-30
+[c] Cj-81
+[c] U-97
+[c] U-98
+[c] Dd-88
+[c] Dd-100
+[c] Z-101
+[c] Z-102
+[c] Aw-107
+[c] Kn-112
+[c] Ax-110
+[c] I-114
+
+
 2025-05-13 May.Tue 10:46:59 2 new discoveries Ax-110 and I-114 by QMA so now 628 isotopes in BOHR
 
  OTOMRO 160509 | Vi-11 + Ek-99  + 5000 => Ax-110 + 3632.581817115541980456
@@ -1649,7 +1677,7 @@ Ratcheting DOWN:
 
 
 
-[ ] P-21⁺ +   S-93⁺   + 2542 =>?⬇ I-114           | decay, nuclear
+[-] P-21⁺ +   S-93⁺   + 2542 =>?⬇ I-114           | decay, nuclear
 |   P-21⁺ +   S-94⁺   + 2542 => ⬇ I-115           | decay, nuclear
 |   P-21⁺ +   S-95⁺   + 2182 =>   P-22 + S-94     | decay, nuclear
 |   P-21⁺ +   S-96⁺   + 2182 =>   P-22 + S-95     | decay, nuclear
@@ -6244,16 +6272,27 @@ total: 25542
    [f]   Lx-96⁻           + 5000 => ? Dx-45 + Uq-51 <-----NOT ENOUGH ENERGY! makes N-96 using 250.0 decay
 total: 38685
  try again:
+   [r]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
+   [r]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85          
+   [r]|   K-34∙ +   W-85ª + 3985 => P-22 + Se-97  
+   [r]|  Ct-17⁻ +  Se-97ª + 1825 => P-22 + Lx-92  
+   [r]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93  
+   [r]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94  
+   [r]|   P-23∙ +  Lx-94⁻ + 3028 => P-22 + Lx-95  
+   [r]|   P-23∙ +  Lx-95⁻ + 2995 => P-22 + Lx-96  
+   [f]   Lx-96⁻           + 7000 => ? Dx-45 + Uq-51 <---STILL NOT ENOUGH ENERGY! 
+total: 30519
+ try again:
    [ ]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
    [ ]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85          
    [ ]|   K-34∙ +   W-85ª + 3985 => P-22 + Se-97  
    [ ]|  Ct-17⁻ +  Se-97ª + 1825 => P-22 + Lx-92  
-   [ ]|   P-23∙ +  Lx-92∙ + 3962 => P-22 + Lx-93  
-   [ ]|   P-23∙ +  Lx-93⁻ + 3080 => P-22 + Lx-94  
-   [ ]|   P-23∙ +  Lx-94⁻ + 3032 => P-22 + Lx-95  
+   [ ]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93  
+   [ ]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94  
+   [ ]|   P-23∙ +  Lx-94⁻ + 3028 => P-22 + Lx-95  
    [ ]|   P-23∙ +  Lx-95⁻ + 2995 => P-22 + Lx-96  
-   [ ]   Lx-96⁻           + 7000 => ? Dx-45 + Uq-51
-total: 30537
+   [ ]   Lx-96⁻           + 8500 => ? Dx-45 + Uq-51
+total: 32019
 
 [>]  N-95⁻   + 10000  => ? Dx-44 + Pb-51
    [-]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83 
@@ -7434,7 +7473,7 @@ The 6th column comes into play for just 2 input sets: As-5+Dz-8 and Ct-17 by its
 |  Uq-47⁻ +   N-87⁺  + [ 4043 .. 10000] =>   P-22 + Vt-112                                     | decay, nuclear               
 
 |  Vi-10⁺ +  Ek-99⁺  + [ 1071 ..  4000] => ⬇ Ax-109                                            | decay, nuclear               
-[ ] Vi-11 + Ek-99 => ? Ax-110
+[-] Vi-11 + Ek-99 => ? Ax-110
 [ ] Vi-11 + Ek-101 => ? Ax-112
 [ ] Vi-12 + Ek-100 => ? Ax-112
 |  Ro-22⁺ +  Ok-89⁺  + [ 2081 ..  8000] => ⬇ Ax-111                                            | decay, nuclear               
@@ -8025,22 +8064,22 @@ Since I think the result will be beta+ it could want to drop a proton:
 
 2025-04-02 Apr.Wed 20:27:35 what we missing now?
 
-[ ] Ax-110
+[-] Ax-110
   since
   |  Vi-10⁺ +  Ek-99⁺  +     1071 => ⬇ Ax-109  | decay, nuclear
   |  Ro-22⁺ +  Ok-89⁺  +     2081 => ⬇ Ax-111  | decay, nuclear
 
   does
 [>] Vi-11 + Ek-99 + 2000 => ? ⬇ Ax-110
-   [ ]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
-   [ ]|  Yu-27⁺ +  Yu-27⁺ + 1261 => Qe-54         
-   [ ]|  Qe-54⁺ +  Gy-65⁺ + 3136 => P-22 + S-97   
-   [ ]|  Xj-17⁺ +   S-97⁺ + 1834 => P-22 + Ok-92  
-   [ ]|   P-21⁺ +  Ok-92⁺ + 1998 => P-22 + Ok-91  
-   [ ]|   P-21⁺ +  Ok-91⁺ + 1922 => P-22 + Ok-90  
-   [ ]|  Mt-32⁺ +  Ok-90⁺ + 2263 => P-22 + Ek-100 
-   [ ]|   P-21⁺ + Ek-100⁺ + 1784 => P-22 + Ek-99  
-   [ ]    Vi-11 + Ek-99   + 2000 => ? ⬇ Ax-110
+   [-]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
+   [-]|  Yu-27⁺ +  Yu-27⁺ + 1261 => Qe-54         
+   [-]|  Qe-54⁺ +  Gy-65⁺ + 3136 => P-22 + S-97   
+   [-]|  Xj-17⁺ +   S-97⁺ + 1834 => P-22 + Ok-92  
+   [-]|   P-21⁺ +  Ok-92⁺ + 1998 => P-22 + Ok-91  
+   [-]|   P-21⁺ +  Ok-91⁺ + 1922 => P-22 + Ok-90  
+   [-]|  Mt-32⁺ +  Ok-90⁺ + 2263 => P-22 + Ek-100 
+   [-]|   P-21⁺ + Ek-100⁺ + 1784 => P-22 + Ek-99  
+   [-]    Vi-11 + Ek-99   + 2000 => ? ⬇ Ax-110
 total: 17802
 
   Damn I don't like these huge recipe chains!
@@ -10100,7 +10139,7 @@ NO reactions in the list?!?!
  [ ] Ha-114  114 58 Ha
 NO reactions in the list?!?!
 
- [ ] Ax-110  110 59 Ax
+ [c] Ax-110  110 59 Ax
 NO reactions in the list?!?!
 
 
