@@ -395,15 +395,15 @@
 | Lx-85ª |  85 41 Lx | metal    |(0.946)|alpha |                           |                   ? Dx-39 + Uq-46 |             ? UqDx(Dx-39,Uq-46>)|                                |
 | Lx-86ª |  86 41 Lx | metal    |(0.940)|alpha |+0                    none |                   ? Dx-40 + Uq-46 |+8162.03-10000 UqDx(Dx-40,Uq-46>)|                                |
 | Lx-87∙ |  87 41 Lx | metal    |(1.876)|stable|+0                    none |                   ? Dx-40 + Uq-47 |             ? UqDx(Dx-40,Uq-47>)|                                |
-| Lx-88∙ |  88 41 Lx | metal    |(1.834)|stable|+0                    none |                   ? Dx-41 + Uq-47 |             ? UqDx(Dx-41,Uq-47>)|                                |
+| Lx-88∙ |  88 41 Lx | metal    |(1.834)|stable|+0                    none |                   ? Dx-40 + Uq-48 |             ? UqDx(Dx-40,Uq-48>)|                                |
 | Lx-89∙ |  89 41 Lx | metal    |(1.802)|stable|                           |                   ? Dx-41 + Uq-48 |             ? UqDx(Dx-41,Uq-48>)|                                |
-| Lx-90∙ |  90 41 Lx | metal    |(1.734)|stable|                           |                   ? Dx-42 + Uq-48 |             ? UqDx(Dx-42,Uq-48>)|                                |
+| Lx-90∙ |  90 41 Lx | metal    |(1.734)|stable|                           |                   ? Dx-41 + Uq-49 |             ? UqDx(Dx-41,Uq-49>)|                                |
 | Lx-91⁻ |  91 41 Lx | metal    |(0.838)|beta- |                           |                   ? Dx-42 + Uq-49 |             ? UqDx(Dx-42,Uq-49>)|                                |
-| Lx-92∙ |  92 41 Lx | metal    |(1.585)|stable|                           |                   ? Dx-43 + Uq-49 |             ? UqDx(Dx-43,Uq-49>)|                                |
+| Lx-92∙ |  92 41 Lx | metal    |(1.585)|stable|                           |               [ ] ? Dx-42 + Uq-50 |             ? UqDx(Dx-42,Uq-50>)|                                |
 | Lx-93⁻ |  93 41 Lx | metal    |(0.753)|beta- |                    ? N-93 |               [ ] ? Dx-43 + Uq-50 |             ? UqDx(Dx-43,Uq-50>)|                                |
-| Lx-94⁻ |  94 41 Lx | metal    |(0.697)|beta- |                    ? N-94 |               [ ] ? Dx-44 + Uq-50 |             ? UqDx(Dx-44,Uq-50>)|                                |
+| Lx-94⁻ |  94 41 Lx | metal    |(0.697)|beta- |                    ? N-94 |               [ ] ? Dx-43 + Uq-51 |             ? UqDx(Dx-43,Uq-51>)|                                |
 | Lx-95⁻ |  95 41 Lx | metal    |(0.648)|beta- |                    ? N-95 |               [ ] ? Dx-44 + Uq-51 |             ? UqDx(Dx-44,Uq-51>)|                                |
-| Lx-96⁻ |  96 41 Lx | metal    |(0.583)|beta- |+250.0-5000           N-96 |               [ ] ? Dx-45 + Uq-51 |             ? UqDx(Dx-45,Uq-51>)|                                |
+| Lx-96⁻ |  96 41 Lx | metal    |(0.583)|beta- |+250.0-5000           N-96 |               [ ] ? Dx-44 + Uq-52 |+7813.62-8500  UqDx(Dx-44,Uq-52>)|                                |
 +--------+-----------+----------+-------+------+---------------------------+-----------------------------------+---------------------------------+--------------------------------+
 | N-81⁺  |  81 42  N | metal    |(0.661)|beta+ |+250.0-5000        ⬇ Lx-81 |                                   |               ? Dx-37 + Pb-44   |                                |
 | N-82⁺  |  82 42  N | metal    |(0.725)|beta+ |                   ? Lx-82 |                                   |               ? Dx-37 + Pb-45   |                                |
