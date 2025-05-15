@@ -1,3 +1,7 @@
+2025-05-14 May.Wed 21:57:27 I examined how the Annihilator logs are structured.
+ This search pattern captures the NRG returned in \1 in hex and a single otom burned as the hex token id in \2
+ /0x0000000000000000000000000000000000000000000000000000000000000040\(\w\{64}\)0000000000000000000000000000000000000000000000000000000000000001\(\w\{64}\),.*/
+
 2025-05-13 May.Tue 16:09:08 [ ] Are there recipes where multiple P-22 ratchets could be replaced with fewer P-25 super ratchets?
 
 2025-05-13 May.Tue 15:27:22 [ ] What is this mechanism? Aw-112 has alpha decay type and stability 0.566 so it likes to decay.
@@ -6293,16 +6297,29 @@ total: 30519
    [r]|   P-23∙ +  Lx-95⁻ + 2995 => P-22 + Lx-96  
    [f]   Lx-96⁻           + 8500 => ? Dx-45 + Uq-51 <---NOPE TOO MUCH makes UqDx(Dx-44,Uq-52) using 7813.62 nuclear, metallic
 total: 32019
+   [r]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
+   [r]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85          
+   [r]|   K-34∙ +   W-85ª + 3985 => P-22 + Se-97  
+   [r]|  Ct-17⁻ +  Se-97ª + 1825 => P-22 + Lx-92  
+   [r]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93  
+   [r]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94  
+   [r]|   P-23∙ +  Lx-94⁻ + 3028 => P-22 + Lx-95  
+   [r]|   P-23∙ +  Lx-95⁻ + 2995 => P-22 + Lx-96  
+   [f]   Lx-96⁻           + 7400 => ? Dx-44 + Uq-52  <---NOPE NOT ENOUGH makes N-96 using 370.0 decay
+total: 30919
+NEED TO GET BETWEEN 7400-7813
    [*]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
    [ ]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85          
    [ ]|   K-34∙ +   W-85ª + 3985 => P-22 + Se-97  
-   [ ]|  Ct-17⁻ +  Se-97ª + 1825 => P-22 + Lx-92  
+   [ ]|  Ct-17⁻ +  Se-97ª + 1816 => P-22 + Lx-92  
    [ ]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93  
    [ ]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94  
-   [ ]|   P-23∙ +  Lx-94⁻ + 3028 => P-22 + Lx-95  
-   [ ]|   P-23∙ +  Lx-95⁻ + 2995 => P-22 + Lx-96  
-   [ ]   Lx-96⁻           + 7400 => ? Dx-45 + Uq-51  NEED TO GET BETWEEN 7000-7813
-total: 30919
+   [ ]|   P-23∙ +  Lx-94⁻ + 3027 => P-22 + Lx-95  
+   [ ]|   P-23∙ +  Lx-95⁻ + 2988 => P-22 + Lx-96  
+   [ ]   Lx-96⁻           + 7600 => ? Dx-44 + Uq-52
+total: 31102
+
+[r]As-6∙ +  Ct-17⁻                               +      495 => ⬆ P-23
 
 [>]  N-95⁻   + 10000  => ? Dx-44 + Pb-51
    [-]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83 
