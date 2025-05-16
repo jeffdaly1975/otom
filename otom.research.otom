@@ -1,3 +1,10 @@
+2025-05-16 May.Fri 14:22:48 NOTE: IN Shape discord on the bug I filed about the Shape bot announcing new discoveries as all belonging to Universe Alpha.
+They fixed it and it now reports the correct universe.
+mathewzilla said "there's a 'molecule discovered' blockchain event which has the universe hash in the args"
+
+[ ] NEED TO CHECK THAT OUT
+
+
 2025-05-15 May.Thu 22:29:17 New Discovery Ro-28 so 630 isotopes in BOHR
  Uq-52⁻ + 3195 => P-24 + Ro-28
 
