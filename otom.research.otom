@@ -1,3 +1,41 @@
+2025-05-15 May.Thu 22:29:17 New Discovery Ro-28 so 630 isotopes in BOHR
+ Uq-52⁻ + 3195 => P-24 + Ro-28
+
+[ ] update my files for Ro-28
+[ ] Ro-28⁻ + 3000 => ? Vi-13 + Vi-15
+
+2025-05-15 May.Thu 21:50:12 New Discovery Uq-52 so now 629 isotopes in BOHR
+   Lx-96⁻ + 7693 => Dx-44 + Uq-52   <---SUCCESS!!! makes Dx-44 + Uq-52 using 7692.46 nuclear
+
+try:
+ [r] Uq-52⁻ + 5000 => ? Eb-24 + Ro-28  <----NOPE makes P-24 + Ro-28 using 3194.77 nuclear+decay
+
+OTOMRO 170639: Uq-52⁻ + 5000 => P-24 + Ro-28 + 1805.23 using 3194.77 nuclear+decay
+
+2025-05-15 May.Thu 20:11:50 It just came to me that perhaps when a reaction is performed, 
+ (1) the input NRG is determined to be in one of 3 or 4 bands of ranges, and that reaction occurs.
+ (2) There is an immediate application of stability and decay rules that if the stability is below 0.78 (as far as I can tell) and the decay type is beta+/beta-/alpha, it will do that decay step.
+     -> Alpha decay splits the isotope into one that has a completely full outer shell (like P-22) and whatever is left. Here are the candidates which are always noble gases:
+          Alpha: Cq, Zz, Pt, Gy, Oc, Jx, Gq, Ua
+          Bohr:   P,  K, Ux, Co, Ok, Ha
+     -> Beta- decay adds a proton
+     -> Beta+ decay removes a proton
+ (3) If there is a lot of energy left (say they put in 10000 and it used 4000 for step 1) another reaction takes place. It may just add a bunch of energy to 1 otom or to multiple otoms and form a molecule or fuse or fission.
+
+
+Perhaps this allows for reactions we haven't even properly tried yet. Like cause a molecule to be formed that breaks back into otoms that fuse to make another and combine with yet another of the inputs.
+
+2025-05-15 May.Thu 14:54:07 I noticed in the OTOM app Handbook that it says the Bohr universe has 69 otoms so I added some columns to FILE all_isotopes_stability_chart_universe_Bohr.txt
+
+There are 4 we haven't found yet:
+[ ] discover otom with 64 protons
+[ ] discover otom with 67 protons
+[ ] discover otom with 68 protons
+[ ] discover otom with 69 protons
+
+2025-05-15 May.Thu 14:38:48 I created a new highlighting mode in my syntax/otom.vim file that colors Bohr isotopes based on the number of chains necessary to create it.
+[c] need to add Dd-100 to chains.bohr.otom
+
 2025-05-14 May.Wed 21:57:27 I examined how the Annihilator logs are structured.
  This search pattern captures the NRG returned in \1 in hex and a single otom burned as the hex token id in \2
  /0x0000000000000000000000000000000000000000000000000000000000000040\(\w\{64}\)0000000000000000000000000000000000000000000000000000000000000001\(\w\{64}\),.*/
@@ -6308,18 +6346,33 @@ total: 32019
    [f]   Lx-96⁻           + 7400 => ? Dx-44 + Uq-52  <---NOPE NOT ENOUGH makes N-96 using 370.0 decay
 total: 30919
 NEED TO GET BETWEEN 7400-7813
-   [*]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
-   [ ]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85          
-   [ ]|   K-34∙ +   W-85ª + 3985 => P-22 + Se-97  
-   [ ]|  Ct-17⁻ +  Se-97ª + 1816 => P-22 + Lx-92  
-   [ ]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93  
-   [ ]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94  
-   [ ]|   P-23∙ +  Lx-94⁻ + 3027 => P-22 + Lx-95  
-   [ ]|   P-23∙ +  Lx-95⁻ + 2988 => P-22 + Lx-96  
-   [ ]   Lx-96⁻           + 7600 => ? Dx-44 + Uq-52
+   [r]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
+   [r]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85          
+   [r]|   K-34∙ +   W-85ª + 3985 => P-22 + Se-97   used 3982.43 nuclear+decay
+   [r]|  Ct-17⁻ +  Se-97ª + 1816 => P-22 + Lx-92   used 1814.89 nuclear+decay
+   [r]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93  
+   [r]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94  
+   [r]|   P-23∙ +  Lx-94⁻ + 3027 => P-22 + Lx-95  
+   [r]|   P-23∙ +  Lx-95⁻ + 2988 => P-22 + Lx-96   
+   [f]   Lx-96⁻           + 7600 => ? Dx-44 + Uq-52 <---NOPE STILL NOT ENOUGH!!!! makes N-96 using 380.00 decay
 total: 31102
+NEED TO GET BETWEEN 7400-7813
+   [r]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83
+   [r]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85
+   [r]|   K-34∙ +   W-85ª + 3983 => P-22 + Se-97
+   [r]|  Ct-17⁻ +  Se-97ª + 1815 => P-22 + Lx-92
+   [r]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93
+   [r]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94
+   [r]|   P-23∙ +  Lx-94⁻ + 3027 => P-22 + Lx-95
+   [r]|   P-23∙ +  Lx-95⁻ + 2988 => P-22 + Lx-96
+   [r]   Lx-96⁻           + 7700 => ? Dx-44 + Uq-52   <---SUCCESS!!! makes Dx-44 + Uq-52 using 7692.46 nuclear
+total: 31099
 
-[r]As-6∙ +  Ct-17⁻                               +      495 => ⬆ P-23
+[r]As-6∙ +  Ct-17⁻  +      495 => ⬆ P-23
+[r]As-6∙ +  Ct-17⁻  +      495 => ⬆ P-23
+[r]As-6∙ +  Ct-17⁻  +      495 => ⬆ P-23
+[r]Sr-1∙ +  Eb-22∙  +      640 =>   P-23  used 636.66 nuclear
+[r]Sr-1∙ +  Eb-22∙  +      640 =>   P-23  used 636.66 nuclear
 
 [>]  N-95⁻   + 10000  => ? Dx-44 + Pb-51
    [-]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83 
