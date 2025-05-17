@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 #
-# 2025-04-20 Apr.Sun 20:22:38 Calls balanceOf() function with all 619 Bohr Isotopes
+# 2025-04-20 Apr.Sun 20:22:38 Calls worker.bohr.sh script which calls balanceOf() function with all Bohr Isotopes
 #
 
 # usage: get_isotopes_bohr.pl WALLET
@@ -31,6 +31,7 @@ while (scalar(@ARGV)>0){
 
 die "invalid input for wallet: $wallet" unless $wallet =~ m/^0x[a-fA-f0-9]{40}$/;
 
+# I built this hash when over 600 isotopes. Now I add each new discovered isotope to the bottom and to the isotopes_worker.bohr.sh script at the same time to keep them in agreement
 my %idhash=(
   1 => "Sr-1",
   2 => "Sr-2",
@@ -661,6 +662,7 @@ my %idhash=(
 627 => "Ax-110",
 628 => "I-114",
 629 => "Uq-52",
+630 => "Ro-28",
 );
 
 
