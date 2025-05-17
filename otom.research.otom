@@ -1,3 +1,33 @@
+2025-05-17 May.Sat 00:19:28 [c] what is the heaviest molecule in either Universe right now?
+[c] run my parser with the Token Data code enabled.
+
+Looks like its Sq₅ composed of 5 Sq-84 otoms resulting in 420 mass:
+
+TOKEN DATA: {
+"name":"Sq₅ molecule",
+"image":"https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26Sq84-Sq84,Sq84,Sq84,Sq84-token.png",
+"chipImage":"https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26Sq84-Sq84,Sq84,Sq84,Sq84-chip.png",
+"attributes":[
+  {"trait_type":"Name","value":"Sq₅"},
+  {"trait_type":"Activation Energy","value":166.41091367093065},
+  {"trait_type":"Radius","value":2.5238729283737316},
+  {"trait_type":"Mass","value":420},
+  {"trait_type":"Bond Type","value":"covalent"},
+  {"trait_type":"Bond Strength","value":25.64572953429428},
+  {"trait_type":"Giving Atoms","value":"Sq"},
+  {"trait_type":"Receiving Atoms","value":"Sq, Sq, Sq, Sq"},
+  {"trait_type":"Electrical Conductivity","value":0},
+  {"trait_type":"Thermal Conductivity","value":8.397138425753782},
+  {"trait_type":"Toughness","value":0.5},
+  {"trait_type":"Hardness","value":0.2},
+  {"trait_type":"Ductility","value":0},
+  {"trait_type":"Universe","value":"Alpha"}]}
+
+
+The strongest Bond Strength is:
+  ViEb₂WyXj(Vi-13,Eb-20,Eb-21,Wy-50,Xj-18) Bond Strength: 99.10996175919233
+
+
 2025-05-16 May.Fri 14:22:48 NOTE: IN Shape discord on the bug I filed about the Shape bot announcing new discoveries as all belonging to Universe Alpha.
 They fixed it and it now reports the correct universe.
 mathewzilla said "there's a 'molecule discovered' blockchain event which has the universe hash in the args"

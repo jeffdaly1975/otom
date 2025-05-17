@@ -14493,7 +14493,7 @@ let   electrodict["124 65 Eh"]="0.335" | let   electrodict["Eh-124"]="0.335"
 let   electrodict["125 66 Ys"]="0.544" | let   electrodict["Ys-125"]="0.544"
 
 " This is not ideal but I set this if statement to 1 if I want to have highlighting show rarity or 0 if I want it to show decay types
-if 1
+if 0
 syn match rarity_common   /\<1\s\+1\s\+Ju\>/     | syn match rarity_common   /\<Ju-1\>/            
 syn match rarity_common   /\<2\s\+1\s\+Ju\>/     | syn match rarity_common   /\<Ju-2\>/            
 syn match rarity_common   /\<3\s\+1\s\+Ju\>/     | syn match rarity_common   /\<Ju-3\>/            

@@ -1056,7 +1056,7 @@ print for @b12; print "\n";
 print for @b13; print "\n";
 print for @b14; print "\n";
 print                 "\" This is not ideal but I set this if statement to 1 if I want to have highlighting show rarity or 0 if I want it to show decay types\n";
-print                 "if 1\n";
+print                 "if 0\n";
 print for @b15; print "\n";
 print                 "elseif 0\n";
 print for @b16; print "\n";
