@@ -1,10 +1,10 @@
 #!/usr/bin/perl -w
 
 #
-# 2025-04-20 Apr.Sun 20:22:38 Calls worker.bohr.sh script which calls balanceOf() function with all Bohr Isotopes
+# 2025-04-20 Apr.Sun 20:22:38 Calls isotpes_worker.bohr.sh script which calls balanceOf() function with all Bohr Isotopes
 #
 
-# usage: get_isotopes_bohr.pl WALLET
+# usage: get_isotopes_bohr.alchemy.pl WALLET
 
 # examples:
 #   get_isotopes_bohr.alchemy.pl 0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc
@@ -1296,6 +1296,7 @@ my %hexhash=(
  "Ax-110"=> "a1fd42ca5fe35cfc607a9ca82e11c149bd1ac494a76568f09fa862b0ef01e062",
  "I-114" => "bc5a1209e6e02a28f4ecc38ab5fffc5c49b6f6e43325f31ea40938473a9150a0",
  "Uq-52" => "5d27b93e22878c818e06f755475031fcf201570f4e7a0de8b3392624507b400e",
+ "Ro-28" => "1feab8d57e2ec87350676cf8a7179127db37a41157ba4ca468309109f35a6534",
 );
 
 # [ ] I could update this for all possible isotopes and print out the NRG total of your wallet isotopes

@@ -1,5 +1,56 @@
+2025-05-17 May.Sat 16:16:55 [ ] Try calling the initiateReation calls with alchemy - it could allow even (slightly) cheaper input NRG requirements because you specify for example 1234.0 as 1234000000000000000000 so if we examine the exact amount returned in the analyseReactions logs we can narrow it down to the precisely minimal amount.
+
+2025-05-17 May.Sat 13:18:37 Crafted a Tier 5 PkAx using Sq₅
+     
+shapescan URL:    https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/546479559508024560959798318917703155197
+Name:             (T5) PkAx
+Description:      A pickaxe for mining
+Item ID:          2
+Creator:          0x04533cb42695180f2f84c569707650e8b54e1bf4
+Stackable:        No
+Tier:             5
+Mining Power:     30
+Usages Remaining: 6
+Crafted From:     Ju₃+Af-7+Sq₅(Sq-84>Sq-84,Sq-84,Sq-84,Sq-84) 
+
+Need to replace the Sq₅ now:
+   [ ]  Sq-84∙ +  Sq-84∙ +  Sq-84∙ +  Sq-84∙ +  Sq-84∙ + 184 => Sq₅(Sq-84>Sq-84,Sq-84,Sq-84,Sq-84) 
+
+2025-05-17 May.Sat 12:53:10
+
+which is a cheaper Ji-104:
+|   161196*|bohr    |  Yu-28ª +  Cv-98ª                               +     5000 =>   P-22 + Ji-104                                                                    +    2484.98 |    2515.02 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x8f2401bd8590d16aed182e50d1fb415e90e10f96aee58e677ae49b232223a71a | 0x126044912e13e3575d5850c51ccc9e8a7231d31d4bdab444f4f0dac725661607 |
+|   161197*|bohr    |   As-7∙ +  X-119ª                               +     7500 =>   P-22 + Ji-104                                                                    +    5801.63 |    1698.37 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xa499123688624e534ad4fe801e64bfc1a0187cf7289e93f42946cee0c06f6a9a | 0x134bcaa18d7e67dba0ca86f63964ba9a7cf25d517bfe96d0167e3bcfa5d5ed0b |
+
+
+
+ 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
+ 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06 -  20000] => Gy-65         | nuclear                      |
+ 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
+ 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
+ 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09 -   5000] => P-22 + Ok-91  | decay, nuclear               |
+ 5-chain Ek-101 :: 12182.47 |  Mt-32⁺ +  Ok-91⁺   +[  2352.78 -   4000] => P-22 + Ek-101 | decay, nuclear               |
+ 6-chain Vt-98  :: 13914.73 |  Eb-19⁺ + Ek-101⁺   +[  1732.30 -  19000] => P-22 + Vt-98  | decay, nuclear               |
+ 7-chain Cv-98  :: 13914.73 |  Vt-98⁺             +[     0.00 -      0] => Cv-98         | decay                        |
+                   16429.75 |  Yu-28ª +  Cv-98ª   +[  2515.02 -   5000] => P-22 + Ji-104 | decay, nuclear               |
+
+ 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
+ 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06 -  20000] => Gy-65         | nuclear                      |
+ 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
+ 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
+ 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09 -   5000] => P-22 + Ok-91  | decay, nuclear               |
+ 5-chain Ek-101 :: 12182.47 |  Mt-32⁺ +  Ok-91⁺   +[  2352.78 -   4000] => P-22 + Ek-101 | decay, nuclear               |
+ 6-chain Vt-98  :: 13914.73 |  Eb-19⁺ + Ek-101⁺   +[  1732.30 -  19000] => P-22 + Vt-98  | decay, nuclear               |
+ 7-chain X-119  :: 15749.35 |   P-21⁺ +  Vt-98⁺   +[  1834.62 -  10000] => X-119         | decay, nuclear               |
+                   17447.72 |   As-7∙ +  X-119ª   +[  1698.37 -   7500] => P-22 + Ji-104 | decay, nuclear               |
+
+[ ] hmm. The Cv-98 route is about 1000 cheaper.
+
+
+
 2025-05-17 May.Sat 00:19:28 [c] what is the heaviest molecule in either Universe right now?
 [c] run my parser with the Token Data code enabled.
+
 
 Looks like its Sq₅ composed of 5 Sq-84 otoms resulting in 420 mass:
 
@@ -22,6 +73,69 @@ TOKEN DATA: {
   {"trait_type":"Hardness","value":0.2},
   {"trait_type":"Ductility","value":0},
   {"trait_type":"Universe","value":"Alpha"}]}
+
+[c] Make it
+   [c]  Sq-84∙ +  Sq-84∙ +  Sq-84∙ +  Sq-84∙ +  Sq-84∙ + 184 => Sq₅(Sq-84>Sq-84,Sq-84,Sq-84,Sq-84) 
+
+[ ] If we can do 5 Ys otoms in Bohr, that would be a mass of 5*125=625
+
+Oh wow it looks like Ys will perfectly allow for Ys₅, if you have 4 in a stack, a 5th one's 8 electrons fit in the 8-hole:
+   32       8
+  ⎥◼◼◼ ◼◼◼◼◼◻◻⎢
+  ⎥◼◼◼ ◼◼◼◼◼◻◻⎢
+  ⎥◼◼◼ ◼◼◼◼◼◻◻⎢
+  ⎥◼◼◼ ◼◼◼◼◼◻◻⎢
+
+The only concern is that Ys-125ª is extremely unstable at (0.136)
+
+try making Ys₅ and perhaps reduce the inputs to the optimal values as each reaction shows how much energy we get back.
+Checking for the ways to make Ys-125:
+ 7-chain Ys-125 :: 16044.28 |  Cl-25⁺ + Ek-100⁺   +[  2030.59 -  20000] => Ys-125        | decay, nuclear               |
+ 7-chain Ys-125 :: 16448.01 |  Yu-27⁺ +  Vt-98⁺   +[  2533.28 -  15000] => Ys-125        | decay, nuclear               |
+ 8-chain Ys-125 :: 18669.67 |  Ro-22⁺ + Ji-103⁺   +[  1858.14 -  13000]=>  Ys-125        | decay, nuclear               |
+ 9-chain Ys-125 :: 18537.12 |  Xj-17⁺ + Ha-108⁺   +[  1635.40 -   7000]=>  Ys-125        | decay, nuclear               |
+
+
+Initially it 5 * 16044.28 = 80221.4 NRG required to make 5 Ys
+[c] first  Ys₅
+  [r] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      | asterisk * means it is the optimal minimal input already
+  [r] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+  [r] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               |
+  [r] 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               |
+  [r] 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
+  [r] 5-chain Ok-90  :: 11750.97 |   P-21⁺ +  Ok-91⁺   +[  1921.28 -   5000] => P-22 + Ok-90  | decay, nuclear               | used 1920.93  [ ] update chains
+  [r] 6-chain Ek-100 :: 14013.69 |  Mt-32⁺ +  Ok-90⁺   +[  2262.72 -   3000] => P-22 + Ek-100 | decay, nuclear               | used 2260.87  [ ] update chains
+  [r] 7-chain Ys-125 :: 16044.28 |  Cl-25⁺ + Ek-100⁺   +[  2030.59 -  20000] => Ys-125        | decay, nuclear               | used 1987.64  [ ] update chains
+[ ] second Ys₅
+  [r] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      | asterisk * means it is the optimal minimal input already
+  [r] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+  [r] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               |
+  [r] 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               |
+  [*] 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
+  [ ] 5-chain Ok-90  :: 11750.62 |   P-21⁺ +  Ok-91⁺   +[  1920.93 -   5000] => P-22 + Ok-90  | decay, nuclear               |
+  [ ] 6-chain Ek-100 :: 14011.49 |  Mt-32⁺ +  Ok-90⁺   +[  2260.87 -   3000] => P-22 + Ek-100 | decay, nuclear               |
+  [ ] 7-chain Ys-125 :: 15999.13 |  Cl-25⁺ + Ek-100⁺   +[  1987.64 -  20000] => Ys-125        | decay, nuclear               |
+[ ] third  Ys₅
+  [r] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      | asterisk * means it is the optimal minimal input already
+  [r] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+  [r] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               |
+  [r] 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               |
+  [*] 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
+  ...[ ] fill in with reduced input NRG
+[ ] fourth Ys₅
+  [r] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      | asterisk * means it is the optimal minimal input already
+  [r] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+  [r] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               |
+  [r] 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               |
+  [*] 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
+  ...[ ] fill in with reduced input NRG
+[ ] fifth  Ys₅
+  [r] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      | asterisk * means it is the optimal minimal input already
+  [r] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+  [r] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               |
+  [r] 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               |
+  [*] 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
+  ...[ ] fill in with reduced input NRG
 
 
 The strongest Bond Strength is:

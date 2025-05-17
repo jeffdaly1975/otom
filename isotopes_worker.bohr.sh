@@ -5,8 +5,8 @@
 #
 
 # USAGE:
-# isotopes_worker.bohr.sh 0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc 2a4A229C4d748C2346963d0bB30C48Cd11021aAc
-# isotopes_worker.bohr.sh 0x620051B8553a724b742ae6ae9cC3585d29F49848 620051B8553a724b742ae6ae9cC3585d29F49848
+# isotopes_worker.bohr.sh 0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc
+# isotopes_worker.bohr.sh 0x620051B8553a724b742ae6ae9cC3585d29F49848
 
 # Contract name:          ? Otoms implementation?
 # Contract address:       0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3
