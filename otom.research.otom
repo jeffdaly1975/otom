@@ -1,3 +1,15 @@
+2025-05-19 May.Mon 17:43:16 completed my file chains.alpha.otom and the chains in Alpha are much better than Bohr. The longest is 6 chains for Gy-30. In Bohr its currenty 11 for V-39 and Vl-84
+::FILE:: chains.alpha.otom
+::FILE:: chains.bohr.otom
+
+2025-05-19 May.Mon 16:16:13 Its frustrating that there are some otom names used in both Alpha and Bohr. It makes syntax highlighting tricky because if the isotope is present in both, which do I choose? It will be overwritten by the second highlighting commands and forever confuse.
+Here are some:
+
+U-83 is present in both
+Aw-44 .. Aw-52 in Alpha but Aw-104 .. Aw-124 in Bohr
+S-24  .. S-30  in Alpha but S-94   .. S-109  in Bohr
+D-32  .. D-39  in Alpha but D-74   .. D-84   in Bohr
+
 2025-05-19 May.Mon 12:46:00 william_hzo asked for proposals for new Assembly items: https://github.com/shape-network/assembly/discussions/50
 
 I suggested this:
@@ -96,19 +108,18 @@ donquixuote.eth == 0x72fE3C398C9A030b9b2be1fe1Ff07701167571d4
 [c] add the chains to the syntax file maker convert_token_id_to_hex.pl
 
 
-2025-05-18 May.Sun 00:05:42 [ ] Need to figure out chains for alpha so they do the syntax highlighting. I have it in a mode to show each isotope with syntax coloring based on the number of chains you must react before getting to this isotope. Mineables are 0-chain. But I have only researched that for Bohr so all Alpha otoms are not highlighted at all!
-[ ] Add chains for alpha to file chains.alpha.otom and add to convert_token_id_to_hex.pl so that it puts the syntax code right where it needs to be generated.
+2025-05-18 May.Sun 00:05:42 [c] Need to figure out chains for alpha so they do the syntax highlighting. I have it in a mode to show each isotope with syntax coloring based on the number of chains you must react before getting to this isotope. Mineables are 0-chain. But I have only researched that for Bohr so all Alpha otoms are not highlighted at all!
+[c] Add chains for alpha to file chains.alpha.otom and add to convert_token_id_to_hex.pl so that it puts the syntax code right where it needs to be generated.
   [c] chain0 (mineables)
   [c] chain1
-     [ ] but forgot single input chain0 that decay to chain1 outputs
-  [ ] chain2
-  [ ] chain3
-  [ ] chain4
-  [ ] chain5?
-  [ ] chain6?
-  [ ] chain7?
-  [ ] chain8?
+     [c] but forgot single input chain0 that decay to chain1 outputs
+  [c] chain2
+  [c] chain3
+  [c] chain4
+  [c] chain5?
+  [c] chain6?
 
+The longest shortest chain in Alpha is chain6 for Gy-30
 
 2025-05-17 May.Sat 16:16:55 [ ] Try calling the initiateReation calls with alchemy - it could allow even (slightly) cheaper input NRG requirements because you specify for example 1234.0 as 1234000000000000000000 so if we examine the exact amount returned in the analyseReactions logs we can narrow it down to the precisely minimal amount.
 

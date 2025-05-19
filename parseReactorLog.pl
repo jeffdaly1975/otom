@@ -1506,9 +1506,9 @@ $db{"7152"}
 	 'otoms_in_list'  => [ 'Gy-34', 'Cq-5', 'Ju-1', ],
 	 'energy_in'      => 2600,
 
-	 'otoms_out'      => 'Gy-34 + JuW',
-	'otoms_out_sorted'=> 'Gy-34 + JuW',
-	 'otoms_out_list' => [ 'Gy-34', 'JuW' ],
+	 'otoms_out'      => 'Gy-34 + JuW(Ju-1>W-5)',          # [ ] I added the atomic makeup in parenthesis to match other output and hopefully it doesnt break anything here
+	'otoms_out_sorted'=> 'Gy-34 + JuW(Ju-1>W-5)',
+	 'otoms_out_list' => [ 'Gy-34', 'JuW(Ju-1>W-5)' ],   
 	 'protons_in'     => 20,
 	 'protons_out'    => 19,
 	 'energy_out'     => '2466.39767237974820091',
