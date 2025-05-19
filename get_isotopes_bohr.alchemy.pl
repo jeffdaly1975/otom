@@ -663,6 +663,14 @@ my %idhash=(
 628 => "I-114",
 629 => "Uq-52",
 630 => "Ro-28",
+631 => "S-105", 
+632 => "S-106", 
+633 => "S-107", 
+634 => "Aw-109", 
+635 => "Aw-110", 
+636 => "Z-108",
+637 => "Z-109",
+638 => "Z-110",
 );
 
 
@@ -1297,6 +1305,14 @@ my %hexhash=(
  "I-114" => "bc5a1209e6e02a28f4ecc38ab5fffc5c49b6f6e43325f31ea40938473a9150a0",
  "Uq-52" => "5d27b93e22878c818e06f755475031fcf201570f4e7a0de8b3392624507b400e",
  "Ro-28" => "1feab8d57e2ec87350676cf8a7179127db37a41157ba4ca468309109f35a6534",
+ "S-105" => "194b191b4fb84a8177aab14cbcd9ef8e68419bcc034ebc9d939d1811c3702e26",
+ "S-106" => "0fac0fb1e63d1fc756174fbc0c1076fc04866b4ea44b6a5dce694ed289fd0003",
+ "S-107" => "ac29f38c4d3c432e47ef830f6fd9e9376667316d51765c45a0aec398eeb6436e",
+ "Aw-109"=> "74709765df2885d37f4f7a00ecca8987ffd78241ad9b2c2906e70a929b07318a",
+ "Aw-110"=> "c280d1e51cefcdb89f9553565ede4dacd3dba2c5369e19c48ba50877f387d1b1",
+ "Z-108" => "813119b4d35018e065a16b2c3f384654f61c445def5a307b786a540bffe20ba4",
+ "Z-109" => "499bc043fbc4fef7cd8c0c0bae2df8139d6183bca6ea7caa0eca9f73dc0e0e0a",
+ "Z-110" => "d67311b73072a0f24c48b09e38b61b49319537e9cabd91773c982b14eab90b0f",
 );
 
 # [ ] I could update this for all possible isotopes and print out the NRG total of your wallet isotopes
