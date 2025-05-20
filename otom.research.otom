@@ -1,10 +1,3 @@
-
- 36 16  K 
--22 11  P
--------
- 14  5 Gj
-
-
 2025-05-19 May.Mon 20:46:33 I can't believe I never noticed this before, but you can see the logs of the OtomsDatabaseV2 Implmementation:
 https://shapescan.xyz/address/0x953761a771d6Ad9F888e41b3E7c9338a32b1A346?tab=logs
 
@@ -5702,6 +5695,15 @@ try:
   [ ]  Aw-124ª           +11121 =>   Ux-57 + Ns-67 using 11120.32 nuclear
   [ ]   Ns-67⁻           +10000 => ? Yu-31 + K-36
 total: 44233
+
+Would P-24 + K-35 work? Doesn't look like the ratchet works on otoms that small
+What about P-25 + Vl-97 => Vl-100 ? No P-25 takes 6 chains itself
+
+  [ ]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  
+  [ ]|   K-34∙ +  Co-83⁺ + 3823 => ⬇ P-22 + Vl-95  
+  [ ]|    P-24 + Vl-95 => Vl-97
+  [ ]|    P-24 + Vl-97 => Vl-99
+  [ ]|    P-24 + Vl-99 => Vl-101
 
 2025-04-24 Apr.Thu 16:00:36 How much energy does burning each isotope produce?
 
@@ -22113,7 +22115,7 @@ But someone found an in between place where it decayed into W-4 + Ju-3!
 
 okay I tried that with Dx-15, where I did a bit lower than what I'd seen in the logs and it DID produce 2 otoms instead of a molecule!
  15  8 Dx⁺ + 600 =>  7  4 Afª +  8  4 Af∙ + 5.73 
-[ ] Figure out how to put this in my decay table. Add a row for 500-1000? add in how much energy each is using?
+[c] Figure out how to put this in my decay table. Add a row for 500-1000? add in how much energy each is using?
 
 [c] try it with 19  8 Dx since that could discover Af-10. It uses 1280 NRG to make Af₂(Af-10,Af-9>)
    [c]  9  4 Af + 32 14 Zq + 1200 => 41 18 Fj
@@ -22128,17 +22130,20 @@ okay I tried that with Dx-15, where I did a bit lower than what I'd seen in the 
 2025-01-22 Jan.Wed 22:32:00 I've got my script parseReactorLog.pl working pretty good now. It takes a file of CSV Reactor contract logs and produces reaction listings
 
 2025-01-22 Jan.Wed 12:12:04 Here's the Reactor LOG data that shows Af-10 and Af-9. We can see that the stability is 0.289899154616624077 which is very low.
-[ ] There are also some fields I cannot decipher. Most the fields match up with the data you see for each otom on the Shapescan  token page
-     [ ] For Af-9,
+[c] There are also some fields I cannot decipher. Most the fields match up with the data you see for each otom on the Shapescan  token page
+     [c] For Af-9,
            what is "1.088155548943689599" the value after the radius value?
+          ANSWER: Its the volume
 
            what is "1.000000000000000000" listed after the universe hash before the shells
                    "0.672524977684952341"
                    "4.000000000000000000"
                    "1.000000000000000000"
+           ANSWER: Its structural information - depth, distance, distanceIndex, shell
 
            what is "4.000000000000000000" listed after the shells
                    "0"                    
+           ANSWER: Its called "Ancestors" whatever that is
 
 Address Reactor
 Decode input data
@@ -22154,56 +22159,57 @@ Call ReactionAnalysed(uint256 indexed moleculeId, address indexed labTechnician,
     [
         [
             [
-line 28-30      "fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26Af10,Af9-",
+line 28-30      "fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26Af10,Af9-",      # This is the moleculeId, which is the universe hash followed by the otoms
                 "Af₂",
-                "0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26",
-                "18472397862525546941",
-                "1028561648650107685",
+                "0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26", # universeHash
+                "18472397862525546941",          # activationEnergy 18.472397862525546941
+                "1028561648650107685",           # radius 1.028561648650107685
                 [
-                    "3888925865794851777",
-                    "metallic"
+                    "3888925865794851777",       # bond strength 3.888925865794851777
+                    "metallic"                   # bond type: metallic
                 ],
                 [
                     [                            THIS IS UNDISCOVERED Af-10 aka 10 4 Af
                          "1.028561648650107685", radius
-                         "1.088155548943689599", ??? [ ] WHATS THIS? Its the same for both these "Af" otoms
+                         "1.088155548943689599", volume 
                         "10.000000000000000000", mass
                          "9.189862616339500079", density
                          "0.125000000000000000", electronegativity
                         "true",                  metallic
                         "Af",                    name
                         "alkaline",              series
-                        "2000000000000000000",   group/row
-                        "1000000000000000000",   period/column
+                        "2000000000000000000",   group/row  2
+                        "1000000000000000000",   period/column 1
                         [
-                            "0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26",
-                            "10.00000000000000000",  ??? [ ] WHATS THIS FOR
-                             "0.672524977684952341", ??? [ ] WHATS THIS FOR
-                             "4.000000000000000000", ??? [ ] WHATS THIS FOR
-                             "1.000000000000000000", ??? [ ] WHATS THIS FOR
-                            [                          Max valence in outer shell 0-2-2-0-0-0-0-0
+                                                                                                   # structure {}
+                            "0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26",  # universeHash
+                            "10.00000000000000000",    # depth
+                             "0.672524977684952341",   # distance
+                             "4.000000000000000000",   # distanceIndex
+                             "1.000000000000000000",   # shell
+                            [                          # Max valence in outer shell 0-2-2-0-0-0-0-0
                                 "0",
-                                "2000000000000000000",
-                                "2000000000000000000",
-                                "0",
-                                "0",
-                                "0",
-                                "0",
-                                "0"
-                            ],
-                            [                          Empty valence in outer shell 0-1-2-0-0-0-0-0
-                                "0",
-                                "1000000000000000000",
-                                "2000000000000000000",
+                                "2000000000000000000",  # 2
+                                "2000000000000000000",  # 2
                                 "0",
                                 "0",
                                 "0",
                                 "0",
                                 "0"
                             ],
-                            [                          Filled valence in outer shell 0-1-0-0-0-0-0-0
+                            [                          # Empty valence in outer shell 0-1-2-0-0-0-0-0
                                 "0",
-                                "1000000000000000000",
+                                "1000000000000000000",  # 1
+                                "2000000000000000000",  # 2
+                                "0",
+                                "0",
+                                "0",
+                                "0",
+                                "0"
+                            ],
+                            [                          # Filled valence in outer shell 0-1-0-0-0-0-0-0
+                                "0",
+                                "1000000000000000000", # 1
                                 "0",
                                 "0",
                                 "0",
@@ -22212,36 +22218,36 @@ line 28-30      "fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e2
                                 "0"
                             ],
                             [
-                                "4.000000000000000000", ??? [ ] WHATS THIS FOR? possibly # protons
-                                 "0"                    ??? [ ] WHATS THIS FOR?
+                                "4.000000000000000000", # Ancestors 4 ?
+                                 "0"                    # ??? [ ] WHATS THIS FOR?
                             ]
                         ],
                         [
-                             "4.000000000000000000", protons
-                             "6.000000000000000000", neutrons
-                            "10.000000000000000000", mass
-                             "0.289899154616624077", stability
-                            "beta-"                  decay type
+                             "4.000000000000000000", # protons
+                             "6.000000000000000000", # neutrons
+                            "10.000000000000000000", # nucleons
+                             "0.289899154616624077", # stability
+                            "beta-"                  # decay type
                         ]
                     ],
-                    [                           THIS IS Af-9 aka 9 4 Af
-                        "1.028561648650107685", radius
-                        "1.088155548943689599", ??? [ ] WHATS THIS? Its the same for both these "Af" otoms
-                        "9.000000000000000000", mass
-                        "8.270876354705549716", density
-                        "0.125000000000000000", electronegativity
-                        "true",                 metallic
-                        "Af",                   name
-                        "alkaline",             series
-                        "2.000000000000000000", group/row
-                        "1.000000000000000000", period/column
+                    [                           # structure {}         # THIS IS Af-9 aka 9 4 Af
+                        "1.028561648650107685", # radius
+                        "1.088155548943689599", # volume
+                        "9.000000000000000000", # mass
+                        "8.270876354705549716", # density
+                        "0.125000000000000000", # electronegativity
+                        "true",                 # metallic
+                        "Af",                   # name
+                        "alkaline",             # series
+                        "2.000000000000000000", # group/row
+                        "1.000000000000000000", # period/column
                         [
-                            "0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26", universe alpha
-                            "1.000000000000000000",  ??? [ ] WHATS THIS FOR
-                            "0.672524977684952341",  ??? [ ] WHATS THIS FOR
-                            "4.000000000000000000",  ??? [ ] WHATS THIS FOR
-                            "1.000000000000000000",  ??? [ ] WHATS THIS FOR
-                            [                           Max valence in outer shell 0-2-2-0-0-0-0-0
+                            "0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26", # universe alpha
+                            "1.000000000000000000",  # depth
+                            "0.672524977684952341",  # distance
+                            "4.000000000000000000",  # distanceIndex
+                            "1.000000000000000000",  # shell
+                            [                           # Max valence in outer shell 0-2-2-0-0-0-0-0
                                 "0",
                                 "2.000000000000000000",
                                 "2.000000000000000000",
@@ -22251,7 +22257,7 @@ line 28-30      "fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e2
                                 "0",
                                 "0"
                             ],
-                            [                           Empty valence in outer shell 0-1-2-0-0-0-0-0
+                            [                           # Empty valence in outer shell 0-1-2-0-0-0-0-0
                                 "0",
                                 "1.000000000000000000",
                                 "2.000000000000000000",
@@ -22261,7 +22267,7 @@ line 28-30      "fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e2
                                 "0",
                                 "0"
                             ],
-                            [                           Filled valence in outer shell 0-1-0-0-0-0-0-0
+                            [                           # Filled valence in outer shell 0-1-0-0-0-0-0-0
                                 "0",
                                 "1.000000000000000000",
                                 "0",
@@ -22272,31 +22278,31 @@ line 28-30      "fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e2
                                 "0"
                             ],
                             [
-                                "4.000000000000000000", ??? [ ] WHATS THIS FOR? possibly # protons
+                                "4.000000000000000000", # ancestors
                                 "0"                     ??? [ ] WHATS THIS FOR?
                             ]
                         ],
                         [
-                            "4.000000000000000000", protons
-                            "5.000000000000000000", neutrons
-                            "9.000000000000000000", mass
-                            "1.000000000000000000", stability
-                            "stable"                decay type
+                            "4.000000000000000000", # protons
+                            "5.000000000000000000", # neutrons
+                            "9.000000000000000000", # nucleons
+                            "1.000000000000000000", # stability
+                            "stable"                # decay type
                         ]
                     ]
                 ],
-                [],
-                "1837972523267900060",
-                "1837972523267900060",
-                "1000000000000000000",
-                "1000000000000000000",
-                "0"
+                [],                    # receivingAtoms 
+                "1837972523267900060", # electricalConductivity
+                "1837972523267900060", # thermalConductivity
+                "1000000000000000000", # toughness
+                "1000000000000000000", # hardness
+                "0"                    # ductility
             ],
             "data:application/json;base64,eyJuYW1lIjoiQWbigoIgTW9sZWN1bGUiLCJpbWFnZSI6Imh0dHBzOi8vcHJvZC1vdG9tcy5zMy51cy1lYXN0LTEuYW1hem9uYXdzLmNvbS9vdG9tcy9mZGEwMDg1MDMyODhlNWFiYzM3MDMyODE1MGQyMDk5M2ZlYzI2ZWZlNTcwN2YyZDEyYWI1NTJlYmIwZGE1ZTI2QWYxMCxBZjktLXRva2VuLnBuZyIsImNoaXBJbWFnZSI6Imh0dHBzOi8vcHJvZC1vdG9tcy5zMy51cy1lYXN0LTEuYW1hem9uYXdzLmNvbS9vdG9tcy9mZGEwMDg1MDMyODhlNWFiYzM3MDMyODE1MGQyMDk5M2ZlYzI2ZWZlNTcwN2YyZDEyYWI1NTJlYmIwZGE1ZTI2QWYxMCxBZjktLWNoaXAucG5nIiwiYXR0cmlidXRlcyI6W3sidHJhaXRfdHlwZSI6Ik5hbWUiLCJ2YWx1ZSI6IkFm4oKCIn0seyJ0cmFpdF90eXBlIjoiQWN0aXZhdGlvbiBFbmVyZ3kiLCJ2YWx1ZSI6MTguNDcyMzk3ODYyNTI1NTQ3fSx7InRyYWl0X3R5cGUiOiJSYWRpdXMiLCJ2YWx1ZSI6MS4wMjg1NjE2NDg2NTAxMDc3fSx7InRyYWl0X3R5cGUiOiJNYXNzIiwidmFsdWUiOjE5fSx7InRyYWl0X3R5cGUiOiJCb25kIFR5cGUiLCJ2YWx1ZSI6Im1ldGFsbGljIn0seyJ0cmFpdF90eXBlIjoiQm9uZCBTdHJlbmd0aCIsInZhbHVlIjozLjg4ODkyNTg2NTc5NDg1MTh9LHsidHJhaXRfdHlwZSI6IkdpdmluZyBBdG9tcyIsInZhbHVlIjoiQWYsIEFmIn0seyJ0cmFpdF90eXBlIjoiUmVjZWl2aW5nIEF0b21zIiwidmFsdWUiOiIifSx7InRyYWl0X3R5cGUiOiJFbGVjdHJpY2FsIENvbmR1Y3Rpdml0eSIsInZhbHVlIjoxLjgzNzk3MjUyMzI2Nzl9LHsidHJhaXRfdHlwZSI6IlRoZXJtYWwgQ29uZHVjdGl2aXR5IiwidmFsdWUiOjEuODM3OTcyNTIzMjY3OX0seyJ0cmFpdF90eXBlIjoiVG91Z2huZXNzIiwidmFsdWUiOjF9LHsidHJhaXRfdHlwZSI6IkhhcmRuZXNzIiwidmFsdWUiOjF9LHsidHJhaXRfdHlwZSI6IkR1Y3RpbGl0eSIsInZhbHVlIjowfV19"
         ]
     ],
     [
-     "112189688167929084055883402287139204325716886866799699205469986433414306587868"  <---Dx otom
+     "112189688167929084055883402287139204325716886866799699205469986433414306587868"  <---Dx-19 otom
     ],
     "8719368115323992242338",
     [
