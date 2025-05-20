@@ -1,3 +1,179 @@
+2025-05-19 May.Mon 20:46:33 I can't believe I never noticed this before, but you can see the logs of the OtomsDatabaseV2 Implmementation:
+https://shapescan.xyz/address/0x953761a771d6Ad9F888e41b3E7c9338a32b1A346?tab=logs
+
+[ ] look into that log to see if its useful
+
+The contract already looks useful. 
+
+There's a read function activeUniverses() that returns this:
+ | (bytes32[]) : [
+ |   0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26
+ |   0x9092789dd97416176acfc97a65906204c9d99c260c6c45001012f6667684422e
+ | ]
+
+That's Alpha and then Bohr.
+
+
+Oh this could be incredible. If it lets us get the number of nucleons that could change everything.
+
+This is the Token Id for molecule DxXc: 25018415423371542409729369969951849691625015417179348559273652591687481035319
+
+read function getMoleculeByTokenId(25018415423371542409729369969951849691625015417179348559273652591687481035319) returns:
+
+ | struct Molecule {
+ |   id (string) : fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26Dx15-Xc30
+ |   name (string) : DxXc
+ |   universeHash (bytes32) : 0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26
+ |   activationEnergy (uint256) : 20333244667310928833
+ |   radius (uint256) : 2213124404701871217
+ |   bond {
+ |     strength (uint256) : 29071698625524319937
+ |     bondType (string) : covalent
+ |   }
+ |   givingAtoms (tuple[]) : [
+ |     givingAtoms {
+ |       radius (uint256) : 1192721293990073983
+ |       volume (uint256) : 1696746330834713490
+ |       mass (uint256) : 15000000000000000000
+ |       density (uint256) : 8840449351448285142
+ |       electronegativity (uint256) : 71428571428571425
+ |       metallic (bool) : true
+ |       name (string) : Dx
+ |       series (string) : alkaline
+ |       periodicTableX (uint256) : 3000000000000000000
+ |       periodicTableY (uint256) : 1000000000000000000
+ |       structure {
+ |         universeHash (bytes32) : 0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26
+ |         depth (uint256) : 2000000000000000000
+ |         distance (uint256) : 1142979816580191432
+ |         distanceIndex (uint256) : 8000000000000000000
+ |         shell (uint256) : 2000000000000000000
+ |         totalInOuter (uint256[]) : [
+ |           0
+ |           0
+ |           3000000000000000000
+ |           2000000000000000000
+ |           0
+ |           0
+ |           0
+ |           0
+ |         ]
+ |         emptyInOuter (uint256[]) : [
+ |           0
+ |           0
+ |           2000000000000000000
+ |           2000000000000000000
+ |           0
+ |           0
+ |           0
+ |           0
+ |         ]
+ |         filledInOuter (uint256[]) : [
+ |           0
+ |           0
+ |           1000000000000000000
+ |           0
+ |           0
+ |           0
+ |           0
+ |           0
+ |         ]
+ |         ancestors (uint256[]) : [
+ |           8000000000000000000
+ |           2000000000000000000
+ |           0
+ |         ]
+ |       }
+ |       nucleus {
+ |         protons (uint256) : 8000000000000000000
+ |         neutrons (uint256) : 7000000000000000000
+ |         nucleons (uint256) : 15000000000000000000
+ |         stability (uint256) : 604162917919303766
+ |         decayType (string) : beta+
+ |       }
+ |     }
+ |   ]
+ |   receivingAtoms (tuple[]) : [
+ |     receivingAtoms {
+ |       radius (uint256) : 1020403110711797234
+ |       volume (uint256) : 1062466686463799048
+ |       mass (uint256) : 30000000000000000000
+ |       density (uint256) : 28236179432457127803
+ |       electronegativity (uint256) : 750000000000000000
+ |       metallic (bool) : false
+ |       name (string) : Xc
+ |       series (string) : nonmetal
+ |       periodicTableX (uint256) : 4000000000000000000
+ |       periodicTableY (uint256) : 3000000000000000000
+ |       structure {
+ |         universeHash (bytes32) : 0xfda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26
+ |         depth (uint256) : 3000000000000000000
+ |         distance (uint256) : 1903478510328568518
+ |         distanceIndex (uint256) : 15000000000000000000
+ |         shell (uint256) : 3000000000000000000
+ |         totalInOuter (uint256[]) : [
+ |           0
+ |           0
+ |           0
+ |           4000000000000000000
+ |           0
+ |           0
+ |           0
+ |           0
+ |         ]
+ |         emptyInOuter (uint256[]) : [
+ |           0
+ |           0
+ |           0
+ |           1000000000000000000
+ |           0
+ |           0
+ |           0
+ |           0
+ |         ]
+ |         filledInOuter (uint256[]) : [
+ |           0
+ |           0
+ |           0
+ |           3000000000000000000
+ |           0
+ |           0
+ |           0
+ |           0
+ |         ]
+ |         ancestors (uint256[]) : [
+ |           15000000000000000000
+ |           6000000000000000000
+ |           2000000000000000000
+ |           0
+ |         ]
+ |       }
+ |       nucleus {
+ |         protons (uint256) : 15000000000000000000
+ |         neutrons (uint256) : 15000000000000000000
+ |         nucleons (uint256) : 30000000000000000000
+ |         stability (uint256) : 1990865364885015865
+ |         decayType (string) : stable
+ |       }
+ |     }
+ |   ]
+ |   electricalConductivity (uint256) : 0
+ |   thermalConductivity (uint256) : 1014787720344160205
+ |   toughness (uint256) : 880249346874188543
+ |   hardness (uint256) : 1623595160793047443
+ |   ductility (uint256) : 0
+ | }
+
+It appears a Molecule Id looks like "fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26Dx15-Xc30" for DxXc(Dx-15,Xc-30)
+
+So it is the universe hash followed by the isotope strings and I think "-" means something specific
+
+
+
+[ ] THeres a MoleculeDiscoveredBy() function you pass a token ID and it gives back the wallet.
+I'd like to get the full list of Isotope discoveries, although I could probably glean that from my data.
+
+
 2025-05-19 May.Mon 17:43:16 completed my file chains.alpha.otom and the chains in Alpha are much better than Bohr. The longest is 6 chains for Gy-30. In Bohr its currenty 11 for V-39 and Vl-84
 ::FILE:: chains.alpha.otom
 ::FILE:: chains.bohr.otom

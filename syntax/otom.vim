@@ -16693,9 +16693,9 @@ syn match chain1 /\<Cv-105\>/
 syn match chain1 /\<Cv-106\>/
 syn match chain1 /\<Cv-107\>/
 syn match chain2 /\<Cv-108\>/
-syn match chain4 /\<Cv-109\>/
-syn match chain5 /\<Cv-110\>/
-syn match chain5 /\<Cv-111\>/
+syn match chain2 /\<Cv-109\>/
+syn match chain3 /\<Cv-110\>/
+syn match chain3 /\<Cv-111\>/
 syn match chain8 /\<Cv-114\>/
 syn match chain8 /\<Cv-97\>/
 syn match chain7 /\<Cv-98\>/
@@ -16941,7 +16941,7 @@ syn match chain6 /\<Nm-105\>/
 syn match chain6 /\<Nm-87\>/
 syn match chain6 /\<Nm-88\>/
 syn match chain5 /\<Nm-89\>/
-syn match chain4 /\<Nm-90\>/
+syn match chain3 /\<Nm-90\>/
 syn match chain3 /\<Nm-91\>/
 syn match chain2 /\<Nm-92\>/
 syn match chain1 /\<Nm-93\>/
@@ -16967,7 +16967,7 @@ syn match chain2 /\<Ok-101\>/
 syn match chain2 /\<Ok-102\>/
 syn match chain2 /\<Ok-103\>/
 syn match chain4 /\<Ok-104\>/
-syn match chain7 /\<Ok-105\>/
+syn match chain4 /\<Ok-105\>/
 syn match chain7 /\<Ok-106\>/
 syn match chain8 /\<Ok-107\>/
 syn match chain5 /\<Ok-89\>/
@@ -17019,7 +17019,7 @@ syn match chain2 /\<S-100\>/
 syn match chain1 /\<S-101\>/
 syn match chain1 /\<S-103\>/
 syn match chain2 /\<S-104\>/
-syn match chain6 /\<S-108\>/
+syn match chain4 /\<S-108\>/
 syn match chain4 /\<S-109\>/
 syn match chain5 /\<S-94\>/
 syn match chain4 /\<S-95\>/
@@ -17071,7 +17071,7 @@ syn match chain1 /\<Uq-43\>/
 syn match chain1 /\<Uq-44\>/
 syn match chain1 /\<Uq-45\>/
 syn match chain1 /\<Uq-46\>/
-syn match chain8 /\<Uq-48\>/
+syn match chain5 /\<Uq-48\>/
 syn match chain9 /\<Uq-49\>/
 syn match chain6 /\<Ux-48\>/
 syn match chain8 /\<Ux-49\>/
@@ -17082,7 +17082,7 @@ syn match chain1 /\<Ux-53\>/
 syn match chain1 /\<Ux-54\>/
 syn match chain1 /\<Ux-55\>/
 syn match chain1 /\<Ux-56\>/
-syn match chain8 /\<Ux-57\>/
+syn match chain5 /\<Ux-57\>/
 syn match chain9 /\<Ux-58\>/
 syn match chain11 /\<V-39\>/
 syn match chain7 /\<V-40\>/
@@ -17146,7 +17146,7 @@ syn match chain2 /\<W-86\>/
 syn match chain6 /\<W-87\>/
 syn match chain5 /\<W-88\>/
 syn match chain5 /\<W-89\>/
-syn match chain6 /\<W-90\>/
+syn match chain5 /\<W-90\>/
 syn match chain7 /\<W-91\>/
 syn match chain7 /\<Wy-45\>/
 syn match chain5 /\<Wy-46\>/
