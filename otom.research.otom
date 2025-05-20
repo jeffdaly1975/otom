@@ -1,3 +1,26 @@
+2025-05-20 May.Tue 12:30:21 New Discovery!  Now 639 isotopes
+
+OTOMRO 186912: Ns-67⁻ + 5402 => Yu-31 + K-36
+
+[c] add to files
+
+2025-05-20 May.Tue 11:07:49 THis could be a problem with github. While pushing updates it said my Reactor_logs_parsed-alpha.txt is too big at 50.87 Mb. [ ] Dang what should I do?
+
+ | 2025-05-20.May.Tue 11:07:24 [~/Downloads/NFTs/otom] % git push
+ | Enumerating objects: 9, done.
+ | Counting objects: 100% (9/9), done.
+ | Delta compression using up to 8 threads
+ | Compressing objects: 100% (5/5), done.
+ | Writing objects: 100% (5/5), 223.73 KiB | 459.00 KiB/s, done.
+ | Total 5 (delta 4), reused 0 (delta 0)
+ | remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+ | remote: warning: See https://gh.io/lfs for more information.
+ | remote: warning: File Reactor_logs_parsed-alpha.txt is 50.87 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+ | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+ | To https://github.com/jeffdaly1975/otom.git
+ |    8cdf773..6b0b98f  main -> main
+
+
 2025-05-19 May.Mon 20:46:33 I can't believe I never noticed this before, but you can see the logs of the OtomsDatabaseV2 Implmementation:
 https://shapescan.xyz/address/0x953761a771d6Ad9F888e41b3E7c9338a32b1A346?tab=logs
 
@@ -11,7 +34,7 @@ There's a read function activeUniverses() that returns this:
  |   0x9092789dd97416176acfc97a65906204c9d99c260c6c45001012f6667684422e
  | ]
 
-That's Alpha and then Bohr.
+That's Alpha (0xfda0...5e26) and then Bohr (0x9092...422e)
 
 
 Oh this could be incredible. If it lets us get the number of nucleons that could change everything.
@@ -5685,26 +5708,43 @@ Here's a bunch of ways to make Eh:
 
 try:
 [>] Ns-67⁻ + 10000 => ? Yu-31 + K-36
-  [ ]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  
-  [ ]|   K-34∙ +  Co-83⁺ + 3823 => ⬇ P-22 + Vl-95  
-  [ ]|   K-34∙ +  Vl-95⁻ + 4045 => ⬆ P-22 + Da-107 
-  [ ]|   Sr-3∙ + Da-107∙ + 1818 => ⬇ P-22 + Co-88  
-  [ ]|   K-34∙ +  Co-88⁻ + 3844 => ⬇ P-22 + Vl-100 
-  [ ]|   P-23∙ + Vl-100⁻ + 3070 =>   P-22 + Vl-101
-  [ ]|   P-23∙ + Vl-101⁻ + 3023 => ⬆ Aw-124       
-  [ ]  Aw-124ª           +11121 =>   Ux-57 + Ns-67 using 11120.32 nuclear
-  [ ]   Ns-67⁻           +10000 => ? Yu-31 + K-36
+  [-]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  
+  [-]|   K-34∙ +  Co-83⁺ + 3823 => ⬇ P-22 + Vl-95  
+  [-]|   K-34∙ +  Vl-95⁻ + 4045 => ⬆ P-22 + Da-107 
+  [-]|   Sr-3∙ + Da-107∙ + 1818 => ⬇ P-22 + Co-88  
+  [-]|   K-34∙ +  Co-88⁻ + 3844 => ⬇ P-22 + Vl-100 
+  [-]|   P-23∙ + Vl-100⁻ + 3070 =>   P-22 + Vl-101
+  [-]|   P-23∙ + Vl-101⁻ + 3023 => ⬆ Aw-124       
+  [-]  Aw-124ª           +11121 =>   Ux-57 + Ns-67
+  [-]   Ns-67⁻           +10000 => ? Yu-31 + K-36
 total: 44233
 
 Would P-24 + K-35 work? Doesn't look like the ratchet works on otoms that small
 What about P-25 + Vl-97 => Vl-100 ? No P-25 takes 6 chains itself
 
-  [ ]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  
-  [ ]|   K-34∙ +  Co-83⁺ + 3823 => ⬇ P-22 + Vl-95  
-  [ ]|    P-24 + Vl-95 => Vl-97
-  [ ]|    P-24 + Vl-97 => Vl-99
-  [ ]|    P-24 + Vl-99 => Vl-101
-
+  [r]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  
+  [r]|   K-34∙ +  Co-83⁺ + 3823 => ⬇ P-22 + Vl-95  
+  [r]|    P-24 + Vl-95   + 4000 => Vl-97  used 2526.32 nuclear+decay      [ ] update chains this is shorter i think
+  [r]|    P-24 + Vl-97   + 3500 => Vl-99  used 2486.02 nuclear+decay      [ ] update chains this is shorter i think
+  [r]|    P-24 + Vl-99   + 3000 => Vl-101 used 2425.37 nuclear+decay      [ ] update chains this is shorter i think
+  [r]|   P-23∙ + Vl-101⁻ + 3023 => ⬆ Aw-124                               [ ] update chains this is shorter i think
+  [r]  Aw-124ª           +11077 =>   Ux-57 + Ns-67  used 11074.17 nuclear [ ] update chains
+  [r]   Ns-67⁻           +10000 => ? Yu-31 + K-36  <-----SUCCESS!!! makes Yu-31 + K-36 using 5401.95 nuclear  [ ] add to chains
+ 
+try:
+[>] Ns-67⁻ + 10000 => ? Yu-31 + K-36
+  [r]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  |
+  [r]|   K-34∙ +  Co-83⁺ + 3823 => ⬇ P-22 + Vl-95  |
+  [r]|    P-24 + Vl-95   + 4000 => Vl-97           | used  2526.32 nuclear+decay
+  [r]|    P-24 + Vl-97   + 3500 => Vl-99           | used  2486.02 nuclear+decay
+  [r]|    P-24 + Vl-99   + 3000 => Vl-101          | used  2425.37 nuclear+decay
+  [r]|   P-23∙ + Vl-101⁻ + 3023 => ⬆ Aw-124        |                     
+  [r]| Aw-124ª           +11077 =>   Ux-57 + Ns-67 | used 11074.17 nuclear
+  [r]|  Ns-67⁻           +10000 => ? Yu-31 + K-36  | used  5401.95 nuclear  SUCCESS! 
+total: 34248.83
+ 
+ 
+ 
 2025-04-24 Apr.Thu 16:00:36 How much energy does burning each isotope produce?
 
 Start with the mineables:
