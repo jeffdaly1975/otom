@@ -22,7 +22,8 @@ OTOMRO 186912: Ns-67⁻ + 5402 => Yu-31 + K-36
 
 [c] add to files
 
-2025-05-20 May.Tue 11:07:49 THis could be a problem with github. While pushing updates it said my Reactor_logs_parsed-alpha.txt is too big at 50.87 Mb. [ ] Dang what should I do?
+2025-05-20 May.Tue 11:07:49 THis could be a problem with github. While pushing updates it said my Reactor_logs_parsed-alpha.txt is too big at 50.87 Mb. 
+[ ] Dang what should I do?
 
  | 2025-05-20.May.Tue 11:07:24 [~/Downloads/NFTs/otom] % git push
  | Enumerating objects: 9, done.
@@ -38,6 +39,11 @@ OTOMRO 186912: Ns-67⁻ + 5402 => Yu-31 + K-36
  | To https://github.com/jeffdaly1975/otom.git
  |    8cdf773..6b0b98f  main -> main
 
+[ ] One possibility is to save off the first 50 Mb of it in log file "1" and start log file "2". Not elegant. Would require text editing activities every time I run the parser
+[ ] Or split it into monthly chunks. 2024-11 would be the first since thats when OTOM started. If i did it this way I should first augment it with tx timestamps.
+[ ] Another possibility is to cut out the chemist (wallet) and tx hashes. That's about half the content. Put them in another file? Still not great.
+
+[*] Work on making an alchemy script that gets timestamp information for all the Reactor log data.
 
 2025-05-19 May.Mon 20:46:33 I can't believe I never noticed this before, but you can see the logs of the OtomsDatabaseV2 Implmementation:
 https://shapescan.xyz/address/0x953761a771d6Ad9F888e41b3E7c9338a32b1A346?tab=logs
