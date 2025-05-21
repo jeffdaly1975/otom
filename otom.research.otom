@@ -1,3 +1,21 @@
+2025-05-20 May.Tue 20:51:30 New discovery Qe-60 now 639 isotopes in Bohr
+
+   Z-111ª  + 14000 => Pb-51 + Qe-60 + 3664.67 using 10335.33 nuclear
+
+[ ] add to files
+
+2025-05-20 May.Tue 19:23:57 Make Kk₃ for crafting an ax
+
+Kk-71 + Kk-70 + Kk-71 + 200 => Kk₃ + 1.94 using 198.06 metallic
+Kk-70 + Kk-70 + Kk-70 + 199 => Kk₃ + 2.77 using 196.23 metallic
+Kk-70 + Kk-70 + Kk-70 + 197 => Kk₃ + 0.87 using 196.13 metallic
+
+
+[r] Af-7 + Ju₃ + Kk₃ => T4 7 24 PkAx
+
+
+2025-05-20 May.Tue 19:11:06 I finally had to restart the laptop browser. That means I lost the tab that still had access to the Mine x10 button. But the browser was acting real sluggish and the busy indicator would spin in the Mint button, not letting me mint, and when it finally let me try, it would start the ui for minting and page would dim and message popup but no Wallet intereaction to sign would appear, and then after a bit it would say Mining failed or was rejected.
+
 2025-05-19 May.Mon 20:46:33 I can't believe I never noticed this before, but you can see the logs of the OtomsDatabaseV2 Implmementation:
 https://shapescan.xyz/address/0x953761a771d6Ad9F888e41b3E7c9338a32b1A346?tab=logs
 
@@ -229,20 +247,22 @@ So 3 Ys-125 otoms decayed to 3 pairs of P-22+Ji-103, then 3 of those Ji-103 comb
 
 2025-05-19 May.Mon 11:55:54
 
-[ ] update chains: these may be shorter
-|   178555*|bohr    |  Ro-22⁺ +  Z-102ª                               +     4000 =>   P-22 + Cv-102                                                                    +    1752.46 |    2247.54 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x505f205d838a80eef4f77597f670c8d3a874f1be1f5ad746a74bebe79595dd31 | 0xf15d0df4c09699452b4cabaf3a9ff54a044c729da210bb0b21e0965d45fb9ae0 |
-|   178904*|bohr    |  Eb-19⁺ + Vt-105ª                               +     4000 =>   P-22 + Cv-102                                                                    +    1833.66 |    2166.34 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xf264005bdfc494609d668469609f6b1578aafb1ee9cb188d6fe0da16b51560e6 | 0x3061dbf30a736ba1b64971b847ce3bbb07e9d01d9a182b2785e63fcb62d3512b |
-|   178898*|bohr    |  Ro-23ª + Cv-105ª                               +     4000 =>   P-22 + Vt-106                                                                    +    1523.73 |    2476.27 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xcf3a054d43cb37d96f1a227ec1d447b983caac7b6f25d049e6c39813f4f533cf | 0x49e8110cc4a964ff9a5693a1eb9eccb16f5298ac9a9434fd450638f44e1f4469 |
-|   178890 |bohr    |   P-24⁻ + Cv-107ª                               +     4000 =>   P-22 + Cv-109                                                                    +    1397.76 |    2602.24 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x7df77b144cdc2a24fa7894afda624cd63c7d61c22d2c378b7023134dfe3976c7 | 0x57848d4345e3b63f822889bfbec9c6262836edf81dfa3fa4cad8a4f41a12431d |
-|   178886*|bohr    |   P-24⁻ +  Lx-89∙                               +     4000 =>   P-22 + Lx-91                                                                     +     796.74 |    3203.26 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x100afbf3a7b9af3134ab55f8f135dd66d71bf1862f27e2314de7e5d47ab5a2aa | 0xc57465a703c4f9146c5ce7c3cb58ea10dcb49381402313563eb276fac7d6a8c3 |
-|   178571*|bohr    |  Eb-19⁺ + Cv-102ª                               +     5000 =>   P-22 + Z-99                                                                      +    2801.52 |    2198.48 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xd3d7f469253556e6250191278b96f05ead311e3a6fa47df59af13fcff28adb98 | 0x33d1d9e8e8df4d36b2e2ae2526e1f296c9855c5994c548046a9ccf6899453483 |
-|   178162 |bohr    |   P-23∙ +  S-102ª                               +     4000 =>   P-22 + S-103                                                                     +     713.10 |    3286.90 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x288cb06176abdf04572a2d96ac9b09aac8eba065b7e688f069fcc48319cdf93f | 0xc375223bdca1aa5f3cae72373770ccd4e68fdfdba4df9c43fcf032e93019d14f |
-|   178246 |bohr    |   P-24⁻ +  S-103ª                               +     4000 =>   P-22 + S-105                                                                     +    1392.25 |    2607.75 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x06f2d5c3e54a20482169857c43388063ff194a07d5dd133aef2c5f82848035e6 | 0xcbc991718685ef9a9f84f81c581a3546b894283bedc6a40f6078c3b43cfddeb2 |
-|   178163*|bohr    |   P-24⁻ +  S-104⁺                               +     5000 =>   P-22 + S-106                                                                     +    2317.93 |    2682.07 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xae2f5f2da1802144b042449a22e68a789fc13ebbcbae7163e8fd33093e362b1a | 0x1dc524cb651b4f54630b84aa8a4e8c437cd12b43f05ffad42beb7f77d1dd48d2 |
-|   178248 |bohr    |   P-24⁻ +  S-105ª                               +     4000 =>   P-22 + S-107                                                                     +    1357.54 |    2642.46 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xb93c13031a5295a1693b89a9551a52826ab5fce65c2ecc254ffec680837b6f4b | 0xcbc991718685ef9a9f84f81c581a3546b894283bedc6a40f6078c3b43cfddeb2 |
-|   178169*|bohr    |   P-24⁻ +  S-106ª                               +     5000 =>   P-22 + S-108                                                                     +    2293.51 |    2706.49 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x666f65ea5400d494e8f35eb25c8d79a88a569f020aae6f8a343fce72d1d90d4b | 0xd7357158f007fd8dd6a06528dda8629619a7aaf3041d6b2b6405245d4cec06bb |
-|   178249 |bohr    |   P-24⁻ +  S-107ª                               +     4000 =>   P-22 + S-109                                                                     +    1342.95 |    2657.05 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xf20b668adfb7bb49cb18e9169cf0d79746b57d5e5cb9ee1d8952f4defe58206f | 0xcbc991718685ef9a9f84f81c581a3546b894283bedc6a40f6078c3b43cfddeb2 |
-|   178204*|bohr    |   Sr-3∙ +  S-109ª                               +     5000 =>   P-22 + W-90                                                                      +    3430.20 |    1569.80 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x69f1e3caa80382cf91c9de6df4a776715f8ba33b13452cca62a4c4a6148879bf | 0xa616e4ecec09793d2ffd12df8f531acf7f6ccf5a95c0c1be7d83b176059fc138 |
+[c] update chains: these may be shorter
+   [c]|   178555*|bohr    |  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               | 2 chains less
+   [c]|   178898*|bohr    |  Ro-23ª + Cv-105ª   +[  2476.27 -   4000] => P-22 + Vt-106 | decay, nuclear               | 1 chain less
+   [c]|   178890 |bohr    |   P-24⁻ + Cv-107ª   +[  2602.24 -   4000] => P-22 + Cv-109 | decay, nuclear               | 300 NRG less
+   [c]|   178886*|bohr    |   P-24⁻ +  Lx-89∙   +[  3203.26 -   4000] => P-22 + Lx-91  | decay, nuclear               | 3 chains less
+   [c]|   178571*|bohr    |  Eb-19⁺ + Cv-102ª   +[  2198.48 -   5000] => P-22 + Z-99   | decay, nuclear               | 3 chains less
+   [x]|   178162 |bohr    |   P-23∙ +  S-102ª   +[  3286.90 -   4000] => P-22 + S-103  | decay, nuclear               | nope
+   [x]|   178246 |bohr    |   P-24⁻ +  S-103ª   +[  2607.75 -   4000] => P-22 + S-105  | decay, nuclear               | nope
+   [x]|   178163*|bohr    |   P-24⁻ +  S-104⁺   +[  2682.07 -   5000] => P-22 + S-106  | decay, nuclear               | nope
+   [c]|   178248 |bohr    |   P-24⁻ +  S-105ª   +[  2642.46 -   4000] => P-22 + S-107  | decay, nuclear               | yup
+   [c]|   178169*|bohr    |   P-24⁻ +  S-106ª   +[  2706.49 -   5000] => P-22 + S-108  | decay, nuclear               | yup
+   [c]|   178249 |bohr    |   P-24⁻ +  S-107ª   +[  2657.05 -   4000] => P-22 + S-109  | decay, nuclear               | yup
+   [x]|   178204*|bohr    |   Sr-3∙ +  S-109ª   +[  1569.80 -   5000] => P-22 + W-90   | decay, nuclear               | nope
+   [c]|   178907*|bohr    |  Ro-23ª + Cv-102ª   +[  2393.09 -   4000] => P-22 + Vt-103 | decay, nuclear               | 1 chain less
+   [c]|   178908*|bohr    |  Ro-22⁺ + Cv-102ª   +[  2210.62 -   4000] => P-22 + Vt-102 | decay, nuclear               | 2 chains less
+   [x]|   178899*|bohr    |  Ro-22⁺ + Cv-105ª   +[  2286.88 -   4000] => P-22 + Vt-105 | decay, nuclear               | nope
 
 2025-05-19 May.Mon 11:17:36 [ ] make special highlighting to color otom names like Ju and Sr with the color of their type (metal, nonmetal, noble, etc)
 
@@ -343,7 +363,7 @@ which is a cheaper Ji-104:
  7-chain X-119  :: 15749.35 |   P-21⁺ +  Vt-98⁺   +[  1834.62 -  10000] => X-119         | decay, nuclear               |
                    17447.72 |   As-7∙ +  X-119ª   +[  1698.37 -   7500] => P-22 + Ji-104 | decay, nuclear               |
 
-[ ] hmm. The Cv-98 route is about 1000 cheaper.
+[c] hmm. The Cv-98 route is about 1000 cheaper.
 
 
 
@@ -376,7 +396,7 @@ TOKEN DATA: {
 [c] Make it
    [c]  Sq-84∙ +  Sq-84∙ +  Sq-84∙ +  Sq-84∙ +  Sq-84∙ + 184 => Sq₅(Sq-84>Sq-84,Sq-84,Sq-84,Sq-84) 
 
-[ ] If we can do 5 Ys otoms in Bohr, that would be a mass of 5*125=625
+[x] If we can do 5 Ys otoms in Bohr, that would be a mass of 5*125=625
 
 Oh wow it looks like Ys will perfectly allow for Ys₅, if you have 4 in a stack, a 5th one's 8 electrons fit in the 8-hole:
    32       8
@@ -402,18 +422,18 @@ Initially it 5 * 16044.28 = 80221.4 NRG required to make 5 Ys
   [r] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               |
   [r] 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               |
   [r] 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
-  [r] 5-chain Ok-90  :: 11750.97 |   P-21⁺ +  Ok-91⁺   +[  1921.28 -   5000] => P-22 + Ok-90  | decay, nuclear               | used 1920.93  [ ] update chains
-  [r] 6-chain Ek-100 :: 14013.69 |  Mt-32⁺ +  Ok-90⁺   +[  2262.72 -   3000] => P-22 + Ek-100 | decay, nuclear               | used 2260.87  [ ] update chains
-  [r] 7-chain Ys-125 :: 16044.28 |  Cl-25⁺ + Ek-100⁺   +[  2030.59 -  20000] => Ys-125        | decay, nuclear               | used 1987.64  [ ] update chains
+  [r] 5-chain Ok-90  :: 11750.97 |   P-21⁺ +  Ok-91⁺   +[  1921.28 -   5000] => P-22 + Ok-90  | decay, nuclear               | used 1920.93  [c] update chains
+  [r] 6-chain Ek-100 :: 14013.69 |  Mt-32⁺ +  Ok-90⁺   +[  2262.72 -   3000] => P-22 + Ek-100 | decay, nuclear               | used 2260.87  [c] update chains
+  [r] 7-chain Ys-125 :: 16044.28 |  Cl-25⁺ + Ek-100⁺   +[  2030.59 -  20000] => Ys-125        | decay, nuclear               | used 1987.64  [c] update chains
 [c] second Ys₅
   [r] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      |
   [r] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
   [r] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               |
   [r] 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               |
   [r] 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
-  [r] 5-chain Ok-90  :: 11750.62 |   P-21⁺ +  Ok-91⁺   +[  1920.93 -   5000] => P-22 + Ok-90  | decay, nuclear               | used 1920.88 [ ] update chains
-  [r] 6-chain Ek-100 :: 14011.49 |  Mt-32⁺ +  Ok-90⁺   +[  2260.87 -   3000] => P-22 + Ek-100 | decay, nuclear               | used 2260.77 [ ] update chains
-  [r] 7-chain Ys-125 :: 15999.13 |  Cl-25⁺ + Ek-100⁺   +[  1987.64 -  20000] => Ys-125        | decay, nuclear               | used 1985.49 [ ] update chains
+  [r] 5-chain Ok-90  :: 11750.62 |   P-21⁺ +  Ok-91⁺   +[  1920.93 -   5000] => P-22 + Ok-90  | decay, nuclear               | used 1920.88 [c] update chains
+  [r] 6-chain Ek-100 :: 14011.49 |  Mt-32⁺ +  Ok-90⁺   +[  2260.87 -   3000] => P-22 + Ek-100 | decay, nuclear               | used 2260.77 [c] update chains
+  [r] 7-chain Ys-125 :: 15999.13 |  Cl-25⁺ + Ek-100⁺   +[  1987.64 -  20000] => Ys-125        | decay, nuclear               | used 1985.49 [c] update chains
 [c] third  Ys₅
   [r] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      |
   [r] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
@@ -431,7 +451,7 @@ Initially it 5 * 16044.28 = 80221.4 NRG required to make 5 Ys
   [r] 4-chain Ok-91  ::  9829.69 |   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
   [r] 5-chain Ok-90  :: 11750.57 |   P-21⁺ +  Ok-91⁺   +[  1920.88*-   5000] => P-22 + Ok-90  | decay, nuclear               |
   [r] 6-chain Ek-100 :: 14011.34 |  Mt-32⁺ +  Ok-90⁺   +[  2260.77*-   3000] => P-22 + Ek-100 | decay, nuclear               |
-  [r] 7-chain Ys-125 :: 15996.73 |  Cl-25⁺ + Ek-100⁺   +[  1985.39*-  20000] => Ys-125        | decay, nuclear               | optimal reached [ ] update chains
+  [r] 7-chain Ys-125 :: 15996.73 |  Cl-25⁺ + Ek-100⁺   +[  1985.39*-  20000] => Ys-125        | decay, nuclear               | optimal reached [c] update chains
 [c] fifth  Ys₅
   [r] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      |
   [r] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
@@ -549,6 +569,7 @@ So it seems that Ro-22 fused with Aw-112 making ??-134ª which immediately alpha
 2025-05-12 May.Mon 23:11:19
 Lx-79\|\<Lx-77\>
 [ ] Can I discover Lx-78 by either ratcheting up Lx-77 with P-23 or ratcheting down Lx-79 with P-21
+
 
 2025-05-12 May.Mon 11:19:45 I moved all the reaction chain information I was writing from this research file to a new FILE chains.bohr.otom
 
@@ -7346,16 +7367,14 @@ total: 45000
 [-]  Z-97⁺   + 10000  => ? Pb-44 + Qe-53
 
 [>]  Z-111ª  + 10000  => ? Pb-51 + Qe-60
-   [*]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
-   [ ]|   Sr-3∙ +  Co-83⁺ + 1250 => W-86        
-   [ ]|   K-34∙ +   W-86ª + 3884 => P-22 + Se-98
-   [ ]|   Sr-3∙ +  Se-98∙ + 1765 => Se-101      
-   [ ]|  Eb-19⁺ + Se-101∙ + 2762 => P-22 + Vl-98
-   [ ]|  Mt-32⁺ +  Vl-98⁻ + 2740 => P-22 + S-108
-   [ ]|   P-24⁻ +  S-108⁺ +  450 => Ro-24 + Da-108      
-   [ ]|   Sr-3∙ + Da-108∙ + 1960 => Z-111
-   [ ]   Z-111ª           +15000 => ? Pb-51 + Qe-60
-total: 33300
+   [r]|  Mt-32⁺             +[     0.00 -   1000] => K-32          | decay                        |
+   [r]|   K-34∙ +  Kk-71ª   +[  3488.71 -  20000] => P-22 + Co-83  | decay, nuclear               |
+   [r]|   K-34∙ +  Co-83⁺   +[  3822.84 -   5000] => P-22 + Vl-95  | decay, nuclear               |
+   [r]|   K-32∙ +  Vl-95⁻   +[  3946.59 -   5000] => P-22 + Da-105 | decay, nuclear               | used  3893.94 [ ] update chains
+   [r]|   Sr-3∙ + Da-105ª   +[  1602.49 -   5000] => Da-108        | decay, nuclear               | used  1432.64 [ ] update chains
+   [r]|   Sr-3∙ + Da-108∙   +[  1959.80 -   5000] => Z-111         | decay, nuclear               | used  1807.80 [ ] update chains
+   [r]   Z-111ª                            +14000 => ? Pb-51 + Qe-60 <---------------------SUCCESS! used 10335.33 nuclear
+total: 14820.43
 
 [>]  Z-112ª  + 10000  => ? Pb-51 + Qe-61
   [ ]|   K-34∙ +  Kk-71ª + 3489 =>   P-22 + Co-83  
@@ -7405,17 +7424,17 @@ total: 21779
 total: 19440
 
 [>]  Cv-111ª + 10000  => ? Wy-51 + Qe-60
-  [ ]|  Pb-48∙ +  Yv-72ª  + 4268 =>   P-22 + Dd-98 
-  [ ]|  Eb-22∙ +  Dd-98ª  + 3034 =>   P-22 + Nm-98 
-  [ ]|   P-23∙ +  Nm-98ª  + 3235 =>   P-22 + Nm-99 
-  [ ]|   P-23∙ +  Nm-99ª  + 3248 =>   P-22 + Nm-100
-  [ ]|   Sr-1∙ +  Mt-32⁺  +  582 => ⬇ Mt-33        
-  [ ]   Mt-33⁺ + Nm-100⁺  + 3121 => ? P-22 + Cv-111
-  [ ]  Cv-111ª            +15000 => ? Wy-51 + Qe-60
+  [-]|  Pb-48∙ +  Yv-72ª  + 4268 =>   P-22 + Dd-98 
+  [-]|  Eb-22∙ +  Dd-98ª  + 3034 =>   P-22 + Nm-98 
+  [-]|   P-23∙ +  Nm-98ª  + 3235 =>   P-22 + Nm-99 
+  [-]|   P-23∙ +  Nm-99ª  + 3248 =>   P-22 + Nm-100
+  [-]|   Sr-1∙ +  Mt-32⁺  +  582 => ⬇ Mt-33        
+  [-]   Mt-33⁺ + Nm-100⁺  + 3121 => ? P-22 + Cv-111
+  [-]  Cv-111ª            +15000 => ? Wy-51 + Qe-60
 total: 32488
 
 [>]  Cv-114ª + 10000  => ? Wy-53 + Qe-61
-   [ ]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
+   [*]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
    [ ]|   Sr-3∙ +  Co-83⁺ + 1250 => W-86          
    [ ]|   K-34∙ +   W-86ª + 3884 => P-22 + Se-98  
    [ ]|  Gj-11∙ +  Se-98∙ + 2703 => P-22 + Co-87  
