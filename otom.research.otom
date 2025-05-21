@@ -211,7 +211,7 @@ So it is the universe hash followed by the isotope strings and I think "-" means
 
 
 
-[ ] THeres a MoleculeDiscoveredBy() function you pass a token ID and it gives back the wallet.
+[ ] Theres a MoleculeDiscoveredBy() function you pass a token ID and it gives back the wallet.
 I'd like to get the full list of Isotope discoveries, although I could probably glean that from my data.
 
 
