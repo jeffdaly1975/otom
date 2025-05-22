@@ -1,7 +1,29 @@
-|  Kk-70ª +  Kk-70ª +  Kk-70ª +  197*=>   Kk₃(Kk-70,Kk-70,Kk-70>)  
-|  Kk-71ª +  Kk-71ª +  Kk-71ª +  199 =>   Kk₃(Kk-71,Kk-71,Kk-71>)
-|  Kk-70ª +  Kk-71ª +  Kk-71ª +  199 =>   Kk₃(Kk-70,Kk-71,Kk-71>)  
+2025-05-22 May.Thu 17:01:23 [ ] I should put recipes in for the mineables as well? in the chains file? Somewhere!
 
+2025-05-22 May.Thu 16:54:28 SOme cheaper recipes to update in the chains.bohr.otom file
+[c] |   As-5⁺ + Ha-108⁺                               +[    766.17 -  30000] => ⬇ I-113                                                                        | decay, nuclear               |
+[c] |   As-6∙ + Ha-108⁺                               +[   1285.17 -   5000] => ⬇ I-114                                                                        | decay, nuclear               |
+[c] |   K-34∙ +  S-102ª                               +[   4150.57 -  20000] =>   P-22 + Ji-114                                                                | decay, nuclear               |
+[c] |   P-21⁺ +   C-54⁺                               +[   1532.22 -   1556] => ⬇ Co-75                                                                        | decay, nuclear               |
+[c] |   P-23∙ +  Lx-96⁻                               +[   2928.36 -   3090] => ⬆ Vt-119                                                                       | decay, nuclear               |
+[c] |   P-24⁻ +  Lx-96⁻                               +[   2265.07 -   2660] => ⬆ Vt-120                                                                       | decay, nuclear               |
+[c] |   Sr-1∙ +  Kk-64⁺                               +[    861.42 -   5000] => ⬇ Kk-65                                                                        | decay, nuclear               |
+[c] |   Sr-1∙ +  Kk-65⁺                               +[    888.06 -   5000] => ⬇ Kk-66                                                                        | decay, nuclear               |
+[c] |  Gy-67ª +  Gy-68ª                               +[   3806.78 -   3817] =>   P-22 + Ji-113                                                                | decay, nuclear               |
+[c] |  I-113ª                                         +[   7452.15 -  20000] =>   Qe-52 + F-61                                                                 | nuclear                      |
+[c] |  Se-84⁺                                         +[   5925.33 -  10000] =>   V-39 + Wy-45                                                                 | nuclear                      |
+[c] |  Uq-52⁻                                         +[   3104.77 -   5000] => ⬆ P-24 + Ro-28                                                                 | decay, nuclear               |
+
+2025-05-22 May.Thu 11:51:52 Recipes for Kk₃ which makes a good T4 7 24 PkAx
+
+[r]|  Kk-70ª +  Kk-70ª +  Kk-70ª +  197*=>   Kk₃(Kk-70,Kk-70,Kk-70>) occurred 370x
+[r]|  Kk-70ª +  Kk-70ª +  Kk-71ª +  203 =>   Kk₃(Kk-70,Kk-70,Kk-71>) occurred  24x
+[ ]|  Kk-70ª +  Kk-71ª +  Kk-70ª +  200 =>   Kk₃(Kk-70,Kk-71,Kk-70>) occurred   0x
+[r]|  Kk-70ª +  Kk-71ª +  Kk-71ª +  199 =>   Kk₃(Kk-70,Kk-71,Kk-71>) occurred  14x
+[ ]|  Kk-71ª +  Kk-70ª +  Kk-70ª +  200 =>   Kk₃(Kk-70,Kk-71,Kk-70>) occurred   0x
+[ ]|  Kk-71ª +  Kk-70ª +  Kk-71ª +  200 =>   Kk₃(Kk-70,Kk-71,Kk-70>) occurred   0x
+[ ]|  Kk-71ª +  Kk-71ª +  Kk-70ª +  200 =>   Kk₃(Kk-71,Kk-71,Kk-71>) occurred   0x
+[r]|  Kk-71ª +  Kk-71ª +  Kk-71ª +  199 =>   Kk₃(Kk-71,Kk-71,Kk-71>) occurred 218x
 
 
 2025-05-21 May.Wed 22:03:51 [ ] how about a function I could call to do otom math. Add2Otoms("P-23","Nm-100") and it returns what the protons and neutrons adds up to
@@ -17,6 +39,9 @@ Then process decay rules and that Kn must be alpha decay and less than 0.78 stab
 P-23 + Nm-100 + 5000 => P-22 + Nm-101 + 1679.43 using 3320.57 nuclear+decay
 
 [ ] add to files
+
+try:
+[ ] Nm-101⁺(0.739) + 0 => ? Dd-101
 
 2025-05-21 May.Wed 19:49:31 On discord, adbFreedom said they have all 640 Bohr isotopes! That's impressive! Probably the first with the full collection.
 
@@ -6844,14 +6869,29 @@ total: 21668
 total: 19430
 
 [>]  Lx-94⁻  + 5000   => ? Dx-44 + Uq-50
-   [*]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
-   [ ]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85         
-   [ ]|   K-34∙ +   W-85ª + 3983 => P-22 + Se-97 
-   [ ]|  Ct-17⁻ +  Se-97ª + 1816 => P-22 + Lx-92 
-   [ ]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93 
-   [ ]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94 
-   [ ]   Lx-94⁻           + 5000 => ? Dx-44 + Uq-50
+   [-]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
+   [-]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85         
+   [-]|   K-34∙ +   W-85ª + 3983 => P-22 + Se-97 
+   [-]|  Ct-17⁻ +  Se-97ª + 1816 => P-22 + Lx-92 
+   [-]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93 
+   [-]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94 
+   [-]   Lx-94⁻           + 5000 => ? Dx-44 + Uq-50
 total:22485
+--OR--
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.69 -   5000] => Kk-72         | nuclear                      | used 2835.49 nuclear       [ ] update chains
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.55 -   5000] => Lx-89         | nuclear                      | used 1520.10 nuclear       [ ] update chains
+   [r]|   P-24⁻ +  Lx-89∙   +[  3203.26 -   4000] => P-22 + Lx-91  | decay, nuclear               | used 3163.46 nuclear+decay [ ] update chains
+   [r]|   P-24⁻ +  Lx-91⁻   +[  4000 ?  -   4000] => P-22 + Lx-94  | decay, nuclear               | used 2498.51 nuclear+decay [ ] update chains
+   [f]   Lx-94⁻             +               5000 => ? Dx-44 + Uq-50 <---NOPE DAMN NOT ENOUGH makes N-93 using 4750.0 decay
+total: 16559.5
+   [*]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [ ]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [ ]|   P-24⁻ +  Lx-89∙   +[  3163.46 -   4000] => P-22 + Lx-91  | decay, nuclear               |
+   [ ]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   4000] => P-22 + Lx-94  | decay, nuclear               |
+   [ ]   Lx-94⁻             +               7800 => ? Dx-44 + Uq-50
+total: 17817.56
+
+
 
 [>]  Lx-95⁻  + 5000   => ? Dx-44 + Uq-51
    [*]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
