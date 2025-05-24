@@ -5,8 +5,8 @@
 # ignore vim swap files
 *.swp
 
-# Ignore all log files and directories
-*.csv
+# Ignore all log files
+log*.csv
 
 # Ignore the deletethese directory
 deletethese/

@@ -1,0 +1,33 @@
+Morpheus asked for the recipes for the known Bohr Universe.
+I've provided similar datasets to him before for Alpha.
+I absolutely love doing text editing/data processing/data munging with vim & command line tools so I was happy to provide.
+
+This CSV file has these columns:
+
+Column                     | Description                                          | Examples
+CHAINS                     | number of reaction chains necessary. mineables are 0 | 10-chain
+OTOM                       | Name of the isotope                                  | Qe-52
+INPUT1                     | Input isotope                                        | I-113
+INPUT2                     | Input isotope (optional 2nd input)                   | 
+NRG                        | Minimal Input NRG known so far                       | 7452.15
+OUTPUT1                    | Output isotope                                       | Qe-52
+OUTPUT2                    | Output isotope possible                              | F-61
+OTOMRO                     | OTOM Reaction Output object                          | 142405
+CHEMIST WALLET             | Chemist is the wallet performing experiments         | 0xf8d0c9f300d0649861963ebae0bb568533619448
+initateReaction() TX HASH  | Transaction hash of the call to initateReaction()    | 0x4d60945c219613ff601bef6120123931c383c159ae3f40b7b641f15a236d09d8
+analyseReactions() TX HASH | Transaction hash of the call to analyseReactions()   | 0xfed370aefa32fba9b4f72dab9ffb4b23a70e39a0ca424d276d50b6a20cb9b6f8
+NOTES                      |                                                      |
+
+There are 6 txs I rewrote the input NRG to 0.0 because I know it will work due to the stability value and decay types of the isotopes in question. These noted reactions are the ones that I saw and realized they could be done with zero input energy. So beware if you try to run these 6 exact reactions I think they have additional inputs and/or outputs which I simplified to the minimal recipes.
+
+
+
+
+
+
+
+
+
+
+
+
