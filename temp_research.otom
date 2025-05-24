@@ -1,0 +1,117 @@
+2025-05-23 May.Fri 22:41:57 [ ] add this to my list of wild DX Terminal agents:
+https://opensea.io/item/base/0x41dc69132cce31fcbf6755c84538ca268520246f/4121
+
+2025-05-23 May.Fri 22:36:11 New Discovery Uq-50
+
+OTOMRO 202121: Lx-93⁻  +   8200 => Dx-43 + Uq-50 + 77.22 using  8122.78 nuclear
+
+[ ] add to files
+
+2025-05-23 May.Fri 21:48:06 Fiished watchng: Bad Thoughts S01E02
+3/5
+
+2025-05-23 May.Fri 20:53:25 Discovered Uq-51
+
+OTOMRO 202031: Lx-94⁻  + 8000 => Dx-43 + Uq-51 using 7988.77 nuclear
+
+[ ] add to files
+
+2025-05-23 May.Fri 20:09:19
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   As-7∙ +  Ct-17⁻   +[   518.30 -   5000] => P-24          | decay, nuclear               | used  517.75 [ ] update recipe chains
+   [r]|   As-7∙ +  Ct-17⁻   +[   518.30 -   5000] => P-24          | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3163.46 -   4000] => P-22 + Lx-91  | decay, nuclear               | used 3161.46 [ ] update recipe chains
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   4000] => P-22 + Lx-93  | decay, nuclear               |
+   [r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               | used 3072.42 exactly
+   [f]   Lx-94⁻             +               7800 => ? Dx-44 + Uq-50 <----DAMN STILL NOT ENOUGH! makes N-94 using 390.00 decay
+total: 20889.98
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               | used 517.70 [ ] update recipe chains
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3161.46 -   4000] => P-22 + Lx-91  | decay, nuclear               | used 3161.36 [ ] update recipe chains
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   4000] => P-22 + Lx-93  | decay, nuclear               | used 2423.46 [ ] update recipe chains
+   [r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               |
+   [r]   Lx-94⁻             +               8000 => ? Dx-44 + Uq-50 <---HMMM DIFFERENT SUCCESS makes Dx-43 + Uq-51 using 7988.77 nuclear
+total: 22323.48
+
+so now the decay table is
++--------+-----------+----------+-------+------+---------------------------+-----------------------------------+---------------------------------+--------------------------------+
+| Lx-76⁺ |  76 41 Lx | metal    |(0.494)|beta+ |+250.00-5000          W-76 |               [ ] ? Dx-35 + Uq-41 |+5270.87-7000  UqDx(Dx-35,Uq-41>)|                                |
+| Lx-77⁺ |  77 41 Lx | metal    |(0.599)|beta+ |+0                    W-77 |               [ ] ? Dx-35 + Uq-42 |             ? UqDx(Dx-35,Uq-42>)|                                |
+|?Lx-78  |           |          |       |      |                           |               [ ] ? Dx-36 + Uq-42 |             ? UqDx(Dx-36,Uq-42>)|                                |
+| Lx-79⁺ |  79 41 Lx | metal    |(0.753)|beta+ |                    ? W-79 |               [ ] ? Dx-36 + Uq-43 |             ? UqDx(Dx-36,Uq-43>)|                                |
+| Lx-80⁺ |  80 41 Lx | metal    |(0.804)|beta+ |                           |                   ? Dx-37 + Uq-43 |             ? UqDx(Dx-37,Uq-43>)|                                |
+| Lx-81ª |  81 41 Lx | metal    |(0.858)|alpha |+250.00-5000          none |                   ? Dx-37 + Uq-44 |             ? UqDx(Dx-37,Uq-44>)|                                |
+| Lx-82ª |  82 41 Lx | metal    |(0.888)|alpha |                           |                   ? Dx-38 + Uq-44 |             ? UqDx(Dx-38,Uq-44>)|                                |
+| Lx-83ª |  83 41 Lx | metal    |(0.921)|alpha |+0                    none |                   ? Dx-38 + Uq-45 |+7696.55-10000 UqDx(Dx-38,Uq-45>)|                                |
+| Lx-84ª |  84 41 Lx | metal    |(0.932)|alpha |+0                    none |                   ? Dx-39 + Uq-45 |+7866.33-10000 UqDx(Dx-39,Uq-45>)|                                |
+| Lx-85ª |  85 41 Lx | metal    |(0.946)|alpha |                           |                   ? Dx-39 + Uq-46 |             ? UqDx(Dx-39,Uq-46>)|                                |
+| Lx-86ª |  86 41 Lx | metal    |(0.940)|alpha |+0                    none |                   ? Dx-40 + Uq-46 |+8162.03-10000 UqDx(Dx-40,Uq-46>)|                                |
+| Lx-87∙ |  87 41 Lx | metal    |(1.876)|stable|+0                    none |                   ? Dx-40 + Uq-47 |             ? UqDx(Dx-40,Uq-47>)|                                |
+| Lx-88∙ |  88 41 Lx | metal    |(1.834)|stable|+0                    none |                   ? Dx-40 + Uq-48 |             ? UqDx(Dx-40,Uq-48>)|                                |
+| Lx-89∙ |  89 41 Lx | metal    |(1.802)|stable|                           |                   ? Dx-41 + Uq-48 |             ? UqDx(Dx-41,Uq-48>)|                                |
+| Lx-90∙ |  90 41 Lx | metal    |(1.734)|stable|                           |                   ? Dx-41 + Uq-49 |             ? UqDx(Dx-41,Uq-49>)|                                |
+| Lx-91⁻ |  91 41 Lx | metal    |(0.838)|beta- |                           |                   ? Dx-42 + Uq-49 |             ? UqDx(Dx-42,Uq-49>)|                                |
+| Lx-92∙ |  92 41 Lx | metal    |(1.585)|stable|                           |               [ ] ? Dx-42 + Uq-50 |             ? UqDx(Dx-42,Uq-50>)|                                |
+| Lx-93⁻ |  93 41 Lx | metal    |(0.753)|beta- |                    ? N-93 |               [ ] ? Dx-43 + Uq-50 |             ? UqDx(Dx-43,Uq-50>)|                                |
+| Lx-94⁻ |  94 41 Lx | metal    |(0.697)|beta- |+0.0-5000             N-94 |+7988.77-8000        Dx-43 + Uq-51 |             ? UqDx(Dx-43,Uq-51>)|                                |
+| Lx-95⁻ |  95 41 Lx | metal    |(0.648)|beta- |                    ? N-95 |                   ? Dx-44 + Uq-51 |             ? UqDx(Dx-44,Uq-51>)|                                |
+| Lx-96⁻ |  96 41 Lx | metal    |(0.583)|beta- |+250.0-5000           N-96 |+7692.46-7700        Dx-44 + Uq-52 |+7813.62-8500  UqDx(Dx-44,Uq-52>)|                                |
++--------+-----------+----------+-------+------+---------------------------+-----------------------------------+---------------------------------+--------------------------------+
+
+So now try Lx-93
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3161.36 -   4000] => P-22 + Lx-91  | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2423.46 -   4000] => P-22 + Lx-93  | decay, nuclear               | used 2419.71 [ ] update recipe chains
+   [f]   Lx-93⁻             +   8000             => ? Dx-43 + Uq-50 <---DANG NOT ENOUGH makes N-93 using 400.00 decay
+total: 17940.41 
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3161.36 -   4000] => P-22 + Lx-91  | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2419.71 -   4000] => P-22 + Lx-93  | decay, nuclear               |
+   [f]   Lx-93⁻             +   8100             => ? Dx-43 + Uq-50 <--DANGITALL NOT ENOUGH AGAIN makes N-93 using 405.00 decay
+total: 18036.66
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3161.36 -   4000] => P-22 + Lx-91  | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2419.71 -   4000] => P-22 + Lx-93  | decay, nuclear               |
+   [r]   Lx-93⁻             +   8200             => ? Dx-43 + Uq-50 <---- SUCCESS!! used 8122.78 nuclear
+total: 18136.66
+
+
+OTOMRO 202017: P-24 + Lx-91 + 2499 => P-22 + Lx-93 + 75.537146982190009226
+[ ] add to chains?
+
+2025-05-23 May.Fri 20:07:54 Finished watching: Murderbot S01E03
+3/5
+
+2025-05-23 May.Fri 19:21:32 Made new files for the dataset I generated for Morpheus. CSV file and txt description file. Essentially its the chains.bohr.otom file but I used macros to grab the correct OTOMRO from the Reactor_logs_parsed-bohr.txt file
+[ ] Should I add the OTOMROs to my chains file? Sounds good.
+
+::FILE:: datasets/bohr_chain_recipes_for_morpheus.csv
+::FILE:: datasets/bohr_chain_recipes_for_morpheus.txt
+
+2025-05-23 May.Fri 15:21:07
+@q=gg/sf,;wE"nyf,wE"myf,wE"vyf,wE"oytgg0/| *n\S *+ *M\S   .*+>�kb�kb=>..*o *.*+ *\d\+\.\d\d *| *v0wvey A"[201~, ��a0f|;;;;ly$ a"0
+262: IN + IN => OUT       /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *, *\(\w\+-\d\+\) *, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *,\s*$
+@q=0gg/sf,;wE"nyf,WE"myf,WE"vyf,WE"oyf,wE"pygg0/| *n\S *+ *m\S   .*+�kb=>..*o *+ *p *+ *\d\+\.\d\d *| *v0wvey $pa,f|;;;;ly$ p0
+231: IN + IN => OUT + OUT /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *, *\(\w\+-\d\+\) *, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *, *\(\w\+-\d\+\)\s*,\s*$
+@q=gg0/s0f,;wE"nyf,;WE"vyf,wE"oyvvf,wE"pykgg0/| *n\S   .*+ *\d\+ =>..*o *+ *mp  *+ *\d\+\.\d\d *| *v0wey A", f|;;;;ly$ $p0
+ 81: IN      => OUT + OUT /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *,\s\+, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *, *\(\w\+-\d\+\)\s*,\s*$
+@q=gg0/s0f,;wE"nyf,;WE"vyf,wE"oyvvf,wE"pykgg0/| *n\S   .*+ *\d\+ =>..*o *+ *\d\+\.\d\d *| *v0wey A", f|;;;;ly$ $p0
+ 23: IN      => OUT       /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *,\s\+, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *,\s*$
+
+[ ] 6-chain for U-97 needs correction
+
+[ ] needs Dd-101, Dd-102,  Ns-66
+OTOMRO 200452: P-24 + Dx-42 + 2000 => Ns-66 + 455.20 
+OTOMRO 197438: P-23 + Dd-100 + 5000 => P-22 + Dd-101 + 1693.96 
+OTOMRO 197440: P-23 + Dd-101 + 5000 => P-22 + Dd-102 + 1684.90
+
