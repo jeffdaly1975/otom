@@ -133,6 +133,8 @@
 | Uq-47  | have |
 | Uq-48  | have |
 | Uq-49  | [ ]  |
+| Uq-50  | have |
+| Uq-51  | have |
 | Uq-52  | [ ]  |
 | Pb-43  | have |
 | Pb-44  | have | from mineables
@@ -219,6 +221,7 @@
 | Ns-63  | have | from mineables
 | Ns-64  | have | from mineables
 | Ns-65  | have | from mineables
+| Ns-66  | have |
 | Ns-67  | have |
 | Ai-59  | have |
 | Ai-60  | [ ]  |
@@ -455,6 +458,8 @@
 | Dd-98  | have | from mineables
 | Dd-99  | have | from mineables
 | Dd-100 | [ ]  |
+| Dd-101 | [ ]  |
+| Dd-102 | [ ]  |
 | Dd-103 | [ ]  |
 | Dd-104 | [ ]  |
 | Dd-105 | [ ]  |
@@ -586,6 +591,7 @@
 | Ji-103 | [ ]  |
 | Ji-104 | [ ]  |
 | Ji-105 | [ ]  |
+| Ji-106 | [ ]  |
 | Ji-107 | [ ]  |
 | Ji-108 | [ ]  |
 | Ji-109 | [ ]  |
@@ -613,6 +619,7 @@
 | Kn-108 | [ ]  |
 | Kn-109 | [ ]  |
 | Kn-110 | [ ]  |
+| Kn-111 | [ ]  |
 | Kn-112 | have |
 | Kn-113 | have |
 | Kn-114 | have |
@@ -622,7 +629,9 @@
 | Ha-109 | [ ]  |
 | Ha-110 | [ ]  |
 | Ha-111 | [ ]  |
+| Ha-112 | [ ]  |
 | Ha-113 | [ ]  |
+| Ha-114 | [ ]  |
 | Ha-115 | have |
 | Ha-116 | have |
 | Ha-117 | [ ]  |

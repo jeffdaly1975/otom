@@ -1,2329 +1,2576 @@
-2025-05-24 May.Sat 07:28:53 
+2025-05-25 May.Sun 11:57:06 zeroshape made a Dune Analytics board 
+
+::INFO:: 
+
+Name:        Otom Isotope stats
+URL:         https://dune.com/zeroshape/otomstats
+Description: Cumulative Isotope Crafting Costs: Alpha vs. Bohr
+             Creating isotopes in OTOM requires sequences of reactions, each costing NRG. These tables show the total cumulative NRG cost to create each isotope, summing the energy from all prerequisite steps. Below you can compare the most expensive isotopes for each universe.
+
+It includes
+- list of mineables for each universe and their token id
+- how much energy to make each isotope of each universe:
+     - Alpha:   660,540 NRG
+     - Bohr:  4,450,370 NRG
+
+
+Another nice Dune board by scoffie: https://dune.com/scoffie/otom-shape-l2
+-daily activity
+-NRG holders
+-Isotope/molecule discoveries leaderboard
+
+
+2025-05-25 May.Sun 10:48:14 It finally happened. More than 10000 reaction txs in one day yesterday. 10565 txs. Good thing I grabbed a CSV export from shapescan partially through the day.
+
+I removed all the duplicated lines from it and now there are 2 log files for yesterday:
+::FILE:: logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2025-05-24_2025-05-24.csv
+::FILE:: logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2025-05-24_2025-05-24-2.csv
+
+2025-05-24 May.Sat 18:10:09
+So using S-102 as the wildcard in crafting an axe makes T3 8 18 PkAx
+
+Thats the heaviest mineable you can use.
+
+Gy₃ which is mass 201 
+|  Gy-67ª +  Gy-67ª +  Gy-67ª  + 190 => Gy₃(Gy-67,Gy-67,Gy-67>) 
+used 183.00
+
+So using Gy₃ as the wildcard in crafting an axe makes T3 8 18 PkAx also
+
+try Mt₅ mass 170
+|  Mt-34⁺ +  Mt-34⁺ +  Mt-34⁺ +  Mt-34⁺ +  Mt-34⁺ + 136 => Mt₅(Mt-34,Mt-34,Mt-34,Mt-34,Mt-34>) 
+[ ] craft with that
+
+try Kk₂Gy  mass 207
+[r] |  Gy-67ª +  Kk-70ª +  Kk-70ª +      188 =>   Kk₂Gy(Gy-67,Kk-70,Kk-70>) 
+[ ] craft with that
+
+try S₂ mass 204
+NOTE I saw it fail when trying just 1 or 2 so you need more. Perhaps there is something to the thing where qma said decay only happens once or did he say twice?
+[r] |  S-102ª +  S-102ª +  S-102ª +  S-102ª +  S-102ª +  200 =>   P-22 + P-22 + Co-80 + Co-80 + S-102 + S₂(S-102,S-102>)  used 140.76
+[ ] craft with that
+
+try ClSUqRoGj mass 210 
+[r] |  Vi-10⁺ +  Cl-25⁺ +  Cl-26ª +  Uq-47⁻ +  S-102ª +  300 => ⬇ ClSUqRoGj(Cl-26,S-102,Uq-47>Gj-10,Ro-25) used 93.18
+[ ] craft with that
+
+Really Kk₃(Kk-70,Kk-70,Kk-70)+200 and Kk₃(Kk-71,Kk-71,Kk-71)+200 might just be the simplest
+
+
+2025-05-24 May.Sat 16:31:54 [ ] look into this Vim function perleval()
+
+| perleval({expr})					*perleval()*
+| 		Evaluate Perl expression {expr} in scalar context and return
+| 		its result converted to Vim data structures. If value can't be
+| 		converted, it is returned as a string Perl representation.
+| 		Note: If you want an array or hash, {expr} must return a
+| 		reference to it.
+| 		Example: >
+| 			:echo perleval('[1 .. 4]')
+| <			[1, 2, 3, 4]
+| 
+| 		Note that in a `:def` function local variables are not visible
+| 		to {expr}.
+| 
+| 		Can also be used as a |method|: >
+| 			GetExpr()->perleval()
+| 
+| <		{only available when compiled with the |+perl| feature}
+
+2025-05-24 May.Sat 11:52:10 updated my template file
+
+::FILE:: new_isotope.template.txt
+
+removed:
+  "add to otoms.complete.list.otom" - old format file. Now I use checklist.<universe>.otom to track which isotopes I have and am missing, and otoms.shapescan.data.<universe>.otom for tracking known isotopes
+  "save reservoir image to mac folder" - I have grabtheseimages.sh now
+  "put these vaules in ??? SHELL TABLE 1"
+  "put these vaules in ??? SHELL TABLE 2" - these become quite taxing on vim when its like 5000 columns
+    [ ] Consider making a new file that shows the shell tables
+  "add to otoms.otom"
+     - i just stopped updating this although [ ] I should consider doing it to make sure the data there all agrees across files
+  "add to otoms.columns.otom"
+     [ ] create new files "columns.<universe>.otom" for this format chart
+  "add reaction to otom.reactions.otom"
+     -removed because I no longer manually track reactions, I just run the parser and see mine
+     [ ] consider archiving/removing the file
+  "add to recipes.otom"
+     -I no longer update this unless I notice a new never before tried reaction in the logs and some of those I add. 
+     -Mostly this is replaced by the chains.<universe>.otom files. 
+     -[ ] And I intend to get the parser to reproduce this style recipe file automatically
+  "check off otoms.unfoundpossibilites.otom"
+     -I no longer do this
+       [ ] consider removing/archiving
+  "add to file otoms.decay.with.metadata.otom"
+     -I haven't been updating this. [ ] I'd like to do it automatically with the parser
+  "add to file optimized.get.all.isotopes.otom"
+     -This is sort of handled by chains.<universe>.otom but not really. I like how it has every otom necessary, and the prerequisites to make them but the format doesn't look great. 
+     [ ] Perhaps I can generate this off the chains files?
+  "add to token.image.descriptions.otom"
+     -I haven't been doing this and I don't feel I do an adequate job of describing the patterns.
+     -[ ] At some point I'd like to redo all of these and possibly add back into the template
+
+2025-05-24 May.Sat 11:49:37 And QMA discovered Se-103, so now 651 isotopes in Bohr
+
+OTOMRO 205224: P-23 + Se-102 + 10,000 => P-22 + Se-103 + 5460.854350063395031611
+[ ] Add to files
+
+2025-05-24 May.Sat 09:04:30 QMA discovered 4 more isotopes so now 650 isotopes in Bohr
+Ji-106
+Kn-111
+Ha-112
+Ha-114
+[c] Add to files
 
 2025-05-24 May.Sat 07:21:38 K-36 missing from chains?
+[c]
+
+2025-05-23 May.Fri 22:36:11 New Discovery Uq-50 so 644 isotopes in Bohr
+
+OTOMRO 202121: Lx-93⁻  +   8200 => Dx-43 + Uq-50 + 77.22 using  8122.78 nuclear
+
+[c] add to files
+
+2025-05-23 May.Fri 20:53:25 Discovered Uq-51 so 643 isotopes in Bohr
+
+OTOMRO 202031: Lx-94⁻  + 8000 => Dx-43 + Uq-51 using 7988.77 nuclear
+
+[c] add to files
+
+2025-05-23 May.Fri 20:09:19
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   As-7∙ +  Ct-17⁻   +[   518.30 -   5000] => P-24          | decay, nuclear               | used  517.75 [c] update recipe chains
+   [r]|   As-7∙ +  Ct-17⁻   +[   518.30 -   5000] => P-24          | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3163.46 -   4000] => P-22 + Lx-91  | decay, nuclear               | used 3161.46 [c] update recipe chains
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   4000] => P-22 + Lx-93  | decay, nuclear               |
+   [r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               | used 3072.42 exactly
+   [f]   Lx-94⁻             +               7800 => ? Dx-44 + Uq-50 <----DAMN STILL NOT ENOUGH! makes N-94 using 390.00 decay
+total: 20889.98
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               | used 517.70 [c] update recipe chains
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3161.46 -   4000] => P-22 + Lx-91  | decay, nuclear               | used 3161.36 [c] update recipe chains
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   4000] => P-22 + Lx-93  | decay, nuclear               | used 2423.46 [c] update recipe chains
+   [r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               |
+   [r]   Lx-94⁻             +               8000 => ? Dx-44 + Uq-50 <---HMMM DIFFERENT SUCCESS makes Dx-43 + Uq-51 using 7988.77 nuclear
+total: 22323.48
+
+so now the decay table is
++--------+-----------+----------+-------+------+---------------------------+-----------------------------------+---------------------------------+--------------------------------+
+| Lx-76⁺ |  76 41 Lx | metal    |(0.494)|beta+ |+250.00-5000          W-76 |               [ ] ? Dx-35 + Uq-41 |+5270.87-7000  UqDx(Dx-35,Uq-41>)|                                |
+| Lx-77⁺ |  77 41 Lx | metal    |(0.599)|beta+ |+0                    W-77 |               [ ] ? Dx-35 + Uq-42 |             ? UqDx(Dx-35,Uq-42>)|                                |
+|?Lx-78  |           |          |       |      |                           |               [ ] ? Dx-36 + Uq-42 |             ? UqDx(Dx-36,Uq-42>)|                                |
+| Lx-79⁺ |  79 41 Lx | metal    |(0.753)|beta+ |                    ? W-79 |               [ ] ? Dx-36 + Uq-43 |             ? UqDx(Dx-36,Uq-43>)|                                |
+| Lx-80⁺ |  80 41 Lx | metal    |(0.804)|beta+ |                           |                   ? Dx-37 + Uq-43 |             ? UqDx(Dx-37,Uq-43>)|                                |
+| Lx-81ª |  81 41 Lx | metal    |(0.858)|alpha |+250.00-5000          none |                   ? Dx-37 + Uq-44 |             ? UqDx(Dx-37,Uq-44>)|                                |
+| Lx-82ª |  82 41 Lx | metal    |(0.888)|alpha |                           |                   ? Dx-38 + Uq-44 |             ? UqDx(Dx-38,Uq-44>)|                                |
+| Lx-83ª |  83 41 Lx | metal    |(0.921)|alpha |+0                    none |                   ? Dx-38 + Uq-45 |+7696.55-10000 UqDx(Dx-38,Uq-45>)|                                |
+| Lx-84ª |  84 41 Lx | metal    |(0.932)|alpha |+0                    none |                   ? Dx-39 + Uq-45 |+7866.33-10000 UqDx(Dx-39,Uq-45>)|                                |
+| Lx-85ª |  85 41 Lx | metal    |(0.946)|alpha |                           |                   ? Dx-39 + Uq-46 |             ? UqDx(Dx-39,Uq-46>)|                                |
+| Lx-86ª |  86 41 Lx | metal    |(0.940)|alpha |+0                    none |                   ? Dx-40 + Uq-46 |+8162.03-10000 UqDx(Dx-40,Uq-46>)|                                |
+| Lx-87∙ |  87 41 Lx | metal    |(1.876)|stable|+0                    none |                   ? Dx-40 + Uq-47 |             ? UqDx(Dx-40,Uq-47>)|                                |
+| Lx-88∙ |  88 41 Lx | metal    |(1.834)|stable|+0                    none |                   ? Dx-40 + Uq-48 |             ? UqDx(Dx-40,Uq-48>)|                                |
+| Lx-89∙ |  89 41 Lx | metal    |(1.802)|stable|                           |                   ? Dx-41 + Uq-48 |             ? UqDx(Dx-41,Uq-48>)|                                |
+| Lx-90∙ |  90 41 Lx | metal    |(1.734)|stable|                           |                   ? Dx-41 + Uq-49 |             ? UqDx(Dx-41,Uq-49>)|                                |
+| Lx-91⁻ |  91 41 Lx | metal    |(0.838)|beta- |                           |                   ? Dx-42 + Uq-49 |             ? UqDx(Dx-42,Uq-49>)|                                |
+| Lx-92∙ |  92 41 Lx | metal    |(1.585)|stable|                           |               [ ] ? Dx-42 + Uq-50 |             ? UqDx(Dx-42,Uq-50>)|                                |
+| Lx-93⁻ |  93 41 Lx | metal    |(0.753)|beta- |                    ? N-93 |               [ ] ? Dx-43 + Uq-50 |             ? UqDx(Dx-43,Uq-50>)|                                |
+| Lx-94⁻ |  94 41 Lx | metal    |(0.697)|beta- |+0.0-5000             N-94 |+7988.77-8000        Dx-43 + Uq-51 |             ? UqDx(Dx-43,Uq-51>)|                                |
+| Lx-95⁻ |  95 41 Lx | metal    |(0.648)|beta- |                    ? N-95 |                   ? Dx-44 + Uq-51 |             ? UqDx(Dx-44,Uq-51>)|                                |
+| Lx-96⁻ |  96 41 Lx | metal    |(0.583)|beta- |+250.0-5000           N-96 |+7692.46-7700        Dx-44 + Uq-52 |+7813.62-8500  UqDx(Dx-44,Uq-52>)|                                |
++--------+-----------+----------+-------+------+---------------------------+-----------------------------------+---------------------------------+--------------------------------+
+
+So now try Lx-93
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3161.36 -   4000] => P-22 + Lx-91  | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2423.46 -   4000] => P-22 + Lx-93  | decay, nuclear               | used 2419.71 [c] update recipe chains
+   [f]   Lx-93⁻             +   8000             => ? Dx-43 + Uq-50 <---DANG NOT ENOUGH makes N-93 using 400.00 decay
+total: 17940.41 
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3161.36 -   4000] => P-22 + Lx-91  | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2419.71 -   4000] => P-22 + Lx-93  | decay, nuclear               |
+   [f]   Lx-93⁻             +   8100             => ? Dx-43 + Uq-50 <--DANGITALL NOT ENOUGH AGAIN makes N-93 using 405.00 decay
+total: 18036.66
+   [r]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   As-7∙ +  Ct-17⁻   +[   517.75 -   5000] => P-24          | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-89∙   +[  3161.36 -   4000] => P-22 + Lx-91  | decay, nuclear               |
+   [r]|   P-24⁻ +  Lx-91⁻   +[  2419.71 -   4000] => P-22 + Lx-93  | decay, nuclear               |
+   [r]   Lx-93⁻             +   8200             => ? Dx-43 + Uq-50 <---- SUCCESS!! used 8122.78 nuclear
+total: 18136.66
+
+
+OTOMRO 202017: P-24 + Lx-91 + 2499 => P-22 + Lx-93 + 75.537146982190009226
+[c] add to chains?
+
+2025-05-23 May.Fri 19:21:32 Made new files for the dataset I generated for Morpheus. CSV file and txt description file. Essentially its the chains.bohr.otom file but I used macros to grab the correct OTOMRO from the Reactor_logs_parsed-bohr.txt file
+[ ] add the OTOMROs to my chains file
+
+::FILE:: datasets/bohr_chain_recipes_for_morpheus.csv
+::FILE:: datasets/bohr_chain_recipes_for_morpheus.txt
+
+2025-05-23 May.Fri 15:21:07
+@q=gg/sf,;wE"nyf,wE"myf,wE"vyf,wE"oytgg0/| *n\S *+ *M\S   .*+>kbkb=>..*o *.*+ *\d\+\.\d\d *| *v0wvey A"[201~, ýa0f|;;;;ly$ a"0
+262: IN + IN => OUT       /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *, *\(\w\+-\d\+\) *, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *,\s*$
+@q=0gg/sf,;wE"nyf,WE"myf,WE"vyf,WE"oyf,wE"pygg0/| *n\S *+ *m\S   .*+kb=>..*o *+ *p *+ *\d\+\.\d\d *| *v0wvey $pa,f|;;;;ly$ p0
+231: IN + IN => OUT + OUT /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *, *\(\w\+-\d\+\) *, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *, *\(\w\+-\d\+\)\s*,\s*$
+@q=gg0/s0f,;wE"nyf,;WE"vyf,wE"oyvvf,wE"pykgg0/| *n\S   .*+ *\d\+ =>..*o *+ *mp  *+ *\d\+\.\d\d *| *v0wey A", f|;;;;ly$ $p0
+ 81: IN      => OUT + OUT /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *,\s\+, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *, *\(\w\+-\d\+\)\s*,\s*$
+@q=gg0/s0f,;wE"nyf,;WE"vyf,wE"oyvvf,wE"pykgg0/| *n\S   .*+ *\d\+ =>..*o *+ *\d\+\.\d\d *| *v0wey A", f|;;;;ly$ $p0
+ 23: IN      => OUT       /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *,\s\+, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *,\s*$
+
+[c] 6-chain for U-97 needs correction
+
+[c] needs Dd-101, Dd-102, Ns-66, Uq-50, Uq-51
+OTOMRO 200452: P-24 + Dx-42 + 2000 => Ns-66 + 455.20 
+OTOMRO 197438: P-23 + Dd-100 + 5000 => P-22 + Dd-101 + 1693.96 
+OTOMRO 197440: P-23 + Dd-101 + 5000 => P-22 + Dd-102 + 1684.90
+OTOMRO 202121: Lx-93⁻  +   8200 => Dx-43 + Uq-50 + 77.22 using  8122.78 nuclear
+OTOMRO 202031: Lx-94⁻  + 8000 => Dx-43 + Uq-51 using 7988.77 nuclear
 
 2025-05-23 May.Fri 12:51:01 [.] Run parser with Token Data extraction enabled to see what the current cheapest heaviest molecule is for making PkAx
-[ ] analyse the output
-
+[.] analyse the output
+[ ] choose a few to try making PkAx with
 Here are 2318 otoms and molecules with mass between 100-399 to choose from:
- 100 AsClTWy
- 100 AsClWyT
- 100 AsEb₂L
- 100 AsMtClViEb
- 100 AsRoXjWy
- 100 AsYvSrXj
- 100 AwEJu₂
- 100 ClDzWyCt
- 100 ClMtEbXj
- 100 ClMtXjEb
- 100 ClSrKk
- 100 ClSrXjL
- 100 ClSr₂Kk
- 100 Cl₂NdT
- 100 Cl₂Ro₂
- 100 Cl₂Uq
- 100 Cl₃SrXj
- 100 CtTDzGjWy
- 100 Cv
- 100 DMXcAf
- 100 DPqSFw
- 100 DXlPqDxM
- 100 Da
- 100 Dd
- 100 DxJuXcAw
- 100 DxPmFjSJu
- 100 DxXc₂Pm
- 100 Dx₂JuXc₂
- 100 Dx₂Xc₂
- 100 DzClCtWy
- 100 DzEb₂Wy
- 100 DzRoEbUq
- 100 DzWyEb₂
- 100 DzYvViAs
- 100 D₂Pq₂
- 100 D₂XlDx
- 100 EiAsEb₂Pb
- 100 EiClRoNdCt
- 100 EiGjViLEb
- 100 EiKkTDz
- 100 EiNdXjClEb
- 100 EiRoEb₂Nd
- 100 Ei₂YvXj
- 100 Ek
- 100 FjAwPq
- 100 FjNbAf
- 100 FjPqXcDx
- 100 FjXc₂
- 100 GjEb₂Pb
- 100 GjEiRoDzL
- 100 GjPbEb₂
- 100 GjWyEbXj
- 100 GjXjEbWy
- 100 Gj₂KkDz
- 100 GyEbGj
- 100 GyGjEb
- 100 JuSPmNb
- 100 JuWM₂Nb
- 100 KkEiTDz
- 100 KkGjXj
- 100 KkSrXjDz
- 100 KkTAsSrEi
- 100 KkTDzEi
- 100 KkTSrGj
- 100 KkXjGj
- 100 KkXjSrDz
- 100 LEbTVi
- 100 LEb₂AsSr
- 100 LRoDzT
- 100 LTViEb
- 100 MJuAwS
- 100 MPqXc₂
- 100 MSNb
- 100 MXcFw₂
- 100 MtClXjEb
- 100 MtEiNdEbGj
- 100 MtSrNdEbVi
- 100 MtSrYuEbCt
- 100 MtYuXj₂
- 100 M₅
- 100 NbAw
- 100 NbMDxAfJu
- 100 NdRoYuT
- 100 NdYuEb₂
- 100 Nm
- 100 Ok
- 100 PmAfAwM
- 100 PmAwXc
- 100 PmXcAw
- 100 RoClYuEb
- 100 RoDzUqEb
- 100 RoLDzT
- 100 Ro₂GjViYu
- 100 S
- 100 Se
- 100 SrAsEb₂Wy
- 100 SrYuYv
- 100 SrYvGjCt
- 100 S₄
- 100 TKkEiDz
- 100 ViXjPbEb
- 100 Vl
- 100 Vt
- 100 WSAwM
- 100 WS₂M₂
- 100 XcJuPmAw
- 100 XcWAwDx
- 100 XcWDxAw
- 100 Xc₂DxPm
- 100 Xc₂JuDxPm
- 100 YuMtEbT
- 100 YuMtTEb
- 100 YvGjT
- 100 YvSrGjCt
- 100 YvTGj
- 100 YvXjDz
- 100 Z
- 100 ZqXc₂
- 101 Af₂Xc₂Dx
- 101 AsClEbUq
- 101 AsClLCt
- 101 AsClTWy
- 101 AsEb₂L
- 101 AsUq₂
- 101 ClDz₂EiL
- 101 ClMtXjEb
- 101 ClPbSrAsXj
- 101 ClSr₂Kk
- 101 ClSr₂Yv
- 101 Cl₂NdT
- 101 Cv
- 101 DMXlZq
- 101 Da
- 101 Dd
- 101 DxFjMFw
- 101 DxMPq₂Fj
- 101 DxXcMZq
- 101 Dx₄D
- 101 DzClCtWy
- 101 DzClTPb
- 101 D₂XlDx
- 101 EiDzWyXj₂
- 101 EiLYuDz₂
- 101 EiMtEb₃
- 101 EiRoWyGjVi
- 101 Ei₂YvXj
- 101 Ek
- 101 FjWSXc
- 101 FjXc₂
- 101 FjXlPmXc
- 101 Fj₂PqXlW
- 101 FwWMNb
- 101 Fw₂DxJuD
- 101 GjEbXjWy
- 101 GjEb₂Pb
- 101 Gj₂KkDz
- 101 GySr₂Mt
- 101 JuDx₂Xc₂
- 101 JuXcAwPm
- 101 JuXc₂PmDx
- 101 Ju₂XcDxAw
- 101 KkAsDzCt
- 101 KkSrAs₂Ct
- 101 KkTEiDz
- 101 KkXjGj
- 101 LDzEb₂
- 101 LEb₂SrAs
- 101 LRoDzT
- 101 LSrAsEb₂
- 101 MPqXc₂
- 101 MSNb
- 101 MXc₂Pq
- 101 MtClEbXj
- 101 MtGjNdTDz
- 101 M₂Dx₂S
- 101 NbPqMXl
- 101 Nm
- 101 Ok
- 101 PbClEiEbSr
- 101 PmAwXc
- 101 PmXcAw
- 101 PqWXcAw
- 101 PqWXcNb
- 101 Pq₂AwFw
- 101 RoLDzT
- 101 RoWyAsEb
- 101 S
- 101 SMNb
- 101 SXcFwPm
- 101 Se
- 101 SrKkXjDz
- 101 Sr₂ClYv
- 101 Sr₂YuKk
- 101 S₂Fw₂
- 101 TKkDzEi
- 101 TKkEiDz
- 101 UqClSrEbAs
- 101 Vl
- 101 Vt
- 101 WXcDxAw
- 101 WyEb₂Gj
- 101 W₂AfNbXc
- 101 XcAf₂Aw
- 101 XcJuPmAw
- 101 XcWAwDx
- 101 Xc₂DxM
- 101 Xc₂FwAf₂
- 101 Xc₂MDx
- 101 Xc₃W
- 101 XjKkSrDz
- 101 XlZqSXc
- 101 YuEb₂Nd
- 101 YuEiKk
- 101 YuNdEb₂
- 101 Z
- 102 AfFjJuNb
- 102 AfFjZqFw
- 102 AfSXc₂
- 102 AsEiPbEb₂
- 102 ClAsUqEb
- 102 ClPbAsEb
- 102 ClPbEbAs
- 102 ClSr₂Kk
- 102 ClSr₂Yv
- 102 ClWyAsXj
- 102 Cl₂Ro₂
- 102 Cv
- 102 DFwMPm
- 102 DJuXc₂
- 102 DMFwPm
- 102 DXlFjWDx
- 102 Da
- 102 Dd
- 102 DzAsYuUqGj
- 102 DzEb₂Wy
- 102 DzWyEb₂
- 102 D₂JuS
- 102 EiYuKk
- 102 Ek
- 102 FjPqXlDxS
- 102 FjXc₂
- 102 FjXlXcS
- 102 Fj₂Ju₂S
- 102 GjEb₂UqSr
- 102 GySr₂Mt
- 102 JuNbXcPq
- 102 JuXc₂DxPm
- 102 JuXlDNb
- 102 Ju₂Aw₂
- 102 LEiGjCtEb
- 102 LViEbT
- 102 MFw₂Xc
- 102 MSNb
- 102 MtAsYuTCt
- 102 Mt₃
- 102 NbPm₂AfJu
- 102 Nm
- 102 Ok
- 102 PmAwXc
- 102 Pm₂JuXc₂
- 102 PqMZqDx₂
- 102 PqWXcAw
- 102 PqXc₂Fw
- 102 RoClAsMtDz
- 102 RoPbEiDzT
- 102 RoSrPbEbAs
- 102 S
- 102 SMNb
- 102 SXcPmFw
- 102 SXy
- 102 Se
- 102 SrEiYuGy
- 102 SrYuYv
- 102 Sr₂ClYv
- 102 Sr₃ClKk
- 102 S₄
- 102 TLEiEbDz
- 102 Vt
- 102 WPmNbJuS
- 102 WyEbViXj
- 102 W₂AfXcNb
- 102 Xc₂DxM
- 102 Xc₂DxPm
- 102 Xc₂FwAf₂
- 102 Xc₂MDx
- 102 YuSrYv
- 102 Z
- 102 ZqXlXcS
- 103 AsRoPbCtDz
- 103 AsRoUqCtGj
- 103 AsWyDzEbT
- 103 ClAsUqEb
- 103 ClPbAsEb
- 103 ClViXjYuCt
- 103 Cv
- 103 DPqNb
- 103 DPqXcPm
- 103 Da
- 103 Dd
- 103 DxDFw₂
- 103 DxNbZq
- 103 Dx₂PmPqD
- 103 EiWyRoCtDz
- 103 EiYuKk
- 103 Ei₂Uq₂
- 103 Ek
- 103 FjPmXcPqJu
- 103 FjXc₂
- 103 GjEb₂Pb
- 103 GyEiMt
- 103 Ji
- 103 JuNbA
- 103 Ju₂Aw₂
- 103 KkSrMt
- 103 LViTEb
- 103 MtClRoCt
- 103 MtRo₂SrCt
- 103 MtYuEbT
- 103 Mt₃
- 103 NbDJuAf
- 103 NbWXlXc
- 103 Nm
- 103 Ok
- 103 PbClEbAs
- 103 PmAwXc
- 103 PmXcAw
- 103 PqXc₃
- 103 Pq₂NbM
- 103 RoEi₂LT
- 103 S
- 103 SFwPmD
- 103 SMNb
- 103 SrKkMt
- 103 SrYuYv
- 103 Sr₂ClYv
- 103 S₄
- 103 Vt
- 103 WNbMFw
- 103 WPqSXcFw
- 103 WXcAwDx
- 103 WXcDxAw
- 103 WyAsEbCtGj
- 103 WyCtSrXjT
- 103 WyDzTEbAs
- 103 WyViEbXj
- 103 XcWAwDx
- 103 Xc₂DxM
- 103 Xc₂Dx₂Af
- 103 XlJuDNb
- 103 YuEiKk
- 103 YuSrYv
- 103 Yu₂SrEb₂
- 103 Z
- 104 AfFjAwXl
- 104 Aw
- 104 ClPbEbAs
- 104 ClSr₂Kk
- 104 Cv
- 104 DM₃
- 104 DPqNb
- 104 DXcDx₂W
- 104 Da
- 104 Dd
- 104 DxHbPq₂
- 104 Dx₂M₂S
- 104 EiGyMt
- 104 EiWyGjEbT
- 104 EiYuKk
- 104 Ek
- 104 FjMDxXc
- 104 GyEiMt
- 104 GySr₂Mt
- 104 Ic₂
- 104 Ji
- 104 Ju₂Aw₂
- 104 KkSrMt
- 104 MXc₂Pq
- 104 Mt₃
- 104 M₂FwSXl
- 104 M₅
- 104 NbAw
- 104 Nm
- 104 Ok
- 104 PqDNb
- 104 Pq₂NbM
- 104 RoWyAsEb
- 104 S
- 104 SDxNbAf
- 104 SFjXlXc
- 104 SXcFwPm
- 104 SXcXlDxM
- 104 Se
- 104 SrKkMt
- 104 SrYuYv
- 104 Sr₂ClYv
- 104 Sr₂GyMt
- 104 Sr₂L₂
- 104 Sr₂YuKk
- 104 S₄
- 104 UqAsViEbT
- 104 Vt
- 104 WAw₂
- 104 XcDxPmFj
- 104 XcPqSDxPm
- 104 Xc₂MDx
- 104 Xk₂
- 104 XlS₂M₂
- 104 YuEiKk
- 104 Z
- 104 ZqWFw₂M
- 105 AfAwFjXl
- 105 Aw
- 105 Cv
- 105 DPqNb
- 105 DSXcPq
- 105 DS₂Dx
- 105 Da
- 105 Dd
- 105 DxAfAwXc
- 105 DxJuZqNb
- 105 Dx₂FwAfD
- 105 Dx₂FwAw
- 105 Dx₄D
- 105 EiYuKk
- 105 Ek
- 105 FjSXcXl
- 105 FjXc₂
- 105 FjXlXcS
- 105 GyEiMt
- 105 Ji
- 105 KkSrMt
- 105 MFjDxXc
- 105 MXcJuNb
- 105 M₂Dx₂S
- 105 NbAw
- 105 Nm
- 105 Ok
- 105 PqXc₂Fw
- 105 S
- 105 SEFj
- 105 SXc₂Pm
- 105 SrKkMt
- 105 Sr₂GyMt
- 105 S₂DPm
- 105 S₂FjDx
- 105 Vt
- 105 WAw₂
- 105 WXcDxAw
- 105 WXcZqDxPm
- 105 WyEb₂Gj
- 105 W₂MFwAw
- 105 XcFjO
- 105 XcPq₂Aw
- 105 Xc₂DxM
- 105 Xc₂MWDx
- 105 XkNb
- 105 XlDxSNb
- 105 YuEiKk
- 105 Z
- 105 ZqAwFw
- 106 AfDx₂Xc₂
- 106 AsEiGjLMt
- 106 Aw
- 106 ClLNd
- 106 Cl₃Ro
- 106 Cv
- 106 DFjXcJu
- 106 Da
- 106 Dd
- 106 DxAfAwXc
- 106 DxFwAfWAw
- 106 DxMXcD
- 106 DxXc₂MW
- 106 Dx₂DFj
- 106 Dx₂PmNb
- 106 D₂Zq
- 106 EiGyMt
- 106 EiL₂
- 106 EiSrKkDzRo
- 106 Ek
- 106 FjDxAwJu
- 106 Fw₂AwXl
- 106 GyEiMt
- 106 GySr₂Mt
- 106 JuFjDWS
- 106 JuXcAwPm
- 106 Ju₂Aw₂
- 106 KkSrMt
- 106 Kn
- 106 MPmFwAfXc
- 106 MXcAwW
- 106 MXc₂Pq
- 106 MXc₂WDx
- 106 Ok
- 106 PqXc₃
- 106 Pq₄Nb
- 106 RoSr₂MtUq
- 106 S
- 106 SFjXcXl
- 106 SPmAfNb
- 106 SZqMFw
- 106 SrKkMt
- 106 SrYuClL
- 106 Sr₂L₂
- 106 S₂MXc
- 106 S₂XcFw
- 106 Vt
- 106 WFj₂Pq₂
- 106 Xc₂AfDxPm
- 106 Xc₂Pm₂W
- 106 Xc₂SPm
- 106 XlSDxNb
- 106 Z
- 107 AfNbXcPq
- 107 AfXc₂Dx₂
- 107 AfXlWNbXc
- 107 AsWyL
- 107 AsWyXjMt
- 107 Aw
- 107 AwPmDJu
- 107 CPqAwJu
- 107 ClLNd
- 107 Cv
- 107 Da
- 107 DxAfXcAw
- 107 DxSXlNb
- 107 Dx₂PmNb
- 107 Dx₂PmXcS
- 107 DzLPb
- 107 EiGyMt
- 107 EiL₂
- 107 EiMtTLSr
- 107 EiRoNdWy
- 107 Ek
- 107 FjDJuXc
- 107 FjMDxXc
- 107 FjXlXcS
- 107 Fj₂ZqJu
- 107 FwMXc₂
- 107 FwPmSXcJu
- 107 GjMtPbT
- 107 GyClCt
- 107 GyCtCl
- 107 GyEiMt
- 107 GySrCtRo
- 107 Ji
- 107 JuSAwXc
- 107 Ju₂FwAwZq
- 107 KkAs₂SrRo
- 107 KkDx
- 107 KkGjRoEi
- 107 KkRoCt
- 107 KkSrMt
- 107 Kn
- 107 MFwXc₂
- 107 MtRoEbNd
- 107 MtSrLEb
- 107 NbMSW
- 107 NdClL
- 107 NdLCl
- 107 Ok
- 107 Pm₂JuXc₂
- 107 Pm₃Aw
- 107 PqXc₃
- 107 Pq₂DxXc₂
- 107 RoMtTAsYu
- 107 S
- 107 SAf₃Nb
- 107 SPqAwPm
- 107 SrAsLPb
- 107 SrClWyNd
- 107 SrKkMt
- 107 SrMtLEb
- 107 SrRoLNd
- 107 SrYuClL
- 107 Vt
- 107 XcDxMD
- 107 XcMDxD
- 107 XcNbWPm
- 107 XcPq₂Aw
- 107 XcXlAwDx
- 107 XcXlFwM₂
- 107 Xc₂AfDxPm
- 107 Xc₂AfPmDx
- 107 Xc₂Fw₂
- 107 Xc₂SPm
- 107 Xl₂NbXc
- 107 YvAs₂Ro
- 107 Z
- 108 AsLWy
- 108 AsWyL
- 108 As₂Pb₂
- 108 Aw
- 108 AwPmPqS
- 108 AwSMXl
- 108 ClNdL
- 108 ClSrWyNd
- 108 Cl₄
- 108 Cv
- 108 DFjJuXc
- 108 DXl₂Aw
- 108 Da
- 108 DzLPb
- 108 EiKkGjRo
- 108 EiMtEbWy
- 108 EiMtRoUq
- 108 Ek
- 108 FjAfXcZq
- 108 FjAf₂Nb
- 108 FjDxXcM
- 108 FjDx₂D
- 108 FjXcWDxPm
- 108 FwPmNbXl
- 108 GjTEiNdPb
- 108 GyClCt
- 108 GyCtCl
- 108 GySrCtRo
- 108 GySrRoCt
- 108 Ha
- 108 Ji
- 108 JuAfAw₂
- 108 JuSXc₂Dx
- 108 JuXcAfAwDx
- 108 KkCtRo
- 108 KkSrMt
- 108 KkSrViRo
- 108 Kn
- 108 LMtAsXj
- 108 MXcJuNb
- 108 MtEiEbWy
- 108 MtRoEiTNd
- 108 MtRoNdEb
- 108 MtYuNdT
- 108 Mt₂Eb₂
- 108 Mt₂RoT
- 108 NbWPqFj
- 108 Nb₂
- 108 NdClL
- 108 NdLCl
- 108 NdSrClWy
- 108 Nd₃Xj
- 108 PmNbJuXc
- 108 PqXlNbXc
- 108 Pq₂DxXc₂
- 108 S
- 108 SJuXcAw
- 108 SrAsWy₂
- 108 SrClYuL
- 108 SrKkMt
- 108 SrWyAsL
- 108 Vt
- 108 WySrNdGjXj
- 108 W₂FjSD
- 108 XcAfAwPm
- 108 XcAfPmAw
- 108 XcAwFwW
- 108 XcMDxD
- 108 XcWFwAw
- 108 Xc₂Fw₂
- 108 XlJuM₂Nb
- 108 Xl₂NbXc
- 108 Z
- 109 AsRoNdPb
- 109 As₂Pb₂
- 109 Aw
- 109 AwSMXl
- 109 Ax
- 109 ClMtXjNd
- 109 ClSrYuL
- 109 Cv
- 109 DAf₂Nb
- 109 DFjXcJu
- 109 DSXcPq
- 109 Da
- 109 DxFwNbPq
- 109 DxJuFjNb
- 109 DxSXlNb
- 109 DxWXcJuNb
- 109 Dx₂PmSXc
- 109 DzMtPbXj
- 109 EiMtRoUq
- 109 EiSrLWy
- 109 Ek
- 109 FjDXcJu
- 109 FjPmNb
- 109 FjPm₂Xc
- 109 FwXlNbM
- 109 GjUqSrMtT
- 109 GyClCt
- 109 GyCtCl
- 109 GyGjClEi
- 109 Ha
- 109 Ji
- 109 JuAfAw₂
- 109 KkCtRo
- 109 KkEiGjRo
- 109 KkGjEiRo
- 109 KkSrMt
- 109 Kn
- 109 LMtDzT
- 109 LNdTVi
- 109 MXcAwW
- 109 MtLTDz
- 109 MtSrLEb
- 109 Mt₂Eb₂
- 109 NbMPmPq
- 109 Nb₂Ju
- 109 Nd₃Xj
- 109 PbSrDzL
- 109 PmFjNb
- 109 PqXlXcNb
- 109 Pq₂Fj₂Xl
- 109 Pq₂XlDxNb
- 109 S
- 109 SAfXcPmM
- 109 SSq
- 109 SrPbLDz
- 109 Vt
- 109 WXlAwMFw
- 109 WyDzL
- 109 WySrLAs
- 109 XcAfFw₂M
- 109 XcAfPmAw
- 109 Xc₂AfDxPm
- 109 XlPqNbXc
- 109 YvSrAsEiRo
- 109 Z
- 109 ZqFjC
- 110 AsMtPbEb
- 110 AsNdRoPb
- 110 Aw
- 110 AwFjFw
- 110 Ax
- 110 ClMtNdXj
- 110 ClMt₂Ct
- 110 Cv
- 110 DzSrPbWy
- 110 EbViAsRoUq
- 110 EiMtEbWy
- 110 EiNdClPb
- 110 EiNd₂ClXj
- 110 Ei₂WyL
- 110 Ei₂Wy₂
- 110 Ek
- 110 FjAwFw
- 110 FjFwAw
- 110 FjPmNb
- 110 FwAwXcJu
- 110 FwMAfNb
- 110 FwXc₂M
- 110 GdKk
- 110 GjPbMtT
- 110 GyClCt
- 110 GyGjClEi
- 110 Ha
- 110 Ji
- 110 JuAfAw₂
- 110 Ju₂XcNbFw
- 110 KkCtRo
- 110 KkRoCt
- 110 Kn
- 110 LEiClGjXj
- 110 LEiXjAsNd
- 110 LMtDzT
- 110 LMtTDz
- 110 LXjNdGj
- 110 MAwXcW
- 110 MtAsPbSrEb
- 110 MtNdEbRo
- 110 MtNdYuT
- 110 MtPbSrAsEb
- 110 MtRoEbNd
- 110 MtRoNdEb
- 110 MtYuNdT
- 110 M₅
- 110 NbAfPqXc
- 110 NbJuWAw
- 110 NbPqC
- 110 Nb₂Ju
- 110 PbGjMtT
- 110 PmFjNb
- 110 PqXlNbXc
- 110 SrDzUqL
- 110 SrMtNdYuCt
- 110 SrWyViTNd
- 110 Vt
- 110 WFjAwPm
- 110 WXc₂M₂
- 110 WyDzL
- 110 WyNdGjEb
- 110 XcDxMWFj
- 110 XcJuDxWNb
- 110 XcPq₂Aw
- 110 XcXlAwDx
- 110 XcXlDxAw
- 110 XlAw₂
- 110 XlXcAwDx
- 110 Z
- 111 AsClMt₂Dz
- 111 Aw
- 111 Ax
- 111 ClMt₂Ct
- 111 Cv
- 111 DAfXlNb
- 111 DDxWNb
- 111 DMNb
- 111 DZqSDx
- 111 D₃
- 111 EiKkGjRo
- 111 Ei₂WyL
- 111 Ek
- 111 Fj₂D
- 111 Fj₃
- 111 FwDxXc₂Af
- 111 FwS₂Fj
- 111 Ha
- 111 Ji
- 111 JuAfAw₂
- 111 JuXc₂FwM
- 111 JuXc₂MFw
- 111 Ju₃Nb₂
- 111 KkCtRo
- 111 KkRoCt
- 111 KkSrAs₂Ro
- 111 LTClAsGj
- 111 LXjGjClEi
- 111 LYuTCt
- 111 LuLx
- 111 MDNb
- 111 MtGjSrUqT
- 111 MtPbDzEb
- 111 MtPbSrAsEb
- 111 MtWyTGj
- 111 Mt₂ClCt
- 111 NbDx₂S
- 111 NbPqC
- 111 Nb₂Ju
- 111 OSC
- 111 PmSXcFj
- 111 PmXlMFjFw
- 111 PqAwFw₂
- 111 SJuXcAw
- 111 SZqMXc
- 111 SZqXcM
- 111 S₂PmDxFw
- 111 UqGdRo
- 111 ViPbCtMt
- 111 Vt
- 111 WyEi₂L
- 111 WyMtSrEiEb
- 111 XcPm₂WFj
- 111 XlAw₂
- 111 Z
- 112 AfJuAw₂
- 112 Aw
- 112 AwFjFw
- 112 ClEbYu₂As
- 112 DPmMSAf
- 112 Ek
- 112 FwAwPq₃
- 112 FwNbSXl
- 112 Fw₂WXc₂
- 112 GjAsClUqEb
- 112 GjEbClUqAs
- 112 IcXk
- 112 Ji
- 112 JuAwMFj
- 112 Ju₃Nb₂
- 112 KkRoCt
- 112 Kn
- 112 MXc₃
- 112 MtWyAsEb
- 112 MtWyGjT
- 112 MtWyXjDz
- 112 Mt₂Eb₂
- 112 NbMSPq
- 112 NbMXcAf
- 112 NbPmXcXl
- 112 NbZqS
- 112 PqXlNbXc
- 112 PqZqDxAw
- 112 RoMtEiUq
- 112 SXcZqM
- 112 S₂Xc₂
- 112 S₃Fj
- 112 S₄
- 112 Vt
- 112 WMNbXc
- 112 WyEbGjNd
- 112 WyEbNdGj
- 112 XcMNbJu
- 112 Xc₂WM₂
- 112 XkXc₂
- 112 XlAfWXcNb
- 112 Z
- 112 ZqNbS
- 113 Aw
- 113 AwPmFjJuW
- 113 DMNb
- 113 Dx₂FjXlXc
- 113 Dx₃AfNb
- 113 Ek
- 113 Fj₃
- 113 FwNbXlS
- 113 FwXc₂M
- 113 Ha
- 113 I
- 113 Ji
- 113 JuAwFjM
- 113 JuDx₂SNb
- 113 KkRoCt
- 113 Kn
- 113 NdYuEbCtXj
- 113 PqXlDxNbM
- 113 SAwFjJu
- 113 SXc₂Pm
- 113 S₂M₂Dx
- 113 S₃D
- 113 WXlAfNbXc
- 113 WyCtClEb
- 113 WyEbCtCl
- 113 WySrCtClXj
- 113 Xc₂S₂
- 113 XkXc₂
- 113 XlXcAwDx
- 114 Aw
- 114 AwAf₂EJu
- 114 Cv
- 114 DMNb
- 114 DW₂NbPq
- 114 DxMAwS
- 114 DxS₂PmXc
- 114 Dx₃AfNb
- 114 FjSAwJu
- 114 FjSDxJuZq
- 114 Fj₂AfXc
- 114 Fj₂JuAfZq
- 114 Fj₂M₂
- 114 FwXcAwXl
- 114 I
- 114 Ji
- 114 Kn
- 114 MAwXcPq
- 114 MSNbJuAf
- 114 MWNbXc
- 114 MXc₃
- 114 NbMSPq
- 114 PqXc₃
- 114 RoU
- 114 SFjWDxXc
- 114 SPmXcFj
- 114 SXcPmFj
- 114 SZqJuNb
- 114 UqGy
- 114 WAwDM
- 114 WyCtEbCl
- 114 WyEbCtCl
- 114 Xc₂PmDx₂
- 114 ZqAwXc
- 115 AfSXcAw
- 115 AfXcDPmM
- 115 Aw
- 115 DFjXcXl
- 115 DSFjDx
- 115 DxMAwS
- 115 Dx₂XcAw
- 115 D₂DxS
- 115 FjFwDxD
- 115 FjSDDx
- 115 FjSZqWDx
- 115 FwNbJuFj
- 115 Fw₅
- 115 Ha
- 115 I
- 115 JuSDx₂Nb
- 115 Ju₂XcNbFw
- 115 Kn
- 115 MWNbXc
- 115 MXcAwPq
- 115 MXc₃
- 115 M₃WAw
- 115 NbXlPqFj
- 115 SFjWDxXc
- 115 SZqXcM
- 115 UqSrGy
- 115 XcMDxFw₂
- 115 XcSAwAf
- 115 XlXc₂M₂
- 115 YpNb
- 116 Af₂Aw₂
- 116 Af₂XcAwDx
- 116 AwPqFjDx
- 116 DxMAwS
- 116 Dx₃XcFj
- 116 Fj₂ZqXl
- 116 FwAwXlXc
- 116 FwSNbPq
- 116 Fw₅
- 116 Ha
- 116 Jb
- 116 Kn
- 116 MAwFw₂
- 116 MPqXcAw
- 116 MtLx
- 116 Mt₂Wy
- 116 M₃Nb
- 116 NbDxPqXc
- 116 NbJuXc₂
- 116 NbMXcAf
- 116 NbPmE
- 116 Nd₂MtRo
- 116 PmXcSFj
- 116 PqXc₂DxFw
- 116 Ro₂Kk
- 116 SFjWDxXc
- 116 UqSrGy
- 116 Xc₂AwW
- 116 XlNbAwJu
- 116 XlS₂Nb
- 117 AfFjDxNb
- 117 AwFjXc
- 117 ClUq₂
- 117 DMAwAf
- 117 DxJuAw₂
- 117 D₂SJuDx
- 117 FjAwXc
- 117 FjXcAw
- 117 Fj₂AfXc
- 117 FwAwXcXl
- 117 Go
- 117 Ha
- 117 Ju₂AfNb₂
- 117 MNbXcAf
- 117 MXcPqAw
- 117 MXc₃
- 117 MXlNbXc
- 117 MXlXcNb
- 117 MtRoNd₂
- 117 MtSrLNd
- 117 NMt
- 117 NbHb
- 117 NbMC
- 117 OMZqSW
- 117 O₃
- 117 PqFjAwDx
- 117 PqFjDxAw
- 117 PqXc₃
- 117 RoSe
- 117 Ro₂EiLT
- 117 SFjDDx
- 117 S₂Xc₂
- 117 UqKk
- 117 UqSrGy
- 117 XcAf₂PqNb
- 117 XcFwAwPq
- 117 Xc₂AwW
- 117 Xc₂FwDxXl
- 117 Xc₂WAw
- 117 Xc₃Fw
- 117 Xc₃JuM
- 118 AfDAwFw
- 118 Ai₂
- 118 AwFjXc
- 118 AwXcFj
- 118 DJuXcAw
- 118 DJuXc₂Dx
- 118 DxFjSXcAf
- 118 Dx₃Xc₂
- 118 Dx₄Nb
- 118 EiRo₂LT
- 118 FjAwXc
- 118 FjXcAw
- 118 Fj₂M₂
- 118 Go
- 118 HD
- 118 JuDxAw₂
- 118 JuXc₃M
- 118 LGjNdYu
- 118 LNdGjYu
- 118 MFjAwXlJu
- 118 MFw₂Aw
- 118 MXc₃
- 118 Mt₂SrPb
- 118 Mt₂Wy
- 118 M₃Nb
- 118 Nb₂Xl
- 118 Ro₂Kk
- 118 Ro₅
- 118 S₂FjPmXl
- 118 UqKk
- 118 UqSrKk
- 118 XcMPmFjXl
- 118 XcWAfNbM
- 118 Xc₂AwW
- 118 Xc₂Fw₂
- 118 Xc₃Fw
- 119 AfDDxJuNb
- 119 AwFjXc
- 119 AwXcFj
- 119 ClRoKk
- 119 DFjXlXc
- 119 DS₂Dx₂
- 119 DxNbPqXc
- 119 EiWyMtNd
- 119 Ek
- 119 FjAwXc
- 119 FjXcAw
- 119 Fj₂DxMAf
- 119 Fj₂M₂
- 119 FwAf₂AwXc
- 119 KkRoXjDz
- 119 LNdRoCt
- 119 MXc₃
- 119 MXlXcNb
- 119 Mt₂SrPb
- 119 Mt₂Wy
- 119 M₂Fj₂Ju
- 119 NbJuXc₂
- 119 Nb₂Xl
- 119 OSNb
- 119 PmAw₂
- 119 RoYuLT
- 119 SrLYuDzNd
- 119 UqSr₂Kk
- 119 Vt
- 119 WyEiMtNd
- 119 X
- 119 YvRoTDz
- 120 AsPbMtNd
- 120 ClRoKk
- 120 ClRo₄
- 120 Cl₂EiViL
- 120 C₃
- 120 DXc₂Pm
- 120 DxXcPmAw
- 120 Dx₂ZqNb
- 120 Dx₄Nb
- 120 D₂XcPq
- 120 D₃Af
- 120 Ek
- 120 FjPmJuAwPq
- 120 FjSXcM
- 120 KkRoDzXj
- 120 KkTEiViXj
- 120 LRoNdCt
- 120 Mt₂NdEb
- 120 Mt₂Wy
- 120 M₃Nb
- 120 NbS₂Dx
- 120 Nd₂ClTXj
- 120 O₃
- 120 RoKkDzXj
- 120 RoYvDzT
- 120 RoYvTDz
- 120 RoYvXjAs
- 120 UqSrKk
- 120 Vt
- 120 Xc₂AwW
- 120 Xc₂DPm
- 120 Xc₂Pm₂Fw
- 120 Xc₂S₂
- 120 Xc₃Fw
- 120 Xc₄
- 120 XkAt
- 120 XlDxPmFjD
- 120 YvGjEbXj
- 120 YvRoTDz
- 121 AsYuKkSrCt
- 121 AwFjXc
- 121 AwXcFj
- 121 ClRoKk
- 121 ClRoWyAsT
- 121 ClUq₂
- 121 CtYvSrT₂
- 121 DzLRoAsNd
- 121 Ek
- 121 FjAwXc
- 121 FjMDxAfD
- 121 FjXcAw
- 121 Fj₂Af₂Zq
- 121 Ji
- 121 KkEb₂Gj
- 121 KkRoTGj
- 121 LNdRoCt
- 121 MXc₂FwDx
- 121 MtWyDzSrCl
- 121 NdMtYuCt₂
- 121 NdTGjViL
- 121 RoKkGjT
- 121 RoSrYvViGj
- 121 RoYuYv
- 121 RoYvDzT
- 121 SrWyCtNdRo
- 121 SrYvXj₂Gj
- 121 TRoPbXjCt
- 121 UqClPb
- 121 UqPbCl
- 121 XlFj₂Pm₂
- 121 YvCtSrT₂
- 121 YvEbTVi
- 121 YvEbViT
- 121 YvEb₂Dz
- 121 YvGjXjEb
- 121 YvNdEiAsDz
- 121 YvRoDzT
- 121 YvSrT₂Ct
- 121 YvTEbVi
- 121 YvXjEbGj
- 122 AwXlSFj
- 122 ClRoKk
- 122 ClSrRoKk
- 122 Dx₂AfSNb
- 122 Dx₃D₂
- 122 Dx₄Nb
- 122 JuDXcAw
- 122 KkGjEb₂
- 122 KkRoSrGjCt
- 122 KkSrEbGjXj
- 122 KkTRoEiAs
- 122 MNbPqD
- 122 MtSrUqGjYu
- 122 Nb₂Af₂
- 122 NdEiYvAsDz
- 122 RoKkTGj
- 122 RoSrYuKk
- 122 RoSr₂ClKk
- 122 RoYuYv
- 122 RoYvDzT
- 122 RoYvXjAs
- 122 SDx₂Xc₂
- 122 SPmAwFwW
- 122 SrYuRoKk
- 122 UqClPb
- 122 ViEb₂WyXj
- 122 XcSFw₂M
- 122 Xc₂AwW
- 122 Xc₃Fw
- 122 YuDzEbCtWy
- 122 YuSrRoKk
- 122 YvEbXjGj
- 122 YvEb₂Dz
- 122 YvGjXjEb
- 123 AfXcPmNbXl
- 123 AwXlSFj
- 123 ClLEbXjAs
- 123 ClMtNdCtT
- 123 ClRoKk
- 123 ClYuTWy
- 123 Cl₂Kk
- 123 Cl₂Sr₂Gy
- 123 Cl₂UqRo
- 123 Cl₂Yv
- 123 DZqXcM
- 123 Dx₃D₂
- 123 Eh
- 123 FjMWXcS
- 123 FjPm₂S₂
- 123 FjSXlXcDx
- 123 FwFjSD
- 123 FwXc₃W
- 123 Fw₂FjZqAf
- 123 GjClTPbEb
- 123 GjWyClEiNd
- 123 Ju₂AfNb₂
- 123 KkDzAsEbT
- 123 KkEb₂Gj
- 123 KkGjEb₂
- 123 KkRoGjT
- 123 KkSrEbGjXj
- 123 NbAfXc₂
- 123 NbDxFwXc
- 123 NdEiYvXj
- 123 PmDx₂XcD
- 123 PqAwXc₂
- 123 RoGjEbPbXj
- 123 RoKkEiTAs
- 123 RoYuYv
- 123 SrRo₂Kk
- 123 SrYvTEbGj
- 123 UqNdAsEb₂
- 123 ViRoEbCtWy
- 123 WyClEb₂As
- 123 WyNdEbEiXj
- 123 WyTYuCl
- 123 Xc₄
- 123 XlNbMFj
- 123 YvEbGjXj
- 123 YvEb₂Dz
- 123 YvTEbVi
- 123 ZqDMXc
- 124 AfDxAw₂
- 124 Af₂Nb₂
- 124 AsNdKkXj
- 124 Aw
- 124 AwPqSD
- 124 AwXlSFj
- 124 ClRoSrYv
- 124 ClViXjWyCt
- 124 Cl₂Kk
- 124 Cl₂UqRo
- 124 DFjXcJuDx
- 124 DxFjXcPm₂
- 124 DzMtWyEiRo
- 124 D₂S₂
- 124 Eh
- 124 FjMXcAfFw
- 124 FjNbXcJu
- 124 GjClEbPbT
- 124 Hb₂
- 124 KkGjEb₂
- 124 MFwXcS₂
- 124 NbMPqD
- 124 NbPmMXc
- 124 PqNbMD
- 124 PqZqNbFw
- 124 RoVl
- 124 RoWyTXjCt
- 124 SrClRoYv
- 124 SrCl₂Kk
- 124 SrEiNdYvT
- 124 SrRoYuKk
- 124 Sr₂NdEbKk
- 124 WL
- 124 Xc₂Fw₂Dx
- 124 Xc₄
- 124 YuRoYv
- 124 YvEb₂Ei₂
- 125 AfFw₂XcD
- 125 Af₂Nb₂
- 125 AsNdKkXj
- 125 AsNdSrTKk
- 125 ClRoSrYv
- 125 ClSrRoKk
- 125 Cl₂Kk
- 125 Cl₂UqRo
- 125 Cl₂Yv
- 125 Cl₃Ro₂
- 125 DDxPmNb
- 125 D₂Dx₃
- 125 EiDzNdGyCt
- 125 EiYuYvEb
- 125 FjAfSNb
- 125 FjSFwD
- 125 FwNbMS
- 125 GjNdKkCt
- 125 HA
- 125 JuXcSAwDx
- 125 NbSDAf
- 125 NdAsKkXj
- 125 NdAsSrTKk
- 125 NdEiXjYv
- 125 NdSrAsKkT
- 125 NdSrEiYvT
- 125 Pm₂AwFj
- 125 PqXc₂Aw
- 125 RoClSrYv
- 125 SXc₂Dx₂
- 125 SrAsNdKkT
- 125 SrCl₂Kk
- 125 SrNdDzKkCt
- 125 S₂Fj₂Ju
- 125 XcFw₂AfD
- 125 XcNbJu₂Fj
- 125 XcPq₂DxAw
- 125 Xc₃AfM
- 125 Xc₄
- 125 Ys
- 125 YuRoYv
- 126 Af₂Nb₂
- 126 AsYuKkEb
- 126 Cl₂SrKk
- 126 Cl₂Yv
- 126 DDxPmNb
- 126 DXcFwDx₂
- 126 DxDPmNb
- 126 FjDAwJu
- 126 FjMSXcPq
- 126 FjZqSXc
- 126 GkXk
- 126 NdGjCtKk
- 126 PqNbMD
- 126 PqXc₂Aw
- 126 Pq₂Aw₂
- 126 RoYuYv
- 126 SDAfJuNb
- 126 SrGyLDz
- 126 S₂Fj₂
- 126 UTEb
- 126 WXcAwFwPm
- 126 WyNdEbEiXj
- 126 XcDxDPmM
- 126 XcDxWAwM
- 126 Xc₄
- 126 Xl₂AwXcM
- 126 Xl₂NbAw
- 126 YuAsEbKk
- 127 AsYuEbKk
- 127 AwSXcPm
- 127 CZqIc
- 127 Dx₃SNb
- 127 FjDAwJu
- 127 FjPmXc₂Xl
- 127 FjXcPmD
- 127 GjYvEiDzMt
- 127 GyNs
- 127 IcAwM
- 127 MAwFwXc
- 127 MXcAwFw
- 127 Nb₂XlAf
- 127 PqXlAwNb
- 127 SrGyDzL
- 127 WDxNb₂
- 127 XcDAwAf
- 127 Xc₂M₃
- 127 Xc₃Fw
- 127 Xc₄
- 127 YuAsKkEb
- 127 YuSrRoKk
- 128 At₂
- 128 DMPmAw
- 128 DxPmXcNbJu
- 128 Dx₂SXcFj
- 128 EiYvXjMt
- 128 FjNbD
- 128 FjSXcZq
- 128 Fj₂Nb
- 128 Fw₂ZqAw
- 128 GyClEbT
- 128 GyEbRoXj
- 128 GyGjL
- 128 GyLGj
- 128 GyMtTDzEi
- 128 GySrEiMtEb
- 128 GyTClEb
- 128 KkEiEbMt
- 128 MAwFwXc
- 128 MPmAfDxHb
- 128 MtYuTL
- 128 Mt₂Nd₂
- 128 NbD₂
- 128 NdGj₂EiKk
- 128 NdRo₂Cl₂
- 128 PmFwNbZq
- 128 RoClLYu
- 128 RoJi
- 128 RoYuClL
- 128 SNbXcPq
- 128 W₂MAw₂
- 128 Xc₂M₃
- 128 XlPqAwNb
- 128 YuUqEb₂Dz
- 129 Cl₃Ro₂
- 129 Cl₄Ro
- 129 DWXlNbFw
- 129 DxFwMSO
- 129 Dx₂SXc₂
- 129 D₂FjDx
- 129 EiClNdXjL
- 129 EiGySrEbMt
- 129 FjDXk
- 129 FjMSXcPq
- 129 FjZqXcS
- 129 GjGyCtMtSr
- 129 GjLWyXj
- 129 GyEbRoXj
- 129 GyGjL
- 129 GySrNdCtT
- 129 KkClTXj
- 129 MXc₃Dx
- 129 M₂DxXcFj
- 129 NbXcJuPmM
- 129 NdYuLEb
- 129 PqXc₂Aw
- 129 RoYuClL
- 129 SDx₃Nb
- 129 SSrCl
- 129 SrSCl
- 129 UqNdYuCl
- 129 XcFwNbPm
- 129 XcWNbMDx
- 129 Xc₄
- 129 YvEiTSrMt
- 130 At₂
- 130 AwJuDxFjS
- 130 ClGyRoVi
- 130 Cl₅
- 130 DDxAwFw
- 130 DxAfS₂Nb
- 130 EiSrKkMtXj
- 130 GyEbRoXj
- 130 GyEbTCl
- 130 GyMtGjXj
- 130 GyTClEb
- 130 KkClXjT
- 130 KkRo₂Vi
- 130 KkTRoEb
- 130 KkT₂Yu
- 130 L₂SrTVi
- 130 MPmAwSPq
- 130 MtGyDzEb
- 130 MtYuTL
- 130 Nd₃Eb₂
- 130 PqXc₂Aw
- 130 RoYuClL
- 130 Xc₂M₂Pm
- 130 Xc₂M₃
- 130 Xc₃Pm₂
- 130 Xc₄
- 130 YuEbLNd
- 130 YvCtRoEb
- 131 DNbPmXl₂
- 131 Dx₂SD₂
- 131 EbGyAsDzYu
- 131 EiClMt₂Nd
- 131 EiKkMtEb
- 131 EiMtRoLT
- 131 EiYuLUq
- 131 FjDZqFw
- 131 FwDxXcAwAf
- 131 GjEbLPb
- 131 GjKkDzAsMt
- 131 GjYvNdAsVi
- 131 GyClEbT
- 131 GyMtSrAsEb
- 131 KkClTXj
- 131 KkEbRoT
- 131 KkTEbRo
- 131 MFwAwAfS
- 131 MXcFwFjDx
- 131 Nb₂M
- 131 S₂M₂D
- 131 WyEbGjL
- 131 XcZqDxAw
- 131 Xc₄
- 131 YuEiUqL
- 131 YuMtYv
- 131 YvEbCtRo
- 131 YvMtTDz
- 131 YvNdGjXj
- 131 YvViTNd
- 132 AsKkMtViDz
- 132 ClPbEiSrL
- 132 ClSrYuRoWy
- 132 Cl₂YuWy
- 132 Dx₂Aw₂
- 132 Dx₃XcAw
- 132 GyCtSrNdT
- 132 GyEbViNd
- 132 GyMtDzEb
- 132 GyMtEbDz
- 132 KkClTXj
- 132 KkClXjT
- 132 KkEbRoT
- 132 KkEiMtEb
- 132 KkMtTGj
- 132 KkNdViXj
- 132 KkTEbRo
- 132 MNbAwAf
- 132 MNbXcS
- 132 MtCv
- 132 MtKkXjDz
- 132 MtYvDzT
- 132 MtYvGjCt
- 132 NbAf₂MFj
- 132 NbMXcS
- 132 PbSrRoAsL
- 132 PwAt
- 132 SrCtXjWyUq
- 132 Sr₂Nd₂Kk
- 132 S₂AwXc
- 132 S₂DM₂
- 132 S₃Nb
- 132 UqClNdYu
- 132 UqYuNdCl
- 132 WyEbLGj
- 132 XcAwFw₂
- 132 XcFw₂Aw
- 132 Xc₄
- 132 YvCtEbRo
- 132 YvCtTYu
- 132 YvRoEbCt
- 132 YvTCtYu
- 132 YvTYuViSr
- 132 ZqAw₂
- 133 EiPbDzLEb
- 133 E₃
- 133 GyEbClT
- 133 KkClXjT
- 133 KkCtClEb
- 133 KkEbTRo
- 133 KkEiTGjNd
- 133 KkMtTGj
- 133 KkRoTEb
- 133 KkYuT₂
- 133 LT₂EbYu
- 133 LViEbNdXj
- 133 LViEbXjNd
- 133 LViNdXjEb
- 133 MNbSXc
- 133 MtRoLTAs
- 133 MtYuYv
- 133 MtYvDzT
- 133 MtYvTDz
- 133 MtYvXjAs
- 133 NbDxXc₂
- 133 NbMSXc
- 133 NdUqAsWy
- 133 SrMtYuKk
- 133 SrNd₂Yv
- 133 S₂XcAw
- 133 UqClYuNd
- 133 UqNdWyAs
- 133 UqYuClNd
- 133 WyGjLEb
- 133 XcNbXlMDx
- 133 YuEiNdYv
- 133 YvCtXjCl
- 133 YvXjClCt
- 134 AfXcFwNbDx
- 134 AsLTViUq
- 134 AsYuKkNd
- 134 AsYvTDzYu
- 134 ClSrEiNdYv
- 134 DSAf₂Nb
- 134 DSPmNb
- 134 DxXcXlMNb
- 134 EiYvDzEbCl
- 134 FjAw₂
- 134 Gy₂
- 134 KkEbClCt
- 134 LEbTCtNd
- 134 LSrCtGy
- 134 MAwXc₂
- 134 MNbSXc
- 134 MtS
- 134 Nb₂PmAf
- 134 Nd₂EiKk
- 134 WyClNdDzXj
- 134 WyClNdTGj
- 134 WyCtEbXjNd
- 134 WyCtNdEbXj
- 134 WyCtXjEbNd
- 134 WyNdCtEbXj
- 134 ZqPqXcNb
- 135 CSPqNb
- 135 ClSrMtYv
- 135 Cl₅
- 135 EiClSrNdYv
- 135 GjKkEiEbCl
- 135 KkNs
- 135 MWAwSXc
- 135 MtClSrYv
- 135 MtYuYv
- 135 NbXlAwM
- 135 SrClEiYvNd
- 135 SrGy₂
- 135 S₂NbPmPq
- 135 YuMtYv
- 135 Yu₂MtEb₂
- 136 AfMXcNbPm
- 136 AsUqTGy
- 136 DXcWNbXl
- 136 D₂Xc₂
- 136 FAi
- 136 FjZqXcPmDx
- 136 JuXc₂AwM
- 136 LEbYuT₂
- 136 LYvVi
- 136 MAwXc₂
- 136 MtS
- 136 MtYuYv
- 136 Mt₂Kk
- 136 Mt₄
- 136 NbMXcS
- 136 NbM₂D
- 136 Nd₂EiKk
- 136 Sr₂Gy₂
- 136 S₂XcAw
- 136 S₂ZqNb
- 136 UqClMtGjT
- 136 XcWAw₂
- 136 Xc₂Af₂Nb
- 136 Xc₂FwAw
- 136 Xc₄
- 136 YuEiNdYv
- 136 YuMtYv
- 137 AsUqTGy
- 137 Aw₂Fj
- 137 DxXlNb₂
- 137 FjAw₂
- 137 FjDAfNb
- 137 FjPmJuAwXc
- 137 FwNbXlFjPq
- 137 GyMtCtRo
- 137 Gy₂
- 137 KkGy
- 137 KkMt₂
- 137 MAwXc₂
- 137 MNbSXc
- 137 MtRoLNd
- 137 MtS
- 137 MtSrClYv
- 137 Mt₂Kk
- 137 NbFwSZq
- 137 NbJuAwXc
- 137 NbJuXcAw
- 137 PqD₂Fw₂
- 137 UqRoGy
- 137 WAwNbXlPm
- 137 WSXcMNb
- 137 WyCtSrKk
- 137 WySrCtKk
- 137 Xc₂AwFw
- 137 XlNbAwM
- 137 YuAsNdKk
- 138 EiMtLWy
- 138 EkMt
- 138 FjNbPmJuS
- 138 Gy₂
- 138 JuBtIc
- 138 KkGy
- 138 KkMt₂
- 138 KkNdViYu
- 138 KkNdYuVi
- 138 Mt₂SrGy
- 138 NbJuAwXc
- 138 SrKkGy
- 138 S₂ZqNb
- 138 WyEiKkVi
- 138 Xc₂AwFw
- 138 YvRoYuT
- 138 YvSrMtNd
- 139 Fj₂Fw₂Dx
- 139 FwSNbFj
- 139 GyTNdCl
- 139 Gy₂
- 139 KkMt₂
- 139 KkNdRoT
- 139 Mt₂Kk
- 139 NbMSXc
- 139 NdMtClWy
- 139 SNbXcFw
- 139 SrKkGy
- 139 Sr₂Gy₂
- 139 Sr₂KkGy
- 139 UqRoGy
- 139 UqSrRoGy
- 139 Xc₃MPm
- 139 YvEiNdGjRo
- 140 FjMAwSW
- 140 GyClNdT
- 140 GyClTNd
- 140 GyNdClT
- 140 GyTClNd
- 140 KkRoNdT
- 140 KkTNdRo
- 140 KkTRoNd
- 140 KkViNdYu
- 140 Kk₂
- 140 LTWyRo
- 140 MtYuClL
- 140 Mt₂Kk
- 140 NbPmXcFj
- 140 Nb₂SAf
- 140 Nb₂Zq
- 140 SrGyTClYu
- 140 SrKkGy
- 140 UqRoKk
- 140 Xc₄Dx
- 141 AfDxSDNb
- 141 GyClNdT
- 141 GyMtRoCt
- 141 GyTNdCl
- 141 IcPqD₂
- 141 KkTNdRo
- 141 KkTRoNd
- 141 Kk₂
- 141 LPbDzMt
- 141 MtGyCtRo
- 141 MtNdClWy
- 141 MtYuClL
- 141 M₂XcPmAw
- 141 NbSFwFj
- 141 NbSXc₂
- 141 SrKkGy
- 141 Sr₃KkGy
- 141 UqRoKk
- 141 WyLNdGj
- 142 GySrYuClT
- 142 KkNdViYu
- 142 KkTRoNd
- 142 KkViNdYu
- 142 Kk₂
- 142 MZqNbXc
- 142 NbSFwFj
- 142 NdClYvAsDz
- 142 SrKk₂
- 142 Sr₂Kk₂
- 142 S₂AwPmM
- 142 UqRoKk
- 142 Uq₂RoCl
- 142 Xc₃Aw
- 142 XkNbWZq
- 142 XlXcSMNb
- 143 A₃
- 143 ClGyTCtXj
- 143 ClUqKk
- 143 DFjSC
- 143 FwDxAwNb
- 143 LNdClEbCt
- 143 PbClXjWy
- 143 RoEk
- 143 SrKk₂
- 143 UqRoKk
- 143 Uq₂RoCl
- 143 Xc₃Aw
- 144 ClKkXjDzEb
- 144 ClUqKk
- 144 D₄
- 144 Nb₂PmDx
- 144 PbXjClWy
- 144 Pq₂XlNb₂
- 144 SXc₃M
- 144 SrKk₂
- 144 Sr₂Kk₂
- 144 WXc₂Fj₂
- 144 Xc₂PqAwDx
- 145 ClUqKk
- 145 ClUqSrKk
- 145 FjNb₂
- 145 Fj₂AfNbXl
- 145 Fj₂AfXlNb
- 145 Fj₂NbAfXl
- 145 FwXc₄
- 145 KkYuDzTEb
- 145 Nb₂D
- 145 NdYuKkXj
- 145 Ro₂SrClKk
- 145 Ro₂YuKk
- 145 SDAwXc
- 145 Sr₂Kk₂
- 145 UqEbPbYu
- 145 UqLSrClXj
- 145 Xc₂NbS
- 145 Xc₃Aw
- 145 ZqFjSAw
- 146 ClNdEbGySr
- 146 Cl₂RoKk
- 146 EiClRoEbYv
- 146 Fj₂AfXlNb
- 146 GkPw
- 146 MAw₂Fw
- 146 NbMPmAw
- 146 NdAsXjYvEb
- 147 AfFj₂NbXl
- 147 AwZqSMDx
- 147 ClNdEbKk
- 147 ClNdKkEb
- 147 Fj₂AfNbXl
- 147 Fj₂AfXlNb
- 147 Fj₂NbAfXl
- 147 Fj₄
- 147 FwXc₄
- 147 GjNdEbYvCt
- 147 JuDx₂Nb₂
- 147 MDEAw
- 147 Mt₂LNd
- 147 NdClKkEb
- 147 SrNdClTYv
- 147 Xc₃Aw
- 148 ClNdKkEb
- 148 ClRo₂Kk
- 148 DSZqNb
- 148 D₄
- 148 Fj₄
- 148 RoCl₂Kk
- 148 Xc₃Aw
- 148 YuRo₂Kk
- 149 ClNdKkEb
- 149 GjYuXjKkEb
- 149 MFwOXc₂
- 149 Nb₂DxS
- 149 NdClEbKk
- 149 NdClKkEb
- 149 NdYuXjKk
- 149 RoCl₂Kk
- 149 Uq₂EbEiYu
- 149 Xc₃Aw
- 150 DNbXcFw
- 150 FjXcXlPmNb
- 150 GyYuGjNdT
- 150 NbIcXcJuW
- 150 YvAsXjMtEb
- 150 YvSrClMtT
- 151 ClYvSrMtT
- 151 KkRoEiXjMt
- 151 MXc₂SFj
- 151 NdGjKkTEb
- 151 RoGjLTWy
- 151 ViWyClMtYu
- 151 Xc₂MAwDx
- 151 YvClXjMt
- 152 AwCXcZq
- 152 ClYvXjMt
- 152 Fj₂Fw₂Zq
- 152 Fw₂Xc₃
- 152 GjGyRoMtCt
- 152 GyEbTXjNd
- 152 KkGjLEb
- 152 KkLEbGj
- 152 Pq₂PmNb₂
- 152 RoSCl
- 152 SrSNdXj
- 152 S₃Fj₂
- 152 YvClMtXj
- 152 YvLGjXj
- 152 YvTDz₂Pb
- 153 AwPqNbFj
- 153 ClSRo
- 153 CtRoTWyPb
- 153 D₃SDx
- 153 KkT₂EbNd
- 153 Mt₃Pb
- 153 NbFwFjD
- 153 Nb₃
- 153 NdClGjMtWy
- 153 RoCtPbTWy
- 153 SEbNd
- 153 SrSEbYu
- 153 YvMtEb₂As
- 154 ClSRo
- 154 DxDAw₂
- 154 GyClEb₂Xj
- 154 KkSrYvVi
- 154 MtRoYuKk
- 154 NbDXc₂
- 154 NbXcPmAw
- 154 Nb₂DAf
- 154 PqFjNbAw
- 154 SEbNd
- 154 SrSXjNd
- 154 XcNbAwPm
- 154 YvEb₂NdGj
- 154 YvNdClTDz
- 154 YvNdXj₂Ct
- 154 YvSrViLCt
- 154 YvYuXj₂T
- 154 Zq₂Xc₂M
- 155 ClMtRoYv
- 155 ClWyLTGj
- 155 DJuAfNb₂
- 155 Ei₂YuGyL
- 155 KkSrYvVi
- 155 NbDHb
- 155 NdYuClYv
- 155 PmFjSCXc
- 155 SrKkYvVi
- 155 XcAwJuDxNb
- 156 Dx₃Nb₂
- 156 MtUqClXjYu
- 156 RoGjEbLUq
- 156 SrYvViKk
- 156 WyRoKkCt
- 156 YuMtRoKk
- 156 YvSrKkVi
- 156 Yv₂SrGj
- 157 AsLRoEiYv
- 157 DzYuKkWy
- 157 EiYuLYv
- 157 FjNbMSPm
- 157 FjNbXcZq
- 157 KkEbTXjYu
- 157 LRoYvGj
- 157 Sr₂KkYvGj
- 157 UqNdEbAsL
- 157 YuClNdYv
- 157 YuNdYvCl
- 157 Yv₂Vi
- 158 Bt₂
- 158 Cl₂MtKk
- 158 DZqXlNbFw
- 158 Fj₂NbAfXl
- 158 Fw₂AwXc₂
- 158 Fw₂Xc₂Aw
- 158 Kk₂EiVi
- 158 Nb₂Fw₂
- 158 O₄
- 158 XcDxMAwFj
- 158 Xc₂DxSNb
- 158 YuAsWyYv
- 158 YuNdYvCl
- 159 ClWyGjYv
- 159 DDxS₂Nb
- 159 EiKk₂Vi
- 159 GyVl
- 159 LEiKkEbVi
- 159 NbFj₂Xc
- 159 RoKkGy
- 159 WyRoCtKk
- 160 Cl₂MtKk
- 160 GyClLT
- 160 GyLClT
- 160 LAsKkGjEb
- 160 MtSCl
- 160 NbXcSAw
- 160 Nb₂S₂
- 160 RoKkGy
- 160 SMtCl
- 160 SqBt
- 160 Sq₂
- 160 WyRoCtKk
- 160 Xc₃AwDx
- 161 RoKkGy
- 161 SNbXcAw
- 161 XcNbSAw
- 162 CtLPb₂
- 162 GyTNd₂Xj
- 162 GyYuLCt
- 162 JuAwNbSXc
- 162 KkClNdMt
- 162 KkEiLClGj
- 162 KkNdMtCl
- 162 KkU
- 162 MtSCl
- 162 NbSAwXc
- 162 Nb₃
- 162 RoKkGy
- 162 RoKk₂
- 162 SDAw₂
- 162 SrRoKkGy
- 162 WyRoKkCt
- 162 XcSDAwDx
- 162 Xc₂Aw₂
- 162 Xk₃
- 163 D₂WXcNb
- 163 GyPbDzRoT
- 163 MtSCl
- 163 SMtCl
- 163 SNbXcAw
- 163 YvAsUqYuGj
- 163 YvLRoCt
- 163 YvRoTWy
- 164 KkClCtL
- 164 KkGyYu
- 164 MtSCl
- 164 Nb₂XcFw
- 164 YvRoTWy
- 165 DxNbSXcFj
- 165 D₂FjNb
- 165 FjFwCXc₂
- 165 GyKkYu
- 165 KkGyYu
- 165 KkT₂Nd₂
- 165 LGyXjNd
- 165 LMtKkVi
- 165 Nb₂XcFw
- 165 RoKk₂
- 165 SNbXcDxFj
- 165 Xc₂Aw₂
- 165 Xc₃PqNb
- 165 Xk₃
- 166 ClKk₂
- 166 ClSEbT
- 166 ClUqRoKk
- 166 DxFjAwDS
- 166 FwXc₃Aw
- 166 GyYuKk
- 166 LGyNdXj
- 166 LKkXjYu
- 166 PbSrGjMtYv
- 167 ClKk₂
- 167 FjDxMNbD
- 167 GyKkYu
- 167 GyYuKk
- 167 KkGyYu
- 167 LEbGyYu
- 167 LTNdKk
- 167 MtNd₂Yv
- 167 SrRoKk₂
- 167 WyKkNdXj
- 168 ClKk₂
- 168 C₄
- 168 HbXcMFjPq
- 168 LKkNdT
- 168 LYuXjKk
- 168 Mt₂YuKk
- 168 Xc₂Aw₂
- 169 ClUqRoKk
- 169 DxXlDXkAw
- 169 LNdKkT
- 169 WyKkXjNd
- 169 YvMt₂Nd
- 170 AwDxFwSNb
- 170 Cl₂UqKk
- 170 FjFwEXcZq
- 170 Mt₅
- 170 NLx
- 171 LNdRoWyXj
- 172 DNbXcAw
- 172 D₅
- 172 Ic₃
- 172 Mt₃Gy
- 172 Xc₂DMAw
- 173 Pq₂FjNb₂
- 173 RoYvLAsEb
- 174 ClKkTGjL
- 174 E₄
- 174 KkGyTSrXj
- 174 KkRoLGjXj
- 174 KkYuEbNdRo
- 174 LSEb
- 174 Mt₂YvDzRo
- 175 LEbS
- 175 LNdGyYu
- 175 Ro₂MtClKk
- 175 UqLClWy
- 175 Xc₂Fj₃
- 176 DXc₂SNb
- 176 NdT₂GyPb
- 176 Sr₂SYv
- 177 ClMtNdGyEb
- 177 DNb₂Zq
- 177 GySrClKkVi
- 177 GyXjKkSrEb
- 177 LGyNdYu
- 178 ClSrGyYvGj
- 178 EiSrSKk
- 178 SrYvTEbGy
- 178 Yv₂SrViEb
- 179 ClKkGyCt
- 179 D₅
- 179 QiIcC
- 179 SrEiSKk
- 179 SrYvEbGyT
- 180 Aw₂JuNbS
- 180 ClLXjGyT
- 180 FjSZqXcNb
- 180 WyYuNdKk
- 181 ClKkGyCt
- 181 EiYvRoKkDz
- 181 UqGy₂
- 181 XcAw₃
- 182 A₄
- 182 ClLYvGjEb
- 182 NbPmCFjXc
- 182 NbXcAwFwM
- 182 RoFVl
- 182 XcAw₃
- 182 YvGyClAsVi
- 183 GyKkGjMt
- 183 GyKkMtGj
- 183 SLNd
- 183 YvClXjLT
- 183 YvXjLNdVi
- 184 KkGyMtGj
- 184 SeU
- 184 UqKkGy
- 185 D₅
- 185 Fj₃D₂
- 185 Fj₅
- 185 GyWy₂GjDz
- 185 KkMtViLT
- 185 KkViEbLNd
- 185 UqKkGy
- 185 YvT₂LYu
- 186 FwAw₂Xc₂
- 186 KkClYuRoMt
- 186 KkLMtViT
- 186 UqSrKkGy
- 186 XcFjAw₂Pm
- 187 GyYvNdXj
- 187 MtGyCtKkSr
- 187 Ro₂KkGy
- 187 UqKk₂
- 187 YvGyXjNd
- 187 YvKkXjYu
- 188 Fj₅
- 188 KkNdYvT
- 188 MtAsKkGyGj
- 188 MtYv₂Gj
- 188 NbXcMFjAw
- 188 Nb₂AwXc
- 188 UqKk₂
- 188 YvGyYuEb
- 189 Kk₂EbYu
- 189 Kk₂YuEb
- 189 Nb₂XcAw
- 189 UqKk₂
- 189 Yv₂NdCt
- 190 Fj₅
- 190 WyMtRoViKk
- 190 YvKkNdT
- 191 FwAw₂Xc₂
- 191 Kk₂YuEb
- 191 MtRoWyViKk
- 191 RoMtWyViKk
- 192 ClRoKk₂
- 192 LEb₂KkYu
- 193 DPwXcNb
- 193 GyPbMtClXj
- 194 Cl₂Kk₂
- 194 DZqFjXcNb
- 194 YvEbS
- 195 CSAH
- 195 Cl₂Kk₂
- 195 NbXcMFjAw
- 196 Fw₂Aw₃
- 196 KkSTDz
- 196 WyGyTMtCl
- 196 YvGyNdYu
- 196 YvGyYuNd
- 197 KkGyNd₂
- 198 ClSMtEbCt
- 198 Gy₂MtYu
- 198 KkSTDz
- 198 WyLKkYu
- 198 YvRoKkTXj
- 199 YvClTGyXj
- 199 YvRoEbGyT
- 200 GyNdT₂Kk
- 201 Cl₃LKk
- 201 Gy₃
- 201 WyYuKkL
- 201 Wy₂YvYu
- 202 ClKkYvViEb
- 203 CDHA
- 203 ClYvKkViEb
- 204 KkGy₂
- 204 NdKkGyMtSr
- 204 S₂
- 204 Yu₂DzKk₂
- 205 KkGy₂
- 205 O₅
- 205 RoYvEbKkCt
- 207 C₅
- 207 Kk₂Gy
- 207 Nb₂DXc₂
- 208 KkRo₃Gy
- 208 Kk₂Gy
- 209 Kk₂Gy
- 209 UqRoKkGy
- 210 ClMtYuKkL
- 210 ClSUqRoGj
- 210 C₅
- 210 Kk₃
- 210 Yv₂Xj₂Nd
- 211 Kk₃
- 212 Kk₃
- 213 Kk₃
- 213 LRoGyYv
- 214 ClLGyKk
- 214 ClUqKk₂
- 214 LRoKk₂
- 215 E₅
- 215 Kk₂SrYv
- 215 LClGyKk
- 215 LRoKk₂
- 216 Nb₄
- 216 WyYuKkGy
- 216 YuWyGyKk
- 217 YvLGyYu
- 219 GyYuYvL
- 220 Xk₄
- 222 E₅
- 224 MtRoSLT
- 230 A₅
- 231 HBt₂
- 231 KkNdLYvDz
- 233 SYuYvNd
- 235 Uq₅
- 236 KkSMtNd
- 236 Nb₃Gk
- 236 RoYvKk₂
- 237 ClYvGyKk
- 238 KkYvGjMtWy
- 239 A₅
- 241 Cl₂UqKk₂
- 243 KkWyLGyEi
- 243 YuGyRoWyYv
- 253 Nb₄D
- 255 LSTXjGy
- 255 UqKk₂Gy
- 257 ClSGjKkUq
- 257 NdKkYvGyXj
- 258 LSViEbKk
- 258 UqKk₃
- 265 Xk₅
- 268 Gy₄
- 270 Nb₅
- 271 Nb₅
- 275 Xk₅
- 276 Kk₂Gy₂
- 279 Kk₃Gy
- 279 SYvT₂Kk
- 280 Kk₄
- 284 Kk₄
- 288 SYvViKkNd
- 291 ClYvKk₂L
- 291 SWyYvGy
- 294 SWyKk₂
- 294 WySKk₂
- 305 Hb₅
- 306 S₃
- 309 Ji₃
- 310 Hb₅
- 311 YvSGyKk
- 312 SYvKkGy
- 334 At₅
- 335 Gy₅
- 342 Ny₅
- 350 Kk₅
- 351 Kk₅
- 352 Gk₅
- 352 Kk₅
- 355 Kk₅
- 370 Qi₅
- 380 Qi₅
- 385 Qi₅
+    | 100 | AsClTWy    | |   135963*|bohr    |   As-6∙ +   T-17∙ +  Yu-27⁺ +  Wy-50∙ +   L-51⁺ +      250 => ⬇ L-51 + AsClTWy(As-6,Cl-27>T-17,Wy-50)                                            +     187.20 |      62.80 | chemical, decay              | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xff41622bde6697dcb7fa16eff78d9880eb4f89e7dcfc9a5d87176ff111b46fce | 0x665d8daa1adbfcb4e5b92c8a1ec4758076bfb69d96115cea3a74823caef8ca66 |
+    | 100 | AsClWyT    | |   139444*|bohr    |   As-7∙ +   Dz-8∙ +   T-17∙ +  Cl-26ª +  Wy-50∙ +      500 =>   Dz-8 + AsClWyT(As-7,Cl-26>T-17,Wy-50)                                            +     424.70 |      75.30 | chemical                     | 0x60f98101559248366bcf65cb471cfb1c1362a1f7 | 0x66eeab0546a352072a8011a64f058ed9104f34d942035cf9f060ad03acfe9b2d | 0x0dbece368cbed63f261338172e63f7dd7bd8194b8059df0b28d507634cff1fb0 |
+    | 100 | AsEb₂L     | |   172532*|bohr    |   As-6∙ +  Gj-10∙ +  Eb-20∙ +   P-22⁺ +   L-51⁺ +      100 => ⬇ Gj-10 + AsEb₂L(As-6>Eb-20,Eb-22,L-51)                                            +      41.99 |      58.01 | chemical, decay              | 0xa4d0c3a9d0028f797182ab766bea92c5fcdf5d89 | 0x1e98ad1d9d21f700299dfd0878c4b4e75bf7653cc492fa8325943eaeee23a2ad | 0x10736b4b7beee4df5faed5ac8d762286e76a70e909805bc7d2e7ef0f0d4a9de9 |
+    | 100 | AsMtClViEb | |    88549*|bohr    |   As-6∙ +  Ct-13⁺ +   P-21⁺ +  Cl-25⁺ +  Mt-35∙ +      452 => ⬇ AsMtClViEb(As-6,Cl-25,Mt-35>Eb-21,Vi-13)                                         +     383.69 |      68.31 | chemical, decay              | 0x8f35ddf0c5439e1c2fd1645ec2814b6857de6bfe | 0xc7ef36214c80556d798971f17c4260ab0aa237c0a69e002bd962f743cbdc7c5d | 0xbd39e94fcb5e0a9f84412728b47f1558844fcd11eeab8d714707d3bb960dc614 |
+    | 100 | AsRoXjWy   | |   101919*|bohr    |   Dz-7⁺ +   T-16∙ +  Eb-19⁺ +  Ro-24ª +  Wy-50∙ +      250 => ⬇ T-16 + AsRoXjWy(As-7,Ro-24>Wy-50,Xj-19)                                          +     190.03 |      59.97 | chemical, decay              | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x944549ade1be445ebb2fd3d6d795a32924f00e8fcf1e57234c830fcae57d947c | 0x21bd914db4ba1e400a2d2a64d2e7f2630c925c8fc7a4156b7c1462612744f34c |
+    | 100 | AsYvSrXj   | |    54316*|bohr    |   Sr-3∙ +   As-7∙ +  Xj-18∙ +  Mt-32⁺ +  Yv-72ª +      590 => ⬇ K-32 + AsYvSrXj(As-7,Yv-72>Sr-3,Xj-18)                                           +     514.03 |      75.97 | chemical, decay              | 0x8e8ea20de9b446e28ca55c9e4d12b00d8b86ffcf | 0x6625a5901f865dec03f37c8b6d7d83ac447536e564bd6caa3d313b9d3f8f6db8 | 0x4ff82791e21d5dff0891325f697b136a316c909059e0fbc89d0259c0ff546d37 |
+    | 100 | AwEJu₂     | |    72166*|alpha   |   Ju-2∙ +   Ju-2∙ +   E-46⁻ +  Aw-50∙           +      200 =>   AwEJu₂(Aw-50>E-46,Ju-2,Ju-2)                                                     +     147.06 |      52.94 | chemical                     | 0xf238676dba9f201a27c93c03ef55a97002ff2d8e | 0x9f6df780709d669f80338520a5cb1c53947c71816619be428a6f9b6b67a39930 | 0x1382f9a35f114dcb8eec0448a200c1bf1ff4eab6be628b29423dc6af5b68aac5 |
+    | 100 | ClDzWyCt   | |   195285*|bohr    |   Dz-9∙ +   T-15⁺ +   T-16∙ +  Cl-26ª +  Wy-50∙ +      322 => ⬇ T-16 + ClDzWyCt(Cl-26,Dz-9>Ct-15,Wy-50)                                          +     255.60 |      66.40 | chemical, decay              | 0xc19d0f005ad1c45ef21af8b5446b679934cf34ed | 0x807d5a7d6c54a18a18675f100343926add227aecff6b840e8e9f747d284c550f | 0xdc8de4f708b7d1208012f25eb031fd7389907ec01b91c64ebcd2b27a7b5cc05c |
+    | 100 | ClMtEbXj   | |    70994*|bohr    |  Vi-11⁺ +  Xj-17⁺ +   P-21⁺ +  Cl-27∙ +  Mt-35∙ +      150 => ⬇ Gj-11 + ClMtEbXj(Cl-27,Mt-35>Eb-21,Xj-17)                                        +      95.41 |      54.59 | chemical, decay              | 0xb251feaf7d5d91ffb26ede623c917f1d7182e76c | 0x0b7ffc120c8c8c04186ed3e26ca709e3d1e47254c4206739b7a1c70f2daec79b | 0xac9270fb5afe0f0ed6a9122322ac1b1e3dc8dde1780fd44aef635673e9cae23b |
+    | 100 | ClMtXjEb   | |   147518*|bohr    |   Sr-2∙ +  Xj-19∙ +  Eb-21∙ +  Cl-26ª +  Mt-34⁺ +      100 =>   Sr-2 + ClMtXjEb(Cl-26,Mt-34>Eb-21,Xj-19)                                         +      47.91 |      52.09 | chemical                     | 0x93a349a4b38cf1b45b3b62456f30cc4ccd013224 | 0xe5efdbeafea6bbb201a349fb3e89914b92c21ad60a1adea3a7f5b2357cf00b96 | 0x802122d9ac688e6db28cf0144a5e4e2b7c53767edcd872418e6f09af33b75dbb |
+    | 100 | ClSrKk     | |   142373*|bohr    |   Sr-2∙ +   P-22⁺ +   P-22⁺ +  Cl-27∙ +  Kk-71ª +      200 => ⬇ ClSrKk(Cl-27,Kk-71,Sr-2>) Eb-22 + Eb-22 +                                        +     101.29 |      98.71 | metallic, decay              | 0x8eb48f7dcc00655e931fde29beaa3311021438f9 | 0xcbf8a9f2c3db6d2541abcef52de96e0a48a3db810d9730da48c5cc98193a399b | 0x30398b1bc7a6a59da20bc51dbaf10241fe5e3ced2c387d1298ece23786ae1029 |
+    | 100 | ClSrXjL    | |    86821*|bohr    |   Sr-3∙ +  Xj-18∙ +  Cl-28⁻ +  Yu-27⁺ +   L-51⁺ +      230 => ⬇ Cl-27 + ClSrXjL(Cl-28,Sr-3>L-51,Xj-18)                                           +     168.66 |      61.34 | chemical, decay              | 0x7b8821555e2763726e4f16a3c21d68b4683f1cdf | 0xf02f7f2f5435798c99c92a594a56358657024977b3b53f9ca50647b865d4f48c | 0x5933192840086ad62533d3e3590deeb7944e7ba1e955fc4ee04a748bf5b1fe2f |
+    | 100 | ClSr₂Kk    | |   114788*|bohr    |   Sr-1∙ +  Eb-21∙ +  Ro-23ª +  Cl-27∙ +  Kk-71ª +     1011 =>   Eb-21 + P-22 + ClSr₂Kk(Cl-27,Kk-71,Sr-1,Sr-1>) 100                               +     871.74 |     139.26 | metallic, decay              | 0x68e00dc35019810aa5f10a51df0b220426a5eeda | 0xf51c95d49f807e83c0d9f318d0f81cb1668add97c6a202d7d79610b0300416e5 | 0xe022ce809141d70f9f051bcd46d0e37ab8d0931fc8b74af21b12038a6d41f5d2 |
+    | 100 | Cl₂NdT     | |    50669*|bohr    |   T-16∙ +   T-16∙ +  Cl-27∙ +  Cl-27∙ +  Nd-30ª +      105 =>   T-16 + Cl₂NdT(Cl-27,Cl-27>Nd-30,T-16) 100                                        +      46.83 |      58.17 | chemical                     | 0x36f5961bf3f2a8f4ccf60480f453a08995732ae0 | 0x038cfd0d514d6162f5fb38221619f50348c53bec1eefb2a204deef3233be760f | 0x5ca496aace8befeb063f06b90eef8a964987de168c0fbcb971dda4deba64d709 |
+    | 100 | Cl₂NdT     | |   108790*|bohr    |   T-17∙ +  Cl-26ª +  Cl-27∙ +  Nd-30ª +  Kk-71ª +      100 =>   Kk-71 + Cl₂NdT(Cl-26,Cl-27>Nd-30,T-17) 100                                       +      42.08 |      57.92 | chemical                     | 0x4db69039182d3989270e9a17b4261a1085f243c3 | 0xa2b843d5109987c74806bcd6965ab5ae0f45b0fe19ea051dedd7fdc4c8fce2aa | 0xcfa9cf157e8e1491f67b7d99f24a55c40cd8edc9cb4e8ec27bbf33df02c7a8ee |
+    | 100 | Cl₂Ro₂     | |   179771*|bohr    |  Cl-25⁺ +  Cl-25⁺ +  Cl-25⁺ +  Cl-25⁺           +      100 => ⬇ Cl₂Ro₂(Cl-25,Cl-25,Ro-25,Ro-25>) 100                                             +       6.18 |      93.82 | metallic, decay              | 0x9cc0c17ff25677bb23f2634a973fe8b2290bb04c | 0x7049b45a0ac382983d39466db832d2a3ef621009b6ba49df4fdfa1bf248bbbd0 | 0xf4230e4bf69866f92b1bbc3ee65dd6eff9ac5182bd6b71cf9f8f08f92ab36cf2 |
+    | 100 | Cl₂Uq      | |   181473*|bohr    |  Ct-15∙ +  Cl-26ª +  Yu-27⁺ +   K-32∙ +  Uq-47⁻ +      400 => ⬇ Ct-15 + K-32 + Cl₂Uq(Cl-26,Cl-27,Uq-47>) 100                                     +     283.75 |     116.25 | metallic, decay              | 0xf4ac650c45c18bfbd16c1a347ab6b8c14b4a7f31 | 0xfcc0efa6d52180a5c71227697aea78330a38e25b99e794440af76ab79d534b99 | 0xb14452569ff610ae1af8129722234902136a4e795445c6320adafea99a3b772b |
+    | 100 | Cl₃SrXj    | |   109165*|bohr    |  Xj-19∙ +  Ro-23ª +  Cl-26ª +  Cl-27∙ +  Yu-27⁺ +      100 => ⬇ P-22 + Cl₃SrXj(Cl-26,Cl-27,Sr-1>Cl-27,Xj-19)                                     +      46.39 |      53.61 | chemical, decay              | 0xba9be7b53e595e47a32669ae79b448ab5ceeec00 | 0x6385341fd1509167239b1dad0ec64720dad70f53aa3b950c2938b6bfc9a36609 | 0xa577d5c735042ac251e41935522025283f4b5ef1a4fac6686f673662a518db3d |
+    | 100 | CtTDzGjWy  | |   111939*|bohr    |   Dz-9∙ +  Gj-10∙ +   T-15⁺ +   T-16∙ +  Wy-50∙ +      250 => ⬇ CtTDzGjWy(Ct-15,T-16>Dz-9,Gj-10,Wy-50)                                           +     180.90 |      69.10 | chemical, decay              | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x183ef0da536ad3f474096f9d57336df2892d0045d95ce4c35eecb425082ded02 | 0x2357716346c6f6a133c808030c58f7c376c097d719a9a175e4730d56d30ff261 |
+    | 100 | Cv-100     | 
+    | 100 | DMXcAf     | |    17573*|alpha   |   Af-8∙ +   M-23⁻ +  Zq-32⁻ +   D-37⁻ +  Fj-37ª +      104 => ⬆ Fj-37 + DMXcAf(D-37,M-23>Af-8,Xc-32)                                             +      61.27 |      42.73 | chemical, decay              | 0xe3c16ab68d4a0cfe7ab3fad9528d9ebdd086325c | 0x2ac5c15cc061e38d4abc9f8d209e76c887c145b4b0781b1841fe920d12fb6674 | 0x500c1cfbfbd7e9612da580742025a303fdb65a2cd9991c1c610ecb4bcef2a881 |
+    | 100 | DPqSFw     | |   181104*|alpha   |  Xl-11∙ +  Pq-12ª +  Fw-25⁻ +   S-26ª +   D-37⁻ +      500 =>   Xl-11 + DPqSFw(D-37,Pq-12>Fw-25,S-26)                                            +     440.57 |      59.43 | chemical                     | 0x29bb1d652e0489fa946d8fc3974a6b98a798697e | 0x83dea7b976fc5725e888958e8c570352e8652d7a98ad1b36af0da53a7dc49895 | 0xeafedd0c3f7912cac4af66384df782520bc298846e7b1400f1adb46535d2dd6b |
+    | 100 | DXlPqDxM   | |    96931*|alpha   |  Xl-10ª +  Pq-12ª +  Pm-18⁺ +   M-23⁻ +   D-37⁻ +     2000 => ⬆ DXlPqDxM(D-37,Pq-12,Xl-10>Dx-18,M-23)                                            +    1864.76 |     135.24 | chemical, decay              | 0xe5ea0b5ba99702190a225453edd1a1f0af8b1082 | 0x02050dd213db6c0da600f3890dec30000a4d4cc5145a317dc75f61790733d19b | 0x5610699bc26ddbb7ce3e38527e51339a2fc4b85fa7965af6ac65b8c2c62f5cdc |
+[$] | 100 | Da-100     | Nd-30ª  +  Kk-70ª   +[  2436.24 -  20000] => Da-100
+    | 100 | Dd-100     | 
+    | 100 | DxJuXcAw   | |     6031*|alpha   |   Ju-1∙ +  Xl-11∙ +  Dx-17∙ +  Zq-32⁻ +  Aw-50∙ +      500 => ⬆ Xl-11 + DxJuXcAw(Dx-17,Ju-1>Aw-50,Xc-32)                                         +     432.91 |      67.09 | chemical, decay              | 0x7910e392fe1d5a386016124aa264d39d8934c831 | 0xd612e31eb03b3cae11e000105a6a4f4b11eef644588fcf05367ba52549b9f4c4 | 0xf8c18d2391fbc8cb82963b710b964190f47af34836ccdcd4c7c77397d1552410 |
+    | 100 | DxPmFjSJu  | |   197364*|alpha   |   Ju-2∙ +  Dx-16∙ +  Pm-19∙ +   S-26ª +  Fj-37ª +      200 =>   DxPmFjSJu(Dx-16,Fj-37,Pm-19>Ju-2,S-26)                                           +     153.75 |      46.25 | chemical                     | 0x94a63d2bfea32c258821abc6113099f2631132b2 | 0x30fee71e3dee814775e3c3587e501acbe04d4f03889f0ab7dfff7f41e21bf734 | 0x979f2f24ee883cf078cc0b0d4ea89a50953044096d0141318c2f3cc7e25e8563 |
+    | 100 | DxXc₂Pm    | |   126616*|alpha   |  Pm-18⁺ +  Pm-19∙ +  Xc-31∙ +  Xc-32∙ +  Gy-34∙ +      105 => ⬆ Gy-34 + DxXc₂Pm(Dx-18,Xc-32>Pm-19,Xc-31)                                         +      57.64 |      47.36 | chemical, decay              | 0xe2a6cc23ac57d3a0684a9944189e801105b1e27a | 0xd3ca86a55cb46836f261573841ed581a4983745f2302ff8a80de7177ce0094e7 | 0x13dd97dbee5ab7692de8d27a51fde1944ba4994551917c604ff6f3a38eab70f9 |
+    | 100 | Dx₂JuXc₂   | |   194734*|alpha   |   Ju-3∙ +  Dx-17∙ +  Pm-17⁺ +  Zq-32⁻ +  Xc-31∙ +      100 => ⬆ Dx₂JuXc₂(Dx-17,Ju-3,Xc-32>Dx-17,Xc-31)                                           +      55.18 |      44.82 | chemical, decay              | 0x0c2e5299b9f74ac68541299b8e03028ad1087c91 | 0xba40db31c868887b11d3c5b4947d3a851b8bb6010a499b12881ddee0596e12ea | 0xcf0336eb4aea63e689d95c20f161a9a0b8d8bf9308d7e371c07713ced9af0b18 |
+    | 100 | Dx₂Xc₂     | |    96950*|alpha   |  Dx-18∙ +  Dx-18∙ +  Xc-32∙ +  Xc-32∙ +  Xc-32∙ +      100 =>   Xc-32 + Dx₂Xc₂(Dx-18,Dx-18>Xc-32,Xc-32)                                          +      52.07 |      47.93 | chemical                     | 0x1e6cb319fde1a840dbd4a1f83f3755a995d98053 | 0x2281c5a3d7f3296bc21c52ce67763bc82e551a4562b1c60eb5cd7815e023391e | 0x5b3169ef61b757dead1f90c3496e417cacc2369aeecee453710cf7482cfdc8ab |
+    | 100 | DzClCtWy   | |   101798*|bohr    |   Dz-8∙ +  Ct-15∙ +  Yu-27⁺ +  Wy-50∙ +  Gy-67ª +      500 => ⬇ Gy-67 + DzClCtWy(Cl-27,Dz-8>Ct-15,Wy-50)                                         +     424.70 |      75.30 | chemical, decay              | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xe660b7f649e4da65b6c70430c4367f37541577d3d78582c607c10473d0de8556 | 0x6cbcb34a3155ce5599addfa731e3072b83c3b9d06d1c5c2c45a8c473094e388f |
+    | 100 | DzEb₂Wy    | 
+    | 100 | DzRoEbUq   | 
+    | 100 | DzWyEb₂    | 
+    | 100 | DzYvViAs   | 
+    | 100 | D₂Pq₂      | 
+    | 100 | D₂XlDx     | 
+    | 100 | EiAsEb₂Pb  | 
+    | 100 | EiClRoNdCt | 
+    | 100 | EiGjViLEb  | 
+    | 100 | EiKkTDz    | 
+    | 100 | EiNdXjClEb | 
+    | 100 | EiRoEb₂Nd  | 
+    | 100 | Ei₂YvXj    | 
+    | 100 | Ek-100     | 
+    | 100 | FjAwPq     | 
+    | 100 | FjNbAf     | 
+    | 100 | FjPqXcDx   | 
+    | 100 | FjXc₂      | |   187353*|alpha   |  Xc-31∙ +  Xc-32∙ +  Fj-37ª                     +       99 =>   FjXc₂(Fj-37>Xc-31,Xc-32) 100                                                     +      54.22 |      44.78 | chemical                     | 0x6cb4119a22f9a86a2d8af0393dedb84de92888d2 | 0xe369944dbccfb9d199ac266026218e76ae274d3dd94b92ef48f2adf0a7a985de | 0xb5d174d03dd86c84397d37a4fb8ef87f8e253f28190a5f01dee073ed486140c9 |
+    | 100 | GjEb₂Pb    | 
+    | 100 | GjEiRoDzL  | 
+    | 100 | GjPbEb₂    | 
+    | 100 | GjWyEbXj   | 
+    | 100 | GjXjEbWy   | 
+    | 100 | Gj₂KkDz    | 
+    | 100 | GyEbGj     | 
+    | 100 | GyGjEb     | 
+    | 100 | JuSPmNb    | 
+    | 100 | JuWM₂Nb    | 
+    | 100 | KkEiTDz    | 
+    | 100 | KkGjXj     | 
+    | 100 | KkSrXjDz   | 
+    | 100 | KkTAsSrEi  | 
+    | 100 | KkTDzEi    | 
+    | 100 | KkTSrGj    | 
+    | 100 | KkXjGj     | |   158339*|bohr    |  Gj-11∙ +  Vi-11⁺ +  Xj-18∙ +  Ro-23ª +  Kk-71ª +      260 =>   Sr-1 + Vi-11 + P-22 + KkXjGj(Kk-71>Gj-11,Xj-18)                                  +     196.14 |      63.86 | chemical, decay              | 0xa41eabe322deb48baf9db4fbf552f301cd3b326e | 0x6ffe47c03bbe1d945ba676d40c61516861e44668edd5ecf1a7ab82f8a87f6ad1 | 0x103d2086fcd4e46e95f4f70625a648223444a0fc118594397f8bff16148911aa |
+    | 100 | KkXjSrDz   | 
+    | 100 | LEbTVi     | 
+    | 100 | LEb₂AsSr   | 
+    | 100 | LRoDzT     | 
+    | 100 | LTViEb     | 
+    | 100 | MJuAwS     | 
+    | 100 | MPqXc₂     | 
+    | 100 | MSNb       | |    18261*|alpha   |    W-4∙ +  Dx-15⁺ +   M-20∙ +   S-26ª +  Nb-54ª +      248 =>   MSNb(M-20,S-26>Nb-54) + DxW(Dx-15>W-4)                                           +     191.55 |      56.45 | chemical                     | 0x07f5aa79a93e427f211df3ce7d8f94aca58f3566 | 0x078149339ebe030908cf1049c7108cdda1869ce7ec516f68ab0cde7e4ee8f02c | 0x140ee318dbb0c3168dda2d8477f55fe2e41822ef510eb6f57b27b962455903db |
+    | 100 | MXcFw₂     | 
+    | 100 | MtClXjEb   | 
+    | 100 | MtEiNdEbGj | 
+    | 100 | MtSrNdEbVi | 
+    | 100 | MtSrYuEbCt | 
+    | 100 | MtYuXj₂    | 
+    | 100 | M₅         | 
+    | 100 | NbAw       | |   158847*|alpha   |  Aw-50∙ +  Nb-50ª                               +     2222 =>   NbAw(Nb-50>Aw-50) 100                                                                +    2073.59 |     148.41 | chemical                     | 0x88d3574660711e03196af8a96f268697590000fa | 0x03d6857c5a2b9dc8d0a68c43c939eb825862f9d4d72a05029b362d742b42dbb5 | 0x9b78d6330c57cee3cf8928f275a694bd4046a0dc39dac6771157bbd6d164d93b |
+    | 100 | NbMDxAfJu  | 
+    | 100 | NdRoYuT    | 
+    | 100 | NdYuEb₂    | 
+    | 100 | Nm-100     | 4-chain Nm-100 :: 11551.16 |   P-23∙ +  Nm-99ª   +[  3247.30 -  10000] => P-22 + Nm-100 | decay, nuclear               |
+    | 100 | Ok-100     | 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3203.54 -  20000] => Ok-100        | nuclear                      |
+    | 100 | PmAfAwM    | 
+    | 100 | PmAwXc     | 
+    | 100 | PmXcAw     | 
+    | 100 | RoClYuEb   | 
+    | 100 | RoDzUqEb   | 
+    | 100 | RoLDzT     | 
+    | 100 | Ro₂GjViYu  | 
+    | 100 | S-100      | 2-chain S-100  ::  4577.14 |   P-21⁺ +  S-101ª   +[  2271.42 -   5000] => P-22 + S-100  | decay, nuclear               |
+    | 100 | Se-100     | 4-chain Se-100 :: 10275.03 |   Sr-2∙ +  Se-98∙   +[  1659.44 -   5000] => Se-100        | decay, nuclear               |
+    | 100 | SrAsEb₂Wy  | 
+    | 100 | SrYuYv     | 
+    | 100 | SrYvGjCt   | 
+    | 100 | S₄         | 
+    | 100 | TKkEiDz    | 
+    | 100 | ViXjPbEb   | 
+    | 100 | Vl-100     | 5-chain Vl-100 :: 17017.58 |   K-34∙ +  Co-88⁻   +[  3843.91 -  10000] => P-22 + Vl-100 | decay, nuclear               |
+    | 100 | Vt-100     | 7-chain Vt-100 :: 14011.34 | Ek-100⁺             +[     0.00 -      0] => Vt-100        | decay                        |
+    | 100 | WSAwM      | 
+    | 100 | WS₂M₂      | 
+    | 100 | XcJuPmAw   | 
+    | 100 | XcWAwDx    | 
+    | 100 | XcWDxAw    | 
+    | 100 | Xc₂DxPm    | 
+    | 100 | Xc₂JuDxPm  | 
+    | 100 | YuMtEbT    | 
+    | 100 | YuMtTEb    | 
+    | 100 | YvGjT      | 
+    | 100 | YvSrGjCt   | 
+    | 100 | YvTGj      | 
+    | 100 | YvXjDz     | 
+    | 100 | Z-100      | 5-chain Z-100  ::  9473.33 |   P-21⁺ +  Lx-79⁺   +[  2124.73 -   5000] => Z-100         | decay, nuclear               |
+    | 100 | ZqXc₂      | 
+    | 101 | Af₂Xc₂Dx   | 
+    | 101 | AsClEbUq   | 
+    | 101 | AsClLCt    | 
+    | 101 | AsClTWy    | |   187619*|bohr    |   Dz-7⁺ +   T-17∙ +  Cl-27∙ +  Nd-30ª +  Wy-50∙ +      100 => ⬇ Nd-30 + AsClTWy(As-7,Cl-27>T-17,Wy-50)                                           +      44.20 |      55.80 | chemical, decay              | 0x52b3ce2a2eb0fe1254860e4e9d050cb7803ed307 | 0x0e61f77d958726087ec5932e5af120a80e9c5a5ad1bdfbd222eb9feed1aed1f7 | 0xef0f94f887bf507f17a694880da881182fcc8067633aeba5e9de41309b3e6a6a |
+    | 101 | AsEb₂L     | |   170380*|bohr    |   Dz-7⁺ +  Eb-20∙ +  Eb-22∙ +   K-31⁺ +   L-51⁺ +      100 => ⬇ K-31 + AsEb₂L(As-7>Eb-20,Eb-22,L-51)                                             +      41.46 |      58.54 | chemical, decay              | 0xaa3b01119d4e1a76d29aaca31b46570936880cdc | 0xf58dfb714b4625f9086508c4d731dd5f2c7afb46fd30ccc777450d2eee6d6f9b | 0xcec2ab5083ea28ad1dac2cd87b99768812cd52e8f5d19444b74ac639d2e86004 |
+    | 101 | AsUq₂      | 
+    | 101 | ClDz₂EiL   | 
+    | 101 | ClMtXjEb   | |   155389*|bohr    |  Eb-19⁺ +   P-22⁺ +  Cl-26ª +  Mt-34⁺ +  Pb-48∙ +     9999 => ⬇ Pb-48 + ClMtXjEb(Cl-26,Mt-34>Eb-22,Xj-19)                                        +    9451.49 |     547.51 | chemical, decay              | 0x3484dd1d1a7e91960212923f54d1afa4c1252e0a | 0x1487de28dc165a25a091f8f658787bbebe018d01e6c4963dfbc88ab131680eaf | 0x855234ee3eb9c3bfd390aa3cd23b453d147edb669081c44e0c987d8f386e83e8 |
+    | 101 | ClPbSrAsXj | 
+    | 101 | ClSr₂Kk    | |    96656*|bohr    |   Sr-1∙ +   Sr-2∙ +  Vi-10⁺ +  Cl-27∙ +  Kk-71ª +      222 => ⬇ Gj-10 + ClSr₂Kk(Cl-27,Kk-71,Sr-1,Sr-2>) 101                                      +     121.31 |     100.69 | metallic, decay              | 0x37b6f1bbc818bcaeab9ebcddf420d4ac0ca2e7d1 | 0x002e412e71f23ffc1db17fac946df191ca9ceb09b11cd2a23de53e619e95dfb1 | 0xad30a2f56d1a1203cc1a9ac54b7e498ced673d9c307f0b7130aa7f0e25b9aa02 |
+    | 101 | ClSr₂Yv    | 
+    | 101 | Cl₂NdT     | |    89370*|bohr    |   As-6∙ +  Xj-17⁺ +  Cl-27∙ +  Cl-27∙ +  Nd-30ª +     1404 => ⬇ As-6 + Cl₂NdT(Cl-27,Nd-30>Cl-27,T-17) 101                                        +    1283.66 |     120.34 | chemical, decay              | 0x2686f89722b7b0ec50f0188f29ba501705a2e983 | 0x2e69d462cf4c33f64cacc0020bc324d5ed2a2962d29eff817c3ca95aeb0c8cad | 0x96a04f558ed204a22d7a9fd3f2c6dd3e0175da7c08d0b79d74ae5a4f618c0d81 |
+    | 101 | Cv-101     | 3-chain Cv-101 ::  6680.91 |   P-21⁺ + Cv-102ª   +[  2189.45 -   5000] => P-22 + Cv-101 | decay, nuclear               |
+    | 101 | DMXlZq     | |   103268*|alpha   |  Pq-10⁺ +   M-22∙ +  Fw-25⁻ +  Zq-32⁻ +   D-37⁻ +      700 =>   Pt-25 + DMXlZq(D-37,M-22>Xl-10,Zq-32)                                            +     628.32 |      71.68 | chemical, decay              | 0xa71a6cdd918dd5d7f9c3cdd4c1581247be90ed5e | 0x0afdc0f073252a1e409810befec0ad89b4c4867519bcabcf1288f8250521862f | 0x7a3cd3b73844865fe3cb1b9586fb8f64082eaaad37314154779f157e74d15392 |
+    | 101 | Da-101     | 1-chain Da-101 ::  2462.95 |  Nd-30ª +  Kk-71ª   +[  2462.95 -  20000] => Da-101        | nuclear                      |
+    | 101 | Dd-101     | 6-chain Dd-101 :: 17719.88 |   P-23∙ + Dd-100ª   +[  3306.04 -   5000] => P-22 + Dd-101 | decay, nuclear               | OTOMRO 197438
+    | 101 | DxFjMFw    | |    23444*|alpha   |  Dx-17∙ +   M-22∙ +  Fw-25⁻ +   S-25⁺ +  Fj-37ª +     1800 =>   S-25 + DxFjMFw(Dx-17,Fj-37>Fw-25,M-22)                                           +    1669.06 |     130.94 | chemical                     | 0x4554644514528bb6e00ce7e69be50969e69b717f | 0x5db58068615ed0b56c2efd3d976e61d79185ffa5d0ade4eb98bece9e5df0e542 | 0xc48d29221b78cabeed3153f0ef8fce44572e79860b4a94930386f159c8a99670 |
+    | 101 | DxMPq₂Fj   | |   188939*|alpha   |  Pq-13∙ +  Zz-13⁺ +  Pm-18⁺ +   M-20∙ +  Fj-37ª +       50 => ⬆ DxMPq₂Fj(Dx-18,M-20,Pq-13>Fj-37,Pq-13)                                           +       9.98 |      40.02 | chemical, decay              | 0x9510373125d8c43558f97571433850e6185a6af4 | 0x196025deaf7fae1dfc325fb70c4a8405c6d56f9a62ae86d0aaaf89f596ebb91e | 0x557221a0aef4921126814e0f18129591a6f713cdd619b4e028e63f4d82ef63ee |
+    | 101 | DxXcMZq    | |   152116*|alpha   |  Pq-12ª +  Pm-18⁺ +   M-20∙ +  Zq-32⁻ +  Xc-31∙ +      270 => ⬆ Cq-6 + Cq-6 + DxXcMZq(Dx-18,Xc-31>M-20,Zq-32)                                    +     214.88 |      55.12 | chemical, decay              | 0xca3575a7764ec76659ee66b4d191acbe7a25a210 | 0x63af7d1c0a73886f2631b206328a232891646c0f1b4e6d5a8c46018477317e59 | 0xb27ca38f463ccb199592935dfbe99f44515b27284f1923a8dd11623c098685e7 |
+    | 101 | Dx₄D       | |   174439*|alpha   |  Dx-16∙ +  Dx-16∙ +  Dx-16∙ +  Dx-16∙ +   D-37⁻ +      600 =>   Dx₄D(D-37,Dx-16,Dx-16,Dx-16>Dx-16)                                               +     534.41 |      65.59 | chemical                     | 0x5b33b6f41e87111b7d22685b297f086b5535034d | 0xb665ab0ac8436b9fb6c23f300d03dc23f76af99f14eb95bcf0876763dce136e9 | 0x29c50f37ab59b7d1af5ea268107630182964ca0e3d2670e93a32275831bf7d46 |
+    | 101 | DzClCtWy   | |   130215*|bohr    |   Dz-9∙ +   T-15⁺ +   T-17∙ +  Cl-27∙ +  Wy-50∙ +       70 => ⬇ T-17 + DzClCtWy(Cl-27,Dz-9>Ct-15,Wy-50)                                          +      15.70 |      54.30 | chemical, decay              | 0x818cd5a6a1d3fa55407db46283c3db24f94e0987 | 0xb996f5c403e8ceeaaa1fdb570c4c3521aea0a07b9546c762e7391616ae23de3e | 0x6fe967f673bea6ceb1cd4668c2f8f8ee9b98412ffa6a7f33af90671c1af93dfb |
+    | 101 | DzClTPb    | 
+    | 101 | D₂XlDx     | 
+    | 101 | EiDzWyXj₂  | 
+    | 101 | EiLYuDz₂   | 
+    | 101 | EiMtEb₃    | 
+    | 101 | EiRoWyGjVi | |   135891*|bohr    |   As-5⁺ +  Gj-11∙ +  Vi-11⁺ +  Ro-24ª +  Wy-50∙ +      250 => ⬇ EiRoWyGjVi(Ei-5,Ro-24,Wy-50>Gj-11,Vi-11)                                         +     186.09 |      63.91 | chemical, decay              | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x5ce38e19dbe5e3afd92ba6924aa391e3a847861f4f2d71c262c25b8982e41cd3 | 0xa1dc15bda93e3c181741163009d0a3712c29e24e9b8e081bdd8385ec23082f44 |
+    | 101 | Ei₂YvXj    | 
+    | 101 | Ek-101     | 5-chain Ek-101 :: 12182.47 |  Mt-32⁺ +  Ok-91⁺   +[  2352.78 -   4000] => P-22 + Ek-101 | decay, nuclear               |
+    | 101 | FjWSXc     | |     6296*|alpha   |    W-4∙ +   Af-7ª +   S-26ª +  Xc-34⁻ +  Fj-37ª +       77 =>   Ju-1 + Cq-6 + FjWSXc(Fj-37,W-4>S-26,Xc-34)                                       +      36.54 |      40.46 | chemical, decay              | 0x13c942e3f8be4faf966ef03e6038b33d000db22f | 0xa866fcfda746b7f39165e11e72558c9c4826fac3773db67238577f7018811daa | 0xeafd22464e7516212d09296ceeab0fe88913e75629cd1864bffcb6cd3deb979e |
+    | 101 | FjXc₂      | |   127647*|alpha   |  Zq-32⁻ +  Zq-32⁻ +  Fj-37ª +  Nb-54ª +  Nb-54ª +       61 => ⬆ Nb-54 + Nb-54 + FjXc₂(Fj-37>Xc-32,Xc-32) 101                                     +      17.72 |      43.28 | chemical, decay              | 0xbeeb447aff98477836619de63b776c654bc67bf5 | 0xfe09d43138dd53f593ccd6615286a5bf81f81591bc751fbdd809071689b4323f | 0x5b22b50717a7b85b02953a2fd6446a8ccfee081f32fd0fff964e597ea5c05483 |
+    | 101 | FjXc₂      | |   173193*|alpha   |  Zz-15∙ +   S-25⁺ +  Xc-30∙ +  Xc-34⁻ +  Fj-37ª +      100 =>   Zz-15 + S-25 + FjXc₂(Fj-37>Xc-30,Xc-34) 101                                      +      54.77 |      45.23 | chemical                     | 0xac693e7e769facc6f238306e10a865438a0a0e24 | 0x7fae9d251284d8fa7317b9eb1472ce01d2f7ed363547ea7f1c7a777648bffa7f | 0xd965a8c4566d58e255095575570831396f07a3ef51dcd45f05a86722cf14f118 |
+    | 101 | FjXlPmXc   | |   101907*|alpha   |  Xl-11∙ +  Pq-12ª +  Pm-19∙ +  Xc-34⁻ +  Fj-37ª +      500 =>   Cq-6 + Cq-6 + FjXlPmXc(Fj-37,Xl-11>Pm-19,Xc-34)                                  +     435.47 |      64.53 | chemical, decay              | 0x6860f64fb466819803d77f2aa572dcfb9ef2cfef | 0x02770b33698009d2c996ed43b99f8af78aa002cf95acab49b426dbdd4d5d0f99 | 0x71438fa8ba750e6a9189c7d8d82ae2a5c0a14e73e36a123fd32c262b16630b77 |
+    | 101 | Fj₂PqXlW   | 
+    | 101 | FwWMNb     | |    35583*|alpha   |    W-4∙ +  Pq-12ª +   M-20∙ +   M-23⁻ +  Nb-54ª +      100 => ⬆ Cq-6 + Cq-6 + FwWMNb(Fw-23,W-4>M-20,Nb-54)                                       +      55.13 |      44.87 | chemical, decay              | 0x6810dba12317406828d64b07d34ad22338644bb3 | 0x025398d2633fb0a0e60ea33890af14c01d9d28abee3f54d15e7175d1af38b574 | 0x8ae736f3998663880db4b41fd37876455fb11c69d6444a87aded23095de55748 |
+    | 101 | Fw₂DxJuD   | 
+    | 101 | GjEbXjWy   | 
+    | 101 | GjEb₂Pb    | 
+    | 101 | Gj₂KkDz    | 
+    | 101 | GySr₂Mt    | 
+    | 101 | JuDx₂Xc₂   | 
+    | 101 | JuXcAwPm   | |   111827*|alpha   |   Ju-1∙ +  Pq-15⁻ +  Pm-19∙ +  Xc-31∙ +  Aw-50∙ +      133 => ⬆ Zz-15 + JuXcAwPm(Ju-1,Xc-31>Aw-50,Pm-19)                                         +      80.33 |      52.67 | chemical, decay              | 0xdac286f89fbcc52d2b573073e76f77538706c0a4 | 0x08cbeb274a9389f094350d90a50296c5c51bcaaf90caf608c25f19e95f7788e3 | 0x6bd8c784bc7794854e0dcb97eeacb9bfb2ccef65d13f21a79213657db87a09c3 |
+    | 101 | JuXc₂PmDx  | 
+    | 101 | Ju₂XcDxAw  | 
+    | 101 | KkAsDzCt   | 
+    | 101 | KkSrAs₂Ct  | 
+    | 101 | KkTEiDz    | 
+    | 101 | KkXjGj     | |    55979*|bohr    |  Gj-11∙ +  Ct-15∙ +  Eb-19⁺ +  Kk-71ª +  Yv-72ª +      105 => ⬇ Ct-15 + Yv-72 + KkXjGj(Kk-71>Gj-11,Xj-19)                                        +      48.38 |      56.62 | chemical, decay              | 0x6e069c48164090dcbf324ad1fe24cdeba7b9dfd2 | 0x17926d3f4aa2545c597a72514947da725e9d825793d820679a45f4cbe8b85b3b | 0xb6776a985820c48ec842732418ffb06258b22750ad232e4ea674c8c034a69b68 |
+    | 101 | LDzEb₂     | 
+    | 101 | LEb₂SrAs   | 
+    | 101 | LRoDzT     | 
+    | 101 | LSrAsEb₂   | 
+    | 101 | MPqXc₂     | 
+    | 101 | MSNb       | |   147343*|alpha   |  Xl-10ª +  Xl-11∙ +   M-22∙ +   S-25⁺ +  Nb-54ª +      742 => ⬆ Cq-6 + MSNb(M-22,S-25>Nb-54) + WXl(W-4>Xl-11)                                    +     661.23 |      80.77 | chemical, decay              | 0x66cc6741aa7298116e254a1e7d2c65977c9fdf97 | 0x9b6bb44eadd4997127ba4b356b600f3a75c7803b338d0557a999218b213df607 | 0xa2149948d0d5b0ffa7e954864d6592a8ba14d89ab58c3a85de80853c1824aac5 |
+    | 101 | MXc₂Pq     | 
+    | 101 | MtClEbXj   | 
+    | 101 | MtGjNdTDz  | 
+    | 101 | M₂Dx₂S     | 
+    | 101 | NbPqMXl    | 
+    | 101 | Nm-101     | 5-chain Nm-101 :: 11551.16 |   P-23∙ + Nm-100⁺   +[  3320.57 -   5000] => P-22 + Nm-101 | decay, nuclear               |
+    | 101 | Ok-101     | 2-chain Ok-101 ::  3789.52 |  Yu-30∙ +  Kk-71ª   +[  3256.49 -   4000] => Ok-101        | nuclear                      |
+    | 101 | PbClEiEbSr | 
+    | 101 | PmAwXc     | 
+    | 101 | PmXcAw     | 
+    | 101 | PqWXcAw    | 
+    | 101 | PqWXcNb    | 
+    | 101 | Pq₂AwFw    | 
+    | 101 | RoLDzT     | 
+    | 101 | RoWyAsEb   | 
+    | 101 | S-101      | 1-chain S-101  ::  2305.72 |   P-21⁺ +  S-102ª   +[  2305.72 -  20000] => P-22 + S-101  | decay, nuclear               |
+    | 101 | SMNb       | 
+    | 101 | SXcFwPm    | 
+    | 101 | Se-101     | 
+ 4-chain Se-101 :: 10374.92 |   Sr-3∙ +  Se-98∙   +[  1759.33 -   5000] => Se-101        | decay, nuclear               |
+    | 101 | SrKkXjDz   | 
+    | 101 | Sr₂ClYv    | 
+    | 101 | Sr₂YuKk    | 
+    | 101 | S₂Fw₂      | 
+    | 101 | TKkDzEi    | 
+    | 101 | TKkEiDz    | 
+    | 101 | UqClSrEbAs | 
+    | 101 | Vl-101     | 6-chain Vl-101 :: 20087.15 |   P-23∙ + Vl-100⁻   +[  3069.57 -   5000] => P-22 + Vl-101 | decay, nuclear               |
+    | 101 | Vt-101     | 6-chain Vt-101 :: 12182.47 | Ek-101⁺             +[     0.00 -      0] => Vt-101        | decay                        |
+    | 101 | WXcDxAw    | 
+    | 101 | WyEb₂Gj    | 
+    | 101 | W₂AfNbXc   | 
+    | 101 | XcAf₂Aw    | 
+    | 101 | XcJuPmAw   | 
+    | 101 | XcWAwDx    | 
+    | 101 | Xc₂DxM     | 
+    | 101 | Xc₂FwAf₂   | 
+    | 101 | Xc₂MDx     | 
+    | 101 | Xc₃W       | 
+    | 101 | XjKkSrDz   | 
+    | 101 | XlZqSXc    | 
+    | 101 | YuEb₂Nd    | 
+    | 101 | YuEiKk     | 
+    | 101 | YuNdEb₂    | 
+    | 101 | Z-101      | 2-chain Z-101  ::  4505.23 |   P-21⁺ +  Z-102ª   +[  2261.31 -  10000] => P-22 + Z-101  | decay, nuclear               |
+    | 102 | AfFjJuNb   | 
+    | 102 | AfFjZqFw   | 
+    | 102 | AfSXc₂     | 
+    | 102 | AsEiPbEb₂  | 
+    | 102 | ClAsUqEb   | 
+    | 102 | ClPbAsEb   | 
+    | 102 | ClPbEbAs   | 
+    | 102 | ClSr₂Kk    | |    54579*|bohr    |   Sr-2∙ +   Sr-2∙ +  Vi-11⁺ +  Yu-27⁺ +  Kk-71ª +      249 => ⬇ Gj-11 + ClSr₂Kk(Cl-27,Kk-71,Sr-2,Sr-2>) 102                                      +     146.07 |     102.93 | metallic, decay              | 0x20d9f06c3aefbc2cbbe4c79311edc70aec562c22 | 0x709dea80e3bae7fb32c2d7e60aca1daaa60f0e534b8f3a96a6137bf5ee838d58 | 0x51e3b1610197a88bf0b0c113622dcca5c8de5b19c129c3ef9ac912f8c8c0b5a2 |
+    | 102 | ClSr₂Yv    | 
+    | 102 | ClWyAsXj   | 
+    | 102 | Cl₂Ro₂     | |   162874*|bohr    |  Ro-24ª +  Ro-24ª +  Cl-27∙ +  Yu-27⁺ +  Wy-50∙ +      350 => ⬇ Wy-50 + Cl₂Ro₂(Cl-27,Cl-27,Ro-24,Ro-24>) 102                                     +     241.90 |     108.10 | metallic, decay              | 0x5b33b6f41e87111b7d22685b297f086b5535034d | 0x1d051dfe7280ea6a584c3889f200c1e8503b3942aef0413f38fedd713e85f2d5 | 0x77d9901751102133d2fb49c31f34e93a170911ea79c012266c3d8232c45fd085 |
+    | 102 | Cv-102     | 2-chain Cv-102 ::  4491.46 |  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               |
+    | 102 | DFwMPm     | 
+    | 102 | DJuXc₂     | 
+    | 102 | DMFwPm     | 
+    | 102 | DXlFjWDx   | 
+    | 102 | Da-102     | 1-chain Da-102 ::  3095.53 |  Eb-22∙ +  S-102ª   +[  3095.53 -   5000] => P-22 + Da-102 | decay, nuclear               |
+    | 102 | Dd-102     | 
+    | 102 | DzAsYuUqGj | 
+    | 102 | DzEb₂Wy    | 
+    | 102 | DzWyEb₂    | 
+    | 102 | D₂JuS      | 
+    | 102 | EiYuKk     | 
+    | 102 | Ek-102     | 4-chain Ek-102 :: 10279.45 |  Mt-32⁺ +  Ok-92⁺   +[  2446.85 -   5000] => P-22 + Ek-102 | decay, nuclear               |
+    | 102 | FjPqXlDxS  | 
+    | 102 | FjXc₂      | |    35762*|alpha   |  Pt-25ª +   S-26ª +  Xc-31∙ +  Xc-34⁻ +  Fj-37ª +       50 =>   Pt-25 + S-26 + FjXc₂(Fj-37>Xc-31,Xc-34) 102                                      +       6.87 |      43.13 | chemical                     | 0xf64f8d8a43120b9eed3ef2297668a4b45e704ec9 | 0xc0681213363c01b8ea10e52af54366e4902de114b3dfd6a0ac26289cbbe314b3 | 0x79eb78ebf71c906e8001652f90f40ec28636158a1fab97c9e36dc133a513032f |
+    | 102 | FjXlXcS    | 
+    | 102 | Fj₂Ju₂S    | 
+    | 102 | GjEb₂UqSr  | 
+    | 102 | GySr₂Mt    | 
+    | 102 | JuNbXcPq   | 
+    | 102 | JuXc₂DxPm  | 
+    | 102 | JuXlDNb    | 
+    | 102 | Ju₂Aw₂     | 
+    | 102 | LEiGjCtEb  | 
+    | 102 | LViEbT     | 
+    | 102 | MFw₂Xc     | 
+    | 102 | MSNb       | |   184339*|alpha   |  Pq-12ª +   M-22∙ +  Pt-25ª +   S-26ª +  Nb-54ª +       55 =>   Cq-6 + Cq-6 + Pt-25 + MSNb(M-22,S-26>Nb-54) 102                                  +      16.86 |      38.14 | chemical, decay              | 0xa22ea1235ca466e7e1a9214612924c311779084d | 0xb10b21fd1f471f5c48ec9c928ba30fd2d21ecc47ab7b5c1ea8f1d84d965940d3 | 0xbd72452e7f2bebf909122624f3232aef9c5a10220921907a17dd5a9ed87a8ebc |
+    | 102 | MtAsYuTCt  | 
+    | 102 | Mt₃        | |   138269*|bohr    |  Ct-13⁺ +  Ct-13⁺ +  Mt-34⁺ +  Mt-34⁺ +  Mt-34⁺ +      222 =>   Ct-13 + Ct-13 + Mt₃(Mt-34,Mt-34,Mt-34>) 102                                          +     136.88 |      85.12 | metallic                     | 0xe60986c4d7e2affbd294dd470725fa3d30d3d315 | 0x2a2d647610e051dc1065c971f5dd8b3db42bd3f74fdcd6bdd274948b267f6653 | 0x0d94327d961f372b6e6a4478b45b1a1852f462fda75ed71da2f912741878106a |
+    | 102 | NbPm₂AfJu  | 
+    | 102 | Nm-102     | 6-chain Nm-102 :: 14855.36 |   P-23∙ + Nm-101⁺   +[  3304.20 -   5000] => P-22 + Nm-102 | decay, nuclear               |
+    | 102 | Ok-102     | 2-chain Ok-102 ::  6625.01 |  Yu-30∙ +  Kk-72ª   +[  3253.29 -   4000] => Ok-102        | nuclear                      |
+    | 102 | PmAwXc     | 
+    | 102 | Pm₂JuXc₂   | 
+    | 102 | PqMZqDx₂   | 
+    | 102 | PqWXcAw    | 
+    | 102 | PqXc₂Fw    | 
+    | 102 | RoClAsMtDz | 
+    | 102 | RoPbEiDzT  | 
+    | 102 | RoSrPbEbAs | 
+[c] | 102 | S-102      | 0-chain S-102  :: MINEABLE
+    | 102 | SMNb       | 
+    | 102 | SXcPmFw    | 
+    | 102 | SXy        | |   174737*|alpha   |   S-26ª +  Xy-76⁺                               +      200 =>   SXy(S-26>Xy-76) 102                                                                  +     150.31 |      49.69 | chemical                     | 0x140844e90a3159820926a45b859c7fcdc4e28b07 | 0x2e753131d7eeec43cb4dad4d29102c4fd6ea6a29a5b4eae7e78d407626c6e7bf | 0xd015fd76c1b12ff02add0983cbc907c1aa3a118ec481a2030ac7fee1a54d1c54 |
+    | 102 | Se-102     | 6-chain Se-102 :: 23109.59 | Aw-124ª             +[     0.00 -      0] => P-22 + Se-102 | decay                        |
+    | 102 | SrEiYuGy   | 
+    | 102 | SrYuYv     | 
+    | 102 | Sr₂ClYv    | 
+    | 102 | Sr₃ClKk    | 
+    | 102 | S₄         | 
+    | 102 | TLEiEbDz   | 
+    | 102 | Vt-102     | 3-chain Vt-102 ::  6702.08 |  Ro-22⁺ + Cv-102ª   +[  2210.62 -   4000] => P-22 + Vt-102 | decay, nuclear               |
+    | 102 | WPmNbJuS   | 
+    | 102 | WyEbViXj   | 
+    | 102 | W₂AfXcNb   | 
+    | 102 | Xc₂DxM     | 
+    | 102 | Xc₂DxPm    | 
+    | 102 | Xc₂FwAf₂   | 
+    | 102 | Xc₂MDx     | 
+    | 102 | YuSrYv     | 
+    | 102 | Z-102      | 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+    | 102 | ZqXlXcS    | 
+    | 103 | AsRoPbCtDz | 
+    | 103 | AsRoUqCtGj | 
+    | 103 | AsWyDzEbT  | 
+    | 103 | ClAsUqEb   | 
+    | 103 | ClPbAsEb   | 
+    | 103 | ClViXjYuCt | 
+    | 103 | Cv-103     | 
+    | 103 | DPqNb      | 
+    | 103 | DPqXcPm    | 
+    | 103 | Da-103     | 
+    | 103 | Dd-103     | 
+    | 103 | DxDFw₂     | 
+    | 103 | DxNbZq     | 
+    | 103 | Dx₂PmPqD   | 
+    | 103 | EiWyRoCtDz | 
+    | 103 | EiYuKk     | 
+    | 103 | Ei₂Uq₂     | 
+    | 103 | Ek-103     | 
+    | 103 | FjPmXcPqJu | 
+    | 103 | FjXc₂      | |    17766*|alpha   |  Pt-25ª +  Xc-32∙ +  Xc-34⁻ +  Gy-34∙ +  Fj-37ª +      145 =>   Pt-25 + Gy-34 + FjXc₂(Fj-37>Xc-32,Xc-34) 103                                     +      96.72 |      48.28 | chemical                     | 0x3c6058ef1b1b7704e3743a1a27a3e771eeed92cf | 0x649c7e31d12b4cad023b54948a2a98a0eafbdcb22e20a93b6fdf42d9c92f3ead | 0xc46b52e650e792a8775468346ffbeaf54061f30bf5032f3f01d00137ad2e17b4 |
+    | 103 | GjEb₂Pb    | 
+    | 103 | GyEiMt     | 
+    | 103 | Ji-103     | 
+    | 103 | JuNbA      | 
+    | 103 | Ju₂Aw₂     | 
+    | 103 | KkSrMt     | 
+    | 103 | LViTEb     | 
+    | 103 | MtClRoCt   | 
+    | 103 | MtRo₂SrCt  | 
+    | 103 | MtYuEbT    | 
+    | 103 | Mt₃        | |    53862*|bohr    |  Yu-27⁺ +  Mt-34⁺ +  Mt-34⁺ +  Mt-35∙ +  Yv-72ª +      100 => ⬇ Cl-27 + Yv-72 + Mt₃(Mt-34,Mt-34,Mt-35>) 103                                          +      20.25 |      79.75 | metallic, decay              | 0x6786d68512f9e97615a4c176dba62f3252a470bd | 0x0fd084aede64506907dfceed15f7b375787fbecf2f9281ab0772e6c4eaec91ad | 0x80fe1b1f54d24a53f02199237c31840f133df2757a4595020a95840ef9c78358 |
+    | 103 | NbDJuAf    | 
+    | 103 | NbWXlXc    | 
+    | 103 | Nm-103     | 
+    | 103 | Ok-103     | 
+    | 103 | PbClEbAs   | 
+    | 103 | PmAwXc     | 
+    | 103 | PmXcAw     | 
+    | 103 | PqXc₃      | 
+    | 103 | Pq₂NbM     | 
+    | 103 | RoEi₂LT    | 
+    | 103 | S-103      | 
+    | 103 | SFwPmD     | 
+    | 103 | SMNb       | 
+    | 103 | SrKkMt     | 
+    | 103 | SrYuYv     | 
+    | 103 | Sr₂ClYv    | 
+    | 103 | S₄         | 
+    | 103 | Vt-103     | 
+    | 103 | WNbMFw     | 
+    | 103 | WPqSXcFw   | 
+    | 103 | WXcAwDx    | 
+    | 103 | WXcDxAw    | 
+    | 103 | WyAsEbCtGj | 
+    | 103 | WyCtSrXjT  | 
+    | 103 | WyDzTEbAs  | 
+    | 103 | WyViEbXj   | 
+    | 103 | XcWAwDx    | 
+    | 103 | Xc₂DxM     | 
+    | 103 | Xc₂Dx₂Af   | 
+    | 103 | XlJuDNb    | 
+    | 103 | YuEiKk     | 
+    | 103 | YuSrYv     | 
+    | 103 | Yu₂SrEb₂   | 
+    | 103 | Z-103      | 
+    | 104 | AfFjAwXl   | 
+    | 104 | Aw-104     | 
+    | 104 | ClPbEbAs   | 
+    | 104 | ClSr₂Kk    | |   137044*|bohr    |   Sr-3∙ +   Sr-3∙ +  Cl-27∙ +  Gy-67ª +  Kk-71ª +      219 =>   Gy-67 + ClSr₂Kk(Cl-27,Kk-71,Sr-3,Sr-3>) 104                                      +     115.80 |     103.20 | metallic                     | 0x9c5d3931c29da70d70968f46e59188a24616c29c | 0xfe6efd56c747f0b2676fbfb5bb921f5033c09ca08e2d10db7cbec1a6c943dc26 | 0xa16683cf3ef489fa16e56d0584800d2a275d5b17b298bc4713b45f5c62a631b5 |
+    | 104 | Cv-104     | 
+    | 104 | DM₃        | |   163305*|alpha   |   M-22∙ +   M-22∙ +   M-23⁻ +   D-37⁻ +  Nb-54ª +      350 =>   Nb-54 + DM₃(D-37,M-23>M-22,M-22) 104                                                 +     292.69 |      57.31 | chemical                     | 0x019ece903879320b0b5518a4a1333a8fdc3a675d | 0x3a2ebaaa540863a5fe8ba2057b0674db73b06e9866978ff3929f3a7e26123ccb | 0x378f426a22d5eedc8e8412913641d21e33ad24add934df2765e6814d9914c88b |
+    | 104 | DPqNb      | 
+    | 104 | DXcDx₂W    | 
+    | 104 | Da-104     | 
+    | 104 | Dd-104     | 
+    | 104 | DxHbPq₂    | 
+    | 104 | Dx₂M₂S     | 
+    | 104 | EiGyMt     | 
+    | 104 | EiWyGjEbT  | 
+    | 104 | EiYuKk     | 
+    | 104 | Ek-104     | 
+    | 104 | FjMDxXc    | 
+    | 104 | GyEiMt     | 
+    | 104 | GySr₂Mt    | 
+    | 104 | Ic₂        | |    28350*|alpha   |  Ic-52⁺ +  Ic-52⁺                               +      200 =>   Ic₂(Ic-52,Ic-52>) 104                                                                +     109.18 |      90.82 | metallic                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x6e197a8c344562af68ddf1131d895f8ccf83ccb32bf97363cbcc56a4c7355947 | 0x375b4ffbd6cd2482e9e301aff5fa02ec38cc05f048e90011e65312b57b9cd13e |
+    | 104 | Ji-104     | 
+    | 104 | Ju₂Aw₂     | 
+    | 104 | KkSrMt     | 
+    | 104 | MXc₂Pq     | 
+    | 104 | Mt₃        | |   179796*|bohr    |  Mt-34⁺ +  Mt-34⁺ +  Mt-34⁺ +  Mt-35∙ +  Mt-35∙ +      100 =>   Mt-34 + Mt-34 + Mt₃(Mt-34,Mt-35,Mt-35>) 104                                          +      19.53 |      80.47 | metallic                     | 0x9cc0c17ff25677bb23f2634a973fe8b2290bb04c | 0x0e071a5abfeabdf5f7b1cb851e369ae5210bfb709a5a57ec742c8f4ac9b52b81 | 0x2473dc30f6b97b78351fa39cf5ab66e2d30f94332b5cb4551e2ed24af9d33804 |
+    | 104 | M₂FwSXl    | 
+    | 104 | M₅         | 
+    | 104 | NbAw       | |    35063*|alpha   |  Pm-19∙ +  Fw-25⁻ +  Pt-25ª +  Aw-50∙ +  Nb-54ª +       50 => ⬆ Pm-19 + Pt-25 + Pt-25 + NbAw(Nb-54>Aw-50) 104                                        +       8.70 |      41.30 | chemical, decay              | 0x14f13489d3d9226804c11469670adbe3836986d1 | 0x3227c77e16abccd425087fbd13a82b379b672d14f27762868caf64e45bdda0d8 | 0xd94a306b565befcf0e16de198e88b996c83646ae6a35d3bd443487a252ba9985 |
+    | 104 | Nm-104     | 
+    | 104 | Ok-104     | 
+    | 104 | PqDNb      | 
+    | 104 | Pq₂NbM     | 
+    | 104 | RoWyAsEb   | 
+    | 104 | S-104      | 
+    | 104 | SDxNbAf    | 
+    | 104 | SFjXlXc    | 
+    | 104 | SXcFwPm    | 
+    | 104 | SXcXlDxM   | 
+    | 104 | Se-104     | 
+    | 104 | SrKkMt     | 
+    | 104 | SrYuYv     | 
+    | 104 | Sr₂ClYv    | 
+    | 104 | Sr₂GyMt    | 
+    | 104 | Sr₂L₂      | 
+    | 104 | Sr₂YuKk    | 
+    | 104 | S₄         | 
+    | 104 | UqAsViEbT  | 
+    | 104 | Vt-104     | 
+    | 104 | WAw₂       | 
+    | 104 | XcDxPmFj   | 
+    | 104 | XcPqSDxPm  | 
+    | 104 | Xc₂MDx     | 
+    | 104 | Xk₂        | |    28347*|alpha   |  Xk-52⁺ +  Xk-52⁺                               +      200 =>   Xk₂(Xk-52,Xk-52>) 104                                                                +     115.30 |      84.70 | metallic                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x4b59af5db68f7081483f8fd22fe85408d4def09f07928337ec2482fc4f215ba5 | 0x6cd2fa8fb0fa8e204702dfca743d2d23f8f64bf15af8b3546b236054693692a8 |
+    | 104 | XlS₂M₂     | 
+    | 104 | YuEiKk     | 
+    | 104 | Z-104      | 
+    | 104 | ZqWFw₂M    | 
+    | 105 | AfAwFjXl   | 
+    | 105 | Aw-105     | 
+    | 105 | Cv-105     | 
+    | 105 | DPqNb      | 
+    | 105 | DSXcPq     | 
+    | 105 | DS₂Dx      | 
+    | 105 | Da-105     | 
+    | 105 | Dd-105     | 
+    | 105 | DxAfAwXc   | 
+    | 105 | DxJuZqNb   | 
+    | 105 | Dx₂FwAfD   | 
+    | 105 | Dx₂FwAw    | 
+    | 105 | Dx₄D       | |   174442*|alpha   |  Dx-17∙ +  Dx-17∙ +  Dx-17∙ +  Dx-17∙ +   D-37⁻ +      600 =>   Dx₄D(D-37,Dx-17,Dx-17,Dx-17>Dx-17)                                               +     533.00 |      67.00 | chemical                     | 0x5b33b6f41e87111b7d22685b297f086b5535034d | 0xf8d959a1cd6772f5bec9aaa2c3d47c5c071547674e95c9edc704341d6598dc34 | 0x559fc6edb9848a035d124727ded51d8c7213def3626d703d94b7cc10ad5c207d |
+    | 105 | EiYuKk     | 
+    | 105 | Ek-105     | 
+    | 105 | FjSXcXl    | 
+    | 105 | FjXc₂      | |     7248*|alpha   |  Fw-25⁻ +   S-26ª +  Xc-34⁻ +  Xc-34⁻ +  Fj-37ª +      101 =>   FjXc₂(Fj-37>Xc-34,Xc-34) 105 + SFw(S-26>Fw-25)                                       +      31.91 |      69.09 | chemical                     | 0xbc5a3a8d843ebca04b930435e236eea2af16016c | 0x9ea7b150aa48a5faa3cb0cd9650fd50f88458fa60d3ce3570183d016d383da64 | 0x97360c6f2f6dce4f151ff481322ad313a5be6e35fa73d326e1bc50773ac310f6 |
+    | 105 | FjXlXcS    | 
+    | 105 | GyEiMt     | 
+    | 105 | Ji-105     | 
+    | 105 | KkSrMt     | 
+    | 105 | MFjDxXc    | 
+    | 105 | MXcJuNb    | 
+    | 105 | M₂Dx₂S     | 
+    | 105 | NbAw       | |   140059*|alpha   |  Aw-50∙ +  Nb-55⁻                               +     2213 =>   NbAw(Nb-55>Aw-50) 105                                                                +    2063.18 |     149.82 | chemical                     | 0x44edef1f29a9dd57e916c600a2c62bf0201b8ab1 | 0x15859b87d3b86ddb530208a6255b67649b1d98258fd58c68804fdf195eaa4bd7 | 0xefffd665829732dddd8faa07447d27189fec4d1f2d74b1d3fe8827526365d68a |
+    | 105 | Nm-105     | 
+    | 105 | Ok-105     | 
+    | 105 | PqXc₂Fw    | 
+    | 105 | S-105      | 
+    | 105 | SEFj       | 
+    | 105 | SXc₂Pm     | 
+    | 105 | SrKkMt     | 
+    | 105 | Sr₂GyMt    | 
+    | 105 | S₂DPm      | 
+    | 105 | S₂FjDx     | 
+    | 105 | Vt-105     | 
+    | 105 | WAw₂       | 
+    | 105 | WXcDxAw    | 
+    | 105 | WXcZqDxPm  | 
+    | 105 | WyEb₂Gj    | 
+    | 105 | W₂MFwAw    | 
+    | 105 | XcFjO      | 
+    | 105 | XcPq₂Aw    | 
+    | 105 | Xc₂DxM     | 
+    | 105 | Xc₂MWDx    | 
+    | 105 | XkNb       | |    91138*|alpha   |  Nb-54ª +  Xk-51ª                               +     8600 =>   XkNb(Nb-54,Xk-51>) 105                                                               +    8102.68 |     497.32 | metallic                     | 0x28eb631f92e47669739b5c570394452924024957 | 0x48ae35d592f0125dfc9d8389542d426f8b5059ec56ce8694913bf5e97f7fddd6 | 0x7eb17f1efc30908df2ebf395d491f33fe9989be3812d92290663eaee14f093f6 |
+    | 105 | XlDxSNb    | 
+    | 105 | YuEiKk     | 
+    | 105 | Z-105      | 
+    | 105 | ZqAwFw     | 
+    | 106 | AfDx₂Xc₂   | 
+    | 106 | AsEiGjLMt  | 
+    | 106 | Aw-106     | 
+    | 106 | ClLNd      | 
+    | 106 | Cl₃Ro      | 
+    | 106 | Cv-106     | 
+    | 106 | DFjXcJu    | 
+    | 106 | Da-106     | 
+    | 106 | Dd-106     | 
+    | 106 | DxAfAwXc   | 
+    | 106 | DxFwAfWAw  | 
+    | 106 | DxMXcD     | 
+    | 106 | DxXc₂MW    | 
+    | 106 | Dx₂DFj     | 
+    | 106 | Dx₂PmNb    | 
+    | 106 | D₂Zq       | 
+    | 106 | EiGyMt     | 
+    | 106 | EiL₂       | 
+    | 106 | EiSrKkDzRo | 
+    | 106 | Ek-106     | 
+    | 106 | FjDxAwJu   | 
+    | 106 | Fw₂AwXl    | 
+    | 106 | GyEiMt     | 
+    | 106 | GySr₂Mt    | 
+    | 106 | JuFjDWS    | 
+    | 106 | JuXcAwPm   | |     6704*|alpha   |   Ju-3∙ +  Pm-19∙ +  Fw-25⁻ +  Xc-34⁻ +  Aw-50∙ +       76 => ⬆ Pt-25 + JuXcAwPm(Ju-3,Xc-34>Aw-50,Pm-19)                                         +      23.90 |      52.10 | chemical, decay              | 0xd435566e386a9ae228a89826ab733981967c30ef | 0x2a5f6b21d16be70f11a13b6333e3b64a7dcde359310871cf61ca9c4bd02b1526 | 0x9a3f799691f6fa57f34ff6ddfa877fdc888129ffb55dcd20016a15d8c73a35b9 |
+    | 106 | Ju₂Aw₂     | 
+    | 106 | KkSrMt     | 
+    | 106 | Kn-106     | 
+    | 106 | MPmFwAfXc  | 
+    | 106 | MXcAwW     | 
+    | 106 | MXc₂Pq     | 
+    | 106 | MXc₂WDx    | 
+    | 106 | Ok-106     | 
+    | 106 | PqXc₃      | 
+    | 106 | Pq₄Nb      | 
+    | 106 | RoSr₂MtUq  | 
+    | 106 | S-106      | 
+    | 106 | SFjXcXl    | 
+    | 106 | SPmAfNb    | 
+    | 106 | SZqMFw     | 
+    | 106 | SrKkMt     | 
+    | 106 | SrYuClL    | 
+    | 106 | Sr₂L₂      | 
+    | 106 | S₂MXc      | 
+    | 106 | S₂XcFw     | 
+    | 106 | Vt-106     | 
+    | 106 | WFj₂Pq₂    | 
+    | 106 | Xc₂AfDxPm  | 
+    | 106 | Xc₂Pm₂W    | 
+    | 106 | Xc₂SPm     | 
+    | 106 | XlSDxNb    | 
+    | 106 | Z-106      | 
+    | 107 | AfNbXcPq   | 
+    | 107 | AfXc₂Dx₂   | 
+    | 107 | AfXlWNbXc  | 
+    | 107 | AsWyL      | 
+    | 107 | AsWyXjMt   | 
+    | 107 | Aw-107     | 
+    | 107 | AwPmDJu    | 
+    | 107 | CPqAwJu    | 
+    | 107 | ClLNd      | 
+    | 107 | Cv-107     | 
+    | 107 | Da-107     | 
+    | 107 | DxAfXcAw   | 
+    | 107 | DxSXlNb    | 
+    | 107 | Dx₂PmNb    | 
+    | 107 | Dx₂PmXcS   | 
+    | 107 | DzLPb      | 
+    | 107 | EiGyMt     | 
+    | 107 | EiL₂       | 
+    | 107 | EiMtTLSr   | 
+    | 107 | EiRoNdWy   | 
+    | 107 | Ek-107     | 
+    | 107 | FjDJuXc    | 
+    | 107 | FjMDxXc    | 
+    | 107 | FjXlXcS    | 
+    | 107 | Fj₂ZqJu    | 
+    | 107 | FwMXc₂     | 
+    | 107 | FwPmSXcJu  | 
+    | 107 | GjMtPbT    | 
+    | 107 | GyClCt     | 
+    | 107 | GyCtCl     | 
+    | 107 | GyEiMt     | 
+    | 107 | GySrCtRo   | 
+    | 107 | Ji-107     | 
+    | 107 | JuSAwXc    | 
+    | 107 | Ju₂FwAwZq  | 
+    | 107 | KkAs₂SrRo  | 
+    | 107 | KkDx       | |    44468*|bohr    |  Dx-37⁺ +  Kk-70ª +   W-82ª                     +      450 =>   W-82 + KkDx(Dx-37,Kk-70>) 107                                                        +     337.05 |     112.95 | metallic                     | 0xcf27f3c53d9c0a96bf8d6c79a65e5cade58439f0 | 0x0960fb3437656478296fcbf7982d0d0669eb151b8726029b38d800b084a6fecf | 0x4f2f3133c59db176d1f4abd9e611e84baaace9c7e96e34397478a75872c6aa6c |
+    | 107 | KkGjRoEi   | 
+    | 107 | KkRoCt     | 
+    | 107 | KkSrMt     | 
+    | 107 | Kn-107     | 
+    | 107 | MFwXc₂     | 
+    | 107 | MtRoEbNd   | 
+    | 107 | MtSrLEb    | 
+    | 107 | NbMSW      | 
+    | 107 | NdClL      | 
+    | 107 | NdLCl      | 
+    | 107 | Ok-107     | 
+    | 107 | Pm₂JuXc₂   | 
+    | 107 | Pm₃Aw      | 
+    | 107 | PqXc₃      | 
+    | 107 | Pq₂DxXc₂   | 
+    | 107 | RoMtTAsYu  | 
+    | 107 | S-107      | 
+    | 107 | SAf₃Nb     | 
+    | 107 | SPqAwPm    | 
+    | 107 | SrAsLPb    | 
+    | 107 | SrClWyNd   | 
+    | 107 | SrKkMt     | 
+    | 107 | SrMtLEb    | 
+    | 107 | SrRoLNd    | 
+    | 107 | SrYuClL    | 
+    | 107 | Vt-107     | 
+    | 107 | XcDxMD     | 
+    | 107 | XcMDxD     | 
+    | 107 | XcNbWPm    | 
+    | 107 | XcPq₂Aw    | 
+    | 107 | XcXlAwDx   | 
+    | 107 | XcXlFwM₂   | 
+    | 107 | Xc₂AfDxPm  | 
+    | 107 | Xc₂AfPmDx  | 
+    | 107 | Xc₂Fw₂     | 
+    | 107 | Xc₂SPm     | 
+    | 107 | Xl₂NbXc    | 
+    | 107 | YvAs₂Ro    | 
+    | 107 | Z-107      | 
+    | 108 | AsLWy      | 
+    | 108 | AsWyL      | 
+    | 108 | As₂Pb₂     | 
+    | 108 | Aw-108     | 
+    | 108 | AwPmPqS    | 
+    | 108 | AwSMXl     | 
+    | 108 | ClNdL      | 
+    | 108 | ClSrWyNd   | 
+    | 108 | Cl₄        | |   113863*|bohr    |  Cl-27∙ +  Cl-27∙ +  Cl-27∙ +  Cl-27∙ +  Yu-29∙ +      150 =>   Yu-29 + Cl₄(Cl-27,Cl-27,Cl-27,Cl-27>) 108                                            +      35.27 |     114.73 | metallic                     | 0xa2de19eb98aa7dcfd6fbe17aed30b21af8715e84 | 0x3cb7fe30cccf13e96c3c96374e25d54c40e383a06994d33e3281d394631d7a85 | 0x32a11de465e8288349e5696b7e6eba856989f5fd33ca183d64d56f1640e1ac32 |
+    | 108 | Cv-108     | 
+    | 108 | DFjJuXc    | 
+    | 108 | DXl₂Aw     | 
+    | 108 | Da-108     | 
+    | 108 | DzLPb      | 
+    | 108 | EiKkGjRo   | 
+    | 108 | EiMtEbWy   | 
+    | 108 | EiMtRoUq   | 
+    | 108 | Ek-108     | 
+    | 108 | FjAfXcZq   | 
+    | 108 | FjAf₂Nb    | 
+    | 108 | FjDxXcM    | 
+    | 108 | FjDx₂D     | 
+    | 108 | FjXcWDxPm  | 
+    | 108 | FwPmNbXl   | 
+    | 108 | GjTEiNdPb  | 
+    | 108 | GyClCt     | 
+    | 108 | GyCtCl     | 
+    | 108 | GySrCtRo   | 
+    | 108 | GySrRoCt   | 
+    | 108 | Ha-108     | 
+    | 108 | Ji-108     | 
+    | 108 | JuAfAw₂    | 
+    | 108 | JuSXc₂Dx   | 
+    | 108 | JuXcAfAwDx | 
+    | 108 | KkCtRo     | 
+    | 108 | KkSrMt     | 
+    | 108 | KkSrViRo   | 
+    | 108 | Kn-108     | 
+    | 108 | LMtAsXj    | 
+    | 108 | MXcJuNb    | 
+    | 108 | MtEiEbWy   | 
+    | 108 | MtRoEiTNd  | 
+    | 108 | MtRoNdEb   | 
+    | 108 | MtYuNdT    | 
+    | 108 | Mt₂Eb₂     | 
+    | 108 | Mt₂RoT     | 
+    | 108 | NbWPqFj    | 
+    | 108 | Nb₂        | |   203099 |alpha   |  Nb-54ª +  Nb-54ª +  Nb-54ª                     +      100 =>   Nb-54 + Nb₂(Nb-54,Nb-54>) 108                                                        +      25.76 |      74.24 | metallic                     | 0xd06bffdc406c070bf09e5f80c39950a26c6fe10f | 0x8f4f019392026f87f85b7693160dc4926e5671c61f7789827a15e1d049b44709 | 0x18079a9e04467940d01f2d6cdb2834394acd8b1b80b18c32f93d3cbfae3c2262 |
+    | 108 | NdClL      | 
+    | 108 | NdLCl      | 
+    | 108 | NdSrClWy   | 
+    | 108 | Nd₃Xj      | 
+    | 108 | PmNbJuXc   | 
+    | 108 | PqXlNbXc   | 
+    | 108 | Pq₂DxXc₂   | 
+    | 108 | S-108      | 
+    | 108 | SJuXcAw    | 
+    | 108 | SrAsWy₂    | 
+    | 108 | SrClYuL    | 
+    | 108 | SrKkMt     | 
+    | 108 | SrWyAsL    | 
+    | 108 | Vt-108     | 
+    | 108 | WySrNdGjXj | 
+    | 108 | W₂FjSD     | 
+    | 108 | XcAfAwPm   | 
+    | 108 | XcAfPmAw   | 
+    | 108 | XcAwFwW    | 
+    | 108 | XcMDxD     | 
+    | 108 | XcWFwAw    | 
+    | 108 | Xc₂Fw₂     | 
+    | 108 | XlJuM₂Nb   | 
+    | 108 | Xl₂NbXc    | 
+    | 108 | Z-108      | 
+    | 109 | AsRoNdPb   | 
+    | 109 | As₂Pb₂     | 
+    | 109 | Aw-109     | 
+    | 109 | AwSMXl     | 
+    | 109 | Ax-109     | 
+    | 109 | ClMtXjNd   | 
+    | 109 | ClSrYuL    | 
+    | 109 | Cv-109     | 
+    | 109 | DAf₂Nb     | 
+    | 109 | DFjXcJu    | 
+    | 109 | DSXcPq     | 
+    | 109 | Da-109     | 
+    | 109 | DxFwNbPq   | 
+    | 109 | DxJuFjNb   | 
+    | 109 | DxSXlNb    | 
+    | 109 | DxWXcJuNb  | 
+    | 109 | Dx₂PmSXc   | 
+    | 109 | DzMtPbXj   | 
+    | 109 | EiMtRoUq   | 
+    | 109 | EiSrLWy    | 
+    | 109 | Ek-109     | 
+    | 109 | FjDXcJu    | 
+    | 109 | FjPmNb     | 
+    | 109 | FjPm₂Xc    | 
+    | 109 | FwXlNbM    | 
+    | 109 | GjUqSrMtT  | 
+    | 109 | GyClCt     | 
+    | 109 | GyCtCl     | 
+    | 109 | GyGjClEi   | 
+    | 109 | Ha-109     | 
+    | 109 | Ji-109     | 
+    | 109 | JuAfAw₂    | 
+    | 109 | KkCtRo     | 
+    | 109 | KkEiGjRo   | 
+    | 109 | KkGjEiRo   | 
+    | 109 | KkSrMt     | 
+    | 109 | Kn-109     | 
+    | 109 | LMtDzT     | 
+    | 109 | LNdTVi     | 
+    | 109 | MXcAwW     | 
+    | 109 | MtLTDz     | 
+    | 109 | MtSrLEb    | 
+    | 109 | Mt₂Eb₂     | 
+    | 109 | NbMPmPq    | 
+    | 109 | Nb₂Ju      | 
+    | 109 | Nd₃Xj      | 
+    | 109 | PbSrDzL    | 
+    | 109 | PmFjNb     | 
+    | 109 | PqXlXcNb   | 
+    | 109 | Pq₂Fj₂Xl   | 
+    | 109 | Pq₂XlDxNb  | 
+    | 109 | S-109      | 
+    | 109 | SAfXcPmM   | 
+    | 109 | SSq        | |   174723*|alpha   |   S-25⁺ +  Sq-84∙                               +      400 =>   SSq(S-25>Sq-84) 109                                                                  +     338.88 |      61.12 | chemical                     | 0x140844e90a3159820926a45b859c7fcdc4e28b07 | 0x9fb3685ca3d039d7e486e8fd4b35112e56436f2a2c01eab7ae6c65d193b204c3 | 0x31dd2c48fe3abd095c863beb9341b4cac289e0962fb7d872a47faf6a62ada883 |
+    | 109 | SrPbLDz    | 
+    | 109 | Vt-109     | 
+    | 109 | WXlAwMFw   | 
+    | 109 | WyDzL      | 
+    | 109 | WySrLAs    | 
+    | 109 | XcAfFw₂M   | 
+    | 109 | XcAfPmAw   | 
+    | 109 | Xc₂AfDxPm  | 
+    | 109 | XlPqNbXc   | 
+    | 109 | YvSrAsEiRo | 
+    | 109 | Z-109      | 
+    | 109 | ZqFjC      | 
+    | 110 | AsMtPbEb   | 
+    | 110 | AsNdRoPb   | 
+    | 110 | Aw-110     | 
+    | 110 | AwFjFw     | 
+    | 110 | Ax-110     | 
+    | 110 | ClMtNdXj   | 
+    | 110 | ClMt₂Ct    | 
+    | 110 | Cv-110     | 
+    | 110 | DzSrPbWy   | 
+    | 110 | EbViAsRoUq | 
+    | 110 | EiMtEbWy   | 
+    | 110 | EiNdClPb   | 
+    | 110 | EiNd₂ClXj  | 
+    | 110 | Ei₂WyL     | 
+    | 110 | Ei₂Wy₂     | 
+    | 110 | Ek-110     | 
+    | 110 | FjAwFw     | 
+    | 110 | FjFwAw     | 
+    | 110 | FjPmNb     | 
+    | 110 | FwAwXcJu   | 
+    | 110 | FwMAfNb    | 
+    | 110 | FwXc₂M     | 
+    | 110 | GdKk       | |   109726*|bohr    |   Ei-4∙ +  Gj-11∙ +  Gd-40∙ +   L-51⁺ +  Kk-70ª +    10000 =>   Ei-4 + Gj-11 + L-51 + GdKk(Gd-40,Kk-70>) 110                                         +    9402.42 |     597.58 | metallic                     | 0xfb4eecef04f1d45ead80a7a471d60b38b14eaa9a | 0x36055db5a45627e95374cf1170ea6f90fe2306472de8f5400b28d119fe4fdc00 | 0x944532c586ddbdefa8a88d0309915ce6c5a6b964b18a5b4b2f64294da471b658 |
+    | 110 | GjPbMtT    | 
+    | 110 | GyClCt     | 
+    | 110 | GyGjClEi   | 
+    | 110 | Ha-110     | 
+    | 110 | Ji-110     | 
+    | 110 | JuAfAw₂    | 
+    | 110 | Ju₂XcNbFw  | 
+    | 110 | KkCtRo     | 
+    | 110 | KkRoCt     | 
+    | 110 | Kn-110     | 
+    | 110 | LEiClGjXj  | 
+    | 110 | LEiXjAsNd  | 
+    | 110 | LMtDzT     | 
+    | 110 | LMtTDz     | 
+    | 110 | LXjNdGj    | 
+    | 110 | MAwXcW     | 
+    | 110 | MtAsPbSrEb | 
+    | 110 | MtNdEbRo   | 
+    | 110 | MtNdYuT    | 
+    | 110 | MtPbSrAsEb | 
+    | 110 | MtRoEbNd   | 
+    | 110 | MtRoNdEb   | 
+    | 110 | MtYuNdT    | 
+    | 110 | M₅         | 
+    | 110 | NbAfPqXc   | 
+    | 110 | NbJuWAw    | 
+    | 110 | NbPqC      | 
+    | 110 | Nb₂Ju      | 
+    | 110 | PbGjMtT    | 
+    | 110 | PmFjNb     | 
+    | 110 | PqXlNbXc   | 
+    | 110 | SrDzUqL    | 
+    | 110 | SrMtNdYuCt | 
+    | 110 | SrWyViTNd  | 
+    | 110 | Vt-110     | 
+    | 110 | WFjAwPm    | 
+    | 110 | WXc₂M₂     | 
+    | 110 | WyDzL      | 
+    | 110 | WyNdGjEb   | 
+    | 110 | XcDxMWFj   | 
+    | 110 | XcJuDxWNb  | 
+    | 110 | XcPq₂Aw    | 
+    | 110 | XcXlAwDx   | 
+    | 110 | XcXlDxAw   | 
+    | 110 | XlAw₂      | 
+    | 110 | XlXcAwDx   | 
+    | 110 | Z-110      | 
+    | 111 | AsClMt₂Dz  | 
+    | 111 | Aw-111     | 
+    | 111 | Ax-111     | 
+    | 111 | ClMt₂Ct    | 
+    | 111 | Cv-111     | 
+    | 111 | DAfXlNb    | 
+    | 111 | DDxWNb     | 
+    | 111 | DMNb       | 
+    | 111 | DZqSDx     | 
+    | 111 | D₃         | 
+    | 111 | EiKkGjRo   | 
+    | 111 | Ei₂WyL     | 
+    | 111 | Ek-111     | 
+    | 111 | Fj₂D       | 
+    | 111 | Fj₃        | |   203162*|alpha   |  Xl-10ª +  Zz-13⁺ +  Fj-37ª +  Fj-37ª +  Fj-37ª +      100 =>   Xl-10 + Zz-13 + Fj₃(Fj-37,Fj-37,Fj-37>) 111                                          +      17.72 |      82.28 | metallic                     | 0xd06bffdc406c070bf09e5f80c39950a26c6fe10f | 0xbf86788ac7bbb44514f67897f5d7a93de5a4e109b08ce7d9a2c1b62172f8a9d8 | 0x3418440678a44992dd0bda66199aeefe41a1737ef829f0c49fe65ec594c95457 |
+    | 111 | FwDxXc₂Af  | 
+    | 111 | FwS₂Fj     | 
+    | 111 | Ha-111     | 
+    | 111 | Ji-111     | 
+    | 111 | JuAfAw₂    | 
+    | 111 | JuXc₂FwM   | 
+    | 111 | JuXc₂MFw   | 
+    | 111 | Ju₃Nb₂     | 
+    | 111 | KkCtRo     | 
+    | 111 | KkRoCt     | 
+    | 111 | KkSrAs₂Ro  | 
+    | 111 | LTClAsGj   | 
+    | 111 | LXjGjClEi  | 
+    | 111 | LYuTCt     | 
+    | 111 | LuLx       | |    94889*|bohr    |  Lu-35⁺ +  Cv-98ª                               +    10000 =>   P-22 + LuLx(Lu-35,Lx-76>) 111                                                        +    9423.42 |     576.58 | metallic, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x42da0cf2bce75a631f5f55c90060ede73166e08eecea26dd9f99b9ec1a72c3dc | 0x2dc2cad64cfeeb42e93886b66239a26d195907d7bdbd17fcc553e4276842fbe9 |
+    | 111 | MDNb       | 
+    | 111 | MtGjSrUqT  | 
+    | 111 | MtPbDzEb   | 
+    | 111 | MtPbSrAsEb | 
+    | 111 | MtWyTGj    | 
+    | 111 | Mt₂ClCt    | 
+    | 111 | NbDx₂S     | 
+    | 111 | NbPqC      | 
+    | 111 | Nb₂Ju      | 
+    | 111 | OSC        | |    29212*|alpha   |   S-28∙ +   O-41∙ +   C-42∙ +   A-45∙ +   H-80∙ +     1000 =>   OSC(O-41,S-28>C-42) + HA(H-80>A-45)                                              +     860.96 |     139.04 | chemical                     | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xd5905eac09eab9ba36a43ce885b8ebb264aa3a3eb7dc124b329e7a5bb4b00ab1 | 0xb4913d90a109ba2631d51f5dc8e4ef53ec9e2bb1c45bee61d6496c79e38b35b0 |
+    | 111 | PmSXcFj    | 
+    | 111 | PmXlMFjFw  | 
+    | 111 | PqAwFw₂    | 
+    | 111 | SJuXcAw    | 
+    | 111 | SZqMXc     | 
+    | 111 | SZqXcM     | 
+    | 111 | S₂PmDxFw   | 
+    | 111 | UqGdRo     | 
+    | 111 | ViPbCtMt   | 
+    | 111 | Vt-111     | 
+    | 111 | WyEi₂L     | 
+    | 111 | WyMtSrEiEb | 
+    | 111 | XcPm₂WFj   | 
+    | 111 | XlAw₂      | 
+    | 111 | Z-111      | 
+    | 112 | AfJuAw₂    | 
+    | 112 | Aw-112     | 
+    | 112 | AwFjFw     | 
+    | 112 | ClEbYu₂As  | 
+    | 112 | DPmMSAf    | 
+    | 112 | Ek-112     | 
+    | 112 | FwAwPq₃    | 
+    | 112 | FwNbSXl    | 
+    | 112 | Fw₂WXc₂    | 
+    | 112 | GjAsClUqEb | 
+    | 112 | GjEbClUqAs | 
+    | 112 | IcXk       | |    68624*|alpha   |  Xk-55⁻ +  Ic-57∙                               +      100 =>   IcXk(Ic-57>Xk-55) 112                                                                +      53.20 |      46.80 | chemical                     | 0x56bde1e5efc80b1e2b958f2d311f4176945ae77f | 0xfeba8514c3038ee853cb034019e4a982c2a59b4844bccd9f0aae5ef14a01d9a6 | 0x85cc5471933007fd35526ed77546c132c9471d911b546121b1d1370a1e9f7866 |
+    | 112 | Ji-112     | 
+    | 112 | JuAwMFj    | 
+    | 112 | Ju₃Nb₂     | 
+    | 112 | KkRoCt     | 
+    | 112 | Kn-112     | 
+    | 112 | MXc₃       | 
+    | 112 | MtWyAsEb   | 
+    | 112 | MtWyGjT    | 
+    | 112 | MtWyXjDz   | 
+    | 112 | Mt₂Eb₂     | 
+    | 112 | NbMSPq     | 
+    | 112 | NbMXcAf    | 
+    | 112 | NbPmXcXl   | 
+    | 112 | NbZqS      | 
+    | 112 | PqXlNbXc   | 
+    | 112 | PqZqDxAw   | 
+    | 112 | RoMtEiUq   | 
+    | 112 | SXcZqM     | 
+    | 112 | S₂Xc₂      | 
+    | 112 | S₃Fj       | 
+    | 112 | S₄         | 
+    | 112 | Vt-112     | 
+    | 112 | WMNbXc     | 
+    | 112 | WyEbGjNd   | 
+    | 112 | WyEbNdGj   | 
+    | 112 | XcMNbJu    | 
+    | 112 | Xc₂WM₂     | 
+    | 112 | XkXc₂      | 
+    | 112 | XlAfWXcNb  | 
+    | 112 | Z-112      | 
+    | 112 | ZqNbS      | 
+    | 113 | Aw-113     | 
+    | 113 | AwPmFjJuW  | 
+    | 113 | DMNb       | 
+    | 113 | Dx₂FjXlXc  | 
+    | 113 | Dx₃AfNb    | 
+    | 113 | Ek-113     | 
+    | 113 | Fj₃        | |    28324*|alpha   |  Fj-37ª +  Fj-37ª +  Fj-39ª +  Fj-39ª           +      100 =>   Fj-39 + Fj₃(Fj-37,Fj-37,Fj-39>) 113                                                  +      16.33 |      83.67 | metallic                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x8bc037f71ad64d8f5a7aa70f66a053a4fe44b032e195315351cc9df34edbded6 | 0x53fc9cdcab5277257ca848cdcc50daaa5891c91880b4ecd391cd1b87a702a164 |
+    | 113 | FwNbXlS    | 
+    | 113 | FwXc₂M     | 
+    | 113 | Ha-113     | 
+    | 113 | I-113      | 
+    | 113 | Ji-113     | 
+    | 113 | JuAwFjM    | 
+    | 113 | JuDx₂SNb   | 
+    | 113 | KkRoCt     | 
+    | 113 | Kn-113     | 
+    | 113 | NdYuEbCtXj | 
+    | 113 | PqXlDxNbM  | 
+    | 113 | SAwFjJu    | 
+    | 113 | SXc₂Pm     | 
+    | 113 | S₂M₂Dx     | 
+    | 113 | S₃D        | |    75440*|alpha   |  Zz-14ª +   S-25⁺ +   S-25⁺ +   S-26ª +   D-37⁻ +     5555 =>   Zz-14 + S₃D(D-37,S-25,S-26>S-25) 113                                                 +    5238.35 |     316.65 | chemical                     | 0xfa149a084b0b89a8e9a13e9f17f87c628c4b1de1 | 0xeefe560b6d534b30f9c3bff6740bd89e19cb118202b4696c7e56333e80ef68b9 | 0x2bd7e1f743c280931a50350d263bdf8b6ede97714a1603dc7f452689148743be |
+    | 113 | WXlAfNbXc  | 
+    | 113 | WyCtClEb   | 
+    | 113 | WyEbCtCl   | 
+    | 113 | WySrCtClXj | 
+    | 113 | Xc₂S₂      | 
+    | 113 | XkXc₂      | 
+    | 113 | XlXcAwDx   | 
+    | 114 | Aw-114     | 
+    | 114 | AwAf₂EJu   | 
+    | 114 | Cv-114     | 
+    | 114 | DMNb       | 
+    | 114 | DW₂NbPq    | 
+    | 114 | DxMAwS     | 
+    | 114 | DxS₂PmXc   | 
+    | 114 | Dx₃AfNb    | 
+    | 114 | FjSAwJu    | 
+    | 114 | FjSDxJuZq  | 
+    | 114 | Fj₂AfXc    | 
+    | 114 | Fj₂JuAfZq  | 
+    | 114 | Fj₂M₂      | 
+    | 114 | FwXcAwXl   | 
+    | 114 | I-114      | 
+    | 114 | Ji-114     | 
+    | 114 | Kn-114     | 
+    | 114 | MAwXcPq    | 
+    | 114 | MSNbJuAf   | |   116791*|alpha   |   Ju-3∙ +   Xl-9⁺ +   M-22∙ +   S-26ª +  Nb-54ª +      111 => ⬇ MSNbJuAf(M-22,Nb-54,S-26>Af-9,Ju-3) 114                                          +      62.31 |      48.69 | chemical, decay              | 0x5c791e85d04bcb531ed85114d74c70ab36b0e1e4 | 0xbab79d801b85e38d219743e032a95e1cd71af6420e2c57a8acff29e4f43c2b9c | 0xa08d0ffd76b9ba8eb0e29b5dc82496b56637292cc3534da69727137eb2a269dd |
+    | 114 | MWNbXc     | 
+    | 114 | MXc₃       | 
+    | 114 | NbMSPq     | 
+    | 114 | PqXc₃      | 
+    | 114 | RoU        | |   202765 |bohr    |   P-24⁻ + Ek-112ª                               +     5000 => ⬆ P-22 + RoU(Ro-24,U-90>) 114                                                          +    4661.40 |     338.60 | metallic, decay              | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xcc0847d8b78c515fb59ea6b27fefea14a8fb01e2ceef7db9f06afc139377a287 | 0xad1bea21b6e8c72f7327bdc9ee4fa6ffbe53905d2611a3eae9312ef4065e17d4 |
+    | 114 | SFjWDxXc   | 
+    | 114 | SPmXcFj    | 
+    | 114 | SXcPmFj    | 
+    | 114 | SZqJuNb    | 
+    | 114 | UqGy       | |    48145*|bohr    |  Nd-30ª +  Uq-47⁻ +  Pb-48∙ +  Pb-48∙ +  Gy-67ª +      150 =>   Nd-30 + Pb-48 + Pb-48 + UqGy(Gy-67,Uq-47>) 114                                       +      44.10 |     105.90 | metallic                     | 0xc12c623bff6e297d4f9d3ed0b4d980e0a4a35980 | 0xe5b57cfac410b32a19f5494b4800d5faae0b20aa540bbc8adb85059479033555 | 0x6b09e4f8bfd11800a1fc2aa32cadb40d34bdfd7b96fc4ad397036ed7d7f6e05a |
+    | 114 | WAwDM      | 
+    | 114 | WyCtEbCl   | 
+    | 114 | WyEbCtCl   | 
+    | 114 | Xc₂PmDx₂   | 
+    | 114 | ZqAwXc     | 
+    | 115 | AfSXcAw    | 
+    | 115 | AfXcDPmM   | 
+    | 115 | Aw-115     | 
+    | 115 | DFjXcXl    | 
+    | 115 | DSFjDx     | 
+    | 115 | DxMAwS     | 
+    | 115 | Dx₂XcAw    | 
+    | 115 | D₂DxS      | 
+    | 115 | FjFwDxD    | 
+    | 115 | FjSDDx     | 
+    | 115 | FjSZqWDx   | 
+    | 115 | FwNbJuFj   | 
+    | 115 | Fw₅        | |    26210 |alpha   |  Fw-23∙ +  Fw-23∙ +  Fw-23∙ +  Fw-23∙ +  Fw-23∙ +      100 =>   Fw₅(Fw-23>Fw-23,Fw-23,Fw-23,Fw-23) 115                                               +      35.92 |      64.08 | chemical                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0c11711d8ddc6ff776bd8bcdcf877de283b1cb5882e20f3fcc8a6d4a5d404a98 | 0xd5bbaf3493f05180bd4bd570daad6d090294cca0d7e0e582c54bffab07ae6b25 |
+    | 115 | Ha-115     | 
+    | 115 | I-115      | 
+    | 115 | JuSDx₂Nb   | 
+    | 115 | Ju₂XcNbFw  | 
+    | 115 | Kn-115     | 
+    | 115 | MWNbXc     | 
+    | 115 | MXcAwPq    | 
+    | 115 | MXc₃       | 
+    | 115 | M₃WAw      | 
+    | 115 | NbXlPqFj   | 
+    | 115 | SFjWDxXc   | 
+    | 115 | SZqXcM     | 
+    | 115 | UqSrGy     | 
+    | 115 | XcMDxFw₂   | 
+    | 115 | XcSAwAf    | 
+    | 115 | XlXc₂M₂    | 
+    | 115 | YpNb       | |    68746*|alpha   |  Nb-54ª +  Yp-61⁻ +  Jx-60ª                     +      100 =>   Jx-60 + YpNb(Yp-61>Nb-54) 115                                                        +      53.42 |      46.58 | chemical                     | 0x56bde1e5efc80b1e2b958f2d311f4176945ae77f | 0x5ebf99de3f14966620e8e451c667e5b70efb0bebfdd95831d8b0d6a05a191ba8 | 0xa489267f71aff2a5e6e2dc86b06cc903ff2f8a8c376dd64fb46a1b3448b3b938 |
+    | 116 | Af₂Aw₂     | 
+    | 116 | Af₂XcAwDx  | 
+    | 116 | AwPqFjDx   | 
+    | 116 | DxMAwS     | 
+    | 116 | Dx₃XcFj    | 
+    | 116 | Fj₂ZqXl    | 
+    | 116 | FwAwXlXc   | 
+    | 116 | FwSNbPq    | 
+    | 116 | Fw₅        | |    26218*|alpha   |  Fw-23∙ +  Fw-23∙ +  Fw-23∙ +  Fw-23∙ +  Fw-24⁻ +     1000 =>   Fw₅(Fw-23>Fw-23,Fw-23,Fw-23,Fw-24) 116                                               +     890.40 |     109.60 | chemical                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x2f4d6084290e8e827858b3d25814b704dfd3b94ec7e04298449bce372d3bd09f | 0xc670bb43bd886c4edbd676f213282d4e1607ebc7af151ef9d7adebf67716ef65 |
+    | 116 | Ha-116     | 
+    | 116 | Jb-116     | 
+    | 116 | Kn-116     | 
+    | 116 | MAwFw₂     | 
+    | 116 | MPqXcAw    | 
+    | 116 | MtLx       | |    66255*|bohr    |  Mt-34⁺ +  Lx-82ª                               +      390 =>   MtLx(Lx-82,Mt-34>) 116                                                               +     290.47 |      99.53 | metallic                     | 0xac6fa09b020da199f6e2c4eb86ecde40a9d7febd | 0xd3b01a3a92d0b98ed7283f48ed2c575651faf555da65d6cb73a5ec756fb63c92 | 0x70cdac6d52c0d95ccbb25d2c60e3d404a256c6a1cef4d30e723084ac307ff065 |
+    | 116 | Mt₂Wy      | 
+    | 116 | M₃Nb       | 
+    | 116 | NbDxPqXc   | 
+    | 116 | NbJuXc₂    | 
+    | 116 | NbMXcAf    | 
+    | 116 | NbPmE      | 
+    | 116 | Nd₂MtRo    | 
+    | 116 | PmXcSFj    | 
+    | 116 | PqXc₂DxFw  | 
+    | 116 | Ro₂Kk      | 
+    | 116 | SFjWDxXc   | 
+    | 116 | UqSrGy     | 
+    | 116 | Xc₂AwW     | 
+    | 116 | XlNbAwJu   | 
+    | 116 | XlS₂Nb     | 
+    | 117 | AfFjDxNb   | 
+    | 117 | AwFjXc     | 
+    | 117 | ClUq₂      | 
+    | 117 | DMAwAf     | 
+    | 117 | DxJuAw₂    | 
+    | 117 | D₂SJuDx    | 
+    | 117 | FjAwXc     | 
+    | 117 | FjXcAw     | 
+    | 117 | Fj₂AfXc    | 
+    | 117 | FwAwXcXl   | 
+    | 117 | Go-117     | 
+    | 117 | Ha-117     | 
+    | 117 | Ju₂AfNb₂   | 
+    | 117 | MNbXcAf    | 
+    | 117 | MXcPqAw    | 
+    | 117 | MXc₃       | 
+    | 117 | MXlNbXc    | 
+    | 117 | MXlXcNb    | 
+    | 117 | MtRoNd₂    | 
+    | 117 | MtSrLNd    | 
+    | 117 | NMt        | |    80637*|bohr    |  Mt-34⁺ + Vt-105ª                               +     5000 =>   P-22 + NMt(Mt-34,N-83>) 117                                                          +    4665.09 |     334.91 | metallic, decay              | 0xeadaa45fc7e8912d8aabf415205830f6b567610b | 0x44a4dd1efd3da77f9448e2389161be3b375e09e4151c44bed78fe33970613008 | 0x5ef4d15e9e85435591aeae96b7ba1192311ae4da805ee90bad589d16a49ea8f3 |
+    | 117 | NbHb       | |   109746 |alpha   |  Nb-54ª +  Hb-63ª                               +     2500 =>   NbHb(Hb-63,Nb-54>) 117                                                               +    2308.47 |     191.53 | metallic                     | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x2f3cf22934313d0f6c01852cec6a7943d8c5b639a6ca366eb476c2bcb851e400 | 0x1ac3de20973cfad4e39f67a004a42418cc0aeeceda65a291f4637b676116bf4c |
+    | 117 | NbMC       | 
+    | 117 | OMZqSW     | 
+    | 117 | O₃         | 
+    | 117 | PqFjAwDx   | 
+    | 117 | PqFjDxAw   | 
+    | 117 | PqXc₃      | 
+    | 117 | RoSe       | |   190121 |bohr    |   P-24⁻ + Aw-115ª                               +     5000 => ⬆ P-22 + RoSe(Ro-24,Se-93>) 117                                                        +    4651.51 |     348.49 | metallic, decay              | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x296b534733fc49f3b6b2996ef711cbe3bf6b27be73dc99ec2b3aaec1af5d84cc | 0x290b399fb1c6544258efc9cadacdf89c0e9612be7c278d0c285344e0f0e12d06 |
+    | 117 | Ro₂EiLT    | 
+    | 117 | SFjDDx     | 
+    | 117 | S₂Xc₂      | 
+    | 117 | UqKk       | |    51288*|bohr    |   T-16∙ +  Xj-17⁺ +  Mt-35∙ +  Uq-47⁻ +  Kk-70ª +      110 =>   T-16 + Xj-17 + Mt-35 + UqKk(Kk-70,Uq-47>) 117                                        +       0.71 |     109.29 | metallic                     | 0x19d1093d5f41457e4d1829e5663ca59a4891792b | 0x1203148d7432a2735d2bbc44e7bd025b19f78401c9d4b9f81a463d642bc80f44 | 0x2270a0b8dc7c14e99fb2885edb8a93bc246f63286a56e6581433c0370b54cd26 |
+    | 117 | UqSrGy     | 
+    | 117 | XcAf₂PqNb  | 
+    | 117 | XcFwAwPq   | 
+    | 117 | Xc₂AwW     | 
+    | 117 | Xc₂FwDxXl  | 
+    | 117 | Xc₂WAw     | 
+    | 117 | Xc₃Fw      | 
+    | 117 | Xc₃JuM     | 
+    | 118 | AfDAwFw    | 
+    | 118 | Ai₂        | |   146570*|bohr    |   F-59⁺ +   F-59⁺                               +     7000 => ⬇ Ai₂(Ai-59,Ai-59>) 118                                                                +    6554.14 |     445.86 | metallic, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x289ff795a5951429b678619b3be3208d986dc293293ed901425ab15c81ce92bb | 0x99b729012112019049583b333db4a19654fd52b00f7156a5deba084f176cd434 |
+    | 118 | AwFjXc     | 
+    | 118 | AwXcFj     | 
+    | 118 | DJuXcAw    | 
+    | 118 | DJuXc₂Dx   | 
+    | 118 | DxFjSXcAf  | 
+    | 118 | Dx₃Xc₂     | 
+    | 118 | Dx₄Nb      | 
+    | 118 | EiRo₂LT    | 
+    | 118 | FjAwXc     | 
+    | 118 | FjXcAw     | 
+    | 118 | Fj₂M₂      | 
+    | 118 | Go-118     | 
+    | 118 | HD         | |    68587*|alpha   |  Fw-25⁻ +   D-37⁻ +   H-81⁺                     +      100 => ⬆ Pt-25 + HD(D-37,H-81>)                                                           +      20.41 |      79.59 | metallic, decay              | 0x56bde1e5efc80b1e2b958f2d311f4176945ae77f | 0x3cb1176d6de6df8f09400c238beea64f7683f1779964c14b7afdf6495b4a7355 | 0x047fd508500743f3c5fe68889a11800bc7f0f81bde5e57ff90975ba00f32f08f | 
+    | 118 | JuDxAw₂    | 
+    | 118 | JuXc₃M     | 
+    | 118 | LGjNdYu    | 
+    | 118 | LNdGjYu    | 
+    | 118 | MFjAwXlJu  | 
+    | 118 | MFw₂Aw     | 
+    | 118 | MXc₃       | 
+    | 118 | Mt₂SrPb    | 
+    | 118 | Mt₂Wy      | 
+    | 118 | M₃Nb       | 
+    | 118 | Nb₂Xl      | 
+    | 118 | Ro₂Kk      | 
+    | 118 | Ro₅        | |    58380*|bohr    |  Ro-23ª +  Ro-23ª +  Ro-24ª +  Ro-24ª +  Ro-24ª +      150 =>   Ro₅(Ro-23,Ro-23,Ro-24,Ro-24,Ro-24>) 118                                              +      37.69 |     112.31 | metallic                     | 0x2bd60e54e8eab5a0634643f0036eeb4345d0670b | 0xe1fca6cf528a07c3b4e83e39b587d370ed94548308ec4d7befcab433d8b02e42 | 0x4611861165e54347425aa64cb5a42239ee1488b7aaae076c4c0ce79315938f48 |
+    | 118 | S₂FjPmXl   | 
+    | 118 | UqKk       | |    38767*|bohr    |  Eb-20∙ +  Eb-20∙ +  Uq-47⁻ +  Kk-71ª +  Kk-71ª +      150 =>   Eb-20 + Eb-20 + Kk-71 + UqKk(Kk-71,Uq-47>) 118                                       +      37.83 |     112.17 | metallic                     | 0x2ef2564b0014cdcfec339214e5c24b4990f28d54 | 0x87e8c11ac3f29fc9b56dc0a886c968abc143ca55e63b8914e582e762739f4731 | 0xcc2e29a5b06682653cc6af05dee959d7c0e66acb41e90c9ee4bc02a6fee1dca6 |
+    | 118 | UqSrKk     | 
+    | 118 | XcMPmFjXl  | 
+    | 118 | XcWAfNbM   | 
+    | 118 | Xc₂AwW     | 
+    | 118 | Xc₂Fw₂     | 
+    | 118 | Xc₃Fw      | 
+    | 119 | AfDDxJuNb  | 
+    | 119 | AwFjXc     | 
+    | 119 | AwXcFj     | 
+    | 119 | ClRoKk     | 
+    | 119 | DFjXlXc    | 
+    | 119 | DS₂Dx₂     | 
+    | 119 | DxNbPqXc   | 
+    | 119 | EiWyMtNd   | 
+    | 119 | Ek-119     | 
+    | 119 | FjAwXc     | 
+    | 119 | FjXcAw     | 
+    | 119 | Fj₂DxMAf   | 
+    | 119 | Fj₂M₂      | 
+    | 119 | FwAf₂AwXc  | 
+    | 119 | KkRoXjDz   | 
+    | 119 | LNdRoCt    | 
+    | 119 | MXc₃       | 
+    | 119 | MXlXcNb    | 
+    | 119 | Mt₂SrPb    | 
+    | 119 | Mt₂Wy      | 
+    | 119 | M₂Fj₂Ju    | 
+    | 119 | NbJuXc₂    | 
+    | 119 | Nb₂Xl      | 
+    | 119 | OSNb       | 
+    | 119 | PmAw₂      | 
+    | 119 | RoYuLT     | 
+    | 119 | SrLYuDzNd  | 
+    | 119 | UqSr₂Kk    | 
+    | 119 | Vt-119     | 
+    | 119 | WyEiMtNd   | 
+    | 119 | X-119      | 
+    | 119 | YvRoTDz    | 
+    | 120 | AsPbMtNd   | 
+    | 120 | ClRoKk     | 
+    | 120 | ClRo₄      | 
+    | 120 | Cl₂EiViL   | 
+    | 120 | C₃         | 
+    | 120 | DXc₂Pm     | 
+    | 120 | DxXcPmAw   | 
+    | 120 | Dx₂ZqNb    | 
+    | 120 | Dx₄Nb      | 
+    | 120 | D₂XcPq     | 
+    | 120 | D₃Af       | 
+    | 120 | Ek-120     | 
+    | 120 | FjPmJuAwPq | 
+    | 120 | FjSXcM     | 
+    | 120 | KkRoDzXj   | 
+    | 120 | KkTEiViXj  | 
+    | 120 | LRoNdCt    | 
+    | 120 | Mt₂NdEb    | 
+    | 120 | Mt₂Wy      | 
+    | 120 | M₃Nb       | 
+    | 120 | NbS₂Dx     | 
+    | 120 | Nd₂ClTXj   | 
+    | 120 | O₃         | 
+    | 120 | RoKkDzXj   | 
+    | 120 | RoYvDzT    | 
+    | 120 | RoYvTDz    | 
+    | 120 | RoYvXjAs   | 
+    | 120 | UqSrKk     | 
+    | 120 | Vt-120     | 
+    | 120 | Xc₂AwW     | 
+    | 120 | Xc₂DPm     | 
+    | 120 | Xc₂Pm₂Fw   | 
+    | 120 | Xc₂S₂      | 
+    | 120 | Xc₃Fw      | 
+    | 120 | Xc₄        | |    67473*|alpha   |  Xc-30∙ +  Xc-30∙ +  Xc-30∙ +  Xc-30∙           +       59 =>   Xc₄(Xc-30>Xc-30,Xc-30,Xc-30) 120                                                     +       0.19 |      58.81 | chemical                     | 0x7d8ff8e3ff379db3a30d8704143e2de2bfee034c | 0x13d150e665ed9ff1db1bf5634a1b058e591123fd4210dccf01e4935e49cba839 | 0xf9b14d60c918b3624c112c98176a923cbeacbaf69b7b96e4f00f9dae6783b076 |
+    | 120 | XkAt       | |   187012*|alpha   |  Fw-25⁻ +  Xc-31∙ +  Xk-56⁻ +  Jx-63⁻ +  At-64ª +     1540 => ⬆ Pt-25 + Xc-31 + Jx-63 + XkAt(At-64,Xk-56>) 120                                       +    1387.55 |     152.45 | metallic, decay              | 0xd66857a27b9aa517e9e54df01f50b5b10c1df4a1 | 0x185d48849472be1590e126800e435f2c17a0c13a0e8f16fb86cdbc7373484167 | 0xff8db8e851f6e095366f50961020a2ce16b648ebbcda607988f8dd788938d7d4 |
+    | 120 | XlDxPmFjD  | 
+    | 120 | YvGjEbXj   | 
+    | 120 | YvRoTDz    | 
+    | 121 | AsYuKkSrCt | 
+    | 121 | AwFjXc     | 
+    | 121 | AwXcFj     | 
+    | 121 | ClRoKk     | 
+    | 121 | ClRoWyAsT  | 
+    | 121 | ClUq₂      | 
+    | 121 | CtYvSrT₂   | 
+    | 121 | DzLRoAsNd  | 
+    | 121 | Ek-121     | 
+    | 121 | FjAwXc     | 
+    | 121 | FjMDxAfD   | 
+    | 121 | FjXcAw     | 
+    | 121 | Fj₂Af₂Zq   | 
+    | 121 | Ji-121     | 
+    | 121 | KkEb₂Gj    | 
+    | 121 | KkRoTGj    | 
+    | 121 | LNdRoCt    | 
+    | 121 | MXc₂FwDx   | 
+    | 121 | MtWyDzSrCl | 
+    | 121 | NdMtYuCt₂  | 
+    | 121 | NdTGjViL   | 
+    | 121 | RoKkGjT    | 
+    | 121 | RoSrYvViGj | 
+    | 121 | RoYuYv     | 
+    | 121 | RoYvDzT    | 
+    | 121 | SrWyCtNdRo | 
+    | 121 | SrYvXj₂Gj  | 
+    | 121 | TRoPbXjCt  | 
+    | 121 | UqClPb     | 
+    | 121 | UqPbCl     | 
+    | 121 | XlFj₂Pm₂   | 
+    | 121 | YvCtSrT₂   | 
+    | 121 | YvEbTVi    | 
+    | 121 | YvEbViT    | 
+    | 121 | YvEb₂Dz    | 
+    | 121 | YvGjXjEb   | 
+    | 121 | YvNdEiAsDz | 
+    | 121 | YvRoDzT    | 
+    | 121 | YvSrT₂Ct   | 
+    | 121 | YvTEbVi    | 
+    | 121 | YvXjEbGj   | 
+    | 122 | AwXlSFj    | 
+    | 122 | ClRoKk     | 
+    | 122 | ClSrRoKk   | 
+    | 122 | Dx₂AfSNb   | 
+    | 122 | Dx₃D₂      | 
+    | 122 | Dx₄Nb      | 
+    | 122 | JuDXcAw    | 
+    | 122 | KkGjEb₂    | 
+    | 122 | KkRoSrGjCt | 
+    | 122 | KkSrEbGjXj | 
+    | 122 | KkTRoEiAs  | 
+    | 122 | MNbPqD     | 
+    | 122 | MtSrUqGjYu | 
+    | 122 | Nb₂Af₂     | 
+    | 122 | NdEiYvAsDz | 
+    | 122 | RoKkTGj    | 
+    | 122 | RoSrYuKk   | 
+    | 122 | RoSr₂ClKk  | 
+    | 122 | RoYuYv     | 
+    | 122 | RoYvDzT    | 
+    | 122 | RoYvXjAs   | 
+    | 122 | SDx₂Xc₂    | 
+    | 122 | SPmAwFwW   | 
+    | 122 | SrYuRoKk   | 
+    | 122 | UqClPb     | 
+    | 122 | ViEb₂WyXj  | 
+    | 122 | XcSFw₂M    | 
+    | 122 | Xc₂AwW     | 
+    | 122 | Xc₃Fw      | 
+    | 122 | YuDzEbCtWy | 
+    | 122 | YuSrRoKk   | 
+    | 122 | YvEbXjGj   | 
+    | 122 | YvEb₂Dz    | 
+    | 122 | YvGjXjEb   | 
+    | 123 | AfXcPmNbXl | 
+    | 123 | AwXlSFj    | 
+    | 123 | ClLEbXjAs  | 
+    | 123 | ClMtNdCtT  | 
+    | 123 | ClRoKk     | 
+    | 123 | ClYuTWy    | 
+    | 123 | Cl₂Kk      | 
+    | 123 | Cl₂Sr₂Gy   | 
+    | 123 | Cl₂UqRo    | 
+    | 123 | Cl₂Yv      | 
+    | 123 | DZqXcM     | 
+    | 123 | Dx₃D₂      | 
+    | 123 | Eh-123     | 
+    | 123 | FjMWXcS    | 
+    | 123 | FjPm₂S₂    | 
+    | 123 | FjSXlXcDx  | 
+    | 123 | FwFjSD     | 
+    | 123 | FwXc₃W     | 
+    | 123 | Fw₂FjZqAf  | 
+    | 123 | GjClTPbEb  | 
+    | 123 | GjWyClEiNd | 
+    | 123 | Ju₂AfNb₂   | 
+    | 123 | KkDzAsEbT  | 
+    | 123 | KkEb₂Gj    | 
+    | 123 | KkGjEb₂    | 
+    | 123 | KkRoGjT    | 
+    | 123 | KkSrEbGjXj | 
+    | 123 | NbAfXc₂    | 
+    | 123 | NbDxFwXc   | 
+    | 123 | NdEiYvXj   | 
+    | 123 | PmDx₂XcD   | 
+    | 123 | PqAwXc₂    | 
+    | 123 | RoGjEbPbXj | 
+    | 123 | RoKkEiTAs  | 
+    | 123 | RoYuYv     | 
+    | 123 | SrRo₂Kk    | 
+    | 123 | SrYvTEbGj  | 
+    | 123 | UqNdAsEb₂  | 
+    | 123 | ViRoEbCtWy | 
+    | 123 | WyClEb₂As  | 
+    | 123 | WyNdEbEiXj | 
+    | 123 | WyTYuCl    | 
+    | 123 | Xc₄        | |     6157*|alpha   |  Xc-30∙ +  Xc-31∙ +  Xc-31∙ +  Xc-31∙ +  Xc-31∙ +      132 =>   Xc-31 + Xc₄(Xc-31>Xc-30,Xc-31,Xc-31) 123                                             +      68.14 |      63.86 | chemical                     | 0x49d1978dce1a788a0e33ac59c004e5fee4093e95 | 0x0f218ff2d01a85db67e8f5c15051b13ce21ec3707e189e02ccc8017f96e95f41 | 0x419b746f331411f88331cc030bb21e00b0ef72a4e14b6fc531da4d4a5fff2707 |
+    | 123 | XlNbMFj    | 
+    | 123 | YvEbGjXj   | 
+    | 123 | YvEb₂Dz    | 
+    | 123 | YvTEbVi    | 
+    | 123 | ZqDMXc     | 
+    | 124 | AfDxAw₂    | 
+    | 124 | Af₂Nb₂     | 
+    | 124 | AsNdKkXj   | 
+    | 124 | Aw-124     | 
+    | 124 | AwPqSD     | 
+    | 124 | AwXlSFj    | 
+    | 124 | ClRoSrYv   | 
+    | 124 | ClViXjWyCt | 
+    | 124 | Cl₂Kk      | 
+    | 124 | Cl₂UqRo    | 
+    | 124 | DFjXcJuDx  | 
+    | 124 | DxFjXcPm₂  | 
+    | 124 | DzMtWyEiRo | 
+    | 124 | D₂S₂       | 
+    | 124 | Eh-124     | 
+    | 124 | FjMXcAfFw  | 
+    | 124 | FjNbXcJu   | 
+    | 124 | GjClEbPbT  | 
+    | 124 | Hb₂        | 
+    | 124 | KkGjEb₂    | 
+    | 124 | MFwXcS₂    | 
+    | 124 | NbMPqD     | 
+    | 124 | NbPmMXc    | 
+    | 124 | PqNbMD     | 
+    | 124 | PqZqNbFw   | 
+    | 124 | RoVl       | |   114020*|bohr    |   P-25⁻ + Ji-121ª                               +     8000 => ⬆ P-22 + RoVl(Ro-25,Vl-99>) 124                                                        +    7499.29 |     500.71 | metallic, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xb4f07ecb806b916846c48ccca093657d2797e33cd25a8060cc22986b8d899e78 | 0x50026c57898b240f2256ee8e89b4566134ddf3f31964757e32fe17955e612d5c |
+    | 124 | RoWyTXjCt  | 
+    | 124 | SrClRoYv   | 
+    | 124 | SrCl₂Kk    | 
+    | 124 | SrEiNdYvT  | 
+    | 124 | SrRoYuKk   | 
+    | 124 | Sr₂NdEbKk  | 
+    | 124 | WL         | |   104277*|bohr    |  Ux-48⁺ +  Lx-76⁺                               +    10000 => ⬇ WL(W-76>L-48)                                                                    +    9451.42 |     548.58 | chemical, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x6ad31a992ab395462d5635d1d3f2c76c0b35013ddd0d8cc6d3b18fd62cefe358 | 0x0c41e3a77a2c9280ae68c260c650f2514fd900c146988bd813eb62e639266c1c | 
+    | 124 | Xc₂Fw₂Dx   | 
+    | 124 | Xc₄        | |    67618 |alpha   |  Xc-31∙ +  Xc-31∙ +  Xc-31∙ +  Xc-31∙           +       61 =>   Xc₄(Xc-31>Xc-31,Xc-31,Xc-31) 124                                                     +       0.23 |      60.77 | chemical                     | 0x7d8ff8e3ff379db3a30d8704143e2de2bfee034c | 0x4b0d9069ccd2f069c91a88f846d45defc89e6f11e2a594ef966cdfa532f151c7 | 0x75a299ad8fe77aba90446ad8cfcd09cefa4c8cd81e553f040bf62749b4e43406 |
+    | 124 | YuRoYv     | 
+    | 124 | YvEb₂Ei₂   | 
+    | 125 | AfFw₂XcD   | 
+    | 125 | Af₂Nb₂     | 
+    | 125 | AsNdKkXj   | 
+    | 125 | AsNdSrTKk  | 
+    | 125 | ClRoSrYv   | 
+    | 125 | ClSrRoKk   | 
+    | 125 | Cl₂Kk      | 
+    | 125 | Cl₂UqRo    | 
+    | 125 | Cl₂Yv      | 
+    | 125 | Cl₃Ro₂     | 
+    | 125 | DDxPmNb    | 
+    | 125 | D₂Dx₃      | 
+    | 125 | EiDzNdGyCt | 
+    | 125 | EiYuYvEb   | 
+    | 125 | FjAfSNb    | 
+    | 125 | FjSFwD     | 
+    | 125 | FwNbMS     | 
+    | 125 | GjNdKkCt   | 
+    | 125 | HA         | |    29212*|alpha   |   S-28∙ +   O-41∙ +   C-42∙ +   A-45∙ +   H-80∙ +     1000 =>   OSC(O-41,S-28>C-42) + HA(H-80>A-45)                                              +     860.96 |     139.04 | chemical                     | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xd5905eac09eab9ba36a43ce885b8ebb264aa3a3eb7dc124b329e7a5bb4b00ab1 | 0xb4913d90a109ba2631d51f5dc8e4ef53ec9e2bb1c45bee61d6496c79e38b35b0 | 
+    | 125 | JuXcSAwDx  | 
+    | 125 | NbSDAf     | 
+    | 125 | NdAsKkXj   | 
+    | 125 | NdAsSrTKk  | 
+    | 125 | NdEiXjYv   | 
+    | 125 | NdSrAsKkT  | 
+    | 125 | NdSrEiYvT  | 
+    | 125 | Pm₂AwFj    | 
+    | 125 | PqXc₂Aw    | 
+    | 125 | RoClSrYv   | 
+    | 125 | SXc₂Dx₂    | 
+    | 125 | SrAsNdKkT  | 
+    | 125 | SrCl₂Kk    | 
+    | 125 | SrNdDzKkCt | 
+    | 125 | S₂Fj₂Ju    | 
+    | 125 | XcFw₂AfD   | 
+    | 125 | XcNbJu₂Fj  | 
+    | 125 | XcPq₂DxAw  | 
+    | 125 | Xc₃AfM     | 
+    | 125 | Xc₄        | |    45673*|alpha   |  Zq-32⁻ +  Zq-32⁻ +  Zq-32⁻ +  Xc-30∙ +  Xc-31∙ +      100 => ⬆ Zq-32 + Xc₄(Xc-31>Xc-30,Xc-32,Xc-32) 125                                             +      36.81 |      63.19 | chemical, decay              | 0x3465570083a435ba8ffa4a2d4ff90783b420c232 | 0x17df2ec4bcf46370dd87819097ebe40e9e2b8fcc9be2c302d1d403dc129173ee | 0xd8a19c886d6d2968d5d4fb2e2f890cd07bd5e238236ef1ced5a7f8a885b1d308 |
+    | 125 | Ys-125     | 
+    | 125 | YuRoYv     | 
+    | 126 | Af₂Nb₂     | 
+    | 126 | AsYuKkEb   | 
+    | 126 | Cl₂SrKk    | 
+    | 126 | Cl₂Yv      | 
+    | 126 | DDxPmNb    | 
+    | 126 | DXcFwDx₂   | 
+    | 126 | DxDPmNb    | 
+    | 126 | FjDAwJu    | 
+    | 126 | FjMSXcPq   | 
+    | 126 | FjZqSXc    | 
+    | 126 | GkXk       | |    86010*|alpha   |  Pt-26∙ +  Xc-30∙ +   D-37⁻ +  Xk-51ª +  Gk-75∙ +      200 =>   Pt-26 + DXc(D-37>Xc-30) 67 + GkXk(Gk-75,Xk-51>) 126                                     +      74.28 |     125.72 | metallic, chemical           | 0x0b4f385f9bb9c6d773a1c5a8a1a00fca1b986161 | 0xb4be0d72eb4c2fd14d886fd5e075ff99eb193abc566c01d67476cbeb59abb4c2 | 0xb62290c4c2fec5b56fb927e281c69c0643ba34508c638251dda485e061d60afa |
+    | 126 | NdGjCtKk   | 
+    | 126 | PqNbMD     | 
+    | 126 | PqXc₂Aw    | 
+    | 126 | Pq₂Aw₂     | 
+    | 126 | RoYuYv     | 
+    | 126 | SDAfJuNb   | 
+    | 126 | SrGyLDz    | 
+    | 126 | S₂Fj₂      | 
+    | 126 | UTEb       | 
+    | 126 | WXcAwFwPm  | 
+    | 126 | WyNdEbEiXj | 
+    | 126 | XcDxDPmM   | 
+    | 126 | XcDxWAwM   | 
+    | 126 | Xc₄        | |    64927*|alpha   |  Zz-14ª +  Zq-32⁻ +  Zq-32⁻ +  Xc-31∙ +  Xc-31∙ +      160 => ⬆ Zz-14 + Xc₄(Xc-32>Xc-31,Xc-31,Xc-32) 126                                             +      93.35 |      66.65 | chemical, decay              | 0x3aeedcd329e91e352d6c3d42c2b90d4e33a9e7d5 | 0xdeb47d6e09e3c1984223923290e58a5309fa40b0183435b0c80e4562c0a281f6 | 0x2af5e7e23b9bbf11282e81ada2c9acc55a99973367daff820a0636bbaab05c41 |
+    | 126 | Xl₂AwXcM   | 
+    | 126 | Xl₂NbAw    | 
+    | 126 | YuAsEbKk   | 
+    | 127 | AsYuEbKk   | 
+    | 127 | AwSXcPm    | 
+    | 127 | CZqIc      | 
+    | 127 | Dx₃SNb     | 
+    | 127 | FjDAwJu    | 
+    | 127 | FjPmXc₂Xl  | 
+    | 127 | FjXcPmD    | 
+    | 127 | GjYvEiDzMt | 
+    | 127 | GyNs       | |    65710*|bohr    |  Xj-18∙ +  Wy-50∙ +  Ns-60⁺ +  Gy-67ª +  Yv-72ª +      890 =>   Xj-18 + Wy-50 + Yv-72 + GyNs(Gy-67,Ns-60>) 127                                       +     746.38 |     143.62 | metallic                     | 0x0fb75c54038130a4bfb753c3aaaa21266625cc98 | 0x751f0166d6bf6e3530f47783f5a76c7957c7f5988c1bf804d401c57263ce1275 | 0xcb157f573fbd1477391b91844061cb16bdbbb599fb2ceaace40a320c5e71fff5 |
+    | 127 | IcAwM      | 
+    | 127 | MAwFwXc    | 
+    | 127 | MXcAwFw    | 
+    | 127 | Nb₂XlAf    | 
+    | 127 | PqXlAwNb   | 
+    | 127 | SrGyDzL    | 
+    | 127 | WDxNb₂     | 
+    | 127 | XcDAwAf    | 
+    | 127 | Xc₂M₃      | 
+    | 127 | Xc₃Fw      | 
+    | 127 | Xc₄        | |     3462*|alpha   |  Xc-31∙ +  Xc-31∙ +  Xc-31∙ +  Xc-34⁻ +  Xc-34⁻ +       90 =>   Xc-34 + Xc₄(Xc-34>Xc-31,Xc-31,Xc-31) 127                                             +      26.38 |      63.62 | chemical                     | 0x13c942e3f8be4faf966ef03e6038b33d000db22f | 0x93a10153b2ad6466da7522218bb9d3a82b036ad0da3ed21ad324e09be8c08ed2 | 0x57e7062be70efe708a8f952b21a10bd2a0f6e68ef9753d72a88d701f588154e3 |
+    | 127 | YuAsKkEb   | 
+    | 127 | YuSrRoKk   | 
+    | 128 | At₂        | 
+    | 128 | DMPmAw     | 
+    | 128 | DxPmXcNbJu | 
+    | 128 | Dx₂SXcFj   | 
+    | 128 | EiYvXjMt   | 
+    | 128 | FjNbD      | 
+    | 128 | FjSXcZq    | 
+    | 128 | Fj₂Nb      | 
+    | 128 | Fw₂ZqAw    | 
+    | 128 | GyClEbT    | 
+    | 128 | GyEbRoXj   | 
+    | 128 | GyGjL      | 
+    | 128 | GyLGj      | 
+    | 128 | GyMtTDzEi  | 
+    | 128 | GySrEiMtEb | 
+    | 128 | GyTClEb    | 
+    | 128 | KkEiEbMt   | 
+    | 128 | MAwFwXc    | 
+    | 128 | MPmAfDxHb  | 
+    | 128 | MtYuTL     | 
+    | 128 | Mt₂Nd₂     | 
+    | 128 | NbD₂       | 
+    | 128 | NdGj₂EiKk  | 
+    | 128 | NdRo₂Cl₂   | 
+    | 128 | PmFwNbZq   | 
+    | 128 | RoClLYu    | 
+    | 128 | RoJi       | |   113956 |bohr    |  Cl-24⁺ + Aw-104⁺                               +     7500 => ⬇ RoJi(Ji-104,Ro-24>) 128                                                              +    7021.58 |     478.42 | metallic, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x31d85dd793eb435d2b47b9d31468980a0aaa93d3e67c4fc9d57023612d7d17d0 | 0xa2764429dd1fcf80fd4dc82be861c80bdd6d948c4271ffb85da2f67d3f2784a1 |
+    | 128 | RoYuClL    | 
+    | 128 | SNbXcPq    | 
+    | 128 | W₂MAw₂     | 
+    | 128 | Xc₂M₃      | 
+    | 128 | XlPqAwNb   | 
+    | 128 | YuUqEb₂Dz  | 
+    | 129 | Cl₃Ro₂     | 
+    | 129 | Cl₄Ro      | 
+    | 129 | DWXlNbFw   | 
+    | 129 | DxFwMSO    | 
+    | 129 | Dx₂SXc₂    | 
+    | 129 | D₂FjDx     | 
+    | 129 | EiClNdXjL  | 
+    | 129 | EiGySrEbMt | 
+    | 129 | FjDXk      | 
+    | 129 | FjMSXcPq   | 
+    | 129 | FjZqXcS    | 
+    | 129 | GjGyCtMtSr | 
+    | 129 | GjLWyXj    | 
+    | 129 | GyEbRoXj   | 
+    | 129 | GyGjL      | 
+    | 129 | GySrNdCtT  | 
+    | 129 | KkClTXj    | 
+    | 129 | MXc₃Dx     | 
+    | 129 | M₂DxXcFj   | 
+    | 129 | NbXcJuPmM  | 
+    | 129 | NdYuLEb    | 
+    | 129 | PqXc₂Aw    | 
+    | 129 | RoYuClL    | 
+    | 129 | SDx₃Nb     | 
+    | 129 | SSrCl      | 
+    | 129 | SrSCl      | 
+    | 129 | UqNdYuCl   | 
+    | 129 | XcFwNbPm   | 
+    | 129 | XcWNbMDx   | 
+    | 129 | Xc₄        | |     4694*|alpha   |    W-4∙ +  Xc-30∙ +  Xc-31∙ +  Xc-34⁻ +  Xc-34⁻ +      100 =>   W-4 + Xc₄(Xc-34>Xc-30,Xc-31,Xc-34) 129                                               +      34.95 |      65.05 | chemical                     | 0xaaa9aca0d2aff48aab572de4d24088a80f2ae452 | 0xfd54e0ee1881f87b1f80809092780c105fdbb3d5dcc5549a13b71faa1646e50a | 0x3401fce5ddb027c3eb779db89db6aa0b8e8c3cd54df99e723ae7396dd9837521 |
+    | 129 | YvEiTSrMt  | 
+    | 130 | At₂        | 
+    | 130 | AwJuDxFjS  | 
+    | 130 | ClGyRoVi   | 
+    | 130 | Cl₅        | 
+    | 130 | DDxAwFw    | 
+    | 130 | DxAfS₂Nb   | 
+    | 130 | EiSrKkMtXj | 
+    | 130 | GyEbRoXj   | 
+    | 130 | GyEbTCl    | 
+    | 130 | GyMtGjXj   | 
+    | 130 | GyTClEb    | 
+    | 130 | KkClXjT    | 
+    | 130 | KkRo₂Vi    | 
+    | 130 | KkTRoEb    | 
+    | 130 | KkT₂Yu     | 
+    | 130 | L₂SrTVi    | 
+    | 130 | MPmAwSPq   | 
+    | 130 | MtGyDzEb   | 
+    | 130 | MtYuTL     | 
+    | 130 | Nd₃Eb₂     | 
+    | 130 | PqXc₂Aw    | 
+    | 130 | RoYuClL    | 
+    | 130 | Xc₂M₂Pm    | 
+    | 130 | Xc₂M₃      | 
+    | 130 | Xc₃Pm₂     | 
+    | 130 | Xc₄        | |    25235*|alpha   |  Xc-31∙ +  Xc-31∙ +  Xc-34⁻ +  Xc-34⁻           +      100 =>   Xc₄(Xc-34>Xc-31,Xc-31,Xc-34) 130                                                     +      34.48 |      65.52 | chemical                     | 0x13c942e3f8be4faf966ef03e6038b33d000db22f | 0xf297bb33cf071bd3203d49d52cd195db729cc8a4878a6c96dc4b31e60ee4e086 | 0x389d8de1be3dfaab0c92d26ddaf2b0dd9b898ba6d4828414e02718f784a81c73 |
+    | 130 | YuEbLNd    | 
+    | 130 | YvCtRoEb   | 
+    | 131 | DNbPmXl₂   | 
+    | 131 | Dx₂SD₂     | 
+    | 131 | EbGyAsDzYu | 
+    | 131 | EiClMt₂Nd  | 
+    | 131 | EiKkMtEb   | 
+    | 131 | EiMtRoLT   | 
+    | 131 | EiYuLUq    | 
+    | 131 | FjDZqFw    | 
+    | 131 | FwDxXcAwAf | 
+    | 131 | GjEbLPb    | 
+    | 131 | GjKkDzAsMt | 
+    | 131 | GjYvNdAsVi | 
+    | 131 | GyClEbT    | 
+    | 131 | GyMtSrAsEb | 
+    | 131 | KkClTXj    | 
+    | 131 | KkEbRoT    | 
+    | 131 | KkTEbRo    | 
+    | 131 | MFwAwAfS   | 
+    | 131 | MXcFwFjDx  | 
+    | 131 | Nb₂M       | 
+    | 131 | S₂M₂D      | 
+    | 131 | WyEbGjL    | 
+    | 131 | XcZqDxAw   | 
+    | 131 | Xc₄        | |    36688*|alpha   |    W-4∙ +  Zq-32⁻ +  Xc-31∙ +  Xc-34⁻ +  Xc-34⁻ +       90 => ⬆ W-4 + Xc₄(Xc-34>Xc-31,Xc-32,Xc-34) 131                                               +      24.52 |      65.48 | chemical, decay              | 0x32483c2ef44de655781ce54e822130ff9d34c0c8 | 0xc169612ed7f7b9f619487f23260e7c2a16747a572574d99fc9be4c74bac25189 | 0x26a2bfbc7566bda3dc599047e73f056462c8009eee3067715836fc2918c2b50a |
+    | 131 | YuEiUqL    | 
+    | 131 | YuMtYv     | 
+    | 131 | YvEbCtRo   | 
+    | 131 | YvMtTDz    | 
+    | 131 | YvNdGjXj   | 
+    | 131 | YvViTNd    | 
+    | 132 | AsKkMtViDz | 
+    | 132 | ClPbEiSrL  | 
+    | 132 | ClSrYuRoWy | 
+    | 132 | Cl₂YuWy    | 
+    | 132 | Dx₂Aw₂     | 
+    | 132 | Dx₃XcAw    | 
+    | 132 | GyCtSrNdT  | 
+    | 132 | GyEbViNd   | 
+    | 132 | GyMtDzEb   | 
+    | 132 | GyMtEbDz   | 
+    | 132 | KkClTXj    | 
+    | 132 | KkClXjT    | 
+    | 132 | KkEbRoT    | 
+    | 132 | KkEiMtEb   | 
+    | 132 | KkMtTGj    | 
+    | 132 | KkNdViXj   | 
+    | 132 | KkTEbRo    | 
+    | 132 | MNbAwAf    | 
+    | 132 | MNbXcS     | 
+    | 132 | MtCv       | |    66884*|bohr    |  Mt-34⁺ +  Vt-98⁺                               +    10000 => ⬇ MtCv(Cv-98,Mt-34>) 132                                                               +    9404.79 |     595.21 | metallic, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x0c5e1a7d950b0af7a2c88b3f98d3993f90ae5a2a9a8a02bb058bbc5b109ee5f5 | 0x4d33620731a7b9968c3de84a671753ebcee9cda61eaed214a15f6ab91f6425a8 |
+    | 132 | MtKkXjDz   | 
+    | 132 | MtYvDzT    | 
+    | 132 | MtYvGjCt   | 
+    | 132 | NbAf₂MFj   | 
+    | 132 | NbMXcS     | 
+    | 132 | PbSrRoAsL  | 
+    | 132 | PwAt       | |   191287*|alpha   |  Fw-25⁻ +  Zq-31⁻ +  Xc-34⁻ +  At-63ª +  Pw-69ª +     1700 => ⬆ Pt-25 + Zq-31 + Xc-34 + PwAt(At-63,Pw-69>) 132                                       +    1532.00 |     168.00 | metallic, decay              | 0x3a2c3312cf00ebd40cdd98539ac0160eafa1c129 | 0xe0d4f27db0058abdf19f571e02df77cd1e8095d6b539e208debef78cf8e6d245 | 0x861ad721330397ca4e4f9329dd9b215c800d473f4bef98d02908242997c273a6 |
+    | 132 | SrCtXjWyUq | 
+    | 132 | Sr₂Nd₂Kk   | 
+    | 132 | S₂AwXc     | 
+    | 132 | S₂DM₂      | 
+    | 132 | S₃Nb       | 
+    | 132 | UqClNdYu   | 
+    | 132 | UqYuNdCl   | 
+    | 132 | WyEbLGj    | 
+    | 132 | XcAwFw₂    | 
+    | 132 | XcFw₂Aw    | 
+    | 132 | Xc₄        | |     8511*|alpha   |  Zq-32⁻ +  Zq-32⁻ +  Xc-34⁻ +  Xc-34⁻           +      100 => ⬆ Xc₄(Xc-34>Xc-32,Xc-32,Xc-34) 132                                                     +      33.55 |      66.45 | chemical, decay              | 0x39b0b2bb9c5dc3c63a715c16f9115d456a212780 | 0x383168930492e50b068498c0b527feea76e61aa6a2254d9c08f5f5932702c038 | 0x467cdae694584dace17fbeada67fbc80e885a2400ac31a926e4074121568324d |
+    | 132 | YvCtEbRo   | 
+    | 132 | YvCtTYu    | 
+    | 132 | YvRoEbCt   | 
+    | 132 | YvTCtYu    | 
+    | 132 | YvTYuViSr  | 
+    | 132 | ZqAw₂      | 
+    | 133 | EiPbDzLEb  | 
+    | 133 | E₃         | 
+    | 133 | GyEbClT    | 
+    | 133 | KkClXjT    | 
+    | 133 | KkCtClEb   | 
+    | 133 | KkEbTRo    | 
+    | 133 | KkEiTGjNd  | 
+    | 133 | KkMtTGj    | 
+    | 133 | KkRoTEb    | 
+    | 133 | KkYuT₂     | 
+    | 133 | LT₂EbYu    | 
+    | 133 | LViEbNdXj  | 
+    | 133 | LViEbXjNd  | 
+    | 133 | LViNdXjEb  | 
+    | 133 | MNbSXc     | 
+    | 133 | MtRoLTAs   | 
+    | 133 | MtYuYv     | 
+    | 133 | MtYvDzT    | 
+    | 133 | MtYvTDz    | 
+    | 133 | MtYvXjAs   | 
+    | 133 | NbDxXc₂    | 
+    | 133 | NbMSXc     | 
+    | 133 | NdUqAsWy   | 
+    | 133 | SrMtYuKk   | 
+    | 133 | SrNd₂Yv    | 
+    | 133 | S₂XcAw     | 
+    | 133 | UqClYuNd   | 
+    | 133 | UqNdWyAs   | 
+    | 133 | UqYuClNd   | 
+    | 133 | WyGjLEb    | 
+    | 133 | XcNbXlMDx  | 
+    | 133 | YuEiNdYv   | 
+    | 133 | YvCtXjCl   | 
+    | 133 | YvXjClCt   | 
+    | 134 | AfXcFwNbDx | 
+    | 134 | AsLTViUq   | 
+    | 134 | AsYuKkNd   | 
+    | 134 | AsYvTDzYu  | 
+    | 134 | ClSrEiNdYv | 
+    | 134 | DSAf₂Nb    | 
+    | 134 | DSPmNb     | 
+    | 134 | DxXcXlMNb  | 
+    | 134 | EiYvDzEbCl | 
+    | 134 | FjAw₂      | 
+    | 134 | Gy₂        | |   137986*|bohr    |  Ct-13⁺ +  Eb-20∙ +  Nd-30ª +  Gy-67ª +  Gy-67ª +      290 =>   Ct-13 + Eb-20 + Nd-30 + Gy₂(Gy-67,Gy-67>) 134                                        +     159.83 |     130.17 | metallic                     | 0xdd8634afaf60de26cb9a59af445120962ccbd8b8 | 0x040d78c8f21b85fbf666239cc1c48132c3cf0d62f7db2a20c23fee33a7e0e50e | 0x10c12c26c4a6c0ccc2563e53c592eef6cd8504fb764d5676446905228d81cba7 |
+    | 134 | KkEbClCt   | 
+    | 134 | LEbTCtNd   | 
+    | 134 | LSrCtGy    | 
+    | 134 | MAwXc₂     | 
+    | 134 | MNbSXc     | 
+    | 134 | MtS        | |   174564*|bohr    |  Ct-15∙ +   T-15⁺ +   K-31⁺ +  Mt-32⁺ +  S-102ª +      300 => ⬇ Ct-15 + Ct-15 + K-31 + MtS(Mt-32,S-102>) 134                                         +     199.11 |     100.89 | metallic, decay              | 0x0662bd9f6e8a215c56d1b73e32377cac4c452437 | 0x3f35645425fc892b14f5ceb1baf7448237e20fe91b483af14c81d8b7bae576a9 | 0xfd036a33ae779d9d8acb698823a659084b64b1ad0d684c73ba790e8d7d830855 |
+    | 134 | Nb₂PmAf    | 
+    | 134 | Nd₂EiKk    | 
+    | 134 | WyClNdDzXj | 
+    | 134 | WyClNdTGj  | 
+    | 134 | WyCtEbXjNd | 
+    | 134 | WyCtNdEbXj | 
+    | 134 | WyCtXjEbNd | 
+    | 134 | WyNdCtEbXj | 
+    | 134 | ZqPqXcNb   | 
+    | 135 | CSPqNb     | 
+    | 135 | ClSrMtYv   | 
+    | 135 | Cl₅        | 
+    | 135 | EiClSrNdYv | 
+    | 135 | GjKkEiEbCl | 
+    | 135 | KkNs       |  
+    | 135 | MWAwSXc    | 
+    | 135 | MtClSrYv   | 
+    | 135 | MtYuYv     | 
+    | 135 | NbXlAwM    | 
+    | 135 | SrClEiYvNd | 
+    | 135 | SrGy₂      | 
+    | 135 | S₂NbPmPq   | 
+    | 135 | YuMtYv     | 
+    | 135 | Yu₂MtEb₂   | 
+    | 136 | AfMXcNbPm  | 
+    | 136 | AsUqTGy    | 
+    | 136 | DXcWNbXl   | 
+    | 136 | D₂Xc₂      | 
+    | 136 | FAi        | |    67194*|bohr    |  Ai-67⁻ +   F-69⁻                               +    15000 =>   FAi(Ai-67,F-69>) 136                                                                 +   14139.52 |     860.48 | metallic                     | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x02b0ae21d33e5de4a16ea671e03ad737b53d704c98a3d57119a01ad731233815 | 0x4755c03b36a7d749336ec49cadc382f92596ecb75ca23a3bde60b7207bd3c381 |
+    | 136 | FjZqXcPmDx | 
+    | 136 | JuXc₂AwM   | 
+    | 136 | LEbYuT₂    | 
+    | 136 | LYvVi      | 
+    | 136 | MAwXc₂     | 
+    | 136 | MtS        | |   100588*|bohr    |   T-15⁺ +  Ro-24ª +  Mt-34⁺ +  Pb-48∙ +  S-102ª +     5000 =>   T-15 + Ro-24 + Pb-48 + MtS(Mt-34,S-102>) 136                                         +    4662.83 |     337.17 | metallic                     | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x8600a6fe266407f39a4cc68ec2c4665ad865e49d91f56f6193905d927fc1adff | 0xd4f27fa4e824031130e65d6dd5bc5af9026f069d77c2d12956d70526c5ba3845 |
+    | 136 | MtYuYv     | 
+    | 136 | Mt₂Kk      | 
+    | 136 | Mt₄        | 
+    | 136 | NbMXcS     | 
+    | 136 | NbM₂D      | 
+    | 136 | Nd₂EiKk    | 
+    | 136 | Sr₂Gy₂     | 
+    | 136 | S₂XcAw     | 
+    | 136 | S₂ZqNb     | 
+    | 136 | UqClMtGjT  | 
+    | 136 | XcWAw₂     | 
+    | 136 | Xc₂Af₂Nb   | 
+    | 136 | Xc₂FwAw    | 
+    | 136 | Xc₄        | |   198944*|alpha   |  Xc-34⁻ +  Xc-34⁻ +  Xc-34⁻ +  Xc-34⁻           +      100 =>   Xc₄(Xc-34>Xc-34,Xc-34,Xc-34) 136                                                     +      31.69 |      68.31 | chemical                     | 0xd40675674f44942f30f9bf83cb6f0a7152ead3a7 | 0xf496f8ffb84deb3c3a8fdc45ef5babb2ceb721c6056c014e935b11e2b819a621 | 0x466ea157825562730ade60a87e78203b6145c167c510d8eb7dd1488a743fbd78 |
+    | 136 | YuEiNdYv   | 
+    | 136 | YuMtYv     | 
+    | 137 | AsUqTGy    | 
+    | 137 | Aw₂Fj      | 
+    | 137 | DxXlNb₂    | 
+    | 137 | FjAw₂      | 
+    | 137 | FjDAfNb    | 
+    | 137 | FjPmJuAwXc | 
+    | 137 | FwNbXlFjPq | 
+    | 137 | GyMtCtRo   | 
+    | 137 | Gy₂        | |    82968*|bohr    |  Gy-68ª +  Gy-69ª                               +    10000 =>   Gy₂(Gy-68,Gy-69>) 137                                                                +    9381.74 |     618.26 | metallic                     | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xd6e27229eccadba7d29bc8d922fc6ec2157ea2d884ab5ca9f935e4af5e987700 | 0xded88f0228eed82245a5633e2c6149d10e6ed1a79df55e314997d27f5e9db19e |
+    | 137 | Gy₂        | |    82967*|bohr    |  Gy-67ª +  Gy-70ª                               +    10000 =>   Gy₂(Gy-67,Gy-70>) 137                                                                +    9381.74 |     618.26 | metallic                     | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x501ed82f729aaad40cc3ded4915cd72d1be2859db0f089134a1126f04c10be50 | 0xc738923b817c097451f9b7c448824a5068d37f14e6f8a3df249da83d222f4b2e |
+    | 137 | KkGy       | |   142698 |bohr    |  Gy-67ª +  Kk-70ª                               +      130 =>   KkGy(Gy-67,Kk-70>) 137                                                               +       5.24 |     124.76 | metallic                     | 0xa754a77350aff23845f0c4a3d2b83dc19dd9dde0 | 0x7d7c3dddfcd06591827dc0390cef1ba93f4e5652b4b2f8b99ed2a6da3fa989ce | 0xf86c400ff0b217c88e8e367eca5fc7fac516bc93b1d334ac5b9b0fb8cbb8f403 |
+    | 137 | KkMt₂      | 
+    | 137 | MAwXc₂     | 
+    | 137 | MNbSXc     | 
+    | 137 | MtRoLNd    | 
+    | 137 | MtS        | |   172586*|bohr    |  Ct-17⁻ +   K-31⁺ +  Mt-35∙ +  Kk-70ª +  S-102ª +      100 => ⬆ T-17 + K-31 + Kk-70 + MtS(Mt-35,S-102>) 137                                          +       7.19 |      92.81 | metallic, decay              | 0xa4d0c3a9d0028f797182ab766bea92c5fcdf5d89 | 0x803c826adf02374f84615053b5c01ee895baa3593d856ec685fbda9a9e7ae2ac | 0x1becb82ab8130f6c7f9af8d84ec698ffd5da4660016b34ed1dafc0e110237b99 |
+    | 137 | MtSrClYv   | 
+    | 137 | Mt₂Kk      | 
+    | 137 | NbFwSZq    | 
+    | 137 | NbJuAwXc   | 
+    | 137 | NbJuXcAw   | 
+    | 137 | PqD₂Fw₂    | 
+    | 137 | UqRoGy     | 
+    | 137 | WAwNbXlPm  | 
+    | 137 | WSXcMNb    | 
+    | 137 | WyCtSrKk   | 
+    | 137 | WySrCtKk   | 
+    | 137 | Xc₂AwFw    | 
+    | 137 | XlNbAwM    | 
+    | 137 | YuAsNdKk   | 
+    | 138 | EiMtLWy    | 
+    | 138 | EkMt       | |    40316*|bohr    |  Mt-35∙ + Ji-103⁺                               +     3000 => ⬇ EkMt(Ek-103,Mt-35>) 138                                                              +    2749.85 |     250.15 | metallic, decay              | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x340537306af6ba60122d8984090aa2fb99aa6187ab545c891229e5592590a02c | 0xb39b97c16c2819077e7d1be18998370a8f568593efd34dae1bf064d8e5c2a2c0 |
+    | 138 | FjNbPmJuS  | 
+    | 138 | Gy₂        | |    82969*|bohr    |  Gy-68ª +  Gy-70ª                               +    10000 =>   Gy₂(Gy-68,Gy-70>) 138                                                                +    9380.88 |     619.12 | metallic                     | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xc0075fb934bbd2cb2453fb3a7293c0c1c774e5026ccc99faea4d18151687cb30 | 0xded88f0228eed82245a5633e2c6149d10e6ed1a79df55e314997d27f5e9db19e |
+    | 138 | JuBtIc     | 
+    | 138 | KkGy       | |    65859 |bohr    |  Gy-67ª +  Kk-71ª                               +      136 =>   KkGy(Gy-67,Kk-71>) 138                                                               +      10.08 |     125.92 | metallic                     | 0xac6fa09b020da199f6e2c4eb86ecde40a9d7febd | 0x16729e854d0fc181871299664a4bcbc71054af63f06eebd9c5345c4264c9719e | 0xefdb2b4d45acc91a350cf9046588dfc6c62abc16d9d88aecb42615571ffe71e8 |
+    | 138 | KkMt₂      | 
+    | 138 | KkNdViYu   | 
+    | 138 | KkNdYuVi   | 
+    | 138 | Mt₂SrGy    | 
+    | 138 | NbJuAwXc   | 
+    | 138 | SrKkGy     | 
+    | 138 | S₂ZqNb     | 
+    | 138 | WyEiKkVi   | 
+    | 138 | Xc₂AwFw    | 
+    | 138 | YvRoYuT    | 
+    | 138 | YvSrMtNd   | 
+    | 139 | Fj₂Fw₂Dx   | 
+    | 139 | FwSNbFj    | 
+    | 139 | GyTNdCl    | 
+    | 139 | Gy₂        | |    82970*|bohr    |  Gy-69ª +  Gy-70ª                               +    10000 =>   Gy₂(Gy-69,Gy-70>) 139                                                                +    9380.02 |     619.98 | metallic                     | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x35a8d5a807c986f935ade1d08774d4adec062a1b9dfc50fe0a93c750d9c8c399 | 0xded88f0228eed82245a5633e2c6149d10e6ed1a79df55e314997d27f5e9db19e |
+    | 139 | KkMt₂      | 
+    | 139 | KkNdRoT    | 
+    | 139 | Mt₂Kk      | 
+    | 139 | NbMSXc     | 
+    | 139 | NdMtClWy   | 
+    | 139 | SNbXcFw    | 
+    | 139 | SrKkGy     | 
+    | 139 | Sr₂Gy₂     | 
+    | 139 | Sr₂KkGy    | 
+    | 139 | UqRoGy     | 
+    | 139 | UqSrRoGy   | 
+    | 139 | Xc₃MPm     | 
+    | 139 | YvEiNdGjRo | 
+    | 140 | FjMAwSW    | 
+    | 140 | GyClNdT    | 
+    | 140 | GyClTNd    | 
+    | 140 | GyNdClT    | 
+    | 140 | GyTClNd    | 
+    | 140 | KkRoNdT    | 
+    | 140 | KkTNdRo    | 
+    | 140 | KkTRoNd    | 
+    | 140 | KkViNdYu   | 
+    | 140 | Kk₂        | |    93134*|bohr    |  Pb-48∙ +  Pb-48∙ +  Kk-70ª +  Kk-70ª           +      150 =>   Pb-48 + Pb-48 + Kk₂(Kk-70,Kk-70>) 140                                                +      18.31 |     131.69 | metallic                     | 0x574cc55cd7c85e5a758cd3a260193cdcf99dbfa1 | 0xfad7ca754d27c4a4a2265fe39925f85c1f5256d0e04591f2bb78f40760631f91 | 0xc371aacef0a1bb6f70e9d06e69c296ec789dede82ad645f77c83a6be3339ab50 |
+    | 140 | LTWyRo     | 
+    | 140 | MtYuClL    | 
+    | 140 | Mt₂Kk      | 
+    | 140 | NbPmXcFj   | 
+    | 140 | Nb₂SAf     | 
+    | 140 | Nb₂Zq      | 
+    | 140 | SrGyTClYu  | 
+    | 140 | SrKkGy     | 
+    | 140 | UqRoKk     | 
+    | 140 | Xc₄Dx      | 
+    | 141 | AfDxSDNb   | 
+    | 141 | GyClNdT    | 
+    | 141 | GyMtRoCt   | 
+    | 141 | GyTNdCl    | 
+    | 141 | IcPqD₂     | 
+    | 141 | KkTNdRo    | 
+    | 141 | KkTRoNd    | 
+    | 141 | Kk₂        | |   139721 |bohr    |  Kk-70ª +  Kk-71ª                               +      200 =>   Kk₂(Kk-70,Kk-71>) 141                                                                +      64.92 |     135.08 | metallic                     | 0x08c4939f71feb1bd22fcd6a80ae4032429477680 | 0x1cdbe535695976a3a42628a1926b60dcf7724932c62b0eee867090779bf1f369 | 0x8ca3ae70f9429cdbd4180a5fdacb877d811ec39a7d8830e254be6e3a07f98b62 |
+    | 141 | LPbDzMt    | 
+    | 141 | MtGyCtRo   | 
+    | 141 | MtNdClWy   | 
+    | 141 | MtYuClL    | 
+    | 141 | M₂XcPmAw   | 
+    | 141 | NbSFwFj    | 
+    | 141 | NbSXc₂     | 
+    | 141 | SrKkGy     | 
+    | 141 | Sr₃KkGy    | 
+    | 141 | UqRoKk     | 
+    | 141 | WyLNdGj    | 
+    | 142 | GySrYuClT  | 
+    | 142 | KkNdViYu   | 
+    | 142 | KkTRoNd    | 
+    | 142 | KkViNdYu   | 
+    | 142 | Kk₂        | |   200433 |bohr    |  Kk-71ª +  Kk-71ª                               +      342 =>   Kk₂(Kk-71,Kk-71>) 142                                                                +     198.94 |     143.06 | metallic                     | 0x0f14d1b9fecc960ecf377f5177fad4d9543a65a9 | 0xecf19d098de660a4d3eaa48ff41275449c7ae7e30fd50e3528b836ae33aeb626 | 0x3b407c7cf9b7d73b7597e1e9563d2a060153ace4177ba9242c7252fec5d0e320 |
+    | 142 | MZqNbXc    | 
+    | 142 | NbSFwFj    | 
+    | 142 | NdClYvAsDz | 
+    | 142 | SrKk₂      | 
+    | 142 | Sr₂Kk₂     | 
+    | 142 | S₂AwPmM    | 
+    | 142 | UqRoKk     | 
+    | 142 | Uq₂RoCl    | 
+    | 142 | Xc₃Aw      | 
+    | 142 | XkNbWZq    | 
+    | 142 | XlXcSMNb   | 
+    | 143 | A₃         | 
+    | 143 | ClGyTCtXj  | 
+    | 143 | ClUqKk     | 
+    | 143 | DFjSC      | 
+    | 143 | FwDxAwNb   | 
+    | 143 | LNdClEbCt  | 
+    | 143 | PbClXjWy   | 
+    | 143 | RoEk       | |   146663*|bohr    |   P-24⁻ + Vt-119⁻                               +    10000 => ⬆ RoEk(Ek-119,Ro-24>) 143                                                              +    9388.35 |     611.65 | metallic, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xe01b6e4736506e6218d835e3874fc3dd31486aa2599ae4aa047f0e8b7d6ef1bf | 0x75a64ade27ca14a101e5bd888cd904b7143e65c3f1e0b6515cc790977a603506 |
+    | 143 | SrKk₂      | 
+    | 143 | UqRoKk     | 
+    | 143 | Uq₂RoCl    | 
+    | 143 | Xc₃Aw      | 
+    | 144 | ClKkXjDzEb | 
+    | 144 | ClUqKk     | 
+    | 144 | D₄         | 
+    | 144 | Nb₂PmDx    | 
+    | 144 | PbXjClWy   | 
+    | 144 | Pq₂XlNb₂   | 
+    | 144 | SXc₃M      | 
+    | 144 | SrKk₂      | 
+    | 144 | Sr₂Kk₂     | 
+    | 144 | WXc₂Fj₂    | 
+    | 144 | Xc₂PqAwDx  | 
+    | 145 | ClUqKk     | 
+    | 145 | ClUqSrKk   | 
+    | 145 | FjNb₂      | 
+    | 145 | Fj₂AfNbXl  | 
+    | 145 | Fj₂AfXlNb  | 
+    | 145 | Fj₂NbAfXl  | 
+    | 145 | FwXc₄      | 
+    | 145 | KkYuDzTEb  | 
+    | 145 | Nb₂D       | 
+    | 145 | NdYuKkXj   | 
+    | 145 | Ro₂SrClKk  | 
+    | 145 | Ro₂YuKk    | 
+    | 145 | SDAwXc     | 
+    | 145 | Sr₂Kk₂     | 
+    | 145 | UqEbPbYu   | 
+    | 145 | UqLSrClXj  | 
+    | 145 | Xc₂NbS     | 
+    | 145 | Xc₃Aw      | 
+    | 145 | ZqFjSAw    | 
+    | 146 | ClNdEbGySr | 
+    | 146 | Cl₂RoKk    | 
+    | 146 | EiClRoEbYv | 
+    | 146 | Fj₂AfXlNb  | 
+    | 146 | GkPw       | |   167478*|alpha   |   C-45⁻ +  Ic-60⁻ +  Pw-72⁻ +  Gk-74∙ +  Qi-74ª +      500 =>   QiIcC(Qi-74>C-45,Ic-60) 179 + GkPw(Gk-74,Pw-72>) 146                                     +     301.28 |     198.72 | metallic, chemical           | 0x1b10025adac8caaf45660a3115ca5862af3d37f9 | 0x4178f8d391102798264a2d2f36e9541aaa53f13a3480c781b796b6efd72b812f | 0x7e66b8efa609c6db949c0e0cc218eec52537920fe3f7046fbb2112cf6a4940f9 |
+    | 146 | MAw₂Fw     | 
+    | 146 | NbMPmAw    | 
+    | 146 | NdAsXjYvEb | 
+    | 147 | AfFj₂NbXl  | 
+    | 147 | AwZqSMDx   | 
+    | 147 | ClNdEbKk   | 
+    | 147 | ClNdKkEb   | 
+    | 147 | Fj₂AfNbXl  | 
+    | 147 | Fj₂AfXlNb  | 
+    | 147 | Fj₂NbAfXl  | 
+    | 147 | Fj₄        | |    28326*|alpha   |  Fj-35⁺ +  Fj-36ª +  Fj-38ª +  Fj-38ª           +      200 =>   Fj₄(Fj-35,Fj-36,Fj-38,Fj-38>) 147                                                    +      87.66 |     112.34 | metallic                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd0224e856ca84562b32389ee950f9ef612dd27caac641ac7a91565782f744542 | 0xbd9046ff8bed613a84a7013729aef670543aed33f262a144b2827485d1c1ba43 |
+    | 147 | FwXc₄      | 
+    | 147 | GjNdEbYvCt | 
+    | 147 | JuDx₂Nb₂   | 
+    | 147 | MDEAw      | 
+    | 147 | Mt₂LNd     | 
+    | 147 | NdClKkEb   | 
+    | 147 | SrNdClTYv  | 
+    | 147 | Xc₃Aw      | 
+    | 148 | ClNdKkEb   | 
+    | 148 | ClRo₂Kk    | 
+    | 148 | DSZqNb     | 
+    | 148 | D₄         | 
+    | 148 | Fj₄        | |    94435*|alpha   |  Pm-17⁺ +  Fj-37ª +  Fj-37ª +  Fj-37ª +  Fj-37ª +      120 =>   Pm-17 + Fj₄(Fj-37,Fj-37,Fj-37,Fj-37>) 148                                            +      10.96 |     109.04 | metallic                     | 0x21326fe6691a6b0b00ef2382c89e4c5b5aa48726 | 0x270f154c3792208d6691c33e07ae0615747391617109b1fcfe92516d1a9c757e | 0x576ff8b037d17404e300d739e8beb7317ee401a3ca25b19311df446dafd4b01e |
+    | 148 | RoCl₂Kk    | 
+    | 148 | Xc₃Aw      | 
+    | 148 | YuRo₂Kk    | 
+    | 149 | ClNdKkEb   | 
+    | 149 | GjYuXjKkEb | 
+    | 149 | MFwOXc₂    | 
+    | 149 | Nb₂DxS     | 
+    | 149 | NdClEbKk   | 
+    | 149 | NdClKkEb   | 
+    | 149 | NdYuXjKk   | 
+    | 149 | RoCl₂Kk    | 
+    | 149 | Uq₂EbEiYu  | 
+    | 149 | Xc₃Aw      | 
+    | 150 | DNbXcFw    | 
+    | 150 | FjXcXlPmNb | 
+    | 150 | GyYuGjNdT  | 
+    | 150 | NbIcXcJuW  | 
+    | 150 | YvAsXjMtEb | 
+    | 150 | YvSrClMtT  | 
+    | 151 | ClYvSrMtT  | 
+    | 151 | KkRoEiXjMt | 
+    | 151 | MXc₂SFj    | 
+    | 151 | NdGjKkTEb  | 
+    | 151 | RoGjLTWy   | 
+    | 151 | ViWyClMtYu | 
+    | 151 | Xc₂MAwDx   | 
+    | 151 | YvClXjMt   | 
+    | 152 | AwCXcZq    | 
+    | 152 | ClYvXjMt   | 
+    | 152 | Fj₂Fw₂Zq   | 
+    | 152 | Fw₂Xc₃     | 
+    | 152 | GjGyRoMtCt | 
+    | 152 | GyEbTXjNd  | 
+    | 152 | KkGjLEb    | 
+    | 152 | KkLEbGj    | 
+    | 152 | Pq₂PmNb₂   | 
+    | 152 | RoSCl      | 
+    | 152 | SrSNdXj    | 
+    | 152 | S₃Fj₂      | 
+    | 152 | YvClMtXj   | 
+    | 152 | YvLGjXj    | 
+    | 152 | YvTDz₂Pb   | 
+    | 153 | AwPqNbFj   | 
+    | 153 | ClSRo      | 
+    | 153 | CtRoTWyPb  | 
+    | 153 | D₃SDx      | 
+    | 153 | KkT₂EbNd   | 
+    | 153 | Mt₃Pb      | 
+    | 153 | NbFwFjD    | 
+    | 153 | Nb₃        | 
+|    28301*|alpha   |  Nb-49ª +  Nb-51ª +  Nb-53⁻                     +      200 =>   Nb₃(Nb-49,Nb-51,Nb-53>) 153                                                          +      91.91 |     108.09 | metallic                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x39e07c28ab062af0eaf4d2eb18e21930b439000adef27d12b032f63a0382027f | 0xa10888aefcbbe32e3848c4bdd1ee849b11c9134771a2d989f43976794a44caf2 |
+    | 153 | NdClGjMtWy | 
+    | 153 | RoCtPbTWy  | 
+    | 153 | SEbNd      | 
+    | 153 | SrSEbYu    | 
+    | 153 | YvMtEb₂As  | 
+    | 154 | ClSRo      | 
+    | 154 | DxDAw₂     | 
+    | 154 | GyClEb₂Xj  | 
+    | 154 | KkSrYvVi   | 
+    | 154 | MtRoYuKk   | 
+    | 154 | NbDXc₂     | 
+    | 154 | NbXcPmAw   | 
+    | 154 | Nb₂DAf     | 
+    | 154 | PqFjNbAw   | 
+    | 154 | SEbNd      | 
+    | 154 | SrSXjNd    | 
+    | 154 | XcNbAwPm   | 
+    | 154 | YvEb₂NdGj  | 
+    | 154 | YvNdClTDz  | 
+    | 154 | YvNdXj₂Ct  | 
+    | 154 | YvSrViLCt  | 
+    | 154 | YvYuXj₂T   | 
+    | 154 | Zq₂Xc₂M    | 
+    | 155 | ClMtRoYv   | 
+    | 155 | ClWyLTGj   | 
+    | 155 | DJuAfNb₂   | 
+    | 155 | Ei₂YuGyL   | 
+    | 155 | KkSrYvVi   | 
+    | 155 | NbDHb      | 
+    | 155 | NdYuClYv   | 
+    | 155 | PmFjSCXc   | 
+    | 155 | SrKkYvVi   | 
+    | 155 | XcAwJuDxNb | 
+    | 156 | Dx₃Nb₂     | 
+    | 156 | MtUqClXjYu | 
+    | 156 | RoGjEbLUq  | 
+    | 156 | SrYvViKk   | 
+    | 156 | WyRoKkCt   | 
+    | 156 | YuMtRoKk   | 
+    | 156 | YvSrKkVi   | 
+    | 156 | Yv₂SrGj    | 
+    | 157 | AsLRoEiYv  | 
+    | 157 | DzYuKkWy   | 
+    | 157 | EiYuLYv    | 
+    | 157 | FjNbMSPm   | 
+    | 157 | FjNbXcZq   | 
+    | 157 | KkEbTXjYu  | 
+    | 157 | LRoYvGj    | 
+    | 157 | Sr₂KkYvGj  | 
+    | 157 | UqNdEbAsL  | 
+    | 157 | YuClNdYv   | 
+    | 157 | YuNdYvCl   | 
+    | 157 | Yv₂Vi      | 
+    | 158 | Bt₂        | |   130740*|alpha   |  Bt-79∙ +  Bt-79∙                               +     2100 =>   Bt₂(Bt-79,Bt-79>) 158                                                                +    1903.23 |     196.77 | metallic                     | 0x0662bd9f6e8a215c56d1b73e32377cac4c452437 | 0x143bb9de8d8495cdeff76fe0c7a39f7dd395d779f5acf5bb20fbb6ddf1018769 | 0xae4a62cdab74a8850e7232a44a8d1561fedf185f47ba7d273fd2fe9463e08964 |
+    | 158 | Cl₂MtKk    | 
+    | 158 | DZqXlNbFw  | 
+    | 158 | Fj₂NbAfXl  | 
+    | 158 | Fw₂AwXc₂   | 
+    | 158 | Fw₂Xc₂Aw   | 
+    | 158 | Kk₂EiVi    | 
+    | 158 | Nb₂Fw₂     | 
+    | 158 | O₄         | 
+    | 158 | XcDxMAwFj  | 
+    | 158 | Xc₂DxSNb   | 
+    | 158 | YuAsWyYv   | 
+    | 158 | YuNdYvCl   | 
+    | 159 | ClWyGjYv   | 
+    | 159 | DDxS₂Nb    | 
+    | 159 | EiKk₂Vi    | 
+    | 159 | GyVl       | |    58963*|bohr    |  Gy-67ª + Ji-114ª                               +    10000 =>   P-22 + GyVl(Gy-67,Vl-92>) 159                                                        +    9370.86 |     629.14 | metallic, decay              | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xdb6ec096fff832c362ea036d194c34b363b66dbf448b5e74cdde8848d3a50951 | 0x3c8873c947971b597d62326cfb2ba8c21ec436a3cddf738861ce1402112a6ff8 |
+    | 159 | LEiKkEbVi  | 
+    | 159 | NbFj₂Xc    | 
+    | 159 | RoKkGy     | 
+    | 159 | WyRoCtKk   | 
+    | 160 | Cl₂MtKk    | 
+    | 160 | GyClLT     | 
+    | 160 | GyLClT     | 
+    | 160 | LAsKkGjEb  | 
+    | 160 | MtSCl      | 
+    | 160 | NbXcSAw    | 
+    | 160 | Nb₂S₂      | 
+    | 160 | RoKkGy     | 
+    | 160 | SMtCl      | 
+    | 160 | SqBt       | |    68548*|alpha   |  Bt-79∙ +  Sq-81⁺                               +      100 =>   SqBt(Sq-81>Bt-79) 160                                                                +      42.54 |      57.46 | chemical                     | 0x56bde1e5efc80b1e2b958f2d311f4176945ae77f | 0x3752c0a89085f44e8582c3ee4873a0fbf59191dcdddf8052505b06bb2b54f90c | 0x05a3781b2827cb323c9359cf81d065b9e9639d1fdafd0c7589d853079c0a027c |
+    | 160 | Sq₂        | |   130973*|alpha   |  Sq-80⁺ +  Sq-80⁺                               +      600 =>   Sq₂(Sq-80,Sq-80>) 160                                                                +     449.55 |     150.45 | metallic                     | 0x0662bd9f6e8a215c56d1b73e32377cac4c452437 | 0xd6996a58025b6f81416fd720c8406c1070ec529ba004d36a33e02e8092523c0d | 0x38567fbfcac5cdc7a51f71c8c8eff949328a6f039f8853323e3656d67973ac4f |
+    | 160 | WyRoCtKk   | 
+    | 160 | Xc₃AwDx    | 
+    | 161 | RoKkGy     | 
+    | 161 | SNbXcAw    | 
+    | 161 | XcNbSAw    | 
+    | 162 | CtLPb₂     | 
+    | 162 | GyTNd₂Xj   | 
+    | 162 | GyYuLCt    | 
+    | 162 | JuAwNbSXc  | 
+    | 162 | KkClNdMt   | 
+    | 162 | KkEiLClGj  | 
+    | 162 | KkNdMtCl   | 
+    | 162 | KkU        | |    79919*|bohr    |  Kk-70ª +   U-92∙                               +    40000 =>   KkU(Kk-70,U-92>) 162                                                                 +   37874.10 |    2125.90 | metallic                     | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0xf209034c4841d1428f13224557a2ec4607220996dd922eafbf44b358e592b5b5 | 0xef16c6bbb272f65756aaa7bafd57f377befef463175a68a85b997c83caa74205 |
+    | 162 | MtSCl      | 
+    | 162 | NbSAwXc    | 
+    | 162 | Nb₃        | |    95523*|alpha   |  Dx-16∙ +  Pt-26∙ +  Nb-54ª +  Nb-54ª +  Nb-54ª +      110 =>   Dx-16 + Pt-26 + Nb₃(Nb-54,Nb-54,Nb-54>) 162                                          +       0.64 |     109.36 | metallic                     | 0x21326fe6691a6b0b00ef2382c89e4c5b5aa48726 | 0x649f98512e16abade2eb247387bdb0899c019ba7b48d069cda55249b0f300c7e | 0x90bce283d87b0c1e65701b2aebaedd1bb61505180cf924e85d30169c21847262 |
+    | 162 | RoKkGy     | 
+    | 162 | RoKk₂      | 
+    | 162 | SDAw₂      | 
+    | 162 | SrRoKkGy   | 
+    | 162 | WyRoKkCt   | 
+    | 162 | XcSDAwDx   | 
+    | 162 | Xc₂Aw₂     | 
+    | 162 | Xk₃        | |    28304*|alpha   |  Xk-54⁻ +  Xk-54⁻ +  Xk-54⁻                     +      200 =>   Xk₃(Xk-54,Xk-54,Xk-54>) 162                                                          +      73.65 |     126.35 | metallic                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x7a8b21151a165a70a0eac17659e9e66b00865d5525665fffe08c0695c507bdb6 | 0x055855f2d91b9218c96e9fe91ea12e223f37a69e69bc0afca8dc274f3efce950 |
+    | 163 | D₂WXcNb    | 
+    | 163 | GyPbDzRoT  | 
+    | 163 | MtSCl      | 
+    | 163 | SMtCl      | 
+    | 163 | SNbXcAw    | 
+    | 163 | YvAsUqYuGj | 
+    | 163 | YvLRoCt    | 
+    | 163 | YvRoTWy    | 
+    | 164 | KkClCtL    | 
+    | 164 | KkGyYu     | 
+    | 164 | MtSCl      | 
+    | 164 | Nb₂XcFw    | 
+    | 164 | YvRoTWy    | 
+    | 165 | DxNbSXcFj  | 
+    | 165 | D₂FjNb     | 
+    | 165 | FjFwCXc₂   | 
+    | 165 | GyKkYu     | 
+    | 165 | KkGyYu     | 
+    | 165 | KkT₂Nd₂    | 
+    | 165 | LGyXjNd    | 
+    | 165 | LMtKkVi    | 
+    | 165 | Nb₂XcFw    | 
+    | 165 | RoKk₂      | 
+    | 165 | SNbXcDxFj  | 
+    | 165 | Xc₂Aw₂     | 
+    | 165 | Xc₃PqNb    | 
+    | 165 | Xk₃        | |    25192*|alpha   |  Xk-55⁻ +  Xk-55⁻ +  Xk-55⁻                     +     2000 =>   Xk₃(Xk-55,Xk-55,Xk-55>) 165                                                          +    1781.49 |     218.51 | metallic                     | 0x13c942e3f8be4faf966ef03e6038b33d000db22f | 0xe816b624393731fd643ff597bb28f39eda9ec64fd7f7a745979a5a40fd95946a | 0x50d5aab8f539fb598d985442ccc8c50bca1cac3e64c4f97f97b4964625364021 |
+    | 166 | ClKk₂      | 
+    | 166 | ClSEbT     | 
+    | 166 | ClUqRoKk   | 
+    | 166 | DxFjAwDS   | 
+    | 166 | FwXc₃Aw    | 
+    | 166 | GyYuKk     | 
+    | 166 | LGyNdXj    | 
+    | 166 | LKkXjYu    | 
+    | 166 | PbSrGjMtYv | 
+    | 167 | ClKk₂      | 
+    | 167 | FjDxMNbD   | 
+    | 167 | GyKkYu     | 
+    | 167 | GyYuKk     | 
+    | 167 | KkGyYu     | 
+    | 167 | LEbGyYu    | 
+    | 167 | LTNdKk     | 
+    | 167 | MtNd₂Yv    | 
+    | 167 | SrRoKk₂    | 
+    | 167 | WyKkNdXj   | 
+    | 168 | ClKk₂      | 
+    | 168 | C₄         | 
+    | 168 | HbXcMFjPq  | 
+    | 168 | LKkNdT     | 
+    | 168 | LYuXjKk    | 
+    | 168 | Mt₂YuKk    | 
+    | 168 | Xc₂Aw₂     | 
+    | 169 | ClUqRoKk   | 
+    | 169 | DxXlDXkAw  | 
+    | 169 | LNdKkT     | 
+    | 169 | WyKkXjNd   | 
+    | 169 | YvMt₂Nd    | 
+    | 170 | AwDxFwSNb  | 
+    | 170 | Cl₂UqKk    | 
+    | 170 | FjFwEXcZq  | 
+    | 170 | Mt₅        | |    58502*|bohr    |  Mt-34⁺ +  Mt-34⁺ +  Mt-34⁺ +  Mt-34⁺ +  Mt-34⁺ +      250 =>   Mt₅(Mt-34,Mt-34,Mt-34,Mt-34,Mt-34>) 170                                              +     114.13 |     135.87 | metallic                     | 0x6fbd636a59a4406f65d731e6d3c664ef8e08af08 | 0x7a923c9cb4e484709007365b59267edb584ac0d0f8714b4d6ac50fac3eee9216 | 0x6b64b50084ef83f2fc4e645bec4bed3273eeae2bd7498b77fb67162f02014dfa |
+    | 170 | NLx        | |    77535*|bohr    |  Lx-85ª +   N-85⁺                               +     5000 =>   NLx(Lx-85,N-85>) 170                                                                 +    4632.71 |     367.29 | metallic                     | 0x72fe3c398c9a030b9b2be1fe1ff07701167571d4 | 0x8767d2f59416adfbdb5a036a43cc60b4faacea705cf790bb8afdfb5b516907fa | 0x5747a5dc13de293cf9d6a7f76feaa2c0414fd954a92f79d938c5075111eb9e8f |
+    | 171 | LNdRoWyXj  | 
+    | 172 | DNbXcAw    | 
+    | 172 | D₅         | 
+    | 172 | Ic₃        | |    28355*|alpha   |  Ic-56∙ +  Ic-58∙ +  Ic-58∙                     +      200 =>   Ic₃(Ic-56,Ic-58,Ic-58>) 172                                                          +      56.34 |     143.66 | metallic                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x903e736462025a26226a59d532731441650b15a983b3a3b4026c7cb1a0acbb79 | 0xab612980d6799641af79347175775e7169faccec939121adf69d8d2299811465 |
+    | 172 | Mt₃Gy      | 
+    | 172 | Xc₂DMAw    | 
+    | 173 | Pq₂FjNb₂   | 
+    | 173 | RoYvLAsEb  | 
+    | 174 | ClKkTGjL   | 
+    | 174 | E₄         | 
+    | 174 | KkGyTSrXj  | 
+    | 174 | KkRoLGjXj  | 
+    | 174 | KkYuEbNdRo | 
+    | 174 | LSEb       | 
+    | 174 | Mt₂YvDzRo  | 
+    | 175 | LEbS       | 
+    | 175 | LNdGyYu    | 
+    | 175 | Ro₂MtClKk  | 
+    | 175 | UqLClWy    | 
+    | 175 | Xc₂Fj₃     | 
+    | 176 | DXc₂SNb    | 
+    | 176 | NdT₂GyPb   | 
+    | 176 | Sr₂SYv     | 
+    | 177 | ClMtNdGyEb | 
+    | 177 | DNb₂Zq     | 
+    | 177 | GySrClKkVi | 
+    | 177 | GyXjKkSrEb | 
+    | 177 | LGyNdYu    | 
+    | 178 | ClSrGyYvGj | 
+    | 178 | EiSrSKk    | 
+    | 178 | SrYvTEbGy  | 
+    | 178 | Yv₂SrViEb  | 
+    | 179 | ClKkGyCt   | 
+    | 179 | D₅         | 
+    | 179 | QiIcC      | 
+    | 179 | SrEiSKk    | 
+    | 179 | SrYvEbGyT  | 
+    | 180 | Aw₂JuNbS   | 
+    | 180 | ClLXjGyT   | 
+    | 180 | FjSZqXcNb  | 
+    | 180 | WyYuNdKk   | 
+    | 181 | ClKkGyCt   | 
+    | 181 | EiYvRoKkDz | 
+    | 181 | UqGy₂      | |   128592*|bohr    |   Ei-4∙ +  Ct-15∙ +  Uq-47⁻ +  Gy-67ª +  Gy-67ª +      188 =>   Ei-4 + Ct-15 + UqGy₂(Gy-67,Gy-67,Uq-47>) 181                                         +      22.37 |     165.63 | metallic                     | 0x68d8b90f637c17e463f0b4ff3790c2e27b85577a | 0x6ddf0195d96f44025a9c7c6b365001e71d3bfbaf96dca6e7690046550ad5b8ae | 0x6375bc9fe73c06af0801d56b1d863940ec1e29a90b717e4e67d4baf0d311c101 |
+    | 181 | XcAw₃      | 
+    | 182 | A₄         | 
+    | 182 | ClLYvGjEb  | 
+    | 182 | NbPmCFjXc  | 
+    | 182 | NbXcAwFwM  | 
+    | 182 | RoFVl      | 
+    | 182 | XcAw₃      | 
+    | 182 | YvGyClAsVi | 
+    | 183 | GyKkGjMt   | 
+    | 183 | GyKkMtGj   | 
+    | 183 | SLNd       | 
+    | 183 | YvClXjLT   | 
+    | 183 | YvXjLNdVi  | 
+    | 184 | KkGyMtGj   | 
+    | 184 | SeU        | |    92879*|bohr    |  Se-98∙ + Ek-108ª                               +    10000 =>   P-22 + SeU(Se-98,U-86>) 184                                                          +    9357.00 |     643.00 | metallic, decay              | 0x72fe3c398c9a030b9b2be1fe1ff07701167571d4 | 0x2104b061176e7c7658aad21354f4b26f877aee0342a0861f6c38c0aefb618c05 | 0x496a6a1beee8dbddaf83f57aefe7cd48cd3a8fc229b7f8d110b433f9d53e9b84 |
+    | 184 | UqKkGy     | 
+    | 185 | D₅         | 
+    | 185 | Fj₃D₂      | 
+    | 185 | Fj₅        | |    64958 |alpha   |  Fj-37ª +  Fj-37ª +  Fj-37ª +  Fj-37ª +  Fj-37ª +      150 =>   Fj₅(Fj-37,Fj-37,Fj-37,Fj-37,Fj-37>) 185                                              +      13.70 |     136.30 | metallic                     | 0x3aeedcd329e91e352d6c3d42c2b90d4e33a9e7d5 | 0xac081830ab54d2fe81393e29c59734c944ee31b7f507588a9101b3c7942246ad | 0xe09f794b656b9986fbab52c3ce4353e28b415a0ddbb52c1791b165f8d24754fe |
+    | 185 | GyWy₂GjDz  | 
+    | 185 | KkMtViLT   | 
+    | 185 | KkViEbLNd  | 
+    | 185 | UqKkGy     | 
+    | 185 | YvT₂LYu    | 
+    | 186 | FwAw₂Xc₂   | 
+    | 186 | KkClYuRoMt | 
+    | 186 | KkLMtViT   | 
+    | 186 | UqSrKkGy   | 
+    | 186 | XcFjAw₂Pm  | 
+    | 187 | GyYvNdXj   | 
+    | 187 | MtGyCtKkSr | 
+    | 187 | Ro₂KkGy    | 
+    | 187 | UqKk₂      | 
+    | 187 | YvGyXjNd   | 
+    | 187 | YvKkXjYu   | 
+    | 188 | Fj₅        | |    28305*|alpha   |  Fj-35⁺ +  Fj-36ª +  Fj-38ª +  Fj-39ª +  Fj-40∙ +      200 =>   Fj₅(Fj-35,Fj-36,Fj-38,Fj-39,Fj-40>) 188                                              +      59.11 |     140.89 | metallic                     | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x2174cd2b1719540fd451f14f75ceea96c8ca3a1fe44e389943d48babce9613e3 | 0x055855f2d91b9218c96e9fe91ea12e223f37a69e69bc0afca8dc274f3efce950 |
+    | 188 | KkNdYvT    | 
+    | 188 | MtAsKkGyGj | 
+    | 188 | MtYv₂Gj    | 
+    | 188 | NbXcMFjAw  | 
+    | 188 | Nb₂AwXc    | 
+    | 188 | UqKk₂      | 
+    | 188 | YvGyYuEb   | 
+    | 189 | Kk₂EbYu    | 
+    | 189 | Kk₂YuEb    | 
+    | 189 | Nb₂XcAw    | 
+    | 189 | UqKk₂      | 
+    | 189 | Yv₂NdCt    | 
+    | 190 | Fj₅        | |    27728*|alpha   |  Fj-38ª +  Fj-38ª +  Fj-38ª +  Fj-38ª +  Fj-38ª +      250 =>   Fj₅(Fj-38,Fj-38,Fj-38,Fj-38,Fj-38>) 190                                              +     105.22 |     144.78 | metallic                     | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x5dcb64666050783e47a28a7923f00eb35db0a26c54bbb1493f4193bafb86971b | 0x868db845655169b1f1e9bb3efd8736393900c943c518fe851017deff44236701 |
+    | 190 | WyMtRoViKk | 
+    | 190 | YvKkNdT    | 
+    | 191 | FwAw₂Xc₂   | 
+    | 191 | Kk₂YuEb    | 
+    | 191 | MtRoWyViKk | 
+    | 191 | RoMtWyViKk | 
+    | 192 | ClRoKk₂    | 
+    | 192 | LEb₂KkYu   | 
+    | 193 | DPwXcNb    | 
+    | 193 | GyPbMtClXj | 
+    | 194 | Cl₂Kk₂     | 
+    | 194 | DZqFjXcNb  | 
+    | 194 | YvEbS      | 
+    | 195 | CSAH       | |    29272*|alpha   |   S-28∙ +   C-42∙ +   A-45∙ +   H-80∙           +     1000 =>   CSAH(C-42,S-28>A-45,H-80)                                                        +     881.76 |     118.24 | chemical                     | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x425c89cb7783ae9aee16a43be5e1a2c311c425c31ba6d1759ff0b3c76edcc265 | 0x713abadbf9fd0c54b4d23852d823f60f15d35287f07bfca57f076616ec1293f9 |
+    | 195 | Cl₂Kk₂     | 
+    | 195 | NbXcMFjAw  | 
+    | 196 | Fw₂Aw₃     | 
+    | 196 | KkSTDz     | 
+    | 196 | WyGyTMtCl  | 
+    | 196 | YvGyNdYu   | 
+    | 196 | YvGyYuNd   | 
+    | 197 | KkGyNd₂    | 
+    | 198 | ClSMtEbCt  | 
+    | 198 | Gy₂MtYu    | 
+    | 198 | KkSTDz     | 
+    | 198 | WyLKkYu    | 
+    | 198 | YvRoKkTXj  | 
+    | 199 | YvClTGyXj  | 
+    | 199 | YvRoEbGyT  | 
+    | 200 | GyNdT₂Kk   | 
+    | 201 | Cl₃LKk     | 
+    | 201 | Gy₃        | |   177992 |bohr    |  Gy-67ª +  Gy-67ª +  Gy-67ª                     +      300 =>   Gy₃(Gy-67,Gy-67,Gy-67>) 201                                                          +     111.50 |     188.50 | metallic                     | 0x8c1e3b6c71041b67a4d5217e3c8993a85256a2e2 | 0xae87a357dcee2e9582936a1a88c02765d9e8063b0a621c2aa67b705c229ec684 | 0xffd6ccd8fb30e055073bf9eac1b02037a3f6505a2154daccb6a6b670d218dd9b |
+    | 201 | WyYuKkL    | 
+    | 201 | Wy₂YvYu    | 
+    | 202 | ClKkYvViEb | 
+    | 203 | CDHA       | |    29233*|alpha   |   D-36ª +   C-42∙ +   A-45∙ +   H-80∙           +     5000 =>   CDHA(C-42,D-36>A-45,H-80)                                                        +    4684.87 |     315.13 | chemical                     | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xf1906d35143467043dfa86a923eb22738f5a7e5497e779470947d321bf49282f | 0x409354a14be3de9e00343037b5f01c3dd060d5ab0a5d4cdf404771b60bcc5f78 |
+    | 203 | ClYvKkViEb | 
+    | 204 | KkGy₂      | 
+    | 204 | NdKkGyMtSr | 
+[r] | 204 | S₂         | |    49620*|bohr    |  S-102ª +  S-102ª +  S-102ª +  S-102ª +  S-102ª +      200 =>   P-22 + P-22 + Co-80 + Co-80 + S-102 + S₂(S-102,S-102>) 204                           +      59.24 |     140.76 | metallic, decay              | 0xbc3d5e1e22fe56ae0a6c0777d8b569dfec92a979 | 0xb8007929e08db13480ef381a73dfbeebc1cf6bd3958631d4d707367177f42065 | 0x6429f902f28ae915f32e22f8e16c5bee21bfc73085612f1028f74d54f6fd2852 |
+    | 204 | Yu₂DzKk₂   | 
+    | 205 | KkGy₂      | 
+    | 205 | O₅         | 
+    | 205 | RoYvEbKkCt | 
+    | 207 | C₅         | 
+    | 207 | Kk₂Gy      | |   130178*|bohr    |   As-6∙ +   K-32∙ +  Gy-67ª +  Kk-70ª +  Kk-70ª +      200 =>   As-6 + K-32 + Kk₂Gy(Gy-67,Kk-70,Kk-70>) 207                                          +      11.32 |     188.68 | metallic                     | 0xee9e0b272e59bf3778a3d8eee495cabba899fd29 | 0x1ce28fcf349f116a27d0ab218131a71a0d96ceec41e43948fe2082af1985d4a9 | 0xb5fa110163c0f4a636cb4f83929929eae504a3fbc735c6d476a6bb795fe6d336 |
+    | 207 | Nb₂DXc₂    | 
+    | 208 | KkRo₃Gy    | 
+    | 208 | Kk₂Gy      | |   187626*|bohr    |   T-16∙ +  Pb-48∙ +  Gy-67ª +  Kk-70ª +  Kk-71ª +      190 =>   T-16 + Pb-48 + Kk₂Gy(Gy-67,Kk-70,Kk-71>) 208                                         +       0.96 |     189.04 | metallic                     | 0xf84950c25562a74fb0fbbf694ca80279d66bb45a | 0x9ae4135ae354ee1f191fa6943fdf38d60d4d2cffecc3a0144994306cba77ecd5 | 0x9037369c58589e8c07191273bae7199d89786110ed55a02d319a6f738784de7d |
+    | 209 | Kk₂Gy      | 
+    | 209 | UqRoKkGy   | 
+    | 210 | ClMtYuKkL  | 
+[r] | 210 | ClSUqRoGj  | |   151040*|bohr    |  Vi-10⁺ +  Cl-25⁺ +  Cl-26ª +  Uq-47⁻ +  S-102ª +    10000 => ⬇ ClSUqRoGj(Cl-26,S-102,Uq-47>Gj-10,Ro-25) 210                                         +    9421.82 |     578.18 | chemical, decay              | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x3fe4cb732cef9f9542d62be005508031e15e8d64c63fb578bc66d4c1a86326a1 | 0xccbe758313c368001c8b55b05f96428b973b873fc1abcacc273d3a8e0dabe88a |
+    | 210 | C₅         | 
+    | 210 | Kk₃        | |   202654 |bohr    |  Kk-70ª +  Kk-70ª +  Kk-70ª                     +      222 =>   Kk₃(Kk-70,Kk-70,Kk-70>) 210                                                          +      24.62 |     197.38 | metallic                     | 0x81b5466029084d7fdc1b354773690c6b6266cd40 | 0x33e331c708ca5df159083c3bca43098448d128faa327459ac56af22b8ad6c845 | 0xf69ad2629c66b93079e403926d4ac8f0194aad7af7acbc50a7c3c6f164b858d3 |
+    | 210 | Yv₂Xj₂Nd   | 
+    | 211 | Kk₃        | |   200193 |bohr    |  Kk-70ª +  Kk-70ª +  Kk-71ª                     +      200 =>   Kk₃(Kk-70,Kk-70,Kk-71>) 211                                                          +       2.83 |     197.17 | metallic                     | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0x78156af1df832a292bfdd48d696d117267ffad9a77c5b2e552ddcee210b5d97f | 0x345412f6b0ca2b40e70a585803dd52e645997fe9625388d9b9f74b2cb147d050 |
+    | 212 | Kk₃        | |   195937 |bohr    |  Kk-70ª +  Kk-71ª +  Kk-71ª                     +      200 =>   Kk₃(Kk-70,Kk-71,Kk-71>) 212                                                          +       1.94 |     198.06 | metallic                     | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0xe424758bf844859bf4224ecca1917a1e3761fbf03b75fad267f6547b74bc2dd9 | 0x1d2d7a96257892317f4fdfae3319b68c55abb35f7de1341bd90669a8b8bed8b2 |
+    | 213 | Kk₃        | |   204291 |bohr    |  Kk-71ª +  Kk-71ª +  Kk-71ª                     +      200 =>   Kk₃(Kk-71,Kk-71,Kk-71>) 213                                                          +       1.06 |     198.94 | metallic                     | 0x43dbb736151d5548a097f4e854df2214a857383d | 0x146acca7be3e02f85caeb661a9104211c12b9a80f4432c192c5e6129c3b72291 | 0x9172bf92730ab3f16d2965df22a616fcc86ae26a1483d671188584bca2f82eb0 |
+    | 213 | LRoGyYv    | 
+    | 214 | ClLGyKk    | 
+    | 214 | ClUqKk₂    | 
+    | 214 | LRoKk₂     | 
+    | 215 | E₅         | 
+    | 215 | Kk₂SrYv    | 
+    | 215 | LClGyKk    | 
+    | 215 | LRoKk₂     | 
+    | 216 | Nb₄        | 
+    | 216 | WyYuKkGy   | 
+    | 216 | YuWyGyKk   | 
+    | 217 | YvLGyYu    | 
+    | 219 | GyYuYvL    | 
+    | 220 | Xk₄        | 
+    | 222 | E₅         | 
+    | 224 | MtRoSLT    | 
+    | 230 | A₅         | 
+    | 231 | HBt₂       | 
+    | 231 | KkNdLYvDz  | 
+    | 233 | SYuYvNd    | 
+    | 235 | Uq₅        | 
+    | 236 | KkSMtNd    | 
+    | 236 | Nb₃Gk      | 
+    | 236 | RoYvKk₂    | 
+    | 237 | ClYvGyKk   | 
+    | 238 | KkYvGjMtWy | 
+    | 239 | A₅         | 
+    | 241 | Cl₂UqKk₂   | 
+    | 243 | KkWyLGyEi  | 
+    | 243 | YuGyRoWyYv | 
+    | 253 | Nb₄D       | 
+    | 255 | LSTXjGy    | 
+    | 255 | UqKk₂Gy    | 
+    | 257 | ClSGjKkUq  | 
+    | 257 | NdKkYvGyXj | 
+    | 258 | LSViEbKk   | 
+    | 258 | UqKk₃      | 
+    | 265 | Xk₅        | 
+    | 268 | Gy₄        | 
+    | 270 | Nb₅        | 
+    | 271 | Nb₅        | 
+    | 275 | Xk₅        | 
+    | 276 | Kk₂Gy₂     | 
+    | 279 | Kk₃Gy      | 
+    | 279 | SYvT₂Kk    | 
+    | 280 | Kk₄        | 
+    | 284 | Kk₄        | 
+    | 288 | SYvViKkNd  | 
+    | 291 | ClYvKk₂L   | 
+    | 291 | SWyYvGy    | 
+    | 294 | SWyKk₂     | 
+    | 294 | WySKk₂     | 
+    | 305 | Hb₅        | 
+    | 306 | S₃         | 
+    | 309 | Ji₃        | 
+    | 310 | Hb₅        | 
+    | 311 | YvSGyKk    | 
+    | 312 | SYvKkGy    | 
+    | 334 | At₅        | 
+    | 335 | Gy₅        | 
+    | 342 | Ny₅        | 
+    | 350 | Kk₅        | 
+    | 351 | Kk₅        | 
+    | 352 | Gk₅        | 
+    | 352 | Kk₅        | 
+    | 355 | Kk₅        | 
+    | 370 | Qi₅        | 
+    | 380 | Qi₅        | 
+    | 385 | Qi₅        | 
+
+
+0f|��a;WE"ny / n\zggG Gk
+viW"vy:let @o=substitute(substitute(substitute(@v,'[^0-9]',' ','g'),'\>\s\+\<',' + ','g'),'\s*$','',''):echo printf("%d",eval(@o))
+s/\(\<\C[A-Z][A-Za-z₂₃₄₅]\+(.\{-})\)/\=printf("%s %d",submatch(1),eval(substitute(substitute(substitute(submatch(1),'[^0-9]',' ','g'),'\>\s\+\<',' + ','g'),'\s*$','','')))/
+
+
+" add the mass of the molecule after each molecule in the reaction:
+:%s/\(\<\C[A-Z][A-Za-z₂₃₄₅]\+(.\{-})\)/\=printf("%s %d",submatch(1),eval(substitute(substitute(substitute(submatch(1),'[^0-9]',' ','g'),'\>\s\+\<',' + ','g'),'\s*$','','')))/g
 
 2025-05-23 May.Fri 12:40:13 Discovered Ns-66 accidentally. Now 644 isotopes in Bohr
 
@@ -2437,7 +2684,7 @@ Then process decay rules and that Kn must be alpha decay and less than 0.78 stab
 
 P-23 + Nm-100 + 5000 => P-22 + Nm-101 + 1679.43 using 3320.57 nuclear+decay
 
-[ ] add to files
+[c] add to files
 
 try:
 [-] Nm-101⁺(0.739) + 0 => ? Dd-101

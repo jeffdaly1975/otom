@@ -677,6 +677,12 @@ my %idhash=(
 642 => "Dd-101",
 643 => "Dd-102",
 644 => "Ns-66",
+645 => "Uq-50",
+646 => "Uq-51",
+647 => "Ji-106",
+648 => "Kn-111",
+649 => "Ha-112",
+650 => "Ha-114",
 );
 
 
@@ -1325,6 +1331,13 @@ my %hexhash=(
  "Dd-101"=> "7a61d6c05ee09766c95546ced39d4600e2448ffdecb8259c8e418f904184d514",
  "Dd-102"=> "141e38331571c10ff2f79643143b4d38d9e23b0655003b3cf1f05763aff37e24",
  "Ns-66" => "ac7bbb5307224bbe2ac4e9f5768d2f7ba3bbcdccac8f35320733fe04aefa94b1",
+ "Uq-50" => "5e03581abbe7841bcc5b9fe72346e3bf55b928b101e296bbdde46f55f40c211f",
+ "Uq-51" => "a85af9d05ecc0f6c96713a59e5db6cbe85abefb51b870e2a01ce8354159a70ca",
+ "Ji-106"=> "512d1335a88a6d6c08b310d52815103b47127dffc76394921dee5c6a0de7c3c3",
+ "Kn-111"=> "80fe98d4f6a5d776d16c69cd5f8c30d071dc4113427329698970dd97f2d58af3",
+ "Ha-112"=> "7c1d487f731dcab52c9707c9808848e6055023ed43381c75fd157214621cc72b",
+ "Ha-114"=> "4039fcefde9c7bba03215541d880025eab2d9e6fa5d84bab27264d4dcca12a17",
+
 );
 
 # [ ] I could update this for all possible isotopes and print out the NRG total of your wallet isotopes
