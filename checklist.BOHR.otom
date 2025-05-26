@@ -1,91 +1,91 @@
-| Sr-1   | have |
-| Sr-2   | have |
-| Sr-3   | have |
-| Ei-4   | have |
-| Ei-5   | have |
-| As-5   | have |
-| As-6   | have |
-| As-7   | have |
-| Dz-7   | have |
-| Dz-8   | have |
-| Dz-9   | have |
+| Sr-1   | have | mineable
+| Sr-2   | have | mineable
+| Sr-3   | have | mineable
+| Ei-4   | have | mineable
+| Ei-5   | have | mineable
+| As-5   | have | mineable
+| As-6   | have | mineable
+| As-7   | have | mineable
+| Dz-7   | have | mineable
+| Dz-8   | have | mineable
+| Dz-9   | have | mineable
 | Dz-10  | have |
 | Gj-9   | have | from mineables
 | Gj-10  | have | from mineables
-| Gj-11  | have |
+| Gj-11  | have | mineable
 | Gj-12  | have |
-| Vi-10  | have |
-| Vi-11  | have |
+| Vi-10  | have | mineable
+| Vi-11  | have | mineable
 | Vi-12  | have | from mineables
 | Vi-13  | have | from mineables
 | Vi-14  | have |
-| Ct-13  | have |
+| Ct-13  | have | mineable
 | Ct-14  | have | from mineables
-| Ct-15  | have |
+| Ct-15  | have | mineable
 | Ct-16  | have |
-| Ct-17  | have |
-| T-15   | have |
-| T-16   | have |
-| T-17   | have |
+| Ct-17  | have | mineable
+| T-15   | have | mineable
+| T-16   | have | mineable
+| T-17   | have | mineable
 | T-18   | have |
 | T-19   | have |
 | Xj-16  | have |
-| Xj-17  | have |
-| Xj-18  | have |
+| Xj-17  | have | mineable
+| Xj-18  | have | mineable
 | Xj-19  | have | from mineables
 | Xj-20  | have | from mineables
 | Xj-21  | have |
-| Eb-19  | have |
-| Eb-20  | have |
-| Eb-21  | have |
-| Eb-22  | have |
-| Eb-23  | [ ]  |
-| P-21   | have |
+| Eb-19  | have | mineable
+| Eb-20  | have | mineable
+| Eb-21  | have | mineable
+| Eb-22  | have | mineable
+| Eb-23  | have |
+| P-21   | have | mineable
 | P-22   | have | from mineables
-| P-23   | have |
-| P-24   | have | from mineables
-| P-25   | [ ]  |
+| P-23   | have | mineable
+| P-24   | [ ]  | from mineables
+| P-25   | have |
 | P-26   | [ ]  |
-| Ro-22  | have |
-| Ro-23  | have |
-| Ro-24  | have |
+| Ro-22  | have | mineable
+| Ro-23  | have | mineable
+| Ro-24  | have | mineable
 | Ro-25  | have | from mineables
 | Ro-26  | have | from mineables
 | Ro-27  | have |
 | Ro-28  | have |
-| Cl-24  | [ ]  |
-| Cl-25  | have |
-| Cl-26  | have |
-| Cl-27  | have |
+| Cl-24  | have |
+| Cl-25  | have | mineable
+| Cl-26  | have | mineable
+| Cl-27  | have | mineable
 | Cl-28  | have | from mineables
 | Cl-29  | have |
 | Cl-30  | have |
 | Yu-26  | [ ]  |
-| Yu-27  | have |
+| Yu-27  | have | mineable
 | Yu-28  | have | from mineables
-| Yu-29  | have |
+| Yu-29  | have | mineable
 | Yu-30  | have | from mineables
 | Yu-31  | have | from mineables
 | Nd-28  | have |
 | Nd-29  | have | from mineables
-| Nd-30  | have |
+| Nd-30  | have | mineable
 | Nd-31  | have | from mineables
 | Nd-32  | have | from mineables
 | Nd-33  | have | from mineables
 | Nd-34  | have | from mineables
 | K-29   | [ ]  |
 | K-30   | have |
-| K-31   | have |
+| K-31   | have | mineable
 | K-32   | have | from mineables
 | K-33   | have | from mineables
-| K-34   | have |
+| K-34   | have | mineable
 | K-35   | have | from mineables
 | K-36   | have |
-| K-37   | [ ]  |
-| Mt-32  | have |
+| K-37   | have |
+| Mt-32  | have | mineable
 | Mt-33  | have | from mineables
-| Mt-34  | have |
-| Mt-35  | have |
+| Mt-34  | have | mineable
+| Mt-35  | have | mineable
 | Mt-36  | have | from mineables
 | Mt-37  | have | from mineables
 | Mt-38  | have |
@@ -103,7 +103,7 @@
 | Dx-40  | have | from mineables
 | Dx-41  | have | from mineables
 | Dx-42  | have |
-| Dx-43  | [ ]  |
+| Dx-43  | have |
 | Dx-44  | have |
 | Gd-38  | have |
 | Gd-39  | have | from mineables
@@ -122,7 +122,7 @@
 | V-44   | have | from mineables
 | V-45   | have | from mineables
 | V-46   | have | from mineables
-| V-47   | [ ]  |
+| V-47   | have |
 | V-48   | have |
 | Uq-41  | have |
 | Uq-42  | have | from mineables
@@ -130,7 +130,7 @@
 | Uq-44  | have | from mineables
 | Uq-45  | have | from mineables
 | Uq-46  | have | from mineables
-| Uq-47  | have |
+| Uq-47  | have | mineable
 | Uq-48  | have |
 | Uq-49  | [ ]  |
 | Uq-50  | have |
@@ -141,7 +141,7 @@
 | Pb-45  | have | from mineables
 | Pb-46  | have | from mineables
 | Pb-47  | have | from mineables
-| Pb-48  | have |
+| Pb-48  | have | mineable
 | Pb-49  | have | from mineables
 | Pb-50  | have | from mineables
 | Pb-51  | have | from mineables
@@ -151,7 +151,7 @@
 | Wy-47  | have | from mineables
 | Wy-48  | have | from mineables
 | Wy-49  | have | from mineables
-| Wy-50  | have |
+| Wy-50  | have | mineable
 | Wy-51  | have | from mineables
 | Wy-52  | have | from mineables
 | Wy-53  | have |
@@ -162,7 +162,7 @@
 | L-48   | have |
 | L-49   | have | from mineables
 | L-50   | have | from mineables
-| L-51   | have |
+| L-51   | have | mineable
 | L-52   | have | from mineables
 | L-53   | have | from mineables
 | L-54   | have | from mineables
@@ -245,11 +245,12 @@
 | F-67   | have | from mineables
 | F-68   | have | from mineables
 | F-69   | have | from mineables
+| F-73   | [ ]  |
 | Gy-63  | [ ]  |
 | Gy-64  | have |
 | Gy-65  | have | from mineables
 | Gy-66  | have | from mineables
-| Gy-67  | have |
+| Gy-67  | have | mineable
 | Gy-68  | have | from mineables
 | Gy-69  | have | from mineables
 | Gy-70  | have | from mineables
@@ -259,15 +260,15 @@
 | Kk-67  | have | from mineables
 | Kk-68  | have | from mineables
 | Kk-69  | have | from mineables
-| Kk-70  | have |
-| Kk-71  | have |
+| Kk-70  | have | mineable
+| Kk-71  | have | mineable
 | Kk-72  | have | from mineables
 | Yv-67  | [ ]  |
 | Yv-68  | [ ]  |
 | Yv-69  | have |
 | Yv-70  | have | from mineables
 | Yv-71  | have | from mineables
-| Yv-72  | have |
+| Yv-72  | have | mineable
 | Yv-73  | have | from mineables
 | Yv-74  | have | from mineables
 | Yv-75  | have |
@@ -320,7 +321,7 @@
 | Co-86  | [ ]  |
 | Co-87  | [ ]  |
 | Co-88  | [ ]  |
-| W-76   | [ ]  |
+| W-76   | have |
 | W-77   | have |
 | W-78   | [ ]  |
 | W-79   | have |
@@ -336,7 +337,7 @@
 | W-89   | [ ]  |
 | W-90   | [ ]  |
 | W-91   | [ ]  |
-| Lx-76  | [ ]  |
+| Lx-76  | have |
 | Lx-77  | [ ]  |
 | Lx-79  | [ ]  |
 | Lx-80  | [ ]  |
@@ -368,8 +369,8 @@
 | N-90   | have |
 | N-91   | [ ]  |
 | N-92   | [ ]  |
-| N-93   | [ ]  |
-| N-94   | [ ]  |
+| N-93   | have |
+| N-94   | have |
 | N-95   | [ ]  |
 | N-96   | have |
 | U-83   | have |
@@ -405,7 +406,7 @@
 | Vl-98  | [ ]  |
 | Vl-99  | [ ]  |
 | Vl-100 | [ ]  |
-| Vl-101 | [ ]  |
+| Vl-101 | have |
 | Se-84  | [ ]  |
 | Se-85  | [ ]  |
 | Se-86  | [ ]  |
@@ -425,6 +426,7 @@
 | Se-100 | [ ]  |
 | Se-101 | [ ]  |
 | Se-102 | [ ]  |
+| Se-103 | [ ]  |
 | Se-100 | [ ]  |
 | Nm-87  | have |
 | Nm-88  | [ ]  |
@@ -501,7 +503,7 @@
 | Da-105 | [ ]  |
 | Da-106 | [ ]  |
 | Da-107 | [ ]  |
-| Da-108 | [ ]  |
+| Da-108 | have |
 | Da-109 | [ ]  |
 | S-94   | [ ]  |
 | S-95   | [ ]  |
@@ -511,7 +513,7 @@
 | S-99   | have |
 | S-100  | have |
 | S-101  | have | from mineables
-| S-102  | have |
+| S-102  | have | mineable
 | S-103  | have | from mineables
 | S-104  | have |
 | S-105  | [ ]  |
@@ -647,4 +649,4 @@
 | X-119  | [ ]  |
 | Eh-123 | [ ]  |
 | Eh-124 | [ ]  |
-| Ys-125 | [ ]  |
+| Ys-125 | have |

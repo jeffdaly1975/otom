@@ -1,3 +1,735 @@
+What does this mean? "  aw124, how much nrg in p23 + vl101
+
+2025-05-25 May.Sun 19:42:05 New Discovery F-73 now 652 isotopes in BOHR
+
+OTOMRO 214964: U-95ª + 0 => P-22 + F-73 | used    0.00 decay
+
+[c] add to files
+
+try this UNLESS YOU PUT TOO MUCH IN AND GET MtNd:
+[ ] F-73⁻ + 5000 =>  Nd-34 + Mt-39 
+
+
+try ratcheting down for the missing pieces:
+[f] ratchet down  F-73 with P-21: [f] P-21 + F-73 + 2500 => ? P-22 + F-72 <---NOPE!!!! makes Vl-94 using 1946.30 nuclear+decay
+
+2025-05-25 May.Sun 19:15:17 Phew. I completed the known isotopes of the first row of the BOHR periodic table.
+I only need Yu-26 and K-29 to complete the tiny second row.
+
+There's a long way to go altogether.
+
+I think I shall do it by increasing number of recipe chains
+
+2025-05-25 May.Sun 17:06:05 made more files
+::FILE:: datasets/token_ids-alpha.csv
+::FILE:: datasets/token_ids-bohr.csv
+
+2025-05-25 May.Sun 16:28:05 What is each isotope's potential P-22 alpha decay pairing?
+
+  otom   |Stability|   isotope minus P-22 = 
+ Sr-1∙   | (1.000) |   1  1 Sr - 22 11  P = -21 -10 ??         not possible
+ Sr-2∙   | (1.000) |   2  1 Sr - 22 11  P = -20 -10 ??         not possible
+ Sr-3∙   | (1.000) |   3  1 Sr - 22 11  P = -19 -10 ??         not possible
+ Ei-4∙   | (1.000) |   4  2 Ei - 22 11  P = -18  -9 ??         not possible
+ Ei-5∙   | (1.000) |   5  2 Ei - 22 11  P = -17  -9 ??         not possible
+ As-5⁺   | (0.002) |   5  3 As - 22 11  P = -17  -8 ??         not possible
+ As-6∙   | (1.000) |   6  3 As - 22 11  P = -16  -8 ??         not possible
+ As-7∙   | (1.000) |   7  3 As - 22 11  P = -15  -8 ??         not possible
+ Dz-7⁺   | (0.177) |   7  4 Dz - 22 11  P = -15  -7 ??         not possible
+ Dz-8∙   | (1.000) |   8  4 Dz - 22 11  P = -14  -7 ??         not possible
+ Dz-9∙   | (1.000) |   9  4 Dz - 22 11  P = -13  -7 ??         not possible
+ Dz-10⁻  | (0.263) |  10  4 Dz - 22 11  P = -12  -7 ??         not possible
+ Gj-9⁺   | (0.308) |   9  5 Gj - 22 11  P = -13  -6 ??         not possible
+ Gj-10∙  | (1.000) |  10  5 Gj - 22 11  P = -12  -6 ??         not possible
+ Gj-11∙  | (1.057) |  11  5 Gj - 22 11  P = -11  -6 ??         not possible
+ Gj-12⁻  | (0.278) |  12  5 Gj - 22 11  P = -10  -6 ??         not possible
+ Vi-10⁺  | (0.022) |  10  6 Vi - 22 11  P = -12  -5 ??         not possible
+ Vi-11⁺  | (0.410) |  11  6 Vi - 22 11  P = -11  -5 ??         not possible
+ Vi-12∙  | (1.339) |  12  6 Vi - 22 11  P = -10  -5 ??         not possible
+ Vi-13∙  | (1.212) |  13  6 Vi - 22 11  P =  -9  -5 ??         not possible
+ Vi-14⁻  | (0.513) |  14  6 Vi - 22 11  P =  -8  -5 ??         not possible
+ Ct-13⁺  | (0.491) |  13  7 Ct - 22 11  P =  -9  -4 ??         not possible
+ Ct-14∙  | (1.212) |  14  7 Ct - 22 11  P =  -8  -4 ??         not possible
+ Ct-15∙  | (1.337) |  15  7 Ct - 22 11  P =  -7  -4 ??         not possible
+ Ct-16⁻  | (0.503) |  16  7 Ct - 22 11  P =  -6  -4 ??         not possible
+ Ct-17⁻  | (0.338) |  17  7 Ct - 22 11  P =  -5  -4 ??         not possible
+ T-15⁺   | (0.556) |  15  8  T - 22 11  P =  -7  -3 ??         not possible
+ T-16∙   | (1.507) |  16  8  T - 22 11  P =  -6  -3 ??         not possible
+ T-17∙   | (1.438) |  17  8  T - 22 11  P =  -5  -3 ??         not possible
+ T-18⁻   | (0.667) |  18  8  T - 22 11  P =  -4  -3 ??         not possible
+ T-19⁻   | (0.447) |  19  8  T - 22 11  P =  -3  -3 ??         not possible
+ Xj-16⁺  | (0.281) |  16  9 Xj - 22 11  P =  -6  -2 ??         not possible
+ Xj-17⁺  | (0.609) |  17  9 Xj - 22 11  P =  -5  -2 ??         not possible
+ Xj-18∙  | (1.400) |  18  9 Xj - 22 11  P =  -4  -2 ??         not possible
+ Xj-19∙  | (1.520) |  19  9 Xj - 22 11  P =  -3  -2 ??         not possible
+ Xj-20⁻  | (0.646) |  20  9 Xj - 22 11  P =  -2  -2 ??         not possible
+ Xj-21⁻  | (0.534) |  21  9 Xj - 22 11  P =  -1  -2 ??         not possible
+ Eb-19⁺  | (0.653) |  19 10 Eb - 22 11  P =  -3  -1 ??         not possible
+ Eb-20∙  | (1.623) |  20 10 Eb - 22 11  P =  -2  -1 ??         not possible
+ Eb-21∙  | (1.588) |  21 10 Eb - 22 11  P =  -1  -1 ??         not possible
+ Eb-22∙  | (1.534) |  22 10 Eb - 22 11  P =   0  -1 ??         not possible
+ Eb-23⁻  | (0.605) |  23 10 Eb - 22 11  P =   1  -1 ??         not possible
+ P-21⁺   | (0.689) |  21 11  P - 22 11  P =  -1   0 ??         not possible
+ P-22⁺   | (0.765) |  22 11  P - 22 11  P =   0   0 ??         not possible
+ P-23∙   | (1.644) |  23 11  P - 22 11  P =   1   0 ??         not possible
+ P-24⁻   | (0.741) |  24 11  P - 22 11  P =   2   0 ??         not possible
+ P-25⁻   | (0.664) |  25 11  P - 22 11  P =   3   0 ??         not possible
+ P-26⁻   | (0.478) |  26 11  P - 22 11  P =   4   0 ??         not possible
+ Ro-22⁺  | (0.559) |  22 12 Ro - 22 11  P =   0   1 ??         not possible
+ Ro-23ª  | (0.719) |  23 12 Ro - 22 11  P =   1   1 Sr (Sr-1)
+ Ro-24ª  | (0.851) |  24 12 Ro - 22 11  P =   2   1 Sr (Sr-2)  not possible - Stability at or above 0.78
+ Ro-25∙  | (1.690) |  25 12 Ro - 22 11  P =   3   1 Sr (Sr-3)  not possible - not alpha decay
+ Ro-26∙  | (1.668) |  26 12 Ro - 22 11  P =   4   1 Sr (Sr-4)  not possible - not alpha decay
+ Ro-27⁻  | (0.712) |  27 12 Ro - 22 11  P =   5   1 Sr (Sr-5)  not possible - not alpha decay
+ Ro-28⁻  | (0.601) |  28 12 Ro - 22 11  P =   6   1 Sr (Sr-6)  not possible - not alpha decay
+ Cl-24⁺  | (0.537) |  24 13 Cl - 22 11  P =   2   2 Ei (Ei-2)  not possible - not alpha decay
+ Cl-25⁺  | (0.744) |  25 13 Cl - 22 11  P =   3   2 Ei (Ei-3)  not possible - not alpha decay
+ Cl-26ª  | (0.809) |  26 13 Cl - 22 11  P =   4   2 Ei (Ei-4)  not possible - Stability at or above 0.78
+ Cl-27∙  | (1.728) |  27 13 Cl - 22 11  P =   5   2 Ei (Ei-5)  not possible - not alpha decay
+ Cl-28⁻  | (0.806) |  28 13 Cl - 22 11  P =   6   2 Ei (Ei-6)  not possible - not alpha decay
+ Cl-29⁻  | (0.752) |  29 13 Cl - 22 11  P =   7   2 Ei (Ei-7)  not possible - not alpha decay
+ Cl-30⁻  | (0.608) |  30 13 Cl - 22 11  P =   8   2 Ei (Ei-8)  not possible - not alpha decay
+ Yu-26⁺  | (0.633) |  26 14 Yu - 22 11  P =   4   3 As (As-4)  not possible - not alpha decay
+ Yu-27⁺  | (0.764) |  27 14 Yu - 22 11  P =   5   3 As (As-5)  not possible - not alpha decay
+ Yu-28ª  | (0.878) |  28 14 Yu - 22 11  P =   6   3 As (As-6)  not possible - Stability at or above 0.78
+ Yu-29∙  | (1.758) |  29 14 Yu - 22 11  P =   7   3 As (As-7)  not possible - not alpha decay
+ Yu-30∙  | (1.757) |  30 14 Yu - 22 11  P =   8   3 As (As-8)  not possible - not alpha decay
+ Yu-31⁻  | (0.786) |  31 14 Yu - 22 11  P =   9   3 As (As-9)  not possible - not alpha decay
+ Nd-28⁺  | (0.609) |  28 15 Nd - 22 11  P =   6   4 Dz (Dz-6)  not possible - not alpha decay
+ Nd-29⁺  | (0.781) |  29 15 Nd - 22 11  P =   7   4 Dz (Dz-7)  not possible - not alpha decay
+ Nd-30ª  | (0.839) |  30 15 Nd - 22 11  P =   8   4 Dz (Dz-8)  not possible - Stability at or above 0.78
+ Nd-31∙  | (1.783) |  31 15 Nd - 22 11  P =   9   4 Dz (Dz-9)  not possible - not alpha decay
+ Nd-32⁻  | (0.850) |  32 15 Nd - 22 11  P =  10   4 Dz (Dz-10) not possible - not alpha decay
+ Nd-33⁻  | (0.813) |  33 15 Nd - 22 11  P =  11   4 Dz (Dz-11) not possible - not alpha decay
+ Nd-34⁻  | (0.699) |  34 15 Nd - 22 11  P =  12   4 Dz (Dz-12) not possible - not alpha decay
+ K-29⁺   | (0.459) |  29 16  K - 22 11  P =   7   5 Gj (Gj-7)  not possible - not alpha decay
+ K-30⁺   | (0.685) |  30 16  K - 22 11  P =   8   5 Gj (Gj-8)  not possible - not alpha decay
+ K-31⁺   | (0.795) |  31 16  K - 22 11  P =   9   5 Gj (Gj-9)  not possible - not alpha decay
+ K-32∙   | (1.791) |  32 16  K - 22 11  P =  10   5 Gj (Gj-10) not possible - not alpha decay
+ K-33∙   | (1.803) |  33 16  K - 22 11  P =  11   5 Gj (Gj-11) not possible - not alpha decay
+ K-34∙   | (1.817) |  34 16  K - 22 11  P =  12   5 Gj (Gj-12) not possible - not alpha decay
+ K-35⁻   | (0.837) |  35 16  K - 22 11  P =  13   5 Gj (Gj-13) not possible - not alpha decay
+ K-36⁻   | (0.773) |  36 16  K - 22 11  P =  14   5 Gj (Gj-14) not possible - not alpha decay
+ K-37⁻   | (0.644) |  37 16  K - 22 11  P =  15   5 Gj (Gj-15) not possible - not alpha decay
+ Mt-32⁺  | (0.660) |  32 17 Mt - 22 11  P =  10   6 Vi (Vi-10) not possible - not alpha decay
+ Mt-33⁺  | (0.807) |  33 17 Mt - 22 11  P =  11   6 Vi (Vi-11) not possible - not alpha decay
+ Mt-34⁺  | (0.859) |  34 17 Mt - 22 11  P =  12   6 Vi (Vi-12) not possible - not alpha decay
+ Mt-35∙  | (1.819) |  35 17 Mt - 22 11  P =  13   6 Vi (Vi-13) not possible - not alpha decay
+ Mt-36⁻  | (0.880) |  36 17 Mt - 22 11  P =  14   6 Vi (Vi-14) not possible - not alpha decay
+ Mt-37⁻  | (0.856) |  37 17 Mt - 22 11  P =  15   6 Pq (Pq-15) not possible - not alpha decay
+ Mt-38⁻  | (0.765) |  38 17 Mt - 22 11  P =  16   6 Pq (Pq-16) not possible - not alpha decay
+ Lu-34⁺  | (0.720) |  34 18 Lu - 22 11  P =  12   7 Ct (Ct-12) not possible - not alpha decay
+ Lu-35⁺  | (0.816) |  35 18 Lu - 22 11  P =  13   7 Ct (Ct-13) not possible - not alpha decay
+ Lu-36∙  | (1.810) |  36 18 Lu - 22 11  P =  14   7 Ct (Ct-14) not possible - not alpha decay
+ Lu-37∙  | (1.831) |  37 18 Lu - 22 11  P =  15   7 Ct (Ct-15) not possible - not alpha decay
+ Lu-38∙  | (1.855) |  38 18 Lu - 22 11  P =  16   7 Ct (Ct-16) not possible - not alpha decay
+ Lu-39⁻  | (0.872) |  39 18 Lu - 22 11  P =  17   7 Ct (Ct-17) not possible - not alpha decay
+ Lu-40⁻  | (0.825) |  40 18 Lu - 22 11  P =  18   7 Ct (Ct-18) not possible - not alpha decay
+ Lu-41⁻  | (0.720) |  41 18 Lu - 22 11  P =  19   7 Ct (Ct-19) not possible - not alpha decay
+ Dx-37⁺  | (0.823) |  37 19 Dx - 22 11  P =  15   8  T (T-15)  not possible - not alpha decay
+ Dx-38⁺  | (0.872) |  38 19 Dx - 22 11  P =  16   8  T (T-16)  not possible - not alpha decay
+ Dx-39∙  | (1.840) |  39 19 Dx - 22 11  P =  17   8  T (T-17)  not possible - not alpha decay
+ Dx-40⁻  | (0.900) |  40 19 Dx - 22 11  P =  18   8  T (T-18)  not possible - not alpha decay
+ Dx-41⁻  | (0.886) |  41 19 Dx - 22 11  P =  19   8  T (T-19)  not possible - not alpha decay
+ Dx-42⁻  | (0.814) |  42 19 Dx - 22 11  P =  20   8  T (T-20)  not possible - not alpha decay
+ Dx-43⁻  | (0.752) |  43 19 Dx - 22 11  P =  21   8  T (T-21)  not possible - not alpha decay
+ Dx-44⁻  | (0.640) |  44 19 Dx - 22 11  P =  22   8  T (T-22)  not possible - not alpha decay
+ Gd-38⁺  | (0.745) |  38 20 Gd - 22 11  P =  16   9 Xj (Xj-16) not possible - not alpha decay
+ Gd-39⁺  | (0.829) |  39 20 Gd - 22 11  P =  17   9 Xj (Xj-17) not possible - not alpha decay
+ Gd-40∙  | (1.820) |  40 20 Gd - 22 11  P =  18   9 Xj (Xj-18) not possible - not alpha decay
+ Gd-41∙  | (1.847) |  41 20 Gd - 22 11  P =  19   9 Xj (Xj-19) not possible - not alpha decay
+ Gd-42∙  | (1.880) |  42 20 Gd - 22 11  P =  20   9 Xj (Xj-20) not possible - not alpha decay
+ Gd-43⁻  | (0.898) |  43 20 Gd - 22 11  P =  21   9 Xj (Xj-21) not possible - not alpha decay
+ Gd-44⁻  | (0.864) |  44 20 Gd - 22 11  P =  22   9 Xj (Xj-22) not possible - not alpha decay
+ Gd-45⁻  | (0.780) |  45 20 Gd - 22 11  P =  23   9 Xj (Xj-23) not possible - not alpha decay
+ Gd-46⁻  | (0.710) |  46 20 Gd - 22 11  P =  24   9 Xj (Xj-24) not possible - not alpha decay
+ V-39⁺   | (0.600) |  39 21  V - 22 11  P =  17  10 Eb (Eb-17) not possible - not alpha decay
+ V-40⁺   | (0.720) |  40 21  V - 22 11  P =  18  10 Eb (Eb-18) not possible - not alpha decay
+ V-41⁺   | (0.834) |  41 21  V - 22 11  P =  19  10 Eb (Eb-19) not possible - not alpha decay
+ V-42⁺   | (0.879) |  42 21  V - 22 11  P =  20  10 Eb (Eb-20) not possible - not alpha decay
+ V-43∙   | (1.852) |  43 21  V - 22 11  P =  21  10 Eb (Eb-21) not possible - not alpha decay
+ V-44∙   | (1.829) |  44 21  V - 22 11  P =  22  10 Eb (Eb-22) not possible - not alpha decay
+ V-45⁻   | (0.908) |  45 21  V - 22 11  P =  23  10 Eb (Eb-23) not possible - not alpha decay
+ V-46⁻   | (0.852) |  46 21  V - 22 11  P =  24  10 Eb (Eb-24) not possible - not alpha decay
+ V-47⁻   | (0.808) |  47 21  V - 22 11  P =  25  10 Eb (Eb-25) not possible - not alpha decay
+ V-48⁻   | (0.723) |  48 21  V - 22 11  P =  26  10 Eb (Eb-26) not possible - not alpha decay
+ Uq-41⁺  | (0.618) |  41 22 Uq - 22 11  P =  19  11  P (P-19)  not possible - not alpha decay
+ Uq-42⁺  | (0.762) |  42 22 Uq - 22 11  P =  20  11  P (P-20)  not possible - not alpha decay
+ Uq-43⁺  | (0.837) |  43 22 Uq - 22 11  P =  21  11  P (P-21)  not possible - not alpha decay
+ Uq-44⁺  | (0.911) |  44 22 Uq - 22 11  P =  22  11  P (P-22)  not possible - not alpha decay
+ Uq-45∙  | (1.856) |  45 22 Uq - 22 11  P =  23  11  P (P-23)  not possible - not alpha decay
+ Uq-46∙  | (1.897) |  46 22 Uq - 22 11  P =  24  11  P (P-24)  not possible - not alpha decay
+ Uq-47⁻  | (0.918) |  47 22 Uq - 22 11  P =  25  11  P (P-25)  not possible - not alpha decay
+ Uq-48⁻  | (0.898) |  48 22 Uq - 22 11  P =  26  11  P (P-26)  not possible - not alpha decay
+ Uq-49⁻  | (0.838) |  49 22 Uq - 22 11  P =  27  11  P (P-27)  not possible - not alpha decay
+ Uq-50⁻  | (0.800) |  50 22 Uq - 22 11  P =  28  11  P (P-28)  not possible - not alpha decay
+ Uq-51⁻  | (0.778) |  51 22 Uq - 22 11  P =  29  11  P (P-29)  not possible - not alpha decay
+ Uq-52⁻  | (0.601) |  52 22 Uq - 22 11  P =  30  11  P (P-30)  not possible - not alpha decay
+ Pb-43⁺  | (0.633) |  43 23 Pb - 22 11  P =  21  12 Ro (Ro-21) not possible - not alpha decay
+ Pb-44⁺  | (0.738) |  44 23 Pb - 22 11  P =  22  12 Ro (Ro-22) not possible - not alpha decay
+ Pb-45⁺  | (0.840) |  45 23 Pb - 22 11  P =  23  12 Ro (Ro-23) not possible - not alpha decay
+ Pb-46⁺  | (0.882) |  46 23 Pb - 22 11  P =  24  12 Ro (Ro-24) not possible - not alpha decay
+ Pb-47∙  | (1.859) |  47 23 Pb - 22 11  P =  25  12 Ro (Ro-25) not possible - not alpha decay
+ Pb-48∙  | (1.852) |  48 23 Pb - 22 11  P =  26  12 Ro (Ro-26) not possible - not alpha decay
+ Pb-49⁻  | (0.930) |  49 23 Pb - 22 11  P =  27  12 Ro (Ro-27) not possible - not alpha decay
+ Pb-50⁻  | (0.893) |  50 23 Pb - 22 11  P =  28  12 Ro (Ro-28) not possible - not alpha decay
+ Pb-51⁻  | (0.878) |  51 23 Pb - 22 11  P =  29  12 Ro (Ro-29) not possible - not alpha decay
+ Pb-52⁻  | (0.878) |  52 23 Pb - 22 11  P =  30  12 Ro (Ro-30) not possible - not alpha decay
+ Wy-45⁺  | (0.646) |  45 24 Wy - 22 11  P =  23  13 Cl (Cl-23) not possible - not alpha decay
+ Wy-46⁺  | (0.775) |  46 24 Wy - 22 11  P =  24  13 Cl (Cl-24) not possible - not alpha decay
+ Wy-47⁺  | (0.843) |  47 24 Wy - 22 11  P =  25  13 Cl (Cl-25) not possible - not alpha decay
+ Wy-48⁺  | (0.911) |  48 24 Wy - 22 11  P =  26  13 Cl (Cl-26) not possible - not alpha decay
+ Wy-49∙  | (1.864) |  49 24 Wy - 22 11  P =  27  13 Cl (Cl-27) not possible - not alpha decay
+ Wy-50∙  | (1.918) |  50 24 Wy - 22 11  P =  28  13 Cl (Cl-28) not possible - not alpha decay
+ Wy-51∙  | (1.890) |  51 24 Wy - 22 11  P =  29  13 Cl (Cl-29) not possible - not alpha decay
+ Wy-52∙  | (1.903) |  52 24 Wy - 22 11  P =  30  13 Cl (Cl-30) not possible - not alpha decay
+ Wy-53⁻  | (0.972) |  53 24 Wy - 22 11  P =  31  13 Cl (Cl-31) not possible - not alpha decay
+ Wy-54⁻  | (0.835) |  54 24 Wy - 22 11  P =  32  13 Cl (Cl-32) not possible - not alpha decay
+ Wy-55⁻  | (0.716) |  55 24 Wy - 22 11  P =  33  13 Cl (Cl-33) not possible - not alpha decay
+ L-46⁺   | (0.505) |  46 25  L - 22 11  P =  24  14 Yu (Yu-24) not possible - not alpha decay
+ L-47⁺   | (0.660) |  47 25  L - 22 11  P =  25  14 Yu (Yu-25) not possible - not alpha decay
+ L-48⁺   | (0.754) |  48 25  L - 22 11  P =  26  14 Yu (Yu-26) not possible - not alpha decay
+ L-49⁺   | (0.846) |  49 25  L - 22 11  P =  27  14 Yu (Yu-27) not possible - not alpha decay
+ L-50⁺   | (0.886) |  50 25  L - 22 11  P =  28  14 Yu (Yu-28) not possible - not alpha decay
+ L-51⁺   | (0.936) |  51 25  L - 22 11  P =  29  14 Yu (Yu-29) not possible - not alpha decay
+ L-52⁺   | (0.945) |  52 25  L - 22 11  P =  30  14 Yu (Yu-30) not possible - not alpha decay
+ L-53∙   | (1.945) |  53 25  L - 22 11  P =  31  14 Yu (Yu-31) not possible - not alpha decay
+ L-54∙   | (1.014) |  54 25  L - 22 11  P =  32  14 Zq (Zq-32) not possible - not alpha decay
+ L-55⁻   | (0.897) |  55 25  L - 22 11  P =  33  14 Zq (Zq-33) not possible - not alpha decay
+ L-56⁻   | (0.798) |  56 25  L - 22 11  P =  34  14 Zq (Zq-34) not possible - not alpha decay
+ L-57⁻   | (0.722) |  57 25  L - 22 11  P =  35  14 Zq (Zq-35) not possible - not alpha decay
+ Ux-48⁺  | (0.555) |  48 26 Ux - 22 11  P =  26  15 Nd (Nd-26) not possible - not alpha decay
+ Ux-49⁺  | (0.674) |  49 26 Ux - 22 11  P =  27  15 Nd (Nd-27) not possible - not alpha decay
+ Ux-50⁺  | (0.789) |  50 26 Ux - 22 11  P =  28  15 Nd (Nd-28) not possible - not alpha decay
+ Ux-51⁺  | (0.851) |  51 26 Ux - 22 11  P =  29  15 Nd (Nd-29) not possible - not alpha decay
+ Ux-52⁺  | (0.914) |  52 26 Ux - 22 11  P =  30  15 Nd (Nd-30) not possible - not alpha decay
+ Ux-53⁺  | (0.945) |  53 26 Ux - 22 11  P =  31  15 Nd (Nd-31) not possible - not alpha decay
+ Ux-54⁺  | (0.993) |  54 26 Ux - 22 11  P =  32  15 Nd (Nd-32) not possible - not alpha decay
+ Ux-55∙  | (1.054) |  55 26 Ux - 22 11  P =  33  15 Nd (Nd-33) not possible - not alpha decay
+ Ux-56⁻  | (0.956) |  56 26 Ux - 22 11  P =  34  15 Nd (Nd-34) not possible - not alpha decay
+ Ux-57⁻  | (0.875) |  57 26 Ux - 22 11  P =  35  15 Nd (Nd-35) not possible - not alpha decay
+ Ux-58⁻  | (0.817) |  58 26 Ux - 22 11  P =  36  15 Nd (Nd-36) not possible - not alpha decay
+ Pg-50⁺  | (0.554) |  50 27 Pg - 22 11  P =  28  16  K (K-28)  not possible - not alpha decay
+ Pg-51⁺  | (0.692) |  51 27 Pg - 22 11  P =  29  16  K (K-29)  not possible - not alpha decay
+ Pg-52⁺  | (0.777) |  52 27 Pg - 22 11  P =  30  16  K (K-30)  not possible - not alpha decay
+ Pg-53⁺  | (0.861) |  53 27 Pg - 22 11  P =  31  16  K (K-31)  not possible - not alpha decay
+ Pg-54⁺  | (0.899) |  54 27 Pg - 22 11  P =  32  16  K (K-32)  not possible - not alpha decay
+ Pg-55⁺  | (0.967) |  55 27 Pg - 22 11  P =  33  16  K (K-33)  not possible - not alpha decay
+ Pg-56∙  | (1.049) |  56 27 Pg - 22 11  P =  34  16  K (K-34)  not possible - not alpha decay
+ Pg-57⁻  | (0.969) |  57 27 Pg - 22 11  P =  35  16  K (K-35)  not possible - not alpha decay
+ Pg-58⁻  | (0.907) |  58 27 Pg - 22 11  P =  36  16  K (K-36)  not possible - not alpha decay
+ Pg-59⁻  | (0.880) |  59 27 Pg - 22 11  P =  37  16  K (K-37)  not possible - not alpha decay
+ Qe-52⁺  | (0.615) |  52 28 Qe - 22 11  P =  30  17 Mt (Mt-30) not possible - not alpha decay
+ Qe-53⁺  | (0.722) |  53 28 Qe - 22 11  P =  31  17 Mt (Mt-31) not possible - not alpha decay
+ Qe-54⁺  | (0.826) |  54 28 Qe - 22 11  P =  32  17 Mt (Mt-32) not possible - not alpha decay
+ Qe-55⁺  | (0.884) |  55 28 Qe - 22 11  P =  33  17 Mt (Mt-33) not possible - not alpha decay
+ Qe-56⁺  | (0.943) |  56 28 Qe - 22 11  P =  34  17 Mt (Mt-34) not possible - not alpha decay
+ Qe-57∙  | (1.044) |  57 28 Qe - 22 11  P =  35  17 Mt (Mt-35) not possible - not alpha decay
+ Qe-58⁻  | (0.982) |  58 28 Qe - 22 11  P =  36  17 Mt (Mt-36) not possible - not alpha decay
+ Qe-59⁻  | (0.965) |  59 28 Qe - 22 11  P =  37  17 Mt (Mt-37) not possible - not alpha decay
+ Qe-60⁻  | (0.955) |  60 28 Qe - 22 11  P =  38  17 Mt (Mt-38) not possible - not alpha decay
+ C-53⁺   | (0.555) |  53 29  C - 22 11  P =  31  18 Lu (Lu-31) not possible - not alpha decay
+ C-54⁺   | (0.682) |  54 29  C - 22 11  P =  32  18 Lu (Lu-32) not possible - not alpha decay
+ C-55⁺   | (0.807) |  55 29  C - 22 11  P =  33  18 Lu (Lu-33) not possible - not alpha decay
+ C-56⁺   | (0.884) |  56 29  C - 22 11  P =  34  18 Lu (Lu-34) not possible - not alpha decay
+ C-57⁺   | (0.962) |  57 29  C - 22 11  P =  35  18 Lu (Lu-35) not possible - not alpha decay
+ C-58∙   | (1.997) |  58 29  C - 22 11  P =  36  18 Lu (Lu-36) not possible - not alpha decay
+ C-59∙   | (1.037) |  59 29  C - 22 11  P =  37  18 Lu (Lu-37) not possible - not alpha decay
+ C-60∙   | (1.038) |  60 29  C - 22 11  P =  38  18 Lu (Lu-38) not possible - not alpha decay
+ C-61∙   | (1.044) |  61 29  C - 22 11  P =  39  18 Lu (Lu-39) not possible - not alpha decay
+ C-62∙   | (1.016) |  62 29  C - 22 11  P =  40  18 Lu (Lu-40) not possible - not alpha decay
+ C-63∙   | (1.990) |  63 29  C - 22 11  P =  41  18 Lu (Lu-41) not possible - not alpha decay
+ C-64⁻   | (0.943) |  64 29  C - 22 11  P =  42  18 Lu (Lu-42) not possible - not alpha decay
+ Ns-56⁺  | (0.627) |  56 30 Ns - 22 11  P =  34  19  O (O-34)  not possible - not alpha decay
+ Ns-57⁺  | (0.723) |  57 30 Ns - 22 11  P =  35  19  O (O-35)  not possible - not alpha decay
+ Ns-58⁺  | (0.819) |  58 30 Ns - 22 11  P =  36  19  O (O-36)  not possible - not alpha decay
+ Ns-59⁺  | (0.956) |  59 30 Ns - 22 11  P =  37  19 Dx (Dx-37) not possible - not alpha decay
+ Ns-60⁺  | (0.928) |  60 30 Ns - 22 11  P =  38  19 Dx (Dx-38) not possible - not alpha decay
+ Ns-61⁺  | (0.946) |  61 30 Ns - 22 11  P =  39  19 Dx (Dx-39) not possible - not alpha decay
+ Ns-62⁺  | (0.968) |  62 30 Ns - 22 11  P =  40  19 Dx (Dx-40) not possible - not alpha decay
+ Ns-63⁺  | (0.956) |  63 30 Ns - 22 11  P =  41  19 Dx (Dx-41) not possible - not alpha decay
+ Ns-64∙  | (1.899) |  64 30 Ns - 22 11  P =  42  19 Dx (Dx-42) not possible - not alpha decay
+ Ns-65⁻  | (0.912) |  65 30 Ns - 22 11  P =  43  19 Dx (Dx-43) not possible - not alpha decay
+ Ns-66⁻  | (0.881) |  66 30 Ns - 22 11  P =  44  19 Dx (Dx-44) not possible - not alpha decay
+ Ns-67⁻  | (0.822) |  67 30 Ns - 22 11  P =  45  19 Dx (Dx-45) not possible - not alpha decay
+ Ai-59⁺  | (0.722) |  59 31 Ai - 22 11  P =  37  20 Gd (Gd-37) not possible - not alpha decay
+ Ai-60⁺  | (0.877) |  60 31 Ai - 22 11  P =  38  20 Gd (Gd-38) not possible - not alpha decay
+ Ai-61⁺  | (0.866) |  61 31 Ai - 22 11  P =  39  20 Gd (Gd-39) not possible - not alpha decay
+ Ai-62⁺  | (0.873) |  62 31 Ai - 22 11  P =  40  20 Gd (Gd-40) not possible - not alpha decay
+ Ai-63⁺  | (0.910) |  63 31 Ai - 22 11  P =  41  20 Gd (Gd-41) not possible - not alpha decay
+ Ai-64⁺  | (0.914) |  64 31 Ai - 22 11  P =  42  20 Gd (Gd-42) not possible - not alpha decay
+ Ai-65∙  | (1.845) |  65 31 Ai - 22 11  P =  43  20 Gd (Gd-43) not possible - not alpha decay
+ Ai-66⁻  | (0.899) |  66 31 Ai - 22 11  P =  44  20 Gd (Gd-44) not possible - not alpha decay
+ Ai-67⁻  | (0.883) |  67 31 Ai - 22 11  P =  45  20 Gd (Gd-45) not possible - not alpha decay
+ Ai-68⁻  | (0.838) |  68 31 Ai - 22 11  P =  46  20 Gd (Gd-46) not possible - not alpha decay
+ Ai-69⁻  | (0.800) |  69 31 Ai - 22 11  P =  47  20 Gd (Gd-47) not possible - not alpha decay
+ F-59⁺   | (0.474) |  59 32  F - 22 11  P =  37  21  V (V-37)  not possible - not alpha decay
+ F-60⁺   | (0.632) |  60 32  F - 22 11  P =  38  21  V (V-38)  not possible - not alpha decay
+ F-61⁺   | (0.803) |  61 32  F - 22 11  P =  39  21  V (V-39)  not possible - not alpha decay
+ F-62⁺   | (0.808) |  62 32  F - 22 11  P =  40  21  V (V-40)  not possible - not alpha decay
+ F-63⁺   | (0.831) |  63 32  F - 22 11  P =  41  21  V (V-41)  not possible - not alpha decay
+ F-64⁺   | (0.870) |  64 32  F - 22 11  P =  42  21  V (V-42)  not possible - not alpha decay
+ F-65ª   | (0.888) |  65 32  F - 22 11  P =  43  21  V (V-43)  not possible - Stability at or above 0.78
+ F-66ª   | (0.910) |  66 32  F - 22 11  P =  44  21  V (V-44)  not possible - Stability at or above 0.78
+ F-67ª   | (0.902) |  67 32  F - 22 11  P =  45  21  V (V-45)  not possible - Stability at or above 0.78
+ F-68∙   | (1.797) |  68 32  F - 22 11  P =  46  21  V (V-46)  not possible - not alpha decay
+ F-69⁻   | (0.867) |  69 32  F - 22 11  P =  47  21  V (V-47)  not possible - not alpha decay
+ Gy-63⁺  | (0.717) |  63 33 Gy - 22 11  P =  41  22 Uq (Uq-41) not possible - not alpha decay
+ Gy-64⁺  | (0.756) |  64 33 Gy - 22 11  P =  42  22 Uq (Uq-42) not possible - not alpha decay
+ Gy-65⁺  | (0.809) |  65 33 Gy - 22 11  P =  43  22 Uq (Uq-43) not possible - not alpha decay
+ Gy-66ª  | (0.834) |  66 33 Gy - 22 11  P =  44  22 Uq (Uq-44) not possible - Stability at or above 0.78
+ Gy-67ª  | (0.871) |  67 33 Gy - 22 11  P =  45  22 Uq (Uq-45) not possible - Stability at or above 0.78
+ Gy-68ª  | (0.876) |  68 33 Gy - 22 11  P =  46  22 Uq (Uq-46) not possible - Stability at or above 0.78
+ Gy-69ª  | (0.886) |  69 33 Gy - 22 11  P =  47  22 Uq (Uq-47) not possible - Stability at or above 0.78
+ Gy-70ª  | (0.868) |  70 33 Gy - 22 11  P =  48  22 Uq (Uq-48) not possible - Stability at or above 0.78
+ Kk-64⁺  | (0.632) |  64 34 Kk - 22 11  P =  42  23 Pb (Pb-42) not possible - not alpha decay
+ Kk-65⁺  | (0.686) |  65 34 Kk - 22 11  P =  43  23 Pb (Pb-43) not possible - not alpha decay
+ Kk-66⁺  | (0.753) |  66 34 Kk - 22 11  P =  44  23 Pb (Pb-44) not possible - not alpha decay
+ Kk-67⁺  | (0.793) |  67 34 Kk - 22 11  P =  45  23 Pb (Pb-45) not possible - not alpha decay
+ Kk-68ª  | (0.837) |  68 34 Kk - 22 11  P =  46  23 Pb (Pb-46) not possible - Stability at or above 0.78
+ Kk-69ª  | (0.856) |  69 34 Kk - 22 11  P =  47  23 Pb (Pb-47) not possible - Stability at or above 0.78
+ Kk-70ª  | (0.879) |  70 34 Kk - 22 11  P =  48  23 Pb (Pb-48) not possible - Stability at or above 0.78
+ Kk-71ª  | (0.879) |  71 34 Kk - 22 11  P =  49  23 Pb (Pb-49) not possible - Stability at or above 0.78
+ Kk-72ª  | (0.886) |  72 34 Kk - 22 11  P =  50  23 Pb (Pb-50) not possible - Stability at or above 0.78
+ Yv-67⁺  | (0.667) |  67 35 Yv - 22 11  P =  45  24 Wy (Wy-45) not possible - not alpha decay
+ Yv-68⁺  | (0.721) |  68 35 Yv - 22 11  P =  46  24 Wy (Wy-46) not possible - not alpha decay
+ Yv-69⁺  | (0.778) |  69 35 Yv - 22 11  P =  47  24 Wy (Wy-47) not possible - not alpha decay
+ Yv-70ª  | (0.807) |  70 35 Yv - 22 11  P =  48  24 Wy (Wy-48) not possible - Stability at or above 0.78
+ Yv-71ª  | (0.846) |  71 35 Yv - 22 11  P =  49  24 Wy (Wy-49) not possible - Stability at or above 0.78
+ Yv-72ª  | (0.859) |  72 35 Yv - 22 11  P =  50  24 Wy (Wy-50) not possible - Stability at or above 0.78
+ Yv-73ª  | (0.879) |  73 35 Yv - 22 11  P =  51  24 Wy (Wy-51) not possible - Stability at or above 0.78
+ Yv-74ª  | (0.878) |  74 35 Yv - 22 11  P =  52  24 Wy (Wy-52) not possible - Stability at or above 0.78
+ Yv-75ª  | (0.896) |  75 35 Yv - 22 11  P =  53  24 Wy (Wy-53) not possible - Stability at or above 0.78
+ Yv-80⁻  | (0.764) |  80 35 Yv - 22 11  P =  58  24 Wy (Wy-58) not possible - not alpha decay
+ Cj-68⁺  | (0.587) |  68 36 Cj - 22 11  P =  46  25  L (L-46)  not possible - not alpha decay
+ Cj-71⁺  | (0.769) |  71 36 Cj - 22 11  P =  49  25  L (L-49)  not possible - not alpha decay
+ Cj-72ª  | (0.817) |  72 36 Cj - 22 11  P =  50  25  L (L-50)  not possible - Stability at or above 0.78
+ Cj-73ª  | (0.842) |  73 36 Cj - 22 11  P =  51  25  L (L-51)  not possible - Stability at or above 0.78
+ Cj-74ª  | (0.873) |  74 36 Cj - 22 11  P =  52  25  L (L-52)  not possible - Stability at or above 0.78
+ Cj-75ª  | (0.884) |  75 36 Cj - 22 11  P =  53  25  L (L-53)  not possible - Stability at or above 0.78
+ Cj-76ª  | (0.913) |  76 36 Cj - 22 11  P =  54  25  L (L-54)  not possible - Stability at or above 0.78
+ Cj-77∙  | (1.949) |  77 36 Cj - 22 11  P =  55  25  L (L-55)  not possible - not alpha decay
+ Cj-78⁻  | (0.874) |  78 36 Cj - 22 11  P =  56  25  L (L-56)  not possible - not alpha decay
+ Cj-79⁻  | (0.807) |  79 36 Cj - 22 11  P =  57  25  L (L-57)  not possible - not alpha decay
+ Cj-80⁻  | (0.802) |  80 36 Cj - 22 11  P =  58  25  L (L-58)  not possible - not alpha decay
+ Cj-81⁻  | (0.832) |  81 36 Cj - 22 11  P =  59  25  L (L-59)  not possible - not alpha decay
+ Iu-72⁺  | (0.706) |  72 37 Iu - 22 11  P =  50  26 Ux (Ux-50) not possible - not alpha decay
+ Iu-73ª  | (0.766) |  73 37 Iu - 22 11  P =  51  26 Ux (Ux-51)
+ Iu-74ª  | (0.797) |  74 37 Iu - 22 11  P =  52  26 Ux (Ux-52) not possible - Stability at or above 0.78
+ Iu-75ª  | (0.840) |  75 37 Iu - 22 11  P =  53  26 Ux (Ux-53) not possible - Stability at or above 0.78
+ Iu-76ª  | (0.862) |  76 37 Iu - 22 11  P =  54  26 Ux (Ux-54) not possible - Stability at or above 0.78
+ Iu-77ª  | (0.903) |  77 37 Iu - 22 11  P =  55  26 Ux (Ux-55) not possible - Stability at or above 0.78
+ Iu-78∙  | (1.950) |  78 37 Iu - 22 11  P =  56  26 Ux (Ux-56) not possible - not alpha decay
+ Iu-79⁻  | (0.885) |  79 37 Iu - 22 11  P =  57  26 Ux (Ux-57) not possible - not alpha decay
+ Iu-81⁻  | (0.833) |  81 37 Iu - 22 11  P =  59  26 Xk (Xk-59) not possible - not alpha decay
+ Iu-82∙  | (1.746) |  82 37 Iu - 22 11  P =  60  26 Xk (Xk-60) not possible - not alpha decay
+ Iu-83⁻  | (0.752) |  83 37 Iu - 22 11  P =  61  26 Xk (Xk-61) not possible - not alpha decay
+ D-74⁺   | (0.721) |  74 38  D - 22 11  P =  52  27 Pg (Pg-52) not possible - not alpha decay
+ D-75ª   | (0.764) |  75 38  D - 22 11  P =  53  27 Pg (Pg-53)
+ D-76ª   | (0.810) |  76 38  D - 22 11  P =  54  27 Pg (Pg-54) not possible - Stability at or above 0.78
+ D-77ª   | (0.843) |  77 38  D - 22 11  P =  55  27 Pg (Pg-55) not possible - Stability at or above 0.78
+ D-78ª   | (0.894) |  78 38  D - 22 11  P =  56  27 Pg (Pg-56) not possible - Stability at or above 0.78
+ D-79∙   | (1.954) |  79 38  D - 22 11  P =  57  27 Pg (Pg-57) not possible - not alpha decay
+ D-80⁻   | (0.897) |  80 38  D - 22 11  P =  58  27 Pg (Pg-58) not possible - not alpha decay
+ D-81⁻   | (0.850) |  81 38  D - 22 11  P =  59  27 Pg (Pg-59) not possible - not alpha decay
+ D-82⁺   | (0.865) |  82 38  D - 22 11  P =  60  27 Ic (Ic-60) not possible - not alpha decay
+ D-83∙   | (1.828) |  83 38  D - 22 11  P =  61  27 Ic (Ic-61) not possible - not alpha decay
+ D-84⁻   | (0.802) |  84 38  D - 22 11  P =  62  27 Ic (Ic-62) not possible - not alpha decay
+ Co-74⁺  | (0.574) |  74 39 Co - 22 11  P =  52  28 Qe (Qe-52) not possible - not alpha decay
+ Co-75⁺  | (0.657) |  75 39 Co - 22 11  P =  53  28 Qe (Qe-53) not possible - not alpha decay
+ Co-76ª  | (0.711) |  76 39 Co - 22 11  P =  54  28 Qe (Qe-54)
+ Co-78ª  | (0.799) |  78 39 Co - 22 11  P =  56  28 Qe (Qe-56) not possible - Stability at or above 0.78
+ Co-79ª  | (0.860) |  79 39 Co - 22 11  P =  57  28 Qe (Qe-57) not possible - Stability at or above 0.78
+ Co-80ª  | (0.953) |  80 39 Co - 22 11  P =  58  28 Qe (Qe-58) not possible - Stability at or above 0.78
+ Co-81ª  | (0.883) |  81 39 Co - 22 11  P =  59  28 Qe (Qe-59) not possible - Stability at or above 0.78
+ Co-82ª  | (0.847) |  82 39 Co - 22 11  P =  60  28 Qe (Qe-60) not possible - Stability at or above 0.78
+ Co-83⁺  | (0.871) |  83 39 Co - 22 11  P =  61  28 Yp (Yp-61) not possible - not alpha decay
+ Co-84∙  | (1.859) |  84 39 Co - 22 11  P =  62  28 Yp (Yp-62) not possible - not alpha decay
+ Co-85⁻  | (0.827) |  85 39 Co - 22 11  P =  63  28 Yp (Yp-63) not possible - not alpha decay
+ Co-86⁻  | (0.760) |  86 39 Co - 22 11  P =  64  28 Yp (Yp-64) not possible - not alpha decay
+ Co-87⁻  | (0.755) |  87 39 Co - 22 11  P =  65  28 Yp (Yp-65) not possible - not alpha decay
+ Co-88⁻  | (0.788) |  88 39 Co - 22 11  P =  66  28 Yp (Yp-66) not possible - not alpha decay
+ W-76⁺   | (0.612) |  76 40  W - 22 11  P =  54  29  C (C-54)  not possible - not alpha decay
+ W-77ª   | (0.677) |  77 40  W - 22 11  P =  55  29  C (C-55)
+ W-78ª   | (0.745) |  78 40  W - 22 11  P =  56  29  C (C-56)
+ W-79ª   | (0.786) |  79 40  W - 22 11  P =  57  29  C (C-57)  not possible - Stability at or above 0.78
+ W-80ª   | (0.829) |  80 40  W - 22 11  P =  58  29  C (C-58)  not possible - Stability at or above 0.78
+ W-81ª   | (0.932) |  81 40  W - 22 11  P =  59  29  C (C-59)  not possible - Stability at or above 0.78
+ W-82ª   | (0.872) |  82 40  W - 22 11  P =  60  29  C (C-60)  not possible - Stability at or above 0.78
+ W-83ª   | (0.873) |  83 40  W - 22 11  P =  61  29  C (C-61)  not possible - Stability at or above 0.78
+ W-84ª   | (0.878) |  84 40  W - 22 11  P =  62  29  C (C-62)  not possible - Stability at or above 0.78
+ W-85ª   | (0.946) |  85 40  W - 22 11  P =  63  29  C (C-63)  not possible - Stability at or above 0.78
+ W-86ª   | (0.852) |  86 40  W - 22 11  P =  64  29  C (C-64)  not possible - Stability at or above 0.78
+ W-87⁻   | (0.822) |  87 40  W - 22 11  P =  65  29 Jx (Jx-65) not possible - not alpha decay
+ W-88⁻   | (0.798) |  88 40  W - 22 11  P =  66  29 Jx (Jx-66) not possible - not alpha decay
+ W-89⁻   | (0.839) |  89 40  W - 22 11  P =  67  29 Jx (Jx-67) not possible - not alpha decay
+ W-90⁻   | (0.719) |  90 40  W - 22 11  P =  68  29 Jx (Jx-68) not possible - not alpha decay
+ W-91⁻   | (0.666) |  91 40  W - 22 11  P =  69  29 Jx (Jx-69) not possible - not alpha decay
+ Lx-76⁺  | (0.494) |  76 41 Lx - 22 11  P =  54  30 Ns (Ns-54) not possible - not alpha decay
+ Lx-77⁺  | (0.599) |  77 41 Lx - 22 11  P =  55  30 Ns (Ns-55) not possible - not alpha decay
+ Lx-79⁺  | (0.753) |  79 41 Lx - 22 11  P =  57  30 Ns (Ns-57) not possible - not alpha decay
+ Lx-80⁺  | (0.804) |  80 41 Lx - 22 11  P =  58  30 Ns (Ns-58) not possible - not alpha decay
+ Lx-81ª  | (0.858) |  81 41 Lx - 22 11  P =  59  30 Ns (Ns-59) not possible - Stability at or above 0.78
+ Lx-82ª  | (0.888) |  82 41 Lx - 22 11  P =  60  30 Ns (Ns-60) not possible - Stability at or above 0.78
+ Lx-83ª  | (0.921) |  83 41 Lx - 22 11  P =  61  30 Ns (Ns-61) not possible - Stability at or above 0.78
+ Lx-84ª  | (0.932) |  84 41 Lx - 22 11  P =  62  30 Ns (Ns-62) not possible - Stability at or above 0.78
+ Lx-85ª  | (0.946) |  85 41 Lx - 22 11  P =  63  30 Ns (Ns-63) not possible - Stability at or above 0.78
+ Lx-86ª  | (0.940) |  86 41 Lx - 22 11  P =  64  30 Ns (Ns-64) not possible - Stability at or above 0.78
+ Lx-87∙  | (1.876) |  87 41 Lx - 22 11  P =  65  30 Ns (Ns-65) not possible - not alpha decay
+ Lx-88∙  | (1.834) |  88 41 Lx - 22 11  P =  66  30 Ns (Ns-66) not possible - not alpha decay
+ Lx-89∙  | (1.802) |  89 41 Lx - 22 11  P =  67  30 Ns (Ns-67) not possible - not alpha decay
+ Lx-90∙  | (1.734) |  90 41 Lx - 22 11  P =  68  30 Ns (Ns-68) not possible - not alpha decay
+ Lx-91⁻  | (0.838) |  91 41 Lx - 22 11  P =  69  30 Ns (Ns-69) not possible - not alpha decay
+ Lx-92∙  | (1.585) |  92 41 Lx - 22 11  P =  70  30 Ns (Ns-70) not possible - not alpha decay
+ Lx-93⁻  | (0.753) |  93 41 Lx - 22 11  P =  71  30 Ns (Ns-71) not possible - not alpha decay
+ Lx-94⁻  | (0.697) |  94 41 Lx - 22 11  P =  72  30 Ns (Ns-72) not possible - not alpha decay
+ Lx-95⁻  | (0.648) |  95 41 Lx - 22 11  P =  73  30 Ns (Ns-73) not possible - not alpha decay
+ Lx-96⁻  | (0.583) |  96 41 Lx - 22 11  P =  74  30 Ns (Ns-74) not possible - not alpha decay
+ N-81⁺   | (0.661) |  81 42  N - 22 11  P =  59  31 Ai (Ai-59) not possible - not alpha decay
+ N-82⁺   | (0.725) |  82 42  N - 22 11  P =  60  31 Ai (Ai-60) not possible - not alpha decay
+ N-83⁺   | (0.848) |  83 42  N - 22 11  P =  61  31 Ai (Ai-61) not possible - not alpha decay
+ N-84⁺   | (0.806) |  84 42  N - 22 11  P =  62  31 Ai (Ai-62) not possible - not alpha decay
+ N-85⁺   | (0.826) |  85 42  N - 22 11  P =  63  31 Ai (Ai-63) not possible - not alpha decay
+ N-86⁺   | (0.849) |  86 42  N - 22 11  P =  64  31 Ai (Ai-64) not possible - not alpha decay
+ N-87⁺   | (0.935) |  87 42  N - 22 11  P =  65  31 Ai (Ai-65) not possible - not alpha decay
+ N-88⁺   | (0.859) |  88 42  N - 22 11  P =  66  31 Ai (Ai-66) not possible - not alpha decay
+ N-89⁺   | (0.846) |  89 42  N - 22 11  P =  67  31 Ai (Ai-67) not possible - not alpha decay
+ N-90⁺   | (0.838) |  90 42  N - 22 11  P =  68  31 Ai (Ai-68) not possible - not alpha decay
+ N-91∙   | (1.791) |  91 42  N - 22 11  P =  69  31 Ai (Ai-69) not possible - not alpha decay
+ N-92⁻   | (0.791) |  92 42  N - 22 11  P =  70  31 Ai (Ai-70) not possible - not alpha decay
+ N-93⁻   | (0.753) |  93 42  N - 22 11  P =  71  31 Ai (Ai-71) not possible - not alpha decay
+ N-94⁻   | (0.721) |  94 42  N - 22 11  P =  72  31 Ai (Ai-72) not possible - not alpha decay
+ N-95⁻   | (0.672) |  95 42  N - 22 11  P =  73  31 Ai (Ai-73) not possible - not alpha decay
+ N-96⁻   | (0.630) |  96 42  N - 22 11  P =  74  31 Ai (Ai-74) not possible - not alpha decay
+ U-83⁺   | (0.653) |  83 43  U - 22 11  P =  61  32  F (F-61)  not possible - not alpha decay
+ U-84ª   | (0.785) |  84 43  U - 22 11  P =  62  32  F (F-62)  not possible - Stability at or above 0.78
+ U-85ª   | (0.753) |  85 43  U - 22 11  P =  63  32  F (F-63)
+ U-86ª   | (0.754) |  86 43  U - 22 11  P =  64  32  F (F-64)
+ U-87⁺   | (0.814) |  87 43  U - 22 11  P =  65  32  F (F-65)  not possible - not alpha decay
+ U-88ª   | (0.909) |  88 43  U - 22 11  P =  66  32  F (F-66)  not possible - Stability at or above 0.78
+ U-89ª   | (0.841) |  89 43  U - 22 11  P =  67  32  F (F-67)  not possible - Stability at or above 0.78
+ U-90ª   | (0.809) |  90 43  U - 22 11  P =  68  32  F (F-68)  not possible - Stability at or above 0.78
+ U-91⁺   | (0.837) |  91 43  U - 22 11  P =  69  32  F (F-69)  not possible - not alpha decay
+ U-92∙   | (1.805) |  92 43  U - 22 11  P =  70  32 Ny (Ny-70) not possible - not alpha decay
+ U-93⁻   | (0.806) |  93 43  U - 22 11  P =  71  32 Ny (Ny-71) not possible - not alpha decay
+ U-94⁻   | (0.748) |  94 43  U - 22 11  P =  72  32 Ny (Ny-72) not possible - not alpha decay
+ U-95ª   | (0.723) |  95 43  U - 22 11  P =  73  32 Ny (Ny-73) [ ] undiscovered
+ U-96⁻   | (0.682) |  96 43  U - 22 11  P =  74  32 Ny (Ny-74) not possible - not alpha decay
+ U-97⁻   | (0.646) |  97 43  U - 22 11  P =  75  32 Ny (Ny-75) not possible - not alpha decay
+ U-98⁻   | (0.596) |  98 43  U - 22 11  P =  76  32 Ny (Ny-76) not possible - not alpha decay
+ Vl-84⁺  | (0.586) |  84 44 Vl - 22 11  P =  62  33 Gy (Gy-62) not possible - not alpha decay
+ Vl-85⁺  | (0.727) |  85 44 Vl - 22 11  P =  63  33 Gy (Gy-63) not possible - not alpha decay
+ Vl-86ª  | (0.704) |  86 44 Vl - 22 11  P =  64  33 Gy (Gy-64)
+ Vl-87⁺  | (0.742) |  87 44 Vl - 22 11  P =  65  33 Gy (Gy-65) not possible - not alpha decay
+ Vl-88⁺  | (0.783) |  88 44 Vl - 22 11  P =  66  33 Gy (Gy-66) not possible - not alpha decay
+ Vl-89∙  | (1.772) |  89 44 Vl - 22 11  P =  67  33 Gy (Gy-67) not possible - not alpha decay
+ Vl-90ª  | (0.826) |  90 44 Vl - 22 11  P =  68  33 Gy (Gy-68) not possible - Stability at or above 0.78
+ Vl-91ª  | (0.830) |  91 44 Vl - 22 11  P =  69  33 Gy (Gy-69) not possible - Stability at or above 0.78
+ Vl-92⁺  | (0.838) |  92 44 Vl - 22 11  P =  70  33 Gy (Gy-70) not possible - not alpha decay
+ Vl-93∙  | (1.822) |  93 44 Vl - 22 11  P =  71  33 Pw (Pw-71) not possible - not alpha decay
+ Vl-94⁻  | (0.822) |  94 44 Vl - 22 11  P =  72  33 Pw (Pw-72) not possible - not alpha decay
+ Vl-95⁻  | (0.799) |  95 44 Vl - 22 11  P =  73  33 Pw (Pw-73) not possible - not alpha decay
+ Vl-96⁻  | (0.781) |  96 44 Vl - 22 11  P =  74  33 Pw (Pw-74) not possible - not alpha decay
+ Vl-97⁻  | (0.747) |  97 44 Vl - 22 11  P =  75  33 Pw (Pw-75) not possible - not alpha decay
+ Vl-98⁻  | (0.719) |  98 44 Vl - 22 11  P =  76  33 Pw (Pw-76) not possible - not alpha decay
+ Vl-99⁻  | (0.675) |  99 44 Vl - 22 11  P =  77  33 Pw (Pw-77) not possible - not alpha decay
+ Vl-100⁻ | (0.637) | 100 44 Vl - 22 11  P =  78  33 Pw (Pw-78) not possible - not alpha decay
+ Vl-101⁻ | (0.585) | 101 44 Vl - 22 11  P =  79  33 Pw (Pw-79) not possible - not alpha decay
+ Se-84⁺  | (0.490) |  84 45 Se - 22 11  P =  62  34 Kk (Kk-62) not possible - not alpha decay
+ Se-85⁺  | (0.581) |  85 45 Se - 22 11  P =  63  34 Kk (Kk-63) not possible - not alpha decay
+ Se-86⁺  | (0.649) |  86 45 Se - 22 11  P =  64  34 Kk (Kk-64) not possible - not alpha decay
+ Se-87⁺  | (0.718) |  87 45 Se - 22 11  P =  65  34 Kk (Kk-65) not possible - not alpha decay
+ Se-88⁺  | (0.765) |  88 45 Se - 22 11  P =  66  34 Kk (Kk-66) not possible - not alpha decay
+ Se-89⁺  | (0.814) |  89 45 Se - 22 11  P =  67  34 Kk (Kk-67) not possible - not alpha decay
+ Se-90∙  | (1.685) |  90 45 Se - 22 11  P =  68  34 Kk (Kk-68) not possible - not alpha decay
+ Se-91∙  | (1.748) |  91 45 Se - 22 11  P =  69  34 Kk (Kk-69) not possible - not alpha decay
+ Se-92∙  | (1.772) |  92 45 Se - 22 11  P =  70  34 Kk (Kk-70) not possible - not alpha decay
+ Se-93⁺  | (0.901) |  93 45 Se - 22 11  P =  71  34 Kk (Kk-71) not possible - not alpha decay
+ Se-94∙  | (1.798) |  94 45 Se - 22 11  P =  72  34 Kk (Kk-72) not possible - not alpha decay
+ Se-95∙  | (1.802) |  95 45 Se - 22 11  P =  73  34 Gk (Gk-73) not possible - not alpha decay
+ Se-96∙  | (1.772) |  96 45 Se - 22 11  P =  74  34 Gk (Gk-74) not possible - not alpha decay
+ Se-97ª  | (0.875) |  97 45 Se - 22 11  P =  75  34 Gk (Gk-75) not possible - Stability at or above 0.78
+ Se-98∙  | (1.697) |  98 45 Se - 22 11  P =  76  34 Gk (Gk-76) not possible - not alpha decay
+ Se-99∙  | (1.654) |  99 45 Se - 22 11  P =  77  34 Gk (Gk-77) not possible - not alpha decay
+ Se-100∙ | (1.580) | 100 45 Se - 22 11  P =  78  34 Gk (Gk-78) not possible - not alpha decay
+ Se-101∙ | (1.517) | 101 45 Se - 22 11  P =  79  34 Gk (Gk-79) not possible - not alpha decay
+ Se-102⁻ | (0.712) | 102 45 Se - 22 11  P =  80  34 Gk (Gk-80) not possible - not alpha decay
+ Se-103  | (0.672) | 103 45 Se - 22 11  P =  81  34 Gk (Gk-81) not possible - not alpha decay
+ Se-104⁻ | (0.618) | 104 45 Se - 22 11  P =  82  34 Gk (Gk-82) not possible - not alpha decay
+ Nm-87⁺  | (0.576) |  87 46 Nm - 22 11  P =  65  35 Yv (Yv-65) not possible - not alpha decay
+ Nm-88⁺  | (0.570) |  88 46 Nm - 22 11  P =  66  35 Yv (Yv-66) not possible - not alpha decay
+ Nm-89⁺  | (0.625) |  89 46 Nm - 22 11  P =  67  35 Yv (Yv-67) not possible - not alpha decay
+ Nm-90⁺  | (0.682) |  90 46 Nm - 22 11  P =  68  35 Yv (Yv-68) not possible - not alpha decay
+ Nm-91⁺  | (0.802) |  91 46 Nm - 22 11  P =  69  35 Yv (Yv-69) not possible - not alpha decay
+ Nm-92⁺  | (0.758) |  92 46 Nm - 22 11  P =  70  35 Yv (Yv-70) not possible - not alpha decay
+ Nm-93⁺  | (0.778) |  93 46 Nm - 22 11  P =  71  35 Yv (Yv-71) not possible - not alpha decay
+ Nm-94⁺  | (0.801) |  94 46 Nm - 22 11  P =  72  35 Yv (Yv-72) not possible - not alpha decay
+ Nm-95⁺  | (0.890) |  95 46 Nm - 22 11  P =  73  35 Yv (Yv-73) not possible - not alpha decay
+ Nm-96⁺  | (0.815) |  96 46 Nm - 22 11  P =  74  35 Yv (Yv-74) not possible - not alpha decay
+ Nm-97ª  | (0.807) |  97 46 Nm - 22 11  P =  75  35 Yv (Yv-75) not possible - Stability at or above 0.78
+ Nm-98ª  | (0.804) |  98 46 Nm - 22 11  P =  76  35 Qi (Qi-76) not possible - Stability at or above 0.78
+ Nm-99ª  | (0.784) |  99 46 Nm - 22 11  P =  77  35 Qi (Qi-77) not possible - Stability at or above 0.78
+ Nm-100⁺ | (0.769) | 100 46 Nm - 22 11  P =  78  35 Qi (Qi-78) not possible - not alpha decay
+ Nm-101⁺ | (0.739) | 101 46 Nm - 22 11  P =  79  35 Qi (Qi-79) not possible - not alpha decay
+ Nm-102ª | (0.713) | 102 46 Nm - 22 11  P =  80  35 Yv (Yv-80)
+ Nm-103⁻ | (0.674) | 103 46 Nm - 22 11  P =  81  35 Yv (Yv-81) not possible - not alpha decay
+ Nm-104⁻ | (0.640) | 104 46 Nm - 22 11  P =  82  35 Yv (Yv-82) not possible - not alpha decay
+ Nm-105⁻ | (0.592) | 105 46 Nm - 22 11  P =  83  35 Yv (Yv-83) not possible - not alpha decay
+ Dd-88⁺  | (0.483) |  88 47 Dd - 22 11  P =  66  36 Cj (Cj-66) not possible - not alpha decay
+ Dd-89⁺  | (0.486) |  89 47 Dd - 22 11  P =  67  36 Cj (Cj-67) not possible - not alpha decay
+ Dd-90⁺  | (0.522) |  90 47 Dd - 22 11  P =  68  36 Cj (Cj-68) not possible - not alpha decay
+ Dd-91⁺  | (0.615) |  91 47 Dd - 22 11  P =  69  36 Xy (Xy-69) not possible - not alpha decay
+ Dd-92⁺  | (0.743) |  92 47 Dd - 22 11  P =  70  36 Xy (Xy-70) not possible - not alpha decay
+ Dd-93⁺  | (0.707) |  93 47 Dd - 22 11  P =  71  36 Cj (Cj-71) not possible - not alpha decay
+ Dd-94ª  | (0.707) |  94 47 Dd - 22 11  P =  72  36 Cj (Cj-72)
+ Dd-95⁺  | (0.765) |  95 47 Dd - 22 11  P =  73  36 Cj (Cj-73) not possible - not alpha decay
+ Dd-96ª  | (0.861) |  96 47 Dd - 22 11  P =  74  36 Cj (Cj-74) not possible - Stability at or above 0.78
+ Dd-97ª  | (0.794) |  97 47 Dd - 22 11  P =  75  36 Cj (Cj-75) not possible - Stability at or above 0.78
+ Dd-98ª  | (0.766) |  98 47 Dd - 22 11  P =  76  36 Cj (Cj-76)
+ Dd-99ª  | (0.769) |  99 47 Dd - 22 11  P =  77  36 Cj (Cj-77)
+ Dd-100ª | (0.756) | 100 47 Dd - 22 11  P =  78  36 Cj (Cj-78)
+ Dd-101ª | (0.748) | 101 47 Dd - 22 11  P =  79  36 Cj (Cj-79)
+ Dd-102ª | (0.724) | 102 47 Dd - 22 11  P =  80  36 Cj (Cj-80)
+ Dd-103ª | (0.706) | 103 47 Dd - 22 11  P =  81  36 Cj (Cj-81)
+ Dd-104⁻ | (0.672) | 104 47 Dd - 22 11  P =  82  36 Cj (Cj-82) not possible - not alpha decay
+ Dd-105⁻ | (0.644) | 105 47 Dd - 22 11  P =  83  36 Cj (Cj-83) not possible - not alpha decay
+ Dd-106⁻ | (0.603) | 106 47 Dd - 22 11  P =  84  36 Cj (Cj-84) not possible - not alpha decay
+ Ok-89⁺  | (0.397) |  89 48 Ok - 22 11  P =  67  37 Gq (Gq-67) not possible - not alpha decay
+ Ok-90⁺  | (0.408) |  90 48 Ok - 22 11  P =  68  37 Gq (Gq-68) not possible - not alpha decay
+ Ok-91⁺  | (0.479) |  91 48 Ok - 22 11  P =  69  37 Gq (Gq-69) not possible - not alpha decay
+ Ok-92⁺  | (0.552) |  92 48 Ok - 22 11  P =  70  37 Gq (Gq-70) not possible - not alpha decay
+ Ok-93⁺  | (0.688) |  93 48 Ok - 22 11  P =  71  37 Gq (Gq-71) not possible - not alpha decay
+ Ok-94⁺  | (0.660) |  94 48 Ok - 22 11  P =  72  37 Iu (Iu-72) not possible - not alpha decay
+ Ok-95ª  | (0.695) |  95 48 Ok - 22 11  P =  73  37 Iu (Iu-73)
+ Ok-96⁺  | (0.733) |  96 48 Ok - 22 11  P =  74  37 Iu (Iu-74) not possible - not alpha decay
+ Ok-97ª  | (0.836) |  97 48 Ok - 22 11  P =  75  37 Iu (Iu-75) not possible - Stability at or above 0.78
+ Ok-98ª  | (0.776) |  98 48 Ok - 22 11  P =  76  37 Iu (Iu-76)
+ Ok-99ª  | (0.782) |  99 48 Ok - 22 11  P =  77  37 Iu (Iu-77) not possible - Stability at or above 0.78
+ Ok-100ª | (0.792) | 100 48 Ok - 22 11  P =  78  37 Iu (Iu-78) not possible - Stability at or above 0.78
+ Ok-101ª | (0.786) | 101 48 Ok - 22 11  P =  79  37 Iu (Iu-79) not possible - Stability at or above 0.78
+ Ok-102⁻ | (0.784) | 102 48 Ok - 22 11  P =  80  37 Gq (Gq-80) not possible - not alpha decay
+ Ok-103⁻ | (0.767) | 103 48 Ok - 22 11  P =  81  37 Iu (Iu-81) not possible - not alpha decay
+ Ok-104ª | (0.754) | 104 48 Ok - 22 11  P =  82  37 Iu (Iu-82)
+ Ok-105⁻ | (0.728) | 105 48 Ok - 22 11  P =  83  37 Iu (Iu-83) not possible - not alpha decay
+ Ok-106⁻ | (0.705) | 106 48 Ok - 22 11  P =  84  37 Iu (Iu-84) not possible - not alpha decay
+ Ok-107⁻ | (0.670) | 107 48 Ok - 22 11  P =  85  37 Iu (Iu-85) not possible - not alpha decay
+ Da-90⁺  | (0.293) |  90 49 Da - 22 11  P =  68  38 Bt (Bt-68) not possible - not alpha decay
+ Da-91⁺  | (0.395) |  91 49 Da - 22 11  P =  69  38 Bt (Bt-69) not possible - not alpha decay
+ Da-92⁺  | (0.474) |  92 49 Da - 22 11  P =  70  38 Bt (Bt-70) not possible - not alpha decay
+ Da-93⁺  | (0.555) |  93 49 Da - 22 11  P =  71  38 Bt (Bt-71) not possible - not alpha decay
+ Da-94⁺  | (0.616) |  94 49 Da - 22 11  P =  72  38 Bt (Bt-72) not possible - not alpha decay
+ Da-95⁺  | (0.678) |  95 49 Da - 22 11  P =  73  38 Bt (Bt-73) not possible - not alpha decay
+ Da-96⁺  | (0.721) |  96 49 Da - 22 11  P =  74  38  D (D-74)  not possible - not alpha decay
+ Da-97⁺  | (0.766) |  97 49 Da - 22 11  P =  75  38  D (D-75)  not possible - not alpha decay
+ Da-98ª  | (0.793) |  98 49 Da - 22 11  P =  76  38  D (D-76)  not possible - Stability at or above 0.78
+ Da-99ª  | (0.823) |  99 49 Da - 22 11  P =  77  38  D (D-77)  not possible - Stability at or above 0.78
+ Da-100ª | (0.837) | 100 49 Da - 22 11  P =  78  38  D (D-78)  not possible - Stability at or above 0.78
+ Da-101ª | (0.853) | 101 49 Da - 22 11  P =  79  38  D (D-79)  not possible - Stability at or above 0.78
+ Da-102ª | (0.854) | 102 49 Da - 22 11  P =  80  38  D (D-80)  not possible - Stability at or above 0.78
+ Da-103∙ | (1.717) | 103 49 Da - 22 11  P =  81  38  D (D-81)  not possible - not alpha decay
+ Da-104ª | (0.848) | 104 49 Da - 22 11  P =  82  38  D (D-82)  not possible - Stability at or above 0.78
+ Da-105ª | (0.841) | 105 49 Da - 22 11  P =  83  38  D (D-83)  not possible - Stability at or above 0.78
+ Da-106∙ | (1.642) | 106 49 Da - 22 11  P =  84  38  D (D-84)  not possible - not alpha decay
+ Da-107∙ | (1.610) | 107 49 Da - 22 11  P =  85  38  D (D-85)  not possible - not alpha decay
+ Da-108∙ | (1.550) | 108 49 Da - 22 11  P =  86  38  D (D-86)  not possible - not alpha decay
+ Da-109∙ | (1.500) | 109 49 Da - 22 11  P =  87  38  D (D-87)  not possible - not alpha decay
+ S-94⁺   | (0.397) |  94 50  S - 22 11  P =  72  39 Co (Co-72) not possible - not alpha decay
+ S-95⁺   | (0.548) |  95 50  S - 22 11  P =  73  39 Co (Co-73) not possible - not alpha decay
+ S-96⁺   | (0.534) |  96 50  S - 22 11  P =  74  39 Co (Co-74) not possible - not alpha decay
+ S-97⁺   | (0.584) |  97 50  S - 22 11  P =  75  39 Co (Co-75) not possible - not alpha decay
+ S-98⁺   | (0.636) |  98 50  S - 22 11  P =  76  39 Co (Co-76) not possible - not alpha decay
+ S-99⁺   | (0.754) |  99 50  S - 22 11  P =  77  39  H (H-77)  not possible - not alpha decay
+ S-100⁺  | (0.707) | 100 50  S - 22 11  P =  78  39 Co (Co-78) not possible - not alpha decay
+ S-101ª  | (0.727) | 101 50  S - 22 11  P =  79  39 Co (Co-79)
+ S-102ª  | (0.750) | 102 50  S - 22 11  P =  80  39 Co (Co-80)
+ S-103ª  | (0.758) | 103 50  S - 22 11  P =  81  39 Co (Co-81)
+ S-104⁺  | (0.768) | 104 50  S - 22 11  P =  82  39 Co (Co-82) not possible - not alpha decay
+ S-105ª  | (0.764) | 105 50  S - 22 11  P =  83  39 Co (Co-83)
+ S-106ª  | (0.764) | 106 50  S - 22 11  P =  84  39 Co (Co-84)
+ S-107ª  | (0.749) | 107 50  S - 22 11  P =  85  39 Co (Co-85)
+ S-108⁺  | (0.738) | 108 50  S - 22 11  P =  86  39 Co (Co-86) not possible - not alpha decay
+ S-109ª  | (0.714) | 109 50  S - 22 11  P =  87  39 Co (Co-87)
+ Z-95⁺   | (0.305) |  95 51  Z - 22 11  P =  73  40  W (W-73)  not possible - not alpha decay
+ Z-96⁺   | (0.463) |  96 51  Z - 22 11  P =  74  40  W (W-74)  not possible - not alpha decay
+ Z-97⁺   | (0.457) |  97 51  Z - 22 11  P =  75  40  W (W-75)  not possible - not alpha decay
+ Z-98⁺   | (0.486) |  98 51  Z - 22 11  P =  76  40  W (W-76)  not possible - not alpha decay
+ Z-99⁺   | (0.573) |  99 51  Z - 22 11  P =  77  40  W (W-77)  not possible - not alpha decay
+ Z-100ª  | (0.698) | 100 51  Z - 22 11  P =  78  40  W (W-78)
+ Z-101ª  | (0.658) | 101 51  Z - 22 11  P =  79  40  W (W-79)
+ Z-102ª  | (0.657) | 102 51  Z - 22 11  P =  80  40  W (W-80)
+ Z-103ª  | (0.687) | 103 51  Z - 22 11  P =  81  40  W (W-81)
+ Z-104ª  | (0.700) | 104 51  Z - 22 11  P =  82  40  W (W-82)
+ Z-105ª  | (0.717) | 105 51  Z - 22 11  P =  83  40  W (W-83)
+ Z-106ª  | (0.719) | 106 51  Z - 22 11  P =  84  40  W (W-84)
+ Z-107ª  | (0.725) | 107 51  Z - 22 11  P =  85  40  W (W-85)
+ Z-108ª  | (0.716) | 108 51  Z - 22 11  P =  86  40  W (W-86)
+ Z-109ª  | (0.711) | 109 51  Z - 22 11  P =  87  40  W (W-87)
+ Z-110ª  | (0.693) | 110 51  Z - 22 11  P =  88  40  W (W-88)
+ Z-111ª  | (0.679) | 111 51  Z - 22 11  P =  89  40  W (W-89)
+ Z-112ª  | (0.653) | 112 51  Z - 22 11  P =  90  40  W (W-90)
+ Cv-97⁺  | (0.384) |  97 52 Cv - 22 11  P =  75  41 Lx (Lx-75) not possible - not alpha decay
+ Cv-98ª  | (0.384) |  98 52 Cv - 22 11  P =  76  41 Lx (Lx-76)
+ Cv-99ª  | (0.420) |  99 52 Cv - 22 11  P =  77  41 Lx (Lx-77)
+ Cv-100⁺ | (0.514) | 100 52 Cv - 22 11  P =  78  41 Lx (Lx-78) not possible - not alpha decay
+ Cv-101ª | (0.645) | 101 52 Cv - 22 11  P =  79  41 Lx (Lx-79)
+ Cv-102ª | (0.612) | 102 52 Cv - 22 11  P =  80  41 Lx (Lx-80)
+ Cv-103ª | (0.618) | 103 52 Cv - 22 11  P =  81  41 Lx (Lx-81)
+ Cv-104ª | (0.640) | 104 52 Cv - 22 11  P =  82  41 Lx (Lx-82)
+ Cv-105ª | (0.660) | 105 52 Cv - 22 11  P =  83  41 Lx (Lx-83)
+ Cv-106ª | (0.683) | 106 52 Cv - 22 11  P =  84  41 Lx (Lx-84)
+ Cv-107ª | (0.691) | 107 52 Cv - 22 11  P =  85  41 Lx (Lx-85)
+ Cv-108ª | (0.702) | 108 52 Cv - 22 11  P =  86  41 Lx (Lx-86)
+ Cv-109ª | (0.699) | 109 52 Cv - 22 11  P =  87  41 Lx (Lx-87)
+ Cv-110ª | (0.700) | 110 52 Cv - 22 11  P =  88  41 Lx (Lx-88)
+ Cv-111ª | (0.688) | 111 52 Cv - 22 11  P =  89  41 Lx (Lx-89)
+ Cv-114ª | (0.641) | 114 52 Cv - 22 11  P =  92  41 Lx (Lx-92)
+ Vt-98⁺  | (0.289) |  98 53 Vt - 22 11  P =  76  42  N (N-76)  not possible - not alpha decay
+ Vt-99⁺  | (0.296) |  99 53 Vt - 22 11  P =  77  42  N (N-77)  not possible - not alpha decay
+ Vt-100⁺ | (0.339) | 100 53 Vt - 22 11  P =  78  42  N (N-78)  not possible - not alpha decay
+ Vt-101⁺ | (0.440) | 101 53 Vt - 22 11  P =  79  42  N (N-79)  not possible - not alpha decay
+ Vt-102⁺ | (0.578) | 102 53 Vt - 22 11  P =  80  42  N (N-80)  not possible - not alpha decay
+ Vt-103ª | (0.551) | 103 53 Vt - 22 11  P =  81  42  N (N-81)
+ Vt-104ª | (0.563) | 104 53 Vt - 22 11  P =  82  42  N (N-82)
+ Vt-105ª | (0.591) | 105 53 Vt - 22 11  P =  83  42  N (N-83)
+ Vt-106ª | (0.609) | 106 53 Vt - 22 11  P =  84  42  N (N-84)
+ Vt-107ª | (0.638) | 107 53 Vt - 22 11  P =  85  42  N (N-85)
+ Vt-108ª | (0.652) | 108 53 Vt - 22 11  P =  86  42  N (N-86)
+ Vt-109ª | (0.669) | 109 53 Vt - 22 11  P =  87  42  N (N-87)
+ Vt-110ª | (0.672) | 110 53 Vt - 22 11  P =  88  42  N (N-88)
+ Vt-111ª | (0.679) | 111 53 Vt - 22 11  P =  89  42  N (N-89)
+ Vt-112ª | (0.672) | 112 53 Vt - 22 11  P =  90  42  N (N-90)
+ Vt-119⁻ | (0.539) | 119 53 Vt - 22 11  P =  97  42  N (N-97)  not possible - not alpha decay
+ Vt-120⁻ | (0.501) | 120 53 Vt - 22 11  P =  98  42  N (N-98)  not possible - not alpha decay
+ Ek-99⁺  | (0.199) |  99 54 Ek - 22 11  P =  77  43  U (U-77)  not possible - not alpha decay
+ Ek-100⁺ | (0.213) | 100 54 Ek - 22 11  P =  78  43  U (U-78)  not possible - not alpha decay
+ Ek-101⁺ | (0.263) | 101 54 Ek - 22 11  P =  79  43  U (U-79)  not possible - not alpha decay
+ Ek-102⁺ | (0.370) | 102 54 Ek - 22 11  P =  80  43  U (U-80)  not possible - not alpha decay
+ Ek-103⁺ | (0.514) | 103 54 Ek - 22 11  P =  81  43  U (U-81)  not possible - not alpha decay
+ Ek-104⁺ | (0.494) | 104 54 Ek - 22 11  P =  82  43  U (U-82)  not possible - not alpha decay
+ Ek-105ª | (0.512) | 105 54 Ek - 22 11  P =  83  43  U (U-83)
+ Ek-106ª | (0.546) | 106 54 Ek - 22 11  P =  84  43  U (U-84)
+ Ek-107ª | (0.570) | 107 54 Ek - 22 11  P =  85  43  U (U-85)
+ Ek-108ª | (0.599) | 108 54 Ek - 22 11  P =  86  43  U (U-86)
+ Ek-109ª | (0.619) | 109 54 Ek - 22 11  P =  87  43  U (U-87)
+ Ek-110ª | (0.642) | 110 54 Ek - 22 11  P =  88  43  U (U-88)
+ Ek-111ª | (0.651) | 111 54 Ek - 22 11  P =  89  43  U (U-89)
+ Ek-112ª | (0.663) | 112 54 Ek - 22 11  P =  90  43  U (U-90)
+ Ek-113ª | (0.662) | 113 54 Ek - 22 11  P =  91  43  U (U-91)
+ Ek-119ª | (0.586) | 119 54 Ek - 22 11  P =  97  43  U (U-97)
+ Ek-120ª | (0.564) | 120 54 Ek - 22 11  P =  98  43  U (U-98)
+ Ek-121⁻ | (0.531) | 121 54 Ek - 22 11  P =  99  43  U (U-99)  not possible - not alpha decay
+ Ji-103⁺ | (0.285) | 103 55 Ji - 22 11  P =  81  44 Vl (Vl-81) not possible - not alpha decay
+ Ji-104⁺ | (0.436) | 104 55 Ji - 22 11  P =  82  44 Vl (Vl-82) not possible - not alpha decay
+ Ji-105⁺ | (0.421) | 105 55 Ji - 22 11  P =  83  44 Vl (Vl-83) not possible - not alpha decay
+ Ji-106ª | (0.446) | 106 55 Ji - 22 11  P =  84  44 Vl (Vl-84)
+ Ji-107ª | (0.486) | 107 55 Ji - 22 11  P =  85  44 Vl (Vl-85)
+ Ji-108ª | (0.516) | 108 55 Ji - 22 11  P =  86  44 Vl (Vl-86)
+ Ji-109ª | (0.552) | 109 55 Ji - 22 11  P =  87  44 Vl (Vl-87)
+ Ji-110ª | (0.573) | 110 55 Ji - 22 11  P =  88  44 Vl (Vl-88)
+ Ji-111ª | (0.602) | 111 55 Ji - 22 11  P =  89  44 Vl (Vl-89)
+ Ji-112ª | (0.616) | 112 55 Ji - 22 11  P =  90  44 Vl (Vl-90)
+ Ji-113ª | (0.634) | 113 55 Ji - 22 11  P =  91  44 Vl (Vl-91)
+ Ji-114ª | (0.638) | 114 55 Ji - 22 11  P =  92  44 Vl (Vl-92)
+ Ji-121ª | (0.576) | 121 55 Ji - 22 11  P =  99  44 Vl (Vl-99)
+ Aw-104⁺ | (0.205) | 104 56 Aw - 22 11  P =  82  45 Se (Se-82) not possible - not alpha decay
+ Aw-105⁺ | (0.362) | 105 56 Aw - 22 11  P =  83  45 Se (Se-83) not possible - not alpha decay
+ Aw-106ª | (0.354) | 106 56 Aw - 22 11  P =  84  45 Se (Se-84)
+ Aw-107ª | (0.384) | 107 56 Aw - 22 11  P =  85  45 Se (Se-85)
+ Aw-108ª | (0.430) | 108 56 Aw - 22 11  P =  86  45 Se (Se-86)
+ Aw-109ª | (0.466) | 109 56 Aw - 22 11  P =  87  45 Se (Se-87)
+ Aw-110ª | (0.507) | 110 56 Aw - 22 11  P =  88  45 Se (Se-88)
+ Aw-111ª | (0.535) | 111 56 Aw - 22 11  P =  89  45 Se (Se-89)
+ Aw-112ª | (0.566) | 112 56 Aw - 22 11  P =  90  45 Se (Se-90)
+ Aw-113ª | (0.586) | 113 56 Aw - 22 11  P =  91  45 Se (Se-91)
+ Aw-114ª | (0.608) | 114 56 Aw - 22 11  P =  92  45 Se (Se-92)
+ Aw-115ª | (0.618) | 115 56 Aw - 22 11  P =  93  45 Se (Se-93)
+ Aw-124ª | (0.553) | 124 56 Aw - 22 11  P = 102  45 Se (Se-102)
+ Kn-106⁺ | (0.274) | 106 57 Kn - 22 11  P =  84  46 Nm (Nm-84) not possible - not alpha decay
+ Kn-107⁺ | (0.272) | 107 57 Kn - 22 11  P =  85  46 Nm (Nm-85) not possible - not alpha decay
+ Kn-108⁺ | (0.308) | 108 57 Kn - 22 11  P =  86  46 Nm (Nm-86) not possible - not alpha decay
+ Kn-109ª | (0.361) | 109 57 Kn - 22 11  P =  87  46 Nm (Nm-87)
+ Kn-110ª | (0.402) | 110 57 Kn - 22 11  P =  88  46 Nm (Nm-88)
+ Kn-111ª | (0.449) | 111 57 Kn - 22 11  P =  89  46 Nm (Nm-89)
+ Kn-112ª | (0.482) | 112 57 Kn - 22 11  P =  90  46 Nm (Nm-90)
+ Kn-113ª | (0.519) | 113 57 Kn - 22 11  P =  91  46 Nm (Nm-91)
+ Kn-114ª | (0.542) | 114 57 Kn - 22 11  P =  92  46 Nm (Nm-92)
+ Kn-115ª | (0.570) | 115 57 Kn - 22 11  P =  93  46 Nm (Nm-93)
+ Kn-116ª | (0.584) | 116 57 Kn - 22 11  P =  94  46 Nm (Nm-94)
+ Ha-108⁺ | (0.195) | 108 58 Ha - 22 11  P =  86  47 Dd (Dd-86) not possible - not alpha decay
+ Ha-109⁺ | (0.237) | 109 58 Ha - 22 11  P =  87  47 Dd (Dd-87) not possible - not alpha decay
+ Ha-110ª | (0.295) | 110 58 Ha - 22 11  P =  88  47 Dd (Dd-88)
+ Ha-111ª | (0.342) | 111 58 Ha - 22 11  P =  89  47 Dd (Dd-89)
+ Ha-112ª | (0.394) | 112 58 Ha - 22 11  P =  90  47 Dd (Dd-90)
+ Ha-113ª | (0.433) | 113 58 Ha - 22 11  P =  91  47 Dd (Dd-91)
+ Ha-114ª | (0.475) | 114 58 Ha - 22 11  P =  92  47 Dd (Dd-92)
+ Ha-115ª | (0.503) | 115 58 Ha - 22 11  P =  93  47 Dd (Dd-93)
+ Ha-116ª | (0.534) | 116 58 Ha - 22 11  P =  94  47 Dd (Dd-94)
+ Ha-117ª | (0.554) | 117 58 Ha - 22 11  P =  95  47 Dd (Dd-95)
+ Ax-109⁺ | (0.105) | 109 59 Ax - 22 11  P =  87  48 Ok (Ok-87) not possible - not alpha decay
+ Ax-110⁺ | (0.153) | 110 59 Ax - 22 11  P =  88  48 Ok (Ok-88) not possible - not alpha decay
+ Ax-111ª | (0.216) | 111 59 Ax - 22 11  P =  89  48 Ok (Ok-89)
+ I-113ª  | (0.200) | 113 60  I - 22 11  P =  91  49 Da (Da-91)
+ I-114ª  | (0.263) | 114 60  I - 22 11  P =  92  49 Da (Da-92)
+ I-115ª  | (0.312) | 115 60  I - 22 11  P =  93  49 Da (Da-93)
+ Jb-116ª | (0.241) | 116 61 Jb - 22 11  P =  94  50  S (S-94)
+ Go-117ª | (0.174) | 117 62 Go - 22 11  P =  95  51  Z (Z-95)
+ Go-118ª | (0.237) | 118 62 Go - 22 11  P =  96  51  Z (Z-96)
+ X-119ª  | (0.163) | 119 63  X - 22 11  P =  97  52 Cv (Cv-97)
+ Eh-123ª | (0.143) | 123 65 Eh - 22 11  P = 101  54 Ek (Ek-101)
+ Eh-124ª | (0.196) | 124 65 Eh - 22 11  P = 102  54 Ek (Ek-102)
+ Ys-125ª | (0.136) | 125 66 Ys - 22 11  P = 103  55 Ji (Ji-103)
+
+
+
+2025-05-25 May.Sun 15:40:21 [ ] syntax highlighting needs to be added for isotope longnames when highlighting is for chains.
+
+[c] also missing Se-103 key for decaydict["Se-103"] or decaytextchar[decaydict["Se-103"]]
+
+2025-05-25 May.Sun 15:18:02 I have a great idea for dealing with the 50 Mb file size limit on my reactor logs. I'll just gzip them. Vim can automatically gzip/gunzip when opening and writing them. Does that solve it?
+
+2025-05-25 May.Sun 13:34:29 Added code to convert_token_id_to_hex.pl to make a dictionary in the syntax file that lets me do lookups like otomlookup["1 1"] and get back "Sr-1"
+
+2025-05-25 May.Sun 12:53:53 regexes
+
+::INFO::
+Unstable Stability values under 0.78  =  /\((0\.[0-6]\d\+)\|(0\.7[0-7]\d\+)\)/
+Stable   Stability values       0.78+ = /(0\.7[89]\d\+)\|(0\.[89]\d\+)\|(1\.\d\+)/
+
+[c] I should have dictionaries in the syntax file that let me do lookups like otomlookup["1 1"] and get back "Sr-1" or "  1  1 Sr"
+
+
+[ ] Yeah this is a problem. Name collisions on U-83 between universes
+
+   line   332: let otomnames["83 40  U"]="U-83"
+   line   716: let otomnames["83 43  U"]="U-83"
+   line  1309: let otomnames["U-83"]="83 40  U"
+   line  1693: let otomnames["U-83"]="83 43  U"
+   line  3263: let hexdict["U-83"]="40aad7849846fb85b29b1c5d878dd8605fb416ee174acad781d2b8cbaf2d79ee"
+   line  3647: let hexdict["U-83"]="39217667ee8e17e7bff52b5cc633843d25f7de5c1ca75ab8e22f8ce41b08dd62"
+   line  5217: let hexdictabbr["40aad7849846fb85b29b1c5d878dd8605fb416ee174acad781d2b8cbaf2d79ee"]="U-83"
+   line  5601: let hexdictabbr["39217667ee8e17e7bff52b5cc633843d25f7de5c1ca75ab8e22f8ce41b08dd62"]="U-83"
+   line  7171: let otomdictabbr["29249873760555563071077515456339064384117823875626789894686305099025184815598"]="U-83"
+   line  7555: let otomdictabbr["25840955530450078066392363114615440529458923919820541260020845289725282016610"]="U-83"
+   line  9125: let otom2tokenid["U-83"]="29249873760555563071077515456339064384117823875626789894686305099025184815598"
+   line  9509: let otom2tokenid["U-83"]="25840955530450078066392363114615440529458923919820541260020845289725282016610"
+   line 11079: let otomsortorder["U-83"]="316"
+   line 11463: let otomsortorder["U-83"]="700"
+   line 12056: let decaydict["83 40  U"]=decay_text_stable          | let decaydict["U-83"]=decay_text_stable
+   line 12440: let decaydict["83 43  U"]=decay_text_beta_plus       | let decaydict["U-83"]=decay_text_beta_plus
+   line 13033: let stabilitydict["83 40  U"]="1.914" | let stabilitydict["U-83"]="1.914"
+   line 13417: let stabilitydict["83 43  U"]="0.653" | let stabilitydict["U-83"]="0.653"
+   line 14010: let   electrodict["83 40  U"]="0.179" | let   electrodict["U-83"]="0.179"
+   line 14394: let   electrodict["83 43  U"]="0.152" | let   electrodict["U-83"]="0.152"
+   line 17949: let     shelldict["83 40  U"]="⎥◼ ◼◼◻◻⎢" | let     shelldict["U-83"]="⎥◼ ◼◼◻◻⎢"
+   line 18333: let     shelldict["83 43  U"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["U-83"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥"
+   line 18926: let shelldictlong["83 40  U"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢" | let shelldictlong["U-83"]="⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◻◻⎢"
+   line 19310: let shelldictlong["83 43  U"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["U-83"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+   line 19903: let seriesdict["83 40  U"]="metal" | let seriesdict["U-83"]="metal"
+   line 20287: let seriesdict["83 43  U"]="metal" | let seriesdict["U-83"]="metal"
+   line 20880: let otomlookup["83 40"]="U-83"
+   line 21264: let otomlookup["83 43"]="U-83"
+
+
 2025-05-25 May.Sun 11:57:06 zeroshape made a Dune Analytics board 
 
 ::INFO:: 
@@ -112,8 +844,8 @@ removed:
 
 2025-05-24 May.Sat 11:49:37 And QMA discovered Se-103, so now 651 isotopes in Bohr
 
-OTOMRO 205224: P-23 + Se-102 + 10,000 => P-22 + Se-103 + 5460.854350063395031611
-[ ] Add to files
+OTOMRO 205224: P-23 + Se-102 +  10000 => P-22 + Se-103 + 6458.08 |    used 3541.92 | decay, nuclear
+[c] Add to files
 
 2025-05-24 May.Sat 09:04:30 QMA discovered 4 more isotopes so now 650 isotopes in Bohr
 Ji-106
@@ -217,13 +949,9 @@ OTOMRO 202017: P-24 + Lx-91 + 2499 => P-22 + Lx-93 + 75.537146982190009226
 ::FILE:: datasets/bohr_chain_recipes_for_morpheus.txt
 
 2025-05-23 May.Fri 15:21:07
-@q=gg/sf,;wE"nyf,wE"myf,wE"vyf,wE"oytgg0/| *n\S *+ *M\S   .*+>kbkb=>..*o *.*+ *\d\+\.\d\d *| *v0wvey A"[201~, ýa0f|;;;;ly$ a"0
 262: IN + IN => OUT       /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *, *\(\w\+-\d\+\) *, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *,\s*$
-@q=0gg/sf,;wE"nyf,WE"myf,WE"vyf,WE"oyf,wE"pygg0/| *n\S *+ *m\S   .*+kb=>..*o *+ *p *+ *\d\+\.\d\d *| *v0wvey $pa,f|;;;;ly$ p0
 231: IN + IN => OUT + OUT /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *, *\(\w\+-\d\+\) *, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *, *\(\w\+-\d\+\)\s*,\s*$
-@q=gg0/s0f,;wE"nyf,;WE"vyf,wE"oyvvf,wE"pykgg0/| *n\S   .*+ *\d\+ =>..*o *+ *mp  *+ *\d\+\.\d\d *| *v0wey A", f|;;;;ly$ $p0
  81: IN      => OUT + OUT /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *,\s\+, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *, *\(\w\+-\d\+\)\s*,\s*$
-@q=gg0/s0f,;wE"nyf,;WE"vyf,wE"oyvvf,wE"pykgg0/| *n\S   .*+ *\d\+ =>..*o *+ *\d\+\.\d\d *| *v0wey A", f|;;;;ly$ $p0
  23: IN      => OUT       /^ *\d\+-chain *, *\S\+ *, *\(\w\+-\d\+\) *,\s\+, *\(\d\+\.\d\d\) , *\(\w\+-\d\+\) *,\s*$
 
 [c] 6-chain for U-97 needs correction
@@ -2564,7 +3292,7 @@ Here are 2318 otoms and molecules with mass between 100-399 to choose from:
     | 385 | Qi₅        | 
 
 
-0f|��a;WE"ny / n\zggG Gk
+0f|ýa;WE"ny / n\zggG Gk
 viW"vy:let @o=substitute(substitute(substitute(@v,'[^0-9]',' ','g'),'\>\s\+\<',' + ','g'),'\s*$','',''):echo printf("%d",eval(@o))
 s/\(\<\C[A-Z][A-Za-z₂₃₄₅]\+(.\{-})\)/\=printf("%s %d",submatch(1),eval(substitute(substitute(substitute(submatch(1),'[^0-9]',' ','g'),'\>\s\+\<',' + ','g'),'\s*$','','')))/
 
@@ -2578,17 +3306,25 @@ s/\(\<\C[A-Z][A-Za-z₂₃₄₅]\+(.\{-})\)/\=printf("%s %d",submatch(1),eval(s
 
 2025-05-23 May.Fri 11:10:59 Lets complete my row 1 Bohr. Need Eb-23 and P-26
 
-[ ]|  Ct-13⁺ +  Ct-17⁻   +[   533.03 -   5000] => Yu-30         | nuclear                      |
-[ ]|  Eb-22∙ +  Wy-50∙   +[  2835.69 -   5000] => Kk-72         | nuclear                      |
-[ ]|  Ct-17⁻ +  Ct-17⁻   +[   556.86 -   5000] => Nd-34         | decay, nuclear               |
-[ ]|  Gj-11∙ +  Nd-34⁻   +[  1023.44 -   5000] => Gd-45         | nuclear                      |
-[ ]|  Yu-30∙ +  Kk-72ª   +[  3253.29 -   4000] => Ok-102        | nuclear                      |
-[ ]|  Ct-17⁻ + Ok-102⁻   +[  1970.59 -   5000] => P-22 + Vl-97  | decay, nuclear               |
-[ ]|  Gd-45⁻             +[  2775.58 -  10000] => Xj-21 + P-24  | nuclear                      |
-[ ]|  Xj-21⁻ +  Vl-97⁻   +[  2095.04 -  10000] => P-22 + N-96   | decay, nuclear               |
-[ ]|   N-96⁻             +[  8022.34 -  10000] => Dx-44 + Pb-52 | nuclear                      |
-[ ]   Dx-44              +               4000  => ? Xj-21 + Eb-23
-total: 27065.86
+[r]|  Ct-13⁺ +  Ct-17⁻   +[   533.03 -   5000] => Yu-30         | nuclear                      | used  532.73 [ ] update recipe chains
+[r]|  Eb-22∙ +  Wy-50∙   +[  2835.69 -   5000] => Kk-72         | nuclear                      | used 2835.49 [ ] update recipe chains
+[r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86 -   5000] => Nd-34         | decay, nuclear               | used  556.86 That's the minimum
+[r]|  Gj-11∙ +  Nd-34⁻   +[  1023.44 -   5000] => Gd-45         | nuclear                      | used 1023.44 That's the minimum
+[r]|  Yu-30∙ +  Kk-72ª   +[  3253.29 -   4000] => Ok-102        | nuclear                      | used 3253.29 That's the minimum
+[r]|  Ct-17⁻ + Ok-102⁻   +[  1970.59 -   5000] => P-22 + Vl-97  | decay, nuclear               | used 1819.14 [x] update recipe chains
+[r]|  Gd-45⁻             +[  2775.58 -  10000] => Xj-21 + P-24  | nuclear                      | used 2775.38 [ ] update recipe chains
+[r]|  Xj-21⁻ +  Vl-97⁻   +[  2095.04 -  10000] => P-22 + N-96   | decay, nuclear               | used 2093.84 [ ] update recipe chains
+[r]|   N-96⁻             +[  8022.34 -  10000] => Dx-44 + Pb-52 | nuclear                      | used 7923.49 [ ] update recipe chains
+What was I doing that for? Well I got cheaper recipe data out of it
+
+ [r]|  Eb-22∙ +  Wy-50∙   +[  2835.69 -   5000] => Kk-72         | nuclear                      |
+ [r]|  Ct-13⁺ +  Ct-17⁻   +[   533.03 -   5000] => Yu-30         | nuclear                      |
+ [r]|  Yu-30∙ +  Kk-72ª   +[  3253.29 -   4000] => Ok-102        | nuclear                      |
+ [r]|  Ct-17⁻ + Ok-102⁻   +[  1819.14 -   5000] => P-22 + Vl-97  | decay, nuclear               | used 1811.59 [ ] update recipe chains
+ [r]|   Sr-2∙ +  Vl-97⁻   +[  1228.50 -   5000] => Se-99         | nuclear                      | used 1228.45 [ ] update recipe chains
+ [r]|   Sr-3∙ +  Se-99∙   +[  1751.52 -   5000] => P-22 + Yv-80  | decay, nuclear               | used 1751.37 [ ] update recipe chains
+ [r]|  Yv-80⁻             +[  6540.92 -  12000] => K-37 + Dx-43  | nuclear                      | used 6517.97 [ ] update recipe chains
+ [r]|  Dx-43⁻             +[  2557.30 -   5000] => Xj-20 + Eb-23 | nuclear                      | used 2551.20 [ ] update recipe chains OTOMRO 214676 Dx-43 + 2558 => Xj-20 + Eb-23 + 6.797635784364501887 using 2551.20 nuclear
 
 2025-05-23 May.Fri 10:55:46 I've been imagining a graphic that shows all the recipes for all isotopes of each universe, where there's a huge circle of the mineables, and in the next inner ring, those are all connected to the chain-1 outputs, and those are connected to each other in another inner ring for the chain-2 outputs and so on until chain-10 in Bohr and chain-6 in Alpha.
 
@@ -3428,35 +4164,36 @@ This recipe is 4564 NRG. The previously well known one with many many steps was 
 8-chain: P-26   :: 30570.12 |   V-48⁻             +[  3311.60 -  10000] => Eb-22 + P-26  | nuclear                      |
 
 [>] Eb-23
-  [ ]|  Eb-22∙ +  Wy-50∙ + 2839 => Kk-72         
-  [ ]|  Ct-13⁺ +  Ct-17⁻ +  547 => Yu-30         
-  [ ]|  Yu-30∙ +  Kk-72ª + 3256 => Ok-102        
-  [ ]|  Ct-17⁻ + Ok-102⁻ + 1971 => P-22 + Vl-97  
-  [ ]|   Sr-2∙ +  Vl-97⁻ + 1418 => Se-99         
-  [ ]|   Sr-3∙ +  Se-99∙ + 1814 => P-22 + Yv-80  
-  [ ]|  Yv-80⁻           + 6541 => K-37 + Dx-43  
-  [ ]|  Dx-43⁻           + 2674 => Xj-20 + Eb-23 
+  [-]|  Eb-22∙ +  Wy-50∙ + 2839 => Kk-72         
+  [-]|  Ct-13⁺ +  Ct-17⁻ +  547 => Yu-30         
+  [-]|  Yu-30∙ +  Kk-72ª + 3256 => Ok-102        
+  [-]|  Ct-17⁻ + Ok-102⁻ + 1971 => P-22 + Vl-97  
+  [-]|   Sr-2∙ +  Vl-97⁻ + 1418 => Se-99         
+  [-]|   Sr-3∙ +  Se-99∙ + 1814 => P-22 + Yv-80  
+  [-]|  Yv-80⁻           + 6541 => K-37 + Dx-43  
+  [-]|  Dx-43⁻           + 2674 => Xj-20 + Eb-23 
 total: 21060
 
 [>] P-25
-  [ ]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
-  [ ]|   K-34∙ +  Co-83⁺ + 3823 => P-22 + Vl-95  
-  [ ]|   K-34∙ +  Vl-95⁻ + 4045 => P-22 + Da-107 
-  [ ]|   Sr-3∙ + Da-107∙ + 1818 => P-22 + Co-88  
-  [ ]|  Co-88⁻           + 7627 => Lu-41 + V-47  
-  [ ]|   V-47⁻           + 3013 => Eb-22 + P-25  
+  [-]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
+  [-]|   K-34∙ +  Co-83⁺ + 3823 => P-22 + Vl-95  
+  [-]|   K-34∙ +  Vl-95⁻ + 4045 => P-22 + Da-107 
+  [-]|   Sr-3∙ + Da-107∙ + 1818 => P-22 + Co-88  
+  [-]|  Co-88⁻           + 7627 => Lu-41 + V-47  
+  [-]|   V-47⁻           + 3013 => Eb-22 + P-25  
 total: 23815
 
 [>] P-26
-  [ ]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83  
-  [ ]|   Sr-2∙ +  Co-83⁺ + 1168 => W-85          
-  [ ]|   K-34∙ +   W-85ª + 3984 => P-22 + Se-97  
-  [ ]|  Ct-17⁻ +  Se-97ª + 1824 => P-22 + Lx-92  
-  [ ]|   P-23∙ +  Lx-92∙ + 3961 => P-22 + Lx-93  
-  [ ]|   K-34∙ +  Lx-93⁻ + 3926 => P-22 + Nm-105 
-  [ ]| Nm-105⁻           + 8903 => V-48 + L-57   
-  [ ]|   V-48⁻           + 3311 => Eb-22 + P-26  
-total: 30566
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70 -   5000] => P-24          | decay, nuclear               | used 517.70 Thats minimum
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70 -   5000] => P-24          | decay, nuclear               |
+ [r]|  Eb-22∙ +  Wy-50∙   +[  2835.69 -   5000] => Kk-72         | nuclear                      | used 2835.49 [ ] update recipe chains
+ [r]|  Ct-17⁻ +  Kk-72ª   +[  1520.55 -   5000] => Lx-89         | nuclear                      | used 1520.10 [ ] update recipe chains
+ [r]|   P-24⁻ +  Lx-89∙   +[  3161.36 -   4000] => P-22 + Lx-91  | decay, nuclear               | used 3161.36 Thats minimum
+ [r]|   P-24⁻ +  Lx-91⁻   +[  2419.71 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2419.51 [ ] update recipe chains OTOMRO 214832
+ [r]|   K-34∙ +  Lx-93⁻   +[  3924.34 -   5000] => P-22 + Nm-105 | decay, nuclear               | used 3924.09 [ ] update recipe chains OTOMRO 214837
+ [r]| Nm-105⁻             +[  8849.03 -  10000] => V-48 + L-57   | nuclear                      | used 8846.03 [ ] update recipe chains OTOMRO 214839
+ [r]|   V-48⁻             +[  2977.60 -  10000] => Eb-22 + P-26  | nuclear                      | used 2960.50 [ ] update recipe chains OTOMRO 214840
+total: 26778.18
 
 
 2025-05-07 May.Wed 22:23:21 W-76 was discovered so now 621 BOHR isotopes
@@ -5190,7 +5927,33 @@ However I suspect those would have alpha decay so X-134ª and X-137ª might imme
 2025-04-27 Apr.Sun 18:47:04
 
 try:
-[ ] U-95ª + 0 => ? P-22 + F-73
+[>] U-95ª + 0 => ? P-22 + Ny-73
+   [r]|   K-34∙ +  Kk-71ª   +[  3488.71 -  20000] => P-22 + Co-83  | decay, nuclear               | used 3488.71 Thats minimum
+   [r]|   Sr-2∙ +  Co-83⁺   +[  1168.79 -   5000] => W-85          | nuclear                      | used 1168.69 [ ] update recipe chains
+   [r]|   K-34∙ +   W-85ª   +[  3982.43 -   6000] => P-22 + Se-97  | decay, nuclear               | used 3982.33 [ ] update recipe chains
+   [r]|  Ct-17⁻ +  Se-97ª   +[  1815.09 -   6000] => P-22 + Lx-92  | decay, nuclear               | used 1814.89 [ ] update recipe chains
+   [r]|   Sr-3∙ +  Lx-92∙   +[  1654.05 -   5000] => U-95          | decay, nuclear               | used 1645.80 [ ] update recipe chains
+   [r]    U-95ª + 0 => ? P-22 + Ny-73 <----DIFFERENT SUCCESS! makes P-22 + F-73                   | used    0.00 decay [ ] add to chains OTOMRO 214964
+total: 12109.07
+
+
+::TIP:: Select a block of numbers you want to sum and copy to the unnamed register
+
+|
+|  +[  3488.71 -  20000] =>
+|  +[  1168.79 -   5000] =>
+|  +[  3982.43 -   6000] =>
+|  +[  1815.09 -   6000] =>
+|  +[  1654.05 -   5000] =>
+
+Then insert <Ctrl-R>= 
+and in the register do: 
+  printf("%8.2f", eval(substitute(@",'\s*\n',' + ','g')))
+
+It will output
+12109.07
+
+
 
 2025-04-27 Apr.Sun 17:33:27 New Discovery so now 605 isotopes
 
@@ -9533,24 +10296,24 @@ total:22485
    [r]|   P-24⁻ +  Lx-91⁻   +[  4000 ?  -   4000] => P-22 + Lx-94  | decay, nuclear               | used 2498.51 nuclear+decay [ ] update chains
    [f]   Lx-94⁻             +               5000 => ? Dx-44 + Uq-50 <---NOPE DAMN NOT ENOUGH makes N-93 using 4750.0 decay
 total: 16559.5
-   [*]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
-   [ ]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
-   [ ]|   P-24⁻ +  Lx-89∙   +[  3163.46 -   4000] => P-22 + Lx-91  | decay, nuclear               |
-   [ ]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   4000] => P-22 + Lx-94  | decay, nuclear               |
-   [ ]   Lx-94⁻             +               7800 => ? Dx-44 + Uq-50
+   [-]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
+   [-]|  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+   [-]|   P-24⁻ +  Lx-89∙   +[  3163.46 -   4000] => P-22 + Lx-91  | decay, nuclear               |
+   [-]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   4000] => P-22 + Lx-94  | decay, nuclear               |
+   [-]   Lx-94⁻             +               7800 => ? Dx-44 + Uq-50
 total: 17817.56
 
 
 
 [>]  Lx-95⁻  + 5000   => ? Dx-44 + Uq-51
-   [*]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
-   [ ]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85         
-   [ ]|   K-34∙ +   W-85ª + 3983 => P-22 + Se-97 
-   [ ]|  Ct-17⁻ +  Se-97ª + 1816 => P-22 + Lx-92 
-   [ ]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93 
-   [ ]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94 
-   [ ]|   P-23∙ +  Lx-94⁻ + 3027 => P-22 + Lx-95 
-   [ ]   Lx-95⁻           + 5000 => ? Dx-44 + Uq-51
+   [-]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
+   [-]|   Sr-2∙ +  Co-83⁺ + 1169 => W-85         
+   [-]|   K-34∙ +   W-85ª + 3983 => P-22 + Se-97 
+   [-]|  Ct-17⁻ +  Se-97ª + 1816 => P-22 + Lx-92 
+   [-]|   P-23∙ +  Lx-92∙ + 3955 => P-22 + Lx-93 
+   [-]|   P-23∙ +  Lx-93⁻ + 3073 => P-22 + Lx-94 
+   [-]|   P-23∙ +  Lx-94⁻ + 3027 => P-22 + Lx-95 
+   [-]   Lx-95⁻           + 5000 => ? Dx-44 + Uq-51
 total: 25512
 
 [>]  Lx-96⁻  + 5000   => ? Dx-45 + Uq-51
@@ -17862,18 +18625,18 @@ This line of thinking makes me wonder if i should try making new isotopes that h
 
  +------------------------------------------------------------------------------------------------------------------------
  | When a molecule is composed of only one kind of element, it is called an elemental molecule or simply a molecule of an element. More commonly, though, the term depends on the number of atoms involved:
- | Diatomic molecule: If it’s made of two atoms of the same element, like O₂ (oxygen), N₂ (nitrogen), or H₂ (hydrogen).
+ | Diatomic molecule: If it's made of two atoms of the same element, like O₂ (oxygen), N₂ (nitrogen), or H₂ (hydrogen).
  | 
- | Triatomic molecule: If it’s three atoms, like O₃ (ozone).
+ | Triatomic molecule: If it's three atoms, like O₃ (ozone).
  | 
- | Polyatomic molecule: If it’s more than two atoms, though this term is less specific and can apply to molecules with different elements too.
+ | Polyatomic molecule: If it's more than two atoms, though this term is less specific and can apply to molecules with different elements too.
  | 
  | In a broader sense, these are also referred to as homonuclear molecules, meaning the molecule consists of atoms of the same nucleus (i.e., the same element). For example:
  | O₂ is a homonuclear diatomic molecule.
  | 
  | O₃ is a homonuclear triatomic molecule.
  | 
- | The term "homonuclear" distinguishes them from heteronuclear molecules, which contain atoms of different elements (e.g., CO or H₂O). So, if you’re looking for a precise chemical term, homonuclear molecule is the most technical way to describe a molecule made of only one kind of element, with "diatomic" or "triatomic" added to specify the number of atoms. 
+ | The term "homonuclear" distinguishes them from heteronuclear molecules, which contain atoms of different elements (e.g., CO or H₂O). So, if you're looking for a precise chemical term, homonuclear molecule is the most technical way to describe a molecule made of only one kind of element, with "diatomic" or "triatomic" added to specify the number of atoms. 
  +------------------------------------------------------------------------------------------------------------------------
 
 Hmm. Seems like the term I'm looking for is "homonuclear molecules"
@@ -28736,60 +29499,66 @@ different visualisations:
 |85 42 Ua| beta+  | ⎣◼◼◼⎦⎣◼◼ ◼◼⎦⎣◼◼◼ ◼◼⎦⎣◼◼◼◼⎦⎣◼◼◼◼◼ ◼◼ ◼⎦⎣◼ ◼◼ ◼◼⎦⎣◼◼ ◼◼◼ ◼◼◼⎦⎣◼ ◼◼◼◼⎦
 |85 42 Ua| beta+  | ⎢◼◼◼⎥⎢◼◼ ◼◼⎥⎢◼◼◼ ◼◼⎥⎢◼◼◼◼⎥⎢◼◼◼◼◼ ◼◼ ◼⎥⎢◼ ◼◼ ◼◼⎥⎢◼◼ ◼◼◼ ◼◼◼⎥⎢◼ ◼◼◼◼⎥
 |85 42 Ua| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢
-|85 42 Ua| beta+  | ⸤◼◼◼⸥⸤◼◼ ◼◼⸥⸤◼◼◼ ◼◼⸥⸤◼◼◼◼⸥⸤◼◼◼◼◼ ◼◼ ◼⸥⸤◼ ◼◼ ◼◼⸥⸤◼◼ ◼◼◼ ◼◼◼⸥⸤◼ ◼◼◼◼⸥
+|85 42 Ua| beta+  | ⎥◼◼◼⎢⎥◼◼ ◼◼⎢⎥◼◼◼ ◼◼⎢⎥◼◼◼◼⎢⎥◼◼◼◼◼ ◼◼ ◼⎢⎥◼ ◼◼ ◼◼⎢⎥◼◼ ◼◼◼ ◼◼◼⎢⎥◼ ◼◼◼◼⎢
 |85 42 Ua| beta+  | (◼◼◼)(◼◼ ◼◼)(◼◼◼ ◼◼)(◼◼◼◼)(◼◼◼◼◼ ◼◼ ◼)(◼ ◼◼ ◼◼)(◼◼ ◼◼◼ ◼◼◼)(◼ ◼◼◼◼)
 |85 42 Ua| beta+  | |◼◼◼|◼◼ ◼◼|◼◼◼ ◼◼|◼◼◼◼|◼◼◼◼◼ ◼◼ ◼|◼ ◼◼ ◼◼|◼◼ ◼◼◼ ◼◼◼|◼ ◼◼◼◼|
 
 
-⎡◻⎤
-⎣◻⎦
+ ⎡◻⎤
+ ⎣◻⎦
+ 
+  ⸢ U+2E22 Top Left Half Bracket
+  ⸣ U+2E23 Top Right Half Bracket
+  ⸤ U+2E24 Bottom Left Half Bracket
+  ⸥ U+2E25 Bottom Right Half Bracket
+ 
+ ∣ 2223 divides
+ ⟂ 27C2 perpendicular to
 
- ⸢ U+2E22 Top Left Half Bracket
- ⸣ U+2E23 Top Right Half Bracket
- ⸤ U+2E24 Bottom Left Half Bracket
- ⸥ U+2E25 Bottom Right Half Bracket
-
-∣ 2223 divides
-⟂ 27C2 perpendicular to
 
 
 
- ⸢      ⸣
- ⸤◻◼⸥⸤◻◼⸥
-   ⎣⎯⎦
+
+  ⸢      ⸣
+- ⸤◻◼⸥⸤◻◼⸥
+-   ⎣⎯⎦
+
 
  ⸤◻◻◻◻◻◼◻⸥⸤◻◻◻◻◼◻⸥⸤◻◻⸥
 
-⎡ U+23A1 Left Square Bracket Upper Corner
-⎢ U+23A2 Left Square Bracket Extension
-⎣ U+23A3 Left Square Bracket Lower Corner
-⎤ U+23A4 Right Square Bracket Upper Corner
-⎥ U+23A5 Right Square Bracket Extension
-⎦ U+23A6 Right Square Bracket Lower Corner
-⎯ U+23AF Horizontal Line Extension
-⏐ U+23D0 Vertical Line Extension
+-⎡ U+23A1 Left Square Bracket Upper Corner
+-⎢ U+23A2 Left Square Bracket Extension
+-⎣ U+23A3 Left Square Bracket Lower Corner
+-⎤ U+23A4 Right Square Bracket Upper Corner
+-⎥ U+23A5 Right Square Bracket Extension
+-⎦ U+23A6 Right Square Bracket Lower Corner
+-⎯ U+23AF Horizontal Line Extension
+-⏐ U+23D0 Vertical Line Extension
 
 
 
 2025-01-07 Jan.Tue 16:01:00 Trying to find a way to show filled/empty shells. Perhaps using unicode. In vim, insert unicode with C-V U 25fb
-u+25fb ◻
-u+25fc ◼
 
-And arrows for indicating if the mass went up/down a proton
-u+2b06 ⬆
-u+2b07 ⬇
+u+25fb ◻  9723, Hex 25fb, Octal 22773 (small empty/white square)
+u+25fc ◼  9724, Hex 25fc, Octal 22774 (small filled/black square)
 
-u+2191 ↑
-u+2193 ↓
 
-u+21e1 ⇡
-u+21e3 ⇣
 
-u+21d1 ⇑
-u+21d3 ⇓
+And arrows for indicating if the mass went up/down a proton ⬆ ⬇
+u+2b06 ⬆     11014, Hex 2b06, Oct 25406 (up arrow)
+u+2b07 ⬇     11015, Hex 2b07, Oct 25407 (down arrow)
 
-u+2934 ⤴
-u+2935 ⤵
+u+2191 ↑      8593, Hex 2191, Oct 20621, Digr -!  (up arrow)
+u+2193 ↓      8595, Hex 2193, Oct 20623, Digr -v  (down arrow)
+
+u+21e1 ⇡      8673, Hex 21e1, Octal 20741  (up arrow)
+u+21e3 ⇣      8675, Hex 21e3, Octal 20743  (down arrow)
+
+u+21d1 ⇑      8657, Hex 21d1, Octal 20721  (up arrow)
+u+21d3 ⇓      8659, Hex 21d3, Octal 20723  (down arrow)
+
+u+2934 ⤴    10548, Hex 2934, Octal 24464  (up arrow)
+u+2935 ⤵    10549, Hex 2935, Octal 24465  (down arrow)
 
 
 2025-01-07 Jan.Tue 01:05:46 try to make 64 28 Yp like this:
