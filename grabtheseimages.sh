@@ -3924,3 +3924,7 @@ curl -o tokenimages/bohr/chips/Se-103.png  https://prod-otoms.s3.us-east-1.amazo
 echo "# F-73    F73  "
 curl -o tokenimages/bohr/tokens/F-73.png https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/9092789dd97416176acfc97a65906204c9d99c260c6c45001012f6667684422eF73--token.png  --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'
 curl -o tokenimages/bohr/chips/F-73.png  https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/9092789dd97416176acfc97a65906204c9d99c260c6c45001012f6667684422eF73--chip.png   --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'
+
+echo "# Mt-39    Mt39  "
+curl -o tokenimages/bohr/tokens/Mt-39.png https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/9092789dd97416176acfc97a65906204c9d99c260c6c45001012f6667684422eMt39--token.png  --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'
+curl -o tokenimages/bohr/chips/Mt-39.png  https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/9092789dd97416176acfc97a65906204c9d99c260c6c45001012f6667684422eMt39--chip.png   --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'

@@ -1,4 +1,16 @@
-What does this mean? "  aw124, how much nrg in p23 + vl101
+2025-05-26 May.Mon 09:26:10 QMA discovered Mt-39 after my twitter post suggested it was possible. Now 653 BOHR isotopes
+
+OTOMRO 216236: F-73⁻ + 5839 => Nd-34 + Mt-39 + 30.395898768295772641 | used 5808.60 nuclear
+
+I asked how QMA was calculating NRG requirements since he seemed to indicate he got it exactly right since 0.0 was returned.
+
+| QMA0000:
+| Turned out I forgot energy is consumed for chemical reaction as well.
+| 
+| 1. perform nuclear fission with sufficient energy
+| 2. since there is 5% energy loss for returned energy for any reaction, we can estimate how much energy is required for performing the exact reaction.
+| 3. If the nuclear fission is followed by chemical reaction, remove small amount of energy (such as, 1) from the energy calculated from 2., for prevention of making chemical bond
+
 
 2025-05-25 May.Sun 19:42:05 New Discovery F-73 now 652 isotopes in BOHR
 
@@ -7,7 +19,7 @@ OTOMRO 214964: U-95ª + 0 => P-22 + F-73 | used    0.00 decay
 [c] add to files
 
 try this UNLESS YOU PUT TOO MUCH IN AND GET MtNd:
-[ ] F-73⁻ + 5000 =>  Nd-34 + Mt-39 
+[-] F-73⁻ + 5000 =>  Nd-34 + Mt-39 
 
 
 try ratcheting down for the missing pieces:
@@ -10953,7 +10965,7 @@ total: 19440
 total: 32488
 
 [>]  Cv-114ª + 10000  => ? Wy-53 + Qe-61
-   [*]|   P-23∙ +  S-102ª   +[  3249.90 -  20000] => P-22 + S-103  | decay, nuclear               |
+   [.]|   P-23∙ +  S-102ª   +[  3249.90 -  20000] => P-22 + S-103  | decay, nuclear               |
    [ ]|   As-7∙ +  Ct-17⁻   +[   518.30 -   5000] => P-24          | decay, nuclear               |
    [ ]|   P-24⁻ +  S-103ª   +[  2538.25 -   5000] => P-22 + S-105  | decay, nuclear               |
    [ ]|   As-7∙ +  Ct-17⁻   +[   518.30 -   5000] => P-24          | decay, nuclear               |
@@ -10961,10 +10973,18 @@ total: 32488
    [ ]|   As-7∙ +  Ct-17⁻   +[   518.30 -   5000] => P-24          | decay, nuclear               |
    [ ]|   P-24⁻ +  S-107ª   +[  2657.05 -   4000] => P-22 + S-109  | decay, nuclear               |
    [ ]|   Sr-3∙ +  S-109ª   +[  1569.80 -   5000] => P-22 + W-90   | decay, nuclear               |
-   [ ]|   P-23∙ +   W-90⁻   +[  3073.80 -   5000] => P-22 + W-91   | decay, nuclear               |
-   [ ]|   P-23∙ +   W-91⁻   +[  3033.63 -   5000] => Cv-114        | decay, nuclear               |
+   [ ]|   P-23∙ +   W-90⁻   +[  2977.80 -   5000] => P-22 + W-91   | decay, nuclear               |
+   [ ]|   P-23∙ +   W-91⁻   +[  2935.63 -   5000] => Cv-114        | decay, nuclear               |
    [ ]  Cv-114ª                           +15000  => ? Wy-53 + Qe-61
 total: 36803.93 
+
+What about P-23 + Cv-111 => ? Cv-112
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [r]|  Cl-27∙ +  S-102ª   +[  3597.82 -  10000] => P-22 + Cv-107 | decay, nuclear               | used 3597.22 [ ] update recipe chains
+ [r]|   P-24⁻ + Cv-107ª   +[  2532.74 -   4000] => P-22 + Cv-109 | decay, nuclear               | used 2528.89 [ ] update recipe chains
+ [r]|   P-24⁻ + Cv-109ª   +[  2572.75 -   5000] => P-22 + Cv-111 | decay, nuclear               | used 2566.90 [ ] update recipe chains
+ [f]    P-23∙ + Cv-111ª   +               5000 => ? Cv-112 <---NOPE makes P-22 + P-23 + L-89
 
 [>]  Ek-100⁺ + 10000  => ? L-46 + C-54  
   [-] Mt-32⁺ +  S-102ª  + 2824 => P-22 + Aw-112  
