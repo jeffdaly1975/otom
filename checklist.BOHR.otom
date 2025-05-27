@@ -43,9 +43,9 @@
 | P-21   | have | mineable
 | P-22   | have | from mineables
 | P-23   | have | mineable
-| P-24   | [ ]  | from mineables
+| P-24   | have | from mineables
 | P-25   | have |
-| P-26   | [ ]  |
+| P-26   | have |
 | Ro-22  | have | mineable
 | Ro-23  | have | mineable
 | Ro-24  | have | mineable
@@ -200,6 +200,7 @@
 | Qe-58  | have | from mineables
 | Qe-59  | have | from mineables
 | Qe-60  | have |
+| Qe-61  | have |
 | C-53   | [ ]  |
 | C-54   | [ ]  |
 | C-55   | have | from mineables
@@ -400,7 +401,7 @@
 | Vl-91  | have | from mineables
 | Vl-92  | have | from mineables
 | Vl-93  | have | from mineables
-| Vl-94  | [ ]  |
+| Vl-94  | have |
 | Vl-95  | have |
 | Vl-96  | [ ]  |
 | Vl-97  | [ ]  |
@@ -428,7 +429,7 @@
 | Se-101 | [ ]  |
 | Se-102 | [ ]  |
 | Se-103 | [ ]  |
-| Se-100 | [ ]  |
+| Se-104 | [ ]  |
 | Nm-87  | have |
 | Nm-88  | [ ]  |
 | Nm-89  | have |
