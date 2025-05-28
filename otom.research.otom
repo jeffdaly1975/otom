@@ -1,3 +1,469 @@
+2025-05-28 May.Wed 13:50:59 Fixed up my grabtheseimages.sh script to use a function to abstract away all the work. And added file tests to see if the file exists and not bother downloading it if it does already. Before I was commenting out everything I'd already got and rerunning and then uncommenting. Clumsy. This function call is the way.
+
+2025-05-28 May.Wed 12:00:15 Analyzed some crafted PkAx outputs.
+
++------------------------+-----+----+----+------+-------------------------------------------------------------------------------------------------------------------------+
+| Crafting Wildcard mass | Tier|Mine|Uses|ItemId| shapescan token URL                                                                                                     | what exact mollie
++------------------------+-----+----+----+------+-------------------------------------------------------------------------------------------------------------------------+
+| Ju-1                 1 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/679988860990853490778573974618472411770 |
+| Ju-2                 2 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/679644747678329883888732791907264126431 |
+| As-6                 6 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/680055873993273442115431777706557344426 |
+| Af-9                 9 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/678974922106872611285285754637933803508 |
+| T-16                16 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/679775293081295992793679624433698956175 |
+| M-22                22 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/679631384620198720746796211673532800170 |
+| M-23                23 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/680561851080552115593116254621961724910 |
+| Nd-30               30 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/679893307401335178073707470502862921091 |
+| Xc-31               31 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/679216498407522848356766797261364306757 |
+| Xc-34               33 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/679290227399844490481236035334885812010 |
+| JuXc(Ju-1>Xc-32)    33 |  T1 |  6 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/678711326915133522201064737701022423414 | mass 33 U-alpha JuXc(Ju-1>Xc-32) token id 83994767300056815930368489487028351716867931903527877820562065224920248946861
++------------------------+-----+----+----+------+-------------------------------------------------------------------------------------------------------------------------+
+| Aw-50               50 |  T2 | 12 |  9 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/676830171469257232566280718564960000660 | 
+| NbW(Nb-54>W-4)      58 |  T2 | 12 |  9 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/680250256559902738138662334175897115471 | mass 58 U-alpha NbW(Nb-54>W-4) token id 86086099396680162035543876857510179095436992399393173754537181092865015555973
+| Kk-70               70 |  T2 | 12 |  9 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/678406551685311229049882859730123141280 | 
+| Yv-72               70 |  T2 | 12 |  9 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/677533343535389161500188640715162210996 |
+| Yv-72               72 |  T2 | 12 |  9 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/679036179982172526794713695729433965371 | 
++------------------------+-----+----+----+------+-------------------------------------------------------------------------------------------------------------------------+
+| S-102              102 |  T3 | 18 |  8 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/676844200854352916241615939526061378008 |
+| S-102              102 |  T3 | 18 |  8 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/676915137736464079255050206509887480146 |
+| FjXlXcS()          104 |  T3 | 18 |  8 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/677578337637699618175644527042271479031 | mass 104 U-Alpha FjXlXcS(Fj-37,Xl-10>S-26,Xc-31)      token id 42355655427729650213838518638642310382056323873101048037967352171910089617000
++------------------------+-----+----+----+------+-------------------------------------------------------------------------------------------------------------------------+
+| Kk₃                210 |  T4 | 24 |  7 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/676815991833463073501745508755976772057 | mass 210 U-bohr  Kk₃(Kk-70,Kk-70,Kk-70>) token id 73594304984417890822166703767221426322903519579659025189900027289036746201140
+| Kk₃                210 |  T4 | 24 |  7 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/676291521924867584906314533379320967327 | mass 210 U-bohr  Kk₃(Kk-70,Kk-70,Kk-70>) token id 73594304984417890822166703767221426322903519579659025189900027289036746201140
+| Kk₃                210 |  T4 | 24 |  7 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/676350724607258127974317222495520056129 | mass 210 U-bohr  Kk₃(Kk-70,Kk-70,Kk-70>) token id 73594304984417890822166703767221426322903519579659025189900027289036746201140
+| Kk₃                213 |  T4 | 24 |  7 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/676776970553448390442609780976196043334 | mass 213 U-bohr  Kk₃(Kk-71,Kk-71,Kk-71>) token id 89172297275886974049027831552393578585636394912361444158784652299389108333693
++------------------------+-----+----+----+------+-------------------------------------------------------------------------------------------------------------------------+
+| ClSGjKkUq          257 |  T5 | 30 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/669808365548843939029892453031756816256 | mass 257 U-bohr  ClSGjKkUq(Cl-26,Gj-11,S-102>Kk-71,Uq-47) token id 39986146128263568288114545822834787296980793044910212100432197337124527774349
+| Kk₅                350 |  T5 | 30 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/671385587252855202429230672316406795493 | mass 350 U-bohr  Kk₅(Kk-70,Kk-70,Kk-70,Kk-70,Kk-70>) token id 86058854589482738631535291500067939596073595566543374259755509187037416901047
+| Kk₅                352 |  T5 | 30 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/671074983129217285738868697762771163133 | mass 352 U-bohr  Kk₅(Kk-70,Kk-70,Kk-70,Kk-71,Kk-71>) token id 8400921696211413079985787923924782905077980754480164676499295556160627273993
+| Kk₅                355 |  T5 | 30 |  6 |    2 | https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/664561613615088199809607025365342242377 | mass 355 U-bohr  Kk₅(Kk-71,Kk-71,Kk-71,Kk-71,Kk-71>) token id 98547017732907927784030231086767733253278172297597938799925531338948127585886
++------------------------+-----+----+----+------+-------------------------------------------------------------------------------------------------------------------------+
+
+reactions to make those molecules:
+|   197049 |alpha   |   Ju-1∙ +  Zq-32⁻                               +       20 => ⬆ JuXc(Ju-1>Xc-32)                                                                 +       2.20 |      17.80 | chemical, decay              | 0x8bc1425b827e5d1f2042276afa8c0afbabfdea21 | 0x6d8799c8cf9e92bced8dd8807763496ba58f791b936f63ef23acd1a3c2958bce | 0xa04e9ad18411aa9c9ae449c28bd97b5cb8bda11bb112f8ff280f89d0b47a10d1 |
+|    20926 |alpha   |    W-4∙ +  Nb-54ª                               +      600 =>   NbW(Nb-54>W-4)                                                                   +     545.17 |      54.83 | chemical                     | 0x7d00d8579549fcbe8a3296342042a178408f82f7 | 0x952c27c49c5663f78d4c2015d47338c9163d01c5c4fa3ba041d34dbedbbb015c | 0x8c4179986755ac3bbc731e80cb620f9f697f0d89466cc8b971116181e97eff09 |
+|   227082*|alpha   |  Xl-10ª +   S-26ª +  Xc-31∙ +  Xc-31∙ +  Fj-37ª +      500 =>   Xc-31 + FjXlXcS(Fj-37,Xl-10>S-26,Xc-31)                                          +     437.30 |      62.70 | chemical                     | 0xf9d6c6a228ede1da6f56e8acf063ea49700fa3f2 | 0xeb18d8c0d6e09634449a33f70b78b1cfb302536b8e52b4c2236d352308a846ca | 0x83e66c389a4228adbfb1279f38671b6c61845dfa3ea008054efdd092fc4eaab2 |
+|   188621 |bohr    |  Kk-70ª +  Kk-70ª +  Kk-70ª                     +      197 =>   Kk₃(Kk-70,Kk-70,Kk-70>)                                                          +       0.87 |     196.13 | metallic                     | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0x096dbd0e3e415bfdba38abe9095a8a5facda590cba2a23dd8bd20d985b2a0942 | 0xf0e2f53c3d3c32138c063fdb3aa9b893d5d331e8ca42d8f0042a8c3dc0ff2609 |
+|   195817 |bohr    |  Kk-70ª +  Kk-70ª +  Kk-71ª                     +      200 =>   Kk₃(Kk-70,Kk-70,Kk-71>)                                                          +       2.83 |     197.17 | metallic                     | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0xc756e06e77c73693058d0280cff3317b9578433d3248ac9bf5b3fb5bee7516bf | 0x12b7ee2df2d5bc70b41ba63d841002d3d03396ee985c75cb891ab1cccdc7ab66 |
+|   188568 |bohr    |  Kk-70ª +  Kk-71ª +  Kk-71ª                     +      200 =>   Kk₃(Kk-70,Kk-71,Kk-71>)                                                          +       1.94 |     198.06 | metallic                     | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0x52524f2fa18b9bbdc115c881dc88b21f9bccdb83b7c012eea960d09e8646a4e4 | 0x7f36cf77d9459f046569733f85127ac18202fb7226046659d01d830b37a1a7c0 |
+|   192986 |bohr    |  Kk-71ª +  Kk-71ª +  Kk-71ª                     +      200 =>   Kk₃(Kk-71,Kk-71,Kk-71>)                                                          +       1.06 |     198.94 | metallic                     | 0x2a4a229c4d748c2346963d0bb30c48cd11021aac | 0x505789381d5b1bc620e01b9f026d8e0aaa2d9f52a7fa0ef84ebb52cf000493d6 | 0x301e564c67f1adc08e4be33dbe582e9be426f00f9fcadd80e2bde834be0ede02 |
+|   150999*|bohr    |  Vi-11⁺ +  Cl-26ª +  Uq-47⁻ +  Kk-71ª +  S-102ª +    10000 => ⬇ ClSGjKkUq(Cl-26,Gj-11,S-102>Kk-71,Uq-47)                                         +    9404.37 |     595.63 | chemical, decay              | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x066726bb01794a3ced9c44c53b6c8762948cf27acd04f058cd27a86fc253a006 | 0x307de3f385e4c3143da4c260224446a2666911344ce55720e55f254226aeabee |
+|   227169 |bohr    |  Kk-70ª +  Kk-70ª +  Kk-70ª +  Kk-70ª +  Kk-70ª +      330 =>   Kk₅(Kk-70,Kk-70,Kk-70,Kk-70,Kk-70>)                                              +       3.03 |     326.97 | metallic                     | 0xc45a3b5aed31b117f8d16046b56fc2cb602894e7 | 0xa63f8d5d0b9dfc6040cb079667d2c1cee113a7cf1b16e69a728c9f6172966345 | 0x9192be687cb84c58025254cfacd1fb92ae05f9e2d7f8aee93bee9408f5287c0f |
+|   224301 |bohr    |  Kk-70ª +  Kk-70ª +  Kk-70ª +  Kk-71ª +  Kk-71ª +      777 =>   Kk₅(Kk-70,Kk-70,Kk-70,Kk-71,Kk-71>)                                              +     425.91 |     351.09 | metallic                     | 0x6f15f9d78325a25a3ed808c48b43a3af08b828dd | 0x1fec2163e9824162f24cf15731d5729fc9200f06682ba3baca6d6320b5dada0a | 0x5ac07188f42c8f140aa34c98005add734b0df7fb3fee4f26683f54aea8fe7987 |
+|   226658 |bohr    |  Kk-71ª +  Kk-71ª +  Kk-71ª +  Kk-71ª +  Kk-71ª +      500 =>   Kk₅(Kk-71,Kk-71,Kk-71,Kk-71,Kk-71>)                                              +     160.09 |     339.91 | metallic                     | 0x0eb5187d374cd8d6fcb46d93c1bc52ab554765a1 | 0xfe174004b227dbb7e68ceaa912765d19556738adda7d7b15c8329fd814075f4a | 0x369110376caa87779d02d2e75cfe2e1eadb996a0d2c2f3b458acff8ea3b4f883 |
+
+
+I'm guessing the Tiers are:
+  +------+---------------+
+  | Tier | Wildcard mass |
+  +------+---------------+
+  |  T1  |    0 -  49    |
+  |  T2  |   50 -  99    |
+  |  T3  |  100 - 199    |
+  |  T4  |  200 - 249    |
+  |  T5  |  250 +        |
+  +------+---------------+
+
+Sweet. I only had to make a T1 and T2 and I've now made them all and claimed the medals on Shape Stack.
+
+
+2025-05-28 May.Wed 11:06:14
+Okay lets make one of each PkAx. Hmm. To get the medals do you need to keep 1 of each in your wallet for perpetuity to hold the medals and not have them revoked?
+
+
+
+2025-05-28 May.Wed 11:01:28
+On page https://shapescan.xyz/address/0x72b89472d81BADAf167FB21c128fAA5e495de904?tab=txs,
+okay what is this tx? with fn call to emitMetadataUpdate()?
+It Failed. Did someone try calling something they weren't supposed to?
+
+2025-05-28 May.Wed 10:01:40 I have 443/655 isotopes of Bohr or 67.6%
+
+What's missing?
+
+[c] Make missing 1-chains:
+[r] 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               | used 2235.72 [ ] update recipe chains
+
+[ ] Make missing 2-chains:
+[ ] 2-chain Ai-60  ::  2276.43 |   Sr-1∙ +  Ns-59⁺   +[   944.29 -   1500] => Ai-60         | nuclear                      |
+[ ] 2-chain Ai-69  ::  3036.49 |  Nd-34⁻ +   K-35⁻   +[  1635.86 -   5000] => Ai-69         | nuclear                      |
+[ ] 2-chain Dd-94  ::  5062.03 |  Uq-44⁺ +  Cj-72ª   +[  3409.93 -  10000] => P-22 + Dd-94  | decay, nuclear               |
+[ ] 2-chain Ek-111 ::  6616.40 |   K-32∙ + Da-101ª   +[  4153.45 -   4750] => P-22 + Ek-111 | decay, nuclear               |
+[ ] 2-chain Ha-117 ::  7660.31 |  Lu-36∙ +  Z-103ª   +[  4735.14 -  15000] => P-22 + Ha-117 | decay, nuclear               |
+[ ] 2-chain Ji-109 ::  6785.74 |  Gy-65⁺ +  Gy-66ª   +[  3860.99 -  10000] => P-22 + Ji-109 | decay, nuclear               |
+[ ] 2-chain Ok-103 ::  6476.50 |  Qe-58⁻ +  Ai-67⁻   +[  3802.98 -   7500] => P-22 + Ok-103 | decay, nuclear               |
+[ ] 2-chain S-105  ::  6301.80 |   P-24⁻ +  S-103ª   +[  2534.70 -   5000] => P-22 + S-105  | decay, nuclear               |
+[ ] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
+[ ] 2-chain Vt-106 ::  5043.17 |  Ro-23ª + Cv-105ª   +[  2476.27 -   4000] => P-22 + Vt-106 | decay, nuclear               |
+[ ] 2-chain Z-101  ::  4505.23 |   P-21⁺ +  Z-102ª   +[  2261.31 -  10000] => P-22 + Z-101  | decay, nuclear               |
+...BUT first need:
+ [ ] 1-chain Ai-67  ::  1640.70 |  Ct-17⁻ +  Wy-50∙   +[  1640.70 -   5000] => Ai-67         | nuclear                      |
+ [ ] 1-chain Cj-72  ::   983.52 |   As-5⁺ +  Gy-67ª   +[   983.52 -   5000] => Cj-72         | nuclear                      |
+ [ ] 1-chain Cv-105 ::  2566.90 |  Cl-25⁺ +  S-102ª   +[  2566.90 -  10000] => P-22 + Cv-105 | decay, nuclear               |
+ [ ] 1-chain Da-101 ::  2462.95 |  Nd-30ª +  Kk-71ª   +[  2462.95 -  20000] => Da-101        | nuclear                      |
+ [ ] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+ [ ] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+ [ ] 1-chain Gy-66  ::  1321.69 |   T-15⁺ +   L-51⁺   +[  1321.69 -   5000] => Gy-66         | nuclear                      |
+ [ ] 1-chain K-32   ::     0.00 |  Mt-32⁺             +[     0.00 -   1000] => K-32          | decay                        |
+ [ ] 1-chain K-35   ::   843.77 |  Ct-17⁻ +  Xj-18∙   +[   843.77 -   5000] => K-35          | nuclear                      |
+ [ ] 1-chain Lu-36  ::   486.50 |   As-5⁺ +   K-31⁺   +[   486.50 -   5000] => Lu-36         | decay, nuclear               |
+ [ ] 1-chain Nd-34  ::   556.86 |  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34         | decay, nuclear               |
+ [ ] 1-chain Ns-59  ::  1332.14 |  Yu-27⁺ +  Mt-32⁺   +[  1332.14 -  20000] => Ns-59         | decay, nuclear               |
+ [ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [ ] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
+ [ ] 1-chain Qe-58  ::  1032.82 |  Vi-11⁺ +  Uq-47⁻   +[  1032.82 -   5000] => Qe-58         | nuclear                      |
+ [ ] 1-chain S-103  ::  3249.40 |   P-23∙ +  S-102ª   +[  3249.40 -  20000] => P-22 + S-103  | decay, nuclear               |
+ [ ] 1-chain Uq-44  ::   668.58 |  Vi-10⁺ +  Mt-34⁺   +[   668.58 -   5000] => Uq-44         | decay, nuclear               |
+ [ ] 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+ [ ] 1-chain Z-103  ::  2438.67 |  Ro-23ª +  S-102ª   +[  2438.67 -  20000] => P-22 + Z-103  | decay, nuclear               |
+
+Make missing 3-chains:
+[ ] 3-chain Ok-93  ::  5921.65 |  Ro-22⁺ +  Dd-93⁺   +[  2076.97 -   2080] => P-22 + Ok-93  | decay, nuclear               | OTOMRO 181946
+[ ] 3-chain Aw-110 ::  7354.60 |   P-21⁺ + Aw-111ª   +[  2264.11 -   4000] => P-22 + Aw-110 | decay, nuclear               |
+[ ] 3-chain Cj-79  ::  6509.88 |   Sr-3∙ +  Nm-98ª   +[  1528.23 -   6000] => P-22 + Cj-79  | decay, nuclear               |
+[ ] 3-chain Co-84  ::  4323.43 |   Sr-2∙ +   D-82⁺   +[  1349.67 -   5000] => Co-84         | nuclear                      |
+[ ] 3-chain Cv-101 ::  6680.91 |   P-21⁺ + Cv-102ª   +[  2189.45 -   5000] => P-22 + Cv-101 | decay, nuclear               |
+[ ] 3-chain Cv-103 ::  7073.07 |   P-21⁺ + Cv-104ª   +[  2240.69 -   5000] => P-22 + Cv-103 | decay, nuclear               |
+[ ] 3-chain Cv-110 ::  6545.27 |   P-24⁻ + Cv-108ª   +[  2677.06 -   5000] => P-22 + Cv-110 | decay, nuclear               |
+[ ] 3-chain Da-103 ::  6476.50 | Ok-103⁻             +[     0.00 -   9000] => Da-103        | decay                        |
+[ ] 3-chain Da-105 :: 11205.49 |   K-32∙ +  Vl-95⁻   +[  3893.94 -   5000] => P-22 + Da-105 | decay, nuclear               |
+[ ] 3-chain Da-106 :: 12019.48 |   K-33∙ +  Vl-95⁻   +[  4019.38 -   5000] => P-22 + Da-106 | decay, nuclear               |
+[ ] 3-chain Da-107 :: 11356.43 |   K-34∙ +  Vl-95⁻   +[  4044.88 -   5000] => P-22 + Da-107 | decay, nuclear               |
+[ ] 3-chain Da-96  ::  6561.48 |  Ro-22⁺ +  Ok-96⁺   +[  2232.30 -   4000] => P-22 + Da-96  | decay, nuclear               |
+[ ] 3-chain Dd-90  ::  5721.05 |  Vi-10⁺ + Cv-102ª   +[  1229.59 -   3000] => P-22 + Dd-90  | decay, nuclear               |
+[ ] 3-chain Dd-91  ::  5959.90 |  Vi-11⁺ + Cv-102ª   +[  1468.44 -   5000] => P-22 + Dd-91  | decay, nuclear               |
+[ ] 3-chain Dd-92  ::  6176.01 |  Ro-22⁺ +  Nm-92⁺   +[  2104.14 -  10000] => P-22 + Dd-92  | decay, nuclear               |
+[ ] 3-chain Ek-106 ::  7384.61 |  Ro-23ª + Vt-105ª   +[  2713.21 -  10000] => P-22 + Ek-106 | decay, nuclear               |
+[ ] 3-chain Ha-112 ::  6808.89 |  Ro-22⁺ + Kn-112ª   +[  1785.71 -   4000] => P-22 + Ha-112 | decay, nuclear               | OTOMRO 204039
+[ ] 3-chain Ha-113 ::  7336.27 |  Ro-23ª + Kn-112ª   +[  2313.09 -   2320] => P-22 + Ha-113 | decay, nuclear               | OTOMRO 138993
+[ ] 3-chain Ha-114 ::  7967.48 |   P-21⁺ + Ha-115ª   +[  2618.47 -   5000] => P-22 + Ha-114 | decay, nuclear               | OTOMRO 204082
+[ ] 3-chain Ji-107 ::  7946.23 |  Gy-64⁺ +  Gy-65⁺   +[  3374.04 -  10000] => P-22 + Ji-107 | decay, nuclear               |
+[ ] 3-chain Ji-108 ::  9158.52 |  Ro-23ª + Ek-107ª   +[  3469.39 -  25000] => P-22 + Ji-108 | decay, nuclear               |
+[ ] 3-chain Kn-111 ::  6746.15 |   P-21⁺ + Kn-112ª   +[  1722.97 -   4000] => P-22 + Kn-111 | decay, nuclear               | OTOMRO 204093
+[ ] 3-chain Lx-80  ::  5272.65 |   P-21⁺ +  Lx-81ª   +[  2128.92 -   5000] => P-22 + Lx-80  | decay, nuclear               |
+[ ] 3-chain N-81   ::  5100.07 |   P-21⁺ +   N-82⁺   +[  2004.46 -   5000] => P-22 + N-81   | decay, nuclear               |
+[ ] 3-chain N-91   ::  7715.22 |   P-23∙ +   N-90⁺   +[  3113.03 -   5000] => P-22 + N-91   | decay, nuclear               |
+[ ] 3-chain N-92   ::  6066.64 |   Sr-3∙ +  Lx-89∙   +[  1711.05 -   5000] => N-92          | nuclear                      |
+[ ] 3-chain Nm-90  ::  5023.18 | Kn-112ª             +[     0.00 -      0] => P-22 + Nm-90  | decay                        |
+[ ] 3-chain Nm-91  ::  6333.01 |   P-21⁺ +  Nm-92⁺   +[  2261.14 -   5000] => P-22 + Nm-91  | decay, nuclear               |
+[ ] 3-chain Nm-99  ::  8303.86 |   P-23∙ +  Nm-98ª   +[  3322.21 -  10000] => P-22 + Nm-99  | decay, nuclear               |
+[ ] 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
+[ ] 3-chain S-106  ::  6168.79 |   P-24⁻ +  S-104⁺   +[  2566.57 -   5000] => P-22 + S-106  | decay, nuclear               |
+[ ] 3-chain S-107  ::  9390.71 |   P-24⁻ +  S-105ª   +[  2571.21 -   5000] => P-22 + S-107  | decay, nuclear               |
+[ ] 3-chain S-96   ::  8090.22 |   P-21⁺ +   S-97⁺   +[  2091.32 -  10000] => P-22 + S-96   | decay, nuclear               |
+[ ] 3-chain Se-87  ::  6542.77 |   P-21⁺ +  Se-88⁺   +[  2260.76 -   5000] => P-22 + Se-87  | decay, nuclear               |
+[ ] 3-chain Se-98  ::  8615.59 |   K-34∙ +   W-86ª   +[  3881.31 -   5000] => P-22 + Se-98  | decay, nuclear               |
+[ ] 3-chain U-94   ::  6820.90 |   K-34∙ +   D-82⁺   +[  3847.14 -   5000] => P-22 + U-94   | decay, nuclear               |
+[ ] 3-chain Vl-96  :: 10570.20 |   P-23∙ +  Vl-95⁻   +[  3258.65 -   5000] => P-22 + Vl-96  | decay, nuclear               | OTOMRO 215478
+[ ] 3-chain Vl-97  ::  8433.10 |  Ct-17⁻ + Ok-102⁻   +[  1811.59 -   5000] => P-22 + Vl-97  | decay, nuclear               |
+[ ] 3-chain Vt-102 ::  6702.08 |  Ro-22⁺ + Cv-102ª   +[  2210.62 -   4000] => P-22 + Vt-102 | decay, nuclear               |
+[ ] 3-chain Vt-103 ::  6884.55 |  Ro-23ª + Cv-102ª   +[  2393.09 -   4000] => P-22 + Vt-103 | decay, nuclear               |
+[ ] 3-chain Vt-104 ::  7174.58 |  Vi-11⁺ + Ha-115ª   +[  1825.57 -   8000] => P-22 + Vt-104 | decay, nuclear               |
+[ ] 3-chain W-78   ::  4832.27 |   P-21⁺ +   W-79ª   +[  2147.96 -   5000] => P-22 + W-78   | decay, nuclear               |
+[ ] 3-chain Z-108  ::  7832.57 |   P-24⁻ +  Z-106ª   +[  2615.03 -   4000] => P-22 + Z-108  | decay, nuclear               |
+[ ] 3-chain Z-99   ::  6689.94 |  Eb-19⁺ + Cv-102ª   +[  2198.48 -   5000] => P-22 + Z-99   | decay, nuclear               |
+...BUT first need these 1-chains:
+[ ] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+[ ] 1-chain K-32   ::     0.00 |  Mt-32⁺             +[     0.00 -   1000] => K-32          | decay                        |
+[ ] 1-chain K-33   ::   688.55 |   Sr-3∙ +  Nd-30ª   +[   688.55 -   5000] => K-33          | nuclear                      |
+[ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+...AND            these 2-chains:
+[ ]  2-chain Dd-93  ::  3844.68 |  Ro-22⁺ +  Nm-93⁺   +[  2134.08 -   2135] => P-22 + Dd-93  | decay, nuclear               |
+[ ]  2-chain Aw-111 ::  5090.49 |  Mt-32⁺ +  S-101ª   +[  2784.77 -   4000] => P-22 + Aw-111 | decay, nuclear               |
+[ ]  2-chain Nm-98  ::  4981.65 |   Sr-2∙ +  Se-96∙   +[  1660.58 -   5000] => Nm-98         | nuclear                      |
+[ ]  2-chain Nm-98  ::  4981.65 |   Sr-2∙ +  Se-96∙   +[  1660.58 -   5000] => Nm-98         | nuclear                      |
+[ ]  2-chain D-82   ::  2973.76 |   K-35⁻ +  Uq-47⁻   +[  2129.99 -   5000] => D-82          | nuclear                      |
+[ ]  2-chain D-82   ::  2973.76 |   K-35⁻ +  Uq-47⁻   +[  2129.99 -   5000] => D-82          | nuclear                      |
+[ ]  2-chain Cv-102 ::  4491.46 |  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               |
+[ ]  2-chain Cv-102 ::  4491.46 |  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               |
+[ ]  2-chain Cv-102 ::  4491.46 |  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               |
+[ ]  2-chain Cv-102 ::  4491.46 |  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               |
+[ ]  2-chain Cv-102 ::  4491.46 |  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               |
+[ ]  2-chain Cv-102 ::  4491.46 |  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               |
+[ ]  2-chain Cv-104 ::  4832.38 |   P-21⁺ + Cv-105ª   +[  2265.48 -   5000] => P-22 + Cv-104 | decay, nuclear               |
+[ ]  2-chain Cv-108 ::  3350.51 |  Cl-28⁻ +  S-102ª   +[  2870.36 -   4500] => P-22 + Cv-108 | decay, nuclear               |
+[ ]  2-chain Ok-103 ::  6476.50 |  Qe-58⁻ +  Ai-67⁻   +[  3802.98 -   7500] => P-22 + Ok-103 | decay, nuclear               |
+[ ]  2-chain Vl-95  ::  7311.55 |   K-34∙ +  Co-83⁺   +[  3822.84 -   5000] => P-22 + Vl-95  | decay, nuclear               |
+[ ]  2-chain Vl-95  ::  7311.55 |   K-34∙ +  Co-83⁺   +[  3822.84 -   5000] => P-22 + Vl-95  | decay, nuclear               |
+[ ]  2-chain Vl-95  ::  7311.55 |   K-34∙ +  Co-83⁺   +[  3822.84 -   5000] => P-22 + Vl-95  | decay, nuclear               |
+[ ]  2-chain Vl-95  ::  7311.55 |   K-34∙ +  Co-83⁺   +[  3822.84 -   5000] => P-22 + Vl-95  | decay, nuclear               |
+[ ]  2-chain Vl-95  ::  7311.55 |   K-34∙ +  Co-83⁺   +[  3822.84 -   5000] => P-22 + Vl-95  | decay, nuclear               |
+[ ]  2-chain Ok-96  ::  4329.18 |   P-21⁺ +  Ok-97ª   +[  2307.34 -   5000] => P-22 + Ok-96  | decay, nuclear               |
+[ ]  2-chain Da-97  ::  4574.62 |   K-31⁺ +  Vl-88⁺   +[  2707.71 -   4000] => P-22 + Da-97  | decay, nuclear               |
+[ ]  2-chain Nm-92  ::  4071.87 |   Sr-2∙ + Aw-112ª   +[  1248.19 -  10000] => P-22 + Nm-92  | decay, nuclear               |
+[ ]  2-chain Nm-92  ::  4071.87 |   Sr-2∙ + Aw-112ª   +[  1248.19 -  10000] => P-22 + Nm-92  | decay, nuclear               |
+[ ]  2-chain Vt-105 ::  4671.40 |   T-15⁺ + Aw-112ª   +[  1847.72 -   5000] => P-22 + Vt-105 | decay, nuclear               |
+[ ]  2-chain Kn-112 ::  5023.18 |  Ro-22⁺ + Aw-112ª   +[  2199.50 -   4000] => P-22 + Kn-112 | decay, nuclear               |
+[ ]  2-chain Kn-112 ::  5023.18 |  Ro-22⁺ + Aw-112ª   +[  2199.50 -   4000] => P-22 + Kn-112 | decay, nuclear               |
+[ ]  2-chain Kn-112 ::  5023.18 |  Ro-22⁺ + Aw-112ª   +[  2199.50 -   4000] => P-22 + Kn-112 | decay, nuclear               |
+[ ]  2-chain Kn-112 ::  5023.18 |  Ro-22⁺ + Aw-112ª   +[  2199.50 -   4000] => P-22 + Kn-112 | decay, nuclear               |
+[ ]  2-chain Ha-115 ::  5349.01 |  Cl-25⁺ + Aw-112ª   +[  2525.33 -   5000] => P-22 + Ha-115 | decay, nuclear               |
+[ ]  2-chain Ha-115 ::  5349.01 |  Cl-25⁺ + Aw-112ª   +[  2525.33 -   5000] => P-22 + Ha-115 | decay, nuclear               |
+[ ]  2-chain Gy-64  ::  2969.13 |  Ro-22⁺ +   F-64⁺   +[  1761.43 -   1770] => P-22 + Gy-64  | decay, nuclear               |
+[ ]  2-chain Ek-107 ::  5689.13 |  Ux-50⁺ +  Co-79ª   +[  3592.24 -   7500] => P-22 + Ek-107 | decay, nuclear               |
+[ ]  2-chain Lx-81  ::  3143.73 |   P-21⁺ +  Lx-82ª   +[  2123.17 -   5000] => P-22 + Lx-81  | decay, nuclear               |
+[ ]  2-chain N-82   ::  3095.61 |  Yu-27⁺ +   C-55⁺   +[  1896.54 -   2500] => N-82          | decay, nuclear               |
+[ ]  2-chain N-90   ::  4602.19 |   P-23∙ +   N-89⁺   +[  3096.34 -   5000] => P-22 + N-90   | decay, nuclear               |
+[ ]  2-chain Lx-89  ::  4355.59 |  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
+[ ]  2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
+[ ]  2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
+[ ]  2-chain S-104  ::  3084.52 |   P-24⁻ +  S-102ª   +[  2566.82 -   3600] => P-22 + S-104  | decay, nuclear               |
+[ ]  2-chain S-105  ::  6301.80 |   P-24⁻ +  S-103ª   +[  2534.70 -   5000] => P-22 + S-105  | decay, nuclear               |
+[ ]  2-chain Se-88  ::  4282.01 |   P-21⁺ +  Se-89⁺   +[  2312.12 -   5000] => P-22 + Se-88  | decay, nuclear               |
+[ ]  2-chain W-86   ::  4734.28 |   Sr-3∙ +  Co-83⁺   +[  1245.57 -   5000] => W-86          | nuclear                      |
+[ ]  2-chain Ok-102 ::  6621.51 |  Yu-30∙ +  Kk-72ª   +[  3253.29*-   4000] => Ok-102        | nuclear                      |
+[ ]  2-chain W-79   ::  2684.31 |   T-15⁺ +   F-64⁺   +[  1476.61 -   5000] => W-79          | nuclear                      |
+[ ]  2-chain Z-106  ::  4699.84 |  Pb-48∙ +  Co-80ª   +[  4699.84 -   5000] => P-22 + Z-106  | decay, nuclear               |
+[ ]  2-chain Ok-96  ::  4452.23 |  Eb-19⁺ +  Da-99ª   +[  2276.46 -   4000] => P-22 + Ok-96  | decay, nuclear               |
+...WHICH require  these 1-chains:
+[ ]  1-chain Ai-67  ::  1640.70 |  Ct-17⁻ +  Wy-50∙   +[  1640.70 -   5000] => Ai-67         | nuclear                      |
+[ ]  1-chain Aw-112 ::  2823.68 |  Mt-32⁺ +  S-102ª   +[  2823.68 -  20000] => P-22 + Aw-112 | decay, nuclear               |
+[ ]  1-chain Aw-112 ::  2823.68 |  Mt-32⁺ +  S-102ª   +[  2823.68 -  20000] => P-22 + Aw-112 | decay, nuclear               |
+[ ]  1-chain Aw-112 ::  2823.68 |  Mt-32⁺ +  S-102ª   +[  2823.68 -  20000] => P-22 + Aw-112 | decay, nuclear               |
+[ ]  1-chain Aw-112 ::  2823.68 |  Mt-32⁺ +  S-102ª   +[  2823.68 -  20000] => P-22 + Aw-112 | decay, nuclear               |
+[ ]  1-chain Aw-112 ::  2823.68 |  Mt-32⁺ +  S-102ª   +[  2823.68 -  20000] => P-22 + Aw-112 | decay, nuclear               |
+[ ]  1-chain Aw-112 ::  2823.68 |  Mt-32⁺ +  S-102ª   +[  2823.68 -  20000] => P-22 + Aw-112 | decay, nuclear               |
+[ ]  1-chain Aw-112 ::  2823.68 |  Mt-32⁺ +  S-102ª   +[  2823.68 -  20000] => P-22 + Aw-112 | decay, nuclear               |
+[ ]  1-chain Aw-112 ::  2823.68 |  Mt-32⁺ +  S-102ª   +[  2823.68 -  20000] => P-22 + Aw-112 | decay, nuclear               |
+[ ]  1-chain Aw-112 ::  2823.68 |  Mt-32⁺ +  S-102ª   +[  2823.68 -  20000] => P-22 + Aw-112 | decay, nuclear               |
+[ ]  1-chain C-55   ::  1199.07 |  Ro-23ª +  Mt-32⁺   +[  1199.07 -  20000] => C-55          | nuclear                      |
+[ ]  1-chain Cl-28  ::   480.15 |  Vi-11⁺ +  Ct-17⁻   +[   480.15 -   5000] => Cl-28         | nuclear                      |
+[ ]  1-chain Co-79  ::   992.87 |   Dz-7⁺ +  Yv-72ª   +[   992.87 -   5000] => Co-79         | nuclear                      |
+[ ]  1-chain Co-80  ::     0.00 |  S-102ª             +[     0.00 -   5000] => P-22 + Co-80  | decay                        |
+[ ]  1-chain Co-83  ::  3488.71 |   K-34∙ +  Kk-71ª   +[  3488.71*-  20000] => P-22 + Co-83  | decay, nuclear               |
+[ ]  1-chain Co-83  ::  3488.71 |   K-34∙ +  Kk-71ª   +[  3488.71*-  20000] => P-22 + Co-83  | decay, nuclear               |
+[ ]  1-chain Co-83  ::  3488.71 |   K-34∙ +  Kk-71ª   +[  3488.71*-  20000] => P-22 + Co-83  | decay, nuclear               |
+[ ]  1-chain Co-83  ::  3488.71 |   K-34∙ +  Kk-71ª   +[  3488.71*-  20000] => P-22 + Co-83  | decay, nuclear               |
+[ ]  1-chain Co-83  ::  3488.71 |   K-34∙ +  Kk-71ª   +[  3488.71*-  20000] => P-22 + Co-83  | decay, nuclear               |
+[ ]  1-chain Co-83  ::  3488.71 |   K-34∙ +  Kk-71ª   +[  3488.71*-  20000] => P-22 + Co-83  | decay, nuclear               |
+[ ]  1-chain Cv-105 ::  2566.90 |  Cl-25⁺ +  S-102ª   +[  2566.90 -  10000] => P-22 + Cv-105 | decay, nuclear               |
+[ ]  1-chain Da-99  ::  2175.77 |  Eb-19⁺ +  S-102ª   +[  2175.77 -   5000] => P-22 + Da-99  | decay, nuclear               |
+[ ]  1-chain F-64   ::  1207.70 |  Ct-13⁺ +   L-51⁺   +[  1207.70 -   5000] => F-64          | nuclear                      |
+[ ]  1-chain F-64   ::  1207.70 |  Ct-13⁺ +   L-51⁺   +[  1207.70 -   5000] => F-64          | nuclear                      |
+[ ]  1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+[ ]  1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+[ ]  1-chain K-35   ::   843.77 |  Ct-17⁻ +  Xj-18∙   +[   843.77 -   5000] => K-35          | nuclear                      |
+[ ]  1-chain K-35   ::   843.77 |  Ct-17⁻ +  Xj-18∙   +[   843.77 -   5000] => K-35          | nuclear                      |
+[ ]  1-chain Kk-72  ::  2835.49 |  Eb-22∙ +  Wy-50∙   +[  2835.49*-   5000] => Kk-72         | nuclear                      |
+[ ]  1-chain Kk-72  ::  2835.49 |  Eb-22∙ +  Wy-50∙   +[  2835.49*-   5000] => Kk-72         | nuclear                      |
+[ ]  1-chain Lx-82  ::  1020.56 |  Vi-10⁺ +  Yv-72ª   +[  1020.56 -   5000] => Lx-82         | nuclear                      |
+[ ]  1-chain N-89   ::  1505.85 |  Ct-17⁻ +  Yv-72ª   +[  1505.85 -   5000] => N-89          | nuclear                      |
+[ ]  1-chain Nm-93  ::  1710.60 |  Ct-13⁺ +  S-102ª   +[  1710.60 -   5000] => P-22 + Nm-93  | decay, nuclear               |
+[ ]  1-chain Ok-97  ::  2021.84 |  Xj-17⁺ +  S-102ª   +[  2021.84 -   5000] => P-22 + Ok-97  | decay, nuclear               |
+[ ]  1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[ ]  1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[ ]  1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
+[ ]  1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
+[ ]  1-chain Qe-58  ::  1032.82 |  Vi-11⁺ +  Uq-47⁻   +[  1032.82 -   5000] => Qe-58         | nuclear                      |
+[ ]  1-chain S-101  ::  2305.72 |   P-21⁺ +  S-102ª   +[  2305.72 -  20000] => P-22 + S-101  | decay, nuclear               |
+[ ]  1-chain S-103  ::  3249.40 |   P-23∙ +  S-102ª   +[  3249.40 -  20000] => P-22 + S-103  | decay, nuclear               |
+[ ]  1-chain Se-89  ::  1969.89 |  Ro-22⁺ +  Gy-67ª   +[  1969.89 -  20000] => Se-89         | nuclear                      |
+[ ]  1-chain Se-96  ::  3321.07 |  Uq-47⁻ +  Kk-71ª   +[  3321.07 -  20000] => P-22 + Se-96  | decay, nuclear               |
+[ ]  1-chain Se-96  ::  3321.07 |  Uq-47⁻ +  Kk-71ª   +[  3321.07 -  20000] => P-22 + Se-96  | decay, nuclear               |
+[ ]  1-chain Ux-50  ::  1104.02 |  Eb-19⁺ +   K-31⁺   +[  1104.02 -   5000] => Ux-50         | nuclear                      |
+[ ]  1-chain Vl-88  ::  1866.91 |   P-21⁺ +  Gy-67ª   +[  1866.91 -  20000] => Vl-88         | nuclear                      |
+[ ]  1-chain Yu-30  ::   532.73 |  Ct-13⁺ +  Ct-17⁻   +[   532.73 -   5000] => Yu-30         | nuclear                      |
+[ ]  1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+[ ]  1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+[ ]  1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+[ ]  1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+[ ]  1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+[ ]  1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+
+
+
+
+
+
+4-chain missing:
+Iu-81         0
+Iu-82         0
+Co-87         0
+Co-88         0
+Lx-79         0
+Lx-92         0
+U-84          0
+U-93          0
+Vl-85         0
+Vl-99         0
+Se-99         0
+Se-100        0
+Se-101        0
+Nm-100        0
+Ok-91         0
+Ok-94         0
+Ok-104        0
+Ok-105        0
+Ok-106        0
+Ok-107        0
+Da-93         0
+Da-95         0
+S-95          0
+S-98          0
+S-108         0
+S-109         0
+Cv-100        0
+Ek-102        0
+Kn-110        0
+Aw-109        0
+Z-109         0
+Z-110         0
+Ji-106        0
+
+5-chain missing:
+Lu-41         0
+Yv-80         0
+D-84          0
+Co-85         0
+W-88          0
+W-89          0
+W-90          0
+Lx-90         0
+U-95          0
+Vl-98         0
+Vl-100        0
+Nm-88         0
+Nm-105        0
+Dd-100        0
+Dd-103        0
+Dd-104        0
+Ok-90         0
+Da-92         0
+Da-94         0
+Da-109        0
+S-94          0
+Z-98          0
+Z-100         0
+Z-111         0
+Cv-99         0
+Ek-119        0
+Aw-108        0
+Kn-109        0
+I-115         0
+Nm-101        0
+
+6-chain missing:
+Iu-83         0
+Cj-80         0
+Cj-81         0
+Iu-72         0
+W-87          0
+W-91          0
+Lx-77         0
+N-95          0
+U-96          0
+U-97          0
+Se-86         0
+Nm-102        0
+Nm-103        0
+Dd-105        0
+Z-112         0
+Cv-98         0
+Vt-98         0
+Vt-101        0
+Ek-99         0
+Ek-100        0
+Ek-103        0
+Aw-106        0
+Aw-124        0
+Kn-108        0
+Ha-110        0
+Ha-111        0
+Ax-111        0
+Jb-116        0
+Dd-101        0
+F-73          0
+
+7-chain missing:
+Yu-26         0
+Qe-53         0
+C-53          0
+Gy-63         0
+D-83          0
+Co-86         0
+U-98          0
+Se-85         0
+Se-102        0
+Nm-104        0
+Dd-88         0
+Dd-106        0
+Da-90         0
+Cv-97         0
+Vt-99         0
+Vt-100        0
+Ek-121        0
+Ji-103        0
+Ji-104        0
+Aw-104        0
+Aw-105        0
+Kn-107        0
+Ax-109        0
+Go-117        0
+X-119         0
+Eh-123        0
+Eh-124        0
+Ax-110        0
+Dd-102        0
+Mt-39         0
+
+8-chain missing:
+K-29          0
+Uq-49         0
+Pg-50         0
+C-54          0
+Ns-56         0
+F-59          0
+Kk-64         0
+Yv-67         0
+Cj-68         0
+Co-74         0
+Se-84         0
+Se-104        0
+Cv-114        0
+Vt-119        0
+Vt-120        0
+Ji-105        0
+Ji-121        0
+Aw-107        0
+Kn-106        0
+Ha-108        0
+Ha-109        0
+Go-118        0
+Se-103        0
+
+9-chain missing:
+Kk-65         0
+Yv-68         0
+D-74          0
+Co-75         0
+Vl-84         0
+Ek-120        0
+I-113         0
+I-114         0
+
+10-chain missing:
+Qe-52         0
+Kk-66         0
+
+2025-05-28 May.Wed 09:49:09 Kjetil Golid answered us in discord. We were speculating about how the same inputs could produce different outputs even with exact same inputs and energy.
+
+ +----[ @golid ]----------------------------------------------------------------------------------------------------
+ |
+ | Reactions with the same reactants and the same provided energy can give different result if  at least one of the reactants is unstable (stability < 1). This is because decay is probabilistic.
+ |
+ +------------------------------------------------------------------------------------------------------------------
+ |
+ | So in this case, it looks like S was unstable and decayed into Co and P in the second case, while it sticked around and became part of a chemical reaction in the first case, making SLNd
+ |
+ +------------------------------------------------------------------------------------------------------------------
+
+::INFO:: Decay is probabilistic
+When stability is less than 1, it applies randomness and it *may* decay. We almost always see Stability <= 0.78 decay but apparently its not guaranteed!
+
+
 2025-05-27 May.Tue 20:19:46
 
 how to make Ct-17⁻
@@ -93,6 +559,7 @@ Here are the URLs for shapescan for exporting the contract logs:
 
 [ ] Are there any more contracts I'm missing in the OTOM ecology?
     [ ] OtomItemsCore 0xe8af571878D33CfecA4eA11caEf124E5ef105a30
+  ? [ ] OtomItems     0x72b89472d81BADAf167FB21c128fAA5e495de904
 
 NOTE that the Reactor, NRG and OtomsV2 exports exceed 10000 logs per day so unless you snapshot it multiple ties a day you will miss it
 [ ] Find out when they started exceeding and grab as much as I can.
@@ -140,7 +607,6 @@ Some isotopes to discover from my decay predictions:
  [ ] Dx-36
  [ ] Lu-42
  [ ] Dx-35
- [ ] Dx-36
  [ ] Wy-56
  [ ] Pb-42
  [ ] Ai-58
@@ -10313,18 +10779,19 @@ total: 9649
 total: 39128
 
 [>]  Yv-67⁺  + 8000   => ? K-31 + Dx-36 
-   [ ]|  Mt-32⁺ +  S-102ª   + 2824 =>   P-22 + Aw-112
-   [ ]|  Cl-25⁺ + Aw-112ª   + 2650 =>   P-22 + Ha-115
-   [ ]|  Vi-11⁺ + Ha-115ª   + 1826 =>   P-22 + Vt-104
-   [ ]|   P-21⁺ + Vt-104ª   + 2306 =>   P-22 + Vt-103
-   [ ]|   P-21⁺ + Vt-103ª   + 2208 =>   P-22 + Vt-102
-   [ ]|   P-21⁺ + Vt-102⁺   + 2194 =>   P-22 + Vt-101
-   [ ]|   P-21⁺ + Vt-101⁺   + 2061 =>   P-22 + Vt-100
-   [ ]|   P-21⁺ + Vt-100⁺   + 1960 =>   P-22 + Vt-99 
-   [ ]|  Cl-25⁺ +  Vt-99⁺   + 2110 => ⬇ Eh-124       
-   [ ]| Eh-124ª             + 8857 =>   Ns-57 + Yv-67
-   [ ]   Yv-67⁺             + 8000 => ? K-31 + Dx-36 
-total: 42126
+   [ ]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+   [ ]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
+   [ ]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
+   [ ]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
+   [ ]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
+   [ ]|   P-21⁺ +  Ok-92⁺   +[  1997.09 -   5000] => P-22 + Ok-91  | decay, nuclear               |
+   [ ]|  Mt-32⁺ +  Ok-91⁺   +[  2352.78 -   4000] => P-22 + Ek-101 | decay, nuclear               |
+   [ ]|  Eb-19⁺ + Ek-101⁺   +[  1732.30 -  19000] => P-22 + Vt-98  | decay, nuclear               |
+   [ ]|  Cl-26ª +  Vt-98⁺   +[  3027.94 -  20000] => Eh-124        | decay, nuclear               |
+   [ ]| Eh-124ª             +   8857              =>   Ns-57 + Yv-67
+   [ ]   Yv-67⁺             +   8000              => ? K-31 + Dx-36 
+total: 35633.41
+
 
 [>]  Cj-81⁻  + 8000   => ? Mt-38 + Dx-43 
    [-]|   P-23∙ +  Mt-35∙ + 2468 =>   Qe-58               

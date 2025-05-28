@@ -2845,7 +2845,7 @@ my %reactions_fhs=();
 foreach $universe_name (@universe_names_list){
   my $fn="Reactor_logs_parsed-$universe_name.txt";
   open( $reactions_fhs{$universe_name}, ">", $fn) or die "Can't open output file $fn: $!";
-  print { $reactions_fhs{$universe_name} } "| OTOMRO   |UNIVERSE| INPUTS                                                               =>    OUTPUTS                                                                            | NRG USED   | REACTION TYPE                | CHEMIST WALLET                             | initateReaction() TX HASH                                          | analyseReactions() TX HASH                                         |\n";
+  print { $reactions_fhs{$universe_name} } "| OTOMRO   |UNIVERSE| INPUTS                                                     =>    OUTPUTS                                                                                      | NRG USED   | REACTION TYPE                | CHEMIST WALLET                             | initateReaction() TX HASH                                          | analyseReactions() TX HASH                                         |\n";
 }
 
 
@@ -3187,7 +3187,7 @@ foreach $universe_name (@universe_names_list){
 ########################################################################################################################
 #
 # finally how many of each thing has been produced through reactions?
-#
+#  [ ] WARNING: I MIGHT HAVE NOT CONSIDERED that reactions with reaction type "none" should not be included. Nothing changed!
 ########################################################################################################################
 print STDERR "\n";
 print STDERR "How many of each thing has been produced through reactions?\n";
