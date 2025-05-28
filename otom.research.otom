@@ -1,3 +1,86 @@
+2025-05-27 May.Tue 20:19:46
+
+how to make Ct-17⁻
+Can't make it directly like Sr-3 + Vi-14 => Ct-17⁻ because reactions apply an immediate decay rule so this would decay to T-17∙
+
+So you have to aim for something that beta+/beta-/alpha decays to it
+T-17∙ won't decay.
+If Vi-17 existed it would probably be beta- and unstable thus decay to Ct-17
+Can I aim for Vi-17
+
+[r]|   Dz-9∙ +  Eb-22∙   +[   972.95 -   5000] => Yu-31         | nuclear                      | used  972.60 [ ] update recipe chains
+[r]|  Yu-31⁻             +[  1591.99 -  10000] => Vi-14 + T-17  | nuclear                      | used 1591.59 [ ] update recipe chains
+[f]     Sr-3∙ + Vi-14⁻   +   3000              => ? Ct-17 or Vi-17  NOPE makes T-17 using 548.61 nuclear, decay
+
+
+|   217451 |bohr    |   Sr-3∙ +  Vi-11⁺  + 3000 =>   Ct-14  +    2505.18 |     494.82 | nuclear                      | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xc679fd3e553ce78c3938f70d695feeda3a586bd8ccf182cdf64c3e6cc36a8307 | 0x71f399073c00000050213f14bc7634b026ba2009a277221404ad55bd8f328685 |
+|    51672*|bohr    |   Sr-3∙ +  Vi-10⁺  + 5000 => ⬇ Vi-13  +    4481.53 |     518.47 | decay, nuclear               | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xdc940be853f8aec0de03743a62efa79e3feb50fd8f08f827a3ad57d4e4d86b08 | 0x9678c6bcd6bebc3212c77d089c0be1c8e9f3ccb3075bfbb75b957a69992454c7 |
+
+|  Sr-1 +   Gj-9 => |⬆  Ct-10?(?.???) |= →Vi-10⁺(0.022) |⬇ *Gj-10∙(1.000)
+|  Sr-1 +  Gj-10 => |⬆  Ct-11?(?.???) |= →Vi-11⁺(0.410) |⬇ *Gj-11∙(1.057)
+|  Sr-1 +  Gj-11 => |⬆  Ct-12?(?.???) |= *Vi-12∙(1.339) |⬇  Gj-12⁻(0.278)
+|  Sr-1 +  Gj-12 => |⬆  Ct-13⁺(0.491) |= *Vi-13∙(1.212) |⬇  Gj-13?(?.???)
+|  Sr-2 +   Gj-9 => |⬆  Ct-11?(?.???) |= →Vi-11⁺(0.410) |⬇ *Gj-11∙(1.057)
+|  Sr-2 +  Gj-10 => |⬆  Ct-12?(?.???) |= *Vi-12∙(1.339) |⬇  Gj-12⁻(0.278)
+|  Sr-2 +  Gj-11 => |⬆  Ct-13⁺(0.491) |= *Vi-13∙(1.212) |⬇  Gj-13?(?.???)
+|  Sr-2 +  Gj-12 => |⬆ *Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇  Gj-14?(?.???)
+|  Sr-3 +   Gj-9 => |⬆  Ct-12?(?.???) |= *Vi-12∙(1.339) |⬇  Gj-12⁻(0.278)
+|  Sr-3 +  Gj-10 => |⬆  Ct-13⁺(0.491) |= *Vi-13∙(1.212) |⬇  Gj-13?(?.???)
+|  Sr-3 +  Gj-11 => |⬆ *Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇  Gj-14?(?.???)
+|  Sr-3 +  Gj-12 => |⬆ *Ct-15∙(1.337) |= ←Vi-15⁻(0.202) |⬇  Gj-15?(?.???)
+|  Ei-4 +   Dz-7 => |⬆  Ct-11?(?.???) |= →Vi-11⁺(0.410) |⬇ *Gj-11∙(1.057)
+|  Ei-4 +   Dz-8 => |⬆  Ct-12?(?.???) |= *Vi-12∙(1.339) |⬇  Gj-12⁻(0.278)
+|  Ei-4 +   Dz-9 => |⬆  Ct-13⁺(0.491) |= *Vi-13∙(1.212) |⬇  Gj-13?(?.???)
+|  Ei-4 +  Dz-10 => |⬆ *Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇  Gj-14?(?.???)
+|  Ei-5 +   Dz-7 => |⬆  Ct-12?(?.???) |= *Vi-12∙(1.339) |⬇  Gj-12⁻(0.278)
+|  Ei-5 +   Dz-8 => |⬆  Ct-13⁺(0.491) |= *Vi-13∙(1.212) |⬇  Gj-13?(?.???)
+|  Ei-5 +   Dz-9 => |⬆ *Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇  Gj-14?(?.???)
+|  Ei-5 +  Dz-10 => |⬆ *Ct-15∙(1.337) |= ←Vi-15⁻(0.202) |⬇  Gj-15?(?.???)
+|  As-5 +   As-5 => |⬆  Ct-10?(?.???) |= →Vi-10⁺(0.022) |⬇ *Gj-10∙(1.000)
+|  As-5 +   As-6 => |⬆  Ct-11?(?.???) |= →Vi-11⁺(0.410) |⬇ *Gj-11∙(1.057)
+|  As-5 +   As-7 => |⬆  Ct-12?(?.???) |= *Vi-12∙(1.339) |⬇  Gj-12⁻(0.278)
+|  As-6 +   As-6 => |⬆  Ct-12?(?.???) |= *Vi-12∙(1.339) |⬇  Gj-12⁻(0.278)
+|  As-6 +   As-7 => |⬆  Ct-13⁺(0.491) |= *Vi-13∙(1.212) |⬇  Gj-13?(?.???)
+|  As-7 +   As-7 => |⬆ *Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇  Gj-14?(?.???)
+
+
+Mask out the ones not happening:
+|  Sr-1 +   Gj-9 => |⬆                |= →Vi-10⁺(0.022) |⬇ ⊚Gj-10∙(1.000)
+|  Sr-1 +  Gj-10 => |⬆                |= →Vi-11⁺(0.410) |⬇ ⊚Gj-11∙(1.057)
+|  Sr-1 +  Gj-11 => |⬆                |= ⊚Vi-12∙(1.339) |⬇               
+|  Sr-1 +  Gj-12 => |⬆                |= ⊚Vi-13∙(1.212) |⬇               
+|  Sr-2 +   Gj-9 => |⬆                |= →Vi-11⁺(0.410) |⬇ ⊚Gj-11∙(1.057)
+|  Sr-2 +  Gj-10 => |⬆                |= ⊚Vi-12∙(1.339) |⬇               
+|  Sr-2 +  Gj-11 => |⬆                |= ⊚Vi-13∙(1.212) |⬇               
+|  Sr-2 +  Gj-12 => |⬆ ⊚Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇               
+|  Sr-3 +   Gj-9 => |⬆                |= ⊚Vi-12∙(1.339) |⬇               
+|  Sr-3 +  Gj-10 => |⬆                |= ⊚Vi-13∙(1.212) |⬇               
+|  Sr-3 +  Gj-11 => |⬆ ⊚Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇               
+|  Sr-3 +  Gj-12 => |⬆ ⊚Ct-15∙(1.337) |= ←Vi-15⁻(0.202) |⬇               
+|  Ei-4 +   Dz-7 => |⬆                |= →Vi-11⁺(0.410) |⬇ ⊚Gj-11∙(1.057)
+|  Ei-4 +   Dz-8 => |⬆                |= ⊚Vi-12∙(1.339) |⬇               
+|  Ei-4 +   Dz-9 => |⬆                |= ⊚Vi-13∙(1.212) |⬇               
+|  Ei-4 +  Dz-10 => |⬆ ⊚Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇               
+|  Ei-5 +   Dz-7 => |⬆                |= ⊚Vi-12∙(1.339) |⬇               
+|  Ei-5 +   Dz-8 => |⬆                |= ⊚Vi-13∙(1.212) |⬇               
+|  Ei-5 +   Dz-9 => |⬆ ⊚Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇               
+|  Ei-5 +  Dz-10 => |⬆ ⊚Ct-15∙(1.337) |= ←Vi-15⁻(0.202) |⬇               
+|  As-5 +   As-5 => |⬆                |= →Vi-10⁺(0.022) |⬇ ⊚Gj-10∙(1.000)
+|  As-5 +   As-6 => |⬆                |= →Vi-11⁺(0.410) |⬇ ⊚Gj-11∙(1.057)
+|  As-5 +   As-7 => |⬆                |= ⊚Vi-12∙(1.339) |⬇               
+|  As-6 +   As-6 => |⬆                |= ⊚Vi-12∙(1.339) |⬇               
+|  As-6 +   As-7 => |⬆                |= ⊚Vi-13∙(1.212) |⬇               
+|  As-7 +   As-7 => |⬆ ⊚Ct-14∙(1.212) |= ←Vi-14⁻(0.513) |⬇               
+
+
+Man it doesn't look so simple to make Ct-17
+
+2025-05-27 May.Tue 16:16:33 New discovery Vi-15 so now 655 Bohr isotopes
+
+OTOMRO 225106: Ro-28⁻ + 3000 => Vi-13 + Vi-15 + 1686.35830963962075657 | used 1313.64 nuclear
+
+[c] add to files
+
 2025-05-27 May.Tue 13:18:56
 
 ::INFO::  Contract Log CSV export URLs
@@ -9,6 +92,7 @@ Here are the URLs for shapescan for exporting the contract logs:
  OTOM OtomsV2         contract CSV exports = https://shapescan.xyz/csv-export?type=logs&address=0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3
 
 [ ] Are there any more contracts I'm missing in the OTOM ecology?
+    [ ] OtomItemsCore 0xe8af571878D33CfecA4eA11caEf124E5ef105a30
 
 NOTE that the Reactor, NRG and OtomsV2 exports exceed 10000 logs per day so unless you snapshot it multiple ties a day you will miss it
 [ ] Find out when they started exceeding and grab as much as I can.
@@ -51,18 +135,18 @@ This should include alpha decay fission
 
 2025-05-27 May.Tue 10:18:35
 Some isotopes to discover from my decay predictions:
- Vi-15
- Nd-27
- Dx-36
- Lu-42
- Dx-35
- Dx-36
- Wy-56
- Pb-42
- Ai-58
- Pg-49
- Z-94
- Yv-66
+ [c] Vi-15
+ [ ] Nd-27
+ [ ] Dx-36
+ [ ] Lu-42
+ [ ] Dx-35
+ [ ] Dx-36
+ [ ] Wy-56
+ [ ] Pb-42
+ [ ] Ai-58
+ [ ] Pg-49
+ [ ] Z-94
+ [ ] Yv-66
 
 
 
@@ -85,18 +169,98 @@ hmm
 
 
 
-[ ]Maybe I need to try making Ro-26 which is stable, then do P-24 + Ro-26 => P-22 + Ro-28?
+[f]Maybe I need to try making Ro-26 which is stable, then do P-24 + Ro-26 => P-22 + Ro-28?
+That doesn't work
 
- 1-chain Kk-72  ::  2835.49 |  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
- 2-chain Lx-89  ::  4355.59 |  Ct-17⁻ +  Kk-72ª   +[  1520.10 -   5000] => Lx-89         | nuclear                      |
- 3-chain Lx-91  ::  8034.65 |   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
- 4-chain Lx-93  :: 11050.86 |   P-24⁻ +  Lx-91⁻   +[  2498.51 -   2499] => P-22 + Lx-93  | decay, nuclear               | OTOMRO 202017
- 5-chain Lx-94  :: 14123.28 |   P-23∙ +  Lx-93⁻   +[  3072.42 -   6000] => P-22 + Lx-94  | decay, nuclear               |
- 6-chain Lx-95  :: 17150.19 |   P-23∙ +  Lx-94⁻   +[  3026.91 -   6000] => P-22 + Lx-95  | decay, nuclear               |
- 7-chain Lx-96  :: 20137.89 |   P-23∙ +  Lx-95⁻   +[  2987.70 -   6000] => P-22 + Lx-96  | decay, nuclear               |
- 8-chain Uq-52  :: 27830.35 |  Lx-96⁻             +[  7692.46 -   7700] => Dx-44 + Uq-52 | nuclear                      |
- 9-chain Ro-28  :: 30935.12 |  Uq-52⁻             +[  3104.77 -   5000] => P-24 + Ro-28  | decay, nuclear               |
-[ ]| Ro-28⁻ + 3000 => ? Vi-13 + Vi-15 
+[r]|  Eb-22∙ +  Wy-50∙   +[  2835.49*-   5000] => Kk-72         | nuclear                      |
+[r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10*-   5000] => Lx-89         | nuclear                      |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
+[r]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2423.46 [ ] update recipe chains
+[r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               |
+[r]|   P-23∙ +  Lx-94⁻   +[  3026.92 -   6000] => P-22 + Lx-95  | decay, nuclear               | used 3026.86 [ ] update recipe chains
+[r]|   P-23∙ +  Lx-95⁻   +[  2987.95 -   6000] => P-22 + Lx-96  | decay, nuclear               | used 2987.35 [ ] update recipe chains
+[r]|  Lx-96⁻             +[  7692.46 -   7700] => Dx-44 + Uq-52 | nuclear                      | used 7692.11 [ ] update recipe chains
+[r]|  Uq-52⁻             +[  3104.77 -   5000] => P-24 + Ro-28  | decay, nuclear               | used 3100.02 [ ] update recipe chains
+[r]|  Ro-28⁻             +   3000              => ? Vi-13 + Vi-15  <---SUCCESS! used 1313.64 nuclear
+total: 32899.32
+
+[.] make these:
+Lx-91         0
+Lx-93         0
+Lx-94         0
+Lx-95         0
+Lx-96         0
+Uq-52         0
+
+12x
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+
+6x
+[r]|  Eb-22∙ +  Wy-50∙   +[  2835.49*-   5000] => Kk-72         | nuclear                      |
+[r]|  Eb-22∙ +  Wy-50∙   +[  2835.49*-   5000] => Kk-72         | nuclear                      |
+[r]|  Eb-22∙ +  Wy-50∙   +[  2835.49*-   5000] => Kk-72         | nuclear                      |
+[r]|  Eb-22∙ +  Wy-50∙   +[  2835.49*-   5000] => Kk-72         | nuclear                      |
+[r]|  Eb-22∙ +  Wy-50∙   +[  2835.49*-   5000] => Kk-72         | nuclear                      |
+[r]|  Eb-22∙ +  Wy-50∙   +[  2835.49*-   5000] => Kk-72         | nuclear                      |
+
+6x
+[r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10*-   5000] => Lx-89         | nuclear                      |
+[r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10*-   5000] => Lx-89         | nuclear                      |
+[r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10*-   5000] => Lx-89         | nuclear                      |
+[r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10*-   5000] => Lx-89         | nuclear                      |
+[r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10*-   5000] => Lx-89         | nuclear                      |
+[r]|  Ct-17⁻ +  Kk-72ª   +[  1520.10*-   5000] => Lx-89         | nuclear                      |
+
+6x
+[r]|   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
+[r]|   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
+[r]|   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
+[r]|   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
+[r]|   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
+[r]|   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
+
+5x
+[r]|   P-24⁻ +  Lx-91⁻   +[  2423.46 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2419.71 [ ] update recipe chains
+[r]|   P-24⁻ +  Lx-91⁻   +[  2419.71 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2419.51*[ ] update recipe chains this is minimal
+[r]|   P-24⁻ +  Lx-91⁻   +[  2419.51*-   2499] => P-22 + Lx-93  | decay, nuclear               |
+[r]|   P-24⁻ +  Lx-91⁻   +[  2419.51*-   2499] => P-22 + Lx-93  | decay, nuclear               |
+[r]|   P-24⁻ +  Lx-91⁻   +[  2419.51*-   2499] => P-22 + Lx-93  | decay, nuclear               |
+
+4x
+[r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               |
+[r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               |
+[r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               |
+[r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               |
+
+3x
+[r]|   P-23∙ +  Lx-94⁻   +[  3026.86*-   6000] => P-22 + Lx-95  | decay, nuclear               | [ ] update recipe chains this is min
+[r]|   P-23∙ +  Lx-94⁻   +[  3026.86*-   6000] => P-22 + Lx-95  | decay, nuclear               |
+[r]|   P-23∙ +  Lx-94⁻   +[  3026.86*-   6000] => P-22 + Lx-95  | decay, nuclear               |
+
+2x
+[r]|   P-23∙ +  Lx-95⁻   +[  2987.35*-   6000] => P-22 + Lx-96  | decay, nuclear               | [ ] update recipe chains this is min
+[r]|   P-23∙ +  Lx-95⁻   +[  2987.35*-   6000] => P-22 + Lx-96  | decay, nuclear               |
+
+1x
+[r]|  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52 | nuclear                      | [ ] update recipe chains this is min
+
+total: 98468.47
+
+
+
 
 
 2025-05-27 May.Tue 10:14:07 look into these reactions. Basala commented on discord that they did the same reaction with the same 5 input otoms and 200 NRG and got different results. With screenshots.
@@ -4086,7 +4250,7 @@ mathewzilla said "there's a 'molecule discovered' blockchain event which has the
  Uq-52⁻ + 3195 => P-24 + Ro-28
 
 [c] update my files for Ro-28
-[ ] Ro-28⁻ + 3000 => ? Vi-13 + Vi-15
+[c] Ro-28⁻ + 3000 => ? Vi-13 + Vi-15
 
 2025-05-15 May.Thu 21:50:12 New Discovery Uq-52 so now 629 isotopes in BOHR
    Lx-96⁻ + 7693 => Dx-44 + Uq-52   <---SUCCESS!!! makes Dx-44 + Uq-52 using 7692.46 nuclear
@@ -4264,20 +4428,7 @@ Quick analysis of unique wallets doing reactions in ALPHA
 
 try:
 [>] Se-104 + 15000 => ? V-48 + Wy-56
-  [*]|   K-34∙ +  Kk-71ª +  3489 => P-22 + Co-83  |
-  [ ]|   K-34∙ +  Co-83⁺ +  3823 => P-22 + Vl-95  |
-  [ ]|   K-34∙ +  Vl-95⁻ +  4045 => P-22 + Da-107 |
-  [ ]|   Sr-3∙ + Da-107∙ +  1818 => P-22 + Co-88  |
-  [ ]|   K-34∙ +  Co-88⁻ +  3844 => P-22 + Vl-100 |
-  [ ]|   P-23∙ + Vl-100⁻ +  3070 => P-22 + Vl-101 |
-  [ ]|   P-23∙ + Vl-101⁻ +  3023 => Aw-124        |
-  [ ]| Aw-124ª           +     0 => P-22 + Se-102 |
-  [ ]|   P-24⁻ + Se-102⁻ +  2853 => P-22 + Se-104 |
-  [ ]| Se-104⁻           + 15000 => ? V-48 + Wy-56|
-total: 40965
-
-or ?
-  [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+  [.]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
   [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
   [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
   [ ]|  Ct-13⁺ +  Ct-17⁻   +[   532.73 -   5000] => Yu-30         | nuclear                      |
@@ -4286,11 +4437,11 @@ or ?
   [ ]|  Ct-17⁻ + Ok-102⁻   +[  1811.59 -   5000] => P-22 + Vl-97  | decay, nuclear               |
   [ ]|   P-24⁻ +  Vl-97⁻   +[  2486.02 -   3500] => P-22 + Vl-99  | decay, nuclear               |
   [ ]|   P-24⁻ +  Vl-99⁻   +[  2425.37 -   5000] => P-22 + Vl-101 | decay, nuclear               |
-  [ ]|   P-23∙ + Vl-101⁻   +   3023              => Aw-124        |
-  [ ]| Aw-124ª             +      0              => P-22 + Se-102 |
-  [ ]|   P-24⁻ + Se-102⁻   +   2853              => P-22 + Se-104 |
-  [ ]| Se-104⁻             +  15000              => ? V-48 + Wy-56|
-total: 35773.59
+  [ ]|   P-23∙ + Vl-101⁻    +  3023              => Aw-124        |
+  [ ]| Aw-124ª              +     0              => P-22 + Se-102 |
+  [ ]|   P-24⁻ + Se-102⁻    +  2496              => P-22 + Se-104 |
+  [ ]| Se-104⁻              + 15000              => ? V-48 + Wy-56|
+total: 35416.59 
 
 2025-05-08 May.Thu 16:28:26
 
