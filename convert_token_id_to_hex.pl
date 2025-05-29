@@ -437,6 +437,7 @@ my @otom_isotopes = (
  [ "Lu-39" ,  "39 18 Lu", 17770898429300514866953019959140445394780618526300359389596592406567986353447   , "beta-"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥"   , "rare",     "0.872", "0.066",          "metal"     ],
  [ "Lu-40" ,  "40 18 Lu", 109375023317533580029437499013130894698186182991304078264122682635715130918996  , "beta-"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥"   , "rare",     "0.825", "0.066",          "metal"     ],
  [ "Lu-41" ,  "41 18 Lu", 4183078784952839040552494396359731858479390646415233868781805696195972572799    , "beta-"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥"   , "rare",     "0.720", "0.066",          "metal"     ], # OTOMRO 93178
+ [ "Dx-36" ,  "36 19 Dx", 57998330106176535539294956193654108667721146949521263687778023947347221265849   , "beta+"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"   , "rare",     "0.695", "0.104",          "metal"     ], # OTOMRO 232740: Yv-67⁺  + 8000 => K-31 + Dx-36 + 3114.019444955099515937  using 4885.98 nuclear
  [ "Dx-37" ,  "37 19 Dx", 81081030989623570162172390822015261296148912088476307132524116513569643202957   , "beta+"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"   , "rare",     "0.823", "0.104",          "metal"     ],
  [ "Dx-38" ,  "38 19 Dx", 81542157514724032984656876876058490962004414713689403353752920723431667480150   , "beta+"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"   , "rare",     "0.872", "0.104",          "metal"     ],
  [ "Dx-39" ,  "39 19 Dx", 89012621968273857922480748782337164221907506459423773969224282337514441117362   , "stable"  ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"   , "rare",     "1.840", "0.104",          "metal"     ],
@@ -604,6 +605,7 @@ my @otom_isotopes = (
  [ "Kk-70" ,  "70 34 Kk", 30716921412093810626286989280434237062348063414039851340265704207715965752889   , "alpha"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥", "common",   "0.879", "0.379",          "metal"     ],
  [ "Kk-71" ,  "71 34 Kk", 89172297275886974049027831552393578585636394912361444158784652299389108333693   , "alpha"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥", "common",   "0.879", "0.379",          "metal"     ],
  [ "Kk-72" ,  "72 34 Kk", 68913850802240986809449518468844171206955503692332266812803592718577396088329   , "alpha"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥", "rare",     "0.886", "0.379",          "metal"     ],
+ [ "Yv-66" ,  "66 35 Yv", 35813777200712075257922461747543629215457526473218401128519314741514871444914   , "beta+"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥", "rare",     "0.585", "0.522",          "nonmetal"  ], # OTOMRO 232601:  Eh-123ª  + 10000 => Ns-57 + Yv-66 +1852.012579213202798201 using 8147.99 nuclear             
  [ "Yv-67" ,  "67 35 Yv", 93907526794485935155838085167586004057303693679075004225610942830953977762561   , "beta+"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥", "rare",     "0.667", "0.522",          "nonmetal"  ],
  [ "Yv-68" ,  "68 35 Yv", 72025982676760567854792855292106025229771395464658274782829314820934548246099   , "beta+"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥", "rare",     "0.721", "0.522",          "nonmetal"  ], # OTOMRO 84199: (Apr 13 2025 15:49:45 PM (-04:00 UTC))
  [ "Yv-69" ,  "69 35 Yv", 79987917010993842863027106124807443326756293665224276699745643375748911055154   , "beta+"   ,"⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥",   "⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥", "rare",     "0.778", "0.522",          "nonmetal"  ],
@@ -1256,11 +1258,11 @@ print                 "syn match chain2 /\\<Cv-108\\>/\n";
 print                 "syn match chain2 /\\<Cv-109\\>/\n";
 print                 "syn match chain3 /\\<Cv-110\\>/\n";
 print                 "syn match chain3 /\\<Cv-111\\>/\n";
-print                 "syn match chain8 /\\<Cv-114\\>/\n";
-print                 "syn match chain9 /\\<Qe-61\\>/\n";
-print                 "syn match chain7 /\\<Cv-97\\>/\n";
-print                 "syn match chain6 /\\<Cv-98\\>/\n";
-print                 "syn match chain5 /\\<Cv-99\\>/\n";
+print                 "syn match chain6 /\\<Cv-114\\>/\n";
+print                 "syn match chain7 /\\<Qe-61\\>/\n";
+print                 "syn match chain6 /\\<Cv-97\\>/\n";
+print                 "syn match chain5 /\\<Cv-98\\>/\n";
+print                 "syn match chain4 /\\<Cv-99\\>/\n";
 print                 "syn match chain9 /\\<D-74\\>/\n";
 print                 "syn match chain10 /\\<D-75\\>/\n";
 print                 "syn match chain1 /\\<D-76\\>/\n";
@@ -1323,6 +1325,7 @@ print                 "syn match chain5 /\\<Dx-44\\>/\n";
 print                 "syn match chain4 /\\<Dz-10\\>/\n";
 print                 "syn match chain7 /\\<Eb-23\\>/\n";
 print                 "syn match chain7 /\\<Eh-123\\>/\n";
+print                 "syn match chain8 /\\<Yv-66\\>/\n";
 print                 "syn match chain7 /\\<Eh-124\\>/\n";
 print                 "syn match chain6 /\\<Ek-100\\>/\n";
 print                 "syn match chain5 /\\<Ek-101\\>/\n";
@@ -1400,7 +1403,7 @@ print                 "syn match chain4 /\\<Iu-82\\>/\n";
 print                 "syn match chain6 /\\<Iu-83\\>/\n";
 print                 "syn match chain6 /\\<Jb-116\\>/\n";
 print                 "syn match chain7 /\\<Ji-103\\>/\n";
-print                 "syn match chain7 /\\<Ji-104\\>/\n";
+print                 "syn match chain6 /\\<Ji-104\\>/\n";
 print                 "syn match chain8 /\\<Ji-105\\>/\n";
 print                 "syn match chain3 /\\<Ji-107\\>/\n";
 print                 "syn match chain3 /\\<Ji-108\\>/\n";
@@ -1425,7 +1428,7 @@ print                 "syn match chain1 /\\<Kk-68\\>/\n";
 print                 "syn match chain1 /\\<Kk-69\\>/\n";
 print                 "syn match chain1 /\\<Kk-72\\>/\n";
 print                 "syn match chain8 /\\<Kn-106\\>/\n";
-print                 "syn match chain7 /\\<Kn-107\\>/\n";
+print                 "syn match chain6 /\\<Kn-107\\>/\n";
 print                 "syn match chain6 /\\<Kn-108\\>/\n";
 print                 "syn match chain5 /\\<Kn-109\\>/\n";
 print                 "syn match chain4 /\\<Kn-110\\>/\n";
@@ -1455,8 +1458,8 @@ print                 "syn match chain1 /\\<Lu-38\\>/\n";
 print                 "syn match chain1 /\\<Lu-39\\>/\n";
 print                 "syn match chain1 /\\<Lu-40\\>/\n";
 print                 "syn match chain5 /\\<Lu-41\\>/\n";
-print                 "syn match chain7 /\\<Lx-76\\>/\n";
-print                 "syn match chain6 /\\<Lx-77\\>/\n";
+print                 "syn match chain6 /\\<Lx-76\\>/\n";
+print                 "syn match chain5 /\\<Lx-77\\>/\n";
 print                 "syn match chain4 /\\<Lx-79\\>/\n";
 print                 "syn match chain3 /\\<Lx-80\\>/\n";
 print                 "syn match chain2 /\\<Lx-81\\>/\n";
@@ -1645,7 +1648,7 @@ print                 "syn match chain1 /\\<Uq-43\\>/\n";
 print                 "syn match chain1 /\\<Uq-44\\>/\n";
 print                 "syn match chain1 /\\<Uq-45\\>/\n";
 print                 "syn match chain1 /\\<Uq-46\\>/\n";
-print                 "syn match chain5 /\\<Uq-48\\>/\n";
+print                 "syn match chain2 /\\<Uq-48\\>/\n";
 print                 "syn match chain8 /\\<Uq-49\\>/\n";
 print                 "syn match chain6 /\\<Ux-48\\>/\n";
 print                 "syn match chain6 /\\<Ux-49\\>/\n";
@@ -1702,12 +1705,12 @@ print                 "syn match chain1 /\\<Vt-109\\>/\n";
 print                 "syn match chain2 /\\<Vt-110\\>/\n";
 print                 "syn match chain2 /\\<Vt-111\\>/\n";
 print                 "syn match chain2 /\\<Vt-112\\>/\n";
-print                 "syn match chain8 /\\<Vt-119\\>/\n";
+print                 "syn match chain7 /\\<Vt-119\\>/\n";
 print                 "syn match chain8 /\\<Vt-120\\>/\n";
 print                 "syn match chain6 /\\<Vt-98\\>/\n";
 print                 "syn match chain7 /\\<Vt-99\\>/\n";
-print                 "syn match chain8 /\\<W-76\\>/\n";
-print                 "syn match chain7 /\\<W-77\\>/\n";
+print                 "syn match chain7 /\\<W-76\\>/\n";
+print                 "syn match chain6 /\\<W-77\\>/\n";
 print                 "syn match chain3 /\\<W-78\\>/\n";
 print                 "syn match chain2 /\\<W-79\\>/\n";
 print                 "syn match chain1 /\\<W-80\\>/\n";
@@ -1717,9 +1720,9 @@ print                 "syn match chain1 /\\<W-83\\>/\n";
 print                 "syn match chain1 /\\<W-84\\>/\n";
 print                 "syn match chain2 /\\<W-85\\>/\n";
 print                 "syn match chain2 /\\<W-86\\>/\n";
-print                 "syn match chain6 /\\<W-87\\>/\n";
+print                 "syn match chain3 /\\<W-87\\>/\n";
 print                 "syn match chain5 /\\<W-88\\>/\n";
-print                 "syn match chain5 /\\<W-89\\>/\n";
+print                 "syn match chain4 /\\<W-89\\>/\n";
 print                 "syn match chain5 /\\<W-90\\>/\n";
 print                 "syn match chain6 /\\<W-91\\>/\n";
 print                 "syn match chain7 /\\<Wy-45\\>/\n";
@@ -1743,6 +1746,7 @@ print                 "syn match chain1 /\\<Yu-28\\>/\n";
 print                 "syn match chain1 /\\<Yu-30\\>/\n";
 print                 "syn match chain1 /\\<Yu-31\\>/\n";
 print                 "syn match chain8 /\\<Yv-67\\>/\n";
+print                 "syn match chain9 /\\<Dx-36\\>/\n";
 print                 "syn match chain9 /\\<Yv-68\\>/\n";
 print                 "syn match chain2 /\\<Yv-69\\>/\n";
 print                 "syn match chain1 /\\<Yv-70\\>/\n";

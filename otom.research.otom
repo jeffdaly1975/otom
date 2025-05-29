@@ -1,3 +1,88 @@
+2025-05-28 May.Wed 20:35:46 New discovery Dx-36 so now 657 isotopes in Bohr
+
+ OTOMRO 232740: Yv-67⁺  + 8000 => K-31 + Dx-36 + 3114.019444955099515937  using 4885.98 nuclear
+
+2025-05-28 May.Wed 19:46:05 New discovery Yv-66 when I accidentally made Eh-123 instead of Eh-124. I split it anyway and got lucky. Now 656 isotopes in BOHR
+
+ OTOMRO 232601:  Eh-123ª  + 10000 => Ns-57 + Yv-66 +1852.012579213202798201 using 8147.99 nuclear 
+
+2025-05-28 May.Wed 19:13:00 [ ] just had an idea: what if they added to the Otom app UI, if you have more than 10 of an isotope, the 10th chip has a text "x5" next to that last chip's name. or a legible count of them on top of the chip.
+
+2025-05-28 May.Wed 19:05:07 I'm installing Image::Magick on the laptop from cpan as a perl module so I can try some stuff
+Well it failed to install. Oh well i'll try at home on the mac.
+
++--------------------------------------------------------------------------------
+| Appending installation info to /Users/lisadaly/perl5/lib/perl5/darwin-thread-multi-2level/perllocal.pod
+| 
+| Would you like me to append that to /Users/lisadaly/.bashrc now? [yes] 
+| Running install for module 'Image::Magick'
+| Running make for J/JC/JCRISTY/Image-Magick-7.1.1-28.tar.gz
+| Fetching with LWP:
+| http://www.cpan.org/authors/id/J/JC/JCRISTY/Image-Magick-7.1.1-28.tar.gz
+| Fetching with LWP:
+| http://www.cpan.org/authors/id/J/JC/JCRISTY/CHECKSUMS
+| Checksum for /Users/lisadaly/.cpan/sources/authors/id/J/JC/JCRISTY/Image-Magick-7.1.1-28.tar.gz ok
+| 
+|   CPAN.pm: Building J/JC/JCRISTY/Image-Magick-7.1.1-28.tar.gz
+| 
+| Checking if your kit is complete...
+| Looks good
+| Warning (mostly harmless): No library found for -lMagickCore-7.Q16HDRI
+| Generating a Unix-style Makefile
+| Writing Makefile for Image::Magick
+| Writing MYMETA.yml and MYMETA.json
+| cp Magick.pm blib/lib/Image/Magick.pm
+| AutoSplitting blib/lib/Image/Magick.pm (blib/lib/auto/Image/Magick)
+| Running Mkbootstrap for Magick ()
+| chmod 644 "Magick.bs"
+| "/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Magick.bs blib/arch/auto/Image/Magick/Magick.bs 644
+| "/usr/bin/perl" "/System/Library/Perl/5.18/ExtUtils/xsubpp"  -typemap '/System/Library/Perl/5.18/ExtUtils/typemap' -typemap '/Users/lisadaly/.cpan/build/Image-Magick-7.1.1-_dZ9uy/typemap'  Magick.xs > Magick.xsc
+| mv Magick.xsc Magick.c
+| cc -c  -I/usr/local/include/ImageMagick-7 -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/libxml2 -I"/usr/include/ImageMagick-7" -g -pipe -fno-common -DPERL_DARWIN -fno-strict-aliasing -fstack-protector -I/usr/include/freetype2 -g -O2 -Wall -pthread -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -Wno-error=implicit-function-declaration -Os   -DVERSION=\"7.1.1\" -DXS_VERSION=\"7.1.1\"  -iwithsysroot "/System/Library/Perl/5.18/darwin-thread-multi-2level/CORE"  -D_LARGE_FILES=1 -DHAVE_CONFIG_H Magick.c
+| Magick.xs:56:10: fatal error: 'MagickCore/MagickCore.h' file not found
+| #include <MagickCore/MagickCore.h>
+|          ^~~~~~~~~~~~~~~~~~~~~~~~~
+| 1 error generated.
+| make: *** [Magick.o] Error 1
+|   JCRISTY/Image-Magick-7.1.1-28.tar.gz
+|   /usr/bin/make -- NOT OK
+| Running make test
+|   Can't test without successful make
+| Running make install
+|   Make had returned bad status, install seems impossible
+| Lisas-MacBook-Pro-2:otom lisadaly$ cpan Image::Magick
+| Reading '/Users/lisadaly/.cpan/Metadata'
+|   Database was generated on Wed, 28 May 2025 22:41:02 GMT
+| Running install for module 'Image::Magick'
+| Running make for J/JC/JCRISTY/Image-Magick-7.1.1-28.tar.gz
+| Checksum for /Users/lisadaly/.cpan/sources/authors/id/J/JC/JCRISTY/Image-Magick-7.1.1-28.tar.gz ok
+| 
+|   CPAN.pm: Building J/JC/JCRISTY/Image-Magick-7.1.1-28.tar.gz
+| 
+| Checking if your kit is complete...
+| Looks good
+| Warning (mostly harmless): No library found for -lMagickCore-7.Q16HDRI
+| Writing Makefile for Image::Magick
+| Writing MYMETA.yml and MYMETA.json
+| cp Magick.pm blib/lib/Image/Magick.pm
+| AutoSplitting blib/lib/Image/Magick.pm (blib/lib/auto/Image/Magick)
+| /usr/bin/perl /System/Library/Perl/5.18/ExtUtils/xsubpp  -typemap /System/Library/Perl/5.18/ExtUtils/typemap -typemap typemap  Magick.xs > Magick.xsc && mv Magick.xsc Magick.c
+| cc -c  -I/usr/local/include/ImageMagick-7 -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/libxml2 -I"/usr/include/ImageMagick-7" -g -pipe -fno-common -DPERL_DARWIN -fno-strict-aliasing -fstack-protector -I/usr/include/freetype2 -g -O2 -Wall -pthread -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -Os   -DVERSION=\"7.1.1\" -DXS_VERSION=\"7.1.1\"  -iwithsysroot "/System/Library/Perl/5.18/darwin-thread-multi-2level/CORE"  -D_LARGE_FILES=1 -DHAVE_CONFIG_H Magick.c
+| Magick.xs:56:10: fatal error: 'MagickCore/MagickCore.h' file not found
+| #include <MagickCore/MagickCore.h>
+|          ^~~~~~~~~~~~~~~~~~~~~~~~~
+| 1 error generated.
+| make: *** [Magick.o] Error 1
+|   JCRISTY/Image-Magick-7.1.1-28.tar.gz
+|   /usr/bin/make -- NOT OK
+| 'YAML' not installed, will not store persistent state
+| Running make test
+|   Can't test without successful make
+| Running make install
+|   Make had returned bad status, install seems impossible
+| Lisas-MacBook-Pro-2:otom lisadaly$ 
++--------------------------------------------------------------------------------
+
 2025-05-28 May.Wed 13:50:59 Fixed up my grabtheseimages.sh script to use a function to abstract away all the work. And added file tests to see if the file exists and not bother downloading it if it does already. Before I was commenting out everything I'd already got and rerunning and then uncommenting. Clumsy. This function call is the way.
 
 2025-05-28 May.Wed 12:00:15 Analyzed some crafted PkAx outputs.
@@ -96,25 +181,25 @@ What's missing?
 [ ] 2-chain Vt-106 ::  5043.17 |  Ro-23ª + Cv-105ª   +[  2476.27 -   4000] => P-22 + Vt-106 | decay, nuclear               |
 [ ] 2-chain Z-101  ::  4505.23 |   P-21⁺ +  Z-102ª   +[  2261.31 -  10000] => P-22 + Z-101  | decay, nuclear               |
 ...BUT first need:
- [ ] 1-chain Ai-67  ::  1640.70 |  Ct-17⁻ +  Wy-50∙   +[  1640.70 -   5000] => Ai-67         | nuclear                      |
- [ ] 1-chain Cj-72  ::   983.52 |   As-5⁺ +  Gy-67ª   +[   983.52 -   5000] => Cj-72         | nuclear                      |
- [ ] 1-chain Cv-105 ::  2566.90 |  Cl-25⁺ +  S-102ª   +[  2566.90 -  10000] => P-22 + Cv-105 | decay, nuclear               |
- [ ] 1-chain Da-101 ::  2462.95 |  Nd-30ª +  Kk-71ª   +[  2462.95 -  20000] => Da-101        | nuclear                      |
- [ ] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
- [ ] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
- [ ] 1-chain Gy-66  ::  1321.69 |   T-15⁺ +   L-51⁺   +[  1321.69 -   5000] => Gy-66         | nuclear                      |
- [ ] 1-chain K-32   ::     0.00 |  Mt-32⁺             +[     0.00 -   1000] => K-32          | decay                        |
- [ ] 1-chain K-35   ::   843.77 |  Ct-17⁻ +  Xj-18∙   +[   843.77 -   5000] => K-35          | nuclear                      |
- [ ] 1-chain Lu-36  ::   486.50 |   As-5⁺ +   K-31⁺   +[   486.50 -   5000] => Lu-36         | decay, nuclear               |
- [ ] 1-chain Nd-34  ::   556.86 |  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34         | decay, nuclear               |
- [ ] 1-chain Ns-59  ::  1332.14 |  Yu-27⁺ +  Mt-32⁺   +[  1332.14 -  20000] => Ns-59         | decay, nuclear               |
- [ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
- [ ] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
- [ ] 1-chain Qe-58  ::  1032.82 |  Vi-11⁺ +  Uq-47⁻   +[  1032.82 -   5000] => Qe-58         | nuclear                      |
- [ ] 1-chain S-103  ::  3249.40 |   P-23∙ +  S-102ª   +[  3249.40 -  20000] => P-22 + S-103  | decay, nuclear               |
- [ ] 1-chain Uq-44  ::   668.58 |  Vi-10⁺ +  Mt-34⁺   +[   668.58 -   5000] => Uq-44         | decay, nuclear               |
- [ ] 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
- [ ] 1-chain Z-103  ::  2438.67 |  Ro-23ª +  S-102ª   +[  2438.67 -  20000] => P-22 + Z-103  | decay, nuclear               |
+ [*] 1-chain Ai-67  ::  1640.70 |  Ct-17⁻ +  Wy-50∙   +[  1640.70 -   5000] => Ai-67         | nuclear                      |
+ [*] 1-chain Cj-72  ::   983.52 |   As-5⁺ +  Gy-67ª   +[   983.52 -   5000] => Cj-72         | nuclear                      |
+ [*] 1-chain Cv-105 ::  2566.90 |  Cl-25⁺ +  S-102ª   +[  2566.90 -  10000] => P-22 + Cv-105 | decay, nuclear               |
+ [*] 1-chain Da-101 ::  2462.95 |  Nd-30ª +  Kk-71ª   +[  2462.95 -  20000] => Da-101        | nuclear                      |
+ [*] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+ [*] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+ [*] 1-chain Gy-66  ::  1321.69 |   T-15⁺ +   L-51⁺   +[  1321.69 -   5000] => Gy-66         | nuclear                      |
+ [*] 1-chain K-32   ::     0.00 |  Mt-32⁺             +[     0.00 -   1000] => K-32          | decay                        |
+ [*] 1-chain K-35   ::   843.77 |  Ct-17⁻ +  Xj-18∙   +[   843.77 -   5000] => K-35          | nuclear                      |
+ [*] 1-chain Lu-36  ::   486.50 |   As-5⁺ +   K-31⁺   +[   486.50 -   5000] => Lu-36         | decay, nuclear               |
+ [*] 1-chain Nd-34  ::   556.86 |  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34         | decay, nuclear               |
+ [*] 1-chain Ns-59  ::  1332.14 |  Yu-27⁺ +  Mt-32⁺   +[  1332.14 -  20000] => Ns-59         | decay, nuclear               |
+ [*] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [*] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
+ [*] 1-chain Qe-58  ::  1032.82 |  Vi-11⁺ +  Uq-47⁻   +[  1032.82 -   5000] => Qe-58         | nuclear                      |
+ [*] 1-chain S-103  ::  3249.40 |   P-23∙ +  S-102ª   +[  3249.40 -  20000] => P-22 + S-103  | decay, nuclear               |
+ [*] 1-chain Uq-44  ::   668.58 |  Vi-10⁺ +  Mt-34⁺   +[   668.58 -   5000] => Uq-44         | decay, nuclear               |
+ [*] 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+ [*] 1-chain Z-103  ::  2438.67 |  Ro-23ª +  S-102ª   +[  2438.67 -  20000] => P-22 + Z-103  | decay, nuclear               |
 
 Make missing 3-chains:
 [ ] 3-chain Ok-93  ::  5921.65 |  Ro-22⁺ +  Dd-93⁺   +[  2076.97 -   2080] => P-22 + Ok-93  | decay, nuclear               | OTOMRO 181946
@@ -604,7 +689,7 @@ This should include alpha decay fission
 Some isotopes to discover from my decay predictions:
  [c] Vi-15
  [ ] Nd-27
- [ ] Dx-36
+ [c] Dx-36
  [ ] Lu-42
  [ ] Dx-35
  [ ] Wy-56
@@ -612,7 +697,7 @@ Some isotopes to discover from my decay predictions:
  [ ] Ai-58
  [ ] Pg-49
  [ ] Z-94
- [ ] Yv-66
+ [c] Yv-66
 
 
 
@@ -4894,7 +4979,7 @@ Quick analysis of unique wallets doing reactions in ALPHA
 
 try:
 [>] Se-104 + 15000 => ? V-48 + Wy-56
-  [.]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+  [*]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
   [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
   [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
   [ ]|  Ct-13⁺ +  Ct-17⁻   +[   532.73 -   5000] => Yu-30         | nuclear                      |
@@ -10779,19 +10864,30 @@ total: 9649
 total: 39128
 
 [>]  Yv-67⁺  + 8000   => ? K-31 + Dx-36 
-   [ ]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
-   [ ]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
-   [ ]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
-   [ ]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
-   [ ]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
-   [ ]|   P-21⁺ +  Ok-92⁺   +[  1997.09 -   5000] => P-22 + Ok-91  | decay, nuclear               |
-   [ ]|  Mt-32⁺ +  Ok-91⁺   +[  2352.78 -   4000] => P-22 + Ek-101 | decay, nuclear               |
-   [ ]|  Eb-19⁺ + Ek-101⁺   +[  1732.30 -  19000] => P-22 + Vt-98  | decay, nuclear               |
-   [ ]|  Cl-26ª +  Vt-98⁺   +[  3027.94 -  20000] => Eh-124        | decay, nuclear               |
-   [ ]| Eh-124ª             +   8857              =>   Ns-57 + Yv-67
-   [ ]   Yv-67⁺             +   8000              => ? K-31 + Dx-36 
+   [r]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+   [r]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      | minimal NRG
+   [r]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               | minimal NRG
+   [r]|  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               | minimal NRG
+   [r]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               | minimal NRG
+   [r]|  Mt-32⁺ +  Ok-91⁺   +[  2352.78 -   4000] => P-22 + Ek-101 | decay, nuclear               | minimal NRG
+   [r]|  Eb-19⁺ + Ek-101⁺   +[  1732.30 -  19000] => P-22 + Vt-98  | decay, nuclear               | used 1732.20 [ ] update recipe chains OTOMRO 232565
+   [f]|  Cl-26ª +  Vt-98⁺   +[  3027.94 -  20000] => Eh-124        | decay, nuclear               |
+CRAP I DID Cl-25 when it was supposed to be Cl-26`
+   [-]| Eh-124ª             +   8857              =>   Ns-57 + Yv-67
+   [r]| Eh-123ª             +  10000              =>   Ns-57 + Yv-66 or Ns-56 + Yv-67 <--SUCCESS! makes Ns-57 + Yv-66 using 8147.99 nuclear OTOMRO 232601
+   [-]   Yv-67⁺             +   8000              => ? K-31 + Dx-36 
 total: 35633.41
 
+   [r]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+   [r]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      |
+   [r]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               |
+   [r]|  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               |
+   [r]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
+   [r]|  Mt-32⁺ +  Ok-91⁺   +[  2352.78*-   4000] => P-22 + Ek-101 | decay, nuclear               |
+   [r]|  Eb-19⁺ + Ek-101⁺   +[  1732.20*-  19000] => P-22 + Vt-98  | decay, nuclear               | this is minimal NRG [ ] update recipe chains
+   [r]|  Cl-26ª +  Vt-98⁺   +[  3027.94 -  20000] => Eh-124        | decay, nuclear               | used 2179.34        [ ] update recipe chains
+   [r]| Eh-124ª             +   8857              => Ns-57 + Yv-67                                  used 8549.33        [ ] update recipe chains
+   [r]   Yv-67⁺             +   8000              =>?K-31 + Dx-36     <--SUCCESS                    used 4885.98        [ ] update recipe chains
 
 [>]  Cj-81⁻  + 8000   => ? Mt-38 + Dx-43 
    [-]|   P-23∙ +  Mt-35∙ + 2468 =>   Qe-58               
@@ -11051,7 +11147,7 @@ total: 20419
    [ ]   Lx-77⁺           + 5000 => ? Dx-35 + Uq-42
 total: 21668
 
-[ ]  Lx-79⁺  + 5000   => ? Dx-36 + Uq-43
+[-]  Lx-79⁺  + 5000   => ? Dx-36 + Uq-43
 
 [-]  Lx-89∙  + 5000   => ? Dx-41 + Uq-48
 [-]  Lx-90∙  + 5000   => ? Dx-42 + Uq-48
