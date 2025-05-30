@@ -1,3 +1,26 @@
+2025-05-30 May.Fri 12:50:14 potentially shorter/cheaper recipes:
+
+|   245591*|bohr    |  Ro-22⁺ +   S-97⁺                               +     5000 =>   P-22 + Z-97                                                                      +    2823.68 |    2176.32 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x4604f534312a6017d0c018de5b2e583dee0e8b5ffc33065998168ad08e12443d | 0xaf01979876cd7907870ec0592d34b67fda11171da809d37d70e62129b670459d |
+|   242303*|bohr    |   P-24⁻ + Ok-102⁻                               +     5000 =>   P-22 + Ok-104                                                                    +    2332.65 |    2667.35 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xf6fe26b58733d938ce7a1d08504eca68713a92a8b94ee189c511a1f67d072103 | 0xdb95e7425b01384aebc7f2c4bb225e7506ee82f1bd9df2e1e72f65fe7e650f3f |
+
+
+2025-05-30 May.Fri 10:26:51 Damnit the Reactor logs are over 10k lines already and my snapshot at 00:16 doesn't have any lines in common with the newest export so that means I missed some data! FUCK
+[ ] Missed Reactor logs today
+
+Examined the parser output in alpha and bohr Reactor logs.
+Keeping in mind I had to replicate a bunch of transactions' data around OTOMRO 7151 to 12592 since they weren't even in the Reactor logs on shapescan, here is the data on OTOMROs I have and don't have logs for:
+Have data:
+ OTOMRO      0-220292
+ OTOMRO 220326-241558
+ OTOMRO 242155-247229
+
+Missing:
+ OTOMRO 220293 - 220325  (32 txs)
+ OTOMRO 241559 - 242154 (595 txs)
+
+[ ] ask in discord if anyone might have snapshots of the missing logs
+
+
 2025-05-29 May.Thu 22:06:03 New discovery Wy-56. Now 659 isotopes in BOHR
 
   Se-104⁻ + 12000 => V-48 + Wy-56 + 2979.03 used 9020.97 nuclear
@@ -10686,6 +10709,12 @@ try:
    [ ]| Ax-109⁺            + 6669 =>   Pg-50 + F-59 
    [ ]   Pg-50⁺            + 3000 => ? Ro-22 + Nd-27
 total: 26563
+
+What about ratcheting down with P-21?
+   [r]|   P-21⁺ +  Mt-32⁺   +[  1138.33 -  20000] => Pg-53         | decay, nuclear               | used 1133.78 [ ] update recipe chains
+   [f]|   P-21⁺ +  Pg-53⁺ + 3000 => ? Pg-52 <----NOPE makes Iu-74 using 1689.99 nuclear+decay
+   [-]|   P-21⁺ +  Pg-52⁺ + 3000 => ? Pg-51
+   [-]|   P-21⁺ +  Pg-51⁺ + 3000 => ? Pg-50
 
 2025-04-21 Apr.Mon 17:10:40 
 try:

@@ -17263,7 +17263,7 @@ syn match chain2  /\<Ek-112\>/
 syn match chain2  /\<Ek-113\>/
 syn match chain2  /\<F-61\>/
 syn match chain2  /\<Gd-45\>/
-syn match chain2  /\<Gy-64\>/
+syn match chain1  /\<Gy-64\>/
 syn match chain2  /\<Ha-115\>/
 syn match chain2  /\<Ha-116\>/
 syn match chain2  /\<Ha-117\>/
@@ -17349,7 +17349,7 @@ syn match chain3  /\<Ek-106\>/
 syn match chain3  /\<Ha-112\>/
 syn match chain3  /\<Ha-113\>/
 syn match chain3  /\<Ha-114\>/
-syn match chain3  /\<Ji-107\>/
+syn match chain2  /\<Ji-107\>/
 syn match chain3  /\<Ji-108\>/
 syn match chain3  /\<Kn-111\>/
 syn match chain3  /\<Lx-79\>/
@@ -17455,7 +17455,7 @@ syn match chain5  /\<Aw-108\>/
 syn match chain5  /\<Cj-81\>/
 syn match chain5  /\<Co-85\>/
 syn match chain5  /\<Cv-114\>/
-syn match chain5  /\<Cv-98\>/
+syn match chain4  /\<Cv-98\>/
 syn match chain5  /\<D-84\>/
 syn match chain5  /\<Da-109\>/
 syn match chain5  /\<Da-92\>/
@@ -17498,7 +17498,7 @@ syn match chain6  /\<Aw-124\>/
 syn match chain6  /\<Aw-125\>/
 syn match chain6  /\<Ax-111\>/
 syn match chain6  /\<Cj-80\>/
-syn match chain6  /\<Cv-97\>/
+syn match chain5  /\<Cv-97\>/
 syn match chain6  /\<Da-91\>/
 syn match chain6  /\<Dd-106\>/
 syn match chain6  /\<Eb-23\>/
@@ -17511,20 +17511,20 @@ syn match chain6  /\<Ha-110\>/
 syn match chain6  /\<Iu-72\>/
 syn match chain6  /\<Iu-83\>/
 syn match chain6  /\<Jb-116\>/
-syn match chain6  /\<Ji-104\>/
+syn match chain5  /\<Ji-104\>/
 syn match chain6  /\<K-37\>/
 syn match chain6  /\<Kn-106\>/
-syn match chain6  /\<Kn-107\>/
+syn match chain5  /\<Kn-107\>/
 syn match chain6  /\<Kn-108\>/
 syn match chain6  /\<L-57\>/
-syn match chain6  /\<Lx-76\>/
+syn match chain5  /\<Lx-76\>/
 syn match chain6  /\<Lx-96\>/
 syn match chain6  /\<Mt-39\>/
 syn match chain6  /\<Nm-103\>/
 syn match chain6  /\<P-25\>/
 syn match chain6  /\<Pb-43\>/
 syn match chain6  /\<Pg-51\>/
-syn match chain6  /\<Qe-60\>/
+syn match chain2  /\<Qe-60\>/
 syn match chain6  /\<Qe-61\>/
 syn match chain6  /\<T-19\>/
 syn match chain6  /\<U-96\>/
@@ -17575,7 +17575,7 @@ syn match chain7  /\<Uq-49\>/
 syn match chain7  /\<Uq-52\>/
 syn match chain7  /\<Vt-120\>/
 syn match chain7  /\<Vt-99\>/
-syn match chain7  /\<W-76\>/
+syn match chain6  /\<W-76\>/
 syn match chain7  /\<Wy-45\>/
 syn match chain7  /\<X-119\>/
 syn match chain7  /\<Ys-125\>/
@@ -17949,7 +17949,7 @@ syn match chain5 /\<Gk-65\>/
 syn match chain5 /\<S-24\>/
 
 syn match chain6 /\<Gy-30\>/
-syn match chain6 /\<Qe-60\>/
+syn match chain2 /\<Qe-60\>/
 endif
 
 let     shelldict["1  1 Ju"]="⎥◼◻◻⎢" | let     shelldict["Ju-1"]="⎥◼◻◻⎢"
