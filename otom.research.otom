@@ -1,86 +1,101 @@
+2025-05-29 May.Thu 22:06:03 New discovery Wy-56. Now 659 isotopes in BOHR
+
+  Se-104⁻ + 12000 => V-48 + Wy-56 + 2979.03 used 9020.97 nuclear
+
+[c] add to files
+
 2025-05-29 May.Thu 13:34:56 [ ] Update chains for these reactions:
 
-|   192962*|bohr    |   P-23∙ +  Nm-97ª                               +     5000 =>   P-22 + Nm-98                                                                     +    1692.98 |    3307.02 | decay, nuclear               |
-|   192965*|bohr    |   P-23∙ + Nm-100⁺                               +     5000 =>   P-22 + Nm-101                                                                    +    1679.43 |    3320.57 | decay, nuclear               |
-|   192966*|bohr    |   P-23∙ + Nm-101⁺                               +     5000 =>   P-22 + Nm-102                                                                    +    1695.80 |    3304.20 | decay, nuclear               |
-|   192969*|bohr    |   P-23∙ + Nm-103⁻                               +     5000 =>   P-22 + Nm-104                                                                    +    1735.67 |    3264.33 | decay, nuclear               |
-|   197162*|bohr    |   P-24⁻ +  Lx-91⁻                               +     4000 =>   P-22 + Lx-93                                                                     +    1501.49 |    2498.51 | decay, nuclear               |
-|   197436*|bohr    |   P-23∙ +  Dd-99ª                               +     5000 =>   P-22 + Dd-100                                                                    +    1698.08 |    3301.92 | decay, nuclear               |
-|   197438*|bohr    |   P-23∙ + Dd-100ª                               +     5000 =>   P-22 + Dd-101                                                                    +    1693.96 |    3306.04 | decay, nuclear               |
-|   197440*|bohr    |   P-23∙ + Dd-101ª                               +     5000 =>   P-22 + Dd-102                                                                    +    1684.90 |    3315.10 | decay, nuclear               |
-|   197444*|bohr    |   P-23∙ + Dd-104⁻                               +     5000 =>   P-22 + Dd-105                                                                    +    1719.39 |    3280.61 | decay, nuclear               |
-|   197448*|bohr    |   P-23∙ +  Lx-88∙                               +     5000 =>   P-22 + Lx-89                                                                     +     863.31 |    4136.69 | decay, nuclear               |
-|   197449*|bohr    |   P-23∙ +  Lx-89∙                               +     5000 =>   P-22 + Lx-90                                                                     +     865.85 |    4134.15 | decay, nuclear               |
-|   197451*|bohr    |   P-23∙ +  Lx-91⁻                               +     5000 =>   P-22 + Lx-92                                                                     +    1777.31 |    3222.69 | decay, nuclear               |
-|   200452*|bohr    |   P-24⁻ +  Dx-42⁻                               +     2000 =>   Ns-66                                                                            +     455.21 |    1544.79 | nuclear                      |
-|   202031*|bohr    |  Lx-94⁻                                         +     8000 =>   Dx-43 + Uq-51                                                                    +      11.23 |    7988.77 | nuclear                      |
-|   202121*|bohr    |  Lx-93⁻                                         +     8200 =>   Dx-43 + Uq-50                                                                    +      77.22 |    8122.78 | nuclear                      |
-|   202742*|bohr    |  Ro-22⁺ + Ek-110ª                               +     5000 =>   P-22 + Ji-110                                                                    +    2617.00 |    2383.00 | decay, nuclear               |
-|   202752*|bohr    |   P-24⁻ + Ek-110ª                               +     5000 =>   P-22 + Ek-112                                                                    +    2352.98 |    2647.02 | decay, nuclear               |
-|   202754*|bohr    |   P-23∙ + Ek-110ª                               +     5000 =>   P-22 + Ek-111                                                                    +    1649.91 |    3350.09 | decay, nuclear               |
-|   202769*|bohr    |   P-21⁺ + Ek-110ª                               +     5000 =>   P-22 + Ek-109                                                                    +    2550.57 |    2449.43 | decay, nuclear               |
-|   202798*|bohr    |   P-23∙ + Ji-112ª                               +     5000 =>   P-22 + Ji-113                                                                    +    1648.10 |    3351.90 | decay, nuclear               |
-|   202870*|bohr    |  Eb-19⁺ + Ji-111ª                               +     5000 =>   P-22 + Ek-108                                                                    +    2705.41 |    2294.59 | decay, nuclear               |
-|   203866*|bohr    |   P-23∙ + Ok-100ª                               +     5000 =>   P-22 + Ok-101                                                                    +    1652.32 |    3347.68 | decay, nuclear               |
-|   203867*|bohr    |   P-24⁻ + Ok-100ª                               +     5000 =>   P-22 + Ok-102                                                                    +    2354.84 |    2645.16 | decay, nuclear               |
-|   203937*|bohr    |  Eb-19⁺ + Aw-112ª                               +     5000 =>   P-22 + Ji-109                                                                    +    2725.08 |    2274.92 | decay, nuclear               |
-|   203945*|bohr    |   P-21⁺ + Ji-109ª                               +     4000 =>   P-22 + Ji-108                                                                    +    1694.29 |    2305.71 | decay, nuclear               |
-|   203961*|bohr    |  Eb-19⁺ + Ji-109ª                               +     4000 =>   P-22 + Ek-106                                                                    +    1821.01 |    2178.99 | decay, nuclear               |
-|   203975*|bohr    |  Ro-22⁺ + Vt-103ª                               +     4000 =>   P-22 + Ek-103                                                                    +    1828.88 |    2171.12 | decay, nuclear               |
-|   203980*|bohr    |  Eb-19⁺ + Vt-103ª                               +     4000 =>   P-22 + Cv-100                                                                    +    1889.81 |    2110.19 | decay, nuclear               |
-|   203984*|bohr    |  Ro-22⁺ + Cv-100⁺                               +     4000 =>   P-22 + Vt-100                                                                    +    1895.19 |    2104.81 | decay, nuclear               |
-|   204039*|bohr    |  Ro-22⁺ + Kn-112ª                               +     4000 =>   P-22 + Ha-112                                                                    +    1785.71 |    2214.29 | decay, nuclear               |
-|   204055*|bohr    |  Cl-27∙ + Aw-112ª                               +     5000 =>   P-22 + Ha-117                                                                    +    1388.06 |    3611.94 | decay, nuclear               |
-|   204076 |bohr    |  Cl-25⁺ + Aw-112ª                               +     5000 =>   P-22 + Ha-115                                                                    +    2350.97 |    2649.03 | decay, nuclear               |
-|   204082*|bohr    |   P-21⁺ + Ha-115ª                               +     5000 =>   P-22 + Ha-114                                                                    +    2618.47 |    2381.53 | decay, nuclear               |
-|   204093*|bohr    |   P-21⁺ + Kn-112ª                               +     4000 =>   P-22 + Kn-111                                                                    +    1722.97 |    2277.03 | decay, nuclear               |
-|   204155 |bohr    |  Eb-19⁺ + Ji-109ª                               +     4000 =>   P-22 + Ek-106                                                                    +    1821.01 |    2178.99 | decay, nuclear               |
-|   204159*|bohr    |  Ro-22⁺ + Ek-106ª                               +     5000 =>   P-22 + Ji-106                                                                    +    2747.67 |    2252.33 | decay, nuclear               |
-|   204178*|bohr    |  Ro-22⁺ + Ji-109ª                               +     4000 =>   P-22 + Aw-109                                                                    +    1757.89 |    2242.11 | decay, nuclear               |
-|   204187*|bohr    |  Ro-22⁺ + Aw-109ª                               +     4000 =>   P-22 + Kn-109                                                                    +    1833.44 |    2166.56 | decay, nuclear               |
-|   204191*|bohr    |  Ro-22⁺ + Ji-106ª                               +     5000 =>   P-22 + Aw-106                                                                    +    2835.14 |    2164.86 | decay, nuclear               |
-|   204263*|bohr    |  Ro-22⁺ + Aw-106ª                               +     5000 =>   P-22 + Kn-106                                                                    +    2917.36 |    2082.64 | decay, nuclear               |
-|   204282*|bohr    |   P-21⁺ + Ha-112ª                               +     5000 =>   P-22 + Ha-111                                                                    +    2755.69 |    2244.31 | decay, nuclear               |
-|   204355*|bohr    |  Ro-23ª + Ji-106ª                               +     4000 =>   P-22 + Aw-107                                                                    +    1711.36 |    2288.64 | decay, nuclear               |
-|   204356*|bohr    |  Ro-24ª + Ji-106ª                               +     4000 =>   P-22 + Aw-108                                                                    +    1558.47 |    2441.53 | decay, nuclear               |
-|   204448*|bohr    |   P-21⁺ + Ji-106ª                               +     5000 =>   P-22 + Ji-105                                                                    +    2775.50 |    2224.50 | decay, nuclear               |
-|   204507*|bohr    |  Ro-22⁺ +  Se-89⁺                               +     4000 =>   P-22 + Nm-89                                                                     +    1800.17 |    2199.83 | decay, nuclear               |
-|   204556*|bohr    |   P-24⁻ +  Nm-97ª                               +     4000 =>   P-22 + Nm-99                                                                     +    1436.28 |    2563.72 | decay, nuclear               |
-|   204581*|bohr    |   P-24⁻ +  Nm-99ª                               +     4000 =>   P-22 + Nm-101                                                                    +    1427.13 |    2572.87 | decay, nuclear               |
-|   204640 |bohr    |   P-23∙ +  Dd-99ª                               +     4000 =>   P-22 + Dd-100                                                                    +     748.08 |    3251.92 | decay, nuclear               |
-|   204642*|bohr    |   P-24⁻ +  Dd-99ª                               +     4000 =>   P-22 + Dd-101                                                                    +    1440.22 |    2559.78 | decay, nuclear               |
-|   204779*|bohr    |  Ro-23ª +  Se-89⁺                               +     4000 =>   P-22 + Nm-90                                                                     +    1618.68 |    2381.32 | decay, nuclear               |
-|   205186*|bohr    |   P-24⁻ +  Se-96∙                               +     4000 =>   P-22 + Se-98                                                                     +     676.89 |    3323.11 | decay, nuclear               |
-|   205218*|bohr    |   P-23∙ +  Se-96∙                               +    10000 =>   P-22 + Se-97                                                                     +    5460.85 |    4539.15 | decay, nuclear               |
-|   205232*|bohr    |  Ro-22⁺ +  Nm-88⁺                               +    10000 =>   P-22 + Dd-88                                                                     +    7696.23 |    2303.77 | decay, nuclear               |
-|   205272*|bohr    |   P-21⁺ +  Se-87⁺                               +     5000 =>   P-22 + Se-86                                                                     +    2788.61 |    2211.39 | decay, nuclear               |
-|   205273*|bohr    |  Eb-19⁺ +  Se-88⁺                               +     5000 =>   P-22 + Vl-85                                                                     +    2860.25 |    2139.75 | decay, nuclear               |
-|   205277*|bohr    |  Ro-22⁺ +  Vl-85⁺                               +     5000 =>   P-22 + Se-85                                                                     +    2867.90 |    2132.10 | decay, nuclear               |
-|   207766*|bohr    |   P-23∙ +  Vl-97⁻                               +     5000 =>   P-22 + Vl-98                                                                     +    1761.13 |    3238.87 | decay, nuclear               |
-|   207845*|bohr    |   Sr-3∙ +  Dx-37⁺                               +     4000 =>   Gd-40                                                                            +    3072.70 |     927.30 | nuclear                      |
-|   210295*|bohr    |   P-24⁻ +  Vl-93∙                               +     5000 =>   P-22 + Vl-95                                                                     +    1650.35 |    3349.65 | decay, nuclear               |
-|   210429*|bohr    |  Ro-22⁺ +  Kk-69ª                               +     5000 =>   Nm-91                                                                            +    3008.94 |    1991.06 | nuclear                      |
-|   210533*|bohr    |  Eb-19⁺ +  Vl-89∙                               +     5000 =>   P-22 + U-86                                                                      +    2178.81 |    2821.19 | decay, nuclear               |
-|   210592*|bohr    |   P-21⁺ +  Vl-86ª                               +     5000 =>   P-22 + Vl-85                                                                     +    2812.89 |    2187.11 | decay, nuclear               |
-|   210614*|bohr    |   P-21⁺ +  Vl-85⁺                               +     5000 =>   P-22 + Vl-84                                                                     +    2809.28 |    2190.72 | decay, nuclear               |
-|   210925*|bohr    |   P-24⁻ +   N-88⁺                               +     5000 =>   P-22 + N-90                                                                      +    2481.41 |    2518.59 | decay, nuclear               |
-|   210945*|bohr    |   P-24⁻ +   N-92⁻                               +     5000 =>   P-22 + N-94                                                                      +    2475.73 |    2524.27 | decay, nuclear               |
-|   210986*|bohr    |  Eb-19⁺ +  Lx-82ª                               +     4000 =>   P-22 + W-79                                                                      +    1906.34 |    2093.66 | decay, nuclear               |
-|   210997*|bohr    |  Ro-22⁺ +   W-79ª                               +     4000 =>   P-22 + Lx-79                                                                     +    1959.36 |    2040.64 | decay, nuclear               |
-|   216699*|bohr    |   P-24⁻ + Vl-101⁻                               +     4030 => ⬆ Aw-125                                                                           +    1608.51 |    2421.49 | decay, nuclear               |
-|   217266*|bohr    |   P-24⁻ +   U-97⁻                               +     6000 => ⬆ Ji-121                                                                           +    3478.70 |    2521.30 | decay, nuclear               |
-|   217529*|bohr    |   P-24⁻ +  Lx-88∙                               +     4000 =>   P-22 + Lx-90                                                                     +     794.77 |    3205.23 | decay, nuclear               |
-|   217599*|bohr    |  Ro-26∙ +  Lx-94⁻                               +     6000 => ⬆ Ek-120                                                                           +    2623.57 |    3376.43 | decay, nuclear               |
-|   217601*|bohr    |   P-24⁻ +  Lx-94⁻                               +     6000 =>   P-22 + Lx-96                                                                     +    3476.63 |    2523.37 | decay, nuclear               |
-|   217616*|bohr    |   P-24⁻ +  Lx-93⁻                               +     4000 =>   P-22 + Lx-95                                                                     +    1543.18 |    2456.82 | decay, nuclear               |
-|   226404*|bohr    |   P-24⁻ +   W-86ª                               +     5000 =>   P-22 + W-88                                                                      +    2518.02 |    2481.98 | decay, nuclear               |
-|   232473*|bohr    |   P-23∙ +   U-92∙                               +     5000 =>   P-22 + U-93                                                                      +     783.80 |    4216.20 | decay, nuclear               |
-|   232508*|bohr    |   P-23∙ +   U-94⁻                               +     5000 =>   P-22 + U-95                                                                      +    1817.87 |    3182.13 | decay, nuclear               |
-|   232554 |bohr    |   P-24⁻ +   U-91⁺                               +     2500 =>   P-22 + U-93                                                                      +      77.57 |    2422.43 | decay, nuclear               |
+[c]  ?-chain Ek-109 ::          |   P-21⁺ + Ek-110ª   +[  2449.43 -   5000] => P-22 + Ek-109 | decay, nuclear               | OTOMRO 202769
+[c]  ?-chain Lx-89  ::          |   P-23∙ +  Lx-88∙   +[  4136.69 -   5000] => P-22 + Lx-89  | decay, nuclear               | OTOMRO 197448
+[c]  ?-chain Nm-98  ::          |   P-23∙ +  Nm-97ª   +[  3307.02 -   5000] => P-22 + Nm-98  | decay, nuclear               | OTOMRO 192962
+[c]  ?-chain Ek-111 ::          |   P-23∙ + Ek-110ª   +[  3350.09 -   5000] => P-22 + Ek-111 | decay, nuclear               | OTOMRO 202754
+[c]  ?-chain Ji-113 ::          |   P-23∙ + Ji-112ª   +[  3351.90 -   5000] => P-22 + Ji-113 | decay, nuclear               | OTOMRO 202798
+[c]  ?-chain Ok-101 ::          |   P-23∙ + Ok-100ª   +[  3347.68 -   5000] => P-22 + Ok-101 | decay, nuclear               | OTOMRO 203866
+[c]  ?-chain N-90   ::          |   P-24⁻ +   N-88⁺   +[  2518.59 -   5000] => P-22 + N-90   | decay, nuclear               | OTOMRO 210925
+[c]  ?-chain Vl-95  ::          |   P-24⁻ +  Vl-93∙   +[  3349.65 -   5000] => P-22 + Vl-95  | decay, nuclear               | OTOMRO 210295
+[c]  ?-chain Ek-112 ::          |   P-24⁻ + Ek-110ª   +[  2647.02 -   5000] => P-22 + Ek-112 | decay, nuclear               | OTOMRO 202752
+[c]  ?-chain Ok-102 ::          |   P-24⁻ + Ok-100ª   +[  2645.16 -   5000] => P-22 + Ok-102 | decay, nuclear               | OTOMRO 203867
+[c]  ?-chain Ha-115 ::          |  Cl-25⁺ + Aw-112ª   +[  2649.03 -   5000] => P-22 + Ha-115 | decay, nuclear               | OTOMRO 204076
+[c]  ?-chain Ha-117 ::          |  Cl-27∙ + Aw-112ª   +[  3611.94 -   5000] => P-22 + Ha-117 | decay, nuclear               | OTOMRO 204055
+[c]  ?-chain W-79   ::          |  Eb-19⁺ +  Lx-82ª   +[  2093.66 -   4000] => P-22 + W-79   | decay, nuclear               | OTOMRO 210986
+[c]  ?-chain U-86   ::          |  Eb-19⁺ +  Vl-89∙   +[  2821.19 -   5000] => P-22 + U-86   | decay, nuclear               | OTOMRO 210533
+[c]  ?-chain Ji-109 ::          |  Eb-19⁺ + Aw-112ª   +[  2274.92 -   5000] => P-22 + Ji-109 | decay, nuclear               | OTOMRO 203937
+[c]  ?-chain Ek-108 ::          |  Eb-19⁺ + Ji-111ª   +[  2294.59 -   5000] => P-22 + Ek-108 | decay, nuclear               | OTOMRO 202870
+[c]  ?-chain Ji-110 ::          |  Ro-22⁺ + Ek-110ª   +[  2383.00 -   5000] => P-22 + Ji-110 | decay, nuclear               | OTOMRO 202742
+
+[c]  ?-chain Ha-114 ::          |   P-21⁺ + Ha-115ª   +[  2381.53 -   5000] => P-22 + Ha-114 | decay, nuclear               | OTOMRO 204082
+[c]  ?-chain Ji-108 ::          |   P-21⁺ + Ji-109ª   +[  2305.71 -   4000] => P-22 + Ji-108 | decay, nuclear               | OTOMRO 203945
+[c]  ?-chain Kn-111 ::          |   P-21⁺ + Kn-112ª   +[  2277.03 -   4000] => P-22 + Kn-111 | decay, nuclear               | OTOMRO 204093
+[c]  ?-chain Se-97  ::          |   P-23∙ +  Se-96∙   +[  4539.15 -  10000] => P-22 + Se-97  | decay, nuclear               | OTOMRO 205218
+[c]  ?-chain Ns-66  ::          |   P-24⁻ +  Dx-42⁻   +[  1544.79 -   2000] => Ns-66         | nuclear                      | OTOMRO 200452
+[c]  ?-chain Nm-99  ::          |   P-24⁻ +  Nm-97ª   +[  2563.72 -   4000] => P-22 + Nm-99  | decay, nuclear               | OTOMRO 204556
+[c]  ?-chain Se-98  ::          |   P-24⁻ +  Se-96∙   +[  3323.11 -   4000] => P-22 + Se-98  | decay, nuclear               | OTOMRO 205186
+[c]  ?-chain Ek-106 ::          |  Eb-19⁺ + Ji-109ª   +[  2178.99 -   4000] => P-22 + Ek-106 | decay, nuclear               | OTOMRO 203961
+[c]  ?-chain Nm-91  ::          |  Ro-22⁺ +  Kk-69ª   +[  1991.06 -   5000] => Nm-91         | nuclear                      | OTOMRO 210429
+[c]  ?-chain Ha-112 ::          |  Ro-22⁺ + Kn-112ª   +[  2214.29 -   4000] => P-22 + Ha-112 | decay, nuclear               | OTOMRO 204039
+[c]  ?-chain Nm-90  ::          |  Ro-23ª +  Se-89⁺   +[  2381.32 -   4000] => P-22 + Nm-90  | decay, nuclear               | OTOMRO 204779
+
+[c]  ?-chain Vl-85  ::          |   P-21⁺ +  Vl-86ª   +[  2187.11 -   5000] => P-22 + Vl-85  | decay, nuclear               | OTOMRO 210592
+[c]  ?-chain U-93   ::          |   P-23∙ +   U-92∙   +[  4216.20 -   5000] => P-22 + U-93   | decay, nuclear               | OTOMRO 232473
+[c]  ?-chain U-93   ::          |   P-24⁻ +   U-91⁺   +[  2422.43 -   2500] => P-22 + U-93   | decay, nuclear               | OTOMRO 232554
+[c]  ?-chain Lx-92  ::          |   P-23∙ +  Lx-91⁻   +[  3222.69 -   5000] => P-22 + Lx-92  | decay, nuclear               | OTOMRO 197451
+[c]  ?-chain Lx-93  ::          |   P-24⁻ +  Lx-91⁻   +[  2498.51 -   4000] => P-22 + Lx-93  | decay, nuclear               | OTOMRO 197162
+[c]  ?-chain Vl-85  ::          |  Eb-19⁺ +  Se-88⁺   +[  2139.75 -   5000] => P-22 + Vl-85  | decay, nuclear               | OTOMRO 205273
+[c]  ?-chain Cv-100 ::          |  Eb-19⁺ + Vt-103ª   +[  2110.19 -   4000] => P-22 + Cv-100 | decay, nuclear               | OTOMRO 203980
+[c]  ?-chain Lx-79  ::          |  Ro-22⁺ +   W-79ª   +[  2040.64 -   4000] => P-22 + Lx-79  | decay, nuclear               | OTOMRO 210997
+[c]  ?-chain Aw-109 ::          |  Ro-22⁺ + Ji-109ª   +[  2242.11 -   4000] => P-22 + Aw-109 | decay, nuclear               | OTOMRO 204178
+[c]  ?-chain Ji-106 ::          |  Ro-22⁺ + Ek-106ª   +[  2252.33 -   5000] => P-22 + Ji-106 | decay, nuclear               | OTOMRO 204159
+[c]  ?-chain Nm-89  ::          |  Ro-22⁺ +  Se-89⁺   +[  2199.83 -   4000] => P-22 + Nm-89  | decay, nuclear               | OTOMRO 204507
+
+[c]  ?-chain U-95   ::          |   P-23∙ +   U-94⁻   +[  3182.13 -   5000] => P-22 + U-95   | decay, nuclear               | OTOMRO 232508
+[c]  ?-chain Dd-100 ::          |   P-23∙ +  Dd-99ª   +[  3251.92 -   4000] => P-22 + Dd-100 | decay, nuclear               | OTOMRO 204640
+[c]  ?-chain Lx-90  ::          |   P-23∙ +  Lx-89∙   +[  4134.15 -   5000] => P-22 + Lx-90  | decay, nuclear               | OTOMRO 197449
+[c]  ?-chain Vl-98  ::          |   P-23∙ +  Vl-97⁻   +[  3238.87 -   5000] => P-22 + Vl-98  | decay, nuclear               | OTOMRO 207766
+[c]  ?-chain Nm-101 ::          |   P-23∙ + Nm-100⁺   +[  3320.57 -   5000] => P-22 + Nm-101 | decay, nuclear               | OTOMRO 192965
+[c]  ?-chain N-94   ::          |   P-24⁻ +   N-92⁻   +[  2524.27 -   5000] => P-22 + N-94   | decay, nuclear               | OTOMRO 210945
+[c]  ?-chain W-88   ::          |   P-24⁻ +   W-86ª   +[  2481.98 -   5000] => P-22 + W-88   | decay, nuclear               | OTOMRO 226404
+[c]  ?-chain Lx-90  ::          |   P-24⁻ +  Lx-88∙   +[  3205.23 -   4000] => P-22 + Lx-90  | decay, nuclear               | OTOMRO 217529
+[c]  ?-chain Nm-101 ::          |   P-24⁻ +  Nm-99ª   +[  2572.87 -   4000] => P-22 + Nm-101 | decay, nuclear               | OTOMRO 204581
+[c]  ?-chain Uq-50  ::          |  Lx-93⁻             +[  8122.78 -   8200] => Dx-43 + Uq-50 | nuclear                      | OTOMRO 202121
+[c]  ?-chain Kn-109 ::          |  Ro-22⁺ + Aw-109ª   +[  2166.56 -   4000] => P-22 + Kn-109 | decay, nuclear               | OTOMRO 204187
+[c]  ?-chain Aw-108 ::          |  Ro-24ª + Ji-106ª   +[  2441.53 -   4000] => P-22 + Aw-108 | decay, nuclear               | OTOMRO 204356
+
+[c]  ?-chain Se-86  ::          |   P-21⁺ +  Se-87⁺   +[  2211.39 -   5000] => P-22 + Se-86  | decay, nuclear               | OTOMRO 205272
+[c]  ?-chain Ha-111 ::          |   P-21⁺ + Ha-112ª   +[  2244.31 -   5000] => P-22 + Ha-111 | decay, nuclear               | OTOMRO 204282
+[c]  ?-chain Dd-101 ::          |   P-23∙ + Dd-100ª   +[  3306.04 -   5000] => P-22 + Dd-101 | decay, nuclear               | OTOMRO 197438
+[c]  ?-chain Dd-105 ::          |   P-23∙ + Dd-104⁻   +[  3280.61 -   5000] => P-22 + Dd-105 | decay, nuclear               | OTOMRO 197444
+[c]  ?-chain Nm-102 ::          |   P-23∙ + Nm-101⁺   +[  3304.20 -   5000] => P-22 + Nm-102 | decay, nuclear               | OTOMRO 192966
+[c]  ?-chain Dd-101 ::          |   P-24⁻ +  Dd-99ª   +[  2559.78 -   4000] => P-22 + Dd-101 | decay, nuclear               | OTOMRO 204642
+[c]  ?-chain Lx-95  ::          |   P-24⁻ +  Lx-93⁻   +[  2456.82 -   4000] => P-22 + Lx-95  | decay, nuclear               | OTOMRO 217616
+[c]  ?-chain Dx-43  ::          |  Lx-93⁻             +[  8122.78 -   8200] => Dx-43 + Uq-50 | nuclear                      | OTOMRO 202121
+[c]  ?-chain Dx-43  ::          |  Lx-94⁻             +[  7988.77 -   8000] => Dx-43 + Uq-51 | nuclear                      | OTOMRO 202031
+[c]  ?-chain Uq-51  ::          |  Lx-94⁻             +[  7988.77 -   8000] => Dx-43 + Uq-51 | nuclear                      | OTOMRO 202031
+[c]  ?-chain Aw-106 ::          |  Ro-22⁺ + Ji-106ª   +[  2164.86 -   5000] => P-22 + Aw-106 | decay, nuclear               | OTOMRO 204191
+[c]  ?-chain Ek-103 ::          |  Ro-22⁺ + Vt-103ª   +[  2171.12 -   4000] => P-22 + Ek-103 | decay, nuclear               | OTOMRO 203975
+
+[c]  ?-chain Dd-102 ::          |   P-23∙ + Dd-101ª   +[  3315.10 -   5000] => P-22 + Dd-102 | decay, nuclear               | OTOMRO 197440
+[c]  ?-chain Nm-104 ::          |   P-23∙ + Nm-103⁻   +[  3264.33 -   5000] => P-22 + Nm-104 | decay, nuclear               | OTOMRO 192969
+[c]  ?-chain Lx-96  ::          |   P-24⁻ +  Lx-94⁻   +[  2523.37 -   6000] => P-22 + Lx-96  | decay, nuclear               | OTOMRO 217601
+[c]  ?-chain Dd-88  ::          |  Ro-22⁺ +  Nm-88⁺   +[  2303.77 -  10000] => P-22 + Dd-88  | decay, nuclear               | OTOMRO 205232
+[c]  ?-chain Se-85  ::          |  Ro-22⁺ +  Vl-85⁺   +[  2132.10 -   5000] => P-22 + Se-85  | decay, nuclear               | OTOMRO 205277
+[c]  ?-chain Vt-100 ::          |  Ro-22⁺ + Cv-100⁺   +[  2104.81 -   4000] => P-22 + Vt-100 | decay, nuclear               | OTOMRO 203984
+[c]  ?-chain Ji-121 ::          |   P-24⁻ +   U-97⁻   +[  2521.30 -   6000] => Ji-121        | decay, nuclear               | OTOMRO 217266
+[c]  ?-chain Kn-106 ::          |  Ro-22⁺ + Aw-106ª   +[  2082.64 -   5000] => P-22 + Kn-106 | decay, nuclear               | OTOMRO 204263
+[c]  ?-chain Aw-107 ::          |  Ro-23ª + Ji-106ª   +[  2288.64 -   4000] => P-22 + Aw-107 | decay, nuclear               | OTOMRO 204355
+[c]  ?-chain Ji-105 ::          |   P-21⁺ + Ji-106ª   +[  2224.50 -   5000] => P-22 + Ji-105 | decay, nuclear               | OTOMRO 204448
+[c]  ?-chain Vl-84  ::          |   P-21⁺ +  Vl-85⁺   +[  2190.72 -   5000] => P-22 + Vl-84  | decay, nuclear               | OTOMRO 210614
+[c]  ?-chain Ek-120 ::          |  Ro-26∙ +  Lx-94⁻   +[  3376.43 -   6000] => Ek-120        | decay, nuclear               | OTOMRO 217599
+
+[c]  ?-chain Aw-125 ::          |   P-24⁻ + Vl-101⁻   +[  2421.49 -   4030] => Aw-125        | decay, nuclear               | OTOMRO 216699
+
+
+
 
 2025-05-29 May.Thu 13:23:49 Perusing the latest parser output for shorter Bohr recipe chains, I see Aw-125 was discovered by qma0000.eth
 |   216699*|bohr    |   P-24⁻ + Vl-101⁻                               +     4030 => ⬆ Aw-125                                                                           +    1608.51 |    2421.49 | decay, nuclear               |
-[ ] add to files
+ OTOMRO 216699: P-24 + Vl-101 + 4030 => Aw-125 + 1608.506397560174946193 using 2421.49
+[c] add to files
 
 2025-05-28 May.Wed 20:35:46 New discovery Dx-36 so now 657 isotopes in Bohr
 
@@ -776,7 +791,7 @@ Some isotopes to discover from my decay predictions:
  [c] Dx-36
  [ ] Lu-42
  [ ] Dx-35
- [ ] Wy-56
+ [c] Wy-56
  [ ] Pb-42
  [ ] Ai-58
  [ ] Pg-49
@@ -5063,20 +5078,16 @@ Quick analysis of unique wallets doing reactions in ALPHA
 
 try:
 [>] Se-104 + 15000 => ? V-48 + Wy-56
-  [*]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
-  [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
-  [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
-  [ ]|  Ct-13⁺ +  Ct-17⁻   +[   532.73 -   5000] => Yu-30         | nuclear                      |
-  [ ]|  Eb-22∙ +  Wy-50∙   +[  2835.49 -   5000] => Kk-72         | nuclear                      |
-  [ ]|  Yu-30∙ +  Kk-72ª   +[  3253.29*-   4000] => Ok-102        | nuclear                      |
-  [ ]|  Ct-17⁻ + Ok-102⁻   +[  1811.59 -   5000] => P-22 + Vl-97  | decay, nuclear               |
-  [ ]|   P-24⁻ +  Vl-97⁻   +[  2486.02 -   3500] => P-22 + Vl-99  | decay, nuclear               |
-  [ ]|   P-24⁻ +  Vl-99⁻   +[  2425.37 -   5000] => P-22 + Vl-101 | decay, nuclear               |
-  [ ]|   P-23∙ + Vl-101⁻    +  3023              => Aw-124        |
-  [ ]| Aw-124ª              +     0              => P-22 + Se-102 |
-  [ ]|   P-24⁻ + Se-102⁻    +  2496              => P-22 + Se-104 |
-  [ ]| Se-104⁻              + 15000              => ? V-48 + Wy-56|
-total: 35416.59 
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+  [r]|  Uq-47⁻ +  Kk-71ª   +[  3321.07 -  20000] => P-22 + Se-96  | decay, nuclear               | used 3237.17 [c] update recipe chains
+  [r]|   P-24⁻ +  Se-96∙   +[  3323.11 -   4000] => P-22 + Se-98  | decay, nuclear               | used 3289.31 [c] update recipe chains
+  [r]|   Sr-2∙ +  Se-98∙   +[  1659.44 -   5000] => Se-100        | decay, nuclear               | used 1651.44 [c] update recipe chains
+  [r]|   P-24⁻ + Se-100∙    +  3216              => P-22 + Se-102 | decay, nuclear               | used 3214.13 [c] update recipe chains
+  [r]|   P-24⁻ + Se-102⁻    +  2496              => P-22 + Se-104 | decay, nuclear               | used 2476.84 [c] update recipe chains
+  [r]| Se-104⁻              + 12000              => ? V-48 + Wy-56| <---SUCCESS!! otomro 241186    used 9020.97 [ ] update recipe chains
+total: 29533.32
 
 2025-05-08 May.Thu 16:28:26
 
