@@ -1,8 +1,59 @@
+2025-05-30 May.Fri 22:17:20 Made a table show the ranges of Lx single isotope inputs and fissioning with different energy ranges.
+
+| OTOMRO| INPUT  |  low input range=> OUTPUT |type  | OTOMRO|  mid input range=> output          |type    | OTOMRO| high input range=> output              |type             |
+|245664 | Lx-76⁺ |+[   0.00- 5000] => ⬇ W-76 |decay |   [*] |+ ?              => ? Dx-35 + Uq-41 |?nuclear|159175*|+[5270.87- 7000] =>   UqDx(Dx-35,Uq-41>)|metallic, nuclear|
+|166828 | Lx-77⁺ |+[   0.00-    0] => ⬇ W-77 |decay |   [*] |+ ?              => ? Dx-35 + Uq-42 |?nuclear|   [ ] |                 => ? UqDx(Dx-35,Uq-42>)|                 |
+|    [ ]|?Lx-78  |+[   0?  -     ] => ? W-78 |decay?|   [ ] |                 => ? Dx-36 + Uq-42 |        |   [ ] |                 => ? UqDx(Dx-36,Uq-42>)|                 |
+|    [ ]| Lx-79⁺ |+[   0?  -     ] => ? W-79 |decay?|   [ ] |                 => ? Dx-36 + Uq-43 |        |   [ ] |                 => ? UqDx(Dx-36,Uq-43>)|                 |
+|    [ ]| Lx-80⁺ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-37 + Uq-43 |        |   [ ] |                 => ? UqDx(Dx-37,Uq-43>)|                 |
+| 39390*| Lx-81ª |+[ 250.00- 5000] =>   Lx-81|none  |   [ ] |                 => ? Dx-37   Uq-44 |        |   [ ] |                 => ? UqDx(Dx-37,Uq-44>)|                 |
+|    [ ]| Lx-82ª |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-38 + Uq-44 |        |   [ ] |                 => ? UqDx(Dx-38,Uq-44>)|                 |
+| 85846*| Lx-83ª |+[   0.00-    0] =>   Lx-83|none  |   [ ] |                 => ? Dx-38   Uq-45 |        | 86751*|+[7696.55-10000] =>   UqDx(Dx-38,Uq-45>)|metallic, nuclear|
+| 85847*| Lx-84ª |+[   0.00-    0] =>   Lx-84|none  |   [ ] |                 => ? Dx-39   Uq-45 |        | 86752*|+[7866.33-10000] =>   UqDx(Dx-39,Uq-45>)|metallic, nuclear|
+|    [ ]| Lx-85ª |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-39 + Uq-46 |        |   [ ] |                 => ? UqDx(Dx-39,Uq-46>)|                 |
+| 85848*| Lx-86ª |+[   0.00-    0] =>   Lx-86|none  |   [ ] |                 => ? Dx-40   Uq-46 |        | 86753*|+[8162.03-10000] =>   UqDx(Dx-40,Uq-46>)|metallic, nuclear|
+| 85849*| Lx-87∙ |+[   0.00-10000] =>   Lx-87|none  |   [ ] |                 => ? Dx-40   Uq-47 |        |   [ ] |                 => ? UqDx(Dx-40,Uq-47>)|                 |
+| 85850*| Lx-88∙ |+[   0.00-    0] =>   Lx-88|none  |   [ ] |                 => ? Dx-41   Uq-47 |        |   [ ] |                 => ? UqDx(Dx-41,Uq-47>)|                 |
+|    [ ]| Lx-89∙ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-41 + Uq-48 |        |   [ ] |                 => ? UqDx(Dx-41,Uq-48>)|                 |
+|    [ ]| Lx-90∙ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-42 + Uq-48 |        |   [ ] |                 => ? UqDx(Dx-42,Uq-48>)|                 |
+|    [ ]| Lx-91⁻ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-42 + Uq-49 |        |   [ ] |                 => ? UqDx(Dx-42,Uq-49>)|                 |
+|    [ ]| Lx-92∙ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-43 + Uq-49 |        |   [ ] |                 => ? UqDx(Dx-43,Uq-49>)|                 |
+|197170*| Lx-93⁻ |+[ 250.00- 8100] => ⬆ N-93 |decay |240883 |+[8119.28- 8200] =>   Dx-43 + Uq-50 | nuclear|   [ ] |                 => ? UqDx(Dx-43,Uq-50>)|                 |
+|202020*| Lx-94⁻ |+[ 390.00- 7800] => ⬆ N-94 |decay |240902 |+[7988.27- 8000] =>   Dx-43 + Uq-51 | nuclear|   [ ] |                 => ? UqDx(Dx-43,Uq-51>)|                 |
+|    [ ]| Lx-95⁻ |+[   0?  -     ] => ? N-95 |decay?|   [ ] |                 => ? Dx-44 + Uq-51 |        |   [ ] |                 => ? UqDx(Dx-44,Uq-51>)|                 |
+|102992*| Lx-96⁻ |+[ 250.00- 7600] => ⬆ N-96 |decay |225086 |+[7692.11- 7700] =>   Dx-44 + Uq-52 | nuclear|162887 |+[7813.62-42000] =>   UqDx(Dx-44,Uq-52>)|metallic, nuclear|
+
+
+
+2025-05-30 May.Fri 21:49:41 [ ] test how random the system is. Find all times where I think an isotope should decay to another through beta/alpha decay and see if they always did or if sometimes not.
+It should be easiest to start with just all 1 otom inputs
+
+2025-05-30 May.Fri 16:36:02 New discovery T-14  so now Bohr has 661 isotopes
+
+ OTOMRO 249184: Nd-27⁺ + 3000 => => Ct-13 + T-14⁺ + 1,876.401952996310910748 using 1123.60 nuclear
+
+[c] add to files
+
+[ ]     T-14  +   P-21⁺ + 2000 => ? Dx-35
+    |   T-17∙ +   P-21⁺ + 1268 =>   Dx-38    +    3732.96 |    1267.04 | nuclear                      |
+
+[ ]     T-14  +  Ro-23  + 2000 => ? Gd-37
+    |   T-17∙ +  Ro-24ª + 1405 =>   Gd-41    +    3595.42 |    1404.58 | nuclear                      |
+
+
+2025-05-30 May.Fri 16:17:49 New discovery Nd-27⁺ so now Bohr has 660 isotopes
+
+ OTOMRO 249131: Pg-50⁺ + 2860 => Ro-22 + Nd-27 + 21.76647105056579079  used 2838.23 nuclear
+
+[c] add to files
+
+try:
+[r]  Nd-27⁺ + 3000 => ? Ct-12 + T-15 <--- DIFFERENT SUCCESS! Makes Ct-13 + T-14 using 1123.60 nuclear
+
 2025-05-30 May.Fri 12:50:14 potentially shorter/cheaper recipes:
 
-|   245591*|bohr    |  Ro-22⁺ +   S-97⁺                               +     5000 =>   P-22 + Z-97                                                                      +    2823.68 |    2176.32 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x4604f534312a6017d0c018de5b2e583dee0e8b5ffc33065998168ad08e12443d | 0xaf01979876cd7907870ec0592d34b67fda11171da809d37d70e62129b670459d |
-|   242303*|bohr    |   P-24⁻ + Ok-102⁻                               +     5000 =>   P-22 + Ok-104                                                                    +    2332.65 |    2667.35 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xf6fe26b58733d938ce7a1d08504eca68713a92a8b94ee189c511a1f67d072103 | 0xdb95e7425b01384aebc7f2c4bb225e7506ee82f1bd9df2e1e72f65fe7e650f3f |
-
+[c] |   245591*|bohr    |  Ro-22⁺ +   S-97⁺                               +     5000 =>   P-22 + Z-97                                                                      +    2823.68 |    2176.32 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x4604f534312a6017d0c018de5b2e583dee0e8b5ffc33065998168ad08e12443d | 0xaf01979876cd7907870ec0592d34b67fda11171da809d37d70e62129b670459d |
+[c] |   242303*|bohr    |   P-24⁻ + Ok-102⁻                               +     5000 =>   P-22 + Ok-104                                                                    +    2332.65 |    2667.35 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xf6fe26b58733d938ce7a1d08504eca68713a92a8b94ee189c511a1f67d072103 | 0xdb95e7425b01384aebc7f2c4bb225e7506ee82f1bd9df2e1e72f65fe7e650f3f |
 
 2025-05-30 May.Fri 10:26:51 Damnit the Reactor logs are over 10k lines already and my snapshot at 00:16 doesn't have any lines in common with the newest export so that means I missed some data! FUCK
 [ ] Missed Reactor logs today
@@ -20,14 +71,13 @@ Missing:
 
 [ ] ask in discord if anyone might have snapshots of the missing logs
 
-
 2025-05-29 May.Thu 22:06:03 New discovery Wy-56. Now 659 isotopes in BOHR
 
   Se-104⁻ + 12000 => V-48 + Wy-56 + 2979.03 used 9020.97 nuclear
 
 [c] add to files
 
-2025-05-29 May.Thu 13:34:56 [ ] Update chains for these reactions:
+2025-05-29 May.Thu 13:34:56 [c] Update chains for these reactions:
 
 [c]  ?-chain Ek-109 ::          |   P-21⁺ + Ek-110ª   +[  2449.43 -   5000] => P-22 + Ek-109 | decay, nuclear               | OTOMRO 202769
 [c]  ?-chain Lx-89  ::          |   P-23∙ +  Lx-88∙   +[  4136.69 -   5000] => P-22 + Lx-89  | decay, nuclear               | OTOMRO 197448
@@ -810,7 +860,7 @@ This should include alpha decay fission
 2025-05-27 May.Tue 10:18:35
 Some isotopes to discover from my decay predictions:
  [c] Vi-15
- [ ] Nd-27
+ [c] Nd-27
  [c] Dx-36
  [ ] Lu-42
  [ ] Dx-35
@@ -6496,7 +6546,7 @@ I only have a couple reactions left to complete my Alpha table of all isotopes r
 
 
 2025-04-28 Apr.Mon 10:43:32 I see 3 undiscovered isotopes in molecules: Nd-27, W-76, Cl-30
- [ ] discover Nd-27
+ [c] discover Nd-27
  [c] discover W-76
  [c] discover Cl-30
 
@@ -10697,18 +10747,42 @@ try:
      TOO LITTLE[+0?           ] WILL MAKE: ? Ux-50 
      TOO MUCH  [+3220.13-10000] WILL MAKE: RoNd(Ro-23>Nd-27)
  [>] Pg-50⁺ +3000 => ? Ro-22 + Nd-27
-   [*]|   K-31⁺ +  Mt-34⁺  + 1604 =>   Gy-65         
-   [ ]|  Yu-27⁺ +  Yu-27⁺  + 1261 =>   Qe-54         
-   [ ]|  Qe-54⁺ +  Gy-65⁺  + 3136 =>   P-22 + S-97   
-   [ ]|  Xj-17⁺ +   S-97⁺  + 1834 =>   P-22 + Ok-92 
-   [ ]|   P-21⁺ +  Ok-92⁺  + 1998 =>   P-22 + Ok-91 
-   [ ]|  Mt-32⁺ +  Ok-91⁺  + 2357 =>   P-22 + Ek-101
-   [ ]|   P-21⁺ + Ek-101⁺  + 1846 =>   P-22 + Ek-100
-   [ ]|   P-21⁺ + Ek-100⁺  + 1787 =>   P-22 + Ek-99 
-   [ ]|  Vi-10⁺ +  Ek-99⁺  + 1071 => ⬇ Ax-109       
-   [ ]| Ax-109⁺            + 6669 =>   Pg-50 + F-59 
-   [ ]   Pg-50⁺            + 3000 => ? Ro-22 + Nd-27
+   [r]|   K-31⁺ +  Mt-34⁺  + 1604 =>   Gy-65         
+   [r]|  Yu-27⁺ +  Yu-27⁺  + 1261 =>   Qe-54         
+   [r]|  Qe-54⁺ +  Gy-65⁺  + 3136 =>   P-22 + S-97   
+   [r]|  Xj-17⁺ +   S-97⁺  + 1834 =>   P-22 + Ok-92  
+   [r]|   P-21⁺ +  Ok-92⁺  + 1998 =>   P-22 + Ok-91   
+   [r]|  Mt-32⁺ +  Ok-91⁺  + 2353 =>   P-22 + Ek-101  
+   [r]|   P-21⁺ + Ek-101⁺  + 1846 =>   P-22 + Ek-100    used 1843.22 [ ] update recipe chains
+   [r]|   P-21⁺ + Ek-100⁺  + 1784 =>   P-22 + Ek-99     used 1783.11
+   [r]|  Vi-10⁺ +  Ek-99⁺  +  917 => ⬇ Ax-109           used  915.87 [ ] update recipe chains
+   [r]| Ax-109⁺            + 6503 =>   Pg-50 + F-59     used 6493.97 [ ] update recipe chains
+   [f]   Pg-50⁺            + 3100 => ? Ro-22 + Nd-27    used 2875.13  <---NOPE STILL TOO MUCH makes RoNd()
 total: 26563
+   [r]|   K-31⁺ +  Mt-34⁺  + 1604 =>   Gy-65         |
+   [r]|  Yu-27⁺ +  Yu-27⁺  + 1261 =>   Qe-54         |
+   [r]|  Qe-54⁺ +  Gy-65⁺  + 3136 =>   P-22 + S-97   |
+   [r]|  Xj-17⁺ +   S-97⁺  + 1834 =>   P-22 + Ok-92  |
+   [r]|   P-21⁺ +  Ok-92⁺  + 1998 =>   P-22 + Ok-91  |
+   [r]|  Mt-32⁺ +  Ok-91⁺  + 2353 =>   P-22 + Ek-101 |
+   [r]|   P-21⁺ + Ek-101⁺  + 1844 =>   P-22 + Ek-100 |
+   [r]|   P-21⁺ + Ek-100⁺  + 1784 =>   P-22 + Ek-99  |
+   [r]|  Vi-10⁺ +  Ek-99⁺  +  916 => ⬇ Ax-109        |
+   [r]| Ax-109⁺            + 6494 =>   Pg-50 + F-59  | used 6493.52 [ ] update recipe chains
+   [f]   Pg-50⁺            + 2800 => ? Ro-22 + Nd-27 | <---FAILED NOT ENOUGH NRG. used 140.00
+total: 26024
+   [r]|   K-31⁺ +  Mt-34⁺  + 1604 =>   Gy-65         |
+   [r]|  Yu-27⁺ +  Yu-27⁺  + 1261 =>   Qe-54         |
+   [r]|  Qe-54⁺ +  Gy-65⁺  + 3136 =>   P-22 + S-97   |
+   [r]|  Xj-17⁺ +   S-97⁺  + 1834 =>   P-22 + Ok-92  |
+   [r]|   P-21⁺ +  Ok-92⁺  + 1998 =>   P-22 + Ok-91  |
+   [r]|  Mt-32⁺ +  Ok-91⁺  + 2353 =>   P-22 + Ek-101 |
+   [r]|   P-21⁺ + Ek-101⁺  + 1844 =>   P-22 + Ek-100 |
+   [r]|   P-21⁺ + Ek-100⁺  + 1784 =>   P-22 + Ek-99  |
+   [r]|  Vi-10⁺ +  Ek-99⁺  +  916 => ⬇ Ax-109        |
+   [r]| Ax-109⁺            + 6494 =>   Pg-50 + F-59  |
+   [r]   Pg-50⁺            + 2860 => ? Ro-22 + Nd-27 | <---SUCCESS! used 2838.23 nuclear  OTOMRO 249131: Pg-50⁺ + 2860 => Ro-22 + Nd-27 + 21.76647105056579079
+total: 26084
 
 What about ratcheting down with P-21?
    [r]|   P-21⁺ +  Mt-32⁺   +[  1138.33 -  20000] => Pg-53         | decay, nuclear               | used 1133.78 [ ] update recipe chains
@@ -11181,20 +11255,29 @@ total: 41918
 total: 45102
 
 [>]  W-91⁻   + 8000   => ? Lu-42 + Uq-49 
-   [ ]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
-   [ ]|   Sr-3∙ +  Co-83⁺ + 1250 => W-86        
-   [ ]|   K-34∙ +   W-86ª + 3884 => P-22 + Se-98
-   [ ]|   Sr-3∙ +  Se-98∙ + 1765 => Se-101      
-   [ ]|  Eb-19⁺ + Se-101∙ + 2762 => P-22 + Vl-98
-   [ ]|  Mt-32⁺ +  Vl-98⁻ + 2740 => P-22 + S-108
-   [ ]|   P-24⁻ +  S-108⁺ +  451 => Ro-24 + Da-108
-   [ ]|   Sr-1∙ + Da-108∙ + 1796 => P-22 + Co-87
-   [ ]|  Ro-24ª +  Co-87⁻ + 2510 => P-22 + W-89 
-   [ ]|   P-23∙ +   W-89⁻ + 3184 => P-22 + W-90 
-   [ ]|   P-23∙ +   W-90⁻ + 3074 => P-22 + W-91 
-   [ ]|   P-23∙ +   W-91⁻ + 3034 => Cv-114      
-   [ ]    W-91⁻           + 8000 => ? Lu-42 + Uq-49  or Dx-42 + Uq-49
+   [-]|   K-34∙ +  Kk-71ª + 3489 => P-22 + Co-83 
+   [-]|   Sr-3∙ +  Co-83⁺ + 1250 => W-86        
+   [-]|   K-34∙ +   W-86ª + 3884 => P-22 + Se-98
+   [-]|   Sr-3∙ +  Se-98∙ + 1765 => Se-101      
+   [-]|  Eb-19⁺ + Se-101∙ + 2762 => P-22 + Vl-98
+   [-]|  Mt-32⁺ +  Vl-98⁻ + 2740 => P-22 + S-108
+   [-]|   P-24⁻ +  S-108⁺ +  451 => Ro-24 + Da-108
+   [-]|   Sr-1∙ + Da-108∙ + 1796 => P-22 + Co-87
+   [-]|  Ro-24ª +  Co-87⁻ + 2510 => P-22 + W-89 
+   [-]|   P-23∙ +   W-89⁻ + 3184 => P-22 + W-90 
+   [-]|   P-23∙ +   W-90⁻ + 3074 => P-22 + W-91 
+   [-]|   P-23∙ +   W-91⁻ + 3034 => Cv-114      
+   [-]    W-91⁻           + 8000 => ? Lu-42 + Uq-49  or Dx-42 + Uq-49
 total: 37939
+Better:
+   [r]|  Uq-47⁻ +  Kk-71ª   +[  3237.17 -  20000] => P-22 + Se-96  |  used 3232.97 [ ] update recipe chains
+   [r]|   P-23∙ +  Se-96∙   +[  4539.15 -  10000] => P-22 + Se-97  |  used 4266.15 [ ] update recipe chains
+   [r]|   K-34∙ +  Se-97ª   +[  4212.14 -   6000] => P-22 + S-109  |  used 4211.79 [ ] update recipe chains
+   [r]|   Sr-3∙ +  S-109ª   +[  1398.30 -   5000] => P-22 + W-90   |  used 1389.75 [ ] update recipe chains
+   [r]|   P-23∙ +   W-90⁻   +[  2972.70 -   5000] => P-22 + W-91   |  used 2972.45 [ ] update recipe chains
+   [f]    W-91⁻ + 10000 => ? Lu-42 + Uq-49  or Dx-42 + Uq-49 <---HMMM makes Lu-41 + Uq-50 using 7593.36 nuclear
+total: 24358.00
+
 
 [>]  Lx-76⁺  + 0      => ? W-76 
    [r]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
@@ -11247,17 +11330,32 @@ total: 18921
    [r]|  Cv-98ª           +    0 => P-22 + Lx-76
    [f]   Lx-76⁺           + 7000 => ? Dx-35 + Uq-41 <---- makes UqDx(Dx-35,Uq-41) using 5270.87 nuclear+metallic SO TOO MUCH ENERGY
 total: 20919
-   [ ]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
-   [ ]|  Yu-27⁺ +  Yu-27⁺ + 1261 => Qe-54         
-   [ ]|  Qe-54⁺ +  Gy-65⁺ + 3136 => P-22 + S-97   
-   [ ]|  Xj-17⁺ +   S-97⁺ + 1834 => P-22 + Ok-92  
-   [ ]|   P-21⁺ +  Ok-92⁺ + 1998 => P-22 + Ok-91  
-   [ ]|  Mt-32⁺ +  Ok-91⁺ + 2353 => P-22 + Ek-101 
-   [ ]|  Eb-19⁺ + Ek-101⁺ + 1733 => P-22 + Vt-98  
-   [ ]|  Vt-98⁺           +    0 => Cv-98         
-   [ ]|  Cv-98ª           +    0 => P-22 + Lx-76
-   [ ]   Lx-76⁺           + 5100 => ? Dx-35 + Uq-41
+   [-]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
+   [-]|  Yu-27⁺ +  Yu-27⁺ + 1261 => Qe-54         
+   [-]|  Qe-54⁺ +  Gy-65⁺ + 3136 => P-22 + S-97   
+   [-]|  Xj-17⁺ +   S-97⁺ + 1834 => P-22 + Ok-92  
+   [-]|   P-21⁺ +  Ok-92⁺ + 1998 => P-22 + Ok-91  
+   [-]|  Mt-32⁺ +  Ok-91⁺ + 2353 => P-22 + Ek-101 
+   [-]|  Eb-19⁺ + Ek-101⁺ + 1733 => P-22 + Vt-98  
+   [-]|  Vt-98⁺           +    0 => Cv-98         
+   [-]|  Cv-98ª           +    0 => P-22 + Lx-76
+   [-]   Lx-76⁺           + 5100 => ? Dx-35 + Uq-41
 total: 20419
+Better:
+   [r]|  Ro-22⁺ +  Gy-67ª +[  1813.39 -  20000] => Se-89         | used 1810.59 [ ] update recipe chains
+   [r]|  Ro-22⁺ +  Se-89⁺ +[  2199.83 -   4000] => P-22 + Nm-89  | used 2109.83 [ ] update recipe chains
+   [r]|   K-31⁺ +  Nm-89⁺ +[  2564.75 -  10000] => P-22 + Z-98   | used 2560.50 [ ] update recipe chains
+   [r]|  Ro-22⁺ +   Z-98⁺ +[  2107.84 -   5000] => P-22 + Cv-98  | used 1963.24 [ ] update recipe chains
+   [r]|  Cv-98ª           +[     0.00 -      0] => P-22 + Lx-76  |
+   [f]   Lx-76⁺           +   5100 => ? Dx-35 + Uq-41  <----NOPE NOT ENOUGH makes W-76 using 255.00 decay
+total: 13939.00
+   [*]|  Ro-22⁺ +  Gy-67ª +[  1810.59 -  20000] => Se-89         | used 1810.59 [ ] update recipe chains
+   [ ]|  Ro-22⁺ +  Se-89⁺ +[  2109.83 -   4000] => P-22 + Nm-89  | used 2109.83 [ ] update recipe chains
+   [ ]|   K-31⁺ +  Nm-89⁺ +[  2560.50 -  10000] => P-22 + Z-98   | used 2560.50 [ ] update recipe chains
+   [ ]|  Ro-22⁺ +   Z-98⁺ +[  1963.24 -   5000] => P-22 + Cv-98  | used 1963.24 [ ] update recipe chains
+   [ ]|  Cv-98ª           +[     0.00 -      0] => P-22 + Lx-76  |
+   [ ]   Lx-76⁺           +   5200 => ? Dx-35 + Uq-41 
+total: 13939.00
 
 [>]  Lx-77⁺  + 5000   => ? Dx-35 + Uq-42
    [ ]|  Cl-25⁺ +  S-102ª + 2674 =>   P-22 + Cv-105 

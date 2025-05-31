@@ -882,9 +882,18 @@ curl --request POST  \
  { "id":656, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'4f2de12ab8e8c3af4410e6d63225a1f10b71e1e7fd47072f5c747e682ab715b2" }, "latest" ] },
  { "id":657, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'8039e43b9823af5f3584bbe4ae9ca35fd877020679c4db6bed4458af38b7bdb9" }, "latest" ] },
  { "id":658, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'1e627eb83dcb679824493413c1d9494f98fffbe278855bac696adadc3843c97c" }, "latest" ] },
- { "id":659, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'1d72b345d4832114a3ca5e67cf74a1933b5fd5591335753c5ab05efee583adc8" }, "latest" ] } ] '
+ { "id":659, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'1d72b345d4832114a3ca5e67cf74a1933b5fd5591335753c5ab05efee583adc8" }, "latest" ] },
+ { "id":660, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'a5663d06ffe76d59a34ff6256d978564b766b0b12e63f3bb4aeacc0b56269f3a" }, "latest" ] } ] '
 
-# at 660 start a new one
+sleep 2
+
+curl --request POST  \
+     --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
+     --header 'accept: application/json'  \
+     --header 'content-type: application/json' \
+     --data ' [
+ { "id":661, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'08434fc084e01e88be438587e0efe3f7f7b22b9cb67e16b588d14261d897352a" }, "latest" ] },] '
+
 # at 690 start a new one
 # at 720 start a new one
 # at 750 start a new one
