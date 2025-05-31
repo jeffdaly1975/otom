@@ -1,8 +1,31 @@
+2025-05-31 May.Sat 13:43:46
+
+[ ] I should include the block number of each initiateReation() and analyseReaction() tx
+[c] Check: When no reaction happens, do the input otoms get burned and reminted? Or just transferred?
+    ANSWER: It burns them in the execution of initiateReation()
+
+::INFO:: All inputs (otoms/molecules/NRG) are burned in the call to initiateReation(). When no reaction occurs, the inputs are minted anew, usually with less NRG (unless input was 0).
+
+
+2025-05-31 May.Sat 13:23:02 New Discovery Ai-58 so now 663 isotopes in Bohr
+
+   OTOMRO 254139: Kn-107⁺ + 10000 => Ux-49 + Ai-58 + 2,592.159702566815667524 using 7407.84 nuclear
+
+[ ] add to files
+
+2025-05-31 May.Sat 12:05:19 [ ] parser script needs to identify ranges of OTOMROs missing completely from logs
+
+2025-05-31 May.Sat 11:51:53 New Discovery Dx-35 makes 662 isotopes in Bohr
+
+   OTOMRO 253730: Lx-76⁺ + 5160 => Dx-35 + Uq-41 + 45.376629089403010653 using 5114.62 nuclear
+
+[c] add to files
+
 2025-05-30 May.Fri 22:17:20 Made a table show the ranges of Lx single isotope inputs and fissioning with different energy ranges.
 
 | OTOMRO| INPUT  |  low input range=> OUTPUT |type  | OTOMRO|  mid input range=> output          |type    | OTOMRO| high input range=> output              |type             |
-|245664 | Lx-76⁺ |+[   0.00- 5000] => ⬇ W-76 |decay |   [*] |+ ?              => ? Dx-35 + Uq-41 |?nuclear|159175*|+[5270.87- 7000] =>   UqDx(Dx-35,Uq-41>)|metallic, nuclear|
-|166828 | Lx-77⁺ |+[   0.00-    0] => ⬇ W-77 |decay |   [*] |+ ?              => ? Dx-35 + Uq-42 |?nuclear|   [ ] |                 => ? UqDx(Dx-35,Uq-42>)|                 |
+|245664 | Lx-76⁺ |+[   0.00- 5000] => ⬇ W-76 |decay |253730 |+[5114.62- 5160] =>   Dx-35 + Uq-41 | nuclear|159175*|+[5270.87- 7000] =>   UqDx(Dx-35,Uq-41>)|metallic, nuclear|
+|166828 | Lx-77⁺ |+[   0.00-    0] => ⬇ W-77 |decay |   [ ] |                 => ? Dx-35 + Uq-42 |?nuclear|   [ ] |                 => ? UqDx(Dx-35,Uq-42>)|                 |
 |    [ ]|?Lx-78  |+[   0?  -     ] => ? W-78 |decay?|   [ ] |                 => ? Dx-36 + Uq-42 |        |   [ ] |                 => ? UqDx(Dx-36,Uq-42>)|                 |
 |    [ ]| Lx-79⁺ |+[   0?  -     ] => ? W-79 |decay?|   [ ] |                 => ? Dx-36 + Uq-43 |        |   [ ] |                 => ? UqDx(Dx-36,Uq-43>)|                 |
 |    [ ]| Lx-80⁺ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-37 + Uq-43 |        |   [ ] |                 => ? UqDx(Dx-37,Uq-43>)|                 |
@@ -34,7 +57,7 @@ It should be easiest to start with just all 1 otom inputs
 
 [c] add to files
 
-[ ]     T-14  +   P-21⁺ + 2000 => ? Dx-35
+[-]     T-14  +   P-21⁺ + 2000 => ? Dx-35
     |   T-17∙ +   P-21⁺ + 1268 =>   Dx-38    +    3732.96 |    1267.04 | nuclear                      |
 
 [ ]     T-14  +  Ro-23  + 2000 => ? Gd-37
@@ -338,7 +361,7 @@ It Failed. Did someone try calling something they weren't supposed to?
 What's missing?
 
 [c] Make missing 1-chains:
-[r] 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               | used 2235.72 [ ] update recipe chains
+[r] 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               | used 2235.72 [c] update recipe chains
 
 [ ] Make missing 2-chains:
 [ ] 2-chain Ai-60  ::  2276.43 |   Sr-1∙ +  Ns-59⁺   +[   944.29 -   1500] => Ai-60         | nuclear                      |
@@ -731,8 +754,8 @@ T-17∙ won't decay.
 If Vi-17 existed it would probably be beta- and unstable thus decay to Ct-17
 Can I aim for Vi-17
 
-[r]|   Dz-9∙ +  Eb-22∙   +[   972.95 -   5000] => Yu-31         | nuclear                      | used  972.60 [ ] update recipe chains
-[r]|  Yu-31⁻             +[  1591.99 -  10000] => Vi-14 + T-17  | nuclear                      | used 1591.59 [ ] update recipe chains
+[r]|   Dz-9∙ +  Eb-22∙   +[   972.95 -   5000] => Yu-31         | nuclear                      | used  972.60 [c] update recipe chains
+[r]|  Yu-31⁻             +[  1591.99 -  10000] => Vi-14 + T-17  | nuclear                      | used 1591.59 [c] update recipe chains
 [f]     Sr-3∙ + Vi-14⁻   +   3000              => ? Ct-17 or Vi-17  NOPE makes T-17 using 548.61 nuclear, decay
 
 
@@ -863,10 +886,10 @@ Some isotopes to discover from my decay predictions:
  [c] Nd-27
  [c] Dx-36
  [ ] Lu-42
- [ ] Dx-35
+ [c] Dx-35
  [c] Wy-56
  [ ] Pb-42
- [ ] Ai-58
+ [c] Ai-58
  [ ] Pg-49
  [ ] Z-94
  [c] Yv-66
@@ -900,12 +923,12 @@ That doesn't work
 [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
 [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
 [r]|   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
-[r]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2423.46 [ ] update recipe chains
+[r]|   P-24⁻ +  Lx-91⁻   +[  2498.51 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2423.46 [c] update recipe chains
 [r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               |
-[r]|   P-23∙ +  Lx-94⁻   +[  3026.92 -   6000] => P-22 + Lx-95  | decay, nuclear               | used 3026.86 [ ] update recipe chains
-[r]|   P-23∙ +  Lx-95⁻   +[  2987.95 -   6000] => P-22 + Lx-96  | decay, nuclear               | used 2987.35 [ ] update recipe chains
-[r]|  Lx-96⁻             +[  7692.46 -   7700] => Dx-44 + Uq-52 | nuclear                      | used 7692.11 [ ] update recipe chains
-[r]|  Uq-52⁻             +[  3104.77 -   5000] => P-24 + Ro-28  | decay, nuclear               | used 3100.02 [ ] update recipe chains
+[r]|   P-23∙ +  Lx-94⁻   +[  3026.92 -   6000] => P-22 + Lx-95  | decay, nuclear               | used 3026.86 [x] update recipe chains
+[r]|   P-23∙ +  Lx-95⁻   +[  2987.95 -   6000] => P-22 + Lx-96  | decay, nuclear               | used 2987.35 [c] update recipe chains
+[r]|  Lx-96⁻             +[  7692.46 -   7700] => Dx-44 + Uq-52 | nuclear                      | used 7692.11 [c] update recipe chains
+[r]|  Uq-52⁻             +[  3104.77 -   5000] => P-24 + Ro-28  | decay, nuclear               | used 3100.02 [c] update recipe chains
 [r]|  Ro-28⁻             +   3000              => ? Vi-13 + Vi-15  <---SUCCESS! used 1313.64 nuclear
 total: 32899.32
 
@@ -956,8 +979,8 @@ Uq-52         0
 [r]|   P-24⁻ +  Lx-89∙   +[  3161.36*-   4000] => P-22 + Lx-91  | decay, nuclear               |
 
 5x
-[r]|   P-24⁻ +  Lx-91⁻   +[  2423.46 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2419.71 [ ] update recipe chains
-[r]|   P-24⁻ +  Lx-91⁻   +[  2419.71 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2419.51*[ ] update recipe chains this is minimal
+[r]|   P-24⁻ +  Lx-91⁻   +[  2423.46 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2419.71 [c] update recipe chains
+[r]|   P-24⁻ +  Lx-91⁻   +[  2419.71 -   2499] => P-22 + Lx-93  | decay, nuclear               | used 2419.51*[c] update recipe chains this is minimal
 [r]|   P-24⁻ +  Lx-91⁻   +[  2419.51*-   2499] => P-22 + Lx-93  | decay, nuclear               |
 [r]|   P-24⁻ +  Lx-91⁻   +[  2419.51*-   2499] => P-22 + Lx-93  | decay, nuclear               |
 [r]|   P-24⁻ +  Lx-91⁻   +[  2419.51*-   2499] => P-22 + Lx-93  | decay, nuclear               |
@@ -969,16 +992,16 @@ Uq-52         0
 [r]|   P-23∙ +  Lx-93⁻   +[  3072.42*-   6000] => P-22 + Lx-94  | decay, nuclear               |
 
 3x
-[r]|   P-23∙ +  Lx-94⁻   +[  3026.86*-   6000] => P-22 + Lx-95  | decay, nuclear               | [ ] update recipe chains this is min
+[r]|   P-23∙ +  Lx-94⁻   +[  3026.86*-   6000] => P-22 + Lx-95  | decay, nuclear               | [x] update recipe chains this is min
 [r]|   P-23∙ +  Lx-94⁻   +[  3026.86*-   6000] => P-22 + Lx-95  | decay, nuclear               |
 [r]|   P-23∙ +  Lx-94⁻   +[  3026.86*-   6000] => P-22 + Lx-95  | decay, nuclear               |
 
 2x
-[r]|   P-23∙ +  Lx-95⁻   +[  2987.35*-   6000] => P-22 + Lx-96  | decay, nuclear               | [ ] update recipe chains this is min
+[r]|   P-23∙ +  Lx-95⁻   +[  2987.35*-   6000] => P-22 + Lx-96  | decay, nuclear               | [c] update recipe chains this is min
 [r]|   P-23∙ +  Lx-95⁻   +[  2987.35*-   6000] => P-22 + Lx-96  | decay, nuclear               |
 
 1x
-[r]|  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52 | nuclear                      | [ ] update recipe chains this is min
+[r]|  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52 | nuclear                      | [c] update recipe chains this is min
 
 total: 98468.47
 
@@ -5159,7 +5182,7 @@ try:
   [r]|   Sr-2∙ +  Se-98∙   +[  1659.44 -   5000] => Se-100        | decay, nuclear               | used 1651.44 [c] update recipe chains
   [r]|   P-24⁻ + Se-100∙    +  3216              => P-22 + Se-102 | decay, nuclear               | used 3214.13 [c] update recipe chains
   [r]|   P-24⁻ + Se-102⁻    +  2496              => P-22 + Se-104 | decay, nuclear               | used 2476.84 [c] update recipe chains
-  [r]| Se-104⁻              + 12000              => ? V-48 + Wy-56| <---SUCCESS!! otomro 241186    used 9020.97 [ ] update recipe chains
+  [r]| Se-104⁻              + 12000              => ? V-48 + Wy-56| <---SUCCESS!! otomro 241186    used 9020.97 [c] update recipe chains
 total: 29533.32
 
 2025-05-08 May.Thu 16:28:26
@@ -7022,23 +7045,23 @@ Since
 
 Looks like Ux-48 + Lx-76 + EVEN MORE will make a nuclear reaction and possibly output: 124 67 ??
 [>] Ux-48 + Lx-76 + 20000 => ? 124 67 ??
-  [ ]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
-  [ ]|  Yu-27⁺ +  Yu-27⁺ + 1261 => Qe-54         
-  [ ]|  Qe-54⁺ +  Gy-65⁺ + 3139 => P-22 + S-97   
-  [ ]|  Xj-17⁺ +   S-97⁺ + 1834 => P-22 + Ok-92  
-  [ ]|   P-21⁺ +  Ok-92⁺ + 1998 => P-22 + Ok-91  
-  [ ]|  Mt-32⁺ +  Ok-91⁺ + 2353 => P-22 + Ek-101 
-  [ ]|  Eb-19⁺ + Ek-101⁺ + 1776 => P-22 + Vt-98  
-  [ ]|  Vt-98⁺           +    0 => Cv-98         
-  [ ]|  Cv-98ª           +    0 => P-22 + Lx-76
-  [ ] Ct-13⁺ +  S-102ª + 1711 =>   P-22 + Nm-93
-  [ ] Ro-22⁺ +  Nm-93⁺ + 2135 =>   P-22 + Dd-93
-  [ ] Ro-22⁺ +  Dd-93⁺ + 2077 =>   P-22 + Ok-93
-  [ ] Eb-19⁺ +  Ok-93⁺ + 1999 =>   P-22 + Dd-90
-  [ ] Ro-22⁺ +  Dd-90⁺ + 1886 =>   P-22 + Ok-90
-  [ ] Ro-22⁺ +  Ok-90⁺ + 1791 =>   P-22 + Da-90
-  [ ] Da-90⁺           + 5916 =>   Uq-42 + Ux-48
-  [ ] Ux-48  +  Lx-76  +20000 => ? 124 67 ??
+  [-]|   K-31⁺ +  Mt-34⁺ + 1604 => Gy-65         
+  [-]|  Yu-27⁺ +  Yu-27⁺ + 1261 => Qe-54         
+  [-]|  Qe-54⁺ +  Gy-65⁺ + 3139 => P-22 + S-97   
+  [-]|  Xj-17⁺ +   S-97⁺ + 1834 => P-22 + Ok-92  
+  [-]|   P-21⁺ +  Ok-92⁺ + 1998 => P-22 + Ok-91  
+  [-]|  Mt-32⁺ +  Ok-91⁺ + 2353 => P-22 + Ek-101 
+  [-]|  Eb-19⁺ + Ek-101⁺ + 1776 => P-22 + Vt-98  
+  [-]|  Vt-98⁺           +    0 => Cv-98         
+  [-]|  Cv-98ª           +    0 => P-22 + Lx-76
+  [-] Ct-13⁺ +  S-102ª + 1711 =>   P-22 + Nm-93
+  [-] Ro-22⁺ +  Nm-93⁺ + 2135 =>   P-22 + Dd-93
+  [-] Ro-22⁺ +  Dd-93⁺ + 2077 =>   P-22 + Ok-93
+  [-] Eb-19⁺ +  Ok-93⁺ + 1999 =>   P-22 + Dd-90
+  [-] Ro-22⁺ +  Dd-90⁺ + 1886 =>   P-22 + Ok-90
+  [-] Ro-22⁺ +  Ok-90⁺ + 1791 =>   P-22 + Da-90
+  [-] Da-90⁺           + 5916 =>   Uq-42 + Ux-48
+  [-] Ux-48  +  Lx-76  +20000 => ? 124 67 ??
 total: 51480
 
 updated:
@@ -7054,7 +7077,7 @@ updated:
   [ ]|   P-21⁺ + Cv-102ª   +[  2189.45 -   5000] => P-22 + Cv-101 | decay, nuclear               |
   [ ]|   P-21⁺ + Cv-101ª   +[  2205.75 -   5000] => P-22 + Cv-100 | decay, nuclear               |
   [ ]|   P-21⁺ + Cv-100⁺   +[  2074.88 -   5000] => P-22 + Cv-99  | decay, nuclear               |
-  [ ]|   P-21⁺ +  Cv-99ª   +[  2130.58 -   5000] => P-22 + Cv-98  | decay, nuclear               | OTOMRO 58507: P-21⁺ +  Cv-99ª   + 5200 =>   P-22 + Cv-98 + 3069.42 | used    2130.58 | decay, nuclear               |
+  [ ]|   P-21⁺ +  Cv-99ª   +[  2130.58 -   5000] => P-22 + Cv-98  | decay, nuclear               |
   [ ]|  Cv-98ª             +[     0.00 -      0] => P-22 + Lx-76  | decay                        |
   [ ]   Ux-48⁺ +  Lx-76⁺   +  20000              => ? 124 67 ??
 total: 50712.6
@@ -10601,8 +10624,16 @@ try:
 total: 15024
 
 try:
-[ ]| Kn-106⁺ + 10000 => ? Ux-48 + Ai-58 or Ux-48 + Ai-58 
-[ ]| Kn-107⁺ + 10000 => ? Ux-49 + Ai-58 or Ux-48 + Ai-59 
+[-]| Kn-106⁺ + 10000 => ? Ux-48 + Ai-58 or Ux-48 + Ai-58 
+[>]| Kn-107⁺ + 10000 => ? Ux-49 + Ai-58 or Ux-48 + Ai-59 
+   [r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44 -  20000] => Se-89         | nuclear        |
+   [r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13 -   4000] => P-22 + Nm-89  | decay, nuclear |
+   [r]|   K-31⁺ +  Nm-89⁺   +[  2560.30 -  10000] => P-22 + Z-98   | decay, nuclear |
+   [r]|  Ro-22⁺ +   Z-98⁺   +[  1955.64 -   5000] => P-22 + Cv-98  | decay, nuclear |
+   [r]|   K-31⁺ +  Cv-98ª   +[  2818.66 -  10000] => P-22 + Kn-107 | decay, nuclear | used 2459.61 [ ] update recipe chains
+   [r]| Kn-107⁺ + 10000 => ? Ux-49 + Ai-58 or Ux-48 + Ai-59  <---SUCCESS! makes Ux-49 + Ai-58 using 7407.84 nuclear
+
+   OTOMRO 254139: Kn-107⁺ + 10000 => Ux-49 + Ai-58 + 2,592.159702566815667524 using 7407.84 nuclear
 
 [>]| Kn-108⁺ + 10000 => ? Ux-49 + Ai-59 or Ux-49 + Ai-59 
   [ ]  Mt-32⁺ +  S-102ª + 2824 =>   P-22 + Aw-112 
@@ -10753,10 +10784,10 @@ try:
    [r]|  Xj-17⁺ +   S-97⁺  + 1834 =>   P-22 + Ok-92  
    [r]|   P-21⁺ +  Ok-92⁺  + 1998 =>   P-22 + Ok-91   
    [r]|  Mt-32⁺ +  Ok-91⁺  + 2353 =>   P-22 + Ek-101  
-   [r]|   P-21⁺ + Ek-101⁺  + 1846 =>   P-22 + Ek-100    used 1843.22 [ ] update recipe chains
+   [r]|   P-21⁺ + Ek-101⁺  + 1846 =>   P-22 + Ek-100    used 1843.22 [c] update recipe chains
    [r]|   P-21⁺ + Ek-100⁺  + 1784 =>   P-22 + Ek-99     used 1783.11
-   [r]|  Vi-10⁺ +  Ek-99⁺  +  917 => ⬇ Ax-109           used  915.87 [ ] update recipe chains
-   [r]| Ax-109⁺            + 6503 =>   Pg-50 + F-59     used 6493.97 [ ] update recipe chains
+   [r]|  Vi-10⁺ +  Ek-99⁺  +  917 => ⬇ Ax-109           used  915.87 [c] update recipe chains
+   [r]| Ax-109⁺            + 6503 =>   Pg-50 + F-59     used 6493.97 [c] update recipe chains
    [f]   Pg-50⁺            + 3100 => ? Ro-22 + Nd-27    used 2875.13  <---NOPE STILL TOO MUCH makes RoNd()
 total: 26563
    [r]|   K-31⁺ +  Mt-34⁺  + 1604 =>   Gy-65         |
@@ -10768,7 +10799,7 @@ total: 26563
    [r]|   P-21⁺ + Ek-101⁺  + 1844 =>   P-22 + Ek-100 |
    [r]|   P-21⁺ + Ek-100⁺  + 1784 =>   P-22 + Ek-99  |
    [r]|  Vi-10⁺ +  Ek-99⁺  +  916 => ⬇ Ax-109        |
-   [r]| Ax-109⁺            + 6494 =>   Pg-50 + F-59  | used 6493.52 [ ] update recipe chains
+   [r]| Ax-109⁺            + 6494 =>   Pg-50 + F-59  | used 6493.52 [c] update recipe chains
    [f]   Pg-50⁺            + 2800 => ? Ro-22 + Nd-27 | <---FAILED NOT ENOUGH NRG. used 140.00
 total: 26024
    [r]|   K-31⁺ +  Mt-34⁺  + 1604 =>   Gy-65         |
@@ -10785,7 +10816,7 @@ total: 26024
 total: 26084
 
 What about ratcheting down with P-21?
-   [r]|   P-21⁺ +  Mt-32⁺   +[  1138.33 -  20000] => Pg-53         | decay, nuclear               | used 1133.78 [ ] update recipe chains
+   [r]|   P-21⁺ +  Mt-32⁺   +[  1138.33 -  20000] => Pg-53         | decay, nuclear               | used 1133.78 [c] update recipe chains
    [f]|   P-21⁺ +  Pg-53⁺ + 3000 => ? Pg-52 <----NOPE makes Iu-74 using 1689.99 nuclear+decay
    [-]|   P-21⁺ +  Pg-52⁺ + 3000 => ? Pg-51
    [-]|   P-21⁺ +  Pg-51⁺ + 3000 => ? Pg-50
@@ -11068,7 +11099,7 @@ total: 39128
    [r]|  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               | minimal NRG
    [r]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               | minimal NRG
    [r]|  Mt-32⁺ +  Ok-91⁺   +[  2352.78 -   4000] => P-22 + Ek-101 | decay, nuclear               | minimal NRG
-   [r]|  Eb-19⁺ + Ek-101⁺   +[  1732.30 -  19000] => P-22 + Vt-98  | decay, nuclear               | used 1732.20 [ ] update recipe chains OTOMRO 232565
+   [r]|  Eb-19⁺ + Ek-101⁺   +[  1732.30 -  19000] => P-22 + Vt-98  | decay, nuclear               | used 1732.20 [c] update recipe chains OTOMRO 232565
    [f]|  Cl-26ª +  Vt-98⁺   +[  3027.94 -  20000] => Eh-124        | decay, nuclear               |
 CRAP I DID Cl-25 when it was supposed to be Cl-26`
    [-]| Eh-124ª             +   8857              =>   Ns-57 + Yv-67
@@ -11082,10 +11113,10 @@ total: 35633.41
    [r]|  Xj-17⁺ +   S-97⁺   +[  1833.70*-   5000] => P-22 + Ok-92  | decay, nuclear               |
    [r]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
    [r]|  Mt-32⁺ +  Ok-91⁺   +[  2352.78*-   4000] => P-22 + Ek-101 | decay, nuclear               |
-   [r]|  Eb-19⁺ + Ek-101⁺   +[  1732.20*-  19000] => P-22 + Vt-98  | decay, nuclear               | this is minimal NRG [ ] update recipe chains
-   [r]|  Cl-26ª +  Vt-98⁺   +[  3027.94 -  20000] => Eh-124        | decay, nuclear               | used 2179.34        [ ] update recipe chains
-   [r]| Eh-124ª             +   8857              => Ns-57 + Yv-67                                  used 8549.33        [ ] update recipe chains
-   [r]   Yv-67⁺             +   8000              =>?K-31 + Dx-36     <--SUCCESS                    used 4885.98        [ ] update recipe chains
+   [r]|  Eb-19⁺ + Ek-101⁺   +[  1732.20*-  19000] => P-22 + Vt-98  | decay, nuclear               | this is minimal NRG [c] update recipe chains
+   [r]|  Cl-26ª +  Vt-98⁺   +[  3027.94 -  20000] => Eh-124        | decay, nuclear               | used 2179.34        [c] update recipe chains
+   [r]| Eh-124ª             +   8857              => Ns-57 + Yv-67                                  used 8549.33        [c] update recipe chains
+   [r]   Yv-67⁺             +   8000              =>?K-31 + Dx-36     <--SUCCESS                    used 4885.98        [c] update recipe chains
 
 [>]  Cj-81⁻  + 8000   => ? Mt-38 + Dx-43 
    [-]|   P-23∙ +  Mt-35∙ + 2468 =>   Qe-58               
@@ -11270,11 +11301,11 @@ total: 45102
    [-]    W-91⁻           + 8000 => ? Lu-42 + Uq-49  or Dx-42 + Uq-49
 total: 37939
 Better:
-   [r]|  Uq-47⁻ +  Kk-71ª   +[  3237.17 -  20000] => P-22 + Se-96  |  used 3232.97 [ ] update recipe chains
-   [r]|   P-23∙ +  Se-96∙   +[  4539.15 -  10000] => P-22 + Se-97  |  used 4266.15 [ ] update recipe chains
-   [r]|   K-34∙ +  Se-97ª   +[  4212.14 -   6000] => P-22 + S-109  |  used 4211.79 [ ] update recipe chains
-   [r]|   Sr-3∙ +  S-109ª   +[  1398.30 -   5000] => P-22 + W-90   |  used 1389.75 [ ] update recipe chains
-   [r]|   P-23∙ +   W-90⁻   +[  2972.70 -   5000] => P-22 + W-91   |  used 2972.45 [ ] update recipe chains
+   [r]|  Uq-47⁻ +  Kk-71ª   +[  3237.17 -  20000] => P-22 + Se-96  |  used 3232.97 [c] update recipe chains
+   [r]|   P-23∙ +  Se-96∙   +[  4539.15 -  10000] => P-22 + Se-97  |  used 4266.15 [c] update recipe chains
+   [r]|   K-34∙ +  Se-97ª   +[  4212.14 -   6000] => P-22 + S-109  |  used 4211.79 [c] update recipe chains
+   [r]|   Sr-3∙ +  S-109ª   +[  1398.30 -   5000] => P-22 + W-90   |  used 1389.75 [c] update recipe chains
+   [r]|   P-23∙ +   W-90⁻   +[  2972.70 -   5000] => P-22 + W-91   |  used 2972.45 [c] update recipe chains
    [f]    W-91⁻ + 10000 => ? Lu-42 + Uq-49  or Dx-42 + Uq-49 <---HMMM makes Lu-41 + Uq-50 using 7593.36 nuclear
 total: 24358.00
 
@@ -11342,31 +11373,54 @@ total: 20919
    [-]   Lx-76⁺           + 5100 => ? Dx-35 + Uq-41
 total: 20419
 Better:
-   [r]|  Ro-22⁺ +  Gy-67ª +[  1813.39 -  20000] => Se-89         | used 1810.59 [ ] update recipe chains
-   [r]|  Ro-22⁺ +  Se-89⁺ +[  2199.83 -   4000] => P-22 + Nm-89  | used 2109.83 [ ] update recipe chains
-   [r]|   K-31⁺ +  Nm-89⁺ +[  2564.75 -  10000] => P-22 + Z-98   | used 2560.50 [ ] update recipe chains
-   [r]|  Ro-22⁺ +   Z-98⁺ +[  2107.84 -   5000] => P-22 + Cv-98  | used 1963.24 [ ] update recipe chains
+   [r]|  Ro-22⁺ +  Gy-67ª +[  1813.39 -  20000] => Se-89         | used 1810.59 [x] update recipe chains
+   [r]|  Ro-22⁺ +  Se-89⁺ +[  2199.83 -   4000] => P-22 + Nm-89  | used 2109.83 [x] update recipe chains
+   [r]|   K-31⁺ +  Nm-89⁺ +[  2564.75 -  10000] => P-22 + Z-98   | used 2560.50 [x] update recipe chains
+   [r]|  Ro-22⁺ +   Z-98⁺ +[  2107.84 -   5000] => P-22 + Cv-98  | used 1963.24 [x] update recipe chains
    [r]|  Cv-98ª           +[     0.00 -      0] => P-22 + Lx-76  |
    [f]   Lx-76⁺           +   5100 => ? Dx-35 + Uq-41  <----NOPE NOT ENOUGH makes W-76 using 255.00 decay
 total: 13939.00
-   [*]|  Ro-22⁺ +  Gy-67ª +[  1810.59 -  20000] => Se-89         | used 1810.59 [ ] update recipe chains
-   [ ]|  Ro-22⁺ +  Se-89⁺ +[  2109.83 -   4000] => P-22 + Nm-89  | used 2109.83 [ ] update recipe chains
-   [ ]|   K-31⁺ +  Nm-89⁺ +[  2560.50 -  10000] => P-22 + Z-98   | used 2560.50 [ ] update recipe chains
-   [ ]|  Ro-22⁺ +   Z-98⁺ +[  1963.24 -   5000] => P-22 + Cv-98  | used 1963.24 [ ] update recipe chains
-   [ ]|  Cv-98ª           +[     0.00 -      0] => P-22 + Lx-76  |
-   [ ]   Lx-76⁺           +   5200 => ? Dx-35 + Uq-41 
-total: 13939.00
+   [r]|  Ro-22⁺ +  Gy-67ª +[  1810.59 -  20000] => Se-89         | used 1810.44 [c] update recipe chains
+   [r]|  Ro-22⁺ +  Se-89⁺ +[  2109.83 -   4000] => P-22 + Nm-89  | used 2105.33 [x] update recipe chains
+   [r]|   K-31⁺ +  Nm-89⁺ +[  2560.50 -  10000] => P-22 + Z-98   | used 2560.30 [c] update recipe chains
+   [r]|  Ro-22⁺ +   Z-98⁺ +[  1963.24 -   5000] => P-22 + Cv-98  | used 1956.04 [x] update recipe chains
+   [r]|  Cv-98ª           +[     0.00 -      0] => P-22 + Lx-76  |
+   [f]   Lx-76⁺           +   5200 => ? Dx-35 + Uq-41  <-----DAMN NOPE TOO MUCH makes UqDx(Dx-35,Uq-41) using 5180.87 nuclear+metallic
+total: 13642.00
+make Z-98:
+   [r]|  Ro-22⁺ +  Gy-67ª +[  1810.59 -  20000] => Se-89         |
+   [r]|  Ro-22⁺ +  Se-89⁺ +[  2109.83 -   4000] => P-22 + Nm-89  | used 2105.13 [c] update recipe chains
+   [r]|   K-31⁺ +  Nm-89⁺ +[  2560.50 -  10000] => P-22 + Z-98   |
+total: 6479
+make Cv-98:
+   [r]|  Ro-22⁺ +  Gy-67ª +[  1810.59 -  20000] => Se-89         |
+   [r]|  Ro-22⁺ +  Se-89⁺ +[  2109.83 -   4000] => P-22 + Nm-89  |
+   [r]|   K-31⁺ +  Nm-89⁺ +[  2560.50 -  10000] => P-22 + Z-98   |
+   [r]|  Ro-22⁺ +   Z-98⁺ +[  1956.04 -   5000] => P-22 + Cv-98  | used 1955.69 [x] update recipe chains
+total: 8435
+|
+| So i need to get between 5100 and 5180 to properly fission it and get Dx-35
+|
+   [r]|  Ro-22⁺ +  Gy-67ª +[  1810.44 -  20000] => Se-89         |
+   [r]|  Ro-22⁺ +  Se-89⁺ +[  2105.13 -   4000] => P-22 + Nm-89  |
+   [r]|   K-31⁺ +  Nm-89⁺ +[  2560.30 -  10000] => P-22 + Z-98   |
+   [r]|  Ro-22⁺ +   Z-98⁺ +[  1955.69 -   5000] => P-22 + Cv-98  | used 1955.64 [c] update recipe chains
+   [r]|  Cv-98ª           +[     0.00 -      0] => P-22 + Lx-76  |
+   [r]   Lx-76⁺           +   5160 => ? Dx-35 + Uq-41 <---SUCCESS!! used 5114.62 nuclear
+total: 13590
+
+   OTOMRO 253730: Lx-76⁺ + 5160 => Dx-35 + Uq-41 + 45.376629089403010653 using 5114.62 nuclear
 
 [>]  Lx-77⁺  + 5000   => ? Dx-35 + Uq-42
-   [ ]|  Cl-25⁺ +  S-102ª + 2674 =>   P-22 + Cv-105 
-   [ ]|   P-21⁺ + Cv-105ª + 2402 =>   P-22 + Cv-104 
-   [ ]|   P-21⁺ + Cv-104ª + 2373 =>   P-22 + Cv-103 
-   [ ]|   P-21⁺ + Cv-103ª + 2341 =>   P-22 + Cv-102 
-   [ ]|   P-21⁺ + Cv-102ª + 2324 =>   P-22 + Cv-101 
-   [ ]|   P-21⁺ + Cv-101ª + 2339 =>   P-22 + Cv-100 
-   [ ]|   P-21⁺ + Cv-100⁺ + 2215 =>   P-22 + Cv-99  
-   [ ]|  Cv-99ª           +    0 =>   P-22 + Lx-77  
-   [ ]   Lx-77⁺           + 5000 => ? Dx-35 + Uq-42
+   [-]|  Cl-25⁺ +  S-102ª + 2674 =>   P-22 + Cv-105 
+   [-]|   P-21⁺ + Cv-105ª + 2402 =>   P-22 + Cv-104 
+   [-]|   P-21⁺ + Cv-104ª + 2373 =>   P-22 + Cv-103 
+   [-]|   P-21⁺ + Cv-103ª + 2341 =>   P-22 + Cv-102 
+   [-]|   P-21⁺ + Cv-102ª + 2324 =>   P-22 + Cv-101 
+   [-]|   P-21⁺ + Cv-101ª + 2339 =>   P-22 + Cv-100 
+   [-]|   P-21⁺ + Cv-100⁺ + 2215 =>   P-22 + Cv-99  
+   [-]|  Cv-99ª           +    0 =>   P-22 + Lx-77  
+   [-]   Lx-77⁺           + 5000 => ? Dx-35 + Uq-42
 total: 21668
 
 [-]  Lx-79⁺  + 5000   => ? Dx-36 + Uq-43

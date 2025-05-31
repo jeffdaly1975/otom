@@ -446,7 +446,8 @@ my @otom_isotopes = (
  [ "Lu-39" ,  "39 18 Lu",  18,   17770898429300514866953019959140445394780618526300359389596592406567986353447   , "beta-"      , "0.872" ],
  [ "Lu-40" ,  "40 18 Lu",  18,   109375023317533580029437499013130894698186182991304078264122682635715130918996  , "beta-"      , "0.825" ],
  [ "Lu-41" ,  "41 18 Lu",  18,   4183078784952839040552494396359731858479390646415233868781805696195972572799    , "beta-"      , "0.720" ], # OTOMRO 93178
- [ "Dx-36" ,  "36 19 Dx",  19,   57998330106176535539294956193654108667721146949521263687778023947347221265849   , "beta+"      , "0.695" ], # OTOMRO 232740: Yv-67⁺  + 8000 => K-31 + Dx-36 + 3114.019444955099515937  using 4885.98 nuclear
+ [ "Dx-35" ,  "35 19 Dx",  19,   31039818731202132676783153493963779540793320297609333235972804625570424754916   , "beta+"      , "0.557" ], # OTOMRO 253730: Lx-76⁺ + 5160 => Dx-35 + Uq-41 +   45.376629089403010653 using 5114.62 nuclear            
+ [ "Dx-36" ,  "36 19 Dx",  19,   57998330106176535539294956193654108667721146949521263687778023947347221265849   , "beta+"      , "0.695" ], # OTOMRO 232740: Yv-67⁺ + 8000 => K-31  + Dx-36 + 3114.019444955099515937 using 4885.98 nuclear
  [ "Dx-37" ,  "37 19 Dx",  19,   81081030989623570162172390822015261296148912088476307132524116513569643202957   , "beta+"      , "0.823" ],
  [ "Dx-38" ,  "38 19 Dx",  19,   81542157514724032984656876876058490962004414713689403353752920723431667480150   , "beta+"      , "0.872" ],
  [ "Dx-39" ,  "39 19 Dx",  19,   89012621968273857922480748782337164221907506459423773969224282337514441117362   , "stable"     , "1.840" ],
@@ -575,6 +576,7 @@ my @otom_isotopes = (
  [ "Ns-65" ,  "65 30 Ns",  30,   109734318980949933321900364654440865795003441158629908383534789180984356372804  , "beta-"      , "0.912" ],
  [ "Ns-66" ,  "66 30 Ns",  30,   78016425010283277826150331716227677864026046267268346773593601069718714356913   , "beta-"      , "0.881" ], # OTOMRO 200452
  [ "Ns-67" ,  "67 30 Ns",  30,   95804942618153154887866703609949977109458808016686966989415631618632678379841   , "beta-"      , "0.822" ], # OTOMRO 106910
+ [ "Ai-58" ,  "58 31 Ai",  31,   11662758890532898499795085243156557035131180463105211367521539940785524350457   , "beta+"      , "0.581" ], # OTOMRO 254139: Kn-107⁺ + 10000 => Ux-49 + Ai-58 + 2,592.159702566815667524 using 7407.84 nuclear
  [ "Ai-59" ,  "59 31 Ai",  31,   57324780250548048634409969717508544305131397489399337258870068229152114563793   , "beta+"      , "0.722" ], # OTOMRO 129995
  [ "Ai-60" ,  "60 31 Ai",  31,   5879743364829524668164629590898714631063938964894236732199440373911193611377    , "beta+"      , "0.877" ], # OTOMRO 121303
  [ "Ai-61" ,  "61 31 Ai",  31,   52068808416467553783091661615798875550913927497841707338547501142043845134406   , "beta+"      , "0.866" ],
@@ -1661,7 +1663,7 @@ $db{"7162"}
 	 'energy_in'      => 40,
 
 	 'otoms_out'      => 'Fj-37 + Fw-25 + FjFw₂(Fj-37>Fw-25,Fw-25)',
-	'otoms_out_sorted'=> 'Fw-25 + Fj-37 + FjFw₂(Fj-37>Fw-25,Fw-25) ',
+	'otoms_out_sorted'=> 'Fw-25 + Fj-37 + FjFw₂(Fj-37>Fw-25,Fw-25)',  # [ ] Does this need 0, 1 or 2 spaces at end
 	 'otoms_out_list' => [ 'Fj-37', 'Fw-25', 'FjFw₂(Fj-37>Fw-25,Fw-25)' ],
 	 'protons_in'     => 69,
 	 'protons_out'    => 69,
@@ -1793,7 +1795,7 @@ $db{"7168"}
 	 'energy_in'      => 100,
 
 	 'otoms_out'      => 'W-4 + Cq-7 + Ju₃(Ju-2,Ju-1>Ju-1)',
-	'otoms_out_sorted'=> 'W-4 + Cq-7 + Ju₃(Ju-2,Ju-1>Ju-1) ',
+	'otoms_out_sorted'=> 'W-4 + Cq-7 + Ju₃(Ju-2,Ju-1>Ju-1)',  # [ ] Does this need 0, 1 or 2 spaces at end
 	 'otoms_out_list' => [ 'W-4', 'Cq-7', 'Ju₃(Ju-2,Ju-1>Ju-1)'],
 	 'protons_in'     => 8,
 	 'protons_out'    => 8,
@@ -1948,7 +1950,7 @@ $db{"7175"}
 	 'energy_in'      => 200,
 
 	 'otoms_out'      => 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)',
-	'otoms_out_sorted'=> 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1) ',
+	'otoms_out_sorted'=> 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)',  # [ ] Does this need 0, 1 or 2 spaces at end
 	 'otoms_out_list' => [ 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)'],
 	 'protons_in'     => 34,
 	 'protons_out'    => 32,
@@ -2889,6 +2891,14 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
     # calculate NRG used
     $db{$otomro}{"energy_used"} = $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"};
 
+    $used_energy= $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"} ,
+
+
+# [ ] bug: sometimes the output has the NRG used as "-0.00". Stop that.
+#|    46970 |bohr    |   Sr-2∙ +  Mt-35∙                               +        0 =>   Sr-2 + Mt-35                                                                     +       0.00 |      -0.00 | none                         | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x7e676460bd59eb8a5e4f3d98a1162564797df560ed13640d08d18d64d4cfc4ae | 0x2217ffe73229963c03686bcc1a51599f7bee3c7c9f5e1f269609503dc3be3d53 |
+    if ($used_energy eq "-0.00"){  # deal with a bug
+      $used_energy= 0;
+    }
 
     my $this_pad = "          " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
     printf { $reactions_fhs{$universe_names_lookup{$db{$otomro}{"universe"}}} }  "| %8d%s|%-8s| %s + %8d => %s %-80.80s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
@@ -2904,7 +2914,7 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
    $db{$otomro}{"otoms_out_sorted"} , # I THINK THIS SHOULD BE SORTED FOR DEDUPLICATION
    " " x $db{$otomro}{"subscripts"} ,
    $db{$otomro}{"energy_out"} ,
-   $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"} ,
+   $energy_used,
    $db{$otomro}{"type"}       ,
    $db{$otomro}{"chemist"}    ,
    $db{$otomro}{"initiate_tx"},
