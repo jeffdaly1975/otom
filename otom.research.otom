@@ -1,91 +1,91 @@
 2025-06-01 Jun.Sun 13:45:57 With a bunch of vim muscle I worked up some macros and regexes to search the massaged Alpha and Bohr reactions for places where lesser chains are producing greater chains, saving at least 1 chain link. It found 47 right away in Bohr and zero in Alpha. I already got them.
 
-[ ] These may be shorter chains:
-   |universe| input otoms        [    NRG input range  ] => output otoms                    | reaction type              |OTOROM min, max     |
-[ ]|bohr    |   As-5⁺ + Kn-112ª +[    904.58 -     5000] =>   P-22 + Da-95                  | decay, nuclear             |  183680  ,   40383*|
+[.] These may be shorter chains:
+   |universe| input otoms          [ NRG input range  ] => output otoms  | reaction type                |OTOROM min, max     |
+[c]|bohr    |   As-5⁺ + Kn-112ª   +[   904.58 -   5000] => P-22 + Da-95  | decay, nuclear               | OTOMRO 183680  ,   OTOMRO 40383*|
 
-[ ]|bohr    |   P-21⁺ +   Z-97⁺ +[   1993.34 -     7500] =>   P-22 + Z-96                   | decay, nuclear             |  122928  ,   53438*|
+[c]|bohr    |   P-21⁺ +   Z-97⁺   +[  1993.34 -   7500] => P-22 + Z-96   | decay, nuclear               | OTOMRO 122928  ,   OTOMRO 53438*|
 
-[ ]|bohr    |   P-21⁺ +  Cv-97⁺ +[   1926.81 -     7500] => ⬇ Go-118                        | decay, nuclear             |  122635  ,   53595*|
+[c]|bohr    |   P-21⁺ +  Cv-97⁺   +[  1926.81 -   7500] =>⬇Go-118        | decay, nuclear               | OTOMRO 122635  ,   OTOMRO 53595*|
 
-[ ]|bohr    |   P-21⁺ +  Z-101ª +[   2211.93 -     6000] =>   P-22 + Z-100                  | decay, nuclear             |  184009  ,   81578 |
+[c]|bohr    |   P-21⁺ +  Z-101ª   +[  2211.93 -   6000] => P-22 + Z-100  | decay, nuclear               | OTOMRO 184009  ,   OTOMRO 81578 |
 
-[ ]|bohr    |   P-21⁺ + Aw-106ª +[   2089.71 -    10000] =>   P-22 + Aw-105                 | decay, nuclear             |  204359  ,   55699*|
+[c]|bohr    |   P-21⁺ + Aw-106ª   +[  2089.71 -  10000] => P-22 + Aw-105 | decay, nuclear               | OTOMRO 204359  ,   OTOMRO 55699*|
 
-[ ]|bohr    |   P-21⁺ + Ha-111ª +[   2183.58 -     5000] =>   P-22 + Ha-110                 | decay, nuclear             | 204295*  ,         |
+[c]|bohr    |   P-21⁺ + Ha-111ª   +[  2183.58 -   5000] => P-22 + Ha-110 | decay, nuclear               | OTOMRO 204295*  ,         |
 
-[ ]|bohr    |   P-21⁺ + Ji-104⁺ +[   2192.12 -     9000] =>   P-22 + Ji-103                 | decay, nuclear             |   87297  ,   81914 |
+[c]|bohr    |   P-21⁺ + Ji-104⁺   +[  2192.12 -   9000] => P-22 + Ji-103 | decay, nuclear               | OTOMRO 87297  ,   OTOMRO 81914 |
 
-[ ]|bohr    |   P-21⁺ + Kn-109ª +[   2079.19 -     5000] =>   P-22 + Kn-108                 | decay, nuclear             |   84162  ,   55760*|
+[c]|bohr    |   P-21⁺ + Kn-109ª   +[  2079.19 -   5000] => P-22 + Kn-108 | decay, nuclear               | OTOMRO 84162  ,   OTOMRO 55760*|
 
-[ ]|bohr    |  Ro-22⁺ +  Cv-99ª +[   1917.58 -     8000] =>   P-22 + Vt-99                  | decay, nuclear             |  192134  ,   81851*|
-[ ]|bohr    |   P-21⁺ + Vt-100⁺ +[   1959.71 -     5000] =>   P-22 + Vt-99                  | decay, nuclear             |   63345* ,   90656 |
-[ ]|bohr    |  Ro-23ª +  Cv-98ª +[   2432.57 -    10000] =>   P-22 + Vt-99                  | decay, nuclear             |   70432* ,   94695 |
+[c]|bohr    |  Ro-23ª +  Cv-98ª   +[  2432.57 -  10000] => P-22 + Vt-99  | decay, nuclear               | OTOMRO 70432* ,   OTOMRO 94695 |
+[c]|bohr    |  Ro-22⁺ +  Cv-99ª   +[  1917.58 -   8000] => P-22 + Vt-99  | decay, nuclear               | OTOMRO 192134  ,   OTOMRO 81851*|
+[x]|bohr    |   P-21⁺ + Vt-100⁺   +[  1959.71 -   5000] => P-22 + Vt-99  | decay, nuclear               | OTOMRO 63345* ,   OTOMRO 90656 |
 
-[ ]|bohr    |   P-21⁺ + Vt-102⁺ +[   2193.36 -     5000] =>   P-22 + Vt-101                 | decay, nuclear             |   63330* ,   90630 |
-[ ]|bohr    |  Ro-24ª +  Cv-99ª +[   2623.56 -    10000] =>   P-22 + Vt-101                 | decay, nuclear             | 104323*  ,         |
-[ ]|bohr    |  Vi-12∙ + Ha-111ª +[   2225.34 -     7000] =>   P-22 + Vt-101                 | decay, nuclear             |  74648*  ,         |
+[c]|bohr    |   P-21⁺ + Vt-102⁺   +[  2193.36 -   5000] => P-22 + Vt-101 | decay, nuclear               | OTOMRO 63330* ,   OTOMRO 90630 |
+[x]|bohr    |  Ro-24ª +  Cv-99ª   +[  2623.56 -  10000] => P-22 + Vt-101 | decay, nuclear               | OTOMRO 104323*  ,         |
+[x]|bohr    |  Vi-12∙ + Ha-111ª   +[  2225.34 -   7000] => P-22 + Vt-101 | decay, nuclear               | OTOMRO 74648*  ,         |
 
-[ ]|bohr    |   P-23∙ +   U-95ª +[   3173.17 -     5000] =>   P-22 + U-96                   | decay, nuclear             | 210832*  ,         |
+[c]|bohr    |   P-23∙ +   U-95ª   +[  3173.17 -   5000] => P-22 + U-96   | decay, nuclear               | OTOMRO 210832*  ,         |
 
-[ ]|bohr    |   P-23∙ +  Se-98∙ +[   4517.02 -    10000] =>   P-22 + Se-99                  | decay, nuclear             | 205220*  ,         |
-[ ]|bohr    |   P-24⁻ +  Se-97ª +[   2672.28 -     5000] =>   P-22 + Se-99                  | decay, nuclear             |  250175* ,  253104 |
+[c]|bohr    |   P-23∙ +  Se-98∙   +[  4517.02 -  10000] => P-22 + Se-99  | decay, nuclear               | OTOMRO 205220*  ,         |
+[c]|bohr    |   P-24⁻ +  Se-97ª   +[  2672.28 -   5000] => P-22 + Se-99  | decay, nuclear               | OTOMRO 250175* ,  OTOMRO 253104 |
 
-[ ]|bohr    |   P-23∙ + Nm-102ª +[   3293.15 -     5000] =>   P-22 + Nm-103                 | decay, nuclear             | 192968*  ,         |
-[ ]|bohr    |   P-24⁻ + Nm-101⁺ +[   2561.54 -     4000] =>   P-22 + Nm-103                 | decay, nuclear             |  204592* ,  204602 |
+[c]|bohr    |   P-24⁻ + Nm-101⁺   +[  2561.54 -   4000] => P-22 + Nm-103 | decay, nuclear               | OTOMRO 204592* ,  OTOMRO 204602 |
+[x]|bohr    |   P-23∙ + Nm-102ª   +[  3293.15 -   5000] => P-22 + Nm-103 | decay, nuclear               | OTOMRO 192968*  ,         |
 
-[ ]|bohr    |   P-24⁻ +   U-95ª +[   2460.23 -     5000] =>   P-22 + U-97                   | decay, nuclear             |  217399  ,  210830 |
+[c]|bohr    |   P-24⁻ +   U-95ª   +[  2460.23 -   5000] => P-22 + U-97   | decay, nuclear               | OTOMRO 217399  ,  OTOMRO 210830 |
 
-[ ]|bohr    |   P-24⁻ +  Lx-92∙ +[   3060.28 -     5000] =>   P-22 + Lx-94                  | decay, nuclear             |  240848  ,  227968 |
+[ ]|bohr    |   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94  | decay, nuclear               | OTOMRO 240848  ,  OTOMRO 227968 |
 
-[ ]|bohr    |   P-24⁻ + Da-104ª +[   2704.39 -     4000] =>   P-22 + Da-106                 | decay, nuclear             | 178509*  ,         |
+[ ]|bohr    |   P-24⁻ + Da-104ª   +[  2704.39 -   4000] => P-22 + Da-106 | decay, nuclear               | OTOMRO 178509*  ,         |
 
-[ ]|bohr    |   P-24⁻ + Dd-101ª +[   2569.96 -     4000] =>   P-22 + Dd-103                 | decay, nuclear             |  204657* ,  204662 |
-[ ]|bohr    |  Eb-22∙ + Ok-103⁻ +[   3222.57 -     5000] =>   P-22 + Dd-103                 | decay, nuclear             | 253156*  ,         |
+[ ]|bohr    |   P-24⁻ + Dd-101ª   +[  2569.96 -   4000] => P-22 + Dd-103 | decay, nuclear               | OTOMRO 204657* ,  OTOMRO 204662 |
+[ ]|bohr    |  Eb-22∙ + Ok-103⁻   +[  3222.57 -   5000] => P-22 + Dd-103 | decay, nuclear               | OTOMRO 253156*  ,         |
 
-[ ]|bohr    |   P-24⁻ + Se-104⁻ +[    300.00 -    10000] => ⬆ Ro-24 + Nm-104                | decay                      |  216760  ,  143702*|
+[ ]|bohr    |   P-24⁻ + Se-104⁻   +[   300.00 -  10000] =>⬆Ro-24 + Nm-104| decay                        | OTOMRO 216760  ,  OTOMRO 143702*|
 
-[ ]|bohr    |   Sr-1∙ + Se-101∙ +[   1622.49 -     5000] =>   P-22 + Yv-80                  | decay, nuclear             |   77856* ,   79585 |
-[ ]|bohr    |   Sr-2∙ + Se-100∙ +[   1791.84 -     5000] =>   P-22 + Yv-80                  | decay, nuclear             |  79641*  ,         |
+[ ]|bohr    |   Sr-1∙ + Se-101∙   +[  1622.49 -   5000] => P-22 + Yv-80  | decay, nuclear               | OTOMRO 77856* ,   OTOMRO 79585 |
+[ ]|bohr    |   Sr-2∙ + Se-100∙   +[  1791.84 -   5000] => P-22 + Yv-80  | decay, nuclear               | OTOMRO 79641*  ,         |
 
-[ ]|bohr    |   Sr-2∙ +  Cj-81⁻ +[   1328.68 -     5000] => ⬆ D-83                          | decay, nuclear             |  79621*  ,         |
+[ ]|bohr    |   Sr-2∙ +  Cj-81⁻   +[  1328.68 -   5000] =>⬆D-83          | decay, nuclear               | OTOMRO 79621*  ,         |
 
-[ ]|bohr    |  Cv-97⁺           +[   6986.31 -    10000] =>   Wy-45 + Qe-52                 | nuclear                    | 255627*  ,         |
-[ ]|bohr    |  Se-84⁺           +[   5925.33 -    10000] =>   V-39 + Wy-45                  | nuclear                    |  134282  ,   98100*|
+[x]|bohr    |  Cv-97⁺             +[  6986.31 -  10000] => Wy-45 + Qe-52 | nuclear                      | OTOMRO 255627*  ,         |
+[x]|bohr    |  Se-84⁺             +[  5925.33 -  10000] => V-39 + Wy-45  | nuclear                      | OTOMRO 134282  ,   OTOMRO 98100*|
 
-[ ]|bohr    |  Gy-64⁺ +  Gy-66ª +[   3452.64 -    10000] =>   P-22 + Ji-108                 | decay, nuclear             |  191968  ,   82926*|
+[ ]|bohr    |  Gy-64⁺ +  Gy-66ª   +[  3452.64 -  10000] => P-22 + Ji-108 | decay, nuclear               | OTOMRO 191968  ,   OTOMRO 82926*|
 
-[ ]|bohr    |  Ns-58⁺ +  Yv-69⁺ +[   3348.64 -     7000] =>   P-22 + Ek-105                 | decay, nuclear             |  188699  ,   58429*|
+[ ]|bohr    |  Ns-58⁺ +  Yv-69⁺   +[  3348.64 -   7000] => P-22 + Ek-105 | decay, nuclear               | OTOMRO 188699  ,   OTOMRO 58429*|
 
-[ ]|bohr    |  Qe-52⁺           +[   3471.96 -    10000] =>   Cl-24 + Nd-28                 | nuclear                    | 102921*  ,         |
+[ ]|bohr    |  Qe-52⁺             +[  3471.96 -  10000] => Cl-24 + Nd-28 | nuclear                      | OTOMRO 102921*  ,         |
 
-[ ]|bohr    |  Ro-22⁺ +   N-83⁺ +[   2190.22 -     5000] =>   P-22 + U-83                   | decay, nuclear             | 210704*  ,         |
+[ ]|bohr    |  Ro-22⁺ +   N-83⁺   +[  2190.22 -   5000] => P-22 + U-83   | decay, nuclear               | OTOMRO 210704*  ,         |
 
-[ ]|bohr    |  Ro-22⁺ +   S-95⁺ +[   2122.76 -     5000] =>   P-22 + Z-95                   | decay, nuclear             |  250211* ,  250278 |
+[ ]|bohr    |  Ro-22⁺ +   S-95⁺   +[  2122.76 -   5000] => P-22 + Z-95   | decay, nuclear               | OTOMRO 250211* ,  OTOMRO 250278 |
 
-[ ]|bohr    |  Ro-22⁺ +  Cv-97⁺ +[   1861.03 -    20000] => ⬇ X-119                         | decay, nuclear             |   84188  ,   81874*|
+[ ]|bohr    |  Ro-22⁺ +  Cv-97⁺   +[  1861.03 -  20000] =>⬇X-119         | decay, nuclear               | OTOMRO 84188  ,   OTOMRO 81874*|
 
-[ ]|bohr    |  Ro-22⁺ +  Cv-98ª +[   2021.78 -    10000] =>   P-22 + Vt-98                  | decay, nuclear             |   82125  ,   82098*|
+[ ]|bohr    |  Ro-22⁺ +  Cv-98ª   +[  2021.78 -  10000] => P-22 + Vt-98  | decay, nuclear               | OTOMRO 82125  ,   OTOMRO 82098*|
 
-[ ]|bohr    |  Ro-22⁺ +  Da-98ª +[   2355.71 -     5000] =>   P-22 + S-98                   | decay, nuclear             |  252854* ,  252856 |
+[ ]|bohr    |  Ro-22⁺ +  Da-98ª   +[  2355.71 -   5000] => P-22 + S-98   | decay, nuclear               | OTOMRO 252854* ,  OTOMRO 252856 |
 
-[ ]|bohr    |  Ro-22⁺ +  Dd-90⁺ +[   1885.66 -     3000] =>   P-22 + Ok-90                  | decay, nuclear             |  129985  ,   55762 |
+[ ]|bohr    |  Ro-22⁺ +  Dd-90⁺   +[  1885.66 -   3000] => P-22 + Ok-90  | decay, nuclear               | OTOMRO 129985  ,   OTOMRO 55762 |
+[ ]|bohr    |  Vi-10⁺ + Vt-102⁺   +[  1214.03 -   3000] => P-22 + Ok-90  | decay, nuclear               | OTOMRO 55955* ,   OTOMRO 74356 |
 
-[ ]|bohr    |  Ro-22⁺ +  Ok-90⁺ +[   1790.06 -     6000] =>   P-22 + Da-90                  | decay, nuclear             |  107988  ,   53585 |
+[ ]|bohr    |  Ro-22⁺ +  Ok-90⁺   +[  1790.06 -   6000] => P-22 + Da-90  | decay, nuclear               | OTOMRO 107988  ,   OTOMRO 53585 |
+[ ]|bohr    |  Ro-23ª +  Ok-89⁺   +[  1982.96 -   3000] => P-22 + Da-90  | decay, nuclear               | OTOMRO 160761*  ,         |
 
-[ ]|bohr    |  Ro-22⁺ + Ji-104⁺ +[   2383.46 -    10000] =>   P-22 + Aw-104                 | decay, nuclear             | 161198*  ,         |
+[ ]|bohr    |  Ro-22⁺ + Ji-104⁺   +[  2383.46 -  10000] => P-22 + Aw-104 | decay, nuclear               | OTOMRO 161198*  ,         |
 
-[ ]|bohr    |  Ro-22⁺ + Kn-108⁺ +[   3312.50 -    30000] =>   P-22 + Ha-108                 | decay, nuclear             |  82184*  ,         |
+[ ]|bohr    |  Ro-22⁺ + Kn-108⁺   +[  3312.50 -  30000] => P-22 + Ha-108 | decay, nuclear               | OTOMRO 82184*  ,         |
 
-[ ]|bohr    |  Ro-22⁺ + Kn-109ª +[   2270.92 -     8000] =>   P-22 + Ha-109                 | decay, nuclear             |  81929*  ,         |
+[ ]|bohr    |  Ro-22⁺ + Kn-109ª   +[  2270.92 -   8000] => P-22 + Ha-109 | decay, nuclear               | OTOMRO 81929*  ,         |
 
-[ ]|bohr    |  Ro-23ª +  Ok-89⁺ +[   1982.96 -     3000] =>   P-22 + Da-90                  | decay, nuclear             | 160761*  ,         |
 
-[ ]|bohr    |  Ro-26∙ +  Lx-95⁻ +[   3336.25 -     6000] => ⬆ Ek-121                        | decay, nuclear             | 217617*  ,         |
+[ ]|bohr    |  Ro-26∙ +  Lx-95⁻   +[  3336.25 -   6000] =>⬆Ek-121        | decay, nuclear               | OTOMRO 217617*  ,         |
 
-[ ]|bohr    |  Vi-10⁺ + Vt-102⁺ +[   1214.03 -     3000] =>   P-22 + Ok-90                  | decay, nuclear             |   55955* ,   74356 |
 
-[ ]|bohr    | Se-102⁻           +[   9404.39 -    15000] =>   V-47 + Wy-55                  | nuclear                    | 215488*  ,         |
+[ ]|bohr    | Se-102⁻             +[  9404.39 -  15000] => V-47 + Wy-55  | nuclear                      | OTOMRO 215488*  ,         |
 
 It even includes the 4 I previously noted about OTOMRO 253156, 250211, 250175, 204657
 
