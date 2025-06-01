@@ -2891,7 +2891,7 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
     # calculate NRG used
     $db{$otomro}{"energy_used"} = $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"};
 
-    $used_energy= $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"} ,
+    my $used_energy= $db{$otomro}{"energy_in"} - $db{$otomro}{"energy_out"} ;
 
 
 # [ ] bug: sometimes the output has the NRG used as "-0.00". Stop that.
@@ -2914,7 +2914,7 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
    $db{$otomro}{"otoms_out_sorted"} , # I THINK THIS SHOULD BE SORTED FOR DEDUPLICATION
    " " x $db{$otomro}{"subscripts"} ,
    $db{$otomro}{"energy_out"} ,
-   $energy_used,
+   $used_energy,
    $db{$otomro}{"type"}       ,
    $db{$otomro}{"chemist"}    ,
    $db{$otomro}{"initiate_tx"},

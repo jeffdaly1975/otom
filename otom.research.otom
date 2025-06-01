@@ -1,3 +1,136 @@
+2025-06-01 Jun.Sun 13:45:57 With a bunch of vim muscle I worked up some macros and regexes to search the massaged Alpha and Bohr reactions for places where lesser chains are producing greater chains, saving at least 1 chain link. It found 47 right away in Bohr and zero in Alpha. I already got them.
+
+[ ] These may be shorter chains:
+   |universe| input otoms        [    NRG input range  ] => output otoms                    | reaction type              |OTOROM min, max     |
+[ ]|bohr    |   As-5⁺ + Kn-112ª +[    904.58 -     5000] =>   P-22 + Da-95                  | decay, nuclear             |  183680  ,   40383*|
+
+[ ]|bohr    |   P-21⁺ +   Z-97⁺ +[   1993.34 -     7500] =>   P-22 + Z-96                   | decay, nuclear             |  122928  ,   53438*|
+
+[ ]|bohr    |   P-21⁺ +  Cv-97⁺ +[   1926.81 -     7500] => ⬇ Go-118                        | decay, nuclear             |  122635  ,   53595*|
+
+[ ]|bohr    |   P-21⁺ +  Z-101ª +[   2211.93 -     6000] =>   P-22 + Z-100                  | decay, nuclear             |  184009  ,   81578 |
+
+[ ]|bohr    |   P-21⁺ + Aw-106ª +[   2089.71 -    10000] =>   P-22 + Aw-105                 | decay, nuclear             |  204359  ,   55699*|
+
+[ ]|bohr    |   P-21⁺ + Ha-111ª +[   2183.58 -     5000] =>   P-22 + Ha-110                 | decay, nuclear             | 204295*  ,         |
+
+[ ]|bohr    |   P-21⁺ + Ji-104⁺ +[   2192.12 -     9000] =>   P-22 + Ji-103                 | decay, nuclear             |   87297  ,   81914 |
+
+[ ]|bohr    |   P-21⁺ + Kn-109ª +[   2079.19 -     5000] =>   P-22 + Kn-108                 | decay, nuclear             |   84162  ,   55760*|
+
+[ ]|bohr    |  Ro-22⁺ +  Cv-99ª +[   1917.58 -     8000] =>   P-22 + Vt-99                  | decay, nuclear             |  192134  ,   81851*|
+[ ]|bohr    |   P-21⁺ + Vt-100⁺ +[   1959.71 -     5000] =>   P-22 + Vt-99                  | decay, nuclear             |   63345* ,   90656 |
+[ ]|bohr    |  Ro-23ª +  Cv-98ª +[   2432.57 -    10000] =>   P-22 + Vt-99                  | decay, nuclear             |   70432* ,   94695 |
+
+[ ]|bohr    |   P-21⁺ + Vt-102⁺ +[   2193.36 -     5000] =>   P-22 + Vt-101                 | decay, nuclear             |   63330* ,   90630 |
+[ ]|bohr    |  Ro-24ª +  Cv-99ª +[   2623.56 -    10000] =>   P-22 + Vt-101                 | decay, nuclear             | 104323*  ,         |
+[ ]|bohr    |  Vi-12∙ + Ha-111ª +[   2225.34 -     7000] =>   P-22 + Vt-101                 | decay, nuclear             |  74648*  ,         |
+
+[ ]|bohr    |   P-23∙ +   U-95ª +[   3173.17 -     5000] =>   P-22 + U-96                   | decay, nuclear             | 210832*  ,         |
+
+[ ]|bohr    |   P-23∙ +  Se-98∙ +[   4517.02 -    10000] =>   P-22 + Se-99                  | decay, nuclear             | 205220*  ,         |
+[ ]|bohr    |   P-24⁻ +  Se-97ª +[   2672.28 -     5000] =>   P-22 + Se-99                  | decay, nuclear             |  250175* ,  253104 |
+
+[ ]|bohr    |   P-23∙ + Nm-102ª +[   3293.15 -     5000] =>   P-22 + Nm-103                 | decay, nuclear             | 192968*  ,         |
+[ ]|bohr    |   P-24⁻ + Nm-101⁺ +[   2561.54 -     4000] =>   P-22 + Nm-103                 | decay, nuclear             |  204592* ,  204602 |
+
+[ ]|bohr    |   P-24⁻ +   U-95ª +[   2460.23 -     5000] =>   P-22 + U-97                   | decay, nuclear             |  217399  ,  210830 |
+
+[ ]|bohr    |   P-24⁻ +  Lx-92∙ +[   3060.28 -     5000] =>   P-22 + Lx-94                  | decay, nuclear             |  240848  ,  227968 |
+
+[ ]|bohr    |   P-24⁻ + Da-104ª +[   2704.39 -     4000] =>   P-22 + Da-106                 | decay, nuclear             | 178509*  ,         |
+
+[ ]|bohr    |   P-24⁻ + Dd-101ª +[   2569.96 -     4000] =>   P-22 + Dd-103                 | decay, nuclear             |  204657* ,  204662 |
+[ ]|bohr    |  Eb-22∙ + Ok-103⁻ +[   3222.57 -     5000] =>   P-22 + Dd-103                 | decay, nuclear             | 253156*  ,         |
+
+[ ]|bohr    |   P-24⁻ + Se-104⁻ +[    300.00 -    10000] => ⬆ Ro-24 + Nm-104                | decay                      |  216760  ,  143702*|
+
+[ ]|bohr    |   Sr-1∙ + Se-101∙ +[   1622.49 -     5000] =>   P-22 + Yv-80                  | decay, nuclear             |   77856* ,   79585 |
+[ ]|bohr    |   Sr-2∙ + Se-100∙ +[   1791.84 -     5000] =>   P-22 + Yv-80                  | decay, nuclear             |  79641*  ,         |
+
+[ ]|bohr    |   Sr-2∙ +  Cj-81⁻ +[   1328.68 -     5000] => ⬆ D-83                          | decay, nuclear             |  79621*  ,         |
+
+[ ]|bohr    |  Cv-97⁺           +[   6986.31 -    10000] =>   Wy-45 + Qe-52                 | nuclear                    | 255627*  ,         |
+[ ]|bohr    |  Se-84⁺           +[   5925.33 -    10000] =>   V-39 + Wy-45                  | nuclear                    |  134282  ,   98100*|
+
+[ ]|bohr    |  Gy-64⁺ +  Gy-66ª +[   3452.64 -    10000] =>   P-22 + Ji-108                 | decay, nuclear             |  191968  ,   82926*|
+
+[ ]|bohr    |  Ns-58⁺ +  Yv-69⁺ +[   3348.64 -     7000] =>   P-22 + Ek-105                 | decay, nuclear             |  188699  ,   58429*|
+
+[ ]|bohr    |  Qe-52⁺           +[   3471.96 -    10000] =>   Cl-24 + Nd-28                 | nuclear                    | 102921*  ,         |
+
+[ ]|bohr    |  Ro-22⁺ +   N-83⁺ +[   2190.22 -     5000] =>   P-22 + U-83                   | decay, nuclear             | 210704*  ,         |
+
+[ ]|bohr    |  Ro-22⁺ +   S-95⁺ +[   2122.76 -     5000] =>   P-22 + Z-95                   | decay, nuclear             |  250211* ,  250278 |
+
+[ ]|bohr    |  Ro-22⁺ +  Cv-97⁺ +[   1861.03 -    20000] => ⬇ X-119                         | decay, nuclear             |   84188  ,   81874*|
+
+[ ]|bohr    |  Ro-22⁺ +  Cv-98ª +[   2021.78 -    10000] =>   P-22 + Vt-98                  | decay, nuclear             |   82125  ,   82098*|
+
+[ ]|bohr    |  Ro-22⁺ +  Da-98ª +[   2355.71 -     5000] =>   P-22 + S-98                   | decay, nuclear             |  252854* ,  252856 |
+
+[ ]|bohr    |  Ro-22⁺ +  Dd-90⁺ +[   1885.66 -     3000] =>   P-22 + Ok-90                  | decay, nuclear             |  129985  ,   55762 |
+
+[ ]|bohr    |  Ro-22⁺ +  Ok-90⁺ +[   1790.06 -     6000] =>   P-22 + Da-90                  | decay, nuclear             |  107988  ,   53585 |
+
+[ ]|bohr    |  Ro-22⁺ + Ji-104⁺ +[   2383.46 -    10000] =>   P-22 + Aw-104                 | decay, nuclear             | 161198*  ,         |
+
+[ ]|bohr    |  Ro-22⁺ + Kn-108⁺ +[   3312.50 -    30000] =>   P-22 + Ha-108                 | decay, nuclear             |  82184*  ,         |
+
+[ ]|bohr    |  Ro-22⁺ + Kn-109ª +[   2270.92 -     8000] =>   P-22 + Ha-109                 | decay, nuclear             |  81929*  ,         |
+
+[ ]|bohr    |  Ro-23ª +  Ok-89⁺ +[   1982.96 -     3000] =>   P-22 + Da-90                  | decay, nuclear             | 160761*  ,         |
+
+[ ]|bohr    |  Ro-26∙ +  Lx-95⁻ +[   3336.25 -     6000] => ⬆ Ek-121                        | decay, nuclear             | 217617*  ,         |
+
+[ ]|bohr    |  Vi-10⁺ + Vt-102⁺ +[   1214.03 -     3000] =>   P-22 + Ok-90                  | decay, nuclear             |   55955* ,   74356 |
+
+[ ]|bohr    | Se-102⁻           +[   9404.39 -    15000] =>   V-47 + Wy-55                  | nuclear                    | 215488*  ,         |
+
+It even includes the 4 I previously noted about OTOMRO 253156, 250211, 250175, 204657
+
+
+2025-05-31 May.Sat 21:02:23 [c] This might be shorter chain:
+|   253156*|bohr    |  Eb-22∙ + Ok-103⁻                               +     5000 =>   P-22 + Dd-103                                                                    +    1777.43 |    3222.57 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x2e58f5fab6db3ceb3ffb6302404a34206f472858c55ecc18e42631e5311eb80b | 0xccd09413453f4988ece711c05d858b0aa68e0792d24e79ffd1130219045cd7d8 |
+|   204657*|bohr    |   P-24⁻ + Dd-101ª                               +     4000 =>   P-22 + Dd-103                                                                    +    1430.04 |    2569.96 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xf73105b4be353b52fdcbf741a9b68f45372e10316937f1a0d0a1a65bfbb0bf59 | 0x7b4caea72465f4fbd62ce5aad5ae73814a6334e0d9ee8c0bfc1dd66a37458ff8 |
+|   250211*|bohr    |  Ro-22⁺ +   S-95⁺                               +     5000 =>   P-22 + Z-95                                                                      +    2877.24 |    2122.76 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x5c83c2ae11a40947fa9bed451035698ef01dda251e842602cc5f17782003599b | 0x0e801488cc28cf8d34f35e69d0dffcb6a56e9138e43af82f2bd5967524825691 |
+|   250175*|bohr    |   P-24⁻ +  Se-97ª                               +     5000 =>   P-22 + Se-99                                                                     +    2327.72 |    2672.28 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x820a06bc2c22dab158a66f989e539669cc5833bd76d1a19dc929b1f9ebbdee30 | 0xb86465d19de75a3f8ddab279c625e187d90ca5fad97ee77dabb7af33fae77377 |
+
+2025-05-31 May.Sat 18:03:38
+
+[>]| Cv-97⁺ + 10000 => ? Wy-44 + Qe-53
+  [r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44 -  20000] => Se-89         | nuclear        |
+  [r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13 -   4000] => P-22 + Nm-89  | decay, nuclear |
+  [r]|   K-31⁺ +  Nm-89⁺   +[  2560.30 -  10000] => P-22 + Z-98   | decay, nuclear |
+  [r]|  Ro-22⁺ +   Z-98⁺   +[  1955.64 -   5000] => P-22 + Cv-98  | decay, nuclear |
+  [r]|   P-21⁺ +  Cv-98ª   +[  1931.96 -   7500] => P-22 + Cv-97  | decay, nuclear | used 1923.56 [c] update recipe chains
+  [f]|  Cv-97⁺ +              10000              => ? Wy-44 + Qe-53 <---NOPE makes Wy-45 + Qe-52 + 3013.69 used 6986.31 nuclear
+total: 20363.47
+
+2025-05-31 May.Sat 16:00:33 [c] fix:
+
+[c] isotopes_worker or get_isotopes_bohr.pl missing:
+      [c] Ai-58
+      [c] Dx-35
+      [c] T-14
+[c] checklist missing:
+      [c] Aw-125
+      [c] Wy-56
+[c] mark as "have" in checklist
+      [c] F-59
+      [c] Ji-109
+      [c] Z-102
+      [c] Lu-41
+      [c] Lx-93
+      [c] Uq-52
+      [c] Lx-95
+      [c] Lx-91
+      [c] Lx-94
+      [c] Lx-96
+      [c] Wy-56
+
+2025-05-31 May.Sat 15:56:11 I have 452/663 isotopes or 68.175%
+
 2025-05-31 May.Sat 13:43:46
 
 [ ] I should include the block number of each initiateReation() and analyseReaction() tx
@@ -11,7 +144,7 @@
 
    OTOMRO 254139: Kn-107⁺ + 10000 => Ux-49 + Ai-58 + 2,592.159702566815667524 using 7407.84 nuclear
 
-[ ] add to files
+[c] add to files
 
 2025-05-31 May.Sat 12:05:19 [ ] parser script needs to identify ranges of OTOMROs missing completely from logs
 
@@ -25,25 +158,25 @@
 
 | OTOMRO| INPUT  |  low input range=> OUTPUT |type  | OTOMRO|  mid input range=> output          |type    | OTOMRO| high input range=> output              |type             |
 |245664 | Lx-76⁺ |+[   0.00- 5000] => ⬇ W-76 |decay |253730 |+[5114.62- 5160] =>   Dx-35 + Uq-41 | nuclear|159175*|+[5270.87- 7000] =>   UqDx(Dx-35,Uq-41>)|metallic, nuclear|
-|166828 | Lx-77⁺ |+[   0.00-    0] => ⬇ W-77 |decay |   [ ] |                 => ? Dx-35 + Uq-42 |?nuclear|   [ ] |                 => ? UqDx(Dx-35,Uq-42>)|                 |
-|    [ ]|?Lx-78  |+[   0?  -     ] => ? W-78 |decay?|   [ ] |                 => ? Dx-36 + Uq-42 |        |   [ ] |                 => ? UqDx(Dx-36,Uq-42>)|                 |
-|    [ ]| Lx-79⁺ |+[   0?  -     ] => ? W-79 |decay?|   [ ] |                 => ? Dx-36 + Uq-43 |        |   [ ] |                 => ? UqDx(Dx-36,Uq-43>)|                 |
-|    [ ]| Lx-80⁺ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-37 + Uq-43 |        |   [ ] |                 => ? UqDx(Dx-37,Uq-43>)|                 |
-| 39390*| Lx-81ª |+[ 250.00- 5000] =>   Lx-81|none  |   [ ] |                 => ? Dx-37   Uq-44 |        |   [ ] |                 => ? UqDx(Dx-37,Uq-44>)|                 |
-|    [ ]| Lx-82ª |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-38 + Uq-44 |        |   [ ] |                 => ? UqDx(Dx-38,Uq-44>)|                 |
-| 85846*| Lx-83ª |+[   0.00-    0] =>   Lx-83|none  |   [ ] |                 => ? Dx-38   Uq-45 |        | 86751*|+[7696.55-10000] =>   UqDx(Dx-38,Uq-45>)|metallic, nuclear|
-| 85847*| Lx-84ª |+[   0.00-    0] =>   Lx-84|none  |   [ ] |                 => ? Dx-39   Uq-45 |        | 86752*|+[7866.33-10000] =>   UqDx(Dx-39,Uq-45>)|metallic, nuclear|
-|    [ ]| Lx-85ª |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-39 + Uq-46 |        |   [ ] |                 => ? UqDx(Dx-39,Uq-46>)|                 |
-| 85848*| Lx-86ª |+[   0.00-    0] =>   Lx-86|none  |   [ ] |                 => ? Dx-40   Uq-46 |        | 86753*|+[8162.03-10000] =>   UqDx(Dx-40,Uq-46>)|metallic, nuclear|
-| 85849*| Lx-87∙ |+[   0.00-10000] =>   Lx-87|none  |   [ ] |                 => ? Dx-40   Uq-47 |        |   [ ] |                 => ? UqDx(Dx-40,Uq-47>)|                 |
-| 85850*| Lx-88∙ |+[   0.00-    0] =>   Lx-88|none  |   [ ] |                 => ? Dx-41   Uq-47 |        |   [ ] |                 => ? UqDx(Dx-41,Uq-47>)|                 |
-|    [ ]| Lx-89∙ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-41 + Uq-48 |        |   [ ] |                 => ? UqDx(Dx-41,Uq-48>)|                 |
-|    [ ]| Lx-90∙ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-42 + Uq-48 |        |   [ ] |                 => ? UqDx(Dx-42,Uq-48>)|                 |
-|    [ ]| Lx-91⁻ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-42 + Uq-49 |        |   [ ] |                 => ? UqDx(Dx-42,Uq-49>)|                 |
-|    [ ]| Lx-92∙ |+[       -     ] =>        |none? |   [ ] |                 => ? Dx-43 + Uq-49 |        |   [ ] |                 => ? UqDx(Dx-43,Uq-49>)|                 |
-|197170*| Lx-93⁻ |+[ 250.00- 8100] => ⬆ N-93 |decay |240883 |+[8119.28- 8200] =>   Dx-43 + Uq-50 | nuclear|   [ ] |                 => ? UqDx(Dx-43,Uq-50>)|                 |
-|202020*| Lx-94⁻ |+[ 390.00- 7800] => ⬆ N-94 |decay |240902 |+[7988.27- 8000] =>   Dx-43 + Uq-51 | nuclear|   [ ] |                 => ? UqDx(Dx-43,Uq-51>)|                 |
-|    [ ]| Lx-95⁻ |+[   0?  -     ] => ? N-95 |decay?|   [ ] |                 => ? Dx-44 + Uq-51 |        |   [ ] |                 => ? UqDx(Dx-44,Uq-51>)|                 |
+|166828 | Lx-77⁺ |+[   0.00-    0] => ⬇ W-77 |decay |       |                 => ? Dx-35 + Uq-42 |?nuclear|       |                 => ? UqDx(Dx-35,Uq-42>)|                 |
+|       |?Lx-78  |+[   0?  -     ] => ? W-78 |decay?|       |                 => ? Dx-36 + Uq-42 |        |       |                 => ? UqDx(Dx-36,Uq-42>)|                 |
+|       | Lx-79⁺ |+[   0?  -     ] => ? W-79 |decay?|       |                 => ? Dx-36 + Uq-43 |        |       |                 => ? UqDx(Dx-36,Uq-43>)|                 |
+|       | Lx-80⁺ |+[       -     ] =>        |none? |       |                 => ? Dx-37 + Uq-43 |        |       |                 => ? UqDx(Dx-37,Uq-43>)|                 |
+| 39390*| Lx-81ª |+[ 250.00- 5000] =>   Lx-81|none  |       |                 => ? Dx-37   Uq-44 |        |       |                 => ? UqDx(Dx-37,Uq-44>)|                 |
+|       | Lx-82ª |+[       -     ] =>        |none? |       |                 => ? Dx-38 + Uq-44 |        |       |                 => ? UqDx(Dx-38,Uq-44>)|                 |
+| 85846*| Lx-83ª |+[   0.00-    0] =>   Lx-83|none  |       |                 => ? Dx-38   Uq-45 |        | 86751*|+[7696.55-10000] =>   UqDx(Dx-38,Uq-45>)|metallic, nuclear|
+| 85847*| Lx-84ª |+[   0.00-    0] =>   Lx-84|none  |       |                 => ? Dx-39   Uq-45 |        | 86752*|+[7866.33-10000] =>   UqDx(Dx-39,Uq-45>)|metallic, nuclear|
+|       | Lx-85ª |+[       -     ] =>        |none? |       |                 => ? Dx-39 + Uq-46 |        |       |                 => ? UqDx(Dx-39,Uq-46>)|                 |
+| 85848*| Lx-86ª |+[   0.00-    0] =>   Lx-86|none  |       |                 => ? Dx-40   Uq-46 |        | 86753*|+[8162.03-10000] =>   UqDx(Dx-40,Uq-46>)|metallic, nuclear|
+| 85849*| Lx-87∙ |+[   0.00-10000] =>   Lx-87|none  |       |                 => ? Dx-40   Uq-47 |        |       |                 => ? UqDx(Dx-40,Uq-47>)|                 |
+| 85850*| Lx-88∙ |+[   0.00-    0] =>   Lx-88|none  |       |                 => ? Dx-41   Uq-47 |        |       |                 => ? UqDx(Dx-41,Uq-47>)|                 |
+|       | Lx-89∙ |+[       -     ] =>        |none? |       |                 => ? Dx-41 + Uq-48 |        |       |                 => ? UqDx(Dx-41,Uq-48>)|                 |
+|       | Lx-90∙ |+[       -     ] =>        |none? |       |                 => ? Dx-42 + Uq-48 |        |       |                 => ? UqDx(Dx-42,Uq-48>)|                 |
+|       | Lx-91⁻ |+[       -     ] =>        |none? |       |                 => ? Dx-42 + Uq-49 |        |       |                 => ? UqDx(Dx-42,Uq-49>)|                 |
+|       | Lx-92∙ |+[       -     ] =>        |none? |       |                 => ? Dx-43 + Uq-49 |        |       |                 => ? UqDx(Dx-43,Uq-49>)|                 |
+|197170*| Lx-93⁻ |+[ 250.00- 8100] => ⬆ N-93 |decay |240883 |+[8119.28- 8200] =>   Dx-43 + Uq-50 | nuclear|       |                 => ? UqDx(Dx-43,Uq-50>)|                 |
+|202020*| Lx-94⁻ |+[ 390.00- 7800] => ⬆ N-94 |decay |240902 |+[7988.27- 8000] =>   Dx-43 + Uq-51 | nuclear|       |                 => ? UqDx(Dx-43,Uq-51>)|                 |
+|       | Lx-95⁻ |+[   0?  -     ] => ? N-95 |decay?|       |                 => ? Dx-44 + Uq-51 |        |       |                 => ? UqDx(Dx-44,Uq-51>)|                 |
 |102992*| Lx-96⁻ |+[ 250.00- 7600] => ⬆ N-96 |decay |225086 |+[7692.11- 7700] =>   Dx-44 + Uq-52 | nuclear|162887 |+[7813.62-42000] =>   UqDx(Dx-44,Uq-52>)|metallic, nuclear|
 
 
@@ -885,14 +1018,85 @@ Some isotopes to discover from my decay predictions:
  [c] Vi-15
  [c] Nd-27
  [c] Dx-36
- [ ] Lu-42
+ [x] Lu-42
  [c] Dx-35
  [c] Wy-56
- [ ] Pb-42
+ [x] Pb-42
  [c] Ai-58
- [ ] Pg-49
- [ ] Z-94
+ [x] Pg-49
+ [x] Z-94
  [c] Yv-66
+
+
+ [x] Jb-116ª + 0 => ? P-22 + Z-94 
+   saw in reactor logs it makes P-22 + S-94. I bet it makes Z-94⁺ but it immediately performs beta+ decay losing a proton and becoming S-94
+
+
+ [>] Pb-42
+    [-]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [-]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [-]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+    [-]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear |
+    [-]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear |
+    [-]|   P-21⁺ +  Ok-91⁺   +[  1920.88 -   5000] => P-22 + Ok-90  | decay, nuclear |
+    [-]   Ok-90⁺ +               7000              => ? Pb-42 + Ux-49
+total: 18750.57
+    [-]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [-]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [-]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+    [-]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear |
+    [-]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear |
+    [-]|   P-21⁺ +  Ok-91⁺   +[  1920.88 -   5000] => P-22 + Ok-90  | decay, nuclear |
+total: 11750.57
+    [-]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [-]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [-]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+    [-]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear |
+    [-]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear |
+total: 9829.69
+    [-]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [-]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [-]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+    [-]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear |
+total: 7832.6
+    [-]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [-]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [-]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+total: 5998.90
+
+======>>>>>   ooooooooRRRRRR do it like this and get the ones I'm missing at the same time:
+
+ [>] S-97
+ [>] Ok-92
+ [>] Ok-91
+ [>] Ok-90
+ [>] Pb-42
+    [r]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [r]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [r]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [r]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [r]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear        |
+    [r]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [r]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [r]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [r]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [r]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear        |
+    [r]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+    [r]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+    [r]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+    [r]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+    [r]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
+    [r]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear |
+    [r]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear |
+    [r]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear |
+    [r]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear |
+    [r]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear |
+    [r]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear |
+    [r]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear |
+    [r]|   P-21⁺ +  Ok-91⁺   +[  1920.88 -   5000] => P-22 + Ok-90  | decay, nuclear |
+    [r]|   P-21⁺ +  Ok-91⁺   +[  1920.88 -   5000] => P-22 + Ok-90  | decay, nuclear |
+    [f]   Ok-90⁺ +               7000              => ? Pb-42 + Ux-49  <----NOPE it made Uq-41 + Ux-49 using 6246.44 nuclear
+total: 54162.33
 
 
 
@@ -932,7 +1136,7 @@ That doesn't work
 [r]|  Ro-28⁻             +   3000              => ? Vi-13 + Vi-15  <---SUCCESS! used 1313.64 nuclear
 total: 32899.32
 
-[.] make these:
+[c] make these:
 Lx-91         0
 Lx-93         0
 Lx-94         0
@@ -10707,7 +10911,19 @@ try:
 total: 18163
 
 try:
-[ ] Ha-108⁺ +12000 =>  ? Pg-49 + Ai-59 or Pg-50 + Ai-58
+[>] Ha-108⁺ +12000 =>  ? Pg-49 + Ai-59 or Pg-50 + Ai-58
+   [r]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+   [r]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         | nuclear                      |
+   [r]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear               |
+   [r]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
+   [r]|   P-21⁺ +  Ok-92⁺   +[  1997.09*-   5000] => P-22 + Ok-91  | decay, nuclear               |
+   [r]|  Mt-32⁺ +  Ok-91⁺   +[  2352.78*-   4000] => P-22 + Ek-101 | decay, nuclear               |
+   [r]|  Vi-10⁺ + Ek-101⁺   +[   960.25 -   4000] => Ax-111        | decay, nuclear               | used  959.80 [ ] update recipe chains
+   [r]|   T-15⁺ + Ax-111ª   +[  1546.86 -   7500] => P-22 + Aw-104 | decay, nuclear               | used 1546.01 [ ] update recipe chains
+   [r]|  Cl-26ª + Aw-104⁺   +[  2212.14 -  40000] => P-22 + Ha-108 | decay, nuclear               | used 2122.19 [ ] update recipe chains
+   [f]  Ha-108⁺ +              12000              =>  ? Pg-49 + Ai-59 or Pg-50 + Ai-58 <-- DANG. makes Pg-50 + Ai-58 + 4819.04 used 7180.96 nuclear
+total: 28901.72
+
 [ ] Ha-109⁺ +12000 =>  ? Pg-50 + Ai-59 or Pg-50 + Ai-59
 [ ] Ha-110ª +12000 =>  ? Pg-50 + Ai-60 or Pg-51 + Ai-59
 [ ] Ha-111ª +12000 =>  ? Pg-51 + Ai-60 or Pg-51 + Ai-60
@@ -11994,14 +12210,14 @@ OR:
 total: 28403
 
 [>]  Da-92⁺  + 10000  => ? Pb-43 + Ux-49
-  [ ]|   P-21⁺ +  Gy-67ª + 1869 =>   Vl-88        
-  [ ]|   K-31⁺ +  Vl-88⁺ + 2708 =>   P-22 + Da-97 
-  [ ]|   P-21⁺ +  Da-97⁺ + 2253 =>   P-22 + Da-96
-  [ ]|   P-21⁺ +  Da-96⁺ + 2203 =>   P-22 + Da-95
-  [ ]|   P-21⁺ +  Da-95⁺ + 2153 =>   P-22 + Da-94
-  [ ]|   P-21⁺ +  Da-94⁺ + 2086 =>   P-22 + Da-93
-  [ ]|   P-21⁺ +  Da-93⁺ + 2163 =>   P-22 + Da-92
-  [ ]  Da-92⁺            +10000 => ? Pb-42 + Ux-49
+  [-]|   P-21⁺ +  Gy-67ª + 1869 =>   Vl-88        
+  [-]|   K-31⁺ +  Vl-88⁺ + 2708 =>   P-22 + Da-97 
+  [-]|   P-21⁺ +  Da-97⁺ + 2253 =>   P-22 + Da-96
+  [-]|   P-21⁺ +  Da-96⁺ + 2203 =>   P-22 + Da-95
+  [-]|   P-21⁺ +  Da-95⁺ + 2153 =>   P-22 + Da-94
+  [-]|   P-21⁺ +  Da-94⁺ + 2086 =>   P-22 + Da-93
+  [-]|   P-21⁺ +  Da-93⁺ + 2163 =>   P-22 + Da-92
+  [-]  Da-92⁺            +10000 => ? Pb-42 + Ux-49  NOPE makes =>   Pb-43 + Ux-49 using 6728.10
 total: 25435
 
 [>]  S-95⁺   + 10000  => ? Pb-43 + Pg-52
