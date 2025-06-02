@@ -1065,6 +1065,7 @@ let otomnames["109 52 Cv"]="Cv-109"
 let otomnames["110 52 Cv"]="Cv-110"
 let otomnames["111 52 Cv"]="Cv-111"
 let otomnames["114 52 Cv"]="Cv-114"
+let otomnames["115 52 Cv"]="Cv-115"
 let otomnames["98 53 Vt"]="Vt-98"
 let otomnames["99 53 Vt"]="Vt-99"
 let otomnames["100 53 Vt"]="Vt-100"
@@ -2055,6 +2056,7 @@ let otomnames["Cv-109"]="109 52 Cv"
 let otomnames["Cv-110"]="110 52 Cv"
 let otomnames["Cv-111"]="111 52 Cv"
 let otomnames["Cv-114"]="114 52 Cv"
+let otomnames["Cv-115"]="115 52 Cv"
 let otomnames["Vt-98"]="98 53 Vt"
 let otomnames["Vt-99"]="99 53 Vt"
 let otomnames["Vt-100"]="100 53 Vt"
@@ -3045,6 +3047,7 @@ let hexdict["109 52 Cv"]="48e5ff3ebde781cd8ab9d1c5b679ef5aa117d4d7046908adbeabf6
 let hexdict["110 52 Cv"]="485c9b3fadcd8a711565cc40fbde0b94ca8e3f988138719fb64848739deee0a9"
 let hexdict["111 52 Cv"]="45bb1bc63c6d0da83b81aa062c6f092458a0e8d779ab10cbaf178e64d8558000"
 let hexdict["114 52 Cv"]="e5995f413811b0b9e382ad8d6f6e4fb8e0c9d4ee0fe22b4ff460512f0bd64ff0"
+let hexdict["115 52 Cv"]="e2f5b2ac607b0d00973eb8e8286b201d1170d019c934ad809a234c29c74788e5"
 let hexdict["98 53 Vt"]="9e20112bb8c6debc1d182187bef70bedcc510e4878383129f861c71f42631f5d"
 let hexdict["99 53 Vt"]="afa46b5404732e6a6193a6880aa6a1b7af6f0baf220a476d5950c2a5b6ca2c6d"
 let hexdict["100 53 Vt"]="98678bf71e7a5dbbab0a4bb4da3748ca48a574117fd14b969e6728bc50dd1a31"
@@ -4035,6 +4038,7 @@ let hexdict["Cv-109"]="48e5ff3ebde781cd8ab9d1c5b679ef5aa117d4d7046908adbeabf6b91
 let hexdict["Cv-110"]="485c9b3fadcd8a711565cc40fbde0b94ca8e3f988138719fb64848739deee0a9"
 let hexdict["Cv-111"]="45bb1bc63c6d0da83b81aa062c6f092458a0e8d779ab10cbaf178e64d8558000"
 let hexdict["Cv-114"]="e5995f413811b0b9e382ad8d6f6e4fb8e0c9d4ee0fe22b4ff460512f0bd64ff0"
+let hexdict["Cv-115"]="e2f5b2ac607b0d00973eb8e8286b201d1170d019c934ad809a234c29c74788e5"
 let hexdict["Vt-98"]="9e20112bb8c6debc1d182187bef70bedcc510e4878383129f861c71f42631f5d"
 let hexdict["Vt-99"]="afa46b5404732e6a6193a6880aa6a1b7af6f0baf220a476d5950c2a5b6ca2c6d"
 let hexdict["Vt-100"]="98678bf71e7a5dbbab0a4bb4da3748ca48a574117fd14b969e6728bc50dd1a31"
@@ -5025,6 +5029,7 @@ let hexdict["48e5ff3ebde781cd8ab9d1c5b679ef5aa117d4d7046908adbeabf6b91d4a3882"]=
 let hexdict["485c9b3fadcd8a711565cc40fbde0b94ca8e3f988138719fb64848739deee0a9"]="110 52 Cv"
 let hexdict["45bb1bc63c6d0da83b81aa062c6f092458a0e8d779ab10cbaf178e64d8558000"]="111 52 Cv"
 let hexdict["e5995f413811b0b9e382ad8d6f6e4fb8e0c9d4ee0fe22b4ff460512f0bd64ff0"]="114 52 Cv"
+let hexdict["e2f5b2ac607b0d00973eb8e8286b201d1170d019c934ad809a234c29c74788e5"]="115 52 Cv"
 let hexdict["9e20112bb8c6debc1d182187bef70bedcc510e4878383129f861c71f42631f5d"]="98 53 Vt"
 let hexdict["afa46b5404732e6a6193a6880aa6a1b7af6f0baf220a476d5950c2a5b6ca2c6d"]="99 53 Vt"
 let hexdict["98678bf71e7a5dbbab0a4bb4da3748ca48a574117fd14b969e6728bc50dd1a31"]="100 53 Vt"
@@ -6015,6 +6020,7 @@ let hexdictabbr["48e5ff3ebde781cd8ab9d1c5b679ef5aa117d4d7046908adbeabf6b91d4a388
 let hexdictabbr["485c9b3fadcd8a711565cc40fbde0b94ca8e3f988138719fb64848739deee0a9"]="Cv-110"
 let hexdictabbr["45bb1bc63c6d0da83b81aa062c6f092458a0e8d779ab10cbaf178e64d8558000"]="Cv-111"
 let hexdictabbr["e5995f413811b0b9e382ad8d6f6e4fb8e0c9d4ee0fe22b4ff460512f0bd64ff0"]="Cv-114"
+let hexdictabbr["e2f5b2ac607b0d00973eb8e8286b201d1170d019c934ad809a234c29c74788e5"]="Cv-115"
 let hexdictabbr["9e20112bb8c6debc1d182187bef70bedcc510e4878383129f861c71f42631f5d"]="Vt-98"
 let hexdictabbr["afa46b5404732e6a6193a6880aa6a1b7af6f0baf220a476d5950c2a5b6ca2c6d"]="Vt-99"
 let hexdictabbr["98678bf71e7a5dbbab0a4bb4da3748ca48a574117fd14b969e6728bc50dd1a31"]="Vt-100"
@@ -7005,6 +7011,7 @@ let otomdict["329728947126638145302170990113838029696497465043459013922018982832
 let otomdict["32730146515418764923588740102963813868319785398971831927614621137087608316073"]="110 52 Cv"
 let otomdict["31540178644943341553947579896048430625878285364690263249626091557163334205440"]="111 52 Cv"
 let otomdict["103850627350683339924014838630303270100278760499388635244000997441962457321456"]="114 52 Cv"
+let otomdict["102656814468810063562605585364429463076297013071704050533016967736282789152997"]="115 52 Cv"
 let otomdict["71522087690653871852250043411077233001397992121978987812100670851289115205469"]="98 53 Vt"
 let otomdict["79445252172658531635974995568359755940728131781833588331797871768954439609453"]="99 53 Vt"
 let otomdict["68934504237387402555571881628600381965588444481782891896320733790736974944817"]="100 53 Vt"
@@ -7995,6 +8002,7 @@ let otomdictabbr["32972894712663814530217099011383802969649746504345901392201898
 let otomdictabbr["32730146515418764923588740102963813868319785398971831927614621137087608316073"]="Cv-110"
 let otomdictabbr["31540178644943341553947579896048430625878285364690263249626091557163334205440"]="Cv-111"
 let otomdictabbr["103850627350683339924014838630303270100278760499388635244000997441962457321456"]="Cv-114"
+let otomdictabbr["102656814468810063562605585364429463076297013071704050533016967736282789152997"]="Cv-115"
 let otomdictabbr["71522087690653871852250043411077233001397992121978987812100670851289115205469"]="Vt-98"
 let otomdictabbr["79445252172658531635974995568359755940728131781833588331797871768954439609453"]="Vt-99"
 let otomdictabbr["68934504237387402555571881628600381965588444481782891896320733790736974944817"]="Vt-100"
@@ -8985,6 +8993,7 @@ let otom2tokenid["109 52 Cv"]="3297289471266381453021709901138380296964974650434
 let otom2tokenid["110 52 Cv"]="32730146515418764923588740102963813868319785398971831927614621137087608316073"
 let otom2tokenid["111 52 Cv"]="31540178644943341553947579896048430625878285364690263249626091557163334205440"
 let otom2tokenid["114 52 Cv"]="103850627350683339924014838630303270100278760499388635244000997441962457321456"
+let otom2tokenid["115 52 Cv"]="102656814468810063562605585364429463076297013071704050533016967736282789152997"
 let otom2tokenid["98 53 Vt"]="71522087690653871852250043411077233001397992121978987812100670851289115205469"
 let otom2tokenid["99 53 Vt"]="79445252172658531635974995568359755940728131781833588331797871768954439609453"
 let otom2tokenid["100 53 Vt"]="68934504237387402555571881628600381965588444481782891896320733790736974944817"
@@ -9975,6 +9984,7 @@ let otom2tokenid["Cv-109"]="3297289471266381453021709901138380296964974650434590
 let otom2tokenid["Cv-110"]="32730146515418764923588740102963813868319785398971831927614621137087608316073"
 let otom2tokenid["Cv-111"]="31540178644943341553947579896048430625878285364690263249626091557163334205440"
 let otom2tokenid["Cv-114"]="103850627350683339924014838630303270100278760499388635244000997441962457321456"
+let otom2tokenid["Cv-115"]="102656814468810063562605585364429463076297013071704050533016967736282789152997"
 let otom2tokenid["Vt-98"]="71522087690653871852250043411077233001397992121978987812100670851289115205469"
 let otom2tokenid["Vt-99"]="79445252172658531635974995568359755940728131781833588331797871768954439609453"
 let otom2tokenid["Vt-100"]="68934504237387402555571881628600381965588444481782891896320733790736974944817"
@@ -10965,102 +10975,103 @@ let otomsortorder["109 52 Cv"]="889"
 let otomsortorder["110 52 Cv"]="890"
 let otomsortorder["111 52 Cv"]="891"
 let otomsortorder["114 52 Cv"]="892"
-let otomsortorder["98 53 Vt"]="893"
-let otomsortorder["99 53 Vt"]="894"
-let otomsortorder["100 53 Vt"]="895"
-let otomsortorder["101 53 Vt"]="896"
-let otomsortorder["102 53 Vt"]="897"
-let otomsortorder["103 53 Vt"]="898"
-let otomsortorder["104 53 Vt"]="899"
-let otomsortorder["105 53 Vt"]="900"
-let otomsortorder["106 53 Vt"]="901"
-let otomsortorder["107 53 Vt"]="902"
-let otomsortorder["108 53 Vt"]="903"
-let otomsortorder["109 53 Vt"]="904"
-let otomsortorder["110 53 Vt"]="905"
-let otomsortorder["111 53 Vt"]="906"
-let otomsortorder["112 53 Vt"]="907"
-let otomsortorder["119 53 Vt"]="908"
-let otomsortorder["120 53 Vt"]="909"
-let otomsortorder["99 54 Ek"]="910"
-let otomsortorder["100 54 Ek"]="911"
-let otomsortorder["101 54 Ek"]="912"
-let otomsortorder["102 54 Ek"]="913"
-let otomsortorder["103 54 Ek"]="914"
-let otomsortorder["104 54 Ek"]="915"
-let otomsortorder["105 54 Ek"]="916"
-let otomsortorder["106 54 Ek"]="917"
-let otomsortorder["107 54 Ek"]="918"
-let otomsortorder["108 54 Ek"]="919"
-let otomsortorder["109 54 Ek"]="920"
-let otomsortorder["110 54 Ek"]="921"
-let otomsortorder["111 54 Ek"]="922"
-let otomsortorder["112 54 Ek"]="923"
-let otomsortorder["113 54 Ek"]="924"
-let otomsortorder["119 54 Ek"]="925"
-let otomsortorder["120 54 Ek"]="926"
-let otomsortorder["121 54 Ek"]="927"
-let otomsortorder["103 55 Ji"]="928"
-let otomsortorder["104 55 Ji"]="929"
-let otomsortorder["105 55 Ji"]="930"
-let otomsortorder["106 55 Ji"]="931"
-let otomsortorder["107 55 Ji"]="932"
-let otomsortorder["108 55 Ji"]="933"
-let otomsortorder["109 55 Ji"]="934"
-let otomsortorder["110 55 Ji"]="935"
-let otomsortorder["111 55 Ji"]="936"
-let otomsortorder["112 55 Ji"]="937"
-let otomsortorder["113 55 Ji"]="938"
-let otomsortorder["114 55 Ji"]="939"
-let otomsortorder["121 55 Ji"]="940"
-let otomsortorder["104 56 Aw"]="941"
-let otomsortorder["105 56 Aw"]="942"
-let otomsortorder["106 56 Aw"]="943"
-let otomsortorder["107 56 Aw"]="944"
-let otomsortorder["108 56 Aw"]="945"
-let otomsortorder["109 56 Aw"]="946"
-let otomsortorder["110 56 Aw"]="947"
-let otomsortorder["111 56 Aw"]="948"
-let otomsortorder["112 56 Aw"]="949"
-let otomsortorder["113 56 Aw"]="950"
-let otomsortorder["114 56 Aw"]="951"
-let otomsortorder["115 56 Aw"]="952"
-let otomsortorder["124 56 Aw"]="953"
-let otomsortorder["125 56 Aw"]="954"
-let otomsortorder["106 57 Kn"]="955"
-let otomsortorder["107 57 Kn"]="956"
-let otomsortorder["108 57 Kn"]="957"
-let otomsortorder["109 57 Kn"]="958"
-let otomsortorder["110 57 Kn"]="959"
-let otomsortorder["111 57 Kn"]="960"
-let otomsortorder["112 57 Kn"]="961"
-let otomsortorder["113 57 Kn"]="962"
-let otomsortorder["114 57 Kn"]="963"
-let otomsortorder["115 57 Kn"]="964"
-let otomsortorder["116 57 Kn"]="965"
-let otomsortorder["108 58 Ha"]="966"
-let otomsortorder["109 58 Ha"]="967"
-let otomsortorder["110 58 Ha"]="968"
-let otomsortorder["111 58 Ha"]="969"
-let otomsortorder["112 58 Ha"]="970"
-let otomsortorder["113 58 Ha"]="971"
-let otomsortorder["114 58 Ha"]="972"
-let otomsortorder["115 58 Ha"]="973"
-let otomsortorder["116 58 Ha"]="974"
-let otomsortorder["117 58 Ha"]="975"
-let otomsortorder["109 59 Ax"]="976"
-let otomsortorder["110 59 Ax"]="977"
-let otomsortorder["111 59 Ax"]="978"
-let otomsortorder["113 60  I"]="979"
-let otomsortorder["114 60  I"]="980"
-let otomsortorder["115 60  I"]="981"
-let otomsortorder["116 61 Jb"]="982"
-let otomsortorder["117 62 Go"]="983"
-let otomsortorder["118 62 Go"]="984"
-let otomsortorder["119 63  X"]="985"
-let otomsortorder["123 65 Eh"]="986"
-let otomsortorder["124 65 Eh"]="987"
-let otomsortorder["125 66 Ys"]="988"
+let otomsortorder["115 52 Cv"]="893"
+let otomsortorder["98 53 Vt"]="894"
+let otomsortorder["99 53 Vt"]="895"
+let otomsortorder["100 53 Vt"]="896"
+let otomsortorder["101 53 Vt"]="897"
+let otomsortorder["102 53 Vt"]="898"
+let otomsortorder["103 53 Vt"]="899"
+let otomsortorder["104 53 Vt"]="900"
+let otomsortorder["105 53 Vt"]="901"
+let otomsortorder["106 53 Vt"]="902"
+let otomsortorder["107 53 Vt"]="903"
+let otomsortorder["108 53 Vt"]="904"
+let otomsortorder["109 53 Vt"]="905"
+let otomsortorder["110 53 Vt"]="906"
+let otomsortorder["111 53 Vt"]="907"
+let otomsortorder["112 53 Vt"]="908"
+let otomsortorder["119 53 Vt"]="909"
+let otomsortorder["120 53 Vt"]="910"
+let otomsortorder["99 54 Ek"]="911"
+let otomsortorder["100 54 Ek"]="912"
+let otomsortorder["101 54 Ek"]="913"
+let otomsortorder["102 54 Ek"]="914"
+let otomsortorder["103 54 Ek"]="915"
+let otomsortorder["104 54 Ek"]="916"
+let otomsortorder["105 54 Ek"]="917"
+let otomsortorder["106 54 Ek"]="918"
+let otomsortorder["107 54 Ek"]="919"
+let otomsortorder["108 54 Ek"]="920"
+let otomsortorder["109 54 Ek"]="921"
+let otomsortorder["110 54 Ek"]="922"
+let otomsortorder["111 54 Ek"]="923"
+let otomsortorder["112 54 Ek"]="924"
+let otomsortorder["113 54 Ek"]="925"
+let otomsortorder["119 54 Ek"]="926"
+let otomsortorder["120 54 Ek"]="927"
+let otomsortorder["121 54 Ek"]="928"
+let otomsortorder["103 55 Ji"]="929"
+let otomsortorder["104 55 Ji"]="930"
+let otomsortorder["105 55 Ji"]="931"
+let otomsortorder["106 55 Ji"]="932"
+let otomsortorder["107 55 Ji"]="933"
+let otomsortorder["108 55 Ji"]="934"
+let otomsortorder["109 55 Ji"]="935"
+let otomsortorder["110 55 Ji"]="936"
+let otomsortorder["111 55 Ji"]="937"
+let otomsortorder["112 55 Ji"]="938"
+let otomsortorder["113 55 Ji"]="939"
+let otomsortorder["114 55 Ji"]="940"
+let otomsortorder["121 55 Ji"]="941"
+let otomsortorder["104 56 Aw"]="942"
+let otomsortorder["105 56 Aw"]="943"
+let otomsortorder["106 56 Aw"]="944"
+let otomsortorder["107 56 Aw"]="945"
+let otomsortorder["108 56 Aw"]="946"
+let otomsortorder["109 56 Aw"]="947"
+let otomsortorder["110 56 Aw"]="948"
+let otomsortorder["111 56 Aw"]="949"
+let otomsortorder["112 56 Aw"]="950"
+let otomsortorder["113 56 Aw"]="951"
+let otomsortorder["114 56 Aw"]="952"
+let otomsortorder["115 56 Aw"]="953"
+let otomsortorder["124 56 Aw"]="954"
+let otomsortorder["125 56 Aw"]="955"
+let otomsortorder["106 57 Kn"]="956"
+let otomsortorder["107 57 Kn"]="957"
+let otomsortorder["108 57 Kn"]="958"
+let otomsortorder["109 57 Kn"]="959"
+let otomsortorder["110 57 Kn"]="960"
+let otomsortorder["111 57 Kn"]="961"
+let otomsortorder["112 57 Kn"]="962"
+let otomsortorder["113 57 Kn"]="963"
+let otomsortorder["114 57 Kn"]="964"
+let otomsortorder["115 57 Kn"]="965"
+let otomsortorder["116 57 Kn"]="966"
+let otomsortorder["108 58 Ha"]="967"
+let otomsortorder["109 58 Ha"]="968"
+let otomsortorder["110 58 Ha"]="969"
+let otomsortorder["111 58 Ha"]="970"
+let otomsortorder["112 58 Ha"]="971"
+let otomsortorder["113 58 Ha"]="972"
+let otomsortorder["114 58 Ha"]="973"
+let otomsortorder["115 58 Ha"]="974"
+let otomsortorder["116 58 Ha"]="975"
+let otomsortorder["117 58 Ha"]="976"
+let otomsortorder["109 59 Ax"]="977"
+let otomsortorder["110 59 Ax"]="978"
+let otomsortorder["111 59 Ax"]="979"
+let otomsortorder["113 60  I"]="980"
+let otomsortorder["114 60  I"]="981"
+let otomsortorder["115 60  I"]="982"
+let otomsortorder["116 61 Jb"]="983"
+let otomsortorder["117 62 Go"]="984"
+let otomsortorder["118 62 Go"]="985"
+let otomsortorder["119 63  X"]="986"
+let otomsortorder["123 65 Eh"]="987"
+let otomsortorder["124 65 Eh"]="988"
+let otomsortorder["125 66 Ys"]="989"
 
 let otomsortorder["Ju-1"]="0"
 let otomsortorder["Ju-2"]="1"
@@ -11955,102 +11966,103 @@ let otomsortorder["Cv-109"]="889"
 let otomsortorder["Cv-110"]="890"
 let otomsortorder["Cv-111"]="891"
 let otomsortorder["Cv-114"]="892"
-let otomsortorder["Vt-98"]="893"
-let otomsortorder["Vt-99"]="894"
-let otomsortorder["Vt-100"]="895"
-let otomsortorder["Vt-101"]="896"
-let otomsortorder["Vt-102"]="897"
-let otomsortorder["Vt-103"]="898"
-let otomsortorder["Vt-104"]="899"
-let otomsortorder["Vt-105"]="900"
-let otomsortorder["Vt-106"]="901"
-let otomsortorder["Vt-107"]="902"
-let otomsortorder["Vt-108"]="903"
-let otomsortorder["Vt-109"]="904"
-let otomsortorder["Vt-110"]="905"
-let otomsortorder["Vt-111"]="906"
-let otomsortorder["Vt-112"]="907"
-let otomsortorder["Vt-119"]="908"
-let otomsortorder["Vt-120"]="909"
-let otomsortorder["Ek-99"]="910"
-let otomsortorder["Ek-100"]="911"
-let otomsortorder["Ek-101"]="912"
-let otomsortorder["Ek-102"]="913"
-let otomsortorder["Ek-103"]="914"
-let otomsortorder["Ek-104"]="915"
-let otomsortorder["Ek-105"]="916"
-let otomsortorder["Ek-106"]="917"
-let otomsortorder["Ek-107"]="918"
-let otomsortorder["Ek-108"]="919"
-let otomsortorder["Ek-109"]="920"
-let otomsortorder["Ek-110"]="921"
-let otomsortorder["Ek-111"]="922"
-let otomsortorder["Ek-112"]="923"
-let otomsortorder["Ek-113"]="924"
-let otomsortorder["Ek-119"]="925"
-let otomsortorder["Ek-120"]="926"
-let otomsortorder["Ek-121"]="927"
-let otomsortorder["Ji-103"]="928"
-let otomsortorder["Ji-104"]="929"
-let otomsortorder["Ji-105"]="930"
-let otomsortorder["Ji-106"]="931"
-let otomsortorder["Ji-107"]="932"
-let otomsortorder["Ji-108"]="933"
-let otomsortorder["Ji-109"]="934"
-let otomsortorder["Ji-110"]="935"
-let otomsortorder["Ji-111"]="936"
-let otomsortorder["Ji-112"]="937"
-let otomsortorder["Ji-113"]="938"
-let otomsortorder["Ji-114"]="939"
-let otomsortorder["Ji-121"]="940"
-let otomsortorder["Aw-104"]="941"
-let otomsortorder["Aw-105"]="942"
-let otomsortorder["Aw-106"]="943"
-let otomsortorder["Aw-107"]="944"
-let otomsortorder["Aw-108"]="945"
-let otomsortorder["Aw-109"]="946"
-let otomsortorder["Aw-110"]="947"
-let otomsortorder["Aw-111"]="948"
-let otomsortorder["Aw-112"]="949"
-let otomsortorder["Aw-113"]="950"
-let otomsortorder["Aw-114"]="951"
-let otomsortorder["Aw-115"]="952"
-let otomsortorder["Aw-124"]="953"
-let otomsortorder["Aw-125"]="954"
-let otomsortorder["Kn-106"]="955"
-let otomsortorder["Kn-107"]="956"
-let otomsortorder["Kn-108"]="957"
-let otomsortorder["Kn-109"]="958"
-let otomsortorder["Kn-110"]="959"
-let otomsortorder["Kn-111"]="960"
-let otomsortorder["Kn-112"]="961"
-let otomsortorder["Kn-113"]="962"
-let otomsortorder["Kn-114"]="963"
-let otomsortorder["Kn-115"]="964"
-let otomsortorder["Kn-116"]="965"
-let otomsortorder["Ha-108"]="966"
-let otomsortorder["Ha-109"]="967"
-let otomsortorder["Ha-110"]="968"
-let otomsortorder["Ha-111"]="969"
-let otomsortorder["Ha-112"]="970"
-let otomsortorder["Ha-113"]="971"
-let otomsortorder["Ha-114"]="972"
-let otomsortorder["Ha-115"]="973"
-let otomsortorder["Ha-116"]="974"
-let otomsortorder["Ha-117"]="975"
-let otomsortorder["Ax-109"]="976"
-let otomsortorder["Ax-110"]="977"
-let otomsortorder["Ax-111"]="978"
-let otomsortorder["I-113"]="979"
-let otomsortorder["I-114"]="980"
-let otomsortorder["I-115"]="981"
-let otomsortorder["Jb-116"]="982"
-let otomsortorder["Go-117"]="983"
-let otomsortorder["Go-118"]="984"
-let otomsortorder["X-119"]="985"
-let otomsortorder["Eh-123"]="986"
-let otomsortorder["Eh-124"]="987"
-let otomsortorder["Ys-125"]="988"
+let otomsortorder["Cv-115"]="893"
+let otomsortorder["Vt-98"]="894"
+let otomsortorder["Vt-99"]="895"
+let otomsortorder["Vt-100"]="896"
+let otomsortorder["Vt-101"]="897"
+let otomsortorder["Vt-102"]="898"
+let otomsortorder["Vt-103"]="899"
+let otomsortorder["Vt-104"]="900"
+let otomsortorder["Vt-105"]="901"
+let otomsortorder["Vt-106"]="902"
+let otomsortorder["Vt-107"]="903"
+let otomsortorder["Vt-108"]="904"
+let otomsortorder["Vt-109"]="905"
+let otomsortorder["Vt-110"]="906"
+let otomsortorder["Vt-111"]="907"
+let otomsortorder["Vt-112"]="908"
+let otomsortorder["Vt-119"]="909"
+let otomsortorder["Vt-120"]="910"
+let otomsortorder["Ek-99"]="911"
+let otomsortorder["Ek-100"]="912"
+let otomsortorder["Ek-101"]="913"
+let otomsortorder["Ek-102"]="914"
+let otomsortorder["Ek-103"]="915"
+let otomsortorder["Ek-104"]="916"
+let otomsortorder["Ek-105"]="917"
+let otomsortorder["Ek-106"]="918"
+let otomsortorder["Ek-107"]="919"
+let otomsortorder["Ek-108"]="920"
+let otomsortorder["Ek-109"]="921"
+let otomsortorder["Ek-110"]="922"
+let otomsortorder["Ek-111"]="923"
+let otomsortorder["Ek-112"]="924"
+let otomsortorder["Ek-113"]="925"
+let otomsortorder["Ek-119"]="926"
+let otomsortorder["Ek-120"]="927"
+let otomsortorder["Ek-121"]="928"
+let otomsortorder["Ji-103"]="929"
+let otomsortorder["Ji-104"]="930"
+let otomsortorder["Ji-105"]="931"
+let otomsortorder["Ji-106"]="932"
+let otomsortorder["Ji-107"]="933"
+let otomsortorder["Ji-108"]="934"
+let otomsortorder["Ji-109"]="935"
+let otomsortorder["Ji-110"]="936"
+let otomsortorder["Ji-111"]="937"
+let otomsortorder["Ji-112"]="938"
+let otomsortorder["Ji-113"]="939"
+let otomsortorder["Ji-114"]="940"
+let otomsortorder["Ji-121"]="941"
+let otomsortorder["Aw-104"]="942"
+let otomsortorder["Aw-105"]="943"
+let otomsortorder["Aw-106"]="944"
+let otomsortorder["Aw-107"]="945"
+let otomsortorder["Aw-108"]="946"
+let otomsortorder["Aw-109"]="947"
+let otomsortorder["Aw-110"]="948"
+let otomsortorder["Aw-111"]="949"
+let otomsortorder["Aw-112"]="950"
+let otomsortorder["Aw-113"]="951"
+let otomsortorder["Aw-114"]="952"
+let otomsortorder["Aw-115"]="953"
+let otomsortorder["Aw-124"]="954"
+let otomsortorder["Aw-125"]="955"
+let otomsortorder["Kn-106"]="956"
+let otomsortorder["Kn-107"]="957"
+let otomsortorder["Kn-108"]="958"
+let otomsortorder["Kn-109"]="959"
+let otomsortorder["Kn-110"]="960"
+let otomsortorder["Kn-111"]="961"
+let otomsortorder["Kn-112"]="962"
+let otomsortorder["Kn-113"]="963"
+let otomsortorder["Kn-114"]="964"
+let otomsortorder["Kn-115"]="965"
+let otomsortorder["Kn-116"]="966"
+let otomsortorder["Ha-108"]="967"
+let otomsortorder["Ha-109"]="968"
+let otomsortorder["Ha-110"]="969"
+let otomsortorder["Ha-111"]="970"
+let otomsortorder["Ha-112"]="971"
+let otomsortorder["Ha-113"]="972"
+let otomsortorder["Ha-114"]="973"
+let otomsortorder["Ha-115"]="974"
+let otomsortorder["Ha-116"]="975"
+let otomsortorder["Ha-117"]="976"
+let otomsortorder["Ax-109"]="977"
+let otomsortorder["Ax-110"]="978"
+let otomsortorder["Ax-111"]="979"
+let otomsortorder["I-113"]="980"
+let otomsortorder["I-114"]="981"
+let otomsortorder["I-115"]="982"
+let otomsortorder["Jb-116"]="983"
+let otomsortorder["Go-117"]="984"
+let otomsortorder["Go-118"]="985"
+let otomsortorder["X-119"]="986"
+let otomsortorder["Eh-123"]="987"
+let otomsortorder["Eh-124"]="988"
+let otomsortorder["Ys-125"]="989"
 
 let decaydict["1  1 Ju"]=decay_text_stable          | let decaydict["Ju-1"]=decay_text_stable
 let decaydict["2  1 Ju"]=decay_text_stable          | let decaydict["Ju-2"]=decay_text_stable
@@ -12945,6 +12957,7 @@ let decaydict["109 52 Cv"]=decay_text_alpha           | let decaydict["Cv-109"]=
 let decaydict["110 52 Cv"]=decay_text_alpha           | let decaydict["Cv-110"]=decay_text_alpha
 let decaydict["111 52 Cv"]=decay_text_alpha           | let decaydict["Cv-111"]=decay_text_alpha
 let decaydict["114 52 Cv"]=decay_text_alpha           | let decaydict["Cv-114"]=decay_text_alpha
+let decaydict["115 52 Cv"]=decay_text_alpha           | let decaydict["Cv-115"]=decay_text_alpha
 let decaydict["98 53 Vt"]=decay_text_beta_plus       | let decaydict["Vt-98"]=decay_text_beta_plus
 let decaydict["99 53 Vt"]=decay_text_beta_plus       | let decaydict["Vt-99"]=decay_text_beta_plus
 let decaydict["100 53 Vt"]=decay_text_beta_plus       | let decaydict["Vt-100"]=decay_text_beta_plus
@@ -13935,6 +13948,7 @@ let stabilitydict["109 52 Cv"]="0.699" | let stabilitydict["Cv-109"]="0.699"
 let stabilitydict["110 52 Cv"]="0.700" | let stabilitydict["Cv-110"]="0.700"
 let stabilitydict["111 52 Cv"]="0.688" | let stabilitydict["Cv-111"]="0.688"
 let stabilitydict["114 52 Cv"]="0.641" | let stabilitydict["Cv-114"]="0.641"
+let stabilitydict["115 52 Cv"]="0.611" | let stabilitydict["Cv-115"]="0.611"
 let stabilitydict["98 53 Vt"]="0.289" | let stabilitydict["Vt-98"]="0.289"
 let stabilitydict["99 53 Vt"]="0.296" | let stabilitydict["Vt-99"]="0.296"
 let stabilitydict["100 53 Vt"]="0.339" | let stabilitydict["Vt-100"]="0.339"
@@ -14925,6 +14939,7 @@ let   electrodict["109 52 Cv"]="0.103" | let   electrodict["Cv-109"]="0.103"
 let   electrodict["110 52 Cv"]="0.103" | let   electrodict["Cv-110"]="0.103"
 let   electrodict["111 52 Cv"]="0.103" | let   electrodict["Cv-111"]="0.103"
 let   electrodict["114 52 Cv"]="0.103" | let   electrodict["Cv-114"]="0.103"
+let   electrodict["115 52 Cv"]="0.103" | let   electrodict["Cv-115"]="0.103"
 let   electrodict["98 53 Vt"]="0.157" | let   electrodict["Vt-98"]="0.157"
 let   electrodict["99 53 Vt"]="0.157" | let   electrodict["Vt-99"]="0.157"
 let   electrodict["100 53 Vt"]="0.157" | let   electrodict["Vt-100"]="0.157"
@@ -15917,6 +15932,7 @@ syn match rarity_rare     /\<109\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<
 syn match rarity_rare     /\<110\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<Cv-110\>/          
 syn match rarity_rare     /\<111\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<Cv-111\>/          
 syn match rarity_rare     /\<114\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<Cv-114\>/          
+syn match rarity_rare     /\<115\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<Cv-115\>/          
 syn match rarity_rare     /\<98\s\+53\s\+Vt\>/   | syn match rarity_rare     /\<Vt-98\>/           
 syn match rarity_rare     /\<99\s\+53\s\+Vt\>/   | syn match rarity_rare     /\<Vt-99\>/           
 syn match rarity_rare     /\<100\s\+53\s\+Vt\>/  | syn match rarity_rare     /\<Vt-100\>/          
@@ -16908,6 +16924,7 @@ syn match Decay_type_alpha           /\<109\s\+52\s\+Cv\>/  | syn match Decay_ty
 syn match Decay_type_alpha           /\<110\s\+52\s\+Cv\>/  | syn match Decay_type_alpha           /\<Cv-110\>/          
 syn match Decay_type_alpha           /\<111\s\+52\s\+Cv\>/  | syn match Decay_type_alpha           /\<Cv-111\>/          
 syn match Decay_type_alpha           /\<114\s\+52\s\+Cv\>/  | syn match Decay_type_alpha           /\<Cv-114\>/          
+syn match Decay_type_alpha           /\<115\s\+52\s\+Cv\>/  | syn match Decay_type_alpha           /\<Cv-115\>/          
 syn match Decay_type_beta_plus       /\<98\s\+53\s\+Vt\>/   | syn match Decay_type_beta_plus       /\<Vt-98\>/           
 syn match Decay_type_beta_plus       /\<99\s\+53\s\+Vt\>/   | syn match Decay_type_beta_plus       /\<Vt-99\>/           
 syn match Decay_type_beta_plus       /\<100\s\+53\s\+Vt\>/  | syn match Decay_type_beta_plus       /\<Vt-100\>/          
@@ -17006,20 +17023,18 @@ syn match Decay_type_alpha           /\<124\s\+65\s\+Eh\>/  | syn match Decay_ty
 syn match Decay_type_alpha           /\<125\s\+66\s\+Ys\>/  | syn match Decay_type_alpha           /\<Ys-125\>/          
 
 else
-hi chain0     ctermbg=green          ctermfg=black
-hi chain1     ctermbg=blue           ctermfg=white
-hi chain2     ctermbg=lightblue      ctermfg=black
-hi chain3     ctermbg=lightcyan      ctermfg=black
-hi chain4     ctermbg=magenta        ctermfg=white
-hi chain5     ctermbg=lightmagenta   ctermfg=black
-hi chain6     ctermbg=darkyellow     ctermfg=white
-hi chain7     ctermbg=yellow         ctermfg=black
-hi chain8     ctermbg=lightyellow    ctermfg=black
-hi chain9     ctermbg=gray           ctermfg=white
-hi chain10    ctermbg=red            ctermfg=white
-hi chain11    ctermbg=lightred       ctermfg=black
-
-" [ ] what if I could encode a character to show the coloring for the lower level beside the isotope so you can see if its lesser or greater?
+hi chain0     ctermbg=darkgreen      ctermfg=black    
+hi chain1     ctermbg=green          ctermfg=black    
+hi chain2     ctermbg=lightgreen     ctermfg=black    
+hi chain3     ctermbg=blue           ctermfg=white    
+hi chain4     ctermbg=lightblue      ctermfg=black    
+hi chain5     ctermbg=lightcyan      ctermfg=black    
+hi chain6     ctermbg=lightmagenta   ctermfg=black    
+hi chain7     ctermbg=magenta        ctermfg=white    
+hi chain8     ctermbg=red            ctermfg=white    
+hi chain9     ctermbg=darkred        ctermfg=white    
+hi chain10    ctermbg=black          ctermfg=lightgray
+hi chain11    ctermbg=lightgrey      ctermfg=white    
 
 syn match chain0   /\<Sr-1\>/
 syn match chain0   /\<Sr-2\>/
@@ -17320,6 +17335,7 @@ syn match chain2  /\<Cv-104\>/
 syn match chain2  /\<Cv-108\>/
 syn match chain2  /\<Cv-109\>/
 syn match chain2  /\<D-82\>/
+syn match chain2  /\<Da-106\>/
 syn match chain2  /\<Da-97\>/
 syn match chain2  /\<Dd-100\>/
 syn match chain2  /\<Dd-101\>/
@@ -17339,6 +17355,7 @@ syn match chain2  /\<Ha-116\>/
 syn match chain2  /\<Ha-117\>/
 syn match chain2  /\<Iu-79\>/
 syn match chain2  /\<Ji-107\>/
+syn match chain2  /\<Ji-108\>/
 syn match chain2  /\<Ji-109\>/
 syn match chain2  /\<Ji-110\>/
 syn match chain2  /\<Ji-113\>/
@@ -17369,10 +17386,12 @@ syn match chain2  /\<S-100\>/
 syn match chain2  /\<S-104\>/
 syn match chain2  /\<S-105\>/
 syn match chain2  /\<S-97\>/
+syn match chain2  /\<S-98\>/
 syn match chain2  /\<Se-88\>/
 syn match chain2  /\<Se-97\>/
 syn match chain2  /\<Se-98\>/
 syn match chain2  /\<T-18\>/
+syn match chain2  /\<U-83\>/
 syn match chain2  /\<U-86\>/
 syn match chain2  /\<U-90\>/
 syn match chain2  /\<U-91\>/
@@ -17411,18 +17430,20 @@ syn match chain3  /\<Cv-110\>/
 syn match chain3  /\<Cv-111\>/
 syn match chain3  /\<Da-103\>/
 syn match chain3  /\<Da-105\>/
-syn match chain3  /\<Da-106\>/
 syn match chain3  /\<Da-107\>/
+syn match chain3  /\<Da-95\>/
 syn match chain3  /\<Da-96\>/
 syn match chain3  /\<Dd-102\>/
+syn match chain3  /\<Dd-103\>/
 syn match chain3  /\<Dd-90\>/
 syn match chain3  /\<Dd-91\>/
 syn match chain3  /\<Dd-92\>/
+syn match chain3  /\<Ek-105\>/
 syn match chain3  /\<Ek-106\>/
+syn match chain3  /\<Gd-38\>/
 syn match chain3  /\<Ha-112\>/
 syn match chain3  /\<Ha-113\>/
 syn match chain3  /\<Ha-114\>/
-syn match chain3  /\<Ji-108\>/
 syn match chain3  /\<Kn-111\>/
 syn match chain3  /\<Lx-79\>/
 syn match chain3  /\<Lx-80\>/
@@ -17449,6 +17470,7 @@ syn match chain3  /\<S-99\>/
 syn match chain3  /\<Se-100\>/
 syn match chain3  /\<Se-101\>/
 syn match chain3  /\<Se-87\>/
+syn match chain3  /\<Se-99\>/
 syn match chain3  /\<U-85\>/
 syn match chain3  /\<U-93\>/
 syn match chain3  /\<U-94\>/
@@ -17463,21 +17485,20 @@ syn match chain3  /\<W-87\>/
 syn match chain3  /\<W-88\>/
 syn match chain3  /\<W-89\>/
 syn match chain3  /\<Xj-21\>/
+syn match chain3  /\<Z-100\>/
 syn match chain3  /\<Z-107\>/
 syn match chain3  /\<Z-108\>/
 syn match chain3  /\<Z-97\>/
 syn match chain3  /\<Z-98\>/
 syn match chain3  /\<Z-99\>/
-syn match chain3  /\<Da-95\>/
-syn match chain3  /\<Z-100\>/
-syn match chain3  /\<Se-99\>/
+syn match chain4  /\<Cj-81\>/
 syn match chain4  /\<Co-88\>/
 syn match chain4  /\<Cv-100\>/
 syn match chain4  /\<Cv-98\>/
 syn match chain4  /\<Cv-99\>/
 syn match chain4  /\<Da-108\>/
 syn match chain4  /\<Da-93\>/
-syn match chain4  /\<Dd-103\>/
+syn match chain4  /\<Da-94\>/
 syn match chain4  /\<Dd-104\>/
 syn match chain4  /\<Dd-88\>/
 syn match chain4  /\<Dd-89\>/
@@ -17485,7 +17506,6 @@ syn match chain4  /\<Dz-10\>/
 syn match chain4  /\<Ek-102\>/
 syn match chain4  /\<Ek-103\>/
 syn match chain4  /\<Ek-104\>/
-syn match chain4  /\<Ek-105\>/
 syn match chain4  /\<Ha-111\>/
 syn match chain4  /\<Iu-73\>/
 syn match chain4  /\<Iu-81\>/
@@ -17494,21 +17514,23 @@ syn match chain4  /\<Ji-106\>/
 syn match chain4  /\<Kn-109\>/
 syn match chain4  /\<Kn-110\>/
 syn match chain4  /\<Lx-93\>/
+syn match chain4  /\<Lx-94\>/
 syn match chain4  /\<N-93\>/
 syn match chain4  /\<N-94\>/
 syn match chain4  /\<N-96\>/
 syn match chain4  /\<Nm-102\>/
+syn match chain4  /\<Nm-103\>/
 syn match chain4  /\<Nm-87\>/
 syn match chain4  /\<Ok-105\>/
 syn match chain4  /\<Ok-106\>/
 syn match chain4  /\<Ok-107\>/
+syn match chain4  /\<Ok-90\>/
 syn match chain4  /\<Ok-91\>/
 syn match chain4  /\<Ok-94\>/
 syn match chain4  /\<Pg-52\>/
 syn match chain4  /\<Pg-59\>/
 syn match chain4  /\<S-108\>/
 syn match chain4  /\<S-95\>/
-syn match chain4  /\<S-98\>/
 syn match chain4  /\<Se-102\>/
 syn match chain4  /\<Se-85\>/
 syn match chain4  /\<Se-86\>/
@@ -17517,178 +17539,168 @@ syn match chain4  /\<U-95\>/
 syn match chain4  /\<Vl-84\>/
 syn match chain4  /\<Vl-98\>/
 syn match chain4  /\<Vl-99\>/
+syn match chain4  /\<Vt-101\>/
 syn match chain4  /\<W-90\>/
 syn match chain4  /\<Wy-46\>/
+syn match chain4  /\<Yv-80\>/
 syn match chain4  /\<Z-109\>/
 syn match chain4  /\<Z-110\>/
-syn match chain4  /\<Da-94\>/
 syn match chain4  /\<Z-96\>/
-syn match chain4  /\<Yv-80\>/
-syn match chain4  /\<Vt-101\>/
 syn match chain5  /\<Ai-59\>/
 syn match chain5  /\<Aw-106\>/
 syn match chain5  /\<Aw-107\>/
 syn match chain5  /\<Aw-108\>/
-syn match chain5  /\<Cj-81\>/
+syn match chain5  /\<Cj-80\>/
 syn match chain5  /\<Cv-114\>/
 syn match chain5  /\<Cv-97\>/
+syn match chain5  /\<D-83\>/
 syn match chain5  /\<D-84\>/
 syn match chain5  /\<Da-109\>/
+syn match chain5  /\<Da-90\>/
 syn match chain5  /\<Da-92\>/
 syn match chain5  /\<Dd-105\>/
 syn match chain5  /\<Dx-43\>/
 syn match chain5  /\<Dx-44\>/
+syn match chain5  /\<Ek-100\>/
 syn match chain5  /\<Ek-101\>/
 syn match chain5  /\<Ek-119\>/
+syn match chain5  /\<Ek-120\>/
 syn match chain5  /\<F-73\>/
+syn match chain5  /\<Ha-109\>/
+syn match chain5  /\<Ha-110\>/
 syn match chain5  /\<I-115\>/
+syn match chain5  /\<Iu-83\>/
 syn match chain5  /\<Ji-104\>/
 syn match chain5  /\<Ji-105\>/
+syn match chain5  /\<K-37\>/
 syn match chain5  /\<Kn-107\>/
+syn match chain5  /\<Kn-108\>/
 syn match chain5  /\<L-47\>/
 syn match chain5  /\<L-55\>/
 syn match chain5  /\<Lu-41\>/
 syn match chain5  /\<Lx-76\>/
 syn match chain5  /\<Lx-77\>/
-syn match chain5  /\<Lx-94\>/
 syn match chain5  /\<Lx-95\>/
+syn match chain5  /\<Lx-96\>/
 syn match chain5  /\<N-95\>/
+syn match chain5  /\<Nm-104\>/
 syn match chain5  /\<Nm-105\>/
 syn match chain5  /\<Ok-89\>/
-syn match chain5  /\<Ok-90\>/
 syn match chain5  /\<Pb-52\>/
 syn match chain5  /\<S-94\>/
 syn match chain5  /\<Se-103\>/
 syn match chain5  /\<Se-104\>/
 syn match chain5  /\<Se-84\>/
-syn match chain5  /\<U-83\>/
+syn match chain5  /\<U-96\>/
+syn match chain5  /\<U-97\>/
 syn match chain5  /\<Uq-50\>/
+syn match chain5  /\<Uq-51\>/
 syn match chain5  /\<Ux-57\>/
 syn match chain5  /\<V-40\>/
 syn match chain5  /\<V-47\>/
 syn match chain5  /\<Vl-100\>/
 syn match chain5  /\<Vl-101\>/
 syn match chain5  /\<Vt-100\>/
-syn match chain5  /\<W-91\>/
-syn match chain5  /\<Z-111\>/
-syn match chain5  /\<Ha-110\>/
-syn match chain5  /\<Kn-108\>/
-syn match chain5  /\<Cj-80\>/
-syn match chain5  /\<Iu-83\>/
-syn match chain5  /\<K-37\>/
-syn match chain5  /\<U-96\>/
+syn match chain5  /\<Vt-98\>/
 syn match chain5  /\<Vt-99\>/
+syn match chain5  /\<W-91\>/
+syn match chain5  /\<Wy-55\>/
+syn match chain5  /\<Z-111\>/
+syn match chain5  /\<Z-95\>/
 syn match chain6  /\<Ai-58\>/
+syn match chain6  /\<Aw-104\>/
+syn match chain6  /\<Aw-105\>/
 syn match chain6  /\<Aw-124\>/
 syn match chain6  /\<Aw-125\>/
 syn match chain6  /\<Ax-111\>/
+syn match chain6  /\<C-53\>/
+syn match chain6  /\<Cl-30\>/
+syn match chain6  /\<Co-86\>/
+syn match chain6  /\<Cv-115\>/
 syn match chain6  /\<Da-91\>/
 syn match chain6  /\<Dd-106\>/
 syn match chain6  /\<Dx-35\>/
 syn match chain6  /\<Eb-23\>/
-syn match chain6  /\<Ek-100\>/
-syn match chain6  /\<Ek-120\>/
+syn match chain6  /\<Eh-123\>/
+syn match chain6  /\<Eh-124\>/
 syn match chain6  /\<Ek-99\>/
-syn match chain6  /\<Gd-38\>/
 syn match chain6  /\<Gd-46\>/
+syn match chain6  /\<Go-117\>/
+syn match chain6  /\<Go-118\>/
+syn match chain6  /\<Ha-108\>/
 syn match chain6  /\<Iu-72\>/
 syn match chain6  /\<Jb-116\>/
+syn match chain6  /\<Ji-103\>/
+syn match chain6  /\<Ji-121\>/
 syn match chain6  /\<Kn-106\>/
+syn match chain6  /\<L-56\>/
 syn match chain6  /\<L-57\>/
-syn match chain6  /\<Lx-96\>/
 syn match chain6  /\<Mt-39\>/
-syn match chain4  /\<Nm-103\>/
 syn match chain6  /\<P-25\>/
 syn match chain6  /\<Pb-43\>/
 syn match chain6  /\<Pg-51\>/
 syn match chain6  /\<Qe-52\>/
 syn match chain6  /\<Qe-61\>/
 syn match chain6  /\<T-19\>/
-syn match chain5  /\<U-97\>/
+syn match chain6  /\<U-98\>/
 syn match chain6  /\<Uq-41\>/
-syn match chain6  /\<Uq-51\>/
 syn match chain6  /\<Ux-48\>/
 syn match chain6  /\<Ux-49\>/
 syn match chain6  /\<Ux-58\>/
 syn match chain6  /\<V-39\>/
 syn match chain6  /\<V-48\>/
 syn match chain6  /\<Vt-119\>/
-syn match chain6  /\<Vt-98\>/
 syn match chain6  /\<W-76\>/
 syn match chain6  /\<W-77\>/
+syn match chain6  /\<Wy-45\>/
 syn match chain6  /\<Wy-54\>/
-syn match chain6  /\<Wy-55\>/
 syn match chain6  /\<Wy-56\>/
+syn match chain6  /\<X-119\>/
+syn match chain6  /\<Ys-125\>/
 syn match chain6  /\<Z-112\>/
-syn match chain6  /\<Z-95\>/
-syn match chain6  /\<Aw-105\>/
-syn match chain6  /\<Ji-103\>/
-syn match chain6  /\<Go-118\>/
-syn match chain6  /\<Co-86\>/
-syn match chain6  /\<D-83\>/
-syn match chain7  /\<Aw-104\>/
 syn match chain7  /\<Ax-109\>/
 syn match chain7  /\<Ax-110\>/
-syn match chain7  /\<C-53\>/
-syn match chain7  /\<Cl-30\>/
-syn match chain7  /\<Da-90\>/
-syn match chain7  /\<Eh-123\>/
-syn match chain7  /\<Eh-124\>/
+syn match chain7  /\<C-54\>/
+syn match chain7  /\<Cj-68\>/
+syn match chain7  /\<Cl-24\>/
+syn match chain7  /\<Co-74\>/
+syn match chain7  /\<Co-75\>/
 syn match chain7  /\<Ek-121\>/
 syn match chain7  /\<F-60\>/
 syn match chain7  /\<Gj-12\>/
-syn match chain7  /\<Go-117\>/
 syn match chain7  /\<Gy-63\>/
-syn match chain6  /\<Ji-121\>/
+syn match chain7  /\<I-113\>/
+syn match chain7  /\<I-114\>/
+syn match chain7  /\<K-29\>/
+syn match chain7  /\<Kk-64\>/
 syn match chain7  /\<L-46\>/
 syn match chain7  /\<L-48\>/
-syn match chain5  /\<Nm-104\>/
+syn match chain7  /\<Ns-56\>/
+syn match chain7  /\<Ns-57\>/
 syn match chain7  /\<Ns-67\>/
 syn match chain7  /\<P-26\>/
 syn match chain7  /\<Qe-53\>/
-syn match chain6  /\<U-98\>/
+syn match chain7  /\<Ro-28\>/
 syn match chain7  /\<Uq-49\>/
 syn match chain7  /\<Uq-52\>/
 syn match chain7  /\<Vt-120\>/
-syn match chain7  /\<Wy-45\>/
-syn match chain7  /\<X-119\>/
-syn match chain7  /\<Ys-125\>/
 syn match chain7  /\<Yu-26\>/
-syn match chain7  /\<Ns-56\>/
-syn match chain8  /\<C-54\>/
-syn match chain8  /\<Cj-68\>/
-syn match chain8  /\<Cl-24\>/
-syn match chain8  /\<Co-74\>/
-syn match chain8  /\<Co-75\>/
+syn match chain7  /\<Yv-66\>/
+syn match chain7  /\<Yv-67\>/
+syn match chain8  /\<D-74\>/
+syn match chain8  /\<D-75\>/
+syn match chain8  /\<Dx-36\>/
 syn match chain8  /\<F-59\>/
-syn match chain8  /\<Ha-108\>/
-syn match chain8  /\<Ha-109\>/
-syn match chain8  /\<K-29\>/
 syn match chain8  /\<K-36\>/
-syn match chain8  /\<Kk-64\>/
-syn match chain6  /\<L-56\>/
-syn match chain8  /\<Ns-57\>/
+syn match chain8  /\<Kk-65\>/
+syn match chain8  /\<Lu-34\>/
 syn match chain8  /\<Pg-50\>/
-syn match chain8  /\<Ro-28\>/
-syn match chain8  /\<Yv-66\>/
-syn match chain8  /\<Yv-67\>/
-syn match chain9  /\<D-74\>/
-syn match chain9  /\<D-75\>/
-syn match chain9  /\<Dx-36\>/
-syn match chain9  /\<I-113\>/
-syn match chain9  /\<I-114\>/
-syn match chain9  /\<Kk-65\>/
-syn match chain9  /\<Lu-34\>/
+syn match chain8  /\<Vi-15\>/
+syn match chain8  /\<Xj-16\>/
+syn match chain8  /\<Yv-68\>/
+syn match chain9  /\<Kk-66\>/
 syn match chain9  /\<Nd-27\>/
-syn match chain9  /\<Vi-15\>/
-syn match chain9  /\<Xj-16\>/
-syn match chain9  /\<Yv-68\>/
-syn match chain10 /\<Kk-66\>/
 syn match chain10 /\<T-14\>/
-
-
-
-
 " {{{{
 
 if 0
@@ -17711,10 +17723,6 @@ hi chain8_7     ctermbg=yellow         ctermfg=black
 hi chain9_8     ctermbg=lightyellow    ctermfg=black
 hi chain10_9    ctermbg=gray           ctermfg=white
 hi chain11_10   ctermbg=red            ctermfg=white
-
-
-
-
 
 
 
@@ -18173,6 +18181,7 @@ syn match chain5_4  /\zs\s\ze\<Aw-107\>/
 syn match chain5_4  /\zs\s\ze\<Aw-108\>/
 syn match chain5_4  /\zs\s\ze\<Cj-81\>/
 syn match chain5_4  /\zs\s\ze\<Cv-114\>/
+syn match chain6_5  /\zs\s\ze\<Cv-115\>/
 syn match chain5_4  /\zs\s\ze\<Cv-97\>/
 syn match chain5_4  /\zs\s\ze\<D-84\>/
 syn match chain5_4  /\zs\s\ze\<Da-109\>/
@@ -18334,10 +18343,7 @@ syn match chain10_9 /\zs\s\ze\<T-14\>/
 endif
 "
 " }}}}
-"
 
-
-" Alpha chains
 syn match chain0 /\<Ju-1\>/
 syn match chain0 /\<Ju-2\>/
 syn match chain0 /\<Ju-3\>/
@@ -19571,6 +19577,7 @@ let     shelldict["109 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let  
 let     shelldict["110 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let     shelldict["Cv-110"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥"
 let     shelldict["111 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let     shelldict["Cv-111"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥"
 let     shelldict["114 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let     shelldict["Cv-114"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥"
+let     shelldict["115 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let     shelldict["Cv-115"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥"
 let     shelldict["98 53 Vt"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥" | let     shelldict["Vt-98"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥"
 let     shelldict["99 53 Vt"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥" | let     shelldict["Vt-99"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥"
 let     shelldict["100 53 Vt"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥" | let     shelldict["Vt-100"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥"
@@ -20561,6 +20568,7 @@ let shelldictlong["109 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼
 let shelldictlong["110 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cv-110"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["111 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cv-111"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["114 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cv-114"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["115 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cv-115"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["98 53 Vt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vt-98"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["99 53 Vt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vt-99"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["100 53 Vt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vt-100"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -21551,6 +21559,7 @@ let seriesdict["109 52 Cv"]="metal" | let seriesdict["Cv-109"]="metal"
 let seriesdict["110 52 Cv"]="metal" | let seriesdict["Cv-110"]="metal"
 let seriesdict["111 52 Cv"]="metal" | let seriesdict["Cv-111"]="metal"
 let seriesdict["114 52 Cv"]="metal" | let seriesdict["Cv-114"]="metal"
+let seriesdict["115 52 Cv"]="metal" | let seriesdict["Cv-115"]="metal"
 let seriesdict["98 53 Vt"]="metal" | let seriesdict["Vt-98"]="metal"
 let seriesdict["99 53 Vt"]="metal" | let seriesdict["Vt-99"]="metal"
 let seriesdict["100 53 Vt"]="metal" | let seriesdict["Vt-100"]="metal"
@@ -22541,6 +22550,7 @@ let otomlookup["109 52"]="Cv-109"
 let otomlookup["110 52"]="Cv-110"
 let otomlookup["111 52"]="Cv-111"
 let otomlookup["114 52"]="Cv-114"
+let otomlookup["115 52"]="Cv-115"
 let otomlookup["98 53"]="Vt-98"
 let otomlookup["99 53"]="Vt-99"
 let otomlookup["100 53"]="Vt-100"

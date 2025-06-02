@@ -921,6 +921,7 @@ grab_token_image "Cv"  "109"   $universe_bohr
 grab_token_image "Cv"  "110"   $universe_bohr
 grab_token_image "Cv"  "111"   $universe_bohr
 grab_token_image "Cv"  "114"   $universe_bohr
+grab_token_image "Cv"  "115"   $universe_bohr
 grab_token_image "Vt"   "98"   $universe_bohr
 grab_token_image "Vt"   "99"   $universe_bohr
 grab_token_image "Vt"  "100"   $universe_bohr
