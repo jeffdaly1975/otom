@@ -3243,9 +3243,66 @@ foreach my $k (sort { $discovered_molecules{$b} <=> $discovered_molecules{$a} ||
 print STDERR "\nDUPLICATE INPUT LINES SKIPPED: $skip_duplicate_input\n";
 
 
+
+
+
+
+
+
+
+########################################################################################################################
 #
 # Find missing OTOMROs
 #
+########################################################################################################################
+sub string_range_smush {
+  my $string = shift @_;
+  $string =~ s/\s*,\s*/ /g;
+  $string =~ s/\b0+([^0])/$1/g;
+  my @numbers = ( $string =~ m/\b(\d+)/g);
+  return range_smush( \@numbers );
+}
+
+
+sub range_smush {
+  my $aref=shift @_;
+
+  # make a sorted list of unique values
+  my %seen = ();                             
+  my @range = sort {$a <=> $b} grep { ! $seen{$_} ++ } @$aref;
+
+  my $return_string='';
+  my $ranging=0;
+
+  return $return_string unless scalar(@range)>0;
+
+  my $prev= shift @range;
+  $return_string .= $prev;
+
+  my $i;
+  foreach $i (@range){
+    if ($prev + 1 == $i){
+      $ranging=1;
+    }else{
+      if ($ranging){
+        $return_string .= "-$prev,$i";
+        $ranging=0;
+      }else{
+        $return_string .= ",$i";
+      }
+    }
+    $prev=$i;
+  }
+
+  if ($ranging){
+    $return_string .= "-$prev";
+  }
+
+ return $return_string;
+}
+
+
+
 my @the_keys=sort { $a <=> $b } keys %db;
 print STDERR "DEBUG: the_keys has [".scalar(@the_keys)."] elements\n";
 print STDERR "DEBUG: the_keys[0]  =[". $the_keys[0]   ."]\n";
@@ -3261,9 +3318,14 @@ if (scalar(@the_keys) > 1){
     print STDERR "DEBUG: missing OTOMRO: $this_o\n"  unless exists $db{$this_o};
   }
 
+
   print STDERR "\n";
-  print STDERR "MISSING OTOMRO:\n";
-  print STDERR " $_\n" for sort @missing_otomros;
+  print STDERR "MISSING OTOMRO: " . scalar(@the_keys) ." reactions\n";
+
+  print STDERR "  $_\n" for split( /,/, string_range_smush( join ",", @missing_otomros));
+
+# print STDERR " $_\n" for sort @missing_otomros;
+
 }
 
 print STDERR "DEBUG: EXITING\n";
