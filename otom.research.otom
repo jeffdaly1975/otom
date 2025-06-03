@@ -2,6 +2,51 @@
 
  :%s/â/∙/ge | %s/âº/⁺/ge | %s/â»/⁻/ge | %s/Âª/ª/ge | %s/Î¦/Φ/ge | %s/â/⊙/ge | %s/.\zsÃ/Þ/ge | %s/â¼/◼/ge | %s/â»/◻/ge | %s/â/₂/ge | %s/â/₃/ge | %s/â/₄/ge | %s/â/₅/ge | %s/â¬/⬆/ge | %s/â¬/⬇/ge | %s/â¦/⎦/ge | %s/â£/⎣/ge | %s/â¢/⎢/ge | %s/â¥/⎥/ge | %s/â¸¤/⎥/ge | %s/â¸¥/⎢/ge
 
+2025-06-02 Jun.Mon 15:27:39 Try to make Go-116?
+|  Xj-16 +    Ek-99  => |⬆ 115  64 .. |= 115  63  X |⬇ 115  62 Go
+
+ 6|0 Vi-10 + 6  Kn-106 => |⬆ 116  64 .. |= 116  63  X |⬇ 116  62 Go
+ 6|0 Xj-17 + 6  Ek-99  => |⬆ 116  64 .. |= 116  63  X |⬇ 116  62 Go
+ 7|0 Dz-7  + 7  Ax-109 => |⬆ 116  64 .. |= 116  63  X |⬇ 116  62 Go
+12|7 Yu-26 + 5  Da-90  => |⬆ 116  64 .. |= 116  63  X |⬇ 116  62 Go
+13|8 Xj-16 + 5  Ek-100 => |⬆ 116  64 .. |= 116  63  X |⬇ 116  62 Go
+14|9 Nd-27 + 5  Ok-89  => |⬆ 116  64 .. |= 116  63  X |⬇ 116  62 Go
+
+[r]| K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         |
+[r]|Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         |
+[r]|Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   |
+[r]|Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  |
+[r]|Eb-19⁺ +  Ok-92⁺   +[  1876.87 -  10000] => P-22 + Dd-89  |
+[r]|Ro-22⁺ +  Dd-89⁺   +[  1843.36 -   1845] => P-22 + Ok-89  |
+[r]|Mt-32⁺ +  Ok-89⁺   +[  2234.39 -   2240] => P-22 + Ek-99  |
+[f] Xj-17 + Ek-99   + 10000 => ? X-116 ? --> ??-116  <---NOPE it makes T-17 + Vt-99 using 500.00 decay
+
+17  9 Xj + 99 54 Ek = 116 63  X
+17  8  T + 99 53 Vt = 116 61 Jb
+
+  Why did that split into those? Why did it drop 2 protons, 1 from each output? Its like it combined to X-116, then did double beta+ decay to Go-116 then Jb-116, then split very unsually to T-17 + Vt-99
+
+try:
+[ ]|  Ro-22 +     Z-97  => |⬆ 119  64 .. |= 119  63  X |⬇ 119  62 Go
+
+
+try:
+[ ]| Vi-10 + Ax-109 => |⬆ 119  66 Ys |= 119  65 Eh |⬇ 119  64 ..
+[ ]|  K-29 + Da-90  => |⬆ 119  66 Ys |= 119  65 Eh |⬇ 119  64 ..
+Eh-119 may decay to ??-119 or double decay as seen before.
+
+[r]| K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         |
+[r]|Yu-27⁺ +  Yu-27⁺   +[  1260.63*-   5000] => Qe-54         |
+[r]|Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   |
+[r]|Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  |
+[r]|Eb-19⁺ +  Ok-92⁺   +[  1876.87 -  10000] => P-22 + Dd-89  |
+[r]|Ro-22⁺ +  Dd-89⁺   +[  1843.36 -   1845] => P-22 + Ok-89  |
+[r]|Mt-32⁺ +  Ok-89⁺   +[  2234.39 -   2240] => P-22 + Ek-99  |
+[f] Ro-22 + Ek-99   + 12000 => |⬆ 121  67 .. |= 121  66 Ys |⬇ 121  65 Eh  <---NOPE makes P-22 + Vt-99
+
+Thats (P-22 + Vt-99) exactly what the 64 otom with mass 121 should alpha decay to
+It essentially double decayed from Ys-121 to Eh-121 to ??-121 then alpha decayed to P-22 + Vt-99
+
 
 2025-06-02 Jun.Mon 13:45:38 Parser script now identifies missing OTOMROs as a huge list. I squashed it down to this data:
   622 missing OTOMRO!
@@ -1837,38 +1882,63 @@ What's missing?
 [c] Make missing 1-chains:
 [r] 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               | used 2235.72 [c] update recipe chains
 
-[ ] Make missing 2-chains:
-[ ] 2-chain Ai-60  ::  2276.43 |   Sr-1∙ +  Ns-59⁺   +[   944.29 -   1500] => Ai-60         | nuclear                      |
-[ ] 2-chain Ai-69  ::  3036.49 |  Nd-34⁻ +   K-35⁻   +[  1635.86 -   5000] => Ai-69         | nuclear                      |
-[ ] 2-chain Dd-94  ::  5062.03 |  Uq-44⁺ +  Cj-72ª   +[  3409.93 -  10000] => P-22 + Dd-94  | decay, nuclear               |
-[ ] 2-chain Ek-111 ::  6616.40 |   K-32∙ + Da-101ª   +[  4153.45 -   4750] => P-22 + Ek-111 | decay, nuclear               |
-[ ] 2-chain Ha-117 ::  7660.31 |  Lu-36∙ +  Z-103ª   +[  4735.14 -  15000] => P-22 + Ha-117 | decay, nuclear               |
-[ ] 2-chain Ji-109 ::  6785.74 |  Gy-65⁺ +  Gy-66ª   +[  3860.99 -  10000] => P-22 + Ji-109 | decay, nuclear               |
-[ ] 2-chain Ok-103 ::  6476.50 |  Qe-58⁻ +  Ai-67⁻   +[  3802.98 -   7500] => P-22 + Ok-103 | decay, nuclear               |
-[ ] 2-chain S-105  ::  6301.80 |   P-24⁻ +  S-103ª   +[  2534.70 -   5000] => P-22 + S-105  | decay, nuclear               |
-[ ] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
-[ ] 2-chain Vt-106 ::  5043.17 |  Ro-23ª + Cv-105ª   +[  2476.27 -   4000] => P-22 + Vt-106 | decay, nuclear               |
-[ ] 2-chain Z-101  ::  4505.23 |   P-21⁺ +  Z-102ª   +[  2261.31 -  10000] => P-22 + Z-101  | decay, nuclear               |
+[c] Make missing 2-chains:
+[r] 2-chain Ai-60  ::  2276.43 |   Sr-1∙ +  Ns-59⁺   +[   944.29 -   1500] => Ai-60         | nuclear                      | used  916.54 [ ] update recipe chains
+[r] 2-chain Ai-69  ::  3036.49 |  Nd-34⁻ +   K-35⁻   +[  1635.86 -   5000] => Ai-69         | nuclear                      | used 1635.66 [ ] update recipe chains
+[r] 2-chain Dd-94  ::  5062.03 |  Uq-44⁺ +  Cj-72ª   +[  3409.93 -  10000] => P-22 + Dd-94  | decay, nuclear               | used 3080.43 [ ] update recipe chains
+[r] 2-chain Ek-111 ::  6616.40 |   K-32∙ + Da-101ª   +[  4153.45 -   4750] => P-22 + Ek-111 | decay, nuclear               | used 4123.65 [ ] update recipe chains
+[r] 2-chain Ha-117 ::  7660.31 |  Lu-36∙ +  Z-103ª   +[  4735.14 -  15000] => P-22 + Ha-117 | decay, nuclear               | used 4221.94 [ ] update recipe chains
+[x] 2-chain Ji-109 ::  6785.74 |  Gy-65⁺ +  Gy-66ª   +[  3860.99 -  10000] => P-22 + Ji-109 | decay, nuclear               |
+[r] 2-chain Ok-103 ::  6476.50 |  Qe-58⁻ +  Ai-67⁻   +[  3802.98 -   7500] => P-22 + Ok-103 | decay, nuclear               | used 3618.13 [ ] update recipe chains
+[r] 2-chain S-105  ::  6301.80 |   P-24⁻ +  S-103ª   +[  2534.70 -   5000] => P-22 + S-105  | decay, nuclear               | used 2534.50 [ ] update recipe chains
+[x] 2-chain S-97   ::  5998.90 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
+[r] 2-chain Vt-106 ::  5043.17 |  Ro-23ª + Cv-105ª   +[  2476.27 -   4000] => P-22 + Vt-106 | decay, nuclear               | used 2400.12 [ ] update recipe chains
+[r] 2-chain Z-101  ::  4505.23 |   P-21⁺ +  Z-102ª   +[  2261.31 -  10000] => P-22 + Z-101  | decay, nuclear               | used 2224.41 [ ] update recipe chains
+                                                 total: 32950.13
+
 ...BUT first need:
- [*] 1-chain Ai-67  ::  1640.70 |  Ct-17⁻ +  Wy-50∙   +[  1640.70 -   5000] => Ai-67         | nuclear                      |
- [*] 1-chain Cj-72  ::   983.52 |   As-5⁺ +  Gy-67ª   +[   983.52 -   5000] => Cj-72         | nuclear                      |
- [*] 1-chain Cv-105 ::  2566.90 |  Cl-25⁺ +  S-102ª   +[  2566.90 -  10000] => P-22 + Cv-105 | decay, nuclear               |
- [*] 1-chain Da-101 ::  2462.95 |  Nd-30ª +  Kk-71ª   +[  2462.95 -  20000] => Da-101        | nuclear                      |
- [*] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
- [*] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
- [*] 1-chain Gy-66  ::  1321.69 |   T-15⁺ +   L-51⁺   +[  1321.69 -   5000] => Gy-66         | nuclear                      |
- [*] 1-chain K-32   ::     0.00 |  Mt-32⁺             +[     0.00 -   1000] => K-32          | decay                        |
- [*] 1-chain K-35   ::   843.77 |  Ct-17⁻ +  Xj-18∙   +[   843.77 -   5000] => K-35          | nuclear                      |
- [*] 1-chain Lu-36  ::   486.50 |   As-5⁺ +   K-31⁺   +[   486.50 -   5000] => Lu-36         | decay, nuclear               |
- [*] 1-chain Nd-34  ::   556.86 |  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34         | decay, nuclear               |
- [*] 1-chain Ns-59  ::  1332.14 |  Yu-27⁺ +  Mt-32⁺   +[  1332.14 -  20000] => Ns-59         | decay, nuclear               |
- [*] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
- [*] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
- [*] 1-chain Qe-58  ::  1032.82 |  Vi-11⁺ +  Uq-47⁻   +[  1032.82 -   5000] => Qe-58         | nuclear                      |
- [*] 1-chain S-103  ::  3249.40 |   P-23∙ +  S-102ª   +[  3249.40 -  20000] => P-22 + S-103  | decay, nuclear               |
- [*] 1-chain Uq-44  ::   668.58 |  Vi-10⁺ +  Mt-34⁺   +[   668.58 -   5000] => Uq-44         | decay, nuclear               |
- [*] 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
- [*] 1-chain Z-103  ::  2438.67 |  Ro-23ª +  S-102ª   +[  2438.67 -  20000] => P-22 + Z-103  | decay, nuclear               |
+ [r] 1-chain Ai-67  ::  1640.70 |  Ct-17⁻ +  Wy-50∙   +[  1640.70 -   5000] => Ai-67         | nuclear                      | used 1640.60 [ ] update recipe chains
+ [r] 1-chain Cj-72  ::   983.52 |   As-5⁺ +  Gy-67ª   +[   774.00 -   5000] => Cj-72         | nuclear                      | used  772.22 [ ] update recipe chains
+ [r] 1-chain Cv-105 ::  2566.90 |  Cl-25⁺ +  S-102ª   +[  2566.90*-  10000] => P-22 + Cv-105 | decay, nuclear               | [ ] this is minimal
+ [r] 1-chain Da-101 ::  2462.95 |  Nd-30ª +  Kk-71ª   +[  2462.95 -  20000] => Da-101        | nuclear                      | used 2456.90 [ ] update recipe chains
+ [x] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+ [x] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+ [x] 1-chain Gy-66  ::  1321.69 |   T-15⁺ +   L-51⁺   +[  1321.69 -   5000] => Gy-66         | nuclear                      |
+ [r] 1-chain K-32   ::     0.00 |  Mt-32⁺             +[     0.00 -   1000] => K-32          | decay                        |
+ [r] 1-chain K-35   ::   843.77 |  Ct-17⁻ +  Xj-18∙   +[   843.77 -   5000] => K-35          | nuclear                      | [ ] min
+ [r] 1-chain Lu-36  ::   486.50 |   As-5⁺ +   K-31⁺   +[   486.50 -   5000] => Lu-36         | decay, nuclear               | used  485.85 [ ] update recipe chains
+ [r] 1-chain Nd-34  ::   556.86 |  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34         | decay, nuclear               |
+ [r] 1-chain Ns-59  ::  1332.14 |  Yu-27⁺ +  Mt-32⁺   +[  1323.79 -  20000] => Ns-59         | decay, nuclear               | used 1322.99 [ ] update recipe chains
+ [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [x] 1-chain Qe-54  ::  1260.63 |  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
+ [r] 1-chain Qe-58  ::  1032.82 |  Vi-11⁺ +  Uq-47⁻   +[  1032.82 -   5000] => Qe-58         | nuclear                      | used 1032.47 [ ] update recipe chains
+ [r] 1-chain S-103  ::  3249.40 |   P-23∙ +  S-102ª   +[  3249.40 -  20000] => P-22 + S-103  | decay, nuclear               | [ ] min
+ [r] 1-chain Uq-44  ::   668.58 |  Vi-10⁺ +  Mt-34⁺   +[   668.58 -   5000] => Uq-44         | decay, nuclear               | used  658.28 [ ] update recipe chains
+ [r] 1-chain Z-102  ::  2243.92 |  Ro-22⁺ +  S-102ª   +[  2235.72 -  20000] => P-22 + Z-102  | decay, nuclear               | [ ] min
+ [r] 1-chain Z-103  ::  2438.67 |  Ro-23ª +  S-102ª   +[  2438.67 -  20000] => P-22 + Z-103  | decay, nuclear               | used 2438.62 [ ] update recipe chains
+                                                   total: 26812.87
+
+
+[.] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear|
+[.] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear|
+[.] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear|
+[.] 1-chain Da-104 ::  3461.79 |   K-34∙ +  Kk-70ª   +[  3461.79 -  20000] => Da-104        | decay, nuclear|
+[.] 1-chain Gy-64  ::  1518.94 |  Mt-32⁺ +  Mt-32⁺   +[  1418.94 -   4000] => Gy-64         | decay, nuclear|
+[.] 1-chain Gy-64  ::  1518.94 |  Mt-32⁺ +  Mt-32⁺   +[  1418.94 -   4000] => Gy-64         | decay, nuclear|
+[.] 1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear       |
+[.] 1-chain Gy-66  ::  1321.69 |   T-15⁺ +   L-51⁺   +[  1321.69 -   5000] => Gy-66         | nuclear       |
+[.] 1-chain Se-89  ::  1810.44 |  Ro-22⁺ +  Gy-67ª   +[  1810.44 -  20000] => Se-89         | nuclear       |
+[ ] 1-chain Kk-69  ::  1032.35 |   Sr-2∙ +  Gy-67ª   +[  1032.35 -   5000] => Kk-69         | nuclear       |
+[ ] 1-chain Nm-97  ::  1789.06 |  Ct-17⁻ +  S-102ª   +[  1789.06 -   5000] => P-22 + Nm-97  | decay, nuclear|
+[ ] 1-chain Se-96  ::  3232.97 |  Uq-47⁻ +  Kk-71ª   +[  3232.97 -  20000] => P-22 + Se-96  | decay, nuclear|
+
+[ ] 2-chain Da-106 ::  6166.18 |   P-24⁻ + Da-104ª   +[  2704.39 -   4000] => P-22 + Da-106 | decay, nuclear|
+[ ] 2-chain Ji-107 ::  6496.04 |  Gy-64⁺ +  Gy-65⁺   +[  3374.04 -  10000] => P-22 + Ji-107 | decay, nuclear|
+[ ] 2-chain Ji-108 ::  6293.27 |  Gy-64⁺ +  Gy-66ª   +[  3452.64 -  10000] => P-22 + Ji-108 | decay, nuclear|
+[ ] 2-chain Nm-90  ::  4191.76 |  Ro-23ª +  Se-89⁺   +[  2381.32 -   4000] => P-22 + Nm-90  | decay, nuclear|
+[ ] 2-chain Nm-91  ::  3023.41 |  Ro-22⁺ +  Kk-69ª   +[  1991.06 -   5000] => Nm-91         | nuclear       |
+[ ] 2-chain Nm-99  ::  4870.48 |   P-24⁻ +  Nm-97ª   +[  2563.72 -   4000] => P-22 + Nm-99  | decay, nuclear|
+[ ] 2-chain Se-98  ::  7039.98 |   P-24⁻ +  Se-96∙   +[  3289.31 -   4000] => P-22 + Se-98  | decay, nuclear|
 
 Make missing 3-chains:
 [ ] 3-chain Ok-93  ::  5921.65 |  Ro-22⁺ +  Dd-93⁺   +[  2076.97 -   2080] => P-22 + Ok-93  | decay, nuclear               | OTOMRO 181946
@@ -1880,7 +1950,6 @@ Make missing 3-chains:
 [ ] 3-chain Cv-110 ::  6545.27 |   P-24⁻ + Cv-108ª   +[  2677.06 -   5000] => P-22 + Cv-110 | decay, nuclear               |
 [ ] 3-chain Da-103 ::  6476.50 | Ok-103⁻             +[     0.00 -   9000] => Da-103        | decay                        |
 [ ] 3-chain Da-105 :: 11205.49 |   K-32∙ +  Vl-95⁻   +[  3893.94 -   5000] => P-22 + Da-105 | decay, nuclear               |
-[ ] 3-chain Da-106 :: 12019.48 |   K-33∙ +  Vl-95⁻   +[  4019.38 -   5000] => P-22 + Da-106 | decay, nuclear               |
 [ ] 3-chain Da-107 :: 11356.43 |   K-34∙ +  Vl-95⁻   +[  4044.88 -   5000] => P-22 + Da-107 | decay, nuclear               |
 [ ] 3-chain Da-96  ::  6561.48 |  Ro-22⁺ +  Ok-96⁺   +[  2232.30 -   4000] => P-22 + Da-96  | decay, nuclear               |
 [ ] 3-chain Dd-90  ::  5721.05 |  Vi-10⁺ + Cv-102ª   +[  1229.59 -   3000] => P-22 + Dd-90  | decay, nuclear               |
@@ -1890,22 +1959,16 @@ Make missing 3-chains:
 [ ] 3-chain Ha-112 ::  6808.89 |  Ro-22⁺ + Kn-112ª   +[  1785.71 -   4000] => P-22 + Ha-112 | decay, nuclear               | OTOMRO 204039
 [ ] 3-chain Ha-113 ::  7336.27 |  Ro-23ª + Kn-112ª   +[  2313.09 -   2320] => P-22 + Ha-113 | decay, nuclear               | OTOMRO 138993
 [ ] 3-chain Ha-114 ::  7967.48 |   P-21⁺ + Ha-115ª   +[  2618.47 -   5000] => P-22 + Ha-114 | decay, nuclear               | OTOMRO 204082
-[ ] 3-chain Ji-107 ::  7946.23 |  Gy-64⁺ +  Gy-65⁺   +[  3374.04 -  10000] => P-22 + Ji-107 | decay, nuclear               |
-[ ] 3-chain Ji-108 ::  9158.52 |  Ro-23ª + Ek-107ª   +[  3469.39 -  25000] => P-22 + Ji-108 | decay, nuclear               |
 [ ] 3-chain Kn-111 ::  6746.15 |   P-21⁺ + Kn-112ª   +[  1722.97 -   4000] => P-22 + Kn-111 | decay, nuclear               | OTOMRO 204093
 [ ] 3-chain Lx-80  ::  5272.65 |   P-21⁺ +  Lx-81ª   +[  2128.92 -   5000] => P-22 + Lx-80  | decay, nuclear               |
 [ ] 3-chain N-81   ::  5100.07 |   P-21⁺ +   N-82⁺   +[  2004.46 -   5000] => P-22 + N-81   | decay, nuclear               |
 [ ] 3-chain N-91   ::  7715.22 |   P-23∙ +   N-90⁺   +[  3113.03 -   5000] => P-22 + N-91   | decay, nuclear               |
 [ ] 3-chain N-92   ::  6066.64 |   Sr-3∙ +  Lx-89∙   +[  1711.05 -   5000] => N-92          | nuclear                      |
-[ ] 3-chain Nm-90  ::  5023.18 | Kn-112ª             +[     0.00 -      0] => P-22 + Nm-90  | decay                        |
-[ ] 3-chain Nm-91  ::  6333.01 |   P-21⁺ +  Nm-92⁺   +[  2261.14 -   5000] => P-22 + Nm-91  | decay, nuclear               |
-[ ] 3-chain Nm-99  ::  8303.86 |   P-23∙ +  Nm-98ª   +[  3322.21 -  10000] => P-22 + Nm-99  | decay, nuclear               |
 [ ] 3-chain Ok-92  ::  7832.60 |  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
 [ ] 3-chain S-106  ::  6168.79 |   P-24⁻ +  S-104⁺   +[  2566.57 -   5000] => P-22 + S-106  | decay, nuclear               |
 [ ] 3-chain S-107  ::  9390.71 |   P-24⁻ +  S-105ª   +[  2571.21 -   5000] => P-22 + S-107  | decay, nuclear               |
 [ ] 3-chain S-96   ::  8090.22 |   P-21⁺ +   S-97⁺   +[  2091.32 -  10000] => P-22 + S-96   | decay, nuclear               |
 [ ] 3-chain Se-87  ::  6542.77 |   P-21⁺ +  Se-88⁺   +[  2260.76 -   5000] => P-22 + Se-87  | decay, nuclear               |
-[ ] 3-chain Se-98  ::  8615.59 |   K-34∙ +   W-86ª   +[  3881.31 -   5000] => P-22 + Se-98  | decay, nuclear               |
 [ ] 3-chain U-94   ::  6820.90 |   K-34∙ +   D-82⁺   +[  3847.14 -   5000] => P-22 + U-94   | decay, nuclear               |
 [ ] 3-chain Vl-96  :: 10570.20 |   P-23∙ +  Vl-95⁻   +[  3258.65 -   5000] => P-22 + Vl-96  | decay, nuclear               | OTOMRO 215478
 [ ] 3-chain Vl-97  ::  8433.10 |  Ct-17⁻ + Ok-102⁻   +[  1811.59 -   5000] => P-22 + Vl-97  | decay, nuclear               |
@@ -3289,6 +3352,7 @@ I think I shall do it by increasing number of recipe chains
  Go-117ª | (0.174) | 117 62 Go - 22 11  P =  95  51  Z (Z-95)
  Go-118ª | (0.237) | 118 62 Go - 22 11  P =  96  51  Z (Z-96)
  X-119ª  | (0.163) | 119 63  X - 22 11  P =  97  52 Cv (Cv-97)
+ ??-121  |         | 121 64 ?? - 22 11  P =  99  53 Vt (Vt-99)
  Eh-123ª | (0.143) | 123 65 Eh - 22 11  P = 101  54 Ek (Ek-101)
  Eh-124ª | (0.196) | 124 65 Eh - 22 11  P = 102  54 Ek (Ek-102)
  Ys-125ª | (0.136) | 125 66 Ys - 22 11  P = 103  55 Ji (Ji-103)
