@@ -1,3 +1,18 @@
+2025-06-04 Jun.Wed 10:45:00
+[ ] Look at all 2 input reactions. And see what they aim at. Mark all those as tried if the energy levels were sufficient, then see what we could try around it. 
+
+Also: 
+[ ] come up with a useful energy requirements function. Perhaps if I graph it I can see cones of success at different reaction type bands. 
+
+2025-06-04 Jun.Wed 10:38:00
+[ ] Otom Assembly idea. 
+A very expensive object perhaps requires a full set of universe alpha isotopes to make 
+
+It lets you take two isotopes and swap their protons. This would be quite devastating I think. If golid's universe creation algorithm can extend the universe to allow the possibility of this new isotope?
+Very low number of reuses.
+
+What if they combine this new one with something and it makes an even bigger thing. 
+
 2025-06-03 Jun.Tue 20:15:24 [ ] I would like to write some perl to massage the reactor logs down to files of
  1 input
  2 input
@@ -35,15 +50,15 @@
 17  9 Xj + 99 54 Ek = 116 63  X
 17  8  T + 99 53 Vt = 116 61 Jb
 
-  Why did that split into those? Why did it drop 2 protons, 1 from each output? Its like it combined to X-116, then did double beta+ decay to Go-116 then Jb-116, then split very unsually to T-17 + Vt-99
+  Why did that split into those? Why did it drop 2 protons, 1 from each output? Its like it combined to X-116, then did double beta+ decay to Go-116 then Jb-116, then split very unusually to T-17 + Vt-99
 
 try:
-[ ]|  Ro-22 +     Z-97  => |⬆ 119  64 .. |= 119  63  X |⬇ 119  62 Go
+[ ]|  Ro-22 +     Z-97 +15000 => |⬆ 119  64 .. |= 119  63  X |⬇ 119  62 Go
 
 
 try:
-[ ]| Vi-10 + Ax-109 => |⬆ 119  66 Ys |= 119  65 Eh |⬇ 119  64 ..
-[ ]|  K-29 + Da-90  => |⬆ 119  66 Ys |= 119  65 Eh |⬇ 119  64 ..
+[ ]| Vi-10 + Ax-109 +15000 => |⬆ 119  66 Ys |= 119  65 Eh |⬇ 119  64 ..
+[ ]|  K-29 + Da-90  +15000 => |⬆ 119  66 Ys |= 119  65 Eh |⬇ 119  64 ..
 Eh-119 may decay to ??-119 or double decay as seen before.
 
 [r]| K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         |
@@ -55,7 +70,7 @@ Eh-119 may decay to ??-119 or double decay as seen before.
 [r]|Mt-32⁺ +  Ok-89⁺   +[  2234.39 -   2240] => P-22 + Ek-99  |
 [f] Ro-22 + Ek-99   + 12000 => |⬆ 121  67 .. |= 121  66 Ys |⬇ 121  65 Eh  <---NOPE makes P-22 + Vt-99
 
-Thats (P-22 + Vt-99) exactly what the 64 otom with mass 121 should alpha decay to
+That's (P-22 + Vt-99) exactly what the 64 otom with mass 121 should alpha decay to
 It essentially double decayed from Ys-121 to Eh-121 to ??-121 then alpha decayed to P-22 + Vt-99
 
 
@@ -84,7 +99,7 @@ try:
 2025-06-01 Jun.Sun 13:45:57 With a bunch of vim muscle I worked up some macros and regexes to search the massaged Alpha and Bohr reactions for places where lesser chains are producing greater chains, saving at least 1 chain link. It found 47 right away in Bohr and zero in Alpha. I already got them.
 
 [c] These may be shorter chains:
-   |universe| input otoms          [ NRG input range  ] => output otoms  | reaction type                |OTOROM min, max     |
+   |universe| input otoms          [ NRG input range  ] => output otoms  | reaction type                |OTOMRO min, max     |
 [c]|bohr    |   As-5⁺ + Kn-112ª   +[   904.58 -   5000] => P-22 + Da-95  | decay, nuclear               | OTOMRO 183680 , OTOMRO 40383*|
 [c]|bohr    |   P-21⁺ +   Z-97⁺   +[  1993.34 -   7500] => P-22 + Z-96   | decay, nuclear               | OTOMRO 122928 , OTOMRO 53438*|
 [c]|bohr    |   P-21⁺ +  Cv-97⁺   +[  1926.81 -   7500] =>⬇Go-118        | decay, nuclear               | OTOMRO 122635 , OTOMRO 53595*|
@@ -1551,6 +1566,13 @@ total: 20363.47
 
 [c] add to files
 
+2025-05-31 May.Sat 11:00:00
+[ ] using reaction logs for all 1 or 2 input rxs calculate the intermediate and its stability and decay types then see if any beat the odds and did/didn't decay when they weren't/were supposed to. 
+
+[ ] I should try to identify rxs where it seems that the stability odds went awry
+
+[ ] Consider making Space bar another map leader of sorts so I can change tabs easy and add more commands
+
 2025-05-30 May.Fri 22:17:20 Made a table show the ranges of Lx single isotope inputs and fissioning with different energy ranges.
 
 | OTOMRO| INPUT  |  low input range=> OUTPUT |type  | OTOMRO|  mid input range=> output          |type    | OTOMRO| high input range=> output              |type             |
@@ -1608,7 +1630,7 @@ try:
 [c] |   245591*|bohr    |  Ro-22⁺ +   S-97⁺                               +     5000 =>   P-22 + Z-97                                                                      +    2823.68 |    2176.32 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x4604f534312a6017d0c018de5b2e583dee0e8b5ffc33065998168ad08e12443d | 0xaf01979876cd7907870ec0592d34b67fda11171da809d37d70e62129b670459d |
 [c] |   242303*|bohr    |   P-24⁻ + Ok-102⁻                               +     5000 =>   P-22 + Ok-104                                                                    +    2332.65 |    2667.35 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xf6fe26b58733d938ce7a1d08504eca68713a92a8b94ee189c511a1f67d072103 | 0xdb95e7425b01384aebc7f2c4bb225e7506ee82f1bd9df2e1e72f65fe7e650f3f |
 
-2025-05-30 May.Fri 10:26:51 Damnit the Reactor logs are over 10k lines already and my snapshot at 00:16 doesn't have any lines in common with the newest export so that means I missed some data! FUCK
+2025-05-30 May.Fri 10:26:51 Dammit the Reactor logs are over 10k lines already and my snapshot at 00:16 doesn't have any lines in common with the newest export so that means I missed some data! FUCK
 [ ] Missed Reactor logs today
 
 Examined the parser output in alpha and bohr Reactor logs.
@@ -2643,7 +2665,7 @@ Man i don't know.
 
 
 2025-05-26 May.Mon 18:57:00 It happened again! More than 10k reactions today!
-I can tell because I have a snapshot with 455 lines missing from the new export of 10001 lines. When it hits 10001 it usually mean there were more than that but thats the limit. In those cases you need to be snapshotting it, until something better comes along.
+I can tell because I have a snapshot with 455 lines missing from the new export of 10001 lines. When it hits 10001 it usually mean there were more than that but that's the limit. In those cases you need to be snapshotting it, until something better comes along.
 
 
 On 2025-05-24 May.Sat there were 9818 Reactor log entries:

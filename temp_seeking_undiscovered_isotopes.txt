@@ -1,0 +1,28 @@
+%s/\<Ro-\(\d\>\|1\d\|2[01]\)\zs?/⁺/ge
+%s/\<Ro-\([34]\d\|29\)\zs?/⁻/ge
+%s/\<Cl-\(\d\>\|1\d\|2[0-3]\)\zs?/⁺/ge
+%s/\<Cl-\([34]\d\)\zs?/⁻/ge
+%s/\<Yu-\(\d\>\|1\d\|2[0-5]\)\zs?/⁺/ge
+%s/\<Yu-\([34]\d\)\zs?/⁻/ge
+
+%s/\<Nd-\(\d\|1\d\|2[0-6]\)\zs?/⁺/ge
+%s/\<Nd-\([45]\d\|3[5-9]\)\zs?/⁻/ge
+%s/\<K-\(1\d\|2[0-9]\)\zs?/⁺
+%s/\<K-3[7-9]\zs?/⁻
+%s/\<Mt-\([12]\d\|3[0-1]\)\zs?/⁺
+%s/\<Mt-\([4-6]\d\)\zs?/⁻
+%s/\<Lu-\([12]\d\|3[0-3]\)\zs?/⁺
+%s/\<Lu-\([56]\d\|4[1-9]\)\zs?/⁻
+%s/\<Dx-\([12]\d\|3[0-5]\)\zs?/⁺
+%s/\<Dx-\([56]\d\|4[4-9]\)\zs?/⁻
+%s/\<Gd-\([12]\d\|3[0-8]\)\zs?/⁺
+%s/\<Gd-\([56]\d\|4[6-9]\)\zs?/⁻
+%s/\<V-\([12]\d\|3[0-9]\)\zs?/⁺
+%s/\<V-\([567]\d\|4[8-9]\)\zs?/⁻
+%s/\<Uq-\([23]\d\|4[0-1]\)\zs?/⁺
+%s/\<Uq-\([567]\d\|5[2-9]\)\zs?/⁻
+%s/\<Pb-\([23]\d\|4[0-3]\)\zs?/⁺
+%s/\<Pb-\([67]\d\|5[2-9]\)\zs?/⁻
+
+[ ] PICK UP HERE. build regexes for finding the undiscovered isotopes above and below the max and min isotopes
+here. Then replace those in the data below with the guessed decay type text char
