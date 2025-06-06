@@ -17666,7 +17666,7 @@ syn match chain7  /\<Cj-68\>/
 syn match chain7  /\<Cl-24\>/
 syn match chain7  /\<Co-74\>/
 syn match chain7  /\<Co-75\>/
-syn match chain7  /\<Ek-121\>/
+syn match chain6  /\<Ek-121\>/
 syn match chain7  /\<F-60\>/
 syn match chain7  /\<Gj-12\>/
 syn match chain7  /\<Gy-63\>/
@@ -17683,8 +17683,8 @@ syn match chain7  /\<P-26\>/
 syn match chain7  /\<Qe-53\>/
 syn match chain7  /\<Ro-28\>/
 syn match chain7  /\<Uq-49\>/
-syn match chain7  /\<Uq-52\>/
-syn match chain7  /\<Vt-120\>/
+syn match chain6  /\<Uq-52\>/
+syn match chain6  /\<Vt-120\>/
 syn match chain7  /\<Yu-26\>/
 syn match chain7  /\<Yv-66\>/
 syn match chain7  /\<Yv-67\>/
@@ -18289,7 +18289,7 @@ syn match chain6_5  /\zs\s\ze\<D-83\>/
 syn match chain7_6  /\zs\s\ze\<Da-90\>/
 syn match chain7_6  /\zs\s\ze\<Eh-123\>/
 syn match chain7_6  /\zs\s\ze\<Eh-124\>/
-syn match chain7_6  /\zs\s\ze\<Ek-121\>/
+syn match chain6_5  /\zs\s\ze\<Ek-121\>/
 syn match chain7_6  /\zs\s\ze\<F-60\>/
 syn match chain7_6  /\zs\s\ze\<Gj-12\>/
 syn match chain7_6  /\zs\s\ze\<Go-117\>/
@@ -18303,8 +18303,8 @@ syn match chain7_6  /\zs\s\ze\<P-26\>/
 syn match chain7_6  /\zs\s\ze\<Qe-53\>/
 syn match chain6_5  /\zs\s\ze\<U-98\>/
 syn match chain7_6  /\zs\s\ze\<Uq-49\>/
-syn match chain7_6  /\zs\s\ze\<Uq-52\>/
-syn match chain7_6  /\zs\s\ze\<Vt-120\>/
+syn match chain6_5  /\zs\s\ze\<Uq-52\>/
+syn match chain6_5  /\zs\s\ze\<Vt-120\>/
 syn match chain7_6  /\zs\s\ze\<Wy-45\>/
 syn match chain7_6  /\zs\s\ze\<X-119\>/
 syn match chain7_6  /\zs\s\ze\<Ys-125\>/
