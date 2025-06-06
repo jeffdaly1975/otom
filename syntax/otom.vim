@@ -13,6 +13,7 @@ syn match Timestamp /\<\d\d:\d\d:\d\d\>\(\s*\w\wT\)\=/
 syn match TodoBlank    /\[ \]/     " todo item not yet started
 syn match TodoNext     /\[\*\]/    " this one i should do next
 syn match TodoCurrent  /\[\.\]/    " this one is in progress
+syn match TodoCurrent  /\[[0-9]\]/ " this one is in progress
 syn match TodoFailed   /\[f\]/     " this one failed
 syn match TodoSuccess  /\[r\]/     " this reaction completed successfully
 syn match TodoComplete /\[c\]/     " this one is complete
