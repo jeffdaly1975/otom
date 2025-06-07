@@ -1,3 +1,32 @@
+2025-06-07 Jun.Sat 10:41:27 Possible shorter chains:
+
+[c] |bohr    |   Sr-2∙ +  Kk-64⁺   +[  1017.24 -   3000] =>⬇Kk-66         | decay, nuclear               | 257962*            |
+[c] |bohr    |   P-24⁻ + Dd-104⁻   +[  2543.30 -   4000] => P-22 + Dd-106 | decay, nuclear               | 267474*            |
+[c] |bohr    |  Ok-90⁺             +[  6246.44 -   7000] => Uq-41 + Ux-49 | nuclear                      | 255482*            |
+[c] |bohr    |   P-24⁻ +   W-89⁻   +[  2468.14 -   4000] => P-22 + W-91   | decay, nuclear               | 260630* ,   277686 |
+[c] |bohr    |   P-24⁻ + Dd-103ª   +[  2609.98 -   5000] => P-22 + Dd-105 | decay, nuclear               | 204672* ,   204674 |
+[c] |bohr    |  Eb-19⁺ + Kn-111ª   +[  2162.15 -   5000] => P-22 + Aw-108 | decay, nuclear               | 256827* ,   256829 |
+[c] |bohr    |  Eb-22∙ +  Vl-96⁻   +[  3061.24 -   4000] => P-22 + U-96   | decay, nuclear               | 276263*            |
+[c] |bohr    |  Eb-22∙ + Se-100∙   +[  4006.10 -   5000] => P-22 + Vl-100 | decay, nuclear               | 270761*            |
+[c] |bohr    |  Eb-22∙ + Se-101∙   +[  3942.49 -   4500] => P-22 + Vl-101 | decay, nuclear               | 277767*            |
+[c] |bohr    |  Ro-22⁺ +   Z-97⁺   +[  2021.61 -   4000] => P-22 + Cv-97  | decay, nuclear               | 257903* ,   257906 |
+[c] |bohr    |   P-24⁻ + Da-106∙   +[  3415.92 -   4000] => P-22 + Da-108 | decay, nuclear               | 178510*            |
+[c] |bohr    |  Eb-19⁺ +  Vl-87⁺   +[  2110.47 -   5000] => P-22 + U-84   | decay, nuclear               | 272165*            |
+[c] |bohr    |  Mt-34⁺ +  Ai-61⁺   +[  2435.60 -   6000] => P-22 + Iu-73  | decay, nuclear               |  256922 ,  256333* |
+[c] |bohr    |  Ro-22⁺ +   N-84⁺   +[  2125.26 -   4000] => P-22 + U-84   | decay, nuclear               | 270740* ,   272334 |
+[c] |bohr    |  Ro-22⁺ +  Nm-89⁺   +[  1961.57 -   4000] => P-22 + Dd-89  | decay, nuclear               |  267828 ,  266200* |
+[c] |bohr    |  Ct-17⁻ +   N-86⁺   +[  1836.94 -   5000] => Da-103        | nuclear                      | 178023* ,   265500 |
+[c] |bohr    |   P-23∙ + Da-102ª   +[  3407.34 -   4000] => P-22 + Da-103 | decay, nuclear               | 178505*            |
+[c] |bohr    |   P-24⁻ + Da-101ª   +[  2714.36 -   5000] => P-22 + Da-103 | decay, nuclear               | 274183*            |
+[c] |bohr    |   P-23∙ + Da-104ª   +[  3488.95 -   5000] => P-22 + Da-105 | decay, nuclear               | 266997* ,   267003 |
+[c] |bohr    |  Eb-22∙ + Da-104ª   +[  3330.81 -   5000] => P-22 + Ok-104 | decay, nuclear               | 253138* ,   253139 |
+[c] |bohr    |   P-24⁻ +   N-89⁺   +[  2473.88 -   4000] => P-22 + N-91   | decay, nuclear               | 270856*            |
+[c] |bohr    |  Eb-22∙ +  Se-96∙   +[  4191.93 -   7000] => P-22 + Vl-96  | decay, nuclear               | 276265*            |
+[c] |bohr    |  Eb-22∙ + Cv-107ª   +[  3113.15 -   4000] => P-22 + Z-107  | decay, nuclear               |  184017 ,  178527* |
+[c] |bohr    |  Ro-22⁺ +   W-80ª   +[  2134.90 -   5000] => P-22 + Lx-80  | decay, nuclear               | 272242*            |
+[c] |bohr    |  Ro-22⁺ +  Da-99ª   +[  2342.69 -   5000] => P-22 + S-99   | decay, nuclear               |  256953 ,   264173 |
+[x] |bohr    |  Eb-19⁺ +  Lx-80⁺   +[  2010.04 -   4000] =>⬇S-99          | decay, nuclear               | 272249*            |
+
 2025-06-06 Jun.Fri 13:19:47 Created a new perl script chain_totaller.pl that takes the chains.<universe>.otom file as input and recalculates the totals
 
 This makes it much easier when I find cheaper recipes to just update the minimal input values and run this instead of figuring the cascade of updates that are sometimes required.
@@ -139,7 +168,6 @@ none
 [ ] 3-chain W-78   ::  4832.27 |   P-21⁺ +   W-79ª   +[  2147.96 -   5000] => P-22 + W-78   | decay, nuclear               |
 [r] 3-chain W-87   ::  7870.93 |   P-23∙ +   W-86ª   +[  3136.65 -   5000] => P-22 + W-87   | decay, nuclear               | used 3043.50 [c] update recipe chains
 [ ] 3-chain W-88   ::  7216.26 |   P-24⁻ +   W-86ª   +[  2481.98 -   5000] => P-22 + W-88   | decay, nuclear               |
-[ ] 3-chain W-89   ::  7733.96 |   P-24⁻ +   W-86ª   +[  2481.98 -   5000] => P-22 + W-88   | decay, nuclear               |
 [r] 3-chain Z-100  ::  6708.96 |   P-21⁺ +  Z-101ª   +[  2211.93 -   6000] => P-22 + Z-100  | decay, nuclear               | used 2210.03 [c] update recipe chains
 [r] 3-chain Z-108  ::  7832.57 |   P-24⁻ +  Z-106ª   +[  2615.03 -   4000] => P-22 + Z-108  | decay, nuclear               | used 2545.83 [c] update recipe chains
 [ ] 3-chain Z-99   ::  6681.74 |  Eb-19⁺ + Cv-102ª   +[  2198.48 -   5000] => P-22 + Z-99   | decay, nuclear               |
