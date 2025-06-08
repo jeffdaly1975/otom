@@ -1,7 +1,7 @@
 
 
 # how to run the parser in tcsh:
-% ( ./parseReactorLog.pl logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_Reactor/* > stdout ) >& stderr && tail -f stderr 
+% ( ./parseReactorLog.pl logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_Reactor/* > stdout ) >& stderr & && tail -f stderr 
 
 # check linecounts of Reactor csvs
 % wc -l ~/Downloads/logs_0xB8* logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_Reactor/*2025-06-??{,-?,-??}.csv
