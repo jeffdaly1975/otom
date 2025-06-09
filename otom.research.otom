@@ -1,3 +1,277 @@
+2025-06-09 Jun.Mon 11:33:20 Crafted the Insanity Credential No. ∞ on Otom Assembly. This is the eighth one crafted, so 7 other Otom giants!
+
+Token info:
+Name:             (T0) Insanity Credential No. ∞
+Description:      A relic from a council that should not exist
+Token ID:         575064397007243212341082659092548012341
+Item ID:          5
+Creator:          0x13d735a4d5e966b8f7b19fc2f476bfc25c0fc7dc
+Stackable:        No
+Cognitive Class:  C-7
+Cert. ID:         OTM-042-A
+Stability Rating: 0.34
+token URL:        https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e495de904/instance/575064397007243212341082659092548012341
+
+2025-06-09 Jun.Mon 10:57:22 updated data file for Morpheus. I then wanted to see how much improvement there had been in the recipe chains since I made the csv of all rxs needed for bohr so I analyzed it comparing those against the current chains.bohr.otom
+
+12 new isotopes:
+ Aw-125 5-chain
+ Ai-58  6-chain
+ Cv-115 6-chain
+ Dx-35  6-chain
+ Mt-39  6-chain
+ Qe-61  6-chain
+ Wy-56  6-chain
+ Yv-66  7-chain
+ Dx-36  8-chain
+ Nd-27  8-chain
+ Vi-15  8-chain
+ T-14   9-chain
+
+112 dropped 1 chain:
+ Ai-59  5-chain <- 6-chain  (-1)
+ Aw-104 6-chain <- 7-chain  (-1)
+ Aw-105 6-chain <- 7-chain  (-1)
+ Aw-106 5-chain <- 6-chain  (-1)
+ Aw-108 4-chain <- 5-chain  (-1)
+ Aw-109 3-chain <- 4-chain  (-1)
+ Ax-109 6-chain <- 7-chain  (-1)
+ Ax-110 6-chain <- 7-chain  (-1)
+ Ax-111 5-chain <- 6-chain  (-1)
+ C-53   6-chain <- 7-chain  (-1)
+ C-54   7-chain <- 8-chain  (-1)
+ Cj-68  7-chain <- 8-chain  (-1)
+ Cj-80  5-chain <- 6-chain  (-1)
+ Co-74  7-chain <- 8-chain  (-1)
+ Co-86  6-chain <- 7-chain  (-1)
+ Co-87  3-chain <- 4-chain  (-1)
+ Cv-99  4-chain <- 5-chain  (-1)
+ D-74   8-chain <- 9-chain  (-1)
+ Da-103 2-chain <- 3-chain  (-1)
+ Da-105 2-chain <- 3-chain  (-1)
+ Da-106 2-chain <- 3-chain  (-1)
+ Da-108 3-chain <- 4-chain  (-1)
+ Da-93  4-chain <- 5-chain  (-1)
+ Da-94  4-chain <- 5-chain  (-1)
+ Da-95  3-chain <- 4-chain  (-1)
+ Dd-89  3-chain <- 4-chain  (-1)
+ Dx-43  5-chain <- 6-chain  (-1)
+ Eb-23  6-chain <- 7-chain  (-1)
+ Eh-123 6-chain <- 7-chain  (-1)
+ Eh-124 6-chain <- 7-chain  (-1)
+ Ek-100 5-chain <- 6-chain  (-1)
+ Ek-104 4-chain <- 5-chain  (-1)
+ Ek-105 3-chain <- 4-chain  (-1)
+ Ek-121 6-chain <- 7-chain  (-1)
+ Ek-99  5-chain <- 6-chain  (-1)
+ F-59   7-chain <- 8-chain  (-1)
+ F-60   6-chain <- 7-chain  (-1)
+ F-73   5-chain <- 6-chain  (-1)
+ Gd-46  5-chain <- 6-chain  (-1)
+ Gj-12  7-chain <- 8-chain  (-1)
+ Go-117 6-chain <- 7-chain  (-1)
+ Gy-64  1-chain <- 2-chain  (-1)
+ Ha-110 5-chain <- 6-chain  (-1)
+ Ha-113 3-chain <- 4-chain  (-1)
+ Iu-83  5-chain <- 6-chain  (-1)
+ Ji-103 6-chain <- 7-chain  (-1)
+ Ji-107 2-chain <- 3-chain  (-1)
+ Ji-108 2-chain <- 3-chain  (-1)
+ K-29   7-chain <- 8-chain  (-1)
+ K-37   5-chain <- 6-chain  (-1)
+ Kn-108 5-chain <- 6-chain  (-1)
+ Kn-109 4-chain <- 5-chain  (-1)
+ L-46   6-chain <- 7-chain  (-1)
+ L-48   6-chain <- 7-chain  (-1)
+ L-57   6-chain <- 7-chain  (-1)
+ Lu-34  8-chain <- 9-chain  (-1)
+ Lx-77  5-chain <- 6-chain  (-1)
+ Lx-79  3-chain <- 4-chain  (-1)
+ Lx-80  2-chain <- 3-chain  (-1)
+ Lx-92  3-chain <- 4-chain  (-1)
+ N-91   2-chain <- 3-chain  (-1)
+ N-94   4-chain <- 5-chain  (-1)
+ N-95   5-chain <- 6-chain  (-1)
+ Nm-100 3-chain <- 4-chain  (-1)
+ Nm-105 5-chain <- 6-chain  (-1)
+ Nm-90  2-chain <- 3-chain  (-1)
+ Nm-91  2-chain <- 3-chain  (-1)
+ Nm-99  2-chain <- 3-chain  (-1)
+ Ns-56  7-chain <- 8-chain  (-1)
+ Ns-57  7-chain <- 8-chain  (-1)
+ Ok-89  4-chain <- 5-chain  (-1)
+ Ok-90  4-chain <- 5-chain  (-1)
+ Ok-93  3-chain <- 4-chain  (-1)
+ P-26   7-chain <- 8-chain  (-1)
+ Pg-50  7-chain <- 8-chain  (-1)
+ Pg-59  4-chain <- 5-chain  (-1)
+ S-109  3-chain <- 4-chain  (-1)
+ S-99   2-chain <- 3-chain  (-1)
+ Se-100 3-chain <- 4-chain  (-1)
+ Se-101 3-chain <- 4-chain  (-1)
+ Se-97  2-chain <- 3-chain  (-1)
+ Se-98  2-chain <- 3-chain  (-1)
+ Se-99  3-chain <- 4-chain  (-1)
+ U-93   3-chain <- 4-chain  (-1)
+ U-95   4-chain <- 5-chain  (-1)
+ U-97   5-chain <- 6-chain  (-1)
+ U-98   6-chain <- 7-chain  (-1)
+ Uq-41  5-chain <- 6-chain  (-1)
+ Uq-50  5-chain <- 6-chain  (-1)
+ Ux-48  5-chain <- 6-chain  (-1)
+ Ux-49  5-chain <- 6-chain  (-1)
+ V-48   6-chain <- 7-chain  (-1)
+ Vl-100 4-chain <- 5-chain  (-1)
+ Vl-85  3-chain <- 4-chain  (-1)
+ Vl-98  4-chain <- 5-chain  (-1)
+ Vt-98  5-chain <- 6-chain  (-1)
+ W-77   6-chain <- 7-chain  (-1)
+ W-89   4-chain <- 5-chain  (-1)
+ W-90   4-chain <- 5-chain  (-1)
+ Wy-45  6-chain <- 7-chain  (-1)
+ Wy-46  4-chain <- 5-chain  (-1)
+ Wy-54  5-chain <- 6-chain  (-1)
+ Xj-16  8-chain <- 9-chain  (-1)
+ Ys-125 6-chain <- 7-chain  (-1)
+ Yu-26  6-chain <- 7-chain  (-1)
+ Yv-67  7-chain <- 8-chain  (-1)
+ Yv-68  8-chain <- 9-chain  (-1)
+ Yv-80  4-chain <- 5-chain  (-1)
+ Z-107  2-chain <- 3-chain  (-1)
+ Z-109  3-chain <- 4-chain  (-1)
+ Z-111  4-chain <- 5-chain  (-1)
+ Z-95   5-chain <- 6-chain  (-1)
+
+
+46 dropped 2 chains:
+ Aw-124 5-chain <- 7-chain  (-2)
+ Cj-81  4-chain <- 6-chain  (-2)
+ Cl-24  6-chain <- 8-chain  (-2)
+ Cl-30  6-chain <- 8-chain  (-2)
+ Co-75  7-chain <- 9-chain  (-2)
+ Co-85  3-chain <- 5-chain  (-2)
+ D-75   8-chain <- 10-chain (-2)
+ D-83   5-chain <- 7-chain  (-2)
+ Da-90  5-chain <- 7-chain  (-2)
+ Dd-103 3-chain <- 5-chain  (-2)
+ Dd-104 3-chain <- 5-chain  (-2)
+ Ek-103 4-chain <- 6-chain  (-2)
+ Ha-108 6-chain <- 8-chain  (-2)
+ Ha-111 4-chain <- 6-chain  (-2)
+ I-113  7-chain <- 9-chain  (-2)
+ I-114  7-chain <- 9-chain  (-2)
+ Iu-73  2-chain <- 4-chain  (-2)
+ Ji-121 6-chain <- 8-chain  (-2)
+ K-36   7-chain <- 9-chain  (-2)
+ Kk-64  6-chain <- 8-chain  (-2)
+ Kk-65  7-chain <- 9-chain  (-2)
+ L-55   5-chain <- 7-chain  (-2)
+ Lx-94  4-chain <- 6-chain  (-2)
+ Lx-95  5-chain <- 7-chain  (-2)
+ Nm-101 3-chain <- 5-chain  (-2)
+ Nm-102 4-chain <- 6-chain  (-2)
+ Nm-103 4-chain <- 6-chain  (-2)
+ Ns-67  6-chain <- 8-chain  (-2)
+ Ok-104 2-chain <- 4-chain  (-2)
+ S-98   2-chain <- 4-chain  (-2)
+ Se-102 4-chain <- 6-chain  (-2)
+ Se-103 5-chain <- 7-chain  (-2)
+ Se-104 5-chain <- 7-chain  (-2)
+ Se-86  4-chain <- 6-chain  (-2)
+ U-84   2-chain <- 4-chain  (-2)
+ Uq-51  5-chain <- 7-chain  (-2)
+ Vl-101 4-chain <- 6-chain  (-2)
+ Vt-100 5-chain <- 7-chain  (-2)
+ Vt-101 4-chain <- 6-chain  (-2)
+ Vt-99  5-chain <- 7-chain  (-2)
+ W-88   3-chain <- 5-chain  (-2)
+ W-91   5-chain <- 7-chain  (-2)
+ Wy-55  5-chain <- 7-chain  (-2)
+ X-119  5-chain <- 7-chain  (-2)
+ Z-100  3-chain <- 5-chain  (-2)
+ Z-96   4-chain <- 6-chain  (-2)
+
+
+33 dropped 3 chains:
+ Cv-114 5-chain <- 8-chain  (-3)
+ Cv-98  4-chain <- 7-chain  (-3)
+ Dd-100 2-chain <- 5-chain  (-3)
+ Dd-105 4-chain <- 7-chain  (-3)
+ Dd-88  4-chain <- 7-chain  (-3)
+ Gd-38  3-chain <- 6-chain  (-3)
+ Go-118 5-chain <- 8-chain  (-3)
+ Ha-109 5-chain <- 8-chain  (-3)
+ Ji-104 5-chain <- 8-chain  (-3)
+ Ji-105 5-chain <- 8-chain  (-3)
+ Kk-66  7-chain <- 10-chain (-3)
+ Kn-106 5-chain <- 8-chain  (-3)
+ Kn-107 5-chain <- 8-chain  (-3)
+ Lx-76  5-chain <- 8-chain  (-3)
+ Lx-90  2-chain <- 5-chain  (-3)
+ Lx-96  5-chain <- 8-chain  (-3)
+ Nm-88  3-chain <- 6-chain  (-3)
+ Nm-89  2-chain <- 5-chain  (-3)
+ Ro-28  7-chain <- 10-chain (-3)
+ Se-84  5-chain <- 8-chain  (-3)
+ Se-85  4-chain <- 7-chain  (-3)
+ U-83   2-chain <- 5-chain  (-3)
+ U-96   3-chain <- 6-chain  (-3)
+ Uq-48  2-chain <- 5-chain  (-3)
+ Uq-52  6-chain <- 9-chain  (-3)
+ V-39   6-chain <- 9-chain  (-3)
+ Vl-96  2-chain <- 5-chain  (-3)
+ Vt-119 6-chain <- 9-chain  (-3)
+ Vt-120 6-chain <- 9-chain  (-3)
+ W-76   6-chain <- 9-chain  (-3)
+ W-87   3-chain <- 6-chain  (-3)
+ Z-97   3-chain <- 6-chain  (-3)
+ Z-98   3-chain <- 6-chain  (-3)
+
+8 dropped 4 chains:
+ Cv-97  4-chain <- 8-chain  (-4)
+ Dd-101 2-chain <- 6-chain  (-4)
+ Dd-102 3-chain <- 7-chain  (-4)
+ Dd-106 4-chain <- 8-chain  (-4)
+ L-56   5-chain <- 9-chain  (-4)
+ Nm-104 4-chain <- 8-chain  (-4)
+ Qe-60  2-chain <- 6-chain  (-4)
+ Uq-49  5-chain <- 9-chain  (-4)
+
+4 dropped 5 chains:
+ Aw-107 3-chain <- 8-chain  (-5)
+ Ek-120 5-chain <- 10-chain (-5)
+ Qe-52  5-chain <- 10-chain (-5)
+ Vl-84  4-chain <- 9-chain  (-5)
+
+A total of 355 chains dropped!! I feel good about that improvement!
+
+2025-06-08 Jun.Sun 22:44:03 SHIT i think I missed more logs today. It was busier on OTOM than I expected. I snapshotted once this morning but not again until just a bit ago and I think I missed a bunch.
+[ ] find out
+
+2025-06-08 Jun.Sun 22:16:54
+[ ] get my vim to do the deeper diffs like my old work PCs used to. This one sucks. It has difficulty diffing my chains.bohr.otom file with the output of my chain_totaller.pl script. It doesn't highlight all the different lines. Its so weird
+
+2025-06-08 Jun.Sun 19:35:29 [ ] I should adjust all those numbers in those optimized full sets files - I added up all the floating point values, but for each tx you must round up to nearest integer so it would actually used much more.
+
+2025-06-08 Jun.Sun 18:49:22 [ ] make my chain_totaller.pl script just read and rewrite the same file. It can write a backup to .bak first for safety
+
+2025-06-08 Jun.Sun 13:12:01 Moved old optimized.get.all.isotopes.ALPHA.otom to optimized.get.all.isotopes.ALPHA.old.otom  and rewrote with same format as BOHR one i just made.
+
+2025-06-08 Jun.Sun 14:40:39
+[ ] Hey this is a shorter way to V-48 than the way that makes it a 6-chain
+ 5-chain L-56   :: 22083.29 | Nm-104⁻             +[  8984.24 -  10000] => V-48 + L-56
+
+[ ] and this is better for L-57:
+ 5-chain Uq-49  :: 22113.73 | Dd-106⁻             +[  9036.32 -  10000] => Uq-49 + L-57        | nuclear                      |
+
+2025-06-08 Jun.Sun 13:12:01 Created optimized.get.all.isotopes.BOHR.otom with 664 isotopes in it.
+
+::FILE:: optimized.get.all.isotopes.BOHR.otom
+
+For data collected as of 2025-06-08.Jun.Sun 05:41:19 EDT which covers up to around OTOMRO 286661
+
+
+
 2025-06-08 Jun.Sun 10:15:52 Made a bunch of updates to chains.bohr.otom
 
 2025-06-07 Jun.Sat 18:43:22 Damn I was leaving to do stuff with my wife and did a git push but got merge conflicts! I forgot to git pull before getting started! Dammit I've got to stop doing that!
@@ -42,56 +316,72 @@ This makes it much easier when I find cheaper recipes to just update the minimal
 ::FILE:: chain_totaller.pl 
 
 2025-06-05 Jun.Thu 19:53:22 There's a new OTOM Assembly item to craft "Insanity Credential No. ∞"
+[c] craft the new item with the 4 most expensive isotopes
 Requires:
-- Gy-30
-- Gk-65
-- K-36
-- Ns-67
+-[c] Gy-30
+-[c] Gk-65
+-[c] K-36
+-[c] Ns-67
 total: 90775.36 NRG to make these 4
 
 
 [>] alpha Gy-30
- [ ] 1-chain Gy-31  ::   564.89 |   Cq-5⁺ +   S-26ª   +[   564.89 -   5000] => ⬇ Gy-31                      | nuclear                      |
- [ ] 1-chain Oc-47  ::   890.16 |  Pq-10⁺ +  Fj-37ª   +[   890.16 -   5000] =>   Oc-47                      | nuclear                      |
- [ ] 1-chain Fj-34  ::   772.74 |   Xl-9⁺ +   S-25⁺   +[   772.74 -   5000] => ⬇ Fj-34                      | nuclear                      |
- [ ] 2-chain Ic-51  ::  2148.55 |  Pm-17⁺ +  Fj-34⁺   +[  1375.81 -   5000] =>   Ic-51                      | nuclear                      |
- [ ] 2-chain Hb-57  ::  1892.70 |  Pq-10⁺ +  Oc-47⁺   +[  1002.54 -   2000] =>   Hb-57                      | nuclear                      |
- [ ] 3-chain Zq-26  ::  6849.09 |  Hb-57⁺             +[  4956.39 -  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      |
- [ ] 4-chain Dx-14  ::  8291.28 |  Zq-26⁺             +[  1442.19 -   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      |
- [ ] 5-chain Gk-65  :: 11801.45 |  Dx-14⁺ +  Ic-51⁺   +[  1361.62 -   5000] => ⬇ Gk-65                      | decay, nuclear               |
- [ ] 6-chain Gy-30  :: 17358.98 |  Gk-65⁺             +[  5557.53 -  10000] => ⬆ Gy-30 + Fj-35              | nuclear                      |
+ [r] 1-chain Gy-31  ::   564.89 |   Cq-5⁺ +   S-26ª   +[   564.89 -   5000] => ⬇ Gy-31                      | nuclear                      | used 564.74 [ ] update recipe chains
+ [r] 1-chain Oc-47  ::   890.16 |  Pq-10⁺ +  Fj-37ª   +[   890.16 -   5000] =>   Oc-47                      | nuclear                      | [ ] this is min
+ [r] 1-chain Fj-34  ::   772.74 |   Xl-9⁺ +   S-25⁺   +[   772.74 -   5000] => ⬇ Fj-34                      | nuclear                      | [ ] this is min
+ [r] 2-chain Ic-51  ::  2148.55 |  Pm-17⁺ +  Fj-34⁺   +[  1375.81 -   5000] =>   Ic-51                      | nuclear                      | used 1374.61 [ ] update recipe chains
+ [r] 2-chain Hb-57  ::  1892.70 |  Pq-10⁺ +  Oc-47⁺   +[  1002.54 -   2000] =>   Hb-57                      | nuclear                      | used 1002.39 [ ] update recipe chains
+ [r] 3-chain Zq-26  ::  6849.09 |  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      | [ ] this is min
+ [r] 4-chain Dx-14  ::  8291.28 |  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      | [ ] this is min
+ [r] 5-chain Gk-65  :: 11801.45 |  Dx-14⁺ +  Ic-51⁺   +[  1361.62*-   5000] => ⬇ Gk-65                      | decay, nuclear               | [ ] this is min
+ [r] 6-chain Gy-30  :: 17358.98 |  Gk-65⁺             +[  5557.53*-  10000] => ⬆ Gy-30 + Fj-35              | nuclear                      | [ ] this is min
 
 [>] alpha Gk-65
- [ ] 1-chain Oc-47  ::   890.16 |  Pq-10⁺ +  Fj-37ª   +[   890.16 -   5000] =>   Oc-47                      | nuclear                      |
- [ ] 1-chain Fj-34  ::   772.74 |   Xl-9⁺ +   S-25⁺   +[   772.74 -   5000] => ⬇ Fj-34                      | nuclear                      |
- [ ] 2-chain Ic-51  ::  2148.55 |  Pm-17⁺ +  Fj-34⁺   +[  1375.81 -   5000] =>   Ic-51                      | nuclear                      |
- [ ] 2-chain Hb-57  ::  1892.70 |  Pq-10⁺ +  Oc-47⁺   +[  1002.54 -   2000] =>   Hb-57                      | nuclear                      |
- [ ] 3-chain Zq-26  ::  6849.09 |  Hb-57⁺             +[  4956.39 -  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      |
- [ ] 4-chain Dx-14  ::  8291.28 |  Zq-26⁺             +[  1442.19 -   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      |
- [ ] 5-chain Gk-65  :: 11801.45 |  Dx-14⁺ +  Ic-51⁺   +[  1361.62 -   5000] => ⬇ Gk-65                      | decay, nuclear               |
+ [r] 1-chain Oc-47  ::   890.16 |  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      | [ ] this is min
+ [r] 1-chain Fj-34  ::   772.74 |   Xl-9⁺ +   S-25⁺   +[   772.74*-   5000] => ⬇ Fj-34                      | nuclear                      | [ ] this is min
+ [r] 2-chain Ic-51  ::  2148.55 |  Pm-17⁺ +  Fj-34⁺   +[  1374.61 -   5000] =>   Ic-51                      | nuclear                      | used 1374.56 [ ] update recipe chains
+ [r] 2-chain Hb-57  ::  1892.70 |  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      | [ ] this is min
+ [r] 3-chain Zq-26  ::  6849.09 |  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      |
+ [r] 4-chain Dx-14  ::  8291.28 |  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      |
+ [r] 5-chain Gk-65  :: 11801.45 |  Dx-14⁺ +  Ic-51⁺   +[  1361.62*-   5000] => ⬇ Gk-65                      | decay, nuclear               |
 
 [>] bohr K-36
- [ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
- [ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
- [ ] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3203.54 -  20000] => Ok-100        | nuclear                      |
- [ ] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2645.16 -   5000] => P-22 + Ok-102 | decay, nuclear               |
- [ ] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.59 -   5000] => P-22 + Vl-97  | decay, nuclear               |
- [ ] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2486.02 -   3500] => P-22 + Vl-99  | decay, nuclear               |
- [ ] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2425.37 -   5000] => P-22 + Vl-101 | decay, nuclear               |
- [ ] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               |
- [ ] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[ 11074.17 -  12000] => Ux-57 + Ns-67 | nuclear                      |
- [ ] 8-chain K-36   :: 33393.69 |  Ns-67⁻             +[  5172.45 -   5410] => Yu-31 + K-36  | nuclear                      |
+ [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [r] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3203.54 -  20000] => Ok-100        | nuclear                      | used 3163.74 [x] update recipe chains
+ [r] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2645.16 -   5000] => P-22 + Ok-102 | decay, nuclear               | used 2527.46 [x] update recipe chains
+ [r] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.59 -   5000] => P-22 + Vl-97  | decay, nuclear               | used 1811.19 [ ] update recipe chains
+ [r] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2486.02 -   3500] => P-22 + Vl-99  | decay, nuclear               | used 2435.37 [x] update recipe chains
+ [r] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2425.37 -   5000] => P-22 + Vl-101 | decay, nuclear               | used 2396.67 [ ] update recipe chains
+ [r] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               | [ ] this is min
+ [r] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[ 11074.17 -  12000] => Ux-57 + Ns-67 | nuclear                      | used 9659.04 [ ] update recipe chains
+ [r] 8-chain K-36   :: 33393.69 |  Ns-67⁻             +[  5172.45 -   5410] => Yu-31 + K-36  | nuclear                      | used 5160.00 [ ] update recipe chains
 
 [>] bohr Ns-67
- [ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
- [ ] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
- [ ] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3203.54 -  20000] => Ok-100        | nuclear                      |
- [ ] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2645.16 -   5000] => P-22 + Ok-102 | decay, nuclear               |
- [ ] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.59 -   5000] => P-22 + Vl-97  | decay, nuclear               |
- [ ] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2486.02 -   3500] => P-22 + Vl-99  | decay, nuclear               |
- [ ] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2425.37 -   5000] => P-22 + Vl-101 | decay, nuclear               |
- [ ] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               |
- [ ] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[ 11074.17 -  12000] => Ux-57 + Ns-67 | nuclear                      |
+ [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [r] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3163.74 -  20000] => Ok-100        | nuclear                      | used 3161.74 [ ] update recipe chains
+ [r] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2527.46 -   5000] => P-22 + Ok-102 | decay, nuclear               | used 2521.56 [ ] update recipe chains
+ [r] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.19 -   5000] => P-22 + Vl-97  | decay, nuclear               | [ ] this is min
+ [r] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2435.37 -   3500] => P-22 + Vl-99  | decay, nuclear               | used 2432.82 [x] update recipe chains
+ [r] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2396.67 -   5000] => P-22 + Vl-101 | decay, nuclear               | used 2395.22 [x] update recipe chains
+ [r] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               |
+ [f] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[  9659.04 -  12000] => Ux-57 + Ns-67 | nuclear                      | [[ ]] Aw-124 + 9660 => P-22 + Se-102 + 9177 using 483.00 ???? [ ] run the parser and see what I did - its too annoying to look through the txs and find it
+
+Oh for fucks sake. I split an Aw-112 and thought it had been Aw-124 so I used the 9659.04 NRG which was wrong.
+
+Try again:
+ [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
+ [r] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3161.74 -  20000] => Ok-100        | nuclear                      |
+ [r] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2521.56 -   5000] => P-22 + Ok-102 | decay, nuclear               |
+ [r] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.19*-   5000] => P-22 + Vl-97  | decay, nuclear               |
+ [r] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2432.82 -   3500] => P-22 + Vl-99  | decay, nuclear               | used 2432.67 [ ] update recipe chains
+ [r] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2395.22 -   5000] => P-22 + Vl-101 | decay, nuclear               | used 2395.17 [ ] update recipe chains
+ [r] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               | [ ] this is min
+ [r] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[ 11074.17 -  12000] => Ux-57 + Ns-67 | nuclear                      | used 11074.07 [ ] update recipe chains
+
+
 
 2025-06-04 Jun.Wed 15:35:40 whats missing.
 

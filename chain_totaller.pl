@@ -4,6 +4,9 @@
 #
 #   Assuming its already in proper format this should update the cumulative totals column
 #   as it reads the file and learns the cost of each otom progressively.
+#
+# examples:
+#   chain_totaller.pl chains.bohr.otom > new.chains.bohr.otom
 
 my %db=();
 

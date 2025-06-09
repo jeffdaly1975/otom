@@ -1,7 +1,36 @@
 
 
 # how to run the parser in tcsh:
-% ( ./parseReactorLog.pl logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_Reactor/* > stdout ) >& stderr & && tail -f stderr 
+( ./parseReactorLog.pl logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_Reactor/* > stdout ) >& stderr & && tail -f stderr 
 
 # check linecounts of Reactor csvs
-% wc -l ~/Downloads/logs_0xB8* logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_Reactor/*2025-06-??{,-?,-??}.csv
+wc -l ~/Downloads/logs_0xB8* logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_Reactor/*2025-06-??{,-?,-??}.csv
+
+
+# update all the totals in the chains files to use the smallest values (if sorted in order)
+
+# usage: chain_totaller.pl chains.bohr.otom > recalculated-chains.bohr.otom
+./chain_totaller.pl chains.bohr.otom > new.chains.bohr.otom
+vimdiff new.chains.bohr.otom chains.bohr.otom 
+mv new.chains.bohr.otom chains.bohr.otom 
+
+
+# 2025-04-20 Apr.Sun 20:22:38 Calls isotpes_worker.bohr.sh script which calls balanceOf() function with all Bohr Isotopes
+# usage: get_isotopes_bohr.alchemy.pl WALLET
+# examples:
+  ./get_isotopes_alpha.alchemy.pl 0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc
+  ./get_isotopes_bohr.alchemy.pl  0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc
+
+  ./get_isotopes_alpha.alchemy.pl 0x620051B8553a724b742ae6ae9cC3585d29F49848
+  ./get_isotopes_bohr.alchemy.pl  0x620051B8553a724b742ae6ae9cC3585d29F49848
+
+# 2025-04-20 Apr.Sun 20:22:38 Calls isotpes_worker.bohr.sh script which calls balanceOf() function with all Bohr Isotopes
+# usage: get_burnables_alpha.pl WALLET 10
+#  -produces the strings to send to Annihilator such that you are left with up to 10 of each mineable (if you had that)
+
+# examples:
+  ./get_burnables_alpha.alchemy.pl 0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc  4
+  ./get_burnables_bohr.alchemy.pl  0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc  4
+
+  ./get_burnables_alpha.alchemy.pl 0x620051B8553a724b742ae6ae9cC3585d29F49848 10
+  ./get_burnables_bohr.alchemy.pl  0x620051B8553a724b742ae6ae9cC3585d29F49848 10

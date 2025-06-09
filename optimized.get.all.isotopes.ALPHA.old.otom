@@ -1,0 +1,379 @@
+| isotope  | reaction recipe
+|  1  1 Ju | mineable
+|  2  1 Ju | mineable
+|  3  1 Ju | mineable
+|  4  2  W | mineable
+|  5  2  W | mineable
+|  5  3 Cq | mineable
+|  6  3 Cq | mineable
+|  7  3 Cq | mineable
+|  7  4 Af | mineable
+|  8  4 Af | mineable
+|  9  4 Af | mineable
+| 10  4 Af | 19  8 Dx +             804 =>  9  4 Af + 10  4 Af PREREQUISITE 41 18 Fj +            3150 => 19  8 Dx + 22 10  M PREREQUISITE  9  4 Af + 32 14 Zq + 1200 => 41 18 Fj
+|  9  5 Xl | mineable
+| 10  5 Xl | mineable
+| 11  5 Xl | mineable
+| 12  5 Xl | 23 10  M +            1240 => 12  5 Xl + 11  5 Xl
+| 10  6 Pq | mineable
+| 11  6 Pq | 21 11 Fw +            1300 => 10  5 Xl + 11  6 Pq PREREQUISITE  6  3 Cq + 15  8 Dx +  700 => 21 11 Fw
+| 12  6 Pq | mineable
+| 13  6 Pq | mineable
+| 14  6 Pq | mineable
+| 15  6 Pq | mineable
+| 13  7 Zz | mineable
+| 14  7 Zz | mineable
+| 15  7 Zz | 15  8 Dx +               0 => 15  7 Zz
+| 16  7 Zz | 34 15 Xc +            2348 => 16  7 Zz + 18  8 Dx
+| 14  8 Dx | 26 14 Zq +            1443 => 12  6 Pq + 14  8 Dx PREREQUISITE 57 30 Hb +            4957 => 26 14 Zq + 31 16 Gy PREREQUISITE 15  8 Dx + 42 22  A + 1475 => 57 30 Hb            PREREQUISITE 17  9 Pm + 25 13  S + 1171 => 42 22  A
+| 15  8 Dx | mineable
+| 16  8 Dx | mineable
+| 17  8 Dx | mineable
+| 18  8 Dx | 18  9 Pm +               0 => 18  8 Dx
+| 19  8 Dx | 41 18 Fj +            2980 => 19  8 Dx + 22 10  M PREREQUISITE  9  4 Af + 32 14 Zq + 1148 => 41 18 Fj
+| 17  9 Pm | mineable
+| 18  9 Pm | mineable
+| 19  9 Pm | mineable
+| 20  9 Pm |  5  2  W + 15  6 Pq +  542 => 20  9 Pm
+| 21  9 Pm | 45 20  C +            3546 => 21  9 Pm + 24 11 Fw PREREQUISITE 11  5 Xl + 34 15 Xc + 1363 => 45 20  C
+| 19 10  M |  7  4 Af + 12  6 Pq +  475 => 19 10  M
+| 20 10  M | mineable
+| 21 10  M |  7  3 Cq + 14  7 Zz +  673 => 21 10  M
+| 22 10  M | mineable
+| 23 10  M | mineable
+| 21 11 Fw |  9  5 Xl + 12  6 Pq +  608 => 21 11 Fw
+| 22 11 Fw |  7  4 Af + 15  8 Dx +  492 => 22 11 Fw
+| 23 11 Fw | 23 10  M +               0 => 23 11 Fw
+| 24 11 Fw |  9  4 Af + 15  6 Pq +  750 => 24 11 Fw
+| 25 11 Fw | mineable
+| 26 11 Fw | 48 21  E +            4000 => 22 10  M + 26 11 Fw PREREQUISITE 23 10  M + 25 11 Fw + 1400 => 48 21  E
+| 22 12 Pt | 47 25 Nb +            3687 => 22 12 Pt + 25 13  S PREREQUISITE 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 23 12 Pt | 10  5 Xl + 13  7 Zz +  582 => 23 12 Pt
+| 24 12 Pt | mineable
+| 25 12 Pt | mineable
+| 26 12 Pt | mineable
+| 27 12 Pt | 50 23 Aw +            4600 => 23 11 Fw + 27 12 Pt
+| 28 12 Pt | 52 23 Aw +            4400 => 24 11 Fw + 28 12 Pt PREREQUISITE  3  1 Ju + 49 22  A + 1300 => 52 23 Aw            PREREQUISITE 23 10  M + 26 12 Pt + 2050 => 49 22  A
+| 24 13  S | 10  6 Pq + 14  8 Dx +  518 => 24 13  S            PREREQUISITE 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx PREREQUISITE 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy PREREQUISITE 15  8 Dx + 42 22  A + 1500 => 57 30 Hb            PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A
+| 25 13  S | mineable
+| 26 13  S | mineable
+| 27 13  S |  9  4 Af + 18  9 Pm +  900 => 27 13  S
+| 28 13  S |  5  2  W + 23 10  M +  850 => 28 13  S
+| 29 13  S | 54 25 Nb +            4900 => 25 12 Pt + 29 13  S
+| 30 13  S | 14  6 Pq + 16  7 Zz + 1950 => 30 13  S            PREREQUISITE 34 15 Xc +            2500 => 18  8 Dx + 16  7 Zz
+| 26 14 Zq | 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 27 14 Zq |  1  1 Ju + 26 13  S +  750 => 27 14 Zq
+| 28 14 Zq | 11  5 Xl + 17  9 Pm +  950 => 28 14 Zq
+| 29 14 Zq |  3  1 Ju + 26 13  S +  850 => 29 14 Zq
+| 30 14 Zq | 11  5 Xl + 19  9 Pm + 1450 => 30 14 Zq
+| 31 14 Zq |  6  3 Cq + 25 11 Fw +  900 => 31 14 Zq
+| 32 14 Zq | mineable
+| 28 15 Xc | 52 27 Ic +            4530 => 24 12 Pt + 28 15 Xc PREREQUISITE 20 10  M + 32 17  D + 2250 => 52 27 Ic            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 29 15 Xc | 14  7 Zz + 15  8 Dx +  800 => 29 15 Xc
+| 30 15 Xc | mineable
+| 31 15 Xc | mineable
+| 32 15 Xc | 32 14 Zq +               0 => 32 15 Xc
+| 33 15 Xc | 15  6 Pq + 18  9 Pm +  800 => 33 15 Xc
+| 34 15 Xc | mineable
+| 30 16 Gy | 65 34 Gk +            5779 => 30 16 Gy + 35 18 Fj PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A            PREREQUISITE 15  8 Dx + 42 22  A + 1500 => 57 30 Hb            PREREQUISITE 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy PREREQUISITE 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw            PREREQUISITE  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc            PREREQUISITE  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic            PREREQUISITE 14  8 Dx + 51 27 Ic + 1443 => 65 34 Gk
+| 31 16 Gy |  1  1 Ju + 30 15 Xc + 1050 => 31 16 Gy
+| 32 16 Gy |  1  1 Ju + 31 15 Xc +  825 => 32 16 Gy
+| 33 16 Gy |  2  1 Ju + 31 15 Xc +  900 => 33 16 Gy
+| 34 16 Gy | mineable
+| 35 16 Gy |  1  1 Ju + 34 15 Xc +  850 => 35 16 Gy
+| 36 16 Gy |  2  1 Ju + 34 15 Xc +  900 => 36 16 Gy
+| 32 17  D |  7  4 Af + 25 13  S +  700 => 32 17  D
+| 33 17  D | 13  7 Zz + 20 10  M + 1300 => 33 17  D
+| 34 17  D | 10  5 Xl + 24 12 Pt + 1200 => 34 17  D
+| 35 17  D |  1  1 Ju + 34 16 Gy + 1100 => 35 17  D
+| 36 17  D |  2  1 Ju + 34 16 Gy + 1200 => 36 17  D
+| 37 17  D | mineable
+| 38 17  D |  6  3 Cq + 32 14 Zq + 1100 => 38 17  D
+| 39 17  D | 14  6 Pq + 25 11 Fw + 1100 => 39 17  D
+| 34 18 Fj |  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+| 35 18 Fj | 17  9 Pm + 18  9 Pm + 1050 => 35 18 Fj
+| 36 18 Fj | 18  9 Pm + 18  9 Pm + 1100 => 36 18 Fj
+| 37 18 Fj | mineable
+| 38 18 Fj | 16  8 Dx + 22 10  M + 2000 => 38 18 Fj
+| 39 18 Fj |  2  1 Ju + 37 17  D +  940 => 39 18 Fj
+| 40 18 Fj |  3  1 Ju + 37 17  D + 1000 => 40 18 Fj
+| 41 18 Fj |  9  4 Af + 32 14 Zq + 1200 => 41 18 Fj
+| 36 19  O | 67 35 Qi +            6000 => 31 16 Gy + 36 19  O PREREQUISITE 10  6 Pq + 57 30 Hb + 1200 => 67 35 Qi            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 37 19  O | 17  9 Pm + 20 10  M + 1500 => 37 19  O
+| 38 19  O | 18  9 Pm + 20 10  M + 1600 => 38 19  O
+| 39 19  O |  2  1 Ju + 37 18 Fj + 1000 => 39 19  O
+| 40 19  O |  3  1 Ju + 37 18 Fj + 1000 => 40 19  O
+| 41 19  O | 15  6 Pq + 26 13  S + 1000 => 41 19  O
+| 42 19  O | 19  9 Pm + 23 10  M + 1700 => 42 19  O
+| 43 19  O |  9  4 Af + 34 15 Xc + 1300 => 43 19  O
+| 38 20  C | 13  7 Zz + 25 13  S +  992 => 38 20  C
+| 39 20  C | 15  8 Dx + 24 12 Pt + 1500 => 39 20  C
+| 40 20  C | 20 10  M + 20 10  M + 2350 => 40 20  C
+| 41 20  C |  4  2  W + 37 18 Fj + 1100 => 41 20  C
+| 42 20  C |  5  3 Cq + 37 17  D +  750 => 42 20  C
+| 43 20  C | 18  9 Pm + 25 11 Fw + 1250 => 43 20  C
+| 44 20  C | 22 10  M + 22 10  M + 2450 => 44 20  C
+| 45 20  C | 11  5 Xl + 34 15 Xc + 1400 => 45 20  C
+| 40 21  E | 15  8 Dx + 25 13  S + 1100 => 40 21  E
+| 41 21  E | 17  9 Pm + 24 12 Pt + 1600 => 41 21  E
+| 42 21  E |  5  3 Cq + 37 18 Fj +  750 => 42 21  E
+| 43 21  E |  6  3 Cq + 37 18 Fj + 1200 => 43 21  E
+| 44 21  E |  7  3 Cq + 37 18 Fj + 1300 => 44 21  E
+| 45 21  E | 13  7 Zz + 32 14 Zq + 1200 => 45 21  E
+| 46 21  E |  9  4 Af + 37 17  D + 1350 => 46 21  E
+| 47 21  E | 22 10  M + 25 11 Fw + 1850 => 47 21  E
+| 48 21  E | 23 10  M + 25 11 Fw + 1400 => 48 21  E
+| 42 22  A | 17  9 Pm + 25 13  S + 1200 => 42 22  A
+| 43 22  A | 18  9 Pm + 25 13  S + 1350 => 43 22  A
+| 44 22  A |  7  4 Af + 37 18 Fj +  900 => 44 22  A
+| 45 22  A |  8  4 Af + 37 18 Fj + 1300 => 45 22  A
+| 46 22  A |  9  5 Xl + 37 17  D + 1100 => 46 22  A
+| 47 22  A | 13  7 Zz + 34 15 Xc + 1300 => 47 22  A
+| 48 22  A | 11  5 Xl + 37 17  D + 1500 => 48 22  A
+| 49 22  A | 15  6 Pq + 34 15 Xc + 1200 => 49 22  A
+| 50 22  A | 25 11 Fw + 25 11 Fw + 1500 => 50 22  A
+| 44 23 Aw | 10  6 Pq + 34 18 Fj +  865 => 44 23 Aw            PREREQUISITE  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+| 45 23 Aw | 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+| 46 23 Aw |  9  5 Xl + 37 18 Fj + 1150 => 46 23 Aw
+| 47 23 Aw | 10  6 Pq + 37 17  D + 1100 => 47 23 Aw
+| 48 23 Aw | 11  5 Xl + 37 18 Fj + 1500 => 48 23 Aw
+| 49 23 Aw | 12  6 Pq + 37 17  D + 1400 => 49 23 Aw
+| 50 23 Aw | mineable
+| 51 23 Aw | 25 11 Fw + 26 12 Pt + 2050 => 51 23 Aw
+| 52 23 Aw | 15  6 Pq + 37 17  D + 1177 => 52 23 Aw
+| 46 24 Oc |  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc            PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+| 47 24 Oc | 10  6 Pq + 37 18 Fj +  996 => 47 24 Oc
+| 48 24 Oc | 24 12 Pt + 24 12 Pt + 2600 => 48 24 Oc
+| 49 24 Oc | 24 12 Pt + 25 12 Pt + 2050 => 49 24 Oc
+| 50 24 Oc | 25 12 Pt + 25 12 Pt + 1650 => 50 24 Oc
+| 51 24 Oc |  1  1 Ju + 50 23 Aw + 1100 => 51 24 Oc
+| 52 24 Oc | 15  6 Pq + 37 18 Fj + 1250 => 52 24 Oc
+| 53 24 Oc |  3  1 Ju + 50 23 Aw + 1250 => 53 24 Oc
+| 54 24 Oc | 22 10  M + 32 14 Zq + 2200 => 54 24 Oc
+| 47 25 Nb | 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 48 25 Nb | 13  7 Zz + 35 18 Fj + 1250 => 48 25 Nb            PREREQUISITE 17  9 Pm + 18  9 Pm + 1050 => 35 18 Fj
+| 49 25 Nb | 15  8 Dx + 34 18 Fj + 1296 => 49 25 Nb            PREREQUISITE  9  5 Xl + 25 13  S +  780 => 34 18 Fj
+| 50 25 Nb | 20 10  M + 30 15 Xc + 2950 => 50 25 Nb
+| 51 25 Nb | 20 10  M + 31 15 Xc + 2350 => 51 25 Nb
+| 52 25 Nb | 22 10  M + 30 15 Xc + 2910 => 52 25 Nb
+| 53 25 Nb | 22 10  M + 31 15 Xc + 2450 => 53 25 Nb
+| 54 25 Nb | mineable
+| 55 25 Nb |  5  2  W + 50 23 Aw + 1370 => 55 25 Nb
+| 56 25 Nb | 22 10  M + 34 15 Xc + 2350 => 56 25 Nb
+| 50 26 Xk | 25 13  S + 25 13  S + 1600 => 50 26 Xk
+| 51 26 Xk | 25 13  S + 26 13  S + 1600 => 51 26 Xk
+| 52 26 Xk | 26 13  S + 26 13  S + 1750 => 52 26 Xk
+| 53 26 Xk | 16  8 Dx + 37 18 Fj + 2000 => 53 26 Xk
+| 54 26 Xk | 17  8 Dx + 37 18 Fj + 2200 => 54 26 Xk
+| 55 26 Xk |  5  3 Cq + 50 23 Aw +  910 => 55 26 Xk
+| 56 26 Xk | 19  9 Pm + 37 17  D + 2300 => 56 26 Xk
+| 57 26 Xk |  7  3 Cq + 50 23 Aw + 1500 => 57 26 Xk
+| 58 26 Xk | 26 12 Pt + 32 14 Zq + 2400 => 58 26 Xk
+| 59 26 Xk | 25 11 Fw + 34 15 Xc + 1727 => 59 26 Xk
+| 51 27 Ic |  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic            PREREQUISITE  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc            PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+| 52 27 Ic | 20 10  M + 32 17  D + 2250 => 52 27 Ic            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 53 27 Ic | 26 13  S + 27 14 Zq + 1800 => 53 27 Ic            PREREQUISITE  1  1 Ju + 26 13  S +  750 => 27 14 Zq
+| 54 27 Ic | 24 12 Pt + 30 15 Xc + 3100 => 54 27 Ic
+| 55 27 Ic | 25 12 Pt + 30 15 Xc + 2400 => 55 27 Ic
+| 56 27 Ic | 25 12 Pt + 31 15 Xc + 1950 => 56 27 Ic
+| 57 27 Ic |  7  4 Af + 50 23 Aw + 1090 => 57 27 Ic
+| 58 27 Ic | 26 13  S + 32 14 Zq + 1800 => 58 27 Ic
+| 59 27 Ic |  9  4 Af + 50 23 Aw + 1620 => 59 27 Ic
+| 60 27 Ic | 23 10  M + 37 17  D + 1800 => 60 27 Ic
+| 61 27 Ic | 23 10  M + 38 17  D + 1850 => 61 27 Ic            PREREQUISITE  6  3 Cq + 32 14 Zq + 1100 => 38 17  D
+| 62 27 Ic |  3  1 Ju + 59 26 Xk + 1303 => 62 27 Ic            PREREQUISITE 25 11 Fw + 34 15 Xc + 1727 => 59 26 Xk
+| 54 28 Yp | 20 10  M + 34 18 Fj + 2200 => 54 28 Yp            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 55 28 Yp | 25 13  S + 30 15 Xc + 2350 => 55 28 Yp
+| 56 28 Yp | 25 13  S + 31 15 Xc + 1900 => 56 28 Yp
+| 57 28 Yp | 20 10  M + 37 18 Fj + 2500 => 57 28 Yp
+| 58 28 Yp | 24 12 Pt + 34 16 Gy + 3200 => 58 28 Yp
+| 59 28 Yp | 22 10  M + 37 18 Fj + 2550 => 59 28 Yp
+| 60 28 Yp | 26 13  S + 34 15 Xc + 1950 => 60 28 Yp
+| 61 28 Yp |  7  3 Cq + 54 25 Nb + 1650 => 61 28 Yp
+| 62 28 Yp | 25 11 Fw + 37 17  D + 1950 => 62 28 Yp
+| 63 28 Yp | 25 11 Fw + 38 17  D + 2000 => 63 28 Yp            PREREQUISITE  6  3 Cq + 32 14 Zq + 1100 => 38 17  D
+| 56 29 Jx | 25 13  S + 31 16 Gy + 1900 => 56 29 Jx            PREREQUISITE  1  1 Ju + 30 15 Xc + 1050 => 31 16 Gy
+| 57 29 Jx | 26 13  S + 31 16 Gy + 2000 => 57 29 Jx            PREREQUISITE  1  1 Ju + 30 15 Xc + 1050 => 31 16 Gy
+| 58 29 Jx | 25 13  S + 33 16 Gy + 2500 => 58 29 Jx            PREREQUISITE  2  1 Ju + 31 15 Xc +  900 => 33 16 Gy
+| 59 29 Jx | 25 13  S + 34 16 Gy + 2500 => 59 29 Jx
+| 60 29 Jx | 10  6 Pq + 50 23 Aw + 1100 => 60 29 Jx
+| 61 29 Jx | 24 12 Pt + 37 17  D + 2550 => 61 29 Jx
+| 62 29 Jx | 25 12 Pt + 37 17  D + 2050 => 62 29 Jx
+| 63 29 Jx | 13  6 Pq + 50 23 Aw + 2100 => 63 29 Jx
+| 64 29 Jx | 14  6 Pq + 50 23 Aw + 1750 => 64 29 Jx
+| 65 29 Jx | 15  6 Pq + 50 23 Aw + 1500 => 65 29 Jx
+| 57 30 Hb | 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 58 30 Hb | 26 13  S + 32 17  D + 2000 => 58 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 59 30 Hb | 15  8 Dx + 44 22  A + 1800 => 59 30 Hb            PREREQUISITE  7  4 Af + 37 18 Fj +  900 => 44 22  A
+| 60 30 Hb | 30 15 Xc + 30 15 Xc + 3600 => 60 30 Hb
+| 61 30 Hb | 30 15 Xc + 31 15 Xc + 2900 => 61 30 Hb
+| 62 30 Hb | 31 15 Xc + 31 15 Xc + 2300 => 62 30 Hb
+| 63 30 Hb | 13  7 Zz + 50 23 Aw + 1700 => 63 30 Hb
+| 64 30 Hb | 14  7 Zz + 50 23 Aw + 1700 => 64 30 Hb
+| 65 30 Hb | 31 15 Xc + 34 15 Xc + 2300 => 65 30 Hb
+| 66 30 Hb | 32 14 Zq + 34 15 Xc + 2100 => 66 30 Hb
+| 67 30 Hb | 33 15 Xc + 34 15 Xc + 2400 => 67 30 Hb            PREREQUISITE  1  1 Ju + 32 14 Zq + 1000 => 33 15 Xc
+| 60 31 At |  9  5 Xl + 51 27 Ic + 1187 => 60 31 At            PREREQUISITE  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic            PREREQUISITE  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc            PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+| 61 31 At | 26 13  S + 35 18 Fj + 2000 => 61 31 At            PREREQUISITE 17  9 Pm + 18  9 Pm + 1050 => 35 18 Fj
+| 62 31 At | 25 13  S + 37 18 Fj + 2000 => 62 31 At
+| 63 31 At | 26 13  S + 37 18 Fj + 2200 => 63 31 At
+| 64 31 At | 10  6 Pq + 54 25 Nb + 1150 => 64 31 At
+| 65 31 At | 15  8 Dx + 50 23 Aw + 1850 => 65 31 At
+| 66 31 At | 16  8 Dx + 50 23 Aw + 2500 => 66 31 At
+| 67 31 At | 17  8 Dx + 50 23 Aw + 2550 => 67 31 At
+| 68 31 At | 34 15 Xc + 34 15 Xc + 2300 => 68 31 At
+| 69 31 At | 15  6 Pq + 54 25 Nb + 1500 => 69 31 At
+| 61 32 Ny | 10  6 Pq + 51 27 Ic + 1040 => 61 32 Ny            PREREQUISITE  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic            PREREQUISITE  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc            PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+| 62 32 Ny |  5  3 Cq + 57 30 Hb +  900 => 62 32 Ny            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 63 32 Ny | 30 15 Xc + 33 17  D + 2900 => 63 32 Ny            PREREQUISITE 13  7 Zz + 20 10  M + 1300 => 33 17  D
+| 64 32 Ny | 27 14 Zq + 37 18 Fj + 2200 => 64 32 Ny            PREREQUISITE  1  1 Ju + 26 13  S +  750 => 27 14 Zq
+| 65 32 Ny | 30 15 Xc + 35 17  D + 3000 => 65 32 Ny            PREREQUISITE  1  1 Ju + 34 16 Gy + 1100 => 35 17  D
+| 66 32 Ny | 25 12 Pt + 41 20  C + 2300 => 66 32 Ny            PREREQUISITE  4  2  W + 37 18 Fj + 1100 => 41 20  C
+| 67 32 Ny | 30 15 Xc + 37 17  D + 3050 => 67 32 Ny
+| 68 32 Ny | 31 15 Xc + 37 17  D + 2400 => 68 32 Ny
+| 69 32 Ny | 19  9 Pm + 50 23 Aw + 2800 => 69 32 Ny
+| 70 32 Ny | 34 16 Gy + 36 16 Gy + 3050 => 70 32 Ny            PREREQUISITE  2  1 Ju + 34 15 Xc +  900 => 36 16 Gy
+| 71 32 Ny | 37 17  D + 34 15 Xc + 2350 => 71 32 Ny
+| 72 32 Ny |  3  1 Ju + 69 31 At + 1600 => 72 32 Ny            PREREQUISITE 15  6 Pq + 54 25 Nb + 1500 => 69 31 At
+| 64 33 Pw |  7  4 Af + 57 30 Hb + 1400 => 64 33 Pw            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 65 33 Pw | 31 15 Xc + 34 18 Fj + 2250 => 65 33 Pw            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 66 33 Pw | 26 12 Pt + 40 21  E + 2700 => 66 33 Pw            PREREQUISITE 15  8 Dx + 25 13  S + 1100 => 40 21  E
+| 67 33 Pw | 30 15 Xc + 37 18 Fj + 3050 => 67 33 Pw
+| 68 33 Pw | 31 15 Xc + 37 18 Fj + 2400 => 68 33 Pw
+| 69 33 Pw | 15  8 Dx + 54 25 Nb + 1850 => 69 33 Pw
+| 70 33 Pw | 16  8 Dx + 54 25 Nb + 2500 => 70 33 Pw
+| 71 33 Pw | 17  8 Dx + 54 25 Nb + 2600 => 71 33 Pw
+| 72 33 Pw | 22 10  M + 50 23 Aw + 3050 => 72 33 Pw
+| 73 33 Pw | 23 10  M + 50 23 Aw + 2250 => 73 33 Pw
+| 74 33 Pw | 34 15 Xc + 40 18 Fj + 3200 => 74 33 Pw            PREREQUISITE  3  1 Ju + 37 17  D + 1000 => 40 18 Fj
+| 65 34 Gk | 14  8 Dx + 51 27 Ic + 1443 => 65 34 Gk            PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A            PREREQUISITE 15  8 Dx + 42 22  A + 1500 => 57 30 Hb            PREREQUISITE 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy PREREQUISITE 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw            PREREQUISITE  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc            PREREQUISITE  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic
+| 66 34 Gk |  9  5 Xl + 57 30 Hb + 1300 => 66 34 Gk            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 67 34 Gk | 25 13  S + 42 21  E + 2200 => 67 34 Gk            PREREQUISITE  5  3 Cq + 37 18 Fj +  750 => 42 21  E
+| 68 34 Gk | 34 16 Gy + 34 18 Fj + 3000 => 68 34 Gk            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 69 34 Gk | 32 17  D + 37 18 Fj + 2350 => 69 34 Gk            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 70 34 Gk | 26 12 Pt + 44 22  A + 3100 => 70 34 Gk            PREREQUISITE  7  4 Af + 37 18 Fj +  900 => 44 22  A
+| 71 34 Gk | 34 16 Gy + 37 18 Fj + 3200 => 71 34 Gk
+| 72 34 Gk | 18  9 Pm + 54 25 Nb + 2100 => 72 34 Gk
+| 73 34 Gk | 19  9 Pm + 54 25 Nb + 2900 => 73 34 Gk
+| 74 34 Gk | 37 17  D + 37 17  D + 2550 => 74 34 Gk
+| 75 34 Gk | 25 11 Fw + 50 23 Aw + 2400 => 75 34 Gk
+| 76 34 Gk | 37 17  D + 39 17  D + 2550 => 76 34 Gk            PREREQUISITE 14  6 Pq + 25 11 Fw + 1100 => 39 17  D
+| 77 34 Gk | 25 11 Fw + 52 23 Aw + 2189 => 77 34 Gk            PREREQUISITE 15  6 Pq + 37 17  D + 1177 => 52 23 Aw
+| 67 35 Qi | 10  6 Pq + 57 30 Hb + 1200 => 67 35 Qi            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 68 35 Qi | 34 18 Fj + 34 18 Fj + 2250 => 68 35 Qi            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 69 35 Qi | 34 18 Fj + 35 18 Fj + 2350 => 69 35 Qi            PREREQUISITE 17  9 Pm + 18  9 Pm + 1050 => 35 18 Fj            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 70 35 Qi | 26 13  S + 44 22  A + 2400 => 70 35 Qi            PREREQUISITE  7  4 Af + 37 18 Fj +  900 => 44 22  A
+| 71 35 Qi | 37 17  D + 34 18 Fj + 2350 => 71 35 Qi            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 72 35 Qi | 34 16 Gy + 38 19  O + 3200 => 72 35 Qi            PREREQUISITE 18  9 Pm + 20 10  M + 1600 => 38 19  O
+| 73 35 Qi | 32 14 Zq + 41 21  E + 2350 => 73 35 Qi            PREREQUISITE 17  9 Pm + 24 12 Pt + 1600 => 41 21  E
+| 74 35 Qi | 20 10  M + 54 25 Nb + 3000 => 74 35 Qi
+| 75 35 Qi | 25 12 Pt + 50 23 Aw + 2550 => 75 35 Qi
+| 76 35 Qi | 22 10  M + 54 25 Nb + 3100 => 76 35 Qi
+| 77 35 Qi | 23 10  M + 54 25 Nb + 2350 => 77 35 Qi
+| 78 35 Qi | 23 10  M + 55 25 Nb + 2213 => 78 35 Qi            PREREQUISITE  5  2  W + 50 23 Aw + 1370 => 55 25 Nb
+| 69 36 Xy | 22 12 Pt + 47 25 Nb + 2040 => 69 36 Xy            PREREQUISITE 47 25 Nb +            3687 => 22 12 Pt + 25 13  S PREREQUISITE 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj            PREREQUISITE 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 70 36 Xy | 13  7 Zz + 57 30 Hb + 1600 => 70 36 Xy            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 71 36 Xy | 29 15 Xc + 42 22  A + 2400 => 71 36 Xy            PREREQUISITE  4  2  W + 25 13  S +  850 => 29 15 Xc            PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A
+| 72 36 Xy | 29 15 Xc + 43 22  A + 2600 => 72 36 Xy            PREREQUISITE  4  2  W + 25 13  S +  850 => 29 15 Xc            PREREQUISITE 18  9 Pm + 25 13  S + 1350 => 43 22  A
+| 73 36 Xy | 32 15 Xc + 41 21  E + 2600 => 73 36 Xy            PREREQUISITE 17  9 Pm + 24 12 Pt + 1600 => 41 21  E
+| 74 36 Xy | 37 18 Fj + 37 18 Fj + 2300 => 74 36 Xy
+| 75 36 Xy | 25 13  S + 50 23 Aw + 2500 => 75 36 Xy
+| 76 36 Xy | 26 13  S + 50 23 Aw + 2500 => 76 36 Xy
+| 77 36 Xy | 23 11 Fw + 54 25 Nb + 3050 => 77 36 Xy
+| 78 36 Xy | 24 11 Fw + 54 25 Nb + 2500 => 78 36 Xy            PREREQUISITE  7  3 Cq + 17  8 Dx + 1050 => 24 11 Fw
+| 79 36 Xy | 25 11 Fw + 54 25 Nb + 2400 => 79 36 Xy
+| 71 37 Gq | 14  8 Dx + 57 30 Hb + 1750 => 72 37 Gq            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D            PREREQUISITE 26 14 Zq +            1450 => 12  6 Pq + 14  8 Dx PREREQUISITE 57 30 Hb +            5300 => 26 14 Zq + 31 16 Gy PREREQUISITE 15  8 Dx + 42 22  A + 1500 => 57 30 Hb            PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A
+| 72 37 Gq | 15  8 Dx + 57 30 Hb + 1750 => 72 37 Gq            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 73 37 Gq | 16  8 Dx + 57 30 Hb + 2550 => 73 37 Gq            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 74 37 Gq | 30 15 Xc + 44 22  A + 3450 => 74 37 Gq            PREREQUISITE  7  4 Af + 37 18 Fj +  900 => 44 22  A
+| 75 37 Gq | 31 15 Xc + 44 22  A + 2800 => 75 37 Gq            PREREQUISITE  7  4 Af + 37 18 Fj +  900 => 44 22  A
+| 76 37 Gq | 31 15 Xc + 45 22  A + 2800 => 76 37 Gq            PREREQUISITE  8  4 Af + 37 18 Fj + 1300 => 45 22  A
+| 77 37 Gq | 23 12 Pt + 54 25 Nb + 2350 => 77 37 Gq            PREREQUISITE 10  5 Xl + 13  7 Zz +  582 => 23 12 Pt
+| 78 37 Gq | 24 12 Pt + 54 25 Nb + 3200 => 78 37 Gq
+| 79 37 Gq | 25 12 Pt + 54 25 Nb + 2550 => 79 37 Gq
+| 80 37 Gq | 26 12 Pt + 54 25 Nb + 3300 => 80 37 Gq
+| 73 38 Bt | 22 12 Pt + 51 27 Ic + 2083 => 73 38 Bt            PREREQUISITE  5  3 Cq + 46 24 Oc +  786 => 51 27 Ic            PREREQUISITE  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc            PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw            PREREQUISITE 47 25 Nb +            3687 => 22 12 Pt + 25 13  S PREREQUISITE 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 74 38 Bt | 17  9 Pm + 57 30 Hb + 2050 => 74 38 Bt            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 75 38 Bt | 29 15 Xc + 46 24 Oc + 2600 => 75 38 Bt            PREREQUISITE  4  2  W + 25 13  S +  850 => 29 15 Xc            PREREQUISITE  1  1 Ju + 45 23 Aw + 1100 => 46 24 Oc            PREREQUISITE 15  8 Dx + 30 15 Xc + 1750 => 45 23 Aw
+| 76 38 Bt | 34 16 Gy + 42 22  A + 3400 => 76 38 Bt            PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A
+| 77 38 Bt | 26 12 Pt + 51 26 Xk + 3200 => 77 38 Bt            PREREQUISITE 25 13  S + 26 13  S + 1600 => 51 26 Xk
+| 78 38 Bt | 34 16 Gy + 44 22  A + 3650 => 78 38 Bt            PREREQUISITE  7  4 Af + 37 18 Fj +  900 => 44 22  A
+| 79 38 Bt | 25 13  S + 54 25 Nb + 2400 => 79 38 Bt
+| 80 38 Bt | 30 15 Xc + 50 23 Aw + 3600 => 80 38 Bt
+| 81 38 Bt | 31 15 Xc + 50 23 Aw + 2950 => 81 38 Bt
+| 75 39  H | 28 15 Xc + 47 25 Nb + 2310 => 75 39  H            PREREQUISITE 52 27 Ic +            4530 => 24 12 Pt + 28 15 Xc PREREQUISITE 20 10  M + 32 17  D + 2250 => 52 27 Ic            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D            PREREQUISITE 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 76 39  H | 19 10  M + 57 30 Hb + 2200 => 76 39  H            PREREQUISITE  4  2  W + 15  8 Dx +  600 => 19 10  M            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 77 39  H | 20 10  M + 57 30 Hb + 3000 => 77 39  H            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 78 39  H | 37 18 Fj + 41 21  E + 2750 => 78 39  H            PREREQUISITE 17  9 Pm + 24 12 Pt + 1600 => 41 21  E
+| 79 39  H | 37 18 Fj + 42 21  E + 2800 => 79 39  H            PREREQUISITE  5  3 Cq + 37 18 Fj +  750 => 42 21  E
+| 80 39  H | 25 13  S + 55 26 Xk + 2600 => 80 39  H            PREREQUISITE  1  1 Ju + 54 25 Nb + 1100 => 55 26 Xk
+| 81 39  H | 27 14 Zq + 54 25 Nb + 2650 => 81 39  H            PREREQUISITE  1  1 Ju + 26 13  S +  750 => 27 14 Zq
+| 82 39  H | 32 15 Xc + 50 24 Oc + 2850 => 82 39  H            PREREQUISITE 25 12 Pt + 25 12 Pt + 1650 => 50 24 Oc
+| 77 40  U | 30 16 Gy + 47 25 Nb + 2628 => 77 40  U            PREREQUISITE 13  7 Zz + 34 18 Fj + 1151 => 47 25 Nb            PREREQUISITE  9  5 Xl + 25 13  S +  774 => 34 18 Fj            PREREQUISITE 65 34 Gk +            5569 => 30 16 Gy + 35 18 Fj PREREQUISITE 14  8 Dx + 51 27 Ic + 1366 => 65 34 Gk            PREREQUISITE 26 14 Zq +            1443 => 12  6 Pq + 14  8 Dx PREREQUISITE 57 30 Hb +            4957 => 26 14 Zq + 31 16 Gy PREREQUISITE 15  8 Dx + 42 22  A + 1475 => 57 30 Hb            PREREQUISITE 17  9 Pm + 25 13  S + 1171 => 42 22  A            PREREQUISITE  5  3 Cq + 46 24 Oc +  785 => 51 27 Ic            PREREQUISITE  1  1 Ju + 45 23 Aw +  976 => 46 24 Oc            PREREQUISITE 15  8 Dx + 30 15 Xc + 1658 => 45 23 Aw            
+| 78 40  U | 21 11 Fw + 57 30 Hb + 2300 => 78 40  U            PREREQUISITE  6  3 Cq + 15  8 Dx +  700 => 21 11 Fw            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 79 40  U | 37 18 Fj + 42 22  A + 2800 => 79 40  U            PREREQUISITE 17  9 Pm + 25 13  S + 1200 => 42 22  A
+| 80 40  U | 25 12 Pt + 55 28 Yp + 2650 => 80 40  U            PREREQUISITE 25 13  S + 30 15 Xc + 2350 => 55 28 Yp
+| 81 40  U | 40 19  O + 41 21  E + 2900 => 81 40  U            PREREQUISITE  3  1 Ju + 37 18 Fj + 1000 => 40 19  O            PREREQUISITE 17  9 Pm + 24 12 Pt + 1600 => 41 21  E
+| 82 40  U | 32 17  D + 50 23 Aw + 2850 => 82 40  U            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 83 40  U | 29 15 Xc + 54 25 Nb + 2800 => 83 40  U            PREREQUISITE  4  2  W + 25 13  S +  850 => 29 15 Xc
+| 79 41 Sq | 22 12 Pt + 57 30 Hb + 2250 => 79 41 Sq            PREREQUISITE 25 13  S + 32 17  D + 1900 => 57 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D            PREREQUISITE 47 25 Nb +            3687 => 22 12 Pt + 25 13  S PREREQUISITE 13  7 Zz + 34 18 Fj + 1250 => 47 25 Nb PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 80 41 Sq | 30 15 Xc + 50 26 Xk + 3400 => 80 41 Sq            PREREQUISITE 25 13  S + 25 13  S + 1600 => 50 26 Xk
+| 81 41 Sq | 30 15 Xc + 51 26 Xk + 3600 => 81 41 Sq            PREREQUISITE 25 13  S + 26 13  S + 1600 => 51 26 Xk
+| 82 41 Sq | 31 15 Xc + 51 26 Xk + 2900 => 82 41 Sq            PREREQUISITE 25 13  S + 26 13  S + 1600 => 51 26 Xk
+| 83 41 Sq | 25 11 Fw + 58 30 Hb + 2500 => 83 41 Sq            PREREQUISITE 26 13  S + 32 17  D + 2000 => 58 30 Hb            PREREQUISITE  7  4 Af + 25 13  S +  700 => 32 17  D
+| 84 41 Sq | 34 18 Fj + 50 23 Aw + 2850 => 84 41 Sq            PREREQUISITE 17  9 Pm + 17  9 Pm + 1000 => 34 18 Fj
+| 83 42 Ua |  1  1 Ju + 82 41 Sq + 1800 => 83 42 Ua            PREREQUISITE 31 15 Xc + 51 26 Xk + 2900 => 82 41 Sq            PREREQUISITE 25 13  S + 26 13  S + 1600 => 51 26 Xk
+| 84 42 Ua |  2  1 Ju + 82 41 Sq + 1900 => 84 42 Ua            PREREQUISITE 31 15 Xc + 51 26 Xk + 2900 => 82 41 Sq            PREREQUISITE 25 13  S + 26 13  S + 1600 => 51 26 Xk
+| 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua            PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx
+
+
+
+SUMMARY:
+You will need 838173 NRG and the following mineable otoms:
+24x  1  1 Ju
+ 9x  2  1 Ju
+11x  3  1 Ju
+ 8x  4  2  W
+ 5x  5  2  W
+14x  5  3 Cq
+ 9x  6  3 Cq
+ 7x  7  3 Cq
+35x  7  4 Af
+ 3x  8  4 Af
+ 8x  9  4 Af
+ 9x  9  5 Xl
+ 3x 10  5 Xl
+11x 10  6 Pq
+ 6x 11  5 Xl
+ 4x 12  6 Pq
+ 2x 13  6 Pq
+19x 13  7 Zz
+ 5x 14  6 Pq
+ 4x 14  7 Zz
+11x 15  6 Pq
+32x 15  8 Dx
+ 6x 16  8 Dx
+ 6x 17  8 Dx
+54x 17  9 Pm
+16x 18  9 Pm
+ 6x 19  9 Pm
+15x 20 10  M
+13x 22 10  M
+13x 23 10  M
+ 2x 23 11 Fw
+15x 24 12 Pt
+20x 25 11 Fw
+12x 25 12 Pt
+82x 25 13  S
+ 8x 26 12 Pt
+26x 26 13  S
+31x 30 15 Xc
+21x 31 15 Xc
+15x 32 14 Zq
+ 3x 32 15 Xc
+22x 34 15 Xc
+13x 34 16 Gy
+24x 37 17  D
+40x 37 18 Fj
+30x 50 23 Aw
+25x 54 25 Nb
