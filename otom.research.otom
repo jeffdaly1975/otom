@@ -1,3 +1,18 @@
+2025-06-10 Jun.Tue 11:07:44 DAMN. trying a new way to find cheaper recipes by doing egrep for the recipe through the entire Reactor_logs_parsed-bohr.txt file for each known chain link.
+I saw one didn't match anything. Turns out I must have hit Ctrl-A on "Ro-23" because it was
+ 8-chain Nd-27  :: 20202.16 |  Pg-50⁺             +[  2838.23 -   2860] => Ro-22 + Nd-27       | nuclear                      | OTOMRO 249131
+But should have been:
+ 8-chain Nd-27  :: 20202.16 |  Pg-50⁺             +[  2838.23 -   2860] => Ro-23 + Nd-27       | nuclear                      | OTOMRO 249131
+
+I don't like that that happened.
+
+Similarly, I had written the Pg-59 recipe in the chains file with the wrong reaction type:
+ 4-chain Pg-59  :: 19220.96 |  S-109ª             +[ 10088.15 -  15000] => Pb-50 + Pg-59       | decay, nuclear               |
+Should be:
+ 4-chain Pg-59  :: 19220.96 |  S-109ª             +[ 10088.15 -  15000] => Pb-50 + Pg-59       | nuclear                      |
+
+
+
 2025-06-09 Jun.Mon 21:37:08 morph sent me some isotopes I was missing for helping him
  Aw-112
  Ek-119
