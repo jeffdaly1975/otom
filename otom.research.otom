@@ -1,4 +1,37 @@
+2025-06-10 Jun.Tue 12:27:11 I found 79 instances OTOMROs of 1-chain recipes with lesser NRG input and fixed them. Saved 1311.30 NRG
+
+Those cheaper 1-chain recipes meant 57 more recipes became cheaper, saving 2177.30 NRG
+
+Also this error was found:
+ 3-chain Vl-97  ::  9353.42 |   P-24⁻ +  Vl-95⁻   +[  2452.67*-   4000] => Vl-97               | decay, nuclear               | OTOMRO 186674
+
+Its actually supposed to output P-22 + Vl-97 like this:
+ 3-chain Vl-97  ::     0.00 |   P-24⁻ +  Vl-95⁻   +[  2452.67 -   2527] => P-22 + Vl-97        | decay, nuclear               | OTOMRO  277435 |
+
+I must have accidentally cut that "P-22 +" from it. Thats why I need to automate all this. Its fun figuring stuff out by hand, but I get tired of repeating complicated processes and need to nail them down in code that can consistently and automatically produce these files.
+
+
+
+After all that reduction I see the total for floating point sums is 4_180_641.32 NRG
+However, since everything we do is input as integers in the OTOM app Reactor UI, we end up having to use 5_958_986 NRG! Using 1_778_344.68 EXTRA???
+Something seems wrong about that calculation. Maybe I messed up somewhere
+
+2025-06-10 Jun.Tue 12:09:59 Vim
+After deleteing a giant column of what I THINK is whitespace, I sometimes split open a new vertical window, paste, :sort u to see if it was all whitespace like i thought.
+Well instead I'd like to just do this to see the length of the cut string after removing all whitespace. If its zero then I was correct it was just whitespace.
+ :echo "nonwhitespace string length deleted = [" . len(substitute(@",'\_\s*','','g')) ."]"
+
 2025-06-10 Jun.Tue 11:07:44 DAMN. trying a new way to find cheaper recipes by doing egrep for the recipe through the entire Reactor_logs_parsed-bohr.txt file for each known chain link.
+
+Basically I turned all the recipes into lines like this:
+echo '===( 1-chain Ai-61  )==='; egrep '\| *\<Vi-10⁺ \+   L-51⁺  .*=>.*\<Ai-61  .* nuclear' Reactor_logs_parsed-bohr.txt
+echo '===( 1-chain Ai-62  )==='; egrep '\| *\<Vi-11⁺ \+   L-51⁺  .*=>.*\<Ai-62  .* nuclear' Reactor_logs_parsed-bohr.txt
+echo '===( 1-chain Ai-63  )==='; egrep '\| *\<Ct-13⁺ \+  Wy-50∙  .*=>.*\<Ai-63  .* nuclear' Reactor_logs_parsed-bohr.txt
+
+Ran it and processed the output. Sorted each set of results, deleted all but first and last
+What's left is the min and max inputs
+
+
 I saw one didn't match anything. Turns out I must have hit Ctrl-A on "Ro-23" because it was
  8-chain Nd-27  :: 20202.16 |  Pg-50⁺             +[  2838.23 -   2860] => Ro-22 + Nd-27       | nuclear                      | OTOMRO 249131
 But should have been:
