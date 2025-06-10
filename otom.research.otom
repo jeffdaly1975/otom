@@ -1,3 +1,1040 @@
+2025-06-09 Jun.Mon 21:37:08 morph sent me some isotopes I was missing for helping him
+ Aw-112
+ Ek-119
+ Cv-115
+ U-97
+ Yv-80
+ Gy-63
+ Ns-67
+ C-53
+
+2025-06-09 Jun.Mon 16:53:10 While fiddling with the chain_totaller.pl script I found it was miscalculating some things. If there was a cheaper route to an isotope in a recipe farther down in the file , it would make that the cheapest recipe to use for that isotope for calculating the remaining recipes even though it wasn't the one I had listed as the cheapest.
+
+It uncovered these possible shorter chains:
+[-] DEBUG: updating db[P-22]  since  [2823.68] >        0  for input_line[ 1-chain Co-80  ::     0.00 |  S-102ª             +[     0.00 -   5000] => P-22 + Co-80        | decay                        |]
+[c] DEBUG: updating db[Dx-43] since [18813.22] > 16206.68  for input_line[ 5-chain K-37   :: 16206.68 |  Yv-80⁻             +[  6516.92 -  12000] => K-37 + Dx-43        | nuclear                      |]
+[-] DEBUG: updating db[V-47]  since [20227.78] > 17626.41  for input_line[ 5-chain Lu-41  :: 17626.41 |  Co-88⁻             +[  7622.84 -  10000] => Lu-41 + V-47        | nuclear                      |]
+[c] DEBUG: updating db[Wy-45] since [17133.14] > 16768.19  for input_line[ 6-chain C-53   :: 16768.19 |  Vt-98⁺             +[  6465.90 -  10000] => Wy-45 + C-53        | nuclear                      |]
+ dropped a chain
+[-] DEBUG: updating db[Uq-41] since [13660.95] > 13546.13  for input_line[ 6-chain Dx-35  :: 13546.13 |  Lx-76⁺             +[  5114.62 -   5160] => Dx-35 + Uq-41       | nuclear                      | OTOMRO 253730]
+[c] DEBUG: updating db[C-53]  since [16768.19] > 16055.03  for input_line[ 6-chain L-46   :: 16055.03 |  Ek-99⁺             +[  6100.44 -  10500] => L-46 + C-53         | nuclear                      |]
+[-] DEBUG: updating db[P-25]  since  [25457.5] > 20635.19  for input_line[ 6-chain P-25   :: 20635.19 |   V-47⁻             +[  3008.78 -  10000] => Eb-22 + P-25        | nuclear                      |]
+[-] DEBUG: updating db[Pg-51] since [16967.72] > 16832.28  for input_line[ 6-chain Pb-43  :: 16832.28 |   S-94⁺             +[  6645.45 -  10000] => Pb-43 + Pg-51       | nuclear                      |]
+[-] DEBUG: updating db[Dx-44] since [21363.25] > 20868.57  for input_line[ 6-chain Uq-52  :: 20868.57 |  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       | nuclear                      |]
+[-] DEBUG: updating db[Wy-45] since [16768.19] > 13771.43  for input_line[ 6-chain V-39   :: 13771.43 |  Se-84⁺             +[  5925.33 -  10000] => V-39 + Wy-45        | nuclear                      |]
+[-] DEBUG: updating db[Gy-63] since [19712.26] > 19332.93  for input_line[ 7-chain Gy-63  :: 19332.93 | Jb-116ª             +[  8108.55 -  10000] => Qe-53 + Gy-63       | nuclear                      |]
+[-] DEBUG: updating db[Cl-24] since  [20605.1] > 19152.94  for input_line[ 7-chain K-29   :: 19152.94 |   C-53⁺             +[  3097.91 -  10000] => Cl-24 + K-29        | nuclear                      |]
+
+The ones I marked as "[-]" means I checked them but they were longer chains even though cheaper in the long run. I don't want to deal with those yet, I just want shortest chains for now
+
+[ ] Eventually I will need to reassess this stance because if I want a file with the most optimized recipe chains, it means ultimately the cheapest amount of NRG use.
+
+2025-06-09 Jun.Mon 15:51:26 I recalculated total costs of isotopes in my optimized files after rounding up to nearest integer like the UI makes you input.
+
+Current costs:
+
+alpha:
+ Af-8:   0
+ Af-9:   0
+ Aw-50:  0
+ Cq-5:   0
+ Cq-6:   0
+ Cq-7:   0
+ D-37:   0
+ Dx-15:  0
+ Dx-16:  0
+ Dx-17:  0
+ Fj-37:  0
+ Fw-25:  0
+ Gy-34:  0
+ Ju-1:   0
+ Ju-2:   0
+ Ju-3:   0
+ M-20:   0
+ M-22:   0
+ M-23:   0
+ Nb-54:  0
+ Pm-17:  0
+ Pm-18:  0
+ Pm-19:  0
+ Pq-10:  0
+ Pq-12:  0
+ Pq-13:  0
+ Pq-14:  0
+ Pq-15:  0
+ Pt-24:  0
+ Pt-25:  0
+ Pt-26:  0
+ S-25:   0
+ S-26:   0
+ W-4:    0
+ W-5:    0
+ Xc-30:  0
+ Xc-31:  0
+ Xc-34:  0
+ Xl-10:  0
+ Xl-11:  0
+ Xl-9:   0
+ Zq-32:  0
+ Zz-13:  0
+ Zz-14:  0
+ A-42:   1171
+ A-43:   1230
+ A-44:   860
+ A-45:   1266
+ A-46:   988
+ A-47:   1106
+ A-48:   1270
+ A-49:   1107
+ A-50:   1409
+ At-62:  1905
+ At-63:  1990
+ At-64:  1088
+ At-65:  1684
+ At-66:  1608
+ At-67:  2024
+ At-68:  1622
+ At-69:  1461
+ Aw-45:  1658
+ Aw-46:  1004
+ Aw-47:  877
+ Aw-48:  1393
+ Aw-49:  1288
+ Aw-51:  1306
+ Aw-52:  1177
+ Bt-79:  2327
+ Bt-80:  2431
+ Bt-81:  2816
+ C-38:   976
+ C-39:   1024
+ C-40:   953
+ C-41:   1045
+ C-42:   691
+ C-43:   929
+ C-44:   1040
+ C-45:   1361
+ D-32:   662
+ D-33:   692
+ D-34:   804
+ D-35:   675
+ D-36:   929
+ D-38:   885
+ D-39:   1002
+ Dx-18:  0
+ E-40:   1063
+ E-41:   838
+ E-42:   703
+ E-43:   1158
+ E-44:   827
+ E-45:   1102
+ E-46:   1156
+ E-47:   1047
+ E-48:   1228
+ Fj-34:  773
+ Fj-35:  686
+ Fj-36:  670
+ Fj-38:  850
+ Fj-39:  653
+ Fj-40:  911
+ Fj-41:  1125
+ Fw-21:  479
+ Fw-22:  477
+ Fw-23:  0
+ Fw-24:  605
+ Gk-71:  1857
+ Gk-72:  1974
+ Gk-73:  2767
+ Gk-74:  2394
+ Gk-75:  2258
+ Gq-78:  3069
+ Gq-79:  2413
+ Gq-80:  3208
+ Gy-31:  565
+ Gy-32:  690
+ Gy-33:  653
+ Gy-35:  798
+ Gy-36:  856
+ Hb-60:  3510
+ Hb-61:  2512
+ Hb-62:  1874
+ Hb-63:  1227
+ Hb-64:  1377
+ Hb-65:  1798
+ Hb-66:  1989
+ Ic-54:  1520
+ Ic-55:  1617
+ Ic-56:  1859
+ Ic-57:  1040
+ Ic-58:  1277
+ Ic-59:  1348
+ Ic-60:  1780
+ Jx-59:  2407
+ Jx-60:  1077
+ Jx-61:  1051
+ Jx-62:  1547
+ Jx-63:  1611
+ Jx-64:  1606
+ Jx-65:  1447
+ M-19:   366
+ M-21:   463
+ Nb-49:  1934
+ Nb-50:  1267
+ Nb-51:  1372
+ Nb-52:  1370
+ Nb-53:  1945
+ Nb-55:  1333
+ Nb-56:  2254
+ Ny-67:  1548
+ Ny-68:  1676
+ Ny-69:  2151
+ Ny-71:  2250
+ O-37:   1016
+ O-38:   810
+ O-39:   893
+ O-40:   923
+ O-41:   816
+ O-42:   977
+ O-43:   1219
+ Oc-47:  891
+ Oc-48:  1437
+ Oc-49:  1318
+ Oc-50:  1248
+ Oc-51:  1043
+ Oc-52:  1120
+ Oc-53:  1193
+ Oc-54:  2119
+ Pm-20:  533
+ Pt-23:  459
+ Pt-27:  648
+ Pw-67:  2946
+ Pw-68:  2328
+ Pw-69:  1700
+ Pw-70:  2416
+ Pw-71:  2289
+ Pw-72:  2947
+ Pw-73:  2187
+ Qi-74:  2433
+ Qi-75:  2390
+ Qi-76:  2977
+ Qi-77:  2209
+ S-27:   691
+ S-28:   518
+ S-29:   675
+ S-30:   579
+ Xc-29:  722
+ Xc-32:  0
+ Xc-33:  750
+ Xk-50:  1467
+ Xk-51:  1532
+ Xk-52:  1394
+ Xk-53:  1977
+ Xk-54:  1502
+ Xk-55:  850
+ Xk-56:  1131
+ Xk-57:  1212
+ Xk-58:  2284
+ Xk-59:  1727
+ Xl-12:  1240
+ Xy-74:  2473
+ Xy-75:  2304
+ Xy-76:  2407
+ Xy-79:  2281
+ Yp-55:  2269
+ Yp-56:  1793
+ Yp-57:  1873
+ Yp-58:  3174
+ Yp-59:  859
+ Yp-60:  1369
+ Yp-61:  1482
+ Yp-62:  1837
+ Zq-27:  550
+ Zq-28:  586
+ Zq-29:  749
+ Zq-30:  534
+ Zq-31:  874
+ Zz-15:  0
+ Zz-16:  2340
+ At-61:  2560
+ Aw-44:  1579
+ Bt-74:  4183
+ Bt-76:  3816
+ Bt-77:  2791
+ Bt-78:  3878
+ Dx-19:  4105
+ Fw-26:  5118
+ Gk-67:  2755
+ Gk-68:  2847
+ Gk-69:  2852
+ Gk-70:  2550
+ Gk-76:  3410
+ Gk-77:  3323
+ Gq-74:  2286
+ Gq-75:  3528
+ Gq-76:  2859
+ Gq-77:  2694
+ H-77:   4453
+ H-78:   3417
+ H-79:   2947
+ H-80:   3258
+ H-81:   3013
+ H-82:   3204
+ Hb-57:  1894
+ Hb-58:  2420
+ Hb-59:  2453
+ Hb-67:  2918
+ Ic-51:  2149
+ Ic-52:  1667
+ Ic-53:  2169
+ Ic-61:  2649
+ Ic-62:  2792
+ Jx-56:  2301
+ Jx-57:  2379
+ Jx-58:  2505
+ Nb-47:  1896
+ Nb-48:  1879
+ Ny-63:  2796
+ Ny-64:  2566
+ Ny-65:  2255
+ Ny-66:  2620
+ Ny-70:  2629
+ Ny-72:  2796
+ Oc-46:  1550
+ Pm-21:  4830
+ Pq-11:  1612
+ Pt-28:  5468
+ Pw-65:  2879
+ Pw-66:  2895
+ Pw-74:  3298
+ Qi-68:  3569
+ Qi-69:  3567
+ Qi-70:  3137
+ Qi-71:  2974
+ Qi-72:  2522
+ Qi-73:  2673
+ Qi-78:  3200
+ Sq-80:  4271
+ Sq-81:  4160
+ Sq-82:  4273
+ Sq-83:  3807
+ Sq-84:  3479
+ U-79:   3793
+ U-80:   3957
+ U-81:   3695
+ U-82:   3304
+ U-83:   3372
+ Ua-83:  5008
+ Ua-84:  3678
+ Ua-85:  3573
+ Xy-71:  4190
+ Xy-72:  3022
+ Xy-73:  3104
+ Xy-77:  3004
+ Xy-78:  2906
+ Yp-54:  2399
+ Yp-63:  2707
+ Af-10:  4909
+ At-60:  3293
+ Bt-75:  4696
+ Gk-66:  3117
+ Gq-72:  3589
+ Gq-73:  4302
+ H-76:   4305
+ Ny-61:  3164
+ Ny-62:  2748
+ Pt-22:  5580
+ Pw-64:  2942
+ Qi-67:  2979
+ Sq-79:  4970
+ U-78:   4659
+ Xc-28:  6181
+ Xy-70:  3437
+ Zq-26:  6851
+ Bt-73:  9711
+ Dx-14:  8294
+ H-75:   10244
+ O-36:   8761
+ U-77:   4113
+ Xy-69:  9360
+ Gk-65:  11805
+ Gq-71:  11643
+ S-24:   8725
+ Gy-30:  17363
+TOTAL: 657256
+
+bohr:
+ As-5:   0
+ As-6:   0
+ As-7:   0
+ Cl-25:  0
+ Cl-26:  0
+ Cl-27:  0
+ Ct-13:  0
+ Ct-15:  0
+ Ct-17:  0
+ Dz-7:   0
+ Dz-8:   0
+ Dz-9:   0
+ Eb-19:  0
+ Eb-20:  0
+ Eb-21:  0
+ Eb-22:  0
+ Ei-4:   0
+ Ei-5:   0
+ Gj-11:  0
+ Gy-67:  0
+ K-31:   0
+ K-34:   0
+ Kk-70:  0
+ Kk-71:  0
+ L-51:   0
+ Mt-32:  0
+ Mt-34:  0
+ Mt-35:  0
+ Nd-30:  0
+ P-21:   0
+ P-23:   0
+ Pb-48:  0
+ Ro-22:  0
+ Ro-23:  0
+ Ro-24:  0
+ S-102:  0
+ Sr-1:   0
+ Sr-2:   0
+ Sr-3:   0
+ T-15:   0
+ T-16:   0
+ T-17:   0
+ Uq-47:  0
+ Vi-10:  0
+ Vi-11:  0
+ Wy-50:  0
+ Xj-17:  0
+ Xj-18:  0
+ Yu-27:  0
+ Yu-29:  0
+ Yv-72:  0
+ Ai-61:  956
+ Ai-62:  1285
+ Ai-63:  1571
+ Ai-64:  1372
+ Ai-65:  1817
+ Ai-67:  1641
+ Aw-112: 2824
+ Aw-114: 3152
+ Aw-115: 3877
+ C-55:   1200
+ C-56:   1226
+ C-57:   1267
+ C-58:   825
+ C-59:   1226
+ C-60:   1147
+ C-61:   1821
+ C-62:   1643
+ C-64:   1198
+ Cj-72:  773
+ Cj-73:  996
+ Cj-74:  1076
+ Cj-75:  1148
+ Cj-76:  1280
+ Cl-28:  481
+ Co-78:  1255
+ Co-79:  993
+ Co-80:  0
+ Co-81:  1654
+ Co-82:  1674
+ Co-83:  3489
+ Ct-14:  238
+ Cv-105: 2567
+ Cv-106: 2684
+ Cv-107: 3598
+ D-76:   1821
+ D-77:   804
+ D-78:   992
+ D-79:   1409
+ D-80:   1521
+ D-81:   2780
+ Da-100: 2437
+ Da-101: 2457
+ Da-102: 3096
+ Da-104: 3460
+ Da-98:  2370
+ Da-99:  2176
+ Dd-95:  1878
+ Dd-96:  2200
+ Dd-97:  2258
+ Dd-98:  4268
+ Dd-99:  4429
+ Dx-37:  595
+ Dx-38:  786
+ Dx-39:  700
+ Dx-40:  760
+ Dx-41:  826
+ Ek-110: 2923
+ F-62:   1465
+ F-63:   1517
+ F-64:   1208
+ F-65:   1787
+ F-66:   1460
+ F-67:   2030
+ F-68:   1450
+ F-69:   2075
+ Gd-39:  601
+ Gd-40:  612
+ Gd-41:  845
+ Gd-42:  803
+ Gd-43:  837
+ Gd-44:  1121
+ Gj-10:  0
+ Gj-9:   583
+ Gy-64:  1390
+ Gy-65:  1604
+ Gy-66:  1321
+ Gy-68:  1545
+ Gy-69:  2711
+ Gy-70:  2183
+ Iu-74:  956
+ Iu-75:  806
+ Iu-76:  802
+ Iu-77:  1282
+ Iu-78:  1403
+ Ji-111: 2927
+ Ji-112: 3766
+ Ji-114: 4151
+ K-32:   0
+ K-33:   689
+ K-35:   844
+ Kk-67:  2075
+ Kk-68:  959
+ Kk-69:  1028
+ Kk-72:  2836
+ L-49:   997
+ L-50:   1224
+ L-52:   640
+ L-53:   1064
+ L-54:   1115
+ Lu-35:  486
+ Lu-36:  486
+ Lu-37:  847
+ Lu-38:  729
+ Lu-39:  963
+ Lu-40:  1013
+ Lx-82:  1011
+ Lx-83:  1303
+ Lx-84:  1442
+ Lx-85:  1586
+ Lx-86:  2067
+ Lx-87:  1500
+ Lx-88:  1504
+ Mt-33:  582
+ Mt-36:  676
+ Mt-37:  978
+ N-83:   2144
+ N-84:   1646
+ N-85:   964
+ N-86:   1590
+ N-87:   1663
+ N-88:   2280
+ N-89:   1506
+ Nd-29:  453
+ Nd-31:  707
+ Nd-32:  584
+ Nd-33:  824
+ Nd-34:  557
+ Nm-93:  1711
+ Nm-94:  2058
+ Nm-95:  2183
+ Nm-96:  4265
+ Nm-97:  1789
+ Ns-58:  1375
+ Ns-59:  1323
+ Ns-60:  1112
+ Ns-61:  1511
+ Ns-62:  1255
+ Ns-63:  1779
+ Ns-64:  1787
+ Ns-65:  1583
+ Ok-100: 3162
+ Ok-97:  2022
+ Ok-98:  2710
+ Ok-99:  3034
+ P-22:   0
+ P-24:   518
+ Pb-44:  874
+ Pb-45:  950
+ Pb-46:  1036
+ Pb-47:  1382
+ Pb-49:  851
+ Pb-50:  907
+ Pb-51:  1293
+ Pg-53:  1134
+ Pg-54:  1333
+ Pg-55:  1014
+ Pg-56:  1067
+ Pg-57:  1699
+ Pg-58:  1329
+ Qe-54:  1261
+ Qe-55:  973
+ Qe-56:  674
+ Qe-57:  805
+ Qe-58:  1033
+ Qe-59:  1752
+ Ro-25:  0
+ Ro-26:  766
+ S-101:  2306
+ S-103:  3250
+ Se-89:  1811
+ Se-90:  1201
+ Se-91:  1551
+ Se-92:  1939
+ Se-93:  1888
+ Se-94:  2608
+ Se-95:  3296
+ Se-96:  3233
+ U-87:   1172
+ U-88:   1703
+ U-89:   1809
+ Uq-42:  597
+ Uq-43:  769
+ Uq-44:  659
+ Uq-45:  1088
+ Uq-46:  1413
+ Ux-50:  1105
+ Ux-51:  1215
+ Ux-52:  844
+ Ux-53:  842
+ Ux-54:  783
+ Ux-55:  1164
+ Ux-56:  1211
+ V-41:   785
+ V-42:   965
+ V-43:   992
+ V-44:   839
+ V-45:   1434
+ V-46:   1172
+ Vi-12:  209
+ Vi-13:  0
+ Vl-88:  1867
+ Vl-89:  1807
+ Vl-90:  1822
+ Vl-91:  1987
+ Vl-92:  2579
+ Vl-93:  2599
+ Vt-107: 2691
+ Vt-109: 3765
+ W-80:   1006
+ W-81:   1059
+ W-82:   1277
+ W-83:   1353
+ W-84:   1457
+ Wy-47:  920
+ Wy-48:  1036
+ Wy-49:  890
+ Wy-51:  960
+ Wy-52:  1013
+ Xj-19:  0
+ Xj-20:  433
+ Yu-28:  562
+ Yu-30:  533
+ Yu-31:  973
+ Yv-70:  1539
+ Yv-71:  988
+ Yv-73:  1068
+ Yv-74:  1140
+ Z-102:  2236
+ Z-103:  2439
+ Z-104:  2624
+ Ai-60:  1988
+ Ai-66:  1976
+ Ai-68:  2706
+ Ai-69:  3037
+ Aw-111: 5089
+ Aw-113: 3718
+ Cj-71:  2632
+ Cj-77:  3233
+ Cj-78:  3003
+ Cl-29:  6347
+ Co-76:  2824
+ Ct-16:  2299
+ Cv-102: 4393
+ Cv-104: 4833
+ Cv-108: 3352
+ Cv-109: 6645
+ D-82:   2968
+ Da-103: 3427
+ Da-105: 6874
+ Da-106: 6618
+ Da-97:  4260
+ Dd-100: 7644
+ Dd-101: 7435
+ Dd-93:  3846
+ Dd-94:  2784
+ Dx-42:  1762
+ Ek-107: 4814
+ Ek-108: 5164
+ Ek-109: 5373
+ Ek-111: 6274
+ Ek-112: 4745
+ Ek-113: 3870
+ F-61:   1835
+ Gd-45:  1581
+ Ha-115: 5350
+ Ha-116: 5575
+ Ha-117: 6436
+ Iu-73:  3392
+ Iu-79:  2569
+ Ji-107: 6368
+ Ji-108: 6148
+ Ji-109: 4956
+ Ji-110: 5191
+ Ji-113: 5352
+ K-30:   5013
+ Kn-112: 5024
+ Kn-113: 5225
+ Kn-114: 5405
+ Kn-115: 3633
+ Kn-116: 6580
+ Lx-80:  3141
+ Lx-81:  3133
+ Lx-89:  4357
+ Lx-90:  5188
+ N-82:   3096
+ N-90:   4602
+ N-91:   4498
+ Nm-89:  3917
+ Nm-90:  4017
+ Nm-91:  2869
+ Nm-92:  4052
+ Nm-98:  4894
+ Nm-99:  4796
+ Ok-101: 3790
+ Ok-102: 6208
+ Ok-103: 6293
+ Ok-104: 6791
+ Ok-96:  4330
+ Qe-60:  2387
+ Ro-27:  4831
+ S-100:  4578
+ S-104:  3085
+ S-105:  6303
+ S-97:   6001
+ S-98:   4594
+ S-99:   4519
+ Se-88:  3989
+ Se-97:  4922
+ Se-98:  7039
+ T-18:   2611
+ U-83:   4335
+ U-84:   3772
+ U-86:   3314
+ U-90:   2543
+ U-91:   5090
+ U-92:   5155
+ Uq-48:  2281
+ Vi-14:  2565
+ Vl-86:  3244
+ Vl-87:  3022
+ Vl-94:  7991
+ Vl-95:  6385
+ Vl-96:  7425
+ Vt-105: 4665
+ Vt-106: 4968
+ Vt-108: 4028
+ Vt-110: 4824
+ Vt-111: 5253
+ Vt-112: 5408
+ W-79:   2682
+ W-85:   4580
+ W-86:   4735
+ Wy-53:  1941
+ Yv-69:  2540
+ Yv-75:  2403
+ Z-101:  4461
+ Z-105:  3456
+ Z-106:  4700
+ Z-107:  6712
+ Aw-107: 8580
+ Aw-109: 7111
+ Aw-110: 7317
+ C-63:   3561
+ Cj-79:  6067
+ Co-84:  4136
+ Co-85:  4202
+ Co-87:  9627
+ Cv-101: 5719
+ Cv-103: 7068
+ Cv-110: 6431
+ Cv-111: 9730
+ Da-107: 10156
+ Da-108: 8307
+ Da-95:  5929
+ Da-96:  6474
+ Dd-102: 9382
+ Dd-103: 9427
+ Dd-104: 10018
+ Dd-89:  5879
+ Dd-90:  5531
+ Dd-91:  5388
+ Dd-92:  6157
+ Ek-105: 7264
+ Ek-106: 7014
+ Gd-38:  10799
+ Ha-112: 7150
+ Ha-113: 7338
+ Ha-114: 7601
+ Kn-111: 7215
+ Lx-79:  4625
+ Lx-91:  8037
+ Lx-92:  6737
+ Mt-38:  8365
+ N-81:   5094
+ N-92:   6059
+ Nd-28:  6273
+ Nm-100: 8028
+ Nm-101: 7816
+ Nm-88:  5942
+ Ns-66:  3803
+ Ok-92:  7835
+ Ok-93:  5923
+ Ok-95:  6536
+ S-106:  6164
+ S-107:  9393
+ S-109:  9134
+ S-96:   8092
+ Se-100: 8691
+ Se-101: 8799
+ Se-87:  6114
+ Se-99:  7941
+ U-85:   3168
+ U-93:   6121
+ U-94:   6758
+ U-96:   10487
+ Vl-85:  5291
+ Vl-97:  8020
+ Vt-102: 6515
+ Vt-103: 6707
+ Vt-104: 6867
+ W-78:   4681
+ W-87:   7589
+ W-88:   7610
+ Xj-21:  4357
+ Z-100:  6672
+ Z-108:  7764
+ Z-109:  9797
+ Z-97:   8128
+ Z-98:   6478
+ Z-99:   6452
+ Aw-108: 8348
+ Cj-81:  9427
+ Co-88:  10005
+ Cv-100: 7918
+ Cv-97:  10150
+ Cv-98:  8434
+ Cv-99:  8502
+ Da-93:  8082
+ Da-94:  8075
+ Dd-105: 12555
+ Dd-106: 13080
+ Dd-88:  8246
+ Dz-10:  5120
+ Ek-102: 8747
+ Ek-103: 8879
+ Ek-104: 7494
+ Ha-111: 9395
+ Iu-81:  7176
+ Iu-82:  7091
+ Ji-106: 9127
+ Kn-109: 9278
+ Kn-110: 9232
+ Lx-93:  10692
+ Lx-94:  10316
+ N-93:   8253
+ N-94:   9102
+ N-96:   13441
+ Nm-102: 11071
+ Nm-103: 10896
+ Nm-104: 13101
+ Nm-87:  7359
+ Ok-105: 10170
+ Ok-106: 9979
+ Ok-107: 14353
+ Ok-89:  7723
+ Ok-90:  7417
+ Ok-91:  7364
+ Ok-94:  8696
+ Pg-52:  15550
+ Pg-59:  19223
+ S-108:  9269
+ S-95:   8156
+ Se-102: 12424
+ Se-85:  7424
+ Se-86:  8326
+ U-95:   8383
+ Vl-100: 12698
+ Vl-101: 12742
+ Vl-84:  5883
+ Vl-98:  11259
+ Vl-99:  10972
+ Vt-101: 8709
+ W-89:   10531
+ W-90:   10465
+ Wy-46:  12289
+ Yv-80:  9693
+ Z-110:  10855
+ Z-111:  10108
+ Z-96:   10122
+ Ai-59:  17375
+ Aw-106: 11242
+ Aw-124: 15765
+ Aw-125: 15682
+ Ax-111: 9493
+ Cj-80:  9693
+ Cv-114: 13289
+ D-83:   10756
+ D-84:   8598
+ Da-109: 11341
+ Da-90:  9208
+ Da-92:  9635
+ Dx-43:  18815
+ Dx-44:  21365
+ Ek-100: 9678
+ Ek-101: 9717
+ Ek-119: 14881
+ Ek-120: 14459
+ Ek-99:  9958
+ F-73:   8383
+ Gd-46:  21153
+ Go-118: 12077
+ Ha-109: 11549
+ Ha-110: 9548
+ I-115:  10201
+ Iu-83:  10874
+ Ji-104: 11512
+ Ji-105: 11352
+ K-37:   16210
+ Kn-106: 12954
+ Kn-107: 10876
+ Kn-108: 9438
+ L-47:   14133
+ L-55:   20231
+ L-56:   22086
+ Lu-41:  17628
+ Lx-76:  8434
+ Lx-77:  8502
+ Lx-95:  13343
+ Lx-96:  13179
+ N-95:   11228
+ Nm-105: 14045
+ Pb-52:  21365
+ Qe-52:  17137
+ S-94:   10190
+ Se-103: 15644
+ Se-104: 15419
+ Se-84:  7849
+ U-97:   11362
+ Uq-41:  13664
+ Uq-49:  22117
+ Uq-50:  18815
+ Uq-51:  18305
+ Ux-48:  13791
+ Ux-49:  13664
+ Ux-57:  19770
+ V-40:   14133
+ V-47:   17628
+ Vt-100: 10023
+ Vt-98:  10305
+ Vt-99:  10420
+ W-91:   13438
+ Wy-54:  21153
+ Wy-55:  21829
+ X-119:  12012
+ Z-95:   10279
+ Ai-58:  18284
+ Aw-104: 12724
+ Aw-105: 11288
+ Ax-109: 10874
+ Ax-110: 11144
+ C-53:   16771
+ Cl-24:  20609
+ Cl-30:  25461
+ Co-86:  16409
+ Cv-115: 16227
+ Da-91:  11566
+ Dx-35:  13549
+ Eb-23:  21367
+ Eh-123: 12348
+ Eh-124: 12485
+ Ek-121: 17446
+ F-60:   16971
+ Go-117: 12039
+ Ha-108: 11451
+ Iu-72:  15703
+ Jb-116: 11227
+ Ji-103: 12401
+ Ji-121: 14402
+ Kk-64:  19919
+ L-46:   16059
+ L-48:   13791
+ L-57:   22949
+ Mt-39:  14192
+ Ns-67:  26840
+ P-25:   20637
+ Pb-43:  16836
+ Pg-51:  16836
+ Qe-61:  23838
+ T-19:   19965
+ U-98:   14394
+ Uq-52:  20872
+ Ux-58:  26034
+ V-39:   13775
+ V-48:   22949
+ Vt-119: 16108
+ Vt-120: 15963
+ W-76:   8434
+ W-77:   8502
+ Wy-45:  16940
+ Wy-56:  24440
+ Ys-125: 11664
+ Yu-26:  16484
+ Z-112:  13128
+ C-54:   19716
+ Cj-68:  19891
+ Co-74:  18209
+ Co-75:  18410
+ F-59:   17368
+ Gj-12:  22285
+ Gy-63:  19336
+ I-113:  12218
+ I-114:  12737
+ K-29:   19869
+ K-36:   32013
+ Kk-65:  20781
+ Kk-66:  20937
+ Ns-56:  19491
+ Ns-57:  19891
+ P-26:   25910
+ Pg-50:  17368
+ Qe-53:  19336
+ Ro-28:  23973
+ Yv-66:  20496
+ Yv-67:  21035
+ D-74:   18209
+ D-75:   18410
+ Dx-36:  25921
+ Lu-34:  23397
+ Nd-27:  20207
+ Vi-15:  25287
+ Xj-16:  21048
+ Yv-68:  19891
+ T-14:   20207
+TOTAL: 4199520
+
+
+
+2025-06-09 Jun.Mon 15:18:56 Interesting and useful vim trick. I want to find all floating point values in a file that don't end in ".00" so I look for this regular expression: /\<\(\d\+\)\.\(00\)\@!\d\d/
+
+Replace them with the next integer:
+  :%s/\<\(\d\+\)\.\(00\)\@!\d\d .*/\=submatch(1) + 1/
+
 2025-06-09 Jun.Mon 11:33:20 Crafted the Insanity Credential No. ∞ on Otom Assembly. This is the eighth one crafted, so 7 other Otom giants!
 
 Token info:
@@ -251,7 +1288,7 @@ A total of 355 chains dropped!! I feel good about that improvement!
 2025-06-08 Jun.Sun 22:16:54
 [ ] get my vim to do the deeper diffs like my old work PCs used to. This one sucks. It has difficulty diffing my chains.bohr.otom file with the output of my chain_totaller.pl script. It doesn't highlight all the different lines. Its so weird
 
-2025-06-08 Jun.Sun 19:35:29 [ ] I should adjust all those numbers in those optimized full sets files - I added up all the floating point values, but for each tx you must round up to nearest integer so it would actually used much more.
+2025-06-08 Jun.Sun 19:35:29 [d] I should adjust all those numbers in those optimized full sets files - I added up all the floating point values, but for each tx you must round up to nearest integer so it would actually used much more.
 
 2025-06-08 Jun.Sun 18:49:22 [ ] make my chain_totaller.pl script just read and rewrite the same file. It can write a backup to .bak first for safety
 
@@ -326,21 +1363,21 @@ total: 90775.36 NRG to make these 4
 
 
 [>] alpha Gy-30
- [r] 1-chain Gy-31  ::   564.89 |   Cq-5⁺ +   S-26ª   +[   564.89 -   5000] => ⬇ Gy-31                      | nuclear                      | used 564.74 [ ] update recipe chains
- [r] 1-chain Oc-47  ::   890.16 |  Pq-10⁺ +  Fj-37ª   +[   890.16 -   5000] =>   Oc-47                      | nuclear                      | [ ] this is min
- [r] 1-chain Fj-34  ::   772.74 |   Xl-9⁺ +   S-25⁺   +[   772.74 -   5000] => ⬇ Fj-34                      | nuclear                      | [ ] this is min
- [r] 2-chain Ic-51  ::  2148.55 |  Pm-17⁺ +  Fj-34⁺   +[  1375.81 -   5000] =>   Ic-51                      | nuclear                      | used 1374.61 [ ] update recipe chains
- [r] 2-chain Hb-57  ::  1892.70 |  Pq-10⁺ +  Oc-47⁺   +[  1002.54 -   2000] =>   Hb-57                      | nuclear                      | used 1002.39 [ ] update recipe chains
- [r] 3-chain Zq-26  ::  6849.09 |  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      | [ ] this is min
- [r] 4-chain Dx-14  ::  8291.28 |  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      | [ ] this is min
- [r] 5-chain Gk-65  :: 11801.45 |  Dx-14⁺ +  Ic-51⁺   +[  1361.62*-   5000] => ⬇ Gk-65                      | decay, nuclear               | [ ] this is min
- [r] 6-chain Gy-30  :: 17358.98 |  Gk-65⁺             +[  5557.53*-  10000] => ⬆ Gy-30 + Fj-35              | nuclear                      | [ ] this is min
+ [r] 1-chain Gy-31  ::   564.89 |   Cq-5⁺ +   S-26ª   +[   564.89 -   5000] => ⬇ Gy-31                      | nuclear                      | used 564.74 [c] update recipe chains
+ [r] 1-chain Oc-47  ::   890.16 |  Pq-10⁺ +  Fj-37ª   +[   890.16 -   5000] =>   Oc-47                      | nuclear                      | [c] this is min
+ [r] 1-chain Fj-34  ::   772.74 |   Xl-9⁺ +   S-25⁺   +[   772.74 -   5000] => ⬇ Fj-34                      | nuclear                      | [c] this is min
+ [r] 2-chain Ic-51  ::  2148.55 |  Pm-17⁺ +  Fj-34⁺   +[  1375.81 -   5000] =>   Ic-51                      | nuclear                      | used 1374.61 [x] update recipe chains
+ [r] 2-chain Hb-57  ::  1892.70 |  Pq-10⁺ +  Oc-47⁺   +[  1002.54 -   2000] =>   Hb-57                      | nuclear                      | used 1002.39 [c] update recipe chains
+ [r] 3-chain Zq-26  ::  6849.09 |  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      | [c] this is min
+ [r] 4-chain Dx-14  ::  8291.28 |  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      | [c] this is min
+ [r] 5-chain Gk-65  :: 11801.45 |  Dx-14⁺ +  Ic-51⁺   +[  1361.62*-   5000] => ⬇ Gk-65                      | decay, nuclear               | [c] this is min
+ [r] 6-chain Gy-30  :: 17358.98 |  Gk-65⁺             +[  5557.53*-  10000] => ⬆ Gy-30 + Fj-35              | nuclear                      | [c] this is min
 
 [>] alpha Gk-65
- [r] 1-chain Oc-47  ::   890.16 |  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      | [ ] this is min
- [r] 1-chain Fj-34  ::   772.74 |   Xl-9⁺ +   S-25⁺   +[   772.74*-   5000] => ⬇ Fj-34                      | nuclear                      | [ ] this is min
- [r] 2-chain Ic-51  ::  2148.55 |  Pm-17⁺ +  Fj-34⁺   +[  1374.61 -   5000] =>   Ic-51                      | nuclear                      | used 1374.56 [ ] update recipe chains
- [r] 2-chain Hb-57  ::  1892.70 |  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      | [ ] this is min
+ [r] 1-chain Oc-47  ::   890.16 |  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      | [c] this is min
+ [r] 1-chain Fj-34  ::   772.74 |   Xl-9⁺ +   S-25⁺   +[   772.74*-   5000] => ⬇ Fj-34                      | nuclear                      | [c] this is min
+ [r] 2-chain Ic-51  ::  2148.55 |  Pm-17⁺ +  Fj-34⁺   +[  1374.61 -   5000] =>   Ic-51                      | nuclear                      | used 1374.56 [c] update recipe chains
+ [r] 2-chain Hb-57  ::  1892.70 |  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      | [c] this is min
  [r] 3-chain Zq-26  ::  6849.09 |  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      |
  [r] 4-chain Dx-14  ::  8291.28 |  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      |
  [r] 5-chain Gk-65  :: 11801.45 |  Dx-14⁺ +  Ic-51⁺   +[  1361.62*-   5000] => ⬇ Gk-65                      | decay, nuclear               |
@@ -348,25 +1385,25 @@ total: 90775.36 NRG to make these 4
 [>] bohr K-36
  [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
  [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
- [r] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3203.54 -  20000] => Ok-100        | nuclear                      | used 3163.74 [x] update recipe chains
- [r] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2645.16 -   5000] => P-22 + Ok-102 | decay, nuclear               | used 2527.46 [x] update recipe chains
- [r] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.59 -   5000] => P-22 + Vl-97  | decay, nuclear               | used 1811.19 [ ] update recipe chains
- [r] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2486.02 -   3500] => P-22 + Vl-99  | decay, nuclear               | used 2435.37 [x] update recipe chains
- [r] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2425.37 -   5000] => P-22 + Vl-101 | decay, nuclear               | used 2396.67 [ ] update recipe chains
- [r] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               | [ ] this is min
- [r] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[ 11074.17 -  12000] => Ux-57 + Ns-67 | nuclear                      | used 9659.04 [ ] update recipe chains
- [r] 8-chain K-36   :: 33393.69 |  Ns-67⁻             +[  5172.45 -   5410] => Yu-31 + K-36  | nuclear                      | used 5160.00 [ ] update recipe chains
+ [r] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3203.54 -  20000] => Ok-100        | nuclear                      | used  3163.74 [x] update recipe chains
+ [r] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2645.16 -   5000] => P-22 + Ok-102 | decay, nuclear               | used  2527.46 [x] update recipe chains
+ [r] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.59 -   5000] => P-22 + Vl-97  | decay, nuclear               | used  1811.19 [c] update recipe chains
+ [r] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2486.02 -   3500] => P-22 + Vl-99  | decay, nuclear               | used  2435.37 [x] update recipe chains
+ [r] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2425.37 -   5000] => P-22 + Vl-101 | decay, nuclear               | used  2396.67 [x] update recipe chains
+ [r] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               | [c] this is min
+ [r] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[ 11074.07 -  12000] => Ux-57 + Ns-67 | nuclear                      | used 11074.07 [c] update recipe chains
+ [r] 8-chain K-36   :: 33393.69 |  Ns-67⁻             +[  5172.45 -   5410] => Yu-31 + K-36  | nuclear                      | used  5160.00 c ] update recipe chains
 
 [>] bohr Ns-67
  [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
  [r] 1-chain P-24   ::   517.70 |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24          | decay, nuclear               |
- [r] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3163.74 -  20000] => Ok-100        | nuclear                      | used 3161.74 [ ] update recipe chains
- [r] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2527.46 -   5000] => P-22 + Ok-102 | decay, nuclear               | used 2521.56 [ ] update recipe chains
- [r] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.19 -   5000] => P-22 + Vl-97  | decay, nuclear               | [ ] this is min
+ [r] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3163.74 -  20000] => Ok-100        | nuclear                      | used 3161.74 [c] update recipe chains
+ [r] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2527.46 -   5000] => P-22 + Ok-102 | decay, nuclear               | used 2521.56 [c] update recipe chains
+ [r] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.19 -   5000] => P-22 + Vl-97  | decay, nuclear               | [c] this is min
  [r] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2435.37 -   3500] => P-22 + Vl-99  | decay, nuclear               | used 2432.82 [x] update recipe chains
  [r] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2396.67 -   5000] => P-22 + Vl-101 | decay, nuclear               | used 2395.22 [x] update recipe chains
  [r] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               |
- [f] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[  9659.04 -  12000] => Ux-57 + Ns-67 | nuclear                      | [[ ]] Aw-124 + 9660 => P-22 + Se-102 + 9177 using 483.00 ???? [ ] run the parser and see what I did - its too annoying to look through the txs and find it
+ [f] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[  9659.04 -  12000] => Ux-57 + Ns-67 | nuclear                      | [c] Aw-124 + 9660 => P-22 + Se-102 + 9177 using 483.00 ???? [c] run the parser and see what I did - its too annoying to look through the txs and find it
 
 Oh for fucks sake. I split an Aw-112 and thought it had been Aw-124 so I used the 9659.04 NRG which was wrong.
 
@@ -376,10 +1413,10 @@ Try again:
  [r] 1-chain Ok-100 ::  3203.54 |  Yu-29∙ +  Kk-71ª   +[  3161.74 -  20000] => Ok-100        | nuclear                      |
  [r] 2-chain Ok-102 ::  6366.40 |   P-24⁻ + Ok-100ª   +[  2521.56 -   5000] => P-22 + Ok-102 | decay, nuclear               |
  [r] 3-chain Vl-97  ::  8177.99 |  Ct-17⁻ + Ok-102⁻   +[  1811.19*-   5000] => P-22 + Vl-97  | decay, nuclear               |
- [r] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2432.82 -   3500] => P-22 + Vl-99  | decay, nuclear               | used 2432.67 [ ] update recipe chains
- [r] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2395.22 -   5000] => P-22 + Vl-101 | decay, nuclear               | used 2395.17 [ ] update recipe chains
- [r] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               | [ ] this is min
- [r] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[ 11074.17 -  12000] => Ux-57 + Ns-67 | nuclear                      | used 11074.07 [ ] update recipe chains
+ [r] 4-chain Vl-99  :: 11181.71 |   P-24⁻ +  Vl-97⁻   +[  2432.82 -   3500] => P-22 + Vl-99  | decay, nuclear               | used 2432.67 [c] update recipe chains
+ [r] 5-chain Vl-101 :: 14124.78 |   P-24⁻ +  Vl-99⁻   +[  2395.22 -   5000] => P-22 + Vl-101 | decay, nuclear               | used 2395.17 [x] update recipe chains
+ [r] 6-chain Aw-124 :: 17147.07 |   P-23∙ + Vl-101⁻   +[  3022.29 -   4400] => Aw-124        | decay, nuclear               | [c] this is min
+ [r] 7-chain Ns-67  :: 28221.24 | Aw-124ª             +[ 11074.07 -  12000] => Ux-57 + Ns-67 | nuclear                      | used 11074.07 [c] update recipe chains
 
 
 

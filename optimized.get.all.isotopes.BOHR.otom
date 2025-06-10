@@ -1,4 +1,4 @@
-Total required NRG: 5_968_575.76 NRG
+Total required NRG: 4,199,520 NRG
 
 This could further be optimized by finding instances like when creating Cl-29 you get Cl-29 + K-35 so you don't actually need to make K-35 separately.
 same for T-18
@@ -1581,7 +1581,7 @@ Iu-79:
 Ji-107:
  0-chain K-31   ::     0.00 | MINEABLE
  0-chain Mt-32  ::     0.00 | MINEABLE
- +-chain Mt-32  ::     0.00 | MINEABLE
+ 0-chain Mt-32  ::     0.00 | MINEABLE
  0-chain Mt-34  ::     0.00 | MINEABLE
  1-chain Gy-64  ::  1389.89 |  Mt-32⁺ +  Mt-32⁺   +[  1389.89*-   4000] => Gy-64
  1-chain Gy-65  ::  1603.06 |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65
@@ -5619,8 +5619,8 @@ Xj-16:
  4-chain Cv-98  ::  8431.51 |  Ro-22⁺ +   Z-98⁺   +[  1955.64 -   5000] => P-22 + Cv-98
  5-chain Vt-98  :: 10302.29 |  Ro-22⁺ +  Cv-98ª   +[  1870.78 -  10000] => P-22 + Vt-98
  6-chain C-53   :: 16768.19 |  Vt-98⁺             +[  6465.90 -  10000] => Wy-45 + C-53
- 7-chain K-29   :: 19152.94 |   C-53⁺             +[  3097.91 -  10000] => Cl-24 + K-29
- 8-chain Xj-16  :: 20331.23 |   K-29⁺             +[  1178.29 -  10000] => Ct-13 + Xj-16
+ 7-chain K-29   :: 19866.10 |   C-53⁺             +[  3097.91 -  10000] => Cl-24 + K-29
+ 8-chain Xj-16  :: 21044.39 |   K-29⁺             +[  1178.29 -  10000] => Ct-13 + Xj-16
 
 Yv-68:
  0-chain Cl-25  ::     0.00 | MINEABLE
