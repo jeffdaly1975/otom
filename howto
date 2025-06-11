@@ -18,11 +18,11 @@ mv new.chains.bohr.otom chains.bohr.otom
 # 2025-04-20 Apr.Sun 20:22:38 Calls isotpes_worker.bohr.sh script which calls balanceOf() function with all Bohr Isotopes
 # usage: get_isotopes_bohr.alchemy.pl WALLET
 # examples:
-  ./get_isotopes_alpha.alchemy.pl 0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc
-  ./get_isotopes_bohr.alchemy.pl  0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc
+  ./get_isotopes_alpha.alchemy.pl 0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc > 0x2a4a22_alpha_isotopes.otom
+  ./get_isotopes_bohr.alchemy.pl  0x2a4A229C4d748C2346963d0bB30C48Cd11021aAc > 0x2a4a22_bohr_isotopes.otom
 
-  ./get_isotopes_alpha.alchemy.pl 0x620051B8553a724b742ae6ae9cC3585d29F49848
-  ./get_isotopes_bohr.alchemy.pl  0x620051B8553a724b742ae6ae9cC3585d29F49848
+  ./get_isotopes_alpha.alchemy.pl 0x620051B8553a724b742ae6ae9cC3585d29F49848 > 0x620051_alpha_isotopes.otom
+  ./get_isotopes_bohr.alchemy.pl  0x620051B8553a724b742ae6ae9cC3585d29F49848 > 0x620051_bohr_isotopes.otom
 
 # 2025-04-20 Apr.Sun 20:22:38 Calls isotpes_worker.bohr.sh script which calls balanceOf() function with all Bohr Isotopes
 # usage: get_burnables_alpha.pl WALLET 10
