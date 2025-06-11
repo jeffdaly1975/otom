@@ -34,7 +34,7 @@
 | 69 33 Pw | 15  8 Dx + 54 25 Nb + 1850 => 69 33 Pw
 | 72 34 Gk | 18  9 Pm + 54 25 Nb + 2100 => 72 34 Gk
 | 75 35 Qi | 25 12 Pt + 50 23 Aw + 2550 => 75 35 Qi
-| 74 36 Xy | 37 18 Fj + 37 18 Fj + 2300 => 74 36 Xy
+| 74 36 Xy | 37 18 Fj + 37 18 Fj + 2473 => 74 36 Xy
 | 79 37 Gq | 25 12 Pt + 54 25 Nb + 2550 => 79 37 Gq
 | 79 38 Bt | 25 13  S + 54 25 Nb + 2400 => 79 38 Bt
 | 81 39  H | 27 14 Zq + 54 25 Nb + 2650 => 81 39  H PREREQUISITE  1  1 Ju + 26 13  S +  750 => 27 14 Zq
@@ -43,7 +43,7 @@
 | 85 42 Ua | 26 13  S + 59 29 Jx + 2750 => 85 42 Ua PREREQUISITE 25 13  S + 34 16 Gy + 2500 => 59 29 Jx
 
 SUMMARY: 
-You will need 44750 NRG and the following mineable otoms:
+You will need 44923 NRG and the following mineable otoms:
 
  4x  1  1 Ju
  1x  2  1 Ju

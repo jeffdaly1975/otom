@@ -1,3 +1,65 @@
+2025-06-11 Jun.Wed 00:52:53 VIM TIPS: useful .vimrc mapping
+
+::VIM::
+
+" Use Tab and Shift-Tab to go to next/previous tabs
+map <Tab>   :silent tabnext<CR>
+map <S-Tab> :silent tabprev<CR>
+
+
+"" [[ ]] LOOK AT THIS USEFUL SHIT! I didn't realize ":silent!" doesn't just ignore error messages; IT ALSO DOESN'T ABORT COMMANDS AND MAPPINGS WHICH IS SUPER FRIGGIN USEFUL!
+""
+
+""" :sil[ent][!] {command}	Execute {command} silently.  Normal messages will not
+""" 			be given or added to the message history.
+""" 			When [!] is added, error messages will also be
+""" 			skipped, and commands and mappings will not be aborted
+""" 			when an error is detected.  |v:errmsg| is still set.
+""" 			When [!] is not used, an error message will cause
+""" 			further messages to be displayed normally.
+""" 			Redirection, started with |:redir|, will continue as
+""" 			usual, although there might be small differences.
+""" 			This will allow redirecting the output of a command
+""" 			without seeing it on the screen.  Example: >
+""" 			    :redir >/tmp/foobar
+""" 			    :silent g/Aap/p
+""" 			    :redir END
+""" <			To execute a Normal mode command silently, use the
+""" 			|:normal| command.  For example, to search for a
+""" 			string without messages: >
+""" 			    :silent exe "normal /path\<CR>"
+""" <			":silent!" is useful to execute a command that may
+""" 			fail, but the failure is to be ignored.  Example: >
+""" 			    :let v:errmsg = ""
+""" 			    :silent! /^begin
+""" 			    :if v:errmsg != ""
+""" 			    : ... pattern was not found
+""" <			":silent" will also avoid the hit-enter prompt.  When
+""" 			using this for an external command, this may cause the
+""" 			screen to be messed up.  Use |CTRL-L| to clean it up
+""" 			then.
+""" 			":silent menu ..." defines a menu that will not echo a
+""" 			Command-line command.  The command will still produce
+""" 			messages though.  Use ":silent" in the command itself
+""" 			to avoid that: ":silent menu .... :silent command".
+""" 
+""" 						*:uns* *:unsilent*
+""" :uns[ilent] {command}	Execute {command} not silently.  Only makes a
+""" 			difference when |:silent| was used to get to this
+""" 			command.
+""" 			Use this for giving a message even when |:silent| was
+""" 			used.  In this example |:silent| is used to avoid the
+""" 			message about reading the file and |:unsilent| to be
+""" 			able to list the first line of each file. >
+""" 		:silent argdo unsilent echo expand('%') .. ": " .. getline(1)
+
+
+
+2025-06-11 Jun.Wed 00:46:20 QMA tried my prediction and it worked. U-99 is the 665th isotope of BOHR
+
+ OTOMRO 300649: Sr-3 + Lx-96 + [ ] => U-99 
+
+
 2025-06-10 Jun.Tue 22:27:30 Quixoute asking to explain "why when you apply sr3 to lx it skips over n and goes to u". QMA answered correctly in brief saying "beta decay".
 Here's how it goes down:
 

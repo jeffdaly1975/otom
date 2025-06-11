@@ -3320,7 +3320,7 @@ if (scalar(@the_keys) > 1){
 
 
   print STDERR "\n";
-  print STDERR "MISSING OTOMRO: " . scalar(@the_keys) ." reactions\n";
+  print STDERR "MISSING OTOMRO: " . scalar(@missing_otomros) ." reactions\n";
 
   print STDERR "  $_\n" for split( /,/, string_range_smush( join ",", @missing_otomros));
 
