@@ -1,3 +1,7 @@
+2025-06-11 Jun.Wed 09:13:27 And now another discovery: Pb-53 the 666th isotope of Bohr
+
+OTOMRO 301427
+
 2025-06-11 Jun.Wed 00:52:53 VIM TIPS: useful .vimrc mapping
 
 ::VIM::
@@ -55,9 +59,9 @@ map <S-Tab> :silent tabprev<CR>
 
 
 
-2025-06-11 Jun.Wed 00:46:20 QMA tried my prediction and it worked. U-99 is the 665th isotope of BOHR
+2025-06-11 Jun.Wed 00:46:20 QMA tried my prediction and it worked. U-99 is the 665th discovered isotope of BOHR
 
- OTOMRO 300649: Sr-3 + Lx-96 + [ ] => U-99 
+ OTOMRO 300649: Sr-3∙ +  Lx-96⁻ + 20000 => ⬆ U-99 +   17842.78 |  using 2157.22 decay, nuclear
 
 
 2025-06-10 Jun.Tue 22:27:30 Quixoute asking to explain "why when you apply sr3 to lx it skips over n and goes to u". QMA answered correctly in brief saying "beta decay".
