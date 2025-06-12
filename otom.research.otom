@@ -1,3 +1,16 @@
+2025-06-12 Jun.Thu 13:00:27 Yes! I addded code to convert_token_id_to_hex.pl to add to the syntax file a dictionary for looking up the number of protons an otom should have or vice versa.
+
+Lets me do stuff like figuring out what alpha decay otom should be produced even though no alpha decay reactions have been tried with a specific otom, like "Da".
+That would be:
+ echo protonlookup["bohr"][ protonlookup["bohr"]["Da"] - protonlookup["bohr"]["P"] ]
+
+...which gives "D"
+
+Test to be sure its working right with one we know the alpha decay outputs. S makes P-22 + Co-*
+ echo protonlookup["bohr"][ protonlookup["bohr"]["Da"] - protonlookup["bohr"]["P"] ]
+
+gives "Co"
+
 2025-06-12 Jun.Thu 12:12:59 In the top of my otom_reactions.<universe>.pl scripts I keep it update with the number of combinations of 2 isotopes possible. 
 
 #       65 otoms
