@@ -1,6 +1,53 @@
+2025-06-12 Jun.Thu 12:12:59 In the top of my otom_reactions.<universe>.pl scripts I keep it update with the number of combinations of 2 isotopes possible. 
+
+#       65 otoms
+#      666 isotopes
+#   443556 combinations
+#   222111 unique combinations
+#    46493 combinations resulting in known isotopes
+
+I did some math to see how many combinations 666 isotopes have.
+
+# NOTE The above data is for the number of combinations of exactly 2 isotopes. 
+#      There are many more combinations of 1-5
+#      For example, right now with 666 isotopes in Bohr, we have 1 to 5 inputs which can all be the same, so:
+#
+#        Choose 1 from 666: 666                 =                 666
+#        Choose 2 from 666: 666*666             =             443_556
+#        Choose 3 from 666: 666*666*666         =         295_408_296
+#        Choose 4 from 666: 666*666*666*666     =     196_741_925_136
+#        Choose 5 from 666: 666*666*666*666*666 = 131_030_122_140_576
+#        total:                                   131_227_159_918_230
+#
+
+131+ trillion combinations!!
+
+
+2025-06-12 Jun.Thu 11:55:14 VIM:
+
+" make a mapping to echo the vim syntax highlighting stack for the token under the cursor
+" This is super useful for seeing that U-99 is chain6
+nnoremap <f3> :echo map(synstack(line("."), col(".")), 'synIDattr(v:val, "name")')<CR>
+
+" do a visual selection even a block selection with only numbers and whitespace and this sums them
+echo eva(substitute(@",'\s*\n',' + ','g'))
+
+
+
+2025-06-12 Jun.Thu 10:21:30 [ ] I would like my decay.<universe>.otom files to always have undiscovered isotopes at the top and bottom of each otom kind like so:
+
+|?Vl-83  |           |          |       |      |                   ? U-83  |                                   |               ? Gd-38 + Wy-45   |                                |
+| Vl-84⁺ |  84 44 Vl | metal    |(0.586)|beta+ |                   ? U-84  |                                   |               ? Gd-38 + Wy-46   |                                |
+ ...
+| Vl-101⁻| 101 44 Vl | metal    |(0.585)|beta- |                  ? Se-101 |                                   |+8391.23-10000   Gd-46 + Wy-55   |                                |
+|?Vl-102 |           |          |       |      |                  ? Se-102 |                                   |           [ ] ? Gd-47 + Wy-55   |                                |
+
+That way we can see possible new isotopes it could fission into.
+
+
 2025-06-11 Jun.Wed 09:13:27 And now another discovery: Pb-53 the 666th isotope of Bohr
 
-OTOMRO 301427
+OTOMRO 301427: U-99 + 10000 => Gd-46 + Pb-53 + 2002.21554336 using 7997.78
 
 2025-06-11 Jun.Wed 00:52:53 VIM TIPS: useful .vimrc mapping
 

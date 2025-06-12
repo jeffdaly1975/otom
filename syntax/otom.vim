@@ -172,6 +172,7 @@ let shelldict     = {}
 let shelldictlong = {}
 let seriesdict    = {}
 let otomlookup    = {}
+let protonlookup  = {}
 
 let otomnames["1  1 Ju"]="Ju-1"
 let otomnames["2  1 Ju"]="Ju-2"
@@ -15068,6 +15069,116 @@ let   electrodict["123 65 Eh"]="0.335" | let   electrodict["Eh-123"]="0.335"
 let   electrodict["124 65 Eh"]="0.335" | let   electrodict["Eh-124"]="0.335"
 let   electrodict["125 66 Ys"]="0.544" | let   electrodict["Ys-125"]="0.544"
 
+
+let protonlookup["alpha"] = {}
+let protonlookup["bohr"]  = {}
+let protonlookup["alpha"]["1"]="Ju"     | let protonlookup["alpha"]["Ju"]="1"
+let protonlookup["alpha"]["10"]="M"     | let protonlookup["alpha"]["M"]="10"
+let protonlookup["alpha"]["11"]="Fw"    | let protonlookup["alpha"]["Fw"]="11"
+let protonlookup["alpha"]["12"]="Pt"    | let protonlookup["alpha"]["Pt"]="12"
+let protonlookup["alpha"]["13"]="S"     | let protonlookup["alpha"]["S"]="13"
+let protonlookup["alpha"]["14"]="Zq"    | let protonlookup["alpha"]["Zq"]="14"
+let protonlookup["alpha"]["15"]="Xc"    | let protonlookup["alpha"]["Xc"]="15"
+let protonlookup["alpha"]["16"]="Gy"    | let protonlookup["alpha"]["Gy"]="16"
+let protonlookup["alpha"]["17"]="D"     | let protonlookup["alpha"]["D"]="17"
+let protonlookup["alpha"]["18"]="Fj"    | let protonlookup["alpha"]["Fj"]="18"
+let protonlookup["alpha"]["19"]="O"     | let protonlookup["alpha"]["O"]="19"
+let protonlookup["alpha"]["2"]="W"      | let protonlookup["alpha"]["W"]="2"
+let protonlookup["alpha"]["20"]="C"     | let protonlookup["alpha"]["C"]="20"
+let protonlookup["alpha"]["21"]="E"     | let protonlookup["alpha"]["E"]="21"
+let protonlookup["alpha"]["22"]="A"     | let protonlookup["alpha"]["A"]="22"
+let protonlookup["alpha"]["23"]="Aw"    | let protonlookup["alpha"]["Aw"]="23"
+let protonlookup["alpha"]["24"]="Oc"    | let protonlookup["alpha"]["Oc"]="24"
+let protonlookup["alpha"]["25"]="Nb"    | let protonlookup["alpha"]["Nb"]="25"
+let protonlookup["alpha"]["26"]="Xk"    | let protonlookup["alpha"]["Xk"]="26"
+let protonlookup["alpha"]["27"]="Ic"    | let protonlookup["alpha"]["Ic"]="27"
+let protonlookup["alpha"]["28"]="Yp"    | let protonlookup["alpha"]["Yp"]="28"
+let protonlookup["alpha"]["29"]="Jx"    | let protonlookup["alpha"]["Jx"]="29"
+let protonlookup["alpha"]["3"]="Cq"     | let protonlookup["alpha"]["Cq"]="3"
+let protonlookup["alpha"]["30"]="Hb"    | let protonlookup["alpha"]["Hb"]="30"
+let protonlookup["alpha"]["31"]="At"    | let protonlookup["alpha"]["At"]="31"
+let protonlookup["alpha"]["32"]="Ny"    | let protonlookup["alpha"]["Ny"]="32"
+let protonlookup["alpha"]["33"]="Pw"    | let protonlookup["alpha"]["Pw"]="33"
+let protonlookup["alpha"]["34"]="Gk"    | let protonlookup["alpha"]["Gk"]="34"
+let protonlookup["alpha"]["35"]="Qi"    | let protonlookup["alpha"]["Qi"]="35"
+let protonlookup["alpha"]["36"]="Xy"    | let protonlookup["alpha"]["Xy"]="36"
+let protonlookup["alpha"]["37"]="Gq"    | let protonlookup["alpha"]["Gq"]="37"
+let protonlookup["alpha"]["38"]="Bt"    | let protonlookup["alpha"]["Bt"]="38"
+let protonlookup["alpha"]["39"]="H"     | let protonlookup["alpha"]["H"]="39"
+let protonlookup["alpha"]["4"]="Af"     | let protonlookup["alpha"]["Af"]="4"
+let protonlookup["alpha"]["40"]="U"     | let protonlookup["alpha"]["U"]="40"
+let protonlookup["alpha"]["41"]="Sq"    | let protonlookup["alpha"]["Sq"]="41"
+let protonlookup["alpha"]["42"]="Ua"    | let protonlookup["alpha"]["Ua"]="42"
+let protonlookup["alpha"]["5"]="Xl"     | let protonlookup["alpha"]["Xl"]="5"
+let protonlookup["alpha"]["6"]="Pq"     | let protonlookup["alpha"]["Pq"]="6"
+let protonlookup["alpha"]["7"]="Zz"     | let protonlookup["alpha"]["Zz"]="7"
+let protonlookup["alpha"]["8"]="Dx"    | let protonlookup["alpha"]["Dx"]="8"
+let protonlookup["alpha"]["9"]="Pm"    | let protonlookup["alpha"]["Pm"]="9"
+let protonlookup["bohr"]["1"]="Sr"    | let protonlookup["bohr"]["Sr"]="1"
+let protonlookup["bohr"]["10"]="Eb"    | let protonlookup["bohr"]["Eb"]="10"
+let protonlookup["bohr"]["11"]="P"    | let protonlookup["bohr"]["P"]="11"
+let protonlookup["bohr"]["12"]="Ro"    | let protonlookup["bohr"]["Ro"]="12"
+let protonlookup["bohr"]["13"]="Cl"    | let protonlookup["bohr"]["Cl"]="13"
+let protonlookup["bohr"]["14"]="Yu"    | let protonlookup["bohr"]["Yu"]="14"
+let protonlookup["bohr"]["15"]="Nd"    | let protonlookup["bohr"]["Nd"]="15"
+let protonlookup["bohr"]["16"]="K"    | let protonlookup["bohr"]["K"]="16"
+let protonlookup["bohr"]["17"]="Mt"    | let protonlookup["bohr"]["Mt"]="17"
+let protonlookup["bohr"]["18"]="Lu"    | let protonlookup["bohr"]["Lu"]="18"
+let protonlookup["bohr"]["19"]="Dx"    | let protonlookup["bohr"]["Dx"]="19"
+let protonlookup["bohr"]["2"]="Ei"    | let protonlookup["bohr"]["Ei"]="2"
+let protonlookup["bohr"]["20"]="Gd"    | let protonlookup["bohr"]["Gd"]="20"
+let protonlookup["bohr"]["21"]="V"    | let protonlookup["bohr"]["V"]="21"
+let protonlookup["bohr"]["22"]="Uq"    | let protonlookup["bohr"]["Uq"]="22"
+let protonlookup["bohr"]["23"]="Pb"    | let protonlookup["bohr"]["Pb"]="23"
+let protonlookup["bohr"]["24"]="Wy"    | let protonlookup["bohr"]["Wy"]="24"
+let protonlookup["bohr"]["25"]="L"    | let protonlookup["bohr"]["L"]="25"
+let protonlookup["bohr"]["26"]="Ux"    | let protonlookup["bohr"]["Ux"]="26"
+let protonlookup["bohr"]["27"]="Pg"    | let protonlookup["bohr"]["Pg"]="27"
+let protonlookup["bohr"]["28"]="Qe"    | let protonlookup["bohr"]["Qe"]="28"
+let protonlookup["bohr"]["29"]="C"    | let protonlookup["bohr"]["C"]="29"
+let protonlookup["bohr"]["3"]="As"    | let protonlookup["bohr"]["As"]="3"
+let protonlookup["bohr"]["30"]="Ns"    | let protonlookup["bohr"]["Ns"]="30"
+let protonlookup["bohr"]["31"]="Ai"    | let protonlookup["bohr"]["Ai"]="31"
+let protonlookup["bohr"]["32"]="F"    | let protonlookup["bohr"]["F"]="32"
+let protonlookup["bohr"]["33"]="Gy"    | let protonlookup["bohr"]["Gy"]="33"
+let protonlookup["bohr"]["34"]="Kk"    | let protonlookup["bohr"]["Kk"]="34"
+let protonlookup["bohr"]["35"]="Yv"    | let protonlookup["bohr"]["Yv"]="35"
+let protonlookup["bohr"]["36"]="Cj"    | let protonlookup["bohr"]["Cj"]="36"
+let protonlookup["bohr"]["37"]="Iu"    | let protonlookup["bohr"]["Iu"]="37"
+let protonlookup["bohr"]["38"]="D"    | let protonlookup["bohr"]["D"]="38"
+let protonlookup["bohr"]["39"]="Co"    | let protonlookup["bohr"]["Co"]="39"
+let protonlookup["bohr"]["4"]="Dz"    | let protonlookup["bohr"]["Dz"]="4"
+let protonlookup["bohr"]["40"]="W"    | let protonlookup["bohr"]["W"]="40"
+let protonlookup["bohr"]["41"]="Lx"    | let protonlookup["bohr"]["Lx"]="41"
+let protonlookup["bohr"]["42"]="N"    | let protonlookup["bohr"]["N"]="42"
+let protonlookup["bohr"]["43"]="U"    | let protonlookup["bohr"]["U"]="43"
+let protonlookup["bohr"]["44"]="Vl"    | let protonlookup["bohr"]["Vl"]="44"
+let protonlookup["bohr"]["45"]="Se"    | let protonlookup["bohr"]["Se"]="45"
+let protonlookup["bohr"]["46"]="Nm"    | let protonlookup["bohr"]["Nm"]="46"
+let protonlookup["bohr"]["47"]="Dd"    | let protonlookup["bohr"]["Dd"]="47"
+let protonlookup["bohr"]["48"]="Ok"    | let protonlookup["bohr"]["Ok"]="48"
+let protonlookup["bohr"]["49"]="Da"    | let protonlookup["bohr"]["Da"]="49"
+let protonlookup["bohr"]["5"]="Gj"    | let protonlookup["bohr"]["Gj"]="5"
+let protonlookup["bohr"]["50"]="S"    | let protonlookup["bohr"]["S"]="50"
+let protonlookup["bohr"]["51"]="Z"    | let protonlookup["bohr"]["Z"]="51"
+let protonlookup["bohr"]["52"]="Cv"    | let protonlookup["bohr"]["Cv"]="52"
+let protonlookup["bohr"]["53"]="Vt"    | let protonlookup["bohr"]["Vt"]="53"
+let protonlookup["bohr"]["54"]="Ek"    | let protonlookup["bohr"]["Ek"]="54"
+let protonlookup["bohr"]["55"]="Ji"    | let protonlookup["bohr"]["Ji"]="55"
+let protonlookup["bohr"]["56"]="Aw"    | let protonlookup["bohr"]["Aw"]="56"
+let protonlookup["bohr"]["57"]="Kn"    | let protonlookup["bohr"]["Kn"]="57"
+let protonlookup["bohr"]["58"]="Ha"    | let protonlookup["bohr"]["Ha"]="58"
+let protonlookup["bohr"]["59"]="Ax"    | let protonlookup["bohr"]["Ax"]="59"
+let protonlookup["bohr"]["6"]="Vi"    | let protonlookup["bohr"]["Vi"]="6"
+let protonlookup["bohr"]["60"]="I"    | let protonlookup["bohr"]["I"]="60"
+let protonlookup["bohr"]["61"]="Jb"    | let protonlookup["bohr"]["Jb"]="61"
+let protonlookup["bohr"]["62"]="Go"    | let protonlookup["bohr"]["Go"]="62"
+let protonlookup["bohr"]["63"]="X"    | let protonlookup["bohr"]["X"]="63"
+let protonlookup["bohr"]["65"]="Eh"    | let protonlookup["bohr"]["Eh"]="65"
+let protonlookup["bohr"]["66"]="Ys"    | let protonlookup["bohr"]["Ys"]="66"
+let protonlookup["bohr"]["7"]="Ct"    | let protonlookup["bohr"]["Ct"]="7"
+let protonlookup["bohr"]["8"]="T"    | let protonlookup["bohr"]["T"]="8"
+let protonlookup["bohr"]["9"]="Xj"    | let protonlookup["bohr"]["Xj"]="9"
 " This is not ideal but I set this if statement to 1 if I want to have highlighting show rarity or 0 if I want it to show decay types
 if 0
 syn match rarity_common   /\<1\s\+1\s\+Ju\>/     | syn match rarity_common   /\<Ju-1\>/            
@@ -17723,6 +17834,7 @@ syn match chain7  /\<Kk-66\>/
 syn match chain7  /\<Ns-56\>/
 syn match chain7  /\<Ns-57\>/
 syn match chain7  /\<P-26\>/
+syn match chain7  /\<Pb-53\>/
 syn match chain7  /\<Pg-50\>/
 syn match chain7  /\<Qe-53\>/
 syn match chain7  /\<Ro-28\>/
@@ -18349,6 +18461,7 @@ syn match chain7_6  /\zs\s\ze\<Gy-63\>/
 syn match chain7_6  /\zs\s\ze\<K-36\>/
 syn match chain7_6  /\zs\s\ze\<Ns-56\>/
 syn match chain7_6  /\zs\s\ze\<P-26\>/
+syn match chain7_6  /\zs\s\ze\<Pb-53\>/
 syn match chain7_6  /\zs\s\ze\<Pg-50\>/
 syn match chain7_6  /\zs\s\ze\<Qe-53\>/
 syn match chain7_6  /\zs\s\ze\<Ys-125\>/
@@ -22692,6 +22805,7 @@ let otomlookup["119 63"]="X-119"
 let otomlookup["123 65"]="Eh-123"
 let otomlookup["124 65"]="Eh-124"
 let otomlookup["125 66"]="Ys-125"
+
 
 
 "

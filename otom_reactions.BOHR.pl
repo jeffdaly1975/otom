@@ -8,6 +8,20 @@
 #   222111 unique combinations
 #    46493 combinations resulting in known isotopes
 
+# NOTE The above data is for the number of combinations of exactly 2 isotopes. 
+#      There are many more combinations of 1-5
+#      For example, right now with 666 isotopes in Bohr, we have 1 to 5 inputs which can all be the same, so:
+#
+#        Choose 1 from 666: 666                 =                 666
+#        Choose 2 from 666: 666*666             =             443_556
+#        Choose 3 from 666: 666*666*666         =         295_408_296
+#        Choose 4 from 666: 666*666*666*666     =     196_741_925_136
+#        Choose 5 from 666: 666*666*666*666*666 = 131_030_122_140_576
+#        total:                                   131_227_159_918_230
+#
+#  131+ trillion combinations!!
+#
+
 my $order_counter=0;
 my @sort_order=();
 my %lookup_name=();
