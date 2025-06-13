@@ -1499,10 +1499,10 @@ A total of 355 chains dropped!! I feel good about that improvement!
 2025-06-08 Jun.Sun 13:12:01 Moved old optimized.get.all.isotopes.ALPHA.otom to optimized.get.all.isotopes.ALPHA.old.otom  and rewrote with same format as BOHR one i just made.
 
 2025-06-08 Jun.Sun 14:40:39
-[ ] Hey this is a shorter way to V-48 than the way that makes it a 6-chain
+[c] Hey this is a shorter way to V-48 than the way that makes it a 6-chain
  5-chain L-56   :: 22083.29 | Nm-104⁻             +[  8984.24 -  10000] => V-48 + L-56
 
-[ ] and this is better for L-57:
+[c] and this is better for L-57:
  5-chain Uq-49  :: 22113.73 | Dd-106⁻             +[  9036.32 -  10000] => Uq-49 + L-57        | nuclear                      |
 
 2025-06-08 Jun.Sun 13:12:01 Created optimized.get.all.isotopes.BOHR.otom with 664 isotopes in it.

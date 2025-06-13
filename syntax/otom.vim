@@ -17234,6 +17234,7 @@ syn match chain0   /\<Kk-71\>/
 syn match chain0   /\<Yv-72\>/
 syn match chain0   /\<S-102\>/
 
+" {{{{
 syn match chain1  /\<Ai-61\>/
 syn match chain1  /\<Ai-62\>/
 syn match chain1  /\<Ai-63\>/
@@ -17546,6 +17547,7 @@ syn match chain2  /\<Se-98\>/
 syn match chain2  /\<T-18\>/
 syn match chain2  /\<U-83\>/
 syn match chain2  /\<U-84\>/
+syn match chain2  /\<U-85\>/
 syn match chain2  /\<U-86\>/
 syn match chain2  /\<U-90\>/
 syn match chain2  /\<U-91\>/
@@ -17625,7 +17627,6 @@ syn match chain3  /\<Se-100\>/
 syn match chain3  /\<Se-101\>/
 syn match chain3  /\<Se-87\>/
 syn match chain3  /\<Se-99\>/
-syn match chain3  /\<U-85\>/
 syn match chain3  /\<U-93\>/
 syn match chain3  /\<U-94\>/
 syn match chain3  /\<U-96\>/
@@ -17662,21 +17663,21 @@ syn match chain4  /\<Ek-103\>/
 syn match chain4  /\<Ek-104\>/
 syn match chain4  /\<Ha-111\>/
 syn match chain4  /\<Iu-81\>/
-syn match chain4  /\<Iu-82\>/
+syn match chain3  /\<Iu-82\>/
 syn match chain4  /\<Ji-106\>/
 syn match chain4  /\<Kn-109\>/
 syn match chain4  /\<Kn-110\>/
 syn match chain4  /\<Lx-93\>/
 syn match chain4  /\<Lx-94\>/
-syn match chain4  /\<N-93\>/
+syn match chain3  /\<N-93\>/
 syn match chain4  /\<N-94\>/
 syn match chain4  /\<N-96\>/
 syn match chain4  /\<Nm-102\>/
 syn match chain4  /\<Nm-103\>/
 syn match chain4  /\<Nm-104\>/
 syn match chain4  /\<Nm-87\>/
-syn match chain4  /\<Ok-105\>/
-syn match chain4  /\<Ok-106\>/
+syn match chain3  /\<Ok-105\>/
+syn match chain3  /\<Ok-106\>/
 syn match chain4  /\<Ok-107\>/
 syn match chain4  /\<Ok-89\>/
 syn match chain4  /\<Ok-90\>/
@@ -17711,8 +17712,8 @@ syn match chain5  /\<Ax-111\>/
 syn match chain5  /\<Cj-80\>/
 syn match chain5  /\<Cv-114\>/
 syn match chain5  /\<D-83\>/
-syn match chain5  /\<D-84\>/
-syn match chain5  /\<Da-109\>/
+syn match chain4  /\<D-84\>/
+syn match chain4  /\<Da-109\>/
 syn match chain5  /\<Da-90\>/
 syn match chain5  /\<Da-92\>/
 syn match chain5  /\<Dx-43\>/
@@ -17738,12 +17739,13 @@ syn match chain5  /\<Kn-108\>/
 syn match chain5  /\<L-47\>/
 syn match chain5  /\<L-55\>/
 syn match chain5  /\<L-56\>/
+syn match chain5  /\<L-57\>/
 syn match chain5  /\<Lu-41\>/
 syn match chain5  /\<Lx-76\>/
 syn match chain5  /\<Lx-77\>/
 syn match chain5  /\<Lx-95\>/
 syn match chain5  /\<Lx-96\>/
-syn match chain5  /\<N-95\>/
+syn match chain4  /\<N-95\>/
 syn match chain5  /\<Nm-105\>/
 syn match chain5  /\<Pb-52\>/
 syn match chain5  /\<Qe-52\>/
@@ -17758,9 +17760,10 @@ syn match chain5  /\<Uq-50\>/
 syn match chain5  /\<Uq-51\>/
 syn match chain5  /\<Ux-48\>/
 syn match chain5  /\<Ux-49\>/
-syn match chain5  /\<Ux-57\>/
+syn match chain4  /\<Ux-57\>/
 syn match chain5  /\<V-40\>/
 syn match chain5  /\<V-47\>/
+syn match chain5  /\<V-48\>/
 syn match chain5  /\<Vt-100\>/
 syn match chain5  /\<Vt-98\>/
 syn match chain5  /\<Vt-99\>/
@@ -17792,14 +17795,14 @@ syn match chain6  /\<Ha-108\>/
 syn match chain6  /\<Iu-72\>/
 syn match chain6  /\<Jb-116\>/
 syn match chain6  /\<Ji-103\>/
-syn match chain6  /\<Ji-121\>/
+syn match chain5  /\<Ji-121\>/
 syn match chain6  /\<Kk-64\>/
 syn match chain6  /\<L-46\>/
 syn match chain6  /\<L-48\>/
-syn match chain6  /\<L-57\>/
 syn match chain6  /\<Mt-39\>/
 syn match chain6  /\<Ns-67\>/
 syn match chain6  /\<P-25\>/
+syn match chain6  /\<P-26\>/
 syn match chain6  /\<Pb-43\>/
 syn match chain6  /\<Pg-51\>/
 syn match chain6  /\<Qe-61\>/
@@ -17807,9 +17810,8 @@ syn match chain6  /\<T-19\>/
 syn match chain6  /\<U-98\>/
 syn match chain6  /\<U-99\>/
 syn match chain6  /\<Uq-52\>/
-syn match chain6  /\<Ux-58\>/
+syn match chain5  /\<Ux-58\>/
 syn match chain6  /\<V-39\>/
-syn match chain6  /\<V-48\>/
 syn match chain6  /\<Vt-119\>/
 syn match chain6  /\<Vt-120\>/
 syn match chain6  /\<W-76\>/
@@ -17817,7 +17819,7 @@ syn match chain6  /\<W-77\>/
 syn match chain6  /\<Wy-56\>/
 syn match chain6  /\<Ys-125\>/
 syn match chain6  /\<Yu-26\>/
-syn match chain6  /\<Z-112\>/
+syn match chain5  /\<Z-112\>/
 syn match chain7  /\<C-54\>/
 syn match chain7  /\<Cj-68\>/
 syn match chain7  /\<Co-74\>/
@@ -17833,7 +17835,6 @@ syn match chain7  /\<Kk-65\>/
 syn match chain7  /\<Kk-66\>/
 syn match chain7  /\<Ns-56\>/
 syn match chain7  /\<Ns-57\>/
-syn match chain7  /\<P-26\>/
 syn match chain7  /\<Pb-53\>/
 syn match chain7  /\<Pg-50\>/
 syn match chain7  /\<Qe-53\>/
@@ -17849,7 +17850,6 @@ syn match chain8  /\<Vi-15\>/
 syn match chain8  /\<Xj-16\>/
 syn match chain8  /\<Yv-68\>/
 syn match chain9  /\<T-14\>/
-" {{{{
 
 if 0
 
@@ -18182,6 +18182,7 @@ syn match chain2_1  /\zs\s\ze\<Se-97\>/
 syn match chain2_1  /\zs\s\ze\<Se-98\>/
 syn match chain2_1  /\zs\s\ze\<T-18\>/
 syn match chain2_1  /\zs\s\ze\<U-84\>/
+syn match chain2_1  /\zs\s\ze\<U-85\>/
 syn match chain2_1  /\zs\s\ze\<U-86\>/
 syn match chain2_1  /\zs\s\ze\<U-90\>/
 syn match chain2_1  /\zs\s\ze\<U-91\>/
@@ -18236,6 +18237,7 @@ syn match chain3_2  /\zs\s\ze\<Ek-106\>/
 syn match chain3_2  /\zs\s\ze\<Ha-112\>/
 syn match chain3_2  /\zs\s\ze\<Ha-113\>/
 syn match chain3_2  /\zs\s\ze\<Ha-114\>/
+syn match chain3_2  /\zs\s\ze\<Iu-82\>/
 syn match chain3_2  /\zs\s\ze\<Ji-108\>/
 syn match chain3_2  /\zs\s\ze\<Kn-111\>/
 syn match chain3_2  /\zs\s\ze\<Lx-79\>/
@@ -18244,11 +18246,14 @@ syn match chain3_2  /\zs\s\ze\<Lx-92\>/
 syn match chain3_2  /\zs\s\ze\<Mt-38\>/
 syn match chain3_2  /\zs\s\ze\<N-81\>/
 syn match chain3_2  /\zs\s\ze\<N-92\>/
+syn match chain3_2  /\zs\s\ze\<N-93\>/
 syn match chain3_2  /\zs\s\ze\<Nd-28\>/
 syn match chain3_2  /\zs\s\ze\<Nm-100\>/
 syn match chain3_2  /\zs\s\ze\<Nm-101\>/
 syn match chain3_2  /\zs\s\ze\<Nm-88\>/
 syn match chain3_2  /\zs\s\ze\<Ns-66\>/
+syn match chain3_2  /\zs\s\ze\<Ok-105\>/
+syn match chain3_2  /\zs\s\ze\<Ok-106\>/
 syn match chain3_2  /\zs\s\ze\<Ok-92\>/
 syn match chain3_2  /\zs\s\ze\<Ok-93\>/
 syn match chain3_2  /\zs\s\ze\<Ok-95\>/
@@ -18260,7 +18265,6 @@ syn match chain3_2  /\zs\s\ze\<Se-100\>/
 syn match chain3_2  /\zs\s\ze\<Se-101\>/
 syn match chain3_2  /\zs\s\ze\<Se-87\>/
 syn match chain3_2  /\zs\s\ze\<Se-99\>/
-syn match chain3_2  /\zs\s\ze\<U-85\>/
 syn match chain3_2  /\zs\s\ze\<U-93\>/
 syn match chain3_2  /\zs\s\ze\<U-94\>/
 syn match chain3_2  /\zs\s\ze\<U-96\>/
@@ -18285,6 +18289,9 @@ syn match chain4_3  /\zs\s\ze\<Cv-100\>/
 syn match chain4_3  /\zs\s\ze\<Cv-97\>/
 syn match chain4_3  /\zs\s\ze\<Cv-98\>/
 syn match chain4_3  /\zs\s\ze\<Cv-99\>/
+syn match chain4_3  /\zs\s\ze\<D-84\>/
+syn match chain4_3  /\zs\s\ze\<Da-109\>/
+syn match chain4_3  /\zs\s\ze\<Da-92\>/
 syn match chain4_3  /\zs\s\ze\<Da-93\>/
 syn match chain4_3  /\zs\s\ze\<Dd-103\>/
 syn match chain4_3  /\zs\s\ze\<Dd-105\>/
@@ -18297,20 +18304,17 @@ syn match chain4_3  /\zs\s\ze\<Ek-104\>/
 syn match chain4_3  /\zs\s\ze\<Ek-105\>/
 syn match chain4_3  /\zs\s\ze\<Ha-111\>/
 syn match chain4_3  /\zs\s\ze\<Iu-81\>/
-syn match chain4_3  /\zs\s\ze\<Iu-82\>/
 syn match chain4_3  /\zs\s\ze\<Ji-106\>/
 syn match chain4_3  /\zs\s\ze\<Kn-109\>/
 syn match chain4_3  /\zs\s\ze\<Kn-110\>/
 syn match chain4_3  /\zs\s\ze\<Lx-93\>/
-syn match chain4_3  /\zs\s\ze\<N-93\>/
 syn match chain4_3  /\zs\s\ze\<N-94\>/
+syn match chain4_3  /\zs\s\ze\<N-95\>/
 syn match chain4_3  /\zs\s\ze\<N-96\>/
 syn match chain4_3  /\zs\s\ze\<Nm-102\>/
 syn match chain4_3  /\zs\s\ze\<Nm-103\>/
 syn match chain4_3  /\zs\s\ze\<Nm-104\>/
 syn match chain4_3  /\zs\s\ze\<Nm-87\>/
-syn match chain4_3  /\zs\s\ze\<Ok-105\>/
-syn match chain4_3  /\zs\s\ze\<Ok-106\>/
 syn match chain4_3  /\zs\s\ze\<Ok-107\>/
 syn match chain4_3  /\zs\s\ze\<Ok-89\>/
 syn match chain4_3  /\zs\s\ze\<Ok-91\>/
@@ -18324,6 +18328,7 @@ syn match chain4_3  /\zs\s\ze\<Se-102\>/
 syn match chain4_3  /\zs\s\ze\<Se-85\>/
 syn match chain4_3  /\zs\s\ze\<Se-86\>/
 syn match chain4_3  /\zs\s\ze\<U-95\>/
+syn match chain4_3  /\zs\s\ze\<Ux-57\>/
 syn match chain4_3  /\zs\s\ze\<Vl-100\>/
 syn match chain4_3  /\zs\s\ze\<Vl-101\>/
 syn match chain4_3  /\zs\s\ze\<Vl-84\>/
@@ -18345,9 +18350,6 @@ syn match chain5_4  /\zs\s\ze\<Ax-111\>/
 syn match chain5_4  /\zs\s\ze\<Cj-80\>/
 syn match chain5_4  /\zs\s\ze\<Cj-81\>/
 syn match chain5_4  /\zs\s\ze\<Cv-114\>/
-syn match chain5_4  /\zs\s\ze\<D-84\>/
-syn match chain5_4  /\zs\s\ze\<Da-109\>/
-syn match chain5_4  /\zs\s\ze\<Da-92\>/
 syn match chain5_4  /\zs\s\ze\<Da-94\>/
 syn match chain5_4  /\zs\s\ze\<Dx-43\>/
 syn match chain5_4  /\zs\s\ze\<Dx-44\>/
@@ -18362,6 +18364,7 @@ syn match chain5_4  /\zs\s\ze\<I-115\>/
 syn match chain5_4  /\zs\s\ze\<Iu-83\>/
 syn match chain5_4  /\zs\s\ze\<Ji-104\>/
 syn match chain5_4  /\zs\s\ze\<Ji-105\>/
+syn match chain5_4  /\zs\s\ze\<Ji-121\>/
 syn match chain5_4  /\zs\s\ze\<K-37\>/
 syn match chain5_4  /\zs\s\ze\<Kn-106\>/
 syn match chain5_4  /\zs\s\ze\<Kn-107\>/
@@ -18369,12 +18372,12 @@ syn match chain5_4  /\zs\s\ze\<Kn-108\>/
 syn match chain5_4  /\zs\s\ze\<L-47\>/
 syn match chain5_4  /\zs\s\ze\<L-55\>/
 syn match chain5_4  /\zs\s\ze\<L-56\>/
+syn match chain5_4  /\zs\s\ze\<L-57\>/
 syn match chain5_4  /\zs\s\ze\<Lu-41\>/
 syn match chain5_4  /\zs\s\ze\<Lx-76\>/
 syn match chain5_4  /\zs\s\ze\<Lx-77\>/
 syn match chain5_4  /\zs\s\ze\<Lx-94\>/
 syn match chain5_4  /\zs\s\ze\<Lx-95\>/
-syn match chain5_4  /\zs\s\ze\<N-95\>/
 syn match chain5_4  /\zs\s\ze\<Nm-105\>/
 syn match chain5_4  /\zs\s\ze\<Ok-90\>/
 syn match chain5_4  /\zs\s\ze\<Pb-52\>/
@@ -18390,13 +18393,15 @@ syn match chain5_4  /\zs\s\ze\<Uq-49\>/
 syn match chain5_4  /\zs\s\ze\<Uq-50\>/
 syn match chain5_4  /\zs\s\ze\<Ux-48\>/
 syn match chain5_4  /\zs\s\ze\<Ux-49\>/
-syn match chain5_4  /\zs\s\ze\<Ux-57\>/
+syn match chain5_4  /\zs\s\ze\<Ux-58\>/
 syn match chain5_4  /\zs\s\ze\<V-40\>/
 syn match chain5_4  /\zs\s\ze\<V-47\>/
+syn match chain5_4  /\zs\s\ze\<V-48\>/
 syn match chain5_4  /\zs\s\ze\<Vt-100\>/
 syn match chain5_4  /\zs\s\ze\<Vt-99\>/
 syn match chain5_4  /\zs\s\ze\<W-91\>/
 syn match chain5_4  /\zs\s\ze\<Wy-54\>/
+syn match chain5_4  /\zs\s\ze\<Z-112\>/
 syn match chain6_5  /\zs\s\ze\<Ai-58\>/
 syn match chain6_5  /\zs\s\ze\<Aw-105\>/
 syn match chain6_5  /\zs\s\ze\<Ax-109\>/
@@ -18415,15 +18420,14 @@ syn match chain6_5  /\zs\s\ze\<Gd-38\>/
 syn match chain6_5  /\zs\s\ze\<Iu-72\>/
 syn match chain6_5  /\zs\s\ze\<Jb-116\>/
 syn match chain6_5  /\zs\s\ze\<Ji-103\>/
-syn match chain6_5  /\zs\s\ze\<Ji-121\>/
 syn match chain6_5  /\zs\s\ze\<Kk-64\>/
 syn match chain6_5  /\zs\s\ze\<L-46\>/
 syn match chain6_5  /\zs\s\ze\<L-48\>/
-syn match chain6_5  /\zs\s\ze\<L-57\>/
 syn match chain6_5  /\zs\s\ze\<Lx-96\>/
 syn match chain6_5  /\zs\s\ze\<Mt-39\>/
 syn match chain6_5  /\zs\s\ze\<Ns-67\>/
 syn match chain6_5  /\zs\s\ze\<P-25\>/
+syn match chain6_5  /\zs\s\ze\<P-26\>/
 syn match chain6_5  /\zs\s\ze\<Pb-43\>/
 syn match chain6_5  /\zs\s\ze\<Pg-51\>/
 syn match chain6_5  /\zs\s\ze\<Qe-61\>/
@@ -18432,9 +18436,7 @@ syn match chain6_5  /\zs\s\ze\<U-98\>/
 syn match chain6_5  /\zs\s\ze\<U-99\>/
 syn match chain6_5  /\zs\s\ze\<Uq-51\>/
 syn match chain6_5  /\zs\s\ze\<Uq-52\>/
-syn match chain6_5  /\zs\s\ze\<Ux-58\>/
 syn match chain6_5  /\zs\s\ze\<V-39\>/
-syn match chain6_5  /\zs\s\ze\<V-48\>/
 syn match chain6_5  /\zs\s\ze\<Vt-119\>/
 syn match chain6_5  /\zs\s\ze\<Vt-120\>/
 syn match chain6_5  /\zs\s\ze\<Vt-98\>/
@@ -18445,7 +18447,6 @@ syn match chain6_5  /\zs\s\ze\<Wy-55\>/
 syn match chain6_5  /\zs\s\ze\<Wy-56\>/
 syn match chain6_5  /\zs\s\ze\<X-119\>/
 syn match chain6_5  /\zs\s\ze\<Yu-26\>/
-syn match chain6_5  /\zs\s\ze\<Z-112\>/
 syn match chain6_5  /\zs\s\ze\<Z-95\>/
 syn match chain7_6  /\zs\s\ze\<Aw-104\>/
 syn match chain7_6  /\zs\s\ze\<C-53\>/
@@ -18460,7 +18461,6 @@ syn match chain7_6  /\zs\s\ze\<Go-117\>/
 syn match chain7_6  /\zs\s\ze\<Gy-63\>/
 syn match chain7_6  /\zs\s\ze\<K-36\>/
 syn match chain7_6  /\zs\s\ze\<Ns-56\>/
-syn match chain7_6  /\zs\s\ze\<P-26\>/
 syn match chain7_6  /\zs\s\ze\<Pb-53\>/
 syn match chain7_6  /\zs\s\ze\<Pg-50\>/
 syn match chain7_6  /\zs\s\ze\<Qe-53\>/
