@@ -1,3 +1,75 @@
+2025-06-13 Jun.Fri 13:16:42
+Currently missing these bohr isotopes
+ 2-chain:
+  [r] U-84
+     [r] |  Xj-17⁺ +  Gy-67ª   +[  1637.82 -   5000] => N-84                | nuclear                      | OTOMRO  170487 | used 1637.22 [ ] update recipe chains
+     [r] |  Ro-22⁺ +   N-84⁺   +[  2125.26 -   4000] => P-22 + U-84         | decay, nuclear               | OTOMRO  270740*|
+  [r] Dd-101
+     [r] |  Wy-50∙ +  Kk-71ª   +[  4428.93*-  20000] => P-22 + Dd-99        | decay, nuclear               | OTOMRO  273034 |
+     [r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+     [r] |   P-24⁻ +  Dd-99ª   +[  2487.78*-   4000] => P-22 + Dd-101       | decay, nuclear               | OTOMRO  240963 |
+
+ 3-chain:
+[ ] |  Ro-22⁺ + Ji-107ª   +[  2211.76 -   5000] => P-22 + Aw-107       | decay, nuclear               | OTOMRO  284173*|
+[ ] |  Eb-22∙ + Ok-104ª   +[  3226.16 -   5000] => P-22 + Dd-104       | decay, nuclear               | OTOMRO  253141*|
+[ ] |  Vi-10⁺ + Cv-102ª   +[  1141.09*-   3000] => P-22 + Dd-90        | decay, nuclear               | OTOMRO  ? -  246118 |
+[ ] |  Ro-22⁺ +  Nm-90⁺   +[  2415.04 -  10000] => P-22 + Dd-90        | decay, nuclear               | OTOMRO  205237*|
+[ ] |   K-34∙ + Ok-104ª   +[   300.00 -   6000] => P-22 + K-34 + Iu-82 | decay                        | OTOMRO   77780*|
+[ ] |   P-23∙ + Ok-104ª   +[  3378.93 -   5000] => P-22 + Ok-105       | decay, nuclear               | OTOMRO  267125*|
+[ ] |   P-24⁻ + Ok-104ª   +[  2669.32 -   5000] => P-22 + Ok-106       | decay, nuclear               | OTOMRO  242313*|
+[ ] |   P-24⁻ +  S-105ª   +[  2571.21 -   5000] => P-22 + S-107        | decay, nuclear               | OTOMRO  218960 |
+[ ] |   Sr-2∙ +  Se-98∙   +[  1651.44 -   5000] => Se-100              | decay, nuclear               | OTOMRO  183979 |
+[ ] |   Sr-3∙ +  Se-98∙   +[  1759.33 -   5000] => Se-101              | decay, nuclear               | OTOMRO  174219 |
+[ ] |  Eb-22∙ +  Vl-96⁻   +[  3061.24 -   4000] => P-22 + U-96         | decay, nuclear               | OTOMRO  276263*|
+[ ] |   P-24⁻ +  Z-107ª   +[  2566.45 -   4000] => P-22 + Z-109        | decay, nuclear               | OTOMRO  184025 |
+
+need these 2-chain:
+[ ] |  Ro-22⁺ +  Z-102ª   +[  2155.34*-   4000] => P-22 + Cv-102       | decay, nuclear               | OTOMRO  192731 |
+[ ] |  Gy-64⁺ +  Gy-65⁺   +[  3373.79*-  10000] => P-22 + Ji-107       | decay, nuclear               | OTOMRO  269280 |
+[ ] |  Ro-22⁺ +  Se-90∙   +[  2865.05 -   5000] => P-22 + Nm-90        | decay, nuclear               | OTOMRO  259777*|
+[ ] |  Eb-22∙ + Da-104ª   +[  3330.81 -   5000] => P-22 + Ok-104       | decay, nuclear               | OTOMRO  253138*|
+[ ] |  Eb-22∙ + Da-104ª   +[  3330.81 -   5000] => P-22 + Ok-104       | decay, nuclear               | OTOMRO  253138*|
+[ ] |  Eb-22∙ + Da-104ª   +[  3330.81 -   5000] => P-22 + Ok-104       | decay, nuclear               | OTOMRO  253138*|
+[ ] |  Eb-22∙ + Da-104ª   +[  3330.81 -   5000] => P-22 + Ok-104       | decay, nuclear               | OTOMRO  253138*|
+[ ] |   P-24⁻ +  S-103ª   +[  2534.50*-   5000] => P-22 + S-105        | decay, nuclear               | OTOMRO  265456 |
+[ ] |   P-24⁻ +  Se-96∙   +[  3287.51*-   4000] => P-22 + Se-98        | decay, nuclear               | OTOMRO  267874 |
+[ ] |   P-24⁻ +  Se-96∙   +[  3287.51*-   4000] => P-22 + Se-98        | decay, nuclear               | OTOMRO  267874 |
+[ ] |  Eb-22∙ +  Se-96∙   +[  4191.93 -   7000] => P-22 + Vl-96        | decay, nuclear               | OTOMRO  276265*|
+[ ] |  Eb-22∙ + Cv-107ª   +[  3113.15 -   4000] => P-22 + Z-107        | decay, nuclear               | OTOMRO  184017 |
+
+need these 1-chain:
+[ ] |  Cl-27∙ +  S-102ª   +[  3597.22 -  10000] => P-22 + Cv-107       | decay, nuclear               | OTOMRO  218718 |
+[ ] |   K-34∙ +  Kk-70ª   +[  3459.44*-  20000] => Da-104              | decay, nuclear               | OTOMRO  265504 |
+[ ] |   K-34∙ +  Kk-70ª   +[  3459.44*-  20000] => Da-104              | decay, nuclear               | OTOMRO  265504 |
+[ ] |   K-34∙ +  Kk-70ª   +[  3459.44*-  20000] => Da-104              | decay, nuclear               | OTOMRO  265504 |
+[ ] |   K-34∙ +  Kk-70ª   +[  3459.44*-  20000] => Da-104              | decay, nuclear               | OTOMRO  265504 |
+[ ] |  Mt-32⁺ +  Mt-32⁺   +[  1389.89*-   4000] => Gy-64               | decay, nuclear               | OTOMRO  265505 |
+[ ] |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65               | nuclear                      | OTOMRO   54142 |
+[ ] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[ ] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[ ] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[ ] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[ ] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[ ] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[ ] |   P-23∙ +  S-102ª   +[  3249.40*-  20000] => P-22 + S-103        | decay, nuclear               | OTOMRO  218956 |
+[ ] |  Vi-10⁺ +  S-102ª   +[  1200.93 -   5000] => P-22 + Se-90        | decay, nuclear               | OTOMRO  174258 |
+[ ] |  Uq-47⁻ +  Kk-71ª   +[  3232.72*-  20000] => P-22 + Se-96        | decay, nuclear               | OTOMRO  269272 |
+[ ] |  Uq-47⁻ +  Kk-71ª   +[  3232.72*-  20000] => P-22 + Se-96        | decay, nuclear               | OTOMRO  269272 |
+[ ] |  Uq-47⁻ +  Kk-71ª   +[  3232.72*-  20000] => P-22 + Se-96        | decay, nuclear               | OTOMRO  269272 |
+[ ] |  Ro-22⁺ +  S-102ª   +[  2235.72*-  20000] => P-22 + Z-102        | decay, nuclear               | OTOMRO  229747 |
+
+
+
+2025-06-13 Jun.Fri 12:52:06 [ ] Each of my major files here should have an associated vim file with vim commands for reformatting and for verifying it is consistent. Time and again I'll find a row with just wrong information, or missing an isotope, or I hit C-X or C-A and decremented/incremented an isotope's mass in a recipe, messing it up.
+
+2025-06-13 Jun.Fri 12:49:04 I added rows for possible isotopes in my decay files before and after the known isotopes. While doing so I see that there are these knownn isotopes that could make new ones:
+[ ]| Vi-15⁻  +  1000 => ? As-8 + As-7
+[ ]| Cv-115ª + 12000 => ? Wy-53 + Qe-62
+[ ]| Vt-120⁻ + 12000 => ? Wy-55 + C-65 or ? L-55 + C-65
+
+
+[ ] Also, it should be easy to use the protonlookup[] vim dictionary object to discover isotopes that can be reached with just a P-21/P-23/P-24 Ro-* type deal
+
 2025-06-12 Jun.Thu 13:00:27 Yes! I addded code to convert_token_id_to_hex.pl to add to the syntax file a dictionary for looking up the number of protons an otom should have or vice versa.
 
 Lets me do stuff like figuring out what alpha decay otom should be produced even though no alpha decay reactions have been tried with a specific otom, like "Da".
@@ -47,7 +119,7 @@ echo eva(substitute(@",'\s*\n',' + ','g'))
 
 
 
-2025-06-12 Jun.Thu 10:21:30 [ ] I would like my decay.<universe>.otom files to always have undiscovered isotopes at the top and bottom of each otom kind like so:
+2025-06-12 Jun.Thu 10:21:30 [c] I would like my decay.<universe>.otom files to always have undiscovered isotopes at the top and bottom of each otom kind like so:
 
 |?Vl-83  |           |          |       |      |                   ? U-83  |                                   |               ? Gd-38 + Wy-45   |                                |
 | Vl-84⁺ |  84 44 Vl | metal    |(0.586)|beta+ |                   ? U-84  |                                   |               ? Gd-38 + Wy-46   |                                |
