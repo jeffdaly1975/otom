@@ -64,6 +64,7 @@ if ($otom_name ."-". $otom_mass =~ /Xj-16|K-29|C-53|Vt-98/){
        die "somehow no matches for input otoms in [$input_otoms] for input_line[$input_line]\n" unless scalar(@in_matches)>0;
        
        foreach my $in (@in_matches){
+  print STDERR "DEBUG: in[$in]\n";
           unless (exists $db{$in}){
 
              die "no preexisting minimal value for input otom [$in] for input_line[$input_line]\n" unless exists $db{$in};

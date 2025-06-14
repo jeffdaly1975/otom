@@ -699,6 +699,7 @@ my %idhash=(
 664 => "Cv-115",
 665 => "U-99",
 666 => "Pb-53",
+667 => "Cj-69",
 );
 
 
@@ -1369,6 +1370,7 @@ my %hexhash=(
  "Cv-115"=> "e2f5b2ac607b0d00973eb8e8286b201d1170d019c934ad809a234c29c74788e5",
  "U-99"  => "6023d411df28307feb27da6a93ea9029a1882ae705786ada468cf0b31d5d7428",
  "Pb-53" => "0f0671d283240dffe9ca0d95541188a6cbc2e2ead7ce8d9c8b83e10560a1c550",
+ "Cj-69" => "632c5bddcdd0cd79fd12fccff03b8c8ea5915ade9b92d5f33afaf11d157c9070",
 );
 
 # [ ] I could update this for all possible isotopes and print out the NRG total of your wallet isotopes

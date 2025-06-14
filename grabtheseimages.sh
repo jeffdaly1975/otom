@@ -641,6 +641,7 @@ grab_token_image "Yv"   "74"   $universe_bohr
 grab_token_image "Yv"   "75"   $universe_bohr
 grab_token_image "Yv"   "80"   $universe_bohr
 grab_token_image "Cj"   "68"   $universe_bohr
+grab_token_image "Cj"   "69"   $universe_bohr
 grab_token_image "Cj"   "71"   $universe_bohr
 grab_token_image "Cj"   "72"   $universe_bohr
 grab_token_image "Cj"   "73"   $universe_bohr

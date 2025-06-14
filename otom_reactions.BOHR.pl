@@ -3,10 +3,10 @@
 # Universe: BOHR
 
 #       65 otoms
-#      666 isotopes
-#   443556 combinations
-#   222111 unique combinations
-#    46493 combinations resulting in known isotopes
+#      667 isotopes
+#   444889 combinations
+#   222778 unique combinations
+#    46689 combinations resulting in known isotopes
 
 # NOTE The above data is for the number of combinations of exactly 2 isotopes. 
 #      There are many more combinations of 1-5
@@ -412,6 +412,7 @@ __DATA__
  75 35 Yv
  80 35 Yv
  68 36 Cj
+ 69 36 Cj
  71 36 Cj
  72 36 Cj
  73 36 Cj
