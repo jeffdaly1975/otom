@@ -1,3 +1,165 @@
+2025-06-16 Jun.Mon 12:41:09 I'm putting an asterisk (*) by outputs in the decay file to indicate we have seen this decay potentiality output indirectly when someone combined 2 isotopes that added to the intermediate isotope in question, which then immediately decayed.
+I'm also putting an "at" symbol (@) by outputs in the all isotopes stabilty chart for undiscovered isotopes file to indicate this intermediate isotope did a double decay. I need to learn more about why. Was it just that there was so much energy input that it used it up in blobs and had enough to double decay? has this always been possible? Does it only apply to extremely heavy isotopes? Or does it apply to isotopes which cannot exist? or to isotopes that probably can't happen?
+
+2025-06-16 Jun.Mon 10:54:51
+try
+[ ]| Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+[ ]| Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+[ ]| Ro-22⁺ +  Nm-89⁺   +[  1961.57 -   4000] => P-22 + Dd-89        | decay, nuclear               | OTOMRO  267828 |
+[ ]| Ro-22⁺ +  Dd-89⁺   +[  1843.31 -   1845] => P-22 + Ok-89        | decay, nuclear               | OTOMRO  109901 |
+[ ]| Mt-32⁺ +  Ok-89⁺   +[  2234.14 -   2240] => P-22 + Ek-99        | decay, nuclear               | OTOMRO  137835 |
+[ ]| Cl-25⁺ +  Ek-99⁺ +10000 -> 124-67-na  => ? Ys-124
+
+2025-06-16 Jun.Mon 10:47:49
+
+Aw-104⁺ *+ *P-22⁺\|Aw-105⁺ *+ *P-21⁺\|Ax-109⁺ *+ *T-17∙\|Ax-110⁺ *+ *T-16∙\|Ax-111ª *+ *T-15⁺\|Cj-68⁺ *+ *Ai-58⁺\|Co-74⁺ *+ *Qe-52⁺\|Cv-97⁺ *+ *Nd-29⁺\|Cv-98ª *+ *Nd-28⁺\|Cv-99ª *+ *Nd-27⁺\|Da-90⁺ *+ *Lu-36∙\|Da-91⁺ *+ *Lu-35⁺\|Da-92⁺ *+ *Lu-34⁺\|Dd-88⁺ *+ *Gd-38⁺\|Ek-100⁺ *+ *Cl-26ª\|Ek-101⁺ *+ *Cl-25⁺\|Ek-102⁺ *+ *Cl-24⁺\|Ek-99⁺ *+ *Cl-27∙\|Go-117ª *+ *Gj-9⁺\|Ha-108⁺ *+ *Xj-18∙\|Ha-109⁺ *+ *Xj-17⁺\|Ha-110ª *+ *Xj-16⁺\|I-113ª *+ *Ct-13⁺\|Jb-116ª *+ *Vi-10⁺\|Ji-103⁺ *+ *Ro-23ª\|Ji-104⁺ *+ *Ro-22⁺\|Kn-106⁺ *+ *Eb-20∙\|Kn-107⁺ *+ *Eb-19⁺\|Lx-76⁺ *+ *Ux-50⁺\|Lx-77⁺ *+ *Ux-49⁺\|Nm-87⁺ *+ *V-39⁺\|Ok-89⁺ *+ *Dx-37⁺\|Ok-90⁺ *+ *Dx-36⁺\|Ok-91⁺ *+ *Dx-35⁺\|S-94⁺ *+ *Mt-32⁺\|Se-84⁺ *+ *Uq-42⁺\|Se-85⁺ *+ *Uq-41⁺\|Vt-100⁺ *+ *Yu-26⁺\|Vt-98⁺ *+ *Yu-28ª\|Vt-99⁺ *+ *Yu-27⁺\|W-76⁺ *+ *Pg-50⁺\|X-119ª *+ *Dz-7⁺\|Ys-125ª *+ *Sr-1∙\|Yv-66⁺ *+ *F-60⁺\|Yv-67⁺ *+ *F-59⁺\|Z-95⁺ *+ *K-31⁺\|Z-96⁺ *+ *K-30⁺\|Z-97⁺ *+ *K-29⁺\|P-22⁺ *+ *Aw-104⁺\|P-21⁺ *+ *Aw-105⁺\|T-17∙ *+ *Ax-109⁺\|T-16∙ *+ *Ax-110⁺\|T-15⁺ *+ *Ax-111ª\|Ai-58⁺ *+ *Cj-68⁺\|Qe-52⁺ *+ *Co-74⁺\|Nd-29⁺ *+ *Cv-97⁺\|Nd-28⁺ *+ *Cv-98ª\|Nd-27⁺ *+ *Cv-99ª\|Lu-36∙ *+ *Da-90⁺\|Lu-35⁺ *+ *Da-91⁺\|Lu-34⁺ *+ *Da-92⁺\|Gd-38⁺ *+ *Dd-88⁺\|Cl-26ª *+ *Ek-100⁺\|Cl-25⁺ *+ *Ek-101⁺\|Cl-24⁺ *+ *Ek-102⁺\|Cl-27∙ *+ *Ek-99⁺\|Gj-9⁺ *+ *Go-117ª\|Xj-18∙ *+ *Ha-108⁺\|Xj-17⁺ *+ *Ha-109⁺\|Xj-16⁺ *+ *Ha-110ª\|Ct-13⁺ *+ *I-113ª\|Vi-10⁺ *+ *Jb-116ª\|Ro-23ª *+ *Ji-103⁺\|Ro-22⁺ *+ *Ji-104⁺\|Eb-20∙ *+ *Kn-106⁺\|Eb-19⁺ *+ *Kn-107⁺\|Ux-50⁺ *+ *Lx-76⁺\|Ux-49⁺ *+ *Lx-77⁺\|V-39⁺ *+ *Nm-87⁺\|Dx-37⁺ *+ *Ok-89⁺\|Dx-36⁺ *+ *Ok-90⁺\|Dx-35⁺ *+ *Ok-91⁺\|Mt-32⁺ *+ *S-94⁺\|Uq-42⁺ *+ *Se-84⁺\|Uq-41⁺ *+ *Se-85⁺\|Yu-26⁺ *+ *Vt-100⁺\|Yu-28ª *+ *Vt-98⁺\|Yu-27⁺ *+ *Vt-99⁺\|Pg-50⁺ *+ *W-76⁺\|Dz-7⁺ *+ *X-119ª\|Sr-1∙ *+ *Ys-125ª\|F-60⁺ *+ *Yv-66⁺\|F-59⁺ *+ *Yv-67⁺\|K-31⁺ *+ *Z-95⁺\|K-30⁺ *+ *Z-96⁺\|K-29⁺ *+ *Z-97⁺
+|    79358*|bohr    |   P-21⁺ + Aw-105⁺                               +     7500 =>   P-22 + Aw-104                                                                    +    5238.77 |    2261.23 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x14635f5a2994e6ba06fc49f29cd7dc510058dd34922e4c2642e36bff51841f30 | 0x39f6e1d7fe89c12669908892e43c78130a68985ca944af9958a0f9348f5036a8 |
+|    81912*|bohr    |   Sr-1∙ + Ys-125ª                               +    10000 =>   P-22 + Aw-104                                                                    +    8544.33 |    1455.67 | decay, nuclear               | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0xa8829f41eba99b942f26ac7bc93c9b14957706d54afd4ddc983d8e5867e74c9e | 0x125bd90d3a87042b0f5db8f55716d0efa2dc6edca3bae72067e32bb167f6c221 |
+|    81915*|bohr    |  Ro-23ª + Ji-103⁺                               +     6800 =>   P-22 + Aw-104                                                                    +    4563.52 |    2236.48 | decay, nuclear               | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0x0baa1fbc6b5a88270ae4cd8880668c92fb6ff22e3bcaf039aba3391d1b69c316 | 0xc35945cb3e6d18e13bfa60170bf0af5ceabf8240b7cbcd6279876b529160212f |
+|    82170 |bohr    |   P-21⁺ + Aw-105⁺                               +     5000 =>   P-22 + Aw-104                                                                    +    2863.77 |    2136.23 | decay, nuclear               | 0x9e680f3d7566464b3b3e63c9ad37dc2b9e5452e2 | 0x67e0a67f10aec6b9ff75320ffe84ea017d4cdfbac81814f773066e9cc5bbfb32 | 0x6a7293baddeee58fee4d870c4d94e55b434440318286cfb31546e42f13330f01 |
+|    89792*|bohr    |   T-15⁺ + Ax-111ª                               +     7500 =>   P-22 + Aw-104                                                                    +    5656.34 |    1843.66 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x5b1e96fa8d2b3f0db688be9a76b5b3377ba000281e899d704c186cf6f6814bb7 | 0x970e5fc6e5893d4ded0f5105f1513aebe478878425110c962a09ffb951a76958 |
+|   104304*|bohr    |  Yu-27⁺ +  Vt-99⁺                               +    10000 =>   P-22 + Aw-104                                                                    +    7446.49 |    2553.51 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x16397fff1fc15e3dc6be060efaae5ab335e2e27c056cb03f29d4ab5c1ab3ecb6 | 0xde2d4866d120f3e6fc33ac3f712ec9bf8b250a782dfd2c585d0459dfd99def8e |
+|   113941 |bohr    |  Yu-27⁺ +  Vt-99⁺                               +     5000 =>   P-22 + Aw-104                                                                    +    2696.49 |    2303.51 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x6c0375250734fde8760d0b0cb047b7e4fc47a76972fbbb46d12631bbcd6381df | 0x674268673769a3f05aeb577bdabcd1c82d7592e6787758aac0249b42883e33e7 |
+|   114580 |bohr    |   T-15⁺ + Ax-111ª                               +     1900 =>   P-22 + Aw-104                                                                    +     336.34 |    1563.66 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xbed65ac31d61ecf92933181cdfcdbb6090dbc8783777332a1dfaea07e8426d42 | 0x109aff2ddb973570a4a01489b149a301e3a4f9f6f55777eb2d661009224de27c |
+|   128640 |bohr    |   T-15⁺ + Ax-111ª                               +     1564 =>   P-22 + Aw-104                                                                    +      17.14 |    1546.86 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe534c681ac06d9e9784455e3aa5d9a0672cfc1235e8a9a897f9a34b6dde2c737 | 0xeb6ea81bef7a5e2e99378cf6cc57552424b6a5d7dff7140e805954f411203368 |
+|   161198*|bohr    |  Ro-22⁺ + Ji-104⁺                               +    10000 =>   P-22 + Aw-104                                                                    +    7616.54 |    2383.46 | decay, nuclear               | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xb3a99990542bb82a7ef2da5c87cdc1e5994a11cee3d9dc3707a4bc669beb3c7c | 0xec5503ea1d9dfdb3facd8eccc3a4a823d4b3dbc9f4e78537a4f889d825f66080 |
+|   204363 |bohr    |   P-21⁺ + Aw-105⁺                               +     4000 =>   P-22 + Aw-104                                                                    +    1913.77 |    2086.23 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0x17860104e821c6cd5d83872b41d5d0ccfd6e0e33e74e6495637f48dd9cf7fa63 | 0xb70ce37cfa81356c564544c8029c7b13cd8a8fba43b7c9a1b4e564f58f26c611 |
+|   249844 |bohr    |   T-15⁺ + Ax-111ª                               +     1564 =>   P-22 + Aw-104                                                                    +      17.14 |    1546.86 | decay, nuclear               | 0x43dbb736151d5548a097f4e854df2214a857383d | 0xe6b0ef0d37dba0cf44f414439c221b99c6cd70498a612e2b653f2ab90b1ca972 | 0x88b1ed5043cb423e9e7a224a65b35161be601540b6ef3d4d3b4f34584ec4b8a8 |
+|   249845 |bohr    |   T-15⁺ + Ax-111ª                               +     1564 =>   P-22 + Aw-104                                                                    +      17.14 |    1546.86 | decay, nuclear               | 0x43dbb736151d5548a097f4e854df2214a857383d | 0x6486c0b725fd5510065d4041fbbc72914a6a190b0999192484ecb24b44078f7b | 0x88b1ed5043cb423e9e7a224a65b35161be601540b6ef3d4d3b4f34584ec4b8a8 |
+|   249846 |bohr    |   T-15⁺ + Ax-111ª                               +     1564 =>   P-22 + Aw-104                                                                    +      17.14 |    1546.86 | decay, nuclear               | 0x43dbb736151d5548a097f4e854df2214a857383d | 0x21119341dad0275fb786f492483f8e629f89e58f438d2f6ecbc8408c1a047fdb | 0x88b1ed5043cb423e9e7a224a65b35161be601540b6ef3d4d3b4f34584ec4b8a8 |
+|   249847 |bohr    |   T-15⁺ + Ax-111ª                               +     1564 =>   P-22 + Aw-104                                                                    +      17.14 |    1546.86 | decay, nuclear               | 0x43dbb736151d5548a097f4e854df2214a857383d | 0xc98a0b4fb1adf6c03e17b3e1181cf947c78f895f3f061b13bee3b36e43cbb996 | 0x88b1ed5043cb423e9e7a224a65b35161be601540b6ef3d4d3b4f34584ec4b8a8 |
+|   249848 |bohr    |   T-15⁺ + Ax-111ª                               +     1564 =>   P-22 + Aw-104                                                                    +      17.14 |    1546.86 | decay, nuclear               | 0x43dbb736151d5548a097f4e854df2214a857383d | 0x750717d53d6f087a1937b0bcf4e91e94e52db47f1673dea13c8895f84c6595be | 0x488c30ccf2338240484212f5b58dd3fb0c6ce6a44df554ff1c1787b0cc81e393 |
+|   249849 |bohr    |   T-15⁺ + Ax-111ª                               +     1564 =>   P-22 + Aw-104                                                                    +      17.14 |    1546.86 | decay, nuclear               | 0x43dbb736151d5548a097f4e854df2214a857383d | 0x3d6237e81dc03cb9a592bc536c8ed2dbcbfcde10feb26b8c0a7b8820224a8613 | 0x488c30ccf2338240484212f5b58dd3fb0c6ce6a44df554ff1c1787b0cc81e393 |
+|   255187 |bohr    |   T-15⁺ + Ax-111ª                               +     1547 =>   P-22 + Aw-104                                                                    +       0.99 |    1546.01 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x3fd6bbd81a1e99bb4f53b9b66fc60a052895e54b9bd262efda7086bcbb94902d | 0xe7cd49559105fe087c9c41f9e02dcf9a955c071dbd726bff6e8cdad57e425fe7 |
+
+Aw-104⁺ + P-22⁺   = <<126-67-na>>  |
+Aw-105⁺ + P-21⁺   = <<126-67-na>>  |
+Ax-109⁺ + T-17∙   = <<126-67-na>>  |
+Ax-110⁺ + T-16∙   = <<126-67-na>>  |
+Ax-111ª + T-15⁺   = <<126-67-na>>  |
+Cj-68⁺  + Ai-58⁺  = <<126-67-na>>  |
+Co-74⁺  + Qe-52⁺  = <<126-67-na>>  |
+Cv-97⁺  + Nd-29⁺  = <<126-67-na>>  |
+Cv-98ª  + Nd-28⁺  = <<126-67-na>>  |
+Cv-99ª  + Nd-27⁺  = <<126-67-na>>  |
+Da-90⁺  + Lu-36∙  = <<126-67-na>>  |
+Da-91⁺  + Lu-35⁺  = <<126-67-na>>  |
+Da-92⁺  + Lu-34⁺  = <<126-67-na>>  |
+Dd-88⁺  + Gd-38⁺  = <<126-67-na>>  |
+Ek-100⁺ + Cl-26ª  = <<126-67-na>>  |
+Ek-101⁺ + Cl-25⁺  = <<126-67-na>>  |
+Ek-102⁺ + Cl-24⁺  = <<126-67-na>>  |
+Ek-99⁺  + Cl-27∙  = <<126-67-na>>  |
+Go-117ª + Gj-9⁺   = <<126-67-na>>  |
+Ha-108⁺ + Xj-18∙  = <<126-67-na>>  |
+Ha-109⁺ + Xj-17⁺  = <<126-67-na>>  |
+Ha-110ª + Xj-16⁺  = <<126-67-na>>  |
+I-113ª  + Ct-13⁺  = <<126-67-na>>  |
+Jb-116ª + Vi-10⁺  = <<126-67-na>>  |
+Ji-103⁺ + Ro-23ª  = <<126-67-na>>  |
+Ji-104⁺ + Ro-22⁺  = <<126-67-na>>  |
+Kn-106⁺ + Eb-20∙  = <<126-67-na>>  |
+Kn-107⁺ + Eb-19⁺  = <<126-67-na>>  |
+Lx-76⁺  + Ux-50⁺  = <<126-67-na>>  |
+Lx-77⁺  + Ux-49⁺  = <<126-67-na>>  |
+Nm-87⁺  + V-39⁺   = <<126-67-na>>  |
+Ok-89⁺  + Dx-37⁺  = <<126-67-na>>  |
+Ok-90⁺  + Dx-36⁺  = <<126-67-na>>  |
+Ok-91⁺  + Dx-35⁺  = <<126-67-na>>  |
+S-94⁺   + Mt-32⁺  = <<126-67-na>>  |
+Se-84⁺  + Uq-42⁺  = <<126-67-na>>  |
+Se-85⁺  + Uq-41⁺  = <<126-67-na>>  |
+Vt-100⁺ + Yu-26⁺  = <<126-67-na>>  |
+Vt-98⁺  + Yu-28ª  = <<126-67-na>>  |
+Vt-99⁺  + Yu-27⁺  = <<126-67-na>>  |
+W-76⁺   + Pg-50⁺  = <<126-67-na>>  |
+X-119ª  + Dz-7⁺   = <<126-67-na>>  |
+Ys-125ª + Sr-1∙   = <<126-67-na>>  |
+Yv-66⁺  + F-60⁺   = <<126-67-na>>  |
+Yv-67⁺  + F-59⁺   = <<126-67-na>>  |
+Z-95⁺   + K-31⁺   = <<126-67-na>>  |
+Z-96⁺   + K-30⁺   = <<126-67-na>>  |
+Z-97⁺   + K-29⁺   = <<126-67-na>>  |
+
+
+|  P-21⁺ + Ji-104⁺ -> 125-66-Ys   Ys-125ª(0.136)|                                                    |               |                                                    |               | +[ 2192.12,  9000]=> P-22 + Ji-103                 |decay, nuclear |
+| Cl-27∙ +  Vt-98⁺ -> 125-66-Ys   Ys-125ª(0.136)|                                                    |               |                                                    |               | +[ 2896.80, 17000]=> P-22 + Ji-103                 |decay, nuclear |
+| Mt-35∙ +  Da-90⁺ -> 125-66-Ys   Ys-125ª(0.136)|                                                    |               |                                                    |               | +[ 3192.35, 10000]=> P-22 + Ji-103                 |decay, nuclear |
+| Ns-57⁺ +  Cj-68⁺ -> 125-66-Ys   Ys-125ª(0.136)|                                                    |               |                                                    |               | +[ 3033.19,  5000]=> P-22 + Ji-103                 |decay, nuclear |
+| Xj-17⁺ + Ha-108⁺ -> 125-67-na   <<125-67-na>> |                                                    |               |                                                    |               | +[ 1635.40,  7000]=> Ys-125                        |decay, nuclear |
+| Ro-22⁺ + Ji-103⁺ -> 125-67-na   <<125-67-na>> |                                                    |               |                                                    |               | +[ 1858.14, 13000]=> Ys-125                        |decay, nuclear |
+| Cl-25⁺ + Ek-100⁺ -> 125-67-na   <<125-67-na>> |                                                    |               |                                                    |               | +[ 1985.39, 20000]=> Ys-125                        |decay, nuclear |
+| Yu-27⁺ +  Vt-98⁺ -> 125-67-na   <<125-67-na>> |                                                    |               |                                                    |               | +[ 2333.28, 15000]=> Ys-125                        |decay, nuclear |
+
+2025-06-15 Jun.Sun 23:54:37 New discovery Da-110 so 669? isotopes in Bohr
+
+ OTOMRO 312409: N-96⁻   + Vi-14⁻ + 10000-> Ok-110⁻ => Da-110 + 7944.592306826708409062 using 2055.41 nuclear+decay
+
+[ ] add to files
+
+
+2025-06-15 Jun.Sun 20:59:53
+
+::FILE:: checkingsomething-stab-chart.txt
+::FILE:: checkingsomething-log-analysis.txt
+::FILE:: checkingsomething-summation-chart.txt
+::FILE:: checkingsomething-themath.txt
+
+Okay here's soemthing I was seeking. 
+
+We had a reaction in the logs Sr-1∙ + Go-117ª => Go-118
+That looks like beta+ decay, dropping a proton.
+So I can now mark the intermediate otom that Sr-1 + Go-117 sum to which is X-118, as beta+ and unstable, even though we don't have that isotope discovered yet.
+
+
+[ ] what does it mean that these happen:
+ Sr-3 + Sr-3 -> Ei-6 => Sr₂()
+ Sr-3 + Ei-5 -> As-8 => EiSr()
+
+Does it mean those intermediates are impossible?
+
+
+
+
+2025-06-14 Jun.Sat 16:48:30 
+IN file all_isotopes_stability_chart_universe_Bohr-LOOKING_FOR_UNDISCOVERED_ISOTOPES-2.txt 
+I am guestimating the decay type and stability values of all undiscovered isotopes so I can do simple math on combining 2 otoms and see where their summation lands.
+Then apply decay rules and see what is made
+Also I can corroborate decay by searching for each 2 input reaction in the logs and seeing where it landed
+
+/|   /\v|.\wllveykR"��aBBB
+/|   /\v|.\wllvt|��aykR"��aF|��all
+\%>9c\%<1063c|   
+/|   /\v|.\wllvt|��aykR"��aF|��all0gg
+
+For now, using these symbols to name the undiscovered otom elements:
+	     64 proton ΞΞ-123 <--- undiscovered
+ exists--->  65 proton Eh-123
+	     66 proton Ys-123 <--- undiscovered
+	     67 proton ΔΔ-123 <--- undiscovered
+	     68 proton ΘΘ-123 <--- undiscovered
+	     69 proton ΨΨ-123 <--- undiscovered
+
+
+In the file "checkingsomething" i have a table of every isotope on the x and y axis, and all the possible unique combinations calculated using the protonlookup[] math approach. 
+%s/\%9v\s\+/\=printf("%-7s (%5.3f)", "Sr-" . (line(".") - 1), eval(1.000 - (0.001 * (line(".") - (3+2)))))/
+
+/|  llmmkveyvt(��aF-��ah"nyf-��alvt(��ageh"myl"dylf(��av%"tyF|��ajll:%s/\v\s\+/\=printf("%s%s(%5.3f)", "n-" . (line(".") - 1) . "d", repeat(" ",5 - strlen("n-m")) , eval(t - (0.001 * (line(".") - (=line("."))))))/`m
+/|      llkt(��aF-��ah"nyF|��af-��alf(��agEh"myf(��agE"dylF|��af(��av%"tyF|��ajkjll:%s/\v\s\+/\=printf("%s%s(%5.3f)", "n-" . (line(".") - 1) . "d", repeat(" ",5 - strlen("n-m")) , eval(t - (0.001 * (line(".") - (=line("."))))))/`m
+
+1: N \ P |   alkaline  1 | metal       2 | metal       3 |
+2:     0 |   -(2,12)     |   -(2,43)     |   -(2,59)     | => 1  => 2  => 3   | => line(".") - ( 15 / (col(".") - 7))
+3:     1 |   -(3,12)     |   -(3,43)     |   -(3,59)     | => 2  => 3  => 4
+4:     2 |   -(4,12)     |   -(4,43)     |   -(4,59)     | => 3  => 4  => 5
+5:     3 |   -(5,12)     |   -(5,43)     |   -(5,59)     |
+6:     4 |   -(6,12)     |   -(6,43)     |   -(6,59)     |
+7:     5 |   -(7,12)     |   -(7,43)     |   -(7,59)     |
+
+
+
+useful regex ^|........|\(...................\)+ .........=>...\(..............................\)+ ...........|............|\(..............................\)|.*\n|........|\1+ .........=>...\2+ ...........|............|\3|.*\n|........|\1+ .........=>...\2+ ...........|............|\3|.*\n
+
+
 2025-06-13 Jun.Fri 22:19:16 zeroshape discovered the 667th isotope of Bohr
 
 OTOMRO 305499: Ro-22 + L-47 + 3000 => Cj-69  + 1,558.709913128080870592 using 1441.29
@@ -12,11 +174,11 @@ Currently missing these bohr isotopes
  2-chain:
   [r] U-84
      [r] |  Xj-17⁺ +  Gy-67ª   +[  1637.82 -   5000] => N-84                | nuclear                      | OTOMRO  170487 | used 1637.22 [ ] update recipe chains
-     [r] |  Ro-22⁺ +   N-84⁺   +[  2125.26 -   4000] => P-22 + U-84         | decay, nuclear               | OTOMRO  270740*|
+     [r] |  Ro-22⁺ +   N-84⁺   +[  2125.26 -   4000] => P-22 + U-84         | decay, nuclear               | OTOMRO  270740*| used 2031.56 [ ] update recipe chains
   [r] Dd-101
      [r] |  Wy-50∙ +  Kk-71ª   +[  4428.93*-  20000] => P-22 + Dd-99        | decay, nuclear               | OTOMRO  273034 |
      [r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
-     [r] |   P-24⁻ +  Dd-99ª   +[  2487.78*-   4000] => P-22 + Dd-101       | decay, nuclear               | OTOMRO  240963 |
+     [r] |   P-24⁻ +  Dd-99ª   +[  2487.78*-   4000] => P-22 + Dd-101       | decay, nuclear               | OTOMRO  240963 | used 2484.18 [ ] update recipe chains
 
 3-chain:
 [r] |  Ro-22⁺ + Ji-107ª   +[  2211.76 -   5000] => P-22 + Aw-107       | used 2072.36 [ ] update recipe chains
@@ -2175,7 +2337,9 @@ What if they combine this new one with something and it makes an even bigger thi
 17  9 Xj + 99 54 Ek = 116 63  X
 17  8  T + 99 53 Vt = 116 61 Jb
 
-  Why did that split into those? Why did it drop 2 protons, 1 from each output? Its like it combined to X-116, then did double beta+ decay to Go-116 then Jb-116, then split very unusually to T-17 + Vt-99
+[ ] DOUBLE DECAY?  Why did that split into those? Why did it drop 2 protons, 1 from each output? Its like it combined to X-116, then did double beta+ decay to Go-116 then Jb-116, then split very unusually to T-17 + Vt-99
+
+UPDATE: Also I see that Ro-22⁺ + Aw-104⁺ +[350.0-9000]-> 126-68-na   <<126-68-na>>  => P-22 + Ji-104 I would have expected it to alpha decay to P-22 + Kn-104, which is what Ys-126 would alpha decay to. Its like this also did a double decay
 
 try:
 [ ]|  Ro-22 +     Z-97 +15000 => |⬆ 119  64 .. |= 119  63  X |⬇ 119  62 Go
@@ -3863,6 +4027,40 @@ I think I shall do it by increasing number of recipe chains
  Ys-125ª | (0.136) | 125 66 Ys - 22 11  P = 103  55 Ji (Ji-103)
 
 
+125-67-na| (0.500) | 125 67 na - 22 11  P = 103  56 Aw (Aw-103)
+126-67-na| (0.500) | 126 67 na - 22 11  P = 104  56 Aw (Aw-104)
+127-67-na| (0.500) | 127 67 na - 22 11  P = 105  56 Aw (Aw-105)
+128-67-na| (0.500) | 128 67 na - 22 11  P = 106  56 Aw (Aw-106)
+129-67-na| (0.500) | 129 67 na - 22 11  P = 107  56 Aw (Aw-107)
+130-67-na| (0.500) | 130 67 na - 22 11  P = 108  56 Aw (Aw-108)
+131-67-na| (0.500) | 131 67 na - 22 11  P = 109  56 Aw (Aw-109)
+132-67-na| (0.500) | 132 67 na - 22 11  P = 110  56 Aw (Aw-110)
+133-67-na| (0.500) | 133 67 na - 22 11  P = 111  56 Aw (Aw-111)
+134-67-na| (0.500) | 134 67 na - 22 11  P = 112  56 Aw (Aw-112)
+135-67-na| (0.500) | 135 67 na - 22 11  P = 113  56 Aw (Aw-113)
+136-67-na| (0.500) | 136 67 na - 22 11  P = 114  56 Aw (Aw-114)
+137-67-na| (0.500) | 137 67 na - 22 11  P = 115  56 Aw (Aw-115)
+138-67-na| (0.500) | 138 67 na - 22 11  P = 116  56 Aw (Aw-116)
+
+126-68-na| (0.500) | 126 68 na - 22 11  P = 104  57 Kn (Kn-104) <--thats what I would think but we actually see it make P-22 + Ji-104 which is what Ys-126 would alpha decay to. Its like this also did a double decay
+127-68-na| (0.500) | 127 68 na - 22 11  P = 105  57 Kn (Kn-105)
+128-68-na| (0.500) | 128 68 na - 22 11  P = 106  57 Kn (Kn-106)
+
+126-68-na   <<126-68-na>> | +[  350.00,  9000]=> P-22 + Ji-104                 |decay          |                                                    |               |                                                    |               |
+128-68-na   <<128-68-na>> | +[ 2073.51,  5000]=> P-22 + Kn-106                 |decay, nuclear |
+129-68-na   <<129-68-na>> | +[ 1974.95,  5000]=> P-22 + Kn-107                 |decay, nuclear |
+130-68-na   <<130-68-na>> | +[ 2079.19,  5000]=> P-22 + Kn-108                 |decay, nuclear |
+131-68-na   <<131-68-na>> | +[ 1689.82, 10000]=> P-22 + Kn-109                 |decay, nuclear |
+132-68-na   <<132-68-na>> | +[ 2264.38,  5000]=> P-22 + Kn-110                 |decay, nuclear |
+133-68-na   <<133-68-na>> | +[ 2190.93,  4000]=> P-22 + Kn-111                 |decay, nuclear |
+134-68-na   <<134-68-na>> | +[ 2199.50,  5000]=> P-22 + Kn-112                 |decay, nuclear |
+135-68-na   <<135-68-na>> | +[ 2400.63,  5000]=> P-22 + Kn-113                 |decay, nuclear |
+136-68-na   <<136-68-na>> | +[ 2580.96,  5000]=> P-22 + Kn-114                 |decay, nuclear |
+137-68-na   <<137-68-na>> | +[ 3146.66,  4100]=> P-22 + Kn-115                 |decay, nuclear |
+138-68-na   <<138-68-na>> | +[ 2599.66,  5000]=> P-22 + Kn-116                 |decay, nuclear |
+140-68-na   <<140-68-na>> | +[  500.00, 10000]=> P-22 + Ro-24 + Nm-94          |decay          |                                                    |               |                                                    |               |
+142-68-na   <<142-68-na>> | +[  500.00, 10000]=> P-22 + Nd-30 + N-90           |decay          |                                                    |               |                                                    |               |
+146-68-na   <<146-68-na>> | +[ 1000.00, 20000]=> P-22 + K-34 + N-90            |decay          |                                                    |               |                                                    |               |
 
 2025-05-25 May.Sun 15:40:21 [ ] syntax highlighting needs to be added for isotope longnames when highlighting is for chains.
 
