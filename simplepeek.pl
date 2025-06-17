@@ -115,6 +115,8 @@ $line =~ s/0x0000000000000000000000000000000000000000000000000000000000000040//;
 
 }
 
+die "ERROR: Empty or missing input" unless scalar(keys %db)>0;
+
 print STDERR "\nDUPLICATE INPUT LINES SKIPPED: $skip_duplicate_input\n";
 
 

@@ -150,6 +150,17 @@ hi otom_noble        ctermbg=lightgreen     ctermfg=black
 hi otom_metal        ctermbg=lightgray      ctermfg=black
 
 
+" Make these symbols stand out
+syn match LikelyImpossibleIsotope /![A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/me=s+1
+syn match LikelyPossibleIsotope   /?[A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/me=s+1
+syn match ObservedIntermediate    /\*[A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/me=s+1
+
+hi        LikelyImpossibleIsotope ctermbg=NONE ctermfg=red    cterm=bold
+hi        LikelyPossibleIsotope   ctermbg=NONE ctermfg=blue   cterm=bold
+hi        ObservedIntermediate    ctermbg=NONE ctermfg=214    cterm=bold
+
+" color 214 = orange
+
 
 
 " run perl script convert_token_id_to_hex.pl for this data:

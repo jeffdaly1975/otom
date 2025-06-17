@@ -1,3 +1,57 @@
+2025-06-17 Jun.Tue 13:57:02 NICE! After acquiring more logs at smaller resolution I got most the missing OTOMROs. Below are the the ones still missing and I suspect they are just recently made by people and haven't analysed them yet.
+
+MISSING OTOMRO: 389 reactions
+  305473-305486
+  305489-305752
+  305754-305864
+
+2025-06-17 Jun.Tue 13:42:33
+I'm working on the checkingsomething* files
+Going through decay.BOHR.otom from bottom up, making each section (per otom) agree with the checkingsomething-stab-chart.txt file where I've marked each potential isotope with a '*' if we saw evidence it exists because a reaction summed to that isotope, and then decayed; marked with a "!" if we saw reactions attempt to hit this but miserably failed for not enough energy or impossible, or made a molecule; marked with a "?" if it might exist but no reaction attempted it.
+
+I added syntax highlighting to indicate those 3 states.
+
+2025-06-17 Jun.Tue 12:12:28 Just learned that in Vim gt and gT go to the next tab and previous tab respectively. Love that but why didn't i know until today?
+
+::VIM:: 
+ gt  - go to next tab
+ gT  - go to prev tab
+
+2025-06-17 Jun.Tue 10:36:02 Running parser to see exactly which OTOMROs are presently not in my logs. Then I'll try to find which day they were and grab those extra logs
+
+Need to get fresh copies of logs for these days making sure I get all:
+[c] 2025-05-26
+     [c] 1200 AM-1200 PM = 6837 lines
+     [c] 1200 PM-1200 AM = 3285 lines
+[c] 2025-05-27
+[c] 2025-05-30
+[c] 2025-06-08
+[ ] 2025-06-13
+[ ] 2025-06-14
+[ ] 2025-06-15
+[ ] 2025-06-16
+
+Hmm. I downloaded what should be all logs for 5/26
+ 2025-05-26 1200 AM - 2025-05-26 1200 PM = 6837 lines
+ 2025-05-26 1200 PM - 2025-05-27 1200 AM = 3285 lines
+
+Running "sort -u <logs> |wc -l " there's 10121 unique lines in those
+
+But the same test on my existing logs for 5/26 says 10457.
+    logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2025-05-26_2025-05-26-1.csv  = 7875 lines
+    logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2025-05-26_2025-05-26-2.csv  = 2582 lines
+
+[c] What OTOMROs are in each of these files?
+
+My hypothesis is that previously downloading logs by selecting a day to day range would download for that day based off UTC Universal Coordinated Time, but that selecting the hour resolution is now using local time? That would explain different numbers of logs for the supposed same exact range of 00:00 5/26 to 00:00 5/27
+
+
+
+2025-06-16 Jun.Mon 23:44:25 It looks like shapescan now lets you export at the precision of minutes and hours!
+
+    /Users/jeffdaly2015/Downloads/logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_2025-06-15T00_00_2025-06-15T23_59.csv
+[c] Download my missing logs
+
 2025-06-16 Jun.Mon 19:57:34 When my custom highlight uses white foreground on dark background, the default highlighting for Search does term=reverse  which makes the white text invisible. This fixes it
 
 ::VIM::
@@ -1781,7 +1835,7 @@ token URL:        https://shapescan.xyz/token/0x72b89472d81BADAf167FB21c128fAA5e
 A total of 355 chains dropped!! I feel good about that improvement!
 
 2025-06-08 Jun.Sun 22:44:03 SHIT i think I missed more logs today. It was busier on OTOM than I expected. I snapshotted once this morning but not again until just a bit ago and I think I missed a bunch.
-[ ] find out
+[c] find out
 
 2025-06-08 Jun.Sun 22:16:54
 [ ] get my vim to do the deeper diffs like my old work PCs used to. This one sucks. It has difficulty diffing my chains.bohr.otom file with the output of my chain_totaller.pl script. It doesn't highlight all the different lines. Its so weird
@@ -2428,7 +2482,7 @@ It essentially double decayed from Ys-121 to Eh-121 to ??-121 then alpha decayed
   OTOMRO 242152 .. 242153    (1 reactions)
   OTOMRO 242154 .. 242155    (1 reactions)
 
-[ ] RESOLVE THIS!
+[c] RESOLVE THIS!
 
 
 2025-06-02 Jun.Mon 09:08:16 QMA discovered Cv-115 so now 664 isotopes in Bohr
@@ -2643,7 +2697,7 @@ try:
 [c] |   242303*|bohr    |   P-24⁻ + Ok-102⁻                               +     5000 =>   P-22 + Ok-104                                                                    +    2332.65 |    2667.35 | decay, nuclear               | 0x3ba3245300d0a4f0deb84073572a97ff09659f83 | 0xf6fe26b58733d938ce7a1d08504eca68713a92a8b94ee189c511a1f67d072103 | 0xdb95e7425b01384aebc7f2c4bb225e7506ee82f1bd9df2e1e72f65fe7e650f3f |
 
 2025-05-30 May.Fri 10:26:51 Dammit the Reactor logs are over 10k lines already and my snapshot at 00:16 doesn't have any lines in common with the newest export so that means I missed some data! FUCK
-[ ] Missed Reactor logs today
+[c] Missed Reactor logs today
 
 Examined the parser output in alpha and bohr Reactor logs.
 Keeping in mind I had to replicate a bunch of transactions' data around OTOMRO 7151 to 12592 since they weren't even in the Reactor logs on shapescan, here is the data on OTOMROs I have and don't have logs for:
@@ -2656,7 +2710,7 @@ Missing:
  OTOMRO 220293 - 220325  (32 txs)
  OTOMRO 241559 - 242154 (595 txs)
 
-[ ] ask in discord if anyone might have snapshots of the missing logs
+[x] ask in discord if anyone might have snapshots of the missing logs
 
 2025-05-29 May.Thu 22:06:03 New discovery Wy-56. Now 659 isotopes in BOHR
 
