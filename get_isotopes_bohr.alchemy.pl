@@ -701,6 +701,7 @@ my %idhash=(
 666 => "Pb-53",
 667 => "Cj-69",
 668 => "Cj-70",
+669 => "Da-110",
 );
 
 
@@ -1373,68 +1374,8 @@ my %hexhash=(
  "Pb-53" => "0f0671d283240dffe9ca0d95541188a6cbc2e2ead7ce8d9c8b83e10560a1c550",
  "Cj-69" => "632c5bddcdd0cd79fd12fccff03b8c8ea5915ade9b92d5f33afaf11d157c9070",
  "Cj-70" => "3b94d9fa4058c50dd479307c344735bbf0167487e623e1027f80959be12ef8fa",
+ "Da-110"=> "86cef5d99ba1e66901fb082564b52625ee3e1d41f3347ebaf314f224902680fd",
 );
-
-# [ ] I could update this for all possible isotopes and print out the NRG total of your wallet isotopes
-# this is how much energy you get for burning each mineable isotope
-
-my %burn_NRG=(
- "Sr-1"    => 1.0,
- "Sr-2"    => 2.29739670999407001,
- "Sr-3"    => 3.737192818846551975,
- "Ei-4"    => 5.278031643091577029,
- "Ei-5"    => 6.898648307306074151,
- "As-5"    => 6.898648307306074151,
- "As-6"    => 8.585814486631532997,
- "As-7"    => 10.330412131161864483,
- "Dz-7"    => 10.330412131161864483,
- "Dz-8"    => 12.125732532083184647,
- "Dz-9"    => 13.966610165238237049,
- "Gj-11"   => 17.769336928223958001,
- "Vi-10"   => 15.848931924611134823,
- "Vi-11"   => 17.769336928223958001,
- "Ct-13"   => 21.713609480352535126,
- "Ct-15"   => 25.781578913812181624,
- "Ct-17"   => 29.959785913149389227,
- "T-15"    => 25.781578913812181624,
- "T-16"    => 27.857618025475972418,
- "T-17"    => 29.959785913149389227,
- "Xj-17"   => 29.959785913149389227,
- "Xj-18"   => 32.086844243388060378,
- "Eb-19"   => 34.237679419025703798,
- "Eb-20"   => 36.411284060521605247,
- "Eb-21"   => 38.606742032303424739,
- "Eb-22"   => 40.823216197677855316,
- "P-21"    => 38.606742032303424739,
- "P-23"    => 43.059938302761720542,
- "Ro-22"   => 40.823216197677855316,
- "Ro-23"   => 43.059938302761720542,
- "Ro-24"   => 45.316200542155295072,
- "Cl-25"   => 47.591348467896962197,
- "Cl-26"   => 49.884774982257962417,
- "Cl-27"   => 52.195915213157594238,
- "Yu-27"   => 52.195915213157594238,
- "Yu-29"   => 56.869262666181892348,
- "Nd-30"   => 59.230514575044595251,
- "K-31"    => 61.607563394598196647,
- "K-34"    => 68.829513588996091335,
- "Mt-32"   => 63.999999999999999967,
- "Mt-34"   => 68.829513588996091335,
- "Mt-35"   => 71.265880162413930491,
- "Uq-47"   => 101.512010552929909196,
- "Pb-48"   => 104.109290034979066829,
- "Wy-50"   => 109.33620739432780549,
- "L-51"    => 111.965496768801985126,
- "Gy-67"   => 155.342311519529377334,
- "Kk-70"   => 163.725998619961423982,
- "Kk-71"   => 166.536724463855213734,
- "Yv-72"   => 169.35537924355299441,
- "S-102"   => 257.229163909497357575,
-);
-
-#foreach my $k ( sort { $idhash{$a} <=> $idhash{$b} } keys %idhash ){
-#  print "$k => $idhash{$k} => $hexhash{$k}\n";
-#}
 
 # query the blockchain via alchemy 
 my @output = qx{./isotopes_worker.bohr.sh $wallet};
@@ -1452,15 +1393,10 @@ my @output = qx{./isotopes_worker.bohr.sh $wallet};
      printf STDERR "child exited with value %d\n", $? >> 8;
  }
 
-
 # OUTPUT:
 
 ### [{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000000000015"}
 ### ,{"jsonrpc":"2.0","id":2,"result":"0x000000000000000000000000000000000000000000000000000000000000001c"}
-
-# to save up the hexcodes
-#my @accumulator = ();
-#my $total_burn_NRG = 0;
 
 foreach my $line ( @output ){
    if ($line =~ /"id":(\d+),"result":"0x0{56}([0-9a-f]+)"/ ){
@@ -1469,35 +1405,7 @@ foreach my $line ( @output ){
       die "invalid id $this_id" unless exists $idhash{$this_id};
 
      printf ( "%-6.6s %8d\n", $idhash{$this_id}, $count );
-
-#     my $burn_count = $count - $keep_at_least;
-
-#     if ($burn_count >= 1){
-#       push @accumulator, $hexhash{$idhash{$this_id}}  for 1 .. $burn_count;
-#
-#       $total_burn_NRG += ($burn_NRG{$idhash{$this_id}} * $burn_count);
-#      }
    }
 }
 
-
-#print "Burning " . scalar(@accumulator) ." otoms for $total_burn_NRG NRG\n";
-
-##  The 012c at the end indicates 300 otoms to annihilate. 
-#my $fn_header = "0xc0763eab0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000012c";
-#my $fn_call = "";
-
-#while (scalar(@accumulator) > 0){
-#
-#  if (scalar(@accumulator) >= 300){
-#     $fn_call = $fn_header . join ( '', splice(@accumulator,0,300));
-#  }else{
-#     $fn_call = $fn_header;
-#     my $count_left = sprintf "%08x", scalar(@accumulator);
-#     $fn_call =~ s/0000012c$/$count_left/;
-#     $fn_call .= join ('', @accumulator);
-#     @accumulator=();
-#  }
-#
-#  print "$fn_call\n";
 
