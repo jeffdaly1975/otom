@@ -1,3 +1,51 @@
+156309 1 and 2 input reactions
+
+There are several incidents where the same inputs and NRG produce a different molecule because they combine differently like:
+
+|alpha   |    W-4∙ +   Af-7ª                               +       20 =>   Cq-6 + JuW(Ju-1>W-4)                                                             +      16.00 |       4.00 | chemical, decay              |
+|alpha   |    W-4∙ +   Af-7ª                               +       20 =>   Cq-6 + WJu(W-4>Ju-1)                                                             +      16.00 |       4.00 | chemical, decay              |
+
+|alpha   |   Ju-1∙ +    W-4∙                               +       10 =>   JuW(Ju-1>W-4)                                                                    +       6.50 |       3.50 | chemical                     |
+|alpha   |   Ju-1∙ +    W-4∙                               +       10 =>   WJu(W-4>Ju-1)                                                                    +       6.50 |       3.50 | chemical                     |
+
+|alpha   |   S-25⁺ +  Xc-30∙                               +       50 =>   SXc(S-25>Xc-30)                                                                  +      24.55 |      25.45 | chemical                     |
+|alpha   |   S-25⁺ +  Xc-30∙                               +       50 =>   XcS(Xc-30>S-25)                                                                  +      24.55 |      25.45 | chemical                     |
+
+|alpha   |  Pm-19∙ +   M-20∙                               +       60 =>   MPm(M-20>Pm-19)                                                                  +      38.86 |      21.14 | chemical                     |
+|alpha   |  Pm-19∙ +   M-20∙                               +       60 =>   PmM(Pm-19>M-20)                                                                  +      38.86 |      21.14 | chemical                     |
+
+|bohr    |  Ro-24ª +  Nd-30ª                               +       30 =>   NdRo(Nd-30>Ro-24)                                                                +       1.61 |      28.39 | chemical                     |
+|bohr    |  Ro-24ª +  Nd-30ª                               +       30 =>   RoNd(Ro-24>Nd-30)                                                                +       1.61 |      28.39 | chemical                     |
+
+Besides those, there are 10 in alpha where one of them was an OTOMRO less than 3500 which is when the algorithm was changed to make nuclear reactions easier.
+There is 1 in alpha where it actually has a different output above OTOMRO 3500:
+
+|alpha   |   M-22∙ +   M-22∙                               +     2400 =>   M₂(M-22,M-22>)                                                                   +    2237.31 |     162.69 | metallic                     | <---281016 
+|alpha   |   M-22∙ +   M-22∙                               +     2400 => ⬆ C-44                                                                             +       0.64 |    2399.36 | nuclear                      | <---189964 
+
+
+
+
+
+2025-06-18 Jun.Wed 12:49:58 Thats interesting. I took all the Bohr reactions up to 00:00 today. Split into 2 files of 1-2 input reactions and 3-5 input reactions, ignoring those that haven't been analyzed yet.
+Whats interesting is I noticed none of the 3-4-5 input reactions have any nuclear reactions
+
+Here's the breakdown on input numbers: 
+  Bohr 1 input reactions:   3539
+  Bohr 2 input reactions:  44571
+  Bohr 3 input reactions:  10843
+  Bohr 4 input reactions:   3511
+  Bohr 5 input reactions:  27320
+		   total:  89784
+
+  Alpha 1 input reactions:  10188
+  Alpha 2 input reactions: 111739
+  Alpha 3 input reactions:  48985
+  Alpha 4 input reactions:   8374
+  Alpha 5 input reactions:  46837
+		    total: 226123
+
+
 2025-06-17 Jun.Tue 16:43:40 [.] These may be shorter/cheaper Bohr Chains:
 [c] |bohr    |   P-23∙ +   U-96⁻ +     5000 =>   P-22 + U-97      +    1854.77 |    3145.23 | decay, nuclear               |   312383*|
 [c] |bohr    |   P-23∙ + Aw-107ª +     5000 =>   P-22 + Aw-108    +    2030.88 |    2969.12 | decay, nuclear               |   285687*|
