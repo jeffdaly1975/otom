@@ -17818,7 +17818,7 @@ syn match chain5  /\<S-94\>/
 syn match chain5  /\<Se-103\>/
 syn match chain5  /\<Se-104\>/
 syn match chain5  /\<Se-84\>/
-syn match chain5  /\<U-97\>/
+syn match chain4  /\<U-97\>/
 syn match chain5  /\<Uq-41\>/
 syn match chain5  /\<Uq-49\>/
 syn match chain5  /\<Uq-50\>/
@@ -17874,7 +17874,7 @@ syn match chain6  /\<Pb-43\>/
 syn match chain6  /\<Pg-51\>/
 syn match chain6  /\<Qe-61\>/
 syn match chain6  /\<T-19\>/
-syn match chain6  /\<U-98\>/
+syn match chain5  /\<U-98\>/
 syn match chain6  /\<U-99\>/
 syn match chain6  /\<Uq-52\>/
 syn match chain6  /\<V-39\>/
@@ -18454,7 +18454,7 @@ syn match chain5_4  /\zs\s\ze\<Se-103\>/
 syn match chain5_4  /\zs\s\ze\<Se-104\>/
 syn match chain5_4  /\zs\s\ze\<Se-84\>/
 syn match chain5_4  /\zs\s\ze\<U-83\>/
-syn match chain5_4  /\zs\s\ze\<U-97\>/
+syn match chain4_3  /\zs\s\ze\<U-97\>/
 syn match chain5_4  /\zs\s\ze\<Uq-41\>/
 syn match chain5_4  /\zs\s\ze\<Uq-49\>/
 syn match chain5_4  /\zs\s\ze\<Uq-50\>/
@@ -18501,7 +18501,7 @@ syn match chain6_5  /\zs\s\ze\<Pb-43\>/
 syn match chain6_5  /\zs\s\ze\<Pg-51\>/
 syn match chain6_5  /\zs\s\ze\<Qe-61\>/
 syn match chain6_5  /\zs\s\ze\<T-19\>/
-syn match chain6_5  /\zs\s\ze\<U-98\>/
+syn match chain5_4  /\zs\s\ze\<U-98\>/
 syn match chain6_5  /\zs\s\ze\<U-99\>/
 syn match chain6_5  /\zs\s\ze\<Uq-51\>/
 syn match chain6_5  /\zs\s\ze\<Uq-52\>/

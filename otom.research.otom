@@ -1,3 +1,61 @@
+2025-06-17 Jun.Tue 16:43:40 [.] These may be shorter/cheaper Bohr Chains:
+[c] |bohr    |   P-23∙ +   U-96⁻ +     5000 =>   P-22 + U-97      +    1854.77 |    3145.23 | decay, nuclear               |   312383*|
+[ ] |bohr    |   P-23∙ +   Z-96⁺ +     5000 =>   P-22 + Z-97      +    2111.22 |    2888.78 | decay, nuclear               |   285580*|
+[ ] |bohr    |   P-23∙ +  Z-107ª +     5000 =>   P-22 + Z-108     +    1601.50 |    3398.50 | decay, nuclear               |   273649*|
+[ ] |bohr    |   P-23∙ +  Z-109ª +     5000 =>   P-22 + Z-110     +    1581.51 |    3418.49 | decay, nuclear               |   273702*|
+[ ] |bohr    |   P-23∙ + Aw-107ª +     5000 =>   P-22 + Aw-108    +    2030.88 |    2969.12 | decay, nuclear               |   285687*|
+[ ] |bohr    |   P-24⁻ +   N-89⁺ +     4000 =>   P-22 + N-91      +    1526.12 |    2473.88 | decay, nuclear               |   270856*|
+[ ] |bohr    |   P-24⁻ +   N-91∙ +     4000 =>   P-22 + N-93      +     763.77 |    3236.23 | decay, nuclear               |   270855*|
+[ ] |bohr    |   P-24⁻ +   N-93⁻ +     4000 =>   P-22 + N-95      +    1543.04 |    2456.96 | decay, nuclear               |   270858*|
+[ ] |bohr    |   P-24⁻ +  Lx-87∙ +     4000 =>   P-22 + Lx-89     +     786.04 |    3213.96 | decay, nuclear               |   271104*|
+[ ] |bohr    |   P-24⁻ + Da-101ª +     5000 =>   P-22 + Da-103    +    2285.64 |    2714.36 | decay, nuclear               |   274183*|
+[ ] |bohr    |   Sr-2∙ +  Lx-88∙ +     5000 =>   N-90             +    3232.45 |    1767.55 | nuclear                      |   307847*|
+[ ] |bohr    |   Sr-3∙ +  Lx-88∙ +     5000 =>   N-91             +    3132.90 |    1867.10 | nuclear                      |   302884*|
+[ ] |bohr    |   Sr-3∙ +  Lx-90∙ +     5000 => ⬆ U-93             +    3149.44 |    1850.56 | decay, nuclear               |   300538*|
+[ ] |bohr    |   Sr-3∙ +  Lx-96⁻ +    20000 => ⬆ U-99             +   17842.78 |    2157.22 | decay, nuclear               |   300649*|
+[ ] |bohr    |   Sr-3∙ +  Nm-99ª +     5000 =>   P-22 + Cj-80     +    3473.17 |    1526.83 | decay, nuclear               |   300519*|
+[ ] |bohr    |   Sr-3∙ +  Se-96∙ +     5000 =>   Nm-99            +    3069.46 |    1930.54 | nuclear                      |   300518*|
+[ ] |bohr    |   Sr-3∙ + Ek-102⁺ +     5000 => ⬇ Ek-105           +    3659.45 |    1340.55 | decay, nuclear               |   305881*|
+[ ] |bohr    |  Eb-19⁺ +  Se-90∙ +     5000 =>   P-22 + Vl-87     +    2215.78 |    2784.22 | decay, nuclear               |   272158*|
+[ ] |bohr    |  Eb-19⁺ + Ek-102⁺ +     5000 =>   P-22 + Vt-99     +    3002.29 |    1997.71 | decay, nuclear               |   280549*|
+[ ] |bohr    |  Eb-20∙ +  Lx-93⁻ +     5000 =>   P-22 + W-91      +    2036.94 |    2963.06 | decay, nuclear               |   306151*|
+[ ] |bohr    |  Eb-21∙ +  Se-99∙ +     5000 =>   P-22 + Vl-98     +     979.11 |    4020.89 | decay, nuclear               |   280607*|
+[ ] |bohr    |  Eb-22∙ +   N-91∙ +     5000 =>   P-22 + Lx-91     +    1014.94 |    3985.06 | decay, nuclear               |   307860*|
+[ ] |bohr    |  Eb-22∙ +   N-96⁻ +     4000 =>   P-22 + Lx-96     +    1102.83 |    2897.17 | decay, nuclear               |   276268*|
+[ ] |bohr    |  Eb-22∙ +   U-94⁻ +     5000 =>   P-22 + N-94      +    1961.03 |    3038.97 | decay, nuclear               |   314283*|
+[ ] |bohr    |  Eb-22∙ +   U-96⁻ +     4000 =>   P-22 + N-96      +    1046.13 |    2953.87 | decay, nuclear               |   276259*|
+[ ] |bohr    |  Eb-22∙ +  Nm-97ª +     4500 =>   P-22 + Se-97     +    1367.24 |    3132.76 | decay, nuclear               |   275648*|
+[ ] |bohr    |  Eb-22∙ +  Nm-99ª +     4500 =>   P-22 + Se-99     +    1355.99 |    3144.01 | decay, nuclear               |   275797*|
+[ ] |bohr    |  Eb-22∙ +  Se-96∙ +     7000 =>   P-22 + Vl-96     +    2808.07 |    4191.93 | decay, nuclear               |   276265*|
+[ ] |bohr    |  Eb-22∙ +  Se-99∙ +     4500 =>   P-22 + Vl-99     +     471.40 |    4028.60 | decay, nuclear               |   275834*|
+[ ] |bohr    |  Eb-22∙ +  Vl-92⁺ +     5000 =>   P-22 + U-92      +    1904.00 |    3096.00 | decay, nuclear               |   312358*|
+[ ] |bohr    |  Eb-22∙ +  Vl-94⁻ +     5000 =>   P-22 + U-94      +    1882.86 |    3117.14 | decay, nuclear               |   312373*|
+[ ] |bohr    |  Eb-22∙ +  Vl-95⁻ +     5000 =>   P-22 + U-95      +    1888.25 |    3111.75 | decay, nuclear               |   291267*|
+[ ] |bohr    |  Eb-22∙ +  Vl-96⁻ +     4000 =>   P-22 + U-96      +     938.76 |    3061.24 | decay, nuclear               |   276263*|
+[ ] |bohr    |  Eb-22∙ +  Vl-99⁻ +     5000 => ⬆ Ji-121           +    1950.92 |    3049.08 | decay, nuclear               |   302894*|
+[ ] |bohr    |  Eb-22∙ +  Z-107ª +     5000 =>   P-22 + S-107     +    1755.22 |    3244.78 | decay, nuclear               |   284374*|
+[ ] |bohr    |  Eb-22∙ + Da-101ª +     5000 =>   P-22 + Ok-101    +    1718.43 |    3281.57 | decay, nuclear               |   277749*|
+[ ] |bohr    |  Eb-22∙ + Dd-101ª +     4500 =>   P-22 + Nm-101    +    1359.56 |    3140.44 | decay, nuclear               |   277760*|
+[ ] |bohr    |  Eb-22∙ + Nm-104⁻ +     5000 =>   P-22 + Se-104    +    1905.04 |    3094.96 | decay, nuclear               |   282304*|
+[ ] |bohr    |  Eb-22∙ + Ok-101ª +     5000 =>   P-22 + Dd-101    +    1792.17 |    3207.83 | decay, nuclear               |   277752*|
+[ ] |bohr    |  Eb-22∙ + Se-100∙ +     5000 =>   P-22 + Vl-100    +     993.90 |    4006.10 | decay, nuclear               |   270761*|
+[ ] |bohr    |  Eb-22∙ + Se-101∙ +     4500 =>   P-22 + Vl-101    +     557.51 |    3942.49 | decay, nuclear               |   277767*|
+[ ] |bohr    |  Eb-23⁻ + Se-100∙ +     5000 =>   P-22 + Vl-101    +    1918.24 |    3081.76 | decay, nuclear               |   299156*|
+[ ] |bohr    |  Ro-22⁺ +   L-47⁺ +     3000 => ⬇ Cj-69            +    1558.71 |    1441.29 | decay, nuclear               |   305886*|
+[ ] |bohr    |  Ro-22⁺ +   N-84⁺ +     4000 =>   P-22 + U-84      +    1874.74 |    2125.26 | decay, nuclear               |   270740*|
+[ ] |bohr    |  Ro-22⁺ +   N-85⁺ +     5000 =>   P-22 + U-85      +    2796.70 |    2203.30 | decay, nuclear               |   282263*|
+[ ] |bohr    |  Ro-22⁺ +   U-84ª +     4000 =>   P-22 + Vl-84     +    1889.86 |    2110.14 | decay, nuclear               |   272174*|
+[ ] |bohr    |  Ro-22⁺ +   W-80ª +     5000 =>   P-22 + Lx-80     +    2865.10 |    2134.90 | decay, nuclear               |   272242*|
+[ ] |bohr    |  Ro-22⁺ +  Se-87⁺ +     5000 =>   P-22 + Nm-87     +    2847.86 |    2152.14 | decay, nuclear               |   305991*|
+[ ] |bohr    |  Ro-22⁺ +  Vl-84⁺ +     4000 =>   P-22 + Se-84     +    2034.92 |    1965.08 | decay, nuclear               |   272180*|
+[ ] |bohr    |  Ro-22⁺ +  Yv-70ª +     5000 => ⬇ Nm-92            +    3025.00 |    1975.00 | decay, nuclear               |   305893*|
+[ ] |bohr    |  Ro-22⁺ + Aw-107ª +     5000 =>   P-22 + Kn-107    +    2879.12 |    2120.88 | decay, nuclear               |   284185*|
+[ ] |bohr    |  Ro-22⁺ + Da-104ª +     5000 =>   P-22 + S-104     +    2521.46 |    2478.54 | decay, nuclear               |   269321*|
+[ ] |bohr    |  Ro-22⁺ + Ek-102⁺ +     5000 => ⬇ Eh-124           +    2946.55 |    2053.45 | decay, nuclear               |   305877*|
+[ ] |bohr    |  Ro-22⁺ + Ek-105ª +     5000 =>   P-22 + Ji-105    +    2788.99 |    2211.01 | decay, nuclear               |   305882*|
+[ ] |bohr    |  Ro-22⁺ + Ji-107ª +     5000 =>   P-22 + Aw-107    +    2788.24 |    2211.76 | decay, nuclear               |   284173*|
+[ ] |bohr    |  Ro-23ª +   L-47⁺ +     5000 => ⬇ Cj-70            +    3341.52 |    1658.48 | decay, nuclear               |   305889*|
+
 2025-06-17 Jun.Tue 13:57:02 NICE! After acquiring more logs at smaller resolution I got most the missing OTOMROs. Below are the the ones still missing and I suspect they are just recently made by people and haven't analysed them yet.
 
 MISSING OTOMRO: 389 reactions
@@ -10,6 +68,11 @@ I'm working on the checkingsomething* files
 Going through decay.BOHR.otom from bottom up, making each section (per otom) agree with the checkingsomething-stab-chart.txt file where I've marked each potential isotope with a '*' if we saw evidence it exists because a reaction summed to that isotope, and then decayed; marked with a "!" if we saw reactions attempt to hit this but miserably failed for not enough energy or impossible, or made a molecule; marked with a "?" if it might exist but no reaction attempted it.
 
 I added syntax highlighting to indicate those 3 states.
+
+[ ] At some point, I need to also evaluate reactions with 1 single input - I currently am only looking at 2 input reactions.
+[ ] I want to keep an eye on reaction logs to see if any new information of this kind comes through.
+[ ] perhaps my parser should include the likely intermediates
+[ ] I need to nail down the max and min for each otom. Some seem obvious right now. Many attempts have been made at the upper ends of the heavier isotopes, to discover them so we saw the limits there. But in the middle of all the isotopes chart there's still a lot find.
 
 2025-06-17 Jun.Tue 12:12:28 Just learned that in Vim gt and gT go to the next tab and previous tab respectively. Love that but why didn't i know until today?
 
