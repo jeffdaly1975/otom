@@ -25,7 +25,7 @@ foreach my $input_line (<>){
 
   if ($input_line =~ /^\s*\d+-chain/){
      chomp $input_line;
-     if ($input_line =~ /^\s*(\d+)-chain\s+(\w+-\d+)\s+::\s*MINEABLE/){
+     if ($input_line =~ /^\s*(\d+)-chain\s+(\w+-\d+)\s+::\s*0\.00 | MINEABLE/){
        ($chains,$otom_name,$otom_mass) = ($1,$2,$3);
        $cumulative_total=0;
       #$input_otoms;

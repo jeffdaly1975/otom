@@ -611,6 +611,9 @@ grab_token_image "F"    "66"   $universe_bohr
 grab_token_image "F"    "67"   $universe_bohr
 grab_token_image "F"    "68"   $universe_bohr
 grab_token_image "F"    "69"   $universe_bohr
+grab_token_image "F"    "70"   $universe_bohr
+grab_token_image "F"    "71"   $universe_bohr
+grab_token_image "F"    "72"   $universe_bohr
 grab_token_image "F"    "73"   $universe_bohr
 grab_token_image "Gy"   "63"   $universe_bohr
 grab_token_image "Gy"   "64"   $universe_bohr

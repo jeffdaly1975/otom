@@ -702,6 +702,9 @@ my %idhash=(
 667 => "Cj-69",
 668 => "Cj-70",
 669 => "Da-110",
+670 => "F-70",
+671 => "F-71",
+672 => "F-72",
 );
 
 
@@ -1375,6 +1378,9 @@ my %hexhash=(
  "Cj-69" => "632c5bddcdd0cd79fd12fccff03b8c8ea5915ade9b92d5f33afaf11d157c9070",
  "Cj-70" => "3b94d9fa4058c50dd479307c344735bbf0167487e623e1027f80959be12ef8fa",
  "Da-110"=> "86cef5d99ba1e66901fb082564b52625ee3e1d41f3347ebaf314f224902680fd",
+ "F-70"  => "8368b58623386fafee85040c7436bf83ed4e9768c0172a975a47f0b7329c80d5",
+ "F-71"  => "b2f59fec19281026dcd5b8766854e90b0c33984b59918e622ac80c40acdd4647",
+ "F-72"  => "d5db1996da07f98463599943dfd648b8bdb27caa808577f6b06d54663118676f",
 );
 
 # query the blockchain via alchemy 

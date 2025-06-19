@@ -1,30 +1,123 @@
-156309 1 and 2 input reactions
+2025-06-18 Jun.Wed 22:16:12 Discovered F-72 so thats 672 isotopes in Bohr. I wanted to fill in those 3 missing F-* so i did.
+
+ OTOMRO 321696: C-64⁻ + As-6∙ + 3000 => F-70 + 1,631.199439655944615879 using 1368.80 nuclear
+
+[c] add to files
+
+2025-06-18 Jun.Wed 22:08:07 Discovered F-71 so thats 671 isotopes in Bohr
+
+ OTOMRO 321691: C-64⁻ + As-7∙ + 4000 => F-71 + 2,523.83118600886882632 using 1476.17 nuclear
+
+[c] add to files
+
+2025-06-18 Jun.Wed 21:55:23 Discovered F-72 so thats 670 isotopes in Bohr
+
+ OTOMRO 321686: Ai-69⁻ + Sr-3∙ + 3000 => F-72 + 1,818.559843243176828764 using 1181.44 | nuclear |
+
+[c] add to files
+
+2025-06-18 Jun.Wed 21:55:21
+
+[ ] make Ai-70 and it might stay that or decay to F-70
+Wy-53⁻  + Ct-17⁻  = Ai-70?(?.???)  |
+
+[ ] make Ai-71 and it might stay that or decay to F-71
+Wy-54⁻  + Ct-17⁻  = Ai-71?(?.???)  |
+
+[ ] make Ai-72 and it might stay that or decay to F-72
+Wy-55⁻  + Ct-17⁻  = Ai-72?(?.???)  |
+
+[ ] make F-74 and it might stay that or decay to Gy-74
+L-57⁻   + Ct-17⁻  = F-74?(?.???)   |
+
+[ ] make F-73 and it might stay that or decay to Gy-73
+Uq-51⁻  + Eb-22∙  = F-73⁻(0.803)   |
+
+[>] make F-72 and it might stay that or decay to Gy-72
+Ai-69⁻  + Sr-3∙   = F-72?(?.???)   |
+ [r]|  Ct-17⁻ +  Xj-18∙   +[   843.77*-   5000] => K-35                | nuclear                      | OTOMRO  123975 |
+ [r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               | decay, nuclear               | OTOMRO  108339 |
+ [r]|  Nd-34⁻ +   K-35⁻   +[  1635.66*-   5000] => Ai-69               | nuclear                      | OTOMRO  265451 |
+ [r]|  Ai-69⁻ + Sr-3∙   = F-72?(?.???)   | makes F-72 using 1181.44 nuclear
+
+[>] make F-71 and it might stay that or decay to Gy-71
+C-64⁻   + As-7∙   = F-71?(?.???)   |
+ [r]|  Ct-17⁻ +  Uq-47⁻   +[  1197.60 -   5000] => C-64                | nuclear                      | OTOMRO  142528 |
+ [r]    C-64⁻ + As-7∙  + 4000  = F-71?(?.???)   | makes F-71 using 1476.17 nuclear
+
+[>] make F-70 and it might stay that
+C-64⁻   + As-6∙   = F-70?(?.???)   |
+[r]|  Ct-17⁻ +  Uq-47⁻   +[  1197.60 -   5000] => C-64                | nuclear                      | OTOMRO  142528 |
+[r]    C-64⁻ + As-6∙     + 3000  = F-70?(?.???)   | makes F-70 using 1368.80 nuclear
+
+[ ] make Gy-73 and it might stay that or decay to Kk-73
+  1197.60 |C-64⁻   + Dz-9∙   = Gy-73?(?.???)  |
+
+[ ] make Gy-74 and it might stay that or decay to Kk-74
+  1569.59 |Lu-40⁻  + Nd-34⁻  = Gy-74?(?.???)  |
+
+[ ] make Gy-75 and it might stay that or decay to Kk-75
+  9490.45 |F-73⁻   + Sr-2∙   = Gy-75?(?.???)  |
+
+[ ] make Gy-76 and it might stay that or decay to Kk-76
+  9490.45 |F-73⁻   + Sr-3∙   = Gy-76?(?.???)  |
+
+[ ] make Gy-77 and it might stay that or decay to Kk-77
+ 28643.09 |Wy-56⁻  + Xj-21⁻  = Gy-77?(?.???)  |
+
+[ ] make Gy-78 and it might stay that or decay to Kk-78
+ 45912.36 |Uq-52⁻  + P-26⁻   = Gy-78?(?.???)  |
+
+[ ] make Kk-76 and it might stay that or decay to Yv-76
+  2318.39 |Dx-42⁻  + Nd-34⁻  = Kk-76?(?.???)  |
+
+[ ] make Kk-77 and it might stay that or decay to Yv-77
+  9490.45 |F-73⁻   + Ei-4∙   = Kk-77?(?.???)  |
+
+[ ] make Kk-78 and it might stay that or decay to Yv-78
+  9490.45 |F-73⁻   + Ei-5∙   = Kk-78?(?.???)  |
+
+[ ] make Kk-78 and it might stay that or decay to Yv-78
+ 25698.73 |Uq-52⁻  + Ro-27⁻  = Kk-79?(?.???)  |
+
+
+
+2025-06-18 Jun.Wed 19:59:11 adbFreedom asked on discord if we have ever seen 2 input isotope reaction with the same inputs and NRG and different outputs.
+
+I looked at the 1 and 2 input reactions. There were 156309.
 
 There are several incidents where the same inputs and NRG produce a different molecule because they combine differently like:
 
-|alpha   |    W-4∙ +   Af-7ª                               +       20 =>   Cq-6 + JuW(Ju-1>W-4)                                                             +      16.00 |       4.00 | chemical, decay              |
-|alpha   |    W-4∙ +   Af-7ª                               +       20 =>   Cq-6 + WJu(W-4>Ju-1)                                                             +      16.00 |       4.00 | chemical, decay              |
+|alpha |   W-4∙ +   Af-7ª  +   20 => Cq-6 + JuW(Ju-1>W-4) +   16.00 |   4.00 | chemical, decay |
+|alpha |   W-4∙ +   Af-7ª  +   20 => Cq-6 + WJu(W-4>Ju-1) +   16.00 |   4.00 | chemical, decay |
 
-|alpha   |   Ju-1∙ +    W-4∙                               +       10 =>   JuW(Ju-1>W-4)                                                                    +       6.50 |       3.50 | chemical                     |
-|alpha   |   Ju-1∙ +    W-4∙                               +       10 =>   WJu(W-4>Ju-1)                                                                    +       6.50 |       3.50 | chemical                     |
+|alpha |  Ju-1∙ +    W-4∙  +   10 => JuW(Ju-1>W-4)        +    6.50 |   3.50 | chemical        |
+|alpha |  Ju-1∙ +    W-4∙  +   10 => WJu(W-4>Ju-1)        +    6.50 |   3.50 | chemical        |
 
-|alpha   |   S-25⁺ +  Xc-30∙                               +       50 =>   SXc(S-25>Xc-30)                                                                  +      24.55 |      25.45 | chemical                     |
-|alpha   |   S-25⁺ +  Xc-30∙                               +       50 =>   XcS(Xc-30>S-25)                                                                  +      24.55 |      25.45 | chemical                     |
+|alpha |  S-25⁺ +  Xc-30∙  +   50 => SXc(S-25>Xc-30)      +   24.55 |  25.45 | chemical        |
+|alpha |  S-25⁺ +  Xc-30∙  +   50 => XcS(Xc-30>S-25)      +   24.55 |  25.45 | chemical        |
 
-|alpha   |  Pm-19∙ +   M-20∙                               +       60 =>   MPm(M-20>Pm-19)                                                                  +      38.86 |      21.14 | chemical                     |
-|alpha   |  Pm-19∙ +   M-20∙                               +       60 =>   PmM(Pm-19>M-20)                                                                  +      38.86 |      21.14 | chemical                     |
+|alpha | Pm-19∙ +   M-20∙  +   60 => MPm(M-20>Pm-19)      +   38.86 |  21.14 | chemical        |
+|alpha | Pm-19∙ +   M-20∙  +   60 => PmM(Pm-19>M-20)      +   38.86 |  21.14 | chemical        |
 
-|bohr    |  Ro-24ª +  Nd-30ª                               +       30 =>   NdRo(Nd-30>Ro-24)                                                                +       1.61 |      28.39 | chemical                     |
-|bohr    |  Ro-24ª +  Nd-30ª                               +       30 =>   RoNd(Ro-24>Nd-30)                                                                +       1.61 |      28.39 | chemical                     |
+|bohr  | Ro-24ª +  Nd-30ª  +   30 => NdRo(Nd-30>Ro-24)    +    1.61 |  28.39 | chemical        |
+|bohr  | Ro-24ª +  Nd-30ª  +   30 => RoNd(Ro-24>Nd-30)    +    1.61 |  28.39 | chemical        |
 
-Besides those, there are 10 in alpha where one of them was an OTOMRO less than 3500 which is when the algorithm was changed to make nuclear reactions easier.
+Besides those, there are 10 reactions in alpha where one of them was an OTOMRO less than 3500 which is when the algorithm was changed to make nuclear reactions easier. So those don't count. 
+
 There is 1 in alpha where it actually has a different output above OTOMRO 3500:
 
-|alpha   |   M-22∙ +   M-22∙                               +     2400 =>   M₂(M-22,M-22>)                                                                   +    2237.31 |     162.69 | metallic                     | <---281016 
-|alpha   |   M-22∙ +   M-22∙                               +     2400 => ⬆ C-44                                                                             +       0.64 |    2399.36 | nuclear                      | <---189964 
+|alpha |  M-22∙ +   M-22∙  + 2400 => M₂(M-22,M-22>)       + 2237.31 | 162.69 | metallic        | OTOMRO 281016 
+|alpha |  M-22∙ +   M-22∙  + 2400 => C-44                 +    0.64 |2399.36 | nuclear         | OTOMRO 189964 
 
+We add the inputs M-22 + M-22 == C-44 so C-44 is the intermediate isotope. Then we apply decay process if the stability value is less than 0.78 (but we have learned it is deterministic and should apply actual probablities).
+Anyway, With 0.892 stability it doesn't like to decay so it stays C-44.
 
+For those inputs:
+ there are  57 reactions with input NRG range [  50, 2400] that make M₂
+ there are 212 reactions with input NRG range [2400, 6000] that make C-44
 
+With all that said, OTOMRO 281016 and 189964 are the only reactions I see with 2 inputs where the same inputs provide different outputs.
 
 
 2025-06-18 Jun.Wed 12:49:58 Thats interesting. I took all the Bohr reactions up to 00:00 today. Split into 2 files of 1-2 input reactions and 3-5 input reactions, ignoring those that haven't been analyzed yet.
