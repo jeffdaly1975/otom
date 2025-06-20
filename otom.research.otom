@@ -1,3 +1,164 @@
+2025-06-20 Jun.Fri 11:40:51 2 new discoveries so Bohr has 680 isotopes
+
+ OTOMRO 326899:  F-73⁻ + Ei-4∙  + 3000  -> Kk-77 => Yv-77 + 1718.130053899322319921 using 1281.87 nuclear+decay
+ OTOMRO 326900:  F-73⁻ + Ei-5∙  + 3000  -> Kk-78 => Yv-78 + 1656.090890121858137718 using 1343.91 nuclear+decay
+
+[c] add to files
+
+2025-06-20 Jun.Fri 11:00:55 [ ] Some more possibilites to try:
+
+| Dd-86?(?.???)  |Lx-76⁺  + Vi-10⁺  = Dd-86?(?.???)  | total:  8431.51 NRG
+| N-78?(?.???)   |Lx-76⁺  + Sr-2∙   = N-78?(?.???)   | total:  8431.51 NRG
+| Se-83?(?.???)  |Lx-76⁺  + Dz-7⁺   = Se-83?(?.???)  | total:  8431.51 NRG
+| U-80⁺(0.829)   |Lx-76⁺  + Ei-4∙   = U-80⁺(0.829)   | total:  8431.51 NRG
+| Da-111?(?.???) |N-94⁻   + Ct-17⁻  = Da-111?(?.???) | total:  9099.21 NRG
+| Cv-95?(?.???)  |Da-90⁺  + As-5⁺   = Cv-95?(?.???)  | total:  9207.87 NRG
+| Ys-122?(?.???) |Da-90⁺  + Mt-32⁺  = Ys-122?(?.???) | total:  9207.87 NRG
+| Ys-121?(?.???) |Ek-99⁺  + Ro-22⁺  = Ys-121?(?.???) | total:  9954.59 NRG
+| Da-112?(?.???) |N-95⁻   + Ct-17⁻  = Da-112?(?.???) | total: 10099.31 NRG
+| S-114?(?.???)  |Yv-80⁻  + Nd-34⁻  = S-114?(?.???)  | total: 10246.57 NRG
+| Ok-111?(?.???) |Lx-94⁻  + Ct-17⁻  = Ok-111?(?.???) | total: 10313.89 NRG
+| S-113?(?.???)  |Lx-94⁻  + Xj-19∙  = S-113?(?.???)  | total: 10313.89 NRG
+| Z-116?(?.???)  |Lx-94⁻  + Eb-22∙  = Z-116?(?.???)  | total: 10313.89 NRG
+| Ha-130?(?.???) |Yv-80⁻  + Pb-50⁻  = Ha-130?(?.???) | total: 10595.74 NRG
+| Kn-129?(?.???) |N-95⁻   + Nd-34⁻  = Kn-129?(?.???) | total: 10656.17 NRG
+| Ek-122?(?.???) |Co-88⁻  + Nd-34⁻  = Ek-122?(?.???) | total: 10717.43 NRG
+| Aw-127?(?.???) |Lx-93⁻  + Nd-34⁻  = Aw-127?(?.???) | total: 10849.85 NRG
+| Aw-128?(?.???) |Lx-94⁻  + Nd-34⁻  = Aw-128?(?.???) | total: 10870.75 NRG
+| Ha-131?(?.???) |Yv-80⁻  + Pb-51⁻  = Ha-131?(?.???) | total: 10982.04 NRG
+| Z-117?(?.???)  |Vl-100⁻ + Ct-17⁻  = Z-117?(?.???)  | total: 12695.47 NRG
+| Dd-108?(?.???) |Vl-101⁻ + As-7∙   = Dd-108?(?.???) | total: 12739.75 NRG
+| Ek-123?(?.???) |Vl-101⁻ + Eb-22∙  = Ek-123?(?.???) | total: 12739.75 NRG
+| Z-118?(?.???)  |Vl-101⁻ + Ct-17⁻  = Z-118?(?.???)  | total: 12739.75 NRG
+| Da-113?(?.???) |Lx-96⁻  + T-17∙   = Da-113?(?.???) | total: 13176.46 NRG
+| Dd-109?(?.???) |Lx-96⁻  + Vi-13∙  = Dd-109?(?.???) | total: 13176.46 NRG
+| Kn-130?(?.???) |Lx-96⁻  + K-34∙   = Kn-130?(?.???) | total: 13176.46 NRG
+| Nm-107?(?.???) |Lx-96⁻  + Gj-11∙  = Nm-107?(?.???) | total: 13176.46 NRG
+| Ok-113?(?.???) |Lx-96⁻  + Ct-17⁻  = Ok-113?(?.???) | total: 13176.46 NRG
+| S-115?(?.???)  |Lx-96⁻  + Xj-19∙  = S-115?(?.???)  | total: 13176.46 NRG
+| Ok-112?(?.???) |Lx-95⁻  + Ct-17⁻  = Ok-112?(?.???) | total: 13267.51 NRG
+| S-116?(?.???)  |Lx-96⁻  + Xj-20⁻  = S-116?(?.???)  | total: 13608.89 NRG
+| Ek-124?(?.???) |Lx-96⁻  + Cl-28⁻  = Ek-124?(?.???) | total: 13656.61 NRG
+| Ji-126?(?.???) |Lx-96⁻  + Yu-30∙  = Ji-126?(?.???) | total: 13709.19 NRG
+| Aw-129?(?.???) |Lx-95⁻  + Nd-34⁻  = Aw-129?(?.???) | total: 13824.37 NRG
+| Vt-122?(?.???) |Lx-96⁻  + Ro-26∙  = Vt-122?(?.???) | total: 13941.66 NRG
+| Ji-127?(?.???) |Lx-96⁻  + Yu-31⁻  = Ji-127?(?.???) | total: 14149.06 NRG
+| Cv-121?(?.???) |Se-104⁻ + Ct-17⁻  = Cv-121?(?.???) | total: 15414.94 NRG
+| Dd-110?(?.???) |Lx-96⁻  + Vi-14⁻  = Dd-110?(?.???) | total: 15740.65 NRG
+| Da-114?(?.???) |Lx-96⁻  + T-18⁻   = Da-114?(?.???) | total: 15786.45 NRG
+| Vt-123?(?.???) |Lx-96⁻  + Ro-27⁻  = Vt-123?(?.???) | total: 18006.62 NRG
+| Se-106?(?.???) |Lx-96⁻  + Dz-10⁻  = Se-106?(?.???) | total: 18294.62 NRG
+| Ek-125?(?.???) |Lx-96⁻  + Cl-29⁻  = Ek-125?(?.???) | total: 19522.52 NRG
+| X-115?(?.???)  |Ek-99⁺  + Xj-16⁺  = X-115?(?.???)  | total: 30285.27 NRG
+| U-79⁺(0.786)   |C-53⁺   + Yu-26⁺  = U-79⁺(0.786)   | total: 32514.71 NRG
+| Se-82?(?.???)  |C-53⁺   + K-29⁺   = Se-82?(?.???)  | total: 35206.92 NRG
+| Vl-80?(?.???)  |C-53⁺   + Nd-27⁺  = Vl-80?(?.???)  | total: 36255.69 NRG
+| Vt-124?(?.???) |Lx-96⁻  + Ro-28⁻  = Vt-124?(?.???) | total: 37145.05 NRG
+| Cv-122?(?.???) |Lx-96⁻  + P-26⁻   = Cv-122?(?.???) | total: 38220.25 NRG
+| Ek-126?(?.???) |Lx-96⁻  + Cl-30⁻  = Ek-126?(?.???) | total: 38633.86 NRG
+| Nm-108?(?.???) |Wy-56⁻  + Uq-52⁻  = Nm-108?(?.???) | total: 45155.98 NRG
+
+
+2025-06-19 Jun.Thu 21:48:03 Discovered Kk-75; Now 678 isotopes in Bohr
+
+  OTOMRO 324944: F-73⁻   + Sr-2∙ + 5000  -> Gy-75 => Kk-75 + 3747.67391881321236724 using 1252.33 nuclear+decay
+
+[c] add to files
+
+2025-06-19 Jun.Thu 15:10:55 [ ] put together an analysis of attempts to make isotopologues, where I add up the inputs to see if they would make an isotopologue, and list it. This would reveal attempts made and perhaps not enough energy or 1 isotope decayed because it was very unstable.
+
+2025-06-19 Jun.Thu 12:59:37 3 more discoveries so 677 Bohr isotopes
+
+  OTOMRO 323583: Lu-40⁻  + Nd-34⁻ + 3000 => Gy-74 + 1184.93181829 using 1815.07 nuclear
+  OTOMRO 323576: Gd-45⁻  + Ct-17⁻ + 3000 => Qe-62 + 1794.08670232 using 1205.91 nuclear, decay
+  OTOMRO 323585: Dx-42⁻  + Nd-34⁻ + 3000 => Kk-76 + 1146.05841013 using 1853.94 nuclear
+
+[c] add to files
+
+
+2025-06-19 Jun.Thu 12:28:20 Discovered Gy-73 so 674 Bohr isotope
+
+ OTOMRO 323502: C-64⁻ +   Dz-9∙  + 3000 => Gy-73 + 1462.776079199351670468 using 1537.22 nuclear
+
+[c] add to files
+
+2025-06-19 Jun.Thu 11:11:29 Discovered Iu-80 so 673 Bohr isotopes
+
+ OTOMRO 323345: Uq-47⁻  + Nd-33⁻ + 3000 => Iu-80 + 912.882858547147748141 using 2087.12 nuclear
+
+[c] Add to files
+
+2025-06-19 Jun.Thu 10:54:13 Make some undiscovered isotopes by targeting the intermediate that will decay to it:
+
+[>]|Uq-47⁻  + Nd-33⁻  = Iu-80⁻(0.885)? | total:   823.49  its stable so it should land on Iu-80
+  [r]| Ct-17⁻ +   T-16∙   +[   823.49 -   5000] => Nd-33               | nuclear                      | OTOMRO  124006 |
+  [r]|Uq-47⁻  + Nd-33⁻  = Iu-80⁻(0.885)? | total:   823.49  its stable so it should land on Iu-80 
+       Makes Iu-80 using 2087.12 nuclear
+
+[>]|C-64⁻   + Dz-9∙   = Gy-73?(?.???)  | total:  1197.60  
+  [r]|  Ct-17⁻ +  Uq-47⁻   +[  1197.60 -   5000] => C-64                | nuclear                      | OTOMRO  142528 |
+  [r]|   C-64⁻ +   Dz-9∙  + 3000  = Gy-73?(?.???)  | total:  4197.60  
+  Makes Gy-73 using 1537.22 nuclear
+
+[>]|Lu-40⁻  + Nd-34⁻  = Gy-74?(?.???)  | total:  1569.59  
+  [r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               | decay, nuclear               | OTOMRO  108339 |
+  [r]|  Ct-17⁻ +   P-23∙   +[  1012.73 -   5000] => Lu-40               | nuclear                      | OTOMRO  133421 | used 1011.88 [c] update recipe chains
+  [r]|Lu-40⁻  + Nd-34⁻  + 3000 => Gy-74?(?.???)  | total:  4569.59  
+  makes Gy-74 using 1815.07 nuclear
+
+[>]|Gd-45⁻  + Ct-17⁻  = Pg-62?(?.???)  | total:  1580.30  
+  [r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               | decay, nuclear               | OTOMRO  108339 |
+  [r]|  Gj-11∙ +  Nd-34⁻   +[  1023.44*-   5000] => Gd-45               | nuclear                      | OTOMRO   61448 |
+  [r]|Gd-45⁻  + Ct-17⁻  + 3000 => Pg-62?(?.???)  | total:  4580.30 
+  makes Qe-62 using 1205.91 nuclear, decay
+
+[>]|Dx-42⁻  + Nd-34⁻  = Kk-76?(?.???)  | total:  2318.39  
+  [r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               | decay, nuclear               | OTOMRO  108339 |
+  [r]|  Ct-17⁻ +  Xj-18∙   +[   843.77*-   5000] => K-35                | nuclear                      | OTOMRO  123975 |
+  [r]|   As-7∙ +   K-35⁻   +[   917.76 -   4000] => Dx-42               | nuclear                      | OTOMRO  200437 | used 917.71 [c] update recipe chains
+  [r]|Dx-42⁻  + Nd-34⁻  + 3000 => Kk-76?(?.???)  | total:  5318.39  
+   makes Kk-76 using 1853.94 nuclear
+
+[>]|F-73⁻   + Sr-2∙   = Gy-75?(?.???)  | total:  9490.45  
+  [r]|   K-34∙ +  Kk-71ª   +[  3488.71*-  20000] => P-22 + Co-83        | decay, nuclear               | OTOMRO   75258 |
+  [r]|   K-34∙ +  Co-83⁺   +[  3822.84 -   5000] => P-22 + Vl-95        | decay, nuclear               | OTOMRO   98162 |
+  [r]|  Eb-22∙ +  Vl-95⁻   +[  3111.75 -   5000] => P-22 + U-95         | decay, nuclear               | OTOMRO  291267*| used 3017.35 [c] update recipe chains
+  [r]|   U-95ª             +[     0.00 -      0] => P-22 + F-73         | decay                        | OTOMRO  214964*|
+  [r]|F-73⁻   + Sr-2∙        + 5000  => Gy-75?(?.???)  | total:  14490.45   makes Kk-75 using 1252.33 nuclear+decay
+
+[>]|F-73⁻   + Ei-4∙   = Kk-77?(?.???)  | total:  9490.45  
+  [r]|   K-34∙ +  Kk-71ª   +[  3488.71*-  20000] => P-22 + Co-83        | decay, nuclear               | OTOMRO   75258 |
+  [r]|   K-34∙ +  Co-83⁺   +[  3822.84 -   5000] => P-22 + Vl-95        | decay, nuclear               | OTOMRO   98162 |
+  [r]|  Eb-22∙ +  Vl-95⁻   +[  3111.75 -   5000] => P-22 + U-95         | decay, nuclear               | OTOMRO  291267*| used 3017.35 [x] update recipe chains
+  [r]|   U-95ª             +[     0.00 -      0] => P-22 + F-73         | decay                        | OTOMRO  214964*|
+  [r]|F-73⁻   + Ei-4∙        + 3000  => Kk-77?(?.???)  | total:  12490.45  
+      makes Yv-77 using 1281.87 nuclear+decay
+
+[>]|F-73⁻   + Ei-5∙   = Kk-78?(?.???)  | total:  9490.45  
+  [r]|   K-34∙ +  Kk-71ª   +[  3488.71*-  20000] => P-22 + Co-83        | decay, nuclear               | OTOMRO   75258 |
+  [r]|   K-34∙ +  Co-83⁺   +[  3822.84 -   5000] => P-22 + Vl-95        | decay, nuclear               | OTOMRO   98162 |
+  [r]|  Eb-22∙ +  Vl-95⁻   +[  3017.35 -   5000] => P-22 + U-95         | decay, nuclear               | OTOMRO  291267*| used 3012.65 [c] update recipe chains
+  [r]|   U-95ª             +[     0.00 -      0] => P-22 + F-73         | decay                        | OTOMRO  214964*|
+  [r]|F-73⁻   + Ei-5∙        + 3000  => Kk-78?(?.???)  | total:  12490.45  
+      makes Yv-78 using 1343.91 nuclear+decay
+
+
+[ ]|Dx-43⁻  + Ct-17⁻  + 5000 = Ux-60?(?.???)  | total: 21206.58  
+
+[ ]|Uq-51⁻  + Ct-17⁻  + 5000 = C-68?(?.???)   | total: 23302.16  
+
+[ ]|Uq-51⁻  + Dz-9∙   + 5000 = Ux-60?(?.???)  | total: 23302.16  
+
+[ ]|Lu-41⁻  + Nd-34⁻  + 5000 = Gy-75?(?.???)  | total: 23340.27  
+
+[ ]|Uq-51⁻  + Vi-14⁻  + 5000 = Qe-65?(?.???)  | total: 25866.35  
+
+[ ]|Uq-52⁻  + Eb-22∙  + 5000 = F-74?(?.???)   | total: 25868.57  
+
+
+
+
+
 2025-06-18 Jun.Wed 22:16:12 Discovered F-72 so thats 672 isotopes in Bohr. I wanted to fill in those 3 missing F-* so i did.
 
  OTOMRO 321696: C-64⁻ + As-6∙ + 3000 => F-70 + 1,631.199439655944615879 using 1368.80 nuclear
@@ -68,7 +229,7 @@ C-64⁻   + As-6∙   = F-70?(?.???)   |
 [ ] make Gy-78 and it might stay that or decay to Kk-78
  45912.36 |Uq-52⁻  + P-26⁻   = Gy-78?(?.???)  |
 
-[ ] make Kk-76 and it might stay that or decay to Yv-76
+[-] make Kk-76 and it might stay that or decay to Yv-76
   2318.39 |Dx-42⁻  + Nd-34⁻  = Kk-76?(?.???)  |
 
 [ ] make Kk-77 and it might stay that or decay to Yv-77

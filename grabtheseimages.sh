@@ -564,6 +564,7 @@ grab_token_image "Qe"   "58"   $universe_bohr
 grab_token_image "Qe"   "59"   $universe_bohr
 grab_token_image "Qe"   "60"   $universe_bohr
 grab_token_image "Qe"   "61"   $universe_bohr
+grab_token_image "Qe"   "62"   $universe_bohr
 grab_token_image "C"    "53"   $universe_bohr
 grab_token_image "C"    "54"   $universe_bohr
 grab_token_image "C"    "55"   $universe_bohr
@@ -623,6 +624,8 @@ grab_token_image "Gy"   "67"   $universe_bohr
 grab_token_image "Gy"   "68"   $universe_bohr
 grab_token_image "Gy"   "69"   $universe_bohr
 grab_token_image "Gy"   "70"   $universe_bohr
+grab_token_image "Gy"   "73"   $universe_bohr
+grab_token_image "Gy"   "74"   $universe_bohr
 grab_token_image "Kk"   "64"   $universe_bohr
 grab_token_image "Kk"   "65"   $universe_bohr
 grab_token_image "Kk"   "66"   $universe_bohr
@@ -632,6 +635,8 @@ grab_token_image "Kk"   "69"   $universe_bohr
 grab_token_image "Kk"   "70"   $universe_bohr
 grab_token_image "Kk"   "71"   $universe_bohr
 grab_token_image "Kk"   "72"   $universe_bohr
+grab_token_image "Kk"   "75"   $universe_bohr
+grab_token_image "Kk"   "76"   $universe_bohr
 grab_token_image "Yv"   "66"   $universe_bohr
 grab_token_image "Yv"   "67"   $universe_bohr
 grab_token_image "Yv"   "68"   $universe_bohr
@@ -642,6 +647,8 @@ grab_token_image "Yv"   "72"   $universe_bohr
 grab_token_image "Yv"   "73"   $universe_bohr
 grab_token_image "Yv"   "74"   $universe_bohr
 grab_token_image "Yv"   "75"   $universe_bohr
+grab_token_image "Yv"   "77"   $universe_bohr
+grab_token_image "Yv"   "78"   $universe_bohr
 grab_token_image "Yv"   "80"   $universe_bohr
 grab_token_image "Cj"   "68"   $universe_bohr
 grab_token_image "Cj"   "69"   $universe_bohr
@@ -665,6 +672,7 @@ grab_token_image "Iu"   "76"   $universe_bohr
 grab_token_image "Iu"   "77"   $universe_bohr
 grab_token_image "Iu"   "78"   $universe_bohr
 grab_token_image "Iu"   "79"   $universe_bohr
+grab_token_image "Iu"   "80"   $universe_bohr
 grab_token_image "Iu"   "81"   $universe_bohr
 grab_token_image "Iu"   "82"   $universe_bohr
 grab_token_image "Iu"   "83"   $universe_bohr
