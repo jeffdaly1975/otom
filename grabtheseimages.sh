@@ -635,6 +635,8 @@ grab_token_image "Kk"   "69"   $universe_bohr
 grab_token_image "Kk"   "70"   $universe_bohr
 grab_token_image "Kk"   "71"   $universe_bohr
 grab_token_image "Kk"   "72"   $universe_bohr
+grab_token_image "Kk"   "73"   $universe_bohr
+grab_token_image "Kk"   "74"   $universe_bohr
 grab_token_image "Kk"   "75"   $universe_bohr
 grab_token_image "Kk"   "76"   $universe_bohr
 grab_token_image "Yv"   "66"   $universe_bohr

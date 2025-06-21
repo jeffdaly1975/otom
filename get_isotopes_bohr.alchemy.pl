@@ -713,6 +713,8 @@ my %idhash=(
 678 => "Kk-75",
 679 => "Yv-77",
 680 => "Yv-78",
+681 => "Kk-73",
+682 => "Kk-74",
 );
 
 
@@ -1397,6 +1399,8 @@ my %hexhash=(
  "Kk-75" => "0909850726da878002bee8eaa4f848723a197ce1567590e1fc00a88929742815",
  "Yv-77" => "02c272fb58643c76d579757680017874cbb7c397490da41b872afe6899c80c41",
  "Yv-78" => "4f91456ecf7903dbff860c16aba74e4263a619a8f6150c14b42ede0cc5fe651b",
+ "Kk-73" => "0aa155dd8dd90e0556e45cd604f92f181bf7a1f9d9329736f4f22dbf189793c4",
+ "Kk-74" => "8508de5999111456c90aebf26ea9dec4a4ba78249ce96d452438b0a71e6311f0",
 );
 
 # query the blockchain via alchemy 
