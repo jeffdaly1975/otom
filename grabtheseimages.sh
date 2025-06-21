@@ -3,1036 +3,1045 @@
 # Save Token and chip images for all isotopes of all OTOM Universes
 #
 
-#########################################################--------[   Universe Alpha   ]--------###############################################################################################################################################################################################
-
 universe_alpha="fda008503288e5abc370328150d20993fec26efe5707f2d12ab552ebb0da5e26"
 universe_bohr="9092789dd97416176acfc97a65906204c9d99c260c6c45001012f6667684422e"
+universe=""
 
 grab_token_image() {
-    echo "# Checking $1-$2    $1$2  "
+    echo "# Checking Universe $3: $1-$2    $1$2  "
+
+    if   [ "$3" = "alpha" ]; then
+      universe=$universe_alpha
+    elif [ "$3" = "bohr"  ]; then
+      universe=$universe_bohr
+    else
+      echo "ERROR: invalid argument $3 to grab_token_image(). It should be lowercased universe name"
+      exit -1
+    fi
 
     # if file does not exist or is empty, get it
 
-    if [ ! -s tokenimages/bohr/tokens/$1-$2.png ]; then
+    if [ ! -s tokenimages/$3/tokens/$1-$2.png ]; then
        echo "# Grabbing token image $1-$2"
-       curl -o tokenimages/bohr/tokens/$1-$2.png https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/9092789dd97416176acfc97a65906204c9d99c260c6c45001012f6667684422e$1$2--token.png  --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'
+       curl -o tokenimages/$3/tokens/$1-$2.png https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/$universe$1$2--token.png  --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'
     fi
 
-    if [ ! -s tokenimages/bohr/chips/$1-$2.png ]; then
+    if [ ! -s tokenimages/$3/chips/$1-$2.png ]; then
        echo "# Grabbing chip  image $1-$2"
-       curl -o tokenimages/bohr/chips/$1-$2.png  https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/9092789dd97416176acfc97a65906204c9d99c260c6c45001012f6667684422e$1$2--chip.png   --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'
+       curl -o tokenimages/$3/chips/$1-$2.png  https://prod-otoms.s3.us-east-1.amazonaws.com/otoms/$universe$1$2--chip.png   --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'
     fi
+    
 }
 
-grab_token_image "Ju"   "1"   $universe_alpha
-grab_token_image "Ju"   "2"   $universe_alpha
-grab_token_image "Ju"   "3"   $universe_alpha
-grab_token_image "W"    "4"   $universe_alpha
-grab_token_image "W"    "5"   $universe_alpha
-grab_token_image "Cq"   "5"   $universe_alpha
-grab_token_image "Cq"   "6"   $universe_alpha
-grab_token_image "Cq"   "7"   $universe_alpha
-grab_token_image "Af"   "7"   $universe_alpha
-grab_token_image "Af"   "8"   $universe_alpha
-grab_token_image "Af"   "9"   $universe_alpha
-grab_token_image "Af"  "10"   $universe_alpha
-grab_token_image "Xl"   "9"   $universe_alpha
-grab_token_image "Xl"  "10"   $universe_alpha
-grab_token_image "Xl"  "11"   $universe_alpha
-grab_token_image "Xl"  "12"   $universe_alpha
-grab_token_image "Pq"  "10"   $universe_alpha
-grab_token_image "Pq"  "11"   $universe_alpha
-grab_token_image "Pq"  "12"   $universe_alpha
-grab_token_image "Pq"  "13"   $universe_alpha
-grab_token_image "Pq"  "14"   $universe_alpha
-grab_token_image "Pq"  "15"   $universe_alpha
-grab_token_image "Zz"  "13"   $universe_alpha
-grab_token_image "Zz"  "14"   $universe_alpha
-grab_token_image "Zz"  "15"   $universe_alpha
-grab_token_image "Zz"  "16"   $universe_alpha
-grab_token_image "Dx"  "14"   $universe_alpha
-grab_token_image "Dx"  "15"   $universe_alpha
-grab_token_image "Dx"  "16"   $universe_alpha
-grab_token_image "Dx"  "17"   $universe_alpha
-grab_token_image "Dx"  "18"   $universe_alpha
-grab_token_image "Dx"  "19"   $universe_alpha
-grab_token_image "Pm"  "17"   $universe_alpha
-grab_token_image "Pm"  "18"   $universe_alpha
-grab_token_image "Pm"  "19"   $universe_alpha
-grab_token_image "Pm"  "20"   $universe_alpha
-grab_token_image "Pm"  "21"   $universe_alpha
-grab_token_image "M"   "19"   $universe_alpha
-grab_token_image "M"   "20"   $universe_alpha
-grab_token_image "M"   "21"   $universe_alpha
-grab_token_image "M"   "22"   $universe_alpha
-grab_token_image "M"   "23"   $universe_alpha
-grab_token_image "Fw"  "21"   $universe_alpha
-grab_token_image "Fw"  "22"   $universe_alpha
-grab_token_image "Fw"  "23"   $universe_alpha
-grab_token_image "Fw"  "24"   $universe_alpha
-grab_token_image "Fw"  "25"   $universe_alpha
-grab_token_image "Fw"  "26"   $universe_alpha
-grab_token_image "Pt"  "22"   $universe_alpha
-grab_token_image "Pt"  "23"   $universe_alpha
-grab_token_image "Pt"  "24"   $universe_alpha
-grab_token_image "Pt"  "25"   $universe_alpha
-grab_token_image "Pt"  "26"   $universe_alpha
-grab_token_image "Pt"  "27"   $universe_alpha
-grab_token_image "Pt"  "28"   $universe_alpha
-grab_token_image "S"   "24"   $universe_alpha
-grab_token_image "S"   "25"   $universe_alpha
-grab_token_image "S"   "26"   $universe_alpha
-grab_token_image "S"   "27"   $universe_alpha
-grab_token_image "S"   "28"   $universe_alpha
-grab_token_image "S"   "29"   $universe_alpha
-grab_token_image "S"   "30"   $universe_alpha
-grab_token_image "Zq"  "26"   $universe_alpha
-grab_token_image "Zq"  "27"   $universe_alpha
-grab_token_image "Zq"  "28"   $universe_alpha
-grab_token_image "Zq"  "29"   $universe_alpha
-grab_token_image "Zq"  "30"   $universe_alpha
-grab_token_image "Zq"  "31"   $universe_alpha
-grab_token_image "Zq"  "32"   $universe_alpha
-grab_token_image "Xc"  "28"   $universe_alpha
-grab_token_image "Xc"  "29"   $universe_alpha
-grab_token_image "Xc"  "30"   $universe_alpha
-grab_token_image "Xc"  "31"   $universe_alpha
-grab_token_image "Xc"  "32"   $universe_alpha
-grab_token_image "Xc"  "33"   $universe_alpha
-grab_token_image "Xc"  "34"   $universe_alpha
-grab_token_image "Gy"  "30"   $universe_alpha
-grab_token_image "Gy"  "31"   $universe_alpha
-grab_token_image "Gy"  "32"   $universe_alpha
-grab_token_image "Gy"  "33"   $universe_alpha
-grab_token_image "Gy"  "34"   $universe_alpha
-grab_token_image "Gy"  "35"   $universe_alpha
-grab_token_image "Gy"  "36"   $universe_alpha
-grab_token_image "D"   "32"   $universe_alpha
-grab_token_image "D"   "33"   $universe_alpha
-grab_token_image "D"   "34"   $universe_alpha
-grab_token_image "D"   "35"   $universe_alpha
-grab_token_image "D"   "36"   $universe_alpha
-grab_token_image "D"   "37"   $universe_alpha
-grab_token_image "D"   "38"   $universe_alpha
-grab_token_image "D"   "39"   $universe_alpha
-grab_token_image "Fj"  "34"   $universe_alpha
-grab_token_image "Fj"  "35"   $universe_alpha
-grab_token_image "Fj"  "36"   $universe_alpha
-grab_token_image "Fj"  "37"   $universe_alpha
-grab_token_image "Fj"  "38"   $universe_alpha
-grab_token_image "Fj"  "39"   $universe_alpha
-grab_token_image "Fj"  "40"   $universe_alpha
-grab_token_image "Fj"  "41"   $universe_alpha
-grab_token_image "O"   "36"   $universe_alpha
-grab_token_image "O"   "37"   $universe_alpha
-grab_token_image "O"   "38"   $universe_alpha
-grab_token_image "O"   "39"   $universe_alpha
-grab_token_image "O"   "40"   $universe_alpha
-grab_token_image "O"   "41"   $universe_alpha
-grab_token_image "O"   "42"   $universe_alpha
-grab_token_image "O"   "43"   $universe_alpha
-grab_token_image "C"   "38"   $universe_alpha
-grab_token_image "C"   "39"   $universe_alpha
-grab_token_image "C"   "40"   $universe_alpha
-grab_token_image "C"   "41"   $universe_alpha
-grab_token_image "C"   "42"   $universe_alpha
-grab_token_image "C"   "43"   $universe_alpha
-grab_token_image "C"   "44"   $universe_alpha
-grab_token_image "C"   "45"   $universe_alpha
-grab_token_image "E"   "40"   $universe_alpha
-grab_token_image "E"   "41"   $universe_alpha
-grab_token_image "E"   "42"   $universe_alpha
-grab_token_image "E"   "43"   $universe_alpha
-grab_token_image "E"   "44"   $universe_alpha
-grab_token_image "E"   "45"   $universe_alpha
-grab_token_image "E"   "46"   $universe_alpha
-grab_token_image "E"   "47"   $universe_alpha
-grab_token_image "E"   "48"   $universe_alpha
-grab_token_image "A"   "42"   $universe_alpha
-grab_token_image "A"   "43"   $universe_alpha
-grab_token_image "A"   "44"   $universe_alpha
-grab_token_image "A"   "45"   $universe_alpha
-grab_token_image "A"   "46"   $universe_alpha
-grab_token_image "A"   "47"   $universe_alpha
-grab_token_image "A"   "48"   $universe_alpha
-grab_token_image "A"   "49"   $universe_alpha
-grab_token_image "A"   "50"   $universe_alpha
-grab_token_image "Aw"  "44"   $universe_alpha
-grab_token_image "Aw"  "45"   $universe_alpha
-grab_token_image "Aw"  "46"   $universe_alpha
-grab_token_image "Aw"  "47"   $universe_alpha
-grab_token_image "Aw"  "48"   $universe_alpha
-grab_token_image "Aw"  "49"   $universe_alpha
-grab_token_image "Aw"  "50"   $universe_alpha
-grab_token_image "Aw"  "51"   $universe_alpha
-grab_token_image "Aw"  "52"   $universe_alpha
-grab_token_image "Oc"  "46"   $universe_alpha
-grab_token_image "Oc"  "47"   $universe_alpha
-grab_token_image "Oc"  "48"   $universe_alpha
-grab_token_image "Oc"  "49"   $universe_alpha
-grab_token_image "Oc"  "50"   $universe_alpha
-grab_token_image "Oc"  "51"   $universe_alpha
-grab_token_image "Oc"  "52"   $universe_alpha
-grab_token_image "Oc"  "53"   $universe_alpha
-grab_token_image "Oc"  "54"   $universe_alpha
-grab_token_image "Nb"  "47"   $universe_alpha
-grab_token_image "Nb"  "48"   $universe_alpha
-grab_token_image "Nb"  "49"   $universe_alpha
-grab_token_image "Nb"  "50"   $universe_alpha
-grab_token_image "Nb"  "51"   $universe_alpha
-grab_token_image "Nb"  "52"   $universe_alpha
-grab_token_image "Nb"  "53"   $universe_alpha
-grab_token_image "Nb"  "54"   $universe_alpha
-grab_token_image "Nb"  "55"   $universe_alpha
-grab_token_image "Nb"  "56"   $universe_alpha
-grab_token_image "Xk"  "50"   $universe_alpha
-grab_token_image "Xk"  "51"   $universe_alpha
-grab_token_image "Xk"  "52"   $universe_alpha
-grab_token_image "Xk"  "53"   $universe_alpha
-grab_token_image "Xk"  "54"   $universe_alpha
-grab_token_image "Xk"  "55"   $universe_alpha
-grab_token_image "Xk"  "56"   $universe_alpha
-grab_token_image "Xk"  "57"   $universe_alpha
-grab_token_image "Xk"  "58"   $universe_alpha
-grab_token_image "Xk"  "59"   $universe_alpha
-grab_token_image "Ic"  "51"   $universe_alpha
-grab_token_image "Ic"  "52"   $universe_alpha
-grab_token_image "Ic"  "53"   $universe_alpha
-grab_token_image "Ic"  "54"   $universe_alpha
-grab_token_image "Ic"  "55"   $universe_alpha
-grab_token_image "Ic"  "56"   $universe_alpha
-grab_token_image "Ic"  "57"   $universe_alpha
-grab_token_image "Ic"  "58"   $universe_alpha
-grab_token_image "Ic"  "59"   $universe_alpha
-grab_token_image "Ic"  "60"   $universe_alpha
-grab_token_image "Ic"  "61"   $universe_alpha
-grab_token_image "Ic"  "62"   $universe_alpha
-grab_token_image "Yp"  "54"   $universe_alpha
-grab_token_image "Yp"  "55"   $universe_alpha
-grab_token_image "Yp"  "56"   $universe_alpha
-grab_token_image "Yp"  "57"   $universe_alpha
-grab_token_image "Yp"  "58"   $universe_alpha
-grab_token_image "Yp"  "59"   $universe_alpha
-grab_token_image "Yp"  "60"   $universe_alpha
-grab_token_image "Yp"  "61"   $universe_alpha
-grab_token_image "Yp"  "62"   $universe_alpha
-grab_token_image "Yp"  "63"   $universe_alpha
-grab_token_image "Jx"  "56"   $universe_alpha
-grab_token_image "Jx"  "57"   $universe_alpha
-grab_token_image "Jx"  "58"   $universe_alpha
-grab_token_image "Jx"  "59"   $universe_alpha
-grab_token_image "Jx"  "60"   $universe_alpha
-grab_token_image "Jx"  "61"   $universe_alpha
-grab_token_image "Jx"  "62"   $universe_alpha
-grab_token_image "Jx"  "63"   $universe_alpha
-grab_token_image "Jx"  "64"   $universe_alpha
-grab_token_image "Jx"  "65"   $universe_alpha
-grab_token_image "Hb"  "57"   $universe_alpha
-grab_token_image "Hb"  "58"   $universe_alpha
-grab_token_image "Hb"  "59"   $universe_alpha
-grab_token_image "Hb"  "60"   $universe_alpha
-grab_token_image "Hb"  "61"   $universe_alpha
-grab_token_image "Hb"  "62"   $universe_alpha
-grab_token_image "Hb"  "63"   $universe_alpha
-grab_token_image "Hb"  "64"   $universe_alpha
-grab_token_image "Hb"  "65"   $universe_alpha
-grab_token_image "Hb"  "66"   $universe_alpha
-grab_token_image "Hb"  "67"   $universe_alpha
-grab_token_image "At"  "60"   $universe_alpha
-grab_token_image "At"  "61"   $universe_alpha
-grab_token_image "At"  "62"   $universe_alpha
-grab_token_image "At"  "63"   $universe_alpha
-grab_token_image "At"  "64"   $universe_alpha
-grab_token_image "At"  "65"   $universe_alpha
-grab_token_image "At"  "66"   $universe_alpha
-grab_token_image "At"  "67"   $universe_alpha
-grab_token_image "At"  "68"   $universe_alpha
-grab_token_image "At"  "69"   $universe_alpha
-grab_token_image "Ny"  "61"   $universe_alpha
-grab_token_image "Ny"  "62"   $universe_alpha
-grab_token_image "Ny"  "63"   $universe_alpha
-grab_token_image "Ny"  "64"   $universe_alpha
-grab_token_image "Ny"  "65"   $universe_alpha
-grab_token_image "Ny"  "66"   $universe_alpha
-grab_token_image "Ny"  "67"   $universe_alpha
-grab_token_image "Ny"  "68"   $universe_alpha
-grab_token_image "Ny"  "69"   $universe_alpha
-grab_token_image "Ny"  "70"   $universe_alpha
-grab_token_image "Ny"  "71"   $universe_alpha
-grab_token_image "Ny"  "72"   $universe_alpha
-grab_token_image "Pw"  "64"   $universe_alpha
-grab_token_image "Pw"  "65"   $universe_alpha
-grab_token_image "Pw"  "66"   $universe_alpha
-grab_token_image "Pw"  "67"   $universe_alpha
-grab_token_image "Pw"  "68"   $universe_alpha
-grab_token_image "Pw"  "69"   $universe_alpha
-grab_token_image "Pw"  "70"   $universe_alpha
-grab_token_image "Pw"  "71"   $universe_alpha
-grab_token_image "Pw"  "72"   $universe_alpha
-grab_token_image "Pw"  "73"   $universe_alpha
-grab_token_image "Pw"  "74"   $universe_alpha
-grab_token_image "Gk"  "65"   $universe_alpha
-grab_token_image "Gk"  "66"   $universe_alpha
-grab_token_image "Gk"  "67"   $universe_alpha
-grab_token_image "Gk"  "68"   $universe_alpha
-grab_token_image "Gk"  "69"   $universe_alpha
-grab_token_image "Gk"  "70"   $universe_alpha
-grab_token_image "Gk"  "71"   $universe_alpha
-grab_token_image "Gk"  "72"   $universe_alpha
-grab_token_image "Gk"  "73"   $universe_alpha
-grab_token_image "Gk"  "74"   $universe_alpha
-grab_token_image "Gk"  "75"   $universe_alpha
-grab_token_image "Gk"  "76"   $universe_alpha
-grab_token_image "Gk"  "77"   $universe_alpha
-grab_token_image "Qi"  "67"   $universe_alpha
-grab_token_image "Qi"  "68"   $universe_alpha
-grab_token_image "Qi"  "69"   $universe_alpha
-grab_token_image "Qi"  "70"   $universe_alpha
-grab_token_image "Qi"  "71"   $universe_alpha
-grab_token_image "Qi"  "72"   $universe_alpha
-grab_token_image "Qi"  "73"   $universe_alpha
-grab_token_image "Qi"  "74"   $universe_alpha
-grab_token_image "Qi"  "75"   $universe_alpha
-grab_token_image "Qi"  "76"   $universe_alpha
-grab_token_image "Qi"  "77"   $universe_alpha
-grab_token_image "Qi"  "78"   $universe_alpha
-grab_token_image "Xy"  "69"   $universe_alpha
-grab_token_image "Xy"  "70"   $universe_alpha
-grab_token_image "Xy"  "71"   $universe_alpha
-grab_token_image "Xy"  "72"   $universe_alpha
-grab_token_image "Xy"  "73"   $universe_alpha
-grab_token_image "Xy"  "74"   $universe_alpha
-grab_token_image "Xy"  "75"   $universe_alpha
-grab_token_image "Xy"  "76"   $universe_alpha
-grab_token_image "Xy"  "77"   $universe_alpha
-grab_token_image "Xy"  "78"   $universe_alpha
-grab_token_image "Xy"  "79"   $universe_alpha
-grab_token_image "Gq"  "71"   $universe_alpha
-grab_token_image "Gq"  "72"   $universe_alpha
-grab_token_image "Gq"  "73"   $universe_alpha
-grab_token_image "Gq"  "74"   $universe_alpha
-grab_token_image "Gq"  "75"   $universe_alpha
-grab_token_image "Gq"  "76"   $universe_alpha
-grab_token_image "Gq"  "77"   $universe_alpha
-grab_token_image "Gq"  "78"   $universe_alpha
-grab_token_image "Gq"  "79"   $universe_alpha
-grab_token_image "Gq"  "80"   $universe_alpha
-grab_token_image "Bt"  "73"   $universe_alpha
-grab_token_image "Bt"  "74"   $universe_alpha
-grab_token_image "Bt"  "75"   $universe_alpha
-grab_token_image "Bt"  "76"   $universe_alpha
-grab_token_image "Bt"  "77"   $universe_alpha
-grab_token_image "Bt"  "78"   $universe_alpha
-grab_token_image "Bt"  "79"   $universe_alpha
-grab_token_image "Bt"  "80"   $universe_alpha
-grab_token_image "Bt"  "81"   $universe_alpha
-grab_token_image "H"   "75"   $universe_alpha
-grab_token_image "H"   "76"   $universe_alpha
-grab_token_image "H"   "77"   $universe_alpha
-grab_token_image "H"   "78"   $universe_alpha
-grab_token_image "H"   "79"   $universe_alpha
-grab_token_image "H"   "80"   $universe_alpha
-grab_token_image "H"   "81"   $universe_alpha
-grab_token_image "H"   "82"   $universe_alpha
-grab_token_image "U"   "77"   $universe_alpha
-grab_token_image "U"   "78"   $universe_alpha
-grab_token_image "U"   "79"   $universe_alpha
-grab_token_image "U"   "80"   $universe_alpha
-grab_token_image "U"   "81"   $universe_alpha
-grab_token_image "U"   "82"   $universe_alpha
-grab_token_image "U"   "83"   $universe_alpha
-grab_token_image "Sq"  "79"   $universe_alpha
-grab_token_image "Sq"  "80"   $universe_alpha
-grab_token_image "Sq"  "81"   $universe_alpha
-grab_token_image "Sq"  "82"   $universe_alpha
-grab_token_image "Sq"  "83"   $universe_alpha
-grab_token_image "Sq"  "84"   $universe_alpha
-grab_token_image "Ua"  "83"   $universe_alpha
-grab_token_image "Ua"  "84"   $universe_alpha
-grab_token_image "Ua"  "85"   $universe_alpha
+grab_token_image "Ju"   "1" "alpha"  $universe_alpha
+grab_token_image "Ju"   "2" "alpha"  $universe_alpha
+grab_token_image "Ju"   "3" "alpha"  $universe_alpha
+grab_token_image "W"    "4" "alpha"  $universe_alpha
+grab_token_image "W"    "5" "alpha"  $universe_alpha
+grab_token_image "Cq"   "5" "alpha"  $universe_alpha
+grab_token_image "Cq"   "6" "alpha"  $universe_alpha
+grab_token_image "Cq"   "7" "alpha"  $universe_alpha
+grab_token_image "Af"   "7" "alpha"  $universe_alpha
+grab_token_image "Af"   "8" "alpha"  $universe_alpha
+grab_token_image "Af"   "9" "alpha"  $universe_alpha
+grab_token_image "Af"  "10" "alpha"  $universe_alpha
+grab_token_image "Xl"   "9" "alpha"  $universe_alpha
+grab_token_image "Xl"  "10" "alpha"  $universe_alpha
+grab_token_image "Xl"  "11" "alpha"  $universe_alpha
+grab_token_image "Xl"  "12" "alpha"  $universe_alpha
+grab_token_image "Pq"  "10" "alpha"  $universe_alpha
+grab_token_image "Pq"  "11" "alpha"  $universe_alpha
+grab_token_image "Pq"  "12" "alpha"  $universe_alpha
+grab_token_image "Pq"  "13" "alpha"  $universe_alpha
+grab_token_image "Pq"  "14" "alpha"  $universe_alpha
+grab_token_image "Pq"  "15" "alpha"  $universe_alpha
+grab_token_image "Zz"  "13" "alpha"  $universe_alpha
+grab_token_image "Zz"  "14" "alpha"  $universe_alpha
+grab_token_image "Zz"  "15" "alpha"  $universe_alpha
+grab_token_image "Zz"  "16" "alpha"  $universe_alpha
+grab_token_image "Dx"  "14" "alpha"  $universe_alpha
+grab_token_image "Dx"  "15" "alpha"  $universe_alpha
+grab_token_image "Dx"  "16" "alpha"  $universe_alpha
+grab_token_image "Dx"  "17" "alpha"  $universe_alpha
+grab_token_image "Dx"  "18" "alpha"  $universe_alpha
+grab_token_image "Dx"  "19" "alpha"  $universe_alpha
+grab_token_image "Pm"  "17" "alpha"  $universe_alpha
+grab_token_image "Pm"  "18" "alpha"  $universe_alpha
+grab_token_image "Pm"  "19" "alpha"  $universe_alpha
+grab_token_image "Pm"  "20" "alpha"  $universe_alpha
+grab_token_image "Pm"  "21" "alpha"  $universe_alpha
+grab_token_image "M"   "19" "alpha"  $universe_alpha
+grab_token_image "M"   "20" "alpha"  $universe_alpha
+grab_token_image "M"   "21" "alpha"  $universe_alpha
+grab_token_image "M"   "22" "alpha"  $universe_alpha
+grab_token_image "M"   "23" "alpha"  $universe_alpha
+grab_token_image "Fw"  "21" "alpha"  $universe_alpha
+grab_token_image "Fw"  "22" "alpha"  $universe_alpha
+grab_token_image "Fw"  "23" "alpha"  $universe_alpha
+grab_token_image "Fw"  "24" "alpha"  $universe_alpha
+grab_token_image "Fw"  "25" "alpha"  $universe_alpha
+grab_token_image "Fw"  "26" "alpha"  $universe_alpha
+grab_token_image "Pt"  "22" "alpha"  $universe_alpha
+grab_token_image "Pt"  "23" "alpha"  $universe_alpha
+grab_token_image "Pt"  "24" "alpha"  $universe_alpha
+grab_token_image "Pt"  "25" "alpha"  $universe_alpha
+grab_token_image "Pt"  "26" "alpha"  $universe_alpha
+grab_token_image "Pt"  "27" "alpha"  $universe_alpha
+grab_token_image "Pt"  "28" "alpha"  $universe_alpha
+grab_token_image "S"   "24" "alpha"  $universe_alpha
+grab_token_image "S"   "25" "alpha"  $universe_alpha
+grab_token_image "S"   "26" "alpha"  $universe_alpha
+grab_token_image "S"   "27" "alpha"  $universe_alpha
+grab_token_image "S"   "28" "alpha"  $universe_alpha
+grab_token_image "S"   "29" "alpha"  $universe_alpha
+grab_token_image "S"   "30" "alpha"  $universe_alpha
+grab_token_image "Zq"  "26" "alpha"  $universe_alpha
+grab_token_image "Zq"  "27" "alpha"  $universe_alpha
+grab_token_image "Zq"  "28" "alpha"  $universe_alpha
+grab_token_image "Zq"  "29" "alpha"  $universe_alpha
+grab_token_image "Zq"  "30" "alpha"  $universe_alpha
+grab_token_image "Zq"  "31" "alpha"  $universe_alpha
+grab_token_image "Zq"  "32" "alpha"  $universe_alpha
+grab_token_image "Xc"  "28" "alpha"  $universe_alpha
+grab_token_image "Xc"  "29" "alpha"  $universe_alpha
+grab_token_image "Xc"  "30" "alpha"  $universe_alpha
+grab_token_image "Xc"  "31" "alpha"  $universe_alpha
+grab_token_image "Xc"  "32" "alpha"  $universe_alpha
+grab_token_image "Xc"  "33" "alpha"  $universe_alpha
+grab_token_image "Xc"  "34" "alpha"  $universe_alpha
+grab_token_image "Gy"  "30" "alpha"  $universe_alpha
+grab_token_image "Gy"  "31" "alpha"  $universe_alpha
+grab_token_image "Gy"  "32" "alpha"  $universe_alpha
+grab_token_image "Gy"  "33" "alpha"  $universe_alpha
+grab_token_image "Gy"  "34" "alpha"  $universe_alpha
+grab_token_image "Gy"  "35" "alpha"  $universe_alpha
+grab_token_image "Gy"  "36" "alpha"  $universe_alpha
+grab_token_image "D"   "32" "alpha"  $universe_alpha
+grab_token_image "D"   "33" "alpha"  $universe_alpha
+grab_token_image "D"   "34" "alpha"  $universe_alpha
+grab_token_image "D"   "35" "alpha"  $universe_alpha
+grab_token_image "D"   "36" "alpha"  $universe_alpha
+grab_token_image "D"   "37" "alpha"  $universe_alpha
+grab_token_image "D"   "38" "alpha"  $universe_alpha
+grab_token_image "D"   "39" "alpha"  $universe_alpha
+grab_token_image "Fj"  "34" "alpha"  $universe_alpha
+grab_token_image "Fj"  "35" "alpha"  $universe_alpha
+grab_token_image "Fj"  "36" "alpha"  $universe_alpha
+grab_token_image "Fj"  "37" "alpha"  $universe_alpha
+grab_token_image "Fj"  "38" "alpha"  $universe_alpha
+grab_token_image "Fj"  "39" "alpha"  $universe_alpha
+grab_token_image "Fj"  "40" "alpha"  $universe_alpha
+grab_token_image "Fj"  "41" "alpha"  $universe_alpha
+grab_token_image "O"   "36" "alpha"  $universe_alpha
+grab_token_image "O"   "37" "alpha"  $universe_alpha
+grab_token_image "O"   "38" "alpha"  $universe_alpha
+grab_token_image "O"   "39" "alpha"  $universe_alpha
+grab_token_image "O"   "40" "alpha"  $universe_alpha
+grab_token_image "O"   "41" "alpha"  $universe_alpha
+grab_token_image "O"   "42" "alpha"  $universe_alpha
+grab_token_image "O"   "43" "alpha"  $universe_alpha
+grab_token_image "C"   "38" "alpha"  $universe_alpha
+grab_token_image "C"   "39" "alpha"  $universe_alpha
+grab_token_image "C"   "40" "alpha"  $universe_alpha
+grab_token_image "C"   "41" "alpha"  $universe_alpha
+grab_token_image "C"   "42" "alpha"  $universe_alpha
+grab_token_image "C"   "43" "alpha"  $universe_alpha
+grab_token_image "C"   "44" "alpha"  $universe_alpha
+grab_token_image "C"   "45" "alpha"  $universe_alpha
+grab_token_image "E"   "40" "alpha"  $universe_alpha
+grab_token_image "E"   "41" "alpha"  $universe_alpha
+grab_token_image "E"   "42" "alpha"  $universe_alpha
+grab_token_image "E"   "43" "alpha"  $universe_alpha
+grab_token_image "E"   "44" "alpha"  $universe_alpha
+grab_token_image "E"   "45" "alpha"  $universe_alpha
+grab_token_image "E"   "46" "alpha"  $universe_alpha
+grab_token_image "E"   "47" "alpha"  $universe_alpha
+grab_token_image "E"   "48" "alpha"  $universe_alpha
+grab_token_image "A"   "42" "alpha"  $universe_alpha
+grab_token_image "A"   "43" "alpha"  $universe_alpha
+grab_token_image "A"   "44" "alpha"  $universe_alpha
+grab_token_image "A"   "45" "alpha"  $universe_alpha
+grab_token_image "A"   "46" "alpha"  $universe_alpha
+grab_token_image "A"   "47" "alpha"  $universe_alpha
+grab_token_image "A"   "48" "alpha"  $universe_alpha
+grab_token_image "A"   "49" "alpha"  $universe_alpha
+grab_token_image "A"   "50" "alpha"  $universe_alpha
+grab_token_image "Aw"  "44" "alpha"  $universe_alpha
+grab_token_image "Aw"  "45" "alpha"  $universe_alpha
+grab_token_image "Aw"  "46" "alpha"  $universe_alpha
+grab_token_image "Aw"  "47" "alpha"  $universe_alpha
+grab_token_image "Aw"  "48" "alpha"  $universe_alpha
+grab_token_image "Aw"  "49" "alpha"  $universe_alpha
+grab_token_image "Aw"  "50" "alpha"  $universe_alpha
+grab_token_image "Aw"  "51" "alpha"  $universe_alpha
+grab_token_image "Aw"  "52" "alpha"  $universe_alpha
+grab_token_image "Oc"  "46" "alpha"  $universe_alpha
+grab_token_image "Oc"  "47" "alpha"  $universe_alpha
+grab_token_image "Oc"  "48" "alpha"  $universe_alpha
+grab_token_image "Oc"  "49" "alpha"  $universe_alpha
+grab_token_image "Oc"  "50" "alpha"  $universe_alpha
+grab_token_image "Oc"  "51" "alpha"  $universe_alpha
+grab_token_image "Oc"  "52" "alpha"  $universe_alpha
+grab_token_image "Oc"  "53" "alpha"  $universe_alpha
+grab_token_image "Oc"  "54" "alpha"  $universe_alpha
+grab_token_image "Nb"  "47" "alpha"  $universe_alpha
+grab_token_image "Nb"  "48" "alpha"  $universe_alpha
+grab_token_image "Nb"  "49" "alpha"  $universe_alpha
+grab_token_image "Nb"  "50" "alpha"  $universe_alpha
+grab_token_image "Nb"  "51" "alpha"  $universe_alpha
+grab_token_image "Nb"  "52" "alpha"  $universe_alpha
+grab_token_image "Nb"  "53" "alpha"  $universe_alpha
+grab_token_image "Nb"  "54" "alpha"  $universe_alpha
+grab_token_image "Nb"  "55" "alpha"  $universe_alpha
+grab_token_image "Nb"  "56" "alpha"  $universe_alpha
+grab_token_image "Xk"  "50" "alpha"  $universe_alpha
+grab_token_image "Xk"  "51" "alpha"  $universe_alpha
+grab_token_image "Xk"  "52" "alpha"  $universe_alpha
+grab_token_image "Xk"  "53" "alpha"  $universe_alpha
+grab_token_image "Xk"  "54" "alpha"  $universe_alpha
+grab_token_image "Xk"  "55" "alpha"  $universe_alpha
+grab_token_image "Xk"  "56" "alpha"  $universe_alpha
+grab_token_image "Xk"  "57" "alpha"  $universe_alpha
+grab_token_image "Xk"  "58" "alpha"  $universe_alpha
+grab_token_image "Xk"  "59" "alpha"  $universe_alpha
+grab_token_image "Ic"  "51" "alpha"  $universe_alpha
+grab_token_image "Ic"  "52" "alpha"  $universe_alpha
+grab_token_image "Ic"  "53" "alpha"  $universe_alpha
+grab_token_image "Ic"  "54" "alpha"  $universe_alpha
+grab_token_image "Ic"  "55" "alpha"  $universe_alpha
+grab_token_image "Ic"  "56" "alpha"  $universe_alpha
+grab_token_image "Ic"  "57" "alpha"  $universe_alpha
+grab_token_image "Ic"  "58" "alpha"  $universe_alpha
+grab_token_image "Ic"  "59" "alpha"  $universe_alpha
+grab_token_image "Ic"  "60" "alpha"  $universe_alpha
+grab_token_image "Ic"  "61" "alpha"  $universe_alpha
+grab_token_image "Ic"  "62" "alpha"  $universe_alpha
+grab_token_image "Yp"  "54" "alpha"  $universe_alpha
+grab_token_image "Yp"  "55" "alpha"  $universe_alpha
+grab_token_image "Yp"  "56" "alpha"  $universe_alpha
+grab_token_image "Yp"  "57" "alpha"  $universe_alpha
+grab_token_image "Yp"  "58" "alpha"  $universe_alpha
+grab_token_image "Yp"  "59" "alpha"  $universe_alpha
+grab_token_image "Yp"  "60" "alpha"  $universe_alpha
+grab_token_image "Yp"  "61" "alpha"  $universe_alpha
+grab_token_image "Yp"  "62" "alpha"  $universe_alpha
+grab_token_image "Yp"  "63" "alpha"  $universe_alpha
+grab_token_image "Jx"  "56" "alpha"  $universe_alpha
+grab_token_image "Jx"  "57" "alpha"  $universe_alpha
+grab_token_image "Jx"  "58" "alpha"  $universe_alpha
+grab_token_image "Jx"  "59" "alpha"  $universe_alpha
+grab_token_image "Jx"  "60" "alpha"  $universe_alpha
+grab_token_image "Jx"  "61" "alpha"  $universe_alpha
+grab_token_image "Jx"  "62" "alpha"  $universe_alpha
+grab_token_image "Jx"  "63" "alpha"  $universe_alpha
+grab_token_image "Jx"  "64" "alpha"  $universe_alpha
+grab_token_image "Jx"  "65" "alpha"  $universe_alpha
+grab_token_image "Hb"  "57" "alpha"  $universe_alpha
+grab_token_image "Hb"  "58" "alpha"  $universe_alpha
+grab_token_image "Hb"  "59" "alpha"  $universe_alpha
+grab_token_image "Hb"  "60" "alpha"  $universe_alpha
+grab_token_image "Hb"  "61" "alpha"  $universe_alpha
+grab_token_image "Hb"  "62" "alpha"  $universe_alpha
+grab_token_image "Hb"  "63" "alpha"  $universe_alpha
+grab_token_image "Hb"  "64" "alpha"  $universe_alpha
+grab_token_image "Hb"  "65" "alpha"  $universe_alpha
+grab_token_image "Hb"  "66" "alpha"  $universe_alpha
+grab_token_image "Hb"  "67" "alpha"  $universe_alpha
+grab_token_image "At"  "60" "alpha"  $universe_alpha
+grab_token_image "At"  "61" "alpha"  $universe_alpha
+grab_token_image "At"  "62" "alpha"  $universe_alpha
+grab_token_image "At"  "63" "alpha"  $universe_alpha
+grab_token_image "At"  "64" "alpha"  $universe_alpha
+grab_token_image "At"  "65" "alpha"  $universe_alpha
+grab_token_image "At"  "66" "alpha"  $universe_alpha
+grab_token_image "At"  "67" "alpha"  $universe_alpha
+grab_token_image "At"  "68" "alpha"  $universe_alpha
+grab_token_image "At"  "69" "alpha"  $universe_alpha
+grab_token_image "Ny"  "61" "alpha"  $universe_alpha
+grab_token_image "Ny"  "62" "alpha"  $universe_alpha
+grab_token_image "Ny"  "63" "alpha"  $universe_alpha
+grab_token_image "Ny"  "64" "alpha"  $universe_alpha
+grab_token_image "Ny"  "65" "alpha"  $universe_alpha
+grab_token_image "Ny"  "66" "alpha"  $universe_alpha
+grab_token_image "Ny"  "67" "alpha"  $universe_alpha
+grab_token_image "Ny"  "68" "alpha"  $universe_alpha
+grab_token_image "Ny"  "69" "alpha"  $universe_alpha
+grab_token_image "Ny"  "70" "alpha"  $universe_alpha
+grab_token_image "Ny"  "71" "alpha"  $universe_alpha
+grab_token_image "Ny"  "72" "alpha"  $universe_alpha
+grab_token_image "Pw"  "64" "alpha"  $universe_alpha
+grab_token_image "Pw"  "65" "alpha"  $universe_alpha
+grab_token_image "Pw"  "66" "alpha"  $universe_alpha
+grab_token_image "Pw"  "67" "alpha"  $universe_alpha
+grab_token_image "Pw"  "68" "alpha"  $universe_alpha
+grab_token_image "Pw"  "69" "alpha"  $universe_alpha
+grab_token_image "Pw"  "70" "alpha"  $universe_alpha
+grab_token_image "Pw"  "71" "alpha"  $universe_alpha
+grab_token_image "Pw"  "72" "alpha"  $universe_alpha
+grab_token_image "Pw"  "73" "alpha"  $universe_alpha
+grab_token_image "Pw"  "74" "alpha"  $universe_alpha
+grab_token_image "Gk"  "65" "alpha"  $universe_alpha
+grab_token_image "Gk"  "66" "alpha"  $universe_alpha
+grab_token_image "Gk"  "67" "alpha"  $universe_alpha
+grab_token_image "Gk"  "68" "alpha"  $universe_alpha
+grab_token_image "Gk"  "69" "alpha"  $universe_alpha
+grab_token_image "Gk"  "70" "alpha"  $universe_alpha
+grab_token_image "Gk"  "71" "alpha"  $universe_alpha
+grab_token_image "Gk"  "72" "alpha"  $universe_alpha
+grab_token_image "Gk"  "73" "alpha"  $universe_alpha
+grab_token_image "Gk"  "74" "alpha"  $universe_alpha
+grab_token_image "Gk"  "75" "alpha"  $universe_alpha
+grab_token_image "Gk"  "76" "alpha"  $universe_alpha
+grab_token_image "Gk"  "77" "alpha"  $universe_alpha
+grab_token_image "Qi"  "67" "alpha"  $universe_alpha
+grab_token_image "Qi"  "68" "alpha"  $universe_alpha
+grab_token_image "Qi"  "69" "alpha"  $universe_alpha
+grab_token_image "Qi"  "70" "alpha"  $universe_alpha
+grab_token_image "Qi"  "71" "alpha"  $universe_alpha
+grab_token_image "Qi"  "72" "alpha"  $universe_alpha
+grab_token_image "Qi"  "73" "alpha"  $universe_alpha
+grab_token_image "Qi"  "74" "alpha"  $universe_alpha
+grab_token_image "Qi"  "75" "alpha"  $universe_alpha
+grab_token_image "Qi"  "76" "alpha"  $universe_alpha
+grab_token_image "Qi"  "77" "alpha"  $universe_alpha
+grab_token_image "Qi"  "78" "alpha"  $universe_alpha
+grab_token_image "Xy"  "69" "alpha"  $universe_alpha
+grab_token_image "Xy"  "70" "alpha"  $universe_alpha
+grab_token_image "Xy"  "71" "alpha"  $universe_alpha
+grab_token_image "Xy"  "72" "alpha"  $universe_alpha
+grab_token_image "Xy"  "73" "alpha"  $universe_alpha
+grab_token_image "Xy"  "74" "alpha"  $universe_alpha
+grab_token_image "Xy"  "75" "alpha"  $universe_alpha
+grab_token_image "Xy"  "76" "alpha"  $universe_alpha
+grab_token_image "Xy"  "77" "alpha"  $universe_alpha
+grab_token_image "Xy"  "78" "alpha"  $universe_alpha
+grab_token_image "Xy"  "79" "alpha"  $universe_alpha
+grab_token_image "Gq"  "71" "alpha"  $universe_alpha
+grab_token_image "Gq"  "72" "alpha"  $universe_alpha
+grab_token_image "Gq"  "73" "alpha"  $universe_alpha
+grab_token_image "Gq"  "74" "alpha"  $universe_alpha
+grab_token_image "Gq"  "75" "alpha"  $universe_alpha
+grab_token_image "Gq"  "76" "alpha"  $universe_alpha
+grab_token_image "Gq"  "77" "alpha"  $universe_alpha
+grab_token_image "Gq"  "78" "alpha"  $universe_alpha
+grab_token_image "Gq"  "79" "alpha"  $universe_alpha
+grab_token_image "Gq"  "80" "alpha"  $universe_alpha
+grab_token_image "Bt"  "73" "alpha"  $universe_alpha
+grab_token_image "Bt"  "74" "alpha"  $universe_alpha
+grab_token_image "Bt"  "75" "alpha"  $universe_alpha
+grab_token_image "Bt"  "76" "alpha"  $universe_alpha
+grab_token_image "Bt"  "77" "alpha"  $universe_alpha
+grab_token_image "Bt"  "78" "alpha"  $universe_alpha
+grab_token_image "Bt"  "79" "alpha"  $universe_alpha
+grab_token_image "Bt"  "80" "alpha"  $universe_alpha
+grab_token_image "Bt"  "81" "alpha"  $universe_alpha
+grab_token_image "H"   "75" "alpha"  $universe_alpha
+grab_token_image "H"   "76" "alpha"  $universe_alpha
+grab_token_image "H"   "77" "alpha"  $universe_alpha
+grab_token_image "H"   "78" "alpha"  $universe_alpha
+grab_token_image "H"   "79" "alpha"  $universe_alpha
+grab_token_image "H"   "80" "alpha"  $universe_alpha
+grab_token_image "H"   "81" "alpha"  $universe_alpha
+grab_token_image "H"   "82" "alpha"  $universe_alpha
+grab_token_image "U"   "77" "alpha"  $universe_alpha
+grab_token_image "U"   "78" "alpha"  $universe_alpha
+grab_token_image "U"   "79" "alpha"  $universe_alpha
+grab_token_image "U"   "80" "alpha"  $universe_alpha
+grab_token_image "U"   "81" "alpha"  $universe_alpha
+grab_token_image "U"   "82" "alpha"  $universe_alpha
+grab_token_image "U"   "83" "alpha"  $universe_alpha
+grab_token_image "Sq"  "79" "alpha"  $universe_alpha
+grab_token_image "Sq"  "80" "alpha"  $universe_alpha
+grab_token_image "Sq"  "81" "alpha"  $universe_alpha
+grab_token_image "Sq"  "82" "alpha"  $universe_alpha
+grab_token_image "Sq"  "83" "alpha"  $universe_alpha
+grab_token_image "Sq"  "84" "alpha"  $universe_alpha
+grab_token_image "Ua"  "83" "alpha"  $universe_alpha
+grab_token_image "Ua"  "84" "alpha"  $universe_alpha
+grab_token_image "Ua"  "85" "alpha"  $universe_alpha
 
 
 #########################################################--------[   Universe Bohr    ]--------###############################################################################################################################################################################################
 
-grab_token_image "Sr"    "1"   $universe_bohr
-grab_token_image "Sr"    "2"   $universe_bohr
-grab_token_image "Sr"    "3"   $universe_bohr
-grab_token_image "Ei"    "4"   $universe_bohr
-grab_token_image "Ei"    "5"   $universe_bohr
-grab_token_image "As"    "5"   $universe_bohr
-grab_token_image "As"    "6"   $universe_bohr
-grab_token_image "As"    "7"   $universe_bohr
-grab_token_image "Dz"    "7"   $universe_bohr
-grab_token_image "Dz"    "8"   $universe_bohr
-grab_token_image "Dz"    "9"   $universe_bohr
-grab_token_image "Dz"   "10"   $universe_bohr
-grab_token_image "Gj"    "9"   $universe_bohr
-grab_token_image "Gj"   "10"   $universe_bohr
-grab_token_image "Gj"   "11"   $universe_bohr
-grab_token_image "Gj"   "12"   $universe_bohr
-grab_token_image "Vi"   "10"   $universe_bohr
-grab_token_image "Vi"   "11"   $universe_bohr
-grab_token_image "Vi"   "12"   $universe_bohr
-grab_token_image "Vi"   "13"   $universe_bohr
-grab_token_image "Vi"   "14"   $universe_bohr
-grab_token_image "Vi"   "15"   $universe_bohr
-grab_token_image "Ct"   "13"   $universe_bohr
-grab_token_image "Ct"   "14"   $universe_bohr
-grab_token_image "Ct"   "15"   $universe_bohr
-grab_token_image "Ct"   "16"   $universe_bohr
-grab_token_image "Ct"   "17"   $universe_bohr
-grab_token_image "T"    "14"   $universe_bohr
-grab_token_image "T"    "15"   $universe_bohr
-grab_token_image "T"    "16"   $universe_bohr
-grab_token_image "T"    "17"   $universe_bohr
-grab_token_image "T"    "18"   $universe_bohr
-grab_token_image "T"    "19"   $universe_bohr
-grab_token_image "Xj"   "16"   $universe_bohr
-grab_token_image "Xj"   "17"   $universe_bohr
-grab_token_image "Xj"   "18"   $universe_bohr
-grab_token_image "Xj"   "19"   $universe_bohr
-grab_token_image "Xj"   "20"   $universe_bohr
-grab_token_image "Xj"   "21"   $universe_bohr
-grab_token_image "Eb"   "19"   $universe_bohr
-grab_token_image "Eb"   "20"   $universe_bohr
-grab_token_image "Eb"   "21"   $universe_bohr
-grab_token_image "Eb"   "22"   $universe_bohr
-grab_token_image "Eb"   "23"   $universe_bohr
-grab_token_image "P"    "21"   $universe_bohr
-grab_token_image "P"    "22"   $universe_bohr
-grab_token_image "P"    "23"   $universe_bohr
-grab_token_image "P"    "24"   $universe_bohr
-grab_token_image "P"    "25"   $universe_bohr
-grab_token_image "P"    "26"   $universe_bohr
-grab_token_image "Ro"   "22"   $universe_bohr
-grab_token_image "Ro"   "23"   $universe_bohr
-grab_token_image "Ro"   "24"   $universe_bohr
-grab_token_image "Ro"   "25"   $universe_bohr
-grab_token_image "Ro"   "26"   $universe_bohr
-grab_token_image "Ro"   "27"   $universe_bohr
-grab_token_image "Ro"   "28"   $universe_bohr
-grab_token_image "Cl"   "24"   $universe_bohr
-grab_token_image "Cl"   "25"   $universe_bohr
-grab_token_image "Cl"   "26"   $universe_bohr
-grab_token_image "Cl"   "27"   $universe_bohr
-grab_token_image "Cl"   "28"   $universe_bohr
-grab_token_image "Cl"   "29"   $universe_bohr
-grab_token_image "Cl"   "30"   $universe_bohr
-grab_token_image "Yu"   "26"   $universe_bohr
-grab_token_image "Yu"   "27"   $universe_bohr
-grab_token_image "Yu"   "28"   $universe_bohr
-grab_token_image "Yu"   "29"   $universe_bohr
-grab_token_image "Yu"   "30"   $universe_bohr
-grab_token_image "Yu"   "31"   $universe_bohr
-grab_token_image "Nd"   "27"   $universe_bohr
-grab_token_image "Nd"   "28"   $universe_bohr
-grab_token_image "Nd"   "29"   $universe_bohr
-grab_token_image "Nd"   "30"   $universe_bohr
-grab_token_image "Nd"   "31"   $universe_bohr
-grab_token_image "Nd"   "32"   $universe_bohr
-grab_token_image "Nd"   "33"   $universe_bohr
-grab_token_image "Nd"   "34"   $universe_bohr
-grab_token_image "K"    "29"   $universe_bohr
-grab_token_image "K"    "30"   $universe_bohr
-grab_token_image "K"    "31"   $universe_bohr
-grab_token_image "K"    "32"   $universe_bohr
-grab_token_image "K"    "33"   $universe_bohr
-grab_token_image "K"    "34"   $universe_bohr
-grab_token_image "K"    "35"   $universe_bohr
-grab_token_image "K"    "36"   $universe_bohr
-grab_token_image "K"    "37"   $universe_bohr
-grab_token_image "Mt"   "32"   $universe_bohr
-grab_token_image "Mt"   "33"   $universe_bohr
-grab_token_image "Mt"   "34"   $universe_bohr
-grab_token_image "Mt"   "35"   $universe_bohr
-grab_token_image "Mt"   "36"   $universe_bohr
-grab_token_image "Mt"   "37"   $universe_bohr
-grab_token_image "Mt"   "38"   $universe_bohr
-grab_token_image "Mt"   "39"   $universe_bohr
-grab_token_image "Lu"   "34"   $universe_bohr
-grab_token_image "Lu"   "35"   $universe_bohr
-grab_token_image "Lu"   "36"   $universe_bohr
-grab_token_image "Lu"   "37"   $universe_bohr
-grab_token_image "Lu"   "38"   $universe_bohr
-grab_token_image "Lu"   "39"   $universe_bohr
-grab_token_image "Lu"   "40"   $universe_bohr
-grab_token_image "Lu"   "41"   $universe_bohr
-grab_token_image "Dx"   "35"   $universe_bohr
-grab_token_image "Dx"   "36"   $universe_bohr
-grab_token_image "Dx"   "37"   $universe_bohr
-grab_token_image "Dx"   "38"   $universe_bohr
-grab_token_image "Dx"   "39"   $universe_bohr
-grab_token_image "Dx"   "40"   $universe_bohr
-grab_token_image "Dx"   "41"   $universe_bohr
-grab_token_image "Dx"   "42"   $universe_bohr
-grab_token_image "Dx"   "43"   $universe_bohr
-grab_token_image "Dx"   "44"   $universe_bohr
-grab_token_image "Gd"   "38"   $universe_bohr
-grab_token_image "Gd"   "39"   $universe_bohr
-grab_token_image "Gd"   "40"   $universe_bohr
-grab_token_image "Gd"   "41"   $universe_bohr
-grab_token_image "Gd"   "42"   $universe_bohr
-grab_token_image "Gd"   "43"   $universe_bohr
-grab_token_image "Gd"   "44"   $universe_bohr
-grab_token_image "Gd"   "45"   $universe_bohr
-grab_token_image "Gd"   "46"   $universe_bohr
-grab_token_image "V"    "39"   $universe_bohr
-grab_token_image "V"    "40"   $universe_bohr
-grab_token_image "V"    "41"   $universe_bohr
-grab_token_image "V"    "42"   $universe_bohr
-grab_token_image "V"    "43"   $universe_bohr
-grab_token_image "V"    "44"   $universe_bohr
-grab_token_image "V"    "45"   $universe_bohr
-grab_token_image "V"    "46"   $universe_bohr
-grab_token_image "V"    "47"   $universe_bohr
-grab_token_image "V"    "48"   $universe_bohr
-grab_token_image "Uq"   "41"   $universe_bohr
-grab_token_image "Uq"   "42"   $universe_bohr
-grab_token_image "Uq"   "43"   $universe_bohr
-grab_token_image "Uq"   "44"   $universe_bohr
-grab_token_image "Uq"   "45"   $universe_bohr
-grab_token_image "Uq"   "46"   $universe_bohr
-grab_token_image "Uq"   "47"   $universe_bohr
-grab_token_image "Uq"   "48"   $universe_bohr
-grab_token_image "Uq"   "49"   $universe_bohr
-grab_token_image "Uq"   "50"   $universe_bohr
-grab_token_image "Uq"   "51"   $universe_bohr
-grab_token_image "Uq"   "52"   $universe_bohr
-grab_token_image "Pb"   "43"   $universe_bohr
-grab_token_image "Pb"   "44"   $universe_bohr
-grab_token_image "Pb"   "45"   $universe_bohr
-grab_token_image "Pb"   "46"   $universe_bohr
-grab_token_image "Pb"   "47"   $universe_bohr
-grab_token_image "Pb"   "48"   $universe_bohr
-grab_token_image "Pb"   "49"   $universe_bohr
-grab_token_image "Pb"   "50"   $universe_bohr
-grab_token_image "Pb"   "51"   $universe_bohr
-grab_token_image "Pb"   "52"   $universe_bohr
-grab_token_image "Pb"   "53"   $universe_bohr
-grab_token_image "Wy"   "45"   $universe_bohr
-grab_token_image "Wy"   "46"   $universe_bohr
-grab_token_image "Wy"   "47"   $universe_bohr
-grab_token_image "Wy"   "48"   $universe_bohr
-grab_token_image "Wy"   "49"   $universe_bohr
-grab_token_image "Wy"   "50"   $universe_bohr
-grab_token_image "Wy"   "51"   $universe_bohr
-grab_token_image "Wy"   "52"   $universe_bohr
-grab_token_image "Wy"   "53"   $universe_bohr
-grab_token_image "Wy"   "54"   $universe_bohr
-grab_token_image "Wy"   "55"   $universe_bohr
-grab_token_image "Wy"   "56"   $universe_bohr
-grab_token_image "L"    "46"   $universe_bohr
-grab_token_image "L"    "47"   $universe_bohr
-grab_token_image "L"    "48"   $universe_bohr
-grab_token_image "L"    "49"   $universe_bohr
-grab_token_image "L"    "50"   $universe_bohr
-grab_token_image "L"    "51"   $universe_bohr
-grab_token_image "L"    "52"   $universe_bohr
-grab_token_image "L"    "53"   $universe_bohr
-grab_token_image "L"    "54"   $universe_bohr
-grab_token_image "L"    "55"   $universe_bohr
-grab_token_image "L"    "56"   $universe_bohr
-grab_token_image "L"    "57"   $universe_bohr
-grab_token_image "Ux"   "48"   $universe_bohr
-grab_token_image "Ux"   "49"   $universe_bohr
-grab_token_image "Ux"   "50"   $universe_bohr
-grab_token_image "Ux"   "51"   $universe_bohr
-grab_token_image "Ux"   "52"   $universe_bohr
-grab_token_image "Ux"   "53"   $universe_bohr
-grab_token_image "Ux"   "54"   $universe_bohr
-grab_token_image "Ux"   "55"   $universe_bohr
-grab_token_image "Ux"   "56"   $universe_bohr
-grab_token_image "Ux"   "57"   $universe_bohr
-grab_token_image "Ux"   "58"   $universe_bohr
-grab_token_image "Pg"   "50"   $universe_bohr
-grab_token_image "Pg"   "51"   $universe_bohr
-grab_token_image "Pg"   "52"   $universe_bohr
-grab_token_image "Pg"   "53"   $universe_bohr
-grab_token_image "Pg"   "54"   $universe_bohr
-grab_token_image "Pg"   "55"   $universe_bohr
-grab_token_image "Pg"   "56"   $universe_bohr
-grab_token_image "Pg"   "57"   $universe_bohr
-grab_token_image "Pg"   "58"   $universe_bohr
-grab_token_image "Pg"   "59"   $universe_bohr
-grab_token_image "Qe"   "52"   $universe_bohr
-grab_token_image "Qe"   "53"   $universe_bohr
-grab_token_image "Qe"   "54"   $universe_bohr
-grab_token_image "Qe"   "55"   $universe_bohr
-grab_token_image "Qe"   "56"   $universe_bohr
-grab_token_image "Qe"   "57"   $universe_bohr
-grab_token_image "Qe"   "58"   $universe_bohr
-grab_token_image "Qe"   "59"   $universe_bohr
-grab_token_image "Qe"   "60"   $universe_bohr
-grab_token_image "Qe"   "61"   $universe_bohr
-grab_token_image "Qe"   "62"   $universe_bohr
-grab_token_image "C"    "53"   $universe_bohr
-grab_token_image "C"    "54"   $universe_bohr
-grab_token_image "C"    "55"   $universe_bohr
-grab_token_image "C"    "56"   $universe_bohr
-grab_token_image "C"    "57"   $universe_bohr
-grab_token_image "C"    "58"   $universe_bohr
-grab_token_image "C"    "59"   $universe_bohr
-grab_token_image "C"    "60"   $universe_bohr
-grab_token_image "C"    "61"   $universe_bohr
-grab_token_image "C"    "62"   $universe_bohr
-grab_token_image "C"    "63"   $universe_bohr
-grab_token_image "C"    "64"   $universe_bohr
-grab_token_image "Ns"   "56"   $universe_bohr
-grab_token_image "Ns"   "57"   $universe_bohr
-grab_token_image "Ns"   "58"   $universe_bohr
-grab_token_image "Ns"   "59"   $universe_bohr
-grab_token_image "Ns"   "60"   $universe_bohr
-grab_token_image "Ns"   "61"   $universe_bohr
-grab_token_image "Ns"   "62"   $universe_bohr
-grab_token_image "Ns"   "63"   $universe_bohr
-grab_token_image "Ns"   "64"   $universe_bohr
-grab_token_image "Ns"   "65"   $universe_bohr
-grab_token_image "Ns"   "66"   $universe_bohr
-grab_token_image "Ns"   "67"   $universe_bohr
-grab_token_image "Ai"   "58"   $universe_bohr
-grab_token_image "Ai"   "59"   $universe_bohr
-grab_token_image "Ai"   "60"   $universe_bohr
-grab_token_image "Ai"   "61"   $universe_bohr
-grab_token_image "Ai"   "62"   $universe_bohr
-grab_token_image "Ai"   "63"   $universe_bohr
-grab_token_image "Ai"   "64"   $universe_bohr
-grab_token_image "Ai"   "65"   $universe_bohr
-grab_token_image "Ai"   "66"   $universe_bohr
-grab_token_image "Ai"   "67"   $universe_bohr
-grab_token_image "Ai"   "68"   $universe_bohr
-grab_token_image "Ai"   "69"   $universe_bohr
-grab_token_image "F"    "59"   $universe_bohr
-grab_token_image "F"    "60"   $universe_bohr
-grab_token_image "F"    "61"   $universe_bohr
-grab_token_image "F"    "62"   $universe_bohr
-grab_token_image "F"    "63"   $universe_bohr
-grab_token_image "F"    "64"   $universe_bohr
-grab_token_image "F"    "65"   $universe_bohr
-grab_token_image "F"    "66"   $universe_bohr
-grab_token_image "F"    "67"   $universe_bohr
-grab_token_image "F"    "68"   $universe_bohr
-grab_token_image "F"    "69"   $universe_bohr
-grab_token_image "F"    "70"   $universe_bohr
-grab_token_image "F"    "71"   $universe_bohr
-grab_token_image "F"    "72"   $universe_bohr
-grab_token_image "F"    "73"   $universe_bohr
-grab_token_image "Gy"   "63"   $universe_bohr
-grab_token_image "Gy"   "64"   $universe_bohr
-grab_token_image "Gy"   "65"   $universe_bohr
-grab_token_image "Gy"   "66"   $universe_bohr
-grab_token_image "Gy"   "67"   $universe_bohr
-grab_token_image "Gy"   "68"   $universe_bohr
-grab_token_image "Gy"   "69"   $universe_bohr
-grab_token_image "Gy"   "70"   $universe_bohr
-grab_token_image "Gy"   "73"   $universe_bohr
-grab_token_image "Gy"   "74"   $universe_bohr
-grab_token_image "Kk"   "64"   $universe_bohr
-grab_token_image "Kk"   "65"   $universe_bohr
-grab_token_image "Kk"   "66"   $universe_bohr
-grab_token_image "Kk"   "67"   $universe_bohr
-grab_token_image "Kk"   "68"   $universe_bohr
-grab_token_image "Kk"   "69"   $universe_bohr
-grab_token_image "Kk"   "70"   $universe_bohr
-grab_token_image "Kk"   "71"   $universe_bohr
-grab_token_image "Kk"   "72"   $universe_bohr
-grab_token_image "Kk"   "73"   $universe_bohr
-grab_token_image "Kk"   "74"   $universe_bohr
-grab_token_image "Kk"   "75"   $universe_bohr
-grab_token_image "Kk"   "76"   $universe_bohr
-grab_token_image "Yv"   "66"   $universe_bohr
-grab_token_image "Yv"   "67"   $universe_bohr
-grab_token_image "Yv"   "68"   $universe_bohr
-grab_token_image "Yv"   "69"   $universe_bohr
-grab_token_image "Yv"   "70"   $universe_bohr
-grab_token_image "Yv"   "71"   $universe_bohr
-grab_token_image "Yv"   "72"   $universe_bohr
-grab_token_image "Yv"   "73"   $universe_bohr
-grab_token_image "Yv"   "74"   $universe_bohr
-grab_token_image "Yv"   "75"   $universe_bohr
-grab_token_image "Yv"   "77"   $universe_bohr
-grab_token_image "Yv"   "78"   $universe_bohr
-grab_token_image "Yv"   "80"   $universe_bohr
-grab_token_image "Cj"   "68"   $universe_bohr
-grab_token_image "Cj"   "69"   $universe_bohr
-grab_token_image "Cj"   "70"   $universe_bohr
-grab_token_image "Cj"   "71"   $universe_bohr
-grab_token_image "Cj"   "72"   $universe_bohr
-grab_token_image "Cj"   "73"   $universe_bohr
-grab_token_image "Cj"   "74"   $universe_bohr
-grab_token_image "Cj"   "75"   $universe_bohr
-grab_token_image "Cj"   "76"   $universe_bohr
-grab_token_image "Cj"   "77"   $universe_bohr
-grab_token_image "Cj"   "78"   $universe_bohr
-grab_token_image "Cj"   "79"   $universe_bohr
-grab_token_image "Cj"   "80"   $universe_bohr
-grab_token_image "Cj"   "81"   $universe_bohr
-grab_token_image "Iu"   "72"   $universe_bohr
-grab_token_image "Iu"   "73"   $universe_bohr
-grab_token_image "Iu"   "74"   $universe_bohr
-grab_token_image "Iu"   "75"   $universe_bohr
-grab_token_image "Iu"   "76"   $universe_bohr
-grab_token_image "Iu"   "77"   $universe_bohr
-grab_token_image "Iu"   "78"   $universe_bohr
-grab_token_image "Iu"   "79"   $universe_bohr
-grab_token_image "Iu"   "80"   $universe_bohr
-grab_token_image "Iu"   "81"   $universe_bohr
-grab_token_image "Iu"   "82"   $universe_bohr
-grab_token_image "Iu"   "83"   $universe_bohr
-grab_token_image "D"    "74"   $universe_bohr
-grab_token_image "D"    "75"   $universe_bohr
-grab_token_image "D"    "76"   $universe_bohr
-grab_token_image "D"    "77"   $universe_bohr
-grab_token_image "D"    "78"   $universe_bohr
-grab_token_image "D"    "79"   $universe_bohr
-grab_token_image "D"    "80"   $universe_bohr
-grab_token_image "D"    "81"   $universe_bohr
-grab_token_image "D"    "82"   $universe_bohr
-grab_token_image "D"    "83"   $universe_bohr
-grab_token_image "D"    "84"   $universe_bohr
-grab_token_image "Co"   "74"   $universe_bohr
-grab_token_image "Co"   "75"   $universe_bohr
-grab_token_image "Co"   "76"   $universe_bohr
-grab_token_image "Co"   "78"   $universe_bohr
-grab_token_image "Co"   "79"   $universe_bohr
-grab_token_image "Co"   "80"   $universe_bohr
-grab_token_image "Co"   "81"   $universe_bohr
-grab_token_image "Co"   "82"   $universe_bohr
-grab_token_image "Co"   "83"   $universe_bohr
-grab_token_image "Co"   "84"   $universe_bohr
-grab_token_image "Co"   "85"   $universe_bohr
-grab_token_image "Co"   "86"   $universe_bohr
-grab_token_image "Co"   "87"   $universe_bohr
-grab_token_image "Co"   "88"   $universe_bohr
-grab_token_image "W"    "76"   $universe_bohr
-grab_token_image "W"    "77"   $universe_bohr
-grab_token_image "W"    "78"   $universe_bohr
-grab_token_image "W"    "79"   $universe_bohr
-grab_token_image "W"    "80"   $universe_bohr
-grab_token_image "W"    "81"   $universe_bohr
-grab_token_image "W"    "82"   $universe_bohr
-grab_token_image "W"    "83"   $universe_bohr
-grab_token_image "W"    "84"   $universe_bohr
-grab_token_image "W"    "85"   $universe_bohr
-grab_token_image "W"    "86"   $universe_bohr
-grab_token_image "W"    "87"   $universe_bohr
-grab_token_image "W"    "88"   $universe_bohr
-grab_token_image "W"    "89"   $universe_bohr
-grab_token_image "W"    "90"   $universe_bohr
-grab_token_image "W"    "91"   $universe_bohr
-grab_token_image "Lx"   "76"   $universe_bohr
-grab_token_image "Lx"   "77"   $universe_bohr
-grab_token_image "Lx"   "79"   $universe_bohr
-grab_token_image "Lx"   "80"   $universe_bohr
-grab_token_image "Lx"   "81"   $universe_bohr
-grab_token_image "Lx"   "82"   $universe_bohr
-grab_token_image "Lx"   "83"   $universe_bohr
-grab_token_image "Lx"   "84"   $universe_bohr
-grab_token_image "Lx"   "85"   $universe_bohr
-grab_token_image "Lx"   "86"   $universe_bohr
-grab_token_image "Lx"   "87"   $universe_bohr
-grab_token_image "Lx"   "88"   $universe_bohr
-grab_token_image "Lx"   "89"   $universe_bohr
-grab_token_image "Lx"   "90"   $universe_bohr
-grab_token_image "Lx"   "91"   $universe_bohr
-grab_token_image "Lx"   "92"   $universe_bohr
-grab_token_image "Lx"   "93"   $universe_bohr
-grab_token_image "Lx"   "94"   $universe_bohr
-grab_token_image "Lx"   "95"   $universe_bohr
-grab_token_image "Lx"   "96"   $universe_bohr
-grab_token_image "N"    "81"   $universe_bohr
-grab_token_image "N"    "82"   $universe_bohr
-grab_token_image "N"    "83"   $universe_bohr
-grab_token_image "N"    "84"   $universe_bohr
-grab_token_image "N"    "85"   $universe_bohr
-grab_token_image "N"    "86"   $universe_bohr
-grab_token_image "N"    "87"   $universe_bohr
-grab_token_image "N"    "88"   $universe_bohr
-grab_token_image "N"    "89"   $universe_bohr
-grab_token_image "N"    "90"   $universe_bohr
-grab_token_image "N"    "91"   $universe_bohr
-grab_token_image "N"    "92"   $universe_bohr
-grab_token_image "N"    "93"   $universe_bohr
-grab_token_image "N"    "94"   $universe_bohr
-grab_token_image "N"    "95"   $universe_bohr
-grab_token_image "N"    "96"   $universe_bohr
-grab_token_image "U"    "83"   $universe_bohr
-grab_token_image "U"    "84"   $universe_bohr
-grab_token_image "U"    "85"   $universe_bohr
-grab_token_image "U"    "86"   $universe_bohr
-grab_token_image "U"    "87"   $universe_bohr
-grab_token_image "U"    "88"   $universe_bohr
-grab_token_image "U"    "89"   $universe_bohr
-grab_token_image "U"    "90"   $universe_bohr
-grab_token_image "U"    "91"   $universe_bohr
-grab_token_image "U"    "92"   $universe_bohr
-grab_token_image "U"    "93"   $universe_bohr
-grab_token_image "U"    "94"   $universe_bohr
-grab_token_image "U"    "95"   $universe_bohr
-grab_token_image "U"    "96"   $universe_bohr
-grab_token_image "U"    "97"   $universe_bohr
-grab_token_image "U"    "98"   $universe_bohr
-grab_token_image "U"    "99"   $universe_bohr
-grab_token_image "Vl"   "84"   $universe_bohr
-grab_token_image "Vl"   "85"   $universe_bohr
-grab_token_image "Vl"   "86"   $universe_bohr
-grab_token_image "Vl"   "87"   $universe_bohr
-grab_token_image "Vl"   "88"   $universe_bohr
-grab_token_image "Vl"   "89"   $universe_bohr
-grab_token_image "Vl"   "90"   $universe_bohr
-grab_token_image "Vl"   "91"   $universe_bohr
-grab_token_image "Vl"   "92"   $universe_bohr
-grab_token_image "Vl"   "93"   $universe_bohr
-grab_token_image "Vl"   "94"   $universe_bohr
-grab_token_image "Vl"   "95"   $universe_bohr
-grab_token_image "Vl"   "96"   $universe_bohr
-grab_token_image "Vl"   "97"   $universe_bohr
-grab_token_image "Vl"   "98"   $universe_bohr
-grab_token_image "Vl"   "99"   $universe_bohr
-grab_token_image "Vl"  "100"   $universe_bohr
-grab_token_image "Vl"  "101"   $universe_bohr
-grab_token_image "Se"   "84"   $universe_bohr
-grab_token_image "Se"   "85"   $universe_bohr
-grab_token_image "Se"   "86"   $universe_bohr
-grab_token_image "Se"   "87"   $universe_bohr
-grab_token_image "Se"   "88"   $universe_bohr
-grab_token_image "Se"   "89"   $universe_bohr
-grab_token_image "Se"   "90"   $universe_bohr
-grab_token_image "Se"   "91"   $universe_bohr
-grab_token_image "Se"   "92"   $universe_bohr
-grab_token_image "Se"   "93"   $universe_bohr
-grab_token_image "Se"   "94"   $universe_bohr
-grab_token_image "Se"   "95"   $universe_bohr
-grab_token_image "Se"   "96"   $universe_bohr
-grab_token_image "Se"   "97"   $universe_bohr
-grab_token_image "Se"   "98"   $universe_bohr
-grab_token_image "Se"   "99"   $universe_bohr
-grab_token_image "Se"  "100"   $universe_bohr
-grab_token_image "Se"  "101"   $universe_bohr
-grab_token_image "Se"  "102"   $universe_bohr
-grab_token_image "Se"  "103"   $universe_bohr
-grab_token_image "Se"  "104"   $universe_bohr
-grab_token_image "Nm"   "87"   $universe_bohr
-grab_token_image "Nm"   "88"   $universe_bohr
-grab_token_image "Nm"   "89"   $universe_bohr
-grab_token_image "Nm"   "90"   $universe_bohr
-grab_token_image "Nm"   "91"   $universe_bohr
-grab_token_image "Nm"   "92"   $universe_bohr
-grab_token_image "Nm"   "93"   $universe_bohr
-grab_token_image "Nm"   "94"   $universe_bohr
-grab_token_image "Nm"   "95"   $universe_bohr
-grab_token_image "Nm"   "96"   $universe_bohr
-grab_token_image "Nm"   "97"   $universe_bohr
-grab_token_image "Nm"   "98"   $universe_bohr
-grab_token_image "Nm"   "99"   $universe_bohr
-grab_token_image "Nm"  "100"   $universe_bohr
-grab_token_image "Nm"  "101"   $universe_bohr
-grab_token_image "Nm"  "102"   $universe_bohr
-grab_token_image "Nm"  "103"   $universe_bohr
-grab_token_image "Nm"  "104"   $universe_bohr
-grab_token_image "Nm"  "105"   $universe_bohr
-grab_token_image "Dd"   "88"   $universe_bohr
-grab_token_image "Dd"   "89"   $universe_bohr
-grab_token_image "Dd"   "90"   $universe_bohr
-grab_token_image "Dd"   "91"   $universe_bohr
-grab_token_image "Dd"   "92"   $universe_bohr
-grab_token_image "Dd"   "93"   $universe_bohr
-grab_token_image "Dd"   "94"   $universe_bohr
-grab_token_image "Dd"   "95"   $universe_bohr
-grab_token_image "Dd"   "96"   $universe_bohr
-grab_token_image "Dd"   "97"   $universe_bohr
-grab_token_image "Dd"   "98"   $universe_bohr
-grab_token_image "Dd"   "99"   $universe_bohr
-grab_token_image "Dd"  "100"   $universe_bohr
-grab_token_image "Dd"  "101"   $universe_bohr
-grab_token_image "Dd"  "102"   $universe_bohr
-grab_token_image "Dd"  "103"   $universe_bohr
-grab_token_image "Dd"  "104"   $universe_bohr
-grab_token_image "Dd"  "105"   $universe_bohr
-grab_token_image "Dd"  "106"   $universe_bohr
-grab_token_image "Ok"   "89"   $universe_bohr
-grab_token_image "Ok"   "90"   $universe_bohr
-grab_token_image "Ok"   "91"   $universe_bohr
-grab_token_image "Ok"   "92"   $universe_bohr
-grab_token_image "Ok"   "93"   $universe_bohr
-grab_token_image "Ok"   "94"   $universe_bohr
-grab_token_image "Ok"   "95"   $universe_bohr
-grab_token_image "Ok"   "96"   $universe_bohr
-grab_token_image "Ok"   "97"   $universe_bohr
-grab_token_image "Ok"   "98"   $universe_bohr
-grab_token_image "Ok"   "99"   $universe_bohr
-grab_token_image "Ok"  "100"   $universe_bohr
-grab_token_image "Ok"  "101"   $universe_bohr
-grab_token_image "Ok"  "102"   $universe_bohr
-grab_token_image "Ok"  "103"   $universe_bohr
-grab_token_image "Ok"  "104"   $universe_bohr
-grab_token_image "Ok"  "105"   $universe_bohr
-grab_token_image "Ok"  "106"   $universe_bohr
-grab_token_image "Ok"  "107"   $universe_bohr
-grab_token_image "Da"   "90"   $universe_bohr
-grab_token_image "Da"   "91"   $universe_bohr
-grab_token_image "Da"   "92"   $universe_bohr
-grab_token_image "Da"   "93"   $universe_bohr
-grab_token_image "Da"   "94"   $universe_bohr
-grab_token_image "Da"   "95"   $universe_bohr
-grab_token_image "Da"   "96"   $universe_bohr
-grab_token_image "Da"   "97"   $universe_bohr
-grab_token_image "Da"   "98"   $universe_bohr
-grab_token_image "Da"   "99"   $universe_bohr
-grab_token_image "Da"  "100"   $universe_bohr
-grab_token_image "Da"  "101"   $universe_bohr
-grab_token_image "Da"  "102"   $universe_bohr
-grab_token_image "Da"  "103"   $universe_bohr
-grab_token_image "Da"  "104"   $universe_bohr
-grab_token_image "Da"  "105"   $universe_bohr
-grab_token_image "Da"  "106"   $universe_bohr
-grab_token_image "Da"  "107"   $universe_bohr
-grab_token_image "Da"  "108"   $universe_bohr
-grab_token_image "Da"  "109"   $universe_bohr
-grab_token_image "Da"  "110"   $universe_bohr
-grab_token_image "S"    "94"   $universe_bohr
-grab_token_image "S"    "95"   $universe_bohr
-grab_token_image "S"    "96"   $universe_bohr
-grab_token_image "S"    "97"   $universe_bohr
-grab_token_image "S"    "98"   $universe_bohr
-grab_token_image "S"    "99"   $universe_bohr
-grab_token_image "S"   "100"   $universe_bohr
-grab_token_image "S"   "101"   $universe_bohr
-grab_token_image "S"   "102"   $universe_bohr
-grab_token_image "S"   "103"   $universe_bohr
-grab_token_image "S"   "104"   $universe_bohr
-grab_token_image "S"   "105"   $universe_bohr
-grab_token_image "S"   "106"   $universe_bohr
-grab_token_image "S"   "107"   $universe_bohr
-grab_token_image "S"   "108"   $universe_bohr
-grab_token_image "S"   "109"   $universe_bohr
-grab_token_image "Z"    "95"   $universe_bohr
-grab_token_image "Z"    "96"   $universe_bohr
-grab_token_image "Z"    "97"   $universe_bohr
-grab_token_image "Z"    "98"   $universe_bohr
-grab_token_image "Z"    "99"   $universe_bohr
-grab_token_image "Z"   "100"   $universe_bohr
-grab_token_image "Z"   "101"   $universe_bohr
-grab_token_image "Z"   "102"   $universe_bohr
-grab_token_image "Z"   "103"   $universe_bohr
-grab_token_image "Z"   "104"   $universe_bohr
-grab_token_image "Z"   "105"   $universe_bohr
-grab_token_image "Z"   "106"   $universe_bohr
-grab_token_image "Z"   "107"   $universe_bohr
-grab_token_image "Z"   "108"   $universe_bohr
-grab_token_image "Z"   "109"   $universe_bohr
-grab_token_image "Z"   "110"   $universe_bohr
-grab_token_image "Z"   "111"   $universe_bohr
-grab_token_image "Z"   "112"   $universe_bohr
-grab_token_image "Cv"   "97"   $universe_bohr
-grab_token_image "Cv"   "98"   $universe_bohr
-grab_token_image "Cv"   "99"   $universe_bohr
-grab_token_image "Cv"  "100"   $universe_bohr
-grab_token_image "Cv"  "101"   $universe_bohr
-grab_token_image "Cv"  "102"   $universe_bohr
-grab_token_image "Cv"  "103"   $universe_bohr
-grab_token_image "Cv"  "104"   $universe_bohr
-grab_token_image "Cv"  "105"   $universe_bohr
-grab_token_image "Cv"  "106"   $universe_bohr
-grab_token_image "Cv"  "107"   $universe_bohr
-grab_token_image "Cv"  "108"   $universe_bohr
-grab_token_image "Cv"  "109"   $universe_bohr
-grab_token_image "Cv"  "110"   $universe_bohr
-grab_token_image "Cv"  "111"   $universe_bohr
-grab_token_image "Cv"  "114"   $universe_bohr
-grab_token_image "Cv"  "115"   $universe_bohr
-grab_token_image "Vt"   "98"   $universe_bohr
-grab_token_image "Vt"   "99"   $universe_bohr
-grab_token_image "Vt"  "100"   $universe_bohr
-grab_token_image "Vt"  "101"   $universe_bohr
-grab_token_image "Vt"  "102"   $universe_bohr
-grab_token_image "Vt"  "103"   $universe_bohr
-grab_token_image "Vt"  "104"   $universe_bohr
-grab_token_image "Vt"  "105"   $universe_bohr
-grab_token_image "Vt"  "106"   $universe_bohr
-grab_token_image "Vt"  "107"   $universe_bohr
-grab_token_image "Vt"  "108"   $universe_bohr
-grab_token_image "Vt"  "109"   $universe_bohr
-grab_token_image "Vt"  "110"   $universe_bohr
-grab_token_image "Vt"  "111"   $universe_bohr
-grab_token_image "Vt"  "112"   $universe_bohr
-grab_token_image "Vt"  "119"   $universe_bohr
-grab_token_image "Vt"  "120"   $universe_bohr
-grab_token_image "Ek"   "99"   $universe_bohr
-grab_token_image "Ek"  "100"   $universe_bohr
-grab_token_image "Ek"  "101"   $universe_bohr
-grab_token_image "Ek"  "102"   $universe_bohr
-grab_token_image "Ek"  "103"   $universe_bohr
-grab_token_image "Ek"  "104"   $universe_bohr
-grab_token_image "Ek"  "105"   $universe_bohr
-grab_token_image "Ek"  "106"   $universe_bohr
-grab_token_image "Ek"  "107"   $universe_bohr
-grab_token_image "Ek"  "108"   $universe_bohr
-grab_token_image "Ek"  "109"   $universe_bohr
-grab_token_image "Ek"  "110"   $universe_bohr
-grab_token_image "Ek"  "111"   $universe_bohr
-grab_token_image "Ek"  "112"   $universe_bohr
-grab_token_image "Ek"  "113"   $universe_bohr
-grab_token_image "Ek"  "119"   $universe_bohr
-grab_token_image "Ek"  "120"   $universe_bohr
-grab_token_image "Ek"  "121"   $universe_bohr
-grab_token_image "Ji"  "103"   $universe_bohr
-grab_token_image "Ji"  "104"   $universe_bohr
-grab_token_image "Ji"  "105"   $universe_bohr
-grab_token_image "Ji"  "106"   $universe_bohr
-grab_token_image "Ji"  "107"   $universe_bohr
-grab_token_image "Ji"  "108"   $universe_bohr
-grab_token_image "Ji"  "109"   $universe_bohr
-grab_token_image "Ji"  "110"   $universe_bohr
-grab_token_image "Ji"  "111"   $universe_bohr
-grab_token_image "Ji"  "112"   $universe_bohr
-grab_token_image "Ji"  "113"   $universe_bohr
-grab_token_image "Ji"  "114"   $universe_bohr
-grab_token_image "Ji"  "121"   $universe_bohr
-grab_token_image "Aw"  "104"   $universe_bohr
-grab_token_image "Aw"  "105"   $universe_bohr
-grab_token_image "Aw"  "106"   $universe_bohr
-grab_token_image "Aw"  "107"   $universe_bohr
-grab_token_image "Aw"  "108"   $universe_bohr
-grab_token_image "Aw"  "109"   $universe_bohr
-grab_token_image "Aw"  "110"   $universe_bohr
-grab_token_image "Aw"  "111"   $universe_bohr
-grab_token_image "Aw"  "112"   $universe_bohr
-grab_token_image "Aw"  "113"   $universe_bohr
-grab_token_image "Aw"  "114"   $universe_bohr
-grab_token_image "Aw"  "115"   $universe_bohr
-grab_token_image "Aw"  "124"   $universe_bohr
-grab_token_image "Aw"  "125"   $universe_bohr
-grab_token_image "Kn"  "106"   $universe_bohr
-grab_token_image "Kn"  "107"   $universe_bohr
-grab_token_image "Kn"  "108"   $universe_bohr
-grab_token_image "Kn"  "109"   $universe_bohr
-grab_token_image "Kn"  "110"   $universe_bohr
-grab_token_image "Kn"  "111"   $universe_bohr
-grab_token_image "Kn"  "112"   $universe_bohr
-grab_token_image "Kn"  "113"   $universe_bohr
-grab_token_image "Kn"  "114"   $universe_bohr
-grab_token_image "Kn"  "115"   $universe_bohr
-grab_token_image "Kn"  "116"   $universe_bohr
-grab_token_image "Ha"  "108"   $universe_bohr
-grab_token_image "Ha"  "109"   $universe_bohr
-grab_token_image "Ha"  "110"   $universe_bohr
-grab_token_image "Ha"  "111"   $universe_bohr
-grab_token_image "Ha"  "112"   $universe_bohr
-grab_token_image "Ha"  "113"   $universe_bohr
-grab_token_image "Ha"  "114"   $universe_bohr
-grab_token_image "Ha"  "115"   $universe_bohr
-grab_token_image "Ha"  "116"   $universe_bohr
-grab_token_image "Ha"  "117"   $universe_bohr
-grab_token_image "Ax"  "109"   $universe_bohr
-grab_token_image "Ax"  "110"   $universe_bohr
-grab_token_image "Ax"  "111"   $universe_bohr
-grab_token_image "I"   "113"   $universe_bohr
-grab_token_image "I"   "114"   $universe_bohr
-grab_token_image "I"   "115"   $universe_bohr
-grab_token_image "Jb"  "116"   $universe_bohr
-grab_token_image "Go"  "117"   $universe_bohr
-grab_token_image "Go"  "118"   $universe_bohr
-grab_token_image "X"   "119"   $universe_bohr
-grab_token_image "Eh"  "123"   $universe_bohr
-grab_token_image "Eh"  "124"   $universe_bohr
-grab_token_image "Ys"  "125"   $universe_bohr
+grab_token_image "Sr"    "1" "bohr"  $universe_bohr
+grab_token_image "Sr"    "2" "bohr"  $universe_bohr
+grab_token_image "Sr"    "3" "bohr"  $universe_bohr
+grab_token_image "Ei"    "4" "bohr"  $universe_bohr
+grab_token_image "Ei"    "5" "bohr"  $universe_bohr
+grab_token_image "As"    "5" "bohr"  $universe_bohr
+grab_token_image "As"    "6" "bohr"  $universe_bohr
+grab_token_image "As"    "7" "bohr"  $universe_bohr
+grab_token_image "Dz"    "7" "bohr"  $universe_bohr
+grab_token_image "Dz"    "8" "bohr"  $universe_bohr
+grab_token_image "Dz"    "9" "bohr"  $universe_bohr
+grab_token_image "Dz"   "10" "bohr"  $universe_bohr
+grab_token_image "Gj"    "9" "bohr"  $universe_bohr
+grab_token_image "Gj"   "10" "bohr"  $universe_bohr
+grab_token_image "Gj"   "11" "bohr"  $universe_bohr
+grab_token_image "Gj"   "12" "bohr"  $universe_bohr
+grab_token_image "Vi"   "10" "bohr"  $universe_bohr
+grab_token_image "Vi"   "11" "bohr"  $universe_bohr
+grab_token_image "Vi"   "12" "bohr"  $universe_bohr
+grab_token_image "Vi"   "13" "bohr"  $universe_bohr
+grab_token_image "Vi"   "14" "bohr"  $universe_bohr
+grab_token_image "Vi"   "15" "bohr"  $universe_bohr
+grab_token_image "Ct"   "13" "bohr"  $universe_bohr
+grab_token_image "Ct"   "14" "bohr"  $universe_bohr
+grab_token_image "Ct"   "15" "bohr"  $universe_bohr
+grab_token_image "Ct"   "16" "bohr"  $universe_bohr
+grab_token_image "Ct"   "17" "bohr"  $universe_bohr
+grab_token_image "T"    "14" "bohr"  $universe_bohr
+grab_token_image "T"    "15" "bohr"  $universe_bohr
+grab_token_image "T"    "16" "bohr"  $universe_bohr
+grab_token_image "T"    "17" "bohr"  $universe_bohr
+grab_token_image "T"    "18" "bohr"  $universe_bohr
+grab_token_image "T"    "19" "bohr"  $universe_bohr
+grab_token_image "Xj"   "16" "bohr"  $universe_bohr
+grab_token_image "Xj"   "17" "bohr"  $universe_bohr
+grab_token_image "Xj"   "18" "bohr"  $universe_bohr
+grab_token_image "Xj"   "19" "bohr"  $universe_bohr
+grab_token_image "Xj"   "20" "bohr"  $universe_bohr
+grab_token_image "Xj"   "21" "bohr"  $universe_bohr
+grab_token_image "Eb"   "19" "bohr"  $universe_bohr
+grab_token_image "Eb"   "20" "bohr"  $universe_bohr
+grab_token_image "Eb"   "21" "bohr"  $universe_bohr
+grab_token_image "Eb"   "22" "bohr"  $universe_bohr
+grab_token_image "Eb"   "23" "bohr"  $universe_bohr
+grab_token_image "P"    "21" "bohr"  $universe_bohr
+grab_token_image "P"    "22" "bohr"  $universe_bohr
+grab_token_image "P"    "23" "bohr"  $universe_bohr
+grab_token_image "P"    "24" "bohr"  $universe_bohr
+grab_token_image "P"    "25" "bohr"  $universe_bohr
+grab_token_image "P"    "26" "bohr"  $universe_bohr
+grab_token_image "Ro"   "22" "bohr"  $universe_bohr
+grab_token_image "Ro"   "23" "bohr"  $universe_bohr
+grab_token_image "Ro"   "24" "bohr"  $universe_bohr
+grab_token_image "Ro"   "25" "bohr"  $universe_bohr
+grab_token_image "Ro"   "26" "bohr"  $universe_bohr
+grab_token_image "Ro"   "27" "bohr"  $universe_bohr
+grab_token_image "Ro"   "28" "bohr"  $universe_bohr
+grab_token_image "Cl"   "24" "bohr"  $universe_bohr
+grab_token_image "Cl"   "25" "bohr"  $universe_bohr
+grab_token_image "Cl"   "26" "bohr"  $universe_bohr
+grab_token_image "Cl"   "27" "bohr"  $universe_bohr
+grab_token_image "Cl"   "28" "bohr"  $universe_bohr
+grab_token_image "Cl"   "29" "bohr"  $universe_bohr
+grab_token_image "Cl"   "30" "bohr"  $universe_bohr
+grab_token_image "Yu"   "26" "bohr"  $universe_bohr
+grab_token_image "Yu"   "27" "bohr"  $universe_bohr
+grab_token_image "Yu"   "28" "bohr"  $universe_bohr
+grab_token_image "Yu"   "29" "bohr"  $universe_bohr
+grab_token_image "Yu"   "30" "bohr"  $universe_bohr
+grab_token_image "Yu"   "31" "bohr"  $universe_bohr
+grab_token_image "Nd"   "27" "bohr"  $universe_bohr
+grab_token_image "Nd"   "28" "bohr"  $universe_bohr
+grab_token_image "Nd"   "29" "bohr"  $universe_bohr
+grab_token_image "Nd"   "30" "bohr"  $universe_bohr
+grab_token_image "Nd"   "31" "bohr"  $universe_bohr
+grab_token_image "Nd"   "32" "bohr"  $universe_bohr
+grab_token_image "Nd"   "33" "bohr"  $universe_bohr
+grab_token_image "Nd"   "34" "bohr"  $universe_bohr
+grab_token_image "K"    "29" "bohr"  $universe_bohr
+grab_token_image "K"    "30" "bohr"  $universe_bohr
+grab_token_image "K"    "31" "bohr"  $universe_bohr
+grab_token_image "K"    "32" "bohr"  $universe_bohr
+grab_token_image "K"    "33" "bohr"  $universe_bohr
+grab_token_image "K"    "34" "bohr"  $universe_bohr
+grab_token_image "K"    "35" "bohr"  $universe_bohr
+grab_token_image "K"    "36" "bohr"  $universe_bohr
+grab_token_image "K"    "37" "bohr"  $universe_bohr
+grab_token_image "Mt"   "32" "bohr"  $universe_bohr
+grab_token_image "Mt"   "33" "bohr"  $universe_bohr
+grab_token_image "Mt"   "34" "bohr"  $universe_bohr
+grab_token_image "Mt"   "35" "bohr"  $universe_bohr
+grab_token_image "Mt"   "36" "bohr"  $universe_bohr
+grab_token_image "Mt"   "37" "bohr"  $universe_bohr
+grab_token_image "Mt"   "38" "bohr"  $universe_bohr
+grab_token_image "Mt"   "39" "bohr"  $universe_bohr
+grab_token_image "Lu"   "34" "bohr"  $universe_bohr
+grab_token_image "Lu"   "35" "bohr"  $universe_bohr
+grab_token_image "Lu"   "36" "bohr"  $universe_bohr
+grab_token_image "Lu"   "37" "bohr"  $universe_bohr
+grab_token_image "Lu"   "38" "bohr"  $universe_bohr
+grab_token_image "Lu"   "39" "bohr"  $universe_bohr
+grab_token_image "Lu"   "40" "bohr"  $universe_bohr
+grab_token_image "Lu"   "41" "bohr"  $universe_bohr
+grab_token_image "Dx"   "35" "bohr"  $universe_bohr
+grab_token_image "Dx"   "36" "bohr"  $universe_bohr
+grab_token_image "Dx"   "37" "bohr"  $universe_bohr
+grab_token_image "Dx"   "38" "bohr"  $universe_bohr
+grab_token_image "Dx"   "39" "bohr"  $universe_bohr
+grab_token_image "Dx"   "40" "bohr"  $universe_bohr
+grab_token_image "Dx"   "41" "bohr"  $universe_bohr
+grab_token_image "Dx"   "42" "bohr"  $universe_bohr
+grab_token_image "Dx"   "43" "bohr"  $universe_bohr
+grab_token_image "Dx"   "44" "bohr"  $universe_bohr
+grab_token_image "Gd"   "38" "bohr"  $universe_bohr
+grab_token_image "Gd"   "39" "bohr"  $universe_bohr
+grab_token_image "Gd"   "40" "bohr"  $universe_bohr
+grab_token_image "Gd"   "41" "bohr"  $universe_bohr
+grab_token_image "Gd"   "42" "bohr"  $universe_bohr
+grab_token_image "Gd"   "43" "bohr"  $universe_bohr
+grab_token_image "Gd"   "44" "bohr"  $universe_bohr
+grab_token_image "Gd"   "45" "bohr"  $universe_bohr
+grab_token_image "Gd"   "46" "bohr"  $universe_bohr
+grab_token_image "V"    "39" "bohr"  $universe_bohr
+grab_token_image "V"    "40" "bohr"  $universe_bohr
+grab_token_image "V"    "41" "bohr"  $universe_bohr
+grab_token_image "V"    "42" "bohr"  $universe_bohr
+grab_token_image "V"    "43" "bohr"  $universe_bohr
+grab_token_image "V"    "44" "bohr"  $universe_bohr
+grab_token_image "V"    "45" "bohr"  $universe_bohr
+grab_token_image "V"    "46" "bohr"  $universe_bohr
+grab_token_image "V"    "47" "bohr"  $universe_bohr
+grab_token_image "V"    "48" "bohr"  $universe_bohr
+grab_token_image "Uq"   "41" "bohr"  $universe_bohr
+grab_token_image "Uq"   "42" "bohr"  $universe_bohr
+grab_token_image "Uq"   "43" "bohr"  $universe_bohr
+grab_token_image "Uq"   "44" "bohr"  $universe_bohr
+grab_token_image "Uq"   "45" "bohr"  $universe_bohr
+grab_token_image "Uq"   "46" "bohr"  $universe_bohr
+grab_token_image "Uq"   "47" "bohr"  $universe_bohr
+grab_token_image "Uq"   "48" "bohr"  $universe_bohr
+grab_token_image "Uq"   "49" "bohr"  $universe_bohr
+grab_token_image "Uq"   "50" "bohr"  $universe_bohr
+grab_token_image "Uq"   "51" "bohr"  $universe_bohr
+grab_token_image "Uq"   "52" "bohr"  $universe_bohr
+grab_token_image "Pb"   "43" "bohr"  $universe_bohr
+grab_token_image "Pb"   "44" "bohr"  $universe_bohr
+grab_token_image "Pb"   "45" "bohr"  $universe_bohr
+grab_token_image "Pb"   "46" "bohr"  $universe_bohr
+grab_token_image "Pb"   "47" "bohr"  $universe_bohr
+grab_token_image "Pb"   "48" "bohr"  $universe_bohr
+grab_token_image "Pb"   "49" "bohr"  $universe_bohr
+grab_token_image "Pb"   "50" "bohr"  $universe_bohr
+grab_token_image "Pb"   "51" "bohr"  $universe_bohr
+grab_token_image "Pb"   "52" "bohr"  $universe_bohr
+grab_token_image "Pb"   "53" "bohr"  $universe_bohr
+grab_token_image "Wy"   "45" "bohr"  $universe_bohr
+grab_token_image "Wy"   "46" "bohr"  $universe_bohr
+grab_token_image "Wy"   "47" "bohr"  $universe_bohr
+grab_token_image "Wy"   "48" "bohr"  $universe_bohr
+grab_token_image "Wy"   "49" "bohr"  $universe_bohr
+grab_token_image "Wy"   "50" "bohr"  $universe_bohr
+grab_token_image "Wy"   "51" "bohr"  $universe_bohr
+grab_token_image "Wy"   "52" "bohr"  $universe_bohr
+grab_token_image "Wy"   "53" "bohr"  $universe_bohr
+grab_token_image "Wy"   "54" "bohr"  $universe_bohr
+grab_token_image "Wy"   "55" "bohr"  $universe_bohr
+grab_token_image "Wy"   "56" "bohr"  $universe_bohr
+grab_token_image "L"    "46" "bohr"  $universe_bohr
+grab_token_image "L"    "47" "bohr"  $universe_bohr
+grab_token_image "L"    "48" "bohr"  $universe_bohr
+grab_token_image "L"    "49" "bohr"  $universe_bohr
+grab_token_image "L"    "50" "bohr"  $universe_bohr
+grab_token_image "L"    "51" "bohr"  $universe_bohr
+grab_token_image "L"    "52" "bohr"  $universe_bohr
+grab_token_image "L"    "53" "bohr"  $universe_bohr
+grab_token_image "L"    "54" "bohr"  $universe_bohr
+grab_token_image "L"    "55" "bohr"  $universe_bohr
+grab_token_image "L"    "56" "bohr"  $universe_bohr
+grab_token_image "L"    "57" "bohr"  $universe_bohr
+grab_token_image "Ux"   "48" "bohr"  $universe_bohr
+grab_token_image "Ux"   "49" "bohr"  $universe_bohr
+grab_token_image "Ux"   "50" "bohr"  $universe_bohr
+grab_token_image "Ux"   "51" "bohr"  $universe_bohr
+grab_token_image "Ux"   "52" "bohr"  $universe_bohr
+grab_token_image "Ux"   "53" "bohr"  $universe_bohr
+grab_token_image "Ux"   "54" "bohr"  $universe_bohr
+grab_token_image "Ux"   "55" "bohr"  $universe_bohr
+grab_token_image "Ux"   "56" "bohr"  $universe_bohr
+grab_token_image "Ux"   "57" "bohr"  $universe_bohr
+grab_token_image "Ux"   "58" "bohr"  $universe_bohr
+grab_token_image "Pg"   "50" "bohr"  $universe_bohr
+grab_token_image "Pg"   "51" "bohr"  $universe_bohr
+grab_token_image "Pg"   "52" "bohr"  $universe_bohr
+grab_token_image "Pg"   "53" "bohr"  $universe_bohr
+grab_token_image "Pg"   "54" "bohr"  $universe_bohr
+grab_token_image "Pg"   "55" "bohr"  $universe_bohr
+grab_token_image "Pg"   "56" "bohr"  $universe_bohr
+grab_token_image "Pg"   "57" "bohr"  $universe_bohr
+grab_token_image "Pg"   "58" "bohr"  $universe_bohr
+grab_token_image "Pg"   "59" "bohr"  $universe_bohr
+grab_token_image "Qe"   "52" "bohr"  $universe_bohr
+grab_token_image "Qe"   "53" "bohr"  $universe_bohr
+grab_token_image "Qe"   "54" "bohr"  $universe_bohr
+grab_token_image "Qe"   "55" "bohr"  $universe_bohr
+grab_token_image "Qe"   "56" "bohr"  $universe_bohr
+grab_token_image "Qe"   "57" "bohr"  $universe_bohr
+grab_token_image "Qe"   "58" "bohr"  $universe_bohr
+grab_token_image "Qe"   "59" "bohr"  $universe_bohr
+grab_token_image "Qe"   "60" "bohr"  $universe_bohr
+grab_token_image "Qe"   "61" "bohr"  $universe_bohr
+grab_token_image "Qe"   "62" "bohr"  $universe_bohr
+grab_token_image "C"    "53" "bohr"  $universe_bohr
+grab_token_image "C"    "54" "bohr"  $universe_bohr
+grab_token_image "C"    "55" "bohr"  $universe_bohr
+grab_token_image "C"    "56" "bohr"  $universe_bohr
+grab_token_image "C"    "57" "bohr"  $universe_bohr
+grab_token_image "C"    "58" "bohr"  $universe_bohr
+grab_token_image "C"    "59" "bohr"  $universe_bohr
+grab_token_image "C"    "60" "bohr"  $universe_bohr
+grab_token_image "C"    "61" "bohr"  $universe_bohr
+grab_token_image "C"    "62" "bohr"  $universe_bohr
+grab_token_image "C"    "63" "bohr"  $universe_bohr
+grab_token_image "C"    "64" "bohr"  $universe_bohr
+grab_token_image "Ns"   "56" "bohr"  $universe_bohr
+grab_token_image "Ns"   "57" "bohr"  $universe_bohr
+grab_token_image "Ns"   "58" "bohr"  $universe_bohr
+grab_token_image "Ns"   "59" "bohr"  $universe_bohr
+grab_token_image "Ns"   "60" "bohr"  $universe_bohr
+grab_token_image "Ns"   "61" "bohr"  $universe_bohr
+grab_token_image "Ns"   "62" "bohr"  $universe_bohr
+grab_token_image "Ns"   "63" "bohr"  $universe_bohr
+grab_token_image "Ns"   "64" "bohr"  $universe_bohr
+grab_token_image "Ns"   "65" "bohr"  $universe_bohr
+grab_token_image "Ns"   "66" "bohr"  $universe_bohr
+grab_token_image "Ns"   "67" "bohr"  $universe_bohr
+grab_token_image "Ai"   "58" "bohr"  $universe_bohr
+grab_token_image "Ai"   "59" "bohr"  $universe_bohr
+grab_token_image "Ai"   "60" "bohr"  $universe_bohr
+grab_token_image "Ai"   "61" "bohr"  $universe_bohr
+grab_token_image "Ai"   "62" "bohr"  $universe_bohr
+grab_token_image "Ai"   "63" "bohr"  $universe_bohr
+grab_token_image "Ai"   "64" "bohr"  $universe_bohr
+grab_token_image "Ai"   "65" "bohr"  $universe_bohr
+grab_token_image "Ai"   "66" "bohr"  $universe_bohr
+grab_token_image "Ai"   "67" "bohr"  $universe_bohr
+grab_token_image "Ai"   "68" "bohr"  $universe_bohr
+grab_token_image "Ai"   "69" "bohr"  $universe_bohr
+grab_token_image "F"    "59" "bohr"  $universe_bohr
+grab_token_image "F"    "60" "bohr"  $universe_bohr
+grab_token_image "F"    "61" "bohr"  $universe_bohr
+grab_token_image "F"    "62" "bohr"  $universe_bohr
+grab_token_image "F"    "63" "bohr"  $universe_bohr
+grab_token_image "F"    "64" "bohr"  $universe_bohr
+grab_token_image "F"    "65" "bohr"  $universe_bohr
+grab_token_image "F"    "66" "bohr"  $universe_bohr
+grab_token_image "F"    "67" "bohr"  $universe_bohr
+grab_token_image "F"    "68" "bohr"  $universe_bohr
+grab_token_image "F"    "69" "bohr"  $universe_bohr
+grab_token_image "F"    "70" "bohr"  $universe_bohr
+grab_token_image "F"    "71" "bohr"  $universe_bohr
+grab_token_image "F"    "72" "bohr"  $universe_bohr
+grab_token_image "F"    "73" "bohr"  $universe_bohr
+grab_token_image "Gy"   "63" "bohr"  $universe_bohr
+grab_token_image "Gy"   "64" "bohr"  $universe_bohr
+grab_token_image "Gy"   "65" "bohr"  $universe_bohr
+grab_token_image "Gy"   "66" "bohr"  $universe_bohr
+grab_token_image "Gy"   "67" "bohr"  $universe_bohr
+grab_token_image "Gy"   "68" "bohr"  $universe_bohr
+grab_token_image "Gy"   "69" "bohr"  $universe_bohr
+grab_token_image "Gy"   "70" "bohr"  $universe_bohr
+grab_token_image "Gy"   "73" "bohr"  $universe_bohr
+grab_token_image "Gy"   "74" "bohr"  $universe_bohr
+grab_token_image "Kk"   "64" "bohr"  $universe_bohr
+grab_token_image "Kk"   "65" "bohr"  $universe_bohr
+grab_token_image "Kk"   "66" "bohr"  $universe_bohr
+grab_token_image "Kk"   "67" "bohr"  $universe_bohr
+grab_token_image "Kk"   "68" "bohr"  $universe_bohr
+grab_token_image "Kk"   "69" "bohr"  $universe_bohr
+grab_token_image "Kk"   "70" "bohr"  $universe_bohr
+grab_token_image "Kk"   "71" "bohr"  $universe_bohr
+grab_token_image "Kk"   "72" "bohr"  $universe_bohr
+grab_token_image "Kk"   "73" "bohr"  $universe_bohr
+grab_token_image "Kk"   "74" "bohr"  $universe_bohr
+grab_token_image "Kk"   "75" "bohr"  $universe_bohr
+grab_token_image "Kk"   "76" "bohr"  $universe_bohr
+grab_token_image "Yv"   "66" "bohr"  $universe_bohr
+grab_token_image "Yv"   "67" "bohr"  $universe_bohr
+grab_token_image "Yv"   "68" "bohr"  $universe_bohr
+grab_token_image "Yv"   "69" "bohr"  $universe_bohr
+grab_token_image "Yv"   "70" "bohr"  $universe_bohr
+grab_token_image "Yv"   "71" "bohr"  $universe_bohr
+grab_token_image "Yv"   "72" "bohr"  $universe_bohr
+grab_token_image "Yv"   "73" "bohr"  $universe_bohr
+grab_token_image "Yv"   "74" "bohr"  $universe_bohr
+grab_token_image "Yv"   "75" "bohr"  $universe_bohr
+grab_token_image "Yv"   "77" "bohr"  $universe_bohr
+grab_token_image "Yv"   "78" "bohr"  $universe_bohr
+grab_token_image "Yv"   "80" "bohr"  $universe_bohr
+grab_token_image "Cj"   "68" "bohr"  $universe_bohr
+grab_token_image "Cj"   "69" "bohr"  $universe_bohr
+grab_token_image "Cj"   "70" "bohr"  $universe_bohr
+grab_token_image "Cj"   "71" "bohr"  $universe_bohr
+grab_token_image "Cj"   "72" "bohr"  $universe_bohr
+grab_token_image "Cj"   "73" "bohr"  $universe_bohr
+grab_token_image "Cj"   "74" "bohr"  $universe_bohr
+grab_token_image "Cj"   "75" "bohr"  $universe_bohr
+grab_token_image "Cj"   "76" "bohr"  $universe_bohr
+grab_token_image "Cj"   "77" "bohr"  $universe_bohr
+grab_token_image "Cj"   "78" "bohr"  $universe_bohr
+grab_token_image "Cj"   "79" "bohr"  $universe_bohr
+grab_token_image "Cj"   "80" "bohr"  $universe_bohr
+grab_token_image "Cj"   "81" "bohr"  $universe_bohr
+grab_token_image "Iu"   "72" "bohr"  $universe_bohr
+grab_token_image "Iu"   "73" "bohr"  $universe_bohr
+grab_token_image "Iu"   "74" "bohr"  $universe_bohr
+grab_token_image "Iu"   "75" "bohr"  $universe_bohr
+grab_token_image "Iu"   "76" "bohr"  $universe_bohr
+grab_token_image "Iu"   "77" "bohr"  $universe_bohr
+grab_token_image "Iu"   "78" "bohr"  $universe_bohr
+grab_token_image "Iu"   "79" "bohr"  $universe_bohr
+grab_token_image "Iu"   "80" "bohr"  $universe_bohr
+grab_token_image "Iu"   "81" "bohr"  $universe_bohr
+grab_token_image "Iu"   "82" "bohr"  $universe_bohr
+grab_token_image "Iu"   "83" "bohr"  $universe_bohr
+grab_token_image "D"    "74" "bohr"  $universe_bohr
+grab_token_image "D"    "75" "bohr"  $universe_bohr
+grab_token_image "D"    "76" "bohr"  $universe_bohr
+grab_token_image "D"    "77" "bohr"  $universe_bohr
+grab_token_image "D"    "78" "bohr"  $universe_bohr
+grab_token_image "D"    "79" "bohr"  $universe_bohr
+grab_token_image "D"    "80" "bohr"  $universe_bohr
+grab_token_image "D"    "81" "bohr"  $universe_bohr
+grab_token_image "D"    "82" "bohr"  $universe_bohr
+grab_token_image "D"    "83" "bohr"  $universe_bohr
+grab_token_image "D"    "84" "bohr"  $universe_bohr
+grab_token_image "Co"   "74" "bohr"  $universe_bohr
+grab_token_image "Co"   "75" "bohr"  $universe_bohr
+grab_token_image "Co"   "76" "bohr"  $universe_bohr
+grab_token_image "Co"   "78" "bohr"  $universe_bohr
+grab_token_image "Co"   "79" "bohr"  $universe_bohr
+grab_token_image "Co"   "80" "bohr"  $universe_bohr
+grab_token_image "Co"   "81" "bohr"  $universe_bohr
+grab_token_image "Co"   "82" "bohr"  $universe_bohr
+grab_token_image "Co"   "83" "bohr"  $universe_bohr
+grab_token_image "Co"   "84" "bohr"  $universe_bohr
+grab_token_image "Co"   "85" "bohr"  $universe_bohr
+grab_token_image "Co"   "86" "bohr"  $universe_bohr
+grab_token_image "Co"   "87" "bohr"  $universe_bohr
+grab_token_image "Co"   "88" "bohr"  $universe_bohr
+grab_token_image "W"    "76" "bohr"  $universe_bohr
+grab_token_image "W"    "77" "bohr"  $universe_bohr
+grab_token_image "W"    "78" "bohr"  $universe_bohr
+grab_token_image "W"    "79" "bohr"  $universe_bohr
+grab_token_image "W"    "80" "bohr"  $universe_bohr
+grab_token_image "W"    "81" "bohr"  $universe_bohr
+grab_token_image "W"    "82" "bohr"  $universe_bohr
+grab_token_image "W"    "83" "bohr"  $universe_bohr
+grab_token_image "W"    "84" "bohr"  $universe_bohr
+grab_token_image "W"    "85" "bohr"  $universe_bohr
+grab_token_image "W"    "86" "bohr"  $universe_bohr
+grab_token_image "W"    "87" "bohr"  $universe_bohr
+grab_token_image "W"    "88" "bohr"  $universe_bohr
+grab_token_image "W"    "89" "bohr"  $universe_bohr
+grab_token_image "W"    "90" "bohr"  $universe_bohr
+grab_token_image "W"    "91" "bohr"  $universe_bohr
+grab_token_image "Lx"   "76" "bohr"  $universe_bohr
+grab_token_image "Lx"   "77" "bohr"  $universe_bohr
+grab_token_image "Lx"   "79" "bohr"  $universe_bohr
+grab_token_image "Lx"   "80" "bohr"  $universe_bohr
+grab_token_image "Lx"   "81" "bohr"  $universe_bohr
+grab_token_image "Lx"   "82" "bohr"  $universe_bohr
+grab_token_image "Lx"   "83" "bohr"  $universe_bohr
+grab_token_image "Lx"   "84" "bohr"  $universe_bohr
+grab_token_image "Lx"   "85" "bohr"  $universe_bohr
+grab_token_image "Lx"   "86" "bohr"  $universe_bohr
+grab_token_image "Lx"   "87" "bohr"  $universe_bohr
+grab_token_image "Lx"   "88" "bohr"  $universe_bohr
+grab_token_image "Lx"   "89" "bohr"  $universe_bohr
+grab_token_image "Lx"   "90" "bohr"  $universe_bohr
+grab_token_image "Lx"   "91" "bohr"  $universe_bohr
+grab_token_image "Lx"   "92" "bohr"  $universe_bohr
+grab_token_image "Lx"   "93" "bohr"  $universe_bohr
+grab_token_image "Lx"   "94" "bohr"  $universe_bohr
+grab_token_image "Lx"   "95" "bohr"  $universe_bohr
+grab_token_image "Lx"   "96" "bohr"  $universe_bohr
+grab_token_image "N"    "81" "bohr"  $universe_bohr
+grab_token_image "N"    "82" "bohr"  $universe_bohr
+grab_token_image "N"    "83" "bohr"  $universe_bohr
+grab_token_image "N"    "84" "bohr"  $universe_bohr
+grab_token_image "N"    "85" "bohr"  $universe_bohr
+grab_token_image "N"    "86" "bohr"  $universe_bohr
+grab_token_image "N"    "87" "bohr"  $universe_bohr
+grab_token_image "N"    "88" "bohr"  $universe_bohr
+grab_token_image "N"    "89" "bohr"  $universe_bohr
+grab_token_image "N"    "90" "bohr"  $universe_bohr
+grab_token_image "N"    "91" "bohr"  $universe_bohr
+grab_token_image "N"    "92" "bohr"  $universe_bohr
+grab_token_image "N"    "93" "bohr"  $universe_bohr
+grab_token_image "N"    "94" "bohr"  $universe_bohr
+grab_token_image "N"    "95" "bohr"  $universe_bohr
+grab_token_image "N"    "96" "bohr"  $universe_bohr
+grab_token_image "U"    "83" "bohr"  $universe_bohr
+grab_token_image "U"    "84" "bohr"  $universe_bohr
+grab_token_image "U"    "85" "bohr"  $universe_bohr
+grab_token_image "U"    "86" "bohr"  $universe_bohr
+grab_token_image "U"    "87" "bohr"  $universe_bohr
+grab_token_image "U"    "88" "bohr"  $universe_bohr
+grab_token_image "U"    "89" "bohr"  $universe_bohr
+grab_token_image "U"    "90" "bohr"  $universe_bohr
+grab_token_image "U"    "91" "bohr"  $universe_bohr
+grab_token_image "U"    "92" "bohr"  $universe_bohr
+grab_token_image "U"    "93" "bohr"  $universe_bohr
+grab_token_image "U"    "94" "bohr"  $universe_bohr
+grab_token_image "U"    "95" "bohr"  $universe_bohr
+grab_token_image "U"    "96" "bohr"  $universe_bohr
+grab_token_image "U"    "97" "bohr"  $universe_bohr
+grab_token_image "U"    "98" "bohr"  $universe_bohr
+grab_token_image "U"    "99" "bohr"  $universe_bohr
+grab_token_image "Vl"   "84" "bohr"  $universe_bohr
+grab_token_image "Vl"   "85" "bohr"  $universe_bohr
+grab_token_image "Vl"   "86" "bohr"  $universe_bohr
+grab_token_image "Vl"   "87" "bohr"  $universe_bohr
+grab_token_image "Vl"   "88" "bohr"  $universe_bohr
+grab_token_image "Vl"   "89" "bohr"  $universe_bohr
+grab_token_image "Vl"   "90" "bohr"  $universe_bohr
+grab_token_image "Vl"   "91" "bohr"  $universe_bohr
+grab_token_image "Vl"   "92" "bohr"  $universe_bohr
+grab_token_image "Vl"   "93" "bohr"  $universe_bohr
+grab_token_image "Vl"   "94" "bohr"  $universe_bohr
+grab_token_image "Vl"   "95" "bohr"  $universe_bohr
+grab_token_image "Vl"   "96" "bohr"  $universe_bohr
+grab_token_image "Vl"   "97" "bohr"  $universe_bohr
+grab_token_image "Vl"   "98" "bohr"  $universe_bohr
+grab_token_image "Vl"   "99" "bohr"  $universe_bohr
+grab_token_image "Vl"  "100" "bohr"  $universe_bohr
+grab_token_image "Vl"  "101" "bohr"  $universe_bohr
+grab_token_image "Se"   "84" "bohr"  $universe_bohr
+grab_token_image "Se"   "85" "bohr"  $universe_bohr
+grab_token_image "Se"   "86" "bohr"  $universe_bohr
+grab_token_image "Se"   "87" "bohr"  $universe_bohr
+grab_token_image "Se"   "88" "bohr"  $universe_bohr
+grab_token_image "Se"   "89" "bohr"  $universe_bohr
+grab_token_image "Se"   "90" "bohr"  $universe_bohr
+grab_token_image "Se"   "91" "bohr"  $universe_bohr
+grab_token_image "Se"   "92" "bohr"  $universe_bohr
+grab_token_image "Se"   "93" "bohr"  $universe_bohr
+grab_token_image "Se"   "94" "bohr"  $universe_bohr
+grab_token_image "Se"   "95" "bohr"  $universe_bohr
+grab_token_image "Se"   "96" "bohr"  $universe_bohr
+grab_token_image "Se"   "97" "bohr"  $universe_bohr
+grab_token_image "Se"   "98" "bohr"  $universe_bohr
+grab_token_image "Se"   "99" "bohr"  $universe_bohr
+grab_token_image "Se"  "100" "bohr"  $universe_bohr
+grab_token_image "Se"  "101" "bohr"  $universe_bohr
+grab_token_image "Se"  "102" "bohr"  $universe_bohr
+grab_token_image "Se"  "103" "bohr"  $universe_bohr
+grab_token_image "Se"  "104" "bohr"  $universe_bohr
+grab_token_image "Nm"   "87" "bohr"  $universe_bohr
+grab_token_image "Nm"   "88" "bohr"  $universe_bohr
+grab_token_image "Nm"   "89" "bohr"  $universe_bohr
+grab_token_image "Nm"   "90" "bohr"  $universe_bohr
+grab_token_image "Nm"   "91" "bohr"  $universe_bohr
+grab_token_image "Nm"   "92" "bohr"  $universe_bohr
+grab_token_image "Nm"   "93" "bohr"  $universe_bohr
+grab_token_image "Nm"   "94" "bohr"  $universe_bohr
+grab_token_image "Nm"   "95" "bohr"  $universe_bohr
+grab_token_image "Nm"   "96" "bohr"  $universe_bohr
+grab_token_image "Nm"   "97" "bohr"  $universe_bohr
+grab_token_image "Nm"   "98" "bohr"  $universe_bohr
+grab_token_image "Nm"   "99" "bohr"  $universe_bohr
+grab_token_image "Nm"  "100" "bohr"  $universe_bohr
+grab_token_image "Nm"  "101" "bohr"  $universe_bohr
+grab_token_image "Nm"  "102" "bohr"  $universe_bohr
+grab_token_image "Nm"  "103" "bohr"  $universe_bohr
+grab_token_image "Nm"  "104" "bohr"  $universe_bohr
+grab_token_image "Nm"  "105" "bohr"  $universe_bohr
+grab_token_image "Dd"   "88" "bohr"  $universe_bohr
+grab_token_image "Dd"   "89" "bohr"  $universe_bohr
+grab_token_image "Dd"   "90" "bohr"  $universe_bohr
+grab_token_image "Dd"   "91" "bohr"  $universe_bohr
+grab_token_image "Dd"   "92" "bohr"  $universe_bohr
+grab_token_image "Dd"   "93" "bohr"  $universe_bohr
+grab_token_image "Dd"   "94" "bohr"  $universe_bohr
+grab_token_image "Dd"   "95" "bohr"  $universe_bohr
+grab_token_image "Dd"   "96" "bohr"  $universe_bohr
+grab_token_image "Dd"   "97" "bohr"  $universe_bohr
+grab_token_image "Dd"   "98" "bohr"  $universe_bohr
+grab_token_image "Dd"   "99" "bohr"  $universe_bohr
+grab_token_image "Dd"  "100" "bohr"  $universe_bohr
+grab_token_image "Dd"  "101" "bohr"  $universe_bohr
+grab_token_image "Dd"  "102" "bohr"  $universe_bohr
+grab_token_image "Dd"  "103" "bohr"  $universe_bohr
+grab_token_image "Dd"  "104" "bohr"  $universe_bohr
+grab_token_image "Dd"  "105" "bohr"  $universe_bohr
+grab_token_image "Dd"  "106" "bohr"  $universe_bohr
+grab_token_image "Ok"   "89" "bohr"  $universe_bohr
+grab_token_image "Ok"   "90" "bohr"  $universe_bohr
+grab_token_image "Ok"   "91" "bohr"  $universe_bohr
+grab_token_image "Ok"   "92" "bohr"  $universe_bohr
+grab_token_image "Ok"   "93" "bohr"  $universe_bohr
+grab_token_image "Ok"   "94" "bohr"  $universe_bohr
+grab_token_image "Ok"   "95" "bohr"  $universe_bohr
+grab_token_image "Ok"   "96" "bohr"  $universe_bohr
+grab_token_image "Ok"   "97" "bohr"  $universe_bohr
+grab_token_image "Ok"   "98" "bohr"  $universe_bohr
+grab_token_image "Ok"   "99" "bohr"  $universe_bohr
+grab_token_image "Ok"  "100" "bohr"  $universe_bohr
+grab_token_image "Ok"  "101" "bohr"  $universe_bohr
+grab_token_image "Ok"  "102" "bohr"  $universe_bohr
+grab_token_image "Ok"  "103" "bohr"  $universe_bohr
+grab_token_image "Ok"  "104" "bohr"  $universe_bohr
+grab_token_image "Ok"  "105" "bohr"  $universe_bohr
+grab_token_image "Ok"  "106" "bohr"  $universe_bohr
+grab_token_image "Ok"  "107" "bohr"  $universe_bohr
+grab_token_image "Da"   "90" "bohr"  $universe_bohr
+grab_token_image "Da"   "91" "bohr"  $universe_bohr
+grab_token_image "Da"   "92" "bohr"  $universe_bohr
+grab_token_image "Da"   "93" "bohr"  $universe_bohr
+grab_token_image "Da"   "94" "bohr"  $universe_bohr
+grab_token_image "Da"   "95" "bohr"  $universe_bohr
+grab_token_image "Da"   "96" "bohr"  $universe_bohr
+grab_token_image "Da"   "97" "bohr"  $universe_bohr
+grab_token_image "Da"   "98" "bohr"  $universe_bohr
+grab_token_image "Da"   "99" "bohr"  $universe_bohr
+grab_token_image "Da"  "100" "bohr"  $universe_bohr
+grab_token_image "Da"  "101" "bohr"  $universe_bohr
+grab_token_image "Da"  "102" "bohr"  $universe_bohr
+grab_token_image "Da"  "103" "bohr"  $universe_bohr
+grab_token_image "Da"  "104" "bohr"  $universe_bohr
+grab_token_image "Da"  "105" "bohr"  $universe_bohr
+grab_token_image "Da"  "106" "bohr"  $universe_bohr
+grab_token_image "Da"  "107" "bohr"  $universe_bohr
+grab_token_image "Da"  "108" "bohr"  $universe_bohr
+grab_token_image "Da"  "109" "bohr"  $universe_bohr
+grab_token_image "Da"  "110" "bohr"  $universe_bohr
+grab_token_image "S"    "94" "bohr"  $universe_bohr
+grab_token_image "S"    "95" "bohr"  $universe_bohr
+grab_token_image "S"    "96" "bohr"  $universe_bohr
+grab_token_image "S"    "97" "bohr"  $universe_bohr
+grab_token_image "S"    "98" "bohr"  $universe_bohr
+grab_token_image "S"    "99" "bohr"  $universe_bohr
+grab_token_image "S"   "100" "bohr"  $universe_bohr
+grab_token_image "S"   "101" "bohr"  $universe_bohr
+grab_token_image "S"   "102" "bohr"  $universe_bohr
+grab_token_image "S"   "103" "bohr"  $universe_bohr
+grab_token_image "S"   "104" "bohr"  $universe_bohr
+grab_token_image "S"   "105" "bohr"  $universe_bohr
+grab_token_image "S"   "106" "bohr"  $universe_bohr
+grab_token_image "S"   "107" "bohr"  $universe_bohr
+grab_token_image "S"   "108" "bohr"  $universe_bohr
+grab_token_image "S"   "109" "bohr"  $universe_bohr
+grab_token_image "Z"    "95" "bohr"  $universe_bohr
+grab_token_image "Z"    "96" "bohr"  $universe_bohr
+grab_token_image "Z"    "97" "bohr"  $universe_bohr
+grab_token_image "Z"    "98" "bohr"  $universe_bohr
+grab_token_image "Z"    "99" "bohr"  $universe_bohr
+grab_token_image "Z"   "100" "bohr"  $universe_bohr
+grab_token_image "Z"   "101" "bohr"  $universe_bohr
+grab_token_image "Z"   "102" "bohr"  $universe_bohr
+grab_token_image "Z"   "103" "bohr"  $universe_bohr
+grab_token_image "Z"   "104" "bohr"  $universe_bohr
+grab_token_image "Z"   "105" "bohr"  $universe_bohr
+grab_token_image "Z"   "106" "bohr"  $universe_bohr
+grab_token_image "Z"   "107" "bohr"  $universe_bohr
+grab_token_image "Z"   "108" "bohr"  $universe_bohr
+grab_token_image "Z"   "109" "bohr"  $universe_bohr
+grab_token_image "Z"   "110" "bohr"  $universe_bohr
+grab_token_image "Z"   "111" "bohr"  $universe_bohr
+grab_token_image "Z"   "112" "bohr"  $universe_bohr
+grab_token_image "Cv"   "97" "bohr"  $universe_bohr
+grab_token_image "Cv"   "98" "bohr"  $universe_bohr
+grab_token_image "Cv"   "99" "bohr"  $universe_bohr
+grab_token_image "Cv"  "100" "bohr"  $universe_bohr
+grab_token_image "Cv"  "101" "bohr"  $universe_bohr
+grab_token_image "Cv"  "102" "bohr"  $universe_bohr
+grab_token_image "Cv"  "103" "bohr"  $universe_bohr
+grab_token_image "Cv"  "104" "bohr"  $universe_bohr
+grab_token_image "Cv"  "105" "bohr"  $universe_bohr
+grab_token_image "Cv"  "106" "bohr"  $universe_bohr
+grab_token_image "Cv"  "107" "bohr"  $universe_bohr
+grab_token_image "Cv"  "108" "bohr"  $universe_bohr
+grab_token_image "Cv"  "109" "bohr"  $universe_bohr
+grab_token_image "Cv"  "110" "bohr"  $universe_bohr
+grab_token_image "Cv"  "111" "bohr"  $universe_bohr
+grab_token_image "Cv"  "114" "bohr"  $universe_bohr
+grab_token_image "Cv"  "115" "bohr"  $universe_bohr
+grab_token_image "Vt"   "98" "bohr"  $universe_bohr
+grab_token_image "Vt"   "99" "bohr"  $universe_bohr
+grab_token_image "Vt"  "100" "bohr"  $universe_bohr
+grab_token_image "Vt"  "101" "bohr"  $universe_bohr
+grab_token_image "Vt"  "102" "bohr"  $universe_bohr
+grab_token_image "Vt"  "103" "bohr"  $universe_bohr
+grab_token_image "Vt"  "104" "bohr"  $universe_bohr
+grab_token_image "Vt"  "105" "bohr"  $universe_bohr
+grab_token_image "Vt"  "106" "bohr"  $universe_bohr
+grab_token_image "Vt"  "107" "bohr"  $universe_bohr
+grab_token_image "Vt"  "108" "bohr"  $universe_bohr
+grab_token_image "Vt"  "109" "bohr"  $universe_bohr
+grab_token_image "Vt"  "110" "bohr"  $universe_bohr
+grab_token_image "Vt"  "111" "bohr"  $universe_bohr
+grab_token_image "Vt"  "112" "bohr"  $universe_bohr
+grab_token_image "Vt"  "119" "bohr"  $universe_bohr
+grab_token_image "Vt"  "120" "bohr"  $universe_bohr
+grab_token_image "Ek"   "99" "bohr"  $universe_bohr
+grab_token_image "Ek"  "100" "bohr"  $universe_bohr
+grab_token_image "Ek"  "101" "bohr"  $universe_bohr
+grab_token_image "Ek"  "102" "bohr"  $universe_bohr
+grab_token_image "Ek"  "103" "bohr"  $universe_bohr
+grab_token_image "Ek"  "104" "bohr"  $universe_bohr
+grab_token_image "Ek"  "105" "bohr"  $universe_bohr
+grab_token_image "Ek"  "106" "bohr"  $universe_bohr
+grab_token_image "Ek"  "107" "bohr"  $universe_bohr
+grab_token_image "Ek"  "108" "bohr"  $universe_bohr
+grab_token_image "Ek"  "109" "bohr"  $universe_bohr
+grab_token_image "Ek"  "110" "bohr"  $universe_bohr
+grab_token_image "Ek"  "111" "bohr"  $universe_bohr
+grab_token_image "Ek"  "112" "bohr"  $universe_bohr
+grab_token_image "Ek"  "113" "bohr"  $universe_bohr
+grab_token_image "Ek"  "119" "bohr"  $universe_bohr
+grab_token_image "Ek"  "120" "bohr"  $universe_bohr
+grab_token_image "Ek"  "121" "bohr"  $universe_bohr
+grab_token_image "Ji"  "103" "bohr"  $universe_bohr
+grab_token_image "Ji"  "104" "bohr"  $universe_bohr
+grab_token_image "Ji"  "105" "bohr"  $universe_bohr
+grab_token_image "Ji"  "106" "bohr"  $universe_bohr
+grab_token_image "Ji"  "107" "bohr"  $universe_bohr
+grab_token_image "Ji"  "108" "bohr"  $universe_bohr
+grab_token_image "Ji"  "109" "bohr"  $universe_bohr
+grab_token_image "Ji"  "110" "bohr"  $universe_bohr
+grab_token_image "Ji"  "111" "bohr"  $universe_bohr
+grab_token_image "Ji"  "112" "bohr"  $universe_bohr
+grab_token_image "Ji"  "113" "bohr"  $universe_bohr
+grab_token_image "Ji"  "114" "bohr"  $universe_bohr
+grab_token_image "Ji"  "121" "bohr"  $universe_bohr
+grab_token_image "Aw"  "104" "bohr"  $universe_bohr
+grab_token_image "Aw"  "105" "bohr"  $universe_bohr
+grab_token_image "Aw"  "106" "bohr"  $universe_bohr
+grab_token_image "Aw"  "107" "bohr"  $universe_bohr
+grab_token_image "Aw"  "108" "bohr"  $universe_bohr
+grab_token_image "Aw"  "109" "bohr"  $universe_bohr
+grab_token_image "Aw"  "110" "bohr"  $universe_bohr
+grab_token_image "Aw"  "111" "bohr"  $universe_bohr
+grab_token_image "Aw"  "112" "bohr"  $universe_bohr
+grab_token_image "Aw"  "113" "bohr"  $universe_bohr
+grab_token_image "Aw"  "114" "bohr"  $universe_bohr
+grab_token_image "Aw"  "115" "bohr"  $universe_bohr
+grab_token_image "Aw"  "124" "bohr"  $universe_bohr
+grab_token_image "Aw"  "125" "bohr"  $universe_bohr
+grab_token_image "Kn"  "106" "bohr"  $universe_bohr
+grab_token_image "Kn"  "107" "bohr"  $universe_bohr
+grab_token_image "Kn"  "108" "bohr"  $universe_bohr
+grab_token_image "Kn"  "109" "bohr"  $universe_bohr
+grab_token_image "Kn"  "110" "bohr"  $universe_bohr
+grab_token_image "Kn"  "111" "bohr"  $universe_bohr
+grab_token_image "Kn"  "112" "bohr"  $universe_bohr
+grab_token_image "Kn"  "113" "bohr"  $universe_bohr
+grab_token_image "Kn"  "114" "bohr"  $universe_bohr
+grab_token_image "Kn"  "115" "bohr"  $universe_bohr
+grab_token_image "Kn"  "116" "bohr"  $universe_bohr
+grab_token_image "Ha"  "108" "bohr"  $universe_bohr
+grab_token_image "Ha"  "109" "bohr"  $universe_bohr
+grab_token_image "Ha"  "110" "bohr"  $universe_bohr
+grab_token_image "Ha"  "111" "bohr"  $universe_bohr
+grab_token_image "Ha"  "112" "bohr"  $universe_bohr
+grab_token_image "Ha"  "113" "bohr"  $universe_bohr
+grab_token_image "Ha"  "114" "bohr"  $universe_bohr
+grab_token_image "Ha"  "115" "bohr"  $universe_bohr
+grab_token_image "Ha"  "116" "bohr"  $universe_bohr
+grab_token_image "Ha"  "117" "bohr"  $universe_bohr
+grab_token_image "Ax"  "109" "bohr"  $universe_bohr
+grab_token_image "Ax"  "110" "bohr"  $universe_bohr
+grab_token_image "Ax"  "111" "bohr"  $universe_bohr
+grab_token_image "I"   "113" "bohr"  $universe_bohr
+grab_token_image "I"   "114" "bohr"  $universe_bohr
+grab_token_image "I"   "115" "bohr"  $universe_bohr
+grab_token_image "Jb"  "116" "bohr"  $universe_bohr
+grab_token_image "Go"  "117" "bohr"  $universe_bohr
+grab_token_image "Go"  "118" "bohr"  $universe_bohr
+grab_token_image "X"   "119" "bohr"  $universe_bohr
+grab_token_image "Eh"  "123" "bohr"  $universe_bohr
+grab_token_image "Eh"  "124" "bohr"  $universe_bohr
+grab_token_image "Ys"  "125" "bohr"  $universe_bohr
