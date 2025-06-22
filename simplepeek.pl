@@ -67,11 +67,12 @@ $line =~ s/0x0000000000000000000000000000000000000000000000000000000000000040//;
    warn "WARNING: Expected universe,chemist,OTOMRO here but didn't find it!";
  }
 
-# print "initiateReaction OTOMRO $otomro CHEMIST $chemist INPUT NRG $energy_input INPUTS: ".  join(" + ",@otoms_in) . "\n";
+#print "initiateReaction OTOMRO $otomro CHEMIST $chemist INPUT NRG $energy_input INPUTS: ".  join(" + ",@otoms_in) . "\n";
+ print "initiateReaction OTOMRO $otomro\n";
+ printf " OTOMRO %8d Universe %s\n", $otomro, $this_universe;
 
 }elsif ($line =~ /^0x0000000000000000000000000000000000000000000000000000000000000020(\w{64})/g){
   $this_universe=$1;
-
 
  #
  # Get the OTOMRO (OTOM Reaction Outputs) number
@@ -79,14 +80,7 @@ $line =~ s/0x0000000000000000000000000000000000000000000000000000000000000040//;
  if ($line =~ /0000000000000000000000(\w\w\w\w\w\w),0x\w+,\s*$/){
    $otomro = eval "0x$1";
  }
-
-
-
-
-
-
-
-
+ print "analyseReactions OTOMRO $otomro\n";
 
 }else{
   # Not a call to initiateReaction() nor analyseReactions() so skip it

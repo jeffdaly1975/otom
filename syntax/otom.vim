@@ -110,14 +110,29 @@ hi type_chemical   ctermfg=12
 " I often put stability values after an isotope.
 " This colors 0.77 and below as unstable, meaning likely to add/subtract a proton in a reaction
 "
-syn match StabilityUnstable /(0\.[0-6]\d\+)/   "0.000 - 0.699
-syn match StabilityUnstable /(0\.7[0-7]\d\+)/  "0.700 - 0.779
-syn match StabilityStable   /(0\.7[89]\d\+)/   "0.780 - 0.799
-syn match StabilityStable   /(0\.[89]\d\+)/    "0.800 - 0.999
-syn match StabilityStable   /(1\.\d\+)/        "0.800 - 0.999
+syn match StabilityUnstable /(0\.[0-6]\d\d)/   "0.000 - 0.699
+syn match StabilityUnstable /(0\.7[0-7]\d)/    "0.700 - 0.779
+syn match StabilityStable   /(0\.7[89]\d)/     "0.780 - 0.799
+syn match StabilityStable   /(0\.[89]\d\d)/    "0.800 - 0.999
+syn match StabilityStable   /([1-9]\.\d\d\d)/  "1.000 - 9.999
 
 hi StabilityUnstable guifg=darkgreen ctermfg=darkgreen   guibg=NONE ctermbg=NONE
 hi StabilityStable   guifg=red       ctermfg=red         guibg=NONE ctermbg=NONE
+
+syn match PossiblyStabilityUnstable /(0\.[0-6]\d?)/   "0.00? - 0.69?
+syn match PossiblyStabilityUnstable /(0\.7[0-7]?)/    "0.70? - 0.77?
+syn match PossiblyStabilityStable   /(0\.7[89]?)/     "0.78? - 0.79?
+syn match PossiblyStabilityStable   /(0\.[89]\d?)/    "0.80? - 0.99?
+syn match PossiblyStabilityStable   /(1\.\d\d?)/      "1.80? - 9.99?
+
+hi PossiblyStabilityUnstable guifg=darkgreen ctermfg=green       guibg=NONE ctermbg=NONE cterm=italic
+hi PossiblyStabilityStable   guifg=red       ctermfg=darkred     guibg=NONE ctermbg=NONE cterm=italic
+
+syn match UnknownStability   /(?\.???)/      "?.??? - ?.???
+
+hi UnknownStability          guifg=grey      ctermfg=grey        guibg=NONE ctermbg=NONE cterm=italic
+
+"---
 
 
 hi rarity_common     guibg=green        ctermbg=green          guifg=black   ctermfg=black

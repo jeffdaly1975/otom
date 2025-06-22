@@ -1,3 +1,152 @@
+2025-06-22 Jun.Sun 10:33:20
+
+Vi-12∙ + 3000 => As₂ using 640.18 decay
+
+2025-06-22 Jun.Sun 10:16:15 New discovery! 683 isotopes in Universe Bohr
+
+ OTOMRO [ ]  Lx-76⁺ +  Vi-10⁺   +   3000 -> Dd-86 => Nm-86 + 1992.69 using 1007.31 nuclear+decay
+
+[ ] add to files
+
+2025-06-21 Jun.Sat 14:08:49 Still missing 30 reactions:
+MISSING OTOMRO: 30 reactions
+  7151-7152
+  7158-7168
+  7170
+  7173
+  7175
+  8725
+  8727-8729
+  11758-11762
+  12581-12583
+  12591-12592
+
+Seems like the code for those was necessary because none of them have logs on shapescan
+
+
+2025-06-21 Jun.Sat 11:00:34 I commented out some code in the parser to see if it was still necessary. There were some OTOMROs I didn't get in logs somehow so I populated the %db hash directly for them.
+Well I wanted to see if they were still missing after I downloaded additional logs from a few dates, in 12 hour blocks to csv. I commented out the code that prepopulated their data and ran the parser
+
+Many of them were resolved! Here's whats still missing per the parser output.
+
+This error says "The following 10 OTOMROs have no initiateReaction entry in the logs, but do have an analyseReactions entry:"
+
+   7153 initiateReaction(): Nov 20 2024 13:25:51 PM (-05:00 UTC)
+   7153 analyseReactions(): Dec 01 2024 14:17:49 PM (-05:00 UTC) 
+
+   7169 initiateReaction(): Nov 20 2024 13:44:57 PM (-05:00 UTC)
+   7169 analyseReactions(): Nov 20 2024 13:47:31 PM (-05:00 UTC)
+
+   7171 initiateReaction(): Nov 20 2024 13:45:27 PM (-05:00 UTC)
+   7171 analyseReactions(): Nov 20 2024 13:47:31 PM (-05:00 UTC)
+
+   7172 initiateReaction(): Nov 20 2024 13:45:49 PM (-05:00 UTC)
+   7172 analyseReactions(): Nov 20 2024 13:47:31 PM (-05:00 UTC)
+
+   7174 initiateReaction(): Nov 20 2024 13:46:11 PM (-05:00 UTC)
+   7174 analyseReactions(): Nov 20 2024 13:47:31 PM (-05:00 UTC)
+
+   7176 initiateReaction(): Nov 20 2024 13:46:47 PM (-05:00 UTC)
+   7176 analyseReactions(): Nov 20 2024 13:47:31 PM (-05:00 UTC)
+
+   7177 initiateReaction(): Nov 20 2024 13:46:51 PM (-05:00 UTC)
+   7177 analyseReactions(): Nov 20 2024 13:49:29 PM (-05:00 UTC)
+
+   8361 initiateReaction(): Nov 21 2024 05:02:31 AM (-05:00 UTC)
+   8361 analyseReactions(): Nov 21 2024 05:02:51 AM (-05:00 UTC)
+
+   8726 initiateReaction(): Nov 21 2024 14:02:59 PM (-05:00 UTC)
+   8726 analyseReactions(): Nov 21 2024 14:03:17 PM (-05:00 UTC)
+
+   8730 initiateReaction(): Nov 21 2024 14:07:43 PM (-05:00 UTC)
+   8730 analyseReactions(): Nov 21 2024 14:19:13 PM (-05:00 UTC)
+
+[c] check those OTOMROs for the tx and see the dates of the missing initiateReaction.
+[c] Download a sample of one of those small timeframes and see if they are in the log.
+    [x] If not, try offsetting by whether DST was in effect at the time and for if these logs use UTC
+
+
+Like 8361 up there. It was initiated and analyzed in the same minute 05:02 AM (-5 UTC)
+   8361 initiateReaction(): Nov 21 2024 05:02:31 AM (-05:00 UTC)
+   8361 analyseReactions(): Nov 21 2024 05:02:51 AM (-05:00 UTC)
+
+Right there in shapescan it is showing the UTC offset.
+
+I downloaded that minute. There was only 1 log entry for analyseReactions OTOMRO 8361
+
+Where is the initiateReaction() ?
+ 
+I visited the tx on shapescan at https://shapescan.xyz/tx/0x84a98e2b962fe85a95e5b47af4f7d3ca7c38d52187f86ef010a17966498839e9?tab=logs
+
+It actually says there "There are no logs for this transaction."
+
+Well that explains it.
+Checked each of those OTOMROs with missing initiateReaction() calls. Yep they each have no logs on shapescan. Dang.
+Well I can remove the other ones from the prepoulation code and keep these ones in.
+
+
+2025-06-21 Jun.Sat 08:21:40 Right now it looks like there is an impenetrable wall at 72 neutrons. I see attempts at intermediates !Kn-128, !Ha-129, !Ax-130, !I-131, !Jb-132, !Go-133, !X-134, !⁶⁴-135, !Eh-136, !Ys-137, !⁶⁷-138, !⁶⁸-139, !⁶⁹-140, and !⁷⁰-141
+
+Lets test some more:
+Lx-96⁻  + Ro-28⁻  = Vt-124?(?.???) |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [ ]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+ [ ]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+ [ ]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+ [ ]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [ ]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+ [ ]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+ [ ]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+ [ ]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+ [ ]|  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       | nuclear                      | OTOMRO  225086 |
+ [ ]|  Uq-52⁻             +[  3100.02 -   5000] => P-24 + Ro-28        | decay, nuclear               | OTOMRO  225095 |
+ [ ]|  Lx-96⁻  + Ro-28⁻   +   5000  = Vt-124?(?.???) |
+total: 43136
+
+Lx-96⁻  + Cl-29⁻  = Ek-125?(?.???) |
+ [ ]|  Ct-17⁻ +  Uq-47⁻   +[  1197.60 -   5000] => C-64                | nuclear                      | OTOMRO  142528 |
+ [ ]|   C-64⁻             +[  5148.46 -  10000] => Cl-29 + K-35        | nuclear                      | OTOMRO  125334 |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [ ]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+ [ ]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+ [ ]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+ [ ]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+ [ ]   Lx-96⁻ +  Cl-29⁻   +   5000  = Ek-125?(?.???) |
+total: 24517
+
+Lx-96⁻  + Yu-31⁻  = Ji-127?(?.???) |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [ ]|   Dz-9∙ +  Eb-22∙   +[   972.60 -   5000] => Yu-31               | nuclear                      | OTOMRO  225927 |
+ [ ]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+ [ ]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+ [ ]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+ [ ]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+ [ ]   Lx-96⁻ +  Yu-31⁻   +   5000 = Ji-127?(?.???) |
+total: 19144
+
+
+Lx-96⁻  + Yu-30∙  = Ji-126?(?.???) |
+[ ] | Ji-126?(?.???) |Lx-96⁻  + Yu-30∙  + 5000 = Ji-126?(?.???) |
+ [ ]|  Ct-13⁺ +  Ct-17⁻   +[   532.73 -   5000] => Yu-30               | nuclear                      | OTOMRO  137177 |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [ ]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [ ]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+ [ ]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+ [ ]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+ [ ]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+total: 18709.19 
+
+
 2025-06-20 Jun.Fri 22:04:52 New discovery, 682 isotopes in Bohr
 
  OTOMRO 328407: Lu-40⁻ + K-34∙     + 3300     -> Kk-74 => Kk-74 + 802.92 used 2497.08 nuclear
@@ -64,7 +213,7 @@ How much energy should it take? Well Ys-125 is made from intermediate ⁶⁷-125
 [r]|   K-31⁺ +  Nm-89⁺   +[  2560.30 -  10000] => P-22 + Z-98         | decay, nuclear               | OTOMRO  253489 |
 [r]|  Ro-22⁺ +   Z-98⁺   +[  1955.64 -   5000] => P-22 + Cv-98        | decay, nuclear               | OTOMRO  253708 |
 [r]|  Cv-98ª             +[     0.00 -      0] => P-22 + Lx-76        | decay                        | OTOMRO   91075*|
-[*]|  Lx-76⁺ +  Vi-10⁺   +   3000              -> Dd-86 => ? Nm-86
+[r]|  Lx-76⁺ +  Vi-10⁺   +   3000              -> Dd-86 => ? Nm-86 <---SUCCESS! used 1007.31 nuclear+decay
 total:  11431.51 NRG
 
 [ ] | N-78           |Lx-76⁺  + Sr-2∙   + 5000 ->   N-78⁺(?.???) => Lx-78   | total: 13431.51 NRG
