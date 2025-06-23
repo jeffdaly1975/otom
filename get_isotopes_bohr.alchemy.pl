@@ -715,6 +715,13 @@ my %idhash=(
 680 => "Yv-78",
 681 => "Kk-73",
 682 => "Kk-74",
+683 => "Yu-32",
+684 => "Ux-59",
+685 => "Lx-78",
+686 => "N-80",
+687 => "Vl-83",
+688 => "Nm-86",
+689 => "Da-111",
 );
 
 
@@ -1401,6 +1408,13 @@ my %hexhash=(
  "Yv-78" => "4f91456ecf7903dbff860c16aba74e4263a619a8f6150c14b42ede0cc5fe651b",
  "Kk-73" => "0aa155dd8dd90e0556e45cd604f92f181bf7a1f9d9329736f4f22dbf189793c4",
  "Kk-74" => "8508de5999111456c90aebf26ea9dec4a4ba78249ce96d452438b0a71e6311f0",
+ "Yu-32" => "9837318e64c2237ed5021f700f7f2aaded4eeedbdd3d46663fb248f19d099abc",
+ "Ux-59" => "72ced8780b35690fe70dbe51f25d73812a2f70b76fc0769b1ac70f6ebdc061b1",
+ "Lx-78" => "bff255a881b0fe0c4b37e9076131ee0d016566236413ebe220192959547019ec",
+ "N-80"  => "522f51d57e6aec14be67277ef3f4a623af0e3f96bb8af95be64182977a65879c",
+ "Vl-83" => "60a52282caeec27062873b37eb4d059a5ef55fb2539ecec0283601c18cb454c8",
+ "Nm-86" => "907c7ce61aeade8f41aae62ac977b11d08728f1b8dfe7d22a476036c575abc45",
+ "Da-111"=> "64d36db6b17414bcde083eb3285c8c36ee2d2d59ac7464c109d7327f078e5ccc",
 );
 
 # query the blockchain via alchemy 

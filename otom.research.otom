@@ -1,12 +1,105 @@
+2025-06-23 Jun.Mon 09:55:44 Isotopes that are undiscovered between light and heavier isotopes of the same otom:
+
+These 3 likely are stable and can be aimed for directly
+[ ] ?Gy-71ª (0.85?)
+[ ] ?Gy-72ª (0.84?)
+[ ] ?Yv-76ª (0.87?)   
+
+Might be accessible by beta decay:
+[ ] ?Yv-79⁻ (0.75?)  Kk-79⁻ should decay to this
+[ ] *Vt-118ª(0.672)  Cv-118 might be beta- and thus could decay to this but uncertain
+
+
+All these cannot be produced by aiming for a beta decay isotope. It seems I need to hit them by alpha decay or fission of large isotopes:
+  Aw-116ª(0.618)
+ *Aw-117ª(0.618)
+ *Aw-118ª(0.618)
+ *Aw-119ª(0.618)
+ *Aw-120ª(0.618)
+ *Aw-121ª(0.618)
+ *Aw-122ª(0.618)
+ *Aw-123ª(0.618)
+ *Co-77ª (0.779)
+ *Cv-112ª(0.688)
+ *Cv-113ª(0.688)
+ *Ek-114ª(0.662)
+ *Ek-115ª(0.662)
+ *Ek-116ª(0.662)
+ *Ek-117ª(0.662)
+ *Ek-118ª(0.662)
+ *Ji-115ª(0.638)
+ *Ji-116ª(0.638)
+ *Ji-117ª(0.638)
+ *Ji-118ª(0.638)
+ *Ji-119ª(0.638)
+ *Ji-120ª(0.638)
+ *Vt-113ª(0.672)
+ *Vt-114ª(0.672)
+ *Vt-115ª(0.672)
+ *Vt-116ª(0.672)
+ *Vt-117ª(0.672)
+
+
+2025-06-23 Jun.Mon 09:43:43 New discovery Da-111 so 689 isotopes in Bohr
+
+ OTOMRO 334302:  N-94⁻ +  Ct-17⁻     + 5000 -> Da-111∙   => Da-111 + 3152.89354415930029063 using 1847.11 nuclear
+
+[c] add to files
+
+[c] try Da-111 + 20000 => ? Pb-52 + Ux-59
+
+Damn I shouldn't have done that one. I already found Ux-59 yesterday. It just wasn't highlighted in my vim syntax highlighting because I didn't add it to all my files yet. Dang.
+
+2025-06-23 Jun.Mon 00:10:41 New discovery Vl-83, so 688 isotopes in Bohr
+
+  OTOMRO 333527:  Lx-76⁺ +   Dz-7⁺   +   5000 ->  Se-83⁺   => Vl-83 + 3916.221420296788437554 using 1083.78 nuclear+decay
+
+[c] add to files
+
+2025-06-23 Jun.Mon 00:08:33 New discovery N-80, so 687 isotopes in Bohr
+
+  OTOMRO 333526:  Lx-76⁺ +   Ei-4∙   +   5000 ->   U-80⁺   => N-80 + 3726.845806431900655298 using 1273.15 nuclear+decay
+
+[c] add to files
+
+2025-06-22 Jun.Sun 23:46:02 New discovery Lx-78, so 686 isotopes in Bohr
+
+  OTOMRO 333504:  Lx-76⁺ +   Sr-2∙  + 5000 -> N-78⁺ => Lx-78 + 3843.947023841446480219 using 1156.05 nuclear+decay
+
+[c] add to files
+
+2025-06-22 Jun.Sun 16:26:50 New discovery Yu-32, so 685 isotopes in Bohr
+
+ OTOMRO 333012: Ux-59 + 10000 => Ro-27 + Yu-32 + 5634.841509123531068326 using 4365.16 nuclear
+
+[c] add to files
+
+2025-06-22 Jun.Sun 16:23:08 New discovery Ux-59, so 684 isotopes in Bohr
+
+ OTOMRO 332991: Da-110∙ +  18000 => Pb-51 + Ux-59 + 3379.801765999472991098 using 14620.20 nuclear
+
+[c] add to files
+
+try:
+[r] Ux-59 + 10000 => ? Ro-27 + Yu-32 <---SUCCESS! used 4365.16 nuclear
+
+
+2025-06-22 Jun.Sun 15:24:46
+Aim for Ux-60 and U-61 to get Pg-60 and Pg-61:
+[ ] | Ux-60?(?.???)  |Dx-43⁻  + Ct-17⁻  = Ux-60?(?.???)  | total:  16206.58
+
+[ ] | Ux-61?(?.???)  |Uq-52⁻  + Dz-9∙   = Ux-61?(?.???)  | total:  20868.57
+
+
 2025-06-22 Jun.Sun 10:33:20
 
 Vi-12∙ + 3000 => As₂ using 640.18 decay
 
 2025-06-22 Jun.Sun 10:16:15 New discovery! 683 isotopes in Universe Bohr
 
- OTOMRO [ ]  Lx-76⁺ +  Vi-10⁺   +   3000 -> Dd-86 => Nm-86 + 1992.69 using 1007.31 nuclear+decay
+ OTOMRO 331739:  Lx-76⁺ +  Vi-10⁺   +   3000 -> Dd-86 => Nm-86 + 1992.694309173246665523 using 1007.31 nuclear+decay
 
-[ ] add to files
+[c] add to files
 
 2025-06-21 Jun.Sat 14:08:49 Still missing 30 reactions:
 MISSING OTOMRO: 30 reactions
@@ -144,6 +237,7 @@ Lx-96⁻  + Yu-30∙  = Ji-126?(?.???) |
  [ ]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
  [ ]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
  [ ]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+ [ ]|  Lx-96⁻ +  Yu-30∙   +   5000 -> Ji-126    => ?Aw-126
 total: 18709.19 
 
 
@@ -216,12 +310,45 @@ How much energy should it take? Well Ys-125 is made from intermediate ⁶⁷-125
 [r]|  Lx-76⁺ +  Vi-10⁺   +   3000              -> Dd-86 => ? Nm-86 <---SUCCESS! used 1007.31 nuclear+decay
 total:  11431.51 NRG
 
-[ ] | N-78           |Lx-76⁺  + Sr-2∙   + 5000 ->   N-78⁺(?.???) => Lx-78   | total: 13431.51 NRG
-[ ] | Se-83          |Lx-76⁺  + Dz-7⁺   + 5000 ->  Se-83⁺(?.???) => Vl-83   | total: 13431.51 NRG
-[ ] | U-80           |Lx-76⁺  + Ei-4∙   + 5000 ->   U-80⁺(0.829) => N-80    | total: 13431.51 NRG
-[ ] | Da-111         |N-94⁻   + Ct-17⁻  + 5000 -> Da-111∙(?.???) => Da-111  | total: 14099.21 NRG
-[ ] | Ys-122         |Da-90⁺  + Mt-32⁺  + 5000 -> Ys-122⁺(?.???) => Eh-122  | total: 14207.87 NRG
-[ ] | Ys-121         |Ek-99⁺  + Ro-22⁺  + 5000 -> Ys-121⁺(?.???) => Eh-121  | total: 14954.59 NRG
+[>] | N-78           |Lx-76⁺  + Sr-2∙   + 5000 ->   N-78⁺(?.???) => Lx-78   | total: 13431.51 NRG
+  [r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+  [r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+  [r]|   K-31⁺ +  Nm-89⁺   +[  2560.30 -  10000] => P-22 + Z-98         | decay, nuclear               | OTOMRO  253489 |
+  [r]|  Ro-22⁺ +   Z-98⁺   +[  1955.64 -   5000] => P-22 + Cv-98        | decay, nuclear               | OTOMRO  253708 |
+  [r]|  Cv-98ª             +[     0.00 -      0] => P-22 + Lx-76        | decay                        | OTOMRO   91075*|
+  [r]|  Lx-76⁺ +   Sr-2∙   +   5000 ->   N-78⁺   => Lx-78 <--SUCCESS! using 1156.05 nuclear+decay
+total: 13431.51 NRG
+
+
+[>] | Se-83          |Lx-76⁺  + Dz-7⁺   + 5000 ->  Se-83⁺(?.???) => Vl-83   | total: 13431.51 NRG
+  [r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+  [r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+  [r]|   K-31⁺ +  Nm-89⁺   +[  2560.30 -  10000] => P-22 + Z-98         | decay, nuclear               | OTOMRO  253489 |
+  [r]|  Ro-22⁺ +   Z-98⁺   +[  1955.64 -   5000] => P-22 + Cv-98        | decay, nuclear               | OTOMRO  253708 |
+  [r]|  Cv-98ª             +[     0.00 -      0] => P-22 + Lx-76        | decay                        | OTOMRO   91075*|
+  [r]|  Lx-76⁺ +   Dz-7⁺   +   5000 ->  Se-83⁺   => Vl-83  <---SUCCESS using 1083.78 nuclear+decay
+total: 13431.51 NRG
+
+[>] | U-80           |Lx-76⁺  + Ei-4∙   + 5000 ->   U-80⁺(0.829) => N-80    | total: 13431.51 NRG
+  [r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+  [r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+  [r]|   K-31⁺ +  Nm-89⁺   +[  2560.30 -  10000] => P-22 + Z-98         | decay, nuclear               | OTOMRO  253489 |
+  [r]|  Ro-22⁺ +   Z-98⁺   +[  1955.64 -   5000] => P-22 + Cv-98        | decay, nuclear               | OTOMRO  253708 |
+  [r]|  Cv-98ª             +[     0.00 -      0] => P-22 + Lx-76        | decay                        | OTOMRO   91075*|
+  [r]|  Lx-76⁺ +   Ei-4∙   +   5000 ->   U-80⁺   => N-80     <--SUCCESS using 1273.15 nuclear+decay
+total: 13431.51 NRG
+
+[>] | Da-111         |N-94⁻   + Ct-17⁻  + 5000 -> Da-111∙(?.???) => Da-111  | total: 14099.21 NRG
+  [r]|  Ct-17⁻ +  Xj-18∙   +[   843.77*-   5000] => K-35                | nuclear                      | OTOMRO  123975 |
+  [r]|   K-35⁻ +  Uq-47⁻   +[  2122.79*-   5000] => D-82                | nuclear                      | OTOMRO  280039 |
+  [r]|   K-34∙ +   D-82⁺   +[  3789.54 -   5000] => P-22 + U-94         | decay, nuclear               | OTOMRO  279698 | used 3786.64 [c] update recipe chains
+  [r]|  Eb-22∙ +   U-94⁻   +[  3038.97 -   5000] => P-22 + N-94         | decay, nuclear               | OTOMRO  314283*| used 2940.92 [c] update recipe chains
+  [r]|   N-94⁻ +  Ct-17⁻     + 5000 -> Da-111∙   => Da-111   <---SUCCESS! using 1847.11 nuclear
+total: 14099.21 NRG
+
+
+[ ] | Ys-122         |Da-90⁺  + Mt-32⁺  + 5000 ->!Ys-122⁺(?.???) => Eh-122  | total: 14207.87 NRG
+[ ] | Ys-121         |Ek-99⁺  + Ro-22⁺  + 5000 ->!Ys-121⁺(?.???) => Eh-121  | total: 14954.59 NRG
 [ ] | Da-112         |N-95⁻   + Ct-17⁻  + 5000 -> Da-112∙(?.???) => Da-112  | total: 15099.31 NRG
 [ ] | S-114          |Yv-80⁻  + Nd-34⁻  + 5000 ->  S-114⁻(?.???) => Z-114   | total: 15246.57 NRG
 [ ] | Ok-111         |Lx-94⁻  + Ct-17⁻  + 5000 -> Ok-111⁻(?.???) => Da-111  | total: 15313.89 NRG
@@ -556,10 +683,10 @@ Need to get fresh copies of logs for these days making sure I get all:
 [c] 2025-05-27
 [c] 2025-05-30
 [c] 2025-06-08
-[ ] 2025-06-13
-[ ] 2025-06-14
-[ ] 2025-06-15
-[ ] 2025-06-16
+[-] 2025-06-13
+[-] 2025-06-14
+[-] 2025-06-15
+[-] 2025-06-16
 
 Hmm. I downloaded what should be all logs for 5/26
  2025-05-26 1200 AM - 2025-05-26 1200 PM = 6837 lines
@@ -631,12 +758,13 @@ I'm also putting an "at" symbol (@) by outputs in the all isotopes stabilty char
 
 2025-06-16 Jun.Mon 10:54:51
 try
-[ ]| Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
-[ ]| Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
-[ ]| Ro-22⁺ +  Nm-89⁺   +[  1961.57 -   4000] => P-22 + Dd-89        | decay, nuclear               | OTOMRO  267828 |
-[ ]| Ro-22⁺ +  Dd-89⁺   +[  1843.31 -   1845] => P-22 + Ok-89        | decay, nuclear               | OTOMRO  109901 |
-[ ]| Mt-32⁺ +  Ok-89⁺   +[  2234.14 -   2240] => P-22 + Ek-99        | decay, nuclear               | OTOMRO  137835 |
-[ ]| Cl-25⁺ +  Ek-99⁺ +10000 -> 124-67-na  => ? Ys-124
+[r]| Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+[r]| Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+[r]| Ro-22⁺ +  Nm-89⁺   +[  1961.57 -   4000] => P-22 + Dd-89        | decay, nuclear               | OTOMRO  267828 | used 1956.67 [ ] update recipe chains
+[r]| Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        | decay, nuclear               | OTOMRO  109901 | used 1843.31 [ ] this is min
+[r]| Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        | decay, nuclear               | OTOMRO  137835 | used 2234.14 [ ] this is min
+[r]| Cl-25⁺ +  Ek-99⁺ +20000 -> 124-67-na  => ? Ys-124  <---NOPE! makes Ro-25 + Vt-99 using 1000 decay
+total: 29953
 
 2025-06-16 Jun.Mon 10:47:49
 
@@ -725,8 +853,14 @@ Z-97⁺   + K-29⁺   = <<126-67-na>>  |
 [c] add to files
 
 try:
-[ ]| Da-110∙ + 18000 => ? Pb-51 + Ux-59
-
+[>]| Da-110∙ + 18000 => ? Pb-51 + Ux-59
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [r]|  Ct-17⁻ +  Kk-71ª   +[  1503.32*-   5000] => Lx-88               | nuclear                      | OTOMRO  240837 |
+ [r]|   Sr-3∙ +  Lx-88∙   +[  1867.10 -   5000] => N-91                | nuclear                      | OTOMRO  302884*| used 1710.50 [c] update recipe chains
+ [r]|   P-24⁻ +   N-91∙   +[  3236.23 -   4000] => P-22 + N-93         | decay, nuclear               | OTOMRO  270855*| used 3198.08 [c] update recipe chains
+ [r]|   N-93⁻ +  Ct-17⁻   +   3000              => Da-110    [ ] SHORTER Da-110 chain! used 1756.43 [ ] update recipe chains
+ [r]| Da-110∙             +  18000 => ? Pb-51 + Ux-59 <--SUCCESS! used 14620.20 nuclear
+total: 28123
 
 2025-06-15 Jun.Sun 20:59:53
 
@@ -8014,7 +8148,7 @@ So it seems that Ro-22 fused with Aw-112 making ??-134ª which immediately alpha
 
 2025-05-12 May.Mon 23:11:19
 Lx-79\|\<Lx-77\>
-[ ] Can I discover Lx-78 by either ratcheting up Lx-77 with P-23 or ratcheting down Lx-79 with P-21
+[-] Can I discover Lx-78 by either ratcheting up Lx-77 with P-23 or ratcheting down Lx-79 with P-21
 
 
 2025-05-12 May.Mon 11:19:45 I moved all the reaction chain information I was writing from this research file to a new FILE chains.bohr.otom
@@ -15263,7 +15397,7 @@ try:
 |  Yv-68           +  6122.03 ..   11000 => ? K-33 + Dx-35    or decay to Lu-35
 
 
-[ ] |  Mt-32⁺ +  Yv-68 +  2408.12 ..    3000 => ? P-22 + Lx-78  will decay to W-78
+[-] |  Mt-32⁺ +  Yv-68 +  2408.12 ..    3000 => ? P-22 + Lx-78  will decay to W-78
 
 |  Cj-68⁺                                         +[       0.00 -      0] => ⬇ Yv-68                      | decay                        |
 
