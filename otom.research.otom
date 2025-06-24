@@ -1,9 +1,40 @@
+2025-06-23 Jun.Mon 21:32:21 New discovery Yv-76 so 692 isotopes in Bohr
+
+OTOMRO 334807:  F-69⁻ +   As-7∙   +   3000 -> Yv-76 => Yv-76 + 1550.404851018046883837 using 1449.60 nuclear
+
+[ ] add to files
+
+2025-06-23 Jun.Mon 21:26:58 New discovery Gy-72 so 691 isotopes in Bohr
+
+ OTOMRO 334803: F-69⁻ +   Sr-3∙   +   3000 -> Gy-72 => Gy-72 + 1793.160511215384076422 using 1206.84 nuclear
+
+[ ] add to files
+
+2025-06-23 Jun.Mon 21:22:28 New discovery Gy-71 so 690 isotopes in Bohr
+
+ OTOMRO 334799: F-69⁻ +   Sr-2∙   +   5000 -> Gy-71 => Gy-71 + 3758.223282271425887302 using 1241.78 nuclear
+
+[ ] add to files
+
 2025-06-23 Jun.Mon 09:55:44 Isotopes that are undiscovered between light and heavier isotopes of the same otom:
 
 These 3 likely are stable and can be aimed for directly
-[ ] ?Gy-71ª (0.85?)
-[ ] ?Gy-72ª (0.84?)
-[ ] ?Yv-76ª (0.87?)   
+[>] ?Gy-71ª (0.85?)
+[>] ?Gy-72ª (0.84?)
+[>] ?Yv-76ª (0.87?)   
+
+
+ [r]|  Eb-22∙ +  Uq-47⁻   +[  2070.15 -   5000] => F-69  | nuclear        | OTOMRO  161423 | used 2069.70 [c] update recipe chains
+ [r]    F-69⁻ +   Sr-2∙   +   5000 -> Gy-71?  <---SUCCESS! used 1241.78 nuclear
+total:  2070.15
+
+ [r]|  Eb-22∙ +  Uq-47⁻   +[  2069.70 -   5000] => F-69  | nuclear        | OTOMRO  161423 | used 2069.65 [c] update recipe chains
+ [r]    F-69⁻ +   Sr-3∙   +   3000 -> Gy-72? <---SUCCESS used 1206.84 nuclear
+total:  2070.15
+
+ [r]|  Eb-22∙ +  Uq-47⁻   +[  2069.65 -   5000] => F-69  | nuclear        | OTOMRO  161423 |
+ [r]    F-69⁻ +   As-7∙   +   3000 -> Yv-76? <---SUCCESS! used 1449.60 nuclear
+total:  2070.15
 
 Might be accessible by beta decay:
 [ ] ?Yv-79⁻ (0.75?)  Kk-79⁻ should decay to this

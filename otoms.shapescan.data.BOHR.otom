@@ -689,3 +689,97 @@
 | Eh-124 | 124 65 Eh | Eh   | metal    |     65 |     59 |  124 | 0.19697633002422266  | 64.59712666323104    | 1.2428045317097656   | 0.33540372670807456  | true     | alpha      | 0-0-0-0-0-0-2-5 | 0-0-0-0-0-0-1-2 | 0-0-0-0-0-0-3-7 |   7       |   7           | https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/69070241662237276685181428438941291826861797971333698667850206367836943811922
 | Ys-125 | 125 66 Ys | Ys   | nonmetal |     66 |     59 |  125 | 0.13609994562991426  | 70.7877978085726     | 1.2086963308528267   | 0.5446428571428571   | false    | alpha      | 0-0-0-0-0-0-3-5 | 0-0-0-0-0-0-0-2 | 0-0-0-0-0-0-3-7 |   7       |  11           | https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/5594596597090761178317915663337629244148346555324322516475565518610222463364
 
+
+
+Gy-71
+Attributes
+Name
+Gy
+Series
+metal
+Protons
+33
+Neutrons
+38
+Mass
+71
+Stability
+0.8640351363010801
+Density
+53.258178737012244
+Radius
+1.100586072365572
+Electronegativity
+0.26515151515151514
+Metallic
+true
+Decay Type
+beta-
+Filled Valence
+0-0-0-3-2-1-1-0
+Empty Valence
+0-0-0-1-2-2-1-0
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/68634982076466301122976682335011585651515333603934145001075574847728949131471
+OTOMRO 334799: F-69⁻ +   Sr-2∙   +   5000 -> Gy-71 => Gy-71 + 3758.223282271425887302 using 1241.78 nuclear
+
+Gy-72
+Attributes
+Name
+Gy
+Series
+metal
+Protons
+33
+Neutrons
+39
+Mass
+72
+Stability
+0.8391562561780987
+Density
+54.008293930491284
+Radius
+1.100586072365572
+Electronegativity
+0.26515151515151514
+Metallic
+true
+Decay Type
+beta-
+Filled Valence
+0-0-0-3-2-1-1-0
+Empty Valence
+0-0-0-1-2-2-1-0
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/83345700144749004513722922066877375394645153034323393575599646810847386528220
+OTOMRO 334803: F-69⁻ +   Sr-3∙   +   3000 -> Gy-72 => Gy-72 + 1793.160511215384076422 using 1206.84 nuclear
+
+Yv-76
+Attributes
+Name
+Yv
+Series
+nonmetal
+Protons
+35
+Neutrons
+41
+Mass
+76
+Stability
+1.8937617573125198
+Density
+66.22680163724327
+Radius
+1.0469515965787808
+Electronegativity
+0.5227272727272727
+Metallic
+false
+Decay Type
+stable
+Filled Valence
+0-0-0-3-3-2-1-0
+Empty Valence
+0-0-0-1-1-1-1-0
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/80059121562458771986595172135955224993755081866798941249648283318966215838329
+OTOMRO 334807:  F-69⁻ +   As-7∙   +   3000 -> Yv-76 => Yv-76 + 1550.404851018046883837 using 1449.60 nuclear
