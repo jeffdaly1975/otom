@@ -1,3 +1,84 @@
+2025-06-24 Jun.Tue 13:17:19 Discovered 4 more isotopes so 697 isotopes in Bohr
+
+OTOMRO 336293: Ct-17⁻  + N-96⁻   + 3000 -> Da-113? => S-113  + 1289.432129947105067913 using 1710.57 nuclear+decay
+OTOMRO 336299: Ei-5∙   + Yv-80⁻  + 3000 -> Iu-85?  => D-85   + 1606.662756447166657381 using 1393.34 nuclear+decay
+OTOMRO 336300: Xj-19∙  + Lx-94⁻  + 5000 -> S-113?  => Z-113  + 2209.936435941181116505 using 2790.06 nuclear+decay
+OTOMRO 336297: Eb-22∙  + Lx-94⁻  + 5000 -> Z-116?  => Cv-116 + 2014.886993480216233365 using 2985.11 nuclear+decay
+
+try:
+ [ ] S-112⁻ + 0 => ? S-112
+ [c] S-113⁻ + 0 => ? S-113
+ [ ] S-112⁻ + 12000 => ? Pb-52 + Pg-60   
+ [ ] S-113⁻ + 12000 => ? Pb-52 + Pg-61   
+
+2025-06-24 Jun.Tue 10:15:28 I see QMA discovered S-112 so now 693 isotopes in Bohr
+
+OTOMRO 335058: Ct-17⁻ + N-95⁻ + 5000 -> Da-112 => S-112 + 3172.716452659046808549 using 1827.28 nuclear+decay
+
+[ ] add to files
+
+make it:
+[ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[ ]|  Ct-17⁻ +  Kk-71ª   +[  1503.32*-   5000] => Lx-88               | nuclear                      | OTOMRO  240837 |
+[ ]|   Sr-3∙ +  Lx-88∙   +[  1710.50 -   5000] => N-91                | nuclear                      | OTOMRO  302884*|
+[ ]|   P-24⁻ +   N-91∙   +[  3198.08 -   4000] => P-22 + N-93         | decay, nuclear               | OTOMRO  270855*|
+[ ]|   P-24⁻ +   N-93⁻   +[  2456.96 -   4000] => P-22 + N-95         | decay, nuclear               | OTOMRO  270858*|
+[ ]   Ct-17⁻ +   N-95⁻  + 1828 -> Da-112 => S-112
+
+try:
+[>]   Ct-17⁻   + N-96⁻   -> Da-113⁻(?.???) => ? S-113
+ [r]|  Uq-47⁻ +  Kk-71ª   +[  3232.72*-  20000] => P-22 + Se-96        | decay, nuclear               | OTOMRO  269272 |
+ [r]|  Eb-22∙ +  Se-96∙   +[  4191.93 -   7000] => P-22 + Vl-96        | decay, nuclear               | OTOMRO  276265*| used 4051.53 [c] update recipe chains
+ [r]|  Eb-22∙ +  Vl-96⁻   +[  3061.24 -   4000] => P-22 + U-96         | decay, nuclear               | OTOMRO  276263*| used 3014.34 [c] update recipe chains
+ [r]|  Eb-22∙ +   U-96⁻   +[  2953.87 -   4000] => P-22 + N-96         | decay, nuclear               | OTOMRO  276259*| used 2901.57 [c] update recipe chains
+ [r]   Ct-17⁻   + N-96⁻   +   3000 -> Da-113⁻(0.77?) => ? S-113 + 1289.432129947105067913 <---SUCCESS! used 1710.57 nuclear+decay OTOMRO 336293
+total: 16439.76
+
+MORE new isotope recipes:
+[>] Ei-5∙   + Yv-80⁻  -> Iu-85?(?.???)  => ? D-85  | total:  9689.71
+ [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [r]|   P-24⁻ +  Nm-97ª   +[  2488.32*-   4000] => P-22 + Nm-99        | decay, nuclear               | OTOMRO  280038 | used 2488.17 [c] update recipe chains
+ [r]|  Eb-22∙ +  Nm-99ª   +[  3144.01 -   4500] => P-22 + Se-99        | decay, nuclear               | OTOMRO  275797*| used 3076.26 [c] update recipe chains
+ [r]|   Sr-3∙ +  Se-99∙   +[  1751.37 -   5000] => P-22 + Yv-80        | decay, nuclear               | OTOMRO  214639 | used 1751.37
+ [r]  Ei-5∙   + Yv-80⁻    +   3000 -> Iu-85?(?.???)  => ? D-85 + 1606.662756447166657381  <---SUCCESS! used 1393.34 nuclear+decay OTOMRO 336299
+total:  12689.71
+
+[>] Xj-19∙  + Lx-94⁻  -> S-113?(?.???)  => ? Z-113 | total: 10313.89
+ [r]|  Eb-19⁺             +[     0.00 -    300] => Xj-19               | decay                        | OTOMRO   49573 |
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [r]|  Eb-22∙ +  Nm-97ª   +[  3064.41 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*| used 3061.01 [c] update recipe chains
+ [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+ [r]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 | used 3057.83 [c] update recipe chains
+ [r]  Xj-19∙  + Lx-94⁻    +   5000 -> S-113?(?.???)  => ? Z-113 + 2209.936435941181116505 <---SUCCESS! used 2790.06 nuclear+decay OTOMRO 336300
+total: 15313.89
+
+[>] Eb-22∙  + Lx-94⁻  -> Z-116?(?.???)  => ? Cv-116| total: 10313.89
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [r]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*| used 3064.41 [c] update recipe chains
+ [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 | used 1814.84
+ [r]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 | used 3057.83 [c] update recipe chains
+ [r]  Eb-22∙  + Lx-94⁻    +   5000 -> Z-116?(?.???)  => ? Cv-116 + 2014.886993480216233365 <---SUCCESS! used 2985.11 nuclear+decay OTOMRO 336297
+total: 15313.89
+
+
+
+[ ] Nd-34⁻  + Co-88⁻  -> Ek-122?(?.???) => ? Ji-122| total: 10717.43
+[ ] Eb-22∙  + Vl-101⁻ -> Ek-123?(?.???) => ? Ji-123| total: 12739.75
+[ ] As-7∙   + Vl-101⁻ -> Dd-108?(?.???) => ? Ok-108| total: 12739.75
+[ ] Ct-17⁻  + Lx-95⁻  -> Ok-112?(?.???) => ? Da-112| total: 13110.61
+[ ] Gj-11∙  + Lx-96⁻  -> Nm-107?(?.???) => ? Dd-107| total: 13176.46
+[ ] Cl-28⁻  + Lx-96⁻  -> Ek-124?(?.???) => ? Ji-124| total: 13656.61
+[ ] Yu-30∙  + Lx-96⁻  -> Ji-126?(?.???) => ? Aw-126| total: 13709.19
+[ ] Ro-26∙  + Lx-96⁻  -> Vt-122?(?.???) => ? Ek-122| total: 13941.66
+[ ] Yu-31⁻  + Lx-96⁻  -> Ji-127?(?.???) => ? Aw-127| total: 14149.06
+[ ] Ct-17⁻  + Dx-43⁻  -> Ux-60?(?.???)  => ? Pg-60 | total: 16206.58
+[ ] Ct-17⁻  + Uq-51⁻  -> C-68?(?.???)   => ? Ns-68 | total: 18302.16
+
+
 2025-06-23 Jun.Mon 21:32:21 New discovery Yv-76 so 692 isotopes in Bohr
 
 OTOMRO 334807:  F-69⁻ +   As-7∙   +   3000 -> Yv-76 => Yv-76 + 1550.404851018046883837 using 1449.60 nuclear
