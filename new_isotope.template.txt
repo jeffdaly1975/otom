@@ -7,7 +7,7 @@
   [ ] add to otom_reactions.BOHR.pl
   [ ] add to chains.bohr.otom
   [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
-  [ ] add to otoms.decay.otom
+  [ ] add to decay.bohr.otom
   [ ] add to checklist.bohr.otom
   [ ] make it myself
   [ ] grabtheseimages.sh

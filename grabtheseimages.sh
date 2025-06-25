@@ -635,6 +635,8 @@ grab_token_image "Gy"   "67" "bohr"  $universe_bohr
 grab_token_image "Gy"   "68" "bohr"  $universe_bohr
 grab_token_image "Gy"   "69" "bohr"  $universe_bohr
 grab_token_image "Gy"   "70" "bohr"  $universe_bohr
+grab_token_image "Gy"   "71" "bohr"  $universe_bohr
+grab_token_image "Gy"   "72" "bohr"  $universe_bohr
 grab_token_image "Gy"   "73" "bohr"  $universe_bohr
 grab_token_image "Gy"   "74" "bohr"  $universe_bohr
 grab_token_image "Kk"   "64" "bohr"  $universe_bohr
@@ -660,6 +662,7 @@ grab_token_image "Yv"   "72" "bohr"  $universe_bohr
 grab_token_image "Yv"   "73" "bohr"  $universe_bohr
 grab_token_image "Yv"   "74" "bohr"  $universe_bohr
 grab_token_image "Yv"   "75" "bohr"  $universe_bohr
+grab_token_image "Yv"   "76" "bohr"  $universe_bohr
 grab_token_image "Yv"   "77" "bohr"  $universe_bohr
 grab_token_image "Yv"   "78" "bohr"  $universe_bohr
 grab_token_image "Yv"   "80" "bohr"  $universe_bohr
@@ -700,6 +703,7 @@ grab_token_image "D"    "81" "bohr"  $universe_bohr
 grab_token_image "D"    "82" "bohr"  $universe_bohr
 grab_token_image "D"    "83" "bohr"  $universe_bohr
 grab_token_image "D"    "84" "bohr"  $universe_bohr
+grab_token_image "D"    "85" "bohr"  $universe_bohr
 grab_token_image "Co"   "74" "bohr"  $universe_bohr
 grab_token_image "Co"   "75" "bohr"  $universe_bohr
 grab_token_image "Co"   "76" "bohr"  $universe_bohr
@@ -921,6 +925,8 @@ grab_token_image "S"   "106" "bohr"  $universe_bohr
 grab_token_image "S"   "107" "bohr"  $universe_bohr
 grab_token_image "S"   "108" "bohr"  $universe_bohr
 grab_token_image "S"   "109" "bohr"  $universe_bohr
+grab_token_image "S"   "112" "bohr"  $universe_bohr
+grab_token_image "S"   "113" "bohr"  $universe_bohr
 grab_token_image "Z"    "95" "bohr"  $universe_bohr
 grab_token_image "Z"    "96" "bohr"  $universe_bohr
 grab_token_image "Z"    "97" "bohr"  $universe_bohr
@@ -939,6 +945,7 @@ grab_token_image "Z"   "109" "bohr"  $universe_bohr
 grab_token_image "Z"   "110" "bohr"  $universe_bohr
 grab_token_image "Z"   "111" "bohr"  $universe_bohr
 grab_token_image "Z"   "112" "bohr"  $universe_bohr
+grab_token_image "Z"   "113" "bohr"  $universe_bohr
 grab_token_image "Cv"   "97" "bohr"  $universe_bohr
 grab_token_image "Cv"   "98" "bohr"  $universe_bohr
 grab_token_image "Cv"   "99" "bohr"  $universe_bohr
@@ -956,6 +963,7 @@ grab_token_image "Cv"  "110" "bohr"  $universe_bohr
 grab_token_image "Cv"  "111" "bohr"  $universe_bohr
 grab_token_image "Cv"  "114" "bohr"  $universe_bohr
 grab_token_image "Cv"  "115" "bohr"  $universe_bohr
+grab_token_image "Cv"  "116" "bohr"  $universe_bohr
 grab_token_image "Vt"   "98" "bohr"  $universe_bohr
 grab_token_image "Vt"   "99" "bohr"  $universe_bohr
 grab_token_image "Vt"  "100" "bohr"  $universe_bohr
