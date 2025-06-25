@@ -1,9 +1,16 @@
+2025-06-25 Jun.Wed 15:28:44 zeroshape with 2 more discoveries so 700 isotopes in Bohr
+
+OTOMRO 337546: Ro-27⁻ + Lx-95⁻ + 10000 -> Vt-122 => Ek-122 + 7196.628572449745661288 using 2803.37 nuclear+decay
+OTOMRO 337531: Ro-27⁻ + Uq-52⁻ + 10000 ->  Kk-79 => Yv-79  + 7924.253719913610439107 using 2075.74 nuclear+decay
+
+[c] add to files
+
 2025-06-25 Jun.Wed 13:06:28 New discovery Ji-122 makes 698 isotopes in Bohr
 
  OTOMRO 337503:  Nd-34⁻  + Co-88⁻    +   5000 -> Ek-122 => Ji-122 + 2142.736116702974413784 using 2857.26 nuclear+decay
 
 [ ] mark *Ek-122
-[ ] add Ji-122 to files
+[c] add Ji-122 to files
 
 2025-06-25 Jun.Wed 11:46:29 Made these files to see all Bohr isotopes in one screen by just showing their decay types. One is from the stability chart I keep updated of known isotopes (FILE all_isotopes_stability_chart_universe_Bohr-thumbnail.otom) and the other (checkingsomething-stab-chart-thumbnail.otom) is one I've been working on while analyzing the intermediate isotopes that 2 inputs add up to. This is a precise indicator of those isotopes even if its impossible to create that isotope as output. 
 
