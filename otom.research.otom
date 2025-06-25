@@ -1,23 +1,26 @@
-2025-06-24 Jun.Tue 19:45:20
+2025-06-25 Jun.Wed 13:06:28 New discovery Ji-122 makes 698 isotopes in Bohr
 
-This Joe Rogan Bernie Sanders episode is frustrating.
-For the first hour there are no solutions, only bringing up issues that need resolution. Its weird. Like yeah Bernie, those are problems, some. The climate change one is not a problem in my opinion. He also worries too much about "oligarchs" running everything. YOU ARE A US REPRESENTATIVE. YOU ARE THE ONE WE ASKED TO MAKE CHANGES FOR GOOD. DO YOUR FUCKING JOB INSTEAD OF WHINING ABOUT EVERYTHING.
+ OTOMRO 337503:  Nd-34⁻  + Co-88⁻    +   5000 -> Ek-122 => Ji-122 + 2142.736116702974413784 using 2857.26 nuclear+decay
 
-Joe finally pushed back on an issue. Bernie mentioned how Trump is suing all the media outlets. Joe pushed back on specifically the CBS interview of Kamala Harris and how they edited her answer, removing the nonsense she originally spouted WHEN WE WERE WATCHING THE LIVE FEED and REPLACED IT WITH AN ANSWER SHE GAVE TO A COMPLETELYL DIFFERENT QUESTION! THAT"S MISLEADING! THATS UNCONSCIONABLE! ITS LIEING! ITS FUCKING ATROCIOUS! JFC HOW DO THEY NOT SEE IT.
+[ ] mark *Ek-122
+[ ] add Ji-122 to files
 
-Bernie tried to cover up the hole he dug by saying Trump is just suing everyone, and anyways, we have a free press so they are allowed to edit and change things. HUH???!?!? WHAT THE ACTUAL FUCK ARE YOU SAYING? You don't mind if a NATIONAL NEWS TELEVISION SHOW, 60 Minutes, that has been on air for probably 50 years and broadcasts to millions of US citizens hoping to learn more about their presidential candidates, you wouldn't mind if they moved around the answers of your oppponent but left all your flubbed answers in? GARBAGE. YOURE FULL OF SHIT and this is just another one of those instances where if its something about Trump, you go in full guns blazing opposed to everything. Fucking jackass. I've lost almost all respect for Bernie.
+2025-06-25 Jun.Wed 11:46:29 Made these files to see all Bohr isotopes in one screen by just showing their decay types. One is from the stability chart I keep updated of known isotopes (FILE all_isotopes_stability_chart_universe_Bohr-thumbnail.otom) and the other (checkingsomething-stab-chart-thumbnail.otom) is one I've been working on while analyzing the intermediate isotopes that 2 inputs add up to. This is a precise indicator of those isotopes even if its impossible to create that isotope as output. 
 
-Fucking hell. He's going hard on this. Joe brings it back up again. Says that's not investigative journalism when you take answers someone made to different questions and move them around to remove the word salad she said. Bernie tries to overtalk him to cut him off from speaking any more truths, and says we are going down a dangerous road, suing journalists.
+::FILE:: checkingsomething-stab-chart-thumbnail.otom
+::FILE:: all_isotopes_stability_chart_universe_Bohr-thumbnail.otom
 
-JFC. He won't agree with Joe about this. He won't cross the party line.
+I do have a problem though. I have like 4 or 5 of these stability charts and I don't think any of them are in agreement where they should be. Like they should each have all 693 real discovered isotopes represented.
 
-He's doing this thing where whenever Joe starts asking or speaking, he has to come in hot and overtalk before a thought or question can be completed. Then he TALKS. More like PREACHES his Democratic gospel. Filling time and taking the conversation elsewhere. Gross.
-
-Bernie says I don't think it is appropriate for the president of the united states to be in my view intimidating media
-
-The thing is, he was a presidential CANDIDATE when this happened. A major national news network broadcasted interviews with the 2 top presidential candidates, Trump and Harris. They changed at least one absolute word salad nonsense answer to be that from a completely different question. We all saw it happen live and then saw an edited version appear later. That's disingenuous. He rightfully sued them. They need to be reprimanded for "putting their fingers on the scale" in the presidential election. Fucking hell. I can't stand Trump, but I stand firm on this issue.
-
-Ok finally. Joe said he agreed that people in the public eye will be attacked by media. Then said but i also agree that CBS shouldn't be altering a presidential interview. Finally Bernie said Ok, if that is the case, I agree too. So there is hope for him.
+[ ] Get these in agreement where they should:
+::FILE:: Kjetil_all_isotopes_stability_chart_universe_Alpha.txt
+::FILE:: all_isotopes_stability_chart_universe_Bohr-LOOKING_FOR_UNDISCOVERED_ISOTOPES-2.txt
+::FILE:: all_isotopes_stability_chart_universe_Bohr-LOOKING_FOR_UNDISCOVERED_ISOTOPES.txt
+::FILE:: all_isotopes_stability_chart_universe_Bohr-thumbnail.otom
+::FILE:: all_isotopes_stability_chart_universe_Bohr.txt
+::FILE:: checkingsomething-stab-chart-thumbnail.otom
+::FILE:: checkingsomething-stab-chart.txt
+::FILE:: checkingsomething-summation-chart.txt
 
 
 
@@ -89,7 +92,16 @@ total: 15313.89
 
 
 
-[ ] Nd-34⁻  + Co-88⁻  -> Ek-122?(?.???) => ? Ji-122| total: 10717.43
+[>] Nd-34⁻  + Co-88⁻  -> Ek-122?(?.???) => ? Ji-122| total: 10717.43
+  [r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               | decay, nuclear               | OTOMRO  108339 |
+  [r]|   K-34∙ +  Kk-70ª   +[  3459.44*-  20000] => Da-104              | decay, nuclear               | OTOMRO  265504 | used 3459.34 [c] update recipe chains
+  [r]|   P-23∙ + Da-104ª   +[  3413.95 -   5000] => P-22 + Da-105       | decay, nuclear               | OTOMRO  284140 | used 3409.60 [c] update recipe chains
+  [r]|   Sr-3∙ + Da-105ª   +[  1432.64 -   5000] => Da-108              | decay, nuclear               | OTOMRO  188764 | used 1424.14 [c] update recipe chains
+  [r]|   Sr-2∙ + Da-108∙   +[  1854.54 -   5000] => P-22 + Co-88        | decay, nuclear               | OTOMRO   77793*| used 1697.29 [c] update recipe chains
+  [r]  Nd-34⁻  + Co-88⁻    +   5000 -> Ek-122 => ? Ji-122 + 2142.74 <---SUCCESS! using 2857.26 nuclear+decay
+total: 15717.43
+
+
 [ ] Eb-22∙  + Vl-101⁻ -> Ek-123?(?.???) => ? Ji-123| total: 12739.75
 [ ] As-7∙   + Vl-101⁻ -> Dd-108?(?.???) => ? Ok-108| total: 12739.75
 [ ] Ct-17⁻  + Lx-95⁻  -> Ok-112?(?.???) => ? Da-112| total: 13110.61

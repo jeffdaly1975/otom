@@ -18145,7 +18145,7 @@ syn match chain3  /\<C-63\>/
 syn match chain3  /\<Cj-79\>/
 syn match chain3  /\<Cj-80\>/
 syn match chain3  /\<Co-84\>/
-syn match chain3  /\<Co-85\>/
+syn match chain2  /\<Co-85\>/
 syn match chain3  /\<Co-87\>/
 syn match chain3  /\<Cv-101\>/
 syn match chain3  /\<Cv-103\>/
@@ -18812,7 +18812,7 @@ syn match chain3_2  /\zs\s\ze\<C-63\>/
 syn match chain3_2  /\zs\s\ze\<Cj-79\>/
 syn match chain3_2  /\zs\s\ze\<Cj-80\>/
 syn match chain3_2  /\zs\s\ze\<Co-84\>/
-syn match chain3_2  /\zs\s\ze\<Co-85\>/
+syn match chain2_1  /\zs\s\ze\<Co-85\>/
 syn match chain3_2  /\zs\s\ze\<Co-87\>/
 syn match chain3_2  /\zs\s\ze\<Cv-101\>/
 syn match chain3_2  /\zs\s\ze\<Cv-103\>/
