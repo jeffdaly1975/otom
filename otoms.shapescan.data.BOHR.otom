@@ -699,3 +699,96 @@
 | Eh-123 | 123 65 Eh | Eh   | metal    |     65 |     58 |  123 | 0.14307667138699354  | 64.07618209336627    | 1.2428045317097656   | 0.33540372670807456  | true     | alpha      | 0-0-0-0-0-0-2-5 | 0-0-0-0-0-0-1-2 | 0-0-0-0-0-0-3-7 |   7       |   7           | https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/53801647831407731587900300164718842870949695067388568692771267994987970100533
 | Eh-124 | 124 65 Eh | Eh   | metal    |     65 |     59 |  124 | 0.19697633002422266  | 64.59712666323104    | 1.2428045317097656   | 0.33540372670807456  | true     | alpha      | 0-0-0-0-0-0-2-5 | 0-0-0-0-0-0-1-2 | 0-0-0-0-0-0-3-7 |   7       |   7           | https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/69070241662237276685181428438941291826861797971333698667850206367836943811922
 | Ys-125 | 125 66 Ys | Ys   | nonmetal |     66 |     59 |  125 | 0.13609994562991426  | 70.7877978085726     | 1.2086963308528267   | 0.5446428571428571   | false    | alpha      | 0-0-0-0-0-0-3-5 | 0-0-0-0-0-0-0-2 | 0-0-0-0-0-0-3-7 |   7       |  11           | https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/5594596597090761178317915663337629244148346555324322516475565518610222463364
+
+Ok-108
+Attributes
+Name
+Ok
+Series
+noble
+Protons
+48
+Neutrons
+60
+Mass
+108
+Stability
+0.6394039506691228
+Density
+98.71707133457647
+Radius
+1.030411026948931
+Electronegativity
+0
+Metallic
+false
+Decay Type
+beta-
+Filled Valence
+0-0-0-0-1-3-3-2
+Empty Valence
+0-0-0-0-0-0-0-0
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/23661418217823622214219846305745243920447172816748413788750366430135207333034
+OTOMRO 337994:  As-7∙ + Vl-101⁻   +   5000   -> Dd-108 => Ok-108 + 3281.034038945224892814 using 1718.97 nuclear+decay
+
+Ji-123
+Attributes
+Name
+Ji
+Series
+metal
+Protons
+55
+Neutrons
+68
+Mass
+123
+Stability
+0.5272997706422462
+Density
+75.67937983338311
+Radius
+1.175734284138499
+Electronegativity
+0.3484848484848485
+Metallic
+true
+Decay Type
+alpha
+Filled Valence
+0-0-0-0-1-2-3-1
+Empty Valence
+0-0-0-0-0-1-0-2
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/89661836743851553637723875807001350708318430514965569195264681842050998292092
+OTOMRO 337993:  Eb-22∙ + Vl-101⁻   +   5000   -> Ek-123 => Ji-123 + 2019.042461232775849567 using 2980.96 nuclear+decay
+
+Da-112
+Attributes
+Name
+Da
+Series
+alkaline
+Protons
+49
+Neutrons
+63
+Mass
+112
+Stability
+0.6343247492972348
+Density
+25.88145239794109
+Radius
+1.6295829028527709
+Electronegativity
+0.022222222222222223
+Metallic
+true
+Decay Type
+beta-
+Filled Valence
+0-0-0-0-0-0-0-1
+Empty Valence
+0-0-0-0-1-3-3-2
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/71630486681651395322241346250279794140074791871688710821050730826936033590880
+OTOMRO 338022:  Ct-17⁻ +  Lx-95⁻   +   5000 -> Ok-112 => Da-112 + 3188.15103168726000149 using 1811.85 nuclear+decay
