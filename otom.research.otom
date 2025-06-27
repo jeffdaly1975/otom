@@ -1,3 +1,19 @@
+2025-06-27 Jun.Fri 10:49:38 New discovery Dd-107 so 704 isotopes in Bohr
+
+  OTOMRO 341286:  Gj-11∙ +  Lx-96⁻   +   5000 -> Nm-107 => Dd-107 + 3052.186203264833693538 using 1947.81 nuclear+decay 
+
+[c] add to files
+
+try:
+[ ] | Da-112⁻ + 20000 => ? Pb-52 + Ux-60
+
+2025-06-27 Jun.Fri 00:13:06
+
+Hmm no matter how I look at it and analyze it, it seems like there's no routes to the undiscovered isotopes.
+
+2025-06-27 Jun.Fri 00:09:14
+[ ] Fill in the values in decay.ALPHA.otom for the expected stability values and decay types as seen in Kjetil's chart. I have placeholders but we know some of these missing values from the chart clues!
+
 2025-06-26 Jun.Thu 18:50:52
 In Alpha, Zz-14 decays to the same outputs for different energy input bands with different reaction types:
 
@@ -5,11 +21,6 @@ In Alpha, Zz-14 decays to the same outputs for different energy input bands with
 |  Zz-14ª     +550.74-5000     =>   Cq-6 + Af-8        +    4229.56 |     770.44 | nuclear                      |
 
 [ ] What's going on here?
-
-
-[ ] transfer to evernote:
-Dave Grohl said he started getting into drop D because he was into the Melvins
-Pat Smear said when he toured with Nirvana he was there to be Kurt's overdub.
 
 2025-06-26 Jun.Thu 16:08:31
 Okay I think Af-10 should exist. I see W-5 + W-5 + 492 -> Af-10 => Xl-10 so how can we get to it?
@@ -19,14 +30,14 @@ Looks like it has to come from alpha decay or a fission
 
  OTOMRO 338022:  Ct-17⁻ +  Lx-95⁻   +   5000 -> Ok-112 => Da-112 + 3188.15103168726000149 using 1811.85 nuclear+decay
 
-[ ] add to files
+[c] add to files
 
 2025-06-25 Jun.Wed 19:39:59 Discovered 2 more, so 702 isotopes in Bohr
 
  OTOMRO 337994:   As-7∙ + Vl-101⁻   +   5000   -> Dd-108 => Ok-108 + 3281.034038945224892814 using 1718.97 nuclear+decay
  OTOMRO 337993:  Eb-22∙ + Vl-101⁻   +   5000   -> Ek-123 => Ji-123 + 2019.042461232775849567 using 2980.96 nuclear+decay
 
-[ ] add to files
+[c] add to files
 
 2025-06-25 Jun.Wed 15:28:44 zeroshape with 2 more discoveries so 700 isotopes in Bohr
 
@@ -39,7 +50,7 @@ OTOMRO 337531: Ro-27⁻ + Uq-52⁻ + 10000 ->  Kk-79 => Yv-79  + 7924.2537199136
 
  OTOMRO 337503:  Nd-34⁻  + Co-88⁻    +   5000 -> Ek-122 => Ji-122 + 2142.736116702974413784 using 2857.26 nuclear+decay
 
-[ ] mark *Ek-122
+[c] mark *Ek-122
 [c] add Ji-122 to files
 
 2025-06-25 Jun.Wed 11:46:29 Made these files to see all Bohr isotopes in one screen by just showing their decay types. One is from the stability chart I keep updated of known isotopes (FILE all_isotopes_stability_chart_universe_Bohr-thumbnail.otom) and the other (checkingsomething-stab-chart-thumbnail.otom) is one I've been working on while analyzing the intermediate isotopes that 2 inputs add up to. This is a precise indicator of those isotopes even if its impossible to create that isotope as output. 
@@ -166,7 +177,17 @@ total: 17710.75
  [r]   Ct-17⁻ +  Lx-95⁻   +   5000   -> Ok-112 => ? Da-112 <---SUCCESS! using 1811.85 nuclear+decay
 total: 18110.61
 
-[ ] Gj-11∙  + Lx-96⁻  + 5000 -> Nm-107 => ? Dd-107 | total: 18176.46
+[>] Gj-11∙  + Lx-96⁻  + 5000 -> Nm-107 => ? Dd-107 | total: 18176.46
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+  [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+  [r]|  Eb-22∙ +  Nm-97ª   +[  3061.01 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*| used 3060.86 [c] update recipe chains
+  [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+  [r]|   P-24⁻ +  Lx-92∙   +[  3057.83 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+  [r]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 | used 2340.62
+  [r]   Gj-11∙ +  Lx-96⁻   +   5000 -> Nm-107 => ? Dd-107  <---SUCCESS using 1947.81 nuclear+decay 
+total: 18176.46
+
 [ ] Cl-28⁻  + Lx-96⁻  + 5000 -> Ek-124 => ? Ji-124 | total: 18656.61
 [ ] Yu-30∙  + Lx-96⁻  + 5000 -> Ji-126 => ? Aw-126 | total: 18709.19
 [-] Ro-26∙  + Lx-96⁻  + 5000 -> Vt-122 => ? Ek-122 | total: 18941.66
