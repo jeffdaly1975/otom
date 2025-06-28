@@ -1,3 +1,20 @@
+2025-06-27 Jun.Fri 20:17:08 New discovery on 0x2a4a22 so 705 isotopes in Bohr
+
+ OTOMRO 342436: S-112⁻ + 15000 => Pb-52 + Pg-60 + 4741.917186838350971811 using 10258.08 nuclear
+
+[ ] add to files
+
+2025-06-27 Jun.Fri 19:57:17
+[ ] I think I should be counting chains differently in the chains.<universe>.otom file
+
+I've been counting it just by the largest input chain count and add one.
+I think I should add up the chain counts instead of just the larger one. Add them and then add 1. Because 0-chain + 0-chain => 1-chain
+
+2025-06-27 Jun.Fri 17:41:36
+
+[ ] could i write a quick simple perl script to find the cheaper recipes and shorter chains from the latest Reactor logs or dumped file?
+
+
 2025-06-27 Jun.Fri 10:49:38 New discovery Dd-107 so 704 isotopes in Bohr
 
   OTOMRO 341286:  Gj-11∙ +  Lx-96⁻   +   5000 -> Nm-107 => Dd-107 + 3052.186203264833693538 using 1947.81 nuclear+decay 
@@ -85,20 +102,23 @@ try:
  [ ] S-112⁻ + 12000 => ? Pb-52 + Pg-60   
  [ ] S-113⁻ + 12000 => ? Pb-52 + Pg-61   
 
+
+make it:
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [r]|  Ct-17⁻ +  Kk-71ª   +[  1503.32*-   5000] => Lx-88               | nuclear                      | OTOMRO  240837 |
+ [r]|   Sr-3∙ +  Lx-88∙   +[  1710.50 -   5000] => N-91                | nuclear                      | OTOMRO  302884*| used 1702.65 [-] update recipe chains
+ [r]|   P-24⁻ +   N-91∙   +[  3196.23 -   4000] => P-22 + N-93         | decay, nuclear               | OTOMRO  334545 | used 3196.08 [c] update recipe chains
+ [r]|   P-24⁻ +   N-93⁻   +[  2456.96 -   4000] => P-22 + N-95         | decay, nuclear               | OTOMRO  270858*| used 2379.81 [c] update recipe chains
+ [r]|  Ct-17⁻ +   N-95⁻   +[  1777.28 -   5000] => S-112               | decay, nuclear               | OTOMRO  335359 | used 1666.18 [c] update recipe chains
+ [r]   S-112⁻             +  15000              => ? Pb-52 + Pg-60   <---SUCCESS! using 10258.08 nuclear
+total: 23731.54
+
 2025-06-24 Jun.Tue 10:15:28 I see QMA discovered S-112 so now 693 isotopes in Bohr
 
 OTOMRO 335058: Ct-17⁻ + N-95⁻ + 5000 -> Da-112 => S-112 + 3172.716452659046808549 using 1827.28 nuclear+decay
 
 [c] add to files
-
-make it:
-[ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
-[ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
-[ ]|  Ct-17⁻ +  Kk-71ª   +[  1503.32*-   5000] => Lx-88               | nuclear                      | OTOMRO  240837 |
-[ ]|   Sr-3∙ +  Lx-88∙   +[  1710.50 -   5000] => N-91                | nuclear                      | OTOMRO  302884*|
-[ ]|   P-24⁻ +   N-91∙   +[  3198.08 -   4000] => P-22 + N-93         | decay, nuclear               | OTOMRO  270855*|
-[ ]|   P-24⁻ +   N-93⁻   +[  2456.96 -   4000] => P-22 + N-95         | decay, nuclear               | OTOMRO  270858*|
-[ ]   Ct-17⁻ +   N-95⁻  + 1828 -> Da-112 => S-112
 
 try:
 [>]   Ct-17⁻   + N-96⁻   -> Da-113⁻(?.???) => ? S-113

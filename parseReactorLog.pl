@@ -2503,6 +2503,9 @@ if ($line =~ /^0x000000000000000000000000000000000000000000000000000000000000004
 # trim off 0x40 which indicates the call to initiateReaction()
 $line =~ s/0x0000000000000000000000000000000000000000000000000000000000000040//;
 
+# [ ] I THINK I SHOULD store the energy values internally as the gigantic integer, and when displaying it, convert it
+
+
  # Get Energy input
  # change 00000000000000000000000000000000000000000000010f0cf064dd59200000 to 5000000000000000000000 then to 5000
  $energy_input = energy_converter( substr($line, 0, 64,""));
