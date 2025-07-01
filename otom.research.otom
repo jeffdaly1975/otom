@@ -1,3 +1,9 @@
+2025-07-01 Jul.Tue 16:56:01 [ ] check these potential shorter recipes:
+|   336140 |bohr    |  Ct-17⁻ +   N-93⁻ +     3500 =>   Da-110         +    1718.57 |    1781.43 | nuclear                      |
+|   305882*|bohr    |  Ro-22⁺ + Ek-105ª +     5000 =>   P-22 + Ji-105  +    2788.99 |    2211.01 | decay, nuclear               |
+|   284185*|bohr    |  Ro-22⁺ + Aw-107ª +     5000 =>   P-22 + Kn-107  +    2879.12 |    2120.88 | decay, nuclear               |
+|   253135 |bohr    |   Sr-3∙ +  Cj-80⁻ +     4000 => ⬆ D-83           +    2671.56 |    1328.44 | decay, nuclear               |
+
 2025-07-01 Jul.Tue 14:10:03 Okay i've restored that missing data.
 
 2025-07-01 Jul.Tue 09:50:11 [c] somehow the parser is misssing these: \<Ok-108\>\|\<Ji-123\>\|da-112 and Dd-107
@@ -28,7 +34,7 @@ Now I'm good.
 
 [ ] when I get back to coding, take a look at this
 
-2025-06-30 Jun.Mon 20:53:06 DANG. [ ] I need to go back 1 commit before that one. But I don't want to loose the changes to the other files I was committing at the time. Fuck. That's why you should do commits in small subjective groups. Like each set of changes. commit everything before running my parser and updating the logs.
+2025-06-30 Jun.Mon 20:53:06 DANG. [c] I need to go back 1 commit before that one. But I don't want to loose the changes to the other files I was committing at the time. Fuck. That's why you should do commits in small subjective groups. Like each set of changes. commit everything before running my parser and updating the logs.
 
 
 2025-06-30 Jun.Mon 20:47:47 For now I've truncated the Reactor_logs_parsed-alpha.txt file and put those lines in Reactor_logs_parsed-alpha-2.txt
@@ -106,7 +112,7 @@ try:
 
  OTOMRO 353335: Cv-117ª +  5000 => Wy-54 + Qe-63 + 4623.758748979162191972 using 10376.24 nuclear
 
-[ ] add to files
+[c] add to files
 
 2025-06-29 Jun.Sun 19:58:03 New discoveries! Ns-68, Cv-117 and Z-114 makes 709 isotopes in Bohr if my calculations and notes are correct.
 
@@ -114,7 +120,7 @@ try:
  OTOMRO 353323: Vl-100⁻ +  Ct-17⁻   +  8000 -> Z-117⁻ => Cv-117 + 5995.157653330160428595 using 2004.84 nuclear+decay
  OTOMRO 353324:  Yv-80⁻ +  Nd-34⁻   +  8000 -> S-114⁻ =>  Z-114 + 5162.13641574323628447  using 2837.86 nuclear+decay
 
-[ ] add to files
+[c] add to files
 
 try:
 [r] *Cv-117ª +  15000 => ? Wy-54 + Qe-63  <---SUCCESS! using 10376.24 nuclear
@@ -123,7 +129,7 @@ try:
 
  OTOMRO 350759: Cl-28⁻  + Lx-96⁻  + 5000 -> Ek-124 => Ji-124 + 2,366.473231576405396481 using 2633.53 nuclear+decay
 
-[ ] add to files
+[c] add to files
 
 2025-06-28 Jun.Sat 13:16:03 Moving 4 PkAx from main wallet to laptop. 
 
@@ -163,7 +169,7 @@ Breakdown:
 
  OTOMRO 342436: S-112⁻ + 15000 => Pb-52 + Pg-60 + 4741.917186838350971811 using 10258.08 nuclear
 
-[ ] add to files
+[c] add to files
 
 2025-06-27 Jun.Fri 19:57:17
 [ ] I think I should be counting chains differently in the chains.<universe>.otom file
