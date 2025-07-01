@@ -125,8 +125,8 @@ syn match PossiblyStabilityStable   /(0\.7[89]?)/     "0.78? - 0.79?
 syn match PossiblyStabilityStable   /(0\.[89]\d?)/    "0.80? - 0.99?
 syn match PossiblyStabilityStable   /(1\.\d\d?)/      "1.80? - 9.99?
 
-hi PossiblyStabilityUnstable guifg=darkgreen ctermfg=green       guibg=NONE ctermbg=NONE cterm=italic
-hi PossiblyStabilityStable   guifg=red       ctermfg=darkred     guibg=NONE ctermbg=NONE cterm=italic
+hi PossiblyStabilityUnstable guifg=darkgreen ctermfg=green       guibg=NONE ctermbg=NONE cterm=italic,reverse
+hi PossiblyStabilityStable   guifg=red       ctermfg=darkred     guibg=NONE ctermbg=NONE cterm=italic,reverse
 
 syn match UnknownStability   /(?\.???)/      "?.??? - ?.???
 

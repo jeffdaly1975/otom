@@ -1,3 +1,150 @@
+2025-07-01 Jul.Tue 08:57:43 QMA said something very interesting in discord about how to figure out the token id of any isotope:
+
+| function idToTokenId(string memory id) public pure returns (uint256) {
+|         return uint256(keccak256(abi.encode(id)));
+|     }
+| getting tokenid of any isotope (even it's not discovered yet!)
+| 
+| 1. make id: [universe hash][element name][isotope mass]-
+| 2. encode as abi with single string format
+| 3. keccak256 it
+| 4. cast into integer type (with base 10)
+| done! 
+| no need to snooping blockchain or anything!
+
+[ ] when I get back to coding, take a look at this
+
+2025-06-30 Jun.Mon 20:53:06 DANG. [ ] I need to go back 1 commit before that one. But I don't want to loose the changes to the other files I was committing at the time. Fuck. That's why you should do commits in small subjective groups. Like each set of changes. commit everything before running my parser and updating the logs.
+
+
+2025-06-30 Jun.Mon 20:47:47 For now I've truncated the Reactor_logs_parsed-alpha.txt file and put those lines in Reactor_logs_parsed-alpha-2.txt
+Its a terrible solution. I should probably bite the bullet and figure out how to use Git LFS
+
+
+2025-06-30 Jun.Mon 20:36:46 I asked Grok how to handle this. I wanted to undo back to before I pushed those changes. 
+
+::INFO:: How to undo a couple levels with git
+
+I looked at the commit history:
+
+| % git log --oneline
+| f5c6203 (HEAD -> main) trimmed alpha reactor log to fit temporarily
+| 410c49e trimmed alpha reactor log to fit temporarily
+| 34e04b7 updates
+| 2e36629 (origin/main, origin/HEAD) updates
+| 8479984 updates
+
+
+To confirm which commit introduced the large file, you can inspect the changes:
+
+% git show 34e04b7 --stat
+% git ls-files -s
+
+Do a hard reset wwhich resets the index and working tree. Any changes to tracked files in the working tree since <commit> are discarded.
+
+% git reset 34e04b7 --hard
+
+Grok also suggests:
+
+| GitHub File Size Limits: GitHub rejects files over 100 MB and warns about files over 50 MB.
+| If you need to store large files, consider Git Large File Storage (Git LFS):
+| 
+| bash:
+|   brew install git-lfs
+|   git lfs install
+|   git lfs track "*.jpg"
+|   git add .gitattributes
+|   git add .
+|   git commit -m "Track large files with Git LFS"
+
+[ ] Consider using Git LFS
+
+2025-06-30 Jun.Mon 09:46:42 The alpha reactor log is finally too big for github and it won't let me push the update. Ugh. Time to figure out what to do about it. Split into smaller chunks? Don't like that. strip the columns of hash data? That seems the best option but then I would want to also produce a separate file with that data. Or should I just gzip it and leave it that way? Vim can gunzip and gzip files to edit them directly.
+
+ |  8 files changed, 12494 insertions(+), 193 deletions(-)
+ | 2025-06-30.Jun.Mon 9:46:08 [~/Downloads/NFTs/otom] % git push
+ | Enumerating objects: 21, done.
+ | Counting objects: 100% (21/21), done.
+ | Delta compression using up to 8 threads
+ | Compressing objects: 100% (10/10), done.
+ | Writing objects: 100% (11/11), 836.12 KiB | 562.00 KiB/s, done.
+ | Total 11 (delta 9), reused 0 (delta 0)
+ | remote: Resolving deltas: 100% (9/9), completed with 9 local objects.
+ | remote: error: Trace: 0250a7b35f1ac967872bbeaf18e4288d3abb7d343a0b8fe447e2af75be385ce0
+ | remote: error: See https://gh.io/lfs for more information.
+ | remote: error: File Reactor_logs_parsed-alpha.txt is 100.53 MB; this exceeds GitHub's file size limit of 100.00 MB
+ | remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+ | To https://github.com/jeffdaly1975/otom.git
+ |  ! [remote rejected] main -> main (pre-receive hook declined)
+ | error: failed to push some refs to 'https://github.com/jeffdaly1975/otom.git'
+
+
+2025-06-30 Jun.Mon 09:38:53 New discovery Cv-118 so 711 isotopes in Bohr.
+
+  OTOMRO 355110: Vl-101⁻ + Ct-17⁻    +   5000 ->  Z-118⁻ => Cv-118 + 3169.883757864702602092 using 1830.12 nuclear+decay
+
+[ ] add to files
+
+try:
+[ ] Cv-118ª + 12000 => ? Wy-55 + Qe-63 
+
+2025-06-29 Jun.Sun 20:11:00 New discovery Qe-63 makes 710 isotopes in Bohr
+
+ OTOMRO 353335: Cv-117ª +  5000 => Wy-54 + Qe-63 + 4623.758748979162191972 using 10376.24 nuclear
+
+[ ] add to files
+
+2025-06-29 Jun.Sun 19:58:03 New discoveries! Ns-68, Cv-117 and Z-114 makes 709 isotopes in Bohr if my calculations and notes are correct.
+
+ OTOMRO 353322:  Ct-17⁻ +  Uq-51⁻   + 10000 ->  C-68⁻ =>  Ns-68 + 8366.767552156201418256 using 1633.23 nuclear+decay 
+ OTOMRO 353323: Vl-100⁻ +  Ct-17⁻   +  8000 -> Z-117⁻ => Cv-117 + 5995.157653330160428595 using 2004.84 nuclear+decay
+ OTOMRO 353324:  Yv-80⁻ +  Nd-34⁻   +  8000 -> S-114⁻ =>  Z-114 + 5162.13641574323628447  using 2837.86 nuclear+decay
+
+[ ] add to files
+
+try:
+[r] *Cv-117ª +  15000 => ? Wy-54 + Qe-63  <---SUCCESS! using 10376.24 nuclear
+
+2025-06-29 Jun.Sun 15:46:25 New discovery Ji-124 so 706 isotopes in Bohr
+
+ OTOMRO 350759: Cl-28⁻  + Lx-96⁻  + 5000 -> Ek-124 => Ji-124 + 2,366.473231576405396481 using 2633.53 nuclear+decay
+
+[ ] add to files
+
+2025-06-28 Jun.Sat 13:16:03 Moving 4 PkAx from main wallet to laptop. 
+
+::INFO:: Moving Assembly crafted tokens (Otom Items)
+
+Otom Items Contract: https://shapescan.xyz/address/0x72b89472d81BADAf167FB21c128fAA5e495de904?tab=read_write_proxy&source_address=0xE0f597BE957F6aFCEb7670B80E9Fc1C1AE32CeF3#0x2eb2c2d6
+
+On shapescan on the contract page for Otom Items you can use the contract functions. On my mac, when I try to connect my MetaMask extension to the page, it doesn't work. But if I try connecting and let my iphone metamask scan the QR code, it connects and I can sign transactions from it.
+
+
+The write function safeBatchTransferFrom() can send crafted items. Presently, on Opensea I cannot see these items or you could just select and send them from there.
+
+Here is the calldata: 
+0x2eb2c2d6000000000000000000000000620051b8553a724b742ae6ae9cc3585d29f498480000000000000000000000002a4a229c4d748c2346963d0bb30c48cd11021aac00000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000001d34abf69692fdb036c1468e4a304ce7d00000000000000000000000000000001b9b312cee51e6e6b6ddf0f26b70a7e0d00000000000000000000000000000001a353490c48b2fa75401564166e9c30770000000000000000000000000000000179c698983b6bd11659cb03233609d83a000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000
+
+Breakdown:
+ 0x2eb2c2d6                                                        function id
+ 000000000000000000000000620051b8553a724b742ae6ae9cc3585d29f49848  From wallet
+ 0000000000000000000000002a4a229c4d748c2346963d0bb30c48cd11021aac  To   wallet
+ 00000000000000000000000000000000000000000000000000000000000000a0  0x000a =  10  ??
+ 0000000000000000000000000000000000000000000000000000000000000140  0x0140 = 320  ??
+ 00000000000000000000000000000000000000000000000000000000000001e0  0x01e0 = 480  ??
+ 0000000000000000000000000000000000000000000000000000000000000004  4 items follow
+ 00000000000000000000000000000001d34abf69692fdb036c1468e4a304ce7d   Otoms Items Token Id (T4) PkAx
+ 00000000000000000000000000000001b9b312cee51e6e6b6ddf0f26b70a7e0d   Otoms Items Token Id (T4) PkAx
+ 00000000000000000000000000000001a353490c48b2fa75401564166e9c3077   Otoms Items Token Id (T4) PkAx
+ 0000000000000000000000000000000179c698983b6bd11659cb03233609d83a   Otoms Items Token Id (T4) PkAx
+ 0000000000000000000000000000000000000000000000000000000000000004  4 items follow, the number of each of those PkAxs to send
+ 0000000000000000000000000000000000000000000000000000000000000001   1x
+ 0000000000000000000000000000000000000000000000000000000000000001   1x
+ 0000000000000000000000000000000000000000000000000000000000000001   1x
+ 0000000000000000000000000000000000000000000000000000000000000001   1x
+ 0000000000000000000000000000000000000000000000000000000000000000  data (bytes) required argument "0x"
+
+
 2025-06-27 Jun.Fri 20:17:08 New discovery on 0x2a4a22 so 705 isotopes in Bohr
 
  OTOMRO 342436: S-112⁻ + 15000 => Pb-52 + Pg-60 + 4741.917186838350971811 using 10258.08 nuclear
@@ -99,7 +246,7 @@ OTOMRO 336297: Eb-22∙  + Lx-94⁻  + 5000 -> Z-116?  => Cv-116 + 2014.88699348
 try:
  [-] S-112⁻ + 0 => ? Z-112
  [c] S-113⁻ + 0 => ? Z-113 DUH. I just discovered that so I didn't need to waste that isotope!
- [ ] S-112⁻ + 12000 => ? Pb-52 + Pg-60   
+ [c] S-112⁻ + 12000 => ? Pb-52 + Pg-60   
  [ ] S-113⁻ + 12000 => ? Pb-52 + Pg-61   
 
 
@@ -203,17 +350,74 @@ total: 18110.61
   [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
   [r]|  Eb-22∙ +  Nm-97ª   +[  3061.01 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*| used 3060.86 [c] update recipe chains
   [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
-  [r]|   P-24⁻ +  Lx-92∙   +[  3057.83 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+  [r]|   P-24⁻ +  Lx-92∙   +[  3057.83 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 | used 3057.68 [c] update recipe chains
   [r]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 | used 2340.62
   [r]   Gj-11∙ +  Lx-96⁻   +   5000 -> Nm-107 => ? Dd-107  <---SUCCESS using 1947.81 nuclear+decay 
 total: 18176.46
 
-[ ] Cl-28⁻  + Lx-96⁻  + 5000 -> Ek-124 => ? Ji-124 | total: 18656.61
-[ ] Yu-30∙  + Lx-96⁻  + 5000 -> Ji-126 => ? Aw-126 | total: 18709.19
 [-] Ro-26∙  + Lx-96⁻  + 5000 -> Vt-122 => ? Ek-122 | total: 18941.66
-[ ] Yu-31⁻  + Lx-96⁻  + 5000 -> Ji-127 => ? Aw-127 | total: 19149.06
-[ ] Ct-17⁻  + Dx-43⁻  + 5000 -> Ux-60  => ? Pg-60  | total: 21206.58
-[ ] Ct-17⁻  + Uq-51⁻  + 5000 -> C-68   => ? Ns-68  | total: 23302.16
+
+make 3 Lx-96:
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+  [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+  [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+  [r]|  Eb-22∙ +  Nm-97ª   +[  3060.86 -   4500] => P-22 + Se-97        | used 3060.81 [c] update recipe chains
+  [r]|  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+  [r]|  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+  [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | used 1814.84 [c] this is min
+  [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+  [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+  [r]|   P-24⁻ +  Lx-92∙   +[  3057.68 -   5000] => P-22 + Lx-94        | used 3057.68 [c] this is min
+  [r]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+  [r]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+  [r]|   P-24⁻ +  Lx-94⁻   +[  2340.62 -   6000] => P-22 + Lx-96        | used 2340.42 [c] update recipe chains
+  [r]|   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+  [r]|   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+
+  [r]|  Vi-11⁺ +  Ct-17⁻   +[   480.15*-   5000] => Cl-28               | nuclear                      | OTOMRO  115886 |
+  [r]|  Ct-13⁺ +  Ct-17⁻   +[   532.73 -   5000] => Yu-30               | nuclear                      | OTOMRO  137177 | used 532.68 [c] update recipe chains
+  [r]|   Dz-9∙ +  Eb-22∙   +[   972.60*-   5000] => Yu-31               | nuclear                      | OTOMRO  225927 | [c] This is min
+
+[r] Cl-28⁻  + Lx-96⁻  + 5000 -> Ek-124 => ? Ji-124 | total: 18656.61 <---SUCCESS used 2633.53 nuclear+decay
+[f] Yu-30∙  + Lx-96⁻  + 5000 -> Ji-126 => ? Aw-126 | total: 18709.19 <---NOPE! used 250.00 decay returning N-96 + Yu-30 + 4750.00
+[f] Yu-31⁻  + Lx-96⁻  + 5000 -> Ji-127 => ? Aw-127 | total: 19149.06 <---NOPE! used 250.00 decay returning N-96 + Yu-31 + 4750.00
+
+[-] Ct-17⁻  + Dx-43⁻  + 5000 -> Ux-60  => ? Pg-60  | total: 21206.58
+
+[>] Ct-17⁻  + Uq-51⁻  + 5000 -> C-68   => ? Ns-68  | total: 23302.16
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+  [r]|  Eb-22∙ +  Nm-97ª   +[  3060.81 -   4500] => P-22 + Se-97        | [c] this is min
+  [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+  [r]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+  [r]|  Lx-94⁻             +[  7988.27 -   8000] => Dx-43 + Uq-51       | used 7988.22 [c] update recipe chains
+  [r]   Ct-17⁻ +  Uq-51⁻   +  10000 -> C-68   => ? Ns-68 <--SUCCESS using 1633.23 nuclear+decay 
+total: 28302.16 
+
+
+What if there was a better way to one of those. Like target these which decay to a useful isotope
+Vl-97⁻ => Se-97
+W-92⁻  => Lx-92
+W-94⁻  => Lx-94
+
+   Nd-33⁻  + C-64⁻    -> Vl-97⁻(0.747) => Se-97 | total:  2021.09
+
+Hmm that's not much better.
+
+   Lu-40⁻  + Uq-52⁻   = W-92?(?.???)   | total: 21880.45
+
+Oof that's awful. Nothing in the math file for summing to W-94. [ ] I ought to regenerate it after each new isotope discovery.
+
+
+
+
+
 
 
 2025-06-23 Jun.Mon 21:32:21 New discovery Yv-76 so 692 isotopes in Bohr
@@ -255,8 +459,8 @@ total:  2070.15
 total:  2070.15
 
 Might be accessible by beta decay:
-[ ] ?Yv-79⁻ (0.75?)  Kk-79⁻ should decay to this
-[ ] *Vt-118ª(0.672)  Cv-118 might be beta- and thus could decay to this but uncertain
+[c] ?Yv-79⁻ (0.75?)  Kk-79⁻ should decay to this
+[x] *Vt-118ª(0.672)  Cv-118 might be beta- and thus could decay to this but uncertain
 
 
 All these cannot be produced by aiming for a beta decay isotope. It seems I need to hit them by alpha decay or fission of large isotopes:
@@ -464,29 +668,29 @@ Lx-96⁻  + Cl-29⁻  = Ek-125?(?.???) |
 total: 24517
 
 Lx-96⁻  + Yu-31⁻  = Ji-127?(?.???) |
- [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
- [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
- [ ]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
- [ ]|   Dz-9∙ +  Eb-22∙   +[   972.60 -   5000] => Yu-31               | nuclear                      | OTOMRO  225927 |
- [ ]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
- [ ]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
- [ ]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
- [ ]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
- [ ]   Lx-96⁻ +  Yu-31⁻   +   5000 = Ji-127?(?.???) |
+ [-]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [-]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [-]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [-]|   Dz-9∙ +  Eb-22∙   +[   972.60 -   5000] => Yu-31               | nuclear                      | OTOMRO  225927 |
+ [-]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+ [-]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+ [-]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+ [-]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+ [-]   Lx-96⁻ +  Yu-31⁻   +   5000 = Ji-127?(?.???) |
 total: 19144
 
 
 Lx-96⁻  + Yu-30∙  = Ji-126?(?.???) |
-[ ] | Ji-126?(?.???) |Lx-96⁻  + Yu-30∙  + 5000 = Ji-126?(?.???) |
- [ ]|  Ct-13⁺ +  Ct-17⁻   +[   532.73 -   5000] => Yu-30               | nuclear                      | OTOMRO  137177 |
- [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
- [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
- [ ]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
- [ ]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
- [ ]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
- [ ]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
- [ ]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
- [ ]|  Lx-96⁻ +  Yu-30∙   +   5000 -> Ji-126    => ?Aw-126
+[x] | Ji-126?(?.???) |Lx-96⁻  + Yu-30∙  + 5000 = Ji-126?(?.???) |
+ [-]|  Ct-13⁺ +  Ct-17⁻   +[   532.73 -   5000] => Yu-30               | nuclear                      | OTOMRO  137177 |
+ [-]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [-]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [-]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [-]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+ [-]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+ [-]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+ [-]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+ [-]|  Lx-96⁻ +  Yu-30∙   +   5000 -> Ji-126    => ?Aw-126
 total: 18709.19 
 
 
@@ -505,11 +709,11 @@ total: 18709.19
 2025-06-20 Jun.Fri 21:43:54
 
 [>]|Uq-47⁻  + Ro-26∙  + 3000 = Kk-73?(?.???)  | total: 3765.20 
-  [r]|Sr-3∙  +  P-23∙  +[   765.20 -   5000] => Ro-26           | nuclear | used 765.00 [ ] update recipe chains
+  [r]|Sr-3∙  +  P-23∙  +[   765.20 -   5000] => Ro-26           | nuclear | used 765.00 [c] update recipe chains
   [r]|Uq-47⁻ + Ro-26∙    + 3000     -> Kk-73 => ?Kk-73 used 2361.51 nuclear
 
 [>]|Lu-40⁻  + K-34∙   + 3300 = Kk-74?(?.???)  | total: 4312.73 
-  [r]|Ct-17⁻ + P-23∙   +[  1011.88 -   5000] => Lu-40           | nuclear | used 1011.83 [ ] update recipe chains
+  [r]|Ct-17⁻ + P-23∙   +[  1011.88 -   5000] => Lu-40           | nuclear | used 1011.83 [c] update recipe chains
   [r]|Lu-40⁻ + K-34∙     + 3300     -> Kk-74 => ?Kk-74 used 2497.08 nuclear
 
 2025-06-20 Jun.Fri 19:02:55
@@ -596,47 +800,47 @@ total: 13431.51 NRG
 total: 14099.21 NRG
 
 
-[ ] | Ys-122         |Da-90⁺  + Mt-32⁺  + 5000 ->!Ys-122⁺(?.???) => Eh-122  | total: 14207.87 NRG
-[ ] | Ys-121         |Ek-99⁺  + Ro-22⁺  + 5000 ->!Ys-121⁺(?.???) => Eh-121  | total: 14954.59 NRG
-[ ] | Da-112         |N-95⁻   + Ct-17⁻  + 5000 -> Da-112∙(?.???) => Da-112  | total: 15099.31 NRG
-[ ] | S-114          |Yv-80⁻  + Nd-34⁻  + 5000 ->  S-114⁻(?.???) => Z-114   | total: 15246.57 NRG
+[ ] | Ys-122         |Da-90⁺  + Mt-32⁺  +10000 ->!Ys-122⁺(?.???) => Eh-122  | total: 14207.87 NRG <---probably impossible
+[ ] | Ys-121         |Ek-99⁺  + Ro-22⁺  +10000 ->!Ys-121⁺(?.???) => Eh-121  | total: 14954.59 NRG <---probably impossible
+[c] | Da-112         |N-95⁻   + Ct-17⁻  + 5000 -> Da-112∙(?.???) => Da-112  | total: 15099.31 NRG
+[c] | S-114          |Yv-80⁻  + Nd-34⁻  + 5000 ->  S-114⁻(?.???) => Z-114   | total: 15246.57 NRG
 [c] | Ok-111         |Lx-94⁻  + Ct-17⁻  + 5000 -> Ok-111⁻(?.???) => Da-111  | total: 15313.89 NRG
 [c] | S-113          |Lx-94⁻  + Xj-19∙  + 5000 ->  S-113⁻(?.???) => Z-113   | total: 15313.89 NRG
 [c] | Z-116          |Lx-94⁻  + Eb-22∙  + 5000 ->  Z-116⁻(?.???) => Cv-116  | total: 15313.89 NRG
-[ ] | Ha-130         |Yv-80⁻  + Pb-50⁻  + 5000 -> Ha-130⁻(?.???) => Ax-130  | total: 15595.74 NRG
-[ ] | Kn-129         |N-95⁻   + Nd-34⁻  + 5000 -> Kn-129⁻(?.???) => Ha-129  | total: 15656.17 NRG
+[ ] | Ha-130         |Yv-80⁻  + Pb-50⁻  + 5000 -> Ha-130⁻(?.???) => Ax-130  | total: 15595.74 NRG <---probably impossible
+[ ] | Kn-129         |N-95⁻   + Nd-34⁻  + 5000 -> Kn-129⁻(?.???) => Ha-129  | total: 15656.17 NRG <---probably impossible
 [c] | Ek-122         |Co-88⁻  + Nd-34⁻  + 5000 -> Ek-122⁻(?.???) => Ji-122  | total: 15717.43 NRG
-[ ] | Aw-127         |Lx-93⁻  + Nd-34⁻  + 5000 -> Aw-127⁻(?.???) => Kn-127  | total: 15849.85 NRG
-[ ] | Aw-128         |Lx-94⁻  + Nd-34⁻  + 5000 -> Aw-128⁻(?.???) => Kn-128  | total: 15870.75 NRG
-[ ] | Ha-131         |Yv-80⁻  + Pb-51⁻  + 5000 -> Ha-131⁻(?.???) => Ax-131  | total: 15982.04 NRG
-[ ] | Z-117          |Vl-100⁻ + Ct-17⁻  + 5000 ->  Z-117⁻(?.???) => Cv-117  | total: 17695.47 NRG
+[ ] | Aw-127         |Lx-93⁻  + Nd-34⁻  + 5000 -> Aw-127⁻(?.???) => Kn-127  | total: 15849.85 NRG <-maybe
+[ ] | Aw-128         |Lx-94⁻  + Nd-34⁻  + 5000 -> Aw-128⁻(?.???) => Kn-128  | total: 15870.75 NRG <---probably impossible
+[ ] | Ha-131         |Yv-80⁻  + Pb-51⁻  + 5000 -> Ha-131⁻(?.???) => Ax-131  | total: 15982.04 NRG <---probably impossible
+[>] | Z-117          |Vl-100⁻ + Ct-17⁻  + 5000 ->  Z-117⁻(?.???) => Cv-117  | total: 17695.47 NRG
 [c] | Dd-108         |Vl-101⁻ + As-7∙   + 5000 -> Dd-108⁻(?.???) => Ok-108  | total: 17739.75 NRG
 [c] | Ek-123         |Vl-101⁻ + Eb-22∙  + 5000 -> Ek-123⁻(?.???) => Ji-123  | total: 17739.75 NRG
-[ ] | Z-118          |Vl-101⁻ + Ct-17⁻  + 5000 ->  Z-118⁻(?.???) => Cv-118  | total: 17739.75 NRG
+[ ] | Z-118          |Vl-101⁻ + Ct-17⁻  + 5000 ->  Z-118⁻(?.???) => Cv-118  | total: 17739.75 NRG <-maybe
 [ ] | Da-113         |Lx-96⁻  + T-17∙   + 5000 -> Da-113∙(?.???) => Da-113  | total: 18176.46 NRG
 [ ] | Dd-109         |Lx-96⁻  + Vi-13∙  + 5000 -> Dd-109⁻(?.???) => Ok-109  | total: 18176.46 NRG
 [ ] | Kn-130         |Lx-96⁻  + K-34∙   + 5000 -> Kn-130⁻(?.???) => Ha-130  | total: 18176.46 NRG
-[ ] | Nm-107         |Lx-96⁻  + Gj-11∙  + 5000 -> Nm-107⁻(?.???) => Dd-107  | total: 18176.46 NRG
+[c] | Nm-107         |Lx-96⁻  + Gj-11∙  + 5000 -> Nm-107⁻(?.???) => Dd-107  | total: 18176.46 NRG
 [ ] | Ok-113         |Lx-96⁻  + Ct-17⁻  + 5000 -> Ok-113⁻(?.???) => Da-113  | total: 18176.46 NRG
 [ ] | S-115          |Lx-96⁻  + Xj-19∙  + 5000 ->  S-115⁻(?.???) => Z-115   | total: 18176.46 NRG
-[ ] | Ok-112         |Lx-95⁻  + Ct-17⁻  + 5000 -> Ok-112⁻(?.???) => Da-112  | total: 18267.51 NRG
+[c] | Ok-112         |Lx-95⁻  + Ct-17⁻  + 5000 -> Ok-112⁻(?.???) => Da-112  | total: 18267.51 NRG
 [ ] | S-116          |Lx-96⁻  + Xj-20⁻  + 5000 ->  S-116⁻(?.???) => Z-116   | total: 18608.89 NRG
 [ ] | Ek-124         |Lx-96⁻  + Cl-28⁻  + 5000 -> Ek-124⁻(?.???) => Ji-124  | total: 18656.61 NRG
-[ ] | Ji-126         |Lx-96⁻  + Yu-30∙  + 5000 -> Ji-126⁻(?.???) => Aw-126  | total: 18709.19 NRG
+[ ] | Ji-126         |Lx-96⁻  + Yu-30∙  + 5000 -> Ji-126⁻(?.???) => Aw-126  | total: 18709.19 NRG <---probably impossible
 [ ] | Aw-129         |Lx-95⁻  + Nd-34⁻  + 5000 -> Aw-129⁻(?.???) => Kn-129  | total: 18824.37 NRG
 [c] | Vt-122         |Lx-96⁻  + Ro-26∙  + 5000 -> Vt-122⁻(?.???) => Ek-122  | total: 18941.66 NRG
-[ ] | Ji-127         |Lx-96⁻  + Yu-31⁻  + 5000 -> Ji-127⁻(?.???) => Aw-127  | total: 19149.06 NRG
+[ ] | Ji-127         |Lx-96⁻  + Yu-31⁻  + 5000 -> Ji-127⁻(?.???) => Aw-127  | total: 19149.06 NRG <---probably impossible
 [ ] | Cv-121         |Se-104⁻ + Ct-17⁻  + 5000 -> Cv-121⁻(?.???) => Vt-121  | total: 20414.94 NRG
 [ ] | Dd-110         |Lx-96⁻  + Vi-14⁻  + 5000 -> Dd-110⁻(?.???) => Ok-110  | total: 20740.65 NRG
 [ ] | Da-114         |Lx-96⁻  + T-18⁻   + 5000 -> Da-114∙(?.???) => Da-114  | total: 20786.45 NRG
 [ ] | Vt-123         |Lx-96⁻  + Ro-27⁻  + 5000 -> Vt-123⁻(?.???) => Ek-123  | total: 23006.62 NRG
 [ ] | Se-106         |Lx-96⁻  + Dz-10⁻  + 5000 -> Se-106⁻(?.???) => Nm-106  | total: 23294.62 NRG
 [ ] | Ek-125         |Lx-96⁻  + Cl-29⁻  + 5000 -> Ek-125⁻(?.???) => Ji-125  | total: 24522.52 NRG
-[ ] | Ux-60          |Dx-43⁻  + Ct-17⁻  + 5000 ->  Ux-60⁻(0.77?) => Pg-60   | total: 26206.58 NRG
+[-] | Ux-60          |Dx-43⁻  + Ct-17⁻  + 5000 ->  Ux-60⁻(0.77?) => Pg-60   | total: 26206.58 NRG
 [ ] | C-68           |Uq-51⁻  + Ct-17⁻  + 5000 ->   C-68⁻(0.86?) => C-68    | total: 28302.16 NRG
 [ ] | F-74           |L-57⁻   + Ct-17⁻  + 5000 ->   F-74⁻(0.79?) => F-74    | total: 27113.73 NRG
 [ ] | Qe-65          |Uq-51⁻  + Vi-14⁻  + 5000 ->  Qe-65⁻(0.81?) => Qe-65   | total: 30866.35 NRG
-[ ] | X-115          |Ek-99⁺  + Xj-16⁺  + 5000 ->  X-115⁺(?.???) => Go-115  | total: 35285.27 NRG
+[ ] | X-115          |Ek-99⁺  + Xj-16⁺  + 5000 ->  X-115⁺(?.???) => Go-115  | total: 35285.27 NRG <---probably impossible
 [ ] | U-79           |C-53⁺   + Yu-26⁺  + 5000 ->   U-79⁺(0.786) => N-79    | total: 37514.71 NRG
 [ ] | Se-82          |C-53⁺   + K-29⁺   + 5000 ->  Se-82⁺(?.???) => Vl-82   | total: 40206.92 NRG
 [c] | Vl-80          |C-53⁺   + Nd-27⁺  + 5000 ->  Vl-80⁺(?.???) => U-80    | total: 41255.69 NRG
@@ -646,6 +850,42 @@ total: 14099.21 NRG
 [ ] | Nm-108         |Wy-56⁻  + Uq-52⁻  + 5000 -> Nm-108⁻(?.???) => Dd-108  | total: 50155.98 NRG
 
 
+[>] | Aw-127         |Lx-93⁻  + Nd-34⁻  + 5000 -> Aw-127⁻(?.???) => Kn-127  | total: 15849.85 NRG
+  [r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               |
+  [r]|  Ct-17⁻ +  Kk-71ª   +[  1503.32*-   5000] => Lx-88               |
+  [r]|   Sr-3∙ +  Lx-88∙   +[  1702.65 -   5000] => N-91                |
+  [r]|  Eb-22∙ +   N-91∙   +[  3934.36 -   5000] => P-22 + Lx-91        |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|   P-24⁻ +  Lx-91⁻   +[  2419.51*-   2499] => P-22 + Lx-93        |
+  [f]|  Lx-93⁻ +  Nd-34⁻   +   5000 -> Aw-127⁻(?.???) => Kn-127   <---NOPE!!! makes  K-34 + N-93 using 250.0 decay THIS probably means Aw-127 is impossible to hit
+total: 15631 NRG
+
+[>] | Z-118          |Vl-101⁻ + Ct-17⁻  + 5000 ->  Z-118⁻(?.???) => Cv-118  | total: 17739.75 NRG
+  [r]|  Uq-47⁻ +  Kk-71ª   +[  3232.72*-  20000] => P-22 + Se-96        |
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|   P-24⁻ +  Se-96∙   +[  3287.51*-   4000] => P-22 + Se-98        |
+  [r]|   Sr-3∙ +  Se-98∙   +[  1759.33 -   5000] => Se-101              |
+  [r]|  Eb-22∙ + Se-101∙   +[  3913.19 -   4500] => P-22 + Vl-101       |
+  [r]| Vl-101⁻ + Ct-17⁻    +   5000 ->  Z-118⁻(?.???) => Cv-118   <--SUCCESS! using 1830.12 nuclear+decay
+total: 17708 NRG
+
+[>] | S-114          |Yv-80⁻  + Nd-34⁻  + 5000 ->  S-114⁻(?.???) => Z-114   | total: 15246.57 NRG
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+  [r]|   P-24⁻ +  Nm-97ª   +[  2488.17*-   4000] => P-22 + Nm-99        |
+  [r]|  Eb-22∙ +  Nm-99ª   +[  3076.26 -   4500] => P-22 + Se-99        | used 3072.86 [c] update recipe chains
+  [r]|   Sr-3∙ +  Se-99∙   +[  1751.37 -   5000] => P-22 + Yv-80        | [c] this is min
+  [r]|  Yv-80⁻ +  Nd-34⁻   +   8000 ->  S-114⁻ => Z-114   <---SUCCESS using 2837.86 nuclear+decay
+total: 18246.57 NRG
+
+[>] | Z-117          |Vl-100⁻ + Ct-17⁻  + 5000 ->  Z-117⁻(?.???) => Cv-117  | total: 17695.47 NRG
+  [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [r]|  Uq-47⁻ +  Kk-71ª   +[  3232.72*-  20000] => P-22 + Se-96        |
+  [r]|   P-24⁻ +  Se-96∙   +[  3287.51*-   4000] => P-22 + Se-98        |
+  [r]|   Sr-2∙ +  Se-98∙   +[  1651.44 -   5000] => Se-100              | used 1651.04 [c] update recipe chains
+  [r]|  Eb-22∙ + Se-100∙   +[  4006.10 -   5000] => P-22 + Vl-100       | used 3956.45 [c] update recipe chains
+  [r]| Vl-100⁻ + Ct-17⁻      + 8000 ->  Z-117⁻ => Cv-117   <---SUCCESS using 2004.84 nuclear+decay
+total: 20695.47 NRG
 
 
 
@@ -1129,7 +1369,7 @@ So I can now mark the intermediate otom that Sr-1 + Go-117 sum to which is X-118
  Sr-3 + Sr-3 -> Ei-6 => Sr₂()
  Sr-3 + Ei-5 -> As-8 => EiSr()
 
-Does it mean those intermediates are impossible?
+Does it mean those intermediates are impossible? I think so.
 
 
 
@@ -1252,7 +1492,7 @@ need these 1-chain:
 
 2025-06-13 Jun.Fri 12:49:04 I added rows for possible isotopes in my decay files before and after the known isotopes. While doing so I see that there are these knownn isotopes that could make new ones:
 [ ]| Vi-15⁻  +  1000 => ? As-8 + As-7
-[ ]| Cv-115ª + 12000 => ? Wy-53 + Qe-62
+[-]| Cv-115ª + 12000 => ? Wy-53 + Qe-62
 [ ]| Vt-120⁻ + 12000 => ? Wy-55 + C-65 or ? L-55 + C-65
 
 
@@ -1413,7 +1653,6 @@ Lets look at the possibilites of adding Sr-3 to Lx-*:
  Sr-3 + Lx-95 => U-98   |
  Sr-3 + Lx-96 => U-99  -+
 
-2025-06-10 Jun.Tue 19:37:42 JOES WRONG AGAIN! He believes the story about how a selfdriving Telsa was tricked into driving into a RoadRunner style realistic painted on a wall. That video production was made without integrity. The person drove fullspeed towards the wall and only turned on the self driving at the very last second. It didn't have a chance to boot up for fucks sake
 
 2025-06-10 Jun.Tue 12:27:11 I found 79 instances OTOMROs of 1-chain recipes with lesser NRG input and fixed them. Saved 1311.30 NRG
 
@@ -3591,7 +3830,7 @@ It should be easiest to start with just all 1 otom inputs
 [-]     T-14  +   P-21⁺ + 2000 => ? Dx-35
     |   T-17∙ +   P-21⁺ + 1268 =>   Dx-38    +    3732.96 |    1267.04 | nuclear                      |
 
-[*]     T-14  +  Ro-23  + 2000 => ? Gd-37
+[x]     T-14  +  Ro-23  + 2000 => ? Gd-37 <---NO IT WILL almost certainly beta+ decay to Dx-37
     |   T-17∙ +  Ro-24ª + 1405 =>   Gd-41    +    3595.42 |    1404.58 | nuclear                      |
 
 

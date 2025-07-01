@@ -735,3 +735,197 @@ Empty Valence
 https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/43857048999206664460923054915703226238698955030484363472759009021497605857815
 OTOMRO 342436: S-112⁻ + 15000 => Pb-52 + Pg-60 + 4741.917186838350971811 using 10258.08 nuclear
 
+Ji-124
+Attributes
+Name
+Ji
+Series
+metal
+Protons
+55
+Neutrons
+69
+Mass
+124
+Stability
+0.4979706957733585
+Density
+76.29465934422362
+Radius
+1.175734284138499
+Electronegativity
+0.3484848484848485
+Metallic
+true
+Decay Type
+beta-
+Filled Valence
+0-0-0-0-1-2-3-1
+Empty Valence
+0-0-0-0-0-1-0-2
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/23295332454084935002845911219251418270411407479761411538268697953660576653409
+OTOMRO 350759: Cl-28⁻  + Lx-96⁻  + 5000 -> Ek-124 => Ji-124 + 2,366.473231576405396481 using 2633.53 nuclear+decay
+
+Z-114
+Name
+Z otom
+Attributes
+Name
+Z
+Series
+metal
+Protons
+51
+Neutrons
+63
+Mass
+114
+Stability
+0.5963735898615425
+Density
+42.64237935127339
+Radius
+1.3878881700690426
+Electronegativity
+0.06944444444444445
+Metallic
+true
+Decay Type
+beta-
+Filled Valence
+0-0-0-0-1-0-1-1
+Empty Valence
+0-0-0-0-0-3-2-2
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/91859194652780144200428434894157289856640203483496443286095147414767840455725
+OTOMRO 353324:  Yv-80⁻ +  Nd-34⁻   +  8000 -> S-114⁻ =>  Z-114 + 5162.13641574323628447  using 2837.86 nuclear+decay
+
+Cv-117
+Attributes
+Name
+Cv
+Series
+metal
+Protons
+52
+Neutrons
+65
+Mass
+117
+Stability
+0.5508286399999993
+Density
+51.202045569293496
+Radius
+1.3171427629607992
+Electronegativity
+0.10317460317460317
+Metallic
+true
+Decay Type
+alpha
+Filled Valence
+0-0-0-0-1-1-1-1
+Empty Valence
+0-0-0-0-0-2-2-2
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/76229737137704787850152422341842564004050966995185626621348583490721562074482
+OTOMRO 353323: Vl-100⁻ +  Ct-17⁻   +  8000 -> Z-117⁻ => Cv-117 + 5995.157653330160428595 using 2004.84 nuclear+decay
+
+Ns-68
+Name
+Ns otom
+Attributes
+Name
+Ns
+Series
+metal
+Protons
+30
+Neutrons
+38
+Mass
+68
+Stability
+0.7713140405709878
+Density
+37.7037754277529
+Radius
+1.2172357272277168
+Electronegativity
+0.10416666666666667
+Metallic
+true
+Decay Type
+beta-
+Filled Valence
+0-0-0-1-2-1-0-0
+Empty Valence
+0-0-0-3-2-2-2-0
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/12540125900895241066870718067499057885962229840904562193720843651087321313338
+OTOMRO 353322:  Ct-17⁻ +  Uq-51⁻   + 10000 ->  C-68⁻ =>  Ns-68 + 8366.767552156201418256 using 1633.23 nuclear+decay
+
+
+Qe-63
+Attributes
+Name
+Qe
+Series
+metal
+Protons
+28
+Neutrons
+35
+Mass
+63
+Stability
+0.8057627217756541
+Density
+25.15102148710146
+Radius
+1.3580892359673225
+Electronegativity
+0.04824561403508772
+Metallic
+true
+Decay Type
+beta-
+Filled Valence
+0-0-0-0-1-1-0-0
+Empty Valence
+0-0-0-4-3-2-2-0
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/33839357617991877976459338341331542799810229439203535848589300229028485763009
+OTOMRO 353335: Cv-117ª +  5000 => Wy-54 + Qe-63 + 4623.758748979162191972 using 10376.24 nuclear
+
+
+
+Cv-118
+Name
+Cv otom
+Attributes
+Name
+Cv
+Series
+metal
+Protons
+52
+Neutrons
+66
+Mass
+118
+Stability
+0.5191418888415265
+Density
+51.63966989039857
+Radius
+1.3171427629607992
+Electronegativity
+0.10317460317460317
+Metallic
+true
+Decay Type
+alpha
+Filled Valence
+0-0-0-0-1-1-1-1
+Empty Valence
+0-0-0-0-0-2-2-2
+https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3/instance/104416802074294605458185268750212136875602329396881225530871167523286784417657
+OTOMRO 355110: Vl-101⁻ + Ct-17⁻    +   5000 ->  Z-118⁻ => Cv-118 + 3169.883757864702602092 using 1830.12 nuclear+decay
