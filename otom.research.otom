@@ -1,3 +1,14 @@
+2025-07-01 Jul.Tue 09:50:11 [ ] somehow the parser is misssing these: \<Ok-108\>\|\<Ji-123\>\|da-112
+\<Pg-60\>\|\<Qe-62\>\|\<Ns-68\>\|\<Pg-59\>\|\<Ji-124\>\|\<Cv-118\>\|\<Ns-67\>\|\<Qe-63\>\|\<Z-113\>\|\<Ji-123\>\|\<Cv-117\>\|\<Cv-116\>\|\<Z-114\>
+
+2025-07-01 Jul.Tue 09:13:54 I think I finally resolved the git issue where I tried pushing the 100+ MB alpha reactions log  and it messed everything up.
+I copied the files to a backup duplicate folder. This thing is 15.29 Gb because of all the log files!! Those aren't in github though because of the size. I wonder if I could gzip them and add them or it would be unnecessary and wasteful?
+Then did a hard reset back another revision.
+That restored files to their Friday contents.
+Then I copied back the files I had changed since then, except for the alpha logs
+Now I'm good.
+
+
 2025-07-01 Jul.Tue 08:57:43 QMA said something very interesting in discord about how to figure out the token id of any isotope:
 
 | function idToTokenId(string memory id) public pure returns (uint256) {
