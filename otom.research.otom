@@ -1,8 +1,36 @@
-2025-07-01 Jul.Tue 16:56:01 [ ] check these potential shorter recipes:
-|   336140 |bohr    |  Ct-17⁻ +   N-93⁻ +     3500 =>   Da-110         +    1718.57 |    1781.43 | nuclear                      |
-|   305882*|bohr    |  Ro-22⁺ + Ek-105ª +     5000 =>   P-22 + Ji-105  +    2788.99 |    2211.01 | decay, nuclear               |
-|   284185*|bohr    |  Ro-22⁺ + Aw-107ª +     5000 =>   P-22 + Kn-107  +    2879.12 |    2120.88 | decay, nuclear               |
-|   253135 |bohr    |   Sr-3∙ +  Cj-80⁻ +     4000 => ⬆ D-83           +    2671.56 |    1328.44 | decay, nuclear               |
+2025-07-02 Jul.Wed 20:31:35 [ ] I should regenerate my file checkingsomething-themath.txt and then find all the possible chains there by looking at where the targets point and how they do/dont decay.
+
+Also, since the only observered reactions of Sr-3 + Sr-3 are none or Sr₂, I think we can say Ei-6 does not exist or it would be hit and decay or stabilize to another isotope.
+
+Here's the range from 324 instances of reaction attempts:
+|   Sr-3∙ +   Sr-3∙  +[    0.25 -     5] => Sr-3 + Sr-3      | none        |
+|   Sr-3∙ +   Sr-3∙  +[    6.16 - 20000] => Sr₂(Sr-3,Sr-3>)  | metallic    |
+
+Note some were ? because the wallet hadn't analyzed it yet so this could tighten. 
+
+This is a task to complete and perhaps code up. 
+[ ] analyze existing reactions to find unreachable isotopes such as Sr-3 + Sr-3 !=> Ei-6
+
+8113 instances (158 unanalyzed):
+|   Sr-1∙ +   Sr-1∙  +[    0.00 -     2] => Sr-1 + Sr-1                  | none                        
+|   Sr-1∙ +   Sr-1∙  +[    2.05 - 25000] => Sr₂(Sr-1,Sr-1>)              | metallic                    
+
+
+330 instances (5 unanalyzed) :
+|   Sr-1∙ +   Sr-2∙  +[    0.00 -     3] => Sr-1 + Sr-2                  | none                         
+|   Sr-1∙ +   Sr-2∙  +[    3.06 -  5000] => Sr₂(Sr-1,Sr-2>)              | metallic                     
+
+Look at this breakdown of ranges:
+|   Sr-1∙ +   Ei-4∙  +[    0.00 -     5] -> As-5⁺ => Sr-1 + Ei-4         | none                         
+|   Sr-1∙ +   Ei-4∙  +[    5.06 -   200] -> As-5⁺ => EiSr(Ei-4,Sr-1>)    | metallic                     
+|   Sr-1∙ +   Ei-4∙  +[  295.29 -  5000] -> As-5⁺ => Ei-5                | decay, nuclear               
+
+2025-07-01 Jul.Tue 16:56:01 [c] check these potential shorter recipes:
+|   Sr-3∙ +  Cj-80⁻ +     4000 => ⬆ D-83           +    2671.56 |    1328.44 | decay, nuclear               |
+|   P-24⁻ +  Vl-96⁻       +     5000 =>   P-22 + Vl-98     +    2424.10 |    2575.90 | decay, nuclear               
+|  Eb-22∙ +  Se-98∙       +     5000 =>   P-22 + Vl-98     +     929.11 |    4070.89 | decay, nuclear               
+|  Ro-22⁺ +   U-84ª       +     4000 =>   P-22 + Vl-84     +    1889.86 |    2110.14 | decay, nuclear               
+|  Ro-22⁺ + Ji-108ª       +     4000 =>   P-22 + Aw-108    +    1800.44 |    2199.56 | decay, nuclear               
 
 2025-07-01 Jul.Tue 14:10:03 Okay i've restored that missing data.
 
