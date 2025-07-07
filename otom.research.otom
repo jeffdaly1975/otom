@@ -1,21 +1,21 @@
-2025-07-07 Jul.Mon 08:43:06 new discovery so 715 isotopes in Bohr
+2025-07-07 Jul.Mon 08:43:06 new discovery C-65⁻ so 715 isotopes in Bohr
 
- OTOMRO 378275:  Vt-120⁻  +  15000 => Wy-55 + C-65 + 4566.658939377222850453 using 10433.34 nuclear
+ OTOMRO 378275:  Vt-120⁻  +  15000 => Wy-55 + C-65⁻ + 4566.658939377222850453 using 10433.34 nuclear
 
-[.] add to files
+[c] add to files
 
-2025-07-06 Jul.Sun 20:24:21 new discovery so 714 isotopes in Bohr
+2025-07-06 Jul.Sun 20:24:21 new discovery C-66⁻, so 714 isotopes in Bohr
 
-  OTOMRO 377091:  Ek-122⁻ +  15000  => L-56 + C-66 + 4,320.797340208862806321 using 10679.20 nuclear 
+  OTOMRO 377091:  Ek-122⁻ +  15000  => L-56 + C-66⁻ + 4,320.797340208862806321 using 10679.20 nuclear 
 
-[.] add to files
+[c] add to files
 
-2025-07-06 Jul.Sun 17:33:11 2 new discoveries so 713 isotopes in Bohr
+2025-07-06 Jul.Sun 17:33:11 2 new discoveries Ux-60⁻ and Pg-61⁻, so 713 isotopes in Bohr
 
- OTOMRO 377068: Da-112⁻ + 20000 => Pb-52 + Ux-60 + 9,498.77664155378988653  using 10501.22 nuclear
- OTOMRO 377067:  S-113⁻ + 20000 => Pb-52 + Pg-61 + 9,599.004144452834225376 using 10401.00 nuclear 
+ OTOMRO 377068: Da-112⁻ + 20000 => Pb-52 + Ux-60⁻ + 9,498.77664155378988653  using 10501.22 nuclear
+ OTOMRO 377067:  S-113⁻ + 20000 => Pb-52 + Pg-61⁻ + 9,599.004144452834225376 using 10401.00 nuclear 
 
-[.] add to files
+[c] add to files
 
 2025-07-06 Jul.Sun 16:52:05 I should fission the remaining isotopes which haven't but I believe might yield new discoveries. There's not very many, but they look expensive:
 
@@ -139,7 +139,22 @@ let protonlookup["bohr"]["68"]="⁶⁸"    | let protonlookup["bohr"]["⁶⁸"]=
 
 2025-07-04 Jul.Fri 14:37:26 try this to see if Lu-42 exists:
 
-[ ] Dz-10⁻  + Yu-32⁻   = Lu-42⁻(0.???)
+[>] Dz-10⁻  + Yu-32⁻   = Lu-42⁻(0.???)
+  [ ]|  Ct-17⁻ +  Kk-71ª   +[  1503.32*-   5000] => Lx-88               |
+  [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+  [ ]|   Sr-3∙ +  Lx-88∙   +[  1702.65 -   5000] => N-91                |
+  [ ]|   P-24⁻ +   N-91∙   +[  3196.08 -   4000] => P-22 + N-93         |
+  [ ]|   N-93⁻ +  Ct-17⁻   +[  1756.43 -   3000] => Da-110              |
+  [ ]| Da-110∙             +[ 14620.20 -  18000] => Pb-51 + Ux-59       |
+  [ ]|  Ux-59⁻             +[  4365.16 -  10000] => Ro-27 + Yu-32       |
+  [ ]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               |
+  [ ]|  Gj-11∙ +  Nd-34⁻   +[  1023.44*-   5000] => Gd-45               |
+  [ ]|  Gd-45⁻             +[  2775.38 -  10000] => Xj-21 + P-24        |
+  [ ]|  Xj-21⁻             +[   762.48 -   3000] => Dz-10 + Gj-11       |
+  [ ]   Dz-10⁻ +  Yu-32⁻   +   8000    -> Lu-42⁻(0.???)
+total: 40779
+
+what is Lu-40 + P-24 ? It's -> C-64 so that doesn't help
 
 2025-07-03 Jul.Thu 17:14:54 [ ] Take every address I've seen in the reactor logs, and run the full alpha and bohr isotope listers on them to see who has full sets.
 
