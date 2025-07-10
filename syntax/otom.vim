@@ -18509,6 +18509,7 @@ syn match chain3  /\<U-93\>/
 syn match chain3  /\<U-94\>/
 syn match chain3  /\<U-95\>/
 syn match chain3  /\<U-96\>/
+syn match chain3  /\<V-40\>/
 syn match chain3  /\<Vl-84\>/
 syn match chain3  /\<Vl-85\>/
 syn match chain3  /\<Vl-97\>/
@@ -18657,7 +18658,6 @@ syn match chain5  /\<Ux-49\>/
 syn match chain5  /\<Ux-58\>/
 syn match chain5  /\<Ux-59\>/
 syn match chain5  /\<V-39\>/
-syn match chain5  /\<V-40\>/
 syn match chain5  /\<V-47\>/
 syn match chain5  /\<V-48\>/
 syn match chain5  /\<Vt-100\>/
@@ -19336,7 +19336,7 @@ syn match chain5_4  /\zs\s\ze\<Ux-49\>/
 syn match chain5_4  /\zs\s\ze\<Ux-58\>/
 syn match chain5_4  /\zs\s\ze\<Ux-59\>/
 syn match chain5_4  /\zs\s\ze\<V-39\>/
-syn match chain5_4  /\zs\s\ze\<V-40\>/
+syn match chain3_2  /\zs\s\ze\<V-40\>/
 syn match chain5_4  /\zs\s\ze\<V-47\>/
 syn match chain5_4  /\zs\s\ze\<V-48\>/
 syn match chain5_4  /\zs\s\ze\<Vt-100\>/
