@@ -1,3 +1,5 @@
+2025-07-10 Jul.Thu 20:59:57 [ ] Make the convert_token_id_to_hex.pl script also create vim regexes in stored global variables so I can easily find all 5-chains for example.
+
 2025-07-10 Jul.Thu 14:02:02
 
 [c] 3-chain isotopes I'm missing:
@@ -10946,21 +10948,21 @@ Looks like Ux-48 + Lx-76 + EVEN MORE will make a nuclear reaction and possibly o
 total: 51480
 
 updated:
-  [*]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
-  [ ]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
-  [ ]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
-  [ ]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
-  [ ]|  Eb-19⁺ +  Ok-92⁺   +[  1876.87 -  10000] => P-22 + Dd-89  | decay, nuclear               |
-  [ ]|  Ro-22⁺ +  Dd-89⁺   +[  1843.36 -   1845] => P-22 + Ok-89  | decay, nuclear               |
-  [ ]|  Ok-89⁺             +[  6067.65 -  10000] => Uq-41 + Ux-48 | nuclear                      |
-  [ ]|  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
-  [ ]|  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               |
-  [ ]|   P-21⁺ + Cv-102ª   +[  2189.45 -   5000] => P-22 + Cv-101 | decay, nuclear               |
-  [ ]|   P-21⁺ + Cv-101ª   +[  2205.75 -   5000] => P-22 + Cv-100 | decay, nuclear               |
-  [ ]|   P-21⁺ + Cv-100⁺   +[  2074.88 -   5000] => P-22 + Cv-99  | decay, nuclear               |
-  [ ]|   P-21⁺ +  Cv-99ª   +[  2130.58 -   5000] => P-22 + Cv-98  | decay, nuclear               |
-  [ ]|  Cv-98ª             +[     0.00 -      0] => P-22 + Lx-76  | decay                        |
-  [ ]   Ux-48⁺ +  Lx-76⁺   +  20000              => ? 124 67 ??
+  [x]|   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65         | nuclear                      |
+  [x]|  Yu-27⁺ +  Yu-27⁺   +[  1260.63 -   5000] => Qe-54         | nuclear                      |
+  [x]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21 -  20000] => P-22 + S-97   | decay, nuclear               |
+  [x]|  Xj-17⁺ +   S-97⁺   +[  1833.70 -   5000] => P-22 + Ok-92  | decay, nuclear               |
+  [x]|  Eb-19⁺ +  Ok-92⁺   +[  1876.87 -  10000] => P-22 + Dd-89  | decay, nuclear               |
+  [x]|  Ro-22⁺ +  Dd-89⁺   +[  1843.36 -   1845] => P-22 + Ok-89  | decay, nuclear               |
+  [x]|  Ok-89⁺             +[  6067.65 -  10000] => Uq-41 + Ux-48 | nuclear                      |
+  [x]|  Ro-22⁺ +  S-102ª   +[  2243.92 -  20000] => P-22 + Z-102  | decay, nuclear               |
+  [x]|  Ro-22⁺ +  Z-102ª   +[  2247.54 -   4000] => P-22 + Cv-102 | decay, nuclear               |
+  [x]|   P-21⁺ + Cv-102ª   +[  2189.45 -   5000] => P-22 + Cv-101 | decay, nuclear               |
+  [x]|   P-21⁺ + Cv-101ª   +[  2205.75 -   5000] => P-22 + Cv-100 | decay, nuclear               |
+  [x]|   P-21⁺ + Cv-100⁺   +[  2074.88 -   5000] => P-22 + Cv-99  | decay, nuclear               |
+  [x]|   P-21⁺ +  Cv-99ª   +[  2130.58 -   5000] => P-22 + Cv-98  | decay, nuclear               |
+  [x]|  Cv-98ª             +[     0.00 -      0] => P-22 + Lx-76  | decay                        |
+  [x]   Ux-48⁺ +  Lx-76⁺   +  20000              => ? 124 67 ??
 total: 50712.6
 
 
