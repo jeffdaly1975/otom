@@ -1,3 +1,197 @@
+2025-07-14 Jul.Mon 09:51:25 New discovery Vt-122 so 718 isotopes in Bohr.
+
+OTOMRO 391497: P-26⁻   + Lx-96⁻   +   8000  -> Cv-122⁻ => Vt-122 + 5592.391187758797968854 using 2407.61 decay+nuclear
+
+[ ] add to files
+
+2025-07-14 Jul.Mon 09:35:48
+
+[r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r]|  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r]|   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r]|   K-34∙ +  Kk-70ª   +[  3459.34*-  20000] => Da-104              |
+[r]|  Eb-22∙ + Da-104ª   +[  3243.21 -   5000] => P-22 + Ok-104       |
+[r]|  Eb-22∙ + Ok-104ª   +[  3137.51 -   5000] => P-22 + Dd-104       |
+[r]|  Eb-22∙ + Dd-104⁻   +[  3037.14 -   5000] => P-22 + Nm-104       |
+[r]| Nm-104⁻             +[  8984.24 -  10000] => V-48 + L-56         |
+[r]|   V-48⁻             +[  2960.50 -  10000] => Eb-22 + P-26        |
+[r]   P-26⁻   + Lx-96⁻   +   8000  -> Cv-122?(?.???) => ? Vt-122? SUCCESS using 2407.61 decay+nuclear
+total: 44894 NRG
+
+2025-07-14 Jul.Mon 09:24:14
+
+I'm working my way around the outer edges of possible isotopes. 
+At the bottom extreme, I've concluded that these don't exist; they are not possible to make:
+
+ Ek-125 Ji-126 Aw-127 Kn-128 Ha-129 Ax-130 I-131 Jb-132 Go-133
+  X-134 ⁶⁴-135 Eh-136 Ys-137 ⁶⁷-138 ⁶⁸-139 ⁶⁹-140 ⁷⁰-141
+
+
+That would mean anything with 71 or more neutrons are impossible if I'm correct.
+
+I was able to get to Vt-121 by aiming for Cv-121⁻ which then decayed to Vt-121.
+Similarly I got to Ek-123 by aiming for Vt-123⁻ which then decayed to Ek-123.
+
+I think Vt-124 cannot exist so we can't make Ek-124 that way.
+Cv-122⁻ might exist so if targeted, it would probably make Vt-122.
+
+Thinking out loud.
+
+
+2025-07-14 Jul.Mon 09:09:30 New discovery. 717 isotopes in Bohr.
+
+ OTOMRO 391454: Ct-17⁻ + Se-104⁻   +  10000 -> Cv-121⁻ => Vt-121 + 7868.264911429542735277 using 2131.74 decay+nuclear
+
+[ ] add to files
+
+2025-07-14 Jul.Mon 08:06:28 New discovery. 716 isotopes in Bohr.
+
+ OTOMRO 391341:  Lx-96⁻ +  Ro-27⁻   +  10000 -> Vt-123⁻ => Ek-123 + 7242.558137536025242298 using 2757.44 decay+nuclear
+
+[ ] add to files
+
+2025-07-14 Jul.Mon 07:49:52
+
+
+[r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r]|  Ct-17⁻ +   K-34∙   +[  1292.33 -   5000] => Pb-51               |
+[r]|  Pb-51⁻             +[  3537.83 -  10000] => P-24 + Ro-27        |
+[r]|  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r]|   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r]   Lx-96⁻ +  Ro-27⁻   +  10000 -> Vt-123⁻(?.???) => Ek-123  SUCCESS! using 2757.44 decay+nuclear
+total: 26895 NRG
+
+
+[r]|  Uq-47⁻ +  Kk-71ª   +[  3232.72*-  20000] => P-22 + Se-96        |
+[r]|   P-24⁻ +  Se-96∙   +[  3287.51*-   4000] => P-22 + Se-98        |
+[r]|   Sr-2∙ +  Se-98∙   +[  1651.04 -   5000] => Se-100              |
+[r]|   P-24⁻ + Se-100∙   +[  3214.08 -   3216] => P-22 + Se-102       |
+[r]|   P-24⁻ + Se-102⁻   +[  2476.04 -  10000] => P-22 + Se-104       |
+[r]   Ct-17⁻ + Se-104⁻   +  10000 -> Cv-121⁻(?.???) => Vt-121   SUCCESS! using 2131.74 decay+nuclear
+total: 23866 NRG
+
+
+2025-07-12 Jul.Sat 11:31:34 LISTED alpha U-83 for sale for 0.001 eth $2.93 on Opensea under wallet 0x454EE7
+
+2025-07-12 Jul.Sat 11:18:08 Made an alpha U-83 to sell on opensea. I saw wallet 0x2e1bc66cd7243ab66738a17e6f58cc8389f03064 bought a bunch of alpha isotopes yesterday, and they have all but U-83 and none of that isotope are for sale. So I made one to sell.
+
+
+
+2025-07-11 Jul.Fri 18:57:59
+What is Sr-3 + Dz-10? -> Gj-13 ? => ?
+
+ [r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               |
+ [r]|  Gj-11∙ +  Nd-34⁻   +[  1023.44*-   5000] => Gd-45               |
+ [r]|  Gd-45⁻             +[  2775.38 -  10000] => Xj-21 + P-24        |
+ [r]|  Xj-21⁻             +[   762.48 -   3000] => Dz-10 + Gj-11       |
+ [r]  Sr-3∙ + Dz-10⁻      +   3000              => ? makes Vi-13 using 459.12 nuclear+decay ...so it must make Gj-13⁻ which immediately decays to Vi-13∙
+
+Looks like we will have to find Gj-13 by fission of a heavy isotope. 
+If we get to Xj-23, it may decay to Dz-10 + Gj-13 or
+if we get to Eb-25, it may decay to Gj-12 + Gj-13
+
+
+What else can we test at the lower bounds? I have collected a bunch of the heaviest of each isotope and checked what it would combine to with its next heaviest neighbor. Then found that recipe or cheaper in the checkingsomething.themath.txt file. And if there was a close isotope that should be checked first I included that:
+Gj-12 + Vi-15 -> P-27
+   [>] Dz-10⁻  + Ct-17⁻   =?P-27?(?.???)   | total:  5118.16
+Vi-15 + Ct-17 -> Cl-32
+   [>] Vi-14⁻  + Ct-17⁻   =?Cl-31?(?.???)  | total:  2564.19
+   [ ] Vi-15⁻  + Ct-17⁻   =?Cl-32?(?.???)  | total: 25198.23
+Ct-17 + T-19  -> Nd-36
+   [>] Ct-17⁻  + T-18⁻    =?Nd-35?(?.???)  | total:  2609.99
+   [-] Ct-17⁻  + T-19⁻    =?Nd-36?(?.???)  | total: 20120.27 --> makes K-36 using 936.54 nuclear+decay OTOMRO 337558
+T-19 + Xj-21 -> Mt-40
+   [ ] Sr-3∙   + K-37⁻    =?Mt-40?(?.???)  | total: 16206.58
+Xj-21 + Eb-23 -> Dx-44
+   [-] Ct-17⁻  + Ro-27⁻   = Dx-44⁻(0.640)  | total:  4830.16
+Eb-23 + P-26 -> V-49
+   [-] Dz-10⁻  + Mt-39⁻   =*V-49?(?.???)   | total: 20316.66
+P-26 + Ro-28 -> Pb-54
+   [ ] Ct-17⁻  + K-37⁻    =?Pb-54?(?.???)  | total: 16206.58
+Ro-28 + Cl-30 -> L-58
+   [ ] Ct-17⁻  + Lu-41⁻   =?L-58?(?.???)   | total: 17783.41
+Cl-30 + Yu-32 -> Pg-62
+   [-] Ct-17⁻  + Gd-45⁻   =*Pg-62?(?.???)  | total:  1580.30
+   [ ] Gj-11∙  + Uq-52⁻   =?Pg-63?(?.???)  | total: 20868.57
+Yu-32 + Nd-34 -> C-66
+   [-] Xj-21⁻  + Gd-45⁻   = C-66?(?.???)   | total:  5935.98
+   [ ] Ct-17⁻  + Uq-50⁻   =?C-67?(?.???)   | total: 18255.37
+   [ ] Ct-17⁻  + Uq-52⁻   =?C-69?(?.???)   | total: 20868.57
+Nd-34 + K-37 -> Ai-71
+   [>] Ct-17⁻  + Wy-53⁻   =?Ai-70?(?.???)  | total:  1939.20
+   [>] Nd-34⁻  + K-37⁻    =?Ai-71?(?.???)  | total: 16763.44
+K-37  + Mt-39 -> Gy-76
+   [-] Sr-2∙   + F-73⁻    =*Gy-75?(?.???)  | total:  9391.35
+   [-] Sr-3∙   + F-73⁻    =*Gy-76?(?.???)  | total:  9391.35
+   [ ] Xj-21⁻  + Wy-56⁻   =?Gy-77?(?.???)  | total: 28643.09
+Mt-39 + Lu-41 -> Yv-80
+   [-] As-7∙   + F-73⁻    =*Yv-80⁻(0.764)  | total:  9391.35
+   [ ] Cl-29⁻  + Uq-52⁻   =?Yv-81?(?.???)  | total: 27214.63
+Lu-41 + Dx-44 -> Iu-85
+   [-] Gj-11∙  + F-73⁻    =*Iu-84?(?.???)  | total:  9391.35
+   [-] Ei-5∙   + Yv-80⁻   =*Iu-85?(?.???)  | total:  9689.71
+   [ ] Nd-34⁻  + Uq-52⁻   =?Iu-86?(?.???)  | total: 21425.43
+Dx-44 + Gd-46 -> Co-90
+   [ ] Dz-9∙   + Yv-80⁻   =?Co-89?(?.???)  | total:  9689.71
+   [ ] Ct-17⁻  + F-73⁻    =?Co-90?(?.???)  | total:  9391.35
+Gd-46 + V-48 -> Lx-94
+   [-] Vi-14⁻  + Yv-80⁻   = Lx-94⁻(0.697)  | total: 12253.90
+V-48  + Uq-52 -> U-100
+   [ ] Ei-5∙   + Lx-95⁻   =?U-100?(?.???)  | total: 13110.61
+Uq-52 + Pb-53 -> Se-105
+   [ ] Dz-9∙   + Lx-96⁻   =?Se-105?(?.???) | total: 13176.46
+Pb-53 + Wy-56 -> Dd-109
+   [-] As-7∙   + Vl-101⁻  =*Dd-108?(?.???) | total: 12739.75
+   [ ] Vi-13∙  + Lx-96⁻   =?Dd-109?(?.???) | total: 13176.46
+   [ ] Vi-14⁻  + Lx-96⁻   =?Dd-110?(?.???) | total: 15740.65
+Wy-56 + L-57 -> Da-113
+   [-] T-17∙   + Lx-96⁻   =*Da-113?(?.???) | total: 13176.46
+   [ ] T-18⁻   + Lx-96⁻   =?Da-114?(?.???) | total: 15786.45
+L-57  + Ux-60 -> Z-117
+   [-] Nd-34⁻  + Cj-81⁻   =*Z-115?(?.???)  | total: 10061.43
+   [-] Eb-22∙  + Lx-94⁻   =*Z-116?(?.???)  | total: 10313.89
+   [-] Ct-17⁻  + Vl-100⁻  =*Z-117?(?.???)  | total: 12695.47
+   [ ] Ct-17⁻  + Vl-101⁻  =?Z-118?(?.???)  | total: 12739.75
+Ux-60 + Pg-61 -> Vt-121
+   [-] Ct-17⁻  + Nm-104⁻  =*Vt-121?(?.???) | total: 13099.05
+
+ [r]|  Ct-17⁻ +   T-16∙   +[   823.49 -   5000] => Nd-33               | nuclear                      | OTOMRO  124006 |
+ [r]|  Nd-33⁻             +[  1786.50 -  10000] => Ct-15 + T-18        | nuclear                      | OTOMRO   58789*|
+ [r]   Ct-17⁻ +   T-18⁻   +   3000   -> Nd-35⁻(0.69?)   => K-35 using 778.65 decay+nuclear
+| total:  5609.99
+
+ [r]|   Dz-9∙ +  Eb-22∙   +[   972.60*-   5000] => Yu-31               |
+ [r]|  Yu-31⁻             +[  1591.59 -  10000] => Vi-14 + T-17        |
+ [r]   Vi-14⁻ +  Ct-17⁻   +   3000    ->  Cl-31⁻(0.60?)   => Yu-31 + 2322.74 using 677.26 decay+nuclear
+total:  5565
+
+[r] Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               |
+[r] Gj-11∙ +  Nd-34⁻   +[  1023.44*-   5000] => Gd-45               |
+[r] Gd-45⁻             +[  2775.38 -  10000] => Xj-21 + P-24        |
+[r] Xj-21⁻             +[   762.48 -   3000] => Dz-10 + Gj-11       |
+[r] Dz-10⁻ +  Ct-17⁻   +   3000   -> P-27? => Ro-27 using 558.89 nuclea+decay
+total:  8118.16
+
+[r]  Sr-3∙ +  Uq-47⁻   +[   906.03 -   5000] => Pb-50               |
+[r]  Sr-3∙ +  Pb-50⁻   +[  1033.17 -   3000] => Wy-53               |
+[r] Ct-17⁻ +  Wy-53⁻   +   5000   -> Ai-70?   => F-70 using 1491.50 nuclear+decay
+total:  6939.20
+
+[r] Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               |
+[r] Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r]  P-24⁻ +  Nm-97ª   +[  2488.17*-   4000] => P-22 + Nm-99        |
+[r] Eb-22∙ +  Nm-99ª   +[  3072.86 -   4500] => P-22 + Se-99        |
+[r]  Sr-3∙ +  Se-99∙   +[  1751.37*-   5000] => P-22 + Yv-80        |
+[r] Yv-80⁻             +[  6516.87 -  12000] => K-37 + Dx-43        |
+[r] Nd-34⁻ +   K-37⁻   + 6000 -> Ai-71?   --> makes F-71 using 1787.85 nuclear+decay 
+total: 16763.44
+
+
+
 2025-07-10 Jul.Thu 20:59:57 [ ] Make the convert_token_id_to_hex.pl script also create vim regexes in stored global variables so I can easily find all 5-chains for example.
 
 2025-07-10 Jul.Thu 14:02:02
@@ -481,7 +675,7 @@ I think I should add up the chain counts instead of just the larger one. Add the
 [c] add to files
 
 try:
-[ ] | Da-112⁻ + 20000 => ? Pb-52 + Ux-60
+[-] | Da-112⁻ + 20000 => ? Pb-52 + Ux-60
 
 2025-06-27 Jun.Fri 00:13:06
 
@@ -559,7 +753,7 @@ try:
  [-] S-112⁻ + 0 => ? Z-112
  [c] S-113⁻ + 0 => ? Z-113 DUH. I just discovered that so I didn't need to waste that isotope!
  [c] S-112⁻ + 12000 => ? Pb-52 + Pg-60   
- [ ] S-113⁻ + 12000 => ? Pb-52 + Pg-61   
+ [-] S-113⁻ + 12000 => ? Pb-52 + Pg-61   
 
 
 make it:
@@ -851,7 +1045,7 @@ try:
 
 2025-06-22 Jun.Sun 15:24:46
 Aim for Ux-60 and U-61 to get Pg-60 and Pg-61:
-[ ] | Ux-60?(?.???)  |Dx-43⁻  + Ct-17⁻  = Ux-60?(?.???)  | total:  16206.58
+[-] | Ux-60?(?.???)  |Dx-43⁻  + Ct-17⁻  = Ux-60?(?.???)  | total:  16206.58
 
 [ ] | Ux-61?(?.???)  |Uq-52⁻  + Dz-9∙   = Ux-61?(?.???)  | total:  20868.57
 
@@ -967,16 +1161,16 @@ Lx-96⁻  + Ro-28⁻  = Vt-124?(?.???) |
 total: 43136
 
 Lx-96⁻  + Cl-29⁻  = Ek-125?(?.???) |
- [ ]|  Ct-17⁻ +  Uq-47⁻   +[  1197.60 -   5000] => C-64                | nuclear                      | OTOMRO  142528 |
- [ ]|   C-64⁻             +[  5148.46 -  10000] => Cl-29 + K-35        | nuclear                      | OTOMRO  125334 |
- [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
- [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
- [ ]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
- [ ]|  Eb-22∙ +  Nm-97ª   +[  3132.76 -   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
- [ ]|  Ct-17⁻ +  Se-97ª   +[  1814.84 -   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
- [ ]|   P-24⁻ +  Lx-92∙   +[  3060.28 -   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
- [ ]|   P-24⁻ +  Lx-94⁻   +[  2344.87 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
- [ ]   Lx-96⁻ +  Cl-29⁻   +   5000  = Ek-125?(?.???) |
+ [r]|  Ct-17⁻ +  Uq-47⁻   +[  1197.50 -   5000] => C-64                | nuclear                      | OTOMRO  142528 |
+ [r]|   C-64⁻             +[  5148.46 -  10000] => Cl-29 + K-35        | nuclear                      | OTOMRO  125334 |
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+ [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+ [r]|  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+ [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+ [r]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+ [r]|   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+ [f]   Lx-96⁻ +  Cl-29⁻   +   5000  = Ek-125?(?.???) | => N-96 + Yu-29 using 250.00 decay. DANG! DID I NOT USE ENOUGH? OR does that mean it doesn't exist?
 total: 24517
 
 Lx-96⁻  + Yu-31⁻  = Ji-127?(?.???) |
@@ -14177,109 +14371,1062 @@ total: 34248.83
  
  
  
-2025-04-24 Apr.Thu 16:00:36 How much energy does burning each isotope produce?
+2025-04-24 Apr.Thu 16:00:36 How much energy does burning (annihilating in the Annihilator) each isotope produce?
 
-Start with the mineables:
-# Universe BOHR
-| Sr-1   |   1.0
-| Sr-2   |   2.29739670999407001
-| Sr-3   |   3.737192818846551975
-| Ei-4   |   5.278031643091577029
-| Ei-5   |   6.898648307306074151
-| As-5   |   6.898648307306074151
-| As-6   |   8.585814486631532997
-| As-7   |  10.330412131161864483
-| Dz-7   |  10.330412131161864483
-| Dz-8   |  12.125732532083184647
-| Dz-9   |  13.966610165238237049
-| Gj-11  |  17.769336928223958001
-| Vi-10  |  15.848931924611134823
-| Vi-11  |  17.769336928223958001
-| Ct-13  |  21.713609480352535126
-| Ct-15  |  25.781578913812181624
-| Ct-17  |  29.959785913149389227
-| T-15   |  25.781578913812181624
-| T-16   |  27.857618025475972418
-| T-17   |  29.959785913149389227
-| Xj-17  |  29.959785913149389227
-| Xj-18  |  32.086844243388060378
-| Eb-19  |  34.237679419025703798
-| Eb-20  |  36.411284060521605247
-| Eb-21  |  38.606742032303424739
-| Eb-22  |  40.823216197677855316
-| P-21   |  38.606742032303424739
-| P-23   |  43.059938302761720542
-| Ro-22  |  40.823216197677855316
-| Ro-23  |  43.059938302761720542
-| Ro-24  |  45.316200542155295072
-| Cl-25  |  47.591348467896962197
-| Cl-26  |  49.884774982257962417
-| Cl-27  |  52.195915213157594238
-| Yu-27  |  52.195915213157594238
-| Yu-29  |  56.869262666181892348
-| Nd-30  |  59.230514575044595251
-| K-31   |  61.607563394598196647
-| K-34   |  68.829513588996091335
-| Mt-32  |  63.999999999999999967
-| Mt-34  |  68.829513588996091335
-| Mt-35  |  71.265880162413930491
-| Uq-47  | 101.512010552929909196
-| Pb-48  | 104.109290034979066829
-| Wy-50  | 109.33620739432780549
-| L-51   | 111.965496768801985126
-| Gy-67  | 155.342311519529377334
-| Kk-70  | 163.725998619961423982
-| Kk-71  | 166.536724463855213734
-| Yv-72  | 169.35537924355299441
-| S-102  | 257.229163909497357575
+::INFO:: How much energy does each isotope produce when burned in the Annihilator?
 
-# Universe ALPHA
-| Ju-1   | 1.0
-| Ju-2   | 2.29739670999407001
-| Ju-3   | 3.737192818846551975
-|  W-4   | 5.278031643091577029
-|  W-5   | 6.898648307306074151
-| Cq-5   | 6.898648307306074151
-| Cq-6   | 8.585814486631532997
-| Cq-7   | 10.330412131161864483
-| Af-7   | 10.330412131161864483
-| Af-8   | 12.125732532083184647
-| Af-9   | 13.966610165238237049
-| Xl-9   | 13.966610165238237049
-| Xl-10  | 15.848931924611134823
-| Xl-11  | 17.769336928223958001
-| Pq-10  | 15.848931924611134823
-| Pq-12  | 19.725021954206709142
-| Pq-13  | 21.713609480352535126
-| Pq-14  | 23.733054843014096707
-| Pq-15  | 25.781578913812181624
-| Zz-13  | 21.713609480352535126
-| Zz-14  | 23.733054843014096707
-| Dx-15  | 25.781578913812181624
-| Dx-16  | 27.857618025475972418
-| Dx-17  | 29.959785913149389227
-| Pm-17  | 29.959785913149389227
-| Pm-18  | 32.086844243388060378
-| Pm-19  | 34.237679419025703798
-|  M-20  | 36.411284060521605247
-|  M-22  | 40.823216197677855316
-|  M-23  | 43.059938302761720542
-| Fw-25  | 47.591348467896962197
-| Pt-24  | 45.316200542155295072
-| Pt-25  | 47.591348467896962197
-| Pt-26  | 49.884774982257962417
-|  S-25  | 47.591348467896962197
-|  S-26  | 49.884774982257962417
-| Zq-32  | 63.999999999999999967
-| Xc-30  | 59.230514575044595251
-| Xc-31  | 61.607563394598196647
-| Xc-34  | 68.829513588996091335
-| Gy-34  | 68.829513588996091335
-|  D-37  | 76.180193049705138246
-| Fj-37  | 76.180193049705138246
-| Aw-50  | 109.33620739432780549
-| Nb-54  | 119.914723885837684611
+Start with the mineables.
 
+|universe|isotope | NRG from Annihilation  | NRG/Mass |
+| bohr   | Sr-1   |   1.0                  |   1.0000 |
+| bohr   | Sr-2   |   2.29739670999407001  |   1.1487 |
+| bohr   | Sr-3   |   3.737192818846551975 |   1.2457 |
+| bohr   | Ei-4   |   5.278031643091577029 |   1.3195 |
+| bohr   | Ei-5   |   6.898648307306074151 |   1.3797 |
+| bohr   | As-5   |   6.898648307306074151 |   1.3797 |
+| bohr   | As-6   |   8.585814486631532997 |   1.4310 |
+| bohr   | As-7   |  10.330412131161864483 |   1.4758 |
+| bohr   | Dz-7   |  10.330412131161864483 |   1.4758 |
+| bohr   | Dz-8   |  12.125732532083184647 |   1.5157 |
+| bohr   | Dz-9   |  13.966610165238237049 |   1.5518 |
+| bohr   | Dz-10  |                        |          |
+| bohr   | Gj-9   |                        |          |
+| bohr   | Gj-10  |                        |          |
+| bohr   | Gj-11  |  17.769336928223958001 |   1.6154 |
+| bohr   | Gj-12  |                        |          |
+| bohr   | Vi-10  |  15.848931924611134823 |   1.5849 |
+| bohr   | Vi-11  |  17.769336928223958001 |   1.6154 |
+| bohr   | Vi-12  |                        |          |
+| bohr   | Vi-13  |                        |          |
+| bohr   | Vi-14  |                        |          |
+| bohr   | Vi-15  |                        |          |
+| bohr   | Ct-13  |  21.713609480352535126 |   1.6703 |
+| bohr   | Ct-14  |                        |          |
+| bohr   | Ct-15  |  25.781578913812181624 |   1.7188 |
+| bohr   | Ct-16  |                        |          |
+| bohr   | Ct-17  |  29.959785913149389227 |   1.7623 |
+| bohr   | T-14   |                        |          |
+| bohr   | T-15   |  25.781578913812181624 |   1.7188 |
+| bohr   | T-16   |  27.857618025475972418 |   1.7411 |
+| bohr   | T-17   |  29.959785913149389227 |   1.7623 |
+| bohr   | T-18   |                        |          |
+| bohr   | T-19   |                        |          |
+| bohr   | Xj-16  |                        |          |
+| bohr   | Xj-17  |  29.959785913149389227 |   1.7623 |
+| bohr   | Xj-18  |  32.086844243388060378 |   1.7826 |
+| bohr   | Xj-19  |                        |          |
+| bohr   | Xj-20  |                        |          |
+| bohr   | Xj-21  |                        |          |
+| bohr   | Eb-19  |  34.237679419025703798 |   1.8020 |
+| bohr   | Eb-20  |  36.411284060521605247 |   1.8206 |
+| bohr   | Eb-21  |  38.606742032303424739 |   1.8384 |
+| bohr   | Eb-22  |  40.823216197677855316 |   1.8556 |
+| bohr   | Eb-23  |                        |          |
+| bohr   | P-21   |  38.606742032303424739 |   1.8384 |
+| bohr   | P-22   |                        |          |
+| bohr   | P-23   |  43.059938302761720542 |   1.8722 |
+| bohr   | P-24   |                        |          |
+| bohr   | P-25   |                        |          |
+| bohr   | P-26   |                        |          |
+| bohr   | Ro-22  |  40.823216197677855316 |   1.8556 |
+| bohr   | Ro-23  |  43.059938302761720542 |   1.8722 |
+| bohr   | Ro-24  |  45.316200542155295072 |   1.8882 |
+| bohr   | Ro-25  |                        |          |
+| bohr   | Ro-26  |                        |          |
+| bohr   | Ro-27  |                        |          |
+| bohr   | Ro-28  |                        |          |
+| bohr   | Cl-24  |                        |          |
+| bohr   | Cl-25  |  47.591348467896962197 |   1.9037 |
+| bohr   | Cl-26  |  49.884774982257962417 |   1.9186 |
+| bohr   | Cl-27  |  52.195915213157594238 |   1.9332 |
+| bohr   | Cl-28  |                        |          |
+| bohr   | Cl-29  |                        |          |
+| bohr   | Cl-30  |                        |          |
+| bohr   | Yu-26  |                        |          |
+| bohr   | Yu-27  |  52.195915213157594238 |   1.9332 |
+| bohr   | Yu-28  |                        |          |
+| bohr   | Yu-29  |  56.869262666181892348 |   1.9610 |
+| bohr   | Yu-30  |                        |          |
+| bohr   | Yu-31  |                        |          |
+| bohr   | Yu-32  |                        |          |
+| bohr   | Nd-27  |                        |          |
+| bohr   | Nd-28  |                        |          |
+| bohr   | Nd-29  |                        |          |
+| bohr   | Nd-30  |  59.230514575044595251 |   1.9744 |
+| bohr   | Nd-31  |                        |          |
+| bohr   | Nd-32  |                        |          |
+| bohr   | Nd-33  |                        |          |
+| bohr   | Nd-34  |                        |          |
+| bohr   | K-29   |                        |          |
+| bohr   | K-30   |                        |          |
+| bohr   | K-31   |  61.607563394598196647 |   1.9873 |
+| bohr   | K-32   |                        |          |
+| bohr   | K-33   |                        |          |
+| bohr   | K-34   |  68.829513588996091335 |   2.0244 |
+| bohr   | K-35   |                        |          |
+| bohr   | K-36   |                        |          |
+| bohr   | K-37   |                        |          |
+| bohr   | Mt-32  |  63.999999999999999967 |   2.0000 |
+| bohr   | Mt-33  |                        |          |
+| bohr   | Mt-34  |  68.829513588996091335 |   2.0244 |
+| bohr   | Mt-35  |  71.265880162413930491 |   2.0362 |
+| bohr   | Mt-36  |                        |          |
+| bohr   | Mt-37  |                        |          |
+| bohr   | Mt-38  |                        |          |
+| bohr   | Mt-39  |                        |          |
+| bohr   | Lu-34  |                        |          |
+| bohr   | Lu-35  |                        |          |
+| bohr   | Lu-36  |                        |          |
+| bohr   | Lu-37  |                        |          |
+| bohr   | Lu-38  |                        |          |
+| bohr   | Lu-39  |                        |          |
+| bohr   | Lu-40  |                        |          |
+| bohr   | Lu-41  |                        |          |
+| bohr   | Dx-35  |                        |          |
+| bohr   | Dx-36  |                        |          |
+| bohr   | Dx-37  |                        |          |
+| bohr   | Dx-38  |                        |          |
+| bohr   | Dx-39  |                        |          |
+| bohr   | Dx-40  |                        |          |
+| bohr   | Dx-41  |                        |          |
+| bohr   | Dx-42  |                        |          |
+| bohr   | Dx-43  |                        |          |
+| bohr   | Dx-44  |                        |          |
+| bohr   | Gd-38  |                        |          |
+| bohr   | Gd-39  |                        |          |
+| bohr   | Gd-40  |                        |          |
+| bohr   | Gd-41  |                        |          |
+| bohr   | Gd-42  |                        |          |
+| bohr   | Gd-43  |                        |          |
+| bohr   | Gd-44  |                        |          |
+| bohr   | Gd-45  |                        |          |
+| bohr   | Gd-46  |                        |          |
+| bohr   | V-39   |                        |          |
+| bohr   | V-40   |                        |          |
+| bohr   | V-41   |                        |          |
+| bohr   | V-42   |                        |          |
+| bohr   | V-43   |                        |          |
+| bohr   | V-44   |                        |          |
+| bohr   | V-45   |                        |          |
+| bohr   | V-46   |                        |          |
+| bohr   | V-47   |                        |          |
+| bohr   | V-48   |                        |          |
+| bohr   | Uq-41  |                        |          |
+| bohr   | Uq-42  |                        |          |
+| bohr   | Uq-43  |                        |          |
+| bohr   | Uq-44  |                        |          |
+| bohr   | Uq-45  |                        |          |
+| bohr   | Uq-46  |                        |          |
+| bohr   | Uq-47  | 101.512010552929909196 |   2.1598 |
+| bohr   | Uq-48  |                        |          |
+| bohr   | Uq-49  |                        |          |
+| bohr   | Uq-50  |                        |          |
+| bohr   | Uq-51  |                        |          |
+| bohr   | Uq-52  |                        |          |
+| bohr   | Pb-43  |                        |          |
+| bohr   | Pb-44  |                        |          |
+| bohr   | Pb-45  |                        |          |
+| bohr   | Pb-46  |                        |          |
+| bohr   | Pb-47  |                        |          |
+| bohr   | Pb-48  | 104.109290034979066829 |   2.1689 |
+| bohr   | Pb-49  |                        |          |
+| bohr   | Pb-50  |                        |          |
+| bohr   | Pb-51  |                        |          |
+| bohr   | Pb-52  |                        |          |
+| bohr   | Pb-53  |                        |          |
+| bohr   | Wy-45  |                        |          |
+| bohr   | Wy-46  |                        |          |
+| bohr   | Wy-47  |                        |          |
+| bohr   | Wy-48  |                        |          |
+| bohr   | Wy-49  |                        |          |
+| bohr   | Wy-50  | 109.33620739432780549  |   2.1867 |
+| bohr   | Wy-51  |                        |          |
+| bohr   | Wy-52  |                        |          |
+| bohr   | Wy-53  |                        |          |
+| bohr   | Wy-54  |                        |          |
+| bohr   | Wy-55  |                        |          |
+| bohr   | Wy-56  |                        |          |
+| bohr   | L-46   |                        |          |
+| bohr   | L-47   |                        |          |
+| bohr   | L-48   |                        |          |
+| bohr   | L-49   |                        |          |
+| bohr   | L-50   |                        |          |
+| bohr   | L-51   | 111.965496768801985126 |   2.1954 |
+| bohr   | L-52   |                        |          |
+| bohr   | L-53   |                        |          |
+| bohr   | L-54   |                        |          |
+| bohr   | L-55   |                        |          |
+| bohr   | L-56   |                        |          |
+| bohr   | L-57   |                        |          |
+| bohr   | Ux-48  |                        |          |
+| bohr   | Ux-49  |                        |          |
+| bohr   | Ux-50  |                        |          |
+| bohr   | Ux-51  |                        |          |
+| bohr   | Ux-52  |                        |          |
+| bohr   | Ux-53  |                        |          |
+| bohr   | Ux-54  |                        |          |
+| bohr   | Ux-55  |                        |          |
+| bohr   | Ux-56  |                        |          |
+| bohr   | Ux-57  |                        |          |
+| bohr   | Ux-58  |                        |          |
+| bohr   | Ux-59  |                        |          |
+| bohr   | Ux-60  |                        |          |
+| bohr   | Pg-50  |                        |          |
+| bohr   | Pg-51  |                        |          |
+| bohr   | Pg-52  |                        |          |
+| bohr   | Pg-53  |                        |          |
+| bohr   | Pg-54  |                        |          |
+| bohr   | Pg-55  |                        |          |
+| bohr   | Pg-56  |                        |          |
+| bohr   | Pg-57  |                        |          |
+| bohr   | Pg-58  |                        |          |
+| bohr   | Pg-59  |                        |          |
+| bohr   | Pg-60  |                        |          |
+| bohr   | Pg-61  |                        |          |
+| bohr   | Qe-52  |                        |          |
+| bohr   | Qe-53  |                        |          |
+| bohr   | Qe-54  |                        |          |
+| bohr   | Qe-55  |                        |          |
+| bohr   | Qe-56  |                        |          |
+| bohr   | Qe-57  |                        |          |
+| bohr   | Qe-58  |                        |          |
+| bohr   | Qe-59  |                        |          |
+| bohr   | Qe-60  |                        |          |
+| bohr   | Qe-61  |                        |          |
+| bohr   | Qe-62  |                        |          |
+| bohr   | Qe-63  |                        |          |
+| bohr   | C-53   |                        |          |
+| bohr   | C-54   |                        |          |
+| bohr   | C-55   |                        |          |
+| bohr   | C-56   |                        |          |
+| bohr   | C-57   |                        |          |
+| bohr   | C-58   |                        |          |
+| bohr   | C-59   |                        |          |
+| bohr   | C-60   |                        |          |
+| bohr   | C-61   |                        |          |
+| bohr   | C-62   |                        |          |
+| bohr   | C-63   |                        |          |
+| bohr   | C-64   |                        |          |
+| bohr   | C-65   |                        |          |
+| bohr   | C-66   |                        |          |
+| bohr   | Ns-56  |                        |          |
+| bohr   | Ns-57  |                        |          |
+| bohr   | Ns-58  |                        |          |
+| bohr   | Ns-59  |                        |          |
+| bohr   | Ns-60  |                        |          |
+| bohr   | Ns-61  |                        |          |
+| bohr   | Ns-62  |                        |          |
+| bohr   | Ns-63  |                        |          |
+| bohr   | Ns-64  |                        |          |
+| bohr   | Ns-65  |                        |          |
+| bohr   | Ns-66  |                        |          |
+| bohr   | Ns-67  |                        |          |
+| bohr   | Ns-68  |                        |          |
+| bohr   | Ai-58  |                        |          |
+| bohr   | Ai-59  |                        |          |
+| bohr   | Ai-60  |                        |          |
+| bohr   | Ai-61  |                        |          |
+| bohr   | Ai-62  |                        |          |
+| bohr   | Ai-63  |                        |          |
+| bohr   | Ai-64  |                        |          |
+| bohr   | Ai-65  |                        |          |
+| bohr   | Ai-66  |                        |          |
+| bohr   | Ai-67  |                        |          |
+| bohr   | Ai-68  |                        |          |
+| bohr   | Ai-69  |                        |          |
+| bohr   | F-59   |                        |          |
+| bohr   | F-60   |                        |          |
+| bohr   | F-61   |                        |          |
+| bohr   | F-62   |                        |          |
+| bohr   | F-63   |                        |          |
+| bohr   | F-64   |                        |          |
+| bohr   | F-65   |                        |          |
+| bohr   | F-66   |                        |          |
+| bohr   | F-67   |                        |          |
+| bohr   | F-68   |                        |          |
+| bohr   | F-69   |                        |          |
+| bohr   | F-70   |                        |          |
+| bohr   | F-71   |                        |          |
+| bohr   | F-72   |                        |          |
+| bohr   | F-73   |                        |          |
+| bohr   | Gy-63  |                        |          |
+| bohr   | Gy-64  |                        |          |
+| bohr   | Gy-65  |                        |          |
+| bohr   | Gy-66  |                        |          |
+| bohr   | Gy-67  | 155.342311519529377334 |   2.3185 |
+| bohr   | Gy-68  |                        |          |
+| bohr   | Gy-69  |                        |          |
+| bohr   | Gy-70  |                        |          |
+| bohr   | Gy-71  |                        |          |
+| bohr   | Gy-72  |                        |          |
+| bohr   | Gy-73  |                        |          |
+| bohr   | Gy-74  |                        |          |
+| bohr   | Kk-64  |                        |          |
+| bohr   | Kk-65  |                        |          |
+| bohr   | Kk-66  |                        |          |
+| bohr   | Kk-67  |                        |          |
+| bohr   | Kk-68  |                        |          |
+| bohr   | Kk-69  |                        |          |
+| bohr   | Kk-70  | 163.725998619961423982 |   2.3389 |
+| bohr   | Kk-71  | 166.536724463855213734 |   2.3456 |
+| bohr   | Kk-72  |                        |          |
+| bohr   | Kk-73  |                        |          |
+| bohr   | Kk-74  |                        |          |
+| bohr   | Kk-75  |                        |          |
+| bohr   | Kk-76  |                        |          |
+| bohr   | Yv-66  |                        |          |
+| bohr   | Yv-67  |                        |          |
+| bohr   | Yv-68  |                        |          |
+| bohr   | Yv-69  |                        |          |
+| bohr   | Yv-70  |                        |          |
+| bohr   | Yv-71  |                        |          |
+| bohr   | Yv-72  | 169.35537924355299441  |   2.3522 |
+| bohr   | Yv-73  |                        |          |
+| bohr   | Yv-74  |                        |          |
+| bohr   | Yv-75  |                        |          |
+| bohr   | Yv-76  |                        |          |
+| bohr   | Yv-77  |                        |          |
+| bohr   | Yv-78  |                        |          |
+| bohr   | Yv-79  |                        |          |
+| bohr   | Yv-80  |                        |          |
+| bohr   | Cj-68  |                        |          |
+| bohr   | Cj-69  |                        |          |
+| bohr   | Cj-70  |                        |          |
+| bohr   | Cj-71  |                        |          |
+| bohr   | Cj-72  |                        |          |
+| bohr   | Cj-73  |                        |          |
+| bohr   | Cj-74  |                        |          |
+| bohr   | Cj-75  |                        |          |
+| bohr   | Cj-76  |                        |          |
+| bohr   | Cj-77  |                        |          |
+| bohr   | Cj-78  |                        |          |
+| bohr   | Cj-79  |                        |          |
+| bohr   | Cj-80  |                        |          |
+| bohr   | Cj-81  |                        |          |
+| bohr   | Iu-72  |                        |          |
+| bohr   | Iu-73  |                        |          |
+| bohr   | Iu-74  |                        |          |
+| bohr   | Iu-75  |                        |          |
+| bohr   | Iu-76  |                        |          |
+| bohr   | Iu-77  |                        |          |
+| bohr   | Iu-78  |                        |          |
+| bohr   | Iu-79  |                        |          |
+| bohr   | Iu-80  |                        |          |
+| bohr   | Iu-81  |                        |          |
+| bohr   | Iu-82  |                        |          |
+| bohr   | Iu-83  |                        |          |
+| bohr   | D-74   |                        |          |
+| bohr   | D-75   |                        |          |
+| bohr   | D-76   |                        |          |
+| bohr   | D-77   |                        |          |
+| bohr   | D-78   |                        |          |
+| bohr   | D-79   |                        |          |
+| bohr   | D-80   |                        |          |
+| bohr   | D-81   |                        |          |
+| bohr   | D-82   |                        |          |
+| bohr   | D-83   |                        |          |
+| bohr   | D-84   |                        |          |
+| bohr   | D-85   |                        |          |
+| bohr   | Co-74  |                        |          |
+| bohr   | Co-75  |                        |          |
+| bohr   | Co-76  |                        |          |
+| bohr   | Co-78  |                        |          |
+| bohr   | Co-79  |                        |          |
+| bohr   | Co-80  |                        |          |
+| bohr   | Co-81  |                        |          |
+| bohr   | Co-82  |                        |          |
+| bohr   | Co-83  |                        |          |
+| bohr   | Co-84  |                        |          |
+| bohr   | Co-85  |                        |          |
+| bohr   | Co-86  |                        |          |
+| bohr   | Co-87  |                        |          |
+| bohr   | Co-88  |                        |          |
+| bohr   | W-76   |                        |          |
+| bohr   | W-77   |                        |          |
+| bohr   | W-78   |                        |          |
+| bohr   | W-79   |                        |          |
+| bohr   | W-80   |                        |          |
+| bohr   | W-81   |                        |          |
+| bohr   | W-82   |                        |          |
+| bohr   | W-83   |                        |          |
+| bohr   | W-84   |                        |          |
+| bohr   | W-85   |                        |          |
+| bohr   | W-86   |                        |          |
+| bohr   | W-87   |                        |          |
+| bohr   | W-88   |                        |          |
+| bohr   | W-89   |                        |          |
+| bohr   | W-90   |                        |          |
+| bohr   | W-91   |                        |          |
+| bohr   | Lx-76  |                        |          |
+| bohr   | Lx-77  |                        |          |
+| bohr   | Lx-78  |                        |          |
+| bohr   | Lx-79  |                        |          |
+| bohr   | Lx-80  |                        |          |
+| bohr   | Lx-81  |                        |          |
+| bohr   | Lx-82  |                        |          |
+| bohr   | Lx-83  |                        |          |
+| bohr   | Lx-84  |                        |          |
+| bohr   | Lx-85  |                        |          |
+| bohr   | Lx-86  |                        |          |
+| bohr   | Lx-87  |                        |          |
+| bohr   | Lx-88  |                        |          |
+| bohr   | Lx-89  |                        |          |
+| bohr   | Lx-90  |                        |          |
+| bohr   | Lx-91  |                        |          |
+| bohr   | Lx-92  |                        |          |
+| bohr   | Lx-93  |                        |          |
+| bohr   | Lx-94  |                        |          |
+| bohr   | Lx-95  |                        |          |
+| bohr   | Lx-96  |                        |          |
+| bohr   | N-80   |                        |          |
+| bohr   | N-81   |                        |          |
+| bohr   | N-82   |                        |          |
+| bohr   | N-83   |                        |          |
+| bohr   | N-84   |                        |          |
+| bohr   | N-85   |                        |          |
+| bohr   | N-86   |                        |          |
+| bohr   | N-87   |                        |          |
+| bohr   | N-88   |                        |          |
+| bohr   | N-89   |                        |          |
+| bohr   | N-90   |                        |          |
+| bohr   | N-91   |                        |          |
+| bohr   | N-92   |                        |          |
+| bohr   | N-93   |                        |          |
+| bohr   | N-94   |                        |          |
+| bohr   | N-95   |                        |          |
+| bohr   | N-96   |                        |          |
+| bohr   | U-83   |                        |          |
+| bohr   | U-84   |                        |          |
+| bohr   | U-85   |                        |          |
+| bohr   | U-86   |                        |          |
+| bohr   | U-87   |                        |          |
+| bohr   | U-88   |                        |          |
+| bohr   | U-89   |                        |          |
+| bohr   | U-90   |                        |          |
+| bohr   | U-91   |                        |          |
+| bohr   | U-92   |                        |          |
+| bohr   | U-93   |                        |          |
+| bohr   | U-94   |                        |          |
+| bohr   | U-95   |                        |          |
+| bohr   | U-96   |                        |          |
+| bohr   | U-97   |                        |          |
+| bohr   | U-98   |                        |          |
+| bohr   | U-99   |                        |          |
+| bohr   | Vl-83  |                        |          |
+| bohr   | Vl-84  |                        |          |
+| bohr   | Vl-85  |                        |          |
+| bohr   | Vl-86  |                        |          |
+| bohr   | Vl-87  |                        |          |
+| bohr   | Vl-88  |                        |          |
+| bohr   | Vl-89  |                        |          |
+| bohr   | Vl-90  |                        |          |
+| bohr   | Vl-91  |                        |          |
+| bohr   | Vl-92  |                        |          |
+| bohr   | Vl-93  |                        |          |
+| bohr   | Vl-94  |                        |          |
+| bohr   | Vl-95  |                        |          |
+| bohr   | Vl-96  |                        |          |
+| bohr   | Vl-97  |                        |          |
+| bohr   | Vl-98  |                        |          |
+| bohr   | Vl-99  |                        |          |
+| bohr   | Vl-100 |                        |          |
+| bohr   | Vl-101 |                        |          |
+| bohr   | Se-84  |                        |          |
+| bohr   | Se-85  |                        |          |
+| bohr   | Se-86  |                        |          |
+| bohr   | Se-87  |                        |          |
+| bohr   | Se-88  |                        |          |
+| bohr   | Se-89  |                        |          |
+| bohr   | Se-90  |                        |          |
+| bohr   | Se-91  |                        |          |
+| bohr   | Se-92  |                        |          |
+| bohr   | Se-93  |                        |          |
+| bohr   | Se-94  |                        |          |
+| bohr   | Se-95  |                        |          |
+| bohr   | Se-96  |                        |          |
+| bohr   | Se-97  |                        |          |
+| bohr   | Se-98  |                        |          |
+| bohr   | Se-99  |                        |          |
+| bohr   | Se-100 |                        |          |
+| bohr   | Se-101 |                        |          |
+| bohr   | Se-102 |                        |          |
+| bohr   | Se-103 |                        |          |
+| bohr   | Se-104 |                        |          |
+| bohr   | Nm-86  |                        |          |
+| bohr   | Nm-87  |                        |          |
+| bohr   | Nm-88  |                        |          |
+| bohr   | Nm-89  |                        |          |
+| bohr   | Nm-90  |                        |          |
+| bohr   | Nm-91  |                        |          |
+| bohr   | Nm-92  |                        |          |
+| bohr   | Nm-93  |                        |          |
+| bohr   | Nm-94  |                        |          |
+| bohr   | Nm-95  |                        |          |
+| bohr   | Nm-96  |                        |          |
+| bohr   | Nm-97  |                        |          |
+| bohr   | Nm-98  |                        |          |
+| bohr   | Nm-99  |                        |          |
+| bohr   | Nm-100 |                        |          |
+| bohr   | Nm-101 |                        |          |
+| bohr   | Nm-102 |                        |          |
+| bohr   | Nm-103 |                        |          |
+| bohr   | Nm-104 |                        |          |
+| bohr   | Nm-105 |                        |          |
+| bohr   | Dd-88  |                        |          |
+| bohr   | Dd-89  |                        |          |
+| bohr   | Dd-90  |                        |          |
+| bohr   | Dd-91  |                        |          |
+| bohr   | Dd-92  |                        |          |
+| bohr   | Dd-93  |                        |          |
+| bohr   | Dd-94  |                        |          |
+| bohr   | Dd-95  |                        |          |
+| bohr   | Dd-96  |                        |          |
+| bohr   | Dd-97  |                        |          |
+| bohr   | Dd-98  |                        |          |
+| bohr   | Dd-99  |                        |          |
+| bohr   | Dd-100 |                        |          |
+| bohr   | Dd-101 |                        |          |
+| bohr   | Dd-102 |                        |          |
+| bohr   | Dd-103 |                        |          |
+| bohr   | Dd-104 |                        |          |
+| bohr   | Dd-105 |                        |          |
+| bohr   | Dd-106 |                        |          |
+| bohr   | Dd-107 |                        |          |
+| bohr   | Ok-89  |                        |          |
+| bohr   | Ok-90  |                        |          |
+| bohr   | Ok-91  |                        |          |
+| bohr   | Ok-92  |                        |          |
+| bohr   | Ok-93  |                        |          |
+| bohr   | Ok-94  |                        |          |
+| bohr   | Ok-95  |                        |          |
+| bohr   | Ok-96  |                        |          |
+| bohr   | Ok-97  |                        |          |
+| bohr   | Ok-98  |                        |          |
+| bohr   | Ok-99  |                        |          |
+| bohr   | Ok-100 |                        |          |
+| bohr   | Ok-101 |                        |          |
+| bohr   | Ok-102 |                        |          |
+| bohr   | Ok-103 |                        |          |
+| bohr   | Ok-104 |                        |          |
+| bohr   | Ok-105 |                        |          |
+| bohr   | Ok-106 |                        |          |
+| bohr   | Ok-107 |                        |          |
+| bohr   | Ok-108 |                        |          |
+| bohr   | Da-90  |                        |          |
+| bohr   | Da-91  |                        |          |
+| bohr   | Da-92  |                        |          |
+| bohr   | Da-93  |                        |          |
+| bohr   | Da-94  |                        |          |
+| bohr   | Da-95  |                        |          |
+| bohr   | Da-96  |                        |          |
+| bohr   | Da-97  |                        |          |
+| bohr   | Da-98  |                        |          |
+| bohr   | Da-99  |                        |          |
+| bohr   | Da-100 |                        |          |
+| bohr   | Da-101 |                        |          |
+| bohr   | Da-102 |                        |          |
+| bohr   | Da-103 |                        |          |
+| bohr   | Da-104 |                        |          |
+| bohr   | Da-105 |                        |          |
+| bohr   | Da-106 |                        |          |
+| bohr   | Da-107 |                        |          |
+| bohr   | Da-108 |                        |          |
+| bohr   | Da-109 |                        |          |
+| bohr   | Da-110 |                        |          |
+| bohr   | Da-111 |                        |          |
+| bohr   | Da-112 |                        |          |
+| bohr   | S-94   |                        |          |
+| bohr   | S-95   |                        |          |
+| bohr   | S-96   |                        |          |
+| bohr   | S-97   |                        |          |
+| bohr   | S-98   |                        |          |
+| bohr   | S-99   |                        |          |
+| bohr   | S-100  |                        |          |
+| bohr   | S-101  |                        |          |
+| bohr   | S-102  | 257.229163909497357575 |   2.5219 |
+| bohr   | S-103  |                        |          |
+| bohr   | S-104  |                        |          |
+| bohr   | S-105  |                        |          |
+| bohr   | S-106  |                        |          |
+| bohr   | S-107  |                        |          |
+| bohr   | S-108  |                        |          |
+| bohr   | S-109  |                        |          |
+| bohr   | S-112  |                        |          |
+| bohr   | S-113  |                        |          |
+| bohr   | Z-95   |                        |          |
+| bohr   | Z-96   |                        |          |
+| bohr   | Z-97   |                        |          |
+| bohr   | Z-98   |                        |          |
+| bohr   | Z-99   |                        |          |
+| bohr   | Z-100  |                        |          |
+| bohr   | Z-101  |                        |          |
+| bohr   | Z-102  |                        |          |
+| bohr   | Z-103  |                        |          |
+| bohr   | Z-104  |                        |          |
+| bohr   | Z-105  |                        |          |
+| bohr   | Z-106  |                        |          |
+| bohr   | Z-107  |                        |          |
+| bohr   | Z-108  |                        |          |
+| bohr   | Z-109  |                        |          |
+| bohr   | Z-110  |                        |          |
+| bohr   | Z-111  |                        |          |
+| bohr   | Z-112  |                        |          |
+| bohr   | Z-113  |                        |          |
+| bohr   | Z-114  |                        |          |
+| bohr   | Cv-97  |                        |          |
+| bohr   | Cv-98  |                        |          |
+| bohr   | Cv-99  |                        |          |
+| bohr   | Cv-100 |                        |          |
+| bohr   | Cv-101 |                        |          |
+| bohr   | Cv-102 |                        |          |
+| bohr   | Cv-103 |                        |          |
+| bohr   | Cv-104 |                        |          |
+| bohr   | Cv-105 |                        |          |
+| bohr   | Cv-106 |                        |          |
+| bohr   | Cv-107 |                        |          |
+| bohr   | Cv-108 |                        |          |
+| bohr   | Cv-109 |                        |          |
+| bohr   | Cv-110 |                        |          |
+| bohr   | Cv-111 |                        |          |
+| bohr   | Cv-114 |                        |          |
+| bohr   | Cv-115 |                        |          |
+| bohr   | Cv-116 |                        |          |
+| bohr   | Cv-117 |                        |          |
+| bohr   | Cv-118 |                        |          |
+| bohr   | Vt-98  |                        |          |
+| bohr   | Vt-99  |                        |          |
+| bohr   | Vt-100 |                        |          |
+| bohr   | Vt-101 |                        |          |
+| bohr   | Vt-102 |                        |          |
+| bohr   | Vt-103 |                        |          |
+| bohr   | Vt-104 |                        |          |
+| bohr   | Vt-105 |                        |          |
+| bohr   | Vt-106 |                        |          |
+| bohr   | Vt-107 |                        |          |
+| bohr   | Vt-108 |                        |          |
+| bohr   | Vt-109 |                        |          |
+| bohr   | Vt-110 |                        |          |
+| bohr   | Vt-111 |                        |          |
+| bohr   | Vt-112 |                        |          |
+| bohr   | Vt-119 |                        |          |
+| bohr   | Vt-120 |                        |          |
+| bohr   | Ek-99  |                        |          |
+| bohr   | Ek-100 |                        |          |
+| bohr   | Ek-101 |                        |          |
+| bohr   | Ek-102 |                        |          |
+| bohr   | Ek-103 |                        |          |
+| bohr   | Ek-104 |                        |          |
+| bohr   | Ek-105 |                        |          |
+| bohr   | Ek-106 |                        |          |
+| bohr   | Ek-107 |                        |          |
+| bohr   | Ek-108 |                        |          |
+| bohr   | Ek-109 |                        |          |
+| bohr   | Ek-110 |                        |          |
+| bohr   | Ek-111 |                        |          |
+| bohr   | Ek-112 |                        |          |
+| bohr   | Ek-113 |                        |          |
+| bohr   | Ek-119 |                        |          |
+| bohr   | Ek-120 |                        |          |
+| bohr   | Ek-121 |                        |          |
+| bohr   | Ek-122 |                        |          |
+| bohr   | Ji-103 |                        |          |
+| bohr   | Ji-104 |                        |          |
+| bohr   | Ji-105 |                        |          |
+| bohr   | Ji-106 |                        |          |
+| bohr   | Ji-107 |                        |          |
+| bohr   | Ji-108 |                        |          |
+| bohr   | Ji-109 |                        |          |
+| bohr   | Ji-110 |                        |          |
+| bohr   | Ji-111 |                        |          |
+| bohr   | Ji-112 |                        |          |
+| bohr   | Ji-113 |                        |          |
+| bohr   | Ji-114 |                        |          |
+| bohr   | Ji-121 |                        |          |
+| bohr   | Ji-122 |                        |          |
+| bohr   | Ji-123 |                        |          |
+| bohr   | Ji-124 |                        |          |
+| bohr   | Aw-104 |                        |          |
+| bohr   | Aw-105 |                        |          |
+| bohr   | Aw-106 |                        |          |
+| bohr   | Aw-107 |                        |          |
+| bohr   | Aw-108 |                        |          |
+| bohr   | Aw-109 |                        |          |
+| bohr   | Aw-110 |                        |          |
+| bohr   | Aw-111 |                        |          |
+| bohr   | Aw-112 |                        |          |
+| bohr   | Aw-113 |                        |          |
+| bohr   | Aw-114 |                        |          |
+| bohr   | Aw-115 |                        |          |
+| bohr   | Aw-124 |                        |          |
+| bohr   | Aw-125 |                        |          |
+| bohr   | Kn-106 |                        |          |
+| bohr   | Kn-107 |                        |          |
+| bohr   | Kn-108 |                        |          |
+| bohr   | Kn-109 |                        |          |
+| bohr   | Kn-110 |                        |          |
+| bohr   | Kn-111 |                        |          |
+| bohr   | Kn-112 |                        |          |
+| bohr   | Kn-113 |                        |          |
+| bohr   | Kn-114 |                        |          |
+| bohr   | Kn-115 |                        |          |
+| bohr   | Kn-116 |                        |          |
+| bohr   | Ha-108 |                        |          |
+| bohr   | Ha-109 |                        |          |
+| bohr   | Ha-110 |                        |          |
+| bohr   | Ha-111 |                        |          |
+| bohr   | Ha-112 |                        |          |
+| bohr   | Ha-113 |                        |          |
+| bohr   | Ha-114 |                        |          |
+| bohr   | Ha-115 |                        |          |
+| bohr   | Ha-116 |                        |          |
+| bohr   | Ha-117 |                        |          |
+| bohr   | Ax-109 |                        |          |
+| bohr   | Ax-110 |                        |          |
+| bohr   | Ax-111 |                        |          |
+| bohr   | I-113  |                        |          |
+| bohr   | I-114  |                        |          |
+| bohr   | I-115  |                        |          |
+| bohr   | Jb-116 |                        |          |
+| bohr   | Go-117 |                        |          |
+| bohr   | Go-118 |                        |          |
+| bohr   | X-119  |                        |          |
+| bohr   | Eh-123 |                        |          |
+| bohr   | Eh-124 |                        |          |
+| bohr   | Ys-125 |                        |          |
+
+|universe|isotope | NRG from Annihilation  | NRG/Mass |
+| alpha  | Ju-1   | 1.0                    |   1.0000 |
+| alpha  | Ju-2   | 2.29739670999407001    |   1.1487 |
+| alpha  | Ju-3   | 3.737192818846551975   |   1.2457 |
+| alpha  |  W-4   | 5.278031643091577029   |   1.3195 |
+| alpha  |  W-5   | 6.898648307306074151   |   1.3797 |
+| alpha  | Cq-5   | 6.898648307306074151   |   1.3797 |
+| alpha  | Cq-6   | 8.585814486631532997   |   1.4310 |
+| alpha  | Cq-7   | 10.330412131161864483  |   1.4758 |
+| alpha  | Af-7   | 10.330412131161864483  |   1.4758 |
+| alpha  | Af-8   | 12.125732532083184647  |   1.5157 |
+| alpha  | Af-9   | 13.966610165238237049  |   1.5518 |
+| alpha  | Af-10  |                        |          |
+| alpha  | Xl-9   | 13.966610165238237049  |   1.5518 |
+| alpha  | Xl-10  | 15.848931924611134823  |   1.5849 |
+| alpha  | Xl-11  | 17.769336928223958001  |   1.6154 |
+| alpha  | Xl-12  |                        |          |
+| alpha  | Pq-10  | 15.848931924611134823  |   1.5849 |
+| alpha  | Pq-11  |                        |          |
+| alpha  | Pq-12  | 19.725021954206709142  |   1.6438 |
+| alpha  | Pq-13  | 21.713609480352535126  |   1.6703 |
+| alpha  | Pq-14  | 23.733054843014096707  |   1.6952 |
+| alpha  | Pq-15  | 25.781578913812181624  |   1.7188 |
+| alpha  | Zz-13  | 21.713609480352535126  |   1.6703 |
+| alpha  | Zz-14  | 23.733054843014096707  |   1.6952 |
+| alpha  | Zz-15  |                        |          |
+| alpha  | Zz-16  |                        |          |
+| alpha  | Dx-14  |                        |          |
+| alpha  | Dx-15  | 25.781578913812181624  |   1.7188 |
+| alpha  | Dx-16  | 27.857618025475972418  |   1.7411 |
+| alpha  | Dx-17  | 29.959785913149389227  |   1.7623 |
+| alpha  | Dx-18  |                        |          |
+| alpha  | Dx-19  |                        |          |
+| alpha  | Pm-17  | 29.959785913149389227  |   1.7623 |
+| alpha  | Pm-18  | 32.086844243388060378  |   1.7826 |
+| alpha  | Pm-19  | 34.237679419025703798  |   1.8020 |
+| alpha  | Pm-20  |                        |          |
+| alpha  | Pm-21  |                        |          |
+| alpha  |  M-19  |                        |          |
+| alpha  |  M-20  | 36.411284060521605247  |   1.8206 |
+| alpha  |  M-21  |                        |          |
+| alpha  |  M-22  | 40.823216197677855316  |   1.8556 |
+| alpha  |  M-23  | 43.059938302761720542  |   1.8722 |
+| alpha  | Fw-21  |                        |          |
+| alpha  | Fw-22  |                        |          |
+| alpha  | Fw-23  |                        |          |
+| alpha  | Fw-24  |                        |          |
+| alpha  | Fw-25  | 47.591348467896962197  |   1.9037 |
+| alpha  | Fw-26  |                        |          |
+| alpha  | Pt-22  |                        |          |
+| alpha  | Pt-23  |                        |          |
+| alpha  | Pt-24  | 45.316200542155295072  |   1.8882 |
+| alpha  | Pt-25  | 47.591348467896962197  |   1.9037 |
+| alpha  | Pt-26  | 49.884774982257962417  |   1.9186 |
+| alpha  | Pt-27  |                        |          |
+| alpha  | Pt-28  |                        |          |
+| alpha  |  S-24  |                        |          |
+| alpha  |  S-25  | 47.591348467896962197  |   1.9037 |
+| alpha  |  S-26  | 49.884774982257962417  |   1.9186 |
+| alpha  |  S-27  |                        |          |
+| alpha  |  S-28  |                        |          |
+| alpha  |  S-29  |                        |          |
+| alpha  |  S-30  |                        |          |
+| alpha  | Zq-26  |                        |          |
+| alpha  | Zq-27  |                        |          |
+| alpha  | Zq-28  |                        |          |
+| alpha  | Zq-29  |                        |          |
+| alpha  | Zq-30  |                        |          |
+| alpha  | Zq-31  |                        |          |
+| alpha  | Zq-32  | 63.999999999999999967  |   2.0000 |
+| alpha  | Xc-28  |                        |          |
+| alpha  | Xc-29  |                        |          |
+| alpha  | Xc-30  | 59.230514575044595251  |   1.9744 |
+| alpha  | Xc-31  | 61.607563394598196647  |   1.9873 |
+| alpha  | Xc-32  |                        |          |
+| alpha  | Xc-33  |                        |          |
+| alpha  | Xc-34  | 68.829513588996091335  |   2.0244 |
+| alpha  | Gy-30  |                        |          |
+| alpha  | Gy-31  |                        |          |
+| alpha  | Gy-32  |                        |          |
+| alpha  | Gy-33  |                        |          |
+| alpha  | Gy-34  | 68.829513588996091335  |   2.0244 |
+| alpha  | Gy-35  |                        |          |
+| alpha  | Gy-36  |                        |          |
+| alpha  |  D-32  |                        |          |
+| alpha  |  D-33  |                        |          |
+| alpha  |  D-34  |                        |          |
+| alpha  |  D-35  |                        |          |
+| alpha  |  D-36  |                        |          |
+| alpha  |  D-37  | 76.180193049705138246  |   2.0589 |
+| alpha  |  D-38  |                        |          |
+| alpha  |  D-39  |                        |          |
+| alpha  | Fj-34  |                        |          |
+| alpha  | Fj-35  |                        |          |
+| alpha  | Fj-36  |                        |          |
+| alpha  | Fj-37  | 76.180193049705138246  |   2.0589 |
+| alpha  | Fj-38  |                        |          |
+| alpha  | Fj-39  |                        |          |
+| alpha  | Fj-40  |                        |          |
+| alpha  | Fj-41  |                        |          |
+| alpha  |  O-36  |                        |          |
+| alpha  |  O-37  |                        |          |
+| alpha  |  O-38  |                        |          |
+| alpha  |  O-39  |                        |          |
+| alpha  |  O-40  |                        |          |
+| alpha  |  O-41  |                        |          |
+| alpha  |  O-42  |                        |          |
+| alpha  |  O-43  |                        |          |
+| alpha  |  C-38  |                        |          |
+| alpha  |  C-39  |                        |          |
+| alpha  |  C-40  |                        |          |
+| alpha  |  C-41  |                        |          |
+| alpha  |  C-42  |                        |          |
+| alpha  |  C-43  |                        |          |
+| alpha  |  C-44  |                        |          |
+| alpha  |  C-45  |                        |          |
+| alpha  |  E-40  |                        |          |
+| alpha  |  E-41  |                        |          |
+| alpha  |  E-42  |                        |          |
+| alpha  |  E-43  |                        |          |
+| alpha  |  E-44  |                        |          |
+| alpha  |  E-45  |                        |          |
+| alpha  |  E-46  |                        |          |
+| alpha  |  E-47  |                        |          |
+| alpha  |  E-48  |                        |          |
+| alpha  |  A-42  |                        |          |
+| alpha  |  A-43  |                        |          |
+| alpha  |  A-44  |                        |          |
+| alpha  |  A-45  |                        |          |
+| alpha  |  A-46  |                        |          |
+| alpha  |  A-47  |                        |          |
+| alpha  |  A-48  |                        |          |
+| alpha  |  A-49  |                        |          |
+| alpha  |  A-50  |                        |          |
+| alpha  | Aw-44  |                        |          |
+| alpha  | Aw-45  |                        |          |
+| alpha  | Aw-46  |                        |          |
+| alpha  | Aw-47  |                        |          |
+| alpha  | Aw-48  |                        |          |
+| alpha  | Aw-49  |                        |          |
+| alpha  | Aw-50  | 109.33620739432780549  |   2.1867 |
+| alpha  | Aw-51  |                        |          |
+| alpha  | Aw-52  |                        |          |
+| alpha  | Oc-46  |                        |          |
+| alpha  | Oc-47  |                        |          |
+| alpha  | Oc-48  |                        |          |
+| alpha  | Oc-49  |                        |          |
+| alpha  | Oc-50  |                        |          |
+| alpha  | Oc-51  |                        |          |
+| alpha  | Oc-52  |                        |          |
+| alpha  | Oc-53  |                        |          |
+| alpha  | Oc-54  |                        |          |
+| alpha  | Nb-47  |                        |          |
+| alpha  | Nb-48  |                        |          |
+| alpha  | Nb-49  |                        |          |
+| alpha  | Nb-50  |                        |          |
+| alpha  | Nb-51  |                        |          |
+| alpha  | Nb-52  |                        |          |
+| alpha  | Nb-53  |                        |          |
+| alpha  | Nb-54  | 119.914723885837684611 |   2.2206 |
+| alpha  | Nb-55  |                        |          |
+| alpha  | Nb-56  |                        |          |
+| alpha  | Xk-50  |                        |          |
+| alpha  | Xk-51  |                        |          |
+| alpha  | Xk-52  |                        |          |
+| alpha  | Xk-53  |                        |          |
+| alpha  | Xk-54  |                        |          |
+| alpha  | Xk-55  |                        |          |
+| alpha  | Xk-56  |                        |          |
+| alpha  | Xk-57  |                        |          |
+| alpha  | Xk-58  |                        |          |
+| alpha  | Xk-59  |                        |          |
+| alpha  | Ic-51  |                        |          |
+| alpha  | Ic-52  |                        |          |
+| alpha  | Ic-53  |                        |          |
+| alpha  | Ic-54  |                        |          |
+| alpha  | Ic-55  |                        |          |
+| alpha  | Ic-56  |                        |          |
+| alpha  | Ic-57  |                        |          |
+| alpha  | Ic-58  |                        |          |
+| alpha  | Ic-59  |                        |          |
+| alpha  | Ic-60  |                        |          |
+| alpha  | Ic-61  |                        |          |
+| alpha  | Ic-62  |                        |          |
+| alpha  | Yp-54  |                        |          |
+| alpha  | Yp-55  |                        |          |
+| alpha  | Yp-56  |                        |          |
+| alpha  | Yp-57  |                        |          |
+| alpha  | Yp-58  |                        |          |
+| alpha  | Yp-59  |                        |          |
+| alpha  | Yp-60  |                        |          |
+| alpha  | Yp-61  |                        |          |
+| alpha  | Yp-62  |                        |          |
+| alpha  | Yp-63  |                        |          |
+| alpha  | Jx-56  |                        |          |
+| alpha  | Jx-57  |                        |          |
+| alpha  | Jx-58  |                        |          |
+| alpha  | Jx-59  |                        |          |
+| alpha  | Jx-60  |                        |          |
+| alpha  | Jx-61  |                        |          |
+| alpha  | Jx-62  |                        |          |
+| alpha  | Jx-63  |                        |          |
+| alpha  | Jx-64  |                        |          |
+| alpha  | Jx-65  |                        |          |
+| alpha  | Hb-57  |                        |          |
+| alpha  | Hb-58  |                        |          |
+| alpha  | Hb-59  |                        |          |
+| alpha  | Hb-60  |                        |          |
+| alpha  | Hb-61  |                        |          |
+| alpha  | Hb-62  |                        |          |
+| alpha  | Hb-63  |                        |          |
+| alpha  | Hb-64  |                        |          |
+| alpha  | Hb-65  |                        |          |
+| alpha  | Hb-66  |                        |          |
+| alpha  | Hb-67  |                        |          |
+| alpha  | At-60  |                        |          |
+| alpha  | At-61  |                        |          |
+| alpha  | At-62  |                        |          |
+| alpha  | At-63  |                        |          |
+| alpha  | At-64  |                        |          |
+| alpha  | At-65  |                        |          |
+| alpha  | At-66  |                        |          |
+| alpha  | At-67  |                        |          |
+| alpha  | At-68  |                        |          |
+| alpha  | At-69  |                        |          |
+| alpha  | Ny-61  |                        |          |
+| alpha  | Ny-62  |                        |          |
+| alpha  | Ny-63  |                        |          |
+| alpha  | Ny-64  |                        |          |
+| alpha  | Ny-65  |                        |          |
+| alpha  | Ny-66  |                        |          |
+| alpha  | Ny-67  |                        |          |
+| alpha  | Ny-68  |                        |          |
+| alpha  | Ny-69  |                        |          |
+| alpha  | Ny-70  |                        |          |
+| alpha  | Ny-71  |                        |          |
+| alpha  | Ny-72  |                        |          |
+| alpha  | Pw-64  |                        |          |
+| alpha  | Pw-65  |                        |          |
+| alpha  | Pw-66  |                        |          |
+| alpha  | Pw-67  |                        |          |
+| alpha  | Pw-68  |                        |          |
+| alpha  | Pw-69  |                        |          |
+| alpha  | Pw-70  |                        |          |
+| alpha  | Pw-71  |                        |          |
+| alpha  | Pw-72  |                        |          |
+| alpha  | Pw-73  |                        |          |
+| alpha  | Pw-74  |                        |          |
+| alpha  | Gk-65  |                        |          |
+| alpha  | Gk-66  |                        |          |
+| alpha  | Gk-67  |                        |          |
+| alpha  | Gk-68  |                        |          |
+| alpha  | Gk-69  |                        |          |
+| alpha  | Gk-70  |                        |          |
+| alpha  | Gk-71  |                        |          |
+| alpha  | Gk-72  |                        |          |
+| alpha  | Gk-73  |                        |          |
+| alpha  | Gk-74  |                        |          |
+| alpha  | Gk-75  |                        |          |
+| alpha  | Gk-76  |                        |          |
+| alpha  | Gk-77  |                        |          |
+| alpha  | Qi-67  |                        |          |
+| alpha  | Qi-68  |                        |          |
+| alpha  | Qi-69  |                        |          |
+| alpha  | Qi-70  |                        |          |
+| alpha  | Qi-71  |                        |          |
+| alpha  | Qi-72  |                        |          |
+| alpha  | Qi-73  |                        |          |
+| alpha  | Qi-74  |                        |          |
+| alpha  | Qi-75  |                        |          |
+| alpha  | Qi-76  |                        |          |
+| alpha  | Qi-77  |                        |          |
+| alpha  | Qi-78  |                        |          |
+| alpha  | Xy-69  |                        |          |
+| alpha  | Xy-70  |                        |          |
+| alpha  | Xy-71  |                        |          |
+| alpha  | Xy-72  |                        |          |
+| alpha  | Xy-73  |                        |          |
+| alpha  | Xy-74  |                        |          |
+| alpha  | Xy-75  |                        |          |
+| alpha  | Xy-76  |                        |          |
+| alpha  | Xy-77  |                        |          |
+| alpha  | Xy-78  |                        |          |
+| alpha  | Xy-79  |                        |          |
+| alpha  | Gq-71  |                        |          |
+| alpha  | Gq-72  |                        |          |
+| alpha  | Gq-73  |                        |          |
+| alpha  | Gq-74  |                        |          |
+| alpha  | Gq-75  |                        |          |
+| alpha  | Gq-76  |                        |          |
+| alpha  | Gq-77  |                        |          |
+| alpha  | Gq-78  |                        |          |
+| alpha  | Gq-79  |                        |          |
+| alpha  | Gq-80  |                        |          |
+| alpha  | Bt-73  |                        |          |
+| alpha  | Bt-74  |                        |          |
+| alpha  | Bt-75  |                        |          |
+| alpha  | Bt-76  |                        |          |
+| alpha  | Bt-77  |                        |          |
+| alpha  | Bt-78  |                        |          |
+| alpha  | Bt-79  |                        |          |
+| alpha  | Bt-80  |                        |          |
+| alpha  | Bt-81  |                        |          |
+| alpha  |  H-75  |                        |          |
+| alpha  |  H-76  |                        |          |
+| alpha  |  H-77  |                        |          |
+| alpha  |  H-78  |                        |          |
+| alpha  |  H-79  |                        |          |
+| alpha  |  H-80  |                        |          |
+| alpha  |  H-81  |                        |          |
+| alpha  |  H-82  |                        |          |
+| alpha  |  U-77  |                        |          |
+| alpha  |  U-78  |                        |          |
+| alpha  |  U-79  |                        |          |
+| alpha  |  U-80  |                        |          |
+| alpha  |  U-81  |                        |          |
+| alpha  |  U-82  |                        |          |
+| alpha  |  U-83  |                        |          |
+| alpha  | Sq-79  |                        |          |
+| alpha  | Sq-80  |                        |          |
+| alpha  | Sq-81  |                        |          |
+| alpha  | Sq-82  |                        |          |
+| alpha  | Sq-83  |                        |          |
+| alpha  | Sq-84  |                        |          |
+| alpha  | Ua-83  |                        |          |
+| alpha  | Ua-84  |                        |          |
+| alpha  | Ua-85  |                        |          |
+
+Observe that the amount for isotopes with the same total mass produce the same amount of energy.
+
+[ ] This data should be in new files like annihilated_NRG.<universe>.otom
+
+[ ] QUESTION: Does the annihilated NRG value of each isotope somehow relate to the amount it takes to fission it or fuse it through fusion with another isotope? This needs analysis.
 
 
 2025-04-24 Apr.Thu 15:43:32 
