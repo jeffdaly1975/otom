@@ -1467,6 +1467,9 @@ my %hexhash=(
  "Qe-63" => "4ad065ce1ea282e3c4f7a073a6aac2cf4f335b764aadb8dffb85d72cb43b8fc1",
  "Ux-60" => "85a6b571927946bd311e502b0f5ce3e2e1006a920627beaf33328f9a6d614ebc",
  "Z-114" => "cb1676320868fd287dd96972b36543f778d73b55db4621ddd2f037c8f7a2ec2d",
+ "Ek-123"=> "462a245559adcce05de3c6abd710afd731214b0641c29dd8179f314ca5f00908",
+ "Vt-121"=> "f15ce561e1a8b3620aba2afd78f4eb316acafadb60eb5c051d65b81640996ff9",
+ "Vt-122"=> "bb6fd6c7697ca06bd321aa87da39f4e854b0f8f14fef005b11bf106b19ae74dc",
 );
 
 # query the blockchain via alchemy 
