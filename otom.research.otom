@@ -1,3 +1,34 @@
+2025-07-17 Jul.Thu 20:58:20
+
+[ ]   Vi-10⁺  + Da-90⁺   -> Ji-100?(?.???) | total:  9207.87
+[ ]   Vi-11⁺  + Da-90⁺   -> Ji-101?(?.???) | total:  9207.87
+[>]   Ct-13⁺  + Ok-89⁺   -> Ji-102?(?.???) | total:  7720.45
+[-]   Ct-13⁺  + Ok-90⁺   -> Ji-103⁺(0.285) | total:  7417.81
+
+[r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+[r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+[r]|  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        | decay, nuclear               | OTOMRO  362145 |
+[r]|  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        | decay, nuclear               | OTOMRO  109901 |
+[r]   Ct-13⁺ +  Ok-89⁺   +   5000  -> Ji-102⁺(0.20?)  => Ek-102 using 1535.75 nuclear+decay 
+total:  12719
+
+[r]|  Ro-22⁺ +  S-102ª   +[  2235.72*-  20000] => P-22 + Z-102        | decay, nuclear               | OTOMRO  229747 |
+[r]|  Ro-22⁺ +  Z-102ª   +[  2155.34*-   4000] => P-22 + Cv-102       | decay, nuclear               | OTOMRO  192731 |
+[r]|  Vi-10⁺ + Cv-102ª   +[  1136.59 -   3000] => P-22 + Dd-90        | decay, nuclear               | OTOMRO  305496 |
+[r]|  Ro-22⁺ +  Dd-90⁺   +[  1885.66 -   3000] => P-22 + Ok-90        | decay, nuclear               | OTOMRO  129985 |
+[r]|  Ro-22⁺ +  Ok-90⁺   +[  1790.06 -   6000] => P-22 + Da-90        | decay, nuclear               | OTOMRO  107988 |
+[r]   Vi-10⁺ +  Da-90⁺   +   5000  -> Ji-100⁺(0.28?)  => Ek-100 using 1112.73 decay+nuclear
+total:  14206
+
+[r]|  Ro-22⁺ +  S-102ª   +[  2235.72*-  20000] => P-22 + Z-102        | decay, nuclear               | OTOMRO  229747 |
+[r]|  Ro-22⁺ +  Z-102ª   +[  2155.34*-   4000] => P-22 + Cv-102       | decay, nuclear               | OTOMRO  192731 |
+[r]|  Vi-10⁺ + Cv-102ª   +[  1136.59 -   3000] => P-22 + Dd-90        | decay, nuclear               | OTOMRO  305496 |
+[r]|  Ro-22⁺ +  Dd-90⁺   +[  1885.66 -   3000] => P-22 + Ok-90        | decay, nuclear               | OTOMRO  129985 |
+[r]|  Ro-22⁺ +  Ok-90⁺   +[  1790.06 -   6000] => P-22 + Da-90        | decay, nuclear               | OTOMRO  107988 |
+[r]   Vi-11⁺ +  Da-90⁺   +   5000 -> Ji-101⁺(0.28?)  => Ek-101 using 1358.07 decay+nuclear
+total:  14206
+
+
 2025-07-16 Jul.Wed 08:30:51 I wonder if it would be helpful to make a reference table for how to find the isotope you are looking for in your massive collection in the OTOM app. 
 They are sorted by Token ID so it is hard to find what you want even searching for the otom name. 
 In Firefox I have the search set to "Highlight All" and "Whole Words" so when I search Aw it only finds Aw.
