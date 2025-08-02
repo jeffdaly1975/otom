@@ -1,3 +1,84 @@
+2025-08-02 Aug.Sat 13:48:22 [ ] next try V₂, V₃, V₄ and V₅?
+   |  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) |
+   |   Dz-7⁺ +  Mt-35∙   +[   964.63 -   5000] => V-42⁺ (0.879) |
+   |   Dz-9∙ +  Mt-34⁺   +[   991.11 -   5000] => V-43∙ (1.852) |
+   |  Ct-17⁻ +  Yu-27⁺   +[   838.45 -   5000] => V-44∙ (1.829) |
+   |  Gj-11∙ +   K-34∙   +[  1433.71 -   5000] => V-45⁻ (0.908) |
+   |  Ct-17⁻ +  Yu-29∙   +[  1171.59 -   5000] => V-46⁻ (0.852) |
+
+
+
+2025-08-02 Aug.Sat 12:49:46 how about Gd₂, Gd₃, Gd₄ and Gd₅?
+
+   |   Dz-7⁺ +  Mt-32⁺   +[   600.89 -   5000] => Gd-39⁺(0.829) |
+   |  Vi-10⁺ +  Nd-30ª   +[   611.82 -   5000] => Gd-40∙(1.820) |
+   |   Dz-7⁺ +   K-34∙   +[   844.52 -   5000] => Gd-41∙(1.847) |
+   |  Ct-17⁻ +  Cl-25⁺   +[   802.34 -   5000] => Gd-42∙(1.880) |
+   |  Ct-17⁻ +  Cl-26ª   +[   836.36 -   5000] => Gd-43⁻(0.898) |
+   |  Ct-17⁻ +  Cl-27∙   +[  1120.62 -   5000] => Gd-44⁻(0.864) |
+
+
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   600.89 -   5000] => Gd-39⁺               | used 575.39 [c] update recipe chains
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   600.89 -   5000] => Gd-39⁺               | used 575.39 [c] update recipe chains
+[r]   Gd-39⁺ +  Gd-39⁺   +    200 => ? Gd₂ ? <---SUCCESS! Makes Gd₂ using 79.33 metallic
+
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   575.39 -   5000] => Gd-39⁺               | used 574.14 [c] update recipe chains
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   575.39 -   5000] => Gd-39⁺               | used 574.14 [c] update recipe chains
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   575.39 -   5000] => Gd-39⁺               | used 574.14 [c] update recipe chains
+[r]   Gd-39⁺ +  Gd-39⁺ +  Gd-39⁺ + 300 => ? Gd₃ ? <---SUCCESS! Makes Gd₃ using 119.00 metallic
+
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   574.14 -   5000] => Gd-39⁺               | used 574.09 [c] update recipe chains
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   574.14 -   5000] => Gd-39⁺               | used 574.09 [c] update recipe chains
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   574.14 -   5000] => Gd-39⁺               | used 574.09 [c] update recipe chains
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   574.14 -   5000] => Gd-39⁺               | used 574.09 [c] update recipe chains
+[r]   Gd-39⁺ +  Gd-39⁺ +  Gd-39⁺ + Gd-39⁺ + 400 => ? Gd₄ ? <--SUCCESS! makes Gd₄ using 158.67 metallic
+
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   574.09 -   5000] => Gd-39⁺               |
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   574.09 -   5000] => Gd-39⁺               |
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   574.09 -   5000] => Gd-39⁺               |
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   574.09 -   5000] => Gd-39⁺               |
+[r]|   Dz-7⁺ +  Mt-32⁺   +[   574.09 -   5000] => Gd-39⁺               |
+[r]   Gd-39⁺ +  Gd-39⁺ +  Gd-39⁺ + Gd-39⁺ + Gd-39⁺ + 500 => ? Gd₅ ? SUCCESS using 198.33 metallic
+
+2025-08-02 Aug.Sat 10:48:15 Lets try making Dx₂, Dx₃, and Dx₄
+
+[r]|   Dz-7⁺ +  Nd-30ª   +[   594.14 -   5000] => Dx-37⁺               |
+[r]|   Dz-7⁺ +  Nd-30ª   +[   594.14 -   5000] => Dx-37⁺               |
+[r] Dx-37⁺ + Dx-37⁺ + 300 => ? Dx₂ <--SUCCESS! makes Dx₂ using 77.56 metallic
+
+[r]|   Dz-7⁺ +  Nd-30ª   +[   594.14 -   5000] => Dx-37⁺               |
+[r]|   Dz-7⁺ +  Nd-30ª   +[   594.14 -   5000] => Dx-37⁺               |
+[r]|   Dz-7⁺ +  Nd-30ª   +[   594.14 -   5000] => Dx-37⁺               |
+[r] Dx-37⁺ + Dx-37⁺ + Dx-37⁺ + 300 => ? Dx₃ <---SUCCESS! makes Dx₃ using 108.83 metallic
+
+[r]|   As-5⁺ +   K-34∙   +[   689.61 -   5000] => Dx-39∙               | used 689.11 [c] update recipe chains
+[r]|   As-5⁺ +   K-34∙   +[   689.61 -   5000] => Dx-39∙               | used 689.11 [c] update recipe chains
+[r]|   As-5⁺ +   K-34∙   +[   689.61 -   5000] => Dx-39∙               | used 689.11 [c] update recipe chains
+[r]|   As-5⁺ +   K-34∙   +[   689.61 -   5000] => Dx-39∙               | used 689.11 [c] update recipe chains
+[r] Dx-39∙ + Dx-39∙ + Dx-39∙ + Dx-39∙ + 400 => ? Dx₄ <---SUCCESS! makes Dx₄ using 151.87 metallic
+
+
+2025-08-01 Aug.Fri 20:37:17 Lets attemp to make Nd₅
+
+Nd-31∙ * 5 + 10000 => ?
+
+ [r]   Ei-5∙ +  Cl-26ª   + 707 => Nd-31               |
+ [r]   Ei-5∙ +  Cl-26ª   + 707 => Nd-31               |
+ [r]   Ei-5∙ +  Cl-26ª   + 707 => Nd-31               |
+ [r]   Ei-5∙ +  Cl-26ª   + 707 => Nd-31               |
+ [r]   Ei-5∙ +  Cl-26ª   + 707 => Nd-31               |
+ [f]  Nd-31∙ +  Nd-31∙ + Nd-31∙ + Nd-31∙ + Nd-31∙ + 10000 => ? FAILED. Get 5*Nd-31 back + 9500 NRG
+
+Hmm. Lets try to make Dx₅ instead:
+
+[r]|   Dz-7⁺ +  Nd-30ª   +[   594.24 -   5000] => Dx-37⁺               | used 594.14 [c] update recipe chains
+[r]|   Ei-4∙ +  Mt-34⁺   +[   785.50 -   5000] => Dx-38⁺               | used 785.00 [c] update recipe chains
+[r]|   As-5⁺ +   K-34∙   +[   699.86 -   5000] => Dx-39∙               | used 689.61 [c] update recipe chains
+[r]|  Ct-17⁻ +  Ro-23ª   +[   759.89 -   5000] => Dx-40⁻               | used 759.39 [c] update recipe chains
+[r]|  Ct-17⁻ +  Ro-24ª   +[   824.20 -   5000] => Dx-41⁻               | used 815.45 [c] update recipe chains
+
+[r] Dx-37 + Dx-38 + Dx-39 + Dx-40 + Dx-41 + 2000 => Dx₅ <---SUCCESS!
+
 2025-07-22 Jul.Tue 21:04:10 MOVED 30x Af-7 OTOMs from jdw7 0x454ee7 to main wallet. I had accidentally used them all up crafting PkAx. Hope I didn't lose the full set status in that short period of time!
 
 Otoms Contract Page: https://shapescan.xyz/token/0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3?tab=read_write_proxy
