@@ -1,4 +1,14 @@
+2025-08-07 Aug.Thu 09:36:58 New discovery! 730? isotopes in Bohr?
 
+OTOMRO 445674: Z-117⁻ + 12000 => Pb-53 + Qe-64 + 2,158.9477218951251416 using 9841.05 nuclear 
+
+[ ] add to files
+
+2025-08-06 Aug.Wed 18:09:02 New discovery! 729? isotopes in Bohr?
+
+OTOMRO 444960:   C-53⁺ +  Yu-26⁺   +   5000 => N-79  + 3,264.784277675966677634 using 1735.22 decay+nuclear
+
+[ ] add to files
 
 2025-08-05 Aug.Tue 09:05:31 3 new discoveries so 728 isotopes in Universe Bohr
 
@@ -7,6 +17,10 @@ OTOMRO 437685:   T-19⁻   + Lx-96⁻   +   5000  -> Da-115⁻ +3,052.8434055755
 OTOMRO 437682:   Vi-15⁻  + Lx-96⁻   +   5000  -> Dd-111⁻ +3,402.045539396860021952 => Ok-111 using 1597.95 nuclear+decay
 
 [ ] add to files
+
+try:
+[ ]  S-115⁻ + 15000 => ? Pb-53 + Pg-62
+[r]  Z-117⁻ + 12000 => ? Pb-54 + Qe-63 <---SUCCESS it makes Pb-53 + Qe-64 + 2,158.9477218951251416 using 9841.05 nuclear OTOMRO 445674
 
 2025-08-04 Aug.Mon 20:33:20
 
@@ -2449,7 +2463,7 @@ total: 42145 NRG
 [r]|  Ok-89⁺             +[  6067.65 -  10000] => Uq-41 + Ux-48       |
 [r]|  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         |
 [r]|  Ux-48⁺             +[  2672.08 -  10000] => Ro-22 + Yu-26       |
-[*]|   C-53⁺ +  Yu-26⁺   +   5000 ->   U-79⁺(0.786) => N-79    
+[r]|   C-53⁺ +  Yu-26⁺   +   5000 ->   U-79⁺(0.786) => N-79     <---SUCCESS! makes N-79 using 1735.22 decay+nuclear
 total: 37513 NRG
 
 [ ]|  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
@@ -2504,7 +2518,7 @@ total: 25277 NRG
 [r]|  Eb-22∙ + Ok-104ª   +[  3133.06 -   5000] => P-22 + Dd-104       |
 [r]|   P-24⁻ + Dd-104⁻   +[  2543.30 -   4000] => P-22 + Dd-106       |
 [r]| Dd-106⁻             +[  9036.32 -  10000] => Uq-49 + L-57        |
-[*]|   L-57⁻ +  Ct-17⁻   +   5000 ->   F-74⁻(0.79?) => ? F-74    
+[f]|   L-57⁻ +  Ct-17⁻   +   5000 ->   F-74⁻(0.79?) => ? F-74    <---NOPE F-74⁻ decays to Gy-74 instantly using 1433.26 decay+nuclear, but we learned something
 total: 26419 NRG
 
 
@@ -10335,7 +10349,7 @@ If anything, Aw-112 would alpha decay to P-22+Se-90
 So it seems that Ro-22 fused with Aw-112 making ??-134ª which immediately alpha decays into P-22 + Kn-112
 
 
-2025-05-13 May.Tue 15:11:30 I only have these isotopes to add to my chains.borh.otom file:
+2025-05-13 May.Tue 15:11:30 I only have these isotopes to add to my chains.bohr.otom file:
 
 [c] Cl-30
 [c] Cj-81
