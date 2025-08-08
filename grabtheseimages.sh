@@ -580,6 +580,7 @@ grab_token_image "Qe"   "60" "bohr"  $universe_bohr
 grab_token_image "Qe"   "61" "bohr"  $universe_bohr
 grab_token_image "Qe"   "62" "bohr"  $universe_bohr
 grab_token_image "Qe"   "63" "bohr"  $universe_bohr
+grab_token_image "Qe"   "64" "bohr"  $universe_bohr
 grab_token_image "C"    "53" "bohr"  $universe_bohr
 grab_token_image "C"    "54" "bohr"  $universe_bohr
 grab_token_image "C"    "55" "bohr"  $universe_bohr
@@ -763,6 +764,7 @@ grab_token_image "Lx"   "93" "bohr"  $universe_bohr
 grab_token_image "Lx"   "94" "bohr"  $universe_bohr
 grab_token_image "Lx"   "95" "bohr"  $universe_bohr
 grab_token_image "Lx"   "96" "bohr"  $universe_bohr
+grab_token_image "N"    "79" "bohr"  $universe_bohr
 grab_token_image "N"    "80" "bohr"  $universe_bohr
 grab_token_image "N"    "81" "bohr"  $universe_bohr
 grab_token_image "N"    "82" "bohr"  $universe_bohr
@@ -900,6 +902,7 @@ grab_token_image "Ok"  "107" "bohr"  $universe_bohr
 grab_token_image "Ok"  "108" "bohr"  $universe_bohr
 grab_token_image "Ok"  "109" "bohr"  $universe_bohr
 grab_token_image "Ok"  "110" "bohr"  $universe_bohr
+grab_token_image "Ok"  "111" "bohr"  $universe_bohr
 grab_token_image "Da"   "90" "bohr"  $universe_bohr
 grab_token_image "Da"   "91" "bohr"  $universe_bohr
 grab_token_image "Da"   "92" "bohr"  $universe_bohr
@@ -943,6 +946,7 @@ grab_token_image "S"   "109" "bohr"  $universe_bohr
 grab_token_image "S"   "112" "bohr"  $universe_bohr
 grab_token_image "S"   "113" "bohr"  $universe_bohr
 grab_token_image "S"   "114" "bohr"  $universe_bohr
+grab_token_image "S"   "115" "bohr"  $universe_bohr
 grab_token_image "Z"    "95" "bohr"  $universe_bohr
 grab_token_image "Z"    "96" "bohr"  $universe_bohr
 grab_token_image "Z"    "97" "bohr"  $universe_bohr
@@ -965,6 +969,7 @@ grab_token_image "Z"   "113" "bohr"  $universe_bohr
 grab_token_image "Z"   "114" "bohr"  $universe_bohr
 grab_token_image "Z"   "115" "bohr"  $universe_bohr
 grab_token_image "Z"   "116" "bohr"  $universe_bohr
+grab_token_image "Z"   "117" "bohr"  $universe_bohr
 grab_token_image "Cv"   "97" "bohr"  $universe_bohr
 grab_token_image "Cv"   "98" "bohr"  $universe_bohr
 grab_token_image "Cv"   "99" "bohr"  $universe_bohr

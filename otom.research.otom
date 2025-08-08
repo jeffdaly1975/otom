@@ -1,14 +1,16 @@
+2025-08-08 Aug.Fri 16:47:44 [ ] I think i messed up some of the data entry for Z-117 => Pb-53+Qe-64 conflating it with S-115=>Pb-53+Pg-62?
+
 2025-08-07 Aug.Thu 09:36:58 New discovery! 730? isotopes in Bohr?
 
 OTOMRO 445674: Z-117⁻ + 12000 => Pb-53 + Qe-64 + 2,158.9477218951251416 using 9841.05 nuclear 
 
-[ ] add to files
+[c] add to files
 
 2025-08-06 Aug.Wed 18:09:02 New discovery! 729? isotopes in Bohr?
 
 OTOMRO 444960:   C-53⁺ +  Yu-26⁺   +   5000 => N-79  + 3,264.784277675966677634 using 1735.22 decay+nuclear
 
-[ ] add to files
+[c] add to files
 
 2025-08-05 Aug.Tue 09:05:31 3 new discoveries so 728 isotopes in Universe Bohr
 
@@ -16,7 +18,7 @@ OTOMRO 437686:   Xj-21⁻  + Lx-96⁻   +   5000  -> S-117⁻  +2,899.0534509212
 OTOMRO 437685:   T-19⁻   + Lx-96⁻   +   5000  -> Da-115⁻ +3,052.843405575592441892 => S-115  using 1947.16 nuclear+decay
 OTOMRO 437682:   Vi-15⁻  + Lx-96⁻   +   5000  -> Dd-111⁻ +3,402.045539396860021952 => Ok-111 using 1597.95 nuclear+decay
 
-[ ] add to files
+[c] add to files
 
 try:
 [ ]  S-115⁻ + 15000 => ? Pb-53 + Pg-62
