@@ -1,3 +1,50 @@
+2025-08-11 Aug.Mon 09:28:55 New discoveries! Now 732 Bohr isotopes
+
+OTOMRO 452990:  Ct-17⁻ +  Uq-52⁻ + 5000 ->  C-69⁻ => Ns-69 + 3,681.532417030526630697 using 1318.47 decay+nuclear
+OTOMRO 453064:  Nd-34⁻ +  Uq-52⁻ + 5000 -> Iu-86⁻ =>  D-86 + 2,979.595255265782725473 using 2020.40 decay+nuclear
+
+[ ] add to files
+
+2025-08-11 Aug.Mon 09:06:06
+
+From the updated math file, some things to target
+[>] Ct-17⁻ +  Uq-52⁻ ->   C-69⁻ => ?Ns-69  |total: 20789.57 NRG
+[>] Nd-34⁻ +  Uq-52⁻ ->  Iu-86⁻ => ?D-86   |total: 21346.43 NRG
+[ ] Ct-17⁻ +  Pb-53⁻ ->  Ns-70⁻ => ?Ai-70  |total: 22260.46 NRG
+[ ] Ct-17⁻ +  Ux-60⁻ ->  Gy-77⁻ => ?Kk-77  |total: 25114.18 NRG
+[ ] Dz-10⁻ +  Uq-52⁻ ->  Ux-62⁻ => ?Pg-62  |total: 25907.73 NRG
+[ ] Eb-23⁻ +  Lx-96⁻ ->  Z-119⁻ => ?Cv-119 |total: 31783.74 NRG
+[ ] Gj-12⁻ +  Lx-96⁻ -> Nm-108⁻ => ?Dd-108 |total: 32701.00 NRG
+[ ]  K-37⁻ +  Uq-52⁻ ->   D-89⁻ => ?Co-89  |total: 36924.65 NRG
+[ ] Eb-23⁻ +  Uq-52⁻ ->   F-75⁻ => ?Gy-75  |total: 39475.85 NRG
+[ ]  T-19⁻ +  Uq-52⁻ ->  Ns-71⁻ => ?Ai-71  |total: 40731.59 NRG
+[ ]  P-26⁻ +  Uq-52⁻ ->  Gy-78⁻ => ?Kk-78  |total: 45603.46 NRG
+[ ] Vi-15⁻ +  Uq-52⁻ ->  Qe-67⁻ => ?C-67   |total: 45908.80 NRG
+[ ] Ro-28⁻ +  Wy-56⁻ ->  Cj-84⁻ => ?Iu-84  |total: 48176.40 NRG
+
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r]|  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r]|   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r]|  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r]   Ct-17⁻ +  Uq-52⁻   +   5000    ->   C-69⁻ => ?Ns-69   <---SUCCESS makes Ns-69 + 3,681.532417030526630697 using 1318.47 decay+nuclear
+total: 20789.57 NRG
+
+[r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r]|  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r]|   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r]|  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r]   Nd-34⁻ +  Uq-52⁻   +   5000    ->  Iu-86⁻ => ?D-86    <---SUCCESS makes D-86 + 2,979.595255265782725473 using 2020.40  decay+nuclear
+total: 21346.43 NRG
+
 2025-08-11 Aug.Mon 08:29:06 Updated my checkingsomething.themath.txt file to account for the new isotopes discovered. Added about 11000 new lines of possibilites.
 
 2025-08-11 Aug.Mon 07:09:06
