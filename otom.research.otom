@@ -1,4 +1,25 @@
-2025-08-08 Aug.Fri 16:47:44 [ ] I think i messed up some of the data entry for Z-117 => Pb-53+Qe-64 conflating it with S-115=>Pb-53+Pg-62?
+2025-08-11 Aug.Mon 08:29:06 Updated my checkingsomething.themath.txt file to account for the new isotopes discovered. Added about 11000 new lines of possibilites.
+
+2025-08-11 Aug.Mon 07:09:06
+
+todo:
+[c] 94 Ju-1: make 15 Ju₃
+[c] 34 Af-7: move 18 to wallet jdw7 0x454ee7 for safe keeping
+[c] 20 Kk-70: make 3 Kk₃
+[c] 18 Kk-71: make 3 Kk₃
+  [c] make 6 PkAx with those 6 Kk₃+6 Af-7
+
+2025-08-09 Aug.Sat 17:16:35
+
+todo:
+[c] 34 Ju-1: make 10 Ju₃
+[c] 56 Af-7: move 30 to wallet jdw7 0x454ee7 for safe keeping
+[c] 32 Kk-70: make 7 Kk₃
+[c] 34 Kk-71: make 7 Kk₃
+  [c] make 14 PkAx with those 14 Kk₃+14 Af-7
+
+2025-08-08 Aug.Fri 16:47:44 [x] I think i messed up some of the data entry for Z-117 => Pb-53+Qe-64 conflating it with S-115=>Pb-53+Pg-62?
+update: nope
 
 2025-08-07 Aug.Thu 09:36:58 New discovery! 730? isotopes in Bohr?
 
@@ -1192,11 +1213,11 @@ Uq-52 + Pb-53 -> Se-105
    [ ] Dz-9∙   + Lx-96⁻   =?Se-105?(?.???) | total: 13176.46
 Pb-53 + Wy-56 -> Dd-109
    [-] As-7∙   + Vl-101⁻  =*Dd-108?(?.???) | total: 12739.75
-   [ ] Vi-13∙  + Lx-96⁻   =?Dd-109?(?.???) | total: 13176.46
-   [ ] Vi-14⁻  + Lx-96⁻   =?Dd-110?(?.???) | total: 15740.65
+   [-] Vi-13∙  + Lx-96⁻   =?Dd-109?(?.???) | total: 13176.46
+   [-] Vi-14⁻  + Lx-96⁻   =?Dd-110?(?.???) | total: 15740.65
 Wy-56 + L-57 -> Da-113
    [-] T-17∙   + Lx-96⁻   =*Da-113?(?.???) | total: 13176.46
-   [ ] T-18⁻   + Lx-96⁻   =?Da-114?(?.???) | total: 15786.45
+   [-] T-18⁻   + Lx-96⁻   =?Da-114?(?.???) | total: 15786.45
 L-57  + Ux-60 -> Z-117
    [-] Nd-34⁻  + Cj-81⁻   =*Z-115?(?.???)  | total: 10061.43
    [-] Eb-22∙  + Lx-94⁻   =*Z-116?(?.???)  | total: 10313.89

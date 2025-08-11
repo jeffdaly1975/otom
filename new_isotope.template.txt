@@ -13,3 +13,4 @@
   [ ] grabtheseimages.sh
   [ ] add to isotopes_worker.bohr.sh
   [ ] add to get_isotopes_bohr.alchemy.pl
+  [ ] add to token_id_sort_order-bohr.otom
