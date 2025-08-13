@@ -3217,8 +3217,8 @@ foreach my $k (sort keys %db){
      "?",
      "?",
      $db{$k}{"chemist"}    ,
-     "?",
-     $db{$k}{"initiate_tx"};
+     $db{$k}{"initiate_tx"},
+     "?";
 
   }
 
