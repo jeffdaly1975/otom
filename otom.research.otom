@@ -3,7 +3,22 @@
 OTOMRO 452990:  Ct-17⁻ +  Uq-52⁻ + 5000 ->  C-69⁻ => Ns-69 + 3,681.532417030526630697 using 1318.47 decay+nuclear
 OTOMRO 453064:  Nd-34⁻ +  Uq-52⁻ + 5000 -> Iu-86⁻ =>  D-86 + 2,979.595255265782725473 using 2020.40 decay+nuclear
 
-[ ] add to files
+[c] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [c] make it myself
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
 
 2025-08-11 Aug.Mon 09:06:06
 

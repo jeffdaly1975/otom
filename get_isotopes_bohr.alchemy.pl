@@ -758,6 +758,13 @@ my %idhash=(
 723 => "S-114",
 724 => "Z-115",
 725 => "Z-116",
+726 => "Ns-69" => 
+727 => "D-86"  => 
+728 => "Pb-53" => 
+729 => "N-79"  => 
+730 => "Z-117" => 
+731 => "S-115" => 
+732 => "Ok-111"=> 
 
 );
 
@@ -1488,6 +1495,13 @@ my %hexhash=(
  "S-114" => "b97500bd769f9898485a926662b59e8e04a0872aa8cb0dfb079b4404832f1574",
  "Z-115" => "0edc3d0083bcd25cb47f2cc15f6309e93614bf6d04fdd9d197c29e420c13460f",
  "Z-116" => "9db4cae00b204ff133c8653e64c6dc77e2195cc7d53f22dc040bdaccb949892d",
+ "Ns-69" => "ce3815f01585664700b5049e6a021618eaea6602bdc78799bc532a47704a7992",
+ "D-86"  => "5a8c0baba6d8f36433f4906b599a71cae5a4d1769c4f9848428528b5dda1cbcc",
+ "Pb-53" => "0f0671d283240dffe9ca0d95541188a6cbc2e2ead7ce8d9c8b83e10560a1c550",
+ "N-79"  => "711d1550dc47828411e7370359e5feaede02abb7d6c578a617c82f824574469c",
+ "Z-117" => "aa054fb4bb9e6c82b379d88b4b4c5b397dcc6b67939a6b407ce6910afdad792b",
+ "S-115" => "94aeb9267d80b47be3dfd08c0a9cb64c7c3c426dd089bf98a4381058b55aa23b",
+ "Ok-111"=> "30fcc07d12a7482a28f120a070807bac6494a5ad0d53f283d5c0c60628bdb733",
 );
 
 # query the blockchain via alchemy 
@@ -1499,7 +1513,7 @@ my @output = qx{./isotopes_worker.bohr.sh $wallet};
      die "failed to execute isotopes_worker.bohr.sh $wallet: $!\n";
  }elsif ($? & 127) {
      printf STDERR "child died with signal %d, %s coredump\n",
-	 ($? & 127),  ($? & 128) ? 'with' : 'without';
+     ($? & 127),  ($? & 128) ? 'with' : 'without';
  }elsif ($? == 0) {
    # success!
  }else{
