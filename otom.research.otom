@@ -1,3 +1,10 @@
+2025-08-14 Aug.Thu 08:20:50
+
+[ ] are these shorter chains
+   Sr-1∙ +   Z-97⁺  +[    1183.60 -     4400] => P-22 + Lx-76               | decay, nuclear               |
+   P-21⁺ + Aw-107ª  +[    2279.14 -     7000] => P-22 + Aw-106              | decay, nuclear               |    55694*|    55694*| 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x220a369cda38f4239c623227dfebe92d0c484b237fdcaa222386980a79903f2a | 0x756dd0e1bc5b13e3525ea6f35ccbc16f349b5fbe92ec560a41b3cbf698574bf4 |
+
+2025-08-13 Aug.Wed 17:52:38 Discovered and fixed a small bug in my parser. For cases with only an initiateReaction() tx I was incorrectly listing the initiateReaction() tx as ? and the analyseReactions() tx in its place. Whoops.
 2025-08-11 Aug.Mon 09:28:55 New discoveries! Now 732 Bohr isotopes
 
 OTOMRO 452990:  Ct-17⁻ +  Uq-52⁻ + 5000 ->  C-69⁻ => Ns-69 + 3,681.532417030526630697 using 1318.47 decay+nuclear
