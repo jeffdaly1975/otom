@@ -18,16 +18,4 @@ initateReaction() TX HASH  | Transaction hash of the call to initateReaction()  
 analyseReactions() TX HASH | Transaction hash of the call to analyseReactions()   | 0xfed370aefa32fba9b4f72dab9ffb4b23a70e39a0ca424d276d50b6a20cb9b6f8
 NOTES                      |                                                      |
 
-There are 6 txs I rewrote the input NRG to 0.0 because I know it will work due to the stability value and decay types of the isotopes in question. These noted reactions are the ones that I saw and realized they could be done with zero input energy. So beware if you try to run these 6 exact reactions I think they have additional inputs and/or outputs which I simplified to the minimal recipes.
-
-
-
-
-
-
-
-
-
-
-
-
+Each row has the OTOMRO number, the chemist (shape eth wallet), the initiateReaction() tx hash and analyseReactions() tx hash. The input NRG was determined from that reaction, where the chemist used like 2000 NRG as input, but the analyseReactions() tx shows that only say 1427.57 was used. For that row and reaction, the Input NRG will be given as 1428 since that's all that is needed.
