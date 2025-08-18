@@ -1,3 +1,160 @@
+2025-08-17 Aug.Sun 12:11:23
+
+
+reorder:
+[1-9]-chain +   [0]-chain
+[2-9]-chain + [0-1]-chain
+[3-9]-chain + [0-2]-chain
+[4-9]-chain + [0-3]-chain
+[5-9]-chain + [0-4]-chain
+[6-9]-chain + [0-5]-chain
+[7-9]-chain + [0-6]-chain
+[8-9]-chain + [0-7]-chain
+  [9]-chain + [0-8]-chain
+
+vim commands:
+:%s/ \([1-9]-chain\)\s+\s\([0]-chain\) / \2 + \1 /g    <-- 101 replacements
+:%s/ \([2-9]-chain\) + \([0-1]-chain\) / \2 + \1 /g
+:%s/ \([3-9]-chain\) + \([0-2]-chain\) / \2 + \1 /g
+:%s/ \([4-9]-chain\) + \([0-3]-chain\) / \2 + \1 /g
+:%s/ \([5-9]-chain\) + \([0-4]-chain\) / \2 + \1 /g
+:%s/ \([6-9]-chain\) + \([0-5]-chain\) / \2 + \1 /g
+:%s/ \([7-9]-chain\) + \([0-6]-chain\) / \2 + \1 /g
+:%s/ \([8-9]-chain\) + \([0-7]-chain\) / \2 + \1 /g
+:%s/ \([9]-chain\)\s+\s\([0-8]-chain\) / \2 + \1 /g
+
+ \([2-9]-chain\) + \([0-1]-chain\)
+
+Wait.
+
+
+  :%s/ \([1-9]-chain\)\s+\s\([0]-chain\) \(.\{58,60}\) \<\(\w\+-\d\+[∙ª⁻⁺]\=\) + \+\(\w\+-\d\+[∙ª⁻⁺]\=\) / \2 + \1 \3 \5 + \4 /   <--101 replacements.
+:%s/ \([2-9]-chain\)\s+\s\([0-1]-chain\) \(.\{58,60}\) \<\(\w\+-\d\+[∙ª⁻⁺]\=\) + \+\(\w\+-\d\+[∙ª⁻⁺]\=\) / \2 + \1 \3 \5 + \4 /   <--7 
+:%s/ \([3-9]-chain\)\s+\s\([0-2]-chain\) \(.\{58,60}\) \<\(\w\+-\d\+[∙ª⁻⁺]\=\) + \+\(\w\+-\d\+[∙ª⁻⁺]\=\) / \2 + \1 \3 \5 + \4 /      5
+:%s/ \([4-9]-chain\)\s+\s\([0-3]-chain\) \(.\{58,60}\) \<\(\w\+-\d\+[∙ª⁻⁺]\=\) + \+\(\w\+-\d\+[∙ª⁻⁺]\=\) / \2 + \1 \3 \5 + \4 /      3
+:%s/ \([5-9]-chain\)\s+\s\([0-4]-chain\) \(.\{58,60}\) \<\(\w\+-\d\+[∙ª⁻⁺]\=\) + \+\(\w\+-\d\+[∙ª⁻⁺]\=\) / \2 + \1 \3 \5 + \4 /      2
+:%s/ \([6-9]-chain\)\s+\s\([0-5]-chain\) \(.\{58,60}\) \<\(\w\+-\d\+[∙ª⁻⁺]\=\) + \+\(\w\+-\d\+[∙ª⁻⁺]\=\) / \2 + \1 \3 \5 + \4 /      8
+:%s/ \([7-9]-chain\)\s+\s\([0-6]-chain\) \(.\{58,60}\) \<\(\w\+-\d\+[∙ª⁻⁺]\=\) + \+\(\w\+-\d\+[∙ª⁻⁺]\=\) / \2 + \1 \3 \5 + \4 /      3
+:%s/ \([8-9]-chain\)\s+\s\([0-7]-chain\) \(.\{58,60}\) \<\(\w\+-\d\+[∙ª⁻⁺]\=\) + \+\(\w\+-\d\+[∙ª⁻⁺]\=\) / \2 + \1 \3 \5 + \4 /      0
+  :%s/ \([9]-chain\)\s+\s\([0-8]-chain\) \(.\{58,60}\) \<\(\w\+-\d\+[∙ª⁻⁺]\=\) + \+\(\w\+-\d\+[∙ª⁻⁺]\=\) / \2 + \1 \3 \5 + \4 /      0
+
+
+
+Now get rid of useless ones.
+:g/\(\d\)-chain\s+\s\(\d\)-chain.*=> \1-chain + \2-chain/d
+:g/ \([0]\)-chain\s+\s\([1-9]\)-chain.*=> [1-9]-chain + \2-chain/d
+
+:g/ [0123456789]-chain + [9]-chain .\{-}=> [0123456789]-chain + [012345678]-chain/d
+:g/ [0123456789]-chain + [89]-chain .\{-}=> [0123456789]-chain + [01234567]-chain/d
+:g/ [0123456789]-chain + [789]-chain .\{-}=> [0123456789]-chain + [0123456]-chain/d
+:g/ [0123456789]-chain + [6789]-chain .\{-}=> [0123456789]-chain + [012345]-chain/d
+:g/ [0123456789]-chain + [56789]-chain .\{-}=> [0123456789]-chain + [01234]-chain/d
+:g/ [0123456789]-chain + [456789]-chain .\{-}=> [0123456789]-chain + [0123]-chain/d
+:g/ [0123456789]-chain + [3456789]-chain .\{-}=> [0123456789]-chain + [012]-chain/d
+:g/ [0123456789]-chain + [23456789]-chain .\{-}=> [0123456789]-chain + [01]-chain/d
+:g/ [0123456789]-chain + [123456789]-chain .\{-}=> [0123456789]-chain + [0]-chain/d
+ 
+
+
+:g/^| [123456789]-chain         .\{-}=> [0-1]-chain + [0-1]-chain/d
+:g/^| [23456789]-chain         .\{-}=> [0-2]-chain + [0-2]-chain/d
+:g/^| [3456789]-chain         .\{-}=> [0-3]-chain + [0-3]-chain/d
+:g/^| [456789]-chain         .\{-}=> [0-4]-chain + [0-4]-chain/d
+:g/^| [56789]-chain         .\{-}=> [0-5]-chain + [0-5]-chain/d
+:g/^| [6789]-chain         .\{-}=> [0-6]-chain + [0-6]-chain/d
+:g/^| [789]-chain         .\{-}=> [0-7]-chain + [0-7]-chain/d
+:g/^| [89]-chain         .\{-}=> [0-8]-chain + [0-8]-chain/d
+:g/^| [9]-chain         .\{-}=> [0-9]-chain + [0-9]-chain/d
+
+:g/^| [9]-chain         .\{-}=> [0-9]-chain  /d
+:g/^| [89]-chain         .\{-}=> [0-8]-chain  /d
+:g/^| [789]-chain         .\{-}=> [0-7]-chain  /d
+:g/^| [6789]-chain         .\{-}=> [0-6]-chain  /d
+:g/^| [56789]-chain         .\{-}=> [0-5]-chain  /d
+:g/^| [456789]-chain         .\{-}=> [0-4]-chain  /d
+:g/^| [3456789]-chain         .\{-}=> [0-3]-chain  /d
+:g/^| [23456789]-chain         .\{-}=> [0-2]-chain  /d
+:g/^| [123456789]-chain         .\{-}=> [0-1]-chain  /d
+
+:g/^| 0-chain + \([1-9]\)-chain ...........................=> \1-chain/d
+:g/^| 1-chain + \([2-9]\)-chain ...........................=> \1-chain/d
+:g/^| 2-chain + \([3-9]\)-chain ...........................=> \1-chain/d
+:g/^| 3-chain + \([4-9]\)-chain ...........................=> \1-chain/d
+:g/^| 4-chain + \([5-9]\)-chain ...........................=> \1-chain/d
+:g/^| 5-chain + \([6-9]\)-chain ...........................=> \1-chain/d
+:g/^| 6-chain + \([7-9]\)-chain ...........................=> \1-chain/d
+:g/^| 7-chain + \([8-9]\)-chain ...........................=> \1-chain/d
+:g/^| 8-chain + \([9]\)-chain ...........................=> \1-chain/d
+
+
+2025-08-16 Aug.Sat 20:12:11 [ ] Update optimized.get.all.isotopes.BOHR.otom to agree with bohr_chain_recipes_for_morpheus.csv which I just updated.
+
+::VIM::
+learned new vim. The command :oldfiles  
+:ol[dfiles]        List the files that have marks stored in the viminfo
+            file.  This list is read on startup and only changes
+            afterwards with `:rviminfo!`.  Also see |v:oldfiles|.
+            The number can be used with |c_#<|.
+            The output can be filtered with |:filter|, e.g.: >
+                filter /\.vim/ oldfiles
+             The filtering happens on the file name.
+            {only when compiled with the |+eval| feature}
+
+I knew I had a buffer with the data in it so I did:
+  :filter morph buffers
+
+and it listed only the buffers matching /morph/
+cool.
+
+2025-08-16 Aug.Sat 12:04:18 Updated the datasets for Morpheus again. I really need to automate all this. It takes a lot of effort, which I enjoy for some strange reason, but still I prefer to figure out a thing, then figure out how to automate it to ensure nothing is missed, its reproducible, and much faster and more accurate than doing it by hand.
+
+regexs for chains:
+ @q =  51x 0-chain: \(As-5\|As-6\|As-7\|Cl-25\|Cl-26\|Cl-27\|Ct-13\|Ct-15\|Ct-17\|Dz-7\|Dz-8\|Dz-9\|Eb-19\|Eb-20\|Eb-21\|Eb-22\|Ei-4\|Ei-5\|Gj-11\|Gy-67\|K-31\|K-34\|Kk-70\|Kk-71\|L-51\|Mt-32\|Mt-34\|Mt-35\|Nd-30\|P-21\|P-23\|Pb-48\|Ro-22\|Ro-23\|Ro-24\|S-102\|Sr-1\|Sr-2\|Sr-3\|T-15\|T-16\|T-17\|Uq-47\|Vi-10\|Vi-11\|Wy-50\|Xj-17\|Xj-18\|Yu-27\|Yu-29\|Yv-72\)
+ @w = 230x 1-chain: \(Ai-61\|Ai-62\|Ai-63\|Ai-64\|Ai-65\|Ai-67\|Aw-112\|Aw-114\|Aw-115\|C-55\|C-56\|C-57\|C-58\|C-59\|C-60\|C-61\|C-62\|C-64\|Cj-72\|Cj-73\|Cj-74\|Cj-75\|Cj-76\|Cl-28\|Co-78\|Co-79\|Co-80\|Co-81\|Co-82\|Co-83\|Ct-14\|Cv-105\|Cv-106\|Cv-107\|D-76\|D-77\|D-78\|D-79\|D-80\|D-81\|Da-100\|Da-101\|Da-102\|Da-104\|Da-98\|Da-99\|Dd-95\|Dd-96\|Dd-97\|Dd-98\|Dd-99\|Dx-37\|Dx-38\|Dx-39\|Dx-40\|Dx-41\|Ek-110\|F-62\|F-63\|F-64\|F-65\|F-66\|F-67\|F-68\|F-69\|Gd-39\|Gd-40\|Gd-41\|Gd-42\|Gd-43\|Gd-44\|Gj-10\|Gj-9\|Gy-64\|Gy-65\|Gy-66\|Gy-68\|Gy-69\|Gy-70\|Iu-74\|Iu-75\|Iu-76\|Iu-77\|Iu-78\|Ji-111\|Ji-112\|Ji-114\|K-32\|K-33\|K-35\|Kk-67\|Kk-68\|Kk-69\|Kk-72\|L-49\|L-50\|L-52\|L-53\|L-54\|Lu-35\|Lu-36\|Lu-37\|Lu-38\|Lu-39\|Lu-40\|Lx-82\|Lx-83\|Lx-84\|Lx-85\|Lx-86\|Lx-87\|Lx-88\|Mt-33\|Mt-36\|Mt-37\|N-83\|N-84\|N-85\|N-86\|N-87\|N-88\|N-89\|Nd-29\|Nd-31\|Nd-32\|Nd-33\|Nd-34\|Nm-93\|Nm-94\|Nm-95\|Nm-96\|Nm-97\|Ns-58\|Ns-59\|Ns-60\|Ns-61\|Ns-62\|Ns-63\|Ns-64\|Ns-65\|Ok-100\|Ok-97\|Ok-98\|Ok-99\|P-22\|P-24\|Pb-44\|Pb-45\|Pb-46\|Pb-47\|Pb-49\|Pb-50\|Pb-51\|Pg-53\|Pg-54\|Pg-55\|Pg-56\|Pg-57\|Pg-58\|Qe-54\|Qe-55\|Qe-56\|Qe-57\|Qe-58\|Qe-59\|Ro-25\|Ro-26\|S-101\|S-103\|Se-89\|Se-90\|Se-91\|Se-92\|Se-93\|Se-94\|Se-95\|Se-96\|U-87\|U-88\|U-89\|Uq-42\|Uq-43\|Uq-44\|Uq-45\|Uq-46\|Ux-50\|Ux-51\|Ux-52\|Ux-53\|Ux-54\|Ux-55\|Ux-56\|V-41\|V-42\|V-43\|V-44\|V-45\|V-46\|Vi-12\|Vi-13\|Vl-88\|Vl-89\|Vl-90\|Vl-91\|Vl-92\|Vl-93\|Vt-107\|Vt-109\|W-80\|W-81\|W-82\|W-83\|W-84\|Wy-47\|Wy-48\|Wy-49\|Wy-51\|Wy-52\|Xj-19\|Xj-20\|Yu-28\|Yu-30\|Yu-31\|Yv-70\|Yv-71\|Yv-73\|Yv-74\|Z-102\|Z-103\|Z-104\)
+ @e = 121x 2-chain: \(Ai-60\|Ai-66\|Ai-68\|Ai-69\|Aw-111\|Aw-113\|Cj-71\|Cj-77\|Cj-78\|Cl-29\|Co-76\|Co-85\|Ct-16\|Cv-102\|Cv-104\|Cv-108\|Cv-109\|D-82\|Da-103\|Da-105\|Da-106\|Da-97\|Dd-100\|Dd-101\|Dd-93\|Dd-94\|Dx-42\|Ek-107\|Ek-108\|Ek-109\|Ek-111\|Ek-112\|Ek-113\|F-61\|F-70\|F-71\|Gd-45\|Gy-71\|Gy-72\|Gy-73\|Gy-74\|Ha-115\|Ha-116\|Ha-117\|Iu-73\|Iu-79\|Iu-80\|Ji-107\|Ji-108\|Ji-109\|Ji-110\|Ji-113\|K-30\|Kk-73\|Kk-74\|Kn-112\|Kn-113\|Kn-114\|Kn-115\|Kn-116\|Lx-80\|Lx-81\|Lx-89\|Lx-90\|N-82\|N-90\|N-91\|Nm-89\|Nm-90\|Nm-91\|Nm-92\|Nm-98\|Nm-99\|Ok-101\|Ok-102\|Ok-103\|Ok-104\|Ok-96\|Qe-60\|Ro-27\|S-100\|S-104\|S-105\|S-97\|S-98\|S-99\|Se-88\|Se-97\|Se-98\|T-18\|U-83\|U-84\|U-85\|U-86\|U-90\|U-91\|U-92\|Uq-48\|Vi-14\|Vl-86\|Vl-87\|Vl-94\|Vl-95\|Vl-96\|Vt-105\|Vt-106\|Vt-108\|Vt-110\|Vt-111\|Vt-112\|W-79\|W-85\|W-86\|Wy-53\|Yv-69\|Yv-75\|Yv-76\|Z-101\|Z-105\|Z-106\|Z-107\)
+ @r =  82x 3-chain: \(Aw-107\|Aw-108\|Aw-109\|Aw-110\|C-63\|Cj-79\|Cj-80\|Co-84\|Co-87\|Cv-101\|Cv-103\|Cv-110\|Cv-111\|Da-107\|Da-108\|Da-95\|Da-96\|Dd-102\|Dd-103\|Dd-104\|Dd-89\|Dd-90\|Dd-91\|Dd-92\|Ek-105\|Ek-106\|F-72\|Gd-38\|Ha-112\|Ha-113\|Ha-114\|Iu-82\|Kk-76\|Kn-111\|Lx-79\|Lx-91\|Lx-92\|Mt-38\|N-81\|N-92\|N-93\|Nd-28\|Nm-100\|Nm-101\|Nm-88\|Ns-66\|Ok-105\|Ok-106\|Ok-92\|Ok-93\|Ok-95\|Qe-62\|S-106\|S-107\|S-109\|S-96\|Se-100\|Se-101\|Se-87\|Se-99\|U-93\|U-94\|U-95\|U-96\|V-40\|Vl-84\|Vl-85\|Vl-97\|Vl-98\|Vt-102\|Vt-103\|Vt-104\|W-78\|W-87\|W-88\|Xj-21\|Z-100\|Z-108\|Z-109\|Z-97\|Z-98\|Z-99\)
+ @t =  63x 4-chain: \(Cj-81\|Co-88\|Cv-100\|Cv-97\|Cv-98\|Cv-99\|D-83\|D-84\|Da-109\|Da-110\|Da-93\|Da-94\|Dd-105\|Dd-106\|Dd-88\|Dz-10\|Ek-102\|Ek-103\|Ek-104\|F-73\|Ha-111\|Iu-81\|Ji-105\|Ji-106\|Kn-107\|Kn-108\|Kn-109\|Kn-110\|Lx-93\|Lx-94\|N-94\|N-95\|N-96\|Nm-102\|Nm-103\|Nm-104\|Nm-87\|Ok-107\|Ok-89\|Ok-90\|Ok-91\|Ok-94\|Pg-52\|Pg-59\|S-108\|S-95\|Se-102\|Se-84\|Se-85\|Se-86\|U-97\|Ux-57\|Vl-100\|Vl-101\|Vl-99\|Vt-101\|W-89\|W-90\|Wy-46\|Yv-80\|Z-110\|Z-111\|Z-96\)
+ @y =  82x 5-chain: \(Ai-58\|Ai-59\|Aw-105\|Aw-106\|Aw-124\|Aw-125\|Ax-111\|Cv-114\|Cv-116\|Cv-117\|Cv-118\|D-85\|Da-111\|Da-90\|Da-92\|Dx-43\|Dx-44\|Eh-124\|Ek-100\|Ek-101\|Ek-119\|Ek-120\|Ek-99\|Gd-46\|Go-118\|Ha-108\|Ha-109\|Ha-110\|I-115\|Iu-83\|Ji-104\|Ji-121\|Ji-122\|Ji-123\|K-37\|Kk-75\|Kn-106\|L-47\|L-55\|L-56\|L-57\|Lu-41\|Lx-76\|Lx-77\|Lx-95\|Lx-96\|Mt-39\|Nm-105\|Ok-108\|Pb-52\|Qe-52\|S-112\|S-113\|S-94\|Se-103\|Se-104\|U-98\|Uq-41\|Uq-49\|Uq-50\|Uq-51\|Ux-48\|Ux-49\|Ux-58\|Ux-59\|V-39\|V-47\|V-48\|Vt-100\|Vt-98\|Vt-99\|W-91\|Wy-45\|Wy-54\|Wy-55\|X-119\|Yv-77\|Yv-78\|Z-112\|Z-113\|Z-114\|Z-95\)
+ @u =  65x 6-chain: \(Aw-104\|Ax-109\|Ax-110\|C-53\|Cj-69\|Cj-70\|Cl-24\|Cl-30\|Co-86\|Cv-115\|Da-112\|Da-113\|Da-91\|Dd-107\|Dx-35\|Eb-23\|Eh-123\|Ek-121\|Ek-122\|Ek-123\|F-60\|Go-117\|I-113\|I-114\|Iu-72\|Jb-116\|Ji-103\|Ji-124\|Kk-64\|L-46\|L-48\|Lx-78\|N-80\|Nm-106\|Nm-86\|Ns-67\|Ns-68\|Ok-109\|Ok-110\|P-25\|P-26\|Pb-43\|Pg-51\|Pg-60\|Pg-61\|Qe-61\|Qe-63\|S-114\|T-19\|U-99\|Uq-52\|Vl-83\|Vt-119\|Vt-120\|Vt-121\|W-76\|W-77\|Wy-56\|Ys-125\|Yu-26\|Yu-32\|Yv-67\|Z-115\|Z-116\|Z-117\)
+ @i =  29x 7-chain: \(C-54\|C-65\|C-66\|Cj-68\|Co-74\|Co-75\|D-86\|Dx-36\|F-59\|Gj-12\|Gy-63\|K-29\|K-36\|Kk-65\|Kk-66\|N-79\|Ns-56\|Ns-57\|Ns-69\|Pb-53\|Pg-50\|Qe-53\|Qe-64\|Ro-28\|S-115\|Ux-60\|Vt-122\|Yv-66\|Yv-79\)
+ @o =   7x 8-chain: \(D-74\|D-75\|Lu-34\|Nd-27\|Vi-15\|Xj-16\|Yv-68\)
+ @p =   2x 9-chain: \(Ok-111\|T-14\)
+     -----
+total 732x
+
+[c]  need to remove the many instances where it just had a decay where a beta+/-/ª with 0 input NRG required decays
+how hard would it be to make that regex?
+'<,'>g/s-102.*=>.*p-22.*co-80/d
+
+[c] trying to group by chain
+[c] verify all 732 known isotopes are accounted for if we assume the 51 mineables do not require reaction recipes
+
+
+[x] We don't need a p-22 because its a by-product of many reactions, right?
+Kept it in anyways
+
+[x] there are others like you can make cl-24 itself or as a by product of the 7-chain to make K-29
+6-chain,  Cl-24                             ,  Wy-45⁺            +[    2567.96 -    10000] => P-21 + Cl-24               | nuclear                      |   362166 |   252946 | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0xdd962828606289a114a8362fcee7c0b24980c7b3be713a4bb108838f25d3650b | 0x005e279fabc69a3847092846c00e2e413ccca525131c02b2cbe2feab203b3fad || 5-chain            +[    2567.96 -    10000] => 0-chain + 6-chain          |
+7-chain,  Cl-24 + K-29                      ,   C-53⁺            +[    3097.86 -    10000] => Cl-24 + K-29               | nuclear                      |   133034 |   252951 | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xfaf52a67911e8e84115081690762b352ec8f1e9181e07053f877c94d4b536064 | 0x1ea0c2f89727495804ad62cd8d7a3794ddfc35187c64259fa0d4ded36c3f1a88 || 6-chain            +[    3097.86 -    10000] => 6-chain + 7-chain          |
+
+If that isotope won't be needed for anything as input, then I guess it isn't necessary. perhaps I have a row in the csv for it and mark it as covered by other reaction by-products
+
+[x] THEN THERES THIS
+
+3-chain,  V-40                              ,  Vi-10⁺ +   K-30⁺  +[     947.33 -     8000] => V-40                       | decay, nuclear               |   375504*|   375504*| 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x817f5055277f6f0eac5e00263bcf54f38cfb3e8618fa3cd27eeb204156905811 | 0x3c4abb981ed46352b9eb7eb50c7dedef37a9b30f04a461ac67e70e4e3a9f9024 || 0-chain + 2-chain  +[     947.33 -     8000] => 3-chain                    |
+5-chain,  V-40 + L-47                       ,  Nm-87⁺            +[    6603.67 -    10000] => V-40 + L-47                | nuclear                      |   326777 |   248222 | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x67c755dfad7bd469692f307cae778d94d94c054768818101c16a2d91d7de216e | 0x97d01dbfa1f0a93d3a281bb5c326100bab5578a03cb015f770897ac93485ac61 || 4-chain            +[    6603.67 -    10000] => 3-chain + 5-chain          |
+7-chain,  L-47 + Ns-56                      , Ji-103⁺            +[    6943.94 -    10000] => L-47 + Ns-56               | nuclear                      |   161124 |   256883 | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x65d8a14dff73677068fc5afc4270617bf85eadb52dac1d2390ede1e09cb3c93f | 0x49a9bf999344c0125ad7b88a7a195541c989ee7d26c886e29e5848bbaffb2042 || 6-chain            +[    6943.94 -    10000] => 5-chain + 7-chain          |
+8-chain,  Lu-34 + V-40                      ,  Co-74⁺            +[    5187.18 -    10000] => Lu-34 + V-40               | nuclear                      |   142502 |   239912 | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x48eafa388532d122dc611b376e693a793e0e36bfe70ba1c75fac5cf296d0e005 | 0x0205541c2bdb186471aa6a6e5803e94e662b612cc6a38671a1e9c7df27ca081e || 7-chain            +[    5187.18 -    10000] => 8-chain + 3-chain          |
+
+I can make L-47 with something else, but I need L-47s for these 3 6-chains so they will get used up anywyas. I think these should all be left in
+6-chain,  Cj-69                             ,  Ro-22⁺ +   L-47⁺  +[    1441.29 -     4000] => Cj-69                      | decay, nuclear               |   305499*|   306010 | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x71e350a753fcfe962b43b45dbcc675c90ca134b56cb0df6deb4fad84cbeb94d2 | 0x8be8ceaf8bcc1974fac8c150a6beca42d88b80788932d534abd52b7c0c53d13a || 0-chain + 5-chain  +[    1441.29 -     4000] => 6-chain                    |
+6-chain,  Cj-70                             ,  Ro-23ª +   L-47⁺  +[    1488.98 -     5000] => Cj-70                      | decay, nuclear               |   326779 |   305896 | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x0274c72546527c94cb6b031217a43fa947b3324860ab2ca70e385a56e74f98bf | 0x948a0aa907ec071eb6d7fc3bb9a96189e14f012a8f608d99fe14c8c203e18731 || 0-chain + 5-chain  +[    1488.98 -     5000] => 6-chain                    |
+6-chain,  Iu-72                             ,  Cl-25⁺ +   L-47⁺  +[    1569.58 -     5000] => Iu-72                      | decay, nuclear               |   162746 |   248473 | 0xf8d0c9f300d0649861963ebae0bb568533619448 | 0x82eba7325096a48917bce5d9be4ab386c149bfce566a8730efc684e9afaa01d2 | 0xb9e4121b70cfbde3dc30ec517eb8a13fa8fc52e98f31ae49d0ee5fdc7a16bd15 || 0-chain + 5-chain  +[    1569.58 -     5000] => 6-chain                    |
+
+
+
+
+
 2025-08-14 Aug.Thu 08:20:50
 
 [ ] are these shorter chains
@@ -5,6 +162,9 @@
    P-21⁺ + Aw-107ª  +[    2279.14 -     7000] => P-22 + Aw-106              | decay, nuclear               |
   Se-84⁺            +[    5925.33 -    10000] => V-39 + Wy-45               | nuclear                      |
   Cv-97⁺            +[    6986.31 -    10000] => Wy-45 + Qe-52              | nuclear                      |
+  Vi-14⁻ +  Uq-51⁻  +[    1379.49 -     5000] => C-65                       | decay, nuclear               |
+ Ha-108⁺            +[    7180.96 -    12000] => Ai-58 + Pg-50              | nuclear                      |
+ Eh-124ª            +[    8549.33 -    25000] => Yv-67 + Ns-57              | nuclear                      |
 
 2025-08-13 Aug.Wed 17:52:38 Discovered and fixed a small bug in my parser. For cases with only an initiateReaction() tx I was incorrectly listing the initiateReaction() tx as ? and the analyseReactions() tx in its place. Whoops.
 2025-08-11 Aug.Mon 09:28:55 New discoveries! Now 732 Bohr isotopes
