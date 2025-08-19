@@ -1,10 +1,20 @@
-GIT CHEATSHEET
-=> setup
+>>>>>>>>>>>>>>> GIT CHEATSHEETS <<<<<<<<<<<<<<<
+
+==================>> SETUP <<==================
 git config --global user.name "jeffdaly1975"
 git config --global user.email "daly.jeff@gmail.com"
 
 => get local copy of github
 git clone https://github.com/jeffdaly1975/otom.git
+
+
+==============>> GENERAL USAGE <<==============
+=> see which files have been modified and need to 
+=> be committed without seeing all the untracked files
+ git status -uno
+
+=> commit all changed files
+git commit -a -m "updates"
 
 => push changes to github
 edit files
@@ -12,8 +22,6 @@ git add <file>
 git commit -m "updates"
 git push
 
-=> commit all changed files
-git commit -a -m "updates"
-
 => get changes to local
 git pull  # this is "git fetch" and "git merge"
+
