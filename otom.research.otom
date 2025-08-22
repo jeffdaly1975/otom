@@ -1,3 +1,14 @@
+2025-08-22 Aug.Fri 09:37:28 4 new discoveries. Now 737 isotopes in Bohr. 
+Usually I make all the components for a reaction so I don't "use up" the isotopes I've already acquired but I was impatient and saw I had the required inputs for these ones.
+
+OTOMRO 485314: Ct-17⁻ +  Ux-60⁻ + 5000 ->  Gy-77⁻ => Kk-77  + 3,555.484763748909699643 using 1444.52 nuclear+decay 
+OTOMRO 485313: Gj-12⁻ +  Lx-96⁻ + 5000 -> Nm-108⁻ => Dd-108 + 3,470.575211125683381397 using 1529.42 nuclear+decay 
+OTOMRO 485312: Eb-23⁻ +  Uq-52⁻ + 5000 ->   F-75⁻ => Gy-75  + 3,357.782941249118721316 using 1642.22 nuclear+decay 
+OTOMRO 485311: Ro-28⁻ +  Wy-56⁻ + 5000 ->  Cj-84⁻ => Iu-84  + 3,132.908395472746633459 using 1867.09 nuclear+decay 
+
+[ ] update files
+
+
 2025-08-20 Aug.Wed 08:51:55 New discovery! Now 733 isotopes in Bohr
 
 OTOMRO 480646: Ct-17⁻ +  Pb-53⁻  + 5000 -> Ns-70⁻ => Ai-70 + 3,616.059070451083698572 using 1383.94 nuclear+decay
@@ -204,19 +215,19 @@ OTOMRO 453064:  Nd-34⁻ +  Uq-52⁻ + 5000 -> Iu-86⁻ =>  D-86 + 2,979.5952552
 2025-08-11 Aug.Mon 09:06:06
 
 From the updated math file, some things to target
-[>] Ct-17⁻ +  Uq-52⁻ ->   C-69⁻ => ?Ns-69  |total: 20789.57 NRG
-[>] Nd-34⁻ +  Uq-52⁻ ->  Iu-86⁻ => ?D-86   |total: 21346.43 NRG
-[>] Ct-17⁻ +  Pb-53⁻ ->  Ns-70⁻ => ?Ai-70  |total: 22260.46 NRG
-[ ] Ct-17⁻ +  Ux-60⁻ ->  Gy-77⁻ => ?Kk-77  |total: 25114.18 NRG
-[ ] Dz-10⁻ +  Uq-52⁻ ->  Ux-62⁻ => ?Pg-62  |total: 25907.73 NRG
-[>] Eb-23⁻ +  Lx-96⁻ ->  Z-119⁻ => ?Cv-119 |total: 31783.74 NRG
-[ ] Gj-12⁻ +  Lx-96⁻ -> Nm-108⁻ => ?Dd-108 |total: 32701.00 NRG
-[ ]  K-37⁻ +  Uq-52⁻ ->   D-89⁻ => ?Co-89  |total: 36924.65 NRG
-[ ] Eb-23⁻ +  Uq-52⁻ ->   F-75⁻ => ?Gy-75  |total: 39475.85 NRG
-[ ]  T-19⁻ +  Uq-52⁻ ->  Ns-71⁻ => ?Ai-71  |total: 40731.59 NRG
-[ ]  P-26⁻ +  Uq-52⁻ ->  Gy-78⁻ => ?Kk-78  |total: 45603.46 NRG
-[ ] Vi-15⁻ +  Uq-52⁻ ->  Qe-67⁻ => ?C-67   |total: 45908.80 NRG
-[ ] Ro-28⁻ +  Wy-56⁻ ->  Cj-84⁻ => ?Iu-84  |total: 48176.40 NRG
+[>] Ct-17⁻ +  Uq-52⁻ + 5000 ->   C-69⁻ => ?Ns-69  |total: 25789.57 NRG
+[>] Nd-34⁻ +  Uq-52⁻ + 5000 ->  Iu-86⁻ => ?D-86   |total: 26346.43 NRG
+[>] Ct-17⁻ +  Pb-53⁻ + 5000 ->  Ns-70⁻ => ?Ai-70  |total: 27260.46 NRG
+[r] Ct-17⁻ +  Ux-60⁻ + 5000 ->  Gy-77⁻ => ?Kk-77  |total: 30114.18 NRG --> Makes Kk-77 + 3,555.484763748909699643 using 1444.52 nuclear+decay OTOMRO 485314
+[ ] Dz-10⁻ +  Uq-52⁻ + 5000 ->  Ux-62⁻ => ?Pg-62  |total: 30907.73 NRG
+[>] Eb-23⁻ +  Lx-96⁻ + 5000 ->  Z-119⁻ => ?Cv-119 |total: 36783.74 NRG
+[r] Gj-12⁻ +  Lx-96⁻ + 5000 -> Nm-108⁻ => ?Dd-108 |total: 37701.00 NRG --> makes Dd-108 + 3,470.575211125683381397 using 1529.42 nuclear+decay OTOMRO 485313
+[ ]  K-37⁻ +  Uq-52⁻ + 5000 ->   D-89⁻ => ?Co-89  |total: 41924.65 NRG
+[r] Eb-23⁻ +  Uq-52⁻ + 5000 ->   F-75⁻ => ?Gy-75  |total: 44475.85 NRG --> makes Gy-75 + 3,357.782941249118721316 using 1642.22 nuclear+decay OTOMRO 485312
+[ ]  T-19⁻ +  Uq-52⁻ + 5000 ->  Ns-71⁻ => ?Ai-71  |total: 45731.59 NRG
+[ ]  P-26⁻ +  Uq-52⁻ + 5000 ->  Gy-78⁻ => ?Kk-78  |total: 50603.46 NRG
+[ ] Vi-15⁻ +  Uq-52⁻ + 5000 ->  Qe-67⁻ => ?C-67   |total: 50908.80 NRG
+[r] Ro-28⁻ +  Wy-56⁻ + 5000 ->  Cj-84⁻ => ?Iu-84  |total: 53176.40 NRG --> makes Iu-84 + 3,132.908395472746633459 using 1867.09 nuclear+decay OTOMRO 485311
 
 [*]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
 [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
