@@ -1,4 +1,6 @@
 #!/usr/bin/perl -w
+use strict;
+use warnings;
 
 #
 # 2025-04-20 Apr.Sun 20:22:38 Calls isotpes_worker.bohr.sh script which calls balanceOf() function with all Bohr Isotopes
@@ -758,14 +760,18 @@ my %idhash=(
 723 => "S-114",
 724 => "Z-115",
 725 => "Z-116",
-726 => "Ns-69" => 
-727 => "D-86"  => 
-728 => "Pb-53" => 
-729 => "N-79"  => 
-730 => "Z-117" => 
-731 => "S-115" => 
-732 => "Ok-111"=> 
-
+726 => "Ns-69",
+727 => "D-86",
+728 => "Pb-53",
+729 => "N-79",
+730 => "Z-117",
+731 => "S-115",
+732 => "Ok-111",
+733 => "Ai-70",
+734 => "Gy-75",
+735 => "Kk-77",
+736 => "Iu-84",
+737 => "Dd-108",
 );
 
 
@@ -1502,6 +1508,12 @@ my %hexhash=(
  "Z-117" => "aa054fb4bb9e6c82b379d88b4b4c5b397dcc6b67939a6b407ce6910afdad792b",
  "S-115" => "94aeb9267d80b47be3dfd08c0a9cb64c7c3c426dd089bf98a4381058b55aa23b",
  "Ok-111"=> "30fcc07d12a7482a28f120a070807bac6494a5ad0d53f283d5c0c60628bdb733",
+ "Ai-70" => "1633fa48884f7634dfeefdf7a161b0366273b3c70ed086b77c9946052034163b",
+ "Gy-75" => "74f3a5c96c9191419a6d012df7b3b72a358eadc8f7192ef2da6862ac07b8e5d9",
+ "Kk-77" => "e2fe817ac360e4cfa618d95908aa42e72b207ebb079b7ff4db6dc8dc8a36c5f3",
+ "Iu-84" => "897974e5c966371f8939ce16e284eaa1824460dc29b6b4bdc4818330015710d3",
+ "Dd-108"=> "df966053a9defbec72d67eb5037d5ebe9261dec764d0fe93178b982a50986792",
+
 );
 
 # query the blockchain via alchemy 
