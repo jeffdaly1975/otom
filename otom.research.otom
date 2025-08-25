@@ -1,3 +1,50 @@
+2025-08-25 Aug.Mon 13:31:59 New discovery L-58 makes 738 isotopes in Bohr
+
+OTOMRO 500125 Dd-108⁻ + 12000 => Uq-50 + L-58 + 3,046.063838651353307796 using 8953.94 nuclear
+
+[ ] update files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [ ] add to syntax/otom.vim
+  [ ] add to parseReactorLog.pl
+  [ ] add to otom_reactions.BOHR.pl
+  [ ] add to chains.bohr.otom
+  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [ ] add to decay.bohr.otom
+  [ ] add to checklist.bohr.otom
+  [ ] make it myself
+  [ ] grabtheseimages.sh
+  [ ] add to isotopes_worker.bohr.sh
+  [ ] add to get_isotopes_bohr.alchemy.pl
+  [ ] add to token_id_sort_order-bohr.otom
+  [ ] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+try splitting L-58 to make Ro-27 plus undiscovered Cl-31 BUT IT WILL BE TRICKY since L-* likes to split and then chemically make ClRo(). And.... looking at the reaction history no one has yet successfully split an L otom into Cl plus Ro. Yikes.
+[ ] L-58⁻ + ? => ? Cl-31 + Ro-27
+
+
+[ ] make these and split them to see if we can narrow down the likely ranges
+[r] 1-chain L-49   ::   996.88 |  Xj-17⁺ +  Mt-32⁺   +[   996.88 -   5000] => L-49                | decay, nuclear               | OTOMRO  137286 | used  994.23 [ ] update chains
+[r] 1-chain L-50   ::  1223.30 |  Ro-24ª +  Cl-26ª   +[  1223.30 -   5000] => L-50                | nuclear                      | OTOMRO  137289 | used 1223.00 [ ] update chains
+[r] 1-chain L-52   ::   639.07 |   As-5⁺ +  Uq-47⁻   +[   639.07 -   5000] => L-52                | nuclear                      | OTOMRO  137292 | used  638.57 [ ] update chains
+[r] 1-chain L-53   ::  1063.54 |   As-6∙ +  Uq-47⁻   +[  1063.54 -   5000] => L-53                | nuclear                      | OTOMRO  137296 |
+[r] 1-chain L-54   ::  1113.33 |   As-7∙ +  Uq-47⁻   +[  1113.33 -   5000] => L-54                | nuclear                      | OTOMRO  323476 |
+
+[ ] L-49⁺ + 3600 ? => Cl-26 + Ro-23
+[ ] L-50⁺ + 3600 ? => Cl-26 + Ro-24
+[ ] L-52⁺ + 3600 ? => Cl-28 + Ro-24
+[ ] L-53∙ + 3600 ? => Cl-28 + Ro-25
+[ ] L-54∙ + 3600 ? => Cl-29 + Ro-25
+
+
+2025-08-25 Aug.Mon 13:05:37 Observed new recipe of 2 input 3-chains and 17071.15 NRG to make Lx-95. Current best chain is 5-chain totalling 11442.19 NRG. So it cost 5000 NRG more for less chains. 
+Need to implement a better system for tracking cheapest routes.
+
+ 4-chain Lx-95  :: 17071.15 |  Xj-21⁻ +   U-96⁻   +[  2426.73 -  10000] => P-22 + Lx-95        | decay, nuclear               | OTOMRO  478372*|
+ 5-chain Lx-95  :: 11442.19 |   P-24⁻ +  Lx-93⁻   +[  2375.82 -   4000] => P-22 + Lx-95        | decay, nuclear               | OTOMRO  355461 |
+
 2025-08-25 Aug.Mon 10:52:11 [ ] I need to update my "otom_reactions.<universe>.pl" scripts to correct them for my present understanding of how reactions work. I think it should produce the *math* files I've been using
 
 2025-08-24 Aug.Sun 15:33:33 Made some more otoms. Okay now I have 656/737 isotopes, or 89%
@@ -379,14 +426,15 @@ OTOMRO 485313: Gj-12⁻ +  Lx-96⁻ + 5000 -> Nm-108⁻ => Dd-108 + 3,470.575211
 OTOMRO 485312: Eb-23⁻ +  Uq-52⁻ + 5000 ->   F-75⁻ => Gy-75  + 3,357.782941249118721316 using 1642.22 nuclear+decay 
 OTOMRO 485311: Ro-28⁻ +  Wy-56⁻ + 5000 ->  Cj-84⁻ => Iu-84  + 3,132.908395472746633459 using 1867.09 nuclear+decay 
 
-[.] update files
+[c] update files
 
+[c] Dd-108⁻ + 12000 => ? Uq-50 + L-58 ? ---> SUCCESS using 8953.94 OTOMRO 500125
 
 2025-08-20 Aug.Wed 08:51:55 New discovery! Now 733 isotopes in Bohr
 
 OTOMRO 480646: Ct-17⁻ +  Pb-53⁻  + 5000 -> Ns-70⁻ => Ai-70 + 3,616.059070451083698572 using 1383.94 nuclear+decay
 
-[.] update files
+[c] update files
 
 2025-08-18 Aug.Mon 20:21:46 saw someone on the discord say "Who wants to buy an Otom bank access key from me? (100% legit, priced below the official mint.) As a bonus, I’ll throw in a step-by-step guide on how to get the Otom Expert medal (with all reactions) and reveal how to mint thousands of Otoms using just one infinite PickAxe."
 I wonder if they are baiting someone to scam them, or do they legitimately know a bug in the system or way of calling the contracts.
