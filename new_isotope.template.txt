@@ -4,9 +4,11 @@
   [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
   [ ] add to syntax/otom.vim
   [ ] add to parseReactorLog.pl
-  [ ] add to otom_reactions.BOHR.pl
+  [ ] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
   [ ] add to chains.bohr.otom
   [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [ ] add to checkingsomething-stab-chart.txt
   [ ] add to decay.bohr.otom
   [ ] add to checklist.bohr.otom
   [ ] make it myself
@@ -14,5 +16,6 @@
   [ ] add to isotopes_worker.bohr.sh
   [ ] add to get_isotopes_bohr.alchemy.pl
   [ ] add to token_id_sort_order-bohr.otom
+  [ ] add to token_id_sort_order_1_column-bohr.otom
   [ ] add to token_ids-bohr.csv
   [ ] add to bohr_chain_recipes_for_morpheus.csv

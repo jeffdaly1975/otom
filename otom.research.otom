@@ -2,42 +2,90 @@
 
 OTOMRO 500125 Dd-108⁻ + 12000 => Uq-50 + L-58 + 3,046.063838651353307796 using 8953.94 nuclear
 
-[ ] update files
+[c] update files
   [c] bookmark to Firefox
   [c] add otoms.shapescan.data.BOHR.otom
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
-  [ ] add to syntax/otom.vim
-  [ ] add to parseReactorLog.pl
-  [ ] add to otom_reactions.BOHR.pl
-  [ ] add to chains.bohr.otom
-  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
-  [ ] add to decay.bohr.otom
-  [ ] add to checklist.bohr.otom
-  [ ] make it myself
-  [ ] grabtheseimages.sh
-  [ ] add to isotopes_worker.bohr.sh
-  [ ] add to get_isotopes_bohr.alchemy.pl
-  [ ] add to token_id_sort_order-bohr.otom
-  [ ] add to token_ids-bohr.csv
-  [ ] add to bohr_chain_recipes_for_morpheus.csv
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [c] make it myself
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
+  [c] add to bohr_chain_recipes_for_morpheus.csv
 
 try splitting L-58 to make Ro-27 plus undiscovered Cl-31 BUT IT WILL BE TRICKY since L-* likes to split and then chemically make ClRo(). And.... looking at the reaction history no one has yet successfully split an L otom into Cl plus Ro. Yikes.
 [ ] L-58⁻ + ? => ? Cl-31 + Ro-27
 
 
-[ ] make these and split them to see if we can narrow down the likely ranges
+[c] make these and split them to see if we can narrow down the likely ranges
 [r] 1-chain L-49   ::   996.88 |  Xj-17⁺ +  Mt-32⁺   +[   996.88 -   5000] => L-49                | decay, nuclear               | OTOMRO  137286 | used  994.23 [ ] update chains
 [r] 1-chain L-50   ::  1223.30 |  Ro-24ª +  Cl-26ª   +[  1223.30 -   5000] => L-50                | nuclear                      | OTOMRO  137289 | used 1223.00 [ ] update chains
 [r] 1-chain L-52   ::   639.07 |   As-5⁺ +  Uq-47⁻   +[   639.07 -   5000] => L-52                | nuclear                      | OTOMRO  137292 | used  638.57 [ ] update chains
 [r] 1-chain L-53   ::  1063.54 |   As-6∙ +  Uq-47⁻   +[  1063.54 -   5000] => L-53                | nuclear                      | OTOMRO  137296 |
 [r] 1-chain L-54   ::  1113.33 |   As-7∙ +  Uq-47⁻   +[  1113.33 -   5000] => L-54                | nuclear                      | OTOMRO  323476 |
 
-[ ] L-49⁺ + 3600 ? => Cl-26 + Ro-23
-[ ] L-50⁺ + 3600 ? => Cl-26 + Ro-24
-[ ] L-52⁺ + 3600 ? => Cl-28 + Ro-24
-[ ] L-53∙ + 3600 ? => Cl-28 + Ro-25
-[ ] L-54∙ + 3600 ? => Cl-29 + Ro-25
+[r] L-49⁺ + 3500 => ? Cl-26 + Ro-23 --> Makes ClRo using 3325.42 metallic
 
+[r] L-50⁺ + 3700 => ? Cl-26 + Ro-24 --> Makes ClRo using 3500.79 metallic
+
+[r] L-52⁺ + 3300 => ? Cl-28 + Ro-24 --> No reaction, used 165.00
+[r] L-52⁺ + 3350 => ? Cl-28 + Ro-24 --> No reaction, used 167.50
+[r] L-52⁺ + 3400 => ? Cl-28 + Ro-24 --> No reaction, used 170.00
+[r] L-52⁺ + 3500 => ? Cl-28 + Ro-24 --> No reaction, used 175.00
+[r] L-52⁺ + 3600 => ? Cl-28 + Ro-24 --> No reaction, used 180.00
+[r] L-52⁺ + 3700 => ? Cl-28 + Ro-24 --> No reaction, used 185.00
+[r] L-52⁺ + 3800 => ? Cl-28 + Ro-24 --> SUCCESS! used 3767.71 nuclear returning 32.29 so it probably can be narrowed even more
+
+[r] L-53∙ + 3600 => ? Cl-28 + Ro-25 --> No reaction, used 180.00
+[r] L-53∙ + 3770 => ? Cl-28 + Ro-25 --> No reaction, used 188.50
+[r] L-53∙ + 3800 => ? Cl-28 + Ro-25 --> No reaction, used 190.00
+[r] L-53∙ + 3850 => ? Cl-28 + Ro-25 --> No reaction, used 192.50
+[r] L-53∙ + 3900 => ? Cl-28 + Ro-25 --> No reaction, used 195.00
+[r] L-53∙ + 3950 => ? Cl-28 + Ro-25 --> No reaction, used 197.50
+[r] L-53∙ + 4000 => ? Cl-28 + Ro-25 --> No reaction, used 200.00
+[r] L-53∙ + 4050 => ? Cl-28 + Ro-25 --> No reaction, used 202.50
+[r] L-53∙ + 4100 => ? Cl-28 + Ro-25 --> No reaction, used 205.00
+[r] L-53∙ + 4150 => ? Cl-28 + Ro-25 --> No reaction, used 207.50
+[r] L-53∙ + 4200 => ? Cl-28 + Ro-25 --> No reaction, used 210.00
+[r] L-53∙ + 4250 => ? Cl-28 + Ro-25 --> No reaction, used 212.50
+[r] L-53∙ + 4300 => ? Cl-28 + Ro-25 --> No reaction, used 215.00
+[r] L-53∙ + 4350 => ? Cl-28 + Ro-25 --> No reaction, used 217.50
+[r] L-53∙ + 4400 => ? Cl-28 + Ro-25 --> No reaction, used 220.00
+[r] L-53∙ + 4450 => ? Cl-28 + Ro-25 --> No reaction, used 222.50
+[r] L-53∙ + 4500 => ? Cl-28 + Ro-25 --> No reaction, used 225.00
+[r] L-53∙ + 4550 => ? Cl-28 + Ro-25 --> No reaction, used 227.50
+[r] L-53∙ + 4600 => ? Cl-28 + Ro-25 --> No reaction, used 230.00
+[r] L-53∙ + 4650 => ? Cl-28 + Ro-25 --> No reaction, used 232.50
+[r] L-53∙ + 4700 => ? Cl-28 + Ro-25 --> No reaction, used 235.00
+[r] L-53∙ + 4750 => ? Cl-28 + Ro-25 --> No reaction, used 237.50
+[r] L-53∙ + 4800 => ? Cl-28 + Ro-25 --> No reaction, used 240.00
+[r] L-53∙ + 4850 => ? Cl-28 + Ro-25 --> No reaction, used 242.50
+[r] L-53∙ + 4900 => ? Cl-28 + Ro-25 --> No reaction, used 245.00
+[r] L-53∙ + 4950 => ? Cl-28 + Ro-25 --> No reaction, used 247.50
+[r] L-53∙ + 5000 => ? Cl-28 + Ro-25 --> No reaction, used 250.00
+[r] L-53∙ + 5200 => ? Cl-28 + Ro-25 --> No reaction, used 260.00
+[r] L-53∙ + 5300 => ? Cl-28 + Ro-25 --> No reaction, used 265.00
+[r] L-53∙ + 5400 => ? Cl-28 + Ro-25 --> No reaction, used 270.00
+[r] L-53∙ + 5500 => ? Cl-28 + Ro-25 --> No reaction, used 275.00
+[r] L-53∙ + 5700 => ? Cl-28 + Ro-25 --> No reaction, used 285.00
+[r] L-53∙ + 5800 => ? Cl-28 + Ro-25 --> No reaction, used 290.00
+[r] L-53∙ + 5900 =>   Cl-28 + Ro-25 --> SUCCESS!     used 5870.09
+
+[r] L-54∙ + 4000 => ? Cl-29 + Ro-25 --> No reaction, used 200.00
+[r] L-54∙ + 4100 => ? Cl-29 + Ro-25 --> No reaction, used 205.00
+[r] L-54∙ + 4200 => ? Cl-29 + Ro-25 --> makes ClRo,  used 4179.54 nuclear, metallic
+[r] L-54∙ + 4150 => ? Cl-29 + Ro-25 --> SUCCESS!     used 4129.08 nuclear
 
 2025-08-25 Aug.Mon 13:05:37 Observed new recipe of 2 input 3-chains and 17071.15 NRG to make Lx-95. Current best chain is 5-chain totalling 11442.19 NRG. So it cost 5000 NRG more for less chains. 
 Need to implement a better system for tracking cheapest routes.

@@ -543,6 +543,7 @@ grab_token_image "L"    "54" "bohr"  $universe_bohr
 grab_token_image "L"    "55" "bohr"  $universe_bohr
 grab_token_image "L"    "56" "bohr"  $universe_bohr
 grab_token_image "L"    "57" "bohr"  $universe_bohr
+grab_token_image "L"    "58" "bohr"  $universe_bohr
 grab_token_image "Ux"   "48" "bohr"  $universe_bohr
 grab_token_image "Ux"   "49" "bohr"  $universe_bohr
 grab_token_image "Ux"   "50" "bohr"  $universe_bohr
