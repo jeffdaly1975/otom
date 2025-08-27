@@ -35,57 +35,95 @@ try splitting L-58 to make Ro-27 plus undiscovered Cl-31 BUT IT WILL BE TRICKY s
 [r] 1-chain L-53   ::  1063.54 |   As-6∙ +  Uq-47⁻   +[  1063.54 -   5000] => L-53                | nuclear                      | OTOMRO  137296 |
 [r] 1-chain L-54   ::  1113.33 |   As-7∙ +  Uq-47⁻   +[  1113.33 -   5000] => L-54                | nuclear                      | OTOMRO  323476 |
 
-[r] L-49⁺ + 3500 => ? Cl-26 + Ro-23 --> Makes ClRo using 3325.42 metallic
-
-[r] L-50⁺ + 3700 => ? Cl-26 + Ro-24 --> Makes ClRo using 3500.79 metallic
-
-[r] L-52⁺ + 3300 => ? Cl-28 + Ro-24 --> No reaction, used 165.00
-[r] L-52⁺ + 3350 => ? Cl-28 + Ro-24 --> No reaction, used 167.50
-[r] L-52⁺ + 3400 => ? Cl-28 + Ro-24 --> No reaction, used 170.00
-[r] L-52⁺ + 3500 => ? Cl-28 + Ro-24 --> No reaction, used 175.00
-[r] L-52⁺ + 3600 => ? Cl-28 + Ro-24 --> No reaction, used 180.00
-[r] L-52⁺ + 3700 => ? Cl-28 + Ro-24 --> No reaction, used 185.00
+[f] L-52⁺ + 3300 => ? Cl-28 + Ro-24 --> No reaction, used 165.00
+[f] L-52⁺ + 3350 => ? Cl-28 + Ro-24 --> No reaction, used 167.50
+[f] L-52⁺ + 3400 => ? Cl-28 + Ro-24 --> No reaction, used 170.00
+[f] L-52⁺ + 3500 => ? Cl-28 + Ro-24 --> No reaction, used 175.00
+[f] L-52⁺ + 3600 => ? Cl-28 + Ro-24 --> No reaction, used 180.00
+[f] L-52⁺ + 3700 => ? Cl-28 + Ro-24 --> No reaction, used 185.00
 [r] L-52⁺ + 3800 => ? Cl-28 + Ro-24 --> SUCCESS! used 3767.71 nuclear returning 32.29 so it probably can be narrowed even more
 
-[r] L-53∙ + 3600 => ? Cl-28 + Ro-25 --> No reaction, used 180.00
-[r] L-53∙ + 3770 => ? Cl-28 + Ro-25 --> No reaction, used 188.50
-[r] L-53∙ + 3800 => ? Cl-28 + Ro-25 --> No reaction, used 190.00
-[r] L-53∙ + 3850 => ? Cl-28 + Ro-25 --> No reaction, used 192.50
-[r] L-53∙ + 3900 => ? Cl-28 + Ro-25 --> No reaction, used 195.00
-[r] L-53∙ + 3950 => ? Cl-28 + Ro-25 --> No reaction, used 197.50
-[r] L-53∙ + 4000 => ? Cl-28 + Ro-25 --> No reaction, used 200.00
-[r] L-53∙ + 4050 => ? Cl-28 + Ro-25 --> No reaction, used 202.50
-[r] L-53∙ + 4100 => ? Cl-28 + Ro-25 --> No reaction, used 205.00
-[r] L-53∙ + 4150 => ? Cl-28 + Ro-25 --> No reaction, used 207.50
-[r] L-53∙ + 4200 => ? Cl-28 + Ro-25 --> No reaction, used 210.00
-[r] L-53∙ + 4250 => ? Cl-28 + Ro-25 --> No reaction, used 212.50
-[r] L-53∙ + 4300 => ? Cl-28 + Ro-25 --> No reaction, used 215.00
-[r] L-53∙ + 4350 => ? Cl-28 + Ro-25 --> No reaction, used 217.50
-[r] L-53∙ + 4400 => ? Cl-28 + Ro-25 --> No reaction, used 220.00
-[r] L-53∙ + 4450 => ? Cl-28 + Ro-25 --> No reaction, used 222.50
-[r] L-53∙ + 4500 => ? Cl-28 + Ro-25 --> No reaction, used 225.00
-[r] L-53∙ + 4550 => ? Cl-28 + Ro-25 --> No reaction, used 227.50
-[r] L-53∙ + 4600 => ? Cl-28 + Ro-25 --> No reaction, used 230.00
-[r] L-53∙ + 4650 => ? Cl-28 + Ro-25 --> No reaction, used 232.50
-[r] L-53∙ + 4700 => ? Cl-28 + Ro-25 --> No reaction, used 235.00
-[r] L-53∙ + 4750 => ? Cl-28 + Ro-25 --> No reaction, used 237.50
-[r] L-53∙ + 4800 => ? Cl-28 + Ro-25 --> No reaction, used 240.00
-[r] L-53∙ + 4850 => ? Cl-28 + Ro-25 --> No reaction, used 242.50
-[r] L-53∙ + 4900 => ? Cl-28 + Ro-25 --> No reaction, used 245.00
-[r] L-53∙ + 4950 => ? Cl-28 + Ro-25 --> No reaction, used 247.50
-[r] L-53∙ + 5000 => ? Cl-28 + Ro-25 --> No reaction, used 250.00
-[r] L-53∙ + 5200 => ? Cl-28 + Ro-25 --> No reaction, used 260.00
-[r] L-53∙ + 5300 => ? Cl-28 + Ro-25 --> No reaction, used 265.00
-[r] L-53∙ + 5400 => ? Cl-28 + Ro-25 --> No reaction, used 270.00
-[r] L-53∙ + 5500 => ? Cl-28 + Ro-25 --> No reaction, used 275.00
-[r] L-53∙ + 5700 => ? Cl-28 + Ro-25 --> No reaction, used 285.00
-[r] L-53∙ + 5800 => ? Cl-28 + Ro-25 --> No reaction, used 290.00
+[f] L-53∙ + 3600 => ? Cl-28 + Ro-25 --> No reaction, used 180.00
+[f] L-53∙ + 3770 => ? Cl-28 + Ro-25 --> No reaction, used 188.50
+[f] L-53∙ + 3800 => ? Cl-28 + Ro-25 --> No reaction, used 190.00
+[f] L-53∙ + 3850 => ? Cl-28 + Ro-25 --> No reaction, used 192.50
+[f] L-53∙ + 3900 => ? Cl-28 + Ro-25 --> No reaction, used 195.00
+[f] L-53∙ + 3950 => ? Cl-28 + Ro-25 --> No reaction, used 197.50
+[f] L-53∙ + 4000 => ? Cl-28 + Ro-25 --> No reaction, used 200.00
+[f] L-53∙ + 4050 => ? Cl-28 + Ro-25 --> No reaction, used 202.50
+[f] L-53∙ + 4100 => ? Cl-28 + Ro-25 --> No reaction, used 205.00
+[f] L-53∙ + 4150 => ? Cl-28 + Ro-25 --> No reaction, used 207.50
+[f] L-53∙ + 4200 => ? Cl-28 + Ro-25 --> No reaction, used 210.00
+[f] L-53∙ + 4250 => ? Cl-28 + Ro-25 --> No reaction, used 212.50
+[f] L-53∙ + 4300 => ? Cl-28 + Ro-25 --> No reaction, used 215.00
+[f] L-53∙ + 4350 => ? Cl-28 + Ro-25 --> No reaction, used 217.50
+[f] L-53∙ + 4400 => ? Cl-28 + Ro-25 --> No reaction, used 220.00
+[f] L-53∙ + 4450 => ? Cl-28 + Ro-25 --> No reaction, used 222.50
+[f] L-53∙ + 4500 => ? Cl-28 + Ro-25 --> No reaction, used 225.00
+[f] L-53∙ + 4550 => ? Cl-28 + Ro-25 --> No reaction, used 227.50
+[f] L-53∙ + 4600 => ? Cl-28 + Ro-25 --> No reaction, used 230.00
+[f] L-53∙ + 4650 => ? Cl-28 + Ro-25 --> No reaction, used 232.50
+[f] L-53∙ + 4700 => ? Cl-28 + Ro-25 --> No reaction, used 235.00
+[f] L-53∙ + 4750 => ? Cl-28 + Ro-25 --> No reaction, used 237.50
+[f] L-53∙ + 4800 => ? Cl-28 + Ro-25 --> No reaction, used 240.00
+[f] L-53∙ + 4850 => ? Cl-28 + Ro-25 --> No reaction, used 242.50
+[f] L-53∙ + 4900 => ? Cl-28 + Ro-25 --> No reaction, used 245.00
+[f] L-53∙ + 4950 => ? Cl-28 + Ro-25 --> No reaction, used 247.50
+[f] L-53∙ + 5000 => ? Cl-28 + Ro-25 --> No reaction, used 250.00
+[f] L-53∙ + 5200 => ? Cl-28 + Ro-25 --> No reaction, used 260.00
+[f] L-53∙ + 5300 => ? Cl-28 + Ro-25 --> No reaction, used 265.00
+[f] L-53∙ + 5400 => ? Cl-28 + Ro-25 --> No reaction, used 270.00
+[f] L-53∙ + 5500 => ? Cl-28 + Ro-25 --> No reaction, used 275.00
+[f] L-53∙ + 5700 => ? Cl-28 + Ro-25 --> No reaction, used 285.00
+[f] L-53∙ + 5800 => ? Cl-28 + Ro-25 --> No reaction, used 290.00
 [r] L-53∙ + 5900 =>   Cl-28 + Ro-25 --> SUCCESS!     used 5870.09
 
-[r] L-54∙ + 4000 => ? Cl-29 + Ro-25 --> No reaction, used 200.00
-[r] L-54∙ + 4100 => ? Cl-29 + Ro-25 --> No reaction, used 205.00
-[r] L-54∙ + 4200 => ? Cl-29 + Ro-25 --> makes ClRo,  used 4179.54 nuclear, metallic
-[r] L-54∙ + 4150 => ? Cl-29 + Ro-25 --> SUCCESS!     used 4129.08 nuclear
+[f] L-54∙ + 4000 => ? Cl-29 + Ro-25 --> No reaction, used 200.00
+[f] L-54∙ + 4100 => ? Cl-29 + Ro-25 --> No reaction, used 205.00
+[f] L-54∙ + 4200 => ? Cl-29 + Ro-25 --> makes ClRo,  used 4179.54 nuclear+metallic
+[r] L-54∙ + 4150 =>   Cl-29 + Ro-25 --> SUCCESS!     used 4129.08 nuclear
+
+[f] L-50⁺ + 3700 => ? Cl-26 + Ro-24 --> Makes ClRo using 3500.79 nuclear+metallic
+[f] L-50⁺ + 3400 => ? Cl-26 + Ro-24 --> No reaction, used 170.00
+[f] L-50⁺ + 3450 => ? Cl-26 + Ro-24 --> SUCCESS!     used 3443.88 nuclear
+[r] L-50⁺ + 3500 => ? Cl-26 + Ro-24 --> Makes ClRo   used 3490.79 nuclear+metallic
+
+[r] |  Ro-24ª +  Cl-26ª   1223 => L-50  used 1222.95 [ ] update chains
+[r] |  Ro-24ª +  Cl-26ª   1223 => L-50  
+[r] |  Ro-24ª +  Cl-26ª   1223 => L-50  
+
+[f] L-49⁺ + 3500 => ? Cl-26 + Ro-23 --> Makes ClRo using 3325.42 nuclear+metallic
+[f] L-49⁺ + 3550 => ? Cl-26 + Ro-23 --> Makes ClRo using 3327.92 nuclear+metallic
+[f] L-49⁺ + 3450 => ? Cl-26 + Ro-23 --> Makes ClRo using 3322.92
+[f] L-49⁺ + 3400 => ? Cl-26 + Ro-23 --> Makes ClRo using 3320.42
+[f] L-49⁺ + 3100 => ? Cl-26 + Ro-23 --> no reaction used  155.00
+[f] L-49⁺ + 3150 => ? Cl-26 + Ro-23 --> no reaction used  157.50
+[f] L-49⁺ + 3200 => ? Cl-26 + Ro-23 --> no reaction used  160.00
+[f] L-49⁺ + 3250 => ? Cl-26 + Ro-23 --> no reaction used  162.50
+[r] L-49⁺ + 3300 =>   Cl-26 + Ro-23 --> SUCCESS!    used 3271.90 nuclear
+
+[r] |  Xj-17⁺ +  Mt-32⁺   +   994.23 => L-49  used 994.13 [ ] update chains
+[r] |  Xj-17⁺ +  Mt-32⁺   +   994.23 => L-49 
+[r] |  Xj-17⁺ +  Mt-32⁺   +   994.23 => L-49 
+
+[f] L-57⁻ + 3200 => ? Cl-30 + Ro-27 --> makes Ux-57 used  160.00 decay
+[ ] L-57⁻ + 3300 => ? Cl-30 + Ro-27 --> makes       used  
+[ ] L-57⁻ + 3400 => ? Cl-30 + Ro-27 --> makes       used  
+
+[f] L-56⁻ + 3250 => ? Cl-30 + Ro-26 --> no reaction used  162.50
+[f] L-56⁻ + 3300 => ? Cl-30 + Ro-26 --> makes       used  165.00
+[f] L-56⁻ + 3350 => ? Cl-30 + Ro-26 --> makes       used  167.50
+[f] L-56⁻ + 3400 => ? Cl-30 + Ro-26 --> makes       used  170.00
+[f] L-56⁻ + 3450 => ? Cl-30 + Ro-26 --> makes       used  172.50
+[f] L-56⁻ + 3500 => ? Cl-30 + Ro-26 --> makes       used  175.00
+[f] L-56⁻ + 3550 => ? Cl-30 + Ro-26 --> makes       used  177.50
+[f] L-56⁻ + 3600 => ? Cl-30 + Ro-26 --> makes       used  180.00
+[f] L-56⁻ + 3650 => ? Cl-30 + Ro-26 --> makes       used  182.50
+[f] L-56⁻ + 3700 => ? Cl-30 + Ro-26 --> makes       used  185.00
+[f] L-56⁻ + 3750 => ? Cl-30 + Ro-26 --> makes       used  187.50
+[f] L-56⁻ + 3800 => ? Cl-30 + Ro-26 --> makes       used  190.00
+[f] L-56⁻ + 3850 => ? Cl-30 + Ro-26 --> makes       used  192.50
+[r] L-56⁻ + 3900 => ? Cl-30 + Ro-26 --> SUCCESS!    used 3891.55 nuclear
 
 2025-08-25 Aug.Mon 13:05:37 Observed new recipe of 2 input 3-chains and 17071.15 NRG to make Lx-95. Current best chain is 5-chain totalling 11442.19 NRG. So it cost 5000 NRG more for less chains. 
 Need to implement a better system for tracking cheapest routes.
