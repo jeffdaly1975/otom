@@ -687,14 +687,14 @@ I can make L-47 with something else, but I need L-47s for these 3 6-chains so th
 
 2025-08-14 Aug.Thu 08:20:50
 
-[ ] are these shorter chains
-   Sr-1∙ +   Z-97⁺  +[    1183.60 -     4400] => P-22 + Lx-76               | decay, nuclear               |
-   P-21⁺ + Aw-107ª  +[    2279.14 -     7000] => P-22 + Aw-106              | decay, nuclear               |
-  Se-84⁺            +[    5925.33 -    10000] => V-39 + Wy-45               | nuclear                      |
-  Cv-97⁺            +[    6986.31 -    10000] => Wy-45 + Qe-52              | nuclear                      |
-  Vi-14⁻ +  Uq-51⁻  +[    1379.49 -     5000] => C-65                       | decay, nuclear               |
- Ha-108⁺            +[    7180.96 -    12000] => Ai-58 + Pg-50              | nuclear                      |
- Eh-124ª            +[    8549.33 -    25000] => Yv-67 + Ns-57              | nuclear                      |
+[c] are these shorter chains
+[c]   Sr-1∙ +   Z-97⁺  +[    1183.60 -     4400] => P-22 + Lx-76               | decay, nuclear               | YES
+[c]   P-21⁺ + Aw-107ª  +[    2279.14 -     7000] => P-22 + Aw-106              | decay, nuclear               |
+[-]  Se-84⁺            +[    5925.33 -    10000] => V-39 + Wy-45               | nuclear                      |
+[-]  Cv-97⁺            +[    6986.31 -    10000] => Wy-45 + Qe-52              | nuclear                      |
+[c]  Vi-14⁻ +  Uq-51⁻  +[    1379.49 -     5000] => C-65                       | decay, nuclear               |
+[c] Ha-108⁺            +[    7180.96 -    12000] => Ai-58 + Pg-50              | nuclear                      |
+[c] Eh-124ª            +[    8549.33 -    25000] => Yv-67 + Ns-57              | nuclear                      |
 
 2025-08-13 Aug.Wed 17:52:38 Discovered and fixed a small bug in my parser. For cases with only an initiateReaction() tx I was incorrectly listing the initiateReaction() tx as ? and the analyseReactions() tx in its place. Whoops.
 2025-08-11 Aug.Mon 09:28:55 New discoveries! Now 732 Bohr isotopes
