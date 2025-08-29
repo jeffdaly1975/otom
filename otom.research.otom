@@ -1,3 +1,38 @@
+2025-08-29 Aug.Fri 11:49:10 Seven new discoveries! 745 isotopes in Bohr now.
+
+OTOMRO 511560: | Ro-22⁺  + Ux-48⁺ +   3000 -> D-70    => Iu-70 + 1,598.632925212429199746 using 1401.37 nuclear+decay 
+OTOMRO 511482: | Vi-10⁺  + F-61⁺  +   3000 -> D-71    => Iu-71 + 1,997.56274951           using 1002.44 nuclear+decay 
+OTOMRO 511559: | As-5⁺   + Lx-76⁺ +   3000 -> Vl-81   => U-81  + 2,169.043325375098447694 using  830.96 nuclear+decay 
+OTOMRO 511557: | As-5⁺   + Lx-77⁺ +   3000 -> Vl-82   => U-82  + 2,131.946177239850840124 using  868.05 nuclear+decay 
+OTOMRO 511562: | Vi-10⁺  + C-53⁺  +   3000 -> Yv-63   => Kk-63 + 2,138.783296878223154636 using  861.22 nuclear+decay 
+OTOMRO 511563: | Gj-9⁺   + C-53⁺  +   3000 -> Kk-62   => Gy-62 + 2,043.176032268997005303 using  956.82 nuclear+decay 
+OTOMRO 511564: | Ro-22⁺  + C-53⁺  +   3000 -> Lx-75   => W-75  + 1,525.436244628216172714 using 1474.56 nuclear+decay 
+
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [c] make it myself
+  [c] grabtheseimages.sh
+  [ ] add to isotopes_worker.bohr.sh
+  [ ] add to get_isotopes_bohr.alchemy.pl
+  [ ] add to token_id_sort_order-bohr.otom
+  [ ] add to token_id_sort_order_1_column-bohr.otom
+  [ ] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+try:
+[ ] U-81⁺ + 10000 => ? Gd-37 + Pb-44 
+
+
 2025-08-28 Aug.Thu 22:16:51
 
 Here are the current 738 bohr isotopes with their decay type and stability values. If you try creating this from 2 input otoms with enough energy, it will then decay to the item on the right if the probabities allow.
@@ -749,13 +784,13 @@ Here are the current 738 bohr isotopes with their decay type and stability value
 
 Some possibilities:
       input otoms       |inputchains| NRG in   |intermediate=> result
-[ ] | Vi-10⁺  + F-61⁺   |  0c +  2c |  1834.68 | -> D-71    => ? Iu-71
-[ ] | As-5⁺   + Lx-77⁺  |  0c +  5c |  8486.85 | -> Vl-82   => ? U-82
-[ ] | As-5⁺   + Lx-76⁺  |  0c +  4c |  9053.84 | -> Vl-81   => ? U-81
-[ ] | Ro-22⁺  + Ux-48⁺  |  0c +  5c | 13773.75 | -> D-70    => ? Iu-70
-[ ] | Ro-22⁺  + C-53⁺   |  0c +  6c | 16049.53 | -> Lx-75   => ? W-75
-[ ] | Vi-10⁺  + C-53⁺   |  0c +  6c | 16049.53 | -> Yv-63   => ? Kk-63
-[ ] | Gj-9⁺   + C-53⁺   |  1c +  6c | 16631.95 | -> Kk-62   => ? Gy-62
+[>] | Vi-10⁺  + F-61⁺   |  0c +  2c |  1834.68 | -> D-71    => ? Iu-71
+[>] | As-5⁺   + Lx-77⁺  |  0c +  5c |  8486.85 | -> Vl-82   => ? U-82
+[>] | As-5⁺   + Lx-76⁺  |  0c +  4c |  9053.84 | -> Vl-81   => ? U-81
+[>] | Ro-22⁺  + Ux-48⁺  |  0c +  5c | 13773.75 | -> D-70    => ? Iu-70
+[>] | Ro-22⁺  + C-53⁺   |  0c +  6c | 16049.53 | -> Lx-75   => ? W-75
+[>] | Vi-10⁺  + C-53⁺   |  0c +  6c | 16049.53 | -> Yv-63   => ? Kk-63
+[>] | Gj-9⁺   + C-53⁺   |  1c +  6c | 16631.95 | -> Kk-62   => ? Gy-62
 [ ] | Vi-10⁺  + Nd-27⁺  |  0c +  7c | 20196.16 | -> V-37    => ? Gd-37
 [ ] | Dz-10⁻  + Uq-52⁻  |  4c +  6c | 25907.73 | -> Ux-62   => ? Pg-62
 [ ] | Eb-23⁻  + Lx-96⁻  |  6c +  5c | 31783.74 | -> Z-119   => ? Cv-119
@@ -769,6 +804,58 @@ Some possibilities:
 [ ] | Cl-30⁻  + Uq-52⁻  |  6c +  6c | 45438.56 | -> Yv-82   => ? Cj-82
 [ ] | P-26⁻   + Uq-52⁻  |  6c +  6c | 45603.26 | -> Gy-78   => ? Kk-78
 [ ] | Vi-15⁻  + Uq-52⁻  |  8c +  6c | 45908.80 | -> Qe-67   => ? C-67
+
+
+
+[r] |  Vi-10⁺ +  Eb-19⁺   +[   452.90 -   5000] => Nd-29               | decay, nuclear               | OTOMRO  115888 |
+[r] |  Nd-29⁺ +  Mt-32⁺   +[  1381.78 -   5000] => F-61                | nuclear                      | OTOMRO  125347 |
+[r] | Vi-10⁺  + F-61⁺     +   3000 -> D-71    => ? Iu-71 <---SUCCESS! makes Iu-71 + 1,997.56274951 using 1002.44 nuclear+decay OTOMRO 511482
+
+[r] |  Ro-22⁺ +  S-102ª   +[  2235.72*-  20000] => P-22 + Z-102        | decay, nuclear               | OTOMRO  229747 |
+[r] |  Ro-22⁺ +  Z-102ª   +[  2155.34*-   4000] => P-22 + Cv-102       | decay, nuclear               | OTOMRO  192731 |
+[r] |  Eb-19⁺ + Cv-102ª   +[  2051.48 -   5000] => P-22 + Z-99         | decay, nuclear               | OTOMRO  359166 |
+[r] |  Ro-22⁺ +   Z-99⁺   +[  2044.31 -   5000] => P-22 + Cv-99        | decay, nuclear               | OTOMRO  359167 |
+[r] |  Cv-99ª             +[     0.00 -      0] => P-22 + Lx-77        | decay                        | OTOMRO   91136*|
+[r] | As-5⁺   + Lx-77⁺    +   3000               -> Vl-82   => ? U-82 <----SUCCESS makes U-82 + 2,131.946177239850840124 using 868.05 nuclear+decay OTOMRO 511557
+
+[r] |   K-31⁺ +  Mt-34⁺   +[  1603.06*-  20000] => Gy-65               | nuclear                      | OTOMRO   54142 |
+[r] |  Ro-22⁺ +  Mt-32⁺   +[  1099.30 -   1100] => Qe-54               | decay, nuclear               | OTOMRO  142488 |
+[r] |  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97         | decay, nuclear               | OTOMRO  132974 |
+[r] |  Ro-22⁺ +   S-97⁺   +[  2032.67 -   5000] => P-22 + Z-97         | decay, nuclear               | OTOMRO         |
+[r] |   Sr-1∙ +   Z-97⁺   +[  1183.60 -   4400] => P-22 + Lx-76        | decay, nuclear               | OTOMRO  363047*| used 1022.80 [c] update chains
+[r] | As-5⁺   + Lx-76⁺    +   3000               -> Vl-81   => ? U-81 <---SUCCESS makes U-81 + 2,169.043325375098447694 using 830.96 nuclear+decay OTOMRO 511559
+
+[r] |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+[r] |  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+[r] |  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        | decay, nuclear               | OTOMRO  362145 |
+[r] |  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        | decay, nuclear               | OTOMRO  109901 |
+[r] |  Ok-89⁺             +[  6058.30 -   6068] => Uq-41 + Ux-48       | nuclear                      | OTOMRO  443101 |
+[r] | Ro-22⁺  + Ux-48⁺    +   3000               -> D-70    => ? Iu-70 <---SUCCESS makes Iu-70 + 1,598.632925212429199746 using 1401.37 nuclear+decay OTOMRO 511560
+
+[r] |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+[r] |  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+[r] |  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        | decay, nuclear               | OTOMRO  362145 |
+[r] |  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        | decay, nuclear               | OTOMRO  109901 |
+[r] |  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        | decay, nuclear               | OTOMRO  137835 |
+[r] |  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         | nuclear                      | OTOMRO  142498 |
+[r] | Ro-22⁺  + C-53⁺     +   3000               -> Lx-75   => ? W-75 <---SUCCESS makes W-75 + 1,525.436244628216172714 using 1474.56 nuclear+decay OTOMRO 511564 
+
+[r] |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+[r] |  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+[r] |  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        | decay, nuclear               | OTOMRO  362145 |
+[r] |  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        | decay, nuclear               | OTOMRO  109901 |
+[r] |  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        | decay, nuclear               | OTOMRO  137835 |
+[r] |  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         | nuclear                      | OTOMRO  142498 |
+[r] | Vi-10⁺  + C-53⁺     +   3000               -> Yv-63   => ? Kk-63 <---SUCCESS makes Kk-63 + 2,138.783296878223154636 using 861.22 nuclear+decay OTOMRO 511562
+
+[r] |  Xj-17⁺             +[   582.42 -   5000] => Dz-8 + Gj-9         | nuclear                      | OTOMRO  115882 |
+[r] |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+[r] |  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+[r] |  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        | decay, nuclear               | OTOMRO  362145 |
+[r] |  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        | decay, nuclear               | OTOMRO  109901 |
+[r] |  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        | decay, nuclear               | OTOMRO  137835 |
+[r] |  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         | nuclear                      | OTOMRO  142498 |
+[r] | Gj-9⁺   + C-53⁺     +   3000  -> Kk-62   => ? Gy-62 <---SUCCESS makes Gy-62 + 2,043.176032268997005303 using 956.82 nuclear+decay OTOMRO 511563
 
 2025-08-25 Aug.Mon 13:31:59 New discovery L-58 makes 738 isotopes in Bohr
 
