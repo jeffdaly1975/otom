@@ -1,3 +1,8 @@
+
+2025-08-31 Aug.Sun 13:16:34 [ ] shorter chain maybe:
+
+|   478414*|  Dx-41⁻ +  Pb-51⁻                               +    30000 =>   N-92                                                                             +   26186.15 |    3813.85 | nuclear                      |
+
 2025-08-29 Aug.Fri 11:49:10 Seven new discoveries! 745 isotopes in Bohr now.
 
 OTOMRO 511560: | Ro-22⁺  + Ux-48⁺ +   3000 -> D-70    => Iu-70 + 1,598.632925212429199746 using 1401.37 nuclear+decay 
@@ -22,12 +27,12 @@ OTOMRO 511564: | Ro-22⁺  + C-53⁺  +   3000 -> Lx-75   => W-75  + 1,525.43624
   [c] add to checklist.bohr.otom
   [c] make it myself
   [c] grabtheseimages.sh
-  [ ] add to isotopes_worker.bohr.sh
-  [ ] add to get_isotopes_bohr.alchemy.pl
-  [ ] add to token_id_sort_order-bohr.otom
-  [ ] add to token_id_sort_order_1_column-bohr.otom
-  [ ] add to token_ids-bohr.csv
-  [ ] add to bohr_chain_recipes_for_morpheus.csv
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
+  [c] add to bohr_chain_recipes_for_morpheus.csv
 
 try:
 [ ] U-81⁺ + 10000 => ? Gd-37 + Pb-44 
