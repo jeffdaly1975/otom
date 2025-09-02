@@ -1,3 +1,103 @@
+2025-09-02 Sep.Tue 10:47:12 Three more discoveries using the new isotopes from the last discoveries last night, so now we are at 761 isotopes in Bohr
+
+OTOMRO 521925 | Kk-78⁻              +  10000                => K-36⁻  + Lu-42⁻ + 3807.457783792438021919 using 6192.54 nuclear
+OTOMRO 521937 | Cj-67⁺              +  10000                => Mt-31⁺ + Dx-36⁺ + 5486.011766793967581179 using 4513.99 nuclear
+OTOMRO 521942 | Co-73⁺              +      0                => D-73⁺           +    0.0                  using    0.00 decay  
+
+[.] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [ ] add to decay.bohr.otom
+  [ ] add to checklist.bohr.otom
+  [c] make it myself
+  [ ] grabtheseimages.sh
+  [ ] add to isotopes_worker.bohr.sh
+  [ ] add to get_isotopes_bohr.alchemy.pl
+  [ ] add to token_id_sort_order-bohr.otom
+  [ ] add to token_id_sort_order_1_column-bohr.otom
+  [ ] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+2025-09-01 Sep.Mon 23:41:04 new discoveries so now 758 Bohr isotopes
+
+OTOMRO 520617 | T-19⁻   + Uq-52⁻    +   5000   ->  *Ns-71⁻  =>  Ai-71⁻       + 3565.345708407574875309 NRG using 1434.65 nuclear+decay
+OTOMRO 520619 | Cl-30⁻  + Uq-52⁻    +   5000   ->  *Yv-82⁻  =>  Cj-82⁻       + 3153.895025193878609571 NRG using 1846.10 nuclear+decay
+OTOMRO 520621 | K-37⁻   + Uq-52⁻    +   5000   ->  *D-89⁻   =>  Co-89⁻       + 2936.388755840409430675 NRG using 2063.61 nuclear+decay
+OTOMRO 520622 | Dz-10⁻  + Uq-52⁻    +   5000   ->  *Ux-62⁻  =>  Pg-62⁻       + 3924.144505979702898912 NRG using 1075.86 nuclear+decay
+OTOMRO 520624 | P-26⁻   + Uq-52⁻    +   5000   ->  *Gy-78⁻  =>  Kk-78⁻       + 3348.642928369893525087 NRG using 1651.36 nuclear+decay
+OTOMRO 520625 | Eb-23⁻  + Lx-96⁻    +   5000   ->  *Z-119⁻  =>  Cv-119⁻      + 2755.485331122976731422 NRG using 2244.51 nuclear+decay
+OTOMRO 520626 | Nd-27⁺  + L-46⁺     +   5000   ->  *W-73⁺   =>  Co-73⁺       + 3508.568450172796474362 NRG using 1491.43 nuclear+decay
+OTOMRO 520628 | Nd-27⁺  + C-53⁺     +   5000   ->  *Vl-80⁺  =>  U-80⁺        + 3374.295559623158624163 NRG using 1625.70 nuclear+decay
+OTOMRO 520629 | K-29⁺   + C-53⁺     +   5000   ->  *Se-82⁺  =>  Vl-82⁺       + 3292.206765610340880812 NRG using 1707.79 nuclear+decay
+OTOMRO 520630 | Vi-15⁻  + Uq-52⁻    +   5000   ->  *Qe-67⁻  =>  C-67⁻        + 3809.096820016045967350 NRG using 1190.90 nuclear+decay
+OTOMRO 520631 | T-14⁺   + C-53⁺     +   5000   ->  *Iu-67⁺  =>  Cj-67⁺       + 3802.758366159928755224 NRG using 1197.24 nuclear+decay 
+
+[.] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [ ] add to decay.bohr.otom
+  [ ] add to checklist.bohr.otom
+  [c] make it myself
+  [ ] grabtheseimages.sh
+  [ ] add to isotopes_worker.bohr.sh
+  [ ] add to get_isotopes_bohr.alchemy.pl
+  [ ] add to token_id_sort_order-bohr.otom
+  [ ] add to token_id_sort_order_1_column-bohr.otom
+  [ ] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+try:
+[f] C-67⁻   + 10000 => ? Cl-31 + K-36    ---->     NOPE makes Cl-30 + K-37 using 5238.30 nuclear
+[r] Kk-78⁻  + 10000 => ?  K-36 + Lu-42   ----> SUCCESS! makes K-36  + Lu-42 + 3,807.457783792438021919 using 6192.54 nuclear (OTOMRO 521925)
+[r] Cj-67⁺  + 10000 => ? Mt-31 + Dx-36   ----> SUCCESS! makes Mt-31 + Dx-36 + 5,486.011766793967581179 using 4513.99 nuclear (OTOMRO 521937)
+[r] Co-73⁺  +     0 => ? D-73            ----> SUCCESS! makes D-73          + 0.0                      using    0.00 decay   (OTOMRO 521942)
+[ ] Co-73⁺  + 10000 => ? Lu-33 + V-40 
+[r] U-80⁺   + 10000 => ? Gd-37 + Pb-43  ---> WHAT THE FUCK? WHY DID I WASTE THAT U-80? I ALREADY DISCOVERED Gd-37!! DANGIT!!!!
+[-] Vl-82⁺  + 10000 => ? Gd-37 + Wy-45
+
+2025-08-31 Aug.Sun 16:42:53 two more discoveries so 747 Bohr isotopes
+
+OTOMRO 517785 U-81⁺   + 9000 => Gd-37⁺ + Pb-44⁺  + 3255.527763155054344679 using 5744.47 nuclear
+OTOMRO 517809 Gd-37⁺  + 5000 => Xj-17⁺ + P-20⁺   + 3004.915062352060431294 using 1995.08 nuclear 
+
+[.] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [ ] add to decay.bohr.otom
+  [ ] add to checklist.bohr.otom
+  [c] make it myself
+  [ ] grabtheseimages.sh
+  [ ] add to isotopes_worker.bohr.sh
+  [ ] add to get_isotopes_bohr.alchemy.pl
+  [ ] add to token_id_sort_order-bohr.otom
+  [ ] add to token_id_sort_order_1_column-bohr.otom
+  [ ] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
 2025-08-31 Aug.Sun 13:16:34 [ ] shorter chain maybe:
 
 |   478414*|  Dx-41⁻ +  Pb-51⁻                               +    30000 =>   N-92                                                                             +   26186.15 |    3813.85 | nuclear                      |
@@ -34,7 +134,10 @@ OTOMRO 511564: | Ro-22⁺  + C-53⁺  +   3000 -> Lx-75   => W-75  + 1,525.43624
   [c] add to bohr_chain_recipes_for_morpheus.csv
 
 try:
-[ ] U-81⁺ + 10000 => ? Gd-37 + Pb-44 
+[r] U-81⁺ + 9000 => ? Gd-37 + Pb-44  <----SUCCESS! makes Gd-37 + Pb-44 + 3255.527763155054344679 using 5744.47 nuclear OTOMRO 517785
+
+then maybe:
+[r] Gd-37⁺  + 5000 => ? Xj-17 + P-20 ---> SUCCESS makes Xj-17 + P-20 + 3,004.915062352060431294 using 1995.08 nuclear OTOMRO 517809
 
 
 2025-08-28 Aug.Thu 22:16:51
@@ -795,19 +898,19 @@ Some possibilities:
 [>] | Ro-22⁺  + C-53⁺   |  0c +  6c | 16049.53 | -> Lx-75   => ? W-75
 [>] | Vi-10⁺  + C-53⁺   |  0c +  6c | 16049.53 | -> Yv-63   => ? Kk-63
 [>] | Gj-9⁺   + C-53⁺   |  1c +  6c | 16631.95 | -> Kk-62   => ? Gy-62
-[ ] | Vi-10⁺  + Nd-27⁺  |  0c +  7c | 20196.16 | -> V-37    => ? Gd-37
-[ ] | Dz-10⁻  + Uq-52⁻  |  4c +  6c | 25907.73 | -> Ux-62   => ? Pg-62
-[ ] | Eb-23⁻  + Lx-96⁻  |  6c +  5c | 31783.74 | -> Z-119   => ? Cv-119
-[ ] | K-29⁺   + C-53⁺   |  7c +  6c | 35196.92 | -> Se-82   => ? Vl-82
-[ ] | Nd-27⁺  + C-53⁺   |  7c +  6c | 36245.69 | -> Vl-80   => ? U-80
-[ ] | Nd-27⁺  + L-46⁺   |  7c +  6c | 36245.69 | -> W-73    => ? Co-73
-[ ] | K-37⁻   + Uq-52⁻  |  5c +  6c | 36924.65 | -> D-89    => ? Co-89
-[ ] | Ro-28⁻  + Lx-96⁻  |  7c +  5c | 36987.05 | -> Vt-124  => ? Ek-124 but Vt-124 might be impossible
-[ ] | T-14⁺   + C-53⁺   |  8c +  6c | 37275.79 | -> Iu-67   => ? Cj-67
-[ ] | T-19⁻   + Uq-52⁻  |  6c +  6c | 40731.09 | -> Ns-71   => ? Ai-71
-[ ] | Cl-30⁻  + Uq-52⁻  |  6c +  6c | 45438.56 | -> Yv-82   => ? Cj-82
-[ ] | P-26⁻   + Uq-52⁻  |  6c +  6c | 45603.26 | -> Gy-78   => ? Kk-78
-[ ] | Vi-15⁻  + Uq-52⁻  |  8c +  6c | 45908.80 | -> Qe-67   => ? C-67
+[-] | Vi-10⁺  + Nd-27⁺  |  0c +  7c | 20196.16 | -> V-37    => ? Gd-37
+[>] | Dz-10⁻  + Uq-52⁻  |  4c +  6c | 25907.73 | -> Ux-62   => ? Pg-62
+[>] | Eb-23⁻  + Lx-96⁻  |  6c +  5c | 31783.74 | -> Z-119   => ? Cv-119
+[>] | K-29⁺   + C-53⁺   |  7c +  6c | 35196.92 | -> Se-82   => ? Vl-82
+[>] | Nd-27⁺  + C-53⁺   |  7c +  6c | 36245.69 | -> Vl-80   => ? U-80
+[>] | Nd-27⁺  + L-46⁺   |  7c +  6c | 36245.69 | -> W-73    => ? Co-73
+[>] | K-37⁻   + Uq-52⁻  |  5c +  6c | 36924.65 | -> D-89    => ? Co-89
+[>] | Ro-28⁻  + Lx-96⁻  |  7c +  5c | 36987.05 | -> Vt-124  => ? Ek-124 but Vt-124 might be impossible
+[>] | T-14⁺   + C-53⁺   |  8c +  6c | 37275.79 | -> Iu-67   => ? Cj-67
+[>] | T-19⁻   + Uq-52⁻  |  6c +  6c | 40731.09 | -> Ns-71   => ? Ai-71
+[>] | Cl-30⁻  + Uq-52⁻  |  6c +  6c | 45438.56 | -> Yv-82   => ? Cj-82
+[>] | P-26⁻   + Uq-52⁻  |  6c +  6c | 45603.26 | -> Gy-78   => ? Kk-78
+[>] | Vi-15⁻  + Uq-52⁻  |  8c +  6c | 45908.80 | -> Qe-67   => ? C-67
 
 
 
@@ -860,6 +963,223 @@ Some possibilities:
 [r] |  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        | decay, nuclear               | OTOMRO  137835 |
 [r] |  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         | nuclear                      | OTOMRO  142498 |
 [r] | Gj-9⁺   + C-53⁺     +   3000  -> Kk-62   => ? Gy-62 <---SUCCESS makes Gy-62 + 2,043.176032268997005303 using 956.82 nuclear+decay OTOMRO 511563
+
+[c] DO THESE
+[r] |   K-34∙ +  Kk-70ª   +[  3459.34*-  20000] => Da-104              |
+[r] |   K-34∙ +  Kk-70ª   +[  3459.34*-  20000] => Da-104              |
+[r] |  Mt-32⁺ +  Mt-32⁺   +[  1388.39*-   4000] => Gy-64               |
+[r] |  Mt-32⁺ +  Mt-32⁺   +[  1388.39*-   4000] => Gy-64               |
+[r] |  Mt-32⁺ +  Mt-32⁺   +[  1388.39*-   4000] => Gy-64               |
+[r] |   T-15⁺ +   L-51⁺   +[  1320.24*-   5000] => Gy-66               |
+[r] |   T-15⁺ +   L-51⁺   +[  1320.24*-   5000] => Gy-66               |
+[r] |   T-15⁺ +   L-51⁺   +[  1320.24*-   5000] => Gy-66               |
+[r] |  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+[r] |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
+[r] |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
+[r] |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
+[r] |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
+[r] |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
+[r] |  Uq-47⁻ +  Kk-71ª   +[  3232.72*-  20000] => P-22 + Se-96        |
+[r] |   P-23∙ + Da-104ª   +[  3409.45 -   5000] => P-22 + Da-105       |
+[r] |  Gj-11∙ +  Nd-34⁻   +[  1023.44*-   5000] => Gd-45               |
+[r] |  Gy-64⁺ +  Gy-66ª   +[  3435.99*-  10000] => P-22 + Ji-108       |
+[r] |  Gy-64⁺ +  Gy-66ª   +[  3435.99*-  10000] => P-22 + Ji-108       |
+[r] |  Gy-64⁺ +  Gy-66ª   +[  3435.99*-  10000] => P-22 + Ji-108       |
+[r] |  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        |
+[r] |  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        |
+[r] |  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        |
+[r] |  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        |
+[r] |  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        |
+[r] |   P-24⁻ +  Nm-97ª   +[  2488.17*-   4000] => P-22 + Nm-99        |
+[r] |   P-24⁻ +  Nm-97ª   +[  2488.17*-   4000] => P-22 + Nm-99        |
+[r] |  Eb-22∙ + Da-104ª   +[  3243.21 -   5000] => P-22 + Ok-104       |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        |
+[r] |   P-24⁻ +  Se-96∙   +[  3287.51*-   4000] => P-22 + Se-98        |
+[r] |  Ro-22⁺ + Ji-108ª   +[  2105.06 -   4000] => P-22 + Aw-108       |
+[r] |  Ro-22⁺ + Ji-108ª   +[  2105.06 -   4000] => P-22 + Aw-108       |
+[r] |  Ro-22⁺ + Ji-108ª   +[  2105.06 -   4000] => P-22 + Aw-108       |
+[r] |   Sr-3∙ + Da-105ª   +[  1423.99 -   5000] => Da-108              |
+[r] |  Eb-22∙ + Ok-104ª   +[  3132.86 -   5000] => P-22 + Dd-104       |
+[r] |  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        |
+[r] |  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        |
+[r] |  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        |
+[r] |  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        |
+[r] |  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        |
+[r] |   Sr-3∙ +  Se-98∙   +[  1759.33 -   5000] => Se-101              |
+[r] |  Eb-22∙ +  Nm-99ª   +[  3072.66 -   4500] => P-22 + Se-99        |
+[r] |  Eb-22∙ +  Nm-99ª   +[  3072.66 -   4500] => P-22 + Se-99        |
+[r] |  Gd-45⁻             +[  2775.38 -  10000] => Xj-21 + P-24        |
+[r] |   Sr-2∙ + Da-108∙   +[  1689.04*-   5000] => P-22 + Co-88        |
+[r] |  Xj-21⁻             +[   762.48 -   3000] => Dz-10 + Gj-11       |
+[r] |  Ro-22⁺ + Aw-108ª   +[  2029.56 -   5000] => P-22 + Kn-108       | used 2024.86 [ ] update chains
+[r] |  Ro-22⁺ + Aw-108ª   +[  2029.56 -   5000] => P-22 + Kn-108       |
+[r] |  Ro-22⁺ + Aw-108ª   +[  2029.56 -   5000] => P-22 + Kn-108       |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        |
+[r] |  Eb-22∙ + Dd-104⁻   +[  3037.14 -   5000] => P-22 + Nm-104       | used 3034.54 [ ] update chains
+[r] |  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        |
+[r] |  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        |
+[r] |  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        |
+[r] |  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        |
+[r] |  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        |
+[r] |  Eb-22∙ + Se-101∙   +[  3913.19 -   4500] => P-22 + Vl-101       |
+[r] |   Sr-3∙ +  Se-99∙   +[  1751.37*-   5000] => P-22 + Yv-80        |
+[r] |   Sr-3∙ +  Se-99∙   +[  1751.37*-   5000] => P-22 + Yv-80        |
+[r] |  Yv-80⁻             +[  6516.87 -  12000] => K-37 + Dx-43        | used 6516.77 [ ] update chains
+[r] |  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        |
+[r] |  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        |
+[r] |  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        |
+[r] |  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        |
+[r] |  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        |
+[r] |  Ro-22⁺ + Kn-108⁺   +[  1913.50 -  30000] => P-22 + Ha-108       |
+[r] |  Ro-22⁺ + Kn-108⁺   +[  1913.50 -  30000] => P-22 + Ha-108       |
+[r] |  Ro-22⁺ + Kn-108⁺   +[  1913.50 -  30000] => P-22 + Ha-108       | used 1908.20 [ ] update chains
+[r] |  Yv-80⁻             +[  6516.87 -  12000] => K-37 + Dx-43        |
+[r] |  Co-88⁻             +[  7622.84 -  10000] => Lu-41 + V-47        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] |   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        |
+[r] | Nm-104⁻             +[  8981.49 -  10000] => V-48 + L-56         | used 8981.34 [ ] update chains
+[r] | Vl-101⁻             +[  8306.73 -   8310] => Gd-46 + Wy-55       | used 8306.58 [ ] update chains
+[r] |  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         |
+[r] |  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         |
+[r] |  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         |
+[r] |  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         |
+[r] |  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         |
+[r] |  Wy-55⁻             +[  3631.81 -   3940] => P-25 + Cl-30        | used 3616.41 [ ] update chains
+[r] |  Dx-43⁻             +[  2551.20 -   5000] => Xj-20 + Eb-23       | used 2550.90 [ ] update chains
+[r] |   V-48⁻             +[  2959.65 -  10000] => Eb-22 + P-26        |
+[r] | Ha-108⁺             +[  7180.96 -  12000] => Ai-58 + Pg-50       | used 6940.01 [c] update chains
+[r] | Ha-108⁺             +[  6940.01 -  12000] => Ai-58 + Pg-50       | used 6928.01 [c] update chains
+[r] | Ha-108⁺             +[  6928.01 -  12000] => Ai-58 + Pg-50       | used 6927.41 [c] update chains
+[r] |  Lu-41⁻             +[  2336.86 -  10000] => T-19 + Eb-22        | used 2332.71 [ ] update chains
+[r] |  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r] |  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r] |  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r] |  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r] |  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r] |  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r] |  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r] |  Lx-96⁻             +[  7692.11*-   7700] => Dx-44 + Uq-52       |
+[r] |   C-53⁺             +[  3097.86 -  10000] => Cl-24 + K-29        | used 3097.81 [c] update chains
+[r] |   C-53⁺             +[  3097.81 -  10000] => Cl-24 + K-29        |
+[r] |   C-53⁺             +[  3097.81 -  10000] => Cl-24 + K-29        |
+[r] |  Pg-50⁺             +[  2837.23 -   2860] => Ro-23 + Nd-27       | used 2837.13 [c] update chains
+[r] |  Pg-50⁺             +[  2837.13 -   2860] => Ro-23 + Nd-27       |
+[r] |  Pg-50⁺             +[  2837.13 -   2860] => Ro-23 + Nd-27       |
+[r] |  Uq-52⁻             +[  3100.02 -   5000] => P-24 + Ro-28        | used 3099.82 [c] update chains
+[r] |  Uq-52⁻             +[  3099.82 -   5000] => P-24 + Ro-28        | used 3099.77 [c] update chains
+[r] |  Nd-27⁺             +[  1030.10 -   3000] => Ct-13 + T-14        | used 1025.15 [c] update chains
+[r] |  Ro-28⁻             +[  1229.64 -   3000] => Vi-13 + Vi-15       | used 1225.14 [c] update chains
+[r] | T-19⁻   + Uq-52⁻    +   5000   -> ? Ns-71⁻  => ? Ai-71  (OTOMRO 520617) makes Ai-71        + 3,565.345708407574875309 NRG using 1434.65 nuclear+decay
+[r] | Cl-30⁻  + Uq-52⁻    +   5000   -> ? Yv-82⁻  => ? Cj-82  (OTOMRO 520619) makes Cj-82        + 3,153.895025193878609571 NRG using 1846.10 nuclear+decay
+[r] | K-37⁻   + Uq-52⁻    +   5000   -> ? D-89⁻   => ? Co-89  (OTOMRO 520621) makes Co-89        + 2,936.388755840409430675 NRG using 2063.61 nuclear+decay
+[r] | Dz-10⁻  + Uq-52⁻    +   5000   -> ? Ux-62⁻  => ? Pg-62  (OTOMRO 520622) makes Pg-62        + 3,924.144505979702898912 NRG using 1075.86 nuclear+decay
+[r] | P-26⁻   + Uq-52⁻    +   5000   -> ? Gy-78⁻  => ? Kk-78  (OTOMRO 520624) makes Kk-78        + 3,348.642928369893525087 NRG using 1651.36 nuclear+decay
+[r] | Eb-23⁻  + Lx-96⁻    +   5000   -> ? Z-119⁻  => ? Cv-119 (OTOMRO 520625) makes Cv-119       + 2,755.485331122976731422 NRG using 2244.51 nuclear+decay
+[r] | Nd-27⁺  + L-46⁺     +   5000   -> ? W-73⁺   => ? Co-73  (OTOMRO 520626) makes Co-73        + 3,508.568450172796474362 NRG using 1491.43 nuclear+decay
+[r] | Ro-28⁻  + Lx-96⁻    +   5000   -> ? Vt-124⁻ => ? Ek-124 (OTOMRO 520627) makes Cl-28 + N-96 + 4,750.000000000000000000 NRG using  250.00 decay          ...so I think Vt-124 is impossible. I think that whole row in my stability chart is impossible.
+[r] | Nd-27⁺  + C-53⁺     +   5000   -> ? Vl-80⁺  => ? U-80   (OTOMRO 520628) makes U-80         + 3,374.295559623158624163 NRG using 1625.70 nuclear+decay
+[r] | K-29⁺   + C-53⁺     +   5000   -> ? Se-82⁺  => ? Vl-82  (OTOMRO 520629) makes Vl-82        + 3,292.206765610340880812 NRG using 1707.79 nuclear+decay
+[r] | Vi-15⁻  + Uq-52⁻    +   5000   -> ? Qe-67⁻  => ? C-67   (OTOMRO 520630) makes C-67         + 3,809.096820016045967350 NRG using 1190.90 nuclear+decay
+[r] | T-14⁺   + C-53⁺     +   5000   -> ? Iu-67⁺  => ? Cj-67  (OTOMRO 520631) makes Cj-67        + 3,802.758366159928755224 NRG using 1197.24 nuclear+decay 
+total:                      526572
+
+DANGIT I MISSED THE SCREENSHOT ON THE DISCOVERY POPUP FOR VL-82!!!!
+
+BUT WILL NEED THESE:
+[c]  1x Gj-11∙
+[c]  1x Kk-71ª   
+[c]  1x P-23∙
+[c]  1x Sr-2∙
+[c]  1x Uq-47⁻
+[c]  2x K-34∙
+[c]  2x Kk-70ª   
+[c]  3x L-51⁺   
+[c]  3x T-15⁺
+[c]  4x Sr-3∙ 
+[c]  5x Gy-67ª   
+[c] 11x Mt-32⁺   
+[c] 12x S-102ª   
+[c] 16x Eb-22∙ 
+[c] 23x As-7∙
+[c] 29x Ro-22⁺ 
+[c] 47x Ct-17⁻   
+
+
+[c] need 36 more Ct-17 -need 25 more @ 2025-08-31 Aug.Sun 21:22:24 need 24 more @ 2025-09-01 Sep.Mon 15:34:37
+[c] need 19 more Ro-22 -need 10 more @ 2025-08-31 Aug.Sun 21:22:24 need  9 more @ 2025-09-01 Sep.Mon 15:34:37
+
+
+
+
 
 2025-08-25 Aug.Mon 13:31:59 New discovery L-58 makes 738 isotopes in Bohr
 

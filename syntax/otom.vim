@@ -570,6 +570,7 @@ let otomnames["20 10 Eb"]="Eb-20"
 let otomnames["21 10 Eb"]="Eb-21"
 let otomnames["22 10 Eb"]="Eb-22"
 let otomnames["23 10 Eb"]="Eb-23"
+let otomnames["20 11  P"]="P-20"
 let otomnames["21 11  P"]="P-21"
 let otomnames["22 11  P"]="P-22"
 let otomnames["23 11  P"]="P-23"
@@ -614,6 +615,7 @@ let otomnames["34 16  K"]="K-34"
 let otomnames["35 16  K"]="K-35"
 let otomnames["36 16  K"]="K-36"
 let otomnames["37 16  K"]="K-37"
+let otomnames["31 17 Mt"]="Mt-31"
 let otomnames["32 17 Mt"]="Mt-32"
 let otomnames["33 17 Mt"]="Mt-33"
 let otomnames["34 17 Mt"]="Mt-34"
@@ -630,6 +632,7 @@ let otomnames["38 18 Lu"]="Lu-38"
 let otomnames["39 18 Lu"]="Lu-39"
 let otomnames["40 18 Lu"]="Lu-40"
 let otomnames["41 18 Lu"]="Lu-41"
+let otomnames["42 18 Lu"]="Lu-42"
 let otomnames["35 19 Dx"]="Dx-35"
 let otomnames["36 19 Dx"]="Dx-36"
 let otomnames["37 19 Dx"]="Dx-37"
@@ -640,6 +643,7 @@ let otomnames["41 19 Dx"]="Dx-41"
 let otomnames["42 19 Dx"]="Dx-42"
 let otomnames["43 19 Dx"]="Dx-43"
 let otomnames["44 19 Dx"]="Dx-44"
+let otomnames["37 20 Gd"]="Gd-37"
 let otomnames["38 20 Gd"]="Gd-38"
 let otomnames["39 20 Gd"]="Gd-39"
 let otomnames["40 20 Gd"]="Gd-40"
@@ -732,6 +736,7 @@ let otomnames["58 27 Pg"]="Pg-58"
 let otomnames["59 27 Pg"]="Pg-59"
 let otomnames["60 27 Pg"]="Pg-60"
 let otomnames["61 27 Pg"]="Pg-61"
+let otomnames["62 27 Pg"]="Pg-62"
 let otomnames["52 28 Qe"]="Qe-52"
 let otomnames["53 28 Qe"]="Qe-53"
 let otomnames["54 28 Qe"]="Qe-54"
@@ -759,6 +764,7 @@ let otomnames["63 29  C"]="C-63"
 let otomnames["64 29  C"]="C-64"
 let otomnames["65 29  C"]="C-65"
 let otomnames["66 29  C"]="C-66"
+let otomnames["67 29  C"]="C-67"
 let otomnames["56 30 Ns"]="Ns-56"
 let otomnames["57 30 Ns"]="Ns-57"
 let otomnames["58 30 Ns"]="Ns-58"
@@ -786,6 +792,7 @@ let otomnames["67 31 Ai"]="Ai-67"
 let otomnames["68 31 Ai"]="Ai-68"
 let otomnames["69 31 Ai"]="Ai-69"
 let otomnames["70 31 Ai"]="Ai-70"
+let otomnames["71 31 Ai"]="Ai-71"
 let otomnames["59 32  F"]="F-59"
 let otomnames["60 32  F"]="F-60"
 let otomnames["61 32  F"]="F-61"
@@ -830,6 +837,7 @@ let otomnames["74 34 Kk"]="Kk-74"
 let otomnames["75 34 Kk"]="Kk-75"
 let otomnames["76 34 Kk"]="Kk-76"
 let otomnames["77 34 Kk"]="Kk-77"
+let otomnames["78 34 Kk"]="Kk-78"
 let otomnames["66 35 Yv"]="Yv-66"
 let otomnames["67 35 Yv"]="Yv-67"
 let otomnames["68 35 Yv"]="Yv-68"
@@ -845,6 +853,7 @@ let otomnames["77 35 Yv"]="Yv-77"
 let otomnames["78 35 Yv"]="Yv-78"
 let otomnames["79 35 Yv"]="Yv-79"
 let otomnames["80 35 Yv"]="Yv-80"
+let otomnames["67 36 Cj"]="Cj-67"
 let otomnames["68 36 Cj"]="Cj-68"
 let otomnames["69 36 Cj"]="Cj-69"
 let otomnames["70 36 Cj"]="Cj-70"
@@ -859,6 +868,7 @@ let otomnames["78 36 Cj"]="Cj-78"
 let otomnames["79 36 Cj"]="Cj-79"
 let otomnames["80 36 Cj"]="Cj-80"
 let otomnames["81 36 Cj"]="Cj-81"
+let otomnames["82 36 Cj"]="Cj-82"
 let otomnames["70 37 Iu"]="Iu-70"
 let otomnames["71 37 Iu"]="Iu-71"
 let otomnames["72 37 Iu"]="Iu-72"
@@ -874,6 +884,7 @@ let otomnames["81 37 Iu"]="Iu-81"
 let otomnames["82 37 Iu"]="Iu-82"
 let otomnames["83 37 Iu"]="Iu-83"
 let otomnames["84 37 Iu"]="Iu-84"
+let otomnames["73 38  D"]="D-73"
 let otomnames["74 38  D"]="D-74"
 let otomnames["75 38  D"]="D-75"
 let otomnames["76 38  D"]="D-76"
@@ -887,6 +898,7 @@ let otomnames["83 38  D"]="D-83"
 let otomnames["84 38  D"]="D-84"
 let otomnames["85 38  D"]="D-85"
 let otomnames["86 38  D"]="D-86"
+let otomnames["73 39 Co"]="Co-73"
 let otomnames["74 39 Co"]="Co-74"
 let otomnames["75 39 Co"]="Co-75"
 let otomnames["76 39 Co"]="Co-76"
@@ -901,6 +913,7 @@ let otomnames["85 39 Co"]="Co-85"
 let otomnames["86 39 Co"]="Co-86"
 let otomnames["87 39 Co"]="Co-87"
 let otomnames["88 39 Co"]="Co-88"
+let otomnames["89 39 Co"]="Co-89"
 let otomnames["75 40  W"]="W-75"
 let otomnames["76 40  W"]="W-76"
 let otomnames["77 40  W"]="W-77"
@@ -957,6 +970,7 @@ let otomnames["93 42  N"]="N-93"
 let otomnames["94 42  N"]="N-94"
 let otomnames["95 42  N"]="N-95"
 let otomnames["96 42  N"]="N-96"
+let otomnames["80 43  U"]="U-80"
 let otomnames["81 43  U"]="U-81"
 let otomnames["82 43  U"]="U-82"
 let otomnames["83 43  U"]="U-83"
@@ -976,6 +990,7 @@ let otomnames["96 43  U"]="U-96"
 let otomnames["97 43  U"]="U-97"
 let otomnames["98 43  U"]="U-98"
 let otomnames["99 43  U"]="U-99"
+let otomnames["82 44 Vl"]="Vl-82"
 let otomnames["83 44 Vl"]="Vl-83"
 let otomnames["84 44 Vl"]="Vl-84"
 let otomnames["85 44 Vl"]="Vl-85"
@@ -1168,6 +1183,7 @@ let otomnames["115 52 Cv"]="Cv-115"
 let otomnames["116 52 Cv"]="Cv-116"
 let otomnames["117 52 Cv"]="Cv-117"
 let otomnames["118 52 Cv"]="Cv-118"
+let otomnames["119 52 Cv"]="Cv-119"
 let otomnames["98 53 Vt"]="Vt-98"
 let otomnames["99 53 Vt"]="Vt-99"
 let otomnames["100 53 Vt"]="Vt-100"
@@ -1642,6 +1658,7 @@ let otomnames["Eb-20"]="20 10 Eb"
 let otomnames["Eb-21"]="21 10 Eb"
 let otomnames["Eb-22"]="22 10 Eb"
 let otomnames["Eb-23"]="23 10 Eb"
+let otomnames["P-20"]="20 11  P"
 let otomnames["P-21"]="21 11  P"
 let otomnames["P-22"]="22 11  P"
 let otomnames["P-23"]="23 11  P"
@@ -1686,6 +1703,7 @@ let otomnames["K-34"]="34 16  K"
 let otomnames["K-35"]="35 16  K"
 let otomnames["K-36"]="36 16  K"
 let otomnames["K-37"]="37 16  K"
+let otomnames["Mt-31"]="31 17 Mt"
 let otomnames["Mt-32"]="32 17 Mt"
 let otomnames["Mt-33"]="33 17 Mt"
 let otomnames["Mt-34"]="34 17 Mt"
@@ -1702,6 +1720,7 @@ let otomnames["Lu-38"]="38 18 Lu"
 let otomnames["Lu-39"]="39 18 Lu"
 let otomnames["Lu-40"]="40 18 Lu"
 let otomnames["Lu-41"]="41 18 Lu"
+let otomnames["Lu-42"]="42 18 Lu"
 let otomnames["Dx-35"]="35 19 Dx"
 let otomnames["Dx-36"]="36 19 Dx"
 let otomnames["Dx-37"]="37 19 Dx"
@@ -1712,6 +1731,7 @@ let otomnames["Dx-41"]="41 19 Dx"
 let otomnames["Dx-42"]="42 19 Dx"
 let otomnames["Dx-43"]="43 19 Dx"
 let otomnames["Dx-44"]="44 19 Dx"
+let otomnames["Gd-37"]="37 20 Gd"
 let otomnames["Gd-38"]="38 20 Gd"
 let otomnames["Gd-39"]="39 20 Gd"
 let otomnames["Gd-40"]="40 20 Gd"
@@ -1804,6 +1824,7 @@ let otomnames["Pg-58"]="58 27 Pg"
 let otomnames["Pg-59"]="59 27 Pg"
 let otomnames["Pg-60"]="60 27 Pg"
 let otomnames["Pg-61"]="61 27 Pg"
+let otomnames["Pg-62"]="62 27 Pg"
 let otomnames["Qe-52"]="52 28 Qe"
 let otomnames["Qe-53"]="53 28 Qe"
 let otomnames["Qe-54"]="54 28 Qe"
@@ -1831,6 +1852,7 @@ let otomnames["C-63"]="63 29  C"
 let otomnames["C-64"]="64 29  C"
 let otomnames["C-65"]="65 29  C"
 let otomnames["C-66"]="66 29  C"
+let otomnames["C-67"]="67 29  C"
 let otomnames["Ns-56"]="56 30 Ns"
 let otomnames["Ns-57"]="57 30 Ns"
 let otomnames["Ns-58"]="58 30 Ns"
@@ -1858,6 +1880,7 @@ let otomnames["Ai-67"]="67 31 Ai"
 let otomnames["Ai-68"]="68 31 Ai"
 let otomnames["Ai-69"]="69 31 Ai"
 let otomnames["Ai-70"]="70 31 Ai"
+let otomnames["Ai-71"]="71 31 Ai"
 let otomnames["F-59"]="59 32  F"
 let otomnames["F-60"]="60 32  F"
 let otomnames["F-61"]="61 32  F"
@@ -1902,6 +1925,7 @@ let otomnames["Kk-74"]="74 34 Kk"
 let otomnames["Kk-75"]="75 34 Kk"
 let otomnames["Kk-76"]="76 34 Kk"
 let otomnames["Kk-77"]="77 34 Kk"
+let otomnames["Kk-78"]="78 34 Kk"
 let otomnames["Yv-66"]="66 35 Yv"
 let otomnames["Yv-67"]="67 35 Yv"
 let otomnames["Yv-68"]="68 35 Yv"
@@ -1917,6 +1941,7 @@ let otomnames["Yv-77"]="77 35 Yv"
 let otomnames["Yv-78"]="78 35 Yv"
 let otomnames["Yv-79"]="79 35 Yv"
 let otomnames["Yv-80"]="80 35 Yv"
+let otomnames["Cj-67"]="67 36 Cj"
 let otomnames["Cj-68"]="68 36 Cj"
 let otomnames["Cj-69"]="69 36 Cj"
 let otomnames["Cj-70"]="70 36 Cj"
@@ -1931,6 +1956,7 @@ let otomnames["Cj-78"]="78 36 Cj"
 let otomnames["Cj-79"]="79 36 Cj"
 let otomnames["Cj-80"]="80 36 Cj"
 let otomnames["Cj-81"]="81 36 Cj"
+let otomnames["Cj-82"]="82 36 Cj"
 let otomnames["Iu-70"]="70 37 Iu"
 let otomnames["Iu-71"]="71 37 Iu"
 let otomnames["Iu-72"]="72 37 Iu"
@@ -1946,6 +1972,7 @@ let otomnames["Iu-81"]="81 37 Iu"
 let otomnames["Iu-82"]="82 37 Iu"
 let otomnames["Iu-83"]="83 37 Iu"
 let otomnames["Iu-84"]="84 37 Iu"
+let otomnames["D-73"]="73 38  D"
 let otomnames["D-74"]="74 38  D"
 let otomnames["D-75"]="75 38  D"
 let otomnames["D-76"]="76 38  D"
@@ -1959,6 +1986,7 @@ let otomnames["D-83"]="83 38  D"
 let otomnames["D-84"]="84 38  D"
 let otomnames["D-85"]="85 38  D"
 let otomnames["D-86"]="86 38  D"
+let otomnames["Co-73"]="73 39 Co"
 let otomnames["Co-74"]="74 39 Co"
 let otomnames["Co-75"]="75 39 Co"
 let otomnames["Co-76"]="76 39 Co"
@@ -1973,6 +2001,7 @@ let otomnames["Co-85"]="85 39 Co"
 let otomnames["Co-86"]="86 39 Co"
 let otomnames["Co-87"]="87 39 Co"
 let otomnames["Co-88"]="88 39 Co"
+let otomnames["Co-89"]="89 39 Co"
 let otomnames["W-75"]="75 40  W"
 let otomnames["W-76"]="76 40  W"
 let otomnames["W-77"]="77 40  W"
@@ -2029,6 +2058,7 @@ let otomnames["N-93"]="93 42  N"
 let otomnames["N-94"]="94 42  N"
 let otomnames["N-95"]="95 42  N"
 let otomnames["N-96"]="96 42  N"
+let otomnames["U-80"]="80 43  U"
 let otomnames["U-81"]="81 43  U"
 let otomnames["U-82"]="82 43  U"
 let otomnames["U-83"]="83 43  U"
@@ -2048,6 +2078,7 @@ let otomnames["U-96"]="96 43  U"
 let otomnames["U-97"]="97 43  U"
 let otomnames["U-98"]="98 43  U"
 let otomnames["U-99"]="99 43  U"
+let otomnames["Vl-82"]="82 44 Vl"
 let otomnames["Vl-83"]="83 44 Vl"
 let otomnames["Vl-84"]="84 44 Vl"
 let otomnames["Vl-85"]="85 44 Vl"
@@ -2240,6 +2271,7 @@ let otomnames["Cv-115"]="115 52 Cv"
 let otomnames["Cv-116"]="116 52 Cv"
 let otomnames["Cv-117"]="117 52 Cv"
 let otomnames["Cv-118"]="118 52 Cv"
+let otomnames["Cv-119"]="119 52 Cv"
 let otomnames["Vt-98"]="98 53 Vt"
 let otomnames["Vt-99"]="99 53 Vt"
 let otomnames["Vt-100"]="100 53 Vt"
@@ -2714,6 +2746,7 @@ let hexdict["20 10 Eb"]="70ebfa958bd9da278c6fbb93d6d40019e7e2f54ad0cbffc5827b781
 let hexdict["21 10 Eb"]="3324d73169e4ca826b262b45a92b9639db40294c99b337678ee919e5f5f03df6"
 let hexdict["22 10 Eb"]="2bdf6d520762c1d04fc65bf25330f28ba662d98c58b7a1aa9013a0e3d8a8e68a"
 let hexdict["23 10 Eb"]="0c04746057bbb19b46e941f0c38fb217e1c6bccb319007ab8c31dae1a6ca6bfc"
+let hexdict["20 11  P"]="94a648cb230110911be3c6cf3ad55cf3728b16f2442feeb5035d03ef9746126c"
 let hexdict["21 11  P"]="9f9ab7f0844d9d20f0127718a38f1ad94425cc26b3b71840794865457fa6a66a"
 let hexdict["22 11  P"]="39a12ac0e69d98648d7bdb8c2e0ebc0d3dbfa8d81e92f97aa6dac21ee7a1ac4a"
 let hexdict["23 11  P"]="7d53bc9cc686ad85e39661b83f27873b0bc3db82a86c6448c51e95f6b29b3f8e"
@@ -2758,6 +2791,7 @@ let hexdict["34 16  K"]="8f9c2241dfd1d71fe42330a722a2454382976d69a4fe8ca7ea36880
 let hexdict["35 16  K"]="d71de84a1cfbbfdf299bad2afb51636913f39880b25ba11ff32a5f49a2a2d386"
 let hexdict["36 16  K"]="10c526890e4d7c1a32c8f8a86231a3355b78434218ac9767a870463be25951a6"
 let hexdict["37 16  K"]="00a2a4801cc3ce2234bdb470dd146937438a9227b16ee1b5cb57d0579c3331e7"
+let hexdict["31 17 Mt"]="46f842b9599e696c7c961b1bf6fb7255f48f8940bcaa72227e206c80440b4f04"
 let hexdict["32 17 Mt"]="a3f1272e14bdf3de0c0ee7f2ece4d97e3f34512729a43217bc8bf9ba7449b7dc"
 let hexdict["33 17 Mt"]="9f4f06ea2060cfa81d809d64309fd96747229fb5ab5e8d3874234a62dcc0bfa8"
 let hexdict["34 17 Mt"]="bae5d6b8df90f6a45ad75e3f6f88781d85fe6087bd8c04b83d4a25580d16c1fb"
@@ -2774,6 +2808,7 @@ let hexdict["38 18 Lu"]="5003fa2f6e11986fdb9d1aa815836eda18e933c4c454645ef5a77b1
 let hexdict["39 18 Lu"]="2749f8d992707f0672e3ee8deb2511526aa1a49c5d25eb705f3cee5fac5f5527"
 let hexdict["40 18 Lu"]="f1d011c435b2a07a6d1cf76c100ca281618c478597806a2fa3c5cd8098078854"
 let hexdict["41 18 Lu"]="093f89e7945ec9de3469bf1d3bd7e3c869f9ba53df5798ce8e8166b58968267f"
+let hexdict["42 18 Lu"]="a0cc73dc50e4e473bc29c9af04c8cd11426d2cc86ec0b46e7ec777d4d5dbd5f2"
 let hexdict["35 19 Dx"]="449fea318a3bdb1248cabc6ce6f091708285923fe04f390e62be1f46f7ed12e4"
 let hexdict["36 19 Dx"]="8039e43b9823af5f3584bbe4ae9ca35fd877020679c4db6bed4458af38b7bdb9"
 let hexdict["37 19 Dx"]="b3423cbc8205304ddf4cc51f22766a512a26a386c5938930e97c9dd84848898d"
@@ -2784,6 +2819,7 @@ let hexdict["41 19 Dx"]="fbd7326cc66684ad8104290115c635381571c082638d2aa34f093e4
 let hexdict["42 19 Dx"]="89fa6d3b372731d2098d22befb9c1ec39ed1007899d0e11a653a14ced9a73bd4"
 let hexdict["43 19 Dx"]="26e873434f1a3cf58ae74d32ec661f7a34ee559c447aa2c0f57445964b75fd36"
 let hexdict["44 19 Dx"]="f7d90c4bd38ea92534c5675037a7f38f542c0b4ef60820f9438fcbde491de0b6"
+let hexdict["37 20 Gd"]="3e65585b41a3e2c3af5ac70b92298d16320854cf421419635af92804e4c4c091"
 let hexdict["38 20 Gd"]="6ca905066e16647755e34eb3ab8f715d20df9da5be8ab1419b4970679cee2ce4"
 let hexdict["39 20 Gd"]="497be7d47d2bc8ab7018b1cb7236677b2c41c11bbe5694b854d4dc149117373c"
 let hexdict["40 20 Gd"]="639f01c5af849a494348ac2cb38eaea9c3227ebfce8889d9729ae15fad627e24"
@@ -2876,6 +2912,7 @@ let hexdict["58 27 Pg"]="4894fad244029a80037b33a2b33d901b024935b24f96a6dde43b19d
 let hexdict["59 27 Pg"]="037ee0ffb357920f1024ad656a549348d64788d6513fb14f007ab7bbca5dc4fa"
 let hexdict["60 27 Pg"]="60f635c6fd12e8c95eb6fdd8fc6af23c6d492d0d45ae5f09e0816cf4439fa217"
 let hexdict["61 27 Pg"]="bf7c667adc5204ddee6f4f9a07a617c7242077695a1f5815936a9d5f9b0f098a"
+let hexdict["62 27 Pg"]="e134c4fb349537cdb4cf079bad61d3b42a5e6a667aee2536b960dc51c9c72fe1"
 let hexdict["52 28 Qe"]="1057a141959e9e9e11244fc76eff85a51dda22d31231f007a3ca78d6c7376f9a"
 let hexdict["53 28 Qe"]="6572626a781967e9247a7a94a008c39acd8fb7c772f9c7739db6f7b5db42e404"
 let hexdict["54 28 Qe"]="d5a025001e76429d839353e397b0f491ad3475f53e3bc43c8b410f0aef893fc3"
@@ -2903,6 +2940,7 @@ let hexdict["63 29  C"]="9f433710b91c88dfbe6ac733cdd3166bbe20912c96de5bb2c6e3480
 let hexdict["64 29  C"]="9e27a4e98e761ef436d1ef124aeb2e5ff77880e4a7bd397eddfb9d27084a6efc"
 let hexdict["65 29  C"]="d91b5639c1a2f07074b15b8922704c8a2e2d6486631ffe5a53741492d7931f2f"
 let hexdict["66 29  C"]="e6edffff12a905af046489926bbc0cf2894c889d50f7c1cc6540b75739cd9fc6"
+let hexdict["67 29  C"]="b12810b46235774b0ebe0beb870e6bfc97ccd638175e54648bec798d007b4a65"
 let hexdict["56 30 Ns"]="566c785337412f776d85e1e5714ffb5841869f5ebba14bccf2a4eddadee0e737"
 let hexdict["57 30 Ns"]="72e658ec10f488e0720926ce84a12a42943d96cd5c95a67cd9ff6d68698055f3"
 let hexdict["58 30 Ns"]="46aea24f901ab5c909dfb69a4d3c33c5e1dcf64aecbf890307b54322a26e9c64"
@@ -2930,6 +2968,7 @@ let hexdict["67 31 Ai"]="97b74ff0bb6ab24e58dc6958cccfda3862b7a4f213bedc9853970d6
 let hexdict["68 31 Ai"]="9a22769b514a938f0af16e7332467eef9a4a8de49caa350b38089fdf251d4019"
 let hexdict["69 31 Ai"]="cebdb4986e560b9914d485860f41d7ccd9ab841fcea88ab7b29e2257a4ccc3f3"
 let hexdict["70 31 Ai"]="1633fa48884f7634dfeefdf7a161b0366273b3c70ed086b77c9946052034163b"
+let hexdict["71 31 Ai"]="ec38845c7003abd299e837a727b644d82238809f106b3e2911476cd5783846b9"
 let hexdict["59 32  F"]="76afef4ee540fde42c0f66424d2078032a4cceaf4c7252ce99177fe6704c227c"
 let hexdict["60 32  F"]="8752c6246d223a9fa3c468af867e5bb3070a8e02e72cd26cef56fbe3ee518f77"
 let hexdict["61 32  F"]="c03ed0471143b38c0a505aa3ec63aca538858ec601e6b97a7587ef2c43395ecb"
@@ -2974,6 +3013,7 @@ let hexdict["74 34 Kk"]="8508de5999111456c90aebf26ea9dec4a4ba78249ce96d452438b0a
 let hexdict["75 34 Kk"]="0909850726da878002bee8eaa4f848723a197ce1567590e1fc00a88929742815"
 let hexdict["76 34 Kk"]="28a642804d8cd2df90043865fd81cbe3208c5d12212fe1beef4128b66a9192f9"
 let hexdict["77 34 Kk"]="e2fe817ac360e4cfa618d95908aa42e72b207ebb079b7ff4db6dc8dc8a36c5f3"
+let hexdict["78 34 Kk"]="16aec8f9b59841efec764ac4e305be758fbc71aeb3cec4bc4b6679e96ecad2a8"
 let hexdict["66 35 Yv"]="4f2de12ab8e8c3af4410e6d63225a1f10b71e1e7fd47072f5c747e682ab715b2"
 let hexdict["67 35 Yv"]="cf9dc6cfd1cb722d69617c98193cb216559286ed6378044a6f54451fa1fe5301"
 let hexdict["68 35 Yv"]="9f3d42f38a1a066e66d42edfc3e67b832c2b0a30b31b19b813a683c0912ece53"
@@ -2989,6 +3029,7 @@ let hexdict["77 35 Yv"]="02c272fb58643c76d579757680017874cbb7c397490da41b872afe6
 let hexdict["78 35 Yv"]="4f91456ecf7903dbff860c16aba74e4263a619a8f6150c14b42ede0cc5fe651b"
 let hexdict["79 35 Yv"]="293b9ace0c3bd53ced6009d28bfca08ddbe4988bdd6128297b25641ee1d6cf85"
 let hexdict["80 35 Yv"]="060cb5513b51be01c67d0e021d1a96e91387b69d548409a1efda5694619fef76"
+let hexdict["67 36 Cj"]="9500fc7f5f449f8d8f446fe64c5e8eb5ac24b923a607cc7f6afc5824a9447ec0"
 let hexdict["68 36 Cj"]="0f3c25a62507f2cfa4dab77d8f69c2f98477b6cd05caa108b0047a2cc230c620"
 let hexdict["69 36 Cj"]="632c5bddcdd0cd79fd12fccff03b8c8ea5915ade9b92d5f33afaf11d157c9070"
 let hexdict["70 36 Cj"]="3b94d9fa4058c50dd479307c344735bbf0167487e623e1027f80959be12ef8fa"
@@ -3003,6 +3044,7 @@ let hexdict["78 36 Cj"]="82a091281ca7674e67941d6a9444d84d4087e8ab02b688d22cc026c
 let hexdict["79 36 Cj"]="1b730dd2b6cd9ec714fc4b66e46b2fb8794ab19d96da22f2eda092a48666c242"
 let hexdict["80 36 Cj"]="cf71fc0840b6f8fcb29deb62688ea2b5aec944a490f810fb8769b4fc3ec665f7"
 let hexdict["81 36 Cj"]="32421a04fc381df1836de399380fb0f26c23fa1c65f08eeffc97983db73395f1"
+let hexdict["82 36 Cj"]="a780aeeae08f1147213d87064058392efae9ab9fe176e966d4ae1f503561cedf"
 let hexdict["70 37 Iu"]="bb238ac0467d946a0150a3e77c20b34399160da8f9d9ae98c29f0e0f13723293"
 let hexdict["71 37 Iu"]="6def02a52646a495878c15693b7b926a1d482c8eea0b9c386abcd0849b60f1c7"
 let hexdict["72 37 Iu"]="c3f3d0c8e42799e9766aea3dd7aca116c0c824714073a5c288f6013dbfd1df92"
@@ -3018,6 +3060,7 @@ let hexdict["81 37 Iu"]="8eb001a108a6b508b612b1f030d99bdb9bbfa1db71c2e093af9bee8
 let hexdict["82 37 Iu"]="31385424675d52d37a9e2f8635d6a6d60b331823169f846e2cc46e2308a2cf85"
 let hexdict["83 37 Iu"]="bbeb640f556acdefb3498186fe3f1f850c68565ea8d34b571731515243aeb0ce"
 let hexdict["84 37 Iu"]="897974e5c966371f8939ce16e284eaa1824460dc29b6b4bdc4818330015710d3"
+let hexdict["73 38  D"]="0e29ce7f3523935bb2e066895384d4be09de9d186e323fb65e93f84e3323805e"
 let hexdict["74 38  D"]="b1581d4ad63aae78fe7fc80020ea3775d1d237c9308910c0716788b8325fd017"
 let hexdict["75 38  D"]="ec043aca9f8f501c27889e96a7361e5d1bf75748edc937ac7ae575d3de7dbb0e"
 let hexdict["76 38  D"]="674206e72c47ab39361b0e2cd09650d9116ee6d13a56a6371d3e446759717aff"
@@ -3031,6 +3074,7 @@ let hexdict["83 38  D"]="7a37d6349c4c68070c91fe361bafc37d0054c36534ca25cedef288f
 let hexdict["84 38  D"]="2c0d08d8bb1ad933d1e45e8f132260fb868cefacb841c1622c39044ca9aa1ef4"
 let hexdict["85 38  D"]="df2c1517873c8522c1f816ed2db08b7f73276c7762ad33519869b7d0432feacd"
 let hexdict["86 38  D"]="5a8c0baba6d8f36433f4906b599a71cae5a4d1769c4f9848428528b5dda1cbcc"
+let hexdict["73 39 Co"]="32ba26c3389a30bc585974b78b54d5c0aa020cd0082b952779b033cf4d22fe76"
 let hexdict["74 39 Co"]="4f02996a4319dd799dc659e873eecb3b9b7f07750a24518b5871a81bc3792717"
 let hexdict["75 39 Co"]="1c9c1a9b4b2a3050c6826ff3769c296c8ae63c4e53e4a39e7fa20083118e4e45"
 let hexdict["76 39 Co"]="d0013e5a13e0b2f6a61fabd1d81469c9da7ba3b3978e2a90b69ab0bc6f1700c8"
@@ -3045,6 +3089,7 @@ let hexdict["85 39 Co"]="3421446350d6eca14e4f7ac9781c27836a2c5017b73eb418d14eccb
 let hexdict["86 39 Co"]="6e8da1a093c411fa3ef7b2ab19be5f3a8df7675ba8f0c211c0ada73fd796be58"
 let hexdict["87 39 Co"]="73e6272912ca227058d798325208e58397ea4a6786f7b35951dbb3edfb2f32be"
 let hexdict["88 39 Co"]="2e84043b75112d85de9a507c9b3e103bd9b6744afe8ab12a005b430a7a19d1df"
+let hexdict["89 39 Co"]="0fd177c9bb50455f6648f79de2457e3f0cb0e09eafe28dbe3fdf7f170c912121"
 let hexdict["75 40  W"]="788837c2e8d935917ba8f8ae4181470bea0791e50ab1c537d4977d9d69b370ec"
 let hexdict["76 40  W"]="ebf3ae57516a04a0968390cc7df7e8b59caf61ab4eeff4a745cb5232b7af1987"
 let hexdict["77 40  W"]="e10414d712a0dac3a01bb3b0f591d9264233884288b038421bcc72e3d165698a"
@@ -3101,6 +3146,7 @@ let hexdict["93 42  N"]="40859f762ac89fd70b1976979a93754a46fae7b782a564c36441426
 let hexdict["94 42  N"]="ef0d57c7605ddcacc7459cd2c03a183edadae8e67a09f22bf083c5095afc364d"
 let hexdict["95 42  N"]="ad3296de60e5a6a43450afc2c185d0adf7bb66c2740e0cd3e68a07ea9dc5ea69"
 let hexdict["96 42  N"]="e81f0240130215403dfd80c32806b7347f84ec4f549ce308a53ade0d5b7ae570"
+let hexdict["80 43  U"]="fed280d1a42d725605194e9027fcdaa05677ad2517055cb9e554e37a8e6eb232"
 let hexdict["81 43  U"]="d0f07905cb8d3c4abe31d4d42f876b31a8d6b48c2968a9bd67706e8341752b2f"
 let hexdict["82 43  U"]="d12a0c4da41d705bdf2ad098527a33a397849cf468ee466ee06fee82c59999d6"
 let hexdict["83 43  U"]="39217667ee8e17e7bff52b5cc633843d25f7de5c1ca75ab8e22f8ce41b08dd62"
@@ -3120,6 +3166,7 @@ let hexdict["96 43  U"]="b0fc7f32a63edc529d7ac1eba76cde5240c57603dc54ac53fcfa1bb
 let hexdict["97 43  U"]="2e977647793f5c9f3b7f4f2f91fc9682d25c2f475bdcb461dfb05d628996c625"
 let hexdict["98 43  U"]="7ab6ccefe78ced219344d0490162d9cef794e19f2969ceb3ce08b2d837fb72f3"
 let hexdict["99 43  U"]="6023d411df28307feb27da6a93ea9029a1882ae705786ada468cf0b31d5d7428"
+let hexdict["82 44 Vl"]="e303176b106c854c4a085d074bb51dcc3da5c0c2cd6b3a32abdfd020f967d437"
 let hexdict["83 44 Vl"]="60a52282caeec27062873b37eb4d059a5ef55fb2539ecec0283601c18cb454c8"
 let hexdict["84 44 Vl"]="8481bcbdc255731b0c04d72498acd6b26ec642b4b71630c3fef0df6591f55bf6"
 let hexdict["85 44 Vl"]="2efe83b81c9231697ba4c831aa95617709d45aa45a03ad40fd16bfd42f91aac1"
@@ -3312,6 +3359,7 @@ let hexdict["115 52 Cv"]="e2f5b2ac607b0d00973eb8e8286b201d1170d019c934ad809a234c
 let hexdict["116 52 Cv"]="fc37157b01937f492fe626cf2a77a190cbfc7c47a73c28ca843a7c02160029eb"
 let hexdict["117 52 Cv"]="a8888092908997592005f860ef2876a85c61fdf8d9a2d836558be056f4819d72"
 let hexdict["118 52 Cv"]="e6d9d0cce40e84321e5a3a93a560a243979a32d103370bae8742523a05e01f79"
+let hexdict["119 52 Cv"]="bd8426cb1b7727b0566eb28dfc0b5227348b41a3de0f7222f6155f97a8180fd9"
 let hexdict["98 53 Vt"]="9e20112bb8c6debc1d182187bef70bedcc510e4878383129f861c71f42631f5d"
 let hexdict["99 53 Vt"]="afa46b5404732e6a6193a6880aa6a1b7af6f0baf220a476d5950c2a5b6ca2c6d"
 let hexdict["100 53 Vt"]="98678bf71e7a5dbbab0a4bb4da3748ca48a574117fd14b969e6728bc50dd1a31"
@@ -3786,6 +3834,7 @@ let hexdict["Eb-20"]="70ebfa958bd9da278c6fbb93d6d40019e7e2f54ad0cbffc5827b781d76
 let hexdict["Eb-21"]="3324d73169e4ca826b262b45a92b9639db40294c99b337678ee919e5f5f03df6"
 let hexdict["Eb-22"]="2bdf6d520762c1d04fc65bf25330f28ba662d98c58b7a1aa9013a0e3d8a8e68a"
 let hexdict["Eb-23"]="0c04746057bbb19b46e941f0c38fb217e1c6bccb319007ab8c31dae1a6ca6bfc"
+let hexdict["P-20"]="94a648cb230110911be3c6cf3ad55cf3728b16f2442feeb5035d03ef9746126c"
 let hexdict["P-21"]="9f9ab7f0844d9d20f0127718a38f1ad94425cc26b3b71840794865457fa6a66a"
 let hexdict["P-22"]="39a12ac0e69d98648d7bdb8c2e0ebc0d3dbfa8d81e92f97aa6dac21ee7a1ac4a"
 let hexdict["P-23"]="7d53bc9cc686ad85e39661b83f27873b0bc3db82a86c6448c51e95f6b29b3f8e"
@@ -3830,6 +3879,7 @@ let hexdict["K-34"]="8f9c2241dfd1d71fe42330a722a2454382976d69a4fe8ca7ea36880e695
 let hexdict["K-35"]="d71de84a1cfbbfdf299bad2afb51636913f39880b25ba11ff32a5f49a2a2d386"
 let hexdict["K-36"]="10c526890e4d7c1a32c8f8a86231a3355b78434218ac9767a870463be25951a6"
 let hexdict["K-37"]="00a2a4801cc3ce2234bdb470dd146937438a9227b16ee1b5cb57d0579c3331e7"
+let hexdict["Mt-31"]="46f842b9599e696c7c961b1bf6fb7255f48f8940bcaa72227e206c80440b4f04"
 let hexdict["Mt-32"]="a3f1272e14bdf3de0c0ee7f2ece4d97e3f34512729a43217bc8bf9ba7449b7dc"
 let hexdict["Mt-33"]="9f4f06ea2060cfa81d809d64309fd96747229fb5ab5e8d3874234a62dcc0bfa8"
 let hexdict["Mt-34"]="bae5d6b8df90f6a45ad75e3f6f88781d85fe6087bd8c04b83d4a25580d16c1fb"
@@ -3846,6 +3896,7 @@ let hexdict["Lu-38"]="5003fa2f6e11986fdb9d1aa815836eda18e933c4c454645ef5a77b18cf
 let hexdict["Lu-39"]="2749f8d992707f0672e3ee8deb2511526aa1a49c5d25eb705f3cee5fac5f5527"
 let hexdict["Lu-40"]="f1d011c435b2a07a6d1cf76c100ca281618c478597806a2fa3c5cd8098078854"
 let hexdict["Lu-41"]="093f89e7945ec9de3469bf1d3bd7e3c869f9ba53df5798ce8e8166b58968267f"
+let hexdict["Lu-42"]="a0cc73dc50e4e473bc29c9af04c8cd11426d2cc86ec0b46e7ec777d4d5dbd5f2"
 let hexdict["Dx-35"]="449fea318a3bdb1248cabc6ce6f091708285923fe04f390e62be1f46f7ed12e4"
 let hexdict["Dx-36"]="8039e43b9823af5f3584bbe4ae9ca35fd877020679c4db6bed4458af38b7bdb9"
 let hexdict["Dx-37"]="b3423cbc8205304ddf4cc51f22766a512a26a386c5938930e97c9dd84848898d"
@@ -3856,6 +3907,7 @@ let hexdict["Dx-41"]="fbd7326cc66684ad8104290115c635381571c082638d2aa34f093e4b17
 let hexdict["Dx-42"]="89fa6d3b372731d2098d22befb9c1ec39ed1007899d0e11a653a14ced9a73bd4"
 let hexdict["Dx-43"]="26e873434f1a3cf58ae74d32ec661f7a34ee559c447aa2c0f57445964b75fd36"
 let hexdict["Dx-44"]="f7d90c4bd38ea92534c5675037a7f38f542c0b4ef60820f9438fcbde491de0b6"
+let hexdict["Gd-37"]="3e65585b41a3e2c3af5ac70b92298d16320854cf421419635af92804e4c4c091"
 let hexdict["Gd-38"]="6ca905066e16647755e34eb3ab8f715d20df9da5be8ab1419b4970679cee2ce4"
 let hexdict["Gd-39"]="497be7d47d2bc8ab7018b1cb7236677b2c41c11bbe5694b854d4dc149117373c"
 let hexdict["Gd-40"]="639f01c5af849a494348ac2cb38eaea9c3227ebfce8889d9729ae15fad627e24"
@@ -3948,6 +4000,7 @@ let hexdict["Pg-58"]="4894fad244029a80037b33a2b33d901b024935b24f96a6dde43b19db1b
 let hexdict["Pg-59"]="037ee0ffb357920f1024ad656a549348d64788d6513fb14f007ab7bbca5dc4fa"
 let hexdict["Pg-60"]="60f635c6fd12e8c95eb6fdd8fc6af23c6d492d0d45ae5f09e0816cf4439fa217"
 let hexdict["Pg-61"]="bf7c667adc5204ddee6f4f9a07a617c7242077695a1f5815936a9d5f9b0f098a"
+let hexdict["Pg-62"]="e134c4fb349537cdb4cf079bad61d3b42a5e6a667aee2536b960dc51c9c72fe1"
 let hexdict["Qe-52"]="1057a141959e9e9e11244fc76eff85a51dda22d31231f007a3ca78d6c7376f9a"
 let hexdict["Qe-53"]="6572626a781967e9247a7a94a008c39acd8fb7c772f9c7739db6f7b5db42e404"
 let hexdict["Qe-54"]="d5a025001e76429d839353e397b0f491ad3475f53e3bc43c8b410f0aef893fc3"
@@ -3975,6 +4028,7 @@ let hexdict["C-63"]="9f433710b91c88dfbe6ac733cdd3166bbe20912c96de5bb2c6e3480f5bd
 let hexdict["C-64"]="9e27a4e98e761ef436d1ef124aeb2e5ff77880e4a7bd397eddfb9d27084a6efc"
 let hexdict["C-65"]="d91b5639c1a2f07074b15b8922704c8a2e2d6486631ffe5a53741492d7931f2f"
 let hexdict["C-66"]="e6edffff12a905af046489926bbc0cf2894c889d50f7c1cc6540b75739cd9fc6"
+let hexdict["C-67"]="b12810b46235774b0ebe0beb870e6bfc97ccd638175e54648bec798d007b4a65"
 let hexdict["Ns-56"]="566c785337412f776d85e1e5714ffb5841869f5ebba14bccf2a4eddadee0e737"
 let hexdict["Ns-57"]="72e658ec10f488e0720926ce84a12a42943d96cd5c95a67cd9ff6d68698055f3"
 let hexdict["Ns-58"]="46aea24f901ab5c909dfb69a4d3c33c5e1dcf64aecbf890307b54322a26e9c64"
@@ -4002,6 +4056,7 @@ let hexdict["Ai-67"]="97b74ff0bb6ab24e58dc6958cccfda3862b7a4f213bedc9853970d66bd
 let hexdict["Ai-68"]="9a22769b514a938f0af16e7332467eef9a4a8de49caa350b38089fdf251d4019"
 let hexdict["Ai-69"]="cebdb4986e560b9914d485860f41d7ccd9ab841fcea88ab7b29e2257a4ccc3f3"
 let hexdict["Ai-70"]="1633fa48884f7634dfeefdf7a161b0366273b3c70ed086b77c9946052034163b"
+let hexdict["Ai-71"]="ec38845c7003abd299e837a727b644d82238809f106b3e2911476cd5783846b9"
 let hexdict["F-59"]="76afef4ee540fde42c0f66424d2078032a4cceaf4c7252ce99177fe6704c227c"
 let hexdict["F-60"]="8752c6246d223a9fa3c468af867e5bb3070a8e02e72cd26cef56fbe3ee518f77"
 let hexdict["F-61"]="c03ed0471143b38c0a505aa3ec63aca538858ec601e6b97a7587ef2c43395ecb"
@@ -4046,6 +4101,7 @@ let hexdict["Kk-74"]="8508de5999111456c90aebf26ea9dec4a4ba78249ce96d452438b0a71e
 let hexdict["Kk-75"]="0909850726da878002bee8eaa4f848723a197ce1567590e1fc00a88929742815"
 let hexdict["Kk-76"]="28a642804d8cd2df90043865fd81cbe3208c5d12212fe1beef4128b66a9192f9"
 let hexdict["Kk-77"]="e2fe817ac360e4cfa618d95908aa42e72b207ebb079b7ff4db6dc8dc8a36c5f3"
+let hexdict["Kk-78"]="16aec8f9b59841efec764ac4e305be758fbc71aeb3cec4bc4b6679e96ecad2a8"
 let hexdict["Yv-66"]="4f2de12ab8e8c3af4410e6d63225a1f10b71e1e7fd47072f5c747e682ab715b2"
 let hexdict["Yv-67"]="cf9dc6cfd1cb722d69617c98193cb216559286ed6378044a6f54451fa1fe5301"
 let hexdict["Yv-68"]="9f3d42f38a1a066e66d42edfc3e67b832c2b0a30b31b19b813a683c0912ece53"
@@ -4061,6 +4117,7 @@ let hexdict["Yv-77"]="02c272fb58643c76d579757680017874cbb7c397490da41b872afe6899
 let hexdict["Yv-78"]="4f91456ecf7903dbff860c16aba74e4263a619a8f6150c14b42ede0cc5fe651b"
 let hexdict["Yv-79"]="293b9ace0c3bd53ced6009d28bfca08ddbe4988bdd6128297b25641ee1d6cf85"
 let hexdict["Yv-80"]="060cb5513b51be01c67d0e021d1a96e91387b69d548409a1efda5694619fef76"
+let hexdict["Cj-67"]="9500fc7f5f449f8d8f446fe64c5e8eb5ac24b923a607cc7f6afc5824a9447ec0"
 let hexdict["Cj-68"]="0f3c25a62507f2cfa4dab77d8f69c2f98477b6cd05caa108b0047a2cc230c620"
 let hexdict["Cj-69"]="632c5bddcdd0cd79fd12fccff03b8c8ea5915ade9b92d5f33afaf11d157c9070"
 let hexdict["Cj-70"]="3b94d9fa4058c50dd479307c344735bbf0167487e623e1027f80959be12ef8fa"
@@ -4075,6 +4132,7 @@ let hexdict["Cj-78"]="82a091281ca7674e67941d6a9444d84d4087e8ab02b688d22cc026c845
 let hexdict["Cj-79"]="1b730dd2b6cd9ec714fc4b66e46b2fb8794ab19d96da22f2eda092a48666c242"
 let hexdict["Cj-80"]="cf71fc0840b6f8fcb29deb62688ea2b5aec944a490f810fb8769b4fc3ec665f7"
 let hexdict["Cj-81"]="32421a04fc381df1836de399380fb0f26c23fa1c65f08eeffc97983db73395f1"
+let hexdict["Cj-82"]="a780aeeae08f1147213d87064058392efae9ab9fe176e966d4ae1f503561cedf"
 let hexdict["Iu-70"]="bb238ac0467d946a0150a3e77c20b34399160da8f9d9ae98c29f0e0f13723293"
 let hexdict["Iu-71"]="6def02a52646a495878c15693b7b926a1d482c8eea0b9c386abcd0849b60f1c7"
 let hexdict["Iu-72"]="c3f3d0c8e42799e9766aea3dd7aca116c0c824714073a5c288f6013dbfd1df92"
@@ -4090,6 +4148,7 @@ let hexdict["Iu-81"]="8eb001a108a6b508b612b1f030d99bdb9bbfa1db71c2e093af9bee81e8
 let hexdict["Iu-82"]="31385424675d52d37a9e2f8635d6a6d60b331823169f846e2cc46e2308a2cf85"
 let hexdict["Iu-83"]="bbeb640f556acdefb3498186fe3f1f850c68565ea8d34b571731515243aeb0ce"
 let hexdict["Iu-84"]="897974e5c966371f8939ce16e284eaa1824460dc29b6b4bdc4818330015710d3"
+let hexdict["D-73"]="0e29ce7f3523935bb2e066895384d4be09de9d186e323fb65e93f84e3323805e"
 let hexdict["D-74"]="b1581d4ad63aae78fe7fc80020ea3775d1d237c9308910c0716788b8325fd017"
 let hexdict["D-75"]="ec043aca9f8f501c27889e96a7361e5d1bf75748edc937ac7ae575d3de7dbb0e"
 let hexdict["D-76"]="674206e72c47ab39361b0e2cd09650d9116ee6d13a56a6371d3e446759717aff"
@@ -4103,6 +4162,7 @@ let hexdict["D-83"]="7a37d6349c4c68070c91fe361bafc37d0054c36534ca25cedef288f091d
 let hexdict["D-84"]="2c0d08d8bb1ad933d1e45e8f132260fb868cefacb841c1622c39044ca9aa1ef4"
 let hexdict["D-85"]="df2c1517873c8522c1f816ed2db08b7f73276c7762ad33519869b7d0432feacd"
 let hexdict["D-86"]="5a8c0baba6d8f36433f4906b599a71cae5a4d1769c4f9848428528b5dda1cbcc"
+let hexdict["Co-73"]="32ba26c3389a30bc585974b78b54d5c0aa020cd0082b952779b033cf4d22fe76"
 let hexdict["Co-74"]="4f02996a4319dd799dc659e873eecb3b9b7f07750a24518b5871a81bc3792717"
 let hexdict["Co-75"]="1c9c1a9b4b2a3050c6826ff3769c296c8ae63c4e53e4a39e7fa20083118e4e45"
 let hexdict["Co-76"]="d0013e5a13e0b2f6a61fabd1d81469c9da7ba3b3978e2a90b69ab0bc6f1700c8"
@@ -4117,6 +4177,7 @@ let hexdict["Co-85"]="3421446350d6eca14e4f7ac9781c27836a2c5017b73eb418d14eccb0f3
 let hexdict["Co-86"]="6e8da1a093c411fa3ef7b2ab19be5f3a8df7675ba8f0c211c0ada73fd796be58"
 let hexdict["Co-87"]="73e6272912ca227058d798325208e58397ea4a6786f7b35951dbb3edfb2f32be"
 let hexdict["Co-88"]="2e84043b75112d85de9a507c9b3e103bd9b6744afe8ab12a005b430a7a19d1df"
+let hexdict["Co-89"]="0fd177c9bb50455f6648f79de2457e3f0cb0e09eafe28dbe3fdf7f170c912121"
 let hexdict["W-75"]="788837c2e8d935917ba8f8ae4181470bea0791e50ab1c537d4977d9d69b370ec"
 let hexdict["W-76"]="ebf3ae57516a04a0968390cc7df7e8b59caf61ab4eeff4a745cb5232b7af1987"
 let hexdict["W-77"]="e10414d712a0dac3a01bb3b0f591d9264233884288b038421bcc72e3d165698a"
@@ -4173,6 +4234,7 @@ let hexdict["N-93"]="40859f762ac89fd70b1976979a93754a46fae7b782a564c364414262e0f
 let hexdict["N-94"]="ef0d57c7605ddcacc7459cd2c03a183edadae8e67a09f22bf083c5095afc364d"
 let hexdict["N-95"]="ad3296de60e5a6a43450afc2c185d0adf7bb66c2740e0cd3e68a07ea9dc5ea69"
 let hexdict["N-96"]="e81f0240130215403dfd80c32806b7347f84ec4f549ce308a53ade0d5b7ae570"
+let hexdict["U-80"]="fed280d1a42d725605194e9027fcdaa05677ad2517055cb9e554e37a8e6eb232"
 let hexdict["U-81"]="d0f07905cb8d3c4abe31d4d42f876b31a8d6b48c2968a9bd67706e8341752b2f"
 let hexdict["U-82"]="d12a0c4da41d705bdf2ad098527a33a397849cf468ee466ee06fee82c59999d6"
 let hexdict["U-83"]="39217667ee8e17e7bff52b5cc633843d25f7de5c1ca75ab8e22f8ce41b08dd62"
@@ -4192,6 +4254,7 @@ let hexdict["U-96"]="b0fc7f32a63edc529d7ac1eba76cde5240c57603dc54ac53fcfa1bb2e0f
 let hexdict["U-97"]="2e977647793f5c9f3b7f4f2f91fc9682d25c2f475bdcb461dfb05d628996c625"
 let hexdict["U-98"]="7ab6ccefe78ced219344d0490162d9cef794e19f2969ceb3ce08b2d837fb72f3"
 let hexdict["U-99"]="6023d411df28307feb27da6a93ea9029a1882ae705786ada468cf0b31d5d7428"
+let hexdict["Vl-82"]="e303176b106c854c4a085d074bb51dcc3da5c0c2cd6b3a32abdfd020f967d437"
 let hexdict["Vl-83"]="60a52282caeec27062873b37eb4d059a5ef55fb2539ecec0283601c18cb454c8"
 let hexdict["Vl-84"]="8481bcbdc255731b0c04d72498acd6b26ec642b4b71630c3fef0df6591f55bf6"
 let hexdict["Vl-85"]="2efe83b81c9231697ba4c831aa95617709d45aa45a03ad40fd16bfd42f91aac1"
@@ -4384,6 +4447,7 @@ let hexdict["Cv-115"]="e2f5b2ac607b0d00973eb8e8286b201d1170d019c934ad809a234c29c
 let hexdict["Cv-116"]="fc37157b01937f492fe626cf2a77a190cbfc7c47a73c28ca843a7c02160029eb"
 let hexdict["Cv-117"]="a8888092908997592005f860ef2876a85c61fdf8d9a2d836558be056f4819d72"
 let hexdict["Cv-118"]="e6d9d0cce40e84321e5a3a93a560a243979a32d103370bae8742523a05e01f79"
+let hexdict["Cv-119"]="bd8426cb1b7727b0566eb28dfc0b5227348b41a3de0f7222f6155f97a8180fd9"
 let hexdict["Vt-98"]="9e20112bb8c6debc1d182187bef70bedcc510e4878383129f861c71f42631f5d"
 let hexdict["Vt-99"]="afa46b5404732e6a6193a6880aa6a1b7af6f0baf220a476d5950c2a5b6ca2c6d"
 let hexdict["Vt-100"]="98678bf71e7a5dbbab0a4bb4da3748ca48a574117fd14b969e6728bc50dd1a31"
@@ -4858,6 +4922,7 @@ let hexdict["70ebfa958bd9da278c6fbb93d6d40019e7e2f54ad0cbffc5827b781d768e1e12"]=
 let hexdict["3324d73169e4ca826b262b45a92b9639db40294c99b337678ee919e5f5f03df6"]="21 10 Eb"
 let hexdict["2bdf6d520762c1d04fc65bf25330f28ba662d98c58b7a1aa9013a0e3d8a8e68a"]="22 10 Eb"
 let hexdict["0c04746057bbb19b46e941f0c38fb217e1c6bccb319007ab8c31dae1a6ca6bfc"]="23 10 Eb"
+let hexdict["94a648cb230110911be3c6cf3ad55cf3728b16f2442feeb5035d03ef9746126c"]="20 11  P"
 let hexdict["9f9ab7f0844d9d20f0127718a38f1ad94425cc26b3b71840794865457fa6a66a"]="21 11  P"
 let hexdict["39a12ac0e69d98648d7bdb8c2e0ebc0d3dbfa8d81e92f97aa6dac21ee7a1ac4a"]="22 11  P"
 let hexdict["7d53bc9cc686ad85e39661b83f27873b0bc3db82a86c6448c51e95f6b29b3f8e"]="23 11  P"
@@ -4902,6 +4967,7 @@ let hexdict["8f9c2241dfd1d71fe42330a722a2454382976d69a4fe8ca7ea36880e695b2167"]=
 let hexdict["d71de84a1cfbbfdf299bad2afb51636913f39880b25ba11ff32a5f49a2a2d386"]="35 16  K"
 let hexdict["10c526890e4d7c1a32c8f8a86231a3355b78434218ac9767a870463be25951a6"]="36 16  K"
 let hexdict["00a2a4801cc3ce2234bdb470dd146937438a9227b16ee1b5cb57d0579c3331e7"]="37 16  K"
+let hexdict["46f842b9599e696c7c961b1bf6fb7255f48f8940bcaa72227e206c80440b4f04"]="31 17 Mt"
 let hexdict["a3f1272e14bdf3de0c0ee7f2ece4d97e3f34512729a43217bc8bf9ba7449b7dc"]="32 17 Mt"
 let hexdict["9f4f06ea2060cfa81d809d64309fd96747229fb5ab5e8d3874234a62dcc0bfa8"]="33 17 Mt"
 let hexdict["bae5d6b8df90f6a45ad75e3f6f88781d85fe6087bd8c04b83d4a25580d16c1fb"]="34 17 Mt"
@@ -4918,6 +4984,7 @@ let hexdict["5003fa2f6e11986fdb9d1aa815836eda18e933c4c454645ef5a77b18cf580ffc"]=
 let hexdict["2749f8d992707f0672e3ee8deb2511526aa1a49c5d25eb705f3cee5fac5f5527"]="39 18 Lu"
 let hexdict["f1d011c435b2a07a6d1cf76c100ca281618c478597806a2fa3c5cd8098078854"]="40 18 Lu"
 let hexdict["093f89e7945ec9de3469bf1d3bd7e3c869f9ba53df5798ce8e8166b58968267f"]="41 18 Lu"
+let hexdict["a0cc73dc50e4e473bc29c9af04c8cd11426d2cc86ec0b46e7ec777d4d5dbd5f2"]="42 18 Lu"
 let hexdict["449fea318a3bdb1248cabc6ce6f091708285923fe04f390e62be1f46f7ed12e4"]="35 19 Dx"
 let hexdict["8039e43b9823af5f3584bbe4ae9ca35fd877020679c4db6bed4458af38b7bdb9"]="36 19 Dx"
 let hexdict["b3423cbc8205304ddf4cc51f22766a512a26a386c5938930e97c9dd84848898d"]="37 19 Dx"
@@ -4928,6 +4995,7 @@ let hexdict["fbd7326cc66684ad8104290115c635381571c082638d2aa34f093e4b17a02663"]=
 let hexdict["89fa6d3b372731d2098d22befb9c1ec39ed1007899d0e11a653a14ced9a73bd4"]="42 19 Dx"
 let hexdict["26e873434f1a3cf58ae74d32ec661f7a34ee559c447aa2c0f57445964b75fd36"]="43 19 Dx"
 let hexdict["f7d90c4bd38ea92534c5675037a7f38f542c0b4ef60820f9438fcbde491de0b6"]="44 19 Dx"
+let hexdict["3e65585b41a3e2c3af5ac70b92298d16320854cf421419635af92804e4c4c091"]="37 20 Gd"
 let hexdict["6ca905066e16647755e34eb3ab8f715d20df9da5be8ab1419b4970679cee2ce4"]="38 20 Gd"
 let hexdict["497be7d47d2bc8ab7018b1cb7236677b2c41c11bbe5694b854d4dc149117373c"]="39 20 Gd"
 let hexdict["639f01c5af849a494348ac2cb38eaea9c3227ebfce8889d9729ae15fad627e24"]="40 20 Gd"
@@ -5020,6 +5088,7 @@ let hexdict["4894fad244029a80037b33a2b33d901b024935b24f96a6dde43b19db1b9802c6"]=
 let hexdict["037ee0ffb357920f1024ad656a549348d64788d6513fb14f007ab7bbca5dc4fa"]="59 27 Pg"
 let hexdict["60f635c6fd12e8c95eb6fdd8fc6af23c6d492d0d45ae5f09e0816cf4439fa217"]="60 27 Pg"
 let hexdict["bf7c667adc5204ddee6f4f9a07a617c7242077695a1f5815936a9d5f9b0f098a"]="61 27 Pg"
+let hexdict["e134c4fb349537cdb4cf079bad61d3b42a5e6a667aee2536b960dc51c9c72fe1"]="62 27 Pg"
 let hexdict["1057a141959e9e9e11244fc76eff85a51dda22d31231f007a3ca78d6c7376f9a"]="52 28 Qe"
 let hexdict["6572626a781967e9247a7a94a008c39acd8fb7c772f9c7739db6f7b5db42e404"]="53 28 Qe"
 let hexdict["d5a025001e76429d839353e397b0f491ad3475f53e3bc43c8b410f0aef893fc3"]="54 28 Qe"
@@ -5047,6 +5116,7 @@ let hexdict["9f433710b91c88dfbe6ac733cdd3166bbe20912c96de5bb2c6e3480f5bd7b2d2"]=
 let hexdict["9e27a4e98e761ef436d1ef124aeb2e5ff77880e4a7bd397eddfb9d27084a6efc"]="64 29  C"
 let hexdict["d91b5639c1a2f07074b15b8922704c8a2e2d6486631ffe5a53741492d7931f2f"]="65 29  C"
 let hexdict["e6edffff12a905af046489926bbc0cf2894c889d50f7c1cc6540b75739cd9fc6"]="66 29  C"
+let hexdict["b12810b46235774b0ebe0beb870e6bfc97ccd638175e54648bec798d007b4a65"]="67 29  C"
 let hexdict["566c785337412f776d85e1e5714ffb5841869f5ebba14bccf2a4eddadee0e737"]="56 30 Ns"
 let hexdict["72e658ec10f488e0720926ce84a12a42943d96cd5c95a67cd9ff6d68698055f3"]="57 30 Ns"
 let hexdict["46aea24f901ab5c909dfb69a4d3c33c5e1dcf64aecbf890307b54322a26e9c64"]="58 30 Ns"
@@ -5074,6 +5144,7 @@ let hexdict["97b74ff0bb6ab24e58dc6958cccfda3862b7a4f213bedc9853970d66bd527da0"]=
 let hexdict["9a22769b514a938f0af16e7332467eef9a4a8de49caa350b38089fdf251d4019"]="68 31 Ai"
 let hexdict["cebdb4986e560b9914d485860f41d7ccd9ab841fcea88ab7b29e2257a4ccc3f3"]="69 31 Ai"
 let hexdict["1633fa48884f7634dfeefdf7a161b0366273b3c70ed086b77c9946052034163b"]="70 31 Ai"
+let hexdict["ec38845c7003abd299e837a727b644d82238809f106b3e2911476cd5783846b9"]="71 31 Ai"
 let hexdict["76afef4ee540fde42c0f66424d2078032a4cceaf4c7252ce99177fe6704c227c"]="59 32  F"
 let hexdict["8752c6246d223a9fa3c468af867e5bb3070a8e02e72cd26cef56fbe3ee518f77"]="60 32  F"
 let hexdict["c03ed0471143b38c0a505aa3ec63aca538858ec601e6b97a7587ef2c43395ecb"]="61 32  F"
@@ -5118,6 +5189,7 @@ let hexdict["8508de5999111456c90aebf26ea9dec4a4ba78249ce96d452438b0a71e6311f0"]=
 let hexdict["0909850726da878002bee8eaa4f848723a197ce1567590e1fc00a88929742815"]="75 34 Kk"
 let hexdict["28a642804d8cd2df90043865fd81cbe3208c5d12212fe1beef4128b66a9192f9"]="76 34 Kk"
 let hexdict["e2fe817ac360e4cfa618d95908aa42e72b207ebb079b7ff4db6dc8dc8a36c5f3"]="77 34 Kk"
+let hexdict["16aec8f9b59841efec764ac4e305be758fbc71aeb3cec4bc4b6679e96ecad2a8"]="78 34 Kk"
 let hexdict["4f2de12ab8e8c3af4410e6d63225a1f10b71e1e7fd47072f5c747e682ab715b2"]="66 35 Yv"
 let hexdict["cf9dc6cfd1cb722d69617c98193cb216559286ed6378044a6f54451fa1fe5301"]="67 35 Yv"
 let hexdict["9f3d42f38a1a066e66d42edfc3e67b832c2b0a30b31b19b813a683c0912ece53"]="68 35 Yv"
@@ -5133,6 +5205,7 @@ let hexdict["02c272fb58643c76d579757680017874cbb7c397490da41b872afe6899c80c41"]=
 let hexdict["4f91456ecf7903dbff860c16aba74e4263a619a8f6150c14b42ede0cc5fe651b"]="78 35 Yv"
 let hexdict["293b9ace0c3bd53ced6009d28bfca08ddbe4988bdd6128297b25641ee1d6cf85"]="79 35 Yv"
 let hexdict["060cb5513b51be01c67d0e021d1a96e91387b69d548409a1efda5694619fef76"]="80 35 Yv"
+let hexdict["9500fc7f5f449f8d8f446fe64c5e8eb5ac24b923a607cc7f6afc5824a9447ec0"]="67 36 Cj"
 let hexdict["0f3c25a62507f2cfa4dab77d8f69c2f98477b6cd05caa108b0047a2cc230c620"]="68 36 Cj"
 let hexdict["632c5bddcdd0cd79fd12fccff03b8c8ea5915ade9b92d5f33afaf11d157c9070"]="69 36 Cj"
 let hexdict["3b94d9fa4058c50dd479307c344735bbf0167487e623e1027f80959be12ef8fa"]="70 36 Cj"
@@ -5147,6 +5220,7 @@ let hexdict["82a091281ca7674e67941d6a9444d84d4087e8ab02b688d22cc026c84565dbb4"]=
 let hexdict["1b730dd2b6cd9ec714fc4b66e46b2fb8794ab19d96da22f2eda092a48666c242"]="79 36 Cj"
 let hexdict["cf71fc0840b6f8fcb29deb62688ea2b5aec944a490f810fb8769b4fc3ec665f7"]="80 36 Cj"
 let hexdict["32421a04fc381df1836de399380fb0f26c23fa1c65f08eeffc97983db73395f1"]="81 36 Cj"
+let hexdict["a780aeeae08f1147213d87064058392efae9ab9fe176e966d4ae1f503561cedf"]="82 36 Cj"
 let hexdict["bb238ac0467d946a0150a3e77c20b34399160da8f9d9ae98c29f0e0f13723293"]="70 37 Iu"
 let hexdict["6def02a52646a495878c15693b7b926a1d482c8eea0b9c386abcd0849b60f1c7"]="71 37 Iu"
 let hexdict["c3f3d0c8e42799e9766aea3dd7aca116c0c824714073a5c288f6013dbfd1df92"]="72 37 Iu"
@@ -5162,6 +5236,7 @@ let hexdict["8eb001a108a6b508b612b1f030d99bdb9bbfa1db71c2e093af9bee81e838c0c8"]=
 let hexdict["31385424675d52d37a9e2f8635d6a6d60b331823169f846e2cc46e2308a2cf85"]="82 37 Iu"
 let hexdict["bbeb640f556acdefb3498186fe3f1f850c68565ea8d34b571731515243aeb0ce"]="83 37 Iu"
 let hexdict["897974e5c966371f8939ce16e284eaa1824460dc29b6b4bdc4818330015710d3"]="84 37 Iu"
+let hexdict["0e29ce7f3523935bb2e066895384d4be09de9d186e323fb65e93f84e3323805e"]="73 38  D"
 let hexdict["b1581d4ad63aae78fe7fc80020ea3775d1d237c9308910c0716788b8325fd017"]="74 38  D"
 let hexdict["ec043aca9f8f501c27889e96a7361e5d1bf75748edc937ac7ae575d3de7dbb0e"]="75 38  D"
 let hexdict["674206e72c47ab39361b0e2cd09650d9116ee6d13a56a6371d3e446759717aff"]="76 38  D"
@@ -5175,6 +5250,7 @@ let hexdict["7a37d6349c4c68070c91fe361bafc37d0054c36534ca25cedef288f091d1462b"]=
 let hexdict["2c0d08d8bb1ad933d1e45e8f132260fb868cefacb841c1622c39044ca9aa1ef4"]="84 38  D"
 let hexdict["df2c1517873c8522c1f816ed2db08b7f73276c7762ad33519869b7d0432feacd"]="85 38  D"
 let hexdict["5a8c0baba6d8f36433f4906b599a71cae5a4d1769c4f9848428528b5dda1cbcc"]="86 38  D"
+let hexdict["32ba26c3389a30bc585974b78b54d5c0aa020cd0082b952779b033cf4d22fe76"]="73 39 Co"
 let hexdict["4f02996a4319dd799dc659e873eecb3b9b7f07750a24518b5871a81bc3792717"]="74 39 Co"
 let hexdict["1c9c1a9b4b2a3050c6826ff3769c296c8ae63c4e53e4a39e7fa20083118e4e45"]="75 39 Co"
 let hexdict["d0013e5a13e0b2f6a61fabd1d81469c9da7ba3b3978e2a90b69ab0bc6f1700c8"]="76 39 Co"
@@ -5189,6 +5265,7 @@ let hexdict["3421446350d6eca14e4f7ac9781c27836a2c5017b73eb418d14eccb0f31bf2d3"]=
 let hexdict["6e8da1a093c411fa3ef7b2ab19be5f3a8df7675ba8f0c211c0ada73fd796be58"]="86 39 Co"
 let hexdict["73e6272912ca227058d798325208e58397ea4a6786f7b35951dbb3edfb2f32be"]="87 39 Co"
 let hexdict["2e84043b75112d85de9a507c9b3e103bd9b6744afe8ab12a005b430a7a19d1df"]="88 39 Co"
+let hexdict["0fd177c9bb50455f6648f79de2457e3f0cb0e09eafe28dbe3fdf7f170c912121"]="89 39 Co"
 let hexdict["788837c2e8d935917ba8f8ae4181470bea0791e50ab1c537d4977d9d69b370ec"]="75 40  W"
 let hexdict["ebf3ae57516a04a0968390cc7df7e8b59caf61ab4eeff4a745cb5232b7af1987"]="76 40  W"
 let hexdict["e10414d712a0dac3a01bb3b0f591d9264233884288b038421bcc72e3d165698a"]="77 40  W"
@@ -5245,6 +5322,7 @@ let hexdict["40859f762ac89fd70b1976979a93754a46fae7b782a564c364414262e0f9df05"]=
 let hexdict["ef0d57c7605ddcacc7459cd2c03a183edadae8e67a09f22bf083c5095afc364d"]="94 42  N"
 let hexdict["ad3296de60e5a6a43450afc2c185d0adf7bb66c2740e0cd3e68a07ea9dc5ea69"]="95 42  N"
 let hexdict["e81f0240130215403dfd80c32806b7347f84ec4f549ce308a53ade0d5b7ae570"]="96 42  N"
+let hexdict["fed280d1a42d725605194e9027fcdaa05677ad2517055cb9e554e37a8e6eb232"]="80 43  U"
 let hexdict["d0f07905cb8d3c4abe31d4d42f876b31a8d6b48c2968a9bd67706e8341752b2f"]="81 43  U"
 let hexdict["d12a0c4da41d705bdf2ad098527a33a397849cf468ee466ee06fee82c59999d6"]="82 43  U"
 let hexdict["39217667ee8e17e7bff52b5cc633843d25f7de5c1ca75ab8e22f8ce41b08dd62"]="83 43  U"
@@ -5264,6 +5342,7 @@ let hexdict["b0fc7f32a63edc529d7ac1eba76cde5240c57603dc54ac53fcfa1bb2e0fe4979"]=
 let hexdict["2e977647793f5c9f3b7f4f2f91fc9682d25c2f475bdcb461dfb05d628996c625"]="97 43  U"
 let hexdict["7ab6ccefe78ced219344d0490162d9cef794e19f2969ceb3ce08b2d837fb72f3"]="98 43  U"
 let hexdict["6023d411df28307feb27da6a93ea9029a1882ae705786ada468cf0b31d5d7428"]="99 43  U"
+let hexdict["e303176b106c854c4a085d074bb51dcc3da5c0c2cd6b3a32abdfd020f967d437"]="82 44 Vl"
 let hexdict["60a52282caeec27062873b37eb4d059a5ef55fb2539ecec0283601c18cb454c8"]="83 44 Vl"
 let hexdict["8481bcbdc255731b0c04d72498acd6b26ec642b4b71630c3fef0df6591f55bf6"]="84 44 Vl"
 let hexdict["2efe83b81c9231697ba4c831aa95617709d45aa45a03ad40fd16bfd42f91aac1"]="85 44 Vl"
@@ -5456,6 +5535,7 @@ let hexdict["e2f5b2ac607b0d00973eb8e8286b201d1170d019c934ad809a234c29c74788e5"]=
 let hexdict["fc37157b01937f492fe626cf2a77a190cbfc7c47a73c28ca843a7c02160029eb"]="116 52 Cv"
 let hexdict["a8888092908997592005f860ef2876a85c61fdf8d9a2d836558be056f4819d72"]="117 52 Cv"
 let hexdict["e6d9d0cce40e84321e5a3a93a560a243979a32d103370bae8742523a05e01f79"]="118 52 Cv"
+let hexdict["bd8426cb1b7727b0566eb28dfc0b5227348b41a3de0f7222f6155f97a8180fd9"]="119 52 Cv"
 let hexdict["9e20112bb8c6debc1d182187bef70bedcc510e4878383129f861c71f42631f5d"]="98 53 Vt"
 let hexdict["afa46b5404732e6a6193a6880aa6a1b7af6f0baf220a476d5950c2a5b6ca2c6d"]="99 53 Vt"
 let hexdict["98678bf71e7a5dbbab0a4bb4da3748ca48a574117fd14b969e6728bc50dd1a31"]="100 53 Vt"
@@ -5930,6 +6010,7 @@ let hexdictabbr["70ebfa958bd9da278c6fbb93d6d40019e7e2f54ad0cbffc5827b781d768e1e1
 let hexdictabbr["3324d73169e4ca826b262b45a92b9639db40294c99b337678ee919e5f5f03df6"]="Eb-21"
 let hexdictabbr["2bdf6d520762c1d04fc65bf25330f28ba662d98c58b7a1aa9013a0e3d8a8e68a"]="Eb-22"
 let hexdictabbr["0c04746057bbb19b46e941f0c38fb217e1c6bccb319007ab8c31dae1a6ca6bfc"]="Eb-23"
+let hexdictabbr["94a648cb230110911be3c6cf3ad55cf3728b16f2442feeb5035d03ef9746126c"]="P-20"
 let hexdictabbr["9f9ab7f0844d9d20f0127718a38f1ad94425cc26b3b71840794865457fa6a66a"]="P-21"
 let hexdictabbr["39a12ac0e69d98648d7bdb8c2e0ebc0d3dbfa8d81e92f97aa6dac21ee7a1ac4a"]="P-22"
 let hexdictabbr["7d53bc9cc686ad85e39661b83f27873b0bc3db82a86c6448c51e95f6b29b3f8e"]="P-23"
@@ -5974,6 +6055,7 @@ let hexdictabbr["8f9c2241dfd1d71fe42330a722a2454382976d69a4fe8ca7ea36880e695b216
 let hexdictabbr["d71de84a1cfbbfdf299bad2afb51636913f39880b25ba11ff32a5f49a2a2d386"]="K-35"
 let hexdictabbr["10c526890e4d7c1a32c8f8a86231a3355b78434218ac9767a870463be25951a6"]="K-36"
 let hexdictabbr["00a2a4801cc3ce2234bdb470dd146937438a9227b16ee1b5cb57d0579c3331e7"]="K-37"
+let hexdictabbr["46f842b9599e696c7c961b1bf6fb7255f48f8940bcaa72227e206c80440b4f04"]="Mt-31"
 let hexdictabbr["a3f1272e14bdf3de0c0ee7f2ece4d97e3f34512729a43217bc8bf9ba7449b7dc"]="Mt-32"
 let hexdictabbr["9f4f06ea2060cfa81d809d64309fd96747229fb5ab5e8d3874234a62dcc0bfa8"]="Mt-33"
 let hexdictabbr["bae5d6b8df90f6a45ad75e3f6f88781d85fe6087bd8c04b83d4a25580d16c1fb"]="Mt-34"
@@ -5990,6 +6072,7 @@ let hexdictabbr["5003fa2f6e11986fdb9d1aa815836eda18e933c4c454645ef5a77b18cf580ff
 let hexdictabbr["2749f8d992707f0672e3ee8deb2511526aa1a49c5d25eb705f3cee5fac5f5527"]="Lu-39"
 let hexdictabbr["f1d011c435b2a07a6d1cf76c100ca281618c478597806a2fa3c5cd8098078854"]="Lu-40"
 let hexdictabbr["093f89e7945ec9de3469bf1d3bd7e3c869f9ba53df5798ce8e8166b58968267f"]="Lu-41"
+let hexdictabbr["a0cc73dc50e4e473bc29c9af04c8cd11426d2cc86ec0b46e7ec777d4d5dbd5f2"]="Lu-42"
 let hexdictabbr["449fea318a3bdb1248cabc6ce6f091708285923fe04f390e62be1f46f7ed12e4"]="Dx-35"
 let hexdictabbr["8039e43b9823af5f3584bbe4ae9ca35fd877020679c4db6bed4458af38b7bdb9"]="Dx-36"
 let hexdictabbr["b3423cbc8205304ddf4cc51f22766a512a26a386c5938930e97c9dd84848898d"]="Dx-37"
@@ -6000,6 +6083,7 @@ let hexdictabbr["fbd7326cc66684ad8104290115c635381571c082638d2aa34f093e4b17a0266
 let hexdictabbr["89fa6d3b372731d2098d22befb9c1ec39ed1007899d0e11a653a14ced9a73bd4"]="Dx-42"
 let hexdictabbr["26e873434f1a3cf58ae74d32ec661f7a34ee559c447aa2c0f57445964b75fd36"]="Dx-43"
 let hexdictabbr["f7d90c4bd38ea92534c5675037a7f38f542c0b4ef60820f9438fcbde491de0b6"]="Dx-44"
+let hexdictabbr["3e65585b41a3e2c3af5ac70b92298d16320854cf421419635af92804e4c4c091"]="Gd-37"
 let hexdictabbr["6ca905066e16647755e34eb3ab8f715d20df9da5be8ab1419b4970679cee2ce4"]="Gd-38"
 let hexdictabbr["497be7d47d2bc8ab7018b1cb7236677b2c41c11bbe5694b854d4dc149117373c"]="Gd-39"
 let hexdictabbr["639f01c5af849a494348ac2cb38eaea9c3227ebfce8889d9729ae15fad627e24"]="Gd-40"
@@ -6092,6 +6176,7 @@ let hexdictabbr["4894fad244029a80037b33a2b33d901b024935b24f96a6dde43b19db1b9802c
 let hexdictabbr["037ee0ffb357920f1024ad656a549348d64788d6513fb14f007ab7bbca5dc4fa"]="Pg-59"
 let hexdictabbr["60f635c6fd12e8c95eb6fdd8fc6af23c6d492d0d45ae5f09e0816cf4439fa217"]="Pg-60"
 let hexdictabbr["bf7c667adc5204ddee6f4f9a07a617c7242077695a1f5815936a9d5f9b0f098a"]="Pg-61"
+let hexdictabbr["e134c4fb349537cdb4cf079bad61d3b42a5e6a667aee2536b960dc51c9c72fe1"]="Pg-62"
 let hexdictabbr["1057a141959e9e9e11244fc76eff85a51dda22d31231f007a3ca78d6c7376f9a"]="Qe-52"
 let hexdictabbr["6572626a781967e9247a7a94a008c39acd8fb7c772f9c7739db6f7b5db42e404"]="Qe-53"
 let hexdictabbr["d5a025001e76429d839353e397b0f491ad3475f53e3bc43c8b410f0aef893fc3"]="Qe-54"
@@ -6119,6 +6204,7 @@ let hexdictabbr["9f433710b91c88dfbe6ac733cdd3166bbe20912c96de5bb2c6e3480f5bd7b2d
 let hexdictabbr["9e27a4e98e761ef436d1ef124aeb2e5ff77880e4a7bd397eddfb9d27084a6efc"]="C-64"
 let hexdictabbr["d91b5639c1a2f07074b15b8922704c8a2e2d6486631ffe5a53741492d7931f2f"]="C-65"
 let hexdictabbr["e6edffff12a905af046489926bbc0cf2894c889d50f7c1cc6540b75739cd9fc6"]="C-66"
+let hexdictabbr["b12810b46235774b0ebe0beb870e6bfc97ccd638175e54648bec798d007b4a65"]="C-67"
 let hexdictabbr["566c785337412f776d85e1e5714ffb5841869f5ebba14bccf2a4eddadee0e737"]="Ns-56"
 let hexdictabbr["72e658ec10f488e0720926ce84a12a42943d96cd5c95a67cd9ff6d68698055f3"]="Ns-57"
 let hexdictabbr["46aea24f901ab5c909dfb69a4d3c33c5e1dcf64aecbf890307b54322a26e9c64"]="Ns-58"
@@ -6146,6 +6232,7 @@ let hexdictabbr["97b74ff0bb6ab24e58dc6958cccfda3862b7a4f213bedc9853970d66bd527da
 let hexdictabbr["9a22769b514a938f0af16e7332467eef9a4a8de49caa350b38089fdf251d4019"]="Ai-68"
 let hexdictabbr["cebdb4986e560b9914d485860f41d7ccd9ab841fcea88ab7b29e2257a4ccc3f3"]="Ai-69"
 let hexdictabbr["1633fa48884f7634dfeefdf7a161b0366273b3c70ed086b77c9946052034163b"]="Ai-70"
+let hexdictabbr["ec38845c7003abd299e837a727b644d82238809f106b3e2911476cd5783846b9"]="Ai-71"
 let hexdictabbr["76afef4ee540fde42c0f66424d2078032a4cceaf4c7252ce99177fe6704c227c"]="F-59"
 let hexdictabbr["8752c6246d223a9fa3c468af867e5bb3070a8e02e72cd26cef56fbe3ee518f77"]="F-60"
 let hexdictabbr["c03ed0471143b38c0a505aa3ec63aca538858ec601e6b97a7587ef2c43395ecb"]="F-61"
@@ -6190,6 +6277,7 @@ let hexdictabbr["8508de5999111456c90aebf26ea9dec4a4ba78249ce96d452438b0a71e6311f
 let hexdictabbr["0909850726da878002bee8eaa4f848723a197ce1567590e1fc00a88929742815"]="Kk-75"
 let hexdictabbr["28a642804d8cd2df90043865fd81cbe3208c5d12212fe1beef4128b66a9192f9"]="Kk-76"
 let hexdictabbr["e2fe817ac360e4cfa618d95908aa42e72b207ebb079b7ff4db6dc8dc8a36c5f3"]="Kk-77"
+let hexdictabbr["16aec8f9b59841efec764ac4e305be758fbc71aeb3cec4bc4b6679e96ecad2a8"]="Kk-78"
 let hexdictabbr["4f2de12ab8e8c3af4410e6d63225a1f10b71e1e7fd47072f5c747e682ab715b2"]="Yv-66"
 let hexdictabbr["cf9dc6cfd1cb722d69617c98193cb216559286ed6378044a6f54451fa1fe5301"]="Yv-67"
 let hexdictabbr["9f3d42f38a1a066e66d42edfc3e67b832c2b0a30b31b19b813a683c0912ece53"]="Yv-68"
@@ -6205,6 +6293,7 @@ let hexdictabbr["02c272fb58643c76d579757680017874cbb7c397490da41b872afe6899c80c4
 let hexdictabbr["4f91456ecf7903dbff860c16aba74e4263a619a8f6150c14b42ede0cc5fe651b"]="Yv-78"
 let hexdictabbr["293b9ace0c3bd53ced6009d28bfca08ddbe4988bdd6128297b25641ee1d6cf85"]="Yv-79"
 let hexdictabbr["060cb5513b51be01c67d0e021d1a96e91387b69d548409a1efda5694619fef76"]="Yv-80"
+let hexdictabbr["9500fc7f5f449f8d8f446fe64c5e8eb5ac24b923a607cc7f6afc5824a9447ec0"]="Cj-67"
 let hexdictabbr["0f3c25a62507f2cfa4dab77d8f69c2f98477b6cd05caa108b0047a2cc230c620"]="Cj-68"
 let hexdictabbr["632c5bddcdd0cd79fd12fccff03b8c8ea5915ade9b92d5f33afaf11d157c9070"]="Cj-69"
 let hexdictabbr["3b94d9fa4058c50dd479307c344735bbf0167487e623e1027f80959be12ef8fa"]="Cj-70"
@@ -6219,6 +6308,7 @@ let hexdictabbr["82a091281ca7674e67941d6a9444d84d4087e8ab02b688d22cc026c84565dbb
 let hexdictabbr["1b730dd2b6cd9ec714fc4b66e46b2fb8794ab19d96da22f2eda092a48666c242"]="Cj-79"
 let hexdictabbr["cf71fc0840b6f8fcb29deb62688ea2b5aec944a490f810fb8769b4fc3ec665f7"]="Cj-80"
 let hexdictabbr["32421a04fc381df1836de399380fb0f26c23fa1c65f08eeffc97983db73395f1"]="Cj-81"
+let hexdictabbr["a780aeeae08f1147213d87064058392efae9ab9fe176e966d4ae1f503561cedf"]="Cj-82"
 let hexdictabbr["bb238ac0467d946a0150a3e77c20b34399160da8f9d9ae98c29f0e0f13723293"]="Iu-70"
 let hexdictabbr["6def02a52646a495878c15693b7b926a1d482c8eea0b9c386abcd0849b60f1c7"]="Iu-71"
 let hexdictabbr["c3f3d0c8e42799e9766aea3dd7aca116c0c824714073a5c288f6013dbfd1df92"]="Iu-72"
@@ -6234,6 +6324,7 @@ let hexdictabbr["8eb001a108a6b508b612b1f030d99bdb9bbfa1db71c2e093af9bee81e838c0c
 let hexdictabbr["31385424675d52d37a9e2f8635d6a6d60b331823169f846e2cc46e2308a2cf85"]="Iu-82"
 let hexdictabbr["bbeb640f556acdefb3498186fe3f1f850c68565ea8d34b571731515243aeb0ce"]="Iu-83"
 let hexdictabbr["897974e5c966371f8939ce16e284eaa1824460dc29b6b4bdc4818330015710d3"]="Iu-84"
+let hexdictabbr["0e29ce7f3523935bb2e066895384d4be09de9d186e323fb65e93f84e3323805e"]="D-73"
 let hexdictabbr["b1581d4ad63aae78fe7fc80020ea3775d1d237c9308910c0716788b8325fd017"]="D-74"
 let hexdictabbr["ec043aca9f8f501c27889e96a7361e5d1bf75748edc937ac7ae575d3de7dbb0e"]="D-75"
 let hexdictabbr["674206e72c47ab39361b0e2cd09650d9116ee6d13a56a6371d3e446759717aff"]="D-76"
@@ -6247,6 +6338,7 @@ let hexdictabbr["7a37d6349c4c68070c91fe361bafc37d0054c36534ca25cedef288f091d1462
 let hexdictabbr["2c0d08d8bb1ad933d1e45e8f132260fb868cefacb841c1622c39044ca9aa1ef4"]="D-84"
 let hexdictabbr["df2c1517873c8522c1f816ed2db08b7f73276c7762ad33519869b7d0432feacd"]="D-85"
 let hexdictabbr["5a8c0baba6d8f36433f4906b599a71cae5a4d1769c4f9848428528b5dda1cbcc"]="D-86"
+let hexdictabbr["32ba26c3389a30bc585974b78b54d5c0aa020cd0082b952779b033cf4d22fe76"]="Co-73"
 let hexdictabbr["4f02996a4319dd799dc659e873eecb3b9b7f07750a24518b5871a81bc3792717"]="Co-74"
 let hexdictabbr["1c9c1a9b4b2a3050c6826ff3769c296c8ae63c4e53e4a39e7fa20083118e4e45"]="Co-75"
 let hexdictabbr["d0013e5a13e0b2f6a61fabd1d81469c9da7ba3b3978e2a90b69ab0bc6f1700c8"]="Co-76"
@@ -6261,6 +6353,7 @@ let hexdictabbr["3421446350d6eca14e4f7ac9781c27836a2c5017b73eb418d14eccb0f31bf2d
 let hexdictabbr["6e8da1a093c411fa3ef7b2ab19be5f3a8df7675ba8f0c211c0ada73fd796be58"]="Co-86"
 let hexdictabbr["73e6272912ca227058d798325208e58397ea4a6786f7b35951dbb3edfb2f32be"]="Co-87"
 let hexdictabbr["2e84043b75112d85de9a507c9b3e103bd9b6744afe8ab12a005b430a7a19d1df"]="Co-88"
+let hexdictabbr["0fd177c9bb50455f6648f79de2457e3f0cb0e09eafe28dbe3fdf7f170c912121"]="Co-89"
 let hexdictabbr["788837c2e8d935917ba8f8ae4181470bea0791e50ab1c537d4977d9d69b370ec"]="W-75"
 let hexdictabbr["ebf3ae57516a04a0968390cc7df7e8b59caf61ab4eeff4a745cb5232b7af1987"]="W-76"
 let hexdictabbr["e10414d712a0dac3a01bb3b0f591d9264233884288b038421bcc72e3d165698a"]="W-77"
@@ -6317,6 +6410,7 @@ let hexdictabbr["40859f762ac89fd70b1976979a93754a46fae7b782a564c364414262e0f9df0
 let hexdictabbr["ef0d57c7605ddcacc7459cd2c03a183edadae8e67a09f22bf083c5095afc364d"]="N-94"
 let hexdictabbr["ad3296de60e5a6a43450afc2c185d0adf7bb66c2740e0cd3e68a07ea9dc5ea69"]="N-95"
 let hexdictabbr["e81f0240130215403dfd80c32806b7347f84ec4f549ce308a53ade0d5b7ae570"]="N-96"
+let hexdictabbr["fed280d1a42d725605194e9027fcdaa05677ad2517055cb9e554e37a8e6eb232"]="U-80"
 let hexdictabbr["d0f07905cb8d3c4abe31d4d42f876b31a8d6b48c2968a9bd67706e8341752b2f"]="U-81"
 let hexdictabbr["d12a0c4da41d705bdf2ad098527a33a397849cf468ee466ee06fee82c59999d6"]="U-82"
 let hexdictabbr["39217667ee8e17e7bff52b5cc633843d25f7de5c1ca75ab8e22f8ce41b08dd62"]="U-83"
@@ -6336,6 +6430,7 @@ let hexdictabbr["b0fc7f32a63edc529d7ac1eba76cde5240c57603dc54ac53fcfa1bb2e0fe497
 let hexdictabbr["2e977647793f5c9f3b7f4f2f91fc9682d25c2f475bdcb461dfb05d628996c625"]="U-97"
 let hexdictabbr["7ab6ccefe78ced219344d0490162d9cef794e19f2969ceb3ce08b2d837fb72f3"]="U-98"
 let hexdictabbr["6023d411df28307feb27da6a93ea9029a1882ae705786ada468cf0b31d5d7428"]="U-99"
+let hexdictabbr["e303176b106c854c4a085d074bb51dcc3da5c0c2cd6b3a32abdfd020f967d437"]="Vl-82"
 let hexdictabbr["60a52282caeec27062873b37eb4d059a5ef55fb2539ecec0283601c18cb454c8"]="Vl-83"
 let hexdictabbr["8481bcbdc255731b0c04d72498acd6b26ec642b4b71630c3fef0df6591f55bf6"]="Vl-84"
 let hexdictabbr["2efe83b81c9231697ba4c831aa95617709d45aa45a03ad40fd16bfd42f91aac1"]="Vl-85"
@@ -6528,6 +6623,7 @@ let hexdictabbr["e2f5b2ac607b0d00973eb8e8286b201d1170d019c934ad809a234c29c74788e
 let hexdictabbr["fc37157b01937f492fe626cf2a77a190cbfc7c47a73c28ca843a7c02160029eb"]="Cv-116"
 let hexdictabbr["a8888092908997592005f860ef2876a85c61fdf8d9a2d836558be056f4819d72"]="Cv-117"
 let hexdictabbr["e6d9d0cce40e84321e5a3a93a560a243979a32d103370bae8742523a05e01f79"]="Cv-118"
+let hexdictabbr["bd8426cb1b7727b0566eb28dfc0b5227348b41a3de0f7222f6155f97a8180fd9"]="Cv-119"
 let hexdictabbr["9e20112bb8c6debc1d182187bef70bedcc510e4878383129f861c71f42631f5d"]="Vt-98"
 let hexdictabbr["afa46b5404732e6a6193a6880aa6a1b7af6f0baf220a476d5950c2a5b6ca2c6d"]="Vt-99"
 let hexdictabbr["98678bf71e7a5dbbab0a4bb4da3748ca48a574117fd14b969e6728bc50dd1a31"]="Vt-100"
@@ -7002,6 +7098,7 @@ let otomdict["510759775698955345865648013475124165538874714125382413806361295719
 let otomdict["23133046979732464109601446787800189343636942056187266116001030288077898137078"]="21 10 Eb"
 let otomdict["19844213886371273633325353979672120782750415648434693561098685902784335242890"]="22 10 Eb"
 let otomdict["5435624771228800065601566926750343277613946654469444039074520527369946164220"]="23 10 Eb"
+let otomdict["67236100605369147836546523061549767312822755458163706113779985448118560100972"]="20 11  P"
 let otomdict["72191106876617040686445758113648452768539825700039800754544535225117574604394"]="21 11  P"
 let otomdict["26066589820618487334349385189303895374946371288335584066433578262080952314954"]="22 11  P"
 let otomdict["56687056134257018141273977910243721137072568075857445347648177701127781564302"]="23 11  P"
@@ -7046,6 +7143,7 @@ let otomdict["649566019248558100838325781518776409892446098906747590200440145640
 let otomdict["97300104213521663329440515017352828370985400341141010050753878979460169126790"]="35 16  K"
 let otomdict["7585340410473722838818283286585733927356513075321902020512557442949707288998"]="36 16  K"
 let otomdict["287364564797439066976319994223036079863756514637133597029220797598833783271"]="37 16  K"
+let otomdict["32100537985180668897939942012845746943590490636503811023055002620326969036548"]="31 17 Mt"
 let otomdict["74153074872133471252660131088612294199596935385099834437666242521820094379996"]="32 17 Mt"
 let otomdict["72057371565372268104249247391099918704444452745742389308706403058032138305448"]="33 17 Mt"
 let otomdict["84536279772214473729863912295670977901293560326078029529036113316476037284347"]="34 17 Mt"
@@ -7062,6 +7160,7 @@ let otomdict["361920551431514276545174493640248812347866172617586211878084579649
 let otomdict["17770898429300514866953019959140445394780618526300359389596592406567986353447"]="39 18 Lu"
 let otomdict["109375023317533580029437499013130894698186182991304078264122682635715130918996"]="40 18 Lu"
 let otomdict["4183078784952839040552494396359731858479390646415233868781805696195972572799"]="41 18 Lu"
+let otomdict["72731292215074704432549591509302779188345302770936060782146840235373514970610"]="42 18 Lu"
 let otomdict["31039818731202132676783153493963779540793320297609333235972804625570424754916"]="35 19 Dx"
 let otomdict["57998330106176535539294956193654108667721146949521263687778023947347221265849"]="36 19 Dx"
 let otomdict["81081030989623570162172390822015261296148912088476307132524116513569643202957"]="37 19 Dx"
@@ -7072,6 +7171,7 @@ let otomdict["113910745133212803014533168122841714889542398190277221019620818923
 let otomdict["62409325908899044592476070218877779921661961288225124206854304433610194107348"]="42 19 Dx"
 let otomdict["17598592280669480315595155086724582293016157382603540731525020103752937766198"]="43 19 Dx"
 let otomdict["112104764278355449610720733923615250710613089229150930717383325910219842511030"]="44 19 Dx"
+let otomdict["28222457979651514842255106039860627873246491927072007239460677816538206879889"]="37 20 Gd"
 let otomdict["49148419483025294653233417761909133985393091598438431824033206442396115414244"]="38 20 Gd"
 let otomdict["33237760167643037776264640309298896015887439103912129407059393243673743800124"]="39 20 Gd"
 let otomdict["45059912924383176397328809052774771000882876282953541632895621956896186072612"]="40 20 Gd"
@@ -7164,6 +7264,7 @@ let otomdict["328297495689201854439926306099031318272533573998797890922711015791
 let otomdict["1581114160766881440649293333422638909672765777775599921838631897044573078778"]="59 27 Pg"
 let otomdict["43857048999206664460923054915703226238698955030484363472759009021497605857815"]="60 27 Pg"
 let otomdict["86611550405879710697403347624671446789230730368487006676840165168445035317642"]="61 27 Pg"
+let otomdict["101863626493371621658806088483784490099336404891894335485387454890639339499489"]="62 27 Pg"
 let otomdict["7391834221283132073250889413835535678095054594157622366677720462196173402010"]="52 28 Qe"
 let otomdict["45885697513838899614285054470553194701439675730489622019471916075157366694916"]="53 28 Qe"
 let otomdict["96625587646423131648251315377894084081291480465563723360850693466699135008707"]="54 28 Qe"
@@ -7191,6 +7292,7 @@ let otomdict["720365017249822400954802159819929862363781688035547520917791912009
 let otomdict["71535475294753830992873608480922381419555381384815471343302672331081578606332"]="64 29  C"
 let otomdict["98200188120612908267612641080526911419717217274283156166292821165536783310639"]="65 29  C"
 let otomdict["104452464750573731080026326441242472951504676308704703783444894859824280215494"]="66 29  C"
+let otomdict["80130163372903834067071959345661991864102197236092215299364590283285858044517"]="67 29  C"
 let otomdict["39090554914213154915434266194909168540433017441183906237314482136435346433847"]="56 30 Ns"
 let otomdict["51970653281402920084661863406411316976973822626675909155134192541494551795187"]="57 30 Ns"
 let otomdict["31970451018020010733334682435605138126406732441203680973562417608458276609124"]="58 30 Ns"
@@ -7218,6 +7320,7 @@ let otomdict["686231248770135564869323339803803793199043054059025201796110208329
 let otomdict["69717070075447118148823790749938898891699141689912576266510020343788411371545"]="68 31 Ai"
 let otomdict["93511627327270055420324510198122596168642559415591454557889808087407011873779"]="69 31 Ai"
 let otomdict["10042719261193576153335022594352136173245967155789353388486047990672398751291"]="70 31 Ai"
+let otomdict["106845689223907813814507088586926284210728416638837343285246071412013326157497"]="71 31 Ai"
 let otomdict["53683766013557624920825908933920314323668322923368023203384872781558793904764"]="59 32  F"
 let otomdict["61208483545880655279568803868263109105609771367085885208368535239683682176887"]="60 32  F"
 let otomdict["86955048925217911881733278417419655076070481490041350966417882156556116123339"]="61 32  F"
@@ -7262,6 +7365,7 @@ let otomdict["601732782413367043130355827873786896299514875261904737083191464450
 let otomdict["4087635385907917591315875807711755537180148269613839709283953078248781654037"]="75 34 Kk"
 let otomdict["18386269530382906884435059121585069468694047642753955743977127814391064007417"]="76 34 Kk"
 let otomdict["102672376569239899437243250646297716898256316428236268758255399855142525650419"]="77 34 Kk"
+let otomdict["10259701139523537573012702617643151372858893206460106994730694765440318231208"]="78 34 Kk"
 let otomdict["35813777200712075257922461747543629215457526473218401128519314741514871444914"]="66 35 Yv"
 let otomdict["93907526794485935155838085167586004057303693679075004225610942830953977762561"]="67 35 Yv"
 let otomdict["72025982676760567854792855292106025229771395464658274782829314820934548246099"]="68 35 Yv"
@@ -7277,6 +7381,7 @@ let otomdict["124818760307240335874926520351287587773454221252121463274521548335
 let otomdict["35989387070412399434769035139810410116734774800242366424447540272729159525659"]="78 35 Yv"
 let otomdict["18650139192710627131099894830998687543349821409765717120399271343171088863109"]="79 35 Yv"
 let otomdict["2736330662368440078545356707046343375101326427794018711162519738551663325046"]="80 35 Yv"
+let otomdict["67396357112932207495551667227682468425514534073651426715936114026003214663360"]="67 36 Cj"
 let otomdict["6890963396501501490362116375586673083821384674916052429639498493732248929824"]="68 36 Cj"
 let otomdict["44857347319334308958125477790319673735018427914477793698889454964173214355568"]="69 36 Cj"
 let otomdict["26949455857720342555461876065413845260105150285011636097162435861542119340282"]="70 36 Cj"
@@ -7291,6 +7396,7 @@ let otomdict["590843676808249332878002331081387732980585743067168993274797729511
 let otomdict["12415729727740439401054346709768763306356459785203471669688140683339329094210"]="79 36 Cj"
 let otomdict["93830152837630321612790627044026170260941587248383334795369564377920370533879"]="80 36 Cj"
 let otomdict["22732433915245278689166083732492440930167078908666112104048495817531046729201"]="81 36 Cj"
+let otomdict["75763609373837789609997591786547288673593007344677957575595102892653428199135"]="82 36 Cj"
 let otomdict["84645299957067196194523408709901462705735157493330825825017863198508590445203"]="70 37 Iu"
 let otomdict["49724395199972891738055201515339346283097028312402524851874942018923150766535"]="71 37 Iu"
 let otomdict["88631790289735052489136686193324489692602619962991254527102615214918347120530"]="72 37 Iu"
@@ -7306,6 +7412,7 @@ let otomdict["645394008254336606757800154350351240553385436018903311548832434396
 let otomdict["22262853744344410096744511781196192072984272430951568936769334000763183222661"]="82 37 Iu"
 let otomdict["84998402333323095596420901645562251019010033144830468403625786247745343762638"]="83 37 Iu"
 let otomdict["62181455548359513765059884524019685617523544037541407290518642306898548166867"]="84 37 Iu"
+let otomdict["6406245799078495197815814963620051039985511018442517508377433821700302274654"]="73 38  D"
 let otomdict["80215058909179729458443492589189301596631348193856582295927340091743307550743"]="74 38  D"
 let otomdict["106753305417910931705548322609085063073016371532407339973843407832916556626702"]="75 38  D"
 let otomdict["46704882953240795908221405674640633578845126974304741993182922612334927117055"]="76 38  D"
@@ -7319,6 +7426,7 @@ let otomdict["552808225078168996448449708850015462669286800018474707274291453023
 let otomdict["19924795406529537866236454028187482779463107990341116080396931753918948056820"]="84 38  D"
 let otomdict["100943652075912765348609696452255164026453849484688786028919080385961626954445"]="85 38  D"
 let otomdict["40955595508494732316706610281064058416649326510661029185483056344049863740364"]="86 38  D"
+let otomdict["22944543512723795613951025294361935251063478040535407379994368243507862371958"]="73 39 Co"
 let otomdict["35737307564219570966361378337096913335010898928731231230558168003229857163031"]="74 39 Co"
 let otomdict["12940571534549414105931076586320298226707900376503952055315139966939901611589"]="75 39 Co"
 let otomdict["94083269689146257604618231835001465933818895701237966647419635412735781961928"]="76 39 Co"
@@ -7333,6 +7441,7 @@ let otomdict["235790460757672387617532414326970675921707970411199023339194187605
 let otomdict["50004654290607920423761838825327435163781689800992952814404009609311072730712"]="86 39 Co"
 let otomdict["52422622687418775815186431392402290378147502827715406768418059168537774076606"]="87 39 Co"
 let otomdict["21039644057331845792935337237953006366120058565417426226697014245075610882527"]="88 39 Co"
+let otomdict["7154790511778646435576433406989273596378062902785774450921237305734139552033"]="89 39 Co"
 let otomdict["54518217881602360152122832329248414074990929771158711617693407585840682725612"]="75 40  W"
 let otomdict["106724066511762359191725784282384164901217802397866284498380032493087599040903"]="76 40  W"
 let otomdict["101777602152771313142760780145171266946449942797588267858014369764675852528010"]="77 40  W"
@@ -7389,6 +7498,7 @@ let otomdict["291841135323930687260885532577568285847530455871526366435716336993
 let otomdict["108126345650352935951592459906989477474204486021562616711097185511756430849613"]="94 42  N"
 let otomdict["78339506415408636015605319309725338342571281453048612739726349842122721847913"]="95 42  N"
 let otomdict["104991368661257002738531493178004042493199409055286551383808880227496182343024"]="96 42  N"
+let otomdict["115259390499204277473491398413699922056852897327002681879813876410185990189618"]="80 43  U"
 let otomdict["94505951068410412144537320009778622610498631477479807071859017670818163665711"]="81 43  U"
 let otomdict["94607677844778748464665178605836374456429506268492192816011340243870368242134"]="82 43  U"
 let otomdict["25840955530450078066392363114615440529458923919820541260020845289725282016610"]="83 43  U"
@@ -7408,6 +7518,7 @@ let otomdict["800531846982701127464654747075174786712200816566915012801109960332
 let otomdict["21074001274605777379653677953976371401179236076359964202172240741222537676325"]="97 43  U"
 let otomdict["55505148117015277143560074838002777716177866807414509531964094941304622641907"]="98 43  U"
 let otomdict["43485336763306603700103857398848584696018042565049100645439182877193225991208"]="99 43  U"
+let otomdict["102680478796205714373198384944078765699973187541572602374869356125959162942519"]="82 44 Vl"
 let otomdict["43713801415222167196613359229651609123143717808765943321635175433556385354952"]="83 44 Vl"
 let otomdict["59934521928556428084452702698249722715762261913097950332682462938948265401334"]="84 44 Vl"
 let otomdict["21256079281694464289614355465080602894521567386798684821635041846249277991617"]="85 44 Vl"
@@ -7600,6 +7711,7 @@ let otomdict["102656814468810063562605585364429463076297013071704050533016967736
 let otomdict["114080162684458652794257640478516093998471172458788498843645431654853696825835"]="116 52 Cv"
 let otomdict["76229737137704787850152422341842564004050966995185626621348583490721562074482"]="117 52 Cv"
 let otomdict["104416802074294605458185268750212136875602329396881225530871167523286784417657"]="118 52 Cv"
+let otomdict["85720619936910895020171360409736896510336031616325308918294027149832023969753"]="119 52 Cv"
 let otomdict["71522087690653871852250043411077233001397992121978987812100670851289115205469"]="98 53 Vt"
 let otomdict["79445252172658531635974995568359755940728131781833588331797871768954439609453"]="99 53 Vt"
 let otomdict["68934504237387402555571881628600381965588444481782891896320733790736974944817"]="100 53 Vt"
@@ -8074,6 +8186,7 @@ let otomdictabbr["51075977569895534586564801347512416553887471412538241380636129
 let otomdictabbr["23133046979732464109601446787800189343636942056187266116001030288077898137078"]="Eb-21"
 let otomdictabbr["19844213886371273633325353979672120782750415648434693561098685902784335242890"]="Eb-22"
 let otomdictabbr["5435624771228800065601566926750343277613946654469444039074520527369946164220"]="Eb-23"
+let otomdictabbr["67236100605369147836546523061549767312822755458163706113779985448118560100972"]="P-20"
 let otomdictabbr["72191106876617040686445758113648452768539825700039800754544535225117574604394"]="P-21"
 let otomdictabbr["26066589820618487334349385189303895374946371288335584066433578262080952314954"]="P-22"
 let otomdictabbr["56687056134257018141273977910243721137072568075857445347648177701127781564302"]="P-23"
@@ -8118,6 +8231,7 @@ let otomdictabbr["64956601924855810083832578151877640989244609890674759020044014
 let otomdictabbr["97300104213521663329440515017352828370985400341141010050753878979460169126790"]="K-35"
 let otomdictabbr["7585340410473722838818283286585733927356513075321902020512557442949707288998"]="K-36"
 let otomdictabbr["287364564797439066976319994223036079863756514637133597029220797598833783271"]="K-37"
+let otomdictabbr["32100537985180668897939942012845746943590490636503811023055002620326969036548"]="Mt-31"
 let otomdictabbr["74153074872133471252660131088612294199596935385099834437666242521820094379996"]="Mt-32"
 let otomdictabbr["72057371565372268104249247391099918704444452745742389308706403058032138305448"]="Mt-33"
 let otomdictabbr["84536279772214473729863912295670977901293560326078029529036113316476037284347"]="Mt-34"
@@ -8134,6 +8248,7 @@ let otomdictabbr["36192055143151427654517449364024881234786617261758621187808457
 let otomdictabbr["17770898429300514866953019959140445394780618526300359389596592406567986353447"]="Lu-39"
 let otomdictabbr["109375023317533580029437499013130894698186182991304078264122682635715130918996"]="Lu-40"
 let otomdictabbr["4183078784952839040552494396359731858479390646415233868781805696195972572799"]="Lu-41"
+let otomdictabbr["72731292215074704432549591509302779188345302770936060782146840235373514970610"]="Lu-42"
 let otomdictabbr["31039818731202132676783153493963779540793320297609333235972804625570424754916"]="Dx-35"
 let otomdictabbr["57998330106176535539294956193654108667721146949521263687778023947347221265849"]="Dx-36"
 let otomdictabbr["81081030989623570162172390822015261296148912088476307132524116513569643202957"]="Dx-37"
@@ -8144,6 +8259,7 @@ let otomdictabbr["11391074513321280301453316812284171488954239819027722101962081
 let otomdictabbr["62409325908899044592476070218877779921661961288225124206854304433610194107348"]="Dx-42"
 let otomdictabbr["17598592280669480315595155086724582293016157382603540731525020103752937766198"]="Dx-43"
 let otomdictabbr["112104764278355449610720733923615250710613089229150930717383325910219842511030"]="Dx-44"
+let otomdictabbr["28222457979651514842255106039860627873246491927072007239460677816538206879889"]="Gd-37"
 let otomdictabbr["49148419483025294653233417761909133985393091598438431824033206442396115414244"]="Gd-38"
 let otomdictabbr["33237760167643037776264640309298896015887439103912129407059393243673743800124"]="Gd-39"
 let otomdictabbr["45059912924383176397328809052774771000882876282953541632895621956896186072612"]="Gd-40"
@@ -8236,6 +8352,7 @@ let otomdictabbr["32829749568920185443992630609903131827253357399879789092271101
 let otomdictabbr["1581114160766881440649293333422638909672765777775599921838631897044573078778"]="Pg-59"
 let otomdictabbr["43857048999206664460923054915703226238698955030484363472759009021497605857815"]="Pg-60"
 let otomdictabbr["86611550405879710697403347624671446789230730368487006676840165168445035317642"]="Pg-61"
+let otomdictabbr["101863626493371621658806088483784490099336404891894335485387454890639339499489"]="Pg-62"
 let otomdictabbr["7391834221283132073250889413835535678095054594157622366677720462196173402010"]="Qe-52"
 let otomdictabbr["45885697513838899614285054470553194701439675730489622019471916075157366694916"]="Qe-53"
 let otomdictabbr["96625587646423131648251315377894084081291480465563723360850693466699135008707"]="Qe-54"
@@ -8263,6 +8380,7 @@ let otomdictabbr["72036501724982240095480215981992986236378168803554752091779191
 let otomdictabbr["71535475294753830992873608480922381419555381384815471343302672331081578606332"]="C-64"
 let otomdictabbr["98200188120612908267612641080526911419717217274283156166292821165536783310639"]="C-65"
 let otomdictabbr["104452464750573731080026326441242472951504676308704703783444894859824280215494"]="C-66"
+let otomdictabbr["80130163372903834067071959345661991864102197236092215299364590283285858044517"]="C-67"
 let otomdictabbr["39090554914213154915434266194909168540433017441183906237314482136435346433847"]="Ns-56"
 let otomdictabbr["51970653281402920084661863406411316976973822626675909155134192541494551795187"]="Ns-57"
 let otomdictabbr["31970451018020010733334682435605138126406732441203680973562417608458276609124"]="Ns-58"
@@ -8290,6 +8408,7 @@ let otomdictabbr["68623124877013556486932333980380379319904305405902520179611020
 let otomdictabbr["69717070075447118148823790749938898891699141689912576266510020343788411371545"]="Ai-68"
 let otomdictabbr["93511627327270055420324510198122596168642559415591454557889808087407011873779"]="Ai-69"
 let otomdictabbr["10042719261193576153335022594352136173245967155789353388486047990672398751291"]="Ai-70"
+let otomdictabbr["106845689223907813814507088586926284210728416638837343285246071412013326157497"]="Ai-71"
 let otomdictabbr["53683766013557624920825908933920314323668322923368023203384872781558793904764"]="F-59"
 let otomdictabbr["61208483545880655279568803868263109105609771367085885208368535239683682176887"]="F-60"
 let otomdictabbr["86955048925217911881733278417419655076070481490041350966417882156556116123339"]="F-61"
@@ -8334,6 +8453,7 @@ let otomdictabbr["60173278241336704313035582787378689629951487526190473708319146
 let otomdictabbr["4087635385907917591315875807711755537180148269613839709283953078248781654037"]="Kk-75"
 let otomdictabbr["18386269530382906884435059121585069468694047642753955743977127814391064007417"]="Kk-76"
 let otomdictabbr["102672376569239899437243250646297716898256316428236268758255399855142525650419"]="Kk-77"
+let otomdictabbr["10259701139523537573012702617643151372858893206460106994730694765440318231208"]="Kk-78"
 let otomdictabbr["35813777200712075257922461747543629215457526473218401128519314741514871444914"]="Yv-66"
 let otomdictabbr["93907526794485935155838085167586004057303693679075004225610942830953977762561"]="Yv-67"
 let otomdictabbr["72025982676760567854792855292106025229771395464658274782829314820934548246099"]="Yv-68"
@@ -8349,6 +8469,7 @@ let otomdictabbr["12481876030724033587492652035128758777345422125212146327452154
 let otomdictabbr["35989387070412399434769035139810410116734774800242366424447540272729159525659"]="Yv-78"
 let otomdictabbr["18650139192710627131099894830998687543349821409765717120399271343171088863109"]="Yv-79"
 let otomdictabbr["2736330662368440078545356707046343375101326427794018711162519738551663325046"]="Yv-80"
+let otomdictabbr["67396357112932207495551667227682468425514534073651426715936114026003214663360"]="Cj-67"
 let otomdictabbr["6890963396501501490362116375586673083821384674916052429639498493732248929824"]="Cj-68"
 let otomdictabbr["44857347319334308958125477790319673735018427914477793698889454964173214355568"]="Cj-69"
 let otomdictabbr["26949455857720342555461876065413845260105150285011636097162435861542119340282"]="Cj-70"
@@ -8363,6 +8484,7 @@ let otomdictabbr["59084367680824933287800233108138773298058574306716899327479772
 let otomdictabbr["12415729727740439401054346709768763306356459785203471669688140683339329094210"]="Cj-79"
 let otomdictabbr["93830152837630321612790627044026170260941587248383334795369564377920370533879"]="Cj-80"
 let otomdictabbr["22732433915245278689166083732492440930167078908666112104048495817531046729201"]="Cj-81"
+let otomdictabbr["75763609373837789609997591786547288673593007344677957575595102892653428199135"]="Cj-82"
 let otomdictabbr["84645299957067196194523408709901462705735157493330825825017863198508590445203"]="Iu-70"
 let otomdictabbr["49724395199972891738055201515339346283097028312402524851874942018923150766535"]="Iu-71"
 let otomdictabbr["88631790289735052489136686193324489692602619962991254527102615214918347120530"]="Iu-72"
@@ -8378,6 +8500,7 @@ let otomdictabbr["64539400825433660675780015435035124055338543601890331154883243
 let otomdictabbr["22262853744344410096744511781196192072984272430951568936769334000763183222661"]="Iu-82"
 let otomdictabbr["84998402333323095596420901645562251019010033144830468403625786247745343762638"]="Iu-83"
 let otomdictabbr["62181455548359513765059884524019685617523544037541407290518642306898548166867"]="Iu-84"
+let otomdictabbr["6406245799078495197815814963620051039985511018442517508377433821700302274654"]="D-73"
 let otomdictabbr["80215058909179729458443492589189301596631348193856582295927340091743307550743"]="D-74"
 let otomdictabbr["106753305417910931705548322609085063073016371532407339973843407832916556626702"]="D-75"
 let otomdictabbr["46704882953240795908221405674640633578845126974304741993182922612334927117055"]="D-76"
@@ -8391,6 +8514,7 @@ let otomdictabbr["55280822507816899644844970885001546266928680001847470727429145
 let otomdictabbr["19924795406529537866236454028187482779463107990341116080396931753918948056820"]="D-84"
 let otomdictabbr["100943652075912765348609696452255164026453849484688786028919080385961626954445"]="D-85"
 let otomdictabbr["40955595508494732316706610281064058416649326510661029185483056344049863740364"]="D-86"
+let otomdictabbr["22944543512723795613951025294361935251063478040535407379994368243507862371958"]="Co-73"
 let otomdictabbr["35737307564219570966361378337096913335010898928731231230558168003229857163031"]="Co-74"
 let otomdictabbr["12940571534549414105931076586320298226707900376503952055315139966939901611589"]="Co-75"
 let otomdictabbr["94083269689146257604618231835001465933818895701237966647419635412735781961928"]="Co-76"
@@ -8405,6 +8529,7 @@ let otomdictabbr["23579046075767238761753241432697067592170797041119902333919418
 let otomdictabbr["50004654290607920423761838825327435163781689800992952814404009609311072730712"]="Co-86"
 let otomdictabbr["52422622687418775815186431392402290378147502827715406768418059168537774076606"]="Co-87"
 let otomdictabbr["21039644057331845792935337237953006366120058565417426226697014245075610882527"]="Co-88"
+let otomdictabbr["7154790511778646435576433406989273596378062902785774450921237305734139552033"]="Co-89"
 let otomdictabbr["54518217881602360152122832329248414074990929771158711617693407585840682725612"]="W-75"
 let otomdictabbr["106724066511762359191725784282384164901217802397866284498380032493087599040903"]="W-76"
 let otomdictabbr["101777602152771313142760780145171266946449942797588267858014369764675852528010"]="W-77"
@@ -8461,6 +8586,7 @@ let otomdictabbr["29184113532393068726088553257756828584753045587152636643571633
 let otomdictabbr["108126345650352935951592459906989477474204486021562616711097185511756430849613"]="N-94"
 let otomdictabbr["78339506415408636015605319309725338342571281453048612739726349842122721847913"]="N-95"
 let otomdictabbr["104991368661257002738531493178004042493199409055286551383808880227496182343024"]="N-96"
+let otomdictabbr["115259390499204277473491398413699922056852897327002681879813876410185990189618"]="U-80"
 let otomdictabbr["94505951068410412144537320009778622610498631477479807071859017670818163665711"]="U-81"
 let otomdictabbr["94607677844778748464665178605836374456429506268492192816011340243870368242134"]="U-82"
 let otomdictabbr["25840955530450078066392363114615440529458923919820541260020845289725282016610"]="U-83"
@@ -8480,6 +8606,7 @@ let otomdictabbr["80053184698270112746465474707517478671220081656691501280110996
 let otomdictabbr["21074001274605777379653677953976371401179236076359964202172240741222537676325"]="U-97"
 let otomdictabbr["55505148117015277143560074838002777716177866807414509531964094941304622641907"]="U-98"
 let otomdictabbr["43485336763306603700103857398848584696018042565049100645439182877193225991208"]="U-99"
+let otomdictabbr["102680478796205714373198384944078765699973187541572602374869356125959162942519"]="Vl-82"
 let otomdictabbr["43713801415222167196613359229651609123143717808765943321635175433556385354952"]="Vl-83"
 let otomdictabbr["59934521928556428084452702698249722715762261913097950332682462938948265401334"]="Vl-84"
 let otomdictabbr["21256079281694464289614355465080602894521567386798684821635041846249277991617"]="Vl-85"
@@ -8672,6 +8799,7 @@ let otomdictabbr["10265681446881006356260558536442946307629701307170405053301696
 let otomdictabbr["114080162684458652794257640478516093998471172458788498843645431654853696825835"]="Cv-116"
 let otomdictabbr["76229737137704787850152422341842564004050966995185626621348583490721562074482"]="Cv-117"
 let otomdictabbr["104416802074294605458185268750212136875602329396881225530871167523286784417657"]="Cv-118"
+let otomdictabbr["85720619936910895020171360409736896510336031616325308918294027149832023969753"]="Cv-119"
 let otomdictabbr["71522087690653871852250043411077233001397992121978987812100670851289115205469"]="Vt-98"
 let otomdictabbr["79445252172658531635974995568359755940728131781833588331797871768954439609453"]="Vt-99"
 let otomdictabbr["68934504237387402555571881628600381965588444481782891896320733790736974944817"]="Vt-100"
@@ -9146,6 +9274,7 @@ let otom2tokenid["20 10 Eb"]="51075977569895534586564801347512416553887471412538
 let otom2tokenid["21 10 Eb"]="23133046979732464109601446787800189343636942056187266116001030288077898137078"
 let otom2tokenid["22 10 Eb"]="19844213886371273633325353979672120782750415648434693561098685902784335242890"
 let otom2tokenid["23 10 Eb"]="5435624771228800065601566926750343277613946654469444039074520527369946164220"
+let otom2tokenid["20 11  P"]="67236100605369147836546523061549767312822755458163706113779985448118560100972"
 let otom2tokenid["21 11  P"]="72191106876617040686445758113648452768539825700039800754544535225117574604394"
 let otom2tokenid["22 11  P"]="26066589820618487334349385189303895374946371288335584066433578262080952314954"
 let otom2tokenid["23 11  P"]="56687056134257018141273977910243721137072568075857445347648177701127781564302"
@@ -9190,6 +9319,7 @@ let otom2tokenid["34 16  K"]="64956601924855810083832578151877640989244609890674
 let otom2tokenid["35 16  K"]="97300104213521663329440515017352828370985400341141010050753878979460169126790"
 let otom2tokenid["36 16  K"]="7585340410473722838818283286585733927356513075321902020512557442949707288998"
 let otom2tokenid["37 16  K"]="287364564797439066976319994223036079863756514637133597029220797598833783271"
+let otom2tokenid["31 17 Mt"]="32100537985180668897939942012845746943590490636503811023055002620326969036548"
 let otom2tokenid["32 17 Mt"]="74153074872133471252660131088612294199596935385099834437666242521820094379996"
 let otom2tokenid["33 17 Mt"]="72057371565372268104249247391099918704444452745742389308706403058032138305448"
 let otom2tokenid["34 17 Mt"]="84536279772214473729863912295670977901293560326078029529036113316476037284347"
@@ -9206,6 +9336,7 @@ let otom2tokenid["38 18 Lu"]="36192055143151427654517449364024881234786617261758
 let otom2tokenid["39 18 Lu"]="17770898429300514866953019959140445394780618526300359389596592406567986353447"
 let otom2tokenid["40 18 Lu"]="109375023317533580029437499013130894698186182991304078264122682635715130918996"
 let otom2tokenid["41 18 Lu"]="4183078784952839040552494396359731858479390646415233868781805696195972572799"
+let otom2tokenid["42 18 Lu"]="72731292215074704432549591509302779188345302770936060782146840235373514970610"
 let otom2tokenid["35 19 Dx"]="31039818731202132676783153493963779540793320297609333235972804625570424754916"
 let otom2tokenid["36 19 Dx"]="57998330106176535539294956193654108667721146949521263687778023947347221265849"
 let otom2tokenid["37 19 Dx"]="81081030989623570162172390822015261296148912088476307132524116513569643202957"
@@ -9216,6 +9347,7 @@ let otom2tokenid["41 19 Dx"]="11391074513321280301453316812284171488954239819027
 let otom2tokenid["42 19 Dx"]="62409325908899044592476070218877779921661961288225124206854304433610194107348"
 let otom2tokenid["43 19 Dx"]="17598592280669480315595155086724582293016157382603540731525020103752937766198"
 let otom2tokenid["44 19 Dx"]="112104764278355449610720733923615250710613089229150930717383325910219842511030"
+let otom2tokenid["37 20 Gd"]="28222457979651514842255106039860627873246491927072007239460677816538206879889"
 let otom2tokenid["38 20 Gd"]="49148419483025294653233417761909133985393091598438431824033206442396115414244"
 let otom2tokenid["39 20 Gd"]="33237760167643037776264640309298896015887439103912129407059393243673743800124"
 let otom2tokenid["40 20 Gd"]="45059912924383176397328809052774771000882876282953541632895621956896186072612"
@@ -9308,6 +9440,7 @@ let otom2tokenid["58 27 Pg"]="32829749568920185443992630609903131827253357399879
 let otom2tokenid["59 27 Pg"]="1581114160766881440649293333422638909672765777775599921838631897044573078778"
 let otom2tokenid["60 27 Pg"]="43857048999206664460923054915703226238698955030484363472759009021497605857815"
 let otom2tokenid["61 27 Pg"]="86611550405879710697403347624671446789230730368487006676840165168445035317642"
+let otom2tokenid["62 27 Pg"]="101863626493371621658806088483784490099336404891894335485387454890639339499489"
 let otom2tokenid["52 28 Qe"]="7391834221283132073250889413835535678095054594157622366677720462196173402010"
 let otom2tokenid["53 28 Qe"]="45885697513838899614285054470553194701439675730489622019471916075157366694916"
 let otom2tokenid["54 28 Qe"]="96625587646423131648251315377894084081291480465563723360850693466699135008707"
@@ -9335,6 +9468,7 @@ let otom2tokenid["63 29  C"]="72036501724982240095480215981992986236378168803554
 let otom2tokenid["64 29  C"]="71535475294753830992873608480922381419555381384815471343302672331081578606332"
 let otom2tokenid["65 29  C"]="98200188120612908267612641080526911419717217274283156166292821165536783310639"
 let otom2tokenid["66 29  C"]="104452464750573731080026326441242472951504676308704703783444894859824280215494"
+let otom2tokenid["67 29  C"]="80130163372903834067071959345661991864102197236092215299364590283285858044517"
 let otom2tokenid["56 30 Ns"]="39090554914213154915434266194909168540433017441183906237314482136435346433847"
 let otom2tokenid["57 30 Ns"]="51970653281402920084661863406411316976973822626675909155134192541494551795187"
 let otom2tokenid["58 30 Ns"]="31970451018020010733334682435605138126406732441203680973562417608458276609124"
@@ -9362,6 +9496,7 @@ let otom2tokenid["67 31 Ai"]="68623124877013556486932333980380379319904305405902
 let otom2tokenid["68 31 Ai"]="69717070075447118148823790749938898891699141689912576266510020343788411371545"
 let otom2tokenid["69 31 Ai"]="93511627327270055420324510198122596168642559415591454557889808087407011873779"
 let otom2tokenid["70 31 Ai"]="10042719261193576153335022594352136173245967155789353388486047990672398751291"
+let otom2tokenid["71 31 Ai"]="106845689223907813814507088586926284210728416638837343285246071412013326157497"
 let otom2tokenid["59 32  F"]="53683766013557624920825908933920314323668322923368023203384872781558793904764"
 let otom2tokenid["60 32  F"]="61208483545880655279568803868263109105609771367085885208368535239683682176887"
 let otom2tokenid["61 32  F"]="86955048925217911881733278417419655076070481490041350966417882156556116123339"
@@ -9406,6 +9541,7 @@ let otom2tokenid["74 34 Kk"]="60173278241336704313035582787378689629951487526190
 let otom2tokenid["75 34 Kk"]="4087635385907917591315875807711755537180148269613839709283953078248781654037"
 let otom2tokenid["76 34 Kk"]="18386269530382906884435059121585069468694047642753955743977127814391064007417"
 let otom2tokenid["77 34 Kk"]="102672376569239899437243250646297716898256316428236268758255399855142525650419"
+let otom2tokenid["78 34 Kk"]="10259701139523537573012702617643151372858893206460106994730694765440318231208"
 let otom2tokenid["66 35 Yv"]="35813777200712075257922461747543629215457526473218401128519314741514871444914"
 let otom2tokenid["67 35 Yv"]="93907526794485935155838085167586004057303693679075004225610942830953977762561"
 let otom2tokenid["68 35 Yv"]="72025982676760567854792855292106025229771395464658274782829314820934548246099"
@@ -9421,6 +9557,7 @@ let otom2tokenid["77 35 Yv"]="12481876030724033587492652035128758777345422125212
 let otom2tokenid["78 35 Yv"]="35989387070412399434769035139810410116734774800242366424447540272729159525659"
 let otom2tokenid["79 35 Yv"]="18650139192710627131099894830998687543349821409765717120399271343171088863109"
 let otom2tokenid["80 35 Yv"]="2736330662368440078545356707046343375101326427794018711162519738551663325046"
+let otom2tokenid["67 36 Cj"]="67396357112932207495551667227682468425514534073651426715936114026003214663360"
 let otom2tokenid["68 36 Cj"]="6890963396501501490362116375586673083821384674916052429639498493732248929824"
 let otom2tokenid["69 36 Cj"]="44857347319334308958125477790319673735018427914477793698889454964173214355568"
 let otom2tokenid["70 36 Cj"]="26949455857720342555461876065413845260105150285011636097162435861542119340282"
@@ -9435,6 +9572,7 @@ let otom2tokenid["78 36 Cj"]="59084367680824933287800233108138773298058574306716
 let otom2tokenid["79 36 Cj"]="12415729727740439401054346709768763306356459785203471669688140683339329094210"
 let otom2tokenid["80 36 Cj"]="93830152837630321612790627044026170260941587248383334795369564377920370533879"
 let otom2tokenid["81 36 Cj"]="22732433915245278689166083732492440930167078908666112104048495817531046729201"
+let otom2tokenid["82 36 Cj"]="75763609373837789609997591786547288673593007344677957575595102892653428199135"
 let otom2tokenid["70 37 Iu"]="84645299957067196194523408709901462705735157493330825825017863198508590445203"
 let otom2tokenid["71 37 Iu"]="49724395199972891738055201515339346283097028312402524851874942018923150766535"
 let otom2tokenid["72 37 Iu"]="88631790289735052489136686193324489692602619962991254527102615214918347120530"
@@ -9450,6 +9588,7 @@ let otom2tokenid["81 37 Iu"]="64539400825433660675780015435035124055338543601890
 let otom2tokenid["82 37 Iu"]="22262853744344410096744511781196192072984272430951568936769334000763183222661"
 let otom2tokenid["83 37 Iu"]="84998402333323095596420901645562251019010033144830468403625786247745343762638"
 let otom2tokenid["84 37 Iu"]="62181455548359513765059884524019685617523544037541407290518642306898548166867"
+let otom2tokenid["73 38  D"]="6406245799078495197815814963620051039985511018442517508377433821700302274654"
 let otom2tokenid["74 38  D"]="80215058909179729458443492589189301596631348193856582295927340091743307550743"
 let otom2tokenid["75 38  D"]="106753305417910931705548322609085063073016371532407339973843407832916556626702"
 let otom2tokenid["76 38  D"]="46704882953240795908221405674640633578845126974304741993182922612334927117055"
@@ -9463,6 +9602,7 @@ let otom2tokenid["83 38  D"]="55280822507816899644844970885001546266928680001847
 let otom2tokenid["84 38  D"]="19924795406529537866236454028187482779463107990341116080396931753918948056820"
 let otom2tokenid["85 38  D"]="100943652075912765348609696452255164026453849484688786028919080385961626954445"
 let otom2tokenid["86 38  D"]="40955595508494732316706610281064058416649326510661029185483056344049863740364"
+let otom2tokenid["73 39 Co"]="22944543512723795613951025294361935251063478040535407379994368243507862371958"
 let otom2tokenid["74 39 Co"]="35737307564219570966361378337096913335010898928731231230558168003229857163031"
 let otom2tokenid["75 39 Co"]="12940571534549414105931076586320298226707900376503952055315139966939901611589"
 let otom2tokenid["76 39 Co"]="94083269689146257604618231835001465933818895701237966647419635412735781961928"
@@ -9477,6 +9617,7 @@ let otom2tokenid["85 39 Co"]="23579046075767238761753241432697067592170797041119
 let otom2tokenid["86 39 Co"]="50004654290607920423761838825327435163781689800992952814404009609311072730712"
 let otom2tokenid["87 39 Co"]="52422622687418775815186431392402290378147502827715406768418059168537774076606"
 let otom2tokenid["88 39 Co"]="21039644057331845792935337237953006366120058565417426226697014245075610882527"
+let otom2tokenid["89 39 Co"]="7154790511778646435576433406989273596378062902785774450921237305734139552033"
 let otom2tokenid["75 40  W"]="54518217881602360152122832329248414074990929771158711617693407585840682725612"
 let otom2tokenid["76 40  W"]="106724066511762359191725784282384164901217802397866284498380032493087599040903"
 let otom2tokenid["77 40  W"]="101777602152771313142760780145171266946449942797588267858014369764675852528010"
@@ -9533,6 +9674,7 @@ let otom2tokenid["93 42  N"]="29184113532393068726088553257756828584753045587152
 let otom2tokenid["94 42  N"]="108126345650352935951592459906989477474204486021562616711097185511756430849613"
 let otom2tokenid["95 42  N"]="78339506415408636015605319309725338342571281453048612739726349842122721847913"
 let otom2tokenid["96 42  N"]="104991368661257002738531493178004042493199409055286551383808880227496182343024"
+let otom2tokenid["80 43  U"]="115259390499204277473491398413699922056852897327002681879813876410185990189618"
 let otom2tokenid["81 43  U"]="94505951068410412144537320009778622610498631477479807071859017670818163665711"
 let otom2tokenid["82 43  U"]="94607677844778748464665178605836374456429506268492192816011340243870368242134"
 let otom2tokenid["83 43  U"]="25840955530450078066392363114615440529458923919820541260020845289725282016610"
@@ -9552,6 +9694,7 @@ let otom2tokenid["96 43  U"]="80053184698270112746465474707517478671220081656691
 let otom2tokenid["97 43  U"]="21074001274605777379653677953976371401179236076359964202172240741222537676325"
 let otom2tokenid["98 43  U"]="55505148117015277143560074838002777716177866807414509531964094941304622641907"
 let otom2tokenid["99 43  U"]="43485336763306603700103857398848584696018042565049100645439182877193225991208"
+let otom2tokenid["82 44 Vl"]="102680478796205714373198384944078765699973187541572602374869356125959162942519"
 let otom2tokenid["83 44 Vl"]="43713801415222167196613359229651609123143717808765943321635175433556385354952"
 let otom2tokenid["84 44 Vl"]="59934521928556428084452702698249722715762261913097950332682462938948265401334"
 let otom2tokenid["85 44 Vl"]="21256079281694464289614355465080602894521567386798684821635041846249277991617"
@@ -9744,6 +9887,7 @@ let otom2tokenid["115 52 Cv"]="1026568144688100635626055853644294630762970130717
 let otom2tokenid["116 52 Cv"]="114080162684458652794257640478516093998471172458788498843645431654853696825835"
 let otom2tokenid["117 52 Cv"]="76229737137704787850152422341842564004050966995185626621348583490721562074482"
 let otom2tokenid["118 52 Cv"]="104416802074294605458185268750212136875602329396881225530871167523286784417657"
+let otom2tokenid["119 52 Cv"]="85720619936910895020171360409736896510336031616325308918294027149832023969753"
 let otom2tokenid["98 53 Vt"]="71522087690653871852250043411077233001397992121978987812100670851289115205469"
 let otom2tokenid["99 53 Vt"]="79445252172658531635974995568359755940728131781833588331797871768954439609453"
 let otom2tokenid["100 53 Vt"]="68934504237387402555571881628600381965588444481782891896320733790736974944817"
@@ -10218,6 +10362,7 @@ let otom2tokenid["Eb-20"]="51075977569895534586564801347512416553887471412538241
 let otom2tokenid["Eb-21"]="23133046979732464109601446787800189343636942056187266116001030288077898137078"
 let otom2tokenid["Eb-22"]="19844213886371273633325353979672120782750415648434693561098685902784335242890"
 let otom2tokenid["Eb-23"]="5435624771228800065601566926750343277613946654469444039074520527369946164220"
+let otom2tokenid["P-20"]="67236100605369147836546523061549767312822755458163706113779985448118560100972"
 let otom2tokenid["P-21"]="72191106876617040686445758113648452768539825700039800754544535225117574604394"
 let otom2tokenid["P-22"]="26066589820618487334349385189303895374946371288335584066433578262080952314954"
 let otom2tokenid["P-23"]="56687056134257018141273977910243721137072568075857445347648177701127781564302"
@@ -10262,6 +10407,7 @@ let otom2tokenid["K-34"]="649566019248558100838325781518776409892446098906747590
 let otom2tokenid["K-35"]="97300104213521663329440515017352828370985400341141010050753878979460169126790"
 let otom2tokenid["K-36"]="7585340410473722838818283286585733927356513075321902020512557442949707288998"
 let otom2tokenid["K-37"]="287364564797439066976319994223036079863756514637133597029220797598833783271"
+let otom2tokenid["Mt-31"]="32100537985180668897939942012845746943590490636503811023055002620326969036548"
 let otom2tokenid["Mt-32"]="74153074872133471252660131088612294199596935385099834437666242521820094379996"
 let otom2tokenid["Mt-33"]="72057371565372268104249247391099918704444452745742389308706403058032138305448"
 let otom2tokenid["Mt-34"]="84536279772214473729863912295670977901293560326078029529036113316476037284347"
@@ -10278,6 +10424,7 @@ let otom2tokenid["Lu-38"]="36192055143151427654517449364024881234786617261758621
 let otom2tokenid["Lu-39"]="17770898429300514866953019959140445394780618526300359389596592406567986353447"
 let otom2tokenid["Lu-40"]="109375023317533580029437499013130894698186182991304078264122682635715130918996"
 let otom2tokenid["Lu-41"]="4183078784952839040552494396359731858479390646415233868781805696195972572799"
+let otom2tokenid["Lu-42"]="72731292215074704432549591509302779188345302770936060782146840235373514970610"
 let otom2tokenid["Dx-35"]="31039818731202132676783153493963779540793320297609333235972804625570424754916"
 let otom2tokenid["Dx-36"]="57998330106176535539294956193654108667721146949521263687778023947347221265849"
 let otom2tokenid["Dx-37"]="81081030989623570162172390822015261296148912088476307132524116513569643202957"
@@ -10288,6 +10435,7 @@ let otom2tokenid["Dx-41"]="11391074513321280301453316812284171488954239819027722
 let otom2tokenid["Dx-42"]="62409325908899044592476070218877779921661961288225124206854304433610194107348"
 let otom2tokenid["Dx-43"]="17598592280669480315595155086724582293016157382603540731525020103752937766198"
 let otom2tokenid["Dx-44"]="112104764278355449610720733923615250710613089229150930717383325910219842511030"
+let otom2tokenid["Gd-37"]="28222457979651514842255106039860627873246491927072007239460677816538206879889"
 let otom2tokenid["Gd-38"]="49148419483025294653233417761909133985393091598438431824033206442396115414244"
 let otom2tokenid["Gd-39"]="33237760167643037776264640309298896015887439103912129407059393243673743800124"
 let otom2tokenid["Gd-40"]="45059912924383176397328809052774771000882876282953541632895621956896186072612"
@@ -10380,6 +10528,7 @@ let otom2tokenid["Pg-58"]="32829749568920185443992630609903131827253357399879789
 let otom2tokenid["Pg-59"]="1581114160766881440649293333422638909672765777775599921838631897044573078778"
 let otom2tokenid["Pg-60"]="43857048999206664460923054915703226238698955030484363472759009021497605857815"
 let otom2tokenid["Pg-61"]="86611550405879710697403347624671446789230730368487006676840165168445035317642"
+let otom2tokenid["Pg-62"]="101863626493371621658806088483784490099336404891894335485387454890639339499489"
 let otom2tokenid["Qe-52"]="7391834221283132073250889413835535678095054594157622366677720462196173402010"
 let otom2tokenid["Qe-53"]="45885697513838899614285054470553194701439675730489622019471916075157366694916"
 let otom2tokenid["Qe-54"]="96625587646423131648251315377894084081291480465563723360850693466699135008707"
@@ -10407,6 +10556,7 @@ let otom2tokenid["C-63"]="720365017249822400954802159819929862363781688035547520
 let otom2tokenid["C-64"]="71535475294753830992873608480922381419555381384815471343302672331081578606332"
 let otom2tokenid["C-65"]="98200188120612908267612641080526911419717217274283156166292821165536783310639"
 let otom2tokenid["C-66"]="104452464750573731080026326441242472951504676308704703783444894859824280215494"
+let otom2tokenid["C-67"]="80130163372903834067071959345661991864102197236092215299364590283285858044517"
 let otom2tokenid["Ns-56"]="39090554914213154915434266194909168540433017441183906237314482136435346433847"
 let otom2tokenid["Ns-57"]="51970653281402920084661863406411316976973822626675909155134192541494551795187"
 let otom2tokenid["Ns-58"]="31970451018020010733334682435605138126406732441203680973562417608458276609124"
@@ -10434,6 +10584,7 @@ let otom2tokenid["Ai-67"]="68623124877013556486932333980380379319904305405902520
 let otom2tokenid["Ai-68"]="69717070075447118148823790749938898891699141689912576266510020343788411371545"
 let otom2tokenid["Ai-69"]="93511627327270055420324510198122596168642559415591454557889808087407011873779"
 let otom2tokenid["Ai-70"]="10042719261193576153335022594352136173245967155789353388486047990672398751291"
+let otom2tokenid["Ai-71"]="106845689223907813814507088586926284210728416638837343285246071412013326157497"
 let otom2tokenid["F-59"]="53683766013557624920825908933920314323668322923368023203384872781558793904764"
 let otom2tokenid["F-60"]="61208483545880655279568803868263109105609771367085885208368535239683682176887"
 let otom2tokenid["F-61"]="86955048925217911881733278417419655076070481490041350966417882156556116123339"
@@ -10478,6 +10629,7 @@ let otom2tokenid["Kk-74"]="60173278241336704313035582787378689629951487526190473
 let otom2tokenid["Kk-75"]="4087635385907917591315875807711755537180148269613839709283953078248781654037"
 let otom2tokenid["Kk-76"]="18386269530382906884435059121585069468694047642753955743977127814391064007417"
 let otom2tokenid["Kk-77"]="102672376569239899437243250646297716898256316428236268758255399855142525650419"
+let otom2tokenid["Kk-78"]="10259701139523537573012702617643151372858893206460106994730694765440318231208"
 let otom2tokenid["Yv-66"]="35813777200712075257922461747543629215457526473218401128519314741514871444914"
 let otom2tokenid["Yv-67"]="93907526794485935155838085167586004057303693679075004225610942830953977762561"
 let otom2tokenid["Yv-68"]="72025982676760567854792855292106025229771395464658274782829314820934548246099"
@@ -10493,6 +10645,7 @@ let otom2tokenid["Yv-77"]="12481876030724033587492652035128758777345422125212146
 let otom2tokenid["Yv-78"]="35989387070412399434769035139810410116734774800242366424447540272729159525659"
 let otom2tokenid["Yv-79"]="18650139192710627131099894830998687543349821409765717120399271343171088863109"
 let otom2tokenid["Yv-80"]="2736330662368440078545356707046343375101326427794018711162519738551663325046"
+let otom2tokenid["Cj-67"]="67396357112932207495551667227682468425514534073651426715936114026003214663360"
 let otom2tokenid["Cj-68"]="6890963396501501490362116375586673083821384674916052429639498493732248929824"
 let otom2tokenid["Cj-69"]="44857347319334308958125477790319673735018427914477793698889454964173214355568"
 let otom2tokenid["Cj-70"]="26949455857720342555461876065413845260105150285011636097162435861542119340282"
@@ -10507,6 +10660,7 @@ let otom2tokenid["Cj-78"]="59084367680824933287800233108138773298058574306716899
 let otom2tokenid["Cj-79"]="12415729727740439401054346709768763306356459785203471669688140683339329094210"
 let otom2tokenid["Cj-80"]="93830152837630321612790627044026170260941587248383334795369564377920370533879"
 let otom2tokenid["Cj-81"]="22732433915245278689166083732492440930167078908666112104048495817531046729201"
+let otom2tokenid["Cj-82"]="75763609373837789609997591786547288673593007344677957575595102892653428199135"
 let otom2tokenid["Iu-70"]="84645299957067196194523408709901462705735157493330825825017863198508590445203"
 let otom2tokenid["Iu-71"]="49724395199972891738055201515339346283097028312402524851874942018923150766535"
 let otom2tokenid["Iu-72"]="88631790289735052489136686193324489692602619962991254527102615214918347120530"
@@ -10522,6 +10676,7 @@ let otom2tokenid["Iu-81"]="64539400825433660675780015435035124055338543601890331
 let otom2tokenid["Iu-82"]="22262853744344410096744511781196192072984272430951568936769334000763183222661"
 let otom2tokenid["Iu-83"]="84998402333323095596420901645562251019010033144830468403625786247745343762638"
 let otom2tokenid["Iu-84"]="62181455548359513765059884524019685617523544037541407290518642306898548166867"
+let otom2tokenid["D-73"]="6406245799078495197815814963620051039985511018442517508377433821700302274654"
 let otom2tokenid["D-74"]="80215058909179729458443492589189301596631348193856582295927340091743307550743"
 let otom2tokenid["D-75"]="106753305417910931705548322609085063073016371532407339973843407832916556626702"
 let otom2tokenid["D-76"]="46704882953240795908221405674640633578845126974304741993182922612334927117055"
@@ -10535,6 +10690,7 @@ let otom2tokenid["D-83"]="552808225078168996448449708850015462669286800018474707
 let otom2tokenid["D-84"]="19924795406529537866236454028187482779463107990341116080396931753918948056820"
 let otom2tokenid["D-85"]="100943652075912765348609696452255164026453849484688786028919080385961626954445"
 let otom2tokenid["D-86"]="40955595508494732316706610281064058416649326510661029185483056344049863740364"
+let otom2tokenid["Co-73"]="22944543512723795613951025294361935251063478040535407379994368243507862371958"
 let otom2tokenid["Co-74"]="35737307564219570966361378337096913335010898928731231230558168003229857163031"
 let otom2tokenid["Co-75"]="12940571534549414105931076586320298226707900376503952055315139966939901611589"
 let otom2tokenid["Co-76"]="94083269689146257604618231835001465933818895701237966647419635412735781961928"
@@ -10549,6 +10705,7 @@ let otom2tokenid["Co-85"]="23579046075767238761753241432697067592170797041119902
 let otom2tokenid["Co-86"]="50004654290607920423761838825327435163781689800992952814404009609311072730712"
 let otom2tokenid["Co-87"]="52422622687418775815186431392402290378147502827715406768418059168537774076606"
 let otom2tokenid["Co-88"]="21039644057331845792935337237953006366120058565417426226697014245075610882527"
+let otom2tokenid["Co-89"]="7154790511778646435576433406989273596378062902785774450921237305734139552033"
 let otom2tokenid["W-75"]="54518217881602360152122832329248414074990929771158711617693407585840682725612"
 let otom2tokenid["W-76"]="106724066511762359191725784282384164901217802397866284498380032493087599040903"
 let otom2tokenid["W-77"]="101777602152771313142760780145171266946449942797588267858014369764675852528010"
@@ -10605,6 +10762,7 @@ let otom2tokenid["N-93"]="291841135323930687260885532577568285847530455871526366
 let otom2tokenid["N-94"]="108126345650352935951592459906989477474204486021562616711097185511756430849613"
 let otom2tokenid["N-95"]="78339506415408636015605319309725338342571281453048612739726349842122721847913"
 let otom2tokenid["N-96"]="104991368661257002738531493178004042493199409055286551383808880227496182343024"
+let otom2tokenid["U-80"]="115259390499204277473491398413699922056852897327002681879813876410185990189618"
 let otom2tokenid["U-81"]="94505951068410412144537320009778622610498631477479807071859017670818163665711"
 let otom2tokenid["U-82"]="94607677844778748464665178605836374456429506268492192816011340243870368242134"
 let otom2tokenid["U-83"]="25840955530450078066392363114615440529458923919820541260020845289725282016610"
@@ -10624,6 +10782,7 @@ let otom2tokenid["U-96"]="800531846982701127464654747075174786712200816566915012
 let otom2tokenid["U-97"]="21074001274605777379653677953976371401179236076359964202172240741222537676325"
 let otom2tokenid["U-98"]="55505148117015277143560074838002777716177866807414509531964094941304622641907"
 let otom2tokenid["U-99"]="43485336763306603700103857398848584696018042565049100645439182877193225991208"
+let otom2tokenid["Vl-82"]="102680478796205714373198384944078765699973187541572602374869356125959162942519"
 let otom2tokenid["Vl-83"]="43713801415222167196613359229651609123143717808765943321635175433556385354952"
 let otom2tokenid["Vl-84"]="59934521928556428084452702698249722715762261913097950332682462938948265401334"
 let otom2tokenid["Vl-85"]="21256079281694464289614355465080602894521567386798684821635041846249277991617"
@@ -10816,6 +10975,7 @@ let otom2tokenid["Cv-115"]="1026568144688100635626055853644294630762970130717040
 let otom2tokenid["Cv-116"]="114080162684458652794257640478516093998471172458788498843645431654853696825835"
 let otom2tokenid["Cv-117"]="76229737137704787850152422341842564004050966995185626621348583490721562074482"
 let otom2tokenid["Cv-118"]="104416802074294605458185268750212136875602329396881225530871167523286784417657"
+let otom2tokenid["Cv-119"]="85720619936910895020171360409736896510336031616325308918294027149832023969753"
 let otom2tokenid["Vt-98"]="71522087690653871852250043411077233001397992121978987812100670851289115205469"
 let otom2tokenid["Vt-99"]="79445252172658531635974995568359755940728131781833588331797871768954439609453"
 let otom2tokenid["Vt-100"]="68934504237387402555571881628600381965588444481782891896320733790736974944817"
@@ -11290,707 +11450,723 @@ let otomsortorder["20 10 Eb"]="366"
 let otomsortorder["21 10 Eb"]="367"
 let otomsortorder["22 10 Eb"]="368"
 let otomsortorder["23 10 Eb"]="369"
-let otomsortorder["21 11  P"]="370"
-let otomsortorder["22 11  P"]="371"
-let otomsortorder["23 11  P"]="372"
-let otomsortorder["24 11  P"]="373"
-let otomsortorder["25 11  P"]="374"
-let otomsortorder["26 11  P"]="375"
-let otomsortorder["22 12 Ro"]="376"
-let otomsortorder["23 12 Ro"]="377"
-let otomsortorder["24 12 Ro"]="378"
-let otomsortorder["25 12 Ro"]="379"
-let otomsortorder["26 12 Ro"]="380"
-let otomsortorder["27 12 Ro"]="381"
-let otomsortorder["28 12 Ro"]="382"
-let otomsortorder["24 13 Cl"]="383"
-let otomsortorder["25 13 Cl"]="384"
-let otomsortorder["26 13 Cl"]="385"
-let otomsortorder["27 13 Cl"]="386"
-let otomsortorder["28 13 Cl"]="387"
-let otomsortorder["29 13 Cl"]="388"
-let otomsortorder["30 13 Cl"]="389"
-let otomsortorder["26 14 Yu"]="390"
-let otomsortorder["27 14 Yu"]="391"
-let otomsortorder["28 14 Yu"]="392"
-let otomsortorder["29 14 Yu"]="393"
-let otomsortorder["30 14 Yu"]="394"
-let otomsortorder["31 14 Yu"]="395"
-let otomsortorder["32 14 Yu"]="396"
-let otomsortorder["27 15 Nd"]="397"
-let otomsortorder["28 15 Nd"]="398"
-let otomsortorder["29 15 Nd"]="399"
-let otomsortorder["30 15 Nd"]="400"
-let otomsortorder["31 15 Nd"]="401"
-let otomsortorder["32 15 Nd"]="402"
-let otomsortorder["33 15 Nd"]="403"
-let otomsortorder["34 15 Nd"]="404"
-let otomsortorder["29 16  K"]="405"
-let otomsortorder["30 16  K"]="406"
-let otomsortorder["31 16  K"]="407"
-let otomsortorder["32 16  K"]="408"
-let otomsortorder["33 16  K"]="409"
-let otomsortorder["34 16  K"]="410"
-let otomsortorder["35 16  K"]="411"
-let otomsortorder["36 16  K"]="412"
-let otomsortorder["37 16  K"]="413"
-let otomsortorder["32 17 Mt"]="414"
-let otomsortorder["33 17 Mt"]="415"
-let otomsortorder["34 17 Mt"]="416"
-let otomsortorder["35 17 Mt"]="417"
-let otomsortorder["36 17 Mt"]="418"
-let otomsortorder["37 17 Mt"]="419"
-let otomsortorder["38 17 Mt"]="420"
-let otomsortorder["39 17 Mt"]="421"
-let otomsortorder["34 18 Lu"]="422"
-let otomsortorder["35 18 Lu"]="423"
-let otomsortorder["36 18 Lu"]="424"
-let otomsortorder["37 18 Lu"]="425"
-let otomsortorder["38 18 Lu"]="426"
-let otomsortorder["39 18 Lu"]="427"
-let otomsortorder["40 18 Lu"]="428"
-let otomsortorder["41 18 Lu"]="429"
-let otomsortorder["35 19 Dx"]="430"
-let otomsortorder["36 19 Dx"]="431"
-let otomsortorder["37 19 Dx"]="432"
-let otomsortorder["38 19 Dx"]="433"
-let otomsortorder["39 19 Dx"]="434"
-let otomsortorder["40 19 Dx"]="435"
-let otomsortorder["41 19 Dx"]="436"
-let otomsortorder["42 19 Dx"]="437"
-let otomsortorder["43 19 Dx"]="438"
-let otomsortorder["44 19 Dx"]="439"
-let otomsortorder["38 20 Gd"]="440"
-let otomsortorder["39 20 Gd"]="441"
-let otomsortorder["40 20 Gd"]="442"
-let otomsortorder["41 20 Gd"]="443"
-let otomsortorder["42 20 Gd"]="444"
-let otomsortorder["43 20 Gd"]="445"
-let otomsortorder["44 20 Gd"]="446"
-let otomsortorder["45 20 Gd"]="447"
-let otomsortorder["46 20 Gd"]="448"
-let otomsortorder["39 21  V"]="449"
-let otomsortorder["40 21  V"]="450"
-let otomsortorder["41 21  V"]="451"
-let otomsortorder["42 21  V"]="452"
-let otomsortorder["43 21  V"]="453"
-let otomsortorder["44 21  V"]="454"
-let otomsortorder["45 21  V"]="455"
-let otomsortorder["46 21  V"]="456"
-let otomsortorder["47 21  V"]="457"
-let otomsortorder["48 21  V"]="458"
-let otomsortorder["41 22 Uq"]="459"
-let otomsortorder["42 22 Uq"]="460"
-let otomsortorder["43 22 Uq"]="461"
-let otomsortorder["44 22 Uq"]="462"
-let otomsortorder["45 22 Uq"]="463"
-let otomsortorder["46 22 Uq"]="464"
-let otomsortorder["47 22 Uq"]="465"
-let otomsortorder["48 22 Uq"]="466"
-let otomsortorder["49 22 Uq"]="467"
-let otomsortorder["50 22 Uq"]="468"
-let otomsortorder["51 22 Uq"]="469"
-let otomsortorder["52 22 Uq"]="470"
-let otomsortorder["43 23 Pb"]="471"
-let otomsortorder["44 23 Pb"]="472"
-let otomsortorder["45 23 Pb"]="473"
-let otomsortorder["46 23 Pb"]="474"
-let otomsortorder["47 23 Pb"]="475"
-let otomsortorder["48 23 Pb"]="476"
-let otomsortorder["49 23 Pb"]="477"
-let otomsortorder["50 23 Pb"]="478"
-let otomsortorder["51 23 Pb"]="479"
-let otomsortorder["52 23 Pb"]="480"
-let otomsortorder["53 23 Pb"]="481"
-let otomsortorder["45 24 Wy"]="482"
-let otomsortorder["46 24 Wy"]="483"
-let otomsortorder["47 24 Wy"]="484"
-let otomsortorder["48 24 Wy"]="485"
-let otomsortorder["49 24 Wy"]="486"
-let otomsortorder["50 24 Wy"]="487"
-let otomsortorder["51 24 Wy"]="488"
-let otomsortorder["52 24 Wy"]="489"
-let otomsortorder["53 24 Wy"]="490"
-let otomsortorder["54 24 Wy"]="491"
-let otomsortorder["55 24 Wy"]="492"
-let otomsortorder["56 24 Wy"]="493"
-let otomsortorder["46 25  L"]="494"
-let otomsortorder["47 25  L"]="495"
-let otomsortorder["48 25  L"]="496"
-let otomsortorder["49 25  L"]="497"
-let otomsortorder["50 25  L"]="498"
-let otomsortorder["51 25  L"]="499"
-let otomsortorder["52 25  L"]="500"
-let otomsortorder["53 25  L"]="501"
-let otomsortorder["54 25  L"]="502"
-let otomsortorder["55 25  L"]="503"
-let otomsortorder["56 25  L"]="504"
-let otomsortorder["57 25  L"]="505"
-let otomsortorder["58 25  L"]="506"
-let otomsortorder["48 26 Ux"]="507"
-let otomsortorder["49 26 Ux"]="508"
-let otomsortorder["50 26 Ux"]="509"
-let otomsortorder["51 26 Ux"]="510"
-let otomsortorder["52 26 Ux"]="511"
-let otomsortorder["53 26 Ux"]="512"
-let otomsortorder["54 26 Ux"]="513"
-let otomsortorder["55 26 Ux"]="514"
-let otomsortorder["56 26 Ux"]="515"
-let otomsortorder["57 26 Ux"]="516"
-let otomsortorder["58 26 Ux"]="517"
-let otomsortorder["59 26 Ux"]="518"
-let otomsortorder["60 26 Ux"]="519"
-let otomsortorder["50 27 Pg"]="520"
-let otomsortorder["51 27 Pg"]="521"
-let otomsortorder["52 27 Pg"]="522"
-let otomsortorder["53 27 Pg"]="523"
-let otomsortorder["54 27 Pg"]="524"
-let otomsortorder["55 27 Pg"]="525"
-let otomsortorder["56 27 Pg"]="526"
-let otomsortorder["57 27 Pg"]="527"
-let otomsortorder["58 27 Pg"]="528"
-let otomsortorder["59 27 Pg"]="529"
-let otomsortorder["60 27 Pg"]="530"
-let otomsortorder["61 27 Pg"]="531"
-let otomsortorder["52 28 Qe"]="532"
-let otomsortorder["53 28 Qe"]="533"
-let otomsortorder["54 28 Qe"]="534"
-let otomsortorder["55 28 Qe"]="535"
-let otomsortorder["56 28 Qe"]="536"
-let otomsortorder["57 28 Qe"]="537"
-let otomsortorder["58 28 Qe"]="538"
-let otomsortorder["59 28 Qe"]="539"
-let otomsortorder["60 28 Qe"]="540"
-let otomsortorder["61 28 Qe"]="541"
-let otomsortorder["62 28 Qe"]="542"
-let otomsortorder["63 28 Qe"]="543"
-let otomsortorder["64 28 Qe"]="544"
-let otomsortorder["53 29  C"]="545"
-let otomsortorder["54 29  C"]="546"
-let otomsortorder["55 29  C"]="547"
-let otomsortorder["56 29  C"]="548"
-let otomsortorder["57 29  C"]="549"
-let otomsortorder["58 29  C"]="550"
-let otomsortorder["59 29  C"]="551"
-let otomsortorder["60 29  C"]="552"
-let otomsortorder["61 29  C"]="553"
-let otomsortorder["62 29  C"]="554"
-let otomsortorder["63 29  C"]="555"
-let otomsortorder["64 29  C"]="556"
-let otomsortorder["65 29  C"]="557"
-let otomsortorder["66 29  C"]="558"
-let otomsortorder["56 30 Ns"]="559"
-let otomsortorder["57 30 Ns"]="560"
-let otomsortorder["58 30 Ns"]="561"
-let otomsortorder["59 30 Ns"]="562"
-let otomsortorder["60 30 Ns"]="563"
-let otomsortorder["61 30 Ns"]="564"
-let otomsortorder["62 30 Ns"]="565"
-let otomsortorder["63 30 Ns"]="566"
-let otomsortorder["64 30 Ns"]="567"
-let otomsortorder["65 30 Ns"]="568"
-let otomsortorder["66 30 Ns"]="569"
-let otomsortorder["67 30 Ns"]="570"
-let otomsortorder["68 30 Ns"]="571"
-let otomsortorder["69 30 Ns"]="572"
-let otomsortorder["58 31 Ai"]="573"
-let otomsortorder["59 31 Ai"]="574"
-let otomsortorder["60 31 Ai"]="575"
-let otomsortorder["61 31 Ai"]="576"
-let otomsortorder["62 31 Ai"]="577"
-let otomsortorder["63 31 Ai"]="578"
-let otomsortorder["64 31 Ai"]="579"
-let otomsortorder["65 31 Ai"]="580"
-let otomsortorder["66 31 Ai"]="581"
-let otomsortorder["67 31 Ai"]="582"
-let otomsortorder["68 31 Ai"]="583"
-let otomsortorder["69 31 Ai"]="584"
-let otomsortorder["70 31 Ai"]="585"
-let otomsortorder["59 32  F"]="586"
-let otomsortorder["60 32  F"]="587"
-let otomsortorder["61 32  F"]="588"
-let otomsortorder["62 32  F"]="589"
-let otomsortorder["63 32  F"]="590"
-let otomsortorder["64 32  F"]="591"
-let otomsortorder["65 32  F"]="592"
-let otomsortorder["66 32  F"]="593"
-let otomsortorder["67 32  F"]="594"
-let otomsortorder["68 32  F"]="595"
-let otomsortorder["69 32  F"]="596"
-let otomsortorder["70 32  F"]="597"
-let otomsortorder["71 32  F"]="598"
-let otomsortorder["72 32  F"]="599"
-let otomsortorder["73 32  F"]="600"
-let otomsortorder["62 33 Gy"]="601"
-let otomsortorder["63 33 Gy"]="602"
-let otomsortorder["64 33 Gy"]="603"
-let otomsortorder["65 33 Gy"]="604"
-let otomsortorder["66 33 Gy"]="605"
-let otomsortorder["67 33 Gy"]="606"
-let otomsortorder["68 33 Gy"]="607"
-let otomsortorder["69 33 Gy"]="608"
-let otomsortorder["70 33 Gy"]="609"
-let otomsortorder["71 33 Gy"]="610"
-let otomsortorder["72 33 Gy"]="611"
-let otomsortorder["73 33 Gy"]="612"
-let otomsortorder["74 33 Gy"]="613"
-let otomsortorder["75 33 Gy"]="614"
-let otomsortorder["63 34 Kk"]="615"
-let otomsortorder["64 34 Kk"]="616"
-let otomsortorder["65 34 Kk"]="617"
-let otomsortorder["66 34 Kk"]="618"
-let otomsortorder["67 34 Kk"]="619"
-let otomsortorder["68 34 Kk"]="620"
-let otomsortorder["69 34 Kk"]="621"
-let otomsortorder["70 34 Kk"]="622"
-let otomsortorder["71 34 Kk"]="623"
-let otomsortorder["72 34 Kk"]="624"
-let otomsortorder["73 34 Kk"]="625"
-let otomsortorder["74 34 Kk"]="626"
-let otomsortorder["75 34 Kk"]="627"
-let otomsortorder["76 34 Kk"]="628"
-let otomsortorder["77 34 Kk"]="629"
-let otomsortorder["66 35 Yv"]="630"
-let otomsortorder["67 35 Yv"]="631"
-let otomsortorder["68 35 Yv"]="632"
-let otomsortorder["69 35 Yv"]="633"
-let otomsortorder["70 35 Yv"]="634"
-let otomsortorder["71 35 Yv"]="635"
-let otomsortorder["72 35 Yv"]="636"
-let otomsortorder["73 35 Yv"]="637"
-let otomsortorder["74 35 Yv"]="638"
-let otomsortorder["75 35 Yv"]="639"
-let otomsortorder["76 35 Yv"]="640"
-let otomsortorder["77 35 Yv"]="641"
-let otomsortorder["78 35 Yv"]="642"
-let otomsortorder["79 35 Yv"]="643"
-let otomsortorder["80 35 Yv"]="644"
-let otomsortorder["68 36 Cj"]="645"
-let otomsortorder["69 36 Cj"]="646"
-let otomsortorder["70 36 Cj"]="647"
-let otomsortorder["71 36 Cj"]="648"
-let otomsortorder["72 36 Cj"]="649"
-let otomsortorder["73 36 Cj"]="650"
-let otomsortorder["74 36 Cj"]="651"
-let otomsortorder["75 36 Cj"]="652"
-let otomsortorder["76 36 Cj"]="653"
-let otomsortorder["77 36 Cj"]="654"
-let otomsortorder["78 36 Cj"]="655"
-let otomsortorder["79 36 Cj"]="656"
-let otomsortorder["80 36 Cj"]="657"
-let otomsortorder["81 36 Cj"]="658"
-let otomsortorder["70 37 Iu"]="659"
-let otomsortorder["71 37 Iu"]="660"
-let otomsortorder["72 37 Iu"]="661"
-let otomsortorder["73 37 Iu"]="662"
-let otomsortorder["74 37 Iu"]="663"
-let otomsortorder["75 37 Iu"]="664"
-let otomsortorder["76 37 Iu"]="665"
-let otomsortorder["77 37 Iu"]="666"
-let otomsortorder["78 37 Iu"]="667"
-let otomsortorder["79 37 Iu"]="668"
-let otomsortorder["80 37 Iu"]="669"
-let otomsortorder["81 37 Iu"]="670"
-let otomsortorder["82 37 Iu"]="671"
-let otomsortorder["83 37 Iu"]="672"
-let otomsortorder["84 37 Iu"]="673"
-let otomsortorder["74 38  D"]="674"
-let otomsortorder["75 38  D"]="675"
-let otomsortorder["76 38  D"]="676"
-let otomsortorder["77 38  D"]="677"
-let otomsortorder["78 38  D"]="678"
-let otomsortorder["79 38  D"]="679"
-let otomsortorder["80 38  D"]="680"
-let otomsortorder["81 38  D"]="681"
-let otomsortorder["82 38  D"]="682"
-let otomsortorder["83 38  D"]="683"
-let otomsortorder["84 38  D"]="684"
-let otomsortorder["85 38  D"]="685"
-let otomsortorder["86 38  D"]="686"
-let otomsortorder["74 39 Co"]="687"
-let otomsortorder["75 39 Co"]="688"
-let otomsortorder["76 39 Co"]="689"
-let otomsortorder["78 39 Co"]="690"
-let otomsortorder["79 39 Co"]="691"
-let otomsortorder["80 39 Co"]="692"
-let otomsortorder["81 39 Co"]="693"
-let otomsortorder["82 39 Co"]="694"
-let otomsortorder["83 39 Co"]="695"
-let otomsortorder["84 39 Co"]="696"
-let otomsortorder["85 39 Co"]="697"
-let otomsortorder["86 39 Co"]="698"
-let otomsortorder["87 39 Co"]="699"
-let otomsortorder["88 39 Co"]="700"
-let otomsortorder["75 40  W"]="701"
-let otomsortorder["76 40  W"]="702"
-let otomsortorder["77 40  W"]="703"
-let otomsortorder["78 40  W"]="704"
-let otomsortorder["79 40  W"]="705"
-let otomsortorder["80 40  W"]="706"
-let otomsortorder["81 40  W"]="707"
-let otomsortorder["82 40  W"]="708"
-let otomsortorder["83 40  W"]="709"
-let otomsortorder["84 40  W"]="710"
-let otomsortorder["85 40  W"]="711"
-let otomsortorder["86 40  W"]="712"
-let otomsortorder["87 40  W"]="713"
-let otomsortorder["88 40  W"]="714"
-let otomsortorder["89 40  W"]="715"
-let otomsortorder["90 40  W"]="716"
-let otomsortorder["91 40  W"]="717"
-let otomsortorder["76 41 Lx"]="718"
-let otomsortorder["77 41 Lx"]="719"
-let otomsortorder["78 41 Lx"]="720"
-let otomsortorder["79 41 Lx"]="721"
-let otomsortorder["80 41 Lx"]="722"
-let otomsortorder["81 41 Lx"]="723"
-let otomsortorder["82 41 Lx"]="724"
-let otomsortorder["83 41 Lx"]="725"
-let otomsortorder["84 41 Lx"]="726"
-let otomsortorder["85 41 Lx"]="727"
-let otomsortorder["86 41 Lx"]="728"
-let otomsortorder["87 41 Lx"]="729"
-let otomsortorder["88 41 Lx"]="730"
-let otomsortorder["89 41 Lx"]="731"
-let otomsortorder["90 41 Lx"]="732"
-let otomsortorder["91 41 Lx"]="733"
-let otomsortorder["92 41 Lx"]="734"
-let otomsortorder["93 41 Lx"]="735"
-let otomsortorder["94 41 Lx"]="736"
-let otomsortorder["95 41 Lx"]="737"
-let otomsortorder["96 41 Lx"]="738"
-let otomsortorder["79 42  N"]="739"
-let otomsortorder["80 42 N "]="740"
-let otomsortorder["81 42  N"]="741"
-let otomsortorder["82 42  N"]="742"
-let otomsortorder["83 42  N"]="743"
-let otomsortorder["84 42  N"]="744"
-let otomsortorder["85 42  N"]="745"
-let otomsortorder["86 42  N"]="746"
-let otomsortorder["87 42  N"]="747"
-let otomsortorder["88 42  N"]="748"
-let otomsortorder["89 42  N"]="749"
-let otomsortorder["90 42  N"]="750"
-let otomsortorder["91 42  N"]="751"
-let otomsortorder["92 42  N"]="752"
-let otomsortorder["93 42  N"]="753"
-let otomsortorder["94 42  N"]="754"
-let otomsortorder["95 42  N"]="755"
-let otomsortorder["96 42  N"]="756"
-let otomsortorder["81 43  U"]="757"
-let otomsortorder["82 43  U"]="758"
-let otomsortorder["83 43  U"]="759"
-let otomsortorder["84 43  U"]="760"
-let otomsortorder["85 43  U"]="761"
-let otomsortorder["86 43  U"]="762"
-let otomsortorder["87 43  U"]="763"
-let otomsortorder["88 43  U"]="764"
-let otomsortorder["89 43  U"]="765"
-let otomsortorder["90 43  U"]="766"
-let otomsortorder["91 43  U"]="767"
-let otomsortorder["92 43  U"]="768"
-let otomsortorder["93 43  U"]="769"
-let otomsortorder["94 43  U"]="770"
-let otomsortorder["95 43  U"]="771"
-let otomsortorder["96 43  U"]="772"
-let otomsortorder["97 43  U"]="773"
-let otomsortorder["98 43  U"]="774"
-let otomsortorder["99 43  U"]="775"
-let otomsortorder["83 44 Vl"]="776"
-let otomsortorder["84 44 Vl"]="777"
-let otomsortorder["85 44 Vl"]="778"
-let otomsortorder["86 44 Vl"]="779"
-let otomsortorder["87 44 Vl"]="780"
-let otomsortorder["88 44 Vl"]="781"
-let otomsortorder["89 44 Vl"]="782"
-let otomsortorder["90 44 Vl"]="783"
-let otomsortorder["91 44 Vl"]="784"
-let otomsortorder["92 44 Vl"]="785"
-let otomsortorder["93 44 Vl"]="786"
-let otomsortorder["94 44 Vl"]="787"
-let otomsortorder["95 44 Vl"]="788"
-let otomsortorder["96 44 Vl"]="789"
-let otomsortorder["97 44 Vl"]="790"
-let otomsortorder["98 44 Vl"]="791"
-let otomsortorder["99 44 Vl"]="792"
-let otomsortorder["100 44 Vl"]="793"
-let otomsortorder["101 44 Vl"]="794"
-let otomsortorder["84 45 Se"]="795"
-let otomsortorder["85 45 Se"]="796"
-let otomsortorder["86 45 Se"]="797"
-let otomsortorder["87 45 Se"]="798"
-let otomsortorder["88 45 Se"]="799"
-let otomsortorder["89 45 Se"]="800"
-let otomsortorder["90 45 Se"]="801"
-let otomsortorder["91 45 Se"]="802"
-let otomsortorder["92 45 Se"]="803"
-let otomsortorder["93 45 Se"]="804"
-let otomsortorder["94 45 Se"]="805"
-let otomsortorder["95 45 Se"]="806"
-let otomsortorder["96 45 Se"]="807"
-let otomsortorder["97 45 Se"]="808"
-let otomsortorder["98 45 Se"]="809"
-let otomsortorder["99 45 Se"]="810"
-let otomsortorder["100 45 Se"]="811"
-let otomsortorder["101 45 Se"]="812"
-let otomsortorder["102 45 Se"]="813"
-let otomsortorder["103 45 Se"]="814"
-let otomsortorder["104 45 Se"]="815"
-let otomsortorder["86 46 Nm"]="816"
-let otomsortorder["87 46 Nm"]="817"
-let otomsortorder["88 46 Nm"]="818"
-let otomsortorder["89 46 Nm"]="819"
-let otomsortorder["90 46 Nm"]="820"
-let otomsortorder["91 46 Nm"]="821"
-let otomsortorder["92 46 Nm"]="822"
-let otomsortorder["93 46 Nm"]="823"
-let otomsortorder["94 46 Nm"]="824"
-let otomsortorder["95 46 Nm"]="825"
-let otomsortorder["96 46 Nm"]="826"
-let otomsortorder["97 46 Nm"]="827"
-let otomsortorder["98 46 Nm"]="828"
-let otomsortorder["99 46 Nm"]="829"
-let otomsortorder["100 46 Nm"]="830"
-let otomsortorder["101 46 Nm"]="831"
-let otomsortorder["102 46 Nm"]="832"
-let otomsortorder["103 46 Nm"]="833"
-let otomsortorder["104 46 Nm"]="834"
-let otomsortorder["105 46 Nm"]="835"
-let otomsortorder["106 46 Nm"]="836"
-let otomsortorder["88 47 Dd"]="837"
-let otomsortorder["89 47 Dd"]="838"
-let otomsortorder["90 47 Dd"]="839"
-let otomsortorder["91 47 Dd"]="840"
-let otomsortorder["92 47 Dd"]="841"
-let otomsortorder["93 47 Dd"]="842"
-let otomsortorder["94 47 Dd"]="843"
-let otomsortorder["95 47 Dd"]="844"
-let otomsortorder["96 47 Dd"]="845"
-let otomsortorder["97 47 Dd"]="846"
-let otomsortorder["98 47 Dd"]="847"
-let otomsortorder["99 47 Dd"]="848"
-let otomsortorder["100 47 Dd"]="849"
-let otomsortorder["101 47 Dd"]="850"
-let otomsortorder["102 47 Dd"]="851"
-let otomsortorder["103 47 Dd"]="852"
-let otomsortorder["104 47 Dd"]="853"
-let otomsortorder["105 47 Dd"]="854"
-let otomsortorder["106 47 Dd"]="855"
-let otomsortorder["107 47 Dd"]="856"
-let otomsortorder["108 47 Dd"]="857"
-let otomsortorder["89 48 Ok"]="858"
-let otomsortorder["90 48 Ok"]="859"
-let otomsortorder["91 48 Ok"]="860"
-let otomsortorder["92 48 Ok"]="861"
-let otomsortorder["93 48 Ok"]="862"
-let otomsortorder["94 48 Ok"]="863"
-let otomsortorder["95 48 Ok"]="864"
-let otomsortorder["96 48 Ok"]="865"
-let otomsortorder["97 48 Ok"]="866"
-let otomsortorder["98 48 Ok"]="867"
-let otomsortorder["99 48 Ok"]="868"
-let otomsortorder["100 48 Ok"]="869"
-let otomsortorder["101 48 Ok"]="870"
-let otomsortorder["102 48 Ok"]="871"
-let otomsortorder["103 48 Ok"]="872"
-let otomsortorder["104 48 Ok"]="873"
-let otomsortorder["105 48 Ok"]="874"
-let otomsortorder["106 48 Ok"]="875"
-let otomsortorder["107 48 Ok"]="876"
-let otomsortorder["108 48 Ok"]="877"
-let otomsortorder["109 48 Ok"]="878"
-let otomsortorder["110 48 Ok"]="879"
-let otomsortorder["111 48 Ok"]="880"
-let otomsortorder["90 49 Da"]="881"
-let otomsortorder["91 49 Da"]="882"
-let otomsortorder["92 49 Da"]="883"
-let otomsortorder["93 49 Da"]="884"
-let otomsortorder["94 49 Da"]="885"
-let otomsortorder["95 49 Da"]="886"
-let otomsortorder["96 49 Da"]="887"
-let otomsortorder["97 49 Da"]="888"
-let otomsortorder["98 49 Da"]="889"
-let otomsortorder["99 49 Da"]="890"
-let otomsortorder["100 49 Da"]="891"
-let otomsortorder["101 49 Da"]="892"
-let otomsortorder["102 49 Da"]="893"
-let otomsortorder["103 49 Da"]="894"
-let otomsortorder["104 49 Da"]="895"
-let otomsortorder["105 49 Da"]="896"
-let otomsortorder["106 49 Da"]="897"
-let otomsortorder["107 49 Da"]="898"
-let otomsortorder["108 49 Da"]="899"
-let otomsortorder["109 49 Da"]="900"
-let otomsortorder["110 49 Da"]="901"
-let otomsortorder["111 49 Da"]="902"
-let otomsortorder["112 49 Da"]="903"
-let otomsortorder["113 49 Da"]="904"
-let otomsortorder["94 50  S"]="905"
-let otomsortorder["95 50  S"]="906"
-let otomsortorder["96 50  S"]="907"
-let otomsortorder["97 50  S"]="908"
-let otomsortorder["98 50  S"]="909"
-let otomsortorder["99 50  S"]="910"
-let otomsortorder["100 50  S"]="911"
-let otomsortorder["101 50  S"]="912"
-let otomsortorder["102 50  S"]="913"
-let otomsortorder["103 50  S"]="914"
-let otomsortorder["104 50  S"]="915"
-let otomsortorder["105 50  S"]="916"
-let otomsortorder["106 50  S"]="917"
-let otomsortorder["107 50  S"]="918"
-let otomsortorder["108 50  S"]="919"
-let otomsortorder["109 50  S"]="920"
-let otomsortorder["112 50  S"]="921"
-let otomsortorder["113 50  S"]="922"
-let otomsortorder["114 50  S"]="923"
-let otomsortorder["115 50  S"]="924"
-let otomsortorder["95 51  Z"]="925"
-let otomsortorder["96 51  Z"]="926"
-let otomsortorder["97 51  Z"]="927"
-let otomsortorder["98 51  Z"]="928"
-let otomsortorder["99 51  Z"]="929"
-let otomsortorder["100 51  Z"]="930"
-let otomsortorder["101 51  Z"]="931"
-let otomsortorder["102 51  Z"]="932"
-let otomsortorder["103 51  Z"]="933"
-let otomsortorder["104 51  Z"]="934"
-let otomsortorder["105 51  Z"]="935"
-let otomsortorder["106 51  Z"]="936"
-let otomsortorder["107 51  Z"]="937"
-let otomsortorder["108 51  Z"]="938"
-let otomsortorder["109 51  Z"]="939"
-let otomsortorder["110 51  Z"]="940"
-let otomsortorder["111 51  Z"]="941"
-let otomsortorder["112 51  Z"]="942"
-let otomsortorder["113 51  Z"]="943"
-let otomsortorder["114 51  Z"]="944"
-let otomsortorder["115 51  Z"]="945"
-let otomsortorder["116 51  Z"]="946"
-let otomsortorder["117 51  Z"]="947"
-let otomsortorder["97 52 Cv"]="948"
-let otomsortorder["98 52 Cv"]="949"
-let otomsortorder["99 52 Cv"]="950"
-let otomsortorder["100 52 Cv"]="951"
-let otomsortorder["101 52 Cv"]="952"
-let otomsortorder["102 52 Cv"]="953"
-let otomsortorder["103 52 Cv"]="954"
-let otomsortorder["104 52 Cv"]="955"
-let otomsortorder["105 52 Cv"]="956"
-let otomsortorder["106 52 Cv"]="957"
-let otomsortorder["107 52 Cv"]="958"
-let otomsortorder["108 52 Cv"]="959"
-let otomsortorder["109 52 Cv"]="960"
-let otomsortorder["110 52 Cv"]="961"
-let otomsortorder["111 52 Cv"]="962"
-let otomsortorder["114 52 Cv"]="963"
-let otomsortorder["115 52 Cv"]="964"
-let otomsortorder["116 52 Cv"]="965"
-let otomsortorder["117 52 Cv"]="966"
-let otomsortorder["118 52 Cv"]="967"
-let otomsortorder["98 53 Vt"]="968"
-let otomsortorder["99 53 Vt"]="969"
-let otomsortorder["100 53 Vt"]="970"
-let otomsortorder["101 53 Vt"]="971"
-let otomsortorder["102 53 Vt"]="972"
-let otomsortorder["103 53 Vt"]="973"
-let otomsortorder["104 53 Vt"]="974"
-let otomsortorder["105 53 Vt"]="975"
-let otomsortorder["106 53 Vt"]="976"
-let otomsortorder["107 53 Vt"]="977"
-let otomsortorder["108 53 Vt"]="978"
-let otomsortorder["109 53 Vt"]="979"
-let otomsortorder["110 53 Vt"]="980"
-let otomsortorder["111 53 Vt"]="981"
-let otomsortorder["112 53 Vt"]="982"
-let otomsortorder["119 53 Vt"]="983"
-let otomsortorder["120 53 Vt"]="984"
-let otomsortorder["121 53 Vt"]="985"
-let otomsortorder["122 53 Vt"]="986"
-let otomsortorder["99 54 Ek"]="987"
-let otomsortorder["100 54 Ek"]="988"
-let otomsortorder["101 54 Ek"]="989"
-let otomsortorder["102 54 Ek"]="990"
-let otomsortorder["103 54 Ek"]="991"
-let otomsortorder["104 54 Ek"]="992"
-let otomsortorder["105 54 Ek"]="993"
-let otomsortorder["106 54 Ek"]="994"
-let otomsortorder["107 54 Ek"]="995"
-let otomsortorder["108 54 Ek"]="996"
-let otomsortorder["109 54 Ek"]="997"
-let otomsortorder["110 54 Ek"]="998"
-let otomsortorder["111 54 Ek"]="999"
-let otomsortorder["112 54 Ek"]="1000"
-let otomsortorder["113 54 Ek"]="1001"
-let otomsortorder["119 54 Ek"]="1002"
-let otomsortorder["120 54 Ek"]="1003"
-let otomsortorder["121 54 Ek"]="1004"
-let otomsortorder["122 54 Ek"]="1005"
-let otomsortorder["123 54 Ek"]="1006"
-let otomsortorder["103 55 Ji"]="1007"
-let otomsortorder["104 55 Ji"]="1008"
-let otomsortorder["105 55 Ji"]="1009"
-let otomsortorder["106 55 Ji"]="1010"
-let otomsortorder["107 55 Ji"]="1011"
-let otomsortorder["108 55 Ji"]="1012"
-let otomsortorder["109 55 Ji"]="1013"
-let otomsortorder["110 55 Ji"]="1014"
-let otomsortorder["111 55 Ji"]="1015"
-let otomsortorder["112 55 Ji"]="1016"
-let otomsortorder["113 55 Ji"]="1017"
-let otomsortorder["114 55 Ji"]="1018"
-let otomsortorder["121 55 Ji"]="1019"
-let otomsortorder["122 55 Ji"]="1020"
-let otomsortorder["123 55 Ji"]="1021"
-let otomsortorder["124 55 Ji"]="1022"
-let otomsortorder["104 56 Aw"]="1023"
-let otomsortorder["105 56 Aw"]="1024"
-let otomsortorder["106 56 Aw"]="1025"
-let otomsortorder["107 56 Aw"]="1026"
-let otomsortorder["108 56 Aw"]="1027"
-let otomsortorder["109 56 Aw"]="1028"
-let otomsortorder["110 56 Aw"]="1029"
-let otomsortorder["111 56 Aw"]="1030"
-let otomsortorder["112 56 Aw"]="1031"
-let otomsortorder["113 56 Aw"]="1032"
-let otomsortorder["114 56 Aw"]="1033"
-let otomsortorder["115 56 Aw"]="1034"
-let otomsortorder["124 56 Aw"]="1035"
-let otomsortorder["125 56 Aw"]="1036"
-let otomsortorder["106 57 Kn"]="1037"
-let otomsortorder["107 57 Kn"]="1038"
-let otomsortorder["108 57 Kn"]="1039"
-let otomsortorder["109 57 Kn"]="1040"
-let otomsortorder["110 57 Kn"]="1041"
-let otomsortorder["111 57 Kn"]="1042"
-let otomsortorder["112 57 Kn"]="1043"
-let otomsortorder["113 57 Kn"]="1044"
-let otomsortorder["114 57 Kn"]="1045"
-let otomsortorder["115 57 Kn"]="1046"
-let otomsortorder["116 57 Kn"]="1047"
-let otomsortorder["108 58 Ha"]="1048"
-let otomsortorder["109 58 Ha"]="1049"
-let otomsortorder["110 58 Ha"]="1050"
-let otomsortorder["111 58 Ha"]="1051"
-let otomsortorder["112 58 Ha"]="1052"
-let otomsortorder["113 58 Ha"]="1053"
-let otomsortorder["114 58 Ha"]="1054"
-let otomsortorder["115 58 Ha"]="1055"
-let otomsortorder["116 58 Ha"]="1056"
-let otomsortorder["117 58 Ha"]="1057"
-let otomsortorder["109 59 Ax"]="1058"
-let otomsortorder["110 59 Ax"]="1059"
-let otomsortorder["111 59 Ax"]="1060"
-let otomsortorder["113 60  I"]="1061"
-let otomsortorder["114 60  I"]="1062"
-let otomsortorder["115 60  I"]="1063"
-let otomsortorder["116 61 Jb"]="1064"
-let otomsortorder["117 62 Go"]="1065"
-let otomsortorder["118 62 Go"]="1066"
-let otomsortorder["119 63  X"]="1067"
-let otomsortorder["123 65 Eh"]="1068"
-let otomsortorder["124 65 Eh"]="1069"
-let otomsortorder["125 66 Ys"]="1070"
+let otomsortorder["20 11  P"]="370"
+let otomsortorder["21 11  P"]="371"
+let otomsortorder["22 11  P"]="372"
+let otomsortorder["23 11  P"]="373"
+let otomsortorder["24 11  P"]="374"
+let otomsortorder["25 11  P"]="375"
+let otomsortorder["26 11  P"]="376"
+let otomsortorder["22 12 Ro"]="377"
+let otomsortorder["23 12 Ro"]="378"
+let otomsortorder["24 12 Ro"]="379"
+let otomsortorder["25 12 Ro"]="380"
+let otomsortorder["26 12 Ro"]="381"
+let otomsortorder["27 12 Ro"]="382"
+let otomsortorder["28 12 Ro"]="383"
+let otomsortorder["24 13 Cl"]="384"
+let otomsortorder["25 13 Cl"]="385"
+let otomsortorder["26 13 Cl"]="386"
+let otomsortorder["27 13 Cl"]="387"
+let otomsortorder["28 13 Cl"]="388"
+let otomsortorder["29 13 Cl"]="389"
+let otomsortorder["30 13 Cl"]="390"
+let otomsortorder["26 14 Yu"]="391"
+let otomsortorder["27 14 Yu"]="392"
+let otomsortorder["28 14 Yu"]="393"
+let otomsortorder["29 14 Yu"]="394"
+let otomsortorder["30 14 Yu"]="395"
+let otomsortorder["31 14 Yu"]="396"
+let otomsortorder["32 14 Yu"]="397"
+let otomsortorder["27 15 Nd"]="398"
+let otomsortorder["28 15 Nd"]="399"
+let otomsortorder["29 15 Nd"]="400"
+let otomsortorder["30 15 Nd"]="401"
+let otomsortorder["31 15 Nd"]="402"
+let otomsortorder["32 15 Nd"]="403"
+let otomsortorder["33 15 Nd"]="404"
+let otomsortorder["34 15 Nd"]="405"
+let otomsortorder["29 16  K"]="406"
+let otomsortorder["30 16  K"]="407"
+let otomsortorder["31 16  K"]="408"
+let otomsortorder["32 16  K"]="409"
+let otomsortorder["33 16  K"]="410"
+let otomsortorder["34 16  K"]="411"
+let otomsortorder["35 16  K"]="412"
+let otomsortorder["36 16  K"]="413"
+let otomsortorder["37 16  K"]="414"
+let otomsortorder["31 17 Mt"]="415"
+let otomsortorder["32 17 Mt"]="416"
+let otomsortorder["33 17 Mt"]="417"
+let otomsortorder["34 17 Mt"]="418"
+let otomsortorder["35 17 Mt"]="419"
+let otomsortorder["36 17 Mt"]="420"
+let otomsortorder["37 17 Mt"]="421"
+let otomsortorder["38 17 Mt"]="422"
+let otomsortorder["39 17 Mt"]="423"
+let otomsortorder["34 18 Lu"]="424"
+let otomsortorder["35 18 Lu"]="425"
+let otomsortorder["36 18 Lu"]="426"
+let otomsortorder["37 18 Lu"]="427"
+let otomsortorder["38 18 Lu"]="428"
+let otomsortorder["39 18 Lu"]="429"
+let otomsortorder["40 18 Lu"]="430"
+let otomsortorder["41 18 Lu"]="431"
+let otomsortorder["42 18 Lu"]="432"
+let otomsortorder["35 19 Dx"]="433"
+let otomsortorder["36 19 Dx"]="434"
+let otomsortorder["37 19 Dx"]="435"
+let otomsortorder["38 19 Dx"]="436"
+let otomsortorder["39 19 Dx"]="437"
+let otomsortorder["40 19 Dx"]="438"
+let otomsortorder["41 19 Dx"]="439"
+let otomsortorder["42 19 Dx"]="440"
+let otomsortorder["43 19 Dx"]="441"
+let otomsortorder["44 19 Dx"]="442"
+let otomsortorder["37 20 Gd"]="443"
+let otomsortorder["38 20 Gd"]="444"
+let otomsortorder["39 20 Gd"]="445"
+let otomsortorder["40 20 Gd"]="446"
+let otomsortorder["41 20 Gd"]="447"
+let otomsortorder["42 20 Gd"]="448"
+let otomsortorder["43 20 Gd"]="449"
+let otomsortorder["44 20 Gd"]="450"
+let otomsortorder["45 20 Gd"]="451"
+let otomsortorder["46 20 Gd"]="452"
+let otomsortorder["39 21  V"]="453"
+let otomsortorder["40 21  V"]="454"
+let otomsortorder["41 21  V"]="455"
+let otomsortorder["42 21  V"]="456"
+let otomsortorder["43 21  V"]="457"
+let otomsortorder["44 21  V"]="458"
+let otomsortorder["45 21  V"]="459"
+let otomsortorder["46 21  V"]="460"
+let otomsortorder["47 21  V"]="461"
+let otomsortorder["48 21  V"]="462"
+let otomsortorder["41 22 Uq"]="463"
+let otomsortorder["42 22 Uq"]="464"
+let otomsortorder["43 22 Uq"]="465"
+let otomsortorder["44 22 Uq"]="466"
+let otomsortorder["45 22 Uq"]="467"
+let otomsortorder["46 22 Uq"]="468"
+let otomsortorder["47 22 Uq"]="469"
+let otomsortorder["48 22 Uq"]="470"
+let otomsortorder["49 22 Uq"]="471"
+let otomsortorder["50 22 Uq"]="472"
+let otomsortorder["51 22 Uq"]="473"
+let otomsortorder["52 22 Uq"]="474"
+let otomsortorder["43 23 Pb"]="475"
+let otomsortorder["44 23 Pb"]="476"
+let otomsortorder["45 23 Pb"]="477"
+let otomsortorder["46 23 Pb"]="478"
+let otomsortorder["47 23 Pb"]="479"
+let otomsortorder["48 23 Pb"]="480"
+let otomsortorder["49 23 Pb"]="481"
+let otomsortorder["50 23 Pb"]="482"
+let otomsortorder["51 23 Pb"]="483"
+let otomsortorder["52 23 Pb"]="484"
+let otomsortorder["53 23 Pb"]="485"
+let otomsortorder["45 24 Wy"]="486"
+let otomsortorder["46 24 Wy"]="487"
+let otomsortorder["47 24 Wy"]="488"
+let otomsortorder["48 24 Wy"]="489"
+let otomsortorder["49 24 Wy"]="490"
+let otomsortorder["50 24 Wy"]="491"
+let otomsortorder["51 24 Wy"]="492"
+let otomsortorder["52 24 Wy"]="493"
+let otomsortorder["53 24 Wy"]="494"
+let otomsortorder["54 24 Wy"]="495"
+let otomsortorder["55 24 Wy"]="496"
+let otomsortorder["56 24 Wy"]="497"
+let otomsortorder["46 25  L"]="498"
+let otomsortorder["47 25  L"]="499"
+let otomsortorder["48 25  L"]="500"
+let otomsortorder["49 25  L"]="501"
+let otomsortorder["50 25  L"]="502"
+let otomsortorder["51 25  L"]="503"
+let otomsortorder["52 25  L"]="504"
+let otomsortorder["53 25  L"]="505"
+let otomsortorder["54 25  L"]="506"
+let otomsortorder["55 25  L"]="507"
+let otomsortorder["56 25  L"]="508"
+let otomsortorder["57 25  L"]="509"
+let otomsortorder["58 25  L"]="510"
+let otomsortorder["48 26 Ux"]="511"
+let otomsortorder["49 26 Ux"]="512"
+let otomsortorder["50 26 Ux"]="513"
+let otomsortorder["51 26 Ux"]="514"
+let otomsortorder["52 26 Ux"]="515"
+let otomsortorder["53 26 Ux"]="516"
+let otomsortorder["54 26 Ux"]="517"
+let otomsortorder["55 26 Ux"]="518"
+let otomsortorder["56 26 Ux"]="519"
+let otomsortorder["57 26 Ux"]="520"
+let otomsortorder["58 26 Ux"]="521"
+let otomsortorder["59 26 Ux"]="522"
+let otomsortorder["60 26 Ux"]="523"
+let otomsortorder["50 27 Pg"]="524"
+let otomsortorder["51 27 Pg"]="525"
+let otomsortorder["52 27 Pg"]="526"
+let otomsortorder["53 27 Pg"]="527"
+let otomsortorder["54 27 Pg"]="528"
+let otomsortorder["55 27 Pg"]="529"
+let otomsortorder["56 27 Pg"]="530"
+let otomsortorder["57 27 Pg"]="531"
+let otomsortorder["58 27 Pg"]="532"
+let otomsortorder["59 27 Pg"]="533"
+let otomsortorder["60 27 Pg"]="534"
+let otomsortorder["61 27 Pg"]="535"
+let otomsortorder["62 27 Pg"]="536"
+let otomsortorder["52 28 Qe"]="537"
+let otomsortorder["53 28 Qe"]="538"
+let otomsortorder["54 28 Qe"]="539"
+let otomsortorder["55 28 Qe"]="540"
+let otomsortorder["56 28 Qe"]="541"
+let otomsortorder["57 28 Qe"]="542"
+let otomsortorder["58 28 Qe"]="543"
+let otomsortorder["59 28 Qe"]="544"
+let otomsortorder["60 28 Qe"]="545"
+let otomsortorder["61 28 Qe"]="546"
+let otomsortorder["62 28 Qe"]="547"
+let otomsortorder["63 28 Qe"]="548"
+let otomsortorder["64 28 Qe"]="549"
+let otomsortorder["53 29  C"]="550"
+let otomsortorder["54 29  C"]="551"
+let otomsortorder["55 29  C"]="552"
+let otomsortorder["56 29  C"]="553"
+let otomsortorder["57 29  C"]="554"
+let otomsortorder["58 29  C"]="555"
+let otomsortorder["59 29  C"]="556"
+let otomsortorder["60 29  C"]="557"
+let otomsortorder["61 29  C"]="558"
+let otomsortorder["62 29  C"]="559"
+let otomsortorder["63 29  C"]="560"
+let otomsortorder["64 29  C"]="561"
+let otomsortorder["65 29  C"]="562"
+let otomsortorder["66 29  C"]="563"
+let otomsortorder["67 29  C"]="564"
+let otomsortorder["56 30 Ns"]="565"
+let otomsortorder["57 30 Ns"]="566"
+let otomsortorder["58 30 Ns"]="567"
+let otomsortorder["59 30 Ns"]="568"
+let otomsortorder["60 30 Ns"]="569"
+let otomsortorder["61 30 Ns"]="570"
+let otomsortorder["62 30 Ns"]="571"
+let otomsortorder["63 30 Ns"]="572"
+let otomsortorder["64 30 Ns"]="573"
+let otomsortorder["65 30 Ns"]="574"
+let otomsortorder["66 30 Ns"]="575"
+let otomsortorder["67 30 Ns"]="576"
+let otomsortorder["68 30 Ns"]="577"
+let otomsortorder["69 30 Ns"]="578"
+let otomsortorder["58 31 Ai"]="579"
+let otomsortorder["59 31 Ai"]="580"
+let otomsortorder["60 31 Ai"]="581"
+let otomsortorder["61 31 Ai"]="582"
+let otomsortorder["62 31 Ai"]="583"
+let otomsortorder["63 31 Ai"]="584"
+let otomsortorder["64 31 Ai"]="585"
+let otomsortorder["65 31 Ai"]="586"
+let otomsortorder["66 31 Ai"]="587"
+let otomsortorder["67 31 Ai"]="588"
+let otomsortorder["68 31 Ai"]="589"
+let otomsortorder["69 31 Ai"]="590"
+let otomsortorder["70 31 Ai"]="591"
+let otomsortorder["71 31 Ai"]="592"
+let otomsortorder["59 32  F"]="593"
+let otomsortorder["60 32  F"]="594"
+let otomsortorder["61 32  F"]="595"
+let otomsortorder["62 32  F"]="596"
+let otomsortorder["63 32  F"]="597"
+let otomsortorder["64 32  F"]="598"
+let otomsortorder["65 32  F"]="599"
+let otomsortorder["66 32  F"]="600"
+let otomsortorder["67 32  F"]="601"
+let otomsortorder["68 32  F"]="602"
+let otomsortorder["69 32  F"]="603"
+let otomsortorder["70 32  F"]="604"
+let otomsortorder["71 32  F"]="605"
+let otomsortorder["72 32  F"]="606"
+let otomsortorder["73 32  F"]="607"
+let otomsortorder["62 33 Gy"]="608"
+let otomsortorder["63 33 Gy"]="609"
+let otomsortorder["64 33 Gy"]="610"
+let otomsortorder["65 33 Gy"]="611"
+let otomsortorder["66 33 Gy"]="612"
+let otomsortorder["67 33 Gy"]="613"
+let otomsortorder["68 33 Gy"]="614"
+let otomsortorder["69 33 Gy"]="615"
+let otomsortorder["70 33 Gy"]="616"
+let otomsortorder["71 33 Gy"]="617"
+let otomsortorder["72 33 Gy"]="618"
+let otomsortorder["73 33 Gy"]="619"
+let otomsortorder["74 33 Gy"]="620"
+let otomsortorder["75 33 Gy"]="621"
+let otomsortorder["63 34 Kk"]="622"
+let otomsortorder["64 34 Kk"]="623"
+let otomsortorder["65 34 Kk"]="624"
+let otomsortorder["66 34 Kk"]="625"
+let otomsortorder["67 34 Kk"]="626"
+let otomsortorder["68 34 Kk"]="627"
+let otomsortorder["69 34 Kk"]="628"
+let otomsortorder["70 34 Kk"]="629"
+let otomsortorder["71 34 Kk"]="630"
+let otomsortorder["72 34 Kk"]="631"
+let otomsortorder["73 34 Kk"]="632"
+let otomsortorder["74 34 Kk"]="633"
+let otomsortorder["75 34 Kk"]="634"
+let otomsortorder["76 34 Kk"]="635"
+let otomsortorder["77 34 Kk"]="636"
+let otomsortorder["78 34 Kk"]="637"
+let otomsortorder["66 35 Yv"]="638"
+let otomsortorder["67 35 Yv"]="639"
+let otomsortorder["68 35 Yv"]="640"
+let otomsortorder["69 35 Yv"]="641"
+let otomsortorder["70 35 Yv"]="642"
+let otomsortorder["71 35 Yv"]="643"
+let otomsortorder["72 35 Yv"]="644"
+let otomsortorder["73 35 Yv"]="645"
+let otomsortorder["74 35 Yv"]="646"
+let otomsortorder["75 35 Yv"]="647"
+let otomsortorder["76 35 Yv"]="648"
+let otomsortorder["77 35 Yv"]="649"
+let otomsortorder["78 35 Yv"]="650"
+let otomsortorder["79 35 Yv"]="651"
+let otomsortorder["80 35 Yv"]="652"
+let otomsortorder["67 36 Cj"]="653"
+let otomsortorder["68 36 Cj"]="654"
+let otomsortorder["69 36 Cj"]="655"
+let otomsortorder["70 36 Cj"]="656"
+let otomsortorder["71 36 Cj"]="657"
+let otomsortorder["72 36 Cj"]="658"
+let otomsortorder["73 36 Cj"]="659"
+let otomsortorder["74 36 Cj"]="660"
+let otomsortorder["75 36 Cj"]="661"
+let otomsortorder["76 36 Cj"]="662"
+let otomsortorder["77 36 Cj"]="663"
+let otomsortorder["78 36 Cj"]="664"
+let otomsortorder["79 36 Cj"]="665"
+let otomsortorder["80 36 Cj"]="666"
+let otomsortorder["81 36 Cj"]="667"
+let otomsortorder["82 36 Cj"]="668"
+let otomsortorder["70 37 Iu"]="669"
+let otomsortorder["71 37 Iu"]="670"
+let otomsortorder["72 37 Iu"]="671"
+let otomsortorder["73 37 Iu"]="672"
+let otomsortorder["74 37 Iu"]="673"
+let otomsortorder["75 37 Iu"]="674"
+let otomsortorder["76 37 Iu"]="675"
+let otomsortorder["77 37 Iu"]="676"
+let otomsortorder["78 37 Iu"]="677"
+let otomsortorder["79 37 Iu"]="678"
+let otomsortorder["80 37 Iu"]="679"
+let otomsortorder["81 37 Iu"]="680"
+let otomsortorder["82 37 Iu"]="681"
+let otomsortorder["83 37 Iu"]="682"
+let otomsortorder["84 37 Iu"]="683"
+let otomsortorder["73 38  D"]="684"
+let otomsortorder["74 38  D"]="685"
+let otomsortorder["75 38  D"]="686"
+let otomsortorder["76 38  D"]="687"
+let otomsortorder["77 38  D"]="688"
+let otomsortorder["78 38  D"]="689"
+let otomsortorder["79 38  D"]="690"
+let otomsortorder["80 38  D"]="691"
+let otomsortorder["81 38  D"]="692"
+let otomsortorder["82 38  D"]="693"
+let otomsortorder["83 38  D"]="694"
+let otomsortorder["84 38  D"]="695"
+let otomsortorder["85 38  D"]="696"
+let otomsortorder["86 38  D"]="697"
+let otomsortorder["73 39 Co"]="698"
+let otomsortorder["74 39 Co"]="699"
+let otomsortorder["75 39 Co"]="700"
+let otomsortorder["76 39 Co"]="701"
+let otomsortorder["78 39 Co"]="702"
+let otomsortorder["79 39 Co"]="703"
+let otomsortorder["80 39 Co"]="704"
+let otomsortorder["81 39 Co"]="705"
+let otomsortorder["82 39 Co"]="706"
+let otomsortorder["83 39 Co"]="707"
+let otomsortorder["84 39 Co"]="708"
+let otomsortorder["85 39 Co"]="709"
+let otomsortorder["86 39 Co"]="710"
+let otomsortorder["87 39 Co"]="711"
+let otomsortorder["88 39 Co"]="712"
+let otomsortorder["89 39 Co"]="713"
+let otomsortorder["75 40  W"]="714"
+let otomsortorder["76 40  W"]="715"
+let otomsortorder["77 40  W"]="716"
+let otomsortorder["78 40  W"]="717"
+let otomsortorder["79 40  W"]="718"
+let otomsortorder["80 40  W"]="719"
+let otomsortorder["81 40  W"]="720"
+let otomsortorder["82 40  W"]="721"
+let otomsortorder["83 40  W"]="722"
+let otomsortorder["84 40  W"]="723"
+let otomsortorder["85 40  W"]="724"
+let otomsortorder["86 40  W"]="725"
+let otomsortorder["87 40  W"]="726"
+let otomsortorder["88 40  W"]="727"
+let otomsortorder["89 40  W"]="728"
+let otomsortorder["90 40  W"]="729"
+let otomsortorder["91 40  W"]="730"
+let otomsortorder["76 41 Lx"]="731"
+let otomsortorder["77 41 Lx"]="732"
+let otomsortorder["78 41 Lx"]="733"
+let otomsortorder["79 41 Lx"]="734"
+let otomsortorder["80 41 Lx"]="735"
+let otomsortorder["81 41 Lx"]="736"
+let otomsortorder["82 41 Lx"]="737"
+let otomsortorder["83 41 Lx"]="738"
+let otomsortorder["84 41 Lx"]="739"
+let otomsortorder["85 41 Lx"]="740"
+let otomsortorder["86 41 Lx"]="741"
+let otomsortorder["87 41 Lx"]="742"
+let otomsortorder["88 41 Lx"]="743"
+let otomsortorder["89 41 Lx"]="744"
+let otomsortorder["90 41 Lx"]="745"
+let otomsortorder["91 41 Lx"]="746"
+let otomsortorder["92 41 Lx"]="747"
+let otomsortorder["93 41 Lx"]="748"
+let otomsortorder["94 41 Lx"]="749"
+let otomsortorder["95 41 Lx"]="750"
+let otomsortorder["96 41 Lx"]="751"
+let otomsortorder["79 42  N"]="752"
+let otomsortorder["80 42 N "]="753"
+let otomsortorder["81 42  N"]="754"
+let otomsortorder["82 42  N"]="755"
+let otomsortorder["83 42  N"]="756"
+let otomsortorder["84 42  N"]="757"
+let otomsortorder["85 42  N"]="758"
+let otomsortorder["86 42  N"]="759"
+let otomsortorder["87 42  N"]="760"
+let otomsortorder["88 42  N"]="761"
+let otomsortorder["89 42  N"]="762"
+let otomsortorder["90 42  N"]="763"
+let otomsortorder["91 42  N"]="764"
+let otomsortorder["92 42  N"]="765"
+let otomsortorder["93 42  N"]="766"
+let otomsortorder["94 42  N"]="767"
+let otomsortorder["95 42  N"]="768"
+let otomsortorder["96 42  N"]="769"
+let otomsortorder["80 43  U"]="770"
+let otomsortorder["81 43  U"]="771"
+let otomsortorder["82 43  U"]="772"
+let otomsortorder["83 43  U"]="773"
+let otomsortorder["84 43  U"]="774"
+let otomsortorder["85 43  U"]="775"
+let otomsortorder["86 43  U"]="776"
+let otomsortorder["87 43  U"]="777"
+let otomsortorder["88 43  U"]="778"
+let otomsortorder["89 43  U"]="779"
+let otomsortorder["90 43  U"]="780"
+let otomsortorder["91 43  U"]="781"
+let otomsortorder["92 43  U"]="782"
+let otomsortorder["93 43  U"]="783"
+let otomsortorder["94 43  U"]="784"
+let otomsortorder["95 43  U"]="785"
+let otomsortorder["96 43  U"]="786"
+let otomsortorder["97 43  U"]="787"
+let otomsortorder["98 43  U"]="788"
+let otomsortorder["99 43  U"]="789"
+let otomsortorder["82 44 Vl"]="790"
+let otomsortorder["83 44 Vl"]="791"
+let otomsortorder["84 44 Vl"]="792"
+let otomsortorder["85 44 Vl"]="793"
+let otomsortorder["86 44 Vl"]="794"
+let otomsortorder["87 44 Vl"]="795"
+let otomsortorder["88 44 Vl"]="796"
+let otomsortorder["89 44 Vl"]="797"
+let otomsortorder["90 44 Vl"]="798"
+let otomsortorder["91 44 Vl"]="799"
+let otomsortorder["92 44 Vl"]="800"
+let otomsortorder["93 44 Vl"]="801"
+let otomsortorder["94 44 Vl"]="802"
+let otomsortorder["95 44 Vl"]="803"
+let otomsortorder["96 44 Vl"]="804"
+let otomsortorder["97 44 Vl"]="805"
+let otomsortorder["98 44 Vl"]="806"
+let otomsortorder["99 44 Vl"]="807"
+let otomsortorder["100 44 Vl"]="808"
+let otomsortorder["101 44 Vl"]="809"
+let otomsortorder["84 45 Se"]="810"
+let otomsortorder["85 45 Se"]="811"
+let otomsortorder["86 45 Se"]="812"
+let otomsortorder["87 45 Se"]="813"
+let otomsortorder["88 45 Se"]="814"
+let otomsortorder["89 45 Se"]="815"
+let otomsortorder["90 45 Se"]="816"
+let otomsortorder["91 45 Se"]="817"
+let otomsortorder["92 45 Se"]="818"
+let otomsortorder["93 45 Se"]="819"
+let otomsortorder["94 45 Se"]="820"
+let otomsortorder["95 45 Se"]="821"
+let otomsortorder["96 45 Se"]="822"
+let otomsortorder["97 45 Se"]="823"
+let otomsortorder["98 45 Se"]="824"
+let otomsortorder["99 45 Se"]="825"
+let otomsortorder["100 45 Se"]="826"
+let otomsortorder["101 45 Se"]="827"
+let otomsortorder["102 45 Se"]="828"
+let otomsortorder["103 45 Se"]="829"
+let otomsortorder["104 45 Se"]="830"
+let otomsortorder["86 46 Nm"]="831"
+let otomsortorder["87 46 Nm"]="832"
+let otomsortorder["88 46 Nm"]="833"
+let otomsortorder["89 46 Nm"]="834"
+let otomsortorder["90 46 Nm"]="835"
+let otomsortorder["91 46 Nm"]="836"
+let otomsortorder["92 46 Nm"]="837"
+let otomsortorder["93 46 Nm"]="838"
+let otomsortorder["94 46 Nm"]="839"
+let otomsortorder["95 46 Nm"]="840"
+let otomsortorder["96 46 Nm"]="841"
+let otomsortorder["97 46 Nm"]="842"
+let otomsortorder["98 46 Nm"]="843"
+let otomsortorder["99 46 Nm"]="844"
+let otomsortorder["100 46 Nm"]="845"
+let otomsortorder["101 46 Nm"]="846"
+let otomsortorder["102 46 Nm"]="847"
+let otomsortorder["103 46 Nm"]="848"
+let otomsortorder["104 46 Nm"]="849"
+let otomsortorder["105 46 Nm"]="850"
+let otomsortorder["106 46 Nm"]="851"
+let otomsortorder["88 47 Dd"]="852"
+let otomsortorder["89 47 Dd"]="853"
+let otomsortorder["90 47 Dd"]="854"
+let otomsortorder["91 47 Dd"]="855"
+let otomsortorder["92 47 Dd"]="856"
+let otomsortorder["93 47 Dd"]="857"
+let otomsortorder["94 47 Dd"]="858"
+let otomsortorder["95 47 Dd"]="859"
+let otomsortorder["96 47 Dd"]="860"
+let otomsortorder["97 47 Dd"]="861"
+let otomsortorder["98 47 Dd"]="862"
+let otomsortorder["99 47 Dd"]="863"
+let otomsortorder["100 47 Dd"]="864"
+let otomsortorder["101 47 Dd"]="865"
+let otomsortorder["102 47 Dd"]="866"
+let otomsortorder["103 47 Dd"]="867"
+let otomsortorder["104 47 Dd"]="868"
+let otomsortorder["105 47 Dd"]="869"
+let otomsortorder["106 47 Dd"]="870"
+let otomsortorder["107 47 Dd"]="871"
+let otomsortorder["108 47 Dd"]="872"
+let otomsortorder["89 48 Ok"]="873"
+let otomsortorder["90 48 Ok"]="874"
+let otomsortorder["91 48 Ok"]="875"
+let otomsortorder["92 48 Ok"]="876"
+let otomsortorder["93 48 Ok"]="877"
+let otomsortorder["94 48 Ok"]="878"
+let otomsortorder["95 48 Ok"]="879"
+let otomsortorder["96 48 Ok"]="880"
+let otomsortorder["97 48 Ok"]="881"
+let otomsortorder["98 48 Ok"]="882"
+let otomsortorder["99 48 Ok"]="883"
+let otomsortorder["100 48 Ok"]="884"
+let otomsortorder["101 48 Ok"]="885"
+let otomsortorder["102 48 Ok"]="886"
+let otomsortorder["103 48 Ok"]="887"
+let otomsortorder["104 48 Ok"]="888"
+let otomsortorder["105 48 Ok"]="889"
+let otomsortorder["106 48 Ok"]="890"
+let otomsortorder["107 48 Ok"]="891"
+let otomsortorder["108 48 Ok"]="892"
+let otomsortorder["109 48 Ok"]="893"
+let otomsortorder["110 48 Ok"]="894"
+let otomsortorder["111 48 Ok"]="895"
+let otomsortorder["90 49 Da"]="896"
+let otomsortorder["91 49 Da"]="897"
+let otomsortorder["92 49 Da"]="898"
+let otomsortorder["93 49 Da"]="899"
+let otomsortorder["94 49 Da"]="900"
+let otomsortorder["95 49 Da"]="901"
+let otomsortorder["96 49 Da"]="902"
+let otomsortorder["97 49 Da"]="903"
+let otomsortorder["98 49 Da"]="904"
+let otomsortorder["99 49 Da"]="905"
+let otomsortorder["100 49 Da"]="906"
+let otomsortorder["101 49 Da"]="907"
+let otomsortorder["102 49 Da"]="908"
+let otomsortorder["103 49 Da"]="909"
+let otomsortorder["104 49 Da"]="910"
+let otomsortorder["105 49 Da"]="911"
+let otomsortorder["106 49 Da"]="912"
+let otomsortorder["107 49 Da"]="913"
+let otomsortorder["108 49 Da"]="914"
+let otomsortorder["109 49 Da"]="915"
+let otomsortorder["110 49 Da"]="916"
+let otomsortorder["111 49 Da"]="917"
+let otomsortorder["112 49 Da"]="918"
+let otomsortorder["113 49 Da"]="919"
+let otomsortorder["94 50  S"]="920"
+let otomsortorder["95 50  S"]="921"
+let otomsortorder["96 50  S"]="922"
+let otomsortorder["97 50  S"]="923"
+let otomsortorder["98 50  S"]="924"
+let otomsortorder["99 50  S"]="925"
+let otomsortorder["100 50  S"]="926"
+let otomsortorder["101 50  S"]="927"
+let otomsortorder["102 50  S"]="928"
+let otomsortorder["103 50  S"]="929"
+let otomsortorder["104 50  S"]="930"
+let otomsortorder["105 50  S"]="931"
+let otomsortorder["106 50  S"]="932"
+let otomsortorder["107 50  S"]="933"
+let otomsortorder["108 50  S"]="934"
+let otomsortorder["109 50  S"]="935"
+let otomsortorder["112 50  S"]="936"
+let otomsortorder["113 50  S"]="937"
+let otomsortorder["114 50  S"]="938"
+let otomsortorder["115 50  S"]="939"
+let otomsortorder["95 51  Z"]="940"
+let otomsortorder["96 51  Z"]="941"
+let otomsortorder["97 51  Z"]="942"
+let otomsortorder["98 51  Z"]="943"
+let otomsortorder["99 51  Z"]="944"
+let otomsortorder["100 51  Z"]="945"
+let otomsortorder["101 51  Z"]="946"
+let otomsortorder["102 51  Z"]="947"
+let otomsortorder["103 51  Z"]="948"
+let otomsortorder["104 51  Z"]="949"
+let otomsortorder["105 51  Z"]="950"
+let otomsortorder["106 51  Z"]="951"
+let otomsortorder["107 51  Z"]="952"
+let otomsortorder["108 51  Z"]="953"
+let otomsortorder["109 51  Z"]="954"
+let otomsortorder["110 51  Z"]="955"
+let otomsortorder["111 51  Z"]="956"
+let otomsortorder["112 51  Z"]="957"
+let otomsortorder["113 51  Z"]="958"
+let otomsortorder["114 51  Z"]="959"
+let otomsortorder["115 51  Z"]="960"
+let otomsortorder["116 51  Z"]="961"
+let otomsortorder["117 51  Z"]="962"
+let otomsortorder["97 52 Cv"]="963"
+let otomsortorder["98 52 Cv"]="964"
+let otomsortorder["99 52 Cv"]="965"
+let otomsortorder["100 52 Cv"]="966"
+let otomsortorder["101 52 Cv"]="967"
+let otomsortorder["102 52 Cv"]="968"
+let otomsortorder["103 52 Cv"]="969"
+let otomsortorder["104 52 Cv"]="970"
+let otomsortorder["105 52 Cv"]="971"
+let otomsortorder["106 52 Cv"]="972"
+let otomsortorder["107 52 Cv"]="973"
+let otomsortorder["108 52 Cv"]="974"
+let otomsortorder["109 52 Cv"]="975"
+let otomsortorder["110 52 Cv"]="976"
+let otomsortorder["111 52 Cv"]="977"
+let otomsortorder["114 52 Cv"]="978"
+let otomsortorder["115 52 Cv"]="979"
+let otomsortorder["116 52 Cv"]="980"
+let otomsortorder["117 52 Cv"]="981"
+let otomsortorder["118 52 Cv"]="982"
+let otomsortorder["119 52 Cv"]="983"
+let otomsortorder["98 53 Vt"]="984"
+let otomsortorder["99 53 Vt"]="985"
+let otomsortorder["100 53 Vt"]="986"
+let otomsortorder["101 53 Vt"]="987"
+let otomsortorder["102 53 Vt"]="988"
+let otomsortorder["103 53 Vt"]="989"
+let otomsortorder["104 53 Vt"]="990"
+let otomsortorder["105 53 Vt"]="991"
+let otomsortorder["106 53 Vt"]="992"
+let otomsortorder["107 53 Vt"]="993"
+let otomsortorder["108 53 Vt"]="994"
+let otomsortorder["109 53 Vt"]="995"
+let otomsortorder["110 53 Vt"]="996"
+let otomsortorder["111 53 Vt"]="997"
+let otomsortorder["112 53 Vt"]="998"
+let otomsortorder["119 53 Vt"]="999"
+let otomsortorder["120 53 Vt"]="1000"
+let otomsortorder["121 53 Vt"]="1001"
+let otomsortorder["122 53 Vt"]="1002"
+let otomsortorder["99 54 Ek"]="1003"
+let otomsortorder["100 54 Ek"]="1004"
+let otomsortorder["101 54 Ek"]="1005"
+let otomsortorder["102 54 Ek"]="1006"
+let otomsortorder["103 54 Ek"]="1007"
+let otomsortorder["104 54 Ek"]="1008"
+let otomsortorder["105 54 Ek"]="1009"
+let otomsortorder["106 54 Ek"]="1010"
+let otomsortorder["107 54 Ek"]="1011"
+let otomsortorder["108 54 Ek"]="1012"
+let otomsortorder["109 54 Ek"]="1013"
+let otomsortorder["110 54 Ek"]="1014"
+let otomsortorder["111 54 Ek"]="1015"
+let otomsortorder["112 54 Ek"]="1016"
+let otomsortorder["113 54 Ek"]="1017"
+let otomsortorder["119 54 Ek"]="1018"
+let otomsortorder["120 54 Ek"]="1019"
+let otomsortorder["121 54 Ek"]="1020"
+let otomsortorder["122 54 Ek"]="1021"
+let otomsortorder["123 54 Ek"]="1022"
+let otomsortorder["103 55 Ji"]="1023"
+let otomsortorder["104 55 Ji"]="1024"
+let otomsortorder["105 55 Ji"]="1025"
+let otomsortorder["106 55 Ji"]="1026"
+let otomsortorder["107 55 Ji"]="1027"
+let otomsortorder["108 55 Ji"]="1028"
+let otomsortorder["109 55 Ji"]="1029"
+let otomsortorder["110 55 Ji"]="1030"
+let otomsortorder["111 55 Ji"]="1031"
+let otomsortorder["112 55 Ji"]="1032"
+let otomsortorder["113 55 Ji"]="1033"
+let otomsortorder["114 55 Ji"]="1034"
+let otomsortorder["121 55 Ji"]="1035"
+let otomsortorder["122 55 Ji"]="1036"
+let otomsortorder["123 55 Ji"]="1037"
+let otomsortorder["124 55 Ji"]="1038"
+let otomsortorder["104 56 Aw"]="1039"
+let otomsortorder["105 56 Aw"]="1040"
+let otomsortorder["106 56 Aw"]="1041"
+let otomsortorder["107 56 Aw"]="1042"
+let otomsortorder["108 56 Aw"]="1043"
+let otomsortorder["109 56 Aw"]="1044"
+let otomsortorder["110 56 Aw"]="1045"
+let otomsortorder["111 56 Aw"]="1046"
+let otomsortorder["112 56 Aw"]="1047"
+let otomsortorder["113 56 Aw"]="1048"
+let otomsortorder["114 56 Aw"]="1049"
+let otomsortorder["115 56 Aw"]="1050"
+let otomsortorder["124 56 Aw"]="1051"
+let otomsortorder["125 56 Aw"]="1052"
+let otomsortorder["106 57 Kn"]="1053"
+let otomsortorder["107 57 Kn"]="1054"
+let otomsortorder["108 57 Kn"]="1055"
+let otomsortorder["109 57 Kn"]="1056"
+let otomsortorder["110 57 Kn"]="1057"
+let otomsortorder["111 57 Kn"]="1058"
+let otomsortorder["112 57 Kn"]="1059"
+let otomsortorder["113 57 Kn"]="1060"
+let otomsortorder["114 57 Kn"]="1061"
+let otomsortorder["115 57 Kn"]="1062"
+let otomsortorder["116 57 Kn"]="1063"
+let otomsortorder["108 58 Ha"]="1064"
+let otomsortorder["109 58 Ha"]="1065"
+let otomsortorder["110 58 Ha"]="1066"
+let otomsortorder["111 58 Ha"]="1067"
+let otomsortorder["112 58 Ha"]="1068"
+let otomsortorder["113 58 Ha"]="1069"
+let otomsortorder["114 58 Ha"]="1070"
+let otomsortorder["115 58 Ha"]="1071"
+let otomsortorder["116 58 Ha"]="1072"
+let otomsortorder["117 58 Ha"]="1073"
+let otomsortorder["109 59 Ax"]="1074"
+let otomsortorder["110 59 Ax"]="1075"
+let otomsortorder["111 59 Ax"]="1076"
+let otomsortorder["113 60  I"]="1077"
+let otomsortorder["114 60  I"]="1078"
+let otomsortorder["115 60  I"]="1079"
+let otomsortorder["116 61 Jb"]="1080"
+let otomsortorder["117 62 Go"]="1081"
+let otomsortorder["118 62 Go"]="1082"
+let otomsortorder["119 63  X"]="1083"
+let otomsortorder["123 65 Eh"]="1084"
+let otomsortorder["124 65 Eh"]="1085"
+let otomsortorder["125 66 Ys"]="1086"
 
 let otomsortorder["Ju-1"]="0"
 let otomsortorder["Ju-2"]="1"
@@ -12362,707 +12538,723 @@ let otomsortorder["Eb-20"]="366"
 let otomsortorder["Eb-21"]="367"
 let otomsortorder["Eb-22"]="368"
 let otomsortorder["Eb-23"]="369"
-let otomsortorder["P-21"]="370"
-let otomsortorder["P-22"]="371"
-let otomsortorder["P-23"]="372"
-let otomsortorder["P-24"]="373"
-let otomsortorder["P-25"]="374"
-let otomsortorder["P-26"]="375"
-let otomsortorder["Ro-22"]="376"
-let otomsortorder["Ro-23"]="377"
-let otomsortorder["Ro-24"]="378"
-let otomsortorder["Ro-25"]="379"
-let otomsortorder["Ro-26"]="380"
-let otomsortorder["Ro-27"]="381"
-let otomsortorder["Ro-28"]="382"
-let otomsortorder["Cl-24"]="383"
-let otomsortorder["Cl-25"]="384"
-let otomsortorder["Cl-26"]="385"
-let otomsortorder["Cl-27"]="386"
-let otomsortorder["Cl-28"]="387"
-let otomsortorder["Cl-29"]="388"
-let otomsortorder["Cl-30"]="389"
-let otomsortorder["Yu-26"]="390"
-let otomsortorder["Yu-27"]="391"
-let otomsortorder["Yu-28"]="392"
-let otomsortorder["Yu-29"]="393"
-let otomsortorder["Yu-30"]="394"
-let otomsortorder["Yu-31"]="395"
-let otomsortorder["Yu-32"]="396"
-let otomsortorder["Nd-27"]="397"
-let otomsortorder["Nd-28"]="398"
-let otomsortorder["Nd-29"]="399"
-let otomsortorder["Nd-30"]="400"
-let otomsortorder["Nd-31"]="401"
-let otomsortorder["Nd-32"]="402"
-let otomsortorder["Nd-33"]="403"
-let otomsortorder["Nd-34"]="404"
-let otomsortorder["K-29"]="405"
-let otomsortorder["K-30"]="406"
-let otomsortorder["K-31"]="407"
-let otomsortorder["K-32"]="408"
-let otomsortorder["K-33"]="409"
-let otomsortorder["K-34"]="410"
-let otomsortorder["K-35"]="411"
-let otomsortorder["K-36"]="412"
-let otomsortorder["K-37"]="413"
-let otomsortorder["Mt-32"]="414"
-let otomsortorder["Mt-33"]="415"
-let otomsortorder["Mt-34"]="416"
-let otomsortorder["Mt-35"]="417"
-let otomsortorder["Mt-36"]="418"
-let otomsortorder["Mt-37"]="419"
-let otomsortorder["Mt-38"]="420"
-let otomsortorder["Mt-39"]="421"
-let otomsortorder["Lu-34"]="422"
-let otomsortorder["Lu-35"]="423"
-let otomsortorder["Lu-36"]="424"
-let otomsortorder["Lu-37"]="425"
-let otomsortorder["Lu-38"]="426"
-let otomsortorder["Lu-39"]="427"
-let otomsortorder["Lu-40"]="428"
-let otomsortorder["Lu-41"]="429"
-let otomsortorder["Dx-35"]="430"
-let otomsortorder["Dx-36"]="431"
-let otomsortorder["Dx-37"]="432"
-let otomsortorder["Dx-38"]="433"
-let otomsortorder["Dx-39"]="434"
-let otomsortorder["Dx-40"]="435"
-let otomsortorder["Dx-41"]="436"
-let otomsortorder["Dx-42"]="437"
-let otomsortorder["Dx-43"]="438"
-let otomsortorder["Dx-44"]="439"
-let otomsortorder["Gd-38"]="440"
-let otomsortorder["Gd-39"]="441"
-let otomsortorder["Gd-40"]="442"
-let otomsortorder["Gd-41"]="443"
-let otomsortorder["Gd-42"]="444"
-let otomsortorder["Gd-43"]="445"
-let otomsortorder["Gd-44"]="446"
-let otomsortorder["Gd-45"]="447"
-let otomsortorder["Gd-46"]="448"
-let otomsortorder["V-39"]="449"
-let otomsortorder["V-40"]="450"
-let otomsortorder["V-41"]="451"
-let otomsortorder["V-42"]="452"
-let otomsortorder["V-43"]="453"
-let otomsortorder["V-44"]="454"
-let otomsortorder["V-45"]="455"
-let otomsortorder["V-46"]="456"
-let otomsortorder["V-47"]="457"
-let otomsortorder["V-48"]="458"
-let otomsortorder["Uq-41"]="459"
-let otomsortorder["Uq-42"]="460"
-let otomsortorder["Uq-43"]="461"
-let otomsortorder["Uq-44"]="462"
-let otomsortorder["Uq-45"]="463"
-let otomsortorder["Uq-46"]="464"
-let otomsortorder["Uq-47"]="465"
-let otomsortorder["Uq-48"]="466"
-let otomsortorder["Uq-49"]="467"
-let otomsortorder["Uq-50"]="468"
-let otomsortorder["Uq-51"]="469"
-let otomsortorder["Uq-52"]="470"
-let otomsortorder["Pb-43"]="471"
-let otomsortorder["Pb-44"]="472"
-let otomsortorder["Pb-45"]="473"
-let otomsortorder["Pb-46"]="474"
-let otomsortorder["Pb-47"]="475"
-let otomsortorder["Pb-48"]="476"
-let otomsortorder["Pb-49"]="477"
-let otomsortorder["Pb-50"]="478"
-let otomsortorder["Pb-51"]="479"
-let otomsortorder["Pb-52"]="480"
-let otomsortorder["Pb-53"]="481"
-let otomsortorder["Wy-45"]="482"
-let otomsortorder["Wy-46"]="483"
-let otomsortorder["Wy-47"]="484"
-let otomsortorder["Wy-48"]="485"
-let otomsortorder["Wy-49"]="486"
-let otomsortorder["Wy-50"]="487"
-let otomsortorder["Wy-51"]="488"
-let otomsortorder["Wy-52"]="489"
-let otomsortorder["Wy-53"]="490"
-let otomsortorder["Wy-54"]="491"
-let otomsortorder["Wy-55"]="492"
-let otomsortorder["Wy-56"]="493"
-let otomsortorder["L-46"]="494"
-let otomsortorder["L-47"]="495"
-let otomsortorder["L-48"]="496"
-let otomsortorder["L-49"]="497"
-let otomsortorder["L-50"]="498"
-let otomsortorder["L-51"]="499"
-let otomsortorder["L-52"]="500"
-let otomsortorder["L-53"]="501"
-let otomsortorder["L-54"]="502"
-let otomsortorder["L-55"]="503"
-let otomsortorder["L-56"]="504"
-let otomsortorder["L-57"]="505"
-let otomsortorder["L-58"]="506"
-let otomsortorder["Ux-48"]="507"
-let otomsortorder["Ux-49"]="508"
-let otomsortorder["Ux-50"]="509"
-let otomsortorder["Ux-51"]="510"
-let otomsortorder["Ux-52"]="511"
-let otomsortorder["Ux-53"]="512"
-let otomsortorder["Ux-54"]="513"
-let otomsortorder["Ux-55"]="514"
-let otomsortorder["Ux-56"]="515"
-let otomsortorder["Ux-57"]="516"
-let otomsortorder["Ux-58"]="517"
-let otomsortorder["Ux-59"]="518"
-let otomsortorder["Ux-60"]="519"
-let otomsortorder["Pg-50"]="520"
-let otomsortorder["Pg-51"]="521"
-let otomsortorder["Pg-52"]="522"
-let otomsortorder["Pg-53"]="523"
-let otomsortorder["Pg-54"]="524"
-let otomsortorder["Pg-55"]="525"
-let otomsortorder["Pg-56"]="526"
-let otomsortorder["Pg-57"]="527"
-let otomsortorder["Pg-58"]="528"
-let otomsortorder["Pg-59"]="529"
-let otomsortorder["Pg-60"]="530"
-let otomsortorder["Pg-61"]="531"
-let otomsortorder["Qe-52"]="532"
-let otomsortorder["Qe-53"]="533"
-let otomsortorder["Qe-54"]="534"
-let otomsortorder["Qe-55"]="535"
-let otomsortorder["Qe-56"]="536"
-let otomsortorder["Qe-57"]="537"
-let otomsortorder["Qe-58"]="538"
-let otomsortorder["Qe-59"]="539"
-let otomsortorder["Qe-60"]="540"
-let otomsortorder["Qe-61"]="541"
-let otomsortorder["Qe-62"]="542"
-let otomsortorder["Qe-63"]="543"
-let otomsortorder["Qe-64"]="544"
-let otomsortorder["C-53"]="545"
-let otomsortorder["C-54"]="546"
-let otomsortorder["C-55"]="547"
-let otomsortorder["C-56"]="548"
-let otomsortorder["C-57"]="549"
-let otomsortorder["C-58"]="550"
-let otomsortorder["C-59"]="551"
-let otomsortorder["C-60"]="552"
-let otomsortorder["C-61"]="553"
-let otomsortorder["C-62"]="554"
-let otomsortorder["C-63"]="555"
-let otomsortorder["C-64"]="556"
-let otomsortorder["C-65"]="557"
-let otomsortorder["C-66"]="558"
-let otomsortorder["Ns-56"]="559"
-let otomsortorder["Ns-57"]="560"
-let otomsortorder["Ns-58"]="561"
-let otomsortorder["Ns-59"]="562"
-let otomsortorder["Ns-60"]="563"
-let otomsortorder["Ns-61"]="564"
-let otomsortorder["Ns-62"]="565"
-let otomsortorder["Ns-63"]="566"
-let otomsortorder["Ns-64"]="567"
-let otomsortorder["Ns-65"]="568"
-let otomsortorder["Ns-66"]="569"
-let otomsortorder["Ns-67"]="570"
-let otomsortorder["Ns-68"]="571"
-let otomsortorder["Ns-69"]="572"
-let otomsortorder["Ai-58"]="573"
-let otomsortorder["Ai-59"]="574"
-let otomsortorder["Ai-60"]="575"
-let otomsortorder["Ai-61"]="576"
-let otomsortorder["Ai-62"]="577"
-let otomsortorder["Ai-63"]="578"
-let otomsortorder["Ai-64"]="579"
-let otomsortorder["Ai-65"]="580"
-let otomsortorder["Ai-66"]="581"
-let otomsortorder["Ai-67"]="582"
-let otomsortorder["Ai-68"]="583"
-let otomsortorder["Ai-69"]="584"
-let otomsortorder["Ai-70"]="585"
-let otomsortorder["F-59"]="586"
-let otomsortorder["F-60"]="587"
-let otomsortorder["F-61"]="588"
-let otomsortorder["F-62"]="589"
-let otomsortorder["F-63"]="590"
-let otomsortorder["F-64"]="591"
-let otomsortorder["F-65"]="592"
-let otomsortorder["F-66"]="593"
-let otomsortorder["F-67"]="594"
-let otomsortorder["F-68"]="595"
-let otomsortorder["F-69"]="596"
-let otomsortorder["F-70"]="597"
-let otomsortorder["F-71"]="598"
-let otomsortorder["F-72"]="599"
-let otomsortorder["F-73"]="600"
-let otomsortorder["Gy-62"]="601"
-let otomsortorder["Gy-63"]="602"
-let otomsortorder["Gy-64"]="603"
-let otomsortorder["Gy-65"]="604"
-let otomsortorder["Gy-66"]="605"
-let otomsortorder["Gy-67"]="606"
-let otomsortorder["Gy-68"]="607"
-let otomsortorder["Gy-69"]="608"
-let otomsortorder["Gy-70"]="609"
-let otomsortorder["Gy-71"]="610"
-let otomsortorder["Gy-72"]="611"
-let otomsortorder["Gy-73"]="612"
-let otomsortorder["Gy-74"]="613"
-let otomsortorder["Gy-75"]="614"
-let otomsortorder["Kk-63"]="615"
-let otomsortorder["Kk-64"]="616"
-let otomsortorder["Kk-65"]="617"
-let otomsortorder["Kk-66"]="618"
-let otomsortorder["Kk-67"]="619"
-let otomsortorder["Kk-68"]="620"
-let otomsortorder["Kk-69"]="621"
-let otomsortorder["Kk-70"]="622"
-let otomsortorder["Kk-71"]="623"
-let otomsortorder["Kk-72"]="624"
-let otomsortorder["Kk-73"]="625"
-let otomsortorder["Kk-74"]="626"
-let otomsortorder["Kk-75"]="627"
-let otomsortorder["Kk-76"]="628"
-let otomsortorder["Kk-77"]="629"
-let otomsortorder["Yv-66"]="630"
-let otomsortorder["Yv-67"]="631"
-let otomsortorder["Yv-68"]="632"
-let otomsortorder["Yv-69"]="633"
-let otomsortorder["Yv-70"]="634"
-let otomsortorder["Yv-71"]="635"
-let otomsortorder["Yv-72"]="636"
-let otomsortorder["Yv-73"]="637"
-let otomsortorder["Yv-74"]="638"
-let otomsortorder["Yv-75"]="639"
-let otomsortorder["Yv-76"]="640"
-let otomsortorder["Yv-77"]="641"
-let otomsortorder["Yv-78"]="642"
-let otomsortorder["Yv-79"]="643"
-let otomsortorder["Yv-80"]="644"
-let otomsortorder["Cj-68"]="645"
-let otomsortorder["Cj-69"]="646"
-let otomsortorder["Cj-70"]="647"
-let otomsortorder["Cj-71"]="648"
-let otomsortorder["Cj-72"]="649"
-let otomsortorder["Cj-73"]="650"
-let otomsortorder["Cj-74"]="651"
-let otomsortorder["Cj-75"]="652"
-let otomsortorder["Cj-76"]="653"
-let otomsortorder["Cj-77"]="654"
-let otomsortorder["Cj-78"]="655"
-let otomsortorder["Cj-79"]="656"
-let otomsortorder["Cj-80"]="657"
-let otomsortorder["Cj-81"]="658"
-let otomsortorder["Iu-70"]="659"
-let otomsortorder["Iu-71"]="660"
-let otomsortorder["Iu-72"]="661"
-let otomsortorder["Iu-73"]="662"
-let otomsortorder["Iu-74"]="663"
-let otomsortorder["Iu-75"]="664"
-let otomsortorder["Iu-76"]="665"
-let otomsortorder["Iu-77"]="666"
-let otomsortorder["Iu-78"]="667"
-let otomsortorder["Iu-79"]="668"
-let otomsortorder["Iu-80"]="669"
-let otomsortorder["Iu-81"]="670"
-let otomsortorder["Iu-82"]="671"
-let otomsortorder["Iu-83"]="672"
-let otomsortorder["Iu-84"]="673"
-let otomsortorder["D-74"]="674"
-let otomsortorder["D-75"]="675"
-let otomsortorder["D-76"]="676"
-let otomsortorder["D-77"]="677"
-let otomsortorder["D-78"]="678"
-let otomsortorder["D-79"]="679"
-let otomsortorder["D-80"]="680"
-let otomsortorder["D-81"]="681"
-let otomsortorder["D-82"]="682"
-let otomsortorder["D-83"]="683"
-let otomsortorder["D-84"]="684"
-let otomsortorder["D-85"]="685"
-let otomsortorder["D-86"]="686"
-let otomsortorder["Co-74"]="687"
-let otomsortorder["Co-75"]="688"
-let otomsortorder["Co-76"]="689"
-let otomsortorder["Co-78"]="690"
-let otomsortorder["Co-79"]="691"
-let otomsortorder["Co-80"]="692"
-let otomsortorder["Co-81"]="693"
-let otomsortorder["Co-82"]="694"
-let otomsortorder["Co-83"]="695"
-let otomsortorder["Co-84"]="696"
-let otomsortorder["Co-85"]="697"
-let otomsortorder["Co-86"]="698"
-let otomsortorder["Co-87"]="699"
-let otomsortorder["Co-88"]="700"
-let otomsortorder["W-75"]="701"
-let otomsortorder["W-76"]="702"
-let otomsortorder["W-77"]="703"
-let otomsortorder["W-78"]="704"
-let otomsortorder["W-79"]="705"
-let otomsortorder["W-80"]="706"
-let otomsortorder["W-81"]="707"
-let otomsortorder["W-82"]="708"
-let otomsortorder["W-83"]="709"
-let otomsortorder["W-84"]="710"
-let otomsortorder["W-85"]="711"
-let otomsortorder["W-86"]="712"
-let otomsortorder["W-87"]="713"
-let otomsortorder["W-88"]="714"
-let otomsortorder["W-89"]="715"
-let otomsortorder["W-90"]="716"
-let otomsortorder["W-91"]="717"
-let otomsortorder["Lx-76"]="718"
-let otomsortorder["Lx-77"]="719"
-let otomsortorder["Lx-78"]="720"
-let otomsortorder["Lx-79"]="721"
-let otomsortorder["Lx-80"]="722"
-let otomsortorder["Lx-81"]="723"
-let otomsortorder["Lx-82"]="724"
-let otomsortorder["Lx-83"]="725"
-let otomsortorder["Lx-84"]="726"
-let otomsortorder["Lx-85"]="727"
-let otomsortorder["Lx-86"]="728"
-let otomsortorder["Lx-87"]="729"
-let otomsortorder["Lx-88"]="730"
-let otomsortorder["Lx-89"]="731"
-let otomsortorder["Lx-90"]="732"
-let otomsortorder["Lx-91"]="733"
-let otomsortorder["Lx-92"]="734"
-let otomsortorder["Lx-93"]="735"
-let otomsortorder["Lx-94"]="736"
-let otomsortorder["Lx-95"]="737"
-let otomsortorder["Lx-96"]="738"
-let otomsortorder["N-79"]="739"
-let otomsortorder["N-80"]="740"
-let otomsortorder["N-81"]="741"
-let otomsortorder["N-82"]="742"
-let otomsortorder["N-83"]="743"
-let otomsortorder["N-84"]="744"
-let otomsortorder["N-85"]="745"
-let otomsortorder["N-86"]="746"
-let otomsortorder["N-87"]="747"
-let otomsortorder["N-88"]="748"
-let otomsortorder["N-89"]="749"
-let otomsortorder["N-90"]="750"
-let otomsortorder["N-91"]="751"
-let otomsortorder["N-92"]="752"
-let otomsortorder["N-93"]="753"
-let otomsortorder["N-94"]="754"
-let otomsortorder["N-95"]="755"
-let otomsortorder["N-96"]="756"
-let otomsortorder["U-81"]="757"
-let otomsortorder["U-82"]="758"
-let otomsortorder["U-83"]="759"
-let otomsortorder["U-84"]="760"
-let otomsortorder["U-85"]="761"
-let otomsortorder["U-86"]="762"
-let otomsortorder["U-87"]="763"
-let otomsortorder["U-88"]="764"
-let otomsortorder["U-89"]="765"
-let otomsortorder["U-90"]="766"
-let otomsortorder["U-91"]="767"
-let otomsortorder["U-92"]="768"
-let otomsortorder["U-93"]="769"
-let otomsortorder["U-94"]="770"
-let otomsortorder["U-95"]="771"
-let otomsortorder["U-96"]="772"
-let otomsortorder["U-97"]="773"
-let otomsortorder["U-98"]="774"
-let otomsortorder["U-99"]="775"
-let otomsortorder["Vl-83"]="776"
-let otomsortorder["Vl-84"]="777"
-let otomsortorder["Vl-85"]="778"
-let otomsortorder["Vl-86"]="779"
-let otomsortorder["Vl-87"]="780"
-let otomsortorder["Vl-88"]="781"
-let otomsortorder["Vl-89"]="782"
-let otomsortorder["Vl-90"]="783"
-let otomsortorder["Vl-91"]="784"
-let otomsortorder["Vl-92"]="785"
-let otomsortorder["Vl-93"]="786"
-let otomsortorder["Vl-94"]="787"
-let otomsortorder["Vl-95"]="788"
-let otomsortorder["Vl-96"]="789"
-let otomsortorder["Vl-97"]="790"
-let otomsortorder["Vl-98"]="791"
-let otomsortorder["Vl-99"]="792"
-let otomsortorder["Vl-100"]="793"
-let otomsortorder["Vl-101"]="794"
-let otomsortorder["Se-84"]="795"
-let otomsortorder["Se-85"]="796"
-let otomsortorder["Se-86"]="797"
-let otomsortorder["Se-87"]="798"
-let otomsortorder["Se-88"]="799"
-let otomsortorder["Se-89"]="800"
-let otomsortorder["Se-90"]="801"
-let otomsortorder["Se-91"]="802"
-let otomsortorder["Se-92"]="803"
-let otomsortorder["Se-93"]="804"
-let otomsortorder["Se-94"]="805"
-let otomsortorder["Se-95"]="806"
-let otomsortorder["Se-96"]="807"
-let otomsortorder["Se-97"]="808"
-let otomsortorder["Se-98"]="809"
-let otomsortorder["Se-99"]="810"
-let otomsortorder["Se-100"]="811"
-let otomsortorder["Se-101"]="812"
-let otomsortorder["Se-102"]="813"
-let otomsortorder["Se-103"]="814"
-let otomsortorder["Se-104"]="815"
-let otomsortorder["Nm-86"]="816"
-let otomsortorder["Nm-87"]="817"
-let otomsortorder["Nm-88"]="818"
-let otomsortorder["Nm-89"]="819"
-let otomsortorder["Nm-90"]="820"
-let otomsortorder["Nm-91"]="821"
-let otomsortorder["Nm-92"]="822"
-let otomsortorder["Nm-93"]="823"
-let otomsortorder["Nm-94"]="824"
-let otomsortorder["Nm-95"]="825"
-let otomsortorder["Nm-96"]="826"
-let otomsortorder["Nm-97"]="827"
-let otomsortorder["Nm-98"]="828"
-let otomsortorder["Nm-99"]="829"
-let otomsortorder["Nm-100"]="830"
-let otomsortorder["Nm-101"]="831"
-let otomsortorder["Nm-102"]="832"
-let otomsortorder["Nm-103"]="833"
-let otomsortorder["Nm-104"]="834"
-let otomsortorder["Nm-105"]="835"
-let otomsortorder["Nm-106"]="836"
-let otomsortorder["Dd-88"]="837"
-let otomsortorder["Dd-89"]="838"
-let otomsortorder["Dd-90"]="839"
-let otomsortorder["Dd-91"]="840"
-let otomsortorder["Dd-92"]="841"
-let otomsortorder["Dd-93"]="842"
-let otomsortorder["Dd-94"]="843"
-let otomsortorder["Dd-95"]="844"
-let otomsortorder["Dd-96"]="845"
-let otomsortorder["Dd-97"]="846"
-let otomsortorder["Dd-98"]="847"
-let otomsortorder["Dd-99"]="848"
-let otomsortorder["Dd-100"]="849"
-let otomsortorder["Dd-101"]="850"
-let otomsortorder["Dd-102"]="851"
-let otomsortorder["Dd-103"]="852"
-let otomsortorder["Dd-104"]="853"
-let otomsortorder["Dd-105"]="854"
-let otomsortorder["Dd-106"]="855"
-let otomsortorder["Dd-107"]="856"
-let otomsortorder["Dd-108"]="857"
-let otomsortorder["Ok-89"]="858"
-let otomsortorder["Ok-90"]="859"
-let otomsortorder["Ok-91"]="860"
-let otomsortorder["Ok-92"]="861"
-let otomsortorder["Ok-93"]="862"
-let otomsortorder["Ok-94"]="863"
-let otomsortorder["Ok-95"]="864"
-let otomsortorder["Ok-96"]="865"
-let otomsortorder["Ok-97"]="866"
-let otomsortorder["Ok-98"]="867"
-let otomsortorder["Ok-99"]="868"
-let otomsortorder["Ok-100"]="869"
-let otomsortorder["Ok-101"]="870"
-let otomsortorder["Ok-102"]="871"
-let otomsortorder["Ok-103"]="872"
-let otomsortorder["Ok-104"]="873"
-let otomsortorder["Ok-105"]="874"
-let otomsortorder["Ok-106"]="875"
-let otomsortorder["Ok-107"]="876"
-let otomsortorder["Ok-108"]="877"
-let otomsortorder["Ok-109"]="878"
-let otomsortorder["Ok-110"]="879"
-let otomsortorder["Ok-111"]="880"
-let otomsortorder["Da-90"]="881"
-let otomsortorder["Da-91"]="882"
-let otomsortorder["Da-92"]="883"
-let otomsortorder["Da-93"]="884"
-let otomsortorder["Da-94"]="885"
-let otomsortorder["Da-95"]="886"
-let otomsortorder["Da-96"]="887"
-let otomsortorder["Da-97"]="888"
-let otomsortorder["Da-98"]="889"
-let otomsortorder["Da-99"]="890"
-let otomsortorder["Da-100"]="891"
-let otomsortorder["Da-101"]="892"
-let otomsortorder["Da-102"]="893"
-let otomsortorder["Da-103"]="894"
-let otomsortorder["Da-104"]="895"
-let otomsortorder["Da-105"]="896"
-let otomsortorder["Da-106"]="897"
-let otomsortorder["Da-107"]="898"
-let otomsortorder["Da-108"]="899"
-let otomsortorder["Da-109"]="900"
-let otomsortorder["Da-110"]="901"
-let otomsortorder["Da-111"]="902"
-let otomsortorder["Da-112"]="903"
-let otomsortorder["Da-113"]="904"
-let otomsortorder["S-94"]="905"
-let otomsortorder["S-95"]="906"
-let otomsortorder["S-96"]="907"
-let otomsortorder["S-97"]="908"
-let otomsortorder["S-98"]="909"
-let otomsortorder["S-99"]="910"
-let otomsortorder["S-100"]="911"
-let otomsortorder["S-101"]="912"
-let otomsortorder["S-102"]="913"
-let otomsortorder["S-103"]="914"
-let otomsortorder["S-104"]="915"
-let otomsortorder["S-105"]="916"
-let otomsortorder["S-106"]="917"
-let otomsortorder["S-107"]="918"
-let otomsortorder["S-108"]="919"
-let otomsortorder["S-109"]="920"
-let otomsortorder["S-112"]="921"
-let otomsortorder["S-113"]="922"
-let otomsortorder["S-114"]="923"
-let otomsortorder["S-115"]="924"
-let otomsortorder["Z-95"]="925"
-let otomsortorder["Z-96"]="926"
-let otomsortorder["Z-97"]="927"
-let otomsortorder["Z-98"]="928"
-let otomsortorder["Z-99"]="929"
-let otomsortorder["Z-100"]="930"
-let otomsortorder["Z-101"]="931"
-let otomsortorder["Z-102"]="932"
-let otomsortorder["Z-103"]="933"
-let otomsortorder["Z-104"]="934"
-let otomsortorder["Z-105"]="935"
-let otomsortorder["Z-106"]="936"
-let otomsortorder["Z-107"]="937"
-let otomsortorder["Z-108"]="938"
-let otomsortorder["Z-109"]="939"
-let otomsortorder["Z-110"]="940"
-let otomsortorder["Z-111"]="941"
-let otomsortorder["Z-112"]="942"
-let otomsortorder["Z-113"]="943"
-let otomsortorder["Z-114"]="944"
-let otomsortorder["Z-115"]="945"
-let otomsortorder["Z-116"]="946"
-let otomsortorder["Z-117"]="947"
-let otomsortorder["Cv-97"]="948"
-let otomsortorder["Cv-98"]="949"
-let otomsortorder["Cv-99"]="950"
-let otomsortorder["Cv-100"]="951"
-let otomsortorder["Cv-101"]="952"
-let otomsortorder["Cv-102"]="953"
-let otomsortorder["Cv-103"]="954"
-let otomsortorder["Cv-104"]="955"
-let otomsortorder["Cv-105"]="956"
-let otomsortorder["Cv-106"]="957"
-let otomsortorder["Cv-107"]="958"
-let otomsortorder["Cv-108"]="959"
-let otomsortorder["Cv-109"]="960"
-let otomsortorder["Cv-110"]="961"
-let otomsortorder["Cv-111"]="962"
-let otomsortorder["Cv-114"]="963"
-let otomsortorder["Cv-115"]="964"
-let otomsortorder["Cv-116"]="965"
-let otomsortorder["Cv-117"]="966"
-let otomsortorder["Cv-118"]="967"
-let otomsortorder["Vt-98"]="968"
-let otomsortorder["Vt-99"]="969"
-let otomsortorder["Vt-100"]="970"
-let otomsortorder["Vt-101"]="971"
-let otomsortorder["Vt-102"]="972"
-let otomsortorder["Vt-103"]="973"
-let otomsortorder["Vt-104"]="974"
-let otomsortorder["Vt-105"]="975"
-let otomsortorder["Vt-106"]="976"
-let otomsortorder["Vt-107"]="977"
-let otomsortorder["Vt-108"]="978"
-let otomsortorder["Vt-109"]="979"
-let otomsortorder["Vt-110"]="980"
-let otomsortorder["Vt-111"]="981"
-let otomsortorder["Vt-112"]="982"
-let otomsortorder["Vt-119"]="983"
-let otomsortorder["Vt-120"]="984"
-let otomsortorder["Vt-121"]="985"
-let otomsortorder["Vt-122"]="986"
-let otomsortorder["Ek-99"]="987"
-let otomsortorder["Ek-100"]="988"
-let otomsortorder["Ek-101"]="989"
-let otomsortorder["Ek-102"]="990"
-let otomsortorder["Ek-103"]="991"
-let otomsortorder["Ek-104"]="992"
-let otomsortorder["Ek-105"]="993"
-let otomsortorder["Ek-106"]="994"
-let otomsortorder["Ek-107"]="995"
-let otomsortorder["Ek-108"]="996"
-let otomsortorder["Ek-109"]="997"
-let otomsortorder["Ek-110"]="998"
-let otomsortorder["Ek-111"]="999"
-let otomsortorder["Ek-112"]="1000"
-let otomsortorder["Ek-113"]="1001"
-let otomsortorder["Ek-119"]="1002"
-let otomsortorder["Ek-120"]="1003"
-let otomsortorder["Ek-121"]="1004"
-let otomsortorder["Ek-122"]="1005"
-let otomsortorder["Ek-123"]="1006"
-let otomsortorder["Ji-103"]="1007"
-let otomsortorder["Ji-104"]="1008"
-let otomsortorder["Ji-105"]="1009"
-let otomsortorder["Ji-106"]="1010"
-let otomsortorder["Ji-107"]="1011"
-let otomsortorder["Ji-108"]="1012"
-let otomsortorder["Ji-109"]="1013"
-let otomsortorder["Ji-110"]="1014"
-let otomsortorder["Ji-111"]="1015"
-let otomsortorder["Ji-112"]="1016"
-let otomsortorder["Ji-113"]="1017"
-let otomsortorder["Ji-114"]="1018"
-let otomsortorder["Ji-121"]="1019"
-let otomsortorder["Ji-122"]="1020"
-let otomsortorder["Ji-123"]="1021"
-let otomsortorder["Ji-124"]="1022"
-let otomsortorder["Aw-104"]="1023"
-let otomsortorder["Aw-105"]="1024"
-let otomsortorder["Aw-106"]="1025"
-let otomsortorder["Aw-107"]="1026"
-let otomsortorder["Aw-108"]="1027"
-let otomsortorder["Aw-109"]="1028"
-let otomsortorder["Aw-110"]="1029"
-let otomsortorder["Aw-111"]="1030"
-let otomsortorder["Aw-112"]="1031"
-let otomsortorder["Aw-113"]="1032"
-let otomsortorder["Aw-114"]="1033"
-let otomsortorder["Aw-115"]="1034"
-let otomsortorder["Aw-124"]="1035"
-let otomsortorder["Aw-125"]="1036"
-let otomsortorder["Kn-106"]="1037"
-let otomsortorder["Kn-107"]="1038"
-let otomsortorder["Kn-108"]="1039"
-let otomsortorder["Kn-109"]="1040"
-let otomsortorder["Kn-110"]="1041"
-let otomsortorder["Kn-111"]="1042"
-let otomsortorder["Kn-112"]="1043"
-let otomsortorder["Kn-113"]="1044"
-let otomsortorder["Kn-114"]="1045"
-let otomsortorder["Kn-115"]="1046"
-let otomsortorder["Kn-116"]="1047"
-let otomsortorder["Ha-108"]="1048"
-let otomsortorder["Ha-109"]="1049"
-let otomsortorder["Ha-110"]="1050"
-let otomsortorder["Ha-111"]="1051"
-let otomsortorder["Ha-112"]="1052"
-let otomsortorder["Ha-113"]="1053"
-let otomsortorder["Ha-114"]="1054"
-let otomsortorder["Ha-115"]="1055"
-let otomsortorder["Ha-116"]="1056"
-let otomsortorder["Ha-117"]="1057"
-let otomsortorder["Ax-109"]="1058"
-let otomsortorder["Ax-110"]="1059"
-let otomsortorder["Ax-111"]="1060"
-let otomsortorder["I-113"]="1061"
-let otomsortorder["I-114"]="1062"
-let otomsortorder["I-115"]="1063"
-let otomsortorder["Jb-116"]="1064"
-let otomsortorder["Go-117"]="1065"
-let otomsortorder["Go-118"]="1066"
-let otomsortorder["X-119"]="1067"
-let otomsortorder["Eh-123"]="1068"
-let otomsortorder["Eh-124"]="1069"
-let otomsortorder["Ys-125"]="1070"
+let otomsortorder["P-20"]="370"
+let otomsortorder["P-21"]="371"
+let otomsortorder["P-22"]="372"
+let otomsortorder["P-23"]="373"
+let otomsortorder["P-24"]="374"
+let otomsortorder["P-25"]="375"
+let otomsortorder["P-26"]="376"
+let otomsortorder["Ro-22"]="377"
+let otomsortorder["Ro-23"]="378"
+let otomsortorder["Ro-24"]="379"
+let otomsortorder["Ro-25"]="380"
+let otomsortorder["Ro-26"]="381"
+let otomsortorder["Ro-27"]="382"
+let otomsortorder["Ro-28"]="383"
+let otomsortorder["Cl-24"]="384"
+let otomsortorder["Cl-25"]="385"
+let otomsortorder["Cl-26"]="386"
+let otomsortorder["Cl-27"]="387"
+let otomsortorder["Cl-28"]="388"
+let otomsortorder["Cl-29"]="389"
+let otomsortorder["Cl-30"]="390"
+let otomsortorder["Yu-26"]="391"
+let otomsortorder["Yu-27"]="392"
+let otomsortorder["Yu-28"]="393"
+let otomsortorder["Yu-29"]="394"
+let otomsortorder["Yu-30"]="395"
+let otomsortorder["Yu-31"]="396"
+let otomsortorder["Yu-32"]="397"
+let otomsortorder["Nd-27"]="398"
+let otomsortorder["Nd-28"]="399"
+let otomsortorder["Nd-29"]="400"
+let otomsortorder["Nd-30"]="401"
+let otomsortorder["Nd-31"]="402"
+let otomsortorder["Nd-32"]="403"
+let otomsortorder["Nd-33"]="404"
+let otomsortorder["Nd-34"]="405"
+let otomsortorder["K-29"]="406"
+let otomsortorder["K-30"]="407"
+let otomsortorder["K-31"]="408"
+let otomsortorder["K-32"]="409"
+let otomsortorder["K-33"]="410"
+let otomsortorder["K-34"]="411"
+let otomsortorder["K-35"]="412"
+let otomsortorder["K-36"]="413"
+let otomsortorder["K-37"]="414"
+let otomsortorder["Mt-31"]="415"
+let otomsortorder["Mt-32"]="416"
+let otomsortorder["Mt-33"]="417"
+let otomsortorder["Mt-34"]="418"
+let otomsortorder["Mt-35"]="419"
+let otomsortorder["Mt-36"]="420"
+let otomsortorder["Mt-37"]="421"
+let otomsortorder["Mt-38"]="422"
+let otomsortorder["Mt-39"]="423"
+let otomsortorder["Lu-34"]="424"
+let otomsortorder["Lu-35"]="425"
+let otomsortorder["Lu-36"]="426"
+let otomsortorder["Lu-37"]="427"
+let otomsortorder["Lu-38"]="428"
+let otomsortorder["Lu-39"]="429"
+let otomsortorder["Lu-40"]="430"
+let otomsortorder["Lu-41"]="431"
+let otomsortorder["Lu-42"]="432"
+let otomsortorder["Dx-35"]="433"
+let otomsortorder["Dx-36"]="434"
+let otomsortorder["Dx-37"]="435"
+let otomsortorder["Dx-38"]="436"
+let otomsortorder["Dx-39"]="437"
+let otomsortorder["Dx-40"]="438"
+let otomsortorder["Dx-41"]="439"
+let otomsortorder["Dx-42"]="440"
+let otomsortorder["Dx-43"]="441"
+let otomsortorder["Dx-44"]="442"
+let otomsortorder["Gd-37"]="443"
+let otomsortorder["Gd-38"]="444"
+let otomsortorder["Gd-39"]="445"
+let otomsortorder["Gd-40"]="446"
+let otomsortorder["Gd-41"]="447"
+let otomsortorder["Gd-42"]="448"
+let otomsortorder["Gd-43"]="449"
+let otomsortorder["Gd-44"]="450"
+let otomsortorder["Gd-45"]="451"
+let otomsortorder["Gd-46"]="452"
+let otomsortorder["V-39"]="453"
+let otomsortorder["V-40"]="454"
+let otomsortorder["V-41"]="455"
+let otomsortorder["V-42"]="456"
+let otomsortorder["V-43"]="457"
+let otomsortorder["V-44"]="458"
+let otomsortorder["V-45"]="459"
+let otomsortorder["V-46"]="460"
+let otomsortorder["V-47"]="461"
+let otomsortorder["V-48"]="462"
+let otomsortorder["Uq-41"]="463"
+let otomsortorder["Uq-42"]="464"
+let otomsortorder["Uq-43"]="465"
+let otomsortorder["Uq-44"]="466"
+let otomsortorder["Uq-45"]="467"
+let otomsortorder["Uq-46"]="468"
+let otomsortorder["Uq-47"]="469"
+let otomsortorder["Uq-48"]="470"
+let otomsortorder["Uq-49"]="471"
+let otomsortorder["Uq-50"]="472"
+let otomsortorder["Uq-51"]="473"
+let otomsortorder["Uq-52"]="474"
+let otomsortorder["Pb-43"]="475"
+let otomsortorder["Pb-44"]="476"
+let otomsortorder["Pb-45"]="477"
+let otomsortorder["Pb-46"]="478"
+let otomsortorder["Pb-47"]="479"
+let otomsortorder["Pb-48"]="480"
+let otomsortorder["Pb-49"]="481"
+let otomsortorder["Pb-50"]="482"
+let otomsortorder["Pb-51"]="483"
+let otomsortorder["Pb-52"]="484"
+let otomsortorder["Pb-53"]="485"
+let otomsortorder["Wy-45"]="486"
+let otomsortorder["Wy-46"]="487"
+let otomsortorder["Wy-47"]="488"
+let otomsortorder["Wy-48"]="489"
+let otomsortorder["Wy-49"]="490"
+let otomsortorder["Wy-50"]="491"
+let otomsortorder["Wy-51"]="492"
+let otomsortorder["Wy-52"]="493"
+let otomsortorder["Wy-53"]="494"
+let otomsortorder["Wy-54"]="495"
+let otomsortorder["Wy-55"]="496"
+let otomsortorder["Wy-56"]="497"
+let otomsortorder["L-46"]="498"
+let otomsortorder["L-47"]="499"
+let otomsortorder["L-48"]="500"
+let otomsortorder["L-49"]="501"
+let otomsortorder["L-50"]="502"
+let otomsortorder["L-51"]="503"
+let otomsortorder["L-52"]="504"
+let otomsortorder["L-53"]="505"
+let otomsortorder["L-54"]="506"
+let otomsortorder["L-55"]="507"
+let otomsortorder["L-56"]="508"
+let otomsortorder["L-57"]="509"
+let otomsortorder["L-58"]="510"
+let otomsortorder["Ux-48"]="511"
+let otomsortorder["Ux-49"]="512"
+let otomsortorder["Ux-50"]="513"
+let otomsortorder["Ux-51"]="514"
+let otomsortorder["Ux-52"]="515"
+let otomsortorder["Ux-53"]="516"
+let otomsortorder["Ux-54"]="517"
+let otomsortorder["Ux-55"]="518"
+let otomsortorder["Ux-56"]="519"
+let otomsortorder["Ux-57"]="520"
+let otomsortorder["Ux-58"]="521"
+let otomsortorder["Ux-59"]="522"
+let otomsortorder["Ux-60"]="523"
+let otomsortorder["Pg-50"]="524"
+let otomsortorder["Pg-51"]="525"
+let otomsortorder["Pg-52"]="526"
+let otomsortorder["Pg-53"]="527"
+let otomsortorder["Pg-54"]="528"
+let otomsortorder["Pg-55"]="529"
+let otomsortorder["Pg-56"]="530"
+let otomsortorder["Pg-57"]="531"
+let otomsortorder["Pg-58"]="532"
+let otomsortorder["Pg-59"]="533"
+let otomsortorder["Pg-60"]="534"
+let otomsortorder["Pg-61"]="535"
+let otomsortorder["Pg-62"]="536"
+let otomsortorder["Qe-52"]="537"
+let otomsortorder["Qe-53"]="538"
+let otomsortorder["Qe-54"]="539"
+let otomsortorder["Qe-55"]="540"
+let otomsortorder["Qe-56"]="541"
+let otomsortorder["Qe-57"]="542"
+let otomsortorder["Qe-58"]="543"
+let otomsortorder["Qe-59"]="544"
+let otomsortorder["Qe-60"]="545"
+let otomsortorder["Qe-61"]="546"
+let otomsortorder["Qe-62"]="547"
+let otomsortorder["Qe-63"]="548"
+let otomsortorder["Qe-64"]="549"
+let otomsortorder["C-53"]="550"
+let otomsortorder["C-54"]="551"
+let otomsortorder["C-55"]="552"
+let otomsortorder["C-56"]="553"
+let otomsortorder["C-57"]="554"
+let otomsortorder["C-58"]="555"
+let otomsortorder["C-59"]="556"
+let otomsortorder["C-60"]="557"
+let otomsortorder["C-61"]="558"
+let otomsortorder["C-62"]="559"
+let otomsortorder["C-63"]="560"
+let otomsortorder["C-64"]="561"
+let otomsortorder["C-65"]="562"
+let otomsortorder["C-66"]="563"
+let otomsortorder["C-67"]="564"
+let otomsortorder["Ns-56"]="565"
+let otomsortorder["Ns-57"]="566"
+let otomsortorder["Ns-58"]="567"
+let otomsortorder["Ns-59"]="568"
+let otomsortorder["Ns-60"]="569"
+let otomsortorder["Ns-61"]="570"
+let otomsortorder["Ns-62"]="571"
+let otomsortorder["Ns-63"]="572"
+let otomsortorder["Ns-64"]="573"
+let otomsortorder["Ns-65"]="574"
+let otomsortorder["Ns-66"]="575"
+let otomsortorder["Ns-67"]="576"
+let otomsortorder["Ns-68"]="577"
+let otomsortorder["Ns-69"]="578"
+let otomsortorder["Ai-58"]="579"
+let otomsortorder["Ai-59"]="580"
+let otomsortorder["Ai-60"]="581"
+let otomsortorder["Ai-61"]="582"
+let otomsortorder["Ai-62"]="583"
+let otomsortorder["Ai-63"]="584"
+let otomsortorder["Ai-64"]="585"
+let otomsortorder["Ai-65"]="586"
+let otomsortorder["Ai-66"]="587"
+let otomsortorder["Ai-67"]="588"
+let otomsortorder["Ai-68"]="589"
+let otomsortorder["Ai-69"]="590"
+let otomsortorder["Ai-70"]="591"
+let otomsortorder["Ai-71"]="592"
+let otomsortorder["F-59"]="593"
+let otomsortorder["F-60"]="594"
+let otomsortorder["F-61"]="595"
+let otomsortorder["F-62"]="596"
+let otomsortorder["F-63"]="597"
+let otomsortorder["F-64"]="598"
+let otomsortorder["F-65"]="599"
+let otomsortorder["F-66"]="600"
+let otomsortorder["F-67"]="601"
+let otomsortorder["F-68"]="602"
+let otomsortorder["F-69"]="603"
+let otomsortorder["F-70"]="604"
+let otomsortorder["F-71"]="605"
+let otomsortorder["F-72"]="606"
+let otomsortorder["F-73"]="607"
+let otomsortorder["Gy-62"]="608"
+let otomsortorder["Gy-63"]="609"
+let otomsortorder["Gy-64"]="610"
+let otomsortorder["Gy-65"]="611"
+let otomsortorder["Gy-66"]="612"
+let otomsortorder["Gy-67"]="613"
+let otomsortorder["Gy-68"]="614"
+let otomsortorder["Gy-69"]="615"
+let otomsortorder["Gy-70"]="616"
+let otomsortorder["Gy-71"]="617"
+let otomsortorder["Gy-72"]="618"
+let otomsortorder["Gy-73"]="619"
+let otomsortorder["Gy-74"]="620"
+let otomsortorder["Gy-75"]="621"
+let otomsortorder["Kk-63"]="622"
+let otomsortorder["Kk-64"]="623"
+let otomsortorder["Kk-65"]="624"
+let otomsortorder["Kk-66"]="625"
+let otomsortorder["Kk-67"]="626"
+let otomsortorder["Kk-68"]="627"
+let otomsortorder["Kk-69"]="628"
+let otomsortorder["Kk-70"]="629"
+let otomsortorder["Kk-71"]="630"
+let otomsortorder["Kk-72"]="631"
+let otomsortorder["Kk-73"]="632"
+let otomsortorder["Kk-74"]="633"
+let otomsortorder["Kk-75"]="634"
+let otomsortorder["Kk-76"]="635"
+let otomsortorder["Kk-77"]="636"
+let otomsortorder["Kk-78"]="637"
+let otomsortorder["Yv-66"]="638"
+let otomsortorder["Yv-67"]="639"
+let otomsortorder["Yv-68"]="640"
+let otomsortorder["Yv-69"]="641"
+let otomsortorder["Yv-70"]="642"
+let otomsortorder["Yv-71"]="643"
+let otomsortorder["Yv-72"]="644"
+let otomsortorder["Yv-73"]="645"
+let otomsortorder["Yv-74"]="646"
+let otomsortorder["Yv-75"]="647"
+let otomsortorder["Yv-76"]="648"
+let otomsortorder["Yv-77"]="649"
+let otomsortorder["Yv-78"]="650"
+let otomsortorder["Yv-79"]="651"
+let otomsortorder["Yv-80"]="652"
+let otomsortorder["Cj-67"]="653"
+let otomsortorder["Cj-68"]="654"
+let otomsortorder["Cj-69"]="655"
+let otomsortorder["Cj-70"]="656"
+let otomsortorder["Cj-71"]="657"
+let otomsortorder["Cj-72"]="658"
+let otomsortorder["Cj-73"]="659"
+let otomsortorder["Cj-74"]="660"
+let otomsortorder["Cj-75"]="661"
+let otomsortorder["Cj-76"]="662"
+let otomsortorder["Cj-77"]="663"
+let otomsortorder["Cj-78"]="664"
+let otomsortorder["Cj-79"]="665"
+let otomsortorder["Cj-80"]="666"
+let otomsortorder["Cj-81"]="667"
+let otomsortorder["Cj-82"]="668"
+let otomsortorder["Iu-70"]="669"
+let otomsortorder["Iu-71"]="670"
+let otomsortorder["Iu-72"]="671"
+let otomsortorder["Iu-73"]="672"
+let otomsortorder["Iu-74"]="673"
+let otomsortorder["Iu-75"]="674"
+let otomsortorder["Iu-76"]="675"
+let otomsortorder["Iu-77"]="676"
+let otomsortorder["Iu-78"]="677"
+let otomsortorder["Iu-79"]="678"
+let otomsortorder["Iu-80"]="679"
+let otomsortorder["Iu-81"]="680"
+let otomsortorder["Iu-82"]="681"
+let otomsortorder["Iu-83"]="682"
+let otomsortorder["Iu-84"]="683"
+let otomsortorder["D-73"]="684"
+let otomsortorder["D-74"]="685"
+let otomsortorder["D-75"]="686"
+let otomsortorder["D-76"]="687"
+let otomsortorder["D-77"]="688"
+let otomsortorder["D-78"]="689"
+let otomsortorder["D-79"]="690"
+let otomsortorder["D-80"]="691"
+let otomsortorder["D-81"]="692"
+let otomsortorder["D-82"]="693"
+let otomsortorder["D-83"]="694"
+let otomsortorder["D-84"]="695"
+let otomsortorder["D-85"]="696"
+let otomsortorder["D-86"]="697"
+let otomsortorder["Co-73"]="698"
+let otomsortorder["Co-74"]="699"
+let otomsortorder["Co-75"]="700"
+let otomsortorder["Co-76"]="701"
+let otomsortorder["Co-78"]="702"
+let otomsortorder["Co-79"]="703"
+let otomsortorder["Co-80"]="704"
+let otomsortorder["Co-81"]="705"
+let otomsortorder["Co-82"]="706"
+let otomsortorder["Co-83"]="707"
+let otomsortorder["Co-84"]="708"
+let otomsortorder["Co-85"]="709"
+let otomsortorder["Co-86"]="710"
+let otomsortorder["Co-87"]="711"
+let otomsortorder["Co-88"]="712"
+let otomsortorder["Co-89"]="713"
+let otomsortorder["W-75"]="714"
+let otomsortorder["W-76"]="715"
+let otomsortorder["W-77"]="716"
+let otomsortorder["W-78"]="717"
+let otomsortorder["W-79"]="718"
+let otomsortorder["W-80"]="719"
+let otomsortorder["W-81"]="720"
+let otomsortorder["W-82"]="721"
+let otomsortorder["W-83"]="722"
+let otomsortorder["W-84"]="723"
+let otomsortorder["W-85"]="724"
+let otomsortorder["W-86"]="725"
+let otomsortorder["W-87"]="726"
+let otomsortorder["W-88"]="727"
+let otomsortorder["W-89"]="728"
+let otomsortorder["W-90"]="729"
+let otomsortorder["W-91"]="730"
+let otomsortorder["Lx-76"]="731"
+let otomsortorder["Lx-77"]="732"
+let otomsortorder["Lx-78"]="733"
+let otomsortorder["Lx-79"]="734"
+let otomsortorder["Lx-80"]="735"
+let otomsortorder["Lx-81"]="736"
+let otomsortorder["Lx-82"]="737"
+let otomsortorder["Lx-83"]="738"
+let otomsortorder["Lx-84"]="739"
+let otomsortorder["Lx-85"]="740"
+let otomsortorder["Lx-86"]="741"
+let otomsortorder["Lx-87"]="742"
+let otomsortorder["Lx-88"]="743"
+let otomsortorder["Lx-89"]="744"
+let otomsortorder["Lx-90"]="745"
+let otomsortorder["Lx-91"]="746"
+let otomsortorder["Lx-92"]="747"
+let otomsortorder["Lx-93"]="748"
+let otomsortorder["Lx-94"]="749"
+let otomsortorder["Lx-95"]="750"
+let otomsortorder["Lx-96"]="751"
+let otomsortorder["N-79"]="752"
+let otomsortorder["N-80"]="753"
+let otomsortorder["N-81"]="754"
+let otomsortorder["N-82"]="755"
+let otomsortorder["N-83"]="756"
+let otomsortorder["N-84"]="757"
+let otomsortorder["N-85"]="758"
+let otomsortorder["N-86"]="759"
+let otomsortorder["N-87"]="760"
+let otomsortorder["N-88"]="761"
+let otomsortorder["N-89"]="762"
+let otomsortorder["N-90"]="763"
+let otomsortorder["N-91"]="764"
+let otomsortorder["N-92"]="765"
+let otomsortorder["N-93"]="766"
+let otomsortorder["N-94"]="767"
+let otomsortorder["N-95"]="768"
+let otomsortorder["N-96"]="769"
+let otomsortorder["U-80"]="770"
+let otomsortorder["U-81"]="771"
+let otomsortorder["U-82"]="772"
+let otomsortorder["U-83"]="773"
+let otomsortorder["U-84"]="774"
+let otomsortorder["U-85"]="775"
+let otomsortorder["U-86"]="776"
+let otomsortorder["U-87"]="777"
+let otomsortorder["U-88"]="778"
+let otomsortorder["U-89"]="779"
+let otomsortorder["U-90"]="780"
+let otomsortorder["U-91"]="781"
+let otomsortorder["U-92"]="782"
+let otomsortorder["U-93"]="783"
+let otomsortorder["U-94"]="784"
+let otomsortorder["U-95"]="785"
+let otomsortorder["U-96"]="786"
+let otomsortorder["U-97"]="787"
+let otomsortorder["U-98"]="788"
+let otomsortorder["U-99"]="789"
+let otomsortorder["Vl-82"]="790"
+let otomsortorder["Vl-83"]="791"
+let otomsortorder["Vl-84"]="792"
+let otomsortorder["Vl-85"]="793"
+let otomsortorder["Vl-86"]="794"
+let otomsortorder["Vl-87"]="795"
+let otomsortorder["Vl-88"]="796"
+let otomsortorder["Vl-89"]="797"
+let otomsortorder["Vl-90"]="798"
+let otomsortorder["Vl-91"]="799"
+let otomsortorder["Vl-92"]="800"
+let otomsortorder["Vl-93"]="801"
+let otomsortorder["Vl-94"]="802"
+let otomsortorder["Vl-95"]="803"
+let otomsortorder["Vl-96"]="804"
+let otomsortorder["Vl-97"]="805"
+let otomsortorder["Vl-98"]="806"
+let otomsortorder["Vl-99"]="807"
+let otomsortorder["Vl-100"]="808"
+let otomsortorder["Vl-101"]="809"
+let otomsortorder["Se-84"]="810"
+let otomsortorder["Se-85"]="811"
+let otomsortorder["Se-86"]="812"
+let otomsortorder["Se-87"]="813"
+let otomsortorder["Se-88"]="814"
+let otomsortorder["Se-89"]="815"
+let otomsortorder["Se-90"]="816"
+let otomsortorder["Se-91"]="817"
+let otomsortorder["Se-92"]="818"
+let otomsortorder["Se-93"]="819"
+let otomsortorder["Se-94"]="820"
+let otomsortorder["Se-95"]="821"
+let otomsortorder["Se-96"]="822"
+let otomsortorder["Se-97"]="823"
+let otomsortorder["Se-98"]="824"
+let otomsortorder["Se-99"]="825"
+let otomsortorder["Se-100"]="826"
+let otomsortorder["Se-101"]="827"
+let otomsortorder["Se-102"]="828"
+let otomsortorder["Se-103"]="829"
+let otomsortorder["Se-104"]="830"
+let otomsortorder["Nm-86"]="831"
+let otomsortorder["Nm-87"]="832"
+let otomsortorder["Nm-88"]="833"
+let otomsortorder["Nm-89"]="834"
+let otomsortorder["Nm-90"]="835"
+let otomsortorder["Nm-91"]="836"
+let otomsortorder["Nm-92"]="837"
+let otomsortorder["Nm-93"]="838"
+let otomsortorder["Nm-94"]="839"
+let otomsortorder["Nm-95"]="840"
+let otomsortorder["Nm-96"]="841"
+let otomsortorder["Nm-97"]="842"
+let otomsortorder["Nm-98"]="843"
+let otomsortorder["Nm-99"]="844"
+let otomsortorder["Nm-100"]="845"
+let otomsortorder["Nm-101"]="846"
+let otomsortorder["Nm-102"]="847"
+let otomsortorder["Nm-103"]="848"
+let otomsortorder["Nm-104"]="849"
+let otomsortorder["Nm-105"]="850"
+let otomsortorder["Nm-106"]="851"
+let otomsortorder["Dd-88"]="852"
+let otomsortorder["Dd-89"]="853"
+let otomsortorder["Dd-90"]="854"
+let otomsortorder["Dd-91"]="855"
+let otomsortorder["Dd-92"]="856"
+let otomsortorder["Dd-93"]="857"
+let otomsortorder["Dd-94"]="858"
+let otomsortorder["Dd-95"]="859"
+let otomsortorder["Dd-96"]="860"
+let otomsortorder["Dd-97"]="861"
+let otomsortorder["Dd-98"]="862"
+let otomsortorder["Dd-99"]="863"
+let otomsortorder["Dd-100"]="864"
+let otomsortorder["Dd-101"]="865"
+let otomsortorder["Dd-102"]="866"
+let otomsortorder["Dd-103"]="867"
+let otomsortorder["Dd-104"]="868"
+let otomsortorder["Dd-105"]="869"
+let otomsortorder["Dd-106"]="870"
+let otomsortorder["Dd-107"]="871"
+let otomsortorder["Dd-108"]="872"
+let otomsortorder["Ok-89"]="873"
+let otomsortorder["Ok-90"]="874"
+let otomsortorder["Ok-91"]="875"
+let otomsortorder["Ok-92"]="876"
+let otomsortorder["Ok-93"]="877"
+let otomsortorder["Ok-94"]="878"
+let otomsortorder["Ok-95"]="879"
+let otomsortorder["Ok-96"]="880"
+let otomsortorder["Ok-97"]="881"
+let otomsortorder["Ok-98"]="882"
+let otomsortorder["Ok-99"]="883"
+let otomsortorder["Ok-100"]="884"
+let otomsortorder["Ok-101"]="885"
+let otomsortorder["Ok-102"]="886"
+let otomsortorder["Ok-103"]="887"
+let otomsortorder["Ok-104"]="888"
+let otomsortorder["Ok-105"]="889"
+let otomsortorder["Ok-106"]="890"
+let otomsortorder["Ok-107"]="891"
+let otomsortorder["Ok-108"]="892"
+let otomsortorder["Ok-109"]="893"
+let otomsortorder["Ok-110"]="894"
+let otomsortorder["Ok-111"]="895"
+let otomsortorder["Da-90"]="896"
+let otomsortorder["Da-91"]="897"
+let otomsortorder["Da-92"]="898"
+let otomsortorder["Da-93"]="899"
+let otomsortorder["Da-94"]="900"
+let otomsortorder["Da-95"]="901"
+let otomsortorder["Da-96"]="902"
+let otomsortorder["Da-97"]="903"
+let otomsortorder["Da-98"]="904"
+let otomsortorder["Da-99"]="905"
+let otomsortorder["Da-100"]="906"
+let otomsortorder["Da-101"]="907"
+let otomsortorder["Da-102"]="908"
+let otomsortorder["Da-103"]="909"
+let otomsortorder["Da-104"]="910"
+let otomsortorder["Da-105"]="911"
+let otomsortorder["Da-106"]="912"
+let otomsortorder["Da-107"]="913"
+let otomsortorder["Da-108"]="914"
+let otomsortorder["Da-109"]="915"
+let otomsortorder["Da-110"]="916"
+let otomsortorder["Da-111"]="917"
+let otomsortorder["Da-112"]="918"
+let otomsortorder["Da-113"]="919"
+let otomsortorder["S-94"]="920"
+let otomsortorder["S-95"]="921"
+let otomsortorder["S-96"]="922"
+let otomsortorder["S-97"]="923"
+let otomsortorder["S-98"]="924"
+let otomsortorder["S-99"]="925"
+let otomsortorder["S-100"]="926"
+let otomsortorder["S-101"]="927"
+let otomsortorder["S-102"]="928"
+let otomsortorder["S-103"]="929"
+let otomsortorder["S-104"]="930"
+let otomsortorder["S-105"]="931"
+let otomsortorder["S-106"]="932"
+let otomsortorder["S-107"]="933"
+let otomsortorder["S-108"]="934"
+let otomsortorder["S-109"]="935"
+let otomsortorder["S-112"]="936"
+let otomsortorder["S-113"]="937"
+let otomsortorder["S-114"]="938"
+let otomsortorder["S-115"]="939"
+let otomsortorder["Z-95"]="940"
+let otomsortorder["Z-96"]="941"
+let otomsortorder["Z-97"]="942"
+let otomsortorder["Z-98"]="943"
+let otomsortorder["Z-99"]="944"
+let otomsortorder["Z-100"]="945"
+let otomsortorder["Z-101"]="946"
+let otomsortorder["Z-102"]="947"
+let otomsortorder["Z-103"]="948"
+let otomsortorder["Z-104"]="949"
+let otomsortorder["Z-105"]="950"
+let otomsortorder["Z-106"]="951"
+let otomsortorder["Z-107"]="952"
+let otomsortorder["Z-108"]="953"
+let otomsortorder["Z-109"]="954"
+let otomsortorder["Z-110"]="955"
+let otomsortorder["Z-111"]="956"
+let otomsortorder["Z-112"]="957"
+let otomsortorder["Z-113"]="958"
+let otomsortorder["Z-114"]="959"
+let otomsortorder["Z-115"]="960"
+let otomsortorder["Z-116"]="961"
+let otomsortorder["Z-117"]="962"
+let otomsortorder["Cv-97"]="963"
+let otomsortorder["Cv-98"]="964"
+let otomsortorder["Cv-99"]="965"
+let otomsortorder["Cv-100"]="966"
+let otomsortorder["Cv-101"]="967"
+let otomsortorder["Cv-102"]="968"
+let otomsortorder["Cv-103"]="969"
+let otomsortorder["Cv-104"]="970"
+let otomsortorder["Cv-105"]="971"
+let otomsortorder["Cv-106"]="972"
+let otomsortorder["Cv-107"]="973"
+let otomsortorder["Cv-108"]="974"
+let otomsortorder["Cv-109"]="975"
+let otomsortorder["Cv-110"]="976"
+let otomsortorder["Cv-111"]="977"
+let otomsortorder["Cv-114"]="978"
+let otomsortorder["Cv-115"]="979"
+let otomsortorder["Cv-116"]="980"
+let otomsortorder["Cv-117"]="981"
+let otomsortorder["Cv-118"]="982"
+let otomsortorder["Cv-119"]="983"
+let otomsortorder["Vt-98"]="984"
+let otomsortorder["Vt-99"]="985"
+let otomsortorder["Vt-100"]="986"
+let otomsortorder["Vt-101"]="987"
+let otomsortorder["Vt-102"]="988"
+let otomsortorder["Vt-103"]="989"
+let otomsortorder["Vt-104"]="990"
+let otomsortorder["Vt-105"]="991"
+let otomsortorder["Vt-106"]="992"
+let otomsortorder["Vt-107"]="993"
+let otomsortorder["Vt-108"]="994"
+let otomsortorder["Vt-109"]="995"
+let otomsortorder["Vt-110"]="996"
+let otomsortorder["Vt-111"]="997"
+let otomsortorder["Vt-112"]="998"
+let otomsortorder["Vt-119"]="999"
+let otomsortorder["Vt-120"]="1000"
+let otomsortorder["Vt-121"]="1001"
+let otomsortorder["Vt-122"]="1002"
+let otomsortorder["Ek-99"]="1003"
+let otomsortorder["Ek-100"]="1004"
+let otomsortorder["Ek-101"]="1005"
+let otomsortorder["Ek-102"]="1006"
+let otomsortorder["Ek-103"]="1007"
+let otomsortorder["Ek-104"]="1008"
+let otomsortorder["Ek-105"]="1009"
+let otomsortorder["Ek-106"]="1010"
+let otomsortorder["Ek-107"]="1011"
+let otomsortorder["Ek-108"]="1012"
+let otomsortorder["Ek-109"]="1013"
+let otomsortorder["Ek-110"]="1014"
+let otomsortorder["Ek-111"]="1015"
+let otomsortorder["Ek-112"]="1016"
+let otomsortorder["Ek-113"]="1017"
+let otomsortorder["Ek-119"]="1018"
+let otomsortorder["Ek-120"]="1019"
+let otomsortorder["Ek-121"]="1020"
+let otomsortorder["Ek-122"]="1021"
+let otomsortorder["Ek-123"]="1022"
+let otomsortorder["Ji-103"]="1023"
+let otomsortorder["Ji-104"]="1024"
+let otomsortorder["Ji-105"]="1025"
+let otomsortorder["Ji-106"]="1026"
+let otomsortorder["Ji-107"]="1027"
+let otomsortorder["Ji-108"]="1028"
+let otomsortorder["Ji-109"]="1029"
+let otomsortorder["Ji-110"]="1030"
+let otomsortorder["Ji-111"]="1031"
+let otomsortorder["Ji-112"]="1032"
+let otomsortorder["Ji-113"]="1033"
+let otomsortorder["Ji-114"]="1034"
+let otomsortorder["Ji-121"]="1035"
+let otomsortorder["Ji-122"]="1036"
+let otomsortorder["Ji-123"]="1037"
+let otomsortorder["Ji-124"]="1038"
+let otomsortorder["Aw-104"]="1039"
+let otomsortorder["Aw-105"]="1040"
+let otomsortorder["Aw-106"]="1041"
+let otomsortorder["Aw-107"]="1042"
+let otomsortorder["Aw-108"]="1043"
+let otomsortorder["Aw-109"]="1044"
+let otomsortorder["Aw-110"]="1045"
+let otomsortorder["Aw-111"]="1046"
+let otomsortorder["Aw-112"]="1047"
+let otomsortorder["Aw-113"]="1048"
+let otomsortorder["Aw-114"]="1049"
+let otomsortorder["Aw-115"]="1050"
+let otomsortorder["Aw-124"]="1051"
+let otomsortorder["Aw-125"]="1052"
+let otomsortorder["Kn-106"]="1053"
+let otomsortorder["Kn-107"]="1054"
+let otomsortorder["Kn-108"]="1055"
+let otomsortorder["Kn-109"]="1056"
+let otomsortorder["Kn-110"]="1057"
+let otomsortorder["Kn-111"]="1058"
+let otomsortorder["Kn-112"]="1059"
+let otomsortorder["Kn-113"]="1060"
+let otomsortorder["Kn-114"]="1061"
+let otomsortorder["Kn-115"]="1062"
+let otomsortorder["Kn-116"]="1063"
+let otomsortorder["Ha-108"]="1064"
+let otomsortorder["Ha-109"]="1065"
+let otomsortorder["Ha-110"]="1066"
+let otomsortorder["Ha-111"]="1067"
+let otomsortorder["Ha-112"]="1068"
+let otomsortorder["Ha-113"]="1069"
+let otomsortorder["Ha-114"]="1070"
+let otomsortorder["Ha-115"]="1071"
+let otomsortorder["Ha-116"]="1072"
+let otomsortorder["Ha-117"]="1073"
+let otomsortorder["Ax-109"]="1074"
+let otomsortorder["Ax-110"]="1075"
+let otomsortorder["Ax-111"]="1076"
+let otomsortorder["I-113"]="1077"
+let otomsortorder["I-114"]="1078"
+let otomsortorder["I-115"]="1079"
+let otomsortorder["Jb-116"]="1080"
+let otomsortorder["Go-117"]="1081"
+let otomsortorder["Go-118"]="1082"
+let otomsortorder["X-119"]="1083"
+let otomsortorder["Eh-123"]="1084"
+let otomsortorder["Eh-124"]="1085"
+let otomsortorder["Ys-125"]="1086"
 
 let decaydict["1  1 Ju"]=decay_text_stable          | let decaydict["Ju-1"]=decay_text_stable
 let decaydict["2  1 Ju"]=decay_text_stable          | let decaydict["Ju-2"]=decay_text_stable
@@ -13434,6 +13626,7 @@ let decaydict["20 10 Eb"]=decay_text_stable          | let decaydict["Eb-20"]=de
 let decaydict["21 10 Eb"]=decay_text_stable          | let decaydict["Eb-21"]=decay_text_stable
 let decaydict["22 10 Eb"]=decay_text_stable          | let decaydict["Eb-22"]=decay_text_stable
 let decaydict["23 10 Eb"]=decay_text_beta_minus      | let decaydict["Eb-23"]=decay_text_beta_minus
+let decaydict["20 11  P"]=decay_text_beta_plus       | let decaydict["P-20"]=decay_text_beta_plus
 let decaydict["21 11  P"]=decay_text_beta_plus       | let decaydict["P-21"]=decay_text_beta_plus
 let decaydict["22 11  P"]=decay_text_beta_plus       | let decaydict["P-22"]=decay_text_beta_plus
 let decaydict["23 11  P"]=decay_text_stable          | let decaydict["P-23"]=decay_text_stable
@@ -13478,6 +13671,7 @@ let decaydict["34 16  K"]=decay_text_stable          | let decaydict["K-34"]=dec
 let decaydict["35 16  K"]=decay_text_beta_minus      | let decaydict["K-35"]=decay_text_beta_minus
 let decaydict["36 16  K"]=decay_text_beta_minus      | let decaydict["K-36"]=decay_text_beta_minus
 let decaydict["37 16  K"]=decay_text_beta_minus      | let decaydict["K-37"]=decay_text_beta_minus
+let decaydict["31 17 Mt"]=decay_text_beta_plus       | let decaydict["Mt-31"]=decay_text_beta_plus
 let decaydict["32 17 Mt"]=decay_text_beta_plus       | let decaydict["Mt-32"]=decay_text_beta_plus
 let decaydict["33 17 Mt"]=decay_text_beta_plus       | let decaydict["Mt-33"]=decay_text_beta_plus
 let decaydict["34 17 Mt"]=decay_text_beta_plus       | let decaydict["Mt-34"]=decay_text_beta_plus
@@ -13494,6 +13688,7 @@ let decaydict["38 18 Lu"]=decay_text_stable          | let decaydict["Lu-38"]=de
 let decaydict["39 18 Lu"]=decay_text_beta_minus      | let decaydict["Lu-39"]=decay_text_beta_minus
 let decaydict["40 18 Lu"]=decay_text_beta_minus      | let decaydict["Lu-40"]=decay_text_beta_minus
 let decaydict["41 18 Lu"]=decay_text_beta_minus      | let decaydict["Lu-41"]=decay_text_beta_minus
+let decaydict["42 18 Lu"]=decay_text_beta_minus      | let decaydict["Lu-42"]=decay_text_beta_minus
 let decaydict["35 19 Dx"]=decay_text_beta_plus       | let decaydict["Dx-35"]=decay_text_beta_plus
 let decaydict["36 19 Dx"]=decay_text_beta_plus       | let decaydict["Dx-36"]=decay_text_beta_plus
 let decaydict["37 19 Dx"]=decay_text_beta_plus       | let decaydict["Dx-37"]=decay_text_beta_plus
@@ -13504,6 +13699,7 @@ let decaydict["41 19 Dx"]=decay_text_beta_minus      | let decaydict["Dx-41"]=de
 let decaydict["42 19 Dx"]=decay_text_beta_minus      | let decaydict["Dx-42"]=decay_text_beta_minus
 let decaydict["43 19 Dx"]=decay_text_beta_minus      | let decaydict["Dx-43"]=decay_text_beta_minus
 let decaydict["44 19 Dx"]=decay_text_beta_minus      | let decaydict["Dx-44"]=decay_text_beta_minus
+let decaydict["37 20 Gd"]=decay_text_beta_plus       | let decaydict["Gd-37"]=decay_text_beta_plus
 let decaydict["38 20 Gd"]=decay_text_beta_plus       | let decaydict["Gd-38"]=decay_text_beta_plus
 let decaydict["39 20 Gd"]=decay_text_beta_plus       | let decaydict["Gd-39"]=decay_text_beta_plus
 let decaydict["40 20 Gd"]=decay_text_stable          | let decaydict["Gd-40"]=decay_text_stable
@@ -13596,6 +13792,7 @@ let decaydict["58 27 Pg"]=decay_text_beta_minus      | let decaydict["Pg-58"]=de
 let decaydict["59 27 Pg"]=decay_text_beta_minus      | let decaydict["Pg-59"]=decay_text_beta_minus
 let decaydict["60 27 Pg"]=decay_text_beta_minus      | let decaydict["Pg-60"]=decay_text_beta_minus
 let decaydict["61 27 Pg"]=decay_text_beta_minus      | let decaydict["Pg-61"]=decay_text_beta_minus
+let decaydict["62 27 Pg"]=decay_text_beta_minus      | let decaydict["Pg-62"]=decay_text_beta_minus
 let decaydict["52 28 Qe"]=decay_text_beta_plus       | let decaydict["Qe-52"]=decay_text_beta_plus
 let decaydict["53 28 Qe"]=decay_text_beta_plus       | let decaydict["Qe-53"]=decay_text_beta_plus
 let decaydict["54 28 Qe"]=decay_text_beta_plus       | let decaydict["Qe-54"]=decay_text_beta_plus
@@ -13623,6 +13820,7 @@ let decaydict["63 29  C"]=decay_text_stable          | let decaydict["C-63"]=dec
 let decaydict["64 29  C"]=decay_text_beta_minus      | let decaydict["C-64"]=decay_text_beta_minus
 let decaydict["65 29  C"]=decay_text_beta_minus      | let decaydict["C-65"]=decay_text_beta_minus
 let decaydict["66 29  C"]=decay_text_beta_minus      | let decaydict["C-66"]=decay_text_beta_minus
+let decaydict["67 29  C"]=decay_text_beta_minus      | let decaydict["C-67"]=decay_text_beta_minus
 let decaydict["56 30 Ns"]=decay_text_beta_plus       | let decaydict["Ns-56"]=decay_text_beta_plus
 let decaydict["57 30 Ns"]=decay_text_beta_plus       | let decaydict["Ns-57"]=decay_text_beta_plus
 let decaydict["58 30 Ns"]=decay_text_beta_plus       | let decaydict["Ns-58"]=decay_text_beta_plus
@@ -13650,6 +13848,7 @@ let decaydict["67 31 Ai"]=decay_text_beta_minus      | let decaydict["Ai-67"]=de
 let decaydict["68 31 Ai"]=decay_text_beta_minus      | let decaydict["Ai-68"]=decay_text_beta_minus
 let decaydict["69 31 Ai"]=decay_text_beta_minus      | let decaydict["Ai-69"]=decay_text_beta_minus
 let decaydict["70 31 Ai"]=decay_text_beta_minus      | let decaydict["Ai-70"]=decay_text_beta_minus
+let decaydict["71 31 Ai"]=decay_text_beta_minus      | let decaydict["Ai-71"]=decay_text_beta_minus
 let decaydict["59 32  F"]=decay_text_beta_plus       | let decaydict["F-59"]=decay_text_beta_plus
 let decaydict["60 32  F"]=decay_text_beta_plus       | let decaydict["F-60"]=decay_text_beta_plus
 let decaydict["61 32  F"]=decay_text_beta_plus       | let decaydict["F-61"]=decay_text_beta_plus
@@ -13694,6 +13893,7 @@ let decaydict["74 34 Kk"]=decay_text_stable          | let decaydict["Kk-74"]=de
 let decaydict["75 34 Kk"]=decay_text_stable          | let decaydict["Kk-75"]=decay_text_stable
 let decaydict["76 34 Kk"]=decay_text_beta_minus      | let decaydict["Kk-76"]=decay_text_beta_minus
 let decaydict["77 34 Kk"]=decay_text_beta_minus      | let decaydict["Kk-77"]=decay_text_beta_minus
+let decaydict["78 34 Kk"]=decay_text_beta_minus      | let decaydict["Kk-78"]=decay_text_beta_minus
 let decaydict["66 35 Yv"]=decay_text_beta_plus       | let decaydict["Yv-66"]=decay_text_beta_plus
 let decaydict["67 35 Yv"]=decay_text_beta_plus       | let decaydict["Yv-67"]=decay_text_beta_plus
 let decaydict["68 35 Yv"]=decay_text_beta_plus       | let decaydict["Yv-68"]=decay_text_beta_plus
@@ -13709,6 +13909,7 @@ let decaydict["77 35 Yv"]=decay_text_beta_minus      | let decaydict["Yv-77"]=de
 let decaydict["78 35 Yv"]=decay_text_beta_minus      | let decaydict["Yv-78"]=decay_text_beta_minus
 let decaydict["79 35 Yv"]=decay_text_beta_minus      | let decaydict["Yv-79"]=decay_text_beta_minus
 let decaydict["80 35 Yv"]=decay_text_beta_minus      | let decaydict["Yv-80"]=decay_text_beta_minus
+let decaydict["67 36 Cj"]=decay_text_beta_plus       | let decaydict["Cj-67"]=decay_text_beta_plus
 let decaydict["68 36 Cj"]=decay_text_beta_plus       | let decaydict["Cj-68"]=decay_text_beta_plus
 let decaydict["69 36 Cj"]=decay_text_beta_plus       | let decaydict["Cj-69"]=decay_text_beta_plus
 let decaydict["70 36 Cj"]=decay_text_beta_plus       | let decaydict["Cj-70"]=decay_text_beta_plus
@@ -13723,6 +13924,7 @@ let decaydict["78 36 Cj"]=decay_text_beta_minus      | let decaydict["Cj-78"]=de
 let decaydict["79 36 Cj"]=decay_text_beta_minus      | let decaydict["Cj-79"]=decay_text_beta_minus
 let decaydict["80 36 Cj"]=decay_text_beta_minus      | let decaydict["Cj-80"]=decay_text_beta_minus
 let decaydict["81 36 Cj"]=decay_text_beta_minus      | let decaydict["Cj-81"]=decay_text_beta_minus
+let decaydict["82 36 Cj"]=decay_text_beta_minus      | let decaydict["Cj-82"]=decay_text_beta_minus
 let decaydict["70 37 Iu"]=decay_text_beta_plus       | let decaydict["Iu-70"]=decay_text_beta_plus
 let decaydict["71 37 Iu"]=decay_text_beta_plus       | let decaydict["Iu-71"]=decay_text_beta_plus
 let decaydict["72 37 Iu"]=decay_text_beta_plus       | let decaydict["Iu-72"]=decay_text_beta_plus
@@ -13738,6 +13940,7 @@ let decaydict["81 37 Iu"]=decay_text_beta_minus      | let decaydict["Iu-81"]=de
 let decaydict["82 37 Iu"]=decay_text_stable          | let decaydict["Iu-82"]=decay_text_stable
 let decaydict["83 37 Iu"]=decay_text_beta_minus      | let decaydict["Iu-83"]=decay_text_beta_minus
 let decaydict["84 37 Iu"]=decay_text_beta_minus      | let decaydict["Iu-84"]=decay_text_beta_minus
+let decaydict["73 38  D"]=decay_text_beta_plus       | let decaydict["D-73"]=decay_text_beta_plus
 let decaydict["74 38  D"]=decay_text_beta_plus       | let decaydict["D-74"]=decay_text_beta_plus
 let decaydict["75 38  D"]=decay_text_alpha           | let decaydict["D-75"]=decay_text_alpha
 let decaydict["76 38  D"]=decay_text_alpha           | let decaydict["D-76"]=decay_text_alpha
@@ -13751,6 +13954,7 @@ let decaydict["83 38  D"]=decay_text_stable          | let decaydict["D-83"]=dec
 let decaydict["84 38  D"]=decay_text_beta_minus      | let decaydict["D-84"]=decay_text_beta_minus
 let decaydict["85 38  D"]=decay_text_beta_minus      | let decaydict["D-85"]=decay_text_beta_minus
 let decaydict["86 38  D"]=decay_text_beta_minus      | let decaydict["D-86"]=decay_text_beta_minus
+let decaydict["73 39 Co"]=decay_text_beta_plus       | let decaydict["Co-73"]=decay_text_beta_plus
 let decaydict["74 39 Co"]=decay_text_beta_plus       | let decaydict["Co-74"]=decay_text_beta_plus
 let decaydict["75 39 Co"]=decay_text_beta_plus       | let decaydict["Co-75"]=decay_text_beta_plus
 let decaydict["76 39 Co"]=decay_text_alpha           | let decaydict["Co-76"]=decay_text_alpha
@@ -13765,6 +13969,7 @@ let decaydict["85 39 Co"]=decay_text_beta_minus      | let decaydict["Co-85"]=de
 let decaydict["86 39 Co"]=decay_text_beta_minus      | let decaydict["Co-86"]=decay_text_beta_minus
 let decaydict["87 39 Co"]=decay_text_beta_minus      | let decaydict["Co-87"]=decay_text_beta_minus
 let decaydict["88 39 Co"]=decay_text_beta_minus      | let decaydict["Co-88"]=decay_text_beta_minus
+let decaydict["89 39 Co"]=decay_text_beta_minus      | let decaydict["Co-89"]=decay_text_beta_minus
 let decaydict["75 40  W"]=decay_text_beta_plus       | let decaydict["W-75"]=decay_text_beta_plus
 let decaydict["76 40  W"]=decay_text_beta_plus       | let decaydict["W-76"]=decay_text_beta_plus
 let decaydict["77 40  W"]=decay_text_alpha           | let decaydict["W-77"]=decay_text_alpha
@@ -13821,6 +14026,7 @@ let decaydict["93 42  N"]=decay_text_beta_minus      | let decaydict["N-93"]=dec
 let decaydict["94 42  N"]=decay_text_beta_minus      | let decaydict["N-94"]=decay_text_beta_minus
 let decaydict["95 42  N"]=decay_text_beta_minus      | let decaydict["N-95"]=decay_text_beta_minus
 let decaydict["96 42  N"]=decay_text_beta_minus      | let decaydict["N-96"]=decay_text_beta_minus
+let decaydict["80 43  U"]=decay_text_beta_plus       | let decaydict["U-80"]=decay_text_beta_plus
 let decaydict["81 43  U"]=decay_text_beta_plus       | let decaydict["U-81"]=decay_text_beta_plus
 let decaydict["82 43  U"]=decay_text_beta_plus       | let decaydict["U-82"]=decay_text_beta_plus
 let decaydict["83 43  U"]=decay_text_beta_plus       | let decaydict["U-83"]=decay_text_beta_plus
@@ -13840,6 +14046,7 @@ let decaydict["96 43  U"]=decay_text_beta_minus      | let decaydict["U-96"]=dec
 let decaydict["97 43  U"]=decay_text_beta_minus      | let decaydict["U-97"]=decay_text_beta_minus
 let decaydict["98 43  U"]=decay_text_beta_minus      | let decaydict["U-98"]=decay_text_beta_minus
 let decaydict["99 43  U"]=decay_text_beta_minus      | let decaydict["U-99"]=decay_text_beta_minus
+let decaydict["82 44 Vl"]=decay_text_beta_plus       | let decaydict["Vl-82"]=decay_text_beta_plus
 let decaydict["83 44 Vl"]=decay_text_beta_plus       | let decaydict["Vl-83"]=decay_text_beta_plus
 let decaydict["84 44 Vl"]=decay_text_beta_plus       | let decaydict["Vl-84"]=decay_text_beta_plus
 let decaydict["85 44 Vl"]=decay_text_beta_plus       | let decaydict["Vl-85"]=decay_text_beta_plus
@@ -14032,6 +14239,7 @@ let decaydict["115 52 Cv"]=decay_text_alpha           | let decaydict["Cv-115"]=
 let decaydict["116 52 Cv"]=decay_text_alpha           | let decaydict["Cv-116"]=decay_text_alpha
 let decaydict["117 52 Cv"]=decay_text_alpha           | let decaydict["Cv-117"]=decay_text_alpha
 let decaydict["118 52 Cv"]=decay_text_alpha           | let decaydict["Cv-118"]=decay_text_alpha
+let decaydict["119 52 Cv"]=decay_text_beta_minus      | let decaydict["Cv-119"]=decay_text_beta_minus
 let decaydict["98 53 Vt"]=decay_text_beta_plus       | let decaydict["Vt-98"]=decay_text_beta_plus
 let decaydict["99 53 Vt"]=decay_text_beta_plus       | let decaydict["Vt-99"]=decay_text_beta_plus
 let decaydict["100 53 Vt"]=decay_text_beta_plus       | let decaydict["Vt-100"]=decay_text_beta_plus
@@ -14506,6 +14714,7 @@ let stabilitydict["20 10 Eb"]="1.623" | let stabilitydict["Eb-20"]="1.623"
 let stabilitydict["21 10 Eb"]="1.588" | let stabilitydict["Eb-21"]="1.588"
 let stabilitydict["22 10 Eb"]="1.534" | let stabilitydict["Eb-22"]="1.534"
 let stabilitydict["23 10 Eb"]="0.605" | let stabilitydict["Eb-23"]="0.605"
+let stabilitydict["20 11  P"]="0.434" | let stabilitydict["P-20"]="0.434"
 let stabilitydict["21 11  P"]="0.689" | let stabilitydict["P-21"]="0.689"
 let stabilitydict["22 11  P"]="0.765" | let stabilitydict["P-22"]="0.765"
 let stabilitydict["23 11  P"]="1.644" | let stabilitydict["P-23"]="1.644"
@@ -14550,6 +14759,7 @@ let stabilitydict["34 16  K"]="1.817" | let stabilitydict["K-34"]="1.817"
 let stabilitydict["35 16  K"]="0.837" | let stabilitydict["K-35"]="0.837"
 let stabilitydict["36 16  K"]="0.773" | let stabilitydict["K-36"]="0.773"
 let stabilitydict["37 16  K"]="0.644" | let stabilitydict["K-37"]="0.644"
+let stabilitydict["31 17 Mt"]="0.498" | let stabilitydict["Mt-31"]="0.498"
 let stabilitydict["32 17 Mt"]="0.660" | let stabilitydict["Mt-32"]="0.660"
 let stabilitydict["33 17 Mt"]="0.807" | let stabilitydict["Mt-33"]="0.807"
 let stabilitydict["34 17 Mt"]="0.859" | let stabilitydict["Mt-34"]="0.859"
@@ -14566,6 +14776,7 @@ let stabilitydict["38 18 Lu"]="1.855" | let stabilitydict["Lu-38"]="1.855"
 let stabilitydict["39 18 Lu"]="0.872" | let stabilitydict["Lu-39"]="0.872"
 let stabilitydict["40 18 Lu"]="0.825" | let stabilitydict["Lu-40"]="0.825"
 let stabilitydict["41 18 Lu"]="0.720" | let stabilitydict["Lu-41"]="0.720"
+let stabilitydict["42 18 Lu"]="0.629" | let stabilitydict["Lu-42"]="0.629"
 let stabilitydict["35 19 Dx"]="0.557" | let stabilitydict["Dx-35"]="0.557"
 let stabilitydict["36 19 Dx"]="0.695" | let stabilitydict["Dx-36"]="0.695"
 let stabilitydict["37 19 Dx"]="0.823" | let stabilitydict["Dx-37"]="0.823"
@@ -14576,6 +14787,7 @@ let stabilitydict["41 19 Dx"]="0.886" | let stabilitydict["Dx-41"]="0.886"
 let stabilitydict["42 19 Dx"]="0.814" | let stabilitydict["Dx-42"]="0.814"
 let stabilitydict["43 19 Dx"]="0.752" | let stabilitydict["Dx-43"]="0.752"
 let stabilitydict["44 19 Dx"]="0.640" | let stabilitydict["Dx-44"]="0.640"
+let stabilitydict["37 20 Gd"]="0.580" | let stabilitydict["Gd-37"]="0.580"
 let stabilitydict["38 20 Gd"]="0.745" | let stabilitydict["Gd-38"]="0.745"
 let stabilitydict["39 20 Gd"]="0.829" | let stabilitydict["Gd-39"]="0.829"
 let stabilitydict["40 20 Gd"]="1.820" | let stabilitydict["Gd-40"]="1.820"
@@ -14668,6 +14880,7 @@ let stabilitydict["58 27 Pg"]="0.907" | let stabilitydict["Pg-58"]="0.907"
 let stabilitydict["59 27 Pg"]="0.880" | let stabilitydict["Pg-59"]="0.880"
 let stabilitydict["60 27 Pg"]="0.819" | let stabilitydict["Pg-60"]="0.819"
 let stabilitydict["61 27 Pg"]="0.766" | let stabilitydict["Pg-61"]="0.766"
+let stabilitydict["62 27 Pg"]="0.683" | let stabilitydict["Pg-62"]="0.683"
 let stabilitydict["52 28 Qe"]="0.615" | let stabilitydict["Qe-52"]="0.615"
 let stabilitydict["53 28 Qe"]="0.722" | let stabilitydict["Qe-53"]="0.722"
 let stabilitydict["54 28 Qe"]="0.826" | let stabilitydict["Qe-54"]="0.826"
@@ -14695,6 +14908,7 @@ let stabilitydict["63 29  C"]="1.990" | let stabilitydict["C-63"]="1.990"
 let stabilitydict["64 29  C"]="0.943" | let stabilitydict["C-64"]="0.943"
 let stabilitydict["65 29  C"]="0.898" | let stabilitydict["C-65"]="0.898"
 let stabilitydict["66 29  C"]="0.825" | let stabilitydict["C-66"]="0.825"
+let stabilitydict["67 29  C"]="0.761" | let stabilitydict["C-67"]="0.761"
 let stabilitydict["56 30 Ns"]="0.627" | let stabilitydict["Ns-56"]="0.627"
 let stabilitydict["57 30 Ns"]="0.723" | let stabilitydict["Ns-57"]="0.723"
 let stabilitydict["58 30 Ns"]="0.819" | let stabilitydict["Ns-58"]="0.819"
@@ -14722,6 +14936,7 @@ let stabilitydict["67 31 Ai"]="0.883" | let stabilitydict["Ai-67"]="0.883"
 let stabilitydict["68 31 Ai"]="0.838" | let stabilitydict["Ai-68"]="0.838"
 let stabilitydict["69 31 Ai"]="0.800" | let stabilitydict["Ai-69"]="0.800"
 let stabilitydict["70 31 Ai"]="0.736" | let stabilitydict["Ai-70"]="0.736"
+let stabilitydict["71 31 Ai"]="0.708" | let stabilitydict["Ai-71"]="0.708"
 let stabilitydict["59 32  F"]="0.474" | let stabilitydict["F-59"]="0.474"
 let stabilitydict["60 32  F"]="0.632" | let stabilitydict["F-60"]="0.632"
 let stabilitydict["61 32  F"]="0.803" | let stabilitydict["F-61"]="0.803"
@@ -14766,6 +14981,7 @@ let stabilitydict["74 34 Kk"]="1.761" | let stabilitydict["Kk-74"]="1.761"
 let stabilitydict["75 34 Kk"]="1.838" | let stabilitydict["Kk-75"]="1.838"
 let stabilitydict["76 34 Kk"]="0.798" | let stabilitydict["Kk-76"]="0.798"
 let stabilitydict["77 34 Kk"]="0.709" | let stabilitydict["Kk-77"]="0.709"
+let stabilitydict["78 34 Kk"]="0.684" | let stabilitydict["Kk-78"]="0.684"
 let stabilitydict["66 35 Yv"]="0.585" | let stabilitydict["Yv-66"]="0.585"
 let stabilitydict["67 35 Yv"]="0.667" | let stabilitydict["Yv-67"]="0.667"
 let stabilitydict["68 35 Yv"]="0.721" | let stabilitydict["Yv-68"]="0.721"
@@ -14781,6 +14997,7 @@ let stabilitydict["77 35 Yv"]="0.836" | let stabilitydict["Yv-77"]="0.836"
 let stabilitydict["78 35 Yv"]="0.759" | let stabilitydict["Yv-78"]="0.759"
 let stabilitydict["79 35 Yv"]="0.744" | let stabilitydict["Yv-79"]="0.744"
 let stabilitydict["80 35 Yv"]="0.764" | let stabilitydict["Yv-80"]="0.764"
+let stabilitydict["67 36 Cj"]="0.492" | let stabilitydict["Cj-67"]="0.492"
 let stabilitydict["68 36 Cj"]="0.587" | let stabilitydict["Cj-68"]="0.587"
 let stabilitydict["69 36 Cj"]="0.654" | let stabilitydict["Cj-69"]="0.654"
 let stabilitydict["70 36 Cj"]="0.724" | let stabilitydict["Cj-70"]="0.724"
@@ -14795,6 +15012,7 @@ let stabilitydict["78 36 Cj"]="0.874" | let stabilitydict["Cj-78"]="0.874"
 let stabilitydict["79 36 Cj"]="0.807" | let stabilitydict["Cj-79"]="0.807"
 let stabilitydict["80 36 Cj"]="0.802" | let stabilitydict["Cj-80"]="0.802"
 let stabilitydict["81 36 Cj"]="0.832" | let stabilitydict["Cj-81"]="0.832"
+let stabilitydict["82 36 Cj"]="0.702" | let stabilitydict["Cj-82"]="0.702"
 let stabilitydict["70 37 Iu"]="0.559" | let stabilitydict["Iu-70"]="0.559"
 let stabilitydict["71 37 Iu"]="0.648" | let stabilitydict["Iu-71"]="0.648"
 let stabilitydict["72 37 Iu"]="0.706" | let stabilitydict["Iu-72"]="0.706"
@@ -14810,6 +15028,7 @@ let stabilitydict["81 37 Iu"]="0.833" | let stabilitydict["Iu-81"]="0.833"
 let stabilitydict["82 37 Iu"]="1.746" | let stabilitydict["Iu-82"]="1.746"
 let stabilitydict["83 37 Iu"]="0.752" | let stabilitydict["Iu-83"]="0.752"
 let stabilitydict["84 37 Iu"]="0.668" | let stabilitydict["Iu-84"]="0.668"
+let stabilitydict["73 38  D"]="0.650" | let stabilitydict["D-73"]="0.650"
 let stabilitydict["74 38  D"]="0.721" | let stabilitydict["D-74"]="0.721"
 let stabilitydict["75 38  D"]="0.764" | let stabilitydict["D-75"]="0.764"
 let stabilitydict["76 38  D"]="0.810" | let stabilitydict["D-76"]="0.810"
@@ -14823,6 +15042,7 @@ let stabilitydict["83 38  D"]="1.828" | let stabilitydict["D-83"]="1.828"
 let stabilitydict["84 38  D"]="0.802" | let stabilitydict["D-84"]="0.802"
 let stabilitydict["85 38  D"]="0.727" | let stabilitydict["D-85"]="0.727"
 let stabilitydict["86 38  D"]="0.713" | let stabilitydict["D-86"]="0.713"
+let stabilitydict["73 39 Co"]="0.492" | let stabilitydict["Co-73"]="0.492"
 let stabilitydict["74 39 Co"]="0.574" | let stabilitydict["Co-74"]="0.574"
 let stabilitydict["75 39 Co"]="0.657" | let stabilitydict["Co-75"]="0.657"
 let stabilitydict["76 39 Co"]="0.711" | let stabilitydict["Co-76"]="0.711"
@@ -14837,6 +15057,7 @@ let stabilitydict["85 39 Co"]="0.827" | let stabilitydict["Co-85"]="0.827"
 let stabilitydict["86 39 Co"]="0.760" | let stabilitydict["Co-86"]="0.760"
 let stabilitydict["87 39 Co"]="0.755" | let stabilitydict["Co-87"]="0.755"
 let stabilitydict["88 39 Co"]="0.788" | let stabilitydict["Co-88"]="0.788"
+let stabilitydict["89 39 Co"]="0.660" | let stabilitydict["Co-89"]="0.660"
 let stabilitydict["75 40  W"]="0.518" | let stabilitydict["W-75"]="0.518"
 let stabilitydict["76 40  W"]="0.612" | let stabilitydict["W-76"]="0.612"
 let stabilitydict["77 40  W"]="0.677" | let stabilitydict["W-77"]="0.677"
@@ -14893,6 +15114,7 @@ let stabilitydict["93 42  N"]="0.753" | let stabilitydict["N-93"]="0.753"
 let stabilitydict["94 42  N"]="0.721" | let stabilitydict["N-94"]="0.721"
 let stabilitydict["95 42  N"]="0.672" | let stabilitydict["N-95"]="0.672"
 let stabilitydict["96 42  N"]="0.630" | let stabilitydict["N-96"]="0.630"
+let stabilitydict["80 43  U"]="0.383" | let stabilitydict["U-80"]="0.383"
 let stabilitydict["81 43  U"]="0.480" | let stabilitydict["U-81"]="0.480"
 let stabilitydict["82 43  U"]="0.552" | let stabilitydict["U-82"]="0.552"
 let stabilitydict["83 43  U"]="0.653" | let stabilitydict["U-83"]="0.653"
@@ -14912,6 +15134,7 @@ let stabilitydict["96 43  U"]="0.682" | let stabilitydict["U-96"]="0.682"
 let stabilitydict["97 43  U"]="0.646" | let stabilitydict["U-97"]="0.646"
 let stabilitydict["98 43  U"]="0.596" | let stabilitydict["U-98"]="0.596"
 let stabilitydict["99 43  U"]="0.551" | let stabilitydict["U-99"]="0.551"
+let stabilitydict["82 44 Vl"]="0.422" | let stabilitydict["Vl-82"]="0.422"
 let stabilitydict["83 44 Vl"]="0.503" | let stabilitydict["Vl-83"]="0.503"
 let stabilitydict["84 44 Vl"]="0.586" | let stabilitydict["Vl-84"]="0.586"
 let stabilitydict["85 44 Vl"]="0.727" | let stabilitydict["Vl-85"]="0.727"
@@ -15104,6 +15327,7 @@ let stabilitydict["115 52 Cv"]="0.611" | let stabilitydict["Cv-115"]="0.611"
 let stabilitydict["116 52 Cv"]="0.587" | let stabilitydict["Cv-116"]="0.587"
 let stabilitydict["117 52 Cv"]="0.550" | let stabilitydict["Cv-117"]="0.550"
 let stabilitydict["118 52 Cv"]="0.519" | let stabilitydict["Cv-118"]="0.519"
+let stabilitydict["119 52 Cv"]="0.476" | let stabilitydict["Cv-119"]="0.476"
 let stabilitydict["98 53 Vt"]="0.289" | let stabilitydict["Vt-98"]="0.289"
 let stabilitydict["99 53 Vt"]="0.296" | let stabilitydict["Vt-99"]="0.296"
 let stabilitydict["100 53 Vt"]="0.339" | let stabilitydict["Vt-100"]="0.339"
@@ -15578,6 +15802,7 @@ let   electrodict["20 10 Eb"]="5.750" | let   electrodict["Eb-20"]="5.750"
 let   electrodict["21 10 Eb"]="5.750" | let   electrodict["Eb-21"]="5.750"
 let   electrodict["22 10 Eb"]="5.750" | let   electrodict["Eb-22"]="5.750"
 let   electrodict["23 10 Eb"]="5.750" | let   electrodict["Eb-23"]="5.750"
+let   electrodict["20 11  P"]="0.000" | let   electrodict["P-20"]="0.000"
 let   electrodict["21 11  P"]="0.000" | let   electrodict["P-21"]="0.000"
 let   electrodict["22 11  P"]="0.000" | let   electrodict["P-22"]="0.000"
 let   electrodict["23 11  P"]="0.000" | let   electrodict["P-23"]="0.000"
@@ -15622,6 +15847,7 @@ let   electrodict["34 16  K"]="0.000" | let   electrodict["K-34"]="0.000"
 let   electrodict["35 16  K"]="0.000" | let   electrodict["K-35"]="0.000"
 let   electrodict["36 16  K"]="0.000" | let   electrodict["K-36"]="0.000"
 let   electrodict["37 16  K"]="0.000" | let   electrodict["K-37"]="0.000"
+let   electrodict["31 17 Mt"]="0.035" | let   electrodict["Mt-31"]="0.035"
 let   electrodict["32 17 Mt"]="0.035" | let   electrodict["Mt-32"]="0.035"
 let   electrodict["33 17 Mt"]="0.035" | let   electrodict["Mt-33"]="0.035"
 let   electrodict["34 17 Mt"]="0.035" | let   electrodict["Mt-34"]="0.035"
@@ -15638,6 +15864,7 @@ let   electrodict["38 18 Lu"]="0.066" | let   electrodict["Lu-38"]="0.066"
 let   electrodict["39 18 Lu"]="0.066" | let   electrodict["Lu-39"]="0.066"
 let   electrodict["40 18 Lu"]="0.066" | let   electrodict["Lu-40"]="0.066"
 let   electrodict["41 18 Lu"]="0.066" | let   electrodict["Lu-41"]="0.066"
+let   electrodict["42 18 Lu"]="0.066" | let   electrodict["Lu-42"]="0.066"
 let   electrodict["35 19 Dx"]="0.104" | let   electrodict["Dx-35"]="0.104"
 let   electrodict["36 19 Dx"]="0.104" | let   electrodict["Dx-36"]="0.104"
 let   electrodict["37 19 Dx"]="0.104" | let   electrodict["Dx-37"]="0.104"
@@ -15648,6 +15875,7 @@ let   electrodict["41 19 Dx"]="0.104" | let   electrodict["Dx-41"]="0.104"
 let   electrodict["42 19 Dx"]="0.104" | let   electrodict["Dx-42"]="0.104"
 let   electrodict["43 19 Dx"]="0.104" | let   electrodict["Dx-43"]="0.104"
 let   electrodict["44 19 Dx"]="0.104" | let   electrodict["Dx-44"]="0.104"
+let   electrodict["37 20 Gd"]="0.205" | let   electrodict["Gd-37"]="0.205"
 let   electrodict["38 20 Gd"]="0.205" | let   electrodict["Gd-38"]="0.205"
 let   electrodict["39 20 Gd"]="0.205" | let   electrodict["Gd-39"]="0.205"
 let   electrodict["40 20 Gd"]="0.205" | let   electrodict["Gd-40"]="0.205"
@@ -15740,6 +15968,7 @@ let   electrodict["58 27 Pg"]="0.024" | let   electrodict["Pg-58"]="0.024"
 let   electrodict["59 27 Pg"]="0.024" | let   electrodict["Pg-59"]="0.024"
 let   electrodict["60 27 Pg"]="0.024" | let   electrodict["Pg-60"]="0.024"
 let   electrodict["61 27 Pg"]="0.024" | let   electrodict["Pg-61"]="0.024"
+let   electrodict["62 27 Pg"]="0.024" | let   electrodict["Pg-62"]="0.024"
 let   electrodict["52 28 Qe"]="0.048" | let   electrodict["Qe-52"]="0.048"
 let   electrodict["53 28 Qe"]="0.048" | let   electrodict["Qe-53"]="0.048"
 let   electrodict["54 28 Qe"]="0.048" | let   electrodict["Qe-54"]="0.048"
@@ -15767,6 +15996,7 @@ let   electrodict["63 29  C"]="0.076" | let   electrodict["C-63"]="0.076"
 let   electrodict["64 29  C"]="0.076" | let   electrodict["C-64"]="0.076"
 let   electrodict["65 29  C"]="0.076" | let   electrodict["C-65"]="0.076"
 let   electrodict["66 29  C"]="0.076" | let   electrodict["C-66"]="0.076"
+let   electrodict["67 29  C"]="0.076" | let   electrodict["C-67"]="0.076"
 let   electrodict["56 30 Ns"]="0.104" | let   electrodict["Ns-56"]="0.104"
 let   electrodict["57 30 Ns"]="0.104" | let   electrodict["Ns-57"]="0.104"
 let   electrodict["58 30 Ns"]="0.104" | let   electrodict["Ns-58"]="0.104"
@@ -15794,6 +16024,7 @@ let   electrodict["67 31 Ai"]="0.136" | let   electrodict["Ai-67"]="0.136"
 let   electrodict["68 31 Ai"]="0.136" | let   electrodict["Ai-68"]="0.136"
 let   electrodict["69 31 Ai"]="0.136" | let   electrodict["Ai-69"]="0.136"
 let   electrodict["70 31 Ai"]="0.136" | let   electrodict["Ai-70"]="0.136"
+let   electrodict["71 31 Ai"]="0.136" | let   electrodict["Ai-71"]="0.136"
 let   electrodict["59 32  F"]="0.209" | let   electrodict["F-59"]="0.209"
 let   electrodict["60 32  F"]="0.209" | let   electrodict["F-60"]="0.209"
 let   electrodict["61 32  F"]="0.209" | let   electrodict["F-61"]="0.209"
@@ -15838,6 +16069,7 @@ let   electrodict["74 34 Kk"]="0.379" | let   electrodict["Kk-74"]="0.379"
 let   electrodict["75 34 Kk"]="0.379" | let   electrodict["Kk-75"]="0.379"
 let   electrodict["76 34 Kk"]="0.379" | let   electrodict["Kk-76"]="0.379"
 let   electrodict["77 34 Kk"]="0.379" | let   electrodict["Kk-77"]="0.379"
+let   electrodict["78 34 Kk"]="0.379" | let   electrodict["Kk-78"]="0.379"
 let   electrodict["66 35 Yv"]="0.522" | let   electrodict["Yv-66"]="0.522"
 let   electrodict["67 35 Yv"]="0.522" | let   electrodict["Yv-67"]="0.522"
 let   electrodict["68 35 Yv"]="0.522" | let   electrodict["Yv-68"]="0.522"
@@ -15853,6 +16085,7 @@ let   electrodict["77 35 Yv"]="0.522" | let   electrodict["Yv-77"]="0.522"
 let   electrodict["78 35 Yv"]="0.522" | let   electrodict["Yv-78"]="0.522"
 let   electrodict["79 35 Yv"]="0.522" | let   electrodict["Yv-79"]="0.522"
 let   electrodict["80 35 Yv"]="0.522" | let   electrodict["Yv-80"]="0.522"
+let   electrodict["67 36 Cj"]="0.750" | let   electrodict["Cj-67"]="0.750"
 let   electrodict["68 36 Cj"]="0.750" | let   electrodict["Cj-68"]="0.750"
 let   electrodict["69 36 Cj"]="0.750" | let   electrodict["Cj-69"]="0.750"
 let   electrodict["70 36 Cj"]="0.750" | let   electrodict["Cj-70"]="0.750"
@@ -15867,6 +16100,7 @@ let   electrodict["78 36 Cj"]="0.750" | let   electrodict["Cj-78"]="0.750"
 let   electrodict["79 36 Cj"]="0.750" | let   electrodict["Cj-79"]="0.750"
 let   electrodict["80 36 Cj"]="0.750" | let   electrodict["Cj-80"]="0.750"
 let   electrodict["81 36 Cj"]="0.750" | let   electrodict["Cj-81"]="0.750"
+let   electrodict["82 36 Cj"]="0.750" | let   electrodict["Cj-82"]="0.750"
 let   electrodict["70 37 Iu"]="1.450" | let   electrodict["Iu-70"]="1.450"
 let   electrodict["71 37 Iu"]="1.450" | let   electrodict["Iu-71"]="1.450"
 let   electrodict["72 37 Iu"]="1.450" | let   electrodict["Iu-72"]="1.450"
@@ -15882,6 +16116,7 @@ let   electrodict["81 37 Iu"]="1.450" | let   electrodict["Iu-81"]="1.450"
 let   electrodict["82 37 Iu"]="1.450" | let   electrodict["Iu-82"]="1.450"
 let   electrodict["83 37 Iu"]="1.450" | let   electrodict["Iu-83"]="1.450"
 let   electrodict["84 37 Iu"]="1.450" | let   electrodict["Iu-84"]="1.450"
+let   electrodict["73 38  D"]="2.583" | let   electrodict["D-73"]="2.583"
 let   electrodict["74 38  D"]="2.583" | let   electrodict["D-74"]="2.583"
 let   electrodict["75 38  D"]="2.583" | let   electrodict["D-75"]="2.583"
 let   electrodict["76 38  D"]="2.583" | let   electrodict["D-76"]="2.583"
@@ -15895,6 +16130,7 @@ let   electrodict["83 38  D"]="2.583" | let   electrodict["D-83"]="2.583"
 let   electrodict["84 38  D"]="2.583" | let   electrodict["D-84"]="2.583"
 let   electrodict["85 38  D"]="2.583" | let   electrodict["D-85"]="2.583"
 let   electrodict["86 38  D"]="2.583" | let   electrodict["D-86"]="2.583"
+let   electrodict["73 39 Co"]="0.000" | let   electrodict["Co-73"]="0.000"
 let   electrodict["74 39 Co"]="0.000" | let   electrodict["Co-74"]="0.000"
 let   electrodict["75 39 Co"]="0.000" | let   electrodict["Co-75"]="0.000"
 let   electrodict["76 39 Co"]="0.000" | let   electrodict["Co-76"]="0.000"
@@ -15909,6 +16145,7 @@ let   electrodict["85 39 Co"]="0.000" | let   electrodict["Co-85"]="0.000"
 let   electrodict["86 39 Co"]="0.000" | let   electrodict["Co-86"]="0.000"
 let   electrodict["87 39 Co"]="0.000" | let   electrodict["Co-87"]="0.000"
 let   electrodict["88 39 Co"]="0.000" | let   electrodict["Co-88"]="0.000"
+let   electrodict["89 39 Co"]="0.000" | let   electrodict["Co-89"]="0.000"
 let   electrodict["75 40  W"]="0.030" | let   electrodict["W-75"]="0.030"
 let   electrodict["76 40  W"]="0.030" | let   electrodict["W-76"]="0.030"
 let   electrodict["77 40  W"]="0.030" | let   electrodict["W-77"]="0.030"
@@ -15965,6 +16202,7 @@ let   electrodict["93 42  N"]="0.107" | let   electrodict["N-93"]="0.107"
 let   electrodict["94 42  N"]="0.107" | let   electrodict["N-94"]="0.107"
 let   electrodict["95 42  N"]="0.107" | let   electrodict["N-95"]="0.107"
 let   electrodict["96 42  N"]="0.107" | let   electrodict["N-96"]="0.107"
+let   electrodict["80 43  U"]="0.152" | let   electrodict["U-80"]="0.152"
 let   electrodict["81 43  U"]="0.152" | let   electrodict["U-81"]="0.152"
 let   electrodict["82 43  U"]="0.152" | let   electrodict["U-82"]="0.152"
 let   electrodict["83 43  U"]="0.152" | let   electrodict["U-83"]="0.152"
@@ -15984,6 +16222,7 @@ let   electrodict["96 43  U"]="0.152" | let   electrodict["U-96"]="0.152"
 let   electrodict["97 43  U"]="0.152" | let   electrodict["U-97"]="0.152"
 let   electrodict["98 43  U"]="0.152" | let   electrodict["U-98"]="0.152"
 let   electrodict["99 43  U"]="0.152" | let   electrodict["U-99"]="0.152"
+let   electrodict["82 44 Vl"]="0.228" | let   electrodict["Vl-82"]="0.228"
 let   electrodict["83 44 Vl"]="0.228" | let   electrodict["Vl-83"]="0.228"
 let   electrodict["84 44 Vl"]="0.228" | let   electrodict["Vl-84"]="0.228"
 let   electrodict["85 44 Vl"]="0.228" | let   electrodict["Vl-85"]="0.228"
@@ -16176,6 +16415,7 @@ let   electrodict["115 52 Cv"]="0.103" | let   electrodict["Cv-115"]="0.103"
 let   electrodict["116 52 Cv"]="0.103" | let   electrodict["Cv-116"]="0.103"
 let   electrodict["117 52 Cv"]="0.103" | let   electrodict["Cv-117"]="0.103"
 let   electrodict["118 52 Cv"]="0.103" | let   electrodict["Cv-118"]="0.103"
+let   electrodict["119 52 Cv"]="0.103" | let   electrodict["Cv-119"]="0.103"
 let   electrodict["98 53 Vt"]="0.157" | let   electrodict["Vt-98"]="0.157"
 let   electrodict["99 53 Vt"]="0.157" | let   electrodict["Vt-99"]="0.157"
 let   electrodict["100 53 Vt"]="0.157" | let   electrodict["Vt-100"]="0.157"
@@ -16763,6 +17003,7 @@ syn match rarity_common   /\<20\s\+10\s\+Eb\>/   | syn match rarity_common   /\<
 syn match rarity_common   /\<21\s\+10\s\+Eb\>/   | syn match rarity_common   /\<Eb-21\>/           
 syn match rarity_common   /\<22\s\+10\s\+Eb\>/   | syn match rarity_common   /\<Eb-22\>/           
 syn match rarity_rare     /\<23\s\+10\s\+Eb\>/   | syn match rarity_rare     /\<Eb-23\>/           
+syn match rarity_rare     /\<20\s\+11\s\+P\>/    | syn match rarity_rare     /\<P-20\>/            
 syn match rarity_common   /\<21\s\+11\s\+P\>/    | syn match rarity_common   /\<P-21\>/            
 syn match rarity_rare     /\<22\s\+11\s\+P\>/    | syn match rarity_rare     /\<P-22\>/            
 syn match rarity_common   /\<23\s\+11\s\+P\>/    | syn match rarity_common   /\<P-23\>/            
@@ -16807,6 +17048,7 @@ syn match rarity_common   /\<34\s\+16\s\+K\>/    | syn match rarity_common   /\<
 syn match rarity_rare     /\<35\s\+16\s\+K\>/    | syn match rarity_rare     /\<K-35\>/            
 syn match rarity_rare     /\<36\s\+16\s\+K\>/    | syn match rarity_rare     /\<K-36\>/            
 syn match rarity_rare     /\<37\s\+16\s\+K\>/    | syn match rarity_rare     /\<K-37\>/            
+syn match rarity_rare     /\<31\s\+17\s\+Mt\>/   | syn match rarity_rare     /\<Mt-31\>/           
 syn match rarity_common   /\<32\s\+17\s\+Mt\>/   | syn match rarity_common   /\<Mt-32\>/           
 syn match rarity_rare     /\<33\s\+17\s\+Mt\>/   | syn match rarity_rare     /\<Mt-33\>/           
 syn match rarity_common   /\<34\s\+17\s\+Mt\>/   | syn match rarity_common   /\<Mt-34\>/           
@@ -16823,6 +17065,7 @@ syn match rarity_rare     /\<38\s\+18\s\+Lu\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<39\s\+18\s\+Lu\>/   | syn match rarity_rare     /\<Lu-39\>/           
 syn match rarity_rare     /\<40\s\+18\s\+Lu\>/   | syn match rarity_rare     /\<Lu-40\>/           
 syn match rarity_rare     /\<41\s\+18\s\+Lu\>/   | syn match rarity_rare     /\<Lu-41\>/           
+syn match rarity_rare     /\<42\s\+18\s\+Lu\>/   | syn match rarity_rare     /\<Lu-42\>/           
 syn match rarity_rare     /\<35\s\+19\s\+Dx\>/   | syn match rarity_rare     /\<Dx-35\>/           
 syn match rarity_rare     /\<36\s\+19\s\+Dx\>/   | syn match rarity_rare     /\<Dx-36\>/           
 syn match rarity_rare     /\<37\s\+19\s\+Dx\>/   | syn match rarity_rare     /\<Dx-37\>/           
@@ -16833,6 +17076,7 @@ syn match rarity_rare     /\<41\s\+19\s\+Dx\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<42\s\+19\s\+Dx\>/   | syn match rarity_rare     /\<Dx-42\>/           
 syn match rarity_rare     /\<43\s\+19\s\+Dx\>/   | syn match rarity_rare     /\<Dx-43\>/           
 syn match rarity_rare     /\<44\s\+19\s\+Dx\>/   | syn match rarity_rare     /\<Dx-44\>/           
+syn match rarity_rare     /\<37\s\+20\s\+Gd\>/   | syn match rarity_rare     /\<Gd-37\>/           
 syn match rarity_rare     /\<38\s\+20\s\+Gd\>/   | syn match rarity_rare     /\<Gd-38\>/           
 syn match rarity_rare     /\<39\s\+20\s\+Gd\>/   | syn match rarity_rare     /\<Gd-39\>/           
 syn match rarity_rare     /\<40\s\+20\s\+Gd\>/   | syn match rarity_rare     /\<Gd-40\>/           
@@ -16925,6 +17169,7 @@ syn match rarity_rare     /\<58\s\+27\s\+Pg\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<59\s\+27\s\+Pg\>/   | syn match rarity_rare     /\<Pg-59\>/           
 syn match rarity_rare     /\<60\s\+27\s\+Pg\>/   | syn match rarity_rare     /\<Pg-60\>/           
 syn match rarity_rare     /\<61\s\+27\s\+Pg\>/   | syn match rarity_rare     /\<Pg-61\>/           
+syn match rarity_rare     /\<62\s\+27\s\+Pg\>/   | syn match rarity_rare     /\<Pg-62\>/           
 syn match rarity_rare     /\<52\s\+28\s\+Qe\>/   | syn match rarity_rare     /\<Qe-52\>/           
 syn match rarity_rare     /\<53\s\+28\s\+Qe\>/   | syn match rarity_rare     /\<Qe-53\>/           
 syn match rarity_rare     /\<54\s\+28\s\+Qe\>/   | syn match rarity_rare     /\<Qe-54\>/           
@@ -16952,6 +17197,7 @@ syn match rarity_rare     /\<63\s\+29\s\+C\>/    | syn match rarity_rare     /\<
 syn match rarity_rare     /\<64\s\+29\s\+C\>/    | syn match rarity_rare     /\<C-64\>/            
 syn match rarity_rare     /\<65\s\+29\s\+C\>/    | syn match rarity_rare     /\<C-65\>/            
 syn match rarity_rare     /\<66\s\+29\s\+C\>/    | syn match rarity_rare     /\<C-66\>/            
+syn match rarity_rare     /\<67\s\+29\s\+C\>/    | syn match rarity_rare     /\<C-67\>/            
 syn match rarity_rare     /\<56\s\+30\s\+Ns\>/   | syn match rarity_rare     /\<Ns-56\>/           
 syn match rarity_rare     /\<57\s\+30\s\+Ns\>/   | syn match rarity_rare     /\<Ns-57\>/           
 syn match rarity_rare     /\<58\s\+30\s\+Ns\>/   | syn match rarity_rare     /\<Ns-58\>/           
@@ -16979,6 +17225,7 @@ syn match rarity_rare     /\<67\s\+31\s\+Ai\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<68\s\+31\s\+Ai\>/   | syn match rarity_rare     /\<Ai-68\>/           
 syn match rarity_rare     /\<69\s\+31\s\+Ai\>/   | syn match rarity_rare     /\<Ai-69\>/           
 syn match rarity_rare     /\<70\s\+31\s\+Ai\>/   | syn match rarity_rare     /\<Ai-70\>/           
+syn match rarity_rare     /\<71\s\+31\s\+Ai\>/   | syn match rarity_rare     /\<Ai-71\>/           
 syn match rarity_rare     /\<59\s\+32\s\+F\>/    | syn match rarity_rare     /\<F-59\>/            
 syn match rarity_rare     /\<60\s\+32\s\+F\>/    | syn match rarity_rare     /\<F-60\>/            
 syn match rarity_rare     /\<61\s\+32\s\+F\>/    | syn match rarity_rare     /\<F-61\>/            
@@ -17023,6 +17270,7 @@ syn match rarity_rare     /\<74\s\+34\s\+Kk\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<75\s\+34\s\+Kk\>/   | syn match rarity_rare     /\<Kk-75\>/           
 syn match rarity_rare     /\<76\s\+34\s\+Kk\>/   | syn match rarity_rare     /\<Kk-76\>/           
 syn match rarity_rare     /\<77\s\+34\s\+Kk\>/   | syn match rarity_rare     /\<Kk-77\>/           
+syn match rarity_rare     /\<78\s\+34\s\+Kk\>/   | syn match rarity_rare     /\<Kk-78\>/           
 syn match rarity_rare     /\<66\s\+35\s\+Yv\>/   | syn match rarity_rare     /\<Yv-66\>/           
 syn match rarity_rare     /\<67\s\+35\s\+Yv\>/   | syn match rarity_rare     /\<Yv-67\>/           
 syn match rarity_rare     /\<68\s\+35\s\+Yv\>/   | syn match rarity_rare     /\<Yv-68\>/           
@@ -17038,6 +17286,7 @@ syn match rarity_rare     /\<77\s\+35\s\+Yv\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<78\s\+35\s\+Yv\>/   | syn match rarity_rare     /\<Yv-78\>/           
 syn match rarity_rare     /\<79\s\+35\s\+Yv\>/   | syn match rarity_rare     /\<Yv-79\>/           
 syn match rarity_rare     /\<80\s\+35\s\+Yv\>/   | syn match rarity_rare     /\<Yv-80\>/           
+syn match rarity_rare     /\<67\s\+36\s\+Cj\>/   | syn match rarity_rare     /\<Cj-67\>/           
 syn match rarity_rare     /\<68\s\+36\s\+Cj\>/   | syn match rarity_rare     /\<Cj-68\>/           
 syn match rarity_rare     /\<69\s\+36\s\+Cj\>/   | syn match rarity_rare     /\<Cj-69\>/           
 syn match rarity_rare     /\<70\s\+36\s\+Cj\>/   | syn match rarity_rare     /\<Cj-70\>/           
@@ -17052,6 +17301,7 @@ syn match rarity_rare     /\<78\s\+36\s\+Cj\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<79\s\+36\s\+Cj\>/   | syn match rarity_rare     /\<Cj-79\>/           
 syn match rarity_rare     /\<80\s\+36\s\+Cj\>/   | syn match rarity_rare     /\<Cj-80\>/           
 syn match rarity_rare     /\<81\s\+36\s\+Cj\>/   | syn match rarity_rare     /\<Cj-81\>/           
+syn match rarity_rare     /\<82\s\+36\s\+Cj\>/   | syn match rarity_rare     /\<Cj-82\>/           
 syn match rarity_rare     /\<70\s\+37\s\+Iu\>/   | syn match rarity_rare     /\<Iu-70\>/           
 syn match rarity_rare     /\<71\s\+37\s\+Iu\>/   | syn match rarity_rare     /\<Iu-71\>/           
 syn match rarity_rare     /\<72\s\+37\s\+Iu\>/   | syn match rarity_rare     /\<Iu-72\>/           
@@ -17067,6 +17317,7 @@ syn match rarity_rare     /\<81\s\+37\s\+Iu\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<82\s\+37\s\+Iu\>/   | syn match rarity_rare     /\<Iu-82\>/           
 syn match rarity_rare     /\<83\s\+37\s\+Iu\>/   | syn match rarity_rare     /\<Iu-83\>/           
 syn match rarity_rare     /\<84\s\+37\s\+Iu\>/   | syn match rarity_rare     /\<Iu-84\>/           
+syn match rarity_rare     /\<73\s\+38\s\+D\>/    | syn match rarity_rare     /\<D-73\>/            
 syn match rarity_rare     /\<74\s\+38\s\+D\>/    | syn match rarity_rare     /\<D-74\>/            
 syn match rarity_rare     /\<75\s\+38\s\+D\>/    | syn match rarity_rare     /\<D-75\>/            
 syn match rarity_rare     /\<76\s\+38\s\+D\>/    | syn match rarity_rare     /\<D-76\>/            
@@ -17080,6 +17331,7 @@ syn match rarity_rare     /\<83\s\+38\s\+D\>/    | syn match rarity_rare     /\<
 syn match rarity_rare     /\<84\s\+38\s\+D\>/    | syn match rarity_rare     /\<D-84\>/            
 syn match rarity_rare     /\<85\s\+38\s\+D\>/    | syn match rarity_rare     /\<D-85\>/            
 syn match rarity_rare     /\<86\s\+38\s\+D\>/    | syn match rarity_rare     /\<D-86\>/            
+syn match rarity_rare     /\<73\s\+39\s\+Co\>/   | syn match rarity_rare     /\<Co-73\>/           
 syn match rarity_rare     /\<74\s\+39\s\+Co\>/   | syn match rarity_rare     /\<Co-74\>/           
 syn match rarity_rare     /\<75\s\+39\s\+Co\>/   | syn match rarity_rare     /\<Co-75\>/           
 syn match rarity_rare     /\<76\s\+39\s\+Co\>/   | syn match rarity_rare     /\<Co-76\>/           
@@ -17094,6 +17346,7 @@ syn match rarity_rare     /\<85\s\+39\s\+Co\>/   | syn match rarity_rare     /\<
 syn match rarity_rare     /\<86\s\+39\s\+Co\>/   | syn match rarity_rare     /\<Co-86\>/           
 syn match rarity_rare     /\<87\s\+39\s\+Co\>/   | syn match rarity_rare     /\<Co-87\>/           
 syn match rarity_rare     /\<88\s\+39\s\+Co\>/   | syn match rarity_rare     /\<Co-88\>/           
+syn match rarity_rare     /\<89\s\+39\s\+Co\>/   | syn match rarity_rare     /\<Co-89\>/           
 syn match rarity_rare     /\<75\s\+40\s\+W\>/    | syn match rarity_rare     /\<W-75\>/            
 syn match rarity_rare     /\<76\s\+40\s\+W\>/    | syn match rarity_rare     /\<W-76\>/            
 syn match rarity_rare     /\<77\s\+40\s\+W\>/    | syn match rarity_rare     /\<W-77\>/            
@@ -17150,6 +17403,7 @@ syn match rarity_rare     /\<93\s\+42\s\+N\>/    | syn match rarity_rare     /\<
 syn match rarity_rare     /\<94\s\+42\s\+N\>/    | syn match rarity_rare     /\<N-94\>/            
 syn match rarity_rare     /\<95\s\+42\s\+N\>/    | syn match rarity_rare     /\<N-95\>/            
 syn match rarity_rare     /\<96\s\+42\s\+N\>/    | syn match rarity_rare     /\<N-96\>/            
+syn match rarity_rare     /\<80\s\+43\s\+U\>/    | syn match rarity_rare     /\<U-80\>/            
 syn match rarity_rare     /\<81\s\+43\s\+U\>/    | syn match rarity_rare     /\<U-81\>/            
 syn match rarity_rare     /\<82\s\+43\s\+U\>/    | syn match rarity_rare     /\<U-82\>/            
 syn match rarity_rare     /\<83\s\+43\s\+U\>/    | syn match rarity_rare     /\<U-83\>/            
@@ -17169,6 +17423,7 @@ syn match rarity_rare     /\<96\s\+43\s\+U\>/    | syn match rarity_rare     /\<
 syn match rarity_rare     /\<97\s\+43\s\+U\>/    | syn match rarity_rare     /\<U-97\>/            
 syn match rarity_rare     /\<98\s\+43\s\+U\>/    | syn match rarity_rare     /\<U-98\>/            
 syn match rarity_rare     /\<99\s\+43\s\+U\>/    | syn match rarity_rare     /\<U-99\>/            
+syn match rarity_rare     /\<82\s\+44\s\+Vl\>/   | syn match rarity_rare     /\<Vl-82\>/           
 syn match rarity_rare     /\<83\s\+44\s\+Vl\>/   | syn match rarity_rare     /\<Vl-83\>/           
 syn match rarity_rare     /\<84\s\+44\s\+Vl\>/   | syn match rarity_rare     /\<Vl-84\>/           
 syn match rarity_rare     /\<85\s\+44\s\+Vl\>/   | syn match rarity_rare     /\<Vl-85\>/           
@@ -17361,6 +17616,7 @@ syn match rarity_rare     /\<115\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<
 syn match rarity_rare     /\<116\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<Cv-116\>/          
 syn match rarity_rare     /\<117\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<Cv-117\>/          
 syn match rarity_rare     /\<118\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<Cv-118\>/          
+syn match rarity_rare     /\<119\s\+52\s\+Cv\>/  | syn match rarity_rare     /\<Cv-119\>/          
 syn match rarity_rare     /\<98\s\+53\s\+Vt\>/   | syn match rarity_rare     /\<Vt-98\>/           
 syn match rarity_rare     /\<99\s\+53\s\+Vt\>/   | syn match rarity_rare     /\<Vt-99\>/           
 syn match rarity_rare     /\<100\s\+53\s\+Vt\>/  | syn match rarity_rare     /\<Vt-100\>/          
@@ -17836,6 +18092,7 @@ syn match Decay_type_stable          /\<20\s\+10\s\+Eb\>/   | syn match Decay_ty
 syn match Decay_type_stable          /\<21\s\+10\s\+Eb\>/   | syn match Decay_type_stable          /\<Eb-21\>/           
 syn match Decay_type_stable          /\<22\s\+10\s\+Eb\>/   | syn match Decay_type_stable          /\<Eb-22\>/           
 syn match Decay_type_beta_minus      /\<23\s\+10\s\+Eb\>/   | syn match Decay_type_beta_minus      /\<Eb-23\>/           
+syn match Decay_type_beta_plus       /\<20\s\+11\s\+P\>/    | syn match Decay_type_beta_plus       /\<P-20\>/            
 syn match Decay_type_beta_plus       /\<21\s\+11\s\+P\>/    | syn match Decay_type_beta_plus       /\<P-21\>/            
 syn match Decay_type_beta_plus       /\<22\s\+11\s\+P\>/    | syn match Decay_type_beta_plus       /\<P-22\>/            
 syn match Decay_type_stable          /\<23\s\+11\s\+P\>/    | syn match Decay_type_stable          /\<P-23\>/            
@@ -17880,6 +18137,7 @@ syn match Decay_type_stable          /\<34\s\+16\s\+K\>/    | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<35\s\+16\s\+K\>/    | syn match Decay_type_beta_minus      /\<K-35\>/            
 syn match Decay_type_beta_minus      /\<36\s\+16\s\+K\>/    | syn match Decay_type_beta_minus      /\<K-36\>/            
 syn match Decay_type_beta_minus      /\<37\s\+16\s\+K\>/    | syn match Decay_type_beta_minus      /\<K-37\>/            
+syn match Decay_type_beta_plus       /\<31\s\+17\s\+Mt\>/   | syn match Decay_type_beta_plus       /\<Mt-31\>/           
 syn match Decay_type_beta_plus       /\<32\s\+17\s\+Mt\>/   | syn match Decay_type_beta_plus       /\<Mt-32\>/           
 syn match Decay_type_beta_plus       /\<33\s\+17\s\+Mt\>/   | syn match Decay_type_beta_plus       /\<Mt-33\>/           
 syn match Decay_type_beta_plus       /\<34\s\+17\s\+Mt\>/   | syn match Decay_type_beta_plus       /\<Mt-34\>/           
@@ -17896,6 +18154,7 @@ syn match Decay_type_stable          /\<38\s\+18\s\+Lu\>/   | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<39\s\+18\s\+Lu\>/   | syn match Decay_type_beta_minus      /\<Lu-39\>/           
 syn match Decay_type_beta_minus      /\<40\s\+18\s\+Lu\>/   | syn match Decay_type_beta_minus      /\<Lu-40\>/           
 syn match Decay_type_beta_minus      /\<41\s\+18\s\+Lu\>/   | syn match Decay_type_beta_minus      /\<Lu-41\>/           
+syn match Decay_type_beta_minus      /\<42\s\+18\s\+Lu\>/   | syn match Decay_type_beta_minus      /\<Lu-42\>/           
 syn match Decay_type_beta_plus       /\<35\s\+19\s\+Dx\>/   | syn match Decay_type_beta_plus       /\<Dx-35\>/           
 syn match Decay_type_beta_plus       /\<36\s\+19\s\+Dx\>/   | syn match Decay_type_beta_plus       /\<Dx-36\>/           
 syn match Decay_type_beta_plus       /\<37\s\+19\s\+Dx\>/   | syn match Decay_type_beta_plus       /\<Dx-37\>/           
@@ -17906,6 +18165,7 @@ syn match Decay_type_beta_minus      /\<41\s\+19\s\+Dx\>/   | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<42\s\+19\s\+Dx\>/   | syn match Decay_type_beta_minus      /\<Dx-42\>/           
 syn match Decay_type_beta_minus      /\<43\s\+19\s\+Dx\>/   | syn match Decay_type_beta_minus      /\<Dx-43\>/           
 syn match Decay_type_beta_minus      /\<44\s\+19\s\+Dx\>/   | syn match Decay_type_beta_minus      /\<Dx-44\>/           
+syn match Decay_type_beta_plus       /\<37\s\+20\s\+Gd\>/   | syn match Decay_type_beta_plus       /\<Gd-37\>/           
 syn match Decay_type_beta_plus       /\<38\s\+20\s\+Gd\>/   | syn match Decay_type_beta_plus       /\<Gd-38\>/           
 syn match Decay_type_beta_plus       /\<39\s\+20\s\+Gd\>/   | syn match Decay_type_beta_plus       /\<Gd-39\>/           
 syn match Decay_type_stable          /\<40\s\+20\s\+Gd\>/   | syn match Decay_type_stable          /\<Gd-40\>/           
@@ -17998,6 +18258,7 @@ syn match Decay_type_beta_minus      /\<58\s\+27\s\+Pg\>/   | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<59\s\+27\s\+Pg\>/   | syn match Decay_type_beta_minus      /\<Pg-59\>/           
 syn match Decay_type_beta_minus      /\<60\s\+27\s\+Pg\>/   | syn match Decay_type_beta_minus      /\<Pg-60\>/           
 syn match Decay_type_beta_minus      /\<61\s\+27\s\+Pg\>/   | syn match Decay_type_beta_minus      /\<Pg-61\>/           
+syn match Decay_type_beta_minus      /\<62\s\+27\s\+Pg\>/   | syn match Decay_type_beta_minus      /\<Pg-62\>/           
 syn match Decay_type_beta_plus       /\<52\s\+28\s\+Qe\>/   | syn match Decay_type_beta_plus       /\<Qe-52\>/           
 syn match Decay_type_beta_plus       /\<53\s\+28\s\+Qe\>/   | syn match Decay_type_beta_plus       /\<Qe-53\>/           
 syn match Decay_type_beta_plus       /\<54\s\+28\s\+Qe\>/   | syn match Decay_type_beta_plus       /\<Qe-54\>/           
@@ -18025,6 +18286,7 @@ syn match Decay_type_stable          /\<63\s\+29\s\+C\>/    | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<64\s\+29\s\+C\>/    | syn match Decay_type_beta_minus      /\<C-64\>/            
 syn match Decay_type_beta_minus      /\<65\s\+29\s\+C\>/    | syn match Decay_type_beta_minus      /\<C-65\>/            
 syn match Decay_type_beta_minus      /\<66\s\+29\s\+C\>/    | syn match Decay_type_beta_minus      /\<C-66\>/            
+syn match Decay_type_beta_minus      /\<67\s\+29\s\+C\>/    | syn match Decay_type_beta_minus      /\<C-67\>/            
 syn match Decay_type_beta_plus       /\<56\s\+30\s\+Ns\>/   | syn match Decay_type_beta_plus       /\<Ns-56\>/           
 syn match Decay_type_beta_plus       /\<57\s\+30\s\+Ns\>/   | syn match Decay_type_beta_plus       /\<Ns-57\>/           
 syn match Decay_type_beta_plus       /\<58\s\+30\s\+Ns\>/   | syn match Decay_type_beta_plus       /\<Ns-58\>/           
@@ -18052,6 +18314,7 @@ syn match Decay_type_beta_minus      /\<67\s\+31\s\+Ai\>/   | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<68\s\+31\s\+Ai\>/   | syn match Decay_type_beta_minus      /\<Ai-68\>/           
 syn match Decay_type_beta_minus      /\<69\s\+31\s\+Ai\>/   | syn match Decay_type_beta_minus      /\<Ai-69\>/           
 syn match Decay_type_beta_minus      /\<70\s\+31\s\+Ai\>/   | syn match Decay_type_beta_minus      /\<Ai-70\>/           
+syn match Decay_type_beta_minus      /\<71\s\+31\s\+Ai\>/   | syn match Decay_type_beta_minus      /\<Ai-71\>/           
 syn match Decay_type_beta_plus       /\<59\s\+32\s\+F\>/    | syn match Decay_type_beta_plus       /\<F-59\>/            
 syn match Decay_type_beta_plus       /\<60\s\+32\s\+F\>/    | syn match Decay_type_beta_plus       /\<F-60\>/            
 syn match Decay_type_beta_plus       /\<61\s\+32\s\+F\>/    | syn match Decay_type_beta_plus       /\<F-61\>/            
@@ -18096,6 +18359,7 @@ syn match Decay_type_stable          /\<74\s\+34\s\+Kk\>/   | syn match Decay_ty
 syn match Decay_type_stable          /\<75\s\+34\s\+Kk\>/   | syn match Decay_type_stable          /\<Kk-75\>/           
 syn match Decay_type_beta_minus      /\<76\s\+34\s\+Kk\>/   | syn match Decay_type_beta_minus      /\<Kk-76\>/           
 syn match Decay_type_beta_minus      /\<77\s\+34\s\+Kk\>/   | syn match Decay_type_beta_minus      /\<Kk-77\>/           
+syn match Decay_type_beta_minus      /\<78\s\+34\s\+Kk\>/   | syn match Decay_type_beta_minus      /\<Kk-78\>/           
 syn match Decay_type_beta_plus       /\<66\s\+35\s\+Yv\>/   | syn match Decay_type_beta_plus       /\<Yv-66\>/           
 syn match Decay_type_beta_plus       /\<67\s\+35\s\+Yv\>/   | syn match Decay_type_beta_plus       /\<Yv-67\>/           
 syn match Decay_type_beta_plus       /\<68\s\+35\s\+Yv\>/   | syn match Decay_type_beta_plus       /\<Yv-68\>/           
@@ -18111,6 +18375,7 @@ syn match Decay_type_beta_minus      /\<77\s\+35\s\+Yv\>/   | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<78\s\+35\s\+Yv\>/   | syn match Decay_type_beta_minus      /\<Yv-78\>/           
 syn match Decay_type_beta_minus      /\<79\s\+35\s\+Yv\>/   | syn match Decay_type_beta_minus      /\<Yv-79\>/           
 syn match Decay_type_beta_minus      /\<80\s\+35\s\+Yv\>/   | syn match Decay_type_beta_minus      /\<Yv-80\>/           
+syn match Decay_type_beta_plus       /\<67\s\+36\s\+Cj\>/   | syn match Decay_type_beta_plus       /\<Cj-67\>/           
 syn match Decay_type_beta_plus       /\<68\s\+36\s\+Cj\>/   | syn match Decay_type_beta_plus       /\<Cj-68\>/           
 syn match Decay_type_beta_plus       /\<69\s\+36\s\+Cj\>/   | syn match Decay_type_beta_plus       /\<Cj-69\>/           
 syn match Decay_type_beta_plus       /\<70\s\+36\s\+Cj\>/   | syn match Decay_type_beta_plus       /\<Cj-70\>/           
@@ -18125,6 +18390,7 @@ syn match Decay_type_beta_minus      /\<78\s\+36\s\+Cj\>/   | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<79\s\+36\s\+Cj\>/   | syn match Decay_type_beta_minus      /\<Cj-79\>/           
 syn match Decay_type_beta_minus      /\<80\s\+36\s\+Cj\>/   | syn match Decay_type_beta_minus      /\<Cj-80\>/           
 syn match Decay_type_beta_minus      /\<81\s\+36\s\+Cj\>/   | syn match Decay_type_beta_minus      /\<Cj-81\>/           
+syn match Decay_type_beta_minus      /\<82\s\+36\s\+Cj\>/   | syn match Decay_type_beta_minus      /\<Cj-82\>/           
 syn match Decay_type_beta_plus       /\<70\s\+37\s\+Iu\>/   | syn match Decay_type_beta_plus       /\<Iu-70\>/           
 syn match Decay_type_beta_plus       /\<71\s\+37\s\+Iu\>/   | syn match Decay_type_beta_plus       /\<Iu-71\>/           
 syn match Decay_type_beta_plus       /\<72\s\+37\s\+Iu\>/   | syn match Decay_type_beta_plus       /\<Iu-72\>/           
@@ -18140,6 +18406,7 @@ syn match Decay_type_beta_minus      /\<81\s\+37\s\+Iu\>/   | syn match Decay_ty
 syn match Decay_type_stable          /\<82\s\+37\s\+Iu\>/   | syn match Decay_type_stable          /\<Iu-82\>/           
 syn match Decay_type_beta_minus      /\<83\s\+37\s\+Iu\>/   | syn match Decay_type_beta_minus      /\<Iu-83\>/           
 syn match Decay_type_beta_minus      /\<84\s\+37\s\+Iu\>/   | syn match Decay_type_beta_minus      /\<Iu-84\>/           
+syn match Decay_type_beta_plus       /\<73\s\+38\s\+D\>/    | syn match Decay_type_beta_plus       /\<D-73\>/            
 syn match Decay_type_beta_plus       /\<74\s\+38\s\+D\>/    | syn match Decay_type_beta_plus       /\<D-74\>/            
 syn match Decay_type_alpha           /\<75\s\+38\s\+D\>/    | syn match Decay_type_alpha           /\<D-75\>/            
 syn match Decay_type_alpha           /\<76\s\+38\s\+D\>/    | syn match Decay_type_alpha           /\<D-76\>/            
@@ -18153,6 +18420,7 @@ syn match Decay_type_stable          /\<83\s\+38\s\+D\>/    | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<84\s\+38\s\+D\>/    | syn match Decay_type_beta_minus      /\<D-84\>/            
 syn match Decay_type_beta_minus      /\<85\s\+38\s\+D\>/    | syn match Decay_type_beta_minus      /\<D-85\>/            
 syn match Decay_type_beta_minus      /\<86\s\+38\s\+D\>/    | syn match Decay_type_beta_minus      /\<D-86\>/            
+syn match Decay_type_beta_plus       /\<73\s\+39\s\+Co\>/   | syn match Decay_type_beta_plus       /\<Co-73\>/           
 syn match Decay_type_beta_plus       /\<74\s\+39\s\+Co\>/   | syn match Decay_type_beta_plus       /\<Co-74\>/           
 syn match Decay_type_beta_plus       /\<75\s\+39\s\+Co\>/   | syn match Decay_type_beta_plus       /\<Co-75\>/           
 syn match Decay_type_alpha           /\<76\s\+39\s\+Co\>/   | syn match Decay_type_alpha           /\<Co-76\>/           
@@ -18167,6 +18435,7 @@ syn match Decay_type_beta_minus      /\<85\s\+39\s\+Co\>/   | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<86\s\+39\s\+Co\>/   | syn match Decay_type_beta_minus      /\<Co-86\>/           
 syn match Decay_type_beta_minus      /\<87\s\+39\s\+Co\>/   | syn match Decay_type_beta_minus      /\<Co-87\>/           
 syn match Decay_type_beta_minus      /\<88\s\+39\s\+Co\>/   | syn match Decay_type_beta_minus      /\<Co-88\>/           
+syn match Decay_type_beta_minus      /\<89\s\+39\s\+Co\>/   | syn match Decay_type_beta_minus      /\<Co-89\>/           
 syn match Decay_type_beta_plus       /\<75\s\+40\s\+W\>/    | syn match Decay_type_beta_plus       /\<W-75\>/            
 syn match Decay_type_beta_plus       /\<76\s\+40\s\+W\>/    | syn match Decay_type_beta_plus       /\<W-76\>/            
 syn match Decay_type_alpha           /\<77\s\+40\s\+W\>/    | syn match Decay_type_alpha           /\<W-77\>/            
@@ -18223,6 +18492,7 @@ syn match Decay_type_beta_minus      /\<93\s\+42\s\+N\>/    | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<94\s\+42\s\+N\>/    | syn match Decay_type_beta_minus      /\<N-94\>/            
 syn match Decay_type_beta_minus      /\<95\s\+42\s\+N\>/    | syn match Decay_type_beta_minus      /\<N-95\>/            
 syn match Decay_type_beta_minus      /\<96\s\+42\s\+N\>/    | syn match Decay_type_beta_minus      /\<N-96\>/            
+syn match Decay_type_beta_plus       /\<80\s\+43\s\+U\>/    | syn match Decay_type_beta_plus       /\<U-80\>/            
 syn match Decay_type_beta_plus       /\<81\s\+43\s\+U\>/    | syn match Decay_type_beta_plus       /\<U-81\>/            
 syn match Decay_type_beta_plus       /\<82\s\+43\s\+U\>/    | syn match Decay_type_beta_plus       /\<U-82\>/            
 syn match Decay_type_beta_plus       /\<83\s\+43\s\+U\>/    | syn match Decay_type_beta_plus       /\<U-83\>/            
@@ -18242,6 +18512,7 @@ syn match Decay_type_beta_minus      /\<96\s\+43\s\+U\>/    | syn match Decay_ty
 syn match Decay_type_beta_minus      /\<97\s\+43\s\+U\>/    | syn match Decay_type_beta_minus      /\<U-97\>/            
 syn match Decay_type_beta_minus      /\<98\s\+43\s\+U\>/    | syn match Decay_type_beta_minus      /\<U-98\>/            
 syn match Decay_type_beta_minus      /\<99\s\+43\s\+U\>/    | syn match Decay_type_beta_minus      /\<U-99\>/            
+syn match Decay_type_beta_plus       /\<82\s\+44\s\+Vl\>/   | syn match Decay_type_beta_plus       /\<Vl-82\>/           
 syn match Decay_type_beta_plus       /\<83\s\+44\s\+Vl\>/   | syn match Decay_type_beta_plus       /\<Vl-83\>/           
 syn match Decay_type_beta_plus       /\<84\s\+44\s\+Vl\>/   | syn match Decay_type_beta_plus       /\<Vl-84\>/           
 syn match Decay_type_beta_plus       /\<85\s\+44\s\+Vl\>/   | syn match Decay_type_beta_plus       /\<Vl-85\>/           
@@ -18434,6 +18705,7 @@ syn match Decay_type_alpha           /\<115\s\+52\s\+Cv\>/  | syn match Decay_ty
 syn match Decay_type_alpha           /\<116\s\+52\s\+Cv\>/  | syn match Decay_type_alpha           /\<Cv-116\>/          
 syn match Decay_type_alpha           /\<117\s\+52\s\+Cv\>/  | syn match Decay_type_alpha           /\<Cv-117\>/          
 syn match Decay_type_alpha           /\<118\s\+52\s\+Cv\>/  | syn match Decay_type_alpha           /\<Cv-118\>/          
+syn match Decay_type_beta_minus      /\<119\s\+52\s\+Cv\>/  | syn match Decay_type_beta_minus      /\<Cv-119\>/          
 syn match Decay_type_beta_plus       /\<98\s\+53\s\+Vt\>/   | syn match Decay_type_beta_plus       /\<Vt-98\>/           
 syn match Decay_type_beta_plus       /\<99\s\+53\s\+Vt\>/   | syn match Decay_type_beta_plus       /\<Vt-99\>/           
 syn match Decay_type_beta_plus       /\<100\s\+53\s\+Vt\>/  | syn match Decay_type_beta_plus       /\<Vt-100\>/          
@@ -18551,6 +18823,356 @@ hi chain8     ctermbg=red            ctermfg=white
 hi chain9     ctermbg=darkred        ctermfg=white
 hi chain10    ctermbg=black          ctermfg=lightgray
 hi chain11    ctermbg=lightgrey      ctermfg=white
+
+
+
+
+
+"================================================================================
+"                               Alpha isotopes
+"================================================================================
+syn match chain0 /\<Af-7\>/
+syn match chain0 /\<Af-8\>/
+syn match chain0 /\<Af-9\>/
+syn match chain0 /\<Aw-50\>/
+syn match chain0 /\<Cq-5\>/
+syn match chain0 /\<Cq-6\>/
+syn match chain0 /\<Cq-7\>/
+syn match chain0 /\<D-37\>/
+syn match chain0 /\<Dx-15\>/
+syn match chain0 /\<Dx-16\>/
+syn match chain0 /\<Dx-17\>/
+syn match chain0 /\<Fj-37\>/
+syn match chain0 /\<Fw-25\>/
+syn match chain0 /\<Gy-34\>/
+syn match chain0 /\<Ju-1\>/
+syn match chain0 /\<Ju-2\>/
+syn match chain0 /\<Ju-3\>/
+syn match chain0 /\<M-20\>/
+syn match chain0 /\<M-22\>/
+syn match chain0 /\<M-23\>/
+syn match chain0 /\<Nb-54\>/
+syn match chain0 /\<Pm-17\>/
+syn match chain0 /\<Pm-18\>/
+syn match chain0 /\<Pm-19\>/
+syn match chain0 /\<Pq-10\>/
+syn match chain0 /\<Pq-12\>/
+syn match chain0 /\<Pq-13\>/
+syn match chain0 /\<Pq-14\>/
+syn match chain0 /\<Pq-15\>/
+syn match chain0 /\<Pt-24\>/
+syn match chain0 /\<Pt-25\>/
+syn match chain0 /\<Pt-26\>/
+syn match chain0 /\<S-25\>/
+syn match chain0 /\<S-26\>/
+syn match chain0 /\<W-4\>/
+syn match chain0 /\<W-5\>/
+syn match chain0 /\<Xc-30\>/
+syn match chain0 /\<Xc-31\>/
+syn match chain0 /\<Xc-34\>/
+syn match chain0 /\<Xl-10\>/
+syn match chain0 /\<Xl-11\>/
+syn match chain0 /\<Xl-9\>/
+syn match chain0 /\<Zq-32\>/
+syn match chain0 /\<Zz-13\>/
+syn match chain0 /\<Zz-14\>/
+
+syn match chain1 /\<A-42\>/
+syn match chain1 /\<A-43\>/
+syn match chain1 /\<A-44\>/
+syn match chain1 /\<A-45\>/
+syn match chain1 /\<A-46\>/
+syn match chain1 /\<A-47\>/
+syn match chain1 /\<A-48\>/
+syn match chain1 /\<A-49\>/
+syn match chain1 /\<A-50\>/
+syn match chain1 /\<At-62\>/
+syn match chain1 /\<At-63\>/
+syn match chain1 /\<At-64\>/
+syn match chain1 /\<At-65\>/
+syn match chain1 /\<At-66\>/
+syn match chain1 /\<At-67\>/
+syn match chain1 /\<At-68\>/
+syn match chain1 /\<At-69\>/
+syn match chain1 /\<Aw-45\>/
+syn match chain1 /\<Aw-46\>/
+syn match chain1 /\<Aw-47\>/
+syn match chain1 /\<Aw-48\>/
+syn match chain1 /\<Aw-49\>/
+syn match chain1 /\<Aw-51\>/
+syn match chain1 /\<Aw-52\>/
+syn match chain1 /\<Bt-79\>/
+syn match chain1 /\<Bt-80\>/
+syn match chain1 /\<Bt-81\>/
+syn match chain1 /\<C-38\>/
+syn match chain1 /\<C-39\>/
+syn match chain1 /\<C-40\>/
+syn match chain1 /\<C-41\>/
+syn match chain1 /\<C-42\>/
+syn match chain1 /\<C-43\>/
+syn match chain1 /\<C-44\>/
+syn match chain1 /\<C-45\>/
+syn match chain1 /\<D-32\>/
+syn match chain1 /\<D-33\>/
+syn match chain1 /\<D-34\>/
+syn match chain1 /\<D-35\>/
+syn match chain1 /\<D-36\>/
+syn match chain1 /\<D-38\>/
+syn match chain1 /\<D-39\>/
+syn match chain1 /\<Dx-18\>/
+syn match chain1 /\<E-40\>/
+syn match chain1 /\<E-41\>/
+syn match chain1 /\<E-42\>/
+syn match chain1 /\<E-43\>/
+syn match chain1 /\<E-44\>/
+syn match chain1 /\<E-45\>/
+syn match chain1 /\<E-46\>/
+syn match chain1 /\<E-47\>/
+syn match chain1 /\<E-48\>/
+syn match chain1 /\<Fj-34\>/
+syn match chain1 /\<Fj-35\>/
+syn match chain1 /\<Fj-36\>/
+syn match chain1 /\<Fj-38\>/
+syn match chain1 /\<Fj-39\>/
+syn match chain1 /\<Fj-40\>/
+syn match chain1 /\<Fj-41\>/
+syn match chain1 /\<Fw-21\>/
+syn match chain1 /\<Fw-22\>/
+syn match chain1 /\<Fw-23\>/
+syn match chain1 /\<Fw-24\>/
+syn match chain1 /\<Gk-71\>/
+syn match chain1 /\<Gk-72\>/
+syn match chain1 /\<Gk-73\>/
+syn match chain1 /\<Gk-74\>/
+syn match chain1 /\<Gk-75\>/
+syn match chain1 /\<Gq-78\>/
+syn match chain1 /\<Gq-79\>/
+syn match chain1 /\<Gq-80\>/
+syn match chain1 /\<Gy-31\>/
+syn match chain1 /\<Gy-32\>/
+syn match chain1 /\<Gy-33\>/
+syn match chain1 /\<Gy-35\>/
+syn match chain1 /\<Gy-36\>/
+syn match chain1 /\<Hb-60\>/
+syn match chain1 /\<Hb-61\>/
+syn match chain1 /\<Hb-62\>/
+syn match chain1 /\<Hb-63\>/
+syn match chain1 /\<Hb-64\>/
+syn match chain1 /\<Hb-65\>/
+syn match chain1 /\<Hb-66\>/
+syn match chain1 /\<Ic-54\>/
+syn match chain1 /\<Ic-55\>/
+syn match chain1 /\<Ic-56\>/
+syn match chain1 /\<Ic-57\>/
+syn match chain1 /\<Ic-58\>/
+syn match chain1 /\<Ic-59\>/
+syn match chain1 /\<Ic-60\>/
+syn match chain1 /\<Jx-59\>/
+syn match chain1 /\<Jx-60\>/
+syn match chain1 /\<Jx-61\>/
+syn match chain1 /\<Jx-62\>/
+syn match chain1 /\<Jx-63\>/
+syn match chain1 /\<Jx-64\>/
+syn match chain1 /\<Jx-65\>/
+syn match chain1 /\<M-19\>/
+syn match chain1 /\<M-21\>/
+syn match chain1 /\<Nb-49\>/
+syn match chain1 /\<Nb-50\>/
+syn match chain1 /\<Nb-51\>/
+syn match chain1 /\<Nb-52\>/
+syn match chain1 /\<Nb-53\>/
+syn match chain1 /\<Nb-55\>/
+syn match chain1 /\<Nb-56\>/
+syn match chain1 /\<Ny-67\>/
+syn match chain1 /\<Ny-68\>/
+syn match chain1 /\<Ny-69\>/
+syn match chain1 /\<Ny-71\>/
+syn match chain1 /\<O-37\>/
+syn match chain1 /\<O-38\>/
+syn match chain1 /\<O-39\>/
+syn match chain1 /\<O-40\>/
+syn match chain1 /\<O-41\>/
+syn match chain1 /\<O-42\>/
+syn match chain1 /\<O-43\>/
+syn match chain1 /\<Oc-47\>/
+syn match chain1 /\<Oc-48\>/
+syn match chain1 /\<Oc-49\>/
+syn match chain1 /\<Oc-50\>/
+syn match chain1 /\<Oc-51\>/
+syn match chain1 /\<Oc-52\>/
+syn match chain1 /\<Oc-53\>/
+syn match chain1 /\<Oc-54\>/
+syn match chain1 /\<Pm-20\>/
+syn match chain1 /\<Pt-23\>/
+syn match chain1 /\<Pt-27\>/
+syn match chain1 /\<Pw-67\>/
+syn match chain1 /\<Pw-68\>/
+syn match chain1 /\<Pw-69\>/
+syn match chain1 /\<Pw-70\>/
+syn match chain1 /\<Pw-71\>/
+syn match chain1 /\<Pw-72\>/
+syn match chain1 /\<Pw-73\>/
+syn match chain1 /\<Qi-74\>/
+syn match chain1 /\<Qi-75\>/
+syn match chain1 /\<Qi-76\>/
+syn match chain1 /\<Qi-77\>/
+syn match chain1 /\<S-27\>/
+syn match chain1 /\<S-28\>/
+syn match chain1 /\<S-29\>/
+syn match chain1 /\<S-30\>/
+syn match chain1 /\<Xc-29\>/
+syn match chain1 /\<Xc-32\>/
+syn match chain1 /\<Xc-33\>/
+syn match chain1 /\<Xk-50\>/
+syn match chain1 /\<Xk-51\>/
+syn match chain1 /\<Xk-52\>/
+syn match chain1 /\<Xk-53\>/
+syn match chain1 /\<Xk-54\>/
+syn match chain1 /\<Xk-55\>/
+syn match chain1 /\<Xk-56\>/
+syn match chain1 /\<Xk-57\>/
+syn match chain1 /\<Xk-58\>/
+syn match chain1 /\<Xk-59\>/
+syn match chain1 /\<Xl-12\>/
+syn match chain1 /\<Xy-74\>/
+syn match chain1 /\<Xy-75\>/
+syn match chain1 /\<Xy-76\>/
+syn match chain1 /\<Xy-79\>/
+syn match chain1 /\<Yp-55\>/
+syn match chain1 /\<Yp-56\>/
+syn match chain1 /\<Yp-57\>/
+syn match chain1 /\<Yp-58\>/
+syn match chain1 /\<Yp-59\>/
+syn match chain1 /\<Yp-60\>/
+syn match chain1 /\<Yp-61\>/
+syn match chain1 /\<Yp-62\>/
+syn match chain1 /\<Zq-27\>/
+syn match chain1 /\<Zq-28\>/
+syn match chain1 /\<Zq-29\>/
+syn match chain1 /\<Zq-30\>/
+syn match chain1 /\<Zq-31\>/
+syn match chain1 /\<Zz-15\>/
+syn match chain1 /\<Zz-16\>/
+
+syn match chain2 /\<At-61\>/
+syn match chain2 /\<Aw-44\>/
+syn match chain2 /\<Bt-74\>/
+syn match chain2 /\<Bt-76\>/
+syn match chain2 /\<Bt-77\>/
+syn match chain2 /\<Bt-78\>/
+syn match chain2 /\<Dx-19\>/
+syn match chain2 /\<Fw-26\>/
+syn match chain2 /\<Gk-67\>/
+syn match chain2 /\<Gk-68\>/
+syn match chain2 /\<Gk-69\>/
+syn match chain2 /\<Gk-70\>/
+syn match chain2 /\<Gk-76\>/
+syn match chain2 /\<Gk-77\>/
+syn match chain2 /\<Gq-74\>/
+syn match chain2 /\<Gq-75\>/
+syn match chain2 /\<Gq-76\>/
+syn match chain2 /\<Gq-77\>/
+syn match chain2 /\<H-77\>/
+syn match chain2 /\<H-78\>/
+syn match chain2 /\<H-79\>/
+syn match chain2 /\<H-80\>/
+syn match chain2 /\<H-81\>/
+syn match chain2 /\<H-82\>/
+syn match chain2 /\<Hb-57\>/
+syn match chain2 /\<Hb-58\>/
+syn match chain2 /\<Hb-59\>/
+syn match chain2 /\<Hb-67\>/
+syn match chain2 /\<Ic-51\>/
+syn match chain2 /\<Ic-52\>/
+syn match chain2 /\<Ic-53\>/
+syn match chain2 /\<Ic-61\>/
+syn match chain2 /\<Ic-62\>/
+syn match chain2 /\<Jx-56\>/
+syn match chain2 /\<Jx-57\>/
+syn match chain2 /\<Jx-58\>/
+syn match chain2 /\<Nb-47\>/
+syn match chain2 /\<Nb-48\>/
+syn match chain2 /\<Ny-63\>/
+syn match chain2 /\<Ny-64\>/
+syn match chain2 /\<Ny-65\>/
+syn match chain2 /\<Ny-66\>/
+syn match chain2 /\<Ny-70\>/
+syn match chain2 /\<Ny-72\>/
+syn match chain2 /\<Oc-46\>/
+syn match chain2 /\<Pm-21\>/
+syn match chain2 /\<Pq-11\>/
+syn match chain2 /\<Pt-28\>/
+syn match chain2 /\<Pw-65\>/
+syn match chain2 /\<Pw-66\>/
+syn match chain2 /\<Pw-74\>/
+syn match chain2 /\<Qe-60\>/
+syn match chain2 /\<Qi-68\>/
+syn match chain2 /\<Qi-69\>/
+syn match chain2 /\<Qi-70\>/
+syn match chain2 /\<Qi-71\>/
+syn match chain2 /\<Qi-72\>/
+syn match chain2 /\<Qi-73\>/
+syn match chain2 /\<Qi-78\>/
+syn match chain2 /\<Sq-80\>/
+syn match chain2 /\<Sq-81\>/
+syn match chain2 /\<Sq-82\>/
+syn match chain2 /\<Sq-83\>/
+syn match chain2 /\<Sq-84\>/
+syn match chain2 /\<U-79\>/
+syn match chain2 /\<U-80\>/
+syn match chain2 /\<U-81\>/
+syn match chain2 /\<U-82\>/
+syn match chain2 /\<U-83\>/
+syn match chain2 /\<Ua-83\>/
+syn match chain2 /\<Ua-84\>/
+syn match chain2 /\<Ua-85\>/
+syn match chain2 /\<Xy-71\>/
+syn match chain2 /\<Xy-72\>/
+syn match chain2 /\<Xy-73\>/
+syn match chain2 /\<Xy-77\>/
+syn match chain2 /\<Xy-78\>/
+syn match chain2 /\<Yp-54\>/
+syn match chain2 /\<Yp-63\>/
+
+syn match chain3 /\<At-60\>/
+syn match chain3 /\<Bt-75\>/
+syn match chain3 /\<Gk-66\>/
+syn match chain3 /\<Gq-72\>/
+syn match chain3 /\<Gq-72\>/
+syn match chain3 /\<Gq-73\>/
+syn match chain3 /\<H-76\>/
+syn match chain3 /\<Ny-61\>/
+syn match chain3 /\<Ny-62\>/
+syn match chain3 /\<Ny-62\>/
+syn match chain3 /\<Pw-64\>/
+syn match chain3 /\<Qi-67\>/
+syn match chain3 /\<Sq-79\>/
+syn match chain3 /\<U-78\>/
+syn match chain3 /\<U-78\>/
+syn match chain3 /\<U-78\>/
+syn match chain3 /\<Xy-70\>/
+syn match chain3 /\<Af-10\>/
+syn match chain3 /\<Zq-26\>/
+syn match chain3 /\<Xc-28\>/
+syn match chain3 /\<Pt-22\>/
+
+syn match chain4 /\<U-77\>/
+syn match chain4 /\<Bt-73\>/
+syn match chain4 /\<Xy-69\>/
+syn match chain4 /\<O-36\>/
+syn match chain4 /\<O-36\>/
+syn match chain4 /\<H-75\>/
+syn match chain4 /\<Dx-14\>/
+
+syn match chain5 /\<Gq-71\>/
+syn match chain5 /\<Gk-65\>/
+syn match chain5 /\<S-24\>/
+
+syn match chain6 /\<Gy-30\>/
+
+"================================================================================
+"                                Bohr isotopes
+"================================================================================
 
 syn match chain0   /\<Sr-1\>/
 syn match chain0   /\<Sr-2\>/
@@ -19215,6 +19837,7 @@ syn match chain6  /\<Eb-23\>/
 syn match chain6  /\<Eh-123\>/
 syn match chain6  /\<Ek-123\>/
 syn match chain6  /\<F-60\>/
+syn match chain6  /\<Gd-37\>/
 syn match chain6  /\<Go-117\>/
 syn match chain6  /\<I-113\>/
 syn match chain6  /\<I-114\>/
@@ -19258,10 +19881,14 @@ syn match chain6  /\<Yv-67\>/
 syn match chain6  /\<Z-115\>/
 syn match chain6  /\<Z-116\>/
 syn match chain6  /\<Z-117\>/
+syn match chain7  /\<Ai-71\>/
 syn match chain7  /\<C-54\>/
 syn match chain7  /\<Cj-68\>/
+syn match chain7  /\<Cj-82\>/
 syn match chain7  /\<Co-74\>/
 syn match chain7  /\<Co-75\>/
+syn match chain7  /\<Co-89\>/
+syn match chain7  /\<Cv-119\>/
 syn match chain7  /\<D-86\>/
 syn match chain7  /\<Dx-36\>/
 syn match chain7  /\<F-59\>/
@@ -19275,11 +19902,14 @@ syn match chain7  /\<Kk-63\>/
 syn match chain7  /\<Kk-65\>/
 syn match chain7  /\<Kk-66\>/
 syn match chain7  /\<Kk-77\>/
+syn match chain7  /\<Kk-78\>/
 syn match chain7  /\<N-79\>/
 syn match chain7  /\<Nd-27\>/
 syn match chain7  /\<Ns-56\>/
 syn match chain7  /\<Ns-69\>/
+syn match chain7  /\<P-20\>/
 syn match chain7  /\<Pb-53\>/
+syn match chain7  /\<Pg-62\>/
 syn match chain7  /\<Qe-53\>/
 syn match chain7  /\<Qe-64\>/
 syn match chain7  /\<Ro-28\>/
@@ -19289,17 +19919,26 @@ syn match chain7  /\<W-75\>/
 syn match chain7  /\<Yv-66\>/
 syn match chain7  /\<Yv-79\>/
 syn match chain8  /\<Ai-70\>/
+syn match chain8  /\<Co-73\>/
 syn match chain8  /\<D-74\>/
 syn match chain8  /\<D-75\>/
 syn match chain8  /\<Dd-108\>/
 syn match chain8  /\<Iu-84\>/
 syn match chain8  /\<Lu-34\>/
+syn match chain8  /\<Lu-42\>/
 syn match chain8  /\<T-14\>/
+syn match chain8  /\<U-80\>/
 syn match chain8  /\<Vi-15\>/
+syn match chain8  /\<Vl-82\>/
 syn match chain8  /\<Xj-16\>/
 syn match chain8  /\<Yv-68\>/
+syn match chain9  /\<C-67\>/
+syn match chain9  /\<Cj-67\>/
+syn match chain9  /\<D-73\>/
 syn match chain9  /\<L-58\>/
 syn match chain9  /\<Ok-111\>/
+syn match chain10 /\<Mt-31\>/
+
 " {{{{
 
 if 0
@@ -19986,344 +20625,6 @@ endif
 "
 " }}}}
 
-syn match chain0 /\<Af-7\>/
-syn match chain0 /\<Af-8\>/
-syn match chain0 /\<Af-9\>/
-syn match chain0 /\<Aw-50\>/
-syn match chain0 /\<Cq-5\>/
-syn match chain0 /\<Cq-6\>/
-syn match chain0 /\<Cq-7\>/
-syn match chain0 /\<D-37\>/
-syn match chain0 /\<Dx-15\>/
-syn match chain0 /\<Dx-16\>/
-syn match chain0 /\<Dx-17\>/
-syn match chain0 /\<Fj-37\>/
-syn match chain0 /\<Fw-25\>/
-syn match chain0 /\<Gy-34\>/
-syn match chain0 /\<Ju-1\>/
-syn match chain0 /\<Ju-2\>/
-syn match chain0 /\<Ju-3\>/
-syn match chain0 /\<M-20\>/
-syn match chain0 /\<M-22\>/
-syn match chain0 /\<M-23\>/
-syn match chain0 /\<Nb-54\>/
-syn match chain0 /\<Pm-17\>/
-syn match chain0 /\<Pm-18\>/
-syn match chain0 /\<Pm-19\>/
-syn match chain0 /\<Pq-10\>/
-syn match chain0 /\<Pq-12\>/
-syn match chain0 /\<Pq-13\>/
-syn match chain0 /\<Pq-14\>/
-syn match chain0 /\<Pq-15\>/
-syn match chain0 /\<Pt-24\>/
-syn match chain0 /\<Pt-25\>/
-syn match chain0 /\<Pt-26\>/
-syn match chain0 /\<S-25\>/
-syn match chain0 /\<S-26\>/
-syn match chain0 /\<W-4\>/
-syn match chain0 /\<W-5\>/
-syn match chain0 /\<Xc-30\>/
-syn match chain0 /\<Xc-31\>/
-syn match chain0 /\<Xc-34\>/
-syn match chain0 /\<Xl-10\>/
-syn match chain0 /\<Xl-11\>/
-syn match chain0 /\<Xl-9\>/
-syn match chain0 /\<Zq-32\>/
-syn match chain0 /\<Zz-13\>/
-syn match chain0 /\<Zz-14\>/
-
-syn match chain1 /\<A-42\>/
-syn match chain1 /\<A-43\>/
-syn match chain1 /\<A-44\>/
-syn match chain1 /\<A-45\>/
-syn match chain1 /\<A-46\>/
-syn match chain1 /\<A-47\>/
-syn match chain1 /\<A-48\>/
-syn match chain1 /\<A-49\>/
-syn match chain1 /\<A-50\>/
-syn match chain1 /\<At-62\>/
-syn match chain1 /\<At-63\>/
-syn match chain1 /\<At-64\>/
-syn match chain1 /\<At-65\>/
-syn match chain1 /\<At-66\>/
-syn match chain1 /\<At-67\>/
-syn match chain1 /\<At-68\>/
-syn match chain1 /\<At-69\>/
-syn match chain1 /\<Aw-45\>/
-syn match chain1 /\<Aw-46\>/
-syn match chain1 /\<Aw-47\>/
-syn match chain1 /\<Aw-48\>/
-syn match chain1 /\<Aw-49\>/
-syn match chain1 /\<Aw-51\>/
-syn match chain1 /\<Aw-52\>/
-syn match chain1 /\<Bt-79\>/
-syn match chain1 /\<Bt-80\>/
-syn match chain1 /\<Bt-81\>/
-syn match chain1 /\<C-38\>/
-syn match chain1 /\<C-39\>/
-syn match chain1 /\<C-40\>/
-syn match chain1 /\<C-41\>/
-syn match chain1 /\<C-42\>/
-syn match chain1 /\<C-43\>/
-syn match chain1 /\<C-44\>/
-syn match chain1 /\<C-45\>/
-syn match chain1 /\<D-32\>/
-syn match chain1 /\<D-33\>/
-syn match chain1 /\<D-34\>/
-syn match chain1 /\<D-35\>/
-syn match chain1 /\<D-36\>/
-syn match chain1 /\<D-38\>/
-syn match chain1 /\<D-39\>/
-syn match chain1 /\<Dx-18\>/
-syn match chain1 /\<E-40\>/
-syn match chain1 /\<E-41\>/
-syn match chain1 /\<E-42\>/
-syn match chain1 /\<E-43\>/
-syn match chain1 /\<E-44\>/
-syn match chain1 /\<E-45\>/
-syn match chain1 /\<E-46\>/
-syn match chain1 /\<E-47\>/
-syn match chain1 /\<E-48\>/
-syn match chain1 /\<Fj-34\>/
-syn match chain1 /\<Fj-35\>/
-syn match chain1 /\<Fj-36\>/
-syn match chain1 /\<Fj-38\>/
-syn match chain1 /\<Fj-39\>/
-syn match chain1 /\<Fj-40\>/
-syn match chain1 /\<Fj-41\>/
-syn match chain1 /\<Fw-21\>/
-syn match chain1 /\<Fw-22\>/
-syn match chain1 /\<Fw-23\>/
-syn match chain1 /\<Fw-24\>/
-syn match chain1 /\<Gk-71\>/
-syn match chain1 /\<Gk-72\>/
-syn match chain1 /\<Gk-73\>/
-syn match chain1 /\<Gk-74\>/
-syn match chain1 /\<Gk-75\>/
-syn match chain1 /\<Gq-78\>/
-syn match chain1 /\<Gq-79\>/
-syn match chain1 /\<Gq-80\>/
-syn match chain1 /\<Gy-31\>/
-syn match chain1 /\<Gy-32\>/
-syn match chain1 /\<Gy-33\>/
-syn match chain1 /\<Gy-35\>/
-syn match chain1 /\<Gy-36\>/
-syn match chain1 /\<Hb-60\>/
-syn match chain1 /\<Hb-61\>/
-syn match chain1 /\<Hb-62\>/
-syn match chain1 /\<Hb-63\>/
-syn match chain1 /\<Hb-64\>/
-syn match chain1 /\<Hb-65\>/
-syn match chain1 /\<Hb-66\>/
-syn match chain1 /\<Ic-54\>/
-syn match chain1 /\<Ic-55\>/
-syn match chain1 /\<Ic-56\>/
-syn match chain1 /\<Ic-57\>/
-syn match chain1 /\<Ic-58\>/
-syn match chain1 /\<Ic-59\>/
-syn match chain1 /\<Ic-60\>/
-syn match chain1 /\<Jx-59\>/
-syn match chain1 /\<Jx-60\>/
-syn match chain1 /\<Jx-61\>/
-syn match chain1 /\<Jx-62\>/
-syn match chain1 /\<Jx-63\>/
-syn match chain1 /\<Jx-64\>/
-syn match chain1 /\<Jx-65\>/
-syn match chain1 /\<M-19\>/
-syn match chain1 /\<M-21\>/
-syn match chain1 /\<Nb-49\>/
-syn match chain1 /\<Nb-50\>/
-syn match chain1 /\<Nb-51\>/
-syn match chain1 /\<Nb-52\>/
-syn match chain1 /\<Nb-53\>/
-syn match chain1 /\<Nb-55\>/
-syn match chain1 /\<Nb-56\>/
-syn match chain1 /\<Ny-67\>/
-syn match chain1 /\<Ny-68\>/
-syn match chain1 /\<Ny-69\>/
-syn match chain1 /\<Ny-71\>/
-syn match chain1 /\<O-37\>/
-syn match chain1 /\<O-38\>/
-syn match chain1 /\<O-39\>/
-syn match chain1 /\<O-40\>/
-syn match chain1 /\<O-41\>/
-syn match chain1 /\<O-42\>/
-syn match chain1 /\<O-43\>/
-syn match chain1 /\<Oc-47\>/
-syn match chain1 /\<Oc-48\>/
-syn match chain1 /\<Oc-49\>/
-syn match chain1 /\<Oc-50\>/
-syn match chain1 /\<Oc-51\>/
-syn match chain1 /\<Oc-52\>/
-syn match chain1 /\<Oc-53\>/
-syn match chain1 /\<Oc-54\>/
-syn match chain1 /\<Pm-20\>/
-syn match chain1 /\<Pt-23\>/
-syn match chain1 /\<Pt-27\>/
-syn match chain1 /\<Pw-67\>/
-syn match chain1 /\<Pw-68\>/
-syn match chain1 /\<Pw-69\>/
-syn match chain1 /\<Pw-70\>/
-syn match chain1 /\<Pw-71\>/
-syn match chain1 /\<Pw-72\>/
-syn match chain1 /\<Pw-73\>/
-syn match chain1 /\<Qi-74\>/
-syn match chain1 /\<Qi-75\>/
-syn match chain1 /\<Qi-76\>/
-syn match chain1 /\<Qi-77\>/
-syn match chain1 /\<S-27\>/
-syn match chain1 /\<S-28\>/
-syn match chain1 /\<S-29\>/
-syn match chain1 /\<S-30\>/
-syn match chain1 /\<Xc-29\>/
-syn match chain1 /\<Xc-32\>/
-syn match chain1 /\<Xc-33\>/
-syn match chain1 /\<Xk-50\>/
-syn match chain1 /\<Xk-51\>/
-syn match chain1 /\<Xk-52\>/
-syn match chain1 /\<Xk-53\>/
-syn match chain1 /\<Xk-54\>/
-syn match chain1 /\<Xk-55\>/
-syn match chain1 /\<Xk-56\>/
-syn match chain1 /\<Xk-57\>/
-syn match chain1 /\<Xk-58\>/
-syn match chain1 /\<Xk-59\>/
-syn match chain1 /\<Xl-12\>/
-syn match chain1 /\<Xy-74\>/
-syn match chain1 /\<Xy-75\>/
-syn match chain1 /\<Xy-76\>/
-syn match chain1 /\<Xy-79\>/
-syn match chain1 /\<Yp-55\>/
-syn match chain1 /\<Yp-56\>/
-syn match chain1 /\<Yp-57\>/
-syn match chain1 /\<Yp-58\>/
-syn match chain1 /\<Yp-59\>/
-syn match chain1 /\<Yp-60\>/
-syn match chain1 /\<Yp-61\>/
-syn match chain1 /\<Yp-62\>/
-syn match chain1 /\<Zq-27\>/
-syn match chain1 /\<Zq-28\>/
-syn match chain1 /\<Zq-29\>/
-syn match chain1 /\<Zq-30\>/
-syn match chain1 /\<Zq-31\>/
-syn match chain1 /\<Zz-15\>/
-syn match chain1 /\<Zz-16\>/
-
-syn match chain2 /\<At-61\>/
-syn match chain2 /\<Aw-44\>/
-syn match chain2 /\<Bt-74\>/
-syn match chain2 /\<Bt-76\>/
-syn match chain2 /\<Bt-77\>/
-syn match chain2 /\<Bt-78\>/
-syn match chain2 /\<Dx-19\>/
-syn match chain2 /\<Fw-26\>/
-syn match chain2 /\<Gk-67\>/
-syn match chain2 /\<Gk-68\>/
-syn match chain2 /\<Gk-69\>/
-syn match chain2 /\<Gk-70\>/
-syn match chain2 /\<Gk-76\>/
-syn match chain2 /\<Gk-77\>/
-syn match chain2 /\<Gq-74\>/
-syn match chain2 /\<Gq-75\>/
-syn match chain2 /\<Gq-76\>/
-syn match chain2 /\<Gq-77\>/
-syn match chain2 /\<H-77\>/
-syn match chain2 /\<H-78\>/
-syn match chain2 /\<H-79\>/
-syn match chain2 /\<H-80\>/
-syn match chain2 /\<H-81\>/
-syn match chain2 /\<H-82\>/
-syn match chain2 /\<Hb-57\>/
-syn match chain2 /\<Hb-58\>/
-syn match chain2 /\<Hb-59\>/
-syn match chain2 /\<Hb-67\>/
-syn match chain2 /\<Ic-51\>/
-syn match chain2 /\<Ic-52\>/
-syn match chain2 /\<Ic-53\>/
-syn match chain2 /\<Ic-61\>/
-syn match chain2 /\<Ic-62\>/
-syn match chain2 /\<Jx-56\>/
-syn match chain2 /\<Jx-57\>/
-syn match chain2 /\<Jx-58\>/
-syn match chain2 /\<Nb-47\>/
-syn match chain2 /\<Nb-48\>/
-syn match chain2 /\<Ny-63\>/
-syn match chain2 /\<Ny-64\>/
-syn match chain2 /\<Ny-65\>/
-syn match chain2 /\<Ny-66\>/
-syn match chain2 /\<Ny-70\>/
-syn match chain2 /\<Ny-72\>/
-syn match chain2 /\<Oc-46\>/
-syn match chain2 /\<Pm-21\>/
-syn match chain2 /\<Pq-11\>/
-syn match chain2 /\<Pt-28\>/
-syn match chain2 /\<Pw-65\>/
-syn match chain2 /\<Pw-66\>/
-syn match chain2 /\<Pw-74\>/
-syn match chain2 /\<Qe-60\>/
-syn match chain2 /\<Qi-68\>/
-syn match chain2 /\<Qi-69\>/
-syn match chain2 /\<Qi-70\>/
-syn match chain2 /\<Qi-71\>/
-syn match chain2 /\<Qi-72\>/
-syn match chain2 /\<Qi-73\>/
-syn match chain2 /\<Qi-78\>/
-syn match chain2 /\<Sq-80\>/
-syn match chain2 /\<Sq-81\>/
-syn match chain2 /\<Sq-82\>/
-syn match chain2 /\<Sq-83\>/
-syn match chain2 /\<Sq-84\>/
-syn match chain2 /\<U-79\>/
-syn match chain2 /\<U-80\>/
-syn match chain2 /\<U-81\>/
-syn match chain2 /\<U-82\>/
-syn match chain2 /\<U-83\>/
-syn match chain2 /\<Ua-83\>/
-syn match chain2 /\<Ua-84\>/
-syn match chain2 /\<Ua-85\>/
-syn match chain2 /\<Xy-71\>/
-syn match chain2 /\<Xy-72\>/
-syn match chain2 /\<Xy-73\>/
-syn match chain2 /\<Xy-77\>/
-syn match chain2 /\<Xy-78\>/
-syn match chain2 /\<Yp-54\>/
-syn match chain2 /\<Yp-63\>/
-
-syn match chain3 /\<At-60\>/
-syn match chain3 /\<Bt-75\>/
-syn match chain3 /\<Gk-66\>/
-syn match chain3 /\<Gq-72\>/
-syn match chain3 /\<Gq-72\>/
-syn match chain3 /\<Gq-73\>/
-syn match chain3 /\<H-76\>/
-syn match chain3 /\<Ny-61\>/
-syn match chain3 /\<Ny-62\>/
-syn match chain3 /\<Ny-62\>/
-syn match chain3 /\<Pw-64\>/
-syn match chain3 /\<Qi-67\>/
-syn match chain3 /\<Sq-79\>/
-syn match chain3 /\<U-78\>/
-syn match chain3 /\<U-78\>/
-syn match chain3 /\<U-78\>/
-syn match chain3 /\<Xy-70\>/
-syn match chain3 /\<Af-10\>/
-syn match chain3 /\<Zq-26\>/
-syn match chain3 /\<Xc-28\>/
-syn match chain3 /\<Pt-22\>/
-
-syn match chain4 /\<U-77\>/
-syn match chain4 /\<Bt-73\>/
-syn match chain4 /\<Xy-69\>/
-syn match chain4 /\<O-36\>/
-syn match chain4 /\<O-36\>/
-syn match chain4 /\<H-75\>/
-syn match chain4 /\<Dx-14\>/
-
-syn match chain5 /\<Gq-71\>/
-syn match chain5 /\<Gk-65\>/
-syn match chain5 /\<S-24\>/
-
-syn match chain6 /\<Gy-30\>/
 endif
 
 let     shelldict["1  1 Ju"]="⎥◼◻◻⎢" | let     shelldict["Ju-1"]="⎥◼◻◻⎢"
@@ -20696,6 +20997,7 @@ let     shelldict["20 10 Eb"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢" | let 
 let     shelldict["21 10 Eb"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢" | let     shelldict["Eb-21"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢"
 let     shelldict["22 10 Eb"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢" | let     shelldict["Eb-22"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢"
 let     shelldict["23 10 Eb"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢" | let     shelldict["Eb-23"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢"
+let     shelldict["20 11  P"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢" | let     shelldict["P-20"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢"
 let     shelldict["21 11  P"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢" | let     shelldict["P-21"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢"
 let     shelldict["22 11  P"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢" | let     shelldict["P-22"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢"
 let     shelldict["23 11  P"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢" | let     shelldict["P-23"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢"
@@ -20740,6 +21042,7 @@ let     shelldict["34 16  K"]="⎥◼◼◼ ◼ ◼⎥" | let     shelldict["K-3
 let     shelldict["35 16  K"]="⎥◼◼◼ ◼ ◼⎥" | let     shelldict["K-35"]="⎥◼◼◼ ◼ ◼⎥"
 let     shelldict["36 16  K"]="⎥◼◼◼ ◼ ◼⎥" | let     shelldict["K-36"]="⎥◼◼◼ ◼ ◼⎥"
 let     shelldict["37 16  K"]="⎥◼◼◼ ◼ ◼⎥" | let     shelldict["K-37"]="⎥◼◼◼ ◼ ◼⎥"
+let     shelldict["31 17 Mt"]="⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Mt-31"]="⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["32 17 Mt"]="⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Mt-32"]="⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["33 17 Mt"]="⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Mt-33"]="⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["34 17 Mt"]="⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Mt-34"]="⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥"
@@ -20756,6 +21059,7 @@ let     shelldict["38 18 Lu"]="⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥" | let   
 let     shelldict["39 18 Lu"]="⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Lu-39"]="⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["40 18 Lu"]="⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Lu-40"]="⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["41 18 Lu"]="⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Lu-41"]="⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥"
+let     shelldict["42 18 Lu"]="⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Lu-42"]="⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["35 19 Dx"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Dx-35"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["36 19 Dx"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Dx-36"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["37 19 Dx"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Dx-37"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"
@@ -20766,6 +21070,7 @@ let     shelldict["41 19 Dx"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥" | let   
 let     shelldict["42 19 Dx"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Dx-42"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["43 19 Dx"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Dx-43"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"
 let     shelldict["44 19 Dx"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥" | let     shelldict["Dx-44"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥"
+let     shelldict["37 20 Gd"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥" | let     shelldict["Gd-37"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥"
 let     shelldict["38 20 Gd"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥" | let     shelldict["Gd-38"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥"
 let     shelldict["39 20 Gd"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥" | let     shelldict["Gd-39"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥"
 let     shelldict["40 20 Gd"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥" | let     shelldict["Gd-40"]="⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥"
@@ -20858,6 +21163,7 @@ let     shelldict["58 27 Pg"]="⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["59 27 Pg"]="⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Pg-59"]="⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["60 27 Pg"]="⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Pg-60"]="⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["61 27 Pg"]="⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Pg-61"]="⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥"
+let     shelldict["62 27 Pg"]="⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Pg-62"]="⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["52 28 Qe"]="⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Qe-52"]="⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["53 28 Qe"]="⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Qe-53"]="⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["54 28 Qe"]="⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Qe-54"]="⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥"
@@ -20885,6 +21191,7 @@ let     shelldict["63 29  C"]="⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["64 29  C"]="⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["C-64"]="⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["65 29  C"]="⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["C-65"]="⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["66 29  C"]="⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["C-66"]="⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
+let     shelldict["67 29  C"]="⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["C-67"]="⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["56 30 Ns"]="⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Ns-56"]="⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["57 30 Ns"]="⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Ns-57"]="⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["58 30 Ns"]="⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Ns-58"]="⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
@@ -20912,6 +21219,7 @@ let     shelldict["67 31 Ai"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["68 31 Ai"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Ai-68"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["69 31 Ai"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Ai-69"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["70 31 Ai"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Ai-70"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
+let     shelldict["71 31 Ai"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥" | let     shelldict["Ai-71"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥"
 let     shelldict["59 32  F"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["F-59"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥"
 let     shelldict["60 32  F"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["F-60"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥"
 let     shelldict["61 32  F"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["F-61"]="⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥"
@@ -20956,6 +21264,7 @@ let     shelldict["74 34 Kk"]="⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥"
 let     shelldict["75 34 Kk"]="⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥" | let     shelldict["Kk-75"]="⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥"
 let     shelldict["76 34 Kk"]="⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥" | let     shelldict["Kk-76"]="⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥"
 let     shelldict["77 34 Kk"]="⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥" | let     shelldict["Kk-77"]="⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥"
+let     shelldict["78 34 Kk"]="⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥" | let     shelldict["Kk-78"]="⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥"
 let     shelldict["66 35 Yv"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥" | let     shelldict["Yv-66"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥"
 let     shelldict["67 35 Yv"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥" | let     shelldict["Yv-67"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥"
 let     shelldict["68 35 Yv"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥" | let     shelldict["Yv-68"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥"
@@ -20971,6 +21280,7 @@ let     shelldict["77 35 Yv"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥"
 let     shelldict["78 35 Yv"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥" | let     shelldict["Yv-78"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥"
 let     shelldict["79 35 Yv"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥" | let     shelldict["Yv-79"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥"
 let     shelldict["80 35 Yv"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥" | let     shelldict["Yv-80"]="⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥"
+let     shelldict["67 36 Cj"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥" | let     shelldict["Cj-67"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥"
 let     shelldict["68 36 Cj"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥" | let     shelldict["Cj-68"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥"
 let     shelldict["69 36 Cj"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥" | let     shelldict["Cj-69"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥"
 let     shelldict["70 36 Cj"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥" | let     shelldict["Cj-70"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥"
@@ -20985,6 +21295,7 @@ let     shelldict["78 36 Cj"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥"
 let     shelldict["79 36 Cj"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥" | let     shelldict["Cj-79"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥"
 let     shelldict["80 36 Cj"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥" | let     shelldict["Cj-80"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥"
 let     shelldict["81 36 Cj"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥" | let     shelldict["Cj-81"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥"
+let     shelldict["82 36 Cj"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥" | let     shelldict["Cj-82"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥"
 let     shelldict["70 37 Iu"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["Iu-70"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["71 37 Iu"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["Iu-71"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["72 37 Iu"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["Iu-72"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥"
@@ -21000,6 +21311,7 @@ let     shelldict["81 37 Iu"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["82 37 Iu"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["Iu-82"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["83 37 Iu"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["Iu-83"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["84 37 Iu"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["Iu-84"]="⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥"
+let     shelldict["73 38  D"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["D-73"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["74 38  D"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["D-74"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["75 38  D"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["D-75"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["76 38  D"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["D-76"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
@@ -21013,6 +21325,7 @@ let     shelldict["83 38  D"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["84 38  D"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["D-84"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["85 38  D"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["D-85"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["86 38  D"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["D-86"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
+let     shelldict["73 39 Co"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥" | let     shelldict["Co-73"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥"
 let     shelldict["74 39 Co"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["Co-74"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["75 39 Co"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥" | let     shelldict["Co-75"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥"
 let     shelldict["76 39 Co"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥" | let     shelldict["Co-76"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥"
@@ -21027,6 +21340,7 @@ let     shelldict["85 39 Co"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥"
 let     shelldict["86 39 Co"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥" | let     shelldict["Co-86"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥"
 let     shelldict["87 39 Co"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥" | let     shelldict["Co-87"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥"
 let     shelldict["88 39 Co"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥" | let     shelldict["Co-88"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥"
+let     shelldict["89 39 Co"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥" | let     shelldict["Co-89"]="⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥"
 let     shelldict["75 40  W"]="⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥" | let     shelldict["W-75"]="⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥"
 let     shelldict["76 40  W"]="⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥" | let     shelldict["W-76"]="⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥"
 let     shelldict["77 40  W"]="⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥" | let     shelldict["W-77"]="⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥"
@@ -21083,6 +21397,7 @@ let     shelldict["93 42  N"]="⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥" | let     s
 let     shelldict["94 42  N"]="⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["N-94"]="⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥"
 let     shelldict["95 42  N"]="⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["N-95"]="⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥"
 let     shelldict["96 42  N"]="⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["N-96"]="⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥"
+let     shelldict["80 43  U"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["U-80"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥"
 let     shelldict["81 43  U"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["U-81"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥"
 let     shelldict["82 43  U"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["U-82"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥"
 let     shelldict["83 43  U"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["U-83"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥"
@@ -21102,6 +21417,7 @@ let     shelldict["96 43  U"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥" | let     s
 let     shelldict["97 43  U"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["U-97"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥"
 let     shelldict["98 43  U"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["U-98"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥"
 let     shelldict["99 43  U"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥" | let     shelldict["U-99"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥"
+let     shelldict["82 44 Vl"]="⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥" | let     shelldict["Vl-82"]="⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥"
 let     shelldict["83 44 Vl"]="⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥" | let     shelldict["Vl-83"]="⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥"
 let     shelldict["84 44 Vl"]="⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥" | let     shelldict["Vl-84"]="⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥"
 let     shelldict["85 44 Vl"]="⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥" | let     shelldict["Vl-85"]="⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥"
@@ -21294,6 +21610,7 @@ let     shelldict["115 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let  
 let     shelldict["116 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let     shelldict["Cv-116"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥"
 let     shelldict["117 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let     shelldict["Cv-117"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥"
 let     shelldict["118 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let     shelldict["Cv-118"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥"
+let     shelldict["119 52 Cv"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥" | let     shelldict["Cv-119"]="⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥"
 let     shelldict["98 53 Vt"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥" | let     shelldict["Vt-98"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥"
 let     shelldict["99 53 Vt"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥" | let     shelldict["Vt-99"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥"
 let     shelldict["100 53 Vt"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥" | let     shelldict["Vt-100"]="⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥"
@@ -21768,6 +22085,7 @@ let shelldictlong["20 10 Eb"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢ ⎥◻�
 let shelldictlong["21 10 Eb"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Eb-21"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["22 10 Eb"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Eb-22"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["23 10 Eb"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Eb-23"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◻⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["20 11  P"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["P-20"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["21 11  P"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["P-21"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["22 11  P"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["P-22"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["23 11  P"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["P-23"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◻◻◻ ◻ ◻⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -21812,6 +22130,7 @@ let shelldictlong["34 16  K"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["35 16  K"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["K-35"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["36 16  K"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["K-36"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["37 16  K"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["K-37"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◻◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["31 17 Mt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Mt-31"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["32 17 Mt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Mt-32"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["33 17 Mt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Mt-33"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["34 17 Mt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Mt-34"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◻◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -21828,6 +22147,7 @@ let shelldictlong["38 18 Lu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["39 18 Lu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Lu-39"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["40 18 Lu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Lu-40"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["41 18 Lu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Lu-41"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["42 18 Lu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Lu-42"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◻◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["35 19 Dx"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Dx-35"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["36 19 Dx"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Dx-36"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["37 19 Dx"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Dx-37"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -21838,6 +22158,7 @@ let shelldictlong["41 19 Dx"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["42 19 Dx"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Dx-42"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["43 19 Dx"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Dx-43"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["44 19 Dx"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Dx-44"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◻⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["37 20 Gd"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Gd-37"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["38 20 Gd"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Gd-38"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["39 20 Gd"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Gd-39"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["40 20 Gd"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Gd-40"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◻ ◼◻◻ ◻◻◻ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -21930,6 +22251,7 @@ let shelldictlong["58 27 Pg"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["59 27 Pg"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Pg-59"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["60 27 Pg"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Pg-60"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["61 27 Pg"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Pg-61"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["62 27 Pg"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Pg-62"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◻◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["52 28 Qe"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Qe-52"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["53 28 Qe"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Qe-53"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["54 28 Qe"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Qe-54"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◻◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -21957,6 +22279,7 @@ let shelldictlong["63 29  C"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["64 29  C"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["C-64"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["65 29  C"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["C-65"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["66 29  C"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["C-66"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["67 29  C"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["C-67"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◻◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["56 30 Ns"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Ns-56"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["57 30 Ns"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Ns-57"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["58 30 Ns"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Ns-58"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◻◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -21984,6 +22307,7 @@ let shelldictlong["67 31 Ai"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["68 31 Ai"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Ai-68"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["69 31 Ai"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Ai-69"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["70 31 Ai"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Ai-70"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["71 31 Ai"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Ai-71"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["59 32  F"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["F-59"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["60 32  F"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["F-60"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["61 32  F"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["F-61"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◻◻ ◼◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22028,6 +22352,7 @@ let shelldictlong["74 34 Kk"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["75 34 Kk"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Kk-75"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["76 34 Kk"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Kk-76"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["77 34 Kk"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Kk-77"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["78 34 Kk"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Kk-78"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◻◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["66 35 Yv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Yv-66"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["67 35 Yv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Yv-67"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["68 35 Yv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Yv-68"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22043,6 +22368,7 @@ let shelldictlong["77 35 Yv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["78 35 Yv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Yv-78"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["79 35 Yv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Yv-79"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["80 35 Yv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Yv-80"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◻ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["67 36 Cj"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cj-67"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["68 36 Cj"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cj-68"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["69 36 Cj"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cj-69"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["70 36 Cj"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cj-70"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22057,6 +22383,7 @@ let shelldictlong["78 36 Cj"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["79 36 Cj"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cj-79"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["80 36 Cj"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cj-80"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["81 36 Cj"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cj-81"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["82 36 Cj"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cj-82"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["70 37 Iu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Iu-70"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["71 37 Iu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Iu-71"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["72 37 Iu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Iu-72"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22072,6 +22399,7 @@ let shelldictlong["81 37 Iu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["82 37 Iu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Iu-82"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["83 37 Iu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Iu-83"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["84 37 Iu"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Iu-84"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◻ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["73 38  D"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["D-73"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["74 38  D"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["D-74"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["75 38  D"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["D-75"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["76 38  D"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["D-76"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22085,6 +22413,7 @@ let shelldictlong["83 38  D"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["84 38  D"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["D-84"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["85 38  D"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["D-85"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["86 38  D"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["D-86"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["73 39 Co"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Co-73"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["74 39 Co"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Co-74"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["75 39 Co"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Co-75"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◻ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["76 39 Co"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Co-76"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22099,6 +22428,7 @@ let shelldictlong["85 39 Co"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["86 39 Co"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Co-86"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["87 39 Co"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Co-87"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["88 39 Co"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Co-88"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["89 39 Co"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Co-89"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["75 40  W"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["W-75"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["76 40  W"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["W-76"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["77 40  W"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["W-77"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◻◻◻ ◻◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22155,6 +22485,7 @@ let shelldictlong["93 42  N"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["94 42  N"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["N-94"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["95 42  N"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["N-95"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["96 42  N"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["N-96"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◻ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["80 43  U"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["U-80"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["81 43  U"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["U-81"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["82 43  U"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["U-82"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["83 43  U"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["U-83"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22174,6 +22505,7 @@ let shelldictlong["96 43  U"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼�
 let shelldictlong["97 43  U"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["U-97"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["98 43  U"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["U-98"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["99 43  U"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["U-99"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["82 44 Vl"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vl-82"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["83 44 Vl"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vl-83"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["84 44 Vl"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vl-84"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["85 44 Vl"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vl-85"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◻ ◼◻◻ ◼◻⎥ ⎥◻ ◻◻◻ ◻◻◻ ◻◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22366,6 +22698,7 @@ let shelldictlong["115 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼
 let shelldictlong["116 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cv-116"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["117 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cv-117"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["118 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cv-118"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
+let shelldictlong["119 52 Cv"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Cv-119"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◻◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["98 53 Vt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vt-98"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["99 53 Vt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vt-99"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
 let shelldictlong["100 53 Vt"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥" | let shelldictlong["Vt-100"]="⎥◼◼◼◼◼◼◼ ◼◼◼ ◼⎢ ⎥◼◼◼ ◼ ◼⎥ ⎥◼◼◼ ◼◼◼ ◼◼◼ ◼⎥ ⎥◼◼◼◼ ◼◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◼◼ ◼◼◼ ◼◼⎥ ⎥◼ ◼◻◻ ◼◼◻ ◼◻◻⎥ ⎥◻◻◻ ◻◻◻◻◻◻◻⎥"
@@ -22840,6 +23173,7 @@ let seriesdict["20 10 Eb"]="nonmetal" | let seriesdict["Eb-20"]="nonmetal"
 let seriesdict["21 10 Eb"]="nonmetal" | let seriesdict["Eb-21"]="nonmetal"
 let seriesdict["22 10 Eb"]="nonmetal" | let seriesdict["Eb-22"]="nonmetal"
 let seriesdict["23 10 Eb"]="nonmetal" | let seriesdict["Eb-23"]="nonmetal"
+let seriesdict["20 11  P"]="noble" | let seriesdict["P-20"]="noble"
 let seriesdict["21 11  P"]="noble" | let seriesdict["P-21"]="noble"
 let seriesdict["22 11  P"]="noble" | let seriesdict["P-22"]="noble"
 let seriesdict["23 11  P"]="noble" | let seriesdict["P-23"]="noble"
@@ -22884,6 +23218,7 @@ let seriesdict["34 16  K"]="noble" | let seriesdict["K-34"]="noble"
 let seriesdict["35 16  K"]="noble" | let seriesdict["K-35"]="noble"
 let seriesdict["36 16  K"]="noble" | let seriesdict["K-36"]="noble"
 let seriesdict["37 16  K"]="noble" | let seriesdict["K-37"]="noble"
+let seriesdict["31 17 Mt"]="alkaline" | let seriesdict["Mt-31"]="alkaline"
 let seriesdict["32 17 Mt"]="alkaline" | let seriesdict["Mt-32"]="alkaline"
 let seriesdict["33 17 Mt"]="alkaline" | let seriesdict["Mt-33"]="alkaline"
 let seriesdict["34 17 Mt"]="alkaline" | let seriesdict["Mt-34"]="alkaline"
@@ -22900,6 +23235,7 @@ let seriesdict["38 18 Lu"]="metal" | let seriesdict["Lu-38"]="metal"
 let seriesdict["39 18 Lu"]="metal" | let seriesdict["Lu-39"]="metal"
 let seriesdict["40 18 Lu"]="metal" | let seriesdict["Lu-40"]="metal"
 let seriesdict["41 18 Lu"]="metal" | let seriesdict["Lu-41"]="metal"
+let seriesdict["42 18 Lu"]="metal" | let seriesdict["Lu-42"]="metal"
 let seriesdict["35 19 Dx"]="metal" | let seriesdict["Dx-35"]="metal"
 let seriesdict["36 19 Dx"]="metal" | let seriesdict["Dx-36"]="metal"
 let seriesdict["37 19 Dx"]="metal" | let seriesdict["Dx-37"]="metal"
@@ -22910,6 +23246,7 @@ let seriesdict["41 19 Dx"]="metal" | let seriesdict["Dx-41"]="metal"
 let seriesdict["42 19 Dx"]="metal" | let seriesdict["Dx-42"]="metal"
 let seriesdict["43 19 Dx"]="metal" | let seriesdict["Dx-43"]="metal"
 let seriesdict["44 19 Dx"]="metal" | let seriesdict["Dx-44"]="metal"
+let seriesdict["37 20 Gd"]="metal" | let seriesdict["Gd-37"]="metal"
 let seriesdict["38 20 Gd"]="metal" | let seriesdict["Gd-38"]="metal"
 let seriesdict["39 20 Gd"]="metal" | let seriesdict["Gd-39"]="metal"
 let seriesdict["40 20 Gd"]="metal" | let seriesdict["Gd-40"]="metal"
@@ -23002,6 +23339,7 @@ let seriesdict["58 27 Pg"]="alkaline" | let seriesdict["Pg-58"]="alkaline"
 let seriesdict["59 27 Pg"]="alkaline" | let seriesdict["Pg-59"]="alkaline"
 let seriesdict["60 27 Pg"]="alkaline" | let seriesdict["Pg-60"]="alkaline"
 let seriesdict["61 27 Pg"]="alkaline" | let seriesdict["Pg-61"]="alkaline"
+let seriesdict["62 27 Pg"]="alkaline" | let seriesdict["Pg-62"]="alkaline"
 let seriesdict["52 28 Qe"]="metal" | let seriesdict["Qe-52"]="metal"
 let seriesdict["53 28 Qe"]="metal" | let seriesdict["Qe-53"]="metal"
 let seriesdict["54 28 Qe"]="metal" | let seriesdict["Qe-54"]="metal"
@@ -23029,6 +23367,7 @@ let seriesdict["63 29  C"]="metal" | let seriesdict["C-63"]="metal"
 let seriesdict["64 29  C"]="metal" | let seriesdict["C-64"]="metal"
 let seriesdict["65 29  C"]="metal" | let seriesdict["C-65"]="metal"
 let seriesdict["66 29  C"]="metal" | let seriesdict["C-66"]="metal"
+let seriesdict["67 29  C"]="metal" | let seriesdict["C-67"]="metal"
 let seriesdict["56 30 Ns"]="metal" | let seriesdict["Ns-56"]="metal"
 let seriesdict["57 30 Ns"]="metal" | let seriesdict["Ns-57"]="metal"
 let seriesdict["58 30 Ns"]="metal" | let seriesdict["Ns-58"]="metal"
@@ -23056,6 +23395,7 @@ let seriesdict["67 31 Ai"]="metal" | let seriesdict["Ai-67"]="metal"
 let seriesdict["68 31 Ai"]="metal" | let seriesdict["Ai-68"]="metal"
 let seriesdict["69 31 Ai"]="metal" | let seriesdict["Ai-69"]="metal"
 let seriesdict["70 31 Ai"]="metal" | let seriesdict["Ai-70"]="metal"
+let seriesdict["71 31 Ai"]="metal" | let seriesdict["Ai-71"]="metal"
 let seriesdict["59 32  F"]="metal" | let seriesdict["F-59"]="metal"
 let seriesdict["60 32  F"]="metal" | let seriesdict["F-60"]="metal"
 let seriesdict["61 32  F"]="metal" | let seriesdict["F-61"]="metal"
@@ -23100,6 +23440,7 @@ let seriesdict["74 34 Kk"]="metal" | let seriesdict["Kk-74"]="metal"
 let seriesdict["75 34 Kk"]="metal" | let seriesdict["Kk-75"]="metal"
 let seriesdict["76 34 Kk"]="metal" | let seriesdict["Kk-76"]="metal"
 let seriesdict["77 34 Kk"]="metal" | let seriesdict["Kk-77"]="metal"
+let seriesdict["78 34 Kk"]="metal" | let seriesdict["Kk-78"]="metal"
 let seriesdict["66 35 Yv"]="nonmetal" | let seriesdict["Yv-66"]="nonmetal"
 let seriesdict["67 35 Yv"]="nonmetal" | let seriesdict["Yv-67"]="nonmetal"
 let seriesdict["68 35 Yv"]="nonmetal" | let seriesdict["Yv-68"]="nonmetal"
@@ -23115,6 +23456,7 @@ let seriesdict["77 35 Yv"]="nonmetal" | let seriesdict["Yv-77"]="nonmetal"
 let seriesdict["78 35 Yv"]="nonmetal" | let seriesdict["Yv-78"]="nonmetal"
 let seriesdict["79 35 Yv"]="nonmetal" | let seriesdict["Yv-79"]="nonmetal"
 let seriesdict["80 35 Yv"]="nonmetal" | let seriesdict["Yv-80"]="nonmetal"
+let seriesdict["67 36 Cj"]="nonmetal" | let seriesdict["Cj-67"]="nonmetal"
 let seriesdict["68 36 Cj"]="nonmetal" | let seriesdict["Cj-68"]="nonmetal"
 let seriesdict["69 36 Cj"]="nonmetal" | let seriesdict["Cj-69"]="nonmetal"
 let seriesdict["70 36 Cj"]="nonmetal" | let seriesdict["Cj-70"]="nonmetal"
@@ -23129,6 +23471,7 @@ let seriesdict["78 36 Cj"]="nonmetal" | let seriesdict["Cj-78"]="nonmetal"
 let seriesdict["79 36 Cj"]="nonmetal" | let seriesdict["Cj-79"]="nonmetal"
 let seriesdict["80 36 Cj"]="nonmetal" | let seriesdict["Cj-80"]="nonmetal"
 let seriesdict["81 36 Cj"]="nonmetal" | let seriesdict["Cj-81"]="nonmetal"
+let seriesdict["82 36 Cj"]="nonmetal" | let seriesdict["Cj-82"]="nonmetal"
 let seriesdict["70 37 Iu"]="nonmetal" | let seriesdict["Iu-70"]="nonmetal"
 let seriesdict["71 37 Iu"]="nonmetal" | let seriesdict["Iu-71"]="nonmetal"
 let seriesdict["72 37 Iu"]="nonmetal" | let seriesdict["Iu-72"]="nonmetal"
@@ -23144,6 +23487,7 @@ let seriesdict["81 37 Iu"]="nonmetal" | let seriesdict["Iu-81"]="nonmetal"
 let seriesdict["82 37 Iu"]="nonmetal" | let seriesdict["Iu-82"]="nonmetal"
 let seriesdict["83 37 Iu"]="nonmetal" | let seriesdict["Iu-83"]="nonmetal"
 let seriesdict["84 37 Iu"]="nonmetal" | let seriesdict["Iu-84"]="nonmetal"
+let seriesdict["73 38  D"]="nonmetal" | let seriesdict["D-73"]="nonmetal"
 let seriesdict["74 38  D"]="nonmetal" | let seriesdict["D-74"]="nonmetal"
 let seriesdict["75 38  D"]="nonmetal" | let seriesdict["D-75"]="nonmetal"
 let seriesdict["76 38  D"]="nonmetal" | let seriesdict["D-76"]="nonmetal"
@@ -23157,6 +23501,7 @@ let seriesdict["83 38  D"]="nonmetal" | let seriesdict["D-83"]="nonmetal"
 let seriesdict["84 38  D"]="nonmetal" | let seriesdict["D-84"]="nonmetal"
 let seriesdict["85 38  D"]="nonmetal" | let seriesdict["D-85"]="nonmetal"
 let seriesdict["86 38  D"]="nonmetal" | let seriesdict["D-86"]="nonmetal"
+let seriesdict["73 39 Co"]="noble" | let seriesdict["Co-73"]="noble"
 let seriesdict["74 39 Co"]="noble" | let seriesdict["Co-74"]="noble"
 let seriesdict["75 39 Co"]="noble" | let seriesdict["Co-75"]="noble"
 let seriesdict["76 39 Co"]="noble" | let seriesdict["Co-76"]="noble"
@@ -23171,6 +23516,7 @@ let seriesdict["85 39 Co"]="noble" | let seriesdict["Co-85"]="noble"
 let seriesdict["86 39 Co"]="noble" | let seriesdict["Co-86"]="noble"
 let seriesdict["87 39 Co"]="noble" | let seriesdict["Co-87"]="noble"
 let seriesdict["88 39 Co"]="noble" | let seriesdict["Co-88"]="noble"
+let seriesdict["89 39 Co"]="noble" | let seriesdict["Co-89"]="noble"
 let seriesdict["75 40  W"]="alkaline" | let seriesdict["W-75"]="alkaline"
 let seriesdict["76 40  W"]="alkaline" | let seriesdict["W-76"]="alkaline"
 let seriesdict["77 40  W"]="alkaline" | let seriesdict["W-77"]="alkaline"
@@ -23227,6 +23573,7 @@ let seriesdict["93 42  N"]="metal" | let seriesdict["N-93"]="metal"
 let seriesdict["94 42  N"]="metal" | let seriesdict["N-94"]="metal"
 let seriesdict["95 42  N"]="metal" | let seriesdict["N-95"]="metal"
 let seriesdict["96 42  N"]="metal" | let seriesdict["N-96"]="metal"
+let seriesdict["80 43  U"]="metal" | let seriesdict["U-80"]="metal"
 let seriesdict["81 43  U"]="metal" | let seriesdict["U-81"]="metal"
 let seriesdict["82 43  U"]="metal" | let seriesdict["U-82"]="metal"
 let seriesdict["83 43  U"]="metal" | let seriesdict["U-83"]="metal"
@@ -23246,6 +23593,7 @@ let seriesdict["96 43  U"]="metal" | let seriesdict["U-96"]="metal"
 let seriesdict["97 43  U"]="metal" | let seriesdict["U-97"]="metal"
 let seriesdict["98 43  U"]="metal" | let seriesdict["U-98"]="metal"
 let seriesdict["99 43  U"]="metal" | let seriesdict["U-99"]="metal"
+let seriesdict["82 44 Vl"]="metal" | let seriesdict["Vl-82"]="metal"
 let seriesdict["83 44 Vl"]="metal" | let seriesdict["Vl-83"]="metal"
 let seriesdict["84 44 Vl"]="metal" | let seriesdict["Vl-84"]="metal"
 let seriesdict["85 44 Vl"]="metal" | let seriesdict["Vl-85"]="metal"
@@ -23438,6 +23786,7 @@ let seriesdict["115 52 Cv"]="metal" | let seriesdict["Cv-115"]="metal"
 let seriesdict["116 52 Cv"]="metal" | let seriesdict["Cv-116"]="metal"
 let seriesdict["117 52 Cv"]="metal" | let seriesdict["Cv-117"]="metal"
 let seriesdict["118 52 Cv"]="metal" | let seriesdict["Cv-118"]="metal"
+let seriesdict["119 52 Cv"]="metal" | let seriesdict["Cv-119"]="metal"
 let seriesdict["98 53 Vt"]="metal" | let seriesdict["Vt-98"]="metal"
 let seriesdict["99 53 Vt"]="metal" | let seriesdict["Vt-99"]="metal"
 let seriesdict["100 53 Vt"]="metal" | let seriesdict["Vt-100"]="metal"
@@ -23912,6 +24261,7 @@ let otomlookup["20 10"]="Eb-20"
 let otomlookup["21 10"]="Eb-21"
 let otomlookup["22 10"]="Eb-22"
 let otomlookup["23 10"]="Eb-23"
+let otomlookup["20 11"]="P-20"
 let otomlookup["21 11"]="P-21"
 let otomlookup["22 11"]="P-22"
 let otomlookup["23 11"]="P-23"
@@ -23956,6 +24306,7 @@ let otomlookup["34 16"]="K-34"
 let otomlookup["35 16"]="K-35"
 let otomlookup["36 16"]="K-36"
 let otomlookup["37 16"]="K-37"
+let otomlookup["31 17"]="Mt-31"
 let otomlookup["32 17"]="Mt-32"
 let otomlookup["33 17"]="Mt-33"
 let otomlookup["34 17"]="Mt-34"
@@ -23972,6 +24323,7 @@ let otomlookup["38 18"]="Lu-38"
 let otomlookup["39 18"]="Lu-39"
 let otomlookup["40 18"]="Lu-40"
 let otomlookup["41 18"]="Lu-41"
+let otomlookup["42 18"]="Lu-42"
 let otomlookup["35 19"]="Dx-35"
 let otomlookup["36 19"]="Dx-36"
 let otomlookup["37 19"]="Dx-37"
@@ -23982,6 +24334,7 @@ let otomlookup["41 19"]="Dx-41"
 let otomlookup["42 19"]="Dx-42"
 let otomlookup["43 19"]="Dx-43"
 let otomlookup["44 19"]="Dx-44"
+let otomlookup["37 20"]="Gd-37"
 let otomlookup["38 20"]="Gd-38"
 let otomlookup["39 20"]="Gd-39"
 let otomlookup["40 20"]="Gd-40"
@@ -24074,6 +24427,7 @@ let otomlookup["58 27"]="Pg-58"
 let otomlookup["59 27"]="Pg-59"
 let otomlookup["60 27"]="Pg-60"
 let otomlookup["61 27"]="Pg-61"
+let otomlookup["62 27"]="Pg-62"
 let otomlookup["52 28"]="Qe-52"
 let otomlookup["53 28"]="Qe-53"
 let otomlookup["54 28"]="Qe-54"
@@ -24101,6 +24455,7 @@ let otomlookup["63 29"]="C-63"
 let otomlookup["64 29"]="C-64"
 let otomlookup["65 29"]="C-65"
 let otomlookup["66 29"]="C-66"
+let otomlookup["67 29"]="C-67"
 let otomlookup["56 30"]="Ns-56"
 let otomlookup["57 30"]="Ns-57"
 let otomlookup["58 30"]="Ns-58"
@@ -24128,6 +24483,7 @@ let otomlookup["67 31"]="Ai-67"
 let otomlookup["68 31"]="Ai-68"
 let otomlookup["69 31"]="Ai-69"
 let otomlookup["70 31"]="Ai-70"
+let otomlookup["71 31"]="Ai-71"
 let otomlookup["59 32"]="F-59"
 let otomlookup["60 32"]="F-60"
 let otomlookup["61 32"]="F-61"
@@ -24172,6 +24528,7 @@ let otomlookup["74 34"]="Kk-74"
 let otomlookup["75 34"]="Kk-75"
 let otomlookup["76 34"]="Kk-76"
 let otomlookup["77 34"]="Kk-77"
+let otomlookup["78 34"]="Kk-78"
 let otomlookup["66 35"]="Yv-66"
 let otomlookup["67 35"]="Yv-67"
 let otomlookup["68 35"]="Yv-68"
@@ -24187,6 +24544,7 @@ let otomlookup["77 35"]="Yv-77"
 let otomlookup["78 35"]="Yv-78"
 let otomlookup["79 35"]="Yv-79"
 let otomlookup["80 35"]="Yv-80"
+let otomlookup["67 36"]="Cj-67"
 let otomlookup["68 36"]="Cj-68"
 let otomlookup["69 36"]="Cj-69"
 let otomlookup["70 36"]="Cj-70"
@@ -24201,6 +24559,7 @@ let otomlookup["78 36"]="Cj-78"
 let otomlookup["79 36"]="Cj-79"
 let otomlookup["80 36"]="Cj-80"
 let otomlookup["81 36"]="Cj-81"
+let otomlookup["82 36"]="Cj-82"
 let otomlookup["70 37"]="Iu-70"
 let otomlookup["71 37"]="Iu-71"
 let otomlookup["72 37"]="Iu-72"
@@ -24216,6 +24575,7 @@ let otomlookup["81 37"]="Iu-81"
 let otomlookup["82 37"]="Iu-82"
 let otomlookup["83 37"]="Iu-83"
 let otomlookup["84 37"]="Iu-84"
+let otomlookup["73 38"]="D-73"
 let otomlookup["74 38"]="D-74"
 let otomlookup["75 38"]="D-75"
 let otomlookup["76 38"]="D-76"
@@ -24229,6 +24589,7 @@ let otomlookup["83 38"]="D-83"
 let otomlookup["84 38"]="D-84"
 let otomlookup["85 38"]="D-85"
 let otomlookup["86 38"]="D-86"
+let otomlookup["73 39"]="Co-73"
 let otomlookup["74 39"]="Co-74"
 let otomlookup["75 39"]="Co-75"
 let otomlookup["76 39"]="Co-76"
@@ -24243,6 +24604,7 @@ let otomlookup["85 39"]="Co-85"
 let otomlookup["86 39"]="Co-86"
 let otomlookup["87 39"]="Co-87"
 let otomlookup["88 39"]="Co-88"
+let otomlookup["89 39"]="Co-89"
 let otomlookup["75 40"]="W-75"
 let otomlookup["76 40"]="W-76"
 let otomlookup["77 40"]="W-77"
@@ -24299,6 +24661,7 @@ let otomlookup["93 42"]="N-93"
 let otomlookup["94 42"]="N-94"
 let otomlookup["95 42"]="N-95"
 let otomlookup["96 42"]="N-96"
+let otomlookup["80 43"]="U-80"
 let otomlookup["81 43"]="U-81"
 let otomlookup["82 43"]="U-82"
 let otomlookup["83 43"]="U-83"
@@ -24318,6 +24681,7 @@ let otomlookup["96 43"]="U-96"
 let otomlookup["97 43"]="U-97"
 let otomlookup["98 43"]="U-98"
 let otomlookup["99 43"]="U-99"
+let otomlookup["82 44"]="Vl-82"
 let otomlookup["83 44"]="Vl-83"
 let otomlookup["84 44"]="Vl-84"
 let otomlookup["85 44"]="Vl-85"
@@ -24510,6 +24874,7 @@ let otomlookup["115 52"]="Cv-115"
 let otomlookup["116 52"]="Cv-116"
 let otomlookup["117 52"]="Cv-117"
 let otomlookup["118 52"]="Cv-118"
+let otomlookup["119 52"]="Cv-119"
 let otomlookup["98 53"]="Vt-98"
 let otomlookup["99 53"]="Vt-99"
 let otomlookup["100 53"]="Vt-100"
