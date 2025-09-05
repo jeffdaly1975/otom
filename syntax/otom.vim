@@ -6,7 +6,12 @@ if exists("b:current_syntax")
   finish
 endif
 
+" consider dashes and periods to be word-parts
 set iskeyword+=-
+set iskeyword+=.
+
+" map Spacebar so I can be on an isotope and hit space and see the chain count
+nnoremap <Space> :echo map(synstack(line("."), col(".")), 'synIDattr(v:val, "name")')<CR>
 
 syn match Datestamp /\<\d\d\d\d-\d\d-\d\d.\w\w\w\.\w\w\w\>/
 syn match Timestamp /\<\d\d:\d\d:\d\d\>\(\s*\w\wT\)\=/
