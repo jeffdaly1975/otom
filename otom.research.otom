@@ -1,3 +1,17 @@
+2025-09-05 Sep.Fri 14:51:30 Can i figure out how much energy is actually required for a reaction without performing multiple reaction&analysis passes to find it? Can I just calculate it?
+
+[.] find some examples in small inputs (Sr-1) medium (Kk-70) and large (Ax-110) to see how they cost
+
+Hmm. Dz-7+Dz-7 and As-7+As-7 both result in Ct-14, but the As-7 one takes twice the energy. Is there any reason? Is it because the Dz-7 one lands on an intermediate isotope T-14 which does beta+ decay while the other lands on Vi-14 and does beta- decay?
+
+ 1-chain Ct-14  ::   237.38 |   Dz-7⁺ +   Dz-7⁺   +[   237.38 -  20000] => Ct-14               | decay, nuclear               | OTOMRO       ? |
+ 1-chain Ct-14  ::   481.30 |   As-7∙ +   As-7∙   +[   481.30 -    483] => Ct-14               | decay, nuclear               | OTOMRO       ? |
+
+|   As-7∙ +   As-7∙  + 1000 => ⬆ Ct-14  +     492.80 |     507.20 | decay, nuclear               | intermediate isotope -> Vi-14⁻ (0.513) => Ct-14
+|   Dz-7⁺ +   Dz-7⁺  +  300 => ⬇ Ct-14  +      59.52 |     240.48 | decay, nuclear               | intermediate isotope -> T-14⁺ (0.286) => Ct-14
+
+
+
 2025-09-04 Sep.Thu 11:14:14
 adding decay outputs to the math file
 %s/-> \(\w\+-\d\+\)\zs$/\=decaytextchar[decaydict[submatch(1)]] . " (" . stabilitydict[submatch(1)] . ")"
@@ -15,7 +29,7 @@ Found some possible shorter chains already:
 | Cl-25⁺  + Ux-48⁺  |  0c +  5c | 13773.75 | -> Co-73⁺  (0.492) => D-73
 
 8-chain reduced to 2-chain???
-| Mt-32⁺  + Uq-43⁺  |  0c +  1c |   768.73 | -> Co-75⁺  (0.657) => D-75 [ ]
+| Mt-32⁺  + Uq-43⁺  |  0c +  1c |   768.73 | -> Co-75⁺  (0.657) => D-75 [r]
 | K-31⁺   + Pb-44⁺  |  0c +  1c |   873.35 | -> Co-75⁺  (0.657) => D-75
 | P-21⁺   + Qe-54⁺  |  0c +  1c |  1099.30 | -> Co-75⁺  (0.657) => D-75
 | Cl-25⁺  + Ux-50⁺  |  0c +  1c |  1103.87 | -> Co-75⁺  (0.657) => D-75
@@ -28,8 +42,8 @@ Found some possible shorter chains already:
 | Ct-13⁺  + F-62⁺   |  0c +  1c |  1438.50 | -> Co-75⁺  (0.657) => D-75
 | Vi-10⁺  + Gy-65⁺  |  0c +  1c |  1603.06 | -> Co-75⁺  (0.657) => D-75
 
-[ ]|  Vi-11⁺ +  Mt-32⁺   +[   768.73 -   5000] => Uq-43               |
-[ ]| Mt-32⁺  + Uq-43⁺    +   3000 -> Co-75⁺  (0.657) => D-75
+[r]|  Vi-11⁺ +  Mt-32⁺   +[   768.73 -   5000] => Uq-43               | used  758.63 nuclear+decay
+[r]| Mt-32⁺  + Uq-43⁺    +   2400 -> Co-75⁺  (0.657) => D-75          | used 1779.58 nuclear+decay
 
 8-chain reduced to 2-chain???
 | Ct-13⁺  + C-55⁺   |  0c +  1c |  1199.07 | -> Cj-68⁺  (0.587) => Yv-68
@@ -872,6 +886,14 @@ Found some possible shorter chains already:
 
 4-chain reduced to 2-chain
 | Vi-10⁺  + Uq-42⁺  |  0c +  1c |   596.28 | -> Qe-52⁺  (0.615) => Pg-52
+
+[r] 1-chain Uq-42  ::   596.28 |  Vi-10⁺ +  Mt-32⁺   +[   596.28 -   5000] => Uq-42     | used 590.58
+[r]                            |  Vi-10⁺ +  Uq-42⁺  + 1200 -> Qe-52⁺  (0.615) => Pg-52  | used 737.11 nuclear+decay
+
+reduce it more
+[r]|  Vi-10⁺ +  Mt-32⁺   +[   590.58 -   5000] => Uq-42        | used 590.28
+[r]|  Vi-10⁺ +  Uq-42⁺   +    737.11           => Pg-52 +23.99 | used 714.01 but probably could reduce more
+
 
 5-chain reduced to 4-chain
 | Xj-21⁻  + Se-101∙ |  3c +  3c | 13152.94 | -> Ek-122⁻ (0.502) => Ji-122
@@ -2806,14 +2828,14 @@ From the updated math file, some things to target
 [>] Nd-34⁻ +  Uq-52⁻ + 5000 ->  Iu-86⁻ => ?D-86   |total: 26346.43 NRG
 [>] Ct-17⁻ +  Pb-53⁻ + 5000 ->  Ns-70⁻ => ?Ai-70  |total: 27260.46 NRG
 [r] Ct-17⁻ +  Ux-60⁻ + 5000 ->  Gy-77⁻ => ?Kk-77  |total: 30114.18 NRG --> Makes Kk-77 + 3,555.484763748909699643 using 1444.52 nuclear+decay OTOMRO 485314
-[ ] Dz-10⁻ +  Uq-52⁻ + 5000 ->  Ux-62⁻ => ?Pg-62  |total: 30907.73 NRG
+[-] Dz-10⁻ +  Uq-52⁻ + 5000 ->  Ux-62⁻ => ?Pg-62  |total: 30907.73 NRG
 [>] Eb-23⁻ +  Lx-96⁻ + 5000 ->  Z-119⁻ => ?Cv-119 |total: 36783.74 NRG
 [r] Gj-12⁻ +  Lx-96⁻ + 5000 -> Nm-108⁻ => ?Dd-108 |total: 37701.00 NRG --> makes Dd-108 + 3,470.575211125683381397 using 1529.42 nuclear+decay OTOMRO 485313
-[ ]  K-37⁻ +  Uq-52⁻ + 5000 ->   D-89⁻ => ?Co-89  |total: 41924.65 NRG
+[-]  K-37⁻ +  Uq-52⁻ + 5000 ->   D-89⁻ => ?Co-89  |total: 41924.65 NRG
 [r] Eb-23⁻ +  Uq-52⁻ + 5000 ->   F-75⁻ => ?Gy-75  |total: 44475.85 NRG --> makes Gy-75 + 3,357.782941249118721316 using 1642.22 nuclear+decay OTOMRO 485312
-[ ]  T-19⁻ +  Uq-52⁻ + 5000 ->  Ns-71⁻ => ?Ai-71  |total: 45731.59 NRG
-[ ]  P-26⁻ +  Uq-52⁻ + 5000 ->  Gy-78⁻ => ?Kk-78  |total: 50603.46 NRG
-[ ] Vi-15⁻ +  Uq-52⁻ + 5000 ->  Qe-67⁻ => ?C-67   |total: 50908.80 NRG
+[-]  T-19⁻ +  Uq-52⁻ + 5000 ->  Ns-71⁻ => ?Ai-71  |total: 45731.59 NRG
+[-]  P-26⁻ +  Uq-52⁻ + 5000 ->  Gy-78⁻ => ?Kk-78  |total: 50603.46 NRG
+[-] Vi-15⁻ +  Uq-52⁻ + 5000 ->  Qe-67⁻ => ?C-67   |total: 50908.80 NRG
 [r] Ro-28⁻ +  Wy-56⁻ + 5000 ->  Cj-84⁻ => ?Iu-84  |total: 53176.40 NRG --> makes Iu-84 + 3,132.908395472746633459 using 1867.09 nuclear+decay OTOMRO 485311
 
 [-]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
@@ -3001,15 +3023,36 @@ OTOMRO 431499: Lx-96⁻ + Xj-20⁻ +   5000 ->  S-116⁻ => Z-116  + 2,854.97162
 
 [c] add to files
 
-2025-08-02 Aug.Sat 13:48:22 [ ] next try V₂, V₃, V₄ and V₅?
+2025-08-02 Aug.Sat 13:48:22 [c] next try V₂, V₃, V₄ and V₅?
    |  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) |
-   |   Dz-7⁺ +  Mt-35∙   +[   964.63 -   5000] => V-42⁺ (0.879) |
+   |   Dz-7⁺ +  Mt-35∙   +[   871.23 -   5000] => V-42⁺ (0.879) |
    |   Dz-9∙ +  Mt-34⁺   +[   991.11 -   5000] => V-43∙ (1.852) |
    |  Ct-17⁻ +  Yu-27⁺   +[   838.45 -   5000] => V-44∙ (1.829) |
    |  Gj-11∙ +   K-34∙   +[  1433.71 -   5000] => V-45⁻ (0.908) |
    |  Ct-17⁻ +  Yu-29∙   +[  1171.59 -   5000] => V-46⁻ (0.852) |
 
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+[r]|   Dz-7⁺ +  Mt-35∙   +[   871.23 -   5000] => V-42⁺ (0.879) | used 858.23
+[r]|   Dz-9∙ +  Mt-34⁺   +[   991.11 -   5000] => V-43∙ (1.852) | used 990.21
+[r]|  Ct-17⁻ +  Yu-27⁺   +[   838.45 -   5000] => V-44∙ (1.829) | used 837.90
+[r]|  Gj-11∙ +   K-34∙   +[  1433.71 -   5000] => V-45⁻ (0.908) | used 1433.41
+[r]|  Ct-17⁻ +  Yu-29∙   +[  1171.59 -   5000] => V-46⁻ (0.852) |
 
+make 9 more:
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+[r]|  Vi-11⁺ +  Nd-30ª   +[   784.84 -   5000] => V-41⁺ (0.834) | used 784.59
+
+[r] V-41 + V-42                      + 200 => ? V₂ ---> SUCCESS! using  91.99 metallic
+[r] V-42 + V-43 + V-44               + 300 => ? V₃ ---> SUCCESS! using 142.45 metallic
+[r] V-41 + V-41 + V-41 + V-41        + 400 => ? V₄ ---> SUCCESS! using 172.13 metallic
+[r] V-41 + V-41 + V-41 + V-41 + V-41 + 500 => ? V₅ ---> SUCCESS! using 215.16 metallic
 
 2025-08-02 Aug.Sat 12:49:46 how about Gd₂, Gd₃, Gd₄ and Gd₅?
 

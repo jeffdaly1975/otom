@@ -19365,7 +19365,7 @@ syn match chain4  /\<Ok-89\>/
 syn match chain4  /\<Ok-90\>/
 syn match chain4  /\<Ok-91\>/
 syn match chain4  /\<Ok-94\>/
-syn match chain4  /\<Pg-52\>/
+syn match chain2  /\<Pg-52\>/
 syn match chain4  /\<Pg-59\>/
 syn match chain4  /\<S-108\>/
 syn match chain4  /\<S-95\>/
@@ -19577,7 +19577,7 @@ syn match chain7  /\<Yv-79\>/
 syn match chain8  /\<Ai-70\>/
 syn match chain8  /\<Co-73\>/
 syn match chain8  /\<D-74\>/
-syn match chain8  /\<D-75\>/
+syn match chain2  /\<D-75\>/
 syn match chain8  /\<Dd-108\>/
 syn match chain8  /\<Iu-84\>/
 syn match chain8  /\<Lu-34\>/
