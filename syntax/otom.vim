@@ -12,6 +12,8 @@ set iskeyword+=.
 
 " map Spacebar so I can be on an isotope and hit space and see the chain count
 nnoremap <Space> :echo map(synstack(line("."), col(".")), 'synIDattr(v:val, "name")')<CR>
+" [ ] I want to make it also show this but need to figure out how to get the <cword>:  decaytextchar[decaydict[submatch(1)]] ." (". stabilitydict[submatch(1)] .")"
+
 
 syn match Datestamp /\<\d\d\d\d-\d\d-\d\d.\w\w\w\.\w\w\w\>/
 syn match Timestamp /\<\d\d:\d\d:\d\d\>\(\s*\w\wT\)\=/
@@ -171,12 +173,14 @@ hi otom_metal        ctermbg=lightgray      ctermfg=black
 
 
 " Make these symbols stand out
-syn match LikelyImpossibleIsotope /![A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/me=s+1
-syn match LikelyPossibleIsotope   /?[A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/me=s+1
+syn match UnreachableIsotope      /&[A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
+syn match LikelyImpossibleIsotope /![A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
+syn match LikelyPossibleIsotope   /?[A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
 syn match ObservedIntermediate    /\*[A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/me=s+1
 
-hi        LikelyImpossibleIsotope ctermbg=NONE ctermfg=red    cterm=bold
-hi        LikelyPossibleIsotope   ctermbg=NONE ctermfg=blue   cterm=bold
+hi        UnreachableIsotope      ctermbg=NONE ctermfg=grey   cterm=NONE
+hi        LikelyImpossibleIsotope ctermbg=NONE ctermfg=red    cterm=NONE
+hi        LikelyPossibleIsotope   ctermbg=NONE ctermfg=blue   cterm=NONE
 hi        ObservedIntermediate    ctermbg=NONE ctermfg=214    cterm=bold
 
 " color 214 = orange

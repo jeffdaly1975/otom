@@ -1317,6 +1317,7 @@ foreach my $item (@otom_isotopes){
   my $justname=$name;
   $justname=~s/-\d+//;
   $protonlookup{$justname}=$protons;
+  $protonlookup{$protons}=$justname;
 }
 my $maxkey=scalar(keys %sortorder);
 
@@ -3009,8 +3010,36 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
     $db{$otomro}{"energy_used"} = $used_energy;
 
 
+#[[[ 
+   my $intermediate_output         = "";
+   my $intermediate_output_protons = 0;
+   my $intermediate_output_mass    = 0;
+   # If it has 2 inputs, I want to see the potential intermediate output.
+   # That is, what do the 2 input isotopes mass and proton count add up to?
+   # That is intermediate reaction result, which then has decay processes applied.
+   if ( scalar(@{ $db{$otomro}{"otoms_in_list"} }) == 2 ){
+
+     foreach $this_one ( @{ $db{$otomro}{"otoms_in_list"}}  ){
+        if ($this_one =~ /^\s*(\w+)-(\d+)\s*$/){
+           $intermediate_output_protons += $protonlookup{$1};
+           $intermediate_output_mass    += $2;
+        }else{
+          die "this otoms_in_list does not match expected regex for OTOMRO [$otomro] and isotope [$this_one]\n";
+        }
+     }
+
+  ### [[ ]] THIS ISNT WORKING RIGHT BECAUSE I PUT 2 UNIVERSES of integers as lookups! DUH! it needs to always be universe specific
+     if (exists $protonlookup{$intermediate_output_protons}){
+       $intermediate_output = " -> ". $protonlookup{$intermediate_output_protons} ."-".  $intermediate_output_mass;
+     }
+
+   }
+#]]]
+
+
+
     my $this_pad = "          " x (5 - scalar( @{$db{$otomro}{"otoms_in_list"}}));
-    printf { $reactions_fhs{$universe_names_lookup{$db{$otomro}{"universe"}}} }  "| %8d%s|%-8s| %s + %8d => %s %-80.80s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |\n",
+    printf { $reactions_fhs{$universe_names_lookup{$db{$otomro}{"universe"}}} }  "| %8d%s|%-8s| %s + %8d => %s %-80.80s%s + %10.2f | %10.2f | %-28s | %s | %66s | %66s |%s\n",
    $otomro,
 
    ($db{$otomro}{"first_instantiation"}==1 ? "*" : " "),
@@ -3027,7 +3056,8 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
    $db{$otomro}{"type"}       ,
    $db{$otomro}{"chemist"}    ,
    $db{$otomro}{"initiate_tx"},
-   $db{$otomro}{"analyse_tx"} ;
+   $db{$otomro}{"analyse_tx"} ,
+   $intermediate_output;
 
    my $in_check_string  = join '+', sort @{ $db{$otomro}{otoms_in_list} }; # [ 'Cq-6', 'Cq-6', 'Ju-2', 'Ju-2', 'W-4'],
    my $out_check_string = join '+', sort @{ $db{$otomro}{otoms_out_list}}; # [ 'Ju-2', 'Cq-6', 'Cq-6', 'WJu(W-4>Ju-2)'],
