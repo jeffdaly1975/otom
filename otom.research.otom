@@ -1,3 +1,6 @@
+2025-09-08 Sep.Mon 19:10:41 Try doing 250 reactions of M-23 + M-23 to see if C-46 ever survives the probabilites. Morpheus sent me 500x M-23 for this.
+250x [ ] |   M-23⁻ +   M-23⁻ +[    1322.64 -     9000] | -> C-46⁻ (0.75?) => ⬆ E-46 + 7294.51 |    1705.49 | decay, nuclear               |
+
 2025-09-07 Sep.Sun 20:56:00
 
 Went through all possible 2 input Alpha isotope reactions, and all actually attempted 2 input reactions.
@@ -540,9 +543,9 @@ I'll use "&" for now.
 [c] I have to generate all possible alpha 2 input reactions, then compare that list to the temp-alpha-findnewstuff.otom which is derived from the reaction log, and anything that wasn't tried should be included so I can see what might be possible.
 
  ~ - means it exists as we have seen it discovered
- * - means we have seen a reaction for which it is the intermediate isotope and we see the decay outputs instead
- ? - means I have not seen it attempted or succeeded or its decay outputs
- ! - means it is not possible because I've seen attempts to make it and it isn't an intermediate
+ * - means we have seen a reaction for which it is the intermediate isotope and we see the decay outputs, but never the intermediate isotope itself
+ ? - means I have either not seen it attempted
+ ! - means it is not possible because I've seen attempts to make it and it isn't an intermediate; the inputs may decay themselves, or produce a metallic/chemical reaction
  & - means there are no inputs that sum to this intermediate, and it is not seen otherwise
 
 
@@ -778,6 +781,15 @@ I'll use "&" for now.
  4-chain U-97⁻ (0.646)   :: 10738.77 |   P-24⁻ +   U-95ª   +[  2460.23 -   4000] => P-22 + U-97         |
  5-chain U-98⁻ (0.596)   :: 13770.60 |   P-23∙ +   U-97⁻   +[  3031.83 -   6000] => P-22 + U-98         |
  6-chain U-99⁻ (0.551)   :: 14317.98 |   Sr-3∙ +  Lx-96⁻   +[  1220.52 -  20000] => U-99                |
+
+[ ] 1-chain U-87⁺ (0.814)   ::  1167.63 |   Dz-7⁺ +  S-102ª   +[  1167.63 -   5000] => P-22 + U-87         |
+[ ] 1-chain U-88ª (0.909)   ::  1700.10 |  Xj-17⁺ +  Kk-71ª   +[  1700.10 -   7000] => U-88                |
+[ ] 1-chain U-89ª (0.841)   ::  1807.29 |   Dz-9∙ +  S-102ª   +[  1807.29 -   5000] => P-22 + U-89         |
+
+[ ]  U-85 +  U-85                         + 200 => ?  N₂ <----SUCCESS! used      ? metallic
+[ ]  U-85 +  U-85 +  U-85                 + 300 => ?  N₃ <----
+[ ]  U-85 +  U-85 +  U-85 +  U-85         + 400 => ?  N₄ <----
+[ ]  U-85 +  U-85 +  U-85 +  U-85 +  U-85 + 500 => ?  N₅ <----
 
 [ ] Now Vl isotopologues
  4-chain Vl-100⁻ (0.637) :: 12642.82 |  Eb-22∙ + Se-100∙   +[  3953.85 -   5000] => P-22 + Vl-100       |
