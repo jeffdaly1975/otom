@@ -1,5 +1,51 @@
+2025-09-09 Sep.Tue 13:14:57 Might as well try testing these intermediate isotopes:
+
+C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
+
+[ ]|  Pq-10  +   S-24 + 5000 -> O-34  | => ? Fj-34
+
+[ ]|  Pq-10  +  Zq-26 + 5000 -> C-36  | => ? O-36
+[ ]|  Dx-14  +  Pt-22 + 5000 -> C-36  | => ? O-36
+
+[ ]|  Pq-10  +  Xc-28 + 5000 -> E-38  | => ? C-38
+[ ]|  Dx-14  +   S-24 + 5000 -> E-38  | => ? C-38
+
+[ ]|  Pq-10  +  Gy-30 + 5000 -> A-40  | => ? E-40
+[ ]|  Dx-14  +  Zq-26 + 5000 -> A-40  | => ? E-40
+
+[>]|  Pq-10  +   D-32 + 5000 -> Aw-42 | => ? A-42
+[-]|  Dx-14  +  Xc-28 + 5000 -> Aw-42 | => ? A-42
+
+[ ]|  Pq-10  +   O-36 + 5000 -> Nb-46 | => ? Oc-46
+[ ]|  Dx-14  +   D-32 + 5000 -> Nb-46 | => ? Oc-46
+[ ]|  Pt-22  +   S-24 + 5000 -> Nb-46 | => ? Oc-46
+
+[ ]|  Pq-10  +  Nb-47 + 5000 -> At-57 | => ? Hb-57
+
+
+
+[r]|   Af-7ª +   S-25⁺   +[   661.88 -   6000] => ⬇ D-32                       | nuclear                      |
+[r]|  Pq-10  +   D-32    +   2000 -> Aw-42 | => ? A-42 just makes A-42 using 846.93
+
+
+
+
+2025-09-09 Sep.Tue 13:06:40
+
+[r] |   Af-7ª +  Zz-14ª   +[   478.73 -   5000] =>   Fw-21                      | nuclear                      | used 476.78
+[r] |  Fw-21⁺             +[  1133.00 -   5000] =>   Xl-10 + Pq-11              | nuclear                      | used 1132.95
+[r] |  Pq-10  +  Pq-11    +   2000                  -> Pt-21         | math  => makes Fw-21 by Pt-21 decay, using 489.23
+
 2025-09-08 Sep.Mon 19:10:41 Try doing 250 reactions of M-23 + M-23 to see if C-46 ever survives the probabilites. Morpheus sent me 500x M-23 for this.
-250x [ ] |   M-23⁻ +   M-23⁻ +[    1322.64 -     9000] | -> C-46⁻ (0.75?) => ⬆ E-46 + 7294.51 |    1705.49 | decay, nuclear               |
+250x [c] |   M-23⁻ +   M-23⁻ +[    1321.59 -     9000] | -> C-46⁻ (0.75?) => ⬆ E-46 + 7294.51 |    1705.49 | decay, nuclear               |
+
+now i have 250 E-46
+[f] E-46 + E-46 => ? Ua-92⁻(0.79?) => ??? ----> NOPE makes E₂
+
+might as well make the other 3 fancy isotope towers:
+[r] E-46 + E-46 + E-46               => E₃
+[r] E-46 + E-46 + E-46 + E-46        => E₄
+[r] E-46 + E-46 + E-46 + E-46 + E-46 => E₅
 
 2025-09-07 Sep.Sun 20:56:00
 
@@ -320,7 +366,7 @@ Here are the 87 Alpha intermediate isotopes which I know exist as I have seen re
 
 
 These are the recipes that use only mineables as inputs, and produce those 87 intermediate isotopes, with the groups sorted from highest stability value to lowest.
-[ ] I would like to try at least 100 iterations of some of these to see if the odds allow the intermediate isotope to remain undecayed.
+[c] I would like to try at least 100 iterations of some of these to see if the odds allow the intermediate isotope to remain undecayed.
 
 
 |  Pq-14  +  Zq-32                              -> C-46⁻ (0.75?)            | math
