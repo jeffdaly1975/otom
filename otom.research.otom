@@ -2,35 +2,42 @@
 
 C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 
-[ ]|  Pq-10  +   S-24 + 5000 -> O-34  | => ? Fj-34
+[>]|  Pq-10  +   S-24 + 3000 -> O-34  | => ? Fj-34
+  [-]|  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      | OTOMRO 97729 - OTOMRO 88901
+  [-]|  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      | OTOMRO 291803 - 17662*
+  [r]|  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      | OTOMRO 25714 - OTOMRO 108980 
+  [r]|  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      | OTOMRO 23560 - OTOMRO 30536 
+  [r]|  Pq-10⁺ +  Dx-14⁺   +[   430.07 -   2200] => ⬆ S-24                       | decay, nuclear               |
+  [r]|  Pq-10  +   S-24    +   3000 -> O-34  | => ? Fj-34 --> makes Fj-34 using 744.80
 
 [>]|  Pq-10  +  Zq-26 + 5000 -> C-36  | => ? O-36
-[ ]|  Dx-14  +  Pt-22 + 5000 -> C-36  | => ? O-36
+  [r] |  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      | OTOMRO 97729 - OTOMRO 88901
+  [r] |  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      | OTOMRO 291803 - 17662*
+  [r] |  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      | OTOMRO 25714 - OTOMRO 108980 
+  [r] |  Pq-10  +  Zq-26    +   2000 -> C-36  | => ? O-36 ---> made O-36 using 743.55
+[-]|  Dx-14  +  Pt-22 + 5000 -> C-36  | => ? O-36
 
- [*] |  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      | OTOMRO 97729 - OTOMRO 88901
- [ ] |  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      | OTOMRO 291803 - 17662*
- [ ] |  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      | OTOMRO 25714 - OTOMRO 108980 
- [ ] |  Pq-10  +  Zq-26    +   2000 -> C-36  | => ? O-36
+[ ]|  Pq-10  +  Xc-28 + 3000 -> E-38  | => ? C-38
+[ ]|  Dx-14  +   S-24 + 3000 -> E-38  | => ? C-38
 
-[ ]|  Pq-10  +  Xc-28 + 5000 -> E-38  | => ? C-38
-[ ]|  Dx-14  +   S-24 + 5000 -> E-38  | => ? C-38
-
-[ ]|  Pq-10  +  Gy-30 + 5000 -> A-40  | => ? E-40
-[ ]|  Dx-14  +  Zq-26 + 5000 -> A-40  | => ? E-40
+[ ]|  Pq-10  +  Gy-30 + 3000 -> A-40  | => ? E-40
+[ ]|  Dx-14  +  Zq-26 + 3000 -> A-40  | => ? E-40
 
 [>]|  Pq-10  +   D-32 + 5000 -> Aw-42 | => ? A-42
+  [r]|   Af-7ª +   S-25⁺   +[   661.88 -   6000] => ⬇ D-32                       | nuclear                      |
+  [r]|  Pq-10  +   D-32    +   2000 -> Aw-42 | => ? A-42 just makes A-42 using 846.93
 [-]|  Dx-14  +  Xc-28 + 5000 -> Aw-42 | => ? A-42
 
-[ ]|  Pq-10  +   O-36 + 5000 -> Nb-46 | => ? Oc-46
-[ ]|  Dx-14  +   D-32 + 5000 -> Nb-46 | => ? Oc-46
-[ ]|  Pt-22  +   S-24 + 5000 -> Nb-46 | => ? Oc-46
+[r]|  Pq-10  +   O-36 + 2000 -> Nb-46 | => ? Oc-46 -> makes Oc-46 using 872.98
+[-]|  Dx-14  +   D-32 + 2000 -> Nb-46 | => ? Oc-46
+[-]|  Pt-22  +   S-24 + 2000 -> Nb-46 | => ? Oc-46
 
-[ ]|  Pq-10  +  Nb-47 + 5000 -> At-57 | => ? Hb-57
+[>]|  Pq-10  +  Nb-47 + 3000 -> At-57 | => ? Hb-57
+  [r] |   Af-7ª +   S-25⁺   +[   661.88 -   6000] => ⬇ D-32                       | nuclear                      |
+  [r] |  Dx-15⁺ +   D-32⁺   +[  1233.30 -   3000] => ⬇ Nb-47                      | nuclear                      |
+  [r] |  Pq-10  +  Nb-47    +   3000 -> At-57 | => ? Hb-57 -> makes Hb-57 using 1066.61
 
 
-
-[r]|   Af-7ª +   S-25⁺   +[   661.88 -   6000] => ⬇ D-32                       | nuclear                      |
-[r]|  Pq-10  +   D-32    +   2000 -> Aw-42 | => ? A-42 just makes A-42 using 846.93
 
 
 
@@ -267,7 +274,7 @@ Here are the reactions that would achieve those targets (which redundancies of d
 
 326 Alpha isotopes regex: \(Ju-1\|Ju-2\|Ju-3\|W-4\|W-5\|Cq-5\|Cq-6\|Cq-7\|Af-7\|Af-8\|Af-9\|Af-10\|Xl-9\|Xl-10\|Xl-11\|Xl-12\|Pq-10\|Pq-11\|Pq-12\|Pq-13\|Pq-14\|Pq-15\|Zz-13\|Zz-14\|Zz-15\|Zz-16\|Dx-14\|Dx-15\|Dx-16\|Dx-17\|Dx-18\|Dx-19\|Pm-17\|Pm-18\|Pm-19\|Pm-20\|Pm-21\|M-19\|M-20\|M-21\|M-22\|M-23\|Fw-21\|Fw-22\|Fw-23\|Fw-24\|Fw-25\|Fw-26\|Pt-22\|Pt-23\|Pt-24\|Pt-25\|Pt-26\|Pt-27\|Pt-28\|S-24\|S-25\|S-26\|S-27\|S-28\|S-29\|S-30\|Zq-26\|Zq-27\|Zq-28\|Zq-29\|Zq-30\|Zq-31\|Zq-32\|Xc-28\|Xc-29\|Xc-30\|Xc-31\|Xc-32\|Xc-33\|Xc-34\|Gy-30\|Gy-31\|Gy-32\|Gy-33\|Gy-34\|Gy-35\|Gy-36\|D-32\|D-33\|D-34\|D-35\|D-36\|D-37\|D-38\|D-39\|Fj-34\|Fj-35\|Fj-36\|Fj-37\|Fj-38\|Fj-39\|Fj-40\|Fj-41\|O-36\|O-37\|O-38\|O-39\|O-40\|O-41\|O-42\|O-43\|C-38\|C-39\|C-40\|C-41\|C-42\|C-43\|C-44\|C-45\|E-40\|E-41\|E-42\|E-43\|E-44\|E-45\|E-46\|E-47\|E-48\|A-42\|A-43\|A-44\|A-45\|A-46\|A-47\|A-48\|A-49\|A-50\|Aw-44\|Aw-45\|Aw-46\|Aw-47\|Aw-48\|Aw-49\|Aw-50\|Aw-51\|Aw-52\|Oc-46\|Oc-47\|Oc-48\|Oc-49\|Oc-50\|Oc-51\|Oc-52\|Oc-53\|Oc-54\|Nb-47\|Nb-48\|Nb-49\|Nb-50\|Nb-51\|Nb-52\|Nb-53\|Nb-54\|Nb-55\|Nb-56\|Xk-50\|Xk-51\|Xk-52\|Xk-53\|Xk-54\|Xk-55\|Xk-56\|Xk-57\|Xk-58\|Xk-59\|Ic-51\|Ic-52\|Ic-53\|Ic-54\|Ic-55\|Ic-56\|Ic-57\|Ic-58\|Ic-59\|Ic-60\|Ic-61\|Ic-62\|Yp-54\|Yp-55\|Yp-56\|Yp-57\|Yp-58\|Yp-59\|Yp-60\|Yp-61\|Yp-62\|Yp-63\|Jx-56\|Jx-57\|Jx-58\|Jx-59\|Jx-60\|Jx-61\|Jx-62\|Jx-63\|Jx-64\|Jx-65\|Hb-57\|Hb-58\|Hb-59\|Hb-60\|Hb-61\|Hb-62\|Hb-63\|Hb-64\|Hb-65\|Hb-66\|Hb-67\|At-60\|At-61\|At-62\|At-63\|At-64\|At-65\|At-66\|At-67\|At-68\|At-69\|Ny-61\|Ny-62\|Ny-63\|Ny-64\|Ny-65\|Ny-66\|Ny-67\|Ny-68\|Ny-69\|Ny-70\|Ny-71\|Ny-72\|Pw-64\|Pw-65\|Pw-66\|Pw-67\|Pw-68\|Pw-69\|Pw-70\|Pw-71\|Pw-72\|Pw-73\|Pw-74\|Gk-65\|Gk-66\|Gk-67\|Gk-68\|Gk-69\|Gk-70\|Gk-71\|Gk-72\|Gk-73\|Gk-74\|Gk-75\|Gk-76\|Gk-77\|Qi-67\|Qi-68\|Qi-69\|Qi-70\|Qi-71\|Qi-72\|Qi-73\|Qi-74\|Qi-75\|Qi-76\|Qi-77\|Qi-78\|Xy-69\|Xy-70\|Xy-71\|Xy-72\|Xy-73\|Xy-74\|Xy-75\|Xy-76\|Xy-77\|Xy-78\|Xy-79\|Gq-71\|Gq-72\|Gq-73\|Gq-74\|Gq-75\|Gq-76\|Gq-77\|Gq-78\|Gq-79\|Gq-80\|Bt-73\|Bt-74\|Bt-75\|Bt-76\|Bt-77\|Bt-78\|Bt-79\|Bt-80\|Bt-81\|H-75\|H-76\|H-77\|H-78\|H-79\|H-80\|H-81\|H-82\|U-77\|U-78\|U-79\|U-80\|U-81\|U-82\|U-83\|Sq-79\|Sq-80\|Sq-81\|Sq-82\|Sq-83\|Sq-84\|Ua-83\|Ua-84\|Ua-85\)[ª∙⁻⁺]
 
-[ ] I think I should find a reaction like:
+[c] I think I should find a reaction like:
         Pt-22⁺ +  Xc-28⁺ +[    1434.81 -     2000] | -> Ic-50  => ⬇ Xk-50 
 ...and find one with a high stability value close to (0.770), and repeat it 100 or 200 or 1000 times to try and let the odds allow it to *not* decay at least once. That would allow the unattainable intermediate isotope to remain, not decaying.
 But find one that takes preferably mineables or 1-chain inputs
@@ -811,7 +818,7 @@ I'll use "&" for now.
 
 [ ] Hmmm. Are N₄ and N₅ not possible?
 
-[ ] Now  U isotopologues
+[c] Now  U isotopologues
  8-chain U-80⁺ (0.383)   :: 37702.79 |  Nd-27⁺ +   C-53⁺   +[  1457.20 -   5000] => U-80                |
  5-chain U-81⁺ (0.480)   ::  9154.47 |   As-5⁺ +  Lx-76⁺   +[   722.96 -   3000] => U-81                |
  6-chain U-82⁺ (0.552)   ::  9354.90 |   As-5⁺ +  Lx-77⁺   +[   868.05 -   3000] => U-82                |
@@ -833,16 +840,16 @@ I'll use "&" for now.
  5-chain U-98⁻ (0.596)   :: 13770.60 |   P-23∙ +   U-97⁻   +[  3031.83 -   6000] => P-22 + U-98         |
  6-chain U-99⁻ (0.551)   :: 14317.98 |   Sr-3∙ +  Lx-96⁻   +[  1220.52 -  20000] => U-99                |
 
-[ ] 1-chain U-87⁺ (0.814)   ::  1167.63 |   Dz-7⁺ +  S-102ª   +[  1167.63 -   5000] => P-22 + U-87         |
-[ ] 1-chain U-88ª (0.909)   ::  1700.10 |  Xj-17⁺ +  Kk-71ª   +[  1700.10 -   7000] => U-88                |
-[ ] 1-chain U-89ª (0.841)   ::  1807.29 |   Dz-9∙ +  S-102ª   +[  1807.29 -   5000] => P-22 + U-89         |
+ 2x [r] 1-chain U-87⁺ (0.814)   ::  1167.63 |   Dz-7⁺ +  S-102ª   +[  1167.63 -   5000] => P-22 + U-87         | used 1167.53
+12x [r] 1-chain U-88ª (0.909)   ::  1700.10 |  Xj-17⁺ +  Kk-71ª   +[  1700.10 -   7000] => U-88                | used 1699.65
+    [-] 1-chain U-89ª (0.841)   ::  1807.29 |   Dz-9∙ +  S-102ª   +[  1807.29 -   5000] => P-22 + U-89         |
 
-[ ]  U-85 +  U-85                         + 200 => ?  N₂ <----SUCCESS! used      ? metallic
-[ ]  U-85 +  U-85 +  U-85                 + 300 => ?  N₃ <----
-[ ]  U-85 +  U-85 +  U-85 +  U-85         + 400 => ?  N₄ <----
-[ ]  U-85 +  U-85 +  U-85 +  U-85 +  U-85 + 500 => ?  N₅ <----
+[r]  U-87 +  U-87                         + 200 => ?  U₂ <----SUCCESS! used 145.23 metallic
+[r]  U-88 +  U-88 +  U-88                 + 300 => ?  U₃ <----SUCCESS! used 220.18 metallic
+[r]  U-88 +  U-88 +  U-88 +  U-88         + 400 => ?  U₄ <----SUCCESS! used 293.57 metallic
+[r]  U-88 +  U-88 +  U-88 +  U-88 +  U-88 + 500 => ?  U₅ <----SUCCESS! used 366.96 metallic
 
-[ ] Now Vl isotopologues
+[r] Now Vl isotopologues
  4-chain Vl-100⁻ (0.637) :: 12642.82 |  Eb-22∙ + Se-100∙   +[  3953.85 -   5000] => P-22 + Vl-100       |
  4-chain Vl-101⁻ (0.585) :: 12710.45 |  Eb-22∙ + Se-101∙   +[  3913.19 -   4500] => P-22 + Vl-101       |
  8-chain Vl-82⁺ (0.422)  :: 36740.16 |   K-29⁺ +   C-53⁺   +[  1543.29 -   5000] => Vl-82               |
@@ -864,7 +871,15 @@ I'll use "&" for now.
  3-chain Vl-98⁻ (0.719)  :: 10370.50 |   P-24⁻ +  Vl-96⁻   +[  2575.90 -   5000] => P-22 + Vl-98        |
  4-chain Vl-99⁻ (0.675)  :: 10962.56 |   P-24⁻ +  Vl-97⁻   +[  2432.67 -   3500] => P-22 + Vl-99        |
 
-[ ] Now Se isotopologues
+ 5x [c] 1-chain Vl-88⁺ (0.783)  ::  1866.81 |   P-21⁺ +  Gy-67ª   +[  1866.81*-  20000] => Vl-88               |
+ 9x [c] 1-chain Vl-89∙ (1.772)  ::  1806.18 |  Eb-19⁺ +  Kk-70ª   +[  1806.18 -   5000] => Vl-89               | used 1806.03
+
+[r] Vl-88 + Vl-88                         + 200 => ? Vl₂ <----SUCCESS! used 152.95 metallic
+[r] Vl-88 + Vl-88 + Vl-88                 + 300 => ? Vl₃ <----SUCCESS! used 229.42 metallic
+[r] Vl-89 + Vl-89 + Vl-89 + Vl-89         + 400 => ? Vl₄ <----SUCCESS! used 309.14 metallic
+[r] Vl-89 + Vl-89 + Vl-89 + Vl-89 + Vl-89 + 500 => ? Vl₅ <----SUCCESS! used 386.43 metallic
+
+[c] Now Se isotopologues
  3-chain Se-100∙ (1.580) ::  8688.97 |   Sr-2∙ +  Se-98∙   +[  1651.04 -   5000] => Se-100              |
  3-chain Se-101∙ (1.517) ::  8797.26 |   Sr-3∙ +  Se-98∙   +[  1759.33 -   5000] => Se-101              |
  4-chain Se-102⁻ (0.712) :: 12420.75 |   P-24⁻ + Se-100∙   +[  3214.08 -   3216] => P-22 + Se-102       |
@@ -887,11 +902,58 @@ I'll use "&" for now.
  2-chain Se-98∙ (1.697)  ::  7037.93 |   P-24⁻ +  Se-96∙   +[  3287.51*-   4000] => P-22 + Se-98        |
  3-chain Se-99∙ (1.654)  ::  7866.84 |  Eb-22∙ +  Nm-99ª   +[  3072.66 -   4500] => P-22 + Se-99        |
 
+ 1-chain Se-89⁺ (0.814)  ::  1810.44 |  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
+ 1-chain Se-90∙ (1.685)  ::  1200.93 |  Vi-10⁺ +  S-102ª   +[  1200.93 -   5000] => P-22 + Se-90        |
+ 1-chain Se-91∙ (1.748)  ::  1550.48 |  Vi-11⁺ +  S-102ª   +[  1550.48 -   5000] => P-22 + Se-91        |
+ 1-chain Se-92∙ (1.772)  ::  1938.05 |   P-21⁺ +  Kk-71ª   +[  1938.05 -  20000] => Se-92               |
+ 1-chain Se-93⁺ (0.901)  ::  1887.24 |  Ro-22⁺ +  Kk-71ª   +[  1887.24 -  20000] => Se-93               |
+ 1-chain Se-94∙ (1.798)  ::  2602.18 |  Eb-22∙ +  Yv-72ª   +[  2602.18 -   5000] => Se-94               |
+ 1-chain Se-95∙ (1.802)  ::  3210.20 |  Uq-47⁻ +  Kk-70ª   +[  3210.20 -  20000] => P-22 + Se-95        |
+ 1-chain Se-96∙ (1.772)  ::  3232.72 |  Uq-47⁻ +  Kk-71ª   +[  3232.72*-  20000] => P-22 + Se-96        |
 
+ 5x [r] 1-chain Se-92∙ (1.772)  ::  1938.05 |   P-21⁺ +  Kk-71ª   +[  1938.05 -  20000] => Se-92               | used 1938.00
+ 9x [r] 1-chain Se-94∙ (1.798)  ::  2602.18 |  Eb-22∙ +  Yv-72ª   +[  2602.18 -   5000] => Se-94               | used 2601.78
 
+[r] Se-92 + Se-92                         + 200 => ? Se₂ <----SUCCESS! used 164.89 metallic
+[r] Se-92 + Se-92 + Se-92                 + 300 => ? Se₃ <----SUCCESS! used 247.33 metallic
+[r] Se-94 + Se-94 + Se-94 + Se-94         + 400 => ? Se₄ <----SUCCESS! used 336.51 metallic
+[r] Se-94 + Se-94 + Se-94 + Se-94 + Se-94 + 500 => ? Se₅ <----SUCCESS! used 420.63 metallic
 
 
 [ ] Now  S isotopologues
+
+ 5-chain S-94   :: 10048.18 |   P-21⁺ +   S-95⁺   +[  2033.09 -  10000] => P-22 + S-94         | decay, nuclear               | OTOMRO  183919 |
+ 4-chain S-95   ::  8015.09 |  Ro-22⁺ +  Da-95⁺   +[  2087.58 -   5000] => P-22 + S-95         | decay, nuclear               | OTOMRO         |
+ 3-chain S-96   ::  7928.49 |   P-21⁺ +   S-97⁺   +[  2090.92*-  10000] => P-22 + S-96         | decay, nuclear               | OTOMRO  277392 |
+ 2-chain S-97   ::  5837.57 |  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97         | decay, nuclear               | OTOMRO  132974 |
+ 2-chain S-98   ::  4593.07 |  Ro-22⁺ +  Da-98ª   +[  2223.51*-   5000] => P-22 + S-98         | decay, nuclear               | OTOMRO  273081 |
+ 2-chain S-99   ::  4493.46 |  Ro-22⁺ +  Da-99ª   +[  2317.69 -   5000] => P-22 + S-99         | decay, nuclear               | OTOMRO  335470 |
+ 2-chain S-100  ::  4576.79 |   P-21⁺ +  S-101ª   +[  2271.42 -   5000] => P-22 + S-100        | decay, nuclear               | OTOMRO  105402 |
+ 1-chain S-101  ::  2305.37 |   P-21⁺ +  S-102ª   +[  2305.37 -  20000] => P-22 + S-101        | decay, nuclear               | OTOMRO  123889 |
+ 0-chain S-102  ::     0.00 | MINEABLE
+ 1-chain S-103  ::  3249.40 |   P-23∙ +  S-102ª   +[  3249.40*-  20000] => P-22 + S-103        | decay, nuclear               | OTOMRO  218956 |
+ 2-chain S-104  ::  3030.52 |   P-24⁻ +  S-102ª   +[  2512.82 -   3600] => P-22 + S-104        | decay, nuclear               | OTOMRO  192697 |
+ 2-chain S-105  ::  6301.60 |   P-24⁻ +  S-103ª   +[  2534.50*-   5000] => P-22 + S-105        | decay, nuclear               | OTOMRO  265456 |
+ 3-chain S-106  ::  6108.64 |   P-24⁻ +  S-104⁺   +[  2560.42 -   5000] => P-22 + S-106        | decay, nuclear               | OTOMRO  192698 |
+ 3-chain S-107  ::  9390.51 |   P-24⁻ +  S-105ª   +[  2571.21 -   5000] => P-22 + S-107        | decay, nuclear               | OTOMRO  218960 |
+ 4-chain S-108  ::  9212.18 |   P-24⁻ +  S-106ª   +[  2585.84 -   5000] => P-22 + S-108        | decay, nuclear               | OTOMRO         |
+ 3-chain S-109  ::  9060.86 |   K-34∙ +  Se-97ª   +[  4211.74 -   6000] => P-22 + S-109        | decay, nuclear               | OTOMRO  279784 |
+ 5-chain S-112  :: 11473.79 |  Ct-17⁻ +   N-95⁻   +[  1660.78 -   5000] => S-112               | decay, nuclear               | OTOMRO  355388 |
+ 5-chain S-113  :: 14830.78 |  Ct-17⁻ +   N-96⁻   +[  1643.07 -   3000] => S-113               | decay, nuclear               | OTOMRO  382042 |
+ 6-chain S-114  :: 17464.52 |  Lx-96⁻ +   T-18⁻   +[  2069.03 -   5000] => S-114               | decay, nuclear               | OTOMRO  431497*|
+ 7-chain S-115  :: 34369.46 |   T-19⁻ +  Lx-96⁻   +[  1787.16 -   5000] => S-115               | decay, nuclear               | OTOMRO       ? |
+
+ 1-chain S-101ª(0.727)  ::  2305.37 |   P-21⁺ +  S-102ª   +[  2305.37*-  20000] => P-22 + S-101        |
+ 0-chain S-102ª(0.750)  ::     0.00 | MINEABLE
+ 1-chain S-103ª(0.758)  ::  3249.40 |   P-23∙ +  S-102ª   +[  3249.40*-  20000] => P-22 + S-103        |
+S-104\|S-105
+ 2-chain S-105  ::  6301.60 |   P-24⁻ +  S-103ª   +[  2534.50*-   5000] => P-22 + S-105        | decay, nuclear               | OTOMRO  265456 |
+
+ [r] |   P-21⁺ +  S-102ª   +[  2305.37*-  20000] => P-22 + S-101        |
+ [r] |   P-23∙ +  S-102ª   +[  3249.40*-  20000] => P-22 + S-103        |
+
+[ ] 2-chain S-104  ::  3030.52 |   P-24⁻ +  S-102ª   +[  2512.82 -   3600] => P-22 + S-104        | decay, nuclear               | OTOMRO  192697 |
+[ ] 2-chain S-104  ::  3030.52 |   P-24⁻ +  S-102ª   +[  2512.82 -   3600] => P-22 + S-104        | decay, nuclear               | OTOMRO  192697 |
 
 [ ] Now  Z isotopologues
 
