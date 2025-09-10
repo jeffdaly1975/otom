@@ -1,27 +1,42 @@
+
+
 2025-09-09 Sep.Tue 13:14:57 Might as well try testing these intermediate isotopes:
 
 C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 
 [>]|  Pq-10  +   S-24 + 3000 -> O-34  | => ? Fj-34
-  [-]|  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      | OTOMRO 97729 - OTOMRO 88901
-  [-]|  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      | OTOMRO 291803 - 17662*
-  [r]|  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      | OTOMRO 25714 - OTOMRO 108980 
-  [r]|  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      | OTOMRO 23560 - OTOMRO 30536 
+  [-]|  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      |
+  [-]|  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      |
+  [r]|  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      |
+  [r]|  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      |
   [r]|  Pq-10⁺ +  Dx-14⁺   +[   430.07 -   2200] => ⬆ S-24                       | decay, nuclear               |
   [r]|  Pq-10  +   S-24    +   3000 -> O-34  | => ? Fj-34 --> makes Fj-34 using 744.80
 
 [>]|  Pq-10  +  Zq-26 + 5000 -> C-36  | => ? O-36
-  [r] |  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      | OTOMRO 97729 - OTOMRO 88901
-  [r] |  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      | OTOMRO 291803 - 17662*
-  [r] |  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      | OTOMRO 25714 - OTOMRO 108980 
-  [r] |  Pq-10  +  Zq-26    +   2000 -> C-36  | => ? O-36 ---> made O-36 using 743.55
+  [r]|  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      |
+  [r]|  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      |
+  [r]|  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      |
+  [r]|  Pq-10  +  Zq-26    +   2000 -> C-36  | => ? O-36 ---> made O-36 using 743.55
 [-]|  Dx-14  +  Pt-22 + 5000 -> C-36  | => ? O-36
 
-[ ]|  Pq-10  +  Xc-28 + 3000 -> E-38  | => ? C-38
-[ ]|  Dx-14  +   S-24 + 3000 -> E-38  | => ? C-38
+[>]|  Pq-10  +  Xc-28 + 3000 -> E-38  | => ? C-38
+[-]|  Dx-14  +   S-24 + 3000 -> E-38  | => ? C-38
+  [r]|   Cq-5⁺ +  Fj-37ª   +[   702.03 -   5000] =>   E-42                       | nuclear                      | used 701.93
+  [r]|  Pq-10⁺ +   E-42⁺   +[   955.82 -   5000] =>   Ic-52                      | nuclear                      | used 955.42
+  [r]|  Ic-52⁺             +[  4513.50*-  16000] =>   Pt-24 + Xc-28              | nuclear                      |
+  [r]|  Pq-10  +  Xc-28    +   2000 -> E-38  | => ? C-38 -> makes C-38 using 783.73 nuclear+decay
 
-[ ]|  Pq-10  +  Gy-30 + 3000 -> A-40  | => ? E-40
-[ ]|  Dx-14  +  Zq-26 + 3000 -> A-40  | => ? E-40
+[-]|  Pq-10  +  Gy-30 + 3000 -> A-40  | => ? E-40
+[>]|  Dx-14  +  Zq-26 + 3000 -> A-40  | => ? E-40
+  [r]|  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      |
+  [r]|  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      |
+  [r]|  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      |
+  [r]|  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      |
+  [r]|  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      |
+  [r]|  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      |
+  [r]|  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      |
+  [r]|  Dx-14  +  Zq-26    +   3000 -> A-40  | => ? E-40 -> makes E-40 using 1013.51 nuclear+decay
+
 
 [>]|  Pq-10  +   D-32 + 5000 -> Aw-42 | => ? A-42
   [r]|   Af-7ª +   S-25⁺   +[   661.88 -   6000] => ⬇ D-32                       | nuclear                      |
@@ -39,6 +54,226 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 
 
 
+[c] ?A-52⁻(0.68?)|
+|  Fw-26  +  Fw-26  -> A-52   |
+  [r]|  Pq-14⁻ +  Xc-34⁻   +[  1227.10 -   5000] =>   E-48                       | nuclear                      |
+  [r]|  Pq-14⁻ +  Xc-34⁻   +[  1227.10 -   5000] =>   E-48                       | nuclear                      |
+  [r]|   E-48⁻             +[  3889.14 -  11000] =>   M-22 + Fw-26               | nuclear                      |
+  [r]|   E-48⁻             +[  3889.14 -  11000] =>   M-22 + Fw-26               | nuclear                      |
+  [r]|  Fw-26  +  Fw-26  + 2000 -> A-52   | ---- Makes Aw-52 using 1383.67 nuclear+decay
+
+[ ] ?At-71⁻(0.70?)|
+|   Af-9  +  Ic-62  -> At-71  |
+|  Af-10  +  Ic-61  -> At-71  |
+|  Xl-12  +  Xk-59  -> At-71  |
+|  Pq-15  +  Nb-56  -> At-71  |
+|  Dx-19  +  Aw-52  -> At-71  |
+|  Pm-21  +   A-50  -> At-71  |
+|   M-23  +   E-48  -> At-71  |
+|  Fw-26  +   C-45  -> At-71  |
+|  Pt-28  +   O-43  -> At-71  |
+|   S-30  +  Fj-41  -> At-71  |
+|  Zq-32  +   D-39  -> At-71  |
+
+[ ] ?At-72⁻(0.71?)|
+|  Af-10  +  Ic-62  -> At-72  |
+
+[ ] ?Aw-54⁻(0.61?)|
+|  Pq-15  +   D-39  -> Aw-54  |
+|  Fw-26  +  Pt-28  -> Aw-54  |
+
+[ ] ?Bt-86⁻(0.67?)|
+|   Af-9  +  Gk-77  -> Bt-86  |
+|  Af-10  +  Gk-76  -> Bt-86  |
+|  Xl-12  +  Pw-74  -> Bt-86  |
+|  Pq-14  +  Ny-72  -> Bt-86  |
+|  Pq-15  +  Ny-71  -> Bt-86  |
+|  Dx-19  +  Hb-67  -> Bt-86  |
+|  Pm-21  +  Jx-65  -> Bt-86  |
+|   M-23  +  Yp-63  -> Bt-86  |
+|  Fw-24  +  Ic-62  -> Bt-86  |
+|  Fw-25  +  Ic-61  -> Bt-86  |
+|  Fw-26  +  Ic-60  -> Bt-86  |
+|  Pt-27  +  Xk-59  -> Bt-86  |
+|  Pt-28  +  Xk-58  -> Bt-86  |
+|   S-30  +  Nb-56  -> Bt-86  |
+|  Zq-32  +  Oc-54  -> Bt-86  |
+|  Xc-34  +  Aw-52  -> Bt-86  |
+|  Gy-36  +   A-50  -> Bt-86  |
+|   D-38  +   E-48  -> Bt-86  |
+|   D-39  +   E-47  -> Bt-86  |
+|  Fj-41  +   C-45  -> Bt-86  |
+|   O-43  +   O-43  -> Bt-86  |
+
+[ ] ?Bt-87⁻(0.61?)|
+|  Af-10  +  Gk-77  -> Bt-87  |
+|  Pq-15  +  Ny-72  -> Bt-87  |
+|  Fw-25  +  Ic-62  -> Bt-87  |
+|  Fw-26  +  Ic-61  -> Bt-87  |
+|  Pt-28  +  Xk-59  -> Bt-87  |
+|   D-39  +   E-48  -> Bt-87  |
+
+[ ] ?Bt-88⁻(0.55?)|
+|  Fw-26  +  Ic-62  -> Bt-88  |
+
+[ ] ?D-41⁻(0.45?)|
+|  Pq-15  +  Fw-26  -> D-41   |
+
+[ ] ?Fw-27⁻(0.38?)|
+|  Xl-12  +  Pq-15  -> Fw-27  |
+
+[ ] ?Gq-84⁻(0.64?)|
+|   Cq-7  +  Gk-77  -> Gq-84  |
+|  Af-10  +  Pw-74  -> Gq-84  |
+|  Xl-12  +  Ny-72  -> Gq-84  |
+|  Pq-15  +  At-69  -> Gq-84  |
+|  Dx-19  +  Jx-65  -> Gq-84  |
+|  Pm-21  +  Yp-63  -> Gq-84  |
+|   M-22  +  Ic-62  -> Gq-84  |
+|   M-23  +  Ic-61  -> Gq-84  |
+|  Fw-25  +  Xk-59  -> Gq-84  |
+|  Fw-26  +  Xk-58  -> Gq-84  |
+|  Pt-28  +  Nb-56  -> Gq-84  |
+|   S-30  +  Oc-54  -> Gq-84  |
+|  Zq-32  +  Aw-52  -> Gq-84  |
+|  Xc-34  +   A-50  -> Gq-84  |
+|  Gy-36  +   E-48  -> Gq-84  |
+|   D-39  +   C-45  -> Gq-84  |
+|  Fj-41  +   O-43  -> Gq-84  |
+
+[ ] ?Gq-85⁻(0.59?)|
+|   M-23  +  Ic-62  -> Gq-85  |
+|  Fw-26  +  Xk-59  -> Gq-85  |
+
+[ ] ?Gy-28⁺(0.27?)|
+|  Dx-14  +  Dx-14  -> Gy-28  |
+
+[ ] ?H-89⁻(0.63?)|
+|  Xl-12  +  Gk-77  -> H-89   |
+|  Pq-15  +  Pw-74  -> H-89   |
+|  Fw-26  +  Yp-63  -> H-89   |
+|  Pt-27  +  Ic-62  -> H-89   |
+|  Pt-28  +  Ic-61  -> H-89   |
+|   S-30  +  Xk-59  -> H-89   |
+|   D-39  +   A-50  -> H-89   |
+|  Fj-41  +   E-48  -> H-89   |
+
+[ ] ?H-90⁻(0.57?)|
+|  Pt-28  +  Ic-62  -> H-90   |
+
+[ ] ?Hb-69⁻(0.66?)|
+|   Cq-7  +  Ic-62  -> Hb-69  |
+|  Af-10  +  Xk-59  -> Hb-69  |
+|  Pq-15  +  Oc-54  -> Hb-69  |
+|  Dx-19  +   A-50  -> Hb-69  |
+|  Pm-21  +   E-48  -> Hb-69  |
+|  Fw-26  +   O-43  -> Hb-69  |
+|  Pt-28  +  Fj-41  -> Hb-69  |
+|   S-30  +   D-39  -> Hb-69  |
+
+[ ] ?Ic-63⁻(0.72?)|
+|  Pq-15  +   E-48  -> Ic-63  |
+
+[ ] ?Jx-67⁻(0.65?)|
+|    W-5  +  Ic-62  -> Jx-67  |
+|  Pq-15  +  Aw-52  -> Jx-67  |
+|  Dx-19  +   E-48  -> Jx-67  |
+|  Fw-26  +  Fj-41  -> Jx-67  |
+|  Pt-28  +   D-39  -> Jx-67  |
+
+[ ] ?Nb-58⁻(0.64?)|
+|  Af-10  +   E-48  -> Nb-58  |
+|  Pq-15  +   O-43  -> Nb-58  |
+|  Dx-19  +   D-39  -> Nb-58  |
+|  Fw-26  +  Zq-32  -> Nb-58  |
+|  Pt-28  +   S-30  -> Nb-58  |
+
+[ ] ?Ny-73⁻(0.80?)|
+|  Af-10  +  Yp-63  -> Ny-73  |
+|  Xl-11  +  Ic-62  -> Ny-73  |
+|  Xl-12  +  Ic-61  -> Ny-73  |
+|  Pq-14  +  Xk-59  -> Ny-73  |
+|  Pq-15  +  Xk-58  -> Ny-73  |
+|  Dx-19  +  Oc-54  -> Ny-73  |
+|  Pm-21  +  Aw-52  -> Ny-73  |
+|   M-23  +   A-50  -> Ny-73  |
+|  Fw-25  +   E-48  -> Ny-73  |
+|  Fw-26  +   E-47  -> Ny-73  |
+|  Pt-28  +   C-45  -> Ny-73  |
+|   S-30  +   O-43  -> Ny-73  |
+|  Zq-32  +  Fj-41  -> Ny-73  |
+|  Xc-34  +   D-39  -> Ny-73  |
+
+[ ] ?Ny-74⁻(0.65?)|
+|  Xl-12  +  Ic-62  -> Ny-74  |
+|  Pq-15  +  Xk-59  -> Ny-74  |
+|  Fw-26  +   E-48  -> Ny-74  |
+
+[ ] ?O-45⁻(0.58?)|
+|  Pq-15  +   S-30  -> O-45   |
+|  Dx-19  +  Fw-26  -> O-45   |
+
+[ ] ?Oc-56⁻(0.63?)|
+|  Pq-15  +  Fj-41  -> Oc-56  |
+|  Fw-26  +   S-30  -> Oc-56  |
+|  Pt-28  +  Pt-28  -> Oc-56  |
+
+[ ] ?Pw-77⁻(0.59?)|
+|  Pq-15  +  Ic-62  -> Pw-77  |
+
+[ ] ?Qi-81⁻(0.58?)|
+|  Dx-19  +  Ic-62  -> Qi-81  |
+
+[ ] ?Sq-93⁻(0.75?)|
+|  Pq-15  +  Qi-78  -> Sq-93  |
+|  Zz-16  +  Gk-77  -> Sq-93  |
+|  Dx-19  +  Pw-74  -> Sq-93  |
+|  Pm-21  +  Ny-72  -> Sq-93  |
+|  Fw-26  +  Hb-67  -> Sq-93  |
+|  Pt-28  +  Jx-65  -> Sq-93  |
+|   S-30  +  Yp-63  -> Sq-93  |
+|  Zq-31  +  Ic-62  -> Sq-93  |
+|  Zq-32  +  Ic-61  -> Sq-93  |
+|  Xc-34  +  Xk-59  -> Sq-93  |
+|   D-39  +  Oc-54  -> Sq-93  |
+|  Fj-41  +  Aw-52  -> Sq-93  |
+|   O-43  +   A-50  -> Sq-93  |
+|   C-45  +   E-48  -> Sq-93  |
+
+[ ] ?Sq-94⁻(0.69?)|
+|  Zq-32  +  Ic-62  -> Sq-94  |
+
+[ ] ?U-91⁻(0.66?)|
+|  Pq-14  +  Gk-77  -> U-91   |
+|  Pq-15  +  Gk-76  -> U-91   |
+|  Dx-19  +  Ny-72  -> U-91   |
+|  Fw-26  +  Jx-65  -> U-91   |
+|  Pt-28  +  Yp-63  -> U-91   |
+|   S-29  +  Ic-62  -> U-91   |
+|   S-30  +  Ic-61  -> U-91   |
+|  Zq-32  +  Xk-59  -> U-91   |
+|   D-39  +  Aw-52  -> U-91   |
+|  Fj-41  +   A-50  -> U-91   |
+|   O-43  +   E-48  -> U-91   |
+
+[ ] ?U-92⁻(0.61?)|
+|  Pq-15  +  Gk-77  -> U-92   |
+|   S-30  +  Ic-62  -> U-92   |
+
+[ ] ?Xy-83⁻(0.58?)|
+|  Pm-21  +  Ic-62  -> Xy-83  |
+
+[ ] ?Yp-65⁻(0.65?)|
+|   Ju-3  +  Ic-62  -> Yp-65  |
+|  Pq-15  +   A-50  -> Yp-65  |
+|  Fw-26  +   D-39  -> Yp-65  |
+
+[ ] ?Zq-34⁻(0.46?)|
+|  Pq-15  +  Dx-19  -> Zq-34  |
+
+
+
+
 
 
 
@@ -51,6 +286,261 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 2025-09-08 Sep.Mon 19:10:41 Try doing 250 reactions of M-23 + M-23 to see if C-46 ever survives the probabilites. Morpheus sent me 500x M-23 for this.
 250x [c] |   M-23⁻ +   M-23⁻ +[    1321.59 -     9000] | -> C-46⁻ (0.75?) => ⬆ E-46 + 7294.51 |    1705.49 | decay, nuclear               |
 
+
+|   548895 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x1040728e2e935c64afc2333e1447aa8ef71755ffe5320a5dd859dcf919f2e87d | 0x3dc8fef0acbd04ffcba820238652a9915602a3be9f945f1a0a724d86815a72f9 |
+|   548905 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x9a47fd23b5c984f3779a5af2aed1daac77bf0c44952a6514f85042bc9a4ee08e | 0x4511ed7e48c254f7a8aff21ef9a0dc23765253c9607fb0c8600a85c8ac418d8b |
+|   548913 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc46d9d3911f9378a329b22688dbe59b90a293e7a08d92aca9e60a3590703f28e | 0xc057e8ea52c0ea645d53d4371859b0c406d637d5010621463fa3b9aba82be16b |
+|   548914 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x952c41a0c9080acf9d6ec782e2c8ba7ddce0d4128f4d673ef321d758fe5d387c | 0x5d30ad7650bc1201fc29da3f052da5479efd87ad51475af46175bcc33d7008e0 |
+|   548915 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd0e364d938e99f4ff0e865bc55393f951642115b0f7ec9e84742927ea4499789 | 0xc057e8ea52c0ea645d53d4371859b0c406d637d5010621463fa3b9aba82be16b |
+|   548916 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x05e8842ca98d2195ef4331bb0bfb269676413229aea35268a803596ff1dac373 | 0xc057e8ea52c0ea645d53d4371859b0c406d637d5010621463fa3b9aba82be16b |
+|   548917 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xca74cbf923f7864677b728b9d4bf2adee4d2176cdcf3f7d15f002d63dcad47f1 | 0xad00712d7cfcd2511db5ac3b4ed857aef969360333dbd2c06a44b4faf08f5e79 |
+|   548918 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xaf190155af77a7f391a047eac2351957d7abd441a73fddfe20f29be62919bdff | 0xaf4cc6e71ad5c05ae6935d673cb950d167a887e163736b0a8425c2b094d7660d |
+|   548919 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc2653b9b42797eace6db73b7115515524c015faceea02473f7b073afdb3058ea | 0xad00712d7cfcd2511db5ac3b4ed857aef969360333dbd2c06a44b4faf08f5e79 |
+|   548920 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb4aef084d5843437fb3f87beb0cc2de57955b3fe4e311d67a44712a524ea909f | 0xad00712d7cfcd2511db5ac3b4ed857aef969360333dbd2c06a44b4faf08f5e79 |
+|   548921 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd5691af04329c8cf1c69e227943bc6fc880cf567adabdfbdec4b99ff363de704 | 0x4511ed7e48c254f7a8aff21ef9a0dc23765253c9607fb0c8600a85c8ac418d8b |
+|   548923 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe55ac4afbaeaad12f843dfb0541ebfa6c075960e1834bac419e35e4c7bec405c | 0xad00712d7cfcd2511db5ac3b4ed857aef969360333dbd2c06a44b4faf08f5e79 |
+|   548924 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x8c80eed87282183166e5023bc880b4d408342322f185e83fdd0bac6e4966f8ea | 0xad00712d7cfcd2511db5ac3b4ed857aef969360333dbd2c06a44b4faf08f5e79 |
+|   548925 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x557036692b35d4f341804b35e1c02ed22cdd04784bbf8d0d4d2dfed0880d5afa | 0x0d299f5e00eb44a0bc72ad59e68d093ccd8a616d7efbade28b10b7043e458f43 |
+|   548926 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd3c060e7d039ec0e89eed3606e11eca589352b7153db75050dd1f795368aae7f | 0x0d299f5e00eb44a0bc72ad59e68d093ccd8a616d7efbade28b10b7043e458f43 |
+|   548928 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xa4c9f91f5b05304a1be7f0832159cd35d6800fedcd2592321365605e352e26ad | 0xa18356b750462a2d8c29423e148121ad5c620629b1b24ed506b1f40dc13b6de4 |
+|   548929 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x453a2d6cdae1d073f8a97e4902d5ffbbff98840d495da3796b103ef9d8e5b3f4 | 0xaf4cc6e71ad5c05ae6935d673cb950d167a887e163736b0a8425c2b094d7660d |
+|   548930 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x3d57a43c8c4e0af0b74fa27a7ce3f07a858b58d590c6b66cb57fd1481320ee67 | 0x0d299f5e00eb44a0bc72ad59e68d093ccd8a616d7efbade28b10b7043e458f43 |
+|   548931 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd22311a6ac22bf0b3fdaa342120cc12673ca2e02c0b214f2c9da85e3f04671fc | 0x0d299f5e00eb44a0bc72ad59e68d093ccd8a616d7efbade28b10b7043e458f43 |
+|   548932 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x10de46158793b17abe10243c702c962f9a06a56ec5fff2c5df8bc62276322170 | 0x4511ed7e48c254f7a8aff21ef9a0dc23765253c9607fb0c8600a85c8ac418d8b |
+|   548933 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc1a1a6c7282bff7a5ec0608da6bc1ad0afd115cabea0fa734f7b073828b0729b | 0x4511ed7e48c254f7a8aff21ef9a0dc23765253c9607fb0c8600a85c8ac418d8b |
+|   548934 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf02e6c5838f1cba1024d770190263e6d32da325a04e50495b7713d2f58d7bf37 | 0x4511ed7e48c254f7a8aff21ef9a0dc23765253c9607fb0c8600a85c8ac418d8b |
+|   548935 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xbb7ea07f1a573e060e335db0578e88dca4bfeaba629f3ebb1ce42a5779270b6e | 0x0d299f5e00eb44a0bc72ad59e68d093ccd8a616d7efbade28b10b7043e458f43 |
+|   548937 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe2d671ceebeedea07250043e418b991b4b94d44afa9f82d8f8dbdc13b0b1eee3 | 0xa18356b750462a2d8c29423e148121ad5c620629b1b24ed506b1f40dc13b6de4 |
+|   548938 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x35223f76624934a2d19e8b9cce75111d6c591cb14e83a44ea15b14fa031fb5b2 | 0xa18356b750462a2d8c29423e148121ad5c620629b1b24ed506b1f40dc13b6de4 |
+|   548939 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xfc8c797c06d5a531a7645b0509bc1b39692afdaf439be5b7fffd7f49e87632b1 | 0xaf4cc6e71ad5c05ae6935d673cb950d167a887e163736b0a8425c2b094d7660d |
+|   548940 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x1042dff1703354351a025f91c58651bf22dcc5d88560d906cc107dff4c91d007 | 0x958da862a03e0198438162b80e6e93cc7496ad9efeb27aa4eb789d874f3a3cdd |
+|   548941 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x71ad052ab7da3ed983bd0e4ef2fb9a4e36b133ca6800d716f31f5ad896b3ced1 | 0x958da862a03e0198438162b80e6e93cc7496ad9efeb27aa4eb789d874f3a3cdd |
+|   548942 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x989c2df06208b1e2434d41e67374dd1b52e822b49eda50fe0bce1fdea50e9c1d | 0x958da862a03e0198438162b80e6e93cc7496ad9efeb27aa4eb789d874f3a3cdd |
+|   548943 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc4590399c518a3935f27f46c7bb8ca92d40411e8dedfefd3624d5a79a3208f44 | 0x958da862a03e0198438162b80e6e93cc7496ad9efeb27aa4eb789d874f3a3cdd |
+|   548945 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0a5897d655821edb62a9acf3aecf1a094d89415b884568d33df6edb8dcf07ab9 | 0x958da862a03e0198438162b80e6e93cc7496ad9efeb27aa4eb789d874f3a3cdd |
+|   548946 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x3ab7c843531c5767898e5115bd12d61eaa36f5fe9cc8d23beb402f0294b134c4 | 0x8dbedc17e27665d180ae09f2ccea5fa6f7513d2c9796be6fe4a1f5ff4785c594 |
+|   548947 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x2d212668ab43b9a4790558ceae65a220b003c56aeb941f0218c5dfd6e83b6e3a | 0xa18356b750462a2d8c29423e148121ad5c620629b1b24ed506b1f40dc13b6de4 |
+|   548948 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x39097b2493b2172d696672ab5d6120bfd2727e99240cf68446367dbd0667e924 | 0xa18356b750462a2d8c29423e148121ad5c620629b1b24ed506b1f40dc13b6de4 |
+|   548950 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x4456866f426a131777b9620ea9dd827051be1e12a12c3281e3441fd30393332e | 0xaf4cc6e71ad5c05ae6935d673cb950d167a887e163736b0a8425c2b094d7660d |
+|   548951 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xfd5a75c53efb0e20add2fa89dc6cb83373d92dcae44fc23065a83415f2e24b5f | 0xc057e8ea52c0ea645d53d4371859b0c406d637d5010621463fa3b9aba82be16b |
+|   548952 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x74f39fcce994b6b5ce508a26be9f390fa9c3f9eff612ca24f2a8d339987add36 | 0xc1c16fe7a87917283b12fc0327813cc081c2c486de0163155d2cc7d0b8d1b018 |
+|   548953 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe1c345fc5e68196148adf27f097bbc71f9c77afb4c38b941999c13c149cdf0f4 | 0x5d30ad7650bc1201fc29da3f052da5479efd87ad51475af46175bcc33d7008e0 |
+|   548954 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x8dca887713d345f6250925ed5155b0e50dda5cf5f194ea1ade38e838343b063b | 0xc1c16fe7a87917283b12fc0327813cc081c2c486de0163155d2cc7d0b8d1b018 |
+|   548955 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xaf854fcd6169db3189b69225c53f595fec83bb95b5eca7789ad1876d605d5e98 | 0xc1c16fe7a87917283b12fc0327813cc081c2c486de0163155d2cc7d0b8d1b018 |
+|   548956 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x1ee4061a8b77bb2145d2e2770f29cf154f2fa69846dc6c4e4ae942bc9b643f78 | 0xc1c16fe7a87917283b12fc0327813cc081c2c486de0163155d2cc7d0b8d1b018 |
+|   548957 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x33d6ca3367769875272b121505c441784b72573fb39a820f28ceb5d0d09ebdfb | 0xc6d1415104d761643347b6bf8571ebc35815ec93eb5c1b9dc4bf47e92ba6e4ad |
+|   548958 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x1be7774462ccc55263c0d620ce60878376d49069c0132a14c255a70aa54b665f | 0xc6d1415104d761643347b6bf8571ebc35815ec93eb5c1b9dc4bf47e92ba6e4ad |
+|   548959 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xdbc6c97745d64028050767e412591b02c09325d37f3ed5bfbfd73f93de332857 | 0xc1c16fe7a87917283b12fc0327813cc081c2c486de0163155d2cc7d0b8d1b018 |
+|   548960 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x7bd3d2cfdf04093504a4d9dd74a1fc717c06d9450a1a17da58906b832c7b1526 | 0x13ee5168b946197a0a879b57881370a5842f6ccbf76143b1e582345d7409ec95 |
+|   548961 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x27f86ffebd523632c68a4f62cea631d22eef9e8cb63312af27e670e21174f8c7 | 0x8dbedc17e27665d180ae09f2ccea5fa6f7513d2c9796be6fe4a1f5ff4785c594 |
+|   548962 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x67face2a18b9d7aa87e89c833ab43de94a7e1125484213334cc42431f4e6033c | 0x13ee5168b946197a0a879b57881370a5842f6ccbf76143b1e582345d7409ec95 |
+|   548963 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x7c5d1a55dd69e3f7540d1365ffaf17fd6785de08eb6afcfa609ee548098ea155 | 0x13ee5168b946197a0a879b57881370a5842f6ccbf76143b1e582345d7409ec95 |
+|   548964 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xa876c946ea105fa1c322b23a272ba8895a2835e47389439c84606fad397ef77d | 0x5d30ad7650bc1201fc29da3f052da5479efd87ad51475af46175bcc33d7008e0 |
+|   548965 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe69bafff2c1331591993c5a021a7fa68fb7025900f09106856d24fcd17b0785a | 0x13ee5168b946197a0a879b57881370a5842f6ccbf76143b1e582345d7409ec95 |
+|   548966 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc13ccbaf03e917bbef0edbe784f4f8b05dbc54fa6b56f9363adc61671c0a6d1c | 0x13ee5168b946197a0a879b57881370a5842f6ccbf76143b1e582345d7409ec95 |
+|   548967 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x04e737f19700f260f20fc214eda802e325ecc5a8b2e03ad996373195c0222341 | 0x35b5a86763a666bc00f02ce835faebe9c29060032ced9ca4915251cf662d8d3f |
+|   548968 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x65ea3ceb7208db7ab128daccc24e1aa8f6a7648e3f388b10df954e1e0a9aa856 | 0xc6d1415104d761643347b6bf8571ebc35815ec93eb5c1b9dc4bf47e92ba6e4ad |
+|   548969 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x52b5000b84c4bab006fa335ce816be77e57156501097efea9626468d10cad432 | 0x35b5a86763a666bc00f02ce835faebe9c29060032ced9ca4915251cf662d8d3f |
+|   548970 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf5368548c46885622863cd1d73a5824a8a14651fb83f4e3a7d328aec1353154b | 0x35b5a86763a666bc00f02ce835faebe9c29060032ced9ca4915251cf662d8d3f |
+|   548971 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0bb2ce2b9a1c434c47b2a1306e0b6d292c4781cd89df450adeed2385e8544209 | 0x8dbedc17e27665d180ae09f2ccea5fa6f7513d2c9796be6fe4a1f5ff4785c594 |
+|   548972 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x6c7885fe081459074c44a8a4de1137ef599c2ea92b96398f31dca1cb2358ea07 | 0x35b5a86763a666bc00f02ce835faebe9c29060032ced9ca4915251cf662d8d3f |
+|   548973 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x48dfe536d73f8c62a8d6198f8d8d88822c6d538258d501f2110b31439e5ec6e1 | 0x35b5a86763a666bc00f02ce835faebe9c29060032ced9ca4915251cf662d8d3f |
+|   548974 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd5385fa76107bb265cdef9f6ae5ffdb47390a849ad583b568c5ef5e36499cd86 | 0xd6c0e588e1fae402a00058da34359bdf370977b931577df3af881b22523b065a |
+|   548975 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x6208e07a7e89204dc35e204339e3c6f2380dfd3906eebf32d8aa0d315320d966 | 0xc057e8ea52c0ea645d53d4371859b0c406d637d5010621463fa3b9aba82be16b |
+|   548976 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xa2e3ad75ba41f1f100ddf20deda5d652a67fd85632b53b550a1ec8b2a803aae0 | 0xc6d1415104d761643347b6bf8571ebc35815ec93eb5c1b9dc4bf47e92ba6e4ad |
+|   548977 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf5dc4514c4716c0aaf1acabfc27bc0fb45864fb617b66d76d5f364d000665148 | 0xc6d1415104d761643347b6bf8571ebc35815ec93eb5c1b9dc4bf47e92ba6e4ad |
+|   548978 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x1ad3fade47649d9592159636b16ac13e0899a86e38ec4094eb46f60bb2113161 | 0xd6c0e588e1fae402a00058da34359bdf370977b931577df3af881b22523b065a |
+|   548979 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc9fb1686c13eacf4ddf69e0bb5941a55159f66fdfc0b790721a467fbc9c05f66 | 0xd6c0e588e1fae402a00058da34359bdf370977b931577df3af881b22523b065a |
+|   548980 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0863865f4d2148c1918a3e1b53c183caf6602851ff24341072d47994f358149b | 0xdba93e80acf966bbfb9fcaf1374571f44d0731006e09fc30c7229404bd5ab041 |
+|   548981 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xac424dc9757e6dd3e71cf86a6f2ff1bf5430d4458a2208430572daa7bbd877bd | 0xdba93e80acf966bbfb9fcaf1374571f44d0731006e09fc30c7229404bd5ab041 |
+|   548982 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb831067e37f3a580da194320acee1a5a14375b156ae934131fed74ffda6c8b78 | 0x8dbedc17e27665d180ae09f2ccea5fa6f7513d2c9796be6fe4a1f5ff4785c594 |
+|   548983 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc5ce0198196a81823c722db63d59a10be5f2040ed3337b42dcc8718ef8ab5152 | 0xdba93e80acf966bbfb9fcaf1374571f44d0731006e09fc30c7229404bd5ab041 |
+|   548984 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x476c14316ce38cf6196b131df059cbb1a96b7dab249998e22e8700bda08e4010 | 0xdba93e80acf966bbfb9fcaf1374571f44d0731006e09fc30c7229404bd5ab041 |
+|   548985 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x9a302a496aa5cbcc7d553f16996405cde0bc32bbb8bf7cecce60c2f2cd4086d2 | 0xdba93e80acf966bbfb9fcaf1374571f44d0731006e09fc30c7229404bd5ab041 |
+|   548986 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x9d8b2310fbe670c5512ed6a7e591aac19005485a3032d7594b303ed4bef10c0e | 0xd6c0e588e1fae402a00058da34359bdf370977b931577df3af881b22523b065a |
+|   548987 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x06aee393ba590c2ea44a573a91e2d4ccc7c6a6013d14439b509b55b05fe1bcbd | 0xfa71c65bc36253f86454d9542436b6f58b4e500a1e9edc1e9013b3285b106d7a |
+|   548988 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x6c26e43e70ba98f2d981c868390be778e6f8ae2d839a7906c4031a0ccbd8c4c0 | 0xfa71c65bc36253f86454d9542436b6f58b4e500a1e9edc1e9013b3285b106d7a |
+|   548989 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb430722c5026ea755fdfbee846dc0efc384189865849a0683ab11e2b49815561 | 0xfa71c65bc36253f86454d9542436b6f58b4e500a1e9edc1e9013b3285b106d7a |
+|   548990 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x5306de0d6377b6c1f25d35944ae7bf72378bd949dbd7e980a1647389f8bdaf94 | 0x8dbedc17e27665d180ae09f2ccea5fa6f7513d2c9796be6fe4a1f5ff4785c594 |
+|   548991 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd2fc004807487761f94b1de7c33661eb73c399cb01735998a35bd49f393b517b | 0x2bd3536c1a00153d9884b6c47d6c6e5236ae699e510133c307afaa9674b5019f |
+|   548992 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x7fbc9d3be6294d58a3d658a40f26dc2d63457d97f36e40766ded3caac364ce79 | 0x5d30ad7650bc1201fc29da3f052da5479efd87ad51475af46175bcc33d7008e0 |
+|   548993 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd64fcb6d949f038df696df0426d676d752a7965d3cad2ef27f95cb9feb76cbe8 | 0x5d30ad7650bc1201fc29da3f052da5479efd87ad51475af46175bcc33d7008e0 |
+|   548994 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x340d6c33f46b945b812b102c3987a30942ba8fed7a025e0f2705ce4553df01eb | 0x2bd3536c1a00153d9884b6c47d6c6e5236ae699e510133c307afaa9674b5019f |
+|   548995 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xae19adebd6b410e123fd4c53d3e7625ecc581b0d459f154269f36684de4afa8c | 0x2bd3536c1a00153d9884b6c47d6c6e5236ae699e510133c307afaa9674b5019f |
+|   548996 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x4b1d32b929f1fed2271fa8abc3f732e9b580d99bcb50ebe001409010ffb3c0af | 0x2bd3536c1a00153d9884b6c47d6c6e5236ae699e510133c307afaa9674b5019f |
+|   548997 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x893a5bc59656bf0c73fd3b059f0ff6a9e5e28c7cba8da2f74016f0d7026b0c37 | 0x2bd3536c1a00153d9884b6c47d6c6e5236ae699e510133c307afaa9674b5019f |
+|   548998 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x3420f788c7cf9c7341fb7c3accfad4fc994257c2ac6d6f0e21056a005e5adee7 | 0xfa71c65bc36253f86454d9542436b6f58b4e500a1e9edc1e9013b3285b106d7a |
+|   548999 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xafaca53ba652c94c9712cea190d11d0efac2822a00c489dd90e0bef36f413e2f | 0xfa71c65bc36253f86454d9542436b6f58b4e500a1e9edc1e9013b3285b106d7a |
+|   549000 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xbfa3533446029c62f7f8484b6b44d13325426a62dda061ba76daa243254708d6 | 0xd6c0e588e1fae402a00058da34359bdf370977b931577df3af881b22523b065a |
+|   549001 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xede2bdff4bdec95281f2ed9b85bc9313133c602a86b49256512886c31c72c901 | 0x7c50773d1d88778c95a8f26daf50b2053f764bbc716f8cbc7159e2bb99e21d04 |
+|   549002 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd20d847612493a79bd0d405a3262c3dcc2fe3a5a2c8cac036b2bba9c2ea67d0c | 0xd263e2b90065c7f43c18b170ae38b36b4f04bb17ef51129aa8a74d44ebb9afe7 |
+|   549003 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xff4533c6e7be0a663f01e77c2ce054c4474f41d7ced60985d6fdaf017f7d4c35 | 0xcd9fea1a28ff6e822414db42c608c821a22b0835cb191e13d0952975bd4e66b4 |
+|   549004 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xaa653de8abd83e455bd3b8d3ae25a2ff95376a9b530bd87f1d91264fe74f19ff | 0xcd9fea1a28ff6e822414db42c608c821a22b0835cb191e13d0952975bd4e66b4 |
+|   549005 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x71c885f613c3c0549b8a30f348a5d6d602483777e959aaddc28ff6d5ebcbb814 | 0xd263e2b90065c7f43c18b170ae38b36b4f04bb17ef51129aa8a74d44ebb9afe7 |
+|   549006 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x89a560c5404ac456e0332389015d6adf7fbbd9d33cbdfdc4160b8f3fdb0c0d1d | 0x7c50773d1d88778c95a8f26daf50b2053f764bbc716f8cbc7159e2bb99e21d04 |
+|   549007 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd22e7933d35892649a1398ec693b4ad3ac300a5ba31729c3bb337163ac214d62 | 0x3e89e1c7cfab67fe5687faa0ac6f642c8206034ebbe226958d9d1ede0318c512 |
+|   549008 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd21ede51e21d205e442ac5417ac2435f31ce590f8df449e5f89308fa1f000cb1 | 0x3e89e1c7cfab67fe5687faa0ac6f642c8206034ebbe226958d9d1ede0318c512 |
+|   549009 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe99932550df56be9657ca3146ad75409e76820dcb46ada9d70917afd5e980566 | 0x3e89e1c7cfab67fe5687faa0ac6f642c8206034ebbe226958d9d1ede0318c512 |
+|   549010 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0f9e554fd60d00b56510ab9ce82181396c365a82c75576b8484f2070a0c8a996 | 0x3e89e1c7cfab67fe5687faa0ac6f642c8206034ebbe226958d9d1ede0318c512 |
+|   549011 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x2aba5c41743c845e4c9f0ff61d1d033fb927f4fdcf5c9b2ce969e1c0a1038a7b | 0xcd9fea1a28ff6e822414db42c608c821a22b0835cb191e13d0952975bd4e66b4 |
+|   549012 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x89957eebe77546bbe1c366397983d96f47a390154fc83cc409afc3f34d3241b4 | 0xcd9fea1a28ff6e822414db42c608c821a22b0835cb191e13d0952975bd4e66b4 |
+|   549013 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x45bc7fe2400e58d71a1803e710f3d02ee2406e4c89d51b3829cb81df126916a9 | 0x3e89e1c7cfab67fe5687faa0ac6f642c8206034ebbe226958d9d1ede0318c512 |
+|   549014 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x98c129f640082e0e65cbc6f16352f51207359b5736f47fcb49aa3bae35b91bd6 | 0x269d46c4de973c20e27ce025e972b064b46409096c6b93ed2b1f97548f738338 |
+|   549015 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd177f4eea8b50bf86c755d4a226526b329c397ae70bc882a06e061d52dcc2e32 | 0x269d46c4de973c20e27ce025e972b064b46409096c6b93ed2b1f97548f738338 |
+|   549016 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x3f8eb0fbbd20b6601d3c6d22e5cea46411b4908d3264ded9e6bcef70c1eaf400 | 0x4e9a7b3f7fade7c113811f4fa71fbbfa0246aeb3bda56e89760403ebf006adb7 |
+|   549030 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xa1610aeac4c6e18a6ca4412d98f94fda2696bde430a572deef2fadd1fa0fe81d | 0x99b0ebfa4a72b7bdfc929ab32c39c06820ff31bac32e4e95737ba1b3bde65038 |
+|   549031 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc5fd7954f9ec51286edb0d14cd5327dcc4e770f5a49047b596c89e8bfc8b6981 | 0x99b0ebfa4a72b7bdfc929ab32c39c06820ff31bac32e4e95737ba1b3bde65038 |
+|   549033 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x10eb9c25261e44a310f4e800121a6de48b708f9dbb213e91f3b1297b2a9c7353 | 0x99b0ebfa4a72b7bdfc929ab32c39c06820ff31bac32e4e95737ba1b3bde65038 |
+|   549034 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x26389fc423161873775eef6773709ee9ad0dd1f76f1daa90054b1203c57ce419 | 0x4e9a7b3f7fade7c113811f4fa71fbbfa0246aeb3bda56e89760403ebf006adb7 |
+|   549035 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf8ad76422e796789ff18f868b3540109798336fd5975d4dcef3bdd7c6515b5ee | 0x269d46c4de973c20e27ce025e972b064b46409096c6b93ed2b1f97548f738338 |
+|   549036 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x286ae8c680042b5733ef2f2f8c951fec99660eb582a52b073ec0cbc35ae32600 | 0x4e9a7b3f7fade7c113811f4fa71fbbfa0246aeb3bda56e89760403ebf006adb7 |
+|   549037 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x26c60fd832dba7d1ae28cdcb4683e1ece1fc47e4e3c320b3094345c7e2e3e1dc | 0x269d46c4de973c20e27ce025e972b064b46409096c6b93ed2b1f97548f738338 |
+|   549038 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x6882121fe0c93cd78f736f5898d939bc7ca6059315a8b43de8e73cac633e46d5 | 0x269d46c4de973c20e27ce025e972b064b46409096c6b93ed2b1f97548f738338 |
+|   549040 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x2be8134382042983b0f3d1e2dd490053525f5490987e36517c4b75d5022b3070 | 0x065dae5d1c4d964d3e2fba2890adc179f676a42474c7f45b5740bc7a28a292c3 |
+|   549041 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x6c3d1023e8b4e69bb1be70eb66e849864b79ee6d9ba1206286521caee02ba9d4 | 0x065dae5d1c4d964d3e2fba2890adc179f676a42474c7f45b5740bc7a28a292c3 |
+|   549042 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xdec889e75aedbd680cdff39ab3ff684c89a1a81303edc6ed12f4eb353019c5c8 | 0x065dae5d1c4d964d3e2fba2890adc179f676a42474c7f45b5740bc7a28a292c3 |
+|   549043 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x8f9409de2c6ca79d592911485780dd44c17d6379d0c775b4c3572698d1bae5bf | 0x065dae5d1c4d964d3e2fba2890adc179f676a42474c7f45b5740bc7a28a292c3 |
+|   549044 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x5776107e0b6ae325af4338848f3571946f699aee2a915147549cb8ad0834b1e1 | 0x065dae5d1c4d964d3e2fba2890adc179f676a42474c7f45b5740bc7a28a292c3 |
+|   549045 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd6d9265bb56d8a291327efe08263ee02abc340786cbbbda41579fbdf9e9e7b1b | 0x99b0ebfa4a72b7bdfc929ab32c39c06820ff31bac32e4e95737ba1b3bde65038 |
+|   549046 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x1b0468c95572e6eecf9d7972e1e0c612a810b52d9d53f9b9c7a113059e2992fd | 0x99b0ebfa4a72b7bdfc929ab32c39c06820ff31bac32e4e95737ba1b3bde65038 |
+|   549047 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x89f0db365b6818286a1a2e7c9db7872fb1de0dddbef7a7d94af4e6789675e4f7 | 0x239129ccce62b5738934bb0b178b885f665c8da459500725d2e983fa7f0f3c51 |
+|   549048 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xdd40f18e7b337922d94be03c07510c0e08bd6d7524c92694340dd7a686bb78e1 | 0x239129ccce62b5738934bb0b178b885f665c8da459500725d2e983fa7f0f3c51 |
+|   549049 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xfdd1028a7eb160d6cd499b333cfac5aae7a831cbc77096616dcc662d0b5a2536 | 0x239129ccce62b5738934bb0b178b885f665c8da459500725d2e983fa7f0f3c51 |
+|   549050 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe0d4b1c4b9fef764cd960df7a1a723894e6904b308b146d87fe6a62fe611d053 | 0x4e9a7b3f7fade7c113811f4fa71fbbfa0246aeb3bda56e89760403ebf006adb7 |
+|   549051 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xbec25408741cfe6b9ef164b3ced160a00d7d271146e7dec50b00dbcbbad77048 | 0xe73b7d747f07bdf2c09d575486fda7c74deaf304c03a1e851c5ea3b4c99b70e5 |
+|   549052 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xeddc3a4e14b2cfa21144ca535edb4e4ec242edefe28a7db81cb74a7c0121e0e2 | 0xe73b7d747f07bdf2c09d575486fda7c74deaf304c03a1e851c5ea3b4c99b70e5 |
+|   549053 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0d576113423543796587c137359849d5aaf6755c5817e0c7d790cd542049bc62 | 0xe73b7d747f07bdf2c09d575486fda7c74deaf304c03a1e851c5ea3b4c99b70e5 |
+|   549054 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xbcc58d5a4df586d285c682dc43a3f5bda897b37e4d5dd0bf4bc2af219cf1aabe | 0xe73b7d747f07bdf2c09d575486fda7c74deaf304c03a1e851c5ea3b4c99b70e5 |
+|   549055 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf5159507e13c97bec39a2a00aff09d9209e0aca1cdf721e14840268a54ef23b4 | 0xe73b7d747f07bdf2c09d575486fda7c74deaf304c03a1e851c5ea3b4c99b70e5 |
+|   549056 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x297e90482b570893d5a1e396e08a566abf00169928953a26967f519f8db0e0e6 | 0x239129ccce62b5738934bb0b178b885f665c8da459500725d2e983fa7f0f3c51 |
+|   549057 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x9537235fbe45079b359e28e556930fa34b81006ca0e3f7c7e331699dc5d2e0c0 | 0x4e9a7b3f7fade7c113811f4fa71fbbfa0246aeb3bda56e89760403ebf006adb7 |
+|   549058 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x3c36b5c0df4fd33f318e2a0059c0e00b574e8c59f6467cde2a69f653936b2f69 | 0xf9d7bb1530ccbc56448bc4d2b84cb619208677b487a991ff183a0583021d3d13 |
+|   549059 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xa5607c85fbb1a3f1afb6e28a1b3d65885fc63646155daadbdfde81bcb5eb5730 | 0xf9d7bb1530ccbc56448bc4d2b84cb619208677b487a991ff183a0583021d3d13 |
+|   549060 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0dfc31338f4282543a7d2eba9d810c88f4aa8e75ae25b2de368cb46f1f988f8f | 0x239129ccce62b5738934bb0b178b885f665c8da459500725d2e983fa7f0f3c51 |
+|   549061 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xbef2f451751acbccc1f983f1bbe40b1c2f56af61c5e30f077e8e644e471ca411 | 0x7c50773d1d88778c95a8f26daf50b2053f764bbc716f8cbc7159e2bb99e21d04 |
+|   549062 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x2f42b23674ac00ea567995b3c0ac7536e4a3aed413fdb8c928332108ab1168ed | 0x9ba517f61b8e14390f7b6f712fb486c4ac1ed7a9d135a267c9c6297f31620de9 |
+|   549063 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x15f3f686c04e0af153d994d3bfa6e89e9df4420639e403c2bd2c76f8e88896f5 | 0xd263e2b90065c7f43c18b170ae38b36b4f04bb17ef51129aa8a74d44ebb9afe7 |
+|   549064 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xff88f07a23f198a39b9cc8bf24a689ce1ad489592f48521697021c9778977cae | 0xd263e2b90065c7f43c18b170ae38b36b4f04bb17ef51129aa8a74d44ebb9afe7 |
+|   549065 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x81d2b1b417be9c8581c6a7ca5f3807d35ea41f13ffb2a9e85e9b0cb1cbfe18cd | 0xf9d7bb1530ccbc56448bc4d2b84cb619208677b487a991ff183a0583021d3d13 |
+|   549066 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb38b6012a1928ea8e3d2e5e103e212879e626440cd1d74f779355e5d27554be2 | 0xf9d7bb1530ccbc56448bc4d2b84cb619208677b487a991ff183a0583021d3d13 |
+|   549067 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x49621ba774704422409374e75af0c135fc9b69bb83a6cc7eaf792f12f732b6dc | 0xf9d7bb1530ccbc56448bc4d2b84cb619208677b487a991ff183a0583021d3d13 |
+|   549068 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x65380ac23d64e8a1c5e35b6984d7587f37be00c4ed1e3919deadb7e63945afdd | 0xd263e2b90065c7f43c18b170ae38b36b4f04bb17ef51129aa8a74d44ebb9afe7 |
+|   549069 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xaf5baa72f37af11fe90888ba91467d1d035aab8dae1d6485bf896d60ef44387b | 0x9ba517f61b8e14390f7b6f712fb486c4ac1ed7a9d135a267c9c6297f31620de9 |
+|   549070 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xea5d672fcc9a70d5d21e1fc5d4441ff903e1f6b0a6dc803c0c1a46fa37961550 | 0x9ba517f61b8e14390f7b6f712fb486c4ac1ed7a9d135a267c9c6297f31620de9 |
+|   549071 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd71e111ff3c5a94253bd438c8d0c1fda57b962a9f60ac6dc7e6c1d2d8fd7f2d3 | 0xec5459798b12a259a4b797e224d90d30311fa841d18c8544f17ed0ba78a3b27a |
+|   549072 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xfbd8e9160ccdca2dff4d4747c2f3917208ceecc55f48e43706602cd4b295d1f7 | 0xec5459798b12a259a4b797e224d90d30311fa841d18c8544f17ed0ba78a3b27a |
+|   549073 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x834297e08f1c6427898d4511bf935722d175beb96382147864a464157fa04578 | 0xec5459798b12a259a4b797e224d90d30311fa841d18c8544f17ed0ba78a3b27a |
+|   549074 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb2e59ffacde9f63bca155e97b50a0b0f47bf379657eeebf591e37e92bfcb98cc | 0xec5459798b12a259a4b797e224d90d30311fa841d18c8544f17ed0ba78a3b27a |
+|   549075 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb70ab2c8cfeda5c71a34e0fee72038da597a67bec904df1ca5d0954001be779f | 0xec5459798b12a259a4b797e224d90d30311fa841d18c8544f17ed0ba78a3b27a |
+|   549076 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd23aa866966d1fa8fd19c8ceda9cb64a7cdc89439fae6176ece34b7dc827834b | 0x9ba517f61b8e14390f7b6f712fb486c4ac1ed7a9d135a267c9c6297f31620de9 |
+|   549078 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x5434c4ae22f2244741a862b1020c0196b564fa6bd001f5250fa4254b6f708780 | 0x090691f5ac610aa78f56410ff05dd10cdecae8dcfdd15cf443195d3534df5e14 |
+|   549079 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe71449be242030b0598d9583e1007e7758ef64cdb168d9fdd555ecd5d0c5a011 | 0x090691f5ac610aa78f56410ff05dd10cdecae8dcfdd15cf443195d3534df5e14 |
+|   549080 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x5026bca23c3321b6331505dcffabe579fe4190d8af77e25ca9c2e9f094397d99 | 0x090691f5ac610aa78f56410ff05dd10cdecae8dcfdd15cf443195d3534df5e14 |
+|   549081 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0f066593411565f3237639d3d908d1ce3008175b5d74b195bd6290c7cc6136cd | 0x090691f5ac610aa78f56410ff05dd10cdecae8dcfdd15cf443195d3534df5e14 |
+|   549082 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x35f5e224f755686d0f4f1705ac27d65d57d4c48126e32691c8f5c1b988d6484c | 0x090691f5ac610aa78f56410ff05dd10cdecae8dcfdd15cf443195d3534df5e14 |
+|   549083 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x6dab92403043ec34762a5c18a975d17170bec7e66cd3e9dc9675a35c20673bbf | 0x9ba517f61b8e14390f7b6f712fb486c4ac1ed7a9d135a267c9c6297f31620de9 |
+|   549084 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc820d7d130e0bd31cf02880376b656e2689ee71d27c73e501deceb870b8afd5f | 0xdf5bde25455ae4fe47dfb37a72f5f71e1f6faaf75c0144f152aea1e0fb878020 |
+|   549085 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc2d53fc2c2121dbf8c4d7b7407bba7e2858eb30562cf40375ed8e8e056690ed8 | 0xdf5bde25455ae4fe47dfb37a72f5f71e1f6faaf75c0144f152aea1e0fb878020 |
+|   549086 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0714b87aca2ac102938b370173a1f9c41ae324e713050e764d54b15a363ac4bf | 0xdf5bde25455ae4fe47dfb37a72f5f71e1f6faaf75c0144f152aea1e0fb878020 |
+|   549087 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x762c6c75a499cccf8d88258730194ad160ceb401a84dc41692baa1dcad946e2e | 0x994c29a5b24a24192342953dc5d4681c9097583e54f98d9078107e9a872598a8 |
+|   549088 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb34ae9dd79b8df97c8df8eed5c84ffd701017b8a0e9eafe4124cb2c858c327f1 | 0x994c29a5b24a24192342953dc5d4681c9097583e54f98d9078107e9a872598a8 |
+|   549089 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x068ae3f023f347da67c9d6c344ab07d9677d7f288514ffa0ee665ffbc90b05af | 0x994c29a5b24a24192342953dc5d4681c9097583e54f98d9078107e9a872598a8 |
+|   549090 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x117cbb0a27fbe71f6b141bd20fc9c0615003ab7106d4645e03c6812459cbb87f | 0x994c29a5b24a24192342953dc5d4681c9097583e54f98d9078107e9a872598a8 |
+|   549091 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf87070586ce3f8e4fe6edfb8e83e9fea7d4525557951c1ea3aaafe789c5af3bb | 0x994c29a5b24a24192342953dc5d4681c9097583e54f98d9078107e9a872598a8 |
+|   549092 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x65fd5645a97206fafa1981e09854d8396f518f2733fbcb56ecd5610425bb8d56 | 0xdf5bde25455ae4fe47dfb37a72f5f71e1f6faaf75c0144f152aea1e0fb878020 |
+|   549093 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x93a230aa8322f0a5a0ab01975c9208f8a3c7640833075abf7c678e4a99682d39 | 0x341fb35db36b3955ae628bf179b85a862ce0a438e38033a2a89d7d7ab0e8e2cb |
+|   549094 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x16d09dd7649a422283095b743fd2de87bdc4db3a79c4a856ec8b380c8fbd545b | 0x341fb35db36b3955ae628bf179b85a862ce0a438e38033a2a89d7d7ab0e8e2cb |
+|   549095 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xbc74bed7bf15528c40433d1b38925b0884525a7a7021bb17fe282d9749bea49b | 0x341fb35db36b3955ae628bf179b85a862ce0a438e38033a2a89d7d7ab0e8e2cb |
+|   549096 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xa3f938a6adb739096bb8d6f5c2126b7f876dbbe4e182b595a8040a079cf4d0d6 | 0xdf5bde25455ae4fe47dfb37a72f5f71e1f6faaf75c0144f152aea1e0fb878020 |
+|   549097 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x07f65ad56e70ec22d6d37cdd19f6bbc0942b4aa5c0b34c5f383e7be8425b74af | 0xea6c4570ea95453ae75445679885cca2ad8b7f5cf2fa3219a9d91b8103eccb04 |
+|   549098 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xaad80b61d5722635ebd595fc5c03b9143b26ea80de253720b0262c7933b996c3 | 0xea6c4570ea95453ae75445679885cca2ad8b7f5cf2fa3219a9d91b8103eccb04 |
+|   549099 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc6ca13ffd67969994dba0849f3c33482f77ba19f0bd6228f6c633fe1959831c3 | 0xea6c4570ea95453ae75445679885cca2ad8b7f5cf2fa3219a9d91b8103eccb04 |
+|   549100 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x8e754dac80caa20c22b041cf374e204b83e2bebcb1a5d03dcedd3937c964107c | 0xea6c4570ea95453ae75445679885cca2ad8b7f5cf2fa3219a9d91b8103eccb04 |
+|   549101 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd3dea1c041211646f68a0f777d130eccba4331397746bbcb16b3118e592d5fdf | 0x341fb35db36b3955ae628bf179b85a862ce0a438e38033a2a89d7d7ab0e8e2cb |
+|   549102 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x107c428165ad74e60e55431800ced53d1dc9d2526a0c2b9622086b8cd5e350e3 | 0x341fb35db36b3955ae628bf179b85a862ce0a438e38033a2a89d7d7ab0e8e2cb |
+|   549103 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x9f7d7d24535396472ee389791dff73e841d35ecc436107865bfabd6899246d2e | 0xea6c4570ea95453ae75445679885cca2ad8b7f5cf2fa3219a9d91b8103eccb04 |
+|   549104 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x8be11c0574d955f3538447a019c57a09436b78c6dde2f4c2d90d0a5ea9ef1dc8 | 0x5cd371eb8a64180f6c7b428c3804315d1005fd5015276200542e845ebc85cb6d |
+|   549105 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x1e81f53a7bd68633a7bb1df9ac69aaeb87cadd01c78f435b28561f00db053823 | 0x5cd371eb8a64180f6c7b428c3804315d1005fd5015276200542e845ebc85cb6d |
+|   549106 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xfd624571a5e56b8ffa72508bebc3ff11b246cbcf94f97e02ca72c35921b04cc1 | 0x5cd371eb8a64180f6c7b428c3804315d1005fd5015276200542e845ebc85cb6d |
+|   549107 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x66616768273a6c814d952f919fe4691b975c0417fef645ecf079116b8c970b57 | 0x5cd371eb8a64180f6c7b428c3804315d1005fd5015276200542e845ebc85cb6d |
+|   549108 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xcd4ea3335845512c8babf5f71f1b40971d94c2f9c39a9b8e68d8ab1b8420fc6a | 0x17c077eb472d9d32f1570d0446097cdfc73ee66bc93af5295c92ade1f3e7e255 |
+|   549109 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe81075279de9c3bee491ceff09708e8a989c16a0e952aef1233e5602bcb815c5 | 0xc6de174f9b74b0aea194116f8ab004e3f78f73933fe174c44c5062b1a216ed85 |
+|   549110 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x397f8184e1c098a343957b2bad75d4f9fc9c0c2319b7e4851408ec78253fd92d | 0xc6de174f9b74b0aea194116f8ab004e3f78f73933fe174c44c5062b1a216ed85 |
+|   549111 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x2abfb704c54ca1c984248e336846dbf21f8379764dcd2a629ccaaafcc027d010 | 0xc6de174f9b74b0aea194116f8ab004e3f78f73933fe174c44c5062b1a216ed85 |
+|   549112 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x95d3108c35237ed22b74935536a9f4778cc0425169a98eda655b9a5248b3a10b | 0xc6de174f9b74b0aea194116f8ab004e3f78f73933fe174c44c5062b1a216ed85 |
+|   549113 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x6760a05850af8d5ffb3c6175baf30e222f2ba1f28ef5f64013cf5f081ef7e786 | 0x5cd371eb8a64180f6c7b428c3804315d1005fd5015276200542e845ebc85cb6d |
+|   549114 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe4f3d573493aa60fd7c6effe238d2a8caf844778dd08f06d11a1e923c86b6b6e | 0x17c077eb472d9d32f1570d0446097cdfc73ee66bc93af5295c92ade1f3e7e255 |
+|   549115 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb0416dc72c31123adcefaf52947e78a80fe7de306d49cc3dac9d8a45a0d1f02d | 0x17c077eb472d9d32f1570d0446097cdfc73ee66bc93af5295c92ade1f3e7e255 |
+|   549116 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xfa4b514d41aff3bd399c239fc36bcd5f7a6ec369a4dec8a44129177641e9901a | 0x17c077eb472d9d32f1570d0446097cdfc73ee66bc93af5295c92ade1f3e7e255 |
+|   549117 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x55aff1ae723f1b98b40dc99d8c12c7178822db8e69c3bc9e43e98f9c1e1ee97b | 0x17c077eb472d9d32f1570d0446097cdfc73ee66bc93af5295c92ade1f3e7e255 |
+|   549118 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb38fc8b61c85e282e9a9d224195da84314b205e6930007dac13339b85eef3451 | 0x50d196bbbd80b226287182dbaa487daec1bb35125314f0a89223bd3884ed1071 |
+|   549119 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x5f6b925c598873e782d37c6f243a11612892cd70e10edcb0bc3cac10bbdf6971 | 0x50d196bbbd80b226287182dbaa487daec1bb35125314f0a89223bd3884ed1071 |
+|   549120 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc6a387ede9afe67d9f70ba16ba4b8b8a426f01764e50d4c7dcdeb544fbee0e6a | 0x50d196bbbd80b226287182dbaa487daec1bb35125314f0a89223bd3884ed1071 |
+|   549121 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xbb1d43ac85b55cf4a6c8b0b02c57def9d508b76f7be17b5b18ff7f42ecd42cb6 | 0x50d196bbbd80b226287182dbaa487daec1bb35125314f0a89223bd3884ed1071 |
+|   549122 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x8da84cc4e40e4d46fbc517d8bd9ca84a5c01e367494ee2f7cacc7da996a091bf | 0x50d196bbbd80b226287182dbaa487daec1bb35125314f0a89223bd3884ed1071 |
+|   549123 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0c5bead3f743a774cf172bfe8c1b7a0f6c831136e2d6461fd2ca0383215f76fe | 0xc0e1ea1dfc4b3ef6e83f23d05606563d6bcd6085084caa227ab9756da716ab33 |
+|   549124 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xa014535a48cd76675b78d6c5c74208690d73ac8bf321370e40b2b0651385d8f8 | 0xc0e1ea1dfc4b3ef6e83f23d05606563d6bcd6085084caa227ab9756da716ab33 |
+|   549125 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xfd5ab06c76d43646d6f42486f99eb05ed79353cbfd02db0ca332abe8310457fc | 0xc0e1ea1dfc4b3ef6e83f23d05606563d6bcd6085084caa227ab9756da716ab33 |
+|   549126 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x93cfaabdcbd275c25740ed4d442a612ebc74e3ab66f5b080e94d70072ba1f48f | 0xc0e1ea1dfc4b3ef6e83f23d05606563d6bcd6085084caa227ab9756da716ab33 |
+|   549128 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf47e95aca6d29f7ba903fe4b08e6acac9a34fea58e4ec3fd60b469aa00fed537 | 0xc0e1ea1dfc4b3ef6e83f23d05606563d6bcd6085084caa227ab9756da716ab33 |
+|   549129 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0960ed2697e59792eb16c25984c0665cb57f378dcf3d0fc065120983e1f9e29f | 0x1b4319c32f00d0ab83747c0b2c51e7e5e3c897fb13bbddad33120eba1422d44c |
+|   549130 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x12b93ff0eb5fba83c41b380cd1cdd74a299187bd040d3b1fb76f87b861f62656 | 0x1b4319c32f00d0ab83747c0b2c51e7e5e3c897fb13bbddad33120eba1422d44c |
+|   549131 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb09b82982b3c64a02ceb1281cac04bb64b2ddf12f0f83792002f4cd59698d8b7 | 0x1b4319c32f00d0ab83747c0b2c51e7e5e3c897fb13bbddad33120eba1422d44c |
+|   549132 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x567e6d35581d855868a182b1c2537dda59c139535baa36e0700f3ba3ba5b101f | 0x1b4319c32f00d0ab83747c0b2c51e7e5e3c897fb13bbddad33120eba1422d44c |
+|   549133 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x2ad08849b5e3c7d306835b22a4534be1fb1c0cc83fda13fe62938d20149cabab | 0x1b4319c32f00d0ab83747c0b2c51e7e5e3c897fb13bbddad33120eba1422d44c |
+|   549134 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xb880ed90d586be2d36ebac9424c0761bbdbc81962db5b0a58f658c9dbfef5efa | 0xc52815a167af0c4377c8fedd73f9ecd1d5191714a7db5fb38a5236986e904a74 |
+|   549135 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x48100380ca02860a890bb399de364f28f17c61bd7d89eec1fb3b35f98ffbc412 | 0xc52815a167af0c4377c8fedd73f9ecd1d5191714a7db5fb38a5236986e904a74 |
+|   549136 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xd7cd5199895563482a91881bf9fefc04a340d32d53e8b626a38a90d60ffe1257 | 0xc52815a167af0c4377c8fedd73f9ecd1d5191714a7db5fb38a5236986e904a74 |
+|   549137 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x8272d8267413f54005ea5a181afc9667df39303a8758194aff566d47ec5c764e | 0xc52815a167af0c4377c8fedd73f9ecd1d5191714a7db5fb38a5236986e904a74 |
+|   549138 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xabb449eadc021b9416bba40e37aee704b5226c81b8de82862f2c1e886d7b3006 | 0xc52815a167af0c4377c8fedd73f9ecd1d5191714a7db5fb38a5236986e904a74 |
+|   549140 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x43305f99a7b6ffa437d7b90b48543d127a35d50447a0a0d0025aee0d8d0b98b7 | 0xfad24fb16fa4fe009e742ba5186b2bfa647d9804091b87a158574f44801bc3c3 |
+|   549141 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xec1c3146722f5aac4d69204ed28db7db5675ba36cf809b0278cc05152154bec2 | 0xfad24fb16fa4fe009e742ba5186b2bfa647d9804091b87a158574f44801bc3c3 |
+|   549142 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x935d172dd27a1f4597ede269facb3ffea4e768f433fcea573bf94cc5cd5a2054 | 0xfad24fb16fa4fe009e742ba5186b2bfa647d9804091b87a158574f44801bc3c3 |
+|   549143 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x73e91ef41dbf0b96c2c13980326e6f95edc5aa1dbffc07a95a0823a331aeab58 | 0xfad24fb16fa4fe009e742ba5186b2bfa647d9804091b87a158574f44801bc3c3 |
+|   549144 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x62338f917ab6dc0f71203f0ab9d19923323d93485b6c220d5b7471b841f90ccb | 0xfad24fb16fa4fe009e742ba5186b2bfa647d9804091b87a158574f44801bc3c3 |
+|   549145 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x20cafb35e914b3a375e1a0474a3d3a5ea7292feba90509474f2cbda15a3be5cd | 0x7093fba6c3d2d88d81120aebc0b81c4eba74242d0a18c66f82a48b9f21d6e9db |
+|   549146 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x0f008ef35ffc02ccce4ed3f60833cab31d7d4edfd4549a1ca8cbacd9cb93ddca | 0x7093fba6c3d2d88d81120aebc0b81c4eba74242d0a18c66f82a48b9f21d6e9db |
+|   549147 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x00572340ea72abef4e9e5397c8d18c182acbea71224c7c5723dd29faa2c6cbfa | 0x7093fba6c3d2d88d81120aebc0b81c4eba74242d0a18c66f82a48b9f21d6e9db |
+|   549148 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc458c00dbe9a73ddcac070c0cd6c8d7f109827a763ba4fadd658aef07d5cbf2d | 0x7093fba6c3d2d88d81120aebc0b81c4eba74242d0a18c66f82a48b9f21d6e9db |
+|   549150 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x61997c48b303846ff8e13377c675852345fae36a4aa37d9af74acb224321d05b | 0x7093fba6c3d2d88d81120aebc0b81c4eba74242d0a18c66f82a48b9f21d6e9db |
+|   549151 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x377e90ebfa58c14855f36efbe1ed0d0735ca1bdf4da36ef039cb00d73a14aebb | 0x9ef7fb28e9751d49cea2d2324c51b67e47bb9ed9521e809f682b080e700ac636 |
+|   549152 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x443146e22e6ee0e688f2a49e90654ab3f91db9af8d38752c824f721ced3ee247 | 0x9ef7fb28e9751d49cea2d2324c51b67e47bb9ed9521e809f682b080e700ac636 |
+|   549153 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xab5b7a8f438ff7711f38a83c6af2876bef082eff726ac36ee325ba603865fef3 | 0x9ef7fb28e9751d49cea2d2324c51b67e47bb9ed9521e809f682b080e700ac636 |
+|   549154 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc893c80bd0148cc7f5724efc6a5cf73c8c00a39a26bb0c28f2911de1e00b150b | 0x9ef7fb28e9751d49cea2d2324c51b67e47bb9ed9521e809f682b080e700ac636 |
+|   549155 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc1d248c6a07ef3ae5a163d97f92393436f9dc08357de65507ba82b1a0d91109c | 0x9ef7fb28e9751d49cea2d2324c51b67e47bb9ed9521e809f682b080e700ac636 |
+|   549156 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x2061f055341006a6548407cef6d3294d7c6c63a9b7d1321252ffceddc42a3d65 | 0xbca4c477e9dfd01ea7ca01f913f7c8583504d9aadca7de59bd62a3238c787223 |
+|   549157 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x7b9d585c1d952c45dc25a850787a97ee0f8d13b99ba1eb28b39f57aa8ebafa2b | 0xbca4c477e9dfd01ea7ca01f913f7c8583504d9aadca7de59bd62a3238c787223 |
+|   549158 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x179c4ac4eac8d3e0c1f836d7d7496b14588092ca464c2ce035c26f554b686a03 | 0xbca4c477e9dfd01ea7ca01f913f7c8583504d9aadca7de59bd62a3238c787223 |
+|   549159 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xc685fcc61a81b9d95135c82412a35cf500c4be042c159cbcdb957a3b3134a3f2 | 0xbca4c477e9dfd01ea7ca01f913f7c8583504d9aadca7de59bd62a3238c787223 |
+|   549161 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf49f9f0d649d4a404ec7b46eb1087baf7f2fe0d9a529d3a566bde59984f7dcfc | 0xbca4c477e9dfd01ea7ca01f913f7c8583504d9aadca7de59bd62a3238c787223 |
+|   549162 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x47dad57ce5c7e714b1260596d6092def16a58fece6ee0498878d949a88bc894b | 0xa138054e898dd22522235b28a6ac74aacecbc6b0deaded9a3fd6227684556ac5 |
+|   549163 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xafd62a912a341840096eeddbb1e97b5a3c1ebd42e479d83eec170b28f73ed381 | 0xa138054e898dd22522235b28a6ac74aacecbc6b0deaded9a3fd6227684556ac5 |
+|   549164 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x4cecf12f0ad8ef278e5d2308f0b5bb0cd122051b64327d81211213feab356310 | 0xa138054e898dd22522235b28a6ac74aacecbc6b0deaded9a3fd6227684556ac5 |
+|   549165 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xad16e2d696736aff141c57f2e03e83e62be9fa05ff67a7663ed9b1c1742547d3 | 0xa138054e898dd22522235b28a6ac74aacecbc6b0deaded9a3fd6227684556ac5 |
+|   549166 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x62b8e453bf28562314d2314ff8ade4d6acb9f3ce7c9dbe52c94aad11d6ce2011 | 0xa138054e898dd22522235b28a6ac74aacecbc6b0deaded9a3fd6227684556ac5 |
+|   549167 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x87cb760359d2705e6a5e39cea5f562baefc834ad7ee7e3e2bd1bc2287da6b1db | 0x0a11052d01ce4b98927fdf61753d5046f4d9f60a49c8ddee9a33dedf7cd6c354 |
+|   549168 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe2a6fa43be4dddd0ac9dd7ff7d4093f5a51f3a7628aaca5e6cd2991d51f8c71c | 0x0a11052d01ce4b98927fdf61753d5046f4d9f60a49c8ddee9a33dedf7cd6c354 |
+|   549170 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x3ed115f798ca3cc0937427c617619743e9f9164ccd86cfcda0e71e03507e0277 | 0x0a11052d01ce4b98927fdf61753d5046f4d9f60a49c8ddee9a33dedf7cd6c354 |
+|   549171 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf3cf88b046aea4efa859aa5dc2930590eb3dda747fb4d196619650668d17e8b9 | 0x0a11052d01ce4b98927fdf61753d5046f4d9f60a49c8ddee9a33dedf7cd6c354 |
+|   549172 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xed16ac5b01a8a426243fe78823a2a3675f68cfad3fa293b6fd2512ac2bce9917 | 0x0a11052d01ce4b98927fdf61753d5046f4d9f60a49c8ddee9a33dedf7cd6c354 |
+|   549173 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xf23131fe8a3ab9bd46d3e0d098422f9c96b94311357851033a86c294ba3c788f | 0x589cbb2c327c38d1ab4511575059dfb8389f182d374d93fcb47c129eb7d24bea |
+|   549174 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xfc2be1eda6b07fe9a9375b8d33eda736e5de00f00e365463fa27685c4b2e5fc8 | 0x73bbdc979ee01541725c1b1938ed005e6b669d44a3e51abf21dd95bc39db77b8 |
+|   549175 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x69c90c5b1e3f44a976f72f484c95b0ab90e1f09c2bbd80a892c62005dc970a06 | 0x73bbdc979ee01541725c1b1938ed005e6b669d44a3e51abf21dd95bc39db77b8 |
+|   549176 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xddc909b5cc2f16407ab21ffee66428579c47b4b6be82119cfcaa61b3a5eee343 | 0x589cbb2c327c38d1ab4511575059dfb8389f182d374d93fcb47c129eb7d24bea |
+|   549177 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xa9e4c145c227a18bf91c5767ad9ef62585d4a0dd5fc115eba0c2c1559888f328 | 0x589cbb2c327c38d1ab4511575059dfb8389f182d374d93fcb47c129eb7d24bea |
+|   549184 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x1893c7a23b1db71855802499861f44e4ff81fefdd6ea1c08f7a5d3af4412221b | 0x589cbb2c327c38d1ab4511575059dfb8389f182d374d93fcb47c129eb7d24bea |
+|   549186 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x67acd29ae0408f8d61e940df9e4f764b536603ed2454cb68df8356d8f334c74d | 0x589cbb2c327c38d1ab4511575059dfb8389f182d374d93fcb47c129eb7d24bea |
+|   549188 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x3e6b36cbb661909f3384064721b9bd7de85c619c0cef1b022ca699ae2c42d18e | 0x73bbdc979ee01541725c1b1938ed005e6b669d44a3e51abf21dd95bc39db77b8 |
+|   549189 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x96e387dfd227be00b94b610efd96cdfbb4d65c36495a7fc478144ba0e9f1f78f | 0x73bbdc979ee01541725c1b1938ed005e6b669d44a3e51abf21dd95bc39db77b8 |
+|   549190 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0x8122b4ed8014b5fa13de696d1d631fd6256769669c49f4fd9785478e9680205f | 0x73bbdc979ee01541725c1b1938ed005e6b669d44a3e51abf21dd95bc39db77b8 |
+|   549304 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xafc7bacfc7959791a1ad748c480ad74c1238d72c9391947879724525853fa44b | 0xcb1501e82ee074a3d1416ac6136969be41d0cca18f89ac1374da9f47bf6f1ebb |
+|   549305 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xae405f0f221232d56c69d9a2abe6f5cff3882c8520b2a656bbfd3880d3adf405 | 0xcb1501e82ee074a3d1416ac6136969be41d0cca18f89ac1374da9f47bf6f1ebb |
+|   549306 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xe212f17e1f51ac92f5ac6e47b92432e969a65d0281696ebbe0b573c4534167f0 | 0xcb1501e82ee074a3d1416ac6136969be41d0cca18f89ac1374da9f47bf6f1ebb |
+|   549307 |alpha   |   M-23⁻ +   M-23⁻ +     1322  -> C-46⁻ (0.75?) => ⬆ E-46     +       0.41 |    1321.59 | decay, nuclear               | 0x620051b8553a724b742ae6ae9cc3585d29f49848 | 0xdb9cf3a03947de0f15e36883318035fbaf90ba3bae3f63c6f00c599b60a59532 | 0xcb1501e82ee074a3d1416ac6136969be41d0cca18f89ac1374da9f47bf6f1ebb |
+
+250 iterations with no different results for probabilistic chance with stability value. Dang. That's 100%.
+
+
 now i have 250 E-46
 [f] E-46 + E-46 => ? Ua-92⁻(0.79?) => ??? ----> NOPE makes E₂
 
@@ -58,6 +548,22 @@ might as well make the other 3 fancy isotope towers:
 [r] E-46 + E-46 + E-46               => E₃
 [r] E-46 + E-46 + E-46 + E-46        => E₄
 [r] E-46 + E-46 + E-46 + E-46 + E-46 => E₅
+
+2025-09-09.Sep.Tue 09:55:00 On the discord channel, william_hzo posted this about dealing with the spam items people have been making on the Assembly craft page:
+::INFO::
+
+| william[SHPE]
+|  — 
+| ok folks here's the tl;dr for the ads/spam situation in assembly: 
+| 
+| several community members wanted to hide spam and suspicious items so we agreed collectively on the following rules: items that fall into one of the two categories will get hidden from the frontend
+| 
+|     ads: obviously selling a service and there's no intended purpose on the item
+| 
+| impersonating items: exactly mimicks existing official items (like PkAx) and can be misleading
+| ping me if you disagree, happy to chat more! and ping me if you agree and if you're happy to be here along other otom nerds
+|
+| if you want to hide items you suspect violate these rules feel free to submit a PR! repo is open source (example here)[https://discord.com/channels/1259842667513118730/1308152652705693798/1414975006869557379 => https://github.com/shape-network/assembly/pull/119]
 
 2025-09-07 Sep.Sun 20:56:00
 
@@ -9891,6 +10397,8 @@ What's missing?
 
 ::INFO:: Decay is probabilistic
 When stability is less than 1, it applies randomness and it *may* decay. We almost always see Stability <= 0.78 decay but apparently its not guaranteed!
+ALSO Golid said this about the *input* *reactants*, and if I'm understanding it correctly, it means that before they are combined they have the chance to decay.
+[ ] Is this an accurate reading? Or does it mean that after they are combined to the intermediate isotope, that's when the decay probabilities are applied?
 
 
 2025-05-27 May.Tue 20:19:46
@@ -10232,7 +10740,7 @@ total: 98468.47
 2025-05-27 May.Tue 10:14:07 look into these reactions. Basala commented on discord that they did the same reaction with the same 5 input otoms and 200 NRG and got different results. With screenshots.
 Not sure if algorithm changed
 Or if there actually is a slight amount of randomness in the reactions
-Or if reactions have an intermediate step where things get rearraged.
+Or if reactions have an intermediate step where things get rearranged.
 
 Here they are:
 |   223068*|bohr    |  Gj-11∙ +  Nd-30ª +  Uq-47⁻ +   L-51⁺ +  S-102ª +      200 =>   Gj-11 + Uq-47 + SLNd(S-102>L-51,Nd-30)                                           +     117.29 |      82.71 | chemical                     | 0xb75a7b6ab64c7ff15d8aafbc38cd7b65962eaa7e | 0x11cca647359d6ecc887fa1c7ebcfae97480d87f5186b1766ec4924ca8ddde43f | 0x12e4fc1cbb3df70ef8667d9a49eccec4429a9d112881776fb5a5c7203c670f77 |
@@ -10241,6 +10749,7 @@ Here they are:
 [ ] HOW DID THIS HAPPEN? WHAT ARE THE IMPLICATIONS?
 
 Man i don't know.
+UPDATE (2025-09-10 Sep.Wed 12:10:32): in the second one, the S-102ª(0.750) decayed to P-22 + Co-80 and then I guess it didn't have anything to combine nicely chemically. In the first one, the (0.750) allowed it to stay as S-102, and chemically combine with L-51 and Nd-30 to make the SLNd
 
 
 2025-05-26 May.Mon 18:57:00 It happened again! More than 10k reactions today!
