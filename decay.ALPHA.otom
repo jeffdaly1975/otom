@@ -294,7 +294,7 @@
 |~Aw-51⁻ | 51 23 Aw |nonmetal |(0.878)|+0                    none |+4393.25-5000        Fw-24 + Pt-27 |                                |                                |
 |~Aw-52⁻ | 52 23 Aw |nonmetal |(0.795)|+0-1                  none |+4290.77-14000       Fw-24 + Pt-28 |                                |                                |
 |*Aw-53⁻ | 53 23 Aw |nonmetal |  UND  |                   ? Oc-53 |                   ? Fw-25 + Pt-28 |                                |                                |
-|?Aw-54⁻ | 54 23 Aw |nonmetal |  UND  |                   ? Oc-54 |                   ? Fw-25 + Pt-29 |                                |                                |
+|*Aw-54⁻ | 54 23 Aw |nonmetal |  UND  |                   ? Oc-54 |                   ? Fw-25 + Pt-29 |                                |                                |
 |&Aw-55⁻ | 55 23 Aw |nonmetal |  UND  |                   ? Oc-55 |                   ? Fw-26 + Pt-29 |                                |                                |
 |&Aw-56⁻ | 56 23 Aw |nonmetal |  UND  |                   ? Oc-56 |                   ? Fw-26 + Pt-30 |                                |                                |
 |&Aw-57⁻ | 57 23 Aw |nonmetal |  UND  |                   ? Oc-57 |                   ? Fw-27 + Pt-30 |                                |                                |
@@ -453,7 +453,7 @@
 |~Hb-66ª | 66 30 Hb |alkaline |(0.839)|+0-5000               none |                                   |+6472.43-10000   Zq-31 + Gy-35  |                                |
 |~Hb-67ª | 67 30 Hb |alkaline |(0.780)|+0-5000               none |                                   |+6413.08-10000   Zq-31 + Gy-36  |                                |
 |*Hb-68⁻ | 68 30 Hb |alkaline |  UND  |                   ? At-68 |                                   |               ? Zq-32 + Gy-36  |                                |
-|?Hb-69⁻ | 69 30 Hb |alkaline |  UND  |                   ? At-69 |                                   |               ? Zq-32 + Gy-37  |                                |
+|*Hb-69⁻ | 69 30 Hb |alkaline |  UND  |                   ? At-69 |                                   |               ? Zq-32 + Gy-37  |                                |
 |&Hb-70⁻ | 70 30 Hb |alkaline |  UND  |                   ? At-70 |                                   |               ? Zq-33 + Gy-37  |                                |
 |&Hb-71⁻ | 71 30 Hb |alkaline |  UND  |                   ? At-71 |                                   |               ? Zq-33 + Gy-38  |                                |
 |&Hb-72⁻ | 72 30 Hb |alkaline |  UND  |                   ? At-72 |                                   |               ? Zq-34 + Gy-38  |                                |
@@ -477,7 +477,7 @@
 |~At-68⁻ | 68 31 At |metal    |(0.815)|+0-5000               none |                                   |+6565.62-8000     Zq-31 + D-37  |                                |
 |~At-69⁻ | 69 31 At |metal    |(0.786)|+0                    none |                                   |                ? Zq-32 + D-37  |                                |
 |*At-70⁻ | 70 31 At |metal    |  UND  |                   ? Ny-70 |                                   |                ? Zq-32 + D-38  |                                |
-|?At-71⁻ | 71 31 At |metal    |  UND  |                   ? Ny-71 |                                   |                ? Zq-33 + D-38  |                                |
+|*At-71⁻ | 71 31 At |metal    |  UND  |                   ? Ny-71 |                                   |                ? Zq-33 + D-38  |                                |
 |?At-72⁻ | 72 31 At |metal    |  UND  |                   ? Ny-72 |                                   |                ? Zq-33 + D-39  |                                |
 |&At-73⁻ | 73 31 At |metal    |  UND  |                   ? Ny-73 |                                   |                ? Zq-34 + D-39  |                                |
 |&At-74⁻ | 74 31 At |metal    |  UND  |                   ? Ny-74 |                                   |                ? Zq-34 + D-40  |                                |
@@ -502,7 +502,7 @@
 |~Ny-70⁻ | 70 32 Ny |metal    |(0.841)|+0                    none |                    ? D-37 + Xc-33 |              ? DXc(D-37,Xc-33) |                                |
 |~Ny-71⁻ | 71 32 Ny |metal    |(0.804)|+0                    none |                    ? D-38 + Xc-33 |              ? DXc(D-38,Xc-33) |                                |
 |~Ny-72⁻ | 72 32 Ny |metal    |(0.787)|+0-2000               none |                    ? D-39 + Xc-33 |+7141.19-10000  DXc(D-39>Xc-33) |                                |
-|*Ny-73⁻ | 73 32 Ny |metal    |  UND  |                   ? Pw-73 |                    ? D-39 + Xc-34 |                                |                                |
+|~Ny-73⁻ | 73 32 Ny |metal    |  UND  |                   ? Pw-73 |                    ? D-39 + Xc-34 |              ? DXc(D-39>Xc-34) |                                |
 |*Ny-74⁻ | 74 32 Ny |metal    |  UND  |                   ? Pw-74 |                    ? D-40 + Xc-34 |                                |                                |
 |&Ny-75⁻ | 75 32 Ny |metal    |  UND  |                   ? Pw-75 |                    ? D-40 + Xc-35 |                                |                                |
 |&Ny-76⁻ | 76 32 Ny |metal    |  UND  |                   ? Pw-76 |                    ? D-41 + Xc-35 |                                |                                |
