@@ -269,6 +269,7 @@ grab_token_image "Ny"  "69" "alpha"  $universe_alpha
 grab_token_image "Ny"  "70" "alpha"  $universe_alpha
 grab_token_image "Ny"  "71" "alpha"  $universe_alpha
 grab_token_image "Ny"  "72" "alpha"  $universe_alpha
+grab_token_image "Ny"  "73" "alpha"  $universe_alpha
 grab_token_image "Pw"  "64" "alpha"  $universe_alpha
 grab_token_image "Pw"  "65" "alpha"  $universe_alpha
 grab_token_image "Pw"  "66" "alpha"  $universe_alpha

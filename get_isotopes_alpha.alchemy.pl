@@ -359,6 +359,7 @@ my %idhash=(
 324 => "Ua-83",
 325 => "Ua-84",
 326 => "Ua-85",
+327 => "Ny-73",
 );
 
 
@@ -599,6 +600,7 @@ my %hexhash=(
  "Ny-70" => "88a7e905f4f53c063d922fa7ac76cbb4a85a2cd4776db823dd9f49211cfa6773",
  "Ny-71" => "45808888cdf0ff488c4a9f74abafa49a44e013f3bbf88e0929f598b345fc99e5",
  "Ny-72" => "3498ffb09e9fe32ca9451387ee950f03e758b99d9fe02575f04bd9704aef3185",
+ "Ny-73" => "d0b7f6d29b2b4145413c49aa8041923671d9e10e8dd92a77c00cfc3a459dbeca",
  "Pw-64" => "6a7eacdaff3807308c51ced3f2825d1db9362e521ac621968058680f08bbe2b1",
  "Pw-65" => "35feb349f96afe0db91bf7c6648ffc4a4850ec40744a1fc6b811e43d99340062",
  "Pw-66" => "e05adc604aaa9d05e37d1f0c8c85adbb18a50d2a0915172060895498aab0e1ee",
@@ -755,7 +757,7 @@ my @output = qx{./isotopes_worker.alpha.sh $wallet};
      die "failed to execute isotopes_worker.alpha.sh $wallet: $!\n";
  }elsif ($? & 127) {
      printf STDERR "child died with signal %d, %s coredump\n",
-	 ($? & 127),  ($? & 128) ? 'with' : 'without';
+   ($? & 127),  ($? & 128) ? 'with' : 'without';
  }elsif ($? == 0) {
    # success!
  }else{
