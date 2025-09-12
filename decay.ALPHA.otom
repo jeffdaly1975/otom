@@ -97,7 +97,7 @@
 |~Fw-24⁻ | 24 11 Fw |nonmetal |(0.815)|+0                    none |+1392.29-6000        Xl-11 + Pq-13 |                                |                                |
 |~Fw-25⁻ | 25 11 Fw |nonmetal |(0.737)|+0-1300              Pt-25 |+1386.32-5000        Xl-11 + Pq-14 |                                |                                |
 |~Fw-26⁻ | 26 11 Fw |nonmetal |(0.634)|+0                   Pt-26 |+1389.84-5000        Pq-12 + Pq-14 |                                |                                |
-|?Fw-27⁻ | 27 11 Fw |nonmetal |  UND  |                   ? Pt-27 |                   ? Pq-12 + Pq-15 |                                |                                |
+|*Fw-27⁻ | 27 11 Fw |nonmetal |  UND  |                   ? Pt-27 |                   ? Pq-12 + Pq-15 |                                |                                |
 |&Fw-28  | 28 11 Fw |nonmetal |  UND  |                   ? Pt-28 |                   ? Pq-13 + Pq-15 |                                |                                |
 +--------+----------+---------+-------+---------------------------+-----------------------------------+--------------------------------+--------------------------------+
 |&Pt-19  | 19 12 Pt |noble    |  UND  |                   ? Fw-19 |                   ? Pq-9  + Pq-10 |                                |                                |
@@ -138,7 +138,7 @@
 |~Zq-31⁻ | 31 14 Zq |metal    |(0.856)|+0                    none |                   ? Pq-14 + Dx-17 |+2204.69-5000  DxPq(Dx-17>Pq-14)|                                |
 |~Zq-32⁻ | 32 14 Zq |metal    |(0.771)|+0-2000              Xc-32 |                   ? Pq-14 + Dx-18 |+2106.82-5000  DxPq(Dx-18>Pq-14)|                                |
 |*Zq-33⁻ | 33 14 Zq |metal    |  UND  |                   ? Xc-33 |                   ? Pq-15 + Dx-18 |                                |                                |
-|?Zq-34⁻ | 34 14 Zq |metal    |  UND  |                   ? Xc-34 |                   ? Pq-15 + Dx-19 |                                |                                |
+|*Zq-34⁻ | 34 14 Zq |metal    |  UND  |                   ? Xc-34 |                   ? Pq-15 + Dx-19 |                                |                                |
 |&Zq-35⁻ | 35 14 Zq |metal    |  UND  |                   ? Xc-35 |                   ? Pq-16 + Dx-19 |                                |                                |
 |&Zq-36⁻ | 36 14 Zq |metal    |  UND  |                   ? Xc-36 |                   ? Pq-16 + Dx-20 |                                |                                |
 +--------+----------+---------+-------+---------------------------+-----------------------------------+--------------------------------+--------------------------------+
@@ -158,7 +158,7 @@
 |&Xc-39⁻ | 39 15 Xc |nonmetal |  UND  |                   ? Gy-39 |                   ? Zz-18 + Dx-21 |                                |                                |
 +--------+----------+---------+-------+---------------------------+-----------------------------------+--------------------------------+--------------------------------+
 |&Gy-27  | 27 16 Gy |noble    |  UND  |                   ? Xc-27 |                   ? Zz-12 + Pm-15 |                                |                                |
-|?Gy-28⁺ | 28 16 Gy |noble    |  UND  |                   ? Xc-28 |                   ? Zz-12 + Pm-16 |                                |                                |
+|*Gy-28⁺ | 28 16 Gy |noble    |  UND  |                   ? Xc-28 |                   ? Zz-12 + Pm-16 |                                |                                |
 |*Gy-29⁺ | 29 16 Gy |noble    |  UND  |                   ? Xc-29 |                   ? Zz-13 + Pm-16 |                                |                                |
 |~Gy-30⁺ | 30 16 Gy |noble    |(0.757)|+0                   Xc-30 |+2036.72-5779        Zz-13 + Pm-17 |                                |                                |
 |~Gy-31⁺ | 31 16 Gy |noble    |(0.950)|+0                    none |+2153.05-50000       Zz-14 + Pm-17 |                                |                                |
@@ -184,7 +184,7 @@
 |~D-38⁻  | 38 17  D |alkaline |(0.830)|+0                    none |                   ? Dx-18 + Pm-20 |            ? PmDx(Dx-18,Pm-20>)|                                |
 |~D-39⁻  | 39 17  D |alkaline |(0.831)|+0                    none |                   ? Dx-18 + Pm-21 |+2891.65-3200 PmDx(Dx-18,Pm-21>)|                                |
 |*D-40⁻  | 40 17  D |alkaline |  UND  |                   ? Fj-40 |                   ? Dx-19 + Pm-21 |                                |                                |
-|?D-41⁻  | 41 17  D |alkaline |  UND  |                   ? Fj-41 |                   ? Dx-19 + Pm-22 |                                |                                |
+|*D-41⁻  | 41 17  D |alkaline |  UND  |                   ? Fj-41 |                   ? Dx-19 + Pm-22 |                                |                                |
 |&D-42⁻  | 42 17  D |alkaline |  UND  |                   ? Fj-42 |                   ? Dx-20 + Pm-22 |                                |                                |
 |&D-43⁻  | 43 17  D |alkaline |  UND  |                   ? Fj-43 |                   ? Dx-20 + Pm-23 |                                |                                |
 |&D-44⁻  | 44 17  D |alkaline |  UND  |                   ? Fj-44 |                   ? Dx-21 + Pm-23 |                                |                                |
@@ -218,7 +218,7 @@
 |~O-42⁻  | 42 19  O |metal    |(0.873)|+0                    none |                    ? Pm-20 + M-22 |+3607.59-100000  PmM(Pm-20>M-22)|                                |
 |~O-43⁻  | 43 19  O |metal    |(0.780)|+0                    none |                    ? Pm-20 + M-23 |+3308.99-10000   PmM(Pm-20>M-23)|                                |
 |*O-44⁻  | 44 19  O |metal    |  UND  |                    ? C-44 |                    ? Pm-21 + M-23 |                                |                                |
-|?O-45⁻  | 45 19  O |metal    |  UND  |                    ? C-45 |                    ? Pm-21 + M-24 |                                |                                |
+|*O-45⁻  | 45 19  O |metal    |  UND  |                    ? C-45 |                    ? Pm-21 + M-24 |                                |                                |
 |&O-46⁻  | 46 19  O |metal    |  UND  |                    ? C-46 |                    ? Pm-22 + M-24 |                                |                                |
 |&O-47⁻  | 47 19  O |metal    |  UND  |                    ? C-47 |                    ? Pm-22 + M-25 |                                |                                |
 |&O-48⁻  | 48 19  O |metal    |  UND  |                    ? C-48 |                    ? Pm-23 + M-25 |                                |                                |
@@ -314,7 +314,7 @@
 |~Oc-53⁻ | 53 24 Oc |noble    |(0.861)|+0                    none |                    ? Fw-24 + S-29 |              ? SFw(S-29>Fw-24) |                                |
 |~Oc-54⁻ | 54 24 Oc |noble    |(0.807)|+0                    none |                    ? Fw-25 + S-29 |              ? SFw(S-29>Fw-25) |                                |
 |*Oc-55⁻ | 55 24 Oc |noble    |  UND  |                   ? Nb-55 |                    ? Fw-25 + S-30 |                                |                                |
-|?Oc-56⁻ | 56 24 Oc |noble    |  UND  |                   ? Nb-56 |                    ? Fw-26 + S-30 |                                |                                |
+|*Oc-56⁻ | 56 24 Oc |noble    |  UND  |                   ? Nb-56 |                    ? Fw-26 + S-30 |                                |                                |
 |&Oc-57⁻ | 57 24 Oc |noble    |  UND  |                   ? Nb-57 |                    ? Fw-26 + S-31 |                                |                                |
 |&Oc-58⁻ | 58 24 Oc |noble    |  UND  |                   ? Nb-58 |                    ? Fw-27 + S-31 |                                |                                |
 |&Oc-59⁻ | 59 24 Oc |noble    |  UND  |                   ? Nb-59 |                    ? Fw-27 + S-32 |                                |                                |
@@ -335,7 +335,7 @@
 |~Nb-55⁻ | 55 25 Nb |alkaline |(0.869)|+0-4000               none |                    ? Pt-26 + S-29 |                                |                                |
 |~Nb-56⁻ | 56 25 Nb |alkaline |(0.798)|+0-3925               none |+4803.58-16000        Pt-26 + S-30 |                                |                                |
 |*Nb-57⁻ | 57 25 Nb |alkaline |  UND  |                   ? Xk-57 |                    ? Pt-27 + S-30 |                                |                                |
-|?Nb-58⁻ | 58 25 Nb |alkaline |  UND  |                   ? Xk-58 |                    ? Pt-27 + S-31 |                                |                                |
+|*Nb-58⁻ | 58 25 Nb |alkaline |  UND  |                   ? Xk-58 |                    ? Pt-27 + S-31 |                                |                                |
 |&Nb-59⁻ | 59 25 Nb |alkaline |  UND  |                   ? Xk-59 |                    ? Pt-28 + S-31 |                                |                                |
 |&Nb-60⁻ | 60 25 Nb |alkaline |  UND  |                   ? Xk-60 |                    ? Pt-28 + S-32 |                                |                                |
 |&Nb-61⁻ | 61 25 Nb |alkaline |  UND  |                   ? Xk-61 |                    ? Pt-29 + S-32 |                                |                                |
@@ -380,7 +380,7 @@
 |~Ic-60⁻ | 60 27 Ic |metal    |(0.930)|+0-5000               none |                                   |+6132.06-14000   Pt-27 + Xc-33  |                                |
 |~Ic-61⁻ | 61 27 Ic |metal    |(0.877)|+0                    none |                                   |               ? Pt-28 + Xc-33  |                                |
 |~Ic-62⁻ | 62 27 Ic |metal    |(0.794)|                    ? none |                                   |+5804.56-10000   Pt-28 + Xc-34  |                                |
-|?Ic-63⁻ | 63 27 Ic |metal    |  UND  |                   ? Yp-63 |                                   |               ? Pt-29 + Xc-34  |                                |
+|*Ic-63⁻ | 63 27 Ic |metal    |  UND  |                   ? Yp-63 |                                   |               ? Pt-29 + Xc-34  |                                |
 |&Ic-64⁻ | 64 27 Ic |metal    |  UND  |                   ? Yp-64 |                                   |               ? Pt-29 + Xc-35  |                                |
 |&Ic-65⁻ | 65 27 Ic |metal    |  UND  |                   ? Yp-65 |                                   |               ? Pt-30 + Xc-35  |                                |
 |&Ic-66⁻ | 66 27 Ic |metal    |  UND  |                   ? Yp-66 |                                   |               ? Pt-30 + Xc-36  |                                |
@@ -404,7 +404,7 @@
 |~Yp-62⁻ | 62 28 Yp |nonmetal |(0.873)|+0-5000               none |                    ? S-29 + Xc-33 |+6063.85-10000  SXc(S-29>Xc-33) |                                |
 |~Yp-63⁻ | 63 28 Yp |nonmetal |(0.805)|+0-5000               none |                    ? S-29 + Xc-34 |                                |                                |
 |*Yp-64⁻ | 64 28 Yp |nonmetal |  UND  |                   ? Jx-64 |                    ? S-30 + Xc-34 |                                |                                |
-|?Yp-65⁻ | 65 28 Yp |nonmetal |  UND  |                   ? Jx-65 |                    ? S-30 + Xc-35 |                                |                                |
+|*Yp-65⁻ | 65 28 Yp |nonmetal |  UND  |                   ? Jx-65 |                    ? S-30 + Xc-35 |                                |                                |
 |&Yp-66⁻ | 66 28 Yp |nonmetal |  UND  |                   ? Jx-66 |                    ? S-31 + Xc-35 |                                |                                |
 |&Yp-67⁻ | 67 28 Yp |nonmetal |  UND  |                   ? Jx-67 |                    ? S-31 + Xc-36 |                                |                                |
 |&Yp-68⁻ | 68 28 Yp |nonmetal |  UND  |                   ? Jx-68 |                    ? S-32 + Xc-36 |                                |                                |
@@ -428,7 +428,7 @@
 |~Jx-64⁻ | 64 29 Jx |noble    |(0.831)|+0-5000               none |                                   |+6429.22-15000    S-29 + Gy-35  |                                |
 |~Jx-65⁻ | 65 29 Jx |noble    |(0.787)|+0                    none |                                   |                ? S-30 + Gy-35  |                                |
 |*Jx-66⁻ | 66 29 Jx |noble    |  UND  |                   ? Hb-66 |                                   |                ? S-30 + Gy-36  |                                |
-|?Jx-67⁻ | 67 29 Jx |noble    |  UND  |                   ? Hb-67 |                                   |                ? S-31 + Gy-36  |                                |
+|*Jx-67⁻ | 67 29 Jx |noble    |  UND  |                   ? Hb-67 |                                   |                ? S-31 + Gy-36  |                                |
 |&Jx-68⁻ | 68 29 Jx |noble    |  UND  |                   ? Hb-68 |                                   |                ? S-31 + Gy-37  |                                |
 |&Jx-69⁻ | 69 29 Jx |noble    |  UND  |                   ? Hb-69 |                                   |                ? S-32 + Gy-37  |                                |
 |&Jx-70⁻ | 70 29 Jx |noble    |  UND  |                   ? Hb-70 |                                   |                ? S-32 + Gy-38  |                                |
@@ -667,7 +667,7 @@
 |!Bt-84ª | 84 38 Bt |alkaline |  UND  |                    ? H-84 |                                   |                 ? D-38 + E-46  |                                |
 |!Bt-85⁻ | 85 38 Bt |alkaline |  UND  |                    ? H-85 |                                   |                 ? D-39 + E-46  |                                |
 |?Bt-86⁻ | 86 38 Bt |alkaline |  UND  |                    ? H-86 |                                   |                 ? D-39 + E-47  |                                |
-|?Bt-87⁻ | 87 38 Bt |alkaline |  UND  |                    ? H-87 |                                   |                 ? D-40 + E-47  |                                |
+|!Bt-87⁻ | 87 38 Bt |alkaline |  UND  |                    ? H-87 |                                   |                 ? D-40 + E-47  |                                |
 |?Bt-88⁻ | 88 38 Bt |alkaline |  UND  |                    ? H-88 |                                   |                 ? D-40 + E-48  |                                |
 |&Bt-89⁻ | 89 38 Bt |alkaline |  UND  |                    ? H-89 |                                   |                 ? D-41 + E-48  |                                |
 |&Bt-90⁻ | 90 38 Bt |alkaline |  UND  |                    ? H-90 |                                   |                 ? D-41 + E-49  |                                |
@@ -757,7 +757,7 @@
 |!Sq-90∙ | 90 41 Sq |metal    |  UND  |                   ? Ua-90 |                                   |                 ? O-42 + A-48  |                                |
 |!Sq-91∙ | 91 41 Sq |metal    |  UND  |                   ? Ua-91 |                                   |                 ? O-42 + A-49  |                                |
 |!Sq-92∙ | 92 41 Sq |metal    |  UND  |                   ? Ua-92 |                                   |                 ? O-43 + A-49  |                                |
-|?Sq-93⁻ | 93 41 Sq |metal    |  UND  |                   ? Ua-93 |                                   |                 ? O-43 + A-50  |                                |
+|!Sq-93⁻ | 93 41 Sq |metal    |  UND  |                   ? Ua-93 |                                   |                 ? O-43 + A-50  |                                |
 |?Sq-94⁻ | 94 41 Sq |metal    |  UND  |                   ? Ua-94 |                                   |                 ? O-44 + A-50  |                                |
 |&Sq-95⁻ | 95 41 Sq |metal    |  UND  |                   ? Ua-95 |                                   |                 ? O-44 + A-51  |                                |
 |&Sq-96⁻ | 96 41 Sq |metal    |  UND  |                   ? Ua-96 |                                   |                 ? O-45 + A-51  |                                |
