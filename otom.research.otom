@@ -1,8 +1,12 @@
+2025-09-12 Sep.Fri 13:26:08 how i like to run my parser
+
+% ( ./old_working_parseReactorLog.pl logs_0xB8*/*csv > stdout ) |& tee stderr &
+
 2025-09-11 Sep.Thu 16:16:10 Did a bunch more testing of intermediate isotopes but none produced new discoveries.
 
 2025-09-10 Sep.Wed 16:08:05 HOLY SHIT I DISCOVERED THE 327th isotope of Universe Alpha!
 
-OTOMRO 551905: Xc-34⁻  +   D-39⁻   +   3000 -> Ny-73 + 699.86 using 2300.14 nuclear
+OTOMRO 551905: Xc-34⁻  +   D-39⁻   +   3000 -> Ny-73⁻(0.80?) => Ny-73⁻ + 699.86 using 2300.14 nuclear
 
 [ ] add to files
 
@@ -86,10 +90,12 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 [>] ?At-72⁻(0.71?)|
 |  Af-10  +  Ic-62  -> At-72  7698.45
 
- [*]|   Cq-7∙ +  Xc-34⁻   +[  1124.91 -   5000] =>   Fj-41                      | nuclear                      |
- [ ]|  Fj-41⁻             +[  2979.09 -  13000] => ⬆ Dx-19 + M-22               | nuclear                      |
- [ ]|  Dx-19⁻             +[   803.28 -    820] => ⬇ Af-9 + Af-10               | nuclear                      |
- [ ]|  Af-10  +  Ic-62    +   3000 -> At-72
+ [r]|   Cq-7∙ +  Xc-34⁻   +[  1124.91 -   5000] =>   Fj-41                      |
+ [r]|  Fj-41⁻             +[  2979.09 -  13000] => ⬆ Dx-19 + M-22               | used 1121.16
+ [r]|  Dx-19⁻             +[   803.28 -    820] => ⬇ Af-9 + Af-10               |
+ [r]|  Pq-14⁻ +  Fw-25⁻   +[  1001.51 -   5000] => ⬆ D-39                       |
+ [r]|   M-23⁻ +   D-39⁻   +[  1789.66 -   5000] => ⬇ Ic-62                      | used 1789.16
+ [r]|  Af-10  +  Ic-62    +   3000 -> At-72 -> decays to Ny-72 using 1386.02
 
 [>] ?Aw-54⁻(0.61?)|
 |  Pq-15  +   D-39  -> Aw-54  1001.51
@@ -99,7 +105,7 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 [f]|  Pq-15  +   D-39    +   2000 -> Aw-54  -> decayed to Oc-54 using 1224.15
 
 
-[ ] ?Bt-86⁻(0.67?)| WONT WORK WITH 44+ NEUTRONS
+[>] ?Bt-86⁻(0.67?)| WONT WORK WITH 44+ NEUTRONS
 |  Xc-34  +  Aw-52  -> Bt-86  1176.20
 |   D-39  +   E-47  -> Bt-86  2048.46
 |   D-38  +   E-48  -> Bt-86  2111.53
@@ -122,6 +128,9 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 |  Pt-28  +  Xk-58  -> Bt-86  7750.24
 |  Af-10  +  Gk-76  -> Bt-86  8316.60
 
+[r]|  Pq-15⁻ +   D-37⁻   +[  1176.20 -   5000] => ⬆ Aw-52                      | nuclear                      |
+[f]|  Xc-34  +  Aw-52    +   2000 -> Bt-86  -> no reaction
+
 [>] ?Bt-87⁻(0.61?)|WONT WORK WITH 44+ NEUTRONS
 |   D-39  +   E-48  -> Bt-87  2228.61
 |  Fw-25  +  Ic-62  -> Bt-87  2791.17
@@ -134,8 +143,14 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 [r]|  Pq-14⁻ +  Xc-34⁻   +[  1227.10 -   5000] =>   E-48                       |
 [f]|   D-39  +   E-48    +   3000 -> Bt-87  -> no reaction, returning D-39 + E-48 + 2850.00 using 150.00. I see now its in the "dead zone" where no alpha isotopes can exist, with 44 neutrons
 
-[ ] ?Bt-88⁻(0.55?)|WONT WORK WITH 44+ NEUTRONS
+[>] ?Bt-88⁻(0.55?)|WONT WORK WITH 44+ NEUTRONS
 |  Fw-26  +  Ic-62  -> Bt-88  7907.41
+
+[*]|  Pq-14⁻ +  Xc-34⁻   +[  1227.10 -   5000] =>   E-48                       | nuclear                      |
+[ ]|   E-48⁻             +[  3889.14 -  11000] =>   M-22 + Fw-26               | nuclear                      |
+[r]|  Pq-14⁻ +  Fw-25⁻   +[  1001.51 -   5000] => ⬆ D-39                       | nuclear                      |
+[r]|   M-23⁻ +   D-39⁻   +[  1789.16 -   5000] => ⬇ Ic-62                      | nuclear                      |
+[ ]|  Fw-26  +  Ic-62    +   2000 -> Bt-88  
 
 [>] ?D-41⁻(0.45?)|
 |  Pq-15  +  Fw-26  -> D-41   5116.24
@@ -148,7 +163,7 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
  [r]|   M-23⁻             +[  1239.25 -   1250] =>   Xl-11 + Xl-12              |
  [r]|  Xl-12  +  Pq-15     +  2000 -> Fw-27   -> decays to Pt-27 using 609.52
 
-[ ] ?Gq-84⁻(0.64?)|WONT WORK WITH 44+ NEUTRONS
+[>] ?Gq-84⁻(0.64?)|WONT WORK WITH 44+ NEUTRONS
 |  Zq-32  +  Aw-52  -> Gq-84  1176.20
 |  Xc-34  +   A-50  -> Gq-84  1408.92
 |  Pq-15  +  At-69  -> Gq-84  1460.64
@@ -167,9 +182,16 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 |  Pt-28  +  Nb-56  -> Gq-84  7720.14
 |  Af-10  +  Pw-74  -> Gq-84  8203.77
 
-[ ] ?Gq-85⁻(0.59?)|WONT WORK WITH 44+ NEUTRONS
+[r]|  Pq-15⁻ +   D-37⁻   +[  1176.20 -   5000] => ⬆ Aw-52                      | nuclear                      |
+[f]|  Zq-32  +  Aw-52    +   2000 -> Gq-84  -> Zq-32 decayed to Xc-32
+
+[>] ?Gq-85⁻(0.59?)|WONT WORK WITH 44+ NEUTRONS
 |   M-23  +  Ic-62  -> Gq-85  2791.17
 |  Fw-26  +  Xk-59  -> Gq-85  6842.45
+
+[r]|  Pq-14⁻ +  Fw-25⁻   +[  1001.51 -   5000] => ⬆ D-39                       | nuclear                      |
+[r]|   M-23⁻ +   D-39⁻   +[  1789.16 -   5000] => ⬇ Ic-62                      | nuclear                      |
+[f]|   M-23  +  Ic-62    +  10000 -> Gq-85   -> M-23 decayed to Fw-23 but otherwise no reaction, so I classify it as !Gq-85 impossible to make
 
 [>] ?Gy-28⁺(0.27?)|
 |  Dx-14  +  Dx-14  -> Gy-28 16582.26
@@ -197,8 +219,14 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
 [r]|  Fw-25⁻ +  Xc-34⁻   +[  1726.21 -   6000] =>   Xk-59                      |
 [f]|   S-30  +  Xk-59    +   3000 -> H-89   -> decayed to Zq-30 + Xk-59 + 2850.00 using 150.00
 
-[ ] ?H-90⁻(0.57?)|WONT WORK WITH 44+ NEUTRONS
+[>] ?H-90⁻(0.57?)|WONT WORK WITH 44+ NEUTRONS
 |  Pt-28  +  Ic-62  -> H-90   8258.14
+
+[r]|  Pq-14⁻ +  Fw-25⁻   +[  1001.51 -   5000] => ⬆ D-39                       | nuclear                      |
+[r]|   M-23⁻ +   D-39⁻   +[  1789.16 -   5000] => ⬇ Ic-62                      | nuclear                      |
+[r]|  Pq-15⁻ +   D-37⁻   +[  1176.20 -   5000] => ⬆ Aw-52                      | nuclear                      |
+[r]|  Aw-52⁻             +[  4290.77 -  14000] => ⬇ Fw-24 + Pt-28              | nuclear                      |
+[f]|  Pt-28  +  Ic-62    +   2000 -> H-90   -> makes IcS using 568.05 decay+metallic
 
 [>] ?Hb-69⁻(0.66?)|
 |   S-30  +   D-39  -> Hb-69  1579.87
@@ -282,11 +310,21 @@ C-36\|O-34\|A-40\|Nb-46\|At-57\|Aw-42\|E-38
  [r]|   Cq-7∙ +  Xc-34⁻   +[  1124.91 -   5000] =>   Fj-41                      | used 1121.16
  [r]|  Pq-15  +  Fj-41    +   2000 -> Oc-56   -> decays to Nb-56 using 1234.31
 
-[ ] ?Pw-77⁻(0.59?)|WONT WORK WITH 44+ NEUTRONS
+[>] ?Pw-77⁻(0.59?)|WONT WORK WITH 44+ NEUTRONS
 |  Pq-15  +  Ic-62  -> Pw-77  2791.17
 
-[ ] ?Qi-81⁻(0.58?)|WONT WORK WITH 44+ NEUTRONS
+[r]|  Pq-14⁻ +  Fw-25⁻   +[  1001.51 -   5000] => ⬆ D-39                       | nuclear                      |
+[r]|   M-23⁻ +   D-39⁻   +[  1789.16 -   5000] => ⬇ Ic-62                      | nuclear                      |
+[f]|  Pq-15  +  Ic-62    +  10000 -> Pw-77  -> Pq-15 decayed to Zz-15 but otherwise no reaction
+
+[>] ?Qi-81⁻(0.58?)|WONT WORK WITH 44+ NEUTRONS
 |  Dx-19  +  Ic-62  -> Qi-81  6895.17
+
+[*]|  Pq-14⁻ +  Fw-25⁻   +[  1001.51 -   5000] => ⬆ D-39                       | nuclear                      |
+[ ]|   M-23⁻ +   D-39⁻   +[  1789.16 -   5000] => ⬇ Ic-62                      | nuclear                      |
+[ ]|   Cq-7∙ +  Xc-34⁻   +[  1121.16 -   5000] =>   Fj-41                      | nuclear                      |
+[ ]|  Fj-41⁻             +[  2979.09 -  13000] => ⬆ Dx-19 + M-22               | nuclear                      |
+[ ]|  Dx-19  +  Ic-62    +   2000 -> Qi-81
 
 [>] ?Sq-93⁻(0.75?)|WONT WORK WITH 44+ NEUTRONS
 |  Xc-34  +  Xk-59  -> Sq-93  1726.21
@@ -308,8 +346,12 @@ I bet this won't work since it would require an isotope with 44 neutrons to be p
 [r]|  Fw-25⁻ +  Xc-34⁻   +[  1726.21 -   6000] =>   Xk-59                      | nuclear                      |
 [f]|  Xc-34  +  Xk-59    +   3000 -> Sq-93 -> no reaction, using 150.00
 
-[ ] ?Sq-94⁻(0.69?)|WONT WORK WITH 44+ NEUTRONS
+[>] ?Sq-94⁻(0.69?)|WONT WORK WITH 44+ NEUTRONS
 |  Zq-32  +  Ic-62  -> Sq-94  2791.17
+
+[*]|  Pq-14⁻ +  Fw-25⁻   +[  1001.51 -   5000] => ⬆ D-39                       | nuclear                      |
+[ ]|   M-23⁻ +   D-39⁻   +[  1789.16 -   5000] => ⬇ Ic-62                      | nuclear                      |
+[ ]|  Zq-32  +  Ic-62    +   2000 -> Sq-94  
 
 [>] ?U-91⁻(0.66?)|WONT WORK WITH 44+ NEUTRONS
 |  Zq-32  +  Xk-59  -> U-91   1726.21
@@ -327,12 +369,22 @@ I bet this won't work since it would require an isotope with 44 neutrons to be p
 [r]|  Fw-25⁻ +  Xc-34⁻   +[  1726.21 -   6000] =>   Xk-59                      | nuclear                      |
 [f]|  Zq-32  +  Xk-59    +   3000 -> U-91   -> decayed to Xc-32 + Xk-59 + 2850.00 using 150.00
 
-[ ] ?U-92⁻(0.61?)|WONT WORK WITH 44+ NEUTRONS
+[>] ?U-92⁻(0.61?)|WONT WORK WITH 44+ NEUTRONS
 |  Pq-15  +  Gk-77  -> U-92   3321.55
 |   S-30  +  Ic-62  -> U-92   3369.53
 
-[ ] ?Xy-83⁻(0.58?)|WONT WORK WITH 44+ NEUTRONS
+[*]|  Pq-15⁻ +   D-37⁻   +[  1176.20 -   5000] => ⬆ Aw-52                      | nuclear                      |
+[ ]|  Fw-25⁻ +  Aw-52⁻   +[  2145.35 -   5000] => ⬇ Gk-77                      | nuclear                      |
+[ ]|  Pq-15  +  Gk-77  -> U-92   3321.55
+
+[>] ?Xy-83⁻(0.58?)|WONT WORK WITH 44+ NEUTRONS
 |  Pm-21  +  Ic-62  -> Xy-83  7620.36
+
+[*]|  Pq-14⁻ +  Fw-25⁻   +[  1001.51 -   5000] => ⬆ D-39                       | nuclear                      |
+[ ]|   M-23⁻ +   D-39⁻   +[  1789.16 -   5000] => ⬇ Ic-62                      | nuclear                      |
+[ ]|  Xl-11∙ +  Xc-34⁻   +[  1360.22 -   5000] => ⬆ C-45                       | nuclear                      |
+[ ]|   C-45⁻             +[  3468.97 -   5000] => ⬇ Pm-21 + Fw-24              | nuclear                      |
+[ ]|  Pm-21  +  Ic-62  -> Xy-83  7620.36
 
 [>] ?Yp-65⁻(0.65?)|
 |  Pq-15  +   A-50  -> Yp-65  1408.92

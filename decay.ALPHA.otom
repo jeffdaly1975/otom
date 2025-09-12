@@ -478,7 +478,7 @@
 |~At-69⁻ | 69 31 At |metal    |(0.786)|+0                    none |                                   |                ? Zq-32 + D-37  |                                |
 |*At-70⁻ | 70 31 At |metal    |  UND  |                   ? Ny-70 |                                   |                ? Zq-32 + D-38  |                                |
 |*At-71⁻ | 71 31 At |metal    |  UND  |                   ? Ny-71 |                                   |                ? Zq-33 + D-38  |                                |
-|?At-72⁻ | 72 31 At |metal    |  UND  |                   ? Ny-72 |                                   |                ? Zq-33 + D-39  |                                |
+|*At-72⁻ | 72 31 At |metal    |  UND  |                   ? Ny-72 |                                   |                ? Zq-33 + D-39  |                                |
 |&At-73⁻ | 73 31 At |metal    |  UND  |                   ? Ny-73 |                                   |                ? Zq-34 + D-39  |                                |
 |&At-74⁻ | 74 31 At |metal    |  UND  |                   ? Ny-74 |                                   |                ? Zq-34 + D-40  |                                |
 |&At-75⁻ | 75 31 At |metal    |  UND  |                   ? Ny-75 |                                   |                ? Zq-35 + D-40  |                                |
@@ -529,7 +529,7 @@
 |~Pw-74⁻ | 74 33 Pw |metal    |(0.861)|+0                    none |                                   |+8176.45-20000   Xc-34 + Fj-40  |                                |
 |*Pw-75⁻ | 75 33 Pw |metal    |  UND  |                   ? Gk-75 |                                   |               ? Xc-35 + Fj-40  |                                |
 |*Pw-76⁻ | 76 33 Pw |metal    |  UND  |                   ? Gk-76 |                                   |               ? Xc-35 + Fj-41  |                                |
-|?Pw-77⁻ | 77 33 Pw |metal    |  UND  |                   ? Gk-77 |                                   |               ? Xc-36 + Fj-41  |                                |
+|!Pw-77⁻ | 77 33 Pw |metal    |  UND  |                   ? Gk-77 |                                   |               ? Xc-36 + Fj-41  |                                |
 |&Pw-78⁻ | 78 33 Pw |metal    |  UND  |                   ? Gk-78 |                                   |               ? Xc-36 + Fj-42  |                                |
 |&Pw-79⁻ | 79 33 Pw |metal    |  UND  |                   ? Gk-79 |                                   |               ? Xc-37 + Fj-42  |                                |
 |&Pw-80⁻ | 80 33 Pw |metal    |  UND  |                   ? Gk-80 |                                   |               ? Xc-37 + Fj-43  |                                |
@@ -638,8 +638,8 @@
 |!Gq-81⁻ | 81 37 Gq |noble    |  UND  |                   ? Bt-81 |                                   |                 ? D-37 + C-44  |                                |
 |!Gq-82⁻ | 82 37 Gq |noble    |  UND  |                   ? Bt-82 |                                   |                 ? D-38 + C-44  |                                |
 |!Gq-83ª | 83 37 Gq |noble    |  UND  |                   ? Bt-83 |                                   |                 ? D-38 + C-45  |                                |
-|?Gq-84⁻ | 84 37 Gq |noble    |  UND  |                   ? Bt-84 |                                   |                 ? D-39 + C-45  |                                |
-|?Gq-85⁻ | 85 37 Gq |noble    |  UND  |                   ? Bt-85 |                                   |                 ? D-39 + C-46  |                                |
+|!Gq-84⁻ | 84 37 Gq |noble    |  UND  |                   ? Bt-84 |                                   |                 ? D-39 + C-45  |                                |
+|!Gq-85⁻ | 85 37 Gq |noble    |  UND  |                   ? Bt-85 |                                   |                 ? D-39 + C-46  |                                |
 |&Gq-86⁻ | 86 37 Gq |noble    |  UND  |                   ? Bt-86 |                                   |                 ? D-40 + C-46  |                                |
 |&Gq-87⁻ | 87 37 Gq |noble    |  UND  |                   ? Bt-87 |                                   |                 ? D-40 + C-47  |                                |
 |&Gq-88⁻ | 88 37 Gq |noble    |  UND  |                   ? Bt-88 |                                   |                 ? D-41 + C-47  |                                |
@@ -697,7 +697,7 @@
 |!H-87⁻  | 87 39  H |metal    |  UND  |                    ? U-87 |                                   |                ? Fj-40 + E-47  |                                |
 |!H-88⁻  | 88 39  H |metal    |  UND  |                    ? U-88 |                                   |                ? Fj-41 + E-47  |                                |
 |?H-89⁻  | 89 39  H |metal    |  UND  |                    ? U-89 |                                   |                ? Fj-41 + E-48  |                                |
-|?H-90⁻  | 90 39  H |metal    |  UND  |                    ? U-90 |                                   |                ? Fj-42 + E-48  |                                |
+|!H-90⁻  | 90 39  H |metal    |  UND  |                    ? U-90 |                                   |                ? Fj-42 + E-48  |                                |
 |&H-91⁻  | 91 39  H |metal    |  UND  |                    ? U-91 |                                   |                ? Fj-42 + E-49  |                                |
 |&H-92⁻  | 92 39  H |metal    |  UND  |                    ? U-92 |                                   |                ? Fj-43 + E-49  |                                |
 |&H-93⁻  | 93 39  H |metal    |  UND  |                    ? U-93 |                                   |                ? Fj-43 + E-50  |                                |
