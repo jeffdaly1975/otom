@@ -583,7 +583,7 @@
 |~Qi-78⁻ | 78 35 Qi |metal    |(0.870)|+0                    none |                                   |                ? Gy-36 + O-42  |                                |
 |!Qi-79⁻ | 79 35 Qi |metal    |  UND  |                   ? Xy-79 |                                   |                ? Gy-37 + O-42  |                                |
 |!Qi-80⁻ | 80 35 Qi |metal    |  UND  |                   ? Xy-80 |                                   |                ? Gy-37 + O-43  |                                |
-|?Qi-81⁻ | 81 35 Qi |metal    |  UND  |                   ? Xy-81 |                                   |                ? Gy-38 + O-43  |                                |
+|!Qi-81⁻ | 81 35 Qi |metal    |  UND  |                   ? Xy-81 |                                   |                ? Gy-38 + O-43  |                                |
 |&Qi-82⁻ | 82 35 Qi |metal    |  UND  |                   ? Xy-82 |                                   |                ? Gy-38 + O-44  |                                |
 |&Qi-83⁻ | 83 35 Qi |metal    |  UND  |                   ? Xy-83 |                                   |                ? Gy-39 + O-44  |                                |
 |&Qi-84⁻ | 84 35 Qi |metal    |  UND  |                   ? Xy-84 |                                   |                ? Gy-39 + O-45  |                                |
@@ -611,7 +611,7 @@
 |!Xy-80⁻ | 80 36 Xy |nonmetal |  UND  |                   ? Gq-80 |                                   |                 ? D-38 + O-42  |                                |
 |!Xy-81⁻ | 81 36 Xy |nonmetal |  UND  |                   ? Gq-81 |                                   |                 ? D-38 + O-43  |                                |
 |!Xy-82⁻ | 82 36 Xy |nonmetal |  UND  |                   ? Gq-82 |                                   |                 ? D-39 + O-43  |                                |
-|?Xy-83⁻ | 83 36 Xy |nonmetal |  UND  |                   ? Gq-83 |                                   |                 ? D-39 + O-44  |                                |
+|!Xy-83⁻ | 83 36 Xy |nonmetal |  UND  |                   ? Gq-83 |                                   |                 ? D-39 + O-44  |                                |
 |&Xy-84⁻ | 84 36 Xy |nonmetal |  UND  |                   ? Gq-84 |                                   |                 ? D-40 + O-44  |                                |
 |&Xy-85⁻ | 85 36 Xy |nonmetal |  UND  |                   ? Gq-85 |                                   |                 ? D-40 + O-45  |                                |
 |&Xy-86⁻ | 86 36 Xy |nonmetal |  UND  |                   ? Gq-86 |                                   |                 ? D-41 + O-45  |                                |
@@ -668,7 +668,7 @@
 |!Bt-85⁻ | 85 38 Bt |alkaline |  UND  |                    ? H-85 |                                   |                 ? D-39 + E-46  |                                |
 |?Bt-86⁻ | 86 38 Bt |alkaline |  UND  |                    ? H-86 |                                   |                 ? D-39 + E-47  |                                |
 |!Bt-87⁻ | 87 38 Bt |alkaline |  UND  |                    ? H-87 |                                   |                 ? D-40 + E-47  |                                |
-|?Bt-88⁻ | 88 38 Bt |alkaline |  UND  |                    ? H-88 |                                   |                 ? D-40 + E-48  |                                |
+|!Bt-88⁻ | 88 38 Bt |alkaline |  UND  |                    ? H-88 |                                   |                 ? D-40 + E-48  |                                |
 |&Bt-89⁻ | 89 38 Bt |alkaline |  UND  |                    ? H-89 |                                   |                 ? D-41 + E-48  |                                |
 |&Bt-90⁻ | 90 38 Bt |alkaline |  UND  |                    ? H-90 |                                   |                 ? D-41 + E-49  |                                |
 |&Bt-91⁻ | 91 38 Bt |alkaline |  UND  |                    ? H-91 |                                   |                 ? D-42 + E-49  |                                |
@@ -727,7 +727,7 @@
 |!U-89⁻  | 89 40  U |metal    |  UND  |                   ? Sq-89 |                    ? Fj-41 + A-48 |                                |                                |
 |!U-90⁻  | 90 40  U |metal    |  UND  |                   ? Sq-90 |                    ? Fj-41 + A-49 |                                |                                |
 |?U-91⁻  | 91 40  U |metal    |  UND  |                   ? Sq-91 |                    ? Fj-42 + A-49 |                                |                                |
-|?U-92⁻  | 92 40  U |metal    |  UND  |                   ? Sq-92 |                    ? Fj-42 + A-50 |                                |                                |
+|!U-92⁻  | 92 40  U |metal    |  UND  |                   ? Sq-92 |                    ? Fj-42 + A-50 |                                |                                |
 |&U-93⁻  | 93 40  U |metal    |  UND  |                   ? Sq-93 |                    ? Fj-43 + A-50 |                                |                                |
 |&U-94⁻  | 94 40  U |metal    |  UND  |                   ? Sq-94 |                    ? Fj-43 + A-51 |                                |                                |
 |&U-95⁻  | 95 40  U |metal    |  UND  |                   ? Sq-95 |                    ? Fj-44 + A-51 |                                |                                |
@@ -758,7 +758,7 @@
 |!Sq-91∙ | 91 41 Sq |metal    |  UND  |                   ? Ua-91 |                                   |                 ? O-42 + A-49  |                                |
 |!Sq-92∙ | 92 41 Sq |metal    |  UND  |                   ? Ua-92 |                                   |                 ? O-43 + A-49  |                                |
 |!Sq-93⁻ | 93 41 Sq |metal    |  UND  |                   ? Ua-93 |                                   |                 ? O-43 + A-50  |                                |
-|?Sq-94⁻ | 94 41 Sq |metal    |  UND  |                   ? Ua-94 |                                   |                 ? O-44 + A-50  |                                |
+|!Sq-94⁻ | 94 41 Sq |metal    |  UND  |                   ? Ua-94 |                                   |                 ? O-44 + A-50  |                                |
 |&Sq-95⁻ | 95 41 Sq |metal    |  UND  |                   ? Ua-95 |                                   |                 ? O-44 + A-51  |                                |
 |&Sq-96⁻ | 96 41 Sq |metal    |  UND  |                   ? Ua-96 |                                   |                 ? O-45 + A-51  |                                |
 |&Sq-97⁻ | 97 41 Sq |metal    |  UND  |                   ? Ua-97 |                                   |                 ? O-45 + A-52  |                                |

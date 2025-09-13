@@ -1118,6 +1118,7 @@ grab_token_image "Ax"  "111" "bohr"  $universe_bohr
 grab_token_image "I"   "113" "bohr"  $universe_bohr
 grab_token_image "I"   "114" "bohr"  $universe_bohr
 grab_token_image "I"   "115" "bohr"  $universe_bohr
+grab_token_image "Jb"  "115" "bohr"  $universe_bohr
 grab_token_image "Jb"  "116" "bohr"  $universe_bohr
 grab_token_image "Go"  "117" "bohr"  $universe_bohr
 grab_token_image "Go"  "118" "bohr"  $universe_bohr
