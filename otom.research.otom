@@ -1,6 +1,33 @@
+2025-09-13 Sep.Sat 13:53:19 SOMEONE FOUND ANOTHER ISOTOPE! Its been so long since someone else did that besides me.
+
+OTOMRO 559060:   T-15⁺ + Ek-100⁺  +     5000 -> Go-115⁺ => ⬇ Jb-115 +    3375.89 |    1624.11 | decay, nuclear               | 
+
+[ ] add to files
+  [ ] bookmark to Firefox
+  [ ] add otoms.shapescan.data.BOHR.otom
+  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [ ] add to syntax/otom.vim
+  [ ] add to parseReactorLog.pl
+  [ ] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [ ] add to chains.bohr.otom
+  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [ ] add to checkingsomething-stab-chart.txt
+  [ ] add to decay.bohr.otom
+  [ ] add to checklist.bohr.otom
+  [ ] make it myself
+  [ ] grabtheseimages.sh
+  [ ] add to isotopes_worker.bohr.sh
+  [ ] add to get_isotopes_bohr.alchemy.pl
+  [ ] add to token_id_sort_order-bohr.otom
+  [ ] add to token_id_sort_order_1_column-bohr.otom
+  [ ] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+
 2025-09-12 Sep.Fri 13:26:08 how i like to run my parser
 
-% ( ./old_working_parseReactorLog.pl logs_0xB8*/*csv > stdout ) |& tee stderr &
+% ( ./old_working_parseReactorLog.pl logs_0xB8*/*csv > stdout ) |& tee stderr 
 
 2025-09-11 Sep.Thu 16:16:10 Did a bunch more testing of intermediate isotopes but none produced new discoveries.
 

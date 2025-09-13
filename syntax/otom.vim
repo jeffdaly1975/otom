@@ -49,6 +49,12 @@ let decay_text_proton     = "proton"
 let decay_text_neutron    = "neutron"
 let decay_text_fission    = "fission"
 
+" save these in registers since I like to use them a lot
+let @a='ª'
+let @p='⁺'
+let @m='⁻'
+let @s='∙'
+
 " 'ª' alpha   insert <C-k>-a       Hex 00aa, Oct  252
 " '⁺' beta+   insert <C-k>+S       Hex 207a, Oct 20172
 " '⁻' beta-   insert <C-k>-S       Hex 207b, Oct 20173
