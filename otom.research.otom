@@ -1,3 +1,5 @@
+2025-09-15 Sep.Mon 12:49:14 Updated the checkingsomething.themath.ALPHA.txt to include reactions using Ny-73 and found no new potential isotopes to reach or uncover by them. Glad I checked.
+
 2025-09-13 Sep.Sat 13:53:19 SOMEONE FOUND ANOTHER ISOTOPE! Its been so long since someone else did that besides me. This was by wallet which appears to be Xeamorphus on opensea. Is this an alt Morpheus? It just occurred to me that they have similar word roots.
 
 OTOMRO 559060:   T-15⁺ + Ek-100⁺  +     5000 -> Go-115⁺ => ⬇ Jb-115 +    3375.88678093481257747  using 1624.11 decay, nuclear
@@ -27,7 +29,7 @@ OTOMRO 559060:   T-15⁺ + Ek-100⁺  +     5000 -> Go-115⁺ => ⬇ Jb-115 +   
 
 2025-09-12 Sep.Fri 13:26:08 how i like to run my parser
 
-% ( ./old_working_parseReactorLog.pl logs_0xB8*/*csv > stdout ) >& stderr && tail -f stderr 
+% ( ./old_working_parseReactorLog.pl logs_0xB8*/*csv > stdout ) >& stderr ; tail -f stderr 
 
 2025-09-11 Sep.Thu 16:16:10 Did a bunch more testing of intermediate isotopes but none produced new discoveries.
 
@@ -36,6 +38,7 @@ OTOMRO 559060:   T-15⁺ + Ek-100⁺  +     5000 -> Go-115⁺ => ⬇ Jb-115 +   
 OTOMRO 551905: Xc-34⁻  +   D-39⁻   +   3000 -> Ny-73⁻(0.80?) => Ny-73⁻ + 699.86 using 2300.14 nuclear
 
 [c] add to files
+[c] update math files to add this
 
 2025-09-09 Sep.Tue 13:14:57 Might as well try testing these intermediate isotopes:
 
@@ -1478,7 +1481,30 @@ I'll use "&" for now.
 [f]  N-85 +  N-85 +  N-85 +  N-85         + 400 => ?  N₄ <----NOPE! made N-85 + N₃ using 113.98 chemical
 [f]  N-85 +  N-85 +  N-85 +  N-85 +  N-85 + 500 => ?  N₅ <----NOPE! made N₂ + N₃   using 244.30 chemical+metallic
 
-[ ] Hmmm. Are N₄ and N₅ not possible?
+Hmmm. Are N₄ and N₅ not possible?
+
+[ ] try instead with something unstable, N-82 and N-93:
+ 2-chain N-82⁺ (0.725)
+ 3-chain N-93⁻ (0.753)
+
+[ ]need 12 more Ct-17
+
+9x [ ]|  Ro-23ª +  Mt-32⁺   +[  1199.07*-  20000] => C-55                |
+9x [ ]|  Yu-27⁺ +   C-55⁺   +[  1895.09*-   2500] => N-82                |
+
+9x [ ]|  Ct-17⁻ +  Kk-71ª   +[  1503.32*-   5000] => Lx-88               | 
+9x [ ]|   Sr-3∙ +  Lx-88∙   +[  1702.25 -   5000] => N-91                | 
+9x [ ]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                |
+9x [ ]|   P-24⁻ +   N-91∙   +[  3196.08 -   4000] => P-22 + N-93         |
+
+[ ]  N-82 +  N-82 +  N-82 +  N-82         + 400 => ?  N₄ 
+[ ]  N-82 +  N-82 +  N-82 +  N-82 +  N-82 + 500 => ?  N₅ 
+
+[ ]  N-93 +  N-93 +  N-93 +  N-93         + 400 => ?  N₄ 
+[ ]  N-93 +  N-93 +  N-93 +  N-93 +  N-93 + 500 => ?  N₅ 
+
+
+
 
 [c] Now  U isotopologues
  8-chain U-80⁺ (0.383)   :: 37702.79 |  Nd-27⁺ +   C-53⁺   +[  1457.20 -   5000] => U-80                |
