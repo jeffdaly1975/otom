@@ -1765,7 +1765,7 @@ $db{"7162"}
          'energy_in'      => 40,
 
          'otoms_out'      => 'Fj-37 + Fw-25 + FjFw₂(Fj-37>Fw-25,Fw-25)',
-        'otoms_out_sorted'=> 'Fw-25 + Fj-37 + FjFw₂(Fj-37>Fw-25,Fw-25)',  # [ ] Does this need 0, 1 or 2 spaces at end
+        'otoms_out_sorted'=> 'Fw-25 + Fj-37 + FjFw₂(Fj-37>Fw-25,Fw-25) ',  # [ ] Does this need 0, 1 or 2 spaces at end
          'otoms_out_list' => [ 'Fj-37', 'Fw-25', 'FjFw₂(Fj-37>Fw-25,Fw-25)' ],
          'protons_in'     => 69,
          'protons_out'    => 69,
@@ -1897,7 +1897,7 @@ $db{"7168"}
          'energy_in'      => 100,
 
          'otoms_out'      => 'W-4 + Cq-7 + Ju₃(Ju-2,Ju-1>Ju-1)',
-        'otoms_out_sorted'=> 'W-4 + Cq-7 + Ju₃(Ju-2,Ju-1>Ju-1)',  # [ ] Does this need 0, 1 or 2 spaces at end
+        'otoms_out_sorted'=> 'W-4 + Cq-7 + Ju₃(Ju-2,Ju-1>Ju-1) ',  # [ ] Does this need 0, 1 or 2 spaces at end
          'otoms_out_list' => [ 'W-4', 'Cq-7', 'Ju₃(Ju-2,Ju-1>Ju-1)'],
          'protons_in'     => 8,
          'protons_out'    => 8,
@@ -2052,7 +2052,7 @@ $db{"7175"}
          'energy_in'      => 200,
 
          'otoms_out'      => 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)',
-        'otoms_out_sorted'=> 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)',  # [ ] Does this need 0, 1 or 2 spaces at end
+        'otoms_out_sorted'=> 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1) ',  # [ ] Does this need 0, 1 or 2 spaces at end
          'otoms_out_list' => [ 'MAf₂SJu(M-20,Af-9,Af-9,S-26,Ju-1)'],
          'protons_in'     => 34,
          'protons_out'    => 32,
