@@ -33,7 +33,7 @@ OTOMRO 559060:   T-15⁺ + Ek-100⁺  +     5000 -> Go-115⁺ => ⬇ Jb-115 +   
 
 2025-09-12 Sep.Fri 13:26:08 how i like to run my parser
 
-% ( ./old_working_parseReactorLog.pl logs_0xB8*/*csv > stdout ) >& stderr ; tail -f stderr 
+% ( ./old_working_parseReactorLog.pl logs_0xB8*/*csv > stdout ) >& stderr & ; tail -f stderr 
 
 2025-09-11 Sep.Thu 16:16:10 Did a bunch more testing of intermediate isotopes but none produced new discoveries.
 
@@ -1338,7 +1338,7 @@ I'll use "&" for now.
 [r] C-56 + C-57 + C-58 + C-59        + 400 => ? C₄ <----SUCCESS! used 190.94 metallic
 [r] C-60 + C-61 + C-62 + C-63 + C-64 + 500 => ? C₅ <----SUCCESS! used 255.40 metallic
 
-[c] Now Ns isotopologues
+[c] Now N's isotopologues
 
  7-chain Ns-56⁺ (0.627)  :: 17626.66 | Ji-103⁺             +[  6943.94 -  10000] => L-47 + Ns-56        |
  6-chain Ns-57⁺ (0.723)  :: 19342.20 | Eh-124ª             +[  8549.33 -  25000] => Ns-57 + Yv-67       |
@@ -1750,7 +1750,18 @@ use these
  7-chain Vt-122⁻(0.424) :: 39703.43 |   P-26⁻ +  Lx-96⁻   +[  1422.95 -   8000] => Vt-122              | decay, nuclear               | OTOMRO  528289 |
 
 use this
- 1-chain Vt-109ª(0.669) ::  3764.09 |  Yu-29∙ +  S-102ª   +[  3764.09 -  20000] => P-22 + Vt-109       | decay, nuclear               | OTOMRO  123898 |
+ 1-chain Vt-109ª(0.669) ::  3764.09 |  Yu-29∙ +  S-102ª   +[  3762.94 -  20000] => P-22 + Vt-109       | decay, nuclear               | OTOMRO         |
+
+14x [ ]|  Yu-29∙ +  S-102ª   +[  3762.94 -  20000] => P-22 + Vt-109       |
+
+[f] Vt-109 + Vt-109                            + 200 => ? Vt₂ <----NOPE! HAH! makes N₂ + P-22 + P-22 using 138.26 decay+metallic
+[ ] Vt-109 + Vt-109 + Vt-109                   + 300 => ? Vt₃ <----
+[f] Vt-109 + Vt-109 + Vt-109 + Vt-109          + 400 => ? Vt₄ <----NOPE! makes Vt₂N₂ + P-22 + P-22 using 308.96 decay+metallic
+[f] Vt-109 + Vt-109 + Vt-109 + Vt-109 + Vt-109 + 500 => ? Vt₅ <----NOPE! makes Vt₃N₂ + P-22 + P-22 using 394.30 decay+metallic
+
+Interesting. with the Vt-109 + Vt-109 both alpha decayed to N-87 + P-22 and the N's combined
+[ ] Perhaps with enough attempts, I could be N₃ N₄ and N₅
+
 
 [ ] Now Ek isotopologues
 
