@@ -799,6 +799,7 @@ my %idhash=(
 762 => "Jb-115",
 763 => "Iu-69",
 764 => "V-49",
+765 => "D-72",
 );
 
 
@@ -1567,6 +1568,7 @@ my %hexhash=(
  "Jb-115"=> "c03a96cb41dba71f0d88eeb0b7df3dd99fbb95c68c96a97b3eafbc87873bf3ff",
  "Iu-69" => "351533309dd49c1cfbeadbd94ecd9c7a872d1449d7e1cdef69239af850107aca",
  "V-49"  => "0914d1d18770bf5f42eaca67bad78e7ba03466b7b75fe631bcb02a43457f7a47",
+ "D-72"  => "2c5f145abd77f2fd92a8068cdc478141f174a60d99a8961350da41dde6c1c2fc",
 );
 
 # query the blockchain via alchemy 

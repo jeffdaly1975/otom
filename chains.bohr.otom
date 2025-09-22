@@ -1062,6 +1062,7 @@
  5-chain Ux-49  :: 17674.32 | Kn-107⁺             +[  7272.84 -   7410] => Ux-49 + Ai-58       | nuclear                      | OTOMRO         |
  5-chain Ai-58  :: 17674.32 | Kn-107⁺             +[  7272.84 -  10000] => Ux-49 + Ai-58       | nuclear                      | OTOMRO         |
  6-chain Vt-120 :: 17681.43 |  Ct-17⁻ + Se-103⁻   +[  2057.76 -   8000] => Vt-120              | decay, nuclear               | OTOMRO         |
+ 7-chain D-72   :: 17833.15 |  Eb-19⁺ +   C-53⁺   +[  1783.62 -  10000] => D-72                | decay, nuclear               | OTOMRO  581931 | intermediate isotope -> Co-72⁺   => D-72⁺ 
  8-chain Iu-69  :: 18154.80 |  Vi-10⁺ +   F-59⁺   +[   795.87 -  10000] => Iu-69⁺              | decay, nuclear               | OTOMRO  578820 | intermediate isotope -> D-69⁺  => Iu-69⁺
  5-chain Dx-43  :: 18227.56 |  Lx-94⁻             +[  7988.22 -   7989] => Dx-43 + Uq-51       | nuclear                      | OTOMRO  353142 |
  5-chain Uq-51  :: 18227.56 |  Lx-94⁻             +[  7988.22 -   8000] => Dx-43 + Uq-51       | nuclear                      | OTOMRO  240902 |

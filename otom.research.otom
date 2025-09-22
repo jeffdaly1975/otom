@@ -2,27 +2,27 @@
 
 OTOMRO 581931:  Eb-19⁺ +   C-53⁺   +  10000 -> Co-72⁺   => D-72⁺ + 8216.379187296433883603 using 1783.62 nuclear+decay
 
-[ ] add to files
-  [ ] bookmark to Firefox
-  [ ] add otoms.shapescan.data.BOHR.otom
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
-  [ ] add to syntax/otom.vim
-  [ ] add to parseReactorLog.pl
-  [ ] add to old_working_parseReactorLog.pl
+[c] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
   [x] add to otom_reactions.BOHR.pl
-  [ ] add to chains.bohr.otom
-  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
-  [ ] add to checkingsomething-stab-chart.txt
-  [ ] add to decay.bohr.otom
-  [ ] add to checklist.bohr.otom
-  [ ] make it myself
-  [ ] grabtheseimages.sh
-  [ ] add to isotopes_worker.bohr.sh
-  [ ] add to get_isotopes_bohr.alchemy.pl
-  [ ] add to token_id_sort_order-bohr.otom
-  [ ] add to token_id_sort_order_1_column-bohr.otom
-  [ ] add to token_ids-bohr.csv
-  [ ] add to bohr_chain_recipes_for_morpheus.csv
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [c] make it myself
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
+  [c] add to bohr_chain_recipes_for_morpheus.csv
 
 2025-09-20 Sep.Sat 15:55:19 new discovery makes 764 isotopes in Universe Bohr
 

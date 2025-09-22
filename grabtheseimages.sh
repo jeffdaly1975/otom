@@ -724,6 +724,7 @@ grab_token_image "Iu"   "81" "bohr"  $universe_bohr
 grab_token_image "Iu"   "82" "bohr"  $universe_bohr
 grab_token_image "Iu"   "83" "bohr"  $universe_bohr
 grab_token_image "Iu"   "84" "bohr"  $universe_bohr
+grab_token_image "D"    "72" "bohr"  $universe_bohr
 grab_token_image "D"    "73" "bohr"  $universe_bohr
 grab_token_image "D"    "74" "bohr"  $universe_bohr
 grab_token_image "D"    "75" "bohr"  $universe_bohr
