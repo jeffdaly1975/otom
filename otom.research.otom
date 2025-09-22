@@ -1,3 +1,133 @@
+2025-09-21 Sep.Sun 15:24:08 new discovery makes 765 isotopes in Universe Bohr
+
+OTOMRO 581931:  Eb-19⁺ +   C-53⁺   +  10000 -> Co-72⁺   => D-72⁺ + 8216.379187296433883603 using 1783.62 nuclear+decay
+
+[ ] add to files
+  [ ] bookmark to Firefox
+  [ ] add otoms.shapescan.data.BOHR.otom
+  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [ ] add to syntax/otom.vim
+  [ ] add to parseReactorLog.pl
+  [ ] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [ ] add to chains.bohr.otom
+  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [ ] add to checkingsomething-stab-chart.txt
+  [ ] add to decay.bohr.otom
+  [ ] add to checklist.bohr.otom
+  [ ] make it myself
+  [ ] grabtheseimages.sh
+  [ ] add to isotopes_worker.bohr.sh
+  [ ] add to get_isotopes_bohr.alchemy.pl
+  [ ] add to token_id_sort_order-bohr.otom
+  [ ] add to token_id_sort_order_1_column-bohr.otom
+  [ ] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+2025-09-20 Sep.Sat 15:55:19 new discovery makes 764 isotopes in Universe Bohr
+
+OTOMRO 575866: Vi-10⁺  + F-59⁺   + 10000 -> D-69⁺  => Iu-69⁺ + 8769.130630130704957992 using 1230.87 nuclear+decay
+
+[c] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [c] make it myself
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
+  [c] add to bohr_chain_recipes_for_morpheus.csv
+
+2025-09-20 Sep.Sat 15:17:35 Looked at my math file for all the bohr intermediate isotopes we have yet to attempt on the beta- side of the graph, and the only entry was:
+
+[ ] | Vi-15⁻  + Vi-15⁻  +5000 -> Ro-30⁻ => ? Cl-30⁻
+
+
+As for the beta+ side of the graph, I found 6 possible paths to new isotopes:
+
+
+[>] | Ro-22⁺  + Da-90⁺  + 10000 -> Jb-112⁺  => ? I-112⁺
+  [r]|  Ro-22⁺ +  S-102ª   +[  2235.72*-  20000] => P-22 + Z-102        | decay, nuclear               | OTOMRO  229747 |
+  [-]|  Ro-22⁺ +  Z-102ª   +[  2155.34*-   4000] => P-22 + Cv-102       | decay, nuclear               | OTOMRO  192731 |
+  [-]|  Vi-10⁺ + Cv-102ª   +[  1136.59 -   3000] => P-22 + Dd-90        | decay, nuclear               | OTOMRO  305496 |
+  [r]|  Ro-22⁺ +  Dd-90⁺   +[  1885.66 -   3000] => P-22 + Ok-90        | decay, nuclear               | OTOMRO  129985 |
+  [r]|  Ro-22⁺ +  Ok-90⁺   +[  1790.06 -   6000] => P-22 + Da-90        | decay, nuclear               | OTOMRO  107988 |
+  [f]|  Ro-22⁺ +  Da-90⁺   +  10000 -> Jb-112⁺  => ? I-112⁺ => NOPE decayed to P-22 + Ok-90 using 500.00 decay
+
+[>] | T-14⁺   + Ek-99⁺  + 10000 -> Go-113⁺  => ? Jb-113⁺
+  [r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
+  [r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        |
+  [r]|  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        |
+  [r]|  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        |
+  [r]|  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        |
+  [f]|   T-14⁺ +  Ek-99⁺   +  10000 -> Go-113⁺  => ? Jb-113⁺ -> NOPE decayed to Ct-14 + Vt-99 using 500.00 decay
+
+[>] | T-15⁺   + Ek-99⁺  + 10000 -> Go-114⁺  => ? Jb-114⁺
+  [r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
+  [r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        |
+  [r]|  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        |
+  [r]|  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        |
+  [r]|  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        |
+  [f]|   T-15⁺ +  Ek-99⁺   +  10000 -> Go-114⁺  => ? Jb-114⁺ -> NOPE decayed to Ct-15 + Vt-99 using 500.00 decay
+
+[>] | Eb-19⁺  + C-53⁺   + 10000 -> Co-72⁺   => ? D-72⁺
+  [r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               | nuclear                      | OTOMRO  253440 |
+  [r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        | decay, nuclear               | OTOMRO  253469 |
+  [r]|  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        | decay, nuclear               | OTOMRO  362145 |
+  [r]|  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        | decay, nuclear               | OTOMRO  109901 |
+  [r]|  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        | decay, nuclear               | OTOMRO  137835 |
+  [r]|  Ek-99⁺             +[  6099.94 -  10500] => L-46 + C-53         | nuclear                      | OTOMRO  142498 |
+  [r]|  Eb-19⁺ +   C-53⁺   +  10000 -> Co-72⁺   => ? D-72⁺ ----> SUCCESS! makes D-72 + 8,216.379187296433883603 using 1783.62 nuclear+decay OTOMRO 581931
+
+[r] | Vi-10⁺  + F-59⁺   + 10000 -> D-69⁺    => ? Iu-69⁺ --->> SUCCESS! makes Iu-69 using 1230.87 nuclear+decay
+
+[>] | Xj-16⁺  + Ek-99⁺  + 10000 -> X-115⁺   => ? Go-115⁺
+  [r]|  Ro-22⁺ +  Gy-67ª   +[  1810.44*-  20000] => Se-89               |
+  [r]|  Ro-22⁺ +  Se-89⁺   +[  2105.13*-   4000] => P-22 + Nm-89        |
+  [r]|  Ro-22⁺ +  Nm-89⁺   +[  1956.57 -   4000] => P-22 + Dd-89        |
+  [r]|  Ro-22⁺ +  Dd-89⁺   +[  1843.31*-   1845] => P-22 + Ok-89        |
+  [r]|  Mt-32⁺ +  Ok-89⁺   +[  2234.14*-   2240] => P-22 + Ek-99        |
+  [f]|  Xj-16⁺ +  Ek-99⁺   +  10000 -> X-115⁺   => ? Go-115⁺ -> NOPE decayed to T-16 + Vt-99 using 500.00 decay
+
+
+2025-09-20 Sep.Sat 13:54:38 new discovery
+
+OTOMRO 575747:  Nm-106⁻             +  12000 => V-49 + L-57 + 3102.088955011851339805 using 8897.91 nuclear 
+
+[c] Add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [c] make it myself
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
+  [c] add to bohr_chain_recipes_for_morpheus.csv
+
 2025-09-16 Sep.Tue 12:50:43 [ ] I guess I should update my bohr stab chart with the tilde ~ symbols indicating discovered isotopes. Then explore more that I've marked with question marks to find the edges of discoverability.
 
 2025-09-16 Sep.Tue 11:51:07 [ ] at some point i would like to look at the reaction logs to see if any with 3-5 inputs had any interesting outputs
@@ -1752,15 +1882,18 @@ use these
 use this
  1-chain Vt-109ª(0.669) ::  3764.09 |  Yu-29∙ +  S-102ª   +[  3762.94 -  20000] => P-22 + Vt-109       | decay, nuclear               | OTOMRO         |
 
-14x [ ]|  Yu-29∙ +  S-102ª   +[  3762.94 -  20000] => P-22 + Vt-109       |
+14x [r]|  Yu-29∙ +  S-102ª   +[  3762.94 -  20000] => P-22 + Vt-109       |
 
-[f] Vt-109 + Vt-109                            + 200 => ? Vt₂ <----NOPE! HAH! makes N₂ + P-22 + P-22 using 138.26 decay+metallic
-[ ] Vt-109 + Vt-109 + Vt-109                   + 300 => ? Vt₃ <----
-[f] Vt-109 + Vt-109 + Vt-109 + Vt-109          + 400 => ? Vt₄ <----NOPE! makes Vt₂N₂ + P-22 + P-22 using 308.96 decay+metallic
-[f] Vt-109 + Vt-109 + Vt-109 + Vt-109 + Vt-109 + 500 => ? Vt₅ <----NOPE! makes Vt₃N₂ + P-22 + P-22 using 394.30 decay+metallic
+[f] Vt-109 + Vt-109                            + 200 => ? Vt₂ <----NOPE! HAH! makes N₂    + P-22 + P-22 using 138.26 decay+metallic
+[f] Vt-109 + Vt-109 + Vt-109                   + 300 => ? Vt₃ <----NOPE!      makes VtN₂  + P-22 + P-22 using 223.61 decay+metallic
+[f] Vt-109 + Vt-109 + Vt-109 + Vt-109          + 400 => ? Vt₄ <----NOPE!      makes Vt₂N₂ + P-22 + P-22 using 308.96 decay+metallic
+[f] Vt-109 + Vt-109 + Vt-109 + Vt-109 + Vt-109 + 500 => ? Vt₅ <----NOPE!      makes Vt₃N₂ + P-22 + P-22 using 394.30 decay+metallic
 
 Interesting. with the Vt-109 + Vt-109 both alpha decayed to N-87 + P-22 and the N's combined
-[ ] Perhaps with enough attempts, I could be N₃ N₄ and N₅
+[ ] Perhaps with enough attempts, I could get N₃ N₄ and N₅
+  [ ] Vt-109 + Vt-109 + Vt-109                   + 300 => ? N₃
+  [ ] Vt-109 + Vt-109 + Vt-109 + Vt-109          + 400 => ? N₄
+  [ ] Vt-109 + Vt-109 + Vt-109 + Vt-109 + Vt-109 + 500 => ? N₅
 
 
 [ ] Now Ek isotopologues
@@ -2511,7 +2644,7 @@ OTOMRO 520626 | Nd-27⁺  + L-46⁺     +   5000   ->  *W-73⁺   =>  Co-73⁺  
 OTOMRO 520628 | Nd-27⁺  + C-53⁺     +   5000   ->  *Vl-80⁺  =>  U-80⁺        + 3374.295559623158624163 NRG using 1625.70 nuclear+decay
 OTOMRO 520629 | K-29⁺   + C-53⁺     +   5000   ->  *Se-82⁺  =>  Vl-82⁺       + 3292.206765610340880812 NRG using 1707.79 nuclear+decay
 OTOMRO 520630 | Vi-15⁻  + Uq-52⁻    +   5000   ->  *Qe-67⁻  =>  C-67⁻        + 3809.096820016045967350 NRG using 1190.90 nuclear+decay
-OTOMRO 520631 | T-14⁺   + C-53⁺     +   5000   ->  *Iu-67⁺  =>  Cj-67⁺       + 3802.758366159928755224 NRG using 1197.24 nuclear+decay 
+OTOMRO 520631 | T-14⁺   + C-53⁺     +   5000   ->  *Iu-67⁺  =>  Cj-67⁺       + 3802.758366159928755224 NRG using 1197.24 nuclear+decay
 
 [c] add to files
   [c] bookmark to Firefox
@@ -3690,7 +3823,7 @@ OTOMRO 500125 Dd-108⁻ + 12000 => Uq-50 + L-58 + 3,046.063838651353307796 using
   [c] add to bohr_chain_recipes_for_morpheus.csv
 
 try splitting L-58 to make Ro-27 plus undiscovered Cl-31 BUT IT WILL BE TRICKY since L-* likes to split and then chemically make ClRo(). And.... looking at the reaction history no one has yet successfully split an L otom into Cl plus Ro. Yikes.
-[ ] L-58⁻ + ? => ? Cl-31 + Ro-27
+[*] L-58⁻ + ? => ? Cl-31 + Ro-27
 
 
 [c] make these and split them to see if we can narrow down the likely ranges
@@ -4572,7 +4705,18 @@ total: 42185
 2025-08-03 Aug.Sun 18:50:10
 
 Consider this way to get V-49, or should I avoid wasting it and do something that targets Gd-49 which would probably be beta- and decay instantly to V-49
-[ ]  Nm-106⁻ + 12000 => ? V-49 + L-57 
+[>]  Nm-106⁻ + 12000 => ? V-49 + L-57 
+  [r]|  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               | decay, nuclear               | OTOMRO  108339 |
+  [r]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+  [r]|  Gj-11∙ +  Nd-34⁻   +[  1023.44*-   5000] => Gd-45               | nuclear                      | OTOMRO   61448 |
+  [r]|  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+  [r]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+  [r]|  Gd-45⁻             +[  2775.38 -  10000] => Xj-21 + P-24        | nuclear                      | OTOMRO  132479 |
+  [r]|  Xj-21⁻             +[   762.48 -   3000] => Dz-10 + Gj-11       | nuclear                      | OTOMRO  132481 |
+  [r]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+  [r]|   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+  [r]|  Dz-10⁻ + Lx-96⁻    +[  1248.14 -   5000] => Nm-106              | decay, nuclear               | OTOMRO         | used 1245.59
+  [r]  Nm-106⁻             +  12000 => ? V-49 + L-57  ---> SUCCESS! makes V-49 + L-57 using 8897.91 nuclear OTOMRO 575747
 
 2025-08-02 Aug.Sat 16:24:04 Made 7 new isotope discoveries in Bohr, so 725 isotopes
 
