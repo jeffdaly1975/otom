@@ -1887,8 +1887,8 @@ $db{"7167"}
 
          'initiate_tx'    => '0x159e0058dbbbfe8be822eb27ebdfd40aa2cd9a234f9cc8c90b590286b8853abb',
          'analyse_tx'     => '0xb7d80e75e3084fe7ca3d80266e56292d3c03941e27a7b2c79159ef256a042e49',
-         'type'           => 'nuclear',
-         'typehash'       => { "nuclear"=>1},
+         'type'           => 'decay',
+         'typehash'       => { "decay"=>1},
          'chemist'        => '0xBC5a3A8D843EbcA04b930435e236eEa2aF16016c',
          'subscripts'     => 0,
        };

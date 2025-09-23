@@ -69,7 +69,6 @@ $line =~ s/0x0000000000000000000000000000000000000000000000000000000000000040//;
 
 #print "initiateReaction OTOMRO $otomro CHEMIST $chemist INPUT NRG $energy_input INPUTS: ".  join(" + ",@otoms_in) . "\n";
  print "initiateReaction OTOMRO $otomro\n";
- printf " OTOMRO %8d Universe %s\n", $otomro, $this_universe;
 
 }elsif ($line =~ /^0x0000000000000000000000000000000000000000000000000000000000000020(\w{64})/g){
   $this_universe=$1;
