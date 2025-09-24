@@ -1,3 +1,33 @@
+2025-09-24 Sep.Wed 10:39:06
+
+processing Reactor logs after removing end columns and moving OTOMRO column to end
+g/^|\(.................................................\)+\s*\d\+ =>...\(.................................................................................\)+\s*\d\+\.\d\+ |\s*\d\+\.\d\+ |\(..............................\)|\s*\d\+[ *]|\n|\1+\s*\d\+ =>...\2+ *\d\+\.\d\+ | *\d\+\.\d\+ |\3| *\d\+[ *]|\n|\1+\s*\d\+ =>...\2+ *\d\+\.\d\+ | *\d\+\.\d\+ |\3| *\d\+[ *]|/normal jdd
+
+
+in file temp-alpha.otom, got it reduced down to the min and max input NRG per reaction, where same inputs with different reaction types are different reactions.
+
+like this:
+|    W-4∙                                         +[       0.00 -       100] => W-4                                                                              | none                         |    14944  -    183878 |
+|    W-4∙                                         +[     102.13 -     80000] => Ju-2 + Ju-2                                                                      | nuclear                      |   104547  -     25356 |
+|    W-4∙ +    W-4∙                               +[       0.00 -       440] => W-4 + W-4                                                                        | none                         |    35406  -    226178 |
+|    W-4∙ +    W-4∙                               +[     441.37 -      5000] => Af-8                                                                             | nuclear                      |   323154  -     12659 |
+|    W-4∙ +    W-5∙                               +[       0.00 -       430] => W-4 + W-5                                                                        | none                         |    46243  -    229033 |
+|    W-4∙ +    W-5∙                               +[     466.54 -      5000] => Af-9                                                                             | nuclear                      |   150475  -     89671 |
+|    W-4∙ +   Af-7ª                               +[       0.00 -         0] => Ju-1 + W-4 + Cq-6                                                                | decay                        |     8745* -    104816 |
+|    W-4∙ +   Af-7ª                               +[       3.35 -       200] => Cq-6 + JuW(Ju-1>W-4)                                                             | chemical, decay              |    11354  -    312984 |
+|    W-4∙ +   Af-7ª                               +[       3.25 -       100] => Cq-6 + WJu(W-4>Ju-1)                                                             | chemical, decay              |   240670  -    503635 |
+|    W-4∙ +   Af-7ª                               +[     364.69 -      5000] => Xl-11                                                                            | decay, nuclear               |   173239  -    273401 |
+|    W-4∙ +   Af-8∙                               +[       0.00 -         0] => W-4 + Af-8                                                                       | none                         |    15524* -    532625 |
+|    W-4∙ +   Af-8∙                               +[       6.96 -       500] => AfW(Af-8>W-4)                                                                    | chemical                     |    11327  -    332890 |
+|    W-4∙ +   Af-8∙                               +[     557.78 -      5000] => Cq-6 + Cq-6                                                                      | decay, nuclear               |    19423  -     88260 |
+|    W-4∙ +   Af-9∙                               +[       0.00 -         0] => W-4 + Af-9                                                                       | none                         |    39158* -    182240 |
+|    W-4∙ +   Af-9∙                               +[       7.49 -       500] => AfW(Af-9>W-4)                                                                    | chemical                     |     7546  -    200449 |
+|    W-4∙ +   Af-9∙                               +[     558.73 -      5000] => Pq-13                                                                            | nuclear                      |    35859  -     88343 |
+
+Now to check if there are any shorter chains in here than I'm aware of before proceeding.
+[ ] make new chains.alpha.otom from the temp-alpha.otom
+[ ] in temp-alpha.otom, duplicate input otom columns and replace with the chain count like " 2c + 4c"
+
 2025-09-21 Sep.Sun 15:24:08 new discovery makes 765 isotopes in Universe Bohr
 
 OTOMRO 581931:  Eb-19⁺ +   C-53⁺   +  10000 -> Co-72⁺   => D-72⁺ + 8216.379187296433883603 using 1783.62 nuclear+decay
