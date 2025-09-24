@@ -1,0 +1,327 @@
+ 0-chain Af-7   ::     0.00 | MINEABLE
+ 0-chain Af-8   ::     0.00 | MINEABLE
+ 0-chain Af-9   ::     0.00 | MINEABLE
+ 0-chain Aw-50  ::     0.00 | MINEABLE
+ 0-chain Cq-5   ::     0.00 | MINEABLE
+ 0-chain Cq-6   ::     0.00 | MINEABLE
+ 0-chain Cq-7   ::     0.00 | MINEABLE
+ 0-chain D-37   ::     0.00 | MINEABLE
+ 0-chain Dx-15  ::     0.00 | MINEABLE
+ 0-chain Dx-16  ::     0.00 | MINEABLE
+ 0-chain Dx-17  ::     0.00 | MINEABLE
+ 0-chain Fj-37  ::     0.00 | MINEABLE
+ 0-chain Fw-25  ::     0.00 | MINEABLE
+ 0-chain Gy-34  ::     0.00 | MINEABLE
+ 0-chain Ju-1   ::     0.00 | MINEABLE
+ 0-chain Ju-2   ::     0.00 | MINEABLE
+ 0-chain Ju-3   ::     0.00 | MINEABLE
+ 0-chain M-20   ::     0.00 | MINEABLE
+ 0-chain M-22   ::     0.00 | MINEABLE
+ 0-chain M-23   ::     0.00 | MINEABLE
+ 0-chain Nb-54  ::     0.00 | MINEABLE
+ 0-chain Pm-17  ::     0.00 | MINEABLE
+ 0-chain Pm-18  ::     0.00 | MINEABLE
+ 0-chain Pm-19  ::     0.00 | MINEABLE
+ 0-chain Pq-10  ::     0.00 | MINEABLE
+ 0-chain Pq-12  ::     0.00 | MINEABLE
+ 0-chain Pq-13  ::     0.00 | MINEABLE
+ 0-chain Pq-14  ::     0.00 | MINEABLE
+ 0-chain Pq-15  ::     0.00 | MINEABLE
+ 0-chain Pt-24  ::     0.00 | MINEABLE
+ 0-chain Pt-25  ::     0.00 | MINEABLE
+ 0-chain Pt-26  ::     0.00 | MINEABLE
+ 0-chain S-25   ::     0.00 | MINEABLE
+ 0-chain S-26   ::     0.00 | MINEABLE
+ 0-chain W-4    ::     0.00 | MINEABLE
+ 0-chain W-5    ::     0.00 | MINEABLE
+ 0-chain Xc-30  ::     0.00 | MINEABLE
+ 0-chain Xc-31  ::     0.00 | MINEABLE
+ 0-chain Xc-34  ::     0.00 | MINEABLE
+ 0-chain Xl-10  ::     0.00 | MINEABLE
+ 0-chain Xl-11  ::     0.00 | MINEABLE
+ 0-chain Xl-9   ::     0.00 | MINEABLE
+ 0-chain Zq-32  ::     0.00 | MINEABLE
+ 0-chain Zz-13  ::     0.00 | MINEABLE
+ 0-chain Zz-14  ::     0.00 | MINEABLE
+ 1-chain Fw-23  ::     0.00 |   M-23⁻             +[     0.00 -   1220] => ⬆ Fw-23                      | decay                        |
+ 1-chain Zz-15  ::     0.00 |  Dx-15⁺             +[     0.00 -    310] => ⬇ Zz-15                      | decay                        |
+ 1-chain Dx-18  ::     0.00 |  Pm-18⁺             +[     0.00 -    830] => ⬆ Dx-18                      | decay                        |
+ 1-chain Xc-32  ::     0.00 |  Zq-32⁻             +[     0.00 -   2000] => ⬆ Xc-32                      | decay                        |
+ 1-chain M-19   ::   365.41 |   Xl-9⁺ +  Pq-10⁺   +[   361.51 -   5000] => ⬇ M-19                       | decay, nuclear               |   306153  -     89519 |
+ 1-chain Pt-23  ::   458.77 |  Pq-10⁺ +  Zz-13⁺   +[   458.77 -   5000] => ⬇ Pt-23                      | decay, nuclear               |
+ 1-chain M-21   ::   462.60 |   Af-7ª +  Pq-14⁻   +[   462.60 -   5000] =>   M-21                       | nuclear                      |
+ 1-chain Fw-21  ::   476.78 |   Af-7ª +  Zz-14ª   +[   476.78 -   5000] =>   Fw-21                      | nuclear                      |
+ 1-chain Fw-22  ::   476.88 |  Pq-10⁺ +  Pq-12ª   +[   476.88 -   5000] => ⬇ Fw-22                      | decay, nuclear               |
+ 1-chain S-28   ::   517.11 |   Cq-5⁺ +   M-23⁻   +[   517.11 -   5000] => ⬆ S-28                       | nuclear                      |
+ 1-chain Pm-20  ::   532.80 |    W-5∙ +  Pq-15⁻   +[   532.80 -   5000] => ⬇ Pm-20                      | decay, nuclear               |
+ 1-chain Zq-30  ::   533.05 |   Cq-5⁺ +  Fw-25⁻   +[   533.05 -   5000] =>   Zq-30                      | nuclear                      |
+ 1-chain Zq-27  ::   549.50 |  Pq-10⁺ +  Pm-17⁺   +[   549.50 -   5000] => ⬇ Zq-27                      | decay, nuclear               |
+ 1-chain Gy-31  ::   564.74 |   Cq-5⁺ +   S-26ª   +[   564.74 -   5000] => ⬇ Gy-31                      | nuclear                      | OTOMRO 291254  - ? 
+ 1-chain S-30   ::   578.16 |  Pq-15⁻ +  Pq-15⁻   +[   578.16 -   1357] => ⬆ S-30                       | decay, nuclear               |
+ 1-chain Zq-28  ::   585.24 |  Pq-10⁺ +  Pm-18⁺   +[   585.24 -   5000] => ⬇ Zq-28                      | decay, nuclear               |
+ 1-chain Fw-24  ::   604.02 |  Xl-10ª +  Pq-14⁻   +[   604.02 -   5000] =>   Fw-24                      | nuclear                      |
+ 1-chain Pt-27  ::   647.05 |  Pq-12ª +  Pq-15⁻   +[   647.05 -   5000] =>   Pt-27                      | nuclear                      |
+ 1-chain Fj-39  ::   652.57 |   Cq-5⁺ +  Xc-34⁻   +[   652.57 -   5000] =>   Fj-39                      | nuclear                      |
+ 1-chain Gy-33  ::   652.96 |  Pq-10⁺ +   M-23⁻   +[   652.96 -   5000] => ⬆ Gy-33                      | nuclear                      |
+ 1-chain D-32   ::   661.88 |   Af-7ª +   S-25⁺   +[   661.88 -   6000] => ⬇ D-32                       | nuclear                      |
+ 1-chain Fj-36  ::   669.03 |   Cq-5⁺ +  Xc-31∙   +[   669.03 -   5000] =>   Fj-36                      | nuclear                      |
+ 1-chain D-35   ::   674.05 |  Pq-10⁺ +  Fw-25⁻   +[   674.05 -   5000] => ⬆ D-35                       | nuclear                      |
+ 1-chain S-29   ::   674.87 |  Pq-15⁻ +  Zz-14ª   +[   674.87 -   5000] => ⬆ S-29                       | nuclear                      |
+ 1-chain Fj-35  ::   685.70 |  Pq-10⁺ +   S-25⁺   +[   685.70 -   5000] => ⬇ Fj-35                      | decay, nuclear               |
+ 1-chain Gy-32  ::   689.97 |   Af-7ª +  Pt-25ª   +[   689.97 -   5000] => ⬆ Gy-32                      | nuclear                      |
+ 1-chain S-27   ::   690.46 |  Pq-14⁻ +  Zz-13⁺   +[   690.46 -   5000] => ⬆ S-27                       | nuclear                      |
+ 1-chain C-42   ::   690.54 |   Cq-5⁺ +   D-37⁻   +[   690.54 -   5050] => ⬇ C-42                       | nuclear                      |
+ 1-chain D-33   ::   691.55 |   Af-7ª +   S-26ª   +[   691.55 -   5000] => ⬇ D-33                       | nuclear                      |
+ 1-chain E-42   ::   701.93 |   Cq-5⁺ +  Fj-37ª   +[   701.93 -   5000] =>   E-42                       | nuclear                      |
+ 1-chain Xc-29  ::   713.35 |   Cq-5⁺ +  Pt-24∙   +[   713.35 -   5000] =>   Xc-29                      | nuclear                      |
+ 1-chain Zq-29  ::   748.46 |  Pq-14⁻ +  Dx-15⁺   +[   748.46 -   5000] => ⬇ Zq-29                      | nuclear                      |
+ 1-chain Xc-33  ::   749.68 |   Ju-1∙ +  Zq-32⁻   +[   749.68 -  10000] =>   Xc-33                      | nuclear                      |
+ 1-chain Fj-34  ::   772.74 |   Xl-9⁺ +   S-25⁺   +[   772.74*-   5000] => ⬇ Fj-34                      | nuclear                      | OTOMRO 26974 - OTOMRO 89651 
+ 1-chain Gy-35  ::   797.60 |   Ju-1∙ +  Xc-34⁻   +[   797.60 -   5000] => ⬆ Gy-35                      | nuclear                      |
+ 1-chain D-34   ::   803.31 |   Xl-9⁺ +  Pt-25ª   +[   803.31 -   5000] => ⬆ D-34                       | nuclear                      |
+ 1-chain O-38   ::   809.57 |   Af-7ª +  Xc-31∙   +[   809.57 -   5000] =>   O-38                       | nuclear                      |
+ 1-chain O-41   ::   815.20 |   Af-7ª +  Xc-34⁻   +[   815.20 -   5000] =>   O-41                       | nuclear                      |
+ 1-chain E-44   ::   826.27 |  Pq-10⁺ +  Xc-34⁻   +[   826.27 -   6000] =>   E-44                       | nuclear                      |
+ 1-chain E-41   ::   837.92 |  Pq-10⁺ +  Xc-31∙   +[   837.92 -   5000] =>   E-41                       | nuclear                      |
+ 1-chain Xk-55  ::   849.03 |   Cq-5⁺ +  Aw-50∙   +[   849.03 -   5000] => ⬇ Xk-55                      | nuclear                      |
+ 1-chain Fj-38  ::   849.29 |   Ju-1∙ +   D-37⁻   +[   849.29 -   5000] => ⬇ Fj-38                      | nuclear                      |
+ 1-chain Gy-36  ::   855.48 |   Ju-2∙ +  Xc-34⁻   +[   855.48 -   5000] => ⬆ Gy-36                      | nuclear                      |
+ 1-chain Yp-59  ::   858.15 |   Cq-5⁺ +  Nb-54ª   +[   858.15 -   5000] =>   Yp-59                      | nuclear                      |
+ 1-chain A-44   ::   859.51 |   Af-7ª +  Fj-37ª   +[   859.51 -   5000] =>   A-44                       | nuclear                      |
+ 1-chain Zq-31  ::   873.88 |   Cq-6∙ +  Fw-25⁻   +[   873.88 -   5000] =>   Zq-31                      | nuclear                      |
+ 1-chain Aw-47  ::   876.28 |  Pq-10⁺ +   D-37⁻   +[   876.28 -   5000] => ⬆ Aw-47                      | nuclear                      |
+ 1-chain D-38   ::   884.43 |  Pq-15⁻ +   M-23⁻   +[   884.43 -   5000] => ⬆ D-38                       | decay, nuclear               |
+ 1-chain Oc-47  ::   890.16 |  Pq-10⁺ +  Fj-37ª   +[   890.16*-   5000] =>   Oc-47                      | nuclear                      | OTOMRO 97729 - OTOMRO 88901
+ 1-chain O-39   ::   892.57 |   Cq-5⁺ +  Gy-34∙   +[   892.57 -   5000] => ⬇ O-39                       | nuclear                      |
+ 1-chain Fj-40  ::   910.26 |  Pq-15⁻ +  Fw-25⁻   +[   910.26 -   5000] => ⬆ Fj-40                      | decay, nuclear               |
+ 1-chain O-40   ::   922.46 |  Pq-15⁻ +   S-25⁺   +[   922.46 -   5000] => ⬇ O-40                       | nuclear                      |
+ 1-chain C-43   ::   928.28 |   Xl-9⁺ +  Xc-34⁻   +[   928.28 -   7000] => ⬆ C-43                       | nuclear                      |
+ 1-chain D-36   ::   928.73 |  Zz-13⁺ +   M-23⁻   +[   928.73 -   5000] => ⬆ D-36                       | nuclear                      |
+ 1-chain C-40   ::   952.18 |   Xl-9⁺ +  Xc-31∙   +[   952.18 -   5000] => ⬆ C-40                       | nuclear                      |
+ 1-chain C-38   ::   975.08 |  Zz-13⁺ +   S-25⁺   +[   975.08 -   5000] => ⬇ C-38                       | nuclear                      |
+ 1-chain O-42   ::   976.98 |  Xl-10ª +  Zq-32⁻   +[   976.98 -   5000] =>   O-42                       | nuclear                      |
+ 1-chain A-46   ::   987.22 |   Xl-9⁺ +   D-37⁻   +[   987.22 -   5000] => ⬇ A-46                       | nuclear                      |
+ 1-chain D-39   ::  1001.51 |  Pq-14⁻ +  Fw-25⁻   +[  1001.51 -   5000] => ⬆ D-39                       | nuclear                      |
+ 1-chain Aw-46  ::  1003.70 |   Xl-9⁺ +  Fj-37ª   +[  1003.70 -   5000] => ⬆ Aw-46                      | nuclear                      |
+ 1-chain O-37   ::  1015.50 |  Pq-12ª +   S-25⁺   +[  1015.50 -   5000] => ⬇ O-37                       | nuclear                      |
+ 1-chain C-39   ::  1023.84 |  Zz-13⁺ +   S-26ª   +[  1023.84 -   5000] => ⬇ C-39                       | nuclear                      |
+ 1-chain C-44   ::  1039.15 |  Xl-10ª +  Xc-34⁻   +[  1039.15 -   5000] => ⬆ C-44                       | nuclear                      |
+ 1-chain Ic-57  ::  1039.63 |   Af-7ª +  Aw-50∙   +[  1039.63 -   5000] => ⬇ Ic-57                      | nuclear                      |
+ 1-chain Oc-51  ::  1042.85 |   Ju-1∙ +  Aw-50∙   +[  1042.85 -  15000] => ⬇ Oc-51                      | nuclear                      |
+ 1-chain C-41   ::  1044.61 |    W-4∙ +  Fj-37ª   +[  1044.61 -   5000] => ⬇ C-41                       | nuclear                      |
+ 1-chain E-47   ::  1046.95 |  Pq-15⁻ +  Zq-32⁻   +[  1046.95 -   5000] => ⬆ E-47                       | decay, nuclear               |
+ 1-chain Jx-61  ::  1050.58 |   Af-7ª +  Nb-54ª   +[  1050.58 -   5000] =>   Jx-61                      | nuclear                      |
+ 1-chain E-40   ::  1062.80 |  Pq-10⁺ +  Xc-30∙   +[  1062.80 -   5000] =>   E-40                       | nuclear                      |
+ 1-chain Jx-60  ::  1076.74 |  Pq-10⁺ +  Aw-50∙   +[  1076.74 -   5000] => ⬇ Jx-60                      | nuclear                      |
+ 1-chain At-64  ::  1087.54 |  Pq-10⁺ +  Nb-54ª   +[  1087.54 -   5000] =>   At-64                      | nuclear                      |
+ 1-chain E-45   ::  1101.19 |  Zz-13⁺ +  Zq-32⁻   +[  1101.19 -   5000] =>   E-45                       | nuclear                      |
+ 1-chain A-47   ::  1105.56 |  Xl-10ª +   D-37⁻   +[  1105.56 -   5000] => ⬇ A-47                       | nuclear                      |
+ 1-chain A-49   ::  1106.01 |  Pq-15⁻ +  Xc-34⁻   +[  1106.01 -   5000] => ⬆ A-49                       | decay, nuclear               |
+ 1-chain Oc-52  ::  1119.09 |   Ju-2∙ +  Aw-50∙   +[  1119.09 -   6000] => ⬇ Oc-52                      | nuclear                      |
+ 1-chain Fj-41  ::  1121.01 |   Cq-7∙ +  Xc-34⁻   +[  1121.01 -   5000] =>   Fj-41                      | nuclear                      |
+ 1-chain Xk-56  ::  1130.94 |   Ju-2∙ +  Nb-54ª   +[  1130.94 -   5040] =>   Xk-56                      | nuclear                      |
+ 1-chain E-46   ::  1155.68 |  Pq-14⁻ +  Zq-32⁻   +[  1155.68 -   5000] => ⬆ E-46                       | decay, nuclear               |
+ 1-chain E-43   ::  1157.49 |   Cq-6∙ +  Fj-37ª   +[  1157.49 -   5000] =>   E-43                       | nuclear                      |
+ 1-chain A-42   ::  1170.24 |  Pm-17⁺ +   S-25⁺   +[  1170.24 -   5000] => ⬇ A-42                       | nuclear                      |
+ 1-chain Aw-52  ::  1176.20 |  Pq-15⁻ +   D-37⁻   +[  1176.20 -   5000] => ⬆ Aw-52                      | nuclear                      |
+ 1-chain Oc-53  ::  1192.32 |   Ju-3∙ +  Aw-50∙   +[  1192.32 -   5000] => ⬇ Oc-53                      | nuclear                      |
+ 1-chain Xk-57  ::  1211.12 |   Ju-3∙ +  Nb-54ª   +[  1211.12 -   5000] =>   Xk-57                      | nuclear                      |
+ 1-chain O-43   ::  1218.53 |   Af-9∙ +  Xc-34⁻   +[  1218.53 -   5000] =>   O-43                       | nuclear                      |
+ 1-chain Hb-63  ::  1226.14 |   Xl-9⁺ +  Nb-54ª   +[  1226.14 -   5000] =>   Hb-63                      | nuclear                      |
+ 1-chain E-48   ::  1227.10 |  Pq-14⁻ +  Xc-34⁻   +[  1227.10 -   5000] =>   E-48                       | nuclear                      |
+ 1-chain A-43   ::  1229.60 |  Pm-17⁺ +   S-26ª   +[  1229.60 -  10000] => ⬇ A-43                       | nuclear                      |
+ 1-chain Xl-12  ::  1239.25 |   M-23⁻             +[  1239.25 -   1250] =>   Xl-11 + Xl-12              | nuclear                      |
+ 1-chain Oc-50  ::  1247.56 |  Zz-13⁺ +   D-37⁻   +[  1247.56 -   5000] => ⬇ Oc-50                      | nuclear                      |
+ 1-chain A-45   ::  1265.27 |   Af-8∙ +  Fj-37ª   +[  1265.27 -   6000] =>   A-45                       | nuclear                      |
+ 1-chain Nb-50  ::  1266.23 |  Zz-13⁺ +  Fj-37ª   +[  1266.23 -   5000] =>   Nb-50                      | nuclear                      |
+ 1-chain A-48   ::  1269.99 |  Zz-14ª +  Xc-34⁻   +[  1269.99 -   5000] =>   A-48                       | nuclear                      |
+ 1-chain Ic-58  ::  1276.09 |    W-4∙ +  Nb-54ª   +[  1276.09 -   8000] => ⬇ Ic-58                      | nuclear                      |
+ 1-chain Aw-49  ::  1287.80 |  Dx-15⁺ +  Xc-34⁻   +[  1287.80 -   5000] => ⬆ Aw-49                      | nuclear                      |
+ 1-chain Aw-51  ::  1305.22 |  Pq-14⁻ +   D-37⁻   +[  1305.22 -   5000] => ⬆ Aw-51                      | nuclear                      |
+ 1-chain Oc-49  ::  1317.17 |  Pq-12ª +  Fj-37ª   +[  1317.17 -   5000] =>   Oc-49                      | nuclear                      |
+ 1-chain Nb-55  ::  1332.68 |    W-5∙ +  Aw-50∙   +[  1332.68 -   5000] => ⬇ Nb-55                      | nuclear                      |
+ 1-chain Ic-59  ::  1347.63 |    W-5∙ +  Nb-54ª   +[  1347.63 -   5000] => ⬇ Ic-59                      | nuclear                      |
+ 1-chain C-45   ::  1360.22 |  Xl-11∙ +  Xc-34⁻   +[  1360.22 -   5000] => ⬆ C-45                       | nuclear                      |
+ 1-chain Yp-60  ::  1368.01 |  Xl-10ª +  Aw-50∙   +[  1368.01 -   5000] => ⬇ Yp-60                      | nuclear                      |
+ 1-chain Nb-52  ::  1369.04 |  Dx-15⁺ +   D-37⁻   +[  1369.04 -   5000] => ⬇ Nb-52                      | nuclear                      |
+ 1-chain Nb-51  ::  1371.14 |  Zz-14ª +  Fj-37ª   +[  1371.14 -   5000] =>   Nb-51                      | nuclear                      |
+ 1-chain Hb-64  ::  1376.26 |  Xl-10ª +  Nb-54ª   +[  1376.26 -   5000] =>   Hb-64                      | nuclear                      |
+ 1-chain Aw-48  ::  1392.08 |   M-23⁻ +   S-25⁺   +[  1392.08 -   5000] => ⬇ Aw-48                      | nuclear                      |
+ 1-chain Xk-52  ::  1393.98 |  Dx-15⁺ +  Fj-37ª   +[  1393.98 -   5000] => ⬇ Xk-52                      | nuclear                      |
+ 1-chain A-50   ::  1408.92 |  Fw-25⁻ +  Fw-25⁻   +[  1408.92 -  50000] =>   A-50                       | nuclear                      |
+ 1-chain Oc-48  ::  1436.78 |  Pm-17⁺ +  Xc-31∙   +[  1436.78 -   5000] =>   Oc-48                      | nuclear                      |
+ 1-chain Jx-65  ::  1446.11 |  Pq-15⁻ +  Aw-50∙   +[  1446.11 -   5000] => ⬇ Jx-65                      | nuclear                      |
+ 1-chain At-69  ::  1460.64 |  Pq-15⁻ +  Nb-54ª   +[  1460.64 -   5000] =>   At-69                      | nuclear                      |
+ 1-chain Xk-50  ::  1466.18 |   S-25⁺ +   S-25⁺   +[  1466.18 -   6000] => ⬇ Xk-50                      | nuclear                      |
+ 1-chain Yp-61  ::  1481.18 |   Cq-7∙ +  Nb-54ª   +[  1481.18 -   5000] =>   Yp-61                      | nuclear                      |
+ 1-chain Xk-54  ::  1501.27 |  Pm-17⁺ +   D-37⁻   +[  1501.27 -   5000] => ⬇ Xk-54                      | nuclear                      |
+ 1-chain Ic-54  ::  1519.79 |  Pm-17⁺ +  Fj-37ª   +[  1519.79 -   5000] =>   Ic-54                      | nuclear                      |
+ 1-chain Xk-51  ::  1531.83 |   S-25⁺ +   S-26ª   +[  1531.83 -   5000] => ⬇ Xk-51                      | nuclear                      |
+ 1-chain Jx-62  ::  1546.22 |   Af-8∙ +  Nb-54ª   +[  1546.22 -   5001] =>   Jx-62                      | nuclear                      |
+ 1-chain Ny-67  ::  1547.07 |  Zz-13⁺ +  Nb-54ª   +[  1547.07 -   5000] =>   Ny-67                      | nuclear                      |
+ 2-chain Oc-46  ::  1548.51 |  Pq-10⁺ +  Fj-36ª   +[   879.48 -   3000] =>   Oc-46                      | nuclear                      |
+ 2-chain Aw-44  ::  1578.10 |  Pq-10⁺ +  Fj-34⁺   +[   805.36 -   3000] => ⬆ Aw-44                      | decay, nuclear               |
+ 1-chain Jx-64  ::  1605.06 |  Pq-14⁻ +  Aw-50∙   +[  1605.06 -   5000] => ⬇ Jx-64                      | nuclear                      |
+ 1-chain At-66  ::  1607.69 |  Pq-12ª +  Nb-54ª   +[  1607.69 -   5000] =>   At-66                      | nuclear                      |
+ 2-chain Pq-11  ::  1609.73 |  Fw-21⁺             +[  1132.95 -   5000] =>   Xl-10 + Pq-11              | nuclear                      |
+ 1-chain Jx-63  ::  1610.09 |   Af-9∙ +  Nb-54ª   +[  1610.09 -   5000] =>   Jx-63                      | nuclear                      |
+ 1-chain Ic-55  ::  1616.54 |  Pm-18⁺ +  Fj-37ª   +[  1616.54 -   5000] =>   Ic-55                      | nuclear                      |
+ 1-chain At-68  ::  1621.31 |  Pq-14⁻ +  Nb-54ª   +[  1621.31 -   5000] =>   At-68                      | nuclear                      |
+ 2-chain Ic-52  ::  1657.35 |  Pq-10⁺ +   E-42⁺   +[   955.42*-   5000] =>   Ic-52                      | nuclear                      |
+ 1-chain Aw-45  ::  1657.40 |  Dx-15⁺ +  Xc-30∙   +[  1657.40 -  17500] => ⬆ Aw-45                      | nuclear                      |
+ 1-chain Ny-68  ::  1675.34 |  Zz-14ª +  Nb-54ª   +[  1675.34 -   8100] =>   Ny-68                      | nuclear                      |
+ 1-chain At-65  ::  1683.23 |  Dx-15⁺ +  Aw-50∙   +[  1683.23 -   5000] => ⬇ At-65                      | nuclear                      |
+ 1-chain Pw-69  ::  1699.72 |  Dx-15⁺ +  Nb-54ª   +[  1699.72 -   5000] => ⬇ Pw-69                      | nuclear                      |
+ 1-chain Xk-59  ::  1726.21 |  Fw-25⁻ +  Xc-34⁻   +[  1726.21 -   6000] =>   Xk-59                      | nuclear                      |
+ 1-chain Ic-60  ::  1779.39 |   M-23⁻ +   D-37⁻   +[  1779.39 -   5000] => ⬇ Ic-60                      | nuclear                      |
+ 1-chain Yp-56  ::  1792.37 |   S-25⁺ +  Xc-31∙   +[  1792.37 -   5000] => ⬇ Yp-56                      | nuclear                      |
+ 1-chain Hb-65  ::  1797.23 |  Xl-11∙ +  Nb-54ª   +[  1797.23 -   5000] =>   Hb-65                      | nuclear                      |
+ 1-chain Yp-62  ::  1836.38 |  Fw-25⁻ +   D-37⁻   +[  1836.38 -   6000] => ⬇ Yp-62                      | nuclear                      |
+ 1-chain Gk-71  ::  1856.71 |  Pm-17⁺ +  Nb-54ª   +[  1856.71 -   5000] =>   Gk-71                      | nuclear                      |
+ 1-chain Ic-56  ::  1858.89 |  Pt-25ª +  Xc-31∙   +[  1858.89 -   6000] =>   Ic-56                      | nuclear                      |
+ 1-chain Yp-57  ::  1872.70 |   S-26ª +  Xc-31∙   +[  1872.70 -   5000] => ⬇ Yp-57                      | nuclear                      |
+ 1-chain Hb-62  ::  1873.09 |   S-25⁺ +   D-37⁻   +[  1873.09 -  10000] => ⬇ Hb-62                      | nuclear                      |
+ 2-chain Nb-48  ::  1878.50 |  Zz-13⁺ +  Fj-35⁺   +[  1192.80 -   5000] =>   Nb-48                      | nuclear                      |
+ 2-chain Hb-57  ::  1892.55 |  Pq-10⁺ +  Oc-47⁺   +[  1002.39*-   2000] =>   Hb-57                      | nuclear                      | OTOMRO 291803 - 17662*
+ 2-chain Nb-47  ::  1895.18 |  Dx-15⁺ +   D-32⁺   +[  1233.30 -   3000] => ⬇ Nb-47                      | nuclear                      |
+ 1-chain At-62  ::  1904.11 |   S-25⁺ +  Fj-37ª   +[  1904.11 -   5000] => ⬇ At-62                      | nuclear                      |
+ 1-chain Nb-49  ::  1933.96 |  Pt-24∙ +   S-25⁺   +[  1933.96 -   5000] => ⬇ Nb-49                      | nuclear                      |
+ 1-chain Nb-53  ::  1944.86 |  Dx-16∙ +   D-37⁻   +[  1944.86 -   5000] => ⬇ Nb-53                      | nuclear                      |
+ 1-chain Gk-72  ::  1973.89 |  Pm-18⁺ +  Nb-54ª   +[  1973.89 -   5800] =>   Gk-72                      | nuclear                      |
+ 1-chain Xk-53  ::  1976.71 |  Dx-16∙ +  Fj-37ª   +[  1976.71 -   5000] => ⬇ Xk-53                      | nuclear                      |
+ 1-chain Hb-66  ::  1988.32 |  Zq-32⁻ +  Xc-34⁻   +[  1988.32 -   5000] => ⬆ Hb-66                      | decay, nuclear               |
+ 1-chain At-63  ::  1989.20 |   S-26ª +  Fj-37ª   +[  1989.20 -   5000] => ⬇ At-63                      | nuclear                      |
+ 1-chain At-67  ::  2023.34 |  Pq-13∙ +  Nb-54ª   +[  2023.34 -   5000] =>   At-67                      | nuclear                      |
+ 1-chain Oc-54  ::  2118.23 |   M-22∙ +  Zq-32⁻   +[  2118.23 -   6000] =>   Oc-54                      | nuclear                      |
+ 2-chain Ic-51  ::  2147.30 |  Pm-17⁺ +  Fj-34⁺   +[  1374.56 -   5000] =>   Ic-51                      | nuclear                      | OTOMRO 291978 - OTOMRO 25295*
+ 1-chain Ny-69  ::  2150.60 |  Zq-32⁻ +  Fj-37ª   +[  2150.60 -   5000] =>   Ny-69                      | nuclear                      |
+ 2-chain Ic-53  ::  2168.15 |  Pq-10⁺ +   E-43∙   +[  1010.66 -   1150] =>   Ic-53                      | nuclear                      |
+ 1-chain Pw-73  ::  2186.57 |   M-23⁻ +  Aw-50∙   +[  2186.57 -   5000] => ⬇ Pw-73                      | nuclear                      |
+ 1-chain Qi-77  ::  2208.43 |   M-23⁻ +  Nb-54ª   +[  2208.43 -   5000] =>   Qi-77                      | nuclear                      |
+ 1-chain Ny-71  ::  2249.64 |  Xc-34⁻ +   D-37⁻   +[  2249.64 -  11800] => ⬇ Ny-71                      | nuclear                      |
+ 1-chain Nb-56  ::  2253.17 |   M-22∙ +  Xc-34⁻   +[  2253.17 -   5000] =>   Nb-56                      | nuclear                      |
+ 2-chain Ny-65  ::  2253.67 |   Ju-1∙ +  At-64ª   +[  1166.13 -   7000] =>   Ny-65                      | nuclear                      |
+ 1-chain Gk-75  ::  2257.82 |  Fw-25⁻ +  Aw-50∙   +[  2257.82 -   5000] => ⬇ Gk-75                      | nuclear                      |
+ 1-chain Yp-55  ::  2268.35 |   S-25⁺ +  Xc-30∙   +[  2268.35 -   7000] => ⬇ Yp-55                      | nuclear                      |
+ 1-chain Xy-79  ::  2280.66 |  Fw-25⁻ +  Nb-54ª   +[  2280.66 -   6500] =>   Xy-79                      | nuclear                      |
+ 1-chain Xk-58  ::  2283.27 |  Pt-26∙ +  Zq-32⁻   +[  2283.27 -   5000] =>   Xk-58                      | nuclear                      |
+ 2-chain Gq-74  ::  2284.89 |  Pq-10⁺ +  At-64ª   +[  1197.35 -   5200] =>   Gq-74                      | nuclear                      |
+ 1-chain Pw-71  ::  2288.95 |  Xc-34⁻ +  Fj-37ª   +[  2288.95 -  42900] =>   Pw-71                      | nuclear                      |
+ 2-chain Jx-56  ::  2300.34 |   S-25⁺ +  Gy-31⁺   +[  1735.60 -   3500] => ⬇ Jx-56                      | nuclear                      |
+ 1-chain Xy-75  ::  2303.37 |   S-25⁺ +  Aw-50∙   +[  2303.37 -   5000] => ⬇ Xy-75                      | nuclear                      |
+ 1-chain Bt-79  ::  2326.25 |   S-25⁺ +  Nb-54ª   +[  2326.25 -  15000] => ⬇ Bt-79                      | nuclear                      |
+ 1-chain Pw-68  ::  2327.15 |  Xc-31∙ +  Fj-37ª   +[  2327.15 -   8000] =>   Pw-68                      | nuclear                      |
+ 1-chain Zz-16  ::  2339.10 |  Xc-34⁻             +[  2339.10 -   5000] => ⬆ Zz-16 + Dx-18              | nuclear                      |
+ 2-chain Jx-57  ::  2378.12 |   S-26ª +  Gy-31⁺   +[  1813.38 -   3000] => ⬇ Jx-57                      | nuclear                      |
+ 1-chain Qi-75  ::  2389.04 |  Pt-25ª +  Aw-50∙   +[  2389.04 -  10000] => ⬇ Qi-75                      | nuclear                      |
+ 2-chain Yp-54  ::  2390.08 |   S-25⁺ +  Xc-29⁺   +[  1676.73 -   6000] => ⬇ Yp-54                      | nuclear                      |
+ 1-chain Gk-74  ::  2393.03 |   D-37⁻ +   D-37⁻   +[  2393.03 -  10283] => ⬇ Gk-74                      | nuclear                      |
+ 1-chain Jx-59  ::  2406.05 |   S-25⁺ +  Gy-34∙   +[  2406.05 -   6000] => ⬇ Jx-59                      | nuclear                      |
+ 1-chain Xy-76  ::  2406.30 |   S-26ª +  Aw-50∙   +[  2406.30 -  10000] => ⬇ Xy-76                      | nuclear                      |
+ 1-chain Gq-79  ::  2412.83 |  Pt-25ª +  Nb-54ª   +[  2412.83 -   6700] =>   Gq-79                      | nuclear                      |
+ 1-chain Pw-70  ::  2415.09 |  Dx-16∙ +  Nb-54ª   +[  2415.09 -   5000] => ⬇ Pw-70                      | nuclear                      |
+ 2-chain Hb-58  ::  2419.55 |   S-26ª +   D-32⁺   +[  1757.67 -   5000] => ⬇ Hb-58                      | nuclear                      |
+ 1-chain Bt-80  ::  2430.86 |   S-26ª +  Nb-54ª   +[  2430.86 -  10000] => ⬇ Bt-80                      | nuclear                      |
+ 1-chain Qi-74  ::  2432.38 |   D-37⁻ +  Fj-37ª   +[  2432.38 -   8000] => ⬇ Qi-74                      | nuclear                      |
+ 2-chain Hb-59  ::  2451.63 |  Dx-15⁺ +   A-44∙   +[  1592.12 -   5000] => ⬇ Hb-59                      | nuclear                      |
+ 1-chain Xy-74  ::  2472.34 |  Fj-37ª +  Fj-37ª   +[  2472.34 -  23000] =>   Xy-74                      | nuclear                      |
+ 2-chain Jx-58  ::  2503.77 |   Xl-9⁺ +  Oc-49ª   +[  1186.60 -   6000] =>   Jx-58                      | nuclear                      |
+ 1-chain Hb-61  ::  2511.33 |  Pt-24∙ +  Fj-37ª   +[  2511.33 -   5000] =>   Hb-61                      | nuclear                      |
+ 2-chain Qi-72  ::  2520.45 |   Cq-5⁺ +  Ny-67ª   +[   973.38 -   3000] =>   Qi-72                      | nuclear                      |
+ 2-chain Gk-70  ::  2549.12 |  Xl-10ª +  Jx-60ª   +[  1472.38 -   1570] =>   Gk-70                      | nuclear                      |
+ 2-chain At-61  ::  2559.70 |   S-26ª +  Fj-35⁺   +[  1874.00 -   4000] => ⬇ At-61                      | nuclear                      |
+ 2-chain Ny-64  ::  2565.13 |  Zq-27⁺ +  Fj-37ª   +[  2015.63 -   5000] =>   Ny-64                      | nuclear                      |
+ 2-chain Ny-66  ::  2618.80 |   Ju-2∙ +  At-64ª   +[  1531.26 -   7000] =>   Ny-66                      | nuclear                      |
+ 2-chain Ny-70  ::  2627.77 |   Ju-1∙ +  At-69⁻   +[  1167.13 -   5000] =>   Ny-70                      | nuclear                      |
+ 2-chain Ic-61  ::  2647.53 |   M-23⁻ +   D-38⁻   +[  1763.10 -   3500] => ⬇ Ic-61                      | nuclear                      |
+ 2-chain Qi-73  ::  2672.35 |  Pt-23⁺ +  Aw-50∙   +[  2213.58 -   3500] => ⬇ Qi-73                      | nuclear                      |
+ 2-chain Gq-77  ::  2693.00 |  Pt-23⁺ +  Nb-54ª   +[  2234.23 -   5000] =>   Gq-77                      | nuclear                      |
+ 2-chain Yp-63  ::  2706.25 |  Fw-25⁻ +   D-38⁻   +[  1821.82 -   5000] => ⬇ Yp-63                      | nuclear                      |
+ 3-chain Ny-62  ::  2737.74 |  Pq-10⁺ +  Ic-52⁺   +[  1080.39 -   1500] => ⬇ Ny-62                      | decay, nuclear               |
+ 2-chain Gk-67  ::  2753.21 |   S-25⁺ +   E-42⁺   +[  2051.28 -   4500] => ⬇ Gk-67                      | nuclear                      |
+ 1-chain Gk-73  ::  2766.73 |  Pm-19∙ +  Nb-54ª   +[  2766.73 -   5700] =>   Gk-73                      | nuclear                      |
+ 2-chain Bt-77  ::  2790.03 |  Zz-13⁺ +  At-64ª   +[  1702.49 -   3000] =>   Bt-77                      | nuclear                      |
+ 2-chain Ic-62  ::  2790.67 |   M-23⁻ +   D-39⁻   +[  1789.16 -   5000] => ⬇ Ic-62                      | nuclear                      |
+ 2-chain Ny-72  ::  2794.74 |   Ju-3∙ +  At-69⁻   +[  1334.10 -   5000] =>   Ny-72                      | nuclear                      |
+ 2-chain Ny-63  ::  2795.54 |   Xl-9⁺ +  Ic-54∙   +[  1275.75 -   3000] =>   Ny-63                      | nuclear                      |
+ 1-chain Bt-81  ::  2815.08 |  Xc-31∙ +  Aw-50∙   +[  2815.08 -  10000] => ⬇ Bt-81                      | nuclear                      |
+ 2-chain Gk-68  ::  2845.19 |   S-26ª +   E-42⁺   +[  2143.26 -   4000] => ⬇ Gk-68                      | nuclear                      |
+ 2-chain Gk-69  ::  2851.44 |   D-32⁺ +  Fj-37ª   +[  2189.56 -   4500] => ⬇ Gk-69                      | decay, nuclear               |
+ 2-chain Gq-76  ::  2857.60 |  Pq-12ª +  At-64ª   +[  1770.06 -   3000] =>   Gq-76                      | nuclear                      |
+ 2-chain Pw-65  ::  2878.14 |  Xc-31∙ +  Fj-34⁺   +[  2105.40 -   5000] =>   Pw-65                      | nuclear                      |
+ 2-chain Pw-66  ::  2886.20 |  Xc-29⁺ +  Fj-37ª   +[  2172.85 -   4000] =>   Pw-66                      | nuclear                      |
+ 2-chain Xy-78  ::  2904.84 |  Fw-24⁻ +  Nb-54ª   +[  2300.82 -   5000] =>   Xy-78                      | nuclear                      |
+ 2-chain Hb-67  ::  2917.01 |  Xc-33⁻ +  Xc-34⁻   +[  2167.33 -   5000] =>   Hb-67                      | nuclear                      |
+ 3-chain Pw-64  ::  2939.62 |   Af-7ª +  Hb-57⁺   +[  1047.07 -   7000] => ⬇ Pw-64                      | decay, nuclear               |
+ 1-chain Pw-67  ::  2945.30 |  Xc-30∙ +  Fj-37ª   +[  2945.30 -   5000] =>   Pw-67                      | nuclear                      |
+ 2-chain H-79   ::  2946.47 |  Pq-10⁺ +  Pw-69ª   +[  1246.75 -   2100] =>   H-79                       | nuclear                      |
+ 1-chain Pw-72  ::  2946.59 |   M-22∙ +  Aw-50∙   +[  2946.59 -   6000] => ⬇ Pw-72                      | nuclear                      |
+ 2-chain Qi-71  ::  2973.24 |   D-37⁻ +  Fj-34⁺   +[  2200.50 -   5000] => ⬇ Qi-71                      | nuclear                      |
+ 1-chain Qi-76  ::  2976.33 |   M-22∙ +  Nb-54ª   +[  2976.33 -   5300] =>   Qi-76                      | nuclear                      |
+ 3-chain Qi-67  ::  2976.56 |  Pq-10⁺ +  Hb-57⁺   +[  1084.01 -  10000] => ⬇ Qi-67                      | decay, nuclear               |
+ 2-chain Xy-77  ::  3003.64 |  Fw-23∙ +  Nb-54ª   +[  3003.64 -   3500] =>   Xy-77                      | nuclear                      |
+ 2-chain H-81   ::  3012.41 |  Zq-27⁺ +  Nb-54ª   +[  2462.91 -   4400] =>   H-81                       | nuclear                      |
+ 2-chain Xy-72  ::  3021.15 |  Fj-35⁺ +  Fj-37ª   +[  2335.45 -   6200] =>   Xy-72                      | nuclear                      |
+ 1-chain Gq-78  ::  3068.09 |  Pt-24∙ +  Nb-54ª   +[  3068.09 -   5000] =>   Gq-78                      | nuclear                      |
+ 2-chain Xy-73  ::  3102.34 |  Fj-36ª +  Fj-37ª   +[  2433.31 -   5000] =>   Xy-73                      | nuclear                      |
+ 3-chain Gk-66  ::  3114.69 |   Xl-9⁺ +  Hb-57⁺   +[  1222.14 -   8000] => ⬇ Gk-66                      | decay, nuclear               |
+ 2-chain Qi-70  ::  3135.71 |   S-26ª +   A-44∙   +[  2276.20 -   4000] => ⬇ Qi-70                      | nuclear                      |
+ 3-chain Ny-61  ::  3162.07 |  Pq-10⁺ +  Ic-51⁺   +[  1014.77 -   5000] => ⬇ Ny-61                      | decay, nuclear               |
+ 1-chain Yp-58  ::  3173.20 |  Pt-24∙ +  Gy-34∙   +[  3173.20 -   5000] => ⬇ Yp-58                      | nuclear                      |
+ 2-chain Qi-78  ::  3198.49 |  Pq-15⁻ +  Jx-63⁻   +[  1588.40 -   2000] =>   Qi-78                      | nuclear                      |
+ 2-chain H-82   ::  3202.30 |  Zq-28⁺ +  Nb-54ª   +[  2617.06 -   5000] =>   H-82                       | nuclear                      |
+ 1-chain Gq-80  ::  3207.38 |  Pt-26∙ +  Nb-54ª   +[  3207.38 -   5555] =>   Gq-80                      | nuclear                      |
+ 2-chain H-80   ::  3256.22 |   S-25⁺ +  Xk-55⁻   +[  2407.19 -   4823] => ⬇ H-80                       | nuclear                      |
+ 3-chain At-60  ::  3291.28 |   Xl-9⁺ +  Ic-51⁺   +[  1143.98 -   5000] => ⬇ At-60                      | decay, nuclear               |
+ 2-chain Pw-74  ::  3296.49 |  Fw-25⁻ +   A-49⁻   +[  2190.48 -   2200] =>   Pw-74                      | nuclear                      |
+ 2-chain Ny-73  ::  3301.65 |  Xc-34⁻ +   D-39⁻   +[  2300.14 -   3000] =>   Ny-73                      | nuclear                      | OTOMRO  551905 |
+ 2-chain U-82   ::  3303.72 |   D-32⁺ +  Aw-50∙   +[  2641.84 -   4800] => ⬇ U-82                       | nuclear                      |
+ 2-chain Gk-77  ::  3321.55 |  Fw-25⁻ +  Aw-52⁻   +[  2145.35 -   5000] => ⬇ Gk-77                      | nuclear                      |
+ 2-chain U-83   ::  3360.05 |  Xc-29⁺ +  Nb-54ª   +[  2646.70 -   5000] => ⬆ U-83                       | nuclear                      |
+ 2-chain Gk-76  ::  3409.32 |   D-37⁻ +   D-39⁻   +[  2407.81 -   5000] => ⬇ Gk-76                      | nuclear                      |
+ 2-chain H-78   ::  3416.71 |  Fj-37ª +   E-41⁺   +[  2578.79 -   5500] =>   H-78                       | nuclear                      |
+ 3-chain Xy-70  ::  3434.57 |  Zz-13⁺ +  Hb-57⁺   +[  1542.02 -   5000] => ⬇ Xy-70                      | decay, nuclear               |
+ 2-chain Sq-84  ::  3477.78 |  Fj-34⁺ +  Aw-50∙   +[  2705.04 -  10000] => ⬇ Sq-84                      | nuclear                      |
+ 1-chain Hb-60  ::  3509.03 |  Xc-30∙ +  Xc-30∙   +[  3509.03 -  10000] =>   Hb-60                      | nuclear                      |
+ 2-chain Gq-75  ::  3526.88 |  Xc-31∙ +   A-44∙   +[  2667.37 -   5000] =>   Gq-75                      | nuclear                      |
+ 2-chain Qi-69  ::  3565.59 |  Fj-34⁺ +  Fj-35⁺   +[  2107.15 -   5000] => ⬇ Qi-69                      | decay, nuclear               |
+ 2-chain Qi-68  ::  3568.41 |  Fj-34⁺ +  Fj-34⁺   +[  2022.93 -   5000] => ⬇ Qi-68                      | decay, nuclear               |
+ 2-chain Ua-85  ::  3572.00 |   S-25⁺ +  Jx-60ª   +[  2495.26 -   2950] => ⬇ Ua-85                      | nuclear                      |
+ 3-chain Gq-72  ::  3586.85 |  Dx-15⁺ +  Hb-57⁺   +[  1694.30 -   4000] => ⬇ Gq-72                      | decay, nuclear               |
+ 2-chain Ua-84  ::  3677.00 |  Fj-37ª +  Oc-47⁺   +[  2786.84 -   4350] =>   Ua-84                      | nuclear                      |
+ 2-chain U-81   ::  3693.55 |  Fj-37ª +   A-44∙   +[  2834.04 -   5000] => ⬆ U-81                       | nuclear                      |
+ 2-chain U-79   ::  3791.69 |  Fj-37ª +   A-42⁺   +[  2621.45 -   5000] => ⬆ U-79                       | nuclear                      |
+ 2-chain Sq-83  ::  3805.82 |  Fj-37ª +  Aw-46⁺   +[  2802.12 -   3333] => ⬇ Sq-83                      | nuclear                      |
+ 2-chain Bt-76  ::  3814.21 |   S-25⁺ +  Nb-51ª   +[  2443.07 -   5000] => ⬇ Bt-76                      | nuclear                      |
+ 2-chain Bt-78  ::  3877.03 |   S-26ª +  Nb-52∙   +[  2507.99 -   3700] => ⬇ Bt-78                      | nuclear                      |
+ 2-chain U-80   ::  3956.19 |  Fj-37ª +   A-43⁺   +[  2726.59 -   3500] => ⬆ U-80                       | nuclear                      |
+ 2-chain Dx-19  ::  4100.10 |  Fj-41⁻             +[  2979.09 -  13000] => ⬆ Dx-19 + M-22               | nuclear                      |
+ 4-chain U-77   ::  4110.34 |  Pq-10⁺ +  Qi-67⁺   +[  1133.78 -   5000] => ⬆ U-77                       | decay, nuclear               |
+ 2-chain Sq-81  ::  4158.45 |  Xc-31∙ +  Xk-50⁺   +[  2692.27 -   3500] =>   Sq-81                      | nuclear                      |
+ 2-chain Xy-71  ::  4180.51 |  Xc-29⁺ +   A-42⁺   +[  2296.92 -   5000] => ⬇ Xy-71                      | decay, nuclear               |
+ 2-chain Bt-74  ::  4182.42 |  Fj-34⁺ +   E-40⁺   +[  2346.88 -   5000] => ⬇ Bt-74                      | decay, nuclear               | OTOMRO 197208
+ 2-chain Sq-80  ::  4268.40 |   C-38⁺ +   E-42⁺   +[  2591.39 -   3480] => ⬇ Sq-80                      | nuclear                      |
+ 2-chain Sq-82  ::  4272.11 |  Xc-31∙ +  Xk-51ª   +[  2740.28 -   5000] =>   Sq-82                      | nuclear                      |
+ 3-chain Gq-73  ::  4299.75 |  Dx-16∙ +  Hb-57⁺   +[  2407.20 -   4000] => ⬇ Gq-73                      | decay, nuclear               |
+ 3-chain H-76   ::  4302.74 |   M-19⁺ +  Hb-57⁺   +[  2044.78 -   4000] => ⬇ H-76                       | decay, nuclear               |
+ 2-chain H-77   ::  4451.34 |  Fj-35⁺ +   A-42⁺   +[  2595.40 -   5000] => ⬇ H-77                       | decay, nuclear               |
+ 3-chain U-78   ::  4541.87 |  Fw-21⁺ +  Hb-57⁺   +[  2172.54 -   4000] => ⬆ U-78                       | decay, nuclear               |
+ 3-chain Bt-75  ::  4685.05 |  Xc-29⁺ +  Oc-46⁺   +[  2423.19 -   5000] => ⬇ Bt-75                      | decay, nuclear               |
+ 2-chain Pm-21  ::  4829.14 |   C-45⁻             +[  3468.92 -   5000] => ⬇ Pm-21 + Fw-24              | nuclear                      |
+ 3-chain Af-10  ::  4903.38 |  Dx-19⁻             +[   803.28 -    820] => ⬇ Af-9 + Af-10               | nuclear                      |
+ 3-chain Sq-79  ::  4968.30 |   D-32⁺ +  Nb-47⁺   +[  2411.24 -  20000] => ⬇ Sq-79                      | decay, nuclear               |
+ 2-chain Ua-83  ::  5005.82 |   C-38⁺ +   A-45∙   +[  2765.47 -   5000] => ⬇ Ua-83                      | nuclear                      |
+ 2-chain Fw-26  ::  5116.24 |   E-48⁻             +[  3889.14 -  11000] =>   M-22 + Fw-26               | nuclear                      |
+ 2-chain Pt-28  ::  5466.97 |  Aw-52⁻             +[  4290.77 -  14000] => ⬇ Fw-24 + Pt-28              | nuclear                      |
+ 3-chain Pt-22  ::  5578.38 |  Nb-47⁺             +[  3683.20 -  11000] => ⬆ Pt-22 + S-25               | nuclear                      |
+ 3-chain Xc-28  ::  6170.85 |  Ic-52⁺             +[  4513.50*-  16000] =>   Pt-24 + Xc-28              | nuclear                      |
+ 3-chain Zq-26  ::  6848.94 |  Hb-57⁺             +[  4956.39*-  16000] => ⬆ Zq-26 + Gy-31              | nuclear                      | OTOMRO 25714 - OTOMRO 108980 
+ 4-chain Dx-14  ::  8291.13 |  Zq-26⁺             +[  1442.19*-   1451] => ⬆ Pq-12 + Dx-14              | nuclear                      | OTOMRO 23560 - OTOMRO 30536 
+ 5-chain S-24   ::  8721.20 |  Pq-10⁺ +  Dx-14⁺   +[   430.07 -   2200] => ⬆ S-24                       | decay, nuclear               |
+ 4-chain O-36   ::  8757.97 |  Qi-67⁺             +[  5781.41 -  16000] => ⬆ Gy-31 + O-36               | nuclear                      |
+ 4-chain Xy-69  ::  9357.27 |  Pt-22⁺ +  Nb-47⁺   +[  1883.71 -   5000] => ⬇ Xy-69                      | decay, nuclear               |
+ 4-chain Bt-73  ::  9706.79 |  Pt-22⁺ +  Ic-51⁺   +[  1981.11 -   4000] => ⬇ Bt-73                      | decay, nuclear               |
+ 4-chain H-75   :: 10232.99 |  Xc-28⁺ +  Nb-47⁺   +[  2166.96 -   5000] => ⬇ H-75                       | decay, nuclear               |
+ 5-chain Gq-71  :: 11638.22 |  Dx-14⁺ +  Hb-57⁺   +[  1454.54 -   3000] => ⬇ Gq-71                      | decay, nuclear               |
+ 5-chain Gk-65  :: 11800.05 |  Dx-14⁺ +  Ic-51⁺   +[  1361.62*-   5000] => ⬇ Gk-65                      | decay, nuclear               | OTOMRO 97827 - 136316 
+ 6-chain Gy-30  :: 17357.58 |  Gk-65⁺             +[  5557.53*-  10000] => ⬆ Gy-30 + Fj-35              | nuclear                      | OTOMRO 105431 - OTOMRO 22906*
