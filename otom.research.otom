@@ -1,3 +1,17 @@
+2025-09-24 Sep.Wed 20:17:03
+[c]possibly shorter H-76 and Gq-72 making them 2-chain instead of 3-chain
+| 1-chain + 1-chain + 4537.30|  Fj-34⁺ +   C-38⁺   +[  4537.30 -  50000] => Gq-72                      | decay, nuclear               |   559776* -    559776*|
+| 1-chain + 1-chain + 4752.31|  Fj-34⁺ +   A-42⁺   +[  4752.31 -  50000] => H-76                       | decay, nuclear               |   559775* -    559775*|
+
+They are both fewer chains but way more costly. Perhaps we haven't optimized the paths that precede them yet.
+
+2025-09-24 Sep.Wed 19:24:00
+This is interesting. W-4 + Cq-6 does nothing up to 200 NRG. At some point it goes through nuclear fusion and makes Xl-10, which then alpha decays, dropping a Cq-6 plus W-4, which is just what we input. hah!
+|    W-4∙ +   Cq-6∙                               +[       0.00 -       200] => W-4 + Cq-6                                                                       | none                         |    19762  -     13324 |
+|    W-4∙ +   Cq-6∙                               +[     489.53 -     15874] => W-4 + Cq-6                                                                       | decay, nuclear               |   219139  -    509228 |
+|    W-4∙ +   Cq-7∙                               +[       0.00 -       500] => W-4 + Cq-7                                                                       | none                         |     4719  -     70383 |
+
+
 2025-09-24 Sep.Wed 10:39:06
 
 processing Reactor logs after removing end columns and moving OTOMRO column to end
@@ -23,6 +37,14 @@ like this:
 |    W-4∙ +   Af-9∙                               +[       0.00 -         0] => W-4 + Af-9                                                                       | none                         |    39158* -    182240 |
 |    W-4∙ +   Af-9∙                               +[       7.49 -       500] => AfW(Af-9>W-4)                                                                    | chemical                     |     7546  -    200449 |
 |    W-4∙ +   Af-9∙                               +[     558.73 -      5000] => Pq-13                                                                            | nuclear                      |    35859  -     88343 |
+
+saved those to temp-alpha-reaction-ranges.otom
+
+We don't want all those though for determining chains or recipes
+
+Now need to remove from temp-alpha.otom, any useless reactions. 
+[c] Anything where the reaction was "none" are useless. 
+[c] Also there will be many where 1 or both inputs simply went through alpha/beta+/beta- decay to a different isotope. We only want to keep those where it is 1 input, so we isolate where outputs originate.
 
 Now to check if there are any shorter chains in here than I'm aware of before proceeding.
 [ ] make new chains.alpha.otom from the temp-alpha.otom

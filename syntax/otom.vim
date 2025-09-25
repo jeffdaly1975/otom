@@ -18924,6 +18924,17 @@ hi chain9     ctermbg=darkred        ctermfg=white
 hi chain10    ctermbg=black          ctermfg=lightgray
 hi chain11    ctermbg=lightgrey      ctermfg=white
 
+syn match chain0   /\<0-chain\>/
+syn match chain1   /\<1-chain\>/
+syn match chain2   /\<2-chain\>/
+syn match chain3   /\<3-chain\>/
+syn match chain4   /\<4-chain\>/
+syn match chain5   /\<5-chain\>/
+syn match chain6   /\<6-chain\>/
+syn match chain7   /\<7-chain\>/
+syn match chain8   /\<8-chain\>/
+syn match chain9   /\<9-chain\>/
+
 syn match chain0   /\<Sr-1\>/
 syn match chain0   /\<Sr-2\>/
 syn match chain0   /\<Sr-3\>/
@@ -20616,10 +20627,12 @@ syn match chain2 /\<Gk-69\>/
 syn match chain2 /\<Gk-70\>/
 syn match chain2 /\<Gk-76\>/
 syn match chain2 /\<Gk-77\>/
+syn match chain2 /\<Gq-72\>/
 syn match chain2 /\<Gq-74\>/
 syn match chain2 /\<Gq-75\>/
 syn match chain2 /\<Gq-76\>/
 syn match chain2 /\<Gq-77\>/
+syn match chain2 /\<H-76\>/
 syn match chain2 /\<H-77\>/
 syn match chain2 /\<H-78\>/
 syn match chain2 /\<H-79\>/
@@ -20686,10 +20699,7 @@ syn match chain2 /\<Yp-63\>/
 syn match chain3 /\<At-60\>/
 syn match chain3 /\<Bt-75\>/
 syn match chain3 /\<Gk-66\>/
-syn match chain3 /\<Gq-72\>/
-syn match chain3 /\<Gq-72\>/
 syn match chain3 /\<Gq-73\>/
-syn match chain3 /\<H-76\>/
 syn match chain3 /\<Ny-61\>/
 syn match chain3 /\<Ny-62\>/
 syn match chain3 /\<Pw-64\>/
