@@ -47,8 +47,10 @@ Now need to remove from temp-alpha.otom, any useless reactions.
 [c] Also there will be many where 1 or both inputs simply went through alpha/beta+/beta- decay to a different isotope. We only want to keep those where it is 1 input, so we isolate where outputs originate.
 
 Now to check if there are any shorter chains in here than I'm aware of before proceeding.
-[ ] make new chains.alpha.otom from the temp-alpha.otom
-[ ] in temp-alpha.otom, duplicate input otom columns and replace with the chain count like " 2c + 4c"
+[c] make new chains.alpha.otom from the temp-alpha.otom
+[c] in temp-alpha.otom, duplicate input otom columns and replace with the chain count like " 2c + 4c"
+[ ] add tx hashes from Reactor_logs_parsed-alpha.txt
+[ ] next time I should retain the amount of NRG returned in the reactions as this is a good indicator of how optimized the input NRG was. If its anything more than 0.99 then it probably could be done cheaper.
 
 2025-09-21 Sep.Sun 15:24:08 new discovery makes 765 isotopes in Universe Bohr
 
