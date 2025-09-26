@@ -1,3 +1,23 @@
+2025-09-25 Sep.Thu 21:51:30 some recipes to redo to figure out cheaper input NRG
+
+First, make precursors:
+[r] 1-chain O-38   ::   809.57 |   Af-7ª +  Xc-31∙   +[   809.57 -   5000] => O-38   |
+
+[ ] 1-chain E-41   ::   837.87 |  Pq-10⁺ +  Xc-31∙   +[   837.87 -   5000] => E-41   |
+[ ] 1-chain E-42   ::   701.93 |   Cq-5⁺ +  Fj-37ª   +[   701.93 -   5000] => E-42   |
+
+[r] 1-chain Aw-46  ::  1003.45 |   Xl-9⁺ +  Fj-37ª   +[  1003.45 -   5000] => Aw-46  |
+
+[r] 1-chain Yp-59  ::   857.60 |   Cq-5⁺ +  Nb-54ª   +[   857.60 -   5000] => Yp-59  |
+
+then do:
+[r]|  Fj-37ª +   O-38ª + 2547.43  =>   Gq-75 | previous leftover NRG:   1452.57 | used 2474.78 in OTOMRO 611760
+[ ]|   E-41⁺ +   E-42⁺ + 2828.34  =>   Ua-83 | previous leftover NRG:   1171.66 |
+[r]|   Cq-5⁺ +  Pm-17⁺ +  459.83  => ⬇ Fw-22 | previous leftover NRG:    540.17 | used  432.78 in OTOMRO 611755
+[r]|  Pm-17⁺ +  Aw-46⁺ + 1722.12  => ⬇ Ny-63 | previous leftover NRG:    117.88 | used 1716.22 in OTOMRO 611761
+[r]|   Xl-9⁺ +  Pq-15⁻ +  510.96  =>   Fw-24 | previous leftover NRG:    489.04 | used  486.46 in OTOMRO 611756
+[r]|   S-25⁺ +  Yp-59⁺ + 2504.75  => ⬇ Sq-84 | previous leftover NRG:     45.25 | used 2502.45 in OTOMRO 611762
+
 2025-09-24 Sep.Wed 20:17:03
 [c]possibly shorter H-76 and Gq-72 making them 2-chain instead of 3-chain
 | 1-chain + 1-chain + 4537.30|  Fj-34⁺ +   C-38⁺   +[  4537.30 -  50000] => Gq-72                      | decay, nuclear               |   559776* -    559776*|

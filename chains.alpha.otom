@@ -71,7 +71,7 @@
  1-chain M-19   ::   457.40 |   Af-7ª +  Pq-12ª   +[   457.40 -   5000] => M-19                       | nuclear                      |    30378  -     88205 | 0-chain + 0-chain |
  1-chain M-19   ::   458.18 |   Xl-9⁺ +  Xl-10ª   +[   458.18 -   5000] => M-19                       | nuclear                      |   536994  -    116026 | 0-chain + 0-chain |
  1-chain Pt-23  ::   459.23 |   Cq-5⁺ +  Pm-18⁺   +[   459.23 -   5000] => Pt-23                      | nuclear                      |   230796  -     88541 | 0-chain + 0-chain |
- 1-chain Fw-22  ::   459.83 |   Cq-5⁺ +  Pm-17⁺   +[   459.83 -   5000] => Fw-22                      | decay, nuclear               |   303795  -     88539 | 0-chain + 0-chain |
+ 1-chain Fw-22  ::   432.78 |   Cq-5⁺ +  Pm-17⁺   +[   432.78 -   5000] => Fw-22                      | decay, nuclear               |   611755  -     88539 | 0-chain + 0-chain |
  1-chain M-21   ::   461.30 |   Af-7ª +  Pq-14⁻   +[   461.30 -   5000] => M-21                       | nuclear                      |   306155  -     88207 | 0-chain + 0-chain |
  1-chain Zz-15  ::   462.76 |   Ju-1∙ +  Pq-14⁻   +[   462.76 -   5000] => Zz-15                      | nuclear                      |   181216  -     89017 | 0-chain + 0-chain |
  1-chain Zz-15  ::   473.69 |   Ju-2∙ +  Zz-13⁺   +[   473.69 -   5000] => Zz-15                      | decay, nuclear               |   145789  -     89073 | 0-chain + 0-chain |
@@ -83,7 +83,7 @@
  1-chain Fw-22  ::   483.97 |   Af-7ª +  Dx-15⁺   +[   483.97 -   5000] => Fw-22                      | decay, nuclear               |    90009  -     88187 | 0-chain + 0-chain |
  1-chain Zz-15  ::   496.30 |   Cq-6∙ +   Xl-9⁺   +[   496.30 -   5000] => Zz-15                      | decay, nuclear               |   123915  -     88633*| 0-chain + 0-chain |
  1-chain Dx-18  ::   510.76 |   Cq-5⁺ +  Pq-13∙   +[   510.76 -   5000] => Dx-18                      | decay, nuclear               |   126516  -     88545*| 0-chain + 0-chain |
- 1-chain Fw-24  ::   510.96 |   Xl-9⁺ +  Pq-15⁻   +[   510.96 -   5000] => Fw-24                      | nuclear                      |   202007  -     89590 | 0-chain + 0-chain |
+ 1-chain Fw-24  ::   486.46 |   Xl-9⁺ +  Pq-15⁻   +[   486.46 -   5000] => Fw-24                      | nuclear                      |   611756  -     89590 | 0-chain + 0-chain |
  1-chain S-28   ::   513.41 |   Cq-5⁺ +   M-23⁻   +[   513.41 -   5000] => S-28                       | nuclear                      |   307996  -     88536 | 0-chain + 0-chain |
  1-chain Dx-18  ::   514.99 |   Af-7ª +  Xl-11∙   +[   514.99 -   5000] => Dx-18                      | decay, nuclear               |   142105  -     88220 | 0-chain + 0-chain |
  1-chain Fw-22  ::   520.70 |   Xl-9⁺ +  Zz-13⁺   +[   520.70 -   5000] => Fw-22                      | decay, nuclear               |   104347  -     89729 | 0-chain + 0-chain |
@@ -565,7 +565,7 @@
  1-chain Fj-40  ::  1531.35 |  Dx-17∙ +   M-23⁻   +[  1531.35 -   5000] => Fj-40                      | nuclear                      |    19092* -     88850 | 0-chain + 0-chain |
  1-chain Hb-63  ::  1531.52 |  Zz-13⁺ +  Aw-50∙   +[  1531.52 -   5000] => Hb-63                      | nuclear                      |   109752  -     88510 | 0-chain + 0-chain |
  1-chain Xk-51  ::  1531.83 |   S-25⁺ +   S-26ª   +[  1531.83 -   5000] => Xk-51                      | nuclear                      |   101032  -    575610 | 0-chain + 0-chain |
- 1-chain E-47   ::  1532.52 |  Pq-13∙ +  Xc-34⁻   +[  1532.52 -  28000] => E-47                       | nuclear                      |   102580  -    521314 | 0-chain + 0-chain |
+ 1-chain E-47   ::  1532.52 |  Pq-13∙ +  Xc-34⁻   +[  1531.62 -  28000] => E-47                       | nuclear                      |   600187  -    521314 | 0-chain + 0-chain |
  2-chain Oc-46  ::  1535.56 |  Pq-10⁺ +  Fj-36ª   +[   874.43 -   3000] => Oc-46                      | nuclear                      |   314109  -     16975*| 0-chain + 1-chain |
  1-chain E-41   ::  1543.45 |  Pm-17⁺ +  Pt-24∙   +[  1543.45 -  16000] => E-41                       | nuclear                      |   217242  -    450366 | 0-chain + 0-chain |
  1-chain O-41   ::  1544.25 |   Cq-7∙ +  Gy-34∙   +[  1544.25 -   5000] => O-41                       | nuclear                      |   255843  -    544287 | 0-chain + 0-chain |
@@ -855,7 +855,7 @@
  2-chain At-61  ::  2707.80 |  Pq-10⁺ +  Xk-51ª   +[  1175.97 -   3600] => At-61                      | decay, nuclear               |   449429* -    449429*| 0-chain + 1-chain |
  1-chain Hb-66  ::  2717.11 |  Zq-32⁻ +  Gy-34∙   +[  2717.11 - 100000] => Hb-66                      | nuclear                      |   208910  -    519234 | 0-chain + 0-chain |
  2-chain Ny-66  ::  2717.99 |  Zq-32⁻ +  Fj-34⁺   +[  1945.25 -   2300] => Ny-66                      | nuclear                      |   156853  -     24409 | 0-chain + 1-chain |
- 2-chain Ny-63  ::  2725.57 |  Pm-17⁺ +  Aw-46⁺   +[  1722.12 -   4000] => Ny-63                      | nuclear                      |   231892  -     20588*| 0-chain + 1-chain |
+ 2-chain Ny-63  ::  2725.57 |  Pm-17⁺ +  Aw-46⁺   +[  1716.22 -   4000] => Ny-63                      | nuclear                      |   611761  -     20588*| 0-chain + 1-chain |
  1-chain Hb-64  ::  2727.92 |  Xc-30∙ +  Xc-34⁻   +[  2727.92 -   5000] => Hb-64                      | nuclear                      |   132839  -    545982 | 0-chain + 0-chain |
  2-chain At-61  ::  2738.78 |   Af-7ª +  Ic-54∙   +[  1219.19 -   3692] => At-61                      | nuclear                      |   313928* -    313928*| 0-chain + 1-chain |
  1-chain Ny-69  ::  2738.93 |  Pm-19∙ +  Aw-50∙   +[  2738.93 -   5000] => Ny-69                      | nuclear                      |   115892  -     88376 | 0-chain + 0-chain |
@@ -997,11 +997,11 @@
  2-chain Qi-73  ::  3348.26 |  Xc-34⁻ +   C-39⁺   +[  2329.27 -   3000] => Qi-73                      | nuclear                      |   312956* -    312956*| 0-chain + 1-chain |
  2-chain H-79   ::  3356.28 |  Fj-37ª +   E-42⁺   +[  2654.35 -   5000] => H-79                       | nuclear                      |   160936  -     96236 | 0-chain + 1-chain |
  2-chain Hb-67  ::  3356.74 |  Zz-15∙ +  Aw-52⁻   +[  2180.54 -   3500] => Hb-67                      | nuclear                      |    32015* -     32015*| 1-chain + 1-chain |
- 2-chain Gq-75  ::  3357.00 |  Fj-37ª +   O-38ª   +[  2547.43 - 100000] => Gq-75                      | nuclear                      |   324960* -    519248 | 0-chain + 1-chain |
+ 2-chain Gq-75  ::  3357.00 |  Fj-37ª +   O-38ª   +[  2474.78 - 100000] => Gq-75                      | nuclear                      |   611760  -    519248 | 0-chain + 1-chain |
  2-chain U-83   ::  3360.05 |  Xc-29⁺ +  Nb-54ª   +[  2646.70 -   5000] => U-83                       | nuclear                      |   232302  -     29938 | 1-chain + 0-chain |
  2-chain Qi-70  ::  3360.23 |  Xc-31∙ +   C-39⁺   +[  2341.24 -   5000] => Qi-70                      | nuclear                      |   140955  -     21657 | 0-chain + 1-chain |
  2-chain Ny-73  ::  3361.98 |  Pq-14⁻ +  Xk-59⁻   +[  1635.77 -  10000] => Ny-73                      | nuclear                      |   568962  -    560627*| 0-chain + 1-chain |
- 2-chain Sq-84  ::  3362.35 |   S-25⁺ +  Yp-59⁺   +[  2504.75 -   8000] => Sq-84                      | nuclear                      |   208395  -    200481 | 0-chain + 1-chain |
+ 2-chain Sq-84  ::  3362.35 |   S-25⁺ +  Yp-59⁺   +[  2502.45 -   8000] => Sq-84                      | nuclear                      |   611762  -    200481 | 0-chain + 1-chain |
  2-chain H-81   ::  3370.41 |   S-26ª +  Xk-55⁻   +[  2521.38 -   3500] => H-81                       | nuclear                      |   394469* -    479478 | 0-chain + 1-chain |
  2-chain Ny-63  ::  3398.53 |  Xc-30∙ +   D-33⁺   +[  2706.98 -   5000] => Ny-63                      | nuclear                      |   536234  -     16781*| 0-chain + 1-chain |
  2-chain Gq-74  ::  3407.14 |  Fj-37ª +   O-37ª   +[  2393.99 -   2400] => Gq-74                      | nuclear                      |   554460* -    554460*| 0-chain + 1-chain |
