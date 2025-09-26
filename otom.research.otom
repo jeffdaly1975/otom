@@ -1,3 +1,58 @@
+2025-09-26 Sep.Fri 13:00:05 New discovery! Ux-61 makes 766 isotopes in Univers Bohr
+
+I was going through my decay.BOHR.otom file to see the edges of each otom and see if there was a chance the predicted output might be different and uncover something. It did!
+[ ] should also check Lu-42  + 5000
+[ ] should also check Wy-56  + 5000
+[ ] should also check Ux-60  + 5000
+[ ] should also check Co-73  + 8000
+[ ] should also check Vl-82  + 9000
+[ ] should also check Aw-104 + 10000
+[ ] should also check Kn-106 + 10000
+
+OTOMRO 613069: Da-113⁻ + 12000 => Pb-52 + Ux-61 + 2,006.6337538 using 9993.37 nuclear
+
+[ ] add to files
+  [ ] bookmark to Firefox
+  [ ] add otoms.shapescan.data.BOHR.otom
+  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [ ] add to syntax/otom.vim
+  [ ] add to parseReactorLog.pl
+  [ ] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [ ] add to chains.bohr.otom
+  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [ ] add to checkingsomething-stab-chart.txt
+  [ ] add to decay.bohr.otom
+  [ ] add to checklist.bohr.otom
+  [ ] make it myself
+  [ ] grabtheseimages.sh
+  [ ] add to isotopes_worker.bohr.sh
+  [ ] add to get_isotopes_bohr.alchemy.pl
+  [ ] add to token_id_sort_order-bohr.otom
+  [ ] add to token_id_sort_order_1_column-bohr.otom
+  [ ] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+2025-09-26 Sep.Fri 12:06:39
+
+Since I have 2 L-57, try splitting one to help figure out the energy level necessary for splitting L-58
+[f] L-57 + 3800 => ? makes Ux-57 using 190.00 decay
+
+2025-09-25 Sep.Thu 23:59:35 these are the known isotopes in Bohr that might fission to new isotopes:
+
++--------+-----------+----------+-------+------+---------------------------+-----------------------------------+---------------------------------+--------------------------------+
+| otom   |   isotope | series   |stabili|decay |+0 decay with 0 Energy     |+5000  decay with 5000             |+10000  decay with 10000         |+20000  decay with 20000        |
++--------+-----------+----------+-------+------+---------------------------+-----------------------------------+---------------------------------+--------------------------------+
+| Vi-15⁻ |  15  6 Vi | nonmetal |(0.202)|beta- |                   ? Ct-15 |                 [ ] ? As-8 + As-7 |              ? AsEi(As-8,As-7>) |              ? As₂(As-8,As-7>) |
+| Co-73⁺ |  73 39 Co | noble    |(0.492)|beta+ |+0                    D-73 |                                   |              [ ] ? Lu-33 + V-40 |                                |
+| L-58⁻  |  58 25  L | nonmetal |(0.618)|beta- |                   ? Ux-58 |               [ ] ? Cl-31 + Ro-27 |             ? ClRo(Cl-31,Ro-27>)|                                |
++--------+-----------+----------+-------+------+---------------------------+-----------------------------------+---------------------------------+--------------------------------+
+
+[r] Pg-50⁺             +[  2837.13 -   2860] => Ro-23 + Nd-27       | nuclear                      | OTOMRO         |
+[r] Nd-27⁺ +   L-46⁺   +[  1311.43 -   5000] => Co-73               | decay, nuclear               | OTOMRO  556886 | intermediate isotope ->   W-73⁺ => Co-73⁺  
+[f] Co-73⁺             +   9000 => ? Lu-33 + V-40 ---> nope it makes Lu-34 + V-39 using 5015.89 nuclear
+
+
 2025-09-25 Sep.Thu 21:51:30 some recipes to redo to figure out cheaper input NRG
 
 First, make precursors:
@@ -3897,7 +3952,8 @@ OTOMRO 500125 Dd-108⁻ + 12000 => Uq-50 + L-58 + 3,046.063838651353307796 using
   [c] add to bohr_chain_recipes_for_morpheus.csv
 
 try splitting L-58 to make Ro-27 plus undiscovered Cl-31 BUT IT WILL BE TRICKY since L-* likes to split and then chemically make ClRo(). And.... looking at the reaction history no one has yet successfully split an L otom into Cl plus Ro. Yikes.
-[*] L-58⁻ + ? => ? Cl-31 + Ro-27
+[f] L-58⁻ + 3350 => ? Cl-31 + Ro-27 ---> nope it decayed to Ux-58 using 167.50 decay
+[*] L-58⁻ + 4665 => ? Cl-31 + Ro-27
 
 
 [c] make these and split them to see if we can narrow down the likely ranges
