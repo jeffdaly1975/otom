@@ -1,36 +1,1686 @@
+2025-09-29 Sep.Mon 12:03:34 Reworking bohr math file. This time, including a few possible isotopes above and below the max and min isotopes of each otom. That's 1480 items, and 1480*1480 possible combinations makes 2_190_400 lines. But we filter out duplicates like Sr-1 + Cj-83 == Cj-83 + Sr-1
+
+| Sr-1∙   |
+| Sr-2∙   |
+| Sr-3∙   |
+| Sr-4∙   |
+| Ei-3∙   |
+| Ei-4∙   |
+| Ei-5∙   |
+| Ei-6∙   |
+| As-4⁺   |
+| As-5⁺   |
+| As-6∙   |
+| As-7∙   |
+| As-8⁻   |
+| Dz-6⁺   |
+| Dz-7⁺   |
+| Dz-8∙   |
+| Dz-9∙   |
+| Dz-10⁻  |
+| Dz-11⁻  |
+| Dz-12⁻  |
+| Gj-8⁺   |
+| Gj-9⁺   |
+| Gj-10∙  |
+| Gj-11∙  |
+| Gj-12⁻  |
+| Gj-13⁻  |
+| Gj-14⁻  |
+| Vi-9⁺   |
+| Vi-10⁺  |
+| Vi-11⁺  |
+| Vi-12∙  |
+| Vi-13∙  |
+| Vi-14⁻  |
+| Vi-15⁻  |
+| Vi-16⁻  |
+| Vi-17⁻  |
+| Ct-11⁺  |
+| Ct-12⁺  |
+| Ct-13⁺  |
+| Ct-14∙  |
+| Ct-15∙  |
+| Ct-16⁻  |
+| Ct-17⁻  |
+| Ct-18⁻  |
+| Ct-19⁻  |
+| T-12⁺   |
+| T-13⁺   |
+| T-14⁺   |
+| T-15⁺   |
+| T-16∙   |
+| T-17∙   |
+| T-18⁻   |
+| T-19⁻   |
+| T-20⁻   |
+| T-21⁻   |
+| T-22⁻   |
+| Xj-15⁺  |
+| Xj-16⁺  |
+| Xj-17⁺  |
+| Xj-18∙  |
+| Xj-19∙  |
+| Xj-20⁻  |
+| Xj-21⁻  |
+| Xj-22⁻  |
+| Xj-23⁻  |
+| Xj-24⁻  |
+| Eb-16⁺  |
+| Eb-17⁺  |
+| Eb-18⁺  |
+| Eb-19⁺  |
+| Eb-20∙  |
+| Eb-21∙  |
+| Eb-22∙  |
+| Eb-23⁻  |
+| Eb-24⁻  |
+| Eb-25⁻  |
+| Eb-26⁻  |
+| P-18⁺   |
+| P-19⁺   |
+| P-20⁺   |
+| P-21⁺   |
+| P-22⁺   |
+| P-23∙   |
+| P-24⁻   |
+| P-25⁻   |
+| P-26⁻   |
+| P-27⁻   |
+| P-28⁻   |
+| P-29⁻   |
+| Ro-19⁺  |
+| Ro-20⁺  |
+| Ro-21⁺  |
+| Ro-22⁺  |
+| Ro-23ª  |
+| Ro-24ª  |
+| Ro-25∙  |
+| Ro-26∙  |
+| Ro-27⁻  |
+| Ro-28⁻  |
+| Ro-29⁻  |
+| Ro-30⁻  |
+| Ro-31⁻  |
+| Cl-21⁺  |
+| Cl-22⁺  |
+| Cl-23⁺  |
+| Cl-24⁺  |
+| Cl-25⁺  |
+| Cl-26ª  |
+| Cl-27∙  |
+| Cl-28⁻  |
+| Cl-29⁻  |
+| Cl-30⁻  |
+| Cl-31⁻  |
+| Cl-32⁻  |
+| Cl-33⁻  |
+| Cl-34⁻  |
+| Yu-23⁺  |
+| Yu-24⁺  |
+| Yu-25⁺  |
+| Yu-26⁺  |
+| Yu-27⁺  |
+| Yu-28ª  |
+| Yu-29∙  |
+| Yu-30∙  |
+| Yu-31⁻  |
+| Yu-32⁻  |
+| Yu-33⁻  |
+| Yu-34⁻  |
+| Yu-35⁻  |
+| Yu-36⁻  |
+| Nd-25⁺  |
+| Nd-26⁺  |
+| Nd-27⁺  |
+| Nd-28⁺  |
+| Nd-29⁺  |
+| Nd-30ª  |
+| Nd-31∙  |
+| Nd-32⁻  |
+| Nd-33⁻  |
+| Nd-34⁻  |
+| Nd-35⁻  |
+| Nd-36⁻  |
+| Nd-37⁻  |
+| Nd-38⁻  |
+| K-27⁺   |
+| K-28⁺   |
+| K-29⁺   |
+| K-30⁺   |
+| K-31⁺   |
+| K-32∙   |
+| K-33∙   |
+| K-34∙   |
+| K-35⁻   |
+| K-36⁻   |
+| K-37⁻   |
+| K-38⁻   |
+| K-39⁻   |
+| Mt-29⁺  |
+| Mt-30⁺  |
+| Mt-31⁺  |
+| Mt-32⁺  |
+| Mt-33⁺  |
+| Mt-34⁺  |
+| Mt-35∙  |
+| Mt-36⁻  |
+| Mt-37⁻  |
+| Mt-38⁻  |
+| Mt-39⁻  |
+| Mt-40⁻  |
+| Mt-41⁻  |
+| Lu-30⁺  |
+| Lu-31⁺  |
+| Lu-32⁺  |
+| Lu-33⁺  |
+| Lu-34⁺  |
+| Lu-35⁺  |
+| Lu-36∙  |
+| Lu-37∙  |
+| Lu-38∙  |
+| Lu-39⁻  |
+| Lu-40⁻  |
+| Lu-41⁻  |
+| Lu-42⁻  |
+| Lu-43⁻  |
+| Lu-44⁻  |
+| Dx-33⁺  |
+| Dx-34⁺  |
+| Dx-35⁺  |
+| Dx-36⁺  |
+| Dx-37⁺  |
+| Dx-38⁺  |
+| Dx-39∙  |
+| Dx-40⁻  |
+| Dx-41⁻  |
+| Dx-42⁻  |
+| Dx-43⁻  |
+| Dx-44⁻  |
+| Dx-45⁻  |
+| Dx-46⁻  |
+| Gd-35⁺  |
+| Gd-36⁺  |
+| Gd-37⁺  |
+| Gd-38⁺  |
+| Gd-39⁺  |
+| Gd-40∙  |
+| Gd-41∙  |
+| Gd-42∙  |
+| Gd-43⁻  |
+| Gd-44⁻  |
+| Gd-45⁻  |
+| Gd-46⁻  |
+| Gd-47⁻  |
+| Gd-48⁻  |
+| Gd-49⁻  |
+| V-37⁺   |
+| V-38⁺   |
+| V-39⁺   |
+| V-40⁺   |
+| V-41⁺   |
+| V-42⁺   |
+| V-43∙   |
+| V-44∙   |
+| V-45⁻   |
+| V-46⁻   |
+| V-47⁻   |
+| V-48⁻   |
+| V-49⁻   |
+| V-50⁻   |
+| V-51⁻   |
+| Uq-39⁺  |
+| Uq-40⁺  |
+| Uq-41⁺  |
+| Uq-42⁺  |
+| Uq-43⁺  |
+| Uq-44⁺  |
+| Uq-45∙  |
+| Uq-46∙  |
+| Uq-47⁻  |
+| Uq-48⁻  |
+| Uq-49⁻  |
+| Uq-50⁻  |
+| Uq-51⁻  |
+| Uq-52⁻  |
+| Uq-53⁻  |
+| Uq-54⁻  |
+| Pb-41⁺  |
+| Pb-42⁺  |
+| Pb-43⁺  |
+| Pb-44⁺  |
+| Pb-45⁺  |
+| Pb-46⁺  |
+| Pb-47∙  |
+| Pb-48∙  |
+| Pb-49⁻  |
+| Pb-50⁻  |
+| Pb-51⁻  |
+| Pb-52⁻  |
+| Pb-53⁻  |
+| Pb-54⁻  |
+| Pb-55⁻  |
+| Wy-43⁺  |
+| Wy-44⁺  |
+| Wy-45⁺  |
+| Wy-46⁺  |
+| Wy-47⁺  |
+| Wy-48⁺  |
+| Wy-49∙  |
+| Wy-50∙  |
+| Wy-51∙  |
+| Wy-52∙  |
+| Wy-53⁻  |
+| Wy-54⁻  |
+| Wy-55⁻  |
+| Wy-56⁻  |
+| Wy-57⁻  |
+| Wy-58⁻  |
+| L-44⁺   |
+| L-45⁺   |
+| L-46⁺   |
+| L-47⁺   |
+| L-48⁺   |
+| L-49⁺   |
+| L-50⁺   |
+| L-51⁺   |
+| L-52⁺   |
+| L-53∙   |
+| L-54∙   |
+| L-55⁻   |
+| L-56⁻   |
+| L-57⁻   |
+| L-58⁻   |
+| L-59⁻   |
+| L-60⁻   |
+| Ux-45⁺  |
+| Ux-46⁺  |
+| Ux-47⁺  |
+| Ux-48⁺  |
+| Ux-49⁺  |
+| Ux-50⁺  |
+| Ux-51⁺  |
+| Ux-52⁺  |
+| Ux-53⁺  |
+| Ux-54⁺  |
+| Ux-55∙  |
+| Ux-56⁻  |
+| Ux-57⁻  |
+| Ux-58⁻  |
+| Ux-59⁻  |
+| Ux-60⁻  |
+| Ux-61⁻  |
+| Ux-62⁻  |
+| Ux-63⁻  |
+| Pg-48⁺  |
+| Pg-49⁺  |
+| Pg-50⁺  |
+| Pg-51⁺  |
+| Pg-52⁺  |
+| Pg-53⁺  |
+| Pg-54⁺  |
+| Pg-55⁺  |
+| Pg-56∙  |
+| Pg-57⁻  |
+| Pg-58⁻  |
+| Pg-59⁻  |
+| Pg-60⁻  |
+| Pg-61⁻  |
+| Pg-62⁻  |
+| Pg-63⁻  |
+| Pg-64⁻  |
+| Qe-50⁺  |
+| Qe-51⁺  |
+| Qe-52⁺  |
+| Qe-53⁺  |
+| Qe-54⁺  |
+| Qe-55⁺  |
+| Qe-56⁺  |
+| Qe-57∙  |
+| Qe-58⁻  |
+| Qe-59⁻  |
+| Qe-60⁻  |
+| Qe-61⁻  |
+| Qe-62⁻  |
+| Qe-63⁻  |
+| Qe-64⁻  |
+| Qe-65⁻  |
+| Qe-66⁻  |
+| Qe-67⁻  |
+| Qe-68⁻  |
+| Qe-69⁻  |
+| C-51⁺   |
+| C-52⁺   |
+| C-53⁺   |
+| C-54⁺   |
+| C-55⁺   |
+| C-56⁺   |
+| C-57⁺   |
+| C-58∙   |
+| C-59∙   |
+| C-60∙   |
+| C-61∙   |
+| C-62∙   |
+| C-63∙   |
+| C-64⁻   |
+| C-65⁻   |
+| C-66⁻   |
+| C-67⁻   |
+| C-68⁻   |
+| C-69⁻   |
+| C-70⁻   |
+| C-71⁻   |
+| C-72⁻   |
+| Ns-54⁺  |
+| Ns-55⁺  |
+| Ns-56⁺  |
+| Ns-57⁺  |
+| Ns-58⁺  |
+| Ns-59⁺  |
+| Ns-60⁺  |
+| Ns-61⁺  |
+| Ns-62⁺  |
+| Ns-63⁺  |
+| Ns-64∙  |
+| Ns-65⁻  |
+| Ns-66⁻  |
+| Ns-67⁻  |
+| Ns-68⁻  |
+| Ns-69⁻  |
+| Ns-70⁻  |
+| Ns-71⁻  |
+| Ns-72⁻  |
+| Ns-73⁻  |
+| Ns-74⁻  |
+| Ai-55⁺  |
+| Ai-56⁺  |
+| Ai-57⁺  |
+| Ai-58⁺  |
+| Ai-59⁺  |
+| Ai-60⁺  |
+| Ai-61⁺  |
+| Ai-62⁺  |
+| Ai-63⁺  |
+| Ai-64⁺  |
+| Ai-65∙  |
+| Ai-66⁻  |
+| Ai-67⁻  |
+| Ai-68⁻  |
+| Ai-69⁻  |
+| Ai-70⁻  |
+| Ai-71⁻  |
+| Ai-72⁻  |
+| Ai-73⁻  |
+| Ai-74⁻  |
+| Ai-75⁻  |
+| Ai-76⁻  |
+| F-57⁺   |
+| F-58⁺   |
+| F-59⁺   |
+| F-60⁺   |
+| F-61⁺   |
+| F-62⁺   |
+| F-63⁺   |
+| F-64⁺   |
+| F-65ª   |
+| F-66ª   |
+| F-67ª   |
+| F-68∙   |
+| F-69⁻   |
+| F-70⁻   |
+| F-71⁻   |
+| F-72⁻   |
+| F-73⁻   |
+| F-74⁻   |
+| F-75⁻   |
+| F-76⁻   |
+| F-77⁻   |
+| F-78⁻   |
+| Gy-58⁺  |
+| Gy-59⁺  |
+| Gy-60⁺  |
+| Gy-61⁺  |
+| Gy-62⁺  |
+| Gy-63⁺  |
+| Gy-64⁺  |
+| Gy-65⁺  |
+| Gy-66ª  |
+| Gy-67ª  |
+| Gy-68ª  |
+| Gy-69ª  |
+| Gy-70ª  |
+| Gy-71⁻  |
+| Gy-72⁻  |
+| Gy-73⁻  |
+| Gy-74⁻  |
+| Gy-75⁻  |
+| Gy-76⁻  |
+| Gy-77⁻  |
+| Gy-78⁻  |
+| Gy-79⁻  |
+| Gy-80⁻  |
+| Gy-81⁻  |
+| Kk-61⁺  |
+| Kk-62⁺  |
+| Kk-63⁺  |
+| Kk-64⁺  |
+| Kk-65⁺  |
+| Kk-66⁺  |
+| Kk-67⁺  |
+| Kk-68ª  |
+| Kk-69ª  |
+| Kk-70ª  |
+| Kk-71ª  |
+| Kk-72ª  |
+| Kk-73⁻  |
+| Kk-74∙  |
+| Kk-75∙  |
+| Kk-76⁻  |
+| Kk-77⁻  |
+| Kk-78⁻  |
+| Kk-79⁻  |
+| Kk-80⁻  |
+| Kk-81⁻  |
+| Kk-82⁻  |
+| Kk-83⁻  |
+| Yv-63⁺  |
+| Yv-64⁺  |
+| Yv-65⁺  |
+| Yv-66⁺  |
+| Yv-67⁺  |
+| Yv-68⁺  |
+| Yv-69⁺  |
+| Yv-70ª  |
+| Yv-71ª  |
+| Yv-72ª  |
+| Yv-73ª  |
+| Yv-74ª  |
+| Yv-75ª  |
+| Yv-76∙  |
+| Yv-77⁻  |
+| Yv-78⁻  |
+| Yv-79⁻  |
+| Yv-80⁻  |
+| Yv-81⁻  |
+| Yv-82⁻  |
+| Yv-83⁻  |
+| Yv-84⁻  |
+| Yv-85⁻  |
+| Cj-64⁺  |
+| Cj-65⁺  |
+| Cj-66⁺  |
+| Cj-67⁺  |
+| Cj-68⁺  |
+| Cj-69⁺  |
+| Cj-70⁺  |
+| Cj-71⁺  |
+| Cj-72ª  |
+| Cj-73ª  |
+| Cj-74ª  |
+| Cj-75ª  |
+| Cj-76ª  |
+| Cj-77⁻  |
+| Cj-78⁻  |
+| Cj-79⁻  |
+| Cj-80⁻  |
+| Cj-81⁻  |
+| Cj-82⁻  |
+| Cj-83⁻  |
+| Cj-84⁻  |
+| Cj-85⁻  |
+| Cj-86⁻  |
+| Cj-87⁻  |
+| Iu-65⁺  |
+| Iu-66⁺  |
+| Iu-67⁺  |
+| Iu-68⁺  |
+| Iu-69⁺  |
+| Iu-70⁺  |
+| Iu-71⁺  |
+| Iu-72⁺  |
+| Iu-73ª  |
+| Iu-74ª  |
+| Iu-75ª  |
+| Iu-76ª  |
+| Iu-77ª  |
+| Iu-78∙  |
+| Iu-79⁻  |
+| Iu-80⁻  |
+| Iu-81⁻  |
+| Iu-82∙  |
+| Iu-83⁻  |
+| Iu-84⁻  |
+| Iu-85⁻  |
+| Iu-86⁻  |
+| Iu-87⁻  |
+| Iu-88⁻  |
+| Iu-89⁻  |
+| D-67⁺   |
+| D-68⁺   |
+| D-69⁺   |
+| D-70⁺   |
+| D-71⁺   |
+| D-72⁺   |
+| D-73⁺   |
+| D-74⁺   |
+| D-75ª   |
+| D-76ª   |
+| D-77ª   |
+| D-78ª   |
+| D-79∙   |
+| D-80⁻   |
+| D-81⁻   |
+| D-82⁺   |
+| D-83∙   |
+| D-84⁻   |
+| D-85⁻   |
+| D-86⁻   |
+| D-87⁻   |
+| D-88⁻   |
+| D-89⁻   |
+| D-90⁻   |
+| D-91⁻   |
+| Co-69⁺  |
+| Co-70⁺  |
+| Co-71⁺  |
+| Co-72⁺  |
+| Co-73⁺  |
+| Co-74⁺  |
+| Co-75⁺  |
+| Co-76ª  |
+| Co-77ª  |
+| Co-78ª  |
+| Co-79ª  |
+| Co-80ª  |
+| Co-81ª  |
+| Co-82ª  |
+| Co-83⁺  |
+| Co-84∙  |
+| Co-85⁻  |
+| Co-86⁻  |
+| Co-87⁻  |
+| Co-88⁻  |
+| Co-89⁻  |
+| Co-90⁻  |
+| Co-91⁻  |
+| Co-92⁻  |
+| W-71⁺   |
+| W-72⁺   |
+| W-73⁺   |
+| W-74⁺   |
+| W-75⁺   |
+| W-76⁺   |
+| W-77ª   |
+| W-78ª   |
+| W-79ª   |
+| W-80ª   |
+| W-81ª   |
+| W-82ª   |
+| W-83ª   |
+| W-84ª   |
+| W-85ª   |
+| W-86ª   |
+| W-87⁻   |
+| W-88⁻   |
+| W-89⁻   |
+| W-90⁻   |
+| W-91⁻   |
+| W-92⁻   |
+| W-93⁻   |
+| W-94⁻   |
+| W-95⁻   |
+| W-96⁻   |
+| Lx-73⁺  |
+| Lx-74⁺  |
+| Lx-75⁺  |
+| Lx-76⁺  |
+| Lx-77⁺  |
+| Lx-78⁺  |
+| Lx-79⁺  |
+| Lx-80⁺  |
+| Lx-81ª  |
+| Lx-82ª  |
+| Lx-83ª  |
+| Lx-84ª  |
+| Lx-85ª  |
+| Lx-86ª  |
+| Lx-87∙  |
+| Lx-88∙  |
+| Lx-89∙  |
+| Lx-90∙  |
+| Lx-91⁻  |
+| Lx-92∙  |
+| Lx-93⁻  |
+| Lx-94⁻  |
+| Lx-95⁻  |
+| Lx-96⁻  |
+| Lx-97⁻  |
+| Lx-98⁻  |
+| Lx-99⁻  |
+| N-75⁺   |
+| N-76⁺   |
+| N-77⁺   |
+| N-78⁺   |
+| N-79⁺   |
+| N-80⁺   |
+| N-81⁺   |
+| N-82⁺   |
+| N-83⁺   |
+| N-84⁺   |
+| N-85⁺   |
+| N-86⁺   |
+| N-87⁺   |
+| N-88⁺   |
+| N-89⁺   |
+| N-90⁺   |
+| N-91∙   |
+| N-92⁻   |
+| N-93⁻   |
+| N-94⁻   |
+| N-95⁻   |
+| N-96⁻   |
+| N-97⁻   |
+| N-98⁻   |
+| N-99⁻   |
+| N-100⁻  |
+| N-101⁻  |
+| U-77⁺   |
+| U-78⁺   |
+| U-79⁺   |
+| U-80⁺   |
+| U-81⁺   |
+| U-82⁺   |
+| U-83⁺   |
+| U-84ª   |
+| U-85ª   |
+| U-86ª   |
+| U-87⁺   |
+| U-88ª   |
+| U-89ª   |
+| U-90ª   |
+| U-91⁺   |
+| U-92∙   |
+| U-93⁻   |
+| U-94⁻   |
+| U-95ª   |
+| U-96⁻   |
+| U-97⁻   |
+| U-98⁻   |
+| U-99⁻   |
+| U-100⁻  |
+| U-101⁻  |
+| U-102⁻  |
+| U-103⁻  |
+| Vl-78⁺  |
+| Vl-79⁺  |
+| Vl-80⁺  |
+| Vl-81⁺  |
+| Vl-82⁺  |
+| Vl-83⁺  |
+| Vl-84⁺  |
+| Vl-85⁺  |
+| Vl-86ª  |
+| Vl-87⁺  |
+| Vl-88⁺  |
+| Vl-89∙  |
+| Vl-90ª  |
+| Vl-91ª  |
+| Vl-92⁺  |
+| Vl-93∙  |
+| Vl-94⁻  |
+| Vl-95⁻  |
+| Vl-96⁻  |
+| Vl-97⁻  |
+| Vl-98⁻  |
+| Vl-99⁻  |
+| Vl-100⁻ |
+| Vl-101⁻ |
+| Vl-102⁻ |
+| Vl-103⁻ |
+| Vl-104⁻ |
+| Vl-105⁻ |
+| Se-80⁺  |
+| Se-81⁺  |
+| Se-82⁺  |
+| Se-83⁺  |
+| Se-84⁺  |
+| Se-85⁺  |
+| Se-86⁺  |
+| Se-87⁺  |
+| Se-88⁺  |
+| Se-89⁺  |
+| Se-90∙  |
+| Se-91∙  |
+| Se-92∙  |
+| Se-93⁺  |
+| Se-94∙  |
+| Se-95∙  |
+| Se-96∙  |
+| Se-97ª  |
+| Se-98∙  |
+| Se-99∙  |
+| Se-100∙ |
+| Se-101∙ |
+| Se-102⁻ |
+| Se-103⁻ |
+| Se-104⁻ |
+| Se-105⁻ |
+| Se-106⁻ |
+| Se-107⁻ |
+| Se-108⁻ |
+| Nm-82⁺  |
+| Nm-83⁺  |
+| Nm-84⁺  |
+| Nm-85⁺  |
+| Nm-86⁺  |
+| Nm-87⁺  |
+| Nm-88⁺  |
+| Nm-89⁺  |
+| Nm-90⁺  |
+| Nm-91⁺  |
+| Nm-92⁺  |
+| Nm-93⁺  |
+| Nm-94⁺  |
+| Nm-95⁺  |
+| Nm-96⁺  |
+| Nm-97ª  |
+| Nm-98ª  |
+| Nm-99ª  |
+| Nm-100⁺ |
+| Nm-101⁺ |
+| Nm-102ª |
+| Nm-103⁻ |
+| Nm-104⁻ |
+| Nm-105⁻ |
+| Nm-106⁻ |
+| Nm-107⁻ |
+| Nm-108⁻ |
+| Nm-109⁻ |
+| Nm-110⁻ |
+| Dd-84⁺  |
+| Dd-85⁺  |
+| Dd-86⁺  |
+| Dd-87⁺  |
+| Dd-88⁺  |
+| Dd-89⁺  |
+| Dd-90⁺  |
+| Dd-91⁺  |
+| Dd-92⁺  |
+| Dd-93⁺  |
+| Dd-94ª  |
+| Dd-95⁺  |
+| Dd-96ª  |
+| Dd-97ª  |
+| Dd-98ª  |
+| Dd-99ª  |
+| Dd-100ª |
+| Dd-101ª |
+| Dd-102ª |
+| Dd-103ª |
+| Dd-104⁻ |
+| Dd-105⁻ |
+| Dd-106⁻ |
+| Dd-107⁻ |
+| Dd-108⁻ |
+| Dd-109⁻ |
+| Dd-110⁻ |
+| Dd-111⁻ |
+| Dd-112⁻ |
+| Dd-113⁻ |
+| Ok-86⁺  |
+| Ok-87⁺  |
+| Ok-88⁺  |
+| Ok-89⁺  |
+| Ok-90⁺  |
+| Ok-91⁺  |
+| Ok-92⁺  |
+| Ok-93⁺  |
+| Ok-94⁺  |
+| Ok-95ª  |
+| Ok-96⁺  |
+| Ok-97ª  |
+| Ok-98ª  |
+| Ok-99ª  |
+| Ok-100ª |
+| Ok-101ª |
+| Ok-102⁻ |
+| Ok-103⁻ |
+| Ok-104ª |
+| Ok-105⁻ |
+| Ok-106⁻ |
+| Ok-107⁻ |
+| Ok-108⁻ |
+| Ok-109⁻ |
+| Ok-110⁻ |
+| Ok-111⁻ |
+| Ok-112⁻ |
+| Ok-113⁻ |
+| Ok-114⁻ |
+| Ok-115⁻ |
+| Ok-116⁻ |
+| Da-88⁺  |
+| Da-89⁺  |
+| Da-90⁺  |
+| Da-91⁺  |
+| Da-92⁺  |
+| Da-93⁺  |
+| Da-94⁺  |
+| Da-95⁺  |
+| Da-96⁺  |
+| Da-97⁺  |
+| Da-98ª  |
+| Da-99ª  |
+| Da-100ª |
+| Da-101ª |
+| Da-102ª |
+| Da-103∙ |
+| Da-104ª |
+| Da-105ª |
+| Da-106∙ |
+| Da-107∙ |
+| Da-108∙ |
+| Da-109∙ |
+| Da-110∙ |
+| Da-111∙ |
+| Da-112⁻ |
+| Da-113⁻ |
+| Da-114⁻ |
+| Da-115⁻ |
+| Da-116⁻ |
+| Da-117⁻ |
+| Da-118⁻ |
+| S-91⁺   |
+| S-92⁺   |
+| S-93⁺   |
+| S-94⁺   |
+| S-95⁺   |
+| S-96⁺   |
+| S-97⁺   |
+| S-98⁺   |
+| S-99⁺   |
+| S-100⁺  |
+| S-101ª  |
+| S-102ª  |
+| S-103ª  |
+| S-104⁺  |
+| S-105ª  |
+| S-106ª  |
+| S-107ª  |
+| S-108⁺  |
+| S-109ª  |
+| S-110ª  |
+| S-111⁻  |
+| S-112⁻  |
+| S-113⁻  |
+| S-114⁻  |
+| S-115⁻  |
+| S-116⁻  |
+| S-117⁻  |
+| S-118⁻  |
+| S-119⁻  |
+| S-120⁻  |
+| Z-92⁺   |
+| Z-93⁺   |
+| Z-94⁺   |
+| Z-95⁺   |
+| Z-96⁺   |
+| Z-97⁺   |
+| Z-98⁺   |
+| Z-99⁺   |
+| Z-100ª  |
+| Z-101ª  |
+| Z-102ª  |
+| Z-103ª  |
+| Z-104ª  |
+| Z-105ª  |
+| Z-106ª  |
+| Z-107ª  |
+| Z-108ª  |
+| Z-109ª  |
+| Z-110ª  |
+| Z-111ª  |
+| Z-112ª  |
+| Z-113ª  |
+| Z-114⁻  |
+| Z-115⁻  |
+| Z-116⁻  |
+| Z-117⁻  |
+| Z-118⁻  |
+| Z-119⁻  |
+| Z-120⁻  |
+| Z-121⁻  |
+| Z-122⁻  |
+| Cv-93⁺  |
+| Cv-94⁺  |
+| Cv-95⁺  |
+| Cv-96⁺  |
+| Cv-97⁺  |
+| Cv-98ª  |
+| Cv-99ª  |
+| Cv-100⁺ |
+| Cv-101ª |
+| Cv-102ª |
+| Cv-103ª |
+| Cv-104ª |
+| Cv-105ª |
+| Cv-106ª |
+| Cv-107ª |
+| Cv-108ª |
+| Cv-109ª |
+| Cv-110ª |
+| Cv-111ª |
+| Cv-112ª |
+| Cv-113ª |
+| Cv-114ª |
+| Cv-115ª |
+| Cv-116ª |
+| Cv-117ª |
+| Cv-118ª |
+| Cv-119⁻ |
+| Cv-120⁻ |
+| Cv-121⁻ |
+| Cv-122⁻ |
+| Cv-123⁻ |
+| Cv-124⁻ |
+| Vt-94⁺  |
+| Vt-95⁺  |
+| Vt-96⁺  |
+| Vt-97⁺  |
+| Vt-98⁺  |
+| Vt-99⁺  |
+| Vt-100⁺ |
+| Vt-101⁺ |
+| Vt-102⁺ |
+| Vt-103ª |
+| Vt-104ª |
+| Vt-105ª |
+| Vt-106ª |
+| Vt-107ª |
+| Vt-108ª |
+| Vt-109ª |
+| Vt-110ª |
+| Vt-111ª |
+| Vt-112ª |
+| Vt-113ª |
+| Vt-114ª |
+| Vt-115ª |
+| Vt-116ª |
+| Vt-117ª |
+| Vt-118ª |
+| Vt-119⁻ |
+| Vt-120⁻ |
+| Vt-121⁻ |
+| Vt-122⁻ |
+| Vt-123⁻ |
+| Vt-124⁻ |
+| Vt-125⁻ |
+| Ek-95⁺  |
+| Ek-96⁺  |
+| Ek-97⁺  |
+| Ek-98⁺  |
+| Ek-99⁺  |
+| Ek-100⁺ |
+| Ek-101⁺ |
+| Ek-102⁺ |
+| Ek-103⁺ |
+| Ek-104⁺ |
+| Ek-105ª |
+| Ek-106ª |
+| Ek-107ª |
+| Ek-108ª |
+| Ek-109ª |
+| Ek-110ª |
+| Ek-111ª |
+| Ek-112ª |
+| Ek-113ª |
+| Ek-114ª |
+| Ek-115ª |
+| Ek-116ª |
+| Ek-117ª |
+| Ek-118ª |
+| Ek-119ª |
+| Ek-120ª |
+| Ek-121⁻ |
+| Ek-122⁻ |
+| Ek-123⁻ |
+| Ek-124⁻ |
+| Ek-125⁻ |
+| Ek-126⁻ |
+| Ji-98⁺  |
+| Ji-99⁺  |
+| Ji-100⁺ |
+| Ji-101⁺ |
+| Ji-102⁺ |
+| Ji-103⁺ |
+| Ji-104⁺ |
+| Ji-105⁺ |
+| Ji-106ª |
+| Ji-107ª |
+| Ji-108ª |
+| Ji-109ª |
+| Ji-110ª |
+| Ji-111ª |
+| Ji-112ª |
+| Ji-113ª |
+| Ji-114ª |
+| Ji-115ª |
+| Ji-116ª |
+| Ji-117ª |
+| Ji-118ª |
+| Ji-119ª |
+| Ji-120ª |
+| Ji-121ª |
+| Ji-122ª |
+| Ji-123ª |
+| Ji-124⁻ |
+| Ji-125⁻ |
+| Ji-126⁻ |
+| Ji-127⁻ |
+| Ji-128⁻ |
+| Aw-100⁺ |
+| Aw-101⁺ |
+| Aw-102⁺ |
+| Aw-103⁺ |
+| Aw-104⁺ |
+| Aw-105⁺ |
+| Aw-106ª |
+| Aw-107ª |
+| Aw-108ª |
+| Aw-109ª |
+| Aw-110ª |
+| Aw-111ª |
+| Aw-112ª |
+| Aw-113ª |
+| Aw-114ª |
+| Aw-115ª |
+| Aw-116ª |
+| Aw-117ª |
+| Aw-118ª |
+| Aw-119ª |
+| Aw-120ª |
+| Aw-121ª |
+| Aw-122ª |
+| Aw-123ª |
+| Aw-124ª |
+| Aw-125ª |
+| Aw-126ª |
+| Aw-127ª |
+| Aw-128⁻ |
+| Aw-129⁻ |
+| Kn-102⁺ |
+| Kn-103⁺ |
+| Kn-104⁺ |
+| Kn-105⁺ |
+| Kn-106⁺ |
+| Kn-107⁺ |
+| Kn-108⁺ |
+| Kn-109ª |
+| Kn-110ª |
+| Kn-111ª |
+| Kn-112ª |
+| Kn-113ª |
+| Kn-114ª |
+| Kn-115ª |
+| Kn-116ª |
+| Kn-117ª |
+| Kn-118ª |
+| Kn-119ª |
+| Kn-120ª |
+| Kn-121ª |
+| Kn-122ª |
+| Kn-123ª |
+| Kn-124ª |
+| Kn-125ª |
+| Kn-126ª |
+| Kn-127ª |
+| Kn-128ª |
+| Kn-129ª |
+| Kn-130⁻ |
+| Ha-103⁺ |
+| Ha-104⁺ |
+| Ha-105⁺ |
+| Ha-106⁺ |
+| Ha-107⁺ |
+| Ha-108⁺ |
+| Ha-109⁺ |
+| Ha-110ª |
+| Ha-111ª |
+| Ha-112ª |
+| Ha-113ª |
+| Ha-114ª |
+| Ha-115ª |
+| Ha-116ª |
+| Ha-117ª |
+| Ha-118ª |
+| Ha-119ª |
+| Ha-120ª |
+| Ha-121ª |
+| Ha-122ª |
+| Ha-123ª |
+| Ha-124ª |
+| Ha-125ª |
+| Ha-126ª |
+| Ha-127ª |
+| Ha-128ª |
+| Ha-129ª |
+| Ha-130ª |
+| Ha-131⁻ |
+| Ax-104⁺ |
+| Ax-105⁺ |
+| Ax-106⁺ |
+| Ax-107⁺ |
+| Ax-108⁺ |
+| Ax-109⁺ |
+| Ax-110⁺ |
+| Ax-111ª |
+| Ax-112ª |
+| Ax-113ª |
+| Ax-114ª |
+| Ax-115ª |
+| Ax-116ª |
+| Ax-117ª |
+| Ax-118ª |
+| Ax-119ª |
+| Ax-120ª |
+| Ax-121ª |
+| Ax-122ª |
+| Ax-123ª |
+| Ax-124ª |
+| Ax-125ª |
+| Ax-126ª |
+| Ax-127ª |
+| Ax-128ª |
+| Ax-129ª |
+| Ax-130ª |
+| Ax-131ª |
+| Ax-132⁻ |
+| I-105⁺  |
+| I-106⁺  |
+| I-107⁺  |
+| I-108⁺  |
+| I-109⁺  |
+| I-110⁺  |
+| I-111⁺  |
+| I-112ª  |
+| I-113ª  |
+| I-114ª  |
+| I-115ª  |
+| I-116ª  |
+| I-117ª  |
+| I-118ª  |
+| I-119ª  |
+| I-120ª  |
+| I-121ª  |
+| I-122ª  |
+| I-123ª  |
+| I-124ª  |
+| I-125ª  |
+| I-126ª  |
+| I-127ª  |
+| I-128ª  |
+| I-129ª  |
+| I-130ª  |
+| I-131ª  |
+| I-132⁻  |
+| I-133⁻  |
+| Jb-109⁺ |
+| Jb-110⁺ |
+| Jb-111⁺ |
+| Jb-112⁺ |
+| Jb-113⁺ |
+| Jb-114⁺ |
+| Jb-115⁺ |
+| Jb-116ª |
+| Jb-117ª |
+| Jb-118ª |
+| Jb-119ª |
+| Jb-120ª |
+| Jb-121ª |
+| Jb-122ª |
+| Jb-123ª |
+| Jb-124ª |
+| Jb-125ª |
+| Jb-126ª |
+| Jb-127ª |
+| Jb-128ª |
+| Jb-129ª |
+| Jb-130ª |
+| Jb-131ª |
+| Jb-132ª |
+| Jb-133ª |
+| Jb-134⁻ |
+| Jb-135⁻ |
+| Go-112⁺ |
+| Go-113⁺ |
+| Go-114⁺ |
+| Go-115⁺ |
+| Go-116⁺ |
+| Go-117ª |
+| Go-118ª |
+| Go-119ª |
+| Go-120ª |
+| Go-121ª |
+| Go-122ª |
+| Go-123ª |
+| Go-124ª |
+| Go-125ª |
+| Go-126ª |
+| Go-127ª |
+| Go-128ª |
+| Go-129ª |
+| Go-130ª |
+| Go-131ª |
+| Go-132ª |
+| Go-133ª |
+| Go-134ª |
+| Go-135ª |
+| Go-136⁻ |
+| Go-137⁻ |
+| X-114⁺  |
+| X-115⁺  |
+| X-116⁺  |
+| X-117⁺  |
+| X-118⁺  |
+| X-119ª  |
+| X-120ª  |
+| X-121ª  |
+| X-122ª  |
+| X-123ª  |
+| X-124ª  |
+| X-125ª  |
+| X-126ª  |
+| X-127ª  |
+| X-128ª  |
+| X-129ª  |
+| X-130ª  |
+| X-131ª  |
+| X-132ª  |
+| X-133ª  |
+| X-134ª  |
+| X-135ª  |
+| X-136⁻  |
+| X-137⁻  |
+| X-138⁻  |
+| X-139⁻  |
+| 64-117⁺ |
+| 64-118⁺ |
+| 64-119⁺ |
+| 64-120ª |
+| 64-121ª |
+| 64-122ª |
+| 64-123ª |
+| 64-124ª |
+| 64-125ª |
+| 64-126ª |
+| 64-127ª |
+| 64-128ª |
+| 64-129ª |
+| 64-130ª |
+| 64-131ª |
+| 64-132ª |
+| 64-133ª |
+| 64-134ª |
+| 64-135ª |
+| 64-136ª |
+| 64-137ª |
+| 64-138⁻ |
+| 64-139⁻ |
+| 64-140⁻ |
+| 64-141⁻ |
+| Eh-118⁺ |
+| Eh-119⁺ |
+| Eh-120ª |
+| Eh-121ª |
+| Eh-122ª |
+| Eh-123ª |
+| Eh-124ª |
+| Eh-125ª |
+| Eh-126ª |
+| Eh-127ª |
+| Eh-128ª |
+| Eh-129ª |
+| Eh-130ª |
+| Eh-131ª |
+| Eh-132ª |
+| Eh-133ª |
+| Eh-134ª |
+| Eh-135ª |
+| Eh-136ª |
+| Eh-137ª |
+| Eh-138ª |
+| Eh-139⁻ |
+| Eh-140⁻ |
+| Eh-141⁻ |
+| Eh-142⁻ |
+| Eh-143⁻ |
+| Ys-120⁺ |
+| Ys-121⁺ |
+| Ys-122⁺ |
+| Ys-123⁺ |
+| Ys-124⁺ |
+| Ys-125ª |
+| Ys-126ª |
+| Ys-127ª |
+| Ys-128ª |
+| Ys-129ª |
+| Ys-130ª |
+| Ys-131ª |
+| Ys-132ª |
+| Ys-133ª |
+| Ys-134ª |
+| Ys-135ª |
+| Ys-136ª |
+| Ys-137ª |
+| Ys-138ª |
+| Ys-139ª |
+| Ys-140ª |
+| Ys-141⁻ |
+| Ys-142⁻ |
+| Ys-143⁻ |
+| Ys-144⁻ |
+| Ys-145⁻ |
+| 67-122⁺ |
+| 67-123⁺ |
+| 67-124⁺ |
+| 67-125⁺ |
+| 67-126ª |
+| 67-127ª |
+| 67-128ª |
+| 67-129ª |
+| 67-130ª |
+| 67-131ª |
+| 67-132ª |
+| 67-133ª |
+| 67-134ª |
+| 67-135ª |
+| 67-136ª |
+| 67-137ª |
+| 67-138ª |
+| 67-139ª |
+| 67-140ª |
+| 67-141ª |
+| 67-142⁻ |
+| 67-143⁻ |
+| 67-144⁻ |
+| 67-145⁻ |
+| 67-146⁻ |
+| 67-147⁻ |
+| 68-125⁺ |
+| 68-126⁺ |
+| 68-127ª |
+| 68-128ª |
+| 68-129ª |
+| 68-130ª |
+| 68-131ª |
+| 68-132ª |
+| 68-133ª |
+| 68-134ª |
+| 68-135ª |
+| 68-136ª |
+| 68-137ª |
+| 68-138ª |
+| 68-139ª |
+| 68-140ª |
+| 68-141ª |
+| 68-142ª |
+| 68-143⁻ |
+| 68-144⁻ |
+| 68-145⁻ |
+| 68-146⁻ |
+| 68-147⁻ |
+| 68-148⁻ |
+| 68-149⁻ |
+| 69-126⁺ |
+| 69-127⁺ |
+| 69-128ª |
+| 69-129ª |
+| 69-130ª |
+| 69-131ª |
+| 69-132ª |
+| 69-133ª |
+| 69-134ª |
+| 69-135ª |
+| 69-136ª |
+| 69-137ª |
+| 69-138ª |
+| 69-139ª |
+| 69-140ª |
+| 69-141ª |
+| 69-142ª |
+| 69-143ª |
+| 69-144⁻ |
+| 69-145⁻ |
+| 69-146⁻ |
+| 69-147⁻ |
+| 69-148⁻ |
+| 69-149⁻ |
+| 69-150⁻ |
+| 70-127⁺ |
+| 70-128⁺ |
+| 70-129⁺ |
+| 70-130⁺ |
+| 70-131ª |
+| 70-132ª |
+| 70-133ª |
+| 70-134ª |
+| 70-135ª |
+| 70-136ª |
+| 70-137ª |
+| 70-138ª |
+| 70-139ª |
+| 70-140ª |
+| 70-141ª |
+| 70-142ª |
+| 70-143ª |
+| 70-144ª |
+| 70-145⁻ |
+| 70-146⁻ |
+| 70-147⁻ |
+| 70-148⁻ |
+| 70-149⁻ |
+| 70-150⁻ |
+| 70-151⁻ |
+
+Adding all those to themselves and removing duplicates we have 1_095_940 reaction possibilities.
+
+I'm including the undiscovered 64, 67, 68 and 69 proton Otoms.
+I'm also including the impossible 71 and 72 for completeness i guess.
+
+let protonlookup["bohr"]["64"]="64"
+let protonlookup["bohr"]["67"]="67"
+let protonlookup["bohr"]["68"]="68"
+let protonlookup["bohr"]["69"]="69"
+let protonlookup["bohr"]["70"]="70"
+let protonlookup["bohr"]["71"]="71"
+let protonlookup["bohr"]["72"]="72"
+
+Now I do the vim substitution math
+  :%s/| \(\w\+\)-\(\d\+\)[∙ª⁻⁺] \++ \+\(\w\+\)-\(\d\+\)[∙ª⁻⁺] *|\zs$/\=" -> ". protonlookup["bohr"][ protonlookup["bohr"][submatch(1)] + protonlookup["bohr"][submatch(3)] ] . "-" . ( submatch(2) + submatch(4) )/
+
+Then mark lines that didn't match that as "-> NA" since they cannot happen. Like Ys-125 + Ys-125 .
+
+  :g/| \(\w\+\)-\(\d\+\)[∙ª⁻⁺] \++ \+\(\w\+\)-\(\d\+\)[∙ª⁻⁺] *|\zs$/s/$/ -> NA
+
+I'm just going to delete all those. They are impossible.
+
+Now we have 342_549 reactions.
+
+Now add actual decay types and guestimated decay types as I combed over the stability chart and guessed what they might be based on surroundings
+Adding a file temp-bohr-findnewstuff.vim with vim dictionary objects to achieve this.
+
+
+2025-09-28 Sep.Sun 19:32:13 Morpheus just discovered Cj-83 so 770 isotopes in Bohr
+
+OTOMRO 623711:  Cl-31 + Uq-52 + 5000 -> Yv-83⁻ => Cj-83⁻ + 3,215.162078130795180186 using 1784.84 decay+nuclear
+
+[.] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [-] make it myself
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+Then he tried splitting that after I suggested "You know what? Cj-83 + 10000 might make either (Mt-39 + Dx-44)  or (Mt-38 + Dx-45), and Dx-45 hasn't been discovered yet."
+But it just made Mt-39 + Dx-44
+
+2025-09-28 Sep.Sun 14:47:26 Some shorter chains found in the reaction logs:
+
+ 3-chain Ok-94  ::  4874.12 |  Ro-22⁺ +  Dd-94ª   +[  2235.95 -   5000] => P-22 + Ok-94        | decay, nuclear               | OTOMRO  621465*| intermediate isotope -> Ax-116ª => P-22 + Ok-94  
+ 7-chain Mt-31  :: 23040.07 |  Ai-57⁺             +[  3395.55 -   6000] => Yu-26 + Mt-31       | nuclear                      | OTOMRO  620568*|         
+ 7-chain Lu-34  :: 24549.58 |  Kk-64⁺             +[  5100.27 -  20000] => K-30 + Lu-34        | nuclear                      | OTOMRO  620533*|         
+ 7-chain T-14   :: 18506.41 |  Yu-26⁺             +[  2062.38 -  20000] => Vi-12 + T-14        | nuclear                      | OTOMRO  620528*|         
+
+2025-09-28 Sep.Sun 13:58:08 Discovered Cl-31 so that's 769 isotopes in Bohr
+
+OTOMRO 622032:  L-58⁻ + 3720 => ? Cl-31 + Ro-27 ---> SUCCESS! makes Cl-31 + Ro-27 + 27.062368159518335631 using 3692.94 nuclear 
+
+[.] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [c] make it myself
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+2025-09-27 Sep.Sat 16:14:51 Discovered Ai-57 so that's 768 isotopes in Bohr
+
+OTOMRO 620087  Kn-106 + 10000 => Ai-57 + Ux-49 + 2,676.916445581494372163 using 7323.08 nuclear
+
+[.] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [ ] make it myself
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
+try:
+[r] Ai-57 + 6000 => ? Yu-26 + Mt-31 or Yu-25 + Mt-32? makes Yu-26 + Mt-31 using 3395.55 nuclear
+
+2025-09-27 Sep.Sat 13:00:55 Morpheus split Ux-61 and got Yu-33 which I totally should have known was possible. Doh! That makes 767 isotopes in Bohr
+
+OTOMRO 613780: Ux-61⁻ + 15000 => Ro-28 + Yu-33⁻ + 10,579.42451073 using 4420.58 nuclear
+
+[.] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
+  [x] add to otom_reactions.BOHR.pl
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
+  [ ] make it myself
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
+  [ ] add to bohr_chain_recipes_for_morpheus.csv
+
 2025-09-26 Sep.Fri 13:00:05 New discovery! Ux-61 makes 766 isotopes in Univers Bohr
 
 I was going through my decay.BOHR.otom file to see the edges of each otom and see if there was a chance the predicted output might be different and uncover something. It did!
-[ ] should also check Lu-42  + 5000
-[ ] should also check Wy-56  + 5000
-[ ] should also check Ux-60  + 5000
-[ ] should also check Co-73  + 8000
-[ ] should also check Vl-82  + 9000
-[ ] should also check Aw-104 + 10000
-[ ] should also check Kn-106 + 10000
+[x] should also check Lu-42  + 5000
+[f] should also check Wy-56  + 5000 => makes ClRo() + 3634.97 using nuclear+decay+metallic
+[x] should also check Ux-60  + 5000
+[x] should also check Co-73  + 8000
+[x] should also check Vl-82  + 9000
+[>] should also check Aw-104 + 10000
+[>] should also check Kn-106 + 10000
 
-OTOMRO 613069: Da-113⁻ + 12000 => Pb-52 + Ux-61 + 2,006.6337538 using 9993.37 nuclear
+[r]|  Ro-22⁺ +  Ok-89⁺   +[  1769.36 -  10600] => Ax-111              | decay, nuclear               | OTOMRO  109903 |
+[r]|   T-15⁺ + Ax-111ª   +[  1546.01 -   1547] => P-22 + Aw-104       | decay, nuclear               | OTOMRO  255187 |
+[r] Aw-104 + 10000 => ? Ns-56 + Ux-48 using 6769.96
 
-[ ] add to files
-  [ ] bookmark to Firefox
-  [ ] add otoms.shapescan.data.BOHR.otom
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
-  [ ] add to syntax/otom.vim
-  [ ] add to parseReactorLog.pl
-  [ ] add to old_working_parseReactorLog.pl
+[r]|   P-21⁺ + Kn-107⁺   +[  1928.51 -   5000] => P-22 + Kn-106       | decay, nuclear               | OTOMRO         |
+[r] Kn-106 + 10000 => ? SUCCESS! makes Ai-57 + Ux-49 + 2,676.916445581494372163 using 7323.08 nuclear OTOMRO 620087
+
+need to narrow down the Wy-56 fission:
+[f] Wy-56  + 3600? => nope that makes ClRo
+[f] Wy-56  + 3400? => nope that decays to L-56
+[f] Wy-56  + 3500? => nope that decays to L-56
+[f] Wy-56  + 3580? => nope that makes ClRo using 3563.97
+[r] Wy-56  + 3550? => makes Ro-26 + Cl-30 using 3512.73 nuclear+decay
+
+[r]|   K-34∙ +  Kk-70ª   +[  3459.34*-  20000] => Da-104              | decay, nuclear               | OTOMRO  265504 |
+[r]|  Eb-22∙ + Da-104ª   +[  3243.01 -   5000] => P-22 + Ok-104       | decay, nuclear               | OTOMRO         |
+[r]|  Eb-22∙ + Ok-104ª   +[  3132.81 -   5000] => P-22 + Dd-104       | decay, nuclear               | OTOMRO         |
+[r]|  Eb-22∙ + Dd-104⁻   +[  3034.54 -   5000] => P-22 + Nm-104       | decay, nuclear               | OTOMRO  337587 |
+[r]|  Eb-22∙ + Nm-104⁻   +[  2994.96 -   5000] => P-22 + Se-104       | decay, nuclear               | OTOMRO         |
+[r]| Se-104⁻             +[  8864.97 -  12000] => V-48 + Wy-56        | nuclear                      | OTOMRO  505070 |
+
+
+OTOMRO 613069: Da-113⁻ + 12000 => Pb-52 + Ux-61⁻ + 2,006.6337538 using 9993.37 nuclear
+
+[.] add to files
+  [c] bookmark to Firefox
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
   [x] add to otom_reactions.BOHR.pl
-  [ ] add to chains.bohr.otom
-  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
-  [ ] add to checkingsomething-stab-chart.txt
-  [ ] add to decay.bohr.otom
-  [ ] add to checklist.bohr.otom
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
   [ ] make it myself
-  [ ] grabtheseimages.sh
-  [ ] add to isotopes_worker.bohr.sh
-  [ ] add to get_isotopes_bohr.alchemy.pl
-  [ ] add to token_id_sort_order-bohr.otom
-  [ ] add to token_id_sort_order_1_column-bohr.otom
-  [ ] add to token_ids-bohr.csv
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
   [ ] add to bohr_chain_recipes_for_morpheus.csv
 
 2025-09-26 Sep.Fri 12:06:39
@@ -3953,7 +5603,36 @@ OTOMRO 500125 Dd-108⁻ + 12000 => Uq-50 + L-58 + 3,046.063838651353307796 using
 
 try splitting L-58 to make Ro-27 plus undiscovered Cl-31 BUT IT WILL BE TRICKY since L-* likes to split and then chemically make ClRo(). And.... looking at the reaction history no one has yet successfully split an L otom into Cl plus Ro. Yikes.
 [f] L-58⁻ + 3350 => ? Cl-31 + Ro-27 ---> nope it decayed to Ux-58 using 167.50 decay
-[*] L-58⁻ + 4665 => ? Cl-31 + Ro-27
+
+here's the range:
+[Ux-58    ][ Cl-31 + Ro-27 ][  ClRo(Cl-31,Ro-27)]
+[0 - 3350 ][ 3351 ?-? 3808 ][ 3808.45-10000     ]
+
+[r] L-58⁻ + 3720 => ? Cl-31 + Ro-27 ---> SUCCESS! makes Cl-31 + Ro-27 + 27.062368159518335631 using 3692.94 nuclear OTOMRO 622032
+
+here's the updated range, with boundaries that still need to be resolved:
+[Ux-58    ][ Cl-31 + Ro-27 ][  ClRo(Cl-31,Ro-27)]
+[0 - 3350 ][ 3693 ?-? 3720 ][ 3808.45-10000     ]
+
+
+[-]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+[-]|  Eb-22∙ +  Nm-97ª   +[  3060.81*-   4500] => P-22 + Se-97        | decay, nuclear               | OTOMRO  275648*|
+[-]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[-]|  Ct-17⁻ +  Se-97ª   +[  1814.84*-   6000] => P-22 + Lx-92        | decay, nuclear               | OTOMRO  170621 |
+[-]|   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        | decay, nuclear               | OTOMRO  240848 |
+[-]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[r]|   P-24⁻ +  Lx-94⁻   +[  2340.42 -   6000] => P-22 + Lx-96        | decay, nuclear               | OTOMRO  240854 |
+[-]|   As-7∙ +  Ct-17⁻   +[   517.70*-   5000] => P-24                | decay, nuclear               | OTOMRO  202024 |
+[-]|  Ct-17⁻ +  S-102ª   +[  1788.31*-   5000] => P-22 + Nm-97        | decay, nuclear               | OTOMRO  273588 |
+[-]|   P-24⁻ +  Nm-97ª   +[  2488.17*-   4000] => P-22 + Nm-99        | decay, nuclear               | OTOMRO  280038 |
+[-]|  Eb-22∙ +  Nm-99ª   +[  3072.66 -   4500] => P-22 + Se-99        | decay, nuclear               | OTOMRO  386410 |
+[-]|   Sr-3∙ +  Se-99∙   +[  1751.37*-   5000] => P-22 + Yv-80        | decay, nuclear               | OTOMRO  214639 |
+[-]|  Yv-80⁻             +[  6516.77 -  12000] => K-37 + Dx-43        | nuclear                      | OTOMRO  137232 |
+[-]|  Dx-43⁻             +[  2550.90 -   5000] => Xj-20 + Eb-23       | nuclear                      | OTOMRO         |
+[r]|  Eb-23⁻             +[   914.76 -   2000] => Gj-11 + Gj-12       | nuclear                      | OTOMRO         |
+[r]|  Gj-12⁻ +  Lx-96⁻   +[  1349.42 -   5000] => Dd-108              | decay, nuclear               | OTOMRO  528299 | intermediate isotope -> Nm-108⁻ => Dd-108⁻ 
+[r]| Dd-108⁻             +[  8798.94 -  12000] => Uq-50 + L-58        | nuclear                      | OTOMRO  528499 |
+
 
 
 [c] make these and split them to see if we can narrow down the likely ranges

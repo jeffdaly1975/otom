@@ -800,6 +800,11 @@ my %idhash=(
 763 => "Iu-69",
 764 => "V-49",
 765 => "D-72",
+766 => "Ai-57",
+767 => "Ux-61",
+768 => "Yu-33",
+769 => "Cl-31",
+770 => "Cj-83",
 );
 
 
@@ -1569,6 +1574,11 @@ my %hexhash=(
  "Iu-69" => "351533309dd49c1cfbeadbd94ecd9c7a872d1449d7e1cdef69239af850107aca",
  "V-49"  => "0914d1d18770bf5f42eaca67bad78e7ba03466b7b75fe631bcb02a43457f7a47",
  "D-72"  => "2c5f145abd77f2fd92a8068cdc478141f174a60d99a8961350da41dde6c1c2fc",
+ "Ai-57" => "39d64d0e35e0ce73b03f1875632dec55b840972aa353d472af08b6d2b808a7b9",
+ "Ux-61" => "2c4dd4d1b564338e47dd705ca33a5a7604de5791950824f755ecab5209b9913b",
+ "Yu-33" => "013437b61b0b9cd41867b342ddfe5dde12c6263d12a02c998facdc4b7f523daf",
+ "Cl-31" => "4a8ecb629b64a527769e1cd54d20fa30c6128dcb78e52e6d9f9a3f1275299ea4",
+ "Cj-83" => "c557a23cab608dca18da1ad4010e25e2cdc036eef5c72ee7ba75a30ffd995748",
 );
 
 # query the blockchain via alchemy 
