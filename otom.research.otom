@@ -1,3 +1,6 @@
+2025-09-30 Sep.Tue 20:16:58 Ive decided I should make an adjustment to the chains files. I should have the total column always be an INTEGER rather than a FLOAT. I'll keep the range minimums as FLOAT since thats how we get them back from the app and it helps narrow down to lowest, and keep the range max as INTEGER since that's the format we input it as. I was hoping this would also fix the issue of where I sort the whole file by least to most expensive, and that means that there are several instances where 2 rows are in reversed order because it costs say 1234.50 to make X and X also beta+ decays to Y which costs 0 extra, making it cost the exact same as X. Then sorting often puts those 2 lines in reverse order, so when I run my chain totalling tool, it sees a line USING Y before the line that shows X decays to Y, so the tool doesn't know how its made and how much it costs. If I make this change, then X will cost 1234.50 and have total 1235 but I guess since Y takes 0 input, it will have the same 1235 total. dang. 
+[ ] Perhaps I should make it a policy to add 0.01 or even 1 to each 0 input's total?
+
 2025-09-30 Sep.Tue 10:53:07
 [c] look at these to see if any new stuff can be made
 [c] need to cross reference with reaction logs to see the attempts at these
@@ -52,7 +55,7 @@ so a bunch of these land on intermediate isotopes that I've already decided are 
 
 
 2025-09-29 Sep.Mon 22:50:43
-[ ]possible?
+[-]possible? All these land on isotopes I believe to be impossible
    7 + 1073| Ei-5∙   + Ji-124⁻ | -> Kn-129ª (0.58?) => Nm-107⁻ + P-22
   15 + 1103| Dz-7⁺   + Aw-125ª | -> I-132⁻  (0.31?) => Jb-132ª
   16 + 1103| Dz-8∙   + Aw-125ª | -> I-133⁻  (0.31?) => Jb-133ª
