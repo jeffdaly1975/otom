@@ -3269,21 +3269,21 @@ foreach my $otomro (sort {$a <=> $b} keys %db){
 # ]]] determine effective reaction cost
 
 
-########################################################################################################################
-# use Data::Dumper to dump these for debug inspection
-########################################################################################################################
-
-open(my $dump, ">", "dumped.db.txt") or die;
-print $dump Dumper(%db);
-close $dump;
-
-open(my $dump2, ">", "dumped.recipes.txt") or die;
-print $dump2 Dumper(%recipes);
-close $dump2;
-
-open(my $dump3, ">", "dumped.cheap_hash.txt") or die;
-print $dump3 Dumper(%cheap_hash);
-close $dump3;
+## ########################################################################################################################
+## # use Data::Dumper to dump these for debug inspection
+## ########################################################################################################################
+## 
+## open(my $dump, ">", "dumped.db.txt") or die;
+## print $dump Dumper(%db);
+## close $dump;
+## 
+## open(my $dump2, ">", "dumped.recipes.txt") or die;
+## print $dump2 Dumper(%recipes);
+## close $dump2;
+## 
+## open(my $dump3, ">", "dumped.cheap_hash.txt") or die;
+## print $dump3 Dumper(%cheap_hash);
+## close $dump3;
 
 
 
