@@ -1,3 +1,94 @@
+2025-10-02 Oct.Thu 22:49:02 Got through  [Eb .. Uq]
+
+2025-10-02 Oct.Thu 16:52:11
+I've got through [Sr .. Xj] isotopes so far.
+Marking them in the stab chart with [&~!*?] to indicate discoverability status like these:
+ &Sr-4   "&" = there are no 2 inputs which could possibly sum to this, nor a single input that fissions this way. As new isotopes are discovered, this needs to be reevaluated
+ !Ei-2   "!" = 2 inputs sum to it, but they have been observed in the blockchain reaction history to not work. They do one of (1) allow 1 or both inputs to decay if applicable or (2) they have a metallic or chemical reaction (with possible decay plus those) at low and high NRG input ranges. So it seems it doesn't hit the intermediate isotope from 0 to like 25000 NRG
+ ?T-13   "?" = 2 inputs sum to it, so there is a path, but we haven't seen it executed or it has been but not with enough NRG to rule it out.
+ *Gj-13  "*" = this intermediate isotope has been hit by 2 inputs reacting, as observed in the reaction history as it producing the intermediate, and then applying decay rules and we see it output the decay result.
+ ~Sr-1   "~" = this isotope has been discovered
+
+ [[ ]] i should I be including the potential fission outputs of reacting a single input with different amounts of NRG. This does make it possible to find new stuff
+that means at the least:
+ [ ] take the rows from the decay.bohr.otom file and put them in the temp-bohr-findnewstuff.otom file, and mark those isotopes too
+
+ [ ] |otom|protons|
+ [c] | Sr |  1    |
+ [c] | Ei |  2    |
+ [c] | As |  3    |
+ [c] | Dz |  4    |
+ [c] | Gj |  5    |
+ [c] | Vi |  6    |
+ [c] | Ct |  7    |
+ [c] |  T |  8    |
+ [c] | Xj |  9    |
+ [c] | Eb | 10    |
+ [c] |  P | 11    |
+ [c] | Ro | 12    |
+ [c] | Cl | 13    |
+ [c] | Yu | 14    |
+ [c] | Nd | 15    |
+ [c] |  K | 16    |
+ [c] | Mt | 17    |
+ [c] | Lu | 18    |
+ [c] | Dx | 19    |
+ [c] | Gd | 20    |
+ [c] |  V | 21    |
+ [c] | Uq | 22    |
+ [*] | Pb | 23    |
+ [ ] | Wy | 24    |
+ [ ] |  L | 25    |
+ [ ] | Ux | 26    |
+ [ ] | Pg | 27    |
+ [ ] | Qe | 28    |
+ [ ] |  C | 29    |
+ [ ] | Ns | 30    |
+ [ ] | Ai | 31    |
+ [ ] |  F | 32    |
+ [ ] | Gy | 33    |
+ [ ] | Kk | 34    |
+ [ ] | Yv | 35    |
+ [ ] | Cj | 36    |
+ [ ] | Iu | 37    |
+ [ ] |  D | 38    |
+ [ ] | Co | 39    |
+ [ ] |  W | 40    |
+ [ ] | Lx | 41    |
+ [ ] |  N | 42    |
+ [ ] |  U | 43    |
+ [ ] | Vl | 44    |
+ [ ] | Se | 45    |
+ [ ] | Nm | 46    |
+ [ ] | Dd | 47    |
+ [ ] | Ok | 48    |
+ [ ] | Da | 49    |
+ [ ] |  S | 50    |
+ [ ] |  Z | 51    |
+ [ ] | Cv | 52    |
+ [ ] | Vt | 53    |
+ [ ] | Ek | 54    |
+ [ ] | Ji | 55    |
+ [ ] | Aw | 56    |
+ [ ] | Kn | 57    |
+ [ ] | Ha | 58    |
+ [ ] | Ax | 59    |
+ [ ] |  I | 60    |
+ [ ] | Jb | 61    |
+ [ ] | Go | 62    |
+ [ ] |  X | 63    |
+ [ ] | ?? | 64    |
+ [ ] | Eh | 65    |
+ [ ] | Ys | 66    |
+ [ ] | ?? | 67    |
+ [ ] | ?? | 68    |
+
+
+
+2025-10-02 Oct.Thu 15:42:16 Working on updating FILE checkingsomething-stab-chart.txt
+
+770 bohr isotopes regex: \<\(Sr-1\|Sr-2\|Sr-3\|Ei-4\|Ei-5\|As-5\|As-6\|As-7\|Dz-7\|Dz-8\|Dz-9\|Dz-10\|Gj-9\|Gj-10\|Gj-11\|Gj-12\|Vi-10\|Vi-11\|Vi-12\|Vi-13\|Vi-14\|Vi-15\|Ct-13\|Ct-14\|Ct-15\|Ct-16\|Ct-17\|T-14\|T-15\|T-16\|T-17\|T-18\|T-19\|Xj-16\|Xj-17\|Xj-18\|Xj-19\|Xj-20\|Xj-21\|Eb-19\|Eb-20\|Eb-21\|Eb-22\|Eb-23\|P-20\|P-21\|P-22\|P-23\|P-24\|P-25\|P-26\|Ro-22\|Ro-23\|Ro-24\|Ro-25\|Ro-26\|Ro-27\|Ro-28\|Cl-24\|Cl-25\|Cl-26\|Cl-27\|Cl-28\|Cl-29\|Cl-30\|Cl-31\|Yu-26\|Yu-27\|Yu-28\|Yu-29\|Yu-30\|Yu-31\|Yu-32\|Yu-33\|Nd-27\|Nd-28\|Nd-29\|Nd-30\|Nd-31\|Nd-32\|Nd-33\|Nd-34\|K-29\|K-30\|K-31\|K-32\|K-33\|K-34\|K-35\|K-36\|K-37\|Mt-31\|Mt-32\|Mt-33\|Mt-34\|Mt-35\|Mt-36\|Mt-37\|Mt-38\|Mt-39\|Lu-34\|Lu-35\|Lu-36\|Lu-37\|Lu-38\|Lu-39\|Lu-40\|Lu-41\|Lu-42\|Dx-35\|Dx-36\|Dx-37\|Dx-38\|Dx-39\|Dx-40\|Dx-41\|Dx-42\|Dx-43\|Dx-44\|Gd-37\|Gd-38\|Gd-39\|Gd-40\|Gd-41\|Gd-42\|Gd-43\|Gd-44\|Gd-45\|Gd-46\|V-39\|V-40\|V-41\|V-42\|V-43\|V-44\|V-45\|V-46\|V-47\|V-48\|V-49\|Uq-41\|Uq-42\|Uq-43\|Uq-44\|Uq-45\|Uq-46\|Uq-47\|Uq-48\|Uq-49\|Uq-50\|Uq-51\|Uq-52\|Pb-43\|Pb-44\|Pb-45\|Pb-46\|Pb-47\|Pb-48\|Pb-49\|Pb-50\|Pb-51\|Pb-52\|Pb-53\|Wy-45\|Wy-46\|Wy-47\|Wy-48\|Wy-49\|Wy-50\|Wy-51\|Wy-52\|Wy-53\|Wy-54\|Wy-55\|Wy-56\|L-46\|L-47\|L-48\|L-49\|L-50\|L-51\|L-52\|L-53\|L-54\|L-55\|L-56\|L-57\|L-58\|Ux-48\|Ux-49\|Ux-50\|Ux-51\|Ux-52\|Ux-53\|Ux-54\|Ux-55\|Ux-56\|Ux-57\|Ux-58\|Ux-59\|Ux-60\|Ux-61\|Pg-50\|Pg-51\|Pg-52\|Pg-53\|Pg-54\|Pg-55\|Pg-56\|Pg-57\|Pg-58\|Pg-59\|Pg-60\|Pg-61\|Pg-62\|Qe-52\|Qe-53\|Qe-54\|Qe-55\|Qe-56\|Qe-57\|Qe-58\|Qe-59\|Qe-60\|Qe-61\|Qe-62\|Qe-63\|Qe-64\|C-53\|C-54\|C-55\|C-56\|C-57\|C-58\|C-59\|C-60\|C-61\|C-62\|C-63\|C-64\|C-65\|C-66\|C-67\|Ns-56\|Ns-57\|Ns-58\|Ns-59\|Ns-60\|Ns-61\|Ns-62\|Ns-63\|Ns-64\|Ns-65\|Ns-66\|Ns-67\|Ns-68\|Ns-69\|Ai-57\|Ai-58\|Ai-59\|Ai-60\|Ai-61\|Ai-62\|Ai-63\|Ai-64\|Ai-65\|Ai-66\|Ai-67\|Ai-68\|Ai-69\|Ai-70\|Ai-71\|F-59\|F-60\|F-61\|F-62\|F-63\|F-64\|F-65\|F-66\|F-67\|F-68\|F-69\|F-70\|F-71\|F-72\|F-73\|Gy-62\|Gy-63\|Gy-64\|Gy-65\|Gy-66\|Gy-67\|Gy-68\|Gy-69\|Gy-70\|Gy-71\|Gy-72\|Gy-73\|Gy-74\|Gy-75\|Kk-63\|Kk-64\|Kk-65\|Kk-66\|Kk-67\|Kk-68\|Kk-69\|Kk-70\|Kk-71\|Kk-72\|Kk-73\|Kk-74\|Kk-75\|Kk-76\|Kk-77\|Kk-78\|Yv-66\|Yv-67\|Yv-68\|Yv-69\|Yv-70\|Yv-71\|Yv-72\|Yv-73\|Yv-74\|Yv-75\|Yv-76\|Yv-77\|Yv-78\|Yv-79\|Yv-80\|Cj-67\|Cj-68\|Cj-69\|Cj-70\|Cj-71\|Cj-72\|Cj-73\|Cj-74\|Cj-75\|Cj-76\|Cj-77\|Cj-78\|Cj-79\|Cj-80\|Cj-81\|Cj-82\|Cj-83\|Iu-69\|Iu-70\|Iu-71\|Iu-72\|Iu-73\|Iu-74\|Iu-75\|Iu-76\|Iu-77\|Iu-78\|Iu-79\|Iu-80\|Iu-81\|Iu-82\|Iu-83\|Iu-84\|D-72\|D-73\|D-74\|D-75\|D-76\|D-77\|D-78\|D-79\|D-80\|D-81\|D-82\|D-83\|D-84\|D-85\|D-86\|Co-73\|Co-74\|Co-75\|Co-76\|Co-78\|Co-79\|Co-80\|Co-81\|Co-82\|Co-83\|Co-84\|Co-85\|Co-86\|Co-87\|Co-88\|Co-89\|W-75\|W-76\|W-77\|W-78\|W-79\|W-80\|W-81\|W-82\|W-83\|W-84\|W-85\|W-86\|W-87\|W-88\|W-89\|W-90\|W-91\|Lx-76\|Lx-77\|Lx-78\|Lx-79\|Lx-80\|Lx-81\|Lx-82\|Lx-83\|Lx-84\|Lx-85\|Lx-86\|Lx-87\|Lx-88\|Lx-89\|Lx-90\|Lx-91\|Lx-92\|Lx-93\|Lx-94\|Lx-95\|Lx-96\|N-79\|N-80\|N-81\|N-82\|N-83\|N-84\|N-85\|N-86\|N-87\|N-88\|N-89\|N-90\|N-91\|N-92\|N-93\|N-94\|N-95\|N-96\|U-80\|U-81\|U-82\|U-83\|U-84\|U-85\|U-86\|U-87\|U-88\|U-89\|U-90\|U-91\|U-92\|U-93\|U-94\|U-95\|U-96\|U-97\|U-98\|U-99\|Vl-82\|Vl-83\|Vl-84\|Vl-85\|Vl-86\|Vl-87\|Vl-88\|Vl-89\|Vl-90\|Vl-91\|Vl-92\|Vl-93\|Vl-94\|Vl-95\|Vl-96\|Vl-97\|Vl-98\|Vl-99\|Vl-100\|Vl-101\|Se-84\|Se-85\|Se-86\|Se-87\|Se-88\|Se-89\|Se-90\|Se-91\|Se-92\|Se-93\|Se-94\|Se-95\|Se-96\|Se-97\|Se-98\|Se-99\|Se-100\|Se-101\|Se-102\|Se-103\|Se-104\|Nm-86\|Nm-87\|Nm-88\|Nm-89\|Nm-90\|Nm-91\|Nm-92\|Nm-93\|Nm-94\|Nm-95\|Nm-96\|Nm-97\|Nm-98\|Nm-99\|Nm-100\|Nm-101\|Nm-102\|Nm-103\|Nm-104\|Nm-105\|Nm-106\|Dd-88\|Dd-89\|Dd-90\|Dd-91\|Dd-92\|Dd-93\|Dd-94\|Dd-95\|Dd-96\|Dd-97\|Dd-98\|Dd-99\|Dd-100\|Dd-101\|Dd-102\|Dd-103\|Dd-104\|Dd-105\|Dd-106\|Dd-107\|Dd-108\|Ok-89\|Ok-90\|Ok-91\|Ok-92\|Ok-93\|Ok-94\|Ok-95\|Ok-96\|Ok-97\|Ok-98\|Ok-99\|Ok-100\|Ok-101\|Ok-102\|Ok-103\|Ok-104\|Ok-105\|Ok-106\|Ok-107\|Ok-108\|Ok-109\|Ok-110\|Ok-111\|Da-90\|Da-91\|Da-92\|Da-93\|Da-94\|Da-95\|Da-96\|Da-97\|Da-98\|Da-99\|Da-100\|Da-101\|Da-102\|Da-103\|Da-104\|Da-105\|Da-106\|Da-107\|Da-108\|Da-109\|Da-110\|Da-111\|Da-112\|Da-113\|S-94\|S-95\|S-96\|S-97\|S-98\|S-99\|S-100\|S-101\|S-102\|S-103\|S-104\|S-105\|S-106\|S-107\|S-108\|S-109\|S-112\|S-113\|S-114\|S-115\|Z-95\|Z-96\|Z-97\|Z-98\|Z-99\|Z-100\|Z-101\|Z-102\|Z-103\|Z-104\|Z-105\|Z-106\|Z-107\|Z-108\|Z-109\|Z-110\|Z-111\|Z-112\|Z-113\|Z-114\|Z-115\|Z-116\|Z-117\|Cv-97\|Cv-98\|Cv-99\|Cv-100\|Cv-101\|Cv-102\|Cv-103\|Cv-104\|Cv-105\|Cv-106\|Cv-107\|Cv-108\|Cv-109\|Cv-110\|Cv-111\|Cv-114\|Cv-115\|Cv-116\|Cv-117\|Cv-118\|Cv-119\|Vt-98\|Vt-99\|Vt-100\|Vt-101\|Vt-102\|Vt-103\|Vt-104\|Vt-105\|Vt-106\|Vt-107\|Vt-108\|Vt-109\|Vt-110\|Vt-111\|Vt-112\|Vt-119\|Vt-120\|Vt-121\|Vt-122\|Ek-99\|Ek-100\|Ek-101\|Ek-102\|Ek-103\|Ek-104\|Ek-105\|Ek-106\|Ek-107\|Ek-108\|Ek-109\|Ek-110\|Ek-111\|Ek-112\|Ek-113\|Ek-119\|Ek-120\|Ek-121\|Ek-122\|Ek-123\|Ji-103\|Ji-104\|Ji-105\|Ji-106\|Ji-107\|Ji-108\|Ji-109\|Ji-110\|Ji-111\|Ji-112\|Ji-113\|Ji-114\|Ji-121\|Ji-122\|Ji-123\|Ji-124\|Aw-104\|Aw-105\|Aw-106\|Aw-107\|Aw-108\|Aw-109\|Aw-110\|Aw-111\|Aw-112\|Aw-113\|Aw-114\|Aw-115\|Aw-124\|Aw-125\|Kn-106\|Kn-107\|Kn-108\|Kn-109\|Kn-110\|Kn-111\|Kn-112\|Kn-113\|Kn-114\|Kn-115\|Kn-116\|Ha-108\|Ha-109\|Ha-110\|Ha-111\|Ha-112\|Ha-113\|Ha-114\|Ha-115\|Ha-116\|Ha-117\|Ax-109\|Ax-110\|Ax-111\|I-113\|I-114\|I-115\|Jb-115\|Jb-116\|Go-117\|Go-118\|X-119\|Eh-123\|Eh-124\|Ys-125\)\>
+
 2025-09-30 Sep.Tue 20:16:58 Ive decided I should make an adjustment to the chains files. I should have the total column always be an INTEGER rather than a FLOAT. I'll keep the range minimums as FLOAT since thats how we get them back from the app and it helps narrow down to lowest, and keep the range max as INTEGER since that's the format we input it as. I was hoping this would also fix the issue of where I sort the whole file by least to most expensive, and that means that there are several instances where 2 rows are in reversed order because it costs say 1234.50 to make X and X also beta+ decays to Y which costs 0 extra, making it cost the exact same as X. Then sorting often puts those 2 lines in reverse order, so when I run my chain totalling tool, it sees a line USING Y before the line that shows X decays to Y, so the tool doesn't know how its made and how much it costs. If I make this change, then X will cost 1234.50 and have total 1235 but I guess since Y takes 0 input, it will have the same 1235 total. dang. 
 [ ] Perhaps I should make it a policy to add 0.01 or even 1 to each 0 input's total?
 

@@ -179,10 +179,10 @@ hi otom_metal        ctermbg=lightgray      ctermfg=black
 
 
 " Make these symbols stand out
-syn match UnreachableIsotope      /&[A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
-syn match LikelyImpossibleIsotope /![A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
-syn match LikelyPossibleIsotope   /?[A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
-syn match ObservedIntermediate    /\*[A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/me=s+1
+syn match UnreachableIsotope      /&[0-9A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][0-9a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
+syn match LikelyImpossibleIsotope /![0-9A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][0-9a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
+syn match LikelyPossibleIsotope   /?[0-9A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][0-9a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
+syn match ObservedIntermediate    /\*[0-9A-Z⁰¹²³⁴⁵⁶⁷⁸⁹][0-9a-z⁰¹²³⁴⁵⁶⁷⁸⁹]\=-\d\+/
 
 hi        UnreachableIsotope      ctermbg=NONE ctermfg=grey   cterm=NONE
 hi        LikelyImpossibleIsotope ctermbg=NONE ctermfg=red    cterm=NONE
