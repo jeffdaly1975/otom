@@ -8,8 +8,7 @@
  | Take note: Just because a chain is shorter (2-chain vs 4-chain) doesn't mean cheaper.
  | So there are recipes in here for example for Bt-74 as a 2-chain which is more expensive than the 3-chain recipe
  +----------------------------------------------------------------------------------------------------
- | Useful vim to do inline math replacing "1000.0-100.0+200.0" with "1100.00" 
- |   : %s/::\(\s*[0-9.]\+\s*[+-]\s*[0-9.+-]\+\)\s*|/\=printf("::%9.2f |", eval(  submatch(1) ))/
+ | Useful vim to do inline math replacing "1000.0-100.0+200.0" with "1100.00": %s/::\(\s*[0-9.]\+[ +-][0-9. +-]\+\)\s*|/\=printf("::%9.2f |", eval(  submatch(1) ." + 0.0"))/
  +----------------------------------------------------------------------------------------------------
 
  0-chain Af-7   ::     0.00 | MINEABLE

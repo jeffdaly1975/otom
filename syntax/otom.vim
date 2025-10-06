@@ -19487,6 +19487,7 @@ syn match chain3  /\<Ok-105\>/
 syn match chain3  /\<Ok-106\>/
 syn match chain3  /\<Ok-92\>/
 syn match chain3  /\<Ok-93\>/
+syn match chain3  /\<Ok-94\>/
 syn match chain3  /\<Ok-95\>/
 syn match chain3  /\<Qe-62\>/
 syn match chain3  /\<S-106\>/
@@ -19520,7 +19521,6 @@ syn match chain3  /\<Z-109\>/
 syn match chain3  /\<Z-97\>/
 syn match chain3  /\<Z-98\>/
 syn match chain3  /\<Z-99\>/
-syn match chain3  /\<Ok-94\>/
 syn match chain4  /\<Aw-106\>/
 syn match chain4  /\<Cj-81\>/
 syn match chain4  /\<Co-88\>/
@@ -19736,6 +19736,7 @@ syn match chain6  /\<Yv-67\>/
 syn match chain6  /\<Z-115\>/
 syn match chain6  /\<Z-116\>/
 syn match chain6  /\<Z-117\>/
+syn match chain7  /\<Ai-70\>/
 syn match chain7  /\<Ai-71\>/
 syn match chain7  /\<C-54\>/
 syn match chain7  /\<Cj-68\>/
@@ -19758,6 +19759,8 @@ syn match chain7  /\<Kk-63\>/
 syn match chain7  /\<Kk-65\>/
 syn match chain7  /\<Kk-77\>/
 syn match chain7  /\<Kk-78\>/
+syn match chain7  /\<Lu-34\>/
+syn match chain7  /\<Mt-31\>/
 syn match chain7  /\<N-79\>/
 syn match chain7  /\<Nd-27\>/
 syn match chain7  /\<Ns-56\>/
@@ -19769,17 +19772,16 @@ syn match chain7  /\<Qe-53\>/
 syn match chain7  /\<Qe-64\>/
 syn match chain7  /\<Ro-28\>/
 syn match chain7  /\<S-115\>/
+syn match chain7  /\<T-14\>/
 syn match chain7  /\<Ux-61\>/
 syn match chain7  /\<V-49\>/
 syn match chain7  /\<Vt-122\>/
 syn match chain7  /\<W-75\>/
 syn match chain7  /\<Yv-66\>/
 syn match chain7  /\<Yv-79\>/
-syn match chain7  /\<Lu-34\>/
-syn match chain7  /\<T-14\>/
-syn match chain7  /\<Mt-31\>/
-syn match chain8  /\<Ai-70\>/
+syn match chain8  /\<Cj-67\>/
 syn match chain8  /\<Co-73\>/
+syn match chain8  /\<D-71\>/
 syn match chain8  /\<Dd-108\>/
 syn match chain8  /\<Iu-69\>/
 syn match chain8  /\<Iu-84\>/
@@ -19790,10 +19792,12 @@ syn match chain8  /\<Vl-82\>/
 syn match chain8  /\<Xj-16\>/
 syn match chain8  /\<Yu-33\>/
 syn match chain9  /\<C-67\>/
-syn match chain8  /\<Cj-67\>/
+syn match chain9  /\<Gy-76\>/
+syn match chain9  /\<Iu-85\>/
 syn match chain9  /\<L-58\>/
 syn match chain9  /\<Ok-111\>/
 syn match chain10 /\<Cl-31\>/
+syn match chain10 /\<Nd-35\>/
 syn match chain11 /\<Cj-83\>/
 
 " {{{{
