@@ -19563,7 +19563,7 @@ syn match chain3  /\<Aw-110\>/
 syn match chain3  /\<C-63\>/
 syn match chain3  /\<Cj-79\>/
 syn match chain3  /\<Cj-80\>/
-syn match chain3  /\<Co-84\>/
+syn match chain2  /\<Co-84\>/
 syn match chain3  /\<Co-87\>/
 syn match chain3  /\<Cv-101\>/
 syn match chain3  /\<Cv-110\>/
@@ -19608,7 +19608,7 @@ syn match chain3  /\<Ok-92\>/
 syn match chain3  /\<Ok-93\>/
 syn match chain3  /\<Ok-94\>/
 syn match chain3  /\<Ok-95\>/
-syn match chain3  /\<Qe-62\>/
+syn match chain2  /\<Qe-62\>/
 syn match chain3  /\<S-106\>/
 syn match chain3  /\<S-107\>/
 syn match chain3  /\<S-109\>/
@@ -19700,7 +19700,7 @@ syn match chain4  /\<W-89\>/
 syn match chain4  /\<W-90\>/
 syn match chain4  /\<Wy-46\>/
 syn match chain4  /\<Yv-80\>/
-syn match chain4  /\<Z-110\>/
+syn match chain3  /\<Z-110\>/
 syn match chain4  /\<Z-111\>/
 syn match chain4  /\<Z-96\>/
 syn match chain5  /\<Ai-58\>/
