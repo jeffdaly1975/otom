@@ -805,6 +805,13 @@ my %idhash=(
 768 => "Yu-33",
 769 => "Cl-31",
 770 => "Cj-83",
+771 => "D-87" ,
+772 => "W-92" ,
+773 => "Mt-40",
+774 => "Gy-76",
+775 => "D-71" ,
+776 => "Iu-85",
+777 => "Nd-35",
 );
 
 
@@ -1579,6 +1586,13 @@ my %hexhash=(
  "Yu-33" => "013437b61b0b9cd41867b342ddfe5dde12c6263d12a02c998facdc4b7f523daf",
  "Cl-31" => "4a8ecb629b64a527769e1cd54d20fa30c6128dcb78e52e6d9f9a3f1275299ea4",
  "Cj-83" => "c557a23cab608dca18da1ad4010e25e2cdc036eef5c72ee7ba75a30ffd995748",
+ "D-87"  => "fe4c0a7405f490d10d7ea75d7ed5832e1d75988e9f0a8ed113796ce487d9636a",
+ "W-92"  => "3fc163acc26acb39729d530355e2613d22c0c95e3af612055d7401a2d76ee252",
+ "Mt-40" => "4a265a70c9eeb617568f0a6777029dfd4e0ed09aaba4373cb9d228046237d68b",
+ "Gy-76" => "b0d831158d0ea745f387879d9afacd09a1e44373fc825a429b66bc82eca36bbb",
+ "D-71"  => "c16f7397c97334ecae37f0ea7e1268ca71feb6558542e477a6cdcc0255b2e522",
+ "Iu-85" => "aa14801d0c92154c58fcab82bf5d2e1bc95e37f265cd1b0548d472c7e05b7aa9",
+ "Nd-35" => "8ac2039614005e227629e8ee9052a7889f8eb215a14e6b9f846eaf44f37737ec",
 );
 
 # query the blockchain via alchemy 

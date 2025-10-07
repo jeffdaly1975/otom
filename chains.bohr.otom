@@ -1151,6 +1151,7 @@
  7-chain Pg-62  :: 26778.59 |  Dz-10⁻ +  Uq-52⁻   +[   870.86 -   5000] => Pg-62               | decay, nuclear               | OTOMRO  537205 | intermediate isotope ->  Ux-62⁻ => Pg-62⁻  
  6-chain Ns-67  :: 26806.81 | Aw-124ª             +[ 11074.07 -  12000] => Ux-57 + Ns-67       | nuclear                      | OTOMRO  216627 |
  7-chain Yv-79  :: 26823.42 |  Ro-27⁻ +  Uq-52⁻   +[  1670.75 -  10000] => Yv-79               | decay, nuclear               | OTOMRO  532577 |
+ 8-chain D-87   :: 26825.25 |   P-26⁻ +  Ux-61⁻   +[  2118.71 -  12000] => D-87⁻               | decay, nuclear               | OTOMRO  658138*| intermediate isotope -> Iu-87⁻ 
  6-chain Yu-32  :: 27126.14 |  Ux-59⁻             +[  4070.16 -  10000] => Ro-27 + Yu-32       | nuclear                      | OTOMRO  529475 |
  7-chain V-49   :: 28359.12 |  Nm-106⁻            +[  8897.91 -  12000] => V-49 + L-57         | nuclear                      | OTOMRO  575747 |
  8-chain Yu-33  :: 29127.12 | Ux-61⁻              +[  4420.58 -  15000] => Ro-28 + Yu-33       | nuclear                      | OTOMRO  613780 |
@@ -1161,6 +1162,7 @@
  8-chain Dd-108 :: 34047.52 |  Gj-12⁻ +  Lx-96⁻   +[  1349.42 -   5000] => Dd-108              | decay, nuclear               | OTOMRO  528299 | intermediate isotope -> Nm-108⁻ => Dd-108⁻ 
  7-chain N-79   :: 34058.78 |   C-53⁺ +  Yu-26⁺   +[  1565.22 -   5000] => N-79                | decay, nuclear               | OTOMRO  528323 |
  7-chain S-115  :: 34209.46 |   T-19⁻ +  Lx-96⁻   +[  1787.16 -   5000] => S-115               | decay, nuclear               | OTOMRO  528210 | intermediate isotope -> Da-115⁻ => S-115⁻
+ 9-chain Mt-40  :: 34340.27 |   D-87⁻             +[  7515.02 -  12000] => Mt-40⁻ + V-47⁻      | nuclear                      | OTOMRO  658230*|
  8-chain Vl-82  :: 36734.66 |   K-29⁺ +   C-53⁺   +[  1537.79 -   5000] => Vl-82               | decay, nuclear               | OTOMRO  542738 | intermediate isotope ->  Se-82⁺ => Vl-82⁺  
  8-chain Co-73  :: 37552.62 |  Nd-27⁺ +   L-46⁺   +[  1307.03 -   5000] => Co-73               | decay, nuclear               | OTOMRO  613005 | intermediate isotope ->   W-73⁺ => Co-73⁺  
  9-chain D-73   :: 37552.62 |  Co-73⁺             +[     0.00 -      0] => D-73                | decay                        | OTOMRO  521942*|
@@ -1179,6 +1181,7 @@
  9-chain C-67   :: 46899.95 |  Vi-15⁻ +  Uq-52⁻   +[   995.90 -   5000] => C-67                | decay, nuclear               | OTOMRO  546344 | intermediate isotope ->  Qe-67⁻ => C-67⁻   
  7-chain Cj-82  :: 47111.01 |  Cl-30⁻ +  Uq-52⁻   +[  1688.60 -   5000] => Cj-82               | decay, nuclear               | OTOMRO  529218 | intermediate isotope ->  Yv-82⁻ => Cj-82⁻  
 11-chain Cj-83  :: 48319.19 |  Cl-31⁻ +  Uq-52⁻   +[  1624.84 -   5000] => Cj-83⁻              | decay, nuclear               | OTOMRO  626212 | intermediate isotope ->  Yv-83⁻ => Cj-83⁻
+11-chain W-92   :: 48797.72 |  Cl-31⁻ +  Ux-61⁻   +[  2263.37 -  12000] => W-92⁻               | decay, nuclear               | OTOMRO  658139*| intermediate isotope -> Co-92⁻ 
  8-chain Iu-84  :: 49712.38 |  Ro-28⁻ +  Wy-56⁻   +[  1707.09 -   5000] => Iu-84               | decay, nuclear               | OTOMRO  505088 | intermediate isotope ->  Cj-84⁻ => Iu-84⁻  
  9-chain Gy-76  :: 51090.72 |  Vi-15⁻ +  Ux-61⁻   +[  1269.70 -   5000] => Gy-76⁻              | decay, nuclear               | OTOMRO  652599*| intermediate isotope -> F-76⁻  => Gy-76⁻        
  9-chain Iu-85  :: 51799.65 |  Yu-33⁻ +  Uq-52⁻   +[  1882.96 -   5000] => Iu-85⁻              | decay, nuclear               | OTOMRO  652639*| intermediate isotope -> Cj-85⁻ => Iu-85⁻        

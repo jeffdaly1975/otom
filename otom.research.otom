@@ -6,26 +6,29 @@ OTOMRO 658230 |  D-87⁻            + 12000           => Mt-40⁻ + V-47⁻ + 44
 
 [.] add to files
   [c] bookmark to Firefox
-  [.] add otoms.shapescan.data.BOHR.otom
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
-  [ ] add to syntax/otom.vim
-  [ ] add to parseReactorLog.pl
-  [ ] add to old_working_parseReactorLog.pl
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add to syntax/otom.vim
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
   [x] add to otom_reactions.BOHR.pl
-  [ ] add to chains.bohr.otom
-  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
-  [ ] add to checkingsomething-stab-chart.txt
-  [ ] add to decay.bohr.otom
-  [ ] add to checklist.bohr.otom
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
   [c] make it myself
-  [ ] grabtheseimages.sh
-  [ ] add to isotopes_worker.bohr.sh
-  [ ] add to get_isotopes_bohr.alchemy.pl
-  [ ] add to token_id_sort_order-bohr.otom
-  [ ] add to token_id_sort_order_1_column-bohr.otom
-  [ ] add to token_ids-bohr.csv
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
   [ ] add to bohr_chain_recipes_for_morpheus.csv
 
+[c] Mark these as valid intermediates:
+ Iu-87⁻ ~~> *Iu-87⁻
+ Co-92⁻ ~~> *Co-92⁻
 
 2025-10-06 Oct.Mon 09:29:28
 
@@ -52,7 +55,7 @@ try:
 All of them but one are testing intermediates to see if they exist and would produce outputs we already have seen. 
 One of them has the potential to discover D-87
 
- [ ] | ~Nd-35⁻  +~Uq-52⁻  | ->?Iu-87⁻  (0.75?) =>?D-87⁻           
+ [c] | ~Nd-35⁻  +~Uq-52⁻  | ->?Iu-87⁻  (0.75?) => D-87⁻           
 
  [ ] | ~Cl-31⁻  +~Nd-35⁻  | ->?Qe-66⁻  (0.74?) =>~C-66⁻           
 
@@ -126,28 +129,31 @@ OTOMRO 652712 | Gy-76⁻            +  8000           => Nd-35 + Lu-41 + 2299.90
 try:
 [r] | Gy-76⁻ + 8000 => ? Nd-35 + Lu-41 ---> SUCCESS! makes Nd-35 + Lu-41 + 2,299.904989613109137281 using 5700.10 nuclear OTOMRO 652712
 
-[ ] mark F-76 Co-71 and Cj-84 as intermediates
+[c] mark F-76 Co-71 and Cj-85 as intermediates
+ F-76⁻  ~~> *F-76⁻  
+ Co-71⁺ ~~> *Co-71⁺ 
+ Cj-85⁻ ~~> *Cj-85⁻ 
 
 [.] add these to files
   [c] bookmark to Firefox
-  [.] add otoms.shapescan.data.BOHR.otom
-  [ ] add to convert_token_id_to_hex.pl script and run that to add to syntax
+  [c] add otoms.shapescan.data.BOHR.otom
+  [c] add to convert_token_id_to_hex.pl script and run that to add to syntax
   [c] add to syntax/otom.vim
-  [ ] add to parseReactorLog.pl
-  [ ] add to old_working_parseReactorLog.pl
+  [c] add to parseReactorLog.pl
+  [c] add to old_working_parseReactorLog.pl
   [x] add to otom_reactions.BOHR.pl
-  [ ] add to chains.bohr.otom
-  [ ] add to all_isotopes_stability_chart_universe_Bohr.txt
-  [ ] add to checkingsomething-stab-chart.txt
-  [ ] add to decay.bohr.otom
-  [ ] add to checklist.bohr.otom
+  [c] add to chains.bohr.otom
+  [c] add to all_isotopes_stability_chart_universe_Bohr.txt
+  [c] add to checkingsomething-stab-chart.txt
+  [c] add to decay.bohr.otom
+  [c] add to checklist.bohr.otom
   [c] make it myself
-  [ ] grabtheseimages.sh
-  [ ] add to isotopes_worker.bohr.sh
-  [ ] add to get_isotopes_bohr.alchemy.pl
-  [ ] add to token_id_sort_order-bohr.otom
-  [ ] add to token_id_sort_order_1_column-bohr.otom
-  [ ] add to token_ids-bohr.csv
+  [c] grabtheseimages.sh
+  [c] add to isotopes_worker.bohr.sh
+  [c] add to get_isotopes_bohr.alchemy.pl
+  [c] add to token_id_sort_order-bohr.otom
+  [c] add to token_id_sort_order_1_column-bohr.otom
+  [c] add to token_ids-bohr.csv
   [ ] add to bohr_chain_recipes_for_morpheus.csv
 
 2025-10-05 Oct.Sun 13:24:04 Searched my list of grouped bohr isotopes for any indermediate isotope (like *Nm-107) that could be found as the predicted final output from my list of potential reactions in temp-bohr-findnewstuff.otom
@@ -1797,11 +1803,11 @@ They are grouped by the set of reactions that might produce an intermediate isot
 | ->?Cj-66⁺  || 39 +  352|~Ct-13⁺  +~C-53⁺   | ->?Cj-66⁺  (0.49?) =>~Yv-66⁺          [ ] try?
 | ->?Cj-66⁺  ||133 +  217|~Nd-27⁺  +~V-39⁺   | ->?Cj-66⁺  (0.49?) =>~Yv-66⁺          [ ] try?
 
-| ->?Cj-85⁻  ||127 +  243|~Yu-33⁻  +~Uq-52⁻  | ->?Cj-85⁻  (0.60?) =>*Iu-85⁻          [ ] try?
+| ->?Cj-85⁻  ||127 +  243|~Yu-33⁻  +~Uq-52⁻  | ->?Cj-85⁻  (0.60?) =>*Iu-85⁻          [c] try? yep it makes ~Iu-85⁻
 
 | ->?Cl-32⁻  || 34 +   43|~Vi-15⁻  +~Ct-17⁻  | ->?Cl-32⁻  (0.47?) =>~Yu-32⁻          [ ] try?
 
-| ->?Co-71⁺  || 48 +  395|~T-14⁺   +~Ai-57⁺  | ->?Co-71⁺  (0.49?) =>*D-71⁺           [ ] try?
+| ->?Co-71⁺  || 48 +  395|~T-14⁺   +~Ai-57⁺  | ->?Co-71⁺  (0.49?) =>*D-71⁺           [c] try? yep it makes ~D-71⁺
 
 | ->?Co-90⁻  || 12 +  526|~As-7∙   +~Cj-83⁻  | ->?Co-90⁻  (0.66?) =>~W-90⁻           [ ] try?
 | ->?Co-90⁻  || 18 +  501|~Dz-10⁻  +~Yv-80⁻  | ->?Co-90⁻  (0.66?) =>~W-90⁻           [ ] try?
@@ -1815,7 +1821,7 @@ They are grouped by the set of reactions that might produce an intermediate isot
 | ->?Co-91⁻  ||112 +  310|~Cl-30⁻  +~Ux-61⁻  | ->?Co-91⁻  (0.66?) =>~W-91⁻           [ ] try?
 | ->?Co-91⁻  ||168 +  243|~Mt-39⁻  +~Uq-52⁻  | ->?Co-91⁻  (0.66?) =>~W-91⁻           [ ] try?
 
-| ->?Co-92⁻  ||113 +  310|~Cl-31⁻  +~Ux-61⁻  | ->?Co-92⁻  (0.66?) =>?W-92⁻           [ ] try?
+| ->?Co-92⁻  ||113 +  310|~Cl-31⁻  +~Ux-61⁻  | ->?Co-92⁻  (0.66?) =>?W-92⁻           [c] try? yep it makes ~W-92⁻
 
 | ->?Ct-18⁻  ||  3 +   34|~Sr-3∙   +~Vi-15⁻  | ->?Ct-18⁻  (0.33?) =>~T-18⁻           [ ] try?
 
@@ -1886,7 +1892,7 @@ They are grouped by the set of reactions that might produce an intermediate isot
 | ->?F-58⁺   ||  1 +  395|~Sr-1∙   +~Ai-57⁺  | ->?F-58⁺   (0.47?) =>~Ai-58⁺          [ ] try?
 | ->?F-58⁺   || 29 +  297|~Vi-10⁺  +~Ux-48⁺  | ->?F-58⁺   (0.47?) =>~Ai-58⁺          [ ] try?
 
-| ->?F-76⁻   || 34 +  310|~Vi-15⁻  +~Ux-61⁻  | ->?F-76⁻   (0.77?) =>*Gy-76⁻          [ ] try?
+| ->?F-76⁻   || 34 +  310|~Vi-15⁻  +~Ux-61⁻  | ->?F-76⁻   (0.77?) =>*Gy-76⁻          [c] try? yep it makes ~Gy-76⁻
 
 | ->?Gd-36⁺  ||  1 +  188|~Sr-1∙   +~Dx-35⁺  | ->?Gd-36⁺  (0.58?) =>~Dx-36⁺          [ ] try?
 
@@ -1910,7 +1916,7 @@ They are grouped by the set of reactions that might produce an intermediate isot
 | ->?Ha-106⁺ || 15 + 1019|~Dz-7⁺   +~Ek-99⁺  | ->?Ha-106⁺ (0.19?) =>~Kn-106⁺         [ ] try?
 | ->?Ha-106⁺ ||352 +  352|~C-53⁺   +~C-53⁺   | ->?Ha-106⁺ (0.19?) =>~Kn-106⁺         [ ] try?
 
-| ->?Iu-87⁻  || 86 +  310|~P-26⁻   +~Ux-61⁻  | ->?Iu-87⁻  (0.75?) =>?D-87⁻           [ ] try?
+| ->?Iu-87⁻  || 86 +  310|~P-26⁻   +~Ux-61⁻  | ->?Iu-87⁻  (0.75?) =>?D-87⁻           [c] try? yep it makes ~D-87⁻
 
 | ->?K-28⁺   || 48 +   48|~T-14⁺   +~T-14⁺   | ->?K-28⁺   (0.45?) =>~Nd-28⁺          [ ] try?
 
@@ -3067,7 +3073,7 @@ They are grouped by the set of reactions that might produce an intermediate isot
     [ ] mark them as such in the decay.BOHR.otom file which I somehow messed up the markings column. A ton of them have * that shouldn't.
     [ ] do a quality check by taking all the lines from temp-bohr-findnewstuff.otom that have no viable path, and cross reference that with the checkingsomething-stab-chart.txt
 
-2025-10-03 Oct.Fri 13:24:07 [ ] use this pile of fission reactions to update decay.BOHR.otom with missing information. These are gold!
+2025-10-03 Oct.Fri 13:24:07 [c] use this pile of fission reactions to update decay.BOHR.otom with missing information. These are gold!
 
 |  Dz-10⁻  +     5000 =>   Ei₂(Ei-5,Ei-5>)    +    4543.65 |     456.35 | metallic, nuclear            |
 |  Dz-10⁻  +    15000 =>   Ei₂(Ei-5,Ei-5>)    +   14043.65 |     956.35 | metallic, nuclear            |
