@@ -1,3 +1,12 @@
+2025-10-07 Oct.Tue 13:12:35 saw this probably shorter chain:
+|   664999*|bohr    |  Ux-57⁻ +  Cj-75ª                               +    15000 =>   P-22 + Z-110                                                                     +   10749.00 |    4251.00 | decay, nuclear               | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xb35510882e9ae9fc4a3aea834197125a1392af31b3823035cc9597c3f45898b7 | 0x4402e0acbb11bfef9213366cd27db490c57e2f64f4959b820c1013a96be7d73a | -> Go-132
+|   664703*|bohr    |  Pb-50⁻ +  Pg-56∙                               +    15000 =>   P-22 + Co-84                                                                     +   11346.29 |    3653.71 | decay, nuclear               | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x0039c8ba62a2535f209c3e7f00306c80cecb30a15efdeb84491171faa756cbcf | 0xcd3afd224de7376d1fe19ef17d5fc6988149d369356cf165ab6286eddcd4d678 | -> S-106
+|   664388*|bohr    |  Ct-17⁻ +   V-45⁻                               +     5000 =>   Qe-62                                                                            +    3644.06 |    1355.94 | nuclear                      | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x6a87384c246ee5d7020588ee3818a403b3d033ee5df97293df6142e1917b51b0 | 0x56782949cb3ca832fb6724b8dd31c6320d02bb22e1d4c5cb7eead14d90d77e89 | -> Qe-62
+
+2025-10-07 Oct.Tue 12:54:45
+[ ] what is the cheapest (least chains and lowest NRG input) reaction which I could test with like 100 iterations, to see if it avoids the inputs decaying and lands a ! or * output
+
+
 2025-10-06 Oct.Mon 13:46:01 Discovered 2 more. Now 776 isotopes in Universe Bohr.
 
 OTOMRO 658138 |  P-26⁻  + Ux-61⁻  + 12000 -> Iu-87⁻ => D-87⁻          + 9881.286063910187294823 using 2118.71 nuclear+decay
@@ -221,10 +230,10 @@ need to make:
 [r]    |  Ux-48⁺             +[  2670.73 -  10000] => Ro-22 + Yu-26       |
 [r]    |  Pg-50⁺             +[  2837.13 -   2860] => Ro-23 + Nd-27       |
 [r]    |  Uq-52⁻             +[  3099.77 -   5000] => P-24 + Ro-28        |
-[r]    |  Yu-26⁺             +[  2062.38 -  20000] => Vi-12 + T-14        | used 1165.53 [ ] update chains [ ] 0x? got even cheaper with    OTOMRO 652785 
-[r]    | Da-113⁻             +[  9993.37 -  12000] => Pb-52 + Ux-61       | used 9893.07 [ ] update chains
-[r]    |  Ro-28⁻             +[  1225.14 -   3000] => Vi-13 + Vi-15       | used 1224.94 [ ] update chains
-[r]    | Ux-61⁻              +[  4420.58 -  15000] => Ro-28 + Yu-33       | used 3891.63 [ ] update chains
+[r]    |  Yu-26⁺             +[  2062.38 -  20000] => Vi-12 + T-14        | used 1165.53 [c] update chains [c] 0x? got even cheaper with    OTOMRO 652785 
+[r]    | Da-113⁻             +[  9993.37 -  12000] => Pb-52 + Ux-61       | used 9893.07 [c] update chains
+[r]    |  Ro-28⁻             +[  1225.14 -   3000] => Vi-13 + Vi-15       | used 1224.94 [c] update chains
+[r]    | Ux-61⁻              +[  4420.58 -  15000] => Ro-28 + Yu-33       | used 3891.63 [c] update chains
 
 
 
@@ -1729,7 +1738,7 @@ regexes for the groups:
 
 They are grouped by the set of reactions that might produce an intermediate isotope, so I will want to try the cheapest of each.
 
-| ->?64-117⁺ ||133 +  861|~Nd-27⁺  +~Da-90⁺  | ->?64-117⁺ (0.50?) =>*X-117⁺          [ ] try?
+| ->?64-117⁺ ||133 +  861|~Nd-27⁺  +~Da-90⁺  | ->?64-117⁺ (0.50?) =>*X-117⁺          [x] try? observed OTOMRO 652646 used 5000 but got => Yu-27 + Ok-90 using 250.00 decay where both input isotopes decayed, so I think that means we mark 64-117 as !64-117
 
 | ->?64-146⁻ || 74 + 1043|~Eb-23⁻  +~Ek-123⁻ | ->?64-146⁻ (0.50?) =>?Eh-146⁻         [ ] try?
 | ->?64-146⁻ || 84 + 1011|~P-24⁻   +~Vt-122⁻ | ->?64-146⁻ (0.50?) =>?Eh-146⁻         [ ] try?
@@ -1926,8 +1935,8 @@ They are grouped by the set of reactions that might produce an intermediate isot
 | ->?Kk-62⁺  || 22 +  352|~Gj-9⁺   +~C-53⁺   | ->?Kk-62⁺  (0.59?) =>~Gy-62⁺          [ ] try?
 | ->?Kk-62⁺  || 29 +  332|~Vi-10⁺  +~Qe-52⁺  | ->?Kk-62⁺  (0.59?) =>~Gy-62⁺          [ ] try?
 
-| ->?Kk-80⁻  || 53 +  310|~T-19⁻   +~Ux-61⁻  | ->?Kk-80⁻  (0.77?) =>~Yv-80⁻          [ ] try?
-| ->?Kk-80⁻  || 99 +  243|~Ro-28⁻  +~Uq-52⁻  | ->?Kk-80⁻  (0.77?) =>~Yv-80⁻          [ ] try?
+| ->?Kk-80⁻  || 53 +  310|~T-19⁻   +~Ux-61⁻  | ->?Kk-80⁻  (0.77?) =>~Yv-80⁻          [-] try? observed OTOMRO 659080 with Mt-40⁻ + Mt-40⁻ +10000-> *Kk-80⁻ => Yv-80⁻
+| ->?Kk-80⁻  || 99 +  243|~Ro-28⁻  +~Uq-52⁻  | ->?Kk-80⁻  (0.77?) =>~Yv-80⁻          [-] try?
 
 | ->?Kn-104⁺ || 10 + 1019|~As-5⁺   +~Ek-99⁺  | ->?Kn-104⁺ (0.27?) =>~Aw-104⁺         [ ] try?
 
