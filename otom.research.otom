@@ -40,16 +40,20 @@
 ::INFO::
   Seamorphus made an Otom Sticker album app where you can see how many of all known isotopes and molecules you have: https://otomalbum.app/
 
-2025-10-07 Oct.Tue 13:12:35 [-] saw this probably shorter chain:
-|   664999*|bohr    |  Ux-57⁻ +  Cj-75ª                               +    15000 =>   P-22 + Z-110                                                                     +   10749.00 |    4251.00 | decay, nuclear               | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xb35510882e9ae9fc4a3aea834197125a1392af31b3823035cc9597c3f45898b7 | 0x4402e0acbb11bfef9213366cd27db490c57e2f64f4959b820c1013a96be7d73a | -> Go-132
-|   664703*|bohr    |  Pb-50⁻ +  Pg-56∙                               +    15000 =>   P-22 + Co-84                                                                     +   11346.29 |    3653.71 | decay, nuclear               | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x0039c8ba62a2535f209c3e7f00306c80cecb30a15efdeb84491171faa756cbcf | 0xcd3afd224de7376d1fe19ef17d5fc6988149d369356cf165ab6286eddcd4d678 | -> S-106
-|   664388*|bohr    |  Ct-17⁻ +   V-45⁻                               +     5000 =>   Qe-62                                                                            +    3644.06 |    1355.94 | nuclear                      | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x6a87384c246ee5d7020588ee3818a403b3d033ee5df97293df6142e1917b51b0 | 0x56782949cb3ca832fb6724b8dd31c6320d02bb22e1d4c5cb7eead14d90d77e89 | -> Qe-62
+2025-10-07 Oct.Tue 13:12:35 saw this probably shorter chain:
+
+reduce 4-chain to 3-chain:
+ [c]|   664999*|bohr    |  Ux-57⁻ +  Cj-75ª  +    15000 =>   P-22 + Z-110  +   10749.00 |    4251.00 | decay, nuclear               | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0xb35510882e9ae9fc4a3aea834197125a1392af31b3823035cc9597c3f45898b7 | 0x4402e0acbb11bfef9213366cd27db490c57e2f64f4959b820c1013a96be7d73a | -> Go-132
+
+reduce 3-chain to 2-chain:
+ [c]|   664703*|bohr    |  Pb-50⁻ +  Pg-56∙  +    15000 =>   P-22 + Co-84  +   11346.29 |    3653.71 | decay, nuclear               | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x0039c8ba62a2535f209c3e7f00306c80cecb30a15efdeb84491171faa756cbcf | 0xcd3afd224de7376d1fe19ef17d5fc6988149d369356cf165ab6286eddcd4d678 | -> S-106
+ [c]|   664388*|bohr    |  Ct-17⁻ +   V-45⁻  +     5000 =>   Qe-62         +    3644.06 |    1355.94 | nuclear                      | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x6a87384c246ee5d7020588ee3818a403b3d033ee5df97293df6142e1917b51b0 | 0x56782949cb3ca832fb6724b8dd31c6320d02bb22e1d4c5cb7eead14d90d77e89 | -> Qe-62
 
 2025-10-07 Oct.Tue 12:54:45
 [ ] what is the cheapest (least chains and lowest NRG input) reaction which I could test with like 100 iterations, to see if it avoids the inputs decaying and lands a ! or * output
 
 
-2025-10-06 Oct.Mon 13:46:01 Discovered 2 more. Now 776 isotopes in Universe Bohr.
+2025-10-06 Oct.Mon 13:46:01 Discovered 3 more. Now 777 isotopes in Universe Bohr.
 
 OTOMRO 658138 |  P-26⁻  + Ux-61⁻  + 12000 -> Iu-87⁻ => D-87⁻          + 9881.286063910187294823 using 2118.71 nuclear+decay
 OTOMRO 658139 | Cl-31⁻  + Ux-61⁻  + 12000 -> Co-92⁻ => W-92⁻          + 9736.626839246322560939 using 2263.37 nuclear+decay
@@ -2052,7 +2056,13 @@ They are grouped by the set of reactions that might produce an intermediate isot
 
 | ->?Pb-55⁻  ||  3 +  243|~Sr-3∙   +~Uq-52⁻  | ->?Pb-55⁻  (0.72?) =>~Wy-55⁻          [ ] try?
 
-| ->?Pg-49⁺  || 29 +  217|~Vi-10⁺  +~V-39⁺   | ->?Pg-49⁺  (0.55?) =>~Ux-49⁺          [ ] try?
+| ->?Pg-49⁺  || 29 +  217|~Vi-10⁺  +~V-39⁺   | ->?Pg-49⁺  (0.55?) =>~Ux-49⁺          [*] try?
+ [ ]|  Xj-17⁺ +  Gy-67ª   +[  1637.22 -   5000] => N-84                | nuclear                      | OTOMRO  170487 |
+ [ ]|  Ro-22⁺ +   N-84⁺   +[  2026.61 -   4000] => P-22 + U-84         | decay, nuclear               | OTOMRO         |
+ [ ]|  Ro-22⁺ +   U-84ª   +[  2010.94 -   5000] => P-22 + Vl-84        | decay, nuclear               | OTOMRO         |
+ [ ]|  Ro-22⁺ +  Vl-84⁺   +[  1860.08 -   5000] => P-22 + Se-84        | decay, nuclear               | OTOMRO         |
+ [ ]|  Se-84⁺             +[  5925.33 -  10000] => V-39 + Wy-45        | nuclear                      | OTOMRO  134282 |
+ [ ]|  Vi-10⁺ +   V-39⁺   +   5000 | ->?Pg-49⁺  (0.55?) =>~Ux-49⁺
 
 | ->?Qe-51⁺  ||  1 +  315|~Sr-1∙   +~Pg-50⁺  | ->?Qe-51⁺  (0.61?) =>~Pg-51⁺          [ ] try?
 | ->?Qe-51⁺  || 10 +  279|~As-5⁺   +~L-46⁺   | ->?Qe-51⁺  (0.61?) =>~Pg-51⁺          [ ] try?
@@ -16239,7 +16249,7 @@ total: 7832.6
     [-]|  Qe-54⁺ +  Gy-65⁺   +[  3135.21*-  20000] => P-22 + S-97   | decay, nuclear |
 total: 5998.90
 
-======>>>>>   ooooooooRRRRRR do it like this and get the ones I'm missing at the same time:
+---------->   ooooooooRRRRRR do it like this and get the ones I'm missing at the same time:
 
  [>] S-97
  [>] Ok-92

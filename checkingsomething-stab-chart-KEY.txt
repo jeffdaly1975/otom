@@ -1,0 +1,8 @@
+
+KEY:
+? means not sure if this exists
+* means we have seen this isotope as an intermediate which then decayed or was stable
+! means we saw a reaction attempt this but it either didn't work at all or the isotopes did basic decay
+& means we have no inputs which add up to this so it isn't even accessible
+
+So *T-20⁻ means it should exist if we can just find a route to it

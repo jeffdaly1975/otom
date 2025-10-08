@@ -354,6 +354,7 @@
  3-chain Iu-71  ::  2732.57 |  Vi-10⁺ +   F-61⁺   +[   897.94 -   3000] => Iu-71               | decay, nuclear               | OTOMRO  529232 | intermediate isotope ->  D-71⁺ => Iu-71⁺
  1-chain Se-94  ::  2733.80 |   P-23∙ +  Kk-71ª   +[  2733.80 -   2777] => Se-94               | nuclear                      | OTOMRO  431762 |
  1-chain D-81   ::  2779.30 |   K-34∙ +  Uq-47⁻   +[  2779.30 -  20000] => D-81                | nuclear                      | OTOMRO  121522 |
+ 2-chain Qe-62  ::  2789.35 |  Ct-17⁻ +   V-45⁻   +[  1355.94 -   5000] => Qe-62               | nuclear                      | OTOMRO  664388*| -> Qe-62
  2-chain W-77   ::  2794.93 |  Ro-22⁺ +   C-55⁺   +[  1595.86 -   2000] => W-77                | decay, nuclear               | OTOMRO         | intermediate isotope -> Lx-77⁺  (0.599) => W-77
  2-chain Vi-14  ::  2799.01 |  Ro-26∙             +[  2234.92 -  10000] => Vi-12 + Vi-14       | nuclear                      | OTOMRO   86604*|
  2-chain Ct-16  ::  2810.47 |   K-35⁻             +[  1966.70 -   2020] => Ct-16 + Xj-19       | nuclear                      | OTOMRO   89309 |
@@ -550,6 +551,7 @@
  3-chain Cv-101 ::  5545.14 |  Mt-32⁺ +  Nm-91⁺   +[  2684.38 -   6000] => P-22 + Cv-101       | decay, nuclear               | OTOMRO         |
  2-chain Ha-116 ::  5574.38 |   K-31⁺ + Vt-107ª   +[  2883.74 -   8556] => P-22 + Ha-116       | decay, nuclear               | OTOMRO  125410 |
  3-chain V-40   ::  5582.18 |  Vi-10⁺ +   K-30⁺   +[   577.33 -   8000] => V-40                | decay, nuclear               | OTOMRO         |
+ 2-chain Co-84  ::  5626.08 |  Pb-50⁻ +  Pg-56∙   +[  3653.71 -  15000] => P-22 + Co-84        | decay, nuclear               | OTOMRO  664703*| -> S-106ª => P-22∙ + Co-84∙
  2-chain Z-106  ::  5634.02 |   P-24⁻ +  Z-104ª   +[  2499.17 -   4000] => P-22 + Z-106        | decay, nuclear               | OTOMRO         |
  2-chain Lx-89  ::  5640.01 |   P-23∙ +  Lx-88∙   +[  4136.69 -   5000] => P-22 + Lx-89        | decay, nuclear               | OTOMRO  197448*|
  2-chain Vl-94  ::  5658.24 |   P-24⁻ +  Vl-92⁺   +[  2563.52 -   5000] => P-22 + Vl-94        | decay, nuclear               | OTOMRO  355481*|
@@ -736,6 +738,7 @@
  3-chain Se-100 ::  8688.97 |   Sr-2∙ +  Se-98∙   +[  1651.04 -   5000] => Se-100              | decay, nuclear               | OTOMRO  183979 |
  4-chain Ok-94  ::  8694.54 |   P-21⁺ +  Ok-95ª   +[  2159.52*-   5000] => P-22 + Ok-94        | decay, nuclear               | OTOMRO  168932 |
  4-chain Cv-99  ::  8752.32 |  Ro-23ª +   Z-98⁺   +[  2276.45 -   5000] => P-22 + Cv-99        | decay, nuclear               | OTOMRO  245676*|
+ 3-chain Z-110  ::  8762.74 |  Ux-57⁻ +  Cj-75ª   +[  4251.00 -  15000] => P-22 + Z-110        | decay, nuclear               | OTOMRO  664999*| intermediate isotope -> Go-132ª => P-22∙ + Z-110ª
  3-chain U-94   ::  8775.38 |  Eb-22∙ +  Vl-94⁻   +[  3117.14 -   5000] => P-22 + U-94         | decay, nuclear               | OTOMRO  312373*|
  4-chain Ek-103 ::  8775.92 |  Ro-22⁺ + Vt-103ª   +[  2076.12 -   4000] => P-22 + Ek-103       | decay, nuclear               | OTOMRO         |
  3-chain Se-101 ::  8797.26 |   Sr-3∙ +  Se-98∙   +[  1759.33 -   5000] => Se-101              | decay, nuclear               | OTOMRO  174219 |
