@@ -14,6 +14,8 @@ set iskeyword+=.
 nnoremap <Space> :echo map(synstack(line("."), col(".")), 'synIDattr(v:val, "name")')<CR>
 " [ ] I want to make it also show this but need to figure out how to get the <cword>:  decaytextchar[decaydict[submatch(1)]] ." (". stabilitydict[submatch(1)] .")"
 
+" quick way to set the file type to otom
+nnoremap <silent> <Leader>sf :set ft=otom<CR>
 
 syn match Datestamp /\<\d\d\d\d-\d\d-\d\d.\w\w\w\.\w\w\w\>/
 syn match Timestamp /\<\d\d:\d\d:\d\d\>\(\s*\w\wT\)\=/
@@ -19646,7 +19648,7 @@ syn match chain3  /\<Xj-21\>/
 syn match chain3  /\<Yv-77\>/
 syn match chain3  /\<Yv-80\>/
 syn match chain3  /\<Z-109\>/
-syn match chain3  /\<Z-110\>/
+syn match chain2  /\<Z-110\>/
 syn match chain3  /\<Z-97\>/
 syn match chain3  /\<Z-99\>/
 syn match chain4  /\<Aw-106\>/

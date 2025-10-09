@@ -1,3 +1,42 @@
+2025-10-09 Oct.Thu 11:04:14 [ ] shorter chains:
+
+[ ] 5-chain down to  2-chain   | 0-chain  + 1-chain =>  5-chain           |  Ct-17⁻ +  Nd-32⁻     +    15000 =>   Uq-49                           +   13351.95 |    1648.05 | nuclear                      |   676221*| -> Uq-49
+[ ] 4-chain down to  3-chain   | 0-chain  + 2-chain =>  1-chain + 4-chain |  Cl-25⁺ +   Z-98⁺     +    15000 =>   P-22 + Vt-101                   +   12116.94 |    2883.06 | decay, nuclear               |   666737*|
+[ ] 5-chain down to  3-chain   | 0-chain  + 2-chain =>  1-chain + 5-chain |  Ct-17⁻ +  Vl-96⁻     +     2000 =>   P-22 + W-91                     +     244.50 |    1755.50 | decay, nuclear               |   568104 | -> Z-113
+[ ] 4-chain down to  3-chain   | 0-chain  + 2-chain =>  4-chain           |  Gj-11∙ + Se-100∙     +    15000 => ⬆ Z-111                           +   11839.49 |    3160.51 | decay, nuclear               |   665159*| -> S-111
+[ ] 5-chain down to  4-chain   | 0-chain  + 3-chain =>  1-chain + 5-chain |  Ro-22⁺ + Vt-100⁺     +     4000 =>   P-22 + Ek-100                   +    2044.95 |    1955.05 | decay, nuclear               |   203993*| -> Eh-122
+[ ] 5-chain down to  4-chain   | 0-chain  + 3-chain =>  5-chain           |  Ct-17⁻ +   U-95ª     +     5100 => ⬆ Z-112                           +    3236.25 |    1863.75 | decay, nuclear               |   654078*| -> S-112
+[ ] 7-chain down to  6-chain   | 0-chain  + 5-chain =>  7-chain           |  Ct-17⁻ +  Uq-52⁻     +     1140 => ⬆ Ns-69                           +      14.53 |    1125.47 | decay, nuclear               |   669071 | -> C-69
+[ ] 8-chain down to  7-chain   | 0-chain  + 6-chain =>  8-chain           |  Vi-10⁺ +  Cl-24⁺     +    15000 => ⬇ Lu-34                           +   13790.82 |    1209.18 | decay, nuclear               |   678445*| -> Dx-34
+[ ] 3-chain down to  2-chain   | 1-chain  + 1-chain =>  1-chain + 3-chain |   C-57⁺ +  Gy-64⁺     +    15000 =>   P-22 + Z-99                     +   11118.81 |    3881.19 | decay, nuclear               |   668771*| -> Go-121
+[ ] 5-chain down to  4-chain   | 1-chain  + 3-chain =>  1-chain + 5-chain |   P-24⁻ +   U-96⁻     +     5000 =>   P-22 + U-98                     +    2511.38 |    2488.62 | decay, nuclear               |   558901*| -> Ek-120
+[ ] 7-chain down to  6-chain   | 1-chain  + 5-chain =>  7-chain           |  Nd-34⁻ +  Uq-52⁻     +     1880 => ⬆ D-86                            +      15.60 |    1864.40 | decay, nuclear               |   663520 | -> Iu-86
+[ ] 4-chain down to  3-chain   | 2-chain            =>  0-chain + 4-chain | Dd-102ª               +    10300 =>   Uq-47 + L-55                    +    1070.25 |    9229.75 | nuclear                      |   528474 |
+[ ] 4-chain down to  3-chain   | 2-chain            =>  1-chain + 4-chain | Nm-101⁺               +    15000 =>   V-46 + L-55                     +    5592.15 |    9407.85 | nuclear                      |   628521*|
+[ ] 6-chain down to  3-chain   | 2-chain            =>  1-chain + 6-chain |   Z-98⁺               +    15000 =>   Pb-45 + Qe-53                   +    7176.57 |    7823.43 | nuclear                      |   628558*|
+[ ] 7-chain down to  6-chain   | 2-chain  + 5-chain =>  7-chain           |   T-18⁻ +  Uq-52⁻     +     3000 => ⬆ Ai-70                           +    1580.28 |    1419.72 | decay, nuclear               |   643409*| -> Ns-70
+[ ] 5-chain down to  4-chain   | 3-chain            =>  1-chain + 5-chain | Da-108∙               +    15000 =>   Pb-50 + Ux-58                   +     210.00 |   14790.00 | nuclear                      |   628490 |
+[ ] 6-chain down to  4-chain   | 3-chain            =>  1-chain + 6-chain |   Z-97⁺               +    15000 =>   Pb-44 + Qe-53                   +    7422.93 |    7577.07 | nuclear                      |   628557*|
+[ ] 5-chain down to  4-chain   | 3-chain            =>  2-chain + 5-chain | Dd-104⁻               +    15000 =>   Uq-48 + L-56                    +    5547.68 |    9452.32 | nuclear                      |   628495*|
+[ ] 6-chain down to  4-chain   | 3-chain            =>  3-chain + 6-chain |  Nm-88⁺               +    15000 =>   V-40 + L-48                     +    7892.19 |    7107.81 | nuclear                      |   628522*|
+[ ] 6-chain down to  4-chain   | 3-chain            =>  4-chain + 6-chain | Vt-100⁺               +    20000 =>   Wy-46 + C-54                    +   12429.58 |    7570.42 | nuclear                      |   629046*|
+[ ] 5-chain down to  4-chain   | 3-chain            =>  5-chain + 1-chain | Aw-107ª               +    15000 =>   Ux-49 + Ns-58                   +    6733.27 |    8266.73 | nuclear                      |   628476*|
+[ ] 5-chain down to  4-chain   | 3-chain            =>  5-chain + 2-chain | Ok-106⁻               +    10700 =>   Uq-49 + Ux-57                   +    1034.05 |    9665.95 | nuclear                      |   530083 |
+[ ] 6-chain down to  4-chain   | 3-chain            =>  5-chain + 6-chain |  Cv-98ª               +     8500 =>   Wy-45 + Qe-53                   +    1487.34 |    7012.66 | nuclear                      |   661310*|
+[ ] 6-chain down to  4-chain   | 3-chain            =>  6-chain + 1-chain | Ek-105ª               +    15000 =>   L-48 + C-57                     +    6269.91 |    8730.09 | nuclear                      |   628500*|
+[ ] 7-chain down to  5-chain   | 4-chain            =>  1-chain + 7-chain |  Pb-52⁻               +     5000 =>   P-24 + Ro-28                    +    1294.81 |    3705.19 | nuclear                      |   613806*|
+[ ] 6-chain down to  5-chain   | 4-chain            =>  5-chain + 6-chain |  Vt-99⁺               +    20000 =>   Wy-45 + C-54                    +   12737.61 |    7262.39 | nuclear                      |   629047*|
+[ ] 7-chain down to  6-chain   | 4-chain  + 5-chain =>  7-chain           |   K-37⁻ +  Uq-52⁻     +     2000 => ⬆ Co-89                           +      86.39 |    1913.61 | decay, nuclear               |   542656 | -> D-89
+[ ] 7-chain down to  6-chain   | 5-chain            =>  1-chain + 7-chain |  Uq-52⁻               +     3100 => ⬆ P-24 + Ro-28                    +       0.23 |    3099.77 | decay, nuclear               |   440240 |
+[ ] 7-chain down to  6-chain   | 5-chain            =>  2-chain + 7-chain |   U-98⁻               +    20000 =>   Gd-45 + Pb-53                   +   11403.65 |    8596.35 | nuclear                      |   629035*|
+[ ] 7-chain down to  6-chain   | 5-chain            =>  4-chain + 7-chain |   U-99⁻               +     7898 =>   Gd-46 + Pb-53                   +       5.32 |    7892.68 | nuclear                      |   480639 |
+[ ] 7-chain down to  6-chain   | 5-chain            =>  5-chain + 7-chain |  Uq-51⁻               +     3500 =>   Eb-23 + Ro-28                   +     147.85 |    3352.15 | nuclear                      |   652786 |
+[ ] 7-chain down to  6-chain   | 5-chain            =>  7-chain + 5-chain | Nm-106⁻               +     8750 =>   V-49 + L-57                     +      14.59 |    8735.41 | nuclear                      |   639954 |
+[ ] 7-chain down to  6-chain   | 5-chain            =>  7-chain + 7-chain |  Z-117⁻               +     9740 =>   Pb-53 + Qe-64                   +      11.95 |    9728.05 | nuclear                      |   663548 |
+[ ] 7-chain down to  6-chain   | 5-chain  + 5-chain =>  7-chain           |   P-25⁻ +  Uq-52⁻     +     5000 => ⬆ Kk-77                           +    3263.50 |    1736.50 | decay, nuclear               |   643777*| -> Gy-77
+[ ] 8-chain down to  7-chain   | 6-chain            =>  0-chain + 8-chain |   K-29⁺               +     1180 =>   Ct-13 + Xj-16                   +       2.71 |    1177.29 | nuclear                      |   362164 |
+[ ] 8-chain down to  7-chain   | 6-chain  + 5-chain =>  8-chain           |   K-29⁺ +   C-53⁺     +     1600 => ⬇ Vl-82                           +      62.21 |    1537.79 | decay, nuclear               |   542738 | -> Se-82
+
 2025-10-08 Oct.Wed 00:06:41 [c] more shorter chains to check
  
  |   665292*|bohr    |  Ct-17⁻ + Dd-104⁻  +    15000 -> Ek-121 => ⬆ Ji-121         +   12582.12 |    2417.88 | decay, nuclear               |
