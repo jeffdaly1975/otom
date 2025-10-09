@@ -1,4 +1,4 @@
-2025-10-08 Oct.Wed 00:06:41 [ ] more shorter chains to check
+2025-10-08 Oct.Wed 00:06:41 [c] more shorter chains to check
  
  |   665292*|bohr    |  Ct-17⁻ + Dd-104⁻  +    15000 -> Ek-121 => ⬆ Ji-121         +   12582.12 |    2417.88 | decay, nuclear               |
  |   664703*|bohr    |  Pb-50⁻ +  Pg-56∙  +    15000 -> S-106  =>   P-22 + Co-84   +   11346.29 |    3653.71 | decay, nuclear               |
@@ -34,6 +34,8 @@
  |   665411*|bohr    |   C-55⁺ +  Gy-65⁺  +    15000 -> Go-120 =>   P-22 + Z-98    +   11261.56 |    3738.44 | decay, nuclear               |
  |   667443*|bohr    |   C-56⁺ +  Gy-64⁺  +    15000 -> Go-120 =>   P-22 + Z-98    +   11233.48 |    3766.52 | decay, nuclear               |
  |   664388*|bohr    |  Ct-17⁻ +   V-45⁻  +     5000 -> Qe-62  =>   Qe-62          +    3644.06 |    1355.94 | nuclear                      |
+
+Yep lots of shorter ones there. chains.bohr.otom, convert_token_id_to_hex.pl and syntax/otom.vim updated
 
 2025-10-07 Oct.Tue 13:39:44 Seamorphus posted in otom discord they made an Otom Sticker album app at https://otomalbum.app/ and you can see how many of all known isotopes and molecules you have.
 
