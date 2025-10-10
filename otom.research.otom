@@ -1,41 +1,1615 @@
-2025-10-09 Oct.Thu 11:04:14 [ ] shorter chains:
+2025-10-09 Oct.Thu 22:36:24 [ ] took all my chains.bohr.otom entries, modified to update the chaindict.vim file so a dictionary object could be used to lookup how many chains an isotope is, and used that to add details to temp-bohr-findnewstuff.otom. Searched that for things like /^| [012]-chain + [012]-chain.....................=>.* [4-9]-chain/ which would be a line where 2 inputs of 0 to 2 chains produce something of 4 to 9 chains.
+Came up with this list of 1548 recipes.
+[ ] consider how to use this.
+[ ] possibly just add them all to chains.bohr.otom with some indication they haven't been seen in the reaction history yet
 
-[ ] 5-chain down to  2-chain   | 0-chain  + 1-chain =>  5-chain           |  Ct-17⁻ +  Nd-32⁻     +    15000 =>   Uq-49                           +   13351.95 |    1648.05 | nuclear                      |   676221*| -> Uq-49
-[ ] 4-chain down to  3-chain   | 0-chain  + 2-chain =>  1-chain + 4-chain |  Cl-25⁺ +   Z-98⁺     +    15000 =>   P-22 + Vt-101                   +   12116.94 |    2883.06 | decay, nuclear               |   666737*|
-[ ] 5-chain down to  3-chain   | 0-chain  + 2-chain =>  1-chain + 5-chain |  Ct-17⁻ +  Vl-96⁻     +     2000 =>   P-22 + W-91                     +     244.50 |    1755.50 | decay, nuclear               |   568104 | -> Z-113
-[ ] 4-chain down to  3-chain   | 0-chain  + 2-chain =>  4-chain           |  Gj-11∙ + Se-100∙     +    15000 => ⬆ Z-111                           +   11839.49 |    3160.51 | decay, nuclear               |   665159*| -> S-111
-[ ] 5-chain down to  4-chain   | 0-chain  + 3-chain =>  1-chain + 5-chain |  Ro-22⁺ + Vt-100⁺     +     4000 =>   P-22 + Ek-100                   +    2044.95 |    1955.05 | decay, nuclear               |   203993*| -> Eh-122
-[ ] 5-chain down to  4-chain   | 0-chain  + 3-chain =>  5-chain           |  Ct-17⁻ +   U-95ª     +     5100 => ⬆ Z-112                           +    3236.25 |    1863.75 | decay, nuclear               |   654078*| -> S-112
-[ ] 7-chain down to  6-chain   | 0-chain  + 5-chain =>  7-chain           |  Ct-17⁻ +  Uq-52⁻     +     1140 => ⬆ Ns-69                           +      14.53 |    1125.47 | decay, nuclear               |   669071 | -> C-69
-[ ] 8-chain down to  7-chain   | 0-chain  + 6-chain =>  8-chain           |  Vi-10⁺ +  Cl-24⁺     +    15000 => ⬇ Lu-34                           +   13790.82 |    1209.18 | decay, nuclear               |   678445*| -> Dx-34
-[ ] 3-chain down to  2-chain   | 1-chain  + 1-chain =>  1-chain + 3-chain |   C-57⁺ +  Gy-64⁺     +    15000 =>   P-22 + Z-99                     +   11118.81 |    3881.19 | decay, nuclear               |   668771*| -> Go-121
-[ ] 5-chain down to  4-chain   | 1-chain  + 3-chain =>  1-chain + 5-chain |   P-24⁻ +   U-96⁻     +     5000 =>   P-22 + U-98                     +    2511.38 |    2488.62 | decay, nuclear               |   558901*| -> Ek-120
-[ ] 7-chain down to  6-chain   | 1-chain  + 5-chain =>  7-chain           |  Nd-34⁻ +  Uq-52⁻     +     1880 => ⬆ D-86                            +      15.60 |    1864.40 | decay, nuclear               |   663520 | -> Iu-86
-[ ] 4-chain down to  3-chain   | 2-chain            =>  0-chain + 4-chain | Dd-102ª               +    10300 =>   Uq-47 + L-55                    +    1070.25 |    9229.75 | nuclear                      |   528474 |
-[ ] 4-chain down to  3-chain   | 2-chain            =>  1-chain + 4-chain | Nm-101⁺               +    15000 =>   V-46 + L-55                     +    5592.15 |    9407.85 | nuclear                      |   628521*|
-[ ] 6-chain down to  3-chain   | 2-chain            =>  1-chain + 6-chain |   Z-98⁺               +    15000 =>   Pb-45 + Qe-53                   +    7176.57 |    7823.43 | nuclear                      |   628558*|
-[ ] 7-chain down to  6-chain   | 2-chain  + 5-chain =>  7-chain           |   T-18⁻ +  Uq-52⁻     +     3000 => ⬆ Ai-70                           +    1580.28 |    1419.72 | decay, nuclear               |   643409*| -> Ns-70
-[ ] 5-chain down to  4-chain   | 3-chain            =>  1-chain + 5-chain | Da-108∙               +    15000 =>   Pb-50 + Ux-58                   +     210.00 |   14790.00 | nuclear                      |   628490 |
-[ ] 6-chain down to  4-chain   | 3-chain            =>  1-chain + 6-chain |   Z-97⁺               +    15000 =>   Pb-44 + Qe-53                   +    7422.93 |    7577.07 | nuclear                      |   628557*|
-[ ] 5-chain down to  4-chain   | 3-chain            =>  2-chain + 5-chain | Dd-104⁻               +    15000 =>   Uq-48 + L-56                    +    5547.68 |    9452.32 | nuclear                      |   628495*|
-[ ] 6-chain down to  4-chain   | 3-chain            =>  3-chain + 6-chain |  Nm-88⁺               +    15000 =>   V-40 + L-48                     +    7892.19 |    7107.81 | nuclear                      |   628522*|
-[ ] 6-chain down to  4-chain   | 3-chain            =>  4-chain + 6-chain | Vt-100⁺               +    20000 =>   Wy-46 + C-54                    +   12429.58 |    7570.42 | nuclear                      |   629046*|
-[ ] 5-chain down to  4-chain   | 3-chain            =>  5-chain + 1-chain | Aw-107ª               +    15000 =>   Ux-49 + Ns-58                   +    6733.27 |    8266.73 | nuclear                      |   628476*|
-[ ] 5-chain down to  4-chain   | 3-chain            =>  5-chain + 2-chain | Ok-106⁻               +    10700 =>   Uq-49 + Ux-57                   +    1034.05 |    9665.95 | nuclear                      |   530083 |
-[ ] 6-chain down to  4-chain   | 3-chain            =>  5-chain + 6-chain |  Cv-98ª               +     8500 =>   Wy-45 + Qe-53                   +    1487.34 |    7012.66 | nuclear                      |   661310*|
-[ ] 6-chain down to  4-chain   | 3-chain            =>  6-chain + 1-chain | Ek-105ª               +    15000 =>   L-48 + C-57                     +    6269.91 |    8730.09 | nuclear                      |   628500*|
-[ ] 7-chain down to  5-chain   | 4-chain            =>  1-chain + 7-chain |  Pb-52⁻               +     5000 =>   P-24 + Ro-28                    +    1294.81 |    3705.19 | nuclear                      |   613806*|
-[ ] 6-chain down to  5-chain   | 4-chain            =>  5-chain + 6-chain |  Vt-99⁺               +    20000 =>   Wy-45 + C-54                    +   12737.61 |    7262.39 | nuclear                      |   629047*|
-[ ] 7-chain down to  6-chain   | 4-chain  + 5-chain =>  7-chain           |   K-37⁻ +  Uq-52⁻     +     2000 => ⬆ Co-89                           +      86.39 |    1913.61 | decay, nuclear               |   542656 | -> D-89
-[ ] 7-chain down to  6-chain   | 5-chain            =>  1-chain + 7-chain |  Uq-52⁻               +     3100 => ⬆ P-24 + Ro-28                    +       0.23 |    3099.77 | decay, nuclear               |   440240 |
-[ ] 7-chain down to  6-chain   | 5-chain            =>  2-chain + 7-chain |   U-98⁻               +    20000 =>   Gd-45 + Pb-53                   +   11403.65 |    8596.35 | nuclear                      |   629035*|
-[ ] 7-chain down to  6-chain   | 5-chain            =>  4-chain + 7-chain |   U-99⁻               +     7898 =>   Gd-46 + Pb-53                   +       5.32 |    7892.68 | nuclear                      |   480639 |
-[ ] 7-chain down to  6-chain   | 5-chain            =>  5-chain + 7-chain |  Uq-51⁻               +     3500 =>   Eb-23 + Ro-28                   +     147.85 |    3352.15 | nuclear                      |   652786 |
-[ ] 7-chain down to  6-chain   | 5-chain            =>  7-chain + 5-chain | Nm-106⁻               +     8750 =>   V-49 + L-57                     +      14.59 |    8735.41 | nuclear                      |   639954 |
-[ ] 7-chain down to  6-chain   | 5-chain            =>  7-chain + 7-chain |  Z-117⁻               +     9740 =>   Pb-53 + Qe-64                   +      11.95 |    9728.05 | nuclear                      |   663548 |
-[ ] 7-chain down to  6-chain   | 5-chain  + 5-chain =>  7-chain           |   P-25⁻ +  Uq-52⁻     +     5000 => ⬆ Kk-77                           +    3263.50 |    1736.50 | decay, nuclear               |   643777*| -> Gy-77
-[ ] 8-chain down to  7-chain   | 6-chain            =>  0-chain + 8-chain |   K-29⁺               +     1180 =>   Ct-13 + Xj-16                   +       2.71 |    1177.29 | nuclear                      |   362164 |
-[ ] 8-chain down to  7-chain   | 6-chain  + 5-chain =>  8-chain           |   K-29⁺ +   C-53⁺     +     1600 => ⬇ Vl-82                           +      62.21 |    1537.79 | decay, nuclear               |   542738 | -> Se-82
+
+| 0-chain + 5-chain =>  7-chain         | ~Sr-1∙   + ~Dx-35⁺  -> ?Gd-36⁺  (0.58?) => ~Dx-36⁺
+| 0-chain + 3-chain =>  6-chain         | ~Sr-1∙   + ~Iu-71⁺  -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Sr-1∙   + ~Z-98⁺   -> ~Cv-99ª  (0.420) => ~Lx-77⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Sr-1∙   + ~Ji-107ª -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain         | ~Sr-2∙   + ~Gd-45⁻  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 0-chain + 2-chain =>  4-chain         | ~Sr-2∙   + ~Ux-57⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 4-chain =>  6-chain         | ~Sr-2∙   + ~Ux-58⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain         | ~Sr-2∙   + ~C-64⁻   -> ~Ns-66⁻  (0.881) => ~Ns-66⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Sr-2∙   + ~Nm-101⁺ -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 1-chain =>  4-chain         | ~Sr-3∙   + ~Gd-44⁻  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 0-chain + 2-chain =>  4-chain         | ~Sr-3∙   + ~Uq-49⁻  -> ~Pb-52⁻  (0.878) => ~Pb-52⁻
+| 0-chain + 1-chain =>  4-chain         | ~Sr-3∙   + ~Pb-51⁻  -> ~Wy-54⁻  (0.835) => ~Wy-54⁻
+| 0-chain + 1-chain =>  3-chain         | ~Sr-3∙   + ~Wy-52∙  -> ~L-55⁻   (0.897) => ~L-55⁻
+| 0-chain + 1-chain =>  4-chain         | ~Sr-3∙   + ~Ux-56⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 2-chain =>  6-chain         | ~Sr-3∙   + ~Ux-57⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 2-chain =>  6-chain         | ~Sr-3∙   + ~Qe-62⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 0-chain + 1-chain =>  5-chain         | ~Sr-3∙   + ~C-64⁻   -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 0-chain + 2-chain =>  4-chain         | ~Sr-3∙   + ~Cj-78⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 2-chain =>  4-chain         | ~Sr-3∙   + ~Iu-80⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Sr-3∙   + ~N-92⁻   -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Sr-3∙   + ~Nm-100⁺ -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain         | ~Ei-4∙   + ~Pb-51⁻  -> ~L-55⁻   (0.897) => ~L-55⁻
+| 0-chain + 4-chain =>  6-chain         | ~Ei-4∙   + ~L-56⁻   -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ei-4∙   + ~Se-99∙  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain         | ~Ei-5∙   + ~Dx-42⁻  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 0-chain + 2-chain =>  5-chain         | ~Ei-5∙   + ~Gd-45⁻  -> ~Uq-50⁻  (0.800) => ~Uq-50⁻
+| 0-chain + 2-chain =>  4-chain         | ~Ei-5∙   + ~Uq-49⁻  -> ~Wy-54⁻  (0.835) => ~Wy-54⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ei-5∙   + ~Pb-50⁻  -> ~L-55⁻   (0.897) => ~L-55⁻
+| 0-chain + 2-chain =>  4-chain         | ~Ei-5∙   + ~Wy-53⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 0-chain + 4-chain =>  6-chain         | ~Ei-5∙   + ~Wy-55⁻  -> ~Ux-60⁻  (0.670) => ~Pg-60⁻
+| 0-chain + 1-chain =>  4-chain         | ~Ei-5∙   + ~L-54∙   -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 3-chain =>  6-chain         | ~Ei-5∙   + ~L-55⁻   -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ei-5∙   + ~Pg-58⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 0-chain + 2-chain =>  5-chain         | ~Ei-5∙   + ~Qe-62⁻  -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 0-chain + 2-chain =>  4-chain         | ~Ei-5∙   + ~Yv-76∙  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 2-chain =>  4-chain         | ~Ei-5∙   + ~Cj-78⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 1-chain =>  3-chain         | ~Ei-5∙   + ~Lx-88∙  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ei-5∙   + ~Lx-90∙  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ei-5∙   + ~Se-96∙  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ei-5∙   + ~Se-98∙  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ei-5∙   + ~Da-104ª -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ei-5∙   + ~Da-106∙ -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~As-5⁺   + ~Wy-55⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~As-5⁺   + ~Aw-112ª -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~As-5⁺   + ~Kn-108⁺ -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain         | ~As-6∙   + ~Wy-53⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 4-chain =>  6-chain         | ~As-6∙   + ~Wy-54⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 2-chain =>  4-chain         | ~As-6∙   + ~Kk-75∙  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 3-chain =>  5-chain         | ~As-6∙   + ~Yv-80⁻  -> ~D-86⁻   (0.713) => ~Co-86⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~As-6∙   + ~Vl-97⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~As-6∙   + ~Cv-100⁺ -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~As-6∙   + ~Kn-107⁺ -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 1-chain =>  4-chain         | ~As-7∙   + ~Lu-40⁻  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 0-chain + 2-chain =>  4-chain         | ~As-7∙   + ~Gd-45⁻  -> ~Pb-52⁻  (0.878) => ~Pb-52⁻
+| 0-chain + 1-chain =>  4-chain         | ~As-7∙   + ~Pb-51⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 0-chain + 1-chain =>  4-chain         | ~As-7∙   + ~Wy-52∙  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 2-chain =>  6-chain         | ~As-7∙   + ~Wy-53⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain         | ~As-7∙   + ~Ux-56⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 0-chain + 4-chain =>  6-chain         | ~As-7∙   + ~Ux-58⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 0-chain + 2-chain =>  4-chain         | ~As-7∙   + ~Gy-74⁻  -> ~Cj-81⁻  (0.832) => ~Cj-81⁻
+| 0-chain + 2-chain =>  4-chain         | ~As-7∙   + ~Kk-74∙  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 2-chain =>  4-chain         | ~As-7∙   + ~Yv-76∙  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~As-7∙   + ~Vl-96⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~As-7∙   + ~Ok-104ª -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 0-chain + 5-chain =>  7-chain         | ~Dz-7⁺   + ~Ai-58⁺  -> *Yv-65⁺  (0.58?) => ~Kk-65⁺
+| 0-chain + 2-chain =>  4-chain         | ~Dz-7⁺   + ~Gy-74⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Dz-7⁺   + ~Z-99⁺   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Dz-7⁺   + ~Cv-100⁺ -> ~Aw-107ª (0.384) => ~Se-85⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Dz-7⁺   + ~Aw-106ª -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Dz-7⁺   + ~Aw-107ª -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~Dz-7⁺   + ~Kn-107⁺ -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 0-chain + 1-chain =>  4-chain         | ~Dz-8∙   + ~Pb-51⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 4-chain =>  6-chain         | ~Dz-8∙   + ~Pb-52⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 2-chain =>  4-chain         | ~Dz-8∙   + ~Gy-73⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 2-chain =>  4-chain         | ~Dz-8∙   + ~Kk-75∙  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Dz-8∙   + ~Z-98⁺   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Dz-8∙   + ~Cv-100⁺ -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain         | ~Dz-9∙   + ~Gd-45⁻  -> ~Wy-54⁻  (0.835) => ~Wy-54⁻
+| 0-chain + 1-chain =>  3-chain         | ~Dz-9∙   + ~V-46⁻   -> ~L-55⁻   (0.897) => ~L-55⁻
+| 0-chain + 2-chain =>  4-chain         | ~Dz-9∙   + ~Uq-49⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 0-chain + 1-chain =>  4-chain         | ~Dz-9∙   + ~Pb-50⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 1-chain =>  6-chain         | ~Dz-9∙   + ~Pb-51⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain         | ~Dz-9∙   + ~L-54∙   -> ~C-63∙   (1.990) => ~C-63∙
+| 0-chain + 4-chain =>  6-chain         | ~Dz-9∙   + ~L-56⁻   -> ~C-65⁻   (0.898) => ~C-65⁻
+| 0-chain + 2-chain =>  4-chain         | ~Dz-9∙   + ~Gy-72⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 2-chain =>  4-chain         | ~Dz-9∙   + ~Gy-74⁻  -> ~Iu-83⁻  (0.752) => ~D-83∙
+| 0-chain + 2-chain =>  4-chain         | ~Dz-9∙   + ~Kk-74∙  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 2-chain =>  4-chain         | ~Dz-9∙   + ~Kk-75∙  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 0-chain + 2-chain =>  4-chain         | ~Dz-9∙   + ~Se-100∙ -> ~Da-109∙ (1.500) => ~Da-109∙
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Dz-9∙   + ~Dd-102ª -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 4-chain + 5-chain =>  7-chain         | ~Dz-10⁻  + ~Uq-52⁻  -> *Ux-62⁻  (0.57?) => ~Pg-62⁻
+| 4-chain + 1-chain =>  6-chain         | ~Dz-10⁻  + ~Pb-50⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 4-chain + 4-chain =>  6-chain         | ~Dz-10⁻  + ~Wy-55⁻  -> *Qe-65⁻  (0.74?) => ~C-65⁻
+| 4-chain + 3-chain =>  6-chain         | ~Dz-10⁻  + ~L-55⁻   -> ~C-65⁻   (0.898) => ~C-65⁻
+| 4-chain + 4-chain =>  6-chain         | ~Dz-10⁻  + ~L-56⁻   -> ~C-66⁻   (0.825) => ~C-66⁻
+| 1-chain + 4-chain =>  6-chain         | ~Gj-9⁺   + ~C-54⁺   -> ~Kk-63⁺  (0.597) => ~Gy-63⁺
+| 1-chain + 2-chain =>  6-chain         | ~Gj-9⁺   + ~F-61⁺   -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 1-chain + 2-chain =>  4-chain         | ~Gj-9⁺   + ~Gy-74⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-9⁺   + ~S-97⁺   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-9⁺   + ~Z-98⁺   -> ~Aw-107ª (0.384) => ~Se-85⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-9⁺   + ~Z-99⁺   -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-9⁺   + ~Cv-100⁺ -> ~Kn-109ª (0.361) => ~Nm-87⁺ +~P-22
+| 1-chain + 4-chain =>  6-chain  +~P-22 | ~Gj-9⁺   + ~Ji-104⁺ -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-9⁺   + ~Ji-107ª -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain         | ~Gj-10∙  + ~Uq-49⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 1-chain + 4-chain =>  6-chain         | ~Gj-10∙  + ~Wy-55⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 1-chain + 2-chain =>  4-chain         | ~Gj-10∙  + ~F-71⁻   -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 2-chain =>  4-chain         | ~Gj-10∙  + ~Gy-73⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain         | ~Gj-10∙  + ~Gy-74⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-10∙  + ~Nm-101⁺ -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-10∙  + ~Z-98⁺   -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain         | ~Gj-11∙  + ~Gd-44⁻  -> ~L-55⁻   (0.897) => ~L-55⁻
+| 0-chain + 2-chain =>  4-chain         | ~Gj-11∙  + ~Uq-48⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 2-chain =>  6-chain         | ~Gj-11∙  + ~Uq-49⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain         | ~Gj-11∙  + ~Wy-52∙  -> ~C-63∙   (1.990) => ~C-63∙
+| 0-chain + 4-chain =>  6-chain         | ~Gj-11∙  + ~Wy-54⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 0-chain + 4-chain =>  6-chain         | ~Gj-11∙  + ~Wy-55⁻  -> ~C-66⁻   (0.825) => ~C-66⁻
+| 0-chain + 2-chain =>  4-chain         | ~Gj-11∙  + ~F-70⁻   -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 2-chain =>  4-chain         | ~Gj-11∙  + ~Gy-72⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 2-chain =>  4-chain         | ~Gj-11∙  + ~Gy-73⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-11∙  + ~N-92⁻   -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 3-chain =>  5-chain         | ~Gj-11∙  + ~Se-102⁻ -> ~S-113⁻  (0.595) => ~Z-113ª
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-11∙  + ~Nm-100⁺ -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Gj-11∙  + ~Nm-101⁺ -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 0-chain + 3-chain =>  5-chain         | ~Gj-11∙  + ~Nm-103⁻ -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Gj-11∙  + ~Da-104ª -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 0-chain + 3-chain =>  6-chain         | ~Vi-10⁺  + ~Qe-53⁺  -> ~Kk-63⁺  (0.597) => ~Gy-63⁺
+| 0-chain + 4-chain =>  6-chain         | ~Vi-10⁺  + ~C-54⁺   -> ?Yv-64⁺  (0.58?) => ~Kk-64⁺
+| 0-chain + 1-chain =>  7-chain         | ~Vi-10⁺  + ~C-55⁺   -> *Yv-65⁺  (0.58?) => ~Kk-65⁺
+| 0-chain + 6-chain =>  8-chain         | ~Vi-10⁺  + ~Ai-57⁺  -> *Iu-67⁺  (0.70?) => ~Cj-67⁺
+| 0-chain + 2-chain =>  6-chain         | ~Vi-10⁺  + ~Ai-60⁺  -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 0-chain + 1-chain =>  6-chain         | ~Vi-10⁺  + ~F-62⁺   -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 0-chain + 6-chain =>  8-chain         | ~Vi-10⁺  + ~Kk-63⁺  -> *W-73⁺   (0.61?) => ~Co-73⁺
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Vi-10⁺  + ~Se-90∙  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-10⁺  + ~Nm-89⁺  -> ~Cv-99ª  (0.420) => ~Lx-77⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-10⁺  + ~S-97⁺   -> ~Aw-107ª (0.384) => ~Se-85⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-10⁺  + ~S-98⁺   -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain         | ~Vi-10⁺  + ~Z-98⁺   -> ~Kn-108⁺ (0.308) => ~Aw-108ª
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-10⁺  + ~Z-99⁺   -> ~Kn-109ª (0.361) => ~Nm-87⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-10⁺  + ~Cv-100⁺ -> ~Ha-110ª (0.295) => ~Dd-88⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Vi-10⁺  + ~Vt-107ª -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~Vi-10⁺  + ~Ek-100⁺ -> *I-110⁺  (0.20?) => ~Ax-110⁺
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Vi-10⁺  + ~Ek-103⁺ -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~Vi-10⁺  + ~Ji-104⁺ -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 0-chain + 4-chain =>  7-chain         | ~Vi-11⁺  + ~C-54⁺   -> *Yv-65⁺  (0.58?) => ~Kk-65⁺
+| 0-chain + 2-chain =>  6-chain         | ~Vi-11⁺  + ~F-61⁺   -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Vi-11⁺  + ~Se-89⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-11⁺  + ~Se-100∙ -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-11⁺  + ~S-97⁺   -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-11⁺  + ~Z-98⁺   -> ~Kn-109ª (0.361) => ~Nm-87⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Vi-11⁺  + ~Ek-102⁺ -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Vi-12∙  + ~Pb-51⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 1-chain + 5-chain =>  7-chain         | ~Vi-12∙  + ~C-53⁺   -> *Yv-65⁺  (0.58?) => ~Kk-65⁺
+| 1-chain + 2-chain =>  4-chain         | ~Vi-12∙  + ~Ai-69⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 2-chain =>  4-chain         | ~Vi-12∙  + ~F-71⁻   -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-12∙  + ~Se-99∙  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-12∙  + ~Se-100∙ -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Vi-12∙  + ~Se-102⁻ -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 1-chain + 4-chain =>  6-chain  +~P-22 | ~Vi-12∙  + ~Ek-101⁺ -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain         | ~Vi-13∙  + ~Nd-34⁻  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 1-chain + 2-chain =>  4-chain         | ~Vi-13∙  + ~Gd-45⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 1-chain + 1-chain =>  4-chain         | ~Vi-13∙  + ~V-46⁻   -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 1-chain + 4-chain =>  6-chain         | ~Vi-13∙  + ~V-47⁻   -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 1-chain + 1-chain =>  3-chain         | ~Vi-13∙  + ~Pb-50⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 1-chain + 4-chain =>  6-chain         | ~Vi-13∙  + ~Pb-52⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 1-chain + 1-chain =>  3-chain         | ~Vi-13∙  + ~C-64⁻   -> ~Yv-77⁻  (0.836) => ~Yv-77⁻
+| 1-chain + 2-chain =>  4-chain         | ~Vi-13∙  + ~Ai-68⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 2-chain =>  4-chain         | ~Vi-13∙  + ~F-70⁻   -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain         | ~Vi-13∙  + ~F-71⁻   -> ~D-84⁻   (0.802) => ~D-84⁻
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Vi-13∙  + ~Lx-88∙  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-13∙  + ~Lx-90∙  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Vi-13∙  + ~Vl-100⁻ -> ~S-113⁻  (0.595) => ~Z-113ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Vi-13∙  + ~Se-96∙  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-13∙  + ~Se-98∙  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-13∙  + ~Se-99∙  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Vi-13∙  + ~Se-101∙ -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 1-chain + 3-chain =>  5-chain         | ~Vi-13∙  + ~Se-102⁻ -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 1-chain + 4-chain =>  6-chain  +~P-22 | ~Vi-13∙  + ~Ek-100⁺ -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 2-chain + 1-chain =>  4-chain         | ~Vi-14⁻  + ~Nd-33⁻  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 2-chain + 1-chain =>  4-chain         | ~Vi-14⁻  + ~Lu-40⁻  -> ~Wy-54⁻  (0.835) => ~Wy-54⁻
+| 2-chain + 1-chain =>  4-chain         | ~Vi-14⁻  + ~Gd-44⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 2-chain + 2-chain =>  4-chain         | ~Vi-14⁻  + ~Gd-45⁻  -> ~Ux-59⁻  (0.738) => ~Pg-59⁻
+| 2-chain + 4-chain =>  6-chain         | ~Vi-14⁻  + ~Gd-46⁻  -> ~Ux-60⁻  (0.670) => ~Pg-60⁻
+| 2-chain + 1-chain =>  4-chain         | ~Vi-14⁻  + ~V-45⁻   -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 2-chain + 1-chain =>  6-chain         | ~Vi-14⁻  + ~V-46⁻   -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 2-chain + 2-chain =>  5-chain         | ~Vi-14⁻  + ~Uq-49⁻  -> ~Qe-63⁻  (0.805) => ~Qe-63⁻
+| 2-chain + 1-chain =>  6-chain         | ~Vi-14⁻  + ~Pb-51⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 2-chain + 4-chain =>  6-chain         | ~Vi-14⁻  + ~Pb-52⁻  -> ~C-66⁻   (0.825) => ~C-66⁻
+| 2-chain + 2-chain =>  5-chain         | ~Vi-14⁻  + ~Wy-53⁻  -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 2-chain + 1-chain =>  4-chain         | ~Vi-14⁻  + ~Ai-67⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 2-chain + 2-chain =>  4-chain         | ~Vi-14⁻  + ~Ai-69⁻  -> ~Iu-83⁻  (0.752) => ~D-83∙
+| 2-chain + 1-chain =>  4-chain         | ~Vi-14⁻  + ~F-69⁻   -> ~D-83∙   (1.828) => ~D-83∙
+| 2-chain + 2-chain =>  4-chain         | ~Vi-14⁻  + ~F-70⁻   -> ~D-84⁻   (0.802) => ~D-84⁻
+| 2-chain + 3-chain =>  5-chain         | ~Vi-14⁻  + ~F-72⁻   -> ~D-86⁻   (0.713) => ~Co-86⁻
+| 2-chain + 2-chain =>  4-chain         | ~Vi-14⁻  + ~Kk-75∙  -> ~W-89⁻   (0.839) => ~W-89⁻
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-14⁻  + ~Lx-89∙  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain         | ~Vi-14⁻  + ~Vl-99⁻  -> ~S-113⁻  (0.595) => ~Z-113ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-14⁻  + ~Se-97ª  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-14⁻  + ~Se-98∙  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 2-chain + 2-chain =>  5-chain         | ~Vi-14⁻  + ~Se-100∙ -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 2-chain + 3-chain =>  5-chain         | ~Vi-14⁻  + ~Se-101∙ -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Vi-14⁻  + ~Nm-101⁺ -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 0-chain + 5-chain =>  7-chain         | ~Ct-13⁺  + ~Qe-52⁺  -> *Yv-65⁺  (0.58?) => ~Kk-65⁺
+| 0-chain + 4-chain =>  6-chain         | ~Ct-13⁺  + ~C-54⁺   -> ~Cj-67⁺  (0.492) => ~Yv-67⁺
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-13⁺  + ~Cv-100⁺ -> *Ax-113ª (0.21?) => ~Ok-91⁺ +~P-22
+| 0-chain + 3-chain =>  6-chain  +~P-22 | ~Ct-13⁺  + ~Vt-100⁺ -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Ct-13⁺  + ~Vt-101⁺ -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~Ct-13⁺  + ~Ek-100⁺ -> *Jb-113⁺ (0.24?) => ~I-113ª
+| 0-chain + 4-chain =>  6-chain         | ~Ct-13⁺  + ~Ek-101⁺ -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 1-chain + 2-chain =>  4-chain         | ~Ct-14∙  + ~Gd-45⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 1-chain + 4-chain =>  6-chain         | ~Ct-14∙  + ~Gd-46⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 1-chain + 2-chain =>  4-chain         | ~Ct-14∙  + ~Ai-69⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-14∙  + ~Vl-97⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Ct-14∙  + ~Vl-100⁻ -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 1-chain + 4-chain =>  6-chain  +~P-22 | ~Ct-14∙  + ~Vt-99⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Ct-14∙  + ~Vt-100⁺ -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 1-chain + 4-chain =>  6-chain         | ~Ct-14∙  + ~Ek-100⁺ -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 0-chain + 1-chain =>  3-chain         | ~Ct-15∙  + ~Lu-40⁻  -> ~L-55⁻   (0.897) => ~L-55⁻
+| 0-chain + 1-chain =>  4-chain         | ~Ct-15∙  + ~Gd-44⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 2-chain =>  6-chain         | ~Ct-15∙  + ~Gd-45⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ct-15∙  + ~Pb-51⁻  -> ~Ns-66⁻  (0.881) => ~Ns-66⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ct-15∙  + ~C-64⁻   -> ~Cj-79⁻  (0.807) => ~Cj-79⁻
+| 0-chain + 2-chain =>  4-chain         | ~Ct-15∙  + ~Ai-68⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 2-chain =>  4-chain         | ~Ct-15∙  + ~Ai-69⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 0-chain + 2-chain =>  4-chain         | ~Ct-15∙  + ~Gy-74⁻  -> ~W-89⁻   (0.839) => ~W-89⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-15∙  + ~Vl-96⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-15∙  + ~Vl-97⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 0-chain + 3-chain =>  5-chain         | ~Ct-15∙  + ~Vl-99⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 0-chain + 3-chain =>  5-chain         | ~Ct-15∙  + ~Vl-100⁻ -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-15∙  + ~Se-100∙ -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Ct-15∙  + ~Vt-98⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 2-chain + 1-chain =>  4-chain         | ~Ct-16⁻  + ~Yu-31⁻  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 2-chain + 1-chain =>  5-chain         | ~Ct-16⁻  + ~Nd-34⁻  -> ~Uq-50⁻  (0.800) => ~Uq-50⁻
+| 2-chain + 2-chain =>  4-chain         | ~Ct-16⁻  + ~Dx-42⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 2-chain + 4-chain =>  6-chain         | ~Ct-16⁻  + ~Dx-44⁻  -> ~Ux-60⁻  (0.670) => ~Pg-60⁻
+| 2-chain + 1-chain =>  4-chain         | ~Ct-16⁻  + ~Gd-43⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 2-chain + 1-chain =>  6-chain         | ~Ct-16⁻  + ~Gd-44⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 2-chain + 2-chain =>  6-chain         | ~Ct-16⁻  + ~Uq-49⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 2-chain + 1-chain =>  5-chain         | ~Ct-16⁻  + ~Pb-51⁻  -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 2-chain + 1-chain =>  4-chain         | ~Ct-16⁻  + ~Ns-65⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 2-chain + 1-chain =>  4-chain         | ~Ct-16⁻  + ~Ai-67⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 2-chain + 2-chain =>  4-chain         | ~Ct-16⁻  + ~Ai-68⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 2-chain + 2-chain =>  4-chain         | ~Ct-16⁻  + ~Gy-73⁻  -> ~W-89⁻   (0.839) => ~W-89⁻
+| 2-chain + 3-chain =>  5-chain         | ~Ct-16⁻  + ~N-96⁻   -> ~Da-112⁻ (0.634) => ~S-112⁻
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-16⁻  + ~Vl-95⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-16⁻  + ~Vl-96⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain         | ~Ct-16⁻  + ~Vl-98⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 2-chain + 3-chain =>  5-chain         | ~Ct-16⁻  + ~Vl-99⁻  -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-16⁻  + ~Se-99∙  -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-16⁻  + ~Se-100∙ -> ~Cv-116ª (0.587) => ~Lx-94⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-16⁻  + ~Nm-101⁺ -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 0-chain + 1-chain =>  4-chain         | ~Ct-17⁻  + ~Yu-30∙  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 0-chain + 1-chain =>  5-chain         | ~Ct-17⁻  + ~Nd-33⁻  -> ~Uq-50⁻  (0.800) => ~Uq-50⁻
+| 0-chain + 1-chain =>  4-chain         | ~Ct-17⁻  + ~K-35⁻   -> ~Pb-52⁻  (0.878) => ~Pb-52⁻
+| 0-chain + 1-chain =>  4-chain         | ~Ct-17⁻  + ~Mt-37⁻  -> ~Wy-54⁻  (0.835) => ~Wy-54⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ct-17⁻  + ~Lu-38∙  -> ~L-55⁻   (0.897) => ~L-55⁻
+| 0-chain + 1-chain =>  4-chain         | ~Ct-17⁻  + ~Dx-41⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 0-chain + 2-chain =>  4-chain         | ~Ct-17⁻  + ~Dx-42⁻  -> ~Ux-59⁻  (0.738) => ~Pg-59⁻
+| 0-chain + 4-chain =>  6-chain         | ~Ct-17⁻  + ~Dx-43⁻  -> ~Ux-60⁻  (0.670) => ~Pg-60⁻
+| 0-chain + 1-chain =>  4-chain         | ~Ct-17⁻  + ~Gd-42∙  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 1-chain =>  6-chain         | ~Ct-17⁻  + ~Gd-43⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  5-chain         | ~Ct-17⁻  + ~V-46⁻   -> ~Qe-63⁻  (0.805) => ~Qe-63⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ct-17⁻  + ~Uq-46∙  -> ~C-63∙   (1.990) => ~C-63∙
+| 0-chain + 2-chain =>  6-chain         | ~Ct-17⁻  + ~Uq-48⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 0-chain + 2-chain =>  6-chain         | ~Ct-17⁻  + ~Uq-49⁻  -> ~C-66⁻   (0.825) => ~C-66⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ct-17⁻  + ~Pb-49⁻  -> ~Ns-66⁻  (0.881) => ~Ns-66⁻
+| 0-chain + 1-chain =>  5-chain         | ~Ct-17⁻  + ~Pb-50⁻  -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ct-17⁻  + ~C-62∙   -> ~Cj-79⁻  (0.807) => ~Cj-79⁻
+| 0-chain + 1-chain =>  4-chain         | ~Ct-17⁻  + ~C-64⁻   -> ~Cj-81⁻  (0.832) => ~Cj-81⁻
+| 0-chain + 1-chain =>  4-chain         | ~Ct-17⁻  + ~Ns-64∙  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ct-17⁻  + ~Ns-65⁻  -> ~Iu-82∙  (1.746) => ~Iu-82∙
+| 0-chain + 2-chain =>  4-chain         | ~Ct-17⁻  + ~Ai-66⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 1-chain =>  4-chain         | ~Ct-17⁻  + ~Ai-67⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 0-chain + 2-chain =>  5-chain         | ~Ct-17⁻  + ~Ai-69⁻  -> ~D-86⁻   (0.713) => ~Co-86⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ct-17⁻  + ~Gy-70ª  -> ~W-87⁻   (0.822) => ~W-87⁻
+| 0-chain + 2-chain =>  4-chain         | ~Ct-17⁻  + ~Gy-72⁻  -> ~W-89⁻   (0.839) => ~W-89⁻
+| 0-chain + 1-chain =>  3-chain         | ~Ct-17⁻  + ~Cj-76ª  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~Cj-78⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ct-17⁻  + ~W-84ª   -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~W-86ª   -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 3-chain =>  5-chain         | ~Ct-17⁻  + ~W-91⁻   -> ~Dd-108⁻ (0.517) => ~Ok-108⁻
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ct-17⁻  + ~Lx-87∙  -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 0-chain + 2-chain =>  4-chain         | ~Ct-17⁻  + ~N-92⁻   -> ~Da-109∙ (1.500) => ~Da-109∙
+| 0-chain + 3-chain =>  5-chain         | ~Ct-17⁻  + ~U-96⁻   -> ~S-113⁻  (0.595) => ~Z-113ª
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ct-17⁻  + ~Vl-92⁺  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ct-17⁻  + ~Vl-93∙  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~Vl-94⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~Vl-95⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 0-chain + 2-chain =>  5-chain         | ~Ct-17⁻  + ~Vl-97⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 0-chain + 3-chain =>  5-chain         | ~Ct-17⁻  + ~Vl-98⁻  -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ct-17⁻  + ~Se-96∙  -> *Cv-113ª (0.68?) => ~Lx-91⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~Se-98∙  -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~Se-99∙  -> ~Cv-116ª (0.587) => ~Lx-94⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~Se-100∙ -> ~Cv-117ª (0.550) => ~Lx-95⁻ +~P-22
+| 0-chain + 3-chain =>  5-chain         | ~Ct-17⁻  + ~Se-102⁻ -> ~Cv-119⁻ (0.476) => ~Vt-119⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~Nm-100⁺ -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ct-17⁻  + ~Dd-98ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ct-17⁻  + ~Dd-99ª  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~Dd-102ª -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ct-17⁻  + ~Z-110ª  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ct-17⁻  + ~Ji-114ª -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~T-15⁺   + ~C-54⁺   -> ~Iu-69⁺  (0.479) => ~Cj-69⁺
+| 0-chain + 1-chain =>  6-chain         | ~T-15⁺   + ~C-55⁺   -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~T-15⁺   + ~Z-98⁺   -> *Ax-113ª (0.21?) => ~Ok-91⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~T-15⁺   + ~Z-102ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 0-chain + 3-chain =>  6-chain  +~P-22 | ~T-15⁺   + ~Cv-98ª  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~T-15⁺   + ~Cv-99ª  -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~T-15⁺   + ~Cv-100⁺ -> ~I-115ª  (0.312) => ~Da-93⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~T-15⁺   + ~Vt-98⁺  -> *Jb-113⁺ (0.24?) => ~I-113ª
+| 0-chain + 4-chain =>  6-chain         | ~T-15⁺   + ~Vt-99⁺  -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 0-chain + 3-chain =>  5-chain         | ~T-15⁺   + ~Vt-100⁺ -> ~Jb-115⁺ (0.187) => ~I-115ª
+| 0-chain + 4-chain =>  6-chain         | ~T-16∙   + ~Dx-44⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 4-chain =>  6-chain         | ~T-16∙   + ~C-54⁺   -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~T-16∙   + ~Cv-97⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~T-16∙   + ~Cv-98ª  -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~T-16∙   + ~Cv-100⁺ -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~T-16∙   + ~Vt-98⁺  -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 0-chain + 2-chain =>  4-chain         | ~T-17∙   + ~Dx-42⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 4-chain =>  6-chain         | ~T-17∙   + ~Dx-43⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain         | ~T-17∙   + ~V-46⁻   -> ~C-63∙   (1.990) => ~C-63∙
+| 0-chain + 1-chain =>  4-chain         | ~T-17∙   + ~C-64⁻   -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 0-chain + 3-chain =>  5-chain         | ~T-17∙   + ~N-96⁻   -> ~S-113⁻  (0.595) => ~Z-113ª
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~T-17∙   + ~Se-100∙ -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain         | ~T-18⁻   + ~Cl-29⁻  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 2-chain + 1-chain =>  4-chain         | ~T-18⁻   + ~Nd-34⁻  -> ~Pb-52⁻  (0.878) => ~Pb-52⁻
+| 2-chain + 1-chain =>  4-chain         | ~T-18⁻   + ~Lu-40⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 2-chain + 1-chain =>  4-chain         | ~T-18⁻   + ~Dx-41⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 2-chain + 2-chain =>  6-chain         | ~T-18⁻   + ~Dx-42⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 2-chain + 2-chain =>  5-chain         | ~T-18⁻   + ~Gd-45⁻  -> ~Qe-63⁻  (0.805) => ~Qe-63⁻
+| 2-chain + 4-chain =>  6-chain         | ~T-18⁻   + ~V-47⁻   -> ~C-65⁻   (0.898) => ~C-65⁻
+| 2-chain + 2-chain =>  5-chain         | ~T-18⁻   + ~Uq-49⁻  -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 2-chain + 1-chain =>  4-chain         | ~T-18⁻   + ~Ns-65⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 2-chain + 2-chain =>  4-chain         | ~T-18⁻   + ~F-71⁻   -> ~W-89⁻   (0.839) => ~W-89⁻
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~T-18⁻   + ~Co-85⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain         | ~T-18⁻   + ~U-96⁻   -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~T-18⁻   + ~Vl-97⁻  -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~T-18⁻   + ~Se-99∙  -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~T-18⁻   + ~Nm-101⁺ -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 0-chain + 5-chain =>  7-chain         | ~Xj-17⁺  + ~Ux-48⁺  -> *Yv-65⁺  (0.58?) => ~Kk-65⁺
+| 0-chain + 3-chain =>  6-chain         | ~Xj-17⁺  + ~Qe-53⁺  -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 0-chain + 1-chain =>  6-chain         | ~Xj-17⁺  + ~C-55⁺   -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Xj-17⁺  + ~N-83⁺   -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-17⁺  + ~Nm-89⁺  -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Xj-17⁺  + ~Z-96⁺   -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Xj-17⁺  + ~Z-97⁺   -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-17⁺  + ~Z-98⁺   -> ~I-115ª  (0.312) => ~Da-93⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-17⁺  + ~Z-99⁺   -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~Xj-17⁺  + ~Cv-97⁺  -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 0-chain + 3-chain =>  5-chain         | ~Xj-17⁺  + ~Cv-98ª  -> ~Jb-115⁺ (0.187) => ~I-115ª
+| 0-chain + 4-chain =>  6-chain         | ~Xj-18∙  + ~C-54⁺   -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 0-chain + 3-chain =>  5-chain         | ~Xj-18∙  + ~N-96⁻   -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Xj-18∙  + ~Z-95⁺   -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-18∙  + ~Z-98⁺   -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain         | ~Xj-19∙  + ~Lu-40⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 1-chain + 4-chain =>  6-chain         | ~Xj-19∙  + ~Lu-41⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 1-chain + 1-chain =>  3-chain         | ~Xj-19∙  + ~Gd-44⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 1-chain + 4-chain =>  6-chain         | ~Xj-19∙  + ~Gd-46⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 1-chain + 2-chain =>  4-chain         | ~Xj-19∙  + ~Qe-62⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  4-chain         | ~Xj-19∙  + ~C-64⁻   -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-19∙  + ~N-92⁻   -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Xj-19∙  + ~N-96⁻   -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Xj-19∙  + ~Se-96∙  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-19∙  + ~Se-100∙ -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain         | ~Xj-20⁻  + ~Ro-27⁻  -> ~V-47⁻   (0.808) => ~V-47⁻
+| 1-chain + 1-chain =>  4-chain         | ~Xj-20⁻  + ~Nd-34⁻  -> ~Wy-54⁻  (0.835) => ~Wy-54⁻
+| 1-chain + 1-chain =>  3-chain         | ~Xj-20⁻  + ~K-35⁻   -> ~L-55⁻   (0.897) => ~L-55⁻
+| 1-chain + 1-chain =>  4-chain         | ~Xj-20⁻  + ~Lu-39⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 1-chain + 1-chain =>  6-chain         | ~Xj-20⁻  + ~Lu-40⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 1-chain + 1-chain =>  3-chain         | ~Xj-20⁻  + ~Gd-43⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 1-chain + 2-chain =>  6-chain         | ~Xj-20⁻  + ~Gd-45⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 1-chain + 4-chain =>  6-chain         | ~Xj-20⁻  + ~Gd-46⁻  -> ~C-66⁻   (0.825) => ~C-66⁻
+| 1-chain + 1-chain =>  3-chain         | ~Xj-20⁻  + ~V-46⁻   -> ~Ns-66⁻  (0.881) => ~Ns-66⁻
+| 1-chain + 2-chain =>  4-chain         | ~Xj-20⁻  + ~Qe-61⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  4-chain         | ~Xj-20⁻  + ~C-64⁻   -> ~D-84⁻   (0.802) => ~D-84⁻
+| 1-chain + 1-chain =>  3-chain         | ~Xj-20⁻  + ~Ai-67⁻  -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 2-chain =>  4-chain         | ~Xj-20⁻  + ~Ai-69⁻  -> ~W-89⁻   (0.839) => ~W-89⁻
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-20⁻  + ~Kk-75∙  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Xj-20⁻  + ~D-81⁻   -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Xj-20⁻  + ~Lx-88∙  -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Xj-20⁻  + ~N-89⁺   -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-20⁻  + ~N-91∙   -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-20⁻  + ~N-92⁻   -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Xj-20⁻  + ~N-94⁻   -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-20⁻  + ~Vl-97⁻  -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Xj-20⁻  + ~Se-95∙  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Xj-20⁻  + ~Se-96∙  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-20⁻  + ~Se-99∙  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Xj-20⁻  + ~Se-100∙ -> ~Ek-120ª (0.531) => ~U-98⁻ +~P-22
+| 3-chain + 2-chain =>  5-chain         | ~Xj-21⁻  + ~Cl-29⁻  -> ~Uq-50⁻  (0.800) => ~Uq-50⁻
+| 3-chain + 1-chain =>  6-chain         | ~Xj-21⁻  + ~Lu-39⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 3-chain + 2-chain =>  5-chain         | ~Xj-21⁻  + ~Dx-42⁻  -> ~Qe-63⁻  (0.805) => ~Qe-63⁻
+| 3-chain + 4-chain =>  6-chain         | ~Xj-21⁻  + ~Dx-44⁻  -> *Qe-65⁻  (0.74?) => ~C-65⁻
+| 3-chain + 1-chain =>  6-chain         | ~Xj-21⁻  + ~Gd-44⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 3-chain + 2-chain =>  6-chain         | ~Xj-21⁻  + ~Gd-45⁻  -> ~C-66⁻   (0.825) => ~C-66⁻
+| 3-chain + 1-chain =>  5-chain         | ~Xj-21⁻  + ~V-46⁻   -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 3-chain + 3-chain =>  5-chain         | ~Xj-21⁻  + ~W-91⁻   -> ~Da-112⁻ (0.634) => ~S-112⁻
+| 3-chain + 3-chain =>  5-chain         | ~Xj-21⁻  + ~Lx-92∙  -> ~S-113⁻  (0.595) => ~Z-113ª
+| 3-chain + 3-chain =>  5-chain         | ~Xj-21⁻  + ~N-93⁻   -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 3-chain + 3-chain =>  5-chain         | ~Xj-21⁻  + ~N-94⁻   -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 3-chain + 3-chain =>  5-chain         | ~Xj-21⁻  + ~Vl-100⁻ -> ~Vt-121⁻ (0.468) => ~Ek-121⁻
+| 3-chain + 3-chain =>  5-chain         | ~Xj-21⁻  + ~Se-102⁻ -> ~Ek-123⁻ (0.468) => ~Ji-123ª
+| 0-chain + 3-chain =>  6-chain         | ~Eb-19⁺  + ~Qe-53⁺  -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 0-chain + 4-chain =>  6-chain         | ~Eb-19⁺  + ~C-54⁺   -> ~Co-73⁺  (0.492) => ~D-73⁺
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Eb-19⁺  + ~Nm-89⁺  -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Eb-19⁺  + ~Da-98ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Eb-19⁺  + ~S-94⁺   -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Eb-19⁺  + ~S-95⁺   -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Eb-19⁺  + ~S-97⁺   -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~Eb-19⁺  + ~Z-95⁺   -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Eb-19⁺  + ~Ji-107ª -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain         | ~Eb-21∙  + ~Nd-34⁻  -> ~L-55⁻   (0.897) => ~L-55⁻
+| 0-chain + 4-chain =>  6-chain         | ~Eb-21∙  + ~Dx-44⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 0-chain + 2-chain =>  4-chain         | ~Eb-21∙  + ~Qe-62⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Eb-21∙  + ~Gy-74⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Eb-21∙  + ~Lx-88∙  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Eb-21∙  + ~Lx-90∙  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain         | ~Eb-22∙  + ~Nd-33⁻  -> ~L-55⁻   (0.897) => ~L-55⁻
+| 0-chain + 1-chain =>  4-chain         | ~Eb-22∙  + ~Mt-37⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 0-chain + 3-chain =>  6-chain         | ~Eb-22∙  + ~Mt-38⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain         | ~Eb-22∙  + ~Dx-41⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 0-chain + 4-chain =>  6-chain         | ~Eb-22∙  + ~Dx-43⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 0-chain + 4-chain =>  6-chain         | ~Eb-22∙  + ~Dx-44⁻  -> ~C-66⁻   (0.825) => ~C-66⁻
+| 0-chain + 1-chain =>  3-chain         | ~Eb-22∙  + ~Gd-44⁻  -> ~Ns-66⁻  (0.881) => ~Ns-66⁻
+| 0-chain + 2-chain =>  5-chain         | ~Eb-22∙  + ~Gd-45⁻  -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 0-chain + 2-chain =>  4-chain         | ~Eb-22∙  + ~Qe-61⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 2-chain =>  4-chain         | ~Eb-22∙  + ~Qe-62⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 0-chain + 1-chain =>  3-chain         | ~Eb-22∙  + ~Ns-65⁻  -> ~W-87⁻   (0.822) => ~W-87⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Eb-22∙  + ~Gy-73⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 0-chain + 3-chain =>  5-chain         | ~Eb-22∙  + ~W-91⁻   -> ~S-113⁻  (0.595) => ~Z-113ª
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Eb-22∙  + ~Lx-87∙  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Eb-22∙  + ~Lx-88∙  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Eb-22∙  + ~Lx-89∙  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Eb-22∙  + ~Lx-90∙  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 0-chain + 3-chain =>  5-chain         | ~Eb-22∙  + ~Lx-92∙  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Eb-22∙  + ~Vl-93∙  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Eb-22∙  + ~Vl-97⁻  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 5-chain + 5-chain =>  7-chain         | ~Eb-23⁻  + ~Wy-56⁻  -> *Kk-79⁻  (0.77?) => ~Yv-79⁻
+| 0-chain + 4-chain =>  6-chain         | ~P-21⁺   + ~Ux-49⁺  -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 0-chain + 4-chain =>  6-chain         | ~P-21⁺   + ~C-54⁺   -> ~W-75⁺   (0.518) => ~Co-75⁺
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~P-21⁺   + ~Ji-107ª -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~P-23∙   + ~K-37⁻   -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 0-chain + 1-chain =>  3-chain         | ~P-23∙   + ~Lu-40⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 0-chain + 1-chain =>  3-chain         | ~P-23∙   + ~C-64⁻   -> ~W-87⁻   (0.822) => ~W-87⁻
+| 0-chain + 3-chain =>  5-chain         | ~P-23∙   + ~W-91⁻   -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 1-chain + 1-chain =>  3-chain         | ~P-24⁻   + ~Yu-31⁻  -> ~L-55⁻   (0.897) => ~L-55⁻
+| 1-chain + 1-chain =>  4-chain         | ~P-24⁻   + ~Nd-34⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 1-chain + 1-chain =>  4-chain         | ~P-24⁻   + ~K-35⁻   -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 1-chain + 1-chain =>  3-chain         | ~P-24⁻   + ~Lu-39⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 1-chain + 4-chain =>  6-chain         | ~P-24⁻   + ~Lu-41⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 1-chain + 2-chain =>  4-chain         | ~P-24⁻   + ~Ux-57⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  3-chain         | ~P-24⁻   + ~F-69⁻   -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~P-24⁻   + ~F-71⁻   -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~P-24⁻   + ~W-91⁻   -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~P-24⁻   + ~Z-110ª  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 0-chain + 5-chain =>  7-chain         | ~Ro-22⁺  + ~Pb-43⁺  -> *Yv-65⁺  (0.58?) => ~Kk-65⁺
+| 0-chain + 4-chain =>  6-chain         | ~Ro-22⁺  + ~L-48⁺   -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 0-chain + 1-chain =>  6-chain         | ~Ro-22⁺  + ~Ux-50⁺  -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 0-chain + 3-chain =>  6-chain         | ~Ro-22⁺  + ~Qe-53⁺  -> ~W-75⁺   (0.518) => ~Co-75⁺
+| 0-chain + 1-chain =>  3-chain         | ~Ro-22⁺  + ~C-56⁺   -> ~Lx-78⁺  (0.675) => ~W-78ª
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ro-22⁺  + ~Co-78ª  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-22⁺  + ~W-77ª   -> ~Cv-99ª  (0.420) => ~Lx-77⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-22⁺  + ~U-84ª   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-22⁺  + ~Vl-86ª  -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Ro-22⁺  + ~Dd-95⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Ro-22⁺  + ~Ok-91⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Ro-22⁺  + ~Ok-92⁺  -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-22⁺  + ~Vt-104ª -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-22⁺  + ~Ji-108ª -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~Ro-23ª  + ~Ux-49⁺  -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 0-chain + 1-chain =>  3-chain         | ~Ro-23ª  + ~C-55⁺   -> ~Lx-78⁺  (0.675) => ~W-78ª
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-23ª  + ~U-83⁺   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Ro-23ª  + ~Ok-90⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-23ª  + ~Ji-107ª -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Ro-24ª  + ~Ok-89⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain         | ~Ro-25∙  + ~Nd-34⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 1-chain + 1-chain =>  4-chain         | ~Ro-26∙  + ~Nd-33⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 1-chain + 1-chain =>  6-chain         | ~Ro-26∙  + ~Nd-34⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 1-chain + 1-chain =>  3-chain         | ~Ro-26∙  + ~Mt-37⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 1-chain + 1-chain =>  3-chain         | ~Ro-26∙  + ~Lu-40⁻  -> ~Ns-66⁻  (0.881) => ~Ns-66⁻
+| 1-chain + 1-chain =>  3-chain         | ~Ro-26∙  + ~Pb-51⁻  -> ~Yv-77⁻  (0.836) => ~Yv-77⁻
+| 1-chain + 2-chain =>  4-chain         | ~Ro-26∙  + ~Ux-57⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 1-chain =>  3-chain         | ~Ro-26∙  + ~Ai-67⁻  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-26∙  + ~Ai-69⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ro-26∙  + ~Co-83⁺  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-26∙  + ~Co-85⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Ro-26∙  + ~Co-88⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ro-26∙  + ~N-89⁺   -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-26∙  + ~Se-100∙ -> *Kn-126ª (0.58?) => ~Nm-104⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-26∙  + ~Nm-101⁺ -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ro-26∙  + ~Da-104ª -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain         | ~Ro-27⁻  + ~Ro-27⁻  -> ~Wy-54⁻  (0.835) => ~Wy-54⁻
+| 2-chain + 1-chain =>  4-chain         | ~Ro-27⁻  + ~Yu-31⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 2-chain + 1-chain =>  4-chain         | ~Ro-27⁻  + ~Nd-32⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 2-chain + 1-chain =>  6-chain         | ~Ro-27⁻  + ~Nd-33⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 2-chain + 3-chain =>  6-chain         | ~Ro-27⁻  + ~Mt-38⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 2-chain + 1-chain =>  5-chain         | ~Ro-27⁻  + ~Lu-40⁻  -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 2-chain + 5-chain =>  7-chain         | ~Ro-27⁻  + ~Uq-52⁻  -> *Kk-79⁻  (0.77?) => ~Yv-79⁻
+| 2-chain + 1-chain =>  4-chain         | ~Ro-27⁻  + ~L-54∙   -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 2-chain + 1-chain =>  4-chain         | ~Ro-27⁻  + ~Ux-56⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 2-chain + 2-chain =>  4-chain         | ~Ro-27⁻  + ~Ux-57⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 2-chain + 2-chain =>  4-chain         | ~Ro-27⁻  + ~Qe-62⁻  -> ~W-89⁻   (0.839) => ~W-89⁻
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Ai-68⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Yv-76∙  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Co-84∙  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Co-85⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain         | ~Ro-27⁻  + ~Co-87⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 2-chain + 3-chain =>  5-chain         | ~Ro-27⁻  + ~Co-88⁻  -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Lx-90∙  -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~N-92⁻   -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain         | ~Ro-27⁻  + ~N-96⁻   -> ~Ek-123⁻ (0.468) => ~Ji-123ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Se-99∙  -> *Kn-126ª (0.58?) => ~Nm-104⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Se-100∙ -> *Kn-127ª (0.58?) => ~Nm-105⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Nm-100⁺ -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Nm-101⁺ -> *Ha-128ª (0.55?) => ~Dd-106⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~Dd-102ª -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain  +~P-22 | ~Ro-27⁻  + ~Dd-104⁻ -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ro-27⁻  + ~S-107ª  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 5-chain + 5-chain =>  7-chain         | ~Ro-28⁻  + ~Uq-51⁻  -> *Kk-79⁻  (0.77?) => ~Yv-79⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-25⁺  + ~U-83⁺   -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Cl-25⁺  + ~Se-89⁺  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain  +~P-22 | ~Cl-25⁺  + ~Dd-88⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Cl-25⁺  + ~Dd-89⁺  -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 0-chain + 4-chain =>  6-chain         | ~Cl-25⁺  + ~Ok-89⁺  -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-25⁺  + ~Cv-100⁺ -> *Eh-125ª (0.19?) => ~Ek-103⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Cl-25⁺  + ~Vt-100⁺ -> ~Ys-125ª (0.136) => ~Ji-103⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-25⁺  + ~Ji-107ª -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-26ª  + ~Cv-100⁺ -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Cl-27∙  + ~Lx-88∙  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-27∙  + ~Se-100∙ -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Cl-27∙  + ~Da-104ª -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  4-chain         | ~Cl-28⁻  + ~Yu-31⁻  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 1-chain + 1-chain =>  3-chain         | ~Cl-28⁻  + ~K-35⁻   -> ~C-63∙   (1.990) => ~C-63∙
+| 1-chain + 4-chain =>  6-chain         | ~Cl-28⁻  + ~K-37⁻   -> ~C-65⁻   (0.898) => ~C-65⁻
+| 1-chain + 1-chain =>  3-chain         | ~Cl-28⁻  + ~Pb-51⁻  -> ~Cj-79⁻  (0.807) => ~Cj-79⁻
+| 1-chain + 2-chain =>  4-chain         | ~Cl-28⁻  + ~Wy-53⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  3-chain         | ~Cl-28⁻  + ~Ns-65⁻  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-28⁻  + ~Kk-75∙  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Cl-28⁻  + ~D-81⁻   -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Cl-28⁻  + ~Lx-87∙  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Cl-28⁻  + ~Lx-88∙  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-28⁻  + ~Se-99∙  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-28⁻  + ~Se-100∙ -> *Ha-128ª (0.55?) => ~Dd-106⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-28⁻  + ~Nm-101⁺ -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Cl-28⁻  + ~Nm-103⁻ -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-28⁻  + ~Da-106∙ -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 2-chain =>  4-chain         | ~Cl-29⁻  + ~Cl-29⁻  -> ~Ux-58⁻  (0.817) => ~Ux-58⁻
+| 2-chain + 1-chain =>  4-chain         | ~Cl-29⁻  + ~Yu-30∙  -> ~Pg-59⁻  (0.880) => ~Pg-59⁻
+| 2-chain + 1-chain =>  6-chain         | ~Cl-29⁻  + ~Yu-31⁻  -> ~Pg-60⁻  (0.819) => ~Pg-60⁻
+| 2-chain + 1-chain =>  5-chain         | ~Cl-29⁻  + ~Nd-34⁻  -> ~Qe-63⁻  (0.805) => ~Qe-63⁻
+| 2-chain + 4-chain =>  6-chain         | ~Cl-29⁻  + ~K-37⁻   -> ~C-66⁻   (0.825) => ~C-66⁻
+| 2-chain + 3-chain =>  5-chain         | ~Cl-29⁻  + ~Mt-38⁻  -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 2-chain + 1-chain =>  4-chain         | ~Cl-29⁻  + ~Wy-52∙  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 2-chain + 1-chain =>  4-chain         | ~Cl-29⁻  + ~L-54∙   -> ~D-83∙   (1.828) => ~D-83∙
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-29⁻  + ~Kk-74∙  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-29⁻  + ~D-82⁺   -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-29⁻  + ~Lx-90∙  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain         | ~Cl-29⁻  + ~N-96⁻   -> *Ji-125⁻ (0.57?) => ~Aw-125ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-29⁻  + ~Vl-97⁻  -> *Kn-126ª (0.58?) => ~Nm-104⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-29⁻  + ~Se-98∙  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-29⁻  + ~Se-99∙  -> *Ha-128ª (0.55?) => ~Dd-106⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-29⁻  + ~Nm-100⁺ -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain  +~P-22 | ~Cl-29⁻  + ~Nm-102ª -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Cl-29⁻  + ~Da-105ª -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Yu-27⁺  + ~Se-89⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Yu-27⁺  + ~Se-90∙  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-27⁺  + ~Nm-89⁺  -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-27⁺  + ~Z-98⁺   -> *Eh-125ª (0.19?) => ~Ek-103⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-27⁺  + ~Z-99⁺   -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Yu-27⁺  + ~Cv-98ª  -> ~Ys-125ª (0.136) => ~Ji-103⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-27⁺  + ~Cv-100⁺ -> *Ys-127ª (0.13?) => ~Ji-105⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Yu-27⁺  + ~Vt-100⁺ -> *67-127ª (0.50?) => ~Aw-105⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Yu-28ª  + ~Se-89⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-28ª  + ~Z-98⁺   -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-28ª  + ~Cv-100⁺ -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 0-chain + 1-chain =>  3-chain         | ~Yu-29∙  + ~Nd-34⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 0-chain + 1-chain =>  3-chain         | ~Yu-29∙  + ~C-64⁻   -> ~U-93⁻   (0.806) => ~U-93⁻
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-29∙  + ~Gy-74⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-29∙  + ~Se-100∙ -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Yu-29∙  + ~Se-102⁻ -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Yu-30∙  + ~Nd-33⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 1-chain + 1-chain =>  4-chain         | ~Yu-30∙  + ~Pb-51⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 2-chain =>  4-chain         | ~Yu-30∙  + ~Wy-53⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-30∙  + ~Gy-73⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-30∙  + ~Vl-97⁻  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-30∙  + ~Se-99∙  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Yu-30∙  + ~Se-101∙ -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-30∙  + ~Ok-104ª -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Yu-31⁻  + ~Nd-32⁻  -> ~C-63∙   (1.990) => ~C-63∙
+| 1-chain + 1-chain =>  6-chain         | ~Yu-31⁻  + ~Nd-34⁻  -> ~C-65⁻   (0.898) => ~C-65⁻
+| 1-chain + 1-chain =>  3-chain         | ~Yu-31⁻  + ~K-35⁻   -> ~Ns-66⁻  (0.881) => ~Ns-66⁻
+| 1-chain + 1-chain =>  3-chain         | ~Yu-31⁻  + ~V-46⁻   -> ~Yv-77⁻  (0.836) => ~Yv-77⁻
+| 1-chain + 1-chain =>  4-chain         | ~Yu-31⁻  + ~Pb-50⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  3-chain         | ~Yu-31⁻  + ~Pb-51⁻  -> ~Iu-82∙  (1.746) => ~Iu-82∙
+| 1-chain + 1-chain =>  4-chain         | ~Yu-31⁻  + ~Wy-52∙  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain         | ~Yu-31⁻  + ~Wy-53⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 1-chain + 1-chain =>  3-chain         | ~Yu-31⁻  + ~Ux-56⁻  -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 1-chain =>  3-chain         | ~Yu-31⁻  + ~C-62∙   -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Yu-31⁻  + ~C-64⁻   -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Yu-31⁻  + ~Gy-70ª  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-31⁻  + ~Gy-72⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Yu-31⁻  + ~Iu-78∙  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-31⁻  + ~Iu-80⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Yu-31⁻  + ~W-84ª   -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-31⁻  + ~Vl-96⁻  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-31⁻  + ~Vl-97⁻  -> *Ha-128ª (0.55?) => ~Dd-106⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Yu-31⁻  + ~Se-96∙  -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-31⁻  + ~Se-98∙  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 2-chain =>  5-chain  +~P-22 | ~Yu-31⁻  + ~Se-100∙ -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Yu-31⁻  + ~Dd-99ª  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Yu-31⁻  + ~Ok-100ª -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Yu-31⁻  + ~Ok-103⁻ -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 3-chain + 1-chain =>  6-chain         | ~Nd-28⁺  + ~Uq-42⁺  -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 3-chain + 1-chain =>  6-chain         | ~Nd-28⁺  + ~Pb-44⁺  -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 3-chain + 4-chain =>  6-chain  +~P-22 | ~Nd-28⁺  + ~Se-85⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 3-chain + 3-chain =>  5-chain  +~P-22 | ~Nd-28⁺  + ~Z-97⁺   -> ~Ys-125ª (0.136) => ~Ji-103⁺ +~P-22
+| 3-chain + 3-chain =>  5-chain  +~P-22 | ~Nd-28⁺  + ~Cv-98ª  -> *67-126ª (0.50?) => ~Aw-104⁺ +~P-22
+| 3-chain + 3-chain =>  5-chain  +~P-22 | ~Nd-28⁺  + ~Cv-99ª  -> *67-127ª (0.50?) => ~Aw-105⁺ +~P-22
+| 3-chain + 3-chain =>  5-chain  +~P-22 | ~Nd-28⁺  + ~Vt-100⁺ -> *68-128ª (0.50?) => ~Kn-106⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-29⁺  + ~W-77ª   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-29⁺  + ~Vl-88⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 4-chain =>  6-chain  +~P-22 | ~Nd-29⁺  + ~Se-84⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-29⁺  + ~Se-89⁺  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-29⁺  + ~S-97⁺   -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-29⁺  + ~Z-98⁺   -> *Ys-127ª (0.13?) => ~Ji-105⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-29⁺  + ~Z-99⁺   -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Nd-29⁺  + ~Cv-98ª  -> *67-127ª (0.50?) => ~Aw-105⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-30ª  + ~Z-98⁺   -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-30ª  + ~Cv-100⁺ -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Nd-31∙  + ~Vl-100⁻ -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Nd-32⁻  + ~Nd-34⁻  -> ~Ns-66⁻  (0.881) => ~Ns-66⁻
+| 1-chain + 2-chain =>  4-chain         | ~Nd-32⁻  + ~Uq-49⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  4-chain         | ~Nd-32⁻  + ~Pb-51⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-32⁻  + ~F-69⁻   -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-32⁻  + ~F-71⁻   -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-32⁻  + ~Co-83⁺  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-32⁻  + ~Vl-97⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Nd-32⁻  + ~Vl-99⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-32⁻  + ~Dd-99ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-32⁻  + ~Dd-102ª -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Nd-33⁻  + ~Nd-33⁻  -> ~Ns-66⁻  (0.881) => ~Ns-66⁻
+| 1-chain + 1-chain =>  5-chain         | ~Nd-33⁻  + ~Nd-34⁻  -> ~Ns-67⁻  (0.822) => ~Ns-67⁻
+| 1-chain + 1-chain =>  3-chain         | ~Nd-33⁻  + ~Gd-44⁻  -> ~Yv-77⁻  (0.836) => ~Yv-77⁻
+| 1-chain + 1-chain =>  3-chain         | ~Nd-33⁻  + ~V-46⁻   -> ~Cj-79⁻  (0.807) => ~Cj-79⁻
+| 1-chain + 2-chain =>  4-chain         | ~Nd-33⁻  + ~Uq-48⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  4-chain         | ~Nd-33⁻  + ~Pb-50⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 1-chain =>  4-chain         | ~Nd-33⁻  + ~Pb-51⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 1-chain + 1-chain =>  3-chain         | ~Nd-33⁻  + ~L-54∙   -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-33⁻  + ~Qe-62⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-33⁻  + ~F-68∙   -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-33⁻  + ~F-69⁻   -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-33⁻  + ~F-70⁻   -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Nd-33⁻  + ~Yv-80⁻  -> ~S-113⁻  (0.595) => ~Z-113ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-33⁻  + ~Cj-76ª  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-33⁻  + ~Cj-78⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-33⁻  + ~Co-82ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-33⁻  + ~Co-83⁺  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-33⁻  + ~Vl-96⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Nd-33⁻  + ~Vl-98⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-33⁻  + ~Se-96∙  -> *I-129ª  (0.31?) => ~Da-107∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-33⁻  + ~Nm-97ª  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-33⁻  + ~Dd-98ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-33⁻  + ~Dd-101ª -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Nd-34⁻  + ~Gd-43⁻  -> ~Yv-77⁻  (0.836) => ~Yv-77⁻
+| 1-chain + 1-chain =>  3-chain         | ~Nd-34⁻  + ~V-45⁻   -> ~Cj-79⁻  (0.807) => ~Cj-79⁻
+| 1-chain + 1-chain =>  3-chain         | ~Nd-34⁻  + ~V-46⁻   -> ~Cj-80⁻  (0.802) => ~Cj-80⁻
+| 1-chain + 0-chain =>  4-chain         | ~Nd-34⁻  + ~Uq-47⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 2-chain =>  4-chain         | ~Nd-34⁻  + ~Uq-49⁻  -> ~Iu-83⁻  (0.752) => ~D-83∙
+| 1-chain + 1-chain =>  4-chain         | ~Nd-34⁻  + ~Pb-49⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 1-chain =>  4-chain         | ~Nd-34⁻  + ~Pb-50⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 1-chain + 1-chain =>  3-chain         | ~Nd-34⁻  + ~L-53∙   -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 1-chain =>  3-chain         | ~Nd-34⁻  + ~Qe-59⁻  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-34⁻  + ~Qe-61⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Nd-34⁻  + ~Ai-67⁻  -> ~Nm-101⁺ (0.739) => ~Se-101∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~F-67ª   -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~F-68∙   -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Nd-34⁻  + ~F-69⁻   -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Gy-70ª  -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 2-chain =>  4-chain         | ~Nd-34⁻  + ~Kk-75∙  -> ~Da-109∙ (1.500) => ~Da-109∙
+| 1-chain + 1-chain =>  3-chain         | ~Nd-34⁻  + ~Yv-74ª  -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Cj-75ª  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Cj-76ª  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-34⁻  + ~Cj-77∙  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-34⁻  + ~Cj-78⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Nd-34⁻  + ~Cj-80⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~D-81⁻   -> *Vt-115ª (0.67?) => ~N-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Co-81ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Co-82ª  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Co-83⁺  -> *Ek-117ª (0.66?) => ~U-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-34⁻  + ~Co-85⁻  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~Nd-34⁻  + ~W-91⁻   -> *Ji-125⁻ (0.57?) => ~Aw-125ª
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-34⁻  + ~N-92⁻   -> *Kn-126ª (0.58?) => ~Nm-104⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Vl-93∙  -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-34⁻  + ~Vl-95⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 2-chain =>  5-chain  +~P-22 | ~Nd-34⁻  + ~Vl-97⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Se-95∙  -> *I-129ª  (0.31?) => ~Da-107∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Se-96∙  -> *I-130ª  (0.31?) => ~Da-108∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Nm-96⁺  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Nm-97ª  -> *Jb-131ª (0.24?) => ~S-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Nd-34⁻  + ~Dd-97ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Nd-34⁻  + ~Dd-100ª -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 5-chain =>  7-chain         | ~K-30⁺   + ~Dx-35⁺  -> *Yv-65⁺  (0.58?) => ~Kk-65⁺
+| 2-chain + 3-chain =>  6-chain         | ~K-30⁺   + ~V-40⁺   -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 2-chain + 1-chain =>  6-chain         | ~K-30⁺   + ~Uq-42⁺  -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~Co-76ª  -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~W-77ª   -> ~Aw-107ª (0.384) => ~Se-85⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~U-83⁺   -> *Ax-113ª (0.21?) => ~Ok-91⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~Vl-86ª  -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 2-chain + 4-chain =>  6-chain         | ~K-30⁺   + ~Se-84⁺  -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 2-chain + 3-chain =>  5-chain  +~P-22 | ~K-30⁺   + ~S-95⁺   -> ~Ys-125ª (0.136) => ~Ji-103⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~S-97⁺   -> *Ys-127ª (0.13?) => ~Ji-105⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~S-98⁺   -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 2-chain + 3-chain =>  5-chain  +~P-22 | ~K-30⁺   + ~Z-97⁺   -> *67-127ª (0.50?) => ~Aw-105⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~Z-98⁺   -> *67-128ª (0.50?) => ~Aw-106ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~Z-100ª  -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 2-chain + 3-chain =>  5-chain  +~P-22 | ~K-30⁺   + ~Cv-98ª  -> *68-128ª (0.50?) => ~Kn-106⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~Cv-100⁺ -> *68-130ª (0.50?) => ~Kn-108⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~K-30⁺   + ~Cv-102ª -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 2-chain + 3-chain =>  5-chain  +~P-22 | ~K-30⁺   + ~Vt-100⁺ -> *69-130ª (0.50?) => ~Ha-108⁺ +~P-22
+| 2-chain + 3-chain =>  5-chain  +~P-22 | ~K-30⁺   + ~Vt-101⁺ -> *69-131ª (0.50?) => ~Ha-109⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain         | ~K-31⁺   + ~Gy-64⁺  -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~K-31⁺   + ~W-77ª   -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~K-31⁺   + ~N-83⁺   -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~K-31⁺   + ~S-97⁺   -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~K-31⁺   + ~Z-99⁺   -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~K-31⁺   + ~Cv-100⁺ -> *68-131ª (0.50?) => ~Kn-109ª +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~K-31⁺   + ~Vt-100⁺ -> *69-131ª (0.50?) => ~Ha-109⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~K-32∙   + ~Z-98⁺   -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~K-32∙   + ~Cv-100⁺ -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~K-33∙   + ~Nm-101⁺ -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 0-chain + 2-chain =>  4-chain         | ~K-34∙   + ~Uq-49⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~K-34∙   + ~Ai-67⁻  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~K-34∙   + ~Ai-69⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 0-chain + 3-chain =>  5-chain         | ~K-34∙   + ~Yv-80⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~K-34∙   + ~D-81⁻   -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~K-34∙   + ~Se-96∙  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~K-34∙   + ~Nm-97ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~K-34∙   + ~Nm-100⁺ -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~K-35⁻   + ~Gd-44⁻  -> ~Cj-79⁻  (0.807) => ~Cj-79⁻
+| 1-chain + 1-chain =>  4-chain         | ~K-35⁻   + ~V-46⁻   -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 2-chain =>  4-chain         | ~K-35⁻   + ~Uq-48⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain         | ~K-35⁻   + ~Uq-49⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 1-chain + 1-chain =>  3-chain         | ~K-35⁻   + ~Wy-52∙  -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 1-chain =>  3-chain         | ~K-35⁻   + ~Pg-58⁻  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~K-35⁻   + ~Ai-67⁻  -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~K-35⁻   + ~Ai-68⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~K-35⁻   + ~F-69⁻   -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 2-chain =>  4-chain         | ~K-35⁻   + ~Gy-74⁻  -> ~Da-109∙ (1.500) => ~Da-109∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~K-35⁻   + ~Yv-74ª  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~K-35⁻   + ~Yv-76∙  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain         | ~K-35⁻   + ~Yv-80⁻  -> ~Z-115⁻  (0.566) => ~Cv-115ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~K-35⁻   + ~D-80⁻   -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~K-35⁻   + ~D-81⁻   -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~K-35⁻   + ~N-92⁻   -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~K-35⁻   + ~U-96⁻   -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~K-35⁻   + ~Se-95∙  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~K-35⁻   + ~Se-96∙  -> *Jb-131ª (0.24?) => ~S-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~K-35⁻   + ~Nm-96⁺  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~K-35⁻   + ~Nm-99ª  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 0-chain + 3-chain =>  6-chain         | ~Mt-32⁺  + ~Gd-38⁺  -> ~Iu-70⁺  (0.559) => ~Cj-70⁺
+| 0-chain + 3-chain =>  6-chain         | ~Mt-32⁺  + ~V-40⁺   -> ~D-72⁺   (0.580) => ~Iu-72⁺
+| 0-chain + 1-chain =>  3-chain         | ~Mt-32⁺  + ~C-55⁺   -> ~Nm-87⁺  (0.576) => ~Se-87⁺
+| 0-chain + 1-chain =>  3-chain         | ~Mt-32⁺  + ~F-62⁺   -> ~Da-94⁺  (0.616) => ~Ok-94⁺
+| 0-chain + 1-chain =>  3-chain         | ~Mt-32⁺  + ~F-63⁺   -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 0-chain + 1-chain =>  3-chain         | ~Mt-32⁺  + ~Gy-64⁺  -> ~S-96⁺   (0.534) => ~Da-96⁺
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-32⁺  + ~Kk-68ª  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~D-74⁺   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~Co-76ª  -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~W-77ª   -> ~Kn-109ª (0.361) => ~Nm-87⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-32⁺  + ~Lx-82ª  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-32⁺  + ~N-83⁺   -> *Ax-115ª (0.21?) => ~Ok-93⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-32⁺  + ~N-84⁺   -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-32⁺  + ~N-85⁺   -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~U-83⁺   -> ~I-115ª  (0.312) => ~Da-93⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~U-84ª   -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Mt-32⁺  + ~S-95⁺   -> *67-127ª (0.50?) => ~Aw-105⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~S-98⁺   -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~Z-98⁺   -> *68-130ª (0.50?) => ~Kn-108⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~Z-99⁺   -> *68-131ª (0.50?) => ~Kn-109ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~Z-100ª  -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Mt-32⁺  + ~Cv-98ª  -> *69-130ª (0.50?) => ~Ha-108⁺ +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Mt-32⁺  + ~Cv-99ª  -> *69-131ª (0.50?) => ~Ha-109⁺ +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-32⁺  + ~Cv-100⁺ -> *69-132ª (0.50?) => ~Ha-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Mt-33⁺  + ~F-62⁺   -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-33⁺  + ~Kk-67⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-33⁺  + ~N-83⁺   -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-33⁺  + ~N-84⁺   -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-33⁺  + ~U-83⁺   -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-33⁺  + ~S-97⁺   -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-33⁺  + ~Z-98⁺   -> *68-131ª (0.50?) => ~Kn-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-33⁺  + ~Z-99⁺   -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Mt-33⁺  + ~Cv-98ª  -> *69-131ª (0.50?) => ~Ha-109⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-33⁺  + ~Cv-100⁺ -> *69-133ª (0.50?) => ~Ha-111ª +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-34⁺  + ~N-83⁺   -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-34⁺  + ~Se-100∙ -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-34⁺  + ~Z-98⁺   -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 0-chain + 3-chain =>  5-chain  +~P-22 | ~Mt-35∙  + ~N-96⁻   -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-35∙  + ~Se-96∙  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 0-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-35∙  + ~Se-99∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 2-chain =>  4-chain         | ~Mt-36⁻  + ~Gd-45⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  3-chain         | ~Mt-36⁻  + ~Pb-51⁻  -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-36⁻  + ~Ns-65⁻  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-36⁻  + ~Kk-75∙  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-36⁻  + ~Se-95∙  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-36⁻  + ~Se-98∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Mt-37⁻  + ~Lu-40⁻  -> ~Yv-77⁻  (0.836) => ~Yv-77⁻
+| 1-chain + 1-chain =>  4-chain         | ~Mt-37⁻  + ~Gd-44⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  4-chain         | ~Mt-37⁻  + ~V-46⁻   -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 1-chain =>  3-chain         | ~Mt-37⁻  + ~Pb-50⁻  -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 1-chain =>  3-chain         | ~Mt-37⁻  + ~Ux-56⁻  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 1-chain =>  3-chain         | ~Mt-37⁻  + ~C-64⁻   -> ~Nm-101⁺ (0.739) => ~Se-101∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-37⁻  + ~Ns-64∙  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-37⁻  + ~Ns-65⁻  -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-37⁻  + ~Ai-67⁻  -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-37⁻  + ~Kk-72ª  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-37⁻  + ~Kk-74∙  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-37⁻  + ~Kk-75∙  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-37⁻  + ~Iu-78∙  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-37⁻  + ~Lx-88∙  -> *Ha-125ª (0.55?) => ~Dd-103ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-37⁻  + ~Lx-90∙  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-37⁻  + ~N-92⁻   -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Mt-37⁻  + ~N-94⁻   -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-37⁻  + ~Vl-93∙  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Mt-37⁻  + ~Se-94∙  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Mt-37⁻  + ~Se-97ª  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 3-chain + 3-chain =>  5-chain         | ~Mt-38⁻  + ~Kk-76⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 3-chain + 3-chain =>  5-chain  +~P-22 | ~Mt-38⁻  + ~N-93⁻   -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-35⁺  + ~Gy-65⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-35⁺  + ~Lx-82ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-35⁺  + ~N-83⁺   -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-35⁺  + ~S-97⁺   -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-35⁺  + ~Z-98⁺   -> *69-133ª (0.50?) => ~Ha-111ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-36∙  + ~Gy-64⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-37∙  + ~C-64⁻   -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-37∙  + ~Gy-74⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-37∙  + ~Vl-97⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 2-chain =>  4-chain         | ~Lu-38∙  + ~Gd-45⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-38∙  + ~C-64⁻   -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-38∙  + ~Gy-73⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-38∙  + ~Gy-74⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-38∙  + ~Vl-93∙  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-38∙  + ~Vl-96⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Lu-39⁻  + ~Lu-40⁻  -> ~Cj-79⁻  (0.807) => ~Cj-79⁻
+| 1-chain + 2-chain =>  4-chain         | ~Lu-39⁻  + ~Dx-42⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  4-chain         | ~Lu-39⁻  + ~Gd-44⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 2-chain =>  4-chain         | ~Lu-39⁻  + ~Gd-45⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 1-chain + 1-chain =>  3-chain         | ~Lu-39⁻  + ~L-54∙   -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-39⁻  + ~C-62∙   -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Lu-39⁻  + ~C-64⁻   -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-39⁻  + ~Ns-65⁻  -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Lu-39⁻  + ~F-69⁻   -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-39⁻  + ~Gy-70ª  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-39⁻  + ~Gy-72⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-39⁻  + ~Gy-73⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-39⁻  + ~Cj-76ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-39⁻  + ~Lx-88∙  -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-39⁻  + ~Lx-90∙  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Lu-39⁻  + ~Lx-92∙  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-39⁻  + ~Vl-92⁺  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-39⁻  + ~Vl-95⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Lu-40⁻  + ~Lu-40⁻  -> ~Cj-80⁻  (0.802) => ~Cj-80⁻
+| 1-chain + 1-chain =>  4-chain         | ~Lu-40⁻  + ~Dx-41⁻  -> ~Iu-81⁻  (0.833) => ~Iu-81⁻
+| 1-chain + 1-chain =>  4-chain         | ~Lu-40⁻  + ~Gd-43⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 1-chain =>  4-chain         | ~Lu-40⁻  + ~Gd-44⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 1-chain + 0-chain =>  3-chain         | ~Lu-40⁻  + ~Uq-47⁻  -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 2-chain =>  4-chain         | ~Lu-40⁻  + ~Uq-49⁻  -> ~W-89⁻   (0.839) => ~W-89⁻
+| 1-chain + 1-chain =>  3-chain         | ~Lu-40⁻  + ~Pb-51⁻  -> ~Lx-91⁻  (0.838) => ~Lx-91⁻
+| 1-chain + 1-chain =>  3-chain         | ~Lu-40⁻  + ~L-53∙   -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~C-61∙   -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~C-62∙   -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~Ns-64∙  -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Lu-40⁻  + ~Ai-67⁻  -> ~Da-107∙ (1.610) => ~Da-107∙
+| 1-chain + 2-chain =>  4-chain         | ~Lu-40⁻  + ~Ai-69⁻  -> ~Da-109∙ (1.500) => ~Da-109∙
+| 1-chain + 1-chain =>  3-chain         | ~Lu-40⁻  + ~F-68∙   -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~F-69⁻   -> ~S-109ª  (0.714) => ~Co-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~Gy-69ª  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~Gy-70ª  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-40⁻  + ~Gy-71⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-40⁻  + ~Gy-72⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 2-chain =>  5-chain         | ~Lu-40⁻  + ~Gy-74⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-40⁻  + ~Kk-75∙  -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~Cj-75ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~Cj-76ª  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~Lx-87∙  -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~Lx-88∙  -> *Ax-128ª (0.21?) => ~Ok-106⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-40⁻  + ~Lx-89∙  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Lu-40⁻  + ~Lx-91⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~N-89⁺   -> *I-129ª  (0.31?) => ~Da-107∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Lu-40⁻  + ~Vl-91ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Lu-40⁻  + ~Vl-94⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Dx-37⁺  + ~C-55⁺   -> ~Ok-92⁺  (0.552) => ~Dd-92⁺
+| 1-chain + 1-chain =>  3-chain         | ~Dx-37⁺  + ~Ns-58⁺  -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-37⁺  + ~F-63⁺   -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-37⁺  + ~Gy-64⁺  -> ~Cv-101ª (0.645) => ~Lx-79⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-37⁺  + ~W-80ª   -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 4-chain =>  6-chain  +~P-22 | ~Dx-37⁺  + ~Lx-76⁺  -> ~I-113ª  (0.200) => ~Da-91⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-37⁺  + ~Nm-89⁺  -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-38⁺  + ~F-62⁺   -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-40⁻  + ~C-64⁻   -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-40⁻  + ~F-69⁻   -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-40⁻  + ~F-71⁻   -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Dx-40⁻  + ~W-91⁻   -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain         | ~Dx-41⁻  + ~Dx-42⁻  -> ~D-83∙   (1.828) => ~D-83∙
+| 1-chain + 1-chain =>  3-chain         | ~Dx-41⁻  + ~V-46⁻   -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 1-chain =>  3-chain         | ~Dx-41⁻  + ~Wy-52∙  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-41⁻  + ~Qe-62⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Dx-41⁻  + ~Ai-67⁻  -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-41⁻  + ~F-68∙   -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-41⁻  + ~F-69⁻   -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-41⁻  + ~F-70⁻   -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-41⁻  + ~F-71⁻   -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-41⁻  + ~Gy-74⁻  -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-41⁻  + ~Yv-74ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-41⁻  + ~Lx-88∙  -> *I-129ª  (0.31?) => ~Da-107∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Dx-41⁻  + ~N-89⁺   -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain         | ~Dx-42⁻  + ~Dx-42⁻  -> ~D-84⁻   (0.802) => ~D-84⁻
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-42⁻  + ~Wy-53⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-42⁻  + ~Qe-61⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Dx-42⁻  + ~F-69⁻   -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-42⁻  + ~F-70⁻   -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain         | ~Dx-42⁻  + ~F-72⁻   -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-42⁻  + ~Gy-73⁻  -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-42⁻  + ~Gy-74⁻  -> ~Cv-116ª (0.587) => ~Lx-94⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-42⁻  + ~Kk-75∙  -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-42⁻  + ~Co-85⁻  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Dx-42⁻  + ~U-92∙   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 3-chain + 4-chain =>  6-chain         | ~Gd-38⁺  + ~Lx-76⁺  -> *Jb-114⁺ (0.24?) => ~I-114ª
+| 3-chain + 3-chain =>  5-chain  +~P-22 | ~Gd-38⁺  + ~Dd-89⁺  -> *67-127ª (0.50?) => ~Aw-105⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Gd-39⁺  + ~C-55⁺   -> ~Da-94⁺  (0.616) => ~Ok-94⁺
+| 1-chain + 1-chain =>  3-chain         | ~Gd-39⁺  + ~C-56⁺   -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-39⁺  + ~Ai-61⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-39⁺  + ~F-62⁺   -> ~Cv-101ª (0.645) => ~Lx-79⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-39⁺  + ~Gy-64⁺  -> ~Vt-103ª (0.551) => ~N-81⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-39⁺  + ~Co-78ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-39⁺  + ~W-77ª   -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-39⁺  + ~Se-89⁺  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-39⁺  + ~Nm-89⁺  -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Gd-40∙  + ~C-55⁺   -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 1-chain + 1-chain =>  3-chain         | ~Gd-42∙  + ~Pb-51⁻  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-42∙  + ~Ai-67⁻  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-42∙  + ~Ai-69⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-42∙  + ~Lx-88∙  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-42∙  + ~N-89⁺   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-42∙  + ~N-92⁻   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Gd-43⁻  + ~Gd-44⁻  -> ~W-87⁻   (0.822) => ~W-87⁻
+| 1-chain + 1-chain =>  3-chain         | ~Gd-43⁻  + ~Pb-50⁻  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-43⁻  + ~Pg-58⁻  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Gd-43⁻  + ~C-64⁻   -> ~Da-107∙ (1.610) => ~Da-107∙
+| 1-chain + 1-chain =>  3-chain         | ~Gd-43⁻  + ~Ns-65⁻  -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-43⁻  + ~Ai-67⁻  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-43⁻  + ~Ai-68⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-43⁻  + ~Ai-69⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-43⁻  + ~Gy-74⁻  -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-43⁻  + ~Kk-72ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Gd-43⁻  + ~Co-88⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-43⁻  + ~Lx-87∙  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-43⁻  + ~Lx-88∙  -> *Jb-131ª (0.24?) => ~S-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-43⁻  + ~N-88⁺   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-43⁻  + ~N-91∙   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 2-chain =>  4-chain         | ~Gd-44⁻  + ~Gd-45⁻  -> ~W-89⁻   (0.839) => ~W-89⁻
+| 1-chain + 1-chain =>  3-chain         | ~Gd-44⁻  + ~Pb-49⁻  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Gd-44⁻  + ~Pb-51⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~Pg-57⁻  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~Pg-58⁻  -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Gd-44⁻  + ~C-64⁻   -> ~Da-108∙ (1.550) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain         | ~Gd-44⁻  + ~Ns-64∙  -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~Ns-65⁻  -> ~S-109ª  (0.714) => ~Co-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~Ai-65∙  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Gd-44⁻  + ~Ai-67⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-44⁻  + ~Ai-68⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~F-69⁻   -> *Cv-113ª (0.68?) => ~Lx-91⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-44⁻  + ~F-71⁻   -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-44⁻  + ~Gy-73⁻  -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 1-chain + 0-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~Kk-71ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~Kk-72ª  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-44⁻  + ~Kk-75∙  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~D-81⁻   -> *Ha-125ª (0.55?) => ~Dd-103ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~Co-83⁺  -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-44⁻  + ~Co-85⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Gd-44⁻  + ~Co-87⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~Lx-86ª  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~Lx-87∙  -> *Jb-131ª (0.24?) => ~S-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gd-44⁻  + ~N-87⁺   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-44⁻  + ~N-90⁺   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~Pb-50⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~Pg-58⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain         | ~Gd-45⁻  + ~C-64⁻   -> ~Da-109∙ (1.500) => ~Da-109∙
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~Ai-66⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~Ai-67⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 2-chain + 2-chain =>  5-chain         | ~Gd-45⁻  + ~Ai-69⁻  -> ~Z-114⁻  (0.596) => ~Cv-114ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~F-70⁻   -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~F-71⁻   -> ~Cv-116ª (0.587) => ~Lx-94⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~Gy-72⁻  -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain         | ~Gd-45⁻  + ~Gy-74⁻  -> ~Vt-119⁻ (0.539) => ~Ek-119ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~Kk-74∙  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~Kk-75∙  -> ~Ek-120ª (0.531) => ~U-98⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain         | ~Gd-45⁻  + ~Yv-80⁻  -> *Ji-125⁻ (0.57?) => ~Aw-125ª
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~D-82⁺   -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~Co-84∙  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Gd-45⁻  + ~N-89⁺   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~V-41⁺   + ~Qe-54⁺  -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 1-chain + 1-chain =>  3-chain         | ~V-41⁺   + ~C-55⁺   -> ~S-96⁺   (0.534) => ~Da-96⁺
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-41⁺   + ~Ns-59⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-41⁺   + ~F-62⁺   -> ~Vt-103ª (0.551) => ~N-81⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-41⁺   + ~D-76ª   -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-41⁺   + ~Nm-89⁺  -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-42⁺   + ~Ns-58⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-43∙   + ~Lx-88∙  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~V-44∙   + ~C-64⁻   -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-44∙   + ~Ns-65⁻  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-44∙   + ~Lx-87∙  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-44∙   + ~Lx-90∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-45⁻   + ~Ux-56⁻  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-45⁻   + ~C-64⁻   -> ~S-109ª  (0.714) => ~Co-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-45⁻   + ~Ns-64∙  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-45⁻   + ~Ns-65⁻  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-45⁻   + ~Gy-70ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-45⁻   + ~Gy-74⁻  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-45⁻   + ~Lx-86ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-45⁻   + ~Lx-89∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 0-chain =>  3-chain         | ~V-46⁻   + ~Uq-47⁻  -> ~U-93⁻   (0.806) => ~U-93⁻
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-46⁻   + ~Uq-49⁻  -> ~U-95ª   (0.723) => ~F-73⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Ux-55∙  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Ux-56⁻  -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-46⁻   + ~Ux-57⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Pg-58⁻  -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~V-46⁻   + ~C-62∙   -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~C-64⁻   -> *S-110ª  (0.71?) => ~Co-88⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Ns-63⁺  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Ns-64∙  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~V-46⁻   + ~Ns-65⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Ai-67⁻  -> *Cv-113ª (0.68?) => ~Lx-91⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-46⁻   + ~Ai-69⁻  -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~F-69⁻   -> *Vt-115ª (0.67?) => ~N-93⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-46⁻   + ~F-71⁻   -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Gy-69ª  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Gy-70ª  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-46⁻   + ~Gy-73⁻  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~V-46⁻   + ~Gy-74⁻  -> ~Ek-120ª (0.531) => ~U-98⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~D-81⁻   -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Co-83⁺  -> *I-129ª  (0.31?) => ~Da-107∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~W-84ª   -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~V-46⁻   + ~Lx-85ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~V-46⁻   + ~Lx-88∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Uq-42⁺  + ~Ux-50⁺  -> ~Ok-92⁺  (0.552) => ~Dd-92⁺
+| 1-chain + 1-chain =>  3-chain         | ~Uq-42⁺  + ~Pg-53⁺  -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 1-chain + 1-chain =>  3-chain         | ~Uq-42⁺  + ~Qe-54⁺  -> ~S-96⁺   (0.534) => ~Da-96⁺
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~C-58∙   -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~Ns-59⁺  -> ~Cv-101ª (0.645) => ~Lx-79⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~Ai-61⁺  -> ~Vt-103ª (0.551) => ~N-81⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Uq-42⁺  + ~Gy-64⁺  -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~Gy-65⁺  -> ~Ji-107ª (0.486) => ~Vl-85⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-42⁺  + ~Kk-66⁺  -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~Kk-67⁺  -> ~Aw-109ª (0.466) => ~Se-87⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~Cj-72ª  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~Iu-74ª  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~Iu-75ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-42⁺  + ~D-74⁺   -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~D-76ª   -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~N-83⁺   -> *64-125ª (0.50?) => ~Vt-103ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-42⁺  + ~U-83⁺   -> *Eh-125ª (0.19?) => ~Ek-103⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-42⁺  + ~U-84ª   -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-42⁺  + ~Vl-86ª  -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-42⁺  + ~Se-88⁺  -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~Se-89⁺  -> *67-131ª (0.50?) => ~Aw-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-42⁺  + ~Se-90∙  -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-42⁺  + ~Nm-89⁺  -> *68-131ª (0.50?) => ~Kn-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-42⁺  + ~Nm-90⁺  -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Uq-42⁺  + ~Dd-89⁺  -> *69-131ª (0.50?) => ~Ha-109⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-43⁺  + ~C-57⁺   -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-43⁺  + ~Ns-58⁺  -> ~Cv-101ª (0.645) => ~Lx-79⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-43⁺  + ~Gy-64⁺  -> ~Ji-107ª (0.486) => ~Vl-85⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-43⁺  + ~Iu-74ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-43⁺  + ~U-83⁺   -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-43⁺  + ~Se-89⁺  -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-43⁺  + ~Nm-89⁺  -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-44⁺  + ~C-56⁺   -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-45∙  + ~C-55⁺   -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-45∙  + ~C-64⁻   -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-46∙  + ~C-64⁻   -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-46∙  + ~F-69⁻   -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 0-chain + 0-chain =>  2-chain         | ~Uq-47⁻  + ~Uq-47⁻  -> ~Vl-94⁻  (0.822) => ~Vl-94⁻
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-47⁻  + ~L-54∙   -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-47⁻  + ~C-62∙   -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 0-chain + 1-chain =>  4-chain  +~P-22 | ~Uq-47⁻  + ~C-64⁻   -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-47⁻  + ~F-68∙   -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-47⁻  + ~F-69⁻   -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-47⁻  + ~Co-83⁺  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Uq-47⁻  + ~W-84ª   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Uq-48⁻  + ~C-64⁻   -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-48⁻  + ~Ai-69⁻  -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-48⁻  + ~F-71⁻   -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-48⁻  + ~W-86ª   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Uq-49⁻  + ~L-54∙   -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Uq-49⁻  + ~C-62∙   -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-49⁻  + ~Ai-68⁻  -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-49⁻  + ~F-70⁻   -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-49⁻  + ~F-71⁻   -> ~Ek-120ª (0.531) => ~U-98⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-49⁻  + ~Gy-74⁻  -> ~Ji-123ª (0.527) => ~Vl-101⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-49⁻  + ~Cj-78⁻  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-49⁻  + ~Iu-80⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 2-chain + 3-chain =>  5-chain  +~P-22 | ~Uq-49⁻  + ~Iu-82∙  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Uq-49⁻  + ~W-85ª   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 5-chain + 5-chain =>  7-chain         | ~Uq-52⁻  + ~Wy-56⁻  -> ?Nm-108⁻ (0.55?) => ~Dd-108⁻
+| 1-chain + 1-chain =>  3-chain         | ~Pb-44⁺  + ~Ux-50⁺  -> ~Da-94⁺  (0.616) => ~Ok-94⁺
+| 1-chain + 1-chain =>  3-chain         | ~Pb-44⁺  + ~Ux-51⁺  -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~Qe-56⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Pb-44⁺  + ~C-55⁺   -> ~Cv-99ª  (0.420) => ~Lx-77⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~C-57⁺   -> ~Cv-101ª (0.645) => ~Lx-79⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~Ns-59⁺  -> ~Vt-103ª (0.551) => ~N-81⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Pb-44⁺  + ~F-62⁺   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~F-63⁺   -> ~Ji-107ª (0.486) => ~Vl-85⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Pb-44⁺  + ~Gy-64⁺  -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~Gy-65⁺  -> ~Aw-109ª (0.466) => ~Se-87⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~Yv-70ª  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~Cj-72ª  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~Cj-73ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~Iu-74ª  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-44⁺  + ~N-82⁺   -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~N-83⁺   -> *Eh-127ª (0.19?) => ~Ek-105ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~N-84⁺   -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-44⁺  + ~U-83⁺   -> *Ys-127ª (0.13?) => ~Ji-105⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-44⁺  + ~U-84ª   -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-44⁺  + ~Vl-86ª  -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~Vl-88⁺  -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-44⁺  + ~Se-88⁺  -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-44⁺  + ~Se-89⁺  -> *68-133ª (0.50?) => ~Kn-111ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-44⁺  + ~Nm-89⁺  -> *69-133ª (0.50?) => ~Ha-111ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Pb-45⁺  + ~Ux-50⁺  -> ~Da-95⁺  (0.678) => ~Ok-95ª
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-45⁺  + ~Qe-55⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-45⁺  + ~C-56⁺   -> ~Cv-101ª (0.645) => ~Lx-79⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-45⁺  + ~Ns-58⁺  -> ~Vt-103ª (0.551) => ~N-81⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-45⁺  + ~F-61⁺   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-45⁺  + ~F-62⁺   -> ~Ji-107ª (0.486) => ~Vl-85⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-45⁺  + ~Gy-64⁺  -> ~Aw-109ª (0.466) => ~Se-87⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-45⁺  + ~Cj-72ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-45⁺  + ~N-83⁺   -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-45⁺  + ~U-83⁺   -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-46⁺  + ~Qe-54⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-46⁺  + ~C-55⁺   -> ~Cv-101ª (0.645) => ~Lx-79⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-48∙  + ~Ai-67⁻  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-48∙  + ~Co-83⁺  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-49⁻  + ~Wy-52∙  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-49⁻  + ~Qe-62⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-49⁻  + ~C-64⁻   -> *Cv-113ª (0.68?) => ~Lx-91⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-49⁻  + ~Ai-67⁻  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-49⁻  + ~D-81⁻   -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-49⁻  + ~Co-82ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-49⁻  + ~Co-85⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Pb-50⁻  + ~Pb-51⁻  -> ~Nm-101⁺ (0.739) => ~Se-101∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~Wy-51∙  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~Wy-52∙  -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-50⁻  + ~Wy-53⁻  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~L-54∙   -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Pb-50⁻  + ~Pg-58⁻  -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~Qe-59⁻  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-50⁻  + ~Qe-61⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-50⁻  + ~Qe-62⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~C-64⁻   -> ~Cv-114ª (0.641) => ~Lx-92∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~Ns-65⁻  -> *Vt-115ª (0.67?) => ~N-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~Ai-65∙  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~Ai-67⁻  -> *Ek-117ª (0.66?) => ~U-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-50⁻  + ~Ai-69⁻  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~D-80⁻   -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~D-81⁻   -> *Jb-131ª (0.24?) => ~S-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-50⁻  + ~Co-81ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-50⁻  + ~Co-84∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Pb-51⁻  -> ~Nm-102ª (0.713) => ~Yv-80⁻ +~P-22
+| 1-chain + 0-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Wy-50∙  -> ~Dd-101ª (0.748) => ~Cj-79⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Wy-51∙  -> ~Dd-102ª (0.724) => ~Cj-80⁻ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Wy-52∙  -> ~Dd-103ª (0.706) => ~Cj-81⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~L-53∙   -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Pb-51⁻  + ~Ux-56⁻  -> ~Da-107∙ (1.610) => ~Da-107∙
+| 1-chain + 1-chain =>  3-chain         | ~Pb-51⁻  + ~Pg-57⁻  -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Pg-58⁻  -> ~S-109ª  (0.714) => ~Co-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Qe-58⁻  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Qe-59⁻  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Qe-60⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Qe-61⁻  -> ~Z-112ª  (0.653) => ~W-90⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~C-62∙   -> *Cv-113ª (0.68?) => ~Lx-91⁻ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~C-64⁻   -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Ns-64∙  -> *Vt-115ª (0.67?) => ~N-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Ns-65⁻  -> *Vt-116ª (0.67?) => ~N-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Ai-64⁺  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Ai-65∙  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Ai-67⁻  -> *Ek-118ª (0.66?) => ~U-96⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Ai-68⁻  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Ai-69⁻  -> ~Ek-120ª (0.531) => ~U-98⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~F-69⁻   -> *Ji-120ª (0.63?) => ~Vl-98⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Gy-74⁻  -> ~Aw-125ª (0.528) => ~Se-103⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Kk-75∙  -> *Kn-126ª (0.58?) => ~Nm-104⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Yv-74ª  -> *Ha-125ª (0.55?) => ~Dd-103ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Yv-76∙  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Cj-76ª  -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Cj-78⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Pb-51⁻  + ~Cj-80⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Iu-78∙  -> *I-129ª  (0.31?) => ~Da-107∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~D-79∙   -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~D-80⁻   -> *Jb-131ª (0.24?) => ~S-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pb-51⁻  + ~Co-80ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Pb-51⁻  + ~Co-83⁺  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-47⁺  + ~Pg-53⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-47⁺  + ~Qe-54⁺  -> ~Cv-101ª (0.645) => ~Lx-79⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-47⁺  + ~C-56⁺   -> ~Vt-103ª (0.551) => ~N-81⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-47⁺  + ~F-61⁺   -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-47⁺  + ~F-62⁺   -> ~Aw-109ª (0.466) => ~Se-87⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-47⁺  + ~Kk-67⁺  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-47⁺  + ~Yv-70ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-47⁺  + ~U-83⁺   -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-47⁺  + ~Se-89⁺  -> *69-136ª (0.50?) => ~Ha-114ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-48⁺  + ~C-55⁺   -> ~Vt-103ª (0.551) => ~N-81⁺ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-50∙  + ~Ns-65⁻  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-50∙  + ~D-81⁻   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-51∙  + ~Pg-58⁻  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-51∙  + ~C-64⁻   -> *Vt-115ª (0.67?) => ~N-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-51∙  + ~Ns-64∙  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-51∙  + ~Ns-65⁻  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 3-chain =>  5-chain  +~P-22 | ~Wy-51∙  + ~Yv-80⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-51∙  + ~D-80⁻   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-52∙  + ~Wy-52∙  -> ~Ok-104ª (0.754) => ~Iu-82∙ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Wy-52∙  + ~Ux-56⁻  -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-52∙  + ~Pg-57⁻  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-52∙  + ~Pg-58⁻  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-52∙  + ~C-64⁻   -> *Vt-116ª (0.67?) => ~N-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-52∙  + ~Ns-63⁺  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-52∙  + ~Ns-64∙  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-52∙  + ~Ns-65⁻  -> *Ek-117ª (0.66?) => ~U-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-52∙  + ~Gy-74⁻  -> *Kn-126ª (0.58?) => ~Nm-104⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-52∙  + ~Kk-75∙  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-52∙  + ~Iu-78∙  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Wy-52∙  + ~D-79∙   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-52∙  + ~D-82⁺   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Wy-53⁻  + ~Pg-58⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-53⁻  + ~Qe-62⁻  -> ~Cv-115ª (0.611) => ~Lx-93⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Wy-53⁻  + ~C-64⁻   -> *Vt-117ª (0.67?) => ~N-95⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-53⁻  + ~Gy-73⁻  -> *Kn-126ª (0.58?) => ~Nm-104⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-53⁻  + ~Gy-74⁻  -> *Kn-127ª (0.58?) => ~Nm-105⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-53⁻  + ~Kk-74∙  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-53⁻  + ~Kk-75∙  -> *Ha-128ª (0.55?) => ~Dd-106⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Wy-53⁻  + ~Yv-76∙  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Wy-53⁻  + ~D-81⁻   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-49⁺   + ~Ux-51⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-49⁺   + ~Qe-54⁺  -> ~Vt-103ª (0.551) => ~N-81⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-49⁺   + ~Ns-58⁺  -> ~Ji-107ª (0.486) => ~Vl-85⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-49⁺   + ~Gy-64⁺  -> ~Ha-113ª (0.433) => ~Dd-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-49⁺   + ~Gy-65⁺  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-49⁺   + ~Kk-67⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-49⁺   + ~Kk-68ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~L-49⁺   + ~W-77ª   -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-49⁺   + ~N-83⁺   -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~L-49⁺   + ~U-83⁺   -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-50⁺   + ~Ux-50⁺  -> ~Z-100ª  (0.698) => ~W-78ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-50⁺   + ~Gy-64⁺  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-50⁺   + ~Kk-67⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 0-chain + 1-chain =>  3-chain  +~P-22 | ~L-51⁺   + ~C-64⁻   -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-52⁺   + ~C-64⁻   -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-53∙   + ~Ux-56⁻  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-53∙   + ~C-62∙   -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-53∙   + ~C-64⁻   -> *Ek-117ª (0.66?) => ~U-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~L-53∙   + ~Gy-74⁻  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-53∙   + ~Iu-78∙  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~L-54∙   + ~L-54∙   -> ~S-108⁺  (0.738) => ~Da-108∙
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-54∙   + ~Ux-55∙  -> ~Z-109ª  (0.711) => ~W-87⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-54∙   + ~Ux-56⁻  -> ~Z-110ª  (0.693) => ~W-88⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~L-54∙   + ~Ux-57⁻  -> ~Z-111ª  (0.679) => ~W-89⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-54∙   + ~C-61∙   -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-54∙   + ~C-62∙   -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-54∙   + ~C-64⁻   -> *Ek-118ª (0.66?) => ~U-96⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~L-54∙   + ~Gy-73⁻  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~L-54∙   + ~Gy-74⁻  -> *Ha-128ª (0.55?) => ~Dd-106⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~L-54∙   + ~Kk-75∙  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-54∙   + ~Cj-76ª  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~L-54∙   + ~Iu-77ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~L-54∙   + ~Iu-80⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 3-chain + 3-chain =>  5-chain  +~P-22 | ~L-55⁻   + ~Kk-76⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Ux-51⁺  -> ~Cv-101ª (0.645) => ~Lx-79⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Pg-53⁺  -> ~Vt-103ª (0.551) => ~N-81⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain         | ~Ux-50⁺  + ~C-55⁺   -> ~Ji-105⁺ (0.421) => ~Ek-105ª
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Ux-50⁺  + ~C-56⁺   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~C-57⁺   -> ~Ji-107ª (0.486) => ~Vl-85⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Ux-50⁺  + ~Ns-58⁺  -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Ns-59⁺  -> ~Aw-109ª (0.466) => ~Se-87⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~F-62⁺   -> ~Ha-112ª (0.394) => ~Dd-90⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~F-63⁺   -> ~Ha-113ª (0.433) => ~Dd-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~F-64⁺   -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Gy-64⁺  -> *Ax-114ª (0.21?) => ~Ok-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Gy-65⁺  -> *Ax-115ª (0.21?) => ~Ok-93⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Gy-66ª  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 0-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Gy-67ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-50⁺  + ~Kk-66⁺  -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Kk-67⁺  -> *I-117ª  (0.31?) => ~Da-95⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Kk-68ª  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-50⁺  + ~Co-76ª  -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Co-78ª  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-50⁺  + ~W-77ª   -> *Ys-127ª (0.13?) => ~Ji-105⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-50⁺  + ~Lx-80⁺  -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~Lx-82ª  -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-50⁺  + ~N-82⁺   -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-50⁺  + ~N-83⁺   -> *68-133ª (0.50?) => ~Kn-111ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-50⁺  + ~U-83⁺   -> *69-133ª (0.50?) => ~Ha-111ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Ux-51⁺  + ~C-55⁺   -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-51⁺  + ~C-56⁺   -> ~Ji-107ª (0.486) => ~Vl-85⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-51⁺  + ~Ns-58⁺  -> ~Aw-109ª (0.466) => ~Se-87⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-51⁺  + ~F-62⁺   -> ~Ha-113ª (0.433) => ~Dd-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-51⁺  + ~F-63⁺   -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-51⁺  + ~Gy-64⁺  -> *Ax-115ª (0.21?) => ~Ok-93⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-51⁺  + ~Gy-65⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-51⁺  + ~Gy-66ª  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-51⁺  + ~Kk-67⁺  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-51⁺  + ~W-77ª   -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-52⁺  + ~C-55⁺   -> ~Ji-107ª (0.486) => ~Vl-85⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-52⁺  + ~F-62⁺   -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-52⁺  + ~Gy-64⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-52⁺  + ~Gy-65⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-53⁺  + ~Gy-64⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-55∙  + ~Gy-74⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-55∙  + ~Cj-76ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-56⁻  + ~Qe-59⁻  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-56⁻  + ~C-64⁻   -> *Ji-120ª (0.63?) => ~Vl-98⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-56⁻  + ~F-69⁻   -> *Ha-125ª (0.55?) => ~Dd-103ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-56⁻  + ~F-71⁻   -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-56⁻  + ~Gy-73⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-56⁻  + ~Yv-74ª  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ux-56⁻  + ~Cj-75ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-56⁻  + ~Cj-78⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-57⁻  + ~Qe-62⁻  -> ~Ek-119ª (0.586) => ~U-97⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-57⁻  + ~Ai-69⁻  -> *Kn-126ª (0.58?) => ~Nm-104⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-57⁻  + ~F-70⁻   -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-57⁻  + ~F-71⁻   -> *Ha-128ª (0.55?) => ~Dd-106⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-57⁻  + ~Gy-72⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 2-chain + 2-chain =>  5-chain  +~P-22 | ~Ux-57⁻  + ~Gy-74⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ux-57⁻  + ~Cj-77∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Pg-52⁺  + ~Qe-54⁺  -> ~Ji-106ª (0.446) => ~Vl-84⁺ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Pg-52⁺  + ~C-55⁺   -> ~Aw-107ª (0.384) => ~Se-85⁺ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Pg-52⁺  + ~C-56⁺   -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Pg-52⁺  + ~F-61⁺   -> *Ax-113ª (0.21?) => ~Ok-91⁺ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Pg-52⁺  + ~Gy-64⁺  -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Pg-52⁺  + ~D-74⁺   -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Pg-52⁺  + ~Co-76ª  -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Pg-52⁺  + ~Lx-80⁺  -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-53⁺  + ~Qe-54⁺  -> ~Ji-107ª (0.486) => ~Vl-85⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Pg-53⁺  + ~C-55⁺   -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-53⁺  + ~C-56⁺   -> ~Aw-109ª (0.466) => ~Se-87⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-53⁺  + ~Ai-61⁺  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-53⁺  + ~F-62⁺   -> *Ax-115ª (0.21?) => ~Ok-93⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-53⁺  + ~F-63⁺   -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-53⁺  + ~F-64⁺   -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-53⁺  + ~Gy-64⁺  -> *I-117ª  (0.31?) => ~Da-95⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-53⁺  + ~Gy-65⁺  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pg-53⁺  + ~W-77ª   -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-53⁺  + ~N-83⁺   -> *69-136ª (0.50?) => ~Ha-114ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-54⁺  + ~C-55⁺   -> ~Aw-109ª (0.466) => ~Se-87⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-54⁺  + ~F-62⁺   -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-54⁺  + ~F-63⁺   -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-54⁺  + ~Gy-64⁺  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-55⁺  + ~F-62⁺   -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-57⁻  + ~Pg-58⁻  -> *Ek-115ª (0.66?) => ~U-93⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-57⁻  + ~Yv-74ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-58⁻  + ~Pg-58⁻  -> *Ek-116ª (0.66?) => ~U-94⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-58⁻  + ~Ai-67⁻  -> *Ha-125ª (0.55?) => ~Dd-103ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pg-58⁻  + ~Ai-69⁻  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-58⁻  + ~F-69⁻   -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pg-58⁻  + ~F-71⁻   -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-58⁻  + ~Kk-72ª  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Pg-58⁻  + ~Yv-73ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Pg-58⁻  + ~Yv-76∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 3-chain + 2-chain =>  5-chain  +~P-22 | ~Qe-53⁺  + ~F-61⁺   -> ~I-114ª  (0.263) => ~Da-92⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Qe-54⁺  + ~Qe-54⁺  -> ~Aw-108ª (0.430) => ~Se-86⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Qe-55⁺  -> ~Aw-109ª (0.466) => ~Se-87⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Qe-54⁺  + ~C-55⁺   -> ~Kn-109ª (0.361) => ~Nm-87⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~C-56⁺   -> ~Kn-110ª (0.402) => ~Nm-88⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Ns-58⁺  -> ~Ha-112ª (0.394) => ~Dd-90⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Ns-59⁺  -> ~Ha-113ª (0.433) => ~Dd-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Ns-60⁺  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Ai-61⁺  -> *Ax-115ª (0.21?) => ~Ok-93⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Ai-62⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Ai-63⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-54⁺  + ~F-61⁺   -> ~I-115ª  (0.312) => ~Da-93⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Qe-54⁺  + ~F-62⁺   -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~F-63⁺   -> *I-117ª  (0.31?) => ~Da-95⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~F-64⁺   -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Gy-64⁺  -> *Jb-118ª (0.24?) => ~S-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Iu-74ª  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-54⁺  + ~D-74⁺   -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-54⁺  + ~Co-76ª  -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Co-78ª  -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-54⁺  + ~W-77ª   -> *68-131ª (0.50?) => ~Kn-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-54⁺  + ~Lx-82ª  -> *69-136ª (0.50?) => ~Ha-114ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-55⁺  + ~C-55⁺   -> ~Kn-110ª (0.402) => ~Nm-88⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-55⁺  + ~Ns-58⁺  -> ~Ha-113ª (0.433) => ~Dd-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-55⁺  + ~Ns-59⁺  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-55⁺  + ~Ai-61⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-55⁺  + ~Ai-62⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-55⁺  + ~F-61⁺   -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-55⁺  + ~F-62⁺   -> *I-117ª  (0.31?) => ~Da-95⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-55⁺  + ~F-63⁺   -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-55⁺  + ~W-77ª   -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-56⁺  + ~Ns-58⁺  -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-56⁺  + ~Ai-61⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-56⁺  + ~F-62⁺   -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Qe-59⁻  + ~Kk-72ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-59⁻  + ~Kk-75∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-60⁻  + ~Ai-69⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-60⁻  + ~Kk-74∙  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-61⁻  + ~Ai-68⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Qe-61⁻  + ~Kk-73⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Qe-62⁻  + ~C-64⁻   -> *Kn-126ª (0.58?) => ~Nm-104⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Qe-62⁻  + ~Ns-65⁻  -> *Ha-127ª (0.55?) => ~Dd-105⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Qe-62⁻  + ~Ai-67⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 2-chain + 2-chain =>  5-chain  +~P-22 | ~Qe-62⁻  + ~Ai-69⁻  -> ?Ax-131ª (0.21?) => ~Ok-109⁻ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~Qe-62⁻  + ~Kk-72ª  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~C-55⁺   -> ~Ha-110ª (0.295) => ~Dd-88⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~C-56⁺   -> ~Ha-111ª (0.342) => ~Dd-89⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~C-57⁺   -> ~Ha-112ª (0.394) => ~Dd-90⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~C-58∙   -> ~Ha-113ª (0.433) => ~Dd-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~C-59∙   -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~Ns-58⁺  -> *Ax-113ª (0.21?) => ~Ok-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Ns-59⁺  -> *Ax-114ª (0.21?) => ~Ok-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Ns-60⁺  -> *Ax-115ª (0.21?) => ~Ok-93⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Ns-61⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Ns-62⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~Ai-60⁺  -> ~I-115ª  (0.312) => ~Da-93⁺ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~Ai-61⁺  -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Ai-62⁺  -> *I-117ª  (0.31?) => ~Da-95⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Ai-63⁺  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~F-61⁺   -> ~Jb-116ª (0.241) => ~S-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~F-62⁺   -> *Jb-117ª (0.24?) => ~S-95⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~F-63⁺   -> *Jb-118ª (0.24?) => ~S-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Gy-64⁺  -> *Go-119ª (0.23?) => ~Z-97⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Kk-68ª  -> *X-123ª  (0.16?) => ~Cv-101ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Yv-70ª  -> *64-125ª (0.50?) => ~Vt-103ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~Cj-71⁺  -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Cj-72ª  -> *Eh-127ª (0.19?) => ~Ek-105ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Cj-73ª  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~Iu-73ª  -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~D-75ª   -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~D-76ª   -> *67-131ª (0.50?) => ~Aw-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~D-77ª   -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~Co-76ª  -> *68-131ª (0.50?) => ~Kn-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~Co-78ª  -> *68-133ª (0.50?) => ~Kn-111ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-55⁺   + ~W-77ª   -> *69-132ª (0.50?) => ~Ha-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~W-80ª   -> *69-135ª (0.50?) => ~Ha-113ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-55⁺   + ~W-81ª   -> *69-136ª (0.50?) => ~Ha-114ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~C-56⁺   -> ~Ha-112ª (0.394) => ~Dd-90⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~C-57⁺   -> ~Ha-113ª (0.433) => ~Dd-91⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~C-58∙   -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~Ns-58⁺  -> *Ax-114ª (0.21?) => ~Ok-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~Ns-59⁺  -> *Ax-115ª (0.21?) => ~Ok-93⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~Ns-60⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~Ns-61⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-56⁺   + ~Ai-60⁺  -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~Ai-61⁺  -> *I-117ª  (0.31?) => ~Da-95⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~Ai-62⁺  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~F-62⁺   -> *Jb-118ª (0.24?) => ~S-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~Kk-67⁺  -> *X-123ª  (0.16?) => ~Cv-101ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~Cj-72ª  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-56⁺   + ~D-74⁺   -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~D-76ª   -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-56⁺   + ~Co-76ª  -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-56⁺   + ~W-77ª   -> *69-133ª (0.50?) => ~Ha-111ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-56⁺   + ~W-80ª   -> *69-136ª (0.50?) => ~Ha-114ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-57⁺   + ~C-57⁺   -> ~Ha-114ª (0.475) => ~Dd-92⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-57⁺   + ~Ns-58⁺  -> *Ax-115ª (0.21?) => ~Ok-93⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-57⁺   + ~Ns-59⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-57⁺   + ~Ns-60⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-57⁺   + ~Ai-61⁺  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-58∙   + ~Ns-58⁺  -> *Ax-116ª (0.21?) => ~Ok-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-58∙   + ~Ns-59⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-59∙   + ~Ns-58⁺  -> *Ax-117ª (0.21?) => ~Ok-95ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-60∙   + ~Gy-74⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-61∙   + ~C-64⁻   -> *Ha-125ª (0.55?) => ~Dd-103ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-61∙   + ~F-69⁻   -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-61∙   + ~Gy-70ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-61∙   + ~Gy-73⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-62∙   + ~C-64⁻   -> *Ha-126ª (0.55?) => ~Dd-104⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-62∙   + ~Ns-65⁻  -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-62∙   + ~Ai-67⁻  -> *I-129ª  (0.31?) => ~Da-107∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-62∙   + ~F-68∙   -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-62∙   + ~F-69⁻   -> *Jb-131ª (0.24?) => ~S-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-62∙   + ~Gy-69ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~C-62∙   + ~Gy-72⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~C-64⁻   + ~C-64⁻   -> *Ha-128ª (0.55?) => ~Dd-106⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-64⁻   + ~Ns-63⁺  -> *Ax-127ª (0.21?) => ~Ok-105⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-64⁻   + ~Ns-64∙  -> *Ax-128ª (0.21?) => ~Ok-106⁻ +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~C-64⁻   + ~Ns-65⁻  -> *Ax-129ª (0.21?) => ~Ok-107⁻ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-64⁻   + ~Ai-65∙  -> *I-129ª  (0.31?) => ~Da-107∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-64⁻   + ~F-66ª   -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~C-64⁻   + ~F-67ª   -> *Jb-131ª (0.24?) => ~S-109ª +~P-22
+| 1-chain + 0-chain =>  3-chain  +~P-22 | ~C-64⁻   + ~Gy-67ª  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~C-64⁻   + ~Gy-70ª  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Ns-58⁺  + ~Ns-58⁺  -> *I-116ª  (0.31?) => ~Da-94⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-58⁺  + ~Ns-59⁺  -> *I-117ª  (0.31?) => ~Da-95⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-58⁺  + ~Ns-60⁺  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-58⁺  + ~Gy-65⁺  -> *X-123ª  (0.16?) => ~Cv-101ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-58⁺  + ~Kk-67⁺  -> *64-125ª (0.50?) => ~Vt-103ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ns-58⁺  + ~Yv-68⁺  -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-58⁺  + ~Yv-70ª  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-58⁺  + ~Iu-74ª  -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ns-58⁺  + ~D-74⁺   -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-58⁺  + ~Co-78ª  -> *69-136ª (0.50?) => ~Ha-114ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-59⁺  + ~Ns-59⁺  -> *I-118ª  (0.31?) => ~Da-96⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-59⁺  + ~Gy-64⁺  -> *X-123ª  (0.16?) => ~Cv-101ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-62⁺  + ~F-69⁻   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-63⁺  + ~Ai-67⁻  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-63⁺  + ~F-68∙   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ns-63⁺  + ~F-71⁻   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-64∙  + ~Ns-65⁻  -> *I-129ª  (0.31?) => ~Da-107∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-64∙  + ~Ai-67⁻  -> *Jb-131ª (0.24?) => ~S-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-64∙  + ~F-67ª   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ns-64∙  + ~F-70⁻   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-65⁻  + ~Ns-65⁻  -> *I-130ª  (0.31?) => ~Da-108∙ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-65⁻  + ~Ai-65∙  -> *Jb-130ª (0.24?) => ~S-108⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ns-65⁻  + ~F-66ª   -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Ns-65⁻  + ~F-69⁻   -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ai-60⁺  + ~Kk-66⁺  -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ai-60⁺  + ~Yv-68⁺  -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ai-61⁺  + ~F-62⁺   -> *X-123ª  (0.16?) => ~Cv-101ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ai-61⁺  + ~Gy-64⁺  -> *64-125ª (0.50?) => ~Vt-103ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ai-61⁺  + ~Kk-67⁺  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Ai-64⁺  + ~Ai-67⁻  -> *Go-131ª (0.23?) => ~Z-109ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Ai-65∙  + ~Ai-69⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Ai-66⁻  + ~Ai-68⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Ai-67⁻  + ~Ai-67⁻  -> ?Go-134ª (0.23?) => ~Z-112ª +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~F-61⁺   + ~Gy-64⁺  -> *Eh-125ª (0.19?) => ~Ek-103⁺ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~F-61⁺   + ~Gy-65⁺  -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~F-61⁺   + ~Kk-66⁺  -> *Ys-127ª (0.13?) => ~Ji-105⁺ +~P-22
+| 2-chain + 1-chain =>  4-chain  +~P-22 | ~F-61⁺   + ~Kk-67⁺  -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~F-61⁺   + ~Yv-69⁺  -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~F-61⁺   + ~Cj-71⁺  -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~F-62⁺   + ~F-62⁺   -> *64-124ª (0.50?) => ~Vt-102⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~F-62⁺   + ~F-63⁺   -> *64-125ª (0.50?) => ~Vt-103ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~F-62⁺   + ~Gy-64⁺  -> *Eh-126ª (0.19?) => ~Ek-104⁺ +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~F-62⁺   + ~Gy-65⁺  -> *Eh-127ª (0.19?) => ~Ek-105ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~F-62⁺   + ~Gy-66ª  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~F-62⁺   + ~Kk-66⁺  -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~F-62⁺   + ~Yv-68⁺  -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~F-62⁺   + ~Yv-70ª  -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~F-62⁺   + ~Iu-74ª  -> *69-136ª (0.50?) => ~Ha-114ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~F-63⁺   + ~Gy-64⁺  -> *Eh-127ª (0.19?) => ~Ek-105ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~F-63⁺   + ~Gy-65⁺  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~F-64⁺   + ~Gy-64⁺  -> *Eh-128ª (0.19?) => ~Ek-106ª +~P-22
+| 1-chain + 1-chain =>  4-chain  +~P-22 | ~Gy-64⁺  + ~Gy-64⁺  -> *Ys-128ª (0.13?) => ~Ji-106ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gy-64⁺  + ~Kk-66⁺  -> *67-130ª (0.50?) => ~Aw-108ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gy-64⁺  + ~Kk-67⁺  -> *67-131ª (0.50?) => ~Aw-109ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gy-64⁺  + ~Kk-68ª  -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 1-chain + 2-chain =>  4-chain  +~P-22 | ~Gy-64⁺  + ~Yv-68⁺  -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gy-64⁺  + ~Cj-72ª  -> *69-136ª (0.50?) => ~Ha-114ª +~P-22
+| 1-chain + 1-chain =>  3-chain  +~P-22 | ~Gy-65⁺  + ~Kk-67⁺  -> *67-132ª (0.50?) => ~Aw-110ª +~P-22
+| 2-chain + 2-chain =>  4-chain  +~P-22 | ~Kk-66⁺  + ~Kk-66⁺  -> *68-132ª (0.50?) => ~Kn-110ª +~P-22
+
+
+
+
+2025-10-09 Oct.Thu 11:04:14 [c] shorter chains:
+1=check downstream recipes to see if anything depending on this isotope is affected by it decreasing chain counts
+2=update chain count for isotope in convert script and syntax files
+ 1  2
+[c][c] 5-chain down to  2-chain   | 0-chain  + 1-chain =>  5-chain           |  Ct-17⁻ +  Nd-32⁻     +    15000 =>   Uq-49                           +   13351.95 |    1648.05 | nuclear                      |   676221*| -> Uq-49
+[c][c] 4-chain down to  3-chain   | 0-chain  + 2-chain =>  1-chain + 4-chain |  Cl-25⁺ +   Z-98⁺     +    15000 =>   P-22 + Vt-101                   +   12116.94 |    2883.06 | decay, nuclear               |   666737*|
+   [c] 5~~>4 \<Ha-110\>\|\<Vt-100\>\|\<Kn-108\>
+
+[c][c] 5-chain down to  3-chain   | 0-chain  + 2-chain =>  1-chain + 5-chain |  Ct-17⁻ +  Vl-96⁻     +     2000 =>   P-22 + W-91                     +     244.50 |    1755.50 | decay, nuclear               |   568104 | -> Z-113
+   [c] 6~~>5 Cv-115 
+
+[c][c] 4-chain down to  3-chain   | 0-chain  + 2-chain =>  4-chain           |  Gj-11∙ + Se-100∙     +    15000 => ⬆ Z-111                           +   11839.49 |    3160.51 | decay, nuclear               |   665159*| -> S-111
+[c][c] 5-chain down to  4-chain   | 0-chain  + 3-chain =>  1-chain + 5-chain |  Ro-22⁺ + Vt-100⁺     +     4000 =>   P-22 + Ek-100                   +    2044.95 |    1955.05 | decay, nuclear               |   203993*| -> Eh-122
+   [c] 6~~>5 Jb-115\|Ys-125
+
+[c][c] 5-chain down to  4-chain   | 0-chain  + 3-chain =>  5-chain           |  Ct-17⁻ +   U-95ª     +     5100 => ⬆ Z-112                           +    3236.25 |    1863.75 | decay, nuclear               |   654078*| -> S-112
+[c][c] 7-chain down to  6-chain   | 0-chain  + 5-chain =>  7-chain           |  Ct-17⁻ +  Uq-52⁻     +     1140 => ⬆ Ns-69                           +      14.53 |    1125.47 | decay, nuclear               |   669071 | -> C-69
+[c][c] 8-chain down to  7-chain   | 0-chain  + 6-chain =>  8-chain           |  Vi-10⁺ +  Cl-24⁺     +    15000 => ⬇ Lu-34                           +   13790.82 |    1209.18 | decay, nuclear               |   678445*| -> Dx-34
+[c][c] 3-chain down to  2-chain   | 1-chain  + 1-chain =>  1-chain + 3-chain |   C-57⁺ +  Gy-64⁺     +    15000 =>   P-22 + Z-99                     +   11118.81 |    3881.19 | decay, nuclear               |   668771*| -> Go-121
+   [c] 4~~>3 Cv-99
+
+[c][c] 5-chain down to  4-chain   | 1-chain  + 3-chain =>  1-chain + 5-chain |   P-24⁻ +   U-96⁻     +     5000 =>   P-22 + U-98                     +    2511.38 |    2488.62 | decay, nuclear               |   558901*| -> Ek-120
+   [c] 6~~>5 Pb-53
+   [c] 8~~>6 Ai-70
+
+[c][c] 7-chain down to  6-chain   | 1-chain  + 5-chain =>  7-chain           |  Nd-34⁻ +  Uq-52⁻     +     1880 => ⬆ D-86                            +      15.60 |    1864.40 | decay, nuclear               |   663520 | -> Iu-86
+[c][c] 4-chain down to  3-chain   | 2-chain            =>  0-chain + 4-chain | Dd-102ª               +    10300 =>   Uq-47 + L-55                    +    1070.25 |    9229.75 | nuclear                      |   528474 |
+[c][c] 6-chain down to  3-chain   | 2-chain            =>  1-chain + 6-chain |   Z-98⁺               +    15000 =>   Pb-45 + Qe-53                   +    7176.57 |    7823.43 | nuclear                      |   628558*|
+[c][c] 7-chain down to  6-chain   | 2-chain  + 5-chain =>  7-chain           |   T-18⁻ +  Uq-52⁻     +     3000 => ⬆ Ai-70                           +    1580.28 |    1419.72 | decay, nuclear               |   643409*| -> Ns-70
+[c][c] 5-chain down to  4-chain   | 3-chain            =>  1-chain + 5-chain | Da-108∙               +    15000 =>   Pb-50 + Ux-58                   +     210.00 |   14790.00 | nuclear                      |   628490 |
+[c][c] 6-chain down to  4-chain   | 3-chain            =>  1-chain + 6-chain |   Z-97⁺               +    15000 =>   Pb-44 + Qe-53                   +    7422.93 |    7577.07 | nuclear                      |   628557*|
+[c][c] 5-chain down to  4-chain   | 3-chain            =>  2-chain + 5-chain | Dd-104⁻               +    15000 =>   Uq-48 + L-56                    +    5547.68 |    9452.32 | nuclear                      |   628495*|
+[c][c] 6-chain down to  4-chain   | 3-chain            =>  3-chain + 6-chain |  Nm-88⁺               +    15000 =>   V-40 + L-48                     +    7892.19 |    7107.81 | nuclear                      |   628522*|
+[c][c] 6-chain down to  4-chain   | 3-chain            =>  4-chain + 6-chain | Vt-100⁺               +    20000 =>   Wy-46 + C-54                    +   12429.58 |    7570.42 | nuclear                      |   629046*|
+[c][c] 5-chain down to  4-chain   | 3-chain            =>  5-chain + 1-chain | Aw-107ª               +    15000 =>   Ux-49 + Ns-58                   +    6733.27 |    8266.73 | nuclear                      |   628476*|
+[c][c] 5-chain down to  4-chain   | 3-chain            =>  5-chain + 2-chain | Ok-106⁻               +    10700 =>   Uq-49 + Ux-57                   +    1034.05 |    9665.95 | nuclear                      |   530083 |
+[c][c] 6-chain down to  4-chain   | 3-chain            =>  5-chain + 6-chain |  Cv-98ª               +     8500 =>   Wy-45 + Qe-53                   +    1487.34 |    7012.66 | nuclear                      |   661310*|
+[c][c] 6-chain down to  4-chain   | 3-chain            =>  6-chain + 1-chain | Ek-105ª               +    15000 =>   L-48 + C-57                     +    6269.91 |    8730.09 | nuclear                      |   628500*|
+[c][c] 7-chain down to  5-chain   | 4-chain            =>  1-chain + 7-chain |  Pb-52⁻               +     5000 =>   P-24 + Ro-28                    +    1294.81 |    3705.19 | nuclear                      |   613806*|
+   [c] 8~~>6 Vi-15 Iu-84
+   [c] 9~~>7 Gy-76 C-67 Ok-111
+   [c] 10~~>8 Nd-35
+
+[c][c] 6-chain down to  5-chain   | 4-chain            =>  5-chain + 6-chain |  Vt-99⁺               +    20000 =>   Wy-45 + C-54                    +   12737.61 |    7262.39 | nuclear                      |   629047*|
+[c][c] 7-chain down to  6-chain   | 4-chain  + 5-chain =>  7-chain           |   K-37⁻ +  Uq-52⁻     +     2000 => ⬆ Co-89                           +      86.39 |    1913.61 | decay, nuclear               |   542656 | -> D-89
+[c][c] 7-chain down to  6-chain   | 5-chain            =>  1-chain + 7-chain |  Uq-52⁻               +     3100 => ⬆ P-24 + Ro-28                    +       0.23 |    3099.77 | decay, nuclear               |   440240 |
+[c][c] 7-chain down to  6-chain   | 5-chain            =>  5-chain + 7-chain |  Uq-51⁻               +     3500 =>   Eb-23 + Ro-28                   +     147.85 |    3352.15 | nuclear                      |   652786 |
+[c][c] 7-chain down to  6-chain   | 5-chain            =>  2-chain + 7-chain |   U-98⁻               +    20000 =>   Gd-45 + Pb-53                   +   11403.65 |    8596.35 | nuclear                      |   629035*|
+[c][c] 7-chain down to  6-chain   | 5-chain            =>  4-chain + 7-chain |   U-99⁻               +     7898 =>   Gd-46 + Pb-53                   +       5.32 |    7892.68 | nuclear                      |   480639 |
+[c][c] 7-chain down to  6-chain   | 5-chain            =>  7-chain + 5-chain | Nm-106⁻               +     8750 =>   V-49 + L-57                     +      14.59 |    8735.41 | nuclear                      |   639954 |
+[c][c] 7-chain down to  6-chain   | 5-chain            =>  7-chain + 7-chain |  Z-117⁻               +     9740 =>   Pb-53 + Qe-64                   +      11.95 |    9728.05 | nuclear                      |   663548 |
+[c][c] 7-chain down to  6-chain   | 5-chain  + 5-chain =>  7-chain           |   P-25⁻ +  Uq-52⁻     +     5000 => ⬆ Kk-77                           +    3263.50 |    1736.50 | decay, nuclear               |   643777*| -> Gy-77
+[c][c] 8-chain down to  7-chain   | 6-chain            =>  0-chain + 8-chain |   K-29⁺               +     1180 =>   Ct-13 + Xj-16                   +       2.71 |    1177.29 | nuclear                      |   362164 |
+[c][c] 8-chain down to  7-chain   | 6-chain  + 5-chain =>  8-chain           |   K-29⁺ +   C-53⁺     +     1600 => ⬇ Vl-82                           +      62.21 |    1537.79 | decay, nuclear               |   542738 | -> Se-82
 
 2025-10-08 Oct.Wed 00:06:41 [c] more shorter chains to check
  
