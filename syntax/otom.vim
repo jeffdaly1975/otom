@@ -19851,6 +19851,7 @@ syn match chain6  /\<D-72\>/
 syn match chain6  /\<D-73\>/
 syn match chain6  /\<D-86\>/
 syn match chain6  /\<Da-91\>/
+syn match chain6  /\<Dx-36\>/
 syn match chain6  /\<F-60\>/
 syn match chain6  /\<Gd-37\>/
 syn match chain6  /\<Gj-12\>/
@@ -19888,7 +19889,6 @@ syn match chain6  /\<Yv-67\>/
 syn match chain7  /\<C-67\>/
 syn match chain7  /\<Cj-68\>/
 syn match chain7  /\<Dd-108\>/
-syn match chain7  /\<Dx-36\>/
 syn match chain7  /\<F-59\>/
 syn match chain7  /\<Gy-76\>/
 syn match chain7  /\<Kk-65\>/

@@ -1,3 +1,42 @@
+ 166 count:  ? /?\(64-137\|64-140\|64-141\|64-142\|64-144\|64-145\|67-140\|67-141\|67-142\|67-143\|67-144\|67-146\|67-147\|67-148\|68-125\|68-143\|68-144\|68-145\|68-147\|68-148\|68-149\|69-146\|69-147\|69-148\|69-149\|69-150\|70-140\|70-143\|70-147\|70-148\|70-149\|70-150\|70-151\|Ai-56⁺\|Ai-72⁻\|Ai-73⁻\|Aw-129\|Aw-130\|Ax-108⁺\|Ax-131\|Ax-132\|Ax-134\|Ax-135\|Ax-136\|Ax-137\|Cj-66⁺\|Cl-32⁻\|Co-90⁻\|Co-91⁻\|Ct-18⁻\|Cv-95⁺\|Cv-96⁺\|D-88⁻\|Dd-87⁺\|Dx-34⁺\|Dx-45⁻\|Dx-46⁻\|Eb-25⁻\|Eh-143\|Eh-144\|Eh-146\|Ek-126\|F-58⁺\|Gd-36⁺\|Gd-48⁻\|Go-134\|Go-136\|Go-137\|Go-138\|Go-139\|Go-140\|Go-142\|Go-143\|Gy-61⁺\|Gy-77⁻\|Ha-106⁺\|Ha-107⁺\|Ha-132\|Ha-133\|Ha-134\|Ha-135\|I-136\|I-137\|I-138\|I-139\|Iu-66⁺\|Jb-136\|Jb-137\|Jb-138\|Jb-139\|Jb-140\|Jb-141\|Jb-142\|Ji-129\|K-28⁺\|K-38⁻\|Kk-62⁺\|Kn-104⁺\|Kn-105⁺\|Kn-129\|Kn-130\|Kn-131\|Kn-132\|Kn-133\|L-45⁺\|L-59⁻\|Lu-43⁻\|N-77⁺\|N-97⁻\|N-98⁻\|Nd-26⁺\|Nm-108⁻\|Nm-84⁺\|Nm-85⁺\|Ns-54⁺\|Ns-55⁺\|Ok-88⁺\|Pb-41⁺\|Pb-54⁻\|Pb-55⁻\|Pg-49⁺\|Qe-51⁺\|Qe-66⁻\|Ro-29⁻\|Ro-30⁻\|S-92⁺\|S-93⁺\|Se-105⁻\|T-13⁺\|U-100⁻\|U-101⁻\|Uq-39⁺\|V-37⁺\|V-50⁻\|Vi-16⁻\|Vl-102⁻\|Vl-103⁻\|Vl-104⁻\|Vt-97⁺\|W-93⁻\|W-94⁻\|Wy-43⁺\|Wy-57⁻\|X-140\|X-142\|X-143\|X-144\|Xj-23⁻\|Ys-140\|Ys-143\|Ys-145\|Ys-147\|Yu-24⁺\|Yv-64⁺\|Yv-81⁻\|Z-94⁺\)/
+
+
+
+|    64574*|bohr    |   K-34∙ + Nm-105⁻  +     5000 => ⬆ K-34 + Dd-105          +    4750.00 |     250.00 | decay                        | -> Go-139
+|   146709*|bohr    |   T-19⁻ + Ek-120ª  +     5500 => ⬆ Xj-19 + P-22 + U-98    +    5225.00 |     275.00 | decay                        | -> Go-139
+
+|   558876*|bohr    |   P-23∙ +  S-115⁻  +     5000 => ⬆ P-23 + Z-115           +    4750.00 |     250.00 | decay                        | -> Jb-138
+
+|   652598*|bohr    |   As-7∙ + Ek-122⁻  +    12000 => ⬆ As-7 + Ji-122          +   11400.00 |     600.00 | decay                        | -> Kn-129
+
+|   652655*|bohr    |   C-64⁻ +  Iu-76ª  +     5000 =>   C-64 + Iu-76           +    4750.00 |     250.00 | none                         | -> Ys-140
+|   668719*|bohr    |   K-33∙ +  S-107ª  +    15000 =>   P-22 + K-33 + Co-85    +   14250.00 |     750.00 | decay                        | -> Ys-140
+|   668868*|bohr    |   K-36⁻ +  S-104⁺  +    15000 =>   Mt-36 + Da-104         +   14250.00 |     750.00 | decay                        | -> Ys-140
+
+|   659102*|bohr    |   P-22⁺ +  Z-115⁻  +   200000 =>   Eb-22 + Cv-115         +  190000.00 |   10000.00 | decay                        | -> Go-137
+|   668510*|bohr    |  Nd-32⁻ + Dd-105⁻  +    15000 => ⬆ Nd-32 + Ok-105         +   14250.00 |     750.00 | decay                        | -> Go-137
+
+|   665057*|bohr    |  Lu-36∙ +  Vl-98⁻  +    15000 => ⬆ SeLu(Lu-36,Se-98>)     +   14143.83 |     856.17 | metallic, decay              | -> Go-134
+
+|   668271*|bohr    |  Nd-32⁻ + Nm-105⁻  +    15000 => ⬆ Nd-32 + Dd-105         +   14250.00 |     750.00 | decay                        | -> Jb-137
+|   668423*|bohr    |   L-56⁻ +  Cj-81⁻  +    15000 =>   L-56 + Cj-81           +   14250.00 |     750.00 | none                         | -> Jb-137
+
+|   668451*|bohr    |  Vi-11⁺ + Aw-125ª  +    15000 => ⬇ Gj-11 + P-22 + Se-103  +   14250.00 |     750.00 | decay                        | -> Go-136
+
+[c] mark those as impossible with "!" in the checkingsomething-stab-chart.txt file
+ ?Go-134 ~~> !Go-134
+ ?Go-136 ~~> !Go-136
+ ?Go-137 ~~> !Go-137
+ ?Go-139 ~~> !Go-139
+ ?Jb-137 ~~> !Jb-137
+ ?Jb-138 ~~> !Jb-138
+ ?Kn-129 ~~> !Kn-129
+ ?Ys-140 ~~> !Ys-140
+
+
+2025-10-10 Oct.Fri 09:51:13
+[ ] Construct a chart like the stab chart but use the min amount of NRG needed to make a nuclear reaction. I want to definitively be able to say like Sr .. Eb require 500 NRG, P .. Mt 1000... etc (those are made up for the example)
+
 2025-10-09 Oct.Thu 22:36:24 [ ] took all my chains.bohr.otom entries, modified to update the chaindict.vim file so a dictionary object could be used to lookup how many chains an isotope is, and used that to add details to temp-bohr-findnewstuff.otom. Searched that for things like /^| [012]-chain + [012]-chain.....................=>.* [4-9]-chain/ which would be a line where 2 inputs of 0 to 2 chains produce something of 4 to 9 chains.
 Came up with this list of 1548 recipes.
 [ ] consider how to use this.

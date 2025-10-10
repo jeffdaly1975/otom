@@ -1049,6 +1049,7 @@
  5-chain Cv-118 :: 14375.57 |  Ct-17⁻ + Vl-101⁻   +[  1665.12 -   5000] => Cv-118              | decay, nuclear               | OTOMRO         |
  6-chain Gd-37  :: 14630.96 |   U-81⁺             +[  5574.47 -   9000] => Gd-37 + Pb-44       | nuclear                      | OTOMRO         |
  5-chain Da-113 :: 14708.97 |  Ct-17⁻ +  Lx-96⁻   +[  1611.51 -   5000] => Da-113              | decay, nuclear               | OTOMRO  652481 |
+ 6-chain Dx-36  :: 14753.72 |   Sr-1∙ +  Dx-35⁺   +[  1305.57 -  15000] => Dx-36               | decay, nuclear               | OTOMRO  683216*| -> Gd-36
  5-chain Vt-121 :: 14801.55 |  Ct-17⁻ + Se-104⁻   +[  1721.74 -  10000] => Vt-121              | decay, nuclear               | OTOMRO         |
  4-chain S-113  :: 14805.31 |  Ct-17⁻ +   N-96⁻   +[  1643.07 -   3000] => S-113               | decay, nuclear               | OTOMRO  382042 |
  5-chain Dd-107 :: 14885.27 |  Gj-11∙ +  Lx-96⁻   +[  1787.81 -   5000] => Dd-107              | decay, nuclear               | OTOMRO         |
