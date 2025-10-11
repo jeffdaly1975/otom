@@ -19726,7 +19726,7 @@ syn match chain4  /\<U-97\>/
 syn match chain4  /\<U-98\>/
 syn match chain4  /\<Ux-49\>/
 syn match chain4  /\<Ux-58\>/
-syn match chain4  /\<V-47\>/
+syn match chain3  /\<V-47\>/
 syn match chain4  /\<Vl-101\>/
 syn match chain4  /\<Vl-84\>/
 syn match chain4  /\<Vt-98\>/
@@ -19766,7 +19766,7 @@ syn match chain5  /\<Ek-121\>/
 syn match chain5  /\<Ek-122\>/
 syn match chain5  /\<Ek-123\>/
 syn match chain5  /\<Ek-99\>/
-syn match chain5  /\<Gd-46\>/
+syn match chain4  /\<Gd-46\>/
 syn match chain5  /\<Go-117\>/
 syn match chain5  /\<Go-118\>/
 syn match chain5  /\<Ha-108\>/
@@ -19792,7 +19792,7 @@ syn match chain5  /\<Ns-67\>/
 syn match chain5  /\<Ok-108\>/
 syn match chain5  /\<Ok-109\>/
 syn match chain5  /\<Ok-110\>/
-syn match chain5  /\<P-25\>/
+syn match chain4  /\<P-25\>/
 syn match chain5  /\<Pb-43\>/
 syn match chain5  /\<Pb-53\>/
 syn match chain5  /\<Pg-51\>/

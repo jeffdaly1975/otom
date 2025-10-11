@@ -1,3 +1,96 @@
+2025-10-10 Oct.Fri 22:47:46 
+[ ] these might change '?' classification to '*':
+|              |    684423 |bohr    |  Dx-35⁺ +  Da-90⁺ +    15000 => ⬇ Lu-35 + Ok-90  +   14250.00 |     750.00 | decay                        | -> 68-125    |
+| -> Ai-56     |    684465 |bohr    |  Vi-10⁺ +   L-46⁺ +     5000 => ⬇ Ns-56          +    4108.20 |     891.80 | decay, nuclear               | -> Ai-56     |
+| -> Ai-72     |    684466 |bohr    |  Ct-17⁻ +  Wy-55⁻ +     5000 => ⬆ F-72           +    3593.63 |    1406.37 | decay, nuclear               | -> Ai-72     |
+| -> Ai-73     |    684467 |bohr    |  Ct-17⁻ +  Wy-56⁻ +     5000 => ⬆ F-73           +    3624.59 |    1375.41 | decay, nuclear               | -> Ai-73     |
+| -> Ax-108    |    684468 |bohr    |  Vi-10⁺ +  Vt-98⁺ +     5000 => ⬇ Ha-108         +    3842.83 |    1157.17 | decay, nuclear               | -> Ax-108    |
+| -> Cj-66     |    684469 |bohr    |  Ct-13⁺ +   C-53⁺ +     5000 => ⬇ Yv-66          +    3736.55 |    1263.45 | decay, nuclear               | -> Cj-66     |
+| -> Cl-32     |    684470 |bohr    |  Vi-15⁻ +  Ct-17⁻ +     5000 => ⬆ Yu-32          +    4284.15 |     715.85 | decay, nuclear               | -> Cl-32     |
+| -> Co-90     |    659072*|bohr    |   Sr-3∙ +   D-87⁻ +    10000 => ⬆ W-90           +    8341.28 |    1658.72 | decay, nuclear               | -> Co-90     |
+| -> Co-90     |    659087*|bohr    |  Mt-40⁻ +  Uq-50⁻ +    10000 => ⬆ W-90           +    7576.90 |    2423.10 | decay, nuclear               | -> Co-90     |
+| -> Co-91     |    684471 |bohr    |  Mt-39⁻ +  Uq-52⁻ +     5000 => ⬆ W-91           +    2852.36 |    2147.64 | decay, nuclear               | -> Co-91     |
+| -> Ct-18     |    684472 |bohr    |   Sr-3∙ +  Vi-15⁻ +     5000 => ⬆ T-18           +    4397.81 |     602.19 | decay, nuclear               | -> Ct-18     |
+| -> Cv-95     |    684473 |bohr    |   As-5⁺ +  Da-90⁺ +     5000 => ⬇ Z-95           +    4064.73 |     935.27 | decay, nuclear               | -> Cv-95     |
+| -> Cv-96     |    684474 |bohr    |   Dz-7⁺ +  Ok-89⁺ +     5000 => ⬇ Z-96           +    3872.45 |    1127.55 | decay, nuclear               | -> Cv-96     |
+| -> D-88      |    684475 |bohr    |  Ct-17⁻ +  Ai-71⁻ +     5000 => ⬆ Co-88          +    3409.81 |    1590.19 | decay, nuclear               | -> D-88      |
+| -> Dd-87     |    684476 |bohr    |   Dz-7⁺ +   U-80⁺ +     5000 => ⬇ Nm-87          +    3933.24 |    1066.76 | decay, nuclear               | -> Dd-87     |
+| -> Dx-34     |    684477 |bohr    |  Vi-10⁺ +  Cl-24⁺ +     5000 => ⬇ Lu-34          +    4290.82 |     709.18 | decay, nuclear               | -> Dx-34     |
+| -> Dx-45     |    684478 |bohr    |  Ct-17⁻ +  Ro-28⁻ +     5000 => ⬆ Gd-45          +    3989.87 |    1010.13 | decay, nuclear               | -> Dx-45     |
+| -> Dx-46     |    684479 |bohr    |  Vi-15⁻ +  Cl-31⁻ +     5000 => ⬆ Gd-46          +    4080.81 |     919.19 | decay, nuclear               | -> Dx-46     |
+| -> Eb-25     |    684480 |bohr    |  Dz-10⁻ +  Vi-15⁻ +     5000 => ⬆ P-25           +    4389.93 |     610.07 | decay, nuclear               | -> Eb-25     |
+| -> F-58      |    684481 |bohr    |  Vi-10⁺ +  Ux-48⁺ +     5000 => ⬇ Ai-58          +    4078.09 |     921.91 | decay, nuclear               | -> F-58      |
+| -> Gd-36     |    683348*|bohr    |   T-14⁺ +  Ro-22⁺ +    15000 => ⬇ Dx-36          +   13658.69 |    1341.31 | decay, nuclear               | -> Gd-36     |
+| -> Gd-36     |    683629 |bohr    |   Sr-1∙ +  Dx-35⁺ +    15000 => ⬇ Dx-36          +   13694.43 |    1305.57 | decay, nuclear               | -> Gd-36     |
+| -> Gd-48     |    684482 |bohr    |  Vi-15⁻ +  Yu-33⁻ +     5000 => ⬆ V-48           +    4038.03 |     961.97 | decay, nuclear               | -> Gd-48     |
+| -> Gy-61     |    684483 |bohr    |  Ct-13⁺ +  Ux-48⁺ +     5000 => ⬇ F-61           +    3792.55 |    1207.45 | decay, nuclear               | -> Gy-61     |
+| -> Gy-77     |    669218 |bohr    |  Ct-17⁻ +  Ux-60⁻ +     1450 => ⬆ Kk-77          +     182.98 |    1267.02 | decay, nuclear               | -> Gy-77     |
+| -> Ha-106    |    683631*|bohr    |   Dz-7⁺ +  Ek-99⁺ +    15000 => ⬇ Kn-106         +   13403.86 |    1596.14 | decay, nuclear               | -> Ha-106    |
+| -> K-28      |    678102*|bohr    |   Sr-1∙ +  Nd-27⁺ +    15000 => ⬇ Nd-28          +   13795.72 |    1204.28 | decay, nuclear               | -> K-28      |
+| -> K-28      |    684484 |bohr    |   T-14⁺ +   T-14⁺ +     5000 => ⬇ Nd-28          +    4327.13 |     672.87 | decay, nuclear               | -> K-28      |
+| -> K-38      |    684485 |bohr    |  Ct-17⁻ +  Xj-21⁻ +     5000 => ⬆ Mt-38          +    4110.32 |     889.68 | decay, nuclear               | -> K-38      |
+| -> K-38      |    684710*|bohr    |   Sr-3∙ +  Nd-35⁻ +    15000 => ⬆ Mt-38          +   13604.09 |    1395.91 | decay, nuclear               | -> K-38      |
+| -> K-38      |    684749*|bohr    |  Dz-10⁻ +  Ro-28⁻ +    15000 => ⬆ Mt-38          +   13662.47 |    1337.53 | decay, nuclear               | -> K-38      |
+| -> K-38      |    684778*|bohr    |   As-7∙ +  Cl-31⁻ +    15000 => ⬆ Mt-38          +   13543.54 |    1456.46 | decay, nuclear               | -> K-38      |
+| -> K-38      |    686202*|bohr    |  Gj-12⁻ +   P-26⁻ +    15000 => ⬆ Mt-38          +   13670.07 |    1329.93 | decay, nuclear               | -> K-38      |
+| -> Kk-62     |    662550 |bohr    |   Gj-9⁺ +   C-53⁺ +      960 => ⬇ Gy-62          +     105.18 |     854.82 | decay, nuclear               | -> Kk-62     |
+| -> Kn-104    |    683634*|bohr    |   As-5⁺ +  Ek-99⁺ +    15000 => ⬇ Ei-5 + Vt-99   +   14250.00 |     750.00 | decay                        | -> Kn-104    |
+| -> Kn-105    |    684486 |bohr    |   As-5⁺ + Ek-100⁺ +     5000 => ⬇ Aw-105         +    4049.38 |     950.62 | decay, nuclear               | -> Kn-105    |
+| -> L-45      |    683635*|bohr    |  Vi-10⁺ +  Dx-35⁺ +    15000 => ⬇ Wy-45          +   13686.07 |    1313.93 | decay, nuclear               | -> L-45      |
+| -> L-59      |    684487 |bohr    |   As-7∙ +  Uq-52⁻ +     5000 => ⬆ Ux-59          +    3756.69 |    1243.31 | decay, nuclear               | -> L-59      |
+| -> Lu-43     |    684488 |bohr    |  Ct-17⁻ +   P-26⁻ +     5000 => ⬆ Dx-43          +    4056.17 |     943.83 | decay, nuclear               | -> Lu-43     |
+| -> Lu-43     |    686370*|bohr    |  Vi-15⁻ +  Ro-28⁻ +    15000 => ⬆ Dx-43          +   13580.62 |    1419.38 | decay, nuclear               | -> Lu-43     |
+| -> Mt-30     |    678175*|bohr    |  Vi-10⁺ +   P-20⁺ +    15000 => ⬇ K-30           +   13849.00 |    1151.00 | decay, nuclear               | -> Mt-30     |
+| -> Mt-30     |    678257*|bohr    |   T-14⁺ +  Xj-16⁺ +    15000 => ⬇ K-30           +   13802.98 |    1197.02 | decay, nuclear               | -> Mt-30     |
+| -> Mt-30     |    678333*|bohr    |   Sr-1∙ +   K-29⁺ +    15000 => ⬇ K-30           +   13768.62 |    1231.38 | decay, nuclear               | -> Mt-30     |
+| -> Mt-30     |    684489 |bohr    |  Vi-10⁺ +   P-20⁺ +     5000 => ⬇ K-30           +    4349.00 |     651.00 | decay, nuclear               | -> Mt-30     |
+| -> N-77      |    684490 |bohr    |   Sr-1∙ +  Lx-76⁺ +     5000 => ⬇ Lx-77          +    3905.40 |    1094.60 | decay, nuclear               | -> N-77      |
+| -> N-97      |    684491 |bohr    |   Sr-2∙ +  Lx-95⁻ +     5000 => ⬆ U-97           +    3641.93 |    1358.07 | decay, nuclear               | -> N-97      |
+| -> N-98      |    684492 |bohr    |   Sr-3∙ +  Lx-95⁻ +     5000 => ⬆ U-98           +    3569.24 |    1430.76 | decay, nuclear               | -> N-98      |
+| -> Nd-26     |    684493 |bohr    |  Vi-10⁺ +  Xj-16⁺ +     5000 => ⬇ Yu-26          +    4414.37 |     585.63 | decay, nuclear               | -> Nd-26     |
+| -> Nm-108    |    643842 |bohr    |  Gj-12⁻ +  Lx-96⁻ +     1350 => ⬆ Dd-108         +       3.08 |    1346.92 | decay, nuclear               | -> Nm-108    |
+| -> Nm-84     |    684494 |bohr    |  Nd-27⁺ +  Ai-57⁺ +     5000 => ⬇ Se-84          +    3369.76 |    1630.24 | decay, nuclear               | -> Nm-84     |
+| -> Nm-85     |    684495 |bohr    |   As-5⁺ +   U-80⁺ +     5000 => ⬇ Se-85          +    4082.94 |     917.06 | decay, nuclear               | -> Nm-85     |
+| -> Ns-54     |    684496 |bohr    |   Sr-1∙ +   C-53⁺ +     5000 => ⬇ C-54           +    4049.33 |     950.67 | decay, nuclear               | -> Ns-54     |
+| -> Ns-55     |    654036*|bohr    |   Sr-2∙ +   C-53⁺ +    11000 => ⬇ C-55           +    9698.34 |    1301.66 | decay, nuclear               | -> Ns-55     |
+| -> Ok-88     |    684443*|bohr    |  Dx-35⁺ +   C-53⁺ +    15000 => ⬇ Dd-88          +   12567.55 |    2432.45 | decay, nuclear               | -> Ok-88     |
+| -> Pb-41     |    684497 |bohr    |   T-14⁺ +  Nd-27⁺ +     5000 => ⬇ Uq-41          +    4135.86 |     864.14 | decay, nuclear               | -> Pb-41     |
+| -> Pb-41     |    684643*|bohr    |  Vi-10⁺ +  Mt-31⁺ +    15000 => ⬇ Uq-41          +   13735.17 |    1264.83 | decay, nuclear               | -> Pb-41     |
+| -> Pb-55     |    684498 |bohr    |   Sr-3∙ +  Uq-52⁻ +     5000 => ⬆ Wy-55          +    3942.24 |    1057.76 | decay, nuclear               | -> Pb-55     |
+| -> Pg-49     |    684499 |bohr    |  Vi-10⁺ +   V-39⁺ +     5000 => ⬇ Ux-49          +    4140.58 |     859.42 | decay, nuclear               | -> Pg-49     |
+| -> Qe-51     |    684500 |bohr    |   Sr-1∙ +  Pg-50⁺ +     5000 => ⬇ Pg-51          +    4072.72 |     927.28 | decay, nuclear               | -> Qe-51     |
+| -> Qe-66     |    684501 |bohr    |   Ei-5∙ +  Ux-61⁻ +     5000 => ⬆ C-66           +    3771.46 |    1228.54 | decay, nuclear               | -> Qe-66     |
+| -> Ro-29     |    678146*|bohr    |  Gj-12⁻ +  Ct-17⁻ +    15000 => ⬆ Cl-29          +   13807.83 |    1192.17 | decay, nuclear               | -> Ro-29     |
+| -> Ro-29     |    678158*|bohr    |  Dz-10⁻ +   T-19⁻ +    15000 => ⬆ Cl-29          +   13796.65 |    1203.35 | decay, nuclear               | -> Ro-29     |
+| -> Ro-29     |    678277*|bohr    |   Sr-3∙ +   P-26⁻ +    15000 => ⬆ Cl-29          +   13725.46 |    1274.54 | decay, nuclear               | -> Ro-29     |
+| -> Ro-29     |    678337*|bohr    |  Vi-14⁻ +  Vi-15⁻ +    15000 => ⬆ Cl-29          +   13785.69 |    1214.31 | decay, nuclear               | -> Ro-29     |
+| -> Ro-29     |    684502 |bohr    |  Gj-12⁻ +  Ct-17⁻ +     5000 => ⬆ Cl-29          +    4307.83 |     692.17 | decay, nuclear               | -> Ro-29     |
+| -> S-91      |    684503 |bohr    |   Sr-1∙ +  Da-90⁺ +     5000 => ⬇ Da-91          +    3900.06 |    1099.94 | decay, nuclear               | -> S-91      |
+| -> S-92      |    684504 |bohr    |   Sr-1∙ +  Da-91⁺ +     5000 => ⬇ Da-92          +    3849.89 |    1150.11 | decay, nuclear               | -> S-92      |
+| -> S-93      |    683642*|bohr    |   Ei-4∙ +  Ok-89⁺ +    15000 => ⬇ Da-93          +   13173.13 |    1826.87 | decay, nuclear               | -> S-93      |
+| -> Se-105    |    684505 |bohr    |  Dz-10⁻ +  Lx-95⁻ +     5000 => ⬆ Nm-105         +    3542.79 |    1457.21 | decay, nuclear               | -> Se-105    |
+| -> U-100     |    684506 |bohr    |   Ei-5∙ +  Lx-95⁻ +     5000 => ⬆ Vl-100         +    3430.13 |    1569.87 | decay, nuclear               | -> U-100     |
+| -> U-101     |    684507 |bohr    |   Ei-5∙ +  Lx-96⁻ +     5000 => ⬆ Vl-101         +    3456.45 |    1543.55 | decay, nuclear               | -> U-101     |
+| -> Uq-39     |    684508 |bohr    |  Vi-10⁺ +   K-29⁺ +     5000 => ⬇ V-39           +    4261.37 |     738.63 | decay, nuclear               | -> Uq-39     |
+| -> V-37      |    684509 |bohr    |  Vi-10⁺ +  Nd-27⁺ +     5000 => ⬇ Gd-37          +    4288.89 |     711.11 | decay, nuclear               | -> V-37      |
+| -> V-50      |    684510 |bohr    |  Ct-17⁻ +  Yu-33⁻ +     5000 => ⬆ Uq-50          +    3941.50 |    1058.50 | decay, nuclear               | -> V-50      |
+| -> Vl-102    |    684511 |bohr    |   As-7∙ +  Lx-95⁻ +     5000 => ⬆ Se-102         +    3298.02 |    1701.98 | decay, nuclear               | -> Vl-102    |
+| -> Vl-103    |    684512 |bohr    |   As-7∙ +  Lx-96⁻ +     5000 => ⬆ Se-103         +    3326.97 |    1673.03 | decay, nuclear               | -> Vl-103    |
+| -> Vl-104    |    684513 |bohr    |  Uq-52⁻ +  Uq-52⁻ +     5000 => ⬆ Se-104         +    2591.96 |    2408.04 | decay, nuclear               | -> Vl-104    |
+| -> Vl-80     |    684422 |bohr    |  Nd-27⁺ +   C-53⁺ +     5000 => ⬇ U-80           +    3374.30 |    1625.70 | decay, nuclear               | -> Vl-80     |
+| -> Vt-97     |    684514 |bohr    |   Dz-7⁺ +  Da-90⁺ +     5000 => ⬇ Cv-97          +    3910.94 |    1089.06 | decay, nuclear               | -> Vt-97     |
+| -> W-93      |    684515 |bohr    |  Lu-41⁻ +  Uq-52⁻ +     5000 => ⬆ Lx-93          +    2771.65 |    2228.35 | decay, nuclear               | -> W-93      |
+| -> W-94      |    684516 |bohr    |  Lu-42⁻ +  Uq-52⁻ +     5000 => ⬆ Lx-94          +    2816.78 |    2183.22 | decay, nuclear               | -> W-94      |
+| -> Wy-43     |    684517 |bohr    |   T-14⁺ +   K-29⁺ +     5000 => ⬇ Pb-43          +    4099.21 |     900.79 | decay, nuclear               | -> Wy-43     |
+| -> Wy-57     |    684518 |bohr    |   Ei-5∙ +  Uq-52⁻ +     5000 => ⬆ L-57           +    3847.07 |    1152.93 | decay, nuclear               | -> Wy-57     |
+| -> Yu-24     |    684519 |bohr    |  Vi-10⁺ +   T-14⁺ +     5000 => ⬇ Cl-24          +    4432.50 |     567.50 | decay, nuclear               | -> Yu-24     |
+| -> Yv-64     |    684520 |bohr    |   Dz-7⁺ +  Ai-57⁺ +     5000 => ⬇ Kk-64          +    4056.02 |     943.98 | decay, nuclear               | -> Yv-64     |
+| -> Yv-81     |    684521 |bohr    |  Cl-29⁻ +  Uq-52⁻ +     5000 => ⬆ Cj-81          +    3089.37 |    1910.63 | decay, nuclear               | -> Yv-81     |
+| -> Z-94      |    683648*|bohr    |   As-5⁺ +  Ok-89⁺ +    15000 => ⬇ S-94           +   13533.30 |    1466.70 | decay, nuclear               | -> Z-94      |
+
+2025-10-10 Oct.Fri 22:34:19 new:
+|   687704*|bohr    |   Ei-5∙ +  Dx-42⁻                               +    15000 =>   V-47                                                                             +   13380.97 |    1619.03 | nuclear                      | 0x9c54a9c609212d2fd034b55cf3b42ba99af52880 | 0x9c09ec66b7d963d9ad726595308f292b03786dcc5315aec4e2ccbc57f85770e3 | 0x8aabd1365e85106b981cbc1da902778b52b80458a28561b137ec7ebfab2aca65 | -> V-47
+
 2025-10-10 Oct.Fri 12:34:51
 saw these in the reaction history
 
@@ -38,8 +131,8 @@ saw these in the reaction history
 
 2025-10-09 Oct.Thu 22:36:24 [ ] took all my chains.bohr.otom entries, modified to update the chaindict.vim file so a dictionary object could be used to lookup how many chains an isotope is, and used that to add details to temp-bohr-findnewstuff.otom. Searched that for things like /^| [012]-chain + [012]-chain.....................=>.* [4-9]-chain/ which would be a line where 2 inputs of 0 to 2 chains produce something of 4 to 9 chains.
 Came up with this list of 1548 recipes.
-[ ] consider how to use this.
-[ ] possibly just add them all to chains.bohr.otom with some indication they haven't been seen in the reaction history yet
+[c] consider how to use this.
+[c] possibly just add them all to chains.bohr.otom with some indication they haven't been seen in the reaction history yet
 
 
 | 0-chain + 5-chain =>  7-chain         | ~Sr-1∙   + ~Dx-35⁺  -> ?Gd-36⁺  (0.58?) => ~Dx-36⁺
