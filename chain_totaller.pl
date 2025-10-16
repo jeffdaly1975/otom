@@ -62,6 +62,22 @@ foreach my $input_line (<>){
           $cumulative_total += $db{$in};
        }
 
+       # round up to nearest integer
+       if ($input_min_nrg =~ /(\d+)\.(\d+)$/){
+          my ($cost,$remainder)=($1,$2);
+          if ($remainder eq '00'){
+#           if ($cost == 0){
+#             $input_min_nrg = $cost + 1;  # if the input was 0, we add 1 so that the recipes can be ordered from least to most expensive
+#           }else{
+              $input_min_nrg = $cost;
+#           }
+          }else{
+            $input_min_nrg = $cost + 1;
+          }
+       }else{
+         die "input min nrg is invalid [$input_min_nrg]\n";
+       }
+
        # the total cost for this is all input otoms cost plus input NRG
        $cumulative_total += $input_min_nrg;
 
@@ -92,6 +108,7 @@ foreach my $input_line (<>){
 
      }else{
        warn "invalid input line: $input_line\n";
+       print "$input_line\n";
        next;
      }
 
