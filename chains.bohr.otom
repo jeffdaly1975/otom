@@ -9,6 +9,23 @@
  | Useful vim to do inline math replacing "1000.0-100.0+200.0" with "1100.00": %s/::\(\s*[0-9.]\+[ +-][0-9. +-]\+\)\s*|/\=printf("::%9.2f |", eval(  submatch(1) ." + 0.0"))/
  +----------------------------------------------------------------------------------------------------
 
+ +------------------+
+ | Chain color key  |
+ +------------------+
+ | ⁰ 0-chain As-5   |
+ | ¹ 1-chain Ai-61  |
+ | ² 2-chain Ai-60  |
+ | ³ 3-chain Aw-108 |
+ | ⁴ 4-chain Dz-10  |
+ | ⁵ 5-chain Ai-58  |
+ | ⁶ 6-chain Yv-66  |
+ | ⁷ 7-chain Co-73  |
+ | ⁸ 8-chain Lu-42  |
+ | ⁹ 9-chain W-92   |
+ |  10-chain        |
+ |  11-chain        |
+ +------------------+
+
  0-chain As-5   ::     0.00 | MINEABLE
  0-chain As-6   ::     0.00 | MINEABLE
  0-chain As-7   ::     0.00 | MINEABLE
@@ -1120,7 +1137,7 @@
  2-chain Vl-85  ::  7364.98 |   L-49⁺ +  Ns-58⁺   +[ untried   + ?5000] => P-22 + Vl-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-107ª (0.486)  => P-22 + Vl-85
  2-chain Ok-95  ::  7365.83 |  Yu-28ª +  Se-89⁺   +[ untried   + ?5000] => P-22 + Ok-95        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ax-117ª (0.21?)  => P-22 + Ok-95
  2-chain Vl-85  ::  7366.22 |  Ux-50⁺ +   C-57⁺   +[ untried   + ?5000] => P-22 + Vl-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-107ª (0.486)  => P-22 + Vl-85
- 2-chain Co-88  ::  7368.69 |   V-46⁻ +   C-64⁻   +[  3098.81 -   5000] => P-22 + Co-88        +   1901.19 | ?                            | OTOMRO       ? | intermediate isotope -> *S-110ª  (0.71?)  => P-22 + Co-88
+ 2-chain Co-88  ::  7368.69 |   V-46⁻ +   C-64⁻   +[  3098.81 -   5000] => P-22 + Co-88        +   1901.19 | decay, nuclear               | OTOMRO  785791*| intermediate isotope -> *S-110ª  (0.71?)  => P-22 + Co-88
  2-chain Ok-95  ::  7369.56 |  Eb-19⁺ +  Da-98ª   +[ untried   + ?5000] => P-22 + Ok-95        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ax-117ª (0.21?)  => P-22 + Ok-95
  2-chain Z-108  ::  7370.00 |   V-42⁺ +  Lx-88∙   +[  5006.55 -  15000] => P-22 + Z-108        +   9993.45 | decay, nuclear               | OTOMRO  667958*| intermediate isotope -> Go-130
  2-chain W-87   ::  7370.26 |  Yu-31⁻ +  Iu-78∙   +[ untried   + ?5000] => P-22 + W-87         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-109ª  (0.711)  => P-22 + W-87
@@ -1425,7 +1442,7 @@
  2-chain S-108  ::  8182.29 |  Gd-44⁻ +  Lx-86ª   +[ untried   + ?5000] => P-22 + S-108        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-130ª (0.24?)  => P-22 + S-108
  2-chain W-88   ::  8188.40 |  Lu-40⁻ +  Gy-70ª   +[ untried   + ?5000] => P-22 + W-88         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-110ª  (0.693)  => P-22 + W-88
  2-chain Lx-91  ::  8189.82 |  Gd-44⁻ +   F-69⁻   +[ untried   + ?5000] => P-22 + Lx-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Cv-113ª (0.68?)  => P-22 + Lx-91
- 3-chain Aw-105 ::  8192.00 |  Mt-32⁺ +   S-95⁺   +[  2496.03 -   5000] => P-22 + Aw-105       +    118.97 | decay, nuclear               | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
+ 3-chain Aw-105 ::  8192.00 |  Mt-32⁺ +   S-95⁺   +[  2496.03 -   5000] => P-22 + Aw-105       +    118.97 | decay, nuclear               | OTOMRO  779993*| intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
  2-chain Cj-79  ::  8200.88 |  Xj-20⁻ +   D-81⁻   +[ untried   + ?5000] => P-22 + Cj-79        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Dd-101ª (0.748)  => P-22 + Cj-79
  2-chain W-87   ::  8219.44 |   V-45⁻ +  Ns-64∙   +[ untried   + ?5000] => P-22 + W-87         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-109ª  (0.711)  => P-22 + W-87
  2-chain S-109  ::  8220.39 |   C-64⁻ +   F-67ª   +[ untried   + ?5000] => P-22 + S-109        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-131ª (0.24?)  => P-22 + S-109
@@ -1594,13 +1611,13 @@
  4-chain Jb-116 ::  9482.00 |   P-21⁺ +   Z-95⁺   +[  1814.42 -   7500] => Jb-116              +      9.58 | decay, nuclear               | OTOMRO         |
  3-chain Z-111  ::  9482.00 |   Sr-3∙ + Da-108∙   +[  1799.80 -   5000] => Z-111               +      0.20 | decay, nuclear               | OTOMRO  526959 |
  2-chain S-107  ::  9528.00 |  Uq-46∙ +  Co-83⁺   +[  4625.15 -   5000] => P-22 + S-107        +    374.85 | decay, nuclear               | OTOMRO  665201*| intermediate isotope -> Jb-129
- 4-chain I-114  ::  9529.00 |  Ct-13⁺ + Ek-101⁺   +[  1549.20 -   5000] => I-114               +   3450.80 | decay, nuclear               | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 4-chain I-114  ::  9529.00 |  Ct-13⁺ + Ek-101⁺   +[  1549.20 -   5000] => I-114               +   3450.80 | decay, nuclear               | OTOMRO  780041*| intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
  3-chain Se-102 ::  9539.00 |   P-24⁻ + Se-100∙   +[  3214.08 -   3216] => P-22 + Se-102       +      0.92 | decay, nuclear               | OTOMRO  378266 |
  3-chain Ek-119 ::  9568.00 |  Ro-26∙ +  Lx-93⁻   +[  3297.72 -   6000] => Ek-119              +     12.28 | decay, nuclear               | OTOMRO  654539 |
  3-chain Kn-110 ::  9579.00 |  Ro-22⁺ + Aw-110ª   +[  2264.38 -   5000] => P-22 + Kn-110       +   2735.62 | decay, nuclear               | OTOMRO  264318*|
  2-chain Z-109  ::  9586.32 |  Qe-59⁻ +  Kk-72ª   +[ untried   + ?5000] => P-22 + Z-109        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Go-131ª (0.23?)  => P-22 + Z-109
  3-chain U-97   ::  9599.00 |   P-24⁻ +   U-95ª   +[  2385.23 -   4000] => P-22 + U-97         +    114.77 | decay, nuclear               | OTOMRO  528160 |
- 4-chain I-115  ::  9600.00 |  Xj-17⁺ +  Cv-98ª   +[  1852.24 -   5000] => I-115               +   3147.76 | decay, nuclear               | OTOMRO       ? | intermediate isotope ->  Jb-115⁺ (0.187)  => I-115 
+ 4-chain I-115  ::  9600.00 |  Xj-17⁺ +  Cv-98ª   +[  1852.24 -   5000] => I-115               +   3147.76 | decay, nuclear               | OTOMRO  780040*| intermediate isotope ->  Jb-115⁺ (0.187)  => I-115 
  2-chain Ok-105 ::  9608.88 |  Gd-44⁻ +  Co-83⁺   +[ untried   + ?5000] => P-22 + Ok-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ax-127ª (0.21?)  => P-22 + Ok-105
  4-chain Vt-98  ::  9613.00 |  Ro-22⁺ +  Cv-98ª   +[  1865.13 -  10000] => P-22 + Vt-98        +     14.22 | decay, nuclear               | OTOMRO  662354 |
  3-chain Co-87  ::  9621.00 |  Gj-11∙ +  Se-98∙   +[  2581.49 -   6000] => P-22 + Co-87        +      6.51 | decay, nuclear               | OTOMRO  300244 |
@@ -1651,7 +1668,7 @@
  4-chain Kn-107 :: 10189.00 |   K-31⁺ +  Cv-98ª   +[  2441.66*-  10000] => P-22 + Kn-107       +     18.34 | decay, nuclear               | OTOMRO  267914 |
  4-chain S-94   :: 10210.00 |  Ro-23ª +  Da-93⁺   +[  2222.78 -   4000] => P-22 + S-94         +   1777.22 | decay, nuclear               | OTOMRO  264515*|
  3-chain Ok-106 :: 10213.00 |  Eb-22∙ + Da-106∙   +[  4206.11 -   5000] => P-22 + Ok-106       +    793.89 | decay, nuclear               | OTOMRO  453830*|
- 4-chain Ha-108 :: 10235.00 |  Mt-32⁺ +  Cv-98ª   +[  2487.73 -   5000] => P-22 + Ha-108       +   2512.27 | decay, nuclear               | OTOMRO       ? | intermediate isotope -> *69-130ª (0.50?)  => P-22 + Ha-108
+ 4-chain Ha-108 :: 10235.00 |  Mt-32⁺ +  Cv-98ª   +[  2487.73 -   5000] => P-22 + Ha-108       +   2512.27 | decay, nuclear               | OTOMRO  780039*| intermediate isotope -> *69-130ª (0.50?)  => P-22 + Ha-108
  4-chain Lx-95  :: 10236.00 |   P-23∙ +  Lx-94⁻   +[  3026.86 -  13400] => P-22 + Lx-95        +      0.14 | decay, nuclear               | OTOMRO  170611 |
  3-chain Lx-94  :: 10241.00 |   P-24⁻ +  Lx-92∙   +[  3057.68*-   5000] => P-22 + Lx-94        +      0.32 | decay, nuclear               | OTOMRO  341278 |
  4-chain Da-112 :: 10246.00 |  Ct-17⁻ +  Lx-95⁻   +[  1644.85 -   5000] => Da-112              +      5.65 | decay, nuclear               | OTOMRO  505053 |
@@ -1717,7 +1734,7 @@
  5-chain U-99   :: 11289.00 |   Sr-3∙ +  Lx-96⁻   +[  1220.52 -  20000] => U-99                +     45.48 | decay, nuclear               | OTOMRO  480634 |
  4-chain Ek-122 :: 11342.00 |  Ct-17⁻ + Nm-105⁻   +[  1709.26 -   8000] => Ek-122              +      4.74 | decay, nuclear               | OTOMRO         |
  4-chain Ji-104 :: 11361.00 |   P-21⁺ + Ji-105⁺   +[  2043.32 -   5000] => P-22 + Ji-104       +      7.68 | decay, nuclear               | OTOMRO         |
- 4-chain Vt-119 :: 11364.00 |  Ct-17⁻ + Se-102⁻   +[  1824.10 -   3000] => Vt-119              +   1175.90 | decay, nuclear               | OTOMRO       ? | intermediate isotope ->  Cv-119⁻ (0.476)  => Vt-119 
+ 4-chain Vt-119 :: 11364.00 |  Ct-17⁻ + Se-102⁻   +[  1824.10 -   3000] => Vt-119              +   1175.90 | decay, nuclear               | OTOMRO  780049*| intermediate isotope ->  Cv-119⁻ (0.476)  => Vt-119 
  4-chain Aw-108 :: 11403.00 |   P-23∙ + Aw-107ª   +[  2969.12 -   5000] => P-22 + Aw-108       +   2030.88 | decay, nuclear               | OTOMRO  285687*|
  4-chain Ha-110 :: 11434.00 |   P-21⁺ + Ha-111ª   +[  2183.58 -   5000] => P-22 + Ha-110       +   2816.42 | decay, nuclear               | OTOMRO  204295*|
  4-chain Vt-119 :: 11439.00 |   P-24⁻ +  Lx-95⁻   +[  2319.33 -   6000] => Vt-119              +    180.67 | decay, nuclear               | OTOMRO  527214 |
@@ -1842,7 +1859,7 @@
  5-chain D-73   :: 14430.00 |  Mt-32⁺ +  Uq-41⁺   +[  1569.41 -   2500] => D-73                +    130.59 | decay, nuclear               | OTOMRO  542637 | intermediate isotope ->  Co-73⁺ => D-73⁺
  5-chain Iu-70  :: 14610.00 |  Ro-22⁺ +  Ux-48⁺   +[  1321.87 -   3000] => Iu-70               +     88.13 | decay, nuclear               | OTOMRO  529230 | intermediate isotope ->  D-70⁺ => Iu-70⁺
  4-chain Qe-53  :: 14760.00 |  Cv-98ª             +[  7012.66 -   8500] => Wy-45 + Qe-53       +   1487.34 | nuclear                      | OTOMRO  661310*|
- 4-chain Co-75  :: 14906.00 |  Ro-22⁺ +  Qe-53⁺   +[  1668.00 -   5000] => Co-75               +   3332.00 | decay, nuclear               | OTOMRO       ? | intermediate isotope ->  W-75⁺   (0.518)  => Co-75 
+ 4-chain Co-75  :: 14906.00 |  Ro-22⁺ +  Qe-53⁺   +[  1668.00 -   5000] => Co-75               +   3332.00 | decay, nuclear               | OTOMRO  780025*| intermediate isotope ->  W-75⁺   (0.518)  => Co-75 
  4-chain Dx-43  :: 15198.00 |  Lx-94⁻             +[  7988.22 -   8000] => Dx-43 + Uq-51       +      0.78 | nuclear                      | OTOMRO  353142 |
  4-chain Uq-51  :: 15198.00 |  Lx-94⁻             +[  7988.22 -   8000] => Dx-43 + Uq-51       +      0.78 | nuclear                      | OTOMRO  353142 |
  5-chain Gj-12  :: 15319.00 |  Eb-23⁻             +[   914.51 -  20000] => Gj-11 + Gj-12       +      0.49 | nuclear                      | OTOMRO  621993 |
@@ -1946,7 +1963,7 @@
  5-chain Pb-52  :: 20306.00 |  S-113⁻             +[  9896.50 -  20000] => Pb-52 + Pg-61       +     13.50 | nuclear                      | OTOMRO  663210 |
  6-chain Kk-66  :: 20356.00 |   Sr-2∙ +  Kk-64⁺   +[   918.24 -   3000] => Kk-66               +    101.76 | decay, nuclear               | OTOMRO  662553 |
  8-chain T-14   :: 20739.00 |  Nd-27⁺             +[  1025.10 -  20000] => Ct-13 + T-14        +      4.90 | nuclear                      | OTOMRO  529037 |
- 5-chain Cv-119 :: 20814.92 |  Vi-15⁻ + Se-104⁻   +[  1586.92 -   3000] => Cv-119              +   1413.08 | decay, nuclear               | OTOMRO       ? | intermediate isotope ->*Z-119⁻  (0.48?) =>~Cv-119⁻
+ 5-chain Cv-119 :: 20814.92 |  Vi-15⁻ + Se-104⁻   +[  1586.92 -   3000] => Cv-119              +   1413.08 | decay, nuclear               | OTOMRO  789491*| intermediate isotope ->*Z-119⁻  (0.48?) =>~Cv-119⁻
  6-chain Ro-28  :: 20861.00 |  Uq-52⁻             +[  3099.77 -  20000] => P-24 + Ro-28        +      0.23 | decay, nuclear               | OTOMRO  440240 |
  6-chain Ro-28  :: 20861.00 |  Uq-52⁻             +[  3099.77 -  20000] => P-24 + Ro-28        +      0.23 | decay, nuclear               | OTOMRO  529142 |
  4-chain Gd-46  :: 21020.00 | Vl-101⁻             +[  8306.58 -  15000] => Gd-46 + Wy-55       +      0.42 | nuclear                      | OTOMRO  520544 |
@@ -2007,284 +2024,351 @@
  7-chain D-87   :: 44824.00 |   P-26⁻ +  Ux-61⁻   +[  1603.71 -  12000] => D-87                +     96.29 | decay, nuclear               | OTOMRO  658761 | intermediate isotope -> Iu-87⁻
  9-chain Iu-85  :: 44918.00 |  Yu-33⁻ +  Uq-52⁻   +[  1722.96 -   5000] => Iu-85               +     77.04 | decay, nuclear               | OTOMRO  654617 | intermediate isotope -> Cj-85⁻ => Iu-85⁻
  8-chain Lu-42  :: 46883.00 |  Kk-78⁻             +[  5992.54 -  10000] => K-36  + Lu-42       +      7.46 | nuclear                      | OTOMRO  568170 |
- 9-chain Mt-40  :: 52140.00 |   D-87⁻             +[  7315.02 -  12000] => Mt-40 + V-47        +    684.98 | nuclear                      | OTOMRO  669965 |
+ 8-chain Mt-40  :: 52140.00 |   D-87⁻             +[  7315.02 -  12000] => Mt-40 + V-47        +    684.98 | nuclear                      | OTOMRO  669965 |
  9-chain Cj-83  :: 58598.00 |  Cl-31⁻ +  Uq-52⁻   +[  1616.34 -   5000] => Cj-83               +     13.66 | decay, nuclear               | OTOMRO  639978 | intermediate isotope ->  Yv-83⁻ => Cj-83⁻
  9-chain W-92   :: 62567.00 |  Cl-31⁻ +  Ux-61⁻   +[  1778.37 -  12000] => W-92                +    521.63 | decay, nuclear               | OTOMRO  658417 | intermediate isotope -> Co-92⁻
 
- 3-chain Pb-52  ::     0.00 |   As-7∙ +  Gd-45⁻   +[ untried   + ?5000] => Pb-52               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Pb-52⁻  (0.878)  => Pb-52 
+ 2-chain L-56   ::     0.00 |   Ei-5∙ +  Pb-51⁻   +[ untried   + ?5000] => L-56                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  L-56⁻   (0.798)  => L-56⁻           
+ 2-chain L-56   ::     0.00 |  Ct-17⁻ +  Lu-39⁻   +[ untried   + ?5000] => L-56                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  L-56⁻   (0.798)  => L-56⁻           
+ 2-chain L-56   ::     0.00 |  Eb-22∙ +  Nd-34⁻   +[ untried   + ?5000] => L-56                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  L-56⁻   (0.798)  => L-56⁻           
+ 3-chain Aw-105 ::     0.00 |   K-30⁺ +   Z-97⁺   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
  3-chain Aw-108 ::     0.00 |   C-55⁺ +   D-75ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Ha-110 ::     0.00 |   C-55⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Ha-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-132ª (0.50?)  => P-22 + Ha-110
- 3-chain Da-93  ::     0.00 |   C-55⁺ +  Ai-60⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
- 3-chain Kn-109 ::     0.00 |   C-55⁺ +  Co-76ª   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
  3-chain Aw-108 ::     0.00 |   C-56⁺ +   D-74⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Ha-111 ::     0.00 |   C-56⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
- 3-chain Kn-110 ::     0.00 |   C-56⁺ +  Co-76ª   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 4-chain Da-91  ::     0.00 |   Dz-7⁺ + Aw-106ª   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
- 3-chain Se-85  ::     0.00 |   Dz-7⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
- 5-chain I-114  ::     0.00 |   Dz-7⁺ + Kn-107⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
- 3-chain Kn-110 ::     0.00 |   F-61⁺ +  Cj-71⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Ek-103 ::     0.00 |   F-61⁺ +  Gy-64⁺   +[ untried   + ?5000] => P-22 + Ek-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Eh-125ª (0.19?)  => P-22 + Ek-103
- 3-chain Ji-105 ::     0.00 |   F-61⁺ +  Kk-66⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
  3-chain Aw-108 ::     0.00 |   F-61⁺ +  Yv-69⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
  3-chain Aw-108 ::     0.00 |   F-62⁺ +  Yv-68⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 5-chain Gy-63  ::     0.00 |   Gj-9⁺ +   C-54⁺   +[ untried   + ?5000] => Gy-63               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Kk-63⁺  (0.597)  => Gy-63 
- 3-chain Se-85  ::     0.00 |   Gj-9⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
- 3-chain Ji-103 ::     0.00 |   K-30⁺ +   S-95⁺   +[ untried   + ?5000] => P-22 + Ji-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ys-125ª (0.136)  => P-22 + Ji-103
- 3-chain Ji-105 ::     0.00 |   K-30⁺ +   S-97⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
- 3-chain Se-85  ::     0.00 |   K-30⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
- 3-chain Aw-105 ::     0.00 |   K-30⁺ +   Z-97⁺   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
- 4-chain Kn-106 ::     0.00 |   K-30⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Kn-106       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-128ª (0.50?)  => P-22 + Kn-106
- 4-chain I-114  ::     0.00 |   K-30⁺ +  Se-84⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
  3-chain Aw-108 ::     0.00 |   K-30⁺ +  Z-100ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Kn-108 ::     0.00 |   K-30⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Kn-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-130ª (0.50?)  => P-22 + Kn-108
- 3-chain Kn-110 ::     0.00 |   K-30⁺ + Cv-102ª   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 4-chain Ha-108 ::     0.00 |   K-30⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Ha-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-130ª (0.50?)  => P-22 + Ha-108
- 4-chain Ha-109 ::     0.00 |   K-30⁺ + Vt-101⁺   +[ untried   + ?5000] => P-22 + Ha-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-131ª (0.50?)  => P-22 + Ha-109
  3-chain Aw-108 ::     0.00 |   K-31⁺ +   Z-99⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Kn-109 ::     0.00 |   K-31⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
- 4-chain Ha-109 ::     0.00 |   K-31⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Ha-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-131ª (0.50?)  => P-22 + Ha-109
  3-chain Aw-108 ::     0.00 |   K-32∙ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Kn-110 ::     0.00 |   K-32∙ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Dd-105 ::     0.00 |   K-35⁻ +   N-92⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Aw-108 ::     0.00 |   V-41⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Gy-64⁺ +  Kk-66⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Mt-32⁺ +   S-98⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Mt-33⁺ +   S-97⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Nd-30ª + Cv-100⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Pb-44⁺ +  Vl-86ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Pg-53⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Qe-54⁺ +  Co-76ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Ro-22⁺ + Ji-108ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Ro-23ª + Ji-107ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Uq-42⁺ +  Se-88⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Ux-50⁺ +  Lx-80⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-108 ::     0.00 |  Vi-10⁺ +   Z-98⁺   +[ untried   + ?5000] => Aw-108              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Kn-108⁺ (0.308)  => Aw-108 
+ 3-chain Aw-108 ::     0.00 |  Wy-47⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Aw-124 ::     0.00 |   T-18⁻ + Dd-106⁻   +[ untried   + ?5000] => Aw-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-124⁻ (0.497)  => Aw-124ª         
+ 3-chain Aw-124 ::     0.00 |  Ct-17⁻ + Ok-107⁻   +[ untried   + ?5000] => Aw-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-124⁻ (0.497)  => Aw-124ª         
+ 3-chain Aw-124 ::     0.00 |  Gd-44⁻ +  Yv-80⁻   +[ untried   + ?5000] => Aw-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-124⁻ (0.497)  => Aw-124ª         
+ 3-chain Aw-124 ::     0.00 |  Nd-34⁻ +   W-90⁻   +[ untried   + ?5000] => Aw-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-124⁻ (0.497)  => Aw-124ª         
+ 3-chain Aw-124 ::     0.00 |  Pb-51⁻ +   F-73⁻   +[ untried   + ?5000] => Aw-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-124⁻ (0.497)  => Aw-124ª         
+ 3-chain Aw-124 ::     0.00 |  Uq-50⁻ +  Gy-74⁻   +[ untried   + ?5000] => Aw-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-124⁻ (0.497)  => Aw-124ª         
+ 3-chain Aw-124 ::     0.00 |  Yu-31⁻ +  Lx-93⁻   +[ untried   + ?5000] => Aw-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-124⁻ (0.497)  => Aw-124ª         
+ 3-chain C-66   ::     0.00 |  Ct-17⁻ +  Uq-49⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
+ 3-chain C-66   ::     0.00 |  Vi-14⁻ +  Pb-52⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
+ 3-chain Co-75  ::     0.00 |  Vi-10⁺ +  Kk-65⁺   +[ untried   + ?5000] => Co-75               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  W-75⁺   (0.518)  => Co-75⁺          
+ 3-chain Co-86  ::     0.00 |  Ct-17⁻ +  Ai-69⁻   +[ untried   + ?5000] => Co-86               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  D-86⁻   (0.713)  => Co-86 
+ 3-chain Cv-114 ::     0.00 |   T-18⁻ +   U-96⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Ct-16⁻ +  Vl-98⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Ct-17⁻ +  Vl-97⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Eb-22∙ +  Lx-92∙   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Gd-45⁻ +  Ai-69⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Lu-40⁻ +  Gy-74⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Nd-34⁻ +  Cj-80⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Ro-26∙ +  Co-88⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Ro-27⁻ +  Co-87⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Vi-13∙ + Se-101∙   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Vi-14⁻ + Se-100∙   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
+ 3-chain Cv-114 ::     0.00 |  Xj-20⁻ +   N-94⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
  3-chain Cv-115 ::     0.00 |   K-35⁻ +  Yv-80⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
- 3-chain Kn-110 ::     0.00 |   L-49⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Cv-115 ::     0.00 |  Ct-17⁻ +  Vl-98⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
+ 3-chain Cv-115 ::     0.00 |  Ro-27⁻ +  Co-88⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
+ 3-chain Cv-115 ::     0.00 |  Vi-14⁻ + Se-101∙   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
+ 3-chain Cv-115 ::     0.00 |  Xj-21⁻ +   N-94⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
+ 3-chain Da-91  ::     0.00 |  Cl-25⁺ +  Dd-88⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
+ 3-chain Da-91  ::     0.00 |  Ro-22⁺ +  Ok-91⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
+ 3-chain Da-92  ::     0.00 |  Cl-25⁺ +  Dd-89⁺   +[ untried   + ?5000] => P-22 + Da-92        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-114ª  (0.263)  => P-22 + Da-92
+ 3-chain Da-92  ::     0.00 |  Eb-19⁺ +   S-95⁺   +[ untried   + ?5000] => P-22 + Da-92        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-114ª  (0.263)  => P-22 + Da-92
+ 3-chain Da-92  ::     0.00 |  Ro-22⁺ +  Ok-92⁺   +[ untried   + ?5000] => P-22 + Da-92        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-114ª  (0.263)  => P-22 + Da-92
+ 3-chain Da-92  ::     0.00 |  Xj-17⁺ +   Z-97⁺   +[ untried   + ?5000] => P-22 + Da-92        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-114ª  (0.263)  => P-22 + Da-92
+ 3-chain Da-93  ::     0.00 |   C-55⁺ +  Ai-60⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
+ 3-chain Da-93  ::     0.00 |   T-15⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
+ 3-chain Da-93  ::     0.00 |  Mt-32⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
+ 3-chain Da-93  ::     0.00 |  Qe-54⁺ +   F-61⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
+ 3-chain Da-93  ::     0.00 |  Xj-17⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
+ 3-chain Dd-105 ::     0.00 |   K-35⁻ +   N-92⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
  3-chain Dd-105 ::     0.00 |   L-53∙ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
  3-chain Dd-105 ::     0.00 |   L-54∙ +  Gy-73⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 5-chain Co-75  ::     0.00 |   P-21⁺ +   C-54⁺   +[ untried   + ?5000] => Co-75               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  W-75⁺   (0.518)  => Co-75 
- 4-chain Cv-115 ::     0.00 |   P-24⁻ +   W-91⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
- 3-chain Lx-77  ::     0.00 |   Sr-1∙ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Lx-77        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-99ª  (0.420)  => P-22 + Lx-77
- 5-chain Dx-36  ::     0.00 |   Sr-1∙ +  Dx-35⁺   +[ untried   + ?5000] => Dx-36               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> ?Gd-36⁺  (0.58?)  => Dx-36 
- 3-chain Pb-52  ::     0.00 |   Sr-3∙ +  Uq-49⁻   +[ untried   + ?5000] => Pb-52               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Pb-52⁻  (0.878)  => Pb-52 
- 4-chain Da-91  ::     0.00 |   T-15⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
- 5-chain I-113  ::     0.00 |   T-15⁺ +  Vt-98⁺   +[ untried   + ?5000] => I-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-113⁺ (0.24?)  => I-113 
- 5-chain I-114  ::     0.00 |   T-15⁺ +  Vt-99⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
- 3-chain Da-93  ::     0.00 |   T-15⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
- 4-chain I-115  ::     0.00 |   T-15⁺ + Vt-100⁺   +[ untried   + ?5000] => I-115               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Jb-115⁺ (0.187)  => I-115 
- 5-chain I-114  ::     0.00 |   T-16∙ +  Vt-98⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
- 4-chain Z-113  ::     0.00 |   T-17∙ +   N-96⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
- 3-chain N-95   ::     0.00 |   T-17∙ + Se-100∙   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain Cv-114 ::     0.00 |   T-18⁻ +   U-96⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 3-chain Pb-52  ::     0.00 |   T-18⁻ +  Nd-34⁻   +[ untried   + ?5000] => Pb-52               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Pb-52⁻  (0.878)  => Pb-52 
- 3-chain N-95   ::     0.00 |   T-18⁻ +  Se-99∙   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain U-97   ::     0.00 |   T-18⁻ + Nm-101⁺   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain Aw-108 ::     0.00 |   V-41⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain U-97   ::     0.00 |   V-45⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain N-95   ::     0.00 |   V-46⁻ +   F-71⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain U-97   ::     0.00 |   V-46⁻ +  Gy-73⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain U-98   ::     0.00 |   V-46⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + U-98         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-120ª (0.531)  => P-22 + U-98
- 3-chain Da-91  ::     0.00 |  Cl-25⁺ +  Dd-88⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
- 3-chain Da-92  ::     0.00 |  Cl-25⁺ +  Dd-89⁺   +[ untried   + ?5000] => P-22 + Da-92        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-114ª  (0.263)  => P-22 + Da-92
- 4-chain I-114  ::     0.00 |  Cl-25⁺ +  Ok-89⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
- 3-chain Ek-103 ::     0.00 |  Cl-25⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Ek-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Eh-125ª (0.19?)  => P-22 + Ek-103
- 3-chain Kn-110 ::     0.00 |  Cl-25⁺ + Ji-107ª   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 4-chain Ji-103 ::     0.00 |  Cl-25⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Ji-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ys-125ª (0.136)  => P-22 + Ji-103
  3-chain Dd-105 ::     0.00 |  Cl-27∙ + Se-100∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
  3-chain Dd-105 ::     0.00 |  Cl-28⁻ +  Se-99∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 4-chain C-66   ::     0.00 |  Cl-29⁻ +   K-37⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
- 4-chain Aw-125 ::     0.00 |  Cl-29⁻ +   N-96⁻   +[ untried   + ?5000] => Aw-125              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ji-125⁻ (0.57?)  => Aw-125 
- 3-chain U-97   ::     0.00 |  Cl-29⁻ +  Lx-90∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
  3-chain Dd-105 ::     0.00 |  Cl-29⁻ +  Se-98∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Nm-104 ::     0.00 |  Cl-29⁻ +  Vl-97⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
- 5-chain Yv-67  ::     0.00 |  Ct-13⁺ +   C-54⁺   +[ untried   + ?5000] => Yv-67               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cj-67⁺  (0.492)  => Yv-67 
- 5-chain I-113  ::     0.00 |  Ct-13⁺ + Ek-100⁺   +[ untried   + ?5000] => I-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-113⁺ (0.24?)  => I-113 
- 4-chain Da-91  ::     0.00 |  Ct-13⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
- 5-chain I-114  ::     0.00 |  Ct-14∙ + Ek-100⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
- 4-chain Cv-115 ::     0.00 |  Ct-15∙ + Vl-100⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
- 4-chain S-112  ::     0.00 |  Ct-16⁻ +   N-96⁻   +[ untried   + ?5000] => S-112               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Da-112⁻ (0.634)  => S-112 
- 3-chain Cv-114 ::     0.00 |  Ct-16⁻ +  Vl-98⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 4-chain Cv-115 ::     0.00 |  Ct-16⁻ +  Vl-99⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
- 3-chain N-95   ::     0.00 |  Ct-16⁻ + Nm-101⁺   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain Lx-94  ::     0.00 |  Ct-16⁻ + Se-100∙   +[ untried   + ?5000] => P-22 + Lx-94        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-116ª (0.587)  => P-22 + Lx-94
- 3-chain Z-113  ::     0.00 |  Ct-17⁻ +   U-96⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
- 4-chain Ok-108 ::     0.00 |  Ct-17⁻ +   W-91⁻   +[ untried   + ?5000] => Ok-108              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Dd-108⁻ (0.517)  => Ok-108 
- 3-chain Co-86  ::     0.00 |  Ct-17⁻ +  Ai-69⁻   +[ untried   + ?5000] => Co-86               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  D-86⁻   (0.713)  => Co-86 
- 3-chain C-66   ::     0.00 |  Ct-17⁻ +  Uq-49⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
- 3-chain Cv-114 ::     0.00 |  Ct-17⁻ +  Vl-97⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 3-chain Cv-115 ::     0.00 |  Ct-17⁻ +  Vl-98⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
  3-chain Dd-105 ::     0.00 |  Ct-17⁻ +  Z-110ª   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain U-97   ::     0.00 |  Ct-17⁻ + Dd-102ª   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain N-95   ::     0.00 |  Ct-17⁻ + Nm-100⁺   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain Lx-95  ::     0.00 |  Ct-17⁻ + Se-100∙   +[ untried   + ?5000] => P-22 + Lx-95        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-117ª (0.550)  => P-22 + Lx-95
  3-chain Dd-105 ::     0.00 |  Dx-42⁻ +  Co-85⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Lx-94  ::     0.00 |  Dx-42⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Lx-94        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-116ª (0.587)  => P-22 + Lx-94
- 3-chain N-95   ::     0.00 |  Dx-42⁻ +  Kk-75∙   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 5-chain C-66   ::     0.00 |  Dz-10⁻ +   L-56⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
- 6-chain Pg-62  ::     0.00 |  Dz-10⁻ +  Uq-52⁻   +[ untried   + ?5000] => Pg-62               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ux-62⁻  (0.57?)  => Pg-62 
- 5-chain D-73   ::     0.00 |  Eb-19⁺ +   C-54⁺   +[ untried   + ?5000] => D-73                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Co-73⁺  (0.492)  => D-73 
- 4-chain Da-91  ::     0.00 |  Eb-19⁺ +   S-94⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
- 3-chain Da-92  ::     0.00 |  Eb-19⁺ +   S-95⁺   +[ untried   + ?5000] => P-22 + Da-92        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-114ª  (0.263)  => P-22 + Da-92
- 4-chain I-114  ::     0.00 |  Eb-19⁺ +   Z-95⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
- 4-chain Z-113  ::     0.00 |  Eb-22∙ +   W-91⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
- 5-chain C-66   ::     0.00 |  Eb-22∙ +  Dx-44⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
- 3-chain Cv-114 ::     0.00 |  Eb-22∙ +  Lx-92∙   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 3-chain U-97   ::     0.00 |  Eb-22∙ +  Vl-97⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 6-chain Yv-79  ::     0.00 |  Eb-23⁻ +  Wy-56⁻   +[ untried   + ?5000] => Yv-79               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kk-79⁻  (0.77?)  => Yv-79 
- 4-chain Aw-105 ::     0.00 |  Gd-38⁺ +  Dd-89⁺   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
- 4-chain I-114  ::     0.00 |  Gd-38⁺ +  Lx-76⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
- 3-chain N-95   ::     0.00 |  Gd-43⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain N-95   ::     0.00 |  Gd-44⁻ +  Gy-73⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain U-97   ::     0.00 |  Gd-44⁻ +  Kk-75∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
  3-chain Dd-105 ::     0.00 |  Gd-45⁻ +   D-82⁺   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Lx-94  ::     0.00 |  Gd-45⁻ +   F-71⁻   +[ untried   + ?5000] => P-22 + Lx-94        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-116ª (0.587)  => P-22 + Lx-94
- 3-chain Cv-114 ::     0.00 |  Gd-45⁻ +  Ai-69⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 3-chain N-95   ::     0.00 |  Gd-45⁻ +  Gy-72⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain Dd-105 ::     0.00 |  Mt-37⁻ +  Lx-90∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Pb-51⁻ +  Yv-76∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Pg-58⁻ +  Ai-69⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Qe-62⁻ +  Ns-65⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Ro-26∙ + Nm-101⁺   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Ro-27⁻ + Nm-100⁺   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Uq-49⁻ +  Cj-78⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Ux-56⁻ +   F-71⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Ux-57⁻ +   F-70⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Wy-52∙ +  Kk-75∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Wy-53⁻ +  Kk-74∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Yu-30∙ +  Vl-97⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-105 ::     0.00 |  Yu-31⁻ +  Vl-96⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
+ 3-chain Dd-88  ::     0.00 |  Vi-10⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Dd-88        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ha-110ª (0.295)  => P-22 + Dd-88
+ 3-chain Ek-103 ::     0.00 |   F-61⁺ +  Gy-64⁺   +[ untried   + ?5000] => P-22 + Ek-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Eh-125ª (0.19?)  => P-22 + Ek-103
+ 3-chain Ek-103 ::     0.00 |  Cl-25⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Ek-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Eh-125ª (0.19?)  => P-22 + Ek-103
+ 3-chain Ek-103 ::     0.00 |  Uq-42⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Ek-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Eh-125ª (0.19?)  => P-22 + Ek-103
+ 3-chain Ek-103 ::     0.00 |  Yu-27⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Ek-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Eh-125ª (0.19?)  => P-22 + Ek-103
  3-chain Ek-119 ::     0.00 |  Gd-45⁻ +  Gy-74⁻   +[ untried   + ?5000] => Ek-119              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Vt-119⁻ (0.539)  => Ek-119 
- 3-chain U-97   ::     0.00 |  Gd-45⁻ +  Kk-74∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain U-98   ::     0.00 |  Gd-45⁻ +  Kk-75∙   +[ untried   + ?5000] => P-22 + U-98         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-120ª (0.531)  => P-22 + U-98
- 5-chain C-66   ::     0.00 |  Gj-11∙ +  Wy-55⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
- 4-chain Z-113  ::     0.00 |  Gj-11∙ + Se-102⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
- 3-chain Aw-108 ::     0.00 |  Gy-64⁺ +  Kk-66⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Ek-120 ::     0.00 |   V-47⁻ +   F-73⁻   +[ untried   + ?5000] => Ek-120              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Vt-120⁻ (0.501)  => Ek-120ª         
+ 3-chain Ek-120 ::     0.00 |  Lu-40⁻ +  Yv-80⁻   +[ untried   + ?5000] => Ek-120              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Vt-120⁻ (0.501)  => Ek-120ª         
+ 3-chain Ek-120 ::     0.00 |  Ro-27⁻ +  Lx-93⁻   +[ untried   + ?5000] => Ek-120              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Vt-120⁻ (0.501)  => Ek-120ª         
+ 3-chain Ek-120 ::     0.00 |  Vi-14⁻ + Dd-106⁻   +[ untried   + ?5000] => Ek-120              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Vt-120⁻ (0.501)  => Ek-120ª         
+ 3-chain Go-118 ::     0.00 |   K-30⁺ +  Dd-88⁺   +[ untried   + ?5000] => Go-118              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *X-118⁺  (0.16?)  => Go-118ª         
+ 3-chain Ha-108 ::     0.00 |  Uq-42⁺ +  Dd-88⁺   +[ untried   + ?5000] => P-22 + Ha-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-130ª (0.50?)  => Ha-108⁺ + P-22  
+ 3-chain Ha-110 ::     0.00 |   C-55⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Ha-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-132ª (0.50?)  => P-22 + Ha-110
+ 3-chain Ha-111 ::     0.00 |   C-56⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
+ 3-chain Ha-111 ::     0.00 |  Lu-35⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
+ 3-chain Ha-111 ::     0.00 |  Mt-33⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
+ 3-chain Ha-111 ::     0.00 |  Pb-44⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
+ 3-chain Ha-111 ::     0.00 |  Ux-50⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
+ 3-chain I-115  ::     0.00 |  Yu-27⁺ +  Dd-88⁺   +[ untried   + ?5000] => I-115               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Jb-115⁺ (0.187)  => I-115ª          
+ 3-chain Ji-103 ::     0.00 |   K-30⁺ +   S-95⁺   +[ untried   + ?5000] => P-22 + Ji-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ys-125ª (0.136)  => P-22 + Ji-103
+ 3-chain Ji-104 ::     0.00 |   F-61⁺ +  Kk-65⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |   K-30⁺ +   S-96⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |   K-31⁺ +   S-95⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |   L-49⁺ +  Lx-77⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |  Dx-37⁺ +  Dd-89⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |  Dx-38⁺ +  Dd-88⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |  Gd-39⁺ +  Nm-87⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |  Lu-35⁺ +  Ok-91⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |  Mt-32⁺ +  Da-94⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |  Nd-29⁺ +   Z-97⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |  Ro-22⁺ + Ek-104⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-104 ::     0.00 |  Uq-42⁺ +  Vl-84⁺   +[ untried   + ?5000] => P-22 + Ji-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-126ª (0.13?)  => Ji-104⁺ + P-22  
+ 3-chain Ji-105 ::     0.00 |   F-61⁺ +  Kk-66⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
+ 3-chain Ji-105 ::     0.00 |   K-30⁺ +   S-97⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
+ 3-chain Ji-105 ::     0.00 |  Nd-29⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
+ 3-chain Ji-105 ::     0.00 |  Pb-44⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
+ 3-chain Ji-105 ::     0.00 |  Ux-50⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
+ 3-chain Ji-105 ::     0.00 |  Yu-27⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
+ 3-chain Ji-123 ::     0.00 |  Ct-17⁻ + Dd-106⁻   +[ untried   + ?5000] => Ji-123              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-123⁻ (0.468)  => Ji-123ª         
+ 3-chain Ji-123 ::     0.00 |  Uq-50⁻ +   F-73⁻   +[ untried   + ?5000] => Ji-123              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-123⁻ (0.468)  => Ji-123ª         
+ 3-chain Kn-107 ::     0.00 |   V-41⁺ +  Dd-88⁺   +[ untried   + ?5000] => P-22 + Kn-107       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-129ª (0.50?)  => Kn-107⁺ + P-22  
+ 3-chain Kn-107 ::     0.00 |  Mt-32⁺ +   Z-97⁺   +[ untried   + ?5000] => P-22 + Kn-107       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-129ª (0.50?)  => Kn-107⁺ + P-22  
+ 3-chain Kn-107 ::     0.00 |  Pg-52⁺ +  Lx-77⁺   +[ untried   + ?5000] => P-22 + Kn-107       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-129ª (0.50?)  => Kn-107⁺ + P-22  
+ 3-chain Kn-107 ::     0.00 |  Uq-42⁺ +  Nm-87⁺   +[ untried   + ?5000] => P-22 + Kn-107       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-129ª (0.50?)  => Kn-107⁺ + P-22  
+ 3-chain Kn-108 ::     0.00 |   K-30⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Kn-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-130ª (0.50?)  => P-22 + Kn-108
+ 3-chain Kn-108 ::     0.00 |  Mt-32⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Kn-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-130ª (0.50?)  => P-22 + Kn-108
+ 3-chain Kn-109 ::     0.00 |   C-55⁺ +  Co-76ª   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
+ 3-chain Kn-109 ::     0.00 |   K-31⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
+ 3-chain Kn-109 ::     0.00 |  Mt-32⁺ +   Z-99⁺   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
+ 3-chain Kn-109 ::     0.00 |  Mt-33⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
+ 3-chain Kn-109 ::     0.00 |  Qe-54⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
+ 3-chain Kn-109 ::     0.00 |  Uq-42⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
+ 3-chain Kn-110 ::     0.00 |   C-56⁺ +  Co-76ª   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Kn-110 ::     0.00 |   F-61⁺ +  Cj-71⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Kn-110 ::     0.00 |   K-30⁺ + Cv-102ª   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Kn-110 ::     0.00 |   K-32∙ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Kn-110 ::     0.00 |   L-49⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Kn-110 ::     0.00 |  Cl-25⁺ + Ji-107ª   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
  3-chain Kn-110 ::     0.00 |  Gy-64⁺ +  Yv-68⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
  3-chain Kn-110 ::     0.00 |  Kk-66⁺ +  Kk-66⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
  3-chain Kn-110 ::     0.00 |  Lu-35⁺ +   S-97⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Ha-111 ::     0.00 |  Lu-35⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
- 3-chain Cv-114 ::     0.00 |  Lu-40⁻ +  Gy-74⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 3-chain Aw-108 ::     0.00 |  Mt-32⁺ +   S-98⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Da-93  ::     0.00 |  Mt-32⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
- 3-chain Kn-108 ::     0.00 |  Mt-32⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Kn-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-130ª (0.50?)  => P-22 + Kn-108
- 3-chain Kn-109 ::     0.00 |  Mt-32⁺ +   Z-99⁺   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
- 4-chain Ha-109 ::     0.00 |  Mt-32⁺ +  Cv-99ª   +[ untried   + ?5000] => P-22 + Ha-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-131ª (0.50?)  => P-22 + Ha-109
  3-chain Kn-110 ::     0.00 |  Mt-32⁺ +  Z-100ª   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Aw-108 ::     0.00 |  Mt-33⁺ +   S-97⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Kn-109 ::     0.00 |  Mt-33⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
  3-chain Kn-110 ::     0.00 |  Mt-33⁺ +   Z-99⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 4-chain Ha-109 ::     0.00 |  Mt-33⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Ha-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-131ª (0.50?)  => P-22 + Ha-109
- 3-chain Ha-111 ::     0.00 |  Mt-33⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
  3-chain Kn-110 ::     0.00 |  Mt-34⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Dd-105 ::     0.00 |  Mt-37⁻ +  Lx-90∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 4-chain Ji-103 ::     0.00 |  Nd-28⁺ +   Z-97⁺   +[ untried   + ?5000] => P-22 + Ji-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ys-125ª (0.136)  => P-22 + Ji-103
- 4-chain Aw-104 ::     0.00 |  Nd-28⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Aw-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-126ª (0.50?)  => P-22 + Aw-104
- 4-chain Aw-105 ::     0.00 |  Nd-28⁺ +  Cv-99ª   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
- 4-chain Kn-106 ::     0.00 |  Nd-28⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Kn-106       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-128ª (0.50?)  => P-22 + Kn-106
- 3-chain Ji-105 ::     0.00 |  Nd-29⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
- 4-chain Aw-105 ::     0.00 |  Nd-29⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
- 3-chain Aw-108 ::     0.00 |  Nd-30ª + Cv-100⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Z-113  ::     0.00 |  Nd-33⁻ +  Yv-80⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
- 3-chain Nm-104 ::     0.00 |  Nd-34⁻ +   N-92⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
- 4-chain Aw-125 ::     0.00 |  Nd-34⁻ +   W-91⁻   +[ untried   + ?5000] => Aw-125              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ji-125⁻ (0.57?)  => Aw-125 
- 3-chain Cv-114 ::     0.00 |  Nd-34⁻ +  Cj-80⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 3-chain U-97   ::     0.00 |  Nd-34⁻ +  Co-85⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
  3-chain Kn-110 ::     0.00 |  Ns-58⁺ +   D-74⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Ji-105 ::     0.00 |  Pb-44⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
- 3-chain Ha-111 ::     0.00 |  Pb-44⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
  3-chain Kn-110 ::     0.00 |  Pb-44⁺ +  Se-88⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Aw-108 ::     0.00 |  Pb-44⁺ +  Vl-86ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
+ 3-chain Kn-110 ::     0.00 |  Pg-52⁺ +  Lx-80⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Kn-110 ::     0.00 |  Qe-55⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Kn-110 ::     0.00 |  Uq-42⁺ +  Nm-90⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Kn-110 ::     0.00 |  Uq-43⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Kn-110 ::     0.00 |  Ux-50⁺ +   N-82⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
+ 3-chain Lx-77  ::     0.00 |   Sr-1∙ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Lx-77        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-99ª  (0.420)  => P-22 + Lx-77
+ 3-chain Lx-77  ::     0.00 |  Ro-22⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Lx-77        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-99ª  (0.420)  => P-22 + Lx-77
+ 3-chain Lx-77  ::     0.00 |  Vi-10⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Lx-77        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-99ª  (0.420)  => P-22 + Lx-77
+ 3-chain Lx-94  ::     0.00 |  Ct-16⁻ + Se-100∙   +[ untried   + ?5000] => P-22 + Lx-94        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-116ª (0.587)  => P-22 + Lx-94
+ 3-chain Lx-94  ::     0.00 |  Dx-42⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Lx-94        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-116ª (0.587)  => P-22 + Lx-94
+ 3-chain Lx-94  ::     0.00 |  Gd-45⁻ +   F-71⁻   +[ untried   + ?5000] => P-22 + Lx-94        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-116ª (0.587)  => P-22 + Lx-94
+ 3-chain Lx-95  ::     0.00 |  Ct-17⁻ + Se-100∙   +[ untried   + ?5000] => P-22 + Lx-95        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-117ª (0.550)  => P-22 + Lx-95
+ 3-chain N-95   ::     0.00 |   T-17∙ + Se-100∙   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |   T-18⁻ +  Se-99∙   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |   V-46⁻ +   F-71⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Ct-16⁻ + Nm-101⁺   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Ct-17⁻ + Nm-100⁺   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Dx-42⁻ +  Kk-75∙   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Gd-43⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Gd-44⁻ +  Gy-73⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Gd-45⁻ +  Gy-72⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Ro-27⁻ +  Lx-90∙   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Uq-48⁻ +  Ai-69⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Uq-49⁻ +  Ai-68⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Wy-53⁻ +   C-64⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain N-95   ::     0.00 |  Xj-20⁻ +  Vl-97⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
+ 3-chain Nm-104 ::     0.00 |  Cl-29⁻ +  Vl-97⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
+ 3-chain Nm-104 ::     0.00 |  Nd-34⁻ +   N-92⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
+ 3-chain Nm-104 ::     0.00 |  Pb-51⁻ +  Kk-75∙   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
+ 3-chain Nm-104 ::     0.00 |  Qe-62⁻ +   C-64⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
+ 3-chain Nm-104 ::     0.00 |  Ro-26∙ + Se-100∙   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
+ 3-chain Nm-104 ::     0.00 |  Ro-27⁻ +  Se-99∙   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
+ 3-chain Nm-104 ::     0.00 |  Ux-57⁻ +  Ai-69⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
+ 3-chain Nm-104 ::     0.00 |  Wy-52∙ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
+ 3-chain Nm-104 ::     0.00 |  Wy-53⁻ +  Gy-73⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
+ 3-chain Nm-105 ::     0.00 |  Ro-27⁻ + Se-100∙   +[ untried   + ?5000] => P-22 + Nm-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-127ª (0.58?)  => P-22 + Nm-105
+ 3-chain Nm-105 ::     0.00 |  Wy-53⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Nm-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-127ª (0.58?)  => P-22 + Nm-105
+ 3-chain Pb-52  ::     0.00 |   As-7∙ +  Gd-45⁻   +[ untried   + ?5000] => Pb-52               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Pb-52⁻  (0.878)  => Pb-52 
+ 3-chain Pb-52  ::     0.00 |   Sr-3∙ +  Uq-49⁻   +[ untried   + ?5000] => Pb-52               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Pb-52⁻  (0.878)  => Pb-52 
+ 3-chain Pb-52  ::     0.00 |   T-18⁻ +  Nd-34⁻   +[ untried   + ?5000] => Pb-52               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Pb-52⁻  (0.878)  => Pb-52 
+ 3-chain Se-104 ::     0.00 |   V-46⁻ +  Yv-80⁻   +[ untried   + ?5000] => P-22 + Se-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Aw-126ª (0.52?)  => Se-104⁻ + P-22  
+ 3-chain Se-104 ::     0.00 |  Ct-17⁻ + Da-109∙   +[ untried   + ?5000] => P-22 + Se-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Aw-126ª (0.52?)  => Se-104⁻ + P-22  
+ 3-chain Se-104 ::     0.00 |  Gd-45⁻ +  Cj-81⁻   +[ untried   + ?5000] => P-22 + Se-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Aw-126ª (0.52?)  => Se-104⁻ + P-22  
+ 3-chain Se-104 ::     0.00 |  Nd-33⁻ +  Lx-93⁻   +[ untried   + ?5000] => P-22 + Se-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Aw-126ª (0.52?)  => Se-104⁻ + P-22  
+ 3-chain Se-104 ::     0.00 |  Nd-34⁻ +  Lx-92∙   +[ untried   + ?5000] => P-22 + Se-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Aw-126ª (0.52?)  => Se-104⁻ + P-22  
+ 3-chain Se-104 ::     0.00 |  Pb-52⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Se-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Aw-126ª (0.52?)  => Se-104⁻ + P-22  
+ 3-chain Se-104 ::     0.00 |  Qe-63⁻ +  Qe-63⁻   +[ untried   + ?5000] => P-22 + Se-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Aw-126ª (0.52?)  => Se-104⁻ + P-22  
+ 3-chain Se-104 ::     0.00 |  Wy-53⁻ +   F-73⁻   +[ untried   + ?5000] => P-22 + Se-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Aw-126ª (0.52?)  => Se-104⁻ + P-22  
+ 3-chain Se-104 ::     0.00 |  Xj-20⁻ + Dd-106⁻   +[ untried   + ?5000] => P-22 + Se-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Aw-126ª (0.52?)  => Se-104⁻ + P-22  
+ 3-chain Se-85  ::     0.00 |   Dz-7⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
+ 3-chain Se-85  ::     0.00 |   Gj-9⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
+ 3-chain Se-85  ::     0.00 |   K-30⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
+ 3-chain Se-85  ::     0.00 |  Pg-52⁺ +   C-55⁺   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
+ 3-chain Se-85  ::     0.00 |  Vi-10⁺ +   S-97⁺   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
+ 3-chain U-97   ::     0.00 |   T-18⁻ + Nm-101⁺   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |   V-45⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |   V-46⁻ +  Gy-73⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |  Cl-29⁻ +  Lx-90∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |  Ct-17⁻ + Dd-102ª   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |  Eb-22∙ +  Vl-97⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |  Gd-44⁻ +  Kk-75∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |  Gd-45⁻ +  Kk-74∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |  Nd-34⁻ +  Co-85⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
  3-chain U-97   ::     0.00 |  Pb-50⁻ +  Ai-69⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
  3-chain U-97   ::     0.00 |  Pb-51⁻ +  Ai-68⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain U-98   ::     0.00 |  Pb-51⁻ +  Ai-69⁻   +[ untried   + ?5000] => P-22 + U-98         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-120ª (0.531)  => P-22 + U-98
- 3-chain Nm-104 ::     0.00 |  Pb-51⁻ +  Kk-75∙   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
- 3-chain Dd-105 ::     0.00 |  Pb-51⁻ +  Yv-76∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Se-85  ::     0.00 |  Pg-52⁺ +   C-55⁺   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
- 3-chain Kn-110 ::     0.00 |  Pg-52⁺ +  Lx-80⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Aw-108 ::     0.00 |  Pg-53⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Dd-105 ::     0.00 |  Pg-58⁻ +  Ai-69⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Da-93  ::     0.00 |  Qe-54⁺ +   F-61⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
- 3-chain Kn-109 ::     0.00 |  Qe-54⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
- 3-chain Aw-108 ::     0.00 |  Qe-54⁺ +  Co-76ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Kn-110 ::     0.00 |  Qe-55⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Nm-104 ::     0.00 |  Qe-62⁻ +   C-64⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
- 3-chain Dd-105 ::     0.00 |  Qe-62⁻ +  Ns-65⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Lx-77  ::     0.00 |  Ro-22⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Lx-77        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-99ª  (0.420)  => P-22 + Lx-77
- 3-chain Da-91  ::     0.00 |  Ro-22⁺ +  Ok-91⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
- 3-chain Da-92  ::     0.00 |  Ro-22⁺ +  Ok-92⁺   +[ untried   + ?5000] => P-22 + Da-92        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-114ª  (0.263)  => P-22 + Da-92
- 3-chain Aw-108 ::     0.00 |  Ro-22⁺ + Ji-108ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 4-chain Da-91  ::     0.00 |  Ro-23ª +  Ok-90⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
- 3-chain Aw-108 ::     0.00 |  Ro-23ª + Ji-107ª   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 4-chain Da-91  ::     0.00 |  Ro-24ª +  Ok-89⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
- 3-chain Cv-114 ::     0.00 |  Ro-26∙ +  Co-88⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 3-chain Dd-105 ::     0.00 |  Ro-26∙ + Nm-101⁺   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Nm-104 ::     0.00 |  Ro-26∙ + Se-100∙   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
  3-chain U-97   ::     0.00 |  Ro-27⁻ +   N-92⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 4-chain Ji-123 ::     0.00 |  Ro-27⁻ +   N-96⁻   +[ untried   + ?5000] => Ji-123              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-123⁻ (0.468)  => Ji-123 
- 3-chain Cv-114 ::     0.00 |  Ro-27⁻ +  Co-87⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 3-chain Cv-115 ::     0.00 |  Ro-27⁻ +  Co-88⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
- 3-chain N-95   ::     0.00 |  Ro-27⁻ +  Lx-90∙   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain Nm-104 ::     0.00 |  Ro-27⁻ +  Se-99∙   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
- 6-chain Yv-79  ::     0.00 |  Ro-27⁻ +  Uq-52⁻   +[ untried   + ?5000] => Yv-79               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kk-79⁻  (0.77?)  => Yv-79 
- 3-chain Dd-105 ::     0.00 |  Ro-27⁻ + Nm-100⁺   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Nm-105 ::     0.00 |  Ro-27⁻ + Se-100∙   +[ untried   + ?5000] => P-22 + Nm-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-127ª (0.58?)  => P-22 + Nm-105
- 5-chain Yv-79  ::     0.00 |  Ro-28⁻ +  Uq-51⁻   +[  1878.33 -   5000] => Yv-79               +   3121.67 | decay, nuclear               | OTOMRO       ? | intermediate isotope -> *Kk-79⁻  (0.77?)  => Yv-79 
- 3-chain Ek-103 ::     0.00 |  Uq-42⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Ek-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Eh-125ª (0.19?)  => P-22 + Ek-103
- 3-chain Kn-109 ::     0.00 |  Uq-42⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Kn-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-131ª (0.50?)  => P-22 + Kn-109
- 3-chain Kn-110 ::     0.00 |  Uq-42⁺ +  Nm-90⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Aw-108 ::     0.00 |  Uq-42⁺ +  Se-88⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Kn-110 ::     0.00 |  Uq-43⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
  3-chain U-97   ::     0.00 |  Uq-48⁻ +   F-71⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain N-95   ::     0.00 |  Uq-48⁻ +  Ai-69⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
  3-chain U-97   ::     0.00 |  Uq-49⁻ +   F-70⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain U-98   ::     0.00 |  Uq-49⁻ +   F-71⁻   +[ untried   + ?5000] => P-22 + U-98         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-120ª (0.531)  => P-22 + U-98
- 3-chain N-95   ::     0.00 |  Uq-49⁻ +  Ai-68⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain Dd-105 ::     0.00 |  Uq-49⁻ +  Cj-78⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Vl-101 ::     0.00 |  Uq-49⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Vl-101       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-123ª (0.527)  => P-22 + Vl-101
- 6-chain Dd-108 ::     0.00 |  Uq-52⁻ +  Wy-56⁻   +[ untried   + ?5000] => Dd-108              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> ?Nm-108⁻ (0.55?)  => Dd-108 
- 3-chain Kn-110 ::     0.00 |  Ux-50⁺ +   N-82⁺   +[ untried   + ?5000] => P-22 + Kn-110       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-132ª (0.50?)  => P-22 + Kn-110
- 3-chain Ha-111 ::     0.00 |  Ux-50⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Ha-111       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-133ª (0.50?)  => P-22 + Ha-111
- 3-chain Ji-105 ::     0.00 |  Ux-50⁺ +   W-77ª   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
- 3-chain Aw-108 ::     0.00 |  Ux-50⁺ +  Lx-80⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Dd-105 ::     0.00 |  Ux-56⁻ +   F-71⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Dd-105 ::     0.00 |  Ux-57⁻ +   F-70⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Nm-104 ::     0.00 |  Ux-57⁻ +  Ai-69⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
  3-chain U-97   ::     0.00 |  Ux-57⁻ +  Qe-62⁻   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |  Xj-19∙ + Se-100∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-97   ::     0.00 |  Xj-20⁻ +  Se-99∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
+ 3-chain U-98   ::     0.00 |   V-46⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + U-98         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-120ª (0.531)  => P-22 + U-98
+ 3-chain U-98   ::     0.00 |  Gd-45⁻ +  Kk-75∙   +[ untried   + ?5000] => P-22 + U-98         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-120ª (0.531)  => P-22 + U-98
+ 3-chain U-98   ::     0.00 |  Pb-51⁻ +  Ai-69⁻   +[ untried   + ?5000] => P-22 + U-98         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-120ª (0.531)  => P-22 + U-98
+ 3-chain U-98   ::     0.00 |  Uq-49⁻ +   F-71⁻   +[ untried   + ?5000] => P-22 + U-98         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-120ª (0.531)  => P-22 + U-98
+ 3-chain Vl-101 ::     0.00 |  Uq-49⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Vl-101       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ji-123ª (0.527)  => P-22 + Vl-101
+ 3-chain Vt-98  ::     0.00 |  Mt-32⁺ +  Dd-88⁺   +[ untried   + ?5000] => P-22 + Vt-98        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *64-120ª (0.50?)  => Vt-98⁺ + P-22   
+ 3-chain Vt-99  ::     0.00 |   K-30⁺ +  Ok-91⁺   +[ untried   + ?5000] => P-22 + Vt-99        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *64-121ª (0.50?)  => Vt-99⁺ + P-22   
+ 3-chain Vt-99  ::     0.00 |  Mt-32⁺ +  Dd-89⁺   +[ untried   + ?5000] => P-22 + Vt-99        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *64-121ª (0.50?)  => Vt-99⁺ + P-22   
+ 3-chain Vt-99  ::     0.00 |  Mt-33⁺ +  Dd-88⁺   +[ untried   + ?5000] => P-22 + Vt-99        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *64-121ª (0.50?)  => Vt-99⁺ + P-22   
+ 3-chain Vt-99  ::     0.00 |  Pb-44⁺ +  Lx-77⁺   +[ untried   + ?5000] => P-22 + Vt-99        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *64-121ª (0.50?)  => Vt-99⁺ + P-22   
+ 3-chain Z-113  ::     0.00 |  Ct-17⁻ +   U-96⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
+ 3-chain Z-113  ::     0.00 |  Nd-33⁻ +  Yv-80⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
+ 4-chain Aw-104 ::     0.00 |  Nd-28⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Aw-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-126ª (0.50?)  => P-22 + Aw-104
+ 4-chain Aw-105 ::     0.00 |  Gd-38⁺ +  Dd-89⁺   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
+ 4-chain Aw-105 ::     0.00 |  Nd-28⁺ +  Cv-99ª   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
+ 4-chain Aw-105 ::     0.00 |  Nd-29⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
+ 4-chain Aw-105 ::     0.00 |  Yu-27⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
+ 4-chain Aw-125 ::     0.00 |  Cl-29⁻ +   N-96⁻   +[ untried   + ?5000] => Aw-125              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ji-125⁻ (0.57?)  => Aw-125 
+ 4-chain Aw-125 ::     0.00 |  Nd-34⁻ +   W-91⁻   +[ untried   + ?5000] => Aw-125              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ji-125⁻ (0.57?)  => Aw-125 
+ 4-chain C-66   ::     0.00 |  Cl-29⁻ +   K-37⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
+ 4-chain C-66   ::     0.00 |  Xj-21⁻ +  Gd-45⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
+ 4-chain Co-86  ::     0.00 |  Vi-14⁻ +   F-72⁻   +[ untried   + ?5000] => Co-86               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  D-86⁻   (0.713)  => Co-86 
+ 4-chain Cv-115 ::     0.00 |   P-24⁻ +   W-91⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
+ 4-chain Cv-115 ::     0.00 |  Ct-15∙ + Vl-100⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
+ 4-chain Cv-115 ::     0.00 |  Ct-16⁻ +  Vl-99⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
+ 4-chain Cv-115 ::     0.00 |  Vi-13∙ + Se-102⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
+ 4-chain Cv-115 ::     0.00 |  Xj-19∙ +   N-96⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
+ 4-chain Da-113 ::     0.00 |  Ct-17⁻ +  Lx-96⁻   +[ untried   + ?5000] => Da-113              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ok-113⁻ (0.55?)  => Da-113⁻         
+ 4-chain Da-91  ::     0.00 |   Dz-7⁺ + Aw-106ª   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
+ 4-chain Da-91  ::     0.00 |   T-15⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
+ 4-chain Da-91  ::     0.00 |  Ct-13⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
+ 4-chain Da-91  ::     0.00 |  Eb-19⁺ +   S-94⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
+ 4-chain Da-91  ::     0.00 |  Ro-23ª +  Ok-90⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
+ 4-chain Da-91  ::     0.00 |  Ro-24ª +  Ok-89⁺   +[ untried   + ?5000] => P-22 + Da-91        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-113ª  (0.200)  => P-22 + Da-91
+ 4-chain Dd-107 ::     0.00 |  Gj-11∙ +  Lx-96⁻   +[ untried   + ?5000] => Dd-107              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Nm-107⁻ (0.55?)  => Dd-107⁻         
+ 4-chain Ek-121 ::     0.00 |  Xj-21⁻ + Vl-100⁻   +[ untried   + ?5000] => Ek-121              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Vt-121⁻ (0.468)  => Ek-121 
+ 4-chain Ek-123 ::     0.00 |  Ro-27⁻ +  Lx-96⁻   +[ untried   + ?5000] => Ek-123              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-123⁻ (0.50?)  => Ek-123⁻         
+ 4-chain Ek-123 ::     0.00 |  Ro-28⁻ +  Lx-95⁻   +[ untried   + ?5000] => Ek-123              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-123⁻ (0.50?)  => Ek-123⁻         
+ 4-chain Gy-63  ::     0.00 |  Vi-10⁺ +  Qe-53⁺   +[ untried   + ?5000] => Gy-63               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Kk-63⁺  (0.597)  => Gy-63 
+ 4-chain Ha-108 ::     0.00 |   K-30⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Ha-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-130ª (0.50?)  => P-22 + Ha-108
+ 4-chain Ha-109 ::     0.00 |   K-30⁺ + Vt-101⁺   +[ untried   + ?5000] => P-22 + Ha-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-131ª (0.50?)  => P-22 + Ha-109
+ 4-chain Ha-109 ::     0.00 |   K-31⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Ha-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-131ª (0.50?)  => P-22 + Ha-109
+ 4-chain Ha-109 ::     0.00 |  Mt-32⁺ +  Cv-99ª   +[ untried   + ?5000] => P-22 + Ha-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-131ª (0.50?)  => P-22 + Ha-109
+ 4-chain Ha-109 ::     0.00 |  Mt-33⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Ha-109       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *69-131ª (0.50?)  => P-22 + Ha-109
+ 4-chain I-113  ::     0.00 |  Ro-22⁺ +  Da-91⁺   +[ untried   + ?5000] => I-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-113⁺ (0.24?)  => I-113ª          
+ 4-chain I-113  ::     0.00 |  Vi-10⁺ + Ji-103⁺   +[ untried   + ?5000] => I-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-113⁺ (0.24?)  => I-113ª          
+ 4-chain I-114  ::     0.00 |   K-30⁺ +  Se-84⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 4-chain I-114  ::     0.00 |  Cl-25⁺ +  Ok-89⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 4-chain I-114  ::     0.00 |  Eb-19⁺ +   Z-95⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 4-chain I-114  ::     0.00 |  Gd-38⁺ +  Lx-76⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 4-chain I-114  ::     0.00 |  Xj-17⁺ +  Cv-97⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 4-chain I-115  ::     0.00 |   T-15⁺ + Vt-100⁺   +[ untried   + ?5000] => I-115               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Jb-115⁺ (0.187)  => I-115 
+ 4-chain Jb-115 ::     0.00 |  Vi-10⁺ + Aw-105⁺   +[ untried   + ?5000] => Jb-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Go-115⁺ (0.17?)  => Jb-115⁺         
+ 4-chain Ji-103 ::     0.00 |  Cl-25⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Ji-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ys-125ª (0.136)  => P-22 + Ji-103
+ 4-chain Ji-103 ::     0.00 |  Nd-28⁺ +   Z-97⁺   +[ untried   + ?5000] => P-22 + Ji-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ys-125ª (0.136)  => P-22 + Ji-103
+ 4-chain Ji-103 ::     0.00 |  Yu-27⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Ji-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ys-125ª (0.136)  => P-22 + Ji-103
+ 4-chain Ji-123 ::     0.00 |  Ro-27⁻ +   N-96⁻   +[ untried   + ?5000] => Ji-123              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-123⁻ (0.468)  => Ji-123 
+ 4-chain Ji-123 ::     0.00 |  Xj-21⁻ + Se-102⁻   +[ untried   + ?5000] => Ji-123              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-123⁻ (0.468)  => Ji-123 
+ 4-chain Ji-124 ::     0.00 |  Cl-28⁻ +  Lx-96⁻   +[ untried   + ?5000] => Ji-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ek-124⁻ (0.50?)  => Ji-124⁻         
+ 4-chain Ji-124 ::     0.00 |  Cl-29⁻ +  Lx-95⁻   +[ untried   + ?5000] => Ji-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ek-124⁻ (0.50?)  => Ji-124⁻         
+ 4-chain Ji-124 ::     0.00 |  Ro-28⁻ +   N-96⁻   +[ untried   + ?5000] => Ji-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ek-124⁻ (0.50?)  => Ji-124⁻         
+ 4-chain Ji-124 ::     0.00 |  Xj-21⁻ + Se-103⁻   +[ untried   + ?5000] => Ji-124              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ek-124⁻ (0.50?)  => Ji-124⁻         
+ 4-chain Kn-106 ::     0.00 |   K-30⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Kn-106       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-128ª (0.50?)  => P-22 + Kn-106
+ 4-chain Kn-106 ::     0.00 |  Nd-28⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Kn-106       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *68-128ª (0.50?)  => P-22 + Kn-106
+ 4-chain Ns-57  ::     0.00 |  Vi-10⁺ +   L-47⁺   +[ untried   + ?5000] => Ns-57               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ai-57⁺  (0.466)  => Ns-57⁺          
+ 4-chain Ns-57  ::     0.00 |  Vi-10⁺ +   L-47⁺   +[ untried   + ?5000] => Ns-57               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ai-57⁺  (0.466)  => Ns-57⁺          
+ 4-chain Ok-108 ::     0.00 |  Ct-17⁻ +   W-91⁻   +[ untried   + ?5000] => Ok-108              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Dd-108⁻ (0.517)  => Ok-108 
+ 4-chain Ok-109 ::     0.00 |  Vi-13∙ +  Lx-96⁻   +[ untried   + ?5000] => Ok-109              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Dd-109⁻ (0.56?)  => Ok-109⁻         
+ 4-chain Ok-109 ::     0.00 |  Vi-14⁻ +  Lx-95⁻   +[ untried   + ?5000] => Ok-109              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Dd-109⁻ (0.56?)  => Ok-109⁻         
+ 4-chain Ok-110 ::     0.00 |  Vi-14⁻ +  Lx-96⁻   +[ untried   + ?5000] => Ok-110              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Dd-110⁻ (0.56?)  => Ok-110⁻         
+ 4-chain S-112  ::     0.00 |  Ct-16⁻ +   N-96⁻   +[ untried   + ?5000] => S-112               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Da-112⁻ (0.634)  => S-112 
+ 4-chain S-112  ::     0.00 |  Xj-21⁻ +   W-91⁻   +[ untried   + ?5000] => S-112               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Da-112⁻ (0.634)  => S-112 
+ 4-chain S-114  ::     0.00 |   T-18⁻ +  Lx-96⁻   +[ untried   + ?5000] => S-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Da-114⁻ (0.59?)  => S-114⁻          
+ 4-chain U-99   ::     0.00 |   Sr-3∙ +  Lx-96⁻   +[ untried   + ?5000] => U-99                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *N-99⁻   (0.63?)  => U-99⁻           
+ 4-chain Vt-121 ::     0.00 |   P-25⁻ +  Lx-96⁻   +[ untried   + ?5000] => Vt-121              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Cv-121⁻ (0.58?)  => Vt-121⁻         
+ 4-chain Ys-125 ::     0.00 |   K-30⁺ +   Z-95⁺   +[ untried   + ?5000] => Ys-125              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-125⁺ (0.50?)  => Ys-125ª         
+ 4-chain Ys-125 ::     0.00 |  Nd-28⁺ +  Cv-97⁺   +[ untried   + ?5000] => Ys-125              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-125⁺ (0.50?)  => Ys-125ª         
+ 4-chain Ys-125 ::     0.00 |  Ro-22⁺ + Ji-103⁺   +[ untried   + ?5000] => Ys-125              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-125⁺ (0.50?)  => Ys-125ª         
+ 4-chain Z-113  ::     0.00 |   T-17∙ +   N-96⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
+ 4-chain Z-113  ::     0.00 |  Eb-22∙ +   W-91⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
+ 4-chain Z-113  ::     0.00 |  Gj-11∙ + Se-102⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
+ 4-chain Z-113  ::     0.00 |  Vi-13∙ + Vl-100⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
+ 4-chain Z-113  ::     0.00 |  Vi-14⁻ +  Vl-99⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
+ 4-chain Z-113  ::     0.00 |  Xj-21⁻ +  Lx-92∙   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
+ 4-chain Z-115  ::     0.00 |  Ct-17⁻ +   U-98⁻   +[ untried   + ?5000] => Z-115               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-115⁻  (0.514)  => Z-115⁻          
+ 4-chain Z-115  ::     0.00 |  Vi-14⁻ + Vl-101⁻   +[ untried   + ?5000] => Z-115               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-115⁻  (0.514)  => Z-115⁻          
+ 4-chain Z-115  ::     0.00 |  Xj-19∙ +  Lx-96⁻   +[ untried   + ?5000] => Z-115               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-115⁻  (0.514)  => Z-115⁻          
+ 4-chain Z-115  ::     0.00 |  Xj-20⁻ +  Lx-95⁻   +[ untried   + ?5000] => Z-115               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-115⁻  (0.514)  => Z-115⁻          
+ 4-chain Z-115  ::     0.00 |  Xj-21⁻ +  Lx-94⁻   +[ untried   + ?5000] => Z-115               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-115⁻  (0.514)  => Z-115⁻          
+ 4-chain Z-116  ::     0.00 |  Xj-20⁻ +  Lx-96⁻   +[ untried   + ?5000] => Z-116               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *S-116⁻  (0.56?)  => Z-116⁻          
+ 4-chain Z-116  ::     0.00 |  Xj-21⁻ +  Lx-95⁻   +[ untried   + ?5000] => Z-116               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *S-116⁻  (0.56?)  => Z-116⁻          
+ 4-chain Z-117  ::     0.00 |  Xj-21⁻ +  Lx-96⁻   +[ untried   + ?5000] => Z-117               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *S-117⁻  (0.56?)  => Z-117⁻          
+ 5-chain Ax-110 ::     0.00 |  Vi-10⁺ + Ek-100⁺   +[ untried   + ?5000] => Ax-110              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *I-110⁺  (0.20?)  => Ax-110 
+ 5-chain C-66   ::     0.00 |  Dz-10⁻ +   L-56⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
+ 5-chain C-66   ::     0.00 |  Eb-22∙ +  Dx-44⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
+ 5-chain C-66   ::     0.00 |  Gj-11∙ +  Wy-55⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
+ 5-chain C-66   ::     0.00 |  Xj-20⁻ +  Gd-46⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
+ 5-chain Co-74  ::     0.00 |  Dx-35⁺ +   V-39⁺   +[ untried   + ?5000] => Co-74               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *W-74⁺   (0.61?)  => Co-74⁺          
+ 5-chain Co-74  ::     0.00 |  Ro-22⁺ +  Qe-52⁺   +[ untried   + ?5000] => Co-74               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *W-74⁺   (0.61?)  => Co-74⁺          
+ 5-chain Co-75  ::     0.00 |   P-21⁺ +   C-54⁺   +[ untried   + ?5000] => Co-75               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  W-75⁺   (0.518)  => Co-75 
+ 5-chain D-72   ::     0.00 |  Ro-22⁺ +  Pg-50⁺   +[ untried   + ?5000] => D-72                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Co-72⁺  (0.49?)  => D-72⁺           
+ 5-chain D-73   ::     0.00 |  Eb-19⁺ +   C-54⁺   +[ untried   + ?5000] => D-73                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Co-73⁺  (0.492)  => D-73 
+ 5-chain Dx-36  ::     0.00 |   Sr-1∙ +  Dx-35⁺   +[ untried   + ?5000] => Dx-36               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> ?Gd-36⁺  (0.58?)  => Dx-36 
+ 5-chain Gy-62  ::     0.00 |  Vi-10⁺ +  Qe-52⁺   +[ untried   + ?5000] => Gy-62               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kk-62⁺  (0.59?)  => Gy-62⁺          
+ 5-chain Gy-63  ::     0.00 |   Gj-9⁺ +   C-54⁺   +[ untried   + ?5000] => Gy-63               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Kk-63⁺  (0.597)  => Gy-63 
+ 5-chain I-113  ::     0.00 |   T-15⁺ +  Vt-98⁺   +[ untried   + ?5000] => I-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-113⁺ (0.24?)  => I-113 
+ 5-chain I-113  ::     0.00 |  Ct-13⁺ + Ek-100⁺   +[ untried   + ?5000] => I-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-113⁺ (0.24?)  => I-113 
+ 5-chain I-114  ::     0.00 |   Dz-7⁺ + Kn-107⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 5-chain I-114  ::     0.00 |   T-15⁺ +  Vt-99⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 5-chain I-114  ::     0.00 |   T-16∙ +  Vt-98⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 5-chain I-114  ::     0.00 |  Ct-14∙ + Ek-100⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
+ 5-chain I-114  ::     0.00 |  Vi-10⁺ + Ji-104⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
  5-chain Kk-64  ::     0.00 |  Vi-10⁺ +   C-54⁺   +[ untried   + ?5000] => Kk-64               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> ?Yv-64⁺  (0.58?)  => Kk-64 
- 3-chain Se-85  ::     0.00 |  Vi-10⁺ +   S-97⁺   +[ untried   + ?5000] => P-22 + Se-85        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Aw-107ª (0.384)  => P-22 + Se-85
- 3-chain Aw-108 ::     0.00 |  Vi-10⁺ +   Z-98⁺   +[ untried   + ?5000] => Aw-108              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Kn-108⁺ (0.308)  => Aw-108 
+ 5-chain Yv-67  ::     0.00 |  Ct-13⁺ +   C-54⁺   +[ untried   + ?5000] => Yv-67               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cj-67⁺  (0.492)  => Yv-67 
+ 5-chain Yv-79  ::     0.00 |  Ro-28⁻ +  Uq-51⁻   +[  1878.33 -   5000] => Yv-79               +   3121.67 | decay, nuclear               | OTOMRO  785806*| intermediate isotope -> *Kk-79⁻  (0.77?)  => Yv-79 
+ 6-chain Dd-108 ::     0.00 |  Uq-52⁻ +  Wy-56⁻   +[ untried   + ?5000] => Dd-108              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> ?Nm-108⁻ (0.55?)  => Dd-108 
+ 6-chain Pg-62  ::     0.00 |  Dz-10⁻ +  Uq-52⁻   +[ untried   + ?5000] => Pg-62               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ux-62⁻  (0.57?)  => Pg-62 
+ 6-chain Yv-79  ::     0.00 |  Eb-23⁻ +  Wy-56⁻   +[ untried   + ?5000] => Yv-79               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kk-79⁻  (0.77?)  => Yv-79 
+ 6-chain Yv-79  ::     0.00 |  Ro-27⁻ +  Uq-52⁻   +[ untried   + ?5000] => Yv-79               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kk-79⁻  (0.77?)  => Yv-79 
  7-chain Cj-67  ::     0.00 |  Vi-10⁺ +  Ai-57⁺   +[ untried   + ?5000] => Cj-67               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Iu-67⁺  (0.70?)  => Cj-67 
  7-chain Co-73  ::     0.00 |  Vi-10⁺ +  Kk-63⁺   +[ untried   + ?5000] => Co-73               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *W-73⁺   (0.61?)  => Co-73 
- 3-chain Lx-77  ::     0.00 |  Vi-10⁺ +  Nm-89⁺   +[ untried   + ?5000] => P-22 + Lx-77        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Cv-99ª  (0.420)  => P-22 + Lx-77
- 4-chain Gy-63  ::     0.00 |  Vi-10⁺ +  Qe-53⁺   +[ untried   + ?5000] => Gy-63               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Kk-63⁺  (0.597)  => Gy-63 
- 3-chain Dd-88  ::     0.00 |  Vi-10⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Dd-88        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ha-110ª (0.295)  => P-22 + Dd-88
- 5-chain Ax-110 ::     0.00 |  Vi-10⁺ + Ek-100⁺   +[ untried   + ?5000] => Ax-110              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *I-110⁺  (0.20?)  => Ax-110 
- 5-chain I-114  ::     0.00 |  Vi-10⁺ + Ji-104⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
- 3-chain Cv-114 ::     0.00 |  Vi-13∙ + Se-101∙   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 4-chain Cv-115 ::     0.00 |  Vi-13∙ + Se-102⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
- 4-chain Z-113  ::     0.00 |  Vi-13∙ + Vl-100⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
- 4-chain Co-86  ::     0.00 |  Vi-14⁻ +   F-72⁻   +[ untried   + ?5000] => Co-86               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  D-86⁻   (0.713)  => Co-86 
- 3-chain C-66   ::     0.00 |  Vi-14⁻ +  Pb-52⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
- 4-chain Z-113  ::     0.00 |  Vi-14⁻ +  Vl-99⁻   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
- 3-chain Cv-114 ::     0.00 |  Vi-14⁻ + Se-100∙   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 3-chain Cv-115 ::     0.00 |  Vi-14⁻ + Se-101∙   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
- 3-chain Aw-108 ::     0.00 |  Wy-47⁺ +   U-83⁺   +[ untried   + ?5000] => P-22 + Aw-108       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-130ª (0.50?)  => P-22 + Aw-108
- 3-chain Nm-104 ::     0.00 |  Wy-52∙ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
- 3-chain Dd-105 ::     0.00 |  Wy-52∙ +  Kk-75∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain N-95   ::     0.00 |  Wy-53⁻ +   C-64⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain Nm-104 ::     0.00 |  Wy-53⁻ +  Gy-73⁻   +[ untried   + ?5000] => P-22 + Nm-104       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-126ª (0.58?)  => P-22 + Nm-104
- 3-chain Nm-105 ::     0.00 |  Wy-53⁻ +  Gy-74⁻   +[ untried   + ?5000] => P-22 + Nm-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Kn-127ª (0.58?)  => P-22 + Nm-105
- 3-chain Dd-105 ::     0.00 |  Wy-53⁻ +  Kk-74∙   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Da-92  ::     0.00 |  Xj-17⁺ +   Z-97⁺   +[ untried   + ?5000] => P-22 + Da-92        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-114ª  (0.263)  => P-22 + Da-92
- 3-chain Da-93  ::     0.00 |  Xj-17⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Da-93        +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  I-115ª  (0.312)  => P-22 + Da-93
- 4-chain I-114  ::     0.00 |  Xj-17⁺ +  Cv-97⁺   +[ untried   + ?5000] => I-114               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Jb-114⁺ (0.24?)  => I-114 
- 4-chain Cv-115 ::     0.00 |  Xj-19∙ +   N-96⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
- 3-chain U-97   ::     0.00 |  Xj-19∙ + Se-100∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain Cv-114 ::     0.00 |  Xj-20⁻ +   N-94⁻   +[ untried   + ?5000] => Cv-114              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-114⁻  (0.596)  => Cv-114 
- 5-chain C-66   ::     0.00 |  Xj-20⁻ +  Gd-46⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
- 3-chain U-97   ::     0.00 |  Xj-20⁻ +  Se-99∙   +[ untried   + ?5000] => P-22 + U-97         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-119ª (0.586)  => P-22 + U-97
- 3-chain N-95   ::     0.00 |  Xj-20⁻ +  Vl-97⁻   +[ untried   + ?5000] => P-22 + N-95         +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Vt-117ª (0.67?)  => P-22 + N-95
- 3-chain Cv-115 ::     0.00 |  Xj-21⁻ +   N-94⁻   +[ untried   + ?5000] => Cv-115              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Z-115⁻  (0.566)  => Cv-115 
- 4-chain S-112  ::     0.00 |  Xj-21⁻ +   W-91⁻   +[ untried   + ?5000] => S-112               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Da-112⁻ (0.634)  => S-112 
- 4-chain C-66   ::     0.00 |  Xj-21⁻ +  Gd-45⁻   +[ untried   + ?5000] => C-66                +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  C-66⁻   (0.825)  => C-66 
- 4-chain Z-113  ::     0.00 |  Xj-21⁻ +  Lx-92∙   +[ untried   + ?5000] => Z-113               +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  S-113⁻  (0.595)  => Z-113 
- 4-chain Ji-123 ::     0.00 |  Xj-21⁻ + Se-102⁻   +[ untried   + ?5000] => Ji-123              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ek-123⁻ (0.468)  => Ji-123 
- 4-chain Ek-121 ::     0.00 |  Xj-21⁻ + Vl-100⁻   +[ untried   + ?5000] => Ek-121              +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Vt-121⁻ (0.468)  => Ek-121 
- 3-chain Ek-103 ::     0.00 |  Yu-27⁺ +   Z-98⁺   +[ untried   + ?5000] => P-22 + Ek-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Eh-125ª (0.19?)  => P-22 + Ek-103
- 4-chain Ji-103 ::     0.00 |  Yu-27⁺ +  Cv-98ª   +[ untried   + ?5000] => P-22 + Ji-103       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope ->  Ys-125ª (0.136)  => P-22 + Ji-103
- 3-chain Ji-105 ::     0.00 |  Yu-27⁺ + Cv-100⁺   +[ untried   + ?5000] => P-22 + Ji-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ys-127ª (0.13?)  => P-22 + Ji-105
- 4-chain Aw-105 ::     0.00 |  Yu-27⁺ + Vt-100⁺   +[ untried   + ?5000] => P-22 + Aw-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *67-127ª (0.50?)  => P-22 + Aw-105
- 3-chain Dd-105 ::     0.00 |  Yu-30∙ +  Vl-97⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
- 3-chain Dd-105 ::     0.00 |  Yu-31⁻ +  Vl-96⁻   +[ untried   + ?5000] => P-22 + Dd-105       +      ?.?? | ?                            | OTOMRO       ? | intermediate isotope -> *Ha-127ª (0.55?)  => P-22 + Dd-105
-
- +------------------+
- | Chain color key  |
- +------------------+
- | ⁰ 0-chain As-5   |
- | ¹ 1-chain Ai-61  |
- | ² 2-chain Ai-60  |
- | ³ 3-chain Aw-108 |
- | ⁴ 4-chain Dz-10  |
- | ⁵ 5-chain Ai-58  |
- | ⁶ 6-chain Yv-66  |
- | ⁷ 7-chain Co-73  |
- | ⁸ 8-chain Lu-42  |
- | ⁹ 9-chain Mt-40  |
- |  10-chain        |
- |  11-chain        |
- +------------------+
