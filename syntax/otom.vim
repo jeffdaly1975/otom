@@ -19876,7 +19876,7 @@ syn match chain5  /\<Yv-79\>/
 syn match chain6  /\<Ai-57\>/
 syn match chain6  /\<Ai-71\>/
 syn match chain6  /\<C-67\>/
-syn match chain6  /\<Cj-68\>/
+syn match chain5  /\<Cj-68\>/
 syn match chain6  /\<Cj-82\>/
 syn match chain6  /\<Cl-24\>/
 syn match chain6  /\<Co-89\>/
