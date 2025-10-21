@@ -19793,7 +19793,7 @@ syn match chain4  /\<Ji-104\>/
 syn match chain4  /\<Ji-123\>/
 syn match chain4  /\<Kn-106\>/
 syn match chain4  /\<Kn-107\>/
-syn match chain4  /\<Lx-96\>/
+syn match chain3  /\<Lx-96\>/
 syn match chain4  /\<N-80\>/
 syn match chain4  /\<Nm-86\>/
 syn match chain4  /\<Ok-108\>/
@@ -19834,7 +19834,7 @@ syn match chain5  /\<D-73\>/
 syn match chain5  /\<Da-113\>/
 syn match chain5  /\<Dd-107\>/
 syn match chain5  /\<Dx-36\>/
-syn match chain5  /\<Eh-123\>/
+syn match chain4  /\<Eh-123\>/
 syn match chain5  /\<Ek-123\>/
 syn match chain5  /\<F-60\>/
 syn match chain5  /\<Gj-12\>/
@@ -19891,7 +19891,7 @@ syn match chain6  /\<N-79\>/
 syn match chain6  /\<Ns-56\>/
 syn match chain6  /\<Ns-57\>/
 syn match chain6  /\<Ns-69\>/
-syn match chain6  /\<Pg-50\>/
+syn match chain4  /\<Pg-50\>/
 syn match chain6  /\<Pg-62\>/
 syn match chain6  /\<Qe-64\>/
 syn match chain6  /\<T-14\>/
