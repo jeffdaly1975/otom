@@ -2037,7 +2037,7 @@ print                 "syn match chain6  /\\<N-79\\>/\n";
 print                 "syn match chain6  /\\<Ns-56\\>/\n";
 print                 "syn match chain6  /\\<Ns-69\\>/\n";
 print                 "syn match chain6  /\\<Pg-62\\>/\n";
-print                 "syn match chain6  /\\<Qe-64\\>/\n";
+print                 "syn match chain5  /\\<Qe-64\\>/\n";
 print                 "syn match chain6  /\\<T-14\\>/\n";
 print                 "syn match chain6  /\\<Ux-61\\>/\n";
 print                 "syn match chain6  /\\<V-49\\>/\n";

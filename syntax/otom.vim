@@ -19894,7 +19894,7 @@ syn match chain6  /\<N-79\>/
 syn match chain6  /\<Ns-56\>/
 syn match chain6  /\<Ns-69\>/
 syn match chain6  /\<Pg-62\>/
-syn match chain6  /\<Qe-64\>/
+syn match chain5  /\<Qe-64\>/
 syn match chain6  /\<T-14\>/
 syn match chain6  /\<Ux-61\>/
 syn match chain6  /\<V-49\>/
