@@ -19868,7 +19868,7 @@ syn match chain5  /\<Pg-61\>/
 syn match chain5  /\<S-115\>/
 syn match chain5  /\<Uq-52\>/
 syn match chain5  /\<Ux-60\>/
-syn match chain5  /\<Wy-56\>/
+syn match chain4  /\<Wy-56\>/
 syn match chain5  /\<Yu-26\>/
 syn match chain5  /\<Yu-32\>/
 syn match chain5  /\<Yv-67\>/
@@ -19885,7 +19885,7 @@ syn match chain6  /\<Dd-108\>/
 syn match chain6  /\<F-59\>/
 syn match chain6  /\<Gd-37\>/
 syn match chain6  /\<Gy-75\>/
-syn match chain6  /\<Iu-84\>/
+syn match chain5  /\<Iu-84\>/
 syn match chain6  /\<K-29\>/
 syn match chain6  /\<Kk-63\>/
 syn match chain6  /\<Kk-77\>/
