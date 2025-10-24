@@ -20124,10 +20124,10 @@ syn match chain4  /\<Da-112\>/
 syn match chain4  /\<Da-113\>/
 syn match chain4  /\<Da-90\>/
 syn match chain4  /\<Dd-107\>/
-syn match chain4  /\<Dx-35\>/
+syn match chain3  /\<Dx-35\>/
 syn match chain4  /\<Dx-44\>/
 syn match chain4  /\<Dz-10\>/
-syn match chain4  /\<Eb-23\>/
+syn match chain3  /\<Eb-23\>/
 syn match chain4  /\<Eh-123\>/
 syn match chain4  /\<Eh-124\>/
 syn match chain4  /\<Ek-100\>/
@@ -20152,10 +20152,10 @@ syn match chain4  /\<Ok-108\>/
 syn match chain4  /\<Ok-109\>/
 syn match chain4  /\<Ok-110\>/
 syn match chain4  /\<Ok-111\>/
-syn match chain4  /\<Pb-43\>/
+syn match chain3  /\<Pb-43\>/
 syn match chain4  /\<Pb-53\>/
 syn match chain4  /\<Pg-50\>/
-syn match chain4  /\<Pg-51\>/
+syn match chain3  /\<Pg-51\>/
 syn match chain4  /\<Qe-52\>/
 syn match chain4  /\<S-112\>/
 syn match chain4  /\<S-113\>/
@@ -20163,11 +20163,11 @@ syn match chain4  /\<S-114\>/
 syn match chain4  /\<T-19\>/
 syn match chain4  /\<U-81\>/
 syn match chain4  /\<U-99\>/
-syn match chain4  /\<Uq-41\>/
+syn match chain3  /\<Uq-41\>/
 syn match chain4  /\<Uq-51\>/
 syn match chain4  /\<Uq-52\>/
 syn match chain4  /\<Ux-48\>/
-syn match chain4  /\<Ux-49\>/
+syn match chain3  /\<Ux-49\>/
 syn match chain4  /\<Ux-59\>/
 syn match chain4  /\<V-39\>/
 syn match chain4  /\<V-48\>/
@@ -20193,7 +20193,7 @@ syn match chain5  /\<Ax-110\>/
 syn match chain5  /\<C-67\>/
 syn match chain5  /\<Cj-68\>/
 syn match chain5  /\<Cl-24\>/
-syn match chain5  /\<Cl-30\>/
+syn match chain3  /\<Cl-30\>/
 syn match chain5  /\<Co-74\>/
 syn match chain5  /\<Co-89\>/
 syn match chain5  /\<Cv-119\>/
@@ -20201,7 +20201,7 @@ syn match chain5  /\<D-72\>/
 syn match chain5  /\<D-73\>/
 syn match chain5  /\<D-86\>/
 syn match chain5  /\<Dd-108\>/
-syn match chain5  /\<Dx-36\>/
+syn match chain3  /\<Dx-36\>/
 syn match chain5  /\<F-60\>/
 syn match chain5  /\<Gd-37\>/
 syn match chain5  /\<Gj-12\>/
@@ -25367,6 +25367,7 @@ let otomlookup["119 63"]="X-119"
 let otomlookup["123 65"]="Eh-123"
 let otomlookup["124 65"]="Eh-124"
 let otomlookup["125 66"]="Ys-125"
+
 
 
 "
