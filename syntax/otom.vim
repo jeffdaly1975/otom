@@ -200,7 +200,6 @@ hi        ObservedIntermediate    ctermbg=NONE ctermfg=214    cterm=bold
 "
 " [[[ INSERT output of convert_token_id_to_hex.pl here
 "
-
 let otomnames     = {}
 let hexdict       = {}
 let hexdictabbr   = {}
@@ -20014,6 +20013,7 @@ syn match chain3  /\<Aw-108\>/
 syn match chain3  /\<Aw-124\>/
 syn match chain3  /\<Aw-125\>/
 syn match chain3  /\<C-66\>/
+syn match chain3  /\<Cl-30\>/
 syn match chain3  /\<Co-75\>/
 syn match chain3  /\<Co-86\>/
 syn match chain3  /\<Cv-114\>/
@@ -20029,7 +20029,10 @@ syn match chain3  /\<Da-91\>/
 syn match chain3  /\<Da-92\>/
 syn match chain3  /\<Da-93\>/
 syn match chain3  /\<Dd-105\>/
+syn match chain3  /\<Dx-35\>/
+syn match chain3  /\<Dx-36\>/
 syn match chain3  /\<Dx-43\>/
+syn match chain3  /\<Eb-23\>/
 syn match chain3  /\<Ek-101\>/
 syn match chain3  /\<Ek-102\>/
 syn match chain3  /\<Ek-103\>/
@@ -20080,6 +20083,8 @@ syn match chain3  /\<Nm-105\>/
 syn match chain3  /\<Ok-89\>/
 syn match chain3  /\<Ok-90\>/
 syn match chain3  /\<P-25\>/
+syn match chain3  /\<Pb-43\>/
+syn match chain3  /\<Pg-51\>/
 syn match chain3  /\<Qe-53\>/
 syn match chain3  /\<Ro-28\>/
 syn match chain3  /\<S-94\>/
@@ -20091,6 +20096,8 @@ syn match chain3  /\<Se-85\>/
 syn match chain3  /\<U-82\>/
 syn match chain3  /\<U-97\>/
 syn match chain3  /\<U-98\>/
+syn match chain3  /\<Uq-41\>/
+syn match chain3  /\<Ux-49\>/
 syn match chain3  /\<V-40\>/
 syn match chain3  /\<Vl-100\>/
 syn match chain3  /\<Vl-101\>/
@@ -20120,14 +20127,14 @@ syn match chain4  /\<Cj-69\>/
 syn match chain4  /\<Cv-116\>/
 syn match chain4  /\<Cv-117\>/
 syn match chain4  /\<Cv-118\>/
+syn match chain4  /\<Cv-119\>/
+syn match chain4  /\<D-73\>/
 syn match chain4  /\<Da-112\>/
 syn match chain4  /\<Da-113\>/
 syn match chain4  /\<Da-90\>/
 syn match chain4  /\<Dd-107\>/
-syn match chain3  /\<Dx-35\>/
 syn match chain4  /\<Dx-44\>/
 syn match chain4  /\<Dz-10\>/
-syn match chain3  /\<Eb-23\>/
 syn match chain4  /\<Eh-123\>/
 syn match chain4  /\<Eh-124\>/
 syn match chain4  /\<Ek-100\>/
@@ -20140,6 +20147,7 @@ syn match chain4  /\<Go-117\>/
 syn match chain4  /\<Gy-63\>/
 syn match chain4  /\<I-113\>/
 syn match chain4  /\<I-114\>/
+syn match chain4  /\<Iu-70\>/
 syn match chain4  /\<Jb-115\>/
 syn match chain4  /\<Jb-116\>/
 syn match chain4  /\<Ji-124\>/
@@ -20151,11 +20159,8 @@ syn match chain4  /\<Ns-57\>/
 syn match chain4  /\<Ok-108\>/
 syn match chain4  /\<Ok-109\>/
 syn match chain4  /\<Ok-110\>/
-syn match chain4  /\<Ok-111\>/
-syn match chain3  /\<Pb-43\>/
 syn match chain4  /\<Pb-53\>/
 syn match chain4  /\<Pg-50\>/
-syn match chain3  /\<Pg-51\>/
 syn match chain4  /\<Qe-52\>/
 syn match chain4  /\<S-112\>/
 syn match chain4  /\<S-113\>/
@@ -20163,11 +20168,9 @@ syn match chain4  /\<S-114\>/
 syn match chain4  /\<T-19\>/
 syn match chain4  /\<U-81\>/
 syn match chain4  /\<U-99\>/
-syn match chain3  /\<Uq-41\>/
 syn match chain4  /\<Uq-51\>/
 syn match chain4  /\<Uq-52\>/
 syn match chain4  /\<Ux-48\>/
-syn match chain3  /\<Ux-49\>/
 syn match chain4  /\<Ux-59\>/
 syn match chain4  /\<V-39\>/
 syn match chain4  /\<V-48\>/
@@ -20182,6 +20185,8 @@ syn match chain4  /\<Wy-55\>/
 syn match chain4  /\<Wy-56\>/
 syn match chain4  /\<X-119\>/
 syn match chain4  /\<Ys-125\>/
+syn match chain4  /\<Yu-26\>/
+syn match chain4  /\<Yv-67\>/
 syn match chain4  /\<Z-115\>/
 syn match chain4  /\<Z-116\>/
 syn match chain4  /\<Z-117\>/
@@ -20192,22 +20197,18 @@ syn match chain5  /\<Ax-109\>/
 syn match chain5  /\<Ax-110\>/
 syn match chain5  /\<C-67\>/
 syn match chain5  /\<Cj-68\>/
+syn match chain5  /\<Cj-82\>/
 syn match chain5  /\<Cl-24\>/
-syn match chain3  /\<Cl-30\>/
 syn match chain5  /\<Co-74\>/
 syn match chain5  /\<Co-89\>/
-syn match chain5  /\<Cv-119\>/
 syn match chain5  /\<D-72\>/
-syn match chain5  /\<D-73\>/
 syn match chain5  /\<D-86\>/
 syn match chain5  /\<Dd-108\>/
-syn match chain3  /\<Dx-36\>/
 syn match chain5  /\<F-60\>/
 syn match chain5  /\<Gd-37\>/
-syn match chain5  /\<Gj-12\>/
+syn match chain4  /\<Gj-12\>/
 syn match chain5  /\<Gy-62\>/
 syn match chain5  /\<Gy-75\>/
-syn match chain5  /\<Iu-70\>/
 syn match chain5  /\<Iu-84\>/
 syn match chain5  /\<K-29\>/
 syn match chain5  /\<Kk-63\>/
@@ -20215,25 +20216,25 @@ syn match chain5  /\<Kk-64\>/
 syn match chain5  /\<Kk-77\>/
 syn match chain5  /\<L-46\>/
 syn match chain5  /\<Lu-34\>/
+syn match chain5  /\<N-79\>/
 syn match chain5  /\<Nd-27\>/
 syn match chain5  /\<Nm-106\>/
 syn match chain5  /\<Ns-68\>/
 syn match chain5  /\<Ns-69\>/
+syn match chain5  /\<Ok-111\>/
 syn match chain5  /\<P-26\>/
 syn match chain5  /\<Pg-61\>/
 syn match chain5  /\<Pg-62\>/
 syn match chain5  /\<Qe-64\>/
 syn match chain5  /\<S-115\>/
+syn match chain5  /\<T-14\>/
 syn match chain5  /\<Ux-60\>/
 syn match chain5  /\<Ux-61\>/
 syn match chain5  /\<W-75\>/
-syn match chain5  /\<Yu-26\>/
 syn match chain5  /\<Yu-32\>/
 syn match chain5  /\<Yv-66\>/
-syn match chain5  /\<Yv-67\>/
 syn match chain5  /\<Yv-79\>/
 syn match chain6  /\<Cj-67\>/
-syn match chain6  /\<Cj-82\>/
 syn match chain6  /\<Co-73\>/
 syn match chain6  /\<D-87\>/
 syn match chain6  /\<F-59\>/
@@ -20241,22 +20242,20 @@ syn match chain6  /\<Gy-76\>/
 syn match chain6  /\<Kk-78\>/
 syn match chain6  /\<L-58\>/
 syn match chain6  /\<Mt-31\>/
-syn match chain6  /\<N-79\>/
 syn match chain6  /\<P-20\>/
-syn match chain6  /\<T-14\>/
 syn match chain6  /\<U-80\>/
 syn match chain6  /\<V-49\>/
 syn match chain6  /\<Vl-82\>/
 syn match chain6  /\<Vt-122\>/
 syn match chain6  /\<Xj-16\>/
 syn match chain6  /\<Yu-33\>/
-syn match chain7  /\<D-71\>/
+syn match chain6  /\<D-71\>/
 syn match chain7  /\<Iu-69\>/
 syn match chain7  /\<Iu-85\>/
 syn match chain7  /\<Lu-42\>/
 syn match chain7  /\<Mt-40\>/
 syn match chain7  /\<Nd-35\>/
-syn match chain8  /\<Cl-31\>/
+syn match chain7  /\<Cl-31\>/
 syn match chain9  /\<Cj-83\>/
 syn match chain9  /\<W-92\>/
 
@@ -25367,7 +25366,6 @@ let otomlookup["119 63"]="X-119"
 let otomlookup["123 65"]="Eh-123"
 let otomlookup["124 65"]="Eh-124"
 let otomlookup["125 66"]="Ys-125"
-
 
 
 "
