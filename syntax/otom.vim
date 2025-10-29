@@ -108,6 +108,7 @@ hi Decay_type_stable       cterm=NONE gui=inverse guibg=lightgrey    ctermbg=lig
 "
 "
 "
+
 syn match type_decay     /decay/
 syn match type_metallic  /metallic/
 syn match type_nuclear   /nuclear/
@@ -171,6 +172,10 @@ syntax match otom_metal    /\C\<\(C\|F\|I\|N\|S\|U\|V\|X\|Z\|Ai\|As\|Cl\|Cv\|Dx\
 syntax match otom_noble    /\C\<\(K\|P\|Co\|Ha\|Ok\|Ux\)\>-\=/
 syntax match otom_nonmetal /\C\<\(D\|L\|T\|Aw\|Cj\|Ct\|Dd\|Eb\|Gj\|Iu\|Kn\|Nd\|Nm\|Pb\|Vi\|Wy\|Xj\|Ys\|Yu\|Yv\)\>-\=/
 
+syn match otom_alkaline  /\<alkaline\>/
+syn match otom_metal     /\<metal\>/
+syn match otom_nonmetal  /\<nonmetal\>/
+syn match otom_noble     /\<noble\>/
 
 
 
