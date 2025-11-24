@@ -35,3 +35,10 @@ mv new.chains.bohr.otom chains.bohr.otom
 
   ./get_burnables_alpha.alchemy.pl 0x620051B8553a724b742ae6ae9cC3585d29F49848 10
   ./get_burnables_bohr.alchemy.pl  0x620051B8553a724b742ae6ae9cC3585d29F49848 10
+
+# 2025-11-23 Nov.Sun 22:28:19
+# check how many lines in the latest CSV log files I downloaded from shapescan, and redo them if more than 10000 lines
+wc -l ~/Downloads/logs_0xB8*.csv
+
+# now move those logs to the right directory
+mv ~/Downloads/logs_0xB8*.csv ~/Downloads/NFTs/otom/logs_0xB8874fCE9b702B191C306A21c7A4a101FB14a0fc_Reactor/
