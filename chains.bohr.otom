@@ -85,7 +85,7 @@
  1-chain Yu-28  ::   556.00 |   Sr-1∙ +  Yu-27⁺   +[   554.19 -   5000] => Yu-28               +      1.81 | decay, nuclear               | OTOMRO         |
  1-chain Nd-34  ::   557.00 |  Ct-17⁻ +  Ct-17⁻   +[   556.86*-   5000] => Nd-34               +      0.14 | decay, nuclear               | OTOMRO  108339 |
  1-chain Xj-19  ::   558.06 |   Sr-1∙ +  Xj-18∙   +[   558.06 -  15000] => Xj-19               +      0.94 | decay, nuclear               | OTOMRO       ? |
- 1-chain Ro-26  ::   563.00 |   Dz-9∙ +  Ct-17⁻   +[   562.79 -   5000] => Ro-26               +      1.21 | decay, nuclear               | OTOMRO         |
+ 1-chain Ro-26  ::   563.00 |   Dz-9∙ +  Ct-17⁻   +[   562.74 -   5000] => Ro-26               +      0.26 | decay, nuclear               | OTOMRO         |
  1-chain Gd-39  ::   575.00 |   Dz-7⁺ +  Mt-32⁺   +[   574.09 -   5000] => Gd-39               +      0.91 | decay, nuclear               | OTOMRO  431128 |
  1-chain Mt-33  ::   582.00 |   Sr-1∙ +  Mt-32⁺   +[   581.67 -   5000] => Mt-33               +      3.33 | decay, nuclear               | OTOMRO   79174 |
  1-chain Gj-9   ::   583.00 |  Xj-17⁺             +[   582.42 -   5000] => Dz-8 + Gj-9         +      0.58 | nuclear                      | OTOMRO  362999 |
