@@ -20034,8 +20034,8 @@ syn match chain3  /\<Da-91\>/
 syn match chain3  /\<Da-92\>/
 syn match chain3  /\<Da-93\>/
 syn match chain3  /\<Dd-105\>/
-syn match chain3  /\<Dx-35\>/
-syn match chain3  /\<Dx-36\>/
+syn match chain4  /\<Dx-35\>/
+syn match chain5  /\<Dx-36\>/
 syn match chain3  /\<Dx-43\>/
 syn match chain3  /\<Eb-23\>/
 syn match chain3  /\<Ek-101\>/
@@ -20152,7 +20152,7 @@ syn match chain4  /\<Go-117\>/
 syn match chain4  /\<Gy-63\>/
 syn match chain4  /\<I-113\>/
 syn match chain4  /\<I-114\>/
-syn match chain4  /\<Iu-70\>/
+syn match chain5  /\<Iu-70\>/
 syn match chain4  /\<Jb-115\>/
 syn match chain4  /\<Jb-116\>/
 syn match chain4  /\<Ji-124\>/
@@ -20191,7 +20191,7 @@ syn match chain4  /\<Wy-56\>/
 syn match chain4  /\<X-119\>/
 syn match chain4  /\<Ys-125\>/
 syn match chain4  /\<Yu-26\>/
-syn match chain4  /\<Yv-67\>/
+syn match chain5  /\<Yv-67\>/
 syn match chain4  /\<Z-115\>/
 syn match chain4  /\<Z-116\>/
 syn match chain4  /\<Z-117\>/
@@ -20261,8 +20261,8 @@ syn match chain7  /\<Lu-42\>/
 syn match chain7  /\<Mt-40\>/
 syn match chain7  /\<Nd-35\>/
 syn match chain7  /\<Cl-31\>/
-syn match chain9  /\<Cj-83\>/
-syn match chain9  /\<W-92\>/
+syn match chain8  /\<Cj-83\>/
+syn match chain8  /\<W-92\>/
 
 " {{{{
 
