@@ -148,6 +148,9 @@ syn match UnknownStability   /(?\.???)/      "?.??? - ?.???
 
 hi UnknownStability          guifg=grey      ctermfg=grey        guibg=NONE ctermbg=NONE cterm=italic
 
+syn match UntriedRecipe /\[\s*\zsuntried\ze/
+hi UntriedRecipe ctermbg=red ctermfg=white
+
 "---
 
 
