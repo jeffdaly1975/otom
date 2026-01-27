@@ -775,7 +775,7 @@ my @output = qx{./isotopes_worker.alpha.sh $wallet};
 #my $total_burn_NRG = 0;
 
 foreach my $line ( @output ){
-   if ($line =~ /"id":(\d+),"result":"0x0{56}([0-9a-f]+)"/ ){
+   while ($line =~ /"id":(\d+),"result":"0x0{56}([0-9a-f]+)"/g ){
       my ($this_id, $count) = ($1, eval "0x$2" );
 
       die "invalid id $this_id" unless exists $idhash{$this_id};

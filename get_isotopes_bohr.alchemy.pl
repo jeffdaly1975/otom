@@ -1617,7 +1617,7 @@ my @output = qx{./isotopes_worker.bohr.sh $wallet};
 ### ,{"jsonrpc":"2.0","id":2,"result":"0x000000000000000000000000000000000000000000000000000000000000001c"}
 
 foreach my $line ( @output ){
-   if ($line =~ /"id":(\d+),"result":"0x0{56}([0-9a-f]+)"/ ){
+   while ($line =~ /"id":(\d+),"result":"0x0{56}([0-9a-f]+)"/g ){
       my ($this_id, $count) = ($1, eval "0x$2" );
 
       die "invalid id $this_id" unless exists $idhash{$this_id};

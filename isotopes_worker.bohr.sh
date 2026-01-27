@@ -86,7 +86,7 @@ curl --request POST  \
  { "id": 29, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'ac770d608f11391c6055b4a8d8689830a12133494bf97933faa9cc3da322577d" }, "latest" ] }, 
  { "id": 30, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'a3209651d4956157b9ee502bf6002825bc3f0ee83e0c8440c56e966a38d0c555" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -124,7 +124,7 @@ curl --request POST  \
  { "id": 59, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'5d5a536cba9cd79b209e66823eea6898ad64d131c2cd3d1d84f09bfe301c11f2" }, "latest" ] }, 
  { "id": 60, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'e9dacbca234cb40ec4abfceff172cb11bd5e6cd48a90e78d9916b69f0637993b" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -162,7 +162,7 @@ curl --request POST  \
  { "id": 89, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'a586794d0a5d157954ce87f0269de8c9b477b333a090653db28fc199722ff488" }, "latest" ] }, 
  { "id": 90, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'6dafb9218fb3356ed7db3f19697ad2d18a5d9c709930fdcfed246ca84562bb5d" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -200,7 +200,7 @@ curl --request POST  \
  { "id":119, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'a99b2535a8f3fdef9e3a2dce1172f4edbd014d2600da98fd6dffb52b7ed64006" }, "latest" ] }, 
  { "id":120, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'cce9bc82c527e696db5e482319b80f126a02775c017e86e10004e52853c2f350" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -238,7 +238,7 @@ curl --request POST  \
  { "id":149, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'a16d142113d4dae22dd90acdaf0c167bd15a224e685f018f68868e6768c4ed03" }, "latest" ] }, 
  { "id":150, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'95323ce8a43e0cbb405c4addf91d0346dccd8250214bec16d342f33ab2016102" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -276,7 +276,7 @@ curl --request POST  \
  { "id":179, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'fe68fddbde87eb549ccaf1bdb66eec378f53774a5a76f09087e993125807d83b" }, "latest" ] }, 
  { "id":180, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'bbe3ef8edca3dfe1fc1449837c88abeafe6424412001da239491fc23e32020ac" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -314,7 +314,7 @@ curl --request POST  \
  { "id":209, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'72e658ec10f488e0720926ce84a12a42943d96cd5c95a67cd9ff6d68698055f3" }, "latest" ] }, 
  { "id":210, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'46aea24f901ab5c909dfb69a4d3c33c5e1dcf64aecbf890307b54322a26e9c64" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -352,7 +352,7 @@ curl --request POST  \
  { "id":239, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'70f75f091b807dd6674eb52bba4e06c254848897fbcf308622c57dec9216b926" }, "latest" ] }, 
  { "id":240, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'27b41ea556d5406a2d52515f76640fea1638ebd4056bf9384d7a49556f50440f" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -390,7 +390,7 @@ curl --request POST  \
  { "id":269, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'9f63b3f771d37615224ca6ee8cd9bbff4ce81fd6e7cc2fabc4d0947b96625bf2" }, "latest" ] }, 
  { "id":270, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'f9a50794e5a79dbd8b23ee1a2ffcd58ab614635dc18cc1790fba940dbbc224db" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -428,7 +428,7 @@ curl --request POST  \
  { "id":299, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'4e48115e33437b70294b26acb8007da3d3e3dd002a3becefb89c854a9f9e25e0" }, "latest" ] }, 
  { "id":300, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'7a37d6349c4c68070c91fe361bafc37d0054c36534ca25cedef288f091d1462b" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -466,7 +466,7 @@ curl --request POST  \
  { "id":329, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'9ee34cf57fa69d39556e5704d8a0066fce3b3307d0656357d956479290238685" }, "latest" ] }, 
  { "id":330, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'5ae13bf9ef02ad0db95b0e553f89c08573c6d7fc73992d66923031c7ced65083" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -504,7 +504,7 @@ curl --request POST  \
  { "id":359, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'8d55dee5549cbd1a5b2232cdb79b551fcdb59d355f3c6e696d5838561399a31e" }, "latest" ] }, 
  { "id":360, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'd3a907c2e7013659a6a779fe6b5a0fa9b5e82f24cd9ea21bde5bc8113f8f6681" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -542,7 +542,7 @@ curl --request POST  \
  { "id":389, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'ac3f8a35c8b625a762182a2b2f977804ab38bfe303a2c4cefe3ec35e3b52bd1b" }, "latest" ] }, 
  { "id":390, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'040d353d5afd411cf57b7dd0bdbdfc9362e4177448a40c3769d144ca269fadf4" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -580,7 +580,7 @@ curl --request POST  \
  { "id":419, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'c661df28d2e1fb5cfe4be00728ae1b3e392f84c3700b60fb644c2ede0069f63c" }, "latest" ] }, 
  { "id":420, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'd70c53c74c269ba96277d24f0c3171976decbfe738d562fd9c6a21a400ce6305" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -618,7 +618,7 @@ curl --request POST  \
  { "id":449, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'abe13a10a86cb7ef71490b0f26671da10ee652ec8db88049b55f5d411dd1455d" }, "latest" ] }, 
  { "id":450, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'31edb0bdde34a7a0c7e48baf87d7ffcee46f56eaf520007ba2a5a54194e109b5" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -656,7 +656,7 @@ curl --request POST  \
  { "id":479, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'022d79b474eea89e2fedf5fccb1456f7dc6ca462598d05006aa8cb09da5abe33" }, "latest" ] }, 
  { "id":480, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'303db54010c3a2cd39d8c3dd0fcb614ab71181fd0d5a4234cd6c3ae95e63d255" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -694,7 +694,7 @@ curl --request POST  \
  { "id":509, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'5ffbb88f522c1e8061d259a3e8cbef7ed095787c5b8079f48df0f5cfd4ff58aa" }, "latest" ] }, 
  { "id":510, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'29bc87b32730706e56107a7feca24fd7d7378305c0531ff4af3f639ea4d797cd" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -732,7 +732,7 @@ curl --request POST  \
  { "id":539, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'e5995f413811b0b9e382ad8d6f6e4fb8e0c9d4ee0fe22b4ff460512f0bd64ff0" }, "latest" ] }, 
  { "id":540, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'9e20112bb8c6debc1d182187bef70bedcc510e4878383129f861c71f42631f5d" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -770,7 +770,7 @@ curl --request POST  \
  { "id":569, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'e0657c18acac274c26f7e6d6d29bea8b9baaf7ddcad71b32c33d226ec3af6e5e" }, "latest" ] }, 
  { "id":570, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'7f6d59b3627ad30f0910853df78dbaf910faeddf3df5a61c3d5ea708d3887724" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -808,7 +808,7 @@ curl --request POST  \
  { "id":599, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'b6b5c818554cb0d7c68fec8afae5182220c6f2b9277c4b90d7b3c264fd9bcf57" }, "latest" ] }, 
  { "id":600, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'0874aa93a28d0f5593e9b75ffe7ca6974a803d81239f3bf6aaad76df9aae2201" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -846,7 +846,7 @@ curl --request POST  \
  { "id":629, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'5d27b93e22878c818e06f755475031fcf201570f4e7a0de8b3392624507b400e" }, "latest" ] },
  { "id":630, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'1feab8d57e2ec87350676cf8a7179127db37a41157ba4ca468309109f35a6534" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -884,7 +884,7 @@ curl --request POST  \
  { "id":659, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'1d72b345d4832114a3ca5e67cf74a1933b5fd5591335753c5ab05efee583adc8" }, "latest" ] },
  { "id":660, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'a5663d06ffe76d59a34ff6256d978564b766b0b12e63f3bb4aeacc0b56269f3a" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -921,7 +921,7 @@ curl --request POST  \
  { "id":688, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'907c7ce61aeade8f41aae62ac977b11d08728f1b8dfe7d22a476036c575abc45" }, "latest" ] },
  { "id":689, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'64d36db6b17414bcde083eb3285c8c36ee2d2d59ac7464c109d7327f078e5ccc" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -959,7 +959,7 @@ curl --request POST  \
  { "id":718, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'bb6fd6c7697ca06bd321aa87da39f4e854b0f8f14fef005b11bf106b19ae74dc" }, "latest" ] },
  { "id":719, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'9cb9d1dfda6dcb76b622352b836f371a3d65a5bde1aaccf054f29914c7094dc8" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
@@ -997,7 +997,7 @@ curl --request POST  \
  { "id":748, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'0e29ce7f3523935bb2e066895384d4be09de9d186e323fb65e93f84e3323805e" }, "latest" ] },
  { "id":749, "jsonrpc": "2.0", "method": "eth_call", "params": [ { "from": "'$wallet'", "to":   "0x2f9810789aebBB6cdC6c0332948fF3B6D11121E3", "data": "0x00fdd58e000000000000000000000000'$swallet'ec38845c7003abd299e837a727b644d82238809f106b3e2911476cd5783846b9" }, "latest" ] } ] '
 
-sleep 2
+sleep 1
 
 curl --request POST  \
      --url https://shape-mainnet.g.alchemy.com/v2/e8_StPIRRmekYLSBdvp4k2Ky_19PdUUr  \
